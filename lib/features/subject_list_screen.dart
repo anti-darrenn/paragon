@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -20,6 +21,13 @@ class SubjectListScreen extends ConsumerWidget {
             onPressed: () => context.push('/waec'),
             child: const Text('WAEC Prep',
                 style: TextStyle(color: AppColors.primary)),
+          ),
+          IconButton(
+            icon: const Icon(Icons.logout, size: 20),
+            tooltip: 'Sign out',
+            onPressed: () async {
+              await FirebaseAuth.instance.signOut();
+            },
           ),
         ],
       ),
