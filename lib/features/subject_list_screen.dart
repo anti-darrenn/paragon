@@ -65,11 +65,11 @@ class _SubjectCard extends StatelessWidget {
     final color = AppColors.forSubject(subject.name);
     return GestureDetector(
       onTap: () => context.push('/subject/${subject.id}'),
-      child: Container(
+        child: Container(
         decoration: BoxDecoration(
-          color: color.withOpacity(0.12),
+          color: color.withAlpha((0.12 * 255).round()),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withOpacity(0.4)),
+          border: Border.all(color: color.withAlpha((0.4 * 255).round())),
         ),
         padding: const EdgeInsets.all(16),
         child: Column(

@@ -20,7 +20,7 @@ class WaecSubjectScreen extends ConsumerWidget {
         data: (subjects) => ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: subjects.length,
-          separatorBuilder: (_, __) => const SizedBox(height: 8),
+          separatorBuilder: (context, index) => const SizedBox(height: 8),
           itemBuilder: (context, i) =>
               _WaecSubjectTile(subject: subjects[i]),
         ),

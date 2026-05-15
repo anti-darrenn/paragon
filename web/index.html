@@ -31,6 +31,14 @@
 
   <title>paragon</title>
   <link rel="manifest" href="manifest.json">
+  <!-- Optional: MathJax for full LaTeX rendering on web -->
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']]},
+      options: {skipHtmlTags: ['script','noscript','style','textarea','pre']}
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <!--

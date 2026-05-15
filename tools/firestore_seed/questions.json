@@ -1,0 +1,24 @@
+[
+  {
+    "id": "q1",
+    "topicId": "t1",
+    "subjectId": "math",
+    "text": "Solve $x^2 - 5x + 6 = 0$ by factorisation.",
+    "options": ["x=1,2","x=2,3","x=-2,3","x=0"],
+    "correctIndex": 1,
+    "explanation": "(x-2)(x-3)=0 so x=2 and x=3.",
+    "source": "drill",
+    "year": 2020
+  },
+  {
+    "id": "q2",
+    "topicId": "t2",
+    "subjectId": "math",
+    "text": "In a circle, the angle in a semicircle is $90^\\circ$. Is this true?",
+    "options": ["True","False"],
+    "correctIndex": 0,
+    "explanation": "Angle in a semicircle is a right angle.",
+    "source": "waec",
+    "year": 2018
+  }
+]

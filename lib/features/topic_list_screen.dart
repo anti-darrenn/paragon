@@ -22,7 +22,7 @@ class TopicListScreen extends ConsumerWidget {
         data: (topics) => ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: topics.length,
-          separatorBuilder: (_, __) => const SizedBox(height: 8),
+          separatorBuilder: (context, index) => const SizedBox(height: 8),
           itemBuilder: (context, i) => _TopicTile(
             topic: topics[i],
             subjectId: subjectId,

@@ -235,7 +235,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                 onPressed: _isLoading ? null : _signInWithEmail,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.primary,
-                  disabledBackgroundColor: AppColors.primary.withOpacity(0.4),
+                  disabledBackgroundColor: AppColors.primary.withAlpha((0.4 * 255).round()),
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),

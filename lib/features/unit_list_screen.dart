@@ -20,7 +20,7 @@ class UnitListScreen extends ConsumerWidget {
         data: (units) => ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: units.length,
-          separatorBuilder: (_, __) => const SizedBox(height: 8),
+          separatorBuilder: (context, index) => const SizedBox(height: 8),
           itemBuilder: (context, i) =>
               _UnitTile(unit: units[i], subjectId: subjectId),
         ),
