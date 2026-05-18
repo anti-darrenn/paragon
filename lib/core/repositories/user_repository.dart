@@ -20,6 +20,31 @@ class UserRepository {
       });
     }
   }
+
+  Future<void> updateStreak(String uid) async {
+    final ref = _db.collection('users').doc(uid);
+    final snap = await ref.get();
+    if (!snap.exists) return;
+
+    final data = snap.data()!;
+    final now = DateTime.now();
+    final today =
+        '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
+    final lastActive = data['lastActiveDate'] as String?;
+
+    if (lastActive == today) return;
+
+    final yesterday = now.subtract(const Duration(days: 1));
+    final yesterdayStr =
+        '${yesterday.year}-${yesterday.month.toString().padLeft(2, '0')}-${yesterday.day.toString().padLeft(2, '0')}';
+
+    final currentStreak = (data['currentStreak'] as num? ?? 0).toInt();
+
+    await ref.update({
+      'lastActiveDate': today,
+      'currentStreak': lastActive == yesterdayStr ? currentStreak + 1 : 1,
+    });
+  }
 }
 
 final userRepositoryProvider = Provider<UserRepository>((ref) {

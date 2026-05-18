@@ -17,10 +17,15 @@ class SubjectListScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Paragon'),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.bar_chart_rounded, size: 22),
+            tooltip: 'Dashboard',
+            onPressed: () => context.push('/dashboard'),
+          ),
           TextButton(
             onPressed: () => context.push('/waec'),
             child: const Text('WAEC Prep',
-                style: TextStyle(color: AppColors.primary)),
+            style: TextStyle(color: AppColors.primary)),
           ),
           IconButton(
             icon: const Icon(Icons.logout, size: 20),

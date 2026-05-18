@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class Question {
   final String id;
   final String topicId;
+  final String subjectId;
   final String text;
   final List<String> options;
   final int correctIndex;
@@ -13,6 +14,7 @@ class Question {
   const Question({
     required this.id,
     required this.topicId,
+    required this.subjectId,
     required this.text,
     required this.options,
     required this.correctIndex,
@@ -26,9 +28,10 @@ class Question {
     return Question(
       id: doc.id,
       topicId: d['topicId'] as String,
+      subjectId: d['subjectId'] as String? ?? '',
       text: d['text'] as String,
       options: List<String>.from(d['options'] as List),
-      correctIndex: (d['correctIndex'] as num).toInt(),
+      correctIndex: d['correctIndex'] != null ? (d['correctIndex'] as num).toInt() : -1,
       explanation: d['explanation'] as String,
       source: d['source'] as String? ?? 'drill',
       year: d['year'] != null ? (d['year'] as num).toInt() : null,

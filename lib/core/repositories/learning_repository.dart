@@ -55,6 +55,8 @@ final waecQuestionsProvider = FutureProvider.family<List<Question>, String>((ref
   final snap = await db
       .collection('questions')
       .where('subjectId', isEqualTo: subjectId)
+      .where('source', isEqualTo: 'waec')
+      .orderBy('year', descending: true)
       .get();
   return snap.docs.map((d) => Question.fromFirestore(d)).toList();
 });

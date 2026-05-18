@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/repositories/learning_repository.dart';
+import '../core/repositories/attempt_repository.dart';
+import '../core/providers/auth_provider.dart';
 import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
+import '../core/repositories/user_repository.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -19,10 +22,27 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   int? _selected;
   bool _submitted = false;
 
-  void _submit() {
-    if (_selected == null) return;
-    setState(() => _submitted = true);
+  Future<void> _submit(List<Question> questions) async {
+  if (_selected == null) return;
+
+  final q = questions[_index];
+  final user = ref.read(currentUserProvider);
+
+  setState(() => _submitted = true);
+
+  if (user != null) {
+    await ref.read(attemptRepositoryProvider).record(
+      userId: user.uid,
+      questionId: q.id,
+      topicId: q.topicId,
+      subjectId: q.subjectId,
+      selectedIndex: _selected!,
+      isCorrect: _selected == q.correctIndex,
+      source: 'drill',
+    );
+    await ref.read(userRepositoryProvider).updateStreak(user.uid);
   }
+}
 
   void _next(List<Question> questions) {
     if (_index < questions.length - 1) {
@@ -139,8 +159,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: _submitted
-                        ? (isLast ? null : () => _next(questions))
-                        : (_selected != null ? _submit : null),
+                        ? (isLast ? () => Navigator.of(context).pop() : () => _next(questions))
+                        : (_selected != null ? () => _submit(questions) : null),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primary,
                       padding:

@@ -26,27 +26,18 @@ final userDataProvider = StreamProvider<Map<String, dynamic>?>((ref) {
 
 /// Returns the count of questions attempted this week.
 /// Returns 0 until the attempts collection is populated in Session 6.
-final weeklyAttemptsCountProvider = FutureProvider<int>((ref) async {
-  final userAsync = ref.watch(authStateProvider);
-  final user = userAsync.asData?.value;
-  if (user == null) return 0;
+final weeklyAttemptsCountProvider = StreamProvider<int>((ref) {
+  final user = ref.watch(authStateProvider).asData?.value;
+  if (user == null) return Stream.value(0);
 
   final now = DateTime.now();
-  final startOfWeek = DateTime(now.year, now.month, now.day)
+  final weekStart = DateTime(now.year, now.month, now.day)
       .subtract(Duration(days: now.weekday - 1));
 
-  try {
-    final snap = await FirebaseFirestore.instance
-        .collection('attempts')
-        .where('userId', isEqualTo: user.uid)
-        .where(
-          'timestamp',
-          isGreaterThanOrEqualTo: Timestamp.fromDate(startOfWeek),
-        )
-        .get();
-    return snap.docs.length;
-  } catch (_) {
-    // attempts collection doesn't exist yet — returns 0 silently
-    return 0;
-  }
+  return FirebaseFirestore.instance
+      .collection('attempts')
+      .where('userId', isEqualTo: user.uid)
+      .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(weekStart))
+      .snapshots()
+      .map((snap) => snap.docs.length);
 });
