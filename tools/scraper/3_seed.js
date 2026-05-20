@@ -2,6 +2,7 @@ require("dotenv").config();
 const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
+const SUBJECT = 'further-mathematics';
 
 // ─── Firebase Init ────────────────────────────────────────────────────────────
 
@@ -21,22 +22,16 @@ const db = admin.firestore();
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-const INPUT_FILE = path.join(__dirname, "data", "classified.json");
+const INPUT_FILE = path.join(__dirname, "data", `classified_${SUBJECT}.json`);
 const questions = JSON.parse(fs.readFileSync(INPUT_FILE, "utf8"));
-console.log(`Loaded ${questions.length} questions from classified.json`);
+console.log(`Loaded ${questions.length} questions from classified_${SUBJECT}.json`);
 
 // ─── Unit order map (matches gameplan) ───────────────────────────────────────
 
 const UNIT_ORDER = [
-  "Number and Numeration",
-  "Algebraic Processes",
-  "Mensuration",
-  "Plane Geometry",
-  "Coordinate Geometry",
-  "Trigonometry",
-  "Calculus",
+  "Pure Mathematics",
   "Statistics and Probability",
-  "Vectors and Transformation",
+  "Vectors and Mechanics",
 ];
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -59,7 +54,7 @@ async function batchWrite(operations) {
 
 async function main() {
   // ── 1. Create subject ──────────────────────────────────────────────────────
-  console.log("\n[1/4] Creating subject: Mathematics");
+  console.log("\n[1/4] Creating subject: Futher Mathematics");
   const subjectRef = db.collection("subjects").doc();
   const subjectId = subjectRef.id;
 
@@ -163,7 +158,7 @@ async function main() {
 
   // ── 5. Create subject doc (now we know unitCount) ─────────────────────────
   await subjectRef.set({
-    name: "Mathematics",
+    name: "Further Mathematics",
     unitCount: unitOps.length,
   });
   console.log(`\nCreated subject doc (id: ${subjectId})`);

@@ -3,49 +3,44 @@ const fs = require("fs");
 const path = require("path");
 const Groq = require("groq-sdk");
 
-const FILE = path.join(__dirname, "data", "classified.json");
-const PROGRESS_FILE = path.join(__dirname, "data", "fix_progress.json");
+const SUBJECT = 'physics';
+const FILE = path.join(__dirname, "data", `classified_${SUBJECT}.json`);
+const PROGRESS_FILE = path.join(__dirname, "data", `fix_progress_${SUBJECT}.json`);
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // Topics to re-classify — all confirmed mostly or entirely wrong
 const SUSPECT_TOPICS = [
-  "Construction",
-  "Angles",
-  "Rational Numbers",
-  "Logical Reasoning",
-  "Angles on Parallel Lines",
-  "Loci",
-  "Linear Inequalities",
-  "Algebraic Fractions",
-  "Lengths and Perimeters",
-  "Transformation",
-  "Vectors in a Plane",
-  "Statistics",
+  "Fundamental and Derived Quantities",
 ];
 
 const TOPIC_MAP = {
-  "Number and Numeration": [
-    "Number Bases", "Modular Arithmetic", "Fractions/Decimals/Approximations",
-    "Indices", "Logarithms", "Sequence and Series", "Sets", "Logical Reasoning",
-    "Rational Numbers", "Surds", "Matrices and Determinants", "Ratio/Proportions/Rates",
-    "Percentages", "Financial Arithmetic", "Variation",
+  "Pure Mathematics": [
+    "Sets and Venn Diagrams",
+    "Surds",
+    "Binary Operations",
+    "Logical Reasoning",
+    "Functions",
+    "Polynomial Functions",
+    "Rational Functions and Partial Fractions",
+    "Indices and Logarithms",
+    "Permutations and Combinations",
+    "Binomial Theorem",
+    "Sequences and Series",
+    "Matrices and Linear Transformation",
+    "Trigonometry",
+    "Coordinate Geometry",
+    "Differentiation",
+    "Integration",
   ],
-  "Algebraic Processes": [
-    "Algebraic Expressions", "Expansion and Factorisation", "Linear Equations",
-    "Change of Subject of Formula", "Quadratic Equations",
-    "Graphs of Linear and Quadratic Functions", "Linear Inequalities",
-    "Algebraic Fractions", "Functions and Relations",
+  "Statistics and Probability": [
+    "Statistics",
+    "Probability",
   ],
-  "Mensuration": ["Lengths and Perimeters", "Areas", "Volumes"],
-  "Plane Geometry": [
-    "Angles", "Angles on Parallel Lines", "Triangles and Polygons",
-    "Circle Theorems", "Construction", "Loci",
+  "Vectors and Mechanics": [
+    "Vectors",
+    "Statics",
+    "Dynamics and Projectiles",
   ],
-  "Coordinate Geometry": ["Coordinate Geometry of Straight Lines"],
-  "Trigonometry": ["Sine/Cosine/Tangent", "Angles of Elevation and Depression", "Bearings"],
-  "Calculus": ["Differentiation", "Integration"],
-  "Statistics and Probability": ["Statistics", "Probability"],
-  "Vectors and Transformation": ["Vectors in a Plane", "Transformation"],
 };
 
 const FLAT_TOPICS = [];
@@ -71,30 +66,188 @@ function parseResponse(text) {
 }
 
 function buildPrompt(questions) {
-  const qList = questions.map(({ q }, j) => `Q${j}: ${q.text.slice(0, 300)}`).join("\n");
+  const qList = questions
+    .map(({ q }, j) => `Q${j}: ${q.text.slice(0, 400)}`)
+    .join("\n");
 
-  return `You are classifying Nigerian WAEC Mathematics exam questions into the correct topic.
+  return `You are classifying Nigerian WAEC Physics exam questions into the SINGLE best matching topic.
 
 TOPIC LIST (index: Unit > Topic):
 ${TOPIC_LIST_TEXT}
 
+- "Fundamental and Derived Quantities": ONLY for questions explicitly about SI units, base quantities (mass, length, time, current), or unit conversion. Questions about motion, forces, energy, waves, or any other physics concept are NOT this topic.
+
+IMPORTANT:
+- Choose the topic based on the MAIN physics concept being tested.
+- Ignore distracting numbers, diagrams, or wording.
+- Use the MOST SPECIFIC topic possible.
+- Do NOT classify based on surface keywords alone.
+- Every question must map to exactly ONE topic.
+
 CLASSIFICATION RULES — read carefully:
-- "Construction" (index 38): ONLY use if the question explicitly asks to construct a figure with compass/ruler. Circle, triangle, and polygon diagram questions are NOT construction.
-- "Angles on Parallel Lines" (index 33): ONLY use if the question involves two or more parallel lines cut by a transversal.
-- "Angles" (index 32): ONLY use for basic angle facts (vertically opposite, angles on a straight line, angles at a point). NOT for statistics, probability, or circles.
-- "Rational Numbers" (index 22): ONLY for questions specifically about rational vs irrational number classification.
-- "Logical Reasoning" (index 21): ONLY for questions involving logical statements, truth tables, or implication/negation.
-- "Loci" (index 39): ONLY for questions asking about the locus/path of a moving point.
-- "Statistics" (index 42): mean, median, mode, frequency tables, histograms, cumulative frequency, range, quartiles.
-- "Probability" (index 43): chance, likelihood, P(event), outcomes.
-- "Vectors in a Plane" (index 44): ONLY for vector addition, scalar multiplication, position vectors, column vectors.
-- "Transformation" (index 45): ONLY for reflection, rotation, translation, enlargement of shapes.
+
+MEASUREMENT AND UNITS
+- "Fundamental and Derived Quantities":
+  SI units, dimensions of quantities, base quantities, derived quantities.
+- "Dimensions and Dimensional Analysis":
+  dimensional equations, checking formula consistency, deriving units.
+- "Scalars and Vectors":
+  vector addition/subtraction, resultant vectors, vector components, scalar vs vector quantities.
+
+MOTION
+- "Distance, Displacement and Position":
+  path length, position, displacement, coordinate motion.
+- "Speed and Velocity":
+  average speed, instantaneous speed, velocity-time interpretation.
+- "Acceleration and Equations of Motion":
+  SUVAT equations, uniformly accelerated motion, free fall.
+- "Projectile Motion":
+  objects projected at angles, horizontal range, time of flight.
+- "Circular Motion":
+  centripetal force, angular speed, satellites moving in circles.
+- "Simple Harmonic Motion":
+  oscillation, pendulums, springs, periodic motion.
+- "Relative Motion":
+  motion observed from moving frames, boats, trains, relative velocity.
+
+FORCES AND EQUILIBRIUM
+- "Newton's Laws of Motion":
+  F = ma, inertia, momentum change, action-reaction.
+- "Friction":
+  frictional force, limiting friction, lubrication.
+- "Equilibrium of Forces and Moments":
+  balancing forces, torque, moments, lever systems.
+- "Centre of Gravity and Stability":
+  stability, toppling, center of mass/gravity.
+- "Elastic Properties and Hooke's Law":
+  springs, elastic deformation, stress, strain.
+
+GRAVITATION
+- "Newton's Law of Gravitation":
+  gravitational attraction between masses.
+- "Gravitational Field and Potential":
+  field strength, escape velocity, potential energy.
+- "Satellites and Rockets":
+  orbital motion, rocket propulsion, artificial satellites.
+
+WORK, ENERGY AND POWER
+- "Work and Energy":
+  work done by forces, transfer of energy.
+- "Kinetic and Potential Energy":
+  KE = 1/2mv², GPE, elastic potential energy.
+- "Power and Machines":
+  power, efficiency, machine advantage.
+- "Conservation of Energy":
+  energy transformations and conservation principles.
+
+FLUIDS
+- "Density and Relative Density":
+  density calculations, floating/sinking comparisons.
+- "Pressure in Fluids":
+  pressure, hydraulic systems, atmospheric pressure.
+- "Archimedes' Principle and Flotation":
+  upthrust, buoyancy, floating bodies.
+- "Viscosity":
+  fluid resistance and flow behavior.
+
+HEAT AND THERMODYNAMICS
+- "Temperature and Thermometers":
+  temperature scales, thermometer calibration.
+- "Thermal Expansion":
+  expansion of solids, liquids, gases due to heat.
+- "Gas Laws":
+  Boyle's law, Charles's law, pressure-volume relationships.
+- "Heat Capacity and Specific Heat Capacity":
+  heating calculations involving mcΔθ.
+- "Latent Heat":
+  melting, boiling, phase changes without temperature change.
+- "Evaporation, Boiling and Vapour Pressure":
+  evaporation factors, vapour pressure concepts.
+- "Heat Transfer":
+  conduction, convection, radiation.
+- "Thermal Conductivity":
+  good/bad conductors of heat, insulation.
+
+WAVES
+- "Wave Motion and Properties":
+  wavelength, frequency, amplitude, wave speed.
+- "Types of Waves":
+  transverse vs longitudinal waves.
+- "Superposition and Standing Waves":
+  interference, stationary waves, harmonics.
+- "Sound Waves":
+  sound properties, echo, Doppler effect.
+- "Resonance and Vibration":
+  forced vibration, resonance conditions.
+
+OPTICS
+- "Reflection of Light":
+  mirrors, laws of reflection, images in mirrors.
+- "Refraction of Light":
+  refractive index, Snell's law, critical angle.
+- "Lenses and Optical Instruments":
+  convex/concave lenses, microscopes, telescopes.
+- "Dispersion and Electromagnetic Spectrum":
+  prisms, spectrum, EM wave properties.
+- "Fibre Optics and Lasers":
+  optical fibres, laser applications.
+
+ELECTROSTATICS
+- "Electric Charges and Fields":
+  electric field lines, charging methods.
+- "Coulomb's Law":
+  electrostatic force between charges.
+- "Electric Potential and Capacitance":
+  capacitors, potential difference in electrostatics.
+
+CURRENT ELECTRICITY
+- "Electric Current and Circuits":
+  circuit analysis, current flow, Kirchhoff-type ideas.
+- "Ohm's Law and Resistance":
+  V = IR, resistance calculations.
+- "Resistivity and Conductivity":
+  material properties affecting current flow.
+- "Electric Energy and Power":
+  electrical power, heating effect, energy consumption.
+- "Cells and EMF":
+  batteries, internal resistance, electromotive force.
+- "Shunt and Multiplier":
+  galvanometer conversion, ammeter/voltmeter extension.
+
+MAGNETISM AND ELECTROMAGNETISM
+- "Magnetic Fields and Properties":
+  magnets, magnetic field patterns.
+- "Electromagnetic Induction":
+  generators, induced EMF, Faraday's law.
+- "AC Circuits":
+  alternating current behavior and calculations.
+- "Power Transmission":
+  transformers and national grid transmission.
+- "Semiconductors and Diodes":
+  p-n junctions, rectifiers, transistor basics.
+
+ATOMIC AND NUCLEAR PHYSICS
+- "Models of the Atom":
+  atomic structure and atomic models.
+- "Photoelectric Effect and Thermionic Emission":
+  electron emission due to light or heat.
+- "X-rays":
+  production and properties of X-rays.
+- "Radioactivity":
+  alpha, beta, gamma decay, half-life.
+- "Nuclear Reactions":
+  fission, fusion, nuclear equations.
+- "Wave-Particle Duality":
+  de Broglie wavelength, dual nature of matter/light.
 
 QUESTIONS TO CLASSIFY:
 ${qList}
 
-Return ONLY a JSON array of integers — one topic index per question, in order.
-No explanation, no markdown, just the raw JSON array.`;
+Return ONLY a JSON array of integers.
+One topic index per question, in order.
+No explanation.
+No markdown.
+No extra text.`;
 }
 
 async function main() {

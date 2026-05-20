@@ -3,10 +3,10 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const SUBJECT = 'mathematics';
-const START_YEAR = 1990;
-const END_YEAR = 2024;
-const DELAY_MS = 1200;
+const SUBJECT = 'further-mathematics';
+const START_YEAR = 2006;
+const END_YEAR = 2025;
+const DELAY_MS = 800;
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -91,7 +91,7 @@ async function main() {
     await sleep(DELAY_MS);
   }
 
-  const outPath = path.join(__dirname, 'data', 'raw.json');
+  const outPath = path.join(__dirname, 'data', `raw_${SUBJECT}.json`);
   fs.writeFileSync(outPath, JSON.stringify({ questions: allQuestions }, null, 2));
   console.log(`\nDone. ${allQuestions.length} total questions saved to data/raw.json`);
 }

@@ -2,12 +2,13 @@ require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 const Groq = require("groq-sdk");
+const SUBJECT = 'further-mathematics';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 
-const INPUT_FILE = path.join(__dirname, "data", "raw.json");
-const OUTPUT_FILE = path.join(__dirname, "data", "classified.json");
-const PROGRESS_FILE = path.join(__dirname, "data", "classify_progress.json");
+const INPUT_FILE = path.join(__dirname, "data", `raw_${SUBJECT}.json`);
+const OUTPUT_FILE = path.join(__dirname, 'data', `classified_${SUBJECT}.json`);
+const PROGRESS_FILE = path.join(__dirname, 'data', `classify_progress_${SUBJECT}.json`);
 
 const BATCH_SIZE = 20;
 const DELAY_MS = 1000;
@@ -15,56 +16,21 @@ const DELAY_MS = 1000;
 // ─── Topic Map ────────────────────────────────────────────────────────────────
 
 const TOPIC_MAP = {
-  "Number and Numeration": [
-    "Number Bases",
-    "Modular Arithmetic",
-    "Fractions/Decimals/Approximations",
-    "Indices",
-    "Logarithms",
-    "Sequence and Series",
-    "Sets",
-    "Logical Reasoning",
-    "Rational Numbers",
+  "Pure Mathematics": [
+    "Sets and Venn Diagrams",
     "Surds",
-    "Matrices and Determinants",
-    "Ratio/Proportions/Rates",
-    "Percentages",
-    "Financial Arithmetic",
-    "Variation",
-  ],
-  "Algebraic Processes": [
-    "Algebraic Expressions",
-    "Expansion and Factorisation",
-    "Linear Equations",
-    "Change of Subject of Formula",
-    "Quadratic Equations",
-    "Graphs of Linear and Quadratic Functions",
-    "Linear Inequalities",
-    "Algebraic Fractions",
-    "Functions and Relations",
-  ],
-  "Mensuration": [
-    "Lengths and Perimeters",
-    "Areas",
-    "Volumes",
-  ],
-  "Plane Geometry": [
-    "Angles",
-    "Angles on Parallel Lines",
-    "Triangles and Polygons",
-    "Circle Theorems",
-    "Construction",
-    "Loci",
-  ],
-  "Coordinate Geometry": [
-    "Coordinate Geometry of Straight Lines",
-  ],
-  "Trigonometry": [
-    "Sine/Cosine/Tangent",
-    "Angles of Elevation and Depression",
-    "Bearings",
-  ],
-  "Calculus": [
+    "Binary Operations",
+    "Logical Reasoning",
+    "Functions",
+    "Polynomial Functions",
+    "Rational Functions and Partial Fractions",
+    "Indices and Logarithms",
+    "Permutations and Combinations",
+    "Binomial Theorem",
+    "Sequences and Series",
+    "Matrices and Linear Transformation",
+    "Trigonometry",
+    "Coordinate Geometry",
     "Differentiation",
     "Integration",
   ],
@@ -72,9 +38,10 @@ const TOPIC_MAP = {
     "Statistics",
     "Probability",
   ],
-  "Vectors and Transformation": [
-    "Vectors in a Plane",
-    "Transformation",
+  "Vectors and Mechanics": [
+    "Vectors",
+    "Statics",
+    "Dynamics and Projectiles",
   ],
 };
 
