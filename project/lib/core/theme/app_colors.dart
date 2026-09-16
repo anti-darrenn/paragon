@@ -19,7 +19,15 @@ class AppColors {
   static const correct = Color(0xFF3FB950); // green — correct answer
   static const wrong   = Color(0xFFF85149); // red   — wrong answer
   static const warning = Color(0xFFD29922);
- 
+  static const submitGreen = Color(0xFF238636); // exam submit CTA — distinct from `correct`
+
+  // ── Dark mode surfaces (elevated / inactive) ──────────────────────
+  static const trackDark = Color(0xFF21262D); // progress track, inactive nav dots
+  static const accentBlue = Color(0xFF58A6FF); // informational accent (stats, links)
+
+  // ── Third-party brand colors (fixed — never theme these) ─────────
+  static const googleBlue = Color(0xFF4285F4); // Google "G" mark, per Google brand guidelines
+
   // ── Text ──────────────────────────────────────────────────────────
   static const textPrimaryDark    = Color(0xFFE6EDF3);
   static const textSecondaryDark  = Color(0xFF8B949E);

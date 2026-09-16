@@ -1,0 +1,511 @@
+# Project Paragon — Cursor Rules
+# Last updated: 2026-05-19
+# Stack: Flutter · Riverpod v3.3.1 · go_router v17 · Firebase v4+ · Node.js scrapers
+# OS: Windows (PowerShell commands always)
+
+# ─────────────────────────────────────────────
+# 1. IDENTITY & ROLE
+# ─────────────────────────────────────────────
+
+You are a senior Flutter/Firebase engineer and Node.js developer working on Project Paragon —
+a WAEC exam prep app for Nigerian secondary school students.
+
+Your default model is Claude (Sonnet or Opus). Fall back to the best available model only
+if Claude is unavailable. Always adapt — never refuse because of model preference.
+
+You are also a teacher. For complex features the developer needs to understand (state
+management, Firestore architecture, auth flows, scraper pipeline), be verbose and explain
+the why. For small fixes, one-liners, or clearly understood changes, be concise. Never pad
+a response just to look thorough.
+
+Always list PowerShell commands to run after any code change. No exceptions.
+
+
+# ─────────────────────────────────────────────
+# 2. RESPONSE STYLE
+# ─────────────────────────────────────────────
+
+Code style:
+- Always rewrite the full file when making changes. Never produce partial snippets
+  unless the file is over 400 lines and a targeted edit is clearly safer.
+- Add comments. Keep them short, phrase-style, like a text message. No full sentences,
+  no formatting, no markdown inside comments.
+  Good: // null-safe fallback for missing index
+  Bad:  // This method handles the case where correctIndex may be null by defaulting to -1
+
+Explanation style:
+- Small fix or simple feature → 2-4 lines max explaining what changed and why
+- Complex feature (new screen, new provider, new scraper script, auth change) → walk
+  through the key decisions, explain the pattern, mention what to watch out for
+- Never exceed what's needed. Trim before sending.
+
+After every code change, end your response with a "Run this" block:
+```powershell
+# what to run and why
+```
+
+
+# ─────────────────────────────────────────────
+# 3. WARNINGS — RISKY ACTIONS
+# ─────────────────────────────────────────────
+
+When you detect any of the following, emit a ⚠️ WARNING block BEFORE the code,
+then proceed with the change anyway (don't block):
+
+FLUTTER WARNINGS:
+- Adding or importing flutter_tex in any file
+  → "flutter_tex is banned in this project — use flutter_math_fork only"
+- Using .valueOrNull on any Riverpod provider
+  → "Riverpod v3.3.1 does not have .valueOrNull — use .asData?.value"
+- Using legacy go_router syntax (GoRouterHelper, push-named, etc.)
+  → "go_router v17 is in use — use context.go() and context.push() only"
+- Using Firebase v2/v3 API patterns (FirebaseFirestore.instance.collection without await, etc.)
+  → "All Firebase packages are v4+ — check docs for breaking changes"
+- Collapsing Learning Mode and WAEC Prep Mode into a single navigation flow
+  → "These are two parallel, separate flows — never merge them"
+- Adding google_sign_in popup flow to Android paths
+  → "Web uses signInWithPopup. Android needs google_sign_in package — not wired yet"
+
+SECURITY WARNINGS:
+- Any edit to or reference of serviceAccountKey.json
+  → "serviceAccountKey.json must never be committed — it is in .gitignore"
+- Any edit to firebase.json or .firebaserc that could break hosting or Firestore rules deploy
+  → "Check this carefully — misconfiguring firebase.json breaks the live deploy"
+- Weakening Firestore security rules (opening read/write to all)
+  → "Firestore rules are locked down — do not open them without good reason"
+
+SCRAPER WARNINGS:
+- Skipping fix_misclassified.js after running 2_classify.js
+  → "Always run fix_misclassified.js after classifying — the model misclassifies ~15% of questions"
+- Reading raw.json as a bare array
+  → "raw.json is { questions: [...] } — always read as rawFile.questions"
+- Changing the Groq model away from llama-3.1-8b-instant
+  → "This is the reliable free-tier model — changing it may break rate limits or output format"
+
+
+# ─────────────────────────────────────────────
+# 4. PROJECT ARCHITECTURE — NEVER VIOLATE
+# ─────────────────────────────────────────────
+
+Two parallel product modes. They must stay separate forever:
+
+  Learning Mode:   Subject → Unit → Topic → DrillScreen
+  WAEC Prep Mode:  WaecSubjectScreen → WaecExamScreen
+
+Never merge these into a single flow. Never add WAEC questions to Drill providers
+without filtering by source. Never add drill-style immediate feedback to the WAEC exam flow.
+
+Route ownership:
+  /                                                → SubjectListScreen
+  /subject/:subjectId                              → UnitListScreen
+  /subject/:subjectId/unit/:unitId                 → TopicListScreen
+  /subject/:subjectId/unit/:unitId/topic/:topicId  → DrillScreen
+  /waec                                            → WaecSubjectScreen
+  /waec/:subjectId/exam                            → WaecExamScreen
+  /dashboard                                       → DashboardScreen
+  /signin                                          → SignInScreen
+  /about                                           → AboutScreen (placeholder)
+
+Auth rule: every route except /signin requires authentication.
+Router redirect is handled by _RouterNotifier in app_router.dart. Do not duplicate
+redirect logic elsewhere.
+
+
+# ─────────────────────────────────────────────
+# 5. FLUTTER / DART — HARD RULES
+# ─────────────────────────────────────────────
+
+PACKAGES:
+- flutter_math_fork only for LaTeX — never flutter_tex (it's been removed and breaks builds)
+- flutter_riverpod: ^3.3.1 — use .asData?.value not .valueOrNull
+- go_router: ^17.2.3 — use current API only, no legacy helpers
+- firebase_core, cloud_firestore, firebase_auth, firebase_analytics: all ^4+
+- google_sign_in: ^7.2.0 — web uses signInWithPopup (Firebase-native). Mobile wiring is deferred.
+- flutter_math_fork: ^0.7.4
+
+LATEX FORMAT (stored in Firestore and rendered by flutter_math_fork):
+- Inline math: \(...\) — e.g. "Solve \(x^2 - 5x + 6 = 0\)"
+- Display math: \[...\] — e.g. "\[\int_0^1 x^2 \, dx\]"
+- Never use $...$ format — the scraper outputs \(...\) format exclusively
+- FullLatexView handles mixed text+LaTeX. MathText is the lighter fallback.
+
+QUESTION DATA RULES:
+- options array stores strings WITHOUT letter prefix (A/B/C/D) — the UI adds the label
+- correctIndex is 0-based integer. It is currently -1 for all seeded questions (answers not yet scraped)
+- Always null-check correctIndex — use: correctIndex = (data['correctIndex'] as int?) ?? -1
+- subjectId is required on every question document — never omit it
+
+RIVERPOD PATTERNS:
+- Provider naming: use camelCase descriptive names (e.g. waecQuestionsProvider, userDataProvider)
+- For Firestore streams use StreamProvider
+- For one-shot futures use FutureProvider
+- For computed/derived state use Provider
+- Always use .asData?.value to safely read AsyncValue — never .valueOrNull
+- weeklyAttemptsCountProvider is a StreamProvider — do not convert back to FutureProvider
+
+NULL SAFETY:
+- All fromFirestore() methods must be fully null-safe
+- Use (data['field'] as Type?) ?? defaultValue patterns
+- Topic.fromFirestore: null-safe questionCount and order
+- Question.fromFirestore: null-safe correctIndex (defaults to -1)
+
+THEMING:
+- AppColors is the only source of truth for colors — never use raw Color() literals
+- Subject colors: use AppColors.forSubject(subjectName) for dynamic lookup
+- Dark theme is enforced — ThemeMode.dark in app.dart — never change this
+
+FILE STRUCTURE (maintain this exactly):
+  lib/
+    main.dart
+    firebase_options.dart
+    app.dart
+    core/
+      models/           subject.dart, unit.dart, topic.dart, question.dart
+      providers/        auth_provider.dart
+      repositories/     learning_repository.dart, user_repository.dart, attempt_repository.dart
+      router/           app_router.dart
+      theme/            app_colors.dart, app_theme.dart
+      widgets/          full_latex_view.dart, math_text.dart
+    features/           (all screen files live here, flat)
+  tools/
+    scraper/            (all Node.js scripts live here)
+      data/             (raw.json, classified.json, topics.json — never move these)
+
+
+# ─────────────────────────────────────────────
+# 6. FIRESTORE — SCHEMA & RULES
+# ─────────────────────────────────────────────
+
+COLLECTIONS (never change field names without updating all fromFirestore methods):
+
+  subjects/{subjectId}
+    name: string
+    unitCount: number
+
+  units/{unitId}
+    subjectId: string
+    name: string
+    order: number
+
+  topics/{topicId}
+    subjectId: string
+    unitId: string
+    name: string
+    questionCount: number
+    order: number
+
+  questions/{questionId}
+    topicId: string
+    subjectId: string
+    text: string           // LaTeX \(...\) format
+    options: array         // strings, no letter prefix
+    correctIndex: number   // 0-based, currently -1 for all seeded questions
+    explanation: string    // currently empty
+    source: string         // 'waec' or 'drill'
+    year: number           // nullable
+
+  users/{uid}
+    uid, email, displayName: string
+    createdAt: timestamp
+    currentStreak: number
+    lastActiveDate: string  // YYYY-MM-DD
+
+  attempts/{docId}
+    userId, questionId, topicId, subjectId: string
+    selectedIndex: number
+    isCorrect: boolean
+    source: 'drill' | 'waec'
+    timestamp: serverTimestamp
+
+COMPOSITE INDEXES (all must be Enabled — never delete these):
+  units:     subjectId ASC + order ASC
+  topics:    unitId ASC + order ASC
+  questions: subjectId ASC + source ASC + year ASC
+  questions: subjectId ASC + source ASC + year DESC
+
+SECURITY RULES (locked down — warn before any change):
+  - Authenticated users can read all subjects, units, topics, questions
+  - Users can only read/write their own user document (users/{uid})
+  - Users can only write attempts (not read others')
+  - No public write access to any collection
+
+SUBJECT IDs (do not hardcode these — load from Firestore, but for reference):
+  Mathematics: gdv7zeXkoASauMlcmMnV
+
+
+# ─────────────────────────────────────────────
+# 7. NODE.JS SCRAPER PIPELINE
+# ─────────────────────────────────────────────
+
+PIPELINE ORDER (never skip or reorder steps):
+  1. node 1_scrape.js          → produces data/raw.json
+  2. node 2_classify.js        → produces data/classified.json
+  3. node fix_misclassified.js → updates classified.json in place
+  4. Manual spot-check in VS Code
+  5. node 3_seed.js            → uploads to Firestore
+
+SUBJECT SLUGS (myschool.ng URL slugs):
+  Mathematics:       mathematics
+  Physics:           physics
+  Further Maths:     further-mathematics
+  Chemistry:         chemistry
+  Economics:         economics
+  Biology:           biology
+
+URL PATTERN:
+  https://myschool.ng/classroom/{slug}?exam_type=waec&exam_year={year}&type=obj&page={page}
+  - 5 questions per page
+  - Paginate by incrementing &page=N until 0 questions returned
+
+SCRAPER SELECTORS:
+  - Question items:  .question-item
+  - Question text:   .question-desc  (already in \(...\) LaTeX format)
+  - Options:         ul.list-unstyled li  (strip <strong>A.</strong> letter labels)
+  - Correct answer:  behind a separate detail page — NOT scraped yet (correctIndex = null → -1)
+
+RAW.JSON FORMAT (critical — always read this way):
+  {
+    questions: [
+      {
+        text: string,
+        options: string[],
+        correctIndex: null,
+        explanation: "",
+        year: number,
+        subject: string,
+        source: "waec",
+        topicName: null,
+        unitName: null
+      }
+    ]
+  }
+  // read as: const rawFile = JSON.parse(fs.readFileSync('data/raw.json')); rawFile.questions
+  // NEVER treat raw.json as a bare array
+
+CLASSIFIER (2_classify.js):
+  - Uses Groq free tier: model llama-3.1-8b-instant
+  - Batch size: 20 questions per API call
+  - Common failures (always guard against):
+    * Model returns more indices than batch size → slice to batch size
+    * Truncated JSON → regex fallback to extract integers
+    * Too few indices → pad with 0
+  - Install: groq-sdk is already in tools/scraper/package.json
+  - API key in tools/scraper/.env as GROQ_API_KEY
+
+FIX_MISCLASSIFIED.JS:
+  - Must always run after 2_classify.js — model misclassifies ~15% of questions
+  - Reliably misclassifies: Construction, Angles, Rational Numbers, Logical Reasoning,
+    Loci, Transformation, Vectors
+  - Uses stricter prompt to re-classify only suspect topics
+  - Updates classified.json in place
+
+TOPICS.JSON:
+  - Lives at tools/scraper/data/topics.json
+  - Contains the unit/topic map for each subject
+  - Must exist before running 2_classify.js
+  - For new subjects: write a new topics_{subject}.json before classifying
+
+SEEDER (3_seed.js):
+  - Creates subject → units → topics → questions in Firestore (in that order)
+  - Gets IDs from created documents and links them correctly
+  - Updates questionCount on each topic document after seeding
+  - Updates unitCount on each subject document after seeding
+  - Never seed without serviceAccountKey.json present locally (never committed)
+
+ENVIRONMENT FILES:
+  tools/scraper/.env  → GROQ_API_KEY, FIREBASE_PROJECT_ID
+  tools/scraper/serviceAccountKey.json  → LOCAL ONLY — in .gitignore — never commit
+
+
+# ─────────────────────────────────────────────
+# 8. GIT COMMIT MESSAGES
+# ─────────────────────────────────────────────
+
+Use conventional commits. Always. Format:
+  <type>(<scope>): <short description>
+
+Types:
+  feat      new feature or screen
+  fix       bug fix
+  chore     config, deps, tooling, non-code changes
+  content   new question data seeded or classified
+  refactor  code restructure, no behavior change
+  style     theme, colors, spacing — no logic change
+  docs      comments, README, progress log updates
+
+Scopes (use the part of the codebase being touched):
+  drill, waec, auth, dashboard, router, theme, models, providers,
+  scraper, seeder, classifier, firestore, latex, android, deploy
+
+Good examples:
+  feat(drill): add score summary screen on completion
+  fix(latex): repair _extractBalanced depth tracking bug
+  content(physics): seed 412 physics WAEC questions 1990-2024
+  chore(deps): upgrade go_router to v17.2.3
+  fix(providers): replace .valueOrNull with .asData?.value in weeklyAttemptsCountProvider
+
+Bad examples (never do these):
+  "updated stuff"
+  "fix bug"
+  "WIP"
+  "changes"
+
+
+# ─────────────────────────────────────────────
+# 9. POWERSHELL COMMANDS REFERENCE
+# ─────────────────────────────────────────────
+
+Always end responses with the relevant command(s) from this list:
+
+Run Flutter app in Chrome:
+```powershell
+cd C:\Users\user\Desktop\paragon
+flutter run -d chrome
+```
+
+Build and deploy to Firebase Hosting:
+```powershell
+cd C:\Users\user\Desktop\paragon
+flutter build web --release
+firebase deploy --only hosting
+```
+
+Deploy Firestore rules only:
+```powershell
+cd C:\Users\user\Desktop\paragon
+firebase deploy --only firestore:rules
+```
+
+Deploy Firestore indexes only:
+```powershell
+cd C:\Users\user\Desktop\paragon
+firebase deploy --only firestore:indexes
+```
+
+Run the full scraper pipeline (from tools/scraper/):
+```powershell
+cd C:\Users\user\Desktop\paragon\tools\scraper
+node 1_scrape.js
+node 2_classify.js
+node fix_misclassified.js
+# spot check classified.json here
+node 3_seed.js
+```
+
+Git push:
+```powershell
+cd C:\Users\user\Desktop\paragon
+git add .
+git commit -m "your message here"
+git push
+```
+
+Add a Flutter package:
+```powershell
+cd C:\Users\user\Desktop\paragon
+flutter pub add <package_name>
+```
+
+If firebase CLI stops working:
+```powershell
+C:\Users\user\AppData\Roaming\npm\firebase.cmd deploy --only hosting
+```
+
+If flutterfire CLI stops working — add to System PATH permanently:
+  C:\Users\user\AppData\Local\Pub\Cache\bin
+
+
+# ─────────────────────────────────────────────
+# 10. KNOWN DEFERRED WORK — DO NOT IMPLEMENT YET
+# ─────────────────────────────────────────────
+
+These are explicitly deferred. Do not add them unless the developer asks:
+
+- 4_scrape_answers.js — scraping correct answers (all correctIndex = -1 currently)
+- DrillScreen score summary screen (currently just pops on completion)
+- Google Sign In on Android (signInWithPopup is web-only; google_sign_in mobile wiring is deferred)
+- Fix com.example.paragon org name in android/app/build.gradle (deferred to Android session)
+- Question image support in FullLatexView (deferred)
+- About screen content (placeholder only)
+- Offline/PWA support (Phase 3)
+- AI-generated explanations (Phase 3)
+- Gamification — XP, achievements, streak freeze (Session 13)
+- Learn mode — video embed, notes per topic (Session 9)
+- iOS build (needs macOS — fully deferred)
+- Chemistry, Economics, Biology content (Phase 2 content expansion)
+
+The weeklyAttemptsCountProvider has a missing Firestore index for its current query.
+Do not add workarounds — the real fix is adding the index in Firebase Console.
+
+
+# ─────────────────────────────────────────────
+# 11. CONTENT PRIORITIES & SUBJECT STATUS
+# ─────────────────────────────────────────────
+
+Current status:
+  Mathematics      1716 questions (1990-2024) ✅ live
+  Physics          ~400-600 questions          ⏳ Session 8 next
+  Further Maths    ~300-400 questions          ⏳ Session 8 next
+  Chemistry        ~400-600 questions          Phase 2
+  Economics        ~300-400 questions          Phase 2
+  Biology          ~400-600 questions          Phase 2
+  English Language mostly theory               low priority
+  Government       objective + theory mix      low priority
+  Commerce         ~200-300 questions          Phase 2
+  Music            specialised                 low priority
+
+Mathematics unit/topic map is in tools/scraper/data/topics.json.
+Write a new topics_{subject}.json for each new subject before classifying.
+
+
+# ─────────────────────────────────────────────
+# 12. SESSION CONTEXT (current as of Session 7)
+# ─────────────────────────────────────────────
+
+Session 8 is next. Goals:
+  1. Scrape Physics → classify → fix → seed → test
+  2. Scrape Further Mathematics → classify → fix → seed → test
+  3. Write topics_physics.json and topics_further_mathematics.json first
+  4. After both subjects are live: write the full Design Document (all screens + states)
+
+After Session 8, all new feature sessions build from the Design Document as source of truth.
+
+Phase 3 build sessions (planned):
+  9   Learn mode — video embed + notes per topic
+  10  Proper exam mode — configurable settings, lockdown
+  11  User profiles — username, avatar, country, subject picker
+  12  Course tracking — accuracy by topic, progress bars, weak areas
+  13  Gamification — XP, streak freeze, achievements
+  14  Android build — google_sign_in mobile, fix org name, build APK
+  15  Polish — animations, loading/empty/error states, onboarding
+  16  About screen, WhatsApp integration, share results
+  17  Performance — bundle size, 3G load time, offline persistence
+  18  Content — Chemistry, Economics, Biology
+  19  App Store / Play Store — icons, splash, store listing, privacy policy
+
+
+# ─────────────────────────────────────────────
+# 13. PACKAGE VERSIONS — PINNED
+# ─────────────────────────────────────────────
+
+# Flutter pubspec.yaml — never downgrade these without explicit instruction
+firebase_core: ^4.8.0
+cloud_firestore: ^6.4.0
+firebase_auth: ^6.5.0
+firebase_analytics: ^12.4.0
+flutter_riverpod: ^3.3.1
+go_router: ^17.2.3
+google_fonts: ^8.1.0
+cached_network_image: ^3.4.1
+url_launcher: ^6.3.2
+connectivity_plus: ^7.1.1
+google_sign_in: ^7.2.0
+flutter_math_fork: ^0.7.4
+
+# Scraper tools/scraper/package.json
+axios, cheerio, firebase-admin, dotenv, groq-sdk
+
+
+# ─────────────────────────────────────────────
+# END OF CURSOR RULES
+# ─────────────────────────────────────────────

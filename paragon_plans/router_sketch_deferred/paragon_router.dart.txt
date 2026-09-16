@@ -1,0 +1,501 @@
+// ============================================================
+// lib/core/router/app_router.dart
+// Project Paragon — GoRouter route tree
+// Section 1.4 implementation
+// ============================================================
+//
+// DEPENDENCIES (pubspec.yaml):
+//   go_router: ^14.0.0
+//   flutter_riverpod: ^2.5.0
+//   riverpod_annotation: ^2.3.0
+//
+// FOLDER STRUCTURE ASSUMED:
+//   lib/
+//     core/router/
+//       app_router.dart        ← this file
+//       router_redirect.dart   ← redirect logic (see file 2)
+//     features/
+//       auth/screens/
+//         splash_screen.dart
+//         welcome_screen.dart
+//         sign_in_email_screen.dart
+//         subject_selection_screen.dart
+//       home/screens/
+//         home_screen.dart
+//         unit_list_screen.dart
+//         topic_list_screen.dart
+//         learn_screen.dart
+//         drill_screen.dart
+//       dashboard/screens/
+//         dashboard_screen.dart
+//         topic_stats_screen.dart
+//       exam/screens/
+//         exam_setup_screen.dart
+//         exam_active_screen.dart
+//         exam_results_screen.dart
+//         answer_review_screen.dart
+//       profile/screens/
+//         profile_screen.dart
+//         achievements_screen.dart
+//         settings_screen.dart
+//     shared/screens/
+//       auth_upsell_screen.dart
+//     shared/widgets/
+//       paragon_scaffold.dart   ← nav bar/rail wrapper (see file 3)
+
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'router_redirect.dart';
+
+// ── Route path constants ────────────────────────────────────
+// Always use these constants — never hardcode strings.
+// Add new routes here when extending.
+
+abstract class AppRoutes {
+  // Pre-auth
+  static const splash           = '/splash';
+  static const welcome          = '/welcome';
+  static const signInEmail      = '/sign-in-email';
+  static const subjectSelection = '/subject-selection'; // ?mode=onboarding|settings
+
+  // Home branch
+  static const home             = '/home';
+  static const unitList         = 'subject/:subjectId';     // relative
+  static const topicList        = 'unit/:unitId';           // relative
+  static const learnScreen      = 'topic/:topicId';         // relative
+  static const drillScreen      = 'drill';                  // relative
+
+  // Dashboard branch
+  static const dashboard        = '/dashboard';
+  static const topicStats       = 'topic/:topicId';         // relative
+
+  // Exam branch
+  static const examSetup        = '/exam/setup';
+  static const examActive       = '/exam/active';           // go(), not push()
+  static const examResults      = '/exam/results';          // go(), not push()
+  static const answerReview     = 'review';                 // relative push()
+
+  // Profile branch
+  static const profile          = '/profile';
+  static const achievements     = 'achievements';           // relative
+  static const settings         = 'settings';               // relative
+}
+
+// ── Router provider ─────────────────────────────────────────
+// Exposes the router to the widget tree via Riverpod.
+// ref.watch(routerProvider) in main.dart → MaterialApp.router
+
+final routerProvider = Provider<GoRouter>((ref) {
+  // Re-runs redirect when auth state changes
+  final authNotifier = ref.watch(authRedirectNotifierProvider.notifier);
+
+  return GoRouter(
+    initialLocation: AppRoutes.splash,
+    refreshListenable: authNotifier, // triggers redirect on auth change
+    redirect: (context, state) => routerRedirect(ref, state),
+    debugLogDiagnostics: true, // turn off in production
+
+    routes: [
+      // ── Pre-auth routes ──────────────────────────────────
+      // No shell. No nav bar. No back on splash/subject-selection(onboarding).
+
+      GoRoute(
+        path: AppRoutes.splash,
+        pageBuilder: (context, state) => _fadePage(
+          state,
+          const SplashScreen(),
+        ),
+      ),
+
+      GoRoute(
+        path: AppRoutes.welcome,
+        pageBuilder: (context, state) => _fadePage(
+          state,
+          const WelcomeScreen(),
+        ),
+      ),
+
+      GoRoute(
+        path: AppRoutes.signInEmail,
+        pageBuilder: (context, state) => _slidePage(
+          state,
+          const SignInEmailScreen(),
+        ),
+      ),
+
+      // FIX 2 — one route, two modes via query param
+      // mode=onboarding → no back button, must complete → context.go('/home')
+      // mode=settings   → back allowed              → context.pop()
+      GoRoute(
+        path: AppRoutes.subjectSelection,
+        pageBuilder: (context, state) {
+          final mode = state.uri.queryParameters['mode'] ?? 'onboarding';
+          return _slidePage(
+            state,
+            SubjectSelectionScreen(mode: mode),
+          );
+        },
+      ),
+
+      // ── Guest shell ──────────────────────────────────────
+      // StatefulShellRoute.indexedStack preserves state per branch.
+      // Renders NavigationRail on web ≥700px, BottomNavigationBar on mobile.
+      // Dashboard and Profile branches show auth upsell instead of real content.
+
+      StatefulShellRoute.indexedStack(
+        // Wrap every branch screen in ParagonScaffold which shows/hides
+        // the nav bar based on the current route depth (see paragon_scaffold.dart)
+        builder: (context, state, navigationShell) => ParagonScaffold(
+          navigationShell: navigationShell,
+          isGuest: true,
+        ),
+        branches: [
+          // Guest Branch 0 — Home
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.home,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const GuestHomeScreen(),
+                ),
+                routes: [
+                  // Level 2 — Unit list
+                  GoRoute(
+                    path: AppRoutes.unitList,
+                    pageBuilder: (context, state) => _slidePage(
+                      state,
+                      UnitListScreen(
+                        subjectId: state.pathParameters['subjectId']!,
+                      ),
+                    ),
+                    routes: [
+                      // Level 3 — Topic list
+                      GoRoute(
+                        path: AppRoutes.topicList,
+                        pageBuilder: (context, state) => _slidePage(
+                          state,
+                          TopicListScreen(
+                            unitId: state.pathParameters['unitId']!,
+                          ),
+                        ),
+                        routes: [
+                          // Level 4 — Learn screen (slides UP, not right)
+                          GoRoute(
+                            path: AppRoutes.learnScreen,
+                            pageBuilder: (context, state) => _slideUpPage(
+                              state,
+                              LearnScreen(
+                                topicId: state.pathParameters['topicId']!,
+                              ),
+                            ),
+                            routes: [
+                              // Level 5 — Drill (guest: no save, shows upsell on complete)
+                              GoRoute(
+                                path: AppRoutes.drillScreen,
+                                pageBuilder: (context, state) => _slidePage(
+                                  state,
+                                  const DrillScreen(guestMode: true),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          // Guest Branch 1 — Dashboard (auth-gated, shows upsell)
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.dashboard,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const AuthUpsellScreen(
+                    feature: 'Track your progress',
+                    subtitle: 'Create a free account to unlock your dashboard.',
+                  ),
+                ),
+              ),
+            ],
+          ),
+
+          // Guest Branch 2 — WAEC Exam (limited: no personal config, no save)
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.examSetup,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const ExamSetupScreen(guestMode: true),
+                ),
+              ),
+              // FIX 3 — go() replaces /exam/setup in the stack.
+              // Back from results → /exam/setup (not inside a finished exam).
+              GoRoute(
+                path: AppRoutes.examActive,
+                pageBuilder: (context, state) => _slideUpPage(
+                  state,
+                  const ExamActiveScreen(guestMode: true),
+                ),
+              ),
+              GoRoute(
+                path: AppRoutes.examResults,
+                pageBuilder: (context, state) => _slidePage(
+                  state,
+                  const ExamResultsScreen(guestMode: true),
+                ),
+              ),
+            ],
+          ),
+
+          // Guest Branch 3 — Profile (auth-gated, shows upsell)
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.profile,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const AuthUpsellScreen(
+                    feature: 'Your profile',
+                    subtitle: 'Create a free account to save your progress.',
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+
+      // ── Auth shell ───────────────────────────────────────
+      // Only reached after successful sign-in.
+      // GoRouter redirect guards every route here — see router_redirect.dart.
+
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, navigationShell) => ParagonScaffold(
+          navigationShell: navigationShell,
+          isGuest: false,
+        ),
+        branches: [
+          // Auth Branch 0 — Home
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.home,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const HomeScreen(),
+                ),
+                routes: [
+                  GoRoute(
+                    path: AppRoutes.unitList,
+                    pageBuilder: (context, state) => _slidePage(
+                      state,
+                      UnitListScreen(
+                        subjectId: state.pathParameters['subjectId']!,
+                      ),
+                    ),
+                    routes: [
+                      GoRoute(
+                        path: AppRoutes.topicList,
+                        pageBuilder: (context, state) => _slidePage(
+                          state,
+                          TopicListScreen(
+                            unitId: state.pathParameters['unitId']!,
+                          ),
+                        ),
+                        routes: [
+                          GoRoute(
+                            path: AppRoutes.learnScreen,
+                            pageBuilder: (context, state) => _slideUpPage(
+                              state,
+                              LearnScreen(
+                                topicId: state.pathParameters['topicId']!,
+                              ),
+                            ),
+                            routes: [
+                              GoRoute(
+                                path: AppRoutes.drillScreen,
+                                pageBuilder: (context, state) => _slidePage(
+                                  state,
+                                  const DrillScreen(guestMode: false),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          // Auth Branch 1 — Dashboard
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.dashboard,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const DashboardScreen(),
+                ),
+                routes: [
+                  GoRoute(
+                    path: AppRoutes.topicStats,
+                    pageBuilder: (context, state) => _slidePage(
+                      state,
+                      TopicStatsScreen(
+                        topicId: state.pathParameters['topicId']!,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          // Auth Branch 2 — WAEC Exam
+          // FIX 3 — /exam/active and /exam/results are siblings of /exam/setup,
+          // not children. Combined with go(), this means:
+          //   setup → go('/exam/active') → go('/exam/results') → back → setup ✓
+          //   (no back into a finished exam)
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.examSetup,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const ExamSetupScreen(guestMode: false),
+                ),
+              ),
+              GoRoute(
+                path: AppRoutes.examActive,
+                pageBuilder: (context, state) => _slideUpPage(
+                  state,
+                  const ExamActiveScreen(guestMode: false),
+                ),
+              ),
+              GoRoute(
+                path: AppRoutes.examResults,
+                pageBuilder: (context, state) => _slidePage(
+                  state,
+                  const ExamResultsScreen(guestMode: false),
+                ),
+                routes: [
+                  GoRoute(
+                    path: AppRoutes.answerReview,
+                    pageBuilder: (context, state) => _slidePage(
+                      state,
+                      const AnswerReviewScreen(),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          // Auth Branch 3 — Profile
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.profile,
+                pageBuilder: (context, state) => _noTransitionPage(
+                  state,
+                  const ProfileScreen(),
+                ),
+                routes: [
+                  GoRoute(
+                    path: AppRoutes.achievements,
+                    pageBuilder: (context, state) => _slidePage(
+                      state,
+                      const AchievementsScreen(),
+                    ),
+                  ),
+                  GoRoute(
+                    path: AppRoutes.settings,
+                    pageBuilder: (context, state) => _slidePage(
+                      state,
+                      const SettingsScreen(),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    ],
+  );
+});
+
+
+// ── Page transition helpers ──────────────────────────────────
+// Call these in every pageBuilder — never use MaterialPage directly.
+// Keeps all transition logic in one place.
+
+// Tab switches — instant (0ms), state already preserved by indexedStack
+Page<void> _noTransitionPage(GoRouterState state, Widget child) {
+  return NoTransitionPage(key: state.pageKey, child: child);
+}
+
+// Standard browse push — slides right (Android default)
+Page<void> _slidePage(GoRouterState state, Widget child) {
+  return CustomTransitionPage(
+    key: state.pageKey,
+    child: child,
+    transitionDuration: const Duration(milliseconds: 300),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(1.0, 0.0),
+          end: Offset.zero,
+        ).animate(CurvedAnimation(
+          parent: animation,
+          curve: Curves.easeInOut,
+        )),
+        child: child,
+      );
+    },
+  );
+}
+
+// Session entry — slides up from bottom (Learn screen, Exam active)
+Page<void> _slideUpPage(GoRouterState state, Widget child) {
+  return CustomTransitionPage(
+    key: state.pageKey,
+    child: child,
+    transitionDuration: const Duration(milliseconds: 350),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(0.0, 1.0),
+          end: Offset.zero,
+        ).animate(CurvedAnimation(
+          parent: animation,
+          curve: Curves.easeOutCubic,
+        )),
+        child: child,
+      );
+    },
+  );
+}
+
+// Auth success / splash exit — fades (no back stack entry)
+Page<void> _fadePage(GoRouterState state, Widget child) {
+  return CustomTransitionPage(
+    key: state.pageKey,
+    child: child,
+    transitionDuration: const Duration(milliseconds: 250),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return FadeTransition(opacity: animation, child: child);
+    },
+  );
+}

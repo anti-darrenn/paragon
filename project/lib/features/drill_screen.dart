@@ -83,7 +83,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 // Top progress bar
                 LinearProgressIndicator(
                   value: progressValue,
-                  backgroundColor: const Color(0xFF21262D),
+                  backgroundColor: AppColors.trackDark,
                   valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
                   minHeight: 3,
                 ),

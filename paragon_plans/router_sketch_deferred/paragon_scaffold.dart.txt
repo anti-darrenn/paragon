@@ -1,0 +1,286 @@
+// ============================================================
+// lib/shared/widgets/paragon_scaffold.dart
+// Project Paragon — Shell scaffold with responsive nav
+// ============================================================
+//
+// This widget wraps every screen inside both shells.
+// It is responsible for:
+//   1. Showing NavigationBar (mobile) or NavigationRail (web ≥700px)
+//   2. Hiding the nav bar at depth levels 4–5 (Learn, Drill, Exam active)
+//   3. Handling the Android back button on tab roots ("tap twice to exit")
+//   4. Providing the imperative sheet helpers (score sheet, upsell, etc.)
+//   5. Showing/hiding the achievement overlay from anywhere in the app
+//
+// USAGE:
+//   StatefulShellRoute.indexedStack(
+//     builder: (context, state, navigationShell) => ParagonScaffold(
+//       navigationShell: navigationShell,
+//       isGuest: false,
+//     ),
+//   )
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
+import 'app_router.dart';
+
+// ── Routes where the nav bar should be HIDDEN ───────────────
+// Add to this list whenever you add a level-4 or level-5 screen.
+// This is the ONLY place you need to update nav visibility.
+const _navHiddenRoutes = [
+  '/topic/',        // learn screen (contains topicId)
+  '/drill',
+  '/exam/active',
+  '/exam/results',
+  '/exam/results/review',
+  '/dashboard/topic/', // topic stats
+];
+
+bool _shouldHideNav(String location) {
+  return _navHiddenRoutes.any((r) => location.contains(r));
+}
+
+// ── Tab destinations ─────────────────────────────────────────
+const _tabs = [
+  _TabItem(label: 'Home',      icon: Icons.grid_view_outlined,    activeIcon: Icons.grid_view),
+  _TabItem(label: 'Dashboard', icon: Icons.bar_chart_outlined,    activeIcon: Icons.bar_chart),
+  _TabItem(label: 'Exam',      icon: Icons.description_outlined,  activeIcon: Icons.description),
+  _TabItem(label: 'Profile',   icon: Icons.person_outline,        activeIcon: Icons.person),
+];
+
+class _TabItem {
+  final String label;
+  final IconData icon;
+  final IconData activeIcon;
+  const _TabItem({required this.label, required this.icon, required this.activeIcon});
+}
+
+// ── ParagonScaffold ──────────────────────────────────────────
+
+class ParagonScaffold extends StatefulWidget {
+  final StatefulNavigationShell navigationShell;
+  final bool isGuest;
+
+  const ParagonScaffold({
+    super.key,
+    required this.navigationShell,
+    required this.isGuest,
+  });
+
+  @override
+  State<ParagonScaffold> createState() => _ParagonScaffoldState();
+}
+
+class _ParagonScaffoldState extends State<ParagonScaffold> {
+  DateTime? _lastBackPress;
+
+  void _onTabTap(int index) {
+    if (widget.navigationShell.currentIndex == index) {
+      // Tapping the active tab scrolls back to top / pops to root
+      widget.navigationShell.goBranch(index, initialLocation: true);
+    } else {
+      // Switching to a different tab — state is preserved (indexedStack)
+      widget.navigationShell.goBranch(index);
+    }
+  }
+
+  // "Tap twice to exit" on tab roots
+  Future<bool> _onWillPop() async {
+    final location = GoRouterState.of(context).uri.toString();
+    final isTabRoot = [
+      AppRoutes.home,
+      AppRoutes.dashboard,
+      AppRoutes.examSetup,
+      AppRoutes.profile,
+    ].contains(location);
+
+    if (!isTabRoot) return true; // let GoRouter handle the pop
+
+    final now = DateTime.now();
+    if (_lastBackPress == null ||
+        now.difference(_lastBackPress!) > const Duration(seconds: 2)) {
+      _lastBackPress = now;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Tap again to exit'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+      return false; // consume the back press
+    }
+    return true; // allow exit
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final location = GoRouterState.of(context).uri.toString();
+    final hideNav = _shouldHideNav(location);
+    final isWide = MediaQuery.of(context).size.width >= 700;
+
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) async {
+        if (!didPop) {
+          final shouldPop = await _onWillPop();
+          if (shouldPop && context.mounted) {
+            SystemNavigator.pop();
+          }
+        }
+      },
+      child: Scaffold(
+        body: Row(
+          children: [
+            // NavigationRail — web / wide screens
+            if (isWide && !hideNav)
+              NavigationRail(
+                selectedIndex: widget.navigationShell.currentIndex,
+                onDestinationSelected: _onTabTap,
+                labelType: NavigationRailLabelType.all,
+                destinations: _tabs.map((t) => NavigationRailDestination(
+                  icon: Icon(t.icon),
+                  selectedIcon: Icon(t.activeIcon),
+                  label: Text(t.label),
+                )).toList(),
+              ),
+
+            // Main content
+            Expanded(child: widget.navigationShell),
+          ],
+        ),
+
+        // NavigationBar — mobile / narrow screens
+        bottomNavigationBar: (!isWide && !hideNav)
+            ? NavigationBar(
+                selectedIndex: widget.navigationShell.currentIndex,
+                onDestinationSelected: _onTabTap,
+                destinations: _tabs.map((t) => NavigationDestination(
+                  icon: Icon(t.icon),
+                  selectedIcon: Icon(t.activeIcon),
+                  label: t.label,
+                )).toList(),
+              )
+            : null,
+      ),
+    );
+  }
+}
+
+
+// ============================================================
+// SHEET HELPERS
+// Call these from any screen — they're global imperative functions,
+// not routes. Import this file wherever you need to show a sheet.
+// ============================================================
+
+// Score summary after a drill
+void showScoreSheet(BuildContext context, {required int score, required int total}) {
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    builder: (_) => ScoreSheetContent(score: score, total: total),
+  );
+}
+
+// Guest upsell — shown when guest tries a gated feature
+void showAuthUpsell(BuildContext context, {required String feature}) {
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    isDismissible: true,
+    builder: (_) => AuthUpsellSheetContent(feature: feature),
+  );
+}
+
+// Notification tray — opened from bell icon in Home app bar
+void showNotificationTray(BuildContext context) {
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    builder: (_) => const NotificationTrayContent(),
+  );
+}
+
+// Submit exam confirm — back is blocked (barrierDismissible: false)
+Future<bool> showSubmitConfirm(BuildContext context) async {
+  final result = await showModalBottomSheet<bool>(
+    context: context,
+    isDismissible: false,         // back gesture blocked
+    enableDrag: false,            // swipe-down blocked
+    builder: (_) => const SubmitConfirmContent(),
+  );
+  return result ?? false;
+}
+
+// Abandon drill dialog — shown on back gesture inside a drill
+Future<bool> showAbandonDrill(BuildContext context) async {
+  final result = await showDialog<bool>(
+    context: context,
+    builder: (_) => AlertDialog(
+      title: const Text('Abandon drill?'),
+      content: const Text("Your progress won't be saved."),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(false),
+          child: const Text('Stay'),
+        ),
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(true),
+          child: const Text('Leave'),
+        ),
+      ],
+    ),
+  );
+  return result ?? false;
+}
+
+// Achievement unlock overlay — shown from anywhere, auto-dismisses
+void showAchievementUnlock(BuildContext context, {required String title}) {
+  showDialog(
+    context: context,
+    barrierDismissible: true,
+    barrierColor: Colors.black54,
+    builder: (_) => AchievementOverlayContent(title: title),
+  );
+}
+
+
+// ============================================================
+// PLACEHOLDER CONTENT WIDGETS
+// Replace with your real implementations.
+// These are stubs so the file compiles immediately.
+// ============================================================
+
+class ScoreSheetContent extends StatelessWidget {
+  final int score;
+  final int total;
+  const ScoreSheetContent({super.key, required this.score, required this.total});
+  @override Widget build(BuildContext context) => Center(child: Text('$score / $total'));
+}
+
+class AuthUpsellSheetContent extends StatelessWidget {
+  final String feature;
+  const AuthUpsellSheetContent({super.key, required this.feature});
+  @override Widget build(BuildContext context) => Center(child: Text('Sign up to access: $feature'));
+}
+
+class NotificationTrayContent extends StatelessWidget {
+  const NotificationTrayContent({super.key});
+  @override Widget build(BuildContext context) => const Center(child: Text('Notifications'));
+}
+
+class SubmitConfirmContent extends StatelessWidget {
+  const SubmitConfirmContent({super.key});
+  @override Widget build(BuildContext context) => Center(
+    child: Column(children: [
+      const Text('Submit exam?'),
+      ElevatedButton(onPressed: () => Navigator.of(context).pop(true), child: const Text('Submit')),
+      TextButton(onPressed: () => Navigator.of(context).pop(false), child: const Text('Cancel')),
+    ]),
+  );
+}
+
+class AchievementOverlayContent extends StatelessWidget {
+  final String title;
+  const AchievementOverlayContent({super.key, required this.title});
+  @override Widget build(BuildContext context) => Center(child: Text('Achievement unlocked: $title'));
+}

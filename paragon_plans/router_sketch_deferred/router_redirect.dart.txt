@@ -1,0 +1,150 @@
+// ============================================================
+// lib/core/router/router_redirect.dart
+// Project Paragon — Auth guard redirect logic
+// ============================================================
+//
+// This file contains ONLY redirect logic.
+// The actual route tree is in app_router.dart.
+//
+// HOW IT WORKS:
+//   1. GoRouter calls routerRedirect() on every navigation event.
+//   2. Return a path string  → GoRouter navigates there instead.
+//   3. Return null           → GoRouter allows the navigation as-is.
+//
+// AuthRedirectNotifier is a ChangeNotifier that watches the
+// Firebase Auth stream. When auth state changes (sign-in, sign-out,
+// token expiry), it calls notifyListeners(), which triggers
+// GoRouter to re-evaluate the redirect for the current location.
+
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'app_router.dart';
+
+// ── Auth state enum ─────────────────────────────────────────
+enum AuthStatus {
+  unknown,    // app just launched, Firebase hasn't responded yet
+  guest,      // user tapped "Browse as guest"
+  signedIn,   // Firebase user exists
+  signedOut,  // no Firebase user
+}
+
+// ── Notifier — watched by GoRouter's refreshListenable ──────
+// Converts the Firebase Auth stream into a ChangeNotifier
+// so GoRouter re-runs redirect whenever auth state changes.
+
+class AuthRedirectNotifier extends ChangeNotifier {
+  AuthStatus _status = AuthStatus.unknown;
+  bool _hasSubjects = false; // true once Firestore subject doc exists
+
+  AuthStatus get status => _status;
+  bool get hasSubjects => _hasSubjects;
+
+  AuthRedirectNotifier() {
+    // Listen to Firebase Auth stream
+    FirebaseAuth.instance.authStateChanges().listen((user) {
+      if (user == null) {
+        _status = AuthStatus.signedOut;
+      } else {
+        _status = AuthStatus.signedIn;
+        _checkSubjects(user.uid);
+      }
+      notifyListeners(); // triggers GoRouter redirect re-evaluation
+    });
+  }
+
+  // Called when user taps "Browse as guest" on WelcomeScreen
+  void enterGuestMode() {
+    _status = AuthStatus.guest;
+    notifyListeners();
+  }
+
+  // Called after subject selection completes
+  void markSubjectsSelected() {
+    _hasSubjects = true;
+    notifyListeners();
+  }
+
+  Future<void> _checkSubjects(String uid) async {
+    // Replace with your actual Firestore check:
+    // final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
+    // _hasSubjects = doc.data()?['subjects'] != null;
+    _hasSubjects = true; // placeholder
+    notifyListeners();
+  }
+}
+
+final authRedirectNotifierProvider =
+    ChangeNotifierProvider<AuthRedirectNotifier>(
+  (ref) => AuthRedirectNotifier(),
+);
+
+// ── Routes that require full auth (cannot be accessed as guest) ─
+const _authOnlyRoutes = [
+  '/dashboard',
+  '/profile',
+  '/profile/achievements',
+  '/profile/settings',
+];
+
+// ── Routes accessible before auth resolves ──────────────────
+const _alwaysAllowed = [
+  AppRoutes.splash,
+  AppRoutes.welcome,
+  AppRoutes.signInEmail,
+  AppRoutes.subjectSelection,
+];
+
+// ── Main redirect function ───────────────────────────────────
+// Called by GoRouter on every navigation event.
+// Returns a redirect path or null (allow navigation).
+
+String? routerRedirect(Ref ref, GoRouterState state) {
+  final notifier = ref.read(authRedirectNotifierProvider);
+  final status = notifier.status;
+  final location = state.uri.toString();
+
+  // ── 1. Auth state still resolving → hold on splash ──────
+  if (status == AuthStatus.unknown) {
+    return location == AppRoutes.splash ? null : AppRoutes.splash;
+  }
+
+  // ── 2. Always-allowed routes pass through ────────────────
+  final isAlwaysAllowed = _alwaysAllowed.any(
+    (r) => location.startsWith(r),
+  );
+
+  // ── 3. Signed in ─────────────────────────────────────────
+  if (status == AuthStatus.signedIn) {
+    // Trying to access pre-auth screens → go home
+    if (isAlwaysAllowed && location != AppRoutes.subjectSelection) {
+      return notifier.hasSubjects
+          ? AppRoutes.home
+          : '${AppRoutes.subjectSelection}?mode=onboarding';
+    }
+    // First-time user with no subjects → subject selection
+    if (!notifier.hasSubjects && location != AppRoutes.subjectSelection) {
+      return '${AppRoutes.subjectSelection}?mode=onboarding';
+    }
+    return null; // allow all other routes
+  }
+
+  // ── 4. Guest mode ─────────────────────────────────────────
+  if (status == AuthStatus.guest) {
+    // Auth-only routes redirect to welcome (not a hard block — the
+    // guest shell already shows the upsell screen for dashboard/profile,
+    // but this covers any direct URL access on web)
+    final isAuthOnly = _authOnlyRoutes.any((r) => location.startsWith(r));
+    if (isAuthOnly) return AppRoutes.welcome;
+    if (isAlwaysAllowed) return AppRoutes.home; // already in guest shell
+    return null;
+  }
+
+  // ── 5. Signed out ─────────────────────────────────────────
+  if (status == AuthStatus.signedOut) {
+    if (isAlwaysAllowed) return null; // welcome, sign-in, splash → fine
+    return AppRoutes.welcome; // everything else → welcome
+  }
+
+  return null;
+}

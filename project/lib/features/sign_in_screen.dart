@@ -109,7 +109,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0D1117),
+      backgroundColor: AppColors.backgroundDark,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 48),
@@ -164,7 +164,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                         child: Text(
                           'G',
                           style: TextStyle(
-                            color: Color(0xFF4285F4),
+                            color: AppColors.googleBlue,
                             fontSize: 12,
                             fontWeight: FontWeight.w800,
                           ),
@@ -304,7 +304,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         labelText: label,
         labelStyle: const TextStyle(color: Colors.white38),
         filled: true,
-        fillColor: const Color(0xFF161B22),
+        fillColor: AppColors.surfaceDark,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide.none,

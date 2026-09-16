@@ -50,7 +50,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
-        backgroundColor: const Color(0xFF161B22),
+        backgroundColor: AppColors.surfaceDark,
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: const Text('Submit Exam?',
@@ -155,7 +155,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               // Progress bar
               LinearProgressIndicator(
                 value: (_currentIndex + 1) / questions.length,
-                backgroundColor: const Color(0xFF21262D),
+                backgroundColor: AppColors.trackDark,
                 valueColor: const AlwaysStoppedAnimation<Color>(
                     AppColors.primary),
                 minHeight: 3,
@@ -186,13 +186,13 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                               ? AppColors.primary
                               : isAnswered
                                   ? AppColors.primary.withAlpha((0.25 * 255).round())
-                                  : const Color(0xFF21262D),
+                                  : AppColors.trackDark,
                           border: isActive
                               ? null
                               : Border.all(
                                     color: isAnswered
                                       ? AppColors.primary.withAlpha((0.5 * 255).round())
-                                      : const Color(0xFF30363D)),
+                                      : AppColors.borderDark),
                         ),
                         child: Text(
                           '${i + 1}',
@@ -221,10 +221,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                         width: double.infinity,
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF161B22),
+                          color: AppColors.surfaceDark,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                              color: const Color(0xFF30363D)),
+                              color: AppColors.borderDark),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -263,12 +263,12 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                               decoration: BoxDecoration(
                                 color: isSelected
                                   ? AppColors.primary.withAlpha((0.1 * 255).round())
-                                    : const Color(0xFF161B22),
+                                    : AppColors.surfaceDark,
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(
                                   color: isSelected
                                       ? AppColors.primary
-                                      : const Color(0xFF30363D),
+                                      : AppColors.borderDark,
                                   width: 1.5,
                                 ),
                               ),
@@ -284,7 +284,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                       shape: BoxShape.circle,
                                       color: isSelected
                                           ? AppColors.primary
-                                          : const Color(0xFF21262D),
+                                          : AppColors.trackDark,
                                     ),
                                     child: Text(
                                       String.fromCharCode(65 + i),
@@ -335,7 +335,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                 _goToQuestion(_currentIndex - 1),
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(
-                                  color: Color(0xFF30363D)),
+                                  color: AppColors.borderDark),
                               padding: const EdgeInsets.symmetric(
                                   vertical: 14),
                               shape: RoundedRectangleBorder(
@@ -357,7 +357,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                             backgroundColor:
                                 _currentIndex < questions.length - 1
                                     ? AppColors.primary
-                                    : const Color(0xFF238636),
+                                    : AppColors.submitGreen,
                             padding: const EdgeInsets.symmetric(
                                 vertical: 14),
                             shape: RoundedRectangleBorder(
@@ -444,7 +444,7 @@ class _ResultsView extends StatelessWidget {
             child: OutlinedButton(
               onPressed: onReview,
               style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: Color(0xFF30363D)),
+                side: const BorderSide(color: AppColors.borderDark),
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),

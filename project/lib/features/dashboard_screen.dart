@@ -75,21 +75,21 @@ class DashboardScreen extends ConsumerWidget {
                       child: weeklyAsync.when(
                         loading: () => const _StatCard(
                           icon: Icons.check_circle_outline_rounded,
-                          iconColor: Color(0xFF58A6FF),
+                          iconColor: AppColors.accentBlue,
                           value: '—',
                           label: 'This week',
                           sublabel: 'Questions',
                         ),
                         error: (e, st) => const _StatCard(
                           icon: Icons.check_circle_outline_rounded,
-                          iconColor: Color(0xFF58A6FF),
+                          iconColor: AppColors.accentBlue,
                           value: '0',
                           label: 'This week',
                           sublabel: 'Questions',
                         ),
                         data: (count) => _StatCard(
                           icon: Icons.check_circle_outline_rounded,
-                          iconColor: const Color(0xFF58A6FF),
+                          iconColor: AppColors.accentBlue,
                           value: '$count',
                           label: 'This week',
                           sublabel: 'Questions',
@@ -113,7 +113,7 @@ class DashboardScreen extends ConsumerWidget {
                 const SizedBox(height: 10),
                 _ActionCard(
                   icon: Icons.assignment_outlined,
-                  iconColor: const Color(0xFF58A6FF),
+                  iconColor: AppColors.accentBlue,
                   title: 'WAEC Exam Mode',
                   subtitle: 'Timed past-paper practice',
                   onTap: () => context.go('/waec'),
@@ -179,9 +179,9 @@ class _StatCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        color: const Color(0xFF161B22),
+        color: AppColors.surfaceDark,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFF30363D)),
+        border: Border.all(color: AppColors.borderDark),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -231,9 +231,9 @@ class _ActionCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: const Color(0xFF161B22),
+          color: AppColors.surfaceDark,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: const Color(0xFF30363D)),
+          border: Border.all(color: AppColors.borderDark),
         ),
         child: Row(
           children: [
@@ -288,9 +288,9 @@ class _PlaceholderAccuracyChart extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF161B22),
+        color: AppColors.surfaceDark,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFF30363D)),
+        border: Border.all(color: AppColors.borderDark),
       ),
       child: Column(
         children: _placeholderTopics.map((entry) {
@@ -318,7 +318,7 @@ class _PlaceholderAccuracyChart extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4),
                   child: LinearProgressIndicator(
                     value: pct,
-                    backgroundColor: const Color(0xFF21262D),
+                    backgroundColor: AppColors.trackDark,
                     valueColor: const AlwaysStoppedAnimation<Color>(
                         AppColors.primary),
                     minHeight: 6,
