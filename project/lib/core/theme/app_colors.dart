@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
  
 class AppColors {
   // ── Primary brand color ───────────────────────────────────────────
-  static const primary     = Color(0xFFF97316); // Orange — vibrant, full strength
-  static const primaryDark = Color(0xFFC45A0A); // Darker orange for pressed states
+  static const primary     = Color(0xFFFF7700); // Orange — from Figma
+  static const primaryDark = Color(0xFFCC5F00); // Pressed shade — primary at 80% (~20% darker)
+
+  // ── Secondary brand color ─────────────────────────────────────────
+  static const secondary = Color(0xFF8B5CF6); // Figma: secondary — purple
  
   // ── Dark mode backgrounds ─────────────────────────────────────────
   static const backgroundDark = Color(0xFF0D1117);
@@ -16,14 +19,17 @@ class AppColors {
   static const borderLight     = Color(0xFFD0D7DE);
  
   // ── Semantic feedback colors ──────────────────────────────────────
-  static const correct = Color(0xFF3FB950); // green — correct answer
-  static const wrong   = Color(0xFFF85149); // red   — wrong answer
+  static const correct = Color(0xFF3FB950); // green — correct answer · Figma: success
+  static const wrong   = Color(0xFFF85149); // red   — wrong answer   · Figma: error
   static const warning = Color(0xFFD29922);
-  static const submitGreen = Color(0xFF238636); // exam submit CTA — distinct from `correct`
+  static const submitGreen = Color(0xFF238636); // exam submit CTA — distinct from `correct` · Figma: success-overlay
 
   // ── Dark mode surfaces (elevated / inactive) ──────────────────────
   static const trackDark = Color(0xFF21262D); // progress track, inactive nav dots
   static const accentBlue = Color(0xFF58A6FF); // informational accent (stats, links)
+
+  // ── Overlay ────────────────────────────────────────────────────────
+  static const overlay = Color(0xFF000000); // Figma: overlay — apply with reduced opacity at call site (e.g. overlay.withAlpha(...))
 
   // ── Third-party brand colors (fixed — never theme these) ─────────
   static const googleBlue = Color(0xFF4285F4); // Google "G" mark, per Google brand guidelines
