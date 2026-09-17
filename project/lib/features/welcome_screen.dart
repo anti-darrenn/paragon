@@ -142,114 +142,143 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                                   ),
                                 ),
 
-                              Center(
-                                child: ConstrainedBox(
-                                  constraints: const BoxConstraints(
-                                    maxWidth: 420,
-                                  ),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.stretch,
-                                    children: [
-                                      // btn/google — Figma: #D9D9D9 fill, real
-                                      // multi-color Google "G" PNG (not the
-                                      // hand-drawn circle), dark text.
-                                      SizedBox(
-                                        height: 52,
-                                        child: ElevatedButton(
-                                          onPressed: _isLoading
-                                              ? null
-                                              : _handleGoogleSignIn,
-                                          style: ElevatedButton.styleFrom(
-                                            backgroundColor:
-                                                AppColors.buttonLight,
-                                            disabledBackgroundColor: AppColors
-                                                .buttonLight
-                                                .withAlpha((0.6 * 255).round()),
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(4),
+                              // Extra inset on phone-width screens so the
+                              // buttons read as an inset element rather
+                              // than edge-to-edge — the 420 cap below
+                              // already doesn't bind under ~470px (screen
+                              // width minus the 24px padding on each
+                              // side), so narrowing further here needs
+                              // its own margin, not a smaller maxWidth.
+                              Padding(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal:
+                                      MediaQuery.sizeOf(context).width < 480
+                                      ? 16
+                                      : 0,
+                                ),
+                                child: Center(
+                                  child: ConstrainedBox(
+                                    constraints: const BoxConstraints(
+                                      maxWidth: 420,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: [
+                                        // btn/google — Figma: #D9D9D9 fill, real
+                                        // multi-color Google "G" PNG (not the
+                                        // hand-drawn circle), dark text.
+                                        SizedBox(
+                                          height: 52,
+                                          child: ElevatedButton(
+                                            onPressed: _isLoading
+                                                ? null
+                                                : _handleGoogleSignIn,
+                                            style: ElevatedButton.styleFrom(
+                                              backgroundColor:
+                                                  AppColors.buttonLight,
+                                              disabledBackgroundColor: AppColors
+                                                  .buttonLight
+                                                  .withAlpha(
+                                                    (0.6 * 255).round(),
+                                                  ),
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
+                                              ),
+                                              elevation: 0,
                                             ),
-                                            elevation: 0,
-                                          ),
-                                          child: _isLoading
-                                              ? const SizedBox(
-                                                  height: 20,
-                                                  width: 20,
-                                                  child:
-                                                      CircularProgressIndicator(
-                                                        color: AppColors
-                                                            .backgroundDark,
-                                                        strokeWidth: 2,
+                                            child: _isLoading
+                                                ? const SizedBox(
+                                                    height: 20,
+                                                    width: 20,
+                                                    child:
+                                                        CircularProgressIndicator(
+                                                          color: AppColors
+                                                              .backgroundDark,
+                                                          strokeWidth: 2,
+                                                        ),
+                                                  )
+                                                : Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Image.asset(
+                                                        'assets/icons/google_g.png',
+                                                        width: 30,
+                                                        height: 30,
                                                       ),
-                                                )
-                                              : Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    Image.asset(
-                                                      'assets/icons/google_g.png',
-                                                      width: 30,
-                                                      height: 30,
-                                                    ),
-                                                    const SizedBox(width: 10),
-                                                    Text(
-                                                      'Continue with Google',
-                                                      style: AppTheme.btnLabel
-                                                          .copyWith(
-                                                            color: AppColors
-                                                                .backgroundDark,
-                                                          ),
-                                                    ),
-                                                  ],
-                                                ),
+                                                      const SizedBox(width: 10),
+                                                      Flexible(
+                                                        child: Text(
+                                                          'Continue with Google',
+                                                          maxLines: 1,
+                                                          overflow: TextOverflow
+                                                              .ellipsis,
+                                                          style: AppTheme
+                                                              .btnLabel
+                                                              .copyWith(
+                                                                color: AppColors
+                                                                    .backgroundDark,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                          ),
                                         ),
-                                      ),
-                                      const SizedBox(height: 16),
+                                        const SizedBox(height: 16),
 
-                                      // btn/email — Figma: 2px primary-orange
-                                      // outline, mail icon, primary text color.
-                                      SizedBox(
-                                        height: 52,
-                                        child: OutlinedButton(
-                                          // welcome shouldn't stay on the back
-                                          // stack once we leave it
-                                          onPressed: _isLoading
-                                              ? null
-                                              : () => context.go('/signin'),
-                                          style: OutlinedButton.styleFrom(
-                                            side: const BorderSide(
-                                              color: AppColors.primary,
-                                              width: 2,
-                                            ),
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(4),
-                                            ),
-                                          ),
-                                          child: Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              SvgPicture.asset(
-                                                'assets/icons/mail_icon.svg',
-                                                width: 24,
-                                                height: 19,
+                                        // btn/email — Figma: 2px primary-orange
+                                        // outline, mail icon, primary text color.
+                                        SizedBox(
+                                          height: 52,
+                                          child: OutlinedButton(
+                                            // welcome shouldn't stay on the back
+                                            // stack once we leave it
+                                            onPressed: _isLoading
+                                                ? null
+                                                : () => context.go('/signin'),
+                                            style: OutlinedButton.styleFrom(
+                                              side: const BorderSide(
+                                                color: AppColors.primary,
+                                                width: 2,
                                               ),
-                                              const SizedBox(width: 10),
-                                              Text(
-                                                'Sign in with E-Mail',
-                                                style: AppTheme.btnLabel
-                                                    .copyWith(
-                                                      color: AppColors
-                                                          .textPrimaryDark,
-                                                    ),
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(4),
                                               ),
-                                            ],
+                                            ),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                SvgPicture.asset(
+                                                  'assets/icons/mail_icon.svg',
+                                                  width: 24,
+                                                  height: 19,
+                                                ),
+                                                const SizedBox(width: 10),
+                                                Flexible(
+                                                  child: Text(
+                                                    'Sign in with E-Mail',
+                                                    maxLines: 1,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    style: AppTheme.btnLabel
+                                                        .copyWith(
+                                                          color: AppColors
+                                                              .textPrimaryDark,
+                                                        ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
