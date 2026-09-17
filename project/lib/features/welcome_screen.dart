@@ -317,9 +317,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
 /// ~70px/s" — implemented here as a hand-rolled AnimationController
 /// (no marquee package). Pre-auth screen — `subjects` is confirmed
 /// publicly readable (see project/firestore.rules and .cursorrules).
-/// TODO: the error branch currently shows the error text instead of
-/// failing silently — temporary, for diagnosing an empty-strip issue.
-/// Revert to a silent/graceful failure once resolved.
+/// Fails gracefully (renders nothing) on error.
 class _SubjectTicker extends ConsumerStatefulWidget {
   const _SubjectTicker();
 
@@ -409,21 +407,7 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
 
     return subjectsAsync.when(
       loading: () => const SizedBox(height: _height),
-      // TODO: temporary — showing the error text instead of failing
-      // silently, to diagnose why the strip was rendering empty. Revert
-      // to `const SizedBox.shrink()` (the intended graceful/silent
-      // failure for this screen) once diagnosed.
-      error: (e, st) => SizedBox(
-        height: _height,
-        child: Center(
-          child: Text(
-            '$e',
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTheme.caption.copyWith(color: AppColors.wrong),
-          ),
-        ),
-      ),
+      error: (e, st) => const SizedBox.shrink(),
       data: (subjects) {
         if (subjects.isEmpty) return const SizedBox.shrink();
 
