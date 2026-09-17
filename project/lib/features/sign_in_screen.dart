@@ -31,12 +31,43 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   String? _message;
   bool _messageIsError = true;
 
+  // Hoisted to fields (rather than created inline in build()) so they can
+  // be disposed — TapGestureRecognizer holds gesture-arena state that
+  // leaks if never released. Each closure checks _isLoading at tap time,
+  // not at assignment time, so a single recognizer instance stays correct
+  // across the loading state changing.
+  late final TapGestureRecognizer _createAccountRecognizer;
+  late final TapGestureRecognizer _backToSignInRecognizer;
+
   bool get _isEmailValid => _emailRegExp.hasMatch(_emailController.text.trim());
+
+  @override
+  void initState() {
+    super.initState();
+    _createAccountRecognizer = TapGestureRecognizer()
+      ..onTap = () {
+        if (_isLoading) return;
+        setState(() {
+          _message = null;
+          _step = _AuthStep.createAccount;
+        });
+      };
+    _backToSignInRecognizer = TapGestureRecognizer()
+      ..onTap = () {
+        if (_isLoading) return;
+        setState(() {
+          _message = null;
+          _step = _AuthStep.password;
+        });
+      };
+  }
 
   @override
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
+    _createAccountRecognizer.dispose();
+    _backToSignInRecognizer.dispose();
     super.dispose();
   }
 
@@ -309,13 +340,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               TextSpan(
                 text: 'Create an account!',
                 style: const TextStyle(color: AppColors.primary),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = _isLoading
-                      ? null
-                      : () => setState(() {
-                          _message = null;
-                          _step = _AuthStep.createAccount;
-                        }),
+                recognizer: _createAccountRecognizer,
               ),
             ],
           ),
@@ -409,13 +434,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               TextSpan(
                 text: 'Sign in',
                 style: const TextStyle(color: AppColors.primary),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = _isLoading
-                      ? null
-                      : () => setState(() {
-                          _message = null;
-                          _step = _AuthStep.password;
-                        }),
+                recognizer: _backToSignInRecognizer,
               ),
             ],
           ),
