@@ -31,6 +31,9 @@ class AppColors {
   // ── Overlay ────────────────────────────────────────────────────────
   static const overlay = Color(0xFF000000); // Figma: overlay — apply with reduced opacity at call site (e.g. overlay.withAlpha(...))
 
+  // ── Button fills ───────────────────────────────────────────────────
+  static const buttonLight = Color(0xFFD9D9D9); // Figma: btn/google fill
+
   // ── Third-party brand colors (fixed — never theme these) ─────────
   static const googleBlue = Color(0xFF4285F4); // Google "G" mark, per Google brand guidelines
 

@@ -2,8 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/core/theme/app_colors.dart';
+import 'package:paragon/core/theme/app_theme.dart';
 
 class SignInScreen extends ConsumerStatefulWidget {
   const SignInScreen({super.key});
@@ -30,14 +32,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   Future<void> _signInWithGoogle() async {
     setState(() { _isLoading = true; _errorMessage = null; });
     try {
-      final provider = GoogleAuthProvider();
-      final userCredential =
-          await FirebaseAuth.instance.signInWithPopup(provider);
-      if (userCredential.user != null) {
-        await ref
-            .read(userRepositoryProvider)
-            .createUserIfNew(userCredential.user!);
-      }
+      await signInWithGoogle(ref);
     } on FirebaseAuthException catch (e) {
       setState(() => _errorMessage = e.message ?? 'Google sign-in failed.');
     } catch (e) {
@@ -121,7 +116,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               Text(
                 'Paragon',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.montserrat(
+                style: GoogleFonts.spaceGrotesk(
                   color: AppColors.primary,
                   fontSize: 42,
                   fontWeight: FontWeight.w800,
@@ -132,7 +127,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               Text(
                 'WAEC Prep. Done right.',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.montserrat(
+                style: GoogleFonts.spaceGrotesk(
                   color: Colors.white38,
                   fontSize: 13,
                   fontWeight: FontWeight.w500,
@@ -174,10 +169,9 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                     const SizedBox(width: 10),
                     Text(
                       'Continue with Google',
-                      style: GoogleFonts.montserrat(
+                      style: AppTheme.btnLabel.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
-                        fontSize: 14,
                       ),
                     ),
                   ],
@@ -193,7 +187,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Text(
                       'or',
-                      style: GoogleFonts.montserrat(
+                      style: GoogleFonts.spaceGrotesk(
                         color: Colors.white24,
                         fontSize: 12,
                       ),
@@ -253,7 +247,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                       )
                     : Text(
                         _isRegisterMode ? 'Create Account' : 'Sign In',
-                        style: GoogleFonts.montserrat(
+                        style: GoogleFonts.spaceGrotesk(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
                           fontSize: 15,
@@ -274,7 +268,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                   _isRegisterMode
                       ? 'Already have an account?  Sign In'
                       : "Don't have an account?  Register",
-                  style: GoogleFonts.montserrat(
+                  style: GoogleFonts.spaceGrotesk(
                     color: AppColors.primary,
                     fontSize: 13,
                     fontWeight: FontWeight.w500,

@@ -11,6 +11,7 @@ import 'package:paragon/features/topic_list_screen.dart';
 import 'package:paragon/features/unit_list_screen.dart';
 import 'package:paragon/features/waec_exam_screen.dart';
 import 'package:paragon/features/waec_subject_screen.dart';
+import 'package:paragon/features/welcome_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -34,7 +35,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
   ref.onDispose(notifier.dispose);
 
   return GoRouter(
-    initialLocation: '/',
+    initialLocation: '/welcome',
     refreshListenable: notifier,
 
     // ── Auth redirect ──────────────────────────────────────────────────────
@@ -49,12 +50,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
       final isSignedIn = authAsync.asData?.value != null;
       final isOnSignIn = state.matchedLocation == '/signin';
+      final isOnWelcome = state.matchedLocation == '/welcome';
 
-      // Not signed in and trying to reach any route → send to sign in
-      if (!isSignedIn && !isOnSignIn) return '/signin';
+      // Not signed in and trying to reach any route other than welcome/sign-in
+      // → send to the welcome (landing) screen
+      if (!isSignedIn && !isOnSignIn && !isOnWelcome) return '/welcome';
 
-      // Already signed in but somehow landed on /signin → send to home
-      if (isSignedIn && isOnSignIn) return '/';
+      // Already signed in but somehow landed on welcome or sign-in → send home
+      if (isSignedIn && (isOnSignIn || isOnWelcome)) return '/';
 
       // All other cases: let navigation proceed normally
       return null;
@@ -62,6 +65,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
     // ── Routes ────────────────────────────────────────────────────────────
     routes: [
+      GoRoute(
+        path: '/welcome',
+        builder: (context, state) => const WelcomeScreen(),
+      ),
       GoRoute(
         path: '/',
         builder: (context, state) => const SubjectListScreen(),

@@ -12,9 +12,7 @@ class AppTheme {
       surface: AppColors.surfaceDark,
       error: AppColors.wrong,
     ),
-    textTheme: GoogleFonts.montserratTextTheme(
-      ThemeData.dark().textTheme,
-    ),
+    textTheme: GoogleFonts.spaceGroteskTextTheme(ThemeData.dark().textTheme),
     cardTheme: CardThemeData(
       color: AppColors.surfaceDark,
       shape: RoundedRectangleBorder(
@@ -39,9 +37,7 @@ class AppTheme {
       surface: AppColors.surfaceLight,
       error: AppColors.wrong,
     ),
-    textTheme: GoogleFonts.montserratTextTheme(
-      ThemeData.light().textTheme,
-    ),
+    textTheme: GoogleFonts.spaceGroteskTextTheme(ThemeData.light().textTheme),
     cardTheme: CardThemeData(
       color: AppColors.surfaceLight,
       shape: RoundedRectangleBorder(
@@ -57,18 +53,65 @@ class AppTheme {
     ),
   );
 
-  // ── Text styles (Figma type scale) ──────────────────────────────────
-  // TODO(figma): font weights are placeholders (regular) pending lookup
-  // in the Figma file — see PR discussion. Update once confirmed.
-  static TextStyle get displayLg        => GoogleFonts.montserrat(fontSize: 32, height: 1.2);
-  static TextStyle get heading1         => GoogleFonts.montserrat(fontSize: 24, height: 1.3);
-  static TextStyle get heading2         => GoogleFonts.montserrat(fontSize: 20, height: 1.3);
-  static TextStyle get heading3         => GoogleFonts.montserrat(fontSize: 18, height: 1.4);
-  static TextStyle get bodyLg           => GoogleFonts.montserrat(fontSize: 16, height: 1.6);
-  static TextStyle get bodyMd           => GoogleFonts.montserrat(fontSize: 14, height: 1.6);
-  static TextStyle get label            => GoogleFonts.montserrat(fontSize: 12, height: 1.4);
-  static TextStyle get caption          => GoogleFonts.montserrat(fontSize: 11, height: 1.4);
-  static TextStyle get btnLabel         => GoogleFonts.montserrat(fontSize: 14, height: 1.4);
-  static TextStyle get navLabelActive   => GoogleFonts.montserrat(fontSize: 10, height: 1.2);
-  static TextStyle get navLabelInactive => GoogleFonts.montserrat(fontSize: 10, height: 1.2);
+  // ── Text styles (Figma type scale, file 29nbJDmGOJI3bBj5AtburF,
+  // "_Foundations" page) — family/size/lineHeight/weight read from Figma.
+  static TextStyle get displayLg => GoogleFonts.spaceGrotesk(
+    fontSize: 32,
+    fontWeight: FontWeight.w700,
+    height: 1.2,
+  );
+  static TextStyle get heading1 => GoogleFonts.spaceGrotesk(
+    fontSize: 24,
+    fontWeight: FontWeight.w700,
+    height: 1.25,
+  );
+  static TextStyle get heading2 => GoogleFonts.spaceGrotesk(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    height: 1.3,
+  );
+  static TextStyle get heading3 => GoogleFonts.spaceGrotesk(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    height: 1.35,
+  );
+  static TextStyle get bodyLg => GoogleFonts.spaceGrotesk(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    height: 1.6,
+  );
+  static TextStyle get bodyMd => GoogleFonts.spaceGrotesk(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    height: 1.6,
+  );
+  static TextStyle get label => GoogleFonts.spaceGrotesk(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    height: 1.4,
+  );
+  static TextStyle get caption => GoogleFonts.spaceGrotesk(
+    fontSize: 11,
+    fontWeight: FontWeight.w500,
+    height: 1.4,
+  );
+  static TextStyle get btnLabel => GoogleFonts.spaceGrotesk(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    height: 1.4,
+  );
+
+  // navLabelActive/navLabelInactive weight (Figma MCP quota for nodes
+  // 7:29/8:31 on file 29nbJDmGOJI3bBj5AtburF was still exhausted, so
+  // supplied directly): Medium (500) / Regular (400).
+  static TextStyle get navLabelActive => GoogleFonts.spaceGrotesk(
+    fontSize: 10,
+    fontWeight: FontWeight.w500,
+    height: 1.2,
+  );
+  static TextStyle get navLabelInactive => GoogleFonts.spaceGrotesk(
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+    height: 1.2,
+  );
 }

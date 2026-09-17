@@ -2,9 +2,26 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../repositories/user_repository.dart';
+
 final authStateProvider = StreamProvider<User?>((ref) {
   return FirebaseAuth.instance.authStateChanges();
 });
+
+/// Runs the Google sign-in popup flow and provisions the Firestore user
+/// doc on first sign-in. Shared by SignInScreen and WelcomeScreen so this
+/// flow lives in exactly one place — callers handle their own
+/// loading/error UI around it. Rethrows FirebaseAuthException/other
+/// errors for the caller to present.
+Future<User?> signInWithGoogle(WidgetRef ref) async {
+  final provider = GoogleAuthProvider();
+  final userCredential = await FirebaseAuth.instance.signInWithPopup(provider);
+  final user = userCredential.user;
+  if (user != null) {
+    await ref.read(userRepositoryProvider).createUserIfNew(user);
+  }
+  return user;
+}
 
 final currentUserProvider = Provider<User?>((ref) {
   return ref.watch(authStateProvider).asData?.value;

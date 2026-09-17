@@ -223,11 +223,22 @@ COMPOSITE INDEXES (all must be Enabled — never delete these):
   questions: subjectId ASC + source ASC + year ASC
   questions: subjectId ASC + source ASC + year DESC
 
-SECURITY RULES (locked down — warn before any change):
-  - Authenticated users can read all subjects, units, topics, questions
-  - Users can only read/write their own user document (users/{uid})
-  - Users can only write attempts (not read others')
+SECURITY RULES (source of truth: project/firestore.rules — warn before any change):
+  - subjects: PUBLIC read (allow read: if true) — deliberate, so the
+    pre-auth welcome screen's subject strip can load without signing in.
+    This is the one collection that is NOT auth-gated.
+  - units, topics, questions: authenticated users can read (auth required)
+  - users/{uid}: only the owner can read/write their own user document
+  - attempts: any authenticated user can create their own (create-only,
+    userId must match request.auth.uid); can only read their own, not
+    others'
+  - usernames/{normalised}: any authenticated user can read (availability
+    checks); only the owner can create their own entry (uid must match);
+    permanent — no update or delete
   - No public write access to any collection
+  - firebase.json points "firestore.rules" at project/firestore.rules, so
+    `firebase deploy --only firestore:rules` deploys this file directly —
+    the rules text lives in the repo, not only in the Firebase Console
 
 SUBJECT IDs (do not hardcode these — load from Firestore, but for reference):
   Mathematics: gdv7zeXkoASauMlcmMnV
