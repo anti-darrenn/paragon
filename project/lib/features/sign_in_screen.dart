@@ -1,11 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:go_router/go_router.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/core/theme/app_colors.dart';
 import 'package:paragon/core/theme/app_theme.dart';
+
+enum _AuthStep { email, password, createAccount }
 
 class SignInScreen extends ConsumerStatefulWidget {
   const SignInScreen({super.key});
@@ -15,12 +17,21 @@ class SignInScreen extends ConsumerStatefulWidget {
 }
 
 class _SignInScreenState extends ConsumerState<SignInScreen> {
+  static final _emailRegExp = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
+
+  _AuthStep _step = _AuthStep.email;
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-
-  bool _isRegisterMode = false;
+  bool _obscurePassword = true;
   bool _isLoading = false;
-  String? _errorMessage;
+
+  // One message slot, shared by errors and the password-reset
+  // confirmation — _messageIsError picks red (error) vs green
+  // (confirmation) styling for it.
+  String? _message;
+  bool _messageIsError = true;
+
+  bool get _isEmailValid => _emailRegExp.hasMatch(_emailController.text.trim());
 
   @override
   void dispose() {
@@ -29,75 +40,74 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     super.dispose();
   }
 
-  Future<void> _signInWithGoogle() async {
-    setState(() { _isLoading = true; _errorMessage = null; });
-    try {
-      await signInWithGoogle(ref);
-    } on FirebaseAuthException catch (e) {
-      setState(() => _errorMessage = e.message ?? 'Google sign-in failed.');
-    } catch (e) {
-      setState(() => _errorMessage = 'Something went wrong. Try again.');
-    } finally {
-      if (mounted) setState(() => _isLoading = false);
-    }
+  void _clearMessage() {
+    if (_message != null) setState(() => _message = null);
   }
 
-  Future<void> _signInWithEmail() async {
+  Future<void> _submitPassword({required bool createAccount}) async {
     final email = _emailController.text.trim();
     final password = _passwordController.text.trim();
 
-    if (email.isEmpty || password.isEmpty) {
-      setState(() => _errorMessage = 'Enter your email and password.');
-      return;
-    }
-
-    setState(() { _isLoading = true; _errorMessage = null; });
+    setState(() {
+      _isLoading = true;
+      _message = null;
+      _messageIsError = true;
+    });
 
     try {
-      UserCredential userCredential;
-
-      if (_isRegisterMode) {
-        userCredential =
-            await FirebaseAuth.instance.createUserWithEmailAndPassword(
-          email: email,
-          password: password,
-        );
-      } else {
-        userCredential =
-            await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: email,
-          password: password,
-        );
-      }
+      final userCredential = createAccount
+          ? await FirebaseAuth.instance.createUserWithEmailAndPassword(
+              email: email,
+              password: password,
+            )
+          : await FirebaseAuth.instance.signInWithEmailAndPassword(
+              email: email,
+              password: password,
+            );
 
       if (userCredential.user != null) {
         await ref
             .read(userRepositoryProvider)
             .createUserIfNew(userCredential.user!);
       }
-    } on FirebaseAuthException catch (e) {
-      setState(() => _errorMessage = _friendlyError(e.code));
+    } on FirebaseAuthException {
+      setState(() {
+        _messageIsError = true;
+        _message = 'Email or password is incorrect.';
+      });
     } finally {
       if (mounted) setState(() => _isLoading = false);
     }
   }
 
-  String _friendlyError(String code) {
-    switch (code) {
-      case 'user-not-found':
-        return 'No account found with that email.';
-      case 'wrong-password':
-        return 'Incorrect password.';
-      case 'invalid-credential':
-        return 'Email or password is incorrect.';
-      case 'email-already-in-use':
-        return 'An account with this email already exists.';
-      case 'weak-password':
-        return 'Password must be at least 6 characters.';
-      case 'invalid-email':
-        return 'Please enter a valid email address.';
-      default:
-        return 'Something went wrong. Please try again.';
+  Future<void> _sendPasswordReset() async {
+    final email = _emailController.text.trim();
+    if (!_emailRegExp.hasMatch(email)) {
+      setState(() {
+        _messageIsError = true;
+        _message = 'Enter a valid email above first.';
+      });
+      return;
+    }
+
+    setState(() {
+      _isLoading = true;
+      _message = null;
+    });
+
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      setState(() {
+        _messageIsError = false;
+        _message = 'Password reset email sent — check your inbox.';
+      });
+    } on FirebaseAuthException {
+      setState(() {
+        _messageIsError = true;
+        _message = 'Email or password is incorrect.';
+      });
+    } finally {
+      if (mounted) setState(() => _isLoading = false);
     }
   }
 
@@ -106,210 +116,355 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 48),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const SizedBox(height: 40),
-
-              Text(
-                'Paragon',
-                textAlign: TextAlign.center,
-                style: GoogleFonts.spaceGrotesk(
-                  color: AppColors.primary,
-                  fontSize: 42,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: -1,
+        child: Column(
+          children: [
+            Align(
+              alignment: Alignment.topLeft,
+              child: IconButton(
+                icon: const Icon(
+                  Icons.arrow_back,
+                  color: AppColors.textPrimaryDark,
                 ),
+                onPressed: () => context.go('/welcome'),
               ),
-              const SizedBox(height: 8),
-              Text(
-                'WAEC Prep. Done right.',
-                textAlign: TextAlign.center,
-                style: GoogleFonts.spaceGrotesk(
-                  color: Colors.white38,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w500,
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 24,
                 ),
-              ),
-
-              const SizedBox(height: 56),
-
-              OutlinedButton(
-                onPressed: _isLoading ? null : _signInWithGoogle,
-                style: OutlinedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  side: const BorderSide(color: Colors.white24),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 20,
-                      height: 20,
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
+                child: Center(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 420),
+                    child: Container(
+                      padding: const EdgeInsets.all(32),
+                      decoration: BoxDecoration(
+                        color: AppColors.surfaceDark,
+                        border: Border.all(color: AppColors.borderDark),
+                        borderRadius: BorderRadius.circular(8),
                       ),
-                      child: const Center(
-                        child: Text(
-                          'G',
-                          style: TextStyle(
-                            color: AppColors.googleBlue,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    Text(
-                      'Continue with Google',
-                      style: AppTheme.btnLabel.copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-
-              const SizedBox(height: 24),
-
-              Row(
-                children: [
-                  const Expanded(child: Divider(color: Colors.white12)),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Text(
-                      'or',
-                      style: GoogleFonts.spaceGrotesk(
-                        color: Colors.white24,
-                        fontSize: 12,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: _buildStepChildren(),
                       ),
                     ),
                   ),
-                  const Expanded(child: Divider(color: Colors.white12)),
-                ],
-              ),
-
-              const SizedBox(height: 24),
-
-              _buildTextField(
-                controller: _emailController,
-                label: 'Email',
-                isPassword: false,
-              ),
-              const SizedBox(height: 12),
-
-              _buildTextField(
-                controller: _passwordController,
-                label: 'Password',
-                isPassword: true,
-              ),
-
-              const SizedBox(height: 12),
-
-              if (_errorMessage != null)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Text(
-                    _errorMessage!,
-                    style: TextStyle(color: AppColors.wrong, fontSize: 13),
-                  ),
-                ),
-
-              const SizedBox(height: 4),
-
-              ElevatedButton(
-                onPressed: _isLoading ? null : _signInWithEmail,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primary,
-                  disabledBackgroundColor: AppColors.primary.withAlpha((0.4 * 255).round()),
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  elevation: 0,
-                ),
-                child: _isLoading
-                    ? const SizedBox(
-                        height: 20,
-                        width: 20,
-                        child: CircularProgressIndicator(
-                          color: Colors.white,
-                          strokeWidth: 2,
-                        ),
-                      )
-                    : Text(
-                        _isRegisterMode ? 'Create Account' : 'Sign In',
-                        style: GoogleFonts.spaceGrotesk(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 15,
-                        ),
-                      ),
-              ),
-
-              const SizedBox(height: 20),
-
-              TextButton(
-                onPressed: _isLoading
-                    ? null
-                    : () => setState(() {
-                          _isRegisterMode = !_isRegisterMode;
-                          _errorMessage = null;
-                        }),
-                child: Text(
-                  _isRegisterMode
-                      ? 'Already have an account?  Sign In'
-                      : "Don't have an account?  Register",
-                  style: GoogleFonts.spaceGrotesk(
-                    color: AppColors.primary,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w500,
-                  ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Widget _buildTextField({
+  List<Widget> _buildStepChildren() {
+    switch (_step) {
+      case _AuthStep.email:
+        return _emailStepChildren();
+      case _AuthStep.password:
+        return _passwordStepChildren();
+      case _AuthStep.createAccount:
+        return _createAccountStepChildren();
+    }
+  }
+
+  List<Widget> _emailStepChildren() {
+    return [
+      Text(
+        'Sign in',
+        textAlign: TextAlign.center,
+        style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+      ),
+      const SizedBox(height: 24),
+      _buildField(
+        controller: _emailController,
+        label: 'Email',
+        keyboardType: TextInputType.emailAddress,
+        onChanged: (_) => setState(() {}),
+      ),
+      const SizedBox(height: 24),
+      SizedBox(
+        height: 52,
+        child: ElevatedButton(
+          onPressed: _isEmailValid
+              ? () => setState(() => _step = _AuthStep.password)
+              : null,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            disabledBackgroundColor: AppColors.primary.withAlpha(
+              (0.4 * 255).round(),
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            elevation: 0,
+          ),
+          child: Text(
+            'Continue',
+            style: AppTheme.btnLabel.copyWith(color: Colors.white),
+          ),
+        ),
+      ),
+    ];
+  }
+
+  List<Widget> _passwordStepChildren() {
+    return [
+      Text(
+        'Sign in',
+        textAlign: TextAlign.center,
+        style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+      ),
+      const SizedBox(height: 24),
+      _buildField(
+        controller: _emailController,
+        label: 'Email',
+        keyboardType: TextInputType.emailAddress,
+        hasError: _message != null && _messageIsError,
+        onChanged: (_) => _clearMessage(),
+      ),
+      const SizedBox(height: 24),
+      _buildField(
+        controller: _passwordController,
+        label: 'Password',
+        obscureText: _obscurePassword,
+        hasError: _message != null && _messageIsError,
+        onChanged: (_) => _clearMessage(),
+        suffixIcon: IconButton(
+          icon: Icon(
+            _obscurePassword ? Icons.visibility_off : Icons.visibility,
+            color: AppColors.textSecondaryDark,
+          ),
+          onPressed: () => setState(() => _obscurePassword = !_obscurePassword),
+        ),
+      ),
+      const SizedBox(height: 8),
+      Align(
+        alignment: Alignment.centerRight,
+        child: TextButton(
+          onPressed: _isLoading ? null : _sendPasswordReset,
+          child: Text(
+            'Forgot your password?',
+            style: AppTheme.caption.copyWith(
+              color: AppColors.textSecondaryDark,
+              decoration: TextDecoration.underline,
+            ),
+          ),
+        ),
+      ),
+      if (_message != null) ...[
+        const SizedBox(height: 8),
+        Text(
+          _message!,
+          textAlign: TextAlign.center,
+          style: AppTheme.caption.copyWith(
+            color: _messageIsError ? AppColors.wrong : AppColors.correct,
+          ),
+        ),
+      ],
+      const SizedBox(height: 24),
+      SizedBox(
+        height: 52,
+        child: ElevatedButton(
+          onPressed: _isLoading
+              ? null
+              : () => _submitPassword(createAccount: false),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            disabledBackgroundColor: AppColors.primary.withAlpha(
+              (0.4 * 255).round(),
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            elevation: 0,
+          ),
+          child: _isLoading
+              ? const SizedBox(
+                  height: 20,
+                  width: 20,
+                  child: CircularProgressIndicator(
+                    color: Colors.white,
+                    strokeWidth: 2,
+                  ),
+                )
+              : Text(
+                  'Sign in',
+                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
+                ),
+        ),
+      ),
+      const SizedBox(height: 24),
+      Center(
+        child: RichText(
+          text: TextSpan(
+            style: AppTheme.caption.copyWith(
+              color: AppColors.textSecondaryDark,
+              decoration: TextDecoration.underline,
+            ),
+            children: [
+              const TextSpan(text: 'New here? '),
+              TextSpan(
+                text: 'Create an account!',
+                style: const TextStyle(color: AppColors.primary),
+                recognizer: TapGestureRecognizer()
+                  ..onTap = _isLoading
+                      ? null
+                      : () => setState(() {
+                          _message = null;
+                          _step = _AuthStep.createAccount;
+                        }),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ];
+  }
+
+  List<Widget> _createAccountStepChildren() {
+    return [
+      Text(
+        'Create an account',
+        textAlign: TextAlign.center,
+        style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+      ),
+      const SizedBox(height: 24),
+      _buildField(
+        controller: _emailController,
+        label: 'Email',
+        keyboardType: TextInputType.emailAddress,
+        hasError: _message != null && _messageIsError,
+        onChanged: (_) => _clearMessage(),
+      ),
+      const SizedBox(height: 24),
+      _buildField(
+        controller: _passwordController,
+        label: 'Password',
+        obscureText: _obscurePassword,
+        hasError: _message != null && _messageIsError,
+        onChanged: (_) => _clearMessage(),
+        suffixIcon: IconButton(
+          icon: Icon(
+            _obscurePassword ? Icons.visibility_off : Icons.visibility,
+            color: AppColors.textSecondaryDark,
+          ),
+          onPressed: () => setState(() => _obscurePassword = !_obscurePassword),
+        ),
+      ),
+      if (_message != null) ...[
+        const SizedBox(height: 8),
+        Text(
+          _message!,
+          textAlign: TextAlign.center,
+          style: AppTheme.caption.copyWith(
+            color: _messageIsError ? AppColors.wrong : AppColors.correct,
+          ),
+        ),
+      ],
+      const SizedBox(height: 24),
+      SizedBox(
+        height: 52,
+        child: ElevatedButton(
+          onPressed: _isLoading
+              ? null
+              : () => _submitPassword(createAccount: true),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            disabledBackgroundColor: AppColors.primary.withAlpha(
+              (0.4 * 255).round(),
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(4),
+            ),
+            elevation: 0,
+          ),
+          child: _isLoading
+              ? const SizedBox(
+                  height: 20,
+                  width: 20,
+                  child: CircularProgressIndicator(
+                    color: Colors.white,
+                    strokeWidth: 2,
+                  ),
+                )
+              : Text(
+                  'Create Account',
+                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
+                ),
+        ),
+      ),
+      const SizedBox(height: 24),
+      Center(
+        child: RichText(
+          text: TextSpan(
+            style: AppTheme.caption.copyWith(
+              color: AppColors.textSecondaryDark,
+              decoration: TextDecoration.underline,
+            ),
+            children: [
+              const TextSpan(text: 'Already have an account? '),
+              TextSpan(
+                text: 'Sign in',
+                style: const TextStyle(color: AppColors.primary),
+                recognizer: TapGestureRecognizer()
+                  ..onTap = _isLoading
+                      ? null
+                      : () => setState(() {
+                          _message = null;
+                          _step = _AuthStep.password;
+                        }),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ];
+  }
+
+  Widget _buildField({
     required TextEditingController controller,
     required String label,
-    required bool isPassword,
+    bool obscureText = false,
+    TextInputType? keyboardType,
+    Widget? suffixIcon,
+    bool hasError = false,
+    ValueChanged<String>? onChanged,
   }) {
+    final borderColor = hasError ? AppColors.wrong : AppColors.borderDark;
     return TextField(
       controller: controller,
-      obscureText: isPassword,
-      keyboardType: isPassword
-          ? TextInputType.visiblePassword
-          : TextInputType.emailAddress,
-      style: const TextStyle(color: Colors.white),
+      obscureText: obscureText,
+      keyboardType: keyboardType,
+      onChanged: onChanged,
+      style: const TextStyle(color: AppColors.textPrimaryDark),
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: const TextStyle(color: Colors.white38),
+        labelStyle: const TextStyle(color: AppColors.textSecondaryDark),
+        suffixIcon: suffixIcon,
+        isDense: true,
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 16,
+        ),
         filled: true,
-        fillColor: AppColors.surfaceDark,
+        fillColor: AppColors.backgroundDark,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(4),
+          borderSide: BorderSide(color: borderColor),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: Colors.white12),
+          borderRadius: BorderRadius.circular(4),
+          borderSide: BorderSide(color: borderColor),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(color: AppColors.primary, width: 1.5),
+          borderRadius: BorderRadius.circular(4),
+          borderSide: BorderSide(
+            color: hasError ? AppColors.wrong : AppColors.primary,
+            width: 2,
+          ),
         ),
       ),
     );
