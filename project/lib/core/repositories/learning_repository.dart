@@ -47,17 +47,73 @@ final topicsProvider = FutureProvider.family<List<Topic>, String>((
   return snap.docs.map((d) => Topic.fromFirestore(d)).toList();
 });
 
-/// Drill questions for a topic (topicId)
+// Spec §2.2.7: "If a topic has fewer than 5 questions: all are shown. If
+// more than 20: cap at 20 per session." Live data: 42 of 128 topics already
+// have fewer than 20 questions (min 1) — the cap is a no-op for a third of
+// topics and only bites the ones that exceed it (max seen: 103).
+const _drillSessionSize = 20;
+
+// Firestore auto-generated document IDs draw from this 62-char alphabet.
+// Used to synthesize a random cursor for FieldPath.documentId ordering —
+// there's no year-like field on questions to rotate on the way WAEC does,
+// but doc IDs are themselves random strings, so a random starting point
+// works the same way: no new index (ordering by document ID after a single
+// equality filter doesn't need one), no stored random field.
+const _autoIdAlphabet =
+    '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+String _randomAutoId(Random random) {
+  return List.generate(
+    20,
+    (_) => _autoIdAlphabet[random.nextInt(_autoIdAlphabet.length)],
+  ).join();
+}
+
+/// Drill questions for a topic (topicId), capped to [_drillSessionSize] and
+/// rotated via a random document-ID cursor so a topic with more than
+/// [_drillSessionSize] questions doesn't serve the same fixed subset every
+/// session — drill is the repeat-use surface, so unlike a plain .limit()
+/// this needs to actually vary across visits, not just cap the worst case.
+///
+/// If the forward window runs short (random start landed near the end of
+/// the topic's ID range), wrap to the beginning. The wrap fetch pulls up to
+/// [_drillSessionSize] candidates (not just the shortfall) and filters out
+/// anything the forward query already returned — needed because an
+/// unfiltered wrap query has no upper bound on document ID, so for a small
+/// topic (pool close to the cap) it can otherwise re-read documents the
+/// forward query already got, double-counting them. Worst case this means
+/// up to 2x [_drillSessionSize] reads on the wrap path, not a strict cap —
+/// still far below the uncapped worst case of 103.
 final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
   ref,
   topicId,
 ) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db
-      .collection('questions')
-      .where('topicId', isEqualTo: topicId)
+  final base = db.collection('questions').where('topicId', isEqualTo: topicId);
+
+  final randomStart = _randomAutoId(Random());
+  final forward = await base
+      .orderBy(FieldPath.documentId)
+      .startAt([randomStart])
+      .limit(_drillSessionSize)
       .get();
-  return snap.docs.map((d) => Question.fromFirestore(d)).toList();
+
+  var docs = forward.docs;
+  if (docs.length < _drillSessionSize) {
+    final seenIds = docs.map((d) => d.id).toSet();
+    final wrap = await base
+        .orderBy(FieldPath.documentId)
+        .limit(_drillSessionSize)
+        .get();
+    final needed = _drillSessionSize - docs.length;
+    final additions = wrap.docs
+        .where((d) => !seenIds.contains(d.id))
+        .take(needed);
+    docs = [...docs, ...additions];
+  }
+
+  final shuffled = docs.toList()..shuffle();
+  return shuffled.map((d) => Question.fromFirestore(d)).toList();
 });
 
 // WAEC papers run 40-50 objective questions in practice, and it's the
