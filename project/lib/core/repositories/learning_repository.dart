@@ -116,76 +116,167 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
   return shuffled.map((d) => Question.fromFirestore(d)).toList();
 });
 
-// WAEC papers run 40-50 objective questions in practice, and it's the
-// unbuilt §2.3.3 setup screen's own default question count (range 10-60) —
-// capping here means behaviour won't change once that screen adds the
-// slider, only configurability will.
-const _waecExamSize = 40;
+// Safety net only — real per-subject bounds always come from
+// waecYearRangeProvider below. Live data proved a single hardcoded range
+// wrong last session: Further Mathematics runs 2006-2025, not 1990-2024,
+// and a fixed 2024 upper bound silently excluded a real year of content.
+const _waecFallbackEarliestYear = 1990;
+const _waecFallbackLatestYear = 2024;
 
-// WAEC's actual scraped year range (see .cursorrules "SUBJECT SLUGS" /
-// scraper URL pattern) — used only to pick a random rotation point below,
-// not as a hard data boundary.
-const _waecEarliestYear = 1990;
-const _waecLatestYear = 2024;
+/// A subject's real WAEC year range — two single-document reads (one
+/// ascending, one descending by year), both covered by the existing
+/// subjectId+source+year composite indexes. Falls back to the nominal
+/// 1990-2024 range only if a subject somehow has zero WAEC questions.
+final waecYearRangeProvider = FutureProvider.family<(int min, int max), String>(
+  (ref, subjectId) async {
+    final db = ref.read(_firestoreProvider);
+    final base = db
+        .collection('questions')
+        .where('subjectId', isEqualTo: subjectId)
+        .where('source', isEqualTo: 'waec');
 
-/// WAEC exam questions by subjectId, capped to [_waecExamSize] so a subject
-/// with hundreds of seeded questions (Physics: 1769, Mathematics: 1716)
-/// doesn't load its entire bank on a single exam screen.
+    final earliest = await base.orderBy('year').limit(1).get();
+    final latest = await base.orderBy('year', descending: true).limit(1).get();
+
+    final min = earliest.docs.isEmpty
+        ? _waecFallbackEarliestYear
+        : (earliest.docs.first.data()['year'] as num).toInt();
+    final max = latest.docs.isEmpty
+        ? _waecFallbackLatestYear
+        : (latest.docs.first.data()['year'] as num).toInt();
+    return (min, max);
+  },
+);
+
+/// Key for [waecAvailableCountProvider] — deliberately excludes
+/// questionCount/shuffle so dragging the count slider or flipping shuffle
+/// doesn't trigger a new count() read; only the subject and year range
+/// actually change how many questions are available.
+class WaecYearRangeQuery {
+  const WaecYearRangeQuery({
+    required this.subjectId,
+    required this.yearFrom,
+    required this.yearTo,
+  });
+
+  final String subjectId;
+  final int yearFrom;
+  final int yearTo;
+
+  @override
+  bool operator ==(Object other) =>
+      other is WaecYearRangeQuery &&
+      other.subjectId == subjectId &&
+      other.yearFrom == yearFrom &&
+      other.yearTo == yearTo;
+
+  @override
+  int get hashCode => Object.hash(subjectId, yearFrom, yearTo);
+}
+
+/// Dynamic availability count for the setup screen's label (spec §2.3.3:
+/// "Fetched from a count query — not a full document fetch"). A Firestore
+/// count() aggregate — it never transfers the matching documents, only a
+/// number, and reuses the same composite index the exam fetch below does.
+final waecAvailableCountProvider =
+    FutureProvider.family<int, WaecYearRangeQuery>((ref, query) async {
+      final db = ref.read(_firestoreProvider);
+      final aggregate = await db
+          .collection('questions')
+          .where('subjectId', isEqualTo: query.subjectId)
+          .where('source', isEqualTo: 'waec')
+          .where('year', isGreaterThanOrEqualTo: query.yearFrom)
+          .where('year', isLessThanOrEqualTo: query.yearTo)
+          .count()
+          .get();
+      return aggregate.count ?? 0;
+    });
+
+/// Full config for one exam fetch — subject, year range, question count,
+/// and whether to rotate/shuffle or serve deterministic chronological
+/// order. Used only as [waecExamQuestionsProvider]'s family key.
+class WaecExamConfig {
+  const WaecExamConfig({
+    required this.subjectId,
+    required this.yearFrom,
+    required this.yearTo,
+    required this.questionCount,
+    required this.shuffle,
+  });
+
+  final String subjectId;
+  final int yearFrom;
+  final int yearTo;
+  final int questionCount;
+  final bool shuffle;
+
+  @override
+  bool operator ==(Object other) =>
+      other is WaecExamConfig &&
+      other.subjectId == subjectId &&
+      other.yearFrom == yearFrom &&
+      other.yearTo == yearTo &&
+      other.questionCount == questionCount &&
+      other.shuffle == shuffle;
+
+  @override
+  int get hashCode =>
+      Object.hash(subjectId, yearFrom, yearTo, questionCount, shuffle);
+}
+
+/// Exam questions for [config] — capped to config.questionCount, scoped to
+/// config.yearFrom..config.yearTo (never beyond it, unlike last session's
+/// hardcoded-range version: a user-selected range narrower than the
+/// subject's full range must not silently pull in years outside it).
 ///
-/// Rotation is coarse, not a uniform random sample. A random pivot year
-/// selects a forward window (year >= pivot, ascending), backfilled from
-/// below if the tail of the range runs short. That's biased at both edges
-/// of the nominal 1990-2024 range, confirmed live on real data:
-/// - Bottom edge: a subject whose data doesn't start until partway through
-///   the range collapses every earlier pivot onto the same block. Further
-///   Mathematics has no WAEC questions before 2006 — pivots 1990 through
-///   2005 (16 of 35 possible values) all return the exact same 40
-///   documents, pre-shuffle.
-/// - Top edge: a pivot with little forward room left falls straight into
-///   backfill, which always sweeps the same most-recent-years cluster
-///   regardless of which late pivot you started from.
-/// The result list is shuffled below to at least fix a second, separate
-/// bug that hits even a collapsed pivot: Firestore returns documents
-/// within a year in a stable order, so without shuffling, two students on
-/// the same pivot would get an identical paper in identical order.
+/// config.shuffle == true: rotates via a random pivot year within the
+/// selected range plus wraparound, then shuffles — same mechanism as last
+/// session, now scoped to the chosen range instead of a hardcoded one, and
+/// carrying the same coarse-not-uniform caveat documented there.
 ///
-/// True uniform sampling would need either a stored random field on each
-/// question (a seeder/schema change, out of scope for this minimal cap) or
-/// Query.offset() into the full population — which Firestore bills as a
-/// read per skipped document, reintroducing the exact cost problem this
-/// cap exists to fix. Deferred to Session 10's real exam configuration
-/// work if it matters by then; this fixes the live breakage (loading
-/// hundreds to thousands of questions per exam), not the sampling design.
-final waecQuestionsProvider = FutureProvider.family<List<Question>, String>((
-  ref,
-  subjectId,
-) async {
-  final db = ref.read(_firestoreProvider);
-  final base = db
-      .collection('questions')
-      .where('subjectId', isEqualTo: subjectId)
-      .where('source', isEqualTo: 'waec');
+/// config.shuffle == false: deterministic, oldest-first, no rotation — per
+/// spec 2.3.3's literal "chronological order" language for that toggle
+/// state. That's intentional determinism, not the rotation bug recurring.
+final waecExamQuestionsProvider =
+    FutureProvider.family<List<Question>, WaecExamConfig>((ref, config) async {
+      final db = ref.read(_firestoreProvider);
+      final base = db
+          .collection('questions')
+          .where('subjectId', isEqualTo: config.subjectId)
+          .where('source', isEqualTo: 'waec');
 
-  final pivotYear =
-      _waecEarliestYear +
-      Random().nextInt(_waecLatestYear - _waecEarliestYear + 1);
+      if (!config.shuffle) {
+        final snap = await base
+            .where('year', isGreaterThanOrEqualTo: config.yearFrom)
+            .where('year', isLessThanOrEqualTo: config.yearTo)
+            .orderBy('year')
+            .limit(config.questionCount)
+            .get();
+        return snap.docs.map((d) => Question.fromFirestore(d)).toList();
+      }
 
-  final forward = await base
-      .where('year', isGreaterThanOrEqualTo: pivotYear)
-      .orderBy('year')
-      .limit(_waecExamSize)
-      .get();
+      final pivotYear =
+          config.yearFrom +
+          Random().nextInt(config.yearTo - config.yearFrom + 1);
 
-  var docs = forward.docs;
-  if (docs.length < _waecExamSize) {
-    final backfill = await base
-        .where('year', isLessThan: pivotYear)
-        .orderBy('year', descending: true)
-        .limit(_waecExamSize - docs.length)
-        .get();
-    docs = [...docs, ...backfill.docs];
-  }
-  docs = docs.toList()..shuffle();
+      final forward = await base
+          .where('year', isGreaterThanOrEqualTo: pivotYear)
+          .where('year', isLessThanOrEqualTo: config.yearTo)
+          .orderBy('year')
+          .limit(config.questionCount)
+          .get();
 
-  return docs.map((d) => Question.fromFirestore(d)).toList();
-});
+      var docs = forward.docs;
+      if (docs.length < config.questionCount) {
+        final backfill = await base
+            .where('year', isLessThan: pivotYear)
+            .where('year', isGreaterThanOrEqualTo: config.yearFrom)
+            .orderBy('year', descending: true)
+            .limit(config.questionCount - docs.length)
+            .get();
+        docs = [...docs, ...backfill.docs];
+      }
+      final shuffled = docs.toList()..shuffle();
+
+      return shuffled.map((d) => Question.fromFirestore(d)).toList();
+    });

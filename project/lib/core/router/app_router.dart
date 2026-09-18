@@ -11,6 +11,7 @@ import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/topic_list_screen.dart';
 import 'package:paragon/features/unit_list_screen.dart';
 import 'package:paragon/features/waec_exam_screen.dart';
+import 'package:paragon/features/waec_exam_setup_screen.dart';
 import 'package:paragon/features/waec_subject_screen.dart';
 import 'package:paragon/features/welcome_screen.dart';
 
@@ -49,7 +50,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // The notifier will fire again once auth resolves and redirect will re-run.
       if (authAsync.isLoading) return null;
 
-      final isSignedIn = authAsync.asData?.value != null;
+      final user = authAsync.asData?.value;
+      final isSignedIn = user != null;
+      // A guest (anonymous auth) counts as signed in for every protected
+      // route, but — unlike a real account — is still allowed to visit
+      // welcome/signin, since that's the only way to upgrade out of a
+      // guest session. Upgrading starts a fresh real-account session; it
+      // does not link the anonymous UID (see auth_provider.dart).
+      final isReallySignedIn = isSignedIn && !user.isAnonymous;
       final isOnSignIn = state.matchedLocation == '/signin';
       final isOnWelcome = state.matchedLocation == '/welcome';
 
@@ -57,8 +65,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // → send to the welcome (landing) screen
       if (!isSignedIn && !isOnSignIn && !isOnWelcome) return '/welcome';
 
-      // Already signed in but somehow landed on welcome or sign-in → send home
-      if (isSignedIn && (isOnSignIn || isOnWelcome)) return '/';
+      // Really signed in but somehow landed on welcome or sign-in → send home
+      if (isReallySignedIn && (isOnSignIn || isOnWelcome)) return '/';
 
       // All other cases: let navigation proceed normally
       return null;
@@ -104,9 +112,21 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const WaecSubjectScreen(),
       ),
       GoRoute(
-        path: '/waec/:subjectId/exam',
+        path: '/waec/:subjectId/setup',
         builder: (context, state) =>
-            WaecExamScreen(subjectId: state.pathParameters['subjectId']!),
+            WaecExamSetupScreen(subjectId: state.pathParameters['subjectId']!),
+      ),
+      GoRoute(
+        path: '/waec/:subjectId/exam',
+        builder: (context, state) => WaecExamScreen(
+          subjectId: state.pathParameters['subjectId']!,
+          // Direct URL / bad deep link with no route extra is handled
+          // inside WaecExamScreen itself (redirects back to setup) rather
+          // than crashing on a bad cast — see its initState.
+          session: state.extra is WaecExamSessionData
+              ? state.extra as WaecExamSessionData
+              : null,
+        ),
       ),
       GoRoute(
         path: '/dashboard',
