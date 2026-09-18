@@ -5,6 +5,7 @@ import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
+import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/topic_list_screen.dart';
@@ -89,6 +90,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId',
         builder: (context, state) =>
             DrillScreen(topicId: state.pathParameters['topicId']!),
+      ),
+      GoRoute(
+        path: '/subject/:subjectId/unit/:unitId/topic/:topicId/learn',
+        builder: (context, state) => LearnScreen(
+          subjectId: state.pathParameters['subjectId']!,
+          unitId: state.pathParameters['unitId']!,
+          topicId: state.pathParameters['topicId']!,
+        ),
       ),
       GoRoute(
         path: '/waec',

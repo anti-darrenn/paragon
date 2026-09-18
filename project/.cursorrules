@@ -470,7 +470,7 @@ Write a new topics_{subject}.json for each new subject before classifying.
 
 
 # ─────────────────────────────────────────────
-# 12. SESSION CONTEXT (current as of post-Session 8 hygiene pass)
+# 12. SESSION CONTEXT (current as of post-Session 9)
 # ─────────────────────────────────────────────
 
 Session 8 is done: Physics (1769 questions) and Further Mathematics (801 questions)
@@ -482,8 +482,22 @@ from Figma, and the theme reconciled with Figma tokens (Space Grotesk, AppColors
 palette). None of this maps to a specific session number — treat `git log` as the
 source of truth for exactly what's shipped, not this file's session numbering alone.
 
-Session 9 is next. Phase 3 build sessions (planned):
-  9   Learn mode — video embed + notes per topic
+Session 9 is done, but scoped down from the original one-liner: "video embed +
+notes per topic" assumed video/notes content that does not exist anywhere —
+Topic docs, topics.json, and questions.explanation are all empty of it, live,
+for every seeded topic and question. What shipped instead is the navigational
+and rendering shell: LearnScreen (route
+`/subject/:subjectId/unit/:unitId/topic/:topicId/learn`), a Learn/Practice
+button pair on TopicListScreen, `Topic.hasNotes`/`Topic.notesMarkdown` (nullable,
+null-safe, unused by any current doc), and a first real use of the
+already-pinned `connectivity_plus` dependency for the offline state
+(`core/providers/connectivity_provider.dart`). No video player package was
+added — there's no `videoId` for one to ever play. See `docs/audit/NEXT.md`
+for what this intentionally leaves open (notes-authoring path, real Markdown
+rendering, worked examples, video embedding).
+
+Session 10 is next. Phase 3 build sessions (planned):
+  9   Learn mode — video embed + notes per topic ✅ done (shell only, see above)
   10  Proper exam mode — configurable settings, lockdown
   11  User profiles — username, avatar, country, subject picker
   12  Course tracking — accuracy by topic, progress bars, weak areas

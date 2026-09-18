@@ -91,9 +91,29 @@ priority. "One-way door" = hard/costly to reverse later.
   runs, the index is declared in the repo but not live, and
   `weeklyAttemptsCountProvider` will keep failing exactly as before.
 
+## Session 9 follow-ups (Learn mode shell shipped; these were deliberately deferred)
+
+- **No content-authoring path for `Topic.hasNotes`/`notesMarkdown`.** Nothing
+  in `tools/scraper` or Firebase Console workflow sets these — the fields
+  exist on the model and render correctly if populated, but there's no script
+  or admin UI to populate them. Needs its own small session (or a one-off
+  script) once actual notes copy exists to author.
+- **`FullLatexView` doesn't render real Markdown**, only LaTeX delimiters plus
+  `\textbf`/`\textit`/`\emph`/`\vspace`. If `notesMarkdown` content ever uses
+  headings or bullet lists, they'll render as literal text, not structure.
+  Fine for now (no notes exist), but flag before anyone authors notes with
+  real Markdown syntax expecting it to render.
+- **Worked Examples section (spec §2.2.6) omitted entirely** — depends on
+  `questions.explanation`, which is empty for all 4,286 seeded questions (see
+  item #1's sibling finding). Add it back once `explanation` has real content;
+  don't build an empty accordion in the meantime.
+- **No real video embedding** — no `youtube_player`/`webview_flutter`
+  dependency added, since no topic has a `videoId` to point one at. Add the
+  package and the field together, when video content actually exists.
+
 ## Explicitly not on this list (already tracked, not new findings)
 
-Learn mode, proper exam config/lockdown, user profiles, gamification/XP,
-onboarding funnel, guest mode, Android build, Chemistry/Economics/Biology
-content — all correctly deferred per `.cursorrules:430-494` (Sessions 9-18).
-Re-auditing these would just restate the existing roadmap.
+Proper exam config/lockdown, user profiles, gamification/XP, onboarding
+funnel, guest mode, Android build, Chemistry/Economics/Biology content — all
+correctly deferred per `.cursorrules:430-495` (Sessions 10-18). Re-auditing
+these would just restate the existing roadmap.
