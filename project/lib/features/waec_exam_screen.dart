@@ -48,6 +48,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   // shown the instant the exam is submitted and never waits on this.
   bool _saving = false;
   bool _saveFailed = false;
+  // "Review Answers" drops back into the live exam, so submit can run twice.
+  // attempts are recorded once per exam — the retry button still works, since
+  // this only flips on a successful write
+  bool _attemptsSaved = false;
 
   Timer? _ticker;
   int _remainingSeconds = 0;
@@ -138,7 +142,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       _examSubmitted = true;
       _score = correct;
     });
-    _saveAttempts(questions);
+    if (!_attemptsSaved) _saveAttempts(questions);
   }
 
   /// Records one attempt per *answered* question via the same
@@ -175,6 +179,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       await ref
           .read(attemptRepositoryProvider)
           .recordBatch(userId: user.uid, source: 'waec', attempts: answered);
+      _attemptsSaved = true;
       if (mounted) setState(() => _saving = false);
     } catch (_) {
       if (mounted) {
