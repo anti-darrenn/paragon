@@ -113,8 +113,15 @@ function extractQuestions(arr) {
         ? resolve(v.explanation)
         : null;
 
+    // authoritative year — the url's exam_year is NOT trustworthy. asking for a
+    // year the site doesn't stock silently returns questions from another year
+    const collection = resolve(v.collection);
+    const examYear =
+      collection && Number.isInteger(collection.exam_year) ? collection.exam_year : null;
+
     found.push({
       sourceId,
+      examYear,
       questionHtml,
       options,
       explanationHtml,
@@ -154,13 +161,25 @@ async function scrapeListingYear(year) {
     const questions = extractQuestions(arr);
     if (questions.length === 0) break; // genuine end of pages
 
-    for (const q of questions) collected.push({ ...q, year });
+    // keep only questions the payload itself says belong to this year. a year
+    // the site doesn't stock returns another year's questions forever, so an
+    // all-foreign page means "no such year" and must stop the loop
+    const forYear = questions.filter((q) => q.examYear === year);
+    if (forYear.length === 0) {
+      if (page === 1) {
+        const got = questions[0].examYear;
+        console.log(`  ${year}: not stocked (site served ${got}) — skipping`);
+      }
+      break;
+    }
+
+    for (const q of forYear) collected.push({ ...q, year });
     process.stdout.write(`\r  ${year}: page ${page}, ${collected.length} questions`);
     page++;
     await sleep(DELAY_MS);
   }
 
-  process.stdout.write('\n');
+  if (collected.length) process.stdout.write('\n');
   return collected;
 }
 
