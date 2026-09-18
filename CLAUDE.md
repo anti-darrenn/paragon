@@ -72,3 +72,17 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 ## Commits
 
 Conventional commits, with project-specific types/scopes from `.cursorrules`: types `feat|fix|chore|content|refactor|style|docs`; scopes `drill, waec, auth, dashboard, router, theme, models, providers, scraper, seeder, classifier, firestore, latex, android, deploy`. Example: `content(physics): seed 412 physics WAEC questions 1990-2024`.
+
+- A roadmap session number is not a severity rating. Before deferring anything, ask: is this
+  absent functionality, or live breakage in code that already ships? Breakage is P0/P1
+  regardless of which future session it's filed under.
+- "Performance" and similar generic future buckets must not absorb specific known defects.
+
+## Working agreements
+- `.cursorrules` is the roadmap. `Spec_Current.docx` and §2.1–2.3 are aspirational intent.
+  `PRD_v2.md`, `Tech_Stack.md` and `Execution_Plan.md` are stale (Next.js-era) — do not follow.
+- `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
+- Formatting commits never mix with logic commits.
+- `flutter test` passing 2/2 means there are almost no tests. Never report it as health.
+- Client-writable `users/{uid}` streak/xp/topicStats is a hard blocker on any leaderboard or
+  gamification work. Do not ship those sessions until writes are server-controlled.
