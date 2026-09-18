@@ -101,13 +101,42 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
             .read(userRepositoryProvider)
             .createUserIfNew(userCredential.user!);
       }
-    } on FirebaseAuthException {
+    } on FirebaseAuthException catch (e) {
       setState(() {
         _messageIsError = true;
-        _message = 'Email or password is incorrect.';
+        _message = _authErrorMessage(e.code, createAccount: createAccount);
       });
     } finally {
       if (mounted) setState(() => _isLoading = false);
+    }
+  }
+
+  String _authErrorMessage(String code, {required bool createAccount}) {
+    if (createAccount) {
+      switch (code) {
+        case 'email-already-in-use':
+          return 'An account with this email already exists.';
+        case 'weak-password':
+          return 'Password is too weak. Use at least 6 characters.';
+        case 'invalid-email':
+          return 'Enter a valid email address.';
+        case 'too-many-requests':
+          return 'Too many attempts. Try again later.';
+        default:
+          return "Couldn't create your account. Please try again.";
+      }
+    }
+    switch (code) {
+      case 'wrong-password':
+      case 'invalid-credential':
+      case 'user-not-found':
+        return 'Email or password is incorrect.';
+      case 'too-many-requests':
+        return 'Too many attempts. Try again later.';
+      case 'invalid-email':
+        return 'Enter a valid email address.';
+      default:
+        return "Couldn't sign you in. Please try again.";
     }
   }
 
@@ -132,10 +161,15 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         _messageIsError = false;
         _message = 'Password reset email sent — check your inbox.';
       });
-    } on FirebaseAuthException {
+    } on FirebaseAuthException catch (e) {
       setState(() {
         _messageIsError = true;
-        _message = 'Email or password is incorrect.';
+        _message = switch (e.code) {
+          'user-not-found' => 'No account found with that email.',
+          'invalid-email' => 'Enter a valid email address.',
+          'too-many-requests' => 'Too many attempts. Try again later.',
+          _ => "Couldn't send reset email. Please try again.",
+        };
       });
     } finally {
       if (mounted) setState(() => _isLoading = false);

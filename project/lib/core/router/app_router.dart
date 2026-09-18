@@ -87,7 +87,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId',
-        // ✅ CORRECT
         builder: (context, state) =>
             DrillScreen(topicId: state.pathParameters['topicId']!),
       ),

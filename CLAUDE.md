@@ -33,7 +33,7 @@ node check_linkage.js     # verify topicId linkage after seeding
 
 Each script hardcodes `const SUBJECT = '...'` near the top — **edit that constant in every script before a run**; they currently disagree with each other (`1_scrape/2_classify/3_seed` = `further-mathematics`, `fix_misclassified` = `physics`). Requires `tools/scraper/.env` (`GROQ_API_KEY`) and `tools/scraper/data/serviceAccountKey.json` (gitignored, never commit). `raw_*.json` is `{ questions: [...] }`, not a bare array; `classified_*.json` **is** a bare array.
 
-There are no Firestore rules/indexes files in the repo — `firebase.json` only configures hosting. Rules and composite indexes are managed in the Firebase Console, so `firebase deploy --only firestore:rules` will not work as written in `.cursorrules`.
+`project/firestore.rules` and `project/firestore.indexes.json` are both tracked in the repo, and `firebase.json`'s `firestore` block points at each — `firebase deploy --only firestore:rules` and `firebase deploy --only firestore:indexes` deploy these files directly, as `.cursorrules` describes.
 
 ## Architecture
 
