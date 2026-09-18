@@ -24,8 +24,9 @@ void main() {
     bool foundBold = false;
     bool foundWidgetSpan = false;
     void visit(TextSpan ts) {
-      if (ts.style != null && ts.style!.fontWeight == FontWeight.bold)
+      if (ts.style != null && ts.style!.fontWeight == FontWeight.bold) {
         foundBold = true;
+      }
       if (ts.children != null) {
         for (final c in ts.children!) {
           if (c is TextSpan) visit(c);
