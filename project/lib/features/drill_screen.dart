@@ -142,7 +142,9 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     ),
                   );
                 }),
-                if (_submitted) ...[
+                // only render once there's a worked solution to show — an empty
+                // box reads as a rendering failure next to a marked answer
+                if (_submitted && q.explanation.trim().isNotEmpty) ...[
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
