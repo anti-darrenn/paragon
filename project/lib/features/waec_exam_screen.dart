@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/models/question.dart';
+import '../core/providers/auth_provider.dart';
+import '../core/repositories/attempt_repository.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
@@ -23,6 +26,11 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   bool _examSubmitted = false;
   int _score = 0;
 
+  // Attempt-write state, separate from exam scoring — the score above is
+  // shown the instant the exam is submitted and never waits on this.
+  bool _saving = false;
+  bool _saveFailed = false;
+
   void _selectOption(int optionIndex) {
     if (_examSubmitted) return;
     setState(() => _answers[_currentIndex] = optionIndex);
@@ -32,7 +40,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     setState(() => _currentIndex = index);
   }
 
-  void _submitExam(List questions) {
+  void _submitExam(List<Question> questions) {
     int correct = 0;
     for (int i = 0; i < questions.length; i++) {
       if (_answers[i] == questions[i].correctIndex) correct++;
@@ -41,9 +49,62 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       _examSubmitted = true;
       _score = correct;
     });
+    _saveAttempts(questions);
   }
 
-  void _confirmSubmit(List questions) {
+  /// Records one attempt per *answered* question via the same
+  /// AttemptRepository the drill flow uses, tagged source: 'waec'.
+  /// Unanswered questions are skipped, not recorded as wrong — an
+  /// attempt document means "the student answered," matching drill's
+  /// own semantics (record() there is only ever called with a selection).
+  Future<void> _saveAttempts(List<Question> questions) async {
+    final user = ref.read(currentUserProvider);
+    if (user == null) return;
+
+    final answered =
+        <
+          ({
+            String questionId,
+            String topicId,
+            String subjectId,
+            int selectedIndex,
+            bool isCorrect,
+          })
+        >[];
+    for (int i = 0; i < questions.length; i++) {
+      final selected = _answers[i];
+      if (selected == null) continue;
+      final q = questions[i];
+      answered.add((
+        questionId: q.id,
+        topicId: q.topicId,
+        subjectId: q.subjectId,
+        selectedIndex: selected,
+        isCorrect: selected == q.correctIndex,
+      ));
+    }
+    if (answered.isEmpty) return;
+
+    setState(() {
+      _saving = true;
+      _saveFailed = false;
+    });
+    try {
+      await ref
+          .read(attemptRepositoryProvider)
+          .recordBatch(userId: user.uid, source: 'waec', attempts: answered);
+      if (mounted) setState(() => _saving = false);
+    } catch (_) {
+      if (mounted) {
+        setState(() {
+          _saving = false;
+          _saveFailed = true;
+        });
+      }
+    }
+  }
+
+  void _confirmSubmit(List<Question> questions) {
     final unanswered = questions.length - _answers.length;
 
     showDialog(
@@ -144,6 +205,9 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               total: questions.length,
               answers: _answers,
               questions: questions,
+              saving: _saving,
+              saveFailed: _saveFailed,
+              onRetry: () => _saveAttempts(questions),
               onReview: () => setState(() => _examSubmitted = false),
               onExit: () => context.pop(),
             );
@@ -409,7 +473,10 @@ class _ResultsView extends StatelessWidget {
   final int score;
   final int total;
   final Map<int, int> answers;
-  final List questions;
+  final List<Question> questions;
+  final bool saving;
+  final bool saveFailed;
+  final VoidCallback onRetry;
   final VoidCallback onReview;
   final VoidCallback onExit;
 
@@ -418,6 +485,9 @@ class _ResultsView extends StatelessWidget {
     required this.total,
     required this.answers,
     required this.questions,
+    required this.saving,
+    required this.saveFailed,
+    required this.onRetry,
     required this.onReview,
     required this.onExit,
   });
@@ -454,6 +524,46 @@ class _ResultsView extends StatelessWidget {
             pct >= 50 ? 'Pass' : 'Below pass mark',
             style: TextStyle(color: scoreColor, fontSize: 14),
           ),
+          if (saveFailed) ...[
+            const SizedBox(height: 20),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: AppColors.wrong.withAlpha((0.12 * 255).round()),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                  color: AppColors.wrong.withAlpha((0.4 * 255).round()),
+                ),
+              ),
+              child: Row(
+                children: [
+                  const Icon(
+                    Icons.error_outline,
+                    color: AppColors.wrong,
+                    size: 18,
+                  ),
+                  const SizedBox(width: 10),
+                  const Expanded(
+                    child: Text(
+                      "Couldn't save your results.",
+                      style: TextStyle(color: Colors.white70, fontSize: 13),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: saving ? null : onRetry,
+                    child: Text(
+                      saving ? 'Retrying…' : 'Retry',
+                      style: const TextStyle(
+                        color: AppColors.wrong,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
           const SizedBox(height: 32),
           SizedBox(
             width: double.infinity,
