@@ -42,14 +42,16 @@ class FullLatexView extends StatelessWidget {
     }
 
     Widget mathWidget(String content) => Math.tex(
-          content,
-          textStyle: effectiveStyle,
-          onErrorFallback: (e) => Text(
-            content,
-            style: effectiveStyle.copyWith(
-                color: Colors.redAccent, fontFamily: 'monospace'),
-          ),
-        );
+      content,
+      textStyle: effectiveStyle,
+      onErrorFallback: (e) => Text(
+        content,
+        style: effectiveStyle.copyWith(
+          color: Colors.redAccent,
+          fontFamily: 'monospace',
+        ),
+      ),
+    );
 
     while (pos < len) {
       // Escaped dollar: \$
@@ -69,10 +71,12 @@ class FullLatexView extends StatelessWidget {
         final end = s.indexOf(close, start);
         if (end != -1) {
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: mathWidget(s.substring(start, end)),
-          ));
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: mathWidget(s.substring(start, end)),
+            ),
+          );
           pos = end + 2;
           continue;
         }
@@ -86,10 +90,12 @@ class FullLatexView extends StatelessWidget {
         final end = s.indexOf(r'$$', start);
         if (end != -1) {
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: mathWidget(s.substring(start, end)),
-          ));
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: mathWidget(s.substring(start, end)),
+            ),
+          );
           pos = end + 2;
           continue;
         }
@@ -104,10 +110,12 @@ class FullLatexView extends StatelessWidget {
         }
         if (j < len) {
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: mathWidget(s.substring(pos + 1, j)),
-          ));
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: mathWidget(s.substring(pos + 1, j)),
+            ),
+          );
           pos = j + 1;
           continue;
         }
@@ -122,12 +130,14 @@ class FullLatexView extends StatelessWidget {
         final result = _extractBalanced(s, s.indexOf('{', pos));
         if (result != null) {
           flushPlain();
-          spans.add(TextSpan(
-            text: result.content,
-            style: isBold
-                ? effectiveStyle.copyWith(fontWeight: FontWeight.bold)
-                : effectiveStyle.copyWith(fontStyle: FontStyle.italic),
-          ));
+          spans.add(
+            TextSpan(
+              text: result.content,
+              style: isBold
+                  ? effectiveStyle.copyWith(fontWeight: FontWeight.bold)
+                  : effectiveStyle.copyWith(fontStyle: FontStyle.italic),
+            ),
+          );
           pos = result.end + 1;
           continue;
         }
@@ -145,9 +155,7 @@ class FullLatexView extends StatelessWidget {
             height = double.tryParse(inner) ?? 0;
           }
           flushPlain();
-          spans.add(WidgetSpan(
-            child: SizedBox(height: height),
-          ));
+          spans.add(WidgetSpan(child: SizedBox(height: height)));
           pos = result.end + 1;
           continue;
         }

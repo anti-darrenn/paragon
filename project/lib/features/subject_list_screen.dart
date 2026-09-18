@@ -24,8 +24,10 @@ class SubjectListScreen extends ConsumerWidget {
           ),
           TextButton(
             onPressed: () => context.push('/waec'),
-            child: const Text('WAEC Prep',
-            style: TextStyle(color: AppColors.primary)),
+            child: const Text(
+              'WAEC Prep',
+              style: TextStyle(color: AppColors.primary),
+            ),
           ),
           IconButton(
             icon: const Icon(Icons.logout, size: 20),
@@ -44,8 +46,7 @@ class SubjectListScreen extends ConsumerWidget {
             : Padding(
                 padding: const EdgeInsets.all(16),
                 child: GridView.builder(
-                  gridDelegate:
-                      const SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 12,
@@ -70,7 +71,7 @@ class _SubjectCard extends StatelessWidget {
     final color = AppColors.forSubject(subject.name);
     return GestureDetector(
       onTap: () => context.push('/subject/${subject.id}'),
-        child: Container(
+      child: Container(
         decoration: BoxDecoration(
           color: color.withAlpha((0.12 * 255).round()),
           borderRadius: BorderRadius.circular(12),
@@ -83,19 +84,23 @@ class _SubjectCard extends StatelessWidget {
             Container(
               width: 10,
               height: 10,
-              decoration:
-                  BoxDecoration(color: color, shape: BoxShape.circle),
+              decoration: BoxDecoration(color: color, shape: BoxShape.circle),
             ),
             const Spacer(),
-            Text(subject.name,
-                style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                    color: Colors.white, fontWeight: FontWeight.w700)),
+            Text(
+              subject.name,
+              style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
             const SizedBox(height: 4),
-            Text('${subject.unitCount} units',
-                style: Theme.of(context)
-                    .textTheme
-                    .bodySmall
-                    ?.copyWith(color: Colors.white54)),
+            Text(
+              '${subject.unitCount} units',
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: Colors.white54),
+            ),
           ],
         ),
       ),

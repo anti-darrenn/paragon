@@ -23,14 +23,13 @@ class DashboardScreen extends ConsumerWidget {
       ),
       body: userDataAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) =>
-            Center(child: Text('Error: $e')),
+        error: (e, _) => Center(child: Text('Error: $e')),
         data: (userData) {
-            final rawStreak = userData?['currentStreak'];
-            final streak = rawStreak is int
+          final rawStreak = userData?['currentStreak'];
+          final streak = rawStreak is int
               ? rawStreak
               : (rawStreak is num ? rawStreak.toInt() : 0);
-            final displayName =
+          final displayName =
               (userData?['displayName'] as String?) ?? 'Student';
 
           return SingleChildScrollView(
@@ -42,15 +41,15 @@ class DashboardScreen extends ConsumerWidget {
                 Text(
                   'Hey, $displayName 👋',
                   style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 const Text(
                   'Keep the streak going.',
-                  style:
-                      TextStyle(color: Colors.white38, fontSize: 14),
+                  style: TextStyle(color: Colors.white38, fontSize: 14),
                 ),
                 const SizedBox(height: 24),
 
@@ -66,8 +65,8 @@ class DashboardScreen extends ConsumerWidget {
                         sublabel: streak == 0
                             ? 'Start today'
                             : streak == 1
-                                ? '1 day'
-                                : '$streak days',
+                            ? '1 day'
+                            : '$streak days',
                       ),
                     ),
                     const SizedBox(width: 12),
@@ -152,9 +151,10 @@ class _SectionHeader extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-          color: Colors.white,
-          fontSize: 15,
-          fontWeight: FontWeight.w600),
+        color: Colors.white,
+        fontSize: 15,
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 }
@@ -191,18 +191,24 @@ class _StatCard extends StatelessWidget {
           Text(
             value,
             style: const TextStyle(
-                color: Colors.white,
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                height: 1),
+              color: Colors.white,
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+              height: 1,
+            ),
           ),
           const SizedBox(height: 4),
-          Text(label,
-              style: const TextStyle(
-                  color: Colors.white54, fontSize: 12)),
-            Text(sublabel,
-              style: TextStyle(
-                color: iconColor.withAlpha((0.8 * 255).round()), fontSize: 11)),
+          Text(
+            label,
+            style: const TextStyle(color: Colors.white54, fontSize: 12),
+          ),
+          Text(
+            sublabel,
+            style: TextStyle(
+              color: iconColor.withAlpha((0.8 * 255).round()),
+              fontSize: 11,
+            ),
+          ),
         ],
       ),
     );
@@ -251,20 +257,23 @@ class _ActionCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title,
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 14)),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                    ),
+                  ),
                   const SizedBox(height: 2),
-                  Text(subtitle,
-                      style: const TextStyle(
-                          color: Colors.white38, fontSize: 12)),
+                  Text(
+                    subtitle,
+                    style: const TextStyle(color: Colors.white38, fontSize: 12),
+                  ),
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right_rounded,
-                color: Colors.white38),
+            const Icon(Icons.chevron_right_rounded, color: Colors.white38),
           ],
         ),
       ),
@@ -303,13 +312,19 @@ class _PlaceholderAccuracyChart extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(topic,
-                        style: const TextStyle(
-                            color: Colors.white70, fontSize: 13)),
+                    Text(
+                      topic,
+                      style: const TextStyle(
+                        color: Colors.white70,
+                        fontSize: 13,
+                      ),
+                    ),
                     Text(
                       pct == 0.0 ? 'No data' : '${(pct * 100).round()}%',
                       style: const TextStyle(
-                          color: Colors.white38, fontSize: 12),
+                        color: Colors.white38,
+                        fontSize: 12,
+                      ),
                     ),
                   ],
                 ),
@@ -320,7 +335,8 @@ class _PlaceholderAccuracyChart extends StatelessWidget {
                     value: pct,
                     backgroundColor: AppColors.trackDark,
                     valueColor: const AlwaysStoppedAnimation<Color>(
-                        AppColors.primary),
+                      AppColors.primary,
+                    ),
                     minHeight: 6,
                   ),
                 ),

@@ -75,9 +75,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/subject/:subjectId',
-        builder: (context, state) => UnitListScreen(
-          subjectId: state.pathParameters['subjectId']!,
-        ),
+        builder: (context, state) =>
+            UnitListScreen(subjectId: state.pathParameters['subjectId']!),
       ),
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId',
@@ -89,9 +88,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId',
         // ✅ CORRECT
-builder: (context, state) => DrillScreen(
-  topicId: state.pathParameters['topicId']!,
-),
+        builder: (context, state) =>
+            DrillScreen(topicId: state.pathParameters['topicId']!),
       ),
       GoRoute(
         path: '/waec',
@@ -99,9 +97,8 @@ builder: (context, state) => DrillScreen(
       ),
       GoRoute(
         path: '/waec/:subjectId/exam',
-        builder: (context, state) => WaecExamScreen(
-          subjectId: state.pathParameters['subjectId']!,
-        ),
+        builder: (context, state) =>
+            WaecExamScreen(subjectId: state.pathParameters['subjectId']!),
       ),
       GoRoute(
         path: '/dashboard',
@@ -111,10 +108,7 @@ builder: (context, state) => DrillScreen(
         path: '/signin',
         builder: (context, state) => const SignInScreen(),
       ),
-      GoRoute(
-        path: '/about',
-        builder: (context, state) => const AboutScreen(),
-      ),
+      GoRoute(path: '/about', builder: (context, state) => const AboutScreen()),
     ],
   );
 });

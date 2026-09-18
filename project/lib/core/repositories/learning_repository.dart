@@ -18,7 +18,10 @@ final subjectsProvider = FutureProvider<List<Subject>>((ref) async {
 });
 
 /// Units by subjectId
-final unitsProvider = FutureProvider.family<List<Unit>, String>((ref, subjectId) async {
+final unitsProvider = FutureProvider.family<List<Unit>, String>((
+  ref,
+  subjectId,
+) async {
   final db = ref.read(_firestoreProvider);
   final snap = await db
       .collection('units')
@@ -29,7 +32,10 @@ final unitsProvider = FutureProvider.family<List<Unit>, String>((ref, subjectId)
 });
 
 /// Topics by unitId
-final topicsProvider = FutureProvider.family<List<Topic>, String>((ref, unitId) async {
+final topicsProvider = FutureProvider.family<List<Topic>, String>((
+  ref,
+  unitId,
+) async {
   final db = ref.read(_firestoreProvider);
   final snap = await db
       .collection('topics')
@@ -40,7 +46,10 @@ final topicsProvider = FutureProvider.family<List<Topic>, String>((ref, unitId) 
 });
 
 /// Drill questions for a topic (topicId)
-final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((ref, topicId) async {
+final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
+  ref,
+  topicId,
+) async {
   final db = ref.read(_firestoreProvider);
   final snap = await db
       .collection('questions')
@@ -50,7 +59,10 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((re
 });
 
 /// WAEC exam questions by subjectId
-final waecQuestionsProvider = FutureProvider.family<List<Question>, String>((ref, subjectId) async {
+final waecQuestionsProvider = FutureProvider.family<List<Question>, String>((
+  ref,
+  subjectId,
+) async {
   final db = ref.read(_firestoreProvider);
   final snap = await db
       .collection('questions')

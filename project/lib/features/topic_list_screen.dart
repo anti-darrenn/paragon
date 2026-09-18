@@ -7,8 +7,11 @@ import '../core/models/topic.dart';
 class TopicListScreen extends ConsumerWidget {
   final String subjectId;
   final String unitId;
-  const TopicListScreen(
-      {super.key, required this.subjectId, required this.unitId});
+  const TopicListScreen({
+    super.key,
+    required this.subjectId,
+    required this.unitId,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -38,22 +41,22 @@ class _TopicTile extends StatelessWidget {
   final Topic topic;
   final String subjectId;
   final String unitId;
-  const _TopicTile(
-      {required this.topic,
-      required this.subjectId,
-      required this.unitId});
+  const _TopicTile({
+    required this.topic,
+    required this.subjectId,
+    required this.unitId,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () => context.push(
-          '/subject/$subjectId/unit/$unitId/topic/${topic.id}'),
+      onTap: () =>
+          context.push('/subject/$subjectId/unit/$unitId/topic/${topic.id}'),
       title: Text(topic.name),
       subtitle: Text('${topic.questionCount} questions'),
       trailing: const Icon(Icons.chevron_right),
       tileColor: Theme.of(context).colorScheme.surface,
-      shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     );
   }
 }

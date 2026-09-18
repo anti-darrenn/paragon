@@ -41,8 +41,7 @@ class _UnitTile extends StatelessWidget {
       title: Text(unit.name),
       trailing: const Icon(Icons.chevron_right),
       tileColor: Theme.of(context).colorScheme.surface,
-      shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     );
   }
 }

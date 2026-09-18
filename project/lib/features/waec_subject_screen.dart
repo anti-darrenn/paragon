@@ -21,8 +21,7 @@ class WaecSubjectScreen extends ConsumerWidget {
           padding: const EdgeInsets.all(16),
           itemCount: subjects.length,
           separatorBuilder: (context, index) => const SizedBox(height: 8),
-          itemBuilder: (context, i) =>
-              _WaecSubjectTile(subject: subjects[i]),
+          itemBuilder: (context, i) => _WaecSubjectTile(subject: subjects[i]),
         ),
       ),
     );
@@ -46,8 +45,7 @@ class _WaecSubjectTile extends StatelessWidget {
       ),
       trailing: const Icon(Icons.chevron_right),
       tileColor: Theme.of(context).colorScheme.surface,
-      shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     );
   }
 }

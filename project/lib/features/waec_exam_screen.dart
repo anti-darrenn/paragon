@@ -44,17 +44,17 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   }
 
   void _confirmSubmit(List questions) {
-    final unanswered =
-        questions.length - _answers.length;
+    final unanswered = questions.length - _answers.length;
 
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
         backgroundColor: AppColors.surfaceDark,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text('Submit Exam?',
-            style: TextStyle(color: Colors.white)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: const Text(
+          'Submit Exam?',
+          style: TextStyle(color: Colors.white),
+        ),
         content: Text(
           unanswered > 0
               ? 'You have $unanswered unanswered question${unanswered > 1 ? 's' : ''}. Are you sure?'
@@ -64,8 +64,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel',
-                style: TextStyle(color: Colors.white54)),
+            child: const Text(
+              'Cancel',
+              style: TextStyle(color: Colors.white54),
+            ),
           ),
           ElevatedButton(
             onPressed: () {
@@ -75,10 +77,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.primary,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8)),
+                borderRadius: BorderRadius.circular(8),
+              ),
             ),
-            child: const Text('Submit',
-                style: TextStyle(color: Colors.white)),
+            child: const Text('Submit', style: TextStyle(color: Colors.white)),
           ),
         ],
       ),
@@ -88,8 +90,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   @override
   Widget build(BuildContext context) {
     // ← MATCH TO YOUR PROVIDER NAME in learning_repository.dart
-    final questionsAsync =
-        ref.watch(waecQuestionsProvider(widget.subjectId));
+    final questionsAsync = ref.watch(waecQuestionsProvider(widget.subjectId));
 
     return Scaffold(
       appBar: AppBar(
@@ -103,8 +104,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
           error: (e, st) => const Text('WAEC Exam'),
           data: (questions) => Text(
             '${_currentIndex + 1} / ${questions.length}',
-            style: const TextStyle(
-                fontSize: 16, fontWeight: FontWeight.w600),
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
         ),
         centerTitle: true,
@@ -116,9 +116,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               children: const [
                 Icon(Icons.timer_outlined, size: 16, color: Colors.white38),
                 SizedBox(width: 4),
-                Text('--:--',
-                    style:
-                        TextStyle(color: Colors.white38, fontSize: 13)),
+                Text(
+                  '--:--',
+                  style: TextStyle(color: Colors.white38, fontSize: 13),
+                ),
               ],
             ),
           ),
@@ -126,13 +127,14 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       ),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) =>
-            Center(child: Text('Error: $e')),
+        error: (e, _) => Center(child: Text('Error: $e')),
         data: (questions) {
           if (questions.isEmpty) {
             return const Center(
-              child: Text('No WAEC questions available for this subject.',
-                  style: TextStyle(color: Colors.white54)),
+              child: Text(
+                'No WAEC questions available for this subject.',
+                style: TextStyle(color: Colors.white54),
+              ),
             );
           }
 
@@ -157,7 +159,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 value: (_currentIndex + 1) / questions.length,
                 backgroundColor: AppColors.trackDark,
                 valueColor: const AlwaysStoppedAnimation<Color>(
-                    AppColors.primary),
+                  AppColors.primary,
+                ),
                 minHeight: 3,
               ),
 
@@ -167,7 +170,9 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 12, vertical: 8),
+                    horizontal: 12,
+                    vertical: 8,
+                  ),
                   itemCount: questions.length,
                   itemBuilder: (_, i) {
                     final isActive = i == _currentIndex;
@@ -185,14 +190,19 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                           color: isActive
                               ? AppColors.primary
                               : isAnswered
-                                  ? AppColors.primary.withAlpha((0.25 * 255).round())
-                                  : AppColors.trackDark,
+                              ? AppColors.primary.withAlpha(
+                                  (0.25 * 255).round(),
+                                )
+                              : AppColors.trackDark,
                           border: isActive
                               ? null
                               : Border.all(
-                                    color: isAnswered
-                                      ? AppColors.primary.withAlpha((0.5 * 255).round())
-                                      : AppColors.borderDark),
+                                  color: isAnswered
+                                      ? AppColors.primary.withAlpha(
+                                          (0.5 * 255).round(),
+                                        )
+                                      : AppColors.borderDark,
+                                ),
                         ),
                         child: Text(
                           '${i + 1}',
@@ -223,8 +233,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                         decoration: BoxDecoration(
                           color: AppColors.surfaceDark,
                           borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                              color: AppColors.borderDark),
+                          border: Border.all(color: AppColors.borderDark),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -235,16 +244,18 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                 child: Text(
                                   'WAEC ${q.year}',
                                   style: const TextStyle(
-                                      color: Colors.white38,
-                                      fontSize: 12),
+                                    color: Colors.white38,
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                             FullLatexView(
                               latex: q.text,
                               textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  height: 1.6),
+                                color: Colors.white,
+                                fontSize: 16,
+                                height: 1.6,
+                              ),
                             ),
                           ],
                         ),
@@ -259,10 +270,14 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                             child: AnimatedContainer(
                               duration: const Duration(milliseconds: 160),
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 14, vertical: 13),
+                                horizontal: 14,
+                                vertical: 13,
+                              ),
                               decoration: BoxDecoration(
                                 color: isSelected
-                                  ? AppColors.primary.withAlpha((0.1 * 255).round())
+                                    ? AppColors.primary.withAlpha(
+                                        (0.1 * 255).round(),
+                                      )
                                     : AppColors.surfaceDark,
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(
@@ -275,8 +290,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                               child: Row(
                                 children: [
                                   AnimatedContainer(
-                                    duration:
-                                        const Duration(milliseconds: 160),
+                                    duration: const Duration(milliseconds: 160),
                                     width: 28,
                                     height: 28,
                                     alignment: Alignment.center,
@@ -324,26 +338,26 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               // Navigation + submit
               SafeArea(
                 child: Padding(
-                  padding:
-                      const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
                   child: Row(
                     children: [
                       if (_currentIndex > 0)
                         Expanded(
                           child: OutlinedButton(
-                            onPressed: () =>
-                                _goToQuestion(_currentIndex - 1),
+                            onPressed: () => _goToQuestion(_currentIndex - 1),
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(
-                                  color: AppColors.borderDark),
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 14),
+                                color: AppColors.borderDark,
+                              ),
+                              padding: const EdgeInsets.symmetric(vertical: 14),
                               shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.circular(10)),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
                             ),
-                            child: const Text('← Prev',
-                                style: TextStyle(color: Colors.white70)),
+                            child: const Text(
+                              '← Prev',
+                              style: TextStyle(color: Colors.white70),
+                            ),
                           ),
                         ),
                       if (_currentIndex > 0) const SizedBox(width: 10),
@@ -356,13 +370,12 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor:
                                 _currentIndex < questions.length - 1
-                                    ? AppColors.primary
-                                    : AppColors.submitGreen,
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 14),
+                                ? AppColors.primary
+                                : AppColors.submitGreen,
+                            padding: const EdgeInsets.symmetric(vertical: 14),
                             shape: RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
                           ),
                           child: Text(
                             _currentIndex < questions.length - 1
@@ -419,24 +432,27 @@ class _ResultsView extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 24),
-          Text('Exam Complete',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold)),
+          Text(
+            'Exam Complete',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           const SizedBox(height: 8),
           Text(
             '$score / $total  ($pct%)',
             style: TextStyle(
-                color: scoreColor,
-                fontSize: 36,
-                fontWeight: FontWeight.bold),
+              color: scoreColor,
+              fontSize: 36,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           const SizedBox(height: 6),
           Text(
             pct >= 50 ? 'Pass' : 'Below pass mark',
-            style:
-                TextStyle(color: scoreColor, fontSize: 14),
+            style: TextStyle(color: scoreColor, fontSize: 14),
           ),
           const SizedBox(height: 32),
           SizedBox(
@@ -447,10 +463,13 @@ class _ResultsView extends StatelessWidget {
                 side: const BorderSide(color: AppColors.borderDark),
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
-              child: const Text('Review Answers',
-                  style: TextStyle(color: Colors.white70)),
+              child: const Text(
+                'Review Answers',
+                style: TextStyle(color: Colors.white70),
+              ),
             ),
           ),
           const SizedBox(height: 12),
@@ -462,11 +481,16 @@ class _ResultsView extends StatelessWidget {
                 backgroundColor: AppColors.primary,
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
-              child: const Text('Back to Subjects',
-                  style:
-                      TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
+              child: const Text(
+                'Back to Subjects',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             ),
           ),
         ],

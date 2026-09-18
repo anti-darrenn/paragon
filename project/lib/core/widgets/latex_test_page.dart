@@ -25,23 +25,46 @@ class LatexTestPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Full renderer (FullLatexView):', style: TextStyle(fontWeight: FontWeight.bold)),
+            const Text(
+              'Full renderer (FullLatexView):',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 8),
-            ...samples.map((s) => Container(
-                  margin: const EdgeInsets.only(bottom: 12),
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: const Color(0xFF0B2A12)),
-                  child: FullLatexView(latex: s, textStyle: const TextStyle(color: Colors.white)),
-                )),
+            ...samples.map(
+              (s) => Container(
+                margin: const EdgeInsets.only(bottom: 12),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: const Color(0xFF0B2A12),
+                ),
+                child: FullLatexView(
+                  latex: s,
+                  textStyle: const TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
             const SizedBox(height: 20),
-            const Text('Light renderer (MathText with useLightRenderer=true):', style: TextStyle(fontWeight: FontWeight.bold)),
+            const Text(
+              'Light renderer (MathText with useLightRenderer=true):',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 8),
-            ...samples.map((s) => Container(
-                  margin: const EdgeInsets.only(bottom: 12),
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: const Color(0xFF102233)),
-                  child: MathText(text: s, useLightRenderer: true, style: const TextStyle(color: Colors.white)),
-                )),
+            ...samples.map(
+              (s) => Container(
+                margin: const EdgeInsets.only(bottom: 12),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: const Color(0xFF102233),
+                ),
+                child: MathText(
+                  text: s,
+                  useLightRenderer: true,
+                  style: const TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
           ],
         ),
       ),

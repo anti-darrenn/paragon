@@ -48,8 +48,11 @@ final weeklyAttemptsCountProvider = StreamProvider<int>((ref) {
   if (user == null) return Stream.value(0);
 
   final now = DateTime.now();
-  final weekStart = DateTime(now.year, now.month, now.day)
-      .subtract(Duration(days: now.weekday - 1));
+  final weekStart = DateTime(
+    now.year,
+    now.month,
+    now.day,
+  ).subtract(Duration(days: now.weekday - 1));
 
   return FirebaseFirestore.instance
       .collection('attempts')

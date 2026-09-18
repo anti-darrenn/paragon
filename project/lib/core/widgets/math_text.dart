@@ -24,7 +24,11 @@ class MathText extends StatelessWidget {
 
     final s = text;
     if (!useLightRenderer) {
-      return FullLatexView(latex: s, textStyle: effectiveStyle, textAlign: textAlign);
+      return FullLatexView(
+        latex: s,
+        textStyle: effectiveStyle,
+        textAlign: textAlign,
+      );
     }
     final spans = <InlineSpan>[];
     final buf = StringBuffer();
@@ -59,7 +63,9 @@ class MathText extends StatelessWidget {
       }
 
       // Handle \( ... \) and \[ ... \]
-      if (s.codeUnitAt(pos) == 92 && pos + 1 < len && (s[pos + 1] == '(' || s[pos + 1] == '[')) {
+      if (s.codeUnitAt(pos) == 92 &&
+          pos + 1 < len &&
+          (s[pos + 1] == '(' || s[pos + 1] == '[')) {
         final open = s[pos + 1];
         final close = open == '(' ? r'\)' : r'\]';
         final start = pos + 2;
@@ -67,20 +73,22 @@ class MathText extends StatelessWidget {
         if (end != -1) {
           final mathContent = s.substring(start, end);
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Math.tex(
-              mathContent,
-              textStyle: effectiveStyle,
-              onErrorFallback: (FlutterMathException err) => Text(
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: Math.tex(
                 mathContent,
-                style: effectiveStyle.copyWith(
-                  color: Colors.redAccent,
-                  fontFamily: 'monospace',
+                textStyle: effectiveStyle,
+                onErrorFallback: (FlutterMathException err) => Text(
+                  mathContent,
+                  style: effectiveStyle.copyWith(
+                    color: Colors.redAccent,
+                    fontFamily: 'monospace',
+                  ),
                 ),
               ),
             ),
-          ));
+          );
           pos = end + 2; // skip the closing \) or \]
           continue;
         }
@@ -88,26 +96,30 @@ class MathText extends StatelessWidget {
       }
 
       // Handle $$ ... $$
-      if (s.codeUnitAt(pos) == 36 && pos + 1 < len && s.codeUnitAt(pos + 1) == 36) {
+      if (s.codeUnitAt(pos) == 36 &&
+          pos + 1 < len &&
+          s.codeUnitAt(pos + 1) == 36) {
         final start = pos + 2;
         final end = s.indexOf(r'$$', start);
         if (end != -1) {
           final mathContent = s.substring(start, end);
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Math.tex(
-              mathContent,
-              textStyle: effectiveStyle,
-              onErrorFallback: (FlutterMathException err) => Text(
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: Math.tex(
                 mathContent,
-                style: effectiveStyle.copyWith(
-                  color: Colors.redAccent,
-                  fontFamily: 'monospace',
+                textStyle: effectiveStyle,
+                onErrorFallback: (FlutterMathException err) => Text(
+                  mathContent,
+                  style: effectiveStyle.copyWith(
+                    color: Colors.redAccent,
+                    fontFamily: 'monospace',
+                  ),
                 ),
               ),
             ),
-          ));
+          );
           pos = end + 2;
           continue;
         }
@@ -123,20 +135,22 @@ class MathText extends StatelessWidget {
         if (j < len && s.codeUnitAt(j) == 36) {
           final mathContent = s.substring(pos + 1, j);
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Math.tex(
-              mathContent,
-              textStyle: effectiveStyle,
-              onErrorFallback: (FlutterMathException err) => Text(
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: Math.tex(
                 mathContent,
-                style: effectiveStyle.copyWith(
-                  color: Colors.redAccent,
-                  fontFamily: 'monospace',
+                textStyle: effectiveStyle,
+                onErrorFallback: (FlutterMathException err) => Text(
+                  mathContent,
+                  style: effectiveStyle.copyWith(
+                    color: Colors.redAccent,
+                    fontFamily: 'monospace',
+                  ),
                 ),
               ),
             ),
-          ));
+          );
           pos = j + 1;
           continue;
         }
@@ -155,12 +169,14 @@ class MathText extends StatelessWidget {
         if (end != -1) {
           final inner = s.substring(start, end);
           flushPlain();
-          spans.add(TextSpan(
-            text: inner,
-            style: isBold
-                ? effectiveStyle.copyWith(fontWeight: FontWeight.bold)
-                : effectiveStyle.copyWith(fontStyle: FontStyle.italic),
-          ));
+          spans.add(
+            TextSpan(
+              text: inner,
+              style: isBold
+                  ? effectiveStyle.copyWith(fontWeight: FontWeight.bold)
+                  : effectiveStyle.copyWith(fontStyle: FontStyle.italic),
+            ),
+          );
           pos = end + 1;
           continue;
         }
@@ -209,10 +225,12 @@ class MathText extends StatelessWidget {
             height = double.tryParse(inner) ?? 0;
           }
           flushPlain();
-          spans.add(WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: SizedBox(height: height),
-          ));
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: SizedBox(height: height),
+            ),
+          );
           continue;
         }
       }

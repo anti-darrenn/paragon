@@ -23,26 +23,28 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   bool _submitted = false;
 
   Future<void> _submit(List<Question> questions) async {
-  if (_selected == null) return;
+    if (_selected == null) return;
 
-  final q = questions[_index];
-  final user = ref.read(currentUserProvider);
+    final q = questions[_index];
+    final user = ref.read(currentUserProvider);
 
-  setState(() => _submitted = true);
+    setState(() => _submitted = true);
 
-  if (user != null) {
-    await ref.read(attemptRepositoryProvider).record(
-      userId: user.uid,
-      questionId: q.id,
-      topicId: q.topicId,
-      subjectId: q.subjectId,
-      selectedIndex: _selected!,
-      isCorrect: _selected == q.correctIndex,
-      source: 'drill',
-    );
-    await ref.read(userRepositoryProvider).updateStreak(user.uid);
+    if (user != null) {
+      await ref
+          .read(attemptRepositoryProvider)
+          .record(
+            userId: user.uid,
+            questionId: q.id,
+            topicId: q.topicId,
+            subjectId: q.subjectId,
+            selectedIndex: _selected!,
+            isCorrect: _selected == q.correctIndex,
+            source: 'drill',
+          );
+      await ref.read(userRepositoryProvider).updateStreak(user.uid);
+    }
   }
-}
 
   void _next(List<Question> questions) {
     if (_index < questions.length - 1) {
@@ -56,8 +58,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final questionsAsync =
-        ref.watch(drillQuestionsProvider(widget.topicId));
+    final questionsAsync = ref.watch(drillQuestionsProvider(widget.topicId));
 
     return Scaffold(
       appBar: AppBar(title: const Text('Drill')),
@@ -67,19 +68,20 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         data: (questions) {
           if (questions.isEmpty) {
             return const Center(
-                child: Text('No questions for this topic yet.'));
+              child: Text('No questions for this topic yet.'),
+            );
           }
           final q = questions[_index];
           final isLast = _index == questions.length - 1;
 
-
-          final progressValue = ( _index + (_submitted ? 1 : 0) ) / questions.length;
+          final progressValue =
+              (_index + (_submitted ? 1 : 0)) / questions.length;
 
           return SingleChildScrollView(
             padding: const EdgeInsets.all(20),
             child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 // Top progress bar
                 LinearProgressIndicator(
                   value: progressValue,
@@ -90,18 +92,16 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 const SizedBox(height: 12),
                 Text(
                   'Question ${_index + 1} of ${questions.length}',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodySmall
-                      ?.copyWith(color: Colors.white54),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(color: Colors.white54),
                 ),
                 const SizedBox(height: 12),
                 FullLatexView(
                   latex: q.text,
-                  textStyle: Theme.of(context)
-                      .textTheme
-                      .titleMedium
-                      ?.copyWith(fontWeight: FontWeight.w600),
+                  textStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
                 const SizedBox(height: 24),
                 ...List.generate(q.options.length, (i) {
@@ -117,8 +117,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   }
                   final optionColor = _submitted
                       ? (i == q.correctIndex
-                          ? AppColors.correct
-                          : (i == _selected ? AppColors.wrong : Colors.white70))
+                            ? AppColors.correct
+                            : (i == _selected
+                                  ? AppColors.wrong
+                                  : Colors.white70))
                       : (_selected == i ? Colors.white : Colors.white70);
 
                   return GestureDetector(
@@ -129,8 +131,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                       margin: const EdgeInsets.only(bottom: 12),
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        border:
-                            Border.all(color: borderColor, width: 1.5),
+                        border: Border.all(color: borderColor, width: 1.5),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: MathText(
@@ -148,9 +149,16 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                       color: AppColors.correct.withAlpha((0.1 * 255).round()),
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
-                          color: AppColors.correct.withAlpha((0.4 * 255).round())),
+                        color: AppColors.correct.withAlpha((0.4 * 255).round()),
+                      ),
                     ),
-                    child: FullLatexView(latex: q.explanation, textStyle: const TextStyle(color: Colors.white70, fontSize: 14)),
+                    child: FullLatexView(
+                      latex: q.explanation,
+                      textStyle: const TextStyle(
+                        color: Colors.white70,
+                        fontSize: 14,
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 16),
                 ],
@@ -159,20 +167,22 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: _submitted
-                        ? (isLast ? () => Navigator.of(context).pop() : () => _next(questions))
+                        ? (isLast
+                              ? () => Navigator.of(context).pop()
+                              : () => _next(questions))
                         : (_selected != null ? () => _submit(questions) : null),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primary,
-                      padding:
-                          const EdgeInsets.symmetric(vertical: 16),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
                     ),
                     child: Text(
                       _submitted
                           ? (isLast ? 'Done' : 'Next Question')
                           : 'Submit Answer',
                       style: const TextStyle(
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white),
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),

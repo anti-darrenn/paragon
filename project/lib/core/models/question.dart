@@ -31,7 +31,9 @@ class Question {
       subjectId: d['subjectId'] as String? ?? '',
       text: d['text'] as String,
       options: List<String>.from(d['options'] as List),
-      correctIndex: d['correctIndex'] != null ? (d['correctIndex'] as num).toInt() : -1,
+      correctIndex: d['correctIndex'] != null
+          ? (d['correctIndex'] as num).toInt()
+          : -1,
       explanation: d['explanation'] as String,
       source: d['source'] as String? ?? 'drill',
       year: d['year'] != null ? (d['year'] as num).toInt() : null,
