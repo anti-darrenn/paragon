@@ -61,27 +61,20 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     final user = ref.read(currentUserProvider);
     if (user == null) return;
 
-    final answered =
-        <
-          ({
-            String questionId,
-            String topicId,
-            String subjectId,
-            int selectedIndex,
-            bool isCorrect,
-          })
-        >[];
+    final answered = <AttemptDraft>[];
     for (int i = 0; i < questions.length; i++) {
       final selected = _answers[i];
       if (selected == null) continue;
       final q = questions[i];
-      answered.add((
-        questionId: q.id,
-        topicId: q.topicId,
-        subjectId: q.subjectId,
-        selectedIndex: selected,
-        isCorrect: selected == q.correctIndex,
-      ));
+      answered.add(
+        AttemptDraft(
+          questionId: q.id,
+          topicId: q.topicId,
+          subjectId: q.subjectId,
+          selectedIndex: selected,
+          isCorrect: selected == q.correctIndex,
+        ),
+      );
     }
     if (answered.isEmpty) return;
 

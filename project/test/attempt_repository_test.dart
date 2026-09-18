@@ -14,18 +14,9 @@ class _CountingFirestore extends FakeFirebaseFirestore {
   }
 }
 
-List<
-  ({
-    String questionId,
-    String topicId,
-    String subjectId,
-    int selectedIndex,
-    bool isCorrect,
-  })
->
-_drafts(int count) => List.generate(
+List<AttemptDraft> _drafts(int count) => List.generate(
   count,
-  (i) => (
+  (i) => AttemptDraft(
     questionId: 'q$i',
     topicId: 't1',
     subjectId: 's1',
@@ -77,6 +68,33 @@ void main() {
       expect(db.batchCalls, 2);
       final snap = await db.collection('attempts').get();
       expect(snap.docs.length, 451);
+    });
+  });
+
+  group('AttemptRepository.record', () {
+    test('delegates to recordBatch with a single-element list', () async {
+      final db = _CountingFirestore();
+      final repo = AttemptRepository(db);
+
+      await repo.record(
+        userId: 'u1',
+        questionId: 'q1',
+        topicId: 't1',
+        subjectId: 's1',
+        selectedIndex: 2,
+        isCorrect: false,
+        source: 'drill',
+      );
+
+      expect(db.batchCalls, 1);
+      final snap = await db.collection('attempts').get();
+      expect(snap.docs.length, 1);
+      final data = snap.docs.single.data();
+      expect(data['userId'], 'u1');
+      expect(data['questionId'], 'q1');
+      expect(data['selectedIndex'], 2);
+      expect(data['isCorrect'], false);
+      expect(data['source'], 'drill');
     });
   });
 }

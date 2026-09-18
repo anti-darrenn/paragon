@@ -1,6 +1,25 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// One question's worth of attempt data, minus [userId]/[source] — those are
+/// shared across a whole [AttemptRepository.recordBatch] call and supplied
+/// once, not per-draft.
+class AttemptDraft {
+  const AttemptDraft({
+    required this.questionId,
+    required this.topicId,
+    required this.subjectId,
+    required this.selectedIndex,
+    required this.isCorrect,
+  });
+
+  final String questionId;
+  final String topicId;
+  final String subjectId;
+  final int selectedIndex;
+  final bool isCorrect;
+}
+
 class AttemptRepository {
   const AttemptRepository(this._db);
   final FirebaseFirestore _db;
@@ -16,20 +35,20 @@ class AttemptRepository {
     required int selectedIndex,
     required bool isCorrect,
     required String source, // 'drill' or 'waec'
-  }) async {
-    await _db
-        .collection('attempts')
-        .add(
-          _attemptData(
-            userId: userId,
-            questionId: questionId,
-            topicId: topicId,
-            subjectId: subjectId,
-            selectedIndex: selectedIndex,
-            isCorrect: isCorrect,
-            source: source,
-          ),
-        );
+  }) {
+    return recordBatch(
+      userId: userId,
+      source: source,
+      attempts: [
+        AttemptDraft(
+          questionId: questionId,
+          topicId: topicId,
+          subjectId: subjectId,
+          selectedIndex: selectedIndex,
+          isCorrect: isCorrect,
+        ),
+      ],
+    );
   }
 
   /// Writes one attempt document per entry in [attempts], chunked into
@@ -38,16 +57,7 @@ class AttemptRepository {
   Future<void> recordBatch({
     required String userId,
     required String source,
-    required List<
-      ({
-        String questionId,
-        String topicId,
-        String subjectId,
-        int selectedIndex,
-        bool isCorrect,
-      })
-    >
-    attempts,
+    required List<AttemptDraft> attempts,
   }) async {
     for (var i = 0; i < attempts.length; i += _batchChunkSize) {
       final chunk = attempts.skip(i).take(_batchChunkSize);
