@@ -42,24 +42,14 @@ regardless of which future session it happened to get filed under.
 
 ## P0 — broken for users, data loss, or security
 
-### 0. `weeklyAttemptsCountProvider` — permanently broken, missing index
-- **Evidence:** `lib/core/providers/auth_provider.dart:46-59` queries
-  `attempts` filtered by `userId` (equality) and `timestamp` (range) with no
-  composite index for that combination. Reproduced directly: an Admin SDK
-  query with the same shape throws
-  `FAILED_PRECONDITION: The query requires an index`. `.cursorrules:448-449`
-  already documented this as known; it was never actually fixed.
-- **Why it matters to a student:** the Dashboard's "This week" stat shows
-  "—" forever for every user, always — not a loading flash, a permanent
-  dead stat on a screen every signed-in user sees.
-- **Status:** code-complete, deploy-blocked. `project/firestore.indexes.json`
-  declares the index and `firebase.json` wires it in (done in `chore: audit
-  hygiene fixes`). `firebase deploy --only firestore:indexes` fails with a
-  `401` from stale Firebase CLI auth that needs an interactive
-  `firebase login --reauth` — I can't complete this myself.
-- **Estimate:** 5 minutes, human-only (`firebase login --reauth`, then
-  `firebase deploy --only firestore:indexes` from `project/`).
-- **One-way door:** No.
+### 0. `weeklyAttemptsCountProvider` — missing index — done
+- Fixed: `firebase deploy --only firestore:indexes` deployed the composite
+  index (`userId` ASC + `timestamp` ASC, already declared in
+  `firestore.indexes.json`) — the earlier `401` had resolved on its own by
+  the time this was retried, no reauth needed. Confirmed live: the exact
+  query shape (`attempts` filtered by `userId` equality + `timestamp`
+  range) that previously threw `FAILED_PRECONDITION` now succeeds. Kept
+  here as the historical record.
 
 ### 0b. Guest sign-in was blocked — done
 - Anonymous Auth was disabled in the Firebase Console (confirmed

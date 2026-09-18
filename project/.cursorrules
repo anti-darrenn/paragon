@@ -445,8 +445,9 @@ These are explicitly deferred. Do not add them unless the developer asks:
 - iOS build (needs macOS — fully deferred)
 - Chemistry, Economics, Biology content (Phase 2 content expansion)
 
-The weeklyAttemptsCountProvider has a missing Firestore index for its current query.
-Do not add workarounds — the real fix is adding the index in Firebase Console.
+The weeklyAttemptsCountProvider's missing Firestore index is fixed (deployed via
+`firebase deploy --only firestore:indexes`, confirmed live against the real query
+shape) — see docs/audit/NEXT.md item #0 for the record.
 
 
 # ─────────────────────────────────────────────
