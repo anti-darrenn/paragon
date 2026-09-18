@@ -86,3 +86,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
 - `flutter test` passing 2/2 means there are almost no tests. Never report it as health.
 - Client-writable `users/{uid}` streak/xp/topicStats is a hard blocker on any leaderboard or
   gamification work. Do not ship those sessions until writes are server-controlled.
+
+  - Content correctness is a defect class, not a content task. Before shipping any feature that
+  reads a field, verify the field actually has values in production data — not that the code
+  reads it correctly.
