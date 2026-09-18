@@ -14,6 +14,7 @@ class UserRepository {
         'uid': user.uid,
         'email': user.email ?? '',
         'displayName': user.displayName ?? '',
+        'isAnonymous': user.isAnonymous,
         'createdAt': FieldValue.serverTimestamp(),
         'currentStreak': 0,
         'lastActiveDate': null,

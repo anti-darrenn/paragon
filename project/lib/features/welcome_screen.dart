@@ -45,6 +45,32 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
     }
   }
 
+  // Guest session via the shared anonymous-auth helper — an anonymous UID
+  // is a real UID, so nothing downstream needs to know the difference.
+  // Explicit navigation is required here: the router's redirect
+  // deliberately does NOT move a guest off /welcome (an anonymous user
+  // revisiting /welcome to upgrade must be allowed to stay put — see
+  // app_router.dart's isReallySignedIn check), so it can't distinguish
+  // that case from "just signed in as guest, should land on home."
+  Future<void> _handleGuestSignIn() async {
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+    try {
+      await signInAnonymously(ref);
+      if (mounted) context.go('/');
+    } on FirebaseAuthException catch (e) {
+      setState(
+        () => _errorMessage = e.message ?? "Couldn't start a guest session.",
+      );
+    } catch (e) {
+      setState(() => _errorMessage = 'Something went wrong. Try again.');
+    } finally {
+      if (mounted) setState(() => _isLoading = false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -285,10 +311,25 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
 
                               const SizedBox(height: 12),
 
-                              // TODO(design): "Continue as a Guest" omitted this
-                              // pass, per instruction — no guest flow exists
-                              // yet. Figma: Caption style, centered, below the
-                              // buttons.
+                              // ── Guest entry — Figma: Caption style,
+                              // centered, ghost/text button, no fill, no
+                              // border (spec §2.1.3). Routes into the WAEC
+                              // setup screen's guest restrictions once
+                              // signed in anonymously — see
+                              // waec_subject_screen.dart / waec_exam_setup_screen.dart.
+                              Center(
+                                child: TextButton(
+                                  onPressed: _isLoading
+                                      ? null
+                                      : _handleGuestSignIn,
+                                  child: Text(
+                                    'Browse as Guest',
+                                    style: AppTheme.caption.copyWith(
+                                      color: AppColors.textSecondaryDark,
+                                    ),
+                                  ),
+                                ),
+                              ),
                               const SizedBox(height: 40),
                             ],
                           ),
