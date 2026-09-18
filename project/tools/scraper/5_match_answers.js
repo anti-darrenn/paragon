@@ -1,13 +1,19 @@
 // matches scraped answers (data/answers_<subject>.json) onto existing firestore
 // question docs, then optionally backfills correctIndex / explanation / sourceId
 //
-//   node 5_match_answers.js            dry run — reports coverage, writes nothing
-//   node 5_match_answers.js --apply    performs the backfill
+//   node 5_match_answers.js <subject>              dry run — reports, writes nothing
+//   node 5_match_answers.js <subject> --apply      backfill answers
+//   node 5_match_answers.js <subject> --apply --fix-years   also correct stored year
 //
 // the seeder never stored a myschool id, so the join is on normalized question
 // text. a wrong match means a wrong answer taught as correct, so the gate is
-// deliberately strict: text + year + every option must line up, and correctIndex
-// is derived from the STORED option order, never the source's.
+// deliberately strict: every option must line up, and correctIndex is derived
+// from the STORED option order, never the source's.
+//
+// year is NOT part of the match key. 1_scrape.js trusted the url's exam_year,
+// but the site silently serves another year when it doesn't stock the one asked
+// for — so some stored years are wrong, and matching on year would hide that as
+// a text miss. year is reported (and optionally corrected) instead.
 
 const fs = require('fs');
 const path = require('path');
@@ -21,11 +27,10 @@ const SUBJECT_NAMES = {
   'further-mathematics': 'Further Mathematics',
 };
 
-// edit per run, or override: node 5_match_answers.js physics --apply
 const SUBJECT =
   process.argv.slice(2).find((a) => Object.keys(SUBJECT_NAMES).includes(a)) || 'mathematics';
-
 const APPLY = process.argv.includes('--apply');
+const FIX_YEARS = process.argv.includes('--fix-years');
 const BATCH_SIZE = 450;
 const DATA_DIR = path.join(__dirname, 'data');
 
@@ -69,7 +74,7 @@ function htmlToText(s) {
     .replace(/<\s*\/\s*p\s*>/gi, '\n\n');
   return stripHtml(withBreaks)
     .replace(/\r/g, '')
-    .replace(/[ \t ]+/g, ' ')
+    .replace(/[ \t]+/g, ' ')
     .split('\n')
     .map((l) => l.trim())
     .join('\n')
@@ -123,108 +128,205 @@ async function main() {
   const db = admin.firestore();
 
   const subjectName = SUBJECT_NAMES[SUBJECT];
-  if (!subjectName) throw new Error(`unknown SUBJECT slug: ${SUBJECT}`);
-
   const subjSnap = await db.collection('subjects').where('name', '==', subjectName).get();
   if (subjSnap.empty) throw new Error(`no subjects doc named ${subjectName}`);
   const subjectId = subjSnap.docs[0].id;
 
   const answers = loadAnswers();
-  console.log(`scraped records: ${answers.length}`);
-
   const qSnap = await db
     .collection('questions')
     .where('subjectId', '==', subjectId)
     .where('source', '==', 'waec')
     .get();
-  console.log(`firestore questions for ${subjectName}: ${qSnap.size}\n`);
 
-  // index the scrape by year + normalized text
-  const byKey = new Map();
-  const dupKeys = new Set();
+  console.log(`\n=== ${subjectName} ===`);
+  console.log(`scraped records:      ${answers.length}`);
+  console.log(`firestore questions:  ${qSnap.size}`);
+
+  // text-only index. waec reuses questions across years, so one text can map
+  // to several records — kept as a list rather than collapsed
+  const byText = new Map();
   for (const a of answers) {
-    const key = `${a.year}||${normalizeHtml(a.questionHtml)}`;
-    if (byKey.has(key)) dupKeys.add(key);
-    byKey.set(key, a);
+    const key = normalizeHtml(a.questionHtml);
+    if (!byText.has(key)) byText.set(key, []);
+    byText.get(key).push(a);
   }
 
-  const stats = {};
+  const reasons = {};
   const updates = [];
-  const bump = (year, reason) => {
-    stats[year] = stats[year] || { total: 0 };
-    stats[year][reason] = (stats[year][reason] || 0) + 1;
-  };
+  const yearShifts = new Map();
+  const misses = [];
+  let strictMatched = 0;
+  let yearMismatch = 0;
+  let yearUnknowable = 0;
+  const bump = (r) => (reasons[r] = (reasons[r] || 0) + 1);
 
   for (const doc of qSnap.docs) {
     const stored = doc.data();
-    const year = stored.year ?? 'unknown';
-    stats[year] = stats[year] || { total: 0 };
-    stats[year].total++;
+    const candidates = byText.get(normalizeText(stored.text)) || [];
 
-    const key = `${stored.year}||${normalizeText(stored.text)}`;
-    if (dupKeys.has(key)) {
-      bump(year, 'ambiguous_text');
-      continue;
-    }
-    const scraped = byKey.get(key);
-    if (!scraped) {
-      bump(year, 'no_text_match');
+    if (candidates.length === 0) {
+      bump('no_text_match');
+      misses.push({ year: stored.year, text: normalizeText(stored.text) });
       continue;
     }
 
-    const res = evaluate(stored, scraped);
-    if (res.reason) {
-      bump(year, res.reason);
+    // keep only candidates whose options fully line up with this doc
+    const passing = [];
+    let firstReason = null;
+    for (const c of candidates) {
+      const r = evaluate(stored, c);
+      if (r.reason) firstReason = firstReason || r.reason;
+      else passing.push({ record: c, correctIndex: r.correctIndex });
+    }
+    if (passing.length === 0) {
+      bump(firstReason || 'option_text_mismatch');
       continue;
     }
 
-    bump(year, 'matched');
-    if (scraped.hasImage) bump(year, 'matched_with_image');
+    // duplicates must agree on the answer, or we refuse to guess
+    const distinct = new Set(passing.map((p) => p.correctIndex));
+    if (distinct.size > 1) {
+      bump('conflicting_answers');
+      continue;
+    }
+
+    bump('matched');
+    const correctIndex = passing[0].correctIndex;
+
+    // would the old year-strict match have found this?
+    if (passing.some((p) => p.record.examYear === stored.year)) strictMatched++;
+
+    const years = new Set(passing.map((p) => p.record.examYear).filter(Number.isInteger));
+    const trueYear = years.size === 1 ? [...years][0] : null;
+    if (trueYear === null) {
+      yearUnknowable++;
+    } else if (trueYear !== stored.year) {
+      yearMismatch++;
+      const k = `${stored.year} -> ${trueYear}`;
+      yearShifts.set(k, (yearShifts.get(k) || 0) + 1);
+    }
+
+    // prefer a candidate that carries an explanation
+    const best = passing.find((p) => p.record.explanationHtml) || passing[0];
     updates.push({
       id: doc.id,
-      correctIndex: res.correctIndex,
-      explanation: htmlToText(scraped.explanationHtml || ''),
-      sourceId: scraped.sourceId,
+      correctIndex,
+      explanation: htmlToText(best.record.explanationHtml || ''),
+      sourceId: best.record.sourceId,
+      trueYear,
+      storedYear: stored.year,
+      hasImage: Boolean(best.record.hasImage),
     });
   }
 
-  const years = Object.keys(stats).sort();
-  console.log('year   total  matched  noText  optCnt  optTxt  ambig  noCorr  multi  (img)');
-  for (const y of years) {
-    const s = stats[y];
-    const cell = (n) => String(n || 0).padStart(6);
-    console.log(
-      `${String(y).padEnd(6)}${cell(s.total)}${cell(s.matched)}${cell(s.no_text_match)}` +
-        `${cell(s.option_count_mismatch)}${cell(s.option_text_mismatch)}` +
-        `${cell((s.ambiguous_correct || 0) + (s.ambiguous_text || 0))}` +
-        `${cell(s.no_correct_option)}${cell(s.multiple_correct)}${cell(s.matched_with_image)}`
-    );
+  const total = qSnap.size;
+  const pct = (n) => `${((n / total) * 100).toFixed(1)}%`;
+  const matched = updates.length;
+
+  console.log(`\n-- coverage --`);
+  console.log(`matched:              ${matched}  (${pct(matched)})`);
+  console.log(`  with explanation:   ${updates.filter((u) => u.explanation).length}`);
+  console.log(`  with image:         ${updates.filter((u) => u.hasImage).length}`);
+  console.log(`  recovered by ignoring year: ${matched - strictMatched}`);
+
+  console.log(`\n-- rejections --`);
+  for (const [r, n] of Object.entries(reasons).filter(([r]) => r !== 'matched').sort((a, b) => b[1] - a[1])) {
+    console.log(`${r.padEnd(22)}${String(n).padStart(5)}  (${pct(n)})`);
   }
 
-  const totalDocs = qSnap.size;
-  const matched = updates.length;
-  const withExpl = updates.filter((u) => u.explanation).length;
-  console.log(
-    `\nmatched ${matched}/${totalDocs} (${((matched / totalDocs) * 100).toFixed(1)}%)` +
-      ` — ${withExpl} with an explanation`
-  );
+  console.log(`\n-- stored year integrity (matched questions only) --`);
+  console.log(`year correct:         ${matched - yearMismatch - yearUnknowable}`);
+  console.log(`year WRONG:           ${yearMismatch}  (${pct(yearMismatch)} of all questions)`);
+  console.log(`year unknowable:      ${yearUnknowable}  (same text in multiple years)`);
+  if (yearShifts.size) {
+    console.log(`\nwrong-year distribution (stored -> actual):`);
+    [...yearShifts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 25)
+      .forEach(([k, n]) => console.log(`  ${k.padEnd(18)} ${n}`));
+  }
+
+  // a text miss is either "we never scraped it" or "our stored text is wrong".
+  // trigram similarity against the scrape separates the two, which decides
+  // whether stored text also needs re-scraping
+  if (misses.length) {
+    const tri = (s) => {
+      const set = new Set();
+      for (let i = 0; i < s.length - 2; i++) set.add(s.slice(i, i + 3));
+      return set;
+    };
+    const scrapedTexts = [...byText.keys()];
+    const scrapedTri = scrapedTexts.map(tri);
+    const inverted = new Map();
+    scrapedTri.forEach((set, idx) => {
+      for (const g of set) {
+        if (!inverted.has(g)) inverted.set(g, []);
+        inverted.get(g).push(idx);
+      }
+    });
+
+    let nearMiss = 0;
+    const nearExamples = [];
+    for (const m of misses) {
+      const mt = tri(m.text);
+      const counts = new Map();
+      for (const g of mt) for (const idx of inverted.get(g) || []) {
+        counts.set(idx, (counts.get(idx) || 0) + 1);
+      }
+      let best = null;
+      for (const [idx, shared] of counts) {
+        const sim = shared / (mt.size + scrapedTri[idx].size - shared);
+        if (!best || sim > best.sim) best = { idx, sim };
+      }
+      if (best && best.sim >= 0.85) {
+        nearMiss++;
+        if (nearExamples.length < 6) {
+          nearExamples.push({ stored: m.text, source: scrapedTexts[best.idx], sim: best.sim });
+        }
+      }
+    }
+
+    console.log(`\n-- text-miss analysis (${misses.length} misses) --`);
+    console.log(`near-identical match in scrape (>=0.85): ${nearMiss}  (${pct(nearMiss)})`);
+    console.log(`  -> stored text likely corrupt/edited, question IS on the site`);
+    console.log(`no close match at all:                   ${misses.length - nearMiss}`);
+    console.log(`  -> genuinely not scraped (site lacks it, or year not stocked)`);
+
+    if (nearExamples.length) {
+      console.log(`\nnear-miss examples (stored vs source):`);
+      nearExamples.forEach((e, i) => {
+        console.log(`  ${i + 1}. sim=${e.sim.toFixed(3)}`);
+        console.log(`     stored: ${e.stored.slice(0, 130)}`);
+        console.log(`     source: ${e.source.slice(0, 130)}`);
+      });
+    }
+    console.log(`\nno_text_match examples:`);
+    misses.slice(0, 6).forEach((s) => console.log(`  [${s.year}] ${s.text.slice(0, 110)}`));
+  }
 
   if (!APPLY) {
-    console.log('\ndry run — nothing written. rerun with --apply to backfill.');
+    console.log(`\ndry run — nothing written.`);
+    console.log(`  --apply             backfill correctIndex / explanation / sourceId / hasAnswer`);
+    console.log(`  --apply --fix-years also correct the ${yearMismatch} wrong stored years`);
     return;
   }
 
-  console.log(`\napplying ${matched} updates...`);
+  console.log(`\napplying ${matched} updates${FIX_YEARS ? ' (including year fixes)' : ''}...`);
   for (let i = 0; i < updates.length; i += BATCH_SIZE) {
     const chunk = updates.slice(i, i + BATCH_SIZE);
     const batch = db.batch();
     for (const u of chunk) {
-      batch.update(db.collection('questions').doc(u.id), {
+      const data = {
         correctIndex: u.correctIndex,
         explanation: u.explanation,
         sourceId: u.sourceId,
         hasAnswer: true,
-      });
+      };
+      if (FIX_YEARS && u.trueYear !== null && u.trueYear !== u.storedYear) {
+        data.year = u.trueYear;
+      }
+      batch.update(db.collection('questions').doc(u.id), data);
     }
     await batch.commit();
     console.log(`  committed ${Math.min(i + BATCH_SIZE, updates.length)}/${updates.length}`);
