@@ -470,7 +470,7 @@ Write a new topics_{subject}.json for each new subject before classifying.
 
 
 # ─────────────────────────────────────────────
-# 12. SESSION CONTEXT (current as of post-Session 9)
+# 12. SESSION CONTEXT (current as of post-Session 10)
 # ─────────────────────────────────────────────
 
 Session 8 is done: Physics (1769 questions) and Further Mathematics (801 questions)
@@ -496,9 +496,76 @@ added — there's no `videoId` for one to ever play. See `docs/audit/NEXT.md`
 for what this intentionally leaves open (notes-authoring path, real Markdown
 rendering, worked examples, video embedding).
 
-Session 10 is next. Phase 3 build sessions (planned):
+Session 10 is done, scoped to exactly what was named: setup screen + exam
+lockdown, plus the guest auth flow (called out as in-scope this session,
+bigger-scope option chosen explicitly). What shipped: `WaecExamSetupScreen`
+(year-range slider bounded by each subject's real min/max year — queried
+live via `waecYearRangeProvider`, not hardcoded — question-count slider with
+a live `count()` availability label that auto-snaps the count down if the
+selected range can't fill it, timer toggle+duration, shuffle toggle),
+`WaecExamScreen` rewritten to take its question set as route `extra`
+(`WaecExamSessionData`) instead of querying Firestore itself, a real
+per-second countdown with 5-min/1-min haptic cues and auto-submit at zero,
+an exit-confirmation dialog, and Firebase Anonymous Auth wired end-to-end
+(`signInAnonymously`, `isGuestProvider`, a "Browse as Guest" entry point on
+the welcome screen, router redirect updated so a guest can still reach
+`/welcome`/`/signin` to upgrade, and guest restrictions on the WAEC subject
+list — locked to Mathematics — and setup screen — timer forced off, shuffle
+forced on and hidden, upsell chip to sign in).
+
+Live-verified in browser as a real signed-in user end to end: subject
+unlock/lock, every setup control (including the auto-snap and the live
+per-subject year range — Further Mathematics correctly shows 2006-2025, not
+a hardcoded range), the countdown ticking in real time, the exit dialog, the
+submit-confirmation dialog's unanswered-count, the results screen, and
+attempt persistence (10 answered questions round-tripped to Firestore and
+were confirmed present before cleanup).
+
+Guest sign-in was initially blocked by Anonymous Authentication being
+disabled in the Firebase Console — confirmed independently via the Identity
+Toolkit REST API before anyone touched app code, and fixed by enabling it
+in the Console (Authentication → Sign-in method → Anonymous). Once
+unblocked, live-verified in browser as a fresh guest end to end: (1)
+"Browse as Guest" issues a real UID and creates `users/{uid}` with
+`isAnonymous: true`; (2) the WAEC subject list locks Further Maths/Physics
+with the "Sign in to choose your subject" snackbar and leaves Mathematics
+open; (3) the setup screen shows a locked "Untimed" timer, hides the
+shuffle toggle entirely, and renders the upsell chip; (4) a 10-question
+guest exam submitted cleanly and all 10 attempts round-tripped to Firestore
+with `source: 'waec'` and the guest's UID; (5) signing out and browsing as
+guest again issues a brand-new random UID — the previous guest's
+`users/{uid}` doc and attempts remain in Firestore but are permanently
+orphaned, with no UI path back to them (consistent with no account-linking
+existing yet, see deferred items below).
+
+Two real bugs surfaced and fixed during that live pass, both within scope
+of this session's own code (not pre-existing):
+- `users/{uid}` was never written with an `isAnonymous` field at all
+  (`UserRepository.createUserIfNew`) — fixed, now set from `user.isAnonymous`
+  on creation.
+- The router's own guest-permissive redirect (added this session so a guest
+  revisiting `/welcome`/`/signin` to upgrade isn't bounced home) had the
+  side effect of also leaving a *freshly* signed-in guest stranded on
+  `/welcome` — the redirect has no way to distinguish "just signed in,
+  should land on home" from "already a guest, revisiting to upgrade,
+  should stay put." Fixed by making `_handleGuestSignIn` navigate to `/`
+  explicitly after `signInAnonymously` succeeds, rather than relying on the
+  router to do it. Google/email sign-in were never affected (those become
+  "really signed in," which the existing redirect rule already handles).
+
+Deferred out of this session's stated scope (setup + lockdown only) — see
+`docs/audit/NEXT.md`: the Auth Upsell Sheet / `linkWithCredential`
+account-linking path (spec §2.1.10 vs §2.3.11 self-contradiction, resolved
+here by choosing the simpler no-linking interpretation), guest-gating on
+Dashboard/Drill/Profile screens (only WAEC was in scope), a
+`sessions/{examId}` collection plus `/exam/results`/`/exam/review`/`/exam/history`
+routes, mid-exam local persistence/resume (`shared_preferences` isn't a
+dependency yet), question flagging, and the deliberate `setState` +
+`Timer.periodic` deviation from the spec's literal `StateNotifier` wording.
+
+Phase 3 build sessions (planned):
   9   Learn mode — video embed + notes per topic ✅ done (shell only, see above)
-  10  Proper exam mode — configurable settings, lockdown
+  10  Proper exam mode — configurable settings, lockdown ✅ done (see above; guest flow fully live-verified after two in-session bugs were fixed)
   11  User profiles — username, avatar, country, subject picker
   12  Course tracking — accuracy by topic, progress bars, weak areas
   13  Gamification — XP, streak freeze, achievements

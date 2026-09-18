@@ -61,6 +61,29 @@ regardless of which future session it happened to get filed under.
   `firebase deploy --only firestore:indexes` from `project/`).
 - **One-way door:** No.
 
+### 0b. Guest sign-in was blocked — done
+- Anonymous Auth was disabled in the Firebase Console (confirmed
+  independently via a direct Identity Toolkit REST call before any app code
+  was touched); enabled by the user. Two real bugs then surfaced during the
+  live re-verification and were fixed in the same session, not deferred:
+  `UserRepository.createUserIfNew` never wrote an `isAnonymous` field
+  (`user_repository.dart`), and the router's own guest-permissive redirect
+  (added this session) left a *freshly* signed-in guest stranded on
+  `/welcome` instead of landing on home — fixed by having
+  `_handleGuestSignIn` (`welcome_screen.dart`) navigate to `/` explicitly
+  rather than relying on the redirect. Full guest walkthrough then
+  live-verified end to end, including a 10-question guest exam whose
+  attempts round-tripped to Firestore with `source: 'waec'` and the guest's
+  UID. Kept here as the historical record; see `.cursorrules` §12 for the
+  full verification detail.
+- **New, deliberately not fixed:** signing out and browsing as guest again
+  issues a brand-new anonymous UID; the previous guest's `users/{uid}` doc
+  and attempts stay in Firestore, permanently orphaned with no UI path back
+  to them. This is the expected consequence of no account-linking existing
+  yet (see the Session 10 follow-ups section below) — noted as a real
+  observed behavior, not filed as its own defect, since building
+  account-linking is already tracked there.
+
 ## P1 — blocks the next shippable slice
 
 ### 1. WAEC exam results are never persisted — done
@@ -170,6 +193,49 @@ regardless of which future session it happened to get filed under.
   package and the field together, when video content actually exists.
 - **Re-ranking check on all four:** absent functionality — no video/notes/
   explanation data exists anywhere to be broken. Correctly stay deferred.
+
+## Session 10 follow-ups (setup screen + lockdown + guest auth shipped; these were deliberately deferred)
+
+- **No account-linking on guest upgrade.** Tapping a sign-in entry point
+  while anonymous starts a fresh real-account session; it does not call
+  `linkWithCredential` to preserve the anonymous UID's data. Spec §2.1.10
+  ("guest state is discarded on upgrade in Phase 1") and §2.3.11
+  (`linkWithCredential` preserves it) contradict each other — resolved here
+  by choosing the simpler, no-linking interpretation and stating the choice
+  rather than silently picking one. Revisit if/when an Auth Upsell Sheet is
+  built, since a guest could plausibly answer several practice questions
+  worth preserving before upgrading.
+- **Guest gating only applied to WAEC.** Dashboard, Drill, and Profile
+  screens have no anonymous-auth-aware restrictions — a guest can currently
+  reach all of them exactly as a real user would (Drill has no source-level
+  guest lock at all; Dashboard/Profile weren't in this session's scope).
+  Not a regression — just genuinely unbuilt, since the session was scoped to
+  "setup screen and exam lockdown only."
+- **No `sessions/{examId}` collection or results/review/history routes.**
+  `/exam/results`, `/exam/review/:examId`, `/exam/history` from the spec
+  don't exist. The existing in-memory `_ResultsView` (pre-dates this
+  session) still just re-opens the live exam state when "Review Answers" is
+  tapped — no correct/incorrect marking, no lock against re-answering, no
+  persistence of the review state across a page reload. Live-verified this
+  session; confirmed unchanged from before, not a Session 10 regression.
+- **No mid-exam persistence/resume.** A page reload or crash mid-exam loses
+  all progress — `shared_preferences` isn't even a dependency yet. Spec
+  implies resumability; not attempted this session (setup + lockdown scope
+  only).
+- **No question flagging.** Not attempted — no UI, no Firestore field for it.
+- **`setState` + `Timer.periodic` instead of `StateNotifier`.** Spec's
+  literal wording implies a `StateNotifier`-based timer; this session used
+  a plain `Timer.periodic` inside the widget's `State` instead — simpler,
+  works, matches how the rest of this codebase's screens are built, but is
+  a deliberate deviation from the spec's letter, noted rather than silently
+  diverged from.
+- **Re-ranking check on all six:** absent functionality within a
+  deliberately scoped session, or (for the `StateNotifier` point) a stated
+  implementation-approach deviation — not live breakage. Correctly stay
+  deferred. The guest-sign-in-itself bug (and the `isAnonymous`-field and
+  post-sign-in-navigation bugs found alongside it) *was* live breakage in
+  what shipped, not absent scope — filed and closed as P0 item #0b above,
+  not here.
 
 ## Full re-ranking pass — everything else on the roadmap
 
