@@ -1,0 +1,48 @@
+# Nightly Paragon maintenance.
+#
+# Replaces the scheduled Cloud Functions we would otherwise need Blaze
+# for. The Admin SDK bypasses security rules and runs fine from CI, so
+# the only thing Cloud Functions was providing here was a cron.
+#
+# Requires one repository secret:
+#   FIREBASE_SERVICE_ACCOUNT — the full service account JSON, as text.
+# It grants full admin access; keep it in secrets, never in the repo.
+name: maintenance
+
+on:
+  schedule:
+    # 02:30 UTC = 03:30 WAT, comfortably off-peak for Nigerian students.
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Actually write changes (otherwise dry run)'
+        type: boolean
+        default: false
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install
+        working-directory: project/tools/admin
+        run: npm install --no-audit --no-fund
+
+      # Scheduled runs always apply. A manual run defaults to a dry run so
+      # the workflow can be exercised safely from the Actions tab.
+      - name: Run jobs
+        working-directory: project/tools/admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.apply }}" = "true" ]; then
+            node jobs.js --job=all --apply
+          else
+            node jobs.js --job=all
+          fi
