@@ -80,22 +80,30 @@ regardless of which future session it happened to get filed under.
 - Fixed: `8b355cc`, refactored in `c3b5cf1`. Kept here as the historical
   record; see `attempt_repository.dart`/`waec_exam_screen.dart`.
 
-### 1a. `drillQuestionsProvider` has no cap either
-- **Evidence:** `lib/core/repositories/learning_repository.dart:49-59` —
-  same unbounded-query shape as the WAEC provider had: no `.limit()`, loads
-  every question for a topic. Spec §2.2.7 explicitly specifies a 20-question
-  cap for drill sessions ("If more than 20: cap at 20 per session") — the
-  app doesn't do this.
-- **Why it matters:** DrillScreen is shipped and actively used today, not
-  future work. Sampled topics run 10–66+ questions per topic (five sampled
-  live: 10, 14, 22, 48, 66) — smaller blast radius than WAEC's hundreds, but
-  the same defect class, and the spec already specifies the exact number to
-  cap at.
-- **Estimate:** 15–20 minutes — same pattern as the WAEC fix, but simpler
-  (no year field to rotate on; a topic's questions have no natural ordering
-  to bias against, so a plain `.limit(20)` plus a shuffle of the returned
-  batch is enough — no random-pivot trick needed).
-- **One-way door:** No.
+### 1a. `drillQuestionsProvider` has no cap either — done
+- Fixed in `b416bea` (capped to 20 with a random document-id cursor and
+  wraparound, per spec §2.2.7). This entry sat open for three commits after
+  the fix had already shipped — worth noting as a process miss, not a code
+  one.
+
+### 1b. Every question was unanswerable — done
+- **What it was:** all 4,286 questions had `correctIndex: null` and an empty
+  `explanation`. Drill marked every submitted answer red and never showed a
+  correct option; every exam scored `0 / N (0%)` / "Below pass mark"; every
+  attempt ever written was `isCorrect: false`. The Dashboard's hardcoded
+  accuracy placeholder masked it.
+- **Why it outranked everything else here:** live breakage in shipped code,
+  and it made the product actively wrong rather than merely incomplete. It
+  also blocked Session 12 (accuracy over a 100%-false corpus) and Session 13
+  (XP for nothing verifiable).
+- **Fixed:** scraped answers + worked explanations from the original source
+  and backfilled 4,254 of 4,286 (99.3%) with `correctIndex`, `explanation`,
+  `sourceId` and `hasAnswer`. Verified in-browser: correct answers render
+  green, wrong picks red alongside the green correct one, explanations
+  render as formatted LaTeX, a 10-question exam scored 10/10 "Pass", and
+  attempts wrote `isCorrect: true`.
+- **Residue, tracked below:** the key is not authoritative (~4% source error
+  rate), and 32 questions remain unanswered and filtered out.
 
 ## P2 — spec drift / latent risk, worth fixing before it bites
 
@@ -226,6 +234,37 @@ regardless of which future session it happened to get filed under.
   post-sign-in-navigation bugs found alongside it) *was* live breakage in
   what shipped, not absent scope — filed and closed as P0 item #0b above,
   not here.
+
+## Answer-key follow-ups (backfill shipped; these are the known residue)
+
+- **The answer key has a measured ~4% error rate and is not authoritative.**
+  Hand-verifying 60 answers from the oldest years found 2 wrong at source
+  (a conditional-probability question marked 8/19 where 4/7 is correct, and
+  a "which is singular" question marking the identity matrix). The source
+  describes its own answers as AI-assisted. Mitigation shipped: students can
+  report a problem, writing to `flags`. **Query `flags` periodically** —
+  nothing in the app reads it, and `reason == 'wrong_answer'` is the signal
+  for which questions to re-check. This is the intended feedback loop, so it
+  only works if someone actually looks.
+- **32 questions have no verified answer** and are excluded from drill and
+  WAEC by `hasAnswer`. 11 were text misses (6 of those near-identical to a
+  source question, i.e. our stored text is slightly corrupt), 10 option
+  mismatches, 7 with no correct option marked at source, 2 conflicting, 1
+  ambiguous, 1 with multiple correct. Recoverable by hand if ever worth it;
+  not worth it at 0.7%.
+- **~700 questions depend on a diagram the app cannot show.** The scrape
+  flagged image-bearing questions (506 maths, 196 physics, 17 further maths
+  among matched). They now have correct answers but remain unanswerable on
+  their own terms, since question image support is still deferred. This is a
+  bigger content-quality problem than the 32 excluded ones and is currently
+  invisible — `hasImage` was captured in the scrape output but not stored on
+  the question documents, so the app cannot filter or label them.
+- **Physics explanations are thin** — 1,023 of 1,762 matched (58%), versus
+  92% and 94% for maths and further maths.
+- **Historical attempts predating the backfill are all `isCorrect: false`**
+  (29 documents, all test data). Not worth migrating, but any lifetime
+  accuracy metric should either window to post-backfill timestamps or
+  recompute by joining `questionId` against `questions.correctIndex`.
 
 ## Full re-ranking pass — everything else on the roadmap
 

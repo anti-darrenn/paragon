@@ -564,6 +564,36 @@ routes, mid-exam local persistence/resume (`shared_preferences` isn't a
 dependency yet), question flagging, and the deliberate `setState` +
 `Timer.periodic` deviation from the spec's literal `StateNotifier` wording.
 
+Unnumbered pass after Session 10 — the answer key. Every one of the 4,286
+seeded questions had `correctIndex: null` and an empty `explanation`, so no
+answer a student picked could ever be marked correct: drill turned every
+submission red, every exam scored 0%, and the whole `attempts` corpus was
+100% `isCorrect: false`. Live breakage in shipped code, and it silently
+blocked Sessions 12 and 13 (accuracy and XP over a corpus where nothing is
+correct) as well as any results/review screen.
+
+The answers were never scraped — `1_scrape.js` hardcodes `correctIndex: null`
+— but they were still available from the same source. `4_scrape_answers.js`
+crawls them from `__NUXT_DATA__` (myschool.ng is a Nuxt app now, so the old
+`.question-item` selectors match nothing), and `5_match_answers.js` joins
+them onto the existing docs on normalized question text, since the seeder
+never stored a source id. Backfilled `correctIndex`, `explanation`,
+`sourceId` and `hasAnswer` for **4,254 of 4,286 (99.3%)**.
+
+Three things worth remembering from it:
+- **Stored years were clean.** 0 wrong out of 4,254, so `1_scrape.js` never
+  hit the trap the new crawler did — the site silently serves a different
+  year when it doesn't stock the one requested, which is why the new crawler
+  reads `collection.exam_year` from the payload instead of trusting the URL.
+- **The key is not authoritative.** Hand-verifying 60 answers from the oldest
+  years found 2 wrong at source (~4% of the verifiable sample); the site
+  describes its own answers as AI-assisted. Question flagging shipped
+  alongside for exactly this reason. No UI string claims answers are
+  verified or official, and that should stay true.
+- **32 questions still have no verified answer** and are filtered out of
+  drill and WAEC by `hasAnswer`, rather than left in circulation where they
+  would always be marked wrong.
+
 Phase 3 build sessions (planned):
   9   Learn mode — video embed + notes per topic ✅ done (shell only, see above)
   10  Proper exam mode — configurable settings, lockdown ✅ done (see above; guest flow fully live-verified after two in-session bugs were fixed)
