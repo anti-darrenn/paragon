@@ -241,6 +241,10 @@ async function main() {
     return {
       sourceId: q.sourceId,
       year: q.year,
+      // authoritative year off the payload. equal to `year` by construction
+      // (listing records are filtered on it), but carried through explicitly
+      // so downstream can tell a verified year from an assumed one
+      examYear: q.examYear ?? null,
       subject: SUBJECT,
       questionHtml: q.questionHtml,
       options,
