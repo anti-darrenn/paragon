@@ -124,20 +124,39 @@ regardless of which future session it happened to get filed under.
 - **Estimate:** 30–45 minutes across the four files.
 - **One-way door:** No.
 
-### 3. `users/{uid}` write access is unrestricted at the field level
-- **Evidence:** `project/firestore.rules:10-12` — `allow read, write: if
-  request.auth != null && request.auth.uid == uid;` with no field restrictions.
-  `Firestore_Schema_Final.docx`'s entire security model assumes `currentStreak`,
-  `totalXP`, `level`, etc. are Cloud-Function-only once they exist.
-- **Why it matters:** today, a user can only inflate their own `currentStreak` —
-  low stakes with no leaderboard or rewards tied to it yet. But Session 13
-  (Gamification, per `.cursorrules:489`) will add XP/achievements on top of this
-  same document with these same rules unless it's revisited first.
-- **Re-ranking check:** latent design risk, not live breakage — nothing is
-  currently exploited. Stays P2.
-- **Estimate:** No code change needed now; ~1 hour of design work before Session
-  13 starts (decide which fields move to Cloud-Function-only rules).
-- **One-way door:** No.
+### 3. `users/{uid}` write access is unrestricted at the field level — done
+- **Fixed:** `firestore.rules` no longer has a blanket `write`. `create` is
+  limited to the exact seven fields `createUserIfNew` sends, with
+  `createdAt` forced to the real `serverTimestamp()` sentinel. `update` runs
+  through an **allow-list** (`clientWritableFields()`), not a deny-list — so
+  a field that doesn't exist yet (a future `totalXP`, `level`, `topicStats`)
+  is server-only from the moment it's added, with nothing to remember to
+  lock down first. `username`/`usernameKey` can only be set by claiming a
+  matching `usernames/{key}` reservation and are then immutable.
+  `currentStreak` can only move from N to N+1 (or reset to 1), and an
+  *increment* must also carry a `lastActiveDate` strictly later than the
+  one already stored — closing the gap where a client could otherwise
+  spam the same calendar day and climb the counter one legal-looking write
+  at a time.
+- **Not fixed by this:** the streak is still computed client-side from the
+  device clock, so within the ±1-day tolerance the rules allow (needed
+  because `request.time` is UTC and the client's date key is local), a
+  wrong or adjusted clock still produces a wrong streak. Correcting that
+  needs a server-side computation — see `tools/admin/jobs.js --job=streaks`,
+  which recomputes `currentStreak` from `attempts.timestamp` (a real
+  server timestamp) on a schedule. The rules are the real-time backstop;
+  that job is the source of truth.
+- **Verification gap:** this was reasoned through by hand and validated
+  with `firebase deploy --only firestore:rules --dry-run` (compiles
+  correctly against the live project), but never exercised dynamically —
+  the Firestore emulator needs Java, which this machine doesn't have. Test
+  against the emulator, or in a throwaway project, before trusting this
+  under load.
+- **Still open, deliberately deferred:** `Firestore_Schema_Final.docx`'s
+  leaderboard-exclusion and XP-history design still needs Cloud Functions
+  (or the `tools/admin` cron equivalent) to actually compute those fields
+  once Session 13 starts — the rules only stop a client from writing them
+  itself, they don't write them either.
 
 ## P3 — polish / hygiene
 

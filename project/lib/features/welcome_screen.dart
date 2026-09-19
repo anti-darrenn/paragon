@@ -59,6 +59,8 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
     });
     try {
       await signInAnonymously(ref);
+      // '/' is the dashboard — a guest lands on the same home surface a
+      // signed-in user does.
       if (mounted) context.go('/');
     } on FirebaseAuthException catch (e) {
       setState(
@@ -365,9 +367,10 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                         // this pass per instruction. Real contact details
                         // (email/phone) exist in the Figma frame but are not
                         // wired in yet; awaiting explicit sign-off to use them.
-                        // TODO(design): "By signing in you agree to our Terms
-                        // and Privacy Policy." line also omitted this pass —
-                        // no Terms/Privacy destinations exist yet.
+
+                        // Consent line — the destinations now exist at
+                        // /terms and /privacy, both readable signed out.
+                        const _ConsentLine(),
                         const SizedBox(height: 8),
                       ],
                     ),
@@ -544,6 +547,65 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
           ),
         );
       },
+    );
+  }
+}
+
+
+/// "By continuing you agree to our Terms and Privacy Policy." — shown
+/// above the fold's end on the welcome screen, with both destinations
+/// reachable without signing in.
+class _ConsentLine extends StatelessWidget {
+  const _ConsentLine();
+
+  @override
+  Widget build(BuildContext context) {
+    final linkStyle = AppTheme.caption.copyWith(
+      color: AppColors.primary,
+      decoration: TextDecoration.underline,
+      decorationColor: AppColors.primary,
+    );
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Wrap(
+        alignment: WrapAlignment.center,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: [
+          Text(
+            'By continuing you agree to our ',
+            style: AppTheme.caption.copyWith(
+              color: AppColors.textSecondaryDark,
+            ),
+          ),
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => context.push('/terms'),
+              child: Text('Terms', style: linkStyle),
+            ),
+          ),
+          Text(
+            ' and ',
+            style: AppTheme.caption.copyWith(
+              color: AppColors.textSecondaryDark,
+            ),
+          ),
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => context.push('/privacy'),
+              child: Text('Privacy Policy', style: linkStyle),
+            ),
+          ),
+          Text(
+            '.',
+            style: AppTheme.caption.copyWith(
+              color: AppColors.textSecondaryDark,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

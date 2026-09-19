@@ -1,0 +1,16 @@
+{
+  "name": "paragon-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scheduled maintenance jobs (Blaze-free alternative to Cloud Functions)",
+  "main": "jobs.js",
+  "scripts": {
+    "guests": "node jobs.js --job=guests",
+    "orphans": "node jobs.js --job=orphans",
+    "streaks": "node jobs.js --job=streaks",
+    "all": "node jobs.js --job=all"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}

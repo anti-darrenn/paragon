@@ -1,0 +1,61 @@
+# Continuation of the question reclassification (see
+# project/tools/scraper/reclassify.js for why this exists).
+#
+# Groq's free tier caps usage at 200,000 tokens, and observed behaviour
+# (a fresh classification succeeded on Physics minutes after Mathematics
+# hit the cap) suggests it's a rolling ~24h window rather than a fixed
+# daily reset — tokens trickle back continuously as old requests age out,
+# rather than refilling in one lump at midnight. Running once a day would
+# only ever capture whatever fits in a single moment of that window;
+# running every couple of hours captures far more of the trickle. Each
+# run is cheap: reclassify.js exits in seconds when the quota is dry
+# rather than erroring or spinning.
+#
+# reclassify.js is fully resumable and idempotent — it marks each subject
+# done once applied and skips it on every future run — so there's no risk
+# of duplicate writes from running this often.
+#
+# Delete this workflow once tools/scraper/data/reclassify_*.done.json
+# exists for every subject with seeded questions.
+#
+# Requires two repository secrets:
+#   GROQ_API_KEY             — same key used by the scraper pipeline
+#   FIREBASE_SERVICE_ACCOUNT — full service account JSON, as text
+name: reclassify-questions
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  reclassify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install
+        working-directory: project/tools/scraper
+        run: npm install --no-audit --no-fund
+
+      - name: Continue reclassification
+        working-directory: project/tools/scraper
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node reclassify.js --apply
+
+      # Progress/done markers must survive between runs, or every run
+      # starts over. They're data, not code — commit them back.
+      - name: Commit progress
+        working-directory: project/tools/scraper
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/reclassify_*.json
+          git diff --cached --quiet || git commit -m "chore(scraper): reclassification progress [skip ci]"
+          git push
