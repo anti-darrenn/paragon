@@ -7,14 +7,168 @@ service cloud.firestore {
     match /topics/{id}    { allow read: if request.auth != null; }
     match /questions/{id} { allow read: if request.auth != null; }
 
+    // ── USER DOCUMENTS ──────────────────────────────────────────
+    // Owner-only, but no longer a blanket `write`: creation is limited to
+    // an exact field set, username/usernameKey can only be set by
+    // claiming a matching reservation and are then immutable, and the
+    // streak counter can only move one plausible step at a time. Every
+    // other field client code writes today (displayName, selectedSubjects,
+    // profile) is allow-listed explicitly in `clientWritableFields` below;
+    // anything not named there — including fields that don't exist yet,
+    // like a future XP or topicStats — is server-only by construction.
     match /users/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      allow read: if isOwner(uid);
+      allow delete: if isOwner(uid);
+
+      // Provisioning writes exactly these seven fields — see
+      // UserRepository.createUserIfNew. Restricted to that exact set
+      // (not just "no username yet") so a client cannot `create` the
+      // document directly with an extra field — e.g. a pre-set `level`
+      // or `topicStats` — that then sits untouched forever, since
+      // `onlyClientWritableFields` below only inspects what *changes* on
+      // an update, never what already exists from creation.
+      allow create: if isOwner(uid)
+        && request.resource.data.keys().hasOnly([
+             'uid', 'email', 'displayName', 'isAnonymous',
+             'createdAt', 'currentStreak', 'lastActiveDate'
+           ])
+        && request.resource.data.uid == uid
+        && request.resource.data.currentStreak == 0
+        // Forces the real serverTimestamp() sentinel rather than a
+        // client-supplied value — the standard Firestore Rules idiom for
+        // verifying serverTimestamp() was actually used.
+        && request.resource.data.createdAt == request.time;
+
+      allow update: if isOwner(uid)
+        && usernameWriteIsValid(uid)
+        && onlyClientWritableFields()
+        && streakWriteIsPlausible();
+    }
+
+    // Allow-list, not a deny-list. Anything not named here cannot be
+    // written from a client at all — including fields that do not exist
+    // yet. When XP, levels and topicStats arrive they are therefore
+    // server-only by default, and shipping a leaderboard does not depend
+    // on somebody remembering to lock them first.
+    function clientWritableFields() {
+      return [
+        'displayName', 'selectedSubjects', 'profile', 'updatedAt',
+        'username', 'usernameKey',
+        'currentStreak', 'lastActiveDate',
+        'email', 'isAnonymous'
+      ];
+    }
+
+    function onlyClientWritableFields() {
+      return request.resource.data.diff(resource.data).affectedKeys()
+        .hasOnly(clientWritableFields());
+    }
+
+    // The streak is still computed on the client, so it is still only as
+    // trustworthy as the device clock. These constraints remove the
+    // attacks that actually matter:
+    //
+    //   - setting the counter to an arbitrary number: it may only be 1,
+    //     or exactly one more than its current value
+    //   - backdating: lastActiveDate must be within a day of the server's
+    //     own clock, so a device cannot claim a week of activity by
+    //     winding itself back
+    //   - replaying today: an *increment* (not a reset to 1) must also
+    //     carry a lastActiveDate strictly later than the one already
+    //     stored, or a client could call updateStreak in a tight loop —
+    //     same calendar day, currentStreak 1, 2, 3, ... — and every
+    //     individual write would satisfy "exactly one more than before"
+    //     and "within a day of now" without this. YYYY-MM-DD sorts
+    //     lexically the same as chronologically, so plain string `>`
+    //     is enough; no date parsing needed.
+    //
+    // A day of tolerance rather than an exact match because request.time
+    // is UTC and the client formats its local date; in WAT (UTC+1) the
+    // two disagree for an hour every night. That window is wide enough
+    // for any timezone and far too narrow to fabricate a streak.
+    function streakWriteIsPlausible() {
+      let after = request.resource.data;
+      let touchesStreak =
+        request.resource.data.diff(resource.data).affectedKeys()
+          .hasAny(['currentStreak', 'lastActiveDate']);
+      let previousStreak = resource.data.get('currentStreak', 0);
+      let previousDate = resource.data.get('lastActiveDate', '');
+
+      return !touchesStreak || (
+        after.currentStreak is int
+        && after.currentStreak > 0
+        && after.lastActiveDate is string
+        && dateKeyIsAboutNow(after.lastActiveDate)
+        && (
+          after.currentStreak == 1
+          || (
+            after.currentStreak == previousStreak + 1
+            && after.lastActiveDate > previousDate
+          )
+        )
+      );
+    }
+
+    function twoDigits(n) {
+      return n < 10 ? '0' + string(n) : string(n);
+    }
+
+    function dateKeyFor(t) {
+      return string(t.year()) + '-' + twoDigits(t.month())
+        + '-' + twoDigits(t.day());
+    }
+
+    function dateKeyIsAboutNow(key) {
+      return key == dateKeyFor(request.time)
+        || key == dateKeyFor(request.time - duration.value(1, 'd'))
+        || key == dateKeyFor(request.time + duration.value(1, 'd'));
+    }
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    // Governs the username/usernameKey pair on an update. Three cases:
+    //
+    //   - the document already has a username -> it is immutable
+    //   - the update does not mention one     -> nothing to check
+    //   - the update claims one               -> it must match a
+    //     reservation this user actually holds
+    //
+    // The last case is why usernames are lower-cased and nothing else:
+    // rules can compute `.lower()` but cannot strip characters, so any
+    // richer normalisation would be unverifiable here and uniqueness
+    // would collapse back to a client-side promise.
+    function usernameWriteIsValid(uid) {
+      let after = request.resource.data;
+      let hadUsername = 'username' in resource.data
+        && resource.data.username is string
+        && resource.data.username.size() > 0;
+
+      return hadUsername
+        ? (after.username == resource.data.username
+            && after.usernameKey == resource.data.usernameKey)
+        : (!('username' in after) && !('usernameKey' in after))
+          || claimsOwnReservation(uid, after);
+    }
+
+    function claimsOwnReservation(uid, after) {
+      return after.username is string
+        && after.usernameKey is string
+        && after.username.lower() == after.usernameKey
+        && exists(/databases/$(database)/documents/usernames/$(after.usernameKey))
+        && get(/databases/$(database)/documents/usernames/$(after.usernameKey)).data.uid == uid;
     }
 
     match /attempts/{id} {
       allow create: if request.auth != null
           && request.resource.data.userId == request.auth.uid;
       allow read: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      // Delete-own exists so account deletion can actually remove a
+      // student's practice history. Still no update: an attempt is a
+      // record of what happened and must not be edited after the fact.
+      allow delete: if request.auth != null
           && resource.data.userId == request.auth.uid;
     }
 
@@ -26,17 +180,37 @@ service cloud.firestore {
     match /flags/{id} {
       allow create: if request.auth != null
           && request.resource.data.userId == request.auth.uid;
-      allow read, update, delete: if false;
+      // Read-own and delete-own, narrowly: a deleting user has to be able
+      // to find and remove reports that carry their uid, and the client
+      // cannot delete what it cannot query. Still no update, and still no
+      // reading anyone else's — the admin path is unaffected.
+      allow read, delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow update: if false;
     }
 
     // ── USERNAME REGISTRY (uniqueness enforcement) ───────────────
+    // This collection *is* the uniqueness guarantee. A reservation can
+    // only be created, never changed or released, so the first writer of
+    // a key keeps it. `users/{uid}` will not accept a username unless a
+    // reservation here already names that uid (see claimsOwnReservation).
     match /usernames/{normalised} {
-      // Any authenticated user can read (for availability checks)
+      // Readable by any signed-in user, for the availability check.
+      // Note this makes the username -> uid map enumerable; see the
+      // privacy policy, which says usernames are public.
       allow read: if request.auth != null;
-      // Only the owner can create their own username entry
+
       allow create: if request.auth != null
-        && request.resource.data.uid == request.auth.uid;
-      // Usernames are permanent — no update or delete
+        // Exactly these two fields, nothing smuggled alongside.
+        && request.resource.data.keys().hasOnly(['uid', 'raw'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.raw is string
+        // The document id must be the normalised form of the spelling
+        // being claimed, so a user cannot park key X while displaying Y.
+        && request.resource.data.raw.lower() == normalised
+        && normalised.matches('^[a-z0-9_]{4,20}$');
+
+      // Permanent: no renaming, no releasing, no reuse after deletion.
       allow update, delete: if false;
     }
   }
