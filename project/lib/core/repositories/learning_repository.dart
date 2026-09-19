@@ -89,7 +89,12 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
   topicId,
 ) async {
   final db = ref.read(_firestoreProvider);
-  final base = db.collection('questions').where('topicId', isEqualTo: topicId);
+  // hasAnswer only — a question with no verified answer can never be marked
+  // correct, which is the defect this whole pass exists to remove
+  final base = db
+      .collection('questions')
+      .where('topicId', isEqualTo: topicId)
+      .where('hasAnswer', isEqualTo: true);
 
   final randomStart = _randomAutoId(Random());
   final forward = await base
@@ -133,7 +138,8 @@ final waecYearRangeProvider = FutureProvider.family<(int min, int max), String>(
     final base = db
         .collection('questions')
         .where('subjectId', isEqualTo: subjectId)
-        .where('source', isEqualTo: 'waec');
+        .where('source', isEqualTo: 'waec')
+        .where('hasAnswer', isEqualTo: true);
 
     final earliest = await base.orderBy('year').limit(1).get();
     final latest = await base.orderBy('year', descending: true).limit(1).get();
@@ -185,6 +191,7 @@ final waecAvailableCountProvider =
           .collection('questions')
           .where('subjectId', isEqualTo: query.subjectId)
           .where('source', isEqualTo: 'waec')
+          .where('hasAnswer', isEqualTo: true)
           .where('year', isGreaterThanOrEqualTo: query.yearFrom)
           .where('year', isLessThanOrEqualTo: query.yearTo)
           .count()
@@ -243,7 +250,8 @@ final waecExamQuestionsProvider =
       final base = db
           .collection('questions')
           .where('subjectId', isEqualTo: config.subjectId)
-          .where('source', isEqualTo: 'waec');
+          .where('source', isEqualTo: 'waec')
+          .where('hasAnswer', isEqualTo: true);
 
       if (!config.shuffle) {
         final snap = await base
