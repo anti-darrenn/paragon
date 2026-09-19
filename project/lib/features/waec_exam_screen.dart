@@ -11,6 +11,7 @@ import '../core/repositories/attempt_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
+import '../core/widgets/report_problem_button.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -52,6 +53,9 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   // attempts are recorded once per exam — the retry button still works, since
   // this only flips on a successful write
   bool _attemptsSaved = false;
+  // set when the student taps "Review Answers", which drops back into the
+  // exam view. only used to offer the report affordance there
+  bool _reviewMode = false;
 
   Timer? _ticker;
   int _remainingSeconds = 0;
@@ -359,7 +363,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               saving: _saving,
               saveFailed: _saveFailed,
               onRetry: () => _saveAttempts(questions),
-              onReview: () => setState(() => _examSubmitted = false),
+              onReview: () => setState(() {
+                _examSubmitted = false;
+                _reviewMode = true;
+              }),
               onExit: () => context.go('/waec'),
             )
           : _buildActiveExam(questions),
@@ -539,6 +546,11 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                     ),
                   );
                 }),
+                if (_reviewMode)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: ReportProblemButton(questionId: q.id),
+                  ),
               ],
             ),
           ),

@@ -7,6 +7,7 @@ import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
+import '../core/widgets/report_problem_button.dart';
 import '../core/repositories/user_repository.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
@@ -164,6 +165,14 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   ),
                   const SizedBox(height: 16),
                 ],
+                // outside the explanation block on purpose — most questions
+                // have no worked solution, and those are the ones most worth
+                // reporting
+                if (_submitted)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: ReportProblemButton(questionId: q.id),
+                  ),
                 const SizedBox(height: 24),
                 SizedBox(
                   width: double.infinity,

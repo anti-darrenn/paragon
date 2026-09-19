@@ -18,6 +18,17 @@ service cloud.firestore {
           && resource.data.userId == request.auth.uid;
     }
 
+    // ── QUESTION FLAGS (student-reported problems) ───────────────
+    // The answer key is scraped from a third party with a measured error
+    // rate, so students reporting a wrong answer is how we find the bad
+    // ones. Write-only from the client: nothing reads these in the app,
+    // they're queried with the Admin SDK, which bypasses rules.
+    match /flags/{id} {
+      allow create: if request.auth != null
+          && request.resource.data.userId == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+
     // ── USERNAME REGISTRY (uniqueness enforcement) ───────────────
     match /usernames/{normalised} {
       // Any authenticated user can read (for availability checks)
