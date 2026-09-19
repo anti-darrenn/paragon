@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../core/providers/auth_provider.dart';
 import '../core/theme/app_colors.dart';
+import '../core/theme/app_theme.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -16,10 +17,17 @@ class DashboardScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dashboard'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new, size: 18),
-          onPressed: () => context.go('/'),
-        ),
+        // No hardcoded leading: this screen is the app's home ('/'), where
+        // a back arrow pointing at '/' would be a no-op. When it is reached
+        // by a push instead, Material's automaticallyImplyLeading supplies
+        // a real back button on its own.
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_outlined, size: 22),
+            tooltip: 'Settings',
+            onPressed: () => context.push('/settings'),
+          ),
+        ],
       ),
       body: userDataAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -29,8 +37,14 @@ class DashboardScreen extends ConsumerWidget {
           final streak = rawStreak is int
               ? rawStreak
               : (rawStreak is num ? rawStreak.toInt() : 0);
-          final displayName =
-              (userData?['displayName'] as String?) ?? 'Student';
+          // UserRepository stores `displayName: user.displayName ?? ''`, so
+          // an anonymous user — and an email sign-up that never set a name
+          // — has an empty string here, not null. A null-only fallback
+          // therefore greeted them as "Hey,  👋". Treat blank as missing.
+          final storedName = (userData?['displayName'] as String?)?.trim();
+          final displayName = (storedName == null || storedName.isEmpty)
+              ? 'Student'
+              : storedName;
 
           return SingleChildScrollView(
             padding: const EdgeInsets.all(16),
@@ -107,7 +121,7 @@ class DashboardScreen extends ConsumerWidget {
                   iconColor: AppColors.primary,
                   title: 'Back to Subjects',
                   subtitle: 'Pick a topic and keep drilling',
-                  onTap: () => context.go('/'),
+                  onTap: () => context.go('/subjects'),
                 ),
                 const SizedBox(height: 10),
                 _ActionCard(
@@ -122,12 +136,8 @@ class DashboardScreen extends ConsumerWidget {
                 // ── Accuracy by topic (placeholder) ───────────────────
                 _SectionHeader('Accuracy by Topic'),
                 const SizedBox(height: 4),
-                const Text(
-                  'Full tracking starts when you complete drills. (Detailed stats in next update.)',
-                  style: TextStyle(color: Colors.white38, fontSize: 12),
-                ),
-                const SizedBox(height: 14),
-                const _PlaceholderAccuracyChart(),
+                const SizedBox(height: 10),
+                const _AccuracyEmptyState(),
                 const SizedBox(height: 32),
               ],
             ),
@@ -281,69 +291,53 @@ class _ActionCard extends StatelessWidget {
   }
 }
 
-class _PlaceholderAccuracyChart extends StatelessWidget {
-  const _PlaceholderAccuracyChart();
+class _AccuracyEmptyState extends StatelessWidget {
+  const _AccuracyEmptyState();
 
-  static const _placeholderTopics = [
-    ('Quadratic Equations', 0.0),
-    ('Indices & Logarithms', 0.0),
-    ('Trigonometry', 0.0),
-    ('Statistics', 0.0),
-    ('Circle Theorems', 0.0),
-  ];
-
+  // Replaces a chart that listed five hardcoded topic names — "Quadratic
+  // Equations", "Trigonometry" and so on — each showing "No data". They
+  // were invented, not read from Firestore: not the user's topics, not
+  // even necessarily topics that exist. Per-topic accuracy is real work
+  // (it needs topicStats, which nothing writes yet), and until it exists
+  // an honest empty state beats a convincing fake one.
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppColors.surfaceDark,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: AppColors.borderDark),
       ),
       child: Column(
-        children: _placeholderTopics.map((entry) {
-          final (topic, pct) = entry;
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      topic,
-                      style: const TextStyle(
-                        color: Colors.white70,
-                        fontSize: 13,
-                      ),
-                    ),
-                    Text(
-                      pct == 0.0 ? 'No data' : '${(pct * 100).round()}%',
-                      style: const TextStyle(
-                        color: Colors.white38,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(
+                Icons.insights_outlined,
+                size: 18,
+                color: AppColors.textSecondaryDark,
+              ),
+              const SizedBox(width: 10),
+              Text(
+                'Nothing to show yet',
+                style: AppTheme.bodyLg.copyWith(
+                  color: AppColors.textPrimaryDark,
+                  fontWeight: FontWeight.w600,
                 ),
-                const SizedBox(height: 5),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
-                  child: LinearProgressIndicator(
-                    value: pct,
-                    backgroundColor: AppColors.trackDark,
-                    valueColor: const AlwaysStoppedAnimation<Color>(
-                      AppColors.primary,
-                    ),
-                    minHeight: 6,
-                  ),
-                ),
-              ],
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Once you have practised a few topics, your accuracy for each '
+            'one will appear here.',
+            style: AppTheme.bodyMd.copyWith(
+              color: AppColors.textSecondaryDark,
             ),
-          );
-        }).toList(),
+          ),
+        ],
       ),
     );
   }

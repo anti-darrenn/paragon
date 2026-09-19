@@ -20,7 +20,19 @@ class SubjectListScreen extends ConsumerWidget {
           IconButton(
             icon: const Icon(Icons.bar_chart_rounded, size: 22),
             tooltip: 'Dashboard',
-            onPressed: () => context.push('/dashboard'),
+            // The dashboard is home ('/') now, so this navigates rather
+            // than pushing a second copy on top of the subject list.
+            onPressed: () => context.go('/'),
+          ),
+          // Entry point to the course index pages. Kept alongside the
+          // existing grid rather than replacing it — this screen is
+          // unchanged otherwise.
+          TextButton(
+            onPressed: () => context.push('/courses'),
+            child: const Text(
+              'Courses',
+              style: TextStyle(color: AppColors.primary),
+            ),
           ),
           TextButton(
             onPressed: () => context.push('/waec'),

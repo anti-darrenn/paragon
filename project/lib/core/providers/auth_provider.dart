@@ -62,11 +62,25 @@ final userDataProvider = StreamProvider<Map<String, dynamic>?>((ref) {
       .map((doc) => doc.exists ? doc.data() : null);
 });
 
-/// Returns the count of questions attempted this week.
-/// Returns 0 until the attempts collection is populated in Session 6.
-final weeklyAttemptsCountProvider = StreamProvider<int>((ref) {
+/// Number of questions attempted this week.
+///
+/// A `count()` aggregate, not a snapshot listener. The previous version
+/// streamed every matching attempt document and returned `docs.length` —
+/// so a daily user, generating roughly 140 documents a week, re-downloaded
+/// all of them on every visit to the dashboard, live, to display a single
+/// integer. The read cost scaled with exactly the engagement we want, and
+/// the dashboard is now the landing page.
+///
+/// `waecAvailableCountProvider` already used this aggregate; this brings
+/// the dashboard in line. A count() transfers a number, never the
+/// documents.
+///
+/// The trade is that it no longer updates live. That is fine here: the
+/// figure is a weekly total on a dashboard, and it refreshes whenever the
+/// provider is invalidated or the screen is revisited.
+final weeklyAttemptsCountProvider = FutureProvider<int>((ref) async {
   final user = ref.watch(authStateProvider).asData?.value;
-  if (user == null) return Stream.value(0);
+  if (user == null) return 0;
 
   final now = DateTime.now();
   final weekStart = DateTime(
@@ -75,10 +89,25 @@ final weeklyAttemptsCountProvider = StreamProvider<int>((ref) {
     now.day,
   ).subtract(Duration(days: now.weekday - 1));
 
-  return FirebaseFirestore.instance
+  final aggregate = await FirebaseFirestore.instance
       .collection('attempts')
       .where('userId', isEqualTo: user.uid)
       .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(weekStart))
-      .snapshots()
-      .map((snap) => snap.docs.length);
+      .count()
+      .get();
+
+  return aggregate.count ?? 0;
+});
+
+
+/// The catalog slugs the user picked during onboarding.
+///
+/// Empty for a guest, for a signed-out visitor, or for anyone who has not
+/// reached the subject step yet — callers must treat empty as "no
+/// preference expressed" and show everything, never as "wants nothing".
+final selectedSubjectSlugsProvider = Provider<Set<String>>((ref) {
+  final data = ref.watch(userDataProvider).asData?.value;
+  final raw = data?['selectedSubjects'];
+  if (raw is! List) return const <String>{};
+  return raw.whereType<String>().toSet();
 });
