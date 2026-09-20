@@ -31,16 +31,6 @@ class FullLatexView extends StatelessWidget {
       }
     }
 
-    bool isEscaped(int index) {
-      int k = index - 1;
-      int count = 0;
-      while (k >= 0 && s.codeUnitAt(k) == 92) {
-        count++;
-        k--;
-      }
-      return count.isOdd;
-    }
-
     Widget mathWidget(String content) => Math.tex(
       content,
       textStyle: effectiveStyle,
@@ -101,24 +91,19 @@ class FullLatexView extends StatelessWidget {
         }
       }
 
-      // $...$
+      // A lone $ is currency, never a math delimiter.
+      //
+      // WAEC questions are full of money ("sold at $4.50 and $3.00"), and
+      // treating $ as inline math made the text between two prices render as
+      // math: the second price vanished into the span and the words between
+      // them came out as italic variables. Six seeded Mathematics questions
+      // read as nonsense because of it.
+      //
+      // Nothing is lost by dropping it. Every $ in the corpus is currency -
+      // not one is math - and every generator emits \(...\), so inline math
+      // arrives as \(...\) and display math as $$...$$, both still handled
+      // above. Authored math must use those; a bare $ will not render.
       if (s.codeUnitAt(pos) == 36) {
-        int j = pos + 1;
-        while (j < len) {
-          if (s.codeUnitAt(j) == 36 && !isEscaped(j)) break;
-          j++;
-        }
-        if (j < len) {
-          flushPlain();
-          spans.add(
-            WidgetSpan(
-              alignment: PlaceholderAlignment.middle,
-              child: mathWidget(s.substring(pos + 1, j)),
-            ),
-          );
-          pos = j + 1;
-          continue;
-        }
         buf.write(r'$');
         pos++;
         continue;

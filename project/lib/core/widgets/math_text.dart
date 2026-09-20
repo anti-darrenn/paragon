@@ -42,18 +42,6 @@ class MathText extends StatelessWidget {
       }
     }
 
-    bool isEscaped(int index) {
-      // Returns true if the character at `index` is escaped by an
-      // odd number of preceding backslashes.
-      int k = index - 1;
-      int count = 0;
-      while (k >= 0 && s.codeUnitAt(k) == 92) {
-        count++;
-        k--;
-      }
-      return count.isOdd;
-    }
-
     while (pos < len) {
       // Handle escaped dollar: \$
       if (s.codeUnitAt(pos) == 92 && pos + 1 < len && s[pos + 1] == r'$') {
@@ -125,37 +113,12 @@ class MathText extends StatelessWidget {
         }
       }
 
-      // Handle single $ ... $
+      // A lone $ is currency, never a math delimiter - see the same decision
+      // in FullLatexView. Keeping the two renderers in step matters: they are
+      // selected by a flag on the same widget, so a question must not change
+      // meaning depending on which one drew it.
       if (s.codeUnitAt(pos) == 36) {
-        int j = pos + 1;
-        while (j < len) {
-          if (s.codeUnitAt(j) == 36 && !isEscaped(j)) break;
-          j++;
-        }
-        if (j < len && s.codeUnitAt(j) == 36) {
-          final mathContent = s.substring(pos + 1, j);
-          flushPlain();
-          spans.add(
-            WidgetSpan(
-              alignment: PlaceholderAlignment.middle,
-              child: Math.tex(
-                mathContent,
-                textStyle: effectiveStyle,
-                onErrorFallback: (FlutterMathException err) => Text(
-                  mathContent,
-                  style: effectiveStyle.copyWith(
-                    color: Colors.redAccent,
-                    fontFamily: 'monospace',
-                  ),
-                ),
-              ),
-            ),
-          );
-          pos = j + 1;
-          continue;
-        }
-        // no closing $, treat as literal
-        buf.write('\$');
+        buf.write(r'$');
         pos++;
         continue;
       }
