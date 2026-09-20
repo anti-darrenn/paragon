@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Each interior angle of a regular polygon is 90°. Find the number of sides of the polygon.",
+    "options": [
+      "8",
+      "4",
+      "2",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exterior angle \\(= 180° - 90° = 90°\\)\n\nNumber of sides \\(= \\frac{360°}{90°} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 120°. Find the number of sides of the polygon.",
+    "options": [
+      "7",
+      "4",
+      "12",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Exterior angle \\(= 180° - 120° = 60°\\)\n\nNumber of sides \\(= \\frac{360°}{60°} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 108°. Find the number of sides of the polygon.",
+    "options": [
+      "5",
+      "6",
+      "10",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Exterior angle \\(= 180° - 108° = 72°\\)\n\nNumber of sides \\(= \\frac{360°}{72°} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 85° and 65°. Find the exterior angle.",
+    "options": [
+      "30°",
+      "165°",
+      "85°",
+      "150°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(85° + 65° = 150°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 15 sides.",
+    "options": [
+      "2340°",
+      "156°",
+      "24°",
+      "166°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{13 \\times 180°}{15} = \\frac{2340°}{15} = 156°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 144°. Find the number of sides of the polygon.",
+    "options": [
+      "8",
+      "11",
+      "20",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Exterior angle \\(= 180° - 144° = 36°\\)\n\nNumber of sides \\(= \\frac{360°}{36°} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 55° and 68°. Find the exterior angle.",
+    "options": [
+      "57°",
+      "55°",
+      "138°",
+      "123°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(55° + 68° = 123°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 30cm and one of the other sides is 24cm. Find the length of the third side.",
+    "options": [
+      "6cm",
+      "54cm",
+      "20cm",
+      "18cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 30^{2} - 24^{2} = 900 - 576 = 324\\)\n\n\\(a = \\sqrt{324} = 18\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 3 sides.",
+    "options": [
+      "60°",
+      "120°",
+      "180°",
+      "70°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{1 \\times 180°}{3} = \\frac{180°}{3} = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 72°. Find one of the base angles.",
+    "options": [
+      "72°",
+      "108°",
+      "54°",
+      "64°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 72° = 108°\\)\n\nEach base angle \\(= \\frac{108°}{2} = 54°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 156°. Find the number of sides of the polygon.",
+    "options": [
+      "16",
+      "30",
+      "15",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Exterior angle \\(= 180° - 156° = 24°\\)\n\nNumber of sides \\(= \\frac{360°}{24°} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 41° and 79°. Find the exterior angle.",
+    "options": [
+      "60°",
+      "41°",
+      "135°",
+      "120°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(41° + 79° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 41° and 69°. Find the exterior angle.",
+    "options": [
+      "110°",
+      "125°",
+      "41°",
+      "70°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(41° + 69° = 110°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 17 sides.",
+    "options": [
+      "2880°",
+      "360°",
+      "3060°",
+      "2700°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (17 - 2) \\times 180° = 15 \\times 180° = 2700°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 5 sides.",
+    "options": [
+      "360°",
+      "540°",
+      "720°",
+      "900°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (5 - 2) \\times 180° = 3 \\times 180° = 540°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 63° and 67°. Find the third angle.",
+    "options": [
+      "60°",
+      "50°",
+      "230°",
+      "130°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (63° + 67°) = 180° - 130° = 50°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 38° and 39°. Find the third angle.",
+    "options": [
+      "103°",
+      "283°",
+      "77°",
+      "113°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (38° + 39°) = 180° - 77° = 103°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 10 sides.",
+    "options": [
+      "1440°",
+      "1620°",
+      "1800°",
+      "360°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (10 - 2) \\times 180° = 8 \\times 180° = 1440°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 62° and 75°. Find the exterior angle.",
+    "options": [
+      "152°",
+      "43°",
+      "62°",
+      "137°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(62° + 75° = 137°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 15°. How many sides has the polygon?",
+    "options": [
+      "23",
+      "12",
+      "26",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{15°} = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 10 sides.",
+    "options": [
+      "1440°",
+      "36°",
+      "154°",
+      "144°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{8 \\times 180°}{10} = \\frac{1440°}{10} = 144°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 89° and 89°. Find the exterior angle.",
+    "options": [
+      "89°",
+      "178°",
+      "2°",
+      "193°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(89° + 89° = 178°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 50°. Find one of the base angles.",
+    "options": [
+      "130°",
+      "50°",
+      "75°",
+      "65°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 50° = 130°\\)\n\nEach base angle \\(= \\frac{130°}{2} = 65°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 18°. How many sides has the polygon?",
+    "options": [
+      "22",
+      "10",
+      "19",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{18°} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 9 sides.",
+    "options": [
+      "40°",
+      "150°",
+      "1260°",
+      "140°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{7 \\times 180°}{9} = \\frac{1260°}{9} = 140°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 5 sides.",
+    "options": [
+      "540°",
+      "72°",
+      "118°",
+      "108°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{3 \\times 180°}{5} = \\frac{540°}{5} = 108°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 15 sides.",
+    "options": [
+      "2700°",
+      "2340°",
+      "2520°",
+      "360°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (15 - 2) \\times 180° = 13 \\times 180° = 2340°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 18cm and 24cm. Find the length of the hypotenuse.",
+    "options": [
+      "6cm",
+      "42cm",
+      "31cm",
+      "30cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 18^{2} + 24^{2} = 324 + 576 = 900\\)\n\n\\(c = \\sqrt{900} = 30\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 106°. Find one of the base angles.",
+    "options": [
+      "47°",
+      "37°",
+      "74°",
+      "106°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 106° = 74°\\)\n\nEach base angle \\(= \\frac{74°}{2} = 37°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 13cm and one of the other sides is 12cm. Find the length of the third side.",
+    "options": [
+      "25cm",
+      "1cm",
+      "7cm",
+      "5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 13^{2} - 12^{2} = 169 - 144 = 25\\)\n\n\\(a = \\sqrt{25} = 5\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 46° and 40°. Find the exterior angle.",
+    "options": [
+      "101°",
+      "94°",
+      "46°",
+      "86°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(46° + 40° = 86°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 30 sides.",
+    "options": [
+      "168°",
+      "178°",
+      "12°",
+      "5040°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{28 \\times 180°}{30} = \\frac{5040°}{30} = 168°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 34° and 87°. Find the exterior angle.",
+    "options": [
+      "136°",
+      "59°",
+      "121°",
+      "34°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(34° + 87° = 121°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 15cm and 20cm. Find the length of the hypotenuse.",
+    "options": [
+      "25cm",
+      "26cm",
+      "35cm",
+      "5cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 15^{2} + 20^{2} = 225 + 400 = 625\\)\n\n\\(c = \\sqrt{625} = 25\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 7cm and 24cm. Find the length of the hypotenuse.",
+    "options": [
+      "17cm",
+      "25cm",
+      "26cm",
+      "31cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 7^{2} + 24^{2} = 49 + 576 = 625\\)\n\n\\(c = \\sqrt{625} = 25\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 9cm and 40cm. Find the length of the hypotenuse.",
+    "options": [
+      "49cm",
+      "41cm",
+      "31cm",
+      "42cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 9^{2} + 40^{2} = 81 + 1600 = 1681\\)\n\n\\(c = \\sqrt{1681} = 41\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 75° and 35°. Find the exterior angle.",
+    "options": [
+      "125°",
+      "75°",
+      "110°",
+      "70°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(75° + 35° = 110°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 32°. Find one of the base angles.",
+    "options": [
+      "148°",
+      "84°",
+      "74°",
+      "32°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 32° = 148°\\)\n\nEach base angle \\(= \\frac{148°}{2} = 74°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 69° and 45°. Find the exterior angle.",
+    "options": [
+      "114°",
+      "66°",
+      "129°",
+      "69°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(69° + 45° = 114°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 116°. Find one of the base angles.",
+    "options": [
+      "42°",
+      "116°",
+      "64°",
+      "32°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 116° = 64°\\)\n\nEach base angle \\(= \\frac{64°}{2} = 32°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 97° and 49°. Find the third angle.",
+    "options": [
+      "44°",
+      "34°",
+      "146°",
+      "214°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (97° + 49°) = 180° - 146° = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 12 sides.",
+    "options": [
+      "30°",
+      "160°",
+      "1800°",
+      "150°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{10 \\times 180°}{12} = \\frac{1800°}{12} = 150°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 90°. How many sides has the polygon?",
+    "options": [
+      "3",
+      "6",
+      "2",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{90°} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 12°. How many sides has the polygon?",
+    "options": [
+      "15",
+      "32",
+      "29",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{12°} = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 9 sides.",
+    "options": [
+      "1260°",
+      "1620°",
+      "360°",
+      "1440°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (9 - 2) \\times 180° = 7 \\times 180° = 1260°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 9cm and 12cm. Find the length of the hypotenuse.",
+    "options": [
+      "21cm",
+      "16cm",
+      "15cm",
+      "3cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 9^{2} + 12^{2} = 81 + 144 = 225\\)\n\n\\(c = \\sqrt{225} = 15\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 25cm and one of the other sides is 24cm. Find the length of the third side.",
+    "options": [
+      "9cm",
+      "1cm",
+      "7cm",
+      "49cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 25^{2} - 24^{2} = 625 - 576 = 49\\)\n\n\\(a = \\sqrt{49} = 7\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 76° and 89°. Find the exterior angle.",
+    "options": [
+      "165°",
+      "180°",
+      "15°",
+      "76°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(76° + 89° = 165°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 12 sides.",
+    "options": [
+      "1800°",
+      "1980°",
+      "2160°",
+      "360°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (12 - 2) \\times 180° = 10 \\times 180° = 1800°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 79° and 60°. Find the exterior angle.",
+    "options": [
+      "139°",
+      "41°",
+      "154°",
+      "79°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(79° + 60° = 139°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 150°. Find the number of sides of the polygon.",
+    "options": [
+      "24",
+      "12",
+      "10",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exterior angle \\(= 180° - 150° = 30°\\)\n\nNumber of sides \\(= \\frac{360°}{30°} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 126°. Find one of the base angles.",
+    "options": [
+      "37°",
+      "54°",
+      "27°",
+      "126°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 126° = 54°\\)\n\nEach base angle \\(= \\frac{54°}{2} = 27°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 76° and 33°. Find the exterior angle.",
+    "options": [
+      "109°",
+      "124°",
+      "71°",
+      "76°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(76° + 33° = 109°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 72°. How many sides has the polygon?",
+    "options": [
+      "2.5",
+      "5",
+      "7",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{72°} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 18 sides.",
+    "options": [
+      "2880°",
+      "160°",
+      "170°",
+      "20°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{16 \\times 180°}{18} = \\frac{2880°}{18} = 160°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 140°. Find the number of sides of the polygon.",
+    "options": [
+      "7",
+      "18",
+      "9",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Exterior angle \\(= 180° - 140° = 40°\\)\n\nNumber of sides \\(= \\frac{360°}{40°} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 49° and 29°. Find the exterior angle.",
+    "options": [
+      "78°",
+      "49°",
+      "93°",
+      "102°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(49° + 29° = 78°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 46° and 32°. Find the third angle.",
+    "options": [
+      "78°",
+      "102°",
+      "282°",
+      "112°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (46° + 32°) = 180° - 78° = 102°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 135°. Find the number of sides of the polygon.",
+    "options": [
+      "8",
+      "6",
+      "9",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Exterior angle \\(= 180° - 135° = 45°\\)\n\nNumber of sides \\(= \\frac{360°}{45°} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 50° and 72°. Find the third angle.",
+    "options": [
+      "122°",
+      "68°",
+      "58°",
+      "238°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (50° + 72°) = 180° - 122° = 58°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 7 sides.",
+    "options": [
+      "360°",
+      "1260°",
+      "1080°",
+      "900°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (7 - 2) \\times 180° = 5 \\times 180° = 900°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 60°. How many sides has the polygon?",
+    "options": [
+      "8",
+      "5",
+      "6",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{60°} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 8 sides.",
+    "options": [
+      "1080°",
+      "1260°",
+      "1440°",
+      "360°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (8 - 2) \\times 180° = 6 \\times 180° = 1080°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 52° and 82°. Find the exterior angle.",
+    "options": [
+      "46°",
+      "52°",
+      "149°",
+      "134°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(52° + 82° = 134°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 37° and 73°. Find the exterior angle.",
+    "options": [
+      "110°",
+      "125°",
+      "37°",
+      "70°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(37° + 73° = 110°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 81° and 25°. Find the exterior angle.",
+    "options": [
+      "121°",
+      "74°",
+      "106°",
+      "81°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(81° + 25° = 106°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 6 sides.",
+    "options": [
+      "120°",
+      "130°",
+      "60°",
+      "720°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{4 \\times 180°}{6} = \\frac{720°}{6} = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 69° and 27°. Find the third angle.",
+    "options": [
+      "264°",
+      "96°",
+      "84°",
+      "94°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (69° + 27°) = 180° - 96° = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 19 sides.",
+    "options": [
+      "360°",
+      "3420°",
+      "3060°",
+      "3240°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (19 - 2) \\times 180° = 17 \\times 180° = 3060°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 87° and 42°. Find the exterior angle.",
+    "options": [
+      "51°",
+      "129°",
+      "144°",
+      "87°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(87° + 42° = 129°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 53° and 38°. Find the exterior angle.",
+    "options": [
+      "89°",
+      "106°",
+      "53°",
+      "91°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(53° + 38° = 91°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 80° and 78°. Find the exterior angle.",
+    "options": [
+      "158°",
+      "22°",
+      "173°",
+      "80°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(80° + 78° = 158°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 39° and 87°. Find the third angle.",
+    "options": [
+      "64°",
+      "126°",
+      "54°",
+      "234°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (39° + 87°) = 180° - 126° = 54°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 13 sides.",
+    "options": [
+      "360°",
+      "2340°",
+      "1980°",
+      "2160°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (13 - 2) \\times 180° = 11 \\times 180° = 1980°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 20 sides.",
+    "options": [
+      "162°",
+      "172°",
+      "3240°",
+      "18°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{18 \\times 180°}{20} = \\frac{3240°}{20} = 162°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 10°. How many sides has the polygon?",
+    "options": [
+      "35",
+      "18",
+      "36",
+      "38"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{10°} = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 29° and 87°. Find the exterior angle.",
+    "options": [
+      "64°",
+      "131°",
+      "29°",
+      "116°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(29° + 87° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 66° and 67°. Find the third angle.",
+    "options": [
+      "47°",
+      "57°",
+      "133°",
+      "227°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (66° + 67°) = 180° - 133° = 47°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 41cm and one of the other sides is 40cm. Find the length of the third side.",
+    "options": [
+      "11cm",
+      "1cm",
+      "9cm",
+      "81cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 41^{2} - 40^{2} = 1681 - 1600 = 81\\)\n\n\\(a = \\sqrt{81} = 9\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 25cm and one of the other sides is 20cm. Find the length of the third side.",
+    "options": [
+      "17cm",
+      "45cm",
+      "15cm",
+      "5cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 25^{2} - 20^{2} = 625 - 400 = 225\\)\n\n\\(a = \\sqrt{225} = 15\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 60°. Find the number of sides of the polygon.",
+    "options": [
+      "4",
+      "3",
+      "1",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exterior angle \\(= 180° - 60° = 120°\\)\n\nNumber of sides \\(= \\frac{360°}{120°} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 20°. How many sides has the polygon?",
+    "options": [
+      "18",
+      "17",
+      "20",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{20°} = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 5cm and 12cm. Find the length of the hypotenuse.",
+    "options": [
+      "14cm",
+      "13cm",
+      "7cm",
+      "17cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 5^{2} + 12^{2} = 25 + 144 = 169\\)\n\n\\(c = \\sqrt{169} = 13\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 27° and 38°. Find the exterior angle.",
+    "options": [
+      "80°",
+      "115°",
+      "65°",
+      "27°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(27° + 38° = 65°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 76° and 62°. Find the exterior angle.",
+    "options": [
+      "138°",
+      "153°",
+      "76°",
+      "42°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(76° + 62° = 138°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 12cm and 16cm. Find the length of the hypotenuse.",
+    "options": [
+      "4cm",
+      "21cm",
+      "28cm",
+      "20cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 12^{2} + 16^{2} = 144 + 256 = 400\\)\n\n\\(c = \\sqrt{400} = 20\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 40°. How many sides has the polygon?",
+    "options": [
+      "11",
+      "8",
+      "4.5",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{40°} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 70°. Find one of the base angles.",
+    "options": [
+      "55°",
+      "65°",
+      "70°",
+      "110°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 70° = 110°\\)\n\nEach base angle \\(= \\frac{110°}{2} = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 45°. How many sides has the polygon?",
+    "options": [
+      "4",
+      "10",
+      "7",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{45°} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 8 sides.",
+    "options": [
+      "145°",
+      "1080°",
+      "135°",
+      "45°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{6 \\times 180°}{8} = \\frac{1080°}{8} = 135°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 54°. Find one of the base angles.",
+    "options": [
+      "63°",
+      "54°",
+      "126°",
+      "73°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 54° = 126°\\)\n\nEach base angle \\(= \\frac{126°}{2} = 63°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 29° and 50°. Find the exterior angle.",
+    "options": [
+      "94°",
+      "29°",
+      "79°",
+      "101°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(29° + 50° = 79°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 65° and 67°. Find the third angle.",
+    "options": [
+      "228°",
+      "48°",
+      "132°",
+      "58°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (65° + 67°) = 180° - 132° = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 78°. Find one of the base angles.",
+    "options": [
+      "102°",
+      "61°",
+      "78°",
+      "51°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 78° = 102°\\)\n\nEach base angle \\(= \\frac{102°}{2} = 51°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 57° and 84°. Find the exterior angle.",
+    "options": [
+      "39°",
+      "141°",
+      "57°",
+      "156°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(57° + 84° = 141°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 18 sides.",
+    "options": [
+      "3060°",
+      "2880°",
+      "3240°",
+      "360°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (18 - 2) \\times 180° = 16 \\times 180° = 2880°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 62°. Find one of the base angles.",
+    "options": [
+      "62°",
+      "118°",
+      "59°",
+      "69°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 62° = 118°\\)\n\nEach base angle \\(= \\frac{118°}{2} = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 50° and 53°. Find the third angle.",
+    "options": [
+      "77°",
+      "257°",
+      "103°",
+      "87°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (50° + 53°) = 180° - 103° = 77°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 74°. Find one of the base angles.",
+    "options": [
+      "74°",
+      "63°",
+      "106°",
+      "53°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 74° = 106°\\)\n\nEach base angle \\(= \\frac{106°}{2} = 53°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 36 sides.",
+    "options": [
+      "170°",
+      "180°",
+      "10°",
+      "6120°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{34 \\times 180°}{36} = \\frac{6120°}{36} = 170°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 160°. Find the number of sides of the polygon.",
+    "options": [
+      "36",
+      "18",
+      "19",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exterior angle \\(= 180° - 160° = 20°\\)\n\nNumber of sides \\(= \\frac{360°}{20°} = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 36°. How many sides has the polygon?",
+    "options": [
+      "5",
+      "10",
+      "12",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{36°} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 74° and 70°. Find the exterior angle.",
+    "options": [
+      "74°",
+      "159°",
+      "144°",
+      "36°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(74° + 70° = 144°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 33° and 50°. Find the exterior angle.",
+    "options": [
+      "98°",
+      "33°",
+      "83°",
+      "97°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(33° + 50° = 83°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 47° and 26°. Find the third angle.",
+    "options": [
+      "117°",
+      "287°",
+      "107°",
+      "73°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (47° + 26°) = 180° - 73° = 107°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 58°. Find one of the base angles.",
+    "options": [
+      "71°",
+      "61°",
+      "58°",
+      "122°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 58° = 122°\\)\n\nEach base angle \\(= \\frac{122°}{2} = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 78° and 87°. Find the exterior angle.",
+    "options": [
+      "180°",
+      "15°",
+      "78°",
+      "165°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(78° + 87° = 165°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 79° and 49°. Find the exterior angle.",
+    "options": [
+      "128°",
+      "52°",
+      "79°",
+      "143°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(79° + 49° = 128°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 48° and 34°. Find the exterior angle.",
+    "options": [
+      "48°",
+      "98°",
+      "82°",
+      "97°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(48° + 34° = 82°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 51° and 60°. Find the exterior angle.",
+    "options": [
+      "51°",
+      "69°",
+      "111°",
+      "126°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(51° + 60° = 111°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 36° and 45°. Find the third angle.",
+    "options": [
+      "81°",
+      "109°",
+      "99°",
+      "279°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (36° + 45°) = 180° - 81° = 99°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 38°. Find one of the base angles.",
+    "options": [
+      "142°",
+      "81°",
+      "38°",
+      "71°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 38° = 142°\\)\n\nEach base angle \\(= \\frac{142°}{2} = 71°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 66° and 88°. Find the exterior angle.",
+    "options": [
+      "154°",
+      "26°",
+      "66°",
+      "169°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(66° + 88° = 154°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 56° and 48°. Find the exterior angle.",
+    "options": [
+      "76°",
+      "56°",
+      "104°",
+      "119°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(56° + 48° = 104°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the size of each interior angle of a regular polygon with 24 sides.",
+    "options": [
+      "175°",
+      "3960°",
+      "165°",
+      "15°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Each interior angle \\(= \\frac{(n-2) \\times 180°}{n}\\)\n\n\\(= \\frac{22 \\times 180°}{24} = \\frac{3960°}{24} = 165°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 88°. Find one of the base angles.",
+    "options": [
+      "56°",
+      "88°",
+      "92°",
+      "46°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 88° = 92°\\)\n\nEach base angle \\(= \\frac{92°}{2} = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 44°. Find one of the base angles.",
+    "options": [
+      "44°",
+      "136°",
+      "78°",
+      "68°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 44° = 136°\\)\n\nEach base angle \\(= \\frac{136°}{2} = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 25° and 73°. Find the third angle.",
+    "options": [
+      "98°",
+      "82°",
+      "92°",
+      "262°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (25° + 73°) = 180° - 98° = 82°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 53° and 69°. Find the third angle.",
+    "options": [
+      "58°",
+      "68°",
+      "122°",
+      "238°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (53° + 69°) = 180° - 122° = 58°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 11 sides.",
+    "options": [
+      "1980°",
+      "360°",
+      "1800°",
+      "1620°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (11 - 2) \\times 180° = 9 \\times 180° = 1620°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 15cm and one of the other sides is 12cm. Find the length of the third side.",
+    "options": [
+      "27cm",
+      "9cm",
+      "11cm",
+      "3cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 15^{2} - 12^{2} = 225 - 144 = 81\\)\n\n\\(a = \\sqrt{81} = 9\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 17cm and one of the other sides is 15cm. Find the length of the third side.",
+    "options": [
+      "10cm",
+      "8cm",
+      "32cm",
+      "2cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 17^{2} - 15^{2} = 289 - 225 = 64\\)\n\n\\(a = \\sqrt{64} = 8\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 39° and 85°. Find the third angle.",
+    "options": [
+      "124°",
+      "56°",
+      "236°",
+      "66°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (39° + 85°) = 180° - 124° = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 20cm and 21cm. Find the length of the hypotenuse.",
+    "options": [
+      "29cm",
+      "1cm",
+      "30cm",
+      "41cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 20^{2} + 21^{2} = 400 + 441 = 841\\)\n\n\\(c = \\sqrt{841} = 29\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 6cm and 8cm. Find the length of the hypotenuse.",
+    "options": [
+      "14cm",
+      "10cm",
+      "11cm",
+      "2cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 6^{2} + 8^{2} = 36 + 64 = 100\\)\n\n\\(c = \\sqrt{100} = 10\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 89° and 86°. Find the exterior angle.",
+    "options": [
+      "190°",
+      "5°",
+      "175°",
+      "89°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(89° + 86° = 175°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 51° and 73°. Find the third angle.",
+    "options": [
+      "236°",
+      "66°",
+      "124°",
+      "56°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (51° + 73°) = 180° - 124° = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 64°. Find one of the base angles.",
+    "options": [
+      "116°",
+      "58°",
+      "68°",
+      "64°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 64° = 116°\\)\n\nEach base angle \\(= \\frac{116°}{2} = 58°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 85°. Find the exterior angle.",
+    "options": [
+      "53°",
+      "127°",
+      "142°",
+      "42°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 85° = 127°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 85° and 27°. Find the third angle.",
+    "options": [
+      "68°",
+      "78°",
+      "248°",
+      "112°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (85° + 27°) = 180° - 112° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 24°. How many sides has the polygon?",
+    "options": [
+      "15",
+      "14",
+      "7.5",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{24°} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 34° and 71°. Find the third angle.",
+    "options": [
+      "75°",
+      "85°",
+      "105°",
+      "255°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (34° + 71°) = 180° - 105° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 5cm and one of the other sides is 4cm. Find the length of the third side.",
+    "options": [
+      "5cm",
+      "1cm",
+      "3cm",
+      "9cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 5^{2} - 4^{2} = 25 - 16 = 9\\)\n\n\\(a = \\sqrt{9} = 3\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 35° and 36°. Find the exterior angle.",
+    "options": [
+      "86°",
+      "109°",
+      "71°",
+      "35°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(35° + 36° = 71°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 120°. Find one of the base angles.",
+    "options": [
+      "40°",
+      "60°",
+      "120°",
+      "30°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 120° = 60°\\)\n\nEach base angle \\(= \\frac{60°}{2} = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 83° and 33°. Find the exterior angle.",
+    "options": [
+      "116°",
+      "131°",
+      "83°",
+      "64°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(83° + 33° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 104° and 45°. Find the third angle.",
+    "options": [
+      "211°",
+      "41°",
+      "149°",
+      "31°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (104° + 45°) = 180° - 149° = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each interior angle of a regular polygon is 162°. Find the number of sides of the polygon.",
+    "options": [
+      "21",
+      "40",
+      "18",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Exterior angle \\(= 180° - 162° = 18°\\)\n\nNumber of sides \\(= \\frac{360°}{18°} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 83° and 53°. Find the exterior angle.",
+    "options": [
+      "83°",
+      "44°",
+      "136°",
+      "151°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(83° + 53° = 136°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 84° and 40°. Find the third angle.",
+    "options": [
+      "66°",
+      "124°",
+      "56°",
+      "236°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (84° + 40°) = 180° - 124° = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 78° and 77°. Find the exterior angle.",
+    "options": [
+      "25°",
+      "170°",
+      "155°",
+      "78°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(78° + 77° = 155°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 74° and 35°. Find the exterior angle.",
+    "options": [
+      "124°",
+      "109°",
+      "71°",
+      "74°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(74° + 35° = 109°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 3cm and 4cm. Find the length of the hypotenuse.",
+    "options": [
+      "6cm",
+      "1cm",
+      "7cm",
+      "5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 3^{2} + 4^{2} = 9 + 16 = 25\\)\n\n\\(c = \\sqrt{25} = 5\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 26° and 42°. Find the exterior angle.",
+    "options": [
+      "26°",
+      "68°",
+      "112°",
+      "83°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(26° + 42° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 91° and 25°. Find the third angle.",
+    "options": [
+      "244°",
+      "116°",
+      "74°",
+      "64°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (91° + 25°) = 180° - 116° = 64°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 76° and 87°. Find the third angle.",
+    "options": [
+      "163°",
+      "27°",
+      "197°",
+      "17°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (76° + 87°) = 180° - 163° = 17°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 140°. Find one of the base angles.",
+    "options": [
+      "20°",
+      "30°",
+      "140°",
+      "40°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 140° = 40°\\)\n\nEach base angle \\(= \\frac{40°}{2} = 20°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 86° and 34°. Find the exterior angle.",
+    "options": [
+      "86°",
+      "135°",
+      "60°",
+      "120°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(86° + 34° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 34° and 82°. Find the exterior angle.",
+    "options": [
+      "64°",
+      "131°",
+      "116°",
+      "34°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(34° + 82° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 33° and 89°. Find the exterior angle.",
+    "options": [
+      "33°",
+      "122°",
+      "58°",
+      "137°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(33° + 89° = 122°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 120°. How many sides has the polygon?",
+    "options": [
+      "2",
+      "5",
+      "1.5",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{120°} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 53° and 55°. Find the third angle.",
+    "options": [
+      "82°",
+      "108°",
+      "72°",
+      "252°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (53° + 55°) = 180° - 108° = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 10cm and 24cm. Find the length of the hypotenuse.",
+    "options": [
+      "26cm",
+      "34cm",
+      "27cm",
+      "14cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 10^{2} + 24^{2} = 100 + 576 = 676\\)\n\n\\(c = \\sqrt{676} = 26\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 74° and 67°. Find the exterior angle.",
+    "options": [
+      "156°",
+      "74°",
+      "141°",
+      "39°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(74° + 67° = 141°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 29° and 110°. Find the third angle.",
+    "options": [
+      "221°",
+      "51°",
+      "139°",
+      "41°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (29° + 110°) = 180° - 139° = 41°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 83° and 50°. Find the third angle.",
+    "options": [
+      "133°",
+      "57°",
+      "227°",
+      "47°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (83° + 50°) = 180° - 133° = 47°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 70° and 90°. Find the third angle.",
+    "options": [
+      "200°",
+      "160°",
+      "20°",
+      "30°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (70° + 90°) = 180° - 160° = 20°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 95° and 51°. Find the third angle.",
+    "options": [
+      "44°",
+      "146°",
+      "214°",
+      "34°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (95° + 51°) = 180° - 146° = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 33° and 92°. Find the third angle.",
+    "options": [
+      "55°",
+      "235°",
+      "125°",
+      "65°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (33° + 92°) = 180° - 125° = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 90° and 34°. Find the exterior angle.",
+    "options": [
+      "139°",
+      "56°",
+      "124°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(90° + 34° = 124°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 66° and 58°. Find the third angle.",
+    "options": [
+      "66°",
+      "56°",
+      "236°",
+      "124°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (66° + 58°) = 180° - 124° = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 6 sides.",
+    "options": [
+      "360°",
+      "1080°",
+      "900°",
+      "720°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (6 - 2) \\times 180° = 4 \\times 180° = 720°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 20cm and one of the other sides is 16cm. Find the length of the third side.",
+    "options": [
+      "4cm",
+      "14cm",
+      "36cm",
+      "12cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 20^{2} - 16^{2} = 400 - 256 = 144\\)\n\n\\(a = \\sqrt{144} = 12\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 37° and 73°. Find the third angle.",
+    "options": [
+      "70°",
+      "250°",
+      "80°",
+      "110°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (37° + 73°) = 180° - 110° = 70°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 45° and 71°. Find the exterior angle.",
+    "options": [
+      "131°",
+      "116°",
+      "64°",
+      "45°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(45° + 71° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 79° and 35°. Find the exterior angle.",
+    "options": [
+      "79°",
+      "114°",
+      "129°",
+      "66°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(79° + 35° = 114°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 78° and 37°. Find the third angle.",
+    "options": [
+      "65°",
+      "75°",
+      "245°",
+      "115°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (78° + 37°) = 180° - 115° = 65°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 21° and 86°. Find the third angle.",
+    "options": [
+      "83°",
+      "107°",
+      "253°",
+      "73°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (21° + 86°) = 180° - 107° = 73°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 26° and 74°. Find the third angle.",
+    "options": [
+      "80°",
+      "90°",
+      "260°",
+      "100°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (26° + 74°) = 180° - 100° = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 48° and 70°. Find the exterior angle.",
+    "options": [
+      "62°",
+      "133°",
+      "48°",
+      "118°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(48° + 70° = 118°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 30°. Find the exterior angle.",
+    "options": [
+      "72°",
+      "42°",
+      "87°",
+      "108°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 30° = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 37° and 83°. Find the exterior angle.",
+    "options": [
+      "60°",
+      "37°",
+      "120°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(37° + 83° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 20 sides.",
+    "options": [
+      "360°",
+      "3240°",
+      "3600°",
+      "3420°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (20 - 2) \\times 180° = 18 \\times 180° = 3240°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 71° and 34°. Find the third angle.",
+    "options": [
+      "105°",
+      "85°",
+      "75°",
+      "255°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (71° + 34°) = 180° - 105° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 134°. Find one of the base angles.",
+    "options": [
+      "23°",
+      "46°",
+      "134°",
+      "33°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 134° = 46°\\)\n\nEach base angle \\(= \\frac{46°}{2} = 23°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 104°. Find one of the base angles.",
+    "options": [
+      "38°",
+      "76°",
+      "48°",
+      "104°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 104° = 76°\\)\n\nEach base angle \\(= \\frac{76°}{2} = 38°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 38° and 45°. Find the third angle.",
+    "options": [
+      "97°",
+      "83°",
+      "277°",
+      "107°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (38° + 45°) = 180° - 83° = 97°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 85° and 93°. Find the third angle.",
+    "options": [
+      "182°",
+      "2°",
+      "12°",
+      "178°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (85° + 93°) = 180° - 178° = 2°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 92° and 33°. Find the third angle.",
+    "options": [
+      "55°",
+      "125°",
+      "65°",
+      "235°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (92° + 33°) = 180° - 125° = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 67° and 80°. Find the exterior angle.",
+    "options": [
+      "67°",
+      "147°",
+      "162°",
+      "33°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(67° + 80° = 147°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 16 sides.",
+    "options": [
+      "2880°",
+      "2700°",
+      "360°",
+      "2520°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (16 - 2) \\times 180° = 14 \\times 180° = 2520°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 56° and 72°. Find the third angle.",
+    "options": [
+      "52°",
+      "232°",
+      "128°",
+      "62°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (56° + 72°) = 180° - 128° = 52°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 67° and 33°. Find the third angle.",
+    "options": [
+      "100°",
+      "90°",
+      "80°",
+      "260°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (67° + 33°) = 180° - 100° = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 32° and 42°. Find the exterior angle.",
+    "options": [
+      "74°",
+      "89°",
+      "106°",
+      "32°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(32° + 42° = 74°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 29cm and one of the other sides is 21cm. Find the length of the third side.",
+    "options": [
+      "50cm",
+      "22cm",
+      "8cm",
+      "20cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 29^{2} - 21^{2} = 841 - 441 = 400\\)\n\n\\(a = \\sqrt{400} = 20\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 33° and 63°. Find the third angle.",
+    "options": [
+      "84°",
+      "96°",
+      "264°",
+      "94°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (33° + 63°) = 180° - 96° = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 30° and 56°. Find the exterior angle.",
+    "options": [
+      "86°",
+      "30°",
+      "94°",
+      "101°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(30° + 56° = 86°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 51° and 78°. Find the third angle.",
+    "options": [
+      "51°",
+      "231°",
+      "61°",
+      "129°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (51° + 78°) = 180° - 129° = 51°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 70° and 63°. Find the exterior angle.",
+    "options": [
+      "47°",
+      "133°",
+      "70°",
+      "148°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(70° + 63° = 133°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 56° and 42°. Find the exterior angle.",
+    "options": [
+      "113°",
+      "56°",
+      "82°",
+      "98°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(56° + 42° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 26cm and one of the other sides is 24cm. Find the length of the third side.",
+    "options": [
+      "10cm",
+      "12cm",
+      "2cm",
+      "50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 26^{2} - 24^{2} = 676 - 576 = 100\\)\n\n\\(a = \\sqrt{100} = 10\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 25° and 73°. Find the exterior angle.",
+    "options": [
+      "82°",
+      "113°",
+      "98°",
+      "25°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(25° + 73° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 79°. Find the exterior angle.",
+    "options": [
+      "136°",
+      "121°",
+      "42°",
+      "59°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 79° = 121°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 85° and 33°. Find the exterior angle.",
+    "options": [
+      "85°",
+      "133°",
+      "118°",
+      "62°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(85° + 33° = 118°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 94°. Find one of the base angles.",
+    "options": [
+      "43°",
+      "86°",
+      "53°",
+      "94°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 94° = 86°\\)\n\nEach base angle \\(= \\frac{86°}{2} = 43°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 78° and 48°. Find the third angle.",
+    "options": [
+      "234°",
+      "54°",
+      "126°",
+      "64°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (78° + 48°) = 180° - 126° = 54°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 81° and 86°. Find the exterior angle.",
+    "options": [
+      "13°",
+      "81°",
+      "182°",
+      "167°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(81° + 86° = 167°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 41° and 20°. Find the third angle.",
+    "options": [
+      "129°",
+      "299°",
+      "119°",
+      "61°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (41° + 20°) = 180° - 61° = 119°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 31°. Find the exterior angle.",
+    "options": [
+      "73°",
+      "107°",
+      "88°",
+      "42°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 31° = 73°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Each exterior angle of a regular polygon is 30°. How many sides has the polygon?",
+    "options": [
+      "12",
+      "14",
+      "6",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angles of any polygon add up to 360°.\n\nNumber of sides \\(= \\frac{360°}{\\text{exterior angle}} = \\frac{360°}{30°} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 88° and 36°. Find the exterior angle.",
+    "options": [
+      "56°",
+      "88°",
+      "139°",
+      "124°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(88° + 36° = 124°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 54° and 29°. Find the third angle.",
+    "options": [
+      "97°",
+      "277°",
+      "107°",
+      "83°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (54° + 29°) = 180° - 83° = 97°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 39° and 64°. Find the third angle.",
+    "options": [
+      "87°",
+      "103°",
+      "257°",
+      "77°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (39° + 64°) = 180° - 103° = 77°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 132°. Find one of the base angles.",
+    "options": [
+      "34°",
+      "48°",
+      "24°",
+      "132°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 132° = 48°\\)\n\nEach base angle \\(= \\frac{48°}{2} = 24°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 56°. Find one of the base angles.",
+    "options": [
+      "62°",
+      "72°",
+      "124°",
+      "56°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 56° = 124°\\)\n\nEach base angle \\(= \\frac{124°}{2} = 62°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 71° and 75°. Find the exterior angle.",
+    "options": [
+      "161°",
+      "34°",
+      "146°",
+      "71°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(71° + 75° = 146°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 31° and 26°. Find the exterior angle.",
+    "options": [
+      "72°",
+      "31°",
+      "57°",
+      "123°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(31° + 26° = 57°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 63° and 94°. Find the third angle.",
+    "options": [
+      "33°",
+      "203°",
+      "157°",
+      "23°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (63° + 94°) = 180° - 157° = 23°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 57° and 107°. Find the third angle.",
+    "options": [
+      "196°",
+      "26°",
+      "16°",
+      "164°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (57° + 107°) = 180° - 164° = 16°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the interior angles of a polygon with 14 sides.",
+    "options": [
+      "2340°",
+      "2160°",
+      "360°",
+      "2520°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sum of interior angles \\(= (n - 2) \\times 180°\\)\n\n\\(= (14 - 2) \\times 180° = 12 \\times 180° = 2160°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 34°. Find one of the base angles.",
+    "options": [
+      "34°",
+      "73°",
+      "83°",
+      "146°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 34° = 146°\\)\n\nEach base angle \\(= \\frac{146°}{2} = 73°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 74° and 50°. Find the third angle.",
+    "options": [
+      "236°",
+      "124°",
+      "56°",
+      "66°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (74° + 50°) = 180° - 124° = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A right-angled triangle has the two shorter sides 8cm and 15cm. Find the length of the hypotenuse.",
+    "options": [
+      "17cm",
+      "7cm",
+      "23cm",
+      "18cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By Pythagoras' theorem, \\(c^{2} = a^{2} + b^{2}\\).\n\n\\(c^{2} = 8^{2} + 15^{2} = 64 + 225 = 289\\)\n\n\\(c = \\sqrt{289} = 17\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 59° and 42°. Find the exterior angle.",
+    "options": [
+      "59°",
+      "79°",
+      "116°",
+      "101°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(59° + 42° = 101°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 70° and 100°. Find the third angle.",
+    "options": [
+      "190°",
+      "10°",
+      "170°",
+      "20°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (70° + 100°) = 180° - 170° = 10°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 39° and 37°. Find the third angle.",
+    "options": [
+      "76°",
+      "284°",
+      "104°",
+      "114°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (39° + 37°) = 180° - 76° = 104°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The hypotenuse of a right-angled triangle is 10cm and one of the other sides is 8cm. Find the length of the third side.",
+    "options": [
+      "2cm",
+      "8cm",
+      "18cm",
+      "6cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By Pythagoras' theorem, \\(a^{2} = c^{2} - b^{2}\\).\n\n\\(a^{2} = 10^{2} - 8^{2} = 100 - 64 = 36\\)\n\n\\(a = \\sqrt{36} = 6\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 80° and 41°. Find the third angle.",
+    "options": [
+      "69°",
+      "121°",
+      "239°",
+      "59°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (80° + 41°) = 180° - 121° = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 61° and 60°. Find the third angle.",
+    "options": [
+      "239°",
+      "59°",
+      "69°",
+      "121°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (61° + 60°) = 180° - 121° = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 25° and 36°. Find the third angle.",
+    "options": [
+      "129°",
+      "61°",
+      "299°",
+      "119°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (25° + 36°) = 180° - 61° = 119°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 90° and 36°. Find the exterior angle.",
+    "options": [
+      "141°",
+      "90°",
+      "54°",
+      "126°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(90° + 36° = 126°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 75° and 60°. Find the third angle.",
+    "options": [
+      "45°",
+      "135°",
+      "225°",
+      "55°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (75° + 60°) = 180° - 135° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 81° and 47°. Find the third angle.",
+    "options": [
+      "62°",
+      "232°",
+      "128°",
+      "52°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (81° + 47°) = 180° - 128° = 52°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 27° and 33°. Find the exterior angle.",
+    "options": [
+      "60°",
+      "27°",
+      "120°",
+      "75°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(27° + 33° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 44° and 65°. Find the third angle.",
+    "options": [
+      "109°",
+      "81°",
+      "251°",
+      "71°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (44° + 65°) = 180° - 109° = 71°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 40° and 34°. Find the third angle.",
+    "options": [
+      "286°",
+      "74°",
+      "116°",
+      "106°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (40° + 34°) = 180° - 74° = 106°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 101° and 72°. Find the third angle.",
+    "options": [
+      "173°",
+      "7°",
+      "187°",
+      "17°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (101° + 72°) = 180° - 173° = 7°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 39° and 45°. Find the exterior angle.",
+    "options": [
+      "84°",
+      "39°",
+      "99°",
+      "96°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(39° + 45° = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 72° and 32°. Find the exterior angle.",
+    "options": [
+      "104°",
+      "72°",
+      "76°",
+      "119°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(72° + 32° = 104°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 44° and 70°. Find the third angle.",
+    "options": [
+      "246°",
+      "66°",
+      "76°",
+      "114°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (44° + 70°) = 180° - 114° = 66°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 56° and 60°. Find the exterior angle.",
+    "options": [
+      "116°",
+      "56°",
+      "131°",
+      "64°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(56° + 60° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 47° and 25°. Find the third angle.",
+    "options": [
+      "288°",
+      "118°",
+      "72°",
+      "108°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (47° + 25°) = 180° - 72° = 108°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 72° and 78°. Find the exterior angle.",
+    "options": [
+      "165°",
+      "150°",
+      "30°",
+      "72°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(72° + 78° = 150°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 44° and 88°. Find the third angle.",
+    "options": [
+      "132°",
+      "58°",
+      "228°",
+      "48°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (44° + 88°) = 180° - 132° = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 56° and 30°. Find the third angle.",
+    "options": [
+      "94°",
+      "104°",
+      "86°",
+      "274°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (56° + 30°) = 180° - 86° = 94°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 86° and 52°. Find the exterior angle.",
+    "options": [
+      "153°",
+      "42°",
+      "138°",
+      "86°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(86° + 52° = 138°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 25° and 51°. Find the exterior angle.",
+    "options": [
+      "76°",
+      "104°",
+      "91°",
+      "25°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(25° + 51° = 76°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 49° and 47°. Find the third angle.",
+    "options": [
+      "94°",
+      "264°",
+      "84°",
+      "96°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (49° + 47°) = 180° - 96° = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 79° and 77°. Find the third angle.",
+    "options": [
+      "204°",
+      "156°",
+      "34°",
+      "24°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (79° + 77°) = 180° - 156° = 24°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 36°. Find one of the base angles.",
+    "options": [
+      "82°",
+      "36°",
+      "72°",
+      "144°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 36° = 144°\\)\n\nEach base angle \\(= \\frac{144°}{2} = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 85° and 59°. Find the exterior angle.",
+    "options": [
+      "85°",
+      "144°",
+      "159°",
+      "36°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(85° + 59° = 144°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 102°. Find one of the base angles.",
+    "options": [
+      "39°",
+      "102°",
+      "78°",
+      "49°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 102° = 78°\\)\n\nEach base angle \\(= \\frac{78°}{2} = 39°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 62° and 77°. Find the third angle.",
+    "options": [
+      "139°",
+      "221°",
+      "41°",
+      "51°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (62° + 77°) = 180° - 139° = 41°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 42° and 106°. Find the third angle.",
+    "options": [
+      "212°",
+      "42°",
+      "32°",
+      "148°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (42° + 106°) = 180° - 148° = 32°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 62° and 22°. Find the third angle.",
+    "options": [
+      "96°",
+      "84°",
+      "276°",
+      "106°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (62° + 22°) = 180° - 84° = 96°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 46° and 52°. Find the exterior angle.",
+    "options": [
+      "46°",
+      "113°",
+      "98°",
+      "82°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(46° + 52° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 136°. Find one of the base angles.",
+    "options": [
+      "32°",
+      "44°",
+      "136°",
+      "22°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 136° = 44°\\)\n\nEach base angle \\(= \\frac{44°}{2} = 22°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 62° and 70°. Find the exterior angle.",
+    "options": [
+      "48°",
+      "132°",
+      "147°",
+      "62°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(62° + 70° = 132°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 69° and 62°. Find the exterior angle.",
+    "options": [
+      "69°",
+      "131°",
+      "146°",
+      "49°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(69° + 62° = 131°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 52° and 72°. Find the exterior angle.",
+    "options": [
+      "56°",
+      "139°",
+      "52°",
+      "124°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(52° + 72° = 124°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 75° and 65°. Find the exterior angle.",
+    "options": [
+      "75°",
+      "155°",
+      "140°",
+      "40°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(75° + 65° = 140°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 64° and 27°. Find the third angle.",
+    "options": [
+      "89°",
+      "269°",
+      "99°",
+      "91°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (64° + 27°) = 180° - 91° = 89°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 33° and 60°. Find the exterior angle.",
+    "options": [
+      "93°",
+      "108°",
+      "33°",
+      "87°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(33° + 60° = 93°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 38° and 89°. Find the exterior angle.",
+    "options": [
+      "38°",
+      "142°",
+      "53°",
+      "127°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(38° + 89° = 127°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 66° and 101°. Find the third angle.",
+    "options": [
+      "23°",
+      "13°",
+      "193°",
+      "167°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (66° + 101°) = 180° - 167° = 13°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 65° and 106°. Find the third angle.",
+    "options": [
+      "189°",
+      "9°",
+      "171°",
+      "19°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (65° + 106°) = 180° - 171° = 9°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 71° and 41°. Find the exterior angle.",
+    "options": [
+      "71°",
+      "68°",
+      "127°",
+      "112°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(71° + 41° = 112°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 88° and 85°. Find the third angle.",
+    "options": [
+      "187°",
+      "7°",
+      "17°",
+      "173°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (88° + 85°) = 180° - 173° = 7°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 46° and 80°. Find the third angle.",
+    "options": [
+      "126°",
+      "64°",
+      "54°",
+      "234°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (46° + 80°) = 180° - 126° = 54°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 130°. Find one of the base angles.",
+    "options": [
+      "35°",
+      "25°",
+      "130°",
+      "50°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 130° = 50°\\)\n\nEach base angle \\(= \\frac{50°}{2} = 25°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 25° and 94°. Find the third angle.",
+    "options": [
+      "71°",
+      "241°",
+      "119°",
+      "61°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (25° + 94°) = 180° - 119° = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 46° and 85°. Find the third angle.",
+    "options": [
+      "229°",
+      "131°",
+      "49°",
+      "59°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (46° + 85°) = 180° - 131° = 49°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 93° and 65°. Find the third angle.",
+    "options": [
+      "202°",
+      "22°",
+      "158°",
+      "32°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (93° + 65°) = 180° - 158° = 22°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 53° and 78°. Find the exterior angle.",
+    "options": [
+      "53°",
+      "49°",
+      "146°",
+      "131°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(53° + 78° = 131°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 40° and 20°. Find the third angle.",
+    "options": [
+      "60°",
+      "300°",
+      "130°",
+      "120°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (40° + 20°) = 180° - 60° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 42° and 51°. Find the third angle.",
+    "options": [
+      "97°",
+      "87°",
+      "93°",
+      "267°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (42° + 51°) = 180° - 93° = 87°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 38° and 60°. Find the exterior angle.",
+    "options": [
+      "82°",
+      "98°",
+      "113°",
+      "38°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(38° + 60° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 50° and 88°. Find the third angle.",
+    "options": [
+      "138°",
+      "52°",
+      "222°",
+      "42°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (50° + 88°) = 180° - 138° = 42°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 61° and 81°. Find the exterior angle.",
+    "options": [
+      "142°",
+      "61°",
+      "157°",
+      "38°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(61° + 81° = 142°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 65° and 48°. Find the third angle.",
+    "options": [
+      "67°",
+      "247°",
+      "77°",
+      "113°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (65° + 48°) = 180° - 113° = 67°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 38° and 43°. Find the exterior angle.",
+    "options": [
+      "81°",
+      "96°",
+      "99°",
+      "38°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(38° + 43° = 81°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 100°. Find one of the base angles.",
+    "options": [
+      "80°",
+      "40°",
+      "50°",
+      "100°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 100° = 80°\\)\n\nEach base angle \\(= \\frac{80°}{2} = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 80° and 70°. Find the exterior angle.",
+    "options": [
+      "150°",
+      "80°",
+      "165°",
+      "30°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(80° + 70° = 150°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 80° and 33°. Find the exterior angle.",
+    "options": [
+      "80°",
+      "67°",
+      "128°",
+      "113°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(80° + 33° = 113°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 124°. Find one of the base angles.",
+    "options": [
+      "56°",
+      "124°",
+      "38°",
+      "28°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 124° = 56°\\)\n\nEach base angle \\(= \\frac{56°}{2} = 28°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 73° and 22°. Find the third angle.",
+    "options": [
+      "95°",
+      "265°",
+      "85°",
+      "17°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (73° + 22°) = 180° - 95° = 85°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 38° and 90°. Find the exterior angle.",
+    "options": [
+      "52°",
+      "143°",
+      "38°",
+      "128°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(38° + 90° = 128°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 40° and 83°. Find the third angle.",
+    "options": [
+      "57°",
+      "237°",
+      "67°",
+      "123°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (40° + 83°) = 180° - 123° = 57°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 50°. Find the exterior angle.",
+    "options": [
+      "92°",
+      "42°",
+      "107°",
+      "88°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 50° = 92°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 86°. Find one of the base angles.",
+    "options": [
+      "47°",
+      "94°",
+      "57°",
+      "86°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 86° = 94°\\)\n\nEach base angle \\(= \\frac{94°}{2} = 47°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 43° and 97°. Find the third angle.",
+    "options": [
+      "50°",
+      "220°",
+      "40°",
+      "140°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (43° + 97°) = 180° - 140° = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 31° and 61°. Find the exterior angle.",
+    "options": [
+      "31°",
+      "107°",
+      "92°",
+      "88°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(31° + 61° = 92°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 68° and 90°. Find the exterior angle.",
+    "options": [
+      "68°",
+      "173°",
+      "158°",
+      "22°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(68° + 90° = 158°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 75° and 86°. Find the third angle.",
+    "options": [
+      "19°",
+      "199°",
+      "29°",
+      "161°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (75° + 86°) = 180° - 161° = 19°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 52° and 50°. Find the exterior angle.",
+    "options": [
+      "117°",
+      "102°",
+      "78°",
+      "52°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(52° + 50° = 102°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The vertical angle of an isosceles triangle is 84°. Find one of the base angles.",
+    "options": [
+      "84°",
+      "48°",
+      "96°",
+      "58°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The base angles of an isosceles triangle are equal.\n\nSum of base angles \\(= 180° - 84° = 96°\\)\n\nEach base angle \\(= \\frac{96°}{2} = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 32° and 40°. Find the third angle.",
+    "options": [
+      "72°",
+      "108°",
+      "288°",
+      "118°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (32° + 40°) = 180° - 72° = 108°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 47° and 25°. Find the exterior angle.",
+    "options": [
+      "72°",
+      "108°",
+      "47°",
+      "87°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(47° + 25° = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 35° and 83°. Find the exterior angle.",
+    "options": [
+      "133°",
+      "62°",
+      "118°",
+      "35°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(35° + 83° = 118°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 27° and 56°. Find the exterior angle.",
+    "options": [
+      "97°",
+      "27°",
+      "83°",
+      "98°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(27° + 56° = 83°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 87°. Find the exterior angle.",
+    "options": [
+      "129°",
+      "144°",
+      "42°",
+      "51°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 87° = 129°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 36° and 74°. Find the exterior angle.",
+    "options": [
+      "110°",
+      "36°",
+      "70°",
+      "125°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(36° + 74° = 110°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 78° and 35°. Find the third angle.",
+    "options": [
+      "247°",
+      "67°",
+      "77°",
+      "113°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (78° + 35°) = 180° - 113° = 67°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 29° and 78°. Find the third angle.",
+    "options": [
+      "73°",
+      "83°",
+      "253°",
+      "107°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (29° + 78°) = 180° - 107° = 73°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 53° and 21°. Find the third angle.",
+    "options": [
+      "116°",
+      "286°",
+      "74°",
+      "106°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (53° + 21°) = 180° - 74° = 106°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 27° and 37°. Find the exterior angle.",
+    "options": [
+      "79°",
+      "116°",
+      "27°",
+      "64°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(27° + 37° = 64°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 55° and 44°. Find the exterior angle.",
+    "options": [
+      "114°",
+      "55°",
+      "81°",
+      "99°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(55° + 44° = 99°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles of a triangle are 62° and 57°. Find the third angle.",
+    "options": [
+      "61°",
+      "241°",
+      "119°",
+      "71°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angles of a triangle add up to 180°.\n\n\\(180° - (62° + 57°) = 180° - 119° = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 42° and 76°. Find the exterior angle.",
+    "options": [
+      "118°",
+      "62°",
+      "133°",
+      "42°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(42° + 76° = 118°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a triangle, the two interior opposite angles are 33° and 81°. Find the exterior angle.",
+    "options": [
+      "114°",
+      "129°",
+      "66°",
+      "33°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n\\(33° + 81° = 114°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "dSzM8qxvrxvSi7jlI5mG",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

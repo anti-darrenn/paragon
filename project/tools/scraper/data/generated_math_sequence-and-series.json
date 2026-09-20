@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 30 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(24\\)",
+      "\\(\\frac{15}{2}\\)",
+      "\\(25\\)",
+      "\\(\\frac{75}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{30}{1 - \\frac{1}{5}} = \\frac{30}{\\frac{4}{5}}\\)\n\n\\(= 30 \\times \\frac{5}{4} = \\frac{75}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is 25 and the 12th term is 79. Find the common difference.",
+    "options": [
+      "7",
+      "-6",
+      "5",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{12} - T_{3} = (12-3)d\\)\n\n\\(79 - (25) = 9d\\)\n\n\\(54 = 9d\\)\n\n\\(d = \\frac{54}{9} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 9, 10, 11, 12, ...",
+    "options": [
+      "12",
+      "21",
+      "14",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(10 - (9) = 1\\).\n\nSo the next term is \\(12 + (1) = 13\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 19 terms of an A.P. whose first term is 6 and common difference is 9.",
+    "options": [
+      "1738.5",
+      "1653",
+      "3192",
+      "1672"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{19} = \\frac{19}{2}[2(6) + (19-1)(9)]\\)\n\n\\(= \\frac{19}{2}[12 + 162] = \\frac{19}{2} \\times 174 = 1653\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 6, 15, 24, 33, ...",
+    "options": [
+      "39",
+      "33",
+      "42",
+      "51"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(15 - (6) = 9\\).\n\nSo the next term is \\(33 + (9) = 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is -6 and the 14th term is -36. Find the common difference.",
+    "options": [
+      "-2",
+      "-4",
+      "3",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{14} - T_{4} = (14-4)d\\)\n\n\\(-36 - (-6) = 10d\\)\n\n\\(-30 = 10d\\)\n\n\\(d = \\frac{-30}{10} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is -1 and the 8th term is -4. Find the common difference.",
+    "options": [
+      "0",
+      "-1",
+      "-2",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{8} - T_{5} = (8-5)d\\)\n\n\\(-4 - (-1) = 3d\\)\n\n\\(-3 = 3d\\)\n\n\\(d = \\frac{-3}{3} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 34 and the 7th term is 40. Find the common difference.",
+    "options": [
+      "-6",
+      "6",
+      "7",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{7} - T_{6} = (7-6)d\\)\n\n\\(40 - (34) = 1d\\)\n\n\\(6 = 1d\\)\n\n\\(d = \\frac{6}{1} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -4 and the common difference is 1. Find the 25th term.",
+    "options": [
+      "20",
+      "-100",
+      "-28",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{25} = -4 + (25-1)(1)\\)\n\n\\(= -4 + 24 \\times 1 = -4 + 24 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 6 and common ratio 2.",
+    "options": [
+      "102",
+      "96",
+      "48",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{6(2^{4} - 1)}{2 - 1} = \\frac{6(16 - 1)}{1}\\)\n\n\\(= \\frac{6 \\times 15}{1} = 90\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 11 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{22}{3}\\)",
+      "\\(\\frac{33}{2}\\)",
+      "\\(\\frac{11}{2}\\)",
+      "\\(\\frac{33}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{11}{1 - \\frac{1}{3}} = \\frac{11}{\\frac{2}{3}}\\)\n\n\\(= 11 \\times \\frac{3}{2} = \\frac{33}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 13 terms of an A.P. whose first term is 11 and common difference is 7.",
+    "options": [
+      "702",
+      "734.5",
+      "689",
+      "1235"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{13} = \\frac{13}{2}[2(11) + (13-1)(7)]\\)\n\n\\(= \\frac{13}{2}[22 + 84] = \\frac{13}{2} \\times 106 = 689\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is 16 and the 10th term is 65. Find the common difference.",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{10} - T_{3} = (10-3)d\\)\n\n\\(65 - (16) = 7d\\)\n\n\\(49 = 7d\\)\n\n\\(d = \\frac{49}{7} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 8 terms of an A.P. whose first term is 5 and common difference is 6.",
+    "options": [
+      "208",
+      "232",
+      "216",
+      "376"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{8} = \\frac{8}{2}[2(5) + (8-1)(6)]\\)\n\n\\(= \\frac{8}{2}[10 + 42] = \\frac{8}{2} \\times 52 = 208\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is 24 and the 9th term is 66. Find the common difference.",
+    "options": [
+      "-7",
+      "7",
+      "8",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{9} - T_{3} = (9-3)d\\)\n\n\\(66 - (24) = 6d\\)\n\n\\(42 = 6d\\)\n\n\\(d = \\frac{42}{6} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 2 and the common ratio is 3. Find the 6th term.",
+    "options": [
+      "30",
+      "162",
+      "1458",
+      "486"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 2 \\times 3^{6-1} = 2 \\times 3^{5}\\)\n\n\\(= 2 \\times 243 = 486\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 23 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{23}{5}\\)",
+      "\\(\\frac{138}{7}\\)",
+      "\\(\\frac{115}{6}\\)",
+      "\\(\\frac{138}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{23}{1 - \\frac{1}{6}} = \\frac{23}{\\frac{5}{6}}\\)\n\n\\(= 23 \\times \\frac{6}{5} = \\frac{138}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 15 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(\\frac{15}{4}\\)",
+      "\\(\\frac{75}{4}\\)",
+      "\\(12\\)",
+      "\\(\\frac{25}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{15}{1 - \\frac{1}{5}} = \\frac{15}{\\frac{4}{5}}\\)\n\n\\(= 15 \\times \\frac{5}{4} = \\frac{75}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -4, -9, -14, -19, ...",
+    "options": [
+      "-29",
+      "-19",
+      "-24",
+      "-23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(-9 - (-4) = -5\\).\n\nSo the next term is \\(-19 + (-5) = -24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 12 terms of an A.P. whose first term is 12 and common difference is 6.",
+    "options": [
+      "552",
+      "936",
+      "540",
+      "576"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{12} = \\frac{12}{2}[2(12) + (12-1)(6)]\\)\n\n\\(= \\frac{12}{2}[24 + 66] = \\frac{12}{2} \\times 90 = 540\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 3 and common ratio 3.",
+    "options": [
+      "1092",
+      "1089",
+      "729",
+      "1095"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{3(3^{6} - 1)}{3 - 1} = \\frac{3(729 - 1)}{2}\\)\n\n\\(= \\frac{3 \\times 728}{2} = 1092\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 8 terms of an A.P. whose first term is 3 and common difference is 2.",
+    "options": [
+      "80",
+      "88",
+      "136",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{8} = \\frac{8}{2}[2(3) + (8-1)(2)]\\)\n\n\\(= \\frac{8}{2}[6 + 14] = \\frac{8}{2} \\times 20 = 80\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 19 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{38}{3}\\)",
+      "\\(\\frac{19}{2}\\)",
+      "\\(19\\)",
+      "\\(38\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{19}{1 - \\frac{1}{2}} = \\frac{19}{\\frac{1}{2}}\\)\n\n\\(= 19 \\times \\frac{2}{1} = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 1 and the common difference is 5. Find the 19th term.",
+    "options": [
+      "91",
+      "96",
+      "-89",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{19} = 1 + (19-1)(5)\\)\n\n\\(= 1 + 18 \\times 5 = 1 + 90 = 91\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 8 terms of an A.P. whose first term is 1 and common difference is 7.",
+    "options": [
+      "212",
+      "204",
+      "232",
+      "400"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{8} = \\frac{8}{2}[2(1) + (8-1)(7)]\\)\n\n\\(= \\frac{8}{2}[2 + 49] = \\frac{8}{2} \\times 51 = 204\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 4 and common ratio 3.",
+    "options": [
+      "164",
+      "156",
+      "160",
+      "108"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{4(3^{4} - 1)}{3 - 1} = \\frac{4(81 - 1)}{2}\\)\n\n\\(= \\frac{4 \\times 80}{2} = 160\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 13 terms of an A.P. whose first term is 12 and common difference is 2.",
+    "options": [
+      "325",
+      "299",
+      "312",
+      "468"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{13} = \\frac{13}{2}[2(12) + (13-1)(2)]\\)\n\n\\(= \\frac{13}{2}[24 + 24] = \\frac{13}{2} \\times 48 = 312\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 1 and the common ratio is 3. Find the 6th term.",
+    "options": [
+      "15",
+      "729",
+      "243",
+      "81"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 1 \\times 3^{6-1} = 1 \\times 3^{5}\\)\n\n\\(= 1 \\times 243 = 243\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 14 and the 10th term is 62. Find the common difference.",
+    "options": [
+      "7",
+      "5",
+      "-6",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{10} - T_{2} = (10-2)d\\)\n\n\\(62 - (14) = 8d\\)\n\n\\(48 = 8d\\)\n\n\\(d = \\frac{48}{8} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 11, 18, 25, 32, ...",
+    "options": [
+      "32",
+      "46",
+      "43",
+      "39"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(18 - (11) = 7\\).\n\nSo the next term is \\(32 + (7) = 39\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 13 and the 14th term is 109. Find the common difference.",
+    "options": [
+      "-8",
+      "7",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{14} - T_{2} = (14-2)d\\)\n\n\\(109 - (13) = 12d\\)\n\n\\(96 = 12d\\)\n\n\\(d = \\frac{96}{12} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 13 and the common difference is 4. Find the 12th term.",
+    "options": [
+      "156",
+      "57",
+      "-31",
+      "61"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{12} = 13 + (12-1)(4)\\)\n\n\\(= 13 + 11 \\times 4 = 13 + 44 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 15 and the common difference is -5. Find the 16th term.",
+    "options": [
+      "-65",
+      "-60",
+      "240",
+      "90"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{16} = 15 + (16-1)(-5)\\)\n\n\\(= 15 + 15 \\times -5 = 15 + -75 = -60\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 6 and common ratio 3.",
+    "options": [
+      "240",
+      "234",
+      "246",
+      "162"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{6(3^{4} - 1)}{3 - 1} = \\frac{6(81 - 1)}{2}\\)\n\n\\(= \\frac{6 \\times 80}{2} = 240\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 10 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{20}{3}\\)",
+      "\\(20\\)",
+      "\\(10\\)",
+      "\\(5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{10}{1 - \\frac{1}{2}} = \\frac{10}{\\frac{1}{2}}\\)\n\n\\(= 10 \\times \\frac{2}{1} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 6 and the common difference is -3. Find the 11th term.",
+    "options": [
+      "-27",
+      "-24",
+      "36",
+      "66"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{11} = 6 + (11-1)(-3)\\)\n\n\\(= 6 + 10 \\times -3 = 6 + -30 = -24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 1 and the common ratio is 3. Find the 5th term.",
+    "options": [
+      "12",
+      "27",
+      "81",
+      "243"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 1 \\times 3^{5-1} = 1 \\times 3^{4}\\)\n\n\\(= 1 \\times 81 = 81\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 13 terms of an A.P. whose first term is 4 and common difference is 3.",
+    "options": [
+      "520",
+      "305.5",
+      "286",
+      "299"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{13} = \\frac{13}{2}[2(4) + (13-1)(3)]\\)\n\n\\(= \\frac{13}{2}[8 + 36] = \\frac{13}{2} \\times 44 = 286\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 10, 17, 24, 31, ...",
+    "options": [
+      "31",
+      "45",
+      "38",
+      "41"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(17 - (10) = 7\\).\n\nSo the next term is \\(31 + (7) = 38\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 15 terms of an A.P. whose first term is 11 and common difference is 7.",
+    "options": [
+      "1635",
+      "900",
+      "952.5",
+      "915"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{15} = \\frac{15}{2}[2(11) + (15-1)(7)]\\)\n\n\\(= \\frac{15}{2}[22 + 98] = \\frac{15}{2} \\times 120 = 900\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 12, 8, 4, 0, ...",
+    "options": [
+      "-8",
+      "12",
+      "-4",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(8 - (12) = -4\\).\n\nSo the next term is \\(0 + (-4) = -4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 5 and the common ratio is 2. Find the 7th term.",
+    "options": [
+      "60",
+      "320",
+      "160",
+      "640"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 5 \\times 2^{7-1} = 5 \\times 2^{6}\\)\n\n\\(= 5 \\times 64 = 320\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 28 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(\\frac{112}{5}\\)",
+      "\\(7\\)",
+      "\\(\\frac{70}{3}\\)",
+      "\\(35\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{28}{1 - \\frac{1}{5}} = \\frac{28}{\\frac{4}{5}}\\)\n\n\\(= 28 \\times \\frac{5}{4} = 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 13 and the 11th term is 25. Find the common difference.",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{11} - T_{5} = (11-5)d\\)\n\n\\(25 - (13) = 6d\\)\n\n\\(12 = 6d\\)\n\n\\(d = \\frac{12}{6} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 29 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{145}{6}\\)",
+      "\\(\\frac{29}{5}\\)",
+      "\\(\\frac{174}{7}\\)",
+      "\\(\\frac{174}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{29}{1 - \\frac{1}{6}} = \\frac{29}{\\frac{5}{6}}\\)\n\n\\(= 29 \\times \\frac{6}{5} = \\frac{174}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 5 and the common ratio is 3. Find the 5th term.",
+    "options": [
+      "135",
+      "405",
+      "1215",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 5 \\times 3^{5-1} = 5 \\times 3^{4}\\)\n\n\\(= 5 \\times 81 = 405\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 1 and the common ratio is 4. Find the 3th term.",
+    "options": [
+      "64",
+      "4",
+      "16",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{3} = 1 \\times 4^{3-1} = 1 \\times 4^{2}\\)\n\n\\(= 1 \\times 16 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 11 and common ratio \\(\\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{11}{3}\\)",
+      "\\(\\frac{44}{3}\\)",
+      "\\(\\frac{33}{4}\\)",
+      "\\(\\frac{44}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{11}{1 - \\frac{1}{4}} = \\frac{11}{\\frac{3}{4}}\\)\n\n\\(= 11 \\times \\frac{4}{3} = \\frac{44}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 16 terms of an A.P. whose first term is 3 and common difference is 2.",
+    "options": [
+      "288",
+      "272",
+      "528",
+      "304"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{16} = \\frac{16}{2}[2(3) + (16-1)(2)]\\)\n\n\\(= \\frac{16}{2}[6 + 30] = \\frac{16}{2} \\times 36 = 288\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 3, -2, -7, -12, ...",
+    "options": [
+      "-22",
+      "-12",
+      "-9",
+      "-17"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(-2 - (3) = -5\\).\n\nSo the next term is \\(-12 + (-5) = -17\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 4. Find the 7th term.",
+    "options": [
+      "96",
+      "4096",
+      "16384",
+      "65536"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 4 \\times 4^{7-1} = 4 \\times 4^{6}\\)\n\n\\(= 4 \\times 4096 = 16384\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 8 terms of an A.P. whose first term is 10 and common difference is 5.",
+    "options": [
+      "360",
+      "240",
+      "228",
+      "220"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{8} = \\frac{8}{2}[2(10) + (8-1)(5)]\\)\n\n\\(= \\frac{8}{2}[20 + 35] = \\frac{8}{2} \\times 55 = 220\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 11, 6, 1, -4, ...",
+    "options": [
+      "7",
+      "-9",
+      "-4",
+      "-14"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(6 - (11) = -5\\).\n\nSo the next term is \\(-4 + (-5) = -9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 12 and the 12th term is 18. Find the common difference.",
+    "options": [
+      "2",
+      "-1",
+      "0",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{12} - T_{6} = (12-6)d\\)\n\n\\(18 - (12) = 6d\\)\n\n\\(6 = 6d\\)\n\n\\(d = \\frac{6}{6} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 51 and the 10th term is 87. Find the common difference.",
+    "options": [
+      "8",
+      "9",
+      "-9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{10} - T_{6} = (10-6)d\\)\n\n\\(87 - (51) = 4d\\)\n\n\\(36 = 4d\\)\n\n\\(d = \\frac{36}{4} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 4 and the common difference is 1. Find the 25th term.",
+    "options": [
+      "28",
+      "-20",
+      "29",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{25} = 4 + (25-1)(1)\\)\n\n\\(= 4 + 24 \\times 1 = 4 + 24 = 28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is -4 and the 8th term is -19. Find the common difference.",
+    "options": [
+      "3",
+      "-2",
+      "-4",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{8} - T_{3} = (8-3)d\\)\n\n\\(-19 - (-4) = 5d\\)\n\n\\(-15 = 5d\\)\n\n\\(d = \\frac{-15}{5} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 1 and common ratio 4.",
+    "options": [
+      "1024",
+      "1365",
+      "1365.6666666666667",
+      "1366"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{1(4^{6} - 1)}{4 - 1} = \\frac{1(4096 - 1)}{3}\\)\n\n\\(= \\frac{1 \\times 4095}{3} = 1365\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 0 and the common difference is 2. Find the 14th term.",
+    "options": [
+      "-26",
+      "0",
+      "26",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{14} = 0 + (14-1)(2)\\)\n\n\\(= 0 + 13 \\times 2 = 0 + 26 = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is 11 and the 10th term is 18. Find the common difference.",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{10} - T_{3} = (10-3)d\\)\n\n\\(18 - (11) = 7d\\)\n\n\\(7 = 7d\\)\n\n\\(d = \\frac{7}{7} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -9 and the common difference is 4. Find the 14th term.",
+    "options": [
+      "47",
+      "-126",
+      "-61",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{14} = -9 + (14-1)(4)\\)\n\n\\(= -9 + 13 \\times 4 = -9 + 52 = 43\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 20 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{50}{3}\\)",
+      "\\(\\frac{120}{7}\\)",
+      "\\(4\\)",
+      "\\(24\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{20}{1 - \\frac{1}{6}} = \\frac{20}{\\frac{5}{6}}\\)\n\n\\(= 20 \\times \\frac{6}{5} = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 3, 7, 11, 15, ...",
+    "options": [
+      "19",
+      "18",
+      "23",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(7 - (3) = 4\\).\n\nSo the next term is \\(15 + (4) = 19\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 6 and the common ratio is 3. Find the 7th term.",
+    "options": [
+      "1458",
+      "108",
+      "13122",
+      "4374"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 6 \\times 3^{7-1} = 6 \\times 3^{6}\\)\n\n\\(= 6 \\times 729 = 4374\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 2 and common ratio 2.",
+    "options": [
+      "16",
+      "32",
+      "30",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{2(2^{4} - 1)}{2 - 1} = \\frac{2(16 - 1)}{1}\\)\n\n\\(= \\frac{2 \\times 15}{1} = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 3 and common ratio 4.",
+    "options": [
+      "4098",
+      "4097",
+      "4095",
+      "3072"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{3(4^{6} - 1)}{4 - 1} = \\frac{3(4096 - 1)}{3}\\)\n\n\\(= \\frac{3 \\times 4095}{3} = 4095\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 11, 19, 27, 35, ...",
+    "options": [
+      "35",
+      "43",
+      "51",
+      "46"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(19 - (11) = 8\\).\n\nSo the next term is \\(35 + (8) = 43\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 9 and the common difference is -8. Find the 12th term.",
+    "options": [
+      "97",
+      "-87",
+      "108",
+      "-79"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{12} = 9 + (12-1)(-8)\\)\n\n\\(= 9 + 11 \\times -8 = 9 + -88 = -79\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 2. Find the 7th term.",
+    "options": [
+      "512",
+      "48",
+      "256",
+      "128"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 4 \\times 2^{7-1} = 4 \\times 2^{6}\\)\n\n\\(= 4 \\times 64 = 256\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 2 and the common ratio is 3. Find the 7th term.",
+    "options": [
+      "4374",
+      "486",
+      "36",
+      "1458"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 2 \\times 3^{7-1} = 2 \\times 3^{6}\\)\n\n\\(= 2 \\times 729 = 1458\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 12, 15, 18, 21, ...",
+    "options": [
+      "21",
+      "27",
+      "24",
+      "33"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(15 - (12) = 3\\).\n\nSo the next term is \\(21 + (3) = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 5 and the common difference is -2. Find the 16th term.",
+    "options": [
+      "80",
+      "-25",
+      "35",
+      "-27"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{16} = 5 + (16-1)(-2)\\)\n\n\\(= 5 + 15 \\times -2 = 5 + -30 = -25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 15 and the 12th term is 27. Find the common difference.",
+    "options": [
+      "2",
+      "-2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{12} - T_{6} = (12-6)d\\)\n\n\\(27 - (15) = 6d\\)\n\n\\(12 = 6d\\)\n\n\\(d = \\frac{12}{6} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -1 and the common difference is 4. Find the 21th term.",
+    "options": [
+      "79",
+      "83",
+      "-21",
+      "-81"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{21} = -1 + (21-1)(4)\\)\n\n\\(= -1 + 20 \\times 4 = -1 + 80 = 79\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 7, 16, 25, 34, ...",
+    "options": [
+      "34",
+      "41",
+      "52",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(16 - (7) = 9\\).\n\nSo the next term is \\(34 + (9) = 43\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -4, 3, 10, 17, ...",
+    "options": [
+      "17",
+      "24",
+      "31",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(3 - (-4) = 7\\).\n\nSo the next term is \\(17 + (7) = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 26 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(13\\)",
+      "\\(26\\)",
+      "\\(\\frac{52}{3}\\)",
+      "\\(52\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{26}{1 - \\frac{1}{2}} = \\frac{26}{\\frac{1}{2}}\\)\n\n\\(= 26 \\times \\frac{2}{1} = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 20 terms of an A.P. whose first term is 11 and common difference is 5.",
+    "options": [
+      "1170",
+      "2120",
+      "1220",
+      "1190"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{20} = \\frac{20}{2}[2(11) + (20-1)(5)]\\)\n\n\\(= \\frac{20}{2}[22 + 95] = \\frac{20}{2} \\times 117 = 1170\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 5 and the common ratio is 4. Find the 3th term.",
+    "options": [
+      "320",
+      "80",
+      "40",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{3} = 5 \\times 4^{3-1} = 5 \\times 4^{2}\\)\n\n\\(= 5 \\times 16 = 80\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -1 and the common difference is 6. Find the 20th term.",
+    "options": [
+      "-115",
+      "119",
+      "-20",
+      "113"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{20} = -1 + (20-1)(6)\\)\n\n\\(= -1 + 19 \\times 6 = -1 + 114 = 113\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 9 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{15}{2}\\)",
+      "\\(\\frac{54}{7}\\)",
+      "\\(\\frac{54}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{9}{1 - \\frac{1}{6}} = \\frac{9}{\\frac{5}{6}}\\)\n\n\\(= 9 \\times \\frac{6}{5} = \\frac{54}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 2, 11, 20, 29, ...",
+    "options": [
+      "47",
+      "38",
+      "31",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(11 - (2) = 9\\).\n\nSo the next term is \\(29 + (9) = 38\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 6, 5, 4, 3, ...",
+    "options": [
+      "9",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(5 - (6) = -1\\).\n\nSo the next term is \\(3 + (-1) = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 19 terms of an A.P. whose first term is 7 and common difference is 4.",
+    "options": [
+      "1501",
+      "817",
+      "836",
+      "855"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{19} = \\frac{19}{2}[2(7) + (19-1)(4)]\\)\n\n\\(= \\frac{19}{2}[14 + 72] = \\frac{19}{2} \\times 86 = 817\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 17 terms of an A.P. whose first term is 6 and common difference is 1.",
+    "options": [
+      "246.5",
+      "238",
+      "255",
+      "374"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{17} = \\frac{17}{2}[2(6) + (17-1)(1)]\\)\n\n\\(= \\frac{17}{2}[12 + 16] = \\frac{17}{2} \\times 28 = 238\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 2 and common ratio 4.",
+    "options": [
+      "683.3333333333334",
+      "682",
+      "512",
+      "684"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{2(4^{5} - 1)}{4 - 1} = \\frac{2(1024 - 1)}{3}\\)\n\n\\(= \\frac{2 \\times 1023}{3} = 682\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is 3 and the 12th term is -6. Find the common difference.",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{12} - T_{3} = (12-3)d\\)\n\n\\(-6 - (3) = 9d\\)\n\n\\(-9 = 9d\\)\n\n\\(d = \\frac{-9}{9} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 5, 0, -5, -10, ...",
+    "options": [
+      "-10",
+      "-20",
+      "-15",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(0 - (5) = -5\\).\n\nSo the next term is \\(-10 + (-5) = -15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 2 and the common ratio is 4. Find the 7th term.",
+    "options": [
+      "48",
+      "32768",
+      "8192",
+      "2048"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 2 \\times 4^{7-1} = 2 \\times 4^{6}\\)\n\n\\(= 2 \\times 4096 = 8192\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 11 terms of an A.P. whose first term is 3 and common difference is 7.",
+    "options": [
+      "418",
+      "456.5",
+      "803",
+      "429"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{11} = \\frac{11}{2}[2(3) + (11-1)(7)]\\)\n\n\\(= \\frac{11}{2}[6 + 70] = \\frac{11}{2} \\times 76 = 418\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 6 and common ratio 3.",
+    "options": [
+      "726",
+      "732",
+      "486",
+      "720"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{6(3^{5} - 1)}{3 - 1} = \\frac{6(243 - 1)}{2}\\)\n\n\\(= \\frac{6 \\times 242}{2} = 726\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 13 and the common difference is 9. Find the 10th term.",
+    "options": [
+      "94",
+      "130",
+      "103",
+      "-68"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{10} = 13 + (10-1)(9)\\)\n\n\\(= 13 + 9 \\times 9 = 13 + 81 = 94\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 3 and the common ratio is 4. Find the 5th term.",
+    "options": [
+      "48",
+      "192",
+      "3072",
+      "768"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 3 \\times 4^{5-1} = 3 \\times 4^{4}\\)\n\n\\(= 3 \\times 256 = 768\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 8 and the common ratio is 4. Find the 3th term.",
+    "options": [
+      "64",
+      "512",
+      "32",
+      "128"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{3} = 8 \\times 4^{3-1} = 8 \\times 4^{2}\\)\n\n\\(= 8 \\times 16 = 128\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 19 and the 7th term is 54. Find the common difference.",
+    "options": [
+      "-7",
+      "7",
+      "6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{7} - T_{2} = (7-2)d\\)\n\n\\(54 - (19) = 5d\\)\n\n\\(35 = 5d\\)\n\n\\(d = \\frac{35}{5} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 4 and common ratio 4.",
+    "options": [
+      "342.6666666666667",
+      "340",
+      "344",
+      "256"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{4(4^{4} - 1)}{4 - 1} = \\frac{4(256 - 1)}{3}\\)\n\n\\(= \\frac{4 \\times 255}{3} = 340\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 1, 0, -1, -2, ...",
+    "options": [
+      "-2",
+      "-4",
+      "-3",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(0 - (1) = -1\\).\n\nSo the next term is \\(-2 + (-1) = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 15 and the common difference is -2. Find the 23th term.",
+    "options": [
+      "59",
+      "-29",
+      "345",
+      "-31"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{23} = 15 + (23-1)(-2)\\)\n\n\\(= 15 + 22 \\times -2 = 15 + -44 = -29\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 7 terms of an A.P. whose first term is 9 and common difference is 2.",
+    "options": [
+      "98",
+      "112",
+      "147",
+      "105"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{7} = \\frac{7}{2}[2(9) + (7-1)(2)]\\)\n\n\\(= \\frac{7}{2}[18 + 12] = \\frac{7}{2} \\times 30 = 105\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 51 and the 12th term is 105. Find the common difference.",
+    "options": [
+      "-9",
+      "9",
+      "8",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{12} - T_{6} = (12-6)d\\)\n\n\\(105 - (51) = 6d\\)\n\n\\(54 = 6d\\)\n\n\\(d = \\frac{54}{6} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 31 and the 13th term is 73. Find the common difference.",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{13} - T_{6} = (13-6)d\\)\n\n\\(73 - (31) = 7d\\)\n\n\\(42 = 7d\\)\n\n\\(d = \\frac{42}{7} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 17 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(\\frac{85}{4}\\)",
+      "\\(\\frac{85}{6}\\)",
+      "\\(\\frac{17}{4}\\)",
+      "\\(\\frac{68}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{17}{1 - \\frac{1}{5}} = \\frac{17}{\\frac{4}{5}}\\)\n\n\\(= 17 \\times \\frac{5}{4} = \\frac{85}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 3 and the common ratio is 3. Find the 7th term.",
+    "options": [
+      "729",
+      "2187",
+      "6561",
+      "54"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 3 \\times 3^{7-1} = 3 \\times 3^{6}\\)\n\n\\(= 3 \\times 729 = 2187\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 27 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{27}{2}\\)",
+      "\\(18\\)",
+      "\\(\\frac{81}{2}\\)",
+      "\\(\\frac{81}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{27}{1 - \\frac{1}{3}} = \\frac{27}{\\frac{2}{3}}\\)\n\n\\(= 27 \\times \\frac{3}{2} = \\frac{81}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 3 terms of a G.P. with first term 2 and common ratio 2.",
+    "options": [
+      "8",
+      "18",
+      "16",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{3} = \\frac{2(2^{3} - 1)}{2 - 1} = \\frac{2(8 - 1)}{1}\\)\n\n\\(= \\frac{2 \\times 7}{1} = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 36 and the 14th term is 90. Find the common difference.",
+    "options": [
+      "7",
+      "5",
+      "-6",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{14} - T_{5} = (14-5)d\\)\n\n\\(90 - (36) = 9d\\)\n\n\\(54 = 9d\\)\n\n\\(d = \\frac{54}{9} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 14 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{14}{5}\\)",
+      "\\(\\frac{35}{3}\\)",
+      "\\(\\frac{84}{5}\\)",
+      "\\(12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{14}{1 - \\frac{1}{6}} = \\frac{14}{\\frac{5}{6}}\\)\n\n\\(= 14 \\times \\frac{6}{5} = \\frac{84}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 2, 9, 16, 23, ...",
+    "options": [
+      "37",
+      "30",
+      "25",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(9 - (2) = 7\\).\n\nSo the next term is \\(23 + (7) = 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 3 and common ratio 2.",
+    "options": [
+      "48",
+      "51",
+      "45",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{3(2^{4} - 1)}{2 - 1} = \\frac{3(16 - 1)}{1}\\)\n\n\\(= \\frac{3 \\times 15}{1} = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 7 and the common difference is 1. Find the 18th term.",
+    "options": [
+      "126",
+      "24",
+      "-10",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{18} = 7 + (18-1)(1)\\)\n\n\\(= 7 + 17 \\times 1 = 7 + 17 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 15 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{25}{2}\\)",
+      "\\(18\\)",
+      "\\(\\frac{90}{7}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{15}{1 - \\frac{1}{6}} = \\frac{15}{\\frac{5}{6}}\\)\n\n\\(= 15 \\times \\frac{6}{5} = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is -3 and the 8th term is -15. Find the common difference.",
+    "options": [
+      "-3",
+      "3",
+      "-2",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{8} - T_{4} = (8-4)d\\)\n\n\\(-15 - (-3) = 4d\\)\n\n\\(-12 = 4d\\)\n\n\\(d = \\frac{-12}{4} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 1 and the common ratio is 3. Find the 7th term.",
+    "options": [
+      "729",
+      "243",
+      "2187",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 1 \\times 3^{7-1} = 1 \\times 3^{6}\\)\n\n\\(= 1 \\times 729 = 729\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 1 and common ratio 4.",
+    "options": [
+      "341.6666666666667",
+      "342",
+      "341",
+      "256"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{1(4^{5} - 1)}{4 - 1} = \\frac{1(1024 - 1)}{3}\\)\n\n\\(= \\frac{1 \\times 1023}{3} = 341\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 1 and the common ratio is 4. Find the 6th term.",
+    "options": [
+      "1024",
+      "4096",
+      "20",
+      "256"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 1 \\times 4^{6-1} = 1 \\times 4^{5}\\)\n\n\\(= 1 \\times 1024 = 1024\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 14, 9, 4, -1, ...",
+    "options": [
+      "-11",
+      "13",
+      "-1",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(9 - (14) = -5\\).\n\nSo the next term is \\(-1 + (-5) = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -5, -3, -1, 1, ...",
+    "options": [
+      "-4",
+      "3",
+      "1",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(-3 - (-5) = 2\\).\n\nSo the next term is \\(1 + (2) = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 5 and common ratio 4.",
+    "options": [
+      "425",
+      "430",
+      "320",
+      "428.3333333333333"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{5(4^{4} - 1)}{4 - 1} = \\frac{5(256 - 1)}{3}\\)\n\n\\(= \\frac{5 \\times 255}{3} = 425\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 19 and the 12th term is 26. Find the common difference.",
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{12} - T_{5} = (12-5)d\\)\n\n\\(26 - (19) = 7d\\)\n\n\\(7 = 7d\\)\n\n\\(d = \\frac{7}{7} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 6 and common ratio 4.",
+    "options": [
+      "2050",
+      "1536",
+      "2052",
+      "2046"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{6(4^{5} - 1)}{4 - 1} = \\frac{6(1024 - 1)}{3}\\)\n\n\\(= \\frac{6 \\times 1023}{3} = 2046\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 4. Find the 6th term.",
+    "options": [
+      "4096",
+      "1024",
+      "80",
+      "16384"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 4 \\times 4^{6-1} = 4 \\times 4^{5}\\)\n\n\\(= 4 \\times 1024 = 4096\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 21 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{21}{2}\\)",
+      "\\(\\frac{63}{2}\\)",
+      "\\(14\\)",
+      "\\(\\frac{63}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{21}{1 - \\frac{1}{3}} = \\frac{21}{\\frac{2}{3}}\\)\n\n\\(= 21 \\times \\frac{3}{2} = \\frac{63}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 19 and the 8th term is 27. Find the common difference.",
+    "options": [
+      "2",
+      "3",
+      "-2",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{8} - T_{4} = (8-4)d\\)\n\n\\(27 - (19) = 4d\\)\n\n\\(8 = 4d\\)\n\n\\(d = \\frac{8}{4} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 1 and the 11th term is -13. Find the common difference.",
+    "options": [
+      "2",
+      "-1",
+      "-3",
+      "-2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{11} - T_{4} = (11-4)d\\)\n\n\\(-13 - (1) = 7d\\)\n\n\\(-14 = 7d\\)\n\n\\(d = \\frac{-14}{7} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 21 and the 13th term is 57. Find the common difference.",
+    "options": [
+      "-4",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{13} - T_{4} = (13-4)d\\)\n\n\\(57 - (21) = 9d\\)\n\n\\(36 = 9d\\)\n\n\\(d = \\frac{36}{9} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 14 terms of an A.P. whose first term is 4 and common difference is 9.",
+    "options": [
+      "938",
+      "889",
+      "1694",
+      "875"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{14} = \\frac{14}{2}[2(4) + (14-1)(9)]\\)\n\n\\(= \\frac{14}{2}[8 + 117] = \\frac{14}{2} \\times 125 = 875\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -6 and the common difference is -8. Find the 12th term.",
+    "options": [
+      "-102",
+      "82",
+      "-94",
+      "-72"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{12} = -6 + (12-1)(-8)\\)\n\n\\(= -6 + 11 \\times -8 = -6 + -88 = -94\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 0 and the 14th term is -27. Find the common difference.",
+    "options": [
+      "-2",
+      "-3",
+      "-4",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{14} - T_{5} = (14-5)d\\)\n\n\\(-27 - (0) = 9d\\)\n\n\\(-27 = 9d\\)\n\n\\(d = \\frac{-27}{9} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 6 and common ratio 3.",
+    "options": [
+      "2190",
+      "1458",
+      "2184",
+      "2178"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{6(3^{6} - 1)}{3 - 1} = \\frac{6(729 - 1)}{2}\\)\n\n\\(= \\frac{6 \\times 728}{2} = 2184\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 26 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(\\frac{65}{3}\\)",
+      "\\(\\frac{65}{2}\\)",
+      "\\(\\frac{104}{5}\\)",
+      "\\(\\frac{13}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{26}{1 - \\frac{1}{5}} = \\frac{26}{\\frac{4}{5}}\\)\n\n\\(= 26 \\times \\frac{5}{4} = \\frac{65}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 8 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(12\\)",
+      "\\(\\frac{16}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{8}{1 - \\frac{1}{3}} = \\frac{8}{\\frac{2}{3}}\\)\n\n\\(= 8 \\times \\frac{3}{2} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 16 terms of an A.P. whose first term is 6 and common difference is 5.",
+    "options": [
+      "1296",
+      "696",
+      "736",
+      "712"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{16} = \\frac{16}{2}[2(6) + (16-1)(5)]\\)\n\n\\(= \\frac{16}{2}[12 + 75] = \\frac{16}{2} \\times 87 = 696\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 2 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{12}{7}\\)",
+      "\\(\\frac{2}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{2}{1 - \\frac{1}{6}} = \\frac{2}{\\frac{5}{6}}\\)\n\n\\(= 2 \\times \\frac{6}{5} = \\frac{12}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 7 and the common ratio is 4. Find the 4th term.",
+    "options": [
+      "448",
+      "1792",
+      "84",
+      "112"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{4} = 7 \\times 4^{4-1} = 7 \\times 4^{3}\\)\n\n\\(= 7 \\times 64 = 448\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 15 terms of an A.P. whose first term is 12 and common difference is 2.",
+    "options": [
+      "600",
+      "405",
+      "375",
+      "390"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{15} = \\frac{15}{2}[2(12) + (15-1)(2)]\\)\n\n\\(= \\frac{15}{2}[24 + 28] = \\frac{15}{2} \\times 52 = 390\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 8, 17, 26, 35, ...",
+    "options": [
+      "53",
+      "44",
+      "43",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(17 - (8) = 9\\).\n\nSo the next term is \\(35 + (9) = 44\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 17 terms of an A.P. whose first term is 4 and common difference is 4.",
+    "options": [
+      "646",
+      "629",
+      "1156",
+      "612"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{17} = \\frac{17}{2}[2(4) + (17-1)(4)]\\)\n\n\\(= \\frac{17}{2}[8 + 64] = \\frac{17}{2} \\times 72 = 612\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 5 and the common ratio is 4. Find the 4th term.",
+    "options": [
+      "1280",
+      "320",
+      "60",
+      "80"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{4} = 5 \\times 4^{4-1} = 5 \\times 4^{3}\\)\n\n\\(= 5 \\times 64 = 320\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 4 and the common difference is 7. Find the 6th term.",
+    "options": [
+      "46",
+      "-31",
+      "24",
+      "39"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{6} = 4 + (6-1)(7)\\)\n\n\\(= 4 + 5 \\times 7 = 4 + 35 = 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 14 terms of an A.P. whose first term is 6 and common difference is 8.",
+    "options": [
+      "812",
+      "1540",
+      "868",
+      "826"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{14} = \\frac{14}{2}[2(6) + (14-1)(8)]\\)\n\n\\(= \\frac{14}{2}[12 + 104] = \\frac{14}{2} \\times 116 = 812\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 3th term is 0 and the 12th term is -45. Find the common difference.",
+    "options": [
+      "-4",
+      "-6",
+      "5",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{12} - T_{3} = (12-3)d\\)\n\n\\(-45 - (0) = 9d\\)\n\n\\(-45 = 9d\\)\n\n\\(d = \\frac{-45}{9} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -4, 5, 14, 23, ...",
+    "options": [
+      "19",
+      "41",
+      "32",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(5 - (-4) = 9\\).\n\nSo the next term is \\(23 + (9) = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 47 and the 11th term is 87. Find the common difference.",
+    "options": [
+      "-8",
+      "8",
+      "9",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{11} - T_{6} = (11-6)d\\)\n\n\\(87 - (47) = 5d\\)\n\n\\(40 = 5d\\)\n\n\\(d = \\frac{40}{5} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 9, 3, -3, -9, ...",
+    "options": [
+      "0",
+      "-21",
+      "-15",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(3 - (9) = -6\\).\n\nSo the next term is \\(-9 + (-6) = -15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 7 terms of an A.P. whose first term is 1 and common difference is 1.",
+    "options": [
+      "35",
+      "28",
+      "31.5",
+      "49"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{7} = \\frac{7}{2}[2(1) + (7-1)(1)]\\)\n\n\\(= \\frac{7}{2}[2 + 6] = \\frac{7}{2} \\times 8 = 28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 20 terms of an A.P. whose first term is 1 and common difference is 5.",
+    "options": [
+      "1920",
+      "970",
+      "990",
+      "1020"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{20} = \\frac{20}{2}[2(1) + (20-1)(5)]\\)\n\n\\(= \\frac{20}{2}[2 + 95] = \\frac{20}{2} \\times 97 = 970\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 5 and common ratio 4.",
+    "options": [
+      "6830",
+      "6828.333333333333",
+      "6825",
+      "5120"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{5(4^{6} - 1)}{4 - 1} = \\frac{5(4096 - 1)}{3}\\)\n\n\\(= \\frac{5 \\times 4095}{3} = 6825\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 4. Find the 4th term.",
+    "options": [
+      "64",
+      "1024",
+      "256",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{4} = 4 \\times 4^{4-1} = 4 \\times 4^{3}\\)\n\n\\(= 4 \\times 64 = 256\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -5, 0, 5, 10, ...",
+    "options": [
+      "20",
+      "5",
+      "10",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(0 - (-5) = 5\\).\n\nSo the next term is \\(10 + (5) = 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 28 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(24\\)",
+      "\\(\\frac{168}{5}\\)",
+      "\\(\\frac{28}{5}\\)",
+      "\\(\\frac{70}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{28}{1 - \\frac{1}{6}} = \\frac{28}{\\frac{5}{6}}\\)\n\n\\(= 28 \\times \\frac{6}{5} = \\frac{168}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 6 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(12\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{6}{1 - \\frac{1}{2}} = \\frac{6}{\\frac{1}{2}}\\)\n\n\\(= 6 \\times \\frac{2}{1} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 5 and the common difference is -4. Find the 12th term.",
+    "options": [
+      "60",
+      "-43",
+      "-39",
+      "49"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{12} = 5 + (12-1)(-4)\\)\n\n\\(= 5 + 11 \\times -4 = 5 + -44 = -39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 37 and the 10th term is 67. Find the common difference.",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{10} - T_{5} = (10-5)d\\)\n\n\\(67 - (37) = 5d\\)\n\n\\(30 = 5d\\)\n\n\\(d = \\frac{30}{5} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 25 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(\\frac{125}{6}\\)",
+      "\\(\\frac{125}{4}\\)",
+      "\\(\\frac{25}{4}\\)",
+      "\\(20\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{25}{1 - \\frac{1}{5}} = \\frac{25}{\\frac{4}{5}}\\)\n\n\\(= 25 \\times \\frac{5}{4} = \\frac{125}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 6 and common ratio 2.",
+    "options": [
+      "378",
+      "390",
+      "192",
+      "384"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{6(2^{6} - 1)}{2 - 1} = \\frac{6(64 - 1)}{1}\\)\n\n\\(= \\frac{6 \\times 63}{1} = 378\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 26 and common ratio \\(\\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{104}{3}\\)",
+      "\\(\\frac{104}{5}\\)",
+      "\\(\\frac{39}{2}\\)",
+      "\\(\\frac{26}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{26}{1 - \\frac{1}{4}} = \\frac{26}{\\frac{3}{4}}\\)\n\n\\(= 26 \\times \\frac{4}{3} = \\frac{104}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 5 and the common ratio is 2. Find the 4th term.",
+    "options": [
+      "40",
+      "30",
+      "80",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{4} = 5 \\times 2^{4-1} = 5 \\times 2^{3}\\)\n\n\\(= 5 \\times 8 = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 54 and the 12th term is 102. Find the common difference.",
+    "options": [
+      "9",
+      "7",
+      "-8",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{12} - T_{6} = (12-6)d\\)\n\n\\(102 - (54) = 6d\\)\n\n\\(48 = 6d\\)\n\n\\(d = \\frac{48}{6} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 6 and the common ratio is 3. Find the 6th term.",
+    "options": [
+      "4374",
+      "90",
+      "1458",
+      "486"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 6 \\times 3^{6-1} = 6 \\times 3^{5}\\)\n\n\\(= 6 \\times 243 = 1458\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 7 and the common ratio is 3. Find the 7th term.",
+    "options": [
+      "1701",
+      "5103",
+      "15309",
+      "126"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 7 \\times 3^{7-1} = 7 \\times 3^{6}\\)\n\n\\(= 7 \\times 729 = 5103\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 31 and the 12th term is 59. Find the common difference.",
+    "options": [
+      "3",
+      "-4",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{12} - T_{5} = (12-5)d\\)\n\n\\(59 - (31) = 7d\\)\n\n\\(28 = 7d\\)\n\n\\(d = \\frac{28}{7} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 18 and common ratio \\(\\frac{1}{4}\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(\\frac{72}{5}\\)",
+      "\\(24\\)",
+      "\\(\\frac{27}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{18}{1 - \\frac{1}{4}} = \\frac{18}{\\frac{3}{4}}\\)\n\n\\(= 18 \\times \\frac{4}{3} = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 24 and common ratio \\(\\frac{1}{5}\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(20\\)",
+      "\\(30\\)",
+      "\\(\\frac{96}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{24}{1 - \\frac{1}{5}} = \\frac{24}{\\frac{4}{5}}\\)\n\n\\(= 24 \\times \\frac{5}{4} = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 5 and common ratio 2.",
+    "options": [
+      "155",
+      "165",
+      "160",
+      "80"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{5(2^{5} - 1)}{2 - 1} = \\frac{5(32 - 1)}{1}\\)\n\n\\(= \\frac{5 \\times 31}{1} = 155\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 3 terms of a G.P. with first term 6 and common ratio 3.",
+    "options": [
+      "54",
+      "72",
+      "84",
+      "78"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{3} = \\frac{6(3^{3} - 1)}{3 - 1} = \\frac{6(27 - 1)}{2}\\)\n\n\\(= \\frac{6 \\times 26}{2} = 78\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -5 and the common difference is 4. Find the 22th term.",
+    "options": [
+      "-89",
+      "-110",
+      "79",
+      "83"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{22} = -5 + (22-1)(4)\\)\n\n\\(= -5 + 21 \\times 4 = -5 + 84 = 79\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 16 terms of an A.P. whose first term is 12 and common difference is 1.",
+    "options": [
+      "312",
+      "432",
+      "320",
+      "328"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{16} = \\frac{16}{2}[2(12) + (16-1)(1)]\\)\n\n\\(= \\frac{16}{2}[24 + 15] = \\frac{16}{2} \\times 39 = 312\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -9 and the common difference is 1. Find the 13th term.",
+    "options": [
+      "3",
+      "-117",
+      "4",
+      "-21"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{13} = -9 + (13-1)(1)\\)\n\n\\(= -9 + 12 \\times 1 = -9 + 12 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 8 and the common ratio is 2. Find the 6th term.",
+    "options": [
+      "80",
+      "128",
+      "512",
+      "256"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 8 \\times 2^{6-1} = 8 \\times 2^{5}\\)\n\n\\(= 8 \\times 32 = 256\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 3 terms of a G.P. with first term 3 and common ratio 3.",
+    "options": [
+      "42",
+      "36",
+      "27",
+      "39"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{3} = \\frac{3(3^{3} - 1)}{3 - 1} = \\frac{3(27 - 1)}{2}\\)\n\n\\(= \\frac{3 \\times 26}{2} = 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 17 terms of an A.P. whose first term is 8 and common difference is 5.",
+    "options": [
+      "833",
+      "858.5",
+      "816",
+      "1496"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{17} = \\frac{17}{2}[2(8) + (17-1)(5)]\\)\n\n\\(= \\frac{17}{2}[16 + 80] = \\frac{17}{2} \\times 96 = 816\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 15 and the common difference is -8. Find the 6th term.",
+    "options": [
+      "-25",
+      "55",
+      "90",
+      "-33"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{6} = 15 + (6-1)(-8)\\)\n\n\\(= 15 + 5 \\times -8 = 15 + -40 = -25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 8 and the common difference is -1. Find the 18th term.",
+    "options": [
+      "-9",
+      "25",
+      "144",
+      "-10"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{18} = 8 + (18-1)(-1)\\)\n\n\\(= 8 + 17 \\times -1 = 8 + -17 = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 7, 3, -1, -5, ...",
+    "options": [
+      "-9",
+      "-13",
+      "2",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(3 - (7) = -4\\).\n\nSo the next term is \\(-5 + (-4) = -9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 14 terms of an A.P. whose first term is 12 and common difference is 1.",
+    "options": [
+      "273",
+      "350",
+      "259",
+      "266"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{14} = \\frac{14}{2}[2(12) + (14-1)(1)]\\)\n\n\\(= \\frac{14}{2}[24 + 13] = \\frac{14}{2} \\times 37 = 259\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 1 and common ratio 3.",
+    "options": [
+      "120",
+      "81",
+      "121",
+      "122"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{1(3^{5} - 1)}{3 - 1} = \\frac{1(243 - 1)}{2}\\)\n\n\\(= \\frac{1 \\times 242}{2} = 121\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 6, 10, 14, 18, ...",
+    "options": [
+      "22",
+      "26",
+      "18",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(10 - (6) = 4\\).\n\nSo the next term is \\(18 + (4) = 22\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 21 and the 13th term is 66. Find the common difference.",
+    "options": [
+      "-5",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{13} - T_{4} = (13-4)d\\)\n\n\\(66 - (21) = 9d\\)\n\n\\(45 = 9d\\)\n\n\\(d = \\frac{45}{9} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 25 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{150}{7}\\)",
+      "\\(\\frac{125}{6}\\)",
+      "\\(30\\)",
+      "\\(5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{25}{1 - \\frac{1}{6}} = \\frac{25}{\\frac{5}{6}}\\)\n\n\\(= 25 \\times \\frac{6}{5} = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -6 and the common difference is 2. Find the 5th term.",
+    "options": [
+      "4",
+      "-14",
+      "2",
+      "-30"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{5} = -6 + (5-1)(2)\\)\n\n\\(= -6 + 4 \\times 2 = -6 + 8 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 10 terms of an A.P. whose first term is 3 and common difference is 6.",
+    "options": [
+      "570",
+      "330",
+      "300",
+      "310"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{10} = \\frac{10}{2}[2(3) + (10-1)(6)]\\)\n\n\\(= \\frac{10}{2}[6 + 54] = \\frac{10}{2} \\times 60 = 300\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 15 terms of an A.P. whose first term is 12 and common difference is 5.",
+    "options": [
+      "705",
+      "1230",
+      "742.5",
+      "720"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{15} = \\frac{15}{2}[2(12) + (15-1)(5)]\\)\n\n\\(= \\frac{15}{2}[24 + 70] = \\frac{15}{2} \\times 94 = 705\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 2 and the 10th term is -2. Find the common difference.",
+    "options": [
+      "0",
+      "1",
+      "-2",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{10} - T_{6} = (10-6)d\\)\n\n\\(-2 - (2) = 4d\\)\n\n\\(-4 = 4d\\)\n\n\\(d = \\frac{-4}{4} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 3, 4, 5, 6, ...",
+    "options": [
+      "9",
+      "8",
+      "6",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(4 - (3) = 1\\).\n\nSo the next term is \\(6 + (1) = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 18 terms of an A.P. whose first term is 11 and common difference is 4.",
+    "options": [
+      "828",
+      "846",
+      "810",
+      "1422"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{18} = \\frac{18}{2}[2(11) + (18-1)(4)]\\)\n\n\\(= \\frac{18}{2}[22 + 68] = \\frac{18}{2} \\times 90 = 810\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 2 and the common ratio is 4. Find the 3th term.",
+    "options": [
+      "8",
+      "128",
+      "32",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{3} = 2 \\times 4^{3-1} = 2 \\times 4^{2}\\)\n\n\\(= 2 \\times 16 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 9 and the common difference is 7. Find the 15th term.",
+    "options": [
+      "-89",
+      "135",
+      "107",
+      "114"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{15} = 9 + (15-1)(7)\\)\n\n\\(= 9 + 14 \\times 7 = 9 + 98 = 107\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 3 and common ratio 3.",
+    "options": [
+      "117",
+      "123",
+      "120",
+      "81"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{3(3^{4} - 1)}{3 - 1} = \\frac{3(81 - 1)}{2}\\)\n\n\\(= \\frac{3 \\times 80}{2} = 120\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 2 and common ratio 3.",
+    "options": [
+      "726",
+      "728",
+      "730",
+      "486"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{2(3^{6} - 1)}{3 - 1} = \\frac{2(729 - 1)}{2}\\)\n\n\\(= \\frac{2 \\times 728}{2} = 728\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 10 and the 8th term is 7. Find the common difference.",
+    "options": [
+      "-2",
+      "0",
+      "-1",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{8} - T_{5} = (8-5)d\\)\n\n\\(7 - (10) = 3d\\)\n\n\\(-3 = 3d\\)\n\n\\(d = \\frac{-3}{3} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is -7 and the 11th term is -25. Find the common difference.",
+    "options": [
+      "3",
+      "-2",
+      "-4",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{11} - T_{5} = (11-5)d\\)\n\n\\(-25 - (-7) = 6d\\)\n\n\\(-18 = 6d\\)\n\n\\(d = \\frac{-18}{6} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -7 and the common difference is -3. Find the 14th term.",
+    "options": [
+      "32",
+      "-49",
+      "-98",
+      "-46"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{14} = -7 + (14-1)(-3)\\)\n\n\\(= -7 + 13 \\times -3 = -7 + -39 = -46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 6 and common ratio \\(\\frac{1}{4}\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(\\frac{24}{5}\\)",
+      "\\(\\frac{9}{2}\\)",
+      "\\(8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{6}{1 - \\frac{1}{4}} = \\frac{6}{\\frac{3}{4}}\\)\n\n\\(= 6 \\times \\frac{4}{3} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 3. Find the 5th term.",
+    "options": [
+      "108",
+      "972",
+      "324",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 4 \\times 3^{5-1} = 4 \\times 3^{4}\\)\n\n\\(= 4 \\times 81 = 324\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 17 terms of an A.P. whose first term is 2 and common difference is 1.",
+    "options": [
+      "170",
+      "187",
+      "306",
+      "178.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{17} = \\frac{17}{2}[2(2) + (17-1)(1)]\\)\n\n\\(= \\frac{17}{2}[4 + 16] = \\frac{17}{2} \\times 20 = 170\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 1 and the common ratio is 4. Find the 5th term.",
+    "options": [
+      "256",
+      "16",
+      "1024",
+      "64"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 1 \\times 4^{5-1} = 1 \\times 4^{4}\\)\n\n\\(= 1 \\times 256 = 256\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 6 and the common ratio is 4. Find the 5th term.",
+    "options": [
+      "384",
+      "1536",
+      "6144",
+      "96"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 6 \\times 4^{5-1} = 6 \\times 4^{4}\\)\n\n\\(= 6 \\times 256 = 1536\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 2 and common ratio 4.",
+    "options": [
+      "2730",
+      "2731.3333333333335",
+      "2048",
+      "2732"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{2(4^{6} - 1)}{4 - 1} = \\frac{2(4096 - 1)}{3}\\)\n\n\\(= \\frac{2 \\times 4095}{3} = 2730\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 2, -2, -6, -10, ...",
+    "options": [
+      "-14",
+      "-10",
+      "-8",
+      "-18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(-2 - (2) = -4\\).\n\nSo the next term is \\(-10 + (-4) = -14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is -23 and the 14th term is -63. Find the common difference.",
+    "options": [
+      "5",
+      "-6",
+      "-4",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{14} - T_{6} = (14-6)d\\)\n\n\\(-63 - (-23) = 8d\\)\n\n\\(-40 = 8d\\)\n\n\\(d = \\frac{-40}{8} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 22 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{132}{5}\\)",
+      "\\(\\frac{55}{3}\\)",
+      "\\(\\frac{132}{7}\\)",
+      "\\(\\frac{22}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{22}{1 - \\frac{1}{6}} = \\frac{22}{\\frac{5}{6}}\\)\n\n\\(= 22 \\times \\frac{6}{5} = \\frac{132}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 19 and the 7th term is 25. Find the common difference.",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{7} - T_{4} = (7-4)d\\)\n\n\\(25 - (19) = 3d\\)\n\n\\(6 = 3d\\)\n\n\\(d = \\frac{6}{3} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 3 and the common ratio is 2. Find the 6th term.",
+    "options": [
+      "96",
+      "30",
+      "48",
+      "192"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 3 \\times 2^{6-1} = 3 \\times 2^{5}\\)\n\n\\(= 3 \\times 32 = 96\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 12 terms of an A.P. whose first term is 9 and common difference is 8.",
+    "options": [
+      "648",
+      "684",
+      "636",
+      "1164"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{12} = \\frac{12}{2}[2(9) + (12-1)(8)]\\)\n\n\\(= \\frac{12}{2}[18 + 88] = \\frac{12}{2} \\times 106 = 636\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 7 and the common difference is -6. Find the 14th term.",
+    "options": [
+      "98",
+      "-77",
+      "-71",
+      "85"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{14} = 7 + (14-1)(-6)\\)\n\n\\(= 7 + 13 \\times -6 = 7 + -78 = -71\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is -4 and the 8th term is -46. Find the common difference.",
+    "options": [
+      "-6",
+      "7",
+      "-7",
+      "-8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{8} - T_{2} = (8-2)d\\)\n\n\\(-46 - (-4) = 6d\\)\n\n\\(-42 = 6d\\)\n\n\\(d = \\frac{-42}{6} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 14 and the common difference is -7. Find the 5th term.",
+    "options": [
+      "-21",
+      "70",
+      "-14",
+      "42"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{5} = 14 + (5-1)(-7)\\)\n\n\\(= 14 + 4 \\times -7 = 14 + -28 = -14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 4 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{24}{5}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{10}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{4}{1 - \\frac{1}{6}} = \\frac{4}{\\frac{5}{6}}\\)\n\n\\(= 4 \\times \\frac{6}{5} = \\frac{24}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 6 and the 12th term is -14. Find the common difference.",
+    "options": [
+      "-2",
+      "-3",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{12} - T_{2} = (12-2)d\\)\n\n\\(-14 - (6) = 10d\\)\n\n\\(-20 = 10d\\)\n\n\\(d = \\frac{-20}{10} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -2, -8, -14, -20, ...",
+    "options": [
+      "-26",
+      "-20",
+      "-32",
+      "-22"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(-8 - (-2) = -6\\).\n\nSo the next term is \\(-20 + (-6) = -26\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 13, 21, 29, 37, ...",
+    "options": [
+      "37",
+      "50",
+      "53",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(21 - (13) = 8\\).\n\nSo the next term is \\(37 + (8) = 45\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 6 and the common ratio is 4. Find the 6th term.",
+    "options": [
+      "24576",
+      "120",
+      "1536",
+      "6144"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 6 \\times 4^{6-1} = 6 \\times 4^{5}\\)\n\n\\(= 6 \\times 1024 = 6144\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 12 terms of an A.P. whose first term is 3 and common difference is 3.",
+    "options": [
+      "234",
+      "432",
+      "252",
+      "246"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{12} = \\frac{12}{2}[2(3) + (12-1)(3)]\\)\n\n\\(= \\frac{12}{2}[6 + 33] = \\frac{12}{2} \\times 39 = 234\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 1, 4, 7, 10, ...",
+    "options": [
+      "10",
+      "16",
+      "13",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(4 - (1) = 3\\).\n\nSo the next term is \\(10 + (3) = 13\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 27 and the 12th term is 57. Find the common difference.",
+    "options": [
+      "-5",
+      "5",
+      "6",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{12} - T_{6} = (12-6)d\\)\n\n\\(57 - (27) = 6d\\)\n\n\\(30 = 6d\\)\n\n\\(d = \\frac{30}{6} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 20 terms of an A.P. whose first term is 5 and common difference is 1.",
+    "options": [
+      "290",
+      "310",
+      "480",
+      "300"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{20} = \\frac{20}{2}[2(5) + (20-1)(1)]\\)\n\n\\(= \\frac{20}{2}[10 + 19] = \\frac{20}{2} \\times 29 = 290\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 9 and the 14th term is -15. Find the common difference.",
+    "options": [
+      "-1",
+      "2",
+      "-3",
+      "-2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{14} - T_{2} = (14-2)d\\)\n\n\\(-15 - (9) = 12d\\)\n\n\\(-24 = 12d\\)\n\n\\(d = \\frac{-24}{12} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 8 and the common difference is 4. Find the 13th term.",
+    "options": [
+      "60",
+      "56",
+      "104",
+      "-40"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{13} = 8 + (13-1)(4)\\)\n\n\\(= 8 + 12 \\times 4 = 8 + 48 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 4, 1, -2, -5, ...",
+    "options": [
+      "-8",
+      "-11",
+      "-1",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(1 - (4) = -3\\).\n\nSo the next term is \\(-5 + (-3) = -8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 11 terms of an A.P. whose first term is 3 and common difference is 3.",
+    "options": [
+      "209",
+      "198",
+      "363",
+      "214.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{11} = \\frac{11}{2}[2(3) + (11-1)(3)]\\)\n\n\\(= \\frac{11}{2}[6 + 30] = \\frac{11}{2} \\times 36 = 198\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 1, 5, 9, 13, ...",
+    "options": [
+      "14",
+      "21",
+      "13",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(5 - (1) = 4\\).\n\nSo the next term is \\(13 + (4) = 17\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 17 and the 11th term is 29. Find the common difference.",
+    "options": [
+      "-2",
+      "1",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{11} - T_{5} = (11-5)d\\)\n\n\\(29 - (17) = 6d\\)\n\n\\(12 = 6d\\)\n\n\\(d = \\frac{12}{6} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 18 terms of an A.P. whose first term is 5 and common difference is 6.",
+    "options": [
+      "1062",
+      "1926",
+      "1008",
+      "1026"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{18} = \\frac{18}{2}[2(5) + (18-1)(6)]\\)\n\n\\(= \\frac{18}{2}[10 + 102] = \\frac{18}{2} \\times 112 = 1008\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 2 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{2}{1 - \\frac{1}{2}} = \\frac{2}{\\frac{1}{2}}\\)\n\n\\(= 2 \\times \\frac{2}{1} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -1 and the common difference is 9. Find the 14th term.",
+    "options": [
+      "-118",
+      "-14",
+      "116",
+      "125"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{14} = -1 + (14-1)(9)\\)\n\n\\(= -1 + 13 \\times 9 = -1 + 117 = 116\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 5, 3, 1, -1, ...",
+    "options": [
+      "-5",
+      "-3",
+      "-1",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(3 - (5) = -2\\).\n\nSo the next term is \\(-1 + (-2) = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 11, 16, 21, 26, ...",
+    "options": [
+      "36",
+      "37",
+      "26",
+      "31"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(16 - (11) = 5\\).\n\nSo the next term is \\(26 + (5) = 31\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 19 terms of an A.P. whose first term is 9 and common difference is 1.",
+    "options": [
+      "513",
+      "361",
+      "342",
+      "351.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{19} = \\frac{19}{2}[2(9) + (19-1)(1)]\\)\n\n\\(= \\frac{19}{2}[18 + 18] = \\frac{19}{2} \\times 36 = 342\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 29 and common ratio \\(\\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{29}{3}\\)",
+      "\\(\\frac{116}{5}\\)",
+      "\\(\\frac{87}{4}\\)",
+      "\\(\\frac{116}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{29}{1 - \\frac{1}{4}} = \\frac{29}{\\frac{3}{4}}\\)\n\n\\(= 29 \\times \\frac{4}{3} = \\frac{116}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of a G.P. with first term 4 and common ratio 4.",
+    "options": [
+      "5462.666666666667",
+      "5460",
+      "4096",
+      "5464"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{6} = \\frac{4(4^{6} - 1)}{4 - 1} = \\frac{4(4096 - 1)}{3}\\)\n\n\\(= \\frac{4 \\times 4095}{3} = 5460\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 13 and the 7th term is 19. Find the common difference.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{7} - T_{4} = (7-4)d\\)\n\n\\(19 - (13) = 3d\\)\n\n\\(6 = 3d\\)\n\n\\(d = \\frac{6}{3} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 5 and the common difference is -4. Find the 24th term.",
+    "options": [
+      "97",
+      "120",
+      "-91",
+      "-87"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{24} = 5 + (24-1)(-4)\\)\n\n\\(= 5 + 23 \\times -4 = 5 + -92 = -87\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -2, -7, -12, -17, ...",
+    "options": [
+      "-17",
+      "-27",
+      "-19",
+      "-22"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(-7 - (-2) = -5\\).\n\nSo the next term is \\(-17 + (-5) = -22\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 16 terms of an A.P. whose first term is 3 and common difference is 5.",
+    "options": [
+      "664",
+      "648",
+      "688",
+      "1248"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{16} = \\frac{16}{2}[2(3) + (16-1)(5)]\\)\n\n\\(= \\frac{16}{2}[6 + 75] = \\frac{16}{2} \\times 81 = 648\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 8 terms of an A.P. whose first term is 9 and common difference is 8.",
+    "options": [
+      "328",
+      "520",
+      "296",
+      "304"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{8} = \\frac{8}{2}[2(9) + (8-1)(8)]\\)\n\n\\(= \\frac{8}{2}[18 + 56] = \\frac{8}{2} \\times 74 = 296\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 4 and common ratio 4.",
+    "options": [
+      "1368",
+      "1024",
+      "1366.6666666666667",
+      "1364"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{4(4^{5} - 1)}{4 - 1} = \\frac{4(1024 - 1)}{3}\\)\n\n\\(= \\frac{4 \\times 1023}{3} = 1364\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 11, 4, -3, -10, ...",
+    "options": [
+      "-10",
+      "-17",
+      "1",
+      "-24"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(4 - (11) = -7\\).\n\nSo the next term is \\(-10 + (-7) = -17\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 27 and the 9th term is 67. Find the common difference.",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{9} - T_{4} = (9-4)d\\)\n\n\\(67 - (27) = 5d\\)\n\n\\(40 = 5d\\)\n\n\\(d = \\frac{40}{5} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 5 and the common difference is 6. Find the 19th term.",
+    "options": [
+      "119",
+      "113",
+      "-103",
+      "95"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{19} = 5 + (19-1)(6)\\)\n\n\\(= 5 + 18 \\times 6 = 5 + 108 = 113\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 5th term is 41 and the 14th term is 113. Find the common difference.",
+    "options": [
+      "8",
+      "-8",
+      "9",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{14} - T_{5} = (14-5)d\\)\n\n\\(113 - (41) = 9d\\)\n\n\\(72 = 9d\\)\n\n\\(d = \\frac{72}{9} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 6 and the common difference is -2. Find the 25th term.",
+    "options": [
+      "-42",
+      "-44",
+      "150",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{25} = 6 + (25-1)(-2)\\)\n\n\\(= 6 + 24 \\times -2 = 6 + -48 = -42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 16 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(24\\)",
+      "\\(\\frac{32}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{16}{1 - \\frac{1}{3}} = \\frac{16}{\\frac{2}{3}}\\)\n\n\\(= 16 \\times \\frac{3}{2} = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 2 and common ratio 3.",
+    "options": [
+      "82",
+      "80",
+      "54",
+      "78"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{2(3^{4} - 1)}{3 - 1} = \\frac{2(81 - 1)}{2}\\)\n\n\\(= \\frac{2 \\times 80}{2} = 80\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 5 and common ratio 3.",
+    "options": [
+      "610",
+      "605",
+      "600",
+      "405"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{5(3^{5} - 1)}{3 - 1} = \\frac{5(243 - 1)}{2}\\)\n\n\\(= \\frac{5 \\times 242}{2} = 605\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 13, 11, 9, 7, ...",
+    "options": [
+      "5",
+      "7",
+      "20",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(11 - (13) = -2\\).\n\nSo the next term is \\(7 + (-2) = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 5 terms of a G.P. with first term 2 and common ratio 3.",
+    "options": [
+      "242",
+      "244",
+      "240",
+      "162"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{5} = \\frac{2(3^{5} - 1)}{3 - 1} = \\frac{2(243 - 1)}{2}\\)\n\n\\(= \\frac{2 \\times 242}{2} = 242\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 8 and the common ratio is 4. Find the 4th term.",
+    "options": [
+      "128",
+      "512",
+      "96",
+      "2048"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{4} = 8 \\times 4^{4-1} = 8 \\times 4^{3}\\)\n\n\\(= 8 \\times 64 = 512\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 13, 22, 31, 40, ...",
+    "options": [
+      "40",
+      "58",
+      "53",
+      "49"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(22 - (13) = 9\\).\n\nSo the next term is \\(40 + (9) = 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 12 terms of an A.P. whose first term is 8 and common difference is 4.",
+    "options": [
+      "384",
+      "360",
+      "372",
+      "624"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{12} = \\frac{12}{2}[2(8) + (12-1)(4)]\\)\n\n\\(= \\frac{12}{2}[16 + 44] = \\frac{12}{2} \\times 60 = 360\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 18 terms of an A.P. whose first term is 4 and common difference is 7.",
+    "options": [
+      "2214",
+      "1143",
+      "1161",
+      "1206"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{18} = \\frac{18}{2}[2(4) + (18-1)(7)]\\)\n\n\\(= \\frac{18}{2}[8 + 119] = \\frac{18}{2} \\times 127 = 1143\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 7 and the common ratio is 3. Find the 3th term.",
+    "options": [
+      "189",
+      "21",
+      "42",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{3} = 7 \\times 3^{3-1} = 7 \\times 3^{2}\\)\n\n\\(= 7 \\times 9 = 63\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 28 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{56}{3}\\)",
+      "\\(21\\)",
+      "\\(42\\)",
+      "\\(14\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{28}{1 - \\frac{1}{3}} = \\frac{28}{\\frac{2}{3}}\\)\n\n\\(= 28 \\times \\frac{3}{2} = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is -6 and the 11th term is -16. Find the common difference.",
+    "options": [
+      "-1",
+      "2",
+      "-2",
+      "-3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{11} - T_{6} = (11-6)d\\)\n\n\\(-16 - (-6) = 5d\\)\n\n\\(-10 = 5d\\)\n\n\\(d = \\frac{-10}{5} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 2 and the common ratio is 4. Find the 5th term.",
+    "options": [
+      "2048",
+      "32",
+      "128",
+      "512"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 2 \\times 4^{5-1} = 2 \\times 4^{4}\\)\n\n\\(= 2 \\times 256 = 512\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 7 and the 14th term is 67. Find the common difference.",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(T_{14} - T_{2} = (14-2)d\\)\n\n\\(67 - (7) = 12d\\)\n\n\\(60 = 12d\\)\n\n\\(d = \\frac{60}{12} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 1 and the common difference is 9. Find the 24th term.",
+    "options": [
+      "217",
+      "-206",
+      "24",
+      "208"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{24} = 1 + (24-1)(9)\\)\n\n\\(= 1 + 23 \\times 9 = 1 + 207 = 208\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 2th term is 10 and the 11th term is 55. Find the common difference.",
+    "options": [
+      "5",
+      "-5",
+      "4",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(T_{11} - T_{2} = (11-2)d\\)\n\n\\(55 - (10) = 9d\\)\n\n\\(45 = 9d\\)\n\n\\(d = \\frac{45}{9} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -3, 1, 5, 9, ...",
+    "options": [
+      "17",
+      "9",
+      "13",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(1 - (-3) = 4\\).\n\nSo the next term is \\(9 + (4) = 13\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 19 and common ratio \\(\\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{114}{7}\\)",
+      "\\(\\frac{19}{5}\\)",
+      "\\(\\frac{95}{6}\\)",
+      "\\(\\frac{114}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{19}{1 - \\frac{1}{6}} = \\frac{19}{\\frac{5}{6}}\\)\n\n\\(= 19 \\times \\frac{6}{5} = \\frac{114}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 17 and common ratio \\(\\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{17}{3}\\)",
+      "\\(\\frac{68}{3}\\)",
+      "\\(\\frac{51}{4}\\)",
+      "\\(\\frac{68}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{17}{1 - \\frac{1}{4}} = \\frac{17}{\\frac{3}{4}}\\)\n\n\\(= 17 \\times \\frac{4}{3} = \\frac{68}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -9 and the common difference is 5. Find the 5th term.",
+    "options": [
+      "-29",
+      "16",
+      "11",
+      "-45"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{5} = -9 + (5-1)(5)\\)\n\n\\(= -9 + 4 \\times 5 = -9 + 20 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 11 and the common difference is 6. Find the 10th term.",
+    "options": [
+      "-43",
+      "71",
+      "110",
+      "65"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{10} = 11 + (10-1)(6)\\)\n\n\\(= 11 + 9 \\times 6 = 11 + 54 = 65\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -1, 2, 5, 8, ...",
+    "options": [
+      "14",
+      "8",
+      "11",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(2 - (-1) = 3\\).\n\nSo the next term is \\(8 + (3) = 11\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -9 and the common difference is -2. Find the 13th term.",
+    "options": [
+      "-33",
+      "15",
+      "-35",
+      "-117"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{13} = -9 + (13-1)(-2)\\)\n\n\\(= -9 + 12 \\times -2 = -9 + -24 = -33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -7 and the common difference is 2. Find the 10th term.",
+    "options": [
+      "13",
+      "-70",
+      "11",
+      "-25"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{10} = -7 + (10-1)(2)\\)\n\n\\(= -7 + 9 \\times 2 = -7 + 18 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -3 and the common difference is -7. Find the 25th term.",
+    "options": [
+      "165",
+      "-171",
+      "-178",
+      "-75"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{25} = -3 + (25-1)(-7)\\)\n\n\\(= -3 + 24 \\times -7 = -3 + -168 = -171\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 1 and the common difference is -4. Find the 18th term.",
+    "options": [
+      "-71",
+      "18",
+      "69",
+      "-67"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{18} = 1 + (18-1)(-4)\\)\n\n\\(= 1 + 17 \\times -4 = 1 + -68 = -67\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 3. Find the 7th term.",
+    "options": [
+      "72",
+      "972",
+      "2916",
+      "8748"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 4 \\times 3^{7-1} = 4 \\times 3^{6}\\)\n\n\\(= 4 \\times 729 = 2916\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 58 and the 13th term is 121. Find the common difference.",
+    "options": [
+      "-9",
+      "8",
+      "10",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{13} - T_{6} = (13-6)d\\)\n\n\\(121 - (58) = 7d\\)\n\n\\(63 = 7d\\)\n\n\\(d = \\frac{63}{7} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 6 terms of an A.P. whose first term is 2 and common difference is 5.",
+    "options": [
+      "102",
+      "87",
+      "162",
+      "93"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{6} = \\frac{6}{2}[2(2) + (6-1)(5)]\\)\n\n\\(= \\frac{6}{2}[4 + 25] = \\frac{6}{2} \\times 29 = 87\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 15 terms of an A.P. whose first term is 2 and common difference is 4.",
+    "options": [
+      "480",
+      "450",
+      "870",
+      "465"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{15} = \\frac{15}{2}[2(2) + (15-1)(4)]\\)\n\n\\(= \\frac{15}{2}[4 + 56] = \\frac{15}{2} \\times 60 = 450\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 20 terms of an A.P. whose first term is 7 and common difference is 2.",
+    "options": [
+      "900",
+      "540",
+      "520",
+      "500"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{20} = \\frac{20}{2}[2(7) + (20-1)(2)]\\)\n\n\\(= \\frac{20}{2}[14 + 38] = \\frac{20}{2} \\times 52 = 520\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -5 and the common difference is 7. Find the 7th term.",
+    "options": [
+      "-47",
+      "44",
+      "37",
+      "-35"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{7} = -5 + (7-1)(7)\\)\n\n\\(= -5 + 6 \\times 7 = -5 + 42 = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 9 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(18\\)",
+      "\\(6\\)",
+      "\\(9\\)",
+      "\\(\\frac{9}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{9}{1 - \\frac{1}{2}} = \\frac{9}{\\frac{1}{2}}\\)\n\n\\(= 9 \\times \\frac{2}{1} = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 11, 20, 29, 38, ...",
+    "options": [
+      "56",
+      "49",
+      "38",
+      "47"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(20 - (11) = 9\\).\n\nSo the next term is \\(38 + (9) = 47\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 3 and the common ratio is 2. Find the 7th term.",
+    "options": [
+      "36",
+      "384",
+      "192",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 3 \\times 2^{7-1} = 3 \\times 2^{6}\\)\n\n\\(= 3 \\times 64 = 192\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -7, -8, -9, -10, ...",
+    "options": [
+      "-11",
+      "-17",
+      "-10",
+      "-12"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(-8 - (-7) = -1\\).\n\nSo the next term is \\(-10 + (-1) = -11\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 4 and common ratio 2.",
+    "options": [
+      "60",
+      "32",
+      "68",
+      "64"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{4(2^{4} - 1)}{2 - 1} = \\frac{4(16 - 1)}{1}\\)\n\n\\(= \\frac{4 \\times 15}{1} = 60\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 37 and the 11th term is 93. Find the common difference.",
+    "options": [
+      "-8",
+      "7",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{11} - T_{4} = (11-4)d\\)\n\n\\(93 - (37) = 7d\\)\n\n\\(56 = 7d\\)\n\n\\(d = \\frac{56}{7} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 1 and the common difference is -7. Find the 7th term.",
+    "options": [
+      "43",
+      "7",
+      "-48",
+      "-41"
+    ],
+    "correctIndex": 3,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{7} = 1 + (7-1)(-7)\\)\n\n\\(= 1 + 6 \\times -7 = 1 + -42 = -41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 1 and common ratio 2.",
+    "options": [
+      "15",
+      "8",
+      "17",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{1(2^{4} - 1)}{2 - 1} = \\frac{1(16 - 1)}{1}\\)\n\n\\(= \\frac{1 \\times 15}{1} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 4 terms of a G.P. with first term 2 and common ratio 4.",
+    "options": [
+      "172",
+      "128",
+      "170",
+      "171.33333333333334"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{a(r^{n} - 1)}{r - 1}\\) for \\(r > 1\\).\n\n\\(S_{4} = \\frac{2(4^{4} - 1)}{4 - 1} = \\frac{2(256 - 1)}{3}\\)\n\n\\(= \\frac{2 \\times 255}{3} = 170\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 26 and common ratio \\(\\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{39}{2}\\)",
+      "\\(39\\)",
+      "\\(\\frac{52}{3}\\)",
+      "\\(13\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{26}{1 - \\frac{1}{3}} = \\frac{26}{\\frac{2}{3}}\\)\n\n\\(= 26 \\times \\frac{3}{2} = 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 6 and the common ratio is 4. Find the 7th term.",
+    "options": [
+      "24576",
+      "6144",
+      "144",
+      "98304"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{7} = 6 \\times 4^{7-1} = 6 \\times 4^{6}\\)\n\n\\(= 6 \\times 4096 = 24576\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 8, 3, -2, -7, ...",
+    "options": [
+      "-7",
+      "-17",
+      "-12",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The difference between consecutive terms is constant: \\(3 - (8) = -5\\).\n\nSo the next term is \\(-7 + (-5) = -12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 3 and the common ratio is 4. Find the 6th term.",
+    "options": [
+      "768",
+      "3072",
+      "12288",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{6} = 3 \\times 4^{6-1} = 3 \\times 4^{5}\\)\n\n\\(= 3 \\times 1024 = 3072\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence -6, 0, 6, 12, ...",
+    "options": [
+      "12",
+      "18",
+      "6",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(0 - (-6) = 6\\).\n\nSo the next term is \\(12 + (6) = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of a Geometric Progression (G.P.) is 4 and the common ratio is 4. Find the 5th term.",
+    "options": [
+      "4096",
+      "256",
+      "64",
+      "1024"
+    ],
+    "correctIndex": 3,
+    "explanation": "For a G.P., \\(T_n = ar^{n-1}\\).\n\n\\(T_{5} = 4 \\times 4^{5-1} = 4 \\times 4^{4}\\)\n\n\\(= 4 \\times 256 = 1024\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 20 terms of an A.P. whose first term is 9 and common difference is 6.",
+    "options": [
+      "1320",
+      "2460",
+      "1340",
+      "1380"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{20} = \\frac{20}{2}[2(9) + (20-1)(6)]\\)\n\n\\(= \\frac{20}{2}[18 + 114] = \\frac{20}{2} \\times 132 = 1320\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 5 and the common difference is 8. Find the 8th term.",
+    "options": [
+      "69",
+      "61",
+      "40",
+      "-51"
+    ],
+    "correctIndex": 1,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{8} = 5 + (8-1)(8)\\)\n\n\\(= 5 + 7 \\times 8 = 5 + 56 = 61\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 2, 1, 0, -1, ...",
+    "options": [
+      "-1",
+      "-3",
+      "1",
+      "-2"
+    ],
+    "correctIndex": 3,
+    "explanation": "The difference between consecutive terms is constant: \\(1 - (2) = -1\\).\n\nSo the next term is \\(-1 + (-1) = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 6th term is 34 and the 10th term is 54. Find the common difference.",
+    "options": [
+      "-5",
+      "5",
+      "6",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(T_{10} - T_{6} = (10-6)d\\)\n\n\\(54 - (34) = 4d\\)\n\n\\(20 = 4d\\)\n\n\\(d = \\frac{20}{4} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In an A.P., the 4th term is 22 and the 13th term is 85. Find the common difference.",
+    "options": [
+      "8",
+      "-7",
+      "6",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(T_{13} - T_{4} = (13-4)d\\)\n\n\\(85 - (22) = 9d\\)\n\n\\(63 = 9d\\)\n\n\\(d = \\frac{63}{9} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 1, 3, 5, 7, ...",
+    "options": [
+      "9",
+      "7",
+      "8",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "The difference between consecutive terms is constant: \\(3 - (1) = 2\\).\n\nSo the next term is \\(7 + (2) = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 18 terms of an A.P. whose first term is 9 and common difference is 8.",
+    "options": [
+      "2610",
+      "1404",
+      "1386",
+      "1458"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{18} = \\frac{18}{2}[2(9) + (18-1)(8)]\\)\n\n\\(= \\frac{18}{2}[18 + 136] = \\frac{18}{2} \\times 154 = 1386\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is -3 and the common difference is -6. Find the 25th term.",
+    "options": [
+      "-147",
+      "-75",
+      "141",
+      "-153"
+    ],
+    "correctIndex": 0,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{25} = -3 + (25-1)(-6)\\)\n\n\\(= -3 + 24 \\times -6 = -3 + -144 = -147\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The first term of an Arithmetic Progression (A.P.) is 6 and the common difference is -7. Find the 9th term.",
+    "options": [
+      "-57",
+      "54",
+      "-50",
+      "62"
+    ],
+    "correctIndex": 2,
+    "explanation": "For an A.P., \\(T_n = a + (n-1)d\\).\n\n\\(T_{9} = 6 + (9-1)(-7)\\)\n\n\\(= 6 + 8 \\times -7 = 6 + -56 = -50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum to infinity of the G.P. with first term 20 and common ratio \\(\\frac{1}{2}\\).",
+    "options": [
+      "\\(20\\)",
+      "\\(\\frac{40}{3}\\)",
+      "\\(10\\)",
+      "\\(40\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(S_\\infty = \\frac{a}{1 - r}\\) when \\(|r| < 1\\).\n\n\\(S_\\infty = \\frac{20}{1 - \\frac{1}{2}} = \\frac{20}{\\frac{1}{2}}\\)\n\n\\(= 20 \\times \\frac{2}{1} = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the first 9 terms of an A.P. whose first term is 11 and common difference is 3.",
+    "options": [
+      "207",
+      "220.5",
+      "216",
+      "315"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(S_n = \\frac{n}{2}[2a + (n-1)d]\\)\n\n\\(S_{9} = \\frac{9}{2}[2(11) + (9-1)(3)]\\)\n\n\\(= \\frac{9}{2}[22 + 24] = \\frac{9}{2} \\times 46 = 207\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the next term of the sequence 3, -3, -9, -15, ...",
+    "options": [
+      "-15",
+      "-21",
+      "-27",
+      "-12"
+    ],
+    "correctIndex": 1,
+    "explanation": "The difference between consecutive terms is constant: \\(-3 - (3) = -6\\).\n\nSo the next term is \\(-15 + (-6) = -21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "pHB44xoytpLUReaJJnJd",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

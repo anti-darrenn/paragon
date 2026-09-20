@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Reduce \\(\\frac{7}{35}\\) to its lowest terms.",
+    "options": [
+      "\\(5\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{8}{35}\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 7 and 35 is 7.\n\n\\(\\frac{7}{35} = \\frac{7 \\div 7}{35 \\div 7} = \\frac{1}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8787...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{29}{33}\\)",
+      "\\(\\frac{29}{3}\\)",
+      "\\(\\frac{87}{100}\\)",
+      "\\(\\frac{29}{30}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.8787...\\)\n\nThen \\(100x = 87.8787...\\)\n\nSubtracting: \\(100x - x = 87\\), so \\(99x = 87\\).\n\n\\(x = \\frac{29}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{20}\\) to its lowest terms.",
+    "options": [
+      "\\(5\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 4 and 20 is 4.\n\n\\(\\frac{4}{20} = \\frac{4 \\div 4}{20 \\div 4} = \\frac{1}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{21}{35}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{22}{35}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 21 and 35 is 7.\n\n\\(\\frac{21}{35} = \\frac{21 \\div 7}{35 \\div 7} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is a rational number?",
+    "options": [
+      "\\(\\sqrt{17}\\)",
+      "\\(\\sqrt{15}\\)",
+      "\\(\\sqrt{36}\\)",
+      "\\(\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A rational number can be written as a fraction of two integers.\n\n\\(\\sqrt{36} = 6\\), which is a whole number and therefore rational. The other square roots do not give exact values.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{54}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{27}\\)",
+      "\\(6\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 9 and 54 is 9.\n\n\\(\\frac{9}{54} = \\frac{9 \\div 9}{54 \\div 9} = \\frac{1}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{5}\\).",
+    "options": [
+      "\\(-\\frac{5}{13}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{18}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{5}\\) is \\(\\frac{5}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following fractions is the largest?",
+    "options": [
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{3}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each fraction to a decimal:\n\n\\(\\frac{3}{8} = 0.375\\)\n\n\\(\\frac{5}{9} = 0.5556\\)\n\n\\(\\frac{2}{5} = 0.4\\)\n\n\\(\\frac{1}{6} = 0.1667\\)\n\nThe largest value is \\(\\frac{5}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is an irrational number?",
+    "options": [
+      "\\(\\sqrt{9}\\)",
+      "\\(\\sqrt{3}\\)",
+      "\\(\\sqrt{16}\\)",
+      "\\(\\frac{5}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "An irrational number cannot be written as an exact fraction of two integers.\n\n\\(\\sqrt{3}\\) is not a perfect square, so its square root is irrational. The others simplify to exact rational values.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{28}{40}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{29}{40}\\)",
+      "\\(\\frac{7}{11}\\)",
+      "\\(\\frac{10}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 28 and 40 is 4.\n\n\\(\\frac{28}{40} = \\frac{28 \\div 4}{40 \\div 4} = \\frac{7}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9494...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{47}{45}\\)",
+      "\\(\\frac{47}{50}\\)",
+      "\\(\\frac{94}{9}\\)",
+      "\\(\\frac{94}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.9494...\\)\n\nThen \\(100x = 94.9494...\\)\n\nSubtracting: \\(100x - x = 94\\), so \\(99x = 94\\).\n\n\\(x = \\frac{94}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{2}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(3\\)",
+      "\\(\\frac{7}{2}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 6 and 2 is 2.\n\n\\(\\frac{6}{2} = \\frac{6 \\div 2}{2 \\div 2} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.888...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{25}\\)",
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{8}{99}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.888...\\)\n\nThen \\(10x = 8.888...\\)\n\nSubtracting: \\(10x - x = 8\\), so \\(9x = 8\\).\n\n\\(x = \\frac{8}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{12}\\).",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(-\\frac{12}{5}\\)",
+      "\\(\\frac{17}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{12}\\) is \\(\\frac{12}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.111...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{99}\\)",
+      "\\(\\frac{1}{100}\\)",
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{1}{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.111...\\)\n\nThen \\(10x = 1.111...\\)\n\nSubtracting: \\(10x - x = 1\\), so \\(9x = 1\\).\n\n\\(x = \\frac{1}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.444...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{25}\\)",
+      "\\(\\frac{4}{9}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{4}{99}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.444...\\)\n\nThen \\(10x = 4.444...\\)\n\nSubtracting: \\(10x - x = 4\\), so \\(9x = 4\\).\n\n\\(x = \\frac{4}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8686...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{43}{50}\\)",
+      "\\(\\frac{86}{99}\\)",
+      "\\(\\frac{86}{9}\\)",
+      "\\(\\frac{43}{45}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.8686...\\)\n\nThen \\(100x = 86.8686...\\)\n\nSubtracting: \\(100x - x = 86\\), so \\(99x = 86\\).\n\n\\(x = \\frac{86}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3434...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{34}{9}\\)",
+      "\\(\\frac{17}{45}\\)",
+      "\\(\\frac{34}{99}\\)",
+      "\\(\\frac{17}{50}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.3434...\\)\n\nThen \\(100x = 34.3434...\\)\n\nSubtracting: \\(100x - x = 34\\), so \\(99x = 34\\).\n\n\\(x = \\frac{34}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4141...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{41}{90}\\)",
+      "\\(\\frac{41}{99}\\)",
+      "\\(\\frac{41}{100}\\)",
+      "\\(\\frac{41}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.4141...\\)\n\nThen \\(100x = 41.4141...\\)\n\nSubtracting: \\(100x - x = 41\\), so \\(99x = 41\\).\n\n\\(x = \\frac{41}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.1010...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{10}{9}\\)",
+      "\\(\\frac{1}{10}\\)",
+      "\\(\\frac{10}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.1010...\\)\n\nThen \\(100x = 10.1010...\\)\n\nSubtracting: \\(100x - x = 10\\), so \\(99x = 10\\).\n\n\\(x = \\frac{10}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{14}{9}\\).",
+    "options": [
+      "\\(\\frac{9}{14}\\)",
+      "\\(\\frac{23}{14}\\)",
+      "\\(-\\frac{9}{14}\\)",
+      "\\(\\frac{14}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{14}{9}\\) is \\(\\frac{9}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{18}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{19}{14}\\)",
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{9}{7}\\)",
+      "\\(\\frac{7}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 18 and 14 is 2.\n\n\\(\\frac{18}{14} = \\frac{18 \\div 2}{14 \\div 2} = \\frac{9}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{24}{21}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{25}{21}\\)",
+      "\\(\\frac{8}{7}\\)",
+      "\\(\\frac{7}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 24 and 21 is 3.\n\n\\(\\frac{24}{21} = \\frac{24 \\div 3}{21 \\div 3} = \\frac{8}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.333...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{100}\\)",
+      "\\(\\frac{1}{33}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{3}{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.333...\\)\n\nThen \\(10x = 3.333...\\)\n\nSubtracting: \\(10x - x = 3\\), so \\(9x = 3\\).\n\n\\(x = \\frac{1}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{12}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{7}{12}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 6 and 12 is 6.\n\n\\(\\frac{6}{12} = \\frac{6 \\div 6}{12 \\div 6} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{9}{7}\\).",
+    "options": [
+      "\\(-\\frac{7}{9}\\)",
+      "\\(\\frac{16}{9}\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{9}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{9}{7}\\) is \\(\\frac{7}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{30}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{7}{30}\\)",
+      "\\(5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 6 and 30 is 6.\n\n\\(\\frac{6}{30} = \\frac{6 \\div 6}{30 \\div 6} = \\frac{1}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{15}\\).",
+    "options": [
+      "\\(\\frac{13}{15}\\)",
+      "\\(\\frac{28}{13}\\)",
+      "\\(-\\frac{15}{13}\\)",
+      "\\(\\frac{15}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{15}\\) is \\(\\frac{15}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8383...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{83}{100}\\)",
+      "\\(\\frac{83}{9}\\)",
+      "\\(\\frac{83}{90}\\)",
+      "\\(\\frac{83}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.8383...\\)\n\nThen \\(100x = 83.8383...\\)\n\nSubtracting: \\(100x - x = 83\\), so \\(99x = 83\\).\n\n\\(x = \\frac{83}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{63}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(3\\)",
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{32}{7}\\)",
+      "\\(\\frac{9}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 63 and 14 is 7.\n\n\\(\\frac{63}{14} = \\frac{63 \\div 7}{14 \\div 7} = \\frac{9}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.222...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{1}{50}\\)",
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{2}{99}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.222...\\)\n\nThen \\(10x = 2.222...\\)\n\nSubtracting: \\(10x - x = 2\\), so \\(9x = 2\\).\n\n\\(x = \\frac{2}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{10}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 6 and 10 is 2.\n\n\\(\\frac{6}{10} = \\frac{6 \\div 2}{10 \\div 2} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{8}{15}\\).",
+    "options": [
+      "\\(\\frac{15}{8}\\)",
+      "\\(-\\frac{15}{8}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{23}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{8}{15}\\) is \\(\\frac{15}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{24}{27}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{25}{27}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{9}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 24 and 27 is 3.\n\n\\(\\frac{24}{27} = \\frac{24 \\div 3}{27 \\div 3} = \\frac{8}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4242...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{15}\\)",
+      "\\(\\frac{21}{50}\\)",
+      "\\(\\frac{14}{3}\\)",
+      "\\(\\frac{14}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.4242...\\)\n\nThen \\(100x = 42.4242...\\)\n\nSubtracting: \\(100x - x = 42\\), so \\(99x = 42\\).\n\n\\(x = \\frac{14}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{32}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 32 and 24 is 8.\n\n\\(\\frac{32}{24} = \\frac{32 \\div 8}{24 \\div 8} = \\frac{4}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{54}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{4}{9}\\)",
+      "\\(\\frac{55}{24}\\)",
+      "\\(\\frac{9}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 54 and 24 is 6.\n\n\\(\\frac{54}{24} = \\frac{54 \\div 6}{24 \\div 6} = \\frac{9}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.666...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{50}\\)",
+      "\\(\\frac{2}{33}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.666...\\)\n\nThen \\(10x = 6.666...\\)\n\nSubtracting: \\(10x - x = 6\\), so \\(9x = 6\\).\n\n\\(x = \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2828...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{28}{9}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{14}{45}\\)",
+      "\\(\\frac{28}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.2828...\\)\n\nThen \\(100x = 28.2828...\\)\n\nSubtracting: \\(100x - x = 28\\), so \\(99x = 28\\).\n\n\\(x = \\frac{28}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{7}\\).",
+    "options": [
+      "\\(\\frac{12}{5}\\)",
+      "\\(-\\frac{7}{5}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{5}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{7}\\) is \\(\\frac{7}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.777...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{7}{99}\\)",
+      "\\(\\frac{7}{100}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.777...\\)\n\nThen \\(10x = 7.777...\\)\n\nSubtracting: \\(10x - x = 7\\), so \\(9x = 7\\).\n\n\\(x = \\frac{7}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{4}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{4}\\)",
+      "\\(1\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 8 and 4 is 4.\n\n\\(\\frac{8}{4} = \\frac{8 \\div 4}{4 \\div 4} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2424...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{33}\\)",
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{6}{25}\\)",
+      "\\(\\frac{4}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.2424...\\)\n\nThen \\(100x = 24.2424...\\)\n\nSubtracting: \\(100x - x = 24\\), so \\(99x = 24\\).\n\n\\(x = \\frac{8}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{6}\\).",
+    "options": [
+      "\\(\\frac{5}{6}\\)",
+      "\\(-\\frac{6}{5}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{11}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{6}\\) is \\(\\frac{6}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{32}{72}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{9}\\)",
+      "\\(\\frac{9}{4}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{11}{24}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 32 and 72 is 8.\n\n\\(\\frac{32}{72} = \\frac{32 \\div 8}{72 \\div 8} = \\frac{4}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9898...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{49}{50}\\)",
+      "\\(\\frac{49}{45}\\)",
+      "\\(\\frac{98}{9}\\)",
+      "\\(\\frac{98}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.9898...\\)\n\nThen \\(100x = 98.9898...\\)\n\nSubtracting: \\(100x - x = 98\\), so \\(99x = 98\\).\n\n\\(x = \\frac{98}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4646...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{23}{50}\\)",
+      "\\(\\frac{23}{45}\\)",
+      "\\(\\frac{46}{9}\\)",
+      "\\(\\frac{46}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.4646...\\)\n\nThen \\(100x = 46.4646...\\)\n\nSubtracting: \\(100x - x = 46\\), so \\(99x = 46\\).\n\n\\(x = \\frac{46}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3737...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{37}{90}\\)",
+      "\\(\\frac{37}{99}\\)",
+      "\\(\\frac{37}{100}\\)",
+      "\\(\\frac{37}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.3737...\\)\n\nThen \\(100x = 37.3737...\\)\n\nSubtracting: \\(100x - x = 37\\), so \\(99x = 37\\).\n\n\\(x = \\frac{37}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{12}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{13}{18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 12 and 18 is 6.\n\n\\(\\frac{12}{18} = \\frac{12 \\div 6}{18 \\div 6} = \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5959...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{59}{99}\\)",
+      "\\(\\frac{59}{100}\\)",
+      "\\(\\frac{59}{90}\\)",
+      "\\(\\frac{59}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.5959...\\)\n\nThen \\(100x = 59.5959...\\)\n\nSubtracting: \\(100x - x = 59\\), so \\(99x = 59\\).\n\n\\(x = \\frac{59}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3838...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{38}{99}\\)",
+      "\\(\\frac{19}{45}\\)",
+      "\\(\\frac{38}{9}\\)",
+      "\\(\\frac{19}{50}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.3838...\\)\n\nThen \\(100x = 38.3838...\\)\n\nSubtracting: \\(100x - x = 38\\), so \\(99x = 38\\).\n\n\\(x = \\frac{38}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{16}{8}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{17}{8}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 16 and 8 is 8.\n\n\\(\\frac{16}{8} = \\frac{16 \\div 8}{8 \\div 8} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2020...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{20}{9}\\)",
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{20}{99}\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.2020...\\)\n\nThen \\(100x = 20.2020...\\)\n\nSubtracting: \\(100x - x = 20\\), so \\(99x = 20\\).\n\n\\(x = \\frac{20}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{20}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{7}{12}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 20 and 36 is 4.\n\n\\(\\frac{20}{36} = \\frac{20 \\div 4}{36 \\div 4} = \\frac{5}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.555...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{20}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{5}{99}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.555...\\)\n\nThen \\(10x = 5.555...\\)\n\nSubtracting: \\(10x - x = 5\\), so \\(9x = 5\\).\n\n\\(x = \\frac{5}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{25}{45}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{26}{45}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 25 and 45 is 5.\n\n\\(\\frac{25}{45} = \\frac{25 \\div 5}{45 \\div 5} = \\frac{5}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{8}{13}\\).",
+    "options": [
+      "\\(\\frac{13}{8}\\)",
+      "\\(-\\frac{13}{8}\\)",
+      "\\(\\frac{21}{8}\\)",
+      "\\(\\frac{8}{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{8}{13}\\) is \\(\\frac{13}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{4}{3}\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(-\\frac{3}{4}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{4}{3}\\) is \\(\\frac{3}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{14}{63}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{9}{2}\\)",
+      "\\(\\frac{5}{21}\\)",
+      "\\(\\frac{2}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 14 and 63 is 7.\n\n\\(\\frac{14}{63} = \\frac{14 \\div 7}{63 \\div 7} = \\frac{2}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{28}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{29}{24}\\)",
+      "\\(1\\)",
+      "\\(\\frac{6}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 28 and 24 is 4.\n\n\\(\\frac{28}{24} = \\frac{28 \\div 4}{24 \\div 4} = \\frac{7}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{2}{3}\\).",
+    "options": [
+      "\\(-\\frac{3}{2}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{2}{3}\\) is \\(\\frac{3}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{27}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{27}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{9}{2}\\)",
+      "\\(\\frac{2}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 6 and 27 is 3.\n\n\\(\\frac{6}{27} = \\frac{6 \\div 3}{27 \\div 3} = \\frac{2}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6262...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{62}{99}\\)",
+      "\\(\\frac{62}{9}\\)",
+      "\\(\\frac{31}{50}\\)",
+      "\\(\\frac{31}{45}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.6262...\\)\n\nThen \\(100x = 62.6262...\\)\n\nSubtracting: \\(100x - x = 62\\), so \\(99x = 62\\).\n\n\\(x = \\frac{62}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{3}{11}\\).",
+    "options": [
+      "\\(\\frac{3}{11}\\)",
+      "\\(\\frac{11}{3}\\)",
+      "\\(-\\frac{11}{3}\\)",
+      "\\(\\frac{14}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{3}{11}\\) is \\(\\frac{11}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{49}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{25}{7}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 49 and 14 is 7.\n\n\\(\\frac{49}{14} = \\frac{49 \\div 7}{14 \\div 7} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{63}{90}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{11}\\)",
+      "\\(\\frac{32}{45}\\)",
+      "\\(\\frac{10}{7}\\)",
+      "\\(\\frac{7}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 63 and 90 is 9.\n\n\\(\\frac{63}{90} = \\frac{63 \\div 9}{90 \\div 9} = \\frac{7}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{9}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{9}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 8 and 18 is 2.\n\n\\(\\frac{8}{18} = \\frac{8 \\div 2}{18 \\div 2} = \\frac{4}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4343...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{43}{90}\\)",
+      "\\(\\frac{43}{100}\\)",
+      "\\(\\frac{43}{99}\\)",
+      "\\(\\frac{43}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.4343...\\)\n\nThen \\(100x = 43.4343...\\)\n\nSubtracting: \\(100x - x = 43\\), so \\(99x = 43\\).\n\n\\(x = \\frac{43}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2323...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{23}{100}\\)",
+      "\\(\\frac{23}{99}\\)",
+      "\\(\\frac{23}{90}\\)",
+      "\\(\\frac{23}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.2323...\\)\n\nThen \\(100x = 23.2323...\\)\n\nSubtracting: \\(100x - x = 23\\), so \\(99x = 23\\).\n\n\\(x = \\frac{23}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6969...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{23}{3}\\)",
+      "\\(\\frac{69}{100}\\)",
+      "\\(\\frac{23}{30}\\)",
+      "\\(\\frac{23}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.6969...\\)\n\nThen \\(100x = 69.6969...\\)\n\nSubtracting: \\(100x - x = 69\\), so \\(99x = 69\\).\n\n\\(x = \\frac{23}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4747...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{47}{99}\\)",
+      "\\(\\frac{47}{9}\\)",
+      "\\(\\frac{47}{90}\\)",
+      "\\(\\frac{47}{100}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.4747...\\)\n\nThen \\(100x = 47.4747...\\)\n\nSubtracting: \\(100x - x = 47\\), so \\(99x = 47\\).\n\n\\(x = \\frac{47}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2929...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{29}{99}\\)",
+      "\\(\\frac{29}{9}\\)",
+      "\\(\\frac{29}{100}\\)",
+      "\\(\\frac{29}{90}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.2929...\\)\n\nThen \\(100x = 29.2929...\\)\n\nSubtracting: \\(100x - x = 29\\), so \\(99x = 29\\).\n\n\\(x = \\frac{29}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{4}{13}\\).",
+    "options": [
+      "\\(\\frac{4}{13}\\)",
+      "\\(\\frac{13}{4}\\)",
+      "\\(-\\frac{13}{4}\\)",
+      "\\(\\frac{17}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{4}{13}\\) is \\(\\frac{13}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{7}{28}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{5}\\)",
+      "\\(4\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 7 and 28 is 7.\n\n\\(\\frac{7}{28} = \\frac{7 \\div 7}{28 \\div 7} = \\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2525...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{25}{9}\\)",
+      "\\(\\frac{25}{99}\\)",
+      "\\(\\frac{5}{18}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.2525...\\)\n\nThen \\(100x = 25.2525...\\)\n\nSubtracting: \\(100x - x = 25\\), so \\(99x = 25\\).\n\n\\(x = \\frac{25}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{72}{45}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{73}{45}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{8}{5}\\)",
+      "\\(\\frac{5}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 72 and 45 is 9.\n\n\\(\\frac{72}{45} = \\frac{72 \\div 9}{45 \\div 9} = \\frac{8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{10}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{9}{10}\\)",
+      "\\(\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 8 and 10 is 2.\n\n\\(\\frac{8}{10} = \\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{40}\\) to its lowest terms.",
+    "options": [
+      "\\(10\\)",
+      "\\(\\frac{1}{10}\\)",
+      "\\(\\frac{1}{11}\\)",
+      "\\(\\frac{1}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 4 and 40 is 4.\n\n\\(\\frac{4}{40} = \\frac{4 \\div 4}{40 \\div 4} = \\frac{1}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6767...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{67}{90}\\)",
+      "\\(\\frac{67}{100}\\)",
+      "\\(\\frac{67}{9}\\)",
+      "\\(\\frac{67}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.6767...\\)\n\nThen \\(100x = 67.6767...\\)\n\nSubtracting: \\(100x - x = 67\\), so \\(99x = 67\\).\n\n\\(x = \\frac{67}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9696...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{16}{15}\\)",
+      "\\(\\frac{32}{33}\\)",
+      "\\(\\frac{32}{3}\\)",
+      "\\(\\frac{24}{25}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.9696...\\)\n\nThen \\(100x = 96.9696...\\)\n\nSubtracting: \\(100x - x = 96\\), so \\(99x = 96\\).\n\n\\(x = \\frac{32}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{4}\\).",
+    "options": [
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(-\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{4}\\) is \\(\\frac{4}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.1616...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{16}{9}\\)",
+      "\\(\\frac{8}{45}\\)",
+      "\\(\\frac{16}{99}\\)",
+      "\\(\\frac{4}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.1616...\\)\n\nThen \\(100x = 16.1616...\\)\n\nSubtracting: \\(100x - x = 16\\), so \\(99x = 16\\).\n\n\\(x = \\frac{16}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9797...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{97}{100}\\)",
+      "\\(\\frac{97}{90}\\)",
+      "\\(\\frac{97}{9}\\)",
+      "\\(\\frac{97}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.9797...\\)\n\nThen \\(100x = 97.9797...\\)\n\nSubtracting: \\(100x - x = 97\\), so \\(99x = 97\\).\n\n\\(x = \\frac{97}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{8}\\).",
+    "options": [
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(-\\frac{8}{5}\\)",
+      "\\(\\frac{8}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{8}\\) is \\(\\frac{8}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{3}{5}\\).",
+    "options": [
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(-\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{3}{5}\\) is \\(\\frac{5}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{11}{6}\\).",
+    "options": [
+      "\\(\\frac{17}{11}\\)",
+      "\\(-\\frac{6}{11}\\)",
+      "\\(\\frac{6}{11}\\)",
+      "\\(\\frac{11}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{11}{6}\\) is \\(\\frac{6}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{45}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{23}{9}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{2}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 45 and 18 is 9.\n\n\\(\\frac{45}{18} = \\frac{45 \\div 9}{18 \\div 9} = \\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{15}{7}\\).",
+    "options": [
+      "\\(\\frac{22}{15}\\)",
+      "\\(\\frac{15}{7}\\)",
+      "\\(-\\frac{7}{15}\\)",
+      "\\(\\frac{7}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{15}{7}\\) is \\(\\frac{7}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{6}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 9 and 6 is 3.\n\n\\(\\frac{9}{6} = \\frac{9 \\div 3}{6 \\div 3} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{8}{11}\\).",
+    "options": [
+      "\\(-\\frac{11}{8}\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{8}{11}\\)",
+      "\\(\\frac{19}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{8}{11}\\) is \\(\\frac{11}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{2}\\).",
+    "options": [
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(-\\frac{2}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{2}\\) is \\(\\frac{2}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6868...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{68}{9}\\)",
+      "\\(\\frac{17}{25}\\)",
+      "\\(\\frac{34}{45}\\)",
+      "\\(\\frac{68}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.6868...\\)\n\nThen \\(100x = 68.6868...\\)\n\nSubtracting: \\(100x - x = 68\\), so \\(99x = 68\\).\n\n\\(x = \\frac{68}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{27}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(3\\)",
+      "\\(\\frac{10}{27}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 9 and 27 is 9.\n\n\\(\\frac{9}{27} = \\frac{9 \\div 9}{27 \\div 9} = \\frac{1}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{15}{13}\\).",
+    "options": [
+      "\\(\\frac{28}{15}\\)",
+      "\\(\\frac{15}{13}\\)",
+      "\\(\\frac{13}{15}\\)",
+      "\\(-\\frac{13}{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{15}{13}\\) is \\(\\frac{13}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4848...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{12}{25}\\)",
+      "\\(\\frac{16}{3}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{16}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.4848...\\)\n\nThen \\(100x = 48.4848...\\)\n\nSubtracting: \\(100x - x = 48\\), so \\(99x = 48\\).\n\n\\(x = \\frac{16}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{9}{14}\\).",
+    "options": [
+      "\\(-\\frac{14}{9}\\)",
+      "\\(\\frac{23}{9}\\)",
+      "\\(\\frac{14}{9}\\)",
+      "\\(\\frac{9}{14}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{9}{14}\\) is \\(\\frac{14}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{54}{30}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{11}{6}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{9}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 54 and 30 is 6.\n\n\\(\\frac{54}{30} = \\frac{54 \\div 6}{30 \\div 6} = \\frac{9}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{3}\\).",
+    "options": [
+      "\\(\\frac{16}{13}\\)",
+      "\\(\\frac{13}{3}\\)",
+      "\\(-\\frac{3}{13}\\)",
+      "\\(\\frac{3}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{3}\\) is \\(\\frac{3}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{3}{7}\\).",
+    "options": [
+      "\\(\\frac{3}{7}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{10}{3}\\)",
+      "\\(-\\frac{7}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{3}{7}\\) is \\(\\frac{7}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{14}{35}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 14 and 35 is 7.\n\n\\(\\frac{14}{35} = \\frac{14 \\div 7}{35 \\div 7} = \\frac{2}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{12}{9}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{13}{9}\\)",
+      "\\(1\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 12 and 9 is 3.\n\n\\(\\frac{12}{9} = \\frac{12 \\div 3}{9 \\div 3} = \\frac{4}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{49}{28}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{25}{14}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{7}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 49 and 28 is 7.\n\n\\(\\frac{49}{28} = \\frac{49 \\div 7}{28 \\div 7} = \\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{81}{99}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{11}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{11}{9}\\)",
+      "\\(\\frac{82}{99}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 81 and 99 is 9.\n\n\\(\\frac{81}{99} = \\frac{81 \\div 9}{99 \\div 9} = \\frac{9}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{14}{8}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 14 and 8 is 2.\n\n\\(\\frac{14}{8} = \\frac{14 \\div 2}{8 \\div 2} = \\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4040...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{40}{99}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{4}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.4040...\\)\n\nThen \\(100x = 40.4040...\\)\n\nSubtracting: \\(100x - x = 40\\), so \\(99x = 40\\).\n\n\\(x = \\frac{40}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6363...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(7\\)",
+      "\\(\\frac{7}{11}\\)",
+      "\\(\\frac{63}{100}\\)",
+      "\\(\\frac{7}{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.6363...\\)\n\nThen \\(100x = 63.6363...\\)\n\nSubtracting: \\(100x - x = 63\\), so \\(99x = 63\\).\n\n\\(x = \\frac{7}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.1818...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{50}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(2\\)",
+      "\\(\\frac{2}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.1818...\\)\n\nThen \\(100x = 18.1818...\\)\n\nSubtracting: \\(100x - x = 18\\), so \\(99x = 18\\).\n\n\\(x = \\frac{2}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{20}{16}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{21}{16}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 20 and 16 is 4.\n\n\\(\\frac{20}{16} = \\frac{20 \\div 4}{16 \\div 4} = \\frac{5}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9595...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{19}{18}\\)",
+      "\\(\\frac{19}{20}\\)",
+      "\\(\\frac{95}{99}\\)",
+      "\\(\\frac{95}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.9595...\\)\n\nThen \\(100x = 95.9595...\\)\n\nSubtracting: \\(100x - x = 95\\), so \\(99x = 95\\).\n\n\\(x = \\frac{95}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{2}{4}\\) to its lowest terms.",
+    "options": [
+      "\\(2\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 2 and 4 is 2.\n\n\\(\\frac{2}{4} = \\frac{2 \\div 2}{4 \\div 2} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2626...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{13}{45}\\)",
+      "\\(\\frac{13}{50}\\)",
+      "\\(\\frac{26}{9}\\)",
+      "\\(\\frac{26}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.2626...\\)\n\nThen \\(100x = 26.2626...\\)\n\nSubtracting: \\(100x - x = 26\\), so \\(99x = 26\\).\n\n\\(x = \\frac{26}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{9}{13}\\).",
+    "options": [
+      "\\(\\frac{22}{9}\\)",
+      "\\(\\frac{13}{9}\\)",
+      "\\(-\\frac{13}{9}\\)",
+      "\\(\\frac{9}{13}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{9}{13}\\) is \\(\\frac{13}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{6}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 4 and 6 is 2.\n\n\\(\\frac{4}{6} = \\frac{4 \\div 2}{6 \\div 2} = \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{2}{11}\\).",
+    "options": [
+      "\\(\\frac{11}{2}\\)",
+      "\\(\\frac{13}{2}\\)",
+      "\\(\\frac{2}{11}\\)",
+      "\\(-\\frac{11}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{2}{11}\\) is \\(\\frac{11}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{11}\\).",
+    "options": [
+      "\\(\\frac{18}{7}\\)",
+      "\\(\\frac{11}{7}\\)",
+      "\\(-\\frac{11}{7}\\)",
+      "\\(\\frac{7}{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{11}\\) is \\(\\frac{11}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{6}{5}\\).",
+    "options": [
+      "\\(\\frac{11}{6}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(-\\frac{5}{6}\\)",
+      "\\(\\frac{6}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{6}{5}\\) is \\(\\frac{5}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{44}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{12}\\)",
+      "\\(11\\)",
+      "\\(\\frac{5}{44}\\)",
+      "\\(\\frac{1}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 4 and 44 is 4.\n\n\\(\\frac{4}{44} = \\frac{4 \\div 4}{44 \\div 4} = \\frac{1}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{4}{9}\\).",
+    "options": [
+      "\\(-\\frac{9}{4}\\)",
+      "\\(\\frac{9}{4}\\)",
+      "\\(\\frac{4}{9}\\)",
+      "\\(\\frac{13}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{4}{9}\\) is \\(\\frac{9}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6464...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{32}{45}\\)",
+      "\\(\\frac{64}{9}\\)",
+      "\\(\\frac{64}{99}\\)",
+      "\\(\\frac{16}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.6464...\\)\n\nThen \\(100x = 64.6464...\\)\n\nSubtracting: \\(100x - x = 64\\), so \\(99x = 64\\).\n\n\\(x = \\frac{64}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{54}{45}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{11}{9}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 54 and 45 is 9.\n\n\\(\\frac{54}{45} = \\frac{54 \\div 9}{45 \\div 9} = \\frac{6}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{10}{9}\\).",
+    "options": [
+      "\\(\\frac{19}{10}\\)",
+      "\\(-\\frac{9}{10}\\)",
+      "\\(\\frac{9}{10}\\)",
+      "\\(\\frac{10}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{10}{9}\\) is \\(\\frac{9}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{32}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{9}{32}\\)",
+      "\\(4\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 8 and 32 is 8.\n\n\\(\\frac{8}{32} = \\frac{8 \\div 8}{32 \\div 8} = \\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{4}{15}\\).",
+    "options": [
+      "\\(\\frac{4}{15}\\)",
+      "\\(-\\frac{15}{4}\\)",
+      "\\(\\frac{15}{4}\\)",
+      "\\(\\frac{19}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{4}{15}\\) is \\(\\frac{15}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{14}{77}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{11}\\)",
+      "\\(\\frac{15}{77}\\)",
+      "\\(\\frac{11}{2}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 14 and 77 is 7.\n\n\\(\\frac{14}{77} = \\frac{14 \\div 7}{77 \\div 7} = \\frac{2}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7575...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{25}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{25}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.7575...\\)\n\nThen \\(100x = 75.7575...\\)\n\nSubtracting: \\(100x - x = 75\\), so \\(99x = 75\\).\n\n\\(x = \\frac{25}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{10}{15}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{11}{15}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 10 and 15 is 5.\n\n\\(\\frac{10}{15} = \\frac{10 \\div 5}{15 \\div 5} = \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{18}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{19}{24}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 18 and 24 is 6.\n\n\\(\\frac{18}{24} = \\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.1515...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{5}{33}\\)",
+      "\\(\\frac{3}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.1515...\\)\n\nThen \\(100x = 15.1515...\\)\n\nSubtracting: \\(100x - x = 15\\), so \\(99x = 15\\).\n\n\\(x = \\frac{5}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{4}\\).",
+    "options": [
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{11}{7}\\)",
+      "\\(-\\frac{4}{7}\\)",
+      "\\(\\frac{4}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{4}\\) is \\(\\frac{4}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{6}\\).",
+    "options": [
+      "\\(-\\frac{6}{13}\\)",
+      "\\(\\frac{19}{13}\\)",
+      "\\(\\frac{6}{13}\\)",
+      "\\(\\frac{13}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{6}\\) is \\(\\frac{6}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5252...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{13}{25}\\)",
+      "\\(\\frac{52}{9}\\)",
+      "\\(\\frac{26}{45}\\)",
+      "\\(\\frac{52}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.5252...\\)\n\nThen \\(100x = 52.5252...\\)\n\nSubtracting: \\(100x - x = 52\\), so \\(99x = 52\\).\n\n\\(x = \\frac{52}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3030...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{10}{3}\\)",
+      "\\(\\frac{10}{33}\\)",
+      "\\(\\frac{3}{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.3030...\\)\n\nThen \\(100x = 30.3030...\\)\n\nSubtracting: \\(100x - x = 30\\), so \\(99x = 30\\).\n\n\\(x = \\frac{10}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5050...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{50}{9}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{50}{99}\\)",
+      "\\(\\frac{5}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.5050...\\)\n\nThen \\(100x = 50.5050...\\)\n\nSubtracting: \\(100x - x = 50\\), so \\(99x = 50\\).\n\n\\(x = \\frac{50}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{40}{25}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{8}{5}\\)",
+      "\\(\\frac{41}{25}\\)",
+      "\\(\\frac{5}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 40 and 25 is 5.\n\n\\(\\frac{40}{25} = \\frac{40 \\div 5}{25 \\div 5} = \\frac{8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{12}{11}\\).",
+    "options": [
+      "\\(\\frac{23}{12}\\)",
+      "\\(\\frac{12}{11}\\)",
+      "\\(-\\frac{11}{12}\\)",
+      "\\(\\frac{11}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{12}{11}\\) is \\(\\frac{11}{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5757...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{19}{3}\\)",
+      "\\(\\frac{19}{30}\\)",
+      "\\(\\frac{19}{33}\\)",
+      "\\(\\frac{57}{100}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.5757...\\)\n\nThen \\(100x = 57.5757...\\)\n\nSubtracting: \\(100x - x = 57\\), so \\(99x = 57\\).\n\n\\(x = \\frac{19}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{2}{13}\\).",
+    "options": [
+      "\\(\\frac{13}{2}\\)",
+      "\\(\\frac{15}{2}\\)",
+      "\\(-\\frac{13}{2}\\)",
+      "\\(\\frac{2}{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{2}{13}\\) is \\(\\frac{13}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{16}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(2\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{9}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 8 and 16 is 8.\n\n\\(\\frac{8}{16} = \\frac{8 \\div 8}{16 \\div 8} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{8}\\).",
+    "options": [
+      "\\(-\\frac{8}{7}\\)",
+      "\\(\\frac{8}{7}\\)",
+      "\\(\\frac{7}{8}\\)",
+      "\\(\\frac{15}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{8}\\) is \\(\\frac{8}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{18}{21}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{6}{7}\\)",
+      "\\(\\frac{19}{21}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 18 and 21 is 3.\n\n\\(\\frac{18}{21} = \\frac{18 \\div 3}{21 \\div 3} = \\frac{6}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{15}{6}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 15 and 6 is 3.\n\n\\(\\frac{15}{6} = \\frac{15 \\div 3}{6 \\div 3} = \\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{18}{12}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(1\\)",
+      "\\(\\frac{19}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 18 and 12 is 6.\n\n\\(\\frac{18}{12} = \\frac{18 \\div 6}{12 \\div 6} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5151...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{51}{100}\\)",
+      "\\(\\frac{17}{33}\\)",
+      "\\(\\frac{17}{3}\\)",
+      "\\(\\frac{17}{30}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.5151...\\)\n\nThen \\(100x = 51.5151...\\)\n\nSubtracting: \\(100x - x = 51\\), so \\(99x = 51\\).\n\n\\(x = \\frac{17}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{10}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 4 and 10 is 2.\n\n\\(\\frac{4}{10} = \\frac{4 \\div 2}{10 \\div 2} = \\frac{2}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{14}{5}\\).",
+    "options": [
+      "\\(\\frac{19}{14}\\)",
+      "\\(\\frac{14}{5}\\)",
+      "\\(-\\frac{5}{14}\\)",
+      "\\(\\frac{5}{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{14}{5}\\) is \\(\\frac{5}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{8}{5}\\).",
+    "options": [
+      "\\(-\\frac{5}{8}\\)",
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{13}{8}\\)",
+      "\\(\\frac{8}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{8}{5}\\) is \\(\\frac{5}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3535...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{20}\\)",
+      "\\(\\frac{35}{9}\\)",
+      "\\(\\frac{35}{99}\\)",
+      "\\(\\frac{7}{18}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.3535...\\)\n\nThen \\(100x = 35.3535...\\)\n\nSubtracting: \\(100x - x = 35\\), so \\(99x = 35\\).\n\n\\(x = \\frac{35}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{9}{8}\\).",
+    "options": [
+      "\\(-\\frac{8}{9}\\)",
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{17}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{9}{8}\\) is \\(\\frac{8}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5858...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{29}{50}\\)",
+      "\\(\\frac{58}{9}\\)",
+      "\\(\\frac{29}{45}\\)",
+      "\\(\\frac{58}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.5858...\\)\n\nThen \\(100x = 58.5858...\\)\n\nSubtracting: \\(100x - x = 58\\), so \\(99x = 58\\).\n\n\\(x = \\frac{58}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{5}\\).",
+    "options": [
+      "\\(\\frac{12}{7}\\)",
+      "\\(-\\frac{5}{7}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{5}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{5}\\) is \\(\\frac{5}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5454...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{6}{11}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{27}{50}\\)",
+      "\\(6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.5454...\\)\n\nThen \\(100x = 54.5454...\\)\n\nSubtracting: \\(100x - x = 54\\), so \\(99x = 54\\).\n\n\\(x = \\frac{6}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{64}{88}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{11}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{65}{88}\\)",
+      "\\(\\frac{11}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 64 and 88 is 8.\n\n\\(\\frac{64}{88} = \\frac{64 \\div 8}{88 \\div 8} = \\frac{8}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{27}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{7}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 27 and 36 is 9.\n\n\\(\\frac{27}{36} = \\frac{27 \\div 9}{36 \\div 9} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{7}\\).",
+    "options": [
+      "\\(\\frac{13}{7}\\)",
+      "\\(\\frac{7}{13}\\)",
+      "\\(-\\frac{7}{13}\\)",
+      "\\(\\frac{20}{13}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{7}\\) is \\(\\frac{7}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8080...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{80}{99}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{80}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.8080...\\)\n\nThen \\(100x = 80.8080...\\)\n\nSubtracting: \\(100x - x = 80\\), so \\(99x = 80\\).\n\n\\(x = \\frac{80}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{15}{2}\\).",
+    "options": [
+      "\\(-\\frac{2}{15}\\)",
+      "\\(\\frac{2}{15}\\)",
+      "\\(\\frac{15}{2}\\)",
+      "\\(\\frac{17}{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{15}{2}\\) is \\(\\frac{2}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4545...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(5\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{11}\\)",
+      "\\(\\frac{9}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.4545...\\)\n\nThen \\(100x = 45.4545...\\)\n\nSubtracting: \\(100x - x = 45\\), so \\(99x = 45\\).\n\n\\(x = \\frac{5}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{9}\\).",
+    "options": [
+      "\\(-\\frac{9}{13}\\)",
+      "\\(\\frac{22}{13}\\)",
+      "\\(\\frac{9}{13}\\)",
+      "\\(\\frac{13}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{9}\\) is \\(\\frac{9}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{12}{6}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{13}{6}\\)",
+      "\\(2\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 12 and 6 is 6.\n\n\\(\\frac{12}{6} = \\frac{12 \\div 6}{6 \\div 6} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7676...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{76}{9}\\)",
+      "\\(\\frac{19}{25}\\)",
+      "\\(\\frac{38}{45}\\)",
+      "\\(\\frac{76}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.7676...\\)\n\nThen \\(100x = 76.7676...\\)\n\nSubtracting: \\(100x - x = 76\\), so \\(99x = 76\\).\n\n\\(x = \\frac{76}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{12}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(3\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 4 and 12 is 4.\n\n\\(\\frac{4}{12} = \\frac{4 \\div 4}{12 \\div 4} = \\frac{1}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{6}\\).",
+    "options": [
+      "\\(\\frac{6}{7}\\)",
+      "\\(\\frac{13}{7}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(-\\frac{6}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{6}\\) is \\(\\frac{6}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6161...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{61}{99}\\)",
+      "\\(\\frac{61}{90}\\)",
+      "\\(\\frac{61}{100}\\)",
+      "\\(\\frac{61}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.6161...\\)\n\nThen \\(100x = 61.6161...\\)\n\nSubtracting: \\(100x - x = 61\\), so \\(99x = 61\\).\n\n\\(x = \\frac{61}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{8}\\).",
+    "options": [
+      "\\(\\frac{13}{8}\\)",
+      "\\(\\frac{21}{13}\\)",
+      "\\(-\\frac{8}{13}\\)",
+      "\\(\\frac{8}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{8}\\) is \\(\\frac{8}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{14}{11}\\).",
+    "options": [
+      "\\(\\frac{25}{14}\\)",
+      "\\(-\\frac{11}{14}\\)",
+      "\\(\\frac{14}{11}\\)",
+      "\\(\\frac{11}{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{14}{11}\\) is \\(\\frac{11}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{14}{4}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{2}\\)",
+      "\\(\\frac{15}{4}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{2}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 14 and 4 is 2.\n\n\\(\\frac{14}{4} = \\frac{14 \\div 2}{4 \\div 2} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2121...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{7}{33}\\)",
+      "\\(\\frac{21}{100}\\)",
+      "\\(\\frac{7}{30}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.2121...\\)\n\nThen \\(100x = 21.2121...\\)\n\nSubtracting: \\(100x - x = 21\\), so \\(99x = 21\\).\n\n\\(x = \\frac{7}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{3}{33}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{33}\\)",
+      "\\(11\\)",
+      "\\(\\frac{1}{11}\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 3 and 33 is 3.\n\n\\(\\frac{3}{33} = \\frac{3 \\div 3}{33 \\div 3} = \\frac{1}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{36}{20}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{37}{20}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 36 and 20 is 4.\n\n\\(\\frac{36}{20} = \\frac{36 \\div 4}{20 \\div 4} = \\frac{9}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{35}{30}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{6}{7}\\)",
+      "\\(1\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{7}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 35 and 30 is 5.\n\n\\(\\frac{35}{30} = \\frac{35 \\div 5}{30 \\div 5} = \\frac{7}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{4}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{4}\\)",
+      "\\(1\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 6 and 4 is 2.\n\n\\(\\frac{6}{4} = \\frac{6 \\div 2}{4 \\div 2} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{6}{33}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{11}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{11}{2}\\)",
+      "\\(\\frac{7}{33}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 6 and 33 is 3.\n\n\\(\\frac{6}{33} = \\frac{6 \\div 3}{33 \\div 3} = \\frac{2}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{4}{11}\\).",
+    "options": [
+      "\\(\\frac{4}{11}\\)",
+      "\\(-\\frac{11}{4}\\)",
+      "\\(\\frac{11}{4}\\)",
+      "\\(\\frac{15}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{4}{11}\\) is \\(\\frac{11}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{3}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{7}\\)",
+      "\\(6\\)",
+      "\\(\\frac{2}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 3 and 18 is 3.\n\n\\(\\frac{3}{18} = \\frac{3 \\div 3}{18 \\div 3} = \\frac{1}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6565...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{65}{9}\\)",
+      "\\(\\frac{13}{18}\\)",
+      "\\(\\frac{13}{20}\\)",
+      "\\(\\frac{65}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.6565...\\)\n\nThen \\(100x = 65.6565...\\)\n\nSubtracting: \\(100x - x = 65\\), so \\(99x = 65\\).\n\n\\(x = \\frac{65}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{15}{11}\\).",
+    "options": [
+      "\\(\\frac{11}{15}\\)",
+      "\\(\\frac{15}{11}\\)",
+      "\\(\\frac{26}{15}\\)",
+      "\\(-\\frac{11}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{15}{11}\\) is \\(\\frac{11}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{4}\\).",
+    "options": [
+      "\\(-\\frac{4}{13}\\)",
+      "\\(\\frac{4}{13}\\)",
+      "\\(\\frac{13}{4}\\)",
+      "\\(\\frac{17}{13}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{4}\\) is \\(\\frac{4}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{5}{10}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 5 and 10 is 5.\n\n\\(\\frac{5}{10} = \\frac{5 \\div 5}{10 \\div 5} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{4}{5}\\).",
+    "options": [
+      "\\(\\frac{9}{4}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(-\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{4}{5}\\) is \\(\\frac{5}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{48}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{49}{18}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 48 and 18 is 6.\n\n\\(\\frac{48}{18} = \\frac{48 \\div 6}{18 \\div 6} = \\frac{8}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9393...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{31}{33}\\)",
+      "\\(\\frac{31}{30}\\)",
+      "\\(\\frac{31}{3}\\)",
+      "\\(\\frac{93}{100}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.9393...\\)\n\nThen \\(100x = 93.9393...\\)\n\nSubtracting: \\(100x - x = 93\\), so \\(99x = 93\\).\n\n\\(x = \\frac{31}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{3}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{10}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 9 and 3 is 3.\n\n\\(\\frac{9}{3} = \\frac{9 \\div 3}{3 \\div 3} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{14}{3}\\).",
+    "options": [
+      "\\(\\frac{14}{3}\\)",
+      "\\(-\\frac{3}{14}\\)",
+      "\\(\\frac{17}{14}\\)",
+      "\\(\\frac{3}{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{14}{3}\\) is \\(\\frac{3}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{10}\\).",
+    "options": [
+      "\\(\\frac{10}{7}\\)",
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{17}{7}\\)",
+      "\\(-\\frac{10}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{10}\\) is \\(\\frac{10}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{11}{8}\\).",
+    "options": [
+      "\\(\\frac{19}{11}\\)",
+      "\\(-\\frac{8}{11}\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{8}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{11}{8}\\) is \\(\\frac{8}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{21}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{11}{7}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 21 and 14 is 7.\n\n\\(\\frac{21}{14} = \\frac{21 \\div 7}{14 \\div 7} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{32}{44}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{11}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{11}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 32 and 44 is 4.\n\n\\(\\frac{32}{44} = \\frac{32 \\div 4}{44 \\div 4} = \\frac{8}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{5}{13}\\).",
+    "options": [
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{18}{5}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(-\\frac{13}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{5}{13}\\) is \\(\\frac{13}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{36}{40}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{10}{9}\\)",
+      "\\(\\frac{37}{40}\\)",
+      "\\(\\frac{9}{10}\\)",
+      "\\(\\frac{9}{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 36 and 40 is 4.\n\n\\(\\frac{36}{40} = \\frac{36 \\div 4}{40 \\div 4} = \\frac{9}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{2}\\).",
+    "options": [
+      "\\(\\frac{2}{13}\\)",
+      "\\(\\frac{15}{13}\\)",
+      "\\(\\frac{13}{2}\\)",
+      "\\(-\\frac{2}{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{2}\\) is \\(\\frac{2}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{8}{3}\\).",
+    "options": [
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{8}{3}\\)",
+      "\\(-\\frac{3}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{8}{3}\\) is \\(\\frac{3}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{90}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{9}\\)",
+      "\\(10\\)",
+      "\\(\\frac{1}{11}\\)",
+      "\\(\\frac{1}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 9 and 90 is 9.\n\n\\(\\frac{9}{90} = \\frac{9 \\div 9}{90 \\div 9} = \\frac{1}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{11}{2}\\).",
+    "options": [
+      "\\(\\frac{13}{11}\\)",
+      "\\(\\frac{2}{11}\\)",
+      "\\(\\frac{11}{2}\\)",
+      "\\(-\\frac{2}{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{11}{2}\\) is \\(\\frac{2}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{72}{56}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{73}{56}\\)",
+      "\\(\\frac{9}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 72 and 56 is 8.\n\n\\(\\frac{72}{56} = \\frac{72 \\div 8}{56 \\div 8} = \\frac{9}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{15}\\).",
+    "options": [
+      "\\(\\frac{15}{7}\\)",
+      "\\(\\frac{22}{7}\\)",
+      "\\(-\\frac{15}{7}\\)",
+      "\\(\\frac{7}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{15}\\) is \\(\\frac{15}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{30}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{31}{36}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{5}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 30 and 36 is 6.\n\n\\(\\frac{30}{36} = \\frac{30 \\div 6}{36 \\div 6} = \\frac{5}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{12}\\).",
+    "options": [
+      "\\(\\frac{12}{7}\\)",
+      "\\(\\frac{7}{12}\\)",
+      "\\(\\frac{19}{7}\\)",
+      "\\(-\\frac{12}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{12}\\) is \\(\\frac{12}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.2727...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{10}\\)",
+      "\\(\\frac{27}{100}\\)",
+      "\\(\\frac{3}{11}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.2727...\\)\n\nThen \\(100x = 27.2727...\\)\n\nSubtracting: \\(100x - x = 27\\), so \\(99x = 27\\).\n\n\\(x = \\frac{3}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{28}{77}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{29}{77}\\)",
+      "\\(\\frac{4}{11}\\)",
+      "\\(\\frac{11}{4}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 28 and 77 is 7.\n\n\\(\\frac{28}{77} = \\frac{28 \\div 7}{77 \\div 7} = \\frac{4}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3232...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{16}{45}\\)",
+      "\\(\\frac{32}{99}\\)",
+      "\\(\\frac{8}{25}\\)",
+      "\\(\\frac{32}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.3232...\\)\n\nThen \\(100x = 32.3232...\\)\n\nSubtracting: \\(100x - x = 32\\), so \\(99x = 32\\).\n\n\\(x = \\frac{32}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{24}{16}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(1\\)",
+      "\\(\\frac{25}{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 24 and 16 is 8.\n\n\\(\\frac{24}{16} = \\frac{24 \\div 8}{16 \\div 8} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{6}{13}\\).",
+    "options": [
+      "\\(\\frac{13}{6}\\)",
+      "\\(\\frac{6}{13}\\)",
+      "\\(\\frac{19}{6}\\)",
+      "\\(-\\frac{13}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{6}{13}\\) is \\(\\frac{13}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7878...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{26}{3}\\)",
+      "\\(\\frac{13}{15}\\)",
+      "\\(\\frac{26}{33}\\)",
+      "\\(\\frac{39}{50}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.7878...\\)\n\nThen \\(100x = 78.7878...\\)\n\nSubtracting: \\(100x - x = 78\\), so \\(99x = 78\\).\n\n\\(x = \\frac{26}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{2}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(9\\)",
+      "\\(\\frac{1}{10}\\)",
+      "\\(\\frac{1}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 2 and 18 is 2.\n\n\\(\\frac{2}{18} = \\frac{2 \\div 2}{18 \\div 2} = \\frac{1}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{12}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 8 and 12 is 4.\n\n\\(\\frac{8}{12} = \\frac{8 \\div 4}{12 \\div 4} = \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{25}{30}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{13}{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 25 and 30 is 5.\n\n\\(\\frac{25}{30} = \\frac{25 \\div 5}{30 \\div 5} = \\frac{5}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{10}{8}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(1\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 10 and 8 is 2.\n\n\\(\\frac{10}{8} = \\frac{10 \\div 2}{8 \\div 2} = \\frac{5}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{56}{16}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{7}{2}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{57}{16}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 56 and 16 is 8.\n\n\\(\\frac{56}{16} = \\frac{56 \\div 8}{16 \\div 8} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7373...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{73}{100}\\)",
+      "\\(\\frac{73}{99}\\)",
+      "\\(\\frac{73}{9}\\)",
+      "\\(\\frac{73}{90}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.7373...\\)\n\nThen \\(100x = 73.7373...\\)\n\nSubtracting: \\(100x - x = 73\\), so \\(99x = 73\\).\n\n\\(x = \\frac{73}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{18}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 9 and 36 is 9.\n\n\\(\\frac{9}{36} = \\frac{9 \\div 9}{36 \\div 9} = \\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{12}{30}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{13}{30}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{2}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 12 and 30 is 6.\n\n\\(\\frac{12}{30} = \\frac{12 \\div 6}{30 \\div 6} = \\frac{2}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{3}\\).",
+    "options": [
+      "\\(\\frac{3}{7}\\)",
+      "\\(-\\frac{3}{7}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{10}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{3}\\) is \\(\\frac{3}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8585...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{85}{99}\\)",
+      "\\(\\frac{17}{20}\\)",
+      "\\(\\frac{85}{9}\\)",
+      "\\(\\frac{17}{18}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.8585...\\)\n\nThen \\(100x = 85.8585...\\)\n\nSubtracting: \\(100x - x = 85\\), so \\(99x = 85\\).\n\n\\(x = \\frac{85}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(3\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 8 and 24 is 8.\n\n\\(\\frac{8}{24} = \\frac{8 \\div 8}{24 \\div 8} = \\frac{1}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{48}{30}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{49}{30}\\)",
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{8}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 48 and 30 is 6.\n\n\\(\\frac{48}{30} = \\frac{48 \\div 6}{30 \\div 6} = \\frac{8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7272...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(8\\)",
+      "\\(\\frac{18}{25}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{8}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.7272...\\)\n\nThen \\(100x = 72.7272...\\)\n\nSubtracting: \\(100x - x = 72\\), so \\(99x = 72\\).\n\n\\(x = \\frac{8}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7171...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{71}{90}\\)",
+      "\\(\\frac{71}{99}\\)",
+      "\\(\\frac{71}{100}\\)",
+      "\\(\\frac{71}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.7171...\\)\n\nThen \\(100x = 71.7171...\\)\n\nSubtracting: \\(100x - x = 71\\), so \\(99x = 71\\).\n\n\\(x = \\frac{71}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{2}{12}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{7}\\)",
+      "\\(6\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 2 and 12 is 2.\n\n\\(\\frac{2}{12} = \\frac{2 \\div 2}{12 \\div 2} = \\frac{1}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{15}{14}\\).",
+    "options": [
+      "\\(\\frac{15}{14}\\)",
+      "\\(-\\frac{14}{15}\\)",
+      "\\(\\frac{14}{15}\\)",
+      "\\(\\frac{29}{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{15}{14}\\) is \\(\\frac{14}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{56}{48}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{19}{16}\\)",
+      "\\(\\frac{6}{7}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 56 and 48 is 8.\n\n\\(\\frac{56}{48} = \\frac{56 \\div 8}{48 \\div 8} = \\frac{7}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{24}{42}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{25}{42}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 24 and 42 is 6.\n\n\\(\\frac{24}{42} = \\frac{24 \\div 6}{42 \\div 6} = \\frac{4}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{5}{25}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{6}{25}\\)",
+      "\\(5\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 5 and 25 is 5.\n\n\\(\\frac{5}{25} = \\frac{5 \\div 5}{25 \\div 5} = \\frac{1}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{45}{35}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{9}{7}\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{46}{35}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 45 and 35 is 5.\n\n\\(\\frac{45}{35} = \\frac{45 \\div 5}{35 \\div 5} = \\frac{9}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{30}{25}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{31}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 30 and 25 is 5.\n\n\\(\\frac{30}{25} = \\frac{30 \\div 5}{25 \\div 5} = \\frac{6}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.6060...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{20}{3}\\)",
+      "\\(\\frac{20}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.6060...\\)\n\nThen \\(100x = 60.6060...\\)\n\nSubtracting: \\(100x - x = 60\\), so \\(99x = 60\\).\n\n\\(x = \\frac{20}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{12}{8}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{13}{8}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 12 and 8 is 4.\n\n\\(\\frac{12}{8} = \\frac{12 \\div 4}{8 \\div 4} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{8}{80}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{11}\\)",
+      "\\(10\\)",
+      "\\(\\frac{9}{80}\\)",
+      "\\(\\frac{1}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 8 and 80 is 8.\n\n\\(\\frac{8}{80} = \\frac{8 \\div 8}{80 \\div 8} = \\frac{1}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{21}{6}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{11}{3}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 21 and 6 is 3.\n\n\\(\\frac{21}{6} = \\frac{21 \\div 3}{6 \\div 3} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{42}{12}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{43}{12}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 42 and 12 is 6.\n\n\\(\\frac{42}{12} = \\frac{42 \\div 6}{12 \\div 6} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{30}{55}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{31}{55}\\)",
+      "\\(\\frac{11}{6}\\)",
+      "\\(\\frac{6}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 30 and 55 is 5.\n\n\\(\\frac{30}{55} = \\frac{30 \\div 5}{55 \\div 5} = \\frac{6}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.5656...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{28}{45}\\)",
+      "\\(\\frac{56}{9}\\)",
+      "\\(\\frac{56}{99}\\)",
+      "\\(\\frac{14}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.5656...\\)\n\nThen \\(100x = 56.5656...\\)\n\nSubtracting: \\(100x - x = 56\\), so \\(99x = 56\\).\n\n\\(x = \\frac{56}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{8}{7}\\).",
+    "options": [
+      "\\(\\frac{8}{7}\\)",
+      "\\(-\\frac{7}{8}\\)",
+      "\\(\\frac{7}{8}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{8}{7}\\) is \\(\\frac{7}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{63}{72}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{8}\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{8}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 63 and 72 is 9.\n\n\\(\\frac{63}{72} = \\frac{63 \\div 9}{72 \\div 9} = \\frac{7}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{42}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{6}{7}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{43}{36}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 42 and 36 is 6.\n\n\\(\\frac{42}{36} = \\frac{42 \\div 6}{36 \\div 6} = \\frac{7}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.9090...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{10}{11}\\)",
+      "\\(\\frac{9}{10}\\)",
+      "\\(1\\)",
+      "\\(10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.9090...\\)\n\nThen \\(100x = 90.9090...\\)\n\nSubtracting: \\(100x - x = 90\\), so \\(99x = 90\\).\n\n\\(x = \\frac{10}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 9 and 18 is 9.\n\n\\(\\frac{9}{18} = \\frac{9 \\div 9}{18 \\div 9} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{18}{27}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{19}{27}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 18 and 27 is 9.\n\n\\(\\frac{18}{27} = \\frac{18 \\div 9}{27 \\div 9} = \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{16}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{17}{14}\\)",
+      "\\(\\frac{8}{7}\\)",
+      "\\(\\frac{7}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 16 and 14 is 2.\n\n\\(\\frac{16}{14} = \\frac{16 \\div 2}{14 \\div 2} = \\frac{8}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{24}{40}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{5}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 24 and 40 is 8.\n\n\\(\\frac{24}{40} = \\frac{24 \\div 8}{40 \\div 8} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{7}{21}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{8}{21}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 7 and 21 is 7.\n\n\\(\\frac{7}{21} = \\frac{7 \\div 7}{21 \\div 7} = \\frac{1}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{9}{5}\\).",
+    "options": [
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{14}{9}\\)",
+      "\\(-\\frac{5}{9}\\)",
+      "\\(\\frac{9}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{9}{5}\\) is \\(\\frac{5}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{35}{10}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{7}{2}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{18}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 35 and 10 is 5.\n\n\\(\\frac{35}{10} = \\frac{35 \\div 5}{10 \\div 5} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{5}{20}\\) to its lowest terms.",
+    "options": [
+      "\\(4\\)",
+      "\\(\\frac{3}{10}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 5 and 20 is 5.\n\n\\(\\frac{5}{20} = \\frac{5 \\div 5}{20 \\div 5} = \\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{32}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{11}{12}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{9}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 32 and 36 is 4.\n\n\\(\\frac{32}{36} = \\frac{32 \\div 4}{36 \\div 4} = \\frac{8}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{8}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 4 and 8 is 4.\n\n\\(\\frac{4}{8} = \\frac{4 \\div 4}{8 \\div 4} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7070...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{70}{9}\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{70}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.7070...\\)\n\nThen \\(100x = 70.7070...\\)\n\nSubtracting: \\(100x - x = 70\\), so \\(99x = 70\\).\n\n\\(x = \\frac{70}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{4}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{7}\\)",
+      "\\(6\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{5}{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 4 and 24 is 4.\n\n\\(\\frac{4}{24} = \\frac{4 \\div 4}{24 \\div 4} = \\frac{1}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.1717...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{17}{9}\\)",
+      "\\(\\frac{17}{90}\\)",
+      "\\(\\frac{17}{100}\\)",
+      "\\(\\frac{17}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.1717...\\)\n\nThen \\(100x = 17.1717...\\)\n\nSubtracting: \\(100x - x = 17\\), so \\(99x = 17\\).\n\n\\(x = \\frac{17}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{10}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{11}{14}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{5}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 10 and 14 is 2.\n\n\\(\\frac{10}{14} = \\frac{10 \\div 2}{14 \\div 2} = \\frac{5}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{13}{14}\\).",
+    "options": [
+      "\\(-\\frac{14}{13}\\)",
+      "\\(\\frac{27}{13}\\)",
+      "\\(\\frac{13}{14}\\)",
+      "\\(\\frac{14}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{13}{14}\\) is \\(\\frac{14}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{2}{15}\\).",
+    "options": [
+      "\\(\\frac{17}{2}\\)",
+      "\\(\\frac{15}{2}\\)",
+      "\\(-\\frac{15}{2}\\)",
+      "\\(\\frac{2}{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{2}{15}\\) is \\(\\frac{15}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{2}{5}\\).",
+    "options": [
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(-\\frac{5}{2}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{2}{5}\\) is \\(\\frac{5}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{10}{3}\\).",
+    "options": [
+      "\\(-\\frac{3}{10}\\)",
+      "\\(\\frac{10}{3}\\)",
+      "\\(\\frac{3}{10}\\)",
+      "\\(\\frac{13}{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{10}{3}\\) is \\(\\frac{3}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{72}{40}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{73}{40}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 72 and 40 is 8.\n\n\\(\\frac{72}{40} = \\frac{72 \\div 8}{40 \\div 8} = \\frac{9}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{63}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{16}{9}\\)",
+      "\\(\\frac{4}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 63 and 36 is 9.\n\n\\(\\frac{63}{36} = \\frac{63 \\div 9}{36 \\div 9} = \\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{35}{56}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{8}{5}\\)",
+      "\\(\\frac{9}{14}\\)",
+      "\\(\\frac{5}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 35 and 56 is 7.\n\n\\(\\frac{35}{56} = \\frac{35 \\div 7}{56 \\div 7} = \\frac{5}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{9}{2}\\).",
+    "options": [
+      "\\(-\\frac{2}{9}\\)",
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{9}{2}\\)",
+      "\\(\\frac{11}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{9}{2}\\) is \\(\\frac{2}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{28}{16}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{29}{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 28 and 16 is 4.\n\n\\(\\frac{28}{16} = \\frac{28 \\div 4}{16 \\div 4} = \\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{32}{40}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{33}{40}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 32 and 40 is 8.\n\n\\(\\frac{32}{40} = \\frac{32 \\div 8}{40 \\div 8} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{12}{4}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(3\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{13}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 12 and 4 is 4.\n\n\\(\\frac{12}{4} = \\frac{12 \\div 4}{4 \\div 4} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{20}{55}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{11}{4}\\)",
+      "\\(\\frac{4}{11}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{21}{55}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 20 and 55 is 5.\n\n\\(\\frac{20}{55} = \\frac{20 \\div 5}{55 \\div 5} = \\frac{4}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{42}{60}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{43}{60}\\)",
+      "\\(\\frac{10}{7}\\)",
+      "\\(\\frac{7}{11}\\)",
+      "\\(\\frac{7}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 42 and 60 is 6.\n\n\\(\\frac{42}{60} = \\frac{42 \\div 6}{60 \\div 6} = \\frac{7}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{10}{45}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{11}{45}\\)",
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{9}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 10 and 45 is 5.\n\n\\(\\frac{10}{45} = \\frac{10 \\div 5}{45 \\div 5} = \\frac{2}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.1212...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{2}{15}\\)",
+      "\\(\\frac{3}{25}\\)",
+      "\\(\\frac{4}{33}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.1212...\\)\n\nThen \\(100x = 12.1212...\\)\n\nSubtracting: \\(100x - x = 12\\), so \\(99x = 12\\).\n\n\\(x = \\frac{4}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{35}{20}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{7}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 35 and 20 is 5.\n\n\\(\\frac{35}{20} = \\frac{35 \\div 5}{20 \\div 5} = \\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.7474...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{74}{99}\\)",
+      "\\(\\frac{37}{50}\\)",
+      "\\(\\frac{74}{9}\\)",
+      "\\(\\frac{37}{45}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.7474...\\)\n\nThen \\(100x = 74.7474...\\)\n\nSubtracting: \\(100x - x = 74\\), so \\(99x = 74\\).\n\n\\(x = \\frac{74}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{40}{72}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{41}{72}\\)",
+      "\\(\\frac{9}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 40 and 72 is 8.\n\n\\(\\frac{40}{72} = \\frac{40 \\div 8}{72 \\div 8} = \\frac{5}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{16}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{17}{18}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{8}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 16 and 18 is 2.\n\n\\(\\frac{16}{18} = \\frac{16 \\div 2}{18 \\div 2} = \\frac{8}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{42}{49}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{43}{49}\\)",
+      "\\(\\frac{6}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 42 and 49 is 7.\n\n\\(\\frac{42}{49} = \\frac{42 \\div 7}{49 \\div 7} = \\frac{6}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{10}{7}\\).",
+    "options": [
+      "\\(-\\frac{7}{10}\\)",
+      "\\(\\frac{17}{10}\\)",
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{10}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{10}{7}\\) is \\(\\frac{7}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{28}{32}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{8}{7}\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{29}{32}\\)",
+      "\\(\\frac{7}{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 28 and 32 is 4.\n\n\\(\\frac{28}{32} = \\frac{28 \\div 4}{32 \\div 4} = \\frac{7}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3636...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{25}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(4\\)",
+      "\\(\\frac{4}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.3636...\\)\n\nThen \\(100x = 36.3636...\\)\n\nSubtracting: \\(100x - x = 36\\), so \\(99x = 36\\).\n\n\\(x = \\frac{4}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{3}{13}\\).",
+    "options": [
+      "\\(\\frac{13}{3}\\)",
+      "\\(\\frac{16}{3}\\)",
+      "\\(\\frac{3}{13}\\)",
+      "\\(-\\frac{13}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{3}{13}\\) is \\(\\frac{13}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{30}{24}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{31}{24}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 30 and 24 is 6.\n\n\\(\\frac{30}{24} = \\frac{30 \\div 6}{24 \\div 6} = \\frac{5}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{11}{5}\\).",
+    "options": [
+      "\\(\\frac{5}{11}\\)",
+      "\\(\\frac{11}{5}\\)",
+      "\\(-\\frac{5}{11}\\)",
+      "\\(\\frac{16}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{11}{5}\\) is \\(\\frac{5}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{7}{14}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(2\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 7 and 14 is 7.\n\n\\(\\frac{7}{14} = \\frac{7 \\div 7}{14 \\div 7} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{9}{15}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 9 and 15 is 3.\n\n\\(\\frac{9}{15} = \\frac{9 \\div 3}{15 \\div 3} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3939...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{13}{30}\\)",
+      "\\(\\frac{39}{100}\\)",
+      "\\(\\frac{13}{33}\\)",
+      "\\(\\frac{13}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.3939...\\)\n\nThen \\(100x = 39.3939...\\)\n\nSubtracting: \\(100x - x = 39\\), so \\(99x = 39\\).\n\n\\(x = \\frac{13}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{15}{8}\\).",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(-\\frac{8}{15}\\)",
+      "\\(\\frac{23}{15}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{15}{8}\\) is \\(\\frac{8}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{12}{13}\\).",
+    "options": [
+      "\\(-\\frac{13}{12}\\)",
+      "\\(\\frac{25}{12}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{13}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{12}{13}\\) is \\(\\frac{13}{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{3}{2}\\).",
+    "options": [
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{3}{2}\\) is \\(\\frac{2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{20}{25}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{21}{25}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 20 and 25 is 5.\n\n\\(\\frac{20}{25} = \\frac{20 \\div 5}{25 \\div 5} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{3}{27}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{4}{27}\\)",
+      "\\(\\frac{1}{10}\\)",
+      "\\(9\\)",
+      "\\(\\frac{1}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 3 and 27 is 3.\n\n\\(\\frac{3}{27} = \\frac{3 \\div 3}{27 \\div 3} = \\frac{1}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{18}{9}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(\\frac{19}{9}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 18 and 9 is 9.\n\n\\(\\frac{18}{9} = \\frac{18 \\div 9}{9 \\div 9} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{15}{33}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{16}{33}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{5}{11}\\)",
+      "\\(\\frac{11}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 15 and 33 is 3.\n\n\\(\\frac{15}{33} = \\frac{15 \\div 3}{33 \\div 3} = \\frac{5}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8484...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{28}{3}\\)",
+      "\\(\\frac{14}{15}\\)",
+      "\\(\\frac{28}{33}\\)",
+      "\\(\\frac{21}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.8484...\\)\n\nThen \\(100x = 84.8484...\\)\n\nSubtracting: \\(100x - x = 84\\), so \\(99x = 84\\).\n\n\\(x = \\frac{28}{33}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{12}{5}\\).",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{17}{12}\\)",
+      "\\(-\\frac{5}{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{12}{5}\\) is \\(\\frac{5}{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{45}{81}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{9}{5}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{46}{81}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 45 and 81 is 9.\n\n\\(\\frac{45}{81} = \\frac{45 \\div 9}{81 \\div 9} = \\frac{5}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{3}{4}\\).",
+    "options": [
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(-\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{3}{4}\\) is \\(\\frac{4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{45}{36}\\) to its lowest terms.",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{23}{18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 45 and 36 is 9.\n\n\\(\\frac{45}{36} = \\frac{45 \\div 9}{36 \\div 9} = \\frac{5}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8181...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{81}{100}\\)",
+      "\\(\\frac{9}{11}\\)",
+      "\\(\\frac{9}{10}\\)",
+      "\\(9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(x = 0.8181...\\)\n\nThen \\(100x = 81.8181...\\)\n\nSubtracting: \\(100x - x = 81\\), so \\(99x = 81\\).\n\n\\(x = \\frac{9}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{11}{9}\\).",
+    "options": [
+      "\\(\\frac{20}{11}\\)",
+      "\\(-\\frac{9}{11}\\)",
+      "\\(\\frac{9}{11}\\)",
+      "\\(\\frac{11}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{11}{9}\\) is \\(\\frac{9}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{10}{13}\\).",
+    "options": [
+      "\\(\\frac{10}{13}\\)",
+      "\\(-\\frac{13}{10}\\)",
+      "\\(\\frac{13}{10}\\)",
+      "\\(\\frac{23}{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{10}{13}\\) is \\(\\frac{13}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.8989...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{89}{9}\\)",
+      "\\(\\frac{89}{90}\\)",
+      "\\(\\frac{89}{99}\\)",
+      "\\(\\frac{89}{100}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(x = 0.8989...\\)\n\nThen \\(100x = 89.8989...\\)\n\nSubtracting: \\(100x - x = 89\\), so \\(99x = 89\\).\n\n\\(x = \\frac{89}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{25}{20}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{13}{10}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 25 and 20 is 5.\n\n\\(\\frac{25}{20} = \\frac{25 \\div 5}{20 \\div 5} = \\frac{5}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.3131...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{31}{99}\\)",
+      "\\(\\frac{31}{100}\\)",
+      "\\(\\frac{31}{90}\\)",
+      "\\(\\frac{31}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(x = 0.3131...\\)\n\nThen \\(100x = 31.3131...\\)\n\nSubtracting: \\(100x - x = 31\\), so \\(99x = 31\\).\n\n\\(x = \\frac{31}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{15}{18}\\) to its lowest terms.",
+    "options": [
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{5}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 15 and 18 is 3.\n\n\\(\\frac{15}{18} = \\frac{15 \\div 3}{18 \\div 3} = \\frac{5}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the reciprocal of \\(\\frac{7}{2}\\).",
+    "options": [
+      "\\(-\\frac{2}{7}\\)",
+      "\\(\\frac{9}{7}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The reciprocal of a fraction is obtained by inverting it.\n\nThe reciprocal of \\(\\frac{7}{2}\\) is \\(\\frac{2}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Reduce \\(\\frac{3}{15}\\) to its lowest terms.",
+    "options": [
+      "\\(5\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{4}{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 3 and 15 is 3.\n\n\\(\\frac{3}{15} = \\frac{3 \\div 3}{15 \\div 3} = \\frac{1}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(0.4949...\\) as a fraction in its lowest terms.",
+    "options": [
+      "\\(\\frac{49}{90}\\)",
+      "\\(\\frac{49}{9}\\)",
+      "\\(\\frac{49}{100}\\)",
+      "\\(\\frac{49}{99}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(x = 0.4949...\\)\n\nThen \\(100x = 49.4949...\\)\n\nSubtracting: \\(100x - x = 49\\), so \\(99x = 49\\).\n\n\\(x = \\frac{49}{99}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4D5iDhokUTc9XTA0OujX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

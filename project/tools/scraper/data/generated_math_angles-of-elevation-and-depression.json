@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "The angle of elevation of the top of a tower from a point 46m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "23m",
+      "92m",
+      "51m",
+      "46m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{46}\\)\n\n\\(h = 46\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 71°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "109°",
+      "19°",
+      "71°",
+      "81°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 71°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 68m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "136m",
+      "68m",
+      "34m",
+      "73m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{68}\\)\n\n\\(h = 68\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 18m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "10.39m",
+      "15.59m",
+      "31.18m",
+      "62.35m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{18}\\)\n\n\\(h = 18 \\times \\tan 60°\\)\n\n\\(= 18 \\times 1.7321 = 31.18\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 70m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "70m",
+      "35m",
+      "140m",
+      "99m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{70}{d}\\)\n\n\\(1 = \\frac{70}{d}\\)\n\n\\(d = 70\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 17m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "8.5m",
+      "22m",
+      "17m",
+      "34m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{17}\\)\n\n\\(h = 17\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 33m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "66m",
+      "16.5m",
+      "46.7m",
+      "33m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{33}{d}\\)\n\n\\(1 = \\frac{33}{d}\\)\n\n\\(d = 33\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 24°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "66°",
+      "34°",
+      "24°",
+      "156°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 24°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 72m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "83.14m",
+      "124.71m",
+      "20.78m",
+      "41.57m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{72}\\)\n\n\\(h = 72 \\times \\tan 30°\\)\n\n\\(= 72 \\times 0.5774 = 41.57\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 48m from the foot of a vertical tower of height 14m. If the distance from the man to the top of the tower is 50m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{25}{7}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{14}{50} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 41°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "139°",
+      "41°",
+      "49°",
+      "51°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 41°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 17m from the wall, find the length of the ladder.",
+    "options": [
+      "29.4m",
+      "8.5m",
+      "34m",
+      "19m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{17}{L}\\)\n\n\\(L = 2 \\times 17 = 34\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 56°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "34°",
+      "66°",
+      "56°",
+      "124°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 56°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 5m from the wall, find the length of the ladder.",
+    "options": [
+      "10m",
+      "7m",
+      "8.7m",
+      "2.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{5}{L}\\)\n\n\\(L = 2 \\times 5 = 10\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 11m from the wall, find the length of the ladder.",
+    "options": [
+      "19.1m",
+      "5.5m",
+      "22m",
+      "13m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{11}{L}\\)\n\n\\(L = 2 \\times 11 = 22\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 36m from the foot of a vertical tower of height 15m. If the distance from the man to the top of the tower is 39m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(\\frac{12}{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{15}{39} = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 25m from the wall, find the length of the ladder.",
+    "options": [
+      "43.3m",
+      "27m",
+      "12.5m",
+      "50m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{25}{L}\\)\n\n\\(L = 2 \\times 25 = 50\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 72°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "108°",
+      "18°",
+      "72°",
+      "82°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 72°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 59°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "69°",
+      "121°",
+      "59°",
+      "31°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 59°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 32m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "45.3m",
+      "16m",
+      "64m",
+      "32m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{32}{d}\\)\n\n\\(1 = \\frac{32}{d}\\)\n\n\\(d = 32\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 9m from the wall, find the length of the ladder.",
+    "options": [
+      "18m",
+      "11m",
+      "15.6m",
+      "4.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{9}{L}\\)\n\n\\(L = 2 \\times 9 = 18\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 25m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "12.5m",
+      "25m",
+      "50m",
+      "30m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{25}\\)\n\n\\(h = 25\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 35m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "30.31m",
+      "121.24m",
+      "20.21m",
+      "60.62m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{35}\\)\n\n\\(h = 35 \\times \\tan 60°\\)\n\n\\(= 35 \\times 1.7321 = 60.62\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 41m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "46m",
+      "20.5m",
+      "41m",
+      "82m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{41}\\)\n\n\\(h = 41\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 24m from the foot of a vertical tower of height 7m. If the distance from the man to the top of the tower is 25m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{25}{7}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{7}{25} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 36m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "20.78m",
+      "41.57m",
+      "10.39m",
+      "62.35m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{36}\\)\n\n\\(h = 36 \\times \\tan 30°\\)\n\n\\(= 36 \\times 0.5774 = 20.78\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 64°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "26°",
+      "74°",
+      "64°",
+      "116°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 64°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 160m from the foot of a vertical tower of height 36m. If the distance from the man to the top of the tower is 164m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{41}{9}\\)",
+      "\\(\\frac{9}{41}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{36}{164} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 22m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "31.1m",
+      "44m",
+      "11m",
+      "22m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{22}{d}\\)\n\n\\(1 = \\frac{22}{d}\\)\n\n\\(d = 22\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 30m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "15m",
+      "30m",
+      "60m",
+      "35m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{30}\\)\n\n\\(h = 30\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 51m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "102m",
+      "25.5m",
+      "72.1m",
+      "51m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{51}{d}\\)\n\n\\(1 = \\frac{51}{d}\\)\n\n\\(d = 51\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 11m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "11m",
+      "15.6m",
+      "5.5m",
+      "22m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{11}{d}\\)\n\n\\(1 = \\frac{11}{d}\\)\n\n\\(d = 11\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 10m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "5m",
+      "10m",
+      "20m",
+      "15m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{10}\\)\n\n\\(h = 10\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 10m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "5.77m",
+      "8.66m",
+      "17.32m",
+      "34.64m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{10}\\)\n\n\\(h = 10 \\times \\tan 60°\\)\n\n\\(= 10 \\times 1.7321 = 17.32\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 60m from the foot of a vertical tower of height 32m. If the distance from the man to the top of the tower is 68m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{17}{8}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{8}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{32}{68} = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 38°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "52°",
+      "142°",
+      "38°",
+      "48°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 38°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 72m from the foot of a vertical tower of height 21m. If the distance from the man to the top of the tower is 75m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{25}{7}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{21}{75} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 53m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "26.5m",
+      "106m",
+      "75m",
+      "53m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{53}{d}\\)\n\n\\(1 = \\frac{53}{d}\\)\n\n\\(d = 53\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 8m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "16m",
+      "11.3m",
+      "8m",
+      "4m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{8}{d}\\)\n\n\\(1 = \\frac{8}{d}\\)\n\n\\(d = 8\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 40m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "20m",
+      "45m",
+      "80m",
+      "40m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{40}\\)\n\n\\(h = 40\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 6m from the wall, find the length of the ladder.",
+    "options": [
+      "10.4m",
+      "8m",
+      "3m",
+      "12m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{6}{L}\\)\n\n\\(L = 2 \\times 6 = 12\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 10m from the wall, find the length of the ladder.",
+    "options": [
+      "17.3m",
+      "5m",
+      "12m",
+      "20m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{10}{L}\\)\n\n\\(L = 2 \\times 10 = 20\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 43m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "49.65m",
+      "24.83m",
+      "12.41m",
+      "74.48m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{43}\\)\n\n\\(h = 43 \\times \\tan 30°\\)\n\n\\(= 43 \\times 0.5774 = 24.83\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 33°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "33°",
+      "147°",
+      "57°",
+      "43°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 33°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 63m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "72.75m",
+      "109.12m",
+      "36.37m",
+      "18.19m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{63}\\)\n\n\\(h = 63 \\times \\tan 30°\\)\n\n\\(= 63 \\times 0.5774 = 36.37\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 13m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "13m",
+      "6.5m",
+      "18.4m",
+      "26m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{13}{d}\\)\n\n\\(1 = \\frac{13}{d}\\)\n\n\\(d = 13\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 24m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "29m",
+      "48m",
+      "24m",
+      "12m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{24}\\)\n\n\\(h = 24\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 18m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "18m",
+      "9m",
+      "23m",
+      "36m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{18}\\)\n\n\\(h = 18\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 23°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "157°",
+      "33°",
+      "67°",
+      "23°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 23°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 90m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "155.88m",
+      "51.96m",
+      "311.77m",
+      "77.94m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{90}\\)\n\n\\(h = 90 \\times \\tan 60°\\)\n\n\\(= 90 \\times 1.7321 = 155.88\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 26m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "45.03m",
+      "90.07m",
+      "15.01m",
+      "22.52m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{26}\\)\n\n\\(h = 26 \\times \\tan 60°\\)\n\n\\(= 26 \\times 1.7321 = 45.03\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 70m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "75m",
+      "140m",
+      "70m",
+      "35m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{70}\\)\n\n\\(h = 70\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 15m from the wall, find the length of the ladder.",
+    "options": [
+      "17m",
+      "26m",
+      "7.5m",
+      "30m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{15}{L}\\)\n\n\\(L = 2 \\times 15 = 30\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 23m from the wall, find the length of the ladder.",
+    "options": [
+      "46m",
+      "39.8m",
+      "25m",
+      "11.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{23}{L}\\)\n\n\\(L = 2 \\times 23 = 46\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 89m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "77.08m",
+      "308.31m",
+      "154.15m",
+      "51.38m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{89}\\)\n\n\\(h = 89 \\times \\tan 60°\\)\n\n\\(= 89 \\times 1.7321 = 154.15\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 61m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "122m",
+      "86.3m",
+      "30.5m",
+      "61m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{61}{d}\\)\n\n\\(1 = \\frac{61}{d}\\)\n\n\\(d = 61\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 22°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "32°",
+      "158°",
+      "22°",
+      "68°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 22°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 47m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "54.27m",
+      "13.57m",
+      "81.41m",
+      "27.14m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{47}\\)\n\n\\(h = 47 \\times \\tan 30°\\)\n\n\\(= 47 \\times 0.5774 = 27.14\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 66m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "33m",
+      "66m",
+      "132m",
+      "93.3m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{66}{d}\\)\n\n\\(1 = \\frac{66}{d}\\)\n\n\\(d = 66\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 30m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "17.32m",
+      "34.64m",
+      "51.96m",
+      "8.66m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{30}\\)\n\n\\(h = 30 \\times \\tan 30°\\)\n\n\\(= 30 \\times 0.5774 = 17.32\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 17°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "27°",
+      "73°",
+      "17°",
+      "163°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 17°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 85m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "24.54m",
+      "49.07m",
+      "98.15m",
+      "147.22m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{85}\\)\n\n\\(h = 85 \\times \\tan 30°\\)\n\n\\(= 85 \\times 0.5774 = 49.07\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 77m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "77m",
+      "154m",
+      "38.5m",
+      "82m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{77}\\)\n\n\\(h = 77\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 34m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "17m",
+      "48.1m",
+      "68m",
+      "34m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{34}{d}\\)\n\n\\(1 = \\frac{34}{d}\\)\n\n\\(d = 34\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 13m from the wall, find the length of the ladder.",
+    "options": [
+      "22.5m",
+      "15m",
+      "6.5m",
+      "26m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{13}{L}\\)\n\n\\(L = 2 \\times 13 = 26\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 27m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "54m",
+      "27m",
+      "32m",
+      "13.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{27}\\)\n\n\\(h = 27\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 6m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "8.5m",
+      "6m",
+      "12m",
+      "3m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{6}{d}\\)\n\n\\(1 = \\frac{6}{d}\\)\n\n\\(d = 6\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 46m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "92m",
+      "65.1m",
+      "46m",
+      "23m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{46}{d}\\)\n\n\\(1 = \\frac{46}{d}\\)\n\n\\(d = 46\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 58m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "29m",
+      "58m",
+      "116m",
+      "82m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{58}{d}\\)\n\n\\(1 = \\frac{58}{d}\\)\n\n\\(d = 58\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 61m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "35.22m",
+      "70.44m",
+      "105.66m",
+      "17.61m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{61}\\)\n\n\\(h = 61 \\times \\tan 30°\\)\n\n\\(= 61 \\times 0.5774 = 35.22\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 50m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "43.30m",
+      "28.87m",
+      "173.21m",
+      "86.60m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{50}\\)\n\n\\(h = 50 \\times \\tan 60°\\)\n\n\\(= 50 \\times 1.7321 = 86.60\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 65m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "70m",
+      "65m",
+      "32.5m",
+      "130m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{65}\\)\n\n\\(h = 65\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 66m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "76.21m",
+      "19.05m",
+      "114.32m",
+      "38.11m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{66}\\)\n\n\\(h = 66 \\times \\tan 30°\\)\n\n\\(= 66 \\times 0.5774 = 38.11\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 54m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "76.4m",
+      "54m",
+      "27m",
+      "108m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{54}{d}\\)\n\n\\(1 = \\frac{54}{d}\\)\n\n\\(d = 54\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 22m from the wall, find the length of the ladder.",
+    "options": [
+      "38.1m",
+      "44m",
+      "24m",
+      "11m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{22}{L}\\)\n\n\\(L = 2 \\times 22 = 44\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 25m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "43.30m",
+      "86.60m",
+      "14.43m",
+      "21.65m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{25}\\)\n\n\\(h = 25 \\times \\tan 60°\\)\n\n\\(= 25 \\times 1.7321 = 43.30\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 75°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "105°",
+      "75°",
+      "15°",
+      "85°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 75°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 24m from the wall, find the length of the ladder.",
+    "options": [
+      "48m",
+      "12m",
+      "26m",
+      "41.6m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{24}{L}\\)\n\n\\(L = 2 \\times 24 = 48\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 36m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "18m",
+      "36m",
+      "41m",
+      "72m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{36}\\)\n\n\\(h = 36\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 48m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "53m",
+      "96m",
+      "24m",
+      "48m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{48}\\)\n\n\\(h = 48\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 20°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "30°",
+      "160°",
+      "70°",
+      "20°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 20°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 84m from the foot of a vertical tower of height 80m. If the distance from the man to the top of the tower is 116m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{29}{20}\\)",
+      "\\(\\frac{20}{21}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{80}{116} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 73°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "17°",
+      "107°",
+      "83°",
+      "73°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 73°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 44°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "136°",
+      "46°",
+      "44°",
+      "54°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 44°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 74m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "79m",
+      "74m",
+      "37m",
+      "148m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{74}\\)\n\n\\(h = 74\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 18°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "18°",
+      "72°",
+      "28°",
+      "162°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 18°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 42°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "48°",
+      "138°",
+      "42°",
+      "52°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 42°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 66m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "57.16m",
+      "114.32m",
+      "228.63m",
+      "38.11m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{66}\\)\n\n\\(h = 66 \\times \\tan 60°\\)\n\n\\(= 66 \\times 1.7321 = 114.32\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 32°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "58°",
+      "148°",
+      "32°",
+      "42°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 32°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 30°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "40°",
+      "150°",
+      "30°",
+      "60°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 30°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 39°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "49°",
+      "39°",
+      "141°",
+      "51°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 39°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 20m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "69.28m",
+      "17.32m",
+      "11.55m",
+      "34.64m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{20}\\)\n\n\\(h = 20 \\times \\tan 60°\\)\n\n\\(= 20 \\times 1.7321 = 34.64\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 55°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "65°",
+      "35°",
+      "55°",
+      "125°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 55°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 66m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "33m",
+      "71m",
+      "132m",
+      "66m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{66}\\)\n\n\\(h = 66\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 64m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "64m",
+      "69m",
+      "32m",
+      "128m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{64}\\)\n\n\\(h = 64\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 52m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "26m",
+      "52m",
+      "57m",
+      "104m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{52}\\)\n\n\\(h = 52\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 14m from the wall, find the length of the ladder.",
+    "options": [
+      "7m",
+      "28m",
+      "24.2m",
+      "16m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{14}{L}\\)\n\n\\(L = 2 \\times 14 = 28\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 16m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "21m",
+      "32m",
+      "16m",
+      "8m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{16}\\)\n\n\\(h = 16\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 46°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "134°",
+      "56°",
+      "46°",
+      "44°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 46°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 17m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "4.91m",
+      "29.44m",
+      "9.81m",
+      "19.63m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{17}\\)\n\n\\(h = 17 \\times \\tan 30°\\)\n\n\\(= 17 \\times 0.5774 = 9.81\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 30m from the foot of a vertical tower of height 16m. If the distance from the man to the top of the tower is 34m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{17}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{16}{34} = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 28m from the wall, find the length of the ladder.",
+    "options": [
+      "14m",
+      "56m",
+      "48.5m",
+      "30m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{28}{L}\\)\n\n\\(L = 2 \\times 28 = 56\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 20m from the wall, find the length of the ladder.",
+    "options": [
+      "22m",
+      "34.6m",
+      "40m",
+      "10m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{20}{L}\\)\n\n\\(L = 2 \\times 20 = 40\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 67m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "232.09m",
+      "116.05m",
+      "38.68m",
+      "58.02m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{67}\\)\n\n\\(h = 67 \\times \\tan 60°\\)\n\n\\(= 67 \\times 1.7321 = 116.05\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 15°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "15°",
+      "75°",
+      "165°",
+      "25°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 15°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 45m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "63.6m",
+      "22.5m",
+      "90m",
+      "45m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{45}{d}\\)\n\n\\(1 = \\frac{45}{d}\\)\n\n\\(d = 45\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 49°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "49°",
+      "59°",
+      "41°",
+      "131°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 49°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 78m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "270.20m",
+      "45.03m",
+      "67.55m",
+      "135.10m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{78}\\)\n\n\\(h = 78 \\times \\tan 60°\\)\n\n\\(= 78 \\times 1.7321 = 135.10\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 44m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "44m",
+      "22m",
+      "88m",
+      "49m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{44}\\)\n\n\\(h = 44\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 2m from the wall, find the length of the ladder.",
+    "options": [
+      "1m",
+      "4m",
+      "3.5m",
+      "6m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{2}{L}\\)\n\n\\(L = 2 \\times 2 = 4\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 59m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "29.5m",
+      "83.4m",
+      "118m",
+      "59m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{59}{d}\\)\n\n\\(1 = \\frac{59}{d}\\)\n\n\\(d = 59\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 12m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "3.46m",
+      "6.93m",
+      "20.78m",
+      "13.86m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{12}\\)\n\n\\(h = 12 \\times \\tan 30°\\)\n\n\\(= 12 \\times 0.5774 = 6.93\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 69°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "21°",
+      "69°",
+      "111°",
+      "79°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 69°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 18m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "25.5m",
+      "18m",
+      "9m",
+      "36m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{18}{d}\\)\n\n\\(1 = \\frac{18}{d}\\)\n\n\\(d = 18\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 15m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "15m",
+      "21.2m",
+      "7.5m",
+      "30m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{15}{d}\\)\n\n\\(1 = \\frac{15}{d}\\)\n\n\\(d = 15\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 24m from the foot of a vertical tower of height 10m. If the distance from the man to the top of the tower is 26m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(\\frac{5}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{10}{26} = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 64m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "90.5m",
+      "64m",
+      "32m",
+      "128m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{64}{d}\\)\n\n\\(1 = \\frac{64}{d}\\)\n\n\\(d = 64\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 48m from the foot of a vertical tower of height 20m. If the distance from the man to the top of the tower is 52m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{13}{5}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{5}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{20}{52} = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 69m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "74m",
+      "34.5m",
+      "69m",
+      "138m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{69}\\)\n\n\\(h = 69\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 19m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "38m",
+      "9.5m",
+      "19m",
+      "24m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{19}\\)\n\n\\(h = 19\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 55m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "27.5m",
+      "110m",
+      "60m",
+      "55m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{55}\\)\n\n\\(h = 55\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 35m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "35m",
+      "70m",
+      "17.5m",
+      "49.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{35}{d}\\)\n\n\\(1 = \\frac{35}{d}\\)\n\n\\(d = 35\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 73m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "78m",
+      "73m",
+      "146m",
+      "36.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{73}\\)\n\n\\(h = 73\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 38m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "53.7m",
+      "76m",
+      "38m",
+      "19m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{38}{d}\\)\n\n\\(1 = \\frac{38}{d}\\)\n\n\\(d = 38\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 53m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "26.5m",
+      "58m",
+      "53m",
+      "106m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{53}\\)\n\n\\(h = 53\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 40m from the foot of a vertical tower of height 9m. If the distance from the man to the top of the tower is 41m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{41}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{9}{41} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 37m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "64.09m",
+      "21.36m",
+      "128.17m",
+      "32.04m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{37}\\)\n\n\\(h = 37 \\times \\tan 60°\\)\n\n\\(= 37 \\times 1.7321 = 64.09\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 96m from the foot of a vertical tower of height 28m. If the distance from the man to the top of the tower is 100m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{25}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{28}{100} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 4m from the wall, find the length of the ladder.",
+    "options": [
+      "2m",
+      "6.9m",
+      "6m",
+      "8m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{4}{L}\\)\n\n\\(L = 2 \\times 4 = 8\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 5m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "7.1m",
+      "5m",
+      "2.5m",
+      "10m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{5}\\)\n\n\\(h = 5\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 12m from the foot of a vertical tower of height 9m. If the distance from the man to the top of the tower is 15m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{9}{15} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 47m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "27.14m",
+      "162.81m",
+      "40.70m",
+      "81.41m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{47}\\)\n\n\\(h = 47 \\times \\tan 60°\\)\n\n\\(= 47 \\times 1.7321 = 81.41\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 18m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "31.18m",
+      "10.39m",
+      "5.20m",
+      "20.78m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{18}\\)\n\n\\(h = 18 \\times \\tan 30°\\)\n\n\\(= 18 \\times 0.5774 = 10.39\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 67m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "67m",
+      "134m",
+      "94.8m",
+      "33.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{67}{d}\\)\n\n\\(1 = \\frac{67}{d}\\)\n\n\\(d = 67\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 19m from the wall, find the length of the ladder.",
+    "options": [
+      "32.9m",
+      "21m",
+      "9.5m",
+      "38m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{19}{L}\\)\n\n\\(L = 2 \\times 19 = 38\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 47m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "94m",
+      "47m",
+      "52m",
+      "23.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{47}\\)\n\n\\(h = 47\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 30m from the wall, find the length of the ladder.",
+    "options": [
+      "15m",
+      "60m",
+      "52m",
+      "32m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{30}{L}\\)\n\n\\(L = 2 \\times 30 = 60\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 51°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "129°",
+      "39°",
+      "51°",
+      "61°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 51°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 16m from the wall, find the length of the ladder.",
+    "options": [
+      "32m",
+      "8m",
+      "27.7m",
+      "18m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{16}{L}\\)\n\n\\(L = 2 \\times 16 = 32\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 77m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "133.37m",
+      "22.23m",
+      "44.46m",
+      "88.91m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{77}\\)\n\n\\(h = 77 \\times \\tan 30°\\)\n\n\\(= 77 \\times 0.5774 = 44.46\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 54m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "187.06m",
+      "31.18m",
+      "46.77m",
+      "93.53m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{54}\\)\n\n\\(h = 54 \\times \\tan 60°\\)\n\n\\(= 54 \\times 1.7321 = 93.53\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 62m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "124m",
+      "87.7m",
+      "31m",
+      "62m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{62}{d}\\)\n\n\\(1 = \\frac{62}{d}\\)\n\n\\(d = 62\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 80m from the foot of a vertical tower of height 18m. If the distance from the man to the top of the tower is 82m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{41}{9}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{41}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{18}{82} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 66°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "76°",
+      "66°",
+      "24°",
+      "114°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 66°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 75m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "80m",
+      "75m",
+      "150m",
+      "37.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{75}\\)\n\n\\(h = 75\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 80m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "85m",
+      "40m",
+      "160m",
+      "80m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{80}\\)\n\n\\(h = 80\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 8m from the wall, find the length of the ladder.",
+    "options": [
+      "4m",
+      "16m",
+      "13.9m",
+      "10m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{8}{L}\\)\n\n\\(L = 2 \\times 8 = 16\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 36m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "18m",
+      "36m",
+      "50.9m",
+      "72m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{36}{d}\\)\n\n\\(1 = \\frac{36}{d}\\)\n\n\\(d = 36\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 31m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "43.8m",
+      "31m",
+      "62m",
+      "15.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{31}{d}\\)\n\n\\(1 = \\frac{31}{d}\\)\n\n\\(d = 31\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 3m from the wall, find the length of the ladder.",
+    "options": [
+      "5m",
+      "1.5m",
+      "5.2m",
+      "6m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{3}{L}\\)\n\n\\(L = 2 \\times 3 = 6\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 26m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "26m",
+      "52m",
+      "13m",
+      "31m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{26}\\)\n\n\\(h = 26\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 58m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "200.92m",
+      "33.49m",
+      "50.23m",
+      "100.46m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{58}\\)\n\n\\(h = 58 \\times \\tan 60°\\)\n\n\\(= 58 \\times 1.7321 = 100.46\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 27m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "13.5m",
+      "27m",
+      "54m",
+      "38.2m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{27}{d}\\)\n\n\\(1 = \\frac{27}{d}\\)\n\n\\(d = 27\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 29m from the wall, find the length of the ladder.",
+    "options": [
+      "50.2m",
+      "31m",
+      "58m",
+      "14.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{29}{L}\\)\n\n\\(L = 2 \\times 29 = 58\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 14m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "19m",
+      "28m",
+      "14m",
+      "7m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{14}\\)\n\n\\(h = 14\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 69m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "97.6m",
+      "69m",
+      "138m",
+      "34.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{69}{d}\\)\n\n\\(1 = \\frac{69}{d}\\)\n\n\\(d = 69\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 26°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "64°",
+      "154°",
+      "36°",
+      "26°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 26°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 14m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "12.12m",
+      "8.08m",
+      "48.50m",
+      "24.25m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{14}\\)\n\n\\(h = 14 \\times \\tan 60°\\)\n\n\\(= 14 \\times 1.7321 = 24.25\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 120m from the foot of a vertical tower of height 27m. If the distance from the man to the top of the tower is 123m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{41}{9}\\)",
+      "\\(\\frac{9}{41}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{27}{123} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 53°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "37°",
+      "127°",
+      "63°",
+      "53°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 53°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 49m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "49m",
+      "98m",
+      "69.3m",
+      "24.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{49}{d}\\)\n\n\\(1 = \\frac{49}{d}\\)\n\n\\(d = 49\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 83m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "71.88m",
+      "47.92m",
+      "143.76m",
+      "287.52m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{83}\\)\n\n\\(h = 83 \\times \\tan 60°\\)\n\n\\(= 83 \\times 1.7321 = 143.76\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 41m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "58m",
+      "41m",
+      "82m",
+      "20.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{41}{d}\\)\n\n\\(1 = \\frac{41}{d}\\)\n\n\\(d = 41\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 32m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "16m",
+      "32m",
+      "37m",
+      "64m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{32}\\)\n\n\\(h = 32\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 20m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "40m",
+      "20m",
+      "25m",
+      "10m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{20}\\)\n\n\\(h = 20\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 59m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "51.10m",
+      "34.06m",
+      "204.38m",
+      "102.19m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{59}\\)\n\n\\(h = 59 \\times \\tan 60°\\)\n\n\\(= 59 \\times 1.7321 = 102.19\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 37m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "42m",
+      "37m",
+      "74m",
+      "18.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{37}\\)\n\n\\(h = 37\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 60°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "120°",
+      "70°",
+      "60°",
+      "30°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 60°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 27m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "46.77m",
+      "31.18m",
+      "15.59m",
+      "7.79m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{27}\\)\n\n\\(h = 27 \\times \\tan 30°\\)\n\n\\(= 27 \\times 0.5774 = 15.59\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 42m from the foot of a vertical tower of height 40m. If the distance from the man to the top of the tower is 58m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{29}{20}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{21}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{40}{58} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 76m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "43.88m",
+      "131.64m",
+      "263.27m",
+      "65.82m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{76}\\)\n\n\\(h = 76 \\times \\tan 60°\\)\n\n\\(= 76 \\times 1.7321 = 131.64\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 81m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "46.77m",
+      "140.30m",
+      "70.15m",
+      "280.59m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{81}\\)\n\n\\(h = 81 \\times \\tan 60°\\)\n\n\\(= 81 \\times 1.7321 = 140.30\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 53m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "183.60m",
+      "45.90m",
+      "91.80m",
+      "30.60m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{53}\\)\n\n\\(h = 53 \\times \\tan 60°\\)\n\n\\(= 53 \\times 1.7321 = 91.80\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 9m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "12.7m",
+      "4.5m",
+      "9m",
+      "18m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{9}{d}\\)\n\n\\(1 = \\frac{9}{d}\\)\n\n\\(d = 9\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 21m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "72.75m",
+      "36.37m",
+      "18.19m",
+      "12.12m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{21}\\)\n\n\\(h = 21 \\times \\tan 60°\\)\n\n\\(= 21 \\times 1.7321 = 36.37\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 74m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "85.45m",
+      "42.72m",
+      "21.36m",
+      "128.17m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{74}\\)\n\n\\(h = 74 \\times \\tan 30°\\)\n\n\\(= 74 \\times 0.5774 = 42.72\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 54m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "31.18m",
+      "15.59m",
+      "62.35m",
+      "93.53m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{54}\\)\n\n\\(h = 54 \\times \\tan 30°\\)\n\n\\(= 54 \\times 0.5774 = 31.18\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 60m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "103.92m",
+      "34.64m",
+      "51.96m",
+      "207.85m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{60}\\)\n\n\\(h = 60 \\times \\tan 60°\\)\n\n\\(= 60 \\times 1.7321 = 103.92\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 71m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "20.50m",
+      "122.98m",
+      "81.98m",
+      "40.99m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{71}\\)\n\n\\(h = 71 \\times \\tan 30°\\)\n\n\\(= 71 \\times 0.5774 = 40.99\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 12m from the wall, find the length of the ladder.",
+    "options": [
+      "20.8m",
+      "14m",
+      "24m",
+      "6m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{12}{L}\\)\n\n\\(L = 2 \\times 12 = 24\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 37m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "52.3m",
+      "18.5m",
+      "37m",
+      "74m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{37}{d}\\)\n\n\\(1 = \\frac{37}{d}\\)\n\n\\(d = 37\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 21m from the wall, find the length of the ladder.",
+    "options": [
+      "36.4m",
+      "23m",
+      "10.5m",
+      "42m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{21}{L}\\)\n\n\\(L = 2 \\times 21 = 42\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 56m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "28m",
+      "112m",
+      "56m",
+      "79.2m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{56}{d}\\)\n\n\\(1 = \\frac{56}{d}\\)\n\n\\(d = 56\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 29°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "151°",
+      "29°",
+      "39°",
+      "61°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 29°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 29m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "34m",
+      "14.5m",
+      "58m",
+      "29m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{29}\\)\n\n\\(h = 29\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 48°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "58°",
+      "132°",
+      "42°",
+      "48°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 48°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 62m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "62m",
+      "67m",
+      "31m",
+      "124m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{62}\\)\n\n\\(h = 62\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 21m from the foot of a vertical tower of height 20m. If the distance from the man to the top of the tower is 29m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{29}{20}\\)",
+      "\\(\\frac{21}{29}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{20}{29} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 28m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "14m",
+      "56m",
+      "28m",
+      "33m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{28}\\)\n\n\\(h = 28\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 63m from the foot of a vertical tower of height 60m. If the distance from the man to the top of the tower is 87m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{29}{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{60}{87} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 86m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "49.65m",
+      "24.83m",
+      "99.30m",
+      "148.96m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{86}\\)\n\n\\(h = 86 \\times \\tan 30°\\)\n\n\\(= 86 \\times 0.5774 = 49.65\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 56m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "112m",
+      "61m",
+      "56m",
+      "28m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{56}\\)\n\n\\(h = 56\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 43°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "53°",
+      "43°",
+      "47°",
+      "137°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 43°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 16m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "4.62m",
+      "18.48m",
+      "9.24m",
+      "27.71m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{16}\\)\n\n\\(h = 16 \\times \\tan 30°\\)\n\n\\(= 16 \\times 0.5774 = 9.24\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 50m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "100m",
+      "50m",
+      "70.7m",
+      "25m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{50}{d}\\)\n\n\\(1 = \\frac{50}{d}\\)\n\n\\(d = 50\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 21m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "12.12m",
+      "36.37m",
+      "6.06m",
+      "24.25m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{21}\\)\n\n\\(h = 21 \\times \\tan 30°\\)\n\n\\(= 21 \\times 0.5774 = 12.12\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 16m from the foot of a vertical tower of height 12m. If the distance from the man to the top of the tower is 20m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{12}{20} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 71m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "35.5m",
+      "142m",
+      "71m",
+      "76m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{71}\\)\n\n\\(h = 71\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 72m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "36m",
+      "77m",
+      "144m",
+      "72m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{72}\\)\n\n\\(h = 72\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 19°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "29°",
+      "161°",
+      "71°",
+      "19°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 19°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 18m from the wall, find the length of the ladder.",
+    "options": [
+      "9m",
+      "20m",
+      "36m",
+      "31.2m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{18}{L}\\)\n\n\\(L = 2 \\times 18 = 36\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 35°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "45°",
+      "145°",
+      "35°",
+      "55°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 35°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 64m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "18.48m",
+      "110.85m",
+      "73.90m",
+      "36.95m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{64}\\)\n\n\\(h = 64 \\times \\tan 30°\\)\n\n\\(= 64 \\times 0.5774 = 36.95\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 22m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "22m",
+      "44m",
+      "11m",
+      "27m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{22}\\)\n\n\\(h = 22\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 57°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "57°",
+      "123°",
+      "67°",
+      "33°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 57°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 76m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "81m",
+      "152m",
+      "76m",
+      "38m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{76}\\)\n\n\\(h = 76\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 43m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "24.83m",
+      "74.48m",
+      "148.96m",
+      "37.24m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{43}\\)\n\n\\(h = 43 \\times \\tan 60°\\)\n\n\\(= 43 \\times 1.7321 = 74.48\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 57m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "197.45m",
+      "98.73m",
+      "49.36m",
+      "32.91m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{57}\\)\n\n\\(h = 57 \\times \\tan 60°\\)\n\n\\(= 57 \\times 1.7321 = 98.73\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 11m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "6.35m",
+      "12.70m",
+      "3.18m",
+      "19.05m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{11}\\)\n\n\\(h = 11 \\times \\tan 30°\\)\n\n\\(= 11 \\times 0.5774 = 6.35\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 8m from the foot of a vertical tower of height 6m. If the distance from the man to the top of the tower is 10m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{6}{10} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 78m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "156m",
+      "78m",
+      "39m",
+      "83m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{78}\\)\n\n\\(h = 78\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 16m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "55.43m",
+      "13.86m",
+      "9.24m",
+      "27.71m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{16}\\)\n\n\\(h = 16 \\times \\tan 60°\\)\n\n\\(= 16 \\times 1.7321 = 27.71\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 63°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "73°",
+      "117°",
+      "63°",
+      "27°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 63°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 16m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "22.6m",
+      "32m",
+      "16m",
+      "8m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{16}{d}\\)\n\n\\(1 = \\frac{16}{d}\\)\n\n\\(d = 16\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 42m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "59.4m",
+      "84m",
+      "21m",
+      "42m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{42}{d}\\)\n\n\\(1 = \\frac{42}{d}\\)\n\n\\(d = 42\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 84m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "96.99m",
+      "24.25m",
+      "145.49m",
+      "48.50m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{84}\\)\n\n\\(h = 84 \\times \\tan 30°\\)\n\n\\(= 84 \\times 0.5774 = 48.50\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 48m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "83.14m",
+      "13.86m",
+      "27.71m",
+      "55.43m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{48}\\)\n\n\\(h = 48 \\times \\tan 30°\\)\n\n\\(= 48 \\times 0.5774 = 27.71\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 33m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "33m",
+      "66m",
+      "16.5m",
+      "38m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{33}\\)\n\n\\(h = 33\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 57m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "62m",
+      "28.5m",
+      "114m",
+      "57m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{57}\\)\n\n\\(h = 57\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 39m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "55.2m",
+      "78m",
+      "39m",
+      "19.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{39}{d}\\)\n\n\\(1 = \\frac{39}{d}\\)\n\n\\(d = 39\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 4m from the foot of a vertical tower of height 3m. If the distance from the man to the top of the tower is 5m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{3}{5} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 15m from the foot of a vertical tower of height 8m. If the distance from the man to the top of the tower is 17m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{17}{8}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{17}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{8}{17} = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 9m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "4.5m",
+      "9m",
+      "14m",
+      "18m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{9}\\)\n\n\\(h = 9\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 47°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "43°",
+      "57°",
+      "133°",
+      "47°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 47°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 47m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "94m",
+      "66.5m",
+      "47m",
+      "23.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{47}{d}\\)\n\n\\(1 = \\frac{47}{d}\\)\n\n\\(d = 47\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 76m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "21.94m",
+      "87.76m",
+      "43.88m",
+      "131.64m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{76}\\)\n\n\\(h = 76 \\times \\tan 30°\\)\n\n\\(= 76 \\times 0.5774 = 43.88\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 25°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "25°",
+      "35°",
+      "65°",
+      "155°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 25°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 83m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "95.84m",
+      "143.76m",
+      "47.92m",
+      "23.96m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{83}\\)\n\n\\(h = 83 \\times \\tan 30°\\)\n\n\\(= 83 \\times 0.5774 = 47.92\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 61°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "71°",
+      "29°",
+      "61°",
+      "119°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 61°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 67m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "67m",
+      "72m",
+      "33.5m",
+      "134m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{67}\\)\n\n\\(h = 67\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 50m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "100m",
+      "25m",
+      "50m",
+      "55m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{50}\\)\n\n\\(h = 50\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 11m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "16m",
+      "11m",
+      "22m",
+      "5.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{11}\\)\n\n\\(h = 11\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 24m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "6.93m",
+      "13.86m",
+      "41.57m",
+      "27.71m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{24}\\)\n\n\\(h = 24 \\times \\tan 30°\\)\n\n\\(= 24 \\times 0.5774 = 13.86\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 55m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "110m",
+      "77.8m",
+      "55m",
+      "27.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{55}{d}\\)\n\n\\(1 = \\frac{55}{d}\\)\n\n\\(d = 55\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 7m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "12m",
+      "3.5m",
+      "14m",
+      "7m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{7}\\)\n\n\\(h = 7\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 78m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "90.07m",
+      "135.10m",
+      "45.03m",
+      "22.52m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{78}\\)\n\n\\(h = 78 \\times \\tan 30°\\)\n\n\\(= 78 \\times 0.5774 = 45.03\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 23m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "13.28m",
+      "39.84m",
+      "19.92m",
+      "79.67m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{23}\\)\n\n\\(h = 23 \\times \\tan 60°\\)\n\n\\(= 23 \\times 1.7321 = 39.84\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 74°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "84°",
+      "106°",
+      "74°",
+      "16°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 74°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 63m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "109.12m",
+      "218.24m",
+      "36.37m",
+      "54.56m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{63}\\)\n\n\\(h = 63 \\times \\tan 60°\\)\n\n\\(= 63 \\times 1.7321 = 109.12\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 54°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "36°",
+      "64°",
+      "126°",
+      "54°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 54°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 72m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "41.57m",
+      "249.42m",
+      "124.71m",
+      "62.35m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{72}\\)\n\n\\(h = 72 \\times \\tan 60°\\)\n\n\\(= 72 \\times 1.7321 = 124.71\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 31m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "17.90m",
+      "35.80m",
+      "8.95m",
+      "53.69m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{31}\\)\n\n\\(h = 31 \\times \\tan 30°\\)\n\n\\(= 31 \\times 0.5774 = 17.90\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 70°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "20°",
+      "110°",
+      "70°",
+      "80°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 70°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 45m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "155.88m",
+      "77.94m",
+      "38.97m",
+      "25.98m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{45}\\)\n\n\\(h = 45 \\times \\tan 60°\\)\n\n\\(= 45 \\times 1.7321 = 77.94\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 12m from the foot of a vertical tower of height 5m. If the distance from the man to the top of the tower is 13m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(\\frac{5}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{5}{13} = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 71m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "61.49m",
+      "40.99m",
+      "122.98m",
+      "245.95m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{71}\\)\n\n\\(h = 71 \\times \\tan 60°\\)\n\n\\(= 71 \\times 1.7321 = 122.98\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 27°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "153°",
+      "27°",
+      "63°",
+      "37°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 27°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 67°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "23°",
+      "77°",
+      "67°",
+      "113°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 67°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 16°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "26°",
+      "16°",
+      "74°",
+      "164°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 16°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 7m from the wall, find the length of the ladder.",
+    "options": [
+      "12.1m",
+      "14m",
+      "9m",
+      "3.5m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{7}{L}\\)\n\n\\(L = 2 \\times 7 = 14\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 37°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "53°",
+      "47°",
+      "37°",
+      "143°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 37°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 20m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "10m",
+      "20m",
+      "28.3m",
+      "40m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{20}{d}\\)\n\n\\(1 = \\frac{20}{d}\\)\n\n\\(d = 20\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 20m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "5.77m",
+      "11.55m",
+      "34.64m",
+      "23.09m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{20}\\)\n\n\\(h = 20 \\times \\tan 30°\\)\n\n\\(= 20 \\times 0.5774 = 11.55\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 24m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "33.9m",
+      "24m",
+      "48m",
+      "12m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{24}{d}\\)\n\n\\(1 = \\frac{24}{d}\\)\n\n\\(d = 24\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 27m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "93.53m",
+      "15.59m",
+      "46.77m",
+      "23.38m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{27}\\)\n\n\\(h = 27 \\times \\tan 60°\\)\n\n\\(= 27 \\times 1.7321 = 46.77\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 70m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "40.41m",
+      "121.24m",
+      "60.62m",
+      "242.49m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{70}\\)\n\n\\(h = 70 \\times \\tan 60°\\)\n\n\\(= 70 \\times 1.7321 = 121.24\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 23m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "39.84m",
+      "13.28m",
+      "26.56m",
+      "6.64m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{23}\\)\n\n\\(h = 23 \\times \\tan 30°\\)\n\n\\(= 23 \\times 0.5774 = 13.28\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 49m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "28.29m",
+      "169.74m",
+      "42.44m",
+      "84.87m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{49}\\)\n\n\\(h = 49 \\times \\tan 60°\\)\n\n\\(= 49 \\times 1.7321 = 84.87\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 67m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "38.68m",
+      "77.36m",
+      "19.34m",
+      "116.05m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{67}\\)\n\n\\(h = 67 \\times \\tan 30°\\)\n\n\\(= 67 \\times 0.5774 = 38.68\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 21°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "21°",
+      "31°",
+      "159°",
+      "69°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 21°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 28°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "152°",
+      "28°",
+      "38°",
+      "62°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 28°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 23m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "28m",
+      "46m",
+      "23m",
+      "11.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{23}\\)\n\n\\(h = 23\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 44m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "62.2m",
+      "22m",
+      "44m",
+      "88m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{44}{d}\\)\n\n\\(1 = \\frac{44}{d}\\)\n\n\\(d = 44\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 27m from the wall, find the length of the ladder.",
+    "options": [
+      "29m",
+      "46.8m",
+      "54m",
+      "13.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{27}{L}\\)\n\n\\(L = 2 \\times 27 = 54\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 42m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "36.37m",
+      "72.75m",
+      "24.25m",
+      "145.49m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{42}\\)\n\n\\(h = 42 \\times \\tan 60°\\)\n\n\\(= 42 \\times 1.7321 = 72.75\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 41m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "47.34m",
+      "71.01m",
+      "11.84m",
+      "23.67m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 30° = \\frac{h}{41}\\)\n\n\\(h = 41 \\times \\tan 30°\\)\n\n\\(= 41 \\times 0.5774 = 23.67\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 6m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "12m",
+      "3m",
+      "11m",
+      "6m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{6}\\)\n\n\\(h = 6\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 36°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "144°",
+      "46°",
+      "36°",
+      "54°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 36°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man stands 45m from the foot of a vertical tower of height 24m. If the distance from the man to the top of the tower is 51m, find the sine of the angle of elevation of the top of the tower.",
+    "options": [
+      "\\(\\frac{17}{8}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{17}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle of elevation \\(\\theta\\) has the tower height as the opposite side and the line of sight as the hypotenuse.\n\n\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{24}{51} = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 10m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "2.89m",
+      "17.32m",
+      "5.77m",
+      "11.55m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 30° = \\frac{h}{10}\\)\n\n\\(h = 10 \\times \\tan 30°\\)\n\n\\(= 10 \\times 0.5774 = 5.77\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 31°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "31°",
+      "59°",
+      "149°",
+      "41°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 31°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 88m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "152.42m",
+      "50.81m",
+      "101.61m",
+      "25.40m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{88}\\)\n\n\\(h = 88 \\times \\tan 30°\\)\n\n\\(= 88 \\times 0.5774 = 50.81\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 52°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "52°",
+      "62°",
+      "128°",
+      "38°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 52°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 22m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "19.05m",
+      "38.11m",
+      "76.21m",
+      "12.70m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{22}\\)\n\n\\(h = 22 \\times \\tan 60°\\)\n\n\\(= 22 \\times 1.7321 = 38.11\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 45m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "90m",
+      "50m",
+      "45m",
+      "22.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{45}\\)\n\n\\(h = 45\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 29m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "14.5m",
+      "29m",
+      "41m",
+      "58m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 45° = \\frac{29}{d}\\)\n\n\\(1 = \\frac{29}{d}\\)\n\n\\(d = 29\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 57m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "57m",
+      "114m",
+      "80.6m",
+      "28.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{57}{d}\\)\n\n\\(1 = \\frac{57}{d}\\)\n\n\\(d = 57\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 79m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "79m",
+      "158m",
+      "84m",
+      "39.5m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{79}\\)\n\n\\(h = 79\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 44m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "38.11m",
+      "76.21m",
+      "25.40m",
+      "152.42m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 60° = \\frac{h}{44}\\)\n\n\\(h = 44 \\times \\tan 60°\\)\n\n\\(= 44 \\times 1.7321 = 76.21\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 31m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "62m",
+      "36m",
+      "15.5m",
+      "31m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{31}\\)\n\n\\(h = 31\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 80m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "46.19m",
+      "277.13m",
+      "138.56m",
+      "69.28m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{80}\\)\n\n\\(h = 80 \\times \\tan 60°\\)\n\n\\(= 80 \\times 1.7321 = 138.56\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 70m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "40.41m",
+      "80.83m",
+      "121.24m",
+      "20.21m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{70}\\)\n\n\\(h = 70 \\times \\tan 30°\\)\n\n\\(= 70 \\times 0.5774 = 40.41\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 58°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "58°",
+      "32°",
+      "122°",
+      "68°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 58°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 37m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "21.36m",
+      "42.72m",
+      "64.09m",
+      "10.68m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{37}\\)\n\n\\(h = 37 \\times \\tan 30°\\)\n\n\\(= 37 \\times 0.5774 = 21.36\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 43m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "86m",
+      "60.8m",
+      "43m",
+      "21.5m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{43}{d}\\)\n\n\\(1 = \\frac{43}{d}\\)\n\n\\(d = 43\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 28m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "28m",
+      "14m",
+      "56m",
+      "39.6m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{28}{d}\\)\n\n\\(1 = \\frac{28}{d}\\)\n\n\\(d = 28\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 82m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "284.06m",
+      "47.34m",
+      "71.01m",
+      "142.03m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 60° = \\frac{h}{82}\\)\n\n\\(h = 82 \\times \\tan 60°\\)\n\n\\(= 82 \\times 1.7321 = 142.03\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 22m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "12.70m",
+      "25.40m",
+      "38.11m",
+      "6.35m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 30° = \\frac{h}{22}\\)\n\n\\(h = 22 \\times \\tan 30°\\)\n\n\\(= 22 \\times 0.5774 = 12.70\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 58m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "58m",
+      "116m",
+      "29m",
+      "63m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{58}\\)\n\n\\(h = 58\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A ladder leans against a vertical wall making an angle of 60° with the horizontal ground. If the foot of the ladder is 26m from the wall, find the length of the ladder.",
+    "options": [
+      "45m",
+      "13m",
+      "28m",
+      "52m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos 60° = \\frac{\\text{distance from wall}}{\\text{length of ladder}}\\)\n\n\\(\\frac{1}{2} = \\frac{26}{L}\\)\n\n\\(L = 2 \\times 26 = 52\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 12m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "6m",
+      "24m",
+      "17m",
+      "12m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{12}\\)\n\n\\(h = 12\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 21m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "42m",
+      "10.5m",
+      "21m",
+      "26m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{21}\\)\n\n\\(h = 21\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 61m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "66m",
+      "122m",
+      "30.5m",
+      "61m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{61}\\)\n\n\\(h = 61\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 89m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 30°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "102.77m",
+      "51.38m",
+      "154.15m",
+      "25.69m"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan 30° = \\frac{h}{89}\\)\n\n\\(h = 89 \\times \\tan 30°\\)\n\n\\(= 89 \\times 0.5774 = 51.38\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 35m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "40m",
+      "70m",
+      "17.5m",
+      "35m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{35}\\)\n\n\\(h = 35\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From the top of a cliff, the angle of depression of a boat at sea is 65°. What is the angle of elevation of the top of the cliff from the boat?",
+    "options": [
+      "65°",
+      "25°",
+      "115°",
+      "75°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle of depression from the top and the angle of elevation from the boat are alternate angles between two horizontal parallel lines.\n\nSo the angle of elevation is also 65°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 86m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "148.96m",
+      "297.91m",
+      "49.65m",
+      "74.48m"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan 60° = \\frac{h}{86}\\)\n\n\\(h = 86 \\times \\tan 60°\\)\n\n\\(= 86 \\times 1.7321 = 148.96\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle of elevation of the top of a tower from a point 63m away on level ground is 45°. Find the height of the tower.",
+    "options": [
+      "31.5m",
+      "126m",
+      "68m",
+      "63m"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan 45° = \\frac{\\text{height}}{\\text{distance}}\\)\n\n\\(1 = \\frac{h}{63}\\)\n\n\\(h = 63\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A vertical pole is 65m high. If the angle of elevation of its top from a point on the ground is 45°, how far is the point from the foot of the pole?",
+    "options": [
+      "91.9m",
+      "32.5m",
+      "65m",
+      "130m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 45° = \\frac{65}{d}\\)\n\n\\(1 = \\frac{65}{d}\\)\n\n\\(d = 65\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "From a point 51m from the foot of a vertical pole on level ground, the angle of elevation of the top of the pole is 60°. Find the height of the pole, correct to 2 decimal places.",
+    "options": [
+      "29.44m",
+      "176.67m",
+      "88.33m",
+      "44.17m"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan 60° = \\frac{h}{51}\\)\n\n\\(h = 51 \\times \\tan 60°\\)\n\n\\(= 51 \\times 1.7321 = 88.33\\)m",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "XtziwsDi9PQfI58tqnmQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

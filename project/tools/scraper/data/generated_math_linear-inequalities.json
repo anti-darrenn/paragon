@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Solve the inequality \\(-2x + 2 > 4\\).",
+    "options": [
+      "\\(x > -1\\)",
+      "\\(x > 1\\)",
+      "\\(x < -1\\)",
+      "\\(x < 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 2: \\(-2x > 2\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x + 3 > 99\\).",
+    "options": [
+      "13",
+      "11",
+      "14",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(8x > 96\\)\n\n\\(x > 12\\)\n\nThe smallest integer strictly greater than 12 is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 14 < -16\\).",
+    "options": [
+      "\\(x < 1\\)",
+      "\\(x < 0\\)",
+      "\\(x > -1\\)",
+      "\\(x < -1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 14 from both sides: \\(2x < -2\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x < -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x - 4 > -14\\).",
+    "options": [
+      "\\(x > 2\\)",
+      "\\(x < 2\\)",
+      "\\(x < -2\\)",
+      "\\(x > -2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 4: \\(-5x > -10\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-18 < 3x + 3 < 3\\).",
+    "options": [
+      "\\(0 < x < -7\\)",
+      "\\(-7 \\leq x \\leq 0\\)",
+      "\\(-7 < x < 0\\)",
+      "\\(-8 < x < 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 3 throughout: \\(-21 < 3x < 0\\)\n\nDivide throughout by 3: \\(-7 < x < 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x + 9 < -41\\).",
+    "options": [
+      "\\(x < -5\\)",
+      "\\(x > -5\\)",
+      "\\(x < 5\\)",
+      "\\(x > 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 9: \\(-10x < -50\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x + 1 < 25\\).",
+    "options": [
+      "\\(x < 8\\)",
+      "\\(x < -8\\)",
+      "\\(x > 8\\)",
+      "\\(x > -8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 1: \\(-3x < 24\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3 < 3x - 3 < 24\\).",
+    "options": [
+      "\\(-1 < x < 10\\)",
+      "\\(0 \\leq x \\leq 9\\)",
+      "\\(9 < x < 0\\)",
+      "\\(0 < x < 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 3 throughout: \\(0 < 3x < 27\\)\n\nDivide throughout by 3: \\(0 < x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x - 6 > 48\\).",
+    "options": [
+      "8",
+      "7",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(9x > 54\\)\n\n\\(x > 6\\)\n\nThe smallest integer strictly greater than 6 is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3x - 6 \\leq 21\\).",
+    "options": [
+      "\\(x \\leq 10\\)",
+      "\\(x \\geq 9\\)",
+      "\\(x \\leq 9\\)",
+      "\\(x \\leq -9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 6 from both sides: \\(3x \\leq 27\\)\n\nDivide both sides by 3 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x + 2 \\leq -26\\).",
+    "options": [
+      "\\(x \\leq 7\\)",
+      "\\(x \\geq -7\\)",
+      "\\(x \\leq -6\\)",
+      "\\(x \\leq -7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 2 from both sides: \\(4x \\leq -28\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x + 11 > -29\\).",
+    "options": [
+      "-5",
+      "-6",
+      "-3",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x > -40\\)\n\n\\(x > -5\\)\n\nThe smallest integer strictly greater than -5 is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4 < 3x - 2 < 10\\).",
+    "options": [
+      "\\(2 \\leq x \\leq 4\\)",
+      "\\(4 < x < 2\\)",
+      "\\(2 < x < 4\\)",
+      "\\(1 < x < 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 2 throughout: \\(6 < 3x < 12\\)\n\nDivide throughout by 3: \\(2 < x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 14 < -30\\).",
+    "options": [
+      "\\(x < -7\\)",
+      "\\(x > -8\\)",
+      "\\(x < 8\\)",
+      "\\(x < -8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 14 from both sides: \\(2x < -16\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x < -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-9x - 5 > -41\\).",
+    "options": [
+      "\\(x > -4\\)",
+      "\\(x < -4\\)",
+      "\\(x > 4\\)",
+      "\\(x < 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 5: \\(-9x > -36\\)\n\nDivide both sides by -9. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3 < 5x + 7 < 22\\).",
+    "options": [
+      "\\(-3 < x < 4\\)",
+      "\\(3 < x < -2\\)",
+      "\\(-2 \\leq x \\leq 3\\)",
+      "\\(-2 < x < 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 7 throughout: \\(-10 < 5x < 15\\)\n\nDivide throughout by 5: \\(-2 < x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(6x - 5 > 13\\).",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6x > 18\\)\n\n\\(x > 3\\)\n\nThe smallest integer strictly greater than 3 is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 10 > -14\\).",
+    "options": [
+      "\\(x > -2\\)",
+      "\\(x > -1\\)",
+      "\\(x > 2\\)",
+      "\\(x < -2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 10 from both sides: \\(2x > -4\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x > -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 6 > -2\\).",
+    "options": [
+      "-3",
+      "-1",
+      "0",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4x > -8\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x - 5 > 23\\).",
+    "options": [
+      "6",
+      "7",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4x > 28\\)\n\n\\(x > 7\\)\n\nThe smallest integer strictly greater than 7 is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(8x - 14 \\leq -54\\).",
+    "options": [
+      "\\(x \\geq -5\\)",
+      "\\(x \\leq -4\\)",
+      "\\(x \\leq 5\\)",
+      "\\(x \\leq -5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 14 from both sides: \\(8x \\leq -40\\)\n\nDivide both sides by 8 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-39 < 4x - 7 < -19\\).",
+    "options": [
+      "\\(-3 < x < -8\\)",
+      "\\(-8 < x < -3\\)",
+      "\\(-9 < x < -2\\)",
+      "\\(-8 \\leq x \\leq -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 7 throughout: \\(-32 < 4x < -12\\)\n\nDivide throughout by 4: \\(-8 < x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12x - 2 < 46\\).",
+    "options": [
+      "\\(x > 4\\)",
+      "\\(x < 4\\)",
+      "\\(x < -4\\)",
+      "\\(x < 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 2 from both sides: \\(12x < 48\\)\n\nDivide both sides by 12 (a positive number, so the inequality sign does not change):\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x - 5 > -13\\).",
+    "options": [
+      "-1",
+      "-2",
+      "-3",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4x > -8\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x - 5 > -45\\).",
+    "options": [
+      "-6",
+      "-3",
+      "-4",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8x > -40\\)\n\n\\(x > -5\\)\n\nThe smallest integer strictly greater than -5 is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(3x + 8 > 35\\).",
+    "options": [
+      "10",
+      "11",
+      "8",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3x > 27\\)\n\n\\(x > 9\\)\n\nThe smallest integer strictly greater than 9 is 10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x + 5 \\leq -15\\).",
+    "options": [
+      "\\(x \\leq -4\\)",
+      "\\(x \\geq -5\\)",
+      "\\(x \\leq -5\\)",
+      "\\(x \\leq 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 5 from both sides: \\(4x \\leq -20\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 11 > 25\\).",
+    "options": [
+      "\\(x > -2\\)",
+      "\\(x < 2\\)",
+      "\\(x > 2\\)",
+      "\\(x < -2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 11: \\(-7x > 14\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5 < 3x - 5 < 4\\).",
+    "options": [
+      "\\(0 \\leq x \\leq 3\\)",
+      "\\(-1 < x < 4\\)",
+      "\\(3 < x < 0\\)",
+      "\\(0 < x < 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 5 throughout: \\(0 < 3x < 9\\)\n\nDivide throughout by 3: \\(0 < x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x - 4 < -10\\).",
+    "options": [
+      "\\(x > 2\\)",
+      "\\(x > -2\\)",
+      "\\(x < 2\\)",
+      "\\(x < -2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 4: \\(-3x < -6\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x + 11 > -25\\).",
+    "options": [
+      "\\(x > 6\\)",
+      "\\(x > -5\\)",
+      "\\(x < -6\\)",
+      "\\(x > -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 11 from both sides: \\(6x > -36\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x > -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(5x - 11 > 49\\).",
+    "options": [
+      "14",
+      "12",
+      "11",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5x > 60\\)\n\n\\(x > 12\\)\n\nThe smallest integer strictly greater than 12 is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-11 < 3x + 1 < 4\\).",
+    "options": [
+      "\\(-4 \\leq x \\leq 1\\)",
+      "\\(-4 < x < 1\\)",
+      "\\(1 < x < -4\\)",
+      "\\(-5 < x < 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1 throughout: \\(-12 < 3x < 3\\)\n\nDivide throughout by 3: \\(-4 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(6x - 4 > -4\\).",
+    "options": [
+      "2",
+      "-1",
+      "1",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(6x > 0\\)\n\n\\(x > 0\\)\n\nThe smallest integer strictly greater than 0 is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 4 > 28\\).",
+    "options": [
+      "13",
+      "12",
+      "11",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(2x > 24\\)\n\n\\(x > 12\\)\n\nThe smallest integer strictly greater than 12 is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(7x + 7 > 14\\).",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(7x > 7\\)\n\n\\(x > 1\\)\n\nThe smallest integer strictly greater than 1 is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 4 > 48\\).",
+    "options": [
+      "12",
+      "11",
+      "10",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4x > 44\\)\n\n\\(x > 11\\)\n\nThe smallest integer strictly greater than 11 is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 3 > -21\\).",
+    "options": [
+      "-4",
+      "-7",
+      "-5",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(4x > -24\\)\n\n\\(x > -6\\)\n\nThe smallest integer strictly greater than -6 is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 12 < 75\\).",
+    "options": [
+      "\\(x < -9\\)",
+      "\\(x > 9\\)",
+      "\\(x < 9\\)",
+      "\\(x > -9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 12: \\(-7x < 63\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(6x + 8 > 44\\).",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6x > 36\\)\n\n\\(x > 6\\)\n\nThe smallest integer strictly greater than 6 is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 10 < -38\\).",
+    "options": [
+      "\\(x > -8\\)",
+      "\\(x < -8\\)",
+      "\\(x > 8\\)",
+      "\\(x < 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 10: \\(-6x < -48\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-9x + 12 > 57\\).",
+    "options": [
+      "\\(x < 5\\)",
+      "\\(x > 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < -5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 12: \\(-9x > 45\\)\n\nDivide both sides by -9. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 6 > 36\\).",
+    "options": [
+      "\\(x > 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < -5\\)",
+      "\\(x < 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 6: \\(-6x > 30\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2 < 4x + 2 < 30\\).",
+    "options": [
+      "\\(-1 < x < 7\\)",
+      "\\(-2 < x < 8\\)",
+      "\\(-1 \\leq x \\leq 7\\)",
+      "\\(7 < x < -1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 2 throughout: \\(-4 < 4x < 28\\)\n\nDivide throughout by 4: \\(-1 < x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 15 \\leq -25\\).",
+    "options": [
+      "\\(x \\leq -1\\)",
+      "\\(x \\leq 2\\)",
+      "\\(x \\geq -2\\)",
+      "\\(x \\leq -2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 15 from both sides: \\(5x \\leq -10\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x - 5 < -41\\).",
+    "options": [
+      "\\(x > -6\\)",
+      "\\(x > 6\\)",
+      "\\(x < 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 5: \\(-6x < -36\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x + 7 < -53\\).",
+    "options": [
+      "\\(x < 6\\)",
+      "\\(x > -6\\)",
+      "\\(x > 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 7: \\(-10x < -60\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x - 11 < 69\\).",
+    "options": [
+      "\\(x < -8\\)",
+      "\\(x < 9\\)",
+      "\\(x < 8\\)",
+      "\\(x > 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 11 from both sides: \\(10x < 80\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7 < 4x + 1 < 9\\).",
+    "options": [
+      "\\(-2 < x < 2\\)",
+      "\\(-2 \\leq x \\leq 2\\)",
+      "\\(-3 < x < 3\\)",
+      "\\(2 < x < -2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 1 throughout: \\(-8 < 4x < 8\\)\n\nDivide throughout by 4: \\(-2 < x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 3 > 21\\).",
+    "options": [
+      "9",
+      "8",
+      "10",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(2x > 18\\)\n\n\\(x > 9\\)\n\nThe smallest integer strictly greater than 9 is 10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-12 < 3x - 3 < -6\\).",
+    "options": [
+      "\\(-4 < x < 0\\)",
+      "\\(-3 \\leq x \\leq -1\\)",
+      "\\(-3 < x < -1\\)",
+      "\\(-1 < x < -3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 3 throughout: \\(-9 < 3x < -3\\)\n\nDivide throughout by 3: \\(-3 < x < -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8x + 1 > 73\\).",
+    "options": [
+      "\\(x > -9\\)",
+      "\\(x < -9\\)",
+      "\\(x < 9\\)",
+      "\\(x > 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1: \\(-8x > 72\\)\n\nDivide both sides by -8. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x + 3 > -13\\).",
+    "options": [
+      "\\(x < 4\\)",
+      "\\(x > 4\\)",
+      "\\(x > -4\\)",
+      "\\(x < -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 3: \\(-4x > -16\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x - 9 \\leq 61\\).",
+    "options": [
+      "\\(x \\leq 8\\)",
+      "\\(x \\leq 7\\)",
+      "\\(x \\leq -7\\)",
+      "\\(x \\geq 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 9 from both sides: \\(10x \\leq 70\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x - 10 > -31\\).",
+    "options": [
+      "\\(x < -7\\)",
+      "\\(x < 7\\)",
+      "\\(x > -7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 10: \\(-3x > -21\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 12 < -4\\).",
+    "options": [
+      "\\(x > 4\\)",
+      "\\(x < 4\\)",
+      "\\(x > -4\\)",
+      "\\(x < -4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 12: \\(-2x < 8\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x + 5 \\leq 35\\).",
+    "options": [
+      "\\(x \\leq -3\\)",
+      "\\(x \\geq 3\\)",
+      "\\(x \\leq 4\\)",
+      "\\(x \\leq 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 5 from both sides: \\(10x \\leq 30\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-9x - 12 < -84\\).",
+    "options": [
+      "\\(x > 8\\)",
+      "\\(x > -8\\)",
+      "\\(x < 8\\)",
+      "\\(x < -8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 12: \\(-9x < -72\\)\n\nDivide both sides by -9. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9x - 6 > -15\\).",
+    "options": [
+      "\\(x > 0\\)",
+      "\\(x > -1\\)",
+      "\\(x < -1\\)",
+      "\\(x > 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 6 from both sides: \\(9x > -9\\)\n\nDivide both sides by 9 (a positive number, so the inequality sign does not change):\n\n\\(x > -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x + 12 > -4\\).",
+    "options": [
+      "-3",
+      "-2",
+      "0",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x > -16\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(3x - 3 > -9\\).",
+    "options": [
+      "-2",
+      "-1",
+      "0",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3x > -6\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 7 \\geq -2\\).",
+    "options": [
+      "\\(x \\geq 2\\)",
+      "\\(x \\geq -1\\)",
+      "\\(x \\leq 1\\)",
+      "\\(x \\geq 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 7 from both sides: \\(5x \\geq 5\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x + 2 < -88\\).",
+    "options": [
+      "\\(x < 9\\)",
+      "\\(x < -9\\)",
+      "\\(x > -9\\)",
+      "\\(x > 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 2: \\(-10x < -90\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-36 < 6x + 6 < 6\\).",
+    "options": [
+      "\\(-7 \\leq x \\leq 0\\)",
+      "\\(-8 < x < 1\\)",
+      "\\(0 < x < -7\\)",
+      "\\(-7 < x < 0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 6 throughout: \\(-42 < 6x < 0\\)\n\nDivide throughout by 6: \\(-7 < x < 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7 < 2x + 5 < 17\\).",
+    "options": [
+      "\\(1 < x < 6\\)",
+      "\\(6 < x < 1\\)",
+      "\\(0 < x < 7\\)",
+      "\\(1 \\leq x \\leq 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 5 throughout: \\(2 < 2x < 12\\)\n\nDivide throughout by 2: \\(1 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x + 2 \\geq -28\\).",
+    "options": [
+      "\\(x \\geq -2\\)",
+      "\\(x \\geq -3\\)",
+      "\\(x \\leq -3\\)",
+      "\\(x \\geq 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 2 from both sides: \\(10x \\geq -30\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7 < 5x - 8 < 37\\).",
+    "options": [
+      "\\(9 < x < 3\\)",
+      "\\(3 < x < 9\\)",
+      "\\(3 \\leq x \\leq 9\\)",
+      "\\(2 < x < 10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 8 throughout: \\(15 < 5x < 45\\)\n\nDivide throughout by 5: \\(3 < x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7x + 9 < 23\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x < 2\\)",
+      "\\(x > 2\\)",
+      "\\(x < 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 9 from both sides: \\(7x < 14\\)\n\nDivide both sides by 7 (a positive number, so the inequality sign does not change):\n\n\\(x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 1 > 37\\).",
+    "options": [
+      "\\(x > 6\\)",
+      "\\(x > -6\\)",
+      "\\(x < 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 1: \\(-6x > 36\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-19 < 2x - 5 < -9\\).",
+    "options": [
+      "\\(-8 < x < -1\\)",
+      "\\(-7 < x < -2\\)",
+      "\\(-7 \\leq x \\leq -2\\)",
+      "\\(-2 < x < -7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 5 throughout: \\(-14 < 2x < -4\\)\n\nDivide throughout by 2: \\(-7 < x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 11 > 53\\).",
+    "options": [
+      "\\(x < -6\\)",
+      "\\(x < 6\\)",
+      "\\(x > -6\\)",
+      "\\(x > 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 11: \\(-7x > 42\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x - 8 > 56\\).",
+    "options": [
+      "10",
+      "8",
+      "7",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x > 64\\)\n\n\\(x > 8\\)\n\nThe smallest integer strictly greater than 8 is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x + 5 > 13\\).",
+    "options": [
+      "\\(x > 5\\)",
+      "\\(x > 4\\)",
+      "\\(x > -4\\)",
+      "\\(x < 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 5 from both sides: \\(2x > 8\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x > 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-28 < 4x - 4 < -8\\).",
+    "options": [
+      "\\(-6 < x < -1\\)",
+      "\\(-7 < x < 0\\)",
+      "\\(-1 < x < -6\\)",
+      "\\(-6 \\leq x \\leq -1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 4 throughout: \\(-24 < 4x < -4\\)\n\nDivide throughout by 4: \\(-6 < x < -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x - 4 \\leq -22\\).",
+    "options": [
+      "\\(x \\leq -2\\)",
+      "\\(x \\geq -3\\)",
+      "\\(x \\leq -3\\)",
+      "\\(x \\leq 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 4 from both sides: \\(6x \\leq -18\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 12 > 34\\).",
+    "options": [
+      "10",
+      "11",
+      "13",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x > 22\\)\n\n\\(x > 11\\)\n\nThe smallest integer strictly greater than 11 is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-29 < 5x + 6 < 11\\).",
+    "options": [
+      "\\(1 < x < -7\\)",
+      "\\(-7 \\leq x \\leq 1\\)",
+      "\\(-8 < x < 2\\)",
+      "\\(-7 < x < 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 6 throughout: \\(-35 < 5x < 5\\)\n\nDivide throughout by 5: \\(-7 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 1 > 7\\).",
+    "options": [
+      "5",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x > 6\\)\n\n\\(x > 3\\)\n\nThe smallest integer strictly greater than 3 is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x + 2 > 72\\).",
+    "options": [
+      "\\(x < -7\\)",
+      "\\(x > -7\\)",
+      "\\(x > 7\\)",
+      "\\(x < 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 2: \\(-10x > 70\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5 < 6x - 5 < 43\\).",
+    "options": [
+      "\\(0 < x < 8\\)",
+      "\\(-1 < x < 9\\)",
+      "\\(0 \\leq x \\leq 8\\)",
+      "\\(8 < x < 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 5 throughout: \\(0 < 6x < 48\\)\n\nDivide throughout by 6: \\(0 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 9 \\leq -54\\).",
+    "options": [
+      "\\(x \\leq 9\\)",
+      "\\(x \\leq -8\\)",
+      "\\(x \\geq -9\\)",
+      "\\(x \\leq -9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 9 from both sides: \\(5x \\leq -45\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 11 > 32\\).",
+    "options": [
+      "\\(x < -3\\)",
+      "\\(x > 3\\)",
+      "\\(x > -3\\)",
+      "\\(x < 3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 11: \\(-7x > 21\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2 < 2x - 2 < 16\\).",
+    "options": [
+      "\\(9 < x < 0\\)",
+      "\\(-1 < x < 10\\)",
+      "\\(0 < x < 9\\)",
+      "\\(0 \\leq x \\leq 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 2 throughout: \\(0 < 2x < 18\\)\n\nDivide throughout by 2: \\(0 < x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(13 < 3x + 4 < 22\\).",
+    "options": [
+      "\\(6 < x < 3\\)",
+      "\\(2 < x < 7\\)",
+      "\\(3 < x < 6\\)",
+      "\\(3 \\leq x \\leq 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 4 throughout: \\(9 < 3x < 18\\)\n\nDivide throughout by 3: \\(3 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(5x - 6 > 19\\).",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(5x > 25\\)\n\n\\(x > 5\\)\n\nThe smallest integer strictly greater than 5 is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x - 7 < 21\\).",
+    "options": [
+      "\\(x > -4\\)",
+      "\\(x < 4\\)",
+      "\\(x > 4\\)",
+      "\\(x < -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 7: \\(-7x < 28\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10 < 2x + 2 < 4\\).",
+    "options": [
+      "\\(-6 < x < 1\\)",
+      "\\(1 < x < -6\\)",
+      "\\(-7 < x < 2\\)",
+      "\\(-6 \\leq x \\leq 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 2 throughout: \\(-12 < 2x < 2\\)\n\nDivide throughout by 2: \\(-6 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x - 4 > 20\\).",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8x > 24\\)\n\n\\(x > 3\\)\n\nThe smallest integer strictly greater than 3 is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(7x - 8 > 48\\).",
+    "options": [
+      "9",
+      "7",
+      "10",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(7x > 56\\)\n\n\\(x > 8\\)\n\nThe smallest integer strictly greater than 8 is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x + 7 > 19\\).",
+    "options": [
+      "\\(x > -3\\)",
+      "\\(x < -3\\)",
+      "\\(x > 3\\)",
+      "\\(x < 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 7: \\(-4x > 12\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x - 1 > 59\\).",
+    "options": [
+      "\\(x > -6\\)",
+      "\\(x > 6\\)",
+      "\\(x < 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 1: \\(-10x > 60\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x - 9 > -45\\).",
+    "options": [
+      "\\(x > 9\\)",
+      "\\(x < 9\\)",
+      "\\(x < -9\\)",
+      "\\(x > -9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 9: \\(-4x > -36\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3x + 5 > -16\\).",
+    "options": [
+      "\\(x > 7\\)",
+      "\\(x < -7\\)",
+      "\\(x > -7\\)",
+      "\\(x > -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 5 from both sides: \\(3x > -21\\)\n\nDivide both sides by 3 (a positive number, so the inequality sign does not change):\n\n\\(x > -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-19 < 2x - 3 < -5\\).",
+    "options": [
+      "\\(-9 < x < 0\\)",
+      "\\(-1 < x < -8\\)",
+      "\\(-8 < x < -1\\)",
+      "\\(-8 \\leq x \\leq -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 3 throughout: \\(-16 < 2x < -2\\)\n\nDivide throughout by 2: \\(-8 < x < -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(15 < 4x - 1 < 31\\).",
+    "options": [
+      "\\(3 < x < 9\\)",
+      "\\(8 < x < 4\\)",
+      "\\(4 < x < 8\\)",
+      "\\(4 \\leq x \\leq 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 1 throughout: \\(16 < 4x < 32\\)\n\nDivide throughout by 4: \\(4 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 7 > -21\\).",
+    "options": [
+      "-5",
+      "-8",
+      "-6",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(4x > -28\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-31 < 4x - 7 < -19\\).",
+    "options": [
+      "\\(-7 < x < -2\\)",
+      "\\(-6 < x < -3\\)",
+      "\\(-6 \\leq x \\leq -3\\)",
+      "\\(-3 < x < -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 7 throughout: \\(-24 < 4x < -12\\)\n\nDivide throughout by 4: \\(-6 < x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 4 > -14\\).",
+    "options": [
+      "-1",
+      "-3",
+      "0",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x > -18\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-21 < 5x - 1 < 14\\).",
+    "options": [
+      "\\(3 < x < -4\\)",
+      "\\(-5 < x < 4\\)",
+      "\\(-4 < x < 3\\)",
+      "\\(-4 \\leq x \\leq 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 1 throughout: \\(-20 < 5x < 15\\)\n\nDivide throughout by 5: \\(-4 < x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x - 6 \\geq 26\\).",
+    "options": [
+      "\\(x \\geq 9\\)",
+      "\\(x \\leq 8\\)",
+      "\\(x \\geq 8\\)",
+      "\\(x \\geq -8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 6 from both sides: \\(4x \\geq 32\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x - 11 > -31\\).",
+    "options": [
+      "\\(x > 4\\)",
+      "\\(x > -4\\)",
+      "\\(x < 4\\)",
+      "\\(x < -4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 11: \\(-5x > -20\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x - 3 > 19\\).",
+    "options": [
+      "12",
+      "13",
+      "11",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(2x > 22\\)\n\n\\(x > 11\\)\n\nThe smallest integer strictly greater than 11 is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6 < 4x + 2 < 38\\).",
+    "options": [
+      "\\(1 \\leq x \\leq 9\\)",
+      "\\(9 < x < 1\\)",
+      "\\(1 < x < 9\\)",
+      "\\(0 < x < 10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 2 throughout: \\(4 < 4x < 36\\)\n\nDivide throughout by 4: \\(1 < x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3x + 4 \\leq 28\\).",
+    "options": [
+      "\\(x \\leq -8\\)",
+      "\\(x \\leq 9\\)",
+      "\\(x \\leq 8\\)",
+      "\\(x \\geq 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 4 from both sides: \\(3x \\leq 24\\)\n\nDivide both sides by 3 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 2 \\leq 3\\).",
+    "options": [
+      "\\(x \\leq 2\\)",
+      "\\(x \\leq 1\\)",
+      "\\(x \\leq -1\\)",
+      "\\(x \\geq 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 2 from both sides: \\(5x \\leq 5\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12x + 12 > 96\\).",
+    "options": [
+      "\\(x < 7\\)",
+      "\\(x > 8\\)",
+      "\\(x > -7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 12 from both sides: \\(12x > 84\\)\n\nDivide both sides by 12 (a positive number, so the inequality sign does not change):\n\n\\(x > 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9x - 4 < -67\\).",
+    "options": [
+      "\\(x < -7\\)",
+      "\\(x > -7\\)",
+      "\\(x < 7\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 4 from both sides: \\(9x < -63\\)\n\nDivide both sides by 9 (a positive number, so the inequality sign does not change):\n\n\\(x < -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4 < 4x - 8 < 36\\).",
+    "options": [
+      "\\(2 < x < 12\\)",
+      "\\(3 \\leq x \\leq 11\\)",
+      "\\(3 < x < 11\\)",
+      "\\(11 < x < 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 8 throughout: \\(12 < 4x < 44\\)\n\nDivide throughout by 4: \\(3 < x < 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x - 8 > -44\\).",
+    "options": [
+      "\\(x < -6\\)",
+      "\\(x < 6\\)",
+      "\\(x > -6\\)",
+      "\\(x > 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 8: \\(-6x > -36\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(6x - 3 > -39\\).",
+    "options": [
+      "-5",
+      "-6",
+      "-7",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6x > -36\\)\n\n\\(x > -6\\)\n\nThe smallest integer strictly greater than -6 is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 10 < 3\\).",
+    "options": [
+      "\\(x < 1\\)",
+      "\\(x > -1\\)",
+      "\\(x > 1\\)",
+      "\\(x < -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 10: \\(-7x < -7\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x - 7 > 7\\).",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(2x > 14\\)\n\n\\(x > 7\\)\n\nThe smallest integer strictly greater than 7 is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(20 < 4x + 8 < 32\\).",
+    "options": [
+      "\\(6 < x < 3\\)",
+      "\\(3 < x < 6\\)",
+      "\\(2 < x < 7\\)",
+      "\\(3 \\leq x \\leq 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 8 throughout: \\(12 < 4x < 24\\)\n\nDivide throughout by 4: \\(3 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3 < 2x + 5 < 17\\).",
+    "options": [
+      "\\(-1 \\leq x \\leq 6\\)",
+      "\\(-1 < x < 6\\)",
+      "\\(6 < x < -1\\)",
+      "\\(-2 < x < 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 5 throughout: \\(-2 < 2x < 12\\)\n\nDivide throughout by 2: \\(-1 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-30 < 6x - 6 < -18\\).",
+    "options": [
+      "\\(-4 \\leq x \\leq -2\\)",
+      "\\(-5 < x < -1\\)",
+      "\\(-2 < x < -4\\)",
+      "\\(-4 < x < -2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 6 throughout: \\(-24 < 6x < -12\\)\n\nDivide throughout by 6: \\(-4 < x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-19 < 5x - 4 < 6\\).",
+    "options": [
+      "\\(-4 < x < 3\\)",
+      "\\(-3 < x < 2\\)",
+      "\\(-3 \\leq x \\leq 2\\)",
+      "\\(2 < x < -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 4 throughout: \\(-15 < 5x < 10\\)\n\nDivide throughout by 5: \\(-3 < x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x - 1 > -25\\).",
+    "options": [
+      "\\(x < 4\\)",
+      "\\(x > 4\\)",
+      "\\(x > -4\\)",
+      "\\(x < -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 1: \\(-6x > -24\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 10 > 4\\).",
+    "options": [
+      "\\(x < -7\\)",
+      "\\(x < 7\\)",
+      "\\(x > -7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 10: \\(-2x > 14\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(1 < 2x + 7 < 17\\).",
+    "options": [
+      "\\(-4 < x < 6\\)",
+      "\\(-3 < x < 5\\)",
+      "\\(5 < x < -3\\)",
+      "\\(-3 \\leq x \\leq 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 7 throughout: \\(-6 < 2x < 10\\)\n\nDivide throughout by 2: \\(-3 < x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6 < 3x + 3 < 24\\).",
+    "options": [
+      "\\(0 < x < 8\\)",
+      "\\(7 < x < 1\\)",
+      "\\(1 < x < 7\\)",
+      "\\(1 \\leq x \\leq 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 3 throughout: \\(3 < 3x < 21\\)\n\nDivide throughout by 3: \\(1 < x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 8 > 56\\).",
+    "options": [
+      "\\(x > 8\\)",
+      "\\(x < -8\\)",
+      "\\(x > -8\\)",
+      "\\(x < 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 8: \\(-6x > 48\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12x - 4 < 32\\).",
+    "options": [
+      "\\(x < -3\\)",
+      "\\(x > 3\\)",
+      "\\(x < 3\\)",
+      "\\(x < 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 4 from both sides: \\(12x < 36\\)\n\nDivide both sides by 12 (a positive number, so the inequality sign does not change):\n\n\\(x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 10 > 20\\).",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2x > 10\\)\n\n\\(x > 5\\)\n\nThe smallest integer strictly greater than 5 is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7 < 4x + 3 < 27\\).",
+    "options": [
+      "\\(6 < x < 1\\)",
+      "\\(1 < x < 6\\)",
+      "\\(0 < x < 7\\)",
+      "\\(1 \\leq x \\leq 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 3 throughout: \\(4 < 4x < 24\\)\n\nDivide throughout by 4: \\(1 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12x + 1 \\geq 37\\).",
+    "options": [
+      "\\(x \\geq -3\\)",
+      "\\(x \\geq 4\\)",
+      "\\(x \\leq 3\\)",
+      "\\(x \\geq 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 1 from both sides: \\(12x \\geq 36\\)\n\nDivide both sides by 12 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x + 3 > -51\\).",
+    "options": [
+      "\\(x > 9\\)",
+      "\\(x > -8\\)",
+      "\\(x > -9\\)",
+      "\\(x < -9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 3 from both sides: \\(6x > -54\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x > -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-15 < 2x - 5 < -11\\).",
+    "options": [
+      "\\(-5 < x < -3\\)",
+      "\\(-6 < x < -2\\)",
+      "\\(-5 \\leq x \\leq -3\\)",
+      "\\(-3 < x < -5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 5 throughout: \\(-10 < 2x < -6\\)\n\nDivide throughout by 2: \\(-5 < x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x + 5 > -25\\).",
+    "options": [
+      "\\(x > 3\\)",
+      "\\(x < 3\\)",
+      "\\(x > -3\\)",
+      "\\(x < -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 5: \\(-10x > -30\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(23 < 6x - 1 < 41\\).",
+    "options": [
+      "\\(7 < x < 4\\)",
+      "\\(4 \\leq x \\leq 7\\)",
+      "\\(3 < x < 8\\)",
+      "\\(4 < x < 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 1 throughout: \\(24 < 6x < 42\\)\n\nDivide throughout by 6: \\(4 < x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x + 6 < 36\\).",
+    "options": [
+      "\\(x > 5\\)",
+      "\\(x < -5\\)",
+      "\\(x < 5\\)",
+      "\\(x < 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 6 from both sides: \\(6x < 30\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 7 > -20\\).",
+    "options": [
+      "-1",
+      "-2",
+      "-3",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(9x > -27\\)\n\n\\(x > -3\\)\n\nThe smallest integer strictly greater than -3 is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x + 4 \\leq 14\\).",
+    "options": [
+      "\\(x \\leq 5\\)",
+      "\\(x \\leq 6\\)",
+      "\\(x \\leq -5\\)",
+      "\\(x \\geq 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 4 from both sides: \\(2x \\leq 10\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x - 12 > 20\\).",
+    "options": [
+      "5",
+      "6",
+      "4",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(8x > 32\\)\n\n\\(x > 4\\)\n\nThe smallest integer strictly greater than 4 is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x + 5 \\leq -23\\).",
+    "options": [
+      "\\(x \\leq 7\\)",
+      "\\(x \\geq -7\\)",
+      "\\(x \\leq -7\\)",
+      "\\(x \\leq -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 5 from both sides: \\(4x \\leq -28\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x - 12 > 24\\).",
+    "options": [
+      "6",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x > 36\\)\n\n\\(x > 4\\)\n\nThe smallest integer strictly greater than 4 is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9 < 2x + 5 < 19\\).",
+    "options": [
+      "\\(1 < x < 8\\)",
+      "\\(2 < x < 7\\)",
+      "\\(2 \\leq x \\leq 7\\)",
+      "\\(7 < x < 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 5 throughout: \\(4 < 2x < 14\\)\n\nDivide throughout by 2: \\(2 < x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-32 < 5x + 8 < -22\\).",
+    "options": [
+      "\\(-9 < x < -5\\)",
+      "\\(-6 < x < -8\\)",
+      "\\(-8 \\leq x \\leq -6\\)",
+      "\\(-8 < x < -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 8 throughout: \\(-40 < 5x < -30\\)\n\nDivide throughout by 5: \\(-8 < x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 4 \\geq 36\\).",
+    "options": [
+      "\\(x \\geq 9\\)",
+      "\\(x \\geq -8\\)",
+      "\\(x \\leq 8\\)",
+      "\\(x \\geq 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 4 from both sides: \\(5x \\geq 40\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(5x - 6 > -41\\).",
+    "options": [
+      "-7",
+      "-5",
+      "-8",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5x > -35\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 1 > -62\\).",
+    "options": [
+      "-5",
+      "-7",
+      "-6",
+      "-8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(9x > -63\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 7 > 25\\).",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(9x > 18\\)\n\n\\(x > 2\\)\n\nThe smallest integer strictly greater than 2 is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7 < 5x + 3 < 33\\).",
+    "options": [
+      "\\(-2 \\leq x \\leq 6\\)",
+      "\\(-2 < x < 6\\)",
+      "\\(6 < x < -2\\)",
+      "\\(-3 < x < 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 3 throughout: \\(-10 < 5x < 30\\)\n\nDivide throughout by 5: \\(-2 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(8x + 15 > 31\\).",
+    "options": [
+      "\\(x > -2\\)",
+      "\\(x > 3\\)",
+      "\\(x > 2\\)",
+      "\\(x < 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 15 from both sides: \\(8x > 16\\)\n\nDivide both sides by 8 (a positive number, so the inequality sign does not change):\n\n\\(x > 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(6x - 3 > 3\\).",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(6x > 6\\)\n\n\\(x > 1\\)\n\nThe smallest integer strictly greater than 1 is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 3 > -51\\).",
+    "options": [
+      "-5",
+      "-4",
+      "-6",
+      "-7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x > -54\\)\n\n\\(x > -6\\)\n\nThe smallest integer strictly greater than -6 is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x - 3 > -27\\).",
+    "options": [
+      "\\(x < 8\\)",
+      "\\(x < -8\\)",
+      "\\(x > 8\\)",
+      "\\(x > -8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 3: \\(-3x > -24\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 1 < 15\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x > -2\\)",
+      "\\(x > 2\\)",
+      "\\(x < 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1: \\(-7x < 14\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x - 10 > 2\\).",
+    "options": [
+      "6",
+      "8",
+      "5",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x > 12\\)\n\n\\(x > 6\\)\n\nThe smallest integer strictly greater than 6 is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12 < 6x - 6 < 60\\).",
+    "options": [
+      "\\(3 \\leq x \\leq 11\\)",
+      "\\(3 < x < 11\\)",
+      "\\(2 < x < 12\\)",
+      "\\(11 < x < 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 6 throughout: \\(18 < 6x < 66\\)\n\nDivide throughout by 6: \\(3 < x < 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x - 7 > -43\\).",
+    "options": [
+      "\\(x > -9\\)",
+      "\\(x > 9\\)",
+      "\\(x < -9\\)",
+      "\\(x < 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 7: \\(-4x > -36\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9x - 4 > 86\\).",
+    "options": [
+      "\\(x < 10\\)",
+      "\\(x > 11\\)",
+      "\\(x > -10\\)",
+      "\\(x > 10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 4 from both sides: \\(9x > 90\\)\n\nDivide both sides by 9 (a positive number, so the inequality sign does not change):\n\n\\(x > 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5 < 3x + 8 < 11\\).",
+    "options": [
+      "\\(-2 < x < 2\\)",
+      "\\(-1 \\leq x \\leq 1\\)",
+      "\\(1 < x < -1\\)",
+      "\\(-1 < x < 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 8 throughout: \\(-3 < 3x < 3\\)\n\nDivide throughout by 3: \\(-1 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3x - 6 < 18\\).",
+    "options": [
+      "\\(x > 8\\)",
+      "\\(x < 9\\)",
+      "\\(x < -8\\)",
+      "\\(x < 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 6 from both sides: \\(3x < 24\\)\n\nDivide both sides by 3 (a positive number, so the inequality sign does not change):\n\n\\(x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 3 > 48\\).",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x > 45\\)\n\n\\(x > 5\\)\n\nThe smallest integer strictly greater than 5 is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-9x - 8 < 46\\).",
+    "options": [
+      "\\(x > 6\\)",
+      "\\(x > -6\\)",
+      "\\(x < -6\\)",
+      "\\(x < 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 8: \\(-9x < 54\\)\n\nDivide both sides by -9. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x - 1 > -5\\).",
+    "options": [
+      "-3",
+      "-2",
+      "-1",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(2x > -4\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(3x - 12 > -27\\).",
+    "options": [
+      "-4",
+      "-6",
+      "-5",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3x > -15\\)\n\n\\(x > -5\\)\n\nThe smallest integer strictly greater than -5 is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x - 5 > -7\\).",
+    "options": [
+      "-2",
+      "1",
+      "-1",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x > -2\\)\n\n\\(x > -1\\)\n\nThe smallest integer strictly greater than -1 is 0.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x + 10 < -50\\).",
+    "options": [
+      "\\(x < -5\\)",
+      "\\(x > -6\\)",
+      "\\(x < 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 10 from both sides: \\(10x < -60\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(11x + 3 \\leq 36\\).",
+    "options": [
+      "\\(x \\leq 3\\)",
+      "\\(x \\geq 3\\)",
+      "\\(x \\leq 4\\)",
+      "\\(x \\leq -3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 3 from both sides: \\(11x \\leq 33\\)\n\nDivide both sides by 11 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12 < 3x + 3 < 18\\).",
+    "options": [
+      "\\(3 \\leq x \\leq 5\\)",
+      "\\(3 < x < 5\\)",
+      "\\(2 < x < 6\\)",
+      "\\(5 < x < 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 3 throughout: \\(9 < 3x < 15\\)\n\nDivide throughout by 3: \\(3 < x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 2 > 12\\).",
+    "options": [
+      "\\(x > -7\\)",
+      "\\(x < -7\\)",
+      "\\(x > 7\\)",
+      "\\(x < 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 2: \\(-2x > 14\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-29 < 6x + 7 < 13\\).",
+    "options": [
+      "\\(-6 \\leq x \\leq 1\\)",
+      "\\(1 < x < -6\\)",
+      "\\(-7 < x < 2\\)",
+      "\\(-6 < x < 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 7 throughout: \\(-36 < 6x < 6\\)\n\nDivide throughout by 6: \\(-6 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 3 \\geq -38\\).",
+    "options": [
+      "\\(x \\leq -7\\)",
+      "\\(x \\geq -7\\)",
+      "\\(x \\geq 7\\)",
+      "\\(x \\geq -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 3 from both sides: \\(5x \\geq -35\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-15 < 4x + 5 < -3\\).",
+    "options": [
+      "\\(-5 \\leq x \\leq -2\\)",
+      "\\(-6 < x < -1\\)",
+      "\\(-5 < x < -2\\)",
+      "\\(-2 < x < -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 5 throughout: \\(-20 < 4x < -8\\)\n\nDivide throughout by 4: \\(-5 < x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x + 14 < -11\\).",
+    "options": [
+      "\\(x < -5\\)",
+      "\\(x < 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 14 from both sides: \\(5x < -25\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x < -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(21 < 6x - 3 < 57\\).",
+    "options": [
+      "\\(4 < x < 10\\)",
+      "\\(10 < x < 4\\)",
+      "\\(3 < x < 11\\)",
+      "\\(4 \\leq x \\leq 10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 3 throughout: \\(24 < 6x < 60\\)\n\nDivide throughout by 6: \\(4 < x < 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-27 < 4x - 7 < -7\\).",
+    "options": [
+      "\\(-6 < x < 1\\)",
+      "\\(-5 \\leq x \\leq 0\\)",
+      "\\(-5 < x < 0\\)",
+      "\\(0 < x < -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 7 throughout: \\(-20 < 4x < 0\\)\n\nDivide throughout by 4: \\(-5 < x < 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x - 11 < -41\\).",
+    "options": [
+      "\\(x > 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < 5\\)",
+      "\\(x < -5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 11: \\(-6x < -30\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x + 8 < -7\\).",
+    "options": [
+      "\\(x > -5\\)",
+      "\\(x > 5\\)",
+      "\\(x < 5\\)",
+      "\\(x < -5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 8: \\(-3x < -15\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6 < 4x - 6 < 26\\).",
+    "options": [
+      "\\(0 < x < 8\\)",
+      "\\(0 \\leq x \\leq 8\\)",
+      "\\(-1 < x < 9\\)",
+      "\\(8 < x < 0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 6 throughout: \\(0 < 4x < 32\\)\n\nDivide throughout by 4: \\(0 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9x + 5 \\geq 14\\).",
+    "options": [
+      "\\(x \\leq 1\\)",
+      "\\(x \\geq -1\\)",
+      "\\(x \\geq 2\\)",
+      "\\(x \\geq 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 5 from both sides: \\(9x \\geq 9\\)\n\nDivide both sides by 9 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(11x - 2 < 20\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x < 2\\)",
+      "\\(x < 3\\)",
+      "\\(x > 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 2 from both sides: \\(11x < 22\\)\n\nDivide both sides by 11 (a positive number, so the inequality sign does not change):\n\n\\(x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x - 12 \\leq -6\\).",
+    "options": [
+      "\\(x \\leq 2\\)",
+      "\\(x \\geq 1\\)",
+      "\\(x \\leq -1\\)",
+      "\\(x \\leq 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 12 from both sides: \\(6x \\leq 6\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-11 < 5x - 6 < 34\\).",
+    "options": [
+      "\\(-1 < x < 8\\)",
+      "\\(-1 \\leq x \\leq 8\\)",
+      "\\(-2 < x < 9\\)",
+      "\\(8 < x < -1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 6 throughout: \\(-5 < 5x < 40\\)\n\nDivide throughout by 5: \\(-1 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x + 1 \\leq 101\\).",
+    "options": [
+      "\\(x \\geq 10\\)",
+      "\\(x \\leq 10\\)",
+      "\\(x \\leq 11\\)",
+      "\\(x \\leq -10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1 from both sides: \\(10x \\leq 100\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7x + 3 < 17\\).",
+    "options": [
+      "\\(x < 3\\)",
+      "\\(x > 2\\)",
+      "\\(x < -2\\)",
+      "\\(x < 2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 3 from both sides: \\(7x < 14\\)\n\nDivide both sides by 7 (a positive number, so the inequality sign does not change):\n\n\\(x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8 < 3x - 5 < 16\\).",
+    "options": [
+      "\\(-1 \\leq x \\leq 7\\)",
+      "\\(-1 < x < 7\\)",
+      "\\(7 < x < -1\\)",
+      "\\(-2 < x < 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 5 throughout: \\(-3 < 3x < 21\\)\n\nDivide throughout by 3: \\(-1 < x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x - 5 > 4\\).",
+    "options": [
+      "\\(x < -3\\)",
+      "\\(x < 3\\)",
+      "\\(x > 3\\)",
+      "\\(x > -3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 5: \\(-3x > 9\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12x + 5 \\geq -43\\).",
+    "options": [
+      "\\(x \\geq 4\\)",
+      "\\(x \\leq -4\\)",
+      "\\(x \\geq -4\\)",
+      "\\(x \\geq -3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 5 from both sides: \\(12x \\geq -48\\)\n\nDivide both sides by 12 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-9x + 5 > -49\\).",
+    "options": [
+      "\\(x < 6\\)",
+      "\\(x > 6\\)",
+      "\\(x < -6\\)",
+      "\\(x > -6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 5: \\(-9x > -54\\)\n\nDivide both sides by -9. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x + 10 > -10\\).",
+    "options": [
+      "\\(x > -4\\)",
+      "\\(x < 4\\)",
+      "\\(x < -4\\)",
+      "\\(x > 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 10: \\(-5x > -20\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 11 > 4\\).",
+    "options": [
+      "\\(x < 1\\)",
+      "\\(x > 1\\)",
+      "\\(x < -1\\)",
+      "\\(x > -1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 11: \\(-7x > -7\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9 < 5x - 1 < 39\\).",
+    "options": [
+      "\\(2 < x < 8\\)",
+      "\\(2 \\leq x \\leq 8\\)",
+      "\\(8 < x < 2\\)",
+      "\\(1 < x < 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 1 throughout: \\(10 < 5x < 40\\)\n\nDivide throughout by 5: \\(2 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-1 < 5x + 4 < 19\\).",
+    "options": [
+      "\\(3 < x < -1\\)",
+      "\\(-1 < x < 3\\)",
+      "\\(-2 < x < 4\\)",
+      "\\(-1 \\leq x \\leq 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 4 throughout: \\(-5 < 5x < 15\\)\n\nDivide throughout by 5: \\(-1 < x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12 < 5x - 3 < 27\\).",
+    "options": [
+      "\\(2 < x < 7\\)",
+      "\\(3 < x < 6\\)",
+      "\\(3 \\leq x \\leq 6\\)",
+      "\\(6 < x < 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 3 throughout: \\(15 < 5x < 30\\)\n\nDivide throughout by 5: \\(3 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 6 > 12\\).",
+    "options": [
+      "5",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x > 6\\)\n\n\\(x > 3\\)\n\nThe smallest integer strictly greater than 3 is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(5x + 12 > 12\\).",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5x > 0\\)\n\n\\(x > 0\\)\n\nThe smallest integer strictly greater than 0 is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x + 1 < 21\\).",
+    "options": [
+      "\\(x > 5\\)",
+      "\\(x < 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 1: \\(-4x < 20\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-47 < 5x - 7 < -2\\).",
+    "options": [
+      "\\(1 < x < -8\\)",
+      "\\(-8 < x < 1\\)",
+      "\\(-8 \\leq x \\leq 1\\)",
+      "\\(-9 < x < 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 7 throughout: \\(-40 < 5x < 5\\)\n\nDivide throughout by 5: \\(-8 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x - 4 > 44\\).",
+    "options": [
+      "\\(x < 8\\)",
+      "\\(x > 8\\)",
+      "\\(x < -8\\)",
+      "\\(x > -8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 4: \\(-6x > 48\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(7x - 1 > -57\\).",
+    "options": [
+      "-8",
+      "-7",
+      "-6",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7x > -56\\)\n\n\\(x > -8\\)\n\nThe smallest integer strictly greater than -8 is -7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 6 > 38\\).",
+    "options": [
+      "10",
+      "9",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4x > 32\\)\n\n\\(x > 8\\)\n\nThe smallest integer strictly greater than 8 is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x - 2 > -22\\).",
+    "options": [
+      "\\(x > -4\\)",
+      "\\(x < -4\\)",
+      "\\(x > 4\\)",
+      "\\(x < 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 2: \\(-5x > -20\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2 < 5x - 3 < 22\\).",
+    "options": [
+      "\\(1 \\leq x \\leq 5\\)",
+      "\\(0 < x < 6\\)",
+      "\\(5 < x < 1\\)",
+      "\\(1 < x < 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 3 throughout: \\(5 < 5x < 25\\)\n\nDivide throughout by 5: \\(1 < x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 2 > -18\\).",
+    "options": [
+      "-6",
+      "-5",
+      "-3",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4x > -20\\)\n\n\\(x > -5\\)\n\nThe smallest integer strictly greater than -5 is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6 < 6x + 6 < 54\\).",
+    "options": [
+      "\\(-1 < x < 9\\)",
+      "\\(0 \\leq x \\leq 8\\)",
+      "\\(8 < x < 0\\)",
+      "\\(0 < x < 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 6 throughout: \\(0 < 6x < 48\\)\n\nDivide throughout by 6: \\(0 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 7 > 17\\).",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2x > 10\\)\n\n\\(x > 5\\)\n\nThe smallest integer strictly greater than 5 is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 12 > 30\\).",
+    "options": [
+      "\\(x < -3\\)",
+      "\\(x > -3\\)",
+      "\\(x > 3\\)",
+      "\\(x < 3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 12: \\(-6x > 18\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(8x - 2 > 54\\).",
+    "options": [
+      "\\(x < 7\\)",
+      "\\(x > 8\\)",
+      "\\(x > -7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 2 from both sides: \\(8x > 56\\)\n\nDivide both sides by 8 (a positive number, so the inequality sign does not change):\n\n\\(x > 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x - 6 < 30\\).",
+    "options": [
+      "\\(x > 9\\)",
+      "\\(x < 9\\)",
+      "\\(x > -9\\)",
+      "\\(x < -9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 6: \\(-4x < 36\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x - 6 > 10\\).",
+    "options": [
+      "\\(x < -4\\)",
+      "\\(x < 4\\)",
+      "\\(x > -4\\)",
+      "\\(x > 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 6: \\(-4x > 16\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7 < 5x - 2 < 28\\).",
+    "options": [
+      "\\(-1 \\leq x \\leq 6\\)",
+      "\\(-2 < x < 7\\)",
+      "\\(6 < x < -1\\)",
+      "\\(-1 < x < 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 2 throughout: \\(-5 < 5x < 30\\)\n\nDivide throughout by 5: \\(-1 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(5x - 11 > 29\\).",
+    "options": [
+      "10",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5x > 40\\)\n\n\\(x > 8\\)\n\nThe smallest integer strictly greater than 8 is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 7 < 13\\).",
+    "options": [
+      "\\(x < -1\\)",
+      "\\(x < 1\\)",
+      "\\(x > -1\\)",
+      "\\(x > 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 7: \\(-6x < 6\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(7x + 6 > 41\\).",
+    "options": [
+      "6",
+      "4",
+      "7",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(7x > 35\\)\n\n\\(x > 5\\)\n\nThe smallest integer strictly greater than 5 is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x + 14 > 18\\).",
+    "options": [
+      "\\(x > 3\\)",
+      "\\(x > -2\\)",
+      "\\(x > 2\\)",
+      "\\(x < 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 14 from both sides: \\(2x > 4\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x > 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x + 10 > -40\\).",
+    "options": [
+      "\\(x > -5\\)",
+      "\\(x < 5\\)",
+      "\\(x > 5\\)",
+      "\\(x < -5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 10: \\(-10x > -50\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 6 \\geq -24\\).",
+    "options": [
+      "\\(x \\leq -9\\)",
+      "\\(x \\geq 9\\)",
+      "\\(x \\geq -9\\)",
+      "\\(x \\geq -8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 6 from both sides: \\(2x \\geq -18\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x + 7 > 27\\).",
+    "options": [
+      "\\(x > -5\\)",
+      "\\(x > 5\\)",
+      "\\(x > 6\\)",
+      "\\(x < 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 7 from both sides: \\(4x > 20\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x > 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7x - 1 < -50\\).",
+    "options": [
+      "\\(x < -6\\)",
+      "\\(x < -7\\)",
+      "\\(x > -7\\)",
+      "\\(x < 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 1 from both sides: \\(7x < -49\\)\n\nDivide both sides by 7 (a positive number, so the inequality sign does not change):\n\n\\(x < -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(11x - 9 \\leq -31\\).",
+    "options": [
+      "\\(x \\leq -2\\)",
+      "\\(x \\leq -1\\)",
+      "\\(x \\leq 2\\)",
+      "\\(x \\geq -2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 9 from both sides: \\(11x \\leq -22\\)\n\nDivide both sides by 11 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x - 9 < 7\\).",
+    "options": [
+      "\\(x > -4\\)",
+      "\\(x < -4\\)",
+      "\\(x < 4\\)",
+      "\\(x > 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 9: \\(-4x < 16\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 1 > -41\\).",
+    "options": [
+      "\\(x > 8\\)",
+      "\\(x > -8\\)",
+      "\\(x > -7\\)",
+      "\\(x < -8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 1 from both sides: \\(5x > -40\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x > -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 2 > -61\\).",
+    "options": [
+      "\\(x > -9\\)",
+      "\\(x > 9\\)",
+      "\\(x < -9\\)",
+      "\\(x < 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 2: \\(-7x > -63\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x + 11 \\leq -9\\).",
+    "options": [
+      "\\(x \\leq -5\\)",
+      "\\(x \\geq -5\\)",
+      "\\(x \\leq -4\\)",
+      "\\(x \\leq 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 11 from both sides: \\(4x \\leq -20\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x + 15 \\geq -27\\).",
+    "options": [
+      "\\(x \\geq 7\\)",
+      "\\(x \\geq -6\\)",
+      "\\(x \\leq -7\\)",
+      "\\(x \\geq -7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 15 from both sides: \\(6x \\geq -42\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x + 2 > 17\\).",
+    "options": [
+      "\\(x > 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < 5\\)",
+      "\\(x < -5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 2: \\(-3x > 15\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x + 4 \\leq -36\\).",
+    "options": [
+      "\\(x \\geq -10\\)",
+      "\\(x \\leq -10\\)",
+      "\\(x \\leq -9\\)",
+      "\\(x \\leq 10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 4 from both sides: \\(4x \\leq -40\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10 < 4x + 6 < 6\\).",
+    "options": [
+      "\\(-4 < x < 0\\)",
+      "\\(-4 \\leq x \\leq 0\\)",
+      "\\(-5 < x < 1\\)",
+      "\\(0 < x < -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 6 throughout: \\(-16 < 4x < 0\\)\n\nDivide throughout by 4: \\(-4 < x < 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 12 > 30\\).",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x > 18\\)\n\n\\(x > 2\\)\n\nThe smallest integer strictly greater than 2 is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 11 < -25\\).",
+    "options": [
+      "\\(x < 7\\)",
+      "\\(x > -7\\)",
+      "\\(x < -7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 11: \\(-2x < -14\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x + 1 < 41\\).",
+    "options": [
+      "\\(x < 8\\)",
+      "\\(x > -8\\)",
+      "\\(x > 8\\)",
+      "\\(x < -8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1: \\(-5x < 40\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x - 8 > -22\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x > -2\\)",
+      "\\(x < 2\\)",
+      "\\(x > 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 8: \\(-7x > -14\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x - 9 \\leq 27\\).",
+    "options": [
+      "\\(x \\geq 6\\)",
+      "\\(x \\leq 7\\)",
+      "\\(x \\leq 6\\)",
+      "\\(x \\leq -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 9 from both sides: \\(6x \\leq 36\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(7x - 11 > 10\\).",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7x > 21\\)\n\n\\(x > 3\\)\n\nThe smallest integer strictly greater than 3 is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 7 < -17\\).",
+    "options": [
+      "\\(x < -5\\)",
+      "\\(x > 5\\)",
+      "\\(x > -5\\)",
+      "\\(x < 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 7: \\(-2x < -10\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(3x - 5 > -26\\).",
+    "options": [
+      "-7",
+      "-5",
+      "-6",
+      "-8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(3x > -21\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(12x - 5 \\geq -113\\).",
+    "options": [
+      "\\(x \\leq -9\\)",
+      "\\(x \\geq -8\\)",
+      "\\(x \\geq -9\\)",
+      "\\(x \\geq 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 5 from both sides: \\(12x \\geq -108\\)\n\nDivide both sides by 12 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 5 > 45\\).",
+    "options": [
+      "11",
+      "9",
+      "10",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4x > 40\\)\n\n\\(x > 10\\)\n\nThe smallest integer strictly greater than 10 is 11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x + 3 > 48\\).",
+    "options": [
+      "\\(x < 9\\)",
+      "\\(x < -9\\)",
+      "\\(x > -9\\)",
+      "\\(x > 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 3: \\(-5x > 45\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(5x + 12 > -18\\).",
+    "options": [
+      "-4",
+      "-6",
+      "-7",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5x > -30\\)\n\n\\(x > -6\\)\n\nThe smallest integer strictly greater than -6 is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 13 > -29\\).",
+    "options": [
+      "\\(x > -8\\)",
+      "\\(x < -8\\)",
+      "\\(x > -7\\)",
+      "\\(x > 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 13 from both sides: \\(2x > -16\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x > -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x - 3 > -19\\).",
+    "options": [
+      "-2",
+      "-3",
+      "-5",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4x > -16\\)\n\n\\(x > -4\\)\n\nThe smallest integer strictly greater than -4 is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x + 3 < 23\\).",
+    "options": [
+      "\\(x < 11\\)",
+      "\\(x < -10\\)",
+      "\\(x > 10\\)",
+      "\\(x < 10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 3 from both sides: \\(2x < 20\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x < 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x - 9 > -15\\).",
+    "options": [
+      "\\(x > 1\\)",
+      "\\(x < -1\\)",
+      "\\(x < 1\\)",
+      "\\(x > -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 9: \\(-6x > -6\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x + 5 > -13\\).",
+    "options": [
+      "\\(x < 9\\)",
+      "\\(x > -9\\)",
+      "\\(x > 9\\)",
+      "\\(x < -9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 5: \\(-2x > -18\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-14 < 3x - 2 < 7\\).",
+    "options": [
+      "\\(-5 < x < 4\\)",
+      "\\(3 < x < -4\\)",
+      "\\(-4 \\leq x \\leq 3\\)",
+      "\\(-4 < x < 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 2 throughout: \\(-12 < 3x < 9\\)\n\nDivide throughout by 3: \\(-4 < x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(4x + 8 > -20\\).",
+    "options": [
+      "-6",
+      "-5",
+      "-8",
+      "-7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4x > -28\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x + 11 > -5\\).",
+    "options": [
+      "0",
+      "-2",
+      "-3",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x > -16\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 7 > -7\\).",
+    "options": [
+      "-6",
+      "-7",
+      "-5",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(2x > -14\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x - 12 > 36\\).",
+    "options": [
+      "6",
+      "8",
+      "5",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x > 48\\)\n\n\\(x > 6\\)\n\nThe smallest integer strictly greater than 6 is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x - 1 > 41\\).",
+    "options": [
+      "\\(x > 6\\)",
+      "\\(x < 6\\)",
+      "\\(x > -6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 1: \\(-7x > 42\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x - 3 > 32\\).",
+    "options": [
+      "\\(x < 7\\)",
+      "\\(x > 7\\)",
+      "\\(x > -7\\)",
+      "\\(x < -7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 3: \\(-5x > 35\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(8x + 5 > 21\\).",
+    "options": [
+      "\\(x > 2\\)",
+      "\\(x > 3\\)",
+      "\\(x > -2\\)",
+      "\\(x < 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 5 from both sides: \\(8x > 16\\)\n\nDivide both sides by 8 (a positive number, so the inequality sign does not change):\n\n\\(x > 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-5x + 6 < 1\\).",
+    "options": [
+      "\\(x > -1\\)",
+      "\\(x < 1\\)",
+      "\\(x < -1\\)",
+      "\\(x > 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 6: \\(-5x < -5\\)\n\nDivide both sides by -5. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(3x - 9 > -15\\).",
+    "options": [
+      "0",
+      "-2",
+      "-1",
+      "-3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(3x > -6\\)\n\n\\(x > -2\\)\n\nThe smallest integer strictly greater than -2 is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 8 > -55\\).",
+    "options": [
+      "-7",
+      "-8",
+      "-6",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(9x > -63\\)\n\n\\(x > -7\\)\n\nThe smallest integer strictly greater than -7 is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6 < 2x + 6 < 2\\).",
+    "options": [
+      "\\(-7 < x < -1\\)",
+      "\\(-6 < x < -2\\)",
+      "\\(-6 \\leq x \\leq -2\\)",
+      "\\(-2 < x < -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 6 throughout: \\(-12 < 2x < -4\\)\n\nDivide throughout by 2: \\(-6 < x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x + 12 > 16\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x > -2\\)",
+      "\\(x < 2\\)",
+      "\\(x > 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 12: \\(-2x > 4\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3 < 5x - 3 < 27\\).",
+    "options": [
+      "\\(0 < x < 6\\)",
+      "\\(0 \\leq x \\leq 6\\)",
+      "\\(6 < x < 0\\)",
+      "\\(-1 < x < 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 3 throughout: \\(0 < 5x < 30\\)\n\nDivide throughout by 5: \\(0 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9x - 9 > -63\\).",
+    "options": [
+      "\\(x > -5\\)",
+      "\\(x > -6\\)",
+      "\\(x > 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 9 from both sides: \\(9x > -54\\)\n\nDivide both sides by 9 (a positive number, so the inequality sign does not change):\n\n\\(x > -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8 < 3x - 5 < 10\\).",
+    "options": [
+      "\\(-1 < x < 5\\)",
+      "\\(-1 \\leq x \\leq 5\\)",
+      "\\(5 < x < -1\\)",
+      "\\(-2 < x < 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 5 throughout: \\(-3 < 3x < 15\\)\n\nDivide throughout by 3: \\(-1 < x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(5x - 3 \\leq 12\\).",
+    "options": [
+      "\\(x \\geq 3\\)",
+      "\\(x \\leq 4\\)",
+      "\\(x \\leq -3\\)",
+      "\\(x \\leq 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 3 from both sides: \\(5x \\leq 15\\)\n\nDivide both sides by 5 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 8 < -34\\).",
+    "options": [
+      "\\(x > -7\\)",
+      "\\(x < -7\\)",
+      "\\(x < 7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 8: \\(-6x < -42\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(0 < 2x + 2 < 10\\).",
+    "options": [
+      "\\(-2 < x < 5\\)",
+      "\\(-1 < x < 4\\)",
+      "\\(-1 \\leq x \\leq 4\\)",
+      "\\(4 < x < -1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 2 throughout: \\(-2 < 2x < 8\\)\n\nDivide throughout by 2: \\(-1 < x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x + 4 > -20\\).",
+    "options": [
+      "-3",
+      "-1",
+      "-2",
+      "-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8x > -24\\)\n\n\\(x > -3\\)\n\nThe smallest integer strictly greater than -3 is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 5 > 13\\).",
+    "options": [
+      "5",
+      "6",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(2x > 8\\)\n\n\\(x > 4\\)\n\nThe smallest integer strictly greater than 4 is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-1 < 6x - 7 < 17\\).",
+    "options": [
+      "\\(0 < x < 5\\)",
+      "\\(4 < x < 1\\)",
+      "\\(1 \\leq x \\leq 4\\)",
+      "\\(1 < x < 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 7 throughout: \\(6 < 6x < 24\\)\n\nDivide throughout by 6: \\(1 < x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-10x - 12 > 8\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x > -2\\)",
+      "\\(x > 2\\)",
+      "\\(x < 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 12: \\(-10x > 20\\)\n\nDivide both sides by -10. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8x - 1 > -73\\).",
+    "options": [
+      "\\(x < -9\\)",
+      "\\(x > 9\\)",
+      "\\(x > -9\\)",
+      "\\(x < 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 1: \\(-8x > -72\\)\n\nDivide both sides by -8. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8x - 11 < 53\\).",
+    "options": [
+      "\\(x > -8\\)",
+      "\\(x > 8\\)",
+      "\\(x < 8\\)",
+      "\\(x < -8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 11: \\(-8x < 64\\)\n\nDivide both sides by -8. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(8x + 10 < 66\\).",
+    "options": [
+      "\\(x < -7\\)",
+      "\\(x > 7\\)",
+      "\\(x < 8\\)",
+      "\\(x < 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 10 from both sides: \\(8x < 56\\)\n\nDivide both sides by 8 (a positive number, so the inequality sign does not change):\n\n\\(x < 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(3x - 3 > -3\\).",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(3x > 0\\)\n\n\\(x > 0\\)\n\nThe smallest integer strictly greater than 0 is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(8x + 5 > 61\\).",
+    "options": [
+      "\\(x > -7\\)",
+      "\\(x > 8\\)",
+      "\\(x < 7\\)",
+      "\\(x > 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 5 from both sides: \\(8x > 56\\)\n\nDivide both sides by 8 (a positive number, so the inequality sign does not change):\n\n\\(x > 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x - 4 > 59\\).",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(9x > 63\\)\n\n\\(x > 7\\)\n\nThe smallest integer strictly greater than 7 is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x + 1 < 7\\).",
+    "options": [
+      "\\(x > 3\\)",
+      "\\(x > -3\\)",
+      "\\(x < 3\\)",
+      "\\(x < -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1: \\(-2x < 6\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3x - 3 \\geq 0\\).",
+    "options": [
+      "\\(x \\geq 1\\)",
+      "\\(x \\geq -1\\)",
+      "\\(x \\geq 2\\)",
+      "\\(x \\leq 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 3 from both sides: \\(3x \\geq 3\\)\n\nDivide both sides by 3 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(9x + 2 > -25\\).",
+    "options": [
+      "-1",
+      "-2",
+      "-3",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(9x > -27\\)\n\n\\(x > -3\\)\n\nThe smallest integer strictly greater than -3 is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8x - 12 > -76\\).",
+    "options": [
+      "\\(x > 8\\)",
+      "\\(x < -8\\)",
+      "\\(x < 8\\)",
+      "\\(x > -8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 12: \\(-8x > -64\\)\n\nDivide both sides by -8. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 5 < 61\\).",
+    "options": [
+      "\\(x < -8\\)",
+      "\\(x > 8\\)",
+      "\\(x < 8\\)",
+      "\\(x > -8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 5: \\(-7x < 56\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(8x - 10 > -58\\).",
+    "options": [
+      "-7",
+      "-4",
+      "-5",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8x > -48\\)\n\n\\(x > -6\\)\n\nThe smallest integer strictly greater than -6 is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-6x + 3 > -51\\).",
+    "options": [
+      "\\(x > -9\\)",
+      "\\(x < -9\\)",
+      "\\(x > 9\\)",
+      "\\(x < 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 3: \\(-6x > -54\\)\n\nDivide both sides by -6. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(11x + 6 \\geq 50\\).",
+    "options": [
+      "\\(x \\geq 4\\)",
+      "\\(x \\leq 4\\)",
+      "\\(x \\geq 5\\)",
+      "\\(x \\geq -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 6 from both sides: \\(11x \\geq 44\\)\n\nDivide both sides by 11 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8 < 2x + 2 < 10\\).",
+    "options": [
+      "\\(4 < x < -5\\)",
+      "\\(-5 < x < 4\\)",
+      "\\(-6 < x < 5\\)",
+      "\\(-5 \\leq x \\leq 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 2 throughout: \\(-10 < 2x < 8\\)\n\nDivide throughout by 2: \\(-5 < x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-25 < 6x - 1 < 29\\).",
+    "options": [
+      "\\(-4 < x < 5\\)",
+      "\\(5 < x < -4\\)",
+      "\\(-4 \\leq x \\leq 5\\)",
+      "\\(-5 < x < 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 1 throughout: \\(-24 < 6x < 30\\)\n\nDivide throughout by 6: \\(-4 < x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 13 > -21\\).",
+    "options": [
+      "\\(x < -4\\)",
+      "\\(x > -3\\)",
+      "\\(x > 4\\)",
+      "\\(x > -4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 13 from both sides: \\(2x > -8\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x > -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x + 1 > -2\\).",
+    "options": [
+      "\\(x > -1\\)",
+      "\\(x < 1\\)",
+      "\\(x < -1\\)",
+      "\\(x > 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 1: \\(-3x > -3\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7 < 5x - 8 < 22\\).",
+    "options": [
+      "\\(6 < x < 3\\)",
+      "\\(3 < x < 6\\)",
+      "\\(2 < x < 7\\)",
+      "\\(3 \\leq x \\leq 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 8 throughout: \\(15 < 5x < 30\\)\n\nDivide throughout by 5: \\(3 < x < 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(7x + 8 > 92\\).",
+    "options": [
+      "14",
+      "12",
+      "13",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(7x > 84\\)\n\n\\(x > 12\\)\n\nThe smallest integer strictly greater than 12 is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(14 < 5x - 1 < 39\\).",
+    "options": [
+      "\\(3 \\leq x \\leq 8\\)",
+      "\\(3 < x < 8\\)",
+      "\\(2 < x < 9\\)",
+      "\\(8 < x < 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 1 throughout: \\(15 < 5x < 40\\)\n\nDivide throughout by 5: \\(3 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x + 6 > -2\\).",
+    "options": [
+      "\\(x > -4\\)",
+      "\\(x < 4\\)",
+      "\\(x < -4\\)",
+      "\\(x > 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 6: \\(-2x > -8\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 4 > -12\\).",
+    "options": [
+      "\\(x < -4\\)",
+      "\\(x > 4\\)",
+      "\\(x > -4\\)",
+      "\\(x < 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 4: \\(-2x > -8\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(7 < 2x + 7 < 23\\).",
+    "options": [
+      "\\(0 < x < 8\\)",
+      "\\(8 < x < 0\\)",
+      "\\(0 \\leq x \\leq 8\\)",
+      "\\(-1 < x < 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 7 throughout: \\(0 < 2x < 16\\)\n\nDivide throughout by 2: \\(0 < x < 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(6x + 3 \\geq -15\\).",
+    "options": [
+      "\\(x \\geq -2\\)",
+      "\\(x \\geq -3\\)",
+      "\\(x \\geq 3\\)",
+      "\\(x \\leq -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 3 from both sides: \\(6x \\geq -18\\)\n\nDivide both sides by 6 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(10x + 4 > 104\\).",
+    "options": [
+      "\\(x > -10\\)",
+      "\\(x > 10\\)",
+      "\\(x < 10\\)",
+      "\\(x > 11\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 4 from both sides: \\(10x > 100\\)\n\nDivide both sides by 10 (a positive number, so the inequality sign does not change):\n\n\\(x > 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8x + 9 < -39\\).",
+    "options": [
+      "\\(x < 6\\)",
+      "\\(x > 6\\)",
+      "\\(x < -6\\)",
+      "\\(x > -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 9: \\(-8x < -48\\)\n\nDivide both sides by -8. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-44 < 6x - 2 < 4\\).",
+    "options": [
+      "\\(-8 < x < 2\\)",
+      "\\(-7 \\leq x \\leq 1\\)",
+      "\\(1 < x < -7\\)",
+      "\\(-7 < x < 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 2 throughout: \\(-42 < 6x < 6\\)\n\nDivide throughout by 6: \\(-7 < x < 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-3x + 12 > 30\\).",
+    "options": [
+      "\\(x < 6\\)",
+      "\\(x > -6\\)",
+      "\\(x > 6\\)",
+      "\\(x < -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 12: \\(-3x > 18\\)\n\nDivide both sides by -3. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-9x + 4 > 49\\).",
+    "options": [
+      "\\(x < -5\\)",
+      "\\(x < 5\\)",
+      "\\(x > -5\\)",
+      "\\(x > 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 4: \\(-9x > 45\\)\n\nDivide both sides by -9. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the least integer value of \\(x\\) that satisfies \\(2x + 12 > 26\\).",
+    "options": [
+      "6",
+      "8",
+      "7",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2x > 14\\)\n\n\\(x > 7\\)\n\nThe smallest integer strictly greater than 7 is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(9x - 12 \\geq -30\\).",
+    "options": [
+      "\\(x \\geq 2\\)",
+      "\\(x \\leq -2\\)",
+      "\\(x \\geq -1\\)",
+      "\\(x \\geq -2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 12 from both sides: \\(9x \\geq -18\\)\n\nDivide both sides by 9 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-4x + 4 < 0\\).",
+    "options": [
+      "\\(x < 1\\)",
+      "\\(x > 1\\)",
+      "\\(x < -1\\)",
+      "\\(x > -1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 4: \\(-4x < -4\\)\n\nDivide both sides by -4. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(4x - 3 \\leq 37\\).",
+    "options": [
+      "\\(x \\leq 10\\)",
+      "\\(x \\leq 11\\)",
+      "\\(x \\leq -10\\)",
+      "\\(x \\geq 10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 3 from both sides: \\(4x \\leq 40\\)\n\nDivide both sides by 4 (a positive number, so the inequality sign does not change):\n\n\\(x \\leq 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-19 < 4x - 7 < 13\\).",
+    "options": [
+      "\\(5 < x < -3\\)",
+      "\\(-3 \\leq x \\leq 5\\)",
+      "\\(-4 < x < 6\\)",
+      "\\(-3 < x < 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 7 throughout: \\(-12 < 4x < 20\\)\n\nDivide throughout by 4: \\(-3 < x < 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-7x + 8 < 1\\).",
+    "options": [
+      "\\(x < -1\\)",
+      "\\(x < 1\\)",
+      "\\(x > -1\\)",
+      "\\(x > 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 8: \\(-7x < -7\\)\n\nDivide both sides by -7. Dividing by a negative number reverses the inequality sign.\n\n\\(x > 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(3x + 8 < 17\\).",
+    "options": [
+      "\\(x < 3\\)",
+      "\\(x < 4\\)",
+      "\\(x < -3\\)",
+      "\\(x > 3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 8 from both sides: \\(3x < 9\\)\n\nDivide both sides by 3 (a positive number, so the inequality sign does not change):\n\n\\(x < 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(2x - 8 \\geq -6\\).",
+    "options": [
+      "\\(x \\geq 1\\)",
+      "\\(x \\leq 1\\)",
+      "\\(x \\geq 2\\)",
+      "\\(x \\geq -1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 8 from both sides: \\(2x \\geq 2\\)\n\nDivide both sides by 2 (a positive number, so the inequality sign does not change):\n\n\\(x \\geq 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-8x - 6 < 10\\).",
+    "options": [
+      "\\(x < -2\\)",
+      "\\(x < 2\\)",
+      "\\(x > 2\\)",
+      "\\(x > -2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 6: \\(-8x < 16\\)\n\nDivide both sides by -8. Dividing by a negative number reverses the inequality sign.\n\n\\(x > -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the inequality \\(-2x - 2 > 0\\).",
+    "options": [
+      "\\(x > 1\\)",
+      "\\(x > -1\\)",
+      "\\(x < -1\\)",
+      "\\(x < 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add 2: \\(-2x > 2\\)\n\nDivide both sides by -2. Dividing by a negative number reverses the inequality sign.\n\n\\(x < -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "dnPh1mcTNe4ITUFxL6Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

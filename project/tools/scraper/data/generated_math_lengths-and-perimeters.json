@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 10cm.",
+    "options": [
+      "14cm",
+      "40cm",
+      "20cm",
+      "80cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 10 = 40\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1925cm",
+      "110cm",
+      "55cm",
+      "220cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{180}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 110\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 42cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "528cm",
+      "264cm",
+      "5544cm",
+      "132cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 42 = 264\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 22cm and width 24cm.",
+    "options": [
+      "528cm",
+      "46cm",
+      "92cm",
+      "1056cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(22 + 24) = 2 \\times 46 = 92\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 308cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "98cm",
+      "49cm",
+      "24.50cm",
+      "154cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(308 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(308 = \\frac{44r}{7}\\)\n\n\\(r = 49\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 36cm and width 24cm.",
+    "options": [
+      "864cm",
+      "60cm",
+      "1728cm",
+      "120cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(36 + 24) = 2 \\times 60 = 120\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 264cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "132cm",
+      "42cm",
+      "84cm",
+      "21cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(264 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(264 = \\frac{44r}{7}\\)\n\n\\(r = 42\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 18cm, 27cm and 22cm.",
+    "options": [
+      "67cm",
+      "33.50cm",
+      "10692cm",
+      "243cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 18 + 27 + 22 = 67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 19cm and width 20cm.",
+    "options": [
+      "380cm",
+      "78cm",
+      "760cm",
+      "39cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(19 + 20) = 2 \\times 39 = 78\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 26cm, 23cm and 8cm.",
+    "options": [
+      "4784cm",
+      "299cm",
+      "28.50cm",
+      "57cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 26 + 23 + 8 = 57\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 8cm, 19cm and 26cm.",
+    "options": [
+      "26.50cm",
+      "53cm",
+      "76cm",
+      "3952cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 8 + 19 + 26 = 53\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 8 sides, each of length 28cm.",
+    "options": [
+      "112cm",
+      "224cm",
+      "36cm",
+      "168cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 8 \\times 28 = 224\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 44cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm",
+      "7cm",
+      "14cm",
+      "3.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(44 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(44 = \\frac{44r}{7}\\)\n\n\\(r = 7\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 7cm.",
+    "options": [
+      "10cm",
+      "10.50cm",
+      "7cm",
+      "21cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 7 = 21\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 5cm.",
+    "options": [
+      "10cm",
+      "40cm",
+      "20cm",
+      "9cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 5 = 20\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a semicircle of radius 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "66cm",
+      "108cm",
+      "693cm",
+      "132cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "The perimeter of a semicircle is the curved part plus the diameter.\n\nCurved part \\(= \\pi r = \\frac{22}{7} \\times 21 = 66\\) cm\n\nDiameter \\(= 2 \\times 21 = 42\\) cm\n\nPerimeter \\(= 66 + 42 = 108\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 132cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "21cm",
+      "42cm",
+      "10.50cm",
+      "66cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(132 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(132 = \\frac{44r}{7}\\)\n\n\\(r = 21\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 23cm, 26cm and 12cm.",
+    "options": [
+      "299cm",
+      "7176cm",
+      "61cm",
+      "30.50cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 23 + 26 + 12 = 61\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 135° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "99cm",
+      "132cm",
+      "519.75cm",
+      "49.50cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{135}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 49.50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a semicircle of radius 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm",
+      "44cm",
+      "77cm",
+      "36cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "The perimeter of a semicircle is the curved part plus the diameter.\n\nCurved part \\(= \\pi r = \\frac{22}{7} \\times 7 = 22\\) cm\n\nDiameter \\(= 2 \\times 7 = 14\\) cm\n\nPerimeter \\(= 22 + 14 = 36\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 33cm and width 30cm.",
+    "options": [
+      "1980cm",
+      "990cm",
+      "63cm",
+      "126cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(33 + 30) = 2 \\times 63 = 126\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 19cm, 14cm and 24cm.",
+    "options": [
+      "57cm",
+      "133cm",
+      "6384cm",
+      "28.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 19 + 14 + 24 = 57\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "154cm",
+      "44cm",
+      "22cm",
+      "88cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 = 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 176cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm",
+      "56cm",
+      "28cm",
+      "14cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(176 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(176 = \\frac{44r}{7}\\)\n\n\\(r = 28\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a semicircle of radius 35cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "220cm",
+      "1925cm",
+      "110cm",
+      "180cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "The perimeter of a semicircle is the curved part plus the diameter.\n\nCurved part \\(= \\pi r = \\frac{22}{7} \\times 35 = 110\\) cm\n\nDiameter \\(= 2 \\times 35 = 70\\) cm\n\nPerimeter \\(= 110 + 70 = 180\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 135° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "66cm",
+      "132cm",
+      "924cm",
+      "176cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{135}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7.33cm",
+      "44cm",
+      "25.67cm",
+      "14.67cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 7.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 36cm and width 26cm.",
+    "options": [
+      "62cm",
+      "936cm",
+      "1872cm",
+      "124cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(36 + 26) = 2 \\times 62 = 124\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 9cm and width 34cm.",
+    "options": [
+      "43cm",
+      "86cm",
+      "612cm",
+      "306cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(9 + 34) = 2 \\times 43 = 86\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 20cm.",
+    "options": [
+      "180cm",
+      "110cm",
+      "220cm",
+      "31cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 20 = 220\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7.33cm",
+      "88cm",
+      "14.67cm",
+      "51.33cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{30}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 7.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 352cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "112cm",
+      "56cm",
+      "28cm",
+      "176cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(352 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(352 = \\frac{44r}{7}\\)\n\n\\(r = 56\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 135° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1443.75cm",
+      "165cm",
+      "220cm",
+      "82.50cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{135}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 82.50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm",
+      "88cm",
+      "44cm",
+      "616cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{90}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 9cm.",
+    "options": [
+      "54cm",
+      "21cm",
+      "108cm",
+      "90cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 9 = 108\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a semicircle of radius 28cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "144cm",
+      "88cm",
+      "176cm",
+      "1232cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The perimeter of a semicircle is the curved part plus the diameter.\n\nCurved part \\(= \\pi r = \\frac{22}{7} \\times 28 = 88\\) cm\n\nDiameter \\(= 2 \\times 28 = 56\\) cm\n\nPerimeter \\(= 88 + 56 = 144\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 4cm.",
+    "options": [
+      "28cm",
+      "36cm",
+      "18cm",
+      "13cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 4 = 36\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "173.25cm",
+      "16.50cm",
+      "33cm",
+      "132cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{45}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 16.50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 16cm and width 23cm.",
+    "options": [
+      "78cm",
+      "736cm",
+      "368cm",
+      "39cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(16 + 23) = 2 \\times 39 = 78\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 18cm, 28cm and 23cm.",
+    "options": [
+      "69cm",
+      "252cm",
+      "11592cm",
+      "34.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 18 + 28 + 23 = 69\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 15cm.",
+    "options": [
+      "150cm",
+      "90cm",
+      "27cm",
+      "180cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 15 = 180\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 28cm, 25cm and 7cm.",
+    "options": [
+      "30cm",
+      "4900cm",
+      "350cm",
+      "60cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 28 + 25 + 7 = 60\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 24cm, 21cm and 22cm.",
+    "options": [
+      "33.50cm",
+      "252cm",
+      "11088cm",
+      "67cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 24 + 21 + 22 = 67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm",
+      "38.50cm",
+      "44cm",
+      "11cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{90}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 11\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 12cm, 22cm and 15cm.",
+    "options": [
+      "49cm",
+      "132cm",
+      "24.50cm",
+      "3960cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 12 + 22 + 15 = 49\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 17cm, 26cm and 18cm.",
+    "options": [
+      "30.50cm",
+      "221cm",
+      "7956cm",
+      "61cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 17 + 26 + 18 = 61\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "264cm",
+      "66cm",
+      "1386cm",
+      "132cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 = 132\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 26cm, 18cm and 10cm.",
+    "options": [
+      "234cm",
+      "4680cm",
+      "27cm",
+      "54cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 26 + 18 + 10 = 54\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 35cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "440cm",
+      "110cm",
+      "3850cm",
+      "220cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 35 = 220\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 29cm.",
+    "options": [
+      "232cm",
+      "39cm",
+      "145cm",
+      "290cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 29 = 290\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 39cm and width 27cm.",
+    "options": [
+      "66cm",
+      "132cm",
+      "1053cm",
+      "2106cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(39 + 27) = 2 \\times 66 = 132\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a semicircle of radius 14cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "308cm",
+      "88cm",
+      "44cm",
+      "72cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "The perimeter of a semicircle is the curved part plus the diameter.\n\nCurved part \\(= \\pi r = \\frac{22}{7} \\times 14 = 44\\) cm\n\nDiameter \\(= 2 \\times 14 = 28\\) cm\n\nPerimeter \\(= 44 + 28 = 72\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "11cm",
+      "22cm",
+      "132cm",
+      "115.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{30}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 11\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 13cm, 5cm and 10cm.",
+    "options": [
+      "32.50cm",
+      "28cm",
+      "650cm",
+      "14cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 13 + 5 + 10 = 28\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm",
+      "44cm",
+      "22cm",
+      "308cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{45}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 22\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 135° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm",
+      "33cm",
+      "66cm",
+      "231cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{135}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 27cm and width 32cm.",
+    "options": [
+      "1728cm",
+      "864cm",
+      "59cm",
+      "118cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(27 + 32) = 2 \\times 59 = 118\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 10cm, 5cm and 10cm.",
+    "options": [
+      "500cm",
+      "30cm",
+      "25cm",
+      "12.50cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 10 + 5 + 10 = 25\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "165cm",
+      "220cm",
+      "330cm",
+      "2887.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{270}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 165\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 19cm.",
+    "options": [
+      "28.50cm",
+      "57cm",
+      "22cm",
+      "19cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 19 = 57\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 25cm.",
+    "options": [
+      "275cm",
+      "225cm",
+      "137.50cm",
+      "36cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 25 = 275\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 17cm and width 20cm.",
+    "options": [
+      "340cm",
+      "37cm",
+      "74cm",
+      "680cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(17 + 20) = 2 \\times 37 = 74\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 220cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "110cm",
+      "70cm",
+      "17.50cm",
+      "35cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(220 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(220 = \\frac{44r}{7}\\)\n\n\\(r = 35\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 56cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "352cm",
+      "9856cm",
+      "176cm",
+      "704cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 56 = 352\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 7cm.",
+    "options": [
+      "84cm",
+      "42cm",
+      "19cm",
+      "70cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 7 = 84\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "73.33cm",
+      "36.67cm",
+      "641.67cm",
+      "220cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 36.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 26cm, 14cm and 13cm.",
+    "options": [
+      "26.50cm",
+      "4732cm",
+      "53cm",
+      "182cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 26 + 14 + 13 = 53\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 19cm, 11cm and 11cm.",
+    "options": [
+      "20.50cm",
+      "41cm",
+      "2299cm",
+      "104.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 19 + 11 + 11 = 41\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 30cm and width 4cm.",
+    "options": [
+      "34cm",
+      "120cm",
+      "68cm",
+      "240cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(30 + 4) = 2 \\times 34 = 68\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "183.33cm",
+      "1604.17cm",
+      "220cm",
+      "91.67cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{150}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 91.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 25cm and width 33cm.",
+    "options": [
+      "1650cm",
+      "825cm",
+      "116cm",
+      "58cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(25 + 33) = 2 \\times 58 = 116\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 13cm, 15cm and 10cm.",
+    "options": [
+      "97.50cm",
+      "1950cm",
+      "19cm",
+      "38cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 13 + 15 + 10 = 38\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 22cm.",
+    "options": [
+      "66cm",
+      "484cm",
+      "242cm",
+      "33cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 22) = 2 \\times 33 = 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 13cm.",
+    "options": [
+      "65cm",
+      "130cm",
+      "23cm",
+      "104cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 13 = 130\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 30cm, 15cm and 18cm.",
+    "options": [
+      "63cm",
+      "225cm",
+      "8100cm",
+      "31.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 30 + 15 + 18 = 63\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 37cm and width 9cm.",
+    "options": [
+      "666cm",
+      "92cm",
+      "333cm",
+      "46cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(37 + 9) = 2 \\times 46 = 92\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 26cm, 20cm and 17cm.",
+    "options": [
+      "63cm",
+      "8840cm",
+      "31.50cm",
+      "260cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 26 + 20 + 17 = 63\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 16cm.",
+    "options": [
+      "160cm",
+      "96cm",
+      "28cm",
+      "192cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 16 = 192\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 26cm and width 17cm.",
+    "options": [
+      "442cm",
+      "43cm",
+      "86cm",
+      "884cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(26 + 17) = 2 \\times 43 = 86\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm",
+      "58.67cm",
+      "410.67cm",
+      "29.33cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 29.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 6 sides, each of length 3cm.",
+    "options": [
+      "18cm",
+      "12cm",
+      "9cm",
+      "36cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 6 \\times 3 = 18\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 27cm.",
+    "options": [
+      "270cm",
+      "324cm",
+      "39cm",
+      "162cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 27 = 324\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "256.67cm",
+      "73.33cm",
+      "88cm",
+      "36.67cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{150}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 36.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 24cm.",
+    "options": [
+      "288cm",
+      "36cm",
+      "240cm",
+      "144cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 24 = 288\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "110cm",
+      "962.50cm",
+      "55cm",
+      "220cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{90}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 55\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 18cm, 29cm and 25cm.",
+    "options": [
+      "36cm",
+      "72cm",
+      "261cm",
+      "13050cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 18 + 29 + 25 = 72\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 10cm and width 15cm.",
+    "options": [
+      "25cm",
+      "300cm",
+      "50cm",
+      "150cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(10 + 15) = 2 \\times 25 = 50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 17cm.",
+    "options": [
+      "153cm",
+      "187cm",
+      "28cm",
+      "93.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 17 = 187\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 15cm, 14cm and 4cm.",
+    "options": [
+      "33cm",
+      "840cm",
+      "16.50cm",
+      "105cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 15 + 14 + 4 = 33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 33cm and width 13cm.",
+    "options": [
+      "46cm",
+      "92cm",
+      "429cm",
+      "858cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(33 + 13) = 2 \\times 46 = 92\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 19cm and width 10cm.",
+    "options": [
+      "380cm",
+      "58cm",
+      "190cm",
+      "29cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(19 + 10) = 2 \\times 29 = 58\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 9cm.",
+    "options": [
+      "72cm",
+      "90cm",
+      "45cm",
+      "19cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 9 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 3cm.",
+    "options": [
+      "36cm",
+      "18cm",
+      "15cm",
+      "30cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 3 = 36\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1283.33cm",
+      "73.33cm",
+      "220cm",
+      "146.67cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{120}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 73.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm",
+      "88cm",
+      "44cm",
+      "154cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{90}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 22\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 14cm.",
+    "options": [
+      "21cm",
+      "42cm",
+      "17cm",
+      "14cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 14 = 42\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "44cm",
+      "12.83cm",
+      "7.33cm",
+      "3.67cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{30}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 3.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 13cm and width 30cm.",
+    "options": [
+      "86cm",
+      "390cm",
+      "780cm",
+      "43cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(13 + 30) = 2 \\times 43 = 86\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 11cm.",
+    "options": [
+      "88cm",
+      "55cm",
+      "21cm",
+      "110cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 11 = 110\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "33cm",
+      "44cm",
+      "115.50cm",
+      "66cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{270}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm",
+      "132cm",
+      "44cm",
+      "231cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 22\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 49cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm",
+      "7546cm",
+      "308cm",
+      "154cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 49 = 308\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 4cm and width 21cm.",
+    "options": [
+      "25cm",
+      "50cm",
+      "168cm",
+      "84cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(4 + 21) = 2 \\times 25 = 50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "29.33cm",
+      "88cm",
+      "14.67cm",
+      "102.67cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 14.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 21cm, 18cm and 8cm.",
+    "options": [
+      "23.50cm",
+      "189cm",
+      "3024cm",
+      "47cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 21 + 18 + 8 = 47\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 32cm and width 20cm.",
+    "options": [
+      "640cm",
+      "1280cm",
+      "104cm",
+      "52cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(32 + 20) = 2 \\times 52 = 104\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 28cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "352cm",
+      "2464cm",
+      "88cm",
+      "176cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 = 176\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 10cm, 9cm and 14cm.",
+    "options": [
+      "45cm",
+      "16.50cm",
+      "33cm",
+      "1260cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 10 + 9 + 14 = 33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The circumference of a circle is 88cm. Find its radius. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7cm",
+      "14cm",
+      "28cm",
+      "44cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(C = 2\\pi r\\)\n\n\\(88 = 2 \\times \\frac{22}{7} \\times r\\)\n\n\\(88 = \\frac{44r}{7}\\)\n\n\\(r = 14\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 10cm, 20cm and 29cm.",
+    "options": [
+      "100cm",
+      "59cm",
+      "29.50cm",
+      "5800cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 10 + 20 + 29 = 59\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 20cm, 11cm and 24cm.",
+    "options": [
+      "110cm",
+      "27.50cm",
+      "5280cm",
+      "55cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 20 + 11 + 24 = 55\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 18cm.",
+    "options": [
+      "216cm",
+      "180cm",
+      "108cm",
+      "30cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 18 = 216\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "577.50cm",
+      "55cm",
+      "132cm",
+      "110cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{150}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 55\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 22cm.",
+    "options": [
+      "55cm",
+      "110cm",
+      "66cm",
+      "27cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 22 = 110\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 19cm and width 4cm.",
+    "options": [
+      "152cm",
+      "23cm",
+      "76cm",
+      "46cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(19 + 4) = 2 \\times 23 = 46\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 20cm and width 5cm.",
+    "options": [
+      "100cm",
+      "25cm",
+      "50cm",
+      "200cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(20 + 5) = 2 \\times 25 = 50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "44cm",
+      "29.33cm",
+      "14.67cm",
+      "51.33cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{120}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 14.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 7cm.",
+    "options": [
+      "14cm",
+      "28cm",
+      "11cm",
+      "56cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 7 = 28\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the circumference of a circle of radius 14cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm",
+      "616cm",
+      "44cm",
+      "88cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Circumference \\(= 2\\pi r\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 = 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 8 sides, each of length 30cm.",
+    "options": [
+      "120cm",
+      "38cm",
+      "180cm",
+      "240cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 8 \\times 30 = 240\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 16cm, 19cm and 11cm.",
+    "options": [
+      "46cm",
+      "152cm",
+      "3344cm",
+      "23cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 16 + 19 + 11 = 46\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 23cm, 5cm and 27cm.",
+    "options": [
+      "57.50cm",
+      "55cm",
+      "3105cm",
+      "27.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 23 + 5 + 27 = 55\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 27cm, 13cm and 29cm.",
+    "options": [
+      "34.50cm",
+      "175.50cm",
+      "69cm",
+      "10179cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 27 + 13 + 29 = 69\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 22cm, 20cm and 26cm.",
+    "options": [
+      "34cm",
+      "220cm",
+      "11440cm",
+      "68cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 22 + 20 + 26 = 68\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 22cm and width 32cm.",
+    "options": [
+      "54cm",
+      "704cm",
+      "1408cm",
+      "108cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(22 + 32) = 2 \\times 54 = 108\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 22cm and width 26cm.",
+    "options": [
+      "572cm",
+      "48cm",
+      "96cm",
+      "1144cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(22 + 26) = 2 \\times 48 = 96\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm",
+      "132cm",
+      "462cm",
+      "66cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{270}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 21cm and width 13cm.",
+    "options": [
+      "273cm",
+      "34cm",
+      "68cm",
+      "546cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(21 + 13) = 2 \\times 34 = 68\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 8 sides, each of length 12cm.",
+    "options": [
+      "72cm",
+      "20cm",
+      "48cm",
+      "96cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 8 \\times 12 = 96\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 20cm and width 28cm.",
+    "options": [
+      "560cm",
+      "1120cm",
+      "48cm",
+      "96cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(20 + 28) = 2 \\times 48 = 96\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 20cm.",
+    "options": [
+      "220cm",
+      "62cm",
+      "440cm",
+      "31cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 20) = 2 \\times 31 = 62\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 19cm, 10cm and 26cm.",
+    "options": [
+      "55cm",
+      "95cm",
+      "4940cm",
+      "27.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 19 + 10 + 26 = 55\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 13cm, 16cm and 23cm.",
+    "options": [
+      "52cm",
+      "4784cm",
+      "26cm",
+      "104cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 13 + 16 + 23 = 52\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 27cm and width 24cm.",
+    "options": [
+      "51cm",
+      "1296cm",
+      "102cm",
+      "648cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(27 + 24) = 2 \\times 51 = 102\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 23cm.",
+    "options": [
+      "26cm",
+      "34.50cm",
+      "23cm",
+      "69cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 23 = 69\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 24cm.",
+    "options": [
+      "216cm",
+      "33cm",
+      "108cm",
+      "168cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 24 = 216\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 29cm and width 33cm.",
+    "options": [
+      "62cm",
+      "957cm",
+      "124cm",
+      "1914cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(29 + 33) = 2 \\times 62 = 124\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 28cm and width 34cm.",
+    "options": [
+      "62cm",
+      "1904cm",
+      "952cm",
+      "124cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(28 + 34) = 2 \\times 62 = 124\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm",
+      "205.33cm",
+      "29.33cm",
+      "14.67cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{30}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 14.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 8cm, 7cm and 9cm.",
+    "options": [
+      "12cm",
+      "24cm",
+      "504cm",
+      "28cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 8 + 7 + 9 = 24\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 8 sides, each of length 18cm.",
+    "options": [
+      "144cm",
+      "26cm",
+      "108cm",
+      "72cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 8 \\times 18 = 144\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "11cm",
+      "77cm",
+      "44cm",
+      "22cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{180}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 22\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 20cm, 16cm and 29cm.",
+    "options": [
+      "32.50cm",
+      "160cm",
+      "9280cm",
+      "65cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 20 + 16 + 29 = 65\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 17cm and width 28cm.",
+    "options": [
+      "45cm",
+      "90cm",
+      "952cm",
+      "476cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(17 + 28) = 2 \\times 45 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 24cm and width 21cm.",
+    "options": [
+      "45cm",
+      "1008cm",
+      "504cm",
+      "90cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(24 + 21) = 2 \\times 45 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 12cm.",
+    "options": [
+      "36cm",
+      "18cm",
+      "12cm",
+      "15cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 12 = 36\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 17cm and width 27cm.",
+    "options": [
+      "918cm",
+      "459cm",
+      "44cm",
+      "88cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(17 + 27) = 2 \\times 44 = 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 29cm and width 30cm.",
+    "options": [
+      "870cm",
+      "1740cm",
+      "118cm",
+      "59cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(29 + 30) = 2 \\times 59 = 118\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 29cm, 11cm and 22cm.",
+    "options": [
+      "159.50cm",
+      "62cm",
+      "31cm",
+      "7018cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 29 + 11 + 22 = 62\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 30cm.",
+    "options": [
+      "30cm",
+      "45cm",
+      "33cm",
+      "90cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 30 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 30cm.",
+    "options": [
+      "41cm",
+      "330cm",
+      "82cm",
+      "660cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 30) = 2 \\times 41 = 82\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 7 sides, each of length 4cm.",
+    "options": [
+      "11cm",
+      "14cm",
+      "20cm",
+      "28cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 7 \\times 4 = 28\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 8cm, 15cm and 12cm.",
+    "options": [
+      "17.50cm",
+      "60cm",
+      "35cm",
+      "1440cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 8 + 15 + 12 = 35\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 33cm and width 9cm.",
+    "options": [
+      "42cm",
+      "297cm",
+      "84cm",
+      "594cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(33 + 9) = 2 \\times 42 = 84\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 8 sides, each of length 25cm.",
+    "options": [
+      "100cm",
+      "150cm",
+      "33cm",
+      "200cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 8 \\times 25 = 200\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "462cm",
+      "44cm",
+      "132cm",
+      "88cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{120}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 14cm.",
+    "options": [
+      "126cm",
+      "23cm",
+      "63cm",
+      "98cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 14 = 126\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 39cm and width 5cm.",
+    "options": [
+      "195cm",
+      "88cm",
+      "390cm",
+      "44cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(39 + 5) = 2 \\times 44 = 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 10cm, 10cm and 15cm.",
+    "options": [
+      "1500cm",
+      "35cm",
+      "17.50cm",
+      "50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 10 + 10 + 15 = 35\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 28cm and width 24cm.",
+    "options": [
+      "52cm",
+      "1344cm",
+      "672cm",
+      "104cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(28 + 24) = 2 \\times 52 = 104\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 20cm.",
+    "options": [
+      "40cm",
+      "160cm",
+      "24cm",
+      "80cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 20 = 80\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 11cm, 25cm and 25cm.",
+    "options": [
+      "6875cm",
+      "61cm",
+      "137.50cm",
+      "30.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 11 + 25 + 25 = 61\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 30cm and width 28cm.",
+    "options": [
+      "840cm",
+      "58cm",
+      "116cm",
+      "1680cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(30 + 28) = 2 \\times 58 = 116\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 9cm and width 14cm.",
+    "options": [
+      "126cm",
+      "46cm",
+      "23cm",
+      "252cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(9 + 14) = 2 \\times 23 = 46\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 17cm, 14cm and 15cm.",
+    "options": [
+      "3570cm",
+      "23cm",
+      "119cm",
+      "46cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 17 + 14 + 15 = 46\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 17cm.",
+    "options": [
+      "85cm",
+      "22cm",
+      "42.50cm",
+      "51cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 17 = 85\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 12cm.",
+    "options": [
+      "60cm",
+      "30cm",
+      "36cm",
+      "17cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 12 = 60\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 4cm.",
+    "options": [
+      "20cm",
+      "14cm",
+      "40cm",
+      "32cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 4 = 40\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "18.33cm",
+      "64.17cm",
+      "44cm",
+      "36.67cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{150}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 18.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 14cm.",
+    "options": [
+      "24cm",
+      "112cm",
+      "140cm",
+      "70cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 14 = 140\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 24cm, 25cm and 18cm.",
+    "options": [
+      "300cm",
+      "67cm",
+      "10800cm",
+      "33.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 24 + 25 + 18 = 67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 23cm.",
+    "options": [
+      "253cm",
+      "34cm",
+      "126.50cm",
+      "207cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 23 = 253\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 11cm, 26cm and 17cm.",
+    "options": [
+      "4862cm",
+      "54cm",
+      "27cm",
+      "143cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 11 + 26 + 17 = 54\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 19cm.",
+    "options": [
+      "38cm",
+      "76cm",
+      "23cm",
+      "152cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 19 = 76\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 40cm and width 30cm.",
+    "options": [
+      "70cm",
+      "1200cm",
+      "140cm",
+      "2400cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(40 + 30) = 2 \\times 70 = 140\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 10cm.",
+    "options": [
+      "50cm",
+      "25cm",
+      "15cm",
+      "30cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 10 = 50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 31cm and width 20cm.",
+    "options": [
+      "620cm",
+      "102cm",
+      "1240cm",
+      "51cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(31 + 20) = 2 \\times 51 = 102\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 24cm and width 34cm.",
+    "options": [
+      "58cm",
+      "1632cm",
+      "116cm",
+      "816cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(24 + 34) = 2 \\times 58 = 116\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 38cm and width 10cm.",
+    "options": [
+      "380cm",
+      "48cm",
+      "760cm",
+      "96cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(38 + 10) = 2 \\times 48 = 96\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 15cm and width 28cm.",
+    "options": [
+      "840cm",
+      "420cm",
+      "43cm",
+      "86cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(15 + 28) = 2 \\times 43 = 86\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 13cm.",
+    "options": [
+      "19.50cm",
+      "13cm",
+      "16cm",
+      "39cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 13 = 39\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 4cm, 16cm and 16cm.",
+    "options": [
+      "18cm",
+      "36cm",
+      "1024cm",
+      "32cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 4 + 16 + 16 = 36\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm",
+      "11cm",
+      "22cm",
+      "77cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{45}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 11\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 22cm.",
+    "options": [
+      "242cm",
+      "198cm",
+      "33cm",
+      "121cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 22 = 242\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 30cm and width 14cm.",
+    "options": [
+      "88cm",
+      "420cm",
+      "44cm",
+      "840cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(30 + 14) = 2 \\times 44 = 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 38cm and width 13cm.",
+    "options": [
+      "102cm",
+      "494cm",
+      "988cm",
+      "51cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(38 + 13) = 2 \\times 51 = 102\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 8cm.",
+    "options": [
+      "17cm",
+      "56cm",
+      "72cm",
+      "36cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 8 = 72\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 8cm.",
+    "options": [
+      "64cm",
+      "16cm",
+      "12cm",
+      "32cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 8 = 32\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 30cm and width 31cm.",
+    "options": [
+      "61cm",
+      "1860cm",
+      "122cm",
+      "930cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(30 + 31) = 2 \\times 61 = 122\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 12cm, 5cm and 10cm.",
+    "options": [
+      "600cm",
+      "30cm",
+      "13.50cm",
+      "27cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 12 + 5 + 10 = 27\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 35cm and width 5cm.",
+    "options": [
+      "175cm",
+      "80cm",
+      "350cm",
+      "40cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(35 + 5) = 2 \\times 40 = 80\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "36.67cm",
+      "18.33cm",
+      "320.83cm",
+      "220cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{30}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 18.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1039.50cm",
+      "99cm",
+      "198cm",
+      "132cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{270}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 99\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 9cm, 7cm and 5cm.",
+    "options": [
+      "21cm",
+      "315cm",
+      "10.50cm",
+      "31.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 9 + 7 + 5 = 21\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 20cm and width 35cm.",
+    "options": [
+      "55cm",
+      "1400cm",
+      "700cm",
+      "110cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(20 + 35) = 2 \\times 55 = 110\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 23cm, 13cm and 13cm.",
+    "options": [
+      "24.50cm",
+      "49cm",
+      "3887cm",
+      "149.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 23 + 13 + 13 = 49\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 7 sides, each of length 28cm.",
+    "options": [
+      "98cm",
+      "35cm",
+      "196cm",
+      "140cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 7 \\times 28 = 196\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 29cm, 22cm and 10cm.",
+    "options": [
+      "6380cm",
+      "30.50cm",
+      "319cm",
+      "61cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 29 + 22 + 10 = 61\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 7cm.",
+    "options": [
+      "154cm",
+      "36cm",
+      "77cm",
+      "18cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 7) = 2 \\times 18 = 36\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 7 sides, each of length 7cm.",
+    "options": [
+      "35cm",
+      "24.50cm",
+      "14cm",
+      "49cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 7 \\times 7 = 49\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 25cm.",
+    "options": [
+      "112.50cm",
+      "34cm",
+      "225cm",
+      "175cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 25 = 225\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 16cm.",
+    "options": [
+      "32cm",
+      "128cm",
+      "64cm",
+      "20cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 16 = 64\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 40cm and width 33cm.",
+    "options": [
+      "2640cm",
+      "73cm",
+      "146cm",
+      "1320cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(40 + 33) = 2 \\times 73 = 146\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 22cm, 23cm and 20cm.",
+    "options": [
+      "10120cm",
+      "65cm",
+      "253cm",
+      "32.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 22 + 23 + 20 = 65\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 35cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "55cm",
+      "27.50cm",
+      "481.25cm",
+      "220cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{45}{360} \\times 2 \\times \\frac{22}{7} \\times 35\\)\n\n\\(= 27.50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 27cm and width 8cm.",
+    "options": [
+      "35cm",
+      "432cm",
+      "70cm",
+      "216cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(27 + 8) = 2 \\times 35 = 70\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 14cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "205.33cm",
+      "29.33cm",
+      "58.67cm",
+      "88cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{120}{360} \\times 2 \\times \\frac{22}{7} \\times 14\\)\n\n\\(= 29.33\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "117.33cm",
+      "58.67cm",
+      "821.33cm",
+      "176cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{120}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 58.67\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 9cm and width 23cm.",
+    "options": [
+      "207cm",
+      "32cm",
+      "414cm",
+      "64cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(9 + 23) = 2 \\times 32 = 64\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 40cm and width 11cm.",
+    "options": [
+      "880cm",
+      "51cm",
+      "440cm",
+      "102cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(40 + 11) = 2 \\times 51 = 102\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 5cm and width 23cm.",
+    "options": [
+      "115cm",
+      "56cm",
+      "28cm",
+      "230cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(5 + 23) = 2 \\times 28 = 56\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 17cm and width 16cm.",
+    "options": [
+      "272cm",
+      "544cm",
+      "33cm",
+      "66cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(17 + 16) = 2 \\times 33 = 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 3 sides, each of length 6cm.",
+    "options": [
+      "18cm",
+      "36cm",
+      "6cm",
+      "9cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 3 \\times 6 = 18\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 34cm.",
+    "options": [
+      "748cm",
+      "45cm",
+      "374cm",
+      "90cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 34) = 2 \\times 45 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 25cm and width 7cm.",
+    "options": [
+      "32cm",
+      "175cm",
+      "350cm",
+      "64cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(25 + 7) = 2 \\times 32 = 64\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 18cm and width 3cm.",
+    "options": [
+      "42cm",
+      "21cm",
+      "54cm",
+      "108cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(18 + 3) = 2 \\times 21 = 42\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 28cm.",
+    "options": [
+      "84cm",
+      "70cm",
+      "33cm",
+      "140cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 28 = 140\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 40cm and width 15cm.",
+    "options": [
+      "600cm",
+      "1200cm",
+      "110cm",
+      "55cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(40 + 15) = 2 \\times 55 = 110\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 29cm.",
+    "options": [
+      "174cm",
+      "41cm",
+      "348cm",
+      "290cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 29 = 348\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 6 sides, each of length 19cm.",
+    "options": [
+      "57cm",
+      "76cm",
+      "25cm",
+      "114cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 6 \\times 19 = 114\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1232cm",
+      "44cm",
+      "88cm",
+      "176cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{180}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 28cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1848cm",
+      "132cm",
+      "264cm",
+      "176cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{270}{360} \\times 2 \\times \\frac{22}{7} \\times 28\\)\n\n\\(= 132\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 16cm, 19cm and 5cm.",
+    "options": [
+      "40cm",
+      "152cm",
+      "1520cm",
+      "20cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 16 + 19 + 5 = 40\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 26cm.",
+    "options": [
+      "38cm",
+      "312cm",
+      "156cm",
+      "260cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 26 = 312\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 26cm.",
+    "options": [
+      "35cm",
+      "117cm",
+      "234cm",
+      "182cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 26 = 234\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 6cm.",
+    "options": [
+      "30cm",
+      "15cm",
+      "18cm",
+      "11cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 6 = 30\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 15cm, 6cm and 11cm.",
+    "options": [
+      "16cm",
+      "32cm",
+      "990cm",
+      "45cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 15 + 6 + 11 = 32\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 17cm and width 10cm.",
+    "options": [
+      "340cm",
+      "27cm",
+      "170cm",
+      "54cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(17 + 10) = 2 \\times 27 = 54\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 38cm and width 6cm.",
+    "options": [
+      "88cm",
+      "456cm",
+      "44cm",
+      "228cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(38 + 6) = 2 \\times 44 = 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 8 sides, each of length 4cm.",
+    "options": [
+      "16cm",
+      "32cm",
+      "12cm",
+      "24cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 8 \\times 4 = 32\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 10cm, 12cm and 6cm.",
+    "options": [
+      "28cm",
+      "14cm",
+      "60cm",
+      "720cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 10 + 12 + 6 = 28\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 6cm and width 21cm.",
+    "options": [
+      "54cm",
+      "252cm",
+      "27cm",
+      "126cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(6 + 21) = 2 \\times 27 = 54\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 4cm.",
+    "options": [
+      "44cm",
+      "15cm",
+      "22cm",
+      "36cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 4 = 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 10cm, 20cm and 19cm.",
+    "options": [
+      "24.50cm",
+      "49cm",
+      "100cm",
+      "3800cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 10 + 20 + 19 = 49\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 6 sides, each of length 26cm.",
+    "options": [
+      "156cm",
+      "78cm",
+      "32cm",
+      "104cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 6 \\times 26 = 156\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 36cm and width 16cm.",
+    "options": [
+      "576cm",
+      "1152cm",
+      "52cm",
+      "104cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(36 + 16) = 2 \\times 52 = 104\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 29cm, 29cm and 25cm.",
+    "options": [
+      "420.50cm",
+      "41.50cm",
+      "21025cm",
+      "83cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 29 + 29 + 25 = 83\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 6 sides, each of length 15cm.",
+    "options": [
+      "45cm",
+      "90cm",
+      "60cm",
+      "21cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 6 \\times 15 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 37cm and width 18cm.",
+    "options": [
+      "1332cm",
+      "666cm",
+      "55cm",
+      "110cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(37 + 18) = 2 \\times 55 = 110\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 14cm.",
+    "options": [
+      "50cm",
+      "25cm",
+      "154cm",
+      "308cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 14) = 2 \\times 25 = 50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 28cm, 28cm and 30cm.",
+    "options": [
+      "43cm",
+      "86cm",
+      "392cm",
+      "23520cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 28 + 28 + 30 = 86\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 6 sides, each of length 11cm.",
+    "options": [
+      "44cm",
+      "66cm",
+      "17cm",
+      "33cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 6 \\times 11 = 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 26cm and width 24cm.",
+    "options": [
+      "624cm",
+      "100cm",
+      "1248cm",
+      "50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(26 + 24) = 2 \\times 50 = 100\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 40cm and width 22cm.",
+    "options": [
+      "1760cm",
+      "124cm",
+      "62cm",
+      "880cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(40 + 22) = 2 \\times 62 = 124\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 37cm and width 28cm.",
+    "options": [
+      "130cm",
+      "1036cm",
+      "2072cm",
+      "65cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(37 + 28) = 2 \\times 65 = 130\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 24cm.",
+    "options": [
+      "120cm",
+      "60cm",
+      "29cm",
+      "72cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 24 = 120\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 7cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "44cm",
+      "5.50cm",
+      "19.25cm",
+      "11cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{45}{360} \\times 2 \\times \\frac{22}{7} \\times 7\\)\n\n\\(= 5.50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 21cm, 15cm and 13cm.",
+    "options": [
+      "157.50cm",
+      "49cm",
+      "24.50cm",
+      "4095cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 21 + 15 + 13 = 49\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 7 sides, each of length 16cm.",
+    "options": [
+      "23cm",
+      "112cm",
+      "56cm",
+      "80cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 7 \\times 16 = 112\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 17cm, 18cm and 10cm.",
+    "options": [
+      "153cm",
+      "45cm",
+      "3060cm",
+      "22.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 17 + 18 + 10 = 45\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 16cm and width 6cm.",
+    "options": [
+      "96cm",
+      "192cm",
+      "22cm",
+      "44cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(16 + 6) = 2 \\times 22 = 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 39cm and width 20cm.",
+    "options": [
+      "1560cm",
+      "118cm",
+      "59cm",
+      "780cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(39 + 20) = 2 \\times 59 = 118\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 6cm, 14cm and 11cm.",
+    "options": [
+      "42cm",
+      "31cm",
+      "15.50cm",
+      "924cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 6 + 14 + 11 = 31\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 7cm.",
+    "options": [
+      "35cm",
+      "12cm",
+      "17.50cm",
+      "21cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 7 = 35\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 4 sides, each of length 12cm.",
+    "options": [
+      "24cm",
+      "16cm",
+      "96cm",
+      "48cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 4 \\times 12 = 48\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 9cm and width 24cm.",
+    "options": [
+      "66cm",
+      "216cm",
+      "33cm",
+      "432cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(9 + 24) = 2 \\times 33 = 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 22cm and width 31cm.",
+    "options": [
+      "106cm",
+      "1364cm",
+      "682cm",
+      "53cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(22 + 31) = 2 \\times 53 = 106\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 26cm, 23cm and 17cm.",
+    "options": [
+      "66cm",
+      "33cm",
+      "299cm",
+      "10166cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 26 + 23 + 17 = 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 18cm.",
+    "options": [
+      "99cm",
+      "29cm",
+      "198cm",
+      "162cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 18 = 198\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 29cm and width 7cm.",
+    "options": [
+      "36cm",
+      "203cm",
+      "72cm",
+      "406cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(29 + 7) = 2 \\times 36 = 72\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 21cm, 19cm and 6cm.",
+    "options": [
+      "46cm",
+      "2394cm",
+      "23cm",
+      "199.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 21 + 19 + 6 = 46\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 26cm and width 13cm.",
+    "options": [
+      "78cm",
+      "39cm",
+      "676cm",
+      "338cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(26 + 13) = 2 \\times 39 = 78\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 14cm and width 8cm.",
+    "options": [
+      "22cm",
+      "44cm",
+      "112cm",
+      "224cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(14 + 8) = 2 \\times 22 = 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 9cm and width 35cm.",
+    "options": [
+      "315cm",
+      "44cm",
+      "630cm",
+      "88cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(9 + 35) = 2 \\times 44 = 88\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 38cm and width 25cm.",
+    "options": [
+      "950cm",
+      "126cm",
+      "63cm",
+      "1900cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(38 + 25) = 2 \\times 63 = 126\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 7 sides, each of length 5cm.",
+    "options": [
+      "25cm",
+      "17.50cm",
+      "35cm",
+      "12cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 7 \\times 5 = 35\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 18cm.",
+    "options": [
+      "28cm",
+      "144cm",
+      "90cm",
+      "180cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 18 = 180\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 16cm, 14cm and 11cm.",
+    "options": [
+      "41cm",
+      "2464cm",
+      "112cm",
+      "20.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 16 + 14 + 11 = 41\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 11 sides, each of length 12cm.",
+    "options": [
+      "132cm",
+      "23cm",
+      "108cm",
+      "66cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 11 \\times 12 = 132\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 11cm, 23cm and 18cm.",
+    "options": [
+      "52cm",
+      "26cm",
+      "4554cm",
+      "126.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 11 + 23 + 18 = 52\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 40cm and width 5cm.",
+    "options": [
+      "45cm",
+      "90cm",
+      "200cm",
+      "400cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(40 + 5) = 2 \\times 45 = 90\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 21cm and width 31cm.",
+    "options": [
+      "651cm",
+      "1302cm",
+      "104cm",
+      "52cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(21 + 31) = 2 \\times 52 = 104\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 24cm, 18cm and 30cm.",
+    "options": [
+      "216cm",
+      "72cm",
+      "12960cm",
+      "36cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 24 + 18 + 30 = 72\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 14cm and width 24cm.",
+    "options": [
+      "336cm",
+      "38cm",
+      "672cm",
+      "76cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(14 + 24) = 2 \\times 38 = 76\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 30cm and width 3cm.",
+    "options": [
+      "33cm",
+      "180cm",
+      "66cm",
+      "90cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(30 + 3) = 2 \\times 33 = 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the length of an arc of a circle of radius 21cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "693cm",
+      "132cm",
+      "33cm",
+      "66cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arc length \\(= \\frac{\\theta}{360} \\times 2\\pi r\\)\n\n\\(= \\frac{180}{360} \\times 2 \\times \\frac{22}{7} \\times 21\\)\n\n\\(= 66\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 9cm, 21cm and 29cm.",
+    "options": [
+      "5481cm",
+      "94.50cm",
+      "29.50cm",
+      "59cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 9 + 21 + 29 = 59\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 35cm and width 28cm.",
+    "options": [
+      "126cm",
+      "1960cm",
+      "980cm",
+      "63cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(35 + 28) = 2 \\times 63 = 126\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 18cm, 26cm and 14cm.",
+    "options": [
+      "6552cm",
+      "234cm",
+      "58cm",
+      "29cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 18 + 26 + 14 = 58\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 31cm and width 17cm.",
+    "options": [
+      "48cm",
+      "96cm",
+      "1054cm",
+      "527cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(31 + 17) = 2 \\times 48 = 96\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 29cm.",
+    "options": [
+      "72.50cm",
+      "34cm",
+      "145cm",
+      "87cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 29 = 145\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 7cm, 21cm and 23cm.",
+    "options": [
+      "51cm",
+      "3381cm",
+      "73.50cm",
+      "25.50cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 7 + 21 + 23 = 51\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 5cm, 28cm and 25cm.",
+    "options": [
+      "70cm",
+      "3500cm",
+      "58cm",
+      "29cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 5 + 28 + 25 = 58\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 10 sides, each of length 24cm.",
+    "options": [
+      "192cm",
+      "120cm",
+      "240cm",
+      "34cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 10 \\times 24 = 240\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 9 sides, each of length 18cm.",
+    "options": [
+      "162cm",
+      "81cm",
+      "126cm",
+      "27cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 9 \\times 18 = 162\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 22cm, 22cm and 21cm.",
+    "options": [
+      "10164cm",
+      "32.50cm",
+      "65cm",
+      "242cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 22 + 22 + 21 = 65\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 29cm, 23cm and 24cm.",
+    "options": [
+      "16008cm",
+      "76cm",
+      "38cm",
+      "333.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 29 + 23 + 24 = 76\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 22cm, 13cm and 30cm.",
+    "options": [
+      "143cm",
+      "32.50cm",
+      "65cm",
+      "8580cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 22 + 13 + 30 = 65\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 29cm, 19cm and 16cm.",
+    "options": [
+      "8816cm",
+      "275.50cm",
+      "32cm",
+      "64cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 29 + 19 + 16 = 64\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 17cm and width 5cm.",
+    "options": [
+      "85cm",
+      "170cm",
+      "44cm",
+      "22cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(17 + 5) = 2 \\times 22 = 44\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 15cm and width 34cm.",
+    "options": [
+      "510cm",
+      "98cm",
+      "49cm",
+      "1020cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(15 + 34) = 2 \\times 49 = 98\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 5 sides, each of length 21cm.",
+    "options": [
+      "63cm",
+      "52.50cm",
+      "105cm",
+      "26cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 5 \\times 21 = 105\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 7 sides, each of length 30cm.",
+    "options": [
+      "105cm",
+      "210cm",
+      "37cm",
+      "150cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 7 \\times 30 = 210\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 19cm and width 5cm.",
+    "options": [
+      "190cm",
+      "48cm",
+      "24cm",
+      "95cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(19 + 5) = 2 \\times 24 = 48\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 13cm and width 12cm.",
+    "options": [
+      "50cm",
+      "156cm",
+      "312cm",
+      "25cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(13 + 12) = 2 \\times 25 = 50\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 11cm and width 26cm.",
+    "options": [
+      "74cm",
+      "572cm",
+      "37cm",
+      "286cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(11 + 26) = 2 \\times 37 = 74\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a triangle whose sides are 28cm, 18cm and 29cm.",
+    "options": [
+      "252cm",
+      "37.50cm",
+      "75cm",
+      "14616cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Perimeter is the sum of all three sides.\n\n\\(= 28 + 18 + 29 = 75\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a regular polygon with 12 sides, each of length 5cm.",
+    "options": [
+      "17cm",
+      "30cm",
+      "60cm",
+      "50cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "All sides of a regular polygon are equal.\n\nPerimeter \\(= 12 \\times 5 = 60\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 29cm and width 10cm.",
+    "options": [
+      "39cm",
+      "290cm",
+      "580cm",
+      "78cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(29 + 10) = 2 \\times 39 = 78\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the perimeter of a rectangle of length 36cm and width 4cm.",
+    "options": [
+      "40cm",
+      "80cm",
+      "144cm",
+      "288cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Perimeter \\(= 2(l + w)\\)\n\n\\(= 2(36 + 4) = 2 \\times 40 = 80\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "raiMVJtOSRLhrAUkbn0I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

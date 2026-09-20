@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N106000.",
+    "options": [
+      "318",
+      "3180",
+      "102820",
+      "6360"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 106000 = 3180\\)\n\nSo his commission is N3180.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N25000 for 4 years is N6000. Find the rate per annum.",
+    "options": [
+      "24%",
+      "6%",
+      "8%",
+      "4%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 6000}{25000 \\times 4} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N110000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "17338.75",
+      "127338.75",
+      "126500",
+      "133705.69"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 110000\\left(1 + \\frac{5}{100}\\right)^{3} = 110000(1.05)^{3}\\)\n\n\\(= 127338.75\\)\n\nSo the amount is N127338.75.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N5000 for 5 years is N1250. Find the rate per annum.",
+    "options": [
+      "3%",
+      "25%",
+      "5%",
+      "7%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1250}{5000 \\times 5} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N140000 for 2 years at 5% per annum compound interest.",
+    "options": [
+      "154000",
+      "154350",
+      "162067.5",
+      "14350"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 140000\\left(1 + \\frac{5}{100}\\right)^{2} = 140000(1.05)^{2}\\)\n\n\\(= 154350\\)\n\nSo the amount is N154350.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N9000 for 4 years at 10% per annum.",
+    "options": [
+      "900",
+      "12600",
+      "360",
+      "3600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{9000 \\times 10 \\times 4}{100} = 3600\\)\n\nSo the simple interest is N3600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3800 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "3790",
+      "3420",
+      "4180",
+      "380"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 3800 = 380\\)\n\nSelling price \\(= 3800 - 380 = 3420\\)\n\nSo the selling price is N3420.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N48000 for 5 years at 8% per annum.",
+    "options": [
+      "3840",
+      "1920",
+      "19200",
+      "67200"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{48000 \\times 8 \\times 5}{100} = 19200\\)\n\nSo the simple interest is N19200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N9000 for 5 years is N2700. Find the rate per annum.",
+    "options": [
+      "30%",
+      "4%",
+      "8%",
+      "6%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 2700}{9000 \\times 5} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N58000 for 3 years at 5% per annum.",
+    "options": [
+      "870",
+      "2900",
+      "8700",
+      "66700"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{58000 \\times 5 \\times 3}{100} = 8700\\)\n\nSo the simple interest is N8700.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3200 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "3520",
+      "2880",
+      "3190",
+      "320"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 3200 = 320\\)\n\nSelling price \\(= 3200 - 320 = 2880\\)\n\nSo the selling price is N2880.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N590000 depreciates at 10% per annum. Find its value after 2 years.",
+    "options": [
+      "477900",
+      "589990",
+      "472000",
+      "713900"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 590000\\left(1 - \\frac{10}{100}\\right)^{2} = 590000(0.9)^{2}\\)\n\n\\(= 477900\\)\n\nSo its value is N477900.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N26000 becomes after 4 years at 3% per annum simple interest.",
+    "options": [
+      "3120",
+      "29120",
+      "22880",
+      "26780"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{26000 \\times 3 \\times 4}{100} = 3120\\)\n\nAmount \\(= P + I = 26000 + 3120 = 29120\\)\n\nSo the amount is N29120.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N6200 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "6820",
+      "620",
+      "6190",
+      "5580"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 6200 = 620\\)\n\nSelling price \\(= 6200 - 620 = 5580\\)\n\nSo the selling price is N5580.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N31000 for 5 years at 8% per annum.",
+    "options": [
+      "1240",
+      "43400",
+      "12400",
+      "2480"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{31000 \\times 8 \\times 5}{100} = 12400\\)\n\nSo the simple interest is N12400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N28000 for 2 years at 6% per annum.",
+    "options": [
+      "336",
+      "31360",
+      "1680",
+      "3360"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{28000 \\times 6 \\times 2}{100} = 3360\\)\n\nSo the simple interest is N3360.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N190000 depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "114000",
+      "189980",
+      "273600",
+      "121600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 190000\\left(1 - \\frac{20}{100}\\right)^{2} = 190000(0.8)^{2}\\)\n\n\\(= 121600\\)\n\nSo its value is N121600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N40000 for 5 years is N8000. Find the rate per annum.",
+    "options": [
+      "20%",
+      "6%",
+      "4%",
+      "2%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 8000}{40000 \\times 5} = 4\\)\n\nSo the rate is 4% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N2400 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "2380",
+      "480",
+      "2880",
+      "1920"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 2400 = 480\\)\n\nSelling price \\(= 2400 - 480 = 1920\\)\n\nSo the selling price is N1920.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N150000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "181500",
+      "199650",
+      "31500",
+      "180000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 150000\\left(1 + \\frac{10}{100}\\right)^{2} = 150000(1.1)^{2}\\)\n\n\\(= 181500\\)\n\nSo the amount is N181500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N90000.",
+    "options": [
+      "13500",
+      "675",
+      "6750",
+      "83250"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 90000 = 6750\\)\n\nSo his commission is N6750.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2% commission on sales. Find his commission on sales worth N93000.",
+    "options": [
+      "3720",
+      "91140",
+      "186",
+      "1860"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{2}{100} \\times 93000 = 1860\\)\n\nSo his commission is N1860.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N560000 depreciates at 25% per annum. Find its value after 2 years.",
+    "options": [
+      "315000",
+      "875000",
+      "280000",
+      "559975"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 560000\\left(1 - \\frac{25}{100}\\right)^{2} = 560000(0.75)^{2}\\)\n\n\\(= 315000\\)\n\nSo its value is N315000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N18000 for 4 years is N3600. Find the rate per annum.",
+    "options": [
+      "5%",
+      "7%",
+      "3%",
+      "20%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 3600}{18000 \\times 4} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N158000.",
+    "options": [
+      "474",
+      "153260",
+      "9480",
+      "4740"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 158000 = 4740\\)\n\nSo his commission is N4740.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8200 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "820",
+      "7380",
+      "8190",
+      "9020"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 8200 = 820\\)\n\nSelling price \\(= 8200 - 820 = 7380\\)\n\nSo the selling price is N7380.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N440000 depreciates at 20% per annum. Find its value after 3 years.",
+    "options": [
+      "225280",
+      "176000",
+      "760320",
+      "439980"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 440000\\left(1 - \\frac{20}{100}\\right)^{3} = 440000(0.8)^{3}\\)\n\n\\(= 225280\\)\n\nSo its value is N225280.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N53000 for 4 years at 3% per annum.",
+    "options": [
+      "6360",
+      "636",
+      "1590",
+      "59360"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{53000 \\times 3 \\times 4}{100} = 6360\\)\n\nSo the simple interest is N6360.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N22000.",
+    "options": [
+      "2200",
+      "110",
+      "1100",
+      "20900"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 22000 = 1100\\)\n\nSo his commission is N1100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N23000 for 3 years is N4140. Find the rate per annum.",
+    "options": [
+      "8%",
+      "18%",
+      "4%",
+      "6%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4140}{23000 \\times 3} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N33000 becomes after 4 years at 6% per annum simple interest.",
+    "options": [
+      "40920",
+      "7920",
+      "34980",
+      "25080"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{33000 \\times 6 \\times 4}{100} = 7920\\)\n\nAmount \\(= P + I = 33000 + 7920 = 40920\\)\n\nSo the amount is N40920.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N28000 for 6 years at 8% per annum.",
+    "options": [
+      "1344",
+      "13440",
+      "2240",
+      "41440"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{28000 \\times 8 \\times 6}{100} = 13440\\)\n\nSo the simple interest is N13440.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N8000 for 5 years is N1600. Find the rate per annum.",
+    "options": [
+      "6%",
+      "20%",
+      "4%",
+      "2%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1600}{8000 \\times 5} = 4\\)\n\nSo the rate is 4% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N20000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "4200",
+      "26620",
+      "24200",
+      "24000"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 20000\\left(1 + \\frac{10}{100}\\right)^{2} = 20000(1.1)^{2}\\)\n\n\\(= 24200\\)\n\nSo the amount is N24200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N80000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "35200",
+      "115200",
+      "112000",
+      "138240"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 80000\\left(1 + \\frac{20}{100}\\right)^{2} = 80000(1.2)^{2}\\)\n\n\\(= 115200\\)\n\nSo the amount is N115200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3000 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "2625",
+      "375",
+      "3375",
+      "2987.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 3000 = 375\\)\n\nSelling price \\(= 3000 - 375 = 2625\\)\n\nSo the selling price is N2625.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N260000 depreciates at 10% per annum. Find its value after 2 years.",
+    "options": [
+      "210600",
+      "208000",
+      "314600",
+      "259990"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 260000\\left(1 - \\frac{10}{100}\\right)^{2} = 260000(0.9)^{2}\\)\n\n\\(= 210600\\)\n\nSo its value is N210600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2% commission on sales. Find his commission on sales worth N194000.",
+    "options": [
+      "388",
+      "3880",
+      "190120",
+      "7760"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{2}{100} \\times 194000 = 3880\\)\n\nSo his commission is N3880.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N150000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "66000",
+      "210000",
+      "259200",
+      "216000"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 150000\\left(1 + \\frac{20}{100}\\right)^{2} = 150000(1.2)^{2}\\)\n\n\\(= 216000\\)\n\nSo the amount is N216000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N40000 becomes after 2 years at 3% per annum simple interest.",
+    "options": [
+      "2400",
+      "37600",
+      "42400",
+      "41200"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{40000 \\times 3 \\times 2}{100} = 2400\\)\n\nAmount \\(= P + I = 40000 + 2400 = 42400\\)\n\nSo the amount is N42400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N43000 for 6 years at 6% per annum.",
+    "options": [
+      "2580",
+      "1548",
+      "15480",
+      "58480"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{43000 \\times 6 \\times 6}{100} = 15480\\)\n\nSo the simple interest is N15480.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N500000 depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "320000",
+      "499980",
+      "720000",
+      "300000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 500000\\left(1 - \\frac{20}{100}\\right)^{2} = 500000(0.8)^{2}\\)\n\n\\(= 320000\\)\n\nSo its value is N320000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3000 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "600",
+      "3600",
+      "2980",
+      "2400"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 3000 = 600\\)\n\nSelling price \\(= 3000 - 600 = 2400\\)\n\nSo the selling price is N2400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N180000 for 2 years at 5% per annum compound interest.",
+    "options": [
+      "18450",
+      "198450",
+      "208372.5",
+      "198000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 180000\\left(1 + \\frac{5}{100}\\right)^{2} = 180000(1.05)^{2}\\)\n\n\\(= 198450\\)\n\nSo the amount is N198450.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N29000 for 4 years is N5800. Find the rate per annum.",
+    "options": [
+      "20%",
+      "7%",
+      "5%",
+      "3%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 5800}{29000 \\times 4} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N130000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "190333",
+      "169000",
+      "43030",
+      "173030"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 130000\\left(1 + \\frac{10}{100}\\right)^{3} = 130000(1.1)^{3}\\)\n\n\\(= 173030\\)\n\nSo the amount is N173030.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N30000 for 3 years is N4500. Find the rate per annum.",
+    "options": [
+      "3%",
+      "5%",
+      "7%",
+      "15%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4500}{30000 \\times 3} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N137000.",
+    "options": [
+      "8220",
+      "411",
+      "4110",
+      "132890"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 137000 = 4110\\)\n\nSo his commission is N4110.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N37000 for 3 years is N6660. Find the rate per annum.",
+    "options": [
+      "8%",
+      "18%",
+      "6%",
+      "4%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 6660}{37000 \\times 3} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N31000 for 3 years is N5580. Find the rate per annum.",
+    "options": [
+      "8%",
+      "18%",
+      "6%",
+      "4%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 5580}{31000 \\times 3} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3500 is sold at a discount of 15%. Find the selling price.",
+    "options": [
+      "2975",
+      "4025",
+      "3485",
+      "525"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{15}{100} \\times 3500 = 525\\)\n\nSelling price \\(= 3500 - 525 = 2975\\)\n\nSo the selling price is N2975.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N8000 becomes after 4 years at 4% per annum simple interest.",
+    "options": [
+      "6720",
+      "1280",
+      "8320",
+      "9280"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{8000 \\times 4 \\times 4}{100} = 1280\\)\n\nAmount \\(= P + I = 8000 + 1280 = 9280\\)\n\nSo the amount is N9280.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N17000 for 5 years at 10% per annum.",
+    "options": [
+      "8500",
+      "25500",
+      "850",
+      "1700"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{17000 \\times 10 \\times 5}{100} = 8500\\)\n\nSo the simple interest is N8500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N17000 for 6 years at 7.5% per annum.",
+    "options": [
+      "1275",
+      "24650",
+      "765",
+      "7650"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{17000 \\times 7.5 \\times 6}{100} = 7650\\)\n\nSo the simple interest is N7650.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N140000 depreciates at 10% per annum. Find its value after 2 years.",
+    "options": [
+      "169400",
+      "139990",
+      "112000",
+      "113400"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 140000\\left(1 - \\frac{10}{100}\\right)^{2} = 140000(0.9)^{2}\\)\n\n\\(= 113400\\)\n\nSo its value is N113400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2.5% commission on sales. Find his commission on sales worth N30000.",
+    "options": [
+      "750",
+      "1500",
+      "29250",
+      "75"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{2.5}{100} \\times 30000 = 750\\)\n\nSo his commission is N750.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N31000 for 6 years at 5% per annum.",
+    "options": [
+      "1550",
+      "9300",
+      "930",
+      "40300"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{31000 \\times 5 \\times 6}{100} = 9300\\)\n\nSo the simple interest is N9300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N168000.",
+    "options": [
+      "159600",
+      "16800",
+      "8400",
+      "840"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 168000 = 8400\\)\n\nSo his commission is N8400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N410000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "102500",
+      "800781.25",
+      "172968.75",
+      "409975"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 410000\\left(1 - \\frac{25}{100}\\right)^{3} = 410000(0.75)^{3}\\)\n\n\\(= 172968.75\\)\n\nSo its value is N172968.75.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N2300 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "2290",
+      "2070",
+      "230",
+      "2530"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 2300 = 230\\)\n\nSelling price \\(= 2300 - 230 = 2070\\)\n\nSo the selling price is N2070.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N11000 for 5 years is N2750. Find the rate per annum.",
+    "options": [
+      "3%",
+      "5%",
+      "7%",
+      "25%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 2750}{11000 \\times 5} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N200000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "240000",
+      "42000",
+      "242000",
+      "266200"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 200000\\left(1 + \\frac{10}{100}\\right)^{2} = 200000(1.1)^{2}\\)\n\n\\(= 242000\\)\n\nSo the amount is N242000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N21000 for 2 years is N1680. Find the rate per annum.",
+    "options": [
+      "8%",
+      "2%",
+      "4%",
+      "6%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1680}{21000 \\times 2} = 4\\)\n\nSo the rate is 4% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 4% commission on sales. Find his commission on sales worth N131000.",
+    "options": [
+      "5240",
+      "524",
+      "10480",
+      "125760"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{4}{100} \\times 131000 = 5240\\)\n\nSo his commission is N5240.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N15000 becomes after 4 years at 10% per annum simple interest.",
+    "options": [
+      "16500",
+      "6000",
+      "9000",
+      "21000"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{15000 \\times 10 \\times 4}{100} = 6000\\)\n\nAmount \\(= P + I = 15000 + 6000 = 21000\\)\n\nSo the amount is N21000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3200 is sold at a discount of 5%. Find the selling price.",
+    "options": [
+      "3040",
+      "3360",
+      "160",
+      "3195"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{5}{100} \\times 3200 = 160\\)\n\nSelling price \\(= 3200 - 160 = 3040\\)\n\nSo the selling price is N3040.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N18000 for 6 years at 8% per annum.",
+    "options": [
+      "26640",
+      "8640",
+      "1440",
+      "864"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{18000 \\times 8 \\times 6}{100} = 8640\\)\n\nSo the simple interest is N8640.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N59000 for 6 years at 2.5% per annum.",
+    "options": [
+      "1475",
+      "885",
+      "67850",
+      "8850"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{59000 \\times 2.5 \\times 6}{100} = 8850\\)\n\nSo the simple interest is N8850.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N78000.",
+    "options": [
+      "234",
+      "75660",
+      "2340",
+      "4680"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 78000 = 2340\\)\n\nSo his commission is N2340.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N80000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "96800",
+      "16800",
+      "106480",
+      "96000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 80000\\left(1 + \\frac{10}{100}\\right)^{2} = 80000(1.1)^{2}\\)\n\n\\(= 96800\\)\n\nSo the amount is N96800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N480000 depreciates at 20% per annum. Find its value after 3 years.",
+    "options": [
+      "479980",
+      "192000",
+      "245760",
+      "829440"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 480000\\left(1 - \\frac{20}{100}\\right)^{3} = 480000(0.8)^{3}\\)\n\n\\(= 245760\\)\n\nSo its value is N245760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N10000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "14641",
+      "13000",
+      "3310",
+      "13310"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 10000\\left(1 + \\frac{10}{100}\\right)^{3} = 10000(1.1)^{3}\\)\n\n\\(= 13310\\)\n\nSo the amount is N13310.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2% commission on sales. Find his commission on sales worth N171000.",
+    "options": [
+      "167580",
+      "342",
+      "6840",
+      "3420"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{2}{100} \\times 171000 = 3420\\)\n\nSo his commission is N3420.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N130000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "224640",
+      "57200",
+      "182000",
+      "187200"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 130000\\left(1 + \\frac{20}{100}\\right)^{2} = 130000(1.2)^{2}\\)\n\n\\(= 187200\\)\n\nSo the amount is N187200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N20000 becomes after 2 years at 6% per annum simple interest.",
+    "options": [
+      "22400",
+      "21200",
+      "2400",
+      "17600"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{20000 \\times 6 \\times 2}{100} = 2400\\)\n\nAmount \\(= P + I = 20000 + 2400 = 22400\\)\n\nSo the amount is N22400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N30000 for 4 years is N9600. Find the rate per annum.",
+    "options": [
+      "8%",
+      "10%",
+      "6%",
+      "32%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 9600}{30000 \\times 4} = 8\\)\n\nSo the rate is 8% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N460000 depreciates at 20% per annum. Find its value after 3 years.",
+    "options": [
+      "459980",
+      "184000",
+      "794880",
+      "235520"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 460000\\left(1 - \\frac{20}{100}\\right)^{3} = 460000(0.8)^{3}\\)\n\n\\(= 235520\\)\n\nSo its value is N235520.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N143000.",
+    "options": [
+      "21450",
+      "1072.5",
+      "132275",
+      "10725"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 143000 = 10725\\)\n\nSo his commission is N10725.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N10000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "1576.25",
+      "11500",
+      "11576.25",
+      "12155.06"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 10000\\left(1 + \\frac{5}{100}\\right)^{3} = 10000(1.05)^{3}\\)\n\n\\(= 11576.25\\)\n\nSo the amount is N11576.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N310000 depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "446400",
+      "198400",
+      "309980",
+      "186000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 310000\\left(1 - \\frac{20}{100}\\right)^{2} = 310000(0.8)^{2}\\)\n\n\\(= 198400\\)\n\nSo its value is N198400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N40000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "17600",
+      "69120",
+      "56000",
+      "57600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 40000\\left(1 + \\frac{20}{100}\\right)^{2} = 40000(1.2)^{2}\\)\n\n\\(= 57600\\)\n\nSo the amount is N57600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N26000 for 5 years is N7800. Find the rate per annum.",
+    "options": [
+      "4%",
+      "30%",
+      "6%",
+      "8%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 7800}{26000 \\times 5} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5700 is sold at a discount of 15%. Find the selling price.",
+    "options": [
+      "5685",
+      "4845",
+      "6555",
+      "855"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{15}{100} \\times 5700 = 855\\)\n\nSelling price \\(= 5700 - 855 = 4845\\)\n\nSo the selling price is N4845.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N70000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "85085.44",
+      "80500",
+      "81033.75",
+      "11033.75"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 70000\\left(1 + \\frac{5}{100}\\right)^{3} = 70000(1.05)^{3}\\)\n\n\\(= 81033.75\\)\n\nSo the amount is N81033.75.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N110000 for 2 years at 5% per annum compound interest.",
+    "options": [
+      "11275",
+      "121000",
+      "127338.75",
+      "121275"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 110000\\left(1 + \\frac{5}{100}\\right)^{2} = 110000(1.05)^{2}\\)\n\n\\(= 121275\\)\n\nSo the amount is N121275.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N60000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "69457.5",
+      "9457.5",
+      "69000",
+      "72930.38"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 60000\\left(1 + \\frac{5}{100}\\right)^{3} = 60000(1.05)^{3}\\)\n\n\\(= 69457.5\\)\n\nSo the amount is N69457.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N100000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "115000",
+      "15762.5",
+      "115762.5",
+      "121550.63"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 100000\\left(1 + \\frac{5}{100}\\right)^{3} = 100000(1.05)^{3}\\)\n\n\\(= 115762.5\\)\n\nSo the amount is N115762.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N370000 depreciates at 10% per annum. Find its value after 3 years.",
+    "options": [
+      "492470",
+      "369990",
+      "269730",
+      "259000"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 370000\\left(1 - \\frac{10}{100}\\right)^{3} = 370000(0.9)^{3}\\)\n\n\\(= 269730\\)\n\nSo its value is N269730.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N44000 becomes after 2 years at 5% per annum simple interest.",
+    "options": [
+      "4400",
+      "48400",
+      "46200",
+      "39600"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{44000 \\times 5 \\times 2}{100} = 4400\\)\n\nAmount \\(= P + I = 44000 + 4400 = 48400\\)\n\nSo the amount is N48400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N50000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "70000",
+      "72000",
+      "86400",
+      "22000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 50000\\left(1 + \\frac{20}{100}\\right)^{2} = 50000(1.2)^{2}\\)\n\n\\(= 72000\\)\n\nSo the amount is N72000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N90000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "144000",
+      "65520",
+      "155520",
+      "186624"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 90000\\left(1 + \\frac{20}{100}\\right)^{3} = 90000(1.2)^{3}\\)\n\n\\(= 155520\\)\n\nSo the amount is N155520.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8000 is sold at a discount of 30%. Find the selling price.",
+    "options": [
+      "2400",
+      "5600",
+      "10400",
+      "7970"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{30}{100} \\times 8000 = 2400\\)\n\nSelling price \\(= 8000 - 2400 = 5600\\)\n\nSo the selling price is N5600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N14000 becomes after 3 years at 6% per annum simple interest.",
+    "options": [
+      "16520",
+      "11480",
+      "14840",
+      "2520"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{14000 \\times 6 \\times 3}{100} = 2520\\)\n\nAmount \\(= P + I = 14000 + 2520 = 16520\\)\n\nSo the amount is N16520.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N44000 for 3 years at 5% per annum.",
+    "options": [
+      "6600",
+      "50600",
+      "660",
+      "2200"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{44000 \\times 5 \\times 3}{100} = 6600\\)\n\nSo the simple interest is N6600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N56000 for 4 years at 5% per annum.",
+    "options": [
+      "11200",
+      "2800",
+      "67200",
+      "1120"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{56000 \\times 5 \\times 4}{100} = 11200\\)\n\nSo the simple interest is N11200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N182000.",
+    "options": [
+      "163800",
+      "1820",
+      "36400",
+      "18200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 182000 = 18200\\)\n\nSo his commission is N18200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N20000 for 2 years is N4000. Find the rate per annum.",
+    "options": [
+      "20%",
+      "12%",
+      "10%",
+      "8%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4000}{20000 \\times 2} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N190000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "230946.19",
+      "218500",
+      "29948.75",
+      "219948.75"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 190000\\left(1 + \\frac{5}{100}\\right)^{3} = 190000(1.05)^{3}\\)\n\n\\(= 219948.75\\)\n\nSo the amount is N219948.75.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N180000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "216000",
+      "37800",
+      "239580",
+      "217800"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 180000\\left(1 + \\frac{10}{100}\\right)^{2} = 180000(1.1)^{2}\\)\n\n\\(= 217800\\)\n\nSo the amount is N217800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5000 is sold at a discount of 15%. Find the selling price.",
+    "options": [
+      "4250",
+      "5750",
+      "4985",
+      "750"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{15}{100} \\times 5000 = 750\\)\n\nSelling price \\(= 5000 - 750 = 4250\\)\n\nSo the selling price is N4250.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N10000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "20736",
+      "17280",
+      "7280",
+      "16000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 10000\\left(1 + \\frac{20}{100}\\right)^{3} = 10000(1.2)^{3}\\)\n\n\\(= 17280\\)\n\nSo the amount is N17280.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 4% commission on sales. Find his commission on sales worth N56000.",
+    "options": [
+      "2240",
+      "53760",
+      "224",
+      "4480"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{4}{100} \\times 56000 = 2240\\)\n\nSo his commission is N2240.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N26000 becomes after 3 years at 5% per annum simple interest.",
+    "options": [
+      "22100",
+      "27300",
+      "29900",
+      "3900"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{26000 \\times 5 \\times 3}{100} = 3900\\)\n\nAmount \\(= P + I = 26000 + 3900 = 29900\\)\n\nSo the amount is N29900.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N72000.",
+    "options": [
+      "720",
+      "7200",
+      "64800",
+      "14400"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 72000 = 7200\\)\n\nSo his commission is N7200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N170000 for 2 years at 5% per annum compound interest.",
+    "options": [
+      "17425",
+      "187425",
+      "196796.25",
+      "187000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 170000\\left(1 + \\frac{5}{100}\\right)^{2} = 170000(1.05)^{2}\\)\n\n\\(= 187425\\)\n\nSo the amount is N187425.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N14000 becomes after 4 years at 3% per annum simple interest.",
+    "options": [
+      "15680",
+      "1680",
+      "14420",
+      "12320"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{14000 \\times 3 \\times 4}{100} = 1680\\)\n\nAmount \\(= P + I = 14000 + 1680 = 15680\\)\n\nSo the amount is N15680.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N132000.",
+    "options": [
+      "7920",
+      "396",
+      "3960",
+      "128040"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 132000 = 3960\\)\n\nSo his commission is N3960.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N16000 becomes after 3 years at 3% per annum simple interest.",
+    "options": [
+      "16480",
+      "14560",
+      "1440",
+      "17440"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{16000 \\times 3 \\times 3}{100} = 1440\\)\n\nAmount \\(= P + I = 16000 + 1440 = 17440\\)\n\nSo the amount is N17440.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N11000 for 2 years is N1100. Find the rate per annum.",
+    "options": [
+      "7%",
+      "3%",
+      "10%",
+      "5%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1100}{11000 \\times 2} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N23000 for 3 years at 12% per annum.",
+    "options": [
+      "828",
+      "8280",
+      "2760",
+      "31280"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{23000 \\times 12 \\times 3}{100} = 8280\\)\n\nSo the simple interest is N8280.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N4800 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "4780",
+      "3840",
+      "960",
+      "5760"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 4800 = 960\\)\n\nSelling price \\(= 4800 - 960 = 3840\\)\n\nSo the selling price is N3840.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N24000 for 5 years is N6000. Find the rate per annum.",
+    "options": [
+      "7%",
+      "5%",
+      "25%",
+      "3%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 6000}{24000 \\times 5} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5600 is sold at a discount of 30%. Find the selling price.",
+    "options": [
+      "3920",
+      "5570",
+      "7280",
+      "1680"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{30}{100} \\times 5600 = 1680\\)\n\nSelling price \\(= 5600 - 1680 = 3920\\)\n\nSo the selling price is N3920.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N380000 depreciates at 20% per annum. Find its value after 3 years.",
+    "options": [
+      "152000",
+      "194560",
+      "379980",
+      "656640"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 380000\\left(1 - \\frac{20}{100}\\right)^{3} = 380000(0.8)^{3}\\)\n\n\\(= 194560\\)\n\nSo its value is N194560.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N170000 depreciates at 20% per annum. Find its value after 3 years.",
+    "options": [
+      "293760",
+      "169980",
+      "87040",
+      "68000"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 170000\\left(1 - \\frac{20}{100}\\right)^{3} = 170000(0.8)^{3}\\)\n\n\\(= 87040\\)\n\nSo its value is N87040.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N270000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "269975",
+      "113906.25",
+      "527343.75",
+      "67500"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 270000\\left(1 - \\frac{25}{100}\\right)^{3} = 270000(0.75)^{3}\\)\n\n\\(= 113906.25\\)\n\nSo its value is N113906.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N39000 for 5 years is N15600. Find the rate per annum.",
+    "options": [
+      "10%",
+      "40%",
+      "6%",
+      "8%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 15600}{39000 \\times 5} = 8\\)\n\nSo the rate is 8% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N580000 depreciates at 10% per annum. Find its value after 2 years.",
+    "options": [
+      "579990",
+      "464000",
+      "469800",
+      "701800"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 580000\\left(1 - \\frac{10}{100}\\right)^{2} = 580000(0.9)^{2}\\)\n\n\\(= 469800\\)\n\nSo its value is N469800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N580000 depreciates at 10% per annum. Find its value after 3 years.",
+    "options": [
+      "579990",
+      "406000",
+      "422820",
+      "771980"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 580000\\left(1 - \\frac{10}{100}\\right)^{3} = 580000(0.9)^{3}\\)\n\n\\(= 422820\\)\n\nSo its value is N422820.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3400 is sold at a discount of 5%. Find the selling price.",
+    "options": [
+      "3570",
+      "3230",
+      "3395",
+      "170"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{5}{100} \\times 3400 = 170\\)\n\nSelling price \\(= 3400 - 170 = 3230\\)\n\nSo the selling price is N3230.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N26000 becomes after 3 years at 4% per annum simple interest.",
+    "options": [
+      "29120",
+      "3120",
+      "27040",
+      "22880"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{26000 \\times 4 \\times 3}{100} = 3120\\)\n\nAmount \\(= P + I = 26000 + 3120 = 29120\\)\n\nSo the amount is N29120.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2.5% commission on sales. Find his commission on sales worth N64000.",
+    "options": [
+      "160",
+      "62400",
+      "1600",
+      "3200"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{2.5}{100} \\times 64000 = 1600\\)\n\nSo his commission is N1600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N181000.",
+    "options": [
+      "5430",
+      "175570",
+      "543",
+      "10860"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 181000 = 5430\\)\n\nSo his commission is N5430.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5300 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "530",
+      "5830",
+      "5290",
+      "4770"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 5300 = 530\\)\n\nSelling price \\(= 5300 - 530 = 4770\\)\n\nSo the selling price is N4770.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N9000 for 2 years is N900. Find the rate per annum.",
+    "options": [
+      "10%",
+      "3%",
+      "7%",
+      "5%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 900}{9000 \\times 2} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N29000 becomes after 2 years at 10% per annum simple interest.",
+    "options": [
+      "34800",
+      "5800",
+      "23200",
+      "31900"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{29000 \\times 10 \\times 2}{100} = 5800\\)\n\nAmount \\(= P + I = 29000 + 5800 = 34800\\)\n\nSo the amount is N34800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N20000 for 6 years at 3% per annum.",
+    "options": [
+      "600",
+      "360",
+      "23600",
+      "3600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{20000 \\times 3 \\times 6}{100} = 3600\\)\n\nSo the simple interest is N3600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N35000 for 2 years is N4200. Find the rate per annum.",
+    "options": [
+      "6%",
+      "4%",
+      "8%",
+      "12%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4200}{35000 \\times 2} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N50000 becomes after 3 years at 8% per annum simple interest.",
+    "options": [
+      "62000",
+      "38000",
+      "54000",
+      "12000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{50000 \\times 8 \\times 3}{100} = 12000\\)\n\nAmount \\(= P + I = 50000 + 12000 = 62000\\)\n\nSo the amount is N62000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N6900 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "862.5",
+      "6887.5",
+      "7762.5",
+      "6037.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 6900 = 862.5\\)\n\nSelling price \\(= 6900 - 862.5 = 6037.5\\)\n\nSo the selling price is N6037.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5100 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "4080",
+      "5080",
+      "6120",
+      "1020"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 5100 = 1020\\)\n\nSelling price \\(= 5100 - 1020 = 4080\\)\n\nSo the selling price is N4080.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N11000 for 4 years is N4400. Find the rate per annum.",
+    "options": [
+      "12%",
+      "40%",
+      "8%",
+      "10%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4400}{11000 \\times 4} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N32000 for 5 years at 5% per annum.",
+    "options": [
+      "800",
+      "8000",
+      "40000",
+      "1600"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{32000 \\times 5 \\times 5}{100} = 8000\\)\n\nSo the simple interest is N8000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N150000 depreciates at 25% per annum. Find its value after 2 years.",
+    "options": [
+      "149975",
+      "84375",
+      "75000",
+      "234375"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 150000\\left(1 - \\frac{25}{100}\\right)^{2} = 150000(0.75)^{2}\\)\n\n\\(= 84375\\)\n\nSo its value is N84375.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N6000 for 2 years is N1200. Find the rate per annum.",
+    "options": [
+      "12%",
+      "10%",
+      "8%",
+      "20%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1200}{6000 \\times 2} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N200000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "345600",
+      "414720",
+      "320000",
+      "145600"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 200000\\left(1 + \\frac{20}{100}\\right)^{3} = 200000(1.2)^{3}\\)\n\n\\(= 345600\\)\n\nSo the amount is N345600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N112000.",
+    "options": [
+      "16800",
+      "840",
+      "8400",
+      "103600"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 112000 = 8400\\)\n\nSo his commission is N8400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2% commission on sales. Find his commission on sales worth N46000.",
+    "options": [
+      "1840",
+      "45080",
+      "92",
+      "920"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{2}{100} \\times 46000 = 920\\)\n\nSo his commission is N920.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N38000 becomes after 5 years at 6% per annum simple interest.",
+    "options": [
+      "11400",
+      "40280",
+      "49400",
+      "26600"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{38000 \\times 6 \\times 5}{100} = 11400\\)\n\nAmount \\(= P + I = 38000 + 11400 = 49400\\)\n\nSo the amount is N49400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8100 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "1620",
+      "6480",
+      "9720",
+      "8080"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 8100 = 1620\\)\n\nSelling price \\(= 8100 - 1620 = 6480\\)\n\nSo the selling price is N6480.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N120000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "207360",
+      "87360",
+      "192000",
+      "248832"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 120000\\left(1 + \\frac{20}{100}\\right)^{3} = 120000(1.2)^{3}\\)\n\n\\(= 207360\\)\n\nSo the amount is N207360.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N29000 becomes after 2 years at 4% per annum simple interest.",
+    "options": [
+      "2320",
+      "26680",
+      "30160",
+      "31320"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{29000 \\times 4 \\times 2}{100} = 2320\\)\n\nAmount \\(= P + I = 29000 + 2320 = 31320\\)\n\nSo the amount is N31320.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N29000 for 5 years at 5% per annum.",
+    "options": [
+      "7250",
+      "725",
+      "36250",
+      "1450"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{29000 \\times 5 \\times 5}{100} = 7250\\)\n\nSo the simple interest is N7250.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N2600 is sold at a discount of 15%. Find the selling price.",
+    "options": [
+      "390",
+      "2585",
+      "2990",
+      "2210"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{15}{100} \\times 2600 = 390\\)\n\nSelling price \\(= 2600 - 390 = 2210\\)\n\nSo the selling price is N2210.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N49000 becomes after 3 years at 8% per annum simple interest.",
+    "options": [
+      "37240",
+      "52920",
+      "11760",
+      "60760"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{49000 \\times 8 \\times 3}{100} = 11760\\)\n\nAmount \\(= P + I = 49000 + 11760 = 60760\\)\n\nSo the amount is N60760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N34000.",
+    "options": [
+      "30600",
+      "340",
+      "6800",
+      "3400"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 34000 = 3400\\)\n\nSo his commission is N3400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N10000 becomes after 3 years at 6% per annum simple interest.",
+    "options": [
+      "1800",
+      "11800",
+      "10600",
+      "8200"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{10000 \\times 6 \\times 3}{100} = 1800\\)\n\nAmount \\(= P + I = 10000 + 1800 = 11800\\)\n\nSo the amount is N11800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N26000 for 4 years is N4160. Find the rate per annum.",
+    "options": [
+      "6%",
+      "16%",
+      "2%",
+      "4%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4160}{26000 \\times 4} = 4\\)\n\nSo the rate is 4% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N58000 for 3 years at 2.5% per annum.",
+    "options": [
+      "435",
+      "4350",
+      "62350",
+      "1450"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{58000 \\times 2.5 \\times 3}{100} = 4350\\)\n\nSo the simple interest is N4350.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N7800 is sold at a discount of 25%. Find the selling price.",
+    "options": [
+      "7775",
+      "1950",
+      "9750",
+      "5850"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{25}{100} \\times 7800 = 1950\\)\n\nSelling price \\(= 7800 - 1950 = 5850\\)\n\nSo the selling price is N5850.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8100 is sold at a discount of 5%. Find the selling price.",
+    "options": [
+      "7695",
+      "8095",
+      "8505",
+      "405"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{5}{100} \\times 8100 = 405\\)\n\nSelling price \\(= 8100 - 405 = 7695\\)\n\nSo the selling price is N7695.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N340000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "339975",
+      "85000",
+      "664062.5",
+      "143437.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 340000\\left(1 - \\frac{25}{100}\\right)^{3} = 340000(0.75)^{3}\\)\n\n\\(= 143437.5\\)\n\nSo its value is N143437.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N30000 for 5 years at 6% per annum.",
+    "options": [
+      "9000",
+      "900",
+      "39000",
+      "1800"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{30000 \\times 6 \\times 5}{100} = 9000\\)\n\nSo the simple interest is N9000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8800 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "10560",
+      "7040",
+      "8780",
+      "1760"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 8800 = 1760\\)\n\nSelling price \\(= 8800 - 1760 = 7040\\)\n\nSo the selling price is N7040.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N220000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "55000",
+      "429687.5",
+      "219975",
+      "92812.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 220000\\left(1 - \\frac{25}{100}\\right)^{3} = 220000(0.75)^{3}\\)\n\n\\(= 92812.5\\)\n\nSo its value is N92812.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N100000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "21000",
+      "120000",
+      "133100",
+      "121000"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 100000\\left(1 + \\frac{10}{100}\\right)^{2} = 100000(1.1)^{2}\\)\n\n\\(= 121000\\)\n\nSo the amount is N121000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N390000 depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "249600",
+      "234000",
+      "561600",
+      "389980"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 390000\\left(1 - \\frac{20}{100}\\right)^{2} = 390000(0.8)^{2}\\)\n\n\\(= 249600\\)\n\nSo its value is N249600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N7000 for 6 years at 7.5% per annum.",
+    "options": [
+      "315",
+      "525",
+      "3150",
+      "10150"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{7000 \\times 7.5 \\times 6}{100} = 3150\\)\n\nSo the simple interest is N3150.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N28000 for 2 years at 12% per annum.",
+    "options": [
+      "3360",
+      "6720",
+      "672",
+      "34720"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{28000 \\times 12 \\times 2}{100} = 6720\\)\n\nSo the simple interest is N6720.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N380000 depreciates at 25% per annum. Find its value after 2 years.",
+    "options": [
+      "213750",
+      "593750",
+      "379975",
+      "190000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 380000\\left(1 - \\frac{25}{100}\\right)^{2} = 380000(0.75)^{2}\\)\n\n\\(= 213750\\)\n\nSo its value is N213750.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N46000.",
+    "options": [
+      "345",
+      "3450",
+      "42550",
+      "6900"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 46000 = 3450\\)\n\nSo his commission is N3450.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 4% commission on sales. Find his commission on sales worth N197000.",
+    "options": [
+      "15760",
+      "788",
+      "7880",
+      "189120"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{4}{100} \\times 197000 = 7880\\)\n\nSo his commission is N7880.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N160000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "52960",
+      "234256",
+      "212960",
+      "208000"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 160000\\left(1 + \\frac{10}{100}\\right)^{3} = 160000(1.1)^{3}\\)\n\n\\(= 212960\\)\n\nSo the amount is N212960.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N16000 becomes after 3 years at 8% per annum simple interest.",
+    "options": [
+      "3840",
+      "17280",
+      "19840",
+      "12160"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{16000 \\times 8 \\times 3}{100} = 3840\\)\n\nAmount \\(= P + I = 16000 + 3840 = 19840\\)\n\nSo the amount is N19840.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N22000 for 2 years is N2200. Find the rate per annum.",
+    "options": [
+      "5%",
+      "3%",
+      "10%",
+      "7%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 2200}{22000 \\times 2} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8700 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "10440",
+      "1740",
+      "8680",
+      "6960"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 8700 = 1740\\)\n\nSelling price \\(= 8700 - 1740 = 6960\\)\n\nSo the selling price is N6960.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N5000 for 5 years at 6% per annum.",
+    "options": [
+      "150",
+      "6500",
+      "300",
+      "1500"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{5000 \\times 6 \\times 5}{100} = 1500\\)\n\nSo the simple interest is N1500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N430000 depreciates at 10% per annum. Find its value after 3 years.",
+    "options": [
+      "313470",
+      "572330",
+      "429990",
+      "301000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 430000\\left(1 - \\frac{10}{100}\\right)^{3} = 430000(0.9)^{3}\\)\n\n\\(= 313470\\)\n\nSo its value is N313470.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N46000 becomes after 5 years at 8% per annum simple interest.",
+    "options": [
+      "64400",
+      "27600",
+      "49680",
+      "18400"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{46000 \\times 8 \\times 5}{100} = 18400\\)\n\nAmount \\(= P + I = 46000 + 18400 = 64400\\)\n\nSo the amount is N64400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N10000 for 5 years is N3000. Find the rate per annum.",
+    "options": [
+      "4%",
+      "30%",
+      "8%",
+      "6%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 3000}{10000 \\times 5} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N11000 for 5 years at 7.5% per annum.",
+    "options": [
+      "4125",
+      "15125",
+      "412.5",
+      "825"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{11000 \\times 7.5 \\times 5}{100} = 4125\\)\n\nSo the simple interest is N4125.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N7000 for 4 years is N2800. Find the rate per annum.",
+    "options": [
+      "40%",
+      "12%",
+      "8%",
+      "10%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 2800}{7000 \\times 4} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N19000 for 2 years at 2% per annum.",
+    "options": [
+      "19760",
+      "76",
+      "380",
+      "760"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{19000 \\times 2 \\times 2}{100} = 760\\)\n\nSo the simple interest is N760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N540000 depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "777600",
+      "324000",
+      "345600",
+      "539980"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 540000\\left(1 - \\frac{20}{100}\\right)^{2} = 540000(0.8)^{2}\\)\n\n\\(= 345600\\)\n\nSo its value is N345600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N12000 becomes after 3 years at 5% per annum simple interest.",
+    "options": [
+      "12600",
+      "13800",
+      "10200",
+      "1800"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{12000 \\times 5 \\times 3}{100} = 1800\\)\n\nAmount \\(= P + I = 12000 + 1800 = 13800\\)\n\nSo the amount is N13800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N11000 for 3 years is N3300. Find the rate per annum.",
+    "options": [
+      "12%",
+      "10%",
+      "8%",
+      "30%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 3300}{11000 \\times 3} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5300 is sold at a discount of 25%. Find the selling price.",
+    "options": [
+      "3975",
+      "1325",
+      "6625",
+      "5275"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{25}{100} \\times 5300 = 1325\\)\n\nSelling price \\(= 5300 - 1325 = 3975\\)\n\nSo the selling price is N3975.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N1200 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "1187.5",
+      "150",
+      "1050",
+      "1350"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 1200 = 150\\)\n\nSelling price \\(= 1200 - 150 = 1050\\)\n\nSo the selling price is N1050.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2% commission on sales. Find his commission on sales worth N63000.",
+    "options": [
+      "126",
+      "1260",
+      "61740",
+      "2520"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{2}{100} \\times 63000 = 1260\\)\n\nSo his commission is N1260.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N230000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "229975",
+      "449218.75",
+      "57500",
+      "97031.25"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 230000\\left(1 - \\frac{25}{100}\\right)^{3} = 230000(0.75)^{3}\\)\n\n\\(= 97031.25\\)\n\nSo its value is N97031.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N195000.",
+    "options": [
+      "19500",
+      "975",
+      "9750",
+      "185250"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 195000 = 9750\\)\n\nSo his commission is N9750.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N25000 becomes after 4 years at 5% per annum simple interest.",
+    "options": [
+      "5000",
+      "20000",
+      "30000",
+      "26250"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{25000 \\times 5 \\times 4}{100} = 5000\\)\n\nAmount \\(= P + I = 25000 + 5000 = 30000\\)\n\nSo the amount is N30000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N60000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "96000",
+      "124416",
+      "103680",
+      "43680"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 60000\\left(1 + \\frac{20}{100}\\right)^{3} = 60000(1.2)^{3}\\)\n\n\\(= 103680\\)\n\nSo the amount is N103680.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N1900 is sold at a discount of 25%. Find the selling price.",
+    "options": [
+      "2375",
+      "475",
+      "1425",
+      "1875"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{25}{100} \\times 1900 = 475\\)\n\nSelling price \\(= 1900 - 475 = 1425\\)\n\nSo the selling price is N1425.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N168000.",
+    "options": [
+      "12600",
+      "1260",
+      "25200",
+      "155400"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 168000 = 12600\\)\n\nSo his commission is N12600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N6000 for 5 years is N1500. Find the rate per annum.",
+    "options": [
+      "7%",
+      "5%",
+      "25%",
+      "3%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1500}{6000 \\times 5} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N180000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "208372.5",
+      "218791.13",
+      "207000",
+      "28372.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 180000\\left(1 + \\frac{5}{100}\\right)^{3} = 180000(1.05)^{3}\\)\n\n\\(= 208372.5\\)\n\nSo the amount is N208372.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N170000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "244800",
+      "238000",
+      "293760",
+      "74800"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 170000\\left(1 + \\frac{20}{100}\\right)^{2} = 170000(1.2)^{2}\\)\n\n\\(= 244800\\)\n\nSo the amount is N244800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5600 is sold at a discount of 15%. Find the selling price.",
+    "options": [
+      "840",
+      "4760",
+      "5585",
+      "6440"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{15}{100} \\times 5600 = 840\\)\n\nSelling price \\(= 5600 - 840 = 4760\\)\n\nSo the selling price is N4760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N19000 for 2 years is N1520. Find the rate per annum.",
+    "options": [
+      "4%",
+      "8%",
+      "6%",
+      "2%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1520}{19000 \\times 2} = 4\\)\n\nSo the rate is 4% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N160000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "230400",
+      "276480",
+      "70400",
+      "224000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 160000\\left(1 + \\frac{20}{100}\\right)^{2} = 160000(1.2)^{2}\\)\n\n\\(= 230400\\)\n\nSo the amount is N230400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N143000.",
+    "options": [
+      "28600",
+      "128700",
+      "14300",
+      "1430"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 143000 = 14300\\)\n\nSo his commission is N14300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N56000.",
+    "options": [
+      "1680",
+      "3360",
+      "54320",
+      "168"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 56000 = 1680\\)\n\nSo his commission is N1680.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N11000 for 3 years is N1650. Find the rate per annum.",
+    "options": [
+      "3%",
+      "15%",
+      "7%",
+      "5%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 1650}{11000 \\times 3} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N4300 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "4287.5",
+      "4837.5",
+      "537.5",
+      "3762.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 4300 = 537.5\\)\n\nSelling price \\(= 4300 - 537.5 = 3762.5\\)\n\nSo the selling price is N3762.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2.5% commission on sales. Find his commission on sales worth N26000.",
+    "options": [
+      "65",
+      "650",
+      "25350",
+      "1300"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{2.5}{100} \\times 26000 = 650\\)\n\nSo his commission is N650.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N2600 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "3120",
+      "520",
+      "2080",
+      "2580"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 2600 = 520\\)\n\nSelling price \\(= 2600 - 520 = 2080\\)\n\nSo the selling price is N2080.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N46000 for 5 years at 10% per annum.",
+    "options": [
+      "23000",
+      "69000",
+      "4600",
+      "2300"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{46000 \\times 10 \\times 5}{100} = 23000\\)\n\nSo the simple interest is N23000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N79000.",
+    "options": [
+      "73075",
+      "592.5",
+      "11850",
+      "5925"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 79000 = 5925\\)\n\nSo his commission is N5925.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3700 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "462.5",
+      "4162.5",
+      "3237.5",
+      "3687.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 3700 = 462.5\\)\n\nSelling price \\(= 3700 - 462.5 = 3237.5\\)\n\nSo the selling price is N3237.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N36000.",
+    "options": [
+      "33300",
+      "5400",
+      "270",
+      "2700"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 36000 = 2700\\)\n\nSo his commission is N2700.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N130000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "20491.25",
+      "158015.81",
+      "149500",
+      "150491.25"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 130000\\left(1 + \\frac{5}{100}\\right)^{3} = 130000(1.05)^{3}\\)\n\n\\(= 150491.25\\)\n\nSo the amount is N150491.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N45000 for 6 years at 6% per annum.",
+    "options": [
+      "61200",
+      "2700",
+      "16200",
+      "1620"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{45000 \\times 6 \\times 6}{100} = 16200\\)\n\nSo the simple interest is N16200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N21000 for 6 years at 2.5% per annum.",
+    "options": [
+      "24150",
+      "315",
+      "3150",
+      "525"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{21000 \\times 2.5 \\times 6}{100} = 3150\\)\n\nSo the simple interest is N3150.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N37000 for 5 years at 2.5% per annum.",
+    "options": [
+      "41625",
+      "925",
+      "4625",
+      "462.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{37000 \\times 2.5 \\times 5}{100} = 4625\\)\n\nSo the simple interest is N4625.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N1300 is sold at a discount of 25%. Find the selling price.",
+    "options": [
+      "1625",
+      "325",
+      "975",
+      "1275"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{25}{100} \\times 1300 = 325\\)\n\nSelling price \\(= 1300 - 325 = 975\\)\n\nSo the selling price is N975.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N35000 becomes after 2 years at 8% per annum simple interest.",
+    "options": [
+      "29400",
+      "37800",
+      "5600",
+      "40600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{35000 \\times 8 \\times 2}{100} = 5600\\)\n\nAmount \\(= P + I = 35000 + 5600 = 40600\\)\n\nSo the amount is N40600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N16000 for 5 years is N3200. Find the rate per annum.",
+    "options": [
+      "20%",
+      "2%",
+      "6%",
+      "4%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 3200}{16000 \\times 5} = 4\\)\n\nSo the rate is 4% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2.5% commission on sales. Find his commission on sales worth N112000.",
+    "options": [
+      "280",
+      "109200",
+      "5600",
+      "2800"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{2.5}{100} \\times 112000 = 2800\\)\n\nSo his commission is N2800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N115000.",
+    "options": [
+      "575",
+      "5750",
+      "109250",
+      "11500"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 115000 = 5750\\)\n\nSo his commission is N5750.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N14000 for 4 years is N3360. Find the rate per annum.",
+    "options": [
+      "6%",
+      "24%",
+      "8%",
+      "4%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 3360}{14000 \\times 4} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N78000.",
+    "options": [
+      "5850",
+      "585",
+      "11700",
+      "72150"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 78000 = 5850\\)\n\nSo his commission is N5850.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N96000.",
+    "options": [
+      "9600",
+      "91200",
+      "4800",
+      "480"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 96000 = 4800\\)\n\nSo his commission is N4800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N53000 for 4 years at 2.5% per annum.",
+    "options": [
+      "5300",
+      "58300",
+      "1325",
+      "530"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{53000 \\times 2.5 \\times 4}{100} = 5300\\)\n\nSo the simple interest is N5300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N130000 depreciates at 20% per annum. Find its value after 2 years.",
+    "options": [
+      "83200",
+      "78000",
+      "129980",
+      "187200"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 130000\\left(1 - \\frac{20}{100}\\right)^{2} = 130000(0.8)^{2}\\)\n\n\\(= 83200\\)\n\nSo its value is N83200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N40000 for 2 years at 5% per annum compound interest.",
+    "options": [
+      "46305",
+      "44100",
+      "4100",
+      "44000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 40000\\left(1 + \\frac{5}{100}\\right)^{2} = 40000(1.05)^{2}\\)\n\n\\(= 44100\\)\n\nSo the amount is N44100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N130000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "32500",
+      "253906.25",
+      "129975",
+      "54843.75"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 130000\\left(1 - \\frac{25}{100}\\right)^{3} = 130000(0.75)^{3}\\)\n\n\\(= 54843.75\\)\n\nSo its value is N54843.75.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N130000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "208000",
+      "224640",
+      "269568",
+      "94640"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 130000\\left(1 + \\frac{20}{100}\\right)^{3} = 130000(1.2)^{3}\\)\n\n\\(= 224640\\)\n\nSo the amount is N224640.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N7500 is sold at a discount of 25%. Find the selling price.",
+    "options": [
+      "5625",
+      "7475",
+      "1875",
+      "9375"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{25}{100} \\times 7500 = 1875\\)\n\nSelling price \\(= 7500 - 1875 = 5625\\)\n\nSo the selling price is N5625.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N15000 for 4 years is N6000. Find the rate per annum.",
+    "options": [
+      "8%",
+      "12%",
+      "10%",
+      "40%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 6000}{15000 \\times 4} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N7700 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "7690",
+      "6930",
+      "770",
+      "8470"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 7700 = 770\\)\n\nSelling price \\(= 7700 - 770 = 6930\\)\n\nSo the selling price is N6930.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3000 is sold at a discount of 5%. Find the selling price.",
+    "options": [
+      "2995",
+      "3150",
+      "2850",
+      "150"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{5}{100} \\times 3000 = 150\\)\n\nSelling price \\(= 3000 - 150 = 2850\\)\n\nSo the selling price is N2850.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N48000 becomes after 3 years at 4% per annum simple interest.",
+    "options": [
+      "53760",
+      "42240",
+      "5760",
+      "49920"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{48000 \\times 4 \\times 3}{100} = 5760\\)\n\nAmount \\(= P + I = 48000 + 5760 = 53760\\)\n\nSo the amount is N53760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N23000 for 4 years is N9200. Find the rate per annum.",
+    "options": [
+      "40%",
+      "8%",
+      "12%",
+      "10%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 9200}{23000 \\times 4} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N200000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "66200",
+      "260000",
+      "266200",
+      "292820"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 200000\\left(1 + \\frac{10}{100}\\right)^{3} = 200000(1.1)^{3}\\)\n\n\\(= 266200\\)\n\nSo the amount is N266200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N110000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "176000",
+      "80080",
+      "190080",
+      "228096"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 110000\\left(1 + \\frac{20}{100}\\right)^{3} = 110000(1.2)^{3}\\)\n\n\\(= 190080\\)\n\nSo the amount is N190080.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N12000 for 4 years is N4800. Find the rate per annum.",
+    "options": [
+      "12%",
+      "8%",
+      "10%",
+      "40%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4800}{12000 \\times 4} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N6000 for 2 years at 5% per annum.",
+    "options": [
+      "300",
+      "60",
+      "6600",
+      "600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{6000 \\times 5 \\times 2}{100} = 600\\)\n\nSo the simple interest is N600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N80000 for 3 years at 20% per annum compound interest.",
+    "options": [
+      "138240",
+      "128000",
+      "165888",
+      "58240"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 80000\\left(1 + \\frac{20}{100}\\right)^{3} = 80000(1.2)^{3}\\)\n\n\\(= 138240\\)\n\nSo the amount is N138240.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N420000 depreciates at 10% per annum. Find its value after 3 years.",
+    "options": [
+      "294000",
+      "559020",
+      "419990",
+      "306180"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 420000\\left(1 - \\frac{10}{100}\\right)^{3} = 420000(0.9)^{3}\\)\n\n\\(= 306180\\)\n\nSo its value is N306180.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N46000 becomes after 3 years at 6% per annum simple interest.",
+    "options": [
+      "8280",
+      "48760",
+      "37720",
+      "54280"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{46000 \\times 6 \\times 3}{100} = 8280\\)\n\nAmount \\(= P + I = 46000 + 8280 = 54280\\)\n\nSo the amount is N54280.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N19000 for 3 years at 7.5% per annum.",
+    "options": [
+      "427.5",
+      "23275",
+      "1425",
+      "4275"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{19000 \\times 7.5 \\times 3}{100} = 4275\\)\n\nSo the simple interest is N4275.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N196000.",
+    "options": [
+      "11760",
+      "588",
+      "190120",
+      "5880"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 196000 = 5880\\)\n\nSo his commission is N5880.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5400 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "5387.5",
+      "6075",
+      "4725",
+      "675"
+    ],
+    "correctIndex": 2,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 5400 = 675\\)\n\nSelling price \\(= 5400 - 675 = 4725\\)\n\nSo the selling price is N4725.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N30000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "13200",
+      "43200",
+      "51840",
+      "42000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 30000\\left(1 + \\frac{20}{100}\\right)^{2} = 30000(1.2)^{2}\\)\n\n\\(= 43200\\)\n\nSo the amount is N43200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N5700 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "6412.5",
+      "4987.5",
+      "5687.5",
+      "712.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 5700 = 712.5\\)\n\nSelling price \\(= 5700 - 712.5 = 4987.5\\)\n\nSo the selling price is N4987.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N186000.",
+    "options": [
+      "180420",
+      "5580",
+      "558",
+      "11160"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 186000 = 5580\\)\n\nSo his commission is N5580.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N23000 becomes after 2 years at 6% per annum simple interest.",
+    "options": [
+      "2760",
+      "20240",
+      "25760",
+      "24380"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{23000 \\times 6 \\times 2}{100} = 2760\\)\n\nAmount \\(= P + I = 23000 + 2760 = 25760\\)\n\nSo the amount is N25760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N4000 becomes after 2 years at 6% per annum simple interest.",
+    "options": [
+      "4240",
+      "480",
+      "3520",
+      "4480"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{4000 \\times 6 \\times 2}{100} = 480\\)\n\nAmount \\(= P + I = 4000 + 480 = 4480\\)\n\nSo the amount is N4480.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N15000 for 6 years at 6% per annum.",
+    "options": [
+      "5400",
+      "20400",
+      "540",
+      "900"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{15000 \\times 6 \\times 6}{100} = 5400\\)\n\nSo the simple interest is N5400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N6400 is sold at a discount of 20%. Find the selling price.",
+    "options": [
+      "5120",
+      "7680",
+      "1280",
+      "6380"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{20}{100} \\times 6400 = 1280\\)\n\nSelling price \\(= 6400 - 1280 = 5120\\)\n\nSo the selling price is N5120.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N110000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "27500",
+      "46406.25",
+      "214843.75",
+      "109975"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 110000\\left(1 - \\frac{25}{100}\\right)^{3} = 110000(0.75)^{3}\\)\n\n\\(= 46406.25\\)\n\nSo its value is N46406.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N10000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "12100",
+      "2100",
+      "13310",
+      "12000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 10000\\left(1 + \\frac{10}{100}\\right)^{2} = 10000(1.1)^{2}\\)\n\n\\(= 12100\\)\n\nSo the amount is N12100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N184000.",
+    "options": [
+      "165600",
+      "1840",
+      "18400",
+      "36800"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 184000 = 18400\\)\n\nSo his commission is N18400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8900 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "8010",
+      "890",
+      "8890",
+      "9790"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 8900 = 890\\)\n\nSelling price \\(= 8900 - 890 = 8010\\)\n\nSo the selling price is N8010.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N66000.",
+    "options": [
+      "6600",
+      "660",
+      "59400",
+      "13200"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 66000 = 6600\\)\n\nSo his commission is N6600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N190000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "252890",
+      "278179",
+      "62890",
+      "247000"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 190000\\left(1 + \\frac{10}{100}\\right)^{3} = 190000(1.1)^{3}\\)\n\n\\(= 252890\\)\n\nSo the amount is N252890.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N21000 for 5 years is N10500. Find the rate per annum.",
+    "options": [
+      "10%",
+      "50%",
+      "12%",
+      "8%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 10500}{21000 \\times 5} = 10\\)\n\nSo the rate is 10% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N8900 is sold at a discount of 12.5%. Find the selling price.",
+    "options": [
+      "1112.5",
+      "10012.5",
+      "8887.5",
+      "7787.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Discount \\(= \\frac{12.5}{100} \\times 8900 = 1112.5\\)\n\nSelling price \\(= 8900 - 1112.5 = 7787.5\\)\n\nSo the selling price is N7787.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N7700 is sold at a discount of 30%. Find the selling price.",
+    "options": [
+      "5390",
+      "7670",
+      "10010",
+      "2310"
+    ],
+    "correctIndex": 0,
+    "explanation": "Discount \\(= \\frac{30}{100} \\times 7700 = 2310\\)\n\nSelling price \\(= 7700 - 2310 = 5390\\)\n\nSo the selling price is N5390.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N14000 for 5 years at 4% per annum.",
+    "options": [
+      "16800",
+      "2800",
+      "560",
+      "280"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{14000 \\times 4 \\times 5}{100} = 2800\\)\n\nSo the simple interest is N2800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N40000 for 2 years at 10% per annum compound interest.",
+    "options": [
+      "53240",
+      "48400",
+      "8400",
+      "48000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 40000\\left(1 + \\frac{10}{100}\\right)^{2} = 40000(1.1)^{2}\\)\n\n\\(= 48400\\)\n\nSo the amount is N48400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N57000 for 6 years at 10% per annum.",
+    "options": [
+      "3420",
+      "91200",
+      "5700",
+      "34200"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{57000 \\times 10 \\times 6}{100} = 34200\\)\n\nSo the simple interest is N34200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2.5% commission on sales. Find his commission on sales worth N71000.",
+    "options": [
+      "1775",
+      "69225",
+      "177.5",
+      "3550"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{2.5}{100} \\times 71000 = 1775\\)\n\nSo his commission is N1775.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N150000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "292968.75",
+      "63281.25",
+      "149975",
+      "37500"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 150000\\left(1 - \\frac{25}{100}\\right)^{3} = 150000(0.75)^{3}\\)\n\n\\(= 63281.25\\)\n\nSo its value is N63281.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N49000.",
+    "options": [
+      "7350",
+      "3675",
+      "367.5",
+      "45325"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 49000 = 3675\\)\n\nSo his commission is N3675.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N29000 for 5 years is N7250. Find the rate per annum.",
+    "options": [
+      "3%",
+      "25%",
+      "5%",
+      "7%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 7250}{29000 \\times 5} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N54000 for 2 years at 2% per annum.",
+    "options": [
+      "56160",
+      "2160",
+      "1080",
+      "216"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{54000 \\times 2 \\times 2}{100} = 2160\\)\n\nSo the simple interest is N2160.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 4% commission on sales. Find his commission on sales worth N30000.",
+    "options": [
+      "28800",
+      "2400",
+      "120",
+      "1200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{4}{100} \\times 30000 = 1200\\)\n\nSo his commission is N1200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N49000 becomes after 2 years at 5% per annum simple interest.",
+    "options": [
+      "4900",
+      "44100",
+      "53900",
+      "51450"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{49000 \\times 5 \\times 2}{100} = 4900\\)\n\nAmount \\(= P + I = 49000 + 4900 = 53900\\)\n\nSo the amount is N53900.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N24000 for 4 years is N7680. Find the rate per annum.",
+    "options": [
+      "10%",
+      "8%",
+      "6%",
+      "32%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 7680}{24000 \\times 4} = 8\\)\n\nSo the rate is 8% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N470000 depreciates at 25% per annum. Find its value after 2 years.",
+    "options": [
+      "235000",
+      "469975",
+      "264375",
+      "734375"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 470000\\left(1 - \\frac{25}{100}\\right)^{2} = 470000(0.75)^{2}\\)\n\n\\(= 264375\\)\n\nSo its value is N264375.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N36000 for 5 years is N10800. Find the rate per annum.",
+    "options": [
+      "4%",
+      "6%",
+      "30%",
+      "8%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 10800}{36000 \\times 5} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N61000.",
+    "options": [
+      "57950",
+      "3050",
+      "305",
+      "6100"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 61000 = 3050\\)\n\nSo his commission is N3050.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N3500 is sold at a discount of 5%. Find the selling price.",
+    "options": [
+      "3495",
+      "3325",
+      "175",
+      "3675"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{5}{100} \\times 3500 = 175\\)\n\nSelling price \\(= 3500 - 175 = 3325\\)\n\nSo the selling price is N3325.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N330000 depreciates at 10% per annum. Find its value after 2 years.",
+    "options": [
+      "399300",
+      "267300",
+      "329990",
+      "264000"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 330000\\left(1 - \\frac{10}{100}\\right)^{2} = 330000(0.9)^{2}\\)\n\n\\(= 267300\\)\n\nSo its value is N267300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N21000 for 4 years is N4200. Find the rate per annum.",
+    "options": [
+      "20%",
+      "3%",
+      "7%",
+      "5%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4200}{21000 \\times 4} = 5\\)\n\nSo the rate is 5% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 10% commission on sales. Find his commission on sales worth N171000.",
+    "options": [
+      "153900",
+      "34200",
+      "1710",
+      "17100"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{10}{100} \\times 171000 = 17100\\)\n\nSo his commission is N17100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N500000 depreciates at 10% per annum. Find its value after 3 years.",
+    "options": [
+      "364500",
+      "350000",
+      "499990",
+      "665500"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 500000\\left(1 - \\frac{10}{100}\\right)^{3} = 500000(0.9)^{3}\\)\n\n\\(= 364500\\)\n\nSo its value is N364500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N170000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "248897",
+      "221000",
+      "226270",
+      "56270"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 170000\\left(1 + \\frac{10}{100}\\right)^{3} = 170000(1.1)^{3}\\)\n\n\\(= 226270\\)\n\nSo the amount is N226270.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N39000 becomes after 5 years at 8% per annum simple interest.",
+    "options": [
+      "23400",
+      "42120",
+      "15600",
+      "54600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{39000 \\times 8 \\times 5}{100} = 15600\\)\n\nAmount \\(= P + I = 39000 + 15600 = 54600\\)\n\nSo the amount is N54600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N7600 is sold at a discount of 25%. Find the selling price.",
+    "options": [
+      "1900",
+      "5700",
+      "9500",
+      "7575"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{25}{100} \\times 7600 = 1900\\)\n\nSelling price \\(= 7600 - 1900 = 5700\\)\n\nSo the selling price is N5700.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N60000 for 3 years at 4% per annum.",
+    "options": [
+      "720",
+      "7200",
+      "2400",
+      "67200"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{60000 \\times 4 \\times 3}{100} = 7200\\)\n\nSo the simple interest is N7200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N33000 for 5 years is N9900. Find the rate per annum.",
+    "options": [
+      "30%",
+      "4%",
+      "6%",
+      "8%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 9900}{33000 \\times 5} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N39000 for 3 years is N7020. Find the rate per annum.",
+    "options": [
+      "18%",
+      "4%",
+      "6%",
+      "8%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 7020}{39000 \\times 3} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A shirt marked N6800 is sold at a discount of 10%. Find the selling price.",
+    "options": [
+      "6790",
+      "6120",
+      "680",
+      "7480"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discount \\(= \\frac{10}{100} \\times 6800 = 680\\)\n\nSelling price \\(= 6800 - 680 = 6120\\)\n\nSo the selling price is N6120.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N190000 depreciates at 25% per annum. Find its value after 3 years.",
+    "options": [
+      "80156.25",
+      "47500",
+      "189975",
+      "371093.75"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 190000\\left(1 - \\frac{25}{100}\\right)^{3} = 190000(0.75)^{3}\\)\n\n\\(= 80156.25\\)\n\nSo its value is N80156.25.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N120000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "39720",
+      "175692",
+      "159720",
+      "156000"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 120000\\left(1 + \\frac{10}{100}\\right)^{3} = 120000(1.1)^{3}\\)\n\n\\(= 159720\\)\n\nSo the amount is N159720.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N40000 for 3 years is N9600. Find the rate per annum.",
+    "options": [
+      "24%",
+      "10%",
+      "6%",
+      "8%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 9600}{40000 \\times 3} = 8\\)\n\nSo the rate is 8% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 2% commission on sales. Find his commission on sales worth N125000.",
+    "options": [
+      "2500",
+      "250",
+      "5000",
+      "122500"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{2}{100} \\times 125000 = 2500\\)\n\nSo his commission is N2500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N49000 becomes after 4 years at 3% per annum simple interest.",
+    "options": [
+      "43120",
+      "50470",
+      "5880",
+      "54880"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{49000 \\times 3 \\times 4}{100} = 5880\\)\n\nAmount \\(= P + I = 49000 + 5880 = 54880\\)\n\nSo the amount is N54880.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N38000 becomes after 3 years at 4% per annum simple interest.",
+    "options": [
+      "4560",
+      "42560",
+      "33440",
+      "39520"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{38000 \\times 4 \\times 3}{100} = 4560\\)\n\nAmount \\(= P + I = 38000 + 4560 = 42560\\)\n\nSo the amount is N42560.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N12000 becomes after 5 years at 8% per annum simple interest.",
+    "options": [
+      "7200",
+      "16800",
+      "12960",
+      "4800"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{12000 \\times 8 \\times 5}{100} = 4800\\)\n\nAmount \\(= P + I = 12000 + 4800 = 16800\\)\n\nSo the amount is N16800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N22000 becomes after 2 years at 4% per annum simple interest.",
+    "options": [
+      "23760",
+      "20240",
+      "1760",
+      "22880"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{22000 \\times 4 \\times 2}{100} = 1760\\)\n\nAmount \\(= P + I = 22000 + 1760 = 23760\\)\n\nSo the amount is N23760.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N14000 for 4 years is N4480. Find the rate per annum.",
+    "options": [
+      "8%",
+      "6%",
+      "32%",
+      "10%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4480}{14000 \\times 4} = 8\\)\n\nSo the rate is 8% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N160000 for 2 years at 5% per annum compound interest.",
+    "options": [
+      "16400",
+      "176000",
+      "176400",
+      "185220"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 160000\\left(1 + \\frac{5}{100}\\right)^{2} = 160000(1.05)^{2}\\)\n\n\\(= 176400\\)\n\nSo the amount is N176400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N49000 for 3 years at 5% per annum.",
+    "options": [
+      "7350",
+      "56350",
+      "2450",
+      "735"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{49000 \\times 5 \\times 3}{100} = 7350\\)\n\nSo the simple interest is N7350.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N7000 for 3 years at 4% per annum.",
+    "options": [
+      "280",
+      "84",
+      "7840",
+      "840"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{7000 \\times 4 \\times 3}{100} = 840\\)\n\nSo the simple interest is N840.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N80000 for 3 years at 5% per annum compound interest.",
+    "options": [
+      "97240.5",
+      "92000",
+      "12610",
+      "92610"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 80000\\left(1 + \\frac{5}{100}\\right)^{3} = 80000(1.05)^{3}\\)\n\n\\(= 92610\\)\n\nSo the amount is N92610.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N31000 for 3 years is N7440. Find the rate per annum.",
+    "options": [
+      "10%",
+      "8%",
+      "24%",
+      "6%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 7440}{31000 \\times 3} = 8\\)\n\nSo the rate is 8% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N100000 for 3 years at 10% per annum compound interest.",
+    "options": [
+      "130000",
+      "33100",
+      "146410",
+      "133100"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 100000\\left(1 + \\frac{10}{100}\\right)^{3} = 100000(1.1)^{3}\\)\n\n\\(= 133100\\)\n\nSo the amount is N133100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 3% commission on sales. Find his commission on sales worth N22000.",
+    "options": [
+      "660",
+      "1320",
+      "66",
+      "21340"
+    ],
+    "correctIndex": 0,
+    "explanation": "Commission \\(= \\frac{3}{100} \\times 22000 = 660\\)\n\nSo his commission is N660.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N48000 becomes after 4 years at 5% per annum simple interest.",
+    "options": [
+      "50400",
+      "38400",
+      "9600",
+      "57600"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{48000 \\times 5 \\times 4}{100} = 9600\\)\n\nAmount \\(= P + I = 48000 + 9600 = 57600\\)\n\nSo the amount is N57600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 7.5% commission on sales. Find his commission on sales worth N176000.",
+    "options": [
+      "26400",
+      "1320",
+      "162800",
+      "13200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Commission \\(= \\frac{7.5}{100} \\times 176000 = 13200\\)\n\nSo his commission is N13200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the simple interest on N30000 for 3 years at 8% per annum.",
+    "options": [
+      "37200",
+      "2400",
+      "720",
+      "7200"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100}\\)\n\n\\(I = \\frac{30000 \\times 8 \\times 3}{100} = 7200\\)\n\nSo the simple interest is N7200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount that N40000 becomes after 5 years at 8% per annum simple interest.",
+    "options": [
+      "43200",
+      "24000",
+      "16000",
+      "56000"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(I = \\frac{PRT}{100} = \\frac{40000 \\times 8 \\times 5}{100} = 16000\\)\n\nAmount \\(= P + I = 40000 + 16000 = 56000\\)\n\nSo the amount is N56000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The simple interest on N19000 for 4 years is N4560. Find the rate per annum.",
+    "options": [
+      "6%",
+      "24%",
+      "4%",
+      "8%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(I = \\frac{PRT}{100}\\), so \\(R = \\frac{100I}{PT}\\).\n\n\\(R = \\frac{100 \\times 4560}{19000 \\times 4} = 6\\)\n\nSo the rate is 6% per annum.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A machine bought for N110000 depreciates at 25% per annum. Find its value after 2 years.",
+    "options": [
+      "171875",
+      "109975",
+      "55000",
+      "61875"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = P\\left(1 - \\frac{r}{100}\\right)^{T}\\)\n\n\\(V = 110000\\left(1 - \\frac{25}{100}\\right)^{2} = 110000(0.75)^{2}\\)\n\n\\(= 61875\\)\n\nSo its value is N61875.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the amount on N10000 for 2 years at 20% per annum compound interest.",
+    "options": [
+      "17280",
+      "14000",
+      "4400",
+      "14400"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A = P\\left(1 + \\frac{R}{100}\\right)^{T}\\)\n\n\\(A = 10000\\left(1 + \\frac{20}{100}\\right)^{2} = 10000(1.2)^{2}\\)\n\n\\(= 14400\\)\n\nSo the amount is N14400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A salesman earns 5% commission on sales. Find his commission on sales worth N192000.",
+    "options": [
+      "19200",
+      "182400",
+      "9600",
+      "960"
+    ],
+    "correctIndex": 2,
+    "explanation": "Commission \\(= \\frac{5}{100} \\times 192000 = 9600\\)\n\nSo his commission is N9600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "FezrgxGf71d05adRGcKu",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

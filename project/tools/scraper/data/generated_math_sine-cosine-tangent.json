@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Evaluate \\(\\tan 30°\\).",
+    "options": [
+      "\\(\\sqrt{3}\\)",
+      "\\(\\frac{\\sqrt{3}}{3}\\)",
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(0\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\tan 30° = \\frac{\\sqrt{3}}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\tan \\theta = \\sqrt{3}\\) and \\(0° \\leq \\theta \\leq 90°\\), find \\(\\theta\\).",
+    "options": [
+      "30°",
+      "75°",
+      "60°",
+      "45°"
+    ],
+    "correctIndex": 2,
+    "explanation": "From the table of special angles, \\(\\tan 60° = \\sqrt{3}\\).\n\nSo \\(\\theta = 60°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 24cm, the adjacent side is 45cm and the hypotenuse is 51cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{8}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{24}{51} = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 40cm, the adjacent side is 42cm and the hypotenuse is 58cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{21}{29}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{40}{58} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 17\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "12.0cm",
+      "14.0cm",
+      "24.0cm",
+      "6.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{17 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 12.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 18\\)cm, \\(c = 12\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "27.7cm",
+      "21.6cm",
+      "26.2cm",
+      "30.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 18^{2} + 12^{2} - 2(18)(12)\\cos 120°\\)\n\n\\(a^{2} = 684\\)\n\n\\(a = 26.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{\\sqrt{3}}{2}\\) and \\(0° \\leq \\theta \\leq 90°\\), find \\(\\theta\\).",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "15°"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the table of special angles, \\(\\cos 30° = \\frac{\\sqrt{3}}{2}\\).\n\nSo \\(\\theta = 30°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(\\sin \\theta = \\frac{5}{13}\\) and \\(\\cos \\theta = \\frac{12}{13}\\), find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{13}{5}\\)",
+      "\\(\\frac{12}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n\n\\(= \\frac{5}{13} \\div \\frac{12}{13} = \\frac{5}{13} \\times \\frac{13}{12} = \\frac{5}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 39\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "19.5cm",
+      "80.0cm",
+      "78.0cm",
+      "39.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{39 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 78.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 17\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "23.5cm",
+      "31.0cm",
+      "22.0cm",
+      "3.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 17^{2} - 2(14)(17)\\cos 90°\\)\n\n\\(a^{2} = 485\\)\n\n\\(a = 22.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 30° \\times \\tan 45°\\).",
+    "options": [
+      "1",
+      "1.5",
+      "0.5",
+      "-0.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\sin 30° \\times \\tan 45° = \\frac{1}{2} \\times 1 = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 90° + \\sin 0°\\).",
+    "options": [
+      "0.5",
+      "-1",
+      "0",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\cos 90° + \\sin 0° = 0 + 0 = 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 7\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "22.0cm",
+      "13.0cm",
+      "16.6cm",
+      "14.5cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 7^{2} - 2(15)(7)\\cos 60°\\)\n\n\\(a^{2} = 169\\)\n\n\\(a = 13.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(\\sin \\theta = \\frac{3}{5}\\) and \\(\\cos \\theta = \\frac{4}{5}\\), find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n\n\\(= \\frac{3}{5} \\div \\frac{4}{5} = \\frac{3}{5} \\times \\frac{5}{4} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 90° - \\cos 0°\\).",
+    "options": [
+      "0.5",
+      "1",
+      "0",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\sin 90° - \\cos 0° = 1 - 1 = 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(\\sin \\theta = \\frac{7}{25}\\) and \\(\\cos \\theta = \\frac{24}{25}\\), find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{25}{7}\\)",
+      "\\(\\frac{24}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n\n\\(= \\frac{7}{25} \\div \\frac{24}{25} = \\frac{7}{25} \\times \\frac{25}{24} = \\frac{7}{24}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{3}{5}\\) and \\(\\theta\\) is acute, find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\cos^{2}\\theta = 1 - \\left(\\frac{3}{5}\\right)^{2} = 1 - \\frac{9}{25} = \\frac{16}{25}\\)\n\n\\(\\cos\\theta = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 30°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\sqrt{3}\\)",
+      "\\(0\\)",
+      "\\(\\frac{\\sqrt{3}}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\cos 30° = \\frac{\\sqrt{3}}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 25\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "37.4cm",
+      "17.7cm",
+      "35.4cm",
+      "40.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{25 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 35.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 32cm, the adjacent side is 60cm and the hypotenuse is 68cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{60}{68} = \\frac{15}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(\\sin \\theta = \\frac{20}{29}\\) and \\(\\cos \\theta = \\frac{21}{29}\\), find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{29}{20}\\)",
+      "\\(\\frac{20}{21}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n\n\\(= \\frac{20}{29} \\div \\frac{21}{29} = \\frac{20}{29} \\times \\frac{29}{21} = \\frac{20}{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{1}{2}\\) and \\(0° \\leq \\theta \\leq 90°\\), find \\(\\theta\\).",
+    "options": [
+      "30°",
+      "60°",
+      "45°",
+      "75°"
+    ],
+    "correctIndex": 1,
+    "explanation": "From the table of special angles, \\(\\cos 60° = \\frac{1}{2}\\).\n\nSo \\(\\theta = 60°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(\\sin \\theta = \\frac{9}{41}\\) and \\(\\cos \\theta = \\frac{40}{41}\\), find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{41}{9}\\)",
+      "\\(\\frac{9}{41}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n\n\\(= \\frac{9}{41} \\div \\frac{40}{41} = \\frac{9}{41} \\times \\frac{41}{40} = \\frac{9}{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 4\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "6.0cm",
+      "14.0cm",
+      "10.8cm",
+      "12.5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 4^{2} - 2(10)(4)\\cos 120°\\)\n\n\\(a^{2} = 156\\)\n\n\\(a = 12.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 32cm, the adjacent side is 60cm and the hypotenuse is 68cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{32}{60} = \\frac{8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 9\\)cm, \\(c = 7\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "16.0cm",
+      "15.4cm",
+      "11.4cm",
+      "13.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 9^{2} + 7^{2} - 2(9)(7)\\cos 120°\\)\n\n\\(a^{2} = 193\\)\n\n\\(a = 13.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\tan 45°\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{\\sqrt{3}}{3}\\)",
+      "\\(\\sqrt{3}\\)",
+      "\\(0\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\tan 45° = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 11\\)cm, \\(c = 17\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "21.7cm",
+      "28.0cm",
+      "20.2cm",
+      "6.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 11^{2} + 17^{2} - 2(11)(17)\\cos 90°\\)\n\n\\(a^{2} = 410\\)\n\n\\(a = 20.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\tan 60°\\).",
+    "options": [
+      "\\(\\sqrt{3}\\)",
+      "\\(0\\)",
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\tan 60° = \\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{1}{2}\\) and \\(0° \\leq \\theta \\leq 90°\\), find \\(\\theta\\).",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "15°"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the table of special angles, \\(\\sin 30° = \\frac{1}{2}\\).\n\nSo \\(\\theta = 30°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 17\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "26.0cm",
+      "32.0cm",
+      "24.0cm",
+      "12.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{17 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 24.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 30°\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{\\sqrt{3}}{3}\\)",
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\sin 30° = \\frac{1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 12cm, the adjacent side is 16cm and the hypotenuse is 20cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{12}{20} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{7}{25}\\) and \\(\\theta\\) is acute, find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\cos^{2}\\theta = 1 - \\left(\\frac{7}{25}\\right)^{2} = 1 - \\frac{49}{625} = \\frac{576}{625}\\)\n\n\\(\\cos\\theta = \\frac{24}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 11\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "7.0cm",
+      "13.2cm",
+      "11.7cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 11^{2} - 2(4)(11)\\cos 90°\\)\n\n\\(a^{2} = 137\\)\n\n\\(a = 11.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 23\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "18.8cm",
+      "20.8cm",
+      "9.4cm",
+      "28.2cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{23 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 18.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 11\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.0cm",
+      "12.5cm",
+      "16.4cm",
+      "14.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 11^{2} - 2(6)(11)\\cos 120°\\)\n\n\\(a^{2} = 223\\)\n\n\\(a = 14.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{\\sqrt{3}}{2}\\) and \\(0° \\leq \\theta \\leq 90°\\), find \\(\\theta\\).",
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "75°"
+    ],
+    "correctIndex": 2,
+    "explanation": "From the table of special angles, \\(\\sin 60° = \\frac{\\sqrt{3}}{2}\\).\n\nSo \\(\\theta = 60°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 20cm, the adjacent side is 21cm and the hypotenuse is 29cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{21}{29}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{20}{29} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 20cm, the adjacent side is 21cm and the hypotenuse is 29cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{29}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{20}{21} = \\frac{20}{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 15\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "22.0cm",
+      "13.0cm",
+      "14.5cm",
+      "16.6cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 15^{2} - 2(7)(15)\\cos 60°\\)\n\n\\(a^{2} = 169\\)\n\n\\(a = 13.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 45°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(0\\)",
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\cos 45° = \\frac{\\sqrt{2}}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{12}{13}\\) and \\(\\theta\\) is acute, find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{5}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\sin^{2}\\theta = 1 - \\left(\\frac{12}{13}\\right)^{2} = 1 - \\frac{144}{169} = \\frac{25}{169}\\)\n\n\\(\\sin\\theta = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(\\sin \\theta = \\frac{8}{17}\\) and \\(\\cos \\theta = \\frac{15}{17}\\), find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{17}{8}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n\n\\(= \\frac{8}{17} \\div \\frac{15}{17} = \\frac{8}{17} \\times \\frac{17}{15} = \\frac{8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 14\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "11.9cm",
+      "9.9cm",
+      "19.8cm",
+      "4.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{14 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 9.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{9}{41}\\) and \\(\\theta\\) is acute, find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\cos^{2}\\theta = 1 - \\left(\\frac{9}{41}\\right)^{2} = 1 - \\frac{81}{1681} = \\frac{1600}{1681}\\)\n\n\\(\\cos\\theta = \\frac{40}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 90°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\sin 90° = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 29\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "16.7cm",
+      "52.2cm",
+      "25.1cm",
+      "50.2cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{29 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 50.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 90°\\).",
+    "options": [
+      "\\(\\sqrt{3}\\)",
+      "\\(\\frac{\\sqrt{3}}{3}\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\cos 90° = 0\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 60°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "\\(1\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{\\sqrt{3}}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\cos 60° = \\frac{1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 35cm, the adjacent side is 120cm and the hypotenuse is 125cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{120}{125} = \\frac{24}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 0°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "\\(0\\)",
+      "\\(\\frac{\\sqrt{3}}{3}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\cos 0° = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 27cm, the adjacent side is 120cm and the hypotenuse is 123cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{40}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{27}{123} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 20\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "23.1cm",
+      "25.1cm",
+      "11.5cm",
+      "17.3cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{20 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 23.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 30° + \\cos 60°\\).",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "1.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\sin 30° + \\cos 60° = \\frac{1}{2} + \\frac{1}{2} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 13\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "18.3cm",
+      "16.8cm",
+      "32.0cm",
+      "23.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 13^{2} - 2(19)(13)\\cos 60°\\)\n\n\\(a^{2} = 283\\)\n\n\\(a = 16.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 45°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "\\(0\\)",
+      "\\(\\sqrt{3}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\sin 45° = \\frac{\\sqrt{2}}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 35\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "72.0cm",
+      "17.5cm",
+      "35.0cm",
+      "70.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{35 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 70.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 32\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "27.7cm",
+      "39.0cm",
+      "37.0cm",
+      "18.5cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{32 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 37.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 13\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "3.0cm",
+      "17.9cm",
+      "23.0cm",
+      "16.4cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 13^{2} - 2(10)(13)\\cos 90°\\)\n\n\\(a^{2} = 269\\)\n\n\\(a = 16.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 14cm, the adjacent side is 48cm and the hypotenuse is 50cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{14}{50} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{8}{17}\\) and \\(\\theta\\) is acute, find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\cos^{2}\\theta = 1 - \\left(\\frac{8}{17}\\right)^{2} = 1 - \\frac{64}{289} = \\frac{225}{289}\\)\n\n\\(\\cos\\theta = \\frac{15}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 28cm, the adjacent side is 96cm and the hypotenuse is 100cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{96}{100} = \\frac{24}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 8cm, the adjacent side is 15cm and the hypotenuse is 17cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{8}{15} = \\frac{8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 18\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "20.6cm",
+      "22.1cm",
+      "28.0cm",
+      "8.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 18^{2} - 2(10)(18)\\cos 90°\\)\n\n\\(a^{2} = 424\\)\n\n\\(a = 20.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 15cm, the adjacent side is 20cm and the hypotenuse is 25cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{15}{25} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 12\\)cm, \\(c = 8\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.9cm",
+      "20.0cm",
+      "4.0cm",
+      "14.4cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 12^{2} + 8^{2} - 2(12)(8)\\cos 90°\\)\n\n\\(a^{2} = 208\\)\n\n\\(a = 14.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 80cm, the adjacent side is 84cm and the hypotenuse is 116cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{20}{29}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{84}{116} = \\frac{21}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 39\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "49.8cm",
+      "31.8cm",
+      "47.8cm",
+      "23.9cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{39 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 47.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 18\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "34.0cm",
+      "18.6cm",
+      "24.1cm",
+      "17.1cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 18^{2} - 2(16)(18)\\cos 60°\\)\n\n\\(a^{2} = 292\\)\n\n\\(a = 17.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\cos 0° + \\tan 0°\\).",
+    "options": [
+      "1",
+      "0",
+      "1.5",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\cos 0° + \\tan 0° = 1 + 0 = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 38\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "21.9cm",
+      "43.9cm",
+      "45.9cm",
+      "32.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{38 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 43.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 13\\)cm, \\(c = 20\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "28.8cm",
+      "33.0cm",
+      "30.3cm",
+      "23.9cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 13^{2} + 20^{2} - 2(13)(20)\\cos 120°\\)\n\n\\(a^{2} = 829\\)\n\n\\(a = 28.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 30\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "45.0cm",
+      "42.4cm",
+      "44.4cm",
+      "21.2cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{30 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 42.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 90°\\) and \\(p = 16\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "24.6cm",
+      "61.0cm",
+      "22.6cm",
+      "11.3cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{16 \\times \\sin 90°}{\\sin 45°}\\)\n\n\\(= 22.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 17\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "36.0cm",
+      "31.2cm",
+      "25.5cm",
+      "32.7cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 17^{2} - 2(19)(17)\\cos 120°\\)\n\n\\(a^{2} = 973\\)\n\n\\(a = 31.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 12\\)cm, \\(c = 6\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "18.0cm",
+      "15.9cm",
+      "13.4cm",
+      "17.4cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 12^{2} + 6^{2} - 2(12)(6)\\cos 120°\\)\n\n\\(a^{2} = 252\\)\n\n\\(a = 15.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{5}{13}\\) and \\(\\theta\\) is acute, find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{5}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\cos^{2}\\theta = 1 - \\left(\\frac{5}{13}\\right)^{2} = 1 - \\frac{25}{169} = \\frac{144}{169}\\)\n\n\\(\\cos\\theta = \\frac{12}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\tan 45° \\times \\cos 0°\\).",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "1.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\tan 45° \\times \\cos 0° = 1 \\times 1 = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 3cm, the adjacent side is 4cm and the hypotenuse is 5cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{3}{5} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 24cm, the adjacent side is 45cm and the hypotenuse is 51cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{15}{17}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{24}{45} = \\frac{8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 60°\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{\\sqrt{2}}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\sin 60° = \\frac{\\sqrt{3}}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 16\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.0cm",
+      "31.0cm",
+      "21.9cm",
+      "15.5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 16^{2} - 2(15)(16)\\cos 60°\\)\n\n\\(a^{2} = 241\\)\n\n\\(a = 15.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 21cm, the adjacent side is 72cm and the hypotenuse is 75cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{21}{72} = \\frac{7}{24}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 10cm, the adjacent side is 24cm and the hypotenuse is 26cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{12}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{10}{26} = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 18\\)cm, \\(c = 11\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "29.0cm",
+      "22.6cm",
+      "7.0cm",
+      "21.1cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 18^{2} + 11^{2} - 2(18)(11)\\cos 90°\\)\n\n\\(a^{2} = 445\\)\n\n\\(a = 21.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{15}{17}\\) and \\(\\theta\\) is acute, find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{8}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\sin^{2}\\theta = 1 - \\left(\\frac{15}{17}\\right)^{2} = 1 - \\frac{225}{289} = \\frac{64}{289}\\)\n\n\\(\\sin\\theta = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 26\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "20.4cm",
+      "36.8cm",
+      "9.2cm",
+      "18.4cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{26 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 18.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 15\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "35.0cm",
+      "19.5cm",
+      "18.0cm",
+      "25.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 15^{2} - 2(20)(15)\\cos 60°\\)\n\n\\(a^{2} = 325\\)\n\n\\(a = 18.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 18cm, the adjacent side is 80cm and the hypotenuse is 82cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{41}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{18}{82} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 7\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "13.0cm",
+      "22.7cm",
+      "27.0cm",
+      "21.2cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 7^{2} - 2(20)(7)\\cos 90°\\)\n\n\\(a^{2} = 449\\)\n\n\\(a = 21.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 100cm, the adjacent side is 105cm and the hypotenuse is 145cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{29}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{105}{145} = \\frac{21}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{21}{29}\\) and \\(\\theta\\) is acute, find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{21}{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\sin^{2}\\theta = 1 - \\left(\\frac{21}{29}\\right)^{2} = 1 - \\frac{441}{841} = \\frac{400}{841}\\)\n\n\\(\\sin\\theta = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4\\cos 60°\\).",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(4\\cos 60° = 4 \\times \\frac{1}{2} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2\\sin 30°\\).",
+    "options": [
+      "1.5",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(2\\sin 30° = 2 \\times \\frac{1}{2} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 16\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "12.0cm",
+      "18.0cm",
+      "20.0cm",
+      "16.5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 16^{2} - 2(4)(16)\\cos 90°\\)\n\n\\(a^{2} = 272\\)\n\n\\(a = 16.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 14\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "13.4cm",
+      "5.7cm",
+      "11.4cm",
+      "17.1cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{14 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 11.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 8\\)cm, \\(c = 16\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "21.2cm",
+      "24.0cm",
+      "17.9cm",
+      "22.7cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 8^{2} + 16^{2} - 2(8)(16)\\cos 120°\\)\n\n\\(a^{2} = 448\\)\n\n\\(a = 21.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 13\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "11.3cm",
+      "24.5cm",
+      "22.5cm",
+      "7.5cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{13 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 22.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 12\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "5.0cm",
+      "19.0cm",
+      "15.4cm",
+      "13.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 12^{2} - 2(7)(12)\\cos 90°\\)\n\n\\(a^{2} = 193\\)\n\n\\(a = 13.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 6\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "10.2cm",
+      "8.7cm",
+      "7.2cm",
+      "10.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 6^{2} - 2(4)(6)\\cos 120°\\)\n\n\\(a^{2} = 76\\)\n\n\\(a = 8.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{40}{41}\\) and \\(\\theta\\) is acute, find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{40}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\sin^{2}\\theta = 1 - \\left(\\frac{40}{41}\\right)^{2} = 1 - \\frac{1600}{1681} = \\frac{81}{1681}\\)\n\n\\(\\sin\\theta = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 8\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "10.6cm",
+      "1.0cm",
+      "12.1cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 8^{2} - 2(7)(8)\\cos 90°\\)\n\n\\(a^{2} = 113\\)\n\n\\(a = 10.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 35cm, the adjacent side is 120cm and the hypotenuse is 125cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{35}{120} = \\frac{7}{24}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 8cm, the adjacent side is 15cm and the hypotenuse is 17cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{15}{17} = \\frac{15}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 5\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "11.2cm",
+      "8.7cm",
+      "10.2cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 5^{2} - 2(10)(5)\\cos 60°\\)\n\n\\(a^{2} = 75\\)\n\n\\(a = 8.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 45cm, the adjacent side is 200cm and the hypotenuse is 205cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{41}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{45}{200} = \\frac{9}{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 6\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.5cm",
+      "16.0cm",
+      "14.0cm",
+      "11.7cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 6^{2} - 2(10)(6)\\cos 120°\\)\n\n\\(a^{2} = 196\\)\n\n\\(a = 14.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 26\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "41.0cm",
+      "18.4cm",
+      "36.8cm",
+      "38.8cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{26 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 36.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 27cm, the adjacent side is 120cm and the hypotenuse is 123cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{41}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{120}{123} = \\frac{40}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 11\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "30.0cm",
+      "27.8cm",
+      "22.0cm",
+      "26.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 11^{2} - 2(19)(11)\\cos 120°\\)\n\n\\(a^{2} = 691\\)\n\n\\(a = 26.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 60cm, the adjacent side is 63cm and the hypotenuse is 87cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{60}{63} = \\frac{20}{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 14\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "17.1cm",
+      "11.4cm",
+      "19.1cm",
+      "8.6cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{14 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 17.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 12\\)cm, \\(c = 13\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.7cm",
+      "14.0cm",
+      "25.0cm",
+      "12.5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 12^{2} + 13^{2} - 2(12)(13)\\cos 60°\\)\n\n\\(a^{2} = 157\\)\n\n\\(a = 12.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 18\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "25.0cm",
+      "17.2cm",
+      "19.3cm",
+      "15.7cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 18^{2} - 2(7)(18)\\cos 60°\\)\n\n\\(a^{2} = 247\\)\n\n\\(a = 15.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 24cm, the adjacent side is 45cm and the hypotenuse is 51cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{8}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{45}{51} = \\frac{15}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 20\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "30.0cm",
+      "22.4cm",
+      "10.0cm",
+      "23.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 20^{2} - 2(10)(20)\\cos 90°\\)\n\n\\(a^{2} = 500\\)\n\n\\(a = 22.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 10\\)cm, \\(c = 4\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "14.0cm",
+      "12.3cm",
+      "6.0cm",
+      "10.8cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 10^{2} + 4^{2} - 2(10)(4)\\cos 90°\\)\n\n\\(a^{2} = 116\\)\n\n\\(a = 10.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 18\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "10.4cm",
+      "20.8cm",
+      "15.6cm",
+      "22.8cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{18 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 20.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 37\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "18.5cm",
+      "74.0cm",
+      "76.0cm",
+      "37.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{37 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 74.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\sin \\theta = \\frac{20}{29}\\) and \\(\\theta\\) is acute, find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{21}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\cos^{2}\\theta = 1 - \\left(\\frac{20}{29}\\right)^{2} = 1 - \\frac{400}{841} = \\frac{441}{841}\\)\n\n\\(\\cos\\theta = \\frac{21}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{24}{25}\\) and \\(\\theta\\) is acute, find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{24}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\sin^{2}\\theta = 1 - \\left(\\frac{24}{25}\\right)^{2} = 1 - \\frac{576}{625} = \\frac{49}{625}\\)\n\n\\(\\sin\\theta = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 15cm, the adjacent side is 20cm and the hypotenuse is 25cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{20}{25} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 27cm, the adjacent side is 120cm and the hypotenuse is 123cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{9}{40}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{27}{120} = \\frac{9}{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 8\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "22.0cm",
+      "16.1cm",
+      "12.2cm",
+      "13.7cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 8^{2} - 2(14)(8)\\cos 60°\\)\n\n\\(a^{2} = 148\\)\n\n\\(a = 12.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 14\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "8.1cm",
+      "4.0cm",
+      "24.2cm",
+      "10.1cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{14 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 8.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 11\\)cm, \\(c = 11\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "22.0cm",
+      "20.6cm",
+      "19.1cm",
+      "15.6cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 11^{2} + 11^{2} - 2(11)(11)\\cos 120°\\)\n\n\\(a^{2} = 363\\)\n\n\\(a = 19.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 80cm, the adjacent side is 84cm and the hypotenuse is 116cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{80}{116} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 7\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "14.0cm",
+      "7.0cm",
+      "9.9cm",
+      "8.5cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 7^{2} - 2(7)(7)\\cos 60°\\)\n\n\\(a^{2} = 49\\)\n\n\\(a = 7.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 11\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "30.0cm",
+      "23.5cm",
+      "22.0cm",
+      "8.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 11^{2} - 2(19)(11)\\cos 90°\\)\n\n\\(a^{2} = 482\\)\n\n\\(a = 22.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 40cm, the adjacent side is 42cm and the hypotenuse is 58cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{21}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{42}{58} = \\frac{21}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 21cm, the adjacent side is 72cm and the hypotenuse is 75cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{24}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{72}{75} = \\frac{24}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 31\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "53.7cm",
+      "55.7cm",
+      "17.9cm",
+      "26.8cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{31 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 53.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 9\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "10.0cm",
+      "22.5cm",
+      "28.0cm",
+      "21.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 9^{2} - 2(19)(9)\\cos 90°\\)\n\n\\(a^{2} = 442\\)\n\n\\(a = 21.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 21cm, the adjacent side is 72cm and the hypotenuse is 75cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{21}{75} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 18cm, the adjacent side is 80cm and the hypotenuse is 82cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{40}{41}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{18}{80} = \\frac{9}{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 5\\)cm, \\(c = 4\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "9.3cm",
+      "7.8cm",
+      "6.4cm",
+      "9.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 5^{2} + 4^{2} - 2(5)(4)\\cos 120°\\)\n\n\\(a^{2} = 61\\)\n\n\\(a = 7.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\tan 0°\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{3}}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\sqrt{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\tan 0° = 0\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 11\\)cm, \\(c = 6\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "14.0cm",
+      "12.5cm",
+      "5.0cm",
+      "17.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 11^{2} + 6^{2} - 2(11)(6)\\cos 90°\\)\n\n\\(a^{2} = 157\\)\n\n\\(a = 12.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 40cm, the adjacent side is 42cm and the hypotenuse is 58cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{40}{42} = \\frac{20}{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 10cm, the adjacent side is 24cm and the hypotenuse is 26cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{12}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{10}{24} = \\frac{5}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 9\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "25.0cm",
+      "21.9cm",
+      "23.4cm",
+      "18.4cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 9^{2} - 2(16)(9)\\cos 120°\\)\n\n\\(a^{2} = 481\\)\n\n\\(a = 21.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 6cm, the adjacent side is 8cm and the hypotenuse is 10cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{6}{8} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 90°\\) and \\(p = 19\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "26.9cm",
+      "13.4cm",
+      "64.0cm",
+      "28.9cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{19 \\times \\sin 90°}{\\sin 45°}\\)\n\n\\(= 26.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(\\cos \\theta = \\frac{4}{5}\\) and \\(\\theta\\) is acute, find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use \\(\\sin^{2}\\theta + \\cos^{2}\\theta = 1\\).\n\n\\(\\sin^{2}\\theta = 1 - \\left(\\frac{4}{5}\\right)^{2} = 1 - \\frac{16}{25} = \\frac{9}{25}\\)\n\n\\(\\sin\\theta = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 5cm, the adjacent side is 12cm and the hypotenuse is 13cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{5}{13}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{5}{12} = \\frac{5}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 4\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "11.1cm",
+      "8.1cm",
+      "9.6cm",
+      "11.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 4^{2} - 2(7)(4)\\cos 120°\\)\n\n\\(a^{2} = 93\\)\n\n\\(a = 9.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 4\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "14.6cm",
+      "18.0cm",
+      "10.0cm",
+      "16.1cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 4^{2} - 2(14)(4)\\cos 90°\\)\n\n\\(a^{2} = 212\\)\n\n\\(a = 14.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 8\\)cm, \\(c = 16\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.9cm",
+      "15.4cm",
+      "13.9cm",
+      "24.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 8^{2} + 16^{2} - 2(8)(16)\\cos 60°\\)\n\n\\(a^{2} = 192\\)\n\n\\(a = 13.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 9\\)cm, \\(c = 10\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "19.0cm",
+      "13.5cm",
+      "1.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 9^{2} + 10^{2} - 2(9)(10)\\cos 90°\\)\n\n\\(a^{2} = 181\\)\n\n\\(a = 13.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 15\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "22.7cm",
+      "30.0cm",
+      "21.2cm",
+      "0.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 15^{2} - 2(15)(15)\\cos 90°\\)\n\n\\(a^{2} = 450\\)\n\n\\(a = 21.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\tan 45° + \\sin 90°\\).",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(\\tan 45° + \\sin 90° = 1 + 1 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 22\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "22.0cm",
+      "44.0cm",
+      "46.0cm",
+      "11.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{22 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 44.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 28\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "34.3cm",
+      "17.1cm",
+      "22.9cm",
+      "36.3cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{28 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 34.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 5\\)cm, \\(c = 11\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "6.0cm",
+      "12.1cm",
+      "13.6cm",
+      "16.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 5^{2} + 11^{2} - 2(5)(11)\\cos 90°\\)\n\n\\(a^{2} = 146\\)\n\n\\(a = 12.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 9\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "3.7cm",
+      "11.0cm",
+      "9.3cm",
+      "7.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{9 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 7.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\sin 0°\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(0\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard trigonometric ratios of special angles, \\(\\sin 0° = 0\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 11\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "11.0cm",
+      "5.5cm",
+      "24.0cm",
+      "22.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{11 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 22.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 20cm, the adjacent side is 21cm and the hypotenuse is 29cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{29}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{21}{29} = \\frac{21}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 7\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "2.9cm",
+      "8.6cm",
+      "5.7cm",
+      "7.7cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{7 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 5.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 16\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "21.9cm",
+      "31.0cm",
+      "28.4cm",
+      "26.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 16^{2} - 2(15)(16)\\cos 120°\\)\n\n\\(a^{2} = 721\\)\n\n\\(a = 26.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 18\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "34.4cm",
+      "32.9cm",
+      "38.0cm",
+      "26.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 18^{2} - 2(20)(18)\\cos 120°\\)\n\n\\(a^{2} = 1084\\)\n\n\\(a = 32.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 17\\)cm, \\(c = 20\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "26.2cm",
+      "20.2cm",
+      "37.0cm",
+      "18.7cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 17^{2} + 20^{2} - 2(17)(20)\\cos 60°\\)\n\n\\(a^{2} = 349\\)\n\n\\(a = 18.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 20\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "40.0cm",
+      "21.5cm",
+      "20.0cm",
+      "28.3cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 20^{2} - 2(20)(20)\\cos 60°\\)\n\n\\(a^{2} = 400\\)\n\n\\(a = 20.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 5\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "19.0cm",
+      "14.9cm",
+      "12.3cm",
+      "13.8cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 5^{2} - 2(14)(5)\\cos 60°\\)\n\n\\(a^{2} = 151\\)\n\n\\(a = 12.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6\\sin 30° - \\tan 45°\\).",
+    "options": [
+      "1",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute the exact values of the special angles.\n\n\\(6\\sin 30° - \\tan 45° = 6 \\times \\frac{1}{2} - 1 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 17\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "27.7cm",
+      "32.0cm",
+      "22.7cm",
+      "29.2cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 17^{2} - 2(15)(17)\\cos 120°\\)\n\n\\(a^{2} = 769\\)\n\n\\(a = 27.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 17\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "32.0cm",
+      "24.2cm",
+      "22.7cm",
+      "2.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 17^{2} - 2(15)(17)\\cos 90°\\)\n\n\\(a^{2} = 514\\)\n\n\\(a = 22.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 20\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "4.0cm",
+      "25.6cm",
+      "27.1cm",
+      "36.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 20^{2} - 2(16)(20)\\cos 90°\\)\n\n\\(a^{2} = 656\\)\n\n\\(a = 25.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 18\\)cm, \\(c = 6\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "21.6cm",
+      "19.0cm",
+      "24.0cm",
+      "23.1cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 18^{2} + 6^{2} - 2(18)(6)\\cos 120°\\)\n\n\\(a^{2} = 468\\)\n\n\\(a = 21.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 30\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "10.6cm",
+      "21.2cm",
+      "23.2cm",
+      "42.4cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{30 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 21.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 8\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "9.8cm",
+      "6.5cm",
+      "11.8cm",
+      "4.9cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{8 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 9.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 34\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "17.0cm",
+      "68.0cm",
+      "70.0cm",
+      "34.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{34 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 68.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 11\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "9.5cm",
+      "12.7cm",
+      "14.7cm",
+      "6.4cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{11 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 12.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 9cm, the adjacent side is 12cm and the hypotenuse is 15cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{9}{12} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 10\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "16.1cm",
+      "7.1cm",
+      "25.0cm",
+      "14.1cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{10 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 14.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 13\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "33.0cm",
+      "7.0cm",
+      "25.4cm",
+      "23.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 13^{2} - 2(20)(13)\\cos 90°\\)\n\n\\(a^{2} = 569\\)\n\n\\(a = 23.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 11\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "23.5cm",
+      "19.4cm",
+      "27.0cm",
+      "25.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 11^{2} - 2(16)(11)\\cos 120°\\)\n\n\\(a^{2} = 553\\)\n\n\\(a = 23.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 35\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "28.6cm",
+      "44.9cm",
+      "21.4cm",
+      "42.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{35 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 42.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 27\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "17.6cm",
+      "46.8cm",
+      "15.6cm",
+      "7.8cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{27 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 15.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 45cm, the adjacent side is 200cm and the hypotenuse is 205cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{45}{205} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 39\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "11.3cm",
+      "24.5cm",
+      "22.5cm",
+      "67.5cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{39 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 22.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 9\\)cm, \\(c = 8\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "12.0cm",
+      "17.0cm",
+      "14.7cm",
+      "16.2cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 9^{2} + 8^{2} - 2(9)(8)\\cos 120°\\)\n\n\\(a^{2} = 217\\)\n\n\\(a = 14.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 15cm, the adjacent side is 20cm and the hypotenuse is 25cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{15}{20} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 15cm, the adjacent side is 36cm and the hypotenuse is 39cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{13}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{15}{36} = \\frac{5}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 8\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.9cm",
+      "13.9cm",
+      "15.4cm",
+      "24.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 8^{2} - 2(16)(8)\\cos 60°\\)\n\n\\(a^{2} = 192\\)\n\n\\(a = 13.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 8\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "7.5cm",
+      "9.0cm",
+      "10.6cm",
+      "15.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 8^{2} - 2(7)(8)\\cos 60°\\)\n\n\\(a^{2} = 57\\)\n\n\\(a = 7.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 10\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "11.7cm",
+      "16.0cm",
+      "10.2cm",
+      "8.7cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 10^{2} - 2(6)(10)\\cos 60°\\)\n\n\\(a^{2} = 76\\)\n\n\\(a = 8.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 34\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "41.3cm",
+      "19.6cm",
+      "29.4cm",
+      "39.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{34 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 39.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 12\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "14.7cm",
+      "4.9cm",
+      "11.8cm",
+      "9.8cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{12 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 9.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 16\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "5.7cm",
+      "13.3cm",
+      "22.6cm",
+      "11.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{16 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 11.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 5\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "14.0cm",
+      "21.1cm",
+      "19.6cm",
+      "24.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 5^{2} - 2(19)(5)\\cos 90°\\)\n\n\\(a^{2} = 386\\)\n\n\\(a = 19.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 9\\)cm, \\(c = 15\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "24.0cm",
+      "19.0cm",
+      "17.5cm",
+      "6.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 9^{2} + 15^{2} - 2(9)(15)\\cos 90°\\)\n\n\\(a^{2} = 306\\)\n\n\\(a = 17.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 3cm, the adjacent side is 4cm and the hypotenuse is 5cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{3}{4} = \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 16\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "19.6cm",
+      "9.8cm",
+      "13.1cm",
+      "21.6cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{16 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 19.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 25cm, the adjacent side is 60cm and the hypotenuse is 65cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{60}{65} = \\frac{12}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 29\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "60.0cm",
+      "29.0cm",
+      "58.0cm",
+      "14.5cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{29 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 58.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 4\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "20.4cm",
+      "24.0cm",
+      "19.8cm",
+      "18.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 4^{2} - 2(20)(4)\\cos 60°\\)\n\n\\(a^{2} = 336\\)\n\n\\(a = 18.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 18\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "12.4cm",
+      "10.4cm",
+      "5.2cm",
+      "31.2cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{18 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 10.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 17\\)cm, \\(c = 4\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "16.9cm",
+      "15.4cm",
+      "17.5cm",
+      "21.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 17^{2} + 4^{2} - 2(17)(4)\\cos 60°\\)\n\n\\(a^{2} = 237\\)\n\n\\(a = 15.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 24\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "15.9cm",
+      "6.9cm",
+      "41.6cm",
+      "13.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{24 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 13.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 17\\)cm, \\(c = 13\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "30.0cm",
+      "16.9cm",
+      "15.4cm",
+      "21.4cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 17^{2} + 13^{2} - 2(17)(13)\\cos 60°\\)\n\n\\(a^{2} = 237\\)\n\n\\(a = 15.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 16cm, the adjacent side is 30cm and the hypotenuse is 34cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{8}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{16}{30} = \\frac{8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 18\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "21.8cm",
+      "22.0cm",
+      "18.4cm",
+      "20.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 18^{2} - 2(4)(18)\\cos 120°\\)\n\n\\(a^{2} = 412\\)\n\n\\(a = 20.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 12\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "8.5cm",
+      "17.0cm",
+      "27.0cm",
+      "19.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{12 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 17.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 32\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "16.0cm",
+      "64.0cm",
+      "32.0cm",
+      "66.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{32 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 64.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 18\\)cm, \\(c = 19\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "26.2cm",
+      "33.5cm",
+      "37.0cm",
+      "32.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 18^{2} + 19^{2} - 2(18)(19)\\cos 120°\\)\n\n\\(a^{2} = 1027\\)\n\n\\(a = 32.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 9\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "17.6cm",
+      "15.6cm",
+      "7.8cm",
+      "5.2cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{9 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 15.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 19\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "23.6cm",
+      "17.1cm",
+      "33.0cm",
+      "18.6cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 19^{2} - 2(14)(19)\\cos 60°\\)\n\n\\(a^{2} = 291\\)\n\n\\(a = 17.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 15cm, the adjacent side is 36cm and the hypotenuse is 39cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{36}{39} = \\frac{12}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 9cm, the adjacent side is 12cm and the hypotenuse is 15cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{9}{15} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 10\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.5cm",
+      "18.9cm",
+      "26.0cm",
+      "14.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 10^{2} - 2(16)(10)\\cos 60°\\)\n\n\\(a^{2} = 196\\)\n\n\\(a = 14.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 14\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "30.0cm",
+      "21.3cm",
+      "2.0cm",
+      "22.8cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 14^{2} - 2(16)(14)\\cos 90°\\)\n\n\\(a^{2} = 452\\)\n\n\\(a = 21.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 7cm, the adjacent side is 24cm and the hypotenuse is 25cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{7}{24} = \\frac{7}{24}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 27\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "33.2cm",
+      "23.4cm",
+      "31.2cm",
+      "15.6cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{27 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 31.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 8\\)cm, \\(c = 19\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "25.5cm",
+      "24.0cm",
+      "20.6cm",
+      "27.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 8^{2} + 19^{2} - 2(8)(19)\\cos 120°\\)\n\n\\(a^{2} = 577\\)\n\n\\(a = 24.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 6\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "26.0cm",
+      "17.8cm",
+      "20.9cm",
+      "19.3cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 6^{2} - 2(20)(6)\\cos 60°\\)\n\n\\(a^{2} = 316\\)\n\n\\(a = 17.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 30\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "60.0cm",
+      "62.0cm",
+      "30.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{30 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 60.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 27\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "11.0cm",
+      "22.0cm",
+      "24.0cm",
+      "33.1cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{27 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 22.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 36cm, the adjacent side is 160cm and the hypotenuse is 164cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{41}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{36}{164} = \\frac{9}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 13\\)cm, \\(c = 9\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.8cm",
+      "4.0cm",
+      "17.3cm",
+      "22.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 13^{2} + 9^{2} - 2(13)(9)\\cos 90°\\)\n\n\\(a^{2} = 250\\)\n\n\\(a = 15.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 17\\)cm, \\(c = 15\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "2.0cm",
+      "24.2cm",
+      "22.7cm",
+      "32.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 17^{2} + 15^{2} - 2(17)(15)\\cos 90°\\)\n\n\\(a^{2} = 514\\)\n\n\\(a = 22.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 4\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "2.0cm",
+      "7.2cm",
+      "8.7cm",
+      "10.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 4^{2} - 2(6)(4)\\cos 90°\\)\n\n\\(a^{2} = 52\\)\n\n\\(a = 7.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 5\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "19.5cm",
+      "20.6cm",
+      "25.0cm",
+      "18.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 5^{2} - 2(20)(5)\\cos 60°\\)\n\n\\(a^{2} = 325\\)\n\n\\(a = 18.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 28cm, the adjacent side is 96cm and the hypotenuse is 100cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{24}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{28}{100} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 24\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "50.0cm",
+      "24.0cm",
+      "12.0cm",
+      "48.0cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{24 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 48.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 13\\)cm, \\(c = 18\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "22.2cm",
+      "5.0cm",
+      "23.7cm",
+      "31.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 13^{2} + 18^{2} - 2(13)(18)\\cos 90°\\)\n\n\\(a^{2} = 493\\)\n\n\\(a = 22.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 35cm, the adjacent side is 120cm and the hypotenuse is 125cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{35}{125} = \\frac{7}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 20cm, the adjacent side is 48cm and the hypotenuse is 52cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{5}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{20}{52} = \\frac{5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 3cm, the adjacent side is 4cm and the hypotenuse is 5cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{4}{5} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 12cm, the adjacent side is 16cm and the hypotenuse is 20cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{16}{20} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 80cm, the adjacent side is 84cm and the hypotenuse is 116cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{20}{21}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{80}{84} = \\frac{20}{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 7cm, the adjacent side is 24cm and the hypotenuse is 25cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{7}{24}\\)",
+      "\\(\\frac{24}{7}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{24}{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{24}{25} = \\frac{24}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 11\\)cm, \\(c = 10\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "21.0cm",
+      "18.2cm",
+      "14.9cm",
+      "19.7cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 11^{2} + 10^{2} - 2(11)(10)\\cos 120°\\)\n\n\\(a^{2} = 331\\)\n\n\\(a = 18.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 9cm, the adjacent side is 12cm and the hypotenuse is 15cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{12}{15} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 5\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "8.1cm",
+      "4.1cm",
+      "6.1cm",
+      "3.1cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{5 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 6.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 9\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "27.2cm",
+      "29.0cm",
+      "21.9cm",
+      "25.7cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 9^{2} - 2(20)(9)\\cos 120°\\)\n\n\\(a^{2} = 661\\)\n\n\\(a = 25.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 15\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "30.0cm",
+      "10.6cm",
+      "23.2cm",
+      "21.2cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{15 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 21.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 31\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "62.0cm",
+      "31.0cm",
+      "64.0cm",
+      "15.5cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{31 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 62.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 60cm, the adjacent side is 63cm and the hypotenuse is 87cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{21}{20}\\)",
+      "\\(\\frac{21}{29}\\)",
+      "\\(\\frac{20}{29}\\)",
+      "\\(\\frac{20}{21}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{60}{87} = \\frac{20}{29}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 6cm, the adjacent side is 8cm and the hypotenuse is 10cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{6}{10} = \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 18\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "32.0cm",
+      "26.2cm",
+      "37.0cm",
+      "33.5cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 18^{2} - 2(19)(18)\\cos 120°\\)\n\n\\(a^{2} = 1027\\)\n\n\\(a = 32.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 18\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "23.4cm",
+      "3.0cm",
+      "24.9cm",
+      "33.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 18^{2} - 2(15)(18)\\cos 90°\\)\n\n\\(a^{2} = 549\\)\n\n\\(a = 23.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 90°\\) and \\(p = 29\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "20.5cm",
+      "41.0cm",
+      "43.0cm",
+      "74.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{29 \\times \\sin 90°}{\\sin 45°}\\)\n\n\\(= 41.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 14\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "19.8cm",
+      "0.0cm",
+      "28.0cm",
+      "21.3cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 14^{2} - 2(14)(14)\\cos 90°\\)\n\n\\(a^{2} = 392\\)\n\n\\(a = 19.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 34\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "29.4cm",
+      "19.6cm",
+      "58.9cm",
+      "60.9cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{34 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 58.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 8\\)cm, \\(c = 14\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "19.3cm",
+      "22.0cm",
+      "16.1cm",
+      "20.8cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 8^{2} + 14^{2} - 2(8)(14)\\cos 120°\\)\n\n\\(a^{2} = 372\\)\n\n\\(a = 19.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 9\\)cm, \\(c = 5\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "9.3cm",
+      "7.8cm",
+      "10.3cm",
+      "14.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 9^{2} + 5^{2} - 2(9)(5)\\cos 60°\\)\n\n\\(a^{2} = 61\\)\n\n\\(a = 7.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 16\\)cm, \\(c = 9\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "25.0cm",
+      "13.9cm",
+      "18.4cm",
+      "15.4cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 16^{2} + 9^{2} - 2(16)(9)\\cos 60°\\)\n\n\\(a^{2} = 193\\)\n\n\\(a = 13.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 40cm, the adjacent side is 75cm and the hypotenuse is 85cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{15}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{40}{75} = \\frac{8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 6\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "16.2cm",
+      "21.0cm",
+      "17.7cm",
+      "9.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 6^{2} - 2(15)(6)\\cos 90°\\)\n\n\\(a^{2} = 261\\)\n\n\\(a = 16.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 10\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "16.0cm",
+      "14.0cm",
+      "11.7cm",
+      "15.5cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 10^{2} - 2(6)(10)\\cos 120°\\)\n\n\\(a^{2} = 196\\)\n\n\\(a = 14.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 22\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "31.1cm",
+      "17.6cm",
+      "7.8cm",
+      "15.6cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{22 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 15.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 10\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "11.7cm",
+      "16.0cm",
+      "13.2cm",
+      "4.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 10^{2} - 2(6)(10)\\cos 90°\\)\n\n\\(a^{2} = 136\\)\n\n\\(a = 11.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 20\\)cm, \\(c = 16\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "36.0cm",
+      "31.2cm",
+      "25.6cm",
+      "32.7cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 20^{2} + 16^{2} - 2(20)(16)\\cos 120°\\)\n\n\\(a^{2} = 976\\)\n\n\\(a = 31.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 5\\)cm, \\(c = 7\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "8.6cm",
+      "7.7cm",
+      "6.2cm",
+      "12.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 5^{2} + 7^{2} - 2(5)(7)\\cos 60°\\)\n\n\\(a^{2} = 39\\)\n\n\\(a = 6.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 90°\\) and \\(p = 19\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "40.0cm",
+      "9.5cm",
+      "38.0cm",
+      "19.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{19 \\times \\sin 90°}{\\sin 30°}\\)\n\n\\(= 38.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 16cm, the adjacent side is 30cm and the hypotenuse is 34cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{8}{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{30}{34} = \\frac{15}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 90°\\) and \\(p = 23\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "32.5cm",
+      "16.3cm",
+      "34.5cm",
+      "68.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{23 \\times \\sin 90°}{\\sin 45°}\\)\n\n\\(= 32.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 4\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "8.4cm",
+      "8.0cm",
+      "5.7cm",
+      "6.9cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 4^{2} - 2(4)(4)\\cos 120°\\)\n\n\\(a^{2} = 48\\)\n\n\\(a = 6.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 19\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "11.0cm",
+      "21.9cm",
+      "16.5cm",
+      "23.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{19 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 21.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 36cm, the adjacent side is 160cm and the hypotenuse is 164cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{40}\\)",
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{160}{164} = \\frac{40}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 6cm, the adjacent side is 8cm and the hypotenuse is 10cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{8}{10} = \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 7\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "11.0cm",
+      "8.1cm",
+      "3.0cm",
+      "9.6cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 7^{2} - 2(4)(7)\\cos 90°\\)\n\n\\(a^{2} = 65\\)\n\n\\(a = 8.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 33\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "40.1cm",
+      "38.1cm",
+      "19.1cm",
+      "28.6cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{33 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 38.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 13\\)cm, \\(c = 11\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "12.1cm",
+      "24.0cm",
+      "13.6cm",
+      "17.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 13^{2} + 11^{2} - 2(13)(11)\\cos 60°\\)\n\n\\(a^{2} = 147\\)\n\n\\(a = 12.1\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 12\\)cm, \\(c = 12\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "13.5cm",
+      "12.0cm",
+      "17.0cm",
+      "24.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 12^{2} + 12^{2} - 2(12)(12)\\cos 60°\\)\n\n\\(a^{2} = 144\\)\n\n\\(a = 12.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 10\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "8.7cm",
+      "5.8cm",
+      "19.3cm",
+      "17.3cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{10 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 17.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 90°\\) and \\(p = 9\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "12.7cm",
+      "6.4cm",
+      "14.7cm",
+      "54.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{9 \\times \\sin 90°}{\\sin 45°}\\)\n\n\\(= 12.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 60°\\) and \\(p = 21\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "18.2cm",
+      "36.4cm",
+      "12.1cm",
+      "38.4cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{21 \\times \\sin 60°}{\\sin 30°}\\)\n\n\\(= 36.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 9cm, the adjacent side is 40cm and the hypotenuse is 41cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{40}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{9}{40} = \\frac{9}{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 45cm, the adjacent side is 200cm and the hypotenuse is 205cm. Find \\(\\cos \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{9}{40}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{200}{205} = \\frac{40}{41}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 4\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "10.2cm",
+      "7.2cm",
+      "8.7cm",
+      "10.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 4^{2} - 2(6)(4)\\cos 120°\\)\n\n\\(a^{2} = 76\\)\n\n\\(a = 8.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 90°\\) and \\(p = 15\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "17.3cm",
+      "8.7cm",
+      "13.0cm",
+      "19.3cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{15 \\times \\sin 90°}{\\sin 60°}\\)\n\n\\(= 17.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 32cm, the adjacent side is 60cm and the hypotenuse is 68cm. Find \\(\\sin \\theta\\).",
+    "options": [
+      "\\(\\frac{15}{8}\\)",
+      "\\(\\frac{15}{17}\\)",
+      "\\(\\frac{8}{17}\\)",
+      "\\(\\frac{8}{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)\n\n\\(= \\frac{32}{68} = \\frac{8}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 29\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "10.3cm",
+      "20.5cm",
+      "22.5cm",
+      "41.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{29 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 20.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 13\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "2.0cm",
+      "28.0cm",
+      "21.3cm",
+      "19.8cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 13^{2} - 2(15)(13)\\cos 90°\\)\n\n\\(a^{2} = 394\\)\n\n\\(a = 19.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 31\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "43.8cm",
+      "21.9cm",
+      "45.8cm",
+      "46.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{31 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 43.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 7\\)cm, \\(c = 14\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.2cm",
+      "7.0cm",
+      "21.0cm",
+      "15.7cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 7^{2} + 14^{2} - 2(7)(14)\\cos 90°\\)\n\n\\(a^{2} = 245\\)\n\n\\(a = 15.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 19\\)cm, \\(c = 4\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "23.0cm",
+      "19.4cm",
+      "15.0cm",
+      "20.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 19^{2} + 4^{2} - 2(19)(4)\\cos 90°\\)\n\n\\(a^{2} = 377\\)\n\n\\(a = 19.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 5\\)cm, \\(c = 12\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "13.0cm",
+      "17.0cm",
+      "11.9cm",
+      "10.4cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 5^{2} + 12^{2} - 2(5)(12)\\cos 60°\\)\n\n\\(a^{2} = 109\\)\n\n\\(a = 10.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 5\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "17.3cm",
+      "10.0cm",
+      "20.0cm",
+      "15.8cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 5^{2} - 2(15)(5)\\cos 90°\\)\n\n\\(a^{2} = 250\\)\n\n\\(a = 15.8\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 14\\)cm, \\(c = 13\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "13.5cm",
+      "27.0cm",
+      "19.1cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 14^{2} + 13^{2} - 2(14)(13)\\cos 60°\\)\n\n\\(a^{2} = 183\\)\n\n\\(a = 13.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 12\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "27.0cm",
+      "20.7cm",
+      "3.0cm",
+      "19.2cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 12^{2} - 2(15)(12)\\cos 90°\\)\n\n\\(a^{2} = 369\\)\n\n\\(a = 19.2\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 60°\\) and \\(p = 12\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "9.8cm",
+      "16.7cm",
+      "14.7cm",
+      "7.3cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{12 \\times \\sin 60°}{\\sin 45°}\\)\n\n\\(= 14.7\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 6\\)cm, \\(c = 11\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "11.0cm",
+      "9.5cm",
+      "17.0cm",
+      "12.5cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 6^{2} + 11^{2} - 2(6)(11)\\cos 60°\\)\n\n\\(a^{2} = 91\\)\n\n\\(a = 9.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 15\\)cm, \\(c = 4\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "13.5cm",
+      "15.5cm",
+      "15.0cm",
+      "19.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 15^{2} + 4^{2} - 2(15)(4)\\cos 60°\\)\n\n\\(a^{2} = 181\\)\n\n\\(a = 13.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 30\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "19.3cm",
+      "8.7cm",
+      "17.3cm",
+      "52.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{30 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 17.3\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 17\\)cm, \\(c = 19\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "25.5cm",
+      "27.0cm",
+      "2.0cm",
+      "36.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 17^{2} + 19^{2} - 2(17)(19)\\cos 90°\\)\n\n\\(a^{2} = 650\\)\n\n\\(a = 25.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 45°\\) and \\(p = 19\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "23.3cm",
+      "17.5cm",
+      "7.8cm",
+      "15.5cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{19 \\times \\sin 45°}{\\sin 60°}\\)\n\n\\(= 15.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 11\\)cm, \\(c = 17\\)cm and \\(\\angle A = 120°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "20.2cm",
+      "24.4cm",
+      "28.0cm",
+      "25.9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 11^{2} + 17^{2} - 2(11)(17)\\cos 120°\\)\n\n\\(a^{2} = 597\\)\n\n\\(a = 24.4\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 18\\)cm, \\(c = 18\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "36.0cm",
+      "25.5cm",
+      "0.0cm",
+      "27.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 18^{2} + 18^{2} - 2(18)(18)\\cos 90°\\)\n\n\\(a^{2} = 648\\)\n\n\\(a = 25.5\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 30°\\), \\(\\angle Q = 45°\\) and \\(p = 24\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "33.9cm",
+      "35.9cm",
+      "39.0cm",
+      "17.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{24 \\times \\sin 45°}{\\sin 30°}\\)\n\n\\(= 33.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 4\\)cm, \\(c = 12\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "12.1cm",
+      "16.0cm",
+      "10.6cm",
+      "12.6cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 4^{2} + 12^{2} - 2(4)(12)\\cos 60°\\)\n\n\\(a^{2} = 112\\)\n\n\\(a = 10.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 60°\\), \\(\\angle Q = 30°\\) and \\(p = 26\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "15.0cm",
+      "17.0cm",
+      "7.5cm",
+      "45.0cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{26 \\times \\sin 30°}{\\sin 60°}\\)\n\n\\(= 15.0\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 30°\\) and \\(p = 39\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "13.8cm",
+      "55.2cm",
+      "27.6cm",
+      "29.6cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{39 \\times \\sin 30°}{\\sin 45°}\\)\n\n\\(= 27.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 12\\)cm, \\(c = 18\\)cm and \\(\\angle A = 60°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "15.9cm",
+      "21.6cm",
+      "30.0cm",
+      "17.4cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 12^{2} + 18^{2} - 2(12)(18)\\cos 60°\\)\n\n\\(a^{2} = 252\\)\n\n\\(a = 15.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(PQR\\), \\(\\angle P = 45°\\), \\(\\angle Q = 90°\\) and \\(p = 24\\)cm. Find \\(q\\), correct to 1 decimal place.",
+    "options": [
+      "35.9cm",
+      "17.0cm",
+      "33.9cm",
+      "69.0cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the sine rule, \\(\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}\\).\n\n\\(q = \\frac{p \\sin Q}{\\sin P} = \\frac{24 \\times \\sin 90°}{\\sin 45°}\\)\n\n\\(= 33.9\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a right-angled triangle, the side opposite angle \\(\\theta\\) is 36cm, the adjacent side is 160cm and the hypotenuse is 164cm. Find \\(\\tan \\theta\\).",
+    "options": [
+      "\\(\\frac{40}{41}\\)",
+      "\\(\\frac{40}{9}\\)",
+      "\\(\\frac{9}{41}\\)",
+      "\\(\\frac{9}{40}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)\n\n\\(= \\frac{36}{160} = \\frac{9}{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In triangle \\(ABC\\), \\(b = 18\\)cm, \\(c = 10\\)cm and \\(\\angle A = 90°\\). Find \\(a\\), correct to 1 decimal place.",
+    "options": [
+      "28.0cm",
+      "20.6cm",
+      "22.1cm",
+      "8.0cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the cosine rule, \\(a^{2} = b^{2} + c^{2} - 2bc\\cos A\\).\n\n\\(a^{2} = 18^{2} + 10^{2} - 2(18)(10)\\cos 90°\\)\n\n\\(a^{2} = 424\\)\n\n\\(a = 20.6\\)cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "bz56Yuz1DWjCCsEWC8iA",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

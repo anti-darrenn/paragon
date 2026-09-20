@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Expand \\((6x + 3)^{2}\\).",
+    "options": [
+      "\\(36x^{2} + 36x - 9\\)",
+      "\\(36x^{2} + 18x + 9\\)",
+      "\\(36x^{2} + 36x + 9\\)",
+      "\\(36x^{2} - 36x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((6x)^{2} = 36x^{2}\\)\n\n\\(2 \\times 6x \\times (3) = 36x\\)\n\n\\((3)^{2} = 9\\)\n\nSo the expansion is \\(36x^{2} + 36x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 3x - 4\\).",
+    "options": [
+      "\\((x - 1)(x + 4)\\)",
+      "\\((x + 1)(x + 4)\\)",
+      "\\((x + 1)(x - 4)\\)",
+      "\\((x - 1)(x - 4)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is -4 and whose sum is -3.\n\nThese are 1 and -4.\n\nSo \\(x^{2} - 3x - 4 = (x + 1)(x - 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 9)^{2}\\).",
+    "options": [
+      "\\(x^{2} + 18x + 81\\)",
+      "\\(x^{2} - 18x + 81\\)",
+      "\\(x^{2} + 9x + 81\\)",
+      "\\(x^{2} + 18x - 81\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (9) = 18x\\)\n\n\\((9)^{2} = 81\\)\n\nSo the expansion is \\(x^{2} + 18x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(35x + 14\\).",
+    "options": [
+      "\\(7x(5 + 2)\\)",
+      "\\(35(x + 2)\\)",
+      "\\(7(5x + 2)\\)",
+      "\\(7(5x - 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 35 and 14 is 7.\n\nTaking 7 outside the bracket: \\(7(5x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 6)^{2}\\).",
+    "options": [
+      "\\(9x^{2} - 36x + 36\\)",
+      "\\(9x^{2} + 36x + 36\\)",
+      "\\(9x^{2} + 18x + 36\\)",
+      "\\(9x^{2} + 36x - 36\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (6) = 36x\\)\n\n\\((6)^{2} = 36\\)\n\nSo the expansion is \\(9x^{2} + 36x + 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((6x - 2)^{2}\\).",
+    "options": [
+      "\\(36x^{2} - 24x + 4\\)",
+      "\\(36x^{2} + 24x + 4\\)",
+      "\\(36x^{2} - 12x + 4\\)",
+      "\\(36x^{2} - 24x - 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((6x)^{2} = 36x^{2}\\)\n\n\\(2 \\times 6x \\times (-2) = -24x\\)\n\n\\((-2)^{2} = 4\\)\n\nSo the expansion is \\(36x^{2} - 24x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 9\\).",
+    "options": [
+      "\\((6x + 3)(6x - 3)\\)",
+      "\\((6x + 3)^{2}\\)",
+      "\\((6x - 3)^{2}\\)",
+      "\\((6x + 9)(6x - 9)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(9 = 3^{2}\\)\n\nSo the factorisation is \\((6x + 3)(6x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 49\\).",
+    "options": [
+      "\\((x + 7)(x - 7)\\)",
+      "\\((x + 7)^{2}\\)",
+      "\\((x + 49)(x - 49)\\)",
+      "\\((x - 7)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(x^{2} = (x)^{2}\\) and \\(49 = 7^{2}\\)\n\nSo the factorisation is \\((x + 7)(x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 5x - 14\\).",
+    "options": [
+      "\\((x + 7)(x + 2)\\)",
+      "\\((x + 7)(x - 2)\\)",
+      "\\((x - 7)(x + 2)\\)",
+      "\\((x - 7)(x - 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is -14 and whose sum is -5.\n\nThese are -7 and 2.\n\nSo \\(x^{2} - 5x - 14 = (x - 7)(x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 3)(5x + 2)\\).",
+    "options": [
+      "\\(15x^{2} - 9x + 6\\)",
+      "\\(15x^{2} + 21x - 6\\)",
+      "\\(15x^{2} - 9x - 6\\)",
+      "\\(16x^{2} - 9x - 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 5x = 15x^{2}\\)\n\n\\(3x \\times (2) + (-3) \\times 5x = 6x + -15x = -9x\\)\n\n\\((-3) \\times (2) = -6\\)\n\nSo the expansion is \\(15x^{2} - 9x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 9)^{2}\\).",
+    "options": [
+      "\\(16x^{2} + 72x + 81\\)",
+      "\\(16x^{2} + 72x - 81\\)",
+      "\\(16x^{2} - 72x + 81\\)",
+      "\\(16x^{2} + 36x + 81\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((4x)^{2} = 16x^{2}\\)\n\n\\(2 \\times 4x \\times (9) = 72x\\)\n\n\\((9)^{2} = 81\\)\n\nSo the expansion is \\(16x^{2} + 72x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((6x - 6)^{2}\\).",
+    "options": [
+      "\\(36x^{2} - 72x - 36\\)",
+      "\\(36x^{2} - 36x + 36\\)",
+      "\\(36x^{2} + 72x + 36\\)",
+      "\\(36x^{2} - 72x + 36\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((6x)^{2} = 36x^{2}\\)\n\n\\(2 \\times 6x \\times (-6) = -72x\\)\n\n\\((-6)^{2} = 36\\)\n\nSo the expansion is \\(36x^{2} - 72x + 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 6x - 7\\).",
+    "options": [
+      "\\((x - 7)(x + 1)\\)",
+      "\\((x + 7)(x + 1)\\)",
+      "\\((x - 7)(x - 1)\\)",
+      "\\((x + 7)(x - 1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -7 and whose sum is 6.\n\nThese are 7 and -1.\n\nSo \\(x^{2} + 6x - 7 = (x + 7)(x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x - 48\\).",
+    "options": [
+      "\\(36(x - 8)\\)",
+      "\\(6(6x + 8)\\)",
+      "\\(6(6x - 8)\\)",
+      "\\(6x(6 - 8)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 36 and 48 is 6.\n\nTaking 6 outside the bracket: \\(6(6x - 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)(x - 2)\\).",
+    "options": [
+      "\\(x^{2} - 4x + 6\\)",
+      "\\(x^{2} - 5x + 6\\)",
+      "\\(x^{2} + 6x - 5\\)",
+      "\\(x^{2} - 5x - 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-2) + (-3) \\times x = -5x\\)\n\n\\((-3) \\times (-2) = 6\\)\n\nSo the expansion is \\(x^{2} - 5x + 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 2)(x - 5)\\).",
+    "options": [
+      "\\(x^{2} - 7x - 10\\)",
+      "\\(x^{2} - 7x + 10\\)",
+      "\\(x^{2} - 6x + 10\\)",
+      "\\(x^{2} + 10x - 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-5) + (-2) \\times x = -7x\\)\n\n\\((-2) \\times (-5) = 10\\)\n\nSo the expansion is \\(x^{2} - 7x + 10\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x^{2} - 100\\).",
+    "options": [
+      "\\((3x + 10)(3x - 10)\\)",
+      "\\((3x + 10)^{2}\\)",
+      "\\((3x + 100)(3x - 100)\\)",
+      "\\((3x - 10)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(9x^{2} = (3x)^{2}\\) and \\(100 = 10^{2}\\)\n\nSo the factorisation is \\((3x + 10)(3x - 10)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 1)(4x - 5)\\).",
+    "options": [
+      "\\(8x^{2} - 6x + 5\\)",
+      "\\(8x^{2} - 14x + 5\\)",
+      "\\(9x^{2} - 14x + 5\\)",
+      "\\(8x^{2} - 14x - 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 4x = 8x^{2}\\)\n\n\\(2x \\times (-5) + (-1) \\times 4x = -10x + -4x = -14x\\)\n\n\\((-1) \\times (-5) = 5\\)\n\nSo the expansion is \\(8x^{2} - 14x + 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 5)(x + 1)\\).",
+    "options": [
+      "\\(x^{2} + 6x - 5\\)",
+      "\\(x^{2} + 5x + 6\\)",
+      "\\(x^{2} + 6x + 5\\)",
+      "\\(x^{2} + 7x + 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (1) + (5) \\times x = 6x\\)\n\n\\((5) \\times (1) = 5\\)\n\nSo the expansion is \\(x^{2} + 6x + 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 1)^{2}\\).",
+    "options": [
+      "\\(x^{2} - 2x + 1\\)",
+      "\\(x^{2} - 2x - 1\\)",
+      "\\(x^{2} + 2x + 1\\)",
+      "\\(x^{2} - x + 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (-1) = -2x\\)\n\n\\((-1)^{2} = 1\\)\n\nSo the expansion is \\(x^{2} - 2x + 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 11x + 18\\).",
+    "options": [
+      "\\((x + 2)(x + 9)\\)",
+      "\\((x - 2)(x - 9)\\)",
+      "\\((x + 2)(x - 9)\\)",
+      "\\((x - 2)(x + 9)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is 18 and whose sum is -11.\n\nThese are -2 and -9.\n\nSo \\(x^{2} - 11x + 18 = (x - 2)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 1)(4x + 3)\\).",
+    "options": [
+      "\\(12x^{2} + 13x - 3\\)",
+      "\\(12x^{2} + 5x + 3\\)",
+      "\\(12x^{2} + 5x - 3\\)",
+      "\\(13x^{2} + 5x - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 4x = 12x^{2}\\)\n\n\\(3x \\times (3) + (-1) \\times 4x = 9x + -4x = 5x\\)\n\n\\((-1) \\times (3) = -3\\)\n\nSo the expansion is \\(12x^{2} + 5x - 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 6)(x - 6)\\).",
+    "options": [
+      "\\(x^{2} + 36\\)",
+      "\\(x^{2} + x - 36\\)",
+      "\\(x^{2} - 36\\)",
+      "\\(x^{2} - 36x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-6) + (6) \\times x = 0x\\)\n\n\\((6) \\times (-6) = -36\\)\n\nSo the expansion is \\(x^{2} - 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 4)(x + 2)\\).",
+    "options": [
+      "\\(x^{2} - 2x - 8\\)",
+      "\\(x^{2} - 2x + 8\\)",
+      "\\(x^{2} - x - 8\\)",
+      "\\(x^{2} - 8x - 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (2) + (-4) \\times x = -2x\\)\n\n\\((-4) \\times (2) = -8\\)\n\nSo the expansion is \\(x^{2} - 2x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - x - 72\\).",
+    "options": [
+      "\\((x + 8)(x + 9)\\)",
+      "\\((x - 8)(x + 9)\\)",
+      "\\((x - 8)(x - 9)\\)",
+      "\\((x + 8)(x - 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -72 and whose sum is -1.\n\nThese are 8 and -9.\n\nSo \\(x^{2} - x - 72 = (x + 8)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + x - 30\\).",
+    "options": [
+      "\\((x - 5)(x + 6)\\)",
+      "\\((x + 5)(x + 6)\\)",
+      "\\((x + 5)(x - 6)\\)",
+      "\\((x - 5)(x - 6)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is -30 and whose sum is 1.\n\nThese are -5 and 6.\n\nSo \\(x^{2} + x - 30 = (x - 5)(x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(18x - 18\\).",
+    "options": [
+      "\\(9(2x + 2)\\)",
+      "\\(18(x - 2)\\)",
+      "\\(9x(2 - 2)\\)",
+      "\\(9(2x - 2)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 18 and 18 is 9.\n\nTaking 9 outside the bracket: \\(9(2x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 8)^{2}\\).",
+    "options": [
+      "\\(9x^{2} - 48x - 64\\)",
+      "\\(9x^{2} - 24x + 64\\)",
+      "\\(9x^{2} - 48x + 64\\)",
+      "\\(9x^{2} + 48x + 64\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (-8) = -48x\\)\n\n\\((-8)^{2} = 64\\)\n\nSo the expansion is \\(9x^{2} - 48x + 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 1)(3x - 4)\\).",
+    "options": [
+      "\\(9x^{2} - 9x + 4\\)",
+      "\\(10x^{2} - 9x - 4\\)",
+      "\\(9x^{2} - 15x - 4\\)",
+      "\\(9x^{2} - 9x - 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 3x = 9x^{2}\\)\n\n\\(3x \\times (-4) + (1) \\times 3x = -12x + 3x = -9x\\)\n\n\\((1) \\times (-4) = -4\\)\n\nSo the expansion is \\(9x^{2} - 9x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(24x - 15\\).",
+    "options": [
+      "\\(3(8x - 5)\\)",
+      "\\(3x(8 - 5)\\)",
+      "\\(24(x - 5)\\)",
+      "\\(3(8x + 5)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 24 and 15 is 3.\n\nTaking 3 outside the bracket: \\(3(8x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x^{2} - 144\\).",
+    "options": [
+      "\\((3x + 144)(3x - 144)\\)",
+      "\\((3x - 12)^{2}\\)",
+      "\\((3x + 12)^{2}\\)",
+      "\\((3x + 12)(3x - 12)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(9x^{2} = (3x)^{2}\\) and \\(144 = 12^{2}\\)\n\nSo the factorisation is \\((3x + 12)(3x - 12)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(12x + 16\\).",
+    "options": [
+      "\\(12(x + 8)\\)",
+      "\\(2x(6 + 8)\\)",
+      "\\(2(6x + 8)\\)",
+      "\\(2(6x - 8)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 12 and 16 is 2.\n\nTaking 2 outside the bracket: \\(2(6x + 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 36\\).",
+    "options": [
+      "\\((5x - 6)^{2}\\)",
+      "\\((5x + 6)(5x - 6)\\)",
+      "\\((5x + 6)^{2}\\)",
+      "\\((5x + 36)(5x - 36)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(36 = 6^{2}\\)\n\nSo the factorisation is \\((5x + 6)(5x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 6)(x - 7)\\).",
+    "options": [
+      "\\(x^{2} - 42x - 1\\)",
+      "\\(x^{2} - x + 42\\)",
+      "\\(x^{2} - x - 42\\)",
+      "\\(x^{2} - 42\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-7) + (6) \\times x = -1x\\)\n\n\\((6) \\times (-7) = -42\\)\n\nSo the expansion is \\(x^{2} - x - 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x^{2} - 49\\).",
+    "options": [
+      "\\((3x + 7)^{2}\\)",
+      "\\((3x - 7)^{2}\\)",
+      "\\((3x + 7)(3x - 7)\\)",
+      "\\((3x + 49)(3x - 49)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(9x^{2} = (3x)^{2}\\) and \\(49 = 7^{2}\\)\n\nSo the factorisation is \\((3x + 7)(3x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 8x + 7\\).",
+    "options": [
+      "\\((x - 1)(x + 7)\\)",
+      "\\((x - 1)(x - 7)\\)",
+      "\\((x + 1)(x - 7)\\)",
+      "\\((x + 1)(x + 7)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is 7 and whose sum is 8.\n\nThese are 1 and 7.\n\nSo \\(x^{2} + 8x + 7 = (x + 1)(x + 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(15x - 9\\).",
+    "options": [
+      "\\(3(5x + 3)\\)",
+      "\\(3x(5 - 3)\\)",
+      "\\(3(5x - 3)\\)",
+      "\\(15(x - 3)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 15 and 9 is 3.\n\nTaking 3 outside the bracket: \\(3(5x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)(x + 3)\\).",
+    "options": [
+      "\\(x^{2} + x - 9\\)",
+      "\\(x^{2} + 9\\)",
+      "\\(x^{2} - 9\\)",
+      "\\(x^{2} - 9x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (3) + (-3) \\times x = 0x\\)\n\n\\((-3) \\times (3) = -9\\)\n\nSo the expansion is \\(x^{2} - 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(45x + 15\\).",
+    "options": [
+      "\\(5x(9 + 3)\\)",
+      "\\(45(x + 3)\\)",
+      "\\(5(9x + 3)\\)",
+      "\\(5(9x - 3)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 45 and 15 is 5.\n\nTaking 5 outside the bracket: \\(5(9x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 2)(3x + 2)\\).",
+    "options": [
+      "\\(6x^{2} + 10x - 4\\)",
+      "\\(6x^{2} - 2x + 4\\)",
+      "\\(6x^{2} + 10x + 4\\)",
+      "\\(7x^{2} + 10x + 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 3x = 6x^{2}\\)\n\n\\(2x \\times (2) + (2) \\times 3x = 4x + 6x = 10x\\)\n\n\\((2) \\times (2) = 4\\)\n\nSo the expansion is \\(6x^{2} + 10x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 9)^{2}\\).",
+    "options": [
+      "\\(x^{2} - 18x + 81\\)",
+      "\\(x^{2} - 9x + 81\\)",
+      "\\(x^{2} - 18x - 81\\)",
+      "\\(x^{2} + 18x + 81\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (-9) = -18x\\)\n\n\\((-9)^{2} = 81\\)\n\nSo the expansion is \\(x^{2} - 18x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(14x + 49\\).",
+    "options": [
+      "\\(7(2x + 7)\\)",
+      "\\(7(2x - 7)\\)",
+      "\\(14(x + 7)\\)",
+      "\\(7x(2 + 7)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 14 and 49 is 7.\n\nTaking 7 outside the bracket: \\(7(2x + 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 3)^{2}\\).",
+    "options": [
+      "\\(4x^{2} + 6x + 9\\)",
+      "\\(4x^{2} + 12x - 9\\)",
+      "\\(4x^{2} + 12x + 9\\)",
+      "\\(4x^{2} - 12x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((2x)^{2} = 4x^{2}\\)\n\n\\(2 \\times 2x \\times (3) = 12x\\)\n\n\\((3)^{2} = 9\\)\n\nSo the expansion is \\(4x^{2} + 12x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 2)(5x - 2)\\).",
+    "options": [
+      "\\(10x^{2} - 14x - 4\\)",
+      "\\(10x^{2} - 14x + 4\\)",
+      "\\(11x^{2} - 14x + 4\\)",
+      "\\(10x^{2} + 6x + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 5x = 10x^{2}\\)\n\n\\(2x \\times (-2) + (-2) \\times 5x = -4x + -10x = -14x\\)\n\n\\((-2) \\times (-2) = 4\\)\n\nSo the expansion is \\(10x^{2} - 14x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 16\\).",
+    "options": [
+      "\\((5x + 4)(5x - 4)\\)",
+      "\\((5x - 4)^{2}\\)",
+      "\\((5x + 4)^{2}\\)",
+      "\\((5x + 16)(5x - 16)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(16 = 4^{2}\\)\n\nSo the factorisation is \\((5x + 4)(5x - 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 1)^{2}\\).",
+    "options": [
+      "\\(16x^{2} - 8x + 1\\)",
+      "\\(16x^{2} + 8x + 1\\)",
+      "\\(16x^{2} - 4x + 1\\)",
+      "\\(16x^{2} - 8x - 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((4x)^{2} = 16x^{2}\\)\n\n\\(2 \\times 4x \\times (-1) = -8x\\)\n\n\\((-1)^{2} = 1\\)\n\nSo the expansion is \\(16x^{2} - 8x + 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 17x + 72\\).",
+    "options": [
+      "\\((x - 9)(x - 8)\\)",
+      "\\((x + 9)(x + 8)\\)",
+      "\\((x + 9)(x - 8)\\)",
+      "\\((x - 9)(x + 8)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is 72 and whose sum is -17.\n\nThese are -9 and -8.\n\nSo \\(x^{2} - 17x + 72 = (x - 9)(x - 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 1)(2x + 1)\\).",
+    "options": [
+      "\\(4x^{2} + 4x + 1\\)",
+      "\\(4x^{2} + 1\\)",
+      "\\(5x^{2} + 4x + 1\\)",
+      "\\(4x^{2} + 4x - 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 2x = 4x^{2}\\)\n\n\\(2x \\times (1) + (1) \\times 2x = 2x + 2x = 4x\\)\n\n\\((1) \\times (1) = 1\\)\n\nSo the expansion is \\(4x^{2} + 4x + 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(12x + 36\\).",
+    "options": [
+      "\\(12(x + 9)\\)",
+      "\\(4x(3 + 9)\\)",
+      "\\(4(3x - 9)\\)",
+      "\\(4(3x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 12 and 36 is 4.\n\nTaking 4 outside the bracket: \\(4(3x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 1)(x - 9)\\).",
+    "options": [
+      "\\(x^{2} - 7x - 9\\)",
+      "\\(x^{2} - 8x + 9\\)",
+      "\\(x^{2} - 8x - 9\\)",
+      "\\(x^{2} - 9x - 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-9) + (1) \\times x = -8x\\)\n\n\\((1) \\times (-9) = -9\\)\n\nSo the expansion is \\(x^{2} - 8x - 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 100\\).",
+    "options": [
+      "\\((x + 100)(x - 100)\\)",
+      "\\((x - 10)^{2}\\)",
+      "\\((x + 10)^{2}\\)",
+      "\\((x + 10)(x - 10)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(x^{2} = (x)^{2}\\) and \\(100 = 10^{2}\\)\n\nSo the factorisation is \\((x + 10)(x - 10)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 81\\).",
+    "options": [
+      "\\((4x + 9)^{2}\\)",
+      "\\((4x - 9)^{2}\\)",
+      "\\((4x + 9)(4x - 9)\\)",
+      "\\((4x + 81)(4x - 81)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(81 = 9^{2}\\)\n\nSo the factorisation is \\((4x + 9)(4x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((6x + 1)^{2}\\).",
+    "options": [
+      "\\(36x^{2} + 12x - 1\\)",
+      "\\(36x^{2} - 12x + 1\\)",
+      "\\(36x^{2} + 6x + 1\\)",
+      "\\(36x^{2} + 12x + 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((6x)^{2} = 36x^{2}\\)\n\n\\(2 \\times 6x \\times (1) = 12x\\)\n\n\\((1)^{2} = 1\\)\n\nSo the expansion is \\(36x^{2} + 12x + 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(54x - 27\\).",
+    "options": [
+      "\\(9(6x + 3)\\)",
+      "\\(9(6x - 3)\\)",
+      "\\(54(x - 3)\\)",
+      "\\(9x(6 - 3)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 54 and 27 is 9.\n\nTaking 9 outside the bracket: \\(9(6x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x - 18\\).",
+    "options": [
+      "\\(3x(3 - 6)\\)",
+      "\\(3(3x + 6)\\)",
+      "\\(9(x - 6)\\)",
+      "\\(3(3x - 6)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 9 and 18 is 3.\n\nTaking 3 outside the bracket: \\(3(3x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 2)^{2}\\).",
+    "options": [
+      "\\(9x^{2} + 12x - 4\\)",
+      "\\(9x^{2} - 12x + 4\\)",
+      "\\(9x^{2} + 6x + 4\\)",
+      "\\(9x^{2} + 12x + 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (2) = 12x\\)\n\n\\((2)^{2} = 4\\)\n\nSo the expansion is \\(9x^{2} + 12x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + x - 12\\).",
+    "options": [
+      "\\((x + 4)(x + 3)\\)",
+      "\\((x + 4)(x - 3)\\)",
+      "\\((x - 4)(x - 3)\\)",
+      "\\((x - 4)(x + 3)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -12 and whose sum is 1.\n\nThese are 4 and -3.\n\nSo \\(x^{2} + x - 12 = (x + 4)(x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(18x + 36\\).",
+    "options": [
+      "\\(9(2x - 4)\\)",
+      "\\(18(x + 4)\\)",
+      "\\(9(2x + 4)\\)",
+      "\\(9x(2 + 4)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 18 and 36 is 9.\n\nTaking 9 outside the bracket: \\(9(2x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((6x - 4)^{2}\\).",
+    "options": [
+      "\\(36x^{2} - 48x + 16\\)",
+      "\\(36x^{2} - 48x - 16\\)",
+      "\\(36x^{2} - 24x + 16\\)",
+      "\\(36x^{2} + 48x + 16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((6x)^{2} = 36x^{2}\\)\n\n\\(2 \\times 6x \\times (-4) = -48x\\)\n\n\\((-4)^{2} = 16\\)\n\nSo the expansion is \\(36x^{2} - 48x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 64\\).",
+    "options": [
+      "\\((5x + 8)(5x - 8)\\)",
+      "\\((5x - 8)^{2}\\)",
+      "\\((5x + 64)(5x - 64)\\)",
+      "\\((5x + 8)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(64 = 8^{2}\\)\n\nSo the factorisation is \\((5x + 8)(5x - 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)(x + 1)\\).",
+    "options": [
+      "\\(x^{2} - 2x + 3\\)",
+      "\\(x^{2} - x - 3\\)",
+      "\\(x^{2} - 3x - 2\\)",
+      "\\(x^{2} - 2x - 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (1) + (-3) \\times x = -2x\\)\n\n\\((-3) \\times (1) = -3\\)\n\nSo the expansion is \\(x^{2} - 2x - 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x - 15\\).",
+    "options": [
+      "\\(9(x - 5)\\)",
+      "\\(3(3x + 5)\\)",
+      "\\(3x(3 - 5)\\)",
+      "\\(3(3x - 5)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 9 and 15 is 3.\n\nTaking 3 outside the bracket: \\(3(3x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 8)(x - 1)\\).",
+    "options": [
+      "\\(x^{2} + 7x - 8\\)",
+      "\\(x^{2} + 8x - 8\\)",
+      "\\(x^{2} - 8x + 7\\)",
+      "\\(x^{2} + 7x + 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-1) + (8) \\times x = 7x\\)\n\n\\((8) \\times (-1) = -8\\)\n\nSo the expansion is \\(x^{2} + 7x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)(x + 7)\\).",
+    "options": [
+      "\\(x^{2} - 21x + 4\\)",
+      "\\(x^{2} + 5x - 21\\)",
+      "\\(x^{2} + 4x - 21\\)",
+      "\\(x^{2} + 4x + 21\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (7) + (-3) \\times x = 4x\\)\n\n\\((-3) \\times (7) = -21\\)\n\nSo the expansion is \\(x^{2} + 4x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(4x + 16\\).",
+    "options": [
+      "\\(2x(2 + 8)\\)",
+      "\\(2(2x - 8)\\)",
+      "\\(4(x + 8)\\)",
+      "\\(2(2x + 8)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 4 and 16 is 2.\n\nTaking 2 outside the bracket: \\(2(2x + 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 7)(5x - 3)\\).",
+    "options": [
+      "\\(20x^{2} + 23x + 21\\)",
+      "\\(21x^{2} + 23x - 21\\)",
+      "\\(20x^{2} + 23x - 21\\)",
+      "\\(20x^{2} - 47x - 21\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 5x = 20x^{2}\\)\n\n\\(4x \\times (-3) + (7) \\times 5x = -12x + 35x = 23x\\)\n\n\\((7) \\times (-3) = -21\\)\n\nSo the expansion is \\(20x^{2} + 23x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 4)(4x - 4)\\).",
+    "options": [
+      "\\(20x^{2} - 4x + 16\\)",
+      "\\(20x^{2} - 36x + 16\\)",
+      "\\(21x^{2} - 36x + 16\\)",
+      "\\(20x^{2} - 36x - 16\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 4x = 20x^{2}\\)\n\n\\(5x \\times (-4) + (-4) \\times 4x = -20x + -16x = -36x\\)\n\n\\((-4) \\times (-4) = 16\\)\n\nSo the expansion is \\(20x^{2} - 36x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(35x - 28\\).",
+    "options": [
+      "\\(35(x - 4)\\)",
+      "\\(7(5x - 4)\\)",
+      "\\(7x(5 - 4)\\)",
+      "\\(7(5x + 4)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 35 and 28 is 7.\n\nTaking 7 outside the bracket: \\(7(5x - 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(63x + 14\\).",
+    "options": [
+      "\\(63(x + 2)\\)",
+      "\\(7(9x + 2)\\)",
+      "\\(7x(9 + 2)\\)",
+      "\\(7(9x - 2)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 63 and 14 is 7.\n\nTaking 7 outside the bracket: \\(7(9x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 4)(3x + 5)\\).",
+    "options": [
+      "\\(10x^{2} + 3x - 20\\)",
+      "\\(9x^{2} + 27x - 20\\)",
+      "\\(9x^{2} + 3x - 20\\)",
+      "\\(9x^{2} + 3x + 20\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 3x = 9x^{2}\\)\n\n\\(3x \\times (5) + (-4) \\times 3x = 15x + -12x = 3x\\)\n\n\\((-4) \\times (5) = -20\\)\n\nSo the expansion is \\(9x^{2} + 3x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 8)^{2}\\).",
+    "options": [
+      "\\(x^{2} + 16x - 64\\)",
+      "\\(x^{2} + 16x + 64\\)",
+      "\\(x^{2} + 8x + 64\\)",
+      "\\(x^{2} - 16x + 64\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (8) = 16x\\)\n\n\\((8)^{2} = 64\\)\n\nSo the expansion is \\(x^{2} + 16x + 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 16\\).",
+    "options": [
+      "\\((4x + 4)(4x - 4)\\)",
+      "\\((4x - 4)^{2}\\)",
+      "\\((4x + 4)^{2}\\)",
+      "\\((4x + 16)(4x - 16)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(16 = 4^{2}\\)\n\nSo the factorisation is \\((4x + 4)(4x - 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 2)(2x + 2)\\).",
+    "options": [
+      "\\(8x^{2} + 4x - 4\\)",
+      "\\(8x^{2} + 4x + 4\\)",
+      "\\(9x^{2} + 4x - 4\\)",
+      "\\(8x^{2} + 12x - 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 2x = 8x^{2}\\)\n\n\\(4x \\times (2) + (-2) \\times 2x = 8x + -4x = 4x\\)\n\n\\((-2) \\times (2) = -4\\)\n\nSo the expansion is \\(8x^{2} + 4x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 7x + 6\\).",
+    "options": [
+      "\\((x + 1)(x + 6)\\)",
+      "\\((x - 1)(x + 6)\\)",
+      "\\((x + 1)(x - 6)\\)",
+      "\\((x - 1)(x - 6)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is 6 and whose sum is -7.\n\nThese are -1 and -6.\n\nSo \\(x^{2} - 7x + 6 = (x - 1)(x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 4)(4x + 7)\\).",
+    "options": [
+      "\\(20x^{2} + 51x + 28\\)",
+      "\\(20x^{2} + 51x - 28\\)",
+      "\\(20x^{2} + 19x + 28\\)",
+      "\\(21x^{2} + 51x + 28\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 4x = 20x^{2}\\)\n\n\\(5x \\times (7) + (4) \\times 4x = 35x + 16x = 51x\\)\n\n\\((4) \\times (7) = 28\\)\n\nSo the expansion is \\(20x^{2} + 51x + 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(24x - 21\\).",
+    "options": [
+      "\\(3(8x - 7)\\)",
+      "\\(3x(8 - 7)\\)",
+      "\\(3(8x + 7)\\)",
+      "\\(24(x - 7)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 24 and 21 is 3.\n\nTaking 3 outside the bracket: \\(3(8x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 11x + 30\\).",
+    "options": [
+      "\\((x + 5)(x + 6)\\)",
+      "\\((x - 5)(x - 6)\\)",
+      "\\((x + 5)(x - 6)\\)",
+      "\\((x - 5)(x + 6)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is 30 and whose sum is 11.\n\nThese are 5 and 6.\n\nSo \\(x^{2} + 11x + 30 = (x + 5)(x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 1)(x + 5)\\).",
+    "options": [
+      "\\(x^{2} + 7x + 5\\)",
+      "\\(x^{2} + 6x + 5\\)",
+      "\\(x^{2} + 6x - 5\\)",
+      "\\(x^{2} + 5x + 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (5) + (1) \\times x = 6x\\)\n\n\\((1) \\times (5) = 5\\)\n\nSo the expansion is \\(x^{2} + 6x + 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(64x + 72\\).",
+    "options": [
+      "\\(8(8x - 9)\\)",
+      "\\(64(x + 9)\\)",
+      "\\(8x(8 + 9)\\)",
+      "\\(8(8x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 64 and 72 is 8.\n\nTaking 8 outside the bracket: \\(8(8x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 6x - 27\\).",
+    "options": [
+      "\\((x + 9)(x - 3)\\)",
+      "\\((x - 9)(x + 3)\\)",
+      "\\((x + 9)(x + 3)\\)",
+      "\\((x - 9)(x - 3)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -27 and whose sum is -6.\n\nThese are -9 and 3.\n\nSo \\(x^{2} - 6x - 27 = (x - 9)(x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 4)(x - 8)\\).",
+    "options": [
+      "\\(x^{2} - 4x + 32\\)",
+      "\\(x^{2} - 4x - 32\\)",
+      "\\(x^{2} - 32x - 4\\)",
+      "\\(x^{2} - 3x - 32\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-8) + (4) \\times x = -4x\\)\n\n\\((4) \\times (-8) = -32\\)\n\nSo the expansion is \\(x^{2} - 4x - 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 15x + 54\\).",
+    "options": [
+      "\\((x + 6)(x + 9)\\)",
+      "\\((x - 6)(x + 9)\\)",
+      "\\((x - 6)(x - 9)\\)",
+      "\\((x + 6)(x - 9)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 54 and whose sum is -15.\n\nThese are -6 and -9.\n\nSo \\(x^{2} - 15x + 54 = (x - 6)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 7)(x - 8)\\).",
+    "options": [
+      "\\(x^{2} - x - 56\\)",
+      "\\(x^{2} - 56x - 1\\)",
+      "\\(x^{2} - x + 56\\)",
+      "\\(x^{2} - 56\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-8) + (7) \\times x = -1x\\)\n\n\\((7) \\times (-8) = -56\\)\n\nSo the expansion is \\(x^{2} - x - 56\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 7)(x - 5)\\).",
+    "options": [
+      "\\(x^{2} - 12x - 35\\)",
+      "\\(x^{2} + 35x - 12\\)",
+      "\\(x^{2} - 11x + 35\\)",
+      "\\(x^{2} - 12x + 35\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-5) + (-7) \\times x = -12x\\)\n\n\\((-7) \\times (-5) = 35\\)\n\nSo the expansion is \\(x^{2} - 12x + 35\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 9)^{2}\\).",
+    "options": [
+      "\\(16x^{2} + 72x + 81\\)",
+      "\\(16x^{2} - 36x + 81\\)",
+      "\\(16x^{2} - 72x - 81\\)",
+      "\\(16x^{2} - 72x + 81\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((4x)^{2} = 16x^{2}\\)\n\n\\(2 \\times 4x \\times (-9) = -72x\\)\n\n\\((-9)^{2} = 81\\)\n\nSo the expansion is \\(16x^{2} - 72x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 8)(x + 9)\\).",
+    "options": [
+      "\\(x^{2} + x - 72\\)",
+      "\\(x^{2} + 2x - 72\\)",
+      "\\(x^{2} + x + 72\\)",
+      "\\(x^{2} - 72x + 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (9) + (-8) \\times x = 1x\\)\n\n\\((-8) \\times (9) = -72\\)\n\nSo the expansion is \\(x^{2} + x - 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 5)(4x - 3)\\).",
+    "options": [
+      "\\(8x^{2} + 14x + 15\\)",
+      "\\(8x^{2} - 26x + 15\\)",
+      "\\(9x^{2} - 26x + 15\\)",
+      "\\(8x^{2} - 26x - 15\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 4x = 8x^{2}\\)\n\n\\(2x \\times (-3) + (-5) \\times 4x = -6x + -20x = -26x\\)\n\n\\((-5) \\times (-3) = 15\\)\n\nSo the expansion is \\(8x^{2} - 26x + 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(42x + 7\\).",
+    "options": [
+      "\\(7x(6 + 1)\\)",
+      "\\(42(x + 1)\\)",
+      "\\(7(6x - 1)\\)",
+      "\\(7(6x + 1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 42 and 7 is 7.\n\nTaking 7 outside the bracket: \\(7(6x + 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(63x + 36\\).",
+    "options": [
+      "\\(9(7x + 4)\\)",
+      "\\(9(7x - 4)\\)",
+      "\\(63(x + 4)\\)",
+      "\\(9x(7 + 4)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 63 and 36 is 9.\n\nTaking 9 outside the bracket: \\(9(7x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 9)(x + 4)\\).",
+    "options": [
+      "\\(x^{2} - 4x - 36\\)",
+      "\\(x^{2} - 5x - 36\\)",
+      "\\(x^{2} - 5x + 36\\)",
+      "\\(x^{2} - 36x - 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (4) + (-9) \\times x = -5x\\)\n\n\\((-9) \\times (4) = -36\\)\n\nSo the expansion is \\(x^{2} - 5x - 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 49\\).",
+    "options": [
+      "\\((5x + 7)(5x - 7)\\)",
+      "\\((5x + 49)(5x - 49)\\)",
+      "\\((5x + 7)^{2}\\)",
+      "\\((5x - 7)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(49 = 7^{2}\\)\n\nSo the factorisation is \\((5x + 7)(5x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(56x - 24\\).",
+    "options": [
+      "\\(8(7x + 3)\\)",
+      "\\(8(7x - 3)\\)",
+      "\\(56(x - 3)\\)",
+      "\\(8x(7 - 3)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 56 and 24 is 8.\n\nTaking 8 outside the bracket: \\(8(7x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 6)(5x + 5)\\).",
+    "options": [
+      "\\(20x^{2} - 10x - 30\\)",
+      "\\(21x^{2} - 10x - 30\\)",
+      "\\(20x^{2} + 50x - 30\\)",
+      "\\(20x^{2} - 10x + 30\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 5x = 20x^{2}\\)\n\n\\(4x \\times (5) + (-6) \\times 5x = 20x + -30x = -10x\\)\n\n\\((-6) \\times (5) = -30\\)\n\nSo the expansion is \\(20x^{2} - 10x - 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(72x - 18\\).",
+    "options": [
+      "\\(9(8x - 2)\\)",
+      "\\(9(8x + 2)\\)",
+      "\\(9x(8 - 2)\\)",
+      "\\(72(x - 2)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 72 and 18 is 9.\n\nTaking 9 outside the bracket: \\(9(8x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 25\\).",
+    "options": [
+      "\\((6x + 5)(6x - 5)\\)",
+      "\\((6x + 25)(6x - 25)\\)",
+      "\\((6x - 5)^{2}\\)",
+      "\\((6x + 5)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(25 = 5^{2}\\)\n\nSo the factorisation is \\((6x + 5)(6x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 1)(4x - 5)\\).",
+    "options": [
+      "\\(17x^{2} - 16x - 5\\)",
+      "\\(16x^{2} - 24x - 5\\)",
+      "\\(16x^{2} - 16x + 5\\)",
+      "\\(16x^{2} - 16x - 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 4x = 16x^{2}\\)\n\n\\(4x \\times (-5) + (1) \\times 4x = -20x + 4x = -16x\\)\n\n\\((1) \\times (-5) = -5\\)\n\nSo the expansion is \\(16x^{2} - 16x - 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 5)(3x + 4)\\).",
+    "options": [
+      "\\(9x^{2} - 3x + 20\\)",
+      "\\(9x^{2} - 3x - 20\\)",
+      "\\(10x^{2} - 3x - 20\\)",
+      "\\(9x^{2} + 27x - 20\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 3x = 9x^{2}\\)\n\n\\(3x \\times (4) + (-5) \\times 3x = 12x + -15x = -3x\\)\n\n\\((-5) \\times (4) = -20\\)\n\nSo the expansion is \\(9x^{2} - 3x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 9\\).",
+    "options": [
+      "\\((4x + 3)^{2}\\)",
+      "\\((4x - 3)^{2}\\)",
+      "\\((4x + 9)(4x - 9)\\)",
+      "\\((4x + 3)(4x - 3)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(9 = 3^{2}\\)\n\nSo the factorisation is \\((4x + 3)(4x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x^{2} - 121\\).",
+    "options": [
+      "\\((3x + 121)(3x - 121)\\)",
+      "\\((3x + 11)^{2}\\)",
+      "\\((3x + 11)(3x - 11)\\)",
+      "\\((3x - 11)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(9x^{2} = (3x)^{2}\\) and \\(121 = 11^{2}\\)\n\nSo the factorisation is \\((3x + 11)(3x - 11)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 64\\).",
+    "options": [
+      "\\((4x + 8)(4x - 8)\\)",
+      "\\((4x + 64)(4x - 64)\\)",
+      "\\((4x + 8)^{2}\\)",
+      "\\((4x - 8)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(64 = 8^{2}\\)\n\nSo the factorisation is \\((4x + 8)(4x - 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 6)(2x + 3)\\).",
+    "options": [
+      "\\(6x^{2} + 21x + 18\\)",
+      "\\(6x^{2} + 21x - 18\\)",
+      "\\(7x^{2} + 21x + 18\\)",
+      "\\(6x^{2} - 3x + 18\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 2x = 6x^{2}\\)\n\n\\(3x \\times (3) + (6) \\times 2x = 9x + 12x = 21x\\)\n\n\\((6) \\times (3) = 18\\)\n\nSo the expansion is \\(6x^{2} + 21x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(30x - 12\\).",
+    "options": [
+      "\\(6(5x - 2)\\)",
+      "\\(6x(5 - 2)\\)",
+      "\\(30(x - 2)\\)",
+      "\\(6(5x + 2)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 30 and 12 is 6.\n\nTaking 6 outside the bracket: \\(6(5x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 1)(x + 3)\\).",
+    "options": [
+      "\\(x^{2} + 2x + 3\\)",
+      "\\(x^{2} + 2x - 3\\)",
+      "\\(x^{2} + 3x - 3\\)",
+      "\\(x^{2} - 3x + 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (3) + (-1) \\times x = 2x\\)\n\n\\((-1) \\times (3) = -3\\)\n\nSo the expansion is \\(x^{2} + 2x - 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(42x + 35\\).",
+    "options": [
+      "\\(7(6x + 5)\\)",
+      "\\(7x(6 + 5)\\)",
+      "\\(7(6x - 5)\\)",
+      "\\(42(x + 5)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 42 and 35 is 7.\n\nTaking 7 outside the bracket: \\(7(6x + 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 9)(x + 9)\\).",
+    "options": [
+      "\\(x^{2} + 18x + 81\\)",
+      "\\(x^{2} + 19x + 81\\)",
+      "\\(x^{2} + 18x - 81\\)",
+      "\\(x^{2} + 81x + 18\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (9) + (9) \\times x = 18x\\)\n\n\\((9) \\times (9) = 81\\)\n\nSo the expansion is \\(x^{2} + 18x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(18x + 6\\).",
+    "options": [
+      "\\(3x(6 + 2)\\)",
+      "\\(18(x + 2)\\)",
+      "\\(3(6x + 2)\\)",
+      "\\(3(6x - 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 18 and 6 is 3.\n\nTaking 3 outside the bracket: \\(3(6x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 144\\).",
+    "options": [
+      "\\((4x + 12)(4x - 12)\\)",
+      "\\((4x - 12)^{2}\\)",
+      "\\((4x + 144)(4x - 144)\\)",
+      "\\((4x + 12)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(144 = 12^{2}\\)\n\nSo the factorisation is \\((4x + 12)(4x - 12)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(35x - 21\\).",
+    "options": [
+      "\\(7(5x + 3)\\)",
+      "\\(7(5x - 3)\\)",
+      "\\(35(x - 3)\\)",
+      "\\(7x(5 - 3)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 35 and 21 is 7.\n\nTaking 7 outside the bracket: \\(7(5x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 6)^{2}\\).",
+    "options": [
+      "\\(25x^{2} + 30x + 36\\)",
+      "\\(25x^{2} + 60x - 36\\)",
+      "\\(25x^{2} - 60x + 36\\)",
+      "\\(25x^{2} + 60x + 36\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (6) = 60x\\)\n\n\\((6)^{2} = 36\\)\n\nSo the expansion is \\(25x^{2} + 60x + 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(48x - 42\\).",
+    "options": [
+      "\\(6x(8 - 7)\\)",
+      "\\(6(8x - 7)\\)",
+      "\\(48(x - 7)\\)",
+      "\\(6(8x + 7)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 48 and 42 is 6.\n\nTaking 6 outside the bracket: \\(6(8x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 144\\).",
+    "options": [
+      "\\((6x - 12)^{2}\\)",
+      "\\((6x + 12)^{2}\\)",
+      "\\((6x + 144)(6x - 144)\\)",
+      "\\((6x + 12)(6x - 12)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(144 = 12^{2}\\)\n\nSo the factorisation is \\((6x + 12)(6x - 12)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 2x - 3\\).",
+    "options": [
+      "\\((x - 3)(x + 1)\\)",
+      "\\((x + 3)(x + 1)\\)",
+      "\\((x - 3)(x - 1)\\)",
+      "\\((x + 3)(x - 1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -3 and whose sum is 2.\n\nThese are 3 and -1.\n\nSo \\(x^{2} + 2x - 3 = (x + 3)(x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 3)(x - 2)\\).",
+    "options": [
+      "\\(x^{2} + x - 6\\)",
+      "\\(x^{2} + x + 6\\)",
+      "\\(x^{2} - 6x + 1\\)",
+      "\\(x^{2} + 2x - 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-2) + (3) \\times x = 1x\\)\n\n\\((3) \\times (-2) = -6\\)\n\nSo the expansion is \\(x^{2} + x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 3x - 28\\).",
+    "options": [
+      "\\((x + 7)(x - 4)\\)",
+      "\\((x - 7)(x + 4)\\)",
+      "\\((x + 7)(x + 4)\\)",
+      "\\((x - 7)(x - 4)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -28 and whose sum is -3.\n\nThese are -7 and 4.\n\nSo \\(x^{2} - 3x - 28 = (x - 7)(x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 9x + 20\\).",
+    "options": [
+      "\\((x + 5)(x - 4)\\)",
+      "\\((x + 5)(x + 4)\\)",
+      "\\((x - 5)(x - 4)\\)",
+      "\\((x - 5)(x + 4)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is 20 and whose sum is 9.\n\nThese are 5 and 4.\n\nSo \\(x^{2} + 9x + 20 = (x + 5)(x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 4)(x - 6)\\).",
+    "options": [
+      "\\(x^{2} - 24x - 2\\)",
+      "\\(x^{2} - x - 24\\)",
+      "\\(x^{2} - 2x - 24\\)",
+      "\\(x^{2} - 2x + 24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-6) + (4) \\times x = -2x\\)\n\n\\((4) \\times (-6) = -24\\)\n\nSo the expansion is \\(x^{2} - 2x - 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 7)(5x - 1)\\).",
+    "options": [
+      "\\(15x^{2} + 32x + 7\\)",
+      "\\(16x^{2} + 32x - 7\\)",
+      "\\(15x^{2} - 38x - 7\\)",
+      "\\(15x^{2} + 32x - 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 5x = 15x^{2}\\)\n\n\\(3x \\times (-1) + (7) \\times 5x = -3x + 35x = 32x\\)\n\n\\((7) \\times (-1) = -7\\)\n\nSo the expansion is \\(15x^{2} + 32x - 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x + 18\\).",
+    "options": [
+      "\\(36(x + 2)\\)",
+      "\\(9x(4 + 2)\\)",
+      "\\(9(4x + 2)\\)",
+      "\\(9(4x - 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 36 and 18 is 9.\n\nTaking 9 outside the bracket: \\(9(4x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 1)(x - 4)\\).",
+    "options": [
+      "\\(x^{2} - 3x - 4\\)",
+      "\\(x^{2} - 2x - 4\\)",
+      "\\(x^{2} - 4x - 3\\)",
+      "\\(x^{2} - 3x + 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-4) + (1) \\times x = -3x\\)\n\n\\((1) \\times (-4) = -4\\)\n\nSo the expansion is \\(x^{2} - 3x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 6)(5x + 3)\\).",
+    "options": [
+      "\\(10x^{2} + 36x + 18\\)",
+      "\\(10x^{2} - 24x + 18\\)",
+      "\\(11x^{2} + 36x + 18\\)",
+      "\\(10x^{2} + 36x - 18\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 5x = 10x^{2}\\)\n\n\\(2x \\times (3) + (6) \\times 5x = 6x + 30x = 36x\\)\n\n\\((6) \\times (3) = 18\\)\n\nSo the expansion is \\(10x^{2} + 36x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)(x - 3)\\).",
+    "options": [
+      "\\(x^{2} - 5x + 9\\)",
+      "\\(x^{2} - 6x - 9\\)",
+      "\\(x^{2} + 9x - 6\\)",
+      "\\(x^{2} - 6x + 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-3) + (-3) \\times x = -6x\\)\n\n\\((-3) \\times (-3) = 9\\)\n\nSo the expansion is \\(x^{2} - 6x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 6)(x - 5)\\).",
+    "options": [
+      "\\(x^{2} + 30x - 11\\)",
+      "\\(x^{2} - 11x + 30\\)",
+      "\\(x^{2} - 10x + 30\\)",
+      "\\(x^{2} - 11x - 30\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-5) + (-6) \\times x = -11x\\)\n\n\\((-6) \\times (-5) = 30\\)\n\nSo the expansion is \\(x^{2} - 11x + 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x^{2} - 4\\).",
+    "options": [
+      "\\((3x + 2)^{2}\\)",
+      "\\((3x + 2)(3x - 2)\\)",
+      "\\((3x - 2)^{2}\\)",
+      "\\((3x + 4)(3x - 4)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(9x^{2} = (3x)^{2}\\) and \\(4 = 2^{2}\\)\n\nSo the factorisation is \\((3x + 2)(3x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 25\\).",
+    "options": [
+      "\\((x + 5)^{2}\\)",
+      "\\((x + 25)(x - 25)\\)",
+      "\\((x + 5)(x - 5)\\)",
+      "\\((x - 5)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(x^{2} = (x)^{2}\\) and \\(25 = 5^{2}\\)\n\nSo the factorisation is \\((x + 5)(x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 8)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 80x + 64\\)",
+      "\\(25x^{2} + 80x + 64\\)",
+      "\\(25x^{2} + 40x + 64\\)",
+      "\\(25x^{2} + 80x - 64\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (8) = 80x\\)\n\n\\((8)^{2} = 64\\)\n\nSo the expansion is \\(25x^{2} + 80x + 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 64\\).",
+    "options": [
+      "\\((x - 8)^{2}\\)",
+      "\\((x + 8)(x - 8)\\)",
+      "\\((x + 8)^{2}\\)",
+      "\\((x + 64)(x - 64)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(x^{2} = (x)^{2}\\) and \\(64 = 8^{2}\\)\n\nSo the factorisation is \\((x + 8)(x - 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 36\\).",
+    "options": [
+      "\\((6x + 36)(6x - 36)\\)",
+      "\\((6x + 6)(6x - 6)\\)",
+      "\\((6x - 6)^{2}\\)",
+      "\\((6x + 6)^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(36 = 6^{2}\\)\n\nSo the factorisation is \\((6x + 6)(6x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 3)(2x + 3)\\).",
+    "options": [
+      "\\(4x^{2} - 9\\)",
+      "\\(4x^{2} + 9\\)",
+      "\\(4x^{2} + 12x - 9\\)",
+      "\\(5x^{2} - 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 2x = 4x^{2}\\)\n\n\\(2x \\times (3) + (-3) \\times 2x = 6x + -6x = 0x\\)\n\n\\((-3) \\times (3) = -9\\)\n\nSo the expansion is \\(4x^{2} - 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 1)^{2}\\).",
+    "options": [
+      "\\(9x^{2} + 6x + 1\\)",
+      "\\(9x^{2} - 6x + 1\\)",
+      "\\(9x^{2} - 6x - 1\\)",
+      "\\(9x^{2} - 3x + 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (-1) = -6x\\)\n\n\\((-1)^{2} = 1\\)\n\nSo the expansion is \\(9x^{2} - 6x + 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x + 12\\).",
+    "options": [
+      "\\(4(4x + 3)\\)",
+      "\\(4(4x - 3)\\)",
+      "\\(16(x + 3)\\)",
+      "\\(4x(4 + 3)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 16 and 12 is 4.\n\nTaking 4 outside the bracket: \\(4(4x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 2)(x - 4)\\).",
+    "options": [
+      "\\(x^{2} - x - 8\\)",
+      "\\(x^{2} - 2x - 8\\)",
+      "\\(x^{2} - 8x - 2\\)",
+      "\\(x^{2} - 2x + 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-4) + (2) \\times x = -2x\\)\n\n\\((2) \\times (-4) = -8\\)\n\nSo the expansion is \\(x^{2} - 2x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 5)(3x - 4)\\).",
+    "options": [
+      "\\(6x^{2} + 7x - 20\\)",
+      "\\(6x^{2} - 23x - 20\\)",
+      "\\(6x^{2} + 7x + 20\\)",
+      "\\(7x^{2} + 7x - 20\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 3x = 6x^{2}\\)\n\n\\(2x \\times (-4) + (5) \\times 3x = -8x + 15x = 7x\\)\n\n\\((5) \\times (-4) = -20\\)\n\nSo the expansion is \\(6x^{2} + 7x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 9)(x + 1)\\).",
+    "options": [
+      "\\(x^{2} + 10x + 9\\)",
+      "\\(x^{2} + 11x + 9\\)",
+      "\\(x^{2} + 9x + 10\\)",
+      "\\(x^{2} + 10x - 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (1) + (9) \\times x = 10x\\)\n\n\\((9) \\times (1) = 9\\)\n\nSo the expansion is \\(x^{2} + 10x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 2)(3x + 4)\\).",
+    "options": [
+      "\\(15x^{2} + 14x + 8\\)",
+      "\\(15x^{2} + 14x - 8\\)",
+      "\\(16x^{2} + 14x - 8\\)",
+      "\\(15x^{2} + 26x - 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 3x = 15x^{2}\\)\n\n\\(5x \\times (4) + (-2) \\times 3x = 20x + -6x = 14x\\)\n\n\\((-2) \\times (4) = -8\\)\n\nSo the expansion is \\(15x^{2} + 14x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 6)(4x - 5)\\).",
+    "options": [
+      "\\(20x^{2} - 49x - 30\\)",
+      "\\(20x^{2} - x - 30\\)",
+      "\\(20x^{2} - x + 30\\)",
+      "\\(21x^{2} - x - 30\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 4x = 20x^{2}\\)\n\n\\(5x \\times (-5) + (6) \\times 4x = -25x + 24x = -1x\\)\n\n\\((6) \\times (-5) = -30\\)\n\nSo the expansion is \\(20x^{2} - x - 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 6)^{2}\\).",
+    "options": [
+      "\\(4x^{2} - 24x + 36\\)",
+      "\\(4x^{2} + 24x + 36\\)",
+      "\\(4x^{2} - 12x + 36\\)",
+      "\\(4x^{2} - 24x - 36\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((2x)^{2} = 4x^{2}\\)\n\n\\(2 \\times 2x \\times (-6) = -24x\\)\n\n\\((-6)^{2} = 36\\)\n\nSo the expansion is \\(4x^{2} - 24x + 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 9x + 14\\).",
+    "options": [
+      "\\((x - 7)(x + 2)\\)",
+      "\\((x - 7)(x - 2)\\)",
+      "\\((x + 7)(x + 2)\\)",
+      "\\((x + 7)(x - 2)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is 14 and whose sum is -9.\n\nThese are -7 and -2.\n\nSo \\(x^{2} - 9x + 14 = (x - 7)(x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 4)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 40x + 16\\)",
+      "\\(25x^{2} + 40x + 16\\)",
+      "\\(25x^{2} - 20x + 16\\)",
+      "\\(25x^{2} - 40x - 16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (-4) = -40x\\)\n\n\\((-4)^{2} = 16\\)\n\nSo the expansion is \\(25x^{2} - 40x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 5)(x + 4)\\).",
+    "options": [
+      "\\(x^{2} + 9x + 20\\)",
+      "\\(x^{2} + 9x - 20\\)",
+      "\\(x^{2} + 10x + 20\\)",
+      "\\(x^{2} + 20x + 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (4) + (5) \\times x = 9x\\)\n\n\\((5) \\times (4) = 20\\)\n\nSo the expansion is \\(x^{2} + 9x + 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(20x - 25\\).",
+    "options": [
+      "\\(20(x - 5)\\)",
+      "\\(5x(4 - 5)\\)",
+      "\\(5(4x + 5)\\)",
+      "\\(5(4x - 5)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 20 and 25 is 5.\n\nTaking 5 outside the bracket: \\(5(4x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 3x - 10\\).",
+    "options": [
+      "\\((x - 5)(x + 2)\\)",
+      "\\((x - 5)(x - 2)\\)",
+      "\\((x + 5)(x + 2)\\)",
+      "\\((x + 5)(x - 2)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is -10 and whose sum is -3.\n\nThese are -5 and 2.\n\nSo \\(x^{2} - 3x - 10 = (x - 5)(x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 2)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 20x + 4\\)",
+      "\\(25x^{2} - 10x + 4\\)",
+      "\\(25x^{2} + 20x + 4\\)",
+      "\\(25x^{2} - 20x - 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (-2) = -20x\\)\n\n\\((-2)^{2} = 4\\)\n\nSo the expansion is \\(25x^{2} - 20x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(24x + 8\\).",
+    "options": [
+      "\\(4(6x - 2)\\)",
+      "\\(4(6x + 2)\\)",
+      "\\(4x(6 + 2)\\)",
+      "\\(24(x + 2)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 24 and 8 is 4.\n\nTaking 4 outside the bracket: \\(4(6x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 3)^{2}\\).",
+    "options": [
+      "\\(16x^{2} - 24x + 9\\)",
+      "\\(16x^{2} + 12x + 9\\)",
+      "\\(16x^{2} + 24x + 9\\)",
+      "\\(16x^{2} + 24x - 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((4x)^{2} = 16x^{2}\\)\n\n\\(2 \\times 4x \\times (3) = 24x\\)\n\n\\((3)^{2} = 9\\)\n\nSo the expansion is \\(16x^{2} + 24x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 6)(5x - 4)\\).",
+    "options": [
+      "\\(20x^{2} - 46x - 24\\)",
+      "\\(21x^{2} + 14x - 24\\)",
+      "\\(20x^{2} + 14x + 24\\)",
+      "\\(20x^{2} + 14x - 24\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 5x = 20x^{2}\\)\n\n\\(4x \\times (-4) + (6) \\times 5x = -16x + 30x = 14x\\)\n\n\\((6) \\times (-4) = -24\\)\n\nSo the expansion is \\(20x^{2} + 14x - 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 5)(3x - 1)\\).",
+    "options": [
+      "\\(6x^{2} + 13x + 5\\)",
+      "\\(7x^{2} - 17x + 5\\)",
+      "\\(6x^{2} - 17x + 5\\)",
+      "\\(6x^{2} - 17x - 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 3x = 6x^{2}\\)\n\n\\(2x \\times (-1) + (-5) \\times 3x = -2x + -15x = -17x\\)\n\n\\((-5) \\times (-1) = 5\\)\n\nSo the expansion is \\(6x^{2} - 17x + 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x - 30\\).",
+    "options": [
+      "\\(36(x - 5)\\)",
+      "\\(6(6x - 5)\\)",
+      "\\(6(6x + 5)\\)",
+      "\\(6x(6 - 5)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 36 and 30 is 6.\n\nTaking 6 outside the bracket: \\(6(6x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 2)(2x - 4)\\).",
+    "options": [
+      "\\(4x^{2} - 12x + 8\\)",
+      "\\(4x^{2} - 4x + 8\\)",
+      "\\(4x^{2} - 12x - 8\\)",
+      "\\(5x^{2} - 12x + 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 2x = 4x^{2}\\)\n\n\\(2x \\times (-4) + (-2) \\times 2x = -8x + -4x = -12x\\)\n\n\\((-2) \\times (-4) = 8\\)\n\nSo the expansion is \\(4x^{2} - 12x + 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 1)(4x + 5)\\).",
+    "options": [
+      "\\(12x^{2} + 19x - 5\\)",
+      "\\(13x^{2} + 19x + 5\\)",
+      "\\(12x^{2} + 19x + 5\\)",
+      "\\(12x^{2} + 11x + 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 4x = 12x^{2}\\)\n\n\\(3x \\times (5) + (1) \\times 4x = 15x + 4x = 19x\\)\n\n\\((1) \\times (5) = 5\\)\n\nSo the expansion is \\(12x^{2} + 19x + 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 3)(2x - 7)\\).",
+    "options": [
+      "\\(10x^{2} - 29x + 21\\)",
+      "\\(10x^{2} - 29x - 21\\)",
+      "\\(11x^{2} - 29x - 21\\)",
+      "\\(10x^{2} - 41x - 21\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 2x = 10x^{2}\\)\n\n\\(5x \\times (-7) + (3) \\times 2x = -35x + 6x = -29x\\)\n\n\\((3) \\times (-7) = -21\\)\n\nSo the expansion is \\(10x^{2} - 29x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 8x + 7\\).",
+    "options": [
+      "\\((x + 7)(x - 1)\\)",
+      "\\((x + 7)(x + 1)\\)",
+      "\\((x - 7)(x - 1)\\)",
+      "\\((x - 7)(x + 1)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 7 and whose sum is -8.\n\nThese are -7 and -1.\n\nSo \\(x^{2} - 8x + 7 = (x - 7)(x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 7x + 12\\).",
+    "options": [
+      "\\((x - 3)(x - 4)\\)",
+      "\\((x - 3)(x + 4)\\)",
+      "\\((x + 3)(x + 4)\\)",
+      "\\((x + 3)(x - 4)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 12 and whose sum is 7.\n\nThese are 3 and 4.\n\nSo \\(x^{2} + 7x + 12 = (x + 3)(x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 4\\).",
+    "options": [
+      "\\((5x + 4)(5x - 4)\\)",
+      "\\((5x + 2)(5x - 2)\\)",
+      "\\((5x - 2)^{2}\\)",
+      "\\((5x + 2)^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(4 = 2^{2}\\)\n\nSo the factorisation is \\((5x + 2)(5x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 7)^{2}\\).",
+    "options": [
+      "\\(x^{2} - 14x + 49\\)",
+      "\\(x^{2} - 14x - 49\\)",
+      "\\(x^{2} + 14x + 49\\)",
+      "\\(x^{2} - 7x + 49\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (-7) = -14x\\)\n\n\\((-7)^{2} = 49\\)\n\nSo the expansion is \\(x^{2} - 14x + 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)(x - 6)\\).",
+    "options": [
+      "\\(x^{2} + 18x - 9\\)",
+      "\\(x^{2} - 9x + 18\\)",
+      "\\(x^{2} - 8x + 18\\)",
+      "\\(x^{2} - 9x - 18\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-6) + (-3) \\times x = -9x\\)\n\n\\((-3) \\times (-6) = 18\\)\n\nSo the expansion is \\(x^{2} - 9x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 2x - 3\\).",
+    "options": [
+      "\\((x - 3)(x - 1)\\)",
+      "\\((x + 3)(x - 1)\\)",
+      "\\((x - 3)(x + 1)\\)",
+      "\\((x + 3)(x + 1)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is -3 and whose sum is -2.\n\nThese are -3 and 1.\n\nSo \\(x^{2} - 2x - 3 = (x - 3)(x + 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 1)(x + 9)\\).",
+    "options": [
+      "\\(x^{2} + 9x - 9\\)",
+      "\\(x^{2} - 9x + 8\\)",
+      "\\(x^{2} + 8x - 9\\)",
+      "\\(x^{2} + 8x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (9) + (-1) \\times x = 8x\\)\n\n\\((-1) \\times (9) = -9\\)\n\nSo the expansion is \\(x^{2} + 8x - 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 3x - 40\\).",
+    "options": [
+      "\\((x - 8)(x - 5)\\)",
+      "\\((x + 8)(x + 5)\\)",
+      "\\((x - 8)(x + 5)\\)",
+      "\\((x + 8)(x - 5)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -40 and whose sum is 3.\n\nThese are 8 and -5.\n\nSo \\(x^{2} + 3x - 40 = (x + 8)(x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(4x^{2} - 100\\).",
+    "options": [
+      "\\((2x + 10)(2x - 10)\\)",
+      "\\((2x - 10)^{2}\\)",
+      "\\((2x + 100)(2x - 100)\\)",
+      "\\((2x + 10)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(4x^{2} = (2x)^{2}\\) and \\(100 = 10^{2}\\)\n\nSo the factorisation is \\((2x + 10)(2x - 10)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 4)(x + 7)\\).",
+    "options": [
+      "\\(x^{2} + 11x - 28\\)",
+      "\\(x^{2} + 28x + 11\\)",
+      "\\(x^{2} + 12x + 28\\)",
+      "\\(x^{2} + 11x + 28\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (7) + (4) \\times x = 11x\\)\n\n\\((4) \\times (7) = 28\\)\n\nSo the expansion is \\(x^{2} + 11x + 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 7x - 18\\).",
+    "options": [
+      "\\((x + 2)(x - 9)\\)",
+      "\\((x + 2)(x + 9)\\)",
+      "\\((x - 2)(x - 9)\\)",
+      "\\((x - 2)(x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -18 and whose sum is 7.\n\nThese are -2 and 9.\n\nSo \\(x^{2} + 7x - 18 = (x - 2)(x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(12x + 4\\).",
+    "options": [
+      "\\(2x(6 + 2)\\)",
+      "\\(2(6x + 2)\\)",
+      "\\(12(x + 2)\\)",
+      "\\(2(6x - 2)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 12 and 4 is 2.\n\nTaking 2 outside the bracket: \\(2(6x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 4)(4x + 3)\\).",
+    "options": [
+      "\\(8x^{2} - 10x - 12\\)",
+      "\\(9x^{2} - 10x - 12\\)",
+      "\\(8x^{2} + 22x - 12\\)",
+      "\\(8x^{2} - 10x + 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 4x = 8x^{2}\\)\n\n\\(2x \\times (3) + (-4) \\times 4x = 6x + -16x = -10x\\)\n\n\\((-4) \\times (3) = -12\\)\n\nSo the expansion is \\(8x^{2} - 10x - 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x - 45\\).",
+    "options": [
+      "\\(5(5x - 9)\\)",
+      "\\(25(x - 9)\\)",
+      "\\(5(5x + 9)\\)",
+      "\\(5x(5 - 9)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 25 and 45 is 5.\n\nTaking 5 outside the bracket: \\(5(5x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 4)(5x - 5)\\).",
+    "options": [
+      "\\(15x^{2} + 5x + 20\\)",
+      "\\(16x^{2} - 35x + 20\\)",
+      "\\(15x^{2} - 35x + 20\\)",
+      "\\(15x^{2} - 35x - 20\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 5x = 15x^{2}\\)\n\n\\(3x \\times (-5) + (-4) \\times 5x = -15x + -20x = -35x\\)\n\n\\((-4) \\times (-5) = 20\\)\n\nSo the expansion is \\(15x^{2} - 35x + 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 3)(5x + 2)\\).",
+    "options": [
+      "\\(25x^{2} - 5x - 6\\)",
+      "\\(25x^{2} - 5x + 6\\)",
+      "\\(25x^{2} + 25x - 6\\)",
+      "\\(26x^{2} - 5x - 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 5x = 25x^{2}\\)\n\n\\(5x \\times (2) + (-3) \\times 5x = 10x + -15x = -5x\\)\n\n\\((-3) \\times (2) = -6\\)\n\nSo the expansion is \\(25x^{2} - 5x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 5)(x + 3)\\).",
+    "options": [
+      "\\(x^{2} - 15x - 2\\)",
+      "\\(x^{2} - 2x + 15\\)",
+      "\\(x^{2} - 2x - 15\\)",
+      "\\(x^{2} - x - 15\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (3) + (-5) \\times x = -2x\\)\n\n\\((-5) \\times (3) = -15\\)\n\nSo the expansion is \\(x^{2} - 2x - 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 36\\).",
+    "options": [
+      "\\((x - 6)^{2}\\)",
+      "\\((x + 6)(x - 6)\\)",
+      "\\((x + 6)^{2}\\)",
+      "\\((x + 36)(x - 36)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(x^{2} = (x)^{2}\\) and \\(36 = 6^{2}\\)\n\nSo the factorisation is \\((x + 6)(x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 100\\).",
+    "options": [
+      "\\((6x - 10)^{2}\\)",
+      "\\((6x + 10)(6x - 10)\\)",
+      "\\((6x + 10)^{2}\\)",
+      "\\((6x + 100)(6x - 100)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(100 = 10^{2}\\)\n\nSo the factorisation is \\((6x + 10)(6x - 10)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(14x + 35\\).",
+    "options": [
+      "\\(7x(2 + 5)\\)",
+      "\\(7(2x - 5)\\)",
+      "\\(14(x + 5)\\)",
+      "\\(7(2x + 5)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 14 and 35 is 7.\n\nTaking 7 outside the bracket: \\(7(2x + 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 4x - 45\\).",
+    "options": [
+      "\\((x + 5)(x + 9)\\)",
+      "\\((x + 5)(x - 9)\\)",
+      "\\((x - 5)(x - 9)\\)",
+      "\\((x - 5)(x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -45 and whose sum is 4.\n\nThese are -5 and 9.\n\nSo \\(x^{2} + 4x - 45 = (x - 5)(x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 2x - 48\\).",
+    "options": [
+      "\\((x - 6)(x + 8)\\)",
+      "\\((x + 6)(x + 8)\\)",
+      "\\((x - 6)(x - 8)\\)",
+      "\\((x + 6)(x - 8)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is -48 and whose sum is 2.\n\nThese are -6 and 8.\n\nSo \\(x^{2} + 2x - 48 = (x - 6)(x + 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 13x + 42\\).",
+    "options": [
+      "\\((x - 7)(x + 6)\\)",
+      "\\((x + 7)(x + 6)\\)",
+      "\\((x - 7)(x - 6)\\)",
+      "\\((x + 7)(x - 6)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is 42 and whose sum is 13.\n\nThese are 7 and 6.\n\nSo \\(x^{2} + 13x + 42 = (x + 7)(x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 8x + 15\\).",
+    "options": [
+      "\\((x - 5)(x + 3)\\)",
+      "\\((x - 5)(x - 3)\\)",
+      "\\((x + 5)(x - 3)\\)",
+      "\\((x + 5)(x + 3)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is 15 and whose sum is 8.\n\nThese are 5 and 3.\n\nSo \\(x^{2} + 8x + 15 = (x + 5)(x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 3)(4x + 4)\\).",
+    "options": [
+      "\\(20x^{2} + 32x - 12\\)",
+      "\\(21x^{2} + 32x + 12\\)",
+      "\\(20x^{2} + 32x + 12\\)",
+      "\\(20x^{2} + 8x + 12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 4x = 20x^{2}\\)\n\n\\(5x \\times (4) + (3) \\times 4x = 20x + 12x = 32x\\)\n\n\\((3) \\times (4) = 12\\)\n\nSo the expansion is \\(20x^{2} + 32x + 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 8)(x + 3)\\).",
+    "options": [
+      "\\(x^{2} + 11x - 24\\)",
+      "\\(x^{2} + 11x + 24\\)",
+      "\\(x^{2} + 12x + 24\\)",
+      "\\(x^{2} + 24x + 11\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (3) + (8) \\times x = 11x\\)\n\n\\((8) \\times (3) = 24\\)\n\nSo the expansion is \\(x^{2} + 11x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 6x - 7\\).",
+    "options": [
+      "\\((x + 1)(x + 7)\\)",
+      "\\((x - 1)(x + 7)\\)",
+      "\\((x + 1)(x - 7)\\)",
+      "\\((x - 1)(x - 7)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is -7 and whose sum is -6.\n\nThese are 1 and -7.\n\nSo \\(x^{2} - 6x - 7 = (x + 1)(x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 7)(x + 7)\\).",
+    "options": [
+      "\\(x^{2} + 49x + 14\\)",
+      "\\(x^{2} + 14x - 49\\)",
+      "\\(x^{2} + 15x + 49\\)",
+      "\\(x^{2} + 14x + 49\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (7) + (7) \\times x = 14x\\)\n\n\\((7) \\times (7) = 49\\)\n\nSo the expansion is \\(x^{2} + 14x + 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(56x + 14\\).",
+    "options": [
+      "\\(56(x + 2)\\)",
+      "\\(7x(8 + 2)\\)",
+      "\\(7(8x + 2)\\)",
+      "\\(7(8x - 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 56 and 14 is 7.\n\nTaking 7 outside the bracket: \\(7(8x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 1)(2x - 4)\\).",
+    "options": [
+      "\\(8x^{2} - 14x + 4\\)",
+      "\\(8x^{2} - 14x - 4\\)",
+      "\\(8x^{2} - 18x - 4\\)",
+      "\\(9x^{2} - 14x - 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 2x = 8x^{2}\\)\n\n\\(4x \\times (-4) + (1) \\times 2x = -16x + 2x = -14x\\)\n\n\\((1) \\times (-4) = -4\\)\n\nSo the expansion is \\(8x^{2} - 14x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 18x + 81\\).",
+    "options": [
+      "\\((x + 9)(x + 9)\\)",
+      "\\((x - 9)(x - 9)\\)",
+      "\\((x - 9)(x + 9)\\)",
+      "\\((x + 9)(x - 9)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is 81 and whose sum is -18.\n\nThese are -9 and -9.\n\nSo \\(x^{2} - 18x + 81 = (x - 9)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 2)(3x + 3)\\).",
+    "options": [
+      "\\(12x^{2} + 18x - 6\\)",
+      "\\(13x^{2} + 18x + 6\\)",
+      "\\(12x^{2} + 18x + 6\\)",
+      "\\(12x^{2} + 6x + 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 3x = 12x^{2}\\)\n\n\\(4x \\times (3) + (2) \\times 3x = 12x + 6x = 18x\\)\n\n\\((2) \\times (3) = 6\\)\n\nSo the expansion is \\(12x^{2} + 18x + 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(49x + 28\\).",
+    "options": [
+      "\\(7(7x + 4)\\)",
+      "\\(7(7x - 4)\\)",
+      "\\(7x(7 + 4)\\)",
+      "\\(49(x + 4)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 49 and 28 is 7.\n\nTaking 7 outside the bracket: \\(7(7x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 1)(x + 3)\\).",
+    "options": [
+      "\\(x^{2} + 5x + 3\\)",
+      "\\(x^{2} + 4x - 3\\)",
+      "\\(x^{2} + 4x + 3\\)",
+      "\\(x^{2} + 3x + 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (3) + (1) \\times x = 4x\\)\n\n\\((1) \\times (3) = 3\\)\n\nSo the expansion is \\(x^{2} + 4x + 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 6)(5x + 7)\\).",
+    "options": [
+      "\\(15x^{2} - 9x + 42\\)",
+      "\\(15x^{2} + 51x + 42\\)",
+      "\\(16x^{2} + 51x + 42\\)",
+      "\\(15x^{2} + 51x - 42\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 5x = 15x^{2}\\)\n\n\\(3x \\times (7) + (6) \\times 5x = 21x + 30x = 51x\\)\n\n\\((6) \\times (7) = 42\\)\n\nSo the expansion is \\(15x^{2} + 51x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(49x + 35\\).",
+    "options": [
+      "\\(49(x + 5)\\)",
+      "\\(7(7x + 5)\\)",
+      "\\(7x(7 + 5)\\)",
+      "\\(7(7x - 5)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 49 and 35 is 7.\n\nTaking 7 outside the bracket: \\(7(7x + 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 4)(3x + 5)\\).",
+    "options": [
+      "\\(12x^{2} + 8x - 20\\)",
+      "\\(13x^{2} + 8x - 20\\)",
+      "\\(12x^{2} + 8x + 20\\)",
+      "\\(12x^{2} + 32x - 20\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 3x = 12x^{2}\\)\n\n\\(4x \\times (5) + (-4) \\times 3x = 20x + -12x = 8x\\)\n\n\\((-4) \\times (5) = -20\\)\n\nSo the expansion is \\(12x^{2} + 8x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 7)(x - 6)\\).",
+    "options": [
+      "\\(x^{2} - 12x + 42\\)",
+      "\\(x^{2} - 13x + 42\\)",
+      "\\(x^{2} - 13x - 42\\)",
+      "\\(x^{2} + 42x - 13\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-6) + (-7) \\times x = -13x\\)\n\n\\((-7) \\times (-6) = 42\\)\n\nSo the expansion is \\(x^{2} - 13x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 25\\).",
+    "options": [
+      "\\((5x + 5)(5x - 5)\\)",
+      "\\((5x + 25)(5x - 25)\\)",
+      "\\((5x + 5)^{2}\\)",
+      "\\((5x - 5)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(25 = 5^{2}\\)\n\nSo the factorisation is \\((5x + 5)(5x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 64\\).",
+    "options": [
+      "\\((6x - 8)^{2}\\)",
+      "\\((6x + 64)(6x - 64)\\)",
+      "\\((6x + 8)^{2}\\)",
+      "\\((6x + 8)(6x - 8)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(64 = 8^{2}\\)\n\nSo the factorisation is \\((6x + 8)(6x - 8)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 5x + 4\\).",
+    "options": [
+      "\\((x + 4)(x - 1)\\)",
+      "\\((x + 4)(x + 1)\\)",
+      "\\((x - 4)(x - 1)\\)",
+      "\\((x - 4)(x + 1)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 4 and whose sum is -5.\n\nThese are -4 and -1.\n\nSo \\(x^{2} - 5x + 4 = (x - 4)(x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 3)(x + 9)\\).",
+    "options": [
+      "\\(x^{2} + 13x + 27\\)",
+      "\\(x^{2} + 27x + 12\\)",
+      "\\(x^{2} + 12x + 27\\)",
+      "\\(x^{2} + 12x - 27\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (9) + (3) \\times x = 12x\\)\n\n\\((3) \\times (9) = 27\\)\n\nSo the expansion is \\(x^{2} + 12x + 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 49\\).",
+    "options": [
+      "\\((4x + 7)(4x - 7)\\)",
+      "\\((4x + 7)^{2}\\)",
+      "\\((4x - 7)^{2}\\)",
+      "\\((4x + 49)(4x - 49)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(49 = 7^{2}\\)\n\nSo the factorisation is \\((4x + 7)(4x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 3)(5x - 7)\\).",
+    "options": [
+      "\\(10x^{2} + x - 21\\)",
+      "\\(10x^{2} - 29x - 21\\)",
+      "\\(10x^{2} + x + 21\\)",
+      "\\(11x^{2} + x - 21\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 5x = 10x^{2}\\)\n\n\\(2x \\times (-7) + (3) \\times 5x = -14x + 15x = 1x\\)\n\n\\((3) \\times (-7) = -21\\)\n\nSo the expansion is \\(10x^{2} + x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 4x - 12\\).",
+    "options": [
+      "\\((x + 6)(x - 2)\\)",
+      "\\((x - 6)(x + 2)\\)",
+      "\\((x + 6)(x + 2)\\)",
+      "\\((x - 6)(x - 2)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -12 and whose sum is -4.\n\nThese are -6 and 2.\n\nSo \\(x^{2} - 4x - 12 = (x - 6)(x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 7)(x - 3)\\).",
+    "options": [
+      "\\(x^{2} - 10x - 21\\)",
+      "\\(x^{2} - 9x + 21\\)",
+      "\\(x^{2} - 10x + 21\\)",
+      "\\(x^{2} + 21x - 10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-3) + (-7) \\times x = -10x\\)\n\n\\((-7) \\times (-3) = 21\\)\n\nSo the expansion is \\(x^{2} - 10x + 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((6x + 7)^{2}\\).",
+    "options": [
+      "\\(36x^{2} - 84x + 49\\)",
+      "\\(36x^{2} + 84x + 49\\)",
+      "\\(36x^{2} + 42x + 49\\)",
+      "\\(36x^{2} + 84x - 49\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((6x)^{2} = 36x^{2}\\)\n\n\\(2 \\times 6x \\times (7) = 84x\\)\n\n\\((7)^{2} = 49\\)\n\nSo the expansion is \\(36x^{2} + 84x + 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 3)^{2}\\).",
+    "options": [
+      "\\(4x^{2} - 6x + 9\\)",
+      "\\(4x^{2} - 12x + 9\\)",
+      "\\(4x^{2} + 12x + 9\\)",
+      "\\(4x^{2} - 12x - 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((2x)^{2} = 4x^{2}\\)\n\n\\(2 \\times 2x \\times (-3) = -12x\\)\n\n\\((-3)^{2} = 9\\)\n\nSo the expansion is \\(4x^{2} - 12x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(45x - 27\\).",
+    "options": [
+      "\\(9(5x - 3)\\)",
+      "\\(9(5x + 3)\\)",
+      "\\(45(x - 3)\\)",
+      "\\(9x(5 - 3)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 45 and 27 is 9.\n\nTaking 9 outside the bracket: \\(9(5x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 5)(x - 5)\\).",
+    "options": [
+      "\\(x^{2} + 25x - 10\\)",
+      "\\(x^{2} - 9x + 25\\)",
+      "\\(x^{2} - 10x - 25\\)",
+      "\\(x^{2} - 10x + 25\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-5) + (-5) \\times x = -10x\\)\n\n\\((-5) \\times (-5) = 25\\)\n\nSo the expansion is \\(x^{2} - 10x + 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 81\\).",
+    "options": [
+      "\\((x - 9)^{2}\\)",
+      "\\((x + 9)(x - 9)\\)",
+      "\\((x + 81)(x - 81)\\)",
+      "\\((x + 9)^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(x^{2} = (x)^{2}\\) and \\(81 = 9^{2}\\)\n\nSo the factorisation is \\((x + 9)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 7x + 6\\).",
+    "options": [
+      "\\((x + 6)(x - 1)\\)",
+      "\\((x + 6)(x + 1)\\)",
+      "\\((x - 6)(x - 1)\\)",
+      "\\((x - 6)(x + 1)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is 6 and whose sum is 7.\n\nThese are 6 and 1.\n\nSo \\(x^{2} + 7x + 6 = (x + 6)(x + 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 2)(x + 7)\\).",
+    "options": [
+      "\\(x^{2} + 5x + 14\\)",
+      "\\(x^{2} + 5x - 14\\)",
+      "\\(x^{2} + 6x - 14\\)",
+      "\\(x^{2} - 14x + 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (7) + (-2) \\times x = 5x\\)\n\n\\((-2) \\times (7) = -14\\)\n\nSo the expansion is \\(x^{2} + 5x - 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 4x - 32\\).",
+    "options": [
+      "\\((x + 8)(x - 4)\\)",
+      "\\((x - 8)(x + 4)\\)",
+      "\\((x + 8)(x + 4)\\)",
+      "\\((x - 8)(x - 4)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -32 and whose sum is -4.\n\nThese are -8 and 4.\n\nSo \\(x^{2} - 4x - 32 = (x - 8)(x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 1)(x + 7)\\).",
+    "options": [
+      "\\(x^{2} + 7x + 8\\)",
+      "\\(x^{2} + 9x + 7\\)",
+      "\\(x^{2} + 8x + 7\\)",
+      "\\(x^{2} + 8x - 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (7) + (1) \\times x = 8x\\)\n\n\\((1) \\times (7) = 7\\)\n\nSo the expansion is \\(x^{2} + 8x + 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 2)(x - 2)\\).",
+    "options": [
+      "\\(x^{2} - 3x + 4\\)",
+      "\\(x^{2} - 4x - 4\\)",
+      "\\(x^{2} + 4x - 4\\)",
+      "\\(x^{2} - 4x + 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-2) + (-2) \\times x = -4x\\)\n\n\\((-2) \\times (-2) = 4\\)\n\nSo the expansion is \\(x^{2} - 4x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(4x^{2} - 4\\).",
+    "options": [
+      "\\((2x + 4)(2x - 4)\\)",
+      "\\((2x + 2)^{2}\\)",
+      "\\((2x + 2)(2x - 2)\\)",
+      "\\((2x - 2)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(4x^{2} = (2x)^{2}\\) and \\(4 = 2^{2}\\)\n\nSo the factorisation is \\((2x + 2)(2x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 4)(4x + 5)\\).",
+    "options": [
+      "\\(16x^{2} + 4x + 20\\)",
+      "\\(17x^{2} + 4x - 20\\)",
+      "\\(16x^{2} + 4x - 20\\)",
+      "\\(16x^{2} + 36x - 20\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 4x = 16x^{2}\\)\n\n\\(4x \\times (5) + (-4) \\times 4x = 20x + -16x = 4x\\)\n\n\\((-4) \\times (5) = -20\\)\n\nSo the expansion is \\(16x^{2} + 4x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 2)(x - 3)\\).",
+    "options": [
+      "\\(x^{2} - x - 6\\)",
+      "\\(x^{2} - x + 6\\)",
+      "\\(x^{2} - 6\\)",
+      "\\(x^{2} - 6x - 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-3) + (2) \\times x = -1x\\)\n\n\\((2) \\times (-3) = -6\\)\n\nSo the expansion is \\(x^{2} - x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(32x - 12\\).",
+    "options": [
+      "\\(4(8x - 3)\\)",
+      "\\(32(x - 3)\\)",
+      "\\(4x(8 - 3)\\)",
+      "\\(4(8x + 3)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 32 and 12 is 4.\n\nTaking 4 outside the bracket: \\(4(8x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 7x - 8\\).",
+    "options": [
+      "\\((x + 8)(x + 1)\\)",
+      "\\((x + 8)(x - 1)\\)",
+      "\\((x - 8)(x + 1)\\)",
+      "\\((x - 8)(x - 1)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -8 and whose sum is 7.\n\nThese are 8 and -1.\n\nSo \\(x^{2} + 7x - 8 = (x + 8)(x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 2)(3x - 2)\\).",
+    "options": [
+      "\\(15x^{2} - 16x - 4\\)",
+      "\\(16x^{2} - 4x - 4\\)",
+      "\\(15x^{2} - 4x + 4\\)",
+      "\\(15x^{2} - 4x - 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 3x = 15x^{2}\\)\n\n\\(5x \\times (-2) + (2) \\times 3x = -10x + 6x = -4x\\)\n\n\\((2) \\times (-2) = -4\\)\n\nSo the expansion is \\(15x^{2} - 4x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(20x + 24\\).",
+    "options": [
+      "\\(4(5x + 6)\\)",
+      "\\(4(5x - 6)\\)",
+      "\\(20(x + 6)\\)",
+      "\\(4x(5 + 6)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 20 and 24 is 4.\n\nTaking 4 outside the bracket: \\(4(5x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 2)(2x + 7)\\).",
+    "options": [
+      "\\(6x^{2} + 25x + 14\\)",
+      "\\(7x^{2} + 25x + 14\\)",
+      "\\(6x^{2} + 25x - 14\\)",
+      "\\(6x^{2} + 17x + 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 2x = 6x^{2}\\)\n\n\\(3x \\times (7) + (2) \\times 2x = 21x + 4x = 25x\\)\n\n\\((2) \\times (7) = 14\\)\n\nSo the expansion is \\(6x^{2} + 25x + 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 9)(x + 6)\\).",
+    "options": [
+      "\\(x^{2} - 2x - 54\\)",
+      "\\(x^{2} - 3x + 54\\)",
+      "\\(x^{2} - 3x - 54\\)",
+      "\\(x^{2} - 54x - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (6) + (-9) \\times x = -3x\\)\n\n\\((-9) \\times (6) = -54\\)\n\nSo the expansion is \\(x^{2} - 3x - 54\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 7)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 70x + 49\\)",
+      "\\(25x^{2} + 70x + 49\\)",
+      "\\(25x^{2} + 70x - 49\\)",
+      "\\(25x^{2} + 35x + 49\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (7) = 70x\\)\n\n\\((7)^{2} = 49\\)\n\nSo the expansion is \\(25x^{2} + 70x + 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 4)(x + 5)\\).",
+    "options": [
+      "\\(x^{2} + 2x - 20\\)",
+      "\\(x^{2} - 20x + 1\\)",
+      "\\(x^{2} + x + 20\\)",
+      "\\(x^{2} + x - 20\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (5) + (-4) \\times x = 1x\\)\n\n\\((-4) \\times (5) = -20\\)\n\nSo the expansion is \\(x^{2} + x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(12x - 4\\).",
+    "options": [
+      "\\(2(6x + 2)\\)",
+      "\\(2(6x - 2)\\)",
+      "\\(12(x - 2)\\)",
+      "\\(2x(6 - 2)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 12 and 4 is 2.\n\nTaking 2 outside the bracket: \\(2(6x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 6)(x - 2)\\).",
+    "options": [
+      "\\(x^{2} + 5x - 12\\)",
+      "\\(x^{2} + 4x - 12\\)",
+      "\\(x^{2} - 12x + 4\\)",
+      "\\(x^{2} + 4x + 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-2) + (6) \\times x = 4x\\)\n\n\\((6) \\times (-2) = -12\\)\n\nSo the expansion is \\(x^{2} + 4x - 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 9)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 45x + 81\\)",
+      "\\(25x^{2} + 90x + 81\\)",
+      "\\(25x^{2} - 90x + 81\\)",
+      "\\(25x^{2} - 90x - 81\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (-9) = -90x\\)\n\n\\((-9)^{2} = 81\\)\n\nSo the expansion is \\(25x^{2} - 90x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(27x + 81\\).",
+    "options": [
+      "\\(9x(3 + 9)\\)",
+      "\\(9(3x - 9)\\)",
+      "\\(27(x + 9)\\)",
+      "\\(9(3x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 27 and 81 is 9.\n\nTaking 9 outside the bracket: \\(9(3x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 4x - 45\\).",
+    "options": [
+      "\\((x - 5)(x - 9)\\)",
+      "\\((x + 5)(x + 9)\\)",
+      "\\((x + 5)(x - 9)\\)",
+      "\\((x - 5)(x + 9)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is -45 and whose sum is -4.\n\nThese are 5 and -9.\n\nSo \\(x^{2} - 4x - 45 = (x + 5)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(15x - 12\\).",
+    "options": [
+      "\\(3x(5 - 4)\\)",
+      "\\(15(x - 4)\\)",
+      "\\(3(5x + 4)\\)",
+      "\\(3(5x - 4)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 15 and 12 is 3.\n\nTaking 3 outside the bracket: \\(3(5x - 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 6)(x + 7)\\).",
+    "options": [
+      "\\(x^{2} + 42x + 13\\)",
+      "\\(x^{2} + 14x + 42\\)",
+      "\\(x^{2} + 13x - 42\\)",
+      "\\(x^{2} + 13x + 42\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (7) + (6) \\times x = 13x\\)\n\n\\((6) \\times (7) = 42\\)\n\nSo the expansion is \\(x^{2} + 13x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 4)^{2}\\).",
+    "options": [
+      "\\(9x^{2} - 24x - 16\\)",
+      "\\(9x^{2} - 12x + 16\\)",
+      "\\(9x^{2} - 24x + 16\\)",
+      "\\(9x^{2} + 24x + 16\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (-4) = -24x\\)\n\n\\((-4)^{2} = 16\\)\n\nSo the expansion is \\(9x^{2} - 24x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 4)(3x + 5)\\).",
+    "options": [
+      "\\(6x^{2} + 22x - 20\\)",
+      "\\(6x^{2} + 22x + 20\\)",
+      "\\(6x^{2} - 2x + 20\\)",
+      "\\(7x^{2} + 22x + 20\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 3x = 6x^{2}\\)\n\n\\(2x \\times (5) + (4) \\times 3x = 10x + 12x = 22x\\)\n\n\\((4) \\times (5) = 20\\)\n\nSo the expansion is \\(6x^{2} + 22x + 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 3)(x + 8)\\).",
+    "options": [
+      "\\(x^{2} + 12x + 24\\)",
+      "\\(x^{2} + 11x + 24\\)",
+      "\\(x^{2} + 24x + 11\\)",
+      "\\(x^{2} + 11x - 24\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (8) + (3) \\times x = 11x\\)\n\n\\((3) \\times (8) = 24\\)\n\nSo the expansion is \\(x^{2} + 11x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 13x + 36\\).",
+    "options": [
+      "\\((x + 4)(x - 9)\\)",
+      "\\((x - 4)(x + 9)\\)",
+      "\\((x + 4)(x + 9)\\)",
+      "\\((x - 4)(x - 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is 36 and whose sum is -13.\n\nThese are -4 and -9.\n\nSo \\(x^{2} - 13x + 36 = (x - 4)(x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 4)(4x - 7)\\).",
+    "options": [
+      "\\(13x^{2} - 37x + 28\\)",
+      "\\(12x^{2} - 37x - 28\\)",
+      "\\(12x^{2} - 37x + 28\\)",
+      "\\(12x^{2} - 5x + 28\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 4x = 12x^{2}\\)\n\n\\(3x \\times (-7) + (-4) \\times 4x = -21x + -16x = -37x\\)\n\n\\((-4) \\times (-7) = 28\\)\n\nSo the expansion is \\(12x^{2} - 37x + 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 3)(3x - 6)\\).",
+    "options": [
+      "\\(15x^{2} - 39x + 18\\)",
+      "\\(15x^{2} - 39x - 18\\)",
+      "\\(15x^{2} - 21x + 18\\)",
+      "\\(16x^{2} - 39x + 18\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 3x = 15x^{2}\\)\n\n\\(5x \\times (-6) + (-3) \\times 3x = -30x + -9x = -39x\\)\n\n\\((-3) \\times (-6) = 18\\)\n\nSo the expansion is \\(15x^{2} - 39x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(10x + 12\\).",
+    "options": [
+      "\\(2x(5 + 6)\\)",
+      "\\(10(x + 6)\\)",
+      "\\(2(5x - 6)\\)",
+      "\\(2(5x + 6)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 10 and 12 is 2.\n\nTaking 2 outside the bracket: \\(2(5x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 4\\).",
+    "options": [
+      "\\((6x + 4)(6x - 4)\\)",
+      "\\((6x - 2)^{2}\\)",
+      "\\((6x + 2)^{2}\\)",
+      "\\((6x + 2)(6x - 2)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(4 = 2^{2}\\)\n\nSo the factorisation is \\((6x + 2)(6x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(14x + 8\\).",
+    "options": [
+      "\\(2(7x + 4)\\)",
+      "\\(2(7x - 4)\\)",
+      "\\(2x(7 + 4)\\)",
+      "\\(14(x + 4)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 14 and 8 is 2.\n\nTaking 2 outside the bracket: \\(2(7x + 4)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(18x + 15\\).",
+    "options": [
+      "\\(18(x + 5)\\)",
+      "\\(3(6x + 5)\\)",
+      "\\(3x(6 + 5)\\)",
+      "\\(3(6x - 5)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 18 and 15 is 3.\n\nTaking 3 outside the bracket: \\(3(6x + 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 8x - 9\\).",
+    "options": [
+      "\\((x - 9)(x - 1)\\)",
+      "\\((x + 9)(x - 1)\\)",
+      "\\((x + 9)(x + 1)\\)",
+      "\\((x - 9)(x + 1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -9 and whose sum is -8.\n\nThese are -9 and 1.\n\nSo \\(x^{2} - 8x - 9 = (x - 9)(x + 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 6)(x - 1)\\).",
+    "options": [
+      "\\(x^{2} - 6x + 5\\)",
+      "\\(x^{2} + 6x - 6\\)",
+      "\\(x^{2} + 5x - 6\\)",
+      "\\(x^{2} + 5x + 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-1) + (6) \\times x = 5x\\)\n\n\\((6) \\times (-1) = -6\\)\n\nSo the expansion is \\(x^{2} + 5x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 1)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 5x + 1\\)",
+      "\\(25x^{2} + 10x + 1\\)",
+      "\\(25x^{2} - 10x - 1\\)",
+      "\\(25x^{2} - 10x + 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (-1) = -10x\\)\n\n\\((-1)^{2} = 1\\)\n\nSo the expansion is \\(25x^{2} - 10x + 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(24x + 72\\).",
+    "options": [
+      "\\(8(3x - 9)\\)",
+      "\\(8x(3 + 9)\\)",
+      "\\(24(x + 9)\\)",
+      "\\(8(3x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 24 and 72 is 8.\n\nTaking 8 outside the bracket: \\(8(3x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 4)(x - 5)\\).",
+    "options": [
+      "\\(x^{2} - x - 20\\)",
+      "\\(x^{2} - 20x - 1\\)",
+      "\\(x^{2} - 20\\)",
+      "\\(x^{2} - x + 20\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-5) + (4) \\times x = -1x\\)\n\n\\((4) \\times (-5) = -20\\)\n\nSo the expansion is \\(x^{2} - x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 7)^{2}\\).",
+    "options": [
+      "\\(9x^{2} - 42x + 49\\)",
+      "\\(9x^{2} + 21x + 49\\)",
+      "\\(9x^{2} + 42x - 49\\)",
+      "\\(9x^{2} + 42x + 49\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (7) = 42x\\)\n\n\\((7)^{2} = 49\\)\n\nSo the expansion is \\(9x^{2} + 42x + 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(8x + 4\\).",
+    "options": [
+      "\\(2x(4 + 2)\\)",
+      "\\(8(x + 2)\\)",
+      "\\(2(4x - 2)\\)",
+      "\\(2(4x + 2)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 8 and 4 is 2.\n\nTaking 2 outside the bracket: \\(2(4x + 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 8)(x - 2)\\).",
+    "options": [
+      "\\(x^{2} - 10x + 16\\)",
+      "\\(x^{2} - 10x - 16\\)",
+      "\\(x^{2} - 9x + 16\\)",
+      "\\(x^{2} + 16x - 10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-2) + (-8) \\times x = -10x\\)\n\n\\((-8) \\times (-2) = 16\\)\n\nSo the expansion is \\(x^{2} - 10x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(20x + 25\\).",
+    "options": [
+      "\\(5(4x - 5)\\)",
+      "\\(20(x + 5)\\)",
+      "\\(5(4x + 5)\\)",
+      "\\(5x(4 + 5)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 20 and 25 is 5.\n\nTaking 5 outside the bracket: \\(5(4x + 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 4)(x - 7)\\).",
+    "options": [
+      "\\(x^{2} + 28x - 11\\)",
+      "\\(x^{2} - 11x - 28\\)",
+      "\\(x^{2} - 10x + 28\\)",
+      "\\(x^{2} - 11x + 28\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-7) + (-4) \\times x = -11x\\)\n\n\\((-4) \\times (-7) = 28\\)\n\nSo the expansion is \\(x^{2} - 11x + 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 3)^{2}\\).",
+    "options": [
+      "\\(25x^{2} - 30x + 9\\)",
+      "\\(25x^{2} + 30x + 9\\)",
+      "\\(25x^{2} + 15x + 9\\)",
+      "\\(25x^{2} + 30x - 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (3) = 30x\\)\n\n\\((3)^{2} = 9\\)\n\nSo the expansion is \\(25x^{2} + 30x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 14x + 45\\).",
+    "options": [
+      "\\((x + 9)(x + 5)\\)",
+      "\\((x - 9)(x + 5)\\)",
+      "\\((x - 9)(x - 5)\\)",
+      "\\((x + 9)(x - 5)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 45 and whose sum is -14.\n\nThese are -9 and -5.\n\nSo \\(x^{2} - 14x + 45 = (x - 9)(x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x^{2} - 100\\).",
+    "options": [
+      "\\((4x + 100)(4x - 100)\\)",
+      "\\((4x - 10)^{2}\\)",
+      "\\((4x + 10)^{2}\\)",
+      "\\((4x + 10)(4x - 10)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(16x^{2} = (4x)^{2}\\) and \\(100 = 10^{2}\\)\n\nSo the factorisation is \\((4x + 10)(4x - 10)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - x - 42\\).",
+    "options": [
+      "\\((x - 6)(x + 7)\\)",
+      "\\((x + 6)(x - 7)\\)",
+      "\\((x + 6)(x + 7)\\)",
+      "\\((x - 6)(x - 7)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Find two numbers whose product is -42 and whose sum is -1.\n\nThese are 6 and -7.\n\nSo \\(x^{2} - x - 42 = (x + 6)(x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(49x + 63\\).",
+    "options": [
+      "\\(7x(7 + 9)\\)",
+      "\\(49(x + 9)\\)",
+      "\\(7(7x - 9)\\)",
+      "\\(7(7x + 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 49 and 63 is 7.\n\nTaking 7 outside the bracket: \\(7(7x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x - 3)^{2}\\).",
+    "options": [
+      "\\(9x^{2} - 18x + 9\\)",
+      "\\(9x^{2} - 18x - 9\\)",
+      "\\(9x^{2} + 18x + 9\\)",
+      "\\(9x^{2} - 9x + 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (-3) = -18x\\)\n\n\\((-3)^{2} = 9\\)\n\nSo the expansion is \\(9x^{2} - 18x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(21x + 21\\).",
+    "options": [
+      "\\(3(7x - 7)\\)",
+      "\\(3x(7 + 7)\\)",
+      "\\(21(x + 7)\\)",
+      "\\(3(7x + 7)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 21 and 21 is 3.\n\nTaking 3 outside the bracket: \\(3(7x + 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 3)(5x + 4)\\).",
+    "options": [
+      "\\(10x^{2} - 7x + 12\\)",
+      "\\(11x^{2} - 7x - 12\\)",
+      "\\(10x^{2} - 7x - 12\\)",
+      "\\(10x^{2} + 23x - 12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 5x = 10x^{2}\\)\n\n\\(2x \\times (4) + (-3) \\times 5x = 8x + -15x = -7x\\)\n\n\\((-3) \\times (4) = -12\\)\n\nSo the expansion is \\(10x^{2} - 7x - 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(36x^{2} - 49\\).",
+    "options": [
+      "\\((6x + 49)(6x - 49)\\)",
+      "\\((6x + 7)^{2}\\)",
+      "\\((6x + 7)(6x - 7)\\)",
+      "\\((6x - 7)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(36x^{2} = (6x)^{2}\\) and \\(49 = 7^{2}\\)\n\nSo the factorisation is \\((6x + 7)(6x - 7)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 8)^{2}\\).",
+    "options": [
+      "\\(16x^{2} - 64x + 64\\)",
+      "\\(16x^{2} + 64x - 64\\)",
+      "\\(16x^{2} + 64x + 64\\)",
+      "\\(16x^{2} + 32x + 64\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((4x)^{2} = 16x^{2}\\)\n\n\\(2 \\times 4x \\times (8) = 64x\\)\n\n\\((8)^{2} = 64\\)\n\nSo the expansion is \\(16x^{2} + 64x + 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(30x - 6\\).",
+    "options": [
+      "\\(6x(5 - 1)\\)",
+      "\\(30(x - 1)\\)",
+      "\\(6(5x - 1)\\)",
+      "\\(6(5x + 1)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 30 and 6 is 6.\n\nTaking 6 outside the bracket: \\(6(5x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 10x + 21\\).",
+    "options": [
+      "\\((x + 7)(x + 3)\\)",
+      "\\((x + 7)(x - 3)\\)",
+      "\\((x - 7)(x + 3)\\)",
+      "\\((x - 7)(x - 3)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is 21 and whose sum is 10.\n\nThese are 7 and 3.\n\nSo \\(x^{2} + 10x + 21 = (x + 7)(x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 4)(3x - 6)\\).",
+    "options": [
+      "\\(6x^{2} + 24\\)",
+      "\\(6x^{2} - 24x - 24\\)",
+      "\\(6x^{2} - 24x + 24\\)",
+      "\\(7x^{2} - 24x + 24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 3x = 6x^{2}\\)\n\n\\(2x \\times (-6) + (-4) \\times 3x = -12x + -12x = -24x\\)\n\n\\((-4) \\times (-6) = 24\\)\n\nSo the expansion is \\(6x^{2} - 24x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 9)^{2}\\).",
+    "options": [
+      "\\(25x^{2} + 90x + 81\\)",
+      "\\(25x^{2} + 90x - 81\\)",
+      "\\(25x^{2} - 90x + 81\\)",
+      "\\(25x^{2} + 45x + 81\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (9) = 90x\\)\n\n\\((9)^{2} = 81\\)\n\nSo the expansion is \\(25x^{2} + 90x + 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(54x + 18\\).",
+    "options": [
+      "\\(54(x + 3)\\)",
+      "\\(6(9x - 3)\\)",
+      "\\(6(9x + 3)\\)",
+      "\\(6x(9 + 3)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 54 and 18 is 6.\n\nTaking 6 outside the bracket: \\(6(9x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 13x + 42\\).",
+    "options": [
+      "\\((x + 7)(x - 6)\\)",
+      "\\((x + 7)(x + 6)\\)",
+      "\\((x - 7)(x + 6)\\)",
+      "\\((x - 7)(x - 6)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is 42 and whose sum is -13.\n\nThese are -7 and -6.\n\nSo \\(x^{2} - 13x + 42 = (x - 7)(x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x - 1)(5x + 4)\\).",
+    "options": [
+      "\\(11x^{2} + 3x - 4\\)",
+      "\\(10x^{2} + 13x - 4\\)",
+      "\\(10x^{2} + 3x + 4\\)",
+      "\\(10x^{2} + 3x - 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(2x \\times 5x = 10x^{2}\\)\n\n\\(2x \\times (4) + (-1) \\times 5x = 8x + -5x = 3x\\)\n\n\\((-1) \\times (4) = -4\\)\n\nSo the expansion is \\(10x^{2} + 3x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 4)(x - 4)\\).",
+    "options": [
+      "\\(x^{2} - 8x - 16\\)",
+      "\\(x^{2} - 8x + 16\\)",
+      "\\(x^{2} - 7x + 16\\)",
+      "\\(x^{2} + 16x - 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-4) + (-4) \\times x = -8x\\)\n\n\\((-4) \\times (-4) = 16\\)\n\nSo the expansion is \\(x^{2} - 8x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 6)^{2}\\).",
+    "options": [
+      "\\(16x^{2} - 48x + 36\\)",
+      "\\(16x^{2} - 48x - 36\\)",
+      "\\(16x^{2} - 24x + 36\\)",
+      "\\(16x^{2} + 48x + 36\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((4x)^{2} = 16x^{2}\\)\n\n\\(2 \\times 4x \\times (-6) = -48x\\)\n\n\\((-6)^{2} = 36\\)\n\nSo the expansion is \\(16x^{2} - 48x + 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 4x - 5\\).",
+    "options": [
+      "\\((x - 1)(x - 5)\\)",
+      "\\((x - 1)(x + 5)\\)",
+      "\\((x + 1)(x + 5)\\)",
+      "\\((x + 1)(x - 5)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is -5 and whose sum is -4.\n\nThese are 1 and -5.\n\nSo \\(x^{2} - 4x - 5 = (x + 1)(x - 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 1)(3x - 5)\\).",
+    "options": [
+      "\\(9x^{2} - 12x + 5\\)",
+      "\\(9x^{2} - 12x - 5\\)",
+      "\\(10x^{2} - 12x - 5\\)",
+      "\\(9x^{2} - 18x - 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 3x = 9x^{2}\\)\n\n\\(3x \\times (-5) + (1) \\times 3x = -15x + 3x = -12x\\)\n\n\\((1) \\times (-5) = -5\\)\n\nSo the expansion is \\(9x^{2} - 12x - 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 5)(3x - 2)\\).",
+    "options": [
+      "\\(15x^{2} - 25x - 10\\)",
+      "\\(15x^{2} - 25x + 10\\)",
+      "\\(15x^{2} + 5x + 10\\)",
+      "\\(16x^{2} - 25x + 10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 3x = 15x^{2}\\)\n\n\\(5x \\times (-2) + (-5) \\times 3x = -10x + -15x = -25x\\)\n\n\\((-5) \\times (-2) = 10\\)\n\nSo the expansion is \\(15x^{2} - 25x + 10\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 7)(x + 2)\\).",
+    "options": [
+      "\\(x^{2} - 5x - 14\\)",
+      "\\(x^{2} - 4x - 14\\)",
+      "\\(x^{2} - 5x + 14\\)",
+      "\\(x^{2} - 14x - 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (2) + (-7) \\times x = -5x\\)\n\n\\((-7) \\times (2) = -14\\)\n\nSo the expansion is \\(x^{2} - 5x - 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - x - 6\\).",
+    "options": [
+      "\\((x + 2)(x - 3)\\)",
+      "\\((x - 2)(x + 3)\\)",
+      "\\((x - 2)(x - 3)\\)",
+      "\\((x + 2)(x + 3)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Find two numbers whose product is -6 and whose sum is -1.\n\nThese are 2 and -3.\n\nSo \\(x^{2} - x - 6 = (x + 2)(x - 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(40x + 40\\).",
+    "options": [
+      "\\(40(x + 5)\\)",
+      "\\(8x(5 + 5)\\)",
+      "\\(8(5x + 5)\\)",
+      "\\(8(5x - 5)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 40 and 40 is 8.\n\nTaking 8 outside the bracket: \\(8(5x + 5)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 3)^{2}\\).",
+    "options": [
+      "\\(x^{2} - 6x + 9\\)",
+      "\\(x^{2} + 6x + 9\\)",
+      "\\(x^{2} - 3x + 9\\)",
+      "\\(x^{2} - 6x - 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (-3) = -6x\\)\n\n\\((-3)^{2} = 9\\)\n\nSo the expansion is \\(x^{2} - 6x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(35x + 42\\).",
+    "options": [
+      "\\(7(5x - 6)\\)",
+      "\\(7x(5 + 6)\\)",
+      "\\(35(x + 6)\\)",
+      "\\(7(5x + 6)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 35 and 42 is 7.\n\nTaking 7 outside the bracket: \\(7(5x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 3)(x + 2)\\).",
+    "options": [
+      "\\(x^{2} + 5x - 6\\)",
+      "\\(x^{2} + 6x + 6\\)",
+      "\\(x^{2} + 5x + 6\\)",
+      "\\(x^{2} + 6x + 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (2) + (3) \\times x = 5x\\)\n\n\\((3) \\times (2) = 6\\)\n\nSo the expansion is \\(x^{2} + 5x + 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 14x + 48\\).",
+    "options": [
+      "\\((x + 8)(x + 6)\\)",
+      "\\((x - 8)(x + 6)\\)",
+      "\\((x - 8)(x - 6)\\)",
+      "\\((x + 8)(x - 6)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 48 and whose sum is -14.\n\nThese are -8 and -6.\n\nSo \\(x^{2} - 14x + 48 = (x - 8)(x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 4)^{2}\\).",
+    "options": [
+      "\\(x^{2} + 8x + 16\\)",
+      "\\(x^{2} - 8x - 16\\)",
+      "\\(x^{2} - 8x + 16\\)",
+      "\\(x^{2} - 4x + 16\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (-4) = -8x\\)\n\n\\((-4)^{2} = 16\\)\n\nSo the expansion is \\(x^{2} - 8x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 121\\).",
+    "options": [
+      "\\((5x - 11)^{2}\\)",
+      "\\((5x + 11)^{2}\\)",
+      "\\((5x + 121)(5x - 121)\\)",
+      "\\((5x + 11)(5x - 11)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(121 = 11^{2}\\)\n\nSo the factorisation is \\((5x + 11)(5x - 11)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 7)(5x - 6)\\).",
+    "options": [
+      "\\(20x^{2} + 11x + 42\\)",
+      "\\(20x^{2} - 59x - 42\\)",
+      "\\(21x^{2} - 59x + 42\\)",
+      "\\(20x^{2} - 59x + 42\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 5x = 20x^{2}\\)\n\n\\(4x \\times (-6) + (-7) \\times 5x = -24x + -35x = -59x\\)\n\n\\((-7) \\times (-6) = 42\\)\n\nSo the expansion is \\(20x^{2} - 59x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(42x + 54\\).",
+    "options": [
+      "\\(6(7x - 9)\\)",
+      "\\(6(7x + 9)\\)",
+      "\\(6x(7 + 9)\\)",
+      "\\(42(x + 9)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 42 and 54 is 6.\n\nTaking 6 outside the bracket: \\(6(7x + 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x^{2} - 81\\).",
+    "options": [
+      "\\((5x + 9)(5x - 9)\\)",
+      "\\((5x - 9)^{2}\\)",
+      "\\((5x + 9)^{2}\\)",
+      "\\((5x + 81)(5x - 81)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(25x^{2} = (5x)^{2}\\) and \\(81 = 9^{2}\\)\n\nSo the factorisation is \\((5x + 9)(5x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 6)(x - 8)\\).",
+    "options": [
+      "\\(x^{2} - 13x + 48\\)",
+      "\\(x^{2} + 48x - 14\\)",
+      "\\(x^{2} - 14x - 48\\)",
+      "\\(x^{2} - 14x + 48\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-8) + (-6) \\times x = -14x\\)\n\n\\((-6) \\times (-8) = 48\\)\n\nSo the expansion is \\(x^{2} - 14x + 48\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(9x + 18\\).",
+    "options": [
+      "\\(3x(3 + 6)\\)",
+      "\\(3(3x - 6)\\)",
+      "\\(3(3x + 6)\\)",
+      "\\(9(x + 6)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 9 and 18 is 3.\n\nTaking 3 outside the bracket: \\(3(3x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 3)^{2}\\).",
+    "options": [
+      "\\(9x^{2} - 18x + 9\\)",
+      "\\(9x^{2} + 18x - 9\\)",
+      "\\(9x^{2} + 9x + 9\\)",
+      "\\(9x^{2} + 18x + 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((3x)^{2} = 9x^{2}\\)\n\n\\(2 \\times 3x \\times (3) = 18x\\)\n\n\\((3)^{2} = 9\\)\n\nSo the expansion is \\(9x^{2} + 18x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 2)(2x - 7)\\).",
+    "options": [
+      "\\(8x^{2} - 32x + 14\\)",
+      "\\(8x^{2} - 24x + 14\\)",
+      "\\(8x^{2} - 32x - 14\\)",
+      "\\(9x^{2} - 32x + 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 2x = 8x^{2}\\)\n\n\\(4x \\times (-7) + (-2) \\times 2x = -28x + -4x = -32x\\)\n\n\\((-2) \\times (-7) = 14\\)\n\nSo the expansion is \\(8x^{2} - 32x + 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 4)(5x + 4)\\).",
+    "options": [
+      "\\(20x^{2} - 4x + 16\\)",
+      "\\(20x^{2} + 36x - 16\\)",
+      "\\(20x^{2} + 36x + 16\\)",
+      "\\(21x^{2} + 36x + 16\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 5x = 20x^{2}\\)\n\n\\(4x \\times (4) + (4) \\times 5x = 16x + 20x = 36x\\)\n\n\\((4) \\times (4) = 16\\)\n\nSo the expansion is \\(20x^{2} + 36x + 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(18x - 36\\).",
+    "options": [
+      "\\(6(3x + 6)\\)",
+      "\\(6(3x - 6)\\)",
+      "\\(18(x - 6)\\)",
+      "\\(6x(3 - 6)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The highest common factor of 18 and 36 is 6.\n\nTaking 6 outside the bracket: \\(6(3x - 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x + 7)^{2}\\).",
+    "options": [
+      "\\(x^{2} - 14x + 49\\)",
+      "\\(x^{2} + 14x + 49\\)",
+      "\\(x^{2} + 14x - 49\\)",
+      "\\(x^{2} + 7x + 49\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((1x)^{2} = 1x^{2}\\)\n\n\\(2 \\times 1x \\times (7) = 14x\\)\n\n\\((7)^{2} = 49\\)\n\nSo the expansion is \\(x^{2} + 14x + 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(25x + 5\\).",
+    "options": [
+      "\\(5(5x - 1)\\)",
+      "\\(25(x + 1)\\)",
+      "\\(5x(5 + 1)\\)",
+      "\\(5(5x + 1)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The highest common factor of 25 and 5 is 5.\n\nTaking 5 outside the bracket: \\(5(5x + 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(24x + 12\\).",
+    "options": [
+      "\\(4(6x - 3)\\)",
+      "\\(4x(6 + 3)\\)",
+      "\\(4(6x + 3)\\)",
+      "\\(24(x + 3)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 24 and 12 is 4.\n\nTaking 4 outside the bracket: \\(4(6x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(4x^{2} - 81\\).",
+    "options": [
+      "\\((2x + 81)(2x - 81)\\)",
+      "\\((2x - 9)^{2}\\)",
+      "\\((2x + 9)^{2}\\)",
+      "\\((2x + 9)(2x - 9)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is a difference of two squares: \\(a^{2} - b^{2} = (a+b)(a-b)\\).\n\n\\(4x^{2} = (2x)^{2}\\) and \\(81 = 9^{2}\\)\n\nSo the factorisation is \\((2x + 9)(2x - 9)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x - 7)(3x + 5)\\).",
+    "options": [
+      "\\(12x^{2} - x - 35\\)",
+      "\\(13x^{2} - x - 35\\)",
+      "\\(12x^{2} + 41x - 35\\)",
+      "\\(12x^{2} - x + 35\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 3x = 12x^{2}\\)\n\n\\(4x \\times (5) + (-7) \\times 3x = 20x + -21x = -1x\\)\n\n\\((-7) \\times (5) = -35\\)\n\nSo the expansion is \\(12x^{2} - x - 35\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x + 3)(5x + 6)\\).",
+    "options": [
+      "\\(26x^{2} + 45x + 18\\)",
+      "\\(25x^{2} + 45x + 18\\)",
+      "\\(25x^{2} + 15x + 18\\)",
+      "\\(25x^{2} + 45x - 18\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply term by term.\n\n\\(5x \\times 5x = 25x^{2}\\)\n\n\\(5x \\times (6) + (3) \\times 5x = 30x + 15x = 45x\\)\n\n\\((3) \\times (6) = 18\\)\n\nSo the expansion is \\(25x^{2} + 45x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((5x - 5)^{2}\\).",
+    "options": [
+      "\\(25x^{2} + 50x + 25\\)",
+      "\\(25x^{2} - 50x + 25\\)",
+      "\\(25x^{2} - 25x + 25\\)",
+      "\\(25x^{2} - 50x - 25\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((5x)^{2} = 25x^{2}\\)\n\n\\(2 \\times 5x \\times (-5) = -50x\\)\n\n\\((-5)^{2} = 25\\)\n\nSo the expansion is \\(25x^{2} - 50x + 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(16x - 2\\).",
+    "options": [
+      "\\(2(8x + 1)\\)",
+      "\\(2x(8 - 1)\\)",
+      "\\(2(8x - 1)\\)",
+      "\\(16(x - 1)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The highest common factor of 16 and 2 is 2.\n\nTaking 2 outside the bracket: \\(2(8x - 1)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 1)(x - 2)\\).",
+    "options": [
+      "\\(x^{2} - 2x + 2\\)",
+      "\\(x^{2} - 3x - 2\\)",
+      "\\(x^{2} - 3x + 2\\)",
+      "\\(x^{2} + 2x - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (-2) + (-1) \\times x = -3x\\)\n\n\\((-1) \\times (-2) = 2\\)\n\nSo the expansion is \\(x^{2} - 3x + 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((3x + 6)(3x + 4)\\).",
+    "options": [
+      "\\(9x^{2} + 30x - 24\\)",
+      "\\(9x^{2} - 6x + 24\\)",
+      "\\(9x^{2} + 30x + 24\\)",
+      "\\(10x^{2} + 30x + 24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply term by term.\n\n\\(3x \\times 3x = 9x^{2}\\)\n\n\\(3x \\times (4) + (6) \\times 3x = 12x + 18x = 30x\\)\n\n\\((6) \\times (4) = 24\\)\n\nSo the expansion is \\(9x^{2} + 30x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((x - 2)(x + 4)\\).",
+    "options": [
+      "\\(x^{2} + 2x + 8\\)",
+      "\\(x^{2} - 8x + 2\\)",
+      "\\(x^{2} + 3x - 8\\)",
+      "\\(x^{2} + 2x - 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply each term in the first bracket by each term in the second.\n\n\\(x \\times x = x^{2}\\)\n\n\\(x \\times (4) + (-2) \\times x = 2x\\)\n\n\\((-2) \\times (4) = -8\\)\n\nSo the expansion is \\(x^{2} + 2x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} + 4x + 3\\).",
+    "options": [
+      "\\((x + 1)(x - 3)\\)",
+      "\\((x - 1)(x - 3)\\)",
+      "\\((x - 1)(x + 3)\\)",
+      "\\((x + 1)(x + 3)\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Find two numbers whose product is 3 and whose sum is 4.\n\nThese are 1 and 3.\n\nSo \\(x^{2} + 4x + 3 = (x + 1)(x + 3)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(21x + 42\\).",
+    "options": [
+      "\\(7(3x + 6)\\)",
+      "\\(7(3x - 6)\\)",
+      "\\(7x(3 + 6)\\)",
+      "\\(21(x + 6)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The highest common factor of 21 and 42 is 7.\n\nTaking 7 outside the bracket: \\(7(3x + 6)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((4x + 2)(4x + 2)\\).",
+    "options": [
+      "\\(17x^{2} + 16x + 4\\)",
+      "\\(16x^{2} + 16x - 4\\)",
+      "\\(16x^{2} + 4\\)",
+      "\\(16x^{2} + 16x + 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply term by term.\n\n\\(4x \\times 4x = 16x^{2}\\)\n\n\\(4x \\times (2) + (2) \\times 4x = 8x + 8x = 16x\\)\n\n\\((2) \\times (2) = 4\\)\n\nSo the expansion is \\(16x^{2} + 16x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand \\((2x + 2)^{2}\\).",
+    "options": [
+      "\\(4x^{2} + 4x + 4\\)",
+      "\\(4x^{2} + 8x + 4\\)",
+      "\\(4x^{2} - 8x + 4\\)",
+      "\\(4x^{2} + 8x - 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((p + q)^{2} = p^{2} + 2pq + q^{2}\\)\n\n\\((2x)^{2} = 4x^{2}\\)\n\n\\(2 \\times 2x \\times (2) = 8x\\)\n\n\\((2)^{2} = 4\\)\n\nSo the expansion is \\(4x^{2} + 8x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Factorise \\(x^{2} - 10x + 16\\).",
+    "options": [
+      "\\((x + 8)(x - 2)\\)",
+      "\\((x + 8)(x + 2)\\)",
+      "\\((x - 8)(x - 2)\\)",
+      "\\((x - 8)(x + 2)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Find two numbers whose product is 16 and whose sum is -10.\n\nThese are -8 and -2.\n\nSo \\(x^{2} - 10x + 16 = (x - 8)(x - 2)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "7fFTb5H1r7JPpiYlU8gr",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Convert 245\\(_{10}\\) to base 5.",
+    "options": [
+      "\\(1045_{5}\\)",
+      "\\(0441_{5}\\)",
+      "\\(440_{5}\\)",
+      "\\(1440_{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 5 and read the remainders from bottom to top: 245 \\div 5 = 49\\text{ remainder }0, \\; 49 \\div 5 = 9\\text{ remainder }4, \\; 9 \\div 5 = 1\\text{ remainder }4, \\; 1 \\div 5 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1440_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(217_{8}\\) + \\(17_{9}\\), leaving your answer in base ten.",
+    "options": [
+      "159",
+      "160",
+      "150",
+      "233"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(217_{8}\\) = 143\\(_{10}\\) and \\(17_{9}\\) = 16\\(_{10}\\). Adding gives \\(143 + 16 = 159\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 6\\(_{10}\\) to base 2.",
+    "options": [
+      "\\(10_{2}\\)",
+      "\\(011_{2}\\)",
+      "\\(110_{2}\\)",
+      "\\(20_{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 2 and read the remainders from bottom to top: 6 \\div 2 = 3\\text{ remainder }0, \\; 3 \\div 2 = 1\\text{ remainder }1, \\; 1 \\div 2 = 0\\text{ remainder }1. Reading the remainders upward gives \\(110_{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(2021_{3}\\) to base ten.",
+    "options": [
+      "47",
+      "21",
+      "61",
+      "137"
+    ],
+    "correctIndex": 2,
+    "explanation": "Write each digit as a multiple of a power of 3, starting from the rightmost digit at \\(3^{0}\\): \\(2021_{3} = 2\\times 3^{3} + 0\\times 3^{2} + 2\\times 3^{1} + 1\\times 3^{0} = 54 + 0 + 6 + 1 = 61_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13_{4}\\) + \\(21_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(100_{4}\\)",
+      "\\(101_{4}\\)",
+      "\\(001_{4}\\)",
+      "\\(30_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(13_{4}\\) = 7\\(_{10}\\) and \\(21_{4}\\) = 9\\(_{10}\\). Their sum is 7 + 9 = 16\\(_{10}\\), which converts back to \\(100_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(60_{7}\\) + \\(63_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "111",
+      "93",
+      "105",
+      "94"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(60_{7}\\) = 42\\(_{10}\\) and \\(63_{8}\\) = 51\\(_{10}\\). Adding gives \\(42 + 51 = 93\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(335_{8}\\) + \\(512_{9}\\), leaving your answer in base ten.",
+    "options": [
+      "638",
+      "751",
+      "733",
+      "637"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(335_{8}\\) = 221\\(_{10}\\) and \\(512_{9}\\) = 416\\(_{10}\\). Adding gives \\(221 + 416 = 637\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(334_{5}\\) to base 7.",
+    "options": [
+      "\\(361_{7}\\)",
+      "\\(163_{7}\\)",
+      "\\(203_{7}\\)",
+      "\\(136_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(334_{5}\\) to base ten: it equals 94\\(_{10}\\). Then convert 94\\(_{10}\\) to base 7 by repeated division by 7, giving \\(163_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(2254_{6}\\) to base ten.",
+    "options": [
+      "823",
+      "329",
+      "1058",
+      "538"
+    ],
+    "correctIndex": 3,
+    "explanation": "Write each digit as a multiple of a power of 6, starting from the rightmost digit at \\(6^{0}\\): \\(2254_{6} = 2\\times 6^{3} + 2\\times 6^{2} + 5\\times 6^{1} + 4\\times 6^{0} = 432 + 72 + 30 + 4 = 538_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(430_{8}\\) to base ten.",
+    "options": [
+      "217",
+      "351",
+      "28",
+      "280"
+    ],
+    "correctIndex": 3,
+    "explanation": "Write each digit as a multiple of a power of 8, starting from the rightmost digit at \\(8^{0}\\): \\(430_{8} = 4\\times 8^{2} + 3\\times 8^{1} + 0\\times 8^{0} = 256 + 24 + 0 = 280_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(23_{5}\\) + \\(200_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "142",
+      "213",
+      "151",
+      "141"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(23_{5}\\) = 13\\(_{10}\\) and \\(200_{8}\\) = 128\\(_{10}\\). Adding gives \\(13 + 128 = 141\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(346_{8}\\) or \\(22_{6}\\)?",
+    "options": [
+      "\\(346_{8}\\)",
+      "\\(22_{6}\\)",
+      "They are equal",
+      "Cannot be determined"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(346_{8}\\) = 230\\(_{10}\\) and \\(22_{6}\\) = 14\\(_{10}\\). Since 230 > 14, \\(346_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(64_{8}\\) \\(\\times\\) \\(1_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(74_{8}\\)",
+      "\\(64_{8}\\)",
+      "\\(46_{8}\\)",
+      "\\(65_{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(64_{8}\\) = 52\\(_{10}\\) and \\(1_{8}\\) = 1\\(_{10}\\). Their product is 52 \\(\\times\\) 1 = 52\\(_{10}\\), which converts back to \\(64_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(61_{7}\\) \\(\\times\\) \\(6_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(516_{7}\\)",
+      "\\(100_{7}\\)",
+      "\\(526_{7}\\)",
+      "\\(615_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(61_{7}\\) = 43\\(_{10}\\) and \\(6_{7}\\) = 6\\(_{10}\\). Their product is 43 \\(\\times\\) 6 = 258\\(_{10}\\), which converts back to \\(516_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(74_{9}\\) \\(\\times\\) \\(4_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(337_{9}\\)",
+      "\\(327_{9}\\)",
+      "\\(78_{9}\\)",
+      "\\(723_{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(74_{9}\\) = 67\\(_{10}\\) and \\(4_{9}\\) = 4\\(_{10}\\). Their product is 67 \\(\\times\\) 4 = 268\\(_{10}\\), which converts back to \\(327_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 556\\(_{10}\\) to base 6.",
+    "options": [
+      "\\(4232_{6}\\)",
+      "\\(1423_{6}\\)",
+      "\\(324_{6}\\)",
+      "\\(2324_{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 6 and read the remainders from bottom to top: 556 \\div 6 = 92\\text{ remainder }4, \\; 92 \\div 6 = 15\\text{ remainder }2, \\; 15 \\div 6 = 2\\text{ remainder }3, \\; 2 \\div 6 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2324_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 655\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(4261_{7}\\)",
+      "\\(624_{7}\\)",
+      "\\(1217_{7}\\)",
+      "\\(1624_{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 655 \\div 7 = 93\\text{ remainder }4, \\; 93 \\div 7 = 13\\text{ remainder }2, \\; 13 \\div 7 = 1\\text{ remainder }6, \\; 1 \\div 7 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1624_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(662_{7}\\) + \\(121_{3}\\), leaving your answer in base ten.",
+    "options": [
+      "355",
+      "459",
+      "354",
+      "678"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(662_{7}\\) = 338\\(_{10}\\) and \\(121_{3}\\) = 16\\(_{10}\\). Adding gives \\(338 + 16 = 354\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14_{5}\\) \\(\\times\\) \\(3_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(102_{5}\\)",
+      "\\(112_{5}\\)",
+      "\\(22_{5}\\)",
+      "\\(201_{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(14_{5}\\) = 9\\(_{10}\\) and \\(3_{5}\\) = 3\\(_{10}\\). Their product is 9 \\(\\times\\) 3 = 27\\(_{10}\\), which converts back to \\(102_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(11_{3}\\) or \\(51_{9}\\)?",
+    "options": [
+      "They are equal",
+      "\\(11_{3}\\)",
+      "Cannot be determined",
+      "\\(51_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(11_{3}\\) = 4\\(_{10}\\) and \\(51_{9}\\) = 46\\(_{10}\\). Since 4 < 46, \\(51_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(74_{8}\\) to base 6.",
+    "options": [
+      "\\(114_{6}\\)",
+      "\\(150_{6}\\)",
+      "\\(140_{6}\\)",
+      "\\(041_{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "First convert \\(74_{8}\\) to base ten: it equals 60\\(_{10}\\). Then convert 60\\(_{10}\\) to base 6 by repeated division by 6, giving \\(140_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(102_{3}\\) + \\(424_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "171",
+      "262",
+      "172",
+      "435"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(102_{3}\\) = 11\\(_{10}\\) and \\(424_{6}\\) = 160\\(_{10}\\). Adding gives \\(11 + 160 = 171\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(82_{9}\\) + \\(111_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "82",
+      "81",
+      "89",
+      "185"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(82_{9}\\) = 74\\(_{10}\\) and \\(111_{2}\\) = 7\\(_{10}\\). Adding gives \\(74 + 7 = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(55_{y} = 35_{10}\\).",
+    "options": [
+      "9",
+      "8",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(55_{y}\\) means \\(5\\times y + 5 = 35\\). Solving: \\(5y = 30\\), so \\(y = 30 \\div 5 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(310_{4}\\) + \\(200_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(0111_{4}\\)",
+      "\\(1111_{4}\\)",
+      "\\(1110_{4}\\)",
+      "\\(1100_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(310_{4}\\) = 52\\(_{10}\\) and \\(200_{4}\\) = 32\\(_{10}\\). Their sum is 52 + 32 = 84\\(_{10}\\), which converts back to \\(1110_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(201_{4}\\) to base 6.",
+    "options": [
+      "\\(103_{6}\\)",
+      "\\(53_{6}\\)",
+      "\\(45_{6}\\)",
+      "\\(35_{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(201_{4}\\) to base ten: it equals 33\\(_{10}\\). Then convert 33\\(_{10}\\) to base 6 by repeated division by 6, giving \\(53_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(1256_{7}\\) to base ten.",
+    "options": [
+      "324",
+      "482",
+      "2318",
+      "686"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 7, starting from the rightmost digit at \\(7^{0}\\): \\(1256_{7} = 1\\times 7^{3} + 2\\times 7^{2} + 5\\times 7^{1} + 6\\times 7^{0} = 343 + 98 + 35 + 6 = 482_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(42_{7}\\) - \\(11_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(13_{7}\\)",
+      "\\(41_{7}\\)",
+      "\\(31_{7}\\)",
+      "\\(30_{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(42_{7}\\) = 30\\(_{10}\\) and \\(11_{7}\\) = 8\\(_{10}\\). Their difference is 30 - 8 = 22\\(_{10}\\), which converts back to \\(31_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(121_{3}\\) + \\(211_{3}\\), giving your answer in base 3.",
+    "options": [
+      "\\(1022_{3}\\)",
+      "\\(2011_{3}\\)",
+      "\\(1102_{3}\\)",
+      "\\(1110_{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(121_{3}\\) = 16\\(_{10}\\) and \\(211_{3}\\) = 22\\(_{10}\\). Their sum is 16 + 22 = 38\\(_{10}\\), which converts back to \\(1102_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(16_{y} = 14_{10}\\).",
+    "options": [
+      "7",
+      "8",
+      "11",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(16_{y}\\) means \\(1\\times y + 6 = 14\\). Solving: \\(1y = 8\\), so \\(y = 8 \\div 1 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(224_{7}\\) to base ten.",
+    "options": [
+      "88",
+      "148",
+      "116",
+      "212"
+    ],
+    "correctIndex": 2,
+    "explanation": "Write each digit as a multiple of a power of 7, starting from the rightmost digit at \\(7^{0}\\): \\(224_{7} = 2\\times 7^{2} + 2\\times 7^{1} + 4\\times 7^{0} = 98 + 14 + 4 = 116_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(52_{y} = 37_{10}\\).",
+    "options": [
+      "7",
+      "8",
+      "10",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(52_{y}\\) means \\(5\\times y + 2 = 37\\). Solving: \\(5y = 35\\), so \\(y = 35 \\div 5 = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(70_{9}\\) + \\(231_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "294",
+      "130",
+      "136",
+      "129"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(70_{9}\\) = 63\\(_{10}\\) and \\(231_{5}\\) = 66\\(_{10}\\). Adding gives \\(63 + 66 = 129\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(21_{3}\\) + \\(33_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "40",
+      "25",
+      "39",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(21_{3}\\) = 7\\(_{10}\\) and \\(33_{5}\\) = 18\\(_{10}\\). Adding gives \\(7 + 18 = 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 1004\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(2633_{7}\\)",
+      "\\(3362_{7}\\)",
+      "\\(633_{7}\\)",
+      "\\(1754_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 1004 \\div 7 = 143\\text{ remainder }3, \\; 143 \\div 7 = 20\\text{ remainder }3, \\; 20 \\div 7 = 2\\text{ remainder }6, \\; 2 \\div 7 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2633_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(320_{5}\\) + \\(111_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "196",
+      "327",
+      "92",
+      "93"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(320_{5}\\) = 85\\(_{10}\\) and \\(111_{2}\\) = 7\\(_{10}\\). Adding gives \\(85 + 7 = 92\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(100_{3}\\) or \\(850_{9}\\)?",
+    "options": [
+      "Cannot be determined",
+      "They are equal",
+      "\\(100_{3}\\)",
+      "\\(850_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(100_{3}\\) = 9\\(_{10}\\) and \\(850_{9}\\) = 693\\(_{10}\\). Since 9 < 693, \\(850_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(86_{9}\\) \\(\\times\\) \\(3_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(280_{9}\\)",
+      "\\(082_{9}\\)",
+      "\\(100_{9}\\)",
+      "\\(300_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(86_{9}\\) = 78\\(_{10}\\) and \\(3_{9}\\) = 3\\(_{10}\\). Their product is 78 \\(\\times\\) 3 = 234\\(_{10}\\), which converts back to \\(280_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(18_{9}\\) or \\(24_{5}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(18_{9}\\)",
+      "\\(24_{5}\\)",
+      "They are equal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(18_{9}\\) = 17\\(_{10}\\) and \\(24_{5}\\) = 14\\(_{10}\\). Since 17 > 14, \\(18_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(100_{2}\\) + \\(111_{2}\\), giving your answer in base 2.",
+    "options": [
+      "\\(1001_{2}\\)",
+      "\\(1011_{2}\\)",
+      "\\(1101_{2}\\)",
+      "\\(1100_{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(100_{2}\\) = 4\\(_{10}\\) and \\(111_{2}\\) = 7\\(_{10}\\). Their sum is 4 + 7 = 11\\(_{10}\\), which converts back to \\(1011_{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(554_{6}\\) to base 8.",
+    "options": [
+      "\\(336_{8}\\)",
+      "\\(257_{8}\\)",
+      "\\(623_{8}\\)",
+      "\\(326_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First convert \\(554_{6}\\) to base ten: it equals 214\\(_{10}\\). Then convert 214\\(_{10}\\) to base 8 by repeated division by 8, giving \\(326_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(33_{4}\\) + \\(11_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(011_{4}\\)",
+      "\\(100_{4}\\)",
+      "\\(110_{4}\\)",
+      "\\(111_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(33_{4}\\) = 15\\(_{10}\\) and \\(11_{4}\\) = 5\\(_{10}\\). Their sum is 15 + 5 = 20\\(_{10}\\), which converts back to \\(110_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(167_{8}\\) + \\(112_{3}\\), leaving your answer in base ten.",
+    "options": [
+      "134",
+      "181",
+      "231",
+      "133"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(167_{8}\\) = 119\\(_{10}\\) and \\(112_{3}\\) = 14\\(_{10}\\). Adding gives \\(119 + 14 = 133\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(35_{7}\\) + \\(33_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "53",
+      "62",
+      "54",
+      "59"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(35_{7}\\) = 26\\(_{10}\\) and \\(33_{8}\\) = 27\\(_{10}\\). Adding gives \\(26 + 27 = 53\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(51_{y} = 31_{10}\\).",
+    "options": [
+      "9",
+      "8",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(51_{y}\\) means \\(5\\times y + 1 = 31\\). Solving: \\(5y = 30\\), so \\(y = 30 \\div 5 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(20_{5}\\) \\(\\times\\) \\(1_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(21_{5}\\)",
+      "\\(02_{5}\\)",
+      "\\(30_{5}\\)",
+      "\\(20_{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(20_{5}\\) = 10\\(_{10}\\) and \\(1_{5}\\) = 1\\(_{10}\\). Their product is 10 \\(\\times\\) 1 = 10\\(_{10}\\), which converts back to \\(20_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(41_{8}\\) \\(\\times\\) \\(6_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(47_{8}\\)",
+      "\\(306_{8}\\)",
+      "\\(316_{8}\\)",
+      "\\(603_{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(41_{8}\\) = 33\\(_{10}\\) and \\(6_{8}\\) = 6\\(_{10}\\). Their product is 33 \\(\\times\\) 6 = 198\\(_{10}\\), which converts back to \\(306_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(107_{9}\\) + \\(20_{4}\\), leaving your answer in base ten.",
+    "options": [
+      "97",
+      "108",
+      "96",
+      "115"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(107_{9}\\) = 88\\(_{10}\\) and \\(20_{4}\\) = 8\\(_{10}\\). Adding gives \\(88 + 8 = 96\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 1646\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(4541_{7}\\)",
+      "\\(3156_{7}\\)",
+      "\\(541_{7}\\)",
+      "\\(1454_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 1646 \\div 7 = 235\\text{ remainder }1, \\; 235 \\div 7 = 33\\text{ remainder }4, \\; 33 \\div 7 = 4\\text{ remainder }5, \\; 4 \\div 7 = 0\\text{ remainder }4. Reading the remainders upward gives \\(4541_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(3131_{4}\\) to base ten.",
+    "options": [
+      "221",
+      "416",
+      "119",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(3131_{4} = 3\\times 4^{3} + 1\\times 4^{2} + 3\\times 4^{1} + 1\\times 4^{0} = 192 + 16 + 12 + 1 = 221_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(32_{6}\\) - \\(20_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(21_{6}\\)",
+      "\\(11_{6}\\)",
+      "\\(22_{6}\\)",
+      "\\(12_{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(32_{6}\\) = 20\\(_{10}\\) and \\(20_{6}\\) = 12\\(_{10}\\). Their difference is 20 - 12 = 8\\(_{10}\\), which converts back to \\(12_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following digits cannot appear in a base 7 numeral?",
+    "options": [
+      "4",
+      "0",
+      "6",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "A base 7 numeral may only use the digits 0 to 6. 7 is not less than 7, so it cannot appear, while the other options are all valid digits in base 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(57_{y} = 52_{10}\\).",
+    "options": [
+      "8",
+      "9",
+      "12",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(57_{y}\\) means \\(5\\times y + 7 = 52\\). Solving: \\(5y = 45\\), so \\(y = 45 \\div 5 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14_{5}\\) + \\(233_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "164",
+      "169",
+      "165",
+      "242"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(14_{5}\\) = 9\\(_{10}\\) and \\(233_{8}\\) = 155\\(_{10}\\). Adding gives \\(9 + 155 = 164\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(26_{7}\\) to base 5.",
+    "options": [
+      "\\(40_{5}\\)",
+      "\\(100_{5}\\)",
+      "\\(32_{5}\\)",
+      "\\(04_{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(26_{7}\\) to base ten: it equals 20\\(_{10}\\). Then convert 20\\(_{10}\\) to base 5 by repeated division by 5, giving \\(40_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(15_{7}\\) or \\(300_{4}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(15_{7}\\)",
+      "\\(300_{4}\\)",
+      "They are equal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both to base ten: \\(15_{7}\\) = 12\\(_{10}\\) and \\(300_{4}\\) = 48\\(_{10}\\). Since 12 < 48, \\(300_{4}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 112\\(_{10}\\) to base 4.",
+    "options": [
+      "\\(300_{4}\\)",
+      "\\(1300_{4}\\)",
+      "\\(0031_{4}\\)",
+      "\\(422_{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 4 and read the remainders from bottom to top: 112 \\div 4 = 28\\text{ remainder }0, \\; 28 \\div 4 = 7\\text{ remainder }0, \\; 7 \\div 4 = 1\\text{ remainder }3, \\; 1 \\div 4 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1300_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(72_{8}\\) - \\(25_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(54_{8}\\)",
+      "\\(55_{8}\\)",
+      "\\(45_{8}\\)",
+      "\\(44_{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(72_{8}\\) = 58\\(_{10}\\) and \\(25_{8}\\) = 21\\(_{10}\\). Their difference is 58 - 21 = 37\\(_{10}\\), which converts back to \\(45_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(123_{5}\\) + \\(164_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "218",
+      "134",
+      "202",
+      "133"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(123_{5}\\) = 38\\(_{10}\\) and \\(164_{7}\\) = 95\\(_{10}\\). Adding gives \\(38 + 95 = 133\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(11_{y} = 7_{10}\\).",
+    "options": [
+      "6",
+      "7",
+      "9",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(11_{y}\\) means \\(1\\times y + 1 = 7\\). Solving: \\(1y = 6\\), so \\(y = 6 \\div 1 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(4210_{5}\\) to base ten.",
+    "options": [
+      "292",
+      "555",
+      "39",
+      "942"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 5, starting from the rightmost digit at \\(5^{0}\\): \\(4210_{5} = 4\\times 5^{3} + 2\\times 5^{2} + 1\\times 5^{1} + 0\\times 5^{0} = 500 + 50 + 5 + 0 = 555_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(102_{3}\\) to base 5.",
+    "options": [
+      "\\(21_{5}\\)",
+      "\\(15_{5}\\)",
+      "\\(12_{5}\\)",
+      "\\(31_{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(102_{3}\\) to base ten: it equals 11\\(_{10}\\). Then convert 11\\(_{10}\\) to base 5 by repeated division by 5, giving \\(21_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(6701_{9}\\) to base ten.",
+    "options": [
+      "798",
+      "4942",
+      "3521",
+      "6701"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 9, starting from the rightmost digit at \\(9^{0}\\): \\(6701_{9} = 6\\times 9^{3} + 7\\times 9^{2} + 0\\times 9^{1} + 1\\times 9^{0} = 4374 + 567 + 0 + 1 = 4942_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(46_{y} = 38_{10}\\).",
+    "options": [
+      "9",
+      "8",
+      "11",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(46_{y}\\) means \\(4\\times y + 6 = 38\\). Solving: \\(4y = 32\\), so \\(y = 32 \\div 4 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(44_{5}\\) or \\(212_{3}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(44_{5}\\)",
+      "They are equal",
+      "\\(212_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(44_{5}\\) = 24\\(_{10}\\) and \\(212_{3}\\) = 23\\(_{10}\\). Since 24 > 23, \\(44_{5}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(63_{y} = 51_{10}\\).",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(63_{y}\\) means \\(6\\times y + 3 = 51\\). Solving: \\(6y = 48\\), so \\(y = 48 \\div 6 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 940\\(_{10}\\) to base 6.",
+    "options": [
+      "\\(4024_{6}\\)",
+      "\\(204_{6}\\)",
+      "\\(4204_{6}\\)",
+      "\\(2512_{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 6 and read the remainders from bottom to top: 940 \\div 6 = 156\\text{ remainder }4, \\; 156 \\div 6 = 26\\text{ remainder }0, \\; 26 \\div 6 = 4\\text{ remainder }2, \\; 4 \\div 6 = 0\\text{ remainder }4. Reading the remainders upward gives \\(4204_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(15_{7}\\) to base 8.",
+    "options": [
+      "\\(24_{8}\\)",
+      "\\(14_{8}\\)",
+      "\\(13_{8}\\)",
+      "\\(41_{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(15_{7}\\) to base ten: it equals 12\\(_{10}\\). Then convert 12\\(_{10}\\) to base 8 by repeated division by 8, giving \\(14_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(64_{7}\\) or \\(44_{8}\\)?",
+    "options": [
+      "\\(64_{7}\\)",
+      "Cannot be determined",
+      "They are equal",
+      "\\(44_{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(64_{7}\\) = 46\\(_{10}\\) and \\(44_{8}\\) = 36\\(_{10}\\). Since 46 > 36, \\(64_{7}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(307_{8}\\) + \\(136_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(544_{8}\\)",
+      "\\(445_{8}\\)",
+      "\\(435_{8}\\)",
+      "\\(446_{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(307_{8}\\) = 199\\(_{10}\\) and \\(136_{8}\\) = 94\\(_{10}\\). Their sum is 199 + 94 = 293\\(_{10}\\), which converts back to \\(445_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(31_{6}\\) to base 7.",
+    "options": [
+      "\\(35_{7}\\)",
+      "\\(25_{7}\\)",
+      "\\(23_{7}\\)",
+      "\\(52_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(31_{6}\\) to base ten: it equals 19\\(_{10}\\). Then convert 19\\(_{10}\\) to base 7 by repeated division by 7, giving \\(25_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(110_{2}\\) to base ten.",
+    "options": [
+      "3",
+      "6",
+      "12",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 2, starting from the rightmost digit at \\(2^{0}\\): \\(110_{2} = 1\\times 2^{2} + 1\\times 2^{1} + 0\\times 2^{0} = 4 + 2 + 0 = 6_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 1036\\(_{10}\\) to base 8.",
+    "options": [
+      "\\(014_{8}\\)",
+      "\\(4102_{8}\\)",
+      "\\(2014_{8}\\)",
+      "\\(1371_{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 8 and read the remainders from bottom to top: 1036 \\div 8 = 129\\text{ remainder }4, \\; 129 \\div 8 = 16\\text{ remainder }1, \\; 16 \\div 8 = 2\\text{ remainder }0, \\; 2 \\div 8 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2014_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(80_{9}\\) - \\(65_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(14_{9}\\)",
+      "\\(13_{9}\\)",
+      "\\(24_{9}\\)",
+      "\\(41_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(80_{9}\\) = 72\\(_{10}\\) and \\(65_{9}\\) = 59\\(_{10}\\). Their difference is 72 - 59 = 13\\(_{10}\\), which converts back to \\(14_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(22_{5}\\) \\(\\times\\) \\(4_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(341_{5}\\)",
+      "\\(143_{5}\\)",
+      "\\(203_{5}\\)",
+      "\\(31_{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(22_{5}\\) = 12\\(_{10}\\) and \\(4_{5}\\) = 4\\(_{10}\\). Their product is 12 \\(\\times\\) 4 = 48\\(_{10}\\), which converts back to \\(143_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(35_{6}\\) to base 4.",
+    "options": [
+      "\\(311_{4}\\)",
+      "\\(43_{4}\\)",
+      "\\(113_{4}\\)",
+      "\\(123_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "First convert \\(35_{6}\\) to base ten: it equals 23\\(_{10}\\). Then convert 23\\(_{10}\\) to base 4 by repeated division by 4, giving \\(113_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13_{6}\\) + \\(40_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(53_{6}\\)",
+      "\\(35_{6}\\)",
+      "\\(54_{6}\\)",
+      "\\(43_{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(13_{6}\\) = 9\\(_{10}\\) and \\(40_{6}\\) = 24\\(_{10}\\). Their sum is 9 + 24 = 33\\(_{10}\\), which converts back to \\(53_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(20_{6}\\) + \\(43_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "47",
+      "55",
+      "43",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(20_{6}\\) = 12\\(_{10}\\) and \\(43_{8}\\) = 35\\(_{10}\\). Adding gives \\(12 + 35 = 47\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(12_{5}\\) or \\(23_{4}\\)?",
+    "options": [
+      "\\(12_{5}\\)",
+      "They are equal",
+      "Cannot be determined",
+      "\\(23_{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(12_{5}\\) = 7\\(_{10}\\) and \\(23_{4}\\) = 11\\(_{10}\\). Since 7 < 11, \\(23_{4}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(543_{6}\\) to base 2.",
+    "options": [
+      "\\(11001111_{2}\\)",
+      "\\(11110011_{2}\\)",
+      "\\(11010001_{2}\\)",
+      "\\(21200_{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(543_{6}\\) to base ten: it equals 207\\(_{10}\\). Then convert 207\\(_{10}\\) to base 2 by repeated division by 2, giving \\(11001111_{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following digits cannot appear in a base 8 numeral?",
+    "options": [
+      "7",
+      "8",
+      "5",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "A base 8 numeral may only use the digits 0 to 7. 8 is not less than 8, so it cannot appear, while the other options are all valid digits in base 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(62_{8}\\) + \\(131_{4}\\), leaving your answer in base ten.",
+    "options": [
+      "181",
+      "80",
+      "79",
+      "91"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(62_{8}\\) = 50\\(_{10}\\) and \\(131_{4}\\) = 29\\(_{10}\\). Adding gives \\(50 + 29 = 79\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(20_{3}\\) \\(\\times\\) \\(2_{3}\\), giving your answer in base 3.",
+    "options": [
+      "\\(22_{3}\\)",
+      "\\(110_{3}\\)",
+      "\\(011_{3}\\)",
+      "\\(120_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(20_{3}\\) = 6\\(_{10}\\) and \\(2_{3}\\) = 2\\(_{10}\\). Their product is 6 \\(\\times\\) 2 = 12\\(_{10}\\), which converts back to \\(110_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(23_{8}\\) \\(\\times\\) \\(4_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(27_{8}\\)",
+      "\\(124_{8}\\)",
+      "\\(411_{8}\\)",
+      "\\(114_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(23_{8}\\) = 19\\(_{10}\\) and \\(4_{8}\\) = 4\\(_{10}\\). Their product is 19 \\(\\times\\) 4 = 76\\(_{10}\\), which converts back to \\(114_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(44_{7}\\) \\(\\times\\) \\(3_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(205_{7}\\)",
+      "\\(165_{7}\\)",
+      "\\(561_{7}\\)",
+      "\\(50_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(44_{7}\\) = 32\\(_{10}\\) and \\(3_{7}\\) = 3\\(_{10}\\). Their product is 32 \\(\\times\\) 3 = 96\\(_{10}\\), which converts back to \\(165_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(86_{9}\\) - \\(58_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(37_{9}\\)",
+      "\\(72_{9}\\)",
+      "\\(27_{9}\\)",
+      "\\(26_{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(86_{9}\\) = 78\\(_{10}\\) and \\(58_{9}\\) = 53\\(_{10}\\). Their difference is 78 - 53 = 25\\(_{10}\\), which converts back to \\(27_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(615_{8}\\) + \\(10_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "399",
+      "407",
+      "400",
+      "617"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(615_{8}\\) = 397\\(_{10}\\) and \\(10_{2}\\) = 2\\(_{10}\\). Adding gives \\(397 + 2 = 399\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(45_{7}\\) - \\(16_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(26_{7}\\)",
+      "\\(36_{7}\\)",
+      "\\(25_{7}\\)",
+      "\\(62_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(45_{7}\\) = 33\\(_{10}\\) and \\(16_{7}\\) = 13\\(_{10}\\). Their difference is 33 - 13 = 20\\(_{10}\\), which converts back to \\(26_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(210_{3}\\) + \\(756_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "777",
+      "704",
+      "516",
+      "515"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(210_{3}\\) = 21\\(_{10}\\) and \\(756_{8}\\) = 494\\(_{10}\\). Adding gives \\(21 + 494 = 515\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 21\\(_{10}\\) to base 3.",
+    "options": [
+      "\\(111_{3}\\)",
+      "\\(210_{3}\\)",
+      "\\(012_{3}\\)",
+      "\\(10_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 3 and read the remainders from bottom to top: 21 \\div 3 = 7\\text{ remainder }0, \\; 7 \\div 3 = 2\\text{ remainder }1, \\; 2 \\div 3 = 0\\text{ remainder }2. Reading the remainders upward gives \\(210_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(30_{6}\\) or \\(33_{4}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(30_{6}\\)",
+      "\\(33_{4}\\)",
+      "They are equal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(30_{6}\\) = 18\\(_{10}\\) and \\(33_{4}\\) = 15\\(_{10}\\). Since 18 > 15, \\(30_{6}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(20_{4}\\) to base 8.",
+    "options": [
+      "\\(8_{8}\\)",
+      "\\(01_{8}\\)",
+      "\\(10_{8}\\)",
+      "\\(20_{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "First convert \\(20_{4}\\) to base ten: it equals 8\\(_{10}\\). Then convert 8\\(_{10}\\) to base 8 by repeated division by 8, giving \\(10_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(41_{6}\\) to base 8.",
+    "options": [
+      "\\(41_{8}\\)",
+      "\\(27_{8}\\)",
+      "\\(13_{8}\\)",
+      "\\(31_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First convert \\(41_{6}\\) to base ten: it equals 25\\(_{10}\\). Then convert 25\\(_{10}\\) to base 8 by repeated division by 8, giving \\(31_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(44_{5}\\) - \\(24_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(14_{5}\\)",
+      "\\(02_{5}\\)",
+      "\\(20_{5}\\)",
+      "\\(30_{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(44_{5}\\) = 24\\(_{10}\\) and \\(24_{5}\\) = 14\\(_{10}\\). Their difference is 24 - 14 = 10\\(_{10}\\), which converts back to \\(20_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(112_{8}\\) or \\(17_{9}\\)?",
+    "options": [
+      "They are equal",
+      "\\(112_{8}\\)",
+      "Cannot be determined",
+      "\\(17_{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(112_{8}\\) = 74\\(_{10}\\) and \\(17_{9}\\) = 16\\(_{10}\\). Since 74 > 16, \\(112_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 1708\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(4660_{7}\\)",
+      "\\(660_{7}\\)",
+      "\\(0664_{7}\\)",
+      "\\(3254_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 1708 \\div 7 = 244\\text{ remainder }0, \\; 244 \\div 7 = 34\\text{ remainder }6, \\; 34 \\div 7 = 4\\text{ remainder }6, \\; 4 \\div 7 = 0\\text{ remainder }4. Reading the remainders upward gives \\(4660_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(200_{3}\\) or \\(76_{8}\\)?",
+    "options": [
+      "\\(76_{8}\\)",
+      "Cannot be determined",
+      "They are equal",
+      "\\(200_{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(200_{3}\\) = 18\\(_{10}\\) and \\(76_{8}\\) = 62\\(_{10}\\). Since 18 < 62, \\(76_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(111_{2}\\) to base 4.",
+    "options": [
+      "\\(31_{4}\\)",
+      "\\(23_{4}\\)",
+      "\\(13_{4}\\)",
+      "\\(12_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "First convert \\(111_{2}\\) to base ten: it equals 7\\(_{10}\\). Then convert 7\\(_{10}\\) to base 4 by repeated division by 4, giving \\(13_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(111_{4}\\) to base ten.",
+    "options": [
+      "13",
+      "21",
+      "111",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(111_{4} = 1\\times 4^{2} + 1\\times 4^{1} + 1\\times 4^{0} = 16 + 4 + 1 = 21_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(540_{6}\\) + \\(11_{3}\\), leaving your answer in base ten.",
+    "options": [
+      "208",
+      "209",
+      "544",
+      "215"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(540_{6}\\) = 204\\(_{10}\\) and \\(11_{3}\\) = 4\\(_{10}\\). Adding gives \\(204 + 4 = 208\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(221_{4}\\) to base ten.",
+    "options": [
+      "61",
+      "41",
+      "25",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(221_{4} = 2\\times 4^{2} + 2\\times 4^{1} + 1\\times 4^{0} = 32 + 8 + 1 = 41_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(10_{2}\\) \\(\\times\\) \\(1_{2}\\), giving your answer in base 2.",
+    "options": [
+      "\\(11_{2}\\)",
+      "\\(10_{2}\\)",
+      "\\(100_{2}\\)",
+      "\\(01_{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(10_{2}\\) = 2\\(_{10}\\) and \\(1_{2}\\) = 1\\(_{10}\\). Their product is 2 \\(\\times\\) 1 = 2\\(_{10}\\), which converts back to \\(10_{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(56_{7}\\) + \\(55_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(144_{7}\\)",
+      "\\(145_{7}\\)",
+      "\\(441_{7}\\)",
+      "\\(134_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(56_{7}\\) = 41\\(_{10}\\) and \\(55_{7}\\) = 40\\(_{10}\\). Their sum is 41 + 40 = 81\\(_{10}\\), which converts back to \\(144_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(402_{5}\\) to base ten.",
+    "options": [
+      "54",
+      "102",
+      "146",
+      "66"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 5, starting from the rightmost digit at \\(5^{0}\\): \\(402_{5} = 4\\times 5^{2} + 0\\times 5^{1} + 2\\times 5^{0} = 100 + 0 + 2 = 102_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 24\\(_{10}\\) to base 3.",
+    "options": [
+      "\\(220_{3}\\)",
+      "\\(022_{3}\\)",
+      "\\(20_{3}\\)",
+      "\\(120_{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 3 and read the remainders from bottom to top: 24 \\div 3 = 8\\text{ remainder }0, \\; 8 \\div 3 = 2\\text{ remainder }2, \\; 2 \\div 3 = 0\\text{ remainder }2. Reading the remainders upward gives \\(220_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12_{6}\\) + \\(11_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "12",
+      "19",
+      "15",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(12_{6}\\) = 8\\(_{10}\\) and \\(11_{2}\\) = 3\\(_{10}\\). Adding gives \\(8 + 3 = 11\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(34_{6}\\) to base 4.",
+    "options": [
+      "\\(112_{4}\\)",
+      "\\(42_{4}\\)",
+      "\\(211_{4}\\)",
+      "\\(122_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(34_{6}\\) to base ten: it equals 22\\(_{10}\\). Then convert 22\\(_{10}\\) to base 4 by repeated division by 4, giving \\(112_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11_{7}\\) + \\(54_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(66_{7}\\)",
+      "\\(65_{7}\\)",
+      "\\(55_{7}\\)",
+      "\\(56_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(11_{7}\\) = 8\\(_{10}\\) and \\(54_{7}\\) = 39\\(_{10}\\). Their sum is 8 + 39 = 47\\(_{10}\\), which converts back to \\(65_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(74_{9}\\) or \\(12_{3}\\)?",
+    "options": [
+      "They are equal",
+      "\\(12_{3}\\)",
+      "Cannot be determined",
+      "\\(74_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(74_{9}\\) = 67\\(_{10}\\) and \\(12_{3}\\) = 5\\(_{10}\\). Since 67 > 5, \\(74_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13_{7}\\) \\(\\times\\) \\(3_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(16_{7}\\)",
+      "\\(42_{7}\\)",
+      "\\(24_{7}\\)",
+      "\\(52_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(13_{7}\\) = 10\\(_{10}\\) and \\(3_{7}\\) = 3\\(_{10}\\). Their product is 10 \\(\\times\\) 3 = 30\\(_{10}\\), which converts back to \\(42_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(331_{4}\\) to base ten.",
+    "options": [
+      "37",
+      "61",
+      "31",
+      "91"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(331_{4} = 3\\times 4^{2} + 3\\times 4^{1} + 1\\times 4^{0} = 48 + 12 + 1 = 61_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(100_{3}\\) to base 7.",
+    "options": [
+      "\\(12_{7}\\)",
+      "\\(21_{7}\\)",
+      "\\(22_{7}\\)",
+      "\\(11_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(100_{3}\\) to base ten: it equals 9\\(_{10}\\). Then convert 9\\(_{10}\\) to base 7 by repeated division by 7, giving \\(12_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(824_{9}\\) or \\(204_{7}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(824_{9}\\)",
+      "\\(204_{7}\\)",
+      "They are equal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(824_{9}\\) = 670\\(_{10}\\) and \\(204_{7}\\) = 102\\(_{10}\\). Since 670 > 102, \\(824_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(21_{3}\\) to base 4.",
+    "options": [
+      "\\(13_{4}\\)",
+      "\\(23_{4}\\)",
+      "\\(12_{4}\\)",
+      "\\(31_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(21_{3}\\) to base ten: it equals 7\\(_{10}\\). Then convert 7\\(_{10}\\) to base 4 by repeated division by 4, giving \\(13_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 45\\(_{10}\\) to base 3.",
+    "options": [
+      "\\(200_{3}\\)",
+      "\\(1200_{3}\\)",
+      "\\(231_{3}\\)",
+      "\\(0021_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 3 and read the remainders from bottom to top: 45 \\div 3 = 15\\text{ remainder }0, \\; 15 \\div 3 = 5\\text{ remainder }0, \\; 5 \\div 3 = 1\\text{ remainder }2, \\; 1 \\div 3 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1200_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(541_{8}\\) + \\(11_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "364",
+      "548",
+      "361",
+      "360"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(541_{8}\\) = 353\\(_{10}\\) and \\(11_{6}\\) = 7\\(_{10}\\). Adding gives \\(353 + 7 = 360\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13_{4}\\) + \\(31_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(111_{4}\\)",
+      "\\(110_{4}\\)",
+      "\\(011_{4}\\)",
+      "\\(100_{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(13_{4}\\) = 7\\(_{10}\\) and \\(31_{4}\\) = 13\\(_{10}\\). Their sum is 7 + 13 = 20\\(_{10}\\), which converts back to \\(110_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(21_{y} = 17_{10}\\).",
+    "options": [
+      "8",
+      "9",
+      "7",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(21_{y}\\) means \\(2\\times y + 1 = 17\\). Solving: \\(2y = 16\\), so \\(y = 16 \\div 2 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 304\\(_{10}\\) to base 9.",
+    "options": [
+      "\\(367_{9}\\)",
+      "\\(460_{9}\\)",
+      "\\(67_{9}\\)",
+      "\\(763_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 9 and read the remainders from bottom to top: 304 \\div 9 = 33\\text{ remainder }7, \\; 33 \\div 9 = 3\\text{ remainder }6, \\; 3 \\div 9 = 0\\text{ remainder }3. Reading the remainders upward gives \\(367_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(188_{9}\\) + \\(40_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "201",
+      "186",
+      "185",
+      "212"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(188_{9}\\) = 161\\(_{10}\\) and \\(40_{6}\\) = 24\\(_{10}\\). Adding gives \\(161 + 24 = 185\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(32_{y} = 20_{10}\\).",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(32_{y}\\) means \\(3\\times y + 2 = 20\\). Solving: \\(3y = 18\\), so \\(y = 18 \\div 3 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(1000_{2}\\) to base ten.",
+    "options": [
+      "64",
+      "27",
+      "8",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Write each digit as a multiple of a power of 2, starting from the rightmost digit at \\(2^{0}\\): \\(1000_{2} = 1\\times 2^{3} + 0\\times 2^{2} + 0\\times 2^{1} + 0\\times 2^{0} = 8 + 0 + 0 + 0 = 8_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(25_{8}\\) \\(\\times\\) \\(1_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(35_{8}\\)",
+      "\\(52_{8}\\)",
+      "\\(26_{8}\\)",
+      "\\(25_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(25_{8}\\) = 21\\(_{10}\\) and \\(1_{8}\\) = 1\\(_{10}\\). Their product is 21 \\(\\times\\) 1 = 21\\(_{10}\\), which converts back to \\(25_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(474_{9}\\) to base ten.",
+    "options": [
+      "391",
+      "474",
+      "316",
+      "390"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 9, starting from the rightmost digit at \\(9^{0}\\): \\(474_{9} = 4\\times 9^{2} + 7\\times 9^{1} + 4\\times 9^{0} = 324 + 63 + 4 = 391_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(725_{8}\\) - \\(334_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(371_{8}\\)",
+      "\\(401_{8}\\)",
+      "\\(173_{8}\\)",
+      "\\(370_{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(725_{8}\\) = 469\\(_{10}\\) and \\(334_{8}\\) = 220\\(_{10}\\). Their difference is 469 - 220 = 249\\(_{10}\\), which converts back to \\(371_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(301_{7}\\) - \\(256_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(22_{7}\\)",
+      "\\(21_{7}\\)",
+      "\\(12_{7}\\)",
+      "\\(11_{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(301_{7}\\) = 148\\(_{10}\\) and \\(256_{7}\\) = 139\\(_{10}\\). Their difference is 148 - 139 = 9\\(_{10}\\), which converts back to \\(12_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(532_{8}\\) - \\(420_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(112_{8}\\)",
+      "\\(211_{8}\\)",
+      "\\(111_{8}\\)",
+      "\\(122_{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(532_{8}\\) = 346\\(_{10}\\) and \\(420_{8}\\) = 272\\(_{10}\\). Their difference is 346 - 272 = 74\\(_{10}\\), which converts back to \\(112_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(131_{4}\\) to base 8.",
+    "options": [
+      "\\(35_{8}\\)",
+      "\\(53_{8}\\)",
+      "\\(32_{8}\\)",
+      "\\(45_{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(131_{4}\\) to base ten: it equals 29\\(_{10}\\). Then convert 29\\(_{10}\\) to base 8 by repeated division by 8, giving \\(35_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(3043_{9}\\) to base ten.",
+    "options": [
+      "1571",
+      "2514",
+      "3043",
+      "2226"
+    ],
+    "correctIndex": 3,
+    "explanation": "Write each digit as a multiple of a power of 9, starting from the rightmost digit at \\(9^{0}\\): \\(3043_{9} = 3\\times 9^{3} + 0\\times 9^{2} + 4\\times 9^{1} + 3\\times 9^{0} = 2187 + 0 + 36 + 3 = 2226_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(412_{9}\\) - \\(388_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(12_{9}\\)",
+      "\\(23_{9}\\)",
+      "\\(31_{9}\\)",
+      "\\(13_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(412_{9}\\) = 335\\(_{10}\\) and \\(388_{9}\\) = 323\\(_{10}\\). Their difference is 335 - 323 = 12\\(_{10}\\), which converts back to \\(13_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(101_{2}\\) + \\(661_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "438",
+      "342",
+      "343",
+      "666"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(101_{2}\\) = 5\\(_{10}\\) and \\(661_{7}\\) = 337\\(_{10}\\). Adding gives \\(5 + 337 = 342\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(5067_{9}\\) to base ten.",
+    "options": [
+      "3706",
+      "5594",
+      "5067",
+      "2615"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 9, starting from the rightmost digit at \\(9^{0}\\): \\(5067_{9} = 5\\times 9^{3} + 0\\times 9^{2} + 6\\times 9^{1} + 7\\times 9^{0} = 3645 + 0 + 54 + 7 = 3706_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(56_{8}\\) + \\(60_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "106",
+      "89",
+      "88",
+      "98"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(56_{8}\\) = 46\\(_{10}\\) and \\(60_{7}\\) = 42\\(_{10}\\). Adding gives \\(46 + 42 = 88\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 116\\(_{10}\\) to base 5.",
+    "options": [
+      "\\(431_{5}\\)",
+      "\\(134_{5}\\)",
+      "\\(312_{5}\\)",
+      "\\(31_{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 5 and read the remainders from bottom to top: 116 \\div 5 = 23\\text{ remainder }1, \\; 23 \\div 5 = 4\\text{ remainder }3, \\; 4 \\div 5 = 0\\text{ remainder }4. Reading the remainders upward gives \\(431_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(340_{5}\\) + \\(303_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "206",
+      "207",
+      "398",
+      "451"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(340_{5}\\) = 95\\(_{10}\\) and \\(303_{6}\\) = 111\\(_{10}\\). Adding gives \\(95 + 111 = 206\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(22_{3}\\) + \\(31_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "34",
+      "47",
+      "33",
+      "39"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(22_{3}\\) = 8\\(_{10}\\) and \\(31_{8}\\) = 25\\(_{10}\\). Adding gives \\(8 + 25 = 33\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(31_{9}\\) or \\(11_{4}\\)?",
+    "options": [
+      "They are equal",
+      "\\(11_{4}\\)",
+      "\\(31_{9}\\)",
+      "Cannot be determined"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both to base ten: \\(31_{9}\\) = 28\\(_{10}\\) and \\(11_{4}\\) = 5\\(_{10}\\). Since 28 > 5, \\(31_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(23_{4}\\) \\(\\times\\) \\(3_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(201_{4}\\)",
+      "\\(211_{4}\\)",
+      "\\(102_{4}\\)",
+      "\\(32_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(23_{4}\\) = 11\\(_{10}\\) and \\(3_{4}\\) = 3\\(_{10}\\). Their product is 11 \\(\\times\\) 3 = 33\\(_{10}\\), which converts back to \\(201_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(44_{7}\\) or \\(674_{8}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(44_{7}\\)",
+      "They are equal",
+      "\\(674_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(44_{7}\\) = 32\\(_{10}\\) and \\(674_{8}\\) = 444\\(_{10}\\). Since 32 < 444, \\(674_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(32_{6}\\) or \\(32_{4}\\)?",
+    "options": [
+      "Cannot be determined",
+      "They are equal",
+      "\\(32_{4}\\)",
+      "\\(32_{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(32_{6}\\) = 20\\(_{10}\\) and \\(32_{4}\\) = 14\\(_{10}\\). Since 20 > 14, \\(32_{6}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(67_{9}\\) or \\(10_{2}\\)?",
+    "options": [
+      "They are equal",
+      "\\(10_{2}\\)",
+      "\\(67_{9}\\)",
+      "Cannot be determined"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both to base ten: \\(67_{9}\\) = 61\\(_{10}\\) and \\(10_{2}\\) = 2\\(_{10}\\). Since 61 > 2, \\(67_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(73_{9}\\) + \\(66_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "121",
+      "114",
+      "115",
+      "132"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(73_{9}\\) = 66\\(_{10}\\) and \\(66_{7}\\) = 48\\(_{10}\\). Adding gives \\(66 + 48 = 114\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(76_{8}\\) - \\(50_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(25_{8}\\)",
+      "\\(62_{8}\\)",
+      "\\(36_{8}\\)",
+      "\\(26_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(76_{8}\\) = 62\\(_{10}\\) and \\(50_{8}\\) = 40\\(_{10}\\). Their difference is 62 - 40 = 22\\(_{10}\\), which converts back to \\(26_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(22_{y} = 14_{10}\\).",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(22_{y}\\) means \\(2\\times y + 2 = 14\\). Solving: \\(2y = 12\\), so \\(y = 12 \\div 2 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(112_{3}\\) + \\(210_{3}\\), giving your answer in base 3.",
+    "options": [
+      "\\(1012_{3}\\)",
+      "\\(1022_{3}\\)",
+      "\\(1100_{3}\\)",
+      "\\(2201_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(112_{3}\\) = 14\\(_{10}\\) and \\(210_{3}\\) = 21\\(_{10}\\). Their sum is 14 + 21 = 35\\(_{10}\\), which converts back to \\(1022_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 857\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(3332_{7}\\)",
+      "\\(1531_{7}\\)",
+      "\\(333_{7}\\)",
+      "\\(2333_{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 857 \\div 7 = 122\\text{ remainder }3, \\; 122 \\div 7 = 17\\text{ remainder }3, \\; 17 \\div 7 = 2\\text{ remainder }3, \\; 2 \\div 7 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2333_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(75_{y} = 68_{10}\\).",
+    "options": [
+      "12",
+      "9",
+      "10",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(75_{y}\\) means \\(7\\times y + 5 = 68\\). Solving: \\(7y = 63\\), so \\(y = 63 \\div 7 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 1146\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(3225_{7}\\)",
+      "\\(5223_{7}\\)",
+      "\\(225_{7}\\)",
+      "\\(2172_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 1146 \\div 7 = 163\\text{ remainder }5, \\; 163 \\div 7 = 23\\text{ remainder }2, \\; 23 \\div 7 = 3\\text{ remainder }2, \\; 3 \\div 7 = 0\\text{ remainder }3. Reading the remainders upward gives \\(3225_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(545_{9}\\) + \\(32_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "467",
+      "466",
+      "565",
+      "478"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(545_{9}\\) = 446\\(_{10}\\) and \\(32_{6}\\) = 20\\(_{10}\\). Adding gives \\(446 + 20 = 466\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(20_{4}\\) + \\(604_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "318",
+      "612",
+      "306",
+      "307"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(20_{4}\\) = 8\\(_{10}\\) and \\(604_{7}\\) = 298\\(_{10}\\). Adding gives \\(8 + 298 = 306\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(54_{8}\\) or \\(211_{3}\\)?",
+    "options": [
+      "\\(211_{3}\\)",
+      "They are equal",
+      "Cannot be determined",
+      "\\(54_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(54_{8}\\) = 44\\(_{10}\\) and \\(211_{3}\\) = 22\\(_{10}\\). Since 44 > 22, \\(54_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(120_{3}\\) or \\(101_{2}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(120_{3}\\)",
+      "They are equal",
+      "\\(101_{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(120_{3}\\) = 15\\(_{10}\\) and \\(101_{2}\\) = 5\\(_{10}\\). Since 15 > 5, \\(120_{3}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(56_{9}\\) + \\(10_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "53",
+      "58",
+      "54",
+      "61"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(56_{9}\\) = 51\\(_{10}\\) and \\(10_{2}\\) = 2\\(_{10}\\). Adding gives \\(51 + 2 = 53\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 748\\(_{10}\\) to base 6.",
+    "options": [
+      "\\(2116_{6}\\)",
+      "\\(3244_{6}\\)",
+      "\\(4423_{6}\\)",
+      "\\(244_{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 6 and read the remainders from bottom to top: 748 \\div 6 = 124\\text{ remainder }4, \\; 124 \\div 6 = 20\\text{ remainder }4, \\; 20 \\div 6 = 3\\text{ remainder }2, \\; 3 \\div 6 = 0\\text{ remainder }3. Reading the remainders upward gives \\(3244_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(22_{y} = 18_{10}\\).",
+    "options": [
+      "8",
+      "11",
+      "9",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(22_{y}\\) means \\(2\\times y + 2 = 18\\). Solving: \\(2y = 16\\), so \\(y = 16 \\div 2 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(756_{8}\\) - \\(511_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(244_{8}\\)",
+      "\\(542_{8}\\)",
+      "\\(255_{8}\\)",
+      "\\(245_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(756_{8}\\) = 494\\(_{10}\\) and \\(511_{8}\\) = 329\\(_{10}\\). Their difference is 494 - 329 = 165\\(_{10}\\), which converts back to \\(245_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12_{3}\\) + \\(22_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "24",
+      "30",
+      "27",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(12_{3}\\) = 5\\(_{10}\\) and \\(22_{8}\\) = 18\\(_{10}\\). Adding gives \\(5 + 18 = 23\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 3215\\(_{10}\\) to base 9.",
+    "options": [
+      "\\(4362_{9}\\)",
+      "\\(362_{9}\\)",
+      "\\(2634_{9}\\)",
+      "\\(6217_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 9 and read the remainders from bottom to top: 3215 \\div 9 = 357\\text{ remainder }2, \\; 357 \\div 9 = 39\\text{ remainder }6, \\; 39 \\div 9 = 4\\text{ remainder }3, \\; 4 \\div 9 = 0\\text{ remainder }4. Reading the remainders upward gives \\(4362_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(5410_{9}\\) to base ten.",
+    "options": [
+      "2824",
+      "122",
+      "5410",
+      "3978"
+    ],
+    "correctIndex": 3,
+    "explanation": "Write each digit as a multiple of a power of 9, starting from the rightmost digit at \\(9^{0}\\): \\(5410_{9} = 5\\times 9^{3} + 4\\times 9^{2} + 1\\times 9^{1} + 0\\times 9^{0} = 3645 + 324 + 9 + 0 = 3978_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(522_{6}\\) - \\(140_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(352_{6}\\)",
+      "\\(243_{6}\\)",
+      "\\(342_{6}\\)",
+      "\\(341_{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(522_{6}\\) = 194\\(_{10}\\) and \\(140_{6}\\) = 60\\(_{10}\\). Their difference is 194 - 60 = 134\\(_{10}\\), which converts back to \\(342_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(40_{8}\\) or \\(17_{9}\\)?",
+    "options": [
+      "Cannot be determined",
+      "They are equal",
+      "\\(17_{9}\\)",
+      "\\(40_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(40_{8}\\) = 32\\(_{10}\\) and \\(17_{9}\\) = 16\\(_{10}\\). Since 32 > 16, \\(40_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(770_{8}\\) - \\(600_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(071_{8}\\)",
+      "\\(167_{8}\\)",
+      "\\(200_{8}\\)",
+      "\\(170_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(770_{8}\\) = 504\\(_{10}\\) and \\(600_{8}\\) = 384\\(_{10}\\). Their difference is 504 - 384 = 120\\(_{10}\\), which converts back to \\(170_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 106\\(_{10}\\) to base 4.",
+    "options": [
+      "\\(222_{4}\\)",
+      "\\(1222_{4}\\)",
+      "\\(2221_{4}\\)",
+      "\\(411_{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 4 and read the remainders from bottom to top: 106 \\div 4 = 26\\text{ remainder }2, \\; 26 \\div 4 = 6\\text{ remainder }2, \\; 6 \\div 4 = 1\\text{ remainder }2, \\; 1 \\div 4 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1222_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(32_{4}\\) + \\(863_{9}\\), leaving your answer in base ten.",
+    "options": [
+      "737",
+      "877",
+      "720",
+      "719"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(32_{4}\\) = 14\\(_{10}\\) and \\(863_{9}\\) = 705\\(_{10}\\). Adding gives \\(14 + 705 = 719\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12_{8}\\) \\(\\times\\) \\(4_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(60_{8}\\)",
+      "\\(05_{8}\\)",
+      "\\(16_{8}\\)",
+      "\\(50_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(12_{8}\\) = 10\\(_{10}\\) and \\(4_{8}\\) = 4\\(_{10}\\). Their product is 10 \\(\\times\\) 4 = 40\\(_{10}\\), which converts back to \\(50_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13_{9}\\) \\(\\times\\) \\(8_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(116_{9}\\)",
+      "\\(611_{9}\\)",
+      "\\(22_{9}\\)",
+      "\\(126_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(13_{9}\\) = 12\\(_{10}\\) and \\(8_{9}\\) = 8\\(_{10}\\). Their product is 12 \\(\\times\\) 8 = 96\\(_{10}\\), which converts back to \\(116_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 3473\\(_{10}\\) to base 8.",
+    "options": [
+      "\\(621_{8}\\)",
+      "\\(4678_{8}\\)",
+      "\\(1266_{8}\\)",
+      "\\(6621_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 8 and read the remainders from bottom to top: 3473 \\div 8 = 434\\text{ remainder }1, \\; 434 \\div 8 = 54\\text{ remainder }2, \\; 54 \\div 8 = 6\\text{ remainder }6, \\; 6 \\div 8 = 0\\text{ remainder }6. Reading the remainders upward gives \\(6621_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(24_{6}\\) or \\(65_{8}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(24_{6}\\)",
+      "They are equal",
+      "\\(65_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(24_{6}\\) = 16\\(_{10}\\) and \\(65_{8}\\) = 53\\(_{10}\\). Since 16 < 53, \\(65_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(60_{y} = 54_{10}\\).",
+    "options": [
+      "9",
+      "10",
+      "8",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(60_{y}\\) means \\(6\\times y + 0 = 54\\). Solving: \\(6y = 54\\), so \\(y = 54 \\div 6 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(23_{7}\\) \\(\\times\\) \\(4_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(125_{7}\\)",
+      "\\(521_{7}\\)",
+      "\\(135_{7}\\)",
+      "\\(30_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(23_{7}\\) = 17\\(_{10}\\) and \\(4_{7}\\) = 4\\(_{10}\\). Their product is 17 \\(\\times\\) 4 = 68\\(_{10}\\), which converts back to \\(125_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(33_{4}\\) - \\(13_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(20_{4}\\)",
+      "\\(02_{4}\\)",
+      "\\(13_{4}\\)",
+      "\\(30_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(33_{4}\\) = 15\\(_{10}\\) and \\(13_{4}\\) = 7\\(_{10}\\). Their difference is 15 - 7 = 8\\(_{10}\\), which converts back to \\(20_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 247\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(205_{7}\\)",
+      "\\(367_{7}\\)",
+      "\\(502_{7}\\)",
+      "\\(02_{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 247 \\div 7 = 35\\text{ remainder }2, \\; 35 \\div 7 = 5\\text{ remainder }0, \\; 5 \\div 7 = 0\\text{ remainder }5. Reading the remainders upward gives \\(502_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 4\\(_{10}\\) to base 2.",
+    "options": [
+      "\\(001_{2}\\)",
+      "\\(11_{2}\\)",
+      "\\(00_{2}\\)",
+      "\\(100_{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 2 and read the remainders from bottom to top: 4 \\div 2 = 2\\text{ remainder }0, \\; 2 \\div 2 = 1\\text{ remainder }0, \\; 1 \\div 2 = 0\\text{ remainder }1. Reading the remainders upward gives \\(100_{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(666_{7}\\) + \\(260_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(1260_{7}\\)",
+      "\\(1246_{7}\\)",
+      "\\(1256_{7}\\)",
+      "\\(6521_{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(666_{7}\\) = 342\\(_{10}\\) and \\(260_{7}\\) = 140\\(_{10}\\). Their sum is 342 + 140 = 482\\(_{10}\\), which converts back to \\(1256_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(25_{6}\\) \\(\\times\\) \\(2_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(54_{6}\\)",
+      "\\(104_{6}\\)",
+      "\\(31_{6}\\)",
+      "\\(45_{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(25_{6}\\) = 17\\(_{10}\\) and \\(2_{6}\\) = 2\\(_{10}\\). Their product is 17 \\(\\times\\) 2 = 34\\(_{10}\\), which converts back to \\(54_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 1988\\(_{10}\\) to base 7.",
+    "options": [
+      "\\(5540_{7}\\)",
+      "\\(540_{7}\\)",
+      "\\(3704_{7}\\)",
+      "\\(0455_{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 7 and read the remainders from bottom to top: 1988 \\div 7 = 284\\text{ remainder }0, \\; 284 \\div 7 = 40\\text{ remainder }4, \\; 40 \\div 7 = 5\\text{ remainder }5, \\; 5 \\div 7 = 0\\text{ remainder }5. Reading the remainders upward gives \\(5540_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(112_{3}\\) + \\(233_{4}\\), leaving your answer in base ten.",
+    "options": [
+      "247",
+      "61",
+      "62",
+      "159"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(112_{3}\\) = 14\\(_{10}\\) and \\(233_{4}\\) = 47\\(_{10}\\). Adding gives \\(14 + 47 = 61\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(454_{8}\\) or \\(102_{5}\\)?",
+    "options": [
+      "\\(454_{8}\\)",
+      "Cannot be determined",
+      "They are equal",
+      "\\(102_{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(454_{8}\\) = 300\\(_{10}\\) and \\(102_{5}\\) = 27\\(_{10}\\). Since 300 > 27, \\(454_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(253_{8}\\) to base 6.",
+    "options": [
+      "\\(333_{6}\\)",
+      "\\(344_{6}\\)",
+      "\\(443_{6}\\)",
+      "\\(453_{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "First convert \\(253_{8}\\) to base ten: it equals 171\\(_{10}\\). Then convert 171\\(_{10}\\) to base 6 by repeated division by 6, giving \\(443_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(122_{4}\\) or \\(34_{8}\\)?",
+    "options": [
+      "They are equal",
+      "\\(34_{8}\\)",
+      "Cannot be determined",
+      "\\(122_{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(122_{4}\\) = 26\\(_{10}\\) and \\(34_{8}\\) = 28\\(_{10}\\). Since 26 < 28, \\(34_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(22_{4}\\) to base 7.",
+    "options": [
+      "\\(31_{7}\\)",
+      "\\(13_{7}\\)",
+      "\\(23_{7}\\)",
+      "\\(12_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(22_{4}\\) to base ten: it equals 10\\(_{10}\\). Then convert 10\\(_{10}\\) to base 7 by repeated division by 7, giving \\(13_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(11_{3}\\) or \\(530_{8}\\)?",
+    "options": [
+      "\\(11_{3}\\)",
+      "They are equal",
+      "Cannot be determined",
+      "\\(530_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(11_{3}\\) = 4\\(_{10}\\) and \\(530_{8}\\) = 344\\(_{10}\\). Since 4 < 344, \\(530_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 25\\(_{10}\\) to base 3.",
+    "options": [
+      "\\(221_{3}\\)",
+      "\\(122_{3}\\)",
+      "\\(21_{3}\\)",
+      "\\(121_{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 3 and read the remainders from bottom to top: 25 \\div 3 = 8\\text{ remainder }1, \\; 8 \\div 3 = 2\\text{ remainder }2, \\; 2 \\div 3 = 0\\text{ remainder }2. Reading the remainders upward gives \\(221_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(23_{8}\\) or \\(22_{4}\\)?",
+    "options": [
+      "They are equal",
+      "Cannot be determined",
+      "\\(23_{8}\\)",
+      "\\(22_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both to base ten: \\(23_{8}\\) = 19\\(_{10}\\) and \\(22_{4}\\) = 10\\(_{10}\\). Since 19 > 10, \\(23_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 40\\(_{10}\\) to base 4.",
+    "options": [
+      "\\(20_{4}\\)",
+      "\\(130_{4}\\)",
+      "\\(220_{4}\\)",
+      "\\(022_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 4 and read the remainders from bottom to top: 40 \\div 4 = 10\\text{ remainder }0, \\; 10 \\div 4 = 2\\text{ remainder }2, \\; 2 \\div 4 = 0\\text{ remainder }2. Reading the remainders upward gives \\(220_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(233_{4}\\) + \\(101_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "53",
+      "52",
+      "238",
+      "148"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(233_{4}\\) = 47\\(_{10}\\) and \\(101_{2}\\) = 5\\(_{10}\\). Adding gives \\(47 + 5 = 52\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 166\\(_{10}\\) to base 5.",
+    "options": [
+      "\\(434_{5}\\)",
+      "\\(1311_{5}\\)",
+      "\\(131_{5}\\)",
+      "\\(1131_{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 5 and read the remainders from bottom to top: 166 \\div 5 = 33\\text{ remainder }1, \\; 33 \\div 5 = 6\\text{ remainder }3, \\; 6 \\div 5 = 1\\text{ remainder }1, \\; 1 \\div 5 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1131_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(1111_{2}\\) to base ten.",
+    "options": [
+      "40",
+      "85",
+      "15",
+      "1111"
+    ],
+    "correctIndex": 2,
+    "explanation": "Write each digit as a multiple of a power of 2, starting from the rightmost digit at \\(2^{0}\\): \\(1111_{2} = 1\\times 2^{3} + 1\\times 2^{2} + 1\\times 2^{1} + 1\\times 2^{0} = 8 + 4 + 2 + 1 = 15_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(1130_{4}\\) to base ten.",
+    "options": [
+      "92",
+      "45",
+      "165",
+      "53"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(1130_{4} = 1\\times 4^{3} + 1\\times 4^{2} + 3\\times 4^{1} + 0\\times 4^{0} = 64 + 16 + 12 + 0 = 92_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(21_{4}\\) \\(\\times\\) \\(3_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(123_{4}\\)",
+      "\\(133_{4}\\)",
+      "\\(30_{4}\\)",
+      "\\(321_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(21_{4}\\) = 9\\(_{10}\\) and \\(3_{4}\\) = 3\\(_{10}\\). Their product is 9 \\(\\times\\) 3 = 27\\(_{10}\\), which converts back to \\(123_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(103_{5}\\) to base 7.",
+    "options": [
+      "\\(04_{7}\\)",
+      "\\(40_{7}\\)",
+      "\\(50_{7}\\)",
+      "\\(34_{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(103_{5}\\) to base ten: it equals 28\\(_{10}\\). Then convert 28\\(_{10}\\) to base 7 by repeated division by 7, giving \\(40_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(201_{3}\\) + \\(21_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "35",
+      "216",
+      "34",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(201_{3}\\) = 19\\(_{10}\\) and \\(21_{7}\\) = 15\\(_{10}\\). Adding gives \\(19 + 15 = 34\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(212_{9}\\) + \\(645_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(857_{9}\\)",
+      "\\(858_{9}\\)",
+      "\\(758_{9}\\)",
+      "\\(847_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(212_{9}\\) = 173\\(_{10}\\) and \\(645_{9}\\) = 527\\(_{10}\\). Their sum is 173 + 527 = 700\\(_{10}\\), which converts back to \\(857_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(11_{8}\\) or \\(101_{2}\\)?",
+    "options": [
+      "Cannot be determined",
+      "They are equal",
+      "\\(101_{2}\\)",
+      "\\(11_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(11_{8}\\) = 9\\(_{10}\\) and \\(101_{2}\\) = 5\\(_{10}\\). Since 9 > 5, \\(11_{8}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(32_{9}\\) + \\(28_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(61_{9}\\)",
+      "\\(16_{9}\\)",
+      "\\(62_{9}\\)",
+      "\\(51_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(32_{9}\\) = 29\\(_{10}\\) and \\(28_{9}\\) = 26\\(_{10}\\). Their sum is 29 + 26 = 55\\(_{10}\\), which converts back to \\(61_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(22_{6}\\) to base 8.",
+    "options": [
+      "\\(15_{8}\\)",
+      "\\(26_{8}\\)",
+      "\\(61_{8}\\)",
+      "\\(16_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First convert \\(22_{6}\\) to base ten: it equals 14\\(_{10}\\). Then convert 14\\(_{10}\\) to base 8 by repeated division by 8, giving \\(16_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(501_{6}\\) to base 3.",
+    "options": [
+      "\\(2311_{3}\\)",
+      "\\(20201_{3}\\)",
+      "\\(10202_{3}\\)",
+      "\\(20211_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "First convert \\(501_{6}\\) to base ten: it equals 181\\(_{10}\\). Then convert 181\\(_{10}\\) to base 3 by repeated division by 3, giving \\(20201_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12_{4}\\) \\(\\times\\) \\(1_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(12_{4}\\)",
+      "\\(21_{4}\\)",
+      "\\(22_{4}\\)",
+      "\\(13_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(12_{4}\\) = 6\\(_{10}\\) and \\(1_{4}\\) = 1\\(_{10}\\). Their product is 6 \\(\\times\\) 1 = 6\\(_{10}\\), which converts back to \\(12_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11_{2}\\) + \\(204_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "207",
+      "58",
+      "65",
+      "57"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(11_{2}\\) = 3\\(_{10}\\) and \\(204_{5}\\) = 54\\(_{10}\\). Adding gives \\(3 + 54 = 57\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(40_{y} = 28_{10}\\).",
+    "options": [
+      "10",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(40_{y}\\) means \\(4\\times y + 0 = 28\\). Solving: \\(4y = 28\\), so \\(y = 28 \\div 4 = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(162_{7}\\) to base ten.",
+    "options": [
+      "141",
+      "74",
+      "93",
+      "114"
+    ],
+    "correctIndex": 2,
+    "explanation": "Write each digit as a multiple of a power of 7, starting from the rightmost digit at \\(7^{0}\\): \\(162_{7} = 1\\times 7^{2} + 6\\times 7^{1} + 2\\times 7^{0} = 49 + 42 + 2 = 93_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(38_{y} = 35_{10}\\).",
+    "options": [
+      "12",
+      "9",
+      "11",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(38_{y}\\) means \\(3\\times y + 8 = 35\\). Solving: \\(3y = 27\\), so \\(y = 27 \\div 3 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(254_{8}\\) + \\(571_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(5401_{8}\\)",
+      "\\(1035_{8}\\)",
+      "\\(1046_{8}\\)",
+      "\\(1045_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(254_{8}\\) = 172\\(_{10}\\) and \\(571_{8}\\) = 377\\(_{10}\\). Their sum is 172 + 377 = 549\\(_{10}\\), which converts back to \\(1045_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(101_{2}\\) + \\(141_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "162",
+      "67",
+      "146",
+      "66"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(101_{2}\\) = 5\\(_{10}\\) and \\(141_{6}\\) = 61\\(_{10}\\). Adding gives \\(5 + 61 = 66\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(636_{8}\\) - \\(201_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(534_{8}\\)",
+      "\\(434_{8}\\)",
+      "\\(445_{8}\\)",
+      "\\(435_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(636_{8}\\) = 414\\(_{10}\\) and \\(201_{8}\\) = 129\\(_{10}\\). Their difference is 414 - 129 = 285\\(_{10}\\), which converts back to \\(435_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 4645\\(_{10}\\) to base 9.",
+    "options": [
+      "\\(1336_{9}\\)",
+      "\\(6331_{9}\\)",
+      "\\(11045_{9}\\)",
+      "\\(331_{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 9 and read the remainders from bottom to top: 4645 \\div 9 = 516\\text{ remainder }1, \\; 516 \\div 9 = 57\\text{ remainder }3, \\; 57 \\div 9 = 6\\text{ remainder }3, \\; 6 \\div 9 = 0\\text{ remainder }6. Reading the remainders upward gives \\(6331_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(124_{5}\\) + \\(102_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(132_{5}\\)",
+      "\\(232_{5}\\)",
+      "\\(221_{5}\\)",
+      "\\(231_{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(124_{5}\\) = 39\\(_{10}\\) and \\(102_{5}\\) = 27\\(_{10}\\). Their sum is 39 + 27 = 66\\(_{10}\\), which converts back to \\(231_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(42_{6}\\) \\(\\times\\) \\(5_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(334_{6}\\)",
+      "\\(344_{6}\\)",
+      "\\(433_{6}\\)",
+      "\\(51_{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(42_{6}\\) = 26\\(_{10}\\) and \\(5_{6}\\) = 5\\(_{10}\\). Their product is 26 \\(\\times\\) 5 = 130\\(_{10}\\), which converts back to \\(334_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(54_{6}\\) \\(\\times\\) \\(4_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(354_{6}\\)",
+      "\\(102_{6}\\)",
+      "\\(443_{6}\\)",
+      "\\(344_{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(54_{6}\\) = 34\\(_{10}\\) and \\(4_{6}\\) = 4\\(_{10}\\). Their product is 34 \\(\\times\\) 4 = 136\\(_{10}\\), which converts back to \\(344_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(33_{5}\\) + \\(24_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(102_{5}\\)",
+      "\\(113_{5}\\)",
+      "\\(112_{5}\\)",
+      "\\(211_{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(33_{5}\\) = 18\\(_{10}\\) and \\(24_{5}\\) = 14\\(_{10}\\). Their sum is 18 + 14 = 32\\(_{10}\\), which converts back to \\(112_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 140\\(_{10}\\) to base 5.",
+    "options": [
+      "\\(0301_{5}\\)",
+      "\\(030_{5}\\)",
+      "\\(352_{5}\\)",
+      "\\(1030_{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 5 and read the remainders from bottom to top: 140 \\div 5 = 28\\text{ remainder }0, \\; 28 \\div 5 = 5\\text{ remainder }3, \\; 5 \\div 5 = 1\\text{ remainder }0, \\; 1 \\div 5 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1030_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(135_{6}\\) or \\(10_{2}\\)?",
+    "options": [
+      "\\(135_{6}\\)",
+      "They are equal",
+      "Cannot be determined",
+      "\\(10_{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(135_{6}\\) = 59\\(_{10}\\) and \\(10_{2}\\) = 2\\(_{10}\\). Since 59 > 2, \\(135_{6}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(64_{7}\\) to base 8.",
+    "options": [
+      "\\(51_{8}\\)",
+      "\\(66_{8}\\)",
+      "\\(65_{8}\\)",
+      "\\(56_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First convert \\(64_{7}\\) to base ten: it equals 46\\(_{10}\\). Then convert 46\\(_{10}\\) to base 8 by repeated division by 8, giving \\(56_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(332_{4}\\) - \\(203_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(122_{4}\\)",
+      "\\(123_{4}\\)",
+      "\\(133_{4}\\)",
+      "\\(321_{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(332_{4}\\) = 62\\(_{10}\\) and \\(203_{4}\\) = 35\\(_{10}\\). Their difference is 62 - 35 = 27\\(_{10}\\), which converts back to \\(123_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(41_{8}\\) + \\(633_{7}\\), leaving your answer in base ten.",
+    "options": [
+      "352",
+      "359",
+      "666",
+      "351"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(41_{8}\\) = 33\\(_{10}\\) and \\(633_{7}\\) = 318\\(_{10}\\). Adding gives \\(33 + 318 = 351\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(18_{y} = 17_{10}\\).",
+    "options": [
+      "9",
+      "11",
+      "12",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(18_{y}\\) means \\(1\\times y + 8 = 17\\). Solving: \\(1y = 9\\), so \\(y = 9 \\div 1 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(23_{y} = 15_{10}\\).",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(23_{y}\\) means \\(2\\times y + 3 = 15\\). Solving: \\(2y = 12\\), so \\(y = 12 \\div 2 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(201_{5}\\) to base ten.",
+    "options": [
+      "27",
+      "33",
+      "73",
+      "51"
+    ],
+    "correctIndex": 3,
+    "explanation": "Write each digit as a multiple of a power of 5, starting from the rightmost digit at \\(5^{0}\\): \\(201_{5} = 2\\times 5^{2} + 0\\times 5^{1} + 1\\times 5^{0} = 50 + 0 + 1 = 51_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(56_{7}\\) or \\(110_{2}\\)?",
+    "options": [
+      "\\(110_{2}\\)",
+      "Cannot be determined",
+      "They are equal",
+      "\\(56_{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(56_{7}\\) = 41\\(_{10}\\) and \\(110_{2}\\) = 6\\(_{10}\\). Since 41 > 6, \\(56_{7}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(10_{6}\\) \\(\\times\\) \\(4_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(04_{6}\\)",
+      "\\(40_{6}\\)",
+      "\\(50_{6}\\)",
+      "\\(14_{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(10_{6}\\) = 6\\(_{10}\\) and \\(4_{6}\\) = 4\\(_{10}\\). Their product is 6 \\(\\times\\) 4 = 24\\(_{10}\\), which converts back to \\(40_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(26_{y} = 22_{10}\\).",
+    "options": [
+      "8",
+      "11",
+      "9",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(26_{y}\\) means \\(2\\times y + 6 = 22\\). Solving: \\(2y = 16\\), so \\(y = 16 \\div 2 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(354_{6}\\) to base ten.",
+    "options": [
+      "142",
+      "104",
+      "186",
+      "177"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 6, starting from the rightmost digit at \\(6^{0}\\): \\(354_{6} = 3\\times 6^{2} + 5\\times 6^{1} + 4\\times 6^{0} = 108 + 30 + 4 = 142_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(212_{4}\\) + \\(323_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(1202_{4}\\)",
+      "\\(1201_{4}\\)",
+      "\\(1131_{4}\\)",
+      "\\(1021_{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(212_{4}\\) = 38\\(_{10}\\) and \\(323_{4}\\) = 59\\(_{10}\\). Their sum is 38 + 59 = 97\\(_{10}\\), which converts back to \\(1201_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(424_{7}\\) + \\(312_{8}\\), leaving your answer in base ten.",
+    "options": [
+      "416",
+      "526",
+      "417",
+      "626"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(424_{7}\\) = 214\\(_{10}\\) and \\(312_{8}\\) = 202\\(_{10}\\). Adding gives \\(214 + 202 = 416\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(100_{3}\\) to base 6.",
+    "options": [
+      "\\(31_{6}\\)",
+      "\\(12_{6}\\)",
+      "\\(13_{6}\\)",
+      "\\(23_{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "First convert \\(100_{3}\\) to base ten: it equals 9\\(_{10}\\). Then convert 9\\(_{10}\\) to base 6 by repeated division by 6, giving \\(13_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(221_{3}\\) - \\(121_{3}\\), giving your answer in base 3.",
+    "options": [
+      "\\(110_{3}\\)",
+      "\\(001_{3}\\)",
+      "\\(22_{3}\\)",
+      "\\(100_{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(221_{3}\\) = 25\\(_{10}\\) and \\(121_{3}\\) = 16\\(_{10}\\). Their difference is 25 - 16 = 9\\(_{10}\\), which converts back to \\(100_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(14_{y} = 11_{10}\\).",
+    "options": [
+      "6",
+      "10",
+      "8",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "In base \\(y\\), \\(14_{y}\\) means \\(1\\times y + 4 = 11\\). Solving: \\(1y = 7\\), so \\(y = 7 \\div 1 = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(71_{y} = 57_{10}\\).",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "In base \\(y\\), \\(71_{y}\\) means \\(7\\times y + 1 = 57\\). Solving: \\(7y = 56\\), so \\(y = 56 \\div 7 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(74_{8}\\) \\(\\times\\) \\(3_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(274_{8}\\)",
+      "\\(264_{8}\\)",
+      "\\(462_{8}\\)",
+      "\\(77_{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(74_{8}\\) = 60\\(_{10}\\) and \\(3_{8}\\) = 3\\(_{10}\\). Their product is 60 \\(\\times\\) 3 = 180\\(_{10}\\), which converts back to \\(264_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 480\\(_{10}\\) to base 6.",
+    "options": [
+      "\\(0212_{6}\\)",
+      "\\(2120_{6}\\)",
+      "\\(1254_{6}\\)",
+      "\\(120_{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 6 and read the remainders from bottom to top: 480 \\div 6 = 80\\text{ remainder }0, \\; 80 \\div 6 = 13\\text{ remainder }2, \\; 13 \\div 6 = 2\\text{ remainder }1, \\; 2 \\div 6 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2120_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(22_{3}\\) + \\(11_{3}\\), giving your answer in base 3.",
+    "options": [
+      "\\(110_{3}\\)",
+      "\\(011_{3}\\)",
+      "\\(100_{3}\\)",
+      "\\(111_{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(22_{3}\\) = 8\\(_{10}\\) and \\(11_{3}\\) = 4\\(_{10}\\). Their sum is 8 + 4 = 12\\(_{10}\\), which converts back to \\(110_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14_{5}\\) + \\(100_{4}\\), leaving your answer in base ten.",
+    "options": [
+      "109",
+      "26",
+      "30",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(14_{5}\\) = 9\\(_{10}\\) and \\(100_{4}\\) = 16\\(_{10}\\). Adding gives \\(9 + 16 = 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(102_{5}\\) + \\(12_{3}\\), leaving your answer in base ten.",
+    "options": [
+      "39",
+      "33",
+      "107",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(102_{5}\\) = 27\\(_{10}\\) and \\(12_{3}\\) = 5\\(_{10}\\). Adding gives \\(27 + 5 = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(40_{5}\\) + \\(11_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "23",
+      "24",
+      "31",
+      "43"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(40_{5}\\) = 20\\(_{10}\\) and \\(11_{2}\\) = 3\\(_{10}\\). Adding gives \\(20 + 3 = 23\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(424_{5}\\) to base ten.",
+    "options": [
+      "114",
+      "160",
+      "424",
+      "76"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 5, starting from the rightmost digit at \\(5^{0}\\): \\(424_{5} = 4\\times 5^{2} + 2\\times 5^{1} + 4\\times 5^{0} = 100 + 10 + 4 = 114_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(20_{4}\\) + \\(543_{6}\\), leaving your answer in base ten.",
+    "options": [
+      "551",
+      "215",
+      "216",
+      "227"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(20_{4}\\) = 8\\(_{10}\\) and \\(543_{6}\\) = 207\\(_{10}\\). Adding gives \\(8 + 207 = 215\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(67_{y} = 55_{10}\\).",
+    "options": [
+      "10",
+      "9",
+      "8",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(67_{y}\\) means \\(6\\times y + 7 = 55\\). Solving: \\(6y = 48\\), so \\(y = 48 \\div 6 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(752_{9}\\) + \\(866_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(1730_{9}\\)",
+      "\\(1728_{9}\\)",
+      "\\(1718_{9}\\)",
+      "\\(8271_{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(752_{9}\\) = 614\\(_{10}\\) and \\(866_{9}\\) = 708\\(_{10}\\). Their sum is 614 + 708 = 1322\\(_{10}\\), which converts back to \\(1728_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(556_{7}\\) + \\(10_{2}\\), leaving your answer in base ten.",
+    "options": [
+      "296",
+      "558",
+      "288",
+      "289"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(556_{7}\\) = 286\\(_{10}\\) and \\(10_{2}\\) = 2\\(_{10}\\). Adding gives \\(286 + 2 = 288\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(20_{9}\\) or \\(122_{3}\\)?",
+    "options": [
+      "Cannot be determined",
+      "\\(122_{3}\\)",
+      "They are equal",
+      "\\(20_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both to base ten: \\(20_{9}\\) = 18\\(_{10}\\) and \\(122_{3}\\) = 17\\(_{10}\\). Since 18 > 17, \\(20_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(23_{5}\\) or \\(30_{4}\\)?",
+    "options": [
+      "Cannot be determined",
+      "They are equal",
+      "\\(23_{5}\\)",
+      "\\(30_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both to base ten: \\(23_{5}\\) = 13\\(_{10}\\) and \\(30_{4}\\) = 12\\(_{10}\\). Since 13 > 12, \\(23_{5}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(15_{8}\\) + \\(220_{3}\\), leaving your answer in base ten.",
+    "options": [
+      "233",
+      "37",
+      "38",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(15_{8}\\) = 13\\(_{10}\\) and \\(220_{3}\\) = 24\\(_{10}\\). Adding gives \\(13 + 24 = 37\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(70_{y} = 56_{10}\\).",
+    "options": [
+      "8",
+      "9",
+      "11",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "In base \\(y\\), \\(70_{y}\\) means \\(7\\times y + 0 = 56\\). Solving: \\(7y = 56\\), so \\(y = 56 \\div 7 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(562_{7}\\) + \\(32_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "321",
+      "307",
+      "579",
+      "306"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(562_{7}\\) = 289\\(_{10}\\) and \\(32_{5}\\) = 17\\(_{10}\\). Adding gives \\(289 + 17 = 306\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(46_{9}\\) or \\(533_{6}\\)?",
+    "options": [
+      "\\(533_{6}\\)",
+      "\\(46_{9}\\)",
+      "Cannot be determined",
+      "They are equal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(46_{9}\\) = 42\\(_{10}\\) and \\(533_{6}\\) = 201\\(_{10}\\). Since 42 < 201, \\(533_{6}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(120_{5}\\) to base 8.",
+    "options": [
+      "\\(43_{8}\\)",
+      "\\(38_{8}\\)",
+      "\\(53_{8}\\)",
+      "\\(34_{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(120_{5}\\) to base ten: it equals 35\\(_{10}\\). Then convert 35\\(_{10}\\) to base 8 by repeated division by 8, giving \\(43_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11_{2}\\) + \\(11_{2}\\), giving your answer in base 2.",
+    "options": [
+      "\\(110_{2}\\)",
+      "\\(111_{2}\\)",
+      "\\(011_{2}\\)",
+      "\\(100_{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(11_{2}\\) = 3\\(_{10}\\) and \\(11_{2}\\) = 3\\(_{10}\\). Their sum is 3 + 3 = 6\\(_{10}\\), which converts back to \\(110_{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(30_{5}\\) \\(\\times\\) \\(3_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(33_{5}\\)",
+      "\\(140_{5}\\)",
+      "\\(041_{5}\\)",
+      "\\(200_{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(30_{5}\\) = 15\\(_{10}\\) and \\(3_{5}\\) = 3\\(_{10}\\). Their product is 15 \\(\\times\\) 3 = 45\\(_{10}\\), which converts back to \\(140_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(15_{y} = 14_{10}\\).",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(15_{y}\\) means \\(1\\times y + 5 = 14\\). Solving: \\(1y = 9\\), so \\(y = 9 \\div 1 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(42_{5}\\) + \\(42_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(124_{5}\\)",
+      "\\(140_{5}\\)",
+      "\\(134_{5}\\)",
+      "\\(431_{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(42_{5}\\) = 22\\(_{10}\\) and \\(42_{5}\\) = 22\\(_{10}\\). Their sum is 22 + 22 = 44\\(_{10}\\), which converts back to \\(134_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(11_{2}\\) or \\(402_{5}\\)?",
+    "options": [
+      "They are equal",
+      "\\(11_{2}\\)",
+      "\\(402_{5}\\)",
+      "Cannot be determined"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both to base ten: \\(11_{2}\\) = 3\\(_{10}\\) and \\(402_{5}\\) = 102\\(_{10}\\). Since 3 < 102, \\(402_{5}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(160_{7}\\) to base 8.",
+    "options": [
+      "\\(143_{8}\\)",
+      "\\(331_{8}\\)",
+      "\\(111_{8}\\)",
+      "\\(133_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First convert \\(160_{7}\\) to base ten: it equals 91\\(_{10}\\). Then convert 91\\(_{10}\\) to base 8 by repeated division by 8, giving \\(133_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(421_{6}\\) to base ten.",
+    "options": [
+      "111",
+      "157",
+      "211",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 6, starting from the rightmost digit at \\(6^{0}\\): \\(421_{6} = 4\\times 6^{2} + 2\\times 6^{1} + 1\\times 6^{0} = 144 + 12 + 1 = 157_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(433_{6}\\) - \\(243_{6}\\), giving your answer in base 6.",
+    "options": [
+      "\\(051_{6}\\)",
+      "\\(200_{6}\\)",
+      "\\(150_{6}\\)",
+      "\\(145_{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(433_{6}\\) = 165\\(_{10}\\) and \\(243_{6}\\) = 99\\(_{10}\\). Their difference is 165 - 99 = 66\\(_{10}\\), which converts back to \\(150_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(132_{5}\\) to base 6.",
+    "options": [
+      "\\(110_{6}\\)",
+      "\\(011_{6}\\)",
+      "\\(60_{6}\\)",
+      "\\(120_{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "First convert \\(132_{5}\\) to base ten: it equals 42\\(_{10}\\). Then convert 42\\(_{10}\\) to base 6 by repeated division by 6, giving \\(110_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(282_{9}\\) + \\(341_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(633_{9}\\)",
+      "\\(623_{9}\\)",
+      "\\(336_{9}\\)",
+      "\\(634_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(282_{9}\\) = 236\\(_{10}\\) and \\(341_{9}\\) = 280\\(_{10}\\). Their sum is 236 + 280 = 516\\(_{10}\\), which converts back to \\(633_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12_{3}\\) \\(\\times\\) \\(1_{3}\\), giving your answer in base 3.",
+    "options": [
+      "\\(20_{3}\\)",
+      "\\(12_{3}\\)",
+      "\\(22_{3}\\)",
+      "\\(21_{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(12_{3}\\) = 5\\(_{10}\\) and \\(1_{3}\\) = 1\\(_{10}\\). Their product is 5 \\(\\times\\) 1 = 5\\(_{10}\\), which converts back to \\(12_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(616_{7}\\) - \\(130_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(455_{7}\\)",
+      "\\(654_{7}\\)",
+      "\\(466_{7}\\)",
+      "\\(456_{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(616_{7}\\) = 307\\(_{10}\\) and \\(130_{7}\\) = 70\\(_{10}\\). Their difference is 307 - 70 = 237\\(_{10}\\), which converts back to \\(456_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(131_{4}\\) + \\(23_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "52",
+      "42",
+      "43",
+      "144"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(131_{4}\\) = 29\\(_{10}\\) and \\(23_{5}\\) = 13\\(_{10}\\). Adding gives \\(29 + 13 = 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 153\\(_{10}\\) to base 4.",
+    "options": [
+      "\\(1212_{4}\\)",
+      "\\(121_{4}\\)",
+      "\\(2121_{4}\\)",
+      "\\(1103_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 4 and read the remainders from bottom to top: 153 \\div 4 = 38\\text{ remainder }1, \\; 38 \\div 4 = 9\\text{ remainder }2, \\; 9 \\div 4 = 2\\text{ remainder }1, \\; 2 \\div 4 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2121_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(54_{y} = 39_{10}\\).",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "In base \\(y\\), \\(54_{y}\\) means \\(5\\times y + 4 = 39\\). Solving: \\(5y = 35\\), so \\(y = 35 \\div 5 = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 42\\(_{10}\\) to base 3.",
+    "options": [
+      "\\(222_{3}\\)",
+      "\\(0211_{3}\\)",
+      "\\(1120_{3}\\)",
+      "\\(120_{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide repeatedly by 3 and read the remainders from bottom to top: 42 \\div 3 = 14\\text{ remainder }0, \\; 14 \\div 3 = 4\\text{ remainder }2, \\; 4 \\div 3 = 1\\text{ remainder }1, \\; 1 \\div 3 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1120_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(78_{y} = 71_{10}\\).",
+    "options": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(78_{y}\\) means \\(7\\times y + 8 = 71\\). Solving: \\(7y = 63\\), so \\(y = 63 \\div 7 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(23_{8}\\) \\(\\times\\) \\(6_{8}\\), giving your answer in base 8.",
+    "options": [
+      "\\(172_{8}\\)",
+      "\\(261_{8}\\)",
+      "\\(31_{8}\\)",
+      "\\(162_{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(23_{8}\\) = 19\\(_{10}\\) and \\(6_{8}\\) = 6\\(_{10}\\). Their product is 19 \\(\\times\\) 6 = 114\\(_{10}\\), which converts back to \\(162_{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(32_{y} = 23_{10}\\).",
+    "options": [
+      "8",
+      "10",
+      "7",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(32_{y}\\) means \\(3\\times y + 2 = 23\\). Solving: \\(3y = 21\\), so \\(y = 21 \\div 3 = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 2373\\(_{10}\\) to base 9.",
+    "options": [
+      "\\(226_{9}\\)",
+      "\\(6223_{9}\\)",
+      "\\(4505_{9}\\)",
+      "\\(3226_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 9 and read the remainders from bottom to top: 2373 \\div 9 = 263\\text{ remainder }6, \\; 263 \\div 9 = 29\\text{ remainder }2, \\; 29 \\div 9 = 3\\text{ remainder }2, \\; 3 \\div 9 = 0\\text{ remainder }3. Reading the remainders upward gives \\(3226_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(313_{5}\\) or \\(32_{6}\\)?",
+    "options": [
+      "\\(32_{6}\\)",
+      "\\(313_{5}\\)",
+      "They are equal",
+      "Cannot be determined"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(313_{5}\\) = 83\\(_{10}\\) and \\(32_{6}\\) = 20\\(_{10}\\). Since 83 > 20, \\(313_{5}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13_{4}\\) \\(\\times\\) \\(1_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(20_{4}\\)",
+      "\\(23_{4}\\)",
+      "\\(31_{4}\\)",
+      "\\(13_{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(13_{4}\\) = 7\\(_{10}\\) and \\(1_{4}\\) = 1\\(_{10}\\). Their product is 7 \\(\\times\\) 1 = 7\\(_{10}\\), which converts back to \\(13_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(111_{6}\\) or \\(35_{8}\\)?",
+    "options": [
+      "\\(111_{6}\\)",
+      "They are equal",
+      "Cannot be determined",
+      "\\(35_{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(111_{6}\\) = 43\\(_{10}\\) and \\(35_{8}\\) = 29\\(_{10}\\). Since 43 > 29, \\(111_{6}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11_{7}\\) + \\(35_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(64_{7}\\)",
+      "\\(50_{7}\\)",
+      "\\(46_{7}\\)",
+      "\\(36_{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(11_{7}\\) = 8\\(_{10}\\) and \\(35_{7}\\) = 26\\(_{10}\\). Their sum is 8 + 26 = 34\\(_{10}\\), which converts back to \\(46_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(11_{2}\\) or \\(464_{7}\\)?",
+    "options": [
+      "\\(464_{7}\\)",
+      "They are equal",
+      "\\(11_{2}\\)",
+      "Cannot be determined"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(11_{2}\\) = 3\\(_{10}\\) and \\(464_{7}\\) = 242\\(_{10}\\). Since 3 < 242, \\(464_{7}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(2124_{5}\\) to base ten.",
+    "options": [
+      "156",
+      "289",
+      "557",
+      "484"
+    ],
+    "correctIndex": 1,
+    "explanation": "Write each digit as a multiple of a power of 5, starting from the rightmost digit at \\(5^{0}\\): \\(2124_{5} = 2\\times 5^{3} + 1\\times 5^{2} + 2\\times 5^{1} + 4\\times 5^{0} = 250 + 25 + 10 + 4 = 289_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(60_{y} = 42_{10}\\).",
+    "options": [
+      "10",
+      "8",
+      "7",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "In base \\(y\\), \\(60_{y}\\) means \\(6\\times y + 0 = 42\\). Solving: \\(6y = 42\\), so \\(y = 42 \\div 6 = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(313_{4}\\) to base ten.",
+    "options": [
+      "55",
+      "313",
+      "33",
+      "83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(313_{4} = 3\\times 4^{2} + 1\\times 4^{1} + 3\\times 4^{0} = 48 + 4 + 3 = 55_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(55_{9}\\) \\(\\times\\) \\(3_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(58_{9}\\)",
+      "\\(671_{9}\\)",
+      "\\(186_{9}\\)",
+      "\\(176_{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(55_{9}\\) = 50\\(_{10}\\) and \\(3_{9}\\) = 3\\(_{10}\\). Their product is 50 \\(\\times\\) 3 = 150\\(_{10}\\), which converts back to \\(176_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(35_{6}\\) or \\(667_{9}\\)?",
+    "options": [
+      "\\(35_{6}\\)",
+      "\\(667_{9}\\)",
+      "They are equal",
+      "Cannot be determined"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(35_{6}\\) = 23\\(_{10}\\) and \\(667_{9}\\) = 547\\(_{10}\\). Since 23 < 547, \\(667_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(60_{7}\\) \\(\\times\\) \\(5_{7}\\), giving your answer in base 7.",
+    "options": [
+      "\\(024_{7}\\)",
+      "\\(65_{7}\\)",
+      "\\(430_{7}\\)",
+      "\\(420_{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(60_{7}\\) = 42\\(_{10}\\) and \\(5_{7}\\) = 5\\(_{10}\\). Their product is 42 \\(\\times\\) 5 = 210\\(_{10}\\), which converts back to \\(420_{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(65_{y} = 53_{10}\\).",
+    "options": [
+      "11",
+      "7",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "In base \\(y\\), \\(65_{y}\\) means \\(6\\times y + 5 = 53\\). Solving: \\(6y = 48\\), so \\(y = 48 \\div 6 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(300_{4}\\) to base ten.",
+    "options": [
+      "75",
+      "27",
+      "48",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Write each digit as a multiple of a power of 4, starting from the rightmost digit at \\(4^{0}\\): \\(300_{4} = 3\\times 4^{2} + 0\\times 4^{1} + 0\\times 4^{0} = 48 + 0 + 0 = 48_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(42_{y} = 34_{10}\\).",
+    "options": [
+      "11",
+      "9",
+      "7",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "In base \\(y\\), \\(42_{y}\\) means \\(4\\times y + 2 = 34\\). Solving: \\(4y = 32\\), so \\(y = 32 \\div 4 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(10_{6}\\) to base 3.",
+    "options": [
+      "\\(02_{3}\\)",
+      "\\(100_{3}\\)",
+      "\\(12_{3}\\)",
+      "\\(20_{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "First convert \\(10_{6}\\) to base ten: it equals 6\\(_{10}\\). Then convert 6\\(_{10}\\) to base 3 by repeated division by 3, giving \\(20_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(31_{9}\\) \\(\\times\\) \\(3_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(34_{9}\\)",
+      "\\(301_{9}\\)",
+      "\\(103_{9}\\)",
+      "\\(113_{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(31_{9}\\) = 28\\(_{10}\\) and \\(3_{9}\\) = 3\\(_{10}\\). Their product is 28 \\(\\times\\) 3 = 84\\(_{10}\\), which converts back to \\(103_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(10_{y} = 6_{10}\\).",
+    "options": [
+      "9",
+      "6",
+      "5",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(10_{y}\\) means \\(1\\times y + 0 = 6\\). Solving: \\(1y = 6\\), so \\(y = 6 \\div 1 = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(864_{9}\\) + \\(231_{4}\\), leaving your answer in base ten.",
+    "options": [
+      "751",
+      "937",
+      "752",
+      "909"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert each numeral to base ten first: \\(864_{9}\\) = 706\\(_{10}\\) and \\(231_{4}\\) = 45\\(_{10}\\). Adding gives \\(706 + 45 = 751\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(15_{7}\\) + \\(33_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "45",
+      "33",
+      "30",
+      "31"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert each numeral to base ten first: \\(15_{7}\\) = 12\\(_{10}\\) and \\(33_{5}\\) = 18\\(_{10}\\). Adding gives \\(12 + 18 = 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 188\\(_{10}\\) to base 4.",
+    "options": [
+      "\\(0332_{4}\\)",
+      "\\(330_{4}\\)",
+      "\\(1223_{4}\\)",
+      "\\(2330_{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide repeatedly by 4 and read the remainders from bottom to top: 188 \\div 4 = 47\\text{ remainder }0, \\; 47 \\div 4 = 11\\text{ remainder }3, \\; 11 \\div 4 = 2\\text{ remainder }3, \\; 2 \\div 4 = 0\\text{ remainder }2. Reading the remainders upward gives \\(2330_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(750_{9}\\) + \\(737_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(1588_{9}\\)",
+      "\\(1587_{9}\\)",
+      "\\(7851_{9}\\)",
+      "\\(1577_{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both numerals to base ten: \\(750_{9}\\) = 612\\(_{10}\\) and \\(737_{9}\\) = 601\\(_{10}\\). Their sum is 612 + 601 = 1213\\(_{10}\\), which converts back to \\(1587_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11_{3}\\) + \\(33_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "29",
+      "22",
+      "23",
+      "37"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert each numeral to base ten first: \\(11_{3}\\) = 4\\(_{10}\\) and \\(33_{5}\\) = 18\\(_{10}\\). Adding gives \\(4 + 18 = 22\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 943\\(_{10}\\) to base 6.",
+    "options": [
+      "\\(1124_{6}\\)",
+      "\\(4211_{6}\\)",
+      "\\(2515_{6}\\)",
+      "\\(211_{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide repeatedly by 6 and read the remainders from bottom to top: 943 \\div 6 = 157\\text{ remainder }1, \\; 157 \\div 6 = 26\\text{ remainder }1, \\; 26 \\div 6 = 4\\text{ remainder }2, \\; 4 \\div 6 = 0\\text{ remainder }4. Reading the remainders upward gives \\(4211_{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(321_{4}\\) + \\(101_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(2201_{4}\\)",
+      "\\(1012_{4}\\)",
+      "\\(1023_{4}\\)",
+      "\\(1022_{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(321_{4}\\) = 57\\(_{10}\\) and \\(101_{4}\\) = 17\\(_{10}\\). Their sum is 57 + 17 = 74\\(_{10}\\), which converts back to \\(1022_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12_{4}\\) \\(\\times\\) \\(3_{4}\\), giving your answer in base 4.",
+    "options": [
+      "\\(21_{4}\\)",
+      "\\(112_{4}\\)",
+      "\\(102_{4}\\)",
+      "\\(201_{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Convert both numerals to base ten: \\(12_{4}\\) = 6\\(_{10}\\) and \\(3_{4}\\) = 3\\(_{10}\\). Their product is 6 \\(\\times\\) 3 = 18\\(_{10}\\), which converts back to \\(102_{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(234_{5}\\) or \\(212_{3}\\)?",
+    "options": [
+      "\\(234_{5}\\)",
+      "Cannot be determined",
+      "\\(212_{3}\\)",
+      "They are equal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(234_{5}\\) = 69\\(_{10}\\) and \\(212_{3}\\) = 23\\(_{10}\\). Since 69 > 23, \\(234_{5}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(33_{7}\\) or \\(11_{6}\\)?",
+    "options": [
+      "They are equal",
+      "\\(33_{7}\\)",
+      "Cannot be determined",
+      "\\(11_{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Convert both to base ten: \\(33_{7}\\) = 24\\(_{10}\\) and \\(11_{6}\\) = 7\\(_{10}\\). Since 24 > 7, \\(33_{7}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(755_{9}\\) - \\(522_{9}\\), giving your answer in base 9.",
+    "options": [
+      "\\(233_{9}\\)",
+      "\\(232_{9}\\)",
+      "\\(243_{9}\\)",
+      "\\(332_{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both numerals to base ten: \\(755_{9}\\) = 617\\(_{10}\\) and \\(522_{9}\\) = 425\\(_{10}\\). Their difference is 617 - 425 = 192\\(_{10}\\), which converts back to \\(233_{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(44_{5}\\) + \\(41_{5}\\), giving your answer in base 5.",
+    "options": [
+      "\\(141_{5}\\)",
+      "\\(041_{5}\\)",
+      "\\(130_{5}\\)",
+      "\\(140_{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert both numerals to base ten: \\(44_{5}\\) = 24\\(_{10}\\) and \\(41_{5}\\) = 21\\(_{10}\\). Their sum is 24 + 21 = 45\\(_{10}\\), which converts back to \\(140_{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following is greater: \\(323_{4}\\) or \\(86_{9}\\)?",
+    "options": [
+      "\\(86_{9}\\)",
+      "Cannot be determined",
+      "They are equal",
+      "\\(323_{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convert both to base ten: \\(323_{4}\\) = 59\\(_{10}\\) and \\(86_{9}\\) = 78\\(_{10}\\). Since 59 < 78, \\(86_{9}\\) is greater.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert \\(341_{8}\\) to base ten.",
+    "options": [
+      "225",
+      "176",
+      "99",
+      "280"
+    ],
+    "correctIndex": 0,
+    "explanation": "Write each digit as a multiple of a power of 8, starting from the rightmost digit at \\(8^{0}\\): \\(341_{8} = 3\\times 8^{2} + 4\\times 8^{1} + 1\\times 8^{0} = 192 + 32 + 1 = 225_{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(y\\) if \\(87_{y} = 79_{10}\\).",
+    "options": [
+      "11",
+      "9",
+      "10",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "In base \\(y\\), \\(87_{y}\\) means \\(8\\times y + 7 = 79\\). Solving: \\(8y = 72\\), so \\(y = 72 \\div 8 = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(10_{6}\\) + \\(41_{5}\\), leaving your answer in base ten.",
+    "options": [
+      "31",
+      "28",
+      "47",
+      "27"
+    ],
+    "correctIndex": 3,
+    "explanation": "Convert each numeral to base ten first: \\(10_{6}\\) = 6\\(_{10}\\) and \\(41_{5}\\) = 21\\(_{10}\\). Adding gives \\(6 + 21 = 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 30\\(_{10}\\) to base 3.",
+    "options": [
+      "\\(1010_{3}\\)",
+      "\\(132_{3}\\)",
+      "\\(0101_{3}\\)",
+      "\\(010_{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide repeatedly by 3 and read the remainders from bottom to top: 30 \\div 3 = 10\\text{ remainder }0, \\; 10 \\div 3 = 3\\text{ remainder }1, \\; 3 \\div 3 = 1\\text{ remainder }0, \\; 1 \\div 3 = 0\\text{ remainder }1. Reading the remainders upward gives \\(1010_{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "TqwPbL8vxS4vuwJPMUEL",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Calculate the area of a triangle with base 35cm and height 25cm.",
+    "options": [
+      "875cm²",
+      "30cm²",
+      "218.75cm²",
+      "437.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 35 \\times 25 = 437.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the surface area of a sphere of radius 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm²",
+      "308cm²",
+      "1437.33cm²",
+      "154cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Surface area of a sphere \\(= 4\\pi r^{2}\\)\n\n\\(= 4 \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 616\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 14cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "924cm²",
+      "616cm²",
+      "462cm²",
+      "66cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{270}{360} \\times \\frac{22}{7} \\times 196\\)\n\n\\(= 462\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2288cm²",
+      "7392cm²",
+      "1144cm²",
+      "1056cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 12)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 26 = 2288\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 17cm and perpendicular height 22cm.",
+    "options": [
+      "374cm²",
+      "39cm²",
+      "187cm²",
+      "78cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 17 \\times 22 = 374\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a circle of radius 14cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm²",
+      "88cm²",
+      "44cm²",
+      "308cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a circle \\(= \\pi r^{2}\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} = \\frac{22}{7} \\times 196\\)\n\n\\(= 616\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 23cm and width 3cm.",
+    "options": [
+      "69cm²",
+      "52cm²",
+      "26cm²",
+      "34.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 23 \\times 3 = 69\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 8cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1408cm²",
+      "19712cm²",
+      "6336cm²",
+      "704cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 8\\)\n\n\\(= 1408\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a circle of radius 42cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "132cm²",
+      "264cm²",
+      "5544cm²",
+      "2772cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a circle \\(= \\pi r^{2}\\)\n\n\\(= \\frac{22}{7} \\times 42^{2} = \\frac{22}{7} \\times 1764\\)\n\n\\(= 5544\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "5280cm²",
+      "26334cm²",
+      "1254cm²",
+      "2508cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 19\\)\n\n\\(= 2508\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the surface area of a sphere of radius 28cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2464cm²",
+      "4928cm²",
+      "91989.33cm²",
+      "9856cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Surface area of a sphere \\(= 4\\pi r^{2}\\)\n\n\\(= 4 \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 9856\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 13cm and perpendicular height 19cm.",
+    "options": [
+      "247cm²",
+      "123.50cm²",
+      "32cm²",
+      "64cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 13 \\times 19 = 247\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 10cm and width 14cm.",
+    "options": [
+      "24cm²",
+      "140cm²",
+      "70cm²",
+      "48cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 10 \\times 14 = 140\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 8cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "352cm²",
+      "330cm²",
+      "660cm²",
+      "1232cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 8)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 15 = 660\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 7cm and height 14cm.",
+    "options": [
+      "98cm²",
+      "24.50cm²",
+      "10.50cm²",
+      "49cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 7 \\times 14 = 49\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 22cm and width 3cm.",
+    "options": [
+      "33cm²",
+      "66cm²",
+      "25cm²",
+      "50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 22 \\times 3 = 66\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 6cm and 5cm, and whose height is 4cm.",
+    "options": [
+      "60cm²",
+      "44cm²",
+      "22cm²",
+      "30cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(6 + 5) \\times 4\\)\n\n\\(= \\frac{1}{2} \\times 11 \\times 4 = 22\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "693cm²",
+      "346.50cm²",
+      "66cm²",
+      "1386cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{180}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 693\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 5cm and perpendicular height 22cm.",
+    "options": [
+      "110cm²",
+      "27cm²",
+      "54cm²",
+      "55cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 5 \\times 22 = 110\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 12cm and perpendicular height 21cm.",
+    "options": [
+      "252cm²",
+      "66cm²",
+      "33cm²",
+      "126cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 12 \\times 21 = 252\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "16632cm²",
+      "4356cm²",
+      "1584cm²",
+      "2178cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 12)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 33 = 4356\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 29cm and width 14cm.",
+    "options": [
+      "43cm²",
+      "86cm²",
+      "406cm²",
+      "203cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 29 \\times 14 = 406\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1386cm²",
+      "346.50cm²",
+      "173.25cm²",
+      "16.50cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{45}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 173.25\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the surface area of a sphere of radius 14cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm²",
+      "1232cm²",
+      "2464cm²",
+      "11498.67cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Surface area of a sphere \\(= 4\\pi r^{2}\\)\n\n\\(= 4 \\times \\frac{22}{7} \\times 196\\)\n\n\\(= 2464\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 28cm and height 4cm.",
+    "options": [
+      "112cm²",
+      "28cm²",
+      "56cm²",
+      "16cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 28 \\times 4 = 56\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2112cm²",
+      "1452cm²",
+      "4224cm²",
+      "15246cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 11)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 32 = 4224\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "77cm²",
+      "22cm²",
+      "154cm²",
+      "38.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{180}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 77\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1122cm²",
+      "2244cm²",
+      "5016cm²",
+      "23562cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 17\\)\n\n\\(= 2244\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 22cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3388cm²",
+      "1276cm²",
+      "968cm²",
+      "484cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 22\\)\n\n\\(= 968\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1232cm²",
+      "2464cm²",
+      "44cm²",
+      "616cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{90}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 616\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 22cm and width 20cm.",
+    "options": [
+      "440cm²",
+      "42cm²",
+      "84cm²",
+      "220cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 22 \\times 20 = 440\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 14cm and 13cm, and whose height is 3cm.",
+    "options": [
+      "182cm²",
+      "273cm²",
+      "81cm²",
+      "40.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(14 + 13) \\times 3\\)\n\n\\(= \\frac{1}{2} \\times 27 \\times 3 = 40.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "528cm²",
+      "264cm²",
+      "836cm²",
+      "1848cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 12\\)\n\n\\(= 528\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 30cm and width 14cm.",
+    "options": [
+      "420cm²",
+      "88cm²",
+      "44cm²",
+      "210cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 30 \\times 14 = 420\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7.33cm²",
+      "154cm²",
+      "51.33cm²",
+      "25.67cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{60}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 25.67\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "577.50cm²",
+      "55cm²",
+      "1386cm²",
+      "1155cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{150}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 577.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 31cm and width 6cm.",
+    "options": [
+      "186cm²",
+      "37cm²",
+      "93cm²",
+      "74cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 31 \\times 6 = 186\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 18cm and width 5cm.",
+    "options": [
+      "45cm²",
+      "90cm²",
+      "46cm²",
+      "23cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 18 \\times 5 = 90\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the surface area of a sphere of radius 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "38808cm²",
+      "5544cm²",
+      "2772cm²",
+      "1386cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Surface area of a sphere \\(= 4\\pi r^{2}\\)\n\n\\(= 4 \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 5544\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 37cm and height 16cm.",
+    "options": [
+      "592cm²",
+      "296cm²",
+      "148cm²",
+      "26.50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 37 \\times 16 = 296\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 12cm and width 25cm.",
+    "options": [
+      "37cm²",
+      "300cm²",
+      "74cm²",
+      "150cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 12 \\times 25 = 300\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "102.67cm²",
+      "14.67cm²",
+      "154cm²",
+      "51.33cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{120}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 51.33\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 6cm and 15cm, and whose height is 3cm.",
+    "options": [
+      "135cm²",
+      "90cm²",
+      "31.50cm²",
+      "63cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(6 + 15) \\times 3\\)\n\n\\(= \\frac{1}{2} \\times 21 \\times 3 = 31.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 19cm and 22cm, and whose height is 17cm.",
+    "options": [
+      "697cm²",
+      "418cm²",
+      "3553cm²",
+      "348.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(19 + 22) \\times 17\\)\n\n\\(= \\frac{1}{2} \\times 41 \\times 17 = 348.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 4cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "5544cm²",
+      "3300cm²",
+      "1650cm²",
+      "528cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 4)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 25 = 3300\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 27cm and perpendicular height 20cm.",
+    "options": [
+      "47cm²",
+      "270cm²",
+      "540cm²",
+      "94cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 27 \\times 20 = 540\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 25cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1100cm²",
+      "1408cm²",
+      "3850cm²",
+      "550cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 25\\)\n\n\\(= 1100\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 16cm and 19cm, and whose height is 15cm.",
+    "options": [
+      "525cm²",
+      "2280cm²",
+      "304cm²",
+      "262.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(16 + 19) \\times 15\\)\n\n\\(= \\frac{1}{2} \\times 35 \\times 15 = 262.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 4cm and width 10cm.",
+    "options": [
+      "28cm²",
+      "40cm²",
+      "14cm²",
+      "20cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 4 \\times 10 = 40\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 16cm and width 20cm.",
+    "options": [
+      "72cm²",
+      "320cm²",
+      "36cm²",
+      "160cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 16 \\times 20 = 320\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm²",
+      "616cm²",
+      "308cm²",
+      "2464cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{45}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 308\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 11cm and 15cm, and whose height is 17cm.",
+    "options": [
+      "442cm²",
+      "165cm²",
+      "221cm²",
+      "1402.50cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(11 + 15) \\times 17\\)\n\n\\(= \\frac{1}{2} \\times 26 \\times 17 = 221\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 22cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3168cm²",
+      "1584cm²",
+      "13552cm²",
+      "1936cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 22)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 36 = 3168\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 20cm and 15cm, and whose height is 12cm.",
+    "options": [
+      "300cm²",
+      "210cm²",
+      "1800cm²",
+      "420cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(20 + 15) \\times 12\\)\n\n\\(= \\frac{1}{2} \\times 35 \\times 12 = 210\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4312cm²",
+      "308cm²",
+      "616cm²",
+      "1848cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 7\\)\n\n\\(= 616\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 6cm and height 23cm.",
+    "options": [
+      "69cm²",
+      "34.50cm²",
+      "138cm²",
+      "14.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 6 \\times 23 = 69\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 24cm and height 30cm.",
+    "options": [
+      "27cm²",
+      "360cm²",
+      "720cm²",
+      "180cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 24 \\times 30 = 360\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 8cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3828cm²",
+      "1914cm²",
+      "11088cm²",
+      "1056cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 8)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 29 = 3828\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 21cm and height 24cm.",
+    "options": [
+      "126cm²",
+      "22.50cm²",
+      "252cm²",
+      "504cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 21 \\times 24 = 252\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 4cm and width 9cm.",
+    "options": [
+      "26cm²",
+      "36cm²",
+      "13cm²",
+      "18cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 4 \\times 9 = 36\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 19cm and perpendicular height 25cm.",
+    "options": [
+      "475cm²",
+      "237.50cm²",
+      "88cm²",
+      "44cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 19 \\times 25 = 475\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 11cm and 5cm, and whose height is 19cm.",
+    "options": [
+      "152cm²",
+      "304cm²",
+      "55cm²",
+      "522.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(11 + 5) \\times 19\\)\n\n\\(= \\frac{1}{2} \\times 16 \\times 19 = 152\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 29cm and width 21cm.",
+    "options": [
+      "609cm²",
+      "50cm²",
+      "100cm²",
+      "304.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 29 \\times 21 = 609\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a circle of radius 28cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1232cm²",
+      "176cm²",
+      "2464cm²",
+      "88cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a circle \\(= \\pi r^{2}\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} = \\frac{22}{7} \\times 784\\)\n\n\\(= 2464\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a circle of radius 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "154cm²",
+      "22cm²",
+      "77cm²",
+      "44cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a circle \\(= \\pi r^{2}\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} = \\frac{22}{7} \\times 49\\)\n\n\\(= 154\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "77cm²",
+      "154cm²",
+      "38.50cm²",
+      "11cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{90}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 38.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 9cm and 18cm, and whose height is 12cm.",
+    "options": [
+      "81cm²",
+      "324cm²",
+      "162cm²",
+      "972cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(9 + 18) \\times 12\\)\n\n\\(= \\frac{1}{2} \\times 27 \\times 12 = 162\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 8cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm²",
+      "660cm²",
+      "352cm²",
+      "1232cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 8\\)\n\n\\(= 352\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 12cm and height 26cm.",
+    "options": [
+      "312cm²",
+      "156cm²",
+      "78cm²",
+      "19cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 12 \\times 26 = 156\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 23cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3036cm²",
+      "1518cm²",
+      "5808cm²",
+      "31878cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 23\\)\n\n\\(= 3036\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 8cm and 16cm, and whose height is 20cm.",
+    "options": [
+      "480cm²",
+      "240cm²",
+      "128cm²",
+      "1280cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(8 + 16) \\times 20\\)\n\n\\(= \\frac{1}{2} \\times 24 \\times 20 = 240\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a circle of radius 35cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "110cm²",
+      "220cm²",
+      "3850cm²",
+      "1925cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a circle \\(= \\pi r^{2}\\)\n\n\\(= \\frac{22}{7} \\times 35^{2} = \\frac{22}{7} \\times 1225\\)\n\n\\(= 3850\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "528cm²",
+      "1848cm²",
+      "836cm²",
+      "418cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 12)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 19 = 836\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "440cm²",
+      "3080cm²",
+      "836cm²",
+      "1672cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 5)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 19 = 1672\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 11cm and 25cm, and whose height is 18cm.",
+    "options": [
+      "275cm²",
+      "2475cm²",
+      "648cm²",
+      "324cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(11 + 25) \\times 18\\)\n\n\\(= \\frac{1}{2} \\times 36 \\times 18 = 324\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 15cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1980cm²",
+      "20790cm²",
+      "2376cm²",
+      "4752cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 15)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 36 = 4752\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 34cm and width 17cm.",
+    "options": [
+      "102cm²",
+      "51cm²",
+      "578cm²",
+      "289cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 34 \\times 17 = 578\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "11704cm²",
+      "1452cm²",
+      "1672cm²",
+      "2904cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 19)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 33 = 2904\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 22cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "54208cm²",
+      "1936cm²",
+      "8800cm²",
+      "3872cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 22\\)\n\n\\(= 3872\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 13cm and perpendicular height 11cm.",
+    "options": [
+      "24cm²",
+      "143cm²",
+      "71.50cm²",
+      "48cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 13 \\times 11 = 143\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 23cm and height 21cm.",
+    "options": [
+      "483cm²",
+      "120.75cm²",
+      "22cm²",
+      "241.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 23 \\times 21 = 241.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 25cm and 22cm, and whose height is 4cm.",
+    "options": [
+      "188cm²",
+      "550cm²",
+      "1100cm²",
+      "94cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(25 + 22) \\times 4\\)\n\n\\(= \\frac{1}{2} \\times 47 \\times 4 = 94\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 22cm and perpendicular height 7cm.",
+    "options": [
+      "154cm²",
+      "29cm²",
+      "58cm²",
+      "77cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 22 \\times 7 = 154\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 19cm and 9cm, and whose height is 16cm.",
+    "options": [
+      "1368cm²",
+      "224cm²",
+      "448cm²",
+      "171cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(19 + 9) \\times 16\\)\n\n\\(= \\frac{1}{2} \\times 28 \\times 16 = 224\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "12474cm²",
+      "594cm²",
+      "1188cm²",
+      "3960cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 9\\)\n\n\\(= 1188\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "572cm²",
+      "2926cm²",
+      "836cm²",
+      "1144cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 19)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 26 = 1144\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 15cm and perpendicular height 5cm.",
+    "options": [
+      "20cm²",
+      "37.50cm²",
+      "40cm²",
+      "75cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 15 \\times 5 = 75\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "23562cm²",
+      "5016cm²",
+      "2508cm²",
+      "2244cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 17)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 38 = 5016\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 4cm and height 25cm.",
+    "options": [
+      "25cm²",
+      "100cm²",
+      "50cm²",
+      "14.50cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 4 \\times 25 = 50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 135° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "519.75cm²",
+      "1386cm²",
+      "1039.50cm²",
+      "49.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{135}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 519.75\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 36cm and height 15cm.",
+    "options": [
+      "540cm²",
+      "25.50cm²",
+      "270cm²",
+      "135cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 36 \\times 15 = 270\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 20cm and perpendicular height 17cm.",
+    "options": [
+      "74cm²",
+      "37cm²",
+      "170cm²",
+      "340cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 20 \\times 17 = 340\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "33cm²",
+      "115.50cm²",
+      "231cm²",
+      "154cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{270}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 115.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3344cm²",
+      "14784cm²",
+      "1056cm²",
+      "2112cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 24\\)\n\n\\(= 2112\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 25cm and perpendicular height 3cm.",
+    "options": [
+      "28cm²",
+      "75cm²",
+      "56cm²",
+      "37.50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 25 \\times 3 = 75\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 34cm and width 29cm.",
+    "options": [
+      "493cm²",
+      "126cm²",
+      "986cm²",
+      "63cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 34 \\times 29 = 986\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "11088cm²",
+      "1584cm²",
+      "1408cm²",
+      "2816cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 18)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 32 = 2816\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 14cm and 8cm, and whose height is 12cm.",
+    "options": [
+      "132cm²",
+      "264cm²",
+      "672cm²",
+      "112cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(14 + 8) \\times 12\\)\n\n\\(= \\frac{1}{2} \\times 22 \\times 12 = 132\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 20cm and perpendicular height 12cm.",
+    "options": [
+      "32cm²",
+      "240cm²",
+      "64cm²",
+      "120cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 20 \\times 12 = 240\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 11cm and height 6cm.",
+    "options": [
+      "66cm²",
+      "16.50cm²",
+      "8.50cm²",
+      "33cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 11 \\times 6 = 33\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 11cm and width 9cm.",
+    "options": [
+      "20cm²",
+      "99cm²",
+      "49.50cm²",
+      "40cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 11 \\times 9 = 99\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "550cm²",
+      "792cm²",
+      "1100cm²",
+      "2772cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 18)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 25 = 1100\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a circle of radius 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "66cm²",
+      "1386cm²",
+      "132cm²",
+      "693cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a circle \\(= \\pi r^{2}\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} = \\frac{22}{7} \\times 441\\)\n\n\\(= 1386\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 4cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1584cm²",
+      "352cm²",
+      "2464cm²",
+      "176cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 4\\)\n\n\\(= 352\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 20cm and width 19cm.",
+    "options": [
+      "78cm²",
+      "190cm²",
+      "380cm²",
+      "39cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 20 \\times 19 = 380\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 15cm and perpendicular height 7cm.",
+    "options": [
+      "52.50cm²",
+      "22cm²",
+      "105cm²",
+      "44cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 15 \\times 7 = 105\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 26cm and height 20cm.",
+    "options": [
+      "260cm²",
+      "130cm²",
+      "520cm²",
+      "23cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 26 \\times 20 = 260\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 4cm and 10cm, and whose height is 19cm.",
+    "options": [
+      "380cm²",
+      "133cm²",
+      "40cm²",
+      "266cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(4 + 10) \\times 19\\)\n\n\\(= \\frac{1}{2} \\times 14 \\times 19 = 133\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 9cm and height 28cm.",
+    "options": [
+      "18.50cm²",
+      "63cm²",
+      "252cm²",
+      "126cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 9 \\times 28 = 126\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 13cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4488cm²",
+      "1716cm²",
+      "18018cm²",
+      "2244cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 13)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 34 = 4488\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 15cm and perpendicular height 19cm.",
+    "options": [
+      "142.50cm²",
+      "34cm²",
+      "285cm²",
+      "68cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 15 \\times 19 = 285\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 18cm and 23cm, and whose height is 18cm.",
+    "options": [
+      "738cm²",
+      "3726cm²",
+      "414cm²",
+      "369cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(18 + 23) \\times 18\\)\n\n\\(= \\frac{1}{2} \\times 41 \\times 18 = 369\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 10cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "880cm²",
+      "2112cm²",
+      "440cm²",
+      "6160cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 10\\)\n\n\\(= 880\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2464cm²",
+      "410.67cm²",
+      "205.33cm²",
+      "14.67cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{30}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 205.33\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 19cm and width 13cm.",
+    "options": [
+      "64cm²",
+      "247cm²",
+      "32cm²",
+      "123.50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 19 \\times 13 = 247\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 8cm and perpendicular height 4cm.",
+    "options": [
+      "16cm²",
+      "32cm²",
+      "12cm²",
+      "24cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 8 \\times 4 = 32\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3432cm²",
+      "660cm²",
+      "6930cm²",
+      "1716cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 5)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 26 = 3432\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 13cm and 15cm, and whose height is 18cm.",
+    "options": [
+      "252cm²",
+      "1755cm²",
+      "195cm²",
+      "504cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(13 + 15) \\times 18\\)\n\n\\(= \\frac{1}{2} \\times 28 \\times 18 = 252\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "264cm²",
+      "1760cm²",
+      "528cm²",
+      "3696cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 6\\)\n\n\\(= 528\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 14cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "308cm²",
+      "44cm²",
+      "154cm²",
+      "616cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{180}{360} \\times \\frac{22}{7} \\times 196\\)\n\n\\(= 308\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 13cm and height 11cm.",
+    "options": [
+      "12cm²",
+      "143cm²",
+      "71.50cm²",
+      "35.75cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 13 \\times 11 = 71.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 16cm and perpendicular height 25cm.",
+    "options": [
+      "400cm²",
+      "200cm²",
+      "82cm²",
+      "41cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 16 \\times 25 = 400\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 6cm and height 20cm.",
+    "options": [
+      "120cm²",
+      "13cm²",
+      "30cm²",
+      "60cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 6 \\times 20 = 60\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 22cm and 16cm, and whose height is 12cm.",
+    "options": [
+      "228cm²",
+      "456cm²",
+      "352cm²",
+      "2112cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(22 + 16) \\times 12\\)\n\n\\(= \\frac{1}{2} \\times 38 \\times 12 = 228\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 180° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm²",
+      "88cm²",
+      "1232cm²",
+      "2464cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{180}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 1232\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 38cm and height 11cm.",
+    "options": [
+      "418cm²",
+      "209cm²",
+      "24.50cm²",
+      "104.50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 38 \\times 11 = 209\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 35cm and width 20cm.",
+    "options": [
+      "700cm²",
+      "110cm²",
+      "350cm²",
+      "55cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 35 \\times 20 = 700\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 4cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "242cm²",
+      "176cm²",
+      "484cm²",
+      "616cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 4)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 11 = 484\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 15cm and 16cm, and whose height is 6cm.",
+    "options": [
+      "240cm²",
+      "186cm²",
+      "720cm²",
+      "93cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(15 + 16) \\times 6\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 6 = 93\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 23cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "56672cm²",
+      "8976cm²",
+      "2024cm²",
+      "4048cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 23\\)\n\n\\(= 4048\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 6cm and width 19cm.",
+    "options": [
+      "25cm²",
+      "57cm²",
+      "114cm²",
+      "50cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 6 \\times 19 = 114\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 16cm and 8cm, and whose height is 8cm.",
+    "options": [
+      "96cm²",
+      "128cm²",
+      "512cm²",
+      "192cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(16 + 8) \\times 8\\)\n\n\\(= \\frac{1}{2} \\times 24 \\times 8 = 96\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3696cm²",
+      "9702cm²",
+      "1848cm²",
+      "924cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 7)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 28 = 3696\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 16cm and 14cm, and whose height is 8cm.",
+    "options": [
+      "240cm²",
+      "224cm²",
+      "896cm²",
+      "120cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(16 + 14) \\times 8\\)\n\n\\(= \\frac{1}{2} \\times 30 \\times 8 = 120\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 29cm and width 19cm.",
+    "options": [
+      "275.50cm²",
+      "48cm²",
+      "96cm²",
+      "551cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 29 \\times 19 = 551\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 23cm and 14cm, and whose height is 8cm.",
+    "options": [
+      "296cm²",
+      "148cm²",
+      "1288cm²",
+      "322cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(23 + 14) \\times 8\\)\n\n\\(= \\frac{1}{2} \\times 37 \\times 8 = 148\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 8cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "352cm²",
+      "1936cm²",
+      "4928cm²",
+      "704cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 8\\)\n\n\\(= 704\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 6cm and height 11cm.",
+    "options": [
+      "66cm²",
+      "16.50cm²",
+      "8.50cm²",
+      "33cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 6 \\times 11 = 33\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 13cm and height 22cm.",
+    "options": [
+      "71.50cm²",
+      "286cm²",
+      "17.50cm²",
+      "143cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 13 \\times 22 = 143\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 20cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "594cm²",
+      "1188cm²",
+      "880cm²",
+      "3080cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 20)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 27 = 1188\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "821.33cm²",
+      "410.67cm²",
+      "29.33cm²",
+      "2464cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{60}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 410.67\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 10cm and perpendicular height 25cm.",
+    "options": [
+      "70cm²",
+      "250cm²",
+      "35cm²",
+      "125cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 10 \\times 25 = 250\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 16cm and perpendicular height 23cm.",
+    "options": [
+      "184cm²",
+      "78cm²",
+      "368cm²",
+      "39cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 16 \\times 23 = 368\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 20cm and perpendicular height 14cm.",
+    "options": [
+      "68cm²",
+      "140cm²",
+      "280cm²",
+      "34cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 20 \\times 14 = 280\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 31cm and height 11cm.",
+    "options": [
+      "85.25cm²",
+      "170.50cm²",
+      "21cm²",
+      "341cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 11 = 170.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 35cm and height 12cm.",
+    "options": [
+      "420cm²",
+      "105cm²",
+      "23.50cm²",
+      "210cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 35 \\times 12 = 210\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 7cm and 24cm, and whose height is 4cm.",
+    "options": [
+      "62cm²",
+      "168cm²",
+      "124cm²",
+      "336cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(7 + 24) \\times 4\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 4 = 62\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 7cm and width 22cm.",
+    "options": [
+      "77cm²",
+      "58cm²",
+      "29cm²",
+      "154cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 7 \\times 22 = 154\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 23cm and 6cm, and whose height is 11cm.",
+    "options": [
+      "759cm²",
+      "319cm²",
+      "138cm²",
+      "159.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(23 + 6) \\times 11\\)\n\n\\(= \\frac{1}{2} \\times 29 \\times 11 = 159.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2464cm²",
+      "704cm²",
+      "1012cm²",
+      "352cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 16\\)\n\n\\(= 704\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 28cm and perpendicular height 25cm.",
+    "options": [
+      "700cm²",
+      "350cm²",
+      "106cm²",
+      "53cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 28 \\times 25 = 700\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 40cm and width 4cm.",
+    "options": [
+      "160cm²",
+      "88cm²",
+      "80cm²",
+      "44cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 40 \\times 4 = 160\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 9cm and 8cm, and whose height is 4cm.",
+    "options": [
+      "72cm²",
+      "144cm²",
+      "34cm²",
+      "68cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(9 + 8) \\times 4\\)\n\n\\(= \\frac{1}{2} \\times 17 \\times 4 = 34\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1694cm²",
+      "242cm²",
+      "792cm²",
+      "484cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 11\\)\n\n\\(= 484\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 8cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3828cm²",
+      "528cm²",
+      "1056cm²",
+      "11088cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 8\\)\n\n\\(= 1056\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 27cm and perpendicular height 10cm.",
+    "options": [
+      "74cm²",
+      "135cm²",
+      "37cm²",
+      "270cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 27 \\times 10 = 270\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1642.67cm²",
+      "821.33cm²",
+      "58.67cm²",
+      "2464cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{120}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 821.33\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "374cm²",
+      "748cm²",
+      "2618cm²",
+      "1056cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 17\\)\n\n\\(= 748\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 12cm and 19cm, and whose height is 15cm.",
+    "options": [
+      "1710cm²",
+      "465cm²",
+      "228cm²",
+      "232.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(12 + 19) \\times 15\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 15 = 232.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 6cm and perpendicular height 22cm.",
+    "options": [
+      "132cm²",
+      "66cm²",
+      "56cm²",
+      "28cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 6 \\times 22 = 132\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "836cm²",
+      "1672cm²",
+      "11704cm²",
+      "2904cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 19\\)\n\n\\(= 1672\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2200cm²",
+      "1100cm²",
+      "968cm²",
+      "6776cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 11)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 25 = 2200\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 40cm and width 28cm.",
+    "options": [
+      "68cm²",
+      "560cm²",
+      "136cm²",
+      "1120cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 40 \\times 28 = 1120\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 13cm and perpendicular height 18cm.",
+    "options": [
+      "62cm²",
+      "117cm²",
+      "234cm²",
+      "31cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 13 \\times 18 = 234\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 24cm and width 10cm.",
+    "options": [
+      "120cm²",
+      "34cm²",
+      "68cm²",
+      "240cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 24 \\times 10 = 240\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 5cm and perpendicular height 17cm.",
+    "options": [
+      "42.50cm²",
+      "22cm²",
+      "44cm²",
+      "85cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 5 \\times 17 = 85\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 18cm and width 11cm.",
+    "options": [
+      "58cm²",
+      "198cm²",
+      "99cm²",
+      "29cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 18 \\times 11 = 198\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 5cm and width 14cm.",
+    "options": [
+      "19cm²",
+      "38cm²",
+      "35cm²",
+      "70cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 5 \\times 14 = 70\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 22cm and perpendicular height 23cm.",
+    "options": [
+      "506cm²",
+      "253cm²",
+      "45cm²",
+      "90cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 22 \\times 23 = 506\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 31cm and height 23cm.",
+    "options": [
+      "713cm²",
+      "178.25cm²",
+      "27cm²",
+      "356.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 23 = 356.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 27cm and height 17cm.",
+    "options": [
+      "229.50cm²",
+      "114.75cm²",
+      "22cm²",
+      "459cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 27 \\times 17 = 229.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1364cm²",
+      "10472cm²",
+      "2728cm²",
+      "1496cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 17)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 31 = 2728\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "462cm²",
+      "3696cm²",
+      "9702cm²",
+      "924cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 7\\)\n\n\\(= 924\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 23cm and perpendicular height 17cm.",
+    "options": [
+      "391cm²",
+      "80cm²",
+      "40cm²",
+      "195.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 23 \\times 17 = 391\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 20cm and perpendicular height 6cm.",
+    "options": [
+      "26cm²",
+      "120cm²",
+      "60cm²",
+      "52cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 20 \\times 6 = 120\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 13cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "572cm²",
+      "2002cm²",
+      "286cm²",
+      "880cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 13\\)\n\n\\(= 572\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 9cm and 5cm, and whose height is 14cm.",
+    "options": [
+      "45cm²",
+      "196cm²",
+      "315cm²",
+      "98cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(9 + 5) \\times 14\\)\n\n\\(= \\frac{1}{2} \\times 14 \\times 14 = 98\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 135° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "924cm²",
+      "1848cm²",
+      "2464cm²",
+      "66cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{135}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 924\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 9cm and 11cm, and whose height is 17cm.",
+    "options": [
+      "841.50cm²",
+      "340cm²",
+      "170cm²",
+      "99cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(9 + 11) \\times 17\\)\n\n\\(= \\frac{1}{2} \\times 20 \\times 17 = 170\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "15246cm²",
+      "1452cm²",
+      "4224cm²",
+      "726cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 11\\)\n\n\\(= 1452\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 15cm and perpendicular height 13cm.",
+    "options": [
+      "56cm²",
+      "28cm²",
+      "97.50cm²",
+      "195cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 15 \\times 13 = 195\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 18cm and height 27cm.",
+    "options": [
+      "22.50cm²",
+      "243cm²",
+      "121.50cm²",
+      "486cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 18 \\times 27 = 243\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 25cm and height 11cm.",
+    "options": [
+      "137.50cm²",
+      "18cm²",
+      "68.75cm²",
+      "275cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 25 \\times 11 = 137.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 19cm and width 17cm.",
+    "options": [
+      "161.50cm²",
+      "323cm²",
+      "36cm²",
+      "72cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 19 \\times 17 = 323\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 17cm and height 13cm.",
+    "options": [
+      "55.25cm²",
+      "221cm²",
+      "110.50cm²",
+      "15cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 17 \\times 13 = 110.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 13cm and width 3cm.",
+    "options": [
+      "19.50cm²",
+      "32cm²",
+      "16cm²",
+      "39cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 13 \\times 3 = 39\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 14cm which subtends an angle of 45° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "11cm²",
+      "616cm²",
+      "77cm²",
+      "154cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{45}{360} \\times \\frac{22}{7} \\times 196\\)\n\n\\(= 77\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "770cm²",
+      "264cm²",
+      "528cm²",
+      "220cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 5)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 12 = 528\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 13cm and 21cm, and whose height is 14cm.",
+    "options": [
+      "273cm²",
+      "1911cm²",
+      "476cm²",
+      "238cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(13 + 21) \\times 14\\)\n\n\\(= \\frac{1}{2} \\times 34 \\times 14 = 238\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 8cm and perpendicular height 25cm.",
+    "options": [
+      "100cm²",
+      "33cm²",
+      "200cm²",
+      "66cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 8 \\times 25 = 200\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 25cm and height 27cm.",
+    "options": [
+      "168.75cm²",
+      "337.50cm²",
+      "675cm²",
+      "26cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 25 \\times 27 = 337.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 30cm and height 18cm.",
+    "options": [
+      "540cm²",
+      "135cm²",
+      "270cm²",
+      "24cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 30 \\times 18 = 270\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 20cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3520cm²",
+      "8448cm²",
+      "1760cm²",
+      "49280cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 20\\)\n\n\\(= 3520\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 9cm and width 26cm.",
+    "options": [
+      "35cm²",
+      "70cm²",
+      "234cm²",
+      "117cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 9 \\times 26 = 234\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 13cm and perpendicular height 12cm.",
+    "options": [
+      "78cm²",
+      "50cm²",
+      "25cm²",
+      "156cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 13 \\times 12 = 156\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 14cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "256.67cm²",
+      "616cm²",
+      "36.67cm²",
+      "513.33cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{150}{360} \\times \\frac{22}{7} \\times 196\\)\n\n\\(= 256.67\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 40cm and width 9cm.",
+    "options": [
+      "180cm²",
+      "49cm²",
+      "98cm²",
+      "360cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 40 \\times 9 = 360\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "29106cm²",
+      "5544cm²",
+      "1386cm²",
+      "2772cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 21\\)\n\n\\(= 2772\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "39424cm²",
+      "7744cm²",
+      "1408cm²",
+      "2816cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 16\\)\n\n\\(= 2816\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 4cm and 24cm, and whose height is 19cm.",
+    "options": [
+      "912cm²",
+      "266cm²",
+      "532cm²",
+      "96cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(4 + 24) \\times 19\\)\n\n\\(= \\frac{1}{2} \\times 28 \\times 19 = 266\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 14cm and width 16cm.",
+    "options": [
+      "224cm²",
+      "60cm²",
+      "112cm²",
+      "30cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 14 \\times 16 = 224\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 22cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "30492cm²",
+      "1452cm²",
+      "2904cm²",
+      "5676cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 22\\)\n\n\\(= 2904\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 16cm and height 28cm.",
+    "options": [
+      "224cm²",
+      "112cm²",
+      "22cm²",
+      "448cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 16 \\times 28 = 224\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 14cm and perpendicular height 7cm.",
+    "options": [
+      "21cm²",
+      "42cm²",
+      "49cm²",
+      "98cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 14 \\times 7 = 98\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 150° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "128.33cm²",
+      "18.33cm²",
+      "154cm²",
+      "64.17cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{150}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 64.17\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 10cm and 17cm, and whose height is 15cm.",
+    "options": [
+      "202.50cm²",
+      "1275cm²",
+      "170cm²",
+      "405cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(10 + 17) \\times 15\\)\n\n\\(= \\frac{1}{2} \\times 27 \\times 15 = 202.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3080cm²",
+      "220cm²",
+      "1672cm²",
+      "440cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 5\\)\n\n\\(= 440\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 24cm and height 7cm.",
+    "options": [
+      "15.50cm²",
+      "84cm²",
+      "42cm²",
+      "168cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 24 \\times 7 = 84\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 6cm and 17cm, and whose height is 6cm.",
+    "options": [
+      "138cm²",
+      "102cm²",
+      "69cm²",
+      "306cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(6 + 17) \\times 6\\)\n\n\\(= \\frac{1}{2} \\times 23 \\times 6 = 69\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 29cm and height 16cm.",
+    "options": [
+      "22.50cm²",
+      "464cm²",
+      "116cm²",
+      "232cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 29 \\times 16 = 232\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 18cm and perpendicular height 16cm.",
+    "options": [
+      "68cm²",
+      "34cm²",
+      "144cm²",
+      "288cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 18 \\times 16 = 288\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 7cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "12.83cm²",
+      "25.67cm²",
+      "3.67cm²",
+      "154cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{30}{360} \\times \\frac{22}{7} \\times 49\\)\n\n\\(= 12.83\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 13cm and perpendicular height 10cm.",
+    "options": [
+      "23cm²",
+      "130cm²",
+      "46cm²",
+      "65cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 13 \\times 10 = 130\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 5cm and width 4cm.",
+    "options": [
+      "18cm²",
+      "9cm²",
+      "20cm²",
+      "10cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 5 \\times 4 = 20\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 13cm and perpendicular height 9cm.",
+    "options": [
+      "58.50cm²",
+      "117cm²",
+      "44cm²",
+      "22cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 13 \\times 9 = 117\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 4cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm²",
+      "616cm²",
+      "176cm²",
+      "484cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 4\\)\n\n\\(= 176\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 4cm and height 6cm.",
+    "options": [
+      "6cm²",
+      "5cm²",
+      "24cm²",
+      "12cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 4 \\times 6 = 12\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 37cm and width 23cm.",
+    "options": [
+      "851cm²",
+      "120cm²",
+      "60cm²",
+      "425.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 37 \\times 23 = 851\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 17cm and width 11cm.",
+    "options": [
+      "28cm²",
+      "56cm²",
+      "93.50cm²",
+      "187cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 17 \\times 11 = 187\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 10cm and height 21cm.",
+    "options": [
+      "52.50cm²",
+      "210cm²",
+      "15.50cm²",
+      "105cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 10 \\times 21 = 105\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 17cm and height 15cm.",
+    "options": [
+      "127.50cm²",
+      "63.75cm²",
+      "16cm²",
+      "255cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 17 \\times 15 = 127.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 12cm and 25cm, and whose height is 4cm.",
+    "options": [
+      "300cm²",
+      "148cm²",
+      "74cm²",
+      "600cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(12 + 25) \\times 4\\)\n\n\\(= \\frac{1}{2} \\times 37 \\times 4 = 74\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 14cm and height 24cm.",
+    "options": [
+      "336cm²",
+      "84cm²",
+      "19cm²",
+      "168cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 14 \\times 24 = 168\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "704cm²",
+      "506cm²",
+      "2464cm²",
+      "1012cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 16)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 23 = 1012\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "396cm²",
+      "1694cm²",
+      "484cm²",
+      "792cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 11)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 18 = 792\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 31cm and height 12cm.",
+    "options": [
+      "372cm²",
+      "186cm²",
+      "93cm²",
+      "21.50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 12 = 186\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 16cm and width 22cm.",
+    "options": [
+      "176cm²",
+      "76cm²",
+      "38cm²",
+      "352cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 16 \\times 22 = 352\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1056cm²",
+      "528cm²",
+      "3696cm²",
+      "1364cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 24\\)\n\n\\(= 1056\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 7cm and 18cm, and whose height is 4cm.",
+    "options": [
+      "100cm²",
+      "252cm²",
+      "50cm²",
+      "126cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(7 + 18) \\times 4\\)\n\n\\(= \\frac{1}{2} \\times 25 \\times 4 = 50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 15cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1320cm²",
+      "7568cm²",
+      "2640cm²",
+      "36960cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 15\\)\n\n\\(= 2640\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 6cm and 16cm, and whose height is 7cm.",
+    "options": [
+      "336cm²",
+      "96cm²",
+      "77cm²",
+      "154cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(6 + 16) \\times 7\\)\n\n\\(= \\frac{1}{2} \\times 22 \\times 7 = 77\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "9856cm²",
+      "1408cm²",
+      "704cm²",
+      "2640cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 16\\)\n\n\\(= 1408\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 19cm and 20cm, and whose height is 19cm.",
+    "options": [
+      "370.50cm²",
+      "3610cm²",
+      "741cm²",
+      "380cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(19 + 20) \\times 19\\)\n\n\\(= \\frac{1}{2} \\times 39 \\times 19 = 370.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 36cm and height 11cm.",
+    "options": [
+      "198cm²",
+      "23.50cm²",
+      "396cm²",
+      "99cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 36 \\times 11 = 198\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1386cm²",
+      "2079cm²",
+      "99cm²",
+      "1039.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{270}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 1039.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 9cm and 13cm, and whose height is 17cm.",
+    "options": [
+      "117cm²",
+      "374cm²",
+      "187cm²",
+      "994.50cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(9 + 13) \\times 17\\)\n\n\\(= \\frac{1}{2} \\times 22 \\times 17 = 187\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 10cm and width 7cm.",
+    "options": [
+      "17cm²",
+      "34cm²",
+      "35cm²",
+      "70cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 10 \\times 7 = 70\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 7cm and 11cm, and whose height is 16cm.",
+    "options": [
+      "288cm²",
+      "144cm²",
+      "77cm²",
+      "616cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(7 + 11) \\times 16\\)\n\n\\(= \\frac{1}{2} \\times 18 \\times 16 = 144\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 28cm which subtends an angle of 270° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1848cm²",
+      "2464cm²",
+      "3696cm²",
+      "132cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{270}{360} \\times \\frac{22}{7} \\times 784\\)\n\n\\(= 1848\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 6cm and perpendicular height 17cm.",
+    "options": [
+      "51cm²",
+      "102cm²",
+      "23cm²",
+      "46cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 6 \\times 17 = 102\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 11cm and 20cm, and whose height is 12cm.",
+    "options": [
+      "1320cm²",
+      "220cm²",
+      "372cm²",
+      "186cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(11 + 20) \\times 12\\)\n\n\\(= \\frac{1}{2} \\times 31 \\times 12 = 186\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 10cm and width 5cm.",
+    "options": [
+      "30cm²",
+      "50cm²",
+      "25cm²",
+      "15cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 10 \\times 5 = 50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 40cm and height 25cm.",
+    "options": [
+      "32.50cm²",
+      "500cm²",
+      "1000cm²",
+      "250cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 40 \\times 25 = 500\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 39cm and width 5cm.",
+    "options": [
+      "195cm²",
+      "44cm²",
+      "88cm²",
+      "97.50cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 39 \\times 5 = 195\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3168cm²",
+      "8096cm²",
+      "1584cm²",
+      "44352cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 18\\)\n\n\\(= 3168\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 8cm and height 22cm.",
+    "options": [
+      "44cm²",
+      "88cm²",
+      "15cm²",
+      "176cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 8 \\times 22 = 88\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 15cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "660cm²",
+      "968cm²",
+      "2310cm²",
+      "484cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 15)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 22 = 968\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 5cm and height 17cm.",
+    "options": [
+      "85cm²",
+      "21.25cm²",
+      "11cm²",
+      "42.50cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 5 \\times 17 = 42.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 34cm and height 26cm.",
+    "options": [
+      "884cm²",
+      "30cm²",
+      "221cm²",
+      "442cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 34 \\times 26 = 442\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1980cm²",
+      "1188cm²",
+      "12474cm²",
+      "3960cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 9)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 30 = 3960\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 12cm and height 23cm.",
+    "options": [
+      "17.50cm²",
+      "276cm²",
+      "69cm²",
+      "138cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 12 \\times 23 = 138\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 22cm and width 28cm.",
+    "options": [
+      "50cm²",
+      "616cm²",
+      "308cm²",
+      "100cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 22 \\times 28 = 616\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 90° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "346.50cm²",
+      "33cm²",
+      "693cm²",
+      "1386cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{90}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 346.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 37cm and height 28cm.",
+    "options": [
+      "259cm²",
+      "1036cm²",
+      "518cm²",
+      "32.50cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 37 \\times 28 = 518\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 31cm and width 9cm.",
+    "options": [
+      "139.50cm²",
+      "80cm²",
+      "279cm²",
+      "40cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 31 \\times 9 = 279\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 21cm and 12cm, and whose height is 3cm.",
+    "options": [
+      "49.50cm²",
+      "378cm²",
+      "99cm²",
+      "252cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(21 + 12) \\times 3\\)\n\n\\(= \\frac{1}{2} \\times 33 \\times 3 = 49.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 8cm and height 19cm.",
+    "options": [
+      "152cm²",
+      "76cm²",
+      "38cm²",
+      "13.50cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 8 \\times 19 = 76\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "24948cm²",
+      "2574cm²",
+      "2376cm²",
+      "5148cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 18)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 39 = 5148\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4224cm²",
+      "9152cm²",
+      "2112cm²",
+      "59136cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 24\\)\n\n\\(= 4224\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 39cm and height 10cm.",
+    "options": [
+      "24.50cm²",
+      "195cm²",
+      "97.50cm²",
+      "390cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 39 \\times 10 = 195\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 29cm and height 11cm.",
+    "options": [
+      "159.50cm²",
+      "20cm²",
+      "319cm²",
+      "79.75cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 29 \\times 11 = 159.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 17cm and width 5cm.",
+    "options": [
+      "42.50cm²",
+      "22cm²",
+      "85cm²",
+      "44cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 17 \\times 5 = 85\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 25cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "61600cm²",
+      "2200cm²",
+      "9328cm²",
+      "4400cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 25\\)\n\n\\(= 4400\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 7cm and height 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm²",
+      "308cm²",
+      "154cm²",
+      "1078cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 7\\)\n\n\\(= 308\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 39cm and width 20cm.",
+    "options": [
+      "390cm²",
+      "59cm²",
+      "780cm²",
+      "118cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 39 \\times 20 = 780\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1056cm²",
+      "528cm²",
+      "14784cm²",
+      "5984cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 6\\)\n\n\\(= 1056\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 21cm and height 6cm.",
+    "options": [
+      "31.50cm²",
+      "13.50cm²",
+      "126cm²",
+      "63cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 21 \\times 6 = 63\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "24948cm²",
+      "5148cm²",
+      "1188cm²",
+      "2376cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 18\\)\n\n\\(= 2376\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 21cm and perpendicular height 16cm.",
+    "options": [
+      "336cm²",
+      "74cm²",
+      "37cm²",
+      "168cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 21 \\times 16 = 336\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 32cm and width 21cm.",
+    "options": [
+      "106cm²",
+      "53cm²",
+      "336cm²",
+      "672cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 32 \\times 21 = 672\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 14cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "34496cm²",
+      "2464cm²",
+      "1232cm²",
+      "7392cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 14\\)\n\n\\(= 2464\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 20cm and perpendicular height 4cm.",
+    "options": [
+      "40cm²",
+      "80cm²",
+      "24cm²",
+      "48cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 20 \\times 4 = 80\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 18cm and width 17cm.",
+    "options": [
+      "35cm²",
+      "70cm²",
+      "306cm²",
+      "153cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 18 \\times 17 = 306\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 60° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm²",
+      "1386cm²",
+      "231cm²",
+      "462cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{60}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 231\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 21cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2112cm²",
+      "4884cm²",
+      "2442cm²",
+      "22176cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21(21 + 16)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 37 = 4884\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 6cm and height 21cm.",
+    "options": [
+      "63cm²",
+      "13.50cm²",
+      "31.50cm²",
+      "126cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 6 \\times 21 = 63\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 9cm and height 26cm.",
+    "options": [
+      "17.50cm²",
+      "234cm²",
+      "58.50cm²",
+      "117cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 9 \\times 26 = 117\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 14cm which subtends an angle of 30° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7.33cm²",
+      "51.33cm²",
+      "616cm²",
+      "102.67cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{30}{360} \\times \\frac{22}{7} \\times 196\\)\n\n\\(= 51.33\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 19cm and perpendicular height 15cm.",
+    "options": [
+      "142.50cm²",
+      "285cm²",
+      "68cm²",
+      "34cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 19 \\times 15 = 285\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 22cm and width 4cm.",
+    "options": [
+      "44cm²",
+      "88cm²",
+      "26cm²",
+      "52cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 22 \\times 4 = 88\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 8cm and width 16cm.",
+    "options": [
+      "64cm²",
+      "128cm²",
+      "24cm²",
+      "48cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 8 \\times 16 = 128\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 34cm and height 19cm.",
+    "options": [
+      "323cm²",
+      "26.50cm²",
+      "161.50cm²",
+      "646cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 34 \\times 19 = 323\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 26cm and width 28cm.",
+    "options": [
+      "54cm²",
+      "364cm²",
+      "728cm²",
+      "108cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 26 \\times 28 = 728\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 9cm and perpendicular height 15cm.",
+    "options": [
+      "67.50cm²",
+      "48cm²",
+      "135cm²",
+      "24cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 9 \\times 15 = 135\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 19cm and height 12cm.",
+    "options": [
+      "228cm²",
+      "15.50cm²",
+      "57cm²",
+      "114cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 19 \\times 12 = 114\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 7cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1232cm²",
+      "924cm²",
+      "616cm²",
+      "3234cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7(7 + 21)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 7 \\times 28 = 1232\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 16cm and perpendicular height 11cm.",
+    "options": [
+      "88cm²",
+      "54cm²",
+      "27cm²",
+      "176cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 16 \\times 11 = 176\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a rectangle of length 34cm and width 6cm.",
+    "options": [
+      "204cm²",
+      "102cm²",
+      "40cm²",
+      "80cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a rectangle \\(= l \\times w\\)\n\n\\(= 34 \\times 6 = 204\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a trapezium whose parallel sides are 18cm and 7cm, and whose height is 11cm.",
+    "options": [
+      "275cm²",
+      "137.50cm²",
+      "693cm²",
+      "126cm²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of a trapezium \\(= \\frac{1}{2}(a + b)h\\)\n\n\\(= \\frac{1}{2}(18 + 7) \\times 11\\)\n\n\\(= \\frac{1}{2} \\times 25 \\times 11 = 137.50\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 25cm and perpendicular height 14cm.",
+    "options": [
+      "175cm²",
+      "78cm²",
+      "39cm²",
+      "350cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 25 \\times 14 = 350\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a triangle with base 8cm and height 16cm.",
+    "options": [
+      "128cm²",
+      "32cm²",
+      "12cm²",
+      "64cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of a triangle \\(= \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)\n\n\\(= \\frac{1}{2} \\times 8 \\times 16 = 64\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area of a sector of a circle of radius 21cm which subtends an angle of 120° at the centre. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "44cm²",
+      "1386cm²",
+      "462cm²",
+      "924cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of a sector \\(= \\frac{\\theta}{360} \\times \\pi r^{2}\\)\n\n\\(= \\frac{120}{360} \\times \\frac{22}{7} \\times 441\\)\n\n\\(= 462\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 14cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "19404cm²",
+      "924cm²",
+      "1848cm²",
+      "4620cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 14\\)\n\n\\(= 1848\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "12936cm²",
+      "3080cm²",
+      "924cm²",
+      "1848cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 21\\)\n\n\\(= 1848\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 17cm and perpendicular height 3cm.",
+    "options": [
+      "51cm²",
+      "40cm²",
+      "25.50cm²",
+      "20cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 17 \\times 3 = 51\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 21cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "396cm²",
+      "8316cm²",
+      "792cm²",
+      "3564cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 21 \\times 6\\)\n\n\\(= 792\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 14cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2728cm²",
+      "748cm²",
+      "10472cm²",
+      "1496cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 17\\)\n\n\\(= 1496\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the area of a parallelogram with base 7cm and perpendicular height 15cm.",
+    "options": [
+      "105cm²",
+      "44cm²",
+      "52.50cm²",
+      "22cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of a parallelogram \\(= \\text{base} \\times \\text{height}\\)\n\n\\(= 7 \\times 15 = 105\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the curved surface area of a cylinder of radius 28cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "880cm²",
+      "12320cm²",
+      "440cm²",
+      "5808cm²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Curved surface area \\(= 2\\pi r h\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 28 \\times 5\\)\n\n\\(= 880\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the total surface area of a closed cylinder of radius 14cm and height 15cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "9240cm²",
+      "1320cm²",
+      "1276cm²",
+      "2552cm²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Total surface area \\(= 2\\pi r(r + h)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14(14 + 15)\\)\n\n\\(= 2 \\times \\frac{22}{7} \\times 14 \\times 29 = 2552\\) cm²",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "bcfw1Su8647dddTevZhy",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

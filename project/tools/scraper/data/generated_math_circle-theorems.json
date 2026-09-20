@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 44°\\), find \\(\\angle POT\\).",
+    "options": [
+      "46°",
+      "44°",
+      "136°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 44° = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 24°, find the other.",
+    "options": [
+      "48°",
+      "24°",
+      "156°",
+      "66°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 24°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 63°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "63°",
+      "117°",
+      "27°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 63° = 27°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 34°, find the other.",
+    "options": [
+      "68°",
+      "34°",
+      "56°",
+      "146°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 34°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 150° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "75°",
+      "210°",
+      "150°",
+      "30°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{150°}{2} = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 82° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "164°",
+      "82°",
+      "98°",
+      "41°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 82° = 164°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 59°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "31°",
+      "121°",
+      "59°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 59° = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 95°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "85°",
+      "42.5°",
+      "265°",
+      "95°"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 95° = 85°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 54°, find the other.",
+    "options": [
+      "108°",
+      "36°",
+      "54°",
+      "126°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 54°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 118°. Find the angle opposite to it.",
+    "options": [
+      "-28°",
+      "62°",
+      "118°",
+      "242°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 118° = 62°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 45°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "55°",
+      "45°",
+      "90°",
+      "135°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 45° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 71°. Find the angle in the alternate segment.",
+    "options": [
+      "19°",
+      "71°",
+      "142°",
+      "109°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 71°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 44° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "316°",
+      "22°",
+      "136°",
+      "44°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{44°}{2} = 22°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 56° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "56°",
+      "304°",
+      "28°",
+      "124°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{56°}{2} = 28°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 81°. Find the angle opposite to it.",
+    "options": [
+      "81°",
+      "279°",
+      "9°",
+      "99°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 81° = 99°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 49°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "41°",
+      "90°",
+      "49°",
+      "131°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 49° = 41°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 49°, find the other.",
+    "options": [
+      "131°",
+      "98°",
+      "49°",
+      "41°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 49°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 54°\\), find \\(\\angle POT\\).",
+    "options": [
+      "54°",
+      "36°",
+      "126°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 54° = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 97°. Find the angle opposite to it.",
+    "options": [
+      "97°",
+      "-7°",
+      "263°",
+      "83°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 97° = 83°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 110° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "250°",
+      "70°",
+      "55°",
+      "110°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{110°}{2} = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 41°, find the other.",
+    "options": [
+      "82°",
+      "49°",
+      "139°",
+      "41°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 41°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 29°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "151°",
+      "331°",
+      "29°",
+      "75.5°"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 29° = 151°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 29°, find the other.",
+    "options": [
+      "151°",
+      "61°",
+      "58°",
+      "29°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 29°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 21°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "159°",
+      "69°",
+      "21°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 21° = 69°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 25°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "65°",
+      "155°",
+      "90°",
+      "25°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 25° = 65°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 61°, find the other.",
+    "options": [
+      "61°",
+      "122°",
+      "29°",
+      "119°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 61°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 89°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "89°",
+      "91°",
+      "271°",
+      "45.5°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 89° = 91°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 95°. Find the angle opposite to it.",
+    "options": [
+      "265°",
+      "95°",
+      "-5°",
+      "85°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 95° = 85°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 86°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "47°",
+      "274°",
+      "94°",
+      "86°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 86° = 94°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 45°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "135°",
+      "45°",
+      "55°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 45° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 92° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "46°",
+      "88°",
+      "268°",
+      "92°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{92°}{2} = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 98° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "98°",
+      "82°",
+      "49°",
+      "262°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{98°}{2} = 49°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 23° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "46°",
+      "157°",
+      "11.5°",
+      "23°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 23° = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 42°\\), find \\(\\angle POT\\).",
+    "options": [
+      "48°",
+      "138°",
+      "90°",
+      "42°"
+    ],
+    "correctIndex": 0,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 42° = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 121°. Find the angle opposite to it.",
+    "options": [
+      "239°",
+      "-31°",
+      "59°",
+      "121°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 121° = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 62°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "28°",
+      "62°",
+      "118°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 62° = 28°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 27°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "27°",
+      "153°",
+      "63°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 27° = 63°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 64°. Find the angle opposite to it.",
+    "options": [
+      "116°",
+      "26°",
+      "296°",
+      "64°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 64° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 170° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "170°",
+      "10°",
+      "190°",
+      "85°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{170°}{2} = 85°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 62°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "62°",
+      "118°",
+      "90°",
+      "28°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 62° = 28°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 76° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "104°",
+      "76°",
+      "284°",
+      "38°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{76°}{2} = 38°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 42°. Find the angle opposite to it.",
+    "options": [
+      "138°",
+      "318°",
+      "42°",
+      "48°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 42° = 138°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 16° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "164°",
+      "8°",
+      "16°",
+      "32°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 16° = 32°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 33° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "16.5°",
+      "147°",
+      "66°",
+      "33°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 33° = 66°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 62° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "298°",
+      "31°",
+      "62°",
+      "118°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{62°}{2} = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 31°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "329°",
+      "74.5°",
+      "149°",
+      "31°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 31° = 149°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 75° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "150°",
+      "37.5°",
+      "75°",
+      "105°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 75° = 150°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 65°\\), find \\(\\angle POT\\).",
+    "options": [
+      "65°",
+      "115°",
+      "90°",
+      "25°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 65° = 25°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 49° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "98°",
+      "49°",
+      "131°",
+      "24.5°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 49° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 60°, find the other.",
+    "options": [
+      "120°",
+      "30°",
+      "75°",
+      "60°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 60°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 31°, find the other.",
+    "options": [
+      "31°",
+      "59°",
+      "149°",
+      "62°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 31°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 66°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "57°",
+      "294°",
+      "114°",
+      "66°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 66° = 114°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 54°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "126°",
+      "36°",
+      "54°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 54° = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 33°, find the other.",
+    "options": [
+      "147°",
+      "66°",
+      "57°",
+      "33°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 33°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 72°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "72°",
+      "54°",
+      "288°",
+      "108°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 72° = 108°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 61°. Find the angle in the alternate segment.",
+    "options": [
+      "61°",
+      "29°",
+      "122°",
+      "119°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 61°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 67°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "67°",
+      "90°",
+      "23°",
+      "113°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 67° = 23°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 21° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "10.5°",
+      "21°",
+      "42°",
+      "159°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 21° = 42°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 56°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "56°",
+      "124°",
+      "304°",
+      "62°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 56° = 124°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 34°. Find the angle in the alternate segment.",
+    "options": [
+      "34°",
+      "68°",
+      "146°",
+      "56°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 34°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 100°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "260°",
+      "100°",
+      "40°",
+      "80°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 100° = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 76°. Find the angle opposite to it.",
+    "options": [
+      "284°",
+      "104°",
+      "14°",
+      "76°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 76° = 104°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 22°\\), find \\(\\angle POT\\).",
+    "options": [
+      "22°",
+      "68°",
+      "90°",
+      "158°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 22° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 33°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "73.5°",
+      "33°",
+      "147°",
+      "327°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 33° = 147°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 38°, find the other.",
+    "options": [
+      "76°",
+      "52°",
+      "38°",
+      "142°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 38°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 148° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "32°",
+      "212°",
+      "148°",
+      "74°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{148°}{2} = 74°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 64°. Find the angle in the alternate segment.",
+    "options": [
+      "26°",
+      "128°",
+      "116°",
+      "64°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 64°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 39°, find the other.",
+    "options": [
+      "51°",
+      "141°",
+      "78°",
+      "39°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 39°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 58°, find the other.",
+    "options": [
+      "32°",
+      "122°",
+      "58°",
+      "116°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 58°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 45°, find the other.",
+    "options": [
+      "90°",
+      "60°",
+      "45°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 45°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 25°, find the other.",
+    "options": [
+      "50°",
+      "65°",
+      "25°",
+      "155°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 25°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 174° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "87°",
+      "6°",
+      "186°",
+      "174°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{174°}{2} = 87°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 30°. Find the angle in the alternate segment.",
+    "options": [
+      "150°",
+      "30°",
+      "60°",
+      "50°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 30°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 84°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "48°",
+      "84°",
+      "96°",
+      "276°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 84° = 96°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 74°, find the other.",
+    "options": [
+      "106°",
+      "148°",
+      "74°",
+      "16°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 74°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 69°. Find the angle in the alternate segment.",
+    "options": [
+      "111°",
+      "138°",
+      "21°",
+      "69°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 69°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 24°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "66°",
+      "156°",
+      "90°",
+      "24°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 24° = 66°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 119°. Find the angle opposite to it.",
+    "options": [
+      "119°",
+      "61°",
+      "241°",
+      "-29°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 119° = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 23°, find the other.",
+    "options": [
+      "157°",
+      "23°",
+      "46°",
+      "67°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 23°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 156° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "156°",
+      "78°",
+      "24°",
+      "204°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{156°}{2} = 78°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 33°\\), find \\(\\angle POT\\).",
+    "options": [
+      "33°",
+      "57°",
+      "147°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 33° = 57°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 45°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "135°",
+      "315°",
+      "67.5°",
+      "45°"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 45° = 135°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 100°. Find the angle opposite to it.",
+    "options": [
+      "100°",
+      "-10°",
+      "260°",
+      "80°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 100° = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 127°. Find the angle opposite to it.",
+    "options": [
+      "127°",
+      "-37°",
+      "53°",
+      "233°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 127° = 53°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 65°. Find the angle opposite to it.",
+    "options": [
+      "295°",
+      "115°",
+      "65°",
+      "25°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 65° = 115°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 29°\\), find \\(\\angle POT\\).",
+    "options": [
+      "29°",
+      "90°",
+      "151°",
+      "61°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 29° = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 134°. Find the angle opposite to it.",
+    "options": [
+      "226°",
+      "134°",
+      "46°",
+      "-44°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 134° = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 64°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "116°",
+      "64°",
+      "26°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 64° = 26°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 52° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "26°",
+      "52°",
+      "128°",
+      "308°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{52°}{2} = 26°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 35°, find the other.",
+    "options": [
+      "145°",
+      "35°",
+      "55°",
+      "70°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 35°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 128° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "64°",
+      "232°",
+      "52°",
+      "128°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{128°}{2} = 64°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 80° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "100°",
+      "80°",
+      "280°",
+      "40°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{80°}{2} = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 52°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "64°",
+      "308°",
+      "52°",
+      "128°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 52° = 128°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 144° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "72°",
+      "36°",
+      "144°",
+      "216°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{144°}{2} = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 75°. Find the angle in the alternate segment.",
+    "options": [
+      "150°",
+      "105°",
+      "75°",
+      "15°"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 75°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 160° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "80°",
+      "200°",
+      "20°",
+      "160°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{160°}{2} = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 51° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "25.5°",
+      "102°",
+      "129°",
+      "51°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 51° = 102°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 28°\\), find \\(\\angle POT\\).",
+    "options": [
+      "28°",
+      "90°",
+      "62°",
+      "152°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 28° = 62°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 38° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "19°",
+      "38°",
+      "76°",
+      "142°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 38° = 76°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 102° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "102°",
+      "78°",
+      "258°",
+      "51°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{102°}{2} = 51°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 98°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "98°",
+      "262°",
+      "41°",
+      "82°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 98° = 82°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 131°. Find the angle opposite to it.",
+    "options": [
+      "131°",
+      "229°",
+      "-41°",
+      "49°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 131° = 49°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 90° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "55°",
+      "270°",
+      "45°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{90°}{2} = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 48°. Find the angle in the alternate segment.",
+    "options": [
+      "42°",
+      "132°",
+      "48°",
+      "96°"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 48°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 57°. Find the angle in the alternate segment.",
+    "options": [
+      "114°",
+      "57°",
+      "123°",
+      "33°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 57°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 152° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "28°",
+      "152°",
+      "208°",
+      "76°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{152°}{2} = 76°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 58°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "58°",
+      "61°",
+      "122°",
+      "302°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 58° = 122°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 91°. Find the angle opposite to it.",
+    "options": [
+      "89°",
+      "-1°",
+      "91°",
+      "269°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 91° = 89°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 50° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "100°",
+      "25°",
+      "130°",
+      "50°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 50° = 100°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 25°. Find the angle in the alternate segment.",
+    "options": [
+      "25°",
+      "50°",
+      "65°",
+      "155°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 25°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 88°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "46°",
+      "272°",
+      "88°",
+      "92°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 88° = 92°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 68°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "22°",
+      "90°",
+      "68°",
+      "112°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 68° = 22°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 106° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "254°",
+      "53°",
+      "74°",
+      "106°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{106°}{2} = 53°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 79°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "281°",
+      "79°",
+      "50.5°",
+      "101°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 79° = 101°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 51°. Find the angle in the alternate segment.",
+    "options": [
+      "102°",
+      "51°",
+      "129°",
+      "39°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 51°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 34° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "146°",
+      "326°",
+      "17°",
+      "34°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{34°}{2} = 17°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 64°, find the other.",
+    "options": [
+      "116°",
+      "64°",
+      "26°",
+      "128°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 64°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 48° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "24°",
+      "132°",
+      "48°",
+      "96°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 48° = 96°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 146° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "73°",
+      "214°",
+      "146°",
+      "34°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{146°}{2} = 73°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 94° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "86°",
+      "94°",
+      "47°",
+      "266°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{94°}{2} = 47°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 72° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "36°",
+      "108°",
+      "72°",
+      "288°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{72°}{2} = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 70°. Find the angle in the alternate segment.",
+    "options": [
+      "110°",
+      "140°",
+      "20°",
+      "70°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 70°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 50°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "50°",
+      "90°",
+      "40°",
+      "130°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 50° = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 56°, find the other.",
+    "options": [
+      "34°",
+      "124°",
+      "56°",
+      "112°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 56°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 66°. Find the angle in the alternate segment.",
+    "options": [
+      "66°",
+      "132°",
+      "114°",
+      "24°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 66°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 20°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "70°",
+      "20°",
+      "160°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 20° = 70°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 53°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "37°",
+      "53°",
+      "127°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 53° = 37°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 61°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "61°",
+      "119°",
+      "29°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 61° = 29°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 67°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "293°",
+      "113°",
+      "67°",
+      "56.5°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 67° = 113°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 38° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "38°",
+      "322°",
+      "19°",
+      "142°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{38°}{2} = 19°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 41°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "41°",
+      "49°",
+      "139°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 41° = 49°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 69° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "111°",
+      "138°",
+      "34.5°",
+      "69°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 69° = 138°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 38°. Find the angle in the alternate segment.",
+    "options": [
+      "76°",
+      "52°",
+      "142°",
+      "38°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 38°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 55°. Find the angle in the alternate segment.",
+    "options": [
+      "55°",
+      "35°",
+      "125°",
+      "110°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 55°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 31°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "149°",
+      "59°",
+      "31°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 31° = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 39°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "141°",
+      "39°",
+      "51°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 39° = 51°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 50°\\), find \\(\\angle POT\\).",
+    "options": [
+      "130°",
+      "90°",
+      "40°",
+      "50°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 50° = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 80°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "100°",
+      "80°",
+      "280°",
+      "50°"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 80° = 100°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 59°\\), find \\(\\angle POT\\).",
+    "options": [
+      "121°",
+      "90°",
+      "31°",
+      "59°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 59° = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 48°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "48°",
+      "132°",
+      "90°",
+      "42°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 48° = 42°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 98°. Find the angle opposite to it.",
+    "options": [
+      "82°",
+      "-8°",
+      "98°",
+      "262°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 98° = 82°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 52°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "128°",
+      "52°",
+      "38°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 52° = 38°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 32° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "16°",
+      "32°",
+      "328°",
+      "148°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{32°}{2} = 16°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 50°. Find the angle in the alternate segment.",
+    "options": [
+      "40°",
+      "100°",
+      "50°",
+      "130°"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 50°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 102°. Find the angle opposite to it.",
+    "options": [
+      "78°",
+      "102°",
+      "-12°",
+      "258°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 102° = 78°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 79°. Find the angle opposite to it.",
+    "options": [
+      "11°",
+      "79°",
+      "101°",
+      "281°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 79° = 101°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 20° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "10°",
+      "40°",
+      "20°",
+      "160°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 20° = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 47° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "23.5°",
+      "94°",
+      "47°",
+      "133°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 47° = 94°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 36°\\), find \\(\\angle POT\\).",
+    "options": [
+      "36°",
+      "90°",
+      "144°",
+      "54°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 36° = 54°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 78° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "156°",
+      "102°",
+      "78°",
+      "39°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 78° = 156°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 30°, find the other.",
+    "options": [
+      "30°",
+      "60°",
+      "150°",
+      "45°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 30°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 32°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "148°",
+      "32°",
+      "58°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 32° = 58°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 96° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "264°",
+      "84°",
+      "96°",
+      "48°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{96°}{2} = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 35°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "72.5°",
+      "145°",
+      "35°",
+      "325°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 35° = 145°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 54°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "306°",
+      "63°",
+      "126°",
+      "54°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 54° = 126°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 82°. Find the angle opposite to it.",
+    "options": [
+      "98°",
+      "8°",
+      "82°",
+      "278°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 82° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 39°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "321°",
+      "141°",
+      "39°",
+      "70.5°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 39° = 141°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 88° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "272°",
+      "92°",
+      "44°",
+      "88°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{88°}{2} = 44°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 51°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "51°",
+      "129°",
+      "39°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 51° = 39°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 45°. Find the angle opposite to it.",
+    "options": [
+      "315°",
+      "45°",
+      "155°",
+      "135°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 45° = 135°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 23°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "23°",
+      "157°",
+      "90°",
+      "67°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 23° = 67°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 42° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "138°",
+      "84°",
+      "21°",
+      "42°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 42° = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 26°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "64°",
+      "154°",
+      "26°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 26° = 64°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 17° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "17°",
+      "163°",
+      "34°",
+      "8.5°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 17° = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 86° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "172°",
+      "94°",
+      "43°",
+      "86°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 86° = 172°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 116° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "244°",
+      "64°",
+      "58°",
+      "116°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{116°}{2} = 58°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 60°. Find the angle in the alternate segment.",
+    "options": [
+      "60°",
+      "30°",
+      "80°",
+      "120°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 60°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 52°, find the other.",
+    "options": [
+      "104°",
+      "52°",
+      "38°",
+      "128°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 52°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 23°\\), find \\(\\angle POT\\).",
+    "options": [
+      "157°",
+      "90°",
+      "23°",
+      "67°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 23° = 67°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 112° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "56°",
+      "68°",
+      "248°",
+      "112°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{112°}{2} = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 70°\\), find \\(\\angle POT\\).",
+    "options": [
+      "110°",
+      "20°",
+      "70°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 70° = 20°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 39°. Find the angle in the alternate segment.",
+    "options": [
+      "39°",
+      "51°",
+      "141°",
+      "78°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 39°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 66° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "114°",
+      "33°",
+      "132°",
+      "66°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 66° = 132°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 65°, find the other.",
+    "options": [
+      "115°",
+      "130°",
+      "25°",
+      "65°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 65°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 63°\\), find \\(\\angle POT\\).",
+    "options": [
+      "63°",
+      "90°",
+      "27°",
+      "117°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 63° = 27°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 49°. Find the angle opposite to it.",
+    "options": [
+      "49°",
+      "131°",
+      "41°",
+      "311°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 49° = 131°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 69°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "69°",
+      "21°",
+      "111°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 69° = 21°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 25°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "155°",
+      "65°",
+      "25°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 25° = 65°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 68°\\), find \\(\\angle POT\\).",
+    "options": [
+      "22°",
+      "112°",
+      "68°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 68° = 22°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 36° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "144°",
+      "72°",
+      "36°",
+      "18°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 36° = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 35°\\), find \\(\\angle POT\\).",
+    "options": [
+      "35°",
+      "145°",
+      "55°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 35° = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 36°. Find the angle in the alternate segment.",
+    "options": [
+      "36°",
+      "144°",
+      "54°",
+      "72°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 36°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 87° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "93°",
+      "87°",
+      "43.5°",
+      "174°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 87° = 174°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 79°, find the other.",
+    "options": [
+      "101°",
+      "79°",
+      "11°",
+      "158°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 79°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 44° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "22°",
+      "44°",
+      "88°",
+      "136°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 44° = 88°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 22°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "158°",
+      "22°",
+      "68°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 22° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 34° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "34°",
+      "146°",
+      "68°",
+      "17°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 34° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 122° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "122°",
+      "61°",
+      "238°",
+      "58°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{122°}{2} = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 78°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "282°",
+      "102°",
+      "78°",
+      "51°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 78° = 102°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 73°. Find the angle opposite to it.",
+    "options": [
+      "107°",
+      "287°",
+      "17°",
+      "73°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 73° = 107°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 43°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "43°",
+      "317°",
+      "137°",
+      "68.5°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 43° = 137°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 56°. Find the angle opposite to it.",
+    "options": [
+      "304°",
+      "56°",
+      "124°",
+      "34°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 56° = 124°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 58° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "116°",
+      "122°",
+      "58°",
+      "29°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 58° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 47°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "313°",
+      "47°",
+      "66.5°",
+      "133°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 47° = 133°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 66°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "114°",
+      "90°",
+      "66°",
+      "24°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 66° = 24°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 73°. Find the angle in the alternate segment.",
+    "options": [
+      "73°",
+      "17°",
+      "107°",
+      "146°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 73°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 53°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "37°",
+      "53°",
+      "127°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 53° = 37°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 46°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "314°",
+      "67°",
+      "134°",
+      "46°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 46° = 134°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 15° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "7.5°",
+      "30°",
+      "15°",
+      "165°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 15° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 40°. Find the angle in the alternate segment.",
+    "options": [
+      "40°",
+      "80°",
+      "140°",
+      "50°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 40°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 37°, find the other.",
+    "options": [
+      "74°",
+      "37°",
+      "53°",
+      "143°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 37°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 59°. Find the angle in the alternate segment.",
+    "options": [
+      "118°",
+      "121°",
+      "31°",
+      "59°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 59°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 37°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "143°",
+      "323°",
+      "37°",
+      "71.5°"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 37° = 143°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 48° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "48°",
+      "312°",
+      "24°",
+      "132°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{48°}{2} = 24°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 68°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "292°",
+      "56°",
+      "68°",
+      "112°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 68° = 112°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 27°. Find the angle in the alternate segment.",
+    "options": [
+      "63°",
+      "27°",
+      "54°",
+      "153°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 27°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 51°\\), find \\(\\angle POT\\).",
+    "options": [
+      "39°",
+      "90°",
+      "129°",
+      "51°"
+    ],
+    "correctIndex": 0,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 51° = 39°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 20°, find the other.",
+    "options": [
+      "70°",
+      "20°",
+      "40°",
+      "160°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 20°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 60°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "60°",
+      "120°",
+      "90°",
+      "30°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 60° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 74°. Find the angle opposite to it.",
+    "options": [
+      "286°",
+      "106°",
+      "16°",
+      "74°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 74° = 106°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 65°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "25°",
+      "65°",
+      "90°",
+      "115°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 65° = 25°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 52°. Find the angle opposite to it.",
+    "options": [
+      "128°",
+      "38°",
+      "308°",
+      "52°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 52° = 128°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 76°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "104°",
+      "284°",
+      "76°",
+      "52°"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 76° = 104°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 45°. Find the angle in the alternate segment.",
+    "options": [
+      "45°",
+      "135°",
+      "65°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 45°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 46°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "46°",
+      "90°",
+      "44°",
+      "134°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 46° = 44°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 72°, find the other.",
+    "options": [
+      "144°",
+      "72°",
+      "18°",
+      "108°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 72°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 112°. Find the angle opposite to it.",
+    "options": [
+      "-22°",
+      "248°",
+      "112°",
+      "68°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 112° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 41°. Find the angle in the alternate segment.",
+    "options": [
+      "139°",
+      "41°",
+      "49°",
+      "82°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 41°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 63° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "126°",
+      "31.5°",
+      "63°",
+      "117°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 63° = 126°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 54°. Find the angle opposite to it.",
+    "options": [
+      "306°",
+      "54°",
+      "36°",
+      "126°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 54° = 126°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 55°, find the other.",
+    "options": [
+      "125°",
+      "110°",
+      "55°",
+      "35°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 55°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 70°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "20°",
+      "70°",
+      "90°",
+      "110°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 70° = 20°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 46°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "44°",
+      "46°",
+      "134°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 46° = 44°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 79°. Find the angle in the alternate segment.",
+    "options": [
+      "11°",
+      "79°",
+      "101°",
+      "158°"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 79°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 138° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "138°",
+      "222°",
+      "69°",
+      "42°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{138°}{2} = 69°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 58°. Find the angle in the alternate segment.",
+    "options": [
+      "122°",
+      "116°",
+      "32°",
+      "58°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 58°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 109°. Find the angle opposite to it.",
+    "options": [
+      "109°",
+      "251°",
+      "-19°",
+      "71°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 109° = 71°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 21°, find the other.",
+    "options": [
+      "159°",
+      "42°",
+      "69°",
+      "21°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 21°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 47°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "133°",
+      "43°",
+      "90°",
+      "47°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 47° = 43°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 66°\\), find \\(\\angle POT\\).",
+    "options": [
+      "114°",
+      "24°",
+      "66°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 66° = 24°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 33°. Find the angle in the alternate segment.",
+    "options": [
+      "33°",
+      "57°",
+      "147°",
+      "66°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 33°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 50°. Find the angle opposite to it.",
+    "options": [
+      "50°",
+      "40°",
+      "310°",
+      "130°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 50° = 130°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 43°\\), find \\(\\angle POT\\).",
+    "options": [
+      "137°",
+      "90°",
+      "47°",
+      "43°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 43° = 47°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 48°, find the other.",
+    "options": [
+      "48°",
+      "42°",
+      "96°",
+      "132°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 48°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 52°. Find the angle in the alternate segment.",
+    "options": [
+      "52°",
+      "128°",
+      "38°",
+      "104°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 52°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 77°, find the other.",
+    "options": [
+      "103°",
+      "13°",
+      "154°",
+      "77°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 77°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 37°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "143°",
+      "53°",
+      "37°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 37° = 53°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 137°. Find the angle opposite to it.",
+    "options": [
+      "43°",
+      "137°",
+      "-47°",
+      "223°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 137° = 43°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 56°\\), find \\(\\angle POT\\).",
+    "options": [
+      "56°",
+      "124°",
+      "34°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 56° = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 18° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "18°",
+      "36°",
+      "162°",
+      "9°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 18° = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 72° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "108°",
+      "36°",
+      "144°",
+      "72°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 72° = 144°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 67°. Find the angle opposite to it.",
+    "options": [
+      "293°",
+      "113°",
+      "67°",
+      "23°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 67° = 113°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 48°\\), find \\(\\angle POT\\).",
+    "options": [
+      "132°",
+      "48°",
+      "42°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 48° = 42°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 40°. Find the angle opposite to it.",
+    "options": [
+      "140°",
+      "50°",
+      "320°",
+      "40°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 40° = 140°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 83°. Find the angle opposite to it.",
+    "options": [
+      "277°",
+      "83°",
+      "97°",
+      "7°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 83° = 97°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 78°, find the other.",
+    "options": [
+      "12°",
+      "78°",
+      "102°",
+      "156°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 78°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 65° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "115°",
+      "65°",
+      "130°",
+      "32.5°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 65° = 130°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 106°. Find the angle opposite to it.",
+    "options": [
+      "-16°",
+      "74°",
+      "106°",
+      "254°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 106° = 74°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 37°\\), find \\(\\angle POT\\).",
+    "options": [
+      "143°",
+      "53°",
+      "37°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 37° = 53°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 35°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "145°",
+      "55°",
+      "35°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 35° = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 71°. Find the angle opposite to it.",
+    "options": [
+      "109°",
+      "71°",
+      "19°",
+      "289°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 71° = 109°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 92°. Find the angle opposite to it.",
+    "options": [
+      "88°",
+      "92°",
+      "268°",
+      "-2°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 92° = 88°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 68° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "68°",
+      "112°",
+      "34°",
+      "292°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{68°}{2} = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 129°. Find the angle opposite to it.",
+    "options": [
+      "51°",
+      "-39°",
+      "231°",
+      "129°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 129° = 51°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 66°, find the other.",
+    "options": [
+      "132°",
+      "114°",
+      "66°",
+      "24°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 66°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 44°. Find the angle in the alternate segment.",
+    "options": [
+      "44°",
+      "136°",
+      "88°",
+      "46°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 44°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 57°\\), find \\(\\angle POT\\).",
+    "options": [
+      "57°",
+      "33°",
+      "90°",
+      "123°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 57° = 33°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 74° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "74°",
+      "106°",
+      "148°",
+      "37°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 74° = 148°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 31°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "31°",
+      "149°",
+      "59°"
+    ],
+    "correctIndex": 3,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 31° = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 21°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "90°",
+      "21°",
+      "69°",
+      "159°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 21° = 69°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 49°\\), find \\(\\angle POT\\).",
+    "options": [
+      "49°",
+      "131°",
+      "41°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 49° = 41°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 61°\\), find \\(\\angle POT\\).",
+    "options": [
+      "119°",
+      "29°",
+      "90°",
+      "61°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 61° = 29°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 65°. Find the angle in the alternate segment.",
+    "options": [
+      "115°",
+      "130°",
+      "65°",
+      "25°"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 65°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 55°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "125°",
+      "55°",
+      "35°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 55° = 35°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 27°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "153°",
+      "63°",
+      "90°",
+      "27°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 27° = 63°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 60° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "120°",
+      "240°",
+      "30°",
+      "60°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 60° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 70°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "55°",
+      "110°",
+      "70°",
+      "290°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 70° = 110°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 36°, find the other.",
+    "options": [
+      "72°",
+      "36°",
+      "54°",
+      "144°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 36°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 68°. Find the angle in the alternate segment.",
+    "options": [
+      "112°",
+      "136°",
+      "22°",
+      "68°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 68°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 38°\\), find \\(\\angle POT\\).",
+    "options": [
+      "90°",
+      "142°",
+      "52°",
+      "38°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 38° = 52°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 118° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "118°",
+      "242°",
+      "62°",
+      "59°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{118°}{2} = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 61° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "30.5°",
+      "119°",
+      "122°",
+      "61°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 61° = 122°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(PT\\) is a tangent to a circle with centre \\(O\\), touching the circle at \\(T\\). If \\(\\angle OPT = 30°\\), find \\(\\angle POT\\).",
+    "options": [
+      "150°",
+      "60°",
+      "30°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tangent is perpendicular to the radius at the point of contact, so \\(\\angle OTP = 90°\\).\n\nIn triangle \\(OPT\\), the angles add up to 180°.\n\n\\(\\angle POT = 180° - 90° - 30° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 57° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "28.5°",
+      "57°",
+      "123°",
+      "114°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 57° = 114°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 28°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "28°",
+      "62°",
+      "90°",
+      "152°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 28° = 62°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 66° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "66°",
+      "114°",
+      "33°",
+      "294°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{66°}{2} = 33°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 136°. Find the angle opposite to it.",
+    "options": [
+      "224°",
+      "-46°",
+      "44°",
+      "136°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 136° = 44°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 89° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "178°",
+      "44.5°",
+      "91°",
+      "89°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 89° = 178°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 43°. Find the angle in the alternate segment.",
+    "options": [
+      "137°",
+      "47°",
+      "86°",
+      "43°"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 43°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 25° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "50°",
+      "155°",
+      "12.5°",
+      "25°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 25° = 50°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 114° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "57°",
+      "114°",
+      "246°",
+      "66°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{114°}{2} = 57°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 63°. Find the angle opposite to it.",
+    "options": [
+      "117°",
+      "27°",
+      "63°",
+      "297°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 63° = 117°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 64°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "116°",
+      "64°",
+      "90°",
+      "26°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 64° = 26°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 75°. Find the angle opposite to it.",
+    "options": [
+      "105°",
+      "285°",
+      "75°",
+      "15°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 75° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 29° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "14.5°",
+      "151°",
+      "29°",
+      "58°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 29° = 58°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 48°. Find the angle opposite to it.",
+    "options": [
+      "42°",
+      "312°",
+      "132°",
+      "48°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 48° = 132°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 20°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "340°",
+      "20°",
+      "160°",
+      "80°"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 20° = 160°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a circle, \\(AB\\) is a diameter and \\(C\\) is a point on the circumference. If \\(\\angle ABC = 30°\\), find \\(\\angle BAC\\).",
+    "options": [
+      "60°",
+      "150°",
+      "90°",
+      "30°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle in a semicircle is a right angle, so \\(\\angle ACB = 90°\\).\n\nThe angles of triangle \\(ABC\\) add up to 180°.\n\n\\(\\angle BAC = 180° - 90° - 30° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 82°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "278°",
+      "98°",
+      "49°",
+      "82°"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 82° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc of a circle subtends an angle of 28° at the circumference. Find the angle it subtends at the centre.",
+    "options": [
+      "56°",
+      "28°",
+      "14°",
+      "152°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The angle subtended at the centre is twice the angle subtended at the circumference by the same arc.\n\n\\(2 \\times 28° = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 47°, find the other.",
+    "options": [
+      "47°",
+      "133°",
+      "94°",
+      "43°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 47°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An arc subtends an angle of 126° at the centre of a circle. Find the angle it subtends at the circumference.",
+    "options": [
+      "234°",
+      "54°",
+      "126°",
+      "63°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle at the circumference is half the angle at the centre subtended by the same arc.\n\n\\(\\frac{126°}{2} = 63°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 111°. Find the angle opposite to it.",
+    "options": [
+      "111°",
+      "249°",
+      "69°",
+      "-21°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 111° = 69°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 42°, find the other.",
+    "options": [
+      "42°",
+      "48°",
+      "84°",
+      "138°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 42°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 49°. Find the angle in the alternate segment.",
+    "options": [
+      "49°",
+      "131°",
+      "41°",
+      "98°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 49°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 86°. Find the angle opposite to it.",
+    "options": [
+      "4°",
+      "94°",
+      "86°",
+      "274°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 86° = 94°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "One angle of a cyclic quadrilateral is 62°. Find the angle opposite to it.",
+    "options": [
+      "118°",
+      "62°",
+      "298°",
+      "28°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they add up to 180°.\n\n\\(180° - 62° = 118°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two angles are subtended by the same chord in the same segment of a circle. If one of them is 46°, find the other.",
+    "options": [
+      "44°",
+      "134°",
+      "46°",
+      "92°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Angles in the same segment of a circle are equal.\n\nSo the other angle is also 46°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two tangents are drawn from an external point \\(P\\) to a circle with centre \\(O\\), touching it at \\(A\\) and \\(B\\). If \\(\\angle APB = 96°\\), find \\(\\angle AOB\\).",
+    "options": [
+      "264°",
+      "42°",
+      "96°",
+      "84°"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(OAPB\\) is a quadrilateral with \\(\\angle OAP = \\angle OBP = 90°\\) (tangent perpendicular to radius).\n\nThe angles of a quadrilateral add up to 360°.\n\n\\(\\angle AOB = 360° - 90° - 90° - 96° = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The angle between a tangent and a chord drawn from the point of contact is 32°. Find the angle in the alternate segment.",
+    "options": [
+      "32°",
+      "148°",
+      "58°",
+      "64°"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the alternate segment theorem, the angle between a tangent and a chord equals the angle in the alternate segment.\n\nSo the required angle is 32°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "X5eV19S3P3tREFfiFMut",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

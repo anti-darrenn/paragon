@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 144\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "36",
+      "72",
+      "4",
+      "216"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(144 = \\frac{k}{3^{2}}\\), so \\(k = 144 \\times 9 = 1296\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{1296}{36} = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 28\\) when \\(x = 6\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "504",
+      "31",
+      "14",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(28 = \\frac{k}{6}\\), so \\(k = 28 \\times 6 = 168\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{168}{3} = 56\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 80\\) when \\(x = 4\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "40",
+      "84",
+      "10",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(80 = k \\times 4^{2} = 16k\\), so \\(k = 5\\).\n\nWhen \\(x = 2\\): \\(y = 5 \\times 2^{2} = 5 \\times 4 = 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 16\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "24",
+      "48",
+      "144",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(16 = k \\times 2^{2} = 4k\\), so \\(k = 4\\).\n\nWhen \\(x = 6\\): \\(y = 4 \\times 6^{2} = 4 \\times 36 = 144\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 48\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "96",
+      "864",
+      "54",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(48 = \\frac{k}{3}\\), so \\(k = 48 \\times 3 = 144\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{144}{6} = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 81\\) when \\(x = 3\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "130",
+      "63",
+      "189",
+      "441"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(81 = k \\times 3^{2} = 9k\\), so \\(k = 9\\).\n\nWhen \\(x = 7\\): \\(y = 9 \\times 7^{2} = 9 \\times 49 = 441\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 24\\) when \\(x = 6\\), find \\(y\\) when \\(x = 18\\).",
+    "options": [
+      "72",
+      "42",
+      "36",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(24 = k \\times 6\\), so \\(k = 4\\).\n\nWhen \\(x = 18\\): \\(y = 4 \\times 18 = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 32\\) when \\(x = 2\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "40",
+      "57",
+      "200",
+      "80"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(32 = k \\times 2^{2} = 4k\\), so \\(k = 8\\).\n\nWhen \\(x = 5\\): \\(y = 8 \\times 5^{2} = 8 \\times 25 = 200\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 100\\) when \\(x = 5\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "28",
+      "196",
+      "140",
+      "149"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(100 = k \\times 5^{2} = 25k\\), so \\(k = 4\\).\n\nWhen \\(x = 7\\): \\(y = 4 \\times 7^{2} = 4 \\times 49 = 196\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 96\\) when \\(x = 8\\), find \\(y\\) when \\(x = 11\\).",
+    "options": [
+      "107",
+      "23",
+      "66",
+      "132"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(96 = k \\times 8\\), so \\(k = 12\\).\n\nWhen \\(x = 11\\): \\(y = 12 \\times 11 = 132\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 16\\) when \\(x = 2\\), find the constant of variation.",
+    "options": [
+      "9",
+      "32",
+      "8",
+      "0.13"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(16 = k \\times 2\\)\n\n\\(k = \\frac{16}{2} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 8\\) when \\(x = 6\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "10.67",
+      "16",
+      "6",
+      "384"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(8 = \\frac{k}{6}\\), so \\(k = 8 \\times 6 = 48\\).\n\nWhen \\(x = 8\\): \\(y = \\frac{48}{8} = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 35\\) when \\(x = 7\\), find the constant of variation.",
+    "options": [
+      "245",
+      "0.2",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(35 = k \\times 7\\)\n\n\\(k = \\frac{35}{7} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 27\\) when \\(x = 3\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "192",
+      "72",
+      "24",
+      "91"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(27 = k \\times 3^{2} = 9k\\), so \\(k = 3\\).\n\nWhen \\(x = 8\\): \\(y = 3 \\times 8^{2} = 3 \\times 64 = 192\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 225\\) when \\(x = 5\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "234",
+      "81",
+      "135",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(225 = k \\times 5^{2} = 25k\\), so \\(k = 9\\).\n\nWhen \\(x = 3\\): \\(y = 9 \\times 3^{2} = 9 \\times 9 = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 24\\) when \\(x = 6\\), find the constant of variation.",
+    "options": [
+      "0.25",
+      "4",
+      "144",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(24 = k \\times 6\\)\n\n\\(k = \\frac{24}{6} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 48\\) when \\(x = 4\\), find the constant of variation.",
+    "options": [
+      "192",
+      "13",
+      "0.08",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(48 = k \\times 4\\)\n\n\\(k = \\frac{48}{4} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 108\\) when \\(x = 6\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "75",
+      "15",
+      "90",
+      "133"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(108 = k \\times 6^{2} = 36k\\), so \\(k = 3\\).\n\nWhen \\(x = 5\\): \\(y = 3 \\times 5^{2} = 3 \\times 25 = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 100\\) when \\(x = 5\\) and \\(z = 4\\), find \\(y\\) when \\(x = 3\\) and \\(z = 5\\).",
+    "options": [
+      "1500",
+      "20",
+      "75",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(100 = k \\times 5 \\times 4 = 20k\\), so \\(k = 5\\).\n\nWhen \\(x = 3\\) and \\(z = 5\\): \\(y = 5 \\times 3 \\times 5 = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 24\\) when \\(x = 12\\), find the constant of variation.",
+    "options": [
+      "0.5",
+      "288",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(24 = k \\times 12\\)\n\n\\(k = \\frac{24}{12} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 72\\) when \\(x = 6\\), find \\(y\\) when \\(x = 13\\).",
+    "options": [
+      "78",
+      "156",
+      "25",
+      "85"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(72 = k \\times 6\\), so \\(k = 12\\).\n\nWhen \\(x = 13\\): \\(y = 12 \\times 13 = 156\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 108\\) when \\(x = 5\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "3",
+      "75",
+      "450",
+      "90"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(108 = \\frac{k}{5^{2}}\\), so \\(k = 108 \\times 25 = 2700\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{2700}{36} = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 112\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "148",
+      "168",
+      "42",
+      "252"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(112 = k \\times 4^{2} = 16k\\), so \\(k = 7\\).\n\nWhen \\(x = 6\\): \\(y = 7 \\times 6^{2} = 7 \\times 36 = 252\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 108\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "27",
+      "162",
+      "54",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(108 = \\frac{k}{3^{2}}\\), so \\(k = 108 \\times 9 = 972\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{972}{36} = 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 8\\) when \\(x = 2\\) and \\(z = 2\\), find \\(y\\) when \\(x = 2\\) and \\(z = 5\\).",
+    "options": [
+      "9",
+      "80",
+      "20",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(8 = k \\times 2 \\times 2 = 4k\\), so \\(k = 2\\).\n\nWhen \\(x = 2\\) and \\(z = 5\\): \\(y = 2 \\times 2 \\times 5 = 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 48\\) when \\(x = 6\\), find the constant of variation.",
+    "options": [
+      "288",
+      "8",
+      "9",
+      "0.13"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(48 = k \\times 6\\)\n\n\\(k = \\frac{48}{6} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 154\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "1694",
+      "14",
+      "15",
+      "0.07"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(154 = k \\times 11\\)\n\n\\(k = \\frac{154}{11} = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 8\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "36",
+      "18",
+      "12",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(8 = \\frac{k}{3^{2}}\\), so \\(k = 8 \\times 9 = 72\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{72}{4} = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 6\\) when \\(x = 6\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "18",
+      "2",
+      "8",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(6 = \\frac{k}{6}\\), so \\(k = 6 \\times 6 = 36\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{36}{2} = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 36\\) when \\(x = 2\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "6",
+      "864",
+      "216",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(36 = \\frac{k}{2}\\), so \\(k = 36 \\times 2 = 72\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{72}{12} = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 96\\) when \\(x = 4\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "294",
+      "42",
+      "145",
+      "168"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(96 = k \\times 4^{2} = 16k\\), so \\(k = 6\\).\n\nWhen \\(x = 7\\): \\(y = 6 \\times 7^{2} = 6 \\times 49 = 294\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 26\\) when \\(x = 6\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "312",
+      "28",
+      "78",
+      "8.67"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(26 = \\frac{k}{6}\\), so \\(k = 26 \\times 6 = 156\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{156}{2} = 78\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 144\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "36",
+      "9",
+      "72",
+      "144"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(144 = \\frac{k}{2^{2}}\\), so \\(k = 144 \\times 4 = 576\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{576}{16} = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 54\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "216",
+      "36",
+      "90",
+      "108"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(54 = k \\times 3^{2} = 9k\\), so \\(k = 6\\).\n\nWhen \\(x = 6\\): \\(y = 6 \\times 6^{2} = 6 \\times 36 = 216\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 96\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "72",
+      "6",
+      "216",
+      "54"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(96 = \\frac{k}{3^{2}}\\), so \\(k = 96 \\times 9 = 864\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{864}{16} = 54\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 18\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "24",
+      "2",
+      "32",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(18 = \\frac{k}{4^{2}}\\), so \\(k = 18 \\times 16 = 288\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{288}{9} = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 128\\) when \\(x = 4\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "200",
+      "153",
+      "40",
+      "160"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(128 = k \\times 4^{2} = 16k\\), so \\(k = 8\\).\n\nWhen \\(x = 5\\): \\(y = 8 \\times 5^{2} = 8 \\times 25 = 200\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 36\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "54",
+      "9",
+      "81",
+      "162"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(36 = \\frac{k}{3^{2}}\\), so \\(k = 36 \\times 9 = 324\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{324}{4} = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 24\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "288",
+      "28",
+      "18",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(24 = \\frac{k}{3}\\), so \\(k = 24 \\times 3 = 72\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{72}{4} = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 90\\) when \\(x = 6\\), find the constant of variation.",
+    "options": [
+      "540",
+      "0.07",
+      "16",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(90 = k \\times 6\\)\n\n\\(k = \\frac{90}{6} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 20\\) when \\(x = 4\\), find the constant of variation.",
+    "options": [
+      "0.2",
+      "5",
+      "80",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(20 = k \\times 4\\)\n\n\\(k = \\frac{20}{4} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 18\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "216",
+      "24",
+      "54",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(18 = \\frac{k}{2}\\), so \\(k = 18 \\times 2 = 36\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{36}{6} = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 20\\) when \\(x = 5\\) and \\(z = 2\\), find \\(y\\) when \\(x = 7\\) and \\(z = 8\\).",
+    "options": [
+      "30",
+      "22",
+      "112",
+      "1120"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(20 = k \\times 5 \\times 2 = 10k\\), so \\(k = 2\\).\n\nWhen \\(x = 7\\) and \\(z = 8\\): \\(y = 2 \\times 7 \\times 8 = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 18\\) when \\(x = 2\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "2",
+      "24",
+      "8",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(18 = \\frac{k}{2^{2}}\\), so \\(k = 18 \\times 4 = 72\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{72}{9} = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 324\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "9",
+      "216",
+      "108",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(324 = \\frac{k}{2^{2}}\\), so \\(k = 324 \\times 4 = 1296\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{1296}{36} = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 84\\) when \\(x = 12\\), find \\(y\\) when \\(x = 20\\).",
+    "options": [
+      "104",
+      "140",
+      "27",
+      "70"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(84 = k \\times 12\\), so \\(k = 7\\).\n\nWhen \\(x = 20\\): \\(y = 7 \\times 20 = 140\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 32\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "8",
+      "48",
+      "72",
+      "144"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(32 = \\frac{k}{3^{2}}\\), so \\(k = 32 \\times 9 = 288\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{288}{4} = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 2\\) and \\(z = 6\\), find \\(y\\) when \\(x = 3\\) and \\(z = 2\\).",
+    "options": [
+      "216",
+      "15",
+      "11",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 2 \\times 6 = 12k\\), so \\(k = 3\\).\n\nWhen \\(x = 3\\) and \\(z = 2\\): \\(y = 3 \\times 3 \\times 2 = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 160\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "10",
+      "90",
+      "120",
+      "360"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(160 = \\frac{k}{3^{2}}\\), so \\(k = 160 \\times 9 = 1440\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{1440}{16} = 90\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 28\\) when \\(x = 2\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "98",
+      "49",
+      "77",
+      "343"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(28 = k \\times 2^{2} = 4k\\), so \\(k = 7\\).\n\nWhen \\(x = 7\\): \\(y = 7 \\times 7^{2} = 7 \\times 49 = 343\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 90\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "120",
+      "480",
+      "10",
+      "160"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(90 = \\frac{k}{4^{2}}\\), so \\(k = 90 \\times 16 = 1440\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{1440}{9} = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 81\\) when \\(x = 5\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "675",
+      "135",
+      "225",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(81 = \\frac{k}{5^{2}}\\), so \\(k = 81 \\times 25 = 2025\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{2025}{9} = 225\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 78\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "82",
+      "39",
+      "156",
+      "624"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(78 = \\frac{k}{2}\\), so \\(k = 78 \\times 2 = 156\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{156}{4} = 39\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 63\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "14",
+      "42",
+      "67",
+      "28"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(63 = k \\times 3^{2} = 9k\\), so \\(k = 7\\).\n\nWhen \\(x = 2\\): \\(y = 7 \\times 2^{2} = 7 \\times 4 = 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 8\\) when \\(x = 6\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "2.67",
+      "10",
+      "24",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(8 = \\frac{k}{6}\\), so \\(k = 8 \\times 6 = 48\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{48}{2} = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 18\\) when \\(x = 2\\), find \\(y\\) when \\(x = 10\\).",
+    "options": [
+      "45",
+      "19",
+      "90",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(18 = k \\times 2\\), so \\(k = 9\\).\n\nWhen \\(x = 10\\): \\(y = 9 \\times 10 = 90\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 18\\) when \\(x = 9\\), find the constant of variation.",
+    "options": [
+      "2",
+      "3",
+      "0.5",
+      "162"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(18 = k \\times 9\\)\n\n\\(k = \\frac{18}{9} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 78\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "84",
+      "26",
+      "936",
+      "234"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(78 = \\frac{k}{2}\\), so \\(k = 78 \\times 2 = 156\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{156}{6} = 26\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 49\\) when \\(x = 7\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "61",
+      "84",
+      "42",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(49 = k \\times 7\\), so \\(k = 7\\).\n\nWhen \\(x = 12\\): \\(y = 7 \\times 12 = 84\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 56\\) when \\(x = 8\\), find the constant of variation.",
+    "options": [
+      "0.14",
+      "448",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(56 = k \\times 8\\)\n\n\\(k = \\frac{56}{8} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 216\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "108",
+      "324",
+      "54",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(216 = \\frac{k}{3^{2}}\\), so \\(k = 216 \\times 9 = 1944\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{1944}{36} = 54\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 72\\) when \\(x = 5\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "60",
+      "2",
+      "50",
+      "300"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(72 = \\frac{k}{5^{2}}\\), so \\(k = 72 \\times 25 = 1800\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{1800}{36} = 50\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 99\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "0.11",
+      "1089",
+      "10",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(99 = k \\times 11\\)\n\n\\(k = \\frac{99}{11} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 45\\) when \\(x = 9\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "17",
+      "60",
+      "30",
+      "57"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(45 = k \\times 9\\), so \\(k = 5\\).\n\nWhen \\(x = 12\\): \\(y = 5 \\times 12 = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 27\\) when \\(x = 3\\), find \\(y\\) when \\(x = 9\\).",
+    "options": [
+      "18",
+      "36",
+      "40.5",
+      "81"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(27 = k \\times 3\\), so \\(k = 9\\).\n\nWhen \\(x = 9\\): \\(y = 9 \\times 9 = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 4\\) when \\(x = 6\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "8",
+      "2",
+      "7",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(4 = \\frac{k}{6}\\), so \\(k = 4 \\times 6 = 24\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{24}{3} = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 30\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 8\\) and \\(z = 8\\).",
+    "options": [
+      "1920",
+      "80",
+      "320",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(30 = k \\times 3 \\times 2 = 6k\\), so \\(k = 5\\).\n\nWhen \\(x = 8\\) and \\(z = 8\\): \\(y = 5 \\times 8 \\times 8 = 320\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 12\\) when \\(x = 2\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "42",
+      "21",
+      "61",
+      "147"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(12 = k \\times 2^{2} = 4k\\), so \\(k = 3\\).\n\nWhen \\(x = 7\\): \\(y = 3 \\times 7^{2} = 3 \\times 49 = 147\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 143\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "13",
+      "14",
+      "0.08",
+      "1573"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(143 = k \\times 11\\)\n\n\\(k = \\frac{143}{11} = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 22\\) when \\(x = 2\\), find the constant of variation.",
+    "options": [
+      "0.09",
+      "12",
+      "44",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(22 = k \\times 2\\)\n\n\\(k = \\frac{22}{2} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 6\\) and \\(z = 4\\), find \\(y\\) when \\(x = 3\\) and \\(z = 6\\).",
+    "options": [
+      "864",
+      "12",
+      "18",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 6 \\times 4 = 24k\\), so \\(k = 2\\).\n\nWhen \\(x = 3\\) and \\(z = 6\\): \\(y = 2 \\times 3 \\times 6 = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 40\\) when \\(x = 4\\) and \\(z = 2\\), find \\(y\\) when \\(x = 2\\) and \\(z = 8\\).",
+    "options": [
+      "640",
+      "80",
+      "18",
+      "50"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(40 = k \\times 4 \\times 2 = 8k\\), so \\(k = 5\\).\n\nWhen \\(x = 2\\) and \\(z = 8\\): \\(y = 5 \\times 2 \\times 8 = 80\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 4\\) when \\(x = 6\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "2.67",
+      "6",
+      "96",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(4 = \\frac{k}{6}\\), so \\(k = 4 \\times 6 = 24\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{24}{4} = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 121\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "12",
+      "0.09",
+      "1331",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(121 = k \\times 11\\)\n\n\\(k = \\frac{121}{11} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 27\\) when \\(x = 5\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "45",
+      "3",
+      "75",
+      "225"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(27 = \\frac{k}{5^{2}}\\), so \\(k = 27 \\times 25 = 675\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{675}{9} = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 108\\) when \\(x = 6\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "24",
+      "172",
+      "192",
+      "144"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(108 = k \\times 6^{2} = 36k\\), so \\(k = 3\\).\n\nWhen \\(x = 8\\): \\(y = 3 \\times 8^{2} = 3 \\times 64 = 192\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 24\\) when \\(x = 2\\), find \\(y\\) when \\(x = 14\\).",
+    "options": [
+      "168",
+      "26",
+      "84",
+      "38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(24 = k \\times 2\\), so \\(k = 12\\).\n\nWhen \\(x = 14\\): \\(y = 12 \\times 14 = 168\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 24\\) when \\(x = 2\\), find the constant of variation.",
+    "options": [
+      "13",
+      "0.08",
+      "48",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(24 = k \\times 2\\)\n\n\\(k = \\frac{24}{2} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 6\\) and \\(z = 4\\), find \\(y\\) when \\(x = 4\\) and \\(z = 7\\).",
+    "options": [
+      "1344",
+      "22",
+      "56",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 6 \\times 4 = 24k\\), so \\(k = 2\\).\n\nWhen \\(x = 4\\) and \\(z = 7\\): \\(y = 2 \\times 4 \\times 7 = 56\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 20\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "40",
+      "20",
+      "36",
+      "80"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(20 = k \\times 2^{2} = 4k\\), so \\(k = 5\\).\n\nWhen \\(x = 4\\): \\(y = 5 \\times 4^{2} = 5 \\times 16 = 80\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 40\\) when \\(x = 8\\), find the constant of variation.",
+    "options": [
+      "0.2",
+      "320",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(40 = k \\times 8\\)\n\n\\(k = \\frac{40}{8} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 150\\) when \\(x = 5\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "186",
+      "36",
+      "216",
+      "180"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(150 = k \\times 5^{2} = 25k\\), so \\(k = 6\\).\n\nWhen \\(x = 6\\): \\(y = 6 \\times 6^{2} = 6 \\times 36 = 216\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 2\\) and \\(z = 3\\), find \\(y\\) when \\(x = 2\\) and \\(z = 2\\).",
+    "options": [
+      "144",
+      "14",
+      "24",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 2 \\times 3 = 6k\\), so \\(k = 6\\).\n\nWhen \\(x = 2\\) and \\(z = 2\\): \\(y = 6 \\times 2 \\times 2 = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 72\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 8\\) and \\(z = 5\\).",
+    "options": [
+      "78",
+      "53",
+      "2880",
+      "240"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(72 = k \\times 6 \\times 2 = 12k\\), so \\(k = 6\\).\n\nWhen \\(x = 8\\) and \\(z = 5\\): \\(y = 6 \\times 8 \\times 5 = 240\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 88\\) when \\(x = 11\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "20",
+      "40",
+      "13",
+      "93"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(88 = k \\times 11\\), so \\(k = 8\\).\n\nWhen \\(x = 5\\): \\(y = 8 \\times 5 = 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 64\\) when \\(x = 4\\) and \\(z = 4\\), find \\(y\\) when \\(x = 2\\) and \\(z = 5\\).",
+    "options": [
+      "40",
+      "28",
+      "13",
+      "640"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(64 = k \\times 4 \\times 4 = 16k\\), so \\(k = 4\\).\n\nWhen \\(x = 2\\) and \\(z = 5\\): \\(y = 4 \\times 2 \\times 5 = 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 24\\) when \\(x = 12\\), find \\(y\\) when \\(x = 15\\).",
+    "options": [
+      "17",
+      "30",
+      "39",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(24 = k \\times 12\\), so \\(k = 2\\).\n\nWhen \\(x = 15\\): \\(y = 2 \\times 15 = 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 18\\) when \\(x = 3\\), find the constant of variation.",
+    "options": [
+      "7",
+      "54",
+      "0.17",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(18 = k \\times 3\\)\n\n\\(k = \\frac{18}{3} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 10\\) when \\(x = 2\\), find the constant of variation.",
+    "options": [
+      "6",
+      "20",
+      "0.2",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(10 = k \\times 2\\)\n\n\\(k = \\frac{10}{2} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 72\\) when \\(x = 6\\) and \\(z = 3\\), find \\(y\\) when \\(x = 6\\) and \\(z = 2\\).",
+    "options": [
+      "864",
+      "26",
+      "32",
+      "48"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(72 = k \\times 6 \\times 3 = 18k\\), so \\(k = 4\\).\n\nWhen \\(x = 6\\) and \\(z = 2\\): \\(y = 4 \\times 6 \\times 2 = 48\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 45\\) when \\(x = 2\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "60",
+      "5",
+      "20",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(45 = \\frac{k}{2^{2}}\\), so \\(k = 45 \\times 4 = 180\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{180}{9} = 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 6\\) when \\(x = 12\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "18",
+      "288",
+      "2",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(6 = \\frac{k}{12}\\), so \\(k = 6 \\times 12 = 72\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{72}{4} = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 18\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 7\\) and \\(z = 2\\).",
+    "options": [
+      "252",
+      "42",
+      "27",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(18 = k \\times 3 \\times 2 = 6k\\), so \\(k = 3\\).\n\nWhen \\(x = 7\\) and \\(z = 2\\): \\(y = 3 \\times 7 \\times 2 = 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 56\\) when \\(x = 7\\), find \\(y\\) when \\(x = 15\\).",
+    "options": [
+      "71",
+      "60",
+      "23",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(56 = k \\times 7\\), so \\(k = 8\\).\n\nWhen \\(x = 15\\): \\(y = 8 \\times 15 = 120\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 108\\) when \\(x = 3\\) and \\(z = 6\\), find \\(y\\) when \\(x = 5\\) and \\(z = 7\\).",
+    "options": [
+      "72",
+      "37",
+      "210",
+      "3780"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(108 = k \\times 3 \\times 6 = 18k\\), so \\(k = 6\\).\n\nWhen \\(x = 5\\) and \\(z = 7\\): \\(y = 6 \\times 5 \\times 7 = 210\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 40\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "60",
+      "240",
+      "26.67",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(40 = \\frac{k}{3}\\), so \\(k = 40 \\times 3 = 120\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{120}{2} = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 33\\) when \\(x = 3\\), find the constant of variation.",
+    "options": [
+      "11",
+      "99",
+      "12",
+      "0.09"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(33 = k \\times 3\\)\n\n\\(k = \\frac{33}{3} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 48\\) when \\(x = 4\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "60",
+      "75",
+      "15",
+      "73"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(48 = k \\times 4^{2} = 16k\\), so \\(k = 3\\).\n\nWhen \\(x = 5\\): \\(y = 3 \\times 5^{2} = 3 \\times 25 = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 8\\) and \\(z = 2\\).",
+    "options": [
+      "58",
+      "70",
+      "1344",
+      "112"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 6 \\times 2 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 8\\) and \\(z = 2\\): \\(y = 7 \\times 8 \\times 2 = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 72\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "128",
+      "384",
+      "8",
+      "96"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(72 = \\frac{k}{4^{2}}\\), so \\(k = 72 \\times 16 = 1152\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{1152}{9} = 128\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 63\\) when \\(x = 9\\), find the constant of variation.",
+    "options": [
+      "8",
+      "0.14",
+      "567",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(63 = k \\times 9\\)\n\n\\(k = \\frac{63}{9} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 24\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "6",
+      "108",
+      "54",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(24 = \\frac{k}{3^{2}}\\), so \\(k = 24 \\times 9 = 216\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{216}{4} = 54\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 72\\) when \\(x = 6\\) and \\(z = 4\\), find \\(y\\) when \\(x = 4\\) and \\(z = 3\\).",
+    "options": [
+      "864",
+      "36",
+      "15",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(72 = k \\times 6 \\times 4 = 24k\\), so \\(k = 3\\).\n\nWhen \\(x = 4\\) and \\(z = 3\\): \\(y = 3 \\times 4 \\times 3 = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 80\\) when \\(x = 5\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "5",
+      "100",
+      "500",
+      "125"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(80 = \\frac{k}{5^{2}}\\), so \\(k = 80 \\times 25 = 2000\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{2000}{16} = 125\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 72\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "48",
+      "192",
+      "32",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(72 = \\frac{k}{4^{2}}\\), so \\(k = 72 \\times 16 = 1152\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{1152}{36} = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 32\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "48",
+      "64",
+      "32",
+      "128"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(32 = k \\times 2^{2} = 4k\\), so \\(k = 8\\).\n\nWhen \\(x = 4\\): \\(y = 8 \\times 4^{2} = 8 \\times 16 = 128\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 16\\) when \\(x = 4\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "128",
+      "4",
+      "64",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(16 = \\frac{k}{4^{2}}\\), so \\(k = 16 \\times 16 = 256\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{256}{4} = 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 27\\) when \\(x = 3\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "63",
+      "21",
+      "76",
+      "147"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(27 = k \\times 3^{2} = 9k\\), so \\(k = 3\\).\n\nWhen \\(x = 7\\): \\(y = 3 \\times 7^{2} = 3 \\times 49 = 147\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 80\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "180",
+      "45",
+      "60",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(80 = \\frac{k}{3^{2}}\\), so \\(k = 80 \\times 9 = 720\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{720}{16} = 45\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 12\\) when \\(x = 2\\) and \\(z = 3\\), find \\(y\\) when \\(x = 2\\) and \\(z = 4\\).",
+    "options": [
+      "96",
+      "16",
+      "8",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(12 = k \\times 2 \\times 3 = 6k\\), so \\(k = 2\\).\n\nWhen \\(x = 2\\) and \\(z = 4\\): \\(y = 2 \\times 2 \\times 4 = 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 4\\) and \\(z = 3\\).",
+    "options": [
+      "56",
+      "35",
+      "96",
+      "576"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 3 \\times 2 = 6k\\), so \\(k = 8\\).\n\nWhen \\(x = 4\\) and \\(z = 3\\): \\(y = 8 \\times 4 \\times 3 = 96\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 84\\) when \\(x = 7\\), find \\(y\\) when \\(x = 9\\).",
+    "options": [
+      "93",
+      "54",
+      "108",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(84 = k \\times 7\\), so \\(k = 12\\).\n\nWhen \\(x = 9\\): \\(y = 12 \\times 9 = 108\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 18\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "22",
+      "8",
+      "4",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(18 = k \\times 3^{2} = 9k\\), so \\(k = 2\\).\n\nWhen \\(x = 2\\): \\(y = 2 \\times 2^{2} = 2 \\times 4 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 108\\) when \\(x = 6\\) and \\(z = 6\\), find \\(y\\) when \\(x = 4\\) and \\(z = 5\\).",
+    "options": [
+      "2160",
+      "17",
+      "60",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(108 = k \\times 6 \\times 6 = 36k\\), so \\(k = 3\\).\n\nWhen \\(x = 4\\) and \\(z = 5\\): \\(y = 3 \\times 4 \\times 5 = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 132\\) when \\(x = 12\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "17",
+      "66",
+      "138",
+      "33"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(132 = k \\times 12\\), so \\(k = 11\\).\n\nWhen \\(x = 6\\): \\(y = 11 \\times 6 = 66\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 24\\) when \\(x = 8\\), find the constant of variation.",
+    "options": [
+      "192",
+      "4",
+      "0.33",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(24 = k \\times 8\\)\n\n\\(k = \\frac{24}{8} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 90\\) when \\(x = 5\\) and \\(z = 6\\), find \\(y\\) when \\(x = 5\\) and \\(z = 7\\).",
+    "options": [
+      "22",
+      "105",
+      "36",
+      "3150"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(90 = k \\times 5 \\times 6 = 30k\\), so \\(k = 3\\).\n\nWhen \\(x = 5\\) and \\(z = 7\\): \\(y = 3 \\times 5 \\times 7 = 105\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 144\\) when \\(x = 6\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "16",
+      "8",
+      "48",
+      "148"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(144 = k \\times 6^{2} = 36k\\), so \\(k = 4\\).\n\nWhen \\(x = 2\\): \\(y = 4 \\times 2^{2} = 4 \\times 4 = 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 45\\) when \\(x = 3\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "25",
+      "70",
+      "125",
+      "75"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(45 = k \\times 3^{2} = 9k\\), so \\(k = 5\\).\n\nWhen \\(x = 5\\): \\(y = 5 \\times 5^{2} = 5 \\times 25 = 125\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 2\\) and \\(z = 2\\).",
+    "options": [
+      "28",
+      "88",
+      "16",
+      "336"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 6 \\times 2 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 2\\) and \\(z = 2\\): \\(y = 7 \\times 2 \\times 2 = 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 30\\) when \\(x = 2\\), find the constant of variation.",
+    "options": [
+      "16",
+      "0.07",
+      "60",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(30 = k \\times 2\\)\n\n\\(k = \\frac{30}{2} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 10\\) when \\(x = 12\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "2.5",
+      "13",
+      "40",
+      "360"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(10 = \\frac{k}{12}\\), so \\(k = 10 \\times 12 = 120\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{120}{3} = 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 27\\) when \\(x = 3\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "75",
+      "52",
+      "15",
+      "45"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(27 = k \\times 3^{2} = 9k\\), so \\(k = 3\\).\n\nWhen \\(x = 5\\): \\(y = 3 \\times 5^{2} = 3 \\times 25 = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 8\\) when \\(x = 2\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "57",
+      "28",
+      "98",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(8 = k \\times 2^{2} = 4k\\), so \\(k = 2\\).\n\nWhen \\(x = 7\\): \\(y = 2 \\times 7^{2} = 2 \\times 49 = 98\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 360\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "160",
+      "960",
+      "240",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(360 = \\frac{k}{4^{2}}\\), so \\(k = 360 \\times 16 = 5760\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{5760}{36} = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 36\\) when \\(x = 2\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "48",
+      "16",
+      "24",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(36 = \\frac{k}{2^{2}}\\), so \\(k = 36 \\times 4 = 144\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{144}{9} = 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 33\\) when \\(x = 3\\), find \\(y\\) when \\(x = 11\\).",
+    "options": [
+      "121",
+      "60.5",
+      "44",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(33 = k \\times 3\\), so \\(k = 11\\).\n\nWhen \\(x = 11\\): \\(y = 11 \\times 11 = 121\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 50\\) when \\(x = 5\\) and \\(z = 2\\), find \\(y\\) when \\(x = 4\\) and \\(z = 6\\).",
+    "options": [
+      "1200",
+      "26",
+      "120",
+      "50"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(50 = k \\times 5 \\times 2 = 10k\\), so \\(k = 5\\).\n\nWhen \\(x = 4\\) and \\(z = 6\\): \\(y = 5 \\times 4 \\times 6 = 120\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 28\\) when \\(x = 4\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "112",
+      "224",
+      "7",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(28 = \\frac{k}{4^{2}}\\), so \\(k = 28 \\times 16 = 448\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{448}{4} = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 112\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "84",
+      "121",
+      "21",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(112 = k \\times 4^{2} = 16k\\), so \\(k = 7\\).\n\nWhen \\(x = 3\\): \\(y = 7 \\times 3^{2} = 7 \\times 9 = 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 360\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "180",
+      "10",
+      "540",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(360 = \\frac{k}{3^{2}}\\), so \\(k = 360 \\times 9 = 3240\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{3240}{36} = 90\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 324\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "144",
+      "9",
+      "864",
+      "216"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(324 = \\frac{k}{4^{2}}\\), so \\(k = 324 \\times 16 = 5184\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{5184}{36} = 144\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 98\\) when \\(x = 7\\), find the constant of variation.",
+    "options": [
+      "686",
+      "15",
+      "14",
+      "0.07"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(98 = k \\times 7\\)\n\n\\(k = \\frac{98}{7} = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 6\\) and \\(z = 3\\), find \\(y\\) when \\(x = 6\\) and \\(z = 5\\).",
+    "options": [
+      "17",
+      "22",
+      "60",
+      "1080"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 6 \\times 3 = 18k\\), so \\(k = 2\\).\n\nWhen \\(x = 6\\) and \\(z = 5\\): \\(y = 2 \\times 6 \\times 5 = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 12\\) when \\(x = 2\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "37",
+      "30",
+      "15",
+      "75"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(12 = k \\times 2^{2} = 4k\\), so \\(k = 3\\).\n\nWhen \\(x = 5\\): \\(y = 3 \\times 5^{2} = 3 \\times 25 = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 39\\) when \\(x = 3\\), find the constant of variation.",
+    "options": [
+      "14",
+      "0.08",
+      "13",
+      "117"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(39 = k \\times 3\\)\n\n\\(k = \\frac{39}{3} = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 63\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "84",
+      "7",
+      "112",
+      "336"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(63 = \\frac{k}{4^{2}}\\), so \\(k = 63 \\times 16 = 1008\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{1008}{9} = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 30\\) when \\(x = 3\\), find \\(y\\) when \\(x = 10\\).",
+    "options": [
+      "100",
+      "20",
+      "40",
+      "50"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(30 = k \\times 3\\), so \\(k = 10\\).\n\nWhen \\(x = 10\\): \\(y = 10 \\times 10 = 100\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 110\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "1210",
+      "11",
+      "0.1",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(110 = k \\times 11\\)\n\n\\(k = \\frac{110}{11} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 132\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "1452",
+      "12",
+      "13",
+      "0.08"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(132 = k \\times 11\\)\n\n\\(k = \\frac{132}{11} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 324\\) when \\(x = 6\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "18",
+      "108",
+      "36",
+      "328"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(324 = k \\times 6^{2} = 36k\\), so \\(k = 9\\).\n\nWhen \\(x = 2\\): \\(y = 9 \\times 2^{2} = 9 \\times 4 = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 12\\) when \\(x = 2\\) and \\(z = 2\\), find \\(y\\) when \\(x = 6\\) and \\(z = 6\\).",
+    "options": [
+      "108",
+      "24",
+      "432",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(12 = k \\times 2 \\times 2 = 4k\\), so \\(k = 3\\).\n\nWhen \\(x = 6\\) and \\(z = 6\\): \\(y = 3 \\times 6 \\times 6 = 108\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 78\\) when \\(x = 6\\), find the constant of variation.",
+    "options": [
+      "13",
+      "468",
+      "14",
+      "0.08"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(78 = k \\times 6\\)\n\n\\(k = \\frac{78}{6} = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 180\\) when \\(x = 6\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "320",
+      "240",
+      "244",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(180 = k \\times 6^{2} = 36k\\), so \\(k = 5\\).\n\nWhen \\(x = 8\\): \\(y = 5 \\times 8^{2} = 5 \\times 64 = 320\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 50\\) when \\(x = 2\\) and \\(z = 5\\), find \\(y\\) when \\(x = 3\\) and \\(z = 2\\).",
+    "options": [
+      "25",
+      "30",
+      "300",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(50 = k \\times 2 \\times 5 = 10k\\), so \\(k = 5\\).\n\nWhen \\(x = 3\\) and \\(z = 2\\): \\(y = 5 \\times 3 \\times 2 = 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 11\\) when \\(x = 12\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "44",
+      "14",
+      "2.75",
+      "396"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(11 = \\frac{k}{12}\\), so \\(k = 11 \\times 12 = 132\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{132}{3} = 44\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 16\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "10.67",
+      "96",
+      "18",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(16 = \\frac{k}{3}\\), so \\(k = 16 \\times 3 = 48\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{48}{2} = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 175\\) when \\(x = 5\\) and \\(z = 5\\), find \\(y\\) when \\(x = 3\\) and \\(z = 3\\).",
+    "options": [
+      "1575",
+      "63",
+      "42",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(175 = k \\times 5 \\times 5 = 25k\\), so \\(k = 7\\).\n\nWhen \\(x = 3\\) and \\(z = 3\\): \\(y = 7 \\times 3 \\times 3 = 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 66\\) when \\(x = 6\\), find \\(y\\) when \\(x = 13\\).",
+    "options": [
+      "143",
+      "71.5",
+      "79",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(66 = k \\times 6\\), so \\(k = 11\\).\n\nWhen \\(x = 13\\): \\(y = 11 \\times 13 = 143\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 24\\) when \\(x = 5\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "150",
+      "6",
+      "300",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(24 = \\frac{k}{5^{2}}\\), so \\(k = 24 \\times 25 = 600\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{600}{4} = 150\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 110\\) when \\(x = 11\\), find \\(y\\) when \\(x = 20\\).",
+    "options": [
+      "30",
+      "130",
+      "200",
+      "100"
+    ],
+    "correctIndex": 2,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(110 = k \\times 11\\), so \\(k = 10\\).\n\nWhen \\(x = 20\\): \\(y = 10 \\times 20 = 200\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 90\\) when \\(x = 5\\) and \\(z = 3\\), find \\(y\\) when \\(x = 5\\) and \\(z = 8\\).",
+    "options": [
+      "38",
+      "240",
+      "3600",
+      "78"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(90 = k \\times 5 \\times 3 = 15k\\), so \\(k = 6\\).\n\nWhen \\(x = 5\\) and \\(z = 8\\): \\(y = 6 \\times 5 \\times 8 = 240\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 192\\) when \\(x = 4\\) and \\(z = 6\\), find \\(y\\) when \\(x = 5\\) and \\(z = 5\\).",
+    "options": [
+      "4800",
+      "200",
+      "80",
+      "45"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(192 = k \\times 4 \\times 6 = 24k\\), so \\(k = 8\\).\n\nWhen \\(x = 5\\) and \\(z = 5\\): \\(y = 8 \\times 5 \\times 5 = 200\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 80\\) when \\(x = 5\\) and \\(z = 4\\), find \\(y\\) when \\(x = 7\\) and \\(z = 6\\).",
+    "options": [
+      "52",
+      "168",
+      "3360",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(80 = k \\times 5 \\times 4 = 20k\\), so \\(k = 4\\).\n\nWhen \\(x = 7\\) and \\(z = 6\\): \\(y = 4 \\times 7 \\times 6 = 168\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 8\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "12",
+      "72",
+      "24",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(8 = k \\times 2^{2} = 4k\\), so \\(k = 2\\).\n\nWhen \\(x = 6\\): \\(y = 2 \\times 6^{2} = 2 \\times 36 = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 20\\) when \\(x = 2\\) and \\(z = 5\\), find \\(y\\) when \\(x = 2\\) and \\(z = 2\\).",
+    "options": [
+      "80",
+      "6",
+      "8",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(20 = k \\times 2 \\times 5 = 10k\\), so \\(k = 2\\).\n\nWhen \\(x = 2\\) and \\(z = 2\\): \\(y = 2 \\times 2 \\times 2 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 112\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "7",
+      "112",
+      "28",
+      "56"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(112 = \\frac{k}{2^{2}}\\), so \\(k = 112 \\times 4 = 448\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{448}{16} = 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 50\\) when \\(x = 5\\) and \\(z = 2\\), find \\(y\\) when \\(x = 5\\) and \\(z = 8\\).",
+    "options": [
+      "33",
+      "65",
+      "2000",
+      "200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(50 = k \\times 5 \\times 2 = 10k\\), so \\(k = 5\\).\n\nWhen \\(x = 5\\) and \\(z = 8\\): \\(y = 5 \\times 5 \\times 8 = 200\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 48\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "24",
+      "48",
+      "3",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(48 = \\frac{k}{2^{2}}\\), so \\(k = 48 \\times 4 = 192\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{192}{16} = 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 45\\) when \\(x = 5\\), find the constant of variation.",
+    "options": [
+      "225",
+      "9",
+      "0.11",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(45 = k \\times 5\\)\n\n\\(k = \\frac{45}{5} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 30\\) when \\(x = 5\\) and \\(z = 3\\), find \\(y\\) when \\(x = 5\\) and \\(z = 6\\).",
+    "options": [
+      "22",
+      "900",
+      "16",
+      "60"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(30 = k \\times 5 \\times 3 = 15k\\), so \\(k = 2\\).\n\nWhen \\(x = 5\\) and \\(z = 6\\): \\(y = 2 \\times 5 \\times 6 = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 36\\) when \\(x = 5\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "4",
+      "300",
+      "60",
+      "100"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(36 = \\frac{k}{5^{2}}\\), so \\(k = 36 \\times 25 = 900\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{900}{9} = 100\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 50\\) when \\(x = 5\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "60",
+      "86",
+      "72",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(50 = k \\times 5^{2} = 25k\\), so \\(k = 2\\).\n\nWhen \\(x = 6\\): \\(y = 2 \\times 6^{2} = 2 \\times 36 = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 36\\) when \\(x = 2\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "45",
+      "27",
+      "54",
+      "81"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(36 = k \\times 2^{2} = 4k\\), so \\(k = 9\\).\n\nWhen \\(x = 3\\): \\(y = 9 \\times 3^{2} = 9 \\times 9 = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 20\\) when \\(x = 2\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "45",
+      "50",
+      "25",
+      "125"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(20 = k \\times 2^{2} = 4k\\), so \\(k = 5\\).\n\nWhen \\(x = 5\\): \\(y = 5 \\times 5^{2} = 5 \\times 25 = 125\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 32\\) when \\(x = 2\\) and \\(z = 4\\), find \\(y\\) when \\(x = 8\\) and \\(z = 3\\).",
+    "options": [
+      "44",
+      "768",
+      "96",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(32 = k \\times 2 \\times 4 = 8k\\), so \\(k = 4\\).\n\nWhen \\(x = 8\\) and \\(z = 3\\): \\(y = 4 \\times 8 \\times 3 = 96\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 48\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "27",
+      "36",
+      "108",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(48 = \\frac{k}{3^{2}}\\), so \\(k = 48 \\times 9 = 432\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{432}{16} = 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 54\\) when \\(x = 5\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "150",
+      "6",
+      "450",
+      "90"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(54 = \\frac{k}{5^{2}}\\), so \\(k = 54 \\times 25 = 1350\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{1350}{9} = 150\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 3\\) and \\(z = 6\\), find \\(y\\) when \\(x = 5\\) and \\(z = 2\\).",
+    "options": [
+      "12",
+      "20",
+      "14",
+      "360"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 3 \\times 6 = 18k\\), so \\(k = 2\\).\n\nWhen \\(x = 5\\) and \\(z = 2\\): \\(y = 2 \\times 5 \\times 2 = 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 42\\) when \\(x = 6\\), find the constant of variation.",
+    "options": [
+      "8",
+      "7",
+      "252",
+      "0.14"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(42 = k \\times 6\\)\n\n\\(k = \\frac{42}{6} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 27\\) when \\(x = 4\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "81",
+      "9",
+      "1296",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(27 = \\frac{k}{4}\\), so \\(k = 27 \\times 4 = 108\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{108}{12} = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 64\\) when \\(x = 2\\) and \\(z = 4\\), find \\(y\\) when \\(x = 8\\) and \\(z = 2\\).",
+    "options": [
+      "128",
+      "80",
+      "66",
+      "1024"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(64 = k \\times 2 \\times 4 = 8k\\), so \\(k = 8\\).\n\nWhen \\(x = 8\\) and \\(z = 2\\): \\(y = 8 \\times 8 \\times 2 = 128\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 27\\) when \\(x = 2\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "18",
+      "12",
+      "36",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(27 = \\frac{k}{2^{2}}\\), so \\(k = 27 \\times 4 = 108\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{108}{9} = 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 60\\) when \\(x = 5\\) and \\(z = 2\\), find \\(y\\) when \\(x = 3\\) and \\(z = 2\\).",
+    "options": [
+      "360",
+      "20",
+      "36",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(60 = k \\times 5 \\times 2 = 10k\\), so \\(k = 6\\).\n\nWhen \\(x = 3\\) and \\(z = 2\\): \\(y = 6 \\times 3 \\times 2 = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 36\\) when \\(x = 3\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "48",
+      "144",
+      "1296",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(36 = \\frac{k}{3}\\), so \\(k = 36 \\times 3 = 108\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{108}{12} = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 128\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "72",
+      "96",
+      "8",
+      "288"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(128 = \\frac{k}{3^{2}}\\), so \\(k = 128 \\times 9 = 1152\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{1152}{16} = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 25\\) when \\(x = 5\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "7.5",
+      "8",
+      "28",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(25 = k \\times 5\\), so \\(k = 5\\).\n\nWhen \\(x = 3\\): \\(y = 5 \\times 3 = 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 144\\) when \\(x = 4\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "36",
+      "18",
+      "72",
+      "148"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(144 = k \\times 4^{2} = 16k\\), so \\(k = 9\\).\n\nWhen \\(x = 2\\): \\(y = 9 \\times 2^{2} = 9 \\times 4 = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 20\\) when \\(x = 5\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "50",
+      "5",
+      "250",
+      "125"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(20 = \\frac{k}{5^{2}}\\), so \\(k = 20 \\times 25 = 500\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{500}{4} = 125\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 90\\) when \\(x = 3\\) and \\(z = 5\\), find \\(y\\) when \\(x = 8\\) and \\(z = 7\\).",
+    "options": [
+      "5040",
+      "90",
+      "336",
+      "55"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(90 = k \\times 3 \\times 5 = 15k\\), so \\(k = 6\\).\n\nWhen \\(x = 8\\) and \\(z = 7\\): \\(y = 6 \\times 8 \\times 7 = 336\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 54\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "96",
+      "72",
+      "6",
+      "288"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(54 = \\frac{k}{4^{2}}\\), so \\(k = 54 \\times 16 = 864\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{864}{9} = 96\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 32\\) when \\(x = 2\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "64",
+      "128",
+      "512",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(32 = k \\times 2^{2} = 4k\\), so \\(k = 8\\).\n\nWhen \\(x = 8\\): \\(y = 8 \\times 8^{2} = 8 \\times 64 = 512\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 252\\) when \\(x = 6\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "126",
+      "261",
+      "63",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(252 = k \\times 6^{2} = 36k\\), so \\(k = 7\\).\n\nWhen \\(x = 3\\): \\(y = 7 \\times 3^{2} = 7 \\times 9 = 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 30\\) when \\(x = 10\\), find the constant of variation.",
+    "options": [
+      "300",
+      "0.33",
+      "4",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(30 = k \\times 10\\)\n\n\\(k = \\frac{30}{10} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 63\\) when \\(x = 3\\) and \\(z = 3\\), find \\(y\\) when \\(x = 8\\) and \\(z = 2\\).",
+    "options": [
+      "70",
+      "1008",
+      "58",
+      "112"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(63 = k \\times 3 \\times 3 = 9k\\), so \\(k = 7\\).\n\nWhen \\(x = 8\\) and \\(z = 2\\): \\(y = 7 \\times 8 \\times 2 = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 18\\) when \\(x = 3\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "98",
+      "67",
+      "14",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(18 = k \\times 3^{2} = 9k\\), so \\(k = 2\\).\n\nWhen \\(x = 7\\): \\(y = 2 \\times 7^{2} = 2 \\times 49 = 98\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 175\\) when \\(x = 5\\), find \\(y\\) when \\(x = 7\\).",
+    "options": [
+      "49",
+      "224",
+      "245",
+      "343"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(175 = k \\times 5^{2} = 25k\\), so \\(k = 7\\).\n\nWhen \\(x = 7\\): \\(y = 7 \\times 7^{2} = 7 \\times 49 = 343\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 40\\) when \\(x = 5\\) and \\(z = 2\\), find \\(y\\) when \\(x = 5\\) and \\(z = 6\\).",
+    "options": [
+      "44",
+      "120",
+      "26",
+      "1200"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(40 = k \\times 5 \\times 2 = 10k\\), so \\(k = 4\\).\n\nWhen \\(x = 5\\) and \\(z = 6\\): \\(y = 4 \\times 5 \\times 6 = 120\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 16\\) when \\(x = 4\\), find the constant of variation.",
+    "options": [
+      "0.25",
+      "5",
+      "64",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(16 = k \\times 4\\)\n\n\\(k = \\frac{16}{4} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 56\\) when \\(x = 8\\), find \\(y\\) when \\(x = 9\\).",
+    "options": [
+      "16",
+      "31.5",
+      "63",
+      "65"
+    ],
+    "correctIndex": 2,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(56 = k \\times 8\\), so \\(k = 7\\).\n\nWhen \\(x = 9\\): \\(y = 7 \\times 9 = 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 54\\) when \\(x = 3\\) and \\(z = 6\\), find \\(y\\) when \\(x = 4\\) and \\(z = 2\\).",
+    "options": [
+      "18",
+      "14",
+      "24",
+      "432"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(54 = k \\times 3 \\times 6 = 18k\\), so \\(k = 3\\).\n\nWhen \\(x = 4\\) and \\(z = 2\\): \\(y = 3 \\times 4 \\times 2 = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 4\\) and \\(z = 4\\), find \\(y\\) when \\(x = 4\\) and \\(z = 2\\).",
+    "options": [
+      "14",
+      "384",
+      "18",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 4 \\times 4 = 16k\\), so \\(k = 3\\).\n\nWhen \\(x = 4\\) and \\(z = 2\\): \\(y = 3 \\times 4 \\times 2 = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 180\\) when \\(x = 5\\) and \\(z = 6\\), find \\(y\\) when \\(x = 6\\) and \\(z = 3\\).",
+    "options": [
+      "108",
+      "3240",
+      "39",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(180 = k \\times 5 \\times 6 = 30k\\), so \\(k = 6\\).\n\nWhen \\(x = 6\\) and \\(z = 3\\): \\(y = 6 \\times 6 \\times 3 = 108\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 132\\) when \\(x = 11\\), find \\(y\\) when \\(x = 16\\).",
+    "options": [
+      "192",
+      "28",
+      "96",
+      "148"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(132 = k \\times 11\\), so \\(k = 12\\).\n\nWhen \\(x = 16\\): \\(y = 12 \\times 16 = 192\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 324\\) when \\(x = 6\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "333",
+      "81",
+      "27",
+      "162"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(324 = k \\times 6^{2} = 36k\\), so \\(k = 9\\).\n\nWhen \\(x = 3\\): \\(y = 9 \\times 3^{2} = 9 \\times 9 = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 7\\) and \\(z = 6\\).",
+    "options": [
+      "3528",
+      "91",
+      "55",
+      "294"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 6 \\times 2 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 7\\) and \\(z = 6\\): \\(y = 7 \\times 7 \\times 6 = 294\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 80\\) when \\(x = 4\\) and \\(z = 4\\), find \\(y\\) when \\(x = 8\\) and \\(z = 3\\).",
+    "options": [
+      "43",
+      "1920",
+      "55",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(80 = k \\times 4 \\times 4 = 16k\\), so \\(k = 5\\).\n\nWhen \\(x = 8\\) and \\(z = 3\\): \\(y = 5 \\times 8 \\times 3 = 120\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 144\\) when \\(x = 4\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "208",
+      "576",
+      "72",
+      "288"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(144 = k \\times 4^{2} = 16k\\), so \\(k = 9\\).\n\nWhen \\(x = 8\\): \\(y = 9 \\times 8^{2} = 9 \\times 64 = 576\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 16\\) when \\(x = 2\\), find \\(y\\) when \\(x = 10\\).",
+    "options": [
+      "80",
+      "40",
+      "18",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(16 = k \\times 2\\), so \\(k = 8\\).\n\nWhen \\(x = 10\\): \\(y = 8 \\times 10 = 80\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 90\\) when \\(x = 9\\), find the constant of variation.",
+    "options": [
+      "0.1",
+      "11",
+      "810",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(90 = k \\times 9\\)\n\n\\(k = \\frac{90}{9} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 28\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "34",
+      "13",
+      "21",
+      "42"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(28 = k \\times 4\\), so \\(k = 7\\).\n\nWhen \\(x = 6\\): \\(y = 7 \\times 6 = 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 12\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 2\\) and \\(z = 5\\).",
+    "options": [
+      "9",
+      "20",
+      "120",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(12 = k \\times 3 \\times 2 = 6k\\), so \\(k = 2\\).\n\nWhen \\(x = 2\\) and \\(z = 5\\): \\(y = 2 \\times 2 \\times 5 = 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 84\\) when \\(x = 7\\), find the constant of variation.",
+    "options": [
+      "588",
+      "12",
+      "0.08",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(84 = k \\times 7\\)\n\n\\(k = \\frac{84}{7} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 12\\) when \\(x = 5\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "30",
+      "3",
+      "75",
+      "150"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(12 = \\frac{k}{5^{2}}\\), so \\(k = 12 \\times 25 = 300\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{300}{4} = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 72\\) when \\(x = 6\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "32",
+      "8",
+      "88",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(72 = k \\times 6^{2} = 36k\\), so \\(k = 2\\).\n\nWhen \\(x = 4\\): \\(y = 2 \\times 4^{2} = 2 \\times 16 = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 18\\) when \\(x = 4\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "54",
+      "6",
+      "864",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(18 = \\frac{k}{4}\\), so \\(k = 18 \\times 4 = 72\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{72}{12} = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 132\\) when \\(x = 11\\), find \\(y\\) when \\(x = 19\\).",
+    "options": [
+      "228",
+      "31",
+      "114",
+      "151"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(132 = k \\times 11\\), so \\(k = 12\\).\n\nWhen \\(x = 19\\): \\(y = 12 \\times 19 = 228\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 7\\) and \\(z = 3\\).",
+    "options": [
+      "756",
+      "24",
+      "30",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 6 \\times 2 = 12k\\), so \\(k = 3\\).\n\nWhen \\(x = 7\\) and \\(z = 3\\): \\(y = 3 \\times 7 \\times 3 = 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 48\\) when \\(x = 4\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "112",
+      "192",
+      "24",
+      "96"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(48 = k \\times 4^{2} = 16k\\), so \\(k = 3\\).\n\nWhen \\(x = 8\\): \\(y = 3 \\times 8^{2} = 3 \\times 64 = 192\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 8\\) and \\(z = 8\\).",
+    "options": [
+      "56",
+      "2304",
+      "384",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 3 \\times 2 = 6k\\), so \\(k = 6\\).\n\nWhen \\(x = 8\\) and \\(z = 8\\): \\(y = 6 \\times 8 \\times 8 = 384\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 72\\) when \\(x = 4\\) and \\(z = 3\\), find \\(y\\) when \\(x = 8\\) and \\(z = 7\\).",
+    "options": [
+      "90",
+      "55",
+      "336",
+      "4032"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(72 = k \\times 4 \\times 3 = 12k\\), so \\(k = 6\\).\n\nWhen \\(x = 8\\) and \\(z = 7\\): \\(y = 6 \\times 8 \\times 7 = 336\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 36\\) when \\(x = 4\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "18",
+      "1152",
+      "44",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(36 = \\frac{k}{4}\\), so \\(k = 36 \\times 4 = 144\\).\n\nWhen \\(x = 8\\): \\(y = \\frac{144}{8} = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 28\\) when \\(x = 2\\) and \\(z = 2\\), find \\(y\\) when \\(x = 4\\) and \\(z = 2\\).",
+    "options": [
+      "224",
+      "42",
+      "30",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(28 = k \\times 2 \\times 2 = 4k\\), so \\(k = 7\\).\n\nWhen \\(x = 4\\) and \\(z = 2\\): \\(y = 7 \\times 4 \\times 2 = 56\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 45\\) when \\(x = 4\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "15",
+      "2160",
+      "57",
+      "135"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(45 = \\frac{k}{4}\\), so \\(k = 45 \\times 4 = 180\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{180}{12} = 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 324\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "9",
+      "162",
+      "486",
+      "81"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(324 = \\frac{k}{3^{2}}\\), so \\(k = 324 \\times 9 = 2916\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{2916}{36} = 81\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 84\\) when \\(x = 7\\), find \\(y\\) when \\(x = 10\\).",
+    "options": [
+      "60",
+      "22",
+      "120",
+      "94"
+    ],
+    "correctIndex": 2,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(84 = k \\times 7\\), so \\(k = 12\\).\n\nWhen \\(x = 10\\): \\(y = 12 \\times 10 = 120\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 40\\) when \\(x = 10\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "8",
+      "42",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(40 = k \\times 10\\), so \\(k = 4\\).\n\nWhen \\(x = 2\\): \\(y = 4 \\times 2 = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 180\\) when \\(x = 5\\) and \\(z = 6\\), find \\(y\\) when \\(x = 3\\) and \\(z = 4\\).",
+    "options": [
+      "22",
+      "72",
+      "42",
+      "2160"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(180 = k \\times 5 \\times 6 = 30k\\), so \\(k = 6\\).\n\nWhen \\(x = 3\\) and \\(z = 4\\): \\(y = 6 \\times 3 \\times 4 = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 60\\) when \\(x = 5\\) and \\(z = 3\\), find \\(y\\) when \\(x = 7\\) and \\(z = 3\\).",
+    "options": [
+      "1260",
+      "40",
+      "84",
+      "31"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(60 = k \\times 5 \\times 3 = 15k\\), so \\(k = 4\\).\n\nWhen \\(x = 7\\) and \\(z = 3\\): \\(y = 4 \\times 7 \\times 3 = 84\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 8\\) when \\(x = 4\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "16",
+      "32",
+      "64",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(8 = \\frac{k}{4^{2}}\\), so \\(k = 8 \\times 16 = 128\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{128}{4} = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 60\\) when \\(x = 3\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "15",
+      "72",
+      "2160",
+      "240"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(60 = \\frac{k}{3}\\), so \\(k = 60 \\times 3 = 180\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{180}{12} = 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 75\\) when \\(x = 5\\) and \\(z = 3\\), find \\(y\\) when \\(x = 3\\) and \\(z = 8\\).",
+    "options": [
+      "55",
+      "23",
+      "120",
+      "1800"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(75 = k \\times 5 \\times 3 = 15k\\), so \\(k = 5\\).\n\nWhen \\(x = 3\\) and \\(z = 8\\): \\(y = 5 \\times 3 \\times 8 = 120\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 112\\) when \\(x = 4\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "140",
+      "35",
+      "137",
+      "175"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(112 = k \\times 4^{2} = 16k\\), so \\(k = 7\\).\n\nWhen \\(x = 5\\): \\(y = 7 \\times 5^{2} = 7 \\times 25 = 175\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 25\\) when \\(x = 5\\), find the constant of variation.",
+    "options": [
+      "125",
+      "6",
+      "0.2",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(25 = k \\times 5\\)\n\n\\(k = \\frac{25}{5} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 5\\) and \\(z = 8\\).",
+    "options": [
+      "28",
+      "1920",
+      "160",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 6 \\times 2 = 12k\\), so \\(k = 4\\).\n\nWhen \\(x = 5\\) and \\(z = 8\\): \\(y = 4 \\times 5 \\times 8 = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 63\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "99",
+      "252",
+      "42",
+      "126"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(63 = k \\times 3^{2} = 9k\\), so \\(k = 7\\).\n\nWhen \\(x = 6\\): \\(y = 7 \\times 6^{2} = 7 \\times 36 = 252\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 12\\) when \\(x = 2\\), find the constant of variation.",
+    "options": [
+      "24",
+      "6",
+      "7",
+      "0.17"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(12 = k \\times 2\\)\n\n\\(k = \\frac{12}{2} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 35\\) when \\(x = 5\\), find the constant of variation.",
+    "options": [
+      "0.14",
+      "8",
+      "7",
+      "175"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(35 = k \\times 5\\)\n\n\\(k = \\frac{35}{5} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 66\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "72",
+      "198",
+      "792",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(66 = \\frac{k}{2}\\), so \\(k = 66 \\times 2 = 132\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{132}{6} = 22\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 72\\) when \\(x = 9\\), find the constant of variation.",
+    "options": [
+      "9",
+      "648",
+      "0.13",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(72 = k \\times 9\\)\n\n\\(k = \\frac{72}{9} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 16\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "192",
+      "21.33",
+      "12",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(16 = \\frac{k}{3}\\), so \\(k = 16 \\times 3 = 48\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{48}{4} = 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 55\\) when \\(x = 5\\), find the constant of variation.",
+    "options": [
+      "275",
+      "11",
+      "0.09",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(55 = k \\times 5\\)\n\n\\(k = \\frac{55}{5} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 72\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "36",
+      "108",
+      "18",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(72 = \\frac{k}{3^{2}}\\), so \\(k = 72 \\times 9 = 648\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{648}{36} = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 7\\) and \\(z = 2\\).",
+    "options": [
+      "84",
+      "504",
+      "54",
+      "44"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 3 \\times 2 = 6k\\), so \\(k = 6\\).\n\nWhen \\(x = 7\\) and \\(z = 2\\): \\(y = 6 \\times 7 \\times 2 = 84\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 33\\) when \\(x = 3\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "41",
+      "19",
+      "44",
+      "88"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(33 = k \\times 3\\), so \\(k = 11\\).\n\nWhen \\(x = 8\\): \\(y = 11 \\times 8 = 88\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 288\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "432",
+      "72",
+      "144",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(288 = \\frac{k}{3^{2}}\\), so \\(k = 288 \\times 9 = 2592\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{2592}{36} = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 20\\) when \\(x = 5\\), find \\(y\\) when \\(x = 13\\).",
+    "options": [
+      "17",
+      "52",
+      "33",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(20 = k \\times 5\\), so \\(k = 4\\).\n\nWhen \\(x = 13\\): \\(y = 4 \\times 13 = 52\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 48\\) when \\(x = 4\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "52",
+      "6",
+      "24",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(48 = k \\times 4^{2} = 16k\\), so \\(k = 3\\).\n\nWhen \\(x = 2\\): \\(y = 3 \\times 2^{2} = 3 \\times 4 = 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 36\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "4",
+      "64",
+      "48",
+      "192"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(36 = \\frac{k}{4^{2}}\\), so \\(k = 36 \\times 16 = 576\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{576}{9} = 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 48\\) when \\(x = 2\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "72",
+      "288",
+      "51",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(48 = \\frac{k}{2}\\), so \\(k = 48 \\times 2 = 96\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{96}{3} = 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 30\\) when \\(x = 3\\), find the constant of variation.",
+    "options": [
+      "10",
+      "90",
+      "0.1",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(30 = k \\times 3\\)\n\n\\(k = \\frac{30}{3} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 49\\) when \\(x = 7\\), find \\(y\\) when \\(x = 19\\).",
+    "options": [
+      "68",
+      "133",
+      "66.5",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(49 = k \\times 7\\), so \\(k = 7\\).\n\nWhen \\(x = 19\\): \\(y = 7 \\times 19 = 133\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 40\\) when \\(x = 3\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "46",
+      "720",
+      "20",
+      "80"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(40 = \\frac{k}{3}\\), so \\(k = 40 \\times 3 = 120\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{120}{6} = 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 140\\) when \\(x = 4\\) and \\(z = 5\\), find \\(y\\) when \\(x = 3\\) and \\(z = 7\\).",
+    "options": [
+      "147",
+      "2940",
+      "70",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(140 = k \\times 4 \\times 5 = 20k\\), so \\(k = 7\\).\n\nWhen \\(x = 3\\) and \\(z = 7\\): \\(y = 7 \\times 3 \\times 7 = 147\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 4\\) and \\(z = 3\\), find \\(y\\) when \\(x = 5\\) and \\(z = 6\\).",
+    "options": [
+      "77",
+      "210",
+      "2520",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 4 \\times 3 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 5\\) and \\(z = 6\\): \\(y = 7 \\times 5 \\times 6 = 210\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 64\\) when \\(x = 3\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "144",
+      "48",
+      "4",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(64 = \\frac{k}{3^{2}}\\), so \\(k = 64 \\times 9 = 576\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{576}{16} = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 72\\) when \\(x = 2\\) and \\(z = 6\\), find \\(y\\) when \\(x = 3\\) and \\(z = 7\\).",
+    "options": [
+      "1512",
+      "126",
+      "60",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(72 = k \\times 2 \\times 6 = 12k\\), so \\(k = 6\\).\n\nWhen \\(x = 3\\) and \\(z = 7\\): \\(y = 6 \\times 3 \\times 7 = 126\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 128\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "288",
+      "164",
+      "192",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(128 = k \\times 4^{2} = 16k\\), so \\(k = 8\\).\n\nWhen \\(x = 6\\): \\(y = 8 \\times 6^{2} = 8 \\times 36 = 288\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 28\\) when \\(x = 7\\), find the constant of variation.",
+    "options": [
+      "0.25",
+      "196",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(28 = k \\times 7\\)\n\n\\(k = \\frac{28}{7} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 130\\) when \\(x = 10\\), find the constant of variation.",
+    "options": [
+      "0.08",
+      "1300",
+      "13",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(130 = k \\times 10\\)\n\n\\(k = \\frac{130}{10} = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 18\\) when \\(x = 6\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "22",
+      "12",
+      "27",
+      "432"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(18 = \\frac{k}{6}\\), so \\(k = 18 \\times 6 = 108\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{108}{4} = 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 12\\) when \\(x = 3\\), find the constant of variation.",
+    "options": [
+      "4",
+      "36",
+      "5",
+      "0.25"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(12 = k \\times 3\\)\n\n\\(k = \\frac{12}{3} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 108\\) when \\(x = 9\\), find the constant of variation.",
+    "options": [
+      "12",
+      "13",
+      "0.08",
+      "972"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(108 = k \\times 9\\)\n\n\\(k = \\frac{108}{9} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 50\\) when \\(x = 5\\), find \\(y\\) when \\(x = 16\\).",
+    "options": [
+      "66",
+      "26",
+      "160",
+      "80"
+    ],
+    "correctIndex": 2,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(50 = k \\times 5\\), so \\(k = 10\\).\n\nWhen \\(x = 16\\): \\(y = 10 \\times 16 = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 60\\) when \\(x = 12\\), find the constant of variation.",
+    "options": [
+      "720",
+      "5",
+      "6",
+      "0.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(60 = k \\times 12\\)\n\n\\(k = \\frac{60}{12} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 4\\) and \\(z = 3\\), find \\(y\\) when \\(x = 6\\) and \\(z = 3\\).",
+    "options": [
+      "27",
+      "864",
+      "72",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 4 \\times 3 = 12k\\), so \\(k = 4\\).\n\nWhen \\(x = 6\\) and \\(z = 3\\): \\(y = 4 \\times 6 \\times 3 = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 72\\) when \\(x = 12\\), find \\(y\\) when \\(x = 18\\).",
+    "options": [
+      "24",
+      "90",
+      "54",
+      "108"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(72 = k \\times 12\\), so \\(k = 6\\).\n\nWhen \\(x = 18\\): \\(y = 6 \\times 18 = 108\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 36\\) when \\(x = 5\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "90",
+      "9",
+      "450",
+      "225"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(36 = \\frac{k}{5^{2}}\\), so \\(k = 36 \\times 25 = 900\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{900}{4} = 225\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 3\\) and \\(z = 7\\).",
+    "options": [
+      "84",
+      "19",
+      "40",
+      "1008"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 6 \\times 2 = 12k\\), so \\(k = 4\\).\n\nWhen \\(x = 3\\) and \\(z = 7\\): \\(y = 4 \\times 3 \\times 7 = 84\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 60\\) when \\(x = 4\\) and \\(z = 3\\), find \\(y\\) when \\(x = 3\\) and \\(z = 5\\).",
+    "options": [
+      "40",
+      "900",
+      "75",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(60 = k \\times 4 \\times 3 = 12k\\), so \\(k = 5\\).\n\nWhen \\(x = 3\\) and \\(z = 5\\): \\(y = 5 \\times 3 \\times 5 = 75\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 165\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "15",
+      "1815",
+      "16",
+      "0.07"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx\\)\n\n\\(165 = k \\times 11\\)\n\n\\(k = \\frac{165}{11} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 126\\) when \\(x = 9\\), find the constant of variation.",
+    "options": [
+      "15",
+      "1134",
+      "0.07",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(126 = k \\times 9\\)\n\n\\(k = \\frac{126}{9} = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 22\\) when \\(x = 11\\), find the constant of variation.",
+    "options": [
+      "0.5",
+      "2",
+      "242",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx\\)\n\n\\(22 = k \\times 11\\)\n\n\\(k = \\frac{22}{11} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 4\\) and \\(z = 3\\), find \\(y\\) when \\(x = 7\\) and \\(z = 8\\).",
+    "options": [
+      "57",
+      "4704",
+      "392",
+      "105"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 4 \\times 3 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 7\\) and \\(z = 8\\): \\(y = 7 \\times 7 \\times 8 = 392\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 252\\) when \\(x = 6\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "336",
+      "56",
+      "316",
+      "448"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(252 = k \\times 6^{2} = 36k\\), so \\(k = 7\\).\n\nWhen \\(x = 8\\): \\(y = 7 \\times 8^{2} = 7 \\times 64 = 448\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 25\\) when \\(x = 5\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "37",
+      "17",
+      "30",
+      "60"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(25 = k \\times 5\\), so \\(k = 5\\).\n\nWhen \\(x = 12\\): \\(y = 5 \\times 12 = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 18\\) when \\(x = 2\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "432",
+      "30",
+      "3",
+      "108"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(18 = \\frac{k}{2}\\), so \\(k = 18 \\times 2 = 36\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{36}{12} = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 48\\) when \\(x = 4\\) and \\(z = 4\\), find \\(y\\) when \\(x = 7\\) and \\(z = 8\\).",
+    "options": [
+      "2688",
+      "29",
+      "168",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(48 = k \\times 4 \\times 4 = 16k\\), so \\(k = 3\\).\n\nWhen \\(x = 7\\) and \\(z = 8\\): \\(y = 3 \\times 7 \\times 8 = 168\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 50\\) when \\(x = 2\\) and \\(z = 5\\), find \\(y\\) when \\(x = 8\\) and \\(z = 6\\).",
+    "options": [
+      "2400",
+      "46",
+      "70",
+      "240"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(50 = k \\times 2 \\times 5 = 10k\\), so \\(k = 5\\).\n\nWhen \\(x = 8\\) and \\(z = 6\\): \\(y = 5 \\times 8 \\times 6 = 240\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 6\\) and \\(z = 2\\), find \\(y\\) when \\(x = 7\\) and \\(z = 8\\).",
+    "options": [
+      "4704",
+      "392",
+      "105",
+      "57"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 6 \\times 2 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 7\\) and \\(z = 8\\): \\(y = 7 \\times 7 \\times 8 = 392\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 168\\) when \\(x = 6\\) and \\(z = 4\\), find \\(y\\) when \\(x = 4\\) and \\(z = 5\\).",
+    "options": [
+      "140",
+      "63",
+      "3360",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(168 = k \\times 6 \\times 4 = 24k\\), so \\(k = 7\\).\n\nWhen \\(x = 4\\) and \\(z = 5\\): \\(y = 7 \\times 4 \\times 5 = 140\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 16\\) when \\(x = 4\\), find \\(y\\) when \\(x = 20\\).",
+    "options": [
+      "80",
+      "24",
+      "36",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(16 = k \\times 4\\), so \\(k = 4\\).\n\nWhen \\(x = 20\\): \\(y = 4 \\times 20 = 80\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 150\\) when \\(x = 5\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "24",
+      "120",
+      "166",
+      "96"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(150 = k \\times 5^{2} = 25k\\), so \\(k = 6\\).\n\nWhen \\(x = 4\\): \\(y = 6 \\times 4^{2} = 6 \\times 16 = 96\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 252\\) when \\(x = 6\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "268",
+      "112",
+      "168",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(252 = k \\times 6^{2} = 36k\\), so \\(k = 7\\).\n\nWhen \\(x = 4\\): \\(y = 7 \\times 4^{2} = 7 \\times 16 = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 45\\) when \\(x = 4\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "240",
+      "80",
+      "60",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(45 = \\frac{k}{4^{2}}\\), so \\(k = 45 \\times 16 = 720\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{720}{9} = 80\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 30\\) when \\(x = 5\\) and \\(z = 3\\), find \\(y\\) when \\(x = 8\\) and \\(z = 6\\).",
+    "options": [
+      "28",
+      "22",
+      "96",
+      "1440"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(30 = k \\times 5 \\times 3 = 15k\\), so \\(k = 2\\).\n\nWhen \\(x = 8\\) and \\(z = 6\\): \\(y = 2 \\times 8 \\times 6 = 96\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 175\\) when \\(x = 5\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "448",
+      "239",
+      "56",
+      "280"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(175 = k \\times 5^{2} = 25k\\), so \\(k = 7\\).\n\nWhen \\(x = 8\\): \\(y = 7 \\times 8^{2} = 7 \\times 64 = 448\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 132\\) when \\(x = 12\\), find the constant of variation.",
+    "options": [
+      "12",
+      "1584",
+      "0.09",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = kx\\)\n\n\\(132 = k \\times 12\\)\n\n\\(k = \\frac{132}{12} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 24\\) when \\(x = 3\\) and \\(z = 2\\), find \\(y\\) when \\(x = 5\\) and \\(z = 8\\).",
+    "options": [
+      "28",
+      "960",
+      "52",
+      "160"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(24 = k \\times 3 \\times 2 = 6k\\), so \\(k = 4\\).\n\nWhen \\(x = 5\\) and \\(z = 8\\): \\(y = 4 \\times 5 \\times 8 = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 70\\) when \\(x = 7\\), find \\(y\\) when \\(x = 16\\).",
+    "options": [
+      "26",
+      "86",
+      "80",
+      "160"
+    ],
+    "correctIndex": 3,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(70 = k \\times 7\\), so \\(k = 10\\).\n\nWhen \\(x = 16\\): \\(y = 10 \\times 16 = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 48\\) when \\(x = 2\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "384",
+      "24",
+      "52",
+      "96"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(48 = \\frac{k}{2}\\), so \\(k = 48 \\times 2 = 96\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{96}{4} = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 36\\) when \\(x = 3\\) and \\(z = 3\\), find \\(y\\) when \\(x = 8\\) and \\(z = 5\\).",
+    "options": [
+      "37",
+      "160",
+      "52",
+      "1440"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(36 = k \\times 3 \\times 3 = 9k\\), so \\(k = 4\\).\n\nWhen \\(x = 8\\) and \\(z = 5\\): \\(y = 4 \\times 8 \\times 5 = 160\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 84\\) when \\(x = 3\\) and \\(z = 4\\), find \\(y\\) when \\(x = 2\\) and \\(z = 8\\).",
+    "options": [
+      "70",
+      "22",
+      "1344",
+      "112"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(84 = k \\times 3 \\times 4 = 12k\\), so \\(k = 7\\).\n\nWhen \\(x = 2\\) and \\(z = 8\\): \\(y = 7 \\times 2 \\times 8 = 112\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 180\\) when \\(x = 6\\), find \\(y\\) when \\(x = 5\\).",
+    "options": [
+      "125",
+      "150",
+      "25",
+      "205"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(180 = k \\times 6^{2} = 36k\\), so \\(k = 5\\).\n\nWhen \\(x = 5\\): \\(y = 5 \\times 5^{2} = 5 \\times 25 = 125\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 32\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "12",
+      "72",
+      "68",
+      "48"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(32 = k \\times 4^{2} = 16k\\), so \\(k = 2\\).\n\nWhen \\(x = 6\\): \\(y = 2 \\times 6^{2} = 2 \\times 36 = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 32\\) when \\(x = 4\\) and \\(z = 4\\), find \\(y\\) when \\(x = 3\\) and \\(z = 3\\).",
+    "options": [
+      "12",
+      "9",
+      "18",
+      "288"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(32 = k \\times 4 \\times 4 = 16k\\), so \\(k = 2\\).\n\nWhen \\(x = 3\\) and \\(z = 3\\): \\(y = 2 \\times 3 \\times 3 = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(y \\propto x\\) and \\(y = 70\\) when \\(x = 7\\), find the constant of variation.",
+    "options": [
+      "11",
+      "0.1",
+      "10",
+      "490"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx\\)\n\n\\(70 = k \\times 7\\)\n\n\\(k = \\frac{70}{7} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 40\\) when \\(x = 2\\) and \\(z = 4\\), find \\(y\\) when \\(x = 7\\) and \\(z = 3\\).",
+    "options": [
+      "38",
+      "50",
+      "840",
+      "105"
+    ],
+    "correctIndex": 3,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(40 = k \\times 2 \\times 4 = 8k\\), so \\(k = 5\\).\n\nWhen \\(x = 7\\) and \\(z = 3\\): \\(y = 5 \\times 7 \\times 3 = 105\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 84\\) when \\(x = 2\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "28",
+      "90",
+      "1008",
+      "252"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(84 = \\frac{k}{2}\\), so \\(k = 84 \\times 2 = 168\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{168}{6} = 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as \\(x\\). If \\(y = 4\\) when \\(x = 2\\), find \\(y\\) when \\(x = 18\\).",
+    "options": [
+      "20",
+      "36",
+      "18",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "Direct variation: \\(y = kx\\).\n\n\\(4 = k \\times 2\\), so \\(k = 2\\).\n\nWhen \\(x = 18\\): \\(y = 2 \\times 18 = 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 24\\) when \\(x = 6\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "8",
+      "26",
+      "72",
+      "288"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(24 = \\frac{k}{6}\\), so \\(k = 24 \\times 6 = 144\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{144}{2} = 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 13\\) when \\(x = 12\\), find \\(y\\) when \\(x = 3\\).",
+    "options": [
+      "52",
+      "468",
+      "16",
+      "3.25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(13 = \\frac{k}{12}\\), so \\(k = 13 \\times 12 = 156\\).\n\nWhen \\(x = 3\\): \\(y = \\frac{156}{3} = 52\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 16\\) when \\(x = 6\\), find \\(y\\) when \\(x = 12\\).",
+    "options": [
+      "32",
+      "1152",
+      "8",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(16 = \\frac{k}{6}\\), so \\(k = 16 \\times 6 = 96\\).\n\nWhen \\(x = 12\\): \\(y = \\frac{96}{12} = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as \\(x\\). If \\(y = 28\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "42",
+      "30",
+      "18.67",
+      "168"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inverse variation: \\(y = \\frac{k}{x}\\).\n\n\\(28 = \\frac{k}{3}\\), so \\(k = 28 \\times 3 = 84\\).\n\nWhen \\(x = 2\\): \\(y = \\frac{84}{2} = 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 144\\) when \\(x = 5\\), find \\(y\\) when \\(x = 4\\).",
+    "options": [
+      "180",
+      "9",
+      "225",
+      "900"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(144 = \\frac{k}{5^{2}}\\), so \\(k = 144 \\times 25 = 3600\\).\n\nWhen \\(x = 4\\): \\(y = \\frac{3600}{16} = 225\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies inversely as the square of \\(x\\). If \\(y = 180\\) when \\(x = 4\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "480",
+      "80",
+      "120",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = \\frac{k}{x^{2}}\\)\n\n\\(180 = \\frac{k}{4^{2}}\\), so \\(k = 180 \\times 16 = 2880\\).\n\nWhen \\(x = 6\\): \\(y = \\frac{2880}{36} = 80\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 175\\) when \\(x = 5\\), find \\(y\\) when \\(x = 6\\).",
+    "options": [
+      "210",
+      "252",
+      "211",
+      "42"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(175 = k \\times 5^{2} = 25k\\), so \\(k = 7\\).\n\nWhen \\(x = 6\\): \\(y = 7 \\times 6^{2} = 7 \\times 36 = 252\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 225\\) when \\(x = 5\\), find \\(y\\) when \\(x = 8\\).",
+    "options": [
+      "72",
+      "360",
+      "576",
+      "289"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(225 = k \\times 5^{2} = 25k\\), so \\(k = 9\\).\n\nWhen \\(x = 8\\): \\(y = 9 \\times 8^{2} = 9 \\times 64 = 576\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies directly as the square of \\(x\\). If \\(y = 54\\) when \\(x = 3\\), find \\(y\\) when \\(x = 2\\).",
+    "options": [
+      "12",
+      "58",
+      "24",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = kx^{2}\\)\n\n\\(54 = k \\times 3^{2} = 9k\\), so \\(k = 6\\).\n\nWhen \\(x = 2\\): \\(y = 6 \\times 2^{2} = 6 \\times 4 = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "\\(y\\) varies jointly as \\(x\\) and \\(z\\). If \\(y = 192\\) when \\(x = 4\\) and \\(z = 6\\), find \\(y\\) when \\(x = 8\\) and \\(z = 6\\).",
+    "options": [
+      "70",
+      "9216",
+      "384",
+      "112"
+    ],
+    "correctIndex": 2,
+    "explanation": "Joint variation: \\(y = kxz\\).\n\n\\(192 = k \\times 4 \\times 6 = 24k\\), so \\(k = 8\\).\n\nWhen \\(x = 8\\) and \\(z = 6\\): \\(y = 8 \\times 8 \\times 6 = 384\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "oM2AcopzHcWiTOriKncX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "The mean of 7, 17, 11, 1 and \\(x\\) is 17. Find the value of \\(x\\).",
+    "options": [
+      "17",
+      "47",
+      "51",
+      "49"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{7 + 17 + 11 + 1 + x}{5} = 17\\)\n\n\\(36 + x = 85\\)\n\n\\(x = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 53, 25, 3, 13, 58, 32.",
+    "options": [
+      "61",
+      "3",
+      "55",
+      "58"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 3 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 2, 2, 2, 16, 20, 25.",
+    "options": [
+      "20",
+      "16",
+      "25",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n2 appears 3 times, more than any other value.\n\nMode \\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 6, 5, 6, 1 and \\(x\\) is 14. Find the value of \\(x\\).",
+    "options": [
+      "14",
+      "52",
+      "50",
+      "54"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{6 + 5 + 6 + 1 + x}{5} = 14\\)\n\n\\(18 + x = 70\\)\n\n\\(x = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 33, 56, 53, 27, 44, 22.",
+    "options": [
+      "78",
+      "34",
+      "22",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 56 - 22 = 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 4, 5, 6, 22, 17.",
+    "options": [
+      "4",
+      "22",
+      "10.8",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 4, 5, 6, 17, 22\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 28, 6, 29, 3, 50, 50, 57, 33.",
+    "options": [
+      "60",
+      "57",
+      "3",
+      "54"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 3 = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 53, 29, 25, 2, 25.",
+    "options": [
+      "61",
+      "57",
+      "59",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 2 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 22, 17, 5, 5, 5.",
+    "options": [
+      "17",
+      "18",
+      "22",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n5 appears 3 times, more than any other value.\n\nMode \\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 26, 33, 17, 37, 8.",
+    "options": [
+      "24.2",
+      "26",
+      "37",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 8, 17, 26, 33, 37\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 21, 18, 15, 15, 15, 23.",
+    "options": [
+      "15",
+      "18",
+      "23",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n15 appears 3 times, more than any other value.\n\nMode \\(= 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 29, 20, 4, 28, 10.",
+    "options": [
+      "29",
+      "4",
+      "20",
+      "18.2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 4, 10, 20, 28, 29\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 27, 29, 23, 20, 17, 9, 33.",
+    "options": [
+      "9",
+      "23",
+      "33",
+      "22.6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 9, 17, 20, 23, 27, 29, 33\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 28, 22, 9, 2, 58, 46.",
+    "options": [
+      "56",
+      "60",
+      "2",
+      "58"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 2 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The scores of some students are: 1 (2 students), 2 (4 students), 3 (1 students), 4 (6 students), 5 (1 students). Find the mean score.",
+    "options": [
+      "4",
+      "42",
+      "3",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= \\frac{\\sum fx}{\\sum f}\\)\n\n\\(\\sum fx = 1 \\times 2 + 2 \\times 4 + 3 \\times 1 + 4 \\times 6 + 5 \\times 1 = 42\\)\n\n\\(\\sum f = 14\\)\n\nMean \\(= \\frac{42}{14} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 20, 40, 18, 25, 24, 23, 18.",
+    "options": [
+      "40",
+      "24",
+      "18",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 18, 18, 20, 23, 24, 25, 40\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 5, 38, 33, 4, 6.",
+    "options": [
+      "4",
+      "17.2",
+      "38",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 4, 5, 6, 33, 38\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 9, 18, 23, 20, 9, 9.",
+    "options": [
+      "9",
+      "20",
+      "18",
+      "23"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n9 appears 3 times, more than any other value.\n\nMode \\(= 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 2, 2, 16, 2, 23, 22.",
+    "options": [
+      "16",
+      "22",
+      "2",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n2 appears 3 times, more than any other value.\n\nMode \\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 25, 10, 16, 10, 10, 17.",
+    "options": [
+      "16",
+      "25",
+      "17",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n10 appears 3 times, more than any other value.\n\nMode \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 25, 20, 13, 13, 13, 22.",
+    "options": [
+      "13",
+      "22",
+      "25",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n13 appears 3 times, more than any other value.\n\nMode \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 28, 30, 23, 12, 21.",
+    "options": [
+      "23",
+      "30",
+      "22.8",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 12, 21, 23, 28, 30\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 9, 9, 19, 9, 25, 21.",
+    "options": [
+      "21",
+      "19",
+      "9",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n9 appears 3 times, more than any other value.\n\nMode \\(= 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 6, 19, 6, 20, 16, 6.",
+    "options": [
+      "19",
+      "6",
+      "16",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n6 appears 3 times, more than any other value.\n\nMode \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 13, 17, 22, 13, 13, 20.",
+    "options": [
+      "13",
+      "22",
+      "17",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n13 appears 3 times, more than any other value.\n\nMode \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 50, 26, 50, 12, 19, 13, 25.",
+    "options": [
+      "12",
+      "62",
+      "50",
+      "38"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 50 - 12 = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 6, 13, 16 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "11",
+      "42",
+      "15",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{7 + 6 + 13 + 16 + x}{5} = 11\\)\n\n\\(42 + x = 55\\)\n\n\\(x = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 20, 24, 12, 23, 12, 12.",
+    "options": [
+      "20",
+      "24",
+      "23",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 14, 14, 9, 1 and \\(x\\) is 8. Find the value of \\(x\\).",
+    "options": [
+      "3",
+      "8",
+      "1",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{7 + 14 + 14 + 9 + 1 + x}{6} = 8\\)\n\n\\(45 + x = 48\\)\n\n\\(x = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 13, 8, 5, 8 and \\(x\\) is 16. Find the value of \\(x\\).",
+    "options": [
+      "48",
+      "16",
+      "44",
+      "46"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{13 + 8 + 5 + 8 + x}{5} = 16\\)\n\n\\(34 + x = 80\\)\n\n\\(x = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 21, 11, 25, 9.",
+    "options": [
+      "14",
+      "9",
+      "16",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 9, 11, 14, 21, 25\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 29, 34, 23, 13, 30, 37, 35, 38, 18.",
+    "options": [
+      "38",
+      "28.6",
+      "30",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 13, 18, 23, 29, 30, 34, 35, 37, 38\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 13, 13, 13, 17, 25, 23.",
+    "options": [
+      "23",
+      "17",
+      "25",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n13 appears 3 times, more than any other value.\n\nMode \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 25, 27, 25, 37, 9, 22, 26, 34, 23.",
+    "options": [
+      "25.3",
+      "25",
+      "37",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 9, 22, 23, 25, 25, 26, 27, 34, 37\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 1, 4, 11, 3 and \\(x\\) is 10. Find the value of \\(x\\).",
+    "options": [
+      "10",
+      "31",
+      "29",
+      "33"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{1 + 4 + 11 + 3 + x}{5} = 10\\)\n\n\\(19 + x = 50\\)\n\n\\(x = 31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 30, 17, 6, 13, 40, 25, 19.",
+    "options": [
+      "21.4",
+      "19",
+      "40",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 6, 13, 17, 19, 25, 30, 40\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 14, 25, 20, 6, 42, 41.",
+    "options": [
+      "6",
+      "42",
+      "48",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 42 - 6 = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 9, 29, 32, 17, 18, 5, 23.",
+    "options": [
+      "5",
+      "18",
+      "32",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 5, 9, 17, 18, 23, 29, 32\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 12, 12, 14, 8, 1 and \\(x\\) is 12. Find the value of \\(x\\).",
+    "options": [
+      "32",
+      "28",
+      "30",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{7 + 12 + 12 + 14 + 8 + 1 + x}{7} = 12\\)\n\n\\(54 + x = 84\\)\n\n\\(x = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 21, 36, 32, 37, 13.",
+    "options": [
+      "32",
+      "37",
+      "27.8",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 13, 21, 32, 36, 37\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 13, 5, 2, 3, 11 and \\(x\\) is 10. Find the value of \\(x\\).",
+    "options": [
+      "28",
+      "26",
+      "24",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{13 + 5 + 2 + 3 + 11 + x}{6} = 10\\)\n\n\\(34 + x = 60\\)\n\n\\(x = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 53, 9, 6, 6, 38.",
+    "options": [
+      "59",
+      "6",
+      "53",
+      "47"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 53 - 6 = 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 3, 16, 14 and \\(x\\) is 12. Find the value of \\(x\\).",
+    "options": [
+      "20",
+      "18",
+      "22",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{7 + 3 + 16 + 14 + x}{5} = 12\\)\n\n\\(40 + x = 60\\)\n\n\\(x = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 13, 13, 13, 22, 20, 19.",
+    "options": [
+      "19",
+      "22",
+      "13",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n13 appears 3 times, more than any other value.\n\nMode \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 11, 16, 57, 35, 35.",
+    "options": [
+      "57",
+      "68",
+      "46",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 11 = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 23, 23, 28, 23, 32, 6, 12, 11, 39.",
+    "options": [
+      "39",
+      "23",
+      "6",
+      "21.9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 6, 11, 12, 23, 23, 23, 28, 32, 39\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 20, 35, 25, 7, 10.",
+    "options": [
+      "35",
+      "20",
+      "7",
+      "19.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 7, 10, 20, 25, 35\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 39, 16, 14, 12, 26, 40, 21, 2, 36.",
+    "options": [
+      "22.9",
+      "2",
+      "40",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 12, 14, 16, 21, 26, 36, 39, 40\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 24, 11, 8, 32, 28.",
+    "options": [
+      "24",
+      "8",
+      "32",
+      "20.6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 8, 11, 24, 28, 32\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 17, 22, 6, 6, 19, 6.",
+    "options": [
+      "17",
+      "22",
+      "6",
+      "19"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n6 appears 3 times, more than any other value.\n\nMode \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 27, 23, 24, 17, 6, 17, 21, 25.",
+    "options": [
+      "21",
+      "19",
+      "160",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 27 + 23 + 24 + 17 + 6 + 17 + 21 + 25 = 160\\)\n\nMean \\(= \\frac{160}{8} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 45, 57, 32, 46, 60, 7.",
+    "options": [
+      "67",
+      "60",
+      "53",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 7 = 53\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 19, 22, 8, 20, 8, 8.",
+    "options": [
+      "8",
+      "22",
+      "19",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 60, 4, 30, 8, 41, 49, 36.",
+    "options": [
+      "56",
+      "4",
+      "64",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 4 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 25, 5, 19, 5, 18, 5.",
+    "options": [
+      "18",
+      "5",
+      "19",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n5 appears 3 times, more than any other value.\n\nMode \\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 3, 27, 1, 13, 33, 25, 31.",
+    "options": [
+      "19",
+      "1",
+      "25",
+      "33"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 1, 3, 13, 25, 27, 31, 33\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 4, 24, 4, 4, 17, 18.",
+    "options": [
+      "18",
+      "4",
+      "24",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n4 appears 3 times, more than any other value.\n\nMode \\(= 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 24, 1, 25, 1, 1, 23.",
+    "options": [
+      "23",
+      "25",
+      "24",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n1 appears 3 times, more than any other value.\n\nMode \\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The scores of some students are: 1 (4 students), 2 (4 students), 3 (3 students), 4 (6 students), 5 (3 students). Find the mean score.",
+    "options": [
+      "20",
+      "3",
+      "4",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= \\frac{\\sum fx}{\\sum f}\\)\n\n\\(\\sum fx = 1 \\times 4 + 2 \\times 4 + 3 \\times 3 + 4 \\times 6 + 5 \\times 3 = 60\\)\n\n\\(\\sum f = 20\\)\n\nMean \\(= \\frac{60}{20} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 8, 13, 36, 33, 34, 28, 16, 25, 9.",
+    "options": [
+      "36",
+      "25",
+      "22.4",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 8, 9, 13, 16, 25, 28, 33, 34, 36\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 20, 29, 28, 5, 5, 33, 2, 36, 25.",
+    "options": [
+      "20.3",
+      "2",
+      "36",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 5, 5, 20, 25, 28, 29, 33, 36\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 14, 14, 16, 14, 22, 21.",
+    "options": [
+      "21",
+      "14",
+      "22",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 10, 20, 10, 24, 23, 10.",
+    "options": [
+      "23",
+      "20",
+      "10",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n10 appears 3 times, more than any other value.\n\nMode \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 35, 25, 11, 8, 10, 2, 8, 3.",
+    "options": [
+      "35",
+      "33",
+      "2",
+      "37"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 35 - 2 = 33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 11, 3, 6, 8, 19 and \\(x\\) is 17. Find the value of \\(x\\).",
+    "options": [
+      "55",
+      "57",
+      "17",
+      "53"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{11 + 3 + 6 + 8 + 19 + x}{6} = 17\\)\n\n\\(47 + x = 102\\)\n\n\\(x = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 30, 25, 27, 22, 27, 19.",
+    "options": [
+      "24",
+      "25",
+      "150",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 30 + 25 + 27 + 22 + 27 + 19 = 150\\)\n\nMean \\(= \\frac{150}{6} = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 6, 2, 39, 16, 7, 15.",
+    "options": [
+      "2",
+      "39",
+      "14",
+      "14.1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 2, 6, 7, 14, 15, 16, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 24, 3, 3, 22, 3.",
+    "options": [
+      "22",
+      "3",
+      "18",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 5, 5, 25, 21, 22, 5.",
+    "options": [
+      "21",
+      "22",
+      "5",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n5 appears 3 times, more than any other value.\n\nMode \\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 3, 3, 3, 16, 17, 25.",
+    "options": [
+      "17",
+      "25",
+      "3",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 3, 19, 4 and \\(x\\) is 17. Find the value of \\(x\\).",
+    "options": [
+      "17",
+      "50",
+      "52",
+      "54"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{7 + 3 + 19 + 4 + x}{5} = 17\\)\n\n\\(33 + x = 85\\)\n\n\\(x = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 31, 9, 2, 33, 7, 19, 12.",
+    "options": [
+      "2",
+      "33",
+      "16.1",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 7, 9, 12, 19, 31, 33\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 17, 13, 2, 12 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "13",
+      "44",
+      "9",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{17 + 13 + 2 + 12 + x}{5} = 11\\)\n\n\\(44 + x = 55\\)\n\n\\(x = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 23, 23, 31, 23, 42, 5.",
+    "options": [
+      "47",
+      "42",
+      "37",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 42 - 5 = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 20, 17, 54, 25.",
+    "options": [
+      "59",
+      "42",
+      "76",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 17 = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 13, 2, 13, 10, 24, 29, 36.",
+    "options": [
+      "36",
+      "2",
+      "18.1",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 10, 13, 13, 24, 29, 36\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 23, 14, 14, 16, 25, 14.",
+    "options": [
+      "16",
+      "25",
+      "14",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 5, 7, 4, 12, 11, 13 and \\(x\\) is 9. Find the value of \\(x\\).",
+    "options": [
+      "11",
+      "9",
+      "13",
+      "52"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{5 + 7 + 4 + 12 + 11 + 13 + x}{7} = 9\\)\n\n\\(52 + x = 63\\)\n\n\\(x = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 50, 37, 6, 60, 56, 18.",
+    "options": [
+      "6",
+      "60",
+      "66",
+      "54"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 6 = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 55, 42, 38, 51, 38, 33, 8.",
+    "options": [
+      "55",
+      "8",
+      "63",
+      "47"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 8 = 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 4, 23, 16, 18, 4, 4.",
+    "options": [
+      "18",
+      "4",
+      "23",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n4 appears 3 times, more than any other value.\n\nMode \\(= 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 17, 19, 12, 12, 12, 24.",
+    "options": [
+      "19",
+      "17",
+      "24",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 9, 24, 5, 23, 13, 26, 21, 22, 14.",
+    "options": [
+      "26",
+      "5",
+      "17.4",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 5, 9, 13, 14, 21, 22, 23, 24, 26\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 17, 39, 36, 34, 34.",
+    "options": [
+      "17",
+      "32",
+      "39",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 17, 34, 34, 36, 39\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 27, 4, 6, 1, 30, 15, 39.",
+    "options": [
+      "15",
+      "17.4",
+      "39",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 1, 4, 6, 15, 27, 30, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 31, 31, 38, 19, 33, 22, 36.",
+    "options": [
+      "38",
+      "30",
+      "31",
+      "19"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 19, 22, 31, 31, 33, 36, 38\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 38, 9, 51, 53, 57, 56.",
+    "options": [
+      "9",
+      "66",
+      "48",
+      "57"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 9 = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 21, 3, 3, 3, 22, 19.",
+    "options": [
+      "3",
+      "19",
+      "22",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 14, 17, 14, 16, 20, 14.",
+    "options": [
+      "20",
+      "16",
+      "17",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 17, 12, 12, 18, 16, 12.",
+    "options": [
+      "12",
+      "16",
+      "17",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 12, 8, 1, 9 and \\(x\\) is 18. Find the value of \\(x\\).",
+    "options": [
+      "60",
+      "18",
+      "58",
+      "62"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{12 + 8 + 1 + 9 + x}{5} = 18\\)\n\n\\(30 + x = 90\\)\n\n\\(x = 60\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 24, 1, 11, 10, 39, 54, 11, 57.",
+    "options": [
+      "1",
+      "57",
+      "58",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 1 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 23, 39, 58, 53, 57, 23, 44, 32.",
+    "options": [
+      "81",
+      "58",
+      "35",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 23 = 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 9, 39, 13, 10, 27, 23.",
+    "options": [
+      "9",
+      "39",
+      "48",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 39 - 9 = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 21, 12, 20, 17, 5, 27.",
+    "options": [
+      "18",
+      "102",
+      "16",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 21 + 12 + 20 + 17 + 5 + 27 = 102\\)\n\nMean \\(= \\frac{102}{6} = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 14, 9, 18, 2 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "14",
+      "12",
+      "10",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{14 + 9 + 18 + 2 + x}{5} = 11\\)\n\n\\(43 + x = 55\\)\n\n\\(x = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 16, 28, 60, 38, 30, 54, 45.",
+    "options": [
+      "44",
+      "16",
+      "76",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 16 = 44\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 21, 3, 57, 47, 32, 12, 10.",
+    "options": [
+      "60",
+      "3",
+      "54",
+      "57"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 3 = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 8, 8, 24, 23, 8, 18.",
+    "options": [
+      "24",
+      "23",
+      "18",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 46, 14, 26, 7, 19, 47, 32.",
+    "options": [
+      "47",
+      "7",
+      "40",
+      "54"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 47 - 7 = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 20, 5, 22, 24, 5, 5.",
+    "options": [
+      "5",
+      "20",
+      "24",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n5 appears 3 times, more than any other value.\n\nMode \\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 3, 26, 2, 15, 40.",
+    "options": [
+      "17.2",
+      "2",
+      "40",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 3, 15, 26, 40\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 18, 18, 20, 8, 40, 27, 30.",
+    "options": [
+      "40",
+      "23",
+      "20",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 8, 18, 18, 20, 27, 30, 40\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 9, 14, 17, 3 and \\(x\\) is 10. Find the value of \\(x\\).",
+    "options": [
+      "5",
+      "10",
+      "7",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{9 + 14 + 17 + 3 + x}{5} = 10\\)\n\n\\(43 + x = 50\\)\n\n\\(x = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 5, 15, 13, 17, 18 and \\(x\\) is 15. Find the value of \\(x\\).",
+    "options": [
+      "24",
+      "20",
+      "22",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{5 + 15 + 13 + 17 + 18 + x}{6} = 15\\)\n\n\\(68 + x = 90\\)\n\n\\(x = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 49, 8, 23, 30, 10, 43.",
+    "options": [
+      "57",
+      "41",
+      "49",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 49 - 8 = 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 35, 11, 43, 42, 28.",
+    "options": [
+      "59",
+      "70",
+      "48",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 11 = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 10, 12, 12, 20, 21.",
+    "options": [
+      "15",
+      "12",
+      "10",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 10, 12, 12, 20, 21\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 21, 24, 12, 12, 12, 25.",
+    "options": [
+      "21",
+      "24",
+      "12",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 9, 58, 47, 45, 37.",
+    "options": [
+      "67",
+      "49",
+      "9",
+      "58"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 9 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 18, 8, 10, 21, 30, 3, 23, 2, 6.",
+    "options": [
+      "30",
+      "13.4",
+      "2",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 3, 6, 8, 10, 18, 21, 23, 30\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 35, 10, 56, 3, 44, 54.",
+    "options": [
+      "59",
+      "56",
+      "62",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 3 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 1, 1, 22, 21, 25, 1.",
+    "options": [
+      "21",
+      "25",
+      "22",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n1 appears 3 times, more than any other value.\n\nMode \\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 14, 20, 14, 14, 18, 22.",
+    "options": [
+      "14",
+      "20",
+      "18",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 23, 12, 12, 12, 24, 18.",
+    "options": [
+      "18",
+      "12",
+      "23",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 28, 32, 33, 9, 11, 5, 14, 4, 19.",
+    "options": [
+      "14",
+      "4",
+      "17.2",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 4, 5, 9, 11, 14, 19, 28, 32, 33\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 2, 12, 14, 17, 19 and \\(x\\) is 20. Find the value of \\(x\\).",
+    "options": [
+      "56",
+      "58",
+      "20",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{2 + 12 + 14 + 17 + 19 + x}{6} = 20\\)\n\n\\(64 + x = 120\\)\n\n\\(x = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 23, 20, 10, 10, 10, 18.",
+    "options": [
+      "23",
+      "10",
+      "20",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n10 appears 3 times, more than any other value.\n\nMode \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 24, 14, 42, 5, 48.",
+    "options": [
+      "53",
+      "5",
+      "43",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 5 = 43\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 17, 53, 2, 18, 12.",
+    "options": [
+      "55",
+      "53",
+      "2",
+      "51"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 53 - 2 = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 50, 57, 19, 41, 42, 29, 50.",
+    "options": [
+      "57",
+      "19",
+      "38",
+      "76"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 19 = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 8, 6, 36, 28, 11.",
+    "options": [
+      "11",
+      "17.8",
+      "6",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 6, 8, 11, 28, 36\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 1, 7, 57, 39, 47, 54.",
+    "options": [
+      "58",
+      "1",
+      "56",
+      "57"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 1 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 8, 7, 6, 7, 53, 45, 38, 57.",
+    "options": [
+      "63",
+      "57",
+      "6",
+      "51"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 6 = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 38, 25, 27, 11, 1, 36, 40.",
+    "options": [
+      "1",
+      "25.4",
+      "27",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 1, 11, 25, 27, 36, 38, 40\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 32, 11, 11, 8, 32, 2, 15, 40, 6.",
+    "options": [
+      "40",
+      "2",
+      "11",
+      "17.4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 2, 6, 8, 11, 11, 15, 32, 32, 40\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 51, 44, 7, 11, 23, 29.",
+    "options": [
+      "51",
+      "58",
+      "7",
+      "44"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 51 - 7 = 44\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 3, 1, 18, 20 and \\(x\\) is 16. Find the value of \\(x\\).",
+    "options": [
+      "16",
+      "38",
+      "40",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{3 + 1 + 18 + 20 + x}{5} = 16\\)\n\n\\(42 + x = 80\\)\n\n\\(x = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 9, 16, 18, 3, 10 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "12",
+      "10",
+      "11",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{9 + 16 + 18 + 3 + 10 + x}{6} = 11\\)\n\n\\(56 + x = 66\\)\n\n\\(x = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 23, 8, 17, 8, 8.",
+    "options": [
+      "8",
+      "23",
+      "18",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 55, 27, 18, 44, 9.",
+    "options": [
+      "9",
+      "46",
+      "55",
+      "64"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 9 = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 6, 6, 23, 37, 11, 15.",
+    "options": [
+      "31",
+      "43",
+      "37",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 37 - 6 = 31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 4, 32, 26, 43, 42, 8, 10.",
+    "options": [
+      "47",
+      "4",
+      "43",
+      "39"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 43 - 4 = 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 12, 12, 18, 22, 24, 12.",
+    "options": [
+      "22",
+      "12",
+      "24",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 16, 17, 15, 35, 37, 30.",
+    "options": [
+      "23.4",
+      "17",
+      "14",
+      "37"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 14, 15, 16, 17, 30, 35, 37\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 15, 15, 6, 8, 10 and \\(x\\) is 18. Find the value of \\(x\\).",
+    "options": [
+      "56",
+      "52",
+      "54",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{15 + 15 + 6 + 8 + 10 + x}{6} = 18\\)\n\n\\(54 + x = 108\\)\n\n\\(x = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 45, 60, 24, 4, 37.",
+    "options": [
+      "4",
+      "64",
+      "56",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 4 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 46, 16, 36, 54, 3.",
+    "options": [
+      "57",
+      "54",
+      "3",
+      "51"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 54 - 3 = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 2, 5, 17, 20, 9, 10 and \\(x\\) is 10. Find the value of \\(x\\).",
+    "options": [
+      "9",
+      "10",
+      "7",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{2 + 5 + 17 + 20 + 9 + 10 + x}{7} = 10\\)\n\n\\(63 + x = 70\\)\n\n\\(x = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 18, 1, 20, 9, 8, 20 and \\(x\\) is 14. Find the value of \\(x\\).",
+    "options": [
+      "24",
+      "20",
+      "22",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{18 + 1 + 20 + 9 + 8 + 20 + x}{7} = 14\\)\n\n\\(76 + x = 98\\)\n\n\\(x = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 30, 10, 38, 13, 16, 30, 19, 37, 20.",
+    "options": [
+      "10",
+      "38",
+      "23.7",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 10, 13, 16, 19, 20, 30, 30, 37, 38\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 30, 52, 34, 19, 52, 54.",
+    "options": [
+      "78",
+      "40",
+      "19",
+      "59"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 19 = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 26, 21, 28, 35, 13, 9, 11, 25.",
+    "options": [
+      "9",
+      "44",
+      "35",
+      "26"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 35 - 9 = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 4, 17, 25, 5, 25.",
+    "options": [
+      "29",
+      "21",
+      "25",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 25 - 4 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 11, 11, 22, 21, 18, 11.",
+    "options": [
+      "11",
+      "21",
+      "22",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n11 appears 3 times, more than any other value.\n\nMode \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 29, 37, 24, 34, 11, 38, 6, 21, 14.",
+    "options": [
+      "23.8",
+      "24",
+      "38",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 6, 11, 14, 21, 24, 29, 34, 37, 38\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 20, 1, 39, 14, 32, 6, 2, 37, 35.",
+    "options": [
+      "20.7",
+      "1",
+      "20",
+      "39"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 1, 2, 6, 14, 20, 32, 35, 37, 39\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 36, 20, 29, 13, 27.",
+    "options": [
+      "13",
+      "23",
+      "36",
+      "49"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 36 - 13 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 11, 11, 19, 11, 17.",
+    "options": [
+      "17",
+      "19",
+      "18",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n11 appears 3 times, more than any other value.\n\nMode \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 50, 59, 5, 56, 60, 10.",
+    "options": [
+      "60",
+      "65",
+      "5",
+      "55"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 5 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 2, 25, 20, 2, 18, 2.",
+    "options": [
+      "2",
+      "25",
+      "20",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n2 appears 3 times, more than any other value.\n\nMode \\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 23, 18, 33, 30, 25.",
+    "options": [
+      "25",
+      "18",
+      "25.8",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 18, 23, 25, 30, 33\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 29, 51, 11, 4, 42, 17, 10, 34.",
+    "options": [
+      "55",
+      "47",
+      "51",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 51 - 4 = 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 20, 54, 29, 39, 54, 29, 45, 12.",
+    "options": [
+      "66",
+      "54",
+      "42",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 54 - 12 = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 28, 21, 7, 19, 11.",
+    "options": [
+      "28",
+      "19",
+      "17.2",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 7, 11, 19, 21, 28\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 17, 4, 21, 37, 39, 8, 22.",
+    "options": [
+      "21.1",
+      "39",
+      "4",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 4, 8, 17, 21, 22, 37, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 30, 21, 39, 32, 37, 22, 35.",
+    "options": [
+      "32",
+      "21",
+      "39",
+      "30.9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 21, 22, 30, 32, 35, 37, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 15, 13, 7, 3 and \\(x\\) is 12. Find the value of \\(x\\).",
+    "options": [
+      "24",
+      "22",
+      "12",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{15 + 13 + 7 + 3 + x}{5} = 12\\)\n\n\\(38 + x = 60\\)\n\n\\(x = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 20, 29, 4, 14, 30, 26.",
+    "options": [
+      "34",
+      "26",
+      "4",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 30 - 4 = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 20, 23, 10, 10, 10, 25.",
+    "options": [
+      "25",
+      "23",
+      "20",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n10 appears 3 times, more than any other value.\n\nMode \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 3, 23, 3, 16, 22, 3.",
+    "options": [
+      "3",
+      "23",
+      "22",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 45, 48, 5, 13, 28.",
+    "options": [
+      "43",
+      "48",
+      "53",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 5 = 43\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 9, 9, 25, 9, 18, 21.",
+    "options": [
+      "25",
+      "18",
+      "9",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n9 appears 3 times, more than any other value.\n\nMode \\(= 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 22, 18, 2, 2, 16, 2.",
+    "options": [
+      "2",
+      "18",
+      "16",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n2 appears 3 times, more than any other value.\n\nMode \\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 12, 37, 19, 19, 37, 30, 22.",
+    "options": [
+      "12",
+      "37",
+      "22",
+      "25.1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 12, 19, 19, 22, 30, 37, 37\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 3, 3, 19, 21, 3, 20.",
+    "options": [
+      "19",
+      "20",
+      "3",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 17, 1, 12, 3, 12, 8 and \\(x\\) is 13. Find the value of \\(x\\).",
+    "options": [
+      "38",
+      "13",
+      "40",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{17 + 1 + 12 + 3 + 12 + 8 + x}{7} = 13\\)\n\n\\(53 + x = 91\\)\n\n\\(x = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 20, 21, 14, 14, 14, 19.",
+    "options": [
+      "14",
+      "19",
+      "20",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 36, 29, 17, 3, 26, 35, 24.",
+    "options": [
+      "3",
+      "26",
+      "24.3",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 3, 17, 24, 26, 29, 35, 36\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 17, 9, 2, 30, 2, 36, 34.",
+    "options": [
+      "36",
+      "18.6",
+      "2",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 2, 9, 17, 30, 34, 36\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 40, 20, 1, 2, 27, 26, 17, 33, 4.",
+    "options": [
+      "20",
+      "40",
+      "1",
+      "18.9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 1, 2, 4, 17, 20, 26, 27, 33, 40\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 17, 23, 5, 19, 5, 5.",
+    "options": [
+      "17",
+      "23",
+      "5",
+      "19"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n5 appears 3 times, more than any other value.\n\nMode \\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 6, 23, 18, 6, 16, 6.",
+    "options": [
+      "6",
+      "23",
+      "16",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n6 appears 3 times, more than any other value.\n\nMode \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 8, 9, 13, 15, 15, 20 and \\(x\\) is 16. Find the value of \\(x\\).",
+    "options": [
+      "32",
+      "34",
+      "16",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{8 + 9 + 13 + 15 + 15 + 20 + x}{7} = 16\\)\n\n\\(80 + x = 112\\)\n\n\\(x = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 43, 60, 28, 53.",
+    "options": [
+      "88",
+      "60",
+      "28",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 28 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 55, 12, 50, 35, 45, 11, 31, 45.",
+    "options": [
+      "11",
+      "44",
+      "55",
+      "66"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 11 = 44\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 40, 6, 41, 4, 28, 12, 60.",
+    "options": [
+      "60",
+      "56",
+      "64",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 4 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 3, 17, 3, 3, 18, 16.",
+    "options": [
+      "17",
+      "16",
+      "18",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 8, 3, 29, 37, 40, 21, 8, 8.",
+    "options": [
+      "40",
+      "3",
+      "14",
+      "18.7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 3, 8, 8, 8, 14, 21, 29, 37, 40\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 6, 33, 29, 22, 11, 18, 30.",
+    "options": [
+      "21.3",
+      "6",
+      "33",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 6, 11, 18, 22, 29, 30, 33\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 8, 10, 5, 9, 12 and \\(x\\) is 8. Find the value of \\(x\\).",
+    "options": [
+      "2",
+      "8",
+      "6",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{8 + 10 + 5 + 9 + 12 + x}{6} = 8\\)\n\n\\(44 + x = 48\\)\n\n\\(x = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 5, 21, 5, 5, 22, 16.",
+    "options": [
+      "16",
+      "5",
+      "21",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n5 appears 3 times, more than any other value.\n\nMode \\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 9, 20, 7, 7, 35.",
+    "options": [
+      "35",
+      "7",
+      "28",
+      "42"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 35 - 7 = 28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 24, 25, 12, 12, 12, 18.",
+    "options": [
+      "12",
+      "24",
+      "25",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n12 appears 3 times, more than any other value.\n\nMode \\(= 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 13, 9, 20 and \\(x\\) is 15. Find the value of \\(x\\).",
+    "options": [
+      "28",
+      "15",
+      "24",
+      "26"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{7 + 13 + 9 + 20 + x}{5} = 15\\)\n\n\\(49 + x = 75\\)\n\n\\(x = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 28, 29, 39, 13, 2, 2, 9.",
+    "options": [
+      "13",
+      "39",
+      "2",
+      "17.4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 2, 2, 9, 13, 28, 29, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 13, 19, 10, 14, 12, 15, 1.",
+    "options": [
+      "84",
+      "12",
+      "11",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 13 + 19 + 10 + 14 + 12 + 15 + 1 = 84\\)\n\nMean \\(= \\frac{84}{7} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 3, 3, 18, 24, 23, 3.",
+    "options": [
+      "24",
+      "3",
+      "18",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n3 appears 3 times, more than any other value.\n\nMode \\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 18, 31, 30, 30, 12.",
+    "options": [
+      "31",
+      "24.2",
+      "30",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 12, 18, 30, 30, 31\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 18, 48, 45, 37, 27, 17, 25.",
+    "options": [
+      "48",
+      "65",
+      "31",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 17 = 31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 1, 23, 18, 22, 25, 54, 58.",
+    "options": [
+      "58",
+      "59",
+      "57",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 1 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The scores of some students are: 1 (5 students), 2 (6 students), 3 (1 students), 4 (6 students), 5 (5 students). Find the mean score.",
+    "options": [
+      "69",
+      "3",
+      "23",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= \\frac{\\sum fx}{\\sum f}\\)\n\n\\(\\sum fx = 1 \\times 5 + 2 \\times 6 + 3 \\times 1 + 4 \\times 6 + 5 \\times 5 = 69\\)\n\n\\(\\sum f = 23\\)\n\nMean \\(= \\frac{69}{23} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 5, 34, 26, 7, 4.",
+    "options": [
+      "34",
+      "15.2",
+      "7",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 4, 5, 7, 26, 34\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 12, 52, 43, 51, 7.",
+    "options": [
+      "59",
+      "45",
+      "52",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 52 - 7 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 22, 8, 25, 8, 17, 8.",
+    "options": [
+      "17",
+      "8",
+      "25",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 4, 7, 24, 38, 34, 5, 18, 13, 37.",
+    "options": [
+      "18",
+      "38",
+      "4",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 4, 5, 7, 13, 18, 24, 34, 37, 38\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 2, 24, 2, 22, 2, 20.",
+    "options": [
+      "2",
+      "24",
+      "22",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n2 appears 3 times, more than any other value.\n\nMode \\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 50, 52, 8, 33, 31, 48, 18, 18.",
+    "options": [
+      "60",
+      "8",
+      "44",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 52 - 8 = 44\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 1, 7, 47, 44, 6.",
+    "options": [
+      "47",
+      "1",
+      "46",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 47 - 1 = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 8, 37, 29, 31, 12, 13, 23, 3, 37.",
+    "options": [
+      "23",
+      "3",
+      "21.4",
+      "37"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 3, 8, 12, 13, 23, 29, 31, 37, 37\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 9, 14, 17, 25, 32.",
+    "options": [
+      "9",
+      "17",
+      "32",
+      "19.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 9, 14, 17, 25, 32\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 13, 18, 37, 22, 28, 31, 7, 37, 24.",
+    "options": [
+      "24.1",
+      "37",
+      "7",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 7, 13, 18, 22, 24, 28, 31, 37, 37\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 14, 24, 26, 35, 22, 3, 23, 5.",
+    "options": [
+      "3",
+      "18.4",
+      "22",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 3, 5, 14, 14, 22, 23, 24, 26, 35\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 24, 23, 21, 8, 8, 8.",
+    "options": [
+      "24",
+      "21",
+      "8",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 8, 22, 8, 8, 17, 19.",
+    "options": [
+      "19",
+      "22",
+      "8",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 6, 8, 13, 7 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "23",
+      "19",
+      "11",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{6 + 8 + 13 + 7 + x}{5} = 11\\)\n\n\\(34 + x = 55\\)\n\n\\(x = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 13, 19, 13, 17, 13, 22.",
+    "options": [
+      "17",
+      "19",
+      "13",
+      "22"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n13 appears 3 times, more than any other value.\n\nMode \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 44, 59, 11, 5, 60, 13, 28.",
+    "options": [
+      "60",
+      "55",
+      "65",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 5 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 54, 54, 21, 33, 18.",
+    "options": [
+      "18",
+      "72",
+      "54",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 54 - 18 = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 10, 23, 18, 10, 16, 10.",
+    "options": [
+      "10",
+      "23",
+      "18",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n10 appears 3 times, more than any other value.\n\nMode \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 13, 22, 13, 21, 13.",
+    "options": [
+      "18",
+      "22",
+      "21",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n13 appears 3 times, more than any other value.\n\nMode \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 24, 1, 24, 40, 28.",
+    "options": [
+      "41",
+      "40",
+      "39",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 40 - 1 = 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 7, 33, 21, 23, 27, 33, 36.",
+    "options": [
+      "29",
+      "43",
+      "36",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 36 - 7 = 29\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 23, 36, 21, 4, 26, 19, 14, 12, 13.",
+    "options": [
+      "19",
+      "4",
+      "36",
+      "18.7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 4, 12, 13, 14, 19, 21, 23, 26, 36\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 1, 18, 3, 12, 8 and \\(x\\) is 8. Find the value of \\(x\\).",
+    "options": [
+      "8",
+      "42",
+      "4",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{1 + 18 + 3 + 12 + 8 + x}{6} = 8\\)\n\n\\(42 + x = 48\\)\n\n\\(x = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 6, 6, 17, 22, 6.",
+    "options": [
+      "18",
+      "22",
+      "17",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n6 appears 3 times, more than any other value.\n\nMode \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 53, 24, 58, 32, 40, 27.",
+    "options": [
+      "34",
+      "82",
+      "24",
+      "58"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 24 = 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 46, 48, 38, 44, 42, 37, 38.",
+    "options": [
+      "11",
+      "48",
+      "37",
+      "85"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 37 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 30, 38, 41, 7, 34, 48, 15, 13.",
+    "options": [
+      "41",
+      "55",
+      "48",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 7 = 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 33, 4, 39, 39, 9, 11, 6.",
+    "options": [
+      "20.1",
+      "39",
+      "4",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 4, 6, 9, 11, 33, 39, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 24, 1, 1, 16, 19, 1.",
+    "options": [
+      "19",
+      "24",
+      "1",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n1 appears 3 times, more than any other value.\n\nMode \\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 12, 44, 26, 41, 39.",
+    "options": [
+      "56",
+      "32",
+      "44",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 44 - 12 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 11, 13, 19, 5, 6 and \\(x\\) is 12. Find the value of \\(x\\).",
+    "options": [
+      "12",
+      "20",
+      "16",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{11 + 13 + 19 + 5 + 6 + x}{6} = 12\\)\n\n\\(54 + x = 72\\)\n\n\\(x = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 60, 8, 12, 29, 51, 56, 29.",
+    "options": [
+      "68",
+      "52",
+      "8",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 8 = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 11, 21, 11, 23, 25, 11.",
+    "options": [
+      "21",
+      "23",
+      "25",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n11 appears 3 times, more than any other value.\n\nMode \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 9, 4, 1, 5, 10, 31, 15.",
+    "options": [
+      "1",
+      "10.7",
+      "9",
+      "31"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 1, 4, 5, 9, 10, 15, 31\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 30, 4, 11, 27, 28.",
+    "options": [
+      "19",
+      "100",
+      "21",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 30 + 4 + 11 + 27 + 28 = 100\\)\n\nMean \\(= \\frac{100}{5} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 12, 4, 4, 31, 23, 31, 23.",
+    "options": [
+      "23",
+      "31",
+      "4",
+      "18.3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 4, 4, 12, 23, 23, 31, 31\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 4, 24, 38, 3, 12, 18, 33.",
+    "options": [
+      "18",
+      "3",
+      "18.9",
+      "38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 3, 4, 12, 18, 24, 33, 38\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 8, 42, 54, 13, 25, 5, 5, 35.",
+    "options": [
+      "59",
+      "49",
+      "54",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 54 - 5 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 38, 9, 20, 21, 5, 10, 6.",
+    "options": [
+      "10",
+      "5",
+      "15.6",
+      "38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 5, 6, 9, 10, 20, 21, 38\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 6, 1, 11, 31, 8, 20, 12.",
+    "options": [
+      "12.7",
+      "1",
+      "31",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 1, 6, 8, 11, 12, 20, 31\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 9, 9, 20, 9, 17, 23.",
+    "options": [
+      "23",
+      "17",
+      "20",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n9 appears 3 times, more than any other value.\n\nMode \\(= 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 8, 22, 8, 8, 23, 24.",
+    "options": [
+      "24",
+      "22",
+      "23",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 11, 39, 40, 30, 23.",
+    "options": [
+      "40",
+      "28.6",
+      "30",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 11, 23, 30, 39, 40\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 11, 17, 29, 39, 28, 23, 32, 48.",
+    "options": [
+      "37",
+      "59",
+      "11",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 11 = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 48, 7, 44, 36, 17.",
+    "options": [
+      "7",
+      "48",
+      "55",
+      "41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 48 - 7 = 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 29, 3, 23, 22, 25.",
+    "options": [
+      "3",
+      "29",
+      "20.4",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 3, 22, 23, 25, 29\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 11, 24, 17, 11, 11, 18.",
+    "options": [
+      "11",
+      "18",
+      "17",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n11 appears 3 times, more than any other value.\n\nMode \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 13, 33, 17, 11, 23.",
+    "options": [
+      "33",
+      "19.4",
+      "11",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 11, 13, 17, 23, 33\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 34, 3, 55, 43, 10, 1, 30.",
+    "options": [
+      "1",
+      "56",
+      "55",
+      "54"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 1 = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 14, 20, 14, 14, 25.",
+    "options": [
+      "14",
+      "20",
+      "25",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 3, 1, 17, 19 and \\(x\\) is 9. Find the value of \\(x\\).",
+    "options": [
+      "9",
+      "3",
+      "7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{3 + 1 + 17 + 19 + x}{5} = 9\\)\n\n\\(40 + x = 45\\)\n\n\\(x = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 17, 20, 10, 10, 2 and \\(x\\) is 19. Find the value of \\(x\\).",
+    "options": [
+      "57",
+      "55",
+      "19",
+      "53"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{17 + 20 + 10 + 10 + 2 + x}{6} = 19\\)\n\n\\(59 + x = 114\\)\n\n\\(x = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 25, 8, 4, 34, 4, 25, 55, 16.",
+    "options": [
+      "51",
+      "55",
+      "4",
+      "59"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 4 = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 22, 6, 25, 6, 6, 20.",
+    "options": [
+      "22",
+      "25",
+      "6",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n6 appears 3 times, more than any other value.\n\nMode \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 44, 11, 42, 42, 6, 29, 46, 55.",
+    "options": [
+      "6",
+      "61",
+      "55",
+      "49"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 6 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 1, 1, 17, 20, 1, 16.",
+    "options": [
+      "17",
+      "16",
+      "1",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n1 appears 3 times, more than any other value.\n\nMode \\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 17, 27, 32, 10, 17, 10, 9.",
+    "options": [
+      "32",
+      "9",
+      "23",
+      "41"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 32 - 9 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 14, 1, 17, 23.",
+    "options": [
+      "14",
+      "23",
+      "13.8",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 1, 14, 14, 17, 23\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 17, 26, 19, 55, 13, 32.",
+    "options": [
+      "55",
+      "42",
+      "68",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 13 = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 2, 17, 19, 3, 2 and \\(x\\) is 12. Find the value of \\(x\\).",
+    "options": [
+      "31",
+      "27",
+      "29",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{2 + 17 + 19 + 3 + 2 + x}{6} = 12\\)\n\n\\(43 + x = 72\\)\n\n\\(x = 29\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 14, 2, 15, 8, 11, 5 and \\(x\\) is 9. Find the value of \\(x\\).",
+    "options": [
+      "9",
+      "10",
+      "8",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 values in total.\n\n\\(\\frac{14 + 2 + 15 + 8 + 11 + 5 + x}{7} = 9\\)\n\n\\(55 + x = 63\\)\n\n\\(x = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 20, 28, 23, 25, 39.",
+    "options": [
+      "25",
+      "20",
+      "27",
+      "39"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 20, 23, 25, 28, 39\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 12, 25, 16, 30, 1, 34, 35.",
+    "options": [
+      "21.9",
+      "25",
+      "1",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 1, 12, 16, 25, 30, 34, 35\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 13, 18, 39, 39, 24, 31, 26.",
+    "options": [
+      "13",
+      "26",
+      "27.1",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 13, 18, 24, 26, 31, 39, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 8, 51, 47, 10, 54, 58, 59, 59.",
+    "options": [
+      "51",
+      "8",
+      "67",
+      "59"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 8 = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 8, 16, 8, 23, 8, 19.",
+    "options": [
+      "8",
+      "19",
+      "23",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n8 appears 3 times, more than any other value.\n\nMode \\(= 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 7, 3, 53, 49, 45, 25, 23.",
+    "options": [
+      "3",
+      "56",
+      "53",
+      "50"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 53 - 3 = 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 29, 23, 11, 36, 11.",
+    "options": [
+      "22",
+      "11",
+      "36",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 11, 11, 23, 29, 36\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 10, 9, 37, 19, 58, 59.",
+    "options": [
+      "9",
+      "68",
+      "59",
+      "50"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 9 = 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 9, 18, 9, 21, 9, 22.",
+    "options": [
+      "9",
+      "18",
+      "22",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n9 appears 3 times, more than any other value.\n\nMode \\(= 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 14, 2, 20, 34, 8, 22, 32.",
+    "options": [
+      "18.9",
+      "34",
+      "2",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 2, 8, 14, 20, 22, 32, 34\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 13, 39, 12, 34, 12.",
+    "options": [
+      "12",
+      "22",
+      "39",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange the numbers in ascending order: 12, 12, 13, 34, 39\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 8, 57, 41, 19, 47, 5.",
+    "options": [
+      "5",
+      "57",
+      "52",
+      "62"
+    ],
+    "correctIndex": 2,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 5 = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 7, 12, 20, 12 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "4",
+      "11",
+      "2",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{7 + 12 + 20 + 12 + x}{5} = 11\\)\n\n\\(51 + x = 55\\)\n\n\\(x = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 2, 12, 18, 9, 7 and \\(x\\) is 9. Find the value of \\(x\\).",
+    "options": [
+      "9",
+      "6",
+      "4",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{2 + 12 + 18 + 9 + 7 + x}{6} = 9\\)\n\n\\(48 + x = 54\\)\n\n\\(x = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 52, 59, 36, 42, 11.",
+    "options": [
+      "11",
+      "59",
+      "70",
+      "48"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 59 - 11 = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 23, 1, 1, 20, 17, 1.",
+    "options": [
+      "17",
+      "20",
+      "1",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n1 appears 3 times, more than any other value.\n\nMode \\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 21, 17, 30, 3, 7, 19, 8.",
+    "options": [
+      "15",
+      "14",
+      "16",
+      "105"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 21 + 17 + 30 + 3 + 7 + 19 + 8 = 105\\)\n\nMean \\(= \\frac{105}{7} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 14, 17, 19, 4, 11 and \\(x\\) is 17. Find the value of \\(x\\).",
+    "options": [
+      "39",
+      "37",
+      "17",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{14 + 17 + 19 + 4 + 11 + x}{6} = 17\\)\n\n\\(65 + x = 102\\)\n\n\\(x = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 5, 40, 39, 18, 5.",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 40 - 5 = 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 19, 21, 11, 11, 11, 22.",
+    "options": [
+      "11",
+      "21",
+      "22",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n11 appears 3 times, more than any other value.\n\nMode \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 25, 55, 18, 29, 47, 33, 7, 36.",
+    "options": [
+      "55",
+      "48",
+      "62",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 55 - 7 = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 20, 1, 20, 4 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "10",
+      "12",
+      "11",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{20 + 1 + 20 + 4 + x}{5} = 11\\)\n\n\\(45 + x = 55\\)\n\n\\(x = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 15, 40, 29, 9, 34, 9, 4, 29, 17.",
+    "options": [
+      "4",
+      "17",
+      "40",
+      "20.7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 4, 9, 9, 15, 17, 29, 29, 34, 40\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The scores of some students are: 1 (2 students), 2 (7 students), 3 (5 students), 4 (3 students), 5 (4 students). Find the mean score.",
+    "options": [
+      "3",
+      "4",
+      "63",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum fx}{\\sum f}\\)\n\n\\(\\sum fx = 1 \\times 2 + 2 \\times 7 + 3 \\times 5 + 4 \\times 3 + 5 \\times 4 = 63\\)\n\n\\(\\sum f = 21\\)\n\nMean \\(= \\frac{63}{21} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 11, 36, 24, 23, 10, 39, 2.",
+    "options": [
+      "2",
+      "23",
+      "20.7",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 2, 10, 11, 23, 24, 36, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 2, 23, 14, 7, 28, 1, 19, 4, 15.",
+    "options": [
+      "1",
+      "14",
+      "12.6",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 1, 2, 4, 7, 14, 15, 19, 23, 28\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 25, 7, 7, 16, 7.",
+    "options": [
+      "18",
+      "16",
+      "25",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "The mode is the value that occurs most frequently.\n\n7 appears 3 times, more than any other value.\n\nMode \\(= 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 15, 18, 2, 15, 30.",
+    "options": [
+      "2",
+      "15",
+      "30",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 2, 15, 15, 18, 30\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 54, 35, 30, 39, 58, 49, 1, 47.",
+    "options": [
+      "1",
+      "57",
+      "59",
+      "58"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 1 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 4, 19, 24, 22, 4, 4.",
+    "options": [
+      "22",
+      "4",
+      "24",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mode is the value that occurs most frequently.\n\n4 appears 3 times, more than any other value.\n\nMode \\(= 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 14, 14, 14, 16, 20, 19.",
+    "options": [
+      "14",
+      "16",
+      "20",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mode is the value that occurs most frequently.\n\n14 appears 3 times, more than any other value.\n\nMode \\(= 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 52, 13, 17, 12, 4, 57, 47.",
+    "options": [
+      "4",
+      "57",
+      "61",
+      "53"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 57 - 4 = 53\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 16, 24, 6, 25, 6, 6.",
+    "options": [
+      "25",
+      "16",
+      "6",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n6 appears 3 times, more than any other value.\n\nMode \\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mean of the following numbers: 29, 30, 26, 8, 17.",
+    "options": [
+      "22",
+      "110",
+      "21",
+      "23"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n}\\)\n\nSum \\(= 29 + 30 + 26 + 8 + 17 = 110\\)\n\nMean \\(= \\frac{110}{5} = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 59, 60, 14, 56, 56, 33, 20, 51.",
+    "options": [
+      "46",
+      "74",
+      "14",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 14 = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the mode of the following set of numbers: 18, 11, 11, 16, 25, 11.",
+    "options": [
+      "25",
+      "16",
+      "11",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mode is the value that occurs most frequently.\n\n11 appears 3 times, more than any other value.\n\nMode \\(= 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 17, 6, 10, 9, 20 and \\(x\\) is 13. Find the value of \\(x\\).",
+    "options": [
+      "14",
+      "16",
+      "13",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{17 + 6 + 10 + 9 + 20 + x}{6} = 13\\)\n\n\\(62 + x = 78\\)\n\n\\(x = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 51, 58, 21, 31, 3.",
+    "options": [
+      "61",
+      "55",
+      "58",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 58 - 3 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 11, 10, 13, 17 and \\(x\\) is 11. Find the value of \\(x\\).",
+    "options": [
+      "2",
+      "4",
+      "11",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{11 + 10 + 13 + 17 + x}{5} = 11\\)\n\n\\(51 + x = 55\\)\n\n\\(x = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 39, 8, 1, 25, 39, 37, 19.",
+    "options": [
+      "1",
+      "24",
+      "25",
+      "39"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange the numbers in ascending order: 1, 8, 19, 25, 37, 39, 39\n\nThere are 7 values, so the median is the 4th value.\n\nMedian \\(= 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 20, 2, 3, 20, 5 and \\(x\\) is 14. Find the value of \\(x\\).",
+    "options": [
+      "14",
+      "32",
+      "36",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 6 values in total.\n\n\\(\\frac{20 + 2 + 3 + 20 + 5 + x}{6} = 14\\)\n\n\\(50 + x = 84\\)\n\n\\(x = 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The mean of 11, 13, 2, 19 and \\(x\\) is 10. Find the value of \\(x\\).",
+    "options": [
+      "3",
+      "5",
+      "10",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 5 values in total.\n\n\\(\\frac{11 + 13 + 2 + 19 + x}{5} = 10\\)\n\n\\(45 + x = 50\\)\n\n\\(x = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 3, 29, 14, 27, 60, 20, 34, 31.",
+    "options": [
+      "63",
+      "57",
+      "60",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 60 - 3 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 27, 24, 32, 35, 8.",
+    "options": [
+      "27",
+      "35",
+      "8",
+      "25.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange the numbers in ascending order: 8, 24, 27, 32, 35\n\nThere are 5 values, so the median is the 3th value.\n\nMedian \\(= 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of the following set of numbers: 11, 17, 29, 2, 31, 16, 29, 15, 25.",
+    "options": [
+      "2",
+      "17",
+      "31",
+      "19.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange the numbers in ascending order: 2, 11, 15, 16, 17, 25, 29, 29, 31\n\nThere are 9 values, so the median is the 5th value.\n\nMedian \\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 32, 11, 23, 43, 20, 16.",
+    "options": [
+      "54",
+      "11",
+      "43",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 43 - 11 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the following set of numbers: 41, 13, 14, 7, 17, 49.",
+    "options": [
+      "7",
+      "49",
+      "56",
+      "42"
+    ],
+    "correctIndex": 3,
+    "explanation": "Range \\(= \\text{highest value} - \\text{lowest value}\\)\n\n\\(= 49 - 7 = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "Vj9qLjpEoV21IuiGTiUQ",
+    "topicId": "TzNBHiEyjggS80ZwGfU3",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

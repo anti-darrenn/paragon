@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the additive inverse of 6 in modulo 10 arithmetic.",
+    "options": [
+      "5",
+      "6",
+      "4",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{10}\\).\n\n\\(6 + 4 = 10 \\equiv 0 \\pmod{10}\\)\n\nSo the additive inverse is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((40 + 18) \\pmod{8}\\).",
+    "options": [
+      "2",
+      "3",
+      "0",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(40 + 18 = 58\\)\n\nDividing 58 by 8 gives a quotient of 7 and a remainder of 2.\n\nSo \\((40 + 18) \\equiv 2 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 198 days' time?",
+    "options": [
+      "Saturday",
+      "Sunday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(198 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Friday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 28 modulo 11.",
+    "options": [
+      "7",
+      "5",
+      "4",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 28 by 11: \\(28 = 11 \\times 2 + 6\\)\n\nThe remainder is 6, so \\(28 \\equiv 6 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((39 + 25) \\pmod{11}\\).",
+    "options": [
+      "7",
+      "9",
+      "4",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(39 + 25 = 64\\)\n\nDividing 64 by 11 gives a quotient of 5 and a remainder of 9.\n\nSo \\((39 + 25) \\equiv 9 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((17 \\times 3) \\pmod{6}\\).",
+    "options": [
+      "2",
+      "5",
+      "3",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(17 \\times 3 = 51\\)\n\nDividing 51 by 6 gives a remainder of 3.\n\nSo \\((17 \\times 3) \\equiv 3 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 135 days' time?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Tuesday",
+      "Monday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(135 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Sunday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 4 in modulo 10 arithmetic.",
+    "options": [
+      "10",
+      "4",
+      "7",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{10}\\).\n\n\\(4 + 6 = 10 \\equiv 0 \\pmod{10}\\)\n\nSo the additive inverse is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 1 in modulo 5 arithmetic.",
+    "options": [
+      "5",
+      "4",
+      "1",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{5}\\).\n\n\\(1 + 4 = 5 \\equiv 0 \\pmod{5}\\)\n\nSo the additive inverse is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 141 days' time?",
+    "options": [
+      "Sunday",
+      "Tuesday",
+      "Monday",
+      "Saturday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(141 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Saturday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 97 days' time?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(97 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Wednesday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 155 modulo 14.",
+    "options": [
+      "5",
+      "2",
+      "13",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 155 by 14: \\(155 = 14 \\times 11 + 1\\)\n\nThe remainder is 1, so \\(155 \\equiv 1 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 3 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "6",
+      "1",
+      "0",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 6\\): \\(4 \\times 6 = 24\\), and \\(24 \\div 7\\) leaves a remainder of 3.\n\nSo \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 64 modulo 9.",
+    "options": [
+      "8",
+      "2",
+      "4",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 64 by 9: \\(64 = 9 \\times 7 + 1\\)\n\nThe remainder is 1, so \\(64 \\equiv 1 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((15 + 38) \\pmod{7}\\).",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(15 + 38 = 53\\)\n\nDividing 53 by 7 gives a quotient of 7 and a remainder of 4.\n\nSo \\((15 + 38) \\equiv 4 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(8x \\equiv 2 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "8",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 3\\): \\(8 \\times 3 = 24\\), and \\(24 \\div 11\\) leaves a remainder of 2.\n\nSo \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((15 + 11) \\pmod{11}\\).",
+    "options": [
+      "0",
+      "5",
+      "2",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(15 + 11 = 26\\)\n\nDividing 26 by 11 gives a quotient of 2 and a remainder of 4.\n\nSo \\((15 + 11) \\equiv 4 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 6 in modulo 7 arithmetic.",
+    "options": [
+      "7",
+      "2",
+      "6",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{7}\\).\n\n\\(6 + 1 = 7 \\equiv 0 \\pmod{7}\\)\n\nSo the additive inverse is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 113 modulo 4.",
+    "options": [
+      "2",
+      "28",
+      "3",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 113 by 4: \\(113 = 4 \\times 28 + 1\\)\n\nThe remainder is 1, so \\(113 \\equiv 1 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(7x \\equiv 6 \\pmod{8}\\), where \\(0 \\leq x < 8\\).",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 7\\).\n\nWhen \\(x = 2\\): \\(7 \\times 2 = 14\\), and \\(14 \\div 8\\) leaves a remainder of 6.\n\nSo \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((52 + 58) \\pmod{9}\\).",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(52 + 58 = 110\\)\n\nDividing 110 by 9 gives a quotient of 12 and a remainder of 2.\n\nSo \\((52 + 58) \\equiv 2 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 20 days' time?",
+    "options": [
+      "Tuesday",
+      "Wednesday",
+      "Sunday",
+      "Monday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(20 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Tuesday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 4 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "1",
+      "6",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 1\\): \\(4 \\times 1 = 4\\), and \\(4 \\div 7\\) leaves a remainder of 4.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 142 modulo 10.",
+    "options": [
+      "8",
+      "10",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 142 by 10: \\(142 = 10 \\times 14 + 2\\)\n\nThe remainder is 2, so \\(142 \\equiv 2 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 87 days' time?",
+    "options": [
+      "Saturday",
+      "Monday",
+      "Sunday",
+      "Friday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(87 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Wednesday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 129 days' time?",
+    "options": [
+      "Sunday",
+      "Saturday",
+      "Monday",
+      "Friday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(129 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Wednesday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 139 modulo 8.",
+    "options": [
+      "17",
+      "5",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 139 by 8: \\(139 = 8 \\times 17 + 3\\)\n\nThe remainder is 3, so \\(139 \\equiv 3 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((16 \\times 10) \\pmod{7}\\).",
+    "options": [
+      "0",
+      "1",
+      "5",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(16 \\times 10 = 160\\)\n\nDividing 160 by 7 gives a remainder of 6.\n\nSo \\((16 \\times 10) \\equiv 6 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 9 in modulo 10 arithmetic.",
+    "options": [
+      "1",
+      "9",
+      "10",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{10}\\).\n\n\\(9 + 1 = 10 \\equiv 0 \\pmod{10}\\)\n\nSo the additive inverse is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 53 modulo 5.",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 53 by 5: \\(53 = 5 \\times 10 + 3\\)\n\nThe remainder is 3, so \\(53 \\equiv 3 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 2 in modulo 6 arithmetic.",
+    "options": [
+      "6",
+      "4",
+      "2",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{6}\\).\n\n\\(2 + 4 = 6 \\equiv 0 \\pmod{6}\\)\n\nSo the additive inverse is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 3 in modulo 13 arithmetic.",
+    "options": [
+      "10",
+      "11",
+      "13",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{13}\\).\n\n\\(3 + 10 = 13 \\equiv 0 \\pmod{13}\\)\n\nSo the additive inverse is 10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 185 modulo 10.",
+    "options": [
+      "9",
+      "6",
+      "18",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 185 by 10: \\(185 = 10 \\times 18 + 5\\)\n\nThe remainder is 5, so \\(185 \\equiv 5 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 277 modulo 6.",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 277 by 6: \\(277 = 6 \\times 46 + 1\\)\n\nThe remainder is 1, so \\(277 \\equiv 1 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 64 days' time?",
+    "options": [
+      "Wednesday",
+      "Friday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(64 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Tuesday gives Wednesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 53 days' time?",
+    "options": [
+      "Tuesday",
+      "Friday",
+      "Thursday",
+      "Wednesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(53 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Saturday gives Wednesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 109 days' time?",
+    "options": [
+      "Wednesday",
+      "Monday",
+      "Thursday",
+      "Tuesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(109 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Friday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 119 modulo 8.",
+    "options": [
+      "7",
+      "1",
+      "8",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 119 by 8: \\(119 = 8 \\times 14 + 7\\)\n\nThe remainder is 7, so \\(119 \\equiv 7 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(2x \\equiv 1 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "2",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 4\\): \\(2 \\times 4 = 8\\), and \\(8 \\div 7\\) leaves a remainder of 1.\n\nSo \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 2 \\pmod{5}\\), where \\(0 \\leq x < 5\\).",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 4\\).\n\nWhen \\(x = 3\\): \\(4 \\times 3 = 12\\), and \\(12 \\div 5\\) leaves a remainder of 2.\n\nSo \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 243 modulo 5.",
+    "options": [
+      "48",
+      "3",
+      "4",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 243 by 5: \\(243 = 5 \\times 48 + 3\\)\n\nThe remainder is 3, so \\(243 \\equiv 3 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((20 \\times 14) \\pmod{12}\\).",
+    "options": [
+      "4",
+      "6",
+      "10",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(20 \\times 14 = 280\\)\n\nDividing 280 by 12 gives a remainder of 4.\n\nSo \\((20 \\times 14) \\equiv 4 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 260 modulo 10.",
+    "options": [
+      "10",
+      "0",
+      "7",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 260 by 10: \\(260 = 10 \\times 26 + 0\\)\n\nThe remainder is 0, so \\(260 \\equiv 0 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((21 \\times 20) \\pmod{12}\\).",
+    "options": [
+      "4",
+      "0",
+      "2",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(21 \\times 20 = 420\\)\n\nDividing 420 by 12 gives a remainder of 0.\n\nSo \\((21 \\times 20) \\equiv 0 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 290 modulo 4.",
+    "options": [
+      "2",
+      "3",
+      "0",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 290 by 4: \\(290 = 4 \\times 72 + 2\\)\n\nThe remainder is 2, so \\(290 \\equiv 2 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 138 modulo 9.",
+    "options": [
+      "4",
+      "8",
+      "6",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 138 by 9: \\(138 = 9 \\times 15 + 3\\)\n\nThe remainder is 3, so \\(138 \\equiv 3 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 31 days' time?",
+    "options": [
+      "Friday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(31 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Sunday gives Wednesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((15 \\times 12) \\pmod{12}\\).",
+    "options": [
+      "2",
+      "11",
+      "0",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(15 \\times 12 = 180\\)\n\nDividing 180 by 12 gives a remainder of 0.\n\nSo \\((15 \\times 12) \\equiv 0 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((7 \\times 25) \\pmod{12}\\).",
+    "options": [
+      "6",
+      "9",
+      "8",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(7 \\times 25 = 175\\)\n\nDividing 175 by 12 gives a remainder of 7.\n\nSo \\((7 \\times 25) \\equiv 7 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 125 days' time?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(125 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Friday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((6 \\times 15) \\pmod{8}\\).",
+    "options": [
+      "2",
+      "5",
+      "4",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6 \\times 15 = 90\\)\n\nDividing 90 by 8 gives a remainder of 2.\n\nSo \\((6 \\times 15) \\equiv 2 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((59 + 45) \\pmod{12}\\).",
+    "options": [
+      "8",
+      "3",
+      "9",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(59 + 45 = 104\\)\n\nDividing 104 by 12 gives a quotient of 8 and a remainder of 8.\n\nSo \\((59 + 45) \\equiv 8 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((16 + 52) \\pmod{7}\\).",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(16 + 52 = 68\\)\n\nDividing 68 by 7 gives a quotient of 9 and a remainder of 5.\n\nSo \\((16 + 52) \\equiv 5 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 198 days' time?",
+    "options": [
+      "Saturday",
+      "Sunday",
+      "Friday",
+      "Thursday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(198 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Wednesday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 238 modulo 13.",
+    "options": [
+      "5",
+      "4",
+      "9",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 238 by 13: \\(238 = 13 \\times 18 + 4\\)\n\nThe remainder is 4, so \\(238 \\equiv 4 \\pmod{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(3x \\equiv 6 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 2\\): \\(3 \\times 2 = 6\\), and \\(6 \\div 7\\) leaves a remainder of 6.\n\nSo \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((15 \\times 9) \\pmod{10}\\).",
+    "options": [
+      "7",
+      "4",
+      "3",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(15 \\times 9 = 135\\)\n\nDividing 135 by 10 gives a remainder of 5.\n\nSo \\((15 \\times 9) \\equiv 5 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((6 \\times 16) \\pmod{11}\\).",
+    "options": [
+      "8",
+      "0",
+      "10",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6 \\times 16 = 96\\)\n\nDividing 96 by 11 gives a remainder of 8.\n\nSo \\((6 \\times 16) \\equiv 8 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 153 days' time?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Sunday",
+      "Thursday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(153 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Saturday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 9 in modulo 11 arithmetic.",
+    "options": [
+      "9",
+      "2",
+      "3",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{11}\\).\n\n\\(9 + 2 = 11 \\equiv 0 \\pmod{11}\\)\n\nSo the additive inverse is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((25 + 36) \\pmod{12}\\).",
+    "options": [
+      "0",
+      "2",
+      "9",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(25 + 36 = 61\\)\n\nDividing 61 by 12 gives a quotient of 5 and a remainder of 1.\n\nSo \\((25 + 36) \\equiv 1 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((11 + 12) \\pmod{11}\\).",
+    "options": [
+      "2",
+      "1",
+      "11",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(11 + 12 = 23\\)\n\nDividing 23 by 11 gives a quotient of 2 and a remainder of 1.\n\nSo \\((11 + 12) \\equiv 1 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 2 in modulo 8 arithmetic.",
+    "options": [
+      "2",
+      "8",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{8}\\).\n\n\\(2 + 6 = 8 \\equiv 0 \\pmod{8}\\)\n\nSo the additive inverse is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 115 days' time?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Wednesday",
+      "Saturday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(115 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Monday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 100 days' time?",
+    "options": [
+      "Friday",
+      "Saturday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(100 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Tuesday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 50 modulo 11.",
+    "options": [
+      "7",
+      "5",
+      "2",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 50 by 11: \\(50 = 11 \\times 4 + 6\\)\n\nThe remainder is 6, so \\(50 \\equiv 6 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(10x \\equiv 2 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "0",
+      "10",
+      "9",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 9\\): \\(10 \\times 9 = 90\\), and \\(90 \\div 11\\) leaves a remainder of 2.\n\nSo \\(x = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 27 modulo 14.",
+    "options": [
+      "1",
+      "14",
+      "12",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 27 by 14: \\(27 = 14 \\times 1 + 13\\)\n\nThe remainder is 13, so \\(27 \\equiv 13 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 83 days' time?",
+    "options": [
+      "Monday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(83 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Sunday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(7x \\equiv 5 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "9",
+      "7",
+      "2",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 7\\): \\(7 \\times 7 = 49\\), and \\(49 \\div 11\\) leaves a remainder of 5.\n\nSo \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 54 days' time?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Thursday",
+      "Wednesday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(54 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Saturday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 142 modulo 14.",
+    "options": [
+      "2",
+      "3",
+      "7",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 142 by 14: \\(142 = 14 \\times 10 + 2\\)\n\nThe remainder is 2, so \\(142 \\equiv 2 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 155 days' time?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Sunday",
+      "Saturday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(155 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Thursday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((18 + 49) \\pmod{10}\\).",
+    "options": [
+      "7",
+      "8",
+      "2",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(18 + 49 = 67\\)\n\nDividing 67 by 10 gives a quotient of 6 and a remainder of 7.\n\nSo \\((18 + 49) \\equiv 7 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(9x \\equiv 7 \\pmod{10}\\), where \\(0 \\leq x < 10\\).",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 9\\).\n\nWhen \\(x = 3\\): \\(9 \\times 3 = 27\\), and \\(27 \\div 10\\) leaves a remainder of 7.\n\nSo \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 79 days' time?",
+    "options": [
+      "Sunday",
+      "Wednesday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(79 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Saturday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 8 in modulo 12 arithmetic.",
+    "options": [
+      "12",
+      "5",
+      "8",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{12}\\).\n\n\\(8 + 4 = 12 \\equiv 0 \\pmod{12}\\)\n\nSo the additive inverse is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 201 modulo 11.",
+    "options": [
+      "3",
+      "9",
+      "8",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 201 by 11: \\(201 = 11 \\times 18 + 3\\)\n\nThe remainder is 3, so \\(201 \\equiv 3 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 7 in modulo 9 arithmetic.",
+    "options": [
+      "9",
+      "3",
+      "7",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{9}\\).\n\n\\(7 + 2 = 9 \\equiv 0 \\pmod{9}\\)\n\nSo the additive inverse is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 157 days' time?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(157 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Tuesday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 189 days' time?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Saturday",
+      "Wednesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(189 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Thursday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((17 \\times 5) \\pmod{10}\\).",
+    "options": [
+      "2",
+      "5",
+      "8",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(17 \\times 5 = 85\\)\n\nDividing 85 by 10 gives a remainder of 5.\n\nSo \\((17 \\times 5) \\equiv 5 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 11 days' time?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(11 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Friday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 69 days' time?",
+    "options": [
+      "Thursday",
+      "Sunday",
+      "Friday",
+      "Saturday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(69 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Saturday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 34 modulo 9.",
+    "options": [
+      "2",
+      "7",
+      "8",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 34 by 9: \\(34 = 9 \\times 3 + 7\\)\n\nThe remainder is 7, so \\(34 \\equiv 7 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 281 modulo 7.",
+    "options": [
+      "1",
+      "40",
+      "2",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 281 by 7: \\(281 = 7 \\times 40 + 1\\)\n\nThe remainder is 1, so \\(281 \\equiv 1 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((29 + 21) \\pmod{8}\\).",
+    "options": [
+      "2",
+      "1",
+      "5",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(29 + 21 = 50\\)\n\nDividing 50 by 8 gives a quotient of 6 and a remainder of 2.\n\nSo \\((29 + 21) \\equiv 2 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 7 \\pmod{9}\\), where \\(0 \\leq x < 9\\).",
+    "options": [
+      "6",
+      "4",
+      "5",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 8\\).\n\nWhen \\(x = 4\\): \\(4 \\times 4 = 16\\), and \\(16 \\div 9\\) leaves a remainder of 7.\n\nSo \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((19 + 59) \\pmod{8}\\).",
+    "options": [
+      "6",
+      "3",
+      "7",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(19 + 59 = 78\\)\n\nDividing 78 by 8 gives a quotient of 9 and a remainder of 6.\n\nSo \\((19 + 59) \\equiv 6 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 65 days' time?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Saturday",
+      "Wednesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(65 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Tuesday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((25 \\times 22) \\pmod{10}\\).",
+    "options": [
+      "10",
+      "0",
+      "7",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(25 \\times 22 = 550\\)\n\nDividing 550 by 10 gives a remainder of 0.\n\nSo \\((25 \\times 22) \\equiv 0 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 112 days' time?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Sunday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(112 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Monday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((8 \\times 3) \\pmod{12}\\).",
+    "options": [
+      "0",
+      "24",
+      "2",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(8 \\times 3 = 24\\)\n\nDividing 24 by 12 gives a remainder of 0.\n\nSo \\((8 \\times 3) \\equiv 0 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 160 days' time?",
+    "options": [
+      "Monday",
+      "Sunday",
+      "Saturday",
+      "Tuesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(160 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Monday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 8 in modulo 11 arithmetic.",
+    "options": [
+      "4",
+      "3",
+      "11",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{11}\\).\n\n\\(8 + 3 = 11 \\equiv 0 \\pmod{11}\\)\n\nSo the additive inverse is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 3 in modulo 8 arithmetic.",
+    "options": [
+      "5",
+      "6",
+      "3",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{8}\\).\n\n\\(3 + 5 = 8 \\equiv 0 \\pmod{8}\\)\n\nSo the additive inverse is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((22 \\times 21) \\pmod{7}\\).",
+    "options": [
+      "1",
+      "6",
+      "0",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(22 \\times 21 = 462\\)\n\nDividing 462 by 7 gives a remainder of 0.\n\nSo \\((22 \\times 21) \\equiv 0 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 109 days' time?",
+    "options": [
+      "Sunday",
+      "Tuesday",
+      "Monday",
+      "Wednesday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(109 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Thursday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 195 days' time?",
+    "options": [
+      "Wednesday",
+      "Monday",
+      "Thursday",
+      "Tuesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(195 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Wednesday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 90 modulo 11.",
+    "options": [
+      "9",
+      "3",
+      "6",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 90 by 11: \\(90 = 11 \\times 8 + 2\\)\n\nThe remainder is 2, so \\(90 \\equiv 2 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((38 + 16) \\pmod{4}\\).",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(38 + 16 = 54\\)\n\nDividing 54 by 4 gives a quotient of 13 and a remainder of 2.\n\nSo \\((38 + 16) \\equiv 2 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 7 in modulo 10 arithmetic.",
+    "options": [
+      "10",
+      "3",
+      "7",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{10}\\).\n\n\\(7 + 3 = 10 \\equiv 0 \\pmod{10}\\)\n\nSo the additive inverse is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(7x \\equiv 2 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "7",
+      "6",
+      "3",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 5\\): \\(7 \\times 5 = 35\\), and \\(35 \\div 11\\) leaves a remainder of 2.\n\nSo \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((14 \\times 11) \\pmod{3}\\).",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(14 \\times 11 = 154\\)\n\nDividing 154 by 3 gives a remainder of 1.\n\nSo \\((14 \\times 11) \\equiv 1 \\pmod{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 5 in modulo 6 arithmetic.",
+    "options": [
+      "5",
+      "1",
+      "6",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{6}\\).\n\n\\(5 + 1 = 6 \\equiv 0 \\pmod{6}\\)\n\nSo the additive inverse is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 7 in modulo 8 arithmetic.",
+    "options": [
+      "1",
+      "8",
+      "7",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{8}\\).\n\n\\(7 + 1 = 8 \\equiv 0 \\pmod{8}\\)\n\nSo the additive inverse is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((20 + 9) \\pmod{7}\\).",
+    "options": [
+      "2",
+      "6",
+      "5",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(20 + 9 = 29\\)\n\nDividing 29 by 7 gives a quotient of 4 and a remainder of 1.\n\nSo \\((20 + 9) \\equiv 1 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(2x \\equiv 1 \\pmod{5}\\), where \\(0 \\leq x < 5\\).",
+    "options": [
+      "0",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 4\\).\n\nWhen \\(x = 3\\): \\(2 \\times 3 = 6\\), and \\(6 \\div 5\\) leaves a remainder of 1.\n\nSo \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((18 + 52) \\pmod{7}\\).",
+    "options": [
+      "6",
+      "1",
+      "0",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(18 + 52 = 70\\)\n\nDividing 70 by 7 gives a quotient of 10 and a remainder of 0.\n\nSo \\((18 + 52) \\equiv 0 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 3 in modulo 12 arithmetic.",
+    "options": [
+      "10",
+      "12",
+      "3",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{12}\\).\n\n\\(3 + 9 = 12 \\equiv 0 \\pmod{12}\\)\n\nSo the additive inverse is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 5 in modulo 7 arithmetic.",
+    "options": [
+      "3",
+      "7",
+      "2",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{7}\\).\n\n\\(5 + 2 = 7 \\equiv 0 \\pmod{7}\\)\n\nSo the additive inverse is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 25 modulo 15.",
+    "options": [
+      "11",
+      "5",
+      "9",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 25 by 15: \\(25 = 15 \\times 1 + 10\\)\n\nThe remainder is 10, so \\(25 \\equiv 10 \\pmod{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((58 + 46) \\pmod{7}\\).",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(58 + 46 = 104\\)\n\nDividing 104 by 7 gives a quotient of 14 and a remainder of 6.\n\nSo \\((58 + 46) \\equiv 6 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 2 in modulo 7 arithmetic.",
+    "options": [
+      "7",
+      "2",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{7}\\).\n\n\\(2 + 5 = 7 \\equiv 0 \\pmod{7}\\)\n\nSo the additive inverse is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 89 days' time?",
+    "options": [
+      "Tuesday",
+      "Sunday",
+      "Saturday",
+      "Monday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(89 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Tuesday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 3 in modulo 7 arithmetic.",
+    "options": [
+      "5",
+      "7",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{7}\\).\n\n\\(3 + 4 = 7 \\equiv 0 \\pmod{7}\\)\n\nSo the additive inverse is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 219 modulo 15.",
+    "options": [
+      "11",
+      "6",
+      "9",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 219 by 15: \\(219 = 15 \\times 14 + 9\\)\n\nThe remainder is 9, so \\(219 \\equiv 9 \\pmod{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 5 in modulo 13 arithmetic.",
+    "options": [
+      "9",
+      "13",
+      "5",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{13}\\).\n\n\\(5 + 8 = 13 \\equiv 0 \\pmod{13}\\)\n\nSo the additive inverse is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 117 days' time?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(117 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Thursday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 4 in modulo 6 arithmetic.",
+    "options": [
+      "6",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{6}\\).\n\n\\(4 + 2 = 6 \\equiv 0 \\pmod{6}\\)\n\nSo the additive inverse is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 206 modulo 14.",
+    "options": [
+      "10",
+      "4",
+      "11",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 206 by 14: \\(206 = 14 \\times 14 + 10\\)\n\nThe remainder is 10, so \\(206 \\equiv 10 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 250 modulo 8.",
+    "options": [
+      "3",
+      "6",
+      "2",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 250 by 8: \\(250 = 8 \\times 31 + 2\\)\n\nThe remainder is 2, so \\(250 \\equiv 2 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((40 + 10) \\pmod{9}\\).",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(40 + 10 = 50\\)\n\nDividing 50 by 9 gives a quotient of 5 and a remainder of 5.\n\nSo \\((40 + 10) \\equiv 5 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 273 modulo 14.",
+    "options": [
+      "8",
+      "7",
+      "19",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 273 by 14: \\(273 = 14 \\times 19 + 7\\)\n\nThe remainder is 7, so \\(273 \\equiv 7 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((11 \\times 6) \\pmod{6}\\).",
+    "options": [
+      "3",
+      "0",
+      "2",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(11 \\times 6 = 66\\)\n\nDividing 66 by 6 gives a remainder of 0.\n\nSo \\((11 \\times 6) \\equiv 0 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 184 modulo 6.",
+    "options": [
+      "2",
+      "30",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 184 by 6: \\(184 = 6 \\times 30 + 4\\)\n\nThe remainder is 4, so \\(184 \\equiv 4 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(2x \\equiv 2 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 1\\): \\(2 \\times 1 = 2\\), and \\(2 \\div 7\\) leaves a remainder of 2.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 1 in modulo 6 arithmetic.",
+    "options": [
+      "6",
+      "0",
+      "1",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{6}\\).\n\n\\(1 + 5 = 6 \\equiv 0 \\pmod{6}\\)\n\nSo the additive inverse is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((14 + 38) \\pmod{11}\\).",
+    "options": [
+      "8",
+      "9",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(14 + 38 = 52\\)\n\nDividing 52 by 11 gives a quotient of 4 and a remainder of 8.\n\nSo \\((14 + 38) \\equiv 8 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((11 \\times 23) \\pmod{5}\\).",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(11 \\times 23 = 253\\)\n\nDividing 253 by 5 gives a remainder of 3.\n\nSo \\((11 \\times 23) \\equiv 3 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((53 + 11) \\pmod{9}\\).",
+    "options": [
+      "2",
+      "7",
+      "1",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(53 + 11 = 64\\)\n\nDividing 64 by 9 gives a quotient of 7 and a remainder of 1.\n\nSo \\((53 + 11) \\equiv 1 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 168 days' time?",
+    "options": [
+      "Wednesday",
+      "Saturday",
+      "Friday",
+      "Thursday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(168 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Thursday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 197 modulo 10.",
+    "options": [
+      "3",
+      "8",
+      "7",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 197 by 10: \\(197 = 10 \\times 19 + 7\\)\n\nThe remainder is 7, so \\(197 \\equiv 7 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 99 days' time?",
+    "options": [
+      "Friday",
+      "Wednesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(99 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Wednesday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((22 + 7) \\pmod{10}\\).",
+    "options": [
+      "7",
+      "4",
+      "0",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(22 + 7 = 29\\)\n\nDividing 29 by 10 gives a quotient of 2 and a remainder of 9.\n\nSo \\((22 + 7) \\equiv 9 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((6 \\times 19) \\pmod{12}\\).",
+    "options": [
+      "10",
+      "6",
+      "1",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6 \\times 19 = 114\\)\n\nDividing 114 by 12 gives a remainder of 6.\n\nSo \\((6 \\times 19) \\equiv 6 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((12 \\times 10) \\pmod{9}\\).",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(12 \\times 10 = 120\\)\n\nDividing 120 by 9 gives a remainder of 3.\n\nSo \\((12 \\times 10) \\equiv 3 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 286 modulo 5.",
+    "options": [
+      "2",
+      "57",
+      "1",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 286 by 5: \\(286 = 5 \\times 57 + 1\\)\n\nThe remainder is 1, so \\(286 \\equiv 1 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 117 modulo 10.",
+    "options": [
+      "7",
+      "3",
+      "8",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 117 by 10: \\(117 = 10 \\times 11 + 7\\)\n\nThe remainder is 7, so \\(117 \\equiv 7 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((42 + 19) \\pmod{12}\\).",
+    "options": [
+      "2",
+      "6",
+      "1",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(42 + 19 = 61\\)\n\nDividing 61 by 12 gives a quotient of 5 and a remainder of 1.\n\nSo \\((42 + 19) \\equiv 1 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 121 modulo 9.",
+    "options": [
+      "1",
+      "13",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 121 by 9: \\(121 = 9 \\times 13 + 4\\)\n\nThe remainder is 4, so \\(121 \\equiv 4 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((6 + 43) \\pmod{12}\\).",
+    "options": [
+      "10",
+      "2",
+      "1",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(6 + 43 = 49\\)\n\nDividing 49 by 12 gives a quotient of 4 and a remainder of 1.\n\nSo \\((6 + 43) \\equiv 1 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 4 \\pmod{5}\\), where \\(0 \\leq x < 5\\).",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 4\\).\n\nWhen \\(x = 1\\): \\(4 \\times 1 = 4\\), and \\(4 \\div 5\\) leaves a remainder of 4.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 10 in modulo 13 arithmetic.",
+    "options": [
+      "4",
+      "13",
+      "10",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{13}\\).\n\n\\(10 + 3 = 13 \\equiv 0 \\pmod{13}\\)\n\nSo the additive inverse is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((20 \\times 14) \\pmod{10}\\).",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(20 \\times 14 = 280\\)\n\nDividing 280 by 10 gives a remainder of 0.\n\nSo \\((20 \\times 14) \\equiv 0 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(2x \\equiv 2 \\pmod{5}\\), where \\(0 \\leq x < 5\\).",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 4\\).\n\nWhen \\(x = 1\\): \\(2 \\times 1 = 2\\), and \\(2 \\div 5\\) leaves a remainder of 2.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 9 in modulo 13 arithmetic.",
+    "options": [
+      "4",
+      "5",
+      "9",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{13}\\).\n\n\\(9 + 4 = 13 \\equiv 0 \\pmod{13}\\)\n\nSo the additive inverse is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((23 \\times 13) \\pmod{10}\\).",
+    "options": [
+      "2",
+      "1",
+      "6",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(23 \\times 13 = 299\\)\n\nDividing 299 by 10 gives a remainder of 9.\n\nSo \\((23 \\times 13) \\equiv 9 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((6 \\times 18) \\pmod{8}\\).",
+    "options": [
+      "6",
+      "4",
+      "0",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6 \\times 18 = 108\\)\n\nDividing 108 by 8 gives a remainder of 4.\n\nSo \\((6 \\times 18) \\equiv 4 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 130 days' time?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Sunday",
+      "Thursday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(130 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Monday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((39 + 15) \\pmod{4}\\).",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(39 + 15 = 54\\)\n\nDividing 54 by 4 gives a quotient of 13 and a remainder of 2.\n\nSo \\((39 + 15) \\equiv 2 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((16 \\times 19) \\pmod{10}\\).",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(16 \\times 19 = 304\\)\n\nDividing 304 by 10 gives a remainder of 4.\n\nSo \\((16 \\times 19) \\equiv 4 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 4 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "1",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 1\\): \\(4 \\times 1 = 4\\), and \\(4 \\div 11\\) leaves a remainder of 4.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((21 \\times 7) \\pmod{10}\\).",
+    "options": [
+      "4",
+      "9",
+      "8",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(21 \\times 7 = 147\\)\n\nDividing 147 by 10 gives a remainder of 7.\n\nSo \\((21 \\times 7) \\equiv 7 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 72 days' time?",
+    "options": [
+      "Saturday",
+      "Monday",
+      "Sunday",
+      "Tuesday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(72 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Friday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((21 \\times 13) \\pmod{7}\\).",
+    "options": [
+      "0",
+      "6",
+      "2",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(21 \\times 13 = 273\\)\n\nDividing 273 by 7 gives a remainder of 0.\n\nSo \\((21 \\times 13) \\equiv 0 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 10 in modulo 12 arithmetic.",
+    "options": [
+      "10",
+      "3",
+      "2",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{12}\\).\n\n\\(10 + 2 = 12 \\equiv 0 \\pmod{12}\\)\n\nSo the additive inverse is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 240 modulo 13.",
+    "options": [
+      "6",
+      "18",
+      "2",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 240 by 13: \\(240 = 13 \\times 18 + 6\\)\n\nThe remainder is 6, so \\(240 \\equiv 6 \\pmod{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((49 + 50) \\pmod{6}\\).",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(49 + 50 = 99\\)\n\nDividing 99 by 6 gives a quotient of 16 and a remainder of 3.\n\nSo \\((49 + 50) \\equiv 3 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 198 modulo 9.",
+    "options": [
+      "9",
+      "8",
+      "0",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 198 by 9: \\(198 = 9 \\times 22 + 0\\)\n\nThe remainder is 0, so \\(198 \\equiv 0 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((47 + 44) \\pmod{11}\\).",
+    "options": [
+      "3",
+      "0",
+      "7",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(47 + 44 = 91\\)\n\nDividing 91 by 11 gives a quotient of 8 and a remainder of 3.\n\nSo \\((47 + 44) \\equiv 3 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((45 + 60) \\pmod{9}\\).",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(45 + 60 = 105\\)\n\nDividing 105 by 9 gives a quotient of 11 and a remainder of 6.\n\nSo \\((45 + 60) \\equiv 6 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((13 + 18) \\pmod{10}\\).",
+    "options": [
+      "9",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(13 + 18 = 31\\)\n\nDividing 31 by 10 gives a quotient of 3 and a remainder of 1.\n\nSo \\((13 + 18) \\equiv 1 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((25 + 21) \\pmod{10}\\).",
+    "options": [
+      "6",
+      "5",
+      "2",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(25 + 21 = 46\\)\n\nDividing 46 by 10 gives a quotient of 4 and a remainder of 6.\n\nSo \\((25 + 21) \\equiv 6 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(8x \\equiv 4 \\pmod{9}\\), where \\(0 \\leq x < 9\\).",
+    "options": [
+      "6",
+      "4",
+      "7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 8\\).\n\nWhen \\(x = 5\\): \\(8 \\times 5 = 40\\), and \\(40 \\div 9\\) leaves a remainder of 4.\n\nSo \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 153 days' time?",
+    "options": [
+      "Wednesday",
+      "Sunday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(153 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Tuesday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 105 days' time?",
+    "options": [
+      "Thursday",
+      "Sunday",
+      "Saturday",
+      "Friday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(105 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Friday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 153 modulo 15.",
+    "options": [
+      "3",
+      "4",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 153 by 15: \\(153 = 15 \\times 10 + 3\\)\n\nThe remainder is 3, so \\(153 \\equiv 3 \\pmod{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((9 \\times 22) \\pmod{9}\\).",
+    "options": [
+      "2",
+      "0",
+      "4",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(9 \\times 22 = 198\\)\n\nDividing 198 by 9 gives a remainder of 0.\n\nSo \\((9 \\times 22) \\equiv 0 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((36 + 7) \\pmod{10}\\).",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(36 + 7 = 43\\)\n\nDividing 43 by 10 gives a quotient of 4 and a remainder of 3.\n\nSo \\((36 + 7) \\equiv 3 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 122 modulo 15.",
+    "options": [
+      "3",
+      "10",
+      "13",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 122 by 15: \\(122 = 15 \\times 8 + 2\\)\n\nThe remainder is 2, so \\(122 \\equiv 2 \\pmod{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 80 modulo 14.",
+    "options": [
+      "11",
+      "5",
+      "10",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 80 by 14: \\(80 = 14 \\times 5 + 10\\)\n\nThe remainder is 10, so \\(80 \\equiv 10 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((58 + 59) \\pmod{12}\\).",
+    "options": [
+      "0",
+      "9",
+      "10",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(58 + 59 = 117\\)\n\nDividing 117 by 12 gives a quotient of 9 and a remainder of 9.\n\nSo \\((58 + 59) \\equiv 9 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((45 + 20) \\pmod{7}\\).",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(45 + 20 = 65\\)\n\nDividing 65 by 7 gives a quotient of 9 and a remainder of 2.\n\nSo \\((45 + 20) \\equiv 2 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 30 modulo 9.",
+    "options": [
+      "3",
+      "4",
+      "0",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 30 by 9: \\(30 = 9 \\times 3 + 3\\)\n\nThe remainder is 3, so \\(30 \\equiv 3 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 247 modulo 3.",
+    "options": [
+      "82",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 247 by 3: \\(247 = 3 \\times 82 + 1\\)\n\nThe remainder is 1, so \\(247 \\equiv 1 \\pmod{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((4 \\times 9) \\pmod{11}\\).",
+    "options": [
+      "2",
+      "0",
+      "5",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4 \\times 9 = 36\\)\n\nDividing 36 by 11 gives a remainder of 3.\n\nSo \\((4 \\times 9) \\equiv 3 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 198 days' time?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Saturday",
+      "Friday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(198 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Tuesday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 12 days' time?",
+    "options": [
+      "Sunday",
+      "Thursday",
+      "Saturday",
+      "Friday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(12 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Sunday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((24 \\times 3) \\pmod{10}\\).",
+    "options": [
+      "2",
+      "4",
+      "7",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(24 \\times 3 = 72\\)\n\nDividing 72 by 10 gives a remainder of 2.\n\nSo \\((24 \\times 3) \\equiv 2 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 145 days' time?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Sunday",
+      "Thursday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(145 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Sunday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 5 in modulo 11 arithmetic.",
+    "options": [
+      "5",
+      "11",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{11}\\).\n\n\\(5 + 6 = 11 \\equiv 0 \\pmod{11}\\)\n\nSo the additive inverse is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(6x \\equiv 3 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "6",
+      "3",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 4\\): \\(6 \\times 4 = 24\\), and \\(24 \\div 7\\) leaves a remainder of 3.\n\nSo \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 6 in modulo 9 arithmetic.",
+    "options": [
+      "6",
+      "9",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{9}\\).\n\n\\(6 + 3 = 9 \\equiv 0 \\pmod{9}\\)\n\nSo the additive inverse is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((24 \\times 4) \\pmod{9}\\).",
+    "options": [
+      "24",
+      "6",
+      "1",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(24 \\times 4 = 96\\)\n\nDividing 96 by 9 gives a remainder of 6.\n\nSo \\((24 \\times 4) \\equiv 6 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 300 modulo 14.",
+    "options": [
+      "8",
+      "6",
+      "0",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 300 by 14: \\(300 = 14 \\times 21 + 6\\)\n\nThe remainder is 6, so \\(300 \\equiv 6 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 165 days' time?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Sunday",
+      "Monday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(165 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Tuesday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 135 modulo 4.",
+    "options": [
+      "1",
+      "4",
+      "0",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 135 by 4: \\(135 = 4 \\times 33 + 3\\)\n\nThe remainder is 3, so \\(135 \\equiv 3 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((31 + 11) \\pmod{12}\\).",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(31 + 11 = 42\\)\n\nDividing 42 by 12 gives a quotient of 3 and a remainder of 6.\n\nSo \\((31 + 11) \\equiv 6 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 184 modulo 5.",
+    "options": [
+      "4",
+      "1",
+      "36",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 184 by 5: \\(184 = 5 \\times 36 + 4\\)\n\nThe remainder is 4, so \\(184 \\equiv 4 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(3x \\equiv 8 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "10",
+      "1",
+      "2",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 10\\): \\(3 \\times 10 = 30\\), and \\(30 \\div 11\\) leaves a remainder of 8.\n\nSo \\(x = 10\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((48 + 33) \\pmod{7}\\).",
+    "options": [
+      "2",
+      "5",
+      "1",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(48 + 33 = 81\\)\n\nDividing 81 by 7 gives a quotient of 11 and a remainder of 4.\n\nSo \\((48 + 33) \\equiv 4 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 11 days' time?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Friday",
+      "Saturday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(11 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Sunday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 245 modulo 9.",
+    "options": [
+      "7",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 245 by 9: \\(245 = 9 \\times 27 + 2\\)\n\nThe remainder is 2, so \\(245 \\equiv 2 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((37 + 56) \\pmod{7}\\).",
+    "options": [
+      "5",
+      "0",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(37 + 56 = 93\\)\n\nDividing 93 by 7 gives a quotient of 13 and a remainder of 2.\n\nSo \\((37 + 56) \\equiv 2 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 135 days' time?",
+    "options": [
+      "Monday",
+      "Saturday",
+      "Sunday",
+      "Friday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(135 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Thursday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 98 modulo 10.",
+    "options": [
+      "9",
+      "10",
+      "8",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 98 by 10: \\(98 = 10 \\times 9 + 8\\)\n\nThe remainder is 8, so \\(98 \\equiv 8 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Tuesday, what day of the week will it be in 191 days' time?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Wednesday",
+      "Saturday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(191 \\div 7\\) leaves a remainder of 2.\n\nCounting 2 days on from Tuesday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 226 modulo 11.",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 226 by 11: \\(226 = 11 \\times 20 + 6\\)\n\nThe remainder is 6, so \\(226 \\equiv 6 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 181 days' time?",
+    "options": [
+      "Saturday",
+      "Tuesday",
+      "Monday",
+      "Sunday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(181 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Monday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((13 + 45) \\pmod{8}\\).",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(13 + 45 = 58\\)\n\nDividing 58 by 8 gives a quotient of 7 and a remainder of 2.\n\nSo \\((13 + 45) \\equiv 2 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((37 + 58) \\pmod{6}\\).",
+    "options": [
+      "0",
+      "1",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(37 + 58 = 95\\)\n\nDividing 95 by 6 gives a quotient of 15 and a remainder of 5.\n\nSo \\((37 + 58) \\equiv 5 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((37 + 30) \\pmod{3}\\).",
+    "options": [
+      "0",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(37 + 30 = 67\\)\n\nDividing 67 by 3 gives a quotient of 22 and a remainder of 1.\n\nSo \\((37 + 30) \\equiv 1 \\pmod{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((29 + 11) \\pmod{12}\\).",
+    "options": [
+      "7",
+      "1",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(29 + 11 = 40\\)\n\nDividing 40 by 12 gives a quotient of 3 and a remainder of 4.\n\nSo \\((29 + 11) \\equiv 4 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((4 \\times 6) \\pmod{10}\\).",
+    "options": [
+      "6",
+      "4",
+      "2",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4 \\times 6 = 24\\)\n\nDividing 24 by 10 gives a remainder of 4.\n\nSo \\((4 \\times 6) \\equiv 4 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((40 + 32) \\pmod{9}\\).",
+    "options": [
+      "4",
+      "1",
+      "0",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(40 + 32 = 72\\)\n\nDividing 72 by 9 gives a quotient of 8 and a remainder of 0.\n\nSo \\((40 + 32) \\equiv 0 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 80 days' time?",
+    "options": [
+      "Wednesday",
+      "Tuesday",
+      "Thursday",
+      "Friday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(80 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Sunday gives Wednesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 31 modulo 6.",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 31 by 6: \\(31 = 6 \\times 5 + 1\\)\n\nThe remainder is 1, so \\(31 \\equiv 1 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((21 \\times 8) \\pmod{12}\\).",
+    "options": [
+      "5",
+      "12",
+      "2",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(21 \\times 8 = 168\\)\n\nDividing 168 by 12 gives a remainder of 0.\n\nSo \\((21 \\times 8) \\equiv 0 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((7 + 58) \\pmod{8}\\).",
+    "options": [
+      "2",
+      "1",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7 + 58 = 65\\)\n\nDividing 65 by 8 gives a quotient of 8 and a remainder of 1.\n\nSo \\((7 + 58) \\equiv 1 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((3 \\times 24) \\pmod{10}\\).",
+    "options": [
+      "7",
+      "2",
+      "4",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3 \\times 24 = 72\\)\n\nDividing 72 by 10 gives a remainder of 2.\n\nSo \\((3 \\times 24) \\equiv 2 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((21 \\times 4) \\pmod{9}\\).",
+    "options": [
+      "4",
+      "7",
+      "5",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(21 \\times 4 = 84\\)\n\nDividing 84 by 9 gives a remainder of 3.\n\nSo \\((21 \\times 4) \\equiv 3 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((14 \\times 19) \\pmod{8}\\).",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(14 \\times 19 = 266\\)\n\nDividing 266 by 8 gives a remainder of 2.\n\nSo \\((14 \\times 19) \\equiv 2 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 3 in modulo 10 arithmetic.",
+    "options": [
+      "7",
+      "8",
+      "3",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{10}\\).\n\n\\(3 + 7 = 10 \\equiv 0 \\pmod{10}\\)\n\nSo the additive inverse is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 186 modulo 9.",
+    "options": [
+      "7",
+      "6",
+      "3",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 186 by 9: \\(186 = 9 \\times 20 + 6\\)\n\nThe remainder is 6, so \\(186 \\equiv 6 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 101 days' time?",
+    "options": [
+      "Tuesday",
+      "Sunday",
+      "Saturday",
+      "Monday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(101 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Thursday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 125 days' time?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Sunday",
+      "Saturday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(125 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Saturday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 2 in modulo 13 arithmetic.",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{13}\\).\n\n\\(2 + 11 = 13 \\equiv 0 \\pmod{13}\\)\n\nSo the additive inverse is 11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((29 + 46) \\pmod{5}\\).",
+    "options": [
+      "3",
+      "4",
+      "0",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(29 + 46 = 75\\)\n\nDividing 75 by 5 gives a quotient of 15 and a remainder of 0.\n\nSo \\((29 + 46) \\equiv 0 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 39 days' time?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Wednesday",
+      "Tuesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(39 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Thursday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((4 \\times 22) \\pmod{9}\\).",
+    "options": [
+      "16",
+      "7",
+      "0",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4 \\times 22 = 88\\)\n\nDividing 88 by 9 gives a remainder of 7.\n\nSo \\((4 \\times 22) \\equiv 7 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 249 modulo 4.",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 249 by 4: \\(249 = 4 \\times 62 + 1\\)\n\nThe remainder is 1, so \\(249 \\equiv 1 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 50 days' time?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Wednesday",
+      "Tuesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(50 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Sunday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(3x \\equiv 4 \\pmod{5}\\), where \\(0 \\leq x < 5\\).",
+    "options": [
+      "2",
+      "0",
+      "4",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 4\\).\n\nWhen \\(x = 3\\): \\(3 \\times 3 = 9\\), and \\(9 \\div 5\\) leaves a remainder of 4.\n\nSo \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 147 days' time?",
+    "options": [
+      "Sunday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(147 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Friday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((14 \\times 7) \\pmod{6}\\).",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(14 \\times 7 = 98\\)\n\nDividing 98 by 6 gives a remainder of 2.\n\nSo \\((14 \\times 7) \\equiv 2 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 278 modulo 5.",
+    "options": [
+      "3",
+      "55",
+      "2",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 278 by 5: \\(278 = 5 \\times 55 + 3\\)\n\nThe remainder is 3, so \\(278 \\equiv 3 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 140 modulo 5.",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 140 by 5: \\(140 = 5 \\times 28 + 0\\)\n\nThe remainder is 0, so \\(140 \\equiv 0 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(8x \\equiv 3 \\pmod{9}\\), where \\(0 \\leq x < 9\\).",
+    "options": [
+      "7",
+      "6",
+      "3",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 8\\).\n\nWhen \\(x = 6\\): \\(8 \\times 6 = 48\\), and \\(48 \\div 9\\) leaves a remainder of 3.\n\nSo \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 118 modulo 11.",
+    "options": [
+      "10",
+      "3",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 118 by 11: \\(118 = 11 \\times 10 + 8\\)\n\nThe remainder is 8, so \\(118 \\equiv 8 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(7x \\equiv 2 \\pmod{9}\\), where \\(0 \\leq x < 9\\).",
+    "options": [
+      "0",
+      "8",
+      "1",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 8\\).\n\nWhen \\(x = 8\\): \\(7 \\times 8 = 56\\), and \\(56 \\div 9\\) leaves a remainder of 2.\n\nSo \\(x = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 116 days' time?",
+    "options": [
+      "Friday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(116 \\div 7\\) leaves a remainder of 4.\n\nCounting 4 days on from Saturday gives Wednesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((46 + 15) \\pmod{6}\\).",
+    "options": [
+      "2",
+      "0",
+      "5",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(46 + 15 = 61\\)\n\nDividing 61 by 6 gives a quotient of 10 and a remainder of 1.\n\nSo \\((46 + 15) \\equiv 1 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 285 modulo 14.",
+    "options": [
+      "6",
+      "5",
+      "9",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 285 by 14: \\(285 = 14 \\times 20 + 5\\)\n\nThe remainder is 5, so \\(285 \\equiv 5 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 233 modulo 8.",
+    "options": [
+      "8",
+      "7",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 233 by 8: \\(233 = 8 \\times 29 + 1\\)\n\nThe remainder is 1, so \\(233 \\equiv 1 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((9 + 23) \\pmod{12}\\).",
+    "options": [
+      "3",
+      "9",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9 + 23 = 32\\)\n\nDividing 32 by 12 gives a quotient of 2 and a remainder of 8.\n\nSo \\((9 + 23) \\equiv 8 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 120 days' time?",
+    "options": [
+      "Tuesday",
+      "Monday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(120 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Saturday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 128 modulo 7.",
+    "options": [
+      "0",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 128 by 7: \\(128 = 7 \\times 18 + 2\\)\n\nThe remainder is 2, so \\(128 \\equiv 2 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((11 + 31) \\pmod{7}\\).",
+    "options": [
+      "5",
+      "2",
+      "0",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(11 + 31 = 42\\)\n\nDividing 42 by 7 gives a quotient of 6 and a remainder of 0.\n\nSo \\((11 + 31) \\equiv 0 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 75 modulo 3.",
+    "options": [
+      "3",
+      "0",
+      "1",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 75 by 3: \\(75 = 3 \\times 25 + 0\\)\n\nThe remainder is 0, so \\(75 \\equiv 0 \\pmod{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((58 + 30) \\pmod{11}\\).",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(58 + 30 = 88\\)\n\nDividing 88 by 11 gives a quotient of 8 and a remainder of 0.\n\nSo \\((58 + 30) \\equiv 0 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 291 modulo 11.",
+    "options": [
+      "26",
+      "5",
+      "3",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 291 by 11: \\(291 = 11 \\times 26 + 5\\)\n\nThe remainder is 5, so \\(291 \\equiv 5 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 1 in modulo 12 arithmetic.",
+    "options": [
+      "11",
+      "1",
+      "0",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{12}\\).\n\n\\(1 + 11 = 12 \\equiv 0 \\pmod{12}\\)\n\nSo the additive inverse is 11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(5x \\equiv 4 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "6",
+      "5",
+      "2",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 5\\): \\(5 \\times 5 = 25\\), and \\(25 \\div 7\\) leaves a remainder of 4.\n\nSo \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 1 in modulo 8 arithmetic.",
+    "options": [
+      "8",
+      "0",
+      "7",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{8}\\).\n\n\\(1 + 7 = 8 \\equiv 0 \\pmod{8}\\)\n\nSo the additive inverse is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Saturday, what day of the week will it be in 85 days' time?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Saturday",
+      "Tuesday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(85 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Saturday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((20 \\times 18) \\pmod{11}\\).",
+    "options": [
+      "0",
+      "8",
+      "5",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(20 \\times 18 = 360\\)\n\nDividing 360 by 11 gives a remainder of 8.\n\nSo \\((20 \\times 18) \\equiv 8 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 129 days' time?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Wednesday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(129 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Monday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 183 modulo 4.",
+    "options": [
+      "1",
+      "4",
+      "3",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 183 by 4: \\(183 = 4 \\times 45 + 3\\)\n\nThe remainder is 3, so \\(183 \\equiv 3 \\pmod{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((4 \\times 15) \\pmod{8}\\).",
+    "options": [
+      "4",
+      "3",
+      "6",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4 \\times 15 = 60\\)\n\nDividing 60 by 8 gives a remainder of 4.\n\nSo \\((4 \\times 15) \\equiv 4 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 190 days' time?",
+    "options": [
+      "Saturday",
+      "Thursday",
+      "Wednesday",
+      "Friday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(190 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Wednesday gives Thursday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((23 \\times 4) \\pmod{11}\\).",
+    "options": [
+      "4",
+      "8",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(23 \\times 4 = 92\\)\n\nDividing 92 by 11 gives a remainder of 4.\n\nSo \\((23 \\times 4) \\equiv 4 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((46 + 30) \\pmod{9}\\).",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(46 + 30 = 76\\)\n\nDividing 76 by 9 gives a quotient of 8 and a remainder of 4.\n\nSo \\((46 + 30) \\equiv 4 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 192 days' time?",
+    "options": [
+      "Sunday",
+      "Saturday",
+      "Monday",
+      "Tuesday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(192 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Thursday gives Sunday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((46 + 8) \\pmod{5}\\).",
+    "options": [
+      "3",
+      "4",
+      "0",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(46 + 8 = 54\\)\n\nDividing 54 by 5 gives a quotient of 10 and a remainder of 4.\n\nSo \\((46 + 8) \\equiv 4 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 178 modulo 11.",
+    "options": [
+      "2",
+      "3",
+      "10",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide 178 by 11: \\(178 = 11 \\times 16 + 2\\)\n\nThe remainder is 2, so \\(178 \\equiv 2 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Sunday, what day of the week will it be in 104 days' time?",
+    "options": [
+      "Saturday",
+      "Monday",
+      "Friday",
+      "Sunday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(104 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Sunday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((8 + 35) \\pmod{5}\\).",
+    "options": [
+      "4",
+      "0",
+      "3",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8 + 35 = 43\\)\n\nDividing 43 by 5 gives a quotient of 8 and a remainder of 3.\n\nSo \\((8 + 35) \\equiv 3 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 19 days' time?",
+    "options": [
+      "Monday",
+      "Sunday",
+      "Friday",
+      "Saturday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(19 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Monday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 38 days' time?",
+    "options": [
+      "Tuesday",
+      "Sunday",
+      "Monday",
+      "Wednesday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(38 \\div 7\\) leaves a remainder of 3.\n\nCounting 3 days on from Friday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 103 modulo 10.",
+    "options": [
+      "4",
+      "10",
+      "7",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 103 by 10: \\(103 = 10 \\times 10 + 3\\)\n\nThe remainder is 3, so \\(103 \\equiv 3 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 95 modulo 15.",
+    "options": [
+      "10",
+      "6",
+      "5",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 95 by 15: \\(95 = 15 \\times 6 + 5\\)\n\nThe remainder is 5, so \\(95 \\equiv 5 \\pmod{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 45 modulo 14.",
+    "options": [
+      "0",
+      "3",
+      "4",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 45 by 14: \\(45 = 14 \\times 3 + 3\\)\n\nThe remainder is 3, so \\(45 \\equiv 3 \\pmod{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((59 + 41) \\pmod{12}\\).",
+    "options": [
+      "4",
+      "5",
+      "9",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(59 + 41 = 100\\)\n\nDividing 100 by 12 gives a quotient of 8 and a remainder of 4.\n\nSo \\((59 + 41) \\equiv 4 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 258 modulo 10.",
+    "options": [
+      "5",
+      "8",
+      "9",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 258 by 10: \\(258 = 10 \\times 25 + 8\\)\n\nThe remainder is 8, so \\(258 \\equiv 8 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((13 \\times 5) \\pmod{7}\\).",
+    "options": [
+      "1",
+      "2",
+      "30",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(13 \\times 5 = 65\\)\n\nDividing 65 by 7 gives a remainder of 2.\n\nSo \\((13 \\times 5) \\equiv 2 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 298 modulo 7.",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 298 by 7: \\(298 = 7 \\times 42 + 4\\)\n\nThe remainder is 4, so \\(298 \\equiv 4 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 90 modulo 6.",
+    "options": [
+      "1",
+      "0",
+      "6",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 90 by 6: \\(90 = 6 \\times 15 + 0\\)\n\nThe remainder is 0, so \\(90 \\equiv 0 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((5 \\times 23) \\pmod{8}\\).",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(5 \\times 23 = 115\\)\n\nDividing 115 by 8 gives a remainder of 3.\n\nSo \\((5 \\times 23) \\equiv 3 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Monday, what day of the week will it be in 56 days' time?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Sunday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(56 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Monday gives Monday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 40 modulo 6.",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 40 by 6: \\(40 = 6 \\times 6 + 4\\)\n\nThe remainder is 4, so \\(40 \\equiv 4 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 262 modulo 6.",
+    "options": [
+      "2",
+      "5",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 262 by 6: \\(262 = 6 \\times 43 + 4\\)\n\nThe remainder is 4, so \\(262 \\equiv 4 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((57 + 52) \\pmod{6}\\).",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(57 + 52 = 109\\)\n\nDividing 109 by 6 gives a quotient of 18 and a remainder of 1.\n\nSo \\((57 + 52) \\equiv 1 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((13 \\times 13) \\pmod{12}\\).",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(13 \\times 13 = 169\\)\n\nDividing 169 by 12 gives a remainder of 1.\n\nSo \\((13 \\times 13) \\equiv 1 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((59 + 53) \\pmod{7}\\).",
+    "options": [
+      "0",
+      "5",
+      "1",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(59 + 53 = 112\\)\n\nDividing 112 by 7 gives a quotient of 16 and a remainder of 0.\n\nSo \\((59 + 53) \\equiv 0 \\pmod{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((7 \\times 25) \\pmod{9}\\).",
+    "options": [
+      "49",
+      "4",
+      "6",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7 \\times 25 = 175\\)\n\nDividing 175 by 9 gives a remainder of 4.\n\nSo \\((7 \\times 25) \\equiv 4 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 181 days' time?",
+    "options": [
+      "Thursday",
+      "Tuesday",
+      "Friday",
+      "Wednesday"
+    ],
+    "correctIndex": 3,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(181 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Thursday gives Wednesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 135 modulo 12.",
+    "options": [
+      "5",
+      "4",
+      "9",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 135 by 12: \\(135 = 12 \\times 11 + 3\\)\n\nThe remainder is 3, so \\(135 \\equiv 3 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 62 days' time?",
+    "options": [
+      "Wednesday",
+      "Tuesday",
+      "Monday",
+      "Thursday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(62 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Wednesday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((37 + 34) \\pmod{12}\\).",
+    "options": [
+      "0",
+      "11",
+      "6",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(37 + 34 = 71\\)\n\nDividing 71 by 12 gives a quotient of 5 and a remainder of 11.\n\nSo \\((37 + 34) \\equiv 11 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((49 + 9) \\pmod{6}\\).",
+    "options": [
+      "2",
+      "5",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(49 + 9 = 58\\)\n\nDividing 58 by 6 gives a quotient of 9 and a remainder of 4.\n\nSo \\((49 + 9) \\equiv 4 \\pmod{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(5x \\equiv 5 \\pmod{8}\\), where \\(0 \\leq x < 8\\).",
+    "options": [
+      "3",
+      "1",
+      "7",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 7\\).\n\nWhen \\(x = 1\\): \\(5 \\times 1 = 5\\), and \\(5 \\div 8\\) leaves a remainder of 5.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Wednesday, what day of the week will it be in 104 days' time?",
+    "options": [
+      "Monday",
+      "Wednesday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(104 \\div 7\\) leaves a remainder of 6.\n\nCounting 6 days on from Wednesday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 14 days' time?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctIndex": 0,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(14 \\div 7\\) leaves a remainder of 0.\n\nCounting 0 days on from Friday gives Friday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 8 in modulo 9 arithmetic.",
+    "options": [
+      "8",
+      "1",
+      "9",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{9}\\).\n\n\\(8 + 1 = 9 \\equiv 0 \\pmod{9}\\)\n\nSo the additive inverse is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((6 \\times 4) \\pmod{8}\\).",
+    "options": [
+      "2",
+      "24",
+      "0",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(6 \\times 4 = 24\\)\n\nDividing 24 by 8 gives a remainder of 0.\n\nSo \\((6 \\times 4) \\equiv 0 \\pmod{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Friday, what day of the week will it be in 169 days' time?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Saturday",
+      "Friday"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(169 \\div 7\\) leaves a remainder of 1.\n\nCounting 1 day on from Friday gives Saturday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 253 modulo 5.",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide 253 by 5: \\(253 = 5 \\times 50 + 3\\)\n\nThe remainder is 3, so \\(253 \\equiv 3 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 180 modulo 13.",
+    "options": [
+      "12",
+      "11",
+      "2",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide 180 by 13: \\(180 = 13 \\times 13 + 11\\)\n\nThe remainder is 11, so \\(180 \\equiv 11 \\pmod{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((24 + 13) \\pmod{5}\\).",
+    "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(24 + 13 = 37\\)\n\nDividing 37 by 5 gives a quotient of 7 and a remainder of 2.\n\nSo \\((24 + 13) \\equiv 2 \\pmod{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((19 \\times 12) \\pmod{10}\\).",
+    "options": [
+      "1",
+      "8",
+      "0",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(19 \\times 12 = 228\\)\n\nDividing 228 by 10 gives a remainder of 8.\n\nSo \\((19 \\times 12) \\equiv 8 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(4x \\equiv 2 \\pmod{7}\\), where \\(0 \\leq x < 7\\).",
+    "options": [
+      "6",
+      "5",
+      "1",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 6\\).\n\nWhen \\(x = 4\\): \\(4 \\times 4 = 16\\), and \\(16 \\div 7\\) leaves a remainder of 2.\n\nSo \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(3x \\equiv 3 \\pmod{5}\\), where \\(0 \\leq x < 5\\).",
+    "options": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 4\\).\n\nWhen \\(x = 1\\): \\(3 \\times 1 = 3\\), and \\(3 \\div 5\\) leaves a remainder of 3.\n\nSo \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((44 + 50) \\pmod{10}\\).",
+    "options": [
+      "4",
+      "0",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(44 + 50 = 94\\)\n\nDividing 94 by 10 gives a quotient of 9 and a remainder of 4.\n\nSo \\((44 + 50) \\equiv 4 \\pmod{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of 235 modulo 12.",
+    "options": [
+      "8",
+      "5",
+      "1",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide 235 by 12: \\(235 = 12 \\times 19 + 7\\)\n\nThe remainder is 7, so \\(235 \\equiv 7 \\pmod{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((30 + 59) \\pmod{9}\\).",
+    "options": [
+      "0",
+      "8",
+      "6",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(30 + 59 = 89\\)\n\nDividing 89 by 9 gives a quotient of 9 and a remainder of 8.\n\nSo \\((30 + 59) \\equiv 8 \\pmod{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If today is Thursday, what day of the week will it be in 75 days' time?",
+    "options": [
+      "Thursday",
+      "Tuesday",
+      "Monday",
+      "Wednesday"
+    ],
+    "correctIndex": 1,
+    "explanation": "There are 7 days in a week, so work modulo 7.\n\n\\(75 \\div 7\\) leaves a remainder of 5.\n\nCounting 5 days on from Thursday gives Tuesday.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the additive inverse of 2 in modulo 9 arithmetic.",
+    "options": [
+      "2",
+      "9",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "The additive inverse of \\(a\\) is the value \\(b\\) with \\(a + b \\equiv 0 \\pmod{9}\\).\n\n\\(2 + 7 = 9 \\equiv 0 \\pmod{9}\\)\n\nSo the additive inverse is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\((8 + 49) \\pmod{11}\\).",
+    "options": [
+      "7",
+      "2",
+      "3",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(8 + 49 = 57\\)\n\nDividing 57 by 11 gives a quotient of 5 and a remainder of 2.\n\nSo \\((8 + 49) \\equiv 2 \\pmod{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the value of \\(x\\) such that \\(3x \\equiv 7 \\pmod{11}\\), where \\(0 \\leq x < 11\\).",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Test the values \\(x = 0, 1, 2, \\dots, 10\\).\n\nWhen \\(x = 6\\): \\(3 \\times 6 = 18\\), and \\(18 \\div 11\\) leaves a remainder of 7.\n\nSo \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "C3guPtpBw8L9PbJHGzkx",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

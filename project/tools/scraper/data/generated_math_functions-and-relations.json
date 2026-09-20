@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "If \\(f(x) = 4x - 3\\), find \\(f(-8)\\).",
+    "options": [
+      "-35",
+      "-29",
+      "28",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -8\\).\n\n\\(f(-8) = 4(-8) - 3\\)\n\n\\(= -32 - 3 = -35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -9x - 3\\), find \\(f(2)\\).",
+    "options": [
+      "21",
+      "-21",
+      "-15",
+      "-30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = -9(2) - 3\\)\n\n\\(= -18 - 3 = -21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 3\\), find \\(f(-4)\\).",
+    "options": [
+      "25",
+      "-31",
+      "-5",
+      "-25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 7(-4) + 3\\)\n\n\\(= -28 + 3 = -25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -8x - 10\\), find \\(f(1)\\).",
+    "options": [
+      "-18",
+      "-26",
+      "2",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = -8(1) - 10\\)\n\n\\(= -8 - 10 = -18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -5x + 3\\), find \\(f(-1)\\).",
+    "options": [
+      "2",
+      "-8",
+      "8",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = -5(-1) + 3\\)\n\n\\(= 5 + 3 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(4x - 8\\)",
+      "\\(\\frac{4}{x - 8}\\)",
+      "\\(\\frac{x + 8}{4}\\)",
+      "\\(\\frac{x - 8}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 4x + 8\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 4y + 8\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 8}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 8}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - 3x - 9\\), evaluate \\(f(1)\\).",
+    "options": [
+      "-8",
+      "-2",
+      "8",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = 4(1)^{2} - 3(1) - 9\\)\n\n\\(= 4 - 3 - 9 = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x + 9\\), find \\(f(4)\\).",
+    "options": [
+      "-37",
+      "19",
+      "29",
+      "-19"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = -7(4) + 9\\)\n\n\\(= -28 + 9 = -19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 6\\) and \\(f(x) = 3\\), find \\(x\\).",
+    "options": [
+      "-1",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x - 6 = 3\\)\n\n\\(9x = 9\\)\n\n\\(x = \\frac{9}{9} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{7}{x - 15}\\)",
+      "\\(\\frac{x - 15}{7}\\)",
+      "\\(7x - 15\\)",
+      "\\(\\frac{x + 15}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 7x + 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 7y + 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 15}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 15}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - x - 3\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "-3",
+      "1",
+      "3",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 5(-1)^{2} - 1(-1) - 3\\)\n\n\\(= 5 + 1 - 3 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - 3x + 5\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "81",
+      "85",
+      "-81",
+      "57"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 4(-4)^{2} - 3(-4) + 5\\)\n\n\\(= 64 + 12 + 5 = 81\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 5}{2}\\)",
+      "\\(\\frac{2}{x - 5}\\)",
+      "\\(\\frac{x + 5}{2}\\)",
+      "\\(2x - 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 2x + 5\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y + 5\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 5}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 11\\) and \\(f(x) = -17\\), find \\(x\\).",
+    "options": [
+      "7",
+      "-17",
+      "-7",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(4x + 11 = -17\\)\n\n\\(4x = -28\\)\n\n\\(x = \\frac{-28}{4} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} + x + 8\\), evaluate \\(f(5)\\).",
+    "options": [
+      "53",
+      "-63",
+      "65",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(f(5) = 2(5)^{2} + 1(5) + 8\\)\n\n\\(= 50 + 5 + 8 = 63\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 9\\), find \\(f(6)\\).",
+    "options": [
+      "45",
+      "72",
+      "-63",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(f(6) = 9(6) + 9\\)\n\n\\(= 54 + 9 = 63\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x + 6\\), find \\(f(6)\\).",
+    "options": [
+      "36",
+      "-36",
+      "-48",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(f(6) = -7(6) + 6\\)\n\n\\(= -42 + 6 = -36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 2\\), find \\(f(5)\\).",
+    "options": [
+      "-5",
+      "23",
+      "27",
+      "-23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(f(5) = 5(5) - 2\\)\n\n\\(= 25 - 2 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 8\\) and \\(f(x) = 72\\), find \\(x\\).",
+    "options": [
+      "72",
+      "9",
+      "-8",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x + 8 = 72\\)\n\n\\(8x = 64\\)\n\n\\(x = \\frac{64}{8} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - 7x - 10\\), evaluate \\(f(2)\\).",
+    "options": [
+      "-4",
+      "-8",
+      "20",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = 4(2)^{2} - 7(2) - 10\\)\n\n\\(= 16 - 14 - 10 = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 10\\) and \\(f(x) = -34\\), find \\(x\\).",
+    "options": [
+      "6",
+      "-5",
+      "-6",
+      "-34"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(4x - 10 = -34\\)\n\n\\(4x = -24\\)\n\n\\(x = \\frac{-24}{4} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x - 4\\)",
+      "\\(\\frac{x + 4}{8}\\)",
+      "\\(\\frac{x - 4}{8}\\)",
+      "\\(\\frac{8}{x - 4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 8x + 4\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y + 4\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 4}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 4}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x + 7\\)",
+      "\\(\\frac{x - 7}{8}\\)",
+      "\\(\\frac{x + 7}{8}\\)",
+      "\\(\\frac{8}{x + 7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 8x - 7\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y - 7\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 7}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -4x - 2\\), find \\(f(1)\\).",
+    "options": [
+      "6",
+      "-10",
+      "-6",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = -4(1) - 2\\)\n\n\\(= -4 - 2 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x + 12\\)",
+      "\\(\\frac{x + 12}{6}\\)",
+      "\\(\\frac{6}{x + 12}\\)",
+      "\\(\\frac{x - 12}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x - 12\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 12\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 12}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 12}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -x + 8\\) and \\(g(x) = x - 3\\), find \\(f(g(5))\\).",
+    "options": [
+      "6",
+      "0",
+      "3",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = 1(5) - 3 = 2\\)\n\nThen find \\(f(2)\\): \\(f(2) = -1(2) + 8 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - 2x - 10\\), evaluate \\(f(4)\\).",
+    "options": [
+      "62",
+      "-62",
+      "67",
+      "78"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 5(4)^{2} - 2(4) - 10\\)\n\n\\(= 80 - 8 - 10 = 62\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 2\\) and \\(g(x) = 5x - 7\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-77",
+      "-90",
+      "-22",
+      "-14"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 5(-3) - 7 = -22\\)\n\nThen find \\(f(-22)\\): \\(f(-22) = 4(-22) - 2 = -90\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 2\\) and \\(g(x) = 4x + 3\\), find \\(f(g(-1))\\).",
+    "options": [
+      "4",
+      "-1",
+      "5",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 4(-1) + 3 = -1\\)\n\nThen find \\(f(-1)\\): \\(f(-1) = -2(-1) + 2 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 3\\) and \\(f(x) = 17\\), find \\(x\\).",
+    "options": [
+      "-4",
+      "4",
+      "17",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x - 3 = 17\\)\n\n\\(5x = 20\\)\n\n\\(x = \\frac{20}{5} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 10\\), find \\(f(-4)\\).",
+    "options": [
+      "34",
+      "-34",
+      "46",
+      "-14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 6(-4) - 10\\)\n\n\\(= -24 - 10 = -34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 4\\) and \\(g(x) = -5x - 7\\), find \\(f(g(2))\\).",
+    "options": [
+      "-4",
+      "13",
+      "-17",
+      "72"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = -5(2) - 7 = -17\\)\n\nThen find \\(f(-17)\\): \\(f(-17) = -4(-17) + 4 = 72\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} - 4x - 7\\), evaluate \\(f(-3)\\).",
+    "options": [
+      "35",
+      "-32",
+      "32",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = 3(-3)^{2} - 4(-3) - 7\\)\n\n\\(= 27 + 12 - 7 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 8\\) and \\(f(x) = 71\\), find \\(x\\).",
+    "options": [
+      "71",
+      "10",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(7x + 8 = 71\\)\n\n\\(7x = 63\\)\n\n\\(x = \\frac{63}{7} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 3\\) and \\(f(x) = 51\\), find \\(x\\).",
+    "options": [
+      "7",
+      "51",
+      "-6",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x - 3 = 51\\)\n\n\\(9x = 54\\)\n\n\\(x = \\frac{54}{9} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 14\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 14}{2}\\)",
+      "\\(\\frac{2}{x + 14}\\)",
+      "\\(\\frac{x + 14}{2}\\)",
+      "\\(2x + 14\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 14\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y - 14\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 14}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 14}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 13\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{5}{x + 13}\\)",
+      "\\(5x + 13\\)",
+      "\\(\\frac{x - 13}{5}\\)",
+      "\\(\\frac{x + 13}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 5x - 13\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 5y - 13\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 13}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 13}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 3\\) and \\(f(x) = -17\\), find \\(x\\).",
+    "options": [
+      "-3",
+      "-4",
+      "-17",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x + 3 = -17\\)\n\n\\(5x = -20\\)\n\n\\(x = \\frac{-20}{5} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -6x + 5\\), find \\(f(7)\\).",
+    "options": [
+      "-37",
+      "37",
+      "29",
+      "-47"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(f(7) = -6(7) + 5\\)\n\n\\(= -42 + 5 = -37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} + 8x - 10\\), evaluate \\(f(2)\\).",
+    "options": [
+      "-26",
+      "31",
+      "-6",
+      "26"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = 5(2)^{2} + 8(2) - 10\\)\n\n\\(= 20 + 16 - 10 = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} - 8x - 2\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "10",
+      "8",
+      "4",
+      "-8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 2(-1)^{2} - 8(-1) - 2\\)\n\n\\(= 2 + 8 - 2 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} + x + 6\\), evaluate \\(f(2)\\).",
+    "options": [
+      "-24",
+      "28",
+      "20",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = 4(2)^{2} + 1(2) + 6\\)\n\n\\(= 16 + 2 + 6 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 10\\), find \\(f(3)\\).",
+    "options": [
+      "25",
+      "5",
+      "-25",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 5(3) - 10\\)\n\n\\(= 15 - 10 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 5\\) and \\(g(x) = 5x - 5\\), find \\(f(g(-1))\\).",
+    "options": [
+      "40",
+      "45",
+      "9",
+      "-10"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 5(-1) - 5 = -10\\)\n\nThen find \\(f(-10)\\): \\(f(-10) = -4(-10) + 5 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 7\\) and \\(f(x) = -18\\), find \\(x\\).",
+    "options": [
+      "-5",
+      "5",
+      "-18",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(5x + 7 = -18\\)\n\n\\(5x = -25\\)\n\n\\(x = \\frac{-25}{5} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{6}{x + 10}\\)",
+      "\\(\\frac{x + 10}{6}\\)",
+      "\\(\\frac{x - 10}{6}\\)",
+      "\\(6x + 10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x - 10\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 10\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 10}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 10}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(2x - 3\\)",
+      "\\(\\frac{2}{x - 3}\\)",
+      "\\(\\frac{x - 3}{2}\\)",
+      "\\(\\frac{x + 3}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x + 3\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y + 3\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 3}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 3}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 10\\) and \\(f(x) = 3\\), find \\(x\\).",
+    "options": [
+      "-1",
+      "1",
+      "3",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(7x + 10 = 3\\)\n\n\\(7x = -7\\)\n\n\\(x = \\frac{-7}{7} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 2\\) and \\(f(x) = 42\\), find \\(x\\).",
+    "options": [
+      "5",
+      "42",
+      "6",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(8x + 2 = 42\\)\n\n\\(8x = 40\\)\n\n\\(x = \\frac{40}{8} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} + 6x + 4\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "-1",
+      "4",
+      "13",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 3(-1)^{2} + 6(-1) + 4\\)\n\n\\(= 3 - 6 + 4 = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 7\\) and \\(f(x) = -10\\), find \\(x\\).",
+    "options": [
+      "1",
+      "-10",
+      "-1",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(3x - 7 = -10\\)\n\n\\(3x = -3\\)\n\n\\(x = \\frac{-3}{3} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 2\\) and \\(g(x) = -4x + 7\\), find \\(f(g(2))\\).",
+    "options": [
+      "-4",
+      "2",
+      "-3",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = -4(2) + 7 = -1\\)\n\nThen find \\(f(-1)\\): \\(f(-1) = 2(-1) - 2 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x - 5\\), find \\(f(-5)\\).",
+    "options": [
+      "30",
+      "18",
+      "40",
+      "-30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = -7(-5) - 5\\)\n\n\\(= 35 - 5 = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 3\\) and \\(g(x) = 3x - 2\\), find \\(f(g(-1))\\).",
+    "options": [
+      "8",
+      "-1",
+      "7",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 3(-1) - 2 = -5\\)\n\nThen find \\(f(-5)\\): \\(f(-5) = -2(-5) - 3 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 8\\) and \\(f(x) = -37\\), find \\(x\\).",
+    "options": [
+      "9",
+      "-8",
+      "-9",
+      "-37"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5x + 8 = -37\\)\n\n\\(5x = -45\\)\n\n\\(x = \\frac{-45}{5} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 6\\) and \\(g(x) = 5x - 1\\), find \\(f(g(4))\\).",
+    "options": [
+      "19",
+      "101",
+      "26",
+      "129"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = 5(4) - 1 = 19\\)\n\nThen find \\(f(19)\\): \\(f(19) = 5(19) + 6 = 101\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 2\\) and \\(g(x) = -x - 6\\), find \\(f(g(-4))\\).",
+    "options": [
+      "6",
+      "2",
+      "-12",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-4)\\): \\(g(-4) = -1(-4) - 6 = -2\\)\n\nThen find \\(f(-2)\\): \\(f(-2) = -2(-2) - 2 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 6\\), find \\(f(8)\\).",
+    "options": [
+      "48",
+      "42",
+      "54",
+      "-42"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(f(8) = 6(8) - 6\\)\n\n\\(= 48 - 6 = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 10\\) and \\(f(x) = -22\\), find \\(x\\).",
+    "options": [
+      "-22",
+      "-3",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4x - 10 = -22\\)\n\n\\(4x = -12\\)\n\n\\(x = \\frac{-12}{4} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 6\\) and \\(g(x) = -5x + 8\\), find \\(f(g(-1))\\).",
+    "options": [
+      "-7",
+      "13",
+      "3",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = -5(-1) + 8 = 13\\)\n\nThen find \\(f(13)\\): \\(f(13) = 3(13) + 6 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 5\\) and \\(g(x) = -2x - 1\\), find \\(f(g(-1))\\).",
+    "options": [
+      "1",
+      "13",
+      "-3",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = -2(-1) - 1 = 1\\)\n\nThen find \\(f(1)\\): \\(f(1) = 2(1) - 5 = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 2\\) and \\(g(x) = 5x + 6\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-9",
+      "-29",
+      "-25",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 5(-3) + 6 = -9\\)\n\nThen find \\(f(-9)\\): \\(f(-9) = 3(-9) + 2 = -25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x + 9\\), find \\(f(8)\\).",
+    "options": [
+      "65",
+      "47",
+      "-65",
+      "-47"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(f(8) = -7(8) + 9\\)\n\n\\(= -56 + 9 = -47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 1\\) and \\(f(x) = 14\\), find \\(x\\).",
+    "options": [
+      "14",
+      "5",
+      "6",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3x - 1 = 14\\)\n\n\\(3x = 15\\)\n\n\\(x = \\frac{15}{3} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 6\\) and \\(f(x) = -21\\), find \\(x\\).",
+    "options": [
+      "-21",
+      "3",
+      "-3",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(9x + 6 = -21\\)\n\n\\(9x = -27\\)\n\n\\(x = \\frac{-27}{9} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 2\\) and \\(f(x) = 14\\), find \\(x\\).",
+    "options": [
+      "-2",
+      "2",
+      "14",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(8x - 2 = 14\\)\n\n\\(8x = 16\\)\n\n\\(x = \\frac{16}{8} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 6}{7}\\)",
+      "\\(\\frac{7}{x - 6}\\)",
+      "\\(\\frac{x + 6}{7}\\)",
+      "\\(7x - 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 7x + 6\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 7y + 6\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 6}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 6}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(5x + 5\\)",
+      "\\(\\frac{x + 5}{5}\\)",
+      "\\(\\frac{x - 5}{5}\\)",
+      "\\(\\frac{5}{x + 5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 5x - 5\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 5y - 5\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 5}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 5}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x - 15\\)",
+      "\\(\\frac{x - 15}{8}\\)",
+      "\\(\\frac{x + 15}{8}\\)",
+      "\\(\\frac{8}{x - 15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 8x + 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y + 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 15}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 15}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 1\\) and \\(g(x) = 2x + 3\\), find \\(f(g(4))\\).",
+    "options": [
+      "-15",
+      "-23",
+      "11",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = 2(4) + 3 = 11\\)\n\nThen find \\(f(11)\\): \\(f(11) = -2(11) - 1 = -23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -5x - 11\\), find \\(f(7)\\).",
+    "options": [
+      "-46",
+      "46",
+      "-24",
+      "-82"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(f(7) = -5(7) - 11\\)\n\n\\(= -35 - 11 = -46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(9x + 5\\)",
+      "\\(\\frac{x - 5}{9}\\)",
+      "\\(\\frac{x + 5}{9}\\)",
+      "\\(\\frac{9}{x + 5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 9x - 5\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y - 5\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 5}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 5}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x - 1\\) and \\(g(x) = 4x + 6\\), find \\(f(g(-3))\\).",
+    "options": [
+      "50",
+      "-6",
+      "11",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 4(-3) + 6 = -6\\)\n\nThen find \\(f(-6)\\): \\(f(-6) = -4(-6) - 1 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{10}{x + 3}\\)",
+      "\\(\\frac{x + 3}{10}\\)",
+      "\\(\\frac{x - 3}{10}\\)",
+      "\\(10x + 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 10x - 3\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y - 3\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 3}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 9}{4}\\)",
+      "\\(\\frac{4}{x + 9}\\)",
+      "\\(\\frac{x + 9}{4}\\)",
+      "\\(4x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 4x - 9\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 4y - 9\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 9}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 9}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 7}{3}\\)",
+      "\\(3x + 7\\)",
+      "\\(\\frac{x - 7}{3}\\)",
+      "\\(\\frac{3}{x + 7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 3x - 7\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y - 7\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 7}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 2\\) and \\(g(x) = 5x - 1\\), find \\(f(g(5))\\).",
+    "options": [
+      "-50",
+      "24",
+      "-12",
+      "-61"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = 5(5) - 1 = 24\\)\n\nThen find \\(f(24)\\): \\(f(24) = -2(24) - 2 = -50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x + 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 12}{10}\\)",
+      "\\(\\frac{x + 12}{10}\\)",
+      "\\(\\frac{10}{x - 12}\\)",
+      "\\(10x - 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 10x + 12\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y + 12\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 12}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 12}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} - x + 7\\), evaluate \\(f(-5)\\).",
+    "options": [
+      "77",
+      "90",
+      "-87",
+      "87"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = 3(-5)^{2} - 1(-5) + 7\\)\n\n\\(= 75 + 5 + 7 = 87\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 9}{9}\\)",
+      "\\(\\frac{9}{x - 9}\\)",
+      "\\(9x - 9\\)",
+      "\\(\\frac{x + 9}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 9x + 9\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y + 9\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 9}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 9}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 4\\), find \\(f(-8)\\).",
+    "options": [
+      "-23",
+      "-68",
+      "68",
+      "-76"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -8\\).\n\n\\(f(-8) = 9(-8) + 4\\)\n\n\\(= -72 + 4 = -68\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 15}{7}\\)",
+      "\\(7x + 15\\)",
+      "\\(\\frac{7}{x + 15}\\)",
+      "\\(\\frac{x - 15}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 7x - 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 7y - 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 15}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 15}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -5x + 3\\), find \\(f(7)\\).",
+    "options": [
+      "16",
+      "32",
+      "-38",
+      "-32"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(f(7) = -5(7) + 3\\)\n\n\\(= -35 + 3 = -32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 2\\) and \\(g(x) = 4x + 7\\), find \\(f(g(-5))\\).",
+    "options": [
+      "-101",
+      "-13",
+      "-27",
+      "-67"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = 4(-5) + 7 = -13\\)\n\nThen find \\(f(-13)\\): \\(f(-13) = 5(-13) - 2 = -67\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 3\\) and \\(g(x) = x - 8\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-30",
+      "-14",
+      "-11",
+      "-6"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 1(-3) - 8 = -11\\)\n\nThen find \\(f(-11)\\): \\(f(-11) = 3(-11) + 3 = -30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -3x + 11\\), find \\(f(-1)\\).",
+    "options": [
+      "-8",
+      "14",
+      "-14",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = -3(-1) + 11\\)\n\n\\(= 3 + 11 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 5\\) and \\(g(x) = x - 6\\), find \\(f(g(5))\\).",
+    "options": [
+      "-3",
+      "-21",
+      "-15",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = 1(5) - 6 = -1\\)\n\nThen find \\(f(-1)\\): \\(f(-1) = -2(-1) - 5 = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 9\\) and \\(f(x) = -15\\), find \\(x\\).",
+    "options": [
+      "4",
+      "-4",
+      "-15",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6x + 9 = -15\\)\n\n\\(6x = -24\\)\n\n\\(x = \\frac{-24}{6} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -2x - 8\\), find \\(f(-2)\\).",
+    "options": [
+      "4",
+      "-4",
+      "14",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = -2(-2) - 8\\)\n\n\\(= 4 - 8 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - x - 9\\), evaluate \\(f(-5)\\).",
+    "options": [
+      "-121",
+      "111",
+      "126",
+      "121"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = 5(-5)^{2} - 1(-5) - 9\\)\n\n\\(= 125 + 5 - 9 = 121\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{3}{x + 1}\\)",
+      "\\(3x + 1\\)",
+      "\\(\\frac{x - 1}{3}\\)",
+      "\\(\\frac{x + 1}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 3x - 1\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y - 1\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 1}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 8\\) and \\(f(x) = -10\\), find \\(x\\).",
+    "options": [
+      "-3",
+      "-10",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6x + 8 = -10\\)\n\n\\(6x = -18\\)\n\n\\(x = \\frac{-18}{6} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} + 6x - 8\\), evaluate \\(f(-2)\\).",
+    "options": [
+      "-4",
+      "4",
+      "20",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 4(-2)^{2} + 6(-2) - 8\\)\n\n\\(= 16 - 12 - 8 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 10\\) and \\(f(x) = -2\\), find \\(x\\).",
+    "options": [
+      "-5",
+      "6",
+      "-2",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x + 10 = -2\\)\n\n\\(2x = -12\\)\n\n\\(x = \\frac{-12}{2} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} + 2x - 1\\), evaluate \\(f(-5)\\).",
+    "options": [
+      "109",
+      "93",
+      "89",
+      "-89"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = 4(-5)^{2} + 2(-5) - 1\\)\n\n\\(= 100 - 10 - 1 = 89\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 4\\) and \\(g(x) = -5x - 5\\), find \\(f(g(5))\\).",
+    "options": [
+      "-16",
+      "-30",
+      "124",
+      "75"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = -5(5) - 5 = -30\\)\n\nThen find \\(f(-30)\\): \\(f(-30) = -4(-30) + 4 = 124\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 3}{9}\\)",
+      "\\(\\frac{x + 3}{9}\\)",
+      "\\(9x + 3\\)",
+      "\\(\\frac{9}{x + 3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 9x - 3\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y - 3\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 3}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 1\\) and \\(g(x) = 5x + 2\\), find \\(f(g(-2))\\).",
+    "options": [
+      "-8",
+      "-43",
+      "-9",
+      "-33"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-2)\\): \\(g(-2) = 5(-2) + 2 = -8\\)\n\nThen find \\(f(-8)\\): \\(f(-8) = 4(-8) - 1 = -33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 3\\) and \\(f(x) = -17\\), find \\(x\\).",
+    "options": [
+      "5",
+      "-17",
+      "-4",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4x + 3 = -17\\)\n\n\\(4x = -20\\)\n\n\\(x = \\frac{-20}{4} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 4}{6}\\)",
+      "\\(\\frac{x - 4}{6}\\)",
+      "\\(\\frac{6}{x - 4}\\)",
+      "\\(6x - 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x + 4\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y + 4\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 4}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 4}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} + 8x - 8\\), evaluate \\(f(3)\\).",
+    "options": [
+      "56",
+      "4",
+      "-52",
+      "52"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 4(3)^{2} + 8(3) - 8\\)\n\n\\(= 36 + 24 - 8 = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -5x + 9\\), find \\(f(-3)\\).",
+    "options": [
+      "-32",
+      "24",
+      "-24",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = -5(-3) + 9\\)\n\n\\(= 15 + 9 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x + 5\\), find \\(f(1)\\).",
+    "options": [
+      "-12",
+      "-2",
+      "2",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = -7(1) + 5\\)\n\n\\(= -7 + 5 = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 11\\) and \\(f(x) = -5\\), find \\(x\\).",
+    "options": [
+      "2",
+      "1",
+      "-1",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6x - 11 = -5\\)\n\n\\(6x = 6\\)\n\n\\(x = \\frac{6}{6} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 6\\), find \\(f(2)\\).",
+    "options": [
+      "-3",
+      "12",
+      "24",
+      "-12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = 9(2) - 6\\)\n\n\\(= 18 - 6 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x + 2\\)",
+      "\\(\\frac{x - 2}{8}\\)",
+      "\\(\\frac{x + 2}{8}\\)",
+      "\\(\\frac{8}{x + 2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 8x - 2\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y - 2\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 2}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} + 8x + 1\\), evaluate \\(f(-2)\\).",
+    "options": [
+      "11",
+      "-11",
+      "21",
+      "-10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 1(-2)^{2} + 8(-2) + 1\\)\n\n\\(= 4 - 16 + 1 = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} + 4x + 7\\), evaluate \\(f(-3)\\).",
+    "options": [
+      "22",
+      "-22",
+      "25",
+      "46"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = 3(-3)^{2} + 4(-3) + 7\\)\n\n\\(= 27 - 12 + 7 = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{3}{x - 5}\\)",
+      "\\(\\frac{x + 5}{3}\\)",
+      "\\(\\frac{x - 5}{3}\\)",
+      "\\(3x - 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 3x + 5\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y + 5\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 5}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -x + 2\\), find \\(f(-5)\\).",
+    "options": [
+      "7",
+      "-7",
+      "-11",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = -1(-5) + 2\\)\n\n\\(= 5 + 2 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 10\\) and \\(f(x) = -52\\), find \\(x\\).",
+    "options": [
+      "6",
+      "-6",
+      "-5",
+      "-52"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7x - 10 = -52\\)\n\n\\(7x = -42\\)\n\n\\(x = \\frac{-42}{7} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x + 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{10}{x - 1}\\)",
+      "\\(\\frac{x + 1}{10}\\)",
+      "\\(10x - 1\\)",
+      "\\(\\frac{x - 1}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 10x + 1\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y + 1\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 1}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 1}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 14\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x - 14\\)",
+      "\\(\\frac{x - 14}{8}\\)",
+      "\\(\\frac{x + 14}{8}\\)",
+      "\\(\\frac{8}{x - 14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 8x + 14\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y + 14\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 14}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 14}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 2}{3}\\)",
+      "\\(\\frac{3}{x + 2}\\)",
+      "\\(3x + 2\\)",
+      "\\(\\frac{x - 2}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 3x - 2\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y - 2\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 2}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 5\\), find \\(f(8)\\).",
+    "options": [
+      "11",
+      "21",
+      "-11",
+      "-38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(f(8) = 2(8) - 5\\)\n\n\\(= 16 - 5 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x - 4\\) and \\(g(x) = 6x + 8\\), find \\(f(g(-5))\\).",
+    "options": [
+      "-196",
+      "-34",
+      "-22",
+      "-136"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = 6(-5) + 8 = -22\\)\n\nThen find \\(f(-22)\\): \\(f(-22) = 6(-22) - 4 = -136\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x + 8\\) and \\(g(x) = 2x - 3\\), find \\(f(g(5))\\).",
+    "options": [
+      "13",
+      "23",
+      "15",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = 2(5) - 3 = 7\\)\n\nThen find \\(f(7)\\): \\(f(7) = 1(7) + 8 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 5\\) and \\(g(x) = -3x + 2\\), find \\(f(g(-3))\\).",
+    "options": [
+      "17",
+      "-11",
+      "11",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = -3(-3) + 2 = 11\\)\n\nThen find \\(f(11)\\): \\(f(11) = 2(11) - 5 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 12\\) and \\(f(x) = -42\\), find \\(x\\).",
+    "options": [
+      "-5",
+      "5",
+      "-42",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6x - 12 = -42\\)\n\n\\(6x = -30\\)\n\n\\(x = \\frac{-30}{6} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 8\\) and \\(f(x) = -23\\), find \\(x\\).",
+    "options": [
+      "-3",
+      "-2",
+      "3",
+      "-23"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(5x - 8 = -23\\)\n\n\\(5x = -15\\)\n\n\\(x = \\frac{-15}{5} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} - 5x + 6\\), evaluate \\(f(-2)\\).",
+    "options": [
+      "-20",
+      "20",
+      "0",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 1(-2)^{2} - 5(-2) + 6\\)\n\n\\(= 4 + 10 + 6 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 2\\) and \\(g(x) = 6x - 7\\), find \\(f(g(4))\\).",
+    "options": [
+      "17",
+      "-83",
+      "-18",
+      "-115"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = 6(4) - 7 = 17\\)\n\nThen find \\(f(17)\\): \\(f(17) = -5(17) + 2 = -83\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 9\\) and \\(f(x) = 6\\), find \\(x\\).",
+    "options": [
+      "-1",
+      "0",
+      "6",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3x + 9 = 6\\)\n\n\\(3x = -3\\)\n\n\\(x = \\frac{-3}{3} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 5\\) and \\(g(x) = -3x + 7\\), find \\(f(g(1))\\).",
+    "options": [
+      "37",
+      "-10",
+      "4",
+      "-25"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(1)\\): \\(g(1) = -3(1) + 7 = 4\\)\n\nThen find \\(f(4)\\): \\(f(4) = -5(4) - 5 = -25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} - 3x - 7\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "22",
+      "-3",
+      "21",
+      "-21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 1(-4)^{2} - 3(-4) - 7\\)\n\n\\(= 16 + 12 - 7 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 4}{3}\\)",
+      "\\(3x - 4\\)",
+      "\\(\\frac{x - 4}{3}\\)",
+      "\\(\\frac{3}{x - 4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 3x + 4\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y + 4\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 4}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 4\\) and \\(f(x) = -8\\), find \\(x\\).",
+    "options": [
+      "-8",
+      "2",
+      "-2",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(2x - 4 = -8\\)\n\n\\(2x = -4\\)\n\n\\(x = \\frac{-4}{2} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 8\\) and \\(f(x) = -35\\), find \\(x\\).",
+    "options": [
+      "-3",
+      "3",
+      "-2",
+      "-35"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x - 8 = -35\\)\n\n\\(9x = -27\\)\n\n\\(x = \\frac{-27}{9} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} + 6x + 4\\), evaluate \\(f(4)\\).",
+    "options": [
+      "44",
+      "96",
+      "-92",
+      "92"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 4(4)^{2} + 6(4) + 4\\)\n\n\\(= 64 + 24 + 4 = 92\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} + 6x - 7\\), evaluate \\(f(3)\\).",
+    "options": [
+      "38",
+      "2",
+      "41",
+      "-38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 3(3)^{2} + 6(3) - 7\\)\n\n\\(= 27 + 18 - 7 = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 7\\) and \\(f(x) = 43\\), find \\(x\\).",
+    "options": [
+      "4",
+      "5",
+      "43",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x + 7 = 43\\)\n\n\\(9x = 36\\)\n\n\\(x = \\frac{36}{9} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 10}{2}\\)",
+      "\\(\\frac{2}{x + 10}\\)",
+      "\\(\\frac{x + 10}{2}\\)",
+      "\\(2x + 10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 10\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y - 10\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 10}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 10}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} - 4x + 1\\), evaluate \\(f(3)\\).",
+    "options": [
+      "7",
+      "31",
+      "-7",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 2(3)^{2} - 4(3) + 1\\)\n\n\\(= 18 - 12 + 1 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 8\\) and \\(g(x) = -4x + 6\\), find \\(f(g(-4))\\).",
+    "options": [
+      "16",
+      "22",
+      "-58",
+      "-36"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-4)\\): \\(g(-4) = -4(-4) + 6 = 22\\)\n\nThen find \\(f(22)\\): \\(f(22) = -2(22) + 8 = -36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 2\\) and \\(g(x) = x + 3\\), find \\(f(g(3))\\).",
+    "options": [
+      "-10",
+      "-22",
+      "6",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(3)\\): \\(g(3) = 1(3) + 3 = 6\\)\n\nThen find \\(f(6)\\): \\(f(6) = -4(6) + 2 = -22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 4\\) and \\(f(x) = 40\\), find \\(x\\).",
+    "options": [
+      "40",
+      "-4",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x + 4 = 40\\)\n\n\\(9x = 36\\)\n\n\\(x = \\frac{36}{9} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} - 4x + 2\\), evaluate \\(f(4)\\).",
+    "options": [
+      "-18",
+      "50",
+      "18",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 2(4)^{2} - 4(4) + 2\\)\n\n\\(= 32 - 16 + 2 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} + 2x + 6\\), evaluate \\(f(1)\\).",
+    "options": [
+      "-9",
+      "5",
+      "9",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = 1(1)^{2} + 2(1) + 6\\)\n\n\\(= 1 + 2 + 6 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x + 6\\) and \\(g(x) = -2x + 3\\), find \\(f(g(2))\\).",
+    "options": [
+      "-25",
+      "14",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = -2(2) + 3 = -1\\)\n\nThen find \\(f(-1)\\): \\(f(-1) = 4(-1) + 6 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} + 8x + 7\\), evaluate \\(f(3)\\).",
+    "options": [
+      "40",
+      "41",
+      "-8",
+      "-40"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 1(3)^{2} + 8(3) + 7\\)\n\n\\(= 9 + 24 + 7 = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} + 6x + 9\\), evaluate \\(f(4)\\).",
+    "options": [
+      "50",
+      "49",
+      "-49",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 1(4)^{2} + 6(4) + 9\\)\n\n\\(= 16 + 24 + 9 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{10}{x + 7}\\)",
+      "\\(\\frac{x - 7}{10}\\)",
+      "\\(10x + 7\\)",
+      "\\(\\frac{x + 7}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 10x - 7\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y - 7\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 7}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 7\\) and \\(g(x) = 5x + 8\\), find \\(f(g(-1))\\).",
+    "options": [
+      "-8",
+      "12",
+      "3",
+      "68"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 5(-1) + 8 = 3\\)\n\nThen find \\(f(3)\\): \\(f(3) = -5(3) + 7 = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 15}{4}\\)",
+      "\\(4x - 15\\)",
+      "\\(\\frac{x + 15}{4}\\)",
+      "\\(\\frac{4}{x - 15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 4x + 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 4y + 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 15}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 15}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 2\\) and \\(f(x) = -14\\), find \\(x\\).",
+    "options": [
+      "-14",
+      "-2",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(8x + 2 = -14\\)\n\n\\(8x = -16\\)\n\n\\(x = \\frac{-16}{8} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -3x + 4\\), find \\(f(2)\\).",
+    "options": [
+      "-10",
+      "-2",
+      "5",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = -3(2) + 4\\)\n\n\\(= -6 + 4 = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 11}{6}\\)",
+      "\\(\\frac{x + 11}{6}\\)",
+      "\\(\\frac{6}{x - 11}\\)",
+      "\\(6x - 11\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 6x + 11\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y + 11\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 11}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 11}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 10\\) and \\(f(x) = -71\\), find \\(x\\).",
+    "options": [
+      "-9",
+      "-71",
+      "-8",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x + 10 = -71\\)\n\n\\(9x = -81\\)\n\n\\(x = \\frac{-81}{9} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x + 8\\) and \\(g(x) = 6x + 7\\), find \\(f(g(3))\\).",
+    "options": [
+      "26",
+      "163",
+      "25",
+      "158"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(3)\\): \\(g(3) = 6(3) + 7 = 25\\)\n\nThen find \\(f(25)\\): \\(f(25) = 6(25) + 8 = 158\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -x + 5\\) and \\(g(x) = -2x + 4\\), find \\(f(g(5))\\).",
+    "options": [
+      "4",
+      "-6",
+      "11",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = -2(5) + 4 = -6\\)\n\nThen find \\(f(-6)\\): \\(f(-6) = -1(-6) + 5 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 12}{8}\\)",
+      "\\(\\frac{8}{x + 12}\\)",
+      "\\(8x + 12\\)",
+      "\\(\\frac{x + 12}{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 8x - 12\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y - 12\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 12}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 12}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 13\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{2}{x + 13}\\)",
+      "\\(\\frac{x - 13}{2}\\)",
+      "\\(2x + 13\\)",
+      "\\(\\frac{x + 13}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x - 13\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y - 13\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 13}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 13}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 2}{6}\\)",
+      "\\(6x + 2\\)",
+      "\\(\\frac{6}{x + 2}\\)",
+      "\\(\\frac{x + 2}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 6x - 2\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 2\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 2}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(9x + 15\\)",
+      "\\(\\frac{x - 15}{9}\\)",
+      "\\(\\frac{9}{x + 15}\\)",
+      "\\(\\frac{x + 15}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 9x - 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y - 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 15}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 15}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 4\\) and \\(g(x) = -3x + 2\\), find \\(f(g(-5))\\).",
+    "options": [
+      "17",
+      "-55",
+      "11",
+      "-31"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = -3(-5) + 2 = 17\\)\n\nThen find \\(f(17)\\): \\(f(17) = -3(17) - 4 = -55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 10\\), find \\(f(4)\\).",
+    "options": [
+      "14",
+      "34",
+      "-14",
+      "-34"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 6(4) - 10\\)\n\n\\(= 24 - 10 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x - 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 11}{10}\\)",
+      "\\(\\frac{10}{x + 11}\\)",
+      "\\(10x + 11\\)",
+      "\\(\\frac{x + 11}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 10x - 11\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y - 11\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 11}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 11}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - x - 5\\), evaluate \\(f(-3)\\).",
+    "options": [
+      "38",
+      "28",
+      "-34",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = 4(-3)^{2} - 1(-3) - 5\\)\n\n\\(= 36 + 3 - 5 = 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 6\\) and \\(f(x) = -18\\), find \\(x\\).",
+    "options": [
+      "-3",
+      "-2",
+      "3",
+      "-18"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4x - 6 = -18\\)\n\n\\(4x = -12\\)\n\n\\(x = \\frac{-12}{4} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 4\\), find \\(f(6)\\).",
+    "options": [
+      "-15",
+      "-50",
+      "58",
+      "50"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(f(6) = 9(6) - 4\\)\n\n\\(= 54 - 4 = 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} + x - 6\\), evaluate \\(f(4)\\).",
+    "options": [
+      "-46",
+      "46",
+      "49",
+      "38"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 3(4)^{2} + 1(4) - 6\\)\n\n\\(= 48 + 4 - 6 = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 2\\) and \\(f(x) = 56\\), find \\(x\\).",
+    "options": [
+      "56",
+      "10",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(6x + 2 = 56\\)\n\n\\(6x = 54\\)\n\n\\(x = \\frac{54}{6} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 4\\) and \\(g(x) = -x + 7\\), find \\(f(g(-5))\\).",
+    "options": [
+      "20",
+      "-14",
+      "21",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = -1(-5) + 7 = 12\\)\n\nThen find \\(f(12)\\): \\(f(12) = 2(12) - 4 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 2}{5}\\)",
+      "\\(\\frac{x + 2}{5}\\)",
+      "\\(5x + 2\\)",
+      "\\(\\frac{5}{x + 2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 5x - 2\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 5y - 2\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 2}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} + 3x + 9\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "17",
+      "11",
+      "-11",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 5(-1)^{2} + 3(-1) + 9\\)\n\n\\(= 5 - 3 + 9 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x + 7\\) and \\(g(x) = -2x - 6\\), find \\(f(g(-1))\\).",
+    "options": [
+      "-4",
+      "-8",
+      "1",
+      "-17"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = -2(-1) - 6 = -4\\)\n\nThen find \\(f(-4)\\): \\(f(-4) = 6(-4) + 7 = -17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} + 5x - 4\\), evaluate \\(f(1)\\).",
+    "options": [
+      "-6",
+      "7",
+      "4",
+      "-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = 3(1)^{2} + 5(1) - 4\\)\n\n\\(= 3 + 5 - 4 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} - 3x + 2\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "62",
+      "65",
+      "38",
+      "-62"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 3(-4)^{2} - 3(-4) + 2\\)\n\n\\(= 48 + 12 + 2 = 62\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 5\\) and \\(g(x) = 4x + 3\\), find \\(f(g(-5))\\).",
+    "options": [
+      "-56",
+      "-77",
+      "-20",
+      "-17"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = 4(-5) + 3 = -17\\)\n\nThen find \\(f(-17)\\): \\(f(-17) = 3(-17) - 5 = -56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = x - 4\\), find \\(f(-2)\\).",
+    "options": [
+      "9",
+      "6",
+      "2",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 1(-2) - 4\\)\n\n\\(= -2 - 4 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x + 8\\) and \\(g(x) = -4x + 2\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-10",
+      "92",
+      "42",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = -4(-3) + 2 = 14\\)\n\nThen find \\(f(14)\\): \\(f(14) = 6(14) + 8 = 92\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x - 3\\) and \\(g(x) = 2x + 3\\), find \\(f(g(3))\\).",
+    "options": [
+      "51",
+      "15",
+      "9",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(3)\\): \\(g(3) = 2(3) + 3 = 9\\)\n\nThen find \\(f(9)\\): \\(f(9) = 6(9) - 3 = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x + 6\\) and \\(g(x) = 3x + 7\\), find \\(f(g(5))\\).",
+    "options": [
+      "22",
+      "115",
+      "36",
+      "138"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(5)\\): \\(g(5) = 3(5) + 7 = 22\\)\n\nThen find \\(f(22)\\): \\(f(22) = 6(22) + 6 = 138\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x - 6\\)",
+      "\\(\\frac{x - 6}{8}\\)",
+      "\\(\\frac{8}{x - 6}\\)",
+      "\\(\\frac{x + 6}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 8x + 6\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 8y + 6\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 6}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 6}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -4x - 11\\), find \\(f(-5)\\).",
+    "options": [
+      "9",
+      "51",
+      "-9",
+      "31"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = -4(-5) - 11\\)\n\n\\(= 20 - 11 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -x - 2\\), find \\(f(4)\\).",
+    "options": [
+      "-9",
+      "6",
+      "-6",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = -1(4) - 2\\)\n\n\\(= -4 - 2 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} + 5x - 6\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "4",
+      "-1",
+      "6",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 5(-1)^{2} + 5(-1) - 6\\)\n\n\\(= 5 - 5 - 6 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - 7x + 7\\), evaluate \\(f(1)\\).",
+    "options": [
+      "10",
+      "19",
+      "5",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = 5(1)^{2} - 7(1) + 7\\)\n\n\\(= 5 - 7 + 7 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(3x - 10\\)",
+      "\\(\\frac{x - 10}{3}\\)",
+      "\\(\\frac{x + 10}{3}\\)",
+      "\\(\\frac{3}{x - 10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 3x + 10\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y + 10\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 10}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 10}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x + 15\\)",
+      "\\(\\frac{6}{x + 15}\\)",
+      "\\(\\frac{x + 15}{6}\\)",
+      "\\(\\frac{x - 15}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 6x - 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 15}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 15}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x - 4\\) and \\(g(x) = -5x - 2\\), find \\(f(g(-5))\\).",
+    "options": [
+      "23",
+      "-9",
+      "43",
+      "19"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = -5(-5) - 2 = 23\\)\n\nThen find \\(f(23)\\): \\(f(23) = 1(23) - 4 = 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x + 7\\), find \\(f(4)\\).",
+    "options": [
+      "-35",
+      "21",
+      "-28",
+      "-21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = -7(4) + 7\\)\n\n\\(= -28 + 7 = -21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 14\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{4}{x + 14}\\)",
+      "\\(\\frac{x + 14}{4}\\)",
+      "\\(\\frac{x - 14}{4}\\)",
+      "\\(4x + 14\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 4x - 14\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 4y - 14\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 14}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 14}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 8}{2}\\)",
+      "\\(\\frac{2}{x + 8}\\)",
+      "\\(\\frac{x + 8}{2}\\)",
+      "\\(2x + 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 8\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y - 8\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 8}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 8}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{10}{x - 7}\\)",
+      "\\(10x - 7\\)",
+      "\\(\\frac{x + 7}{10}\\)",
+      "\\(\\frac{x - 7}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 10x + 7\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y + 7\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 7}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -x - 4\\) and \\(g(x) = -4x - 2\\), find \\(f(g(1))\\).",
+    "options": [
+      "2",
+      "-5",
+      "-6",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(1)\\): \\(g(1) = -4(1) - 2 = -6\\)\n\nThen find \\(f(-6)\\): \\(f(-6) = -1(-6) - 4 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 1\\) and \\(f(x) = 16\\), find \\(x\\).",
+    "options": [
+      "16",
+      "6",
+      "-5",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(3x + 1 = 16\\)\n\n\\(3x = 15\\)\n\n\\(x = \\frac{15}{3} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -8x + 9\\), find \\(f(-6)\\).",
+    "options": [
+      "39",
+      "-57",
+      "57",
+      "-62"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -6\\).\n\n\\(f(-6) = -8(-6) + 9\\)\n\n\\(= 48 + 9 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 1\\) and \\(g(x) = 2x + 8\\), find \\(f(g(4))\\).",
+    "options": [
+      "-7",
+      "16",
+      "-6",
+      "-31"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = 2(4) + 8 = 16\\)\n\nThen find \\(f(16)\\): \\(f(16) = -2(16) + 1 = -31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} - 6x - 6\\), evaluate \\(f(-2)\\).",
+    "options": [
+      "-14",
+      "11",
+      "-10",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 1(-2)^{2} - 6(-2) - 6\\)\n\n\\(= 4 + 12 - 6 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 9\\), find \\(f(6)\\).",
+    "options": [
+      "3",
+      "56",
+      "-21",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(f(6) = 2(6) + 9\\)\n\n\\(= 12 + 9 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 2\\) and \\(g(x) = x - 8\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-11",
+      "-53",
+      "-13",
+      "-21"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 1(-3) - 8 = -11\\)\n\nThen find \\(f(-11)\\): \\(f(-11) = 5(-11) + 2 = -53\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 7\\) and \\(g(x) = -5x - 4\\), find \\(f(g(-5))\\).",
+    "options": [
+      "-114",
+      "22",
+      "-56",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = -5(-5) - 4 = 21\\)\n\nThen find \\(f(21)\\): \\(f(21) = -3(21) + 7 = -56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(5x + 4\\)",
+      "\\(\\frac{x + 4}{5}\\)",
+      "\\(\\frac{5}{x + 4}\\)",
+      "\\(\\frac{x - 4}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 5x - 4\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 5y - 4\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 4}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 4}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x + 4\\) and \\(g(x) = -5x - 2\\), find \\(f(g(1))\\).",
+    "options": [
+      "-27",
+      "-7",
+      "5",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(1)\\): \\(g(1) = -5(1) - 2 = -7\\)\n\nThen find \\(f(-7)\\): \\(f(-7) = 1(-7) + 4 = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(9x - 6\\)",
+      "\\(\\frac{x + 6}{9}\\)",
+      "\\(\\frac{9}{x - 6}\\)",
+      "\\(\\frac{x - 6}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 9x + 6\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y + 6\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 6}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 6}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 14\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{4}{x - 14}\\)",
+      "\\(4x - 14\\)",
+      "\\(\\frac{x - 14}{4}\\)",
+      "\\(\\frac{x + 14}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 4x + 14\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 4y + 14\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 14}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 14}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 3\\) and \\(f(x) = 12\\), find \\(x\\).",
+    "options": [
+      "3",
+      "12",
+      "4",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3x + 3 = 12\\)\n\n\\(3x = 9\\)\n\n\\(x = \\frac{9}{3} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -6x + 2\\), find \\(f(7)\\).",
+    "options": [
+      "-44",
+      "40",
+      "-40",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(f(7) = -6(7) + 2\\)\n\n\\(= -42 + 2 = -40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 7\\) and \\(g(x) = -5x + 3\\), find \\(f(g(-5))\\).",
+    "options": [
+      "-82",
+      "28",
+      "-49",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = -5(-5) + 3 = 28\\)\n\nThen find \\(f(28)\\): \\(f(28) = -2(28) + 7 = -49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - 6x + 6\\), evaluate \\(f(5)\\).",
+    "options": [
+      "106",
+      "161",
+      "101",
+      "-101"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(f(5) = 5(5)^{2} - 6(5) + 6\\)\n\n\\(= 125 - 30 + 6 = 101\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 3\\), find \\(f(-5)\\).",
+    "options": [
+      "-9",
+      "12",
+      "-12",
+      "-18"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = 3(-5) + 3\\)\n\n\\(= -15 + 3 = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 3\\) and \\(f(x) = 33\\), find \\(x\\).",
+    "options": [
+      "33",
+      "6",
+      "7",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x + 3 = 33\\)\n\n\\(5x = 30\\)\n\n\\(x = \\frac{30}{5} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} + 7x - 7\\), evaluate \\(f(3)\\).",
+    "options": [
+      "24",
+      "23",
+      "-23",
+      "-19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 1(3)^{2} + 7(3) - 7\\)\n\n\\(= 9 + 21 - 7 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 8\\), find \\(f(-2)\\).",
+    "options": [
+      "-7",
+      "-26",
+      "10",
+      "-10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 9(-2) + 8\\)\n\n\\(= -18 + 8 = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 12\\) and \\(f(x) = -33\\), find \\(x\\).",
+    "options": [
+      "-8",
+      "-33",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5x + 12 = -33\\)\n\n\\(5x = -45\\)\n\n\\(x = \\frac{-45}{5} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 6\\) and \\(g(x) = -2x + 4\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-9",
+      "10",
+      "22",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = -2(-3) + 4 = 10\\)\n\nThen find \\(f(10)\\): \\(f(10) = 5(10) + 6 = 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 7\\) and \\(g(x) = -5x + 2\\), find \\(f(g(-4))\\).",
+    "options": [
+      "37",
+      "22",
+      "77",
+      "-15"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-4)\\): \\(g(-4) = -5(-4) + 2 = 22\\)\n\nThen find \\(f(22)\\): \\(f(22) = 2(22) - 7 = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -6x - 4\\), find \\(f(-6)\\).",
+    "options": [
+      "40",
+      "32",
+      "18",
+      "-32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -6\\).\n\n\\(f(-6) = -6(-6) - 4\\)\n\n\\(= 36 - 4 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 7\\) and \\(g(x) = 6x - 1\\), find \\(f(g(2))\\).",
+    "options": [
+      "-3",
+      "-19",
+      "11",
+      "-48"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = 6(2) - 1 = 11\\)\n\nThen find \\(f(11)\\): \\(f(11) = -5(11) + 7 = -48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 6\\) and \\(g(x) = 3x + 7\\), find \\(f(g(-3))\\).",
+    "options": [
+      "0",
+      "-2",
+      "1",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 3(-3) + 7 = -2\\)\n\nThen find \\(f(-2)\\): \\(f(-2) = 3(-2) + 6 = 0\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 10\\), find \\(f(5)\\).",
+    "options": [
+      "15",
+      "-45",
+      "35",
+      "-15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(f(5) = 5(5) - 10\\)\n\n\\(= 25 - 10 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 2\\) and \\(f(x) = 19\\), find \\(x\\).",
+    "options": [
+      "19",
+      "7",
+      "8",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3x - 2 = 19\\)\n\n\\(3x = 21\\)\n\n\\(x = \\frac{21}{3} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -2x - 11\\), find \\(f(8)\\).",
+    "options": [
+      "-27",
+      "27",
+      "-90",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(f(8) = -2(8) - 11\\)\n\n\\(= -16 - 11 = -27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x - 6\\) and \\(g(x) = -4x + 3\\), find \\(f(g(4))\\).",
+    "options": [
+      "11",
+      "-19",
+      "-2",
+      "-13"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = -4(4) + 3 = -13\\)\n\nThen find \\(f(-13)\\): \\(f(-13) = 1(-13) - 6 = -19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} + 3x - 6\\), evaluate \\(f(2)\\).",
+    "options": [
+      "8",
+      "20",
+      "-20",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = 5(2)^{2} + 3(2) - 6\\)\n\n\\(= 20 + 6 - 6 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 10\\) and \\(f(x) = -20\\), find \\(x\\).",
+    "options": [
+      "-4",
+      "-20",
+      "-5",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(6x + 10 = -20\\)\n\n\\(6x = -30\\)\n\n\\(x = \\frac{-30}{6} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 5}{5}\\)",
+      "\\(5x - 5\\)",
+      "\\(\\frac{5}{x - 5}\\)",
+      "\\(\\frac{x - 5}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 5x + 5\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 5y + 5\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 5}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x - 4\\) and \\(g(x) = x + 7\\), find \\(f(g(-2))\\).",
+    "options": [
+      "5",
+      "1",
+      "2",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-2)\\): \\(g(-2) = 1(-2) + 7 = 5\\)\n\nThen find \\(f(5)\\): \\(f(5) = 1(5) - 4 = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 2\\) and \\(f(x) = -16\\), find \\(x\\).",
+    "options": [
+      "-3",
+      "-16",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6x + 2 = -16\\)\n\n\\(6x = -18\\)\n\n\\(x = \\frac{-18}{6} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 3\\) and \\(f(x) = -48\\), find \\(x\\).",
+    "options": [
+      "-48",
+      "5",
+      "-5",
+      "-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(9x - 3 = -48\\)\n\n\\(9x = -45\\)\n\n\\(x = \\frac{-45}{9} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 6\\) and \\(f(x) = -2\\), find \\(x\\).",
+    "options": [
+      "0",
+      "3",
+      "-2",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x - 6 = -2\\)\n\n\\(2x = 4\\)\n\n\\(x = \\frac{4}{2} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} + 5x + 5\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "19",
+      "-17",
+      "57",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 2(-4)^{2} + 5(-4) + 5\\)\n\n\\(= 32 - 20 + 5 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 5\\) and \\(g(x) = -5x + 1\\), find \\(f(g(-1))\\).",
+    "options": [
+      "16",
+      "-17",
+      "-3",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = -5(-1) + 1 = 6\\)\n\nThen find \\(f(6)\\): \\(f(6) = -2(6) - 5 = -17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 5\\) and \\(f(x) = 49\\), find \\(x\\).",
+    "options": [
+      "6",
+      "7",
+      "49",
+      "-6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x - 5 = 49\\)\n\n\\(9x = 54\\)\n\n\\(x = \\frac{54}{9} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 12}{7}\\)",
+      "\\(\\frac{x - 12}{7}\\)",
+      "\\(\\frac{7}{x - 12}\\)",
+      "\\(7x - 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 7x + 12\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 7y + 12\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 12}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 12}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 2\\), find \\(f(-6)\\).",
+    "options": [
+      "20",
+      "-16",
+      "15",
+      "-20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -6\\).\n\n\\(f(-6) = 3(-6) - 2\\)\n\n\\(= -18 - 2 = -20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 6\\) and \\(g(x) = 2x + 6\\), find \\(f(g(3))\\).",
+    "options": [
+      "12",
+      "36",
+      "42",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(3)\\): \\(g(3) = 2(3) + 6 = 12\\)\n\nThen find \\(f(12)\\): \\(f(12) = 3(12) + 6 = 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 3\\) and \\(g(x) = x + 3\\), find \\(f(g(-3))\\).",
+    "options": [
+      "9",
+      "6",
+      "-3",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = 1(-3) + 3 = 0\\)\n\nThen find \\(f(0)\\): \\(f(0) = -3(0) - 3 = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x + 3\\) and \\(g(x) = -x - 5\\), find \\(f(g(3))\\).",
+    "options": [
+      "15",
+      "-29",
+      "-20",
+      "-8"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(3)\\): \\(g(3) = -1(3) - 5 = -8\\)\n\nThen find \\(f(-8)\\): \\(f(-8) = 4(-8) + 3 = -29\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 2\\), find \\(f(8)\\).",
+    "options": [
+      "-50",
+      "50",
+      "22",
+      "46"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(f(8) = 6(8) + 2\\)\n\n\\(= 48 + 2 = 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{4}{x - 2}\\)",
+      "\\(4x - 2\\)",
+      "\\(\\frac{x + 2}{4}\\)",
+      "\\(\\frac{x - 2}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 4x + 2\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 4y + 2\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 2}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 2}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} + 6x + 8\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "16",
+      "-4",
+      "6",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 2(-1)^{2} + 6(-1) + 8\\)\n\n\\(= 2 - 6 + 8 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - 4x - 7\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "-73",
+      "73",
+      "77",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 4(-4)^{2} - 4(-4) - 7\\)\n\n\\(= 64 + 16 - 7 = 73\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 6\\) and \\(f(x) = -12\\), find \\(x\\).",
+    "options": [
+      "-2",
+      "-12",
+      "2",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(9x + 6 = -12\\)\n\n\\(9x = -18\\)\n\n\\(x = \\frac{-18}{9} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x + 8\\) and \\(g(x) = 6x + 4\\), find \\(f(g(3))\\).",
+    "options": [
+      "88",
+      "14",
+      "52",
+      "22"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(3)\\): \\(g(3) = 6(3) + 4 = 22\\)\n\nThen find \\(f(22)\\): \\(f(22) = 2(22) + 8 = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 13\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x - 13\\)",
+      "\\(\\frac{6}{x - 13}\\)",
+      "\\(\\frac{x + 13}{6}\\)",
+      "\\(\\frac{x - 13}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 6x + 13\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y + 13\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 13}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 13}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 6\\), find \\(f(4)\\).",
+    "options": [
+      "-22",
+      "34",
+      "22",
+      "-17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 7(4) - 6\\)\n\n\\(= 28 - 6 = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 6\\) and \\(f(x) = 10\\), find \\(x\\).",
+    "options": [
+      "3",
+      "2",
+      "10",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2x + 6 = 10\\)\n\n\\(2x = 4\\)\n\n\\(x = \\frac{4}{2} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} - 6x + 9\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "1",
+      "-49",
+      "50",
+      "49"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 1(-4)^{2} - 6(-4) + 9\\)\n\n\\(= 16 + 24 + 9 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 7\\) and \\(f(x) = 29\\), find \\(x\\).",
+    "options": [
+      "5",
+      "29",
+      "-4",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x - 7 = 29\\)\n\n\\(9x = 36\\)\n\n\\(x = \\frac{36}{9} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 12\\) and \\(f(x) = 9\\), find \\(x\\).",
+    "options": [
+      "-7",
+      "8",
+      "9",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(3x - 12 = 9\\)\n\n\\(3x = 21\\)\n\n\\(x = \\frac{21}{3} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 3\\) and \\(g(x) = -2x + 6\\), find \\(f(g(-1))\\).",
+    "options": [
+      "-6",
+      "8",
+      "-21",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = -2(-1) + 6 = 8\\)\n\nThen find \\(f(8)\\): \\(f(8) = -3(8) + 3 = -21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 8\\) and \\(g(x) = 2x - 8\\), find \\(f(g(-1))\\).",
+    "options": [
+      "-58",
+      "-34",
+      "-13",
+      "-10"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 2(-1) - 8 = -10\\)\n\nThen find \\(f(-10)\\): \\(f(-10) = 5(-10) - 8 = -58\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 5\\), find \\(f(6)\\).",
+    "options": [
+      "-59",
+      "59",
+      "49",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(f(6) = 9(6) + 5\\)\n\n\\(= 54 + 5 = 59\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} - 8x - 6\\), evaluate \\(f(-5)\\).",
+    "options": [
+      "112",
+      "29",
+      "-109",
+      "109"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = 3(-5)^{2} - 8(-5) - 6\\)\n\n\\(= 75 + 40 - 6 = 109\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 7\\), find \\(f(-3)\\).",
+    "options": [
+      "-15",
+      "-25",
+      "11",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = 6(-3) + 7\\)\n\n\\(= -18 + 7 = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 7\\) and \\(g(x) = -x - 2\\), find \\(f(g(4))\\).",
+    "options": [
+      "17",
+      "11",
+      "-6",
+      "-19"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = -1(4) - 2 = -6\\)\n\nThen find \\(f(-6)\\): \\(f(-6) = -3(-6) - 7 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 8\\) and \\(g(x) = -3x - 1\\), find \\(f(g(-3))\\).",
+    "options": [
+      "-52",
+      "8",
+      "-16",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-3)\\): \\(g(-3) = -3(-3) - 1 = 8\\)\n\nThen find \\(f(8)\\): \\(f(8) = -3(8) + 8 = -16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} - x - 3\\), evaluate \\(f(4)\\).",
+    "options": [
+      "-25",
+      "25",
+      "33",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 2(4)^{2} - 1(4) - 3\\)\n\n\\(= 32 - 4 - 3 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x + 7\\) and \\(g(x) = 5x + 1\\), find \\(f(g(-4))\\).",
+    "options": [
+      "-4",
+      "-1",
+      "-31",
+      "-19"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-4)\\): \\(g(-4) = 5(-4) + 1 = -19\\)\n\nThen find \\(f(-19)\\): \\(f(-19) = 2(-19) + 7 = -31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 10x - 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{10}{x + 15}\\)",
+      "\\(10x + 15\\)",
+      "\\(\\frac{x - 15}{10}\\)",
+      "\\(\\frac{x + 15}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 10x - 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 10y - 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 15}{10}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 15}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -5x + 7\\), find \\(f(-5)\\).",
+    "options": [
+      "18",
+      "-32",
+      "32",
+      "-40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = -5(-5) + 7\\)\n\n\\(= 25 + 7 = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{6}{x - 3}\\)",
+      "\\(6x - 3\\)",
+      "\\(\\frac{x - 3}{6}\\)",
+      "\\(\\frac{x + 3}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 6x + 3\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y + 3\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 3}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 3}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -x - 6\\), find \\(f(-2)\\).",
+    "options": [
+      "4",
+      "11",
+      "-4",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = -1(-2) - 6\\)\n\n\\(= 2 - 6 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - 4x - 4\\), evaluate \\(f(3)\\).",
+    "options": [
+      "44",
+      "24",
+      "-20",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 4(3)^{2} - 4(3) - 4\\)\n\n\\(= 36 - 12 - 4 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 2\\) and \\(g(x) = 6x - 2\\), find \\(f(g(4))\\).",
+    "options": [
+      "-68",
+      "-86",
+      "22",
+      "-14"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(4)\\): \\(g(4) = 6(4) - 2 = 22\\)\n\nThen find \\(f(22)\\): \\(f(22) = -3(22) - 2 = -68\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x + 6\\) and \\(g(x) = -4x - 6\\), find \\(f(g(-4))\\).",
+    "options": [
+      "10",
+      "67",
+      "66",
+      "-18"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-4)\\): \\(g(-4) = -4(-4) - 6 = 10\\)\n\nThen find \\(f(10)\\): \\(f(10) = 6(10) + 6 = 66\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x + 3\\)",
+      "\\(\\frac{x + 3}{6}\\)",
+      "\\(\\frac{6}{x + 3}\\)",
+      "\\(\\frac{x - 3}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x - 3\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 3\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 3}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 14\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 14}{2}\\)",
+      "\\(\\frac{2}{x - 14}\\)",
+      "\\(\\frac{x + 14}{2}\\)",
+      "\\(2x - 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 2x + 14\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y + 14\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 14}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 14}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{6}{x + 11}\\)",
+      "\\(\\frac{x + 11}{6}\\)",
+      "\\(6x + 11\\)",
+      "\\(\\frac{x - 11}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x - 11\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 11\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 11}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 11}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -5x - 6\\), find \\(f(1)\\).",
+    "options": [
+      "11",
+      "-11",
+      "-16",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 1\\).\n\n\\(f(1) = -5(1) - 6\\)\n\n\\(= -5 - 6 = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -8x + 3\\), find \\(f(-3)\\).",
+    "options": [
+      "-17",
+      "21",
+      "-27",
+      "27"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = -8(-3) + 3\\)\n\n\\(= 24 + 3 = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 7\\) and \\(f(x) = -31\\), find \\(x\\).",
+    "options": [
+      "-8",
+      "-7",
+      "8",
+      "-31"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3x - 7 = -31\\)\n\n\\(3x = -24\\)\n\n\\(x = \\frac{-24}{3} = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 8}{9}\\)",
+      "\\(\\frac{x + 8}{9}\\)",
+      "\\(9x - 8\\)",
+      "\\(\\frac{9}{x - 8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 9x + 8\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y + 8\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 8}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 8}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x + 5\\) and \\(g(x) = 3x - 5\\), find \\(f(g(2))\\).",
+    "options": [
+      "1",
+      "6",
+      "7",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = 3(2) - 5 = 1\\)\n\nThen find \\(f(1)\\): \\(f(1) = 1(1) + 5 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x^{2} - 7x - 7\\), evaluate \\(f(3)\\).",
+    "options": [
+      "-8",
+      "-10",
+      "10",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(f(3) = 2(3)^{2} - 7(3) - 7\\)\n\n\\(= 18 - 21 - 7 = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 12}{9}\\)",
+      "\\(\\frac{x + 12}{9}\\)",
+      "\\(\\frac{9}{x + 12}\\)",
+      "\\(9x + 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 9x - 12\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 9y - 12\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 12}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 12}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 1\\) and \\(f(x) = -11\\), find \\(x\\).",
+    "options": [
+      "-11",
+      "-6",
+      "-5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2x + 1 = -11\\)\n\n\\(2x = -12\\)\n\n\\(x = \\frac{-12}{2} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(2x + 1\\)",
+      "\\(\\frac{2}{x + 1}\\)",
+      "\\(\\frac{x - 1}{2}\\)",
+      "\\(\\frac{x + 1}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x - 1\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y - 1\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 1}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 7}{6}\\)",
+      "\\(\\frac{6}{x + 7}\\)",
+      "\\(\\frac{x - 7}{6}\\)",
+      "\\(6x + 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 6x - 7\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 7\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 7}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x^{2} - 6x + 9\\), evaluate \\(f(-3)\\).",
+    "options": [
+      "27",
+      "63",
+      "-63",
+      "67"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -3\\).\n\n\\(f(-3) = 4(-3)^{2} - 6(-3) + 9\\)\n\n\\(= 36 + 18 + 9 = 63\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 6\\) and \\(g(x) = 5x + 6\\), find \\(f(g(-5))\\).",
+    "options": [
+      "-19",
+      "-101",
+      "-149",
+      "-31"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-5)\\): \\(g(-5) = 5(-5) + 6 = -19\\)\n\nThen find \\(f(-19)\\): \\(f(-19) = 5(-19) - 6 = -101\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 6\\) and \\(g(x) = 3x - 7\\), find \\(f(g(-1))\\).",
+    "options": [
+      "-10",
+      "26",
+      "17",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 3(-1) - 7 = -10\\)\n\nThen find \\(f(-10)\\): \\(f(-10) = -2(-10) + 6 = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 10\\) and \\(f(x) = -25\\), find \\(x\\).",
+    "options": [
+      "3",
+      "-3",
+      "-25",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x - 10 = -25\\)\n\n\\(5x = -15\\)\n\n\\(x = \\frac{-15}{5} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -x + 1\\) and \\(g(x) = 5x + 4\\), find \\(f(g(1))\\).",
+    "options": [
+      "0",
+      "9",
+      "-8",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(1)\\): \\(g(1) = 5(1) + 4 = 9\\)\n\nThen find \\(f(9)\\): \\(f(9) = -1(9) + 1 = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - 8x + 10\\), evaluate \\(f(-1)\\).",
+    "options": [
+      "23",
+      "7",
+      "28",
+      "-23"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -1\\).\n\n\\(f(-1) = 5(-1)^{2} - 8(-1) + 10\\)\n\n\\(= 5 + 8 + 10 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x^{2} + 4x + 9\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "-41",
+      "41",
+      "44",
+      "73"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 3(-4)^{2} + 4(-4) + 9\\)\n\n\\(= 48 - 16 + 9 = 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 7\\) and \\(g(x) = -2x + 8\\), find \\(f(g(-1))\\).",
+    "options": [
+      "4",
+      "57",
+      "2",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = -2(-1) + 8 = 10\\)\n\nThen find \\(f(10)\\): \\(f(10) = 5(10) + 7 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 6\\) and \\(g(x) = 6x + 6\\), find \\(f(g(-1))\\).",
+    "options": [
+      "11",
+      "0",
+      "6",
+      "72"
+    ],
+    "correctIndex": 2,
+    "explanation": "First find \\(g(-1)\\): \\(g(-1) = 6(-1) + 6 = 0\\)\n\nThen find \\(f(0)\\): \\(f(0) = -5(0) + 6 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 7\\), find \\(f(-7)\\).",
+    "options": [
+      "-28",
+      "54",
+      "-42",
+      "42"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -7\\).\n\n\\(f(-7) = 5(-7) - 7\\)\n\n\\(= -35 - 7 = -42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 4\\) and \\(f(x) = 76\\), find \\(x\\).",
+    "options": [
+      "76",
+      "10",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x + 4 = 76\\)\n\n\\(8x = 72\\)\n\n\\(x = \\frac{72}{8} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 5\\) and \\(g(x) = 4x - 2\\), find \\(f(g(2))\\).",
+    "options": [
+      "23",
+      "42",
+      "6",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = 4(2) - 2 = 6\\)\n\nThen find \\(f(6)\\): \\(f(6) = 3(6) + 5 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = -7x - 11\\), find \\(f(-8)\\).",
+    "options": [
+      "45",
+      "81",
+      "-45",
+      "67"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -8\\).\n\n\\(f(-8) = -7(-8) - 11\\)\n\n\\(= 56 - 11 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 11\\), find \\(f(4)\\).",
+    "options": [
+      "35",
+      "-35",
+      "50",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 6(4) + 11\\)\n\n\\(= 24 + 11 = 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x + 6\\)",
+      "\\(\\frac{6}{x + 6}\\)",
+      "\\(\\frac{x - 6}{6}\\)",
+      "\\(\\frac{x + 6}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 6x - 6\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 6y - 6\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 6}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 6}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} + 6x + 4\\), evaluate \\(f(2)\\).",
+    "options": [
+      "21",
+      "-4",
+      "-20",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(f(2) = 1(2)^{2} + 6(2) + 4\\)\n\n\\(= 4 + 12 + 4 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} + 3x - 2\\), evaluate \\(f(4)\\).",
+    "options": [
+      "95",
+      "66",
+      "-90",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(f(4) = 5(4)^{2} + 3(4) - 2\\)\n\n\\(= 80 + 12 - 2 = 90\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 6\\) and \\(f(x) = 41\\), find \\(x\\).",
+    "options": [
+      "41",
+      "8",
+      "7",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5x + 6 = 41\\)\n\n\\(5x = 35\\)\n\n\\(x = \\frac{35}{5} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 4\\) and \\(f(x) = 16\\), find \\(x\\).",
+    "options": [
+      "16",
+      "5",
+      "-4",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(3x + 4 = 16\\)\n\n\\(3x = 12\\)\n\n\\(x = \\frac{12}{3} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(3x - 3\\)",
+      "\\(\\frac{3}{x - 3}\\)",
+      "\\(\\frac{x - 3}{3}\\)",
+      "\\(\\frac{x + 3}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 3x + 3\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 3y + 3\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 3}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 3}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 10\\), find \\(f(-2)\\).",
+    "options": [
+      "-18",
+      "-16",
+      "-2",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 4(-2) + 10\\)\n\n\\(= -8 + 10 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 10\\), find \\(f(-5)\\).",
+    "options": [
+      "-35",
+      "59",
+      "55",
+      "-55"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -5\\).\n\n\\(f(-5) = 9(-5) - 10\\)\n\n\\(= -45 - 10 = -55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 6x - 5\\) and \\(g(x) = -4x + 3\\), find \\(f(g(-4))\\).",
+    "options": [
+      "119",
+      "-29",
+      "19",
+      "109"
+    ],
+    "correctIndex": 3,
+    "explanation": "First find \\(g(-4)\\): \\(g(-4) = -4(-4) + 3 = 19\\)\n\nThen find \\(f(19)\\): \\(f(19) = 6(19) - 5 = 109\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(7x + 9\\)",
+      "\\(\\frac{x + 9}{7}\\)",
+      "\\(\\frac{x - 9}{7}\\)",
+      "\\(\\frac{7}{x + 9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 7x - 9\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 7y - 9\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x + 9}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 9}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 15\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{2}{x - 15}\\)",
+      "\\(2x - 15\\)",
+      "\\(\\frac{x + 15}{2}\\)",
+      "\\(\\frac{x - 15}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x + 15\\).\n\nInterchange \\(x\\) and \\(y\\): \\(x = 2y + 15\\)\n\nMake \\(y\\) the subject: \\(y = \\frac{x - 15}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 15}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 8\\) and \\(g(x) = -2x + 5\\), find \\(f(g(2))\\).",
+    "options": [
+      "2",
+      "-3",
+      "-2",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "First find \\(g(2)\\): \\(g(2) = -2(2) + 5 = 1\\)\n\nThen find \\(f(1)\\): \\(f(1) = 5(1) - 8 = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = x^{2} - 7x + 8\\), evaluate \\(f(-4)\\).",
+    "options": [
+      "-4",
+      "-52",
+      "52",
+      "53"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -4\\).\n\n\\(f(-4) = 1(-4)^{2} - 7(-4) + 8\\)\n\n\\(= 16 + 28 + 8 = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x^{2} - x + 3\\), evaluate \\(f(-2)\\).",
+    "options": [
+      "21",
+      "-25",
+      "30",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\).\n\n\\(f(-2) = 5(-2)^{2} - 1(-2) + 3\\)\n\n\\(= 20 + 2 + 3 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 10\\), find \\(f(8)\\).",
+    "options": [
+      "74",
+      "-74",
+      "88",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(f(8) = 8(8) + 10\\)\n\n\\(= 64 + 10 = 74\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "GkXSxKZkcZxYXlvbEl3u",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]
