@@ -26,12 +26,72 @@ Content pipeline (`project/tools/scraper`, Node CommonJS, no npm scripts — inv
 ```powershell
 node 1_scrape.js          # myschool.ng -> data/raw_<subject>.json
 node 2_classify.js        # Groq llama-3.1-8b-instant -> data/classified_<subject>.json
-node fix_misclassified.js # MUST run after classify — ~15% misclassification rate
+node fix_misclassified.js # MUST run after classify — see the note below on misclassification
 node 3_seed.js            # subject -> units -> topics -> questions into Firestore
 node check_linkage.js     # verify topicId linkage after seeding
 ```
 
 Each script hardcodes `const SUBJECT = '...'` near the top — **edit that constant in every script before a run**; they currently disagree with each other (`1_scrape/2_classify/3_seed` = `further-mathematics`, `fix_misclassified` = `physics`). Requires `tools/scraper/.env` (`GROQ_API_KEY`) and `tools/scraper/data/serviceAccountKey.json` (gitignored, never commit). `raw_*.json` is `{ questions: [...] }`, not a bare array; `classified_*.json` **is** a bare array.
+
+### Generated content, seeding, and the Spark quota
+
+A second content source now sits alongside the scraper. `tools/scraper/gen/` generates
+WAEC-style questions procedurally — each answer computed in code, not authored by hand —
+into `data/generated_<subject>_<topic>.json`, 300 per topic, 216 topics, ~64,800 questions
+across Mathematics, Physics, Further Maths, Chemistry and Government. Every document is
+marked `origin: 'ai_generated'`, which is how you filter or audit synthetic content, and
+how a rollback would find it.
+
+**The generators use unseeded `Math.random()`.** Re-running `run.js` produces a *different*
+corpus; it does not reproduce the committed one. That is why ~44MB of JSON is committed
+rather than regenerated, and why `run.js` carries a warning header. Do not re-run it
+casually — it overwrites.
+
+Three seeders, all dry-run unless `--commit`:
+
+```powershell
+node 6_seed_generated.js --all              # additive: existing subjects, by topicId
+node 7_create_subject.js --subject=chemistry # creates subject -> units -> topics -> questions
+node 8_apply_reclass.js                      # applies a reviewed reclassification mapping
+```
+
+**Never use `3_seed.js` on a subject that already exists** — it always creates a fresh
+subject document and would duplicate it. That is the whole reason `6_seed_generated.js`
+exists.
+
+Questions must be written with Firestore **auto-IDs**: `drillQuestionsProvider` rotates its
+session window with a random cursor over `FieldPath.documentId`, so sequential IDs would
+cluster and break rotation. They also need `hasAnswer: true` or the drill query filters
+them out entirely.
+
+**Firestore is on the free Spark plan: 20k writes and 50k reads per day.** Seeding the full
+corpus needs four to five days. An attempt to do it in one run exhausted both quotas and
+completed nothing. The seeders now share a daily budget via `data/_seed_budget.json` (keyed
+to the *Pacific* quota day), stop cleanly when spent, and resume next run;
+`.github/workflows/seed-content.yml` drives them daily. Counting uses `count()` aggregation
+— billed per 1000 index entries, not per document. Fetching whole topics just to size them
+is what drained the read quota the first time. Staying on Spark is deliberate: the hard
+ceiling is the cost guarantee until there's revenue.
+
+### Topic classification
+
+The `llama-3.1-8b` labels were wrong far more often than this file used to claim, and the
+rate differed sharply by subject — measured on a random sample, then on the full corpus:
+**Mathematics 81%, Physics 61%, Further Mathematics 8%**. So the "all subjects" framing in
+`a0606fa` was wrong; Further Maths was largely fine. 2,246 high-confidence reassignments
+have been applied, each recording `previousTopicId` so it is reversible. 290 low-confidence
+rows — diagram-dependent stems, genuinely dual-fit questions — were deliberately left alone
+rather than guessed at, and are still suspect.
+
+`reclassify.yml` is **dispatch-only now**. It was scheduled every two hours with `--apply`,
+which meant two systems writing `topicId` to the same documents. Do not re-enable the
+schedule without first deciding which pass is authoritative.
+
+Reclassification moves questions *out* of topics as well as in. Twelve Mathematics topics
+and twenty-two Physics topics were left below the 20 questions a drill session serves — two
+at literally zero — until generated content was seeded into them. **If you reclassify again,
+re-check topic counts afterwards and seed the thin ones**, or you will empty a topic a
+student is using.
 
 `project/firestore.rules` and `project/firestore.indexes.json` are both tracked in the repo, and `firebase.json`'s `firestore` block points at each — `firebase deploy --only firestore:rules` and `firebase deploy --only firestore:indexes` deploy these files directly, as `.cursorrules` describes.
 
@@ -83,7 +143,12 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   `PRD_v2.md`, `Tech_Stack.md` and `Execution_Plan.md` are stale (Next.js-era) — do not follow.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- `flutter test` passing 2/2 means there are almost no tests. Never report it as health.
+- The suite is 65 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+  is the one with real reach: it parses every LaTeX expression in the generated corpus
+  through the actual flutter_math_fork parser and renders a sample through FullLatexView.
+  It carries a deliberate control case, so if you change it, keep that — without it the
+  suite passes no matter how broken the content is. Still: a green suite is not evidence
+  that content is *correct*, only that it parses and renders.
 - Client-writable `users/{uid}` streak/xp/topicStats is a hard blocker on any leaderboard or
   gamification work. Do not ship those sessions until writes are server-controlled.
 
