@@ -129,6 +129,40 @@ class UserRepository {
     }, SetOptions(merge: true));
   }
 
+  /// Replaces the profile from the settings editor, clearing what was
+  /// emptied.
+  ///
+  /// [setProfile] deliberately ignores blank values — it serves the
+  /// onboarding step, where "left blank" means "not answered yet" and must
+  /// not wipe a sibling field. That is exactly wrong for an editor: a
+  /// student who clears their age is asking for it to be deleted, and
+  /// silently keeping it would be the worst possible answer on a screen
+  /// holding data about minors.
+  ///
+  /// Dotted paths with [FieldValue.delete], so only the named keys move
+  /// and the rest of the profile is untouched. `affectedKeys()` in
+  /// `firestore.rules` sees the top-level `profile`, which is
+  /// allow-listed, so nested deletes need no rules change.
+  ///
+  /// Uses `update`, not `set`: there is no sensible way to clear a field
+  /// on a user document that does not exist, and creating one here would
+  /// bypass the create rule's field checks.
+  Future<void> updateProfile({
+    required String uid,
+    required Map<String, Object?> profile,
+  }) {
+    if (profile.isEmpty) return Future.value();
+
+    final data = <String, Object?>{'updatedAt': FieldValue.serverTimestamp()};
+    for (final entry in profile.entries) {
+      final isBlank = entry.value == null || entry.value == '';
+      data['profile.${entry.key}'] = isBlank
+          ? FieldValue.delete()
+          : entry.value;
+    }
+    return _db.collection('users').doc(uid).update(data);
+  }
+
   /// Advances the daily streak for [uid].
   ///
   /// A transaction, not a read-then-write. The previous version did
@@ -158,8 +192,9 @@ class UserRepository {
       final currentStreak = (data['currentStreak'] as num? ?? 0).toInt();
       tx.update(ref, {
         'lastActiveDate': today,
-        'currentStreak':
-            data['lastActiveDate'] == yesterday ? currentStreak + 1 : 1,
+        'currentStreak': data['lastActiveDate'] == yesterday
+            ? currentStreak + 1
+            : 1,
       });
     });
   }

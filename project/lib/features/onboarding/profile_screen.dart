@@ -5,9 +5,8 @@ import 'package:go_router/go_router.dart';
 import '../../core/onboarding/onboarding_step.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/user_repository.dart';
-import '../../core/theme/app_colors.dart';
-import '../../core/theme/app_theme.dart';
 import 'onboarding_scaffold.dart';
+import 'profile_form.dart';
 
 /// Step 4 — optional profile.
 ///
@@ -20,7 +19,10 @@ import 'onboarding_scaffold.dart';
 ///
 /// This step collects data about students who are largely minors. The
 /// privacy policy at `/privacy` has to describe it accurately, and no
-/// field here may become required without revisiting that.
+/// field here may become required without revisiting that. The fields
+/// themselves live in `profile_form.dart`, shared with the settings
+/// screen that edits them later — which is what makes the subtitle's "you
+/// can edit it later" true.
 class OnboardingProfileScreen extends ConsumerStatefulWidget {
   const OnboardingProfileScreen({super.key});
 
@@ -31,49 +33,16 @@ class OnboardingProfileScreen extends ConsumerStatefulWidget {
 
 class _OnboardingProfileScreenState
     extends ConsumerState<OnboardingProfileScreen> {
-  final _school = TextEditingController();
-  final _age = TextEditingController();
-
-  String? _classYear;
-  String? _gender;
-  String? _country;
-  String? _state;
+  final _form = ProfileFormController();
 
   bool _isSubmitting = false;
   String? _error;
 
-  static const _classYears = ['JSS3', 'SS1', 'SS2', 'SS3', 'Graduate', 'Other'];
-  static const _genders = ['Female', 'Male', 'Prefer not to say'];
-  static const _countries = ['Nigeria', 'Ghana', 'Other'];
-
-  // Placeholder list — the full 36 states + FCT belong in a data file, not
-  // inline here, and only matter once country == Nigeria drives the list.
-  static const _states = [
-    'Abuja (FCT)',
-    'Lagos',
-    'Rivers',
-    'Kano',
-    'Oyo',
-    'Enugu',
-    'Kaduna',
-    'Other',
-  ];
-
   @override
   void dispose() {
-    _school.dispose();
-    _age.dispose();
+    _form.dispose();
     super.dispose();
   }
-
-  Map<String, Object?> get _profile => {
-    'school': _school.text.trim(),
-    'classYear': _classYear,
-    'age': int.tryParse(_age.text.trim()),
-    'gender': _gender,
-    'country': _country,
-    'state': _state,
-  };
 
   Future<void> _finish({required bool save}) async {
     final user = ref.read(currentUserProvider);
@@ -91,7 +60,7 @@ class _OnboardingProfileScreenState
       if (save) {
         await ref
             .read(userRepositoryProvider)
-            .setProfile(uid: user.uid, profile: _profile);
+            .setProfile(uid: user.uid, profile: _form.toProfile());
       }
       if (!mounted) return;
       context.go('/');
@@ -106,12 +75,7 @@ class _OnboardingProfileScreenState
   }
 
   /// Skip still persists anything already typed — a partial save, per spec.
-  Future<void> _skip() {
-    final hasAnything = _profile.values.any(
-      (v) => v != null && v != '',
-    );
-    return _finish(save: hasAnything);
-  }
+  Future<void> _skip() => _finish(save: !_form.isEmpty);
 
   @override
   Widget build(BuildContext context) {
@@ -120,130 +84,18 @@ class _OnboardingProfileScreenState
       title: 'Tell us a bit about you',
       subtitle:
           'All optional — skip anything you would rather not share. It '
-          'helps us shape the content, and you can edit it later.',
+          'helps us shape the content, and you can edit it later in '
+          'settings.',
       errorText: _error,
       isLoading: _isSubmitting,
       primaryLabel: 'Save and finish',
       onPrimary: () => _finish(save: true),
       onSkip: _skip,
       skipLabel: 'Skip for now',
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          OnboardingTextField(
-            controller: _school,
-            label: 'SCHOOL',
-            hintText: 'Optional',
-          ),
-          const SizedBox(height: 18),
-          _Dropdown(
-            label: 'CLASS / YEAR',
-            value: _classYear,
-            items: _classYears,
-            onChanged: (v) => setState(() => _classYear = v),
-          ),
-          const SizedBox(height: 18),
-          OnboardingTextField(
-            controller: _age,
-            label: 'AGE',
-            hintText: 'Optional',
-            keyboardType: TextInputType.number,
-            maxLength: 2,
-          ),
-          const SizedBox(height: 18),
-          _Dropdown(
-            label: 'GENDER',
-            value: _gender,
-            items: _genders,
-            onChanged: (v) => setState(() => _gender = v),
-          ),
-          const SizedBox(height: 18),
-          _Dropdown(
-            label: 'COUNTRY',
-            value: _country,
-            items: _countries,
-            onChanged: (v) => setState(() => _country = v),
-          ),
-          const SizedBox(height: 18),
-          _Dropdown(
-            label: 'STATE',
-            value: _state,
-            items: _states,
-            onChanged: (v) => setState(() => _state = v),
-          ),
-        ],
+      child: ProfileFormFields(
+        controller: _form,
+        onChanged: () => setState(() {}),
       ),
-    );
-  }
-}
-
-class _Dropdown extends StatelessWidget {
-  const _Dropdown({
-    required this.label,
-    required this.value,
-    required this.items,
-    required this.onChanged,
-  });
-
-  final String label;
-  final String? value;
-  final List<String> items;
-  final ValueChanged<String?> onChanged;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          label,
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
-        ),
-        const SizedBox(height: 8),
-        DropdownButtonFormField<String>(
-          initialValue: value,
-          isExpanded: true,
-          dropdownColor: AppColors.surfaceDark,
-          hint: Text(
-            'Optional',
-            style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textSecondaryDark.withAlpha(
-                (0.6 * 255).round(),
-              ),
-            ),
-          ),
-          style: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
-          icon: const Icon(
-            Icons.keyboard_arrow_down_rounded,
-            color: AppColors.textSecondaryDark,
-          ),
-          decoration: InputDecoration(
-            filled: true,
-            fillColor: AppColors.surfaceDark,
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 16,
-            ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.borderDark),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.borderDark),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.primary, width: 2),
-            ),
-          ),
-          items: [
-            for (final item in items)
-              DropdownMenuItem(value: item, child: Text(item)),
-          ],
-          onChanged: onChanged,
-        ),
-      ],
     );
   }
 }

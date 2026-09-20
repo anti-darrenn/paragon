@@ -43,11 +43,23 @@ class SettingsScreen extends ConsumerWidget {
                   children: [
                     _Card(
                       children: [
-                        _Row(
-                          label: 'Display name',
-                          value: displayName.isEmpty ? '—' : displayName,
-                          hint: 'What the app calls you. Not unique.',
-                        ),
+                        // Editable, unlike the two below it: a display
+                        // name is not unique and nothing depends on it
+                        // staying put. A guest has no user document to
+                        // write to, so they get the plain row.
+                        if (isGuest)
+                          _Row(
+                            label: 'Display name',
+                            value: displayName.isEmpty ? '—' : displayName,
+                            hint: 'What the app calls you. Not unique.',
+                          )
+                        else
+                          _EditableRow(
+                            label: 'Display name',
+                            value: displayName.isEmpty ? '—' : displayName,
+                            hint: 'What the app calls you. Not unique.',
+                            onTap: () => context.push('/settings/name'),
+                          ),
                         const _Divider(),
                         _Row(
                           label: 'Username',
@@ -75,6 +87,11 @@ class SettingsScreen extends ConsumerWidget {
                           _LinkRow(
                             label: 'Your subjects',
                             onTap: () => context.push('/settings/subjects'),
+                          ),
+                          const _Divider(),
+                          _LinkRow(
+                            label: 'About you',
+                            onTap: () => context.push('/settings/profile'),
                           ),
                         ],
                       ),
@@ -381,6 +398,45 @@ class _Row extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// A [_Row] that leads somewhere. Keeps the value visible — the point of
+/// the identity card is to show what is stored, and hiding it behind a tap
+/// would make the screen worse in order to make it editable.
+class _EditableRow extends StatelessWidget {
+  const _EditableRow({
+    required this.label,
+    required this.value,
+    required this.onTap,
+    this.hint,
+  });
+
+  final String label;
+  final String value;
+  final String? hint;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: onTap,
+        behavior: HitTestBehavior.opaque,
+        child: Row(
+          children: [
+            Expanded(
+              child: _Row(label: label, value: value, hint: hint),
+            ),
+            const Icon(
+              Icons.chevron_right_rounded,
+              color: AppColors.textSecondaryDark,
+            ),
+          ],
+        ),
       ),
     );
   }

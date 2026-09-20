@@ -8,6 +8,8 @@ import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
+import 'package:paragon/features/display_name_settings_screen.dart';
+import 'package:paragon/features/profile_settings_screen.dart';
 import 'package:paragon/features/onboarding/display_name_screen.dart';
 import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
@@ -277,6 +279,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/subjects',
         builder: (context, state) => const SubjectsSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/settings/name',
+        builder: (context, state) => const DisplayNameSettingsScreen(),
+      ),
+      // The optional profile, editable at last. `/onboarding/profile` is
+      // still reachable (guard 3 above lets a finished user sit on the
+      // optional step) but nothing links there; this is the way in.
+      GoRoute(
+        path: '/settings/profile',
+        builder: (context, state) => const ProfileSettingsScreen(),
       ),
 
       // ── Legal ───────────────────────────────────────────────────────
