@@ -11,9 +11,10 @@
 //   node 6_seed_generated.js --all --commit
 //   node 6_seed_generated.js --all --commit --force   (re-seed topics already seeded)
 
-const admin = require('firebase-admin');
 const fs = require('fs');
 const path = require('path');
+const Q = require('./seed_quota');
+const admin = Q.admin;
 
 const DATA = path.join(__dirname, 'data');
 const BATCH = 400;                       // Firestore hard limit is 500 ops
@@ -31,8 +32,7 @@ if (!ALL && !fileArg) {
   process.exit(1);
 }
 
-const key = require('./data/serviceAccountKey.json');
-admin.initializeApp({ credential: admin.credential.cert(key) });
+admin.initializeApp({ credential: Q.loadCredential() });
 const db = admin.firestore();
 
 // Files for subjects that do not exist in Firestore yet are keyed by name, not
@@ -94,16 +94,20 @@ async function inspect(file) {
     throw new Error(`${file}: topic ${topicId} is not under unit ${unitId} / subject ${subjectId}`);
   }
 
-  // single equality filter, then filter in memory - avoids needing a composite index
-  const existing = await db.collection('questions').where('topicId', '==', topicId).get();
-  const alreadyAi = existing.docs.filter((d) => d.data().origin === 'ai_generated').length;
+  // count() bills one read per 1000 index entries rather than one per document.
+  // Fetching whole topics just to count them is what drained the read quota.
+  const liveTotal = await Q.countWhere(db, 'questions', 'topicId', topicId);
+  const storedCountNow = t.questionCount ?? 0;
+  // A topic is seeded in one atomic batch, so "already seeded" is simply
+  // "holds at least as many questions as the file would add".
+  const alreadyAi = liveTotal >= rows.length ? liveTotal : 0;
 
   return {
     file, rows, subjectId, unitId, topicId,
     subjectName: subjSnap.data().name,
     topicName: t.name,
-    storedCount: t.questionCount ?? 0,
-    liveTotal: existing.size,
+    storedCount: storedCountNow,
+    liveTotal,
     alreadyAi,
   };
 }
@@ -140,10 +144,10 @@ async function seed(info) {
   }
   process.stdout.write('\r');
 
-  // recount from the live collection rather than trusting arithmetic
-  const after = await db.collection('questions').where('topicId', '==', topicId).get();
-  await db.collection('topics').doc(topicId).update({ questionCount: after.size });
-  return { written, newTotal: after.size };
+  // recount from live data rather than trusting arithmetic, via count()
+  const after = await Q.countWhere(db, 'questions', 'topicId', topicId);
+  await db.collection('topics').doc(topicId).update({ questionCount: after });
+  return { written, newTotal: after };
 }
 
 (async () => {
@@ -151,12 +155,26 @@ async function seed(info) {
   console.log(`files: ${files.length}\n`);
 
   const plans = [];
+  let inspectBudget = Q.remaining();
+  let notInspected = 0;
   for (const f of files) {
+    // Inspecting costs reads, and there is no point inspecting more topics
+    // than today's write budget could ever seed. The run that blew the quota
+    // did so partly by inspecting all 127 files before writing anything.
+    if (COMMIT && inspectBudget <= 0) { notInspected++; continue; }
     try {
-      plans.push(await inspect(f));
+      const p = await inspect(f);
+      plans.push(p);
+      if (p.alreadyAi === 0) inspectBudget -= p.rows.length + 1;
     } catch (e) {
+      // A quota error will hit every remaining file too, and each one costs a
+      // slow gRPC retry, so stop rather than grinding through all of them.
+      if (Q.isQuota(e)) throw e;
       console.error(`  SKIP  ${f}\n        ${e.message}`);
     }
+  }
+  if (notInspected) {
+    console.log(`  (${notInspected} file(s) not inspected - today's write budget is already committed)\n`);
   }
 
   let totalToWrite = 0, skipped = 0;
@@ -180,13 +198,21 @@ async function seed(info) {
     return;
   }
 
-  let grand = 0;
+  let grand = 0, budget = Q.remaining(), stopped = false, pending = 0;
   for (const p of plans) {
     if (p.alreadyAi > 0 && !FORCE) continue;
+    const cost = p.rows.length + 1;        // questions plus the questionCount update
+    if (cost > budget) { pending++; stopped = true; continue; }
     console.log(`\n-> ${p.subjectName} / ${p.topicName}`);
     const res = await seed(p);
     grand += res.written;
-    console.log(`   wrote ${res.written}, topic.questionCount now ${res.newTotal}`);
+    budget -= cost;
+    Q.spend(cost);
+    console.log(`   wrote ${res.written}, topic.questionCount now ${res.newTotal} (${budget} writes left today)`);
   }
-  console.log(`\nDONE. ${grand} questions written.`);
-})().catch((e) => { console.error(e); process.exit(1); });
+
+  console.log(`\n${grand} questions written. ${Q.summary()}`);
+  console.log(stopped
+    ? `STOPPED on budget with ${pending}+ topic(s) still pending. Re-run after the Pacific midnight reset — it resumes automatically.`
+    : 'DONE — nothing left pending in this run.');
+})().catch((e) => { console.error('\n' + Q.explain(e)); process.exit(1); });

@@ -1,0 +1,82 @@
+# Seeds the generated question corpus into Firestore a day at a time.
+#
+# The project is on Firestore's free Spark plan: 20,000 document writes and
+# 50,000 reads per day. The generated corpus is ~64,500 questions, so it
+# cannot be seeded in one go — an attempt to do so exhausted both quotas and
+# achieved nothing. Instead each run spends a budget (SEED_DAILY_WRITE_CAP,
+# default 17,000, leaving headroom for the app's own writes), stops cleanly,
+# and the next run resumes.
+#
+# Every script here is resumable and idempotent:
+#   7_create_subject.js  find-or-creates the subject, each unit and each topic
+#                        by name, and only seeds topics that have no questions
+#   6_seed_generated.js  skips any topic already holding its full question set
+#
+# A topic's questions are always written in one atomic batch, so a topic is
+# never left half-filled and "already seeded" is an honest test.
+#
+# Ordering is deliberate: the new subjects finish first so Chemistry and
+# Government stop being partly present, then the bulk seed spends whatever
+# budget is left topping up the existing subjects.
+#
+# Runs at 08:30 UTC, which is after the midnight US/Pacific quota reset in
+# both PST and PDT. Expect roughly four to five runs to finish the corpus.
+#
+# Delete this workflow once a run reports nothing pending for all three steps.
+#
+# Requires one repository secret:
+#   FIREBASE_SERVICE_ACCOUNT — full service account JSON, as text
+name: seed-content
+
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install
+        working-directory: project/tools/scraper
+        run: npm install --no-audit --no-fund
+
+      # Each step exits non-zero when the quota is dry, which is an expected
+      # outcome rather than a failure, so none of them should fail the job.
+      - name: Chemistry
+        working-directory: project/tools/scraper
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node 7_create_subject.js --subject=chemistry --commit
+
+      - name: Government
+        working-directory: project/tools/scraper
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node 7_create_subject.js --subject=government --commit
+
+      - name: Existing subjects
+        working-directory: project/tools/scraper
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node 6_seed_generated.js --all --commit
+
+      # The budget tracker must survive between runs or a second run on the
+      # same day would spend the allowance twice. It's data, not code.
+      - name: Commit budget state
+        working-directory: project/tools/scraper
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/_seed_budget.json
+          git diff --cached --quiet || git commit -m "chore(scraper): seeding budget state [skip ci]"
+          git push || echo "nothing to push"

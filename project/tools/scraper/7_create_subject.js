@@ -1,19 +1,25 @@
-// Creates a brand-new subject tree (subject -> units -> topics) and seeds its
-// generated questions in one run, so the subject never appears empty in the app.
+// Creates a new subject tree (subject -> units -> topics) and seeds its
+// generated questions, resumably and within the daily Spark write budget.
 //
-// Unlike 3_seed.js this is driven by the gen/ modules, whose unit and topic
-// names come from lib/core/content/subject_catalog.dart - so the Firestore tree
-// matches the outline the app's course page already renders. It refuses to run
-// if a subject of the same name already exists.
+// Unit and topic names come from the gen/ modules, which take them from
+// lib/core/content/subject_catalog.dart, so Firestore matches the outline the
+// app's course page already renders.
+//
+// Everything is find-or-create and keyed by name, so this can be run over and
+// over: it completes a half-built tree rather than refusing to touch it, and
+// only seeds questions into topics that have none yet. A topic's questions are
+// always written in a single atomic batch, so a topic is never left partly
+// filled.
 //
 // Dry run by default. Pass --commit to write.
 //
 //   node 7_create_subject.js --subject=chemistry
 //   node 7_create_subject.js --subject=chemistry --commit
 
-const admin = require('firebase-admin');
 const fs = require('fs');
 const path = require('path');
+const Q = require('./seed_quota');
+const admin = Q.admin;
 
 const DATA = path.join(__dirname, 'data');
 const BATCH = 400;
@@ -34,36 +40,31 @@ const key = subjArg.split('=')[1];
 const cfg = SUBJECTS[key];
 if (!cfg) { console.error(`unknown subject: ${key}`); process.exit(1); }
 
-const sa = require('./data/serviceAccountKey.json');
-admin.initializeApp({ credential: admin.credential.cert(sa) });
+admin.initializeApp({ credential: Q.loadCredential() });
 const db = admin.firestore();
 
-// must match lib.slugify so generated filenames resolve
 const slugify = (s) => s.toLowerCase()
   .replace(/['’]/g, '')
   .replace(/[^a-z0-9]+/g, '-')
   .replace(/^-+|-+$/g, '');
 
-// Build the ordered unit/topic tree from the generator modules, which are
-// declared in catalog order.
 function buildTree() {
-  const units = [];      // [{ name, topics: [{ name, file, rows }] }]
+  const units = [];
   const byUnit = new Map();
   for (const m of cfg.modules) {
-    const topics = require(path.join(__dirname, 'gen', `${m}.js`));
-    for (const t of topics) {
+    for (const t of require(path.join(__dirname, 'gen', `${m}.js`))) {
       if (!byUnit.has(t.unitName)) {
         const u = { name: t.unitName, topics: [] };
         byUnit.set(t.unitName, u);
         units.push(u);
       }
       const file = path.join(DATA, `generated_${cfg.slug}_${slugify(t.topicName)}.json`);
-      if (!fs.existsSync(file)) throw new Error(`missing generated file for "${t.topicName}": ${path.basename(file)}`);
+      if (!fs.existsSync(file)) throw new Error(`missing generated file for "${t.topicName}"`);
       const rows = JSON.parse(fs.readFileSync(file, 'utf8'));
       if (!Array.isArray(rows) || rows.length === 0) throw new Error(`empty: ${path.basename(file)}`);
       for (const r of rows) {
-        if (r.topicName !== t.topicName || r.unitName !== t.unitName) {
-          throw new Error(`${path.basename(file)}: name mismatch (${r.unitName} / ${r.topicName})`);
+        if (r.unitName !== t.unitName || r.topicName !== t.topicName) {
+          throw new Error(`${path.basename(file)}: name mismatch`);
         }
         if (r.hasAnswer !== true) throw new Error(`${path.basename(file)}: hasAnswer must be true`);
         if (!Array.isArray(r.options) || r.options.length !== 4) throw new Error(`${path.basename(file)}: bad options`);
@@ -71,88 +72,129 @@ function buildTree() {
           throw new Error(`${path.basename(file)}: bad correctIndex`);
         }
       }
-      byUnit.get(t.unitName).topics.push({ name: t.topicName, file, rows });
+      byUnit.get(t.unitName).topics.push({ name: t.topicName, rows });
     }
   }
   return units;
 }
 
 (async () => {
-  console.log(COMMIT ? `=== COMMIT MODE - creating ${cfg.name} in Firestore ===` : `=== DRY RUN for ${cfg.name} - no writes (pass --commit) ===`);
-
-  const existing = await db.collection('subjects').where('name', '==', cfg.name).get();
-  if (!existing.empty) {
-    console.error(`\n${cfg.name} already exists in Firestore (id=${existing.docs[0].id}).`);
-    console.error('Refusing to create a duplicate subject. Use 6_seed_generated.js to add questions to it.');
-    process.exit(1);
-  }
+  console.log(COMMIT ? `=== ${cfg.name}: COMMIT ===` : `=== ${cfg.name}: DRY RUN (pass --commit) ===`);
+  console.log(Q.summary());
 
   const units = buildTree();
-  const topicCount = units.reduce((a, u) => a + u.topics.length, 0);
-  const qCount = units.reduce((a, u) => a + u.topics.reduce((b, t) => b + t.rows.length, 0), 0);
+  const topicTotal = units.reduce((a, u) => a + u.topics.length, 0);
+  const qTotal = units.reduce((a, u) => a + u.topics.reduce((b, t) => b + t.rows.length, 0), 0);
+  console.log(`outline: ${units.length} units, ${topicTotal} topics, ${qTotal} questions\n`);
 
-  console.log(`\n${cfg.name}: ${units.length} units, ${topicCount} topics, ${qCount} questions`);
-  units.forEach((u, i) => {
-    console.log(`  ${String(i).padStart(2)}. ${u.name}  (${u.topics.length} topics, ${u.topics.reduce((a, t) => a + t.rows.length, 0)} questions)`);
-  });
-
-  if (!COMMIT) {
-    console.log('\nDry run only. Re-run with --commit to create.');
+  let budget = Q.remaining();
+  if (COMMIT && budget <= 0) {
+    console.log('Daily write budget already spent. Nothing to do - try again after the Pacific midnight reset.');
     return;
   }
 
-  // 1. subject
-  const subjectRef = db.collection('subjects').doc();
-  await subjectRef.set({ name: cfg.name, unitCount: units.length });
-  console.log(`\ncreated subject ${cfg.name} (${subjectRef.id})`);
+  // ---- subject (find or create) ----
+  const existing = await db.collection('subjects').where('name', '==', cfg.name).limit(1).get();
+  let subjectId;
+  let created = { subject: 0, units: 0, topics: 0, questions: 0 };
 
-  // 2. units and topics
-  let written = 0;
-  for (let ui = 0; ui < units.length; ui++) {
+  if (!existing.empty) {
+    subjectId = existing.docs[0].id;
+    console.log(`subject exists: ${cfg.name} (${subjectId}) - resuming`);
+  } else if (!COMMIT) {
+    subjectId = '<new>';
+    console.log(`would create subject ${cfg.name}`);
+  } else {
+    const ref = db.collection('subjects').doc();
+    await ref.set({ name: cfg.name, unitCount: units.length });
+    subjectId = ref.id;
+    created.subject = 1; budget -= 1; Q.spend(1);
+    console.log(`created subject ${cfg.name} (${subjectId})`);
+  }
+
+  // existing units/topics for this subject, read once
+  const unitSnap = subjectId === '<new>' ? { docs: [] }
+    : await db.collection('units').where('subjectId', '==', subjectId).get();
+  const unitByName = new Map(unitSnap.docs.map((d) => [d.data().name, d.id]));
+  const topicSnap = subjectId === '<new>' ? { docs: [] }
+    : await db.collection('topics').where('subjectId', '==', subjectId).get();
+  const topicByKey = new Map(topicSnap.docs.map((d) => [`${d.data().unitId}::${d.data().name}`, { id: d.id, count: d.data().questionCount ?? 0 }]));
+
+  let stopped = false;
+  let pendingTopics = 0;
+
+  for (let ui = 0; ui < units.length && !stopped; ui++) {
     const u = units[ui];
-    const unitRef = db.collection('units').doc();
-    await unitRef.set({ subjectId: subjectRef.id, name: u.name, order: ui });
-
-    for (let ti = 0; ti < u.topics.length; ti++) {
-      const t = u.topics[ti];
-      const topicRef = db.collection('topics').doc();
-      await topicRef.set({
-        subjectId: subjectRef.id,
-        unitId: unitRef.id,
-        name: t.name,
-        order: ti,
-        questionCount: t.rows.length,
-      });
-
-      // 3. questions - auto-ids, required by the drill provider's random
-      // document-id rotation cursor
-      for (let i = 0; i < t.rows.length; i += BATCH) {
-        const chunk = t.rows.slice(i, i + BATCH);
-        const batch = db.batch();
-        for (const r of chunk) {
-          batch.set(db.collection('questions').doc(), {
-            text: r.text,
-            options: r.options,
-            correctIndex: r.correctIndex,
-            explanation: r.explanation,
-            subjectId: subjectRef.id,
-            unitId: unitRef.id,
-            topicId: topicRef.id,
-            source: r.source,
-            origin: r.origin,
-            hasAnswer: r.hasAnswer,
-            year: r.year ?? null,
-            createdAt: admin.firestore.FieldValue.serverTimestamp(),
-          });
-        }
-        await batch.commit();
-        written += chunk.length;
+    let unitId = unitByName.get(u.name);
+    if (!unitId) {
+      if (!COMMIT) { unitId = `<unit ${ui}>`; }
+      else {
+        const ref = db.collection('units').doc();
+        await ref.set({ subjectId, name: u.name, order: ui });
+        unitId = ref.id; created.units++; budget -= 1; Q.spend(1);
       }
-      process.stdout.write(`\r  ${u.name} / ${t.name}  (${written}/${qCount})`.padEnd(100));
+    }
+
+    for (let ti = 0; ti < u.topics.length && !stopped; ti++) {
+      const t = u.topics[ti];
+      const existingTopic = topicByKey.get(`${unitId}::${t.name}`);
+
+      // already seeded? count() bills 1 read per 1000 docs, not 1 per doc
+      if (existingTopic) {
+        const n = await Q.countWhere(db, 'questions', 'topicId', existingTopic.id);
+        if (n >= t.rows.length) continue;         // done already
+      }
+
+      pendingTopics++;
+      const cost = (existingTopic ? 0 : 1) + t.rows.length + 1; // topic doc + questions + count update
+      if (!COMMIT) continue;
+
+      if (cost > budget) {
+        console.log(`\nbudget reached before "${u.name} / ${t.name}" (needs ${cost}, ${budget} left).`);
+        stopped = true;
+        break;
+      }
+
+      let topicId = existingTopic && existingTopic.id;
+      if (!topicId) {
+        const ref = db.collection('topics').doc();
+        await ref.set({ subjectId, unitId, name: t.name, order: ti, questionCount: 0 });
+        topicId = ref.id; created.topics++; budget -= 1; Q.spend(1);
+      }
+
+      // one atomic batch per topic - a topic is never partly filled
+      const batch = db.batch();
+      for (const r of t.rows) {
+        batch.set(db.collection('questions').doc(), {
+          text: r.text, options: r.options, correctIndex: r.correctIndex,
+          explanation: r.explanation,
+          subjectId, unitId, topicId,
+          source: r.source, origin: r.origin, hasAnswer: r.hasAnswer,
+          year: r.year ?? null,
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+      }
+      await batch.commit();
+      await db.collection('topics').doc(topicId).update({ questionCount: t.rows.length });
+      created.questions += t.rows.length;
+      budget -= t.rows.length + 1; Q.spend(t.rows.length + 1);
+      process.stdout.write(`\r  seeded ${created.questions} questions (${budget} writes left)`.padEnd(70));
     }
   }
-  process.stdout.write('\r'.padEnd(100) + '\r');
+  process.stdout.write('\r'.padEnd(70) + '\r');
 
-  console.log(`\nDONE. ${cfg.name}: ${units.length} units, ${topicCount} topics, ${written} questions.`);
-  console.log(`subjectId = ${subjectRef.id}`);
-})().catch((e) => { console.error('\n' + e.message); process.exit(1); });
+  if (!COMMIT) {
+    console.log(`${pendingTopics} topic(s) still need seeding. Re-run with --commit.`);
+    return;
+  }
+
+  // keep unitCount honest even on a partial run
+  await db.collection('subjects').doc(subjectId).update({ unitCount: units.length });
+  Q.spend(1);
+
+  console.log(`created: ${created.subject} subject, ${created.units} units, ${created.topics} topics, ${created.questions} questions`);
+  console.log(Q.summary());
+  console.log(stopped
+    ? `\nSTOPPED on budget. Re-run tomorrow to continue - it resumes where it left off.`
+    : `\n${cfg.name} is fully seeded.`);
+})().catch((e) => { console.error('\n' + (e.message || e)); process.exit(1); });
