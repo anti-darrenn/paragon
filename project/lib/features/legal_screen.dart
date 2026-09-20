@@ -17,14 +17,16 @@ class LegalScreen extends StatelessWidget {
 
   final LegalDocument document;
 
-  bool get _hasPlaceholders =>
-      document.sections.any(
-        (s) => [...s.paragraphs, ...s.bullets].any(
-          (t) =>
-              t.contains(publisherPlaceholder) ||
-              t.contains(contactPlaceholder),
-        ),
-      );
+  /// Asks whether any placeholder is still unfilled, rather than
+  /// searching the rendered text for particular values.
+  ///
+  /// The old version scanned for `publisherPlaceholder` and
+  /// `contactPlaceholder` by value, which worked only while those values
+  /// were literal placeholder strings. Filling them in turned the check
+  /// inside out: every paragraph mentioning the publisher's real name
+  /// matched, and the warning would have shown permanently on a document
+  /// with nothing left to fill.
+  bool get _hasPlaceholders => legalPlaceholdersRemain;
 
   @override
   Widget build(BuildContext context) {

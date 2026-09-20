@@ -4,9 +4,14 @@
 /// no Markdown renderer in the app (adding one would mean a new pinned
 /// dependency), and a single source cannot drift from a second copy.
 ///
-/// **Before publishing**, two things must be filled in — see
-/// [publisherPlaceholder] and [contactPlaceholder]. They render visibly in
-/// the app precisely so they cannot ship unnoticed.
+/// **The publisher and contact details are interim.** They are real and
+/// monitored, which is what matters — a policy that names no one to write
+/// to is worse than one naming a personal address. But [contactEmail] is a
+/// personal inbox standing in until a domain address exists; swap it the
+/// day that does. [legalPlaceholdersRemain] is what guards the general
+/// case: any value still carrying the "to be confirmed" marker makes the
+/// app render a visible warning above the document, so a placeholder
+/// cannot ship unnoticed.
 ///
 /// **This is a draft, not legal advice.** It describes the system
 /// accurately — the data inventory below was read out of the code, not
@@ -22,9 +27,33 @@
 /// change, not a follow-up.
 library;
 
-/// Fill these in before publishing.
-const String publisherPlaceholder = '[PUBLISHER NAME — to be confirmed]';
-const String contactPlaceholder = '[CONTACT EMAIL — to be confirmed]';
+/// Marks a value that has not been decided yet. [legalPlaceholdersRemain]
+/// looks for this, rather than for any particular constant, so a
+/// placeholder added later is caught without anyone remembering to extend
+/// the check.
+const String unconfirmedMarker = 'to be confirmed';
+
+/// Who operates Paragon. No company exists yet, so this names the people
+/// actually responsible — which is the thing a privacy policy is for.
+const String publisher = 'Darren Ohiomoba and the Paragon Team';
+
+/// Where data requests go. Interim: a personal inbox until Paragon has a
+/// domain. It is the only route a student or parent is offered for access
+/// and deletion, so it has to be an address that is genuinely read.
+const String contactEmail = 'darrenn.cp@gmail.com';
+
+/// Copied on the same requests, so nothing is lost if the primary inbox is
+/// missed. Named in the contact sections rather than repeated inline
+/// everywhere — one address to write to, one that also sees it.
+const String contactEmailCc = 'darren.ohiomoba.adm@gmail.com';
+
+/// True while any placeholder is still unfilled anywhere in either
+/// document. The legal screen renders a warning when it is.
+bool get legalPlaceholdersRemain => [
+  publisher,
+  contactEmail,
+  contactEmailCc,
+].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
 const String legalLastUpdated = '20 September 2026';
@@ -65,9 +94,9 @@ const LegalDocument privacyPolicy = LegalDocument(
     LegalSection(
       heading: 'Who we are',
       paragraphs: [
-        'Paragon is a WAEC practice app operated by $publisherPlaceholder. '
+        'Paragon is a WAEC practice app operated by $publisher. '
             'If you have a question about your data, or want to see, correct '
-            'or delete it, contact us at $contactPlaceholder.',
+            'or delete it, contact us at $contactEmail.',
       ],
     ),
     LegalSection(
@@ -169,7 +198,7 @@ const LegalDocument privacyPolicy = LegalDocument(
       heading: 'Your rights',
       paragraphs: [
         'You can ask us to show you the data we hold about you, correct it, '
-            'delete it, or send you a copy. Email $contactPlaceholder and we '
+            'delete it, or send you a copy. Email $contactEmail and we '
             'will respond.',
         'You can delete your account yourself from Settings. Deleting it '
             'removes your account record and your practice history. You can '
@@ -190,7 +219,7 @@ const LegalDocument privacyPolicy = LegalDocument(
         'If you are under 16, please ask a parent, guardian or teacher '
             'before filling in the optional profile details. If you are a '
             'parent or guardian and want to see or delete what we hold about '
-            'your child, email $contactPlaceholder.',
+            'your child, email $contactEmail.',
       ],
     ),
     LegalSection(
@@ -213,7 +242,10 @@ const LegalDocument privacyPolicy = LegalDocument(
     ),
     LegalSection(
       heading: 'Contact',
-      paragraphs: ['Questions, requests or complaints: $contactPlaceholder.'],
+      paragraphs: [
+        'Questions, requests or complaints: $contactEmail, copying '
+            '$contactEmailCc.',
+      ],
     ),
   ],
 );
@@ -229,8 +261,8 @@ const LegalDocument termsOfService = LegalDocument(
     LegalSection(
       heading: 'Who we are',
       paragraphs: [
-        'Paragon is operated by $publisherPlaceholder. You can reach us at '
-            '$contactPlaceholder.',
+        'Paragon is operated by $publisher. You can reach us at '
+            '$contactEmail.',
       ],
     ),
     LegalSection(
@@ -302,7 +334,7 @@ const LegalDocument termsOfService = LegalDocument(
       heading: 'Ending your account',
       paragraphs: [
         'You can stop using Paragon at any time, and you can ask us to '
-            'delete your account by emailing $contactPlaceholder. We may '
+            'delete your account by emailing $contactEmail. We may '
             'suspend or close an account that breaks these terms.',
       ],
     ),
@@ -335,7 +367,10 @@ const LegalDocument termsOfService = LegalDocument(
     ),
     LegalSection(
       heading: 'Contact',
-      paragraphs: ['Questions about these terms: $contactPlaceholder.'],
+      paragraphs: [
+        'Questions about these terms: $contactEmail, copying '
+            '$contactEmailCc.',
+      ],
     ),
   ],
 );
