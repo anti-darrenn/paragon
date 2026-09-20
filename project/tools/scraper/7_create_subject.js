@@ -88,8 +88,16 @@ function buildTree() {
   console.log(`outline: ${units.length} units, ${topicTotal} topics, ${qTotal} questions\n`);
 
   let budget = Q.remaining();
-  if (COMMIT && budget <= 0) {
-    console.log('Daily write budget already spent. Nothing to do - try again after the Pacific midnight reset.');
+
+  // A subject or unit document with nothing under it is visible in the app as
+  // an empty shell, so never create one unless the budget covers at least one
+  // complete topic beneath it: subject + unit + topic doc + questions + count.
+  const firstTopicRows = units[0].topics[0].rows.length;
+  const minViable = 1 + 1 + 1 + firstTopicRows + 1;
+  if (COMMIT && budget < minViable) {
+    console.log(`Budget ${budget} cannot cover a first full topic (needs ${minViable}).`);
+    console.log('Stopping before creating anything - an empty subject would show in the app.');
+    console.log(Q.summary());
     return;
   }
 
@@ -125,15 +133,17 @@ function buildTree() {
 
   for (let ui = 0; ui < units.length && !stopped; ui++) {
     const u = units[ui];
+    // Resolved here, but created lazily below - only once a topic is actually
+    // going to be written under it, so a unit is never left childless.
     let unitId = unitByName.get(u.name);
-    if (!unitId) {
-      if (!COMMIT) { unitId = `<unit ${ui}>`; }
-      else {
-        const ref = db.collection('units').doc();
-        await ref.set({ subjectId, name: u.name, order: ui });
-        unitId = ref.id; created.units++; budget -= 1; Q.spend(1);
-      }
-    }
+    const ensureUnit = async () => {
+      if (unitId) return unitId;
+      if (!COMMIT) { unitId = `<unit ${ui}>`; return unitId; }
+      const ref = db.collection('units').doc();
+      await ref.set({ subjectId, name: u.name, order: ui });
+      unitId = ref.id; created.units++; budget -= 1; Q.spend(1);
+      return unitId;
+    };
 
     for (let ti = 0; ti < u.topics.length && !stopped; ti++) {
       const t = u.topics[ti];
@@ -146,7 +156,8 @@ function buildTree() {
       }
 
       pendingTopics++;
-      const cost = (existingTopic ? 0 : 1) + t.rows.length + 1; // topic doc + questions + count update
+      // unit doc (if it does not exist yet) + topic doc + questions + count update
+      const cost = (unitId ? 0 : 1) + (existingTopic ? 0 : 1) + t.rows.length + 1;
       if (!COMMIT) continue;
 
       if (cost > budget) {
@@ -154,6 +165,9 @@ function buildTree() {
         stopped = true;
         break;
       }
+
+      // only now is the unit guaranteed to get a child
+      await ensureUnit();
 
       let topicId = existingTopic && existingTopic.id;
       if (!topicId) {
