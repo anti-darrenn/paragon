@@ -36,6 +36,11 @@ on:
 jobs:
   seed:
     runs-on: ubuntu-latest
+    # Needed to push the budget state back. Without it GITHUB_TOKEN is
+    # read-only on repositories created since 2023 and the push silently
+    # fails, so every run would believe it had a full day's allowance.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -77,6 +82,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # The file only exists once a seeder has actually spent budget; if
+          # every step failed (no credentials, quota dry) there is nothing to
+          # commit and `git add` on a missing path would fail the step.
+          test -f data/_seed_budget.json || { echo "no budget state written this run"; exit 0; }
           git add data/_seed_budget.json
-          git diff --cached --quiet || git commit -m "chore(scraper): seeding budget state [skip ci]"
-          git push || echo "nothing to push"
+          git diff --cached --quiet && { echo "budget state unchanged"; exit 0; }
+          git commit -m "chore(scraper): seeding budget state [skip ci]"
+          git push
