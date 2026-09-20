@@ -145,12 +145,30 @@ regardless of which future session it happened to get filed under.
   which recomputes `currentStreak` from `attempts.timestamp` (a real
   server timestamp) on a schedule. The rules are the real-time backstop;
   that job is the source of truth.
-- **Verification gap:** this was reasoned through by hand and validated
-  with `firebase deploy --only firestore:rules --dry-run` (compiles
-  correctly against the live project), but never exercised dynamically —
-  the Firestore emulator needs Java, which this machine doesn't have. Test
-  against the emulator, or in a throwaway project, before trusting this
-  under load.
+- **Verification gap — closed (2026-09-20).** This was reasoned through by
+  hand and validated only with `--dry-run`, never exercised dynamically,
+  because the Firestore emulator needs Java which this machine does not
+  have. `tools/admin/verify_rules.js` now exercises the whole rules file
+  against the live project as a real client — anonymous ID tokens, the
+  Firestore REST API, and no Admin SDK in any assertion (it bypasses rules,
+  so a test using it would pass however wrong they were). 49 checks, all
+  passing, covering: provisioning (exact field set, forced
+  `serverTimestamp`, streak must start at zero), the client-writable
+  allow-list (`totalXP`, `level`, `topicStats`, `isAdmin` all refused —
+  the guarantee a future leaderboard rests on), username reservation and
+  permanence, streak integrity including the same-day replay hole and
+  backdating, attempts and flags being create-and-read-own with no edits,
+  `progress/{uid}`, and content collections being unwritable.
+- **The harness was itself controlled.** Running a copy with two
+  expectations deliberately inverted produced failures in both directions —
+  an accepted write reported as "should have been refused", and a refused
+  write reported as a 403 where success was expected. A suite that passes
+  49/49 first time is worth exactly nothing without that check.
+- **Still true:** the streak remains client-computed from the device clock
+  within the ±1-day tolerance the rules must allow, and the reset-to-1
+  branch is legitimately open. The rules are the real-time backstop;
+  `jobs.js --job=streaks` is the source of truth. Both are now verified to
+  behave as documented rather than assumed to.
 - **Still open, deliberately deferred:** `Firestore_Schema_Final.docx`'s
   leaderboard-exclusion and XP-history design still needs Cloud Functions
   (or the `tools/admin` cron equivalent) to actually compute those fields

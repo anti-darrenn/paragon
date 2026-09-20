@@ -1,6 +1,5 @@
 /**
- * Exercises the live `progress/{uid}` security rules as a real client
- * sees them.
+ * Exercises the live Firestore security rules as a real client sees them.
  *
  *   node verify_rules.js
  *
@@ -8,49 +7,101 @@
  *
  * `firestore.rules` had never been tested dynamically. The usual answer
  * is the Firestore emulator, which needs Java, which this machine does
- * not have — so the rules were shipped on a `--dry-run` compile and
- * careful reading, and `docs/audit/NEXT.md` has carried that as a stated
- * verification gap.
+ * not have — so the rules shipped on a `--dry-run` compile and careful
+ * reading, and `docs/audit/NEXT.md` carried that as a stated verification
+ * gap on the `users/{uid}` lockdown in particular.
  *
- * This closes it for one collection without needing Java. It signs in
- * anonymously through the Identity Toolkit REST API and writes through
- * the Firestore REST API, so every request is evaluated by the real
- * deployed rules. It deliberately uses **no Admin SDK**: the Admin SDK
- * bypasses rules entirely, so a test written with it would pass no matter
- * how wrong the rules were.
+ * This closes it without Java. It signs in anonymously through the
+ * Identity Toolkit REST API and reads and writes through the Firestore
+ * REST API, so every request is evaluated by the real deployed rules. It
+ * uses **no Admin SDK for any assertion**: the Admin SDK bypasses rules
+ * entirely, so a test written with it would pass no matter how wrong the
+ * rules were. Admin is used only to tidy up afterwards, and only for the
+ * one thing a client deliberately cannot delete — a username reservation.
  *
  * ── Why the failures matter more than the successes ──────────────────
  *
  * A write that succeeds tells you only that something allowed it. The
- * rule is doing its job only if a write that ought to be refused actually
- * is, so the unlisted-field and other-user cases are the real content
- * here. Delete them and this file stops meaning anything.
+ * rules are doing their job only if the writes that ought to be refused
+ * actually are, so the `DENY` cases are the content here. Delete them and
+ * this file stops meaning anything.
  *
- * Runs against production. It writes one document and creates one
- * anonymous account, then removes both. The API key is the public web
- * key already shipped in `firebase_options.dart` and the web bundle;
- * it identifies the project and grants nothing on its own.
+ * The single most important one is the `users/{uid}` allow-list: a future
+ * `totalXP`, `level` or `topicStats` must be server-only from the moment
+ * it exists, without anyone remembering to lock it first. That is the
+ * guarantee a leaderboard will eventually rest on.
+ *
+ * ── What it costs ────────────────────────────────────────────────────
+ *
+ * Runs against production. It creates two throwaway anonymous accounts
+ * and their documents, then removes them. Reads and writes are a few
+ * dozen — negligible against the Spark daily quota, but not zero.
+ *
+ * The API key is the public web key already shipped in
+ * `firebase_options.dart` and in the deployed web bundle; it identifies
+ * the project and grants nothing on its own.
  */
 
 const API_KEY = 'AIzaSyDgPksUP3MZ9gX-baZSyXiMIg07wWwjGOA';
 const PROJECT = 'paragon-hq';
-// The commit endpoint wants a resource path; the REST URLs want it
-// prefixed. Conflating the two is what the first run of this got wrong.
+// The commit endpoint wants a bare resource path; the REST URLs want it
+// prefixed. Conflating the two is what the first version of this got wrong.
 const RESOURCE = `projects/${PROJECT}/databases/(default)/documents`;
 const DOCS = `https://firestore.googleapis.com/v1/${RESOURCE}`;
 
-let pass = 0;
-let fail = 0;
+const ALLOW = 'allow';
+const DENY = 'deny';
 
-function check(label, ok, detail) {
+// ─── Harness ──────────────────────────────────────────────────────────
+
+let passed = 0;
+const failures = [];
+let currentSuite = '';
+
+function record(label, ok, detail) {
   if (ok) {
-    pass++;
-    console.log(`  PASS  ${label}`);
+    passed++;
+    console.log(`    ok    ${label}`);
   } else {
-    fail++;
-    console.log(`  FAIL  ${label}${detail ? ` — ${detail}` : ''}`);
+    failures.push(`${currentSuite} — ${label}${detail ? ` (${detail})` : ''}`);
+    console.log(`    FAIL  ${label}${detail ? ` — ${detail}` : ''}`);
   }
 }
+
+function suite(name) {
+  currentSuite = name;
+  console.log(`\n  ${name}`);
+}
+
+/**
+ * Asserts an HTTP result against an intent.
+ *
+ * Anything other than 200 or 403 is reported as its own failure rather
+ * than quietly counting as a denial — a 400 from a malformed request
+ * would otherwise look exactly like a rule doing its job, which is how
+ * the first run of this file produced two meaningless passes.
+ */
+function expectOutcome(label, intent, result) {
+  const { status } = result;
+  if (intent === ALLOW) {
+    record(label, status === 200, `HTTP ${status} ${brief(result)}`);
+    return;
+  }
+  if (status === 403) {
+    record(label, true);
+  } else if (status === 200) {
+    record(label, false, 'the write was ACCEPTED but should have been refused');
+  } else {
+    record(label, false, `HTTP ${status} — not a rules denial: ${brief(result)}`);
+  }
+}
+
+function brief(result) {
+  const message = result.body?.error?.message;
+  return message ? String(message).slice(0, 120) : '';
+}
+
+// ─── REST ─────────────────────────────────────────────────────────────
 
 async function signInAnonymously() {
   const res = await fetch(
@@ -66,132 +117,631 @@ async function signInAnonymously() {
   return { idToken: body.idToken, uid: body.localId };
 }
 
-// One commit, shaped like what `ProgressRepository.addSession` sends:
-// merge semantics (updateMask) plus a serverTimestamp transform.
-async function commitProgress(idToken, docUid, { extraField = false } = {}) {
-  const fields = {
-    userId: { stringValue: docUid },
-    topics: {
-      mapValue: {
-        fields: {
-          topicVerify: {
-            mapValue: {
-              fields: {
-                answered: { integerValue: '5' },
-                correct: { integerValue: '4' },
-                subjectId: { stringValue: 'subjectVerify' },
-              },
-            },
-          },
-        },
-      },
+async function deleteAccount(idToken) {
+  await fetch(
+    `https://identitytoolkit.googleapis.com/v1/accounts:delete?key=${API_KEY}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ idToken }),
     },
-  };
-  const mask = ['userId', 'topics'];
+  );
+}
 
-  if (extraField) {
-    fields.totalXP = { integerValue: '9999' };
-    mask.push('totalXP');
-  }
-
+async function commit(idToken, write) {
   const res = await fetch(`${DOCS}:commit`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${idToken}`,
     },
-    body: JSON.stringify({
-      writes: [
-        {
-          update: { name: `${RESOURCE}/progress/${docUid}`, fields },
-          updateMask: { fieldPaths: mask },
-          updateTransforms: [
-            { fieldPath: 'updatedAt', setToServerValue: 'REQUEST_TIME' },
-          ],
-        },
-      ],
-    }),
+    body: JSON.stringify({ writes: [write] }),
   });
   return { status: res.status, body: await res.json() };
 }
 
-(async () => {
-  console.log(`Verifying progress/{uid} rules on ${PROJECT} as a real client\n`);
-
-  const me = await signInAnonymously();
-  console.log(`anonymous uid: ${me.uid}\n`);
-
-  // 1. The write the app actually makes.
-  const valid = await commitProgress(me.idToken, me.uid);
-  check(
-    'a drill session write is accepted',
-    valid.status === 200,
-    `HTTP ${valid.status} ${JSON.stringify(valid.body).slice(0, 200)}`,
-  );
-
-  // 2. Control: a field outside the closed set must be refused. This is
-  //    the rule that stops `progress` becoming a place a client can park
-  //    whatever it likes — a stray `totalXP` among them.
-  const extra = await commitProgress(me.idToken, me.uid, { extraField: true });
-  check(
-    'a write carrying an unlisted field is refused',
-    extra.status === 403,
-    `HTTP ${extra.status} (expected 403)`,
-  );
-
-  // 3. Control: another student's document is not writable.
-  const other = await commitProgress(me.idToken, 'someone-elses-uid');
-  check(
-    "another student's progress is not writable",
-    other.status === 403,
-    `HTTP ${other.status} (expected 403)`,
-  );
-
-  // 4. Own document reads back, with the server timestamp the rule pinned.
-  const read = await fetch(`${DOCS}/progress/${me.uid}`, {
-    headers: { Authorization: `Bearer ${me.idToken}` },
+async function readDoc(idToken, path) {
+  const res = await fetch(`${DOCS}/${path}`, {
+    headers: { Authorization: `Bearer ${idToken}` },
   });
-  const doc = await read.json();
-  check('own progress reads back', read.status === 200, `HTTP ${read.status}`);
-  check(
-    'updatedAt was written as a real server timestamp',
-    Boolean(doc.fields?.updatedAt?.timestampValue),
-    JSON.stringify(doc.fields?.updatedAt),
-  );
-  const answered =
-    doc.fields?.topics?.mapValue?.fields?.topicVerify?.mapValue?.fields
-      ?.answered?.integerValue;
-  check('the session counters round-trip', answered === '5', `got ${answered}`);
+  return { status: res.status, body: await res.json() };
+}
 
-  // 5. Control: another student's document is not readable either.
-  const readOther = await fetch(`${DOCS}/progress/someone-elses-uid`, {
-    headers: { Authorization: `Bearer ${me.idToken}` },
-  });
-  check(
-    "another student's progress is not readable",
-    readOther.status === 403,
-    `HTTP ${readOther.status} (expected 403)`,
-  );
-
-  // ── Cleanup ─────────────────────────────────────────────────────────
-  const del = await fetch(`${DOCS}/progress/${me.uid}`, {
+async function deleteDoc(idToken, path) {
+  const res = await fetch(`${DOCS}/${path}`, {
     method: 'DELETE',
-    headers: { Authorization: `Bearer ${me.idToken}` },
+    headers: { Authorization: `Bearer ${idToken}` },
   });
-  check('a student can delete their own progress', del.status === 200);
+  return { status: res.status, body: await res.json() };
+}
 
-  await fetch(
-    `https://identitytoolkit.googleapis.com/v1/accounts:delete?key=${API_KEY}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ idToken: me.idToken }),
-    },
+// ─── Value helpers ────────────────────────────────────────────────────
+
+const str = (v) => ({ stringValue: v });
+const int = (v) => ({ integerValue: String(v) });
+const bool = (v) => ({ booleanValue: v });
+const nul = () => ({ nullValue: null });
+const map = (fields) => ({ mapValue: { fields } });
+const arr = (values) => ({ arrayValue: { values } });
+
+/** A write that sets exactly `fields`, leaving everything else alone. */
+function write(path, fields, { transforms = [], precondition } = {}) {
+  const w = {
+    update: { name: `${RESOURCE}/${path}`, fields },
+    updateMask: { fieldPaths: Object.keys(fields) },
+  };
+  if (transforms.length) w.updateTransforms = transforms;
+  if (precondition) w.currentDocument = precondition;
+  return w;
+}
+
+const serverTime = (fieldPath) => ({
+  fieldPath,
+  setToServerValue: 'REQUEST_TIME',
+});
+
+/** UTC, because `request.time` in the rules is UTC. */
+function dateKey(offsetDays = 0) {
+  const d = new Date(Date.now() + offsetDays * 86400000);
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(
+    d.getUTCDate(),
+  )}`;
+}
+
+function randomKey() {
+  return `zz_v${Math.random().toString(36).slice(2, 10)}`.slice(0, 20);
+}
+
+/** The exact document `UserRepository.createUserIfNew` sends. */
+function provisioningFields(uid) {
+  return {
+    uid: str(uid),
+    email: str(''),
+    displayName: str(''),
+    isAnonymous: bool(true),
+    currentStreak: int(0),
+    lastActiveDate: nul(),
+  };
+}
+
+// ─── Suites ───────────────────────────────────────────────────────────
+
+async function usersCreate(a, b) {
+  suite('users/{uid} — provisioning');
+
+  const created = await commit(
+    a.idToken,
+    write(`users/${a.uid}`, provisioningFields(a.uid), {
+      transforms: [serverTime('createdAt')],
+      precondition: { exists: false },
+    }),
   );
-  console.log('\nthrowaway anonymous account deleted');
+  expectOutcome('the exact provisioning document is accepted', ALLOW, created);
 
-  console.log(`\n${pass} passed, ${fail} failed`);
-  process.exit(fail === 0 ? 0 : 1);
+  // Every negative below targets one clause of the create rule.
+  expectOutcome(
+    'a create carrying an extra field is refused',
+    DENY,
+    await commit(
+      b.idToken,
+      write(
+        `users/${b.uid}`,
+        { ...provisioningFields(b.uid), level: int(99) },
+        { transforms: [serverTime('createdAt')], precondition: { exists: false } },
+      ),
+    ),
+  );
+
+  expectOutcome(
+    'a create claiming a streak above zero is refused',
+    DENY,
+    await commit(
+      b.idToken,
+      write(
+        `users/${b.uid}`,
+        { ...provisioningFields(b.uid), currentStreak: int(7) },
+        { transforms: [serverTime('createdAt')], precondition: { exists: false } },
+      ),
+    ),
+  );
+
+  // createdAt must be the real serverTimestamp sentinel, not a value the
+  // client chose — otherwise account age is whatever a client says.
+  expectOutcome(
+    'a client-supplied createdAt is refused',
+    DENY,
+    await commit(
+      b.idToken,
+      write(
+        `users/${b.uid}`,
+        {
+          ...provisioningFields(b.uid),
+          createdAt: { timestampValue: '2020-01-01T00:00:00Z' },
+        },
+        { precondition: { exists: false } },
+      ),
+    ),
+  );
+
+  expectOutcome(
+    "a create on another student's uid is refused",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`users/${a.uid}`, provisioningFields(a.uid), {
+        transforms: [serverTime('createdAt')],
+      }),
+    ),
+  );
+
+  // b needs a real document for the later suites.
+  await commit(
+    b.idToken,
+    write(`users/${b.uid}`, provisioningFields(b.uid), {
+      transforms: [serverTime('createdAt')],
+      precondition: { exists: false },
+    }),
+  );
+}
+
+async function usersAllowList(a, b) {
+  suite('users/{uid} — the client-writable allow-list');
+
+  expectOutcome(
+    'displayName is writable',
+    ALLOW,
+    await commit(a.idToken, write(`users/${a.uid}`, { displayName: str('Ada') })),
+  );
+
+  expectOutcome(
+    'selectedSubjects is writable',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        selectedSubjects: arr([str('mathematics'), str('physics')]),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    'profile is writable',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        profile: map({ school: str('Kings College'), age: int(16) }),
+      }),
+    ),
+  );
+
+  // The reason the allow-list is an allow-list. These fields do not exist
+  // on any document yet; the point is that they are server-only from the
+  // moment they do, with nothing to remember to lock down first.
+  for (const [field, value] of [
+    ['totalXP', int(100000)],
+    ['level', int(99)],
+    ['topicStats', map({ t1: int(1) })],
+    ['isAdmin', bool(true)],
+  ]) {
+    expectOutcome(
+      `${field} is not client-writable`,
+      DENY,
+      await commit(a.idToken, write(`users/${a.uid}`, { [field]: value })),
+    );
+  }
+
+  expectOutcome(
+    'own document is readable',
+    ALLOW,
+    await readDoc(a.idToken, `users/${a.uid}`),
+  );
+
+  expectOutcome(
+    "another student's document is not readable",
+    DENY,
+    await readDoc(b.idToken, `users/${a.uid}`),
+  );
+
+  expectOutcome(
+    "another student's document is not writable",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`users/${a.uid}`, { displayName: str('hijacked') }),
+    ),
+  );
+}
+
+async function usernames(a, b, key) {
+  suite('usernames/{key} — uniqueness and permanence');
+
+  // Claiming before reserving is the hole the two-phase write exists to
+  // close: the rule reads committed data, so the reservation must already
+  // be there.
+  expectOutcome(
+    'a username with no reservation behind it is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        username: str(key),
+        usernameKey: str(key),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    'a reservation can be created',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`usernames/${key}`, { uid: str(a.uid), raw: str(key) }),
+    ),
+  );
+
+  expectOutcome(
+    'a reservation whose id is not the lower-cased spelling is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`usernames/${key}_x`, { uid: str(a.uid), raw: str('SOMETHINGELSE') }),
+    ),
+  );
+
+  expectOutcome(
+    'the matching claim is now accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        username: str(key),
+        usernameKey: str(key),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    'a username is immutable once set',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        username: str('somethingelse'),
+        usernameKey: str('somethingelse'),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    "another student cannot overwrite the reservation",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`usernames/${key}`, { uid: str(b.uid), raw: str(key) }),
+    ),
+  );
+
+  expectOutcome(
+    "another student cannot claim the reserved handle",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`users/${b.uid}`, {
+        username: str(key),
+        usernameKey: str(key),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    'a reservation cannot be released',
+    DENY,
+    await deleteDoc(a.idToken, `usernames/${key}`),
+  );
+}
+
+async function streaks(a) {
+  suite('users/{uid} — streak integrity');
+
+  const path = `users/${a.uid}`;
+  const streak = (n, date) => ({
+    currentStreak: int(n),
+    lastActiveDate: str(date),
+  });
+
+  expectOutcome(
+    'a streak may start at one, today',
+    ALLOW,
+    await commit(a.idToken, write(path, streak(1, dateKey(0)))),
+  );
+
+  expectOutcome(
+    'a streak cannot jump to an arbitrary number',
+    DENY,
+    await commit(a.idToken, write(path, streak(9, dateKey(0)))),
+  );
+
+  // The replay hole: without the strictly-later-date clause, a client
+  // could call this in a loop on one calendar day and climb the counter
+  // one legal-looking write at a time.
+  expectOutcome(
+    'an increment on the same day is refused',
+    DENY,
+    await commit(a.idToken, write(path, streak(2, dateKey(0)))),
+  );
+
+  expectOutcome(
+    'an increment on a later day is accepted',
+    ALLOW,
+    await commit(a.idToken, write(path, streak(2, dateKey(1)))),
+  );
+
+  expectOutcome(
+    'a backdated streak is refused',
+    DENY,
+    await commit(a.idToken, write(path, streak(3, dateKey(-7)))),
+  );
+
+  expectOutcome(
+    'a streak far in the future is refused',
+    DENY,
+    await commit(a.idToken, write(path, streak(3, dateKey(30)))),
+  );
+
+  // The reset branch. Allowed by design, and the reason the rules are a
+  // backstop rather than the source of truth — see jobs.js --job=streaks.
+  expectOutcome(
+    'a streak may reset to one',
+    ALLOW,
+    await commit(a.idToken, write(path, streak(1, dateKey(0)))),
+  );
+}
+
+async function attemptsAndFlags(a, b) {
+  suite('attempts and flags — own data only');
+
+  const attempt = (uid) => ({
+    userId: str(uid),
+    questionId: str('q-verify'),
+    topicId: str('t-verify'),
+    subjectId: str('s-verify'),
+    selectedIndex: int(1),
+    isCorrect: bool(true),
+    source: str('drill'),
+  });
+
+  const attemptId = `verify_${a.uid.slice(0, 8)}`;
+  expectOutcome(
+    'an attempt can be recorded for yourself',
+    ALLOW,
+    await commit(a.idToken, write(`attempts/${attemptId}`, attempt(a.uid))),
+  );
+
+  expectOutcome(
+    "an attempt cannot be recorded against another student",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`attempts/${attemptId}_b`, attempt(a.uid)),
+    ),
+  );
+
+  // An attempt is a record of what happened and must not be editable
+  // after the fact — otherwise a wrong answer can be rewritten as right.
+  expectOutcome(
+    'an attempt cannot be edited after the fact',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`attempts/${attemptId}`, { isCorrect: bool(false) }),
+    ),
+  );
+
+  expectOutcome(
+    "another student's attempt is not readable",
+    DENY,
+    await readDoc(b.idToken, `attempts/${attemptId}`),
+  );
+
+  const flagId = `verify_${a.uid.slice(0, 8)}`;
+  expectOutcome(
+    'a problem report can be filed',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`flags/${flagId}`, {
+        userId: str(a.uid),
+        questionId: str('q-verify'),
+        reason: str('wrong_answer'),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    'a problem report cannot be edited',
+    DENY,
+    await commit(a.idToken, write(`flags/${flagId}`, { reason: str('other') })),
+  );
+
+  // Cleanup of what this suite created — both are delete-own by rule.
+  await deleteDoc(a.idToken, `attempts/${attemptId}`);
+  await deleteDoc(a.idToken, `flags/${flagId}`);
+}
+
+async function progress(a, b) {
+  suite('progress/{uid} — the mastery cache');
+
+  const fields = (uid) => ({
+    userId: str(uid),
+    topics: map({
+      topicVerify: map({
+        answered: int(5),
+        correct: int(4),
+        subjectId: str('subjectVerify'),
+      }),
+    }),
+  });
+
+  expectOutcome(
+    'a drill session write is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`progress/${a.uid}`, fields(a.uid), {
+        transforms: [serverTime('updatedAt')],
+      }),
+    ),
+  );
+
+  expectOutcome(
+    'a write carrying an unlisted field is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `progress/${a.uid}`,
+        { ...fields(a.uid), totalXP: int(9999) },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
+
+  expectOutcome(
+    'a client-supplied updatedAt is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`progress/${a.uid}`, {
+        ...fields(a.uid),
+        updatedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+
+  expectOutcome(
+    "another student's progress is not writable",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`progress/${a.uid}`, fields(a.uid), {
+        transforms: [serverTime('updatedAt')],
+      }),
+    ),
+  );
+
+  expectOutcome(
+    "another student's progress is not readable",
+    DENY,
+    await readDoc(b.idToken, `progress/${a.uid}`),
+  );
+
+  const own = await readDoc(a.idToken, `progress/${a.uid}`);
+  expectOutcome('own progress reads back', ALLOW, own);
+  record(
+    'updatedAt was written as a real server timestamp',
+    Boolean(own.body?.fields?.updatedAt?.timestampValue),
+    JSON.stringify(own.body?.fields?.updatedAt),
+  );
+  record(
+    'the session counters round-trip',
+    own.body?.fields?.topics?.mapValue?.fields?.topicVerify?.mapValue?.fields
+      ?.answered?.integerValue === '5',
+  );
+}
+
+async function content(a) {
+  suite('content — readable, never writable');
+
+  expectOutcome(
+    'a signed-in student can read subjects',
+    ALLOW,
+    await readDoc(a.idToken, 'subjects'),
+  );
+
+  for (const collection of ['subjects', 'units', 'topics', 'questions']) {
+    expectOutcome(
+      `${collection} cannot be written by a client`,
+      DENY,
+      await commit(
+        a.idToken,
+        write(`${collection}/zz_verify_write`, { name: str('injected') }),
+      ),
+    );
+  }
+}
+
+// ─── Teardown ─────────────────────────────────────────────────────────
+
+/**
+ * Removes what the run created.
+ *
+ * Everything a client is allowed to delete is deleted as that client.
+ * The username reservation is the exception — `allow update, delete: if
+ * false` makes it permanent by design, which is the correct behaviour and
+ * exactly why a test cannot clean up after itself. Admin is used for that
+ * one document and nothing else; if credentials are absent the key is
+ * printed so it can be removed by hand.
+ */
+async function teardown(a, b, usernameKey) {
+  console.log('\n  cleanup');
+
+  for (const user of [a, b]) {
+    await deleteDoc(user.idToken, `progress/${user.uid}`);
+    await deleteDoc(user.idToken, `users/${user.uid}`);
+    await deleteAccount(user.idToken);
+  }
+  console.log('    throwaway accounts and their documents removed');
+
+  try {
+    const admin = require('firebase-admin');
+    const path = require('path');
+    const keyPath = path.join(
+      __dirname,
+      '..',
+      'scraper',
+      'data',
+      'serviceAccountKey.json',
+    );
+    admin.initializeApp({ credential: admin.credential.cert(require(keyPath)) });
+    await admin.firestore().collection('usernames').doc(usernameKey).delete();
+    console.log(`    reservation ${usernameKey} removed (admin)`);
+  } catch (e) {
+    console.log(
+      `    NOTE: reservation "${usernameKey}" could not be removed ` +
+        `(${e.message.slice(0, 60)}). Delete it by hand — reservations are ` +
+        'permanent to clients by design.',
+    );
+  }
+}
+
+// ─── Main ─────────────────────────────────────────────────────────────
+
+(async () => {
+  console.log(`Verifying firestore.rules on ${PROJECT}, as a real client`);
+
+  const a = await signInAnonymously();
+  const b = await signInAnonymously();
+  const usernameKey = randomKey();
+  console.log(`  two throwaway anonymous users; test handle "${usernameKey}"`);
+
+  await usersCreate(a, b);
+  await usersAllowList(a, b);
+  await usernames(a, b, usernameKey);
+  await streaks(a);
+  await attemptsAndFlags(a, b);
+  await progress(a, b);
+  await content(a);
+
+  await teardown(a, b, usernameKey);
+
+  console.log(`\n${passed} passed, ${failures.length} failed`);
+  if (failures.length) {
+    console.log('\nFailures:');
+    for (const f of failures) console.log(`  - ${f}`);
+  }
+  process.exit(failures.length === 0 ? 0 : 1);
 })().catch((e) => {
   console.error(e);
   process.exit(1);

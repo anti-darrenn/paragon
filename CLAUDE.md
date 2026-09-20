@@ -93,6 +93,13 @@ at literally zero — until generated content was seeded into them. **If you rec
 re-check topic counts afterwards and seed the thin ones**, or you will empty a topic a
 student is using.
 
+**After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
+It exercises the whole file against the live project as a real client (anonymous ID
+token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
+49 checks. The denials are the content: a write that succeeds only proves something
+allowed it. The emulator would be the usual answer but needs Java, which this machine
+does not have.
+
 `project/firestore.rules` and `project/firestore.indexes.json` are both tracked in the repo, and `firebase.json`'s `firestore` block points at each — `firebase deploy --only firestore:rules` and `firebase deploy --only firestore:indexes` deploy these files directly, as `.cursorrules` describes.
 
 ## Architecture
