@@ -338,12 +338,19 @@ reporting benefit.
   rather than silently picking one. Revisit if/when an Auth Upsell Sheet is
   built, since a guest could plausibly answer several practice questions
   worth preserving before upgrading.
-- **Guest gating only applied to WAEC.** Dashboard, Drill, and Profile
-  screens have no anonymous-auth-aware restrictions — a guest can currently
-  reach all of them exactly as a real user would (Drill has no source-level
-  guest lock at all; Dashboard/Profile weren't in this session's scope).
-  Not a regression — just genuinely unbuilt, since the session was scoped to
-  "setup screen and exam lockdown only."
+- **Guest gating only applied to WAEC.** ~~Dashboard, Drill, and Profile
+  screens have no anonymous-auth-aware restrictions.~~ **Done (2026-09-20).**
+  `GuestLimits` is now the single statement of the rule and WAEC reads it
+  rather than carrying its own inline copy; the Learning Mode subject grid
+  locks the same subjects and says the same thing. The inconsistency was
+  real and worse than "unbuilt": a guest could not sit a Physics exam and
+  could freely drill Physics.
+  The larger omission turned out not to be the lock but the silence — a
+  guest writes a real streak, real attempts and now real mastery counters
+  to a uid that dies at sign-out, and nothing said so. `GuestNotice` now
+  does, on the dashboard and on the drill summary. Deep links still bypass
+  the subject lock, exactly as they already did for WAEC; unchanged, not
+  newly introduced.
 - **No `sessions/{examId}` collection or results/review/history routes.**
   `/exam/results`, `/exam/review/:examId`, `/exam/history` from the spec
   don't exist. The existing in-memory `_ResultsView` (pre-dates this
