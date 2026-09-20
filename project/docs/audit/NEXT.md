@@ -279,9 +279,18 @@ reporting benefit.
   so re-drilling a topic climbs the levels on repeat questions. Storing seen-question
   ids would be up to 300 per topic across 216 topics on one document. Accuracy
   thresholds are the mitigation.
-- **Deployment gate:** `firestore.rules` gained a `progress/{uid}` block. It compiles
-  (`--dry-run` verified) but **is not deployed** — until `firebase deploy --only
-  firestore:rules` runs, every progress write is denied and every ring stays empty.
+- **Deployed and verified.** `firestore.rules` gained a `progress/{uid}` block,
+  deployed 2026-09-20. `tools/admin/verify_rules.js` then exercised it against
+  production as a real client — anonymous ID token, Firestore REST API, no Admin SDK
+  (which bypasses rules and would have proved nothing). 8 checks pass, and the ones
+  that matter are the refusals: a write carrying an unlisted field is rejected, and
+  another student's document is neither readable nor writable.
+- **This partly closes item #3's verification gap.** The rules had never been
+  exercised dynamically because the emulator needs Java, which this machine does not
+  have. That is still true — but it is no longer a reason for *nothing* to be tested.
+  `users/{uid}` (the streak constraints, the username immutability, the
+  `clientWritableFields` allow-list) is still unexercised and is the harder, more
+  valuable target; extend `verify_rules.js` to cover it the same way.
 
 ## Cheap wins (under 30 minutes each — do these in one sitting)
 
