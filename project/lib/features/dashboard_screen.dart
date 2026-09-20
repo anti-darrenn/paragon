@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/providers/auth_provider.dart';
+import '../core/repositories/course_repository.dart';
+import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 
@@ -113,6 +115,10 @@ class DashboardScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 24),
 
+                // ── Your subjects ──────────────────────────────────────
+                const _YourSubjects(),
+                const SizedBox(height: 28),
+
                 // ── Continue practising ────────────────────────────────
                 _SectionHeader('Continue Practising'),
                 const SizedBox(height: 10),
@@ -131,18 +137,153 @@ class DashboardScreen extends ConsumerWidget {
                   subtitle: 'Timed past-paper practice',
                   onTap: () => context.go('/waec'),
                 ),
-                const SizedBox(height: 28),
-
-                // ── Accuracy by topic (placeholder) ───────────────────
-                _SectionHeader('Accuracy by Topic'),
-                const SizedBox(height: 4),
-                const SizedBox(height: 10),
-                const _AccuracyEmptyState(),
                 const SizedBox(height: 32),
               ],
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+/// The subjects the student chose during onboarding, with what they have
+/// done in each.
+///
+/// This section is the reason the subjects step exists. Until it was
+/// built, `selectedSubjects` had exactly one reader in the whole app — the
+/// catalog grid's sort order — so onboarding asked a question, wrote the
+/// answer down, and never used it for anything the student could see.
+///
+/// **Counts, not percentages, and not rings.** A ring needs to know how
+/// many topics the subject contains, which is not on the subject document;
+/// working it out means loading every unit and every unit's topics, per
+/// subject, on the app's landing page. The course page already pays that
+/// cost for one subject and shows a real ring there. Inventing a
+/// denominator here to get a ring on the dashboard would be a worse answer
+/// than a smaller true one.
+class _YourSubjects extends ConsumerWidget {
+  const _YourSubjects();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final selected = ref.watch(selectedSubjectSlugsProvider);
+    final catalogAsync = ref.watch(courseCatalogProvider);
+    final progress =
+        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+
+    // A guest, or anyone who has not been through onboarding, expressed no
+    // preference. Showing an empty "Your subjects" card to them would be a
+    // prompt to fix something that is not broken.
+    if (selected.isEmpty) return const SizedBox.shrink();
+
+    final courses = catalogAsync.asData?.value ?? const <CourseSummary>[];
+    final mine = courses.where((c) => selected.contains(c.slug)).toList();
+    if (mine.isEmpty) return const SizedBox.shrink();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Expanded(child: _SectionHeader('Your Subjects')),
+            TextButton(
+              onPressed: () => context.push('/settings/subjects'),
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                minimumSize: Size.zero,
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              ),
+              child: Text(
+                'Edit',
+                style: AppTheme.caption.copyWith(color: AppColors.primary),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 10),
+        for (var i = 0; i < mine.length; i++) ...[
+          if (i > 0) const SizedBox(height: 10),
+          _SubjectProgressCard(
+            course: mine[i],
+            progress: progress.forSubject(mine[i].key),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _SubjectProgressCard extends StatelessWidget {
+  const _SubjectProgressCard({required this.course, required this.progress});
+
+  final CourseSummary course;
+  final SubjectProgress progress;
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = AppColors.forSubject(course.name);
+
+    final String detail;
+    if (!course.isLive) {
+      detail = 'Coming soon';
+    } else if (progress.isEmpty) {
+      detail = 'Not started yet';
+    } else {
+      final started = progress.startedTopics;
+      detail =
+          '$started ${started == 1 ? 'topic' : 'topics'} started  ·  '
+          '${progress.completedTopics} proficient';
+    }
+
+    return GestureDetector(
+      onTap: () => context.push('/subject/${course.key}/course'),
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: AppColors.surfaceDark,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: AppColors.borderDark),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 4,
+              height: 36,
+              decoration: BoxDecoration(
+                color: accent,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    course.name,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    detail,
+                    style: TextStyle(
+                      color: progress.isEmpty || !course.isLive
+                          ? Colors.white38
+                          : accent,
+                      fontSize: 12,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded, color: Colors.white38),
+          ],
+        ),
       ),
     );
   }
@@ -286,58 +427,6 @@ class _ActionCard extends StatelessWidget {
             const Icon(Icons.chevron_right_rounded, color: Colors.white38),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _AccuracyEmptyState extends StatelessWidget {
-  const _AccuracyEmptyState();
-
-  // Replaces a chart that listed five hardcoded topic names — "Quadratic
-  // Equations", "Trigonometry" and so on — each showing "No data". They
-  // were invented, not read from Firestore: not the user's topics, not
-  // even necessarily topics that exist. Per-topic accuracy is real work
-  // (it needs topicStats, which nothing writes yet), and until it exists
-  // an honest empty state beats a convincing fake one.
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.borderDark),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(
-                Icons.insights_outlined,
-                size: 18,
-                color: AppColors.textSecondaryDark,
-              ),
-              const SizedBox(width: 10),
-              Text(
-                'Nothing to show yet',
-                style: AppTheme.bodyLg.copyWith(
-                  color: AppColors.textPrimaryDark,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Once you have practised a few topics, your accuracy for each '
-            'one will appear here.',
-            style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
-            ),
-          ),
-        ],
       ),
     );
   }

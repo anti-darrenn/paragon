@@ -65,6 +65,22 @@ class SettingsScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 20),
 
+                    // Everything a student can actually change lives
+                    // here. Until this section existed, onboarding's
+                    // "you can change these any time" had no way to be
+                    // true — see subjects_settings_screen.dart.
+                    if (!isGuest) ...[
+                      _Card(
+                        children: [
+                          _LinkRow(
+                            label: 'Your subjects',
+                            onTap: () => context.push('/settings/subjects'),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                    ],
+
                     _Card(
                       children: [
                         _LinkRow(
@@ -228,7 +244,9 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppColors.wrong.withAlpha((0.07 * 255).round()),
-        border: Border.all(color: AppColors.wrong.withAlpha((0.35 * 255).round())),
+        border: Border.all(
+          color: AppColors.wrong.withAlpha((0.35 * 255).round()),
+        ),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -245,9 +263,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           Text(
             'Permanently removes your account and every question you have '
             'answered. This cannot be undone.',
-            style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
-            ),
+            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
           ),
           if (_message != null) ...[
             const SizedBox(height: 12),
@@ -278,9 +294,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
                     )
                   : Text(
                       'Delete my account',
-                      style: AppTheme.btnLabel.copyWith(
-                        color: AppColors.wrong,
-                      ),
+                      style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
                     ),
             ),
           ),
@@ -405,7 +419,6 @@ class _LinkRow extends StatelessWidget {
     );
   }
 }
-
 
 /// Opt out of usage analytics.
 ///

@@ -9,6 +9,7 @@ import '../../core/repositories/course_repository.dart';
 import '../../core/repositories/user_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/subject_tile.dart';
 import 'onboarding_scaffold.dart';
 
 /// Step 3 — pick the subjects you're studying.
@@ -68,9 +69,7 @@ class _OnboardingSubjectsScreenState
       context.go(OnboardingStep.subjects.next.path);
     } catch (_) {
       if (!mounted) return;
-      setState(
-        () => _error = "Couldn't save your subjects. Please try again.",
-      );
+      setState(() => _error = "Couldn't save your subjects. Please try again.");
     } finally {
       if (mounted) setState(() => _isSubmitting = false);
     }
@@ -107,7 +106,7 @@ class _OnboardingSubjectsScreenState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               for (final course in live) ...[
-                _SubjectTile(
+                SubjectTile(
                   course: course,
                   isSelected: _selected.contains(course.slug),
                   onTap: () => setState(() {
@@ -170,87 +169,6 @@ class _OnboardingSubjectsScreenState
             ],
           );
         },
-      ),
-    );
-  }
-}
-
-class _SubjectTile extends StatelessWidget {
-  const _SubjectTile({
-    required this.course,
-    required this.isSelected,
-    required this.onTap,
-  });
-
-  final CourseSummary course;
-  final bool isSelected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final accent = AppColors.forSubject(course.name);
-
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: onTap,
-        behavior: HitTestBehavior.opaque,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 120),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          decoration: BoxDecoration(
-            color: isSelected
-                ? accent.withAlpha((0.14 * 255).round())
-                : AppColors.surfaceDark,
-            border: Border.all(
-              color: isSelected ? accent : AppColors.borderDark,
-              width: isSelected ? 2 : 1,
-            ),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Row(
-            children: [
-              Container(
-                width: 22,
-                height: 22,
-                decoration: BoxDecoration(
-                  color: isSelected ? accent : Colors.transparent,
-                  border: Border.all(
-                    color: isSelected ? accent : AppColors.borderDark,
-                    width: 2,
-                  ),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                child: isSelected
-                    ? const Icon(Icons.check, size: 15, color: Colors.white)
-                    : null,
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      course.name,
-                      style: AppTheme.bodyLg.copyWith(
-                        color: AppColors.textPrimaryDark,
-                        fontWeight: FontWeight.w600,
-                        height: 1.3,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      course.blurb,
-                      style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

@@ -18,6 +18,7 @@ import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
+import 'package:paragon/features/subjects_settings_screen.dart';
 import 'package:paragon/features/topic_list_screen.dart';
 import 'package:paragon/features/topic_overview_screen.dart';
 import 'package:paragon/features/unit_list_screen.dart';
@@ -180,10 +181,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // Home. The dashboard is the landing surface for a signed-in user:
       // both the post-sign-in redirect above and a returning visitor
       // opening the bare site root arrive here.
-      GoRoute(
-        path: '/',
-        builder: (context, state) => const DashboardScreen(),
-      ),
+      GoRoute(path: '/', builder: (context, state) => const DashboardScreen()),
       GoRoute(
         path: '/subjects',
         builder: (context, state) => const SubjectListScreen(),
@@ -272,13 +270,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/settings',
         builder: (context, state) => const SettingsScreen(),
       ),
+      // Editing your subjects after onboarding. Deliberately its own
+      // route rather than a re-entry into `/onboarding/subjects`, which
+      // the redirect above sends back to `/` for anyone who has finished
+      // the funnel — see subjects_settings_screen.dart.
+      GoRoute(
+        path: '/settings/subjects',
+        builder: (context, state) => const SubjectsSettingsScreen(),
+      ),
 
       // ── Legal ───────────────────────────────────────────────────────
       // Exempt from the auth redirect above — see isOnLegal.
       GoRoute(
         path: '/privacy',
-        builder: (context, state) =>
-            const LegalScreen(document: privacyPolicy),
+        builder: (context, state) => const LegalScreen(document: privacyPolicy),
       ),
       GoRoute(
         path: '/terms',
