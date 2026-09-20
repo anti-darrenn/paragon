@@ -33,6 +33,20 @@ String asString(dynamic value, {String fallback = ''}) {
   return value.toString();
 }
 
+/// Null when the field is absent, null, or an empty/whitespace-only
+/// string; the coerced string otherwise.
+///
+/// The distinction [asString] cannot make. A resource's `youtubeId` is
+/// absent for almost every topic, and "absent" is what decides whether the
+/// row renders as a playable video or a disabled placeholder — so an empty
+/// string and a missing field have to collapse to the same answer, and
+/// that answer has to be distinguishable from a real value.
+String? asStringOrNull(dynamic value) {
+  if (value == null) return null;
+  final s = value is String ? value : value.toString();
+  return s.trim().isEmpty ? null : s;
+}
+
 /// Null when absent or uncoercible, so callers can distinguish "no value"
 /// from a real zero.
 int? asIntOrNull(dynamic value) {

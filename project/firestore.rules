@@ -7,6 +7,22 @@ service cloud.firestore {
     match /topics/{id}    { allow read: if request.auth != null; }
     match /questions/{id} { allow read: if request.auth != null; }
 
+    // ── LEARN RESOURCES ─────────────────────────────────────────
+    // A topic's ordered lesson content: videos, articles, exercises.
+    //
+    // Its own block because rules do NOT cascade into subcollections —
+    // the `topics/{id}` rule above says nothing about what lives beneath
+    // it, and without this every read here would be denied.
+    //
+    // Same posture as the rest of the content tree: readable by any
+    // signed-in user (a guest included — Learn content is deliberately
+    // ungated; only drill is gated), never writable from a client.
+    // Resources are seeded with the Admin SDK, which bypasses rules.
+    match /topics/{topicId}/resources/{resourceId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
     // ── USER DOCUMENTS ──────────────────────────────────────────
     // Owner-only, but no longer a blanket `write`: creation is limited to
     // an exact field set, and username/usernameKey can only be set by

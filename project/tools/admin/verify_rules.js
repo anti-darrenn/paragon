@@ -578,6 +578,28 @@ async function content(a) {
     await readDoc(a.idToken, 'subjects'),
   );
 
+  // Learn resources live in a SUBcollection, and Firestore rules do not
+  // cascade — `match /topics/{id}` grants nothing beneath it. So this is
+  // the check that the dedicated block exists at all: without it the read
+  // is denied and Learn mode renders an empty lesson list on every topic.
+  expectOutcome(
+    'a signed-in student can read the learn resources of a topic',
+    ALLOW,
+    await readDoc(a.idToken, 'topics/zz_verify_topic/resources'),
+  );
+
+  expectOutcome(
+    'learn resources cannot be written by a client',
+    DENY,
+    await commit(
+      a.idToken,
+      write('topics/zz_verify_topic/resources/zz_injected', {
+        type: str('article'),
+        title: str('injected'),
+      }),
+    ),
+  );
+
   for (const collection of ['subjects', 'units', 'topics', 'questions']) {
     expectOutcome(
       `${collection} cannot be written by a client`,
