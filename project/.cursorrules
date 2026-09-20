@@ -455,12 +455,21 @@ shape) — see docs/audit/NEXT.md item #0 for the record.
 # ─────────────────────────────────────────────
 
 Current status:
-  Mathematics      1716 questions (1990-2024) ✅ live
-  Physics          1769 questions               ✅ live (Session 8)
-  Further Maths    801 questions                ✅ live (Session 8)
-  Chemistry        ~400-600 questions          Phase 2
-  Economics        ~300-400 questions          Phase 2
-  Biology          ~400-600 questions          Phase 2
+  Counts below are scraped + generated, live in Firestore. The generated half
+  is procedural (tools/scraper/gen), marked origin: 'ai_generated', and is
+  still being seeded a day at a time against the Spark quota — see CLAUDE.md.
+
+  Mathematics      5616 questions   ✅ live  (1716 scraped + generated)
+  Physics          8369 questions   ✅ live  (1769 scraped + generated)
+  Further Maths    2001 questions   ✅ live  (801 scraped + generated)
+  Chemistry        13800 generated, 46 topics   seeding in progress
+  Government       12600 generated, 42 topics   seeding in progress
+  Economics        ~300-400 questions          Phase 2, not generated
+  Biology          ~400-600 questions          Phase 2, not generated
+
+  Chemistry and Government were built from the outlines already in
+  lib/core/content/subject_catalog.dart, not scraped — myschool.ng is a Nuxt
+  app now and 1_scrape.js's selectors match nothing.
   English Language mostly theory               low priority
   Government       objective + theory mix      low priority
   Commerce         ~200-300 questions          Phase 2
