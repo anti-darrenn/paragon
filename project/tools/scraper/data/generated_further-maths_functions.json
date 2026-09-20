@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 16x + 23\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -9\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq -9\\)",
+      "\\(y \\geq 23\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 4)^{2} - 9\\)\n\nSince \\(2(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -9.\n\nSo the range is \\(y \\geq -9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{6}{x - 8}\\)",
+      "\\(\\frac{x - 8}{6}\\)",
+      "\\(6x - 8\\)",
+      "\\(\\frac{x + 8}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x + 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 8}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 8}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 2\\) and \\(g(x) = 1x + 3\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "6",
+      "9",
+      "18",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(2) = 1(2) + 3 = 5\\)\n\n\\(f(5) = 4(5) - 2 = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 4\\) and \\(g(x) = 5x - 1\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "9",
+      "-22",
+      "-8",
+      "-41"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(2) = 5(2) - 1 = 9\\)\n\n\\(f(9) = -2(9) - 4 = -22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 2\\) and \\(g(x) = 3x - 3\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "27",
+      "-9",
+      "10",
+      "38"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-2) = 3(-2) - 3 = -9\\)\n\n\\(f(-9) = -4(-9) + 2 = 38\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 5\\) and \\(g(x) = -3x - 3\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "-15",
+      "-41",
+      "-12",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(3) = -3(3) - 3 = -12\\)\n\n\\(f(-12) = 3(-12) - 5 = -41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(4x - 7\\)",
+      "\\(\\frac{x - 7}{4}\\)",
+      "\\(\\frac{4}{x - 7}\\)",
+      "\\(\\frac{x + 7}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 4x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 8x + 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -5\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 2)^{2} - 5\\)\n\nSince \\(2(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x + 5\\) and \\(g(x) = 5x + 5\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "-5",
+      "3",
+      "0",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-2) = 5(-2) + 5 = -5\\)\n\n\\(f(-5) = 1(-5) + 5 = 0\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x - 3\\)",
+      "\\(\\frac{8}{x - 3}\\)",
+      "\\(\\frac{x - 3}{8}\\)",
+      "\\(\\frac{x + 3}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 8x + 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 3}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 3}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x - 7\\) and \\(g(x) = -5x - 1\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "54",
+      "-6",
+      "17",
+      "-11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(1) = -5(1) - 1 = -6\\)\n\n\\(f(-6) = -4(-6) - 7 = 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 6x\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -3\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\geq -1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 1)^{2} - 3\\)\n\nSince \\(3(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -3.\n\nSo the range is \\(y \\geq -3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 5\\) and \\(g(x) = 5x + 4\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "25",
+      "-16",
+      "129",
+      "85"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-4) = 5(-4) + 4 = -16\\)\n\n\\(f(-16) = -5(-16) + 5 = 85\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 4x - 1\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 1\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 1)^{2} - 3\\)\n\nSince \\(2(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -3.\n\nSo the range is \\(y \\geq -3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 18x + 17\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -10\\)",
+      "\\(y \\geq 17\\)",
+      "\\(y \\leq -10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 3)^{2} - 10\\)\n\nSince \\(3(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -10.\n\nSo the range is \\(y \\geq -10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 5\\) and \\(g(x) = -4x + 5\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "26",
+      "-7",
+      "-4",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(3) = -4(3) + 5 = -7\\)\n\n\\(f(-7) = -3(-7) + 5 = 26\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 3}{8}\\)",
+      "\\(8x + 3\\)",
+      "\\(\\frac{8}{x + 3}\\)",
+      "\\(\\frac{x - 3}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 8x - 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 3}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 4x - 1\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -5\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq -2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 2)^{2} - 5\\)\n\nSince \\(1(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 7}{8}\\)",
+      "\\(\\frac{x + 7}{8}\\)",
+      "\\(8x - 7\\)",
+      "\\(\\frac{8}{x - 7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 8x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 12x + 24\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq 24\\)",
+      "\\(y \\geq 6\\)",
+      "\\(y \\leq 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 3)^{2} + 6\\)\n\nSince \\(2(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 6.\n\nSo the range is \\(y \\geq 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(4x - 4\\)",
+      "\\(\\frac{4}{x - 4}\\)",
+      "\\(\\frac{x + 4}{4}\\)",
+      "\\(\\frac{x - 4}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 4x + 4\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 4}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 4}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 3\\) and \\(g(x) = -1x - 7\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "2",
+      "-6",
+      "27",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-1) = -1(-1) - 7 = -6\\)\n\n\\(f(-6) = -5(-6) - 3 = 27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x + 6\\) and \\(g(x) = -2x - 7\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "-39",
+      "16",
+      "-28",
+      "-17"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(5) = -2(5) - 7 = -17\\)\n\n\\(f(-17) = 2(-17) + 6 = -28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 16x + 31\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -1\\)",
+      "\\(y \\geq 31\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq -4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 4)^{2} - 1\\)\n\nSince \\(2(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 12}{8}\\)",
+      "\\(8x + 12\\)",
+      "\\(\\frac{x + 12}{8}\\)",
+      "\\(\\frac{8}{x + 12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 8x - 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 12}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 12}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{9}{x + 1}\\)",
+      "\\(\\frac{x - 1}{9}\\)",
+      "\\(\\frac{x + 1}{9}\\)",
+      "\\(9x + 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 9x - 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 1}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(7x + 7\\)",
+      "\\(\\frac{x - 7}{7}\\)",
+      "\\(\\frac{7}{x + 7}\\)",
+      "\\(\\frac{x + 7}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 7x - 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 7}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 1\\) and \\(g(x) = -1x + 5\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "-13",
+      "6",
+      "4",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-1) = -1(-1) + 5 = 6\\)\n\n\\(f(6) = -2(6) - 1 = -13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 2x + 6\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 6\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 1)^{2} + 5\\)\n\nSince \\(1(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 5.\n\nSo the range is \\(y \\geq 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{2}{x + 8}\\)",
+      "\\(\\frac{x + 8}{2}\\)",
+      "\\(\\frac{x - 8}{2}\\)",
+      "\\(2x + 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 2x - 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 8}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 8}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{4}{x - 5}\\)",
+      "\\(\\frac{x - 5}{4}\\)",
+      "\\(\\frac{x + 5}{4}\\)",
+      "\\(4x - 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 4x + 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 5}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 10x + 24\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 24\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\leq -1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 5)^{2} - 1\\)\n\nSince \\(1(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x + 5\\) and \\(g(x) = 4x + 6\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "-3",
+      "-15",
+      "-10",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-4) = 4(-4) + 6 = -10\\)\n\n\\(f(-10) = 2(-10) + 5 = -15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(3x - 3\\)",
+      "\\(\\frac{x - 3}{3}\\)",
+      "\\(\\frac{3}{x - 3}\\)",
+      "\\(\\frac{x + 3}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 3x + 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 3}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 3}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x + 5\\) and \\(g(x) = -5x + 7\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-3",
+      "-7",
+      "13",
+      "-58"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(2) = -5(2) + 7 = -3\\)\n\n\\(f(-3) = 4(-3) + 5 = -7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 11}{9}\\)",
+      "\\(9x + 11\\)",
+      "\\(\\frac{9}{x + 11}\\)",
+      "\\(\\frac{x + 11}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 9x - 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 11}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 11}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = 3x + 5\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "-10",
+      "-43",
+      "-64",
+      "-23"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-5) = 3(-5) + 5 = -10\\)\n\n\\(f(-10) = 4(-10) - 3 = -43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 9}{8}\\)",
+      "\\(\\frac{x - 9}{8}\\)",
+      "\\(\\frac{8}{x - 9}\\)",
+      "\\(8x - 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 8x + 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 9}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 9}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 7\\) and \\(g(x) = 2x + 6\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-1",
+      "0",
+      "-7",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-3) = 2(-3) + 6 = 0\\)\n\n\\(f(0) = -2(0) - 7 = -7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{7}{x + 1}\\)",
+      "\\(7x + 1\\)",
+      "\\(\\frac{x + 1}{7}\\)",
+      "\\(\\frac{x - 1}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 7x - 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 1}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{2}{x + 9}\\)",
+      "\\(\\frac{x - 9}{2}\\)",
+      "\\(\\frac{x + 9}{2}\\)",
+      "\\(2x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 9}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 9}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 4\\) and \\(g(x) = 2x + 1\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "31",
+      "16",
+      "33",
+      "-7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-4) = 2(-4) + 1 = -7\\)\n\n\\(f(-7) = -5(-7) - 4 = 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 4\\) and \\(g(x) = -5x + 1\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "-48",
+      "26",
+      "14",
+      "-69"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-5) = -5(-5) + 1 = 26\\)\n\n\\(f(26) = -2(26) + 4 = -48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 5\\) and \\(g(x) = -5x - 6\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "-4",
+      "14",
+      "68",
+      "-21"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(3) = -5(3) - 6 = -21\\)\n\n\\(f(-21) = -3(-21) + 5 = 68\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 4x - 4\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq -6\\)",
+      "\\(y \\leq -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 1)^{2} - 6\\)\n\nSince \\(2(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -6.\n\nSo the range is \\(y \\geq -6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 7}{7}\\)",
+      "\\(\\frac{x - 7}{7}\\)",
+      "\\(\\frac{7}{x - 7}\\)",
+      "\\(7x - 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 7x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{3}{x - 9}\\)",
+      "\\(\\frac{x + 9}{3}\\)",
+      "\\(\\frac{x - 9}{3}\\)",
+      "\\(3x - 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 3x + 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 9}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 9}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 5\\) and \\(g(x) = -5x - 4\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "-30",
+      "146",
+      "140",
+      "-29"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(5) = -5(5) - 4 = -29\\)\n\n\\(f(-29) = -5(-29) - 5 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 2}{6}\\)",
+      "\\(6x + 2\\)",
+      "\\(\\frac{6}{x + 2}\\)",
+      "\\(\\frac{x - 2}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 6x - 2\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 2}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 20x + 58\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -5\\)",
+      "\\(y \\leq 8\\)",
+      "\\(y \\geq 8\\)",
+      "\\(y \\geq 58\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 5)^{2} + 8\\)\n\nSince \\(2(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 8.\n\nSo the range is \\(y \\geq 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 4x - 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -7\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\leq -7\\)",
+      "\\(y \\geq 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 2)^{2} - 7\\)\n\nSince \\(1(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -7.\n\nSo the range is \\(y \\geq -7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x + 4\\) and \\(g(x) = -1x + 2\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "6",
+      "4",
+      "-4",
+      "0"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-2) = -1(-2) + 2 = 4\\)\n\n\\(f(4) = -1(4) + 4 = 0\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 24x + 56\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 8\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\leq 8\\)",
+      "\\(y \\geq 56\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 4)^{2} + 8\\)\n\nSince \\(3(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 8.\n\nSo the range is \\(y \\geq 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(9x - 2\\)",
+      "\\(\\frac{9}{x - 2}\\)",
+      "\\(\\frac{x + 2}{9}\\)",
+      "\\(\\frac{x - 2}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 9x + 2\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 2}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 2}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(2x - 3\\)",
+      "\\(\\frac{2}{x - 3}\\)",
+      "\\(\\frac{x + 3}{2}\\)",
+      "\\(\\frac{x - 3}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x + 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 3}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 3}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 8}{9}\\)",
+      "\\(\\frac{x - 8}{9}\\)",
+      "\\(9x + 8\\)",
+      "\\(\\frac{9}{x + 8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 9x - 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 8}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 8}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{3}{x - 7}\\)",
+      "\\(3x - 7\\)",
+      "\\(\\frac{x + 7}{3}\\)",
+      "\\(\\frac{x - 7}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 3x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 18x + 28\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq 28\\)",
+      "\\(y \\leq 1\\)",
+      "\\(y \\geq 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 3)^{2} + 1\\)\n\nSince \\(3(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 1.\n\nSo the range is \\(y \\geq 1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 2x + 4\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 4\\)",
+      "\\(y \\leq 3\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 1)^{2} + 3\\)\n\nSince \\(1(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 3.\n\nSo the range is \\(y \\geq 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 4\\) and \\(g(x) = 3x - 7\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "11",
+      "6",
+      "2",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(3) = 3(3) - 7 = 2\\)\n\n\\(f(2) = 5(2) - 4 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(8x - 6\\)",
+      "\\(\\frac{x - 6}{8}\\)",
+      "\\(\\frac{8}{x - 6}\\)",
+      "\\(\\frac{x + 6}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 8x + 6\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 6}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 6}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 18x + 20\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -7\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -7\\)",
+      "\\(y \\geq 20\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 3)^{2} - 7\\)\n\nSince \\(3(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -7.\n\nSo the range is \\(y \\geq -7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x + 3\\) and \\(g(x) = -3x - 3\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "-21",
+      "-12",
+      "9",
+      "-30"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(3) = -3(3) - 3 = -12\\)\n\n\\(f(-12) = 2(-12) + 3 = -21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 1\\) and \\(g(x) = 4x - 7\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-59",
+      "-77",
+      "-19",
+      "-13"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-3) = 4(-3) - 7 = -19\\)\n\n\\(f(-19) = 4(-19) - 1 = -77\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x + 6\\) and \\(g(x) = 5x + 6\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "4",
+      "2",
+      "-4",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-2) = 5(-2) + 6 = -4\\)\n\n\\(f(-4) = 1(-4) + 6 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x + 2\\) and \\(g(x) = -3x - 6\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "6",
+      "-12",
+      "-24",
+      "-22"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(2) = -3(2) - 6 = -12\\)\n\n\\(f(-12) = 2(-12) + 2 = -22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{7}{x + 12}\\)",
+      "\\(7x + 12\\)",
+      "\\(\\frac{x - 12}{7}\\)",
+      "\\(\\frac{x + 12}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 7x - 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 12}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 12}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 6}{2}\\)",
+      "\\(2x + 6\\)",
+      "\\(\\frac{x + 6}{2}\\)",
+      "\\(\\frac{2}{x + 6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 6\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 6}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 6}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 4\\) and \\(g(x) = -5x + 7\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "10",
+      "17",
+      "-43",
+      "-47"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-2) = -5(-2) + 7 = 17\\)\n\n\\(f(17) = -3(17) + 4 = -47\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 2\\) and \\(g(x) = 1x - 2\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "-6",
+      "18",
+      "28",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-4) = 1(-4) - 2 = -6\\)\n\n\\(f(-6) = -5(-6) - 2 = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 18x + 21\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 21\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\leq -6\\)",
+      "\\(y \\geq -6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 3)^{2} - 6\\)\n\nSince \\(3(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -6.\n\nSo the range is \\(y \\geq -6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 12x + 19\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 19\\)",
+      "\\(y \\geq 1\\)",
+      "\\(y \\leq 1\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 3)^{2} + 1\\)\n\nSince \\(2(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 1.\n\nSo the range is \\(y \\geq 1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 2\\) and \\(g(x) = 5x + 1\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "-76",
+      "26",
+      "-13",
+      "-64"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(5) = 5(5) + 1 = 26\\)\n\n\\(f(26) = -3(26) + 2 = -76\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 2}{2}\\)",
+      "\\(\\frac{2}{x + 2}\\)",
+      "\\(\\frac{x + 2}{2}\\)",
+      "\\(2x + 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 2\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 2}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x - 1\\) and \\(g(x) = 4x + 6\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "-11",
+      "-10",
+      "-5",
+      "-14"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-4) = 4(-4) + 6 = -10\\)\n\n\\(f(-10) = 1(-10) - 1 = -11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(3x + 9\\)",
+      "\\(\\frac{3}{x + 9}\\)",
+      "\\(\\frac{x - 9}{3}\\)",
+      "\\(\\frac{x + 9}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 3x - 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 9}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 9}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(2x - 1\\)",
+      "\\(\\frac{x + 1}{2}\\)",
+      "\\(\\frac{x - 1}{2}\\)",
+      "\\(\\frac{2}{x - 1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x + 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 1}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 1}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(5x - 8\\)",
+      "\\(\\frac{x - 8}{5}\\)",
+      "\\(\\frac{x + 8}{5}\\)",
+      "\\(\\frac{5}{x - 8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 5x + 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 8}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 8}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 16x + 28\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -4\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq 28\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 4)^{2} - 4\\)\n\nSince \\(2(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -4.\n\nSo the range is \\(y \\geq -4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 6x + 10\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq 10\\)",
+      "\\(y \\geq 7\\)",
+      "\\(y \\leq 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 1)^{2} + 7\\)\n\nSince \\(3(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 7.\n\nSo the range is \\(y \\geq 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 18x + 36\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq 9\\)",
+      "\\(y \\geq 36\\)",
+      "\\(y \\leq 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 3)^{2} + 9\\)\n\nSince \\(3(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 9.\n\nSo the range is \\(y \\geq 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 1}{5}\\)",
+      "\\(\\frac{x - 1}{5}\\)",
+      "\\(5x + 1\\)",
+      "\\(\\frac{5}{x + 1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 5x - 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 1}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x + 4\\) and \\(g(x) = -4x + 6\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "6",
+      "0",
+      "14",
+      "-10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(4) = -4(4) + 6 = -10\\)\n\n\\(f(-10) = -1(-10) + 4 = 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 8x + 25\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 9\\)",
+      "\\(y \\geq 25\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\leq 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 4)^{2} + 9\\)\n\nSince \\(1(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 9.\n\nSo the range is \\(y \\geq 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x + 4\\)",
+      "\\(\\frac{6}{x + 4}\\)",
+      "\\(\\frac{x + 4}{6}\\)",
+      "\\(\\frac{x - 4}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 6x - 4\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 4}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 4}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 18x + 33\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 6\\)",
+      "\\(y \\geq 33\\)",
+      "\\(y \\leq 6\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 3)^{2} + 6\\)\n\nSince \\(3(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 6.\n\nSo the range is \\(y \\geq 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 1\\) and \\(g(x) = -2x - 2\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "5",
+      "12",
+      "2",
+      "-7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-2) = -2(-2) - 2 = 2\\)\n\n\\(f(2) = 3(2) - 1 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 18x + 22\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\leq -5\\)",
+      "\\(y \\geq 22\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 3)^{2} - 5\\)\n\nSince \\(3(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x + 3\\) and \\(g(x) = -5x + 2\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "12",
+      "-2",
+      "30",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-5) = -5(-5) + 2 = 27\\)\n\n\\(f(27) = 1(27) + 3 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 7\\) and \\(g(x) = -5x - 1\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-1",
+      "51",
+      "-11",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(2) = -5(2) - 1 = -11\\)\n\n\\(f(-11) = -4(-11) + 7 = 51\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 8x + 19\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 4\\)",
+      "\\(y \\leq 3\\)",
+      "\\(y \\geq 19\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 4)^{2} + 3\\)\n\nSince \\(1(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 3.\n\nSo the range is \\(y \\geq 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 4\\) and \\(g(x) = -2x + 3\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "35",
+      "13",
+      "41",
+      "-19"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-5) = -2(-5) + 3 = 13\\)\n\n\\(f(13) = 3(13) - 4 = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 18x + 19\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -8\\)",
+      "\\(y \\geq 19\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\leq -8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 3)^{2} - 8\\)\n\nSince \\(3(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -8.\n\nSo the range is \\(y \\geq -8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x + 2\\) and \\(g(x) = -4x + 4\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "16",
+      "-16",
+      "-3",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(5) = -4(5) + 4 = -16\\)\n\n\\(f(-16) = -1(-16) + 2 = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 9}{5}\\)",
+      "\\(\\frac{5}{x - 9}\\)",
+      "\\(5x - 9\\)",
+      "\\(\\frac{x - 9}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 5x + 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 9}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 9}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 8x + 7\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq 7\\)",
+      "\\(y \\leq -1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 2)^{2} - 1\\)\n\nSince \\(2(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 8x + 2\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -2\\)",
+      "\\(y \\leq -6\\)",
+      "\\(y \\geq -6\\)",
+      "\\(y \\geq 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 2)^{2} - 6\\)\n\nSince \\(2(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -6.\n\nSo the range is \\(y \\geq -6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 3\\) and \\(g(x) = 3x + 5\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "14",
+      "-4",
+      "3",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-3) = 3(-3) + 5 = -4\\)\n\n\\(f(-4) = -2(-4) - 3 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 11}{5}\\)",
+      "\\(5x - 11\\)",
+      "\\(\\frac{5}{x - 11}\\)",
+      "\\(\\frac{x - 11}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 5x + 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 11}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 11}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 9}{5}\\)",
+      "\\(\\frac{5}{x + 9}\\)",
+      "\\(5x + 9\\)",
+      "\\(\\frac{x + 9}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 5x - 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 9}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 9}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{7}{x - 2}\\)",
+      "\\(7x - 2\\)",
+      "\\(\\frac{x + 2}{7}\\)",
+      "\\(\\frac{x - 2}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 7x + 2\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 2}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 2}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{9}{x + 3}\\)",
+      "\\(9x + 3\\)",
+      "\\(\\frac{x + 3}{9}\\)",
+      "\\(\\frac{x - 3}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 9x - 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 3}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 7\\) and \\(g(x) = -1x + 2\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "22",
+      "-2",
+      "-20",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(5) = -1(5) + 2 = -3\\)\n\n\\(f(-3) = 3(-3) + 7 = -2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x - 12\\)",
+      "\\(\\frac{x - 12}{6}\\)",
+      "\\(\\frac{x + 12}{6}\\)",
+      "\\(\\frac{6}{x - 12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x + 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 12}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 12}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{5}{x + 3}\\)",
+      "\\(\\frac{x - 3}{5}\\)",
+      "\\(5x + 3\\)",
+      "\\(\\frac{x + 3}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 5x - 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 3}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x - 6\\) and \\(g(x) = -5x - 3\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "-23",
+      "107",
+      "86",
+      "-22"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(4) = -5(4) - 3 = -23\\)\n\n\\(f(-23) = -4(-23) - 6 = 86\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 4\\) and \\(g(x) = -4x + 2\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-18",
+      "14",
+      "5",
+      "-46"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-3) = -4(-3) + 2 = 14\\)\n\n\\(f(14) = -3(14) - 4 = -46\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 5\\) and \\(g(x) = -1x + 2\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "20",
+      "0",
+      "-1",
+      "-18"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(3) = -1(3) + 2 = -1\\)\n\n\\(f(-1) = 5(-1) + 5 = 0\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(9x - 10\\)",
+      "\\(\\frac{x + 10}{9}\\)",
+      "\\(\\frac{x - 10}{9}\\)",
+      "\\(\\frac{9}{x - 10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 9x + 10\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 10}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 10}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x - 6\\) and \\(g(x) = -1x - 3\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "-13",
+      "-2",
+      "-7",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(4) = -1(4) - 3 = -7\\)\n\n\\(f(-7) = 1(-7) - 6 = -13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x - 10\\)",
+      "\\(\\frac{x - 10}{6}\\)",
+      "\\(\\frac{x + 10}{6}\\)",
+      "\\(\\frac{6}{x - 10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x + 10\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 10}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 10}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 4}{3}\\)",
+      "\\(\\frac{3}{x + 4}\\)",
+      "\\(\\frac{x + 4}{3}\\)",
+      "\\(3x + 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 3x - 4\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 4}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 4}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x - 6\\) and \\(g(x) = 5x - 1\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "29",
+      "-16",
+      "58",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-3) = 5(-3) - 1 = -16\\)\n\n\\(f(-16) = -4(-16) - 6 = 58\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 7\\) and \\(g(x) = -3x - 4\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "-7",
+      "23",
+      "7",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(1) = -3(1) - 4 = -7\\)\n\n\\(f(-7) = -2(-7) - 7 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 9}{9}\\)",
+      "\\(9x - 9\\)",
+      "\\(\\frac{9}{x - 9}\\)",
+      "\\(\\frac{x + 9}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 9x + 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 9}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 9}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 30x + 85\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 85\\)",
+      "\\(y \\leq 10\\)",
+      "\\(y \\geq 10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 5)^{2} + 10\\)\n\nSince \\(3(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 10.\n\nSo the range is \\(y \\geq 10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 1\\) and \\(g(x) = 4x + 6\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-3",
+      "-6",
+      "14",
+      "-27"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(2) = 4(2) + 6 = 14\\)\n\n\\(f(14) = -2(14) + 1 = -27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 8x + 16\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 16\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\leq 0\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 4)^{2} + 0\\)\n\nSince \\(1(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 0.\n\nSo the range is \\(y \\geq 0\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 4x + 4\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 1\\)",
+      "\\(y \\leq 2\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq 2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 1)^{2} + 2\\)\n\nSince \\(2(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 2.\n\nSo the range is \\(y \\geq 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 11}{8}\\)",
+      "\\(\\frac{8}{x + 11}\\)",
+      "\\(\\frac{x + 11}{8}\\)",
+      "\\(8x + 11\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 8x - 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 11}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 11}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 20x + 54\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\leq 4\\)",
+      "\\(y \\geq 54\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 5)^{2} + 4\\)\n\nSince \\(2(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 4.\n\nSo the range is \\(y \\geq 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(7x + 2\\)",
+      "\\(\\frac{x - 2}{7}\\)",
+      "\\(\\frac{x + 2}{7}\\)",
+      "\\(\\frac{7}{x + 2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 7x - 2\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 2}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 4x + 14\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq 14\\)",
+      "\\(y \\leq 10\\)",
+      "\\(y \\geq 10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 2)^{2} + 10\\)\n\nSince \\(1(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 10.\n\nSo the range is \\(y \\geq 10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 4x\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -4\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq -4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 2)^{2} - 4\\)\n\nSince \\(1(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -4.\n\nSo the range is \\(y \\geq -4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x - 6\\) and \\(g(x) = 4x + 4\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "-2",
+      "-4",
+      "-12",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-4) = 4(-4) + 4 = -12\\)\n\n\\(f(-12) = -1(-12) - 6 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 6x + 19\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 10\\)",
+      "\\(y \\geq 19\\)",
+      "\\(y \\leq 10\\)",
+      "\\(y \\geq -3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 3)^{2} + 10\\)\n\nSince \\(1(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 10.\n\nSo the range is \\(y \\geq 10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 30x + 84\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 9\\)",
+      "\\(y \\geq 84\\)",
+      "\\(y \\geq 9\\)",
+      "\\(y \\geq 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 5)^{2} + 9\\)\n\nSince \\(3(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 9.\n\nSo the range is \\(y \\geq 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 2\\) and \\(g(x) = -3x - 1\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "11",
+      "-53",
+      "22",
+      "-67"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-4) = -3(-4) - 1 = 11\\)\n\n\\(f(11) = -5(11) + 2 = -53\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 6\\) and \\(g(x) = -3x + 7\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "19",
+      "26",
+      "-89",
+      "-71"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-4) = -3(-4) + 7 = 19\\)\n\n\\(f(19) = -5(19) + 6 = -89\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{9}{x - 1}\\)",
+      "\\(\\frac{x - 1}{9}\\)",
+      "\\(\\frac{x + 1}{9}\\)",
+      "\\(9x - 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 9x + 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 1}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 1}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 4}{2}\\)",
+      "\\(\\frac{2}{x - 4}\\)",
+      "\\(2x - 4\\)",
+      "\\(\\frac{x + 4}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 2x + 4\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 4}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 4}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 2\\) and \\(g(x) = 3x - 5\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "5",
+      "10",
+      "-2",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(1) = 3(1) - 5 = -2\\)\n\n\\(f(-2) = 3(-2) + 2 = -4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 1\\) and \\(g(x) = -1x - 6\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-8",
+      "1",
+      "33",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(2) = -1(2) - 6 = -8\\)\n\n\\(f(-8) = -4(-8) + 1 = 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x - 2\\) and \\(g(x) = 2x + 5\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "-7",
+      "-30",
+      "-6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(1) = 2(1) + 5 = 7\\)\n\n\\(f(7) = -4(7) - 2 = -30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 5}{9}\\)",
+      "\\(\\frac{9}{x - 5}\\)",
+      "\\(\\frac{x - 5}{9}\\)",
+      "\\(9x - 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 9x + 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 5}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 12x + 19\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 7\\)",
+      "\\(y \\geq 7\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq 19\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 2)^{2} + 7\\)\n\nSince \\(3(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 7.\n\nSo the range is \\(y \\geq 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x + 2\\) and \\(g(x) = -1x + 2\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "30",
+      "20",
+      "-18",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-5) = -1(-5) + 2 = 7\\)\n\n\\(f(7) = 4(7) + 2 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x + 2\\) and \\(g(x) = 2x - 5\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "-13",
+      "15",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-4) = 2(-4) - 5 = -13\\)\n\n\\(f(-13) = -1(-13) + 2 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 4\\) and \\(g(x) = -4x - 1\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "-91",
+      "29",
+      "-117",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-5) = -4(-5) - 1 = 19\\)\n\n\\(f(19) = -5(19) + 4 = -91\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 7}{5}\\)",
+      "\\(5x - 7\\)",
+      "\\(\\frac{x + 7}{5}\\)",
+      "\\(\\frac{5}{x - 7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 5x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 1}{7}\\)",
+      "\\(7x - 1\\)",
+      "\\(\\frac{7}{x - 1}\\)",
+      "\\(\\frac{x - 1}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 7x + 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 1}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 1}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 30x + 81\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 81\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 6\\)",
+      "\\(y \\leq 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 5)^{2} + 6\\)\n\nSince \\(3(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 6.\n\nSo the range is \\(y \\geq 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 5\\) and \\(g(x) = -1x + 7\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "8",
+      "-35",
+      "-3",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-1) = -1(-1) + 7 = 8\\)\n\n\\(f(8) = -5(8) + 5 = -35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 6\\) and \\(g(x) = 1x + 4\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "-8",
+      "-1",
+      "-12",
+      "-16"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-5) = 1(-5) + 4 = -1\\)\n\n\\(f(-1) = 2(-1) - 6 = -8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 2x - 9\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -9\\)",
+      "\\(y \\leq -10\\)",
+      "\\(y \\geq -10\\)",
+      "\\(y \\geq -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 1)^{2} - 10\\)\n\nSince \\(1(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -10.\n\nSo the range is \\(y \\geq -10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 2\\) and \\(g(x) = 5x - 4\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "16",
+      "-14",
+      "40",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-2) = 5(-2) - 4 = -14\\)\n\n\\(f(-14) = -3(-14) - 2 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 1\\) and \\(g(x) = -4x - 7\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "3",
+      "-19",
+      "-3",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-1) = -4(-1) - 7 = -3\\)\n\n\\(f(-3) = -2(-3) + 1 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(2x - 6\\)",
+      "\\(\\frac{x + 6}{2}\\)",
+      "\\(\\frac{x - 6}{2}\\)",
+      "\\(\\frac{2}{x - 6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x + 6\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 6}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 6}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{9}{x - 11}\\)",
+      "\\(\\frac{x + 11}{9}\\)",
+      "\\(9x - 11\\)",
+      "\\(\\frac{x - 11}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 9x + 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 11}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 11}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 12x + 11\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 11\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\leq -7\\)",
+      "\\(y \\geq -7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 3)^{2} - 7\\)\n\nSince \\(2(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -7.\n\nSo the range is \\(y \\geq -7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 8}{7}\\)",
+      "\\(\\frac{x + 8}{7}\\)",
+      "\\(\\frac{7}{x + 8}\\)",
+      "\\(7x + 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 7x - 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 8}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 8}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 4x + 5\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 1\\)",
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 2)^{2} + 1\\)\n\nSince \\(1(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 1.\n\nSo the range is \\(y \\geq 1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 2\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 2}{9}\\)",
+      "\\(\\frac{9}{x + 2}\\)",
+      "\\(\\frac{x - 2}{9}\\)",
+      "\\(9x + 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 9x - 2\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 2}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 2}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 5}{3}\\)",
+      "\\(\\frac{3}{x - 5}\\)",
+      "\\(3x - 5\\)",
+      "\\(\\frac{x + 5}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 3x + 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 5}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 4x + 2\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 0\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\geq 1\\)",
+      "\\(y \\geq 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 1)^{2} + 0\\)\n\nSince \\(2(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 0.\n\nSo the range is \\(y \\geq 0\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 30x + 72\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 5\\)",
+      "\\(y \\leq -3\\)",
+      "\\(y \\geq 72\\)",
+      "\\(y \\geq -3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 5)^{2} - 3\\)\n\nSince \\(3(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -3.\n\nSo the range is \\(y \\geq -3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 2x - 2\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 1\\)",
+      "\\(y \\leq -3\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq -2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 1)^{2} - 3\\)\n\nSince \\(1(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -3.\n\nSo the range is \\(y \\geq -3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 24x + 38\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 38\\)",
+      "\\(y \\leq -10\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq -10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 4)^{2} - 10\\)\n\nSince \\(3(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -10.\n\nSo the range is \\(y \\geq -10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 6}{5}\\)",
+      "\\(5x + 6\\)",
+      "\\(\\frac{x - 6}{5}\\)",
+      "\\(\\frac{5}{x + 6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 5x - 6\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 6}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 6}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 8x + 5\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\leq -3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 2)^{2} - 3\\)\n\nSince \\(2(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -3.\n\nSo the range is \\(y \\geq -3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 3\\) and \\(g(x) = 5x + 2\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "-12",
+      "-6",
+      "-28",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-1) = 5(-1) + 2 = -3\\)\n\n\\(f(-3) = 3(-3) - 3 = -12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x + 6\\) and \\(g(x) = -4x - 1\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "22",
+      "-62",
+      "-17",
+      "-89"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(4) = -4(4) - 1 = -17\\)\n\n\\(f(-17) = 4(-17) + 6 = -62\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(4x - 11\\)",
+      "\\(\\frac{x - 11}{4}\\)",
+      "\\(\\frac{x + 11}{4}\\)",
+      "\\(\\frac{4}{x - 11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 4x + 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 11}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 11}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(9x + 7\\)",
+      "\\(\\frac{9}{x + 7}\\)",
+      "\\(\\frac{x - 7}{9}\\)",
+      "\\(\\frac{x + 7}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 9x - 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 7}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 9\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(2x - 9\\)",
+      "\\(\\frac{2}{x - 9}\\)",
+      "\\(\\frac{x - 9}{2}\\)",
+      "\\(\\frac{x + 9}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x + 9\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 9}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 9}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 12x + 16\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\leq -2\\)",
+      "\\(y \\geq 16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 3)^{2} - 2\\)\n\nSince \\(2(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -2.\n\nSo the range is \\(y \\geq -2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 1\\) and \\(g(x) = -4x - 2\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "3",
+      "2",
+      "-3",
+      "-14"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-1) = -4(-1) - 2 = 2\\)\n\n\\(f(2) = -2(2) + 1 = -3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 7\\) and \\(g(x) = -5x + 4\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "102",
+      "-8",
+      "44",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-3) = -5(-3) + 4 = 19\\)\n\n\\(f(19) = 5(19) + 7 = 102\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 6\\) and \\(g(x) = -4x - 7\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "-95",
+      "22",
+      "-30",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-4) = -4(-4) - 7 = 9\\)\n\n\\(f(9) = -4(9) + 6 = -30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 6x + 2\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq 1\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\leq -1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 1)^{2} - 1\\)\n\nSince \\(3(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 30x + 82\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 7\\)",
+      "\\(y \\leq 7\\)",
+      "\\(y \\geq 82\\)",
+      "\\(y \\geq -5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 5)^{2} + 7\\)\n\nSince \\(3(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 7.\n\nSo the range is \\(y \\geq 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 1\\) and \\(g(x) = 4x + 2\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "-62",
+      "22",
+      "-67",
+      "-16"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(5) = 4(5) + 2 = 22\\)\n\n\\(f(22) = -3(22) - 1 = -67\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 7\\) and \\(g(x) = -2x + 5\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "35",
+      "-15",
+      "-3",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(4) = -2(4) + 5 = -3\\)\n\n\\(f(-3) = -2(-3) - 7 = -1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 2x - 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -4\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq 1\\)",
+      "\\(y \\geq -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 1)^{2} - 4\\)\n\nSince \\(1(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -4.\n\nSo the range is \\(y \\geq -4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 7\\) and \\(g(x) = -3x - 2\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "37",
+      "-14",
+      "77",
+      "-13"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(4) = -3(4) - 2 = -14\\)\n\n\\(f(-14) = -5(-14) + 7 = 77\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x + 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(5x - 1\\)",
+      "\\(\\frac{x - 1}{5}\\)",
+      "\\(\\frac{5}{x - 1}\\)",
+      "\\(\\frac{x + 1}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 5x + 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 1}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 1}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 16x + 38\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 38\\)",
+      "\\(y \\geq 6\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\leq 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 4)^{2} + 6\\)\n\nSince \\(2(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 6.\n\nSo the range is \\(y \\geq 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x + 3\\) and \\(g(x) = -2x + 2\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "12",
+      "51",
+      "-17",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-5) = -2(-5) + 2 = 12\\)\n\n\\(f(12) = 4(12) + 3 = 51\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 2\\) and \\(g(x) = 4x + 3\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "-65",
+      "-17",
+      "23",
+      "-71"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(5) = 4(5) + 3 = 23\\)\n\n\\(f(23) = -3(23) - 2 = -71\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{2}{x - 7}\\)",
+      "\\(2x - 7\\)",
+      "\\(\\frac{x - 7}{2}\\)",
+      "\\(\\frac{x + 7}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 7}{5}\\)",
+      "\\(\\frac{x + 7}{5}\\)",
+      "\\(5x + 7\\)",
+      "\\(\\frac{5}{x + 7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 5x - 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 7}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 6x + 4\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\leq -5\\)",
+      "\\(y \\geq 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 3)^{2} - 5\\)\n\nSince \\(1(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 4\\) and \\(g(x) = -1x + 4\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "7",
+      "16",
+      "-12",
+      "-24"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-3) = -1(-3) + 4 = 7\\)\n\n\\(f(7) = -4(7) + 4 = -24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{6}{x - 11}\\)",
+      "\\(\\frac{x - 11}{6}\\)",
+      "\\(6x - 11\\)",
+      "\\(\\frac{x + 11}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 6x + 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 11}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 11}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 2\\) and \\(g(x) = 3x - 2\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "13",
+      "-8",
+      "-26",
+      "-24"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(5) = 3(5) - 2 = 13\\)\n\n\\(f(13) = -2(13) + 2 = -24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 20x + 45\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 45\\)",
+      "\\(y \\leq -5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 5)^{2} - 5\\)\n\nSince \\(2(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x - 5\\) and \\(g(x) = 1x + 5\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "2",
+      "-13",
+      "4",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-1) = 1(-1) + 5 = 4\\)\n\n\\(f(4) = -2(4) - 5 = -13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x + 5\\) and \\(g(x) = -2x - 6\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "4",
+      "13",
+      "-14",
+      "-8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(1) = -2(1) - 6 = -8\\)\n\n\\(f(-8) = -1(-8) + 5 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 4\\) and \\(g(x) = 4x + 4\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "44",
+      "10",
+      "-8",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-3) = 4(-3) + 4 = -8\\)\n\n\\(f(-8) = -2(-8) + 4 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 7\\) and \\(g(x) = -5x + 2\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "61",
+      "-5",
+      "27",
+      "-18"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(4) = -5(4) + 2 = -18\\)\n\n\\(f(-18) = -3(-18) + 7 = 61\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 12x + 16\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 2\\)",
+      "\\(y \\leq 4\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq 16\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 2)^{2} + 4\\)\n\nSince \\(3(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 4.\n\nSo the range is \\(y \\geq 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 3}{7}\\)",
+      "\\(\\frac{7}{x + 3}\\)",
+      "\\(7x + 3\\)",
+      "\\(\\frac{x - 3}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 7x - 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 3}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 8}{4}\\)",
+      "\\(\\frac{4}{x - 8}\\)",
+      "\\(4x - 8\\)",
+      "\\(\\frac{x - 8}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 4x + 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 8}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 8}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 10x + 35\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 35\\)",
+      "\\(y \\leq 10\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 5)^{2} + 10\\)\n\nSince \\(1(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 10.\n\nSo the range is \\(y \\geq 10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 3\\) and \\(g(x) = -3x + 4\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "-24",
+      "7",
+      "0",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-1) = -3(-1) + 4 = 7\\)\n\n\\(f(7) = -3(7) - 3 = -24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 7\\) and \\(g(x) = -5x + 2\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-8",
+      "-3",
+      "-23",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(2) = -5(2) + 2 = -8\\)\n\n\\(f(-8) = 2(-8) - 7 = -23\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 10x + 27\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 27\\)",
+      "\\(y \\leq 2\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 5)^{2} + 2\\)\n\nSince \\(1(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 2.\n\nSo the range is \\(y \\geq 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 2\\) and \\(g(x) = 1x - 7\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-1",
+      "-22",
+      "-5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(2) = 1(2) - 7 = -5\\)\n\n\\(f(-5) = 4(-5) - 2 = -22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 5}{8}\\)",
+      "\\(\\frac{x - 5}{8}\\)",
+      "\\(\\frac{8}{x - 5}\\)",
+      "\\(8x - 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 8x + 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 5}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 8x - 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{8}{x + 4}\\)",
+      "\\(8x + 4\\)",
+      "\\(\\frac{x - 4}{8}\\)",
+      "\\(\\frac{x + 4}{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 8x - 4\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 4}{8}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 4}{8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 4\\) and \\(g(x) = 1x + 4\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-9",
+      "-13",
+      "1",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-3) = 1(-3) + 4 = 1\\)\n\n\\(f(1) = 3(1) - 4 = -1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 4x + 11\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 7\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq 7\\)",
+      "\\(y \\geq 11\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 2)^{2} + 7\\)\n\nSince \\(1(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 7.\n\nSo the range is \\(y \\geq 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 1\\) and \\(g(x) = 1x + 4\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "2",
+      "5",
+      "-7",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-2) = 1(-2) + 4 = 2\\)\n\n\\(f(2) = 3(2) - 1 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 8x + 15\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 15\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 4)^{2} - 1\\)\n\nSince \\(1(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x - 4\\) and \\(g(x) = 1x - 5\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "4",
+      "-8",
+      "-6",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-3) = 1(-3) - 5 = -8\\)\n\n\\(f(-8) = -1(-8) - 4 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 4x - 7\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -7\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -9\\)",
+      "\\(y \\geq -9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 1)^{2} - 9\\)\n\nSince \\(2(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -9.\n\nSo the range is \\(y \\geq -9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 5}{7}\\)",
+      "\\(7x + 5\\)",
+      "\\(\\frac{x - 5}{7}\\)",
+      "\\(\\frac{7}{x + 5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 7x - 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 5}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 5}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 4\\) and \\(g(x) = -3x - 4\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "19",
+      "-53",
+      "-19",
+      "-61"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(5) = -3(5) - 4 = -19\\)\n\n\\(f(-19) = 3(-19) + 4 = -53\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 6\\) and \\(g(x) = -1x - 3\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-12",
+      "9",
+      "0",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-3) = -1(-3) - 3 = 0\\)\n\n\\(f(0) = -5(0) - 6 = -6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 5}{6}\\)",
+      "\\(\\frac{x - 5}{6}\\)",
+      "\\(6x + 5\\)",
+      "\\(\\frac{6}{x + 5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 6x - 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 5}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 5}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 4\\) and \\(g(x) = 5x + 1\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-14",
+      "-69",
+      "11",
+      "-59"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(2) = 5(2) + 1 = 11\\)\n\n\\(f(11) = -5(11) - 4 = -59\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 24x + 50\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 2\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq 50\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 4)^{2} + 2\\)\n\nSince \\(3(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 2.\n\nSo the range is \\(y \\geq 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 8x + 23\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -4\\)",
+      "\\(y \\geq 23\\)",
+      "\\(y \\leq 7\\)",
+      "\\(y \\geq 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 4)^{2} + 7\\)\n\nSince \\(1(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 7.\n\nSo the range is \\(y \\geq 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 16x + 37\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 5\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 37\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 4)^{2} + 5\\)\n\nSince \\(2(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 5.\n\nSo the range is \\(y \\geq 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 2x + 10\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 9\\)",
+      "\\(y \\geq 9\\)",
+      "\\(y \\geq 10\\)",
+      "\\(y \\geq -1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 1)^{2} + 9\\)\n\nSince \\(1(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 9.\n\nSo the range is \\(y \\geq 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 6x + 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 0\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 1)^{2} + 0\\)\n\nSince \\(3(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 0.\n\nSo the range is \\(y \\geq 0\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 5\\) and \\(g(x) = -4x + 6\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "-35",
+      "14",
+      "-2",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-1) = -4(-1) + 6 = 10\\)\n\n\\(f(10) = -3(10) - 5 = -35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x + 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 10}{4}\\)",
+      "\\(\\frac{x + 10}{4}\\)",
+      "\\(4x - 10\\)",
+      "\\(\\frac{4}{x - 10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 4x + 10\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 10}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 10}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x - 7\\) and \\(g(x) = 5x - 2\\), evaluate \\(fg(-4)\\).",
+    "options": [
+      "43",
+      "81",
+      "-22",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-4) = 5(-4) - 2 = -22\\)\n\n\\(f(-22) = -4(-22) - 7 = 81\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 12x + 8\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -10\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq 8\\)",
+      "\\(y \\leq -10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 3)^{2} - 10\\)\n\nSince \\(2(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -10.\n\nSo the range is \\(y \\geq -10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 30x + 78\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -5\\)",
+      "\\(y \\leq 3\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq 78\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 5)^{2} + 3\\)\n\nSince \\(3(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 3.\n\nSo the range is \\(y \\geq 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 2\\) and \\(g(x) = -3x - 4\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-13",
+      "5",
+      "27",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-3) = -3(-3) - 4 = 5\\)\n\n\\(f(5) = 5(5) + 2 = 27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 16x + 31\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -1\\)",
+      "\\(y \\geq 31\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 4)^{2} - 1\\)\n\nSince \\(2(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 18x + 20\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -7\\)",
+      "\\(y \\leq -7\\)",
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq 20\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 3)^{2} - 7\\)\n\nSince \\(3(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -7.\n\nSo the range is \\(y \\geq -7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 5\\) and \\(g(x) = -4x - 7\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "-23",
+      "7",
+      "-74",
+      "-35"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(4) = -4(4) - 7 = -23\\)\n\n\\(f(-23) = 3(-23) - 5 = -74\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 20x + 57\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 7\\)",
+      "\\(y \\geq 57\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 5)^{2} + 7\\)\n\nSince \\(2(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 7.\n\nSo the range is \\(y \\geq 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 4x + 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 1\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 1)^{2} + 1\\)\n\nSince \\(2(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 1.\n\nSo the range is \\(y \\geq 1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 6x - 2\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 1)^{2} - 5\\)\n\nSince \\(3(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 6\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{9}{x - 6}\\)",
+      "\\(\\frac{x + 6}{9}\\)",
+      "\\(\\frac{x - 6}{9}\\)",
+      "\\(9x - 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 9x + 6\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 6}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 6}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 1}{6}\\)",
+      "\\(\\frac{6}{x + 1}\\)",
+      "\\(\\frac{x - 1}{6}\\)",
+      "\\(6x + 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 6x - 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 1}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 7\\) and \\(g(x) = 1x + 1\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "2",
+      "12",
+      "17",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(1) = 1(1) + 1 = 2\\)\n\n\\(f(2) = 5(2) + 7 = 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 1}{2}\\)",
+      "\\(2x + 1\\)",
+      "\\(\\frac{2}{x + 1}\\)",
+      "\\(\\frac{x + 1}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x - 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 1}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 1}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 7\\) and \\(g(x) = 1x - 3\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-12",
+      "3",
+      "0",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(2) = 1(2) - 3 = -1\\)\n\n\\(f(-1) = 5(-1) - 7 = -12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x - 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 12}{6}\\)",
+      "\\(6x + 12\\)",
+      "\\(\\frac{6}{x + 12}\\)",
+      "\\(\\frac{x - 12}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 6x - 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 12}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 12}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 30x + 72\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\leq -3\\)",
+      "\\(y \\geq 72\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 5)^{2} - 3\\)\n\nSince \\(3(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -3.\n\nSo the range is \\(y \\geq -3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 5}{2}\\)",
+      "\\(\\frac{2}{x - 5}\\)",
+      "\\(2x - 5\\)",
+      "\\(\\frac{x - 5}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x + 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 5}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 5}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 6x - 6\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -9\\)",
+      "\\(y \\leq -9\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\geq -6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 1)^{2} - 9\\)\n\nSince \\(3(x + 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -9.\n\nSo the range is \\(y \\geq -9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x + 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(3x - 12\\)",
+      "\\(\\frac{3}{x - 12}\\)",
+      "\\(\\frac{x - 12}{3}\\)",
+      "\\(\\frac{x + 12}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 3x + 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 12}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 12}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x + 5\\) and \\(g(x) = -5x + 1\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "-7",
+      "-4",
+      "-39",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(1) = -5(1) + 1 = -4\\)\n\n\\(f(-4) = 3(-4) + 5 = -7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 12x + 8\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -4\\)",
+      "\\(y \\geq 8\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq -4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 2)^{2} - 4\\)\n\nSince \\(3(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -4.\n\nSo the range is \\(y \\geq -4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 8x\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -8\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\geq -8\\)",
+      "\\(y \\geq 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 2)^{2} - 8\\)\n\nSince \\(2(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -8.\n\nSo the range is \\(y \\geq -8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x - 5\\) and \\(g(x) = -5x + 7\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "32",
+      "-101",
+      "10",
+      "-43"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-5) = -5(-5) + 7 = 32\\)\n\n\\(f(32) = -3(32) - 5 = -101\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 2\\) and \\(g(x) = -1x + 7\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "5",
+      "-12",
+      "19",
+      "-27"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(2) = -1(2) + 7 = 5\\)\n\n\\(f(5) = -5(5) - 2 = -27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 12x + 13\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq 13\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\leq -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 3)^{2} - 5\\)\n\nSince \\(2(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 8x + 7\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 4\\)",
+      "\\(y \\leq -9\\)",
+      "\\(y \\geq 7\\)",
+      "\\(y \\geq -9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 4)^{2} - 9\\)\n\nSince \\(1(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -9.\n\nSo the range is \\(y \\geq -9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 10x + 18\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -7\\)",
+      "\\(y \\geq -7\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 18\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 5)^{2} - 7\\)\n\nSince \\(1(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -7.\n\nSo the range is \\(y \\geq -7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 2x + 4\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq 1\\)",
+      "\\(y \\leq 3\\)",
+      "\\(y \\geq 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 1)^{2} + 3\\)\n\nSince \\(1(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 3.\n\nSo the range is \\(y \\geq 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x + 4\\) and \\(g(x) = 2x - 3\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "-9",
+      "-13",
+      "-5",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(-5) = 2(-5) - 3 = -13\\)\n\n\\(f(-13) = 1(-13) + 4 = -9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -3x + 7\\) and \\(g(x) = 2x + 6\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "-2",
+      "-29",
+      "12",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(3) = 2(3) + 6 = 12\\)\n\n\\(f(12) = -3(12) + 7 = -29\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x + 1\\) and \\(g(x) = 5x + 5\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "15",
+      "-9",
+      "-74",
+      "-40"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(2) = 5(2) + 5 = 15\\)\n\n\\(f(15) = -5(15) + 1 = -74\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 5\\) and \\(g(x) = -4x + 3\\), evaluate \\(fg(2)\\).",
+    "options": [
+      "-5",
+      "7",
+      "-15",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(2) = -4(2) + 3 = -5\\)\n\n\\(f(-5) = 2(-5) - 5 = -15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 20x + 42\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -8\\)",
+      "\\(y \\geq 42\\)",
+      "\\(y \\geq -8\\)",
+      "\\(y \\geq -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 5)^{2} - 8\\)\n\nSince \\(2(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -8.\n\nSo the range is \\(y \\geq -8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 7}{4}\\)",
+      "\\(\\frac{x + 7}{4}\\)",
+      "\\(\\frac{4}{x + 7}\\)",
+      "\\(4x + 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 4x - 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 7}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 7}{3}\\)",
+      "\\(\\frac{3}{x + 7}\\)",
+      "\\(3x + 7\\)",
+      "\\(\\frac{x - 7}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 3x - 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 7}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 7}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 4x - 2\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 1\\)",
+      "\\(y \\leq -4\\)",
+      "\\(y \\geq -2\\)",
+      "\\(y \\geq -4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 1)^{2} - 4\\)\n\nSince \\(2(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -4.\n\nSo the range is \\(y \\geq -4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 18x + 22\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -3\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 22\\)",
+      "\\(y \\leq -5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 3)^{2} - 5\\)\n\nSince \\(3(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -5.\n\nSo the range is \\(y \\geq -5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -1x + 5\\) and \\(g(x) = -2x + 7\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "0",
+      "7",
+      "-3",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(5) = -2(5) + 7 = -3\\)\n\n\\(f(-3) = -1(-3) + 5 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 12x + 5\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -7\\)",
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\leq -7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 2)^{2} - 7\\)\n\nSince \\(3(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -7.\n\nSo the range is \\(y \\geq -7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 5x - 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 11}{5}\\)",
+      "\\(\\frac{5}{x + 11}\\)",
+      "\\(\\frac{x - 11}{5}\\)",
+      "\\(5x + 11\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 5x - 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 11}{5}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 11}{5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 6x + 1\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(6x - 1\\)",
+      "\\(\\frac{6}{x - 1}\\)",
+      "\\(\\frac{x - 1}{6}\\)",
+      "\\(\\frac{x + 1}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 6x + 1\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 1}{6}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 1}{6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 4x - 2\\) and \\(g(x) = 4x - 3\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "17",
+      "66",
+      "18",
+      "69"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(5) = 4(5) - 3 = 17\\)\n\n\\(f(17) = 4(17) - 2 = 66\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 20x + 48\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 48\\)",
+      "\\(y \\geq -2\\)",
+      "\\(y \\leq -2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 5)^{2} - 2\\)\n\nSince \\(2(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -2.\n\nSo the range is \\(y \\geq -2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 6x - 7\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -10\\)",
+      "\\(y \\geq -7\\)",
+      "\\(y \\leq -10\\)",
+      "\\(y \\geq 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 1)^{2} - 10\\)\n\nSince \\(3(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -10.\n\nSo the range is \\(y \\geq -10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 7\\) and \\(g(x) = -1x - 7\\), evaluate \\(fg(3)\\).",
+    "options": [
+      "-10",
+      "-1",
+      "-27",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(3) = -1(3) - 7 = -10\\)\n\n\\(f(-10) = 2(-10) - 7 = -27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 9x + 7\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 7}{9}\\)",
+      "\\(\\frac{9}{x - 7}\\)",
+      "\\(\\frac{x + 7}{9}\\)",
+      "\\(9x - 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 9x + 7\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 7}{9}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 7}{9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 20x + 59\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 9\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 9\\)",
+      "\\(y \\geq 59\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 5)^{2} + 9\\)\n\nSince \\(2(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 9.\n\nSo the range is \\(y \\geq 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 8x + 21\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -4\\)",
+      "\\(y \\leq 5\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 21\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 4)^{2} + 5\\)\n\nSince \\(1(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 5.\n\nSo the range is \\(y \\geq 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 4\\) and \\(g(x) = -1x + 4\\), evaluate \\(fg(-1)\\).",
+    "options": [
+      "13",
+      "-9",
+      "21",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(-1) = -1(-1) + 4 = 5\\)\n\n\\(f(5) = 5(5) - 4 = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 2x + 6\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 5\\)",
+      "\\(y \\geq 6\\)",
+      "\\(y \\geq 1\\)",
+      "\\(y \\geq 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 1)^{2} + 5\\)\n\nSince \\(1(x - 1)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 5.\n\nSo the range is \\(y \\geq 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 16x + 37\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -4\\)",
+      "\\(y \\leq 5\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 37\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 4)^{2} + 5\\)\n\nSince \\(2(x + 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 5.\n\nSo the range is \\(y \\geq 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 8}{2}\\)",
+      "\\(2x - 8\\)",
+      "\\(\\frac{2}{x - 8}\\)",
+      "\\(\\frac{x - 8}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x + 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 8}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 8}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 12x + 24\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 24\\)",
+      "\\(y \\geq 6\\)",
+      "\\(y \\leq 6\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 3)^{2} + 6\\)\n\nSince \\(2(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 6.\n\nSo the range is \\(y \\geq 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x + 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 12}{7}\\)",
+      "\\(7x - 12\\)",
+      "\\(\\frac{x + 12}{7}\\)",
+      "\\(\\frac{7}{x - 12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 7x + 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 12}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 12}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 3x - 8\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 8}{3}\\)",
+      "\\(\\frac{3}{x + 8}\\)",
+      "\\(3x + 8\\)",
+      "\\(\\frac{x + 8}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 3x - 8\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 8}{3}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 8}{3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 18x + 28\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 1\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq 28\\)",
+      "\\(y \\geq 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 3)^{2} + 1\\)\n\nSince \\(3(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 1.\n\nSo the range is \\(y \\geq 1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 8x\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq -8\\)",
+      "\\(y \\geq 0\\)",
+      "\\(y \\geq -8\\)",
+      "\\(y \\geq -2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 2)^{2} - 8\\)\n\nSince \\(2(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -8.\n\nSo the range is \\(y \\geq -8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 5\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{2}{x + 5}\\)",
+      "\\(\\frac{x - 5}{2}\\)",
+      "\\(2x + 5\\)",
+      "\\(\\frac{x + 5}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(y = 2x - 5\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 5}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 5}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x + 12\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 12}{2}\\)",
+      "\\(\\frac{2}{x - 12}\\)",
+      "\\(2x - 12\\)",
+      "\\(\\frac{x + 12}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 2x + 12\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y - 12}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x - 12}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} + 20x + 54\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\leq 4\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 54\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 2(x + 5)^{2} + 4\\)\n\nSince \\(2(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 4.\n\nSo the range is \\(y \\geq 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 2x^{2} - 12x + 27\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 9\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq 27\\)",
+      "\\(y \\leq 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 2(x - 3)^{2} + 9\\)\n\nSince \\(2(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 9.\n\nSo the range is \\(y \\geq 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 1x - 4\\) and \\(g(x) = 2x - 6\\), evaluate \\(fg(-5)\\).",
+    "options": [
+      "-16",
+      "-20",
+      "-24",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-5) = 2(-5) - 6 = -16\\)\n\n\\(f(-16) = 1(-16) - 4 = -20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 11\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{7}{x + 11}\\)",
+      "\\(\\frac{x + 11}{7}\\)",
+      "\\(\\frac{x - 11}{7}\\)",
+      "\\(7x + 11\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(y = 7x - 11\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 11}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 11}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 2x - 4\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 4}{2}\\)",
+      "\\(2x + 4\\)",
+      "\\(\\frac{x + 4}{2}\\)",
+      "\\(\\frac{2}{x + 4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 2x - 4\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 4}{2}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 4}{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 6x + 8\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -1\\)",
+      "\\(y \\geq 8\\)",
+      "\\(y \\geq -3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 3)^{2} - 1\\)\n\nSince \\(1(x + 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 30x + 73\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 73\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq -2\\)",
+      "\\(y \\leq -2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 5)^{2} - 2\\)\n\nSince \\(3(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -2.\n\nSo the range is \\(y \\geq -2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 7x - 10\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x - 10}{7}\\)",
+      "\\(7x + 10\\)",
+      "\\(\\frac{x + 10}{7}\\)",
+      "\\(\\frac{7}{x + 10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(y = 7x - 10\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 10}{7}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 10}{7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -5x - 3\\) and \\(g(x) = 3x - 6\\), evaluate \\(fg(5)\\).",
+    "options": [
+      "-90",
+      "-48",
+      "9",
+      "-28"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(5) = 3(5) - 6 = 9\\)\n\n\\(f(9) = -5(9) - 3 = -48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 2x - 4\\) and \\(g(x) = 3x + 4\\), evaluate \\(fg(-3)\\).",
+    "options": [
+      "-26",
+      "-14",
+      "-5",
+      "-10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(-3) = 3(-3) + 4 = -5\\)\n\n\\(f(-5) = 2(-5) - 4 = -14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 12x + 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 2\\)",
+      "\\(y \\geq -9\\)",
+      "\\(y \\leq -9\\)",
+      "\\(y \\geq 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 2)^{2} - 9\\)\n\nSince \\(3(x - 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -9.\n\nSo the range is \\(y \\geq -9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 18x + 19\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 19\\)",
+      "\\(y \\geq 3\\)",
+      "\\(y \\leq -8\\)",
+      "\\(y \\geq -8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 3)^{2} - 8\\)\n\nSince \\(3(x - 3)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -8.\n\nSo the range is \\(y \\geq -8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x - 6\\) and \\(g(x) = -3x + 3\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "-39",
+      "14",
+      "-9",
+      "-51"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(4) = -3(4) + 3 = -9\\)\n\n\\(f(-9) = 5(-9) - 6 = -51\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -4x + 4\\) and \\(g(x) = 3x - 4\\), evaluate \\(fg(-2)\\).",
+    "options": [
+      "-10",
+      "12",
+      "32",
+      "44"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(g(-2) = 3(-2) - 4 = -10\\)\n\n\\(f(-10) = -4(-10) + 4 = 44\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} + 4x + 3\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 3\\)",
+      "\\(y \\geq -1\\)",
+      "\\(y \\leq -1\\)",
+      "\\(y \\geq -2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(f(x) = 1(x + 2)^{2} - 1\\)\n\nSince \\(1(x + 2)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -1.\n\nSo the range is \\(y \\geq -1\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 5x + 5\\) and \\(g(x) = -3x + 5\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "15",
+      "10",
+      "2",
+      "-25"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(g(1) = -3(1) + 5 = 2\\)\n\n\\(f(2) = 5(2) + 5 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} + 30x + 65\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq -10\\)",
+      "\\(y \\leq -10\\)",
+      "\\(y \\geq -5\\)",
+      "\\(y \\geq 65\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 3(x + 5)^{2} - 10\\)\n\nSince \\(3(x + 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is -10.\n\nSo the range is \\(y \\geq -10\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(f(x) = 4x - 3\\), find \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(\\frac{x + 3}{4}\\)",
+      "\\(\\frac{4}{x + 3}\\)",
+      "\\(4x + 3\\)",
+      "\\(\\frac{x - 3}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(y = 4x - 3\\) and make \\(x\\) the subject.\n\n\\(x = \\frac{y + 3}{4}\\)\n\nSo \\(f^{-1}(x) = \\frac{x + 3}{4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = 3x^{2} - 24x + 53\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 53\\)",
+      "\\(y \\leq 5\\)",
+      "\\(y \\geq 4\\)",
+      "\\(y \\geq 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(f(x) = 3(x - 4)^{2} + 5\\)\n\nSince \\(3(x - 4)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 5.\n\nSo the range is \\(y \\geq 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = 3x - 5\\) and \\(g(x) = -4x - 3\\), evaluate \\(fg(4)\\).",
+    "options": [
+      "7",
+      "-31",
+      "-62",
+      "-19"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(g(4) = -4(4) - 3 = -19\\)\n\n\\(f(-19) = 3(-19) - 5 = -62\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(f(x) = -2x + 7\\) and \\(g(x) = 3x + 4\\), evaluate \\(fg(1)\\).",
+    "options": [
+      "7",
+      "-7",
+      "19",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(g(1) = 3(1) + 4 = 7\\)\n\n\\(f(7) = -2(7) + 7 = -7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the range of the function \\(f(x) = x^{2} - 10x + 27\\) for real values of \\(x\\).",
+    "options": [
+      "\\(y \\geq 2\\)",
+      "\\(y \\leq 2\\)",
+      "\\(y \\geq 5\\)",
+      "\\(y \\geq 27\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(f(x) = 1(x - 5)^{2} + 2\\)\n\nSince \\(1(x - 5)^{2} \\geq 0\\), the least value of \\(f(x)\\) is 2.\n\nSo the range is \\(y \\geq 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "mAHZJnxbh1UbaHSM4ny8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

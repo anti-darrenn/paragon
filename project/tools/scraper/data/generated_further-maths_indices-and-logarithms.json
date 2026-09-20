@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Simplify \\(x^{15} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{26}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{165}\\)",
+      "\\(x^{27}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{15} \\times x^{11} = x^{26}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{2} 8\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 8 - \\log 2\\)",
+      "\\(\\frac{\\log 2}{\\log 8}\\)",
+      "\\(\\frac{\\log 8}{\\log 2}\\)",
+      "\\(\\log(2 \\times 8)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{2} 8 = \\frac{\\log 8}{\\log 2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 32768\\).",
+    "options": [
+      "40",
+      "5",
+      "6",
+      "32768"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 8.\n\n\\(32768 = 8^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 9 + \\log_{3} 243\\).",
+    "options": [
+      "7",
+      "3",
+      "10",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{3} 9 + \\log_{3} 243 = \\log_{3}(9 \\times 243) = \\log_{3} 2187\\)\n\nSince \\(2187 = 3^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{9} x = 3\\).",
+    "options": [
+      "729",
+      "27",
+      "81",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{9} x = 3\\) means \\(x = 9^{3} = 729\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{8} x = 6\\).",
+    "options": [
+      "6",
+      "48",
+      "32768",
+      "262144"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{8} x = 6\\) means \\(x = 8^{6} = 262144\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(343^{-\\frac{3}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{21}\\)",
+      "\\(343\\)",
+      "\\(\\frac{1}{343}\\)",
+      "\\(\\frac{1}{2401}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 343 is 7.\n\n\\(343^{-\\frac{3}{3}} = \\frac{1}{7^{3}} = \\frac{1}{343}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 36 + \\log_{6} 7776\\).",
+    "options": [
+      "10",
+      "7",
+      "8",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} 36 + \\log_{6} 7776 = \\log_{6}(36 \\times 7776) = \\log_{6} 279936\\)\n\nSince \\(279936 = 6^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{8} x = 2\\).",
+    "options": [
+      "2",
+      "8",
+      "64",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{8} x = 2\\) means \\(x = 8^{2} = 64\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{5} x = 6\\).",
+    "options": [
+      "3125",
+      "6",
+      "30",
+      "15625"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{5} x = 6\\) means \\(x = 5^{6} = 15625\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{8} 7\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 7}{\\log 8}\\)",
+      "\\(\\frac{\\log 8}{\\log 7}\\)",
+      "\\(\\log(8 \\times 7)\\)",
+      "\\(\\log 7 - \\log 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{8} 7 = \\frac{\\log 7}{\\log 8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{2} 7\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 7 - \\log 2\\)",
+      "\\(\\frac{\\log 2}{\\log 7}\\)",
+      "\\(\\log(2 \\times 7)\\)",
+      "\\(\\frac{\\log 7}{\\log 2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{2} 7 = \\frac{\\log 7}{\\log 2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{6} x = 3\\).",
+    "options": [
+      "18",
+      "216",
+      "36",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} x = 3\\) means \\(x = 6^{3} = 216\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{7} 6\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(7 \\times 6)\\)",
+      "\\(\\frac{\\log 7}{\\log 6}\\)",
+      "\\(\\frac{\\log 6}{\\log 7}\\)",
+      "\\(\\log 6 - \\log 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{7} 6 = \\frac{\\log 6}{\\log 7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9^{-\\frac{4}{2}}\\).",
+    "options": [
+      "\\(81\\)",
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{81}\\)",
+      "\\(\\frac{1}{243}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 9 is 3.\n\n\\(9^{-\\frac{4}{2}} = \\frac{1}{3^{4}} = \\frac{1}{81}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(5^{x} = 78125\\).",
+    "options": [
+      "35",
+      "8",
+      "7",
+      "78125"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 5.\n\n\\(78125 = 5^{7}\\)\n\nSo \\(x = 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{6} 8\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(6 \\times 8)\\)",
+      "\\(\\frac{\\log 6}{\\log 8}\\)",
+      "\\(\\log 8 - \\log 6\\)",
+      "\\(\\frac{\\log 8}{\\log 6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{6} 8 = \\frac{\\log 8}{\\log 6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(2^{x} = 128\\).",
+    "options": [
+      "128",
+      "8",
+      "14",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 2.\n\n\\(128 = 2^{7}\\)\n\nSo \\(x = 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 5\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(9 \\times 5)\\)",
+      "\\(\\frac{\\log 5}{\\log 9}\\)",
+      "\\(\\frac{\\log 9}{\\log 5}\\)",
+      "\\(\\log 5 - \\log 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 5 = \\frac{\\log 5}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 216\\).",
+    "options": [
+      "4",
+      "18",
+      "3",
+      "216"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 6.\n\n\\(216 = 6^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{60}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{12} = x^{17}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(3^{x} = 27\\).",
+    "options": [
+      "3",
+      "9",
+      "27",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 3.\n\n\\(27 = 3^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 4\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 4}{\\log 9}\\)",
+      "\\(\\log 4 - \\log 9\\)",
+      "\\(\\frac{\\log 9}{\\log 4}\\)",
+      "\\(\\log(9 \\times 4)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 4 = \\frac{\\log 4}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{7} x = 4\\).",
+    "options": [
+      "4",
+      "2401",
+      "343",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{7} x = 4\\) means \\(x = 7^{4} = 2401\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 16777216\\).",
+    "options": [
+      "9",
+      "16777216",
+      "64",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 8.\n\n\\(16777216 = 8^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 16807 + \\log_{7} 2401\\).",
+    "options": [
+      "1",
+      "20",
+      "10",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{7} 16807 + \\log_{7} 2401 = \\log_{7}(16807 \\times 2401) = \\log_{7} 40353607\\)\n\nSince \\(40353607 = 7^{9}\\), the value is 9.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(3^{x} = 243\\).",
+    "options": [
+      "5",
+      "6",
+      "15",
+      "243"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 3.\n\n\\(243 = 3^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 25 + \\log_{5} 625\\).",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} 25 + \\log_{5} 625 = \\log_{5}(25 \\times 625) = \\log_{5} 15625\\)\n\nSince \\(15625 = 5^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{4} x = 4\\).",
+    "options": [
+      "4",
+      "256",
+      "64",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{4} x = 4\\) means \\(x = 4^{4} = 256\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 262144\\).",
+    "options": [
+      "48",
+      "6",
+      "262144",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 8.\n\n\\(262144 = 8^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(3^{x} = 6561\\).",
+    "options": [
+      "6561",
+      "24",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 3.\n\n\\(6561 = 3^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(9^{x} = 531441\\).",
+    "options": [
+      "7",
+      "6",
+      "531441",
+      "54"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 9.\n\n\\(531441 = 9^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 7 + \\log_{7} 2401\\).",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{7} 7 + \\log_{7} 2401 = \\log_{7}(7 \\times 2401) = \\log_{7} 16807\\)\n\nSince \\(16807 = 7^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{5} 4\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 4 - \\log 5\\)",
+      "\\(\\log(5 \\times 4)\\)",
+      "\\(\\frac{\\log 5}{\\log 4}\\)",
+      "\\(\\frac{\\log 4}{\\log 5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{5} 4 = \\frac{\\log 4}{\\log 5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16^{-\\frac{2}{2}}\\).",
+    "options": [
+      "\\(16\\)",
+      "\\(\\frac{1}{64}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{16}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 16 is 4.\n\n\\(16^{-\\frac{2}{2}} = \\frac{1}{4^{2}} = \\frac{1}{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 16807\\).",
+    "options": [
+      "6",
+      "35",
+      "16807",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 7.\n\n\\(16807 = 7^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(36^{-\\frac{4}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{24}\\)",
+      "\\(1296\\)",
+      "\\(\\frac{1}{1296}\\)",
+      "\\(\\frac{1}{7776}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 36 is 6.\n\n\\(36^{-\\frac{4}{2}} = \\frac{1}{6^{4}} = \\frac{1}{1296}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{0}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{36}\\)",
+      "\\(x^{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{6} \\times x^{6} = x^{12}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(125^{-\\frac{2}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{25}\\)",
+      "\\(\\frac{1}{125}\\)",
+      "\\(25\\)",
+      "\\(\\frac{1}{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 125 is 5.\n\n\\(125^{-\\frac{2}{3}} = \\frac{1}{5^{2}} = \\frac{1}{25}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 512\\).",
+    "options": [
+      "4",
+      "24",
+      "512",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 8.\n\n\\(512 = 8^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{49}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{0}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{7} \\times x^{7} = x^{14}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 7776 + \\log_{6} 7776\\).",
+    "options": [
+      "11",
+      "25",
+      "0",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{6} 7776 + \\log_{6} 7776 = \\log_{6}(7776 \\times 7776) = \\log_{6} 60466176\\)\n\nSince \\(60466176 = 6^{10}\\), the value is 10.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{3}\\)",
+      "\\(x^{40}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{8} = x^{13}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{4} x = 5\\).",
+    "options": [
+      "256",
+      "1024",
+      "5",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{4} x = 5\\) means \\(x = 4^{5} = 1024\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{70}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{14} = x^{19}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 7 + \\log_{7} 7\\).",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{7} 7 + \\log_{7} 7 = \\log_{7}(7 \\times 7) = \\log_{7} 49\\)\n\nSince \\(49 = 7^{2}\\), the value is 2.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 5764801\\).",
+    "options": [
+      "56",
+      "9",
+      "8",
+      "5764801"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 7.\n\n\\(5764801 = 7^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 32768 + \\log_{8} 4096\\).",
+    "options": [
+      "9",
+      "1",
+      "10",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{8} 32768 + \\log_{8} 4096 = \\log_{8}(32768 \\times 4096) = \\log_{8} 134217728\\)\n\nSince \\(134217728 = 8^{9}\\), the value is 9.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 27 + \\log_{3} 3\\).",
+    "options": [
+      "2",
+      "5",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{3} 27 + \\log_{3} 3 = \\log_{3}(27 \\times 3) = \\log_{3} 81\\)\n\nSince \\(81 = 3^{4}\\), the value is 4.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 343 + \\log_{7} 343\\).",
+    "options": [
+      "9",
+      "7",
+      "0",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{7} 343 + \\log_{7} 343 = \\log_{7}(343 \\times 343) = \\log_{7} 117649\\)\n\nSince \\(117649 = 7^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{2} 4\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 4}{\\log 2}\\)",
+      "\\(\\log(2 \\times 4)\\)",
+      "\\(\\frac{\\log 2}{\\log 4}\\)",
+      "\\(\\log 4 - \\log 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{2} 4 = \\frac{\\log 4}{\\log 2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(64^{-\\frac{2}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{1}{64}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 64 is 4.\n\n\\(64^{-\\frac{2}{3}} = \\frac{1}{4^{2}} = \\frac{1}{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{3} 4\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 4}{\\log 3}\\)",
+      "\\(\\log(3 \\times 4)\\)",
+      "\\(\\log 4 - \\log 3\\)",
+      "\\(\\frac{\\log 3}{\\log 4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{3} 4 = \\frac{\\log 4}{\\log 3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 4 + \\log_{2} 2\\).",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{2} 4 + \\log_{2} 2 = \\log_{2}(4 \\times 2) = \\log_{2} 8\\)\n\nSince \\(8 = 2^{3}\\), the value is 3.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{2} x = 3\\).",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{2} x = 3\\) means \\(x = 2^{3} = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 2401\\).",
+    "options": [
+      "2401",
+      "5",
+      "28",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 7.\n\n\\(2401 = 7^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{7} 9\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(7 \\times 9)\\)",
+      "\\(\\log 9 - \\log 7\\)",
+      "\\(\\frac{\\log 7}{\\log 9}\\)",
+      "\\(\\frac{\\log 9}{\\log 7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{7} 9 = \\frac{\\log 9}{\\log 7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(4^{x} = 4096\\).",
+    "options": [
+      "7",
+      "24",
+      "6",
+      "4096"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 4.\n\n\\(4096 = 4^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 8 + \\log_{8} 4096\\).",
+    "options": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{8} 8 + \\log_{8} 4096 = \\log_{8}(8 \\times 4096) = \\log_{8} 32768\\)\n\nSince \\(32768 = 8^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{2} x = 5\\).",
+    "options": [
+      "10",
+      "5",
+      "32",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{2} x = 5\\) means \\(x = 2^{5} = 32\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{13}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{52}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{4} \\times x^{13} = x^{17}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(5^{x} = 390625\\).",
+    "options": [
+      "390625",
+      "9",
+      "8",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 5.\n\n\\(390625 = 5^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{13}\\).",
+    "options": [
+      "\\(x^{6}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{91}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{7} \\times x^{13} = x^{20}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(64^{-\\frac{3}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{256}\\)",
+      "\\(64\\)",
+      "\\(\\frac{1}{64}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 64 is 4.\n\n\\(64^{-\\frac{3}{3}} = \\frac{1}{4^{3}} = \\frac{1}{64}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 4 + \\log_{4} 16\\).",
+    "options": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{4} 4 + \\log_{4} 16 = \\log_{4}(4 \\times 16) = \\log_{4} 64\\)\n\nSince \\(64 = 4^{3}\\), the value is 3.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(8^{-\\frac{4}{3}}\\).",
+    "options": [
+      "\\(16\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{1}{32}\\)",
+      "\\(\\frac{1}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 8 is 2.\n\n\\(8^{-\\frac{4}{3}} = \\frac{1}{2^{4}} = \\frac{1}{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(4^{x} = 1024\\).",
+    "options": [
+      "1024",
+      "5",
+      "20",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 4.\n\n\\(1024 = 4^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{15}\\)",
+      "\\(x^{50}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{5} = x^{15}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{7} x = 2\\).",
+    "options": [
+      "49",
+      "7",
+      "2",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{7} x = 2\\) means \\(x = 7^{2} = 49\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 1296\\).",
+    "options": [
+      "4",
+      "24",
+      "5",
+      "1296"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 6.\n\n\\(1296 = 6^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{77}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{7} \\times x^{11} = x^{18}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{4} x = 6\\).",
+    "options": [
+      "1024",
+      "6",
+      "24",
+      "4096"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{4} x = 6\\) means \\(x = 4^{6} = 4096\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 27 + \\log_{3} 27\\).",
+    "options": [
+      "6",
+      "9",
+      "7",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{3} 27 + \\log_{3} 27 = \\log_{3}(27 \\times 27) = \\log_{3} 729\\)\n\nSince \\(729 = 3^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{4} x = 3\\).",
+    "options": [
+      "3",
+      "64",
+      "16",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{4} x = 3\\) means \\(x = 4^{3} = 64\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{5} x = 2\\).",
+    "options": [
+      "10",
+      "2",
+      "25",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} x = 2\\) means \\(x = 5^{2} = 25\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(3^{x} = 9\\).",
+    "options": [
+      "3",
+      "2",
+      "9",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 3.\n\n\\(9 = 3^{2}\\)\n\nSo \\(x = 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(4^{x} = 64\\).",
+    "options": [
+      "64",
+      "4",
+      "3",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 4.\n\n\\(64 = 4^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 7\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 7 - \\log 9\\)",
+      "\\(\\log(9 \\times 7)\\)",
+      "\\(\\frac{\\log 9}{\\log 7}\\)",
+      "\\(\\frac{\\log 7}{\\log 9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 7 = \\frac{\\log 7}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{32}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{8} \\times x^{4} = x^{12}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 16 + \\log_{2} 2\\).",
+    "options": [
+      "6",
+      "4",
+      "3",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{2} 16 + \\log_{2} 2 = \\log_{2}(16 \\times 2) = \\log_{2} 32\\)\n\nSince \\(32 = 2^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(343^{-\\frac{2}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{14}\\)",
+      "\\(\\frac{1}{343}\\)",
+      "\\(49\\)",
+      "\\(\\frac{1}{49}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 343 is 7.\n\n\\(343^{-\\frac{2}{3}} = \\frac{1}{7^{2}} = \\frac{1}{49}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{15} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{20}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{75}\\)",
+      "\\(x^{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{15} \\times x^{5} = x^{20}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{1}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{6} = x^{11}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(27^{-\\frac{2}{3}}\\).",
+    "options": [
+      "\\(9\\)",
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{27}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 27 is 3.\n\n\\(27^{-\\frac{2}{3}} = \\frac{1}{3^{2}} = \\frac{1}{9}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(2^{x} = 16\\).",
+    "options": [
+      "8",
+      "16",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 2.\n\n\\(16 = 2^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{6} x = 2\\).",
+    "options": [
+      "6",
+      "2",
+      "36",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{6} x = 2\\) means \\(x = 6^{2} = 36\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 16 + \\log_{2} 16\\).",
+    "options": [
+      "9",
+      "16",
+      "0",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{2} 16 + \\log_{2} 16 = \\log_{2}(16 \\times 16) = \\log_{2} 256\\)\n\nSince \\(256 = 2^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 36\\).",
+    "options": [
+      "12",
+      "2",
+      "3",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 6.\n\n\\(36 = 6^{2}\\)\n\nSo \\(x = 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{154}\\)",
+      "\\(x^{25}\\)",
+      "\\(x^{26}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{14} = x^{25}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 823543\\).",
+    "options": [
+      "8",
+      "49",
+      "7",
+      "823543"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 7.\n\n\\(823543 = 7^{7}\\)\n\nSo \\(x = 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16^{-\\frac{3}{2}}\\).",
+    "options": [
+      "\\(64\\)",
+      "\\(\\frac{1}{256}\\)",
+      "\\(\\frac{1}{64}\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 16 is 4.\n\n\\(16^{-\\frac{3}{2}} = \\frac{1}{4^{3}} = \\frac{1}{64}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{3}\\)",
+      "\\(x^{70}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{7} = x^{17}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 49\\).",
+    "options": [
+      "49",
+      "3",
+      "2",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 7.\n\n\\(49 = 7^{2}\\)\n\nSo \\(x = 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{99}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{21}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{9} = x^{20}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{4} 8\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 8}{\\log 4}\\)",
+      "\\(\\log(4 \\times 8)\\)",
+      "\\(\\frac{\\log 4}{\\log 8}\\)",
+      "\\(\\log 8 - \\log 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{4} 8 = \\frac{\\log 8}{\\log 4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{7} x = 5\\).",
+    "options": [
+      "2401",
+      "35",
+      "5",
+      "16807"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{7} x = 5\\) means \\(x = 7^{5} = 16807\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 512 + \\log_{8} 4096\\).",
+    "options": [
+      "12",
+      "8",
+      "7",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{8} 512 + \\log_{8} 4096 = \\log_{8}(512 \\times 4096) = \\log_{8} 2097152\\)\n\nSince \\(2097152 = 8^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{8} x = 3\\).",
+    "options": [
+      "64",
+      "24",
+      "512",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{8} x = 3\\) means \\(x = 8^{3} = 512\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(9^{x} = 6561\\).",
+    "options": [
+      "4",
+      "5",
+      "6561",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 9.\n\n\\(6561 = 9^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{2} 6\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 2}{\\log 6}\\)",
+      "\\(\\frac{\\log 6}{\\log 2}\\)",
+      "\\(\\log(2 \\times 6)\\)",
+      "\\(\\log 6 - \\log 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{2} 6 = \\frac{\\log 6}{\\log 2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{4} x = 2\\).",
+    "options": [
+      "16",
+      "8",
+      "2",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{4} x = 2\\) means \\(x = 4^{2} = 16\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{8} 2\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 2}{\\log 8}\\)",
+      "\\(\\frac{\\log 8}{\\log 2}\\)",
+      "\\(\\log(8 \\times 2)\\)",
+      "\\(\\log 2 - \\log 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{8} 2 = \\frac{\\log 2}{\\log 8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 46656\\).",
+    "options": [
+      "6",
+      "36",
+      "46656",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 6.\n\n\\(46656 = 6^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{8}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{2} = x^{7}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{4} 7\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 4}{\\log 7}\\)",
+      "\\(\\frac{\\log 7}{\\log 4}\\)",
+      "\\(\\log 7 - \\log 4\\)",
+      "\\(\\log(4 \\times 7)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{4} 7 = \\frac{\\log 7}{\\log 4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{9} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{5}\\)",
+      "\\(x^{126}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{23}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{9} \\times x^{14} = x^{23}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{8} x = 4\\).",
+    "options": [
+      "32",
+      "4096",
+      "4",
+      "512"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{8} x = 4\\) means \\(x = 8^{4} = 4096\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 117649\\).",
+    "options": [
+      "117649",
+      "6",
+      "42",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 7.\n\n\\(117649 = 7^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(125^{-\\frac{4}{3}}\\).",
+    "options": [
+      "\\(625\\)",
+      "\\(\\frac{1}{3125}\\)",
+      "\\(\\frac{1}{20}\\)",
+      "\\(\\frac{1}{625}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 125 is 5.\n\n\\(125^{-\\frac{4}{3}} = \\frac{1}{5^{4}} = \\frac{1}{625}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 2097152\\).",
+    "options": [
+      "2097152",
+      "8",
+      "56",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 8.\n\n\\(2097152 = 8^{7}\\)\n\nSo \\(x = 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 32768 + \\log_{8} 8\\).",
+    "options": [
+      "7",
+      "5",
+      "4",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{8} 32768 + \\log_{8} 8 = \\log_{8}(32768 \\times 8) = \\log_{8} 262144\\)\n\nSince \\(262144 = 8^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9^{-\\frac{2}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(9\\)",
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{1}{27}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 9 is 3.\n\n\\(9^{-\\frac{2}{2}} = \\frac{1}{3^{2}} = \\frac{1}{9}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 1024 + \\log_{4} 256\\).",
+    "options": [
+      "20",
+      "1",
+      "10",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{4} 1024 + \\log_{4} 256 = \\log_{4}(1024 \\times 256) = \\log_{4} 262144\\)\n\nSince \\(262144 = 4^{9}\\), the value is 9.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 2401 + \\log_{7} 343\\).",
+    "options": [
+      "1",
+      "7",
+      "12",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{7} 2401 + \\log_{7} 343 = \\log_{7}(2401 \\times 343) = \\log_{7} 823543\\)\n\nSince \\(823543 = 7^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 8 + \\log_{8} 32768\\).",
+    "options": [
+      "4",
+      "7",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{8} 8 + \\log_{8} 32768 = \\log_{8}(8 \\times 32768) = \\log_{8} 262144\\)\n\nSince \\(262144 = 8^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{6} x = 5\\).",
+    "options": [
+      "30",
+      "5",
+      "1296",
+      "7776"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{6} x = 5\\) means \\(x = 6^{5} = 7776\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{4} 9\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 4}{\\log 9}\\)",
+      "\\(\\frac{\\log 9}{\\log 4}\\)",
+      "\\(\\log 9 - \\log 4\\)",
+      "\\(\\log(4 \\times 9)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{4} 9 = \\frac{\\log 9}{\\log 4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{6} 5\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(6 \\times 5)\\)",
+      "\\(\\frac{\\log 5}{\\log 6}\\)",
+      "\\(\\log 5 - \\log 6\\)",
+      "\\(\\frac{\\log 6}{\\log 5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{6} 5 = \\frac{\\log 5}{\\log 6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 64\\).",
+    "options": [
+      "2",
+      "3",
+      "64",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 8.\n\n\\(64 = 8^{2}\\)\n\nSo \\(x = 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 8 + \\log_{2} 32\\).",
+    "options": [
+      "15",
+      "8",
+      "9",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{2} 8 + \\log_{2} 32 = \\log_{2}(8 \\times 32) = \\log_{2} 256\\)\n\nSince \\(256 = 2^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{64}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{0}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{8} \\times x^{8} = x^{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(64^{-\\frac{4}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{256}\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(256\\)",
+      "\\(\\frac{1}{1024}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 64 is 4.\n\n\\(64^{-\\frac{4}{3}} = \\frac{1}{4^{4}} = \\frac{1}{256}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(4^{x} = 16\\).",
+    "options": [
+      "3",
+      "8",
+      "2",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 4.\n\n\\(16 = 4^{2}\\)\n\nSo \\(x = 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 279936\\).",
+    "options": [
+      "42",
+      "7",
+      "8",
+      "279936"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 6.\n\n\\(279936 = 6^{7}\\)\n\nSo \\(x = 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{9} x = 6\\).",
+    "options": [
+      "59049",
+      "54",
+      "531441",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{9} x = 6\\) means \\(x = 9^{6} = 531441\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 6 + \\log_{6} 1296\\).",
+    "options": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{6} 6 + \\log_{6} 1296 = \\log_{6}(6 \\times 1296) = \\log_{6} 7776\\)\n\nSince \\(7776 = 6^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{6} x = 6\\).",
+    "options": [
+      "6",
+      "36",
+      "46656",
+      "7776"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{6} x = 6\\) means \\(x = 6^{6} = 46656\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 3125 + \\log_{5} 125\\).",
+    "options": [
+      "9",
+      "2",
+      "8",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} 3125 + \\log_{5} 125 = \\log_{5}(3125 \\times 125) = \\log_{5} 390625\\)\n\nSince \\(390625 = 5^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{5} x = 4\\).",
+    "options": [
+      "625",
+      "125",
+      "4",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{5} x = 4\\) means \\(x = 5^{4} = 625\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 4096 + \\log_{8} 512\\).",
+    "options": [
+      "1",
+      "8",
+      "7",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{8} 4096 + \\log_{8} 512 = \\log_{8}(4096 \\times 512) = \\log_{8} 2097152\\)\n\nSince \\(2097152 = 8^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 32 + \\log_{2} 8\\).",
+    "options": [
+      "15",
+      "8",
+      "2",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{2} 32 + \\log_{2} 8 = \\log_{2}(32 \\times 8) = \\log_{2} 256\\)\n\nSince \\(256 = 2^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{143}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{11} = x^{24}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(27^{-\\frac{4}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{81}\\)",
+      "\\(\\frac{1}{12}\\)",
+      "\\(81\\)",
+      "\\(\\frac{1}{243}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 27 is 3.\n\n\\(27^{-\\frac{4}{3}} = \\frac{1}{3^{4}} = \\frac{1}{81}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{7} x = 3\\).",
+    "options": [
+      "21",
+      "49",
+      "343",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{7} x = 3\\) means \\(x = 7^{3} = 343\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 512 + \\log_{8} 8\\).",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{8} 512 + \\log_{8} 8 = \\log_{8}(512 \\times 8) = \\log_{8} 4096\\)\n\nSince \\(4096 = 8^{4}\\), the value is 4.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{6} x = 4\\).",
+    "options": [
+      "1296",
+      "4",
+      "216",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{6} x = 4\\) means \\(x = 6^{4} = 1296\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{3} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{36}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{3} \\times x^{12} = x^{15}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 4 + \\log_{2} 32\\).",
+    "options": [
+      "7",
+      "8",
+      "3",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{2} 4 + \\log_{2} 32 = \\log_{2}(4 \\times 32) = \\log_{2} 128\\)\n\nSince \\(128 = 2^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(7^{x} = 343\\).",
+    "options": [
+      "4",
+      "21",
+      "3",
+      "343"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 7.\n\n\\(343 = 7^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 1679616\\).",
+    "options": [
+      "1679616",
+      "48",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 6.\n\n\\(1679616 = 6^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{8} 3\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 8}{\\log 3}\\)",
+      "\\(\\log(8 \\times 3)\\)",
+      "\\(\\frac{\\log 3}{\\log 8}\\)",
+      "\\(\\log 3 - \\log 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{8} 3 = \\frac{\\log 3}{\\log 8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{3} = x^{8}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{7} \\times x^{2} = x^{9}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{3} x = 2\\).",
+    "options": [
+      "6",
+      "9",
+      "3",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{3} x = 2\\) means \\(x = 3^{2} = 9\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{4} 3\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 4}{\\log 3}\\)",
+      "\\(\\log(4 \\times 3)\\)",
+      "\\(\\log 3 - \\log 4\\)",
+      "\\(\\frac{\\log 3}{\\log 4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{4} 3 = \\frac{\\log 3}{\\log 4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 216 + \\log_{6} 216\\).",
+    "options": [
+      "7",
+      "6",
+      "9",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} 216 + \\log_{6} 216 = \\log_{6}(216 \\times 216) = \\log_{6} 46656\\)\n\nSince \\(46656 = 6^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 6\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 6}{\\log 9}\\)",
+      "\\(\\frac{\\log 9}{\\log 6}\\)",
+      "\\(\\log 6 - \\log 9\\)",
+      "\\(\\log(9 \\times 6)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 6 = \\frac{\\log 6}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{15}\\).",
+    "options": [
+      "\\(x^{195}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{28}\\)",
+      "\\(x^{29}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{15} = x^{28}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{72}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{6} \\times x^{12} = x^{18}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{4}\\)",
+      "\\(x^{60}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{6} = x^{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(9^{x} = 43046721\\).",
+    "options": [
+      "9",
+      "43046721",
+      "8",
+      "72"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 9.\n\n\\(43046721 = 9^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(216^{-\\frac{3}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{18}\\)",
+      "\\(216\\)",
+      "\\(\\frac{1}{216}\\)",
+      "\\(\\frac{1}{1296}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 216 is 6.\n\n\\(216^{-\\frac{3}{3}} = \\frac{1}{6^{3}} = \\frac{1}{216}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 125 + \\log_{5} 125\\).",
+    "options": [
+      "7",
+      "9",
+      "0",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{5} 125 + \\log_{5} 125 = \\log_{5}(125 \\times 125) = \\log_{5} 15625\\)\n\nSince \\(15625 = 5^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{-\\frac{3}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(8\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 4 is 2.\n\n\\(4^{-\\frac{3}{2}} = \\frac{1}{2^{3}} = \\frac{1}{8}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 7776 + \\log_{6} 36\\).",
+    "options": [
+      "8",
+      "7",
+      "10",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} 7776 + \\log_{6} 36 = \\log_{6}(7776 \\times 36) = \\log_{6} 279936\\)\n\nSince \\(279936 = 6^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{7} 8\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 8 - \\log 7\\)",
+      "\\(\\frac{\\log 7}{\\log 8}\\)",
+      "\\(\\log(7 \\times 8)\\)",
+      "\\(\\frac{\\log 8}{\\log 7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{7} 8 = \\frac{\\log 8}{\\log 7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(36^{-\\frac{2}{2}}\\).",
+    "options": [
+      "\\(36\\)",
+      "\\(\\frac{1}{36}\\)",
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{216}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 36 is 6.\n\n\\(36^{-\\frac{2}{2}} = \\frac{1}{6^{2}} = \\frac{1}{36}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(2^{x} = 8\\).",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 2.\n\n\\(8 = 2^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{22}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{2} = x^{13}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{20}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{96}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{8} \\times x^{12} = x^{20}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 3125 + \\log_{5} 3125\\).",
+    "options": [
+      "11",
+      "0",
+      "10",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} 3125 + \\log_{5} 3125 = \\log_{5}(3125 \\times 3125) = \\log_{5} 9765625\\)\n\nSince \\(9765625 = 5^{10}\\), the value is 10.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{6} 4\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 6}{\\log 4}\\)",
+      "\\(\\frac{\\log 4}{\\log 6}\\)",
+      "\\(\\log 4 - \\log 6\\)",
+      "\\(\\log(6 \\times 4)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{6} 4 = \\frac{\\log 4}{\\log 6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{3} x = 6\\).",
+    "options": [
+      "6",
+      "18",
+      "729",
+      "243"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{3} x = 6\\) means \\(x = 3^{6} = 729\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(5^{x} = 3125\\).",
+    "options": [
+      "3125",
+      "6",
+      "5",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 5.\n\n\\(3125 = 5^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(27^{-\\frac{3}{3}}\\).",
+    "options": [
+      "\\(27\\)",
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{1}{27}\\)",
+      "\\(\\frac{1}{81}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 27 is 3.\n\n\\(27^{-\\frac{3}{3}} = \\frac{1}{3^{3}} = \\frac{1}{27}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{14} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{19}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{70}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{14} \\times x^{5} = x^{19}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{66}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{6} = x^{17}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{13}\\).",
+    "options": [
+      "\\(x^{0}\\)",
+      "\\(x^{169}\\)",
+      "\\(x^{27}\\)",
+      "\\(x^{26}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{13} = x^{26}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 32768 + \\log_{8} 32768\\).",
+    "options": [
+      "11",
+      "25",
+      "10",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{8} 32768 + \\log_{8} 32768 = \\log_{8}(32768 \\times 32768) = \\log_{8} 1073741824\\)\n\nSince \\(1073741824 = 8^{10}\\), the value is 10.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{15}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{36}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{12} \\times x^{3} = x^{15}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{4} 6\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 6 - \\log 4\\)",
+      "\\(\\frac{\\log 4}{\\log 6}\\)",
+      "\\(\\frac{\\log 6}{\\log 4}\\)",
+      "\\(\\log(4 \\times 6)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{4} 6 = \\frac{\\log 6}{\\log 4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{7} 2\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(7 \\times 2)\\)",
+      "\\(\\frac{\\log 7}{\\log 2}\\)",
+      "\\(\\log 2 - \\log 7\\)",
+      "\\(\\frac{\\log 2}{\\log 7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{7} 2 = \\frac{\\log 2}{\\log 7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{9} x = 4\\).",
+    "options": [
+      "729",
+      "4",
+      "36",
+      "6561"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{9} x = 4\\) means \\(x = 9^{4} = 6561\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{2} = x^{12}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(8^{x} = 4096\\).",
+    "options": [
+      "32",
+      "4",
+      "4096",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 8.\n\n\\(4096 = 8^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(25^{-\\frac{2}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{25}\\)",
+      "\\(25\\)",
+      "\\(\\frac{1}{10}\\)",
+      "\\(\\frac{1}{125}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 25 is 5.\n\n\\(25^{-\\frac{2}{2}} = \\frac{1}{5^{2}} = \\frac{1}{25}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(5^{x} = 15625\\).",
+    "options": [
+      "7",
+      "15625",
+      "6",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 5.\n\n\\(15625 = 5^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{117}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{23}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{9} = x^{22}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 125 + \\log_{5} 5\\).",
+    "options": [
+      "5",
+      "2",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} 125 + \\log_{5} 5 = \\log_{5}(125 \\times 5) = \\log_{5} 625\\)\n\nSince \\(625 = 5^{4}\\), the value is 4.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{55}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{5} = x^{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(9^{x} = 59049\\).",
+    "options": [
+      "45",
+      "5",
+      "59049",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 9.\n\n\\(59049 = 9^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{8} 6\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 6}{\\log 8}\\)",
+      "\\(\\log(8 \\times 6)\\)",
+      "\\(\\log 6 - \\log 8\\)",
+      "\\(\\frac{\\log 8}{\\log 6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{8} 6 = \\frac{\\log 6}{\\log 8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 3 + \\log_{3} 81\\).",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{3} 3 + \\log_{3} 81 = \\log_{3}(3 \\times 81) = \\log_{3} 243\\)\n\nSince \\(243 = 3^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 1024 + \\log_{4} 16\\).",
+    "options": [
+      "3",
+      "8",
+      "7",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{4} 1024 + \\log_{4} 16 = \\log_{4}(1024 \\times 16) = \\log_{4} 16384\\)\n\nSince \\(16384 = 4^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(4^{x} = 256\\).",
+    "options": [
+      "5",
+      "4",
+      "256",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 4.\n\n\\(256 = 4^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{80}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{8} \\times x^{10} = x^{18}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{8} 5\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 5}{\\log 8}\\)",
+      "\\(\\frac{\\log 8}{\\log 5}\\)",
+      "\\(\\log 5 - \\log 8\\)",
+      "\\(\\log(8 \\times 5)\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{8} 5 = \\frac{\\log 5}{\\log 8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 3\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 9}{\\log 3}\\)",
+      "\\(\\log(9 \\times 3)\\)",
+      "\\(\\frac{\\log 3}{\\log 9}\\)",
+      "\\(\\log 3 - \\log 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 3 = \\frac{\\log 3}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{5} x = 5\\).",
+    "options": [
+      "5",
+      "25",
+      "625",
+      "3125"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{5} x = 5\\) means \\(x = 5^{5} = 3125\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{15} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{30}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{15} \\times x^{2} = x^{17}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{6} \\times x^{4} = x^{10}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 32768 + \\log_{8} 64\\).",
+    "options": [
+      "10",
+      "8",
+      "3",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{8} 32768 + \\log_{8} 64 = \\log_{8}(32768 \\times 64) = \\log_{8} 2097152\\)\n\nSince \\(2097152 = 8^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(125^{-\\frac{3}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{625}\\)",
+      "\\(125\\)",
+      "\\(\\frac{1}{125}\\)",
+      "\\(\\frac{1}{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 125 is 5.\n\n\\(125^{-\\frac{3}{3}} = \\frac{1}{5^{3}} = \\frac{1}{125}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{3} x = 4\\).",
+    "options": [
+      "4",
+      "27",
+      "12",
+      "81"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{3} x = 4\\) means \\(x = 3^{4} = 81\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{14} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{29}\\)",
+      "\\(x^{0}\\)",
+      "\\(x^{196}\\)",
+      "\\(x^{28}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{14} \\times x^{14} = x^{28}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{16}\\)",
+      "\\(x^{55}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{17}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{11} = x^{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 81 + \\log_{3} 9\\).",
+    "options": [
+      "6",
+      "2",
+      "7",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{3} 81 + \\log_{3} 9 = \\log_{3}(81 \\times 9) = \\log_{3} 729\\)\n\nSince \\(729 = 3^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(3^{x} = 81\\).",
+    "options": [
+      "12",
+      "4",
+      "5",
+      "81"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 3.\n\n\\(81 = 3^{4}\\)\n\nSo \\(x = 4\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{21}\\)",
+      "\\(x^{100}\\)",
+      "\\(x^{0}\\)",
+      "\\(x^{20}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{10} = x^{20}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{13}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{35}\\)",
+      "\\(x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{7} = x^{12}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 8 + \\log_{8} 8\\).",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{8} 8 + \\log_{8} 8 = \\log_{8}(8 \\times 8) = \\log_{8} 64\\)\n\nSince \\(64 = 8^{2}\\), the value is 2.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{4} 2\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(4 \\times 2)\\)",
+      "\\(\\frac{\\log 4}{\\log 2}\\)",
+      "\\(\\frac{\\log 2}{\\log 4}\\)",
+      "\\(\\log 2 - \\log 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{4} 2 = \\frac{\\log 2}{\\log 4}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 243 + \\log_{3} 81\\).",
+    "options": [
+      "10",
+      "20",
+      "1",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{3} 243 + \\log_{3} 81 = \\log_{3}(243 \\times 81) = \\log_{3} 19683\\)\n\nSince \\(19683 = 3^{9}\\), the value is 9.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{9} x = 5\\).",
+    "options": [
+      "45",
+      "5",
+      "59049",
+      "6561"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{9} x = 5\\) means \\(x = 9^{5} = 59049\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{9} x = 2\\).",
+    "options": [
+      "81",
+      "18",
+      "9",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{9} x = 2\\) means \\(x = 9^{2} = 81\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{3} = x^{13}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{6} 2\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(6 \\times 2)\\)",
+      "\\(\\log 2 - \\log 6\\)",
+      "\\(\\frac{\\log 2}{\\log 6}\\)",
+      "\\(\\frac{\\log 6}{\\log 2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{6} 2 = \\frac{\\log 2}{\\log 6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(25^{-\\frac{4}{2}}\\).",
+    "options": [
+      "\\(625\\)",
+      "\\(\\frac{1}{3125}\\)",
+      "\\(\\frac{1}{625}\\)",
+      "\\(\\frac{1}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 25 is 5.\n\n\\(25^{-\\frac{4}{2}} = \\frac{1}{5^{4}} = \\frac{1}{625}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(49^{-\\frac{4}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{16807}\\)",
+      "\\(\\frac{1}{28}\\)",
+      "\\(2401\\)",
+      "\\(\\frac{1}{2401}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 49 is 7.\n\n\\(49^{-\\frac{4}{2}} = \\frac{1}{7^{4}} = \\frac{1}{2401}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 1296 + \\log_{6} 216\\).",
+    "options": [
+      "8",
+      "7",
+      "12",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} 1296 + \\log_{6} 216 = \\log_{6}(1296 \\times 216) = \\log_{6} 279936\\)\n\nSince \\(279936 = 6^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{2} \\times x^{6} = x^{8}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{48}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{4} \\times x^{12} = x^{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 64 + \\log_{8} 8\\).",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{8} 64 + \\log_{8} 8 = \\log_{8}(64 \\times 8) = \\log_{8} 512\\)\n\nSince \\(512 = 8^{3}\\), the value is 3.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{182}\\)",
+      "\\(x^{28}\\)",
+      "\\(x^{27}\\)",
+      "\\(x^{1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{14} = x^{27}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{2} 9\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 9}{\\log 2}\\)",
+      "\\(\\log(2 \\times 9)\\)",
+      "\\(\\log 9 - \\log 2\\)",
+      "\\(\\frac{\\log 2}{\\log 9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{2} 9 = \\frac{\\log 9}{\\log 2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(2^{x} = 256\\).",
+    "options": [
+      "256",
+      "16",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 2.\n\n\\(256 = 2^{8}\\)\n\nSo \\(x = 8\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{33}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{3} = x^{14}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 4 + \\log_{4} 256\\).",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{4} 4 + \\log_{4} 256 = \\log_{4}(4 \\times 256) = \\log_{4} 1024\\)\n\nSince \\(1024 = 4^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(5^{x} = 25\\).",
+    "options": [
+      "10",
+      "3",
+      "2",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 5.\n\n\\(25 = 5^{2}\\)\n\nSo \\(x = 2\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{5} 3\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 3 - \\log 5\\)",
+      "\\(\\frac{\\log 5}{\\log 3}\\)",
+      "\\(\\frac{\\log 3}{\\log 5}\\)",
+      "\\(\\log(5 \\times 3)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{5} 3 = \\frac{\\log 3}{\\log 5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{16}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{39}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{3} = x^{16}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{9} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{0}\\)",
+      "\\(x^{81}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{9} \\times x^{9} = x^{18}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{15}\\).",
+    "options": [
+      "\\(x^{5}\\)",
+      "\\(x^{150}\\)",
+      "\\(x^{26}\\)",
+      "\\(x^{25}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{15} = x^{25}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{5} \\times x^{4} = x^{9}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{9} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{5}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{36}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{9} \\times x^{4} = x^{13}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{2} x = 6\\).",
+    "options": [
+      "12",
+      "6",
+      "32",
+      "64"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{2} x = 6\\) means \\(x = 2^{6} = 64\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{9} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{21}\\)",
+      "\\(x^{3}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{108}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{9} \\times x^{12} = x^{21}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{2} \\times x^{9} = x^{11}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(49^{-\\frac{2}{2}}\\).",
+    "options": [
+      "\\(49\\)",
+      "\\(\\frac{1}{49}\\)",
+      "\\(\\frac{1}{343}\\)",
+      "\\(\\frac{1}{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 49 is 7.\n\n\\(49^{-\\frac{2}{2}} = \\frac{1}{7^{2}} = \\frac{1}{49}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 64 + \\log_{4} 1024\\).",
+    "options": [
+      "9",
+      "8",
+      "15",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{4} 64 + \\log_{4} 1024 = \\log_{4}(64 \\times 1024) = \\log_{4} 65536\\)\n\nSince \\(65536 = 4^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 343 + \\log_{7} 7\\).",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{7} 343 + \\log_{7} 7 = \\log_{7}(343 \\times 7) = \\log_{7} 2401\\)\n\nSince \\(2401 = 7^{4}\\), the value is 4.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 1296 + \\log_{6} 6\\).",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} 1296 + \\log_{6} 6 = \\log_{6}(1296 \\times 6) = \\log_{6} 7776\\)\n\nSince \\(7776 = 6^{5}\\), the value is 5.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{15} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{45}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{15} \\times x^{3} = x^{18}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(216^{-\\frac{2}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{36}\\)",
+      "\\(\\frac{1}{216}\\)",
+      "\\(36\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 216 is 6.\n\n\\(216^{-\\frac{2}{3}} = \\frac{1}{6^{2}} = \\frac{1}{36}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{15} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{60}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{15} \\times x^{4} = x^{19}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{7} 3\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log(7 \\times 3)\\)",
+      "\\(\\frac{\\log 3}{\\log 7}\\)",
+      "\\(\\frac{\\log 7}{\\log 3}\\)",
+      "\\(\\log 3 - \\log 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{7} 3 = \\frac{\\log 3}{\\log 7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{19}\\)",
+      "\\(x^{78}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{20}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{6} = x^{19}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{120}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{23}\\)",
+      "\\(x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{12} \\times x^{10} = x^{22}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{6} 7\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 7 - \\log 6\\)",
+      "\\(\\frac{\\log 6}{\\log 7}\\)",
+      "\\(\\frac{\\log 7}{\\log 6}\\)",
+      "\\(\\log(6 \\times 7)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{6} 7 = \\frac{\\log 7}{\\log 6}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{21}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{7} \\times x^{3} = x^{10}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 8 + \\log_{2} 16\\).",
+    "options": [
+      "7",
+      "12",
+      "8",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{2} 8 + \\log_{2} 16 = \\log_{2}(8 \\times 16) = \\log_{2} 128\\)\n\nSince \\(128 = 2^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 8 + \\log_{8} 512\\).",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{8} 8 + \\log_{8} 512 = \\log_{8}(8 \\times 512) = \\log_{8} 4096\\)\n\nSince \\(4096 = 8^{4}\\), the value is 4.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{56}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{4} \\times x^{14} = x^{18}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{14}\\).",
+    "options": [
+      "\\(x^{23}\\)",
+      "\\(x^{112}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{8} \\times x^{14} = x^{22}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{5} 9\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 9 - \\log 5\\)",
+      "\\(\\log(5 \\times 9)\\)",
+      "\\(\\frac{\\log 5}{\\log 9}\\)",
+      "\\(\\frac{\\log 9}{\\log 5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{5} 9 = \\frac{\\log 9}{\\log 5}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{3}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{88}\\)",
+      "\\(x^{19}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{8} = x^{19}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{13}\\).",
+    "options": [
+      "\\(x^{130}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{23}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{13} = x^{23}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 3125 + \\log_{5} 5\\).",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} 3125 + \\log_{5} 5 = \\log_{5}(3125 \\times 5) = \\log_{5} 15625\\)\n\nSince \\(15625 = 5^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{3} 9\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 9 - \\log 3\\)",
+      "\\(\\frac{\\log 3}{\\log 9}\\)",
+      "\\(\\log(3 \\times 9)\\)",
+      "\\(\\frac{\\log 9}{\\log 3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{3} 9 = \\frac{\\log 9}{\\log 3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{15}\\).",
+    "options": [
+      "\\(x^{22}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{90}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{6} \\times x^{15} = x^{21}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{3} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{8}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{1}\\)",
+      "\\(x^{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{3} \\times x^{4} = x^{7}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{7} 5\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 7}{\\log 5}\\)",
+      "\\(\\frac{\\log 5}{\\log 7}\\)",
+      "\\(\\log 5 - \\log 7\\)",
+      "\\(\\log(7 \\times 5)\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{7} 5 = \\frac{\\log 5}{\\log 7}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{3} 2\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 2 - \\log 3\\)",
+      "\\(\\log(3 \\times 2)\\)",
+      "\\(\\frac{\\log 2}{\\log 3}\\)",
+      "\\(\\frac{\\log 3}{\\log 2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{3} 2 = \\frac{\\log 2}{\\log 3}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{2} \\times x^{7} = x^{9}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{110}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{1}\\)",
+      "\\(x^{21}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{10} \\times x^{11} = x^{21}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{13}\\).",
+    "options": [
+      "\\(x^{26}\\)",
+      "\\(x^{156}\\)",
+      "\\(x^{25}\\)",
+      "\\(x^{1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{12} \\times x^{13} = x^{25}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{15} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{24}\\)",
+      "\\(x^{23}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{120}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{15} \\times x^{8} = x^{23}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(8^{-\\frac{3}{3}}\\).",
+    "options": [
+      "\\(\\frac{1}{8}\\)",
+      "\\(8\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe cube root of 8 is 2.\n\n\\(8^{-\\frac{3}{3}} = \\frac{1}{2^{3}} = \\frac{1}{8}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(2^{x} = 32\\).",
+    "options": [
+      "10",
+      "6",
+      "5",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express both sides with base 2.\n\n\\(32 = 2^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{1}\\)",
+      "\\(x^{23}\\)",
+      "\\(x^{132}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{11} \\times x^{12} = x^{23}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 1024 + \\log_{4} 64\\).",
+    "options": [
+      "8",
+      "2",
+      "9",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{4} 1024 + \\log_{4} 64 = \\log_{4}(1024 \\times 64) = \\log_{4} 65536\\)\n\nSince \\(65536 = 4^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 2401 + \\log_{7} 49\\).",
+    "options": [
+      "2",
+      "6",
+      "8",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{7} 2401 + \\log_{7} 49 = \\log_{7}(2401 \\times 49) = \\log_{7} 117649\\)\n\nSince \\(117649 = 7^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 2401 + \\log_{7} 16807\\).",
+    "options": [
+      "1",
+      "10",
+      "20",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{7} 2401 + \\log_{7} 16807 = \\log_{7}(2401 \\times 16807) = \\log_{7} 40353607\\)\n\nSince \\(40353607 = 7^{9}\\), the value is 9.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 64 + \\log_{4} 64\\).",
+    "options": [
+      "6",
+      "7",
+      "0",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{4} 64 + \\log_{4} 64 = \\log_{4}(64 \\times 64) = \\log_{4} 4096\\)\n\nSince \\(4096 = 4^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{2} 2 + \\log_{2} 32\\).",
+    "options": [
+      "6",
+      "4",
+      "7",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{2} 2 + \\log_{2} 32 = \\log_{2}(2 \\times 32) = \\log_{2} 64\\)\n\nSince \\(64 = 2^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{13}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{36}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{4} \\times x^{9} = x^{13}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 49 + \\log_{7} 7\\).",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{7} 49 + \\log_{7} 7 = \\log_{7}(49 \\times 7) = \\log_{7} 343\\)\n\nSince \\(343 = 7^{3}\\), the value is 3.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(9^{x} = 729\\).",
+    "options": [
+      "27",
+      "3",
+      "729",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express both sides with base 9.\n\n\\(729 = 9^{3}\\)\n\nSo \\(x = 3\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{7} x = 6\\).",
+    "options": [
+      "117649",
+      "16807",
+      "42",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{7} x = 6\\) means \\(x = 7^{6} = 117649\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16^{-\\frac{4}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{256}\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(256\\)",
+      "\\(\\frac{1}{1024}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 16 is 4.\n\n\\(16^{-\\frac{4}{2}} = \\frac{1}{4^{4}} = \\frac{1}{256}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(6^{x} = 7776\\).",
+    "options": [
+      "5",
+      "30",
+      "6",
+      "7776"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express both sides with base 6.\n\n\\(7776 = 6^{5}\\)\n\nSo \\(x = 5\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(2^{x} = 64\\).",
+    "options": [
+      "64",
+      "12",
+      "7",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 2.\n\n\\(64 = 2^{6}\\)\n\nSo \\(x = 6\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 2\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 2}{\\log 9}\\)",
+      "\\(\\log(9 \\times 2)\\)",
+      "\\(\\log 2 - \\log 9\\)",
+      "\\(\\frac{\\log 9}{\\log 2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 2 = \\frac{\\log 2}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{9} 8\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\frac{\\log 8}{\\log 9}\\)",
+      "\\(\\log(9 \\times 8)\\)",
+      "\\(\\frac{\\log 9}{\\log 8}\\)",
+      "\\(\\log 8 - \\log 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{9} 8 = \\frac{\\log 8}{\\log 9}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{56}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{7} \\times x^{8} = x^{15}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{21}\\)",
+      "\\(x^{96}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{12} \\times x^{8} = x^{20}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{2}\\)",
+      "\\(x^{48}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{6} \\times x^{8} = x^{14}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{15}\\).",
+    "options": [
+      "\\(x^{120}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{23}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{8} \\times x^{15} = x^{23}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 36 + \\log_{6} 1296\\).",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{6} 36 + \\log_{6} 1296 = \\log_{6}(36 \\times 1296) = \\log_{6} 46656\\)\n\nSince \\(46656 = 6^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(36^{-\\frac{3}{2}}\\).",
+    "options": [
+      "\\(\\frac{1}{216}\\)",
+      "\\(\\frac{1}{18}\\)",
+      "\\(216\\)",
+      "\\(\\frac{1}{1296}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{-\\frac{m}{n}} = \\frac{1}{(\\sqrt[n]{a})^{m}}\\)\n\nThe square root of 36 is 6.\n\n\\(36^{-\\frac{3}{2}} = \\frac{1}{6^{3}} = \\frac{1}{216}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 3125 + \\log_{5} 25\\).",
+    "options": [
+      "3",
+      "8",
+      "7",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} 3125 + \\log_{5} 25 = \\log_{5}(3125 \\times 25) = \\log_{5} 78125\\)\n\nSince \\(78125 = 5^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 3 + \\log_{3} 3\\).",
+    "options": [
+      "3",
+      "2",
+      "0",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{3} 3 + \\log_{3} 3 = \\log_{3}(3 \\times 3) = \\log_{3} 9\\)\n\nSince \\(9 = 3^{2}\\), the value is 2.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{5} x = 3\\).",
+    "options": [
+      "25",
+      "15",
+      "125",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{5} x = 3\\) means \\(x = 5^{3} = 125\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 16 + \\log_{4} 4\\).",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{4} 16 + \\log_{4} 4 = \\log_{4}(16 \\times 4) = \\log_{4} 64\\)\n\nSince \\(64 = 4^{3}\\), the value is 3.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{32}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{4} \\times x^{8} = x^{12}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{3} 81 + \\log_{3} 27\\).",
+    "options": [
+      "7",
+      "1",
+      "8",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{3} 81 + \\log_{3} 27 = \\log_{3}(81 \\times 27) = \\log_{3} 2187\\)\n\nSince \\(2187 = 3^{7}\\), the value is 7.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(\\log_{8} x = 5\\).",
+    "options": [
+      "32768",
+      "5",
+      "4096",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{8} x = 5\\) means \\(x = 8^{5} = 32768\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{7} 16807 + \\log_{7} 16807\\).",
+    "options": [
+      "10",
+      "11",
+      "25",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\log_{7} 16807 + \\log_{7} 16807 = \\log_{7}(16807 \\times 16807) = \\log_{7} 282475249\\)\n\nSince \\(282475249 = 7^{10}\\), the value is 10.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{8} 64 + \\log_{8} 4096\\).",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{8} 64 + \\log_{8} 4096 = \\log_{8}(64 \\times 4096) = \\log_{8} 262144\\)\n\nSince \\(262144 = 8^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve for \\(x\\): \\(4^{x} = 16384\\).",
+    "options": [
+      "16384",
+      "28",
+      "8",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express both sides with base 4.\n\n\\(16384 = 4^{7}\\)\n\nSo \\(x = 7\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{13} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{22}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{104}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{13} \\times x^{8} = x^{21}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 25 + \\log_{5} 5\\).",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{5} 25 + \\log_{5} 5 = \\log_{5}(25 \\times 5) = \\log_{5} 125\\)\n\nSince \\(125 = 5^{3}\\), the value is 3.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{6} 6 + \\log_{6} 7776\\).",
+    "options": [
+      "4",
+      "7",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\log_{6} 6 + \\log_{6} 7776 = \\log_{6}(6 \\times 7776) = \\log_{6} 46656\\)\n\nSince \\(46656 = 6^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 1024 + \\log_{4} 1024\\).",
+    "options": [
+      "0",
+      "25",
+      "11",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{4} 1024 + \\log_{4} 1024 = \\log_{4}(1024 \\times 1024) = \\log_{4} 1048576\\)\n\nSince \\(1048576 = 4^{10}\\), the value is 10.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\log_{8} 4\\) in terms of common logarithms.",
+    "options": [
+      "\\(\\log 4 - \\log 8\\)",
+      "\\(\\frac{\\log 8}{\\log 4}\\)",
+      "\\(\\log(8 \\times 4)\\)",
+      "\\(\\frac{\\log 4}{\\log 8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the change of base rule, \\(\\log_{a} b = \\frac{\\log b}{\\log a}\\).\n\nSo \\(\\log_{8} 4 = \\frac{\\log 4}{\\log 8}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{3} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{27}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{3} \\times x^{9} = x^{12}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 625 + \\log_{5} 625\\).",
+    "options": [
+      "0",
+      "8",
+      "16",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\log_{5} 625 + \\log_{5} 625 = \\log_{5}(625 \\times 625) = \\log_{5} 390625\\)\n\nSince \\(390625 = 5^{8}\\), the value is 8.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{5} 625 + \\log_{5} 25\\).",
+    "options": [
+      "8",
+      "2",
+      "7",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{5} 625 + \\log_{5} 25 = \\log_{5}(625 \\times 25) = \\log_{5} 15625\\)\n\nSince \\(15625 = 5^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{16}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{3}\\)",
+      "\\(x^{54}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add the indices when multiplying powers of the same base.\n\n\\(x^{6} \\times x^{9} = x^{15}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\log_{4} 16 + \\log_{4} 256\\).",
+    "options": [
+      "2",
+      "7",
+      "8",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\log_{4} 16 + \\log_{4} 256 = \\log_{4}(16 \\times 256) = \\log_{4} 4096\\)\n\nSince \\(4096 = 4^{6}\\), the value is 6.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "ahVieCrqSrCwJg4Ru5Lw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]
