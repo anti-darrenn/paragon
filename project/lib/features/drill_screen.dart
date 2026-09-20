@@ -8,6 +8,8 @@ import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/report_problem_button.dart';
+import '../core/providers/analytics_provider.dart';
+import '../core/repositories/progress_repository.dart';
 import '../core/repositories/user_repository.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
@@ -23,15 +25,101 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   int? _selected;
   bool _submitted = false;
 
+  // ── Session tally ─────────────────────────────────────────────────────
+  // Counted here rather than derived at the end because a student can
+  // leave part-way through, and an abandoned session is exactly the one
+  // worth knowing about.
+  int _answered = 0;
+  int _correct = 0;
+  String? _sessionSubjectId;
+  String? _uid;
+
+  /// One flush per session, whichever way the student leaves.
+  bool _sessionFlushed = false;
+
+  /// The streak is a property of the day, not of the question.
+  ///
+  /// `updateStreak` used to run on every single submit. Each call is a
+  /// Firestore transaction with a read inside it, so a 20-question drill
+  /// cost 20 reads and 19 of them existed only to re-confirm that today
+  /// was already recorded. On the Spark plan's 50k daily reads that is the
+  /// same shape of defect as the unbounded queries in `docs/audit/NEXT.md`
+  /// — cost that scales with exactly the engagement the product wants.
+  /// `WaecExamScreen` already did this correctly, once per exam.
+  bool _streakRecorded = false;
+
+  /// Held rather than read from `ref` on the way out: Riverpod 3 forbids
+  /// touching `ref` inside `dispose()`. Safe to hold because [Analytics]
+  /// reads the opt-out flag at call time, so this instance cannot outlive
+  /// a student's decision to turn collection off mid-session.
+  Analytics? _analytics;
+  ProgressRepository? _progress;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _analytics ??= ref.read(analyticsProvider);
+    _progress ??= ref.read(progressRepositoryProvider);
+  }
+
+  @override
+  void dispose() {
+    // Catches the back arrow, and anything else that takes the screen away
+    // without passing through Done. A no-op if Done already flushed.
+    _flushSession();
+    super.dispose();
+  }
+
+  /// Ends the session: one analytics event, one progress write.
+  ///
+  /// Deliberately not awaited by its callers. Both fire-and-forget calls
+  /// are safe on their own terms — `Analytics` swallows its own failures,
+  /// and the Firestore SDK applies a write locally and retries it — and
+  /// awaiting would put a network round trip between tapping Done and the
+  /// screen closing.
+  ///
+  /// The write is per session rather than per question on purpose; see
+  /// `progress_repository.dart`. A session where nothing was answered is
+  /// not a session, and writes nothing at all.
+  void _flushSession() {
+    if (_sessionFlushed || _answered == 0) return;
+    _sessionFlushed = true;
+
+    _analytics?.drillCompleted(
+      subjectId: _sessionSubjectId ?? '',
+      topicId: widget.topicId,
+      answered: _answered,
+      correct: _correct,
+    );
+
+    final uid = _uid;
+    if (uid != null) {
+      _progress?.addSession(
+        uid: uid,
+        topicId: widget.topicId,
+        subjectId: _sessionSubjectId ?? '',
+        answered: _answered,
+        correct: _correct,
+      );
+    }
+  }
+
   Future<void> _submit(List<Question> questions) async {
     if (_selected == null) return;
 
     final q = questions[_index];
     final user = ref.read(currentUserProvider);
+    final isCorrect = _selected == q.correctIndex;
 
-    setState(() => _submitted = true);
+    setState(() {
+      _submitted = true;
+      _answered++;
+      if (isCorrect) _correct++;
+    });
+    _sessionSubjectId ??= q.subjectId;
 
     if (user != null) {
+      _uid = user.uid;
       await ref
           .read(attemptRepositoryProvider)
           .record(
@@ -40,10 +128,13 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
             topicId: q.topicId,
             subjectId: q.subjectId,
             selectedIndex: _selected!,
-            isCorrect: _selected == q.correctIndex,
+            isCorrect: isCorrect,
             source: 'drill',
           );
-      await ref.read(userRepositoryProvider).updateStreak(user.uid);
+      if (!_streakRecorded) {
+        _streakRecorded = true;
+        await ref.read(userRepositoryProvider).updateStreak(user.uid);
+      }
     }
   }
 
@@ -179,7 +270,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   child: ElevatedButton(
                     onPressed: _submitted
                         ? (isLast
-                              ? () => Navigator.of(context).pop()
+                              ? () {
+                                  _flushSession();
+                                  Navigator.of(context).pop();
+                                }
                               : () => _next(questions))
                         : (_selected != null ? () => _submit(questions) : null),
                     style: ElevatedButton.styleFrom(
