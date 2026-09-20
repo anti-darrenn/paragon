@@ -25,36 +25,59 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// Whatever is logged here must stay consistent with what
 /// `legal_documents.dart` tells users. Adding an event changes both files.
 class Analytics {
-  Analytics(this._analytics, {required this.enabled});
+  Analytics({
+    required FirebaseAnalytics Function() instance,
+    required bool Function() isEnabled,
+  }) : _instance = instance,
+       _isEnabled = isEnabled;
 
-  final FirebaseAnalytics _analytics;
-  final bool enabled;
+  /// Resolved on each call, inside [_log]'s try, rather than held.
+  ///
+  /// `FirebaseAnalytics.instance` throws if Firebase has not been
+  /// initialised, and holding the result meant that throw happened while
+  /// *building the provider* — outside every guard this class has, and
+  /// early enough to take the whole widget tree down with it. The class
+  /// already promises that analytics never breaks a user flow; that
+  /// promise covered logging but not construction.
+  final FirebaseAnalytics Function() _instance;
+
+  /// Read at call time, not captured at construction.
+  ///
+  /// Riverpod 3 forbids touching `ref` inside `State.dispose()` and tells
+  /// you to hold the provider's value in a field instead — which
+  /// `DrillScreen` does, so it can log a session that the student
+  /// abandoned by navigating away. A captured `bool` would make that held
+  /// instance remember the preference as it stood when the screen opened,
+  /// so a student who opted out mid-drill would still have their session
+  /// logged on the way out. Reading the flag here closes that: the
+  /// instance is stable and always reflects the current answer.
+  final bool Function() _isEnabled;
+
+  bool get enabled => _isEnabled();
 
   /// Belt and braces: collection is disabled at the SDK level when the
   /// user opts out, and every call here is also a no-op. Either alone
   /// would do; both means a missed `await` cannot leak an event.
-  Future<void> _log(Future<void> Function() action) async {
-    if (!enabled) return;
+  Future<void> _log(Future<void> Function(FirebaseAnalytics) action) async {
+    if (!_isEnabled()) return;
     try {
-      await action();
+      await action(_instance());
     } catch (_) {
       // Analytics must never break a user flow.
     }
   }
 
   Future<void> screen(String name) =>
-      _log(() => _analytics.logScreenView(screenName: name));
+      _log((a) => a.logScreenView(screenName: name));
 
   /// Onboarding funnel — one event per completed step, so drop-off
   /// between steps is visible.
   Future<void> onboardingStepCompleted(String step) => _log(
-    () => _analytics.logEvent(name: 'onboarding_step', parameters: {
-      'step': step,
-    }),
+    (a) => a.logEvent(name: 'onboarding_step', parameters: {'step': step}),
   );
 
   Future<void> onboardingCompleted({required int subjectCount}) => _log(
-    () => _analytics.logEvent(
+    (a) => a.logEvent(
       name: 'onboarding_complete',
       parameters: {'subject_count': subjectCount},
     ),
@@ -67,7 +90,7 @@ class Analytics {
     required int answered,
     required int correct,
   }) => _log(
-    () => _analytics.logEvent(
+    (a) => a.logEvent(
       name: 'drill_complete',
       parameters: {
         'subject_id': subjectId,
@@ -83,7 +106,7 @@ class Analytics {
     required int answered,
     required int correct,
   }) => _log(
-    () => _analytics.logEvent(
+    (a) => a.logEvent(
       name: 'exam_complete',
       parameters: {
         'subject_id': subjectId,
@@ -95,10 +118,14 @@ class Analytics {
 
   /// Separates guest sessions from real accounts in reporting without
   /// attaching anything identifying.
-  Future<void> setIsGuest({required bool isGuest}) => _log(
-    () => _analytics.setUserProperty(
+  ///
+  /// Null clears the property, which is what a sign-out means: without
+  /// that, a guest who signs out would leave `is_guest = true` attached to
+  /// whatever the next person on that browser does.
+  Future<void> setIsGuest({required bool? isGuest}) => _log(
+    (a) => a.setUserProperty(
       name: 'is_guest',
-      value: isGuest ? 'true' : 'false',
+      value: isGuest == null ? null : (isGuest ? 'true' : 'false'),
     ),
   );
 }
@@ -148,9 +175,15 @@ final analyticsEnabledProvider =
       AnalyticsEnabledNotifier.new,
     );
 
+/// Deliberately does **not** `watch` [analyticsEnabledProvider].
+///
+/// Watching it would rebuild a new [Analytics] on every toggle, which
+/// makes any instance a caller is holding silently stale. Since [Analytics]
+/// now reads the flag on each call, one long-lived instance is both
+/// correct and safe to hold in a `State` field.
 final analyticsProvider = Provider<Analytics>((ref) {
   return Analytics(
-    FirebaseAnalytics.instance,
-    enabled: ref.watch(analyticsEnabledProvider),
+    instance: () => FirebaseAnalytics.instance,
+    isEnabled: () => ref.read(analyticsEnabledProvider),
   );
 });

@@ -27,7 +27,7 @@ const String publisherPlaceholder = '[PUBLISHER NAME — to be confirmed]';
 const String contactPlaceholder = '[CONTACT EMAIL — to be confirmed]';
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '19 September 2026';
+const String legalLastUpdated = '20 September 2026';
 
 class LegalSection {
   const LegalSection({
@@ -88,7 +88,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'question it was, which option you chose, whether it was '
             'correct, when you answered, and whether it was practice or a '
             'WAEC exam session. We also record the dates you were active, '
-            'to work out your streak.',
+            'to work out your streak, and a running count of how many '
+            'questions you have answered in each topic and how many you '
+            'got right, which is what the progress rings show you.',
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',
@@ -103,8 +105,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'tells us what to build and fix next.',
         'We deliberately keep this anonymous. We never send your name, '
             'username, email, school, age or gender to analytics, and we '
-            'never send anything you typed. What goes is subject and topic '
-            'identifiers, counts of questions answered, and whether a '
+            'never send anything you typed. What goes is which screen of '
+            'the app you are on, subject and topic identifiers, counts of '
+            'questions answered and how many you got right, and whether a '
             'session was a guest session. Google also collects standard '
             'technical information such as your device type, general '
             'region and app version.',
@@ -210,9 +213,7 @@ const LegalDocument privacyPolicy = LegalDocument(
     ),
     LegalSection(
       heading: 'Contact',
-      paragraphs: [
-        'Questions, requests or complaints: $contactPlaceholder.',
-      ],
+      paragraphs: ['Questions, requests or complaints: $contactPlaceholder.'],
     ),
   ],
 );
