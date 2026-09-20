@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "What is the bearing of a point lying due North of an observer?",
+    "options": [
+      "000°",
+      "090°",
+      "270°",
+      "180°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\ndue North corresponds to a bearing of 000°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S34°W as a three-figure bearing.",
+    "options": [
+      "214°",
+      "034°",
+      "146°",
+      "326°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S34°W is a further 34° towards the West.\n\n\\(180° + 34° = 214°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 159°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "201°",
+      "249°",
+      "339°",
+      "159°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 159° is less than 180°, add 180°: \\(159° + 180° = 339°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 058°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "058°",
+      "148°",
+      "302°",
+      "238°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 58° is less than 180°, add 180°: \\(58° + 180° = 238°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N60°E as a three-figure bearing.",
+    "options": [
+      "120°",
+      "300°",
+      "150°",
+      "060°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N60°E means 60° measured from North towards the East.\n\nAs a three-figure bearing this is 060°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N16°E as a three-figure bearing.",
+    "options": [
+      "016°",
+      "344°",
+      "106°",
+      "164°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N16°E means 16° measured from North towards the East.\n\nAs a three-figure bearing this is 016°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S65°W as a three-figure bearing.",
+    "options": [
+      "295°",
+      "065°",
+      "245°",
+      "115°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S65°W is a further 65° towards the West.\n\n\\(180° + 65° = 245°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 16km due North and then 30km due East. How far is he from his starting point?",
+    "options": [
+      "36km",
+      "46km",
+      "34km",
+      "14km"
+    ],
+    "correctIndex": 2,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 16^{2} + 30^{2} = 256 + 900 = 1156\\)\n\n\\(d = 34\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S52°W as a three-figure bearing.",
+    "options": [
+      "232°",
+      "308°",
+      "128°",
+      "052°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S52°W is a further 52° towards the West.\n\n\\(180° + 52° = 232°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 60km due North and then 63km due East. How far is he from his starting point?",
+    "options": [
+      "123km",
+      "3km",
+      "87km",
+      "89km"
+    ],
+    "correctIndex": 2,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 60^{2} + 63^{2} = 3600 + 3969 = 7569\\)\n\n\\(d = 87\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S40°W as a three-figure bearing.",
+    "options": [
+      "220°",
+      "140°",
+      "040°",
+      "320°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S40°W is a further 40° towards the West.\n\n\\(180° + 40° = 220°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying due South of an observer?",
+    "options": [
+      "270°",
+      "000°",
+      "180°",
+      "090°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\ndue South corresponds to a bearing of 180°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 099°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "189°",
+      "099°",
+      "279°",
+      "261°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 99° is less than 180°, add 180°: \\(99° + 180° = 279°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 208°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "298°",
+      "028°",
+      "152°",
+      "208°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 208° is 180° or more, subtract 180°: \\(208° - 180° = 28°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 273°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "003°",
+      "093°",
+      "087°",
+      "273°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 273° is 180° or more, subtract 180°: \\(273° - 180° = 93°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 124°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "124°",
+      "214°",
+      "236°",
+      "304°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 124° is less than 180°, add 180°: \\(124° + 180° = 304°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S42°W as a three-figure bearing.",
+    "options": [
+      "222°",
+      "138°",
+      "042°",
+      "318°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S42°W is a further 42° towards the West.\n\n\\(180° + 42° = 222°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S25°W as a three-figure bearing.",
+    "options": [
+      "335°",
+      "205°",
+      "155°",
+      "025°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S25°W is a further 25° towards the West.\n\n\\(180° + 25° = 205°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S37°W as a three-figure bearing.",
+    "options": [
+      "323°",
+      "217°",
+      "143°",
+      "037°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S37°W is a further 37° towards the West.\n\n\\(180° + 37° = 217°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 179°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "359°",
+      "179°",
+      "181°",
+      "269°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 179° is less than 180°, add 180°: \\(179° + 180° = 359°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 318°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "048°",
+      "138°",
+      "042°",
+      "318°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 318° is 180° or more, subtract 180°: \\(318° - 180° = 138°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying South-West of an observer?",
+    "options": [
+      "000°",
+      "225°",
+      "180°",
+      "090°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\nSouth-West corresponds to a bearing of 225°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 6km due North and then 8km due East. How far is he from his starting point?",
+    "options": [
+      "12km",
+      "10km",
+      "2km",
+      "14km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 6^{2} + 8^{2} = 36 + 64 = 100\\)\n\n\\(d = 10\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 031°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "121°",
+      "031°",
+      "329°",
+      "211°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 31° is less than 180°, add 180°: \\(31° + 180° = 211°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 065°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "245°",
+      "065°",
+      "155°",
+      "295°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 65° is less than 180°, add 180°: \\(65° + 180° = 245°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 183°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "177°",
+      "183°",
+      "273°",
+      "003°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 183° is 180° or more, subtract 180°: \\(183° - 180° = 3°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying North-West of an observer?",
+    "options": [
+      "090°",
+      "180°",
+      "315°",
+      "000°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\nNorth-West corresponds to a bearing of 315°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying North-East of an observer?",
+    "options": [
+      "090°",
+      "180°",
+      "000°",
+      "045°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\nNorth-East corresponds to a bearing of 045°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S79°W as a three-figure bearing.",
+    "options": [
+      "281°",
+      "101°",
+      "079°",
+      "259°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S79°W is a further 79° towards the West.\n\n\\(180° + 79° = 259°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N77°E as a three-figure bearing.",
+    "options": [
+      "283°",
+      "103°",
+      "167°",
+      "077°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N77°E means 77° measured from North towards the East.\n\nAs a three-figure bearing this is 077°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 18km due North and then 80km due East. How far is he from his starting point?",
+    "options": [
+      "98km",
+      "82km",
+      "84km",
+      "62km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 18^{2} + 80^{2} = 324 + 6400 = 6724\\)\n\n\\(d = 82\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N74°E as a three-figure bearing.",
+    "options": [
+      "286°",
+      "164°",
+      "106°",
+      "074°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N74°E means 74° measured from North towards the East.\n\nAs a three-figure bearing this is 074°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 20km due North and then 48km due East. How far is he from his starting point?",
+    "options": [
+      "68km",
+      "52km",
+      "28km",
+      "54km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 20^{2} + 48^{2} = 400 + 2304 = 2704\\)\n\n\\(d = 52\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S70°W as a three-figure bearing.",
+    "options": [
+      "070°",
+      "110°",
+      "250°",
+      "290°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S70°W is a further 70° towards the West.\n\n\\(180° + 70° = 250°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N37°E as a three-figure bearing.",
+    "options": [
+      "127°",
+      "323°",
+      "037°",
+      "143°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N37°E means 37° measured from North towards the East.\n\nAs a three-figure bearing this is 037°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N47°E as a three-figure bearing.",
+    "options": [
+      "133°",
+      "137°",
+      "047°",
+      "313°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N47°E means 47° measured from North towards the East.\n\nAs a three-figure bearing this is 047°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N72°E as a three-figure bearing.",
+    "options": [
+      "108°",
+      "072°",
+      "288°",
+      "162°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N72°E means 72° measured from North towards the East.\n\nAs a three-figure bearing this is 072°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 28km due North and then 96km due East. How far is he from his starting point?",
+    "options": [
+      "102km",
+      "100km",
+      "124km",
+      "68km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 28^{2} + 96^{2} = 784 + 9216 = 10000\\)\n\n\\(d = 100\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S80°W as a three-figure bearing.",
+    "options": [
+      "100°",
+      "260°",
+      "080°",
+      "280°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S80°W is a further 80° towards the West.\n\n\\(180° + 80° = 260°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 27km due North and then 120km due East. How far is he from his starting point?",
+    "options": [
+      "93km",
+      "123km",
+      "125km",
+      "147km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 27^{2} + 120^{2} = 729 + 14400 = 15129\\)\n\n\\(d = 123\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 14km due North and then 48km due East. How far is he from his starting point?",
+    "options": [
+      "50km",
+      "52km",
+      "34km",
+      "62km"
+    ],
+    "correctIndex": 0,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 14^{2} + 48^{2} = 196 + 2304 = 2500\\)\n\n\\(d = 50\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S26°W as a three-figure bearing.",
+    "options": [
+      "154°",
+      "334°",
+      "026°",
+      "206°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S26°W is a further 26° towards the West.\n\n\\(180° + 26° = 206°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S67°W as a three-figure bearing.",
+    "options": [
+      "113°",
+      "293°",
+      "067°",
+      "247°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S67°W is a further 67° towards the West.\n\n\\(180° + 67° = 247°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N78°E as a three-figure bearing.",
+    "options": [
+      "282°",
+      "168°",
+      "102°",
+      "078°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N78°E means 78° measured from North towards the East.\n\nAs a three-figure bearing this is 078°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N65°E as a three-figure bearing.",
+    "options": [
+      "065°",
+      "155°",
+      "115°",
+      "295°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N65°E means 65° measured from North towards the East.\n\nAs a three-figure bearing this is 065°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 335°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "155°",
+      "335°",
+      "065°",
+      "025°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 335° is 180° or more, subtract 180°: \\(335° - 180° = 155°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 205°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "025°",
+      "205°",
+      "155°",
+      "295°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 205° is 180° or more, subtract 180°: \\(205° - 180° = 25°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 327°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "147°",
+      "327°",
+      "057°",
+      "033°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 327° is 180° or more, subtract 180°: \\(327° - 180° = 147°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N67°E as a three-figure bearing.",
+    "options": [
+      "157°",
+      "293°",
+      "113°",
+      "067°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N67°E means 67° measured from North towards the East.\n\nAs a three-figure bearing this is 067°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying due West of an observer?",
+    "options": [
+      "180°",
+      "270°",
+      "000°",
+      "090°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\ndue West corresponds to a bearing of 270°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 015°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "345°",
+      "015°",
+      "105°",
+      "195°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 15° is less than 180°, add 180°: \\(15° + 180° = 195°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 9km due North and then 12km due East. How far is he from his starting point?",
+    "options": [
+      "21km",
+      "17km",
+      "15km",
+      "3km"
+    ],
+    "correctIndex": 2,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 9^{2} + 12^{2} = 81 + 144 = 225\\)\n\n\\(d = 15\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N33°E as a three-figure bearing.",
+    "options": [
+      "033°",
+      "147°",
+      "123°",
+      "327°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N33°E means 33° measured from North towards the East.\n\nAs a three-figure bearing this is 033°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N25°E as a three-figure bearing.",
+    "options": [
+      "025°",
+      "335°",
+      "155°",
+      "115°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N25°E means 25° measured from North towards the East.\n\nAs a three-figure bearing this is 025°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S53°W as a three-figure bearing.",
+    "options": [
+      "233°",
+      "127°",
+      "307°",
+      "053°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S53°W is a further 53° towards the West.\n\n\\(180° + 53° = 233°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying due East of an observer?",
+    "options": [
+      "000°",
+      "270°",
+      "180°",
+      "090°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\ndue East corresponds to a bearing of 090°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N57°E as a three-figure bearing.",
+    "options": [
+      "303°",
+      "147°",
+      "057°",
+      "123°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N57°E means 57° measured from North towards the East.\n\nAs a three-figure bearing this is 057°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N54°E as a three-figure bearing.",
+    "options": [
+      "054°",
+      "306°",
+      "144°",
+      "126°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N54°E means 54° measured from North towards the East.\n\nAs a three-figure bearing this is 054°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 15km due North and then 36km due East. How far is he from his starting point?",
+    "options": [
+      "21km",
+      "39km",
+      "51km",
+      "41km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 15^{2} + 36^{2} = 225 + 1296 = 1521\\)\n\n\\(d = 39\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 271°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "001°",
+      "089°",
+      "271°",
+      "091°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 271° is 180° or more, subtract 180°: \\(271° - 180° = 91°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 133°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "223°",
+      "133°",
+      "227°",
+      "313°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 133° is less than 180°, add 180°: \\(133° + 180° = 313°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 36km due North and then 160km due East. How far is he from his starting point?",
+    "options": [
+      "124km",
+      "196km",
+      "164km",
+      "166km"
+    ],
+    "correctIndex": 2,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 36^{2} + 160^{2} = 1296 + 25600 = 26896\\)\n\n\\(d = 164\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 312°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "048°",
+      "132°",
+      "312°",
+      "042°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 312° is 180° or more, subtract 180°: \\(312° - 180° = 132°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 7km due North and then 24km due East. How far is he from his starting point?",
+    "options": [
+      "25km",
+      "31km",
+      "27km",
+      "17km"
+    ],
+    "correctIndex": 0,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 7^{2} + 24^{2} = 49 + 576 = 625\\)\n\n\\(d = 25\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N22°E as a three-figure bearing.",
+    "options": [
+      "158°",
+      "112°",
+      "022°",
+      "338°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N22°E means 22° measured from North towards the East.\n\nAs a three-figure bearing this is 022°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 100°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "190°",
+      "280°",
+      "260°",
+      "100°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 100° is less than 180°, add 180°: \\(100° + 180° = 280°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S47°W as a three-figure bearing.",
+    "options": [
+      "227°",
+      "047°",
+      "313°",
+      "133°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S47°W is a further 47° towards the West.\n\n\\(180° + 47° = 227°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 24km due North and then 45km due East. How far is he from his starting point?",
+    "options": [
+      "21km",
+      "51km",
+      "53km",
+      "69km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 24^{2} + 45^{2} = 576 + 2025 = 2601\\)\n\n\\(d = 51\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 283°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "283°",
+      "013°",
+      "077°",
+      "103°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 283° is 180° or more, subtract 180°: \\(283° - 180° = 103°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 32km due North and then 60km due East. How far is he from his starting point?",
+    "options": [
+      "28km",
+      "68km",
+      "70km",
+      "92km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 32^{2} + 60^{2} = 1024 + 3600 = 4624\\)\n\n\\(d = 68\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S57°W as a three-figure bearing.",
+    "options": [
+      "057°",
+      "237°",
+      "303°",
+      "123°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S57°W is a further 57° towards the West.\n\n\\(180° + 57° = 237°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S32°W as a three-figure bearing.",
+    "options": [
+      "212°",
+      "328°",
+      "148°",
+      "032°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S32°W is a further 32° towards the West.\n\n\\(180° + 32° = 212°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 21km due North and then 72km due East. How far is he from his starting point?",
+    "options": [
+      "51km",
+      "77km",
+      "93km",
+      "75km"
+    ],
+    "correctIndex": 3,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 21^{2} + 72^{2} = 441 + 5184 = 5625\\)\n\n\\(d = 75\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N20°E as a three-figure bearing.",
+    "options": [
+      "110°",
+      "020°",
+      "160°",
+      "340°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N20°E means 20° measured from North towards the East.\n\nAs a three-figure bearing this is 020°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 216°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "306°",
+      "144°",
+      "036°",
+      "216°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 216° is 180° or more, subtract 180°: \\(216° - 180° = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 134°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "224°",
+      "314°",
+      "226°",
+      "134°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 134° is less than 180°, add 180°: \\(134° + 180° = 314°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N28°E as a three-figure bearing.",
+    "options": [
+      "028°",
+      "332°",
+      "118°",
+      "152°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N28°E means 28° measured from North towards the East.\n\nAs a three-figure bearing this is 028°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 9km due North and then 40km due East. How far is he from his starting point?",
+    "options": [
+      "43km",
+      "41km",
+      "49km",
+      "31km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 9^{2} + 40^{2} = 81 + 1600 = 1681\\)\n\n\\(d = 41\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 025°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "205°",
+      "115°",
+      "335°",
+      "025°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 25° is less than 180°, add 180°: \\(25° + 180° = 205°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N69°E as a three-figure bearing.",
+    "options": [
+      "111°",
+      "291°",
+      "069°",
+      "159°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N69°E means 69° measured from North towards the East.\n\nAs a three-figure bearing this is 069°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N51°E as a three-figure bearing.",
+    "options": [
+      "051°",
+      "129°",
+      "309°",
+      "141°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N51°E means 51° measured from North towards the East.\n\nAs a three-figure bearing this is 051°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 224°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "044°",
+      "136°",
+      "314°",
+      "224°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 224° is 180° or more, subtract 180°: \\(224° - 180° = 44°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N29°E as a three-figure bearing.",
+    "options": [
+      "331°",
+      "119°",
+      "029°",
+      "151°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N29°E means 29° measured from North towards the East.\n\nAs a three-figure bearing this is 029°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S63°W as a three-figure bearing.",
+    "options": [
+      "117°",
+      "063°",
+      "297°",
+      "243°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S63°W is a further 63° towards the West.\n\n\\(180° + 63° = 243°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S44°W as a three-figure bearing.",
+    "options": [
+      "136°",
+      "316°",
+      "044°",
+      "224°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S44°W is a further 44° towards the West.\n\n\\(180° + 44° = 224°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 117°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "243°",
+      "117°",
+      "297°",
+      "207°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 117° is less than 180°, add 180°: \\(117° + 180° = 297°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 067°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "157°",
+      "247°",
+      "067°",
+      "293°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 67° is less than 180°, add 180°: \\(67° + 180° = 247°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S64°W as a three-figure bearing.",
+    "options": [
+      "116°",
+      "296°",
+      "244°",
+      "064°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S64°W is a further 64° towards the West.\n\n\\(180° + 64° = 244°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 80km due North and then 84km due East. How far is he from his starting point?",
+    "options": [
+      "164km",
+      "116km",
+      "118km",
+      "4km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 80^{2} + 84^{2} = 6400 + 7056 = 13456\\)\n\n\\(d = 116\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N70°E as a three-figure bearing.",
+    "options": [
+      "290°",
+      "070°",
+      "160°",
+      "110°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N70°E means 70° measured from North towards the East.\n\nAs a three-figure bearing this is 070°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N24°E as a three-figure bearing.",
+    "options": [
+      "336°",
+      "024°",
+      "156°",
+      "114°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N24°E means 24° measured from North towards the East.\n\nAs a three-figure bearing this is 024°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 5km due North and then 12km due East. How far is he from his starting point?",
+    "options": [
+      "17km",
+      "7km",
+      "13km",
+      "15km"
+    ],
+    "correctIndex": 2,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 5^{2} + 12^{2} = 25 + 144 = 169\\)\n\n\\(d = 13\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 357°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "357°",
+      "177°",
+      "003°",
+      "087°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 357° is 180° or more, subtract 180°: \\(357° - 180° = 177°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the bearing of a point lying South-East of an observer?",
+    "options": [
+      "180°",
+      "135°",
+      "000°",
+      "090°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bearings are measured clockwise from the North direction.\n\nSouth-East corresponds to a bearing of 135°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S76°W as a three-figure bearing.",
+    "options": [
+      "284°",
+      "104°",
+      "256°",
+      "076°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S76°W is a further 76° towards the West.\n\n\\(180° + 76° = 256°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 045°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "315°",
+      "135°",
+      "225°",
+      "045°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 45° is less than 180°, add 180°: \\(45° + 180° = 225°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S15°W as a three-figure bearing.",
+    "options": [
+      "015°",
+      "165°",
+      "195°",
+      "345°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S15°W is a further 15° towards the West.\n\n\\(180° + 15° = 195°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S10°W as a three-figure bearing.",
+    "options": [
+      "170°",
+      "010°",
+      "190°",
+      "350°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S10°W is a further 10° towards the West.\n\n\\(180° + 10° = 190°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 10km due North and then 24km due East. How far is he from his starting point?",
+    "options": [
+      "14km",
+      "34km",
+      "26km",
+      "28km"
+    ],
+    "correctIndex": 2,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 10^{2} + 24^{2} = 100 + 576 = 676\\)\n\n\\(d = 26\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S78°W as a three-figure bearing.",
+    "options": [
+      "102°",
+      "078°",
+      "258°",
+      "282°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S78°W is a further 78° towards the West.\n\n\\(180° + 78° = 258°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S43°W as a three-figure bearing.",
+    "options": [
+      "223°",
+      "137°",
+      "043°",
+      "317°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S43°W is a further 43° towards the West.\n\n\\(180° + 43° = 223°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N62°E as a three-figure bearing.",
+    "options": [
+      "152°",
+      "298°",
+      "118°",
+      "062°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N62°E means 62° measured from North towards the East.\n\nAs a three-figure bearing this is 062°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N12°E as a three-figure bearing.",
+    "options": [
+      "102°",
+      "348°",
+      "012°",
+      "168°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N12°E means 12° measured from North towards the East.\n\nAs a three-figure bearing this is 012°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 200°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "290°",
+      "200°",
+      "160°",
+      "020°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 200° is 180° or more, subtract 180°: \\(200° - 180° = 20°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N31°E as a three-figure bearing.",
+    "options": [
+      "031°",
+      "121°",
+      "149°",
+      "329°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N31°E means 31° measured from North towards the East.\n\nAs a three-figure bearing this is 031°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N17°E as a three-figure bearing.",
+    "options": [
+      "343°",
+      "163°",
+      "107°",
+      "017°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N17°E means 17° measured from North towards the East.\n\nAs a three-figure bearing this is 017°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 217°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "307°",
+      "143°",
+      "037°",
+      "217°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 217° is 180° or more, subtract 180°: \\(217° - 180° = 37°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S35°W as a three-figure bearing.",
+    "options": [
+      "215°",
+      "145°",
+      "035°",
+      "325°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S35°W is a further 35° towards the West.\n\n\\(180° + 35° = 215°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 148°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "328°",
+      "238°",
+      "212°",
+      "148°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 148° is less than 180°, add 180°: \\(148° + 180° = 328°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N13°E as a three-figure bearing.",
+    "options": [
+      "347°",
+      "013°",
+      "103°",
+      "167°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N13°E means 13° measured from North towards the East.\n\nAs a three-figure bearing this is 013°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S62°W as a three-figure bearing.",
+    "options": [
+      "242°",
+      "118°",
+      "298°",
+      "062°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S62°W is a further 62° towards the West.\n\n\\(180° + 62° = 242°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 276°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "084°",
+      "276°",
+      "096°",
+      "006°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 276° is 180° or more, subtract 180°: \\(276° - 180° = 96°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 086°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "176°",
+      "266°",
+      "274°",
+      "086°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 86° is less than 180°, add 180°: \\(86° + 180° = 266°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N43°E as a three-figure bearing.",
+    "options": [
+      "137°",
+      "043°",
+      "133°",
+      "317°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N43°E means 43° measured from North towards the East.\n\nAs a three-figure bearing this is 043°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 20km due North and then 21km due East. How far is he from his starting point?",
+    "options": [
+      "1km",
+      "29km",
+      "31km",
+      "41km"
+    ],
+    "correctIndex": 1,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 20^{2} + 21^{2} = 400 + 441 = 841\\)\n\n\\(d = 29\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S55°W as a three-figure bearing.",
+    "options": [
+      "235°",
+      "305°",
+      "125°",
+      "055°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S55°W is a further 55° towards the West.\n\n\\(180° + 55° = 235°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 192°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "282°",
+      "012°",
+      "168°",
+      "192°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 192° is 180° or more, subtract 180°: \\(192° - 180° = 12°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 8km due North and then 15km due East. How far is he from his starting point?",
+    "options": [
+      "23km",
+      "7km",
+      "19km",
+      "17km"
+    ],
+    "correctIndex": 3,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 8^{2} + 15^{2} = 64 + 225 = 289\\)\n\n\\(d = 17\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 40km due North and then 42km due East. How far is he from his starting point?",
+    "options": [
+      "60km",
+      "82km",
+      "2km",
+      "58km"
+    ],
+    "correctIndex": 3,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 40^{2} + 42^{2} = 1600 + 1764 = 3364\\)\n\n\\(d = 58\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N42°E as a three-figure bearing.",
+    "options": [
+      "132°",
+      "042°",
+      "318°",
+      "138°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N42°E means 42° measured from North towards the East.\n\nAs a three-figure bearing this is 042°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 311°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "131°",
+      "041°",
+      "311°",
+      "049°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 311° is 180° or more, subtract 180°: \\(311° - 180° = 131°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 260°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "350°",
+      "100°",
+      "080°",
+      "260°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 260° is 180° or more, subtract 180°: \\(260° - 180° = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S48°W as a three-figure bearing.",
+    "options": [
+      "228°",
+      "048°",
+      "132°",
+      "312°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S48°W is a further 48° towards the West.\n\n\\(180° + 48° = 228°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S69°W as a three-figure bearing.",
+    "options": [
+      "291°",
+      "069°",
+      "111°",
+      "249°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S69°W is a further 69° towards the West.\n\n\\(180° + 69° = 249°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S18°W as a three-figure bearing.",
+    "options": [
+      "018°",
+      "198°",
+      "162°",
+      "342°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S18°W is a further 18° towards the West.\n\n\\(180° + 18° = 198°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S31°W as a three-figure bearing.",
+    "options": [
+      "211°",
+      "031°",
+      "329°",
+      "149°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S31°W is a further 31° towards the West.\n\n\\(180° + 31° = 211°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 093°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "183°",
+      "267°",
+      "273°",
+      "093°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 93° is less than 180°, add 180°: \\(93° + 180° = 273°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N75°E as a three-figure bearing.",
+    "options": [
+      "285°",
+      "165°",
+      "105°",
+      "075°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N75°E means 75° measured from North towards the East.\n\nAs a three-figure bearing this is 075°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N35°E as a three-figure bearing.",
+    "options": [
+      "125°",
+      "325°",
+      "035°",
+      "145°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N35°E means 35° measured from North towards the East.\n\nAs a three-figure bearing this is 035°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 114°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "114°",
+      "204°",
+      "294°",
+      "246°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 114° is less than 180°, add 180°: \\(114° + 180° = 294°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 212°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "032°",
+      "148°",
+      "212°",
+      "302°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 212° is 180° or more, subtract 180°: \\(212° - 180° = 32°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N79°E as a three-figure bearing.",
+    "options": [
+      "281°",
+      "101°",
+      "079°",
+      "169°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N79°E means 79° measured from North towards the East.\n\nAs a three-figure bearing this is 079°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 082°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "082°",
+      "278°",
+      "262°",
+      "172°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 82° is less than 180°, add 180°: \\(82° + 180° = 262°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 132°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "312°",
+      "228°",
+      "222°",
+      "132°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 132° is less than 180°, add 180°: \\(132° + 180° = 312°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N18°E as a three-figure bearing.",
+    "options": [
+      "162°",
+      "342°",
+      "018°",
+      "108°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N18°E means 18° measured from North towards the East.\n\nAs a three-figure bearing this is 018°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S45°W as a three-figure bearing.",
+    "options": [
+      "045°",
+      "225°",
+      "135°",
+      "315°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S45°W is a further 45° towards the West.\n\n\\(180° + 45° = 225°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 296°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "296°",
+      "064°",
+      "116°",
+      "026°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 296° is 180° or more, subtract 180°: \\(296° - 180° = 116°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A man walks 12km due North and then 16km due East. How far is he from his starting point?",
+    "options": [
+      "20km",
+      "4km",
+      "22km",
+      "28km"
+    ],
+    "correctIndex": 0,
+    "explanation": "North and East are perpendicular, so use Pythagoras' theorem.\n\n\\(d^{2} = 12^{2} + 16^{2} = 144 + 256 = 400\\)\n\n\\(d = 20\\)km",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S16°W as a three-figure bearing.",
+    "options": [
+      "344°",
+      "196°",
+      "164°",
+      "016°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S16°W is a further 16° towards the West.\n\n\\(180° + 16° = 196°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S49°W as a three-figure bearing.",
+    "options": [
+      "311°",
+      "049°",
+      "131°",
+      "229°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S49°W is a further 49° towards the West.\n\n\\(180° + 49° = 229°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 107°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "287°",
+      "107°",
+      "197°",
+      "253°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 107° is less than 180°, add 180°: \\(107° + 180° = 287°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N52°E as a three-figure bearing.",
+    "options": [
+      "052°",
+      "308°",
+      "142°",
+      "128°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N52°E means 52° measured from North towards the East.\n\nAs a three-figure bearing this is 052°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S20°W as a three-figure bearing.",
+    "options": [
+      "340°",
+      "160°",
+      "200°",
+      "020°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S20°W is a further 20° towards the West.\n\n\\(180° + 20° = 200°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N36°E as a three-figure bearing.",
+    "options": [
+      "144°",
+      "324°",
+      "126°",
+      "036°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N36°E means 36° measured from North towards the East.\n\nAs a three-figure bearing this is 036°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 289°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "019°",
+      "289°",
+      "109°",
+      "071°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 289° is 180° or more, subtract 180°: \\(289° - 180° = 109°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S51°W as a three-figure bearing.",
+    "options": [
+      "309°",
+      "129°",
+      "231°",
+      "051°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S51°W is a further 51° towards the West.\n\n\\(180° + 51° = 231°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N44°E as a three-figure bearing.",
+    "options": [
+      "044°",
+      "316°",
+      "136°",
+      "134°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N44°E means 44° measured from North towards the East.\n\nAs a three-figure bearing this is 044°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 334°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "064°",
+      "154°",
+      "334°",
+      "026°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 334° is 180° or more, subtract 180°: \\(334° - 180° = 154°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S33°W as a three-figure bearing.",
+    "options": [
+      "213°",
+      "147°",
+      "327°",
+      "033°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S33°W is a further 33° towards the West.\n\n\\(180° + 33° = 213°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S50°W as a three-figure bearing.",
+    "options": [
+      "230°",
+      "310°",
+      "130°",
+      "050°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S50°W is a further 50° towards the West.\n\n\\(180° + 50° = 230°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 234°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "324°",
+      "054°",
+      "234°",
+      "126°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 234° is 180° or more, subtract 180°: \\(234° - 180° = 54°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 123°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "237°",
+      "303°",
+      "123°",
+      "213°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 123° is less than 180°, add 180°: \\(123° + 180° = 303°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 035°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "125°",
+      "215°",
+      "035°",
+      "325°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 35° is less than 180°, add 180°: \\(35° + 180° = 215°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S11°W as a three-figure bearing.",
+    "options": [
+      "349°",
+      "011°",
+      "191°",
+      "169°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S11°W is a further 11° towards the West.\n\n\\(180° + 11° = 191°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S71°W as a three-figure bearing.",
+    "options": [
+      "289°",
+      "251°",
+      "071°",
+      "109°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S71°W is a further 71° towards the West.\n\n\\(180° + 71° = 251°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N30°E as a three-figure bearing.",
+    "options": [
+      "120°",
+      "030°",
+      "330°",
+      "150°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N30°E means 30° measured from North towards the East.\n\nAs a three-figure bearing this is 030°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N66°E as a three-figure bearing.",
+    "options": [
+      "114°",
+      "066°",
+      "294°",
+      "156°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N66°E means 66° measured from North towards the East.\n\nAs a three-figure bearing this is 066°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S12°W as a three-figure bearing.",
+    "options": [
+      "168°",
+      "348°",
+      "192°",
+      "012°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S12°W is a further 12° towards the West.\n\n\\(180° + 12° = 192°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N14°E as a three-figure bearing.",
+    "options": [
+      "104°",
+      "014°",
+      "346°",
+      "166°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N14°E means 14° measured from North towards the East.\n\nAs a three-figure bearing this is 014°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S66°W as a three-figure bearing.",
+    "options": [
+      "246°",
+      "066°",
+      "114°",
+      "294°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S66°W is a further 66° towards the West.\n\n\\(180° + 66° = 246°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 333°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "153°",
+      "027°",
+      "333°",
+      "063°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 333° is 180° or more, subtract 180°: \\(333° - 180° = 153°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S36°W as a three-figure bearing.",
+    "options": [
+      "216°",
+      "144°",
+      "036°",
+      "324°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S36°W is a further 36° towards the West.\n\n\\(180° + 36° = 216°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 230°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "320°",
+      "230°",
+      "050°",
+      "130°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 230° is 180° or more, subtract 180°: \\(230° - 180° = 50°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 070°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "160°",
+      "290°",
+      "070°",
+      "250°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 70° is less than 180°, add 180°: \\(70° + 180° = 250°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S72°W as a three-figure bearing.",
+    "options": [
+      "108°",
+      "252°",
+      "288°",
+      "072°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S72°W is a further 72° towards the West.\n\n\\(180° + 72° = 252°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 305°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "305°",
+      "055°",
+      "125°",
+      "035°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 305° is 180° or more, subtract 180°: \\(305° - 180° = 125°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N76°E as a three-figure bearing.",
+    "options": [
+      "104°",
+      "284°",
+      "076°",
+      "166°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N76°E means 76° measured from North towards the East.\n\nAs a three-figure bearing this is 076°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 278°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "082°",
+      "278°",
+      "008°",
+      "098°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 278° is 180° or more, subtract 180°: \\(278° - 180° = 98°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N38°E as a three-figure bearing.",
+    "options": [
+      "322°",
+      "038°",
+      "142°",
+      "128°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N38°E means 38° measured from North towards the East.\n\nAs a three-figure bearing this is 038°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S77°W as a three-figure bearing.",
+    "options": [
+      "077°",
+      "257°",
+      "283°",
+      "103°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S77°W is a further 77° towards the West.\n\n\\(180° + 77° = 257°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S17°W as a three-figure bearing.",
+    "options": [
+      "163°",
+      "197°",
+      "343°",
+      "017°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S17°W is a further 17° towards the West.\n\n\\(180° + 17° = 197°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N68°E as a three-figure bearing.",
+    "options": [
+      "158°",
+      "112°",
+      "292°",
+      "068°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N68°E means 68° measured from North towards the East.\n\nAs a three-figure bearing this is 068°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 255°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "105°",
+      "345°",
+      "255°",
+      "075°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 255° is 180° or more, subtract 180°: \\(255° - 180° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 071°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "251°",
+      "289°",
+      "071°",
+      "161°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 71° is less than 180°, add 180°: \\(71° + 180° = 251°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 052°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "232°",
+      "142°",
+      "308°",
+      "052°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 52° is less than 180°, add 180°: \\(52° + 180° = 232°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 064°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "154°",
+      "244°",
+      "064°",
+      "296°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 64° is less than 180°, add 180°: \\(64° + 180° = 244°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N39°E as a three-figure bearing.",
+    "options": [
+      "039°",
+      "321°",
+      "141°",
+      "129°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N39°E means 39° measured from North towards the East.\n\nAs a three-figure bearing this is 039°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S68°W as a three-figure bearing.",
+    "options": [
+      "112°",
+      "248°",
+      "292°",
+      "068°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S68°W is a further 68° towards the West.\n\n\\(180° + 68° = 248°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S58°W as a three-figure bearing.",
+    "options": [
+      "302°",
+      "058°",
+      "238°",
+      "122°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S58°W is a further 58° towards the West.\n\n\\(180° + 58° = 238°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S21°W as a three-figure bearing.",
+    "options": [
+      "159°",
+      "201°",
+      "021°",
+      "339°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S21°W is a further 21° towards the West.\n\n\\(180° + 21° = 201°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 349°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "079°",
+      "011°",
+      "349°",
+      "169°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 349° is 180° or more, subtract 180°: \\(349° - 180° = 169°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N10°E as a three-figure bearing.",
+    "options": [
+      "010°",
+      "170°",
+      "100°",
+      "350°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N10°E means 10° measured from North towards the East.\n\nAs a three-figure bearing this is 010°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 032°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "032°",
+      "328°",
+      "122°",
+      "212°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 32° is less than 180°, add 180°: \\(32° + 180° = 212°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S73°W as a three-figure bearing.",
+    "options": [
+      "253°",
+      "287°",
+      "073°",
+      "107°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S73°W is a further 73° towards the West.\n\n\\(180° + 73° = 253°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 069°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "291°",
+      "159°",
+      "249°",
+      "069°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 69° is less than 180°, add 180°: \\(69° + 180° = 249°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 320°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "320°",
+      "050°",
+      "140°",
+      "040°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 320° is 180° or more, subtract 180°: \\(320° - 180° = 140°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 226°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "134°",
+      "316°",
+      "046°",
+      "226°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 226° is 180° or more, subtract 180°: \\(226° - 180° = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 163°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "253°",
+      "163°",
+      "197°",
+      "343°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 163° is less than 180°, add 180°: \\(163° + 180° = 343°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 294°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "024°",
+      "294°",
+      "114°",
+      "066°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 294° is 180° or more, subtract 180°: \\(294° - 180° = 114°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 172°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "188°",
+      "262°",
+      "352°",
+      "172°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 172° is less than 180°, add 180°: \\(172° + 180° = 352°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S13°W as a three-figure bearing.",
+    "options": [
+      "013°",
+      "193°",
+      "167°",
+      "347°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S13°W is a further 13° towards the West.\n\n\\(180° + 13° = 193°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N59°E as a three-figure bearing.",
+    "options": [
+      "059°",
+      "149°",
+      "301°",
+      "121°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N59°E means 59° measured from North towards the East.\n\nAs a three-figure bearing this is 059°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 055°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "055°",
+      "305°",
+      "145°",
+      "235°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 55° is less than 180°, add 180°: \\(55° + 180° = 235°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N63°E as a three-figure bearing.",
+    "options": [
+      "063°",
+      "153°",
+      "297°",
+      "117°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N63°E means 63° measured from North towards the East.\n\nAs a three-figure bearing this is 063°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S24°W as a three-figure bearing.",
+    "options": [
+      "024°",
+      "336°",
+      "156°",
+      "204°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S24°W is a further 24° towards the West.\n\n\\(180° + 24° = 204°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 158°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "248°",
+      "158°",
+      "338°",
+      "202°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 158° is less than 180°, add 180°: \\(158° + 180° = 338°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 060°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "150°",
+      "300°",
+      "240°",
+      "060°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 60° is less than 180°, add 180°: \\(60° + 180° = 240°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S22°W as a three-figure bearing.",
+    "options": [
+      "202°",
+      "338°",
+      "158°",
+      "022°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S22°W is a further 22° towards the West.\n\n\\(180° + 22° = 202°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 207°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "207°",
+      "297°",
+      "027°",
+      "153°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 207° is 180° or more, subtract 180°: \\(207° - 180° = 27°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 341°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "161°",
+      "019°",
+      "071°",
+      "341°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 341° is 180° or more, subtract 180°: \\(341° - 180° = 161°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 105°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "255°",
+      "285°",
+      "195°",
+      "105°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 105° is less than 180°, add 180°: \\(105° + 180° = 285°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 087°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "267°",
+      "273°",
+      "177°",
+      "087°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 87° is less than 180°, add 180°: \\(87° + 180° = 267°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 075°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "255°",
+      "285°",
+      "075°",
+      "165°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 75° is less than 180°, add 180°: \\(75° + 180° = 255°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 221°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "041°",
+      "221°",
+      "139°",
+      "311°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 221° is 180° or more, subtract 180°: \\(221° - 180° = 41°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N46°E as a three-figure bearing.",
+    "options": [
+      "136°",
+      "134°",
+      "314°",
+      "046°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N46°E means 46° measured from North towards the East.\n\nAs a three-figure bearing this is 046°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 350°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "010°",
+      "350°",
+      "170°",
+      "080°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 350° is 180° or more, subtract 180°: \\(350° - 180° = 170°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N21°E as a three-figure bearing.",
+    "options": [
+      "339°",
+      "111°",
+      "159°",
+      "021°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N21°E means 21° measured from North towards the East.\n\nAs a three-figure bearing this is 021°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 157°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "247°",
+      "157°",
+      "203°",
+      "337°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 157° is less than 180°, add 180°: \\(157° + 180° = 337°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S75°W as a three-figure bearing.",
+    "options": [
+      "105°",
+      "075°",
+      "255°",
+      "285°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S75°W is a further 75° towards the West.\n\n\\(180° + 75° = 255°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 352°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "172°",
+      "008°",
+      "082°",
+      "352°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 352° is 180° or more, subtract 180°: \\(352° - 180° = 172°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 228°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "048°",
+      "132°",
+      "228°",
+      "318°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 228° is 180° or more, subtract 180°: \\(228° - 180° = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 244°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "064°",
+      "334°",
+      "116°",
+      "244°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 244° is 180° or more, subtract 180°: \\(244° - 180° = 64°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 353°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "173°",
+      "007°",
+      "083°",
+      "353°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 353° is 180° or more, subtract 180°: \\(353° - 180° = 173°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 017°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "343°",
+      "197°",
+      "017°",
+      "107°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 17° is less than 180°, add 180°: \\(17° + 180° = 197°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 039°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "039°",
+      "321°",
+      "129°",
+      "219°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 39° is less than 180°, add 180°: \\(39° + 180° = 219°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 139°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "139°",
+      "221°",
+      "319°",
+      "229°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 139° is less than 180°, add 180°: \\(139° + 180° = 319°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 286°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "106°",
+      "286°",
+      "016°",
+      "074°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 286° is 180° or more, subtract 180°: \\(286° - 180° = 106°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 262°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "082°",
+      "352°",
+      "098°",
+      "262°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 262° is 180° or more, subtract 180°: \\(262° - 180° = 82°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 091°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "091°",
+      "269°",
+      "181°",
+      "271°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 91° is less than 180°, add 180°: \\(91° + 180° = 271°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S14°W as a three-figure bearing.",
+    "options": [
+      "194°",
+      "346°",
+      "014°",
+      "166°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S14°W is a further 14° towards the West.\n\n\\(180° + 14° = 194°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 232°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "322°",
+      "128°",
+      "052°",
+      "232°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 232° is 180° or more, subtract 180°: \\(232° - 180° = 52°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 164°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "196°",
+      "164°",
+      "344°",
+      "254°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 164° is less than 180°, add 180°: \\(164° + 180° = 344°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 034°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "034°",
+      "326°",
+      "214°",
+      "124°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 34° is less than 180°, add 180°: \\(34° + 180° = 214°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N27°E as a three-figure bearing.",
+    "options": [
+      "027°",
+      "117°",
+      "333°",
+      "153°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N27°E means 27° measured from North towards the East.\n\nAs a three-figure bearing this is 027°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 043°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "317°",
+      "043°",
+      "223°",
+      "133°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 43° is less than 180°, add 180°: \\(43° + 180° = 223°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 171°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "171°",
+      "351°",
+      "189°",
+      "261°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 171° is less than 180°, add 180°: \\(171° + 180° = 351°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N19°E as a three-figure bearing.",
+    "options": [
+      "019°",
+      "161°",
+      "109°",
+      "341°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N19°E means 19° measured from North towards the East.\n\nAs a three-figure bearing this is 019°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S56°W as a three-figure bearing.",
+    "options": [
+      "236°",
+      "056°",
+      "304°",
+      "124°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S56°W is a further 56° towards the West.\n\n\\(180° + 56° = 236°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N55°E as a three-figure bearing.",
+    "options": [
+      "125°",
+      "305°",
+      "055°",
+      "145°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N55°E means 55° measured from North towards the East.\n\nAs a three-figure bearing this is 055°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N49°E as a three-figure bearing.",
+    "options": [
+      "139°",
+      "049°",
+      "131°",
+      "311°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N49°E means 49° measured from North towards the East.\n\nAs a three-figure bearing this is 049°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S61°W as a three-figure bearing.",
+    "options": [
+      "299°",
+      "241°",
+      "119°",
+      "061°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S61°W is a further 61° towards the West.\n\n\\(180° + 61° = 241°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 131°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "311°",
+      "131°",
+      "221°",
+      "229°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 131° is less than 180°, add 180°: \\(131° + 180° = 311°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 062°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "242°",
+      "062°",
+      "152°",
+      "298°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 62° is less than 180°, add 180°: \\(62° + 180° = 242°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 136°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "226°",
+      "224°",
+      "316°",
+      "136°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 136° is less than 180°, add 180°: \\(136° + 180° = 316°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 024°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "114°",
+      "204°",
+      "336°",
+      "024°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 24° is less than 180°, add 180°: \\(24° + 180° = 204°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 344°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "164°",
+      "016°",
+      "344°",
+      "074°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 344° is 180° or more, subtract 180°: \\(344° - 180° = 164°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S39°W as a three-figure bearing.",
+    "options": [
+      "141°",
+      "039°",
+      "219°",
+      "321°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S39°W is a further 39° towards the West.\n\n\\(180° + 39° = 219°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 050°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "310°",
+      "230°",
+      "050°",
+      "140°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 50° is less than 180°, add 180°: \\(50° + 180° = 230°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N40°E as a three-figure bearing.",
+    "options": [
+      "320°",
+      "130°",
+      "040°",
+      "140°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N40°E means 40° measured from North towards the East.\n\nAs a three-figure bearing this is 040°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 003°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "357°",
+      "183°",
+      "003°",
+      "093°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 3° is less than 180°, add 180°: \\(3° + 180° = 183°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 308°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "038°",
+      "052°",
+      "308°",
+      "128°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 308° is 180° or more, subtract 180°: \\(308° - 180° = 128°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 186°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "186°",
+      "006°",
+      "276°",
+      "174°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 186° is 180° or more, subtract 180°: \\(186° - 180° = 6°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 214°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "214°",
+      "034°",
+      "304°",
+      "146°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 214° is 180° or more, subtract 180°: \\(214° - 180° = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 194°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "284°",
+      "194°",
+      "014°",
+      "166°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 194° is 180° or more, subtract 180°: \\(194° - 180° = 14°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 175°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "265°",
+      "175°",
+      "355°",
+      "185°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 175° is less than 180°, add 180°: \\(175° + 180° = 355°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N80°E as a three-figure bearing.",
+    "options": [
+      "280°",
+      "170°",
+      "080°",
+      "100°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N80°E means 80° measured from North towards the East.\n\nAs a three-figure bearing this is 080°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 240°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "240°",
+      "120°",
+      "330°",
+      "060°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 240° is 180° or more, subtract 180°: \\(240° - 180° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 332°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "028°",
+      "152°",
+      "062°",
+      "332°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 332° is 180° or more, subtract 180°: \\(332° - 180° = 152°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 128°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "232°",
+      "308°",
+      "218°",
+      "128°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 128° is less than 180°, add 180°: \\(128° + 180° = 308°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 272°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "272°",
+      "092°",
+      "002°",
+      "088°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 272° is 180° or more, subtract 180°: \\(272° - 180° = 92°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S19°W as a three-figure bearing.",
+    "options": [
+      "341°",
+      "161°",
+      "019°",
+      "199°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S19°W is a further 19° towards the West.\n\n\\(180° + 19° = 199°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S54°W as a three-figure bearing.",
+    "options": [
+      "126°",
+      "054°",
+      "306°",
+      "234°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S54°W is a further 54° towards the West.\n\n\\(180° + 54° = 234°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 345°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "165°",
+      "015°",
+      "075°",
+      "345°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 345° is 180° or more, subtract 180°: \\(345° - 180° = 165°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 229°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "229°",
+      "049°",
+      "319°",
+      "131°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 229° is 180° or more, subtract 180°: \\(229° - 180° = 49°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 324°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "036°",
+      "324°",
+      "054°",
+      "144°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 324° is 180° or more, subtract 180°: \\(324° - 180° = 144°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S41°W as a three-figure bearing.",
+    "options": [
+      "319°",
+      "221°",
+      "139°",
+      "041°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S41°W is a further 41° towards the West.\n\n\\(180° + 41° = 221°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 248°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "068°",
+      "112°",
+      "338°",
+      "248°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 248° is 180° or more, subtract 180°: \\(248° - 180° = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 310°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "050°",
+      "040°",
+      "310°",
+      "130°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 310° is 180° or more, subtract 180°: \\(310° - 180° = 130°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S38°W as a three-figure bearing.",
+    "options": [
+      "142°",
+      "038°",
+      "322°",
+      "218°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measuring clockwise from North: South is 180°, and S38°W is a further 38° towards the West.\n\n\\(180° + 38° = 218°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 282°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "078°",
+      "012°",
+      "282°",
+      "102°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 282° is 180° or more, subtract 180°: \\(282° - 180° = 102°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 211°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "211°",
+      "149°",
+      "031°",
+      "301°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 211° is 180° or more, subtract 180°: \\(211° - 180° = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N32°E as a three-figure bearing.",
+    "options": [
+      "148°",
+      "122°",
+      "328°",
+      "032°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N32°E means 32° measured from North towards the East.\n\nAs a three-figure bearing this is 032°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N61°E as a three-figure bearing.",
+    "options": [
+      "299°",
+      "119°",
+      "061°",
+      "151°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N61°E means 61° measured from North towards the East.\n\nAs a three-figure bearing this is 061°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N64°E as a three-figure bearing.",
+    "options": [
+      "064°",
+      "296°",
+      "116°",
+      "154°"
+    ],
+    "correctIndex": 0,
+    "explanation": "N64°E means 64° measured from North towards the East.\n\nAs a three-figure bearing this is 064°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 342°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "018°",
+      "342°",
+      "072°",
+      "162°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 342° is 180° or more, subtract 180°: \\(342° - 180° = 162°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N56°E as a three-figure bearing.",
+    "options": [
+      "146°",
+      "124°",
+      "304°",
+      "056°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N56°E means 56° measured from North towards the East.\n\nAs a three-figure bearing this is 056°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 257°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "103°",
+      "257°",
+      "077°",
+      "347°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 257° is 180° or more, subtract 180°: \\(257° - 180° = 77°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 237°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "237°",
+      "057°",
+      "327°",
+      "123°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 237° is 180° or more, subtract 180°: \\(237° - 180° = 57°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 079°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "259°",
+      "281°",
+      "169°",
+      "079°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 79° is less than 180°, add 180°: \\(79° + 180° = 259°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 084°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "264°",
+      "174°",
+      "084°",
+      "276°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 84° is less than 180°, add 180°: \\(84° + 180° = 264°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 288°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "018°",
+      "288°",
+      "072°",
+      "108°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 288° is 180° or more, subtract 180°: \\(288° - 180° = 108°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 174°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "174°",
+      "186°",
+      "264°",
+      "354°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 174° is less than 180°, add 180°: \\(174° + 180° = 354°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 061°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "241°",
+      "151°",
+      "061°",
+      "299°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 61° is less than 180°, add 180°: \\(61° + 180° = 241°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 201°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "291°",
+      "021°",
+      "159°",
+      "201°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 201° is 180° or more, subtract 180°: \\(201° - 180° = 21°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N73°E as a three-figure bearing.",
+    "options": [
+      "163°",
+      "107°",
+      "287°",
+      "073°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N73°E means 73° measured from North towards the East.\n\nAs a three-figure bearing this is 073°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S74°W as a three-figure bearing.",
+    "options": [
+      "106°",
+      "254°",
+      "286°",
+      "074°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Measuring clockwise from North: South is 180°, and S74°W is a further 74° towards the West.\n\n\\(180° + 74° = 254°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S28°W as a three-figure bearing.",
+    "options": [
+      "152°",
+      "332°",
+      "208°",
+      "028°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measuring clockwise from North: South is 180°, and S28°W is a further 28° towards the West.\n\n\\(180° + 28° = 208°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 028°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "118°",
+      "332°",
+      "208°",
+      "028°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 28° is less than 180°, add 180°: \\(28° + 180° = 208°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 252°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "342°",
+      "072°",
+      "252°",
+      "108°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 252° is 180° or more, subtract 180°: \\(252° - 180° = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 033°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "033°",
+      "213°",
+      "123°",
+      "327°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 33° is less than 180°, add 180°: \\(33° + 180° = 213°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N50°E as a three-figure bearing.",
+    "options": [
+      "130°",
+      "050°",
+      "140°",
+      "310°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N50°E means 50° measured from North towards the East.\n\nAs a three-figure bearing this is 050°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 005°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "095°",
+      "185°",
+      "355°",
+      "005°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 5° is less than 180°, add 180°: \\(5° + 180° = 185°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 297°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "027°",
+      "117°",
+      "063°",
+      "297°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 297° is 180° or more, subtract 180°: \\(297° - 180° = 117°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N34°E as a three-figure bearing.",
+    "options": [
+      "326°",
+      "034°",
+      "146°",
+      "124°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N34°E means 34° measured from North towards the East.\n\nAs a three-figure bearing this is 034°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N26°E as a three-figure bearing.",
+    "options": [
+      "116°",
+      "154°",
+      "026°",
+      "334°"
+    ],
+    "correctIndex": 2,
+    "explanation": "N26°E means 26° measured from North towards the East.\n\nAs a three-figure bearing this is 026°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 325°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "055°",
+      "325°",
+      "035°",
+      "145°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 325° is 180° or more, subtract 180°: \\(325° - 180° = 145°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 066°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "246°",
+      "156°",
+      "294°",
+      "066°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 66° is less than 180°, add 180°: \\(66° + 180° = 246°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N41°E as a three-figure bearing.",
+    "options": [
+      "319°",
+      "041°",
+      "139°",
+      "131°"
+    ],
+    "correctIndex": 1,
+    "explanation": "N41°E means 41° measured from North towards the East.\n\nAs a three-figure bearing this is 041°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 193°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "013°",
+      "283°",
+      "167°",
+      "193°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 193° is 180° or more, subtract 180°: \\(193° - 180° = 13°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 177°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "177°",
+      "267°",
+      "357°",
+      "183°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 177° is less than 180°, add 180°: \\(177° + 180° = 357°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 337°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "337°",
+      "157°",
+      "067°",
+      "023°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 337° is 180° or more, subtract 180°: \\(337° - 180° = 157°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 007°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "187°",
+      "007°",
+      "097°",
+      "353°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 7° is less than 180°, add 180°: \\(7° + 180° = 187°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 146°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "214°",
+      "146°",
+      "236°",
+      "326°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 146° is less than 180°, add 180°: \\(146° + 180° = 326°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 127°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "217°",
+      "307°",
+      "233°",
+      "127°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 127° is less than 180°, add 180°: \\(127° + 180° = 307°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction N53°E as a three-figure bearing.",
+    "options": [
+      "307°",
+      "143°",
+      "127°",
+      "053°"
+    ],
+    "correctIndex": 3,
+    "explanation": "N53°E means 53° measured from North towards the East.\n\nAs a three-figure bearing this is 053°.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 266°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "266°",
+      "356°",
+      "086°",
+      "094°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 266° is 180° or more, subtract 180°: \\(266° - 180° = 86°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express the direction S59°W as a three-figure bearing.",
+    "options": [
+      "239°",
+      "121°",
+      "059°",
+      "301°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measuring clockwise from North: South is 180°, and S59°W is a further 59° towards the West.\n\n\\(180° + 59° = 239°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 012°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "102°",
+      "348°",
+      "192°",
+      "012°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 12° is less than 180°, add 180°: \\(12° + 180° = 192°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 251°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "109°",
+      "071°",
+      "251°",
+      "341°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 251° is 180° or more, subtract 180°: \\(251° - 180° = 71°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The bearing of \\(Q\\) from \\(P\\) is 347°. Find the bearing of \\(P\\) from \\(Q\\).",
+    "options": [
+      "347°",
+      "167°",
+      "077°",
+      "013°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The back bearing differs from the forward bearing by 180°.\n\nSince 347° is 180° or more, subtract 180°: \\(347° - 180° = 167°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "dRthLAyJ0sSMpeWjmKkF",
+    "topicId": "s326YQ1xJSFIiwkTJ0JZ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

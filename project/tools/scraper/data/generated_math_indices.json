@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Simplify \\(8x^{5} \\times 6x^{4}\\).",
+    "options": [
+      "\\(48x^{10}\\)",
+      "\\(48x^{9}\\)",
+      "\\(48x^{20}\\)",
+      "\\(14x^{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 6 = 48\\)\n\nIndices: \\(5 + 4 = 9\\)\n\nSo the answer is \\(48x^{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(4^{x} = 1024\\), find the value of \\(x\\).",
+    "options": [
+      "6",
+      "1024",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 1024 as a power of 4.\n\n\\(1024 = 4^{5}\\)\n\nSo \\(4^{x} = 4^{5}\\), and since the bases are equal, \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12 \\times 6^{0}\\).",
+    "options": [
+      "0",
+      "12",
+      "1",
+      "72"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(12 \\times 1 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(5^{x} = 125\\), find the value of \\(x\\).",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "125"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express 125 as a power of 5.\n\n\\(125 = 5^{3}\\)\n\nSo \\(5^{x} = 5^{3}\\), and since the bases are equal, \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{13}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{26}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{13}}{x^{2}} = x^{13-2} = x^{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{6}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{6}}{x^{3}} = x^{6-3} = x^{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(36^{\\frac{3}{2}}\\).",
+    "options": [
+      "54",
+      "1296",
+      "216",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 36 is 6, since \\(6^{2} = 36\\).\n\nSo \\(36^{\\frac{3}{2}} = 6^{3} = 216\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{2} \\times 7x^{4}\\).",
+    "options": [
+      "\\(21x^{8}\\)",
+      "\\(21x^{6}\\)",
+      "\\(21x^{7}\\)",
+      "\\(10x^{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 7 = 21\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(21x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{2})^{5}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{2})^{5} = x^{2 \\times 5} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{64}\\)",
+      "\\(-\\frac{1}{16}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{16}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(4^{-2} = \\frac{1}{4^{2}} = \\frac{1}{16}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(4^{x} = 16\\), find the value of \\(x\\).",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express 16 as a power of 4.\n\n\\(16 = 4^{2}\\)\n\nSo \\(4^{x} = 4^{2}\\), and since the bases are equal, \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5^{3}\\).",
+    "options": [
+      "25",
+      "625",
+      "125",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5^{3}\\) means 5 multiplied by itself 3 times.\n\n\\(5^{3} = 5 \\times 5 \\times 5 = 125\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2 \\times 5^{0}\\).",
+    "options": [
+      "2",
+      "1",
+      "10",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(2 \\times 1 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(125^{\\frac{2}{3}}\\).",
+    "options": [
+      "125",
+      "25",
+      "10",
+      "83.33333333333333"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 125 is 5, since \\(5^{3} = 125\\).\n\nSo \\(125^{\\frac{2}{3}} = 5^{2} = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(6^{x} = 216\\), find the value of \\(x\\).",
+    "options": [
+      "2",
+      "216",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express 216 as a power of 6.\n\n\\(216 = 6^{3}\\)\n\nSo \\(6^{x} = 6^{3}\\), and since the bases are equal, \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{15}\\)",
+      "\\(x\\)",
+      "\\(x^{56}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{7} \\times x^{8} = x^{7+8} = x^{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{5} \\times 3x^{3}\\).",
+    "options": [
+      "\\(18x^{8}\\)",
+      "\\(18x^{9}\\)",
+      "\\(18x^{15}\\)",
+      "\\(9x^{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 3 = 18\\)\n\nIndices: \\(5 + 3 = 8\\)\n\nSo the answer is \\(18x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16^{\\frac{3}{2}}\\).",
+    "options": [
+      "24",
+      "64",
+      "12",
+      "256"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 16 is 4, since \\(4^{2} = 16\\).\n\nSo \\(16^{\\frac{3}{2}} = 4^{3} = 64\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(2^{x} = 8\\), find the value of \\(x\\).",
+    "options": [
+      "4",
+      "8",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 8 as a power of 2.\n\n\\(8 = 2^{3}\\)\n\nSo \\(2^{x} = 2^{3}\\), and since the bases are equal, \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{1}{27}\\)",
+      "\\(-\\frac{1}{9}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(3^{-2} = \\frac{1}{3^{2}} = \\frac{1}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{3} \\times 9x^{2}\\).",
+    "options": [
+      "\\(63x^{5}\\)",
+      "\\(63x^{6}\\)",
+      "\\(16x^{6}\\)",
+      "\\(16x^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 9 = 63\\)\n\nIndices: \\(3 + 2 = 5\\)\n\nSo the answer is \\(63x^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{9})^{5}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{45}\\)",
+      "\\(x^{54}\\)",
+      "\\(x^{40}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{9})^{5} = x^{9 \\times 5} = x^{45}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(64^{\\frac{3}{3}}\\).",
+    "options": [
+      "12",
+      "64",
+      "7",
+      "256"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 64 is 4, since \\(4^{3} = 64\\).\n\nSo \\(64^{\\frac{3}{3}} = 4^{3} = 64\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{19}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{80}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{10} \\times x^{8} = x^{10+8} = x^{18}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(3^{x} = 729\\), find the value of \\(x\\).",
+    "options": [
+      "7",
+      "729",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express 729 as a power of 3.\n\n\\(729 = 3^{6}\\)\n\nSo \\(3^{x} = 3^{6}\\), and since the bases are equal, \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7^{5}\\).",
+    "options": [
+      "117649",
+      "2401",
+      "35",
+      "16807"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(7^{5}\\) means 7 multiplied by itself 5 times.\n\n\\(7^{5} = 7 \\times 7 \\times 7 \\times 7 \\times 7 = 16807\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(4^{x} = 64\\), find the value of \\(x\\).",
+    "options": [
+      "2",
+      "64",
+      "4",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 64 as a power of 4.\n\n\\(64 = 4^{3}\\)\n\nSo \\(4^{x} = 4^{3}\\), and since the bases are equal, \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9^{\\frac{3}{2}}\\).",
+    "options": [
+      "9",
+      "13.5",
+      "81",
+      "27"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 9 is 3, since \\(3^{2} = 9\\).\n\nSo \\(9^{\\frac{3}{2}} = 3^{3} = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2 \\times 2^{0}\\).",
+    "options": [
+      "4",
+      "0",
+      "2",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(2 \\times 1 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(18 \\times 3^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "18",
+      "54"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(18 \\times 1 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(64^{\\frac{2}{3}}\\).",
+    "options": [
+      "42.666666666666664",
+      "64",
+      "8",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 64 is 4, since \\(4^{3} = 64\\).\n\nSo \\(64^{\\frac{2}{3}} = 4^{2} = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2^{-2}\\).",
+    "options": [
+      "\\(-\\frac{1}{4}\\)",
+      "\\(4\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{1}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(2^{-2} = \\frac{1}{2^{2}} = \\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(6^{x} = 7776\\), find the value of \\(x\\).",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7776"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express 7776 as a power of 6.\n\n\\(7776 = 6^{5}\\)\n\nSo \\(6^{x} = 6^{5}\\), and since the bases are equal, \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4 \\times 7^{0}\\).",
+    "options": [
+      "1",
+      "4",
+      "0",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(7^{0} = 1\\)\n\nSo \\(4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{5})^{6}\\).",
+    "options": [
+      "\\(x^{30}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{35}\\)",
+      "\\(x^{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{5})^{6} = x^{5 \\times 6} = x^{30}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{10}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{50}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{10}}{x^{5}} = x^{10-5} = x^{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(125^{\\frac{3}{3}}\\).",
+    "options": [
+      "8",
+      "125",
+      "15",
+      "625"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 125 is 5, since \\(5^{3} = 125\\).\n\nSo \\(125^{\\frac{3}{3}} = 5^{3} = 125\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{3} \\times 2x^{5}\\).",
+    "options": [
+      "\\(14x^{8}\\)",
+      "\\(9x^{8}\\)",
+      "\\(14x^{15}\\)",
+      "\\(14x^{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 2 = 14\\)\n\nIndices: \\(3 + 5 = 8\\)\n\nSo the answer is \\(14x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(10 \\times 6^{0}\\).",
+    "options": [
+      "0",
+      "60",
+      "10",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(10 \\times 1 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{6}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{5}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{6}}{x^{2}} = x^{6-2} = x^{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{9}\\).",
+    "options": [
+      "\\(x^{2}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{63}\\)",
+      "\\(x^{17}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{7} \\times x^{9} = x^{7+9} = x^{16}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(15 \\times 4^{0}\\).",
+    "options": [
+      "60",
+      "0",
+      "1",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(4^{0} = 1\\)\n\nSo \\(15 \\times 1 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{18}\\)",
+      "\\(\\frac{1}{729}\\)",
+      "\\(\\frac{1}{81}\\)",
+      "\\(-\\frac{1}{81}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(9^{-2} = \\frac{1}{9^{2}} = \\frac{1}{81}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x^{5} \\times 7x^{6}\\).",
+    "options": [
+      "\\(14x^{11}\\)",
+      "\\(14x^{30}\\)",
+      "\\(14x^{12}\\)",
+      "\\(9x^{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(2 \\times 7 = 14\\)\n\nIndices: \\(5 + 6 = 11\\)\n\nSo the answer is \\(14x^{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{4})^{7}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{32}\\)",
+      "\\(x^{28}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{4})^{7} = x^{4 \\times 7} = x^{28}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6^{3}\\).",
+    "options": [
+      "18",
+      "1296",
+      "216",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(6^{3}\\) means 6 multiplied by itself 3 times.\n\n\\(6^{3} = 6 \\times 6 \\times 6 = 216\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3^{3}\\).",
+    "options": [
+      "9",
+      "27",
+      "81",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3^{3}\\) means 3 multiplied by itself 3 times.\n\n\\(3^{3} = 3 \\times 3 \\times 3 = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6^{-3}\\).",
+    "options": [
+      "\\(\\frac{1}{18}\\)",
+      "\\(-\\frac{1}{216}\\)",
+      "\\(\\frac{1}{216}\\)",
+      "\\(\\frac{1}{1296}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(6^{-3} = \\frac{1}{6^{3}} = \\frac{1}{216}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{8})^{5}\\).",
+    "options": [
+      "\\(x^{40}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{48}\\)",
+      "\\(x^{35}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{8})^{5} = x^{8 \\times 5} = x^{40}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{-3}\\).",
+    "options": [
+      "\\(\\frac{1}{64}\\)",
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{256}\\)",
+      "\\(-\\frac{1}{64}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(4^{-3} = \\frac{1}{4^{3}} = \\frac{1}{64}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(2^{x} = 4\\), find the value of \\(x\\).",
+    "options": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 4 as a power of 2.\n\n\\(4 = 2^{2}\\)\n\nSo \\(2^{x} = 2^{2}\\), and since the bases are equal, \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x^{2} \\times 4x^{6}\\).",
+    "options": [
+      "\\(16x^{9}\\)",
+      "\\(16x^{8}\\)",
+      "\\(16x^{12}\\)",
+      "\\(8x^{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(4 \\times 4 = 16\\)\n\nIndices: \\(2 + 6 = 8\\)\n\nSo the answer is \\(16x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{10} \\times x^{3} = x^{10+3} = x^{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{2})^{4}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{2})^{4} = x^{2 \\times 4} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{44}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{11} \\times x^{4} = x^{11+4} = x^{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7 \\times 4^{0}\\).",
+    "options": [
+      "28",
+      "1",
+      "7",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(4^{0} = 1\\)\n\nSo \\(7 \\times 1 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{6}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{30}\\)",
+      "\\(x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{6}}{x^{5}} = x^{6-5} = x\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(4^{x} = 256\\), find the value of \\(x\\).",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "256"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express 256 as a power of 4.\n\n\\(256 = 4^{4}\\)\n\nSo \\(4^{x} = 4^{4}\\), and since the bases are equal, \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2^{3}\\).",
+    "options": [
+      "8",
+      "16",
+      "4",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(2^{3}\\) means 2 multiplied by itself 3 times.\n\n\\(2^{3} = 2 \\times 2 \\times 2 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{2} \\times 5x^{3}\\).",
+    "options": [
+      "\\(30x^{5}\\)",
+      "\\(11x^{5}\\)",
+      "\\(11x^{6}\\)",
+      "\\(30x^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 5 = 30\\)\n\nIndices: \\(2 + 3 = 5\\)\n\nSo the answer is \\(30x^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{13}\\)",
+      "\\(x^{12}\\)",
+      "\\(1\\)",
+      "\\(x^{36}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{6} \\times x^{6} = x^{6+6} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6^{5}\\).",
+    "options": [
+      "7776",
+      "46656",
+      "1296",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(6^{5}\\) means 6 multiplied by itself 5 times.\n\n\\(6^{5} = 6 \\times 6 \\times 6 \\times 6 \\times 6 = 7776\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(17 \\times 5^{0}\\).",
+    "options": [
+      "17",
+      "85",
+      "1",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(17 \\times 1 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(216^{\\frac{3}{3}}\\).",
+    "options": [
+      "216",
+      "1296",
+      "9",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 216 is 6, since \\(6^{3} = 216\\).\n\nSo \\(216^{\\frac{3}{3}} = 6^{3} = 216\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4 \\times 9^{0}\\).",
+    "options": [
+      "36",
+      "4",
+      "0",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(9^{0} = 1\\)\n\nSo \\(4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4 \\times 2^{0}\\).",
+    "options": [
+      "8",
+      "1",
+      "0",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{3})^{3}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{27}\\)",
+      "\\(x^{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{3})^{3} = x^{3 \\times 3} = x^{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{8}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{13}\\)",
+      "\\(x^{40}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{8}}{x^{5}} = x^{8-5} = x^{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{12}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{15}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{36}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{12}}{x^{3}} = x^{12-3} = x^{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2^{2}\\).",
+    "options": [
+      "6",
+      "8",
+      "4",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(2^{2}\\) means 2 multiplied by itself 2 times.\n\n\\(2^{2} = 2 \\times 2 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(3^{x} = 243\\), find the value of \\(x\\).",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "243"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express 243 as a power of 3.\n\n\\(243 = 3^{5}\\)\n\nSo \\(3^{x} = 3^{5}\\), and since the bases are equal, \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(3^{x} = 81\\), find the value of \\(x\\).",
+    "options": [
+      "81",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express 81 as a power of 3.\n\n\\(81 = 3^{4}\\)\n\nSo \\(3^{x} = 3^{4}\\), and since the bases are equal, \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{4})^{3}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{4})^{3} = x^{4 \\times 3} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(216^{\\frac{2}{3}}\\).",
+    "options": [
+      "216",
+      "12",
+      "36",
+      "144"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 216 is 6, since \\(6^{3} = 216\\).\n\nSo \\(216^{\\frac{2}{3}} = 6^{2} = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{3}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{2} \\times x^{5} = x^{2+5} = x^{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{9})^{3}\\).",
+    "options": [
+      "\\(x^{36}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{27}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{9})^{3} = x^{9 \\times 3} = x^{27}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(27^{\\frac{2}{3}}\\).",
+    "options": [
+      "18",
+      "27",
+      "9",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 27 is 3, since \\(3^{3} = 27\\).\n\nSo \\(27^{\\frac{2}{3}} = 3^{2} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16^{\\frac{2}{2}}\\).",
+    "options": [
+      "64",
+      "8",
+      "6",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 16 is 4, since \\(4^{2} = 16\\).\n\nSo \\(16^{\\frac{2}{2}} = 4^{2} = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{36}\\)",
+      "\\(-\\frac{1}{36}\\)",
+      "\\(\\frac{1}{216}\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(6^{-2} = \\frac{1}{6^{2}} = \\frac{1}{36}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{13}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{39}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{13}}{x^{3}} = x^{13-3} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x^{4} \\times 5x^{3}\\).",
+    "options": [
+      "\\(10x^{8}\\)",
+      "\\(10x^{7}\\)",
+      "\\(10x^{12}\\)",
+      "\\(7x^{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(2 \\times 5 = 10\\)\n\nIndices: \\(4 + 3 = 7\\)\n\nSo the answer is \\(10x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 5^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "65",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4 \\times 3^{0}\\).",
+    "options": [
+      "12",
+      "0",
+      "4",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(6^{x} = 1296\\), find the value of \\(x\\).",
+    "options": [
+      "4",
+      "3",
+      "1296",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express 1296 as a power of 6.\n\n\\(1296 = 6^{4}\\)\n\nSo \\(6^{x} = 6^{4}\\), and since the bases are equal, \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{2})^{6}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{2})^{6} = x^{2 \\times 6} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{10}\\)",
+      "\\(-\\frac{1}{25}\\)",
+      "\\(\\frac{1}{25}\\)",
+      "\\(\\frac{1}{125}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(5^{-2} = \\frac{1}{5^{2}} = \\frac{1}{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{5} \\times 7x^{2}\\).",
+    "options": [
+      "\\(13x^{7}\\)",
+      "\\(42x^{7}\\)",
+      "\\(42x^{8}\\)",
+      "\\(42x^{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 7 = 42\\)\n\nIndices: \\(5 + 2 = 7\\)\n\nSo the answer is \\(42x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{7}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{4}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{7}}{x^{3}} = x^{7-3} = x^{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(4^{x} = 4096\\), find the value of \\(x\\).",
+    "options": [
+      "4096",
+      "6",
+      "5",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express 4096 as a power of 4.\n\n\\(4096 = 4^{6}\\)\n\nSo \\(4^{x} = 4^{6}\\), and since the bases are equal, \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(36^{\\frac{2}{2}}\\).",
+    "options": [
+      "8",
+      "12",
+      "216",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 36 is 6, since \\(6^{2} = 36\\).\n\nSo \\(36^{\\frac{2}{2}} = 6^{2} = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{15}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{14}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{15}}{x^{2}} = x^{15-2} = x^{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{23}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{120}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{10} = x^{12+10} = x^{22}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11 \\times 5^{0}\\).",
+    "options": [
+      "55",
+      "0",
+      "1",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(11 \\times 1 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{14}\\)",
+      "\\(-\\frac{1}{49}\\)",
+      "\\(\\frac{1}{343}\\)",
+      "\\(\\frac{1}{49}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(7^{-2} = \\frac{1}{7^{2}} = \\frac{1}{49}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{12}}{x^{4}}\\).",
+    "options": [
+      "\\(x^{48}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{12}}{x^{4}} = x^{12-4} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3^{4}\\).",
+    "options": [
+      "81",
+      "12",
+      "243",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3^{4}\\) means 3 multiplied by itself 4 times.\n\n\\(3^{4} = 3 \\times 3 \\times 3 \\times 3 = 81\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{8})^{7}\\).",
+    "options": [
+      "\\(x^{49}\\)",
+      "\\(x^{64}\\)",
+      "\\(x^{56}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{8})^{7} = x^{8 \\times 7} = x^{56}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{15}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{75}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{15}}{x^{5}} = x^{15-5} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{8}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{33}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{11} \\times x^{3} = x^{11+3} = x^{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{60}\\)",
+      "\\(x^{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{5} \\times x^{12} = x^{5+12} = x^{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{5} \\times 3x^{2}\\).",
+    "options": [
+      "\\(18x^{8}\\)",
+      "\\(18x^{7}\\)",
+      "\\(18x^{10}\\)",
+      "\\(9x^{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 3 = 18\\)\n\nIndices: \\(5 + 2 = 7\\)\n\nSo the answer is \\(18x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{7})^{6}\\).",
+    "options": [
+      "\\(x^{36}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{42}\\)",
+      "\\(x^{49}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{7})^{6} = x^{7 \\times 6} = x^{42}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{23}\\)",
+      "\\(x\\)",
+      "\\(x^{132}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{11} = x^{12+11} = x^{23}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{32}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{4} = x^{8+4} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3^{-3}\\).",
+    "options": [
+      "\\(\\frac{1}{27}\\)",
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{1}{81}\\)",
+      "\\(-\\frac{1}{27}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(3^{-3} = \\frac{1}{3^{3}} = \\frac{1}{27}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{16}\\)",
+      "\\(1\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{4} = x^{4+4} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x^{4} \\times 5x^{6}\\).",
+    "options": [
+      "\\(20x^{24}\\)",
+      "\\(20x^{11}\\)",
+      "\\(20x^{10}\\)",
+      "\\(9x^{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(4 \\times 5 = 20\\)\n\nIndices: \\(4 + 6 = 10\\)\n\nSo the answer is \\(20x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{4} \\times 9x^{6}\\).",
+    "options": [
+      "\\(63x^{11}\\)",
+      "\\(63x^{24}\\)",
+      "\\(63x^{10}\\)",
+      "\\(16x^{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 9 = 63\\)\n\nIndices: \\(4 + 6 = 10\\)\n\nSo the answer is \\(63x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x^{3} \\times 8x^{4}\\).",
+    "options": [
+      "\\(40x^{7}\\)",
+      "\\(40x^{8}\\)",
+      "\\(40x^{12}\\)",
+      "\\(13x^{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(5 \\times 8 = 40\\)\n\nIndices: \\(3 + 4 = 7\\)\n\nSo the answer is \\(40x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{3}\\).",
+    "options": [
+      "16",
+      "12",
+      "256",
+      "64"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4^{3}\\) means 4 multiplied by itself 3 times.\n\n\\(4^{3} = 4 \\times 4 \\times 4 = 64\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{19}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{77}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{11} \\times x^{7} = x^{11+7} = x^{18}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5^{4}\\).",
+    "options": [
+      "3125",
+      "20",
+      "125",
+      "625"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5^{4}\\) means 5 multiplied by itself 4 times.\n\n\\(5^{4} = 5 \\times 5 \\times 5 \\times 5 = 625\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14 \\times 3^{0}\\).",
+    "options": [
+      "0",
+      "42",
+      "1",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(14 \\times 1 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{6} \\times 9x^{4}\\).",
+    "options": [
+      "\\(27x^{11}\\)",
+      "\\(27x^{24}\\)",
+      "\\(27x^{10}\\)",
+      "\\(12x^{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 9 = 27\\)\n\nIndices: \\(6 + 4 = 10\\)\n\nSo the answer is \\(27x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{11}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{33}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{11}}{x^{3}} = x^{11-3} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{2} \\times 2x^{4}\\).",
+    "options": [
+      "\\(16x^{6}\\)",
+      "\\(16x^{8}\\)",
+      "\\(16x^{7}\\)",
+      "\\(10x^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 2 = 16\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(16x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(5^{x} = 15625\\), find the value of \\(x\\).",
+    "options": [
+      "6",
+      "7",
+      "15625",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express 15625 as a power of 5.\n\n\\(15625 = 5^{6}\\)\n\nSo \\(5^{x} = 5^{6}\\), and since the bases are equal, \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(5^{x} = 3125\\), find the value of \\(x\\).",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "3125"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express 3125 as a power of 5.\n\n\\(3125 = 5^{5}\\)\n\nSo \\(5^{x} = 5^{5}\\), and since the bases are equal, \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{4}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{96}\\)",
+      "\\(x^{21}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{12} = x^{8+12} = x^{20}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{7}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{7}}{x^{2}} = x^{7-2} = x^{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{8})^{4}\\).",
+    "options": [
+      "\\(x^{28}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{32}\\)",
+      "\\(x^{40}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{8})^{4} = x^{8 \\times 4} = x^{32}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(2^{x} = 64\\), find the value of \\(x\\).",
+    "options": [
+      "64",
+      "7",
+      "5",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 64 as a power of 2.\n\n\\(64 = 2^{6}\\)\n\nSo \\(2^{x} = 2^{6}\\), and since the bases are equal, \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3^{5}\\).",
+    "options": [
+      "15",
+      "81",
+      "729",
+      "243"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(3^{5}\\) means 3 multiplied by itself 5 times.\n\n\\(3^{5} = 3 \\times 3 \\times 3 \\times 3 \\times 3 = 243\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7 \\times 6^{0}\\).",
+    "options": [
+      "7",
+      "0",
+      "1",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(7 \\times 1 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(8^{-2}\\).",
+    "options": [
+      "\\(\\frac{1}{64}\\)",
+      "\\(-\\frac{1}{64}\\)",
+      "\\(\\frac{1}{512}\\)",
+      "\\(\\frac{1}{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(8^{-2} = \\frac{1}{8^{2}} = \\frac{1}{64}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(15 \\times 2^{0}\\).",
+    "options": [
+      "30",
+      "0",
+      "1",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(15 \\times 1 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{5})^{7}\\).",
+    "options": [
+      "\\(x^{40}\\)",
+      "\\(x^{35}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{28}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{5})^{7} = x^{5 \\times 7} = x^{35}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(3^{x} = 9\\), find the value of \\(x\\).",
+    "options": [
+      "9",
+      "3",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 9 as a power of 3.\n\n\\(9 = 3^{2}\\)\n\nSo \\(3^{x} = 3^{2}\\), and since the bases are equal, \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{7}}{x^{4}}\\).",
+    "options": [
+      "\\(x^{3}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{28}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{7}}{x^{4}} = x^{7-4} = x^{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{16}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{56}\\)",
+      "\\(x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{7} = x^{8+7} = x^{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{3} \\times 3x^{5}\\).",
+    "options": [
+      "\\(24x^{8}\\)",
+      "\\(24x^{15}\\)",
+      "\\(24x^{9}\\)",
+      "\\(11x^{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 3 = 24\\)\n\nIndices: \\(3 + 5 = 8\\)\n\nSo the answer is \\(24x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{5}\\).",
+    "options": [
+      "1024",
+      "4096",
+      "20",
+      "256"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(4^{5}\\) means 4 multiplied by itself 5 times.\n\n\\(4^{5} = 4 \\times 4 \\times 4 \\times 4 \\times 4 = 1024\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(19 \\times 9^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "171",
+      "19"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(9^{0} = 1\\)\n\nSo \\(19 \\times 1 = 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(19 \\times 6^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "19",
+      "114"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(19 \\times 1 = 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x^{3} \\times 3x^{2}\\).",
+    "options": [
+      "\\(15x^{6}\\)",
+      "\\(8x^{6}\\)",
+      "\\(15x^{5}\\)",
+      "\\(8x^{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(5 \\times 3 = 15\\)\n\nIndices: \\(3 + 2 = 5\\)\n\nSo the answer is \\(15x^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{7}\\).",
+    "options": [
+      "\\(x\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{42}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{6} \\times x^{7} = x^{6+7} = x^{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{6} \\times 3x^{6}\\).",
+    "options": [
+      "\\(24x^{12}\\)",
+      "\\(11x^{12}\\)",
+      "\\(24x^{36}\\)",
+      "\\(24x^{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 3 = 24\\)\n\nIndices: \\(6 + 6 = 12\\)\n\nSo the answer is \\(24x^{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{6}\\)",
+      "\\(x\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{2} \\times x^{3} = x^{2+3} = x^{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5^{-3}\\).",
+    "options": [
+      "\\(-\\frac{1}{125}\\)",
+      "\\(\\frac{1}{15}\\)",
+      "\\(\\frac{1}{125}\\)",
+      "\\(\\frac{1}{625}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(5^{-3} = \\frac{1}{5^{3}} = \\frac{1}{125}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{10}}{x^{4}}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{40}\\)",
+      "\\(x^{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{10}}{x^{4}} = x^{10-4} = x^{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11 \\times 4^{0}\\).",
+    "options": [
+      "1",
+      "11",
+      "0",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(4^{0} = 1\\)\n\nSo \\(11 \\times 1 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2^{-3}\\).",
+    "options": [
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(-\\frac{1}{8}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(2^{-3} = \\frac{1}{2^{3}} = \\frac{1}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{5} \\times 6x^{6}\\).",
+    "options": [
+      "\\(18x^{30}\\)",
+      "\\(18x^{11}\\)",
+      "\\(18x^{12}\\)",
+      "\\(9x^{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 6 = 18\\)\n\nIndices: \\(5 + 6 = 11\\)\n\nSo the answer is \\(18x^{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11 \\times 3^{0}\\).",
+    "options": [
+      "11",
+      "33",
+      "0",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(11 \\times 1 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(8^{\\frac{3}{3}}\\).",
+    "options": [
+      "16",
+      "5",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe cube root of 8 is 2, since \\(2^{3} = 8\\).\n\nSo \\(8^{\\frac{3}{3}} = 2^{3} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{10}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{10}}{x^{2}} = x^{10-2} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{11}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{6}\\)",
+      "\\(x^{55}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{11}}{x^{5}} = x^{11-5} = x^{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x^{2} \\times 7x^{4}\\).",
+    "options": [
+      "\\(35x^{6}\\)",
+      "\\(35x^{7}\\)",
+      "\\(12x^{6}\\)",
+      "\\(35x^{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(5 \\times 7 = 35\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(35x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14 \\times 5^{0}\\).",
+    "options": [
+      "1",
+      "14",
+      "70",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(14 \\times 1 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6 \\times 6^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "6",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(6 \\times 1 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(25^{\\frac{3}{2}}\\).",
+    "options": [
+      "37.5",
+      "15",
+      "125",
+      "625"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 25 is 5, since \\(5^{2} = 25\\).\n\nSo \\(25^{\\frac{3}{2}} = 5^{3} = 125\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2 \\times 9^{0}\\).",
+    "options": [
+      "18",
+      "1",
+      "2",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(9^{0} = 1\\)\n\nSo \\(2 \\times 1 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12 \\times 7^{0}\\).",
+    "options": [
+      "12",
+      "84",
+      "1",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(7^{0} = 1\\)\n\nSo \\(12 \\times 1 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14 \\times 7^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "14",
+      "98"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(7^{0} = 1\\)\n\nSo \\(14 \\times 1 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{8}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{8}}{x^{3}} = x^{8-3} = x^{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7^{3}\\).",
+    "options": [
+      "2401",
+      "21",
+      "49",
+      "343"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(7^{3}\\) means 7 multiplied by itself 3 times.\n\n\\(7^{3} = 7 \\times 7 \\times 7 = 343\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{25}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{11}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{5} \\times x^{5} = x^{5+5} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{6} \\times 4x^{5}\\).",
+    "options": [
+      "\\(12x^{12}\\)",
+      "\\(7x^{11}\\)",
+      "\\(12x^{11}\\)",
+      "\\(12x^{30}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 4 = 12\\)\n\nIndices: \\(6 + 5 = 11\\)\n\nSo the answer is \\(12x^{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{3} = x^{8+3} = x^{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7^{-3}\\).",
+    "options": [
+      "\\(-\\frac{1}{343}\\)",
+      "\\(\\frac{1}{343}\\)",
+      "\\(\\frac{1}{21}\\)",
+      "\\(\\frac{1}{2401}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(7^{-3} = \\frac{1}{7^{3}} = \\frac{1}{343}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{3} \\times x^{4}\\).",
+    "options": [
+      "\\(x^{8}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{7}\\)",
+      "\\(x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{3} \\times x^{4} = x^{3+4} = x^{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5^{2}\\).",
+    "options": [
+      "125",
+      "10",
+      "25",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5^{2}\\) means 5 multiplied by itself 2 times.\n\n\\(5^{2} = 5 \\times 5 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x^{2} \\times 6x^{4}\\).",
+    "options": [
+      "\\(10x^{6}\\)",
+      "\\(24x^{6}\\)",
+      "\\(24x^{7}\\)",
+      "\\(24x^{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(4 \\times 6 = 24\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(24x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{120}\\)",
+      "\\(x^{22}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{23}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{10} \\times x^{12} = x^{10+12} = x^{22}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{15}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{45}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{15}}{x^{3}} = x^{15-3} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{6} \\times 2x^{2}\\).",
+    "options": [
+      "\\(12x^{12}\\)",
+      "\\(12x^{9}\\)",
+      "\\(12x^{8}\\)",
+      "\\(8x^{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 2 = 12\\)\n\nIndices: \\(6 + 2 = 8\\)\n\nSo the answer is \\(12x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{48}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{12} = x^{4+12} = x^{16}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(18 \\times 5^{0}\\).",
+    "options": [
+      "90",
+      "0",
+      "1",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(18 \\times 1 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(8^{-3}\\).",
+    "options": [
+      "\\(-\\frac{1}{512}\\)",
+      "\\(\\frac{1}{4096}\\)",
+      "\\(\\frac{1}{512}\\)",
+      "\\(\\frac{1}{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(8^{-3} = \\frac{1}{8^{3}} = \\frac{1}{512}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(12 \\times 5^{0}\\).",
+    "options": [
+      "0",
+      "60",
+      "1",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(12 \\times 1 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{4} \\times 6x^{4}\\).",
+    "options": [
+      "\\(42x^{8}\\)",
+      "\\(42x^{9}\\)",
+      "\\(13x^{8}\\)",
+      "\\(42x^{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 6 = 42\\)\n\nIndices: \\(4 + 4 = 8\\)\n\nSo the answer is \\(42x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{3})^{7}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{3})^{7} = x^{3 \\times 7} = x^{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5 \\times 2^{0}\\).",
+    "options": [
+      "10",
+      "0",
+      "5",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(5 \\times 1 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{2}\\).",
+    "options": [
+      "8",
+      "4",
+      "64",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4^{2}\\) means 4 multiplied by itself 2 times.\n\n\\(4^{2} = 4 \\times 4 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{6} \\times 4x^{5}\\).",
+    "options": [
+      "\\(10x^{11}\\)",
+      "\\(24x^{30}\\)",
+      "\\(24x^{11}\\)",
+      "\\(24x^{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 4 = 24\\)\n\nIndices: \\(6 + 5 = 11\\)\n\nSo the answer is \\(24x^{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{20}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{96}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{8} = x^{12+8} = x^{20}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{15}\\)",
+      "\\(x^{44}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{11} = x^{4+11} = x^{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{14}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{70}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{14}}{x^{5}} = x^{14-5} = x^{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{4} \\times 5x^{4}\\).",
+    "options": [
+      "\\(12x^{8}\\)",
+      "\\(35x^{8}\\)",
+      "\\(35x^{9}\\)",
+      "\\(35x^{16}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 5 = 35\\)\n\nIndices: \\(4 + 4 = 8\\)\n\nSo the answer is \\(35x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9 \\times 6^{0}\\).",
+    "options": [
+      "1",
+      "9",
+      "0",
+      "54"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(9 \\times 1 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{14}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{28}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{14}}{x^{2}} = x^{14-2} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{2})^{7}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{7}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{2})^{7} = x^{2 \\times 7} = x^{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(6^{x} = 46656\\), find the value of \\(x\\).",
+    "options": [
+      "5",
+      "7",
+      "46656",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Express 46656 as a power of 6.\n\n\\(46656 = 6^{6}\\)\n\nSo \\(6^{x} = 6^{6}\\), and since the bases are equal, \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{2} \\times 5x^{4}\\).",
+    "options": [
+      "\\(40x^{6}\\)",
+      "\\(13x^{6}\\)",
+      "\\(40x^{7}\\)",
+      "\\(40x^{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 5 = 40\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(40x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 3^{0}\\).",
+    "options": [
+      "1",
+      "13",
+      "0",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{3})^{2}\\).",
+    "options": [
+      "\\(x^{4}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{3})^{2} = x^{3 \\times 2} = x^{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{9}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{45}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{9}}{x^{5}} = x^{9-5} = x^{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x^{4} \\times 4x^{4}\\).",
+    "options": [
+      "\\(9x^{8}\\)",
+      "\\(20x^{8}\\)",
+      "\\(20x^{16}\\)",
+      "\\(20x^{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(5 \\times 4 = 20\\)\n\nIndices: \\(4 + 4 = 8\\)\n\nSo the answer is \\(20x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{3}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{40}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{5} \\times x^{8} = x^{5+8} = x^{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x^{6} \\times 3x^{3}\\).",
+    "options": [
+      "\\(6x^{18}\\)",
+      "\\(6x^{10}\\)",
+      "\\(6x^{9}\\)",
+      "\\(5x^{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(2 \\times 3 = 6\\)\n\nIndices: \\(6 + 3 = 9\\)\n\nSo the answer is \\(6x^{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4 \\times 6^{0}\\).",
+    "options": [
+      "4",
+      "0",
+      "1",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{12}}{x^{2}}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{12}}{x^{2}} = x^{12-2} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{9})^{4}\\).",
+    "options": [
+      "\\(x^{36}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{32}\\)",
+      "\\(x^{45}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{9})^{4} = x^{9 \\times 4} = x^{36}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{5})^{5}\\).",
+    "options": [
+      "\\(x^{25}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{20}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{5})^{5} = x^{5 \\times 5} = x^{25}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9^{-3}\\).",
+    "options": [
+      "\\(-\\frac{1}{729}\\)",
+      "\\(\\frac{1}{729}\\)",
+      "\\(\\frac{1}{27}\\)",
+      "\\(\\frac{1}{6561}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "A negative index means the reciprocal: \\(a^{-n} = \\frac{1}{a^{n}}\\).\n\n\\(9^{-3} = \\frac{1}{9^{3}} = \\frac{1}{729}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{3})^{4}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{3})^{4} = x^{3 \\times 4} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x^{5} \\times 8x^{4}\\).",
+    "options": [
+      "\\(72x^{9}\\)",
+      "\\(17x^{9}\\)",
+      "\\(72x^{20}\\)",
+      "\\(72x^{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(9 \\times 8 = 72\\)\n\nIndices: \\(5 + 4 = 9\\)\n\nSo the answer is \\(72x^{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{7})^{5}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{35}\\)",
+      "\\(x^{42}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{7})^{5} = x^{7 \\times 5} = x^{35}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{11} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{66}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{11} \\times x^{6} = x^{11+6} = x^{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(8 \\times 2^{0}\\).",
+    "options": [
+      "0",
+      "16",
+      "8",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(8 \\times 1 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{5})^{2}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{5})^{2} = x^{5 \\times 2} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{8}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{32}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{8} = x^{4+8} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(6^{x} = 36\\), find the value of \\(x\\).",
+    "options": [
+      "1",
+      "36",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express 36 as a power of 6.\n\n\\(36 = 6^{2}\\)\n\nSo \\(6^{x} = 6^{2}\\), and since the bases are equal, \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{7})^{4}\\).",
+    "options": [
+      "\\(x^{28}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{35}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{7})^{4} = x^{7 \\times 4} = x^{28}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{2}\\)",
+      "\\(x^{24}\\)",
+      "\\(x^{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{6} = x^{4+6} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{2} \\times 6x^{5}\\).",
+    "options": [
+      "\\(14x^{7}\\)",
+      "\\(48x^{8}\\)",
+      "\\(48x^{10}\\)",
+      "\\(48x^{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 6 = 48\\)\n\nIndices: \\(2 + 5 = 7\\)\n\nSo the answer is \\(48x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{11}\\).",
+    "options": [
+      "\\(x^{19}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{88}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{11} = x^{8+11} = x^{19}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{4})^{5}\\).",
+    "options": [
+      "\\(x^{20}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{4})^{5} = x^{4 \\times 5} = x^{20}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{5} \\times 5x^{2}\\).",
+    "options": [
+      "\\(15x^{10}\\)",
+      "\\(15x^{8}\\)",
+      "\\(15x^{7}\\)",
+      "\\(8x^{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 5 = 15\\)\n\nIndices: \\(5 + 2 = 7\\)\n\nSo the answer is \\(15x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{10} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{60}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{10} \\times x^{6} = x^{10+6} = x^{16}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{6})^{2}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{18}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{6})^{2} = x^{6 \\times 2} = x^{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 4^{0}\\).",
+    "options": [
+      "1",
+      "52",
+      "0",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(4^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 7^{0}\\).",
+    "options": [
+      "13",
+      "0",
+      "91",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(7^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7 \\times 5^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "7",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(7 \\times 1 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{5} \\times 4x^{4}\\).",
+    "options": [
+      "\\(24x^{20}\\)",
+      "\\(24x^{9}\\)",
+      "\\(10x^{9}\\)",
+      "\\(24x^{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 4 = 24\\)\n\nIndices: \\(5 + 4 = 9\\)\n\nSo the answer is \\(24x^{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(2^{x} = 16\\), find the value of \\(x\\).",
+    "options": [
+      "16",
+      "4",
+      "3",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express 16 as a power of 2.\n\n\\(16 = 2^{4}\\)\n\nSo \\(2^{x} = 2^{4}\\), and since the bases are equal, \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{2}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{5} \\times x^{3} = x^{5+3} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11 \\times 8^{0}\\).",
+    "options": [
+      "88",
+      "11",
+      "1",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(8^{0} = 1\\)\n\nSo \\(11 \\times 1 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(14 \\times 9^{0}\\).",
+    "options": [
+      "14",
+      "0",
+      "1",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(9^{0} = 1\\)\n\nSo \\(14 \\times 1 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{40}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{3}\\)",
+      "\\(x^{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{5} = x^{8+5} = x^{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(3^{x} = 27\\), find the value of \\(x\\).",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Express 27 as a power of 3.\n\n\\(27 = 3^{3}\\)\n\nSo \\(3^{x} = 3^{3}\\), and since the bases are equal, \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(25^{\\frac{2}{2}}\\).",
+    "options": [
+      "10",
+      "25",
+      "125",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 25 is 5, since \\(5^{2} = 25\\).\n\nSo \\(25^{\\frac{2}{2}} = 5^{2} = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{8}}{x^{4}}\\).",
+    "options": [
+      "\\(x^{32}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{12}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{8}}{x^{4}} = x^{8-4} = x^{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{14}}{x^{4}}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{56}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{14}}{x^{4}} = x^{14-4} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{\\frac{3}{2}}\\).",
+    "options": [
+      "16",
+      "6",
+      "5",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 4 is 2, since \\(2^{2} = 4\\).\n\nSo \\(4^{\\frac{3}{2}} = 2^{3} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4^{4}\\).",
+    "options": [
+      "16",
+      "256",
+      "1024",
+      "64"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(4^{4}\\) means 4 multiplied by itself 4 times.\n\n\\(4^{4} = 4 \\times 4 \\times 4 \\times 4 = 256\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{7})^{7}\\).",
+    "options": [
+      "\\(x^{49}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{42}\\)",
+      "\\(x^{56}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{7})^{7} = x^{7 \\times 7} = x^{49}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{9})^{2}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{27}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{9})^{2} = x^{9 \\times 2} = x^{18}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{20}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{10}\\)",
+      "\\(x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{5} = x^{4+5} = x^{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x^{3} \\times 9x^{5}\\).",
+    "options": [
+      "\\(11x^{8}\\)",
+      "\\(18x^{15}\\)",
+      "\\(18x^{9}\\)",
+      "\\(18x^{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(2 \\times 9 = 18\\)\n\nIndices: \\(3 + 5 = 8\\)\n\nSo the answer is \\(18x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(17 \\times 6^{0}\\).",
+    "options": [
+      "1",
+      "17",
+      "0",
+      "102"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(17 \\times 1 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9 \\times 4^{0}\\).",
+    "options": [
+      "1",
+      "9",
+      "0",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(4^{0} = 1\\)\n\nSo \\(9 \\times 1 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9^{\\frac{2}{2}}\\).",
+    "options": [
+      "5",
+      "9",
+      "27",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(a^{\\frac{m}{n}} = (\\sqrt[n]{a})^{m}\\).\n\nThe square root of 9 is 3, since \\(3^{2} = 9\\).\n\nSo \\(9^{\\frac{2}{2}} = 3^{2} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{5} \\times 2x^{4}\\).",
+    "options": [
+      "\\(12x^{10}\\)",
+      "\\(12x^{9}\\)",
+      "\\(8x^{9}\\)",
+      "\\(12x^{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 2 = 12\\)\n\nIndices: \\(5 + 4 = 9\\)\n\nSo the answer is \\(12x^{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7^{4}\\).",
+    "options": [
+      "16807",
+      "28",
+      "2401",
+      "343"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(7^{4}\\) means 7 multiplied by itself 4 times.\n\n\\(7^{4} = 7 \\times 7 \\times 7 \\times 7 = 2401\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(6 \\times 4^{0}\\).",
+    "options": [
+      "6",
+      "1",
+      "0",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(4^{0} = 1\\)\n\nSo \\(6 \\times 1 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{7}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{2} \\times x^{7} = x^{2+7} = x^{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(5^{x} = 25\\), find the value of \\(x\\).",
+    "options": [
+      "25",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Express 25 as a power of 5.\n\n\\(25 = 5^{2}\\)\n\nSo \\(5^{x} = 5^{2}\\), and since the bases are equal, \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 8^{0}\\).",
+    "options": [
+      "1",
+      "13",
+      "0",
+      "104"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(8^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{2} \\times 3x^{4}\\).",
+    "options": [
+      "\\(6x^{6}\\)",
+      "\\(9x^{8}\\)",
+      "\\(9x^{6}\\)",
+      "\\(9x^{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 3 = 9\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(9x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{5} \\times 4x^{6}\\).",
+    "options": [
+      "\\(28x^{11}\\)",
+      "\\(28x^{12}\\)",
+      "\\(28x^{30}\\)",
+      "\\(11x^{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 4 = 28\\)\n\nIndices: \\(5 + 6 = 11\\)\n\nSo the answer is \\(28x^{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{8}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(x^{64}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{17}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{8} = x^{8+8} = x^{16}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(7^{2}\\).",
+    "options": [
+      "7",
+      "14",
+      "49",
+      "343"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(7^{2}\\) means 7 multiplied by itself 2 times.\n\n\\(7^{2} = 7 \\times 7 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 2^{0}\\).",
+    "options": [
+      "0",
+      "13",
+      "1",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{3} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{7}\\)",
+      "\\(x^{13}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{30}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{3} \\times x^{10} = x^{3+10} = x^{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(9 \\times 3^{0}\\).",
+    "options": [
+      "0",
+      "27",
+      "1",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(9 \\times 1 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{2} \\times 8x^{6}\\).",
+    "options": [
+      "\\(64x^{9}\\)",
+      "\\(64x^{8}\\)",
+      "\\(64x^{12}\\)",
+      "\\(16x^{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 8 = 64\\)\n\nIndices: \\(2 + 6 = 8\\)\n\nSo the answer is \\(64x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x^{3} \\times 3x^{3}\\).",
+    "options": [
+      "\\(7x^{6}\\)",
+      "\\(12x^{9}\\)",
+      "\\(12x^{7}\\)",
+      "\\(12x^{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(4 \\times 3 = 12\\)\n\nIndices: \\(3 + 3 = 6\\)\n\nSo the answer is \\(12x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{5} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{50}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{5} \\times x^{10} = x^{5+10} = x^{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x^{2} \\times 8x^{5}\\).",
+    "options": [
+      "\\(17x^{7}\\)",
+      "\\(72x^{8}\\)",
+      "\\(72x^{10}\\)",
+      "\\(72x^{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(9 \\times 8 = 72\\)\n\nIndices: \\(2 + 5 = 7\\)\n\nSo the answer is \\(72x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{6} \\times 4x^{4}\\).",
+    "options": [
+      "\\(24x^{11}\\)",
+      "\\(24x^{10}\\)",
+      "\\(24x^{24}\\)",
+      "\\(10x^{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 4 = 24\\)\n\nIndices: \\(6 + 4 = 10\\)\n\nSo the answer is \\(24x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3^{2}\\).",
+    "options": [
+      "3",
+      "9",
+      "27",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3^{2}\\) means 3 multiplied by itself 2 times.\n\n\\(3^{2} = 3 \\times 3 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{4} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{14}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{40}\\)",
+      "\\(x^{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{4} \\times x^{10} = x^{4+10} = x^{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x^{4} \\times 7x^{6}\\).",
+    "options": [
+      "\\(35x^{10}\\)",
+      "\\(12x^{10}\\)",
+      "\\(35x^{11}\\)",
+      "\\(35x^{24}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(5 \\times 7 = 35\\)\n\nIndices: \\(4 + 6 = 10\\)\n\nSo the answer is \\(35x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(10 \\times 9^{0}\\).",
+    "options": [
+      "1",
+      "10",
+      "90",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(9^{0} = 1\\)\n\nSo \\(10 \\times 1 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(17 \\times 3^{0}\\).",
+    "options": [
+      "17",
+      "51",
+      "0",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(3^{0} = 1\\)\n\nSo \\(17 \\times 1 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(11 \\times 6^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "11",
+      "66"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(11 \\times 1 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16 \\times 2^{0}\\).",
+    "options": [
+      "16",
+      "0",
+      "1",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(16 \\times 1 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16 \\times 6^{0}\\).",
+    "options": [
+      "0",
+      "1",
+      "96",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(16 \\times 1 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{14}\\)",
+      "\\(x^{15}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{2} = x^{12+2} = x^{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(4 \\times 5^{0}\\).",
+    "options": [
+      "0",
+      "4",
+      "20",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(5^{0} = 1\\)\n\nSo \\(4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(5^{5}\\).",
+    "options": [
+      "3125",
+      "25",
+      "625",
+      "15625"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(5^{5}\\) means 5 multiplied by itself 5 times.\n\n\\(5^{5} = 5 \\times 5 \\times 5 \\times 5 \\times 5 = 3125\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{6})^{6}\\).",
+    "options": [
+      "\\(x^{42}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{36}\\)",
+      "\\(x^{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{6})^{6} = x^{6 \\times 6} = x^{36}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(2^{x} = 32\\), find the value of \\(x\\).",
+    "options": [
+      "5",
+      "6",
+      "32",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express 32 as a power of 2.\n\n\\(32 = 2^{5}\\)\n\nSo \\(2^{x} = 2^{5}\\), and since the bases are equal, \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2 \\times 7^{0}\\).",
+    "options": [
+      "14",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(7^{0} = 1\\)\n\nSo \\(2 \\times 1 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{6}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{72}\\)",
+      "\\(x^{19}\\)",
+      "\\(x^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{6} = x^{12+6} = x^{18}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{9} \\times x^{12}\\).",
+    "options": [
+      "\\(x^{21}\\)",
+      "\\(x^{108}\\)",
+      "\\(x^{3}\\)",
+      "\\(x^{22}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{9} \\times x^{12} = x^{9+12} = x^{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{8} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{8} \\times x^{2} = x^{8+2} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x^{5} \\times 7x^{2}\\).",
+    "options": [
+      "\\(16x^{7}\\)",
+      "\\(63x^{8}\\)",
+      "\\(63x^{10}\\)",
+      "\\(63x^{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(9 \\times 7 = 63\\)\n\nIndices: \\(5 + 2 = 7\\)\n\nSo the answer is \\(63x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x^{2} \\times 2x^{5}\\).",
+    "options": [
+      "\\(11x^{7}\\)",
+      "\\(18x^{8}\\)",
+      "\\(18x^{10}\\)",
+      "\\(18x^{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(9 \\times 2 = 18\\)\n\nIndices: \\(2 + 5 = 7\\)\n\nSo the answer is \\(18x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{6} \\times x^{10}\\).",
+    "options": [
+      "\\(x^{60}\\)",
+      "\\(x^{17}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{6} \\times x^{10} = x^{6+10} = x^{16}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{2} \\times x^{2}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(x^{5}\\)",
+      "\\(x^{3}\\)",
+      "\\(x^{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{2} \\times x^{2} = x^{2+2} = x^{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{4} \\times 2x^{3}\\).",
+    "options": [
+      "\\(6x^{7}\\)",
+      "\\(6x^{12}\\)",
+      "\\(5x^{7}\\)",
+      "\\(6x^{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 2 = 6\\)\n\nIndices: \\(4 + 3 = 7\\)\n\nSo the answer is \\(6x^{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(16 \\times 9^{0}\\).",
+    "options": [
+      "1",
+      "16",
+      "144",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(9^{0} = 1\\)\n\nSo \\(16 \\times 1 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x^{4} \\times 2x^{2}\\).",
+    "options": [
+      "\\(6x^{8}\\)",
+      "\\(6x^{7}\\)",
+      "\\(5x^{6}\\)",
+      "\\(6x^{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(3 \\times 2 = 6\\)\n\nIndices: \\(4 + 2 = 6\\)\n\nSo the answer is \\(6x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{5}\\).",
+    "options": [
+      "\\(x^{17}\\)",
+      "\\(x^{60}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{5} = x^{12+5} = x^{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{13}}{x^{5}}\\).",
+    "options": [
+      "\\(x^{9}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{65}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{13}}{x^{5}} = x^{13-5} = x^{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x^{3} \\times 6x^{3}\\).",
+    "options": [
+      "\\(12x^{9}\\)",
+      "\\(8x^{6}\\)",
+      "\\(12x^{6}\\)",
+      "\\(12x^{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(2 \\times 6 = 12\\)\n\nIndices: \\(3 + 3 = 6\\)\n\nSo the answer is \\(12x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(17 \\times 8^{0}\\).",
+    "options": [
+      "1",
+      "0",
+      "17",
+      "136"
+    ],
+    "correctIndex": 2,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(8^{0} = 1\\)\n\nSo \\(17 \\times 1 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(5^{x} = 625\\), find the value of \\(x\\).",
+    "options": [
+      "4",
+      "625",
+      "3",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Express 625 as a power of 5.\n\n\\(625 = 5^{4}\\)\n\nSo \\(5^{x} = 5^{4}\\), and since the bases are equal, \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x^{4} \\times 3x^{4}\\).",
+    "options": [
+      "\\(18x^{16}\\)",
+      "\\(18x^{9}\\)",
+      "\\(18x^{8}\\)",
+      "\\(9x^{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(6 \\times 3 = 18\\)\n\nIndices: \\(4 + 4 = 8\\)\n\nSo the answer is \\(18x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{x^{10}}{x^{3}}\\).",
+    "options": [
+      "\\(x^{13}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When dividing powers of the same base, subtract the indices.\n\n\\(\\frac{x^{10}}{x^{3}} = x^{10-3} = x^{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{7})^{3}\\).",
+    "options": [
+      "\\(x^{18}\\)",
+      "\\(x^{21}\\)",
+      "\\(x^{10}\\)",
+      "\\(x^{28}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{7})^{3} = x^{7 \\times 3} = x^{21}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(3 \\times 2^{0}\\).",
+    "options": [
+      "3",
+      "6",
+      "0",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(2^{0} = 1\\)\n\nSo \\(3 \\times 1 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x^{5} \\times 2x^{3}\\).",
+    "options": [
+      "\\(8x^{9}\\)",
+      "\\(6x^{8}\\)",
+      "\\(8x^{8}\\)",
+      "\\(8x^{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(4 \\times 2 = 8\\)\n\nIndices: \\(5 + 3 = 8\\)\n\nSo the answer is \\(8x^{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x^{2} \\times 6x^{4}\\).",
+    "options": [
+      "\\(11x^{6}\\)",
+      "\\(30x^{8}\\)",
+      "\\(30x^{7}\\)",
+      "\\(30x^{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(5 \\times 6 = 30\\)\n\nIndices: \\(2 + 4 = 6\\)\n\nSo the answer is \\(30x^{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{6})^{5}\\).",
+    "options": [
+      "\\(x^{11}\\)",
+      "\\(x^{25}\\)",
+      "\\(x^{36}\\)",
+      "\\(x^{30}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{6})^{5} = x^{6 \\times 5} = x^{30}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{9})^{7}\\).",
+    "options": [
+      "\\(x^{72}\\)",
+      "\\(x^{56}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{63}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{9})^{7} = x^{9 \\times 7} = x^{63}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{7} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{21}\\)",
+      "\\(x^{4}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{7} \\times x^{3} = x^{7+3} = x^{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{9} \\times x^{2}\\).",
+    "options": [
+      "\\(x^{12}\\)",
+      "\\(x^{11}\\)",
+      "\\(x^{18}\\)",
+      "\\(x^{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{9} \\times x^{2} = x^{9+2} = x^{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{6})^{4}\\).",
+    "options": [
+      "\\(x^{10}\\)",
+      "\\(x^{20}\\)",
+      "\\(x^{30}\\)",
+      "\\(x^{24}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{6})^{4} = x^{6 \\times 4} = x^{24}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(2^{4}\\).",
+    "options": [
+      "32",
+      "16",
+      "18",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2^{4}\\) means 2 multiplied by itself 4 times.\n\n\\(2^{4} = 2 \\times 2 \\times 2 \\times 2 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x^{6} \\times 7x^{5}\\).",
+    "options": [
+      "\\(14x^{11}\\)",
+      "\\(9x^{11}\\)",
+      "\\(14x^{30}\\)",
+      "\\(14x^{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(2 \\times 7 = 14\\)\n\nIndices: \\(6 + 5 = 11\\)\n\nSo the answer is \\(14x^{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x^{3} \\times 7x^{2}\\).",
+    "options": [
+      "\\(63x^{5}\\)",
+      "\\(16x^{5}\\)",
+      "\\(63x^{6}\\)",
+      "\\(16x^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(9 \\times 7 = 63\\)\n\nIndices: \\(3 + 2 = 5\\)\n\nSo the answer is \\(63x^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((x^{2})^{3}\\).",
+    "options": [
+      "\\(x^{5}\\)",
+      "\\(x^{6}\\)",
+      "\\(x^{8}\\)",
+      "\\(x^{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "When a power is raised to another power, multiply the indices.\n\n\\((x^{2})^{3} = x^{2 \\times 3} = x^{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x^{4} \\times 9x^{6}\\).",
+    "options": [
+      "\\(72x^{10}\\)",
+      "\\(72x^{24}\\)",
+      "\\(17x^{10}\\)",
+      "\\(72x^{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(8 \\times 9 = 72\\)\n\nIndices: \\(4 + 6 = 10\\)\n\nSo the answer is \\(72x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(13 \\times 6^{0}\\).",
+    "options": [
+      "13",
+      "1",
+      "0",
+      "78"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any non-zero number raised to the power 0 equals 1.\n\n\\(6^{0} = 1\\)\n\nSo \\(13 \\times 1 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x^{6} \\times 8x^{4}\\).",
+    "options": [
+      "\\(15x^{10}\\)",
+      "\\(56x^{24}\\)",
+      "\\(56x^{11}\\)",
+      "\\(56x^{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(7 \\times 8 = 56\\)\n\nIndices: \\(6 + 4 = 10\\)\n\nSo the answer is \\(56x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x^{12} \\times x^{3}\\).",
+    "options": [
+      "\\(x^{15}\\)",
+      "\\(x^{16}\\)",
+      "\\(x^{9}\\)",
+      "\\(x^{36}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "When multiplying powers of the same base, add the indices.\n\n\\(x^{12} \\times x^{3} = x^{12+3} = x^{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x^{6} \\times 9x^{4}\\).",
+    "options": [
+      "\\(13x^{10}\\)",
+      "\\(36x^{24}\\)",
+      "\\(36x^{10}\\)",
+      "\\(36x^{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the coefficients and add the indices.\n\nCoefficients: \\(4 \\times 9 = 36\\)\n\nIndices: \\(6 + 4 = 10\\)\n\nSo the answer is \\(36x^{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "sGeqO2FDw79otnkz3tz6",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

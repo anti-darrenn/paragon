@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Calculate the potential energy of a body of mass 9kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "36J",
+      "360J",
+      "180J",
+      "90J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 9 \\times 10 \\times 4 = 360\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 18kg has kinetic energy 1296J. Calculate its velocity.",
+    "options": [
+      "8.49m/s",
+      "72m/s",
+      "15m/s",
+      "12m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1296 = \\frac{1}{2} \\times 18 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 75m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1500m/s",
+      "750m/s",
+      "38.73m/s",
+      "77.46m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 75} = \\sqrt{1500} = 38.73\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 51kg at a height of 35m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "510J",
+      "17850J",
+      "8925J",
+      "1785J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 51 \\times 10 \\times 35 = 17850\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 9kg has kinetic energy 72J. Calculate its velocity.",
+    "options": [
+      "4m/s",
+      "2.83m/s",
+      "8m/s",
+      "7m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(72 = \\frac{1}{2} \\times 9 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 28kg has kinetic energy 896J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "5.66m/s",
+      "11m/s",
+      "8m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(896 = \\frac{1}{2} \\times 28 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 11kg has kinetic energy 792J. Calculate its velocity.",
+    "options": [
+      "72m/s",
+      "15m/s",
+      "12m/s",
+      "8.49m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(792 = \\frac{1}{2} \\times 11 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 20kg at a height of 18m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3600J",
+      "200J",
+      "1800J",
+      "360J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 20 \\times 10 \\times 18 = 3600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 15kg has kinetic energy 1470J. Calculate its velocity.",
+    "options": [
+      "17m/s",
+      "98m/s",
+      "14m/s",
+      "9.9m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1470 = \\frac{1}{2} \\times 15 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 4kg has kinetic energy 200J. Calculate its velocity.",
+    "options": [
+      "7.07m/s",
+      "50m/s",
+      "13m/s",
+      "10m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(200 = \\frac{1}{2} \\times 4 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 4kg has kinetic energy 968J. Calculate its velocity.",
+    "options": [
+      "15.56m/s",
+      "25m/s",
+      "242m/s",
+      "22m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(968 = \\frac{1}{2} \\times 4 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 30kg at a height of 36m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1080J",
+      "300J",
+      "10800J",
+      "5400J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 30 \\times 10 \\times 36 = 10800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 40kg at a height of 35m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1400J",
+      "14000J",
+      "7000J",
+      "400J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 40 \\times 10 \\times 35 = 14000\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 26kg has kinetic energy 3328J. Calculate its velocity.",
+    "options": [
+      "128m/s",
+      "16m/s",
+      "11.31m/s",
+      "19m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3328 = \\frac{1}{2} \\times 26 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 54kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "216J",
+      "1080J",
+      "540J",
+      "2160J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 54 \\times 10 \\times 4 = 2160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 26kg has kinetic energy 1300J. Calculate its velocity.",
+    "options": [
+      "50m/s",
+      "13m/s",
+      "10m/s",
+      "7.07m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1300 = \\frac{1}{2} \\times 26 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 39kg at a height of 15m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "390J",
+      "2925J",
+      "5850J",
+      "585J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 39 \\times 10 \\times 15 = 5850\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 3kg has kinetic energy 726J. Calculate its velocity.",
+    "options": [
+      "242m/s",
+      "22m/s",
+      "25m/s",
+      "15.56m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(726 = \\frac{1}{2} \\times 3 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 8kg has kinetic energy 1936J. Calculate its velocity.",
+    "options": [
+      "15.56m/s",
+      "242m/s",
+      "25m/s",
+      "22m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1936 = \\frac{1}{2} \\times 8 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 20m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "200m/s",
+      "20m/s",
+      "400m/s",
+      "40m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 20} = \\sqrt{400} = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 55m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "33.17m/s",
+      "1100m/s",
+      "550m/s",
+      "66.33m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 55} = \\sqrt{1100} = 33.17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 32kg at a height of 17m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "320J",
+      "5440J",
+      "544J",
+      "2720J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 32 \\times 10 \\times 17 = 5440\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 60kg at a height of 21m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "12600J",
+      "1260J",
+      "600J",
+      "6300J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 60 \\times 10 \\times 21 = 12600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 16kg has kinetic energy 4608J. Calculate its velocity.",
+    "options": [
+      "16.97m/s",
+      "27m/s",
+      "24m/s",
+      "288m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4608 = \\frac{1}{2} \\times 16 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 90m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "42.43m/s",
+      "1800m/s",
+      "84.85m/s",
+      "900m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 90} = \\sqrt{1800} = 42.43\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 8kg at a height of 26m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "208J",
+      "80J",
+      "1040J",
+      "2080J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 8 \\times 10 \\times 26 = 2080\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 21kg has kinetic energy 3402J. Calculate its velocity.",
+    "options": [
+      "18m/s",
+      "21m/s",
+      "12.73m/s",
+      "162m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3402 = \\frac{1}{2} \\times 21 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 58kg at a height of 30m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "17400J",
+      "8700J",
+      "580J",
+      "1740J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 58 \\times 10 \\times 30 = 17400\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 8kg has kinetic energy 576J. Calculate its velocity.",
+    "options": [
+      "72m/s",
+      "15m/s",
+      "8.49m/s",
+      "12m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(576 = \\frac{1}{2} \\times 8 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 3kg has kinetic energy 54J. Calculate its velocity.",
+    "options": [
+      "9m/s",
+      "4.24m/s",
+      "18m/s",
+      "6m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(54 = \\frac{1}{2} \\times 3 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 25m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "250m/s",
+      "500m/s",
+      "44.72m/s",
+      "22.36m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 25} = \\sqrt{500} = 22.36\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 15m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "17.32m/s",
+      "150m/s",
+      "34.64m/s",
+      "300m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 15} = \\sqrt{300} = 17.32\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 43kg at a height of 31m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6665J",
+      "1333J",
+      "13330J",
+      "430J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 43 \\times 10 \\times 31 = 13330\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 2kg at a height of 33m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "330J",
+      "660J",
+      "66J",
+      "20J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 2 \\times 10 \\times 33 = 660\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 23kg at a height of 16m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "230J",
+      "3680J",
+      "368J",
+      "1840J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 23 \\times 10 \\times 16 = 3680\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 57kg at a height of 35m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "19950J",
+      "570J",
+      "1995J",
+      "9975J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 57 \\times 10 \\times 35 = 19950\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 18kg at a height of 35m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "180J",
+      "6300J",
+      "630J",
+      "3150J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 18 \\times 10 \\times 35 = 6300\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 12kg has kinetic energy 2400J. Calculate its velocity.",
+    "options": [
+      "14.14m/s",
+      "20m/s",
+      "23m/s",
+      "200m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2400 = \\frac{1}{2} \\times 12 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 54kg at a height of 12m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6480J",
+      "540J",
+      "648J",
+      "3240J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 54 \\times 10 \\times 12 = 6480\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 19kg has kinetic energy 950J. Calculate its velocity.",
+    "options": [
+      "50m/s",
+      "7.07m/s",
+      "10m/s",
+      "13m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(950 = \\frac{1}{2} \\times 19 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 6kg has kinetic energy 972J. Calculate its velocity.",
+    "options": [
+      "21m/s",
+      "18m/s",
+      "12.73m/s",
+      "162m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(972 = \\frac{1}{2} \\times 6 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 4kg has kinetic energy 128J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "5.66m/s",
+      "11m/s",
+      "8m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(128 = \\frac{1}{2} \\times 4 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 43kg at a height of 6m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1290J",
+      "430J",
+      "2580J",
+      "258J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 43 \\times 10 \\times 6 = 2580\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 196J. Calculate its velocity.",
+    "options": [
+      "98m/s",
+      "17m/s",
+      "9.9m/s",
+      "14m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(196 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 50kg at a height of 36m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1800J",
+      "18000J",
+      "500J",
+      "9000J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 50 \\times 10 \\times 36 = 18000\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 14kg has kinetic energy 700J. Calculate its velocity.",
+    "options": [
+      "10m/s",
+      "50m/s",
+      "7.07m/s",
+      "13m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(700 = \\frac{1}{2} \\times 14 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 80m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "800m/s",
+      "1600m/s",
+      "40m/s",
+      "80m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 80} = \\sqrt{1600} = 40\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 29kg has kinetic energy 1450J. Calculate its velocity.",
+    "options": [
+      "13m/s",
+      "50m/s",
+      "10m/s",
+      "7.07m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1450 = \\frac{1}{2} \\times 29 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 50m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "63.25m/s",
+      "31.62m/s",
+      "500m/s",
+      "1000m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 50} = \\sqrt{1000} = 31.62\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 10m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "200m/s",
+      "14.14m/s",
+      "100m/s",
+      "28.28m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 10} = \\sqrt{200} = 14.14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 12kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "120J",
+      "2640J",
+      "264J",
+      "1320J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 12 \\times 10 \\times 22 = 2640\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 95m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "87.18m/s",
+      "43.59m/s",
+      "1900m/s",
+      "950m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 95} = \\sqrt{1900} = 43.59\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 484J. Calculate its velocity.",
+    "options": [
+      "242m/s",
+      "15.56m/s",
+      "22m/s",
+      "25m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(484 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 8kg has kinetic energy 400J. Calculate its velocity.",
+    "options": [
+      "7.07m/s",
+      "13m/s",
+      "50m/s",
+      "10m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(400 = \\frac{1}{2} \\times 8 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 9kg has kinetic energy 288J. Calculate its velocity.",
+    "options": [
+      "11m/s",
+      "5.66m/s",
+      "32m/s",
+      "8m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(288 = \\frac{1}{2} \\times 9 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 26kg at a height of 17m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2210J",
+      "442J",
+      "260J",
+      "4420J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 26 \\times 10 \\times 17 = 4420\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 28kg has kinetic energy 4536J. Calculate its velocity.",
+    "options": [
+      "162m/s",
+      "21m/s",
+      "18m/s",
+      "12.73m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4536 = \\frac{1}{2} \\times 28 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 39kg at a height of 40m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "15600J",
+      "390J",
+      "7800J",
+      "1560J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 39 \\times 10 \\times 40 = 15600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 22kg has kinetic energy 1100J. Calculate its velocity.",
+    "options": [
+      "10m/s",
+      "50m/s",
+      "7.07m/s",
+      "13m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1100 = \\frac{1}{2} \\times 22 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 3kg has kinetic energy 384J. Calculate its velocity.",
+    "options": [
+      "11.31m/s",
+      "19m/s",
+      "128m/s",
+      "16m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(384 = \\frac{1}{2} \\times 3 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 57kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6270J",
+      "12540J",
+      "570J",
+      "1254J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 57 \\times 10 \\times 22 = 12540\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 26kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "572J",
+      "260J",
+      "2860J",
+      "5720J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 26 \\times 10 \\times 22 = 5720\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 9kg at a height of 11m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "90J",
+      "495J",
+      "99J",
+      "990J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 9 \\times 10 \\times 11 = 990\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 5kg has kinetic energy 160J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "8m/s",
+      "11m/s",
+      "5.66m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(160 = \\frac{1}{2} \\times 5 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 34kg at a height of 32m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1088J",
+      "10880J",
+      "340J",
+      "5440J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 34 \\times 10 \\times 32 = 10880\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 10kg has kinetic energy 2420J. Calculate its velocity.",
+    "options": [
+      "242m/s",
+      "15.56m/s",
+      "22m/s",
+      "25m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2420 = \\frac{1}{2} \\times 10 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 27kg has kinetic energy 3456J. Calculate its velocity.",
+    "options": [
+      "16m/s",
+      "11.31m/s",
+      "19m/s",
+      "128m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3456 = \\frac{1}{2} \\times 27 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 16kg has kinetic energy 1568J. Calculate its velocity.",
+    "options": [
+      "9.9m/s",
+      "98m/s",
+      "17m/s",
+      "14m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1568 = \\frac{1}{2} \\times 16 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 52kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "520J",
+      "416J",
+      "4160J",
+      "2080J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 52 \\times 10 \\times 8 = 4160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 49kg at a height of 7m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3430J",
+      "1715J",
+      "343J",
+      "490J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 49 \\times 10 \\times 7 = 3430\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 59kg at a height of 19m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "590J",
+      "11210J",
+      "1121J",
+      "5605J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 59 \\times 10 \\times 19 = 11210\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 5m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "20m/s",
+      "10m/s",
+      "50m/s",
+      "100m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 5} = \\sqrt{100} = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 19kg has kinetic energy 152J. Calculate its velocity.",
+    "options": [
+      "7m/s",
+      "4m/s",
+      "2.83m/s",
+      "8m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(152 = \\frac{1}{2} \\times 19 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 59kg at a height of 3m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "590J",
+      "1770J",
+      "177J",
+      "885J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 59 \\times 10 \\times 3 = 1770\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 56kg at a height of 26m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "7280J",
+      "560J",
+      "1456J",
+      "14560J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 56 \\times 10 \\times 26 = 14560\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 37kg at a height of 3m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1110J",
+      "370J",
+      "111J",
+      "555J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 37 \\times 10 \\times 3 = 1110\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 70m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "74.83m/s",
+      "37.42m/s",
+      "1400m/s",
+      "700m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 70} = \\sqrt{1400} = 37.42\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 22kg has kinetic energy 176J. Calculate its velocity.",
+    "options": [
+      "7m/s",
+      "8m/s",
+      "4m/s",
+      "2.83m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(176 = \\frac{1}{2} \\times 22 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 31kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "310J",
+      "248J",
+      "1240J",
+      "2480J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 31 \\times 10 \\times 8 = 2480\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 40m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "56.57m/s",
+      "28.28m/s",
+      "800m/s",
+      "400m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 40} = \\sqrt{800} = 28.28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 11kg at a height of 11m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "605J",
+      "1210J",
+      "121J",
+      "110J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 11 \\times 10 \\times 11 = 1210\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 85m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "41.23m/s",
+      "1700m/s",
+      "82.46m/s",
+      "850m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 85} = \\sqrt{1700} = 41.23\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 23kg has kinetic energy 2254J. Calculate its velocity.",
+    "options": [
+      "9.9m/s",
+      "14m/s",
+      "17m/s",
+      "98m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2254 = \\frac{1}{2} \\times 23 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 6kg at a height of 37m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2220J",
+      "1110J",
+      "60J",
+      "222J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 6 \\times 10 \\times 37 = 2220\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 22kg has kinetic energy 1584J. Calculate its velocity.",
+    "options": [
+      "72m/s",
+      "12m/s",
+      "8.49m/s",
+      "15m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1584 = \\frac{1}{2} \\times 22 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 20kg at a height of 27m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "200J",
+      "2700J",
+      "540J",
+      "5400J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 20 \\times 10 \\times 27 = 5400\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 6kg has kinetic energy 768J. Calculate its velocity.",
+    "options": [
+      "16m/s",
+      "128m/s",
+      "19m/s",
+      "11.31m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(768 = \\frac{1}{2} \\times 6 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 45m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "900m/s",
+      "450m/s",
+      "60m/s",
+      "30m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 45} = \\sqrt{900} = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 53kg at a height of 25m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "13250J",
+      "1325J",
+      "530J",
+      "6625J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 53 \\times 10 \\times 25 = 13250\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 22kg has kinetic energy 2816J. Calculate its velocity.",
+    "options": [
+      "128m/s",
+      "11.31m/s",
+      "16m/s",
+      "19m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2816 = \\frac{1}{2} \\times 22 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 24kg at a height of 7m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "840J",
+      "240J",
+      "168J",
+      "1680J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 24 \\times 10 \\times 7 = 1680\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 5kg has kinetic energy 490J. Calculate its velocity.",
+    "options": [
+      "98m/s",
+      "14m/s",
+      "9.9m/s",
+      "17m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(490 = \\frac{1}{2} \\times 5 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 47kg at a height of 40m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1880J",
+      "9400J",
+      "18800J",
+      "470J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 47 \\times 10 \\times 40 = 18800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 12kg at a height of 15m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "900J",
+      "120J",
+      "1800J",
+      "180J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 12 \\times 10 \\times 15 = 1800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 21kg has kinetic energy 672J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "8m/s",
+      "5.66m/s",
+      "11m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(672 = \\frac{1}{2} \\times 21 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 44kg at a height of 29m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "440J",
+      "6380J",
+      "1276J",
+      "12760J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 44 \\times 10 \\times 29 = 12760\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 53kg at a height of 7m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1855J",
+      "530J",
+      "371J",
+      "3710J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 53 \\times 10 \\times 7 = 3710\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 2kg at a height of 34m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "20J",
+      "68J",
+      "680J",
+      "340J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 2 \\times 10 \\times 34 = 680\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 30kg has kinetic energy 3840J. Calculate its velocity.",
+    "options": [
+      "128m/s",
+      "19m/s",
+      "16m/s",
+      "11.31m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3840 = \\frac{1}{2} \\times 30 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 7kg has kinetic energy 1400J. Calculate its velocity.",
+    "options": [
+      "14.14m/s",
+      "20m/s",
+      "23m/s",
+      "200m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1400 = \\frac{1}{2} \\times 7 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 1kg has kinetic energy 98J. Calculate its velocity.",
+    "options": [
+      "17m/s",
+      "9.9m/s",
+      "98m/s",
+      "14m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(98 = \\frac{1}{2} \\times 1 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 35m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "350m/s",
+      "52.92m/s",
+      "700m/s",
+      "26.46m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 35} = \\sqrt{700} = 26.46\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 2kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "16J",
+      "20J",
+      "160J",
+      "80J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 2 \\times 10 \\times 8 = 160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 17kg has kinetic energy 544J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "8m/s",
+      "5.66m/s",
+      "11m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(544 = \\frac{1}{2} \\times 17 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 48kg at a height of 13m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6240J",
+      "624J",
+      "3120J",
+      "480J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 48 \\times 10 \\times 13 = 6240\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 18kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "180J",
+      "144J",
+      "1440J",
+      "720J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 18 \\times 10 \\times 8 = 1440\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 27kg has kinetic energy 4374J. Calculate its velocity.",
+    "options": [
+      "162m/s",
+      "12.73m/s",
+      "21m/s",
+      "18m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4374 = \\frac{1}{2} \\times 27 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 14kg has kinetic energy 2800J. Calculate its velocity.",
+    "options": [
+      "14.14m/s",
+      "23m/s",
+      "20m/s",
+      "200m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2800 = \\frac{1}{2} \\times 14 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 32kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3520J",
+      "7040J",
+      "704J",
+      "320J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 32 \\times 10 \\times 22 = 7040\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 19kg has kinetic energy 1368J. Calculate its velocity.",
+    "options": [
+      "72m/s",
+      "15m/s",
+      "12m/s",
+      "8.49m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1368 = \\frac{1}{2} \\times 19 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 4kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "440J",
+      "88J",
+      "880J",
+      "40J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 4 \\times 10 \\times 22 = 880\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 14kg at a height of 36m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "140J",
+      "2520J",
+      "5040J",
+      "504J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 14 \\times 10 \\times 36 = 5040\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 1kg has kinetic energy 50J. Calculate its velocity.",
+    "options": [
+      "50m/s",
+      "7.07m/s",
+      "13m/s",
+      "10m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(50 = \\frac{1}{2} \\times 1 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 54kg at a height of 38m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "10260J",
+      "2052J",
+      "20520J",
+      "540J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 54 \\times 10 \\times 38 = 20520\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 21kg has kinetic energy 1050J. Calculate its velocity.",
+    "options": [
+      "10m/s",
+      "50m/s",
+      "7.07m/s",
+      "13m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1050 = \\frac{1}{2} \\times 21 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 6kg has kinetic energy 1452J. Calculate its velocity.",
+    "options": [
+      "22m/s",
+      "25m/s",
+      "15.56m/s",
+      "242m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1452 = \\frac{1}{2} \\times 6 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 26kg has kinetic energy 7488J. Calculate its velocity.",
+    "options": [
+      "16.97m/s",
+      "24m/s",
+      "288m/s",
+      "27m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(7488 = \\frac{1}{2} \\times 26 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 22kg at a height of 38m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "4180J",
+      "220J",
+      "836J",
+      "8360J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 22 \\times 10 \\times 38 = 8360\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 16kg at a height of 40m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6400J",
+      "640J",
+      "3200J",
+      "160J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 16 \\times 10 \\times 40 = 6400\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 22kg has kinetic energy 5324J. Calculate its velocity.",
+    "options": [
+      "15.56m/s",
+      "242m/s",
+      "25m/s",
+      "22m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(5324 = \\frac{1}{2} \\times 22 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 15kg at a height of 39m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "585J",
+      "2925J",
+      "5850J",
+      "150J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 15 \\times 10 \\times 39 = 5850\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 49kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "10780J",
+      "1078J",
+      "490J",
+      "5390J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 49 \\times 10 \\times 22 = 10780\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 30kg has kinetic energy 7260J. Calculate its velocity.",
+    "options": [
+      "22m/s",
+      "15.56m/s",
+      "242m/s",
+      "25m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(7260 = \\frac{1}{2} \\times 30 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 17kg at a height of 24m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "170J",
+      "408J",
+      "4080J",
+      "2040J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 17 \\times 10 \\times 24 = 4080\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 11kg at a height of 35m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3850J",
+      "110J",
+      "1925J",
+      "385J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 11 \\times 10 \\times 35 = 3850\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 51kg at a height of 27m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "13770J",
+      "510J",
+      "1377J",
+      "6885J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 51 \\times 10 \\times 27 = 13770\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 5kg has kinetic energy 1210J. Calculate its velocity.",
+    "options": [
+      "242m/s",
+      "22m/s",
+      "15.56m/s",
+      "25m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1210 = \\frac{1}{2} \\times 5 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 52kg at a height of 28m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1456J",
+      "7280J",
+      "520J",
+      "14560J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 52 \\times 10 \\times 28 = 14560\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 27kg at a height of 39m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "5265J",
+      "1053J",
+      "10530J",
+      "270J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 27 \\times 10 \\times 39 = 10530\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 7kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "70J",
+      "28J",
+      "140J",
+      "280J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 7 \\times 10 \\times 4 = 280\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 14kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "308J",
+      "140J",
+      "1540J",
+      "3080J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 14 \\times 10 \\times 22 = 3080\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 9kg has kinetic energy 2178J. Calculate its velocity.",
+    "options": [
+      "15.56m/s",
+      "22m/s",
+      "25m/s",
+      "242m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2178 = \\frac{1}{2} \\times 9 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 25kg has kinetic energy 3200J. Calculate its velocity.",
+    "options": [
+      "128m/s",
+      "11.31m/s",
+      "16m/s",
+      "19m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3200 = \\frac{1}{2} \\times 25 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 21kg has kinetic energy 4200J. Calculate its velocity.",
+    "options": [
+      "14.14m/s",
+      "20m/s",
+      "200m/s",
+      "23m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4200 = \\frac{1}{2} \\times 21 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 100m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1000m/s",
+      "2000m/s",
+      "44.72m/s",
+      "89.44m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 100} = \\sqrt{2000} = 44.72\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 12kg has kinetic energy 216J. Calculate its velocity.",
+    "options": [
+      "6m/s",
+      "9m/s",
+      "18m/s",
+      "4.24m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(216 = \\frac{1}{2} \\times 12 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 4kg at a height of 40m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "160J",
+      "800J",
+      "1600J",
+      "40J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 4 \\times 10 \\times 40 = 1600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 16kg at a height of 11m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "160J",
+      "1760J",
+      "880J",
+      "176J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 16 \\times 10 \\times 11 = 1760\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 37kg at a height of 30m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "5550J",
+      "370J",
+      "1110J",
+      "11100J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 37 \\times 10 \\times 30 = 11100\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 50kg at a height of 12m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "500J",
+      "6000J",
+      "600J",
+      "3000J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 50 \\times 10 \\times 12 = 6000\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 22kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "220J",
+      "440J",
+      "88J",
+      "880J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 22 \\times 10 \\times 4 = 880\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 29kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2320J",
+      "290J",
+      "232J",
+      "1160J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 29 \\times 10 \\times 8 = 2320\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 14kg has kinetic energy 3388J. Calculate its velocity.",
+    "options": [
+      "25m/s",
+      "22m/s",
+      "15.56m/s",
+      "242m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3388 = \\frac{1}{2} \\times 14 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 47kg at a height of 17m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "799J",
+      "3995J",
+      "7990J",
+      "470J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 47 \\times 10 \\times 17 = 7990\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 60m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "34.64m/s",
+      "600m/s",
+      "1200m/s",
+      "69.28m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 60} = \\sqrt{1200} = 34.64\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 1kg has kinetic energy 200J. Calculate its velocity.",
+    "options": [
+      "14.14m/s",
+      "23m/s",
+      "200m/s",
+      "20m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(200 = \\frac{1}{2} \\times 1 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 32kg at a height of 5m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "800J",
+      "1600J",
+      "320J",
+      "160J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 32 \\times 10 \\times 5 = 1600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 54kg at a height of 32m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "8640J",
+      "540J",
+      "1728J",
+      "17280J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 54 \\times 10 \\times 32 = 17280\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 28kg at a height of 17m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "476J",
+      "2380J",
+      "4760J",
+      "280J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 28 \\times 10 \\times 17 = 4760\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 11kg has kinetic energy 1078J. Calculate its velocity.",
+    "options": [
+      "14m/s",
+      "98m/s",
+      "17m/s",
+      "9.9m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1078 = \\frac{1}{2} \\times 11 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 33kg at a height of 20m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "660J",
+      "6600J",
+      "3300J",
+      "330J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 33 \\times 10 \\times 20 = 6600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 24kg has kinetic energy 2352J. Calculate its velocity.",
+    "options": [
+      "98m/s",
+      "9.9m/s",
+      "14m/s",
+      "17m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2352 = \\frac{1}{2} \\times 24 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 24kg at a height of 3m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "720J",
+      "360J",
+      "72J",
+      "240J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 24 \\times 10 \\times 3 = 720\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 4kg at a height of 20m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "40J",
+      "400J",
+      "800J",
+      "80J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 4 \\times 10 \\times 20 = 800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 30m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "24.49m/s",
+      "300m/s",
+      "600m/s",
+      "48.99m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 30} = \\sqrt{600} = 24.49\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 37kg at a height of 21m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3885J",
+      "777J",
+      "7770J",
+      "370J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 37 \\times 10 \\times 21 = 7770\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 11kg at a height of 12m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1320J",
+      "110J",
+      "132J",
+      "660J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 11 \\times 10 \\times 12 = 1320\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 26kg has kinetic energy 6292J. Calculate its velocity.",
+    "options": [
+      "15.56m/s",
+      "242m/s",
+      "22m/s",
+      "25m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(6292 = \\frac{1}{2} \\times 26 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 14kg has kinetic energy 1008J. Calculate its velocity.",
+    "options": [
+      "15m/s",
+      "72m/s",
+      "8.49m/s",
+      "12m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1008 = \\frac{1}{2} \\times 14 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 52kg at a height of 12m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6240J",
+      "624J",
+      "3120J",
+      "520J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 52 \\times 10 \\times 12 = 6240\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 51kg at a height of 5m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "255J",
+      "510J",
+      "1275J",
+      "2550J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 51 \\times 10 \\times 5 = 2550\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 9kg has kinetic energy 162J. Calculate its velocity.",
+    "options": [
+      "6m/s",
+      "4.24m/s",
+      "9m/s",
+      "18m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(162 = \\frac{1}{2} \\times 9 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 23kg has kinetic energy 184J. Calculate its velocity.",
+    "options": [
+      "2.83m/s",
+      "7m/s",
+      "8m/s",
+      "4m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(184 = \\frac{1}{2} \\times 23 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 5kg has kinetic energy 90J. Calculate its velocity.",
+    "options": [
+      "18m/s",
+      "4.24m/s",
+      "9m/s",
+      "6m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(90 = \\frac{1}{2} \\times 5 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 16kg has kinetic energy 3200J. Calculate its velocity.",
+    "options": [
+      "23m/s",
+      "200m/s",
+      "14.14m/s",
+      "20m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3200 = \\frac{1}{2} \\times 16 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 55kg at a height of 29m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "7975J",
+      "15950J",
+      "1595J",
+      "550J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 55 \\times 10 \\times 29 = 15950\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 1kg has kinetic energy 128J. Calculate its velocity.",
+    "options": [
+      "19m/s",
+      "16m/s",
+      "11.31m/s",
+      "128m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(128 = \\frac{1}{2} \\times 1 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 27kg has kinetic energy 5400J. Calculate its velocity.",
+    "options": [
+      "200m/s",
+      "20m/s",
+      "23m/s",
+      "14.14m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(5400 = \\frac{1}{2} \\times 27 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 29kg at a height of 19m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "551J",
+      "290J",
+      "2755J",
+      "5510J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 29 \\times 10 \\times 19 = 5510\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 10kg has kinetic energy 180J. Calculate its velocity.",
+    "options": [
+      "9m/s",
+      "18m/s",
+      "6m/s",
+      "4.24m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(180 = \\frac{1}{2} \\times 10 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 38kg at a height of 40m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "15200J",
+      "1520J",
+      "7600J",
+      "380J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 38 \\times 10 \\times 40 = 15200\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 30kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "660J",
+      "3300J",
+      "300J",
+      "6600J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 30 \\times 10 \\times 22 = 6600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 28kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "224J",
+      "2240J",
+      "280J",
+      "1120J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 28 \\times 10 \\times 8 = 2240\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 17kg has kinetic energy 2176J. Calculate its velocity.",
+    "options": [
+      "19m/s",
+      "11.31m/s",
+      "16m/s",
+      "128m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2176 = \\frac{1}{2} \\times 17 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 12kg has kinetic energy 1536J. Calculate its velocity.",
+    "options": [
+      "19m/s",
+      "11.31m/s",
+      "16m/s",
+      "128m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1536 = \\frac{1}{2} \\times 12 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 23kg has kinetic energy 1150J. Calculate its velocity.",
+    "options": [
+      "50m/s",
+      "7.07m/s",
+      "13m/s",
+      "10m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1150 = \\frac{1}{2} \\times 23 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 53kg at a height of 16m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "8480J",
+      "4240J",
+      "848J",
+      "530J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 53 \\times 10 \\times 16 = 8480\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body falls freely from a height of 65m. Calculate its velocity just before hitting the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1300m/s",
+      "72.11m/s",
+      "36.06m/s",
+      "650m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using conservation of energy, \\(mgh = \\frac{1}{2}mv^{2}\\).\n\n\\(v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 65} = \\sqrt{1300} = 36.06\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 19kg has kinetic energy 342J. Calculate its velocity.",
+    "options": [
+      "9m/s",
+      "6m/s",
+      "4.24m/s",
+      "18m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(342 = \\frac{1}{2} \\times 19 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 36J. Calculate its velocity.",
+    "options": [
+      "9m/s",
+      "6m/s",
+      "18m/s",
+      "4.24m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(36 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 16kg at a height of 34m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "160J",
+      "5440J",
+      "544J",
+      "2720J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 16 \\times 10 \\times 34 = 5440\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 28kg at a height of 37m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "10360J",
+      "1036J",
+      "280J",
+      "5180J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 28 \\times 10 \\times 37 = 10360\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 33kg at a height of 30m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "990J",
+      "4950J",
+      "9900J",
+      "330J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 33 \\times 10 \\times 30 = 9900\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 20kg has kinetic energy 1000J. Calculate its velocity.",
+    "options": [
+      "10m/s",
+      "13m/s",
+      "50m/s",
+      "7.07m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1000 = \\frac{1}{2} \\times 20 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 30kg has kinetic energy 8640J. Calculate its velocity.",
+    "options": [
+      "24m/s",
+      "288m/s",
+      "16.97m/s",
+      "27m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(8640 = \\frac{1}{2} \\times 30 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 18kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "360J",
+      "720J",
+      "72J",
+      "180J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 18 \\times 10 \\times 4 = 720\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 13kg has kinetic energy 1664J. Calculate its velocity.",
+    "options": [
+      "16m/s",
+      "11.31m/s",
+      "128m/s",
+      "19m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1664 = \\frac{1}{2} \\times 13 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 30kg has kinetic energy 6000J. Calculate its velocity.",
+    "options": [
+      "23m/s",
+      "14.14m/s",
+      "20m/s",
+      "200m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(6000 = \\frac{1}{2} \\times 30 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 31kg at a height of 36m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "11160J",
+      "5580J",
+      "310J",
+      "1116J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 31 \\times 10 \\times 36 = 11160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 44kg at a height of 15m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "440J",
+      "660J",
+      "6600J",
+      "3300J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 44 \\times 10 \\times 15 = 6600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 56kg at a height of 11m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3080J",
+      "6160J",
+      "616J",
+      "560J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 56 \\times 10 \\times 11 = 6160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 3kg at a height of 6m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "18J",
+      "30J",
+      "90J",
+      "180J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 3 \\times 10 \\times 6 = 180\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 28kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "616J",
+      "6160J",
+      "3080J",
+      "280J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 28 \\times 10 \\times 22 = 6160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 15kg at a height of 9m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "675J",
+      "150J",
+      "1350J",
+      "135J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 15 \\times 10 \\times 9 = 1350\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 8kg has kinetic energy 784J. Calculate its velocity.",
+    "options": [
+      "98m/s",
+      "14m/s",
+      "9.9m/s",
+      "17m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(784 = \\frac{1}{2} \\times 8 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 57kg at a height of 33m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "570J",
+      "18810J",
+      "1881J",
+      "9405J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 57 \\times 10 \\times 33 = 18810\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 4kg has kinetic energy 512J. Calculate its velocity.",
+    "options": [
+      "19m/s",
+      "11.31m/s",
+      "128m/s",
+      "16m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(512 = \\frac{1}{2} \\times 4 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 52kg at a height of 39m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2028J",
+      "520J",
+      "20280J",
+      "10140J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 52 \\times 10 \\times 39 = 20280\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 48kg at a height of 28m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6720J",
+      "13440J",
+      "480J",
+      "1344J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 48 \\times 10 \\times 28 = 13440\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 9kg has kinetic energy 648J. Calculate its velocity.",
+    "options": [
+      "15m/s",
+      "72m/s",
+      "8.49m/s",
+      "12m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(648 = \\frac{1}{2} \\times 9 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 25kg at a height of 6m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "250J",
+      "1500J",
+      "150J",
+      "750J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 25 \\times 10 \\times 6 = 1500\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 24kg at a height of 34m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "8160J",
+      "816J",
+      "4080J",
+      "240J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 24 \\times 10 \\times 34 = 8160\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 4kg has kinetic energy 800J. Calculate its velocity.",
+    "options": [
+      "14.14m/s",
+      "23m/s",
+      "200m/s",
+      "20m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(800 = \\frac{1}{2} \\times 4 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 13kg at a height of 28m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "130J",
+      "364J",
+      "1820J",
+      "3640J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 13 \\times 10 \\times 28 = 3640\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 7kg has kinetic energy 1694J. Calculate its velocity.",
+    "options": [
+      "22m/s",
+      "25m/s",
+      "15.56m/s",
+      "242m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1694 = \\frac{1}{2} \\times 7 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 35kg at a height of 21m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "350J",
+      "7350J",
+      "735J",
+      "3675J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 35 \\times 10 \\times 21 = 7350\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 19kg at a height of 20m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3800J",
+      "380J",
+      "1900J",
+      "190J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 19 \\times 10 \\times 20 = 3800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 576J. Calculate its velocity.",
+    "options": [
+      "16.97m/s",
+      "288m/s",
+      "27m/s",
+      "24m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(576 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 7kg has kinetic energy 126J. Calculate its velocity.",
+    "options": [
+      "9m/s",
+      "4.24m/s",
+      "6m/s",
+      "18m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(126 = \\frac{1}{2} \\times 7 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 22kg has kinetic energy 396J. Calculate its velocity.",
+    "options": [
+      "6m/s",
+      "18m/s",
+      "4.24m/s",
+      "9m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(396 = \\frac{1}{2} \\times 22 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 18kg has kinetic energy 324J. Calculate its velocity.",
+    "options": [
+      "4.24m/s",
+      "18m/s",
+      "9m/s",
+      "6m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(324 = \\frac{1}{2} \\times 18 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 15kg has kinetic energy 270J. Calculate its velocity.",
+    "options": [
+      "4.24m/s",
+      "6m/s",
+      "9m/s",
+      "18m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(270 = \\frac{1}{2} \\times 15 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 11kg has kinetic energy 352J. Calculate its velocity.",
+    "options": [
+      "11m/s",
+      "8m/s",
+      "32m/s",
+      "5.66m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(352 = \\frac{1}{2} \\times 11 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 256J. Calculate its velocity.",
+    "options": [
+      "19m/s",
+      "16m/s",
+      "11.31m/s",
+      "128m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(256 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 256\\), so \\(v = 16\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 324J. Calculate its velocity.",
+    "options": [
+      "12.73m/s",
+      "18m/s",
+      "21m/s",
+      "162m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(324 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 6kg has kinetic energy 48J. Calculate its velocity.",
+    "options": [
+      "8m/s",
+      "4m/s",
+      "7m/s",
+      "2.83m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(48 = \\frac{1}{2} \\times 6 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 51kg at a height of 11m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "5610J",
+      "2805J",
+      "510J",
+      "561J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 51 \\times 10 \\times 11 = 5610\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 10kg has kinetic energy 720J. Calculate its velocity.",
+    "options": [
+      "12m/s",
+      "8.49m/s",
+      "72m/s",
+      "15m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(720 = \\frac{1}{2} \\times 10 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 24kg has kinetic energy 192J. Calculate its velocity.",
+    "options": [
+      "8m/s",
+      "7m/s",
+      "4m/s",
+      "2.83m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(192 = \\frac{1}{2} \\times 24 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 17kg at a height of 37m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6290J",
+      "3145J",
+      "170J",
+      "629J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 17 \\times 10 \\times 37 = 6290\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 13kg has kinetic energy 104J. Calculate its velocity.",
+    "options": [
+      "2.83m/s",
+      "7m/s",
+      "4m/s",
+      "8m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(104 = \\frac{1}{2} \\times 13 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 26kg has kinetic energy 2548J. Calculate its velocity.",
+    "options": [
+      "9.9m/s",
+      "98m/s",
+      "17m/s",
+      "14m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2548 = \\frac{1}{2} \\times 26 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 12kg has kinetic energy 600J. Calculate its velocity.",
+    "options": [
+      "10m/s",
+      "50m/s",
+      "13m/s",
+      "7.07m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(600 = \\frac{1}{2} \\times 12 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 23kg at a height of 14m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1610J",
+      "3220J",
+      "322J",
+      "230J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 23 \\times 10 \\times 14 = 3220\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 21kg has kinetic energy 6048J. Calculate its velocity.",
+    "options": [
+      "27m/s",
+      "288m/s",
+      "24m/s",
+      "16.97m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(6048 = \\frac{1}{2} \\times 21 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 3kg has kinetic energy 294J. Calculate its velocity.",
+    "options": [
+      "98m/s",
+      "17m/s",
+      "14m/s",
+      "9.9m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(294 = \\frac{1}{2} \\times 3 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 19kg has kinetic energy 608J. Calculate its velocity.",
+    "options": [
+      "8m/s",
+      "11m/s",
+      "5.66m/s",
+      "32m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(608 = \\frac{1}{2} \\times 19 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 50kg at a height of 25m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "12500J",
+      "6250J",
+      "500J",
+      "1250J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 50 \\times 10 \\times 25 = 12500\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 16kg has kinetic energy 800J. Calculate its velocity.",
+    "options": [
+      "7.07m/s",
+      "10m/s",
+      "50m/s",
+      "13m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(800 = \\frac{1}{2} \\times 16 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 13kg has kinetic energy 416J. Calculate its velocity.",
+    "options": [
+      "5.66m/s",
+      "11m/s",
+      "8m/s",
+      "32m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(416 = \\frac{1}{2} \\times 13 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 31kg at a height of 5m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "775J",
+      "310J",
+      "1550J",
+      "155J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 31 \\times 10 \\times 5 = 1550\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 11kg has kinetic energy 550J. Calculate its velocity.",
+    "options": [
+      "13m/s",
+      "10m/s",
+      "7.07m/s",
+      "50m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(550 = \\frac{1}{2} \\times 11 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 18kg has kinetic energy 2916J. Calculate its velocity.",
+    "options": [
+      "162m/s",
+      "18m/s",
+      "12.73m/s",
+      "21m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2916 = \\frac{1}{2} \\times 18 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 21kg has kinetic energy 2058J. Calculate its velocity.",
+    "options": [
+      "98m/s",
+      "17m/s",
+      "14m/s",
+      "9.9m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2058 = \\frac{1}{2} \\times 21 \\times v^{2}\\)\n\n\\(v^{2} = 196\\), so \\(v = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 32kg at a height of 23m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "320J",
+      "736J",
+      "7360J",
+      "3680J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 32 \\times 10 \\times 23 = 7360\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 5kg has kinetic energy 810J. Calculate its velocity.",
+    "options": [
+      "18m/s",
+      "12.73m/s",
+      "162m/s",
+      "21m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(810 = \\frac{1}{2} \\times 5 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 20kg at a height of 23m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2300J",
+      "4600J",
+      "460J",
+      "200J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 20 \\times 10 \\times 23 = 4600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 29kg at a height of 26m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "7540J",
+      "290J",
+      "754J",
+      "3770J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 29 \\times 10 \\times 26 = 7540\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 13kg at a height of 18m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "130J",
+      "234J",
+      "1170J",
+      "2340J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 13 \\times 10 \\times 18 = 2340\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 24kg has kinetic energy 6912J. Calculate its velocity.",
+    "options": [
+      "288m/s",
+      "27m/s",
+      "16.97m/s",
+      "24m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(6912 = \\frac{1}{2} \\times 24 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 26kg has kinetic energy 1872J. Calculate its velocity.",
+    "options": [
+      "72m/s",
+      "8.49m/s",
+      "15m/s",
+      "12m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(1872 = \\frac{1}{2} \\times 26 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 14kg has kinetic energy 448J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "11m/s",
+      "5.66m/s",
+      "8m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(448 = \\frac{1}{2} \\times 14 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 3kg has kinetic energy 96J. Calculate its velocity.",
+    "options": [
+      "5.66m/s",
+      "32m/s",
+      "8m/s",
+      "11m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(96 = \\frac{1}{2} \\times 3 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 15kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "600J",
+      "60J",
+      "300J",
+      "150J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 15 \\times 10 \\times 4 = 600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 24kg at a height of 13m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1560J",
+      "312J",
+      "240J",
+      "3120J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 24 \\times 10 \\times 13 = 3120\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 7kg has kinetic energy 56J. Calculate its velocity.",
+    "options": [
+      "7m/s",
+      "2.83m/s",
+      "8m/s",
+      "4m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(56 = \\frac{1}{2} \\times 7 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 56kg at a height of 20m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1120J",
+      "560J",
+      "11200J",
+      "5600J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 56 \\times 10 \\times 20 = 11200\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 53kg at a height of 8m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "424J",
+      "2120J",
+      "530J",
+      "4240J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 53 \\times 10 \\times 8 = 4240\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 17kg at a height of 27m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2295J",
+      "170J",
+      "459J",
+      "4590J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 17 \\times 10 \\times 27 = 4590\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 18kg at a height of 33m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2970J",
+      "5940J",
+      "594J",
+      "180J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 18 \\times 10 \\times 33 = 5940\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 30kg at a height of 17m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "510J",
+      "5100J",
+      "2550J",
+      "300J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 30 \\times 10 \\times 17 = 5100\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 46kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "184J",
+      "920J",
+      "1840J",
+      "460J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 46 \\times 10 \\times 4 = 1840\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 18kg has kinetic energy 4356J. Calculate its velocity.",
+    "options": [
+      "25m/s",
+      "242m/s",
+      "15.56m/s",
+      "22m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4356 = \\frac{1}{2} \\times 18 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 49kg at a height of 38m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "9310J",
+      "18620J",
+      "1862J",
+      "490J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 49 \\times 10 \\times 38 = 18620\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 3kg at a height of 27m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "81J",
+      "405J",
+      "810J",
+      "30J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 3 \\times 10 \\times 27 = 810\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 29kg has kinetic energy 2088J. Calculate its velocity.",
+    "options": [
+      "15m/s",
+      "12m/s",
+      "72m/s",
+      "8.49m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2088 = \\frac{1}{2} \\times 29 \\times v^{2}\\)\n\n\\(v^{2} = 144\\), so \\(v = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 33kg at a height of 27m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "330J",
+      "4455J",
+      "891J",
+      "8910J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 33 \\times 10 \\times 27 = 8910\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 4kg has kinetic energy 72J. Calculate its velocity.",
+    "options": [
+      "4.24m/s",
+      "9m/s",
+      "6m/s",
+      "18m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(72 = \\frac{1}{2} \\times 4 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 51kg at a height of 24m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1224J",
+      "510J",
+      "12240J",
+      "6120J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 51 \\times 10 \\times 24 = 12240\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 24kg at a height of 16m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "240J",
+      "384J",
+      "1920J",
+      "3840J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 24 \\times 10 \\times 16 = 3840\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 2kg has kinetic energy 64J. Calculate its velocity.",
+    "options": [
+      "11m/s",
+      "8m/s",
+      "5.66m/s",
+      "32m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(64 = \\frac{1}{2} \\times 2 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 4kg at a height of 13m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "40J",
+      "52J",
+      "260J",
+      "520J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 4 \\times 10 \\times 13 = 520\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 15kg has kinetic energy 120J. Calculate its velocity.",
+    "options": [
+      "7m/s",
+      "4m/s",
+      "8m/s",
+      "2.83m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(120 = \\frac{1}{2} \\times 15 \\times v^{2}\\)\n\n\\(v^{2} = 16\\), so \\(v = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 25kg has kinetic energy 5000J. Calculate its velocity.",
+    "options": [
+      "200m/s",
+      "14.14m/s",
+      "20m/s",
+      "23m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(5000 = \\frac{1}{2} \\times 25 \\times v^{2}\\)\n\n\\(v^{2} = 400\\), so \\(v = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 11kg has kinetic energy 198J. Calculate its velocity.",
+    "options": [
+      "4.24m/s",
+      "18m/s",
+      "6m/s",
+      "9m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(198 = \\frac{1}{2} \\times 11 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 2kg at a height of 39m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "390J",
+      "78J",
+      "20J",
+      "780J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 2 \\times 10 \\times 39 = 780\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 11kg has kinetic energy 3168J. Calculate its velocity.",
+    "options": [
+      "27m/s",
+      "24m/s",
+      "288m/s",
+      "16.97m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3168 = \\frac{1}{2} \\times 11 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 8kg at a height of 37m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2960J",
+      "80J",
+      "1480J",
+      "296J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 8 \\times 10 \\times 37 = 2960\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 28kg has kinetic energy 504J. Calculate its velocity.",
+    "options": [
+      "9m/s",
+      "18m/s",
+      "6m/s",
+      "4.24m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(504 = \\frac{1}{2} \\times 28 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 46kg at a height of 13m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "460J",
+      "2990J",
+      "598J",
+      "5980J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 46 \\times 10 \\times 13 = 5980\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 8kg at a height of 12m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "480J",
+      "960J",
+      "96J",
+      "80J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 8 \\times 10 \\times 12 = 960\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 13kg has kinetic energy 2106J. Calculate its velocity.",
+    "options": [
+      "18m/s",
+      "12.73m/s",
+      "21m/s",
+      "162m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(2106 = \\frac{1}{2} \\times 13 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 43kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "172J",
+      "1720J",
+      "430J",
+      "860J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 43 \\times 10 \\times 4 = 1720\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 38kg at a height of 17m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "380J",
+      "6460J",
+      "646J",
+      "3230J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 38 \\times 10 \\times 17 = 6460\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 27kg at a height of 35m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "270J",
+      "9450J",
+      "4725J",
+      "945J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 27 \\times 10 \\times 35 = 9450\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 55kg at a height of 30m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "16500J",
+      "550J",
+      "1650J",
+      "8250J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 55 \\times 10 \\times 30 = 16500\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 9kg at a height of 3m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "27J",
+      "90J",
+      "135J",
+      "270J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 9 \\times 10 \\times 3 = 270\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 47kg at a height of 7m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "3290J",
+      "470J",
+      "1645J",
+      "329J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 47 \\times 10 \\times 7 = 3290\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 34kg at a height of 39m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "6630J",
+      "13260J",
+      "1326J",
+      "340J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 34 \\times 10 \\times 39 = 13260\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 24kg has kinetic energy 768J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "8m/s",
+      "11m/s",
+      "5.66m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(768 = \\frac{1}{2} \\times 24 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 27kg has kinetic energy 6534J. Calculate its velocity.",
+    "options": [
+      "25m/s",
+      "22m/s",
+      "242m/s",
+      "15.56m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(6534 = \\frac{1}{2} \\times 27 \\times v^{2}\\)\n\n\\(v^{2} = 484\\), so \\(v = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 4kg at a height of 7m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "140J",
+      "280J",
+      "40J",
+      "28J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 4 \\times 10 \\times 7 = 280\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 29kg has kinetic energy 8352J. Calculate its velocity.",
+    "options": [
+      "16.97m/s",
+      "27m/s",
+      "288m/s",
+      "24m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(8352 = \\frac{1}{2} \\times 29 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 54kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "540J",
+      "11880J",
+      "1188J",
+      "5940J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 54 \\times 10 \\times 22 = 11880\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 44kg at a height of 22m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "968J",
+      "9680J",
+      "440J",
+      "4840J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 44 \\times 10 \\times 22 = 9680\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 48kg at a height of 25m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1200J",
+      "6000J",
+      "480J",
+      "12000J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 48 \\times 10 \\times 25 = 12000\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 13kg has kinetic energy 3744J. Calculate its velocity.",
+    "options": [
+      "16.97m/s",
+      "288m/s",
+      "27m/s",
+      "24m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(3744 = \\frac{1}{2} \\times 13 \\times v^{2}\\)\n\n\\(v^{2} = 576\\), so \\(v = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 23kg at a height of 24m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2760J",
+      "5520J",
+      "552J",
+      "230J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 23 \\times 10 \\times 24 = 5520\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 20kg has kinetic energy 360J. Calculate its velocity.",
+    "options": [
+      "6m/s",
+      "4.24m/s",
+      "9m/s",
+      "18m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(360 = \\frac{1}{2} \\times 20 \\times v^{2}\\)\n\n\\(v^{2} = 36\\), so \\(v = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 28kg at a height of 21m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "2940J",
+      "588J",
+      "5880J",
+      "280J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 28 \\times 10 \\times 21 = 5880\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 41kg at a height of 15m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "410J",
+      "3075J",
+      "6150J",
+      "615J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 41 \\times 10 \\times 15 = 6150\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 46kg at a height of 18m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "828J",
+      "8280J",
+      "460J",
+      "4140J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 46 \\times 10 \\times 18 = 8280\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 42kg at a height of 9m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "1890J",
+      "378J",
+      "3780J",
+      "420J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 42 \\times 10 \\times 9 = 3780\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 44kg at a height of 16m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "7040J",
+      "440J",
+      "704J",
+      "3520J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 44 \\times 10 \\times 16 = 7040\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 6kg at a height of 25m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "60J",
+      "750J",
+      "1500J",
+      "150J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 6 \\times 10 \\times 25 = 1500\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 27kg has kinetic energy 864J. Calculate its velocity.",
+    "options": [
+      "32m/s",
+      "8m/s",
+      "5.66m/s",
+      "11m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(864 = \\frac{1}{2} \\times 27 \\times v^{2}\\)\n\n\\(v^{2} = 64\\), so \\(v = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the potential energy of a body of mass 40kg at a height of 4m above the ground. [Take \\(g = 10\\)m/s²]",
+    "options": [
+      "160J",
+      "800J",
+      "400J",
+      "1600J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(PE = mgh\\)\n\n\\(= 40 \\times 10 \\times 4 = 1600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 25kg has kinetic energy 4050J. Calculate its velocity.",
+    "options": [
+      "21m/s",
+      "162m/s",
+      "12.73m/s",
+      "18m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4050 = \\frac{1}{2} \\times 25 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 30kg has kinetic energy 4860J. Calculate its velocity.",
+    "options": [
+      "18m/s",
+      "162m/s",
+      "21m/s",
+      "12.73m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(4860 = \\frac{1}{2} \\times 30 \\times v^{2}\\)\n\n\\(v^{2} = 324\\), so \\(v = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body of mass 13kg has kinetic energy 650J. Calculate its velocity.",
+    "options": [
+      "50m/s",
+      "7.07m/s",
+      "13m/s",
+      "10m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(KE = \\frac{1}{2}mv^{2}\\)\n\n\\(650 = \\frac{1}{2} \\times 13 \\times v^{2}\\)\n\n\\(v^{2} = 100\\), so \\(v = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "tBRmodqD7JJn7wmHtFz6",
+    "topicId": "5yEJ08gJ3LZ7eVQD4Cm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

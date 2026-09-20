@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find \\(\\int (-2x - 9)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} - 9x^{2} + c\\)",
+      "\\(-x^{2} - 9x + c\\)",
+      "\\(-2x - 9 + c\\)",
+      "\\(-2x^{2} - 9x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(-x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 6x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 4\\).",
+    "options": [
+      "128 square units",
+      "96 square units",
+      "24 square units",
+      "256 square units"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area \\(= \\int_{0}^{4} 6x^{2}dx = \\left[2x^{3}\\right]_{0}^{4}\\)\n\n\\(= 2(4)^{3} = 128\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 6)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x - 6)^{6}}{6} + c\\)",
+      "\\((5x - 6)^{6} + c\\)",
+      "\\(\\frac{(5x - 6)^{6}}{30} + c\\)",
+      "\\(\\frac{(5x - 6)^{5}}{30} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 5x - 6\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{5}\\frac{du}{5} = \\frac{u^{6}}{5(6)} + c\\)\n\n\\(= \\frac{(5x - 6)^{6}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 3)\\,dx\\).",
+    "options": [
+      "\\(2x - 3 + c\\)",
+      "\\(x^{2} - 3x + c\\)",
+      "\\(x^{2} - 3x^{2} + c\\)",
+      "\\(2x^{2} - 3x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -3dx = -3x\\)\n\nSo the answer is \\(x^{2} - 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (-3x^{2} - 4x - 2)\\,dx\\).",
+    "options": [
+      "-190",
+      "-360",
+      "-180",
+      "180"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-3x^{2} - 4x - 2)dx = -x^{3} - 2x^{2} - 2x\\)\n\nAt \\(x = 5\\): \\(-185\\)\n\nAt \\(x = 1\\): \\(-5\\)\n\nDifference \\(= -180\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 5)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 5)^{5}}{36} + c\\)",
+      "\\(\\frac{(6x + 5)^{6}}{36} + c\\)",
+      "\\(\\frac{(6x + 5)^{6}}{6} + c\\)",
+      "\\((6x + 5)^{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x + 5\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x + 5)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 4)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x - 4)^{3}}{15} + c\\)",
+      "\\(\\frac{(5x - 4)^{3}}{3} + c\\)",
+      "\\((5x - 4)^{3} + c\\)",
+      "\\(\\frac{(5x - 4)^{2}}{15} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 5x - 4\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{2}\\frac{du}{5} = \\frac{u^{3}}{5(3)} + c\\)\n\n\\(= \\frac{(5x - 4)^{3}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int \\cos x\\,dx\\).",
+    "options": [
+      "\\(-\\cos x + c\\)",
+      "\\(\\cos x + c\\)",
+      "\\(-\\sin x + c\\)",
+      "\\(\\sin x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard integrals, \\(\\int \\cos x\\,dx = \\sin x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int \\sec^{2}x\\,dx\\).",
+    "options": [
+      "\\(\\tan^{2}x + c\\)",
+      "\\(\\sec x + c\\)",
+      "\\(-\\cot x + c\\)",
+      "\\(\\tan x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "From the standard integrals, \\(\\int \\sec^{2}x\\,dx = \\tan x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x - 5)\\,dx\\).",
+    "options": [
+      "\\(10x^{2} - 5x + c\\)",
+      "\\(5x^{2} - 5x + c\\)",
+      "\\(10x - 5 + c\\)",
+      "\\(5x^{2} - 5x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int -5dx = -5x\\)\n\nSo the answer is \\(5x^{2} - 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 7)\\,dx\\).",
+    "options": [
+      "\\(-2x + 7 + c\\)",
+      "\\(-x^{2} + 7x^{2} + c\\)",
+      "\\(-x^{2} + 7x + c\\)",
+      "\\(-2x^{2} + 7x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 7dx = 7x\\)\n\nSo the answer is \\(-x^{2} + 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int \\sin x\\,dx\\).",
+    "options": [
+      "\\(-\\sin x + c\\)",
+      "\\(-\\cos x + c\\)",
+      "\\(\\cos x + c\\)",
+      "\\(\\sec^{2}x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "From the standard integrals, \\(\\int \\sin x\\,dx = -\\cos x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 6)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 6)^{3}}{18} + c\\)",
+      "\\(\\frac{(6x - 6)^{2}}{18} + c\\)",
+      "\\(\\frac{(6x - 6)^{3}}{3} + c\\)",
+      "\\((6x - 6)^{3} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x - 6\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{2}\\frac{du}{6} = \\frac{u^{3}}{6(3)} + c\\)\n\n\\(= \\frac{(6x - 6)^{3}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (3x^{2} - 6x + 5)\\,dx\\).",
+    "options": [
+      "24",
+      "18",
+      "-12",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (3x^{2} - 6x + 5)dx = x^{3} - 3x^{2} + 5x\\)\n\nAt \\(x = 3\\): \\(15\\)\n\nAt \\(x = 1\\): \\(3\\)\n\nDifference \\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 1)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x - 1)^{3}}{3} + c\\)",
+      "\\(\\frac{(2x - 1)^{2}}{6} + c\\)",
+      "\\((2x - 1)^{3} + c\\)",
+      "\\(\\frac{(2x - 1)^{3}}{6} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 2x - 1\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{2}\\frac{du}{2} = \\frac{u^{3}}{2(3)} + c\\)\n\n\\(= \\frac{(2x - 1)^{3}}{6} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-6x^{2} - 4x + 4)\\,dx\\).",
+    "options": [
+      "264",
+      "-264",
+      "-528",
+      "-296"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-6x^{2} - 4x + 4)dx = -2x^{3} - 2x^{2} + 4x\\)\n\nAt \\(x = 5\\): \\(-280\\)\n\nAt \\(x = 2\\): \\(-16\\)\n\nDifference \\(= -264\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (3x^{2} + 2x + 6)\\,dx\\).",
+    "options": [
+      "172",
+      "188",
+      "344",
+      "-172"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} + 2x + 6)dx = x^{3} + x^{2} + 6x\\)\n\nAt \\(x = 5\\): \\(180\\)\n\nAt \\(x = 1\\): \\(8\\)\n\nDifference \\(= 172\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 9x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 2\\).",
+    "options": [
+      "18 square units",
+      "36 square units",
+      "48 square units",
+      "24 square units"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area \\(= \\int_{0}^{2} 9x^{2}dx = \\left[3x^{3}\\right]_{0}^{2}\\)\n\n\\(= 3(2)^{3} = 24\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 2)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 2)^{6}}{24} + c\\)",
+      "\\((4x + 2)^{6} + c\\)",
+      "\\(\\frac{(4x + 2)^{6}}{6} + c\\)",
+      "\\(\\frac{(4x + 2)^{5}}{24} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 4x + 2\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x + 2)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 2)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 2)^{6}}{24} + c\\)",
+      "\\((4x - 2)^{6} + c\\)",
+      "\\(\\frac{(4x - 2)^{6}}{6} + c\\)",
+      "\\(\\frac{(4x - 2)^{5}}{24} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 4x - 2\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x - 2)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (9x^{2} - 6x - 2)\\,dx\\).",
+    "options": [
+      "564",
+      "-282",
+      "298",
+      "282"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} - 6x - 2)dx = 3x^{3} - 3x^{2} - 2x\\)\n\nAt \\(x = 5\\): \\(290\\)\n\nAt \\(x = 2\\): \\(8\\)\n\nDifference \\(= 282\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 12x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 4\\).",
+    "options": [
+      "192 square units",
+      "512 square units",
+      "48 square units",
+      "256 square units"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area \\(= \\int_{0}^{4} 12x^{2}dx = \\left[4x^{3}\\right]_{0}^{4}\\)\n\n\\(= 4(4)^{3} = 256\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 3x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 2\\).",
+    "options": [
+      "16 square units",
+      "6 square units",
+      "12 square units",
+      "8 square units"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area \\(= \\int_{0}^{2} 3x^{2}dx = \\left[x^{3}\\right]_{0}^{2}\\)\n\n\\(= 1(2)^{3} = 8\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 4)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x - 4)^{6}}{6} + c\\)",
+      "\\((5x - 4)^{6} + c\\)",
+      "\\(\\frac{(5x - 4)^{6}}{30} + c\\)",
+      "\\(\\frac{(5x - 4)^{5}}{30} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 5x - 4\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{5}\\frac{du}{5} = \\frac{u^{6}}{5(6)} + c\\)\n\n\\(= \\frac{(5x - 4)^{6}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 5)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 5)^{5}}{15} + c\\)",
+      "\\(\\frac{(3x + 5)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x + 5)^{5}}{5} + c\\)",
+      "\\((3x + 5)^{5} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x + 5\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x + 5)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 1)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} + x^{2} + c\\)",
+      "\\(-4x^{2} + x + c\\)",
+      "\\(-2x^{2} + x + c\\)",
+      "\\(-4x + 1 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 1dx = x\\)\n\nSo the answer is \\(-2x^{2} + x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 8)\\,dx\\).",
+    "options": [
+      "\\(-2x + 8 + c\\)",
+      "\\(-x^{2} + 8x + c\\)",
+      "\\(-2x^{2} + 8x + c\\)",
+      "\\(-x^{2} + 8x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 8dx = 8x\\)\n\nSo the answer is \\(-x^{2} + 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{4} (-6x^{2} - 6x - 1)\\,dx\\).",
+    "options": [
+      "-174",
+      "174",
+      "-348",
+      "-186"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-6x^{2} - 6x - 1)dx = -2x^{3} - 3x^{2} - x\\)\n\nAt \\(x = 4\\): \\(-180\\)\n\nAt \\(x = 1\\): \\(-6\\)\n\nDifference \\(= -174\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x + 6)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} + 6x + c\\)",
+      "\\(x^{2} + 6x + c\\)",
+      "\\(2x + 6 + c\\)",
+      "\\(x^{2} + 6x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int 6dx = 6x\\)\n\nSo the answer is \\(x^{2} + 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x + 5)\\,dx\\).",
+    "options": [
+      "\\(5x^{2} + 5x^{2} + c\\)",
+      "\\(5x^{2} + 5x + c\\)",
+      "\\(10x + 5 + c\\)",
+      "\\(10x^{2} + 5x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(5x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 2)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 2)^{3}}{3} + c\\)",
+      "\\((4x + 2)^{3} + c\\)",
+      "\\(\\frac{(4x + 2)^{2}}{12} + c\\)",
+      "\\(\\frac{(4x + 2)^{3}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x + 2\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{2}\\frac{du}{4} = \\frac{u^{3}}{4(3)} + c\\)\n\n\\(= \\frac{(4x + 2)^{3}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 3)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 3)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x - 3)^{5}}{15} + c\\)",
+      "\\(\\frac{(3x - 3)^{5}}{5} + c\\)",
+      "\\((3x - 3)^{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 3x - 3\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x - 3)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 5)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 5)^{5}}{24} + c\\)",
+      "\\((4x + 5)^{6} + c\\)",
+      "\\(\\frac{(4x + 5)^{6}}{24} + c\\)",
+      "\\(\\frac{(4x + 5)^{6}}{6} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 4x + 5\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x + 5)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x - 9)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} - 9x + c\\)",
+      "\\(4x - 9 + c\\)",
+      "\\(2x^{2} - 9x + c\\)",
+      "\\(2x^{2} - 9x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(2x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x - 6)\\,dx\\).",
+    "options": [
+      "\\(-6x^{2} - 6x + c\\)",
+      "\\(-6x - 6 + c\\)",
+      "\\(-3x^{2} - 6x + c\\)",
+      "\\(-3x^{2} - 6x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int -6dx = -6x\\)\n\nSo the answer is \\(-3x^{2} - 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x + 7)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} + 7x + c\\)",
+      "\\(x^{2} + 7x^{2} + c\\)",
+      "\\(x^{2} + 7x + c\\)",
+      "\\(2x + 7 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int 7dx = 7x\\)\n\nSo the answer is \\(x^{2} + 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-3x^{2} - 4x + 6)\\,dx\\).",
+    "options": [
+      "-282",
+      "141",
+      "-149",
+      "-141"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-3x^{2} - 4x + 6)dx = -x^{3} - 2x^{2} + 6x\\)\n\nAt \\(x = 5\\): \\(-145\\)\n\nAt \\(x = 2\\): \\(-4\\)\n\nDifference \\(= -141\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 3)^{2}\\,dx\\).",
+    "options": [
+      "\\((3x - 3)^{3} + c\\)",
+      "\\(\\frac{(3x - 3)^{3}}{3} + c\\)",
+      "\\(\\frac{(3x - 3)^{2}}{9} + c\\)",
+      "\\(\\frac{(3x - 3)^{3}}{9} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x - 3\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{2}\\frac{du}{3} = \\frac{u^{3}}{3(3)} + c\\)\n\n\\(= \\frac{(3x - 3)^{3}}{9} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x + 5)\\,dx\\).",
+    "options": [
+      "\\(6x^{2} + 5x + c\\)",
+      "\\(6x + 5 + c\\)",
+      "\\(3x^{2} + 5x + c\\)",
+      "\\(3x^{2} + 5x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(3x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x - 7)\\,dx\\).",
+    "options": [
+      "\\(-2x - 7 + c\\)",
+      "\\(-2x^{2} - 7x + c\\)",
+      "\\(-x^{2} - 7x + c\\)",
+      "\\(-x^{2} - 7x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(-x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 4)^{3}\\,dx\\).",
+    "options": [
+      "\\((4x - 4)^{4} + c\\)",
+      "\\(\\frac{(4x - 4)^{4}}{4} + c\\)",
+      "\\(\\frac{(4x - 4)^{3}}{16} + c\\)",
+      "\\(\\frac{(4x - 4)^{4}}{16} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x - 4\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{3}\\frac{du}{4} = \\frac{u^{4}}{4(4)} + c\\)\n\n\\(= \\frac{(4x - 4)^{4}}{16} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x + 6)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + 6x + c\\)",
+      "\\(2x^{2} + 6x + c\\)",
+      "\\(4x + 6 + c\\)",
+      "\\(2x^{2} + 6x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int 6dx = 6x\\)\n\nSo the answer is \\(2x^{2} + 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (3x^{2} + 6x + 1)\\,dx\\).",
+    "options": [
+      "35",
+      "-35",
+      "79",
+      "70"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} + 6x + 1)dx = x^{3} + 3x^{2} + x\\)\n\nAt \\(x = 3\\): \\(57\\)\n\nAt \\(x = 2\\): \\(22\\)\n\nDifference \\(= 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 8)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 8)^{3}}{3} + c\\)",
+      "\\(\\frac{(4x - 8)^{3}}{12} + c\\)",
+      "\\(\\frac{(4x - 8)^{2}}{12} + c\\)",
+      "\\((4x - 8)^{3} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x - 8\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{2}\\frac{du}{4} = \\frac{u^{3}}{4(3)} + c\\)\n\n\\(= \\frac{(4x - 8)^{3}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 2)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 2)^{3}}{3} + c\\)",
+      "\\(\\frac{(4x - 2)^{2}}{12} + c\\)",
+      "\\((4x - 2)^{3} + c\\)",
+      "\\(\\frac{(4x - 2)^{3}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x - 2\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{2}\\frac{du}{4} = \\frac{u^{3}}{4(3)} + c\\)\n\n\\(= \\frac{(4x - 2)^{3}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 1)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 1)^{6}}{6} + c\\)",
+      "\\(\\frac{(6x + 1)^{6}}{36} + c\\)",
+      "\\(\\frac{(6x + 1)^{5}}{36} + c\\)",
+      "\\((6x + 1)^{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x + 1\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x + 1)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 5)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 5)^{5}}{30} + c\\)",
+      "\\(\\frac{(5x + 5)^{6}}{6} + c\\)",
+      "\\((5x + 5)^{6} + c\\)",
+      "\\(\\frac{(5x + 5)^{6}}{30} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 5x + 5\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{5}\\frac{du}{5} = \\frac{u^{6}}{5(6)} + c\\)\n\n\\(= \\frac{(5x + 5)^{6}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x - 1)\\,dx\\).",
+    "options": [
+      "\\(3x^{2} - x^{2} + c\\)",
+      "\\(6x - 1 + c\\)",
+      "\\(3x^{2} - x + c\\)",
+      "\\(6x^{2} - x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int -1dx = -x\\)\n\nSo the answer is \\(3x^{2} - x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 1)^{3}\\,dx\\).",
+    "options": [
+      "\\((4x - 1)^{4} + c\\)",
+      "\\(\\frac{(4x - 1)^{4}}{16} + c\\)",
+      "\\(\\frac{(4x - 1)^{3}}{16} + c\\)",
+      "\\(\\frac{(4x - 1)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x - 1\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{3}\\frac{du}{4} = \\frac{u^{4}}{4(4)} + c\\)\n\n\\(= \\frac{(4x - 1)^{4}}{16} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (9x^{2} - 4x + 3)\\,dx\\).",
+    "options": [
+      "300",
+      "194",
+      "-150",
+      "150"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} - 4x + 3)dx = 3x^{3} - 2x^{2} + 3x\\)\n\nAt \\(x = 4\\): \\(172\\)\n\nAt \\(x = 2\\): \\(22\\)\n\nDifference \\(= 150\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (3x^{2} - 2x + 5)\\,dx\\).",
+    "options": [
+      "28",
+      "56",
+      "38",
+      "-28"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} - 2x + 5)dx = x^{3} - x^{2} + 5x\\)\n\nAt \\(x = 3\\): \\(33\\)\n\nAt \\(x = 1\\): \\(5\\)\n\nDifference \\(= 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x + 3)\\,dx\\).",
+    "options": [
+      "\\(2x + 3 + c\\)",
+      "\\(x^{2} + 3x + c\\)",
+      "\\(2x^{2} + 3x + c\\)",
+      "\\(x^{2} + 3x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (-6x^{2} + 2x - 3)\\,dx\\).",
+    "options": [
+      "50",
+      "-100",
+      "-58",
+      "-50"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-6x^{2} + 2x - 3)dx = -2x^{3} + x^{2} - 3x\\)\n\nAt \\(x = 3\\): \\(-54\\)\n\nAt \\(x = 1\\): \\(-4\\)\n\nDifference \\(= -50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-6x^{2} + 4x + 1)\\,dx\\).",
+    "options": [
+      "-201",
+      "-378",
+      "-189",
+      "189"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-6x^{2} + 4x + 1)dx = -2x^{3} + 2x^{2} + x\\)\n\nAt \\(x = 5\\): \\(-195\\)\n\nAt \\(x = 2\\): \\(-6\\)\n\nDifference \\(= -189\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x + 7)\\,dx\\).",
+    "options": [
+      "\\(-6x^{2} + 7x + c\\)",
+      "\\(-3x^{2} + 7x^{2} + c\\)",
+      "\\(-6x + 7 + c\\)",
+      "\\(-3x^{2} + 7x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int 7dx = 7x\\)\n\nSo the answer is \\(-3x^{2} + 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (6x^{2} - 2x + 3)\\,dx\\).",
+    "options": [
+      "-236",
+      "472",
+      "244",
+      "236"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (6x^{2} - 2x + 3)dx = 2x^{3} - x^{2} + 3x\\)\n\nAt \\(x = 5\\): \\(240\\)\n\nAt \\(x = 1\\): \\(4\\)\n\nDifference \\(= 236\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 9x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 4\\).",
+    "options": [
+      "36 square units",
+      "384 square units",
+      "144 square units",
+      "192 square units"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area \\(= \\int_{0}^{4} 9x^{2}dx = \\left[3x^{3}\\right]_{0}^{4}\\)\n\n\\(= 3(4)^{3} = 192\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x + 2)\\,dx\\).",
+    "options": [
+      "\\(3x^{2} + 2x + c\\)",
+      "\\(6x^{2} + 2x + c\\)",
+      "\\(6x + 2 + c\\)",
+      "\\(3x^{2} + 2x^{2} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int 2dx = 2x\\)\n\nSo the answer is \\(3x^{2} + 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x + 1)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} + x^{2} + c\\)",
+      "\\(4x + 1 + c\\)",
+      "\\(2x^{2} + x + c\\)",
+      "\\(4x^{2} + x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int 1dx = x\\)\n\nSo the answer is \\(2x^{2} + x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 6)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 6)^{4}}{4} + c\\)",
+      "\\(\\frac{(2x + 6)^{4}}{8} + c\\)",
+      "\\((2x + 6)^{4} + c\\)",
+      "\\(\\frac{(2x + 6)^{3}}{8} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 6\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{3}\\frac{du}{2} = \\frac{u^{4}}{2(4)} + c\\)\n\n\\(= \\frac{(2x + 6)^{4}}{8} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 3)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x - 3)^{3}}{8} + c\\)",
+      "\\((2x - 3)^{4} + c\\)",
+      "\\(\\frac{(2x - 3)^{4}}{8} + c\\)",
+      "\\(\\frac{(2x - 3)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 2x - 3\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{3}\\frac{du}{2} = \\frac{u^{4}}{2(4)} + c\\)\n\n\\(= \\frac{(2x - 3)^{4}}{8} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (3x^{2} - 6x + 3)\\,dx\\).",
+    "options": [
+      "64",
+      "128",
+      "66",
+      "-64"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} - 6x + 3)dx = x^{3} - 3x^{2} + 3x\\)\n\nAt \\(x = 5\\): \\(65\\)\n\nAt \\(x = 1\\): \\(1\\)\n\nDifference \\(= 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 2)\\,dx\\).",
+    "options": [
+      "\\(x^{2} - 2x + c\\)",
+      "\\(2x - 2 + c\\)",
+      "\\(2x^{2} - 2x + c\\)",
+      "\\(x^{2} - 2x^{2} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -2dx = -2x\\)\n\nSo the answer is \\(x^{2} - 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 5)\\,dx\\).",
+    "options": [
+      "\\(-4x + 5 + c\\)",
+      "\\(-2x^{2} + 5x + c\\)",
+      "\\(-4x^{2} + 5x + c\\)",
+      "\\(-2x^{2} + 5x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(-2x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 6)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 6)^{4}}{30} + c\\)",
+      "\\(\\frac{(6x + 6)^{5}}{5} + c\\)",
+      "\\(\\frac{(6x + 6)^{5}}{30} + c\\)",
+      "\\((6x + 6)^{5} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 6x + 6\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{4}\\frac{du}{6} = \\frac{u^{5}}{6(5)} + c\\)\n\n\\(= \\frac{(6x + 6)^{5}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 3x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 4\\).",
+    "options": [
+      "128 square units",
+      "64 square units",
+      "12 square units",
+      "48 square units"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area \\(= \\int_{0}^{4} 3x^{2}dx = \\left[x^{3}\\right]_{0}^{4}\\)\n\n\\(= 1(4)^{3} = 64\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x + 3)\\,dx\\).",
+    "options": [
+      "\\(6x^{2} + 3x + c\\)",
+      "\\(3x^{2} + 3x^{2} + c\\)",
+      "\\(6x + 3 + c\\)",
+      "\\(3x^{2} + 3x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(3x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 7)^{4}\\,dx\\).",
+    "options": [
+      "\\((3x + 7)^{5} + c\\)",
+      "\\(\\frac{(3x + 7)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x + 7)^{5}}{5} + c\\)",
+      "\\(\\frac{(3x + 7)^{5}}{15} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x + 7\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x + 7)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x + 4)\\,dx\\).",
+    "options": [
+      "\\(-3x^{2} + 4x + c\\)",
+      "\\(-6x^{2} + 4x + c\\)",
+      "\\(-3x^{2} + 4x^{2} + c\\)",
+      "\\(-6x + 4 + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(-3x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (3x^{2} + 2x - 3)\\,dx\\).",
+    "options": [
+      "7",
+      "5",
+      "-7",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} + 2x - 3)dx = x^{3} + x^{2} - 3x\\)\n\nAt \\(x = 2\\): \\(6\\)\n\nAt \\(x = 1\\): \\(-1\\)\n\nDifference \\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 3)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 3)^{5}}{15} + c\\)",
+      "\\((3x + 3)^{5} + c\\)",
+      "\\(\\frac{(3x + 3)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x + 3)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x + 3\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x + 3)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x - 9)\\,dx\\).",
+    "options": [
+      "\\(-8x^{2} - 9x + c\\)",
+      "\\(-4x^{2} - 9x^{2} + c\\)",
+      "\\(-8x - 9 + c\\)",
+      "\\(-4x^{2} - 9x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(-4x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 12x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 2\\).",
+    "options": [
+      "64 square units",
+      "24 square units",
+      "32 square units",
+      "48 square units"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area \\(= \\int_{0}^{2} 12x^{2}dx = \\left[4x^{3}\\right]_{0}^{2}\\)\n\n\\(= 4(2)^{3} = 32\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (6x^{2} - 2x - 3)\\,dx\\).",
+    "options": [
+      "216",
+      "408",
+      "204",
+      "-204"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} - 2x - 3)dx = 2x^{3} - x^{2} - 3x\\)\n\nAt \\(x = 5\\): \\(210\\)\n\nAt \\(x = 2\\): \\(6\\)\n\nDifference \\(= 204\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x + 3)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + 3x^{2} + c\\)",
+      "\\(4x^{2} + 3x + c\\)",
+      "\\(8x + 3 + c\\)",
+      "\\(8x^{2} + 3x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(4x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 4)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} - 4x^{2} + c\\)",
+      "\\(-4x^{2} - 4x + c\\)",
+      "\\(-2x^{2} - 4x + c\\)",
+      "\\(-4x - 4 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -4dx = -4x\\)\n\nSo the answer is \\(-2x^{2} - 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x - 9)\\,dx\\).",
+    "options": [
+      "\\(3x^{2} - 9x^{2} + c\\)",
+      "\\(3x^{2} - 9x + c\\)",
+      "\\(6x^{2} - 9x + c\\)",
+      "\\(6x - 9 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(3x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 8)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 8)^{4}}{16} + c\\)",
+      "\\((4x - 8)^{4} + c\\)",
+      "\\(\\frac{(4x - 8)^{4}}{4} + c\\)",
+      "\\(\\frac{(4x - 8)^{3}}{16} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 4x - 8\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{3}\\frac{du}{4} = \\frac{u^{4}}{4(4)} + c\\)\n\n\\(= \\frac{(4x - 8)^{4}}{16} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 6)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 6)^{6}}{6} + c\\)",
+      "\\(\\frac{(4x + 6)^{6}}{24} + c\\)",
+      "\\((4x + 6)^{6} + c\\)",
+      "\\(\\frac{(4x + 6)^{5}}{24} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x + 6\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x + 6)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 7)^{5}\\,dx\\).",
+    "options": [
+      "\\((2x + 7)^{6} + c\\)",
+      "\\(\\frac{(2x + 7)^{5}}{12} + c\\)",
+      "\\(\\frac{(2x + 7)^{6}}{12} + c\\)",
+      "\\(\\frac{(2x + 7)^{6}}{6} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 2x + 7\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x + 7)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 6)^{2}\\,dx\\).",
+    "options": [
+      "\\((6x + 6)^{3} + c\\)",
+      "\\(\\frac{(6x + 6)^{2}}{18} + c\\)",
+      "\\(\\frac{(6x + 6)^{3}}{3} + c\\)",
+      "\\(\\frac{(6x + 6)^{3}}{18} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 6x + 6\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{2}\\frac{du}{6} = \\frac{u^{3}}{6(3)} + c\\)\n\n\\(= \\frac{(6x + 6)^{3}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (-3x^{2} + 4x + 6)\\,dx\\).",
+    "options": [
+      "-5",
+      "19",
+      "5",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-3x^{2} + 4x + 6)dx = -x^{3} + 2x^{2} + 6x\\)\n\nAt \\(x = 2\\): \\(12\\)\n\nAt \\(x = 1\\): \\(7\\)\n\nDifference \\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 9)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} + 9x + c\\)",
+      "\\(-4x + 9 + c\\)",
+      "\\(-2x^{2} + 9x^{2} + c\\)",
+      "\\(-2x^{2} + 9x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 9dx = 9x\\)\n\nSo the answer is \\(-2x^{2} + 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 5)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 5)^{6}}{18} + c\\)",
+      "\\(\\frac{(3x - 5)^{6}}{6} + c\\)",
+      "\\(\\frac{(3x - 5)^{5}}{18} + c\\)",
+      "\\((3x - 5)^{6} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x - 5\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x - 5)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 7)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 7)^{3}}{20} + c\\)",
+      "\\(\\frac{(5x + 7)^{4}}{20} + c\\)",
+      "\\(\\frac{(5x + 7)^{4}}{4} + c\\)",
+      "\\((5x + 7)^{4} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 5x + 7\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{3}\\frac{du}{5} = \\frac{u^{4}}{5(4)} + c\\)\n\n\\(= \\frac{(5x + 7)^{4}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x + 7)\\,dx\\).",
+    "options": [
+      "\\(-8x^{2} + 7x + c\\)",
+      "\\(-4x^{2} + 7x + c\\)",
+      "\\(-4x^{2} + 7x^{2} + c\\)",
+      "\\(-8x + 7 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int 7dx = 7x\\)\n\nSo the answer is \\(-4x^{2} + 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x - 1)\\,dx\\).",
+    "options": [
+      "\\(-6x^{2} - x + c\\)",
+      "\\(-3x^{2} - x^{2} + c\\)",
+      "\\(-3x^{2} - x + c\\)",
+      "\\(-6x - 1 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int -1dx = -x\\)\n\nSo the answer is \\(-3x^{2} - x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x - 6)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} - 6x + c\\)",
+      "\\(8x - 6 + c\\)",
+      "\\(4x^{2} - 6x^{2} + c\\)",
+      "\\(8x^{2} - 6x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int -6dx = -6x\\)\n\nSo the answer is \\(4x^{2} - 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 7)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x - 7)^{3}}{6} + c\\)",
+      "\\(\\frac{(2x - 7)^{2}}{6} + c\\)",
+      "\\((2x - 7)^{3} + c\\)",
+      "\\(\\frac{(2x - 7)^{3}}{3} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 2x - 7\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{2}\\frac{du}{2} = \\frac{u^{3}}{2(3)} + c\\)\n\n\\(= \\frac{(2x - 7)^{3}}{6} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (3x^{2} + 6x - 6)\\,dx\\).",
+    "options": [
+      "-80",
+      "160",
+      "96",
+      "80"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (3x^{2} + 6x - 6)dx = x^{3} + 3x^{2} - 6x\\)\n\nAt \\(x = 4\\): \\(88\\)\n\nAt \\(x = 2\\): \\(8\\)\n\nDifference \\(= 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 1)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x - 1)^{4}}{25} + c\\)",
+      "\\(\\frac{(5x - 1)^{5}}{25} + c\\)",
+      "\\((5x - 1)^{5} + c\\)",
+      "\\(\\frac{(5x - 1)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 5x - 1\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x - 1)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x + 6)\\,dx\\).",
+    "options": [
+      "\\(5x^{2} + 6x^{2} + c\\)",
+      "\\(5x^{2} + 6x + c\\)",
+      "\\(10x + 6 + c\\)",
+      "\\(10x^{2} + 6x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int 6dx = 6x\\)\n\nSo the answer is \\(5x^{2} + 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (9x^{2} - 2x + 3)\\,dx\\).",
+    "options": [
+      "-76",
+      "86",
+      "152",
+      "76"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} - 2x + 3)dx = 3x^{3} - x^{2} + 3x\\)\n\nAt \\(x = 3\\): \\(81\\)\n\nAt \\(x = 1\\): \\(5\\)\n\nDifference \\(= 76\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (6x^{2} - 4x + 1)\\,dx\\).",
+    "options": [
+      "-356",
+      "356",
+      "376",
+      "712"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (6x^{2} - 4x + 1)dx = 2x^{3} - 2x^{2} + x\\)\n\nAt \\(x = 6\\): \\(366\\)\n\nAt \\(x = 2\\): \\(10\\)\n\nDifference \\(= 356\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x - 2)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} - 2x + c\\)",
+      "\\(4x - 2 + c\\)",
+      "\\(2x^{2} - 2x^{2} + c\\)",
+      "\\(4x^{2} - 2x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int -2dx = -2x\\)\n\nSo the answer is \\(2x^{2} - 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 2)^{5}\\,dx\\).",
+    "options": [
+      "\\((2x + 2)^{6} + c\\)",
+      "\\(\\frac{(2x + 2)^{6}}{12} + c\\)",
+      "\\(\\frac{(2x + 2)^{5}}{12} + c\\)",
+      "\\(\\frac{(2x + 2)^{6}}{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 2\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x + 2)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 7)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 7)^{3}}{8} + c\\)",
+      "\\(\\frac{(2x + 7)^{4}}{8} + c\\)",
+      "\\(\\frac{(2x + 7)^{4}}{4} + c\\)",
+      "\\((2x + 7)^{4} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 7\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{3}\\frac{du}{2} = \\frac{u^{4}}{2(4)} + c\\)\n\n\\(= \\frac{(2x + 7)^{4}}{8} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 6)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 6)^{6}}{6} + c\\)",
+      "\\((6x - 6)^{6} + c\\)",
+      "\\(\\frac{(6x - 6)^{5}}{36} + c\\)",
+      "\\(\\frac{(6x - 6)^{6}}{36} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 6x - 6\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x - 6)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 6)^{5}\\,dx\\).",
+    "options": [
+      "\\((6x + 6)^{6} + c\\)",
+      "\\(\\frac{(6x + 6)^{6}}{36} + c\\)",
+      "\\(\\frac{(6x + 6)^{5}}{36} + c\\)",
+      "\\(\\frac{(6x + 6)^{6}}{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x + 6\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x + 6)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 5)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} + 5x^{2} + c\\)",
+      "\\(-2x + 5 + c\\)",
+      "\\(-2x^{2} + 5x + c\\)",
+      "\\(-x^{2} + 5x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(-x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 8)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 8)^{4}}{4} + c\\)",
+      "\\((3x - 8)^{4} + c\\)",
+      "\\(\\frac{(3x - 8)^{3}}{12} + c\\)",
+      "\\(\\frac{(3x - 8)^{4}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x - 8\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{3}\\frac{du}{3} = \\frac{u^{4}}{3(4)} + c\\)\n\n\\(= \\frac{(3x - 8)^{4}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 7)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 7)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x - 7)^{5}}{5} + c\\)",
+      "\\(\\frac{(3x - 7)^{5}}{15} + c\\)",
+      "\\((3x - 7)^{5} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x - 7\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x - 7)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 2)^{3}\\,dx\\).",
+    "options": [
+      "\\((4x + 2)^{4} + c\\)",
+      "\\(\\frac{(4x + 2)^{4}}{16} + c\\)",
+      "\\(\\frac{(4x + 2)^{4}}{4} + c\\)",
+      "\\(\\frac{(4x + 2)^{3}}{16} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x + 2\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{3}\\frac{du}{4} = \\frac{u^{4}}{4(4)} + c\\)\n\n\\(= \\frac{(4x + 2)^{4}}{16} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x + 6)\\,dx\\).",
+    "options": [
+      "\\(-6x^{2} + 6x + c\\)",
+      "\\(-3x^{2} + 6x^{2} + c\\)",
+      "\\(-3x^{2} + 6x + c\\)",
+      "\\(-6x + 6 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int 6dx = 6x\\)\n\nSo the answer is \\(-3x^{2} + 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (3x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "13",
+      "-13",
+      "26",
+      "23"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} + 2x + 3)dx = x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 2\\): \\(18\\)\n\nAt \\(x = 1\\): \\(5\\)\n\nDifference \\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 9)\\,dx\\).",
+    "options": [
+      "\\(2x - 9 + c\\)",
+      "\\(x^{2} - 9x^{2} + c\\)",
+      "\\(x^{2} - 9x + c\\)",
+      "\\(2x^{2} - 9x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x + 1)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + x^{2} + c\\)",
+      "\\(8x^{2} + x + c\\)",
+      "\\(4x^{2} + x + c\\)",
+      "\\(8x + 1 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int 1dx = x\\)\n\nSo the answer is \\(4x^{2} + x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 6)^{5}\\,dx\\).",
+    "options": [
+      "\\((3x + 6)^{6} + c\\)",
+      "\\(\\frac{(3x + 6)^{6}}{6} + c\\)",
+      "\\(\\frac{(3x + 6)^{6}}{18} + c\\)",
+      "\\(\\frac{(3x + 6)^{5}}{18} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x + 6\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x + 6)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 1)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 1)^{4}}{20} + c\\)",
+      "\\((5x + 1)^{4} + c\\)",
+      "\\(\\frac{(5x + 1)^{3}}{20} + c\\)",
+      "\\(\\frac{(5x + 1)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 5x + 1\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{3}\\frac{du}{5} = \\frac{u^{4}}{5(4)} + c\\)\n\n\\(= \\frac{(5x + 1)^{4}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (-6x^{2} - 2x - 6)\\,dx\\).",
+    "options": [
+      "-272",
+      "136",
+      "-200",
+      "-136"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-6x^{2} - 2x - 6)dx = -2x^{3} - x^{2} - 6x\\)\n\nAt \\(x = 4\\): \\(-168\\)\n\nAt \\(x = 2\\): \\(-32\\)\n\nDifference \\(= -136\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 3)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 3)^{6}}{36} + c\\)",
+      "\\(\\frac{(6x + 3)^{5}}{36} + c\\)",
+      "\\(\\frac{(6x + 3)^{6}}{6} + c\\)",
+      "\\((6x + 3)^{6} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x + 3\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x + 3)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-3x^{2} + 2x - 5)\\,dx\\).",
+    "options": [
+      "-222",
+      "111",
+      "-111",
+      "-139"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-3x^{2} + 2x - 5)dx = -x^{3} + x^{2} - 5x\\)\n\nAt \\(x = 5\\): \\(-125\\)\n\nAt \\(x = 2\\): \\(-14\\)\n\nDifference \\(= -111\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 6)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 6)^{3}}{12} + c\\)",
+      "\\((3x - 6)^{4} + c\\)",
+      "\\(\\frac{(3x - 6)^{4}}{12} + c\\)",
+      "\\(\\frac{(3x - 6)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x - 6\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{3}\\frac{du}{3} = \\frac{u^{4}}{3(4)} + c\\)\n\n\\(= \\frac{(3x - 6)^{4}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the area enclosed by the curve \\(y = 6x^{2}\\), the x-axis, \\(x = 0\\) and \\(x = 2\\).",
+    "options": [
+      "16 square units",
+      "32 square units",
+      "12 square units",
+      "24 square units"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area \\(= \\int_{0}^{2} 6x^{2}dx = \\left[2x^{3}\\right]_{0}^{2}\\)\n\n\\(= 2(2)^{3} = 16\\) square units",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 3)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} + 3x^{2} + c\\)",
+      "\\(-2x^{2} + 3x + c\\)",
+      "\\(-4x^{2} + 3x + c\\)",
+      "\\(-4x + 3 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(-2x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (6x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "460",
+      "-460",
+      "512",
+      "920"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (6x^{2} + 2x + 3)dx = 2x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 6\\): \\(486\\)\n\nAt \\(x = 2\\): \\(26\\)\n\nDifference \\(= 460\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (9x^{2} + 4x - 6)\\,dx\\).",
+    "options": [
+      "396",
+      "792",
+      "-396",
+      "394"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (9x^{2} + 4x - 6)dx = 3x^{3} + 2x^{2} - 6x\\)\n\nAt \\(x = 5\\): \\(395\\)\n\nAt \\(x = 1\\): \\(-1\\)\n\nDifference \\(= 396\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (9x^{2} + 2x + 6)\\,dx\\).",
+    "options": [
+      "50",
+      "60",
+      "-30",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} + 2x + 6)dx = 3x^{3} + x^{2} + 6x\\)\n\nAt \\(x = 2\\): \\(40\\)\n\nAt \\(x = 1\\): \\(10\\)\n\nDifference \\(= 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 4)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 4)^{5}}{5} + c\\)",
+      "\\(\\frac{(6x - 4)^{5}}{30} + c\\)",
+      "\\(\\frac{(6x - 4)^{4}}{30} + c\\)",
+      "\\((6x - 4)^{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x - 4\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{4}\\frac{du}{6} = \\frac{u^{5}}{6(5)} + c\\)\n\n\\(= \\frac{(6x - 4)^{5}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 2)^{3}\\,dx\\).",
+    "options": [
+      "\\((5x + 2)^{4} + c\\)",
+      "\\(\\frac{(5x + 2)^{3}}{20} + c\\)",
+      "\\(\\frac{(5x + 2)^{4}}{4} + c\\)",
+      "\\(\\frac{(5x + 2)^{4}}{20} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 5x + 2\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{3}\\frac{du}{5} = \\frac{u^{4}}{5(4)} + c\\)\n\n\\(= \\frac{(5x + 2)^{4}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x - 8)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} - 8x + c\\)",
+      "\\(2x^{2} - 8x^{2} + c\\)",
+      "\\(4x - 8 + c\\)",
+      "\\(4x^{2} - 8x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int -8dx = -8x\\)\n\nSo the answer is \\(2x^{2} - 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (-6x^{2} + 2x + 4)\\,dx\\).",
+    "options": [
+      "-1",
+      "-7",
+      "7",
+      "-14"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-6x^{2} + 2x + 4)dx = -2x^{3} + x^{2} + 4x\\)\n\nAt \\(x = 2\\): \\(-4\\)\n\nAt \\(x = 1\\): \\(3\\)\n\nDifference \\(= -7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x - 7)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} - 7x + c\\)",
+      "\\(2x^{2} - 7x + c\\)",
+      "\\(2x^{2} - 7x^{2} + c\\)",
+      "\\(4x - 7 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(2x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 4)^{2}\\,dx\\).",
+    "options": [
+      "\\((5x + 4)^{3} + c\\)",
+      "\\(\\frac{(5x + 4)^{3}}{15} + c\\)",
+      "\\(\\frac{(5x + 4)^{2}}{15} + c\\)",
+      "\\(\\frac{(5x + 4)^{3}}{3} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 5x + 4\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{2}\\frac{du}{5} = \\frac{u^{3}}{5(3)} + c\\)\n\n\\(= \\frac{(5x + 4)^{3}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x - 8)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} - 8x + c\\)",
+      "\\(-x^{2} - 8x^{2} + c\\)",
+      "\\(-2x - 8 + c\\)",
+      "\\(-2x^{2} - 8x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int -8dx = -8x\\)\n\nSo the answer is \\(-x^{2} - 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 8)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} - 8x^{2} + c\\)",
+      "\\(-4x^{2} - 8x + c\\)",
+      "\\(-4x - 8 + c\\)",
+      "\\(-2x^{2} - 8x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -8dx = -8x\\)\n\nSo the answer is \\(-2x^{2} - 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (9x^{2} + 2x - 4)\\,dx\\).",
+    "options": [
+      "720",
+      "360",
+      "-360",
+      "400"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (9x^{2} + 2x - 4)dx = 3x^{3} + x^{2} - 4x\\)\n\nAt \\(x = 5\\): \\(380\\)\n\nAt \\(x = 2\\): \\(20\\)\n\nDifference \\(= 360\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 8)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 8)^{4}}{30} + c\\)",
+      "\\(\\frac{(6x + 8)^{5}}{30} + c\\)",
+      "\\((6x + 8)^{5} + c\\)",
+      "\\(\\frac{(6x + 8)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x + 8\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{4}\\frac{du}{6} = \\frac{u^{5}}{6(5)} + c\\)\n\n\\(= \\frac{(6x + 8)^{5}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (9x^{2} - 2x + 6)\\,dx\\).",
+    "options": [
+      "372",
+      "-372",
+      "388",
+      "744"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (9x^{2} - 2x + 6)dx = 3x^{3} - x^{2} + 6x\\)\n\nAt \\(x = 5\\): \\(380\\)\n\nAt \\(x = 1\\): \\(8\\)\n\nDifference \\(= 372\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x + 9)\\,dx\\).",
+    "options": [
+      "\\(6x + 9 + c\\)",
+      "\\(3x^{2} + 9x^{2} + c\\)",
+      "\\(3x^{2} + 9x + c\\)",
+      "\\(6x^{2} + 9x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int 9dx = 9x\\)\n\nSo the answer is \\(3x^{2} + 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (3x^{2} + 2x + 5)\\,dx\\).",
+    "options": [
+      "29",
+      "58",
+      "-29",
+      "73"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} + 2x + 5)dx = x^{3} + x^{2} + 5x\\)\n\nAt \\(x = 3\\): \\(51\\)\n\nAt \\(x = 2\\): \\(22\\)\n\nDifference \\(= 29\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x - 7)\\,dx\\).",
+    "options": [
+      "\\(6x - 7 + c\\)",
+      "\\(3x^{2} - 7x^{2} + c\\)",
+      "\\(6x^{2} - 7x + c\\)",
+      "\\(3x^{2} - 7x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(3x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x - 2)\\,dx\\).",
+    "options": [
+      "\\(-8x^{2} - 2x + c\\)",
+      "\\(-4x^{2} - 2x + c\\)",
+      "\\(-8x - 2 + c\\)",
+      "\\(-4x^{2} - 2x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int -2dx = -2x\\)\n\nSo the answer is \\(-4x^{2} - 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-3x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "-83",
+      "-87",
+      "87",
+      "-174"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-3x^{2} + 2x + 3)dx = -x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 5\\): \\(-85\\)\n\nAt \\(x = 2\\): \\(2\\)\n\nDifference \\(= -87\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 8)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 8)^{5}}{5} + c\\)",
+      "\\(\\frac{(3x - 8)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x - 8)^{5}}{15} + c\\)",
+      "\\((3x - 8)^{5} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x - 8\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x - 8)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x + 9)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} + 9x + c\\)",
+      "\\(-8x + 9 + c\\)",
+      "\\(-4x^{2} + 9x^{2} + c\\)",
+      "\\(-8x^{2} + 9x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int 9dx = 9x\\)\n\nSo the answer is \\(-4x^{2} + 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x + 1)\\,dx\\).",
+    "options": [
+      "\\(5x^{2} + x^{2} + c\\)",
+      "\\(5x^{2} + x + c\\)",
+      "\\(10x^{2} + x + c\\)",
+      "\\(10x + 1 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int 1dx = x\\)\n\nSo the answer is \\(5x^{2} + x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 3)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 3)^{5}}{5} + c\\)",
+      "\\(\\frac{(2x + 3)^{5}}{10} + c\\)",
+      "\\((2x + 3)^{5} + c\\)",
+      "\\(\\frac{(2x + 3)^{4}}{10} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 3\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{4}\\frac{du}{2} = \\frac{u^{5}}{2(5)} + c\\)\n\n\\(= \\frac{(2x + 3)^{5}}{10} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (-6x^{2} + 2x + 2)\\,dx\\).",
+    "options": [
+      "-216",
+      "-432",
+      "-214",
+      "216"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-6x^{2} + 2x + 2)dx = -2x^{3} + x^{2} + 2x\\)\n\nAt \\(x = 5\\): \\(-215\\)\n\nAt \\(x = 1\\): \\(1\\)\n\nDifference \\(= -216\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 1)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} + x + c\\)",
+      "\\(-2x + 1 + c\\)",
+      "\\(-x^{2} + x^{2} + c\\)",
+      "\\(-2x^{2} + x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 1dx = x\\)\n\nSo the answer is \\(-x^{2} + x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (6x^{2} + 4x + 5)\\,dx\\).",
+    "options": [
+      "568",
+      "500",
+      "1000",
+      "-500"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (6x^{2} + 4x + 5)dx = 2x^{3} + 2x^{2} + 5x\\)\n\nAt \\(x = 6\\): \\(534\\)\n\nAt \\(x = 2\\): \\(34\\)\n\nDifference \\(= 500\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 1)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 1)^{2}}{18} + c\\)",
+      "\\((6x - 1)^{3} + c\\)",
+      "\\(\\frac{(6x - 1)^{3}}{18} + c\\)",
+      "\\(\\frac{(6x - 1)^{3}}{3} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 6x - 1\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{2}\\frac{du}{6} = \\frac{u^{3}}{6(3)} + c\\)\n\n\\(= \\frac{(6x - 1)^{3}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 8)^{4}\\,dx\\).",
+    "options": [
+      "\\((5x - 8)^{5} + c\\)",
+      "\\(\\frac{(5x - 8)^{5}}{5} + c\\)",
+      "\\(\\frac{(5x - 8)^{5}}{25} + c\\)",
+      "\\(\\frac{(5x - 8)^{4}}{25} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 5x - 8\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x - 8)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 4)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 4)^{3}}{18} + c\\)",
+      "\\(\\frac{(6x + 4)^{2}}{18} + c\\)",
+      "\\(\\frac{(6x + 4)^{3}}{3} + c\\)",
+      "\\((6x + 4)^{3} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x + 4\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{2}\\frac{du}{6} = \\frac{u^{3}}{6(3)} + c\\)\n\n\\(= \\frac{(6x + 4)^{3}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (9x^{2} + 4x + 6)\\,dx\\).",
+    "options": [
+      "-204",
+      "408",
+      "292",
+      "204"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} + 4x + 6)dx = 3x^{3} + 2x^{2} + 6x\\)\n\nAt \\(x = 4\\): \\(248\\)\n\nAt \\(x = 2\\): \\(44\\)\n\nDifference \\(= 204\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (3x^{2} + 6x - 1)\\,dx\\).",
+    "options": [
+      "54",
+      "48",
+      "-48",
+      "96"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (3x^{2} + 6x - 1)dx = x^{3} + 3x^{2} - x\\)\n\nAt \\(x = 3\\): \\(51\\)\n\nAt \\(x = 1\\): \\(3\\)\n\nDifference \\(= 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x + 5)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + 5x + c\\)",
+      "\\(2x^{2} + 5x^{2} + c\\)",
+      "\\(2x^{2} + 5x + c\\)",
+      "\\(4x + 5 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(2x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 6)^{5}\\,dx\\).",
+    "options": [
+      "\\((2x - 6)^{6} + c\\)",
+      "\\(\\frac{(2x - 6)^{6}}{6} + c\\)",
+      "\\(\\frac{(2x - 6)^{5}}{12} + c\\)",
+      "\\(\\frac{(2x - 6)^{6}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 2x - 6\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x - 6)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 2)^{4}\\,dx\\).",
+    "options": [
+      "\\((4x + 2)^{5} + c\\)",
+      "\\(\\frac{(4x + 2)^{4}}{20} + c\\)",
+      "\\(\\frac{(4x + 2)^{5}}{5} + c\\)",
+      "\\(\\frac{(4x + 2)^{5}}{20} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x + 2\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x + 2)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 8)^{2}\\,dx\\).",
+    "options": [
+      "\\((6x - 8)^{3} + c\\)",
+      "\\(\\frac{(6x - 8)^{3}}{18} + c\\)",
+      "\\(\\frac{(6x - 8)^{3}}{3} + c\\)",
+      "\\(\\frac{(6x - 8)^{2}}{18} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x - 8\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{2}\\frac{du}{6} = \\frac{u^{3}}{6(3)} + c\\)\n\n\\(= \\frac{(6x - 8)^{3}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 4)\\,dx\\).",
+    "options": [
+      "\\(2x - 4 + c\\)",
+      "\\(x^{2} - 4x + c\\)",
+      "\\(2x^{2} - 4x + c\\)",
+      "\\(x^{2} - 4x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -4dx = -4x\\)\n\nSo the answer is \\(x^{2} - 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (-3x^{2} - 6x - 1)\\,dx\\).",
+    "options": [
+      "17",
+      "-17",
+      "-34",
+      "-27"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-3x^{2} - 6x - 1)dx = -x^{3} - 3x^{2} - x\\)\n\nAt \\(x = 2\\): \\(-22\\)\n\nAt \\(x = 1\\): \\(-5\\)\n\nDifference \\(= -17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 4)\\,dx\\).",
+    "options": [
+      "\\(-2x + 4 + c\\)",
+      "\\(-x^{2} + 4x^{2} + c\\)",
+      "\\(-x^{2} + 4x + c\\)",
+      "\\(-2x^{2} + 4x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(-x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (-3x^{2} - 2x + 4)\\,dx\\).",
+    "options": [
+      "132",
+      "-132",
+      "-128",
+      "-264"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-3x^{2} - 2x + 4)dx = -x^{3} - x^{2} + 4x\\)\n\nAt \\(x = 5\\): \\(-130\\)\n\nAt \\(x = 1\\): \\(2\\)\n\nDifference \\(= -132\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (-3x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "-76",
+      "-38",
+      "-34",
+      "38"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-3x^{2} + 2x + 3)dx = -x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 4\\): \\(-36\\)\n\nAt \\(x = 2\\): \\(2\\)\n\nDifference \\(= -38\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 6)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 6)^{4}}{20} + c\\)",
+      "\\(\\frac{(4x - 6)^{5}}{20} + c\\)",
+      "\\(\\frac{(4x - 6)^{5}}{5} + c\\)",
+      "\\((4x - 6)^{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x - 6\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x - 6)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (-3x^{2} + 2x - 6)\\,dx\\).",
+    "options": [
+      "-20",
+      "-40",
+      "-52",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-3x^{2} + 2x - 6)dx = -x^{3} + x^{2} - 6x\\)\n\nAt \\(x = 3\\): \\(-36\\)\n\nAt \\(x = 2\\): \\(-16\\)\n\nDifference \\(= -20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x + 5)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} + 5x + c\\)",
+      "\\(2x + 5 + c\\)",
+      "\\(x^{2} + 5x + c\\)",
+      "\\(x^{2} + 5x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x + 4)\\,dx\\).",
+    "options": [
+      "\\(5x^{2} + 4x^{2} + c\\)",
+      "\\(10x + 4 + c\\)",
+      "\\(5x^{2} + 4x + c\\)",
+      "\\(10x^{2} + 4x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(5x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x + 4)\\,dx\\).",
+    "options": [
+      "\\(x^{2} + 4x + c\\)",
+      "\\(2x + 4 + c\\)",
+      "\\(2x^{2} + 4x + c\\)",
+      "\\(x^{2} + 4x^{2} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x - 6)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} - 6x^{2} + c\\)",
+      "\\(-4x^{2} - 6x + c\\)",
+      "\\(-8x^{2} - 6x + c\\)",
+      "\\(-8x - 6 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int -6dx = -6x\\)\n\nSo the answer is \\(-4x^{2} - 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 4)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 4)^{3}}{3} + c\\)",
+      "\\((4x + 4)^{3} + c\\)",
+      "\\(\\frac{(4x + 4)^{2}}{12} + c\\)",
+      "\\(\\frac{(4x + 4)^{3}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x + 4\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{2}\\frac{du}{4} = \\frac{u^{3}}{4(3)} + c\\)\n\n\\(= \\frac{(4x + 4)^{3}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 6)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x - 6)^{3}}{3} + c\\)",
+      "\\(\\frac{(2x - 6)^{3}}{6} + c\\)",
+      "\\((2x - 6)^{3} + c\\)",
+      "\\(\\frac{(2x - 6)^{2}}{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x - 6\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{2}\\frac{du}{2} = \\frac{u^{3}}{2(3)} + c\\)\n\n\\(= \\frac{(2x - 6)^{3}}{6} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x - 4)\\,dx\\).",
+    "options": [
+      "\\(-8x^{2} - 4x + c\\)",
+      "\\(-8x - 4 + c\\)",
+      "\\(-4x^{2} - 4x^{2} + c\\)",
+      "\\(-4x^{2} - 4x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int -4dx = -4x\\)\n\nSo the answer is \\(-4x^{2} - 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 2)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} + 2x + c\\)",
+      "\\(-2x^{2} + 2x + c\\)",
+      "\\(-x^{2} + 2x^{2} + c\\)",
+      "\\(-2x + 2 + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 2dx = 2x\\)\n\nSo the answer is \\(-x^{2} + 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 8)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} - 8x + c\\)",
+      "\\(x^{2} - 8x + c\\)",
+      "\\(2x - 8 + c\\)",
+      "\\(x^{2} - 8x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -8dx = -8x\\)\n\nSo the answer is \\(x^{2} - 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 8)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 8)^{3}}{9} + c\\)",
+      "\\(\\frac{(3x + 8)^{3}}{3} + c\\)",
+      "\\(\\frac{(3x + 8)^{2}}{9} + c\\)",
+      "\\((3x + 8)^{3} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x + 8\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{2}\\frac{du}{3} = \\frac{u^{3}}{3(3)} + c\\)\n\n\\(= \\frac{(3x + 8)^{3}}{9} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 3)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 3)^{4}}{20} + c\\)",
+      "\\(\\frac{(4x - 3)^{5}}{5} + c\\)",
+      "\\(\\frac{(4x - 3)^{5}}{20} + c\\)",
+      "\\((4x - 3)^{5} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 4x - 3\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x - 3)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 7)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 7)^{6}}{36} + c\\)",
+      "\\(\\frac{(6x - 7)^{6}}{6} + c\\)",
+      "\\((6x - 7)^{6} + c\\)",
+      "\\(\\frac{(6x - 7)^{5}}{36} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x - 7\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x - 7)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 6)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 6)^{5}}{5} + c\\)",
+      "\\(\\frac{(3x - 6)^{5}}{15} + c\\)",
+      "\\(\\frac{(3x - 6)^{4}}{15} + c\\)",
+      "\\((3x - 6)^{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 3x - 6\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x - 6)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (3x^{2} + 6x + 4)\\,dx\\).",
+    "options": [
+      "40",
+      "36",
+      "20",
+      "-20"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (3x^{2} + 6x + 4)dx = x^{3} + 3x^{2} + 4x\\)\n\nAt \\(x = 2\\): \\(28\\)\n\nAt \\(x = 1\\): \\(8\\)\n\nDifference \\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (-6x^{2} + 2x - 5)\\,dx\\).",
+    "options": [
+      "404",
+      "-404",
+      "-448",
+      "-808"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-6x^{2} + 2x - 5)dx = -2x^{3} + x^{2} - 5x\\)\n\nAt \\(x = 6\\): \\(-426\\)\n\nAt \\(x = 2\\): \\(-22\\)\n\nDifference \\(= -404\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 8)^{5}\\,dx\\).",
+    "options": [
+      "\\((4x + 8)^{6} + c\\)",
+      "\\(\\frac{(4x + 8)^{6}}{24} + c\\)",
+      "\\(\\frac{(4x + 8)^{6}}{6} + c\\)",
+      "\\(\\frac{(4x + 8)^{5}}{24} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x + 8\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x + 8)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (6x^{2} + 6x + 2)\\,dx\\).",
+    "options": [
+      "-152",
+      "304",
+      "152",
+      "216"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} + 6x + 2)dx = 2x^{3} + 3x^{2} + 2x\\)\n\nAt \\(x = 4\\): \\(184\\)\n\nAt \\(x = 2\\): \\(32\\)\n\nDifference \\(= 152\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 9)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} + 9x + c\\)",
+      "\\(-x^{2} + 9x^{2} + c\\)",
+      "\\(-2x + 9 + c\\)",
+      "\\(-2x^{2} + 9x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 9dx = 9x\\)\n\nSo the answer is \\(-x^{2} + 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (-6x^{2} - 4x - 6)\\,dx\\).",
+    "options": [
+      "-296",
+      "-220",
+      "-148",
+      "148"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-6x^{2} - 4x - 6)dx = -2x^{3} - 2x^{2} - 6x\\)\n\nAt \\(x = 4\\): \\(-184\\)\n\nAt \\(x = 2\\): \\(-36\\)\n\nDifference \\(= -148\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x - 2)\\,dx\\).",
+    "options": [
+      "\\(-2x - 2 + c\\)",
+      "\\(-x^{2} - 2x^{2} + c\\)",
+      "\\(-x^{2} - 2x + c\\)",
+      "\\(-2x^{2} - 2x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int -2dx = -2x\\)\n\nSo the answer is \\(-x^{2} - 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (9x^{2} - 2x - 1)\\,dx\\).",
+    "options": [
+      "-344",
+      "688",
+      "346",
+      "344"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} - 2x - 1)dx = 3x^{3} - x^{2} - x\\)\n\nAt \\(x = 5\\): \\(345\\)\n\nAt \\(x = 1\\): \\(1\\)\n\nDifference \\(= 344\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 5)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} - 5x^{2} + c\\)",
+      "\\(-2x^{2} - 5x + c\\)",
+      "\\(-4x^{2} - 5x + c\\)",
+      "\\(-4x - 5 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -5dx = -5x\\)\n\nSo the answer is \\(-2x^{2} - 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x - 3)\\,dx\\).",
+    "options": [
+      "\\(8x - 3 + c\\)",
+      "\\(4x^{2} - 3x^{2} + c\\)",
+      "\\(8x^{2} - 3x + c\\)",
+      "\\(4x^{2} - 3x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int -3dx = -3x\\)\n\nSo the answer is \\(4x^{2} - 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x - 6)\\,dx\\).",
+    "options": [
+      "\\(4x - 6 + c\\)",
+      "\\(2x^{2} - 6x + c\\)",
+      "\\(2x^{2} - 6x^{2} + c\\)",
+      "\\(4x^{2} - 6x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int -6dx = -6x\\)\n\nSo the answer is \\(2x^{2} - 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (-3x^{2} + 4x + 4)\\,dx\\).",
+    "options": [
+      "128",
+      "-256",
+      "-112",
+      "-128"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-3x^{2} + 4x + 4)dx = -x^{3} + 2x^{2} + 4x\\)\n\nAt \\(x = 6\\): \\(-120\\)\n\nAt \\(x = 2\\): \\(8\\)\n\nDifference \\(= -128\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 4)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 4)^{4}}{4} + c\\)",
+      "\\((5x + 4)^{4} + c\\)",
+      "\\(\\frac{(5x + 4)^{3}}{20} + c\\)",
+      "\\(\\frac{(5x + 4)^{4}}{20} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 5x + 4\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{3}\\frac{du}{5} = \\frac{u^{4}}{5(4)} + c\\)\n\n\\(= \\frac{(5x + 4)^{4}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 4)^{4}\\,dx\\).",
+    "options": [
+      "\\((4x - 4)^{5} + c\\)",
+      "\\(\\frac{(4x - 4)^{4}}{20} + c\\)",
+      "\\(\\frac{(4x - 4)^{5}}{20} + c\\)",
+      "\\(\\frac{(4x - 4)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 4x - 4\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x - 4)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (6x^{2} + 2x - 2)\\,dx\\).",
+    "options": [
+      "281",
+      "498",
+      "249",
+      "-249"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} + 2x - 2)dx = 2x^{3} + x^{2} - 2x\\)\n\nAt \\(x = 5\\): \\(265\\)\n\nAt \\(x = 2\\): \\(16\\)\n\nDifference \\(= 249\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (9x^{2} + 6x - 3)\\,dx\\).",
+    "options": [
+      "69",
+      "-69",
+      "129",
+      "138"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (9x^{2} + 6x - 3)dx = 3x^{3} + 3x^{2} - 3x\\)\n\nAt \\(x = 3\\): \\(99\\)\n\nAt \\(x = 2\\): \\(30\\)\n\nDifference \\(= 69\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (6x^{2} + 4x + 6)\\,dx\\).",
+    "options": [
+      "80",
+      "-80",
+      "100",
+      "160"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (6x^{2} + 4x + 6)dx = 2x^{3} + 2x^{2} + 6x\\)\n\nAt \\(x = 3\\): \\(90\\)\n\nAt \\(x = 1\\): \\(10\\)\n\nDifference \\(= 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{4} (3x^{2} - 2x + 3)\\,dx\\).",
+    "options": [
+      "114",
+      "57",
+      "63",
+      "-57"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (3x^{2} - 2x + 3)dx = x^{3} - x^{2} + 3x\\)\n\nAt \\(x = 4\\): \\(60\\)\n\nAt \\(x = 1\\): \\(3\\)\n\nDifference \\(= 57\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 6)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 6)^{4}}{12} + c\\)",
+      "\\((3x + 6)^{4} + c\\)",
+      "\\(\\frac{(3x + 6)^{4}}{4} + c\\)",
+      "\\(\\frac{(3x + 6)^{3}}{12} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x + 6\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{3}\\frac{du}{3} = \\frac{u^{4}}{3(4)} + c\\)\n\n\\(= \\frac{(3x + 6)^{4}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (6x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "-264",
+      "264",
+      "316",
+      "528"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (6x^{2} + 2x + 3)dx = 2x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 5\\): \\(290\\)\n\nAt \\(x = 2\\): \\(26\\)\n\nDifference \\(= 264\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (-6x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "-8",
+      "-4",
+      "8",
+      "-16"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-6x^{2} + 2x + 3)dx = -2x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 2\\): \\(-6\\)\n\nAt \\(x = 1\\): \\(2\\)\n\nDifference \\(= -8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 2)\\,dx\\).",
+    "options": [
+      "\\(-4x + 2 + c\\)",
+      "\\(-2x^{2} + 2x^{2} + c\\)",
+      "\\(-2x^{2} + 2x + c\\)",
+      "\\(-4x^{2} + 2x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 2dx = 2x\\)\n\nSo the answer is \\(-2x^{2} + 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-6x^{2} + 2x + 4)\\,dx\\).",
+    "options": [
+      "201",
+      "-402",
+      "-201",
+      "-209"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-6x^{2} + 2x + 4)dx = -2x^{3} + x^{2} + 4x\\)\n\nAt \\(x = 5\\): \\(-205\\)\n\nAt \\(x = 2\\): \\(-4\\)\n\nDifference \\(= -201\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x + 3)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} + 3x^{2} + c\\)",
+      "\\(2x^{2} + 3x + c\\)",
+      "\\(4x^{2} + 3x + c\\)",
+      "\\(4x + 3 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(2x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (-3x^{2} + 6x - 1)\\,dx\\).",
+    "options": [
+      "-112",
+      "56",
+      "-54",
+      "-56"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-3x^{2} + 6x - 1)dx = -x^{3} + 3x^{2} - x\\)\n\nAt \\(x = 5\\): \\(-55\\)\n\nAt \\(x = 1\\): \\(1\\)\n\nDifference \\(= -56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 5)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 5)^{4}}{4} + c\\)",
+      "\\(\\frac{(4x - 5)^{4}}{16} + c\\)",
+      "\\(\\frac{(4x - 5)^{3}}{16} + c\\)",
+      "\\((4x - 5)^{4} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x - 5\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{3}\\frac{du}{4} = \\frac{u^{4}}{4(4)} + c\\)\n\n\\(= \\frac{(4x - 5)^{4}}{16} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (9x^{2} + 2x + 4)\\,dx\\).",
+    "options": [
+      "824",
+      "412",
+      "428",
+      "-412"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (9x^{2} + 2x + 4)dx = 3x^{3} + x^{2} + 4x\\)\n\nAt \\(x = 5\\): \\(420\\)\n\nAt \\(x = 1\\): \\(8\\)\n\nDifference \\(= 412\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (6x^{2} - 2x - 4)\\,dx\\).",
+    "options": [
+      "1",
+      "14",
+      "7",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} - 2x - 4)dx = 2x^{3} - x^{2} - 4x\\)\n\nAt \\(x = 2\\): \\(4\\)\n\nAt \\(x = 1\\): \\(-3\\)\n\nDifference \\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 4)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} + 4x + c\\)",
+      "\\(-2x^{2} + 4x^{2} + c\\)",
+      "\\(-4x + 4 + c\\)",
+      "\\(-2x^{2} + 4x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(-2x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 3)^{5}\\,dx\\).",
+    "options": [
+      "\\((2x + 3)^{6} + c\\)",
+      "\\(\\frac{(2x + 3)^{6}}{12} + c\\)",
+      "\\(\\frac{(2x + 3)^{6}}{6} + c\\)",
+      "\\(\\frac{(2x + 3)^{5}}{12} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 3\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x + 3)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 3)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 3)^{3}}{12} + c\\)",
+      "\\(\\frac{(3x + 3)^{4}}{4} + c\\)",
+      "\\((3x + 3)^{4} + c\\)",
+      "\\(\\frac{(3x + 3)^{4}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x + 3\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{3}\\frac{du}{3} = \\frac{u^{4}}{3(4)} + c\\)\n\n\\(= \\frac{(3x + 3)^{4}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 6)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} - 6x + c\\)",
+      "\\(-2x^{2} - 6x^{2} + c\\)",
+      "\\(-4x - 6 + c\\)",
+      "\\(-4x^{2} - 6x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -6dx = -6x\\)\n\nSo the answer is \\(-2x^{2} - 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x - 4)\\,dx\\).",
+    "options": [
+      "\\(6x^{2} - 4x + c\\)",
+      "\\(3x^{2} - 4x^{2} + c\\)",
+      "\\(3x^{2} - 4x + c\\)",
+      "\\(6x - 4 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int -4dx = -4x\\)\n\nSo the answer is \\(3x^{2} - 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x - 1)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x - 1)^{4}}{20} + c\\)",
+      "\\((4x - 1)^{5} + c\\)",
+      "\\(\\frac{(4x - 1)^{5}}{5} + c\\)",
+      "\\(\\frac{(4x - 1)^{5}}{20} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x - 1\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x - 1)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (6x^{2} - 2x - 4)\\,dx\\).",
+    "options": [
+      "58",
+      "-29",
+      "29",
+      "37"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} - 2x - 4)dx = 2x^{3} - x^{2} - 4x\\)\n\nAt \\(x = 3\\): \\(33\\)\n\nAt \\(x = 2\\): \\(4\\)\n\nDifference \\(= 29\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 5)^{2}\\,dx\\).",
+    "options": [
+      "\\((3x - 5)^{3} + c\\)",
+      "\\(\\frac{(3x - 5)^{3}}{3} + c\\)",
+      "\\(\\frac{(3x - 5)^{3}}{9} + c\\)",
+      "\\(\\frac{(3x - 5)^{2}}{9} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x - 5\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{2}\\frac{du}{3} = \\frac{u^{3}}{3(3)} + c\\)\n\n\\(= \\frac{(3x - 5)^{3}}{9} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x + 3)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} + 3x + c\\)",
+      "\\(-x^{2} + 3x^{2} + c\\)",
+      "\\(-x^{2} + 3x + c\\)",
+      "\\(-2x + 3 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(-x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x - 2)\\,dx\\).",
+    "options": [
+      "\\(5x^{2} - 2x + c\\)",
+      "\\(10x^{2} - 2x + c\\)",
+      "\\(5x^{2} - 2x^{2} + c\\)",
+      "\\(10x - 2 + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int -2dx = -2x\\)\n\nSo the answer is \\(5x^{2} - 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 6)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 6)^{4}}{24} + c\\)",
+      "\\(\\frac{(6x + 6)^{4}}{4} + c\\)",
+      "\\(\\frac{(6x + 6)^{3}}{24} + c\\)",
+      "\\((6x + 6)^{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x + 6\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{3}\\frac{du}{6} = \\frac{u^{4}}{6(4)} + c\\)\n\n\\(= \\frac{(6x + 6)^{4}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (-3x^{2} - 6x + 5)\\,dx\\).",
+    "options": [
+      "-102",
+      "-164",
+      "-82",
+      "82"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-3x^{2} - 6x + 5)dx = -x^{3} - 3x^{2} + 5x\\)\n\nAt \\(x = 4\\): \\(-92\\)\n\nAt \\(x = 2\\): \\(-10\\)\n\nDifference \\(= -82\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x + 7)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} + 7x^{2} + c\\)",
+      "\\(-2x^{2} + 7x + c\\)",
+      "\\(-4x + 7 + c\\)",
+      "\\(-4x^{2} + 7x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int 7dx = 7x\\)\n\nSo the answer is \\(-2x^{2} + 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x + 6)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} + 6x + c\\)",
+      "\\(-4x^{2} + 6x^{2} + c\\)",
+      "\\(-8x + 6 + c\\)",
+      "\\(-8x^{2} + 6x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int 6dx = 6x\\)\n\nSo the answer is \\(-4x^{2} + 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 8)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 8)^{6}}{6} + c\\)",
+      "\\(\\frac{(3x + 8)^{6}}{18} + c\\)",
+      "\\(\\frac{(3x + 8)^{5}}{18} + c\\)",
+      "\\((3x + 8)^{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 3x + 8\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x + 8)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x - 5)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} - 5x^{2} + c\\)",
+      "\\(8x - 5 + c\\)",
+      "\\(4x^{2} - 5x + c\\)",
+      "\\(8x^{2} - 5x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int -5dx = -5x\\)\n\nSo the answer is \\(4x^{2} - 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x + 9)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + 9x + c\\)",
+      "\\(4x + 9 + c\\)",
+      "\\(2x^{2} + 9x + c\\)",
+      "\\(2x^{2} + 9x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int 9dx = 9x\\)\n\nSo the answer is \\(2x^{2} + 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 5)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 5)^{5}}{5} + c\\)",
+      "\\(\\frac{(2x + 5)^{5}}{10} + c\\)",
+      "\\((2x + 5)^{5} + c\\)",
+      "\\(\\frac{(2x + 5)^{4}}{10} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 5\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{4}\\frac{du}{2} = \\frac{u^{5}}{2(5)} + c\\)\n\n\\(= \\frac{(2x + 5)^{5}}{10} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 7)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 7)^{3}}{6} + c\\)",
+      "\\(\\frac{(2x + 7)^{3}}{3} + c\\)",
+      "\\(\\frac{(2x + 7)^{2}}{6} + c\\)",
+      "\\((2x + 7)^{3} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 2x + 7\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{2}\\frac{du}{2} = \\frac{u^{3}}{2(3)} + c\\)\n\n\\(= \\frac{(2x + 7)^{3}}{6} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 1)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 1)^{5}}{5} + c\\)",
+      "\\(\\frac{(3x - 1)^{4}}{15} + c\\)",
+      "\\((3x - 1)^{5} + c\\)",
+      "\\(\\frac{(3x - 1)^{5}}{15} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x - 1\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x - 1)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{4} (-6x^{2} + 4x - 4)\\,dx\\).",
+    "options": [
+      "-108",
+      "108",
+      "-216",
+      "-116"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-6x^{2} + 4x - 4)dx = -2x^{3} + 2x^{2} - 4x\\)\n\nAt \\(x = 4\\): \\(-112\\)\n\nAt \\(x = 1\\): \\(-4\\)\n\nDifference \\(= -108\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (3x^{2} - 6x - 3)\\,dx\\).",
+    "options": [
+      "40",
+      "-40",
+      "30",
+      "80"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} - 6x - 3)dx = x^{3} - 3x^{2} - 3x\\)\n\nAt \\(x = 5\\): \\(35\\)\n\nAt \\(x = 1\\): \\(-5\\)\n\nDifference \\(= 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 1)^{3}\\,dx\\).",
+    "options": [
+      "\\((2x + 1)^{4} + c\\)",
+      "\\(\\frac{(2x + 1)^{4}}{8} + c\\)",
+      "\\(\\frac{(2x + 1)^{3}}{8} + c\\)",
+      "\\(\\frac{(2x + 1)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 1\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{3}\\frac{du}{2} = \\frac{u^{4}}{2(4)} + c\\)\n\n\\(= \\frac{(2x + 1)^{4}}{8} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 1)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 1)^{6}}{6} + c\\)",
+      "\\((3x - 1)^{6} + c\\)",
+      "\\(\\frac{(3x - 1)^{6}}{18} + c\\)",
+      "\\(\\frac{(3x - 1)^{5}}{18} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x - 1\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x - 1)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 2)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 2)^{4}}{24} + c\\)",
+      "\\((6x - 2)^{4} + c\\)",
+      "\\(\\frac{(6x - 2)^{3}}{24} + c\\)",
+      "\\(\\frac{(6x - 2)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x - 2\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{3}\\frac{du}{6} = \\frac{u^{4}}{6(4)} + c\\)\n\n\\(= \\frac{(6x - 2)^{4}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 8)^{4}\\,dx\\).",
+    "options": [
+      "\\((4x + 8)^{5} + c\\)",
+      "\\(\\frac{(4x + 8)^{5}}{20} + c\\)",
+      "\\(\\frac{(4x + 8)^{4}}{20} + c\\)",
+      "\\(\\frac{(4x + 8)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x + 8\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x + 8)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 1)^{4}\\,dx\\).",
+    "options": [
+      "\\((5x + 1)^{5} + c\\)",
+      "\\(\\frac{(5x + 1)^{5}}{5} + c\\)",
+      "\\(\\frac{(5x + 1)^{4}}{25} + c\\)",
+      "\\(\\frac{(5x + 1)^{5}}{25} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 5x + 1\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x + 1)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (9x^{2} - 6x + 1)\\,dx\\).",
+    "options": [
+      "162",
+      "268",
+      "134",
+      "-134"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (9x^{2} - 6x + 1)dx = 3x^{3} - 3x^{2} + x\\)\n\nAt \\(x = 4\\): \\(148\\)\n\nAt \\(x = 2\\): \\(14\\)\n\nDifference \\(= 134\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x - 3)\\,dx\\).",
+    "options": [
+      "\\(-8x^{2} - 3x + c\\)",
+      "\\(-8x - 3 + c\\)",
+      "\\(-4x^{2} - 3x^{2} + c\\)",
+      "\\(-4x^{2} - 3x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int -3dx = -3x\\)\n\nSo the answer is \\(-4x^{2} - 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 7)^{5}\\,dx\\).",
+    "options": [
+      "\\((3x - 7)^{6} + c\\)",
+      "\\(\\frac{(3x - 7)^{5}}{18} + c\\)",
+      "\\(\\frac{(3x - 7)^{6}}{18} + c\\)",
+      "\\(\\frac{(3x - 7)^{6}}{6} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 3x - 7\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x - 7)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x - 8)\\,dx\\).",
+    "options": [
+      "\\(8x - 8 + c\\)",
+      "\\(8x^{2} - 8x + c\\)",
+      "\\(4x^{2} - 8x^{2} + c\\)",
+      "\\(4x^{2} - 8x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int -8dx = -8x\\)\n\nSo the answer is \\(4x^{2} - 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 9)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} - 9x^{2} + c\\)",
+      "\\(-2x^{2} - 9x + c\\)",
+      "\\(-4x - 9 + c\\)",
+      "\\(-4x^{2} - 9x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(-2x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 7)^{4}\\,dx\\).",
+    "options": [
+      "\\((4x + 7)^{5} + c\\)",
+      "\\(\\frac{(4x + 7)^{4}}{20} + c\\)",
+      "\\(\\frac{(4x + 7)^{5}}{20} + c\\)",
+      "\\(\\frac{(4x + 7)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 4x + 7\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x + 7)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (6x^{2} - 2x - 6)\\,dx\\).",
+    "options": [
+      "64",
+      "22",
+      "32",
+      "-32"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} - 2x - 6)dx = 2x^{3} - x^{2} - 6x\\)\n\nAt \\(x = 3\\): \\(27\\)\n\nAt \\(x = 1\\): \\(-5\\)\n\nDifference \\(= 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x + 4)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + 4x + c\\)",
+      "\\(8x + 4 + c\\)",
+      "\\(4x^{2} + 4x^{2} + c\\)",
+      "\\(8x^{2} + 4x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(4x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (3x^{2} - 6x + 1)\\,dx\\).",
+    "options": [
+      "1",
+      "-1",
+      "-3",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (3x^{2} - 6x + 1)dx = x^{3} - 3x^{2} + x\\)\n\nAt \\(x = 2\\): \\(-2\\)\n\nAt \\(x = 1\\): \\(-1\\)\n\nDifference \\(= -1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 2)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 2)^{5}}{18} + c\\)",
+      "\\(\\frac{(3x + 2)^{6}}{18} + c\\)",
+      "\\(\\frac{(3x + 2)^{6}}{6} + c\\)",
+      "\\((3x + 2)^{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 3x + 2\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x + 2)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (9x^{2} - 2x + 1)\\,dx\\).",
+    "options": [
+      "-158",
+      "158",
+      "202",
+      "316"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (9x^{2} - 2x + 1)dx = 3x^{3} - x^{2} + x\\)\n\nAt \\(x = 4\\): \\(180\\)\n\nAt \\(x = 2\\): \\(22\\)\n\nDifference \\(= 158\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x - 7)\\,dx\\).",
+    "options": [
+      "\\(-8x^{2} - 7x + c\\)",
+      "\\(-4x^{2} - 7x + c\\)",
+      "\\(-8x - 7 + c\\)",
+      "\\(-4x^{2} - 7x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(-4x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{5} (-3x^{2} - 4x - 1)\\,dx\\).",
+    "options": [
+      "162",
+      "-162",
+      "-198",
+      "-324"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-3x^{2} - 4x - 1)dx = -x^{3} - 2x^{2} - x\\)\n\nAt \\(x = 5\\): \\(-180\\)\n\nAt \\(x = 2\\): \\(-18\\)\n\nDifference \\(= -162\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 5)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 5)^{4}}{12} + c\\)",
+      "\\(\\frac{(3x - 5)^{4}}{4} + c\\)",
+      "\\(\\frac{(3x - 5)^{3}}{12} + c\\)",
+      "\\((3x - 5)^{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x - 5\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{3}\\frac{du}{3} = \\frac{u^{4}}{3(4)} + c\\)\n\n\\(= \\frac{(3x - 5)^{4}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 7)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} - 7x + c\\)",
+      "\\(-2x^{2} - 7x + c\\)",
+      "\\(-2x^{2} - 7x^{2} + c\\)",
+      "\\(-4x - 7 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(-2x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 7)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 7)^{4}}{24} + c\\)",
+      "\\(\\frac{(6x - 7)^{4}}{4} + c\\)",
+      "\\(\\frac{(6x - 7)^{3}}{24} + c\\)",
+      "\\((6x - 7)^{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x - 7\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{3}\\frac{du}{6} = \\frac{u^{4}}{6(4)} + c\\)\n\n\\(= \\frac{(6x - 7)^{4}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 4)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 4)^{5}}{5} + c\\)",
+      "\\((2x + 4)^{5} + c\\)",
+      "\\(\\frac{(2x + 4)^{4}}{10} + c\\)",
+      "\\(\\frac{(2x + 4)^{5}}{10} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 2x + 4\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{4}\\frac{du}{2} = \\frac{u^{5}}{2(5)} + c\\)\n\n\\(= \\frac{(2x + 4)^{5}}{10} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 7)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 7)^{3}}{9} + c\\)",
+      "\\((3x + 7)^{3} + c\\)",
+      "\\(\\frac{(3x + 7)^{3}}{3} + c\\)",
+      "\\(\\frac{(3x + 7)^{2}}{9} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x + 7\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{2}\\frac{du}{3} = \\frac{u^{3}}{3(3)} + c\\)\n\n\\(= \\frac{(3x + 7)^{3}}{9} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 4)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 4)^{5}}{30} + c\\)",
+      "\\(\\frac{(5x + 4)^{6}}{6} + c\\)",
+      "\\((5x + 4)^{6} + c\\)",
+      "\\(\\frac{(5x + 4)^{6}}{30} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 5x + 4\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{5}\\frac{du}{5} = \\frac{u^{6}}{5(6)} + c\\)\n\n\\(= \\frac{(5x + 4)^{6}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 2)^{4}\\,dx\\).",
+    "options": [
+      "\\((3x + 2)^{5} + c\\)",
+      "\\(\\frac{(3x + 2)^{5}}{5} + c\\)",
+      "\\(\\frac{(3x + 2)^{4}}{15} + c\\)",
+      "\\(\\frac{(3x + 2)^{5}}{15} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x + 2\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{4}\\frac{du}{3} = \\frac{u^{5}}{3(5)} + c\\)\n\n\\(= \\frac{(3x + 2)^{5}}{15} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{2} (9x^{2} - 2x + 5)\\,dx\\).",
+    "options": [
+      "-23",
+      "37",
+      "46",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (9x^{2} - 2x + 5)dx = 3x^{3} - x^{2} + 5x\\)\n\nAt \\(x = 2\\): \\(30\\)\n\nAt \\(x = 1\\): \\(7\\)\n\nDifference \\(= 23\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{4} (-6x^{2} - 6x + 1)\\,dx\\).",
+    "options": [
+      "-176",
+      "168",
+      "-336",
+      "-168"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-6x^{2} - 6x + 1)dx = -2x^{3} - 3x^{2} + x\\)\n\nAt \\(x = 4\\): \\(-172\\)\n\nAt \\(x = 1\\): \\(-4\\)\n\nDifference \\(= -168\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 3)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 3)^{3}}{16} + c\\)",
+      "\\(\\frac{(4x + 3)^{4}}{16} + c\\)",
+      "\\((4x + 3)^{4} + c\\)",
+      "\\(\\frac{(4x + 3)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 4x + 3\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{3}\\frac{du}{4} = \\frac{u^{4}}{4(4)} + c\\)\n\n\\(= \\frac{(4x + 3)^{4}}{16} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (6x^{2} + 6x - 3)\\,dx\\).",
+    "options": [
+      "94",
+      "-50",
+      "50",
+      "100"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (6x^{2} + 6x - 3)dx = 2x^{3} + 3x^{2} - 3x\\)\n\nAt \\(x = 3\\): \\(72\\)\n\nAt \\(x = 2\\): \\(22\\)\n\nDifference \\(= 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x + 5)\\,dx\\).",
+    "options": [
+      "\\(-3x^{2} + 5x^{2} + c\\)",
+      "\\(-6x^{2} + 5x + c\\)",
+      "\\(-3x^{2} + 5x + c\\)",
+      "\\(-6x + 5 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(-3x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (-6x^{2} + 6x - 5)\\,dx\\).",
+    "options": [
+      "-86",
+      "86",
+      "-172",
+      "-114"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-6x^{2} + 6x - 5)dx = -2x^{3} + 3x^{2} - 5x\\)\n\nAt \\(x = 4\\): \\(-100\\)\n\nAt \\(x = 2\\): \\(-14\\)\n\nDifference \\(= -86\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 2)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 2)^{5}}{30} + c\\)",
+      "\\(\\frac{(6x + 2)^{5}}{5} + c\\)",
+      "\\(\\frac{(6x + 2)^{4}}{30} + c\\)",
+      "\\((6x + 2)^{5} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x + 2\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{4}\\frac{du}{6} = \\frac{u^{5}}{6(5)} + c\\)\n\n\\(= \\frac{(6x + 2)^{5}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (3x^{2} - 2x - 1)\\,dx\\).",
+    "options": [
+      "96",
+      "94",
+      "-96",
+      "192"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (3x^{2} - 2x - 1)dx = x^{3} - x^{2} - x\\)\n\nAt \\(x = 5\\): \\(95\\)\n\nAt \\(x = 1\\): \\(-1\\)\n\nDifference \\(= 96\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (9x^{2} + 2x - 1)\\,dx\\).",
+    "options": [
+      "1304",
+      "652",
+      "-652",
+      "704"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (9x^{2} + 2x - 1)dx = 3x^{3} + x^{2} - x\\)\n\nAt \\(x = 6\\): \\(678\\)\n\nAt \\(x = 2\\): \\(26\\)\n\nDifference \\(= 652\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{4} (3x^{2} + 4x + 1)\\,dx\\).",
+    "options": [
+      "164",
+      "-82",
+      "82",
+      "118"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (3x^{2} + 4x + 1)dx = x^{3} + 2x^{2} + x\\)\n\nAt \\(x = 4\\): \\(100\\)\n\nAt \\(x = 2\\): \\(18\\)\n\nDifference \\(= 82\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 2)^{5}\\,dx\\).",
+    "options": [
+      "\\((6x + 2)^{6} + c\\)",
+      "\\(\\frac{(6x + 2)^{5}}{36} + c\\)",
+      "\\(\\frac{(6x + 2)^{6}}{6} + c\\)",
+      "\\(\\frac{(6x + 2)^{6}}{36} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 6x + 2\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{5}\\frac{du}{6} = \\frac{u^{6}}{6(6)} + c\\)\n\n\\(= \\frac{(6x + 2)^{6}}{36} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (-6x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "-372",
+      "-384",
+      "372",
+      "-744"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (-6x^{2} + 2x + 3)dx = -2x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 6\\): \\(-378\\)\n\nAt \\(x = 2\\): \\(-6\\)\n\nDifference \\(= -372\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (10x - 7)\\,dx\\).",
+    "options": [
+      "\\(10x^{2} - 7x + c\\)",
+      "\\(5x^{2} - 7x + c\\)",
+      "\\(10x - 7 + c\\)",
+      "\\(5x^{2} - 7x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 10xdx = 5x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(5x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (3x^{2} - 4x - 1)\\,dx\\).",
+    "options": [
+      "280",
+      "136",
+      "140",
+      "-140"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (3x^{2} - 4x - 1)dx = x^{3} - 2x^{2} - x\\)\n\nAt \\(x = 6\\): \\(138\\)\n\nAt \\(x = 2\\): \\(-2\\)\n\nDifference \\(= 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 4)^{2}\\,dx\\).",
+    "options": [
+      "\\((6x - 4)^{3} + c\\)",
+      "\\(\\frac{(6x - 4)^{2}}{18} + c\\)",
+      "\\(\\frac{(6x - 4)^{3}}{3} + c\\)",
+      "\\(\\frac{(6x - 4)^{3}}{18} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 6x - 4\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{2}\\frac{du}{6} = \\frac{u^{3}}{6(3)} + c\\)\n\n\\(= \\frac{(6x - 4)^{3}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 3)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 3)^{6}}{24} + c\\)",
+      "\\(\\frac{(4x + 3)^{6}}{6} + c\\)",
+      "\\((4x + 3)^{6} + c\\)",
+      "\\(\\frac{(4x + 3)^{5}}{24} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 4x + 3\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x + 3)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 3)^{5}\\,dx\\).",
+    "options": [
+      "\\((2x - 3)^{6} + c\\)",
+      "\\(\\frac{(2x - 3)^{6}}{12} + c\\)",
+      "\\(\\frac{(2x - 3)^{6}}{6} + c\\)",
+      "\\(\\frac{(2x - 3)^{5}}{12} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x - 3\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x - 3)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (9x^{2} - 6x - 3)\\,dx\\).",
+    "options": [
+      "-39",
+      "78",
+      "39",
+      "51"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (9x^{2} - 6x - 3)dx = 3x^{3} - 3x^{2} - 3x\\)\n\nAt \\(x = 3\\): \\(45\\)\n\nAt \\(x = 2\\): \\(6\\)\n\nDifference \\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 6)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 6)^{3}}{3} + c\\)",
+      "\\((3x + 6)^{3} + c\\)",
+      "\\(\\frac{(3x + 6)^{2}}{9} + c\\)",
+      "\\(\\frac{(3x + 6)^{3}}{9} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x + 6\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{2}\\frac{du}{3} = \\frac{u^{3}}{3(3)} + c\\)\n\n\\(= \\frac{(3x + 6)^{3}}{9} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-4x - 3)\\,dx\\).",
+    "options": [
+      "\\(-2x^{2} - 3x + c\\)",
+      "\\(-2x^{2} - 3x^{2} + c\\)",
+      "\\(-4x^{2} - 3x + c\\)",
+      "\\(-4x - 3 + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -4xdx = -2x^{2}\\)\n\n\\(\\int -3dx = -3x\\)\n\nSo the answer is \\(-2x^{2} - 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x + 7)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x + 7)^{5}}{5} + c\\)",
+      "\\(\\frac{(6x + 7)^{5}}{30} + c\\)",
+      "\\(\\frac{(6x + 7)^{4}}{30} + c\\)",
+      "\\((6x + 7)^{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 6x + 7\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{4}\\frac{du}{6} = \\frac{u^{5}}{6(5)} + c\\)\n\n\\(= \\frac{(6x + 7)^{5}}{30} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x + 4)\\,dx\\).",
+    "options": [
+      "\\(3x^{2} + 4x + c\\)",
+      "\\(3x^{2} + 4x^{2} + c\\)",
+      "\\(6x + 4 + c\\)",
+      "\\(6x^{2} + 4x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int 4dx = 4x\\)\n\nSo the answer is \\(3x^{2} + 4x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x - 5)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x - 5)^{6}}{6} + c\\)",
+      "\\(\\frac{(2x - 5)^{5}}{12} + c\\)",
+      "\\((2x - 5)^{6} + c\\)",
+      "\\(\\frac{(2x - 5)^{6}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 2x - 5\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x - 5)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 6)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x - 6)^{5}}{5} + c\\)",
+      "\\(\\frac{(5x - 6)^{5}}{25} + c\\)",
+      "\\(\\frac{(5x - 6)^{4}}{25} + c\\)",
+      "\\((5x - 6)^{5} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 5x - 6\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x - 6)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{6} (6x^{2} + 2x + 4)\\,dx\\).",
+    "options": [
+      "464",
+      "520",
+      "928",
+      "-464"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\int (6x^{2} + 2x + 4)dx = 2x^{3} + x^{2} + 4x\\)\n\nAt \\(x = 6\\): \\(492\\)\n\nAt \\(x = 2\\): \\(28\\)\n\nDifference \\(= 464\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x - 7)\\,dx\\).",
+    "options": [
+      "\\(8x - 7 + c\\)",
+      "\\(8x^{2} - 7x + c\\)",
+      "\\(4x^{2} - 7x + c\\)",
+      "\\(4x^{2} - 7x^{2} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(4x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x + 2)\\,dx\\).",
+    "options": [
+      "\\(4x^{2} + 2x^{2} + c\\)",
+      "\\(8x + 2 + c\\)",
+      "\\(4x^{2} + 2x + c\\)",
+      "\\(8x^{2} + 2x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int 2dx = 2x\\)\n\nSo the answer is \\(4x^{2} + 2x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (8x + 9)\\,dx\\).",
+    "options": [
+      "\\(8x + 9 + c\\)",
+      "\\(4x^{2} + 9x + c\\)",
+      "\\(8x^{2} + 9x + c\\)",
+      "\\(4x^{2} + 9x^{2} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 8xdx = 4x^{2}\\)\n\n\\(\\int 9dx = 9x\\)\n\nSo the answer is \\(4x^{2} + 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 3)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 3)^{5}}{20} + c\\)",
+      "\\(\\frac{(4x + 3)^{5}}{5} + c\\)",
+      "\\(\\frac{(4x + 3)^{4}}{20} + c\\)",
+      "\\((4x + 3)^{5} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 4x + 3\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{4}\\frac{du}{4} = \\frac{u^{5}}{4(5)} + c\\)\n\n\\(= \\frac{(4x + 3)^{5}}{20} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 6)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 6)^{5}}{12} + c\\)",
+      "\\(\\frac{(2x + 6)^{6}}{6} + c\\)",
+      "\\((2x + 6)^{6} + c\\)",
+      "\\(\\frac{(2x + 6)^{6}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 2x + 6\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{5}\\frac{du}{2} = \\frac{u^{6}}{2(6)} + c\\)\n\n\\(= \\frac{(2x + 6)^{6}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (4x - 1)\\,dx\\).",
+    "options": [
+      "\\(4x - 1 + c\\)",
+      "\\(2x^{2} - x^{2} + c\\)",
+      "\\(4x^{2} - x + c\\)",
+      "\\(2x^{2} - x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 4xdx = 2x^{2}\\)\n\n\\(\\int -1dx = -x\\)\n\nSo the answer is \\(2x^{2} - x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{5} (-3x^{2} + 2x + 3)\\,dx\\).",
+    "options": [
+      "88",
+      "-88",
+      "-82",
+      "-176"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (-3x^{2} + 2x + 3)dx = -x^{3} + x^{2} + 3x\\)\n\nAt \\(x = 5\\): \\(-85\\)\n\nAt \\(x = 1\\): \\(3\\)\n\nDifference \\(= -88\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 3)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x - 3)^{4}}{12} + c\\)",
+      "\\(\\frac{(3x - 3)^{3}}{12} + c\\)",
+      "\\(\\frac{(3x - 3)^{4}}{4} + c\\)",
+      "\\((3x - 3)^{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 3x - 3\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{3}\\frac{du}{3} = \\frac{u^{4}}{3(4)} + c\\)\n\n\\(= \\frac{(3x - 3)^{4}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x + 5)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} + 5x^{2} + c\\)",
+      "\\(-4x^{2} + 5x + c\\)",
+      "\\(-8x + 5 + c\\)",
+      "\\(-8x^{2} + 5x + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int 5dx = 5x\\)\n\nSo the answer is \\(-4x^{2} + 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x - 5)\\,dx\\).",
+    "options": [
+      "\\(3x^{2} - 5x^{2} + c\\)",
+      "\\(6x - 5 + c\\)",
+      "\\(6x^{2} - 5x + c\\)",
+      "\\(3x^{2} - 5x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int -5dx = -5x\\)\n\nSo the answer is \\(3x^{2} - 5x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-2x - 3)\\,dx\\).",
+    "options": [
+      "\\(-x^{2} - 3x^{2} + c\\)",
+      "\\(-2x - 3 + c\\)",
+      "\\(-2x^{2} - 3x + c\\)",
+      "\\(-x^{2} - 3x + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -2xdx = -x^{2}\\)\n\n\\(\\int -3dx = -3x\\)\n\nSo the answer is \\(-x^{2} - 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (2x + 5)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(2x + 5)^{3}}{3} + c\\)",
+      "\\(\\frac{(2x + 5)^{3}}{6} + c\\)",
+      "\\((2x + 5)^{3} + c\\)",
+      "\\(\\frac{(2x + 5)^{2}}{6} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 2x + 5\\), so \\(\\frac{du}{dx} = 2\\) and \\(dx = \\frac{du}{2}\\).\n\n\\(\\int u^{2}\\frac{du}{2} = \\frac{u^{3}}{2(3)} + c\\)\n\n\\(= \\frac{(2x + 5)^{3}}{6} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{2}^{3} (-6x^{2} + 4x + 3)\\,dx\\).",
+    "options": [
+      "-29",
+      "25",
+      "-25",
+      "-50"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-6x^{2} + 4x + 3)dx = -2x^{3} + 2x^{2} + 3x\\)\n\nAt \\(x = 3\\): \\(-27\\)\n\nAt \\(x = 2\\): \\(-2\\)\n\nDifference \\(= -25\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 7)\\,dx\\).",
+    "options": [
+      "\\(2x^{2} - 7x + c\\)",
+      "\\(x^{2} - 7x + c\\)",
+      "\\(x^{2} - 7x^{2} + c\\)",
+      "\\(2x - 7 + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -7dx = -7x\\)\n\nSo the answer is \\(x^{2} - 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x + 8)\\,dx\\).",
+    "options": [
+      "\\(-3x^{2} + 8x + c\\)",
+      "\\(-6x + 8 + c\\)",
+      "\\(-3x^{2} + 8x^{2} + c\\)",
+      "\\(-6x^{2} + 8x + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int 8dx = 8x\\)\n\nSo the answer is \\(-3x^{2} + 8x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{4} (3x^{2} + 2x + 2)\\,dx\\).",
+    "options": [
+      "92",
+      "84",
+      "168",
+      "-84"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\int (3x^{2} + 2x + 2)dx = x^{3} + x^{2} + 2x\\)\n\nAt \\(x = 4\\): \\(88\\)\n\nAt \\(x = 1\\): \\(4\\)\n\nDifference \\(= 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x + 5)^{2}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(3x + 5)^{3}}{3} + c\\)",
+      "\\(\\frac{(3x + 5)^{3}}{9} + c\\)",
+      "\\((3x + 5)^{3} + c\\)",
+      "\\(\\frac{(3x + 5)^{2}}{9} + c\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let \\(u = 3x + 5\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{2}\\frac{du}{3} = \\frac{u^{3}}{3(3)} + c\\)\n\n\\(= \\frac{(3x + 5)^{3}}{9} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 7)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 7)^{4}}{25} + c\\)",
+      "\\((5x + 7)^{5} + c\\)",
+      "\\(\\frac{(5x + 7)^{5}}{5} + c\\)",
+      "\\(\\frac{(5x + 7)^{5}}{25} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 5x + 7\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x + 7)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{4} (-3x^{2} + 2x - 5)\\,dx\\).",
+    "options": [
+      "-126",
+      "63",
+      "-63",
+      "-73"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\int (-3x^{2} + 2x - 5)dx = -x^{3} + x^{2} - 5x\\)\n\nAt \\(x = 4\\): \\(-68\\)\n\nAt \\(x = 1\\): \\(-5\\)\n\nDifference \\(= -63\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 6)^{2}\\,dx\\).",
+    "options": [
+      "\\((4x + 6)^{3} + c\\)",
+      "\\(\\frac{(4x + 6)^{3}}{3} + c\\)",
+      "\\(\\frac{(4x + 6)^{2}}{12} + c\\)",
+      "\\(\\frac{(4x + 6)^{3}}{12} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 4x + 6\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{2}\\frac{du}{4} = \\frac{u^{3}}{4(3)} + c\\)\n\n\\(= \\frac{(4x + 6)^{3}}{12} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int_{1}^{3} (-3x^{2} - 2x + 4)\\,dx\\).",
+    "options": [
+      "-22",
+      "-52",
+      "26",
+      "-26"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\int (-3x^{2} - 2x + 4)dx = -x^{3} - x^{2} + 4x\\)\n\nAt \\(x = 3\\): \\(-24\\)\n\nAt \\(x = 1\\): \\(2\\)\n\nDifference \\(= -26\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-8x + 3)\\,dx\\).",
+    "options": [
+      "\\(-4x^{2} + 3x + c\\)",
+      "\\(-4x^{2} + 3x^{2} + c\\)",
+      "\\(-8x^{2} + 3x + c\\)",
+      "\\(-8x + 3 + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -8xdx = -4x^{2}\\)\n\n\\(\\int 3dx = 3x\\)\n\nSo the answer is \\(-4x^{2} + 3x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x + 6)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x + 6)^{5}}{5} + c\\)",
+      "\\((5x + 6)^{5} + c\\)",
+      "\\(\\frac{(5x + 6)^{5}}{25} + c\\)",
+      "\\(\\frac{(5x + 6)^{4}}{25} + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let \\(u = 5x + 6\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x + 6)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (2x - 6)\\,dx\\).",
+    "options": [
+      "\\(2x - 6 + c\\)",
+      "\\(x^{2} - 6x^{2} + c\\)",
+      "\\(x^{2} - 6x + c\\)",
+      "\\(2x^{2} - 6x + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 2xdx = x^{2}\\)\n\n\\(\\int -6dx = -6x\\)\n\nSo the answer is \\(x^{2} - 6x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (-6x - 9)\\,dx\\).",
+    "options": [
+      "\\(-3x^{2} - 9x^{2} + c\\)",
+      "\\(-6x^{2} - 9x + c\\)",
+      "\\(-3x^{2} - 9x + c\\)",
+      "\\(-6x - 9 + c\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int -6xdx = -3x^{2}\\)\n\n\\(\\int -9dx = -9x\\)\n\nSo the answer is \\(-3x^{2} - 9x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\int (6x + 7)\\,dx\\).",
+    "options": [
+      "\\(3x^{2} + 7x + c\\)",
+      "\\(6x^{2} + 7x + c\\)",
+      "\\(6x + 7 + c\\)",
+      "\\(3x^{2} + 7x^{2} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integrate term by term using \\(\\int x^{n}dx = \\frac{x^{n+1}}{n+1}\\).\n\n\\(\\int 6xdx = 3x^{2}\\)\n\n\\(\\int 7dx = 7x\\)\n\nSo the answer is \\(3x^{2} + 7x + c\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (6x - 1)^{3}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(6x - 1)^{4}}{24} + c\\)",
+      "\\((6x - 1)^{4} + c\\)",
+      "\\(\\frac{(6x - 1)^{3}}{24} + c\\)",
+      "\\(\\frac{(6x - 1)^{4}}{4} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 6x - 1\\), so \\(\\frac{du}{dx} = 6\\) and \\(dx = \\frac{du}{6}\\).\n\n\\(\\int u^{3}\\frac{du}{6} = \\frac{u^{4}}{6(4)} + c\\)\n\n\\(= \\frac{(6x - 1)^{4}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (5x - 7)^{4}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(5x - 7)^{5}}{25} + c\\)",
+      "\\(\\frac{(5x - 7)^{4}}{25} + c\\)",
+      "\\((5x - 7)^{5} + c\\)",
+      "\\(\\frac{(5x - 7)^{5}}{5} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 5x - 7\\), so \\(\\frac{du}{dx} = 5\\) and \\(dx = \\frac{du}{5}\\).\n\n\\(\\int u^{4}\\frac{du}{5} = \\frac{u^{5}}{5(5)} + c\\)\n\n\\(= \\frac{(5x - 7)^{5}}{25} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (4x + 4)^{5}\\,dx\\).",
+    "options": [
+      "\\(\\frac{(4x + 4)^{6}}{24} + c\\)",
+      "\\(\\frac{(4x + 4)^{6}}{6} + c\\)",
+      "\\((4x + 4)^{6} + c\\)",
+      "\\(\\frac{(4x + 4)^{5}}{24} + c\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let \\(u = 4x + 4\\), so \\(\\frac{du}{dx} = 4\\) and \\(dx = \\frac{du}{4}\\).\n\n\\(\\int u^{5}\\frac{du}{4} = \\frac{u^{6}}{4(6)} + c\\)\n\n\\(= \\frac{(4x + 4)^{6}}{24} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\int (3x - 6)^{5}\\,dx\\).",
+    "options": [
+      "\\((3x - 6)^{6} + c\\)",
+      "\\(\\frac{(3x - 6)^{6}}{6} + c\\)",
+      "\\(\\frac{(3x - 6)^{5}}{18} + c\\)",
+      "\\(\\frac{(3x - 6)^{6}}{18} + c\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let \\(u = 3x - 6\\), so \\(\\frac{du}{dx} = 3\\) and \\(dx = \\frac{du}{3}\\).\n\n\\(\\int u^{5}\\frac{du}{3} = \\frac{u^{6}}{3(6)} + c\\)\n\n\\(= \\frac{(3x - 6)^{6}}{18} + c\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "9ns3cy8iHGz5sMcm6w3K",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

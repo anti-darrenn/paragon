@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{4 - \\sqrt{2}}\\).",
+    "options": [
+      "\\(\\frac{4 + \\sqrt{2}}{14}\\)",
+      "\\(\\frac{4 - \\sqrt{2}}{14}\\)",
+      "\\(\\frac{4 + \\sqrt{2}}{18}\\)",
+      "\\(\\frac{4 + \\sqrt{2}}{-14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(4 + \\sqrt{2}\\).\n\nDenominator: \\((4 - \\sqrt{2})(4 + \\sqrt{2}) = 4^{2} - 2 = 14\\)\n\nSo the expression becomes \\(\\frac{4 + \\sqrt{2}}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{7} \\times \\sqrt{3}\\).",
+    "options": [
+      "\\(\\sqrt{21}\\)",
+      "\\(7\\sqrt{3}\\)",
+      "\\(2\\sqrt{21}\\)",
+      "\\(\\sqrt{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{7} \\times \\sqrt{3} = \\sqrt{21}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{21}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{2} \\times \\sqrt{3}\\).",
+    "options": [
+      "\\(2\\sqrt{3}\\)",
+      "\\(2\\sqrt{6}\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{176}\\).",
+    "options": [
+      "\\(4\\sqrt{11}\\)",
+      "\\(11\\sqrt{4}\\)",
+      "\\(\\sqrt{176}\\)",
+      "\\(5\\sqrt{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 176.\n\n\\(176 = 16 \\times 11\\)\n\n\\(\\sqrt{176} = \\sqrt{16} \\times \\sqrt{11} = 4\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{1 - \\sqrt{2}}\\).",
+    "options": [
+      "\\(\\frac{1 + \\sqrt{2}}{-1}\\)",
+      "\\(\\frac{1 + \\sqrt{2}}{3}\\)",
+      "\\(\\frac{1 - \\sqrt{2}}{-1}\\)",
+      "\\(\\frac{1 + \\sqrt{2}}{1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(1 + \\sqrt{2}\\).\n\nDenominator: \\((1 - \\sqrt{2})(1 + \\sqrt{2}) = 1^{2} - 2 = -1\\)\n\nSo the expression becomes \\(\\frac{1 + \\sqrt{2}}{-1}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{3 - \\sqrt{5}}\\).",
+    "options": [
+      "\\(\\frac{3 + \\sqrt{5}}{-4}\\)",
+      "\\(\\frac{3 - \\sqrt{5}}{4}\\)",
+      "\\(\\frac{3 + \\sqrt{5}}{14}\\)",
+      "\\(\\frac{3 + \\sqrt{5}}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(3 + \\sqrt{5}\\).\n\nDenominator: \\((3 - \\sqrt{5})(3 + \\sqrt{5}) = 3^{2} - 5 = 4\\)\n\nSo the expression becomes \\(\\frac{3 + \\sqrt{5}}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{252}\\).",
+    "options": [
+      "\\(6\\sqrt{7}\\)",
+      "\\(7\\sqrt{6}\\)",
+      "\\(\\sqrt{252}\\)",
+      "\\(7\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 252.\n\n\\(252 = 36 \\times 7\\)\n\n\\(\\sqrt{252} = \\sqrt{36} \\times \\sqrt{7} = 6\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7\\sqrt{6} - 6\\sqrt{6}\\).",
+    "options": [
+      "\\(42\\sqrt{6}\\)",
+      "\\(\\sqrt{12}\\)",
+      "\\(13\\sqrt{6}\\)",
+      "\\(\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(7 - 6 = 1\\)\n\nSo the answer is \\(\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{7} + \\sqrt{3})(\\sqrt{7} - \\sqrt{3})\\).",
+    "options": [
+      "5",
+      "21",
+      "4",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{7})^{2} - (\\sqrt{3})^{2}\\)\n\n\\(= 7 - 3 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((4 + \\sqrt{5})^{2}\\).",
+    "options": [
+      "\\(21 + 4\\sqrt{5}\\)",
+      "\\(11 + 8\\sqrt{5}\\)",
+      "\\(21 + 8\\sqrt{5}\\)",
+      "\\(41 + 8\\sqrt{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 4^{2} + 2(4)(\\sqrt{5}) + (\\sqrt{5})^{2}\\)\n\n\\(= 16 + 8\\sqrt{5} + 5\\)\n\n\\(= 21 + 8\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{2} \\times \\sqrt{10}\\).",
+    "options": [
+      "\\(2\\sqrt{5}\\)",
+      "\\(2\\sqrt{10}\\)",
+      "\\(\\sqrt{12}\\)",
+      "\\(3\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{2} \\times \\sqrt{10} = \\sqrt{20}\\)\n\n\\(\\sqrt{20} = 2\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{325}\\).",
+    "options": [
+      "\\(5\\sqrt{13}\\)",
+      "\\(6\\sqrt{13}\\)",
+      "\\(13\\sqrt{5}\\)",
+      "\\(\\sqrt{325}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 325.\n\n\\(325 = 25 \\times 13\\)\n\n\\(\\sqrt{325} = \\sqrt{25} \\times \\sqrt{13} = 5\\sqrt{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((3 + \\sqrt{7})^{2}\\).",
+    "options": [
+      "\\(2 + 6\\sqrt{7}\\)",
+      "\\(16 + 6\\sqrt{7}\\)",
+      "\\(58 + 6\\sqrt{7}\\)",
+      "\\(16 + 3\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 3^{2} + 2(3)(\\sqrt{7}) + (\\sqrt{7})^{2}\\)\n\n\\(= 9 + 6\\sqrt{7} + 7\\)\n\n\\(= 16 + 6\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((3 + \\sqrt{3})^{2}\\).",
+    "options": [
+      "\\(6 + 6\\sqrt{3}\\)",
+      "\\(18 + 6\\sqrt{3}\\)",
+      "\\(12 + 3\\sqrt{3}\\)",
+      "\\(12 + 6\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 3^{2} + 2(3)(\\sqrt{3}) + (\\sqrt{3})^{2}\\)\n\n\\(= 9 + 6\\sqrt{3} + 3\\)\n\n\\(= 12 + 6\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{3} - 9\\sqrt{3}\\).",
+    "options": [
+      "\\(90\\sqrt{3}\\)",
+      "\\(\\sqrt{6}\\)",
+      "\\(19\\sqrt{3}\\)",
+      "\\(\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(10 - 9 = 1\\)\n\nSo the answer is \\(\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{3} + 3\\sqrt{3}\\).",
+    "options": [
+      "\\(15\\sqrt{6}\\)",
+      "\\(36\\sqrt{3}\\)",
+      "\\(15\\sqrt{3}\\)",
+      "\\(9\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(12 + 3 = 15\\)\n\nSo the answer is \\(15\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{7} - 10\\sqrt{7}\\).",
+    "options": [
+      "\\(22\\sqrt{7}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(120\\sqrt{7}\\)",
+      "\\(2\\sqrt{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(12 - 10 = 2\\)\n\nSo the answer is \\(2\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{3} \\times \\sqrt{3}\\).",
+    "options": [
+      "\\(\\sqrt{6}\\)",
+      "\\(3\\)",
+      "\\(3\\sqrt{3}\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{3} \\times \\sqrt{3} = \\sqrt{9}\\)\n\n\\(\\sqrt{9} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{6} + 5\\sqrt{6}\\).",
+    "options": [
+      "\\(15\\sqrt{6}\\)",
+      "\\(8\\sqrt{6}\\)",
+      "\\(8\\sqrt{12}\\)",
+      "\\(-2\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(3 + 5 = 8\\)\n\nSo the answer is \\(8\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{96}\\).",
+    "options": [
+      "\\(6\\sqrt{4}\\)",
+      "\\(\\sqrt{96}\\)",
+      "\\(5\\sqrt{6}\\)",
+      "\\(4\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 96.\n\n\\(96 = 16 \\times 6\\)\n\n\\(\\sqrt{96} = \\sqrt{16} \\times \\sqrt{6} = 4\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{11} + 4\\sqrt{11}\\).",
+    "options": [
+      "\\(8\\sqrt{11}\\)",
+      "\\(16\\sqrt{11}\\)",
+      "\\(48\\sqrt{11}\\)",
+      "\\(16\\sqrt{22}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(12 + 4 = 16\\)\n\nSo the answer is \\(16\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{250}\\).",
+    "options": [
+      "\\(10\\sqrt{5}\\)",
+      "\\(5\\sqrt{10}\\)",
+      "\\(\\sqrt{250}\\)",
+      "\\(6\\sqrt{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 250.\n\n\\(250 = 25 \\times 10\\)\n\n\\(\\sqrt{250} = \\sqrt{25} \\times \\sqrt{10} = 5\\sqrt{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((1 + \\sqrt{2})^{2}\\).",
+    "options": [
+      "\\(3 + 2\\sqrt{2}\\)",
+      "\\(3 + \\sqrt{2}\\)",
+      "\\(5 + 2\\sqrt{2}\\)",
+      "\\(-1 + 2\\sqrt{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 1^{2} + 2(1)(\\sqrt{2}) + (\\sqrt{2})^{2}\\)\n\n\\(= 1 + 2\\sqrt{2} + 2\\)\n\n\\(= 3 + 2\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{6} + \\sqrt{7})(\\sqrt{6} - \\sqrt{7})\\).",
+    "options": [
+      "13",
+      "-1",
+      "42",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{6})^{2} - (\\sqrt{7})^{2}\\)\n\n\\(= 6 - 7 = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((1 + \\sqrt{3})^{2}\\).",
+    "options": [
+      "\\(4 + 2\\sqrt{3}\\)",
+      "\\(-2 + 2\\sqrt{3}\\)",
+      "\\(10 + 2\\sqrt{3}\\)",
+      "\\(4 + \\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 1^{2} + 2(1)(\\sqrt{3}) + (\\sqrt{3})^{2}\\)\n\n\\(= 1 + 2\\sqrt{3} + 3\\)\n\n\\(= 4 + 2\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{125}\\).",
+    "options": [
+      "\\(5\\sqrt{6}\\)",
+      "\\(5\\sqrt{5}\\)",
+      "\\(6\\sqrt{5}\\)",
+      "\\(\\sqrt{125}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 125.\n\n\\(125 = 25 \\times 5\\)\n\n\\(\\sqrt{125} = \\sqrt{25} \\times \\sqrt{5} = 5\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{180}\\).",
+    "options": [
+      "\\(\\sqrt{180}\\)",
+      "\\(7\\sqrt{5}\\)",
+      "\\(5\\sqrt{6}\\)",
+      "\\(6\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 180.\n\n\\(180 = 36 \\times 5\\)\n\n\\(\\sqrt{180} = \\sqrt{36} \\times \\sqrt{5} = 6\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{11} + \\sqrt{3})(\\sqrt{11} - \\sqrt{3})\\).",
+    "options": [
+      "9",
+      "33",
+      "8",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{11})^{2} - (\\sqrt{3})^{2}\\)\n\n\\(= 11 - 3 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7\\sqrt{7} + 5\\sqrt{7}\\).",
+    "options": [
+      "\\(12\\sqrt{14}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(35\\sqrt{7}\\)",
+      "\\(12\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(7 + 5 = 12\\)\n\nSo the answer is \\(12\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{7} \\times \\sqrt{6}\\).",
+    "options": [
+      "\\(\\sqrt{13}\\)",
+      "\\(\\sqrt{42}\\)",
+      "\\(2\\sqrt{42}\\)",
+      "\\(7\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{7} \\times \\sqrt{6} = \\sqrt{42}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{42}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{88}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(8\\sqrt{11}\\)",
+      "\\(8\\sqrt{121}\\)",
+      "\\(9\\sqrt{11}\\)",
+      "\\(88\\sqrt{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{88}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{88\\sqrt{11}}{11}\\)\n\n\\(= 8\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{12}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(3\\sqrt{6}\\)",
+      "\\(12\\sqrt{6}\\)",
+      "\\(2\\sqrt{6}\\)",
+      "\\(2\\sqrt{36}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{12}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{12\\sqrt{6}}{6}\\)\n\n\\(= 2\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{10} \\times \\sqrt{2}\\).",
+    "options": [
+      "\\(\\sqrt{12}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(10\\sqrt{2}\\)",
+      "\\(2\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{10} \\times \\sqrt{2} = \\sqrt{20}\\)\n\n\\(\\sqrt{20} = 2\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{13} + \\sqrt{3})(\\sqrt{13} - \\sqrt{3})\\).",
+    "options": [
+      "16",
+      "39",
+      "10",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{13})^{2} - (\\sqrt{3})^{2}\\)\n\n\\(= 13 - 3 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{2 - \\sqrt{7}}\\).",
+    "options": [
+      "\\(\\frac{2 + \\sqrt{7}}{-3}\\)",
+      "\\(\\frac{2 - \\sqrt{7}}{-3}\\)",
+      "\\(\\frac{2 + \\sqrt{7}}{3}\\)",
+      "\\(\\frac{2 + \\sqrt{7}}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(2 + \\sqrt{7}\\).\n\nDenominator: \\((2 - \\sqrt{7})(2 + \\sqrt{7}) = 2^{2} - 7 = -3\\)\n\nSo the expression becomes \\(\\frac{2 + \\sqrt{7}}{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{48}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(48\\sqrt{6}\\)",
+      "\\(8\\sqrt{6}\\)",
+      "\\(9\\sqrt{6}\\)",
+      "\\(8\\sqrt{36}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{48}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{48\\sqrt{6}}{6}\\)\n\n\\(= 8\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{18}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(7\\sqrt{3}\\)",
+      "\\(6\\sqrt{9}\\)",
+      "\\(18\\sqrt{3}\\)",
+      "\\(6\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{18}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{18\\sqrt{3}}{3}\\)\n\n\\(= 6\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{11} + \\sqrt{5})(\\sqrt{11} - \\sqrt{5})\\).",
+    "options": [
+      "7",
+      "16",
+      "55",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{11})^{2} - (\\sqrt{5})^{2}\\)\n\n\\(= 11 - 5 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{35}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(7\\sqrt{25}\\)",
+      "\\(7\\sqrt{5}\\)",
+      "\\(8\\sqrt{5}\\)",
+      "\\(35\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{35}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{35\\sqrt{5}}{5}\\)\n\n\\(= 7\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{13} + \\sqrt{5})(\\sqrt{13} - \\sqrt{5})\\).",
+    "options": [
+      "8",
+      "18",
+      "9",
+      "65"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{13})^{2} - (\\sqrt{5})^{2}\\)\n\n\\(= 13 - 5 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{5} \\times \\sqrt{10}\\).",
+    "options": [
+      "\\(5\\sqrt{10}\\)",
+      "\\(6\\sqrt{2}\\)",
+      "\\(5\\sqrt{2}\\)",
+      "\\(\\sqrt{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{5} \\times \\sqrt{10} = \\sqrt{50}\\)\n\n\\(\\sqrt{50} = 5\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((4 + \\sqrt{2})^{2}\\).",
+    "options": [
+      "\\(18 + 4\\sqrt{2}\\)",
+      "\\(20 + 8\\sqrt{2}\\)",
+      "\\(18 + 8\\sqrt{2}\\)",
+      "\\(14 + 8\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 4^{2} + 2(4)(\\sqrt{2}) + (\\sqrt{2})^{2}\\)\n\n\\(= 16 + 8\\sqrt{2} + 2\\)\n\n\\(= 18 + 8\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{6} \\times \\sqrt{7}\\).",
+    "options": [
+      "\\(\\sqrt{42}\\)",
+      "\\(\\sqrt{13}\\)",
+      "\\(2\\sqrt{42}\\)",
+      "\\(6\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{6} \\times \\sqrt{7} = \\sqrt{42}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{42}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{5} - 2\\sqrt{5}\\).",
+    "options": [
+      "\\(8\\sqrt{10}\\)",
+      "\\(12\\sqrt{5}\\)",
+      "\\(20\\sqrt{5}\\)",
+      "\\(8\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(10 - 2 = 8\\)\n\nSo the answer is \\(8\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{7} + \\sqrt{2})(\\sqrt{7} - \\sqrt{2})\\).",
+    "options": [
+      "6",
+      "14",
+      "9",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{7})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 7 - 2 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{4 - \\sqrt{3}}\\).",
+    "options": [
+      "\\(\\frac{4 - \\sqrt{3}}{13}\\)",
+      "\\(\\frac{4 + \\sqrt{3}}{13}\\)",
+      "\\(\\frac{4 + \\sqrt{3}}{-13}\\)",
+      "\\(\\frac{4 + \\sqrt{3}}{19}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(4 + \\sqrt{3}\\).\n\nDenominator: \\((4 - \\sqrt{3})(4 + \\sqrt{3}) = 4^{2} - 3 = 13\\)\n\nSo the expression becomes \\(\\frac{4 + \\sqrt{3}}{13}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{343}\\).",
+    "options": [
+      "\\(7\\sqrt{7}\\)",
+      "\\(\\sqrt{343}\\)",
+      "\\(8\\sqrt{7}\\)",
+      "\\(7\\sqrt{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 343.\n\n\\(343 = 49 \\times 7\\)\n\n\\(\\sqrt{343} = \\sqrt{49} \\times \\sqrt{7} = 7\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{7} \\times \\sqrt{2}\\).",
+    "options": [
+      "\\(7\\sqrt{2}\\)",
+      "\\(2\\sqrt{14}\\)",
+      "\\(\\sqrt{14}\\)",
+      "\\(\\sqrt{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{7} \\times \\sqrt{2} = \\sqrt{14}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{1 - \\sqrt{3}}\\).",
+    "options": [
+      "\\(\\frac{1 + \\sqrt{3}}{2}\\)",
+      "\\(\\frac{1 + \\sqrt{3}}{4}\\)",
+      "\\(\\frac{1 - \\sqrt{3}}{-2}\\)",
+      "\\(\\frac{1 + \\sqrt{3}}{-2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(1 + \\sqrt{3}\\).\n\nDenominator: \\((1 - \\sqrt{3})(1 + \\sqrt{3}) = 1^{2} - 3 = -2\\)\n\nSo the expression becomes \\(\\frac{1 + \\sqrt{3}}{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{5} \\times \\sqrt{7}\\).",
+    "options": [
+      "\\(2\\sqrt{35}\\)",
+      "\\(5\\sqrt{7}\\)",
+      "\\(\\sqrt{12}\\)",
+      "\\(\\sqrt{35}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{5} \\times \\sqrt{7} = \\sqrt{35}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{35}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{1 - \\sqrt{5}}\\).",
+    "options": [
+      "\\(\\frac{1 - \\sqrt{5}}{-4}\\)",
+      "\\(\\frac{1 + \\sqrt{5}}{4}\\)",
+      "\\(\\frac{1 + \\sqrt{5}}{-4}\\)",
+      "\\(\\frac{1 + \\sqrt{5}}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(1 + \\sqrt{5}\\).\n\nDenominator: \\((1 - \\sqrt{5})(1 + \\sqrt{5}) = 1^{2} - 5 = -4\\)\n\nSo the expression becomes \\(\\frac{1 + \\sqrt{5}}{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{48}\\).",
+    "options": [
+      "\\(\\sqrt{48}\\)",
+      "\\(5\\sqrt{3}\\)",
+      "\\(4\\sqrt{3}\\)",
+      "\\(3\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 48.\n\n\\(48 = 16 \\times 3\\)\n\n\\(\\sqrt{48} = \\sqrt{16} \\times \\sqrt{3} = 4\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{54}\\).",
+    "options": [
+      "\\(4\\sqrt{6}\\)",
+      "\\(6\\sqrt{3}\\)",
+      "\\(3\\sqrt{6}\\)",
+      "\\(\\sqrt{54}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 54.\n\n\\(54 = 9 \\times 6\\)\n\n\\(\\sqrt{54} = \\sqrt{9} \\times \\sqrt{6} = 3\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{10} + \\sqrt{7})(\\sqrt{10} - \\sqrt{7})\\).",
+    "options": [
+      "4",
+      "3",
+      "17",
+      "70"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{10})^{2} - (\\sqrt{7})^{2}\\)\n\n\\(= 10 - 7 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{2} + 11\\sqrt{2}\\).",
+    "options": [
+      "\\(121\\sqrt{2}\\)",
+      "\\(0\\sqrt{2}\\)",
+      "\\(22\\sqrt{2}\\)",
+      "\\(22\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(11 + 11 = 22\\)\n\nSo the answer is \\(22\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{539}\\).",
+    "options": [
+      "\\(11\\sqrt{7}\\)",
+      "\\(8\\sqrt{11}\\)",
+      "\\(\\sqrt{539}\\)",
+      "\\(7\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 539.\n\n\\(539 = 49 \\times 11\\)\n\n\\(\\sqrt{539} = \\sqrt{49} \\times \\sqrt{11} = 7\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{6}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(6\\sqrt{3}\\)",
+      "\\(2\\sqrt{9}\\)",
+      "\\(3\\sqrt{3}\\)",
+      "\\(2\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{6}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3}\\)\n\n\\(= 2\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{7} + 6\\sqrt{7}\\).",
+    "options": [
+      "\\(14\\sqrt{7}\\)",
+      "\\(48\\sqrt{7}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(14\\sqrt{14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(8 + 6 = 14\\)\n\nSo the answer is \\(14\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{3 - \\sqrt{3}}\\).",
+    "options": [
+      "\\(\\frac{3 + \\sqrt{3}}{12}\\)",
+      "\\(\\frac{3 - \\sqrt{3}}{6}\\)",
+      "\\(\\frac{3 + \\sqrt{3}}{6}\\)",
+      "\\(\\frac{3 + \\sqrt{3}}{-6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(3 + \\sqrt{3}\\).\n\nDenominator: \\((3 - \\sqrt{3})(3 + \\sqrt{3}) = 3^{2} - 3 = 6\\)\n\nSo the expression becomes \\(\\frac{3 + \\sqrt{3}}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((3 + \\sqrt{5})^{2}\\).",
+    "options": [
+      "\\(34 + 6\\sqrt{5}\\)",
+      "\\(14 + 6\\sqrt{5}\\)",
+      "\\(14 + 3\\sqrt{5}\\)",
+      "\\(4 + 6\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 3^{2} + 2(3)(\\sqrt{5}) + (\\sqrt{5})^{2}\\)\n\n\\(= 9 + 6\\sqrt{5} + 5\\)\n\n\\(= 14 + 6\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{7} + 12\\sqrt{7}\\).",
+    "options": [
+      "\\(15\\sqrt{14}\\)",
+      "\\(15\\sqrt{7}\\)",
+      "\\(36\\sqrt{7}\\)",
+      "\\(-9\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(3 + 12 = 15\\)\n\nSo the answer is \\(15\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{33}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(11\\sqrt{9}\\)",
+      "\\(33\\sqrt{3}\\)",
+      "\\(12\\sqrt{3}\\)",
+      "\\(11\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{33}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{33\\sqrt{3}}{3}\\)\n\n\\(= 11\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{6} - 7\\sqrt{6}\\).",
+    "options": [
+      "\\(5\\sqrt{6}\\)",
+      "\\(84\\sqrt{6}\\)",
+      "\\(5\\sqrt{12}\\)",
+      "\\(19\\sqrt{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(12 - 7 = 5\\)\n\nSo the answer is \\(5\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{6} + \\sqrt{5})(\\sqrt{6} - \\sqrt{5})\\).",
+    "options": [
+      "1",
+      "2",
+      "30",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{6})^{2} - (\\sqrt{5})^{2}\\)\n\n\\(= 6 - 5 = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{5} + \\sqrt{7})(\\sqrt{5} - \\sqrt{7})\\).",
+    "options": [
+      "12",
+      "-1",
+      "35",
+      "-2"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{5})^{2} - (\\sqrt{7})^{2}\\)\n\n\\(= 5 - 7 = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{5} \\times \\sqrt{3}\\).",
+    "options": [
+      "\\(5\\sqrt{3}\\)",
+      "\\(\\sqrt{8}\\)",
+      "\\(2\\sqrt{15}\\)",
+      "\\(\\sqrt{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{5} \\times \\sqrt{3} = \\sqrt{15}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{49}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(7\\sqrt{49}\\)",
+      "\\(7\\sqrt{7}\\)",
+      "\\(49\\sqrt{7}\\)",
+      "\\(8\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{49}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{49\\sqrt{7}}{7}\\)\n\n\\(= 7\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{21}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(3\\sqrt{7}\\)",
+      "\\(3\\sqrt{49}\\)",
+      "\\(4\\sqrt{7}\\)",
+      "\\(21\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{21}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{21\\sqrt{7}}{7}\\)\n\n\\(= 3\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{11} + 9\\sqrt{11}\\).",
+    "options": [
+      "\\(21\\sqrt{11}\\)",
+      "\\(21\\sqrt{22}\\)",
+      "\\(108\\sqrt{11}\\)",
+      "\\(3\\sqrt{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(12 + 9 = 21\\)\n\nSo the answer is \\(21\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((2 + \\sqrt{5})^{2}\\).",
+    "options": [
+      "\\(29 + 4\\sqrt{5}\\)",
+      "\\(9 + 2\\sqrt{5}\\)",
+      "\\(9 + 4\\sqrt{5}\\)",
+      "\\(-1 + 4\\sqrt{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 2^{2} + 2(2)(\\sqrt{5}) + (\\sqrt{5})^{2}\\)\n\n\\(= 4 + 4\\sqrt{5} + 5\\)\n\n\\(= 9 + 4\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{160}\\).",
+    "options": [
+      "\\(4\\sqrt{10}\\)",
+      "\\(5\\sqrt{10}\\)",
+      "\\(10\\sqrt{4}\\)",
+      "\\(\\sqrt{160}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 160.\n\n\\(160 = 16 \\times 10\\)\n\n\\(\\sqrt{160} = \\sqrt{16} \\times \\sqrt{10} = 4\\sqrt{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{42}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(6\\sqrt{7}\\)",
+      "\\(7\\sqrt{7}\\)",
+      "\\(42\\sqrt{7}\\)",
+      "\\(6\\sqrt{49}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{42}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{42\\sqrt{7}}{7}\\)\n\n\\(= 6\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{5} \\times \\sqrt{5}\\).",
+    "options": [
+      "\\(\\sqrt{10}\\)",
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(5\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{5} \\times \\sqrt{5} = \\sqrt{25}\\)\n\n\\(\\sqrt{25} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{3 - \\sqrt{2}}\\).",
+    "options": [
+      "\\(\\frac{3 + \\sqrt{2}}{11}\\)",
+      "\\(\\frac{3 - \\sqrt{2}}{7}\\)",
+      "\\(\\frac{3 + \\sqrt{2}}{-7}\\)",
+      "\\(\\frac{3 + \\sqrt{2}}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(3 + \\sqrt{2}\\).\n\nDenominator: \\((3 - \\sqrt{2})(3 + \\sqrt{2}) = 3^{2} - 2 = 7\\)\n\nSo the expression becomes \\(\\frac{3 + \\sqrt{2}}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{2 - \\sqrt{5}}\\).",
+    "options": [
+      "\\(\\frac{2 + \\sqrt{5}}{-1}\\)",
+      "\\(\\frac{2 + \\sqrt{5}}{1}\\)",
+      "\\(\\frac{2 + \\sqrt{5}}{9}\\)",
+      "\\(\\frac{2 - \\sqrt{5}}{-1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(2 + \\sqrt{5}\\).\n\nDenominator: \\((2 - \\sqrt{5})(2 + \\sqrt{5}) = 2^{2} - 5 = -1\\)\n\nSo the expression becomes \\(\\frac{2 + \\sqrt{5}}{-1}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{2 - \\sqrt{3}}\\).",
+    "options": [
+      "\\(\\frac{2 - \\sqrt{3}}{1}\\)",
+      "\\(\\frac{2 + \\sqrt{3}}{1}\\)",
+      "\\(\\frac{2 + \\sqrt{3}}{7}\\)",
+      "\\(\\frac{2 + \\sqrt{3}}{-1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(2 + \\sqrt{3}\\).\n\nDenominator: \\((2 - \\sqrt{3})(2 + \\sqrt{3}) = 2^{2} - 3 = 1\\)\n\nSo the expression becomes \\(\\frac{2 + \\sqrt{3}}{1}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{6} + \\sqrt{2})(\\sqrt{6} - \\sqrt{2})\\).",
+    "options": [
+      "8",
+      "5",
+      "4",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{6})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 6 - 2 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((5 + \\sqrt{3})^{2}\\).",
+    "options": [
+      "\\(28 + 5\\sqrt{3}\\)",
+      "\\(28 + 10\\sqrt{3}\\)",
+      "\\(34 + 10\\sqrt{3}\\)",
+      "\\(22 + 10\\sqrt{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 5^{2} + 2(5)(\\sqrt{3}) + (\\sqrt{3})^{2}\\)\n\n\\(= 25 + 10\\sqrt{3} + 3\\)\n\n\\(= 28 + 10\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{7} \\times \\sqrt{10}\\).",
+    "options": [
+      "\\(\\sqrt{17}\\)",
+      "\\(\\sqrt{70}\\)",
+      "\\(2\\sqrt{70}\\)",
+      "\\(7\\sqrt{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{7} \\times \\sqrt{10} = \\sqrt{70}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{70}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{6} + \\sqrt{3})(\\sqrt{6} - \\sqrt{3})\\).",
+    "options": [
+      "4",
+      "9",
+      "3",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{6})^{2} - (\\sqrt{3})^{2}\\)\n\n\\(= 6 - 3 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{6} \\times \\sqrt{6}\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(\\sqrt{12}\\)",
+      "\\(6\\sqrt{6}\\)",
+      "\\(7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{6} \\times \\sqrt{6} = \\sqrt{36}\\)\n\n\\(\\sqrt{36} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{2} - 6\\sqrt{2}\\).",
+    "options": [
+      "\\(17\\sqrt{2}\\)",
+      "\\(5\\sqrt{2}\\)",
+      "\\(5\\sqrt{4}\\)",
+      "\\(66\\sqrt{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(11 - 6 = 5\\)\n\nSo the answer is \\(5\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{14}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(2\\sqrt{49}\\)",
+      "\\(3\\sqrt{7}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(14\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{14}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{14\\sqrt{7}}{7}\\)\n\n\\(= 2\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{5} + 9\\sqrt{5}\\).",
+    "options": [
+      "\\(2\\sqrt{5}\\)",
+      "\\(20\\sqrt{5}\\)",
+      "\\(99\\sqrt{5}\\)",
+      "\\(20\\sqrt{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(11 + 9 = 20\\)\n\nSo the answer is \\(20\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{35}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(5\\sqrt{49}\\)",
+      "\\(6\\sqrt{7}\\)",
+      "\\(5\\sqrt{7}\\)",
+      "\\(35\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{35}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{35\\sqrt{7}}{7}\\)\n\n\\(= 5\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{294}\\).",
+    "options": [
+      "\\(\\sqrt{294}\\)",
+      "\\(7\\sqrt{6}\\)",
+      "\\(6\\sqrt{7}\\)",
+      "\\(8\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 294.\n\n\\(294 = 49 \\times 6\\)\n\n\\(\\sqrt{294} = \\sqrt{49} \\times \\sqrt{6} = 7\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{63}\\).",
+    "options": [
+      "\\(7\\sqrt{3}\\)",
+      "\\(\\sqrt{63}\\)",
+      "\\(3\\sqrt{7}\\)",
+      "\\(4\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 63.\n\n\\(63 = 9 \\times 7\\)\n\n\\(\\sqrt{63} = \\sqrt{9} \\times \\sqrt{7} = 3\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{147}\\).",
+    "options": [
+      "\\(3\\sqrt{7}\\)",
+      "\\(\\sqrt{147}\\)",
+      "\\(7\\sqrt{3}\\)",
+      "\\(8\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 147.\n\n\\(147 = 49 \\times 3\\)\n\n\\(\\sqrt{147} = \\sqrt{49} \\times \\sqrt{3} = 7\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{5} + \\sqrt{3})(\\sqrt{5} - \\sqrt{3})\\).",
+    "options": [
+      "3",
+      "8",
+      "2",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{5})^{2} - (\\sqrt{3})^{2}\\)\n\n\\(= 5 - 3 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5\\sqrt{3} + 5\\sqrt{3}\\).",
+    "options": [
+      "\\(0\\sqrt{3}\\)",
+      "\\(10\\sqrt{6}\\)",
+      "\\(25\\sqrt{3}\\)",
+      "\\(10\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(5 + 5 = 10\\)\n\nSo the answer is \\(10\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{2} \\times \\sqrt{6}\\).",
+    "options": [
+      "\\(2\\sqrt{6}\\)",
+      "\\(\\sqrt{8}\\)",
+      "\\(2\\sqrt{3}\\)",
+      "\\(3\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{2} \\times \\sqrt{6} = \\sqrt{12}\\)\n\n\\(\\sqrt{12} = 2\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{7} \\times \\sqrt{7}\\).",
+    "options": [
+      "\\(7\\)",
+      "\\(8\\)",
+      "\\(7\\sqrt{7}\\)",
+      "\\(\\sqrt{14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{7} \\times \\sqrt{7} = \\sqrt{49}\\)\n\n\\(\\sqrt{49} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{175}\\).",
+    "options": [
+      "\\(6\\sqrt{7}\\)",
+      "\\(5\\sqrt{7}\\)",
+      "\\(\\sqrt{175}\\)",
+      "\\(7\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 175.\n\n\\(175 = 25 \\times 7\\)\n\n\\(\\sqrt{175} = \\sqrt{25} \\times \\sqrt{7} = 5\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((5 + \\sqrt{7})^{2}\\).",
+    "options": [
+      "\\(32 + 10\\sqrt{7}\\)",
+      "\\(32 + 5\\sqrt{7}\\)",
+      "\\(18 + 10\\sqrt{7}\\)",
+      "\\(74 + 10\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 5^{2} + 2(5)(\\sqrt{7}) + (\\sqrt{7})^{2}\\)\n\n\\(= 25 + 10\\sqrt{7} + 7\\)\n\n\\(= 32 + 10\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{45}\\).",
+    "options": [
+      "\\(3\\sqrt{5}\\)",
+      "\\(5\\sqrt{3}\\)",
+      "\\(\\sqrt{45}\\)",
+      "\\(4\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 45.\n\n\\(45 = 9 \\times 5\\)\n\n\\(\\sqrt{45} = \\sqrt{9} \\times \\sqrt{5} = 3\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{3} + \\sqrt{7})(\\sqrt{3} - \\sqrt{7})\\).",
+    "options": [
+      "-3",
+      "21",
+      "10",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{3})^{2} - (\\sqrt{7})^{2}\\)\n\n\\(= 3 - 7 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{24}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(24\\sqrt{2}\\)",
+      "\\(13\\sqrt{2}\\)",
+      "\\(12\\sqrt{2}\\)",
+      "\\(12\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{24}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{24\\sqrt{2}}{2}\\)\n\n\\(= 12\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{4 - \\sqrt{7}}\\).",
+    "options": [
+      "\\(\\frac{4 + \\sqrt{7}}{9}\\)",
+      "\\(\\frac{4 + \\sqrt{7}}{-9}\\)",
+      "\\(\\frac{4 + \\sqrt{7}}{23}\\)",
+      "\\(\\frac{4 - \\sqrt{7}}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(4 + \\sqrt{7}\\).\n\nDenominator: \\((4 - \\sqrt{7})(4 + \\sqrt{7}) = 4^{2} - 7 = 9\\)\n\nSo the expression becomes \\(\\frac{4 + \\sqrt{7}}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{40}\\).",
+    "options": [
+      "\\(3\\sqrt{10}\\)",
+      "\\(10\\sqrt{2}\\)",
+      "\\(\\sqrt{40}\\)",
+      "\\(2\\sqrt{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 40.\n\n\\(40 = 4 \\times 10\\)\n\n\\(\\sqrt{40} = \\sqrt{4} \\times \\sqrt{10} = 2\\sqrt{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{2} \\times \\sqrt{7}\\).",
+    "options": [
+      "\\(2\\sqrt{14}\\)",
+      "\\(\\sqrt{9}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(\\sqrt{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{2} \\times \\sqrt{7} = \\sqrt{14}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{7} + 9\\sqrt{7}\\).",
+    "options": [
+      "\\(36\\sqrt{7}\\)",
+      "\\(-5\\sqrt{7}\\)",
+      "\\(13\\sqrt{14}\\)",
+      "\\(13\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(4 + 9 = 13\\)\n\nSo the answer is \\(13\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{5} + 10\\sqrt{5}\\).",
+    "options": [
+      "\\(\\sqrt{5}\\)",
+      "\\(21\\sqrt{10}\\)",
+      "\\(110\\sqrt{5}\\)",
+      "\\(21\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(11 + 10 = 21\\)\n\nSo the answer is \\(21\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{10} \\times \\sqrt{5}\\).",
+    "options": [
+      "\\(6\\sqrt{2}\\)",
+      "\\(\\sqrt{15}\\)",
+      "\\(5\\sqrt{2}\\)",
+      "\\(10\\sqrt{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{10} \\times \\sqrt{5} = \\sqrt{50}\\)\n\n\\(\\sqrt{50} = 5\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{13} + \\sqrt{7})(\\sqrt{13} - \\sqrt{7})\\).",
+    "options": [
+      "91",
+      "20",
+      "7",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{13})^{2} - (\\sqrt{7})^{2}\\)\n\n\\(= 13 - 7 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{2 - \\sqrt{2}}\\).",
+    "options": [
+      "\\(\\frac{2 + \\sqrt{2}}{2}\\)",
+      "\\(\\frac{2 - \\sqrt{2}}{2}\\)",
+      "\\(\\frac{2 + \\sqrt{2}}{-2}\\)",
+      "\\(\\frac{2 + \\sqrt{2}}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(2 + \\sqrt{2}\\).\n\nDenominator: \\((2 - \\sqrt{2})(2 + \\sqrt{2}) = 2^{2} - 2 = 2\\)\n\nSo the expression becomes \\(\\frac{2 + \\sqrt{2}}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{5} \\times \\sqrt{2}\\).",
+    "options": [
+      "\\(\\sqrt{7}\\)",
+      "\\(5\\sqrt{2}\\)",
+      "\\(2\\sqrt{10}\\)",
+      "\\(\\sqrt{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{5} \\times \\sqrt{2} = \\sqrt{10}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{5} + 12\\sqrt{5}\\).",
+    "options": [
+      "\\(15\\sqrt{5}\\)",
+      "\\(36\\sqrt{5}\\)",
+      "\\(15\\sqrt{10}\\)",
+      "\\(-9\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(3 + 12 = 15\\)\n\nSo the answer is \\(15\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{3} \\times \\sqrt{5}\\).",
+    "options": [
+      "\\(3\\sqrt{5}\\)",
+      "\\(\\sqrt{15}\\)",
+      "\\(2\\sqrt{15}\\)",
+      "\\(\\sqrt{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{3} \\times \\sqrt{5} = \\sqrt{15}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{7} + 6\\sqrt{7}\\).",
+    "options": [
+      "\\(9\\sqrt{7}\\)",
+      "\\(9\\sqrt{14}\\)",
+      "\\(18\\sqrt{7}\\)",
+      "\\(-3\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(3 + 6 = 9\\)\n\nSo the answer is \\(9\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{3 - \\sqrt{7}}\\).",
+    "options": [
+      "\\(\\frac{3 + \\sqrt{7}}{2}\\)",
+      "\\(\\frac{3 + \\sqrt{7}}{16}\\)",
+      "\\(\\frac{3 + \\sqrt{7}}{-2}\\)",
+      "\\(\\frac{3 - \\sqrt{7}}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(3 + \\sqrt{7}\\).\n\nDenominator: \\((3 - \\sqrt{7})(3 + \\sqrt{7}) = 3^{2} - 7 = 2\\)\n\nSo the expression becomes \\(\\frac{3 + \\sqrt{7}}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{245}\\).",
+    "options": [
+      "\\(5\\sqrt{7}\\)",
+      "\\(8\\sqrt{5}\\)",
+      "\\(\\sqrt{245}\\)",
+      "\\(7\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 245.\n\n\\(245 = 49 \\times 5\\)\n\n\\(\\sqrt{245} = \\sqrt{49} \\times \\sqrt{5} = 7\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{5} + \\sqrt{2})(\\sqrt{5} - \\sqrt{2})\\).",
+    "options": [
+      "3",
+      "4",
+      "7",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{5})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 5 - 2 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{2} \\times \\sqrt{2}\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(2\\sqrt{2}\\)",
+      "\\(\\sqrt{4}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{2} \\times \\sqrt{2} = \\sqrt{4}\\)\n\n\\(\\sqrt{4} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((2 + \\sqrt{2})^{2}\\).",
+    "options": [
+      "\\(6 + 4\\sqrt{2}\\)",
+      "\\(2 + 4\\sqrt{2}\\)",
+      "\\(8 + 4\\sqrt{2}\\)",
+      "\\(6 + 2\\sqrt{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 2^{2} + 2(2)(\\sqrt{2}) + (\\sqrt{2})^{2}\\)\n\n\\(= 4 + 4\\sqrt{2} + 2\\)\n\n\\(= 6 + 4\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{1 - \\sqrt{7}}\\).",
+    "options": [
+      "\\(\\frac{1 - \\sqrt{7}}{-6}\\)",
+      "\\(\\frac{1 + \\sqrt{7}}{-6}\\)",
+      "\\(\\frac{1 + \\sqrt{7}}{8}\\)",
+      "\\(\\frac{1 + \\sqrt{7}}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(1 + \\sqrt{7}\\).\n\nDenominator: \\((1 - \\sqrt{7})(1 + \\sqrt{7}) = 1^{2} - 7 = -6\\)\n\nSo the expression becomes \\(\\frac{1 + \\sqrt{7}}{-6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{66}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(6\\sqrt{121}\\)",
+      "\\(6\\sqrt{11}\\)",
+      "\\(7\\sqrt{11}\\)",
+      "\\(66\\sqrt{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{66}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{66\\sqrt{11}}{11}\\)\n\n\\(= 6\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((2 + \\sqrt{7})^{2}\\).",
+    "options": [
+      "\\(53 + 4\\sqrt{7}\\)",
+      "\\(11 + 4\\sqrt{7}\\)",
+      "\\(-3 + 4\\sqrt{7}\\)",
+      "\\(11 + 2\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 2^{2} + 2(2)(\\sqrt{7}) + (\\sqrt{7})^{2}\\)\n\n\\(= 4 + 4\\sqrt{7} + 7\\)\n\n\\(= 11 + 4\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((1 + \\sqrt{5})^{2}\\).",
+    "options": [
+      "\\(26 + 2\\sqrt{5}\\)",
+      "\\(-4 + 2\\sqrt{5}\\)",
+      "\\(6 + 2\\sqrt{5}\\)",
+      "\\(6 + \\sqrt{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 1^{2} + 2(1)(\\sqrt{5}) + (\\sqrt{5})^{2}\\)\n\n\\(= 1 + 2\\sqrt{5} + 5\\)\n\n\\(= 6 + 2\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{10} \\times \\sqrt{3}\\).",
+    "options": [
+      "\\(2\\sqrt{30}\\)",
+      "\\(\\sqrt{13}\\)",
+      "\\(10\\sqrt{3}\\)",
+      "\\(\\sqrt{30}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{10} \\times \\sqrt{3} = \\sqrt{30}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{30}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{72}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(13\\sqrt{6}\\)",
+      "\\(12\\sqrt{6}\\)",
+      "\\(72\\sqrt{6}\\)",
+      "\\(12\\sqrt{36}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{72}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{72\\sqrt{6}}{6}\\)\n\n\\(= 12\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{20}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(10\\sqrt{4}\\)",
+      "\\(10\\sqrt{2}\\)",
+      "\\(20\\sqrt{2}\\)",
+      "\\(11\\sqrt{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{20}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{20\\sqrt{2}}{2}\\)\n\n\\(= 10\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{27}\\).",
+    "options": [
+      "\\(3\\sqrt{4}\\)",
+      "\\(4\\sqrt{3}\\)",
+      "\\(\\sqrt{27}\\)",
+      "\\(3\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 27.\n\n\\(27 = 9 \\times 3\\)\n\n\\(\\sqrt{27} = \\sqrt{9} \\times \\sqrt{3} = 3\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{56}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(8\\sqrt{49}\\)",
+      "\\(56\\sqrt{7}\\)",
+      "\\(9\\sqrt{7}\\)",
+      "\\(8\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{56}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{56\\sqrt{7}}{7}\\)\n\n\\(= 8\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{8}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(8\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)",
+      "\\(5\\sqrt{2}\\)",
+      "\\(4\\sqrt{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{8}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{8\\sqrt{2}}{2}\\)\n\n\\(= 4\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{6} \\times \\sqrt{5}\\).",
+    "options": [
+      "\\(\\sqrt{30}\\)",
+      "\\(\\sqrt{11}\\)",
+      "\\(2\\sqrt{30}\\)",
+      "\\(6\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{6} \\times \\sqrt{5} = \\sqrt{30}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{30}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((4 + \\sqrt{7})^{2}\\).",
+    "options": [
+      "\\(23 + 4\\sqrt{7}\\)",
+      "\\(65 + 8\\sqrt{7}\\)",
+      "\\(9 + 8\\sqrt{7}\\)",
+      "\\(23 + 8\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 4^{2} + 2(4)(\\sqrt{7}) + (\\sqrt{7})^{2}\\)\n\n\\(= 16 + 8\\sqrt{7} + 7\\)\n\n\\(= 23 + 8\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{30}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(10\\sqrt{9}\\)",
+      "\\(11\\sqrt{3}\\)",
+      "\\(30\\sqrt{3}\\)",
+      "\\(10\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{30}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{30\\sqrt{3}}{3}\\)\n\n\\(= 10\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{150}\\).",
+    "options": [
+      "\\(\\sqrt{150}\\)",
+      "\\(6\\sqrt{6}\\)",
+      "\\(6\\sqrt{5}\\)",
+      "\\(5\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 150.\n\n\\(150 = 25 \\times 6\\)\n\n\\(\\sqrt{150} = \\sqrt{25} \\times \\sqrt{6} = 5\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{13} + \\sqrt{2})(\\sqrt{13} - \\sqrt{2})\\).",
+    "options": [
+      "11",
+      "15",
+      "12",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{13})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 13 - 2 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{2} + 9\\sqrt{2}\\).",
+    "options": [
+      "\\(18\\sqrt{2}\\)",
+      "\\(-7\\sqrt{2}\\)",
+      "\\(11\\sqrt{4}\\)",
+      "\\(11\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(2 + 9 = 11\\)\n\nSo the answer is \\(11\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{10} + \\sqrt{2})(\\sqrt{10} - \\sqrt{2})\\).",
+    "options": [
+      "9",
+      "8",
+      "20",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{10})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 10 - 2 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{7} + 3\\sqrt{7}\\).",
+    "options": [
+      "\\(13\\sqrt{14}\\)",
+      "\\(13\\sqrt{7}\\)",
+      "\\(7\\sqrt{7}\\)",
+      "\\(30\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(10 + 3 = 13\\)\n\nSo the answer is \\(13\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{52}\\).",
+    "options": [
+      "\\(3\\sqrt{13}\\)",
+      "\\(\\sqrt{52}\\)",
+      "\\(2\\sqrt{13}\\)",
+      "\\(13\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 52.\n\n\\(52 = 4 \\times 13\\)\n\n\\(\\sqrt{52} = \\sqrt{4} \\times \\sqrt{13} = 2\\sqrt{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{11} + 12\\sqrt{11}\\).",
+    "options": [
+      "\\(36\\sqrt{11}\\)",
+      "\\(15\\sqrt{11}\\)",
+      "\\(-9\\sqrt{11}\\)",
+      "\\(15\\sqrt{22}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(3 + 12 = 15\\)\n\nSo the answer is \\(15\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{216}\\).",
+    "options": [
+      "\\(\\sqrt{216}\\)",
+      "\\(7\\sqrt{6}\\)",
+      "\\(6\\sqrt{6}\\)",
+      "\\(6\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 216.\n\n\\(216 = 36 \\times 6\\)\n\n\\(\\sqrt{216} = \\sqrt{36} \\times \\sqrt{6} = 6\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{3} + \\sqrt{2})(\\sqrt{3} - \\sqrt{2})\\).",
+    "options": [
+      "1",
+      "5",
+      "6",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{3})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 3 - 2 = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{18}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(3\\sqrt{36}\\)",
+      "\\(4\\sqrt{6}\\)",
+      "\\(3\\sqrt{6}\\)",
+      "\\(18\\sqrt{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{18}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{18\\sqrt{6}}{6}\\)\n\n\\(= 3\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9\\sqrt{2} - 6\\sqrt{2}\\).",
+    "options": [
+      "\\(54\\sqrt{2}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(15\\sqrt{2}\\)",
+      "\\(3\\sqrt{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(9 - 6 = 3\\)\n\nSo the answer is \\(3\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{22}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(2\\sqrt{121}\\)",
+      "\\(2\\sqrt{11}\\)",
+      "\\(22\\sqrt{11}\\)",
+      "\\(3\\sqrt{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{22}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{22\\sqrt{11}}{11}\\)\n\n\\(= 2\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{1}{4 - \\sqrt{5}}\\).",
+    "options": [
+      "\\(\\frac{4 + \\sqrt{5}}{21}\\)",
+      "\\(\\frac{4 - \\sqrt{5}}{11}\\)",
+      "\\(\\frac{4 + \\sqrt{5}}{11}\\)",
+      "\\(\\frac{4 + \\sqrt{5}}{-11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by the conjugate \\(4 + \\sqrt{5}\\).\n\nDenominator: \\((4 - \\sqrt{5})(4 + \\sqrt{5}) = 4^{2} - 5 = 11\\)\n\nSo the expression becomes \\(\\frac{4 + \\sqrt{5}}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{99}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(99\\sqrt{11}\\)",
+      "\\(10\\sqrt{11}\\)",
+      "\\(9\\sqrt{121}\\)",
+      "\\(9\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{99}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{99\\sqrt{11}}{11}\\)\n\n\\(= 9\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{10}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(2\\sqrt{5}\\)",
+      "\\(10\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(2\\sqrt{25}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{10}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{10\\sqrt{5}}{5}\\)\n\n\\(= 2\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{6} + 10\\sqrt{6}\\).",
+    "options": [
+      "\\(21\\sqrt{12}\\)",
+      "\\(21\\sqrt{6}\\)",
+      "\\(110\\sqrt{6}\\)",
+      "\\(\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(11 + 10 = 21\\)\n\nSo the answer is \\(21\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((1 + \\sqrt{7})^{2}\\).",
+    "options": [
+      "\\(8 + \\sqrt{7}\\)",
+      "\\(-6 + 2\\sqrt{7}\\)",
+      "\\(50 + 2\\sqrt{7}\\)",
+      "\\(8 + 2\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 1^{2} + 2(1)(\\sqrt{7}) + (\\sqrt{7})^{2}\\)\n\n\\(= 1 + 2\\sqrt{7} + 7\\)\n\n\\(= 8 + 2\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{7} + \\sqrt{5})(\\sqrt{7} - \\sqrt{5})\\).",
+    "options": [
+      "2",
+      "35",
+      "3",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{7})^{2} - (\\sqrt{5})^{2}\\)\n\n\\(= 7 - 5 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{110}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(110\\sqrt{11}\\)",
+      "\\(11\\sqrt{11}\\)",
+      "\\(10\\sqrt{121}\\)",
+      "\\(10\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{110}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{110\\sqrt{11}}{11}\\)\n\n\\(= 10\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{7} + 6\\sqrt{7}\\).",
+    "options": [
+      "\\(36\\sqrt{7}\\)",
+      "\\(0\\sqrt{7}\\)",
+      "\\(12\\sqrt{14}\\)",
+      "\\(12\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(6 + 6 = 12\\)\n\nSo the answer is \\(12\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{18}\\).",
+    "options": [
+      "\\(2\\sqrt{3}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(\\sqrt{18}\\)",
+      "\\(4\\sqrt{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 18.\n\n\\(18 = 9 \\times 2\\)\n\n\\(\\sqrt{18} = \\sqrt{9} \\times \\sqrt{2} = 3\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{5} + 3\\sqrt{5}\\).",
+    "options": [
+      "\\(18\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(9\\sqrt{5}\\)",
+      "\\(9\\sqrt{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(6 + 3 = 9\\)\n\nSo the answer is \\(9\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{16}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(9\\sqrt{2}\\)",
+      "\\(16\\sqrt{2}\\)",
+      "\\(8\\sqrt{4}\\)",
+      "\\(8\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{16}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{16\\sqrt{2}}{2}\\)\n\n\\(= 8\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{108}\\).",
+    "options": [
+      "\\(3\\sqrt{6}\\)",
+      "\\(\\sqrt{108}\\)",
+      "\\(7\\sqrt{3}\\)",
+      "\\(6\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 108.\n\n\\(108 = 36 \\times 3\\)\n\n\\(\\sqrt{108} = \\sqrt{36} \\times \\sqrt{3} = 6\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{132}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(12\\sqrt{11}\\)",
+      "\\(13\\sqrt{11}\\)",
+      "\\(12\\sqrt{121}\\)",
+      "\\(132\\sqrt{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{132}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{132\\sqrt{11}}{11}\\)\n\n\\(= 12\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{36}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(12\\sqrt{9}\\)",
+      "\\(12\\sqrt{3}\\)",
+      "\\(13\\sqrt{3}\\)",
+      "\\(36\\sqrt{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{36}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{36\\sqrt{3}}{3}\\)\n\n\\(= 12\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{208}\\).",
+    "options": [
+      "\\(4\\sqrt{13}\\)",
+      "\\(\\sqrt{208}\\)",
+      "\\(13\\sqrt{4}\\)",
+      "\\(5\\sqrt{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 208.\n\n\\(208 = 16 \\times 13\\)\n\n\\(\\sqrt{208} = \\sqrt{16} \\times \\sqrt{13} = 4\\sqrt{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{10} + \\sqrt{5})(\\sqrt{10} - \\sqrt{5})\\).",
+    "options": [
+      "50",
+      "15",
+      "6",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{10})^{2} - (\\sqrt{5})^{2}\\)\n\n\\(= 10 - 5 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{44}\\).",
+    "options": [
+      "\\(11\\sqrt{2}\\)",
+      "\\(\\sqrt{44}\\)",
+      "\\(2\\sqrt{11}\\)",
+      "\\(3\\sqrt{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 44.\n\n\\(44 = 4 \\times 11\\)\n\n\\(\\sqrt{44} = \\sqrt{4} \\times \\sqrt{11} = 2\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((5 + \\sqrt{5})^{2}\\).",
+    "options": [
+      "\\(20 + 10\\sqrt{5}\\)",
+      "\\(50 + 10\\sqrt{5}\\)",
+      "\\(30 + 5\\sqrt{5}\\)",
+      "\\(30 + 10\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 5^{2} + 2(5)(\\sqrt{5}) + (\\sqrt{5})^{2}\\)\n\n\\(= 25 + 10\\sqrt{5} + 5\\)\n\n\\(= 30 + 10\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{70}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(11\\sqrt{7}\\)",
+      "\\(10\\sqrt{49}\\)",
+      "\\(70\\sqrt{7}\\)",
+      "\\(10\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{70}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{70\\sqrt{7}}{7}\\)\n\n\\(= 10\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{2} + 7\\sqrt{2}\\).",
+    "options": [
+      "\\(18\\sqrt{4}\\)",
+      "\\(77\\sqrt{2}\\)",
+      "\\(18\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(11 + 7 = 18\\)\n\nSo the answer is \\(18\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{3} + \\sqrt{5})(\\sqrt{3} - \\sqrt{5})\\).",
+    "options": [
+      "-2",
+      "8",
+      "15",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{3})^{2} - (\\sqrt{5})^{2}\\)\n\n\\(= 3 - 5 = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{54}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(9\\sqrt{36}\\)",
+      "\\(9\\sqrt{6}\\)",
+      "\\(54\\sqrt{6}\\)",
+      "\\(10\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{54}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{54\\sqrt{6}}{6}\\)\n\n\\(= 9\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{99}\\).",
+    "options": [
+      "\\(4\\sqrt{11}\\)",
+      "\\(11\\sqrt{3}\\)",
+      "\\(3\\sqrt{11}\\)",
+      "\\(\\sqrt{99}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 99.\n\n\\(99 = 9 \\times 11\\)\n\n\\(\\sqrt{99} = \\sqrt{9} \\times \\sqrt{11} = 3\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{10} \\times \\sqrt{10}\\).",
+    "options": [
+      "\\(10\\)",
+      "\\(10\\sqrt{10}\\)",
+      "\\(\\sqrt{20}\\)",
+      "\\(11\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{10} \\times \\sqrt{10} = \\sqrt{100}\\)\n\n\\(\\sqrt{100} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{275}\\).",
+    "options": [
+      "\\(6\\sqrt{11}\\)",
+      "\\(\\sqrt{275}\\)",
+      "\\(11\\sqrt{5}\\)",
+      "\\(5\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 275.\n\n\\(275 = 25 \\times 11\\)\n\n\\(\\sqrt{275} = \\sqrt{25} \\times \\sqrt{11} = 5\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{11} + 5\\sqrt{11}\\).",
+    "options": [
+      "\\(40\\sqrt{11}\\)",
+      "\\(13\\sqrt{22}\\)",
+      "\\(3\\sqrt{11}\\)",
+      "\\(13\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(8 + 5 = 13\\)\n\nSo the answer is \\(13\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{5} + 8\\sqrt{5}\\).",
+    "options": [
+      "\\(3\\sqrt{5}\\)",
+      "\\(19\\sqrt{5}\\)",
+      "\\(19\\sqrt{10}\\)",
+      "\\(88\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(11 + 8 = 19\\)\n\nSo the answer is \\(19\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{2} + 9\\sqrt{2}\\).",
+    "options": [
+      "\\(-6\\sqrt{2}\\)",
+      "\\(27\\sqrt{2}\\)",
+      "\\(12\\sqrt{2}\\)",
+      "\\(12\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(3 + 9 = 12\\)\n\nSo the answer is \\(12\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{15}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(3\\sqrt{5}\\)",
+      "\\(3\\sqrt{25}\\)",
+      "\\(15\\sqrt{5}\\)",
+      "\\(4\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{15}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{15\\sqrt{5}}{5}\\)\n\n\\(= 3\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{117}\\).",
+    "options": [
+      "\\(3\\sqrt{13}\\)",
+      "\\(4\\sqrt{13}\\)",
+      "\\(\\sqrt{117}\\)",
+      "\\(13\\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 117.\n\n\\(117 = 9 \\times 13\\)\n\n\\(\\sqrt{117} = \\sqrt{9} \\times \\sqrt{13} = 3\\sqrt{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{3} \\times \\sqrt{2}\\).",
+    "options": [
+      "\\(\\sqrt{6}\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(2\\sqrt{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{3} \\times \\sqrt{2} = \\sqrt{6}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9\\sqrt{11} + 4\\sqrt{11}\\).",
+    "options": [
+      "\\(13\\sqrt{22}\\)",
+      "\\(36\\sqrt{11}\\)",
+      "\\(13\\sqrt{11}\\)",
+      "\\(5\\sqrt{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(9 + 4 = 13\\)\n\nSo the answer is \\(13\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{28}\\).",
+    "options": [
+      "\\(3\\sqrt{7}\\)",
+      "\\(7\\sqrt{2}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(\\sqrt{28}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 28.\n\n\\(28 = 4 \\times 7\\)\n\n\\(\\sqrt{28} = \\sqrt{4} \\times \\sqrt{7} = 2\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9\\sqrt{3} - 4\\sqrt{3}\\).",
+    "options": [
+      "\\(36\\sqrt{3}\\)",
+      "\\(5\\sqrt{6}\\)",
+      "\\(5\\sqrt{3}\\)",
+      "\\(13\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(9 - 4 = 5\\)\n\nSo the answer is \\(5\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{77}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(11\\sqrt{49}\\)",
+      "\\(77\\sqrt{7}\\)",
+      "\\(12\\sqrt{7}\\)",
+      "\\(11\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{77}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{77\\sqrt{7}}{7}\\)\n\n\\(= 11\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{98}\\).",
+    "options": [
+      "\\(7\\sqrt{2}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(\\sqrt{98}\\)",
+      "\\(8\\sqrt{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 98.\n\n\\(98 = 49 \\times 2\\)\n\n\\(\\sqrt{98} = \\sqrt{49} \\times \\sqrt{2} = 7\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{2} + 7\\sqrt{2}\\).",
+    "options": [
+      "\\(42\\sqrt{2}\\)",
+      "\\(-1\\sqrt{2}\\)",
+      "\\(13\\sqrt{4}\\)",
+      "\\(13\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(6 + 7 = 13\\)\n\nSo the answer is \\(13\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{14}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(8\\sqrt{2}\\)",
+      "\\(14\\sqrt{2}\\)",
+      "\\(7\\sqrt{4}\\)",
+      "\\(7\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{14}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{14\\sqrt{2}}{2}\\)\n\n\\(= 7\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{3} - 4\\sqrt{3}\\).",
+    "options": [
+      "\\(7\\sqrt{3}\\)",
+      "\\(15\\sqrt{3}\\)",
+      "\\(7\\sqrt{6}\\)",
+      "\\(44\\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(11 - 4 = 7\\)\n\nSo the answer is \\(7\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{5} + 7\\sqrt{5}\\).",
+    "options": [
+      "\\(42\\sqrt{5}\\)",
+      "\\(13\\sqrt{5}\\)",
+      "\\(13\\sqrt{10}\\)",
+      "\\(-1\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(6 + 7 = 13\\)\n\nSo the answer is \\(13\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{20}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(4\\sqrt{5}\\)",
+      "\\(4\\sqrt{25}\\)",
+      "\\(5\\sqrt{5}\\)",
+      "\\(20\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{20}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{20\\sqrt{5}}{5}\\)\n\n\\(= 4\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{11} + \\sqrt{2})(\\sqrt{11} - \\sqrt{2})\\).",
+    "options": [
+      "10",
+      "22",
+      "13",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{11})^{2} - (\\sqrt{2})^{2}\\)\n\n\\(= 11 - 2 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{3} + 3\\sqrt{3}\\).",
+    "options": [
+      "\\(11\\sqrt{3}\\)",
+      "\\(24\\sqrt{3}\\)",
+      "\\(11\\sqrt{6}\\)",
+      "\\(5\\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(8 + 3 = 11\\)\n\nSo the answer is \\(11\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{90}\\).",
+    "options": [
+      "\\(4\\sqrt{10}\\)",
+      "\\(3\\sqrt{10}\\)",
+      "\\(10\\sqrt{3}\\)",
+      "\\(\\sqrt{90}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 90.\n\n\\(90 = 9 \\times 10\\)\n\n\\(\\sqrt{90} = \\sqrt{9} \\times \\sqrt{10} = 3\\sqrt{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{3} - 2\\sqrt{3}\\).",
+    "options": [
+      "\\(9\\sqrt{6}\\)",
+      "\\(22\\sqrt{3}\\)",
+      "\\(9\\sqrt{3}\\)",
+      "\\(13\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(11 - 2 = 9\\)\n\nSo the answer is \\(9\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{396}\\).",
+    "options": [
+      "\\(7\\sqrt{11}\\)",
+      "\\(6\\sqrt{11}\\)",
+      "\\(11\\sqrt{6}\\)",
+      "\\(\\sqrt{396}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 396.\n\n\\(396 = 36 \\times 11\\)\n\n\\(\\sqrt{396} = \\sqrt{36} \\times \\sqrt{11} = 6\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{360}\\).",
+    "options": [
+      "\\(6\\sqrt{10}\\)",
+      "\\(7\\sqrt{10}\\)",
+      "\\(10\\sqrt{6}\\)",
+      "\\(\\sqrt{360}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 360.\n\n\\(360 = 36 \\times 10\\)\n\n\\(\\sqrt{360} = \\sqrt{36} \\times \\sqrt{10} = 6\\sqrt{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{6} \\times \\sqrt{10}\\).",
+    "options": [
+      "\\(\\sqrt{16}\\)",
+      "\\(2\\sqrt{15}\\)",
+      "\\(3\\sqrt{15}\\)",
+      "\\(6\\sqrt{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{6} \\times \\sqrt{10} = \\sqrt{60}\\)\n\n\\(\\sqrt{60} = 2\\sqrt{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{2} - 6\\sqrt{2}\\).",
+    "options": [
+      "\\(4\\sqrt{4}\\)",
+      "\\(60\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)",
+      "\\(16\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(10 - 6 = 4\\)\n\nSo the answer is \\(4\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((3 + \\sqrt{2})^{2}\\).",
+    "options": [
+      "\\(13 + 6\\sqrt{2}\\)",
+      "\\(7 + 6\\sqrt{2}\\)",
+      "\\(11 + 3\\sqrt{2}\\)",
+      "\\(11 + 6\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 3^{2} + 2(3)(\\sqrt{2}) + (\\sqrt{2})^{2}\\)\n\n\\(= 9 + 6\\sqrt{2} + 2\\)\n\n\\(= 11 + 6\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{42}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(7\\sqrt{6}\\)",
+      "\\(7\\sqrt{36}\\)",
+      "\\(42\\sqrt{6}\\)",
+      "\\(8\\sqrt{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{42}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{42\\sqrt{6}}{6}\\)\n\n\\(= 7\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{2} - 3\\sqrt{2}\\).",
+    "options": [
+      "\\(9\\sqrt{2}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(18\\sqrt{2}\\)",
+      "\\(3\\sqrt{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(6 - 3 = 3\\)\n\nSo the answer is \\(3\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{5} + 6\\sqrt{5}\\).",
+    "options": [
+      "\\(-2\\sqrt{5}\\)",
+      "\\(24\\sqrt{5}\\)",
+      "\\(10\\sqrt{5}\\)",
+      "\\(10\\sqrt{10}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(4 + 6 = 10\\)\n\nSo the answer is \\(10\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{5} - 7\\sqrt{5}\\).",
+    "options": [
+      "\\(\\sqrt{5}\\)",
+      "\\(15\\sqrt{5}\\)",
+      "\\(56\\sqrt{5}\\)",
+      "\\(\\sqrt{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(8 - 7 = 1\\)\n\nSo the answer is \\(\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{45}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(45\\sqrt{5}\\)",
+      "\\(9\\sqrt{25}\\)",
+      "\\(10\\sqrt{5}\\)",
+      "\\(9\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{45}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{45\\sqrt{5}}{5}\\)\n\n\\(= 9\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{3} \\times \\sqrt{7}\\).",
+    "options": [
+      "\\(\\sqrt{21}\\)",
+      "\\(2\\sqrt{21}\\)",
+      "\\(\\sqrt{10}\\)",
+      "\\(3\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{3} \\times \\sqrt{7} = \\sqrt{21}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{21}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{15}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(6\\sqrt{3}\\)",
+      "\\(5\\sqrt{3}\\)",
+      "\\(15\\sqrt{3}\\)",
+      "\\(5\\sqrt{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{15}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{15\\sqrt{3}}{3}\\)\n\n\\(= 5\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{55}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(5\\sqrt{121}\\)",
+      "\\(5\\sqrt{11}\\)",
+      "\\(6\\sqrt{11}\\)",
+      "\\(55\\sqrt{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{55}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{55\\sqrt{11}}{11}\\)\n\n\\(= 5\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{66}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(12\\sqrt{6}\\)",
+      "\\(11\\sqrt{6}\\)",
+      "\\(66\\sqrt{6}\\)",
+      "\\(11\\sqrt{36}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{66}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{66\\sqrt{6}}{6}\\)\n\n\\(= 11\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{490}\\).",
+    "options": [
+      "\\(8\\sqrt{10}\\)",
+      "\\(\\sqrt{490}\\)",
+      "\\(10\\sqrt{7}\\)",
+      "\\(7\\sqrt{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 490.\n\n\\(490 = 49 \\times 10\\)\n\n\\(\\sqrt{490} = \\sqrt{49} \\times \\sqrt{10} = 7\\sqrt{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{2} + 5\\sqrt{2}\\).",
+    "options": [
+      "\\(20\\sqrt{2}\\)",
+      "\\(-1\\sqrt{2}\\)",
+      "\\(9\\sqrt{2}\\)",
+      "\\(9\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(4 + 5 = 9\\)\n\nSo the answer is \\(9\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{30}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(6\\sqrt{5}\\)",
+      "\\(7\\sqrt{5}\\)",
+      "\\(6\\sqrt{25}\\)",
+      "\\(30\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{30}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{30\\sqrt{5}}{5}\\)\n\n\\(= 6\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{2} + 10\\sqrt{2}\\).",
+    "options": [
+      "\\(20\\sqrt{2}\\)",
+      "\\(0\\sqrt{2}\\)",
+      "\\(100\\sqrt{2}\\)",
+      "\\(20\\sqrt{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(10 + 10 = 20\\)\n\nSo the answer is \\(20\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{6} - 4\\sqrt{6}\\).",
+    "options": [
+      "\\(14\\sqrt{6}\\)",
+      "\\(40\\sqrt{6}\\)",
+      "\\(6\\sqrt{6}\\)",
+      "\\(6\\sqrt{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(10 - 4 = 6\\)\n\nSo the answer is \\(6\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{7} + 8\\sqrt{7}\\).",
+    "options": [
+      "\\(-4\\sqrt{7}\\)",
+      "\\(12\\sqrt{14}\\)",
+      "\\(12\\sqrt{7}\\)",
+      "\\(32\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(4 + 8 = 12\\)\n\nSo the answer is \\(12\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{63}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(9\\sqrt{7}\\)",
+      "\\(9\\sqrt{49}\\)",
+      "\\(10\\sqrt{7}\\)",
+      "\\(63\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{63}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{63\\sqrt{7}}{7}\\)\n\n\\(= 9\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{3} + 4\\sqrt{3}\\).",
+    "options": [
+      "\\(-2\\sqrt{3}\\)",
+      "\\(6\\sqrt{3}\\)",
+      "\\(6\\sqrt{6}\\)",
+      "\\(8\\sqrt{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(2 + 4 = 6\\)\n\nSo the answer is \\(6\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{7} - 9\\sqrt{7}\\).",
+    "options": [
+      "\\(90\\sqrt{7}\\)",
+      "\\(\\sqrt{14}\\)",
+      "\\(\\sqrt{7}\\)",
+      "\\(19\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(10 - 9 = 1\\)\n\nSo the answer is \\(\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{3} + 10\\sqrt{3}\\).",
+    "options": [
+      "\\(20\\sqrt{3}\\)",
+      "\\(20\\sqrt{6}\\)",
+      "\\(100\\sqrt{3}\\)",
+      "\\(0\\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(10 + 10 = 20\\)\n\nSo the answer is \\(20\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{11} + 2\\sqrt{11}\\).",
+    "options": [
+      "\\(10\\sqrt{22}\\)",
+      "\\(10\\sqrt{11}\\)",
+      "\\(16\\sqrt{11}\\)",
+      "\\(6\\sqrt{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(8 + 2 = 10\\)\n\nSo the answer is \\(10\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((5 + \\sqrt{2})^{2}\\).",
+    "options": [
+      "\\(23 + 10\\sqrt{2}\\)",
+      "\\(29 + 10\\sqrt{2}\\)",
+      "\\(27 + 10\\sqrt{2}\\)",
+      "\\(27 + 5\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 5^{2} + 2(5)(\\sqrt{2}) + (\\sqrt{2})^{2}\\)\n\n\\(= 25 + 10\\sqrt{2} + 2\\)\n\n\\(= 27 + 10\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{5} + 2\\sqrt{5}\\).",
+    "options": [
+      "\\(8\\sqrt{5}\\)",
+      "\\(2\\sqrt{5}\\)",
+      "\\(6\\sqrt{10}\\)",
+      "\\(6\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(4 + 2 = 6\\)\n\nSo the answer is \\(6\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{12}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(5\\sqrt{3}\\)",
+      "\\(12\\sqrt{3}\\)",
+      "\\(4\\sqrt{3}\\)",
+      "\\(4\\sqrt{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{12}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{12\\sqrt{3}}{3}\\)\n\n\\(= 4\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{11} + \\sqrt{7})(\\sqrt{11} - \\sqrt{7})\\).",
+    "options": [
+      "77",
+      "18",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{11})^{2} - (\\sqrt{7})^{2}\\)\n\n\\(= 11 - 7 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((4 + \\sqrt{3})^{2}\\).",
+    "options": [
+      "\\(13 + 8\\sqrt{3}\\)",
+      "\\(25 + 8\\sqrt{3}\\)",
+      "\\(19 + 4\\sqrt{3}\\)",
+      "\\(19 + 8\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 4^{2} + 2(4)(\\sqrt{3}) + (\\sqrt{3})^{2}\\)\n\n\\(= 16 + 8\\sqrt{3} + 3\\)\n\n\\(= 19 + 8\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{22}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(22\\sqrt{2}\\)",
+      "\\(11\\sqrt{2}\\)",
+      "\\(12\\sqrt{2}\\)",
+      "\\(11\\sqrt{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{22}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{22\\sqrt{2}}{2}\\)\n\n\\(= 11\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{80}\\).",
+    "options": [
+      "\\(5\\sqrt{4}\\)",
+      "\\(4\\sqrt{5}\\)",
+      "\\(5\\sqrt{5}\\)",
+      "\\(\\sqrt{80}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 80.\n\n\\(80 = 16 \\times 5\\)\n\n\\(\\sqrt{80} = \\sqrt{16} \\times \\sqrt{5} = 4\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{75}\\).",
+    "options": [
+      "\\(3\\sqrt{5}\\)",
+      "\\(\\sqrt{75}\\)",
+      "\\(6\\sqrt{3}\\)",
+      "\\(5\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 75.\n\n\\(75 = 25 \\times 3\\)\n\n\\(\\sqrt{75} = \\sqrt{25} \\times \\sqrt{3} = 5\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{6} + 12\\sqrt{6}\\).",
+    "options": [
+      "\\(20\\sqrt{12}\\)",
+      "\\(96\\sqrt{6}\\)",
+      "\\(-4\\sqrt{6}\\)",
+      "\\(20\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(8 + 12 = 20\\)\n\nSo the answer is \\(20\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{6} - 6\\sqrt{6}\\).",
+    "options": [
+      "\\(16\\sqrt{6}\\)",
+      "\\(4\\sqrt{12}\\)",
+      "\\(4\\sqrt{6}\\)",
+      "\\(60\\sqrt{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(10 - 6 = 4\\)\n\nSo the answer is \\(4\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{11} - 2\\sqrt{11}\\).",
+    "options": [
+      "\\(9\\sqrt{11}\\)",
+      "\\(9\\sqrt{22}\\)",
+      "\\(22\\sqrt{11}\\)",
+      "\\(13\\sqrt{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(11 - 2 = 9\\)\n\nSo the answer is \\(9\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{5} + 6\\sqrt{5}\\).",
+    "options": [
+      "\\(-4\\sqrt{5}\\)",
+      "\\(12\\sqrt{5}\\)",
+      "\\(8\\sqrt{10}\\)",
+      "\\(8\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(2 + 6 = 8\\)\n\nSo the answer is \\(8\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{5} + 8\\sqrt{5}\\).",
+    "options": [
+      "\\(16\\sqrt{10}\\)",
+      "\\(16\\sqrt{5}\\)",
+      "\\(64\\sqrt{5}\\)",
+      "\\(0\\sqrt{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(8 + 8 = 16\\)\n\nSo the answer is \\(16\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{6} + 11\\sqrt{6}\\).",
+    "options": [
+      "\\(21\\sqrt{12}\\)",
+      "\\(-1\\sqrt{6}\\)",
+      "\\(110\\sqrt{6}\\)",
+      "\\(21\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(10 + 11 = 21\\)\n\nSo the answer is \\(21\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{5} \\times \\sqrt{6}\\).",
+    "options": [
+      "\\(\\sqrt{30}\\)",
+      "\\(\\sqrt{11}\\)",
+      "\\(2\\sqrt{30}\\)",
+      "\\(5\\sqrt{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{5} \\times \\sqrt{6} = \\sqrt{30}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{30}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9\\sqrt{7} + 10\\sqrt{7}\\).",
+    "options": [
+      "\\(-1\\sqrt{7}\\)",
+      "\\(19\\sqrt{7}\\)",
+      "\\(90\\sqrt{7}\\)",
+      "\\(19\\sqrt{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(9 + 10 = 19\\)\n\nSo the answer is \\(19\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{5} - 3\\sqrt{5}\\).",
+    "options": [
+      "\\(7\\sqrt{5}\\)",
+      "\\(\\sqrt{10}\\)",
+      "\\(12\\sqrt{5}\\)",
+      "\\(\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(4 - 3 = 1\\)\n\nSo the answer is \\(\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{10} \\times \\sqrt{6}\\).",
+    "options": [
+      "\\(\\sqrt{16}\\)",
+      "\\(2\\sqrt{15}\\)",
+      "\\(3\\sqrt{15}\\)",
+      "\\(10\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{10} \\times \\sqrt{6} = \\sqrt{60}\\)\n\n\\(\\sqrt{60} = 2\\sqrt{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5\\sqrt{7} + 3\\sqrt{7}\\).",
+    "options": [
+      "\\(15\\sqrt{7}\\)",
+      "\\(8\\sqrt{14}\\)",
+      "\\(8\\sqrt{7}\\)",
+      "\\(2\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(5 + 3 = 8\\)\n\nSo the answer is \\(8\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{11} + 7\\sqrt{11}\\).",
+    "options": [
+      "\\(-4\\sqrt{11}\\)",
+      "\\(10\\sqrt{22}\\)",
+      "\\(10\\sqrt{11}\\)",
+      "\\(21\\sqrt{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(3 + 7 = 10\\)\n\nSo the answer is \\(10\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{7} + 9\\sqrt{7}\\).",
+    "options": [
+      "\\(21\\sqrt{14}\\)",
+      "\\(21\\sqrt{7}\\)",
+      "\\(108\\sqrt{7}\\)",
+      "\\(3\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(12 + 9 = 21\\)\n\nSo the answer is \\(21\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{5} + 3\\sqrt{5}\\).",
+    "options": [
+      "\\(13\\sqrt{10}\\)",
+      "\\(7\\sqrt{5}\\)",
+      "\\(30\\sqrt{5}\\)",
+      "\\(13\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(10 + 3 = 13\\)\n\nSo the answer is \\(13\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Expand and simplify \\((2 + \\sqrt{3})^{2}\\).",
+    "options": [
+      "\\(13 + 4\\sqrt{3}\\)",
+      "\\(7 + 2\\sqrt{3}\\)",
+      "\\(7 + 4\\sqrt{3}\\)",
+      "\\(1 + 4\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{2} = a^{2} + 2ab + b^{2}\\)\n\n\\(= 2^{2} + 2(2)(\\sqrt{3}) + (\\sqrt{3})^{2}\\)\n\n\\(= 4 + 4\\sqrt{3} + 3\\)\n\n\\(= 7 + 4\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{9}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(3\\sqrt{3}\\)",
+      "\\(9\\sqrt{3}\\)",
+      "\\(4\\sqrt{3}\\)",
+      "\\(3\\sqrt{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{9}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{9\\sqrt{3}}{3}\\)\n\n\\(= 3\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{2} + 12\\sqrt{2}\\).",
+    "options": [
+      "\\(24\\sqrt{4}\\)",
+      "\\(0\\sqrt{2}\\)",
+      "\\(144\\sqrt{2}\\)",
+      "\\(24\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(12 + 12 = 24\\)\n\nSo the answer is \\(24\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{27}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(9\\sqrt{9}\\)",
+      "\\(10\\sqrt{3}\\)",
+      "\\(27\\sqrt{3}\\)",
+      "\\(9\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{27}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{27\\sqrt{3}}{3}\\)\n\n\\(= 9\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{3} + 10\\sqrt{3}\\).",
+    "options": [
+      "\\(60\\sqrt{3}\\)",
+      "\\(16\\sqrt{6}\\)",
+      "\\(16\\sqrt{3}\\)",
+      "\\(-4\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(6 + 10 = 16\\)\n\nSo the answer is \\(16\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{4}{\\sqrt{2}}\\).",
+    "options": [
+      "\\(3\\sqrt{2}\\)",
+      "\\(2\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)",
+      "\\(2\\sqrt{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{2}\\).\n\n\\(\\frac{4}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{4\\sqrt{2}}{2}\\)\n\n\\(= 2\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{3} \\times \\sqrt{10}\\).",
+    "options": [
+      "\\(\\sqrt{30}\\)",
+      "\\(\\sqrt{13}\\)",
+      "\\(2\\sqrt{30}\\)",
+      "\\(3\\sqrt{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{3} \\times \\sqrt{10} = \\sqrt{30}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{30}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{7} - 4\\sqrt{7}\\).",
+    "options": [
+      "\\(10\\sqrt{7}\\)",
+      "\\(2\\sqrt{14}\\)",
+      "\\(2\\sqrt{7}\\)",
+      "\\(24\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(6 - 4 = 2\\)\n\nSo the answer is \\(2\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{2} + 9\\sqrt{2}\\).",
+    "options": [
+      "\\(108\\sqrt{2}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(21\\sqrt{4}\\)",
+      "\\(21\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(12 + 9 = 21\\)\n\nSo the answer is \\(21\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{24}\\).",
+    "options": [
+      "\\(3\\sqrt{6}\\)",
+      "\\(6\\sqrt{2}\\)",
+      "\\(\\sqrt{24}\\)",
+      "\\(2\\sqrt{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 24.\n\n\\(24 = 4 \\times 6\\)\n\n\\(\\sqrt{24} = \\sqrt{4} \\times \\sqrt{6} = 2\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{11} + 5\\sqrt{11}\\).",
+    "options": [
+      "\\(7\\sqrt{22}\\)",
+      "\\(-3\\sqrt{11}\\)",
+      "\\(10\\sqrt{11}\\)",
+      "\\(7\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(2 + 5 = 7\\)\n\nSo the answer is \\(7\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{6} \\times \\sqrt{2}\\).",
+    "options": [
+      "\\(2\\sqrt{3}\\)",
+      "\\(\\sqrt{8}\\)",
+      "\\(6\\sqrt{2}\\)",
+      "\\(3\\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{6} \\times \\sqrt{2} = \\sqrt{12}\\)\n\n\\(\\sqrt{12} = 2\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{44}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(5\\sqrt{11}\\)",
+      "\\(44\\sqrt{11}\\)",
+      "\\(4\\sqrt{121}\\)",
+      "\\(4\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{44}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{44\\sqrt{11}}{11}\\)\n\n\\(= 4\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{3} + 12\\sqrt{3}\\).",
+    "options": [
+      "\\(72\\sqrt{3}\\)",
+      "\\(18\\sqrt{3}\\)",
+      "\\(-6\\sqrt{3}\\)",
+      "\\(18\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(6 + 12 = 18\\)\n\nSo the answer is \\(18\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{11} + 7\\sqrt{11}\\).",
+    "options": [
+      "\\(5\\sqrt{11}\\)",
+      "\\(19\\sqrt{22}\\)",
+      "\\(19\\sqrt{11}\\)",
+      "\\(84\\sqrt{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(12 + 7 = 19\\)\n\nSo the answer is \\(19\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{112}\\).",
+    "options": [
+      "\\(7\\sqrt{4}\\)",
+      "\\(5\\sqrt{7}\\)",
+      "\\(4\\sqrt{7}\\)",
+      "\\(\\sqrt{112}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 112.\n\n\\(112 = 16 \\times 7\\)\n\n\\(\\sqrt{112} = \\sqrt{16} \\times \\sqrt{7} = 4\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{468}\\).",
+    "options": [
+      "\\(6\\sqrt{13}\\)",
+      "\\(7\\sqrt{13}\\)",
+      "\\(13\\sqrt{6}\\)",
+      "\\(\\sqrt{468}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 468.\n\n\\(468 = 36 \\times 13\\)\n\n\\(\\sqrt{468} = \\sqrt{36} \\times \\sqrt{13} = 6\\sqrt{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{55}{\\sqrt{5}}\\).",
+    "options": [
+      "\\(55\\sqrt{5}\\)",
+      "\\(12\\sqrt{5}\\)",
+      "\\(11\\sqrt{5}\\)",
+      "\\(11\\sqrt{25}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{5}\\).\n\n\\(\\frac{55}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{55\\sqrt{5}}{5}\\)\n\n\\(= 11\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{2} + 8\\sqrt{2}\\).",
+    "options": [
+      "\\(-4\\sqrt{2}\\)",
+      "\\(12\\sqrt{4}\\)",
+      "\\(12\\sqrt{2}\\)",
+      "\\(32\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(4 + 8 = 12\\)\n\nSo the answer is \\(12\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{28}{\\sqrt{7}}\\).",
+    "options": [
+      "\\(28\\sqrt{7}\\)",
+      "\\(5\\sqrt{7}\\)",
+      "\\(4\\sqrt{49}\\)",
+      "\\(4\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{7}\\).\n\n\\(\\frac{28}{\\sqrt{7}} \\times \\frac{\\sqrt{7}}{\\sqrt{7}} = \\frac{28\\sqrt{7}}{7}\\)\n\n\\(= 4\\sqrt{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{11} + 3\\sqrt{11}\\).",
+    "options": [
+      "\\(30\\sqrt{11}\\)",
+      "\\(13\\sqrt{11}\\)",
+      "\\(7\\sqrt{11}\\)",
+      "\\(13\\sqrt{22}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(10 + 3 = 13\\)\n\nSo the answer is \\(13\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{7} + 11\\sqrt{7}\\).",
+    "options": [
+      "\\(-7\\sqrt{7}\\)",
+      "\\(44\\sqrt{7}\\)",
+      "\\(15\\sqrt{7}\\)",
+      "\\(15\\sqrt{14}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(4 + 11 = 15\\)\n\nSo the answer is \\(15\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{50}\\).",
+    "options": [
+      "\\(2\\sqrt{5}\\)",
+      "\\(\\sqrt{50}\\)",
+      "\\(6\\sqrt{2}\\)",
+      "\\(5\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 50.\n\n\\(50 = 25 \\times 2\\)\n\n\\(\\sqrt{50} = \\sqrt{25} \\times \\sqrt{2} = 5\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{36}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(6\\sqrt{6}\\)",
+      "\\(6\\sqrt{36}\\)",
+      "\\(7\\sqrt{6}\\)",
+      "\\(36\\sqrt{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{36}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{36\\sqrt{6}}{6}\\)\n\n\\(= 6\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5\\sqrt{11} + 2\\sqrt{11}\\).",
+    "options": [
+      "\\(7\\sqrt{22}\\)",
+      "\\(10\\sqrt{11}\\)",
+      "\\(3\\sqrt{11}\\)",
+      "\\(7\\sqrt{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(5 + 2 = 7\\)\n\nSo the answer is \\(7\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{77}{\\sqrt{11}}\\).",
+    "options": [
+      "\\(7\\sqrt{11}\\)",
+      "\\(7\\sqrt{121}\\)",
+      "\\(77\\sqrt{11}\\)",
+      "\\(8\\sqrt{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{11}\\).\n\n\\(\\frac{77}{\\sqrt{11}} \\times \\frac{\\sqrt{11}}{\\sqrt{11}} = \\frac{77\\sqrt{11}}{11}\\)\n\n\\(= 7\\sqrt{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{2} + 3\\sqrt{2}\\).",
+    "options": [
+      "\\(5\\sqrt{2}\\)",
+      "\\(5\\sqrt{4}\\)",
+      "\\(6\\sqrt{2}\\)",
+      "\\(-1\\sqrt{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(2 + 3 = 5\\)\n\nSo the answer is \\(5\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{6} - 3\\sqrt{6}\\).",
+    "options": [
+      "\\(18\\sqrt{6}\\)",
+      "\\(3\\sqrt{6}\\)",
+      "\\(3\\sqrt{12}\\)",
+      "\\(9\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(6 - 3 = 3\\)\n\nSo the answer is \\(3\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{3} - 3\\sqrt{3}\\).",
+    "options": [
+      "\\(7\\sqrt{6}\\)",
+      "\\(13\\sqrt{3}\\)",
+      "\\(7\\sqrt{3}\\)",
+      "\\(30\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(10 - 3 = 7\\)\n\nSo the answer is \\(7\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8\\sqrt{2} + 5\\sqrt{2}\\).",
+    "options": [
+      "\\(13\\sqrt{2}\\)",
+      "\\(40\\sqrt{2}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(13\\sqrt{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(8 + 5 = 13\\)\n\nSo the answer is \\(13\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{11} + 8\\sqrt{11}\\).",
+    "options": [
+      "\\(3\\sqrt{11}\\)",
+      "\\(19\\sqrt{11}\\)",
+      "\\(88\\sqrt{11}\\)",
+      "\\(19\\sqrt{22}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(11 + 8 = 19\\)\n\nSo the answer is \\(19\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{11} + 12\\sqrt{11}\\).",
+    "options": [
+      "\\(132\\sqrt{11}\\)",
+      "\\(-1\\sqrt{11}\\)",
+      "\\(23\\sqrt{11}\\)",
+      "\\(23\\sqrt{22}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(11 + 12 = 23\\)\n\nSo the answer is \\(23\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{7} - 5\\sqrt{7}\\).",
+    "options": [
+      "\\(17\\sqrt{7}\\)",
+      "\\(60\\sqrt{7}\\)",
+      "\\(7\\sqrt{14}\\)",
+      "\\(7\\sqrt{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(12 - 5 = 7\\)\n\nSo the answer is \\(7\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{7} + 12\\sqrt{7}\\).",
+    "options": [
+      "\\(144\\sqrt{7}\\)",
+      "\\(0\\sqrt{7}\\)",
+      "\\(24\\sqrt{7}\\)",
+      "\\(24\\sqrt{14}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(12 + 12 = 24\\)\n\nSo the answer is \\(24\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{11} - 8\\sqrt{11}\\).",
+    "options": [
+      "\\(18\\sqrt{11}\\)",
+      "\\(2\\sqrt{11}\\)",
+      "\\(2\\sqrt{22}\\)",
+      "\\(80\\sqrt{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(10 - 8 = 2\\)\n\nSo the answer is \\(2\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{30}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(5\\sqrt{6}\\)",
+      "\\(5\\sqrt{36}\\)",
+      "\\(6\\sqrt{6}\\)",
+      "\\(30\\sqrt{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{30}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{30\\sqrt{6}}{6}\\)\n\n\\(= 5\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{3} + 9\\sqrt{3}\\).",
+    "options": [
+      "\\(108\\sqrt{3}\\)",
+      "\\(3\\sqrt{3}\\)",
+      "\\(21\\sqrt{6}\\)",
+      "\\(21\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(12 + 9 = 21\\)\n\nSo the answer is \\(21\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3\\sqrt{3} + 9\\sqrt{3}\\).",
+    "options": [
+      "\\(27\\sqrt{3}\\)",
+      "\\(-6\\sqrt{3}\\)",
+      "\\(12\\sqrt{6}\\)",
+      "\\(12\\sqrt{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(3 + 9 = 12\\)\n\nSo the answer is \\(12\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(10\\sqrt{6} + 8\\sqrt{6}\\).",
+    "options": [
+      "\\(2\\sqrt{6}\\)",
+      "\\(18\\sqrt{12}\\)",
+      "\\(18\\sqrt{6}\\)",
+      "\\(80\\sqrt{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(10 + 8 = 18\\)\n\nSo the answer is \\(18\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7\\sqrt{7} - 2\\sqrt{7}\\).",
+    "options": [
+      "\\(5\\sqrt{7}\\)",
+      "\\(14\\sqrt{7}\\)",
+      "\\(5\\sqrt{14}\\)",
+      "\\(9\\sqrt{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(7 - 2 = 5\\)\n\nSo the answer is \\(5\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{8}\\).",
+    "options": [
+      "\\(3\\sqrt{2}\\)",
+      "\\(2\\sqrt{3}\\)",
+      "\\(\\sqrt{8}\\)",
+      "\\(2\\sqrt{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Look for the largest perfect square factor of 8.\n\n\\(8 = 4 \\times 2\\)\n\n\\(\\sqrt{8} = \\sqrt{4} \\times \\sqrt{2} = 2\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{7} \\times \\sqrt{5}\\).",
+    "options": [
+      "\\(2\\sqrt{35}\\)",
+      "\\(\\sqrt{12}\\)",
+      "\\(7\\sqrt{5}\\)",
+      "\\(\\sqrt{35}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{7} \\times \\sqrt{5} = \\sqrt{35}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{35}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{5} - 6\\sqrt{5}\\).",
+    "options": [
+      "\\(5\\sqrt{5}\\)",
+      "\\(5\\sqrt{10}\\)",
+      "\\(17\\sqrt{5}\\)",
+      "\\(66\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(11 - 6 = 5\\)\n\nSo the answer is \\(5\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{6} \\times \\sqrt{3}\\).",
+    "options": [
+      "\\(4\\sqrt{2}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(\\sqrt{9}\\)",
+      "\\(6\\sqrt{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{6} \\times \\sqrt{3} = \\sqrt{18}\\)\n\n\\(\\sqrt{18} = 3\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{11} - 10\\sqrt{11}\\).",
+    "options": [
+      "\\(21\\sqrt{11}\\)",
+      "\\(110\\sqrt{11}\\)",
+      "\\(\\sqrt{11}\\)",
+      "\\(\\sqrt{22}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(11 - 10 = 1\\)\n\nSo the answer is \\(\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(11\\sqrt{6} + 7\\sqrt{6}\\).",
+    "options": [
+      "\\(18\\sqrt{12}\\)",
+      "\\(18\\sqrt{6}\\)",
+      "\\(77\\sqrt{6}\\)",
+      "\\(4\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(11 + 7 = 18\\)\n\nSo the answer is \\(18\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{21}{\\sqrt{3}}\\).",
+    "options": [
+      "\\(7\\sqrt{3}\\)",
+      "\\(7\\sqrt{9}\\)",
+      "\\(8\\sqrt{3}\\)",
+      "\\(21\\sqrt{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{3}\\).\n\n\\(\\frac{21}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{21\\sqrt{3}}{3}\\)\n\n\\(= 7\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{32}\\).",
+    "options": [
+      "\\(\\sqrt{32}\\)",
+      "\\(5\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)",
+      "\\(2\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Look for the largest perfect square factor of 32.\n\n\\(32 = 16 \\times 2\\)\n\n\\(\\sqrt{32} = \\sqrt{16} \\times \\sqrt{2} = 4\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4\\sqrt{3} - 2\\sqrt{3}\\).",
+    "options": [
+      "\\(8\\sqrt{3}\\)",
+      "\\(2\\sqrt{6}\\)",
+      "\\(2\\sqrt{3}\\)",
+      "\\(6\\sqrt{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{3}\\).\n\n\\(4 - 2 = 2\\)\n\nSo the answer is \\(2\\sqrt{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5\\sqrt{2} + 8\\sqrt{2}\\).",
+    "options": [
+      "\\(13\\sqrt{2}\\)",
+      "\\(-3\\sqrt{2}\\)",
+      "\\(40\\sqrt{2}\\)",
+      "\\(13\\sqrt{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(5 + 8 = 13\\)\n\nSo the answer is \\(13\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9\\sqrt{2} - 5\\sqrt{2}\\).",
+    "options": [
+      "\\(4\\sqrt{4}\\)",
+      "\\(45\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)",
+      "\\(14\\sqrt{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(9 - 5 = 4\\)\n\nSo the answer is \\(4\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{5} + 9\\sqrt{5}\\).",
+    "options": [
+      "\\(-7\\sqrt{5}\\)",
+      "\\(11\\sqrt{10}\\)",
+      "\\(18\\sqrt{5}\\)",
+      "\\(11\\sqrt{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(2 + 9 = 11\\)\n\nSo the answer is \\(11\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7\\sqrt{2} + 9\\sqrt{2}\\).",
+    "options": [
+      "\\(16\\sqrt{2}\\)",
+      "\\(16\\sqrt{4}\\)",
+      "\\(63\\sqrt{2}\\)",
+      "\\(-2\\sqrt{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(7 + 9 = 16\\)\n\nSo the answer is \\(16\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{2} \\times \\sqrt{5}\\).",
+    "options": [
+      "\\(2\\sqrt{5}\\)",
+      "\\(\\sqrt{10}\\)",
+      "\\(2\\sqrt{10}\\)",
+      "\\(\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{2} \\times \\sqrt{5} = \\sqrt{10}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5\\sqrt{6} + 11\\sqrt{6}\\).",
+    "options": [
+      "\\(16\\sqrt{12}\\)",
+      "\\(-6\\sqrt{6}\\)",
+      "\\(16\\sqrt{6}\\)",
+      "\\(55\\sqrt{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(5 + 11 = 16\\)\n\nSo the answer is \\(16\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{7} + 9\\sqrt{7}\\).",
+    "options": [
+      "\\(-7\\sqrt{7}\\)",
+      "\\(18\\sqrt{7}\\)",
+      "\\(11\\sqrt{7}\\)",
+      "\\(11\\sqrt{14}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(2 + 9 = 11\\)\n\nSo the answer is \\(11\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Rationalise the denominator of \\(\\frac{24}{\\sqrt{6}}\\).",
+    "options": [
+      "\\(4\\sqrt{36}\\)",
+      "\\(4\\sqrt{6}\\)",
+      "\\(5\\sqrt{6}\\)",
+      "\\(24\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerator and denominator by \\(\\sqrt{6}\\).\n\n\\(\\frac{24}{\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{24\\sqrt{6}}{6}\\)\n\n\\(= 4\\sqrt{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{10} \\times \\sqrt{7}\\).",
+    "options": [
+      "\\(2\\sqrt{70}\\)",
+      "\\(\\sqrt{70}\\)",
+      "\\(\\sqrt{17}\\)",
+      "\\(10\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{10} \\times \\sqrt{7} = \\sqrt{70}\\)\n\nThis does not simplify further, so the answer is \\(\\sqrt{70}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(12\\sqrt{5} - 2\\sqrt{5}\\).",
+    "options": [
+      "\\(10\\sqrt{5}\\)",
+      "\\(10\\sqrt{10}\\)",
+      "\\(14\\sqrt{5}\\)",
+      "\\(24\\sqrt{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{5}\\).\n\n\\(12 - 2 = 10\\)\n\nSo the answer is \\(10\\sqrt{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{20}\\).",
+    "options": [
+      "\\(5\\sqrt{2}\\)",
+      "\\(2\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(\\sqrt{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Look for the largest perfect square factor of 20.\n\n\\(20 = 4 \\times 5\\)\n\n\\(\\sqrt{20} = \\sqrt{4} \\times \\sqrt{5} = 2\\sqrt{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{12}\\).",
+    "options": [
+      "\\(2\\sqrt{3}\\)",
+      "\\(3\\sqrt{3}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(\\sqrt{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Look for the largest perfect square factor of 12.\n\n\\(12 = 4 \\times 3\\)\n\n\\(\\sqrt{12} = \\sqrt{4} \\times \\sqrt{3} = 2\\sqrt{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\sqrt{3} \\times \\sqrt{6}\\).",
+    "options": [
+      "\\(\\sqrt{9}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(3\\sqrt{6}\\)",
+      "\\(4\\sqrt{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}\\)\n\n\\(\\sqrt{3} \\times \\sqrt{6} = \\sqrt{18}\\)\n\n\\(\\sqrt{18} = 3\\sqrt{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5\\sqrt{6} + 5\\sqrt{6}\\).",
+    "options": [
+      "\\(10\\sqrt{12}\\)",
+      "\\(10\\sqrt{6}\\)",
+      "\\(25\\sqrt{6}\\)",
+      "\\(0\\sqrt{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(5 + 5 = 10\\)\n\nSo the answer is \\(10\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{2} + 8\\sqrt{2}\\).",
+    "options": [
+      "\\(-6\\sqrt{2}\\)",
+      "\\(16\\sqrt{2}\\)",
+      "\\(10\\sqrt{2}\\)",
+      "\\(10\\sqrt{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{2}\\).\n\n\\(2 + 8 = 10\\)\n\nSo the answer is \\(10\\sqrt{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{7} + 10\\sqrt{7}\\).",
+    "options": [
+      "\\(20\\sqrt{7}\\)",
+      "\\(12\\sqrt{7}\\)",
+      "\\(12\\sqrt{14}\\)",
+      "\\(-8\\sqrt{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(2 + 10 = 12\\)\n\nSo the answer is \\(12\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2\\sqrt{7} + 7\\sqrt{7}\\).",
+    "options": [
+      "\\(9\\sqrt{14}\\)",
+      "\\(14\\sqrt{7}\\)",
+      "\\(9\\sqrt{7}\\)",
+      "\\(-5\\sqrt{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{7}\\).\n\n\\(2 + 7 = 9\\)\n\nSo the answer is \\(9\\sqrt{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((\\sqrt{10} + \\sqrt{3})(\\sqrt{10} - \\sqrt{3})\\).",
+    "options": [
+      "30",
+      "8",
+      "13",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is the difference of two squares: \\((a+b)(a-b) = a^{2} - b^{2}\\).\n\n\\(= (\\sqrt{10})^{2} - (\\sqrt{3})^{2}\\)\n\n\\(= 10 - 3 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9\\sqrt{6} + 8\\sqrt{6}\\).",
+    "options": [
+      "\\(17\\sqrt{12}\\)",
+      "\\(\\sqrt{6}\\)",
+      "\\(17\\sqrt{6}\\)",
+      "\\(72\\sqrt{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{6}\\).\n\n\\(9 + 8 = 17\\)\n\nSo the answer is \\(17\\sqrt{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6\\sqrt{11} - 2\\sqrt{11}\\).",
+    "options": [
+      "\\(8\\sqrt{11}\\)",
+      "\\(4\\sqrt{22}\\)",
+      "\\(4\\sqrt{11}\\)",
+      "\\(12\\sqrt{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "These are like surds, so add or subtract the coefficients and keep \\(\\sqrt{11}\\).\n\n\\(6 - 2 = 4\\)\n\nSo the answer is \\(4\\sqrt{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "YGzoaH6XCy701WdJHE5I",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

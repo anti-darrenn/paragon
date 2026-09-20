@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 3)(x - 5)\\) crosses the x-axis.",
+    "options": [
+      "-5 or 3",
+      "3 or 5",
+      "-5 or -3",
+      "-3 or 5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 3)(x - 5) = 0\\)\n\nSo \\(x = -3\\) or \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-x - 8y + 7 = 0\\).",
+    "options": [
+      "\\(-8\\)",
+      "\\(8\\)",
+      "\\(-\\frac{1}{8}\\)",
+      "\\(\\frac{1}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-8y = 1x - 7\\)\n\n\\(y = \\frac{1}{-8}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{1}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 4x\\).",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "-2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 2(x - 1)^{2} - 2\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 6x - 18\\).",
+    "options": [
+      "-3",
+      "9",
+      "-9",
+      "-10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -1(x + 3)^{2} - 9\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 9x + 9\\).",
+    "options": [
+      "18",
+      "9",
+      "-9",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 9(0) + 9 = 9\\)\n\nSo the y-intercept is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 2x - 5\\).",
+    "options": [
+      "-5",
+      "2",
+      "-3",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 2(0) - 5 = -5\\)\n\nSo the y-intercept is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 1)(x + 6)\\) crosses the x-axis.",
+    "options": [
+      "-1 or 6",
+      "1 or 6",
+      "-6 or 1",
+      "-6 or -1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 1)(x + 6) = 0\\)\n\nSo \\(x = -1\\) or \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} - 10x - 10\\).",
+    "options": [
+      "\\(10\\)",
+      "\\(5\\)",
+      "\\(-5\\)",
+      "\\(-10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-10}{2(-1)} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-5x - y + 6 = 0\\).",
+    "options": [
+      "\\(\\frac{1}{5}\\)",
+      "\\(-\\frac{1}{5}\\)",
+      "\\(5\\)",
+      "\\(-5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-1y = 5x - 6\\)\n\n\\(y = \\frac{5}{-1}x + \\dots\\)\n\nSo the gradient is \\(-5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 4x - 7\\).",
+    "options": [
+      "4",
+      "-7",
+      "5",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 4x - 7\\) with \\(y = mx + c\\), the gradient is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} + 4x - 15\\).",
+    "options": [
+      "11",
+      "-12",
+      "-11",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -1(x - 2)^{2} - 11\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - 7x - 9\\).",
+    "options": [
+      "\\(-\\frac{7}{4}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(-\\frac{7}{2}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-7}{2(2)} = \\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(8x + 6y - 9 = 0\\).",
+    "options": [
+      "\\(-\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(-\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(6y = -8x + 9\\)\n\n\\(y = \\frac{-8}{6}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-5x - 2y + 9 = 0\\).",
+    "options": [
+      "\\(-\\frac{2}{5}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(-\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-2y = 5x - 9\\)\n\n\\(y = \\frac{5}{-2}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{5}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -2x^{2} + 12x - 21\\).",
+    "options": [
+      "-3",
+      "3",
+      "-5",
+      "-21"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = -2(x - 3)^{2} - 3\\)\n\nSince \\(a = -2\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} + 6x - 18\\).",
+    "options": [
+      "3",
+      "9",
+      "-10",
+      "-9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = -1(x - 3)^{2} - 9\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 7)(x - 6)\\) crosses the x-axis.",
+    "options": [
+      "6 or 7",
+      "-6 or 7",
+      "-7 or -6",
+      "-7 or 6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 7)(x - 6) = 0\\)\n\nSo \\(x = 7\\) or \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 1)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "-2 or 1",
+      "1 or 2",
+      "-1 or 2",
+      "-2 or -1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 1)(x + 2) = 0\\)\n\nSo \\(x = 1\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 1)(x - 4)\\) crosses the x-axis.",
+    "options": [
+      "1 or 4",
+      "-4 or 1",
+      "-4 or -1",
+      "-1 or 4"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 1)(x - 4) = 0\\)\n\nSo \\(x = -1\\) or \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} - x + 5\\).",
+    "options": [
+      "\\(-1\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-1}{2(-1)} = -\\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -2x^{2} + 24x - 82\\).",
+    "options": [
+      "6",
+      "10",
+      "-10",
+      "-12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -2(x - 6)^{2} - 10\\)\n\nSince \\(a = -2\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 7x + 2\\).",
+    "options": [
+      "9",
+      "2",
+      "7",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 7(0) + 2 = 2\\)\n\nSo the y-intercept is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = x + 2\\).",
+    "options": [
+      "-2",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 1(0) + 2 = 2\\)\n\nSo the y-intercept is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} - 8x + 3\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{8}{3}\\)",
+      "\\(-\\frac{8}{3}\\)",
+      "\\(-\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-8}{2(3)} = \\frac{4}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x - 12\\).",
+    "options": [
+      "-5",
+      "6",
+      "5",
+      "-12"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x - 12\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + x + 6\\).",
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(-\\frac{1}{4}\\)",
+      "\\(-\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{1}{2(2)} = -\\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - x - 3\\).",
+    "options": [
+      "\\(-\\frac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-1}{2(1)} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -5x + 10\\).",
+    "options": [
+      "-4",
+      "10",
+      "-5",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -5x + 10\\) with \\(y = mx + c\\), the gradient is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -5x + 4\\).",
+    "options": [
+      "-5",
+      "4",
+      "5",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -5x + 4\\) with \\(y = mx + c\\), the gradient is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 8x - 11\\).",
+    "options": [
+      "5",
+      "4",
+      "-5",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = -1(x + 4)^{2} + 5\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} + 5x\\).",
+    "options": [
+      "\\(-5\\)",
+      "\\(5\\)",
+      "\\(-\\frac{5}{2}\\)",
+      "\\(\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{5}{2(1)} = -\\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -9x + 11\\).",
+    "options": [
+      "-8",
+      "11",
+      "9",
+      "-9"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -9x + 11\\) with \\(y = mx + c\\), the gradient is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(4x + 8y - 8 = 0\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(-2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(8y = -4x + 8\\)\n\n\\(y = \\frac{-4}{8}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 8x - 11\\).",
+    "options": [
+      "-3",
+      "11",
+      "8",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 8(0) - 11 = -11\\)\n\nSo the y-intercept is -11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x + 2\\).",
+    "options": [
+      "2",
+      "5",
+      "6",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x + 2\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 2)(x - 1)\\) crosses the x-axis.",
+    "options": [
+      "-1 or 2",
+      "-2 or 1",
+      "1 or 2",
+      "-2 or -1"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 2)(x - 1) = 0\\)\n\nSo \\(x = -2\\) or \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} - 6x - 2\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(-2\\)",
+      "\\(2\\)",
+      "\\(-1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-6}{2(3)} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 7x - 5\\).",
+    "options": [
+      "-5",
+      "8",
+      "-7",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 7x - 5\\) with \\(y = mx + c\\), the gradient is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-3x - 8y + 0 = 0\\).",
+    "options": [
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(-\\frac{3}{8}\\)",
+      "\\(-\\frac{8}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-8y = 3x + 0\\)\n\n\\(y = \\frac{3}{-8}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{3}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -4x - 4\\).",
+    "options": [
+      "4",
+      "-4",
+      "-3",
+      "-0.25"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -4x - 4\\) with \\(y = mx + c\\), the gradient is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -x + 6\\).",
+    "options": [
+      "-1",
+      "6",
+      "5",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -1(0) + 6 = 6\\)\n\nSo the y-intercept is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -3x + 13\\).",
+    "options": [
+      "10",
+      "13",
+      "-13",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -3(0) + 13 = 13\\)\n\nSo the y-intercept is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -4x - 1\\).",
+    "options": [
+      "1",
+      "-4",
+      "-1",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -4(0) - 1 = -1\\)\n\nSo the y-intercept is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 9\\).",
+    "options": [
+      "-7",
+      "9",
+      "0",
+      "-9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 2(x + 0)^{2} - 9\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 5)(x - 3)\\) crosses the x-axis.",
+    "options": [
+      "3 or 5",
+      "-3 or 5",
+      "-5 or -3",
+      "-5 or 3"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 5)(x - 3) = 0\\)\n\nSo \\(x = -5\\) or \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -2x - 9\\).",
+    "options": [
+      "-11",
+      "9",
+      "-9",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -2(0) - 9 = -9\\)\n\nSo the y-intercept is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 9x - 4\\).",
+    "options": [
+      "-9",
+      "9",
+      "-4",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 9x - 4\\) with \\(y = mx + c\\), the gradient is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 7x - 3\\).",
+    "options": [
+      "\\(\\frac{7}{4}\\)",
+      "\\(-\\frac{7}{4}\\)",
+      "\\(\\frac{7}{2}\\)",
+      "\\(-\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{7}{2(2)} = -\\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x - 3)\\) crosses the x-axis.",
+    "options": [
+      "-3 or 4",
+      "-4 or -3",
+      "3 or 4",
+      "-4 or 3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x - 3) = 0\\)\n\nSo \\(x = 4\\) or \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 4x + 10\\).",
+    "options": [
+      "\\(-4\\)",
+      "\\(-2\\)",
+      "\\(2\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-4}{2(1)} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} + 4x + 8\\).",
+    "options": [
+      "12",
+      "2",
+      "11",
+      "-12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = -1(x - 2)^{2} + 12\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -5x + 1\\).",
+    "options": [
+      "-5",
+      "1",
+      "-1",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -5(0) + 1 = 1\\)\n\nSo the y-intercept is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 7)(x + 6)\\) crosses the x-axis.",
+    "options": [
+      "6 or 7",
+      "-6 or 7",
+      "-7 or 6",
+      "-7 or -6"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 7)(x + 6) = 0\\)\n\nSo \\(x = 7\\) or \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 8x\\).",
+    "options": [
+      "9",
+      "8",
+      "-8",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 8x\\) with \\(y = mx + c\\), the gradient is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 12x + 1\\).",
+    "options": [
+      "\\(-2\\)",
+      "\\(4\\)",
+      "\\(-4\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{12}{2(3)} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} + x + 4\\).",
+    "options": [
+      "\\(-\\frac{1}{2}\\)",
+      "\\(-1\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{1}{2(-1)} = \\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 9x - 2\\).",
+    "options": [
+      "\\(\\frac{9}{2}\\)",
+      "\\(9\\)",
+      "\\(-\\frac{9}{2}\\)",
+      "\\(-9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-9}{2(1)} = \\frac{9}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -2x^{2} + 8x - 12\\).",
+    "options": [
+      "-4",
+      "-6",
+      "4",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = -2(x - 2)^{2} - 4\\)\n\nSince \\(a = -2\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -9x - 1\\).",
+    "options": [
+      "1",
+      "-10",
+      "-9",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -9(0) - 1 = -1\\)\n\nSo the y-intercept is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -2x - 2\\).",
+    "options": [
+      "-2",
+      "-1",
+      "-0.5",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -2x - 2\\) with \\(y = mx + c\\), the gradient is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-3x + 8y + 6 = 0\\).",
+    "options": [
+      "\\(-\\frac{8}{3}\\)",
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(-\\frac{3}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(8y = 3x - 6\\)\n\n\\(y = \\frac{3}{8}x + \\dots\\)\n\nSo the gradient is \\(\\frac{3}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 8x - 10\\).",
+    "options": [
+      "8",
+      "9",
+      "-10",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 8x - 10\\) with \\(y = mx + c\\), the gradient is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 1)(x - 7)\\) crosses the x-axis.",
+    "options": [
+      "-1 or 7",
+      "1 or 7",
+      "-7 or -1",
+      "-7 or 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 1)(x - 7) = 0\\)\n\nSo \\(x = -1\\) or \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 6)(x - 7)\\) crosses the x-axis.",
+    "options": [
+      "-6 or 7",
+      "6 or 7",
+      "-7 or 6",
+      "-7 or -6"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 6)(x - 7) = 0\\)\n\nSo \\(x = 6\\) or \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} + 2x - 10\\).",
+    "options": [
+      "-1",
+      "-10",
+      "11",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 1(x + 1)^{2} - 11\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(7x - 6y + 2 = 0\\).",
+    "options": [
+      "\\(-\\frac{7}{6}\\)",
+      "\\(\\frac{6}{7}\\)",
+      "\\(-\\frac{6}{7}\\)",
+      "\\(\\frac{7}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-6y = -7x - 2\\)\n\n\\(y = \\frac{-7}{-6}x + \\dots\\)\n\nSo the gradient is \\(\\frac{7}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -3x + 10\\).",
+    "options": [
+      "10",
+      "-2",
+      "3",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -3x + 10\\) with \\(y = mx + c\\), the gradient is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -4x - 8\\).",
+    "options": [
+      "-4",
+      "-8",
+      "8",
+      "-12"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -4(0) - 8 = -8\\)\n\nSo the y-intercept is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - 6x + 10\\).",
+    "options": [
+      "\\(-3\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{3}{2}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-6}{2(2)} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 6x\\).",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(-3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{6}{2(2)} = -\\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-8x + 2y - 5 = 0\\).",
+    "options": [
+      "\\(-\\frac{1}{4}\\)",
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(2y = 8x + 5\\)\n\n\\(y = \\frac{8}{2}x + \\dots\\)\n\nSo the gradient is \\(4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 5x + 6\\).",
+    "options": [
+      "11",
+      "-6",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 5(0) + 6 = 6\\)\n\nSo the y-intercept is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x + 9\\).",
+    "options": [
+      "9",
+      "5",
+      "-5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x + 9\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 9x + 1\\).",
+    "options": [
+      "\\(-9\\)",
+      "\\(-\\frac{9}{2}\\)",
+      "\\(\\frac{9}{2}\\)",
+      "\\(9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-9}{2(1)} = \\frac{9}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 8x - 2\\).",
+    "options": [
+      "-2",
+      "6",
+      "8",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 8(0) - 2 = -2\\)\n\nSo the y-intercept is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} + x - 1\\).",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(-1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{1}{2(1)} = -\\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} + 4x + 1\\).",
+    "options": [
+      "1",
+      "-3",
+      "-2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 1(x + 2)^{2} - 3\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(3x - 8y + 5 = 0\\).",
+    "options": [
+      "\\(-\\frac{3}{8}\\)",
+      "\\(-\\frac{8}{3}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{8}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-8y = -3x - 5\\)\n\n\\(y = \\frac{-3}{-8}x + \\dots\\)\n\nSo the gradient is \\(\\frac{3}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -8x - 6\\).",
+    "options": [
+      "-7",
+      "8",
+      "-8",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -8x - 6\\) with \\(y = mx + c\\), the gradient is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -6x + 1\\).",
+    "options": [
+      "1",
+      "-5",
+      "-1",
+      "-6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -6(0) + 1 = 1\\)\n\nSo the y-intercept is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -7x + 12\\).",
+    "options": [
+      "5",
+      "-7",
+      "12",
+      "-12"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -7(0) + 12 = 12\\)\n\nSo the y-intercept is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -5x - 8\\).",
+    "options": [
+      "-8",
+      "-5",
+      "-13",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -5(0) - 8 = -8\\)\n\nSo the y-intercept is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 4x - 6\\).",
+    "options": [
+      "1",
+      "-8",
+      "-6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 2(x - 1)^{2} - 8\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 4)(x - 2)\\) crosses the x-axis.",
+    "options": [
+      "2 or 4",
+      "-4 or -2",
+      "-2 or 4",
+      "-4 or 2"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 4)(x - 2) = 0\\)\n\nSo \\(x = -4\\) or \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 3)(x + 7)\\) crosses the x-axis.",
+    "options": [
+      "-3 or 7",
+      "-7 or 3",
+      "3 or 7",
+      "-7 or -3"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 3)(x + 7) = 0\\)\n\nSo \\(x = -3\\) or \\(x = -7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 8x - 1\\).",
+    "options": [
+      "-1",
+      "1",
+      "7",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 8(0) - 1 = -1\\)\n\nSo the y-intercept is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 2x - 8\\).",
+    "options": [
+      "-6",
+      "8",
+      "2",
+      "-8"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 2(0) - 8 = -8\\)\n\nSo the y-intercept is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -6x - 6\\).",
+    "options": [
+      "6",
+      "-5",
+      "-0.17",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -6x - 6\\) with \\(y = mx + c\\), the gradient is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -6x - 11\\).",
+    "options": [
+      "-6",
+      "11",
+      "-11",
+      "-17"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -6(0) - 11 = -11\\)\n\nSo the y-intercept is -11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} + 8x - 7\\).",
+    "options": [
+      "-9",
+      "8",
+      "4",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = -1(x - 4)^{2} + 9\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} + 6x + 10\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(-6\\)",
+      "\\(3\\)",
+      "\\(-3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{6}{2(1)} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -7x + 1\\).",
+    "options": [
+      "-6",
+      "1",
+      "-7",
+      "-1"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -7(0) + 1 = 1\\)\n\nSo the y-intercept is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -5x - 9\\).",
+    "options": [
+      "-9",
+      "-5",
+      "5",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -5x - 9\\) with \\(y = mx + c\\), the gradient is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 8x + 21\\).",
+    "options": [
+      "-5",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = 1(x - 4)^{2} + 5\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 6)(x - 5)\\) crosses the x-axis.",
+    "options": [
+      "-6 or -5",
+      "-5 or 6",
+      "-6 or 5",
+      "5 or 6"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 6)(x - 5) = 0\\)\n\nSo \\(x = 6\\) or \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} + 12x - 2\\).",
+    "options": [
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(-6\\)",
+      "\\(-12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{12}{2(-1)} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 5)(x - 1)\\) crosses the x-axis.",
+    "options": [
+      "-5 or 1",
+      "1 or 5",
+      "-1 or 5",
+      "-5 or -1"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 5)(x - 1) = 0\\)\n\nSo \\(x = 5\\) or \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -x + 13\\).",
+    "options": [
+      "-1",
+      "13",
+      "12",
+      "-13"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -1(0) + 13 = 13\\)\n\nSo the y-intercept is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x - 9\\).",
+    "options": [
+      "-5",
+      "5",
+      "-9",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x - 9\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 2x + 1\\).",
+    "options": [
+      "-1",
+      "2",
+      "1",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 2(0) + 1 = 1\\)\n\nSo the y-intercept is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 1)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "-2 or 1",
+      "-1 or 2",
+      "-2 or -1",
+      "1 or 2"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 1)(x + 2) = 0\\)\n\nSo \\(x = -1\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -9x - 1\\).",
+    "options": [
+      "-8",
+      "9",
+      "-9",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -9x - 1\\) with \\(y = mx + c\\), the gradient is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - 9x - 10\\).",
+    "options": [
+      "\\(\\frac{9}{4}\\)",
+      "\\(-\\frac{9}{4}\\)",
+      "\\(-\\frac{9}{2}\\)",
+      "\\(\\frac{9}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-9}{2(2)} = \\frac{9}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 7)(x + 4)\\) crosses the x-axis.",
+    "options": [
+      "-7 or -4",
+      "-4 or 7",
+      "-7 or 4",
+      "4 or 7"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 7)(x + 4) = 0\\)\n\nSo \\(x = -7\\) or \\(x = -4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -9x + 9\\).",
+    "options": [
+      "-9",
+      "-8",
+      "9",
+      "-0.11"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -9x + 9\\) with \\(y = mx + c\\), the gradient is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 4x - 2\\).",
+    "options": [
+      "\\(-1\\)",
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{4}{2(2)} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 8x + 8\\).",
+    "options": [
+      "0.13",
+      "-8",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 8x + 8\\) with \\(y = mx + c\\), the gradient is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 6x - 4\\).",
+    "options": [
+      "7",
+      "-6",
+      "-4",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 6x - 4\\) with \\(y = mx + c\\), the gradient is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 3)(x - 1)\\) crosses the x-axis.",
+    "options": [
+      "1 or 3",
+      "-3 or 1",
+      "-3 or -1",
+      "-1 or 3"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 3)(x - 1) = 0\\)\n\nSo \\(x = -3\\) or \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = x\\).",
+    "options": [
+      "-1",
+      "2",
+      "0",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = x\\) with \\(y = mx + c\\), the gradient is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 5x - 3\\).",
+    "options": [
+      "\\(-\\frac{5}{2}\\)",
+      "\\(5\\)",
+      "\\(-5\\)",
+      "\\(\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-5}{2(1)} = \\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 8x + 8\\).",
+    "options": [
+      "4",
+      "-8",
+      "8",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 1(x - 4)^{2} - 8\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(2x + 7y + 9 = 0\\).",
+    "options": [
+      "\\(-\\frac{7}{2}\\)",
+      "\\(-\\frac{2}{7}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(7y = -2x - 9\\)\n\n\\(y = \\frac{-2}{7}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{2}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} + 7x + 8\\).",
+    "options": [
+      "\\(\\frac{7}{2}\\)",
+      "\\(7\\)",
+      "\\(-\\frac{7}{2}\\)",
+      "\\(-7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{7}{2(1)} = -\\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 10x + 4\\).",
+    "options": [
+      "\\(-5\\)",
+      "\\(10\\)",
+      "\\(5\\)",
+      "\\(-10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-10}{2(1)} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 5x + 5\\).",
+    "options": [
+      "\\(-\\frac{5}{6}\\)",
+      "\\(-\\frac{5}{3}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{5}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{5}{2(3)} = -\\frac{5}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = x + 13\\).",
+    "options": [
+      "1",
+      "13",
+      "-13",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 1(0) + 13 = 13\\)\n\nSo the y-intercept is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 2)(x + 4)\\) crosses the x-axis.",
+    "options": [
+      "-2 or 4",
+      "-4 or -2",
+      "-4 or 2",
+      "2 or 4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 2)(x + 4) = 0\\)\n\nSo \\(x = -2\\) or \\(x = -4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(4x + 6y - 2 = 0\\).",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(-\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(6y = -4x + 2\\)\n\n\\(y = \\frac{-4}{6}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 8x - 5\\).",
+    "options": [
+      "8",
+      "9",
+      "-5",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 8x - 5\\) with \\(y = mx + c\\), the gradient is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(2x + y + 5 = 0\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(1y = -2x - 5\\)\n\n\\(y = \\frac{-2}{1}x + \\dots\\)\n\nSo the gradient is \\(-2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = x - 2\\).",
+    "options": [
+      "2",
+      "-2",
+      "1",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = x - 2\\) with \\(y = mx + c\\), the gradient is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -6x + 12\\).",
+    "options": [
+      "12",
+      "6",
+      "-6",
+      "-12"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -6(0) + 12 = 12\\)\n\nSo the y-intercept is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-3x + y + 6 = 0\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(-\\frac{1}{3}\\)",
+      "\\(-3\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(1y = 3x - 6\\)\n\n\\(y = \\frac{3}{1}x + \\dots\\)\n\nSo the gradient is \\(3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 2x + 8\\).",
+    "options": [
+      "-2",
+      "3",
+      "8",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 2x + 8\\) with \\(y = mx + c\\), the gradient is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -2x - 3\\).",
+    "options": [
+      "3",
+      "-3",
+      "-2",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -2(0) - 3 = -3\\)\n\nSo the y-intercept is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -2x - 8\\).",
+    "options": [
+      "-2",
+      "2",
+      "-1",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -2x - 8\\) with \\(y = mx + c\\), the gradient is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} + 2x + 9\\).",
+    "options": [
+      "-1",
+      "9",
+      "-8",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 1(x + 1)^{2} + 8\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-2x - 4y + 10 = 0\\).",
+    "options": [
+      "\\(-2\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-4y = 2x - 10\\)\n\n\\(y = \\frac{2}{-4}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(7x + 3y + 8 = 0\\).",
+    "options": [
+      "\\(-\\frac{3}{7}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "\\(-\\frac{7}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(3y = -7x - 8\\)\n\n\\(y = \\frac{-7}{3}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{7}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 2x + 1\\).",
+    "options": [
+      "\\(-\\frac{1}{3}\\)",
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{2}{2(3)} = -\\frac{1}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-7x + 4y + 9 = 0\\).",
+    "options": [
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(-\\frac{7}{4}\\)",
+      "\\(-\\frac{4}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(4y = 7x - 9\\)\n\n\\(y = \\frac{7}{4}x + \\dots\\)\n\nSo the gradient is \\(\\frac{7}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 2x + 10\\).",
+    "options": [
+      "9",
+      "1",
+      "10",
+      "-9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = 1(x - 1)^{2} + 9\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + x + 10\\).",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(-\\frac{1}{4}\\)",
+      "\\(-\\frac{1}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{1}{2(2)} = -\\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} + 8x + 7\\).",
+    "options": [
+      "\\(4\\)",
+      "\\(-8\\)",
+      "\\(-4\\)",
+      "\\(8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{8}{2(-1)} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} - 8x + 6\\).",
+    "options": [
+      "\\(-8\\)",
+      "\\(-4\\)",
+      "\\(8\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-8}{2(-1)} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -2x^{2} + 10\\).",
+    "options": [
+      "8",
+      "0",
+      "10",
+      "-10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -2(x + 0)^{2} + 10\\)\n\nSince \\(a = -2\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is 10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(4x - 2y + 4 = 0\\).",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(-2\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-2y = -4x - 4\\)\n\n\\(y = \\frac{-4}{-2}x + \\dots\\)\n\nSo the gradient is \\(2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 6x + 7\\).",
+    "options": [
+      "2",
+      "-2",
+      "3",
+      "-1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 1(x - 3)^{2} - 2\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 6x + 8\\).",
+    "options": [
+      "8",
+      "7",
+      "-6",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 6x + 8\\) with \\(y = mx + c\\), the gradient is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(7x + 5y - 8 = 0\\).",
+    "options": [
+      "\\(-\\frac{7}{5}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(-\\frac{5}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(5y = -7x + 8\\)\n\n\\(y = \\frac{-7}{5}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{7}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - 5x + 6\\).",
+    "options": [
+      "\\(-\\frac{5}{2}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(-\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-5}{2(2)} = \\frac{5}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 4x + 5\\).",
+    "options": [
+      "4",
+      "5",
+      "-5",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 4(0) + 5 = 5\\)\n\nSo the y-intercept is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} - 2x + 9\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(-1\\)",
+      "\\(-2\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-2}{2(-1)} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 6\\).",
+    "options": [
+      "-6",
+      "6",
+      "8",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 2(x + 0)^{2} + 6\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -9x + 12\\).",
+    "options": [
+      "12",
+      "-9",
+      "3",
+      "-12"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -9(0) + 12 = 12\\)\n\nSo the y-intercept is 12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} - 5x - 8\\).",
+    "options": [
+      "\\(-\\frac{5}{2}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(5\\)",
+      "\\(-5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-5}{2(-1)} = -\\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 16x + 33\\).",
+    "options": [
+      "4",
+      "-1",
+      "3",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 2(x - 4)^{2} + 1\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -2x^{2} - 8x - 20\\).",
+    "options": [
+      "-12",
+      "-14",
+      "-2",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = -2(x + 2)^{2} - 12\\)\n\nSince \\(a = -2\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - x + 8\\).",
+    "options": [
+      "\\(-\\frac{1}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(-\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-1}{2(2)} = \\frac{1}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 2x + 9\\).",
+    "options": [
+      "9",
+      "8",
+      "-8",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 1(x - 1)^{2} + 8\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 10x + 2\\).",
+    "options": [
+      "\\(\\frac{5}{2}\\)",
+      "\\(-5\\)",
+      "\\(-\\frac{5}{2}\\)",
+      "\\(5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{10}{2(2)} = -\\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -4x - 7\\).",
+    "options": [
+      "-11",
+      "7",
+      "-7",
+      "-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -4(0) - 7 = -7\\)\n\nSo the y-intercept is -7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -4x + 13\\).",
+    "options": [
+      "13",
+      "9",
+      "-4",
+      "-13"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -4(0) + 13 = 13\\)\n\nSo the y-intercept is 13.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = x + 5\\).",
+    "options": [
+      "6",
+      "5",
+      "1",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 1(0) + 5 = 5\\)\n\nSo the y-intercept is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - 4x - 8\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(-2\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-4}{2(2)} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(x + 6y + 2 = 0\\).",
+    "options": [
+      "\\(-\\frac{1}{6}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(6\\)",
+      "\\(-6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(6y = -1x - 2\\)\n\n\\(y = \\frac{-1}{6}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{1}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 3\\).",
+    "options": [
+      "3",
+      "-4",
+      "-3",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -1(x + 0)^{2} - 3\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -5x + 12\\).",
+    "options": [
+      "-5",
+      "5",
+      "12",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -5x + 12\\) with \\(y = mx + c\\), the gradient is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(5x + 4y - 2 = 0\\).",
+    "options": [
+      "\\(-\\frac{4}{5}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(-\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(4y = -5x + 2\\)\n\n\\(y = \\frac{-5}{4}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{5}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-7x - 5y + 1 = 0\\).",
+    "options": [
+      "\\(\\frac{7}{5}\\)",
+      "\\(-\\frac{5}{7}\\)",
+      "\\(-\\frac{7}{5}\\)",
+      "\\(\\frac{5}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-5y = 7x - 1\\)\n\n\\(y = \\frac{7}{-5}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{7}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 2x - 5\\).",
+    "options": [
+      "-2",
+      "3",
+      "-5",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 2x - 5\\) with \\(y = mx + c\\), the gradient is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 7)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "-7 or 2",
+      "-2 or 7",
+      "-7 or -2",
+      "2 or 7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 7)(x + 2) = 0\\)\n\nSo \\(x = -7\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -9x - 4\\).",
+    "options": [
+      "-4",
+      "-13",
+      "-9",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -9(0) - 4 = -4\\)\n\nSo the y-intercept is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -2x - 5\\).",
+    "options": [
+      "5",
+      "-2",
+      "-5",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -2(0) - 5 = -5\\)\n\nSo the y-intercept is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -8x + 7\\).",
+    "options": [
+      "-7",
+      "-1",
+      "7",
+      "-8"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -8(0) + 7 = 7\\)\n\nSo the y-intercept is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} + x\\).",
+    "options": [
+      "\\(-\\frac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(-1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{1}{2(1)} = -\\frac{1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 9x - 2\\).",
+    "options": [
+      "10",
+      "9",
+      "-2",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 9x - 2\\) with \\(y = mx + c\\), the gradient is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 24x + 64\\).",
+    "options": [
+      "64",
+      "-8",
+      "-6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 2(x + 6)^{2} - 8\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -7x - 3\\).",
+    "options": [
+      "-10",
+      "3",
+      "-3",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -7(0) - 3 = -3\\)\n\nSo the y-intercept is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 8x + 9\\).",
+    "options": [
+      "1",
+      "3",
+      "-1",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = 2(x + 2)^{2} + 1\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 5x + 5\\).",
+    "options": [
+      "10",
+      "-5",
+      "5",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 5(0) + 5 = 5\\)\n\nSo the y-intercept is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -4x - 2\\).",
+    "options": [
+      "-3",
+      "-4",
+      "-2",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -4x - 2\\) with \\(y = mx + c\\), the gradient is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 12x + 22\\).",
+    "options": [
+      "-3",
+      "6",
+      "4",
+      "-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = 2(x + 3)^{2} + 4\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 7x + 7\\).",
+    "options": [
+      "14",
+      "-7",
+      "0",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 7(0) + 7 = 7\\)\n\nSo the y-intercept is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -7x + 6\\).",
+    "options": [
+      "-6",
+      "-1",
+      "6",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -7(0) + 6 = 6\\)\n\nSo the y-intercept is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} - 5x + 10\\).",
+    "options": [
+      "\\(-\\frac{5}{2}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(5\\)",
+      "\\(-5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-5}{2(-1)} = -\\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 7x + 6\\).",
+    "options": [
+      "\\(-\\frac{7}{6}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(-\\frac{7}{3}\\)",
+      "\\(\\frac{7}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{7}{2(3)} = -\\frac{7}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 6x + 7\\).",
+    "options": [
+      "6",
+      "-6",
+      "7",
+      "0.17"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 6x + 7\\) with \\(y = mx + c\\), the gradient is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} + 10x + 17\\).",
+    "options": [
+      "-7",
+      "-5",
+      "8",
+      "-8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 1(x + 5)^{2} - 8\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "2 or 4",
+      "-2 or 4",
+      "-4 or -2",
+      "-4 or 2"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x + 2) = 0\\)\n\nSo \\(x = 4\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -5x - 10\\).",
+    "options": [
+      "-5",
+      "10",
+      "-10",
+      "-15"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -5(0) - 10 = -10\\)\n\nSo the y-intercept is -10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x - 7\\).",
+    "options": [
+      "-5",
+      "5",
+      "-7",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x - 7\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-5x + 3y - 10 = 0\\).",
+    "options": [
+      "\\(-\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(-\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(3y = 5x + 10\\)\n\n\\(y = \\frac{5}{3}x + \\dots\\)\n\nSo the gradient is \\(\\frac{5}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 9x - 4\\).",
+    "options": [
+      "\\(\\frac{9}{4}\\)",
+      "\\(\\frac{9}{2}\\)",
+      "\\(-\\frac{9}{2}\\)",
+      "\\(-\\frac{9}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{9}{2(2)} = -\\frac{9}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-8x - 4y + 5 = 0\\).",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(-2\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-4y = 8x - 5\\)\n\n\\(y = \\frac{8}{-4}x + \\dots\\)\n\nSo the gradient is \\(-2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x - 7)\\) crosses the x-axis.",
+    "options": [
+      "-7 or -4",
+      "-7 or 4",
+      "4 or 7",
+      "-4 or 7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x - 7) = 0\\)\n\nSo \\(x = 4\\) or \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 4x + 1\\).",
+    "options": [
+      "1",
+      "4",
+      "-4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 4x + 1\\) with \\(y = mx + c\\), the gradient is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} + 2x - 1\\).",
+    "options": [
+      "\\(-1\\)",
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{2}{2(-1)} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 3\\).",
+    "options": [
+      "-2",
+      "0",
+      "-3",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = 1(x + 0)^{2} - 3\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 12x + 23\\).",
+    "options": [
+      "3",
+      "-5",
+      "7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 2(x - 3)^{2} + 5\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 7)(x + 4)\\) crosses the x-axis.",
+    "options": [
+      "-4 or 7",
+      "-7 or 4",
+      "-7 or -4",
+      "4 or 7"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 7)(x + 4) = 0\\)\n\nSo \\(x = 7\\) or \\(x = -4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 7x + 9\\).",
+    "options": [
+      "\\(-7\\)",
+      "\\(\\frac{7}{2}\\)",
+      "\\(7\\)",
+      "\\(-\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-7}{2(1)} = \\frac{7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 4)(x - 5)\\) crosses the x-axis.",
+    "options": [
+      "4 or 5",
+      "-5 or 4",
+      "-5 or -4",
+      "-4 or 5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 4)(x - 5) = 0\\)\n\nSo \\(x = -4\\) or \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} - 11x - 2\\).",
+    "options": [
+      "\\(\\frac{11}{6}\\)",
+      "\\(-\\frac{11}{6}\\)",
+      "\\(-\\frac{11}{3}\\)",
+      "\\(\\frac{11}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-11}{2(3)} = \\frac{11}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-7x - 2y + 3 = 0\\).",
+    "options": [
+      "\\(\\frac{2}{7}\\)",
+      "\\(-\\frac{2}{7}\\)",
+      "\\(-\\frac{7}{2}\\)",
+      "\\(\\frac{7}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-2y = 7x - 3\\)\n\n\\(y = \\frac{7}{-2}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{7}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -3x + 14\\).",
+    "options": [
+      "-14",
+      "14",
+      "-3",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -3(0) + 14 = 14\\)\n\nSo the y-intercept is 14.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = x + 11\\).",
+    "options": [
+      "1",
+      "2",
+      "-1",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = x + 11\\) with \\(y = mx + c\\), the gradient is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 2x - 1\\).",
+    "options": [
+      "-1",
+      "2",
+      "-2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 2x - 1\\) with \\(y = mx + c\\), the gradient is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 1)(x + 6)\\) crosses the x-axis.",
+    "options": [
+      "-1 or 6",
+      "1 or 6",
+      "-6 or 1",
+      "-6 or -1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 1)(x + 6) = 0\\)\n\nSo \\(x = 1\\) or \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 2x + 11\\).",
+    "options": [
+      "2",
+      "3",
+      "11",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 2x + 11\\) with \\(y = mx + c\\), the gradient is 2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -x - 9\\).",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -x - 9\\) with \\(y = mx + c\\), the gradient is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 9\\).",
+    "options": [
+      "-10",
+      "0",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -1(x + 0)^{2} - 9\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -5x - 4\\).",
+    "options": [
+      "-4",
+      "-9",
+      "4",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -5(0) - 4 = -4\\)\n\nSo the y-intercept is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-2x - 3y + 0 = 0\\).",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-3y = 2x + 0\\)\n\n\\(y = \\frac{2}{-3}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(3x + 8y + 1 = 0\\).",
+    "options": [
+      "\\(\\frac{8}{3}\\)",
+      "\\(-\\frac{3}{8}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(-\\frac{8}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(8y = -3x - 1\\)\n\n\\(y = \\frac{-3}{8}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{3}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -8x - 14\\).",
+    "options": [
+      "-8",
+      "-22",
+      "14",
+      "-14"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -8(0) - 14 = -14\\)\n\nSo the y-intercept is -14.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -3x - 5\\).",
+    "options": [
+      "-8",
+      "5",
+      "-3",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -3(0) - 5 = -5\\)\n\nSo the y-intercept is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = x - 12\\).",
+    "options": [
+      "-12",
+      "-11",
+      "12",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 1(0) - 12 = -12\\)\n\nSo the y-intercept is -12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 6x - 12\\).",
+    "options": [
+      "-4",
+      "3",
+      "-12",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = -1(x + 3)^{2} - 3\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 9x - 10\\).",
+    "options": [
+      "-10",
+      "-1",
+      "9",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 9(0) - 10 = -10\\)\n\nSo the y-intercept is -10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-x - 4y + 3 = 0\\).",
+    "options": [
+      "\\(-\\frac{1}{4}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(-4\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-4y = 1x - 3\\)\n\n\\(y = \\frac{1}{-4}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{1}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x - 5)\\) crosses the x-axis.",
+    "options": [
+      "-5 or -4",
+      "-4 or 5",
+      "-5 or 4",
+      "4 or 5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x - 5) = 0\\)\n\nSo \\(x = 4\\) or \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 9x + 6\\).",
+    "options": [
+      "6",
+      "-9",
+      "10",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 9x + 6\\) with \\(y = mx + c\\), the gradient is 9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 7)(x - 3)\\) crosses the x-axis.",
+    "options": [
+      "-7 or 3",
+      "-3 or 7",
+      "3 or 7",
+      "-7 or -3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 7)(x - 3) = 0\\)\n\nSo \\(x = -7\\) or \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 7x - 9\\).",
+    "options": [
+      "\\(\\frac{7}{2}\\)",
+      "\\(-\\frac{7}{4}\\)",
+      "\\(-\\frac{7}{2}\\)",
+      "\\(\\frac{7}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{7}{2(2)} = -\\frac{7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 16x + 20\\).",
+    "options": [
+      "-10",
+      "12",
+      "-12",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = 2(x - 4)^{2} - 12\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -12.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -6x - 9\\).",
+    "options": [
+      "9",
+      "-15",
+      "-6",
+      "-9"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -6(0) - 9 = -9\\)\n\nSo the y-intercept is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 6x + 5\\).",
+    "options": [
+      "-6",
+      "7",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 6x + 5\\) with \\(y = mx + c\\), the gradient is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 5x - 10\\).",
+    "options": [
+      "\\(-5\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(5\\)",
+      "\\(-\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-5}{2(1)} = \\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} + 3x - 5\\).",
+    "options": [
+      "\\(-3\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{3}{2}\\)",
+      "\\(3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{3}{2(-1)} = \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 5)(x + 7)\\) crosses the x-axis.",
+    "options": [
+      "-5 or 7",
+      "-7 or 5",
+      "-7 or -5",
+      "5 or 7"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 5)(x + 7) = 0\\)\n\nSo \\(x = 5\\) or \\(x = -7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -8x + 4\\).",
+    "options": [
+      "4",
+      "-7",
+      "-8",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -8x + 4\\) with \\(y = mx + c\\), the gradient is -8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 5x - 9\\).",
+    "options": [
+      "\\(-\\frac{5}{2}\\)",
+      "\\(5\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(-5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-5}{2(1)} = \\frac{5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} + 11x + 8\\).",
+    "options": [
+      "\\(-\\frac{11}{4}\\)",
+      "\\(\\frac{11}{4}\\)",
+      "\\(\\frac{11}{2}\\)",
+      "\\(-\\frac{11}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{11}{2(2)} = -\\frac{11}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 10\\).",
+    "options": [
+      "12",
+      "-10",
+      "0",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 2(x + 0)^{2} + 10\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 4x + 6\\).",
+    "options": [
+      "\\(-\\frac{4}{3}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(-\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{4}{2(3)} = -\\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 4)(x + 6)\\) crosses the x-axis.",
+    "options": [
+      "4 or 6",
+      "-6 or -4",
+      "-4 or 6",
+      "-6 or 4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 4)(x + 6) = 0\\)\n\nSo \\(x = -4\\) or \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-x + 8y - 8 = 0\\).",
+    "options": [
+      "\\(-8\\)",
+      "\\(8\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(-\\frac{1}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(8y = 1x + 8\\)\n\n\\(y = \\frac{1}{8}x + \\dots\\)\n\nSo the gradient is \\(\\frac{1}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(4x + 3y + 6 = 0\\).",
+    "options": [
+      "\\(-\\frac{4}{3}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(-\\frac{3}{4}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(3y = -4x - 6\\)\n\n\\(y = \\frac{-4}{3}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 5)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "-2 or 5",
+      "-5 or -2",
+      "-5 or 2",
+      "2 or 5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 5)(x + 2) = 0\\)\n\nSo \\(x = 5\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 4)(x - 1)\\) crosses the x-axis.",
+    "options": [
+      "-4 or -1",
+      "-1 or 4",
+      "1 or 4",
+      "-4 or 1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 4)(x - 1) = 0\\)\n\nSo \\(x = -4\\) or \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x - 1)\\) crosses the x-axis.",
+    "options": [
+      "-4 or -1",
+      "-1 or 4",
+      "1 or 4",
+      "-4 or 1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x - 1) = 0\\)\n\nSo \\(x = 4\\) or \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 5)(x - 3)\\) crosses the x-axis.",
+    "options": [
+      "-5 or -3",
+      "3 or 5",
+      "-3 or 5",
+      "-5 or 3"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 5)(x - 3) = 0\\)\n\nSo \\(x = 5\\) or \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x + 6)\\) crosses the x-axis.",
+    "options": [
+      "-6 or 4",
+      "4 or 6",
+      "-4 or 6",
+      "-6 or -4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x + 6) = 0\\)\n\nSo \\(x = 4\\) or \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} + 4x - 13\\).",
+    "options": [
+      "9",
+      "-9",
+      "-10",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = -1(x - 2)^{2} - 9\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 7x + 7\\).",
+    "options": [
+      "8",
+      "7",
+      "-7",
+      "0.14"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 7x + 7\\) with \\(y = mx + c\\), the gradient is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x + 7\\).",
+    "options": [
+      "7",
+      "-5",
+      "6",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x + 7\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 5)(x + 3)\\) crosses the x-axis.",
+    "options": [
+      "3 or 5",
+      "-5 or -3",
+      "-3 or 5",
+      "-5 or 3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 5)(x + 3) = 0\\)\n\nSo \\(x = 5\\) or \\(x = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = x - 12\\).",
+    "options": [
+      "-12",
+      "-1",
+      "2",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = x - 12\\) with \\(y = mx + c\\), the gradient is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 4x + 4\\).",
+    "options": [
+      "0",
+      "8",
+      "4",
+      "-4"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 4(0) + 4 = 4\\)\n\nSo the y-intercept is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 4x - 14\\).",
+    "options": [
+      "-2",
+      "10",
+      "-11",
+      "-10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = -1(x + 2)^{2} - 10\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-8x - 3y + 5 = 0\\).",
+    "options": [
+      "\\(\\frac{8}{3}\\)",
+      "\\(-\\frac{8}{3}\\)",
+      "\\(-\\frac{3}{8}\\)",
+      "\\(\\frac{3}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-3y = 8x - 5\\)\n\n\\(y = \\frac{8}{-3}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{8}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 9x - 7\\).",
+    "options": [
+      "-7",
+      "9",
+      "7",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 9(0) - 7 = -7\\)\n\nSo the y-intercept is -7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 8x + 16\\).",
+    "options": [
+      "8",
+      "-8",
+      "10",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Complete the square: \\(y = 2(x + 2)^{2} + 8\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 8.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 7)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "-2 or 7",
+      "2 or 7",
+      "-7 or 2",
+      "-7 or -2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 7)(x + 2) = 0\\)\n\nSo \\(x = 7\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -4x - 2\\).",
+    "options": [
+      "2",
+      "-2",
+      "-4",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -4(0) - 2 = -2\\)\n\nSo the y-intercept is -2.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -5x - 11\\).",
+    "options": [
+      "11",
+      "-16",
+      "-5",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -5(0) - 11 = -11\\)\n\nSo the y-intercept is -11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 4)(x + 7)\\) crosses the x-axis.",
+    "options": [
+      "-7 or -4",
+      "4 or 7",
+      "-7 or 4",
+      "-4 or 7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 4)(x + 7) = 0\\)\n\nSo \\(x = 4\\) or \\(x = -7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} + 4x + 7\\).",
+    "options": [
+      "-11",
+      "10",
+      "11",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = -1(x - 2)^{2} + 11\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is 11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(6x - 2y - 6 = 0\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(-\\frac{1}{3}\\)",
+      "\\(-3\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-2y = -6x + 6\\)\n\n\\(y = \\frac{-6}{-2}x + \\dots\\)\n\nSo the gradient is \\(3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(5x - 6y - 6 = 0\\).",
+    "options": [
+      "\\(-\\frac{6}{5}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(-\\frac{5}{6}\\)",
+      "\\(\\frac{6}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-6y = -5x + 6\\)\n\n\\(y = \\frac{-5}{-6}x + \\dots\\)\n\nSo the gradient is \\(\\frac{5}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} + 8x + 19\\).",
+    "options": [
+      "-4",
+      "-3",
+      "4",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 1(x + 4)^{2} + 3\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-7x + 8y + 10 = 0\\).",
+    "options": [
+      "\\(-\\frac{8}{7}\\)",
+      "\\(\\frac{7}{8}\\)",
+      "\\(-\\frac{7}{8}\\)",
+      "\\(\\frac{8}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(8y = 7x - 10\\)\n\n\\(y = \\frac{7}{8}x + \\dots\\)\n\nSo the gradient is \\(\\frac{7}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 12x + 11\\).",
+    "options": [
+      "-3",
+      "-5",
+      "-7",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = 2(x + 3)^{2} - 7\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -x - 11\\).",
+    "options": [
+      "11",
+      "-1",
+      "-12",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -1(0) - 11 = -11\\)\n\nSo the y-intercept is -11.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(4x + 6y - 7 = 0\\).",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(6y = -4x + 7\\)\n\n\\(y = \\frac{-4}{6}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} + 8x - 7\\).",
+    "options": [
+      "\\(8\\)",
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(-8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{8}{2(1)} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 6)(x + 3)\\) crosses the x-axis.",
+    "options": [
+      "-6 or -3",
+      "-6 or 3",
+      "-3 or 6",
+      "3 or 6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 6)(x + 3) = 0\\)\n\nSo \\(x = 6\\) or \\(x = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-8x + 6y - 7 = 0\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(-\\frac{3}{4}\\)",
+      "\\(-\\frac{4}{3}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(6y = 8x + 7\\)\n\n\\(y = \\frac{8}{6}x + \\dots\\)\n\nSo the gradient is \\(\\frac{4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = x + 3\\).",
+    "options": [
+      "-3",
+      "3",
+      "1",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 1(0) + 3 = 3\\)\n\nSo the y-intercept is 3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -3x - 5\\).",
+    "options": [
+      "-5",
+      "3",
+      "-2",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -3x - 5\\) with \\(y = mx + c\\), the gradient is -3.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = -x^{2} + 4x + 1\\).",
+    "options": [
+      "\\(4\\)",
+      "\\(-2\\)",
+      "\\(2\\)",
+      "\\(-4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{4}{2(-1)} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 9x - 5\\).",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(-\\frac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(-3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{9}{2(3)} = -\\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 2x^{2} - 9x - 9\\).",
+    "options": [
+      "\\(\\frac{9}{2}\\)",
+      "\\(-\\frac{9}{4}\\)",
+      "\\(-\\frac{9}{2}\\)",
+      "\\(\\frac{9}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-9}{2(2)} = \\frac{9}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} + 4x - 8\\).",
+    "options": [
+      "-1",
+      "-8",
+      "10",
+      "-10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 2(x + 1)^{2} - 10\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -10.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 6x - 3\\).",
+    "options": [
+      "5",
+      "6",
+      "-6",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = -1(x + 3)^{2} + 6\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is 6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -2x^{2} + 24x - 76\\).",
+    "options": [
+      "-6",
+      "-4",
+      "6",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = -2(x - 6)^{2} - 4\\)\n\nSince \\(a = -2\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-5x + 2y + 0 = 0\\).",
+    "options": [
+      "\\(-\\frac{5}{2}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(-\\frac{2}{5}\\)",
+      "\\(\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(2y = 5x + 0\\)\n\n\\(y = \\frac{5}{2}x + \\dots\\)\n\nSo the gradient is \\(\\frac{5}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-4x + y + 6 = 0\\).",
+    "options": [
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(-\\frac{1}{4}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(1y = 4x - 6\\)\n\n\\(y = \\frac{4}{1}x + \\dots\\)\n\nSo the gradient is \\(4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 1)(x - 5)\\) crosses the x-axis.",
+    "options": [
+      "-5 or 1",
+      "-5 or -1",
+      "1 or 5",
+      "-1 or 5"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 1)(x - 5) = 0\\)\n\nSo \\(x = 1\\) or \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 4x - 2\\).",
+    "options": [
+      "-4",
+      "-2",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 4x - 2\\) with \\(y = mx + c\\), the gradient is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 7x - 2\\).",
+    "options": [
+      "-2",
+      "8",
+      "7",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 7x - 2\\) with \\(y = mx + c\\), the gradient is 7.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(5x + 7y - 3 = 0\\).",
+    "options": [
+      "\\(-\\frac{7}{5}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(-\\frac{5}{7}\\)",
+      "\\(\\frac{7}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(7y = -5x + 3\\)\n\n\\(y = \\frac{-5}{7}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{5}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(7x - 4y - 2 = 0\\).",
+    "options": [
+      "\\(\\frac{4}{7}\\)",
+      "\\(-\\frac{4}{7}\\)",
+      "\\(-\\frac{7}{4}\\)",
+      "\\(\\frac{7}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-4y = -7x + 2\\)\n\n\\(y = \\frac{-7}{-4}x + \\dots\\)\n\nSo the gradient is \\(\\frac{7}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the maximum value of \\(y = -x^{2} - 8x - 17\\).",
+    "options": [
+      "1",
+      "-4",
+      "-2",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = -1(x + 4)^{2} - 1\\)\n\nSince \\(a = -1\\) is negative, the curve has a maximum at the turning point.\n\nThe maximum value of \\(y\\) is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 1)(x - 3)\\) crosses the x-axis.",
+    "options": [
+      "-3 or 1",
+      "-1 or 3",
+      "-3 or -1",
+      "1 or 3"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 1)(x - 3) = 0\\)\n\nSo \\(x = -1\\) or \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 4x - 9\\).",
+    "options": [
+      "-5",
+      "4",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 4(0) - 9 = -9\\)\n\nSo the y-intercept is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} + 5x - 2\\).",
+    "options": [
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(-\\frac{5}{6}\\)",
+      "\\(-\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{5}{2(3)} = -\\frac{5}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 6)(x + 2)\\) crosses the x-axis.",
+    "options": [
+      "-6 or 2",
+      "2 or 6",
+      "-6 or -2",
+      "-2 or 6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 6)(x + 2) = 0\\)\n\nSo \\(x = -6\\) or \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 1)(x + 5)\\) crosses the x-axis.",
+    "options": [
+      "1 or 5",
+      "-1 or 5",
+      "-5 or 1",
+      "-5 or -1"
+    ],
+    "correctIndex": 2,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 1)(x + 5) = 0\\)\n\nSo \\(x = 1\\) or \\(x = -5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -4x + 8\\).",
+    "options": [
+      "-3",
+      "4",
+      "8",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -4x + 8\\) with \\(y = mx + c\\), the gradient is -4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x - 1)(x - 3)\\) crosses the x-axis.",
+    "options": [
+      "-3 or 1",
+      "1 or 3",
+      "-1 or 3",
+      "-3 or -1"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x - 1)(x - 3) = 0\\)\n\nSo \\(x = 1\\) or \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 5x - 1\\).",
+    "options": [
+      "-5",
+      "6",
+      "-1",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 5x - 1\\) with \\(y = mx + c\\), the gradient is 5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-6x + 3y + 10 = 0\\).",
+    "options": [
+      "\\(-2\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(-\\frac{1}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(3y = 6x - 10\\)\n\n\\(y = \\frac{6}{3}x + \\dots\\)\n\nSo the gradient is \\(2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(7x - 5y - 8 = 0\\).",
+    "options": [
+      "\\(-\\frac{5}{7}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(-\\frac{7}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-5y = -7x + 8\\)\n\n\\(y = \\frac{-7}{-5}x + \\dots\\)\n\nSo the gradient is \\(\\frac{7}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-4x - y - 10 = 0\\).",
+    "options": [
+      "\\(4\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(-4\\)",
+      "\\(-\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-1y = 4x + 10\\)\n\n\\(y = \\frac{4}{-1}x + \\dots\\)\n\nSo the gradient is \\(-4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = 4x + 5\\).",
+    "options": [
+      "5",
+      "4",
+      "-4",
+      "0.25"
+    ],
+    "correctIndex": 1,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = 4x + 5\\) with \\(y = mx + c\\), the gradient is 4.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = x^{2} - 10x + 6\\).",
+    "options": [
+      "\\(5\\)",
+      "\\(-10\\)",
+      "\\(10\\)",
+      "\\(-5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-10}{2(1)} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 24x + 67\\).",
+    "options": [
+      "5",
+      "-5",
+      "6",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete the square: \\(y = 2(x - 6)^{2} - 5\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = 2x^{2} - 8x + 3\\).",
+    "options": [
+      "2",
+      "5",
+      "-5",
+      "-3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Complete the square: \\(y = 2(x - 2)^{2} - 5\\)\n\nSince \\(a = 2\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -6x - 1\\).",
+    "options": [
+      "1",
+      "-6",
+      "-7",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -6(0) - 1 = -1\\)\n\nSo the y-intercept is -1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(y = -6x + 4\\).",
+    "options": [
+      "-6",
+      "-5",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "A straight line written as \\(y = mx + c\\) has gradient \\(m\\).\n\nComparing \\(y = -6x + 4\\) with \\(y = mx + c\\), the gradient is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = -8x - 5\\).",
+    "options": [
+      "5",
+      "-8",
+      "-5",
+      "-13"
+    ],
+    "correctIndex": 2,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = -8(0) - 5 = -5\\)\n\nSo the y-intercept is -5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the y-intercept of the line \\(y = 4x - 6\\).",
+    "options": [
+      "-6",
+      "-2",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The y-intercept is the value of \\(y\\) when \\(x = 0\\).\n\n\\(y = 4(0) - 6 = -6\\)\n\nSo the y-intercept is -6.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 8x + 17\\).",
+    "options": [
+      "2",
+      "4",
+      "-1",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 1(x - 4)^{2} + 1\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is 1.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the gradient of the line \\(-x - 4y + 6 = 0\\).",
+    "options": [
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(-\\frac{1}{4}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rearrange into the form \\(y = mx + c\\).\n\n\\(-4y = 1x - 6\\)\n\n\\(y = \\frac{1}{-4}x + \\dots\\)\n\nSo the gradient is \\(-\\frac{1}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the minimum value of \\(y = x^{2} - 12x + 27\\).",
+    "options": [
+      "6",
+      "9",
+      "-8",
+      "-9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Complete the square: \\(y = 1(x - 6)^{2} - 9\\)\n\nSince \\(a = 1\\) is positive, the curve has a minimum at the turning point.\n\nThe minimum value of \\(y\\) is -9.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the values of \\(x\\) where the curve \\(y = (x + 7)(x - 4)\\) crosses the x-axis.",
+    "options": [
+      "-7 or -4",
+      "-7 or 4",
+      "-4 or 7",
+      "4 or 7"
+    ],
+    "correctIndex": 1,
+    "explanation": "The curve crosses the x-axis where \\(y = 0\\).\n\n\\((x + 7)(x - 4) = 0\\)\n\nSo \\(x = -7\\) or \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the equation of the axis of symmetry of the curve \\(y = 3x^{2} - 7x + 2\\).",
+    "options": [
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(-\\frac{7}{3}\\)",
+      "\\(-\\frac{7}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The axis of symmetry of \\(y = ax^{2} + bx + c\\) is \\(x = -\\frac{b}{2a}\\).\n\n\\(x = -\\frac{-7}{2(3)} = \\frac{7}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "uBBKbRH9Jug0g36soFBt",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

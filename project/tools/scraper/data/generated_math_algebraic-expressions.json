@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{4x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{16}{5}\\)",
+      "\\(\\frac{8}{5}\\)",
+      "\\(1\\)",
+      "\\(\\frac{16}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{4(4)}{4 + 1} = \\frac{16}{5}\\)\n\n\\(= \\frac{16}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x + 7) + 8x\\).",
+    "options": [
+      "\\(15x + 42\\)",
+      "\\(14x + 42\\)",
+      "\\(14x + 13\\)",
+      "\\(48x + 42\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(6x + 42 + 8x\\)\n\nCollect the \\(x\\) terms: \\(6x + 8x = 14x\\)\n\nSo the answer is \\(14x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{5x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{50}{13}\\)",
+      "\\(\\frac{15}{13}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{50}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{5(10)}{10 + 3} = \\frac{50}{13}\\)\n\n\\(= \\frac{50}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x - 4y + 8x - 3y\\).",
+    "options": [
+      "\\(-6x - 7y\\)",
+      "\\(10x + 7y\\)",
+      "\\(10x - 7y\\)",
+      "\\(11x - 7y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(2 + (8) = 10\\)\n\n\\(y\\) terms: \\(-4 + (-3) = -7\\)\n\nSo the expression simplifies to \\(10x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\) and \\(y = -3\\), evaluate \\(4x^{2} - 5y\\).",
+    "options": [
+      "-115",
+      "85",
+      "115",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 5\\) and \\(y = -3\\).\n\n\\(4(5)^{2} - 5(-3)\\)\n\n\\(= 4(25) - (-15)\\)\n\n\\(= 100 - (-15) = 115\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x + 7y - 8x - 2y\\).",
+    "options": [
+      "\\(14x + 5y\\)",
+      "\\(-2x - 5y\\)",
+      "\\(-2x + 5y\\)",
+      "\\(-x + 5y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(6 + (-8) = -2\\)\n\n\\(y\\) terms: \\(7 + (-2) = 5\\)\n\nSo the expression simplifies to \\(-2x + 5y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = -4\\), evaluate \\(2x^{2} - 2y\\).",
+    "options": [
+      "-4",
+      "64",
+      "80",
+      "-80"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = -4\\).\n\n\\(2(-6)^{2} - 2(-4)\\)\n\n\\(= 2(36) - (-8)\\)\n\n\\(= 72 - (-8) = 80\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-2x - 7y + 8x - 8y\\).",
+    "options": [
+      "\\(7x - 15y\\)",
+      "\\(6x + 15y\\)",
+      "\\(-10x - 15y\\)",
+      "\\(6x - 15y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-2 + (8) = 6\\)\n\n\\(y\\) terms: \\(-7 + (-8) = -15\\)\n\nSo the expression simplifies to \\(6x - 15y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = -5\\), evaluate \\(4x^{2} - 6y\\).",
+    "options": [
+      "6",
+      "-174",
+      "174",
+      "114"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = -5\\).\n\n\\(4(-6)^{2} - 6(-5)\\)\n\n\\(= 4(36) - (-30)\\)\n\n\\(= 144 - (-30) = 174\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-3x - 7y + 4x - 7y\\).",
+    "options": [
+      "\\(2x - 14y\\)",
+      "\\(x + 14y\\)",
+      "\\(-7x - 14y\\)",
+      "\\(x - 14y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-3 + (4) = 1\\)\n\n\\(y\\) terms: \\(-7 + (-7) = -14\\)\n\nSo the expression simplifies to \\(x - 14y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\) and \\(y = -6\\), evaluate \\(4x^{2} - 5y\\).",
+    "options": [
+      "-46",
+      "-14",
+      "38",
+      "46"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\) and \\(y = -6\\).\n\n\\(4(2)^{2} - 5(-6)\\)\n\n\\(= 4(4) - (-30)\\)\n\n\\(= 16 - (-30) = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x - 8y + 5x + 6y\\).",
+    "options": [
+      "\\(x - 2y\\)",
+      "\\(12x - 2y\\)",
+      "\\(11x + 2y\\)",
+      "\\(11x - 2y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(6 + (5) = 11\\)\n\n\\(y\\) terms: \\(-8 + (6) = -2\\)\n\nSo the expression simplifies to \\(11x - 2y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{7x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{21}{2}\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{21}{4}\\)",
+      "\\(\\frac{3}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{7(3)}{3 + 1} = \\frac{21}{4}\\)\n\n\\(= \\frac{21}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = 6\\), evaluate \\(5x^{2} - 5y\\).",
+    "options": [
+      "50",
+      "-50",
+      "-10",
+      "110"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = 6\\).\n\n\\(5(4)^{2} - 5(6)\\)\n\n\\(= 5(16) - (30)\\)\n\n\\(= 80 - (30) = 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{3x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{27}{11}\\)",
+      "\\(\\frac{12}{11}\\)",
+      "\\(\\frac{27}{7}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{3(9)}{9 + 2} = \\frac{27}{11}\\)\n\n\\(= \\frac{27}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = -4\\), evaluate \\(2x^{2} - 5y\\).",
+    "options": [
+      "12",
+      "28",
+      "-52",
+      "52"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = -4\\).\n\n\\(2(4)^{2} - 5(-4)\\)\n\n\\(= 2(16) - (-20)\\)\n\n\\(= 32 - (-20) = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{8x}{x + 9}\\).",
+    "options": [
+      "\\(\\frac{18}{19}\\)",
+      "\\(\\frac{80}{19}\\)",
+      "\\(80\\)",
+      "\\(\\frac{5}{36}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{8(10)}{10 + 9} = \\frac{80}{19}\\)\n\n\\(= \\frac{80}{19}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 8\\), evaluate \\(\\frac{2x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{10}{9}\\)",
+      "\\(\\frac{16}{9}\\)",
+      "\\(\\frac{16}{7}\\)",
+      "\\(4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(\\frac{2(8)}{8 + 1} = \\frac{16}{9}\\)\n\n\\(= \\frac{16}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-4x - 9y - 5x - y\\).",
+    "options": [
+      "\\(-8x - 10y\\)",
+      "\\(x - 10y\\)",
+      "\\(-9x + 10y\\)",
+      "\\(-9x - 10y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-4 + (-5) = -9\\)\n\n\\(y\\) terms: \\(-9 + (-1) = -10\\)\n\nSo the expression simplifies to \\(-9x - 10y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{2x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(-2\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{2(4)}{4 + 8} = \\frac{8}{12}\\)\n\n\\(= \\frac{2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-8x - 2y + 9x - 9y\\).",
+    "options": [
+      "\\(2x - 11y\\)",
+      "\\(x + 11y\\)",
+      "\\(-17x - 11y\\)",
+      "\\(x - 11y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-8 + (9) = 1\\)\n\n\\(y\\) terms: \\(-2 + (-9) = -11\\)\n\nSo the expression simplifies to \\(x - 11y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x - 5) + 2x\\).",
+    "options": [
+      "\\(5x - 14\\)",
+      "\\(5x - 2\\)",
+      "\\(6x - 15\\)",
+      "\\(5x - 15\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(3x - 15 + 2x\\)\n\nCollect the \\(x\\) terms: \\(3x + 2x = 5x\\)\n\nSo the answer is \\(5x - 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\) and \\(y = 4\\), evaluate \\(3x^{2} - 4y\\).",
+    "options": [
+      "2",
+      "-92",
+      "92",
+      "124"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 6\\) and \\(y = 4\\).\n\n\\(3(6)^{2} - 4(4)\\)\n\n\\(= 3(36) - (16)\\)\n\n\\(= 108 - (16) = 92\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 8\\), evaluate \\(\\frac{7x}{x + 9}\\).",
+    "options": [
+      "\\(\\frac{56}{17}\\)",
+      "\\(-56\\)",
+      "\\(\\frac{8}{63}\\)",
+      "\\(\\frac{15}{17}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(\\frac{7(8)}{8 + 9} = \\frac{56}{17}\\)\n\n\\(= \\frac{56}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 7) + 8x\\).",
+    "options": [
+      "\\(12x + 28\\)",
+      "\\(13x + 28\\)",
+      "\\(12x + 11\\)",
+      "\\(32x + 28\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(4x + 28 + 8x\\)\n\nCollect the \\(x\\) terms: \\(4x + 8x = 12x\\)\n\nSo the answer is \\(12x + 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-9x - 3y + x - 3y\\).",
+    "options": [
+      "\\(-8x - 6y\\)",
+      "\\(-8x + 6y\\)",
+      "\\(-10x - 6y\\)",
+      "\\(-7x - 6y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-9 + (1) = -8\\)\n\n\\(y\\) terms: \\(-3 + (-3) = -6\\)\n\nSo the expression simplifies to \\(-8x - 6y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\) and \\(y = -6\\), evaluate \\(5x^{2} - 2y\\).",
+    "options": [
+      "42",
+      "-192",
+      "168",
+      "192"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 6\\) and \\(y = -6\\).\n\n\\(5(6)^{2} - 2(-6)\\)\n\n\\(= 5(36) - (-12)\\)\n\n\\(= 180 - (-12) = 192\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 1) + 5x\\).",
+    "options": [
+      "\\(9x + 5\\)",
+      "\\(9x + 4\\)",
+      "\\(20x + 4\\)",
+      "\\(10x + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x + 4 + 5x\\)\n\nCollect the \\(x\\) terms: \\(4x + 5x = 9x\\)\n\nSo the answer is \\(9x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 3) + 3x\\).",
+    "options": [
+      "\\(7x + 12\\)",
+      "\\(7x + 7\\)",
+      "\\(12x + 12\\)",
+      "\\(8x + 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(4x + 12 + 3x\\)\n\nCollect the \\(x\\) terms: \\(4x + 3x = 7x\\)\n\nSo the answer is \\(7x + 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x + 9) + 8x\\).",
+    "options": [
+      "\\(13x + 45\\)",
+      "\\(40x + 45\\)",
+      "\\(13x + 14\\)",
+      "\\(14x + 45\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(5x + 45 + 8x\\)\n\nCollect the \\(x\\) terms: \\(5x + 8x = 13x\\)\n\nSo the answer is \\(13x + 45\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-x + 9y - 8x + 9y\\).",
+    "options": [
+      "\\(-9x + 18y\\)",
+      "\\(-8x + 18y\\)",
+      "\\(-9x - 18y\\)",
+      "\\(7x + 18y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-1 + (-8) = -9\\)\n\n\\(y\\) terms: \\(9 + (9) = 18\\)\n\nSo the expression simplifies to \\(-9x + 18y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x + 8) + 2x\\).",
+    "options": [
+      "\\(8x + 14\\)",
+      "\\(12x + 48\\)",
+      "\\(8x + 48\\)",
+      "\\(9x + 48\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(6x + 48 + 2x\\)\n\nCollect the \\(x\\) terms: \\(6x + 2x = 8x\\)\n\nSo the answer is \\(8x + 48\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = 1\\), evaluate \\(4x^{2} - 3y\\).",
+    "options": [
+      "103",
+      "-23",
+      "97",
+      "-97"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = 1\\).\n\n\\(4(-5)^{2} - 3(1)\\)\n\n\\(= 4(25) - (3)\\)\n\n\\(= 100 - (3) = 97\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-7x - 3y - 4x - 2y\\).",
+    "options": [
+      "\\(-11x - 5y\\)",
+      "\\(-10x - 5y\\)",
+      "\\(-11x + 5y\\)",
+      "\\(-3x - 5y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-7 + (-4) = -11\\)\n\n\\(y\\) terms: \\(-3 + (-2) = -5\\)\n\nSo the expression simplifies to \\(-11x - 5y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\) and \\(y = -1\\), evaluate \\(3x^{2} - 3y\\).",
+    "options": [
+      "-111",
+      "21",
+      "105",
+      "111"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 6\\) and \\(y = -1\\).\n\n\\(3(6)^{2} - 3(-1)\\)\n\n\\(= 3(36) - (-3)\\)\n\n\\(= 108 - (-3) = 111\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{3x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{30}{7}\\)",
+      "\\(\\frac{30}{13}\\)",
+      "\\(\\frac{10}{9}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{3(10)}{10 + 3} = \\frac{30}{13}\\)\n\n\\(= \\frac{30}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\) and \\(y = -1\\), evaluate \\(6x^{2} - 3y\\).",
+    "options": [
+      "219",
+      "39",
+      "213",
+      "-219"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 6\\) and \\(y = -1\\).\n\n\\(6(6)^{2} - 3(-1)\\)\n\n\\(= 6(36) - (-3)\\)\n\n\\(= 216 - (-3) = 219\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x + 3) + 6x\\).",
+    "options": [
+      "\\(13x + 21\\)",
+      "\\(42x + 21\\)",
+      "\\(14x + 21\\)",
+      "\\(13x + 10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x + 21 + 6x\\)\n\nCollect the \\(x\\) terms: \\(7x + 6x = 13x\\)\n\nSo the answer is \\(13x + 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\) and \\(y = 4\\), evaluate \\(3x^{2} - 3y\\).",
+    "options": [
+      "63",
+      "87",
+      "-63",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 5\\) and \\(y = 4\\).\n\n\\(3(5)^{2} - 3(4)\\)\n\n\\(= 3(25) - (12)\\)\n\n\\(= 75 - (12) = 63\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = 2\\), evaluate \\(2x^{2} - 2y\\).",
+    "options": [
+      "-2",
+      "6",
+      "0",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = 2\\).\n\n\\(2(1)^{2} - 2(2)\\)\n\n\\(= 2(1) - (4)\\)\n\n\\(= 2 - (4) = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 7\\), evaluate \\(\\frac{5x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{35}{6}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{35}{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(\\frac{5(7)}{7 + 1} = \\frac{35}{8}\\)\n\n\\(= \\frac{35}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x - 8y - 8x - 9y\\).",
+    "options": [
+      "\\(13x - 17y\\)",
+      "\\(-2x - 17y\\)",
+      "\\(-3x - 17y\\)",
+      "\\(-3x + 17y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(5 + (-8) = -3\\)\n\n\\(y\\) terms: \\(-8 + (-9) = -17\\)\n\nSo the expression simplifies to \\(-3x - 17y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{7x}{x + 7}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{70}{3}\\)",
+      "\\(\\frac{10}{49}\\)",
+      "\\(\\frac{70}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{7(10)}{10 + 7} = \\frac{70}{17}\\)\n\n\\(= \\frac{70}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = -6\\), evaluate \\(5x^{2} - 2y\\).",
+    "options": [
+      "-18",
+      "192",
+      "168",
+      "-192"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = -6\\).\n\n\\(5(-6)^{2} - 2(-6)\\)\n\n\\(= 5(36) - (-12)\\)\n\n\\(= 180 - (-12) = 192\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 7\\), evaluate \\(\\frac{2x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{14}{5}\\)",
+      "\\(\\frac{14}{9}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(\\frac{2(7)}{7 + 2} = \\frac{14}{9}\\)\n\n\\(= \\frac{14}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = 3\\), evaluate \\(2x^{2} - 3y\\).",
+    "options": [
+      "-7",
+      "11",
+      "-5",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = 3\\).\n\n\\(2(1)^{2} - 3(3)\\)\n\n\\(= 2(1) - (9)\\)\n\n\\(= 2 - (9) = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = 3\\), evaluate \\(2x^{2} - 5y\\).",
+    "options": [
+      "17",
+      "-13",
+      "-11",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = 3\\).\n\n\\(2(1)^{2} - 5(3)\\)\n\n\\(= 2(1) - (15)\\)\n\n\\(= 2 - (15) = -13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x - 6y - 3x - 4y\\).",
+    "options": [
+      "\\(x + 10y\\)",
+      "\\(2x - 10y\\)",
+      "\\(x - 10y\\)",
+      "\\(7x - 10y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(4 + (-3) = 1\\)\n\n\\(y\\) terms: \\(-6 + (-4) = -10\\)\n\nSo the expression simplifies to \\(x - 10y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = 2\\), evaluate \\(3x^{2} - 3y\\).",
+    "options": [
+      "18",
+      "6",
+      "-6",
+      "-12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = 2\\).\n\n\\(3(-2)^{2} - 3(2)\\)\n\n\\(= 3(4) - (6)\\)\n\n\\(= 12 - (6) = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x + 5y - 5x - 4y\\).",
+    "options": [
+      "\\(6x + y\\)",
+      "\\(-4x - y\\)",
+      "\\(-4x + y\\)",
+      "\\(-3x + y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (-5) = -4\\)\n\n\\(y\\) terms: \\(5 + (-4) = 1\\)\n\nSo the expression simplifies to \\(-4x + y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -4\\) and \\(y = -3\\), evaluate \\(2x^{2} - 5y\\).",
+    "options": [
+      "-47",
+      "17",
+      "7",
+      "47"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -4\\) and \\(y = -3\\).\n\n\\(2(-4)^{2} - 5(-3)\\)\n\n\\(= 2(16) - (-15)\\)\n\n\\(= 32 - (-15) = 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-5x + 2y - 4x - 7y\\).",
+    "options": [
+      "\\(-9x + 5y\\)",
+      "\\(-9x - 5y\\)",
+      "\\(-x - 5y\\)",
+      "\\(-8x - 5y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-5 + (-4) = -9\\)\n\n\\(y\\) terms: \\(2 + (-7) = -5\\)\n\nSo the expression simplifies to \\(-9x - 5y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = 3\\), evaluate \\(6x^{2} - 5y\\).",
+    "options": [
+      "-81",
+      "111",
+      "81",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = 3\\).\n\n\\(6(4)^{2} - 5(3)\\)\n\n\\(= 6(16) - (15)\\)\n\n\\(= 96 - (15) = 81\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x + 1) + 8x\\).",
+    "options": [
+      "\\(11x + 4\\)",
+      "\\(24x + 3\\)",
+      "\\(11x + 3\\)",
+      "\\(12x + 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(3x + 3 + 8x\\)\n\nCollect the \\(x\\) terms: \\(3x + 8x = 11x\\)\n\nSo the answer is \\(11x + 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x - 1) + 3x\\).",
+    "options": [
+      "\\(7x + 3\\)",
+      "\\(12x - 4\\)",
+      "\\(7x - 4\\)",
+      "\\(8x - 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(4x - 4 + 3x\\)\n\nCollect the \\(x\\) terms: \\(4x + 3x = 7x\\)\n\nSo the answer is \\(7x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{9x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{9}{5}\\)",
+      "\\(1\\)",
+      "\\(\\frac{81}{8}\\)",
+      "\\(\\frac{81}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{9(9)}{9 + 1} = \\frac{81}{10}\\)\n\n\\(= \\frac{81}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 6) + 7x\\).",
+    "options": [
+      "\\(49x - 42\\)",
+      "\\(14x + 1\\)",
+      "\\(15x - 42\\)",
+      "\\(14x - 42\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(7x - 42 + 7x\\)\n\nCollect the \\(x\\) terms: \\(7x + 7x = 14x\\)\n\nSo the answer is \\(14x - 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\) and \\(y = -6\\), evaluate \\(4x^{2} - 2y\\).",
+    "options": [
+      "-48",
+      "24",
+      "48",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 3\\) and \\(y = -6\\).\n\n\\(4(3)^{2} - 2(-6)\\)\n\n\\(= 4(9) - (-12)\\)\n\n\\(= 36 - (-12) = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\) and \\(y = 4\\), evaluate \\(4x^{2} - 6y\\).",
+    "options": [
+      "168",
+      "120",
+      "-120",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 6\\) and \\(y = 4\\).\n\n\\(4(6)^{2} - 6(4)\\)\n\n\\(= 4(36) - (24)\\)\n\n\\(= 144 - (24) = 120\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 9) + 6x\\).",
+    "options": [
+      "\\(14x - 63\\)",
+      "\\(42x - 63\\)",
+      "\\(13x - 63\\)",
+      "\\(13x - 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x - 63 + 6x\\)\n\nCollect the \\(x\\) terms: \\(7x + 6x = 13x\\)\n\nSo the answer is \\(13x - 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x + 1) + 2x\\).",
+    "options": [
+      "\\(10x + 7\\)",
+      "\\(14x + 7\\)",
+      "\\(9x + 8\\)",
+      "\\(9x + 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(7x + 7 + 2x\\)\n\nCollect the \\(x\\) terms: \\(7x + 2x = 9x\\)\n\nSo the answer is \\(9x + 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-4x - 9y - 9x + 2y\\).",
+    "options": [
+      "\\(-12x - 7y\\)",
+      "\\(-13x + 7y\\)",
+      "\\(-13x - 7y\\)",
+      "\\(5x - 7y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-4 + (-9) = -13\\)\n\n\\(y\\) terms: \\(-9 + (2) = -7\\)\n\nSo the expression simplifies to \\(-13x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = -1\\), evaluate \\(6x^{2} - 4y\\).",
+    "options": [
+      "220",
+      "-32",
+      "212",
+      "-220"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = -1\\).\n\n\\(6(-6)^{2} - 4(-1)\\)\n\n\\(= 6(36) - (-4)\\)\n\n\\(= 216 - (-4) = 220\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-8x - 7y - 9x - y\\).",
+    "options": [
+      "\\(-17x - 8y\\)",
+      "\\(-16x - 8y\\)",
+      "\\(x - 8y\\)",
+      "\\(-17x + 8y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-8 + (-9) = -17\\)\n\n\\(y\\) terms: \\(-7 + (-1) = -8\\)\n\nSo the expression simplifies to \\(-17x - 8y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{9x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{11}{10}\\)",
+      "\\(\\frac{1}{36}\\)",
+      "\\(\\frac{9}{5}\\)",
+      "\\(-3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{9(2)}{2 + 8} = \\frac{18}{10}\\)\n\n\\(= \\frac{9}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{2x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{18}{11}\\)",
+      "\\(\\frac{18}{7}\\)",
+      "\\(1\\)",
+      "\\(\\frac{9}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{2(9)}{9 + 2} = \\frac{18}{11}\\)\n\n\\(= \\frac{18}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-6x + 5y + 9x - 3y\\).",
+    "options": [
+      "\\(-15x + 2y\\)",
+      "\\(4x + 2y\\)",
+      "\\(3x - 2y\\)",
+      "\\(3x + 2y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-6 + (9) = 3\\)\n\n\\(y\\) terms: \\(5 + (-3) = 2\\)\n\nSo the expression simplifies to \\(3x + 2y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x - 5) + 3x\\).",
+    "options": [
+      "\\(9x - 25\\)",
+      "\\(15x - 25\\)",
+      "\\(8x\\)",
+      "\\(8x - 25\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(5x - 25 + 3x\\)\n\nCollect the \\(x\\) terms: \\(5x + 3x = 8x\\)\n\nSo the answer is \\(8x - 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-2x - y + 9x - 7y\\).",
+    "options": [
+      "\\(7x + 8y\\)",
+      "\\(7x - 8y\\)",
+      "\\(8x - 8y\\)",
+      "\\(-11x - 8y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-2 + (9) = 7\\)\n\n\\(y\\) terms: \\(-1 + (-7) = -8\\)\n\nSo the expression simplifies to \\(7x - 8y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 8\\), evaluate \\(\\frac{2x}{x + 7}\\).",
+    "options": [
+      "\\(\\frac{16}{15}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(\\frac{2(8)}{8 + 7} = \\frac{16}{15}\\)\n\n\\(= \\frac{16}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x + 9) + 7x\\).",
+    "options": [
+      "\\(35x + 45\\)",
+      "\\(13x + 45\\)",
+      "\\(12x + 45\\)",
+      "\\(12x + 14\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(5x + 45 + 7x\\)\n\nCollect the \\(x\\) terms: \\(5x + 7x = 12x\\)\n\nSo the answer is \\(12x + 45\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-7x + 8y - x + y\\).",
+    "options": [
+      "\\(-6x + 9y\\)",
+      "\\(-8x - 9y\\)",
+      "\\(-7x + 9y\\)",
+      "\\(-8x + 9y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-7 + (-1) = -8\\)\n\n\\(y\\) terms: \\(8 + (1) = 9\\)\n\nSo the expression simplifies to \\(-8x + 9y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x + 2y + 2x - y\\).",
+    "options": [
+      "\\(8x + y\\)",
+      "\\(4x + y\\)",
+      "\\(8x - y\\)",
+      "\\(9x + y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(6 + (2) = 8\\)\n\n\\(y\\) terms: \\(2 + (-1) = 1\\)\n\nSo the expression simplifies to \\(8x + y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x - 5y + 9x - 9y\\).",
+    "options": [
+      "\\(-6x - 14y\\)",
+      "\\(12x + 14y\\)",
+      "\\(13x - 14y\\)",
+      "\\(12x - 14y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(3 + (9) = 12\\)\n\n\\(y\\) terms: \\(-5 + (-9) = -14\\)\n\nSo the expression simplifies to \\(12x - 14y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 3) + 6x\\).",
+    "options": [
+      "\\(10x + 7\\)",
+      "\\(10x + 12\\)",
+      "\\(11x + 12\\)",
+      "\\(24x + 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x + 12 + 6x\\)\n\nCollect the \\(x\\) terms: \\(4x + 6x = 10x\\)\n\nSo the answer is \\(10x + 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{1x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(3\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{1(3)}{3 + 1} = \\frac{3}{4}\\)\n\n\\(= \\frac{3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-3x + 4y - 4x - 9y\\).",
+    "options": [
+      "\\(-7x + 5y\\)",
+      "\\(x - 5y\\)",
+      "\\(-7x - 5y\\)",
+      "\\(-6x - 5y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-3 + (-4) = -7\\)\n\n\\(y\\) terms: \\(4 + (-9) = -5\\)\n\nSo the expression simplifies to \\(-7x - 5y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 6) + 8x\\).",
+    "options": [
+      "\\(17x - 48\\)",
+      "\\(16x + 2\\)",
+      "\\(64x - 48\\)",
+      "\\(16x - 48\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(8x - 48 + 8x\\)\n\nCollect the \\(x\\) terms: \\(8x + 8x = 16x\\)\n\nSo the answer is \\(16x - 48\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x + 7) + 4x\\).",
+    "options": [
+      "\\(10x + 13\\)",
+      "\\(10x + 42\\)",
+      "\\(11x + 42\\)",
+      "\\(24x + 42\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(6x + 42 + 4x\\)\n\nCollect the \\(x\\) terms: \\(6x + 4x = 10x\\)\n\nSo the answer is \\(10x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{2x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{7}{13}\\)",
+      "\\(-\\frac{10}{3}\\)",
+      "\\(\\frac{5}{16}\\)",
+      "\\(\\frac{10}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{2(5)}{5 + 8} = \\frac{10}{13}\\)\n\n\\(= \\frac{10}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x + 6) + 5x\\).",
+    "options": [
+      "\\(35x + 42\\)",
+      "\\(13x + 42\\)",
+      "\\(12x + 13\\)",
+      "\\(12x + 42\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(7x + 42 + 5x\\)\n\nCollect the \\(x\\) terms: \\(7x + 5x = 12x\\)\n\nSo the answer is \\(12x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{9x}{x + 6}\\).",
+    "options": [
+      "\\(\\frac{14}{11}\\)",
+      "\\(\\frac{45}{11}\\)",
+      "\\(\\frac{5}{54}\\)",
+      "\\(-45\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{9(5)}{5 + 6} = \\frac{45}{11}\\)\n\n\\(= \\frac{45}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x + y + 7x - 6y\\).",
+    "options": [
+      "\\(12x + 5y\\)",
+      "\\(12x - 5y\\)",
+      "\\(13x - 5y\\)",
+      "\\(-2x - 5y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(5 + (7) = 12\\)\n\n\\(y\\) terms: \\(1 + (-6) = -5\\)\n\nSo the expression simplifies to \\(12x - 5y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\), evaluate \\(\\frac{1x}{x + 9}\\).",
+    "options": [
+      "\\(-2\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{7}{15}\\)",
+      "\\(\\frac{2}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(\\frac{1(6)}{6 + 9} = \\frac{6}{15}\\)\n\n\\(= \\frac{2}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x - 4) + 4x\\).",
+    "options": [
+      "\\(16x - 16\\)",
+      "\\(8x\\)",
+      "\\(9x - 16\\)",
+      "\\(8x - 16\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(4x - 16 + 4x\\)\n\nCollect the \\(x\\) terms: \\(4x + 4x = 8x\\)\n\nSo the answer is \\(8x - 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = 6\\), evaluate \\(3x^{2} - 3y\\).",
+    "options": [
+      "-9",
+      "-27",
+      "45",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = 6\\).\n\n\\(3(-3)^{2} - 3(6)\\)\n\n\\(= 3(9) - (18)\\)\n\n\\(= 27 - (18) = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x - 3y + 7x + 2y\\).",
+    "options": [
+      "\\(2x - y\\)",
+      "\\(17x - y\\)",
+      "\\(16x - y\\)",
+      "\\(16x + y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(9 + (7) = 16\\)\n\n\\(y\\) terms: \\(-3 + (2) = -1\\)\n\nSo the expression simplifies to \\(16x - y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x - y - 2x + 5y\\).",
+    "options": [
+      "\\(5x + 4y\\)",
+      "\\(9x + 4y\\)",
+      "\\(6x + 4y\\)",
+      "\\(5x - 4y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(7 + (-2) = 5\\)\n\n\\(y\\) terms: \\(-1 + (5) = 4\\)\n\nSo the expression simplifies to \\(5x + 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{9x}{x + 9}\\).",
+    "options": [
+      "\\(-\\frac{36}{5}\\)",
+      "\\(1\\)",
+      "\\(\\frac{4}{81}\\)",
+      "\\(\\frac{36}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{9(4)}{4 + 9} = \\frac{36}{13}\\)\n\n\\(= \\frac{36}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-9x - 5y - 7x + 8y\\).",
+    "options": [
+      "\\(-16x - 3y\\)",
+      "\\(-15x + 3y\\)",
+      "\\(-2x + 3y\\)",
+      "\\(-16x + 3y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-9 + (-7) = -16\\)\n\n\\(y\\) terms: \\(-5 + (8) = 3\\)\n\nSo the expression simplifies to \\(-16x + 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x - 6) + 5x\\).",
+    "options": [
+      "\\(12x - 36\\)",
+      "\\(11x\\)",
+      "\\(30x - 36\\)",
+      "\\(11x - 36\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(6x - 36 + 5x\\)\n\nCollect the \\(x\\) terms: \\(6x + 5x = 11x\\)\n\nSo the answer is \\(11x - 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 9) + 2x\\).",
+    "options": [
+      "\\(14x - 63\\)",
+      "\\(9x - 63\\)",
+      "\\(9x - 2\\)",
+      "\\(10x - 63\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 63 + 2x\\)\n\nCollect the \\(x\\) terms: \\(7x + 2x = 9x\\)\n\nSo the answer is \\(9x - 63\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = 2\\), evaluate \\(6x^{2} - 5y\\).",
+    "options": [
+      "16",
+      "2",
+      "4",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = 2\\).\n\n\\(6(1)^{2} - 5(2)\\)\n\n\\(= 6(1) - (10)\\)\n\n\\(= 6 - (10) = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-8x + 4y - 8x + 3y\\).",
+    "options": [
+      "\\(0x + 7y\\)",
+      "\\(-16x + 7y\\)",
+      "\\(-16x - 7y\\)",
+      "\\(-15x + 7y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-8 + (-8) = -16\\)\n\n\\(y\\) terms: \\(4 + (3) = 7\\)\n\nSo the expression simplifies to \\(-16x + 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{7x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{17}{12}\\)",
+      "\\(\\frac{35}{6}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(\\frac{35}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{7(10)}{10 + 2} = \\frac{70}{12}\\)\n\n\\(= \\frac{35}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{7x}{x + 2}\\).",
+    "options": [
+      "\\(9\\)",
+      "\\(\\frac{9}{14}\\)",
+      "\\(\\frac{63}{11}\\)",
+      "\\(\\frac{16}{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{7(9)}{9 + 2} = \\frac{63}{11}\\)\n\n\\(= \\frac{63}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = -4\\), evaluate \\(3x^{2} - 6y\\).",
+    "options": [
+      "3",
+      "15",
+      "-51",
+      "51"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = -4\\).\n\n\\(3(-3)^{2} - 6(-4)\\)\n\n\\(= 3(9) - (-24)\\)\n\n\\(= 27 - (-24) = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 9) + 3x\\).",
+    "options": [
+      "\\(11x - 1\\)",
+      "\\(11x - 72\\)",
+      "\\(12x - 72\\)",
+      "\\(24x - 72\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x - 72 + 3x\\)\n\nCollect the \\(x\\) terms: \\(8x + 3x = 11x\\)\n\nSo the answer is \\(11x - 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = 5\\), evaluate \\(2x^{2} - 3y\\).",
+    "options": [
+      "23",
+      "-7",
+      "-19",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = 5\\).\n\n\\(2(-2)^{2} - 3(5)\\)\n\n\\(= 2(4) - (15)\\)\n\n\\(= 8 - (15) = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-5x - 4y + 4x + 8y\\).",
+    "options": [
+      "\\(-x - 4y\\)",
+      "\\(-9x + 4y\\)",
+      "\\(-x + 4y\\)",
+      "\\(0x + 4y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-5 + (4) = -1\\)\n\n\\(y\\) terms: \\(-4 + (8) = 4\\)\n\nSo the expression simplifies to \\(-x + 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{8x}{x + 3}\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{17}{12}\\)",
+      "\\(12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{8(9)}{9 + 3} = \\frac{72}{12}\\)\n\n\\(= 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 7) + 8x\\).",
+    "options": [
+      "\\(16x - 49\\)",
+      "\\(15x - 49\\)",
+      "\\(56x - 49\\)",
+      "\\(15x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 49 + 8x\\)\n\nCollect the \\(x\\) terms: \\(7x + 8x = 15x\\)\n\nSo the answer is \\(15x - 49\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x - 6y + 3x - 6y\\).",
+    "options": [
+      "\\(4x - 12y\\)",
+      "\\(11x - 12y\\)",
+      "\\(10x + 12y\\)",
+      "\\(10x - 12y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(7 + (3) = 10\\)\n\n\\(y\\) terms: \\(-6 + (-6) = -12\\)\n\nSo the expression simplifies to \\(10x - 12y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -1\\) and \\(y = 6\\), evaluate \\(4x^{2} - 4y\\).",
+    "options": [
+      "28",
+      "-20",
+      "20",
+      "-28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -1\\) and \\(y = 6\\).\n\n\\(4(-1)^{2} - 4(6)\\)\n\n\\(= 4(1) - (24)\\)\n\n\\(= 4 - (24) = -20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{5x}{x + 8}\\).",
+    "options": [
+      "\\(-\\frac{5}{3}\\)",
+      "\\(\\frac{7}{10}\\)",
+      "\\(1\\)",
+      "\\(\\frac{1}{20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{5(2)}{2 + 8} = \\frac{10}{10}\\)\n\n\\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = -1\\), evaluate \\(6x^{2} - 3y\\).",
+    "options": [
+      "-99",
+      "99",
+      "93",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = -1\\).\n\n\\(6(4)^{2} - 3(-1)\\)\n\n\\(= 6(16) - (-3)\\)\n\n\\(= 96 - (-3) = 99\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 4) + 5x\\).",
+    "options": [
+      "\\(35x - 28\\)",
+      "\\(12x - 28\\)",
+      "\\(13x - 28\\)",
+      "\\(12x + 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 28 + 5x\\)\n\nCollect the \\(x\\) terms: \\(7x + 5x = 12x\\)\n\nSo the answer is \\(12x - 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = -6\\), evaluate \\(6x^{2} - 5y\\).",
+    "options": [
+      "120",
+      "180",
+      "-180",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = -6\\).\n\n\\(6(-5)^{2} - 5(-6)\\)\n\n\\(= 6(25) - (-30)\\)\n\n\\(= 150 - (-30) = 180\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x + 6) + 6x\\).",
+    "options": [
+      "\\(12x + 30\\)",
+      "\\(11x + 30\\)",
+      "\\(11x + 11\\)",
+      "\\(30x + 30\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x + 30 + 6x\\)\n\nCollect the \\(x\\) terms: \\(5x + 6x = 11x\\)\n\nSo the answer is \\(11x + 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = 3\\), evaluate \\(3x^{2} - 3y\\).",
+    "options": [
+      "36",
+      "-18",
+      "21",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = 3\\).\n\n\\(3(-3)^{2} - 3(3)\\)\n\n\\(= 3(9) - (9)\\)\n\n\\(= 27 - (9) = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{1x}{x + 1}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(5\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{1(5)}{5 + 1} = \\frac{5}{6}\\)\n\n\\(= \\frac{5}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{6x}{x + 2}\\).",
+    "options": [
+      "\\(4\\)",
+      "\\(12\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{6(4)}{4 + 2} = \\frac{24}{6}\\)\n\n\\(= 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-9x + 9y + 7x - 6y\\).",
+    "options": [
+      "\\(-2x + 3y\\)",
+      "\\(-16x + 3y\\)",
+      "\\(-x + 3y\\)",
+      "\\(-2x - 3y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-9 + (7) = -2\\)\n\n\\(y\\) terms: \\(9 + (-6) = 3\\)\n\nSo the expression simplifies to \\(-2x + 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\), evaluate \\(\\frac{7x}{x + 7}\\).",
+    "options": [
+      "\\(\\frac{42}{13}\\)",
+      "\\(-42\\)",
+      "\\(\\frac{6}{49}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(\\frac{7(6)}{6 + 7} = \\frac{42}{13}\\)\n\n\\(= \\frac{42}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = 5\\), evaluate \\(2x^{2} - 4y\\).",
+    "options": [
+      "-24",
+      "12",
+      "-12",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = 5\\).\n\n\\(2(-2)^{2} - 4(5)\\)\n\n\\(= 2(4) - (20)\\)\n\n\\(= 8 - (20) = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{7x}{x + 4}\\).",
+    "options": [
+      "\\(\\frac{17}{14}\\)",
+      "\\(5\\)",
+      "\\(\\frac{5}{14}\\)",
+      "\\(\\frac{35}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{7(10)}{10 + 4} = \\frac{70}{14}\\)\n\n\\(= 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{3x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{27}{17}\\)",
+      "\\(\\frac{12}{17}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(27\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{3(9)}{9 + 8} = \\frac{27}{17}\\)\n\n\\(= \\frac{27}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = 6\\), evaluate \\(2x^{2} - 4y\\).",
+    "options": [
+      "-28",
+      "16",
+      "32",
+      "-16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = 6\\).\n\n\\(2(-2)^{2} - 4(6)\\)\n\n\\(= 2(4) - (24)\\)\n\n\\(= 8 - (24) = -16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{1x}{x + 5}\\).",
+    "options": [
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{2}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{1(2)}{2 + 5} = \\frac{2}{7}\\)\n\n\\(= \\frac{2}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x - 9) + 5x\\).",
+    "options": [
+      "\\(10x - 45\\)",
+      "\\(25x - 45\\)",
+      "\\(10x - 4\\)",
+      "\\(11x - 45\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(5x - 45 + 5x\\)\n\nCollect the \\(x\\) terms: \\(5x + 5x = 10x\\)\n\nSo the answer is \\(10x - 45\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\) and \\(y = -5\\), evaluate \\(4x^{2} - 3y\\).",
+    "options": [
+      "35",
+      "115",
+      "85",
+      "-115"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 5\\) and \\(y = -5\\).\n\n\\(4(5)^{2} - 3(-5)\\)\n\n\\(= 4(25) - (-15)\\)\n\n\\(= 100 - (-15) = 115\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{4x}{x + 6}\\).",
+    "options": [
+      "\\(-2\\)",
+      "\\(1\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{4(2)}{2 + 6} = \\frac{8}{8}\\)\n\n\\(= 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\), evaluate \\(\\frac{9x}{x + 9}\\).",
+    "options": [
+      "\\(\\frac{2}{27}\\)",
+      "\\(1\\)",
+      "\\(\\frac{18}{5}\\)",
+      "\\(-18\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(\\frac{9(6)}{6 + 9} = \\frac{54}{15}\\)\n\n\\(= \\frac{18}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{9x}{x + 5}\\).",
+    "options": [
+      "\\(\\frac{11}{7}\\)",
+      "\\(\\frac{18}{7}\\)",
+      "\\(-6\\)",
+      "\\(\\frac{2}{45}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{9(2)}{2 + 5} = \\frac{18}{7}\\)\n\n\\(= \\frac{18}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-2x - 2y - 3x + 3y\\).",
+    "options": [
+      "\\(-5x - y\\)",
+      "\\(x + y\\)",
+      "\\(-4x + y\\)",
+      "\\(-5x + y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-2 + (-3) = -5\\)\n\n\\(y\\) terms: \\(-2 + (3) = 1\\)\n\nSo the expression simplifies to \\(-5x + y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 4) + 7x\\).",
+    "options": [
+      "\\(56x - 32\\)",
+      "\\(15x - 32\\)",
+      "\\(16x - 32\\)",
+      "\\(15x + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x - 32 + 7x\\)\n\nCollect the \\(x\\) terms: \\(8x + 7x = 15x\\)\n\nSo the answer is \\(15x - 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-x + 9y - 2x - 6y\\).",
+    "options": [
+      "\\(-3x - 3y\\)",
+      "\\(x + 3y\\)",
+      "\\(-2x + 3y\\)",
+      "\\(-3x + 3y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-1 + (-2) = -3\\)\n\n\\(y\\) terms: \\(9 + (-6) = 3\\)\n\nSo the expression simplifies to \\(-3x + 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 7\\), evaluate \\(\\frac{9x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{63}{4}\\)",
+      "\\(\\frac{63}{10}\\)",
+      "\\(\\frac{7}{27}\\)",
+      "\\(\\frac{8}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(\\frac{9(7)}{7 + 3} = \\frac{63}{10}\\)\n\n\\(= \\frac{63}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x + 1) + 6x\\).",
+    "options": [
+      "\\(11x + 6\\)",
+      "\\(12x + 5\\)",
+      "\\(11x + 5\\)",
+      "\\(30x + 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(5x + 5 + 6x\\)\n\nCollect the \\(x\\) terms: \\(5x + 6x = 11x\\)\n\nSo the answer is \\(11x + 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -4\\) and \\(y = 6\\), evaluate \\(5x^{2} - 2y\\).",
+    "options": [
+      "92",
+      "-68",
+      "-32",
+      "68"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -4\\) and \\(y = 6\\).\n\n\\(5(-4)^{2} - 2(6)\\)\n\n\\(= 5(16) - (12)\\)\n\n\\(= 80 - (12) = 68\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 4) + 5x\\).",
+    "options": [
+      "\\(14x - 32\\)",
+      "\\(13x - 32\\)",
+      "\\(13x + 4\\)",
+      "\\(40x - 32\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x - 32 + 5x\\)\n\nCollect the \\(x\\) terms: \\(8x + 5x = 13x\\)\n\nSo the answer is \\(13x - 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x - 3y - 7x - 9y\\).",
+    "options": [
+      "\\(-6x + 12y\\)",
+      "\\(-6x - 12y\\)",
+      "\\(-5x - 12y\\)",
+      "\\(8x - 12y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (-7) = -6\\)\n\n\\(y\\) terms: \\(-3 + (-9) = -12\\)\n\nSo the expression simplifies to \\(-6x - 12y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = 4\\), evaluate \\(3x^{2} - 6y\\).",
+    "options": [
+      "-30",
+      "36",
+      "-12",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = 4\\).\n\n\\(3(-2)^{2} - 6(4)\\)\n\n\\(= 3(4) - (24)\\)\n\n\\(= 12 - (24) = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\) and \\(y = 1\\), evaluate \\(6x^{2} - 3y\\).",
+    "options": [
+      "147",
+      "153",
+      "27",
+      "-147"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 5\\) and \\(y = 1\\).\n\n\\(6(5)^{2} - 3(1)\\)\n\n\\(= 6(25) - (3)\\)\n\n\\(= 150 - (3) = 147\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-8x + 4y + x + 7y\\).",
+    "options": [
+      "\\(-6x + 11y\\)",
+      "\\(-9x + 11y\\)",
+      "\\(-7x + 11y\\)",
+      "\\(-7x - 11y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-8 + (1) = -7\\)\n\n\\(y\\) terms: \\(4 + (7) = 11\\)\n\nSo the expression simplifies to \\(-7x + 11y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-9x + 2y - 2x - 9y\\).",
+    "options": [
+      "\\(-11x - 7y\\)",
+      "\\(-10x - 7y\\)",
+      "\\(-11x + 7y\\)",
+      "\\(-7x - 7y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-9 + (-2) = -11\\)\n\n\\(y\\) terms: \\(2 + (-9) = -7\\)\n\nSo the expression simplifies to \\(-11x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = 2\\), evaluate \\(3x^{2} - 4y\\).",
+    "options": [
+      "35",
+      "-19",
+      "-17",
+      "19"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = 2\\).\n\n\\(3(-3)^{2} - 4(2)\\)\n\n\\(= 3(9) - (8)\\)\n\n\\(= 27 - (8) = 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x + 8y - 4x + 5y\\).",
+    "options": [
+      "\\(-3x - 13y\\)",
+      "\\(5x + 13y\\)",
+      "\\(-2x + 13y\\)",
+      "\\(-3x + 13y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (-4) = -3\\)\n\n\\(y\\) terms: \\(8 + (5) = 13\\)\n\nSo the expression simplifies to \\(-3x + 13y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{6x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{15}{4}\\)",
+      "\\(15\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{5}{18}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{6(5)}{5 + 3} = \\frac{30}{8}\\)\n\n\\(= \\frac{15}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = -5\\), evaluate \\(5x^{2} - 4y\\).",
+    "options": [
+      "100",
+      "-100",
+      "60",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = -5\\).\n\n\\(5(4)^{2} - 4(-5)\\)\n\n\\(= 5(16) - (-20)\\)\n\n\\(= 80 - (-20) = 100\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{6x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{15}{11}\\)",
+      "\\(\\frac{54}{11}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{54}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{6(9)}{9 + 2} = \\frac{54}{11}\\)\n\n\\(= \\frac{54}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x - 7) + 5x\\).",
+    "options": [
+      "\\(9x - 21\\)",
+      "\\(8x - 21\\)",
+      "\\(8x - 4\\)",
+      "\\(15x - 21\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(3x - 21 + 5x\\)\n\nCollect the \\(x\\) terms: \\(3x + 5x = 8x\\)\n\nSo the answer is \\(8x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x - 5y + 9x - 2y\\).",
+    "options": [
+      "\\(-7x - 7y\\)",
+      "\\(12x - 7y\\)",
+      "\\(11x - 7y\\)",
+      "\\(11x + 7y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(2 + (9) = 11\\)\n\n\\(y\\) terms: \\(-5 + (-2) = -7\\)\n\nSo the expression simplifies to \\(11x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x - 1) + 7x\\).",
+    "options": [
+      "\\(13x + 5\\)",
+      "\\(13x - 6\\)",
+      "\\(14x - 6\\)",
+      "\\(42x - 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(6x - 6 + 7x\\)\n\nCollect the \\(x\\) terms: \\(6x + 7x = 13x\\)\n\nSo the answer is \\(13x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = -5\\), evaluate \\(5x^{2} - 3y\\).",
+    "options": [
+      "-10",
+      "140",
+      "110",
+      "-140"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = -5\\).\n\n\\(5(-5)^{2} - 3(-5)\\)\n\n\\(= 5(25) - (-15)\\)\n\n\\(= 125 - (-15) = 140\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 7\\), evaluate \\(\\frac{4x}{x + 6}\\).",
+    "options": [
+      "\\(28\\)",
+      "\\(\\frac{11}{13}\\)",
+      "\\(\\frac{28}{13}\\)",
+      "\\(\\frac{7}{24}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(\\frac{4(7)}{7 + 6} = \\frac{28}{13}\\)\n\n\\(= \\frac{28}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\) and \\(y = 6\\), evaluate \\(2x^{2} - 6y\\).",
+    "options": [
+      "-30",
+      "18",
+      "-18",
+      "54"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 3\\) and \\(y = 6\\).\n\n\\(2(3)^{2} - 6(6)\\)\n\n\\(= 2(9) - (36)\\)\n\n\\(= 18 - (36) = -18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x + 5) + 4x\\).",
+    "options": [
+      "\\(12x + 40\\)",
+      "\\(13x + 40\\)",
+      "\\(32x + 40\\)",
+      "\\(12x + 13\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(8x + 40 + 4x\\)\n\nCollect the \\(x\\) terms: \\(8x + 4x = 12x\\)\n\nSo the answer is \\(12x + 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{6x}{x + 7}\\).",
+    "options": [
+      "\\(20\\)",
+      "\\(\\frac{5}{21}\\)",
+      "\\(\\frac{16}{17}\\)",
+      "\\(\\frac{60}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{6(10)}{10 + 7} = \\frac{60}{17}\\)\n\n\\(= \\frac{60}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x + 8) + 8x\\).",
+    "options": [
+      "\\(16x + 16\\)",
+      "\\(17x + 64\\)",
+      "\\(16x + 64\\)",
+      "\\(64x + 64\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x + 64 + 8x\\)\n\nCollect the \\(x\\) terms: \\(8x + 8x = 16x\\)\n\nSo the answer is \\(16x + 64\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = -3\\), evaluate \\(6x^{2} - 5y\\).",
+    "options": [
+      "231",
+      "201",
+      "-21",
+      "-231"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = -3\\).\n\n\\(6(-6)^{2} - 5(-3)\\)\n\n\\(= 6(36) - (-15)\\)\n\n\\(= 216 - (-15) = 231\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x + 8y + 4x + 3y\\).",
+    "options": [
+      "\\(10x + 11y\\)",
+      "\\(10x - 11y\\)",
+      "\\(11x + 11y\\)",
+      "\\(2x + 11y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(6 + (4) = 10\\)\n\n\\(y\\) terms: \\(8 + (3) = 11\\)\n\nSo the expression simplifies to \\(10x + 11y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-3x - 3y + 9x - 7y\\).",
+    "options": [
+      "\\(6x - 10y\\)",
+      "\\(6x + 10y\\)",
+      "\\(-12x - 10y\\)",
+      "\\(7x - 10y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-3 + (9) = 6\\)\n\n\\(y\\) terms: \\(-3 + (-7) = -10\\)\n\nSo the expression simplifies to \\(6x - 10y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x - 1) + 7x\\).",
+    "options": [
+      "\\(11x - 4\\)",
+      "\\(12x - 4\\)",
+      "\\(28x - 4\\)",
+      "\\(11x + 3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(4x - 4 + 7x\\)\n\nCollect the \\(x\\) terms: \\(4x + 7x = 11x\\)\n\nSo the answer is \\(11x - 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x - 8) + 6x\\).",
+    "options": [
+      "\\(9x - 5\\)",
+      "\\(18x - 24\\)",
+      "\\(10x - 24\\)",
+      "\\(9x - 24\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(3x - 24 + 6x\\)\n\nCollect the \\(x\\) terms: \\(3x + 6x = 9x\\)\n\nSo the answer is \\(9x - 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4x - 7y - 7x + 4y\\).",
+    "options": [
+      "\\(-2x - 3y\\)",
+      "\\(11x - 3y\\)",
+      "\\(-3x - 3y\\)",
+      "\\(-3x + 3y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(4 + (-7) = -3\\)\n\n\\(y\\) terms: \\(-7 + (4) = -3\\)\n\nSo the expression simplifies to \\(-3x - 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x + 9) + 8x\\).",
+    "options": [
+      "\\(11x + 27\\)",
+      "\\(24x + 27\\)",
+      "\\(12x + 27\\)",
+      "\\(11x + 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x + 27 + 8x\\)\n\nCollect the \\(x\\) terms: \\(3x + 8x = 11x\\)\n\nSo the answer is \\(11x + 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = 5\\), evaluate \\(2x^{2} - 5y\\).",
+    "options": [
+      "-17",
+      "57",
+      "-7",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = 5\\).\n\n\\(2(4)^{2} - 5(5)\\)\n\n\\(= 2(16) - (25)\\)\n\n\\(= 32 - (25) = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -4\\) and \\(y = 6\\), evaluate \\(4x^{2} - 2y\\).",
+    "options": [
+      "-52",
+      "-28",
+      "52",
+      "76"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -4\\) and \\(y = 6\\).\n\n\\(4(-4)^{2} - 2(6)\\)\n\n\\(= 4(16) - (12)\\)\n\n\\(= 64 - (12) = 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = 1\\), evaluate \\(2x^{2} - 4y\\).",
+    "options": [
+      "-10",
+      "22",
+      "-14",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = 1\\).\n\n\\(2(-3)^{2} - 4(1)\\)\n\n\\(= 2(9) - (4)\\)\n\n\\(= 18 - (4) = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x + 4y - 2x - y\\).",
+    "options": [
+      "\\(4x + 3y\\)",
+      "\\(3x + 3y\\)",
+      "\\(3x - 3y\\)",
+      "\\(7x + 3y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(5 + (-2) = 3\\)\n\n\\(y\\) terms: \\(4 + (-1) = 3\\)\n\nSo the expression simplifies to \\(3x + 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x + 9) + 3x\\).",
+    "options": [
+      "\\(11x + 72\\)",
+      "\\(24x + 72\\)",
+      "\\(11x + 17\\)",
+      "\\(12x + 72\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(8x + 72 + 3x\\)\n\nCollect the \\(x\\) terms: \\(8x + 3x = 11x\\)\n\nSo the answer is \\(11x + 72\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x + 5) + 5x\\).",
+    "options": [
+      "\\(10x + 10\\)",
+      "\\(10x + 25\\)",
+      "\\(11x + 25\\)",
+      "\\(25x + 25\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x + 25 + 5x\\)\n\nCollect the \\(x\\) terms: \\(5x + 5x = 10x\\)\n\nSo the answer is \\(10x + 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x - 4y - 6x - 9y\\).",
+    "options": [
+      "\\(-x - 13y\\)",
+      "\\(-x + 13y\\)",
+      "\\(0x - 13y\\)",
+      "\\(11x - 13y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(5 + (-6) = -1\\)\n\n\\(y\\) terms: \\(-4 + (-9) = -13\\)\n\nSo the expression simplifies to \\(-x - 13y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x - 8) + 8x\\).",
+    "options": [
+      "\\(14x - 2\\)",
+      "\\(15x - 48\\)",
+      "\\(14x - 48\\)",
+      "\\(48x - 48\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(6x - 48 + 8x\\)\n\nCollect the \\(x\\) terms: \\(6x + 8x = 14x\\)\n\nSo the answer is \\(14x - 48\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x + 9) + 2x\\).",
+    "options": [
+      "\\(8x + 15\\)",
+      "\\(12x + 54\\)",
+      "\\(9x + 54\\)",
+      "\\(8x + 54\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(6x + 54 + 2x\\)\n\nCollect the \\(x\\) terms: \\(6x + 2x = 8x\\)\n\nSo the answer is \\(8x + 54\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5(x - 2) + 8x\\).",
+    "options": [
+      "\\(40x - 10\\)",
+      "\\(13x + 3\\)",
+      "\\(13x - 10\\)",
+      "\\(14x - 10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(5x - 10 + 8x\\)\n\nCollect the \\(x\\) terms: \\(5x + 8x = 13x\\)\n\nSo the answer is \\(13x - 10\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-4x + 9y - 9x + 8y\\).",
+    "options": [
+      "\\(-13x + 17y\\)",
+      "\\(-12x + 17y\\)",
+      "\\(-13x - 17y\\)",
+      "\\(5x + 17y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-4 + (-9) = -13\\)\n\n\\(y\\) terms: \\(9 + (8) = 17\\)\n\nSo the expression simplifies to \\(-13x + 17y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = -3\\), evaluate \\(2x^{2} - 3y\\).",
+    "options": [
+      "-7",
+      "11",
+      "-11",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = -3\\).\n\n\\(2(1)^{2} - 3(-3)\\)\n\n\\(= 2(1) - (-9)\\)\n\n\\(= 2 - (-9) = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{3x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{9}{4}\\)",
+      "\\(1\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{9}{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{3(3)}{3 + 1} = \\frac{9}{4}\\)\n\n\\(= \\frac{9}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 7\\), evaluate \\(\\frac{9x}{x + 5}\\).",
+    "options": [
+      "\\(\\frac{21}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{63}{2}\\)",
+      "\\(\\frac{7}{45}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(\\frac{9(7)}{7 + 5} = \\frac{63}{12}\\)\n\n\\(= \\frac{21}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{4x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{8}{5}\\)",
+      "\\(-8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{4(2)}{2 + 3} = \\frac{8}{5}\\)\n\n\\(= \\frac{8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{4x}{x + 8}\\).",
+    "options": [
+      "\\(36\\)",
+      "\\(\\frac{36}{17}\\)",
+      "\\(\\frac{9}{32}\\)",
+      "\\(\\frac{13}{17}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{4(9)}{9 + 8} = \\frac{36}{17}\\)\n\n\\(= \\frac{36}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x + 3y - 8x + 3y\\).",
+    "options": [
+      "\\(-7x + 6y\\)",
+      "\\(-7x - 6y\\)",
+      "\\(9x + 6y\\)",
+      "\\(-6x + 6y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (-8) = -7\\)\n\n\\(y\\) terms: \\(3 + (3) = 6\\)\n\nSo the expression simplifies to \\(-7x + 6y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x + 2y + 5x + 2y\\).",
+    "options": [
+      "\\(6x + 4y\\)",
+      "\\(6x - 4y\\)",
+      "\\(-4x + 4y\\)",
+      "\\(7x + 4y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (5) = 6\\)\n\n\\(y\\) terms: \\(2 + (2) = 4\\)\n\nSo the expression simplifies to \\(6x + 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 9) + 5x\\).",
+    "options": [
+      "\\(10x + 36\\)",
+      "\\(20x + 36\\)",
+      "\\(9x + 36\\)",
+      "\\(9x + 13\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(4x + 36 + 5x\\)\n\nCollect the \\(x\\) terms: \\(4x + 5x = 9x\\)\n\nSo the answer is \\(9x + 36\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-9x + y - 2x - 5y\\).",
+    "options": [
+      "\\(-11x - 4y\\)",
+      "\\(-7x - 4y\\)",
+      "\\(-10x - 4y\\)",
+      "\\(-11x + 4y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-9 + (-2) = -11\\)\n\n\\(y\\) terms: \\(1 + (-5) = -4\\)\n\nSo the expression simplifies to \\(-11x - 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{5x}{x + 7}\\).",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{3}{35}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(-\\frac{15}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{5(3)}{3 + 7} = \\frac{15}{10}\\)\n\n\\(= \\frac{3}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{9x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{12}{11}\\)",
+      "\\(-\\frac{27}{5}\\)",
+      "\\(\\frac{1}{24}\\)",
+      "\\(\\frac{27}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{9(3)}{3 + 8} = \\frac{27}{11}\\)\n\n\\(= \\frac{27}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{4x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{3}{5}\\)",
+      "\\(-\\frac{4}{3}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{1}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{4(2)}{2 + 8} = \\frac{8}{10}\\)\n\n\\(= \\frac{4}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6x + 4y + 6x - 5y\\).",
+    "options": [
+      "\\(12x - y\\)",
+      "\\(13x - y\\)",
+      "\\(12x + y\\)",
+      "\\(0x - y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(6 + (6) = 12\\)\n\n\\(y\\) terms: \\(4 + (-5) = -1\\)\n\nSo the expression simplifies to \\(12x - y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -4\\) and \\(y = 4\\), evaluate \\(2x^{2} - 4y\\).",
+    "options": [
+      "48",
+      "16",
+      "-16",
+      "-24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -4\\) and \\(y = 4\\).\n\n\\(2(-4)^{2} - 4(4)\\)\n\n\\(= 2(16) - (16)\\)\n\n\\(= 32 - (16) = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 8) + 8x\\).",
+    "options": [
+      "\\(12x + 12\\)",
+      "\\(12x + 32\\)",
+      "\\(32x + 32\\)",
+      "\\(13x + 32\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x + 32 + 8x\\)\n\nCollect the \\(x\\) terms: \\(4x + 8x = 12x\\)\n\nSo the answer is \\(12x + 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 7\\), evaluate \\(\\frac{4x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{11}{15}\\)",
+      "\\(-28\\)",
+      "\\(\\frac{7}{32}\\)",
+      "\\(\\frac{28}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 7\\).\n\n\\(\\frac{4(7)}{7 + 8} = \\frac{28}{15}\\)\n\n\\(= \\frac{28}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 5) + 6x\\).",
+    "options": [
+      "\\(13x - 35\\)",
+      "\\(14x - 35\\)",
+      "\\(13x + 2\\)",
+      "\\(42x - 35\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x - 35 + 6x\\)\n\nCollect the \\(x\\) terms: \\(7x + 6x = 13x\\)\n\nSo the answer is \\(13x - 35\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x - 2) + 6x\\).",
+    "options": [
+      "\\(10x - 6\\)",
+      "\\(18x - 6\\)",
+      "\\(9x - 6\\)",
+      "\\(9x + 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(3x - 6 + 6x\\)\n\nCollect the \\(x\\) terms: \\(3x + 6x = 9x\\)\n\nSo the answer is \\(9x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 2) + 7x\\).",
+    "options": [
+      "\\(15x + 6\\)",
+      "\\(56x - 16\\)",
+      "\\(16x - 16\\)",
+      "\\(15x - 16\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(8x - 16 + 7x\\)\n\nCollect the \\(x\\) terms: \\(8x + 7x = 15x\\)\n\nSo the answer is \\(15x - 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 3) + 2x\\).",
+    "options": [
+      "\\(10x - 21\\)",
+      "\\(9x - 21\\)",
+      "\\(14x - 21\\)",
+      "\\(9x + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 21 + 2x\\)\n\nCollect the \\(x\\) terms: \\(7x + 2x = 9x\\)\n\nSo the answer is \\(9x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x - 9) + 3x\\).",
+    "options": [
+      "\\(7x - 27\\)",
+      "\\(9x - 27\\)",
+      "\\(6x - 27\\)",
+      "\\(6x - 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(3x - 27 + 3x\\)\n\nCollect the \\(x\\) terms: \\(3x + 3x = 6x\\)\n\nSo the answer is \\(6x - 27\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{6x}{x + 9}\\).",
+    "options": [
+      "\\(\\frac{12}{11}\\)",
+      "\\(\\frac{8}{11}\\)",
+      "\\(-\\frac{12}{7}\\)",
+      "\\(\\frac{1}{27}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{6(2)}{2 + 9} = \\frac{12}{11}\\)\n\n\\(= \\frac{12}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 1) + 6x\\).",
+    "options": [
+      "\\(15x - 8\\)",
+      "\\(14x + 7\\)",
+      "\\(14x - 8\\)",
+      "\\(48x - 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x - 8 + 6x\\)\n\nCollect the \\(x\\) terms: \\(8x + 6x = 14x\\)\n\nSo the answer is \\(14x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{6x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{18}{11}\\)",
+      "\\(\\frac{9}{11}\\)",
+      "\\(-\\frac{18}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{6(3)}{3 + 8} = \\frac{18}{11}\\)\n\n\\(= \\frac{18}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{4x}{x + 9}\\).",
+    "options": [
+      "\\(-5\\)",
+      "\\(\\frac{5}{36}\\)",
+      "\\(\\frac{9}{14}\\)",
+      "\\(\\frac{10}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{4(5)}{5 + 9} = \\frac{20}{14}\\)\n\n\\(= \\frac{10}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x - 8y + 9x - 6y\\).",
+    "options": [
+      "\\(14x + 14y\\)",
+      "\\(-4x - 14y\\)",
+      "\\(14x - 14y\\)",
+      "\\(15x - 14y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(5 + (9) = 14\\)\n\n\\(y\\) terms: \\(-8 + (-6) = -14\\)\n\nSo the expression simplifies to \\(14x - 14y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\) and \\(y = 4\\), evaluate \\(6x^{2} - 6y\\).",
+    "options": [
+      "-6",
+      "78",
+      "30",
+      "-30"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 3\\) and \\(y = 4\\).\n\n\\(6(3)^{2} - 6(4)\\)\n\n\\(= 6(9) - (24)\\)\n\n\\(= 54 - (24) = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\) and \\(y = -3\\), evaluate \\(3x^{2} - 6y\\).",
+    "options": [
+      "9",
+      "45",
+      "-45",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\) and \\(y = -3\\).\n\n\\(3(3)^{2} - 6(-3)\\)\n\n\\(= 3(9) - (-18)\\)\n\n\\(= 27 - (-18) = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-x - 8y - 2x - 2y\\).",
+    "options": [
+      "\\(-3x + 10y\\)",
+      "\\(-2x - 10y\\)",
+      "\\(-3x - 10y\\)",
+      "\\(x - 10y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-1 + (-2) = -3\\)\n\n\\(y\\) terms: \\(-8 + (-2) = -10\\)\n\nSo the expression simplifies to \\(-3x - 10y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7x - 5y + 8x + 6y\\).",
+    "options": [
+      "\\(15x + y\\)",
+      "\\(16x + y\\)",
+      "\\(-x + y\\)",
+      "\\(15x - y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(7 + (8) = 15\\)\n\n\\(y\\) terms: \\(-5 + (6) = 1\\)\n\nSo the expression simplifies to \\(15x + y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 3) + 8x\\).",
+    "options": [
+      "\\(16x - 21\\)",
+      "\\(15x + 4\\)",
+      "\\(15x - 21\\)",
+      "\\(56x - 21\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x - 21 + 8x\\)\n\nCollect the \\(x\\) terms: \\(7x + 8x = 15x\\)\n\nSo the answer is \\(15x - 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x - 1) + 6x\\).",
+    "options": [
+      "\\(18x - 3\\)",
+      "\\(9x + 2\\)",
+      "\\(10x - 3\\)",
+      "\\(9x - 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(3x - 3 + 6x\\)\n\nCollect the \\(x\\) terms: \\(3x + 6x = 9x\\)\n\nSo the answer is \\(9x - 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2(x + 9) + 2x\\).",
+    "options": [
+      "\\(4x + 18\\)",
+      "\\(5x + 18\\)",
+      "\\(4x + 19\\)",
+      "\\(4x + 11\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(2x + 18 + 2x\\)\n\nCollect the \\(x\\) terms: \\(2x + 2x = 4x\\)\n\nSo the answer is \\(4x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2(x + 9) + 3x\\).",
+    "options": [
+      "\\(5x + 18\\)",
+      "\\(5x + 19\\)",
+      "\\(6x + 18\\)",
+      "\\(5x + 11\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(2x + 18 + 3x\\)\n\nCollect the \\(x\\) terms: \\(2x + 3x = 5x\\)\n\nSo the answer is \\(5x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-7x + 9y + 2x - y\\).",
+    "options": [
+      "\\(-5x + 8y\\)",
+      "\\(-9x + 8y\\)",
+      "\\(-5x - 8y\\)",
+      "\\(-4x + 8y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-7 + (2) = -5\\)\n\n\\(y\\) terms: \\(9 + (-1) = 8\\)\n\nSo the expression simplifies to \\(-5x + 8y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = -1\\), evaluate \\(4x^{2} - 5y\\).",
+    "options": [
+      "-41",
+      "31",
+      "41",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = -1\\).\n\n\\(4(-3)^{2} - 5(-1)\\)\n\n\\(= 4(9) - (-5)\\)\n\n\\(= 36 - (-5) = 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-8x - 3y - 7x + 4y\\).",
+    "options": [
+      "\\(-15x - y\\)",
+      "\\(-14x + y\\)",
+      "\\(-15x + y\\)",
+      "\\(-x + y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-8 + (-7) = -15\\)\n\n\\(y\\) terms: \\(-3 + (4) = 1\\)\n\nSo the expression simplifies to \\(-15x + y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{5x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{2}{15}\\)",
+      "\\(\\frac{7}{5}\\)",
+      "\\(-10\\)",
+      "\\(2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{5(2)}{2 + 3} = \\frac{10}{5}\\)\n\n\\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 4) + 8x\\).",
+    "options": [
+      "\\(15x + 3\\)",
+      "\\(15x - 28\\)",
+      "\\(16x - 28\\)",
+      "\\(56x - 28\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 28 + 8x\\)\n\nCollect the \\(x\\) terms: \\(7x + 8x = 15x\\)\n\nSo the answer is \\(15x - 28\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x - 5) + 3x\\).",
+    "options": [
+      "\\(8x - 20\\)",
+      "\\(7x - 20\\)",
+      "\\(12x - 20\\)",
+      "\\(7x - 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x - 20 + 3x\\)\n\nCollect the \\(x\\) terms: \\(4x + 3x = 7x\\)\n\nSo the answer is \\(7x - 20\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = -1\\), evaluate \\(2x^{2} - 3y\\).",
+    "options": [
+      "69",
+      "-9",
+      "75",
+      "-75"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = -1\\).\n\n\\(2(-6)^{2} - 3(-1)\\)\n\n\\(= 2(36) - (-3)\\)\n\n\\(= 72 - (-3) = 75\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{6x}{x + 6}\\).",
+    "options": [
+      "\\(-6\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{6(3)}{3 + 6} = \\frac{18}{9}\\)\n\n\\(= 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-6x - 3y + 4x + 7y\\).",
+    "options": [
+      "\\(-10x + 4y\\)",
+      "\\(-2x + 4y\\)",
+      "\\(-2x - 4y\\)",
+      "\\(-x + 4y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-6 + (4) = -2\\)\n\n\\(y\\) terms: \\(-3 + (7) = 4\\)\n\nSo the expression simplifies to \\(-2x + 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{8x}{x + 8}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{9}{64}\\)",
+      "\\(72\\)",
+      "\\(\\frac{72}{17}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{8(9)}{9 + 8} = \\frac{72}{17}\\)\n\n\\(= \\frac{72}{17}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 8\\), evaluate \\(\\frac{8x}{x + 7}\\).",
+    "options": [
+      "\\(\\frac{1}{7}\\)",
+      "\\(\\frac{16}{15}\\)",
+      "\\(\\frac{64}{15}\\)",
+      "\\(64\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 8\\).\n\n\\(\\frac{8(8)}{8 + 7} = \\frac{64}{15}\\)\n\n\\(= \\frac{64}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\), evaluate \\(\\frac{4x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(\\frac{4(6)}{6 + 2} = \\frac{24}{8}\\)\n\n\\(= 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-6x - 5y + 5x - 8y\\).",
+    "options": [
+      "\\(0x - 13y\\)",
+      "\\(-x - 13y\\)",
+      "\\(-x + 13y\\)",
+      "\\(-11x - 13y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-6 + (5) = -1\\)\n\n\\(y\\) terms: \\(-5 + (-8) = -13\\)\n\nSo the expression simplifies to \\(-x - 13y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x + 3) + 3x\\).",
+    "options": [
+      "\\(6x + 9\\)",
+      "\\(6x + 6\\)",
+      "\\(9x + 9\\)",
+      "\\(7x + 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x + 9 + 3x\\)\n\nCollect the \\(x\\) terms: \\(3x + 3x = 6x\\)\n\nSo the answer is \\(6x + 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2(x + 9) + 5x\\).",
+    "options": [
+      "\\(8x + 18\\)",
+      "\\(7x + 11\\)",
+      "\\(10x + 18\\)",
+      "\\(7x + 18\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x + 18 + 5x\\)\n\nCollect the \\(x\\) terms: \\(2x + 5x = 7x\\)\n\nSo the answer is \\(7x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{2x}{x + 4}\\).",
+    "options": [
+      "\\(10\\)",
+      "\\(\\frac{7}{9}\\)",
+      "\\(\\frac{10}{9}\\)",
+      "\\(\\frac{5}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{2(5)}{5 + 4} = \\frac{10}{9}\\)\n\n\\(= \\frac{10}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-6x + 6y + 4x - 5y\\).",
+    "options": [
+      "\\(-2x + y\\)",
+      "\\(-2x - y\\)",
+      "\\(-x + y\\)",
+      "\\(-10x + y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-6 + (4) = -2\\)\n\n\\(y\\) terms: \\(6 + (-5) = 1\\)\n\nSo the expression simplifies to \\(-2x + y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-3x + y + 7x + 8y\\).",
+    "options": [
+      "\\(-10x + 9y\\)",
+      "\\(4x + 9y\\)",
+      "\\(5x + 9y\\)",
+      "\\(4x - 9y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-3 + (7) = 4\\)\n\n\\(y\\) terms: \\(1 + (8) = 9\\)\n\nSo the expression simplifies to \\(4x + 9y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{7x}{x + 6}\\).",
+    "options": [
+      "\\(\\frac{2}{21}\\)",
+      "\\(\\frac{14}{5}\\)",
+      "\\(-14\\)",
+      "\\(\\frac{11}{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{7(4)}{4 + 6} = \\frac{28}{10}\\)\n\n\\(= \\frac{14}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3(x + 8) + 2x\\).",
+    "options": [
+      "\\(5x + 25\\)",
+      "\\(5x + 11\\)",
+      "\\(5x + 24\\)",
+      "\\(6x + 24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(3x + 24 + 2x\\)\n\nCollect the \\(x\\) terms: \\(3x + 2x = 5x\\)\n\nSo the answer is \\(5x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-7x + 6y - 6x + 8y\\).",
+    "options": [
+      "\\(-13x + 14y\\)",
+      "\\(-x + 14y\\)",
+      "\\(-13x - 14y\\)",
+      "\\(-12x + 14y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-7 + (-6) = -13\\)\n\n\\(y\\) terms: \\(6 + (8) = 14\\)\n\nSo the expression simplifies to \\(-13x + 14y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = 6\\), evaluate \\(4x^{2} - 5y\\).",
+    "options": [
+      "-6",
+      "66",
+      "6",
+      "-42"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = 6\\).\n\n\\(4(-3)^{2} - 5(6)\\)\n\n\\(= 4(9) - (30)\\)\n\n\\(= 36 - (30) = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x + 6) + 4x\\).",
+    "options": [
+      "\\(28x + 42\\)",
+      "\\(11x + 13\\)",
+      "\\(12x + 42\\)",
+      "\\(11x + 42\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(7x + 42 + 4x\\)\n\nCollect the \\(x\\) terms: \\(7x + 4x = 11x\\)\n\nSo the answer is \\(11x + 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-x + 3y + 6x - 7y\\).",
+    "options": [
+      "\\(6x - 4y\\)",
+      "\\(5x + 4y\\)",
+      "\\(5x - 4y\\)",
+      "\\(-7x - 4y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-1 + (6) = 5\\)\n\n\\(y\\) terms: \\(3 + (-7) = -4\\)\n\nSo the expression simplifies to \\(5x - 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x + 3) + 3x\\).",
+    "options": [
+      "\\(12x + 24\\)",
+      "\\(11x + 24\\)",
+      "\\(24x + 24\\)",
+      "\\(11x + 11\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x + 24 + 3x\\)\n\nCollect the \\(x\\) terms: \\(8x + 3x = 11x\\)\n\nSo the answer is \\(11x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{5x}{x + 2}\\).",
+    "options": [
+      "\\(\\frac{14}{11}\\)",
+      "\\(\\frac{9}{10}\\)",
+      "\\(\\frac{45}{11}\\)",
+      "\\(\\frac{45}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{5(9)}{9 + 2} = \\frac{45}{11}\\)\n\n\\(= \\frac{45}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-x - 4y + 8x - 8y\\).",
+    "options": [
+      "\\(-9x - 12y\\)",
+      "\\(7x - 12y\\)",
+      "\\(7x + 12y\\)",
+      "\\(8x - 12y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-1 + (8) = 7\\)\n\n\\(y\\) terms: \\(-4 + (-8) = -12\\)\n\nSo the expression simplifies to \\(7x - 12y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -3\\) and \\(y = 1\\), evaluate \\(6x^{2} - 6y\\).",
+    "options": [
+      "60",
+      "-48",
+      "48",
+      "-24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -3\\) and \\(y = 1\\).\n\n\\(6(-3)^{2} - 6(1)\\)\n\n\\(= 6(9) - (6)\\)\n\n\\(= 54 - (6) = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{7x}{x + 1}\\).",
+    "options": [
+      "\\(\\frac{70}{11}\\)",
+      "\\(\\frac{10}{7}\\)",
+      "\\(\\frac{70}{9}\\)",
+      "\\(\\frac{17}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{7(10)}{10 + 1} = \\frac{70}{11}\\)\n\n\\(= \\frac{70}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-7x - y - 2x - 6y\\).",
+    "options": [
+      "\\(-9x + 7y\\)",
+      "\\(-9x - 7y\\)",
+      "\\(-5x - 7y\\)",
+      "\\(-8x - 7y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-7 + (-2) = -9\\)\n\n\\(y\\) terms: \\(-1 + (-6) = -7\\)\n\nSo the expression simplifies to \\(-9x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = 5\\), evaluate \\(2x^{2} - 6y\\).",
+    "options": [
+      "-26",
+      "28",
+      "-28",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = 5\\).\n\n\\(2(1)^{2} - 6(5)\\)\n\n\\(= 2(1) - (30)\\)\n\n\\(= 2 - (30) = -28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 6) + 5x\\).",
+    "options": [
+      "\\(10x + 24\\)",
+      "\\(20x + 24\\)",
+      "\\(9x + 10\\)",
+      "\\(9x + 24\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(4x + 24 + 5x\\)\n\nCollect the \\(x\\) terms: \\(4x + 5x = 9x\\)\n\nSo the answer is \\(9x + 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x - 9y - 6x + 2y\\).",
+    "options": [
+      "\\(2x + 7y\\)",
+      "\\(14x - 7y\\)",
+      "\\(2x - 7y\\)",
+      "\\(3x - 7y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(8 + (-6) = 2\\)\n\n\\(y\\) terms: \\(-9 + (2) = -7\\)\n\nSo the expression simplifies to \\(2x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x + 2) + 2x\\).",
+    "options": [
+      "\\(10x + 14\\)",
+      "\\(9x + 9\\)",
+      "\\(9x + 14\\)",
+      "\\(14x + 14\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x + 14 + 2x\\)\n\nCollect the \\(x\\) terms: \\(7x + 2x = 9x\\)\n\nSo the answer is \\(9x + 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-4x - 8y - 9x - 2y\\).",
+    "options": [
+      "\\(-13x - 10y\\)",
+      "\\(-13x + 10y\\)",
+      "\\(-12x - 10y\\)",
+      "\\(5x - 10y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-4 + (-9) = -13\\)\n\n\\(y\\) terms: \\(-8 + (-2) = -10\\)\n\nSo the expression simplifies to \\(-13x - 10y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(9x - y - 8x - 2y\\).",
+    "options": [
+      "\\(x - 3y\\)",
+      "\\(2x - 3y\\)",
+      "\\(17x - 3y\\)",
+      "\\(x + 3y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(9 + (-8) = 1\\)\n\n\\(y\\) terms: \\(-1 + (-2) = -3\\)\n\nSo the expression simplifies to \\(x - 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = 3\\), evaluate \\(4x^{2} - 2y\\).",
+    "options": [
+      "94",
+      "-26",
+      "-94",
+      "106"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = 3\\).\n\n\\(4(-5)^{2} - 2(3)\\)\n\n\\(= 4(25) - (6)\\)\n\n\\(= 100 - (6) = 94\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 1\\) and \\(y = -1\\), evaluate \\(5x^{2} - 2y\\).",
+    "options": [
+      "3",
+      "7",
+      "12",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 1\\) and \\(y = -1\\).\n\n\\(5(1)^{2} - 2(-1)\\)\n\n\\(= 5(1) - (-2)\\)\n\n\\(= 5 - (-2) = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\), evaluate \\(\\frac{7x}{x + 6}\\).",
+    "options": [
+      "\\(-7\\)",
+      "\\(\\frac{10}{9}\\)",
+      "\\(\\frac{1}{14}\\)",
+      "\\(\\frac{7}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 3\\).\n\n\\(\\frac{7(3)}{3 + 6} = \\frac{21}{9}\\)\n\n\\(= \\frac{7}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x - 3y + 5x - 4y\\).",
+    "options": [
+      "\\(13x - 7y\\)",
+      "\\(13x + 7y\\)",
+      "\\(14x - 7y\\)",
+      "\\(3x - 7y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(8 + (5) = 13\\)\n\n\\(y\\) terms: \\(-3 + (-4) = -7\\)\n\nSo the expression simplifies to \\(13x - 7y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 3) + 6x\\).",
+    "options": [
+      "\\(14x + 5\\)",
+      "\\(15x - 24\\)",
+      "\\(48x - 24\\)",
+      "\\(14x - 24\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(8x - 24 + 6x\\)\n\nCollect the \\(x\\) terms: \\(8x + 6x = 14x\\)\n\nSo the answer is \\(14x - 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x - 4) + 2x\\).",
+    "options": [
+      "\\(8x - 16\\)",
+      "\\(6x - 16\\)",
+      "\\(6x\\)",
+      "\\(7x - 16\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x - 16 + 2x\\)\n\nCollect the \\(x\\) terms: \\(4x + 2x = 6x\\)\n\nSo the answer is \\(6x - 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -6\\) and \\(y = 2\\), evaluate \\(6x^{2} - 3y\\).",
+    "options": [
+      "210",
+      "-42",
+      "-210",
+      "222"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -6\\) and \\(y = 2\\).\n\n\\(6(-6)^{2} - 3(2)\\)\n\n\\(= 6(36) - (6)\\)\n\n\\(= 216 - (6) = 210\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = 2\\), evaluate \\(5x^{2} - 6y\\).",
+    "options": [
+      "32",
+      "-8",
+      "-22",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = 2\\).\n\n\\(5(-2)^{2} - 6(2)\\)\n\n\\(= 5(4) - (12)\\)\n\n\\(= 20 - (12) = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{8x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{12}{7}\\)",
+      "\\(\\frac{32}{7}\\)",
+      "\\(32\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{8(4)}{4 + 3} = \\frac{32}{7}\\)\n\n\\(= \\frac{32}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\), evaluate \\(\\frac{8x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{14}{9}\\)",
+      "\\(16\\)",
+      "\\(\\frac{16}{3}\\)",
+      "\\(\\frac{1}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(\\frac{8(6)}{6 + 3} = \\frac{48}{9}\\)\n\n\\(= \\frac{16}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{3x}{x + 8}\\).",
+    "options": [
+      "\\(-1\\)",
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{3(2)}{2 + 8} = \\frac{6}{10}\\)\n\n\\(= \\frac{3}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = 6\\), evaluate \\(2x^{2} - 2y\\).",
+    "options": [
+      "-4",
+      "20",
+      "44",
+      "-20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = 6\\).\n\n\\(2(4)^{2} - 2(6)\\)\n\n\\(= 2(16) - (12)\\)\n\n\\(= 32 - (12) = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(5x - 9y + 5x - 9y\\).",
+    "options": [
+      "\\(10x + 18y\\)",
+      "\\(11x - 18y\\)",
+      "\\(0x - 18y\\)",
+      "\\(10x - 18y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(5 + (5) = 10\\)\n\n\\(y\\) terms: \\(-9 + (-9) = -18\\)\n\nSo the expression simplifies to \\(10x - 18y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x - 1) + 8x\\).",
+    "options": [
+      "\\(15x - 6\\)",
+      "\\(14x + 5\\)",
+      "\\(48x - 6\\)",
+      "\\(14x - 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(6x - 6 + 8x\\)\n\nCollect the \\(x\\) terms: \\(6x + 8x = 14x\\)\n\nSo the answer is \\(14x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\) and \\(y = 1\\), evaluate \\(5x^{2} - 2y\\).",
+    "options": [
+      "23",
+      "-123",
+      "123",
+      "127"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 5\\) and \\(y = 1\\).\n\n\\(5(5)^{2} - 2(1)\\)\n\n\\(= 5(25) - (2)\\)\n\n\\(= 125 - (2) = 123\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{1x}{x + 9}\\).",
+    "options": [
+      "\\(\\frac{2}{9}\\)",
+      "\\(-\\frac{2}{7}\\)",
+      "\\(\\frac{3}{11}\\)",
+      "\\(\\frac{2}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{1(2)}{2 + 9} = \\frac{2}{11}\\)\n\n\\(= \\frac{2}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{7x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{35}{2}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{35}{8}\\)",
+      "\\(\\frac{5}{21}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{7(5)}{5 + 3} = \\frac{35}{8}\\)\n\n\\(= \\frac{35}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = 3\\), evaluate \\(4x^{2} - 5y\\).",
+    "options": [
+      "115",
+      "-85",
+      "85",
+      "-35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = 3\\).\n\n\\(4(-5)^{2} - 5(3)\\)\n\n\\(= 4(25) - (15)\\)\n\n\\(= 100 - (15) = 85\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(3x + 6y + 4x + 7y\\).",
+    "options": [
+      "\\(7x + 13y\\)",
+      "\\(-x + 13y\\)",
+      "\\(8x + 13y\\)",
+      "\\(7x - 13y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(3 + (4) = 7\\)\n\n\\(y\\) terms: \\(6 + (7) = 13\\)\n\nSo the expression simplifies to \\(7x + 13y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\) and \\(y = 6\\), evaluate \\(4x^{2} - 4y\\).",
+    "options": [
+      "-16",
+      "-8",
+      "40",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\) and \\(y = 6\\).\n\n\\(4(2)^{2} - 4(6)\\)\n\n\\(= 4(4) - (24)\\)\n\n\\(= 16 - (24) = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\) and \\(y = -3\\), evaluate \\(4x^{2} - 5y\\).",
+    "options": [
+      "-51",
+      "21",
+      "51",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 3\\) and \\(y = -3\\).\n\n\\(4(3)^{2} - 5(-3)\\)\n\n\\(= 4(9) - (-15)\\)\n\n\\(= 36 - (-15) = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x + 3) + 2x\\).",
+    "options": [
+      "\\(9x + 18\\)",
+      "\\(8x + 9\\)",
+      "\\(12x + 18\\)",
+      "\\(8x + 18\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(6x + 18 + 2x\\)\n\nCollect the \\(x\\) terms: \\(6x + 2x = 8x\\)\n\nSo the answer is \\(8x + 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{1x}{x + 7}\\).",
+    "options": [
+      "\\(\\frac{5}{11}\\)",
+      "\\(-\\frac{4}{3}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{4}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{1(4)}{4 + 7} = \\frac{4}{11}\\)\n\n\\(= \\frac{4}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -4\\) and \\(y = 2\\), evaluate \\(2x^{2} - 5y\\).",
+    "options": [
+      "42",
+      "-18",
+      "22",
+      "-22"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -4\\) and \\(y = 2\\).\n\n\\(2(-4)^{2} - 5(2)\\)\n\n\\(= 2(16) - (10)\\)\n\n\\(= 32 - (10) = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-2x - 5y + 9x + 3y\\).",
+    "options": [
+      "\\(7x + 2y\\)",
+      "\\(-11x - 2y\\)",
+      "\\(7x - 2y\\)",
+      "\\(8x - 2y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-2 + (9) = 7\\)\n\n\\(y\\) terms: \\(-5 + (3) = -2\\)\n\nSo the expression simplifies to \\(7x - 2y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x + 5) + 7x\\).",
+    "options": [
+      "\\(13x + 30\\)",
+      "\\(13x + 11\\)",
+      "\\(42x + 30\\)",
+      "\\(14x + 30\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(6x + 30 + 7x\\)\n\nCollect the \\(x\\) terms: \\(6x + 7x = 13x\\)\n\nSo the answer is \\(13x + 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-3x + 4y - 2x - 2y\\).",
+    "options": [
+      "\\(-5x + 2y\\)",
+      "\\(-5x - 2y\\)",
+      "\\(-x + 2y\\)",
+      "\\(-4x + 2y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-3 + (-2) = -5\\)\n\n\\(y\\) terms: \\(4 + (-2) = 2\\)\n\nSo the expression simplifies to \\(-5x + 2y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x - 2) + 7x\\).",
+    "options": [
+      "\\(14x + 5\\)",
+      "\\(14x - 14\\)",
+      "\\(15x - 14\\)",
+      "\\(49x - 14\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 14 + 7x\\)\n\nCollect the \\(x\\) terms: \\(7x + 7x = 14x\\)\n\nSo the answer is \\(14x - 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(7(x + 2) + 6x\\).",
+    "options": [
+      "\\(14x + 14\\)",
+      "\\(42x + 14\\)",
+      "\\(13x + 14\\)",
+      "\\(13x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x + 14 + 6x\\)\n\nCollect the \\(x\\) terms: \\(7x + 6x = 13x\\)\n\nSo the answer is \\(13x + 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -1\\) and \\(y = 4\\), evaluate \\(2x^{2} - 2y\\).",
+    "options": [
+      "10",
+      "-10",
+      "-6",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = -1\\) and \\(y = 4\\).\n\n\\(2(-1)^{2} - 2(4)\\)\n\n\\(= 2(1) - (8)\\)\n\n\\(= 2 - (8) = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-2x - 7y - 7x + 3y\\).",
+    "options": [
+      "\\(-9x - 4y\\)",
+      "\\(-8x - 4y\\)",
+      "\\(-9x + 4y\\)",
+      "\\(5x - 4y\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-2 + (-7) = -9\\)\n\n\\(y\\) terms: \\(-7 + (3) = -4\\)\n\nSo the expression simplifies to \\(-9x - 4y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = -1\\), evaluate \\(6x^{2} - 6y\\).",
+    "options": [
+      "30",
+      "102",
+      "90",
+      "-102"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = -1\\).\n\n\\(6(4)^{2} - 6(-1)\\)\n\n\\(= 6(16) - (-6)\\)\n\n\\(= 96 - (-6) = 102\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x - 1) + 2x\\).",
+    "options": [
+      "\\(10x - 8\\)",
+      "\\(10x + 7\\)",
+      "\\(16x - 8\\)",
+      "\\(11x - 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(8x - 8 + 2x\\)\n\nCollect the \\(x\\) terms: \\(8x + 2x = 10x\\)\n\nSo the answer is \\(10x - 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\), evaluate \\(\\frac{1x}{x + 7}\\).",
+    "options": [
+      "\\(-\\frac{2}{5}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{2}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 2\\).\n\n\\(\\frac{1(2)}{2 + 7} = \\frac{2}{9}\\)\n\n\\(= \\frac{2}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = -5\\), evaluate \\(3x^{2} - 4y\\).",
+    "options": [
+      "95",
+      "55",
+      "-95",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = -5\\).\n\n\\(3(-5)^{2} - 4(-5)\\)\n\n\\(= 3(25) - (-20)\\)\n\n\\(= 75 - (-20) = 95\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{9x}{x + 3}\\).",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{27}{4}\\)",
+      "\\(\\frac{27}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{9(9)}{9 + 3} = \\frac{81}{12}\\)\n\n\\(= \\frac{27}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x + 5) + 5x\\).",
+    "options": [
+      "\\(13x + 13\\)",
+      "\\(40x + 40\\)",
+      "\\(13x + 40\\)",
+      "\\(14x + 40\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x + 40 + 5x\\)\n\nCollect the \\(x\\) terms: \\(8x + 5x = 13x\\)\n\nSo the answer is \\(13x + 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8(x + 5) + 6x\\).",
+    "options": [
+      "\\(48x + 40\\)",
+      "\\(15x + 40\\)",
+      "\\(14x + 40\\)",
+      "\\(14x + 13\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x + 40 + 6x\\)\n\nCollect the \\(x\\) terms: \\(8x + 6x = 14x\\)\n\nSo the answer is \\(14x + 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 3\\) and \\(y = -2\\), evaluate \\(5x^{2} - 6y\\).",
+    "options": [
+      "27",
+      "57",
+      "33",
+      "-57"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 3\\) and \\(y = -2\\).\n\n\\(5(3)^{2} - 6(-2)\\)\n\n\\(= 5(9) - (-12)\\)\n\n\\(= 45 - (-12) = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 2\\) and \\(y = -4\\), evaluate \\(2x^{2} - 2y\\).",
+    "options": [
+      "12",
+      "16",
+      "0",
+      "-16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = 2\\) and \\(y = -4\\).\n\n\\(2(2)^{2} - 2(-4)\\)\n\n\\(= 2(4) - (-8)\\)\n\n\\(= 8 - (-8) = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\) and \\(y = 2\\), evaluate \\(2x^{2} - 2y\\).",
+    "options": [
+      "4",
+      "-28",
+      "28",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 4\\) and \\(y = 2\\).\n\n\\(2(4)^{2} - 2(2)\\)\n\n\\(= 2(16) - (4)\\)\n\n\\(= 32 - (4) = 28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{4x}{x + 6}\\).",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(-8\\)",
+      "\\(\\frac{8}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{4(4)}{4 + 6} = \\frac{16}{10}\\)\n\n\\(= \\frac{8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 6\\), evaluate \\(\\frac{2x}{x + 8}\\).",
+    "options": [
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{6}{7}\\)",
+      "\\(-6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 6\\).\n\n\\(\\frac{2(6)}{6 + 8} = \\frac{12}{14}\\)\n\n\\(= \\frac{6}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2(x - 3) + 6x\\).",
+    "options": [
+      "\\(9x - 6\\)",
+      "\\(12x - 6\\)",
+      "\\(8x - 1\\)",
+      "\\(8x - 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x - 6 + 6x\\)\n\nCollect the \\(x\\) terms: \\(2x + 6x = 8x\\)\n\nSo the answer is \\(8x - 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(8x + 5y - x + 4y\\).",
+    "options": [
+      "\\(8x + 9y\\)",
+      "\\(7x + 9y\\)",
+      "\\(9x + 9y\\)",
+      "\\(7x - 9y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(8 + (-1) = 7\\)\n\n\\(y\\) terms: \\(5 + (4) = 9\\)\n\nSo the expression simplifies to \\(7x + 9y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-x + 7y - 9x - 9y\\).",
+    "options": [
+      "\\(-9x - 2y\\)",
+      "\\(-10x - 2y\\)",
+      "\\(-10x + 2y\\)",
+      "\\(8x - 2y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-1 + (-9) = -10\\)\n\n\\(y\\) terms: \\(7 + (-9) = -2\\)\n\nSo the expression simplifies to \\(-10x - 2y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x + 9y + 5x + y\\).",
+    "options": [
+      "\\(6x - 10y\\)",
+      "\\(7x + 10y\\)",
+      "\\(6x + 10y\\)",
+      "\\(-4x + 10y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (5) = 6\\)\n\n\\(y\\) terms: \\(9 + (1) = 10\\)\n\nSo the expression simplifies to \\(6x + 10y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -5\\) and \\(y = 4\\), evaluate \\(3x^{2} - 5y\\).",
+    "options": [
+      "55",
+      "-55",
+      "95",
+      "-35"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = -5\\) and \\(y = 4\\).\n\n\\(3(-5)^{2} - 5(4)\\)\n\n\\(= 3(25) - (20)\\)\n\n\\(= 75 - (20) = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-9x - 9y - 5x + 4y\\).",
+    "options": [
+      "\\(-14x + 5y\\)",
+      "\\(-13x - 5y\\)",
+      "\\(-14x - 5y\\)",
+      "\\(-4x - 5y\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-9 + (-5) = -14\\)\n\n\\(y\\) terms: \\(-9 + (4) = -5\\)\n\nSo the expression simplifies to \\(-14x - 5y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 3) + 4x\\).",
+    "options": [
+      "\\(8x + 7\\)",
+      "\\(16x + 12\\)",
+      "\\(8x + 12\\)",
+      "\\(9x + 12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(4x + 12 + 4x\\)\n\nCollect the \\(x\\) terms: \\(4x + 4x = 8x\\)\n\nSo the answer is \\(8x + 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2(x + 2) + 6x\\).",
+    "options": [
+      "\\(8x + 5\\)",
+      "\\(12x + 4\\)",
+      "\\(8x + 4\\)",
+      "\\(9x + 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(2x + 4 + 6x\\)\n\nCollect the \\(x\\) terms: \\(2x + 6x = 8x\\)\n\nSo the answer is \\(8x + 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 4\\), evaluate \\(\\frac{6x}{x + 6}\\).",
+    "options": [
+      "\\(-12\\)",
+      "\\(1\\)",
+      "\\(\\frac{12}{5}\\)",
+      "\\(\\frac{1}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 4\\).\n\n\\(\\frac{6(4)}{4 + 6} = \\frac{24}{10}\\)\n\n\\(= \\frac{12}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(6(x - 3) + 5x\\).",
+    "options": [
+      "\\(11x - 18\\)",
+      "\\(11x + 3\\)",
+      "\\(12x - 18\\)",
+      "\\(30x - 18\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(6x - 18 + 5x\\)\n\nCollect the \\(x\\) terms: \\(6x + 5x = 11x\\)\n\nSo the answer is \\(11x - 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 5\\), evaluate \\(\\frac{5x}{x + 9}\\).",
+    "options": [
+      "\\(\\frac{25}{14}\\)",
+      "\\(\\frac{1}{9}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(-\\frac{25}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 5\\).\n\n\\(\\frac{5(5)}{5 + 9} = \\frac{25}{14}\\)\n\n\\(= \\frac{25}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = -2\\) and \\(y = -5\\), evaluate \\(5x^{2} - 2y\\).",
+    "options": [
+      "-30",
+      "30",
+      "0",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Substitute \\(x = -2\\) and \\(y = -5\\).\n\n\\(5(-2)^{2} - 2(-5)\\)\n\n\\(= 5(4) - (-10)\\)\n\n\\(= 20 - (-10) = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(x - 9y - 9x + 6y\\).",
+    "options": [
+      "\\(10x - 3y\\)",
+      "\\(-7x - 3y\\)",
+      "\\(-8x + 3y\\)",
+      "\\(-8x - 3y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(1 + (-9) = -8\\)\n\n\\(y\\) terms: \\(-9 + (6) = -3\\)\n\nSo the expression simplifies to \\(-8x - 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x - 5y + x + 3y\\).",
+    "options": [
+      "\\(3x + 2y\\)",
+      "\\(4x - 2y\\)",
+      "\\(x - 2y\\)",
+      "\\(3x - 2y\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(2 + (1) = 3\\)\n\n\\(y\\) terms: \\(-5 + (3) = -2\\)\n\nSo the expression simplifies to \\(3x - 2y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(-7x + 7y - 8x + 5y\\).",
+    "options": [
+      "\\(-14x + 12y\\)",
+      "\\(-15x + 12y\\)",
+      "\\(-15x - 12y\\)",
+      "\\(x + 12y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(-7 + (-8) = -15\\)\n\n\\(y\\) terms: \\(7 + (5) = 12\\)\n\nSo the expression simplifies to \\(-15x + 12y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 9\\), evaluate \\(\\frac{2x}{x + 7}\\).",
+    "options": [
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{11}{16}\\)",
+      "\\(9\\)",
+      "\\(\\frac{9}{14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substitute \\(x = 9\\).\n\n\\(\\frac{2(9)}{9 + 7} = \\frac{18}{16}\\)\n\n\\(= \\frac{9}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(4(x + 3) + 7x\\).",
+    "options": [
+      "\\(12x + 12\\)",
+      "\\(28x + 12\\)",
+      "\\(11x + 7\\)",
+      "\\(11x + 12\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(4x + 12 + 7x\\)\n\nCollect the \\(x\\) terms: \\(4x + 7x = 11x\\)\n\nSo the answer is \\(11x + 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(x = 10\\), evaluate \\(\\frac{9x}{x + 6}\\).",
+    "options": [
+      "\\(\\frac{45}{2}\\)",
+      "\\(\\frac{5}{27}\\)",
+      "\\(\\frac{45}{8}\\)",
+      "\\(\\frac{19}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Substitute \\(x = 10\\).\n\n\\(\\frac{9(10)}{10 + 6} = \\frac{90}{16}\\)\n\n\\(= \\frac{45}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(2x + 2y - 5x + y\\).",
+    "options": [
+      "\\(-3x - 3y\\)",
+      "\\(-3x + 3y\\)",
+      "\\(-2x + 3y\\)",
+      "\\(7x + 3y\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Collect the \\(x\\) terms and the \\(y\\) terms separately.\n\n\\(x\\) terms: \\(2 + (-5) = -3\\)\n\n\\(y\\) terms: \\(2 + (1) = 3\\)\n\nSo the expression simplifies to \\(-3x + 3y\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "tAoB5vil5sY5TvhyCPW4",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

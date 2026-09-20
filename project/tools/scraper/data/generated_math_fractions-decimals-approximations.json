@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Express 946000 in standard form.",
+    "options": [
+      "\\(9.46 \\times 10^{6}\\)",
+      "\\(9.46 \\times 10^{5}\\)",
+      "\\(9.46 \\times 10^{4}\\)",
+      "\\(9.46 \\times 10^{-5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 946000 to just after the first non-zero digit gives \\(9.46\\), and the point moved 5 places left.\n\nSo 946000 \\(= 9.46 \\times 10^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{5} + \\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{9}{10}\\)",
+      "\\(\\frac{17}{10}\\)",
+      "\\(\\frac{17}{20}\\)",
+      "\\(\\frac{4}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 20.\n\n\\(\\frac{3}{5} + \\frac{1}{4} = \\frac{12 + 5}{20} = \\frac{17}{20}\\)\n\nIn lowest terms this is \\(\\frac{17}{20}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{3}{8}\\) as a decimal.",
+    "options": [
+      "0.375",
+      "2.6667",
+      "3.75",
+      "0.0375"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(3 \\div 8 = 0.375\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 82968.91 correct to 2 significant figures.",
+    "options": [
+      "84000",
+      "83000",
+      "82000",
+      "80000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 82968.91, then look at the next digit to decide whether to round up.\n\nThis gives 83000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0267 in standard form.",
+    "options": [
+      "\\(2.67 \\times 10^{-2}\\)",
+      "\\(2.67 \\times 10^{-1}\\)",
+      "\\(2.67 \\times 10^{2}\\)",
+      "\\(2.67 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0267 to just after the first non-zero digit gives \\(2.67\\), and the point moved 2 places right.\n\nSo 0.0267 \\(= 2.67 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 319000 in standard form.",
+    "options": [
+      "\\(3.19 \\times 10^{5}\\)",
+      "\\(3.19 \\times 10^{4}\\)",
+      "\\(3.19 \\times 10^{-5}\\)",
+      "\\(3.19 \\times 10^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 319000 to just after the first non-zero digit gives \\(3.19\\), and the point moved 5 places left.\n\nSo 319000 \\(= 3.19 \\times 10^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 56201.39 correct to 3 significant figures.",
+    "options": [
+      "56100",
+      "56000",
+      "56300",
+      "56200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 56201.39, then look at the next digit to decide whether to round up.\n\nThis gives 56200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{1}{2}\\) as a decimal.",
+    "options": [
+      "5",
+      "0.05",
+      "0.5",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(1 \\div 2 = 0.5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} \\times \\frac{2}{3}\\).",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{2}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{1}{2} \\times \\frac{2}{3} = \\frac{2}{6}\\)\n\nIn lowest terms this is \\(\\frac{1}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{4} \\div \\frac{2}{4}\\).",
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{1}{4} \\div \\frac{2}{4} = \\frac{1}{4} \\times \\frac{4}{2} = \\frac{4}{8}\\)\n\nIn lowest terms this is \\(\\frac{1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 43616.8 correct to 2 significant figures.",
+    "options": [
+      "44000",
+      "43600",
+      "40000",
+      "45000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 43616.8, then look at the next digit to decide whether to round up.\n\nThis gives 44000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{5}\\) of 85.",
+    "options": [
+      "17",
+      "34",
+      "68",
+      "51"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{2}{5} \\times 85 = \\frac{2 \\times 85}{5} = \\frac{170}{5} = 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{7}{10} \\times \\frac{2}{9}\\).",
+    "options": [
+      "\\(\\frac{63}{20}\\)",
+      "\\(\\frac{14}{19}\\)",
+      "\\(\\frac{83}{90}\\)",
+      "\\(\\frac{7}{45}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{7}{10} \\times \\frac{2}{9} = \\frac{14}{90}\\)\n\nIn lowest terms this is \\(\\frac{7}{45}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{7} + \\frac{2}{9}\\).",
+    "options": [
+      "\\(\\frac{23}{63}\\)",
+      "\\(\\frac{3}{16}\\)",
+      "\\(\\frac{46}{63}\\)",
+      "\\(\\frac{8}{21}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 63.\n\n\\(\\frac{1}{7} + \\frac{2}{9} = \\frac{9 + 14}{63} = \\frac{23}{63}\\)\n\nIn lowest terms this is \\(\\frac{23}{63}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 41647.9 correct to 2 significant figures.",
+    "options": [
+      "40000",
+      "42000",
+      "43000",
+      "41600"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 41647.9, then look at the next digit to decide whether to round up.\n\nThis gives 42000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 60426.27 correct to 4 significant figures.",
+    "options": [
+      "60440",
+      "60400",
+      "60430",
+      "60426"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 60426.27, then look at the next digit to decide whether to round up.\n\nThis gives 60430.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{4}{10}\\) of 70.",
+    "options": [
+      "42",
+      "21",
+      "28",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{4}{10} \\times 70 = \\frac{4 \\times 70}{10} = \\frac{280}{10} = 28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{5}{6}\\) of 30.",
+    "options": [
+      "20",
+      "35",
+      "25",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{5}{6} \\times 30 = \\frac{5 \\times 30}{6} = \\frac{150}{6} = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{6} + \\frac{5}{10}\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{8}{3}\\)",
+      "\\(\\frac{27}{20}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 60.\n\n\\(\\frac{5}{6} + \\frac{5}{10} = \\frac{50 + 30}{60} = \\frac{80}{60}\\)\n\nIn lowest terms this is \\(\\frac{4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 27000 in standard form.",
+    "options": [
+      "\\(2.7 \\times 10^{3}\\)",
+      "\\(2.7 \\times 10^{4}\\)",
+      "\\(2.7 \\times 10^{5}\\)",
+      "\\(2.7 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 27000 to just after the first non-zero digit gives \\(2.7\\), and the point moved 4 places left.\n\nSo 27000 \\(= 2.7 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{4} \\times \\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{1}{4} \\times \\frac{1}{2} = \\frac{1}{8}\\)\n\nIn lowest terms this is \\(\\frac{1}{8}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{13}{16}\\) as a decimal.",
+    "options": [
+      "8.125",
+      "0.8125",
+      "1.2308",
+      "0.0813"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(13 \\div 16 = 0.8125\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 9.9758 correct to 1 decimal place.",
+    "options": [
+      "9.0",
+      "10.1",
+      "10.0",
+      "9.9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(9.9758 \\approx 10.0\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{3} + \\frac{7}{11}\\).",
+    "options": [
+      "\\(\\frac{64}{33}\\)",
+      "\\(\\frac{32}{33}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use a common denominator of 33.\n\n\\(\\frac{1}{3} + \\frac{7}{11} = \\frac{11 + 21}{33} = \\frac{32}{33}\\)\n\nIn lowest terms this is \\(\\frac{32}{33}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{5}\\) of 95.",
+    "options": [
+      "38",
+      "57",
+      "76",
+      "95"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{3}{5} \\times 95 = \\frac{3 \\times 95}{5} = \\frac{285}{5} = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{7}\\) of 189.",
+    "options": [
+      "81",
+      "108",
+      "135",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{3}{7} \\times 189 = \\frac{3 \\times 189}{7} = \\frac{567}{7} = 81\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{7}{9}\\) of 189.",
+    "options": [
+      "147",
+      "126",
+      "168",
+      "189"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{7}{9} \\times 189 = \\frac{7 \\times 189}{9} = \\frac{1323}{9} = 147\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0662 in standard form.",
+    "options": [
+      "\\(6.62 \\times 10^{-3}\\)",
+      "\\(6.62 \\times 10^{-1}\\)",
+      "\\(6.62 \\times 10^{-2}\\)",
+      "\\(6.62 \\times 10^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0662 to just after the first non-zero digit gives \\(6.62\\), and the point moved 2 places right.\n\nSo 0.0662 \\(= 6.62 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{6}{8} + \\frac{3}{4}\\).",
+    "options": [
+      "\\(\\frac{49}{32}\\)",
+      "\\(3\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 32.\n\n\\(\\frac{6}{8} + \\frac{3}{4} = \\frac{24 + 24}{32} = \\frac{48}{32}\\)\n\nIn lowest terms this is \\(\\frac{3}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{10} \\div \\frac{1}{9}\\).",
+    "options": [
+      "\\(\\frac{1}{19}\\)",
+      "\\(\\frac{1}{90}\\)",
+      "\\(\\frac{19}{90}\\)",
+      "\\(\\frac{9}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{1}{10} \\div \\frac{1}{9} = \\frac{1}{10} \\times \\frac{9}{1} = \\frac{9}{10}\\)\n\nIn lowest terms this is \\(\\frac{9}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 55907.41 correct to 2 significant figures.",
+    "options": [
+      "56000",
+      "57000",
+      "60000",
+      "55900"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 55907.41, then look at the next digit to decide whether to round up.\n\nThis gives 56000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 15.3538 correct to 1 decimal place.",
+    "options": [
+      "15.3",
+      "15.0",
+      "15.4",
+      "15.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(15.3538 \\approx 15.4\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{1}{4}\\) as a decimal.",
+    "options": [
+      "0.25",
+      "2.5",
+      "0.025",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(1 \\div 4 = 0.25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00402 in standard form.",
+    "options": [
+      "\\(4.02 \\times 10^{-4}\\)",
+      "\\(4.02 \\times 10^{-2}\\)",
+      "\\(4.02 \\times 10^{-3}\\)",
+      "\\(4.02 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00402 to just after the first non-zero digit gives \\(4.02\\), and the point moved 3 places right.\n\nSo 0.00402 \\(= 4.02 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} - \\frac{1}{2}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{3}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use a common denominator of 8.\n\n\\(\\frac{3}{4} - \\frac{1}{2} = \\frac{6 - 4}{8} = \\frac{2}{8}\\)\n\nIn lowest terms this is \\(\\frac{1}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0732 in standard form.",
+    "options": [
+      "\\(7.32 \\times 10^{-1}\\)",
+      "\\(7.32 \\times 10^{2}\\)",
+      "\\(7.32 \\times 10^{-2}\\)",
+      "\\(7.32 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0732 to just after the first non-zero digit gives \\(7.32\\), and the point moved 2 places right.\n\nSo 0.0732 \\(= 7.32 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 82810.99 correct to 4 significant figures.",
+    "options": [
+      "82811",
+      "82810",
+      "82820",
+      "82800"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 82810.99, then look at the next digit to decide whether to round up.\n\nThis gives 82810.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{1}{5}\\) as a decimal.",
+    "options": [
+      "2",
+      "0.02",
+      "0.2",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(1 \\div 5 = 0.2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 47400 in standard form.",
+    "options": [
+      "\\(4.74 \\times 10^{5}\\)",
+      "\\(4.74 \\times 10^{3}\\)",
+      "\\(4.74 \\times 10^{-4}\\)",
+      "\\(4.74 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 47400 to just after the first non-zero digit gives \\(4.74\\), and the point moved 4 places left.\n\nSo 47400 \\(= 4.74 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{8}{10} \\times \\frac{9}{10}\\).",
+    "options": [
+      "\\(\\frac{18}{25}\\)",
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{18}{5}\\)",
+      "\\(\\frac{17}{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{8}{10} \\times \\frac{9}{10} = \\frac{72}{100}\\)\n\nIn lowest terms this is \\(\\frac{18}{25}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 60.7523 correct to 1 decimal place.",
+    "options": [
+      "60.8",
+      "60.9",
+      "60.7",
+      "60.0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(60.7523 \\approx 60.8\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 31827.18 correct to 4 significant figures.",
+    "options": [
+      "31830",
+      "31800",
+      "31827",
+      "31840"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 31827.18, then look at the next digit to decide whether to round up.\n\nThis gives 31830.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 555 in standard form.",
+    "options": [
+      "\\(5.55 \\times 10^{2}\\)",
+      "\\(5.55 \\times 10^{1}\\)",
+      "\\(5.55 \\times 10^{3}\\)",
+      "\\(5.55 \\times 10^{-2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 555 to just after the first non-zero digit gives \\(5.55\\), and the point moved 2 places left.\n\nSo 555 \\(= 5.55 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{8}{9} - \\frac{3}{7}\\).",
+    "options": [
+      "\\(\\frac{10}{21}\\)",
+      "\\(\\frac{58}{63}\\)",
+      "\\(\\frac{29}{63}\\)",
+      "\\(\\frac{5}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 63.\n\n\\(\\frac{8}{9} - \\frac{3}{7} = \\frac{56 - 27}{63} = \\frac{29}{63}\\)\n\nIn lowest terms this is \\(\\frac{29}{63}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} + \\frac{2}{11}\\).",
+    "options": [
+      "\\(\\frac{3}{13}\\)",
+      "\\(\\frac{15}{11}\\)",
+      "\\(\\frac{15}{22}\\)",
+      "\\(\\frac{8}{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 22.\n\n\\(\\frac{1}{2} + \\frac{2}{11} = \\frac{11 + 4}{22} = \\frac{15}{22}\\)\n\nIn lowest terms this is \\(\\frac{15}{22}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0421 in standard form.",
+    "options": [
+      "\\(4.21 \\times 10^{2}\\)",
+      "\\(4.21 \\times 10^{-2}\\)",
+      "\\(4.21 \\times 10^{-1}\\)",
+      "\\(4.21 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0421 to just after the first non-zero digit gives \\(4.21\\), and the point moved 2 places right.\n\nSo 0.0421 \\(= 4.21 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 79.8080 correct to 1 decimal place.",
+    "options": [
+      "79.9",
+      "79.8",
+      "79.0",
+      "79.7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(79.8080 \\approx 79.8\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{7}{11}\\) of 33.",
+    "options": [
+      "24",
+      "27",
+      "18",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{7}{11} \\times 33 = \\frac{7 \\times 33}{11} = \\frac{231}{11} = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 33144.79 correct to 2 significant figures.",
+    "options": [
+      "33100",
+      "30000",
+      "33000",
+      "34000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 33144.79, then look at the next digit to decide whether to round up.\n\nThis gives 33000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000295 in standard form.",
+    "options": [
+      "\\(2.95 \\times 10^{-3}\\)",
+      "\\(2.95 \\times 10^{4}\\)",
+      "\\(2.95 \\times 10^{-5}\\)",
+      "\\(2.95 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000295 to just after the first non-zero digit gives \\(2.95\\), and the point moved 4 places right.\n\nSo 0.000295 \\(= 2.95 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 63852.72 correct to 4 significant figures.",
+    "options": [
+      "63850",
+      "63860",
+      "63900",
+      "63853"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 63852.72, then look at the next digit to decide whether to round up.\n\nThis gives 63850.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 77901.75 correct to 2 significant figures.",
+    "options": [
+      "77900",
+      "79000",
+      "78000",
+      "80000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 77901.75, then look at the next digit to decide whether to round up.\n\nThis gives 78000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} \\div \\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{1}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{1}{2} \\div \\frac{1}{3} = \\frac{1}{2} \\times \\frac{3}{1} = \\frac{3}{2}\\)\n\nIn lowest terms this is \\(\\frac{3}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0995 in standard form.",
+    "options": [
+      "\\(9.95 \\times 10^{-3}\\)",
+      "\\(9.95 \\times 10^{-2}\\)",
+      "\\(9.95 \\times 10^{-1}\\)",
+      "\\(9.95 \\times 10^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0995 to just after the first non-zero digit gives \\(9.95\\), and the point moved 2 places right.\n\nSo 0.0995 \\(= 9.95 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{3}{10}\\) as a decimal.",
+    "options": [
+      "0.03",
+      "3",
+      "0.3",
+      "3.3333"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(3 \\div 10 = 0.3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} \\times \\frac{1}{6}\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{1}{2} \\times \\frac{1}{6} = \\frac{1}{12}\\)\n\nIn lowest terms this is \\(\\frac{1}{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{6} \\times \\frac{5}{6}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{5}{36}\\)",
+      "\\(\\frac{5}{12}\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{1}{6} \\times \\frac{5}{6} = \\frac{5}{36}\\)\n\nIn lowest terms this is \\(\\frac{5}{36}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} \\div \\frac{2}{8}\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{3}{16}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{3}{4} \\div \\frac{2}{8} = \\frac{3}{4} \\times \\frac{8}{2} = \\frac{24}{8}\\)\n\nIn lowest terms this is \\(3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 25400 in standard form.",
+    "options": [
+      "\\(2.54 \\times 10^{3}\\)",
+      "\\(2.54 \\times 10^{-4}\\)",
+      "\\(2.54 \\times 10^{4}\\)",
+      "\\(2.54 \\times 10^{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 25400 to just after the first non-zero digit gives \\(2.54\\), and the point moved 4 places left.\n\nSo 25400 \\(= 2.54 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{2}{25}\\) as a decimal.",
+    "options": [
+      "0.08",
+      "12.5",
+      "0.008",
+      "0.8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(2 \\div 25 = 0.08\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 547000 in standard form.",
+    "options": [
+      "\\(5.47 \\times 10^{6}\\)",
+      "\\(5.47 \\times 10^{-5}\\)",
+      "\\(5.47 \\times 10^{5}\\)",
+      "\\(5.47 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 547000 to just after the first non-zero digit gives \\(5.47\\), and the point moved 5 places left.\n\nSo 547000 \\(= 5.47 \\times 10^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{5} \\div \\frac{2}{3}\\).",
+    "options": [
+      "\\(\\frac{22}{15}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(1\\)",
+      "\\(\\frac{8}{15}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{4}{5} \\div \\frac{2}{3} = \\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10}\\)\n\nIn lowest terms this is \\(\\frac{6}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 52365.56 correct to 4 significant figures.",
+    "options": [
+      "52370",
+      "52400",
+      "52380",
+      "52366"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 52365.56, then look at the next digit to decide whether to round up.\n\nThis gives 52370.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00192 in standard form.",
+    "options": [
+      "\\(1.92 \\times 10^{-3}\\)",
+      "\\(1.92 \\times 10^{-4}\\)",
+      "\\(1.92 \\times 10^{-2}\\)",
+      "\\(1.92 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00192 to just after the first non-zero digit gives \\(1.92\\), and the point moved 3 places right.\n\nSo 0.00192 \\(= 1.92 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{6} \\times \\frac{4}{11}\\).",
+    "options": [
+      "\\(\\frac{11}{6}\\)",
+      "\\(\\frac{16}{17}\\)",
+      "\\(\\frac{8}{33}\\)",
+      "\\(\\frac{34}{33}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{4}{6} \\times \\frac{4}{11} = \\frac{16}{66}\\)\n\nIn lowest terms this is \\(\\frac{8}{33}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{3}\\) of 39.",
+    "options": [
+      "39",
+      "6.5",
+      "13",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{1}{3} \\times 39 = \\frac{1 \\times 39}{3} = \\frac{39}{3} = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 900 in standard form.",
+    "options": [
+      "\\(9 \\times 10^{1}\\)",
+      "\\(9 \\times 10^{2}\\)",
+      "\\(9 \\times 10^{3}\\)",
+      "\\(9 \\times 10^{-2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 900 to just after the first non-zero digit gives \\(9\\), and the point moved 2 places left.\n\nSo 900 \\(= 9 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 75493.59 correct to 3 significant figures.",
+    "options": [
+      "75600",
+      "75490",
+      "75000",
+      "75500"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 75493.59, then look at the next digit to decide whether to round up.\n\nThis gives 75500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 42.5366 correct to 1 decimal place.",
+    "options": [
+      "42.5",
+      "42.4",
+      "42.6",
+      "42.0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(42.5366 \\approx 42.5\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 97.9180 correct to 2 decimal places.",
+    "options": [
+      "97.92",
+      "97.91",
+      "97.93",
+      "97.00"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(97.9180 \\approx 97.92\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{3}{4}\\) as a decimal.",
+    "options": [
+      "7.5",
+      "1.3333",
+      "0.075",
+      "0.75"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(3 \\div 4 = 0.75\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 1761.18 correct to 4 significant figures.",
+    "options": [
+      "1760",
+      "1761",
+      "1762",
+      "1761.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 1761.18, then look at the next digit to decide whether to round up.\n\nThis gives 1761.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 6440 in standard form.",
+    "options": [
+      "\\(6.44 \\times 10^{2}\\)",
+      "\\(6.44 \\times 10^{4}\\)",
+      "\\(6.44 \\times 10^{3}\\)",
+      "\\(6.44 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 6440 to just after the first non-zero digit gives \\(6.44\\), and the point moved 3 places left.\n\nSo 6440 \\(= 6.44 \\times 10^{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 14829.5 correct to 3 significant figures.",
+    "options": [
+      "14900",
+      "14800",
+      "14830",
+      "15000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 14829.5, then look at the next digit to decide whether to round up.\n\nThis gives 14800.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 139000 in standard form.",
+    "options": [
+      "\\(1.39 \\times 10^{4}\\)",
+      "\\(1.39 \\times 10^{6}\\)",
+      "\\(1.39 \\times 10^{5}\\)",
+      "\\(1.39 \\times 10^{-5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 139000 to just after the first non-zero digit gives \\(1.39\\), and the point moved 5 places left.\n\nSo 139000 \\(= 1.39 \\times 10^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{6}{8} + \\frac{6}{7}\\).",
+    "options": [
+      "\\(\\frac{45}{14}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{45}{28}\\)",
+      "\\(\\frac{13}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 56.\n\n\\(\\frac{6}{8} + \\frac{6}{7} = \\frac{42 + 48}{56} = \\frac{90}{56}\\)\n\nIn lowest terms this is \\(\\frac{45}{28}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 4.4191 correct to 1 decimal place.",
+    "options": [
+      "4.0",
+      "4.4",
+      "4.5",
+      "4.3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(4.4191 \\approx 4.4\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000182 in standard form.",
+    "options": [
+      "\\(1.82 \\times 10^{-5}\\)",
+      "\\(1.82 \\times 10^{4}\\)",
+      "\\(1.82 \\times 10^{-4}\\)",
+      "\\(1.82 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000182 to just after the first non-zero digit gives \\(1.82\\), and the point moved 4 places right.\n\nSo 0.000182 \\(= 1.82 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 94.2137 correct to 1 decimal place.",
+    "options": [
+      "94.1",
+      "94.0",
+      "94.3",
+      "94.2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(94.2137 \\approx 94.2\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{5} \\times \\frac{2}{3}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\frac{8}{15}\\)",
+      "\\(\\frac{22}{15}\\)",
+      "\\(\\frac{6}{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{4}{5} \\times \\frac{2}{3} = \\frac{8}{15}\\)\n\nIn lowest terms this is \\(\\frac{8}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{7} + \\frac{9}{11}\\).",
+    "options": [
+      "\\(\\frac{118}{77}\\)",
+      "\\(\\frac{17}{11}\\)",
+      "\\(\\frac{236}{77}\\)",
+      "\\(\\frac{7}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 77.\n\n\\(\\frac{5}{7} + \\frac{9}{11} = \\frac{55 + 63}{77} = \\frac{118}{77}\\)\n\nIn lowest terms this is \\(\\frac{118}{77}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 240 in standard form.",
+    "options": [
+      "\\(2.4 \\times 10^{1}\\)",
+      "\\(2.4 \\times 10^{3}\\)",
+      "\\(2.4 \\times 10^{2}\\)",
+      "\\(2.4 \\times 10^{-2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 240 to just after the first non-zero digit gives \\(2.4\\), and the point moved 2 places left.\n\nSo 240 \\(= 2.4 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} + \\frac{6}{11}\\).",
+    "options": [
+      "\\(\\frac{29}{22}\\)",
+      "\\(\\frac{57}{44}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{57}{22}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use a common denominator of 44.\n\n\\(\\frac{3}{4} + \\frac{6}{11} = \\frac{33 + 24}{44} = \\frac{57}{44}\\)\n\nIn lowest terms this is \\(\\frac{57}{44}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{7}{10}\\) as a decimal.",
+    "options": [
+      "7",
+      "1.4286",
+      "0.07",
+      "0.7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(7 \\div 10 = 0.7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0841 in standard form.",
+    "options": [
+      "\\(8.41 \\times 10^{-3}\\)",
+      "\\(8.41 \\times 10^{-1}\\)",
+      "\\(8.41 \\times 10^{-2}\\)",
+      "\\(8.41 \\times 10^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0841 to just after the first non-zero digit gives \\(8.41\\), and the point moved 2 places right.\n\nSo 0.0841 \\(= 8.41 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{8}{10} \\div \\frac{1}{9}\\).",
+    "options": [
+      "\\(\\frac{41}{45}\\)",
+      "\\(\\frac{4}{45}\\)",
+      "\\(\\frac{36}{5}\\)",
+      "\\(\\frac{8}{19}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{8}{10} \\div \\frac{1}{9} = \\frac{8}{10} \\times \\frac{9}{1} = \\frac{72}{10}\\)\n\nIn lowest terms this is \\(\\frac{36}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{9}{10}\\) of 230.",
+    "options": [
+      "184",
+      "230",
+      "253",
+      "207"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{9}{10} \\times 230 = \\frac{9 \\times 230}{10} = \\frac{2070}{10} = 207\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{8} \\times \\frac{5}{7}\\).",
+    "options": [
+      "\\(\\frac{47}{56}\\)",
+      "\\(\\frac{5}{56}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{7}{40}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{1}{8} \\times \\frac{5}{7} = \\frac{5}{56}\\)\n\nIn lowest terms this is \\(\\frac{5}{56}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 4549.57 correct to 4 significant figures.",
+    "options": [
+      "4551",
+      "4549",
+      "4549.6",
+      "4550"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 4549.57, then look at the next digit to decide whether to round up.\n\nThis gives 4550.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{7}{8}\\) as a decimal.",
+    "options": [
+      "0.875",
+      "8.75",
+      "0.0875",
+      "1.1429"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(7 \\div 8 = 0.875\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{2}{5}\\) as a decimal.",
+    "options": [
+      "0.4",
+      "4",
+      "2.5",
+      "0.04"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(2 \\div 5 = 0.4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{11}\\) of 286.",
+    "options": [
+      "78",
+      "26",
+      "13",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{1}{11} \\times 286 = \\frac{1 \\times 286}{11} = \\frac{286}{11} = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{7}{9} \\div \\frac{1}{7}\\).",
+    "options": [
+      "\\(\\frac{58}{63}\\)",
+      "\\(\\frac{49}{9}\\)",
+      "\\(\\frac{7}{16}\\)",
+      "\\(\\frac{1}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{7}{9} \\div \\frac{1}{7} = \\frac{7}{9} \\times \\frac{7}{1} = \\frac{49}{9}\\)\n\nIn lowest terms this is \\(\\frac{49}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{4}{8}\\) of 40.",
+    "options": [
+      "20",
+      "25",
+      "15",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{4}{8} \\times 40 = \\frac{4 \\times 40}{8} = \\frac{160}{8} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 4940 in standard form.",
+    "options": [
+      "\\(4.94 \\times 10^{4}\\)",
+      "\\(4.94 \\times 10^{3}\\)",
+      "\\(4.94 \\times 10^{2}\\)",
+      "\\(4.94 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 4940 to just after the first non-zero digit gives \\(4.94\\), and the point moved 3 places left.\n\nSo 4940 \\(= 4.94 \\times 10^{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 74380.77 correct to 2 significant figures.",
+    "options": [
+      "70000",
+      "74000",
+      "74400",
+      "75000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 74380.77, then look at the next digit to decide whether to round up.\n\nThis gives 74000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{9}{16}\\) as a decimal.",
+    "options": [
+      "0.0563",
+      "0.5625",
+      "1.7778",
+      "5.625"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(9 \\div 16 = 0.5625\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{6}\\) of 150.",
+    "options": [
+      "75",
+      "100",
+      "25",
+      "50"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{2}{6} \\times 150 = \\frac{2 \\times 150}{6} = \\frac{300}{6} = 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{11}\\) of 44.",
+    "options": [
+      "8",
+      "4",
+      "12",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{1}{11} \\times 44 = \\frac{1 \\times 44}{11} = \\frac{44}{11} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{11} \\times \\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{3}{22}\\)",
+      "\\(\\frac{6}{11}\\)",
+      "\\(\\frac{17}{22}\\)",
+      "\\(\\frac{3}{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{3}{11} \\times \\frac{1}{2} = \\frac{3}{22}\\)\n\nIn lowest terms this is \\(\\frac{3}{22}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{4}{11}\\) of 231.",
+    "options": [
+      "126",
+      "84",
+      "63",
+      "105"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{4}{11} \\times 231 = \\frac{4 \\times 231}{11} = \\frac{924}{11} = 84\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{9}{11} - \\frac{5}{8}\\).",
+    "options": [
+      "\\(\\frac{17}{88}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{9}{44}\\)",
+      "\\(\\frac{17}{44}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 88.\n\n\\(\\frac{9}{11} - \\frac{5}{8} = \\frac{72 - 55}{88} = \\frac{17}{88}\\)\n\nIn lowest terms this is \\(\\frac{17}{88}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{9}{10} \\times \\frac{2}{9}\\).",
+    "options": [
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{18}{19}\\)",
+      "\\(\\frac{101}{90}\\)",
+      "\\(\\frac{81}{20}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{9}{10} \\times \\frac{2}{9} = \\frac{18}{90}\\)\n\nIn lowest terms this is \\(\\frac{1}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{1}{8}\\) as a decimal.",
+    "options": [
+      "1.25",
+      "8",
+      "0.0125",
+      "0.125"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(1 \\div 8 = 0.125\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{10}{11} \\times \\frac{5}{6}\\).",
+    "options": [
+      "\\(\\frac{115}{66}\\)",
+      "\\(\\frac{25}{33}\\)",
+      "\\(\\frac{50}{17}\\)",
+      "\\(\\frac{12}{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{10}{11} \\times \\frac{5}{6} = \\frac{50}{66}\\)\n\nIn lowest terms this is \\(\\frac{25}{33}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 13915.6 correct to 2 significant figures.",
+    "options": [
+      "13900",
+      "10000",
+      "15000",
+      "14000"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 13915.6, then look at the next digit to decide whether to round up.\n\nThis gives 14000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00126 in standard form.",
+    "options": [
+      "\\(1.26 \\times 10^{-2}\\)",
+      "\\(1.26 \\times 10^{-4}\\)",
+      "\\(1.26 \\times 10^{3}\\)",
+      "\\(1.26 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00126 to just after the first non-zero digit gives \\(1.26\\), and the point moved 3 places right.\n\nSo 0.00126 \\(= 1.26 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{5}{6}\\) of 138.",
+    "options": [
+      "161",
+      "138",
+      "92",
+      "115"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{5}{6} \\times 138 = \\frac{5 \\times 138}{6} = \\frac{690}{6} = 115\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 37.9274 correct to 2 decimal places.",
+    "options": [
+      "37.93",
+      "37.94",
+      "37.92",
+      "37.00"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(37.9274 \\approx 37.93\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{8}{9}\\) of 189.",
+    "options": [
+      "147",
+      "189",
+      "168",
+      "210"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{8}{9} \\times 189 = \\frac{8 \\times 189}{9} = \\frac{1512}{9} = 168\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 59400 in standard form.",
+    "options": [
+      "\\(5.94 \\times 10^{5}\\)",
+      "\\(5.94 \\times 10^{-4}\\)",
+      "\\(5.94 \\times 10^{3}\\)",
+      "\\(5.94 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 59400 to just after the first non-zero digit gives \\(5.94\\), and the point moved 4 places left.\n\nSo 59400 \\(= 5.94 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{7}{11}\\) of 55.",
+    "options": [
+      "35",
+      "30",
+      "40",
+      "45"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{7}{11} \\times 55 = \\frac{7 \\times 55}{11} = \\frac{385}{11} = 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{8}\\) of 168.",
+    "options": [
+      "84",
+      "42",
+      "63",
+      "105"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{3}{8} \\times 168 = \\frac{3 \\times 168}{8} = \\frac{504}{8} = 63\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 28.9111 correct to 2 decimal places.",
+    "options": [
+      "28.92",
+      "28.91",
+      "28.00",
+      "28.90"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(28.9111 \\approx 28.91\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{4}\\) of 28.",
+    "options": [
+      "21",
+      "7",
+      "14",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{2}{4} \\times 28 = \\frac{2 \\times 28}{4} = \\frac{56}{4} = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 35243.51 correct to 4 significant figures.",
+    "options": [
+      "35244",
+      "35250",
+      "35240",
+      "35200"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 35243.51, then look at the next digit to decide whether to round up.\n\nThis gives 35240.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 86573.34 correct to 4 significant figures.",
+    "options": [
+      "86573",
+      "86570",
+      "86600",
+      "86580"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 86573.34, then look at the next digit to decide whether to round up.\n\nThis gives 86570.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{7}{50}\\) as a decimal.",
+    "options": [
+      "0.014",
+      "7.1429",
+      "1.4",
+      "0.14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(7 \\div 50 = 0.14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{4} \\times \\frac{2}{3}\\).",
+    "options": [
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{4}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{2}{4} \\times \\frac{2}{3} = \\frac{4}{12}\\)\n\nIn lowest terms this is \\(\\frac{1}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} - \\frac{7}{11}\\).",
+    "options": [
+      "\\(\\frac{3}{22}\\)",
+      "\\(-\\frac{4}{7}\\)",
+      "\\(\\frac{5}{22}\\)",
+      "\\(\\frac{5}{44}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 44.\n\n\\(\\frac{3}{4} - \\frac{7}{11} = \\frac{33 - 28}{44} = \\frac{5}{44}\\)\n\nIn lowest terms this is \\(\\frac{5}{44}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 10572.82 correct to 3 significant figures.",
+    "options": [
+      "10600",
+      "11000",
+      "10700",
+      "10570"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 10572.82, then look at the next digit to decide whether to round up.\n\nThis gives 10600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{9} \\div \\frac{1}{10}\\).",
+    "options": [
+      "\\(\\frac{59}{90}\\)",
+      "\\(\\frac{50}{9}\\)",
+      "\\(\\frac{1}{18}\\)",
+      "\\(\\frac{5}{19}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{5}{9} \\div \\frac{1}{10} = \\frac{5}{9} \\times \\frac{10}{1} = \\frac{50}{9}\\)\n\nIn lowest terms this is \\(\\frac{50}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 39753.59 correct to 4 significant figures.",
+    "options": [
+      "39760",
+      "39750",
+      "39754",
+      "39800"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 39753.59, then look at the next digit to decide whether to round up.\n\nThis gives 39750.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{8}{11} \\times \\frac{1}{9}\\).",
+    "options": [
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{8}{99}\\)",
+      "\\(\\frac{72}{11}\\)",
+      "\\(\\frac{83}{99}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{8}{11} \\times \\frac{1}{9} = \\frac{8}{99}\\)\n\nIn lowest terms this is \\(\\frac{8}{99}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{4}\\) of 68.",
+    "options": [
+      "68",
+      "51",
+      "34",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{2}{4} \\times 68 = \\frac{2 \\times 68}{4} = \\frac{136}{4} = 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{7} + \\frac{2}{4}\\).",
+    "options": [
+      "\\(\\frac{17}{14}\\)",
+      "\\(\\frac{17}{7}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{7}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 28.\n\n\\(\\frac{5}{7} + \\frac{2}{4} = \\frac{20 + 14}{28} = \\frac{34}{28}\\)\n\nIn lowest terms this is \\(\\frac{17}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 4042.25 correct to 4 significant figures.",
+    "options": [
+      "4042.3",
+      "4042",
+      "4043",
+      "4040"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 4042.25, then look at the next digit to decide whether to round up.\n\nThis gives 4042.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000134 in standard form.",
+    "options": [
+      "\\(1.34 \\times 10^{-4}\\)",
+      "\\(1.34 \\times 10^{-3}\\)",
+      "\\(1.34 \\times 10^{4}\\)",
+      "\\(1.34 \\times 10^{-5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000134 to just after the first non-zero digit gives \\(1.34\\), and the point moved 4 places right.\n\nSo 0.000134 \\(= 1.34 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{9}{10}\\) as a decimal.",
+    "options": [
+      "1.1111",
+      "0.9",
+      "9",
+      "0.09"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(9 \\div 10 = 0.9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{7} \\div \\frac{7}{10}\\).",
+    "options": [
+      "\\(\\frac{69}{70}\\)",
+      "\\(\\frac{14}{17}\\)",
+      "\\(\\frac{20}{49}\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{2}{7} \\div \\frac{7}{10} = \\frac{2}{7} \\times \\frac{10}{7} = \\frac{20}{49}\\)\n\nIn lowest terms this is \\(\\frac{20}{49}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 126 in standard form.",
+    "options": [
+      "\\(1.26 \\times 10^{1}\\)",
+      "\\(1.26 \\times 10^{2}\\)",
+      "\\(1.26 \\times 10^{-2}\\)",
+      "\\(1.26 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 126 to just after the first non-zero digit gives \\(1.26\\), and the point moved 2 places left.\n\nSo 126 \\(= 1.26 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{5}{6}\\) of 144.",
+    "options": [
+      "96",
+      "168",
+      "144",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{5}{6} \\times 144 = \\frac{5 \\times 144}{6} = \\frac{720}{6} = 120\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{17}{20}\\) as a decimal.",
+    "options": [
+      "0.85",
+      "8.5",
+      "1.1765",
+      "0.085"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(17 \\div 20 = 0.85\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{7}\\) of 70.",
+    "options": [
+      "30",
+      "10",
+      "40",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{2}{7} \\times 70 = \\frac{2 \\times 70}{7} = \\frac{140}{7} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{6} + \\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{5}{6}\\)",
+      "\\(\\frac{11}{12}\\)",
+      "\\(\\frac{3}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use a common denominator of 12.\n\n\\(\\frac{2}{6} + \\frac{1}{2} = \\frac{4 + 6}{12} = \\frac{10}{12}\\)\n\nIn lowest terms this is \\(\\frac{5}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 24.3767 correct to 1 decimal place.",
+    "options": [
+      "24.4",
+      "24.3",
+      "24.5",
+      "24.0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(24.3767 \\approx 24.4\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 96179.63 correct to 2 significant figures.",
+    "options": [
+      "96000",
+      "100000",
+      "96200",
+      "97000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 96179.63, then look at the next digit to decide whether to round up.\n\nThis gives 96000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{8}{10} - \\frac{5}{11}\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(\\frac{39}{110}\\)",
+      "\\(\\frac{38}{55}\\)",
+      "\\(\\frac{19}{55}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 110.\n\n\\(\\frac{8}{10} - \\frac{5}{11} = \\frac{88 - 50}{110} = \\frac{38}{110}\\)\n\nIn lowest terms this is \\(\\frac{19}{55}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{7} \\times \\frac{5}{6}\\).",
+    "options": [
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{6}{35}\\)",
+      "\\(\\frac{41}{42}\\)",
+      "\\(\\frac{5}{42}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{1}{7} \\times \\frac{5}{6} = \\frac{5}{42}\\)\n\nIn lowest terms this is \\(\\frac{5}{42}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 75325.99 correct to 3 significant figures.",
+    "options": [
+      "75300",
+      "75000",
+      "75400",
+      "75330"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 75325.99, then look at the next digit to decide whether to round up.\n\nThis gives 75300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{9}\\) of 261.",
+    "options": [
+      "145",
+      "87",
+      "116",
+      "58"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{3}{9} \\times 261 = \\frac{3 \\times 261}{9} = \\frac{783}{9} = 87\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 53411.66 correct to 2 significant figures.",
+    "options": [
+      "53400",
+      "53000",
+      "50000",
+      "54000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 53411.66, then look at the next digit to decide whether to round up.\n\nThis gives 53000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{9}\\) of 72.",
+    "options": [
+      "16",
+      "40",
+      "24",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{3}{9} \\times 72 = \\frac{3 \\times 72}{9} = \\frac{216}{9} = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} \\times \\frac{4}{6}\\).",
+    "options": [
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{9}{8}\\)",
+      "\\(\\frac{17}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{3}{4} \\times \\frac{4}{6} = \\frac{12}{24}\\)\n\nIn lowest terms this is \\(\\frac{1}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{4} \\times \\frac{2}{7}\\).",
+    "options": [
+      "\\(\\frac{1}{7}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{11}{14}\\)",
+      "\\(\\frac{4}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{2}{4} \\times \\frac{2}{7} = \\frac{4}{28}\\)\n\nIn lowest terms this is \\(\\frac{1}{7}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{1}{50}\\) as a decimal.",
+    "options": [
+      "0.002",
+      "50",
+      "0.02",
+      "0.2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(1 \\div 50 = 0.02\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{3} + \\frac{9}{10}\\).",
+    "options": [
+      "\\(\\frac{8}{5}\\)",
+      "\\(\\frac{47}{15}\\)",
+      "\\(\\frac{47}{30}\\)",
+      "\\(\\frac{11}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 30.\n\n\\(\\frac{2}{3} + \\frac{9}{10} = \\frac{20 + 27}{30} = \\frac{47}{30}\\)\n\nIn lowest terms this is \\(\\frac{47}{30}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{12}{25}\\) as a decimal.",
+    "options": [
+      "4.8",
+      "0.48",
+      "2.0833",
+      "0.048"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(12 \\div 25 = 0.48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{6} \\div \\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{13}{12}\\)",
+      "\\(\\frac{5}{24}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{10}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{5}{6} \\div \\frac{1}{4} = \\frac{5}{6} \\times \\frac{4}{1} = \\frac{20}{6}\\)\n\nIn lowest terms this is \\(\\frac{10}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 37.6787 correct to 2 decimal places.",
+    "options": [
+      "37.68",
+      "37.67",
+      "37.69",
+      "37.00"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(37.6787 \\approx 37.68\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} \\times \\frac{7}{11}\\).",
+    "options": [
+      "\\(\\frac{33}{28}\\)",
+      "\\(\\frac{61}{44}\\)",
+      "\\(\\frac{21}{44}\\)",
+      "\\(\\frac{7}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{3}{4} \\times \\frac{7}{11} = \\frac{21}{44}\\)\n\nIn lowest terms this is \\(\\frac{21}{44}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{7}\\) of 63.",
+    "options": [
+      "27",
+      "18",
+      "9",
+      "4.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{1}{7} \\times 63 = \\frac{1 \\times 63}{7} = \\frac{63}{7} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 55366.97 correct to 3 significant figures.",
+    "options": [
+      "55400",
+      "55370",
+      "55500",
+      "55000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 55366.97, then look at the next digit to decide whether to round up.\n\nThis gives 55400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{7}{8} \\div \\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{7}{4}\\)",
+      "\\(\\frac{7}{16}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{7}{8} \\div \\frac{1}{2} = \\frac{7}{8} \\times \\frac{2}{1} = \\frac{14}{8}\\)\n\nIn lowest terms this is \\(\\frac{7}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{8}\\) of 96.",
+    "options": [
+      "60",
+      "36",
+      "48",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{3}{8} \\times 96 = \\frac{3 \\times 96}{8} = \\frac{288}{8} = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 44.8779 correct to 2 decimal places.",
+    "options": [
+      "44.88",
+      "44.87",
+      "44.00",
+      "44.89"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(44.8779 \\approx 44.88\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 16.2490 correct to 2 decimal places.",
+    "options": [
+      "16.00",
+      "16.25",
+      "16.26",
+      "16.24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(16.2490 \\approx 16.25\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{9}{11}\\) of 297.",
+    "options": [
+      "243",
+      "216",
+      "297",
+      "270"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{9}{11} \\times 297 = \\frac{9 \\times 297}{11} = \\frac{2673}{11} = 243\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 638000 in standard form.",
+    "options": [
+      "\\(6.38 \\times 10^{-5}\\)",
+      "\\(6.38 \\times 10^{5}\\)",
+      "\\(6.38 \\times 10^{6}\\)",
+      "\\(6.38 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 638000 to just after the first non-zero digit gives \\(6.38\\), and the point moved 5 places left.\n\nSo 638000 \\(= 6.38 \\times 10^{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{5}{8}\\) as a decimal.",
+    "options": [
+      "6.25",
+      "0.625",
+      "1.6",
+      "0.0625"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(5 \\div 8 = 0.625\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{5} + \\frac{6}{11}\\).",
+    "options": [
+      "\\(\\frac{53}{55}\\)",
+      "\\(\\frac{52}{55}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{104}{55}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use a common denominator of 55.\n\n\\(\\frac{2}{5} + \\frac{6}{11} = \\frac{22 + 30}{55} = \\frac{52}{55}\\)\n\nIn lowest terms this is \\(\\frac{52}{55}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00464 in standard form.",
+    "options": [
+      "\\(4.64 \\times 10^{-2}\\)",
+      "\\(4.64 \\times 10^{-3}\\)",
+      "\\(4.64 \\times 10^{3}\\)",
+      "\\(4.64 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00464 to just after the first non-zero digit gives \\(4.64\\), and the point moved 3 places right.\n\nSo 0.00464 \\(= 4.64 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 17517.46 correct to 4 significant figures.",
+    "options": [
+      "17500",
+      "17530",
+      "17517",
+      "17520"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 17517.46, then look at the next digit to decide whether to round up.\n\nThis gives 17520.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 70.0813 correct to 2 decimal places.",
+    "options": [
+      "70.07",
+      "70.09",
+      "70.08",
+      "70.00"
+    ],
+    "correctIndex": 2,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(70.0813 \\approx 70.08\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{3}\\) of 45.",
+    "options": [
+      "7.5",
+      "45",
+      "30",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{1}{3} \\times 45 = \\frac{1 \\times 45}{3} = \\frac{45}{3} = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00461 in standard form.",
+    "options": [
+      "\\(4.61 \\times 10^{-3}\\)",
+      "\\(4.61 \\times 10^{3}\\)",
+      "\\(4.61 \\times 10^{-2}\\)",
+      "\\(4.61 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00461 to just after the first non-zero digit gives \\(4.61\\), and the point moved 3 places right.\n\nSo 0.00461 \\(= 4.61 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00867 in standard form.",
+    "options": [
+      "\\(8.67 \\times 10^{3}\\)",
+      "\\(8.67 \\times 10^{-4}\\)",
+      "\\(8.67 \\times 10^{-2}\\)",
+      "\\(8.67 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00867 to just after the first non-zero digit gives \\(8.67\\), and the point moved 3 places right.\n\nSo 0.00867 \\(= 8.67 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 42006.32 correct to 2 significant figures.",
+    "options": [
+      "40000",
+      "41000",
+      "42000",
+      "43000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 42006.32, then look at the next digit to decide whether to round up.\n\nThis gives 42000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 25166.45 correct to 3 significant figures.",
+    "options": [
+      "25300",
+      "25170",
+      "25000",
+      "25200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 25166.45, then look at the next digit to decide whether to round up.\n\nThis gives 25200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{5}{8}\\) of 64.",
+    "options": [
+      "40",
+      "48",
+      "56",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{5}{8} \\times 64 = \\frac{5 \\times 64}{8} = \\frac{320}{8} = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 63.6550 correct to 1 decimal place.",
+    "options": [
+      "63.0",
+      "63.7",
+      "63.6",
+      "63.8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(63.6550 \\approx 63.7\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{6}{12}\\) of 120.",
+    "options": [
+      "60",
+      "50",
+      "80",
+      "70"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{6}{12} \\times 120 = \\frac{6 \\times 120}{12} = \\frac{720}{12} = 60\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{11} + \\frac{6}{10}\\).",
+    "options": [
+      "\\(\\frac{11}{21}\\)",
+      "\\(\\frac{116}{55}\\)",
+      "\\(\\frac{117}{110}\\)",
+      "\\(\\frac{58}{55}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 110.\n\n\\(\\frac{5}{11} + \\frac{6}{10} = \\frac{50 + 66}{110} = \\frac{116}{110}\\)\n\nIn lowest terms this is \\(\\frac{58}{55}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{8}\\) of 144.",
+    "options": [
+      "90",
+      "54",
+      "36",
+      "72"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{3}{8} \\times 144 = \\frac{3 \\times 144}{8} = \\frac{432}{8} = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0185 in standard form.",
+    "options": [
+      "\\(1.85 \\times 10^{-3}\\)",
+      "\\(1.85 \\times 10^{-1}\\)",
+      "\\(1.85 \\times 10^{-2}\\)",
+      "\\(1.85 \\times 10^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0185 to just after the first non-zero digit gives \\(1.85\\), and the point moved 2 places right.\n\nSo 0.0185 \\(= 1.85 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0760 in standard form.",
+    "options": [
+      "\\(7.6 \\times 10^{-2}\\)",
+      "\\(7.6 \\times 10^{2}\\)",
+      "\\(7.6 \\times 10^{-1}\\)",
+      "\\(7.6 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0760 to just after the first non-zero digit gives \\(7.6\\), and the point moved 2 places right.\n\nSo 0.0760 \\(= 7.6 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000394 in standard form.",
+    "options": [
+      "\\(3.94 \\times 10^{-3}\\)",
+      "\\(3.94 \\times 10^{-5}\\)",
+      "\\(3.94 \\times 10^{4}\\)",
+      "\\(3.94 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000394 to just after the first non-zero digit gives \\(3.94\\), and the point moved 4 places right.\n\nSo 0.000394 \\(= 3.94 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} \\times \\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "\\(\\frac{13}{12}\\)",
+      "\\(\\frac{9}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{3}{4} \\times \\frac{1}{3} = \\frac{3}{12}\\)\n\nIn lowest terms this is \\(\\frac{1}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{7}\\) of 189.",
+    "options": [
+      "54",
+      "81",
+      "13.5",
+      "27"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{1}{7} \\times 189 = \\frac{1 \\times 189}{7} = \\frac{189}{7} = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{11} \\div \\frac{4}{5}\\).",
+    "options": [
+      "\\(\\frac{64}{55}\\)",
+      "\\(\\frac{5}{11}\\)",
+      "\\(1\\)",
+      "\\(\\frac{16}{55}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{4}{11} \\div \\frac{4}{5} = \\frac{4}{11} \\times \\frac{5}{4} = \\frac{20}{44}\\)\n\nIn lowest terms this is \\(\\frac{5}{11}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 26.5493 correct to 2 decimal places.",
+    "options": [
+      "26.56",
+      "26.55",
+      "26.00",
+      "26.54"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(26.5493 \\approx 26.55\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{6} \\div \\frac{1}{2}\\).",
+    "options": [
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{4}{6} \\div \\frac{1}{2} = \\frac{4}{6} \\times \\frac{2}{1} = \\frac{8}{6}\\)\n\nIn lowest terms this is \\(\\frac{4}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} \\div \\frac{6}{8}\\).",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{5}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{1}{2} \\div \\frac{6}{8} = \\frac{1}{2} \\times \\frac{8}{6} = \\frac{8}{12}\\)\n\nIn lowest terms this is \\(\\frac{2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0306 in standard form.",
+    "options": [
+      "\\(3.06 \\times 10^{-2}\\)",
+      "\\(3.06 \\times 10^{2}\\)",
+      "\\(3.06 \\times 10^{-1}\\)",
+      "\\(3.06 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0306 to just after the first non-zero digit gives \\(3.06\\), and the point moved 2 places right.\n\nSo 0.0306 \\(= 3.06 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 92679.76 correct to 2 significant figures.",
+    "options": [
+      "93000",
+      "94000",
+      "92700",
+      "90000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 92679.76, then look at the next digit to decide whether to round up.\n\nThis gives 93000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} + \\frac{1}{10}\\).",
+    "options": [
+      "\\(\\frac{13}{20}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{6}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 20.\n\n\\(\\frac{1}{2} + \\frac{1}{10} = \\frac{10 + 2}{20} = \\frac{12}{20}\\)\n\nIn lowest terms this is \\(\\frac{3}{5}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 34234.4 correct to 4 significant figures.",
+    "options": [
+      "34230",
+      "34234",
+      "34200",
+      "34240"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 34234.4, then look at the next digit to decide whether to round up.\n\nThis gives 34230.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{9}{10}\\) of 300.",
+    "options": [
+      "330",
+      "270",
+      "300",
+      "240"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{9}{10} \\times 300 = \\frac{9 \\times 300}{10} = \\frac{2700}{10} = 270\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 98890.19 correct to 3 significant figures.",
+    "options": [
+      "98900",
+      "99000",
+      "98800",
+      "98890"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 98890.19, then look at the next digit to decide whether to round up.\n\nThis gives 98900.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 75638.33 correct to 4 significant figures.",
+    "options": [
+      "75638",
+      "75640",
+      "75650",
+      "75600"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 75638.33, then look at the next digit to decide whether to round up.\n\nThis gives 75640.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{9}\\) of 81.",
+    "options": [
+      "36",
+      "9",
+      "18",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{2}{9} \\times 81 = \\frac{2 \\times 81}{9} = \\frac{162}{9} = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 72600 in standard form.",
+    "options": [
+      "\\(7.26 \\times 10^{5}\\)",
+      "\\(7.26 \\times 10^{4}\\)",
+      "\\(7.26 \\times 10^{3}\\)",
+      "\\(7.26 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 72600 to just after the first non-zero digit gives \\(7.26\\), and the point moved 4 places left.\n\nSo 72600 \\(= 7.26 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} + \\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 12.\n\n\\(\\frac{1}{2} + \\frac{1}{6} = \\frac{6 + 2}{12} = \\frac{8}{12}\\)\n\nIn lowest terms this is \\(\\frac{2}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 16806.94 correct to 2 significant figures.",
+    "options": [
+      "16800",
+      "17000",
+      "18000",
+      "20000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 16806.94, then look at the next digit to decide whether to round up.\n\nThis gives 17000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{3}{20}\\) as a decimal.",
+    "options": [
+      "6.6667",
+      "1.5",
+      "0.15",
+      "0.015"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(3 \\div 20 = 0.15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{3}\\) of 30.",
+    "options": [
+      "20",
+      "10",
+      "5",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{1}{3} \\times 30 = \\frac{1 \\times 30}{3} = \\frac{30}{3} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 9040 in standard form.",
+    "options": [
+      "\\(9.04 \\times 10^{4}\\)",
+      "\\(9.04 \\times 10^{2}\\)",
+      "\\(9.04 \\times 10^{3}\\)",
+      "\\(9.04 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 9040 to just after the first non-zero digit gives \\(9.04\\), and the point moved 3 places left.\n\nSo 9040 \\(= 9.04 \\times 10^{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{4} \\div \\frac{3}{4}\\).",
+    "options": [
+      "\\(\\frac{3}{8}\\)",
+      "\\(1\\)",
+      "\\(\\frac{3}{16}\\)",
+      "\\(\\frac{1}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{1}{4} \\div \\frac{3}{4} = \\frac{1}{4} \\times \\frac{4}{3} = \\frac{4}{12}\\)\n\nIn lowest terms this is \\(\\frac{1}{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 90513.32 correct to 3 significant figures.",
+    "options": [
+      "90600",
+      "90510",
+      "90500",
+      "91000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 90513.32, then look at the next digit to decide whether to round up.\n\nThis gives 90500.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 8194.48 correct to 2 significant figures.",
+    "options": [
+      "8000",
+      "8190",
+      "8300",
+      "8200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 8194.48, then look at the next digit to decide whether to round up.\n\nThis gives 8200.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{5}{10}\\) of 40.",
+    "options": [
+      "28",
+      "16",
+      "24",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{5}{10} \\times 40 = \\frac{5 \\times 40}{10} = \\frac{200}{10} = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0403 in standard form.",
+    "options": [
+      "\\(4.03 \\times 10^{-2}\\)",
+      "\\(4.03 \\times 10^{-1}\\)",
+      "\\(4.03 \\times 10^{2}\\)",
+      "\\(4.03 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0403 to just after the first non-zero digit gives \\(4.03\\), and the point moved 2 places right.\n\nSo 0.0403 \\(= 4.03 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{10}{12} + \\frac{1}{4}\\).",
+    "options": [
+      "\\(\\frac{11}{16}\\)",
+      "\\(\\frac{13}{6}\\)",
+      "\\(\\frac{53}{48}\\)",
+      "\\(\\frac{13}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 48.\n\n\\(\\frac{10}{12} + \\frac{1}{4} = \\frac{40 + 12}{48} = \\frac{52}{48}\\)\n\nIn lowest terms this is \\(\\frac{13}{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 19.8625 correct to 1 decimal place.",
+    "options": [
+      "19.8",
+      "19.0",
+      "20.0",
+      "19.9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(19.8625 \\approx 19.9\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 5.2540 correct to 2 decimal places.",
+    "options": [
+      "5.24",
+      "5.26",
+      "5.00",
+      "5.25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(5.2540 \\approx 5.25\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 610 in standard form.",
+    "options": [
+      "\\(6.1 \\times 10^{3}\\)",
+      "\\(6.1 \\times 10^{-2}\\)",
+      "\\(6.1 \\times 10^{2}\\)",
+      "\\(6.1 \\times 10^{1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 610 to just after the first non-zero digit gives \\(6.1\\), and the point moved 2 places left.\n\nSo 610 \\(= 6.1 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{6}{12}\\) of 276.",
+    "options": [
+      "161",
+      "184",
+      "138",
+      "115"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{6}{12} \\times 276 = \\frac{6 \\times 276}{12} = \\frac{1656}{12} = 138\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{3} + \\frac{5}{9}\\).",
+    "options": [
+      "\\(\\frac{22}{9}\\)",
+      "\\(\\frac{34}{27}\\)",
+      "\\(\\frac{11}{9}\\)",
+      "\\(\\frac{7}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 27.\n\n\\(\\frac{2}{3} + \\frac{5}{9} = \\frac{18 + 15}{27} = \\frac{33}{27}\\)\n\nIn lowest terms this is \\(\\frac{11}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 20.3041 correct to 2 decimal places.",
+    "options": [
+      "20.00",
+      "20.30",
+      "20.29",
+      "20.31"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(20.3041 \\approx 20.30\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{7} - \\frac{4}{11}\\).",
+    "options": [
+      "\\(\\frac{27}{77}\\)",
+      "\\(\\frac{54}{77}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "\\(\\frac{4}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 77.\n\n\\(\\frac{5}{7} - \\frac{4}{11} = \\frac{55 - 28}{77} = \\frac{27}{77}\\)\n\nIn lowest terms this is \\(\\frac{27}{77}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{6}{25}\\) as a decimal.",
+    "options": [
+      "2.4",
+      "4.1667",
+      "0.024",
+      "0.24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(6 \\div 25 = 0.24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{9} \\times \\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{4}{27}\\)",
+      "\\(\\frac{7}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{4}{9} \\times \\frac{1}{3} = \\frac{4}{27}\\)\n\nIn lowest terms this is \\(\\frac{4}{27}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{9}{20}\\) as a decimal.",
+    "options": [
+      "2.2222",
+      "0.45",
+      "4.5",
+      "0.045"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(9 \\div 20 = 0.45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{4} \\times \\frac{7}{8}\\).",
+    "options": [
+      "\\(\\frac{7}{6}\\)",
+      "\\(\\frac{11}{8}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{7}{16}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{2}{4} \\times \\frac{7}{8} = \\frac{14}{32}\\)\n\nIn lowest terms this is \\(\\frac{7}{16}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{3} - \\frac{2}{9}\\).",
+    "options": [
+      "\\(\\frac{1}{9}\\)",
+      "\\(-\\frac{1}{6}\\)",
+      "\\(\\frac{4}{27}\\)",
+      "\\(\\frac{2}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 27.\n\n\\(\\frac{1}{3} - \\frac{2}{9} = \\frac{9 - 6}{27} = \\frac{3}{27}\\)\n\nIn lowest terms this is \\(\\frac{1}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{6}{10} \\times \\frac{4}{9}\\).",
+    "options": [
+      "\\(\\frac{24}{19}\\)",
+      "\\(\\frac{4}{15}\\)",
+      "\\(\\frac{27}{20}\\)",
+      "\\(\\frac{47}{45}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{6}{10} \\times \\frac{4}{9} = \\frac{24}{90}\\)\n\nIn lowest terms this is \\(\\frac{4}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{8}\\) of 88.",
+    "options": [
+      "44",
+      "33",
+      "55",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{3}{8} \\times 88 = \\frac{3 \\times 88}{8} = \\frac{264}{8} = 33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 25100 in standard form.",
+    "options": [
+      "\\(2.51 \\times 10^{3}\\)",
+      "\\(2.51 \\times 10^{5}\\)",
+      "\\(2.51 \\times 10^{-4}\\)",
+      "\\(2.51 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 25100 to just after the first non-zero digit gives \\(2.51\\), and the point moved 4 places left.\n\nSo 25100 \\(= 2.51 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{5} \\div \\frac{8}{9}\\).",
+    "options": [
+      "\\(\\frac{58}{45}\\)",
+      "\\(\\frac{16}{45}\\)",
+      "\\(\\frac{8}{7}\\)",
+      "\\(\\frac{9}{20}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{2}{5} \\div \\frac{8}{9} = \\frac{2}{5} \\times \\frac{9}{8} = \\frac{18}{40}\\)\n\nIn lowest terms this is \\(\\frac{9}{20}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 16300 in standard form.",
+    "options": [
+      "\\(1.63 \\times 10^{-4}\\)",
+      "\\(1.63 \\times 10^{5}\\)",
+      "\\(1.63 \\times 10^{4}\\)",
+      "\\(1.63 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 16300 to just after the first non-zero digit gives \\(1.63\\), and the point moved 4 places left.\n\nSo 16300 \\(= 1.63 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000214 in standard form.",
+    "options": [
+      "\\(2.14 \\times 10^{-3}\\)",
+      "\\(2.14 \\times 10^{-5}\\)",
+      "\\(2.14 \\times 10^{-4}\\)",
+      "\\(2.14 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000214 to just after the first non-zero digit gives \\(2.14\\), and the point moved 4 places right.\n\nSo 0.000214 \\(= 2.14 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{3}\\) of 33.",
+    "options": [
+      "33",
+      "44",
+      "11",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{2}{3} \\times 33 = \\frac{2 \\times 33}{3} = \\frac{66}{3} = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{6}{7}\\) of 189.",
+    "options": [
+      "189",
+      "216",
+      "135",
+      "162"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{6}{7} \\times 189 = \\frac{6 \\times 189}{7} = \\frac{1134}{7} = 162\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{6}\\) of 42.",
+    "options": [
+      "3.5",
+      "21",
+      "7",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{1}{6} \\times 42 = \\frac{1 \\times 42}{6} = \\frac{42}{6} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{6}{10} \\div \\frac{6}{11}\\).",
+    "options": [
+      "\\(\\frac{18}{55}\\)",
+      "\\(\\frac{63}{55}\\)",
+      "\\(\\frac{11}{10}\\)",
+      "\\(\\frac{12}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{6}{10} \\div \\frac{6}{11} = \\frac{6}{10} \\times \\frac{11}{6} = \\frac{66}{60}\\)\n\nIn lowest terms this is \\(\\frac{11}{10}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 975 in standard form.",
+    "options": [
+      "\\(9.75 \\times 10^{2}\\)",
+      "\\(9.75 \\times 10^{1}\\)",
+      "\\(9.75 \\times 10^{-2}\\)",
+      "\\(9.75 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 975 to just after the first non-zero digit gives \\(9.75\\), and the point moved 2 places left.\n\nSo 975 \\(= 9.75 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 1650 in standard form.",
+    "options": [
+      "\\(1.65 \\times 10^{-3}\\)",
+      "\\(1.65 \\times 10^{4}\\)",
+      "\\(1.65 \\times 10^{2}\\)",
+      "\\(1.65 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 1650 to just after the first non-zero digit gives \\(1.65\\), and the point moved 3 places left.\n\nSo 1650 \\(= 1.65 \\times 10^{3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{7}{10}\\) of 260.",
+    "options": [
+      "208",
+      "234",
+      "182",
+      "156"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{7}{10} \\times 260 = \\frac{7 \\times 260}{10} = \\frac{1820}{10} = 182\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{7}{10} \\times \\frac{1}{10}\\).",
+    "options": [
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{7}{100}\\)",
+      "\\(7\\)",
+      "\\(\\frac{7}{20}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{7}{10} \\times \\frac{1}{10} = \\frac{7}{100}\\)\n\nIn lowest terms this is \\(\\frac{7}{100}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{5}\\) of 145.",
+    "options": [
+      "87",
+      "58",
+      "116",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{2}{5} \\times 145 = \\frac{2 \\times 145}{5} = \\frac{290}{5} = 58\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{3}\\) of 18.",
+    "options": [
+      "3",
+      "6",
+      "12",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{1}{3} \\times 18 = \\frac{1 \\times 18}{3} = \\frac{18}{3} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 27.7105 correct to 1 decimal place.",
+    "options": [
+      "27.8",
+      "27.6",
+      "27.7",
+      "27.0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(27.7105 \\approx 27.7\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{5}\\) of 100.",
+    "options": [
+      "40",
+      "80",
+      "60",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{2}{5} \\times 100 = \\frac{2 \\times 100}{5} = \\frac{200}{5} = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 36495.75 correct to 2 significant figures.",
+    "options": [
+      "36000",
+      "40000",
+      "36500",
+      "37000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 36495.75, then look at the next digit to decide whether to round up.\n\nThis gives 36000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 52400 in standard form.",
+    "options": [
+      "\\(5.24 \\times 10^{5}\\)",
+      "\\(5.24 \\times 10^{4}\\)",
+      "\\(5.24 \\times 10^{3}\\)",
+      "\\(5.24 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 52400 to just after the first non-zero digit gives \\(5.24\\), and the point moved 4 places left.\n\nSo 52400 \\(= 5.24 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000829 in standard form.",
+    "options": [
+      "\\(8.29 \\times 10^{-5}\\)",
+      "\\(8.29 \\times 10^{-3}\\)",
+      "\\(8.29 \\times 10^{-4}\\)",
+      "\\(8.29 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000829 to just after the first non-zero digit gives \\(8.29\\), and the point moved 4 places right.\n\nSo 0.000829 \\(= 8.29 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00263 in standard form.",
+    "options": [
+      "\\(2.63 \\times 10^{-3}\\)",
+      "\\(2.63 \\times 10^{-2}\\)",
+      "\\(2.63 \\times 10^{-4}\\)",
+      "\\(2.63 \\times 10^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00263 to just after the first non-zero digit gives \\(2.63\\), and the point moved 3 places right.\n\nSo 0.00263 \\(= 2.63 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.0358 in standard form.",
+    "options": [
+      "\\(3.58 \\times 10^{-3}\\)",
+      "\\(3.58 \\times 10^{-2}\\)",
+      "\\(3.58 \\times 10^{2}\\)",
+      "\\(3.58 \\times 10^{-1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.0358 to just after the first non-zero digit gives \\(3.58\\), and the point moved 2 places right.\n\nSo 0.0358 \\(= 3.58 \\times 10^{-2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 15214.48 correct to 4 significant figures.",
+    "options": [
+      "15220",
+      "15210",
+      "15214",
+      "15200"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 15214.48, then look at the next digit to decide whether to round up.\n\nThis gives 15210.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{4}{12}\\) of 348.",
+    "options": [
+      "174",
+      "116",
+      "87",
+      "145"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{4}{12} \\times 348 = \\frac{4 \\times 348}{12} = \\frac{1392}{12} = 116\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 56436.53 correct to 4 significant figures.",
+    "options": [
+      "56437",
+      "56440",
+      "56450",
+      "56400"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 56436.53, then look at the next digit to decide whether to round up.\n\nThis gives 56440.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{8}{9} \\times \\frac{10}{11}\\).",
+    "options": [
+      "\\(\\frac{178}{99}\\)",
+      "\\(\\frac{80}{99}\\)",
+      "\\(4\\)",
+      "\\(\\frac{44}{45}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{8}{9} \\times \\frac{10}{11} = \\frac{80}{99}\\)\n\nIn lowest terms this is \\(\\frac{80}{99}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 87.5725 correct to 2 decimal places.",
+    "options": [
+      "87.57",
+      "87.58",
+      "87.00",
+      "87.56"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(87.5725 \\approx 87.57\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 68.5655 correct to 2 decimal places.",
+    "options": [
+      "68.00",
+      "68.56",
+      "68.58",
+      "68.57"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(68.5655 \\approx 68.57\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{8}{10}\\) of 40.",
+    "options": [
+      "40",
+      "36",
+      "28",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{8}{10} \\times 40 = \\frac{8 \\times 40}{10} = \\frac{320}{10} = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{3}\\) of 21.",
+    "options": [
+      "21",
+      "7",
+      "28",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{2}{3} \\times 21 = \\frac{2 \\times 21}{3} = \\frac{42}{3} = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 77.1767 correct to 2 decimal places.",
+    "options": [
+      "77.19",
+      "77.17",
+      "77.00",
+      "77.18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(77.1767 \\approx 77.18\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{4}{5} + \\frac{6}{9}\\).",
+    "options": [
+      "\\(\\frac{67}{45}\\)",
+      "\\(\\frac{44}{15}\\)",
+      "\\(\\frac{5}{7}\\)",
+      "\\(\\frac{22}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 45.\n\n\\(\\frac{4}{5} + \\frac{6}{9} = \\frac{36 + 30}{45} = \\frac{66}{45}\\)\n\nIn lowest terms this is \\(\\frac{22}{15}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{7}{9}\\) of 243.",
+    "options": [
+      "243",
+      "216",
+      "162",
+      "189"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{7}{9} \\times 243 = \\frac{7 \\times 243}{9} = \\frac{1701}{9} = 189\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{3} + \\frac{2}{4}\\).",
+    "options": [
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{7}{3}\\)",
+      "\\(\\frac{7}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 12.\n\n\\(\\frac{2}{3} + \\frac{2}{4} = \\frac{8 + 6}{12} = \\frac{14}{12}\\)\n\nIn lowest terms this is \\(\\frac{7}{6}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 58069.26 correct to 3 significant figures.",
+    "options": [
+      "58000",
+      "58070",
+      "58100",
+      "58200"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 58069.26, then look at the next digit to decide whether to round up.\n\nThis gives 58100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{10}{12} - \\frac{1}{9}\\).",
+    "options": [
+      "\\(3\\)",
+      "\\(\\frac{13}{18}\\)",
+      "\\(\\frac{79}{108}\\)",
+      "\\(\\frac{13}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use a common denominator of 108.\n\n\\(\\frac{10}{12} - \\frac{1}{9} = \\frac{90 - 12}{108} = \\frac{78}{108}\\)\n\nIn lowest terms this is \\(\\frac{13}{18}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 71183.16 correct to 4 significant figures.",
+    "options": [
+      "71183",
+      "71190",
+      "71200",
+      "71180"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 71183.16, then look at the next digit to decide whether to round up.\n\nThis gives 71180.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 98924.93 correct to 2 significant figures.",
+    "options": [
+      "98000",
+      "98900",
+      "99000",
+      "100000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 98924.93, then look at the next digit to decide whether to round up.\n\nThis gives 99000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{8}\\) of 64.",
+    "options": [
+      "16",
+      "24",
+      "8",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{1}{8} \\times 64 = \\frac{1 \\times 64}{8} = \\frac{64}{8} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 25230.46 correct to 2 significant figures.",
+    "options": [
+      "25000",
+      "30000",
+      "26000",
+      "25200"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 25230.46, then look at the next digit to decide whether to round up.\n\nThis gives 25000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{4} \\div \\frac{1}{3}\\).",
+    "options": [
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{2}{7}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{5}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{2}{4} \\div \\frac{1}{3} = \\frac{2}{4} \\times \\frac{3}{1} = \\frac{6}{4}\\)\n\nIn lowest terms this is \\(\\frac{3}{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 54140.26 correct to 3 significant figures.",
+    "options": [
+      "54140",
+      "54100",
+      "54000",
+      "54200"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 54140.26, then look at the next digit to decide whether to round up.\n\nThis gives 54100.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 89787.95 correct to 2 significant figures.",
+    "options": [
+      "89000",
+      "90000",
+      "91000",
+      "89800"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 89787.95, then look at the next digit to decide whether to round up.\n\nThis gives 90000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{4} \\div \\frac{3}{7}\\).",
+    "options": [
+      "\\(\\frac{33}{28}\\)",
+      "\\(\\frac{9}{28}\\)",
+      "\\(\\frac{9}{11}\\)",
+      "\\(\\frac{7}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{3}{4} \\div \\frac{3}{7} = \\frac{3}{4} \\times \\frac{7}{3} = \\frac{21}{12}\\)\n\nIn lowest terms this is \\(\\frac{7}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{9}{10} \\div \\frac{7}{8}\\).",
+    "options": [
+      "\\(\\frac{36}{35}\\)",
+      "\\(\\frac{71}{40}\\)",
+      "\\(\\frac{7}{2}\\)",
+      "\\(\\frac{63}{80}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{9}{10} \\div \\frac{7}{8} = \\frac{9}{10} \\times \\frac{8}{7} = \\frac{72}{70}\\)\n\nIn lowest terms this is \\(\\frac{36}{35}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{1}{10}\\) of 210.",
+    "options": [
+      "10.5",
+      "63",
+      "42",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{1}{10} \\times 210 = \\frac{1 \\times 210}{10} = \\frac{210}{10} = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{5}{11}\\) of 198.",
+    "options": [
+      "90",
+      "126",
+      "108",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{5}{11} \\times 198 = \\frac{5 \\times 198}{11} = \\frac{990}{11} = 90\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 652 in standard form.",
+    "options": [
+      "\\(6.52 \\times 10^{1}\\)",
+      "\\(6.52 \\times 10^{2}\\)",
+      "\\(6.52 \\times 10^{3}\\)",
+      "\\(6.52 \\times 10^{-2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 652 to just after the first non-zero digit gives \\(6.52\\), and the point moved 2 places left.\n\nSo 652 \\(= 6.52 \\times 10^{2}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{10}\\) of 170.",
+    "options": [
+      "85",
+      "68",
+      "34",
+      "51"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{3}{10} \\times 170 = \\frac{3 \\times 170}{10} = \\frac{510}{10} = 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{3}{5}\\) as a decimal.",
+    "options": [
+      "0.6",
+      "0.06",
+      "6",
+      "1.6667"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(3 \\div 5 = 0.6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{9}{10} \\times \\frac{5}{6}\\).",
+    "options": [
+      "\\(\\frac{26}{15}\\)",
+      "\\(\\frac{45}{16}\\)",
+      "\\(\\frac{27}{25}\\)",
+      "\\(\\frac{3}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply the numerators and the denominators.\n\n\\(\\frac{9}{10} \\times \\frac{5}{6} = \\frac{45}{60}\\)\n\nIn lowest terms this is \\(\\frac{3}{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 11.4565 correct to 1 decimal place.",
+    "options": [
+      "11.6",
+      "11.0",
+      "11.5",
+      "11.4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(11.4565 \\approx 11.5\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 59120.87 correct to 2 significant figures.",
+    "options": [
+      "58000",
+      "59000",
+      "59100",
+      "60000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 59120.87, then look at the next digit to decide whether to round up.\n\nThis gives 59000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{7}{9} - \\frac{2}{6}\\).",
+    "options": [
+      "\\(\\frac{8}{9}\\)",
+      "\\(\\frac{25}{54}\\)",
+      "\\(\\frac{4}{9}\\)",
+      "\\(\\frac{5}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 54.\n\n\\(\\frac{7}{9} - \\frac{2}{6} = \\frac{42 - 18}{54} = \\frac{24}{54}\\)\n\nIn lowest terms this is \\(\\frac{4}{9}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 83217.31 correct to 2 significant figures.",
+    "options": [
+      "84000",
+      "80000",
+      "83200",
+      "83000"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 83217.31, then look at the next digit to decide whether to round up.\n\nThis gives 83000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{4} + \\frac{2}{7}\\).",
+    "options": [
+      "\\(\\frac{15}{28}\\)",
+      "\\(\\frac{3}{11}\\)",
+      "\\(\\frac{15}{14}\\)",
+      "\\(\\frac{4}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 28.\n\n\\(\\frac{1}{4} + \\frac{2}{7} = \\frac{7 + 8}{28} = \\frac{15}{28}\\)\n\nIn lowest terms this is \\(\\frac{15}{28}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{7}{25}\\) as a decimal.",
+    "options": [
+      "0.28",
+      "0.028",
+      "3.5714",
+      "2.8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(7 \\div 25 = 0.28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 37787.58 correct to 4 significant figures.",
+    "options": [
+      "37780",
+      "37800",
+      "37788",
+      "37790"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 37787.58, then look at the next digit to decide whether to round up.\n\nThis gives 37790.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 64.5976 correct to 1 decimal place.",
+    "options": [
+      "64.5",
+      "64.6",
+      "64.7",
+      "64.0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 1 digit after the decimal point and use the next digit to round.\n\n\\(64.5976 \\approx 64.6\\) to 1 decimal place.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{7} - \\frac{6}{12}\\).",
+    "options": [
+      "\\(\\frac{19}{84}\\)",
+      "\\(-\\frac{1}{5}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "\\(\\frac{3}{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 84.\n\n\\(\\frac{5}{7} - \\frac{6}{12} = \\frac{60 - 42}{84} = \\frac{18}{84}\\)\n\nIn lowest terms this is \\(\\frac{3}{14}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{3}{12}\\) of 264.",
+    "options": [
+      "44",
+      "110",
+      "66",
+      "88"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{3}{12} \\times 264 = \\frac{3 \\times 264}{12} = \\frac{792}{12} = 66\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{7} + \\frac{3}{12}\\).",
+    "options": [
+      "\\(\\frac{5}{19}\\)",
+      "\\(\\frac{15}{14}\\)",
+      "\\(\\frac{15}{28}\\)",
+      "\\(\\frac{23}{42}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 84.\n\n\\(\\frac{2}{7} + \\frac{3}{12} = \\frac{24 + 21}{84} = \\frac{45}{84}\\)\n\nIn lowest terms this is \\(\\frac{15}{28}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 93.2430 correct to 2 decimal places.",
+    "options": [
+      "93.00",
+      "93.23",
+      "93.25",
+      "93.24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(93.2430 \\approx 93.24\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{11} + \\frac{1}{6}\\).",
+    "options": [
+      "\\(\\frac{17}{66}\\)",
+      "\\(\\frac{2}{17}\\)",
+      "\\(\\frac{17}{33}\\)",
+      "\\(\\frac{3}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use a common denominator of 66.\n\n\\(\\frac{1}{11} + \\frac{1}{6} = \\frac{6 + 11}{66} = \\frac{17}{66}\\)\n\nIn lowest terms this is \\(\\frac{17}{66}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{3}{8} \\div \\frac{6}{7}\\).",
+    "options": [
+      "\\(\\frac{69}{56}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{7}{16}\\)",
+      "\\(\\frac{9}{28}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "To divide by a fraction, multiply by its reciprocal.\n\n\\(\\frac{3}{8} \\div \\frac{6}{7} = \\frac{3}{8} \\times \\frac{7}{6} = \\frac{21}{48}\\)\n\nIn lowest terms this is \\(\\frac{7}{16}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 8259.69 correct to 2 significant figures.",
+    "options": [
+      "8300",
+      "8260",
+      "8400",
+      "8000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 8259.69, then look at the next digit to decide whether to round up.\n\nThis gives 8300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express \\(\\frac{4}{5}\\) as a decimal.",
+    "options": [
+      "0.08",
+      "8",
+      "1.25",
+      "0.8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide the numerator by the denominator.\n\n\\(4 \\div 5 = 0.8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000711 in standard form.",
+    "options": [
+      "\\(7.11 \\times 10^{-3}\\)",
+      "\\(7.11 \\times 10^{-4}\\)",
+      "\\(7.11 \\times 10^{-5}\\)",
+      "\\(7.11 \\times 10^{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000711 to just after the first non-zero digit gives \\(7.11\\), and the point moved 4 places right.\n\nSo 0.000711 \\(= 7.11 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 40.2598 correct to 2 decimal places.",
+    "options": [
+      "40.00",
+      "40.26",
+      "40.27",
+      "40.25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(40.2598 \\approx 40.26\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 74167.47 correct to 2 significant figures.",
+    "options": [
+      "74200",
+      "70000",
+      "75000",
+      "74000"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 2 significant figures from the first non-zero digit of 74167.47, then look at the next digit to decide whether to round up.\n\nThis gives 74000.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 48.6664 correct to 2 decimal places.",
+    "options": [
+      "48.67",
+      "48.00",
+      "48.66",
+      "48.68"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(48.6664 \\approx 48.67\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{7}\\) of 203.",
+    "options": [
+      "29",
+      "58",
+      "116",
+      "87"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{2}{7} \\times 203 = \\frac{2 \\times 203}{7} = \\frac{406}{7} = 58\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{12}\\) of 60.",
+    "options": [
+      "5",
+      "15",
+      "20",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{2}{12} \\times 60 = \\frac{2 \\times 60}{12} = \\frac{120}{12} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{5}\\) of 55.",
+    "options": [
+      "11",
+      "44",
+      "22",
+      "33"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{2}{5} \\times 55 = \\frac{2 \\times 55}{5} = \\frac{110}{5} = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.00809 in standard form.",
+    "options": [
+      "\\(8.09 \\times 10^{-3}\\)",
+      "\\(8.09 \\times 10^{3}\\)",
+      "\\(8.09 \\times 10^{-2}\\)",
+      "\\(8.09 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.00809 to just after the first non-zero digit gives \\(8.09\\), and the point moved 3 places right.\n\nSo 0.00809 \\(= 8.09 \\times 10^{-3}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{2}{4} + \\frac{5}{9}\\).",
+    "options": [
+      "\\(\\frac{19}{9}\\)",
+      "\\(\\frac{7}{13}\\)",
+      "\\(\\frac{13}{12}\\)",
+      "\\(\\frac{19}{18}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 36.\n\n\\(\\frac{2}{4} + \\frac{5}{9} = \\frac{18 + 20}{36} = \\frac{38}{36}\\)\n\nIn lowest terms this is \\(\\frac{19}{18}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{5}{12} - \\frac{3}{9}\\).",
+    "options": [
+      "\\(\\frac{5}{54}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a common denominator of 108.\n\n\\(\\frac{5}{12} - \\frac{3}{9} = \\frac{45 - 36}{108} = \\frac{9}{108}\\)\n\nIn lowest terms this is \\(\\frac{1}{12}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{2}{4}\\) of 44.",
+    "options": [
+      "33",
+      "44",
+      "22",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{2}{4} \\times 44 = \\frac{2 \\times 44}{4} = \\frac{88}{4} = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\(\\frac{1}{2} + \\frac{3}{6}\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(\\frac{13}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use a common denominator of 12.\n\n\\(\\frac{1}{2} + \\frac{3}{6} = \\frac{6 + 6}{12} = \\frac{12}{12}\\)\n\nIn lowest terms this is \\(1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 45.2857 correct to 2 decimal places.",
+    "options": [
+      "45.29",
+      "45.00",
+      "45.30",
+      "45.28"
+    ],
+    "correctIndex": 0,
+    "explanation": "Keep 2 digits after the decimal point and use the next digit to round.\n\n\\(45.2857 \\approx 45.29\\) to 2 decimal places.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 22347.45 correct to 4 significant figures.",
+    "options": [
+      "22360",
+      "22350",
+      "22300",
+      "22347"
+    ],
+    "correctIndex": 1,
+    "explanation": "Count 4 significant figures from the first non-zero digit of 22347.45, then look at the next digit to decide whether to round up.\n\nThis gives 22350.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 61800 in standard form.",
+    "options": [
+      "\\(6.18 \\times 10^{3}\\)",
+      "\\(6.18 \\times 10^{5}\\)",
+      "\\(6.18 \\times 10^{4}\\)",
+      "\\(6.18 \\times 10^{-4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 61800 to just after the first non-zero digit gives \\(6.18\\), and the point moved 4 places left.\n\nSo 61800 \\(= 6.18 \\times 10^{4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 33339.49 correct to 3 significant figures.",
+    "options": [
+      "33400",
+      "33000",
+      "33340",
+      "33300"
+    ],
+    "correctIndex": 3,
+    "explanation": "Count 3 significant figures from the first non-zero digit of 33339.49, then look at the next digit to decide whether to round up.\n\nThis gives 33300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 0.000408 in standard form.",
+    "options": [
+      "\\(4.08 \\times 10^{-5}\\)",
+      "\\(4.08 \\times 10^{4}\\)",
+      "\\(4.08 \\times 10^{-4}\\)",
+      "\\(4.08 \\times 10^{-3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standard form is \\(a \\times 10^{n}\\) where \\(1 \\leq a < 10\\).\n\nMoving the decimal point in 0.000408 to just after the first non-zero digit gives \\(4.08\\), and the point moved 4 places right.\n\nSo 0.000408 \\(= 4.08 \\times 10^{-4}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "NjfU0QdBKJPAWpKSCjOX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

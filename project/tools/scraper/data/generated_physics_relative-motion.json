@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "A boat travels at 16m/s due north while a current flows at 30m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "46m/s",
+      "34m/s",
+      "14m/s",
+      "36m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{16^{2} + 30^{2}} = \\sqrt{1156} = 34\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 29m/s and 63m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "92m/s",
+      "63m/s",
+      "29m/s",
+      "34m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 29 + 63 = 92\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 20m/s and 43m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "63m/s",
+      "20m/s",
+      "23m/s",
+      "43m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |20 - 43| = 23\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 84m/s and 18m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "18m/s",
+      "84m/s",
+      "66m/s",
+      "102m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 84 + 18 = 102\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 81m/s and 25m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "56m/s",
+      "81m/s",
+      "106m/s",
+      "25m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |81 - 25| = 56\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 76m/s and 10m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "10m/s",
+      "66m/s",
+      "86m/s",
+      "76m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 76 + 10 = 86\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 50m/s and 61m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "50m/s",
+      "111m/s",
+      "61m/s",
+      "11m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |50 - 61| = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 27m/s and 53m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "80m/s",
+      "27m/s",
+      "53m/s",
+      "26m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |27 - 53| = 26\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 42m/s is 403m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7.6s",
+      "15s",
+      "13s",
+      "9.6s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 42 - 11 = 31\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{403}{31} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 19m/s and 70m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "89m/s",
+      "51m/s",
+      "70m/s",
+      "19m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |19 - 70| = 51\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 31m/s and 21m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "31m/s",
+      "10m/s",
+      "21m/s",
+      "52m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |31 - 21| = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 83m/s and 19m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "64m/s",
+      "83m/s",
+      "102m/s",
+      "19m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |83 - 19| = 64\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 32m/s due north while a current flows at 60m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "92m/s",
+      "68m/s",
+      "28m/s",
+      "70m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{32^{2} + 60^{2}} = \\sqrt{4624} = 68\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 42m/s and 13m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "55m/s",
+      "13m/s",
+      "29m/s",
+      "42m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |42 - 13| = 29\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 9m/s due north while a current flows at 12m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "15m/s",
+      "3m/s",
+      "17m/s",
+      "21m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{9^{2} + 12^{2}} = \\sqrt{225} = 15\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 8m/s due north while a current flows at 15m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "17m/s",
+      "19m/s",
+      "23m/s",
+      "7m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{8^{2} + 15^{2}} = \\sqrt{289} = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 43m/s is 455m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "10.58s",
+      "13s",
+      "8.92s",
+      "15s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 43 - 8 = 35\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{455}{35} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 680m behind a lorry travelling at 12m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "17s",
+      "13.08s",
+      "19s",
+      "10.63s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 52 - 12 = 40\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{680}{40} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 16m/s and 30m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "16m/s",
+      "14m/s",
+      "30m/s",
+      "46m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |16 - 30| = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 81m/s and 21m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "81m/s",
+      "21m/s",
+      "60m/s",
+      "102m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 81 + 21 = 102\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 28m/s and 19m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "9m/s",
+      "19m/s",
+      "28m/s",
+      "47m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |28 - 19| = 9\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 18m/s and 51m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "69m/s",
+      "18m/s",
+      "33m/s",
+      "51m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |18 - 51| = 33\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 21m/s due north while a current flows at 72m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "93m/s",
+      "51m/s",
+      "75m/s",
+      "77m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{21^{2} + 72^{2}} = \\sqrt{5625} = 75\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 7m/s due north while a current flows at 24m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "25m/s",
+      "27m/s",
+      "31m/s",
+      "17m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{7^{2} + 24^{2}} = \\sqrt{625} = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 18m/s due north while a current flows at 80m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "62m/s",
+      "98m/s",
+      "82m/s",
+      "84m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{18^{2} + 80^{2}} = \\sqrt{6724} = 82\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 66m/s and 49m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "66m/s",
+      "17m/s",
+      "115m/s",
+      "49m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |66 - 49| = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 32m/s is 352m behind a lorry travelling at 10m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "16s",
+      "18s",
+      "11s",
+      "8.38s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 32 - 10 = 22\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{352}{22} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 44m/s and 15m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "59m/s",
+      "44m/s",
+      "15m/s",
+      "29m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 44 + 15 = 59\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 89m/s and 88m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "177m/s",
+      "1m/s",
+      "89m/s",
+      "88m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 89 + 88 = 177\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 28m/s and 21m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "7m/s",
+      "21m/s",
+      "28m/s",
+      "49m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 28 + 21 = 49\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 36m/s due north while a current flows at 160m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "166m/s",
+      "196m/s",
+      "124m/s",
+      "164m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{36^{2} + 160^{2}} = \\sqrt{26896} = 164\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 33m/s is 234m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "11s",
+      "9s",
+      "7.09s",
+      "5.85s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 33 - 7 = 26\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{234}{26} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 38m/s is 620m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "13.78s",
+      "20s",
+      "16.32s",
+      "22s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 38 - 7 = 31\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{620}{31} = 20\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 18m/s and 12m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "30m/s",
+      "18m/s",
+      "12m/s",
+      "6m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 18 + 12 = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 20m/s due north while a current flows at 48m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "68m/s",
+      "52m/s",
+      "28m/s",
+      "54m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{20^{2} + 48^{2}} = \\sqrt{2704} = 52\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 60m/s is 574m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "16s",
+      "7.27s",
+      "14s",
+      "9.57s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 60 - 19 = 41\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{574}{41} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 24m/s and 23m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "24m/s",
+      "23m/s",
+      "1m/s",
+      "47m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |24 - 23| = 1\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 10m/s due north while a current flows at 24m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "28m/s",
+      "14m/s",
+      "34m/s",
+      "26m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{10^{2} + 24^{2}} = \\sqrt{676} = 26\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 55m/s and 20m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "20m/s",
+      "75m/s",
+      "35m/s",
+      "55m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 55 + 20 = 75\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 45m/s and 15m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "15m/s",
+      "45m/s",
+      "30m/s",
+      "60m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 45 + 15 = 60\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 36m/s is 306m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5.67s",
+      "8.5s",
+      "17s",
+      "19s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 36 - 18 = 18\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{306}{18} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 26m/s and 37m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "11m/s",
+      "26m/s",
+      "37m/s",
+      "63m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 26 + 37 = 63\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 58m/s is 630m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "14s",
+      "8.87s",
+      "10.86s",
+      "16s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 58 - 13 = 45\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{630}{45} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 44m/s and 54m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "44m/s",
+      "98m/s",
+      "54m/s",
+      "10m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |44 - 54| = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 38m/s is 66m behind a lorry travelling at 16m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "1.22s",
+      "3s",
+      "5s",
+      "1.74s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 38 - 16 = 22\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{66}{22} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 50m/s and 14m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "36m/s",
+      "14m/s",
+      "64m/s",
+      "50m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |50 - 14| = 36\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 76m/s and 50m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "26m/s",
+      "126m/s",
+      "76m/s",
+      "50m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |76 - 50| = 26\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 51m/s and 88m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "88m/s",
+      "139m/s",
+      "51m/s",
+      "37m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 51 + 88 = 139\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 71m/s and 40m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "31m/s",
+      "40m/s",
+      "71m/s",
+      "111m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |71 - 40| = 31\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 84m/s and 65m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "84m/s",
+      "65m/s",
+      "19m/s",
+      "149m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 84 + 65 = 149\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 75m/s and 63m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "75m/s",
+      "138m/s",
+      "12m/s",
+      "63m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 75 + 63 = 138\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 89m/s and 60m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "29m/s",
+      "89m/s",
+      "149m/s",
+      "60m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 89 + 60 = 149\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 45m/s and 83m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "83m/s",
+      "128m/s",
+      "45m/s",
+      "38m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 45 + 83 = 128\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 15m/s and 49m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "34m/s",
+      "49m/s",
+      "15m/s",
+      "64m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |15 - 49| = 34\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 50m/s and 5m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "5m/s",
+      "45m/s",
+      "55m/s",
+      "50m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |50 - 5| = 45\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 69m/s and 23m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "92m/s",
+      "23m/s",
+      "46m/s",
+      "69m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |69 - 23| = 46\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 35m/s and 26m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "61m/s",
+      "9m/s",
+      "35m/s",
+      "26m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |35 - 26| = 9\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 40m/s due north while a current flows at 42m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "60m/s",
+      "58m/s",
+      "82m/s",
+      "2m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{40^{2} + 42^{2}} = \\sqrt{3364} = 58\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 80m/s due north while a current flows at 84m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "116m/s",
+      "164m/s",
+      "118m/s",
+      "4m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{80^{2} + 84^{2}} = \\sqrt{13456} = 116\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 11m/s and 70m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "81m/s",
+      "11m/s",
+      "70m/s",
+      "59m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 11 + 70 = 81\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 53m/s is 736m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "12.27s",
+      "16s",
+      "13.89s",
+      "18s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 53 - 7 = 46\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{736}{46} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 28m/s is 153m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "3.92s",
+      "9s",
+      "5.46s",
+      "11s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 28 - 11 = 17\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{153}{17} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 33m/s is 304m behind a lorry travelling at 14m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6.47s",
+      "18s",
+      "9.21s",
+      "16s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 33 - 14 = 19\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{304}{19} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 78m/s and 41m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "78m/s",
+      "119m/s",
+      "37m/s",
+      "41m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 78 + 41 = 119\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 20m/s and 79m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "99m/s",
+      "59m/s",
+      "79m/s",
+      "20m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 20 + 79 = 99\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 38m/s and 41m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "38m/s",
+      "79m/s",
+      "3m/s",
+      "41m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |38 - 41| = 3\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 21m/s and 86m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "107m/s",
+      "86m/s",
+      "21m/s",
+      "65m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 21 + 86 = 107\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 14m/s and 61m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "14m/s",
+      "47m/s",
+      "75m/s",
+      "61m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |14 - 61| = 47\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 24m/s due north while a current flows at 45m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "53m/s",
+      "69m/s",
+      "51m/s",
+      "21m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{24^{2} + 45^{2}} = \\sqrt{2601} = 51\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 35m/s is 486m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "11.3s",
+      "20s",
+      "18s",
+      "13.89s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 35 - 8 = 27\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{486}{27} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 49m/s and 77m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "28m/s",
+      "126m/s",
+      "49m/s",
+      "77m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 49 + 77 = 126\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 34m/s is 391m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "8.69s",
+      "17s",
+      "11.5s",
+      "19s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 34 - 11 = 23\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{391}{23} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 58m/s is 846m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "12.26s",
+      "20s",
+      "14.59s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 58 - 11 = 47\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{846}{47} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 46m/s is 320m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6.15s",
+      "6.96s",
+      "10s",
+      "8s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 46 - 6 = 40\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{320}{40} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 58m/s and 71m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "58m/s",
+      "71m/s",
+      "129m/s",
+      "13m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |58 - 71| = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 56m/s is 528m behind a lorry travelling at 12m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7.76s",
+      "9.43s",
+      "14s",
+      "12s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 56 - 12 = 44\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{528}{44} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 20m/s due north while a current flows at 21m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "31m/s",
+      "29m/s",
+      "1m/s",
+      "41m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{20^{2} + 21^{2}} = \\sqrt{841} = 29\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 63m/s and 39m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "39m/s",
+      "24m/s",
+      "102m/s",
+      "63m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |63 - 39| = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 63m/s and 29m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "92m/s",
+      "34m/s",
+      "29m/s",
+      "63m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |63 - 29| = 34\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 46m/s and 17m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "29m/s",
+      "46m/s",
+      "63m/s",
+      "17m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 46 + 17 = 63\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 63m/s and 13m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "13m/s",
+      "63m/s",
+      "50m/s",
+      "76m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 63 + 13 = 76\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 9m/s due north while a current flows at 40m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "31m/s",
+      "43m/s",
+      "41m/s",
+      "49m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{9^{2} + 40^{2}} = \\sqrt{1681} = 41\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 59m/s is 918m behind a lorry travelling at 5m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "19s",
+      "17s",
+      "14.34s",
+      "15.56s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 59 - 5 = 54\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{918}{54} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 28m/s due north while a current flows at 96m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "102m/s",
+      "68m/s",
+      "124m/s",
+      "100m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{28^{2} + 96^{2}} = \\sqrt{10000} = 100\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 36m/s and 63m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "63m/s",
+      "99m/s",
+      "36m/s",
+      "27m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |36 - 63| = 27\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 21m/s and 49m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "28m/s",
+      "70m/s",
+      "49m/s",
+      "21m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |21 - 49| = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 57m/s and 85m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "57m/s",
+      "85m/s",
+      "142m/s",
+      "28m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 57 + 85 = 142\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 87m/s and 39m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "87m/s",
+      "48m/s",
+      "39m/s",
+      "126m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |87 - 39| = 48\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 27m/s due north while a current flows at 120m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "93m/s",
+      "147m/s",
+      "125m/s",
+      "123m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{27^{2} + 120^{2}} = \\sqrt{15129} = 123\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 19m/s and 80m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "99m/s",
+      "19m/s",
+      "61m/s",
+      "80m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |19 - 80| = 61\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 40m/s is 429m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "15s",
+      "9.13s",
+      "10.73s",
+      "13s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 40 - 7 = 33\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{429}{33} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 55m/s and 59m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "55m/s",
+      "59m/s",
+      "4m/s",
+      "114m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |55 - 59| = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 54m/s and 58m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "54m/s",
+      "112m/s",
+      "58m/s",
+      "4m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 54 + 58 = 112\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 54m/s is 440m behind a lorry travelling at 14m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "13s",
+      "8.15s",
+      "6.47s",
+      "11s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 54 - 14 = 40\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{440}{40} = 11\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 30m/s is 200m behind a lorry travelling at 5m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6.67s",
+      "10s",
+      "5.71s",
+      "8s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 30 - 5 = 25\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{200}{25} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 19m/s and 18m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "19m/s",
+      "1m/s",
+      "18m/s",
+      "37m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 19 + 18 = 37\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 49m/s and 74m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "74m/s",
+      "49m/s",
+      "123m/s",
+      "25m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 49 + 74 = 123\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 170m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2.43s",
+      "3.27s",
+      "5s",
+      "7s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 52 - 18 = 34\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{170}{34} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 76m/s and 18m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "76m/s",
+      "18m/s",
+      "94m/s",
+      "58m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 76 + 18 = 94\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 72m/s and 78m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "150m/s",
+      "72m/s",
+      "78m/s",
+      "6m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 72 + 78 = 150\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 89m/s and 22m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "89m/s",
+      "22m/s",
+      "67m/s",
+      "111m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 89 + 22 = 111\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 82m/s and 33m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "115m/s",
+      "33m/s",
+      "49m/s",
+      "82m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 82 + 33 = 115\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 15m/s and 90m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "75m/s",
+      "90m/s",
+      "15m/s",
+      "105m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 15 + 90 = 105\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 86m/s and 22m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "64m/s",
+      "22m/s",
+      "86m/s",
+      "108m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |86 - 22| = 64\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 46m/s and 15m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "46m/s",
+      "31m/s",
+      "61m/s",
+      "15m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |46 - 15| = 31\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 39m/s is 299m behind a lorry travelling at 16m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "15s",
+      "5.44s",
+      "7.67s",
+      "13s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 39 - 16 = 23\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{299}{23} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 54m/s is 492m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "14s",
+      "9.11s",
+      "12s",
+      "7.34s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 54 - 13 = 41\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{492}{41} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 48m/s is 406m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "16s",
+      "6.06s",
+      "14s",
+      "8.46s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 48 - 19 = 29\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{406}{29} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 49m/s is 476m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "9.71s",
+      "14s",
+      "16s",
+      "7.44s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 49 - 15 = 34\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{476}{34} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 62m/s and 36m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "98m/s",
+      "36m/s",
+      "26m/s",
+      "62m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 62 + 36 = 98\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 71m/s and 59m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "59m/s",
+      "71m/s",
+      "12m/s",
+      "130m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |71 - 59| = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 55m/s and 28m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "27m/s",
+      "55m/s",
+      "83m/s",
+      "28m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 55 + 28 = 83\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 15m/s due north while a current flows at 36m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "39m/s",
+      "51m/s",
+      "41m/s",
+      "21m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{15^{2} + 36^{2}} = \\sqrt{1521} = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 29m/s and 47m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "47m/s",
+      "29m/s",
+      "18m/s",
+      "76m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |29 - 47| = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 81m/s and 51m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "51m/s",
+      "30m/s",
+      "132m/s",
+      "81m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |81 - 51| = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 50m/s is 252m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5.04s",
+      "6s",
+      "4.34s",
+      "8s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 50 - 8 = 42\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{252}{42} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 84m/s and 17m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "101m/s",
+      "17m/s",
+      "84m/s",
+      "67m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |84 - 17| = 67\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 50m/s and 23m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "50m/s",
+      "73m/s",
+      "23m/s",
+      "27m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 50 + 23 = 73\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 24m/s and 21m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "21m/s",
+      "3m/s",
+      "24m/s",
+      "45m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 24 + 21 = 45\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 552m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "12s",
+      "9.52s",
+      "14s",
+      "10.62s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 52 - 6 = 46\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{552}{46} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 29m/s and 10m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "10m/s",
+      "29m/s",
+      "39m/s",
+      "19m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 29 + 10 = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 45m/s is 576m behind a lorry travelling at 9m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "16s",
+      "12.8s",
+      "10.67s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 45 - 9 = 36\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{576}{36} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 29m/s is 154m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7s",
+      "9s",
+      "4.28s",
+      "5.31s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 29 - 7 = 22\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{154}{22} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 58m/s and 23m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "35m/s",
+      "58m/s",
+      "81m/s",
+      "23m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |58 - 23| = 35\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 14m/s due north while a current flows at 48m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "50m/s",
+      "34m/s",
+      "52m/s",
+      "62m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{14^{2} + 48^{2}} = \\sqrt{2500} = 50\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 54m/s is 259m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "4.8s",
+      "9s",
+      "7s",
+      "3.65s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 54 - 17 = 37\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{259}{37} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 15m/s and 36m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "51m/s",
+      "21m/s",
+      "36m/s",
+      "15m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 15 + 36 = 51\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 41m/s is 93m behind a lorry travelling at 10m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "1.82s",
+      "2.27s",
+      "5s",
+      "3s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 41 - 10 = 31\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{93}{31} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 55m/s is 120m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5s",
+      "1.71s",
+      "2.18s",
+      "3s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 55 - 15 = 40\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{120}{40} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 32m/s is 312m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "8.21s",
+      "12s",
+      "9.75s",
+      "14s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 32 - 6 = 26\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{312}{26} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 34m/s is 336m behind a lorry travelling at 10m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7.64s",
+      "9.88s",
+      "16s",
+      "14s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 34 - 10 = 24\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{336}{24} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 83m/s and 6m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "6m/s",
+      "89m/s",
+      "77m/s",
+      "83m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |83 - 6| = 77\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 46m/s and 11m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "57m/s",
+      "11m/s",
+      "35m/s",
+      "46m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |46 - 11| = 35\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 79m/s and 52m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "52m/s",
+      "131m/s",
+      "79m/s",
+      "27m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 79 + 52 = 131\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 24m/s and 46m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "22m/s",
+      "46m/s",
+      "24m/s",
+      "70m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |24 - 46| = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 40m/s is 406m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "16s",
+      "7.96s",
+      "10.15s",
+      "14s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 40 - 11 = 29\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{406}{29} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 34m/s and 45m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "79m/s",
+      "45m/s",
+      "34m/s",
+      "11m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |34 - 45| = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 29m/s is 204m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "17s",
+      "19s",
+      "7.03s",
+      "4.43s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 29 - 17 = 12\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{204}{12} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 59m/s and 28m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "87m/s",
+      "59m/s",
+      "31m/s",
+      "28m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |59 - 28| = 31\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 85m/s and 23m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "62m/s",
+      "85m/s",
+      "108m/s",
+      "23m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |85 - 23| = 62\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 60m/s due north while a current flows at 63m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "89m/s",
+      "3m/s",
+      "87m/s",
+      "123m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{60^{2} + 63^{2}} = \\sqrt{7569} = 87\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 25m/s and 17m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "17m/s",
+      "25m/s",
+      "42m/s",
+      "8m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 25 + 17 = 42\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 69m/s and 58m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "69m/s",
+      "11m/s",
+      "127m/s",
+      "58m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |69 - 58| = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 65m/s and 62m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "127m/s",
+      "65m/s",
+      "3m/s",
+      "62m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 65 + 62 = 127\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 17m/s and 76m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "17m/s",
+      "93m/s",
+      "76m/s",
+      "59m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |17 - 76| = 59\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 76m/s and 37m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "76m/s",
+      "37m/s",
+      "113m/s",
+      "39m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |76 - 37| = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 37m/s and 17m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "54m/s",
+      "20m/s",
+      "37m/s",
+      "17m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 37 + 17 = 54\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 39m/s and 17m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "39m/s",
+      "56m/s",
+      "22m/s",
+      "17m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |39 - 17| = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 21m/s and 14m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "35m/s",
+      "7m/s",
+      "14m/s",
+      "21m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |21 - 14| = 7\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 37m/s and 52m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "89m/s",
+      "15m/s",
+      "37m/s",
+      "52m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 37 + 52 = 89\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 38m/s is 338m behind a lorry travelling at 12m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6.76s",
+      "8.89s",
+      "13s",
+      "15s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 38 - 12 = 26\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{338}{26} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 58m/s is 688m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "11.86s",
+      "16s",
+      "9.42s",
+      "18s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 58 - 15 = 43\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{688}{43} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 39m/s is 384m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "14s",
+      "9.85s",
+      "12s",
+      "8.35s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 39 - 7 = 32\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{384}{32} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 53m/s is 176m behind a lorry travelling at 9m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2.84s",
+      "4s",
+      "6s",
+      "3.32s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 53 - 9 = 44\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{176}{44} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 43m/s is 324m behind a lorry travelling at 16m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "12s",
+      "5.49s",
+      "14s",
+      "7.53s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 43 - 16 = 27\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{324}{27} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 25m/s and 30m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "25m/s",
+      "30m/s",
+      "55m/s",
+      "5m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 25 + 30 = 55\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 54m/s and 66m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "66m/s",
+      "120m/s",
+      "54m/s",
+      "12m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |54 - 66| = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 22m/s is 252m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "8.4s",
+      "11.45s",
+      "20s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 22 - 8 = 14\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{252}{14} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 50m/s is 572m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "11.44s",
+      "10.21s",
+      "13s",
+      "15s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 50 - 6 = 44\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{572}{44} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 57m/s and 51m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "51m/s",
+      "108m/s",
+      "57m/s",
+      "6m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |57 - 51| = 6\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 66m/s and 64m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "2m/s",
+      "130m/s",
+      "66m/s",
+      "64m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 66 + 64 = 130\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 44m/s is 203m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "4.61s",
+      "7s",
+      "3.44s",
+      "9s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 44 - 15 = 29\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{203}{29} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 58m/s and 17m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "17m/s",
+      "41m/s",
+      "75m/s",
+      "58m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |58 - 17| = 41\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 35m/s is 510m behind a lorry travelling at 5m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "12.75s",
+      "17s",
+      "19s",
+      "14.57s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 35 - 5 = 30\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{510}{30} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 53m/s and 40m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "53m/s",
+      "13m/s",
+      "93m/s",
+      "40m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |53 - 40| = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 44m/s and 32m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "32m/s",
+      "44m/s",
+      "12m/s",
+      "76m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 44 + 32 = 76\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 50m/s and 11m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "11m/s",
+      "50m/s",
+      "39m/s",
+      "61m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |50 - 11| = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 29m/s and 69m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "69m/s",
+      "40m/s",
+      "98m/s",
+      "29m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |29 - 69| = 40\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 28m/s is 66m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "1.94s",
+      "2.36s",
+      "5s",
+      "3s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 28 - 6 = 22\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{66}{22} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 70m/s and 36m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "36m/s",
+      "106m/s",
+      "70m/s",
+      "34m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 70 + 36 = 106\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 39m/s and 61m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "39m/s",
+      "22m/s",
+      "100m/s",
+      "61m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 39 + 61 = 100\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 84m/s and 67m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "84m/s",
+      "17m/s",
+      "67m/s",
+      "151m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 84 + 67 = 151\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 61m/s and 80m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "80m/s",
+      "61m/s",
+      "19m/s",
+      "141m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 61 + 80 = 141\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 21m/s and 29m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "50m/s",
+      "29m/s",
+      "21m/s",
+      "8m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 21 + 29 = 50\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 59m/s is 230m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5s",
+      "3.9s",
+      "7s",
+      "3.19s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 59 - 13 = 46\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{230}{46} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 51m/s and 31m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "51m/s",
+      "82m/s",
+      "20m/s",
+      "31m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 51 + 31 = 82\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 54m/s is 84m behind a lorry travelling at 12m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "4s",
+      "2s",
+      "1.27s",
+      "1.56s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 54 - 12 = 42\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{84}{42} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 54m/s is 266m behind a lorry travelling at 16m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7s",
+      "3.8s",
+      "4.93s",
+      "9s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 54 - 16 = 38\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{266}{38} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 20m/s and 86m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "66m/s",
+      "86m/s",
+      "106m/s",
+      "20m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 20 + 86 = 106\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 75m/s and 6m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "81m/s",
+      "75m/s",
+      "6m/s",
+      "69m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |75 - 6| = 69\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 59m/s is 424m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "8s",
+      "6.52s",
+      "10s",
+      "7.19s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 59 - 6 = 53\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{424}{53} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 64m/s and 90m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "90m/s",
+      "26m/s",
+      "154m/s",
+      "64m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 64 + 90 = 154\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 67m/s and 22m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "89m/s",
+      "67m/s",
+      "45m/s",
+      "22m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |67 - 22| = 45\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 25m/s and 5m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "30m/s",
+      "5m/s",
+      "25m/s",
+      "20m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |25 - 5| = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 12m/s due north while a current flows at 16m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "4m/s",
+      "22m/s",
+      "20m/s",
+      "28m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{12^{2} + 16^{2}} = \\sqrt{400} = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 54m/s and 9m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "45m/s",
+      "54m/s",
+      "9m/s",
+      "63m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |54 - 9| = 45\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 39m/s and 11m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "39m/s",
+      "28m/s",
+      "11m/s",
+      "50m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |39 - 11| = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 85m/s and 56m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "141m/s",
+      "56m/s",
+      "29m/s",
+      "85m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 85 + 56 = 141\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 26m/s is 75m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2.88s",
+      "2.03s",
+      "5s",
+      "7s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 26 - 11 = 15\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{75}{15} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 24m/s is 289m behind a lorry travelling at 7m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "17s",
+      "19s",
+      "12.04s",
+      "9.32s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 24 - 7 = 17\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{289}{17} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 26m/s and 38m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "26m/s",
+      "12m/s",
+      "38m/s",
+      "64m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |26 - 38| = 12\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 72m/s and 19m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "53m/s",
+      "72m/s",
+      "19m/s",
+      "91m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |72 - 19| = 53\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 24m/s is 49m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2.04s",
+      "1.2s",
+      "9s",
+      "7s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 24 - 17 = 7\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{49}{7} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 60m/s and 86m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "60m/s",
+      "86m/s",
+      "146m/s",
+      "26m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 60 + 86 = 146\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 49m/s is 451m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "9.2s",
+      "13s",
+      "7.91s",
+      "11s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 49 - 8 = 41\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{451}{41} = 11\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 31m/s is 168m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5.42s",
+      "3.5s",
+      "12s",
+      "14s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 31 - 17 = 14\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{168}{14} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 70m/s and 59m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "129m/s",
+      "59m/s",
+      "70m/s",
+      "11m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |70 - 59| = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 22m/s and 47m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "47m/s",
+      "22m/s",
+      "69m/s",
+      "25m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |22 - 47| = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 42m/s is 124m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2.95s",
+      "6s",
+      "4s",
+      "2.34s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 42 - 11 = 31\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{124}{31} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 53m/s and 24m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "53m/s",
+      "24m/s",
+      "29m/s",
+      "77m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 53 + 24 = 77\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 53m/s and 61m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "61m/s",
+      "8m/s",
+      "114m/s",
+      "53m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |53 - 61| = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 23m/s and 78m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "55m/s",
+      "78m/s",
+      "23m/s",
+      "101m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 23 + 78 = 101\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 20m/s is 35m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "1s",
+      "9s",
+      "1.75s",
+      "7s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 20 - 15 = 5\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{35}{5} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 15m/s and 26m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "11m/s",
+      "41m/s",
+      "15m/s",
+      "26m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |15 - 26| = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 56m/s is 532m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7.19s",
+      "16s",
+      "14s",
+      "9.5s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 56 - 18 = 38\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{532}{38} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 55m/s is 288m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5.24s",
+      "3.89s",
+      "8s",
+      "10s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 55 - 19 = 36\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{288}{36} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 42m/s and 66m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "66m/s",
+      "108m/s",
+      "24m/s",
+      "42m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |42 - 66| = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 23m/s is 210m behind a lorry travelling at 9m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "17s",
+      "6.56s",
+      "15s",
+      "9.13s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 23 - 9 = 14\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{210}{14} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 24m/s is 57m behind a lorry travelling at 5m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5s",
+      "1.97s",
+      "3s",
+      "2.38s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 24 - 5 = 19\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{57}{19} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 50m/s is 616m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "14s",
+      "12.32s",
+      "11s",
+      "16s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 50 - 6 = 44\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{616}{44} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 10m/s and 76m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "66m/s",
+      "86m/s",
+      "76m/s",
+      "10m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |10 - 76| = 66\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 66m/s and 20m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "66m/s",
+      "46m/s",
+      "86m/s",
+      "20m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 66 + 20 = 86\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 54m/s is 164m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6s",
+      "4s",
+      "3.04s",
+      "2.45s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 54 - 13 = 41\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{164}{41} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 12m/s and 37m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "37m/s",
+      "49m/s",
+      "25m/s",
+      "12m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |12 - 37| = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 34m/s is 105m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "3.09s",
+      "2.23s",
+      "7s",
+      "5s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 34 - 13 = 21\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{105}{21} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 76m/s and 83m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "7m/s",
+      "159m/s",
+      "83m/s",
+      "76m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 76 + 83 = 159\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 72m/s and 66m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "138m/s",
+      "72m/s",
+      "6m/s",
+      "66m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 72 + 66 = 138\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 22m/s is 104m behind a lorry travelling at 9m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "4.73s",
+      "3.35s",
+      "10s",
+      "8s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 22 - 9 = 13\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{104}{13} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 35m/s and 33m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "68m/s",
+      "35m/s",
+      "33m/s",
+      "2m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 35 + 33 = 68\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 136m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "1.94s",
+      "6s",
+      "4s",
+      "2.62s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 52 - 18 = 34\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{136}{34} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 47m/s and 61m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "61m/s",
+      "14m/s",
+      "108m/s",
+      "47m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |47 - 61| = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 33m/s and 8m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "8m/s",
+      "41m/s",
+      "33m/s",
+      "25m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |33 - 8| = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 56m/s is 230m behind a lorry travelling at 10m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7s",
+      "4.11s",
+      "3.48s",
+      "5s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 56 - 10 = 46\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{230}{46} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 73m/s and 81m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "8m/s",
+      "81m/s",
+      "154m/s",
+      "73m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 73 + 81 = 154\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 43m/s and 29m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "29m/s",
+      "43m/s",
+      "72m/s",
+      "14m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |43 - 29| = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 34m/s and 86m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "86m/s",
+      "52m/s",
+      "34m/s",
+      "120m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 34 + 86 = 120\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 46m/s is 66m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "4s",
+      "1.43s",
+      "2s",
+      "1.12s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 46 - 13 = 33\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{66}{33} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 40m/s and 63m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "103m/s",
+      "23m/s",
+      "63m/s",
+      "40m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 40 + 63 = 103\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 78m/s and 61m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "139m/s",
+      "17m/s",
+      "61m/s",
+      "78m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |78 - 61| = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 48m/s is 136m behind a lorry travelling at 14m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2.19s",
+      "4s",
+      "2.83s",
+      "6s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 48 - 14 = 34\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{136}{34} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 82m/s and 25m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "25m/s",
+      "57m/s",
+      "107m/s",
+      "82m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |82 - 25| = 57\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 25m/s is 150m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6s",
+      "17s",
+      "3.75s",
+      "15s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 25 - 15 = 10\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{150}{10} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 48m/s is 105m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5s",
+      "3s",
+      "1.72s",
+      "2.19s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 48 - 13 = 35\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{105}{35} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 62m/s and 22m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "62m/s",
+      "84m/s",
+      "40m/s",
+      "22m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 62 + 22 = 84\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 78m/s and 80m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "78m/s",
+      "2m/s",
+      "158m/s",
+      "80m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 78 + 80 = 158\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 63m/s and 34m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "97m/s",
+      "29m/s",
+      "34m/s",
+      "63m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |63 - 34| = 29\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 89m/s and 31m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "31m/s",
+      "120m/s",
+      "89m/s",
+      "58m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |89 - 31| = 58\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 83m/s and 55m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "138m/s",
+      "28m/s",
+      "83m/s",
+      "55m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |83 - 55| = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 69m/s and 43m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "69m/s",
+      "43m/s",
+      "112m/s",
+      "26m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |69 - 43| = 26\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 54m/s and 67m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "13m/s",
+      "54m/s",
+      "67m/s",
+      "121m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 54 + 67 = 121\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 90m/s and 67m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "157m/s",
+      "23m/s",
+      "90m/s",
+      "67m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 90 + 67 = 157\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 35m/s and 67m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "32m/s",
+      "102m/s",
+      "67m/s",
+      "35m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 35 + 67 = 102\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 28m/s and 19m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "9m/s",
+      "47m/s",
+      "28m/s",
+      "19m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 28 + 19 = 47\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 77m/s and 83m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "77m/s",
+      "160m/s",
+      "6m/s",
+      "83m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 77 + 83 = 160\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 55m/s and 24m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "31m/s",
+      "24m/s",
+      "79m/s",
+      "55m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 55 + 24 = 79\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 49m/s is 600m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "12.24s",
+      "8.82s",
+      "20s",
+      "22s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 49 - 19 = 30\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{600}{30} = 20\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 35m/s and 39m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "4m/s",
+      "39m/s",
+      "74m/s",
+      "35m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |35 - 39| = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 79m/s and 23m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "102m/s",
+      "56m/s",
+      "79m/s",
+      "23m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 79 + 23 = 102\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 210m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "8s",
+      "6s",
+      "4.04s",
+      "3.04s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 52 - 17 = 35\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{210}{35} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 23m/s and 31m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "54m/s",
+      "8m/s",
+      "31m/s",
+      "23m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |23 - 31| = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 47m/s is 203m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "9s",
+      "7s",
+      "3.12s",
+      "4.32s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 47 - 18 = 29\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{203}{29} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 46m/s is 114m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "3s",
+      "2.48s",
+      "2.11s",
+      "5s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 46 - 8 = 38\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{114}{38} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 57m/s and 39m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "39m/s",
+      "57m/s",
+      "96m/s",
+      "18m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |57 - 39| = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A boat travels at 5m/s due north while a current flows at 12m/s due east. Find the magnitude of the resultant velocity of the boat.",
+    "options": [
+      "13m/s",
+      "15m/s",
+      "7m/s",
+      "17m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The two velocities are perpendicular, so combine them using Pythagoras' theorem.\n\n\\(v = \\sqrt{5^{2} + 12^{2}} = \\sqrt{169} = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 59m/s is 225m behind a lorry travelling at 14m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "3.81s",
+      "7s",
+      "3.08s",
+      "5s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 59 - 14 = 45\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{225}{45} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 26m/s and 9m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "35m/s",
+      "9m/s",
+      "26m/s",
+      "17m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |26 - 9| = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 50m/s and 80m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "130m/s",
+      "50m/s",
+      "80m/s",
+      "30m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |50 - 80| = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 37m/s is 200m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5.41s",
+      "10s",
+      "3.7s",
+      "12s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 37 - 17 = 20\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{200}{20} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 26m/s and 21m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "47m/s",
+      "26m/s",
+      "21m/s",
+      "5m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 26 + 21 = 47\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 63m/s and 52m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "63m/s",
+      "115m/s",
+      "11m/s",
+      "52m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 63 + 52 = 115\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 82m/s and 30m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "30m/s",
+      "82m/s",
+      "112m/s",
+      "52m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 82 + 30 = 112\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 47m/s and 15m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "32m/s",
+      "47m/s",
+      "15m/s",
+      "62m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 47 + 15 = 62\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 47m/s and 29m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "29m/s",
+      "76m/s",
+      "18m/s",
+      "47m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |47 - 29| = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 67m/s and 12m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "12m/s",
+      "55m/s",
+      "79m/s",
+      "67m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 67 + 12 = 79\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 684m behind a lorry travelling at 14m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "13.15s",
+      "10.36s",
+      "20s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 52 - 14 = 38\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{684}{38} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 26m/s and 70m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "70m/s",
+      "44m/s",
+      "26m/s",
+      "96m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |26 - 70| = 44\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 89m/s and 66m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "23m/s",
+      "66m/s",
+      "155m/s",
+      "89m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |89 - 66| = 23\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 44m/s and 85m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "129m/s",
+      "41m/s",
+      "44m/s",
+      "85m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 44 + 85 = 129\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 53m/s and 61m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "114m/s",
+      "8m/s",
+      "61m/s",
+      "53m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 53 + 61 = 114\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 28m/s is 38m behind a lorry travelling at 9m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "2s",
+      "1.03s",
+      "1.36s",
+      "4s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 28 - 9 = 19\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{38}{19} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 57m/s is 756m behind a lorry travelling at 15m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "20s",
+      "18s",
+      "10.5s",
+      "13.26s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 57 - 15 = 42\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{756}{42} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 56m/s and 71m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "71m/s",
+      "127m/s",
+      "15m/s",
+      "56m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 56 + 71 = 127\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 22m/s is 54m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "2.45s",
+      "20s",
+      "1.32s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 22 - 19 = 3\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{54}{3} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 23m/s and 45m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "23m/s",
+      "68m/s",
+      "22m/s",
+      "45m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 23 + 45 = 68\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 47m/s is 702m behind a lorry travelling at 8m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "12.76s",
+      "14.94s",
+      "20s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 47 - 8 = 39\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{702}{39} = 18\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 71m/s and 59m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "59m/s",
+      "71m/s",
+      "12m/s",
+      "130m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 71 + 59 = 130\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 17m/s and 65m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "82m/s",
+      "65m/s",
+      "17m/s",
+      "48m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 17 + 65 = 82\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 18m/s and 81m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "99m/s",
+      "81m/s",
+      "63m/s",
+      "18m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 18 + 81 = 99\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 60m/s is 196m behind a lorry travelling at 11m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "6s",
+      "4s",
+      "2.76s",
+      "3.27s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 60 - 11 = 49\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{196}{49} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 27m/s is 153m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "19s",
+      "3.4s",
+      "5.67s",
+      "17s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 27 - 18 = 9\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{153}{9} = 17\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 52m/s is 490m behind a lorry travelling at 17m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "7.1s",
+      "9.42s",
+      "16s",
+      "14s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 52 - 17 = 35\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{490}{35} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 24m/s is 42m behind a lorry travelling at 18m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "1.75s",
+      "7s",
+      "1s",
+      "9s"
+    ],
+    "correctIndex": 1,
+    "explanation": "Relative velocity \\(= 24 - 18 = 6\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{42}{6} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 88m/s and 55m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "55m/s",
+      "88m/s",
+      "143m/s",
+      "33m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |88 - 55| = 33\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 45m/s is 512m behind a lorry travelling at 13m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "18s",
+      "11.38s",
+      "16s",
+      "8.83s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 45 - 13 = 32\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{512}{32} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 22m/s is 80m behind a lorry travelling at 14m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "10s",
+      "2.22s",
+      "3.64s",
+      "12s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 22 - 14 = 8\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{80}{8} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 59m/s is 265m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "5s",
+      "4.08s",
+      "7s",
+      "4.49s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 59 - 6 = 53\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{265}{53} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 53m/s and 89m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "142m/s",
+      "53m/s",
+      "89m/s",
+      "36m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 53 + 89 = 142\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 37m/s is 400m behind a lorry travelling at 12m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "10.81s",
+      "18s",
+      "16s",
+      "8.16s"
+    ],
+    "correctIndex": 2,
+    "explanation": "Relative velocity \\(= 37 - 12 = 25\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{400}{25} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 57m/s and 53m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "4m/s",
+      "53m/s",
+      "57m/s",
+      "110m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |57 - 53| = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 24m/s is 112m behind a lorry travelling at 10m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "3.29s",
+      "10s",
+      "4.67s",
+      "8s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 24 - 10 = 14\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{112}{14} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 29m/s is 368m behind a lorry travelling at 6m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "10.51s",
+      "18s",
+      "12.69s",
+      "16s"
+    ],
+    "correctIndex": 3,
+    "explanation": "Relative velocity \\(= 29 - 6 = 23\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{368}{23} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 59m/s and 39m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "39m/s",
+      "20m/s",
+      "98m/s",
+      "59m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 59 + 39 = 98\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 55m/s and 10m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "65m/s",
+      "10m/s",
+      "45m/s",
+      "55m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |55 - 10| = 45\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 24m/s and 49m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "25m/s",
+      "73m/s",
+      "24m/s",
+      "49m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 24 + 49 = 73\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 66m/s and 74m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "74m/s",
+      "140m/s",
+      "8m/s",
+      "66m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |66 - 74| = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 11m/s and 64m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "64m/s",
+      "11m/s",
+      "75m/s",
+      "53m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |11 - 64| = 53\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars travel in the same direction with speeds 11m/s and 66m/s. Find the magnitude of the velocity of the first car relative to the second.",
+    "options": [
+      "55m/s",
+      "11m/s",
+      "66m/s",
+      "77m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "For motion in the same direction, relative velocity is the difference.\n\n\\(v_{rel} = |11 - 66| = 55\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Two cars approach each other with speeds 86m/s and 18m/s. Find the magnitude of their relative velocity.",
+    "options": [
+      "68m/s",
+      "86m/s",
+      "18m/s",
+      "104m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "For motion in opposite directions, relative velocity is the sum.\n\n\\(v_{rel} = 86 + 18 = 104\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 60m/s is 492m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "12s",
+      "14s",
+      "8.2s",
+      "6.23s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 60 - 19 = 41\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{492}{41} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travelling at 32m/s is 208m behind a lorry travelling at 19m/s in the same direction. How long will it take the car to catch up with the lorry?",
+    "options": [
+      "16s",
+      "6.5s",
+      "4.08s",
+      "18s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Relative velocity \\(= 32 - 19 = 13\\)m/s\n\n\\(t = \\frac{\\text{gap}}{\\text{relative velocity}} = \\frac{208}{13} = 16\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "T4vCcK0Alp6IbKn1pwlX",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

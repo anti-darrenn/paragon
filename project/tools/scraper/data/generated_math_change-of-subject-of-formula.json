@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 1}{8}\\).",
+    "options": [
+      "\\(x = \\frac{8}{y} - 1\\)",
+      "\\(x = 8y + 1\\)",
+      "\\(x = \\frac{y - 1}{8}\\)",
+      "\\(x = 8y - 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 1\\)\n\nSubtract 1: \\(x = 8y - 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 15}{5}\\).",
+    "options": [
+      "\\(x = 5y + 15\\)",
+      "\\(x = 5y - 15\\)",
+      "\\(x = \\frac{y + 15}{5}\\)",
+      "\\(x = \\frac{5}{y} + 15\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 5: \\(5y = x - 15\\)\n\nAdd 15: \\(x = 5y + 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x - 12\\).",
+    "options": [
+      "\\(x = \\frac{y + 12}{11}\\)",
+      "\\(x = \\frac{11}{y + 12}\\)",
+      "\\(x = 11y + 12\\)",
+      "\\(x = \\frac{y - 12}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 11x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y + 12}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{4}\\).",
+    "options": [
+      "\\(x = \\frac{4}{y} + 9\\)",
+      "\\(x = 4y - 9\\)",
+      "\\(x = 4y + 9\\)",
+      "\\(x = \\frac{y + 9}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 9\\)\n\nAdd 9: \\(x = 4y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 13}{11}\\).",
+    "options": [
+      "\\(x = 11y - 13\\)",
+      "\\(x = 11y + 13\\)",
+      "\\(x = \\frac{11}{y} - 13\\)",
+      "\\(x = \\frac{y - 13}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 13\\)\n\nSubtract 13: \\(x = 11y - 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 2}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} - 2\\)",
+      "\\(x = \\frac{y - 2}{11}\\)",
+      "\\(x = 11y - 2\\)",
+      "\\(x = 11y + 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 2\\)\n\nSubtract 2: \\(x = 11y - 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(c\\) the subject of the formula \\(E = mc^{2}\\).",
+    "options": [
+      "\\(c = \\sqrt{\\frac{E}{m}}\\)",
+      "\\(c = \\frac{E^{2}}{m}\\)",
+      "\\(c = \\frac{\\sqrt{E}}{m}\\)",
+      "\\(c = \\frac{E}{m}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide both sides by \\(m\\), then take the square root.\n\nThis gives \\(c = \\sqrt{\\frac{E}{m}}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 15}{10}\\).",
+    "options": [
+      "\\(x = 10y + 15\\)",
+      "\\(x = \\frac{10}{y} + 15\\)",
+      "\\(x = \\frac{y + 15}{10}\\)",
+      "\\(x = 10y - 15\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 15\\)\n\nAdd 15: \\(x = 10y + 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x + 7\\).",
+    "options": [
+      "\\(x = \\frac{y - 7}{9}\\)",
+      "\\(x = \\frac{y + 7}{9}\\)",
+      "\\(x = 9y - 7\\)",
+      "\\(x = \\frac{9}{y - 7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 9x + 7\\)\n\nSubtract 7 from both sides: \\(y - 7 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y - 7}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 10}{3}\\).",
+    "options": [
+      "\\(x = 3y + 10\\)",
+      "\\(x = 3y - 10\\)",
+      "\\(x = \\frac{y - 10}{3}\\)",
+      "\\(x = \\frac{3}{y} - 10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 10\\)\n\nSubtract 10: \\(x = 3y - 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 3\\).",
+    "options": [
+      "\\(x = \\frac{12}{y - 3}\\)",
+      "\\(x = 12y - 3\\)",
+      "\\(x = \\frac{y - 3}{12}\\)",
+      "\\(x = \\frac{y + 3}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 12x + 3\\)\n\nSubtract 3 from both sides: \\(y - 3 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 3}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 14}{7}\\).",
+    "options": [
+      "\\(x = 7y + 14\\)",
+      "\\(x = 7y - 14\\)",
+      "\\(x = \\frac{y - 14}{7}\\)",
+      "\\(x = \\frac{7}{y} - 14\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 14\\)\n\nSubtract 14: \\(x = 7y - 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 9}{12}\\).",
+    "options": [
+      "\\(x = 12y - 9\\)",
+      "\\(x = \\frac{y - 9}{12}\\)",
+      "\\(x = 12y + 9\\)",
+      "\\(x = \\frac{12}{y} - 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 12: \\(12y = x + 9\\)\n\nSubtract 9: \\(x = 12y - 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(F\\) the subject of the formula \\(C = \\frac{5}{9}(F - 32)\\).",
+    "options": [
+      "\\(F = \\frac{9C}{5} - 32\\)",
+      "\\(F = \\frac{5C}{9} + 32\\)",
+      "\\(F = \\frac{9C}{5} + 32\\)",
+      "\\(F = \\frac{9(C + 32)}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by \\(\\frac{9}{5}\\), then add 32.\n\nThis gives \\(F = \\frac{9C}{5} + 32\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(s\\) the subject of the formula \\(v^{2} = u^{2} + 2as\\).",
+    "options": [
+      "\\(s = \\frac{v^{2} - u^{2}}{2a}\\)",
+      "\\(s = 2a(v^{2} - u^{2})\\)",
+      "\\(s = \\frac{v - u}{2a}\\)",
+      "\\(s = \\frac{v^{2} + u^{2}}{2a}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract \\(u^{2}\\), then divide by \\(2a\\).\n\nThis gives \\(s = \\frac{v^{2} - u^{2}}{2a}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 7}{8}\\).",
+    "options": [
+      "\\(x = \\frac{y - 7}{8}\\)",
+      "\\(x = \\frac{8}{y} - 7\\)",
+      "\\(x = 8y - 7\\)",
+      "\\(x = 8y + 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 7\\)\n\nSubtract 7: \\(x = 8y - 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 7}{6}\\).",
+    "options": [
+      "\\(x = \\frac{6}{y} - 7\\)",
+      "\\(x = 6y - 7\\)",
+      "\\(x = \\frac{y - 7}{6}\\)",
+      "\\(x = 6y + 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 6: \\(6y = x + 7\\)\n\nSubtract 7: \\(x = 6y - 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(b\\) the subject of the formula \\(P = 2(l + b)\\).",
+    "options": [
+      "\\(b = \\frac{P}{2} - l\\)",
+      "\\(b = \\frac{P - l}{2}\\)",
+      "\\(b = 2P - l\\)",
+      "\\(b = \\frac{P}{2} + l\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Divide both sides by 2, then subtract \\(l\\).\n\nThis gives \\(b = \\frac{P}{2} - l\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x - 15\\).",
+    "options": [
+      "\\(x = \\frac{y + 15}{9}\\)",
+      "\\(x = 9y + 15\\)",
+      "\\(x = \\frac{9}{y + 15}\\)",
+      "\\(x = \\frac{y - 15}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 9x - 15\\)\n\nAdd 15 to both sides: \\(y + 15 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y + 15}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 9}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} - 9\\)",
+      "\\(x = 11y + 9\\)",
+      "\\(x = \\frac{y - 9}{11}\\)",
+      "\\(x = 11y - 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 9\\)\n\nSubtract 9: \\(x = 11y - 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{a}{x} + b\\).",
+    "options": [
+      "\\(x = \\frac{y - b}{a}\\)",
+      "\\(x = \\frac{a}{y - b}\\)",
+      "\\(x = a(y - b)\\)",
+      "\\(x = \\frac{a}{y + b}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract \\(b\\), then take the reciprocal and multiply by \\(a\\).\n\nThis gives \\(x = \\frac{a}{y - b}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(r\\) the subject of the formula \\(A = \\pi r^{2}\\).",
+    "options": [
+      "\\(r = \\frac{A}{\\pi}\\)",
+      "\\(r = \\frac{\\sqrt{A}}{\\pi}\\)",
+      "\\(r = \\pi\\sqrt{A}\\)",
+      "\\(r = \\sqrt{\\frac{A}{\\pi}}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Divide both sides by \\(\\pi\\), then take the square root.\n\nThis gives \\(r = \\sqrt{\\frac{A}{\\pi}}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(h\\) the subject of the formula \\(A = \\frac{1}{2}bh\\).",
+    "options": [
+      "\\(h = 2Ab\\)",
+      "\\(h = \\frac{A}{2b}\\)",
+      "\\(h = \\frac{b}{2A}\\)",
+      "\\(h = \\frac{2A}{b}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 2, then divide by \\(b\\).\n\nThis gives \\(h = \\frac{2A}{b}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 1\\).",
+    "options": [
+      "\\(x = 5y + 1\\)",
+      "\\(x = \\frac{y + 1}{5}\\)",
+      "\\(x = \\frac{y - 1}{5}\\)",
+      "\\(x = \\frac{5}{y + 1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 5x - 1\\)\n\nAdd 1 to both sides: \\(y + 1 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 1}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x + 16\\).",
+    "options": [
+      "\\(x = \\frac{y + 16}{9}\\)",
+      "\\(x = \\frac{y - 16}{9}\\)",
+      "\\(x = 9y - 16\\)",
+      "\\(x = \\frac{9}{y - 16}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 9x + 16\\)\n\nSubtract 16 from both sides: \\(y - 16 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y - 16}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 6}{4}\\).",
+    "options": [
+      "\\(x = 4y - 6\\)",
+      "\\(x = \\frac{4}{y} + 6\\)",
+      "\\(x = \\frac{y + 6}{4}\\)",
+      "\\(x = 4y + 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 6\\)\n\nAdd 6: \\(x = 4y + 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 7}{4}\\).",
+    "options": [
+      "\\(x = \\frac{y - 7}{4}\\)",
+      "\\(x = \\frac{4}{y} - 7\\)",
+      "\\(x = 4y - 7\\)",
+      "\\(x = 4y + 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 4: \\(4y = x + 7\\)\n\nSubtract 7: \\(x = 4y - 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(l\\) the subject of the formula \\(T = 2\\pi\\sqrt{\\frac{l}{g}}\\).",
+    "options": [
+      "\\(l = \\frac{T^{2}}{4\\pi^{2}g}\\)",
+      "\\(l = \\frac{gT}{2\\pi}\\)",
+      "\\(l = \\frac{gT^{2}}{4\\pi^{2}}\\)",
+      "\\(l = \\frac{4\\pi^{2}}{gT^{2}}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divide by \\(2\\pi\\), square both sides, then multiply by \\(g\\).\n\nThis gives \\(l = \\frac{gT^{2}}{4\\pi^{2}}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 4}{8}\\).",
+    "options": [
+      "\\(x = 8y - 4\\)",
+      "\\(x = 8y + 4\\)",
+      "\\(x = \\frac{y + 4}{8}\\)",
+      "\\(x = \\frac{8}{y} + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 8: \\(8y = x - 4\\)\n\nAdd 4: \\(x = 8y + 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 1}{11}\\).",
+    "options": [
+      "\\(x = 11y - 1\\)",
+      "\\(x = \\frac{11}{y} + 1\\)",
+      "\\(x = \\frac{y + 1}{11}\\)",
+      "\\(x = 11y + 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 11: \\(11y = x - 1\\)\n\nAdd 1: \\(x = 11y + 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 3}{7}\\).",
+    "options": [
+      "\\(x = 7y - 3\\)",
+      "\\(x = 7y + 3\\)",
+      "\\(x = \\frac{7}{y} + 3\\)",
+      "\\(x = \\frac{y + 3}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 3\\)\n\nAdd 3: \\(x = 7y + 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 6}{7}\\).",
+    "options": [
+      "\\(x = 7y - 6\\)",
+      "\\(x = \\frac{y + 6}{7}\\)",
+      "\\(x = \\frac{7}{y} + 6\\)",
+      "\\(x = 7y + 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 6\\)\n\nAdd 6: \\(x = 7y + 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x + 7\\).",
+    "options": [
+      "\\(x = \\frac{y - 7}{11}\\)",
+      "\\(x = 11y - 7\\)",
+      "\\(x = \\frac{y + 7}{11}\\)",
+      "\\(x = \\frac{11}{y - 7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 11x + 7\\)\n\nSubtract 7 from both sides: \\(y - 7 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y - 7}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 3}{2}\\).",
+    "options": [
+      "\\(x = \\frac{y - 3}{2}\\)",
+      "\\(x = 2y + 3\\)",
+      "\\(x = 2y - 3\\)",
+      "\\(x = \\frac{2}{y} - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 3\\)\n\nSubtract 3: \\(x = 2y - 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 6\\).",
+    "options": [
+      "\\(x = \\frac{13}{y + 6}\\)",
+      "\\(x = \\frac{y + 6}{13}\\)",
+      "\\(x = 13y + 6\\)",
+      "\\(x = \\frac{y - 6}{13}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 13x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 6}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 2}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} + 2\\)",
+      "\\(x = 11y + 2\\)",
+      "\\(x = \\frac{y + 2}{11}\\)",
+      "\\(x = 11y - 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 11: \\(11y = x - 2\\)\n\nAdd 2: \\(x = 11y + 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{10}\\).",
+    "options": [
+      "\\(x = \\frac{y + 9}{10}\\)",
+      "\\(x = \\frac{10}{y} + 9\\)",
+      "\\(x = 10y + 9\\)",
+      "\\(x = 10y - 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 9\\)\n\nAdd 9: \\(x = 10y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 8}{7}\\).",
+    "options": [
+      "\\(x = 7y + 8\\)",
+      "\\(x = \\frac{y - 8}{7}\\)",
+      "\\(x = 7y - 8\\)",
+      "\\(x = \\frac{7}{y} - 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 8\\)\n\nSubtract 8: \\(x = 7y - 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x + 20\\).",
+    "options": [
+      "\\(x = \\frac{8}{y - 20}\\)",
+      "\\(x = \\frac{y - 20}{8}\\)",
+      "\\(x = 8y - 20\\)",
+      "\\(x = \\frac{y + 20}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 8x + 20\\)\n\nSubtract 20 from both sides: \\(y - 20 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y - 20}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(R\\) the subject of the formula \\(I = \\frac{PRT}{100}\\).",
+    "options": [
+      "\\(R = \\frac{I}{100PT}\\)",
+      "\\(R = \\frac{100I}{PT}\\)",
+      "\\(R = \\frac{100PT}{I}\\)",
+      "\\(R = \\frac{PT}{100I}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 100, then divide by \\(PT\\).\n\nThis gives \\(R = \\frac{100I}{PT}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 6}{11}\\).",
+    "options": [
+      "\\(x = \\frac{y - 6}{11}\\)",
+      "\\(x = 11y + 6\\)",
+      "\\(x = 11y - 6\\)",
+      "\\(x = \\frac{11}{y} - 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 6\\)\n\nSubtract 6: \\(x = 11y - 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 14}{8}\\).",
+    "options": [
+      "\\(x = \\frac{8}{y} + 14\\)",
+      "\\(x = 8y - 14\\)",
+      "\\(x = 8y + 14\\)",
+      "\\(x = \\frac{y + 14}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 8: \\(8y = x - 14\\)\n\nAdd 14: \\(x = 8y + 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 11}{9}\\).",
+    "options": [
+      "\\(x = \\frac{9}{y} - 11\\)",
+      "\\(x = 9y + 11\\)",
+      "\\(x = 9y - 11\\)",
+      "\\(x = \\frac{y - 11}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 9: \\(9y = x + 11\\)\n\nSubtract 11: \\(x = 9y - 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(l\\) the subject of the formula \\(S = \\frac{n}{2}(a + l)\\).",
+    "options": [
+      "\\(l = \\frac{2S - a}{n}\\)",
+      "\\(l = \\frac{2S}{n} + a\\)",
+      "\\(l = \\frac{S}{2n} - a\\)",
+      "\\(l = \\frac{2S}{n} - a\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 2, divide by \\(n\\), then subtract \\(a\\).\n\nThis gives \\(l = \\frac{2S}{n} - a\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(v\\) the subject of the formula \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\).",
+    "options": [
+      "\\(v = \\frac{uf}{u + f}\\)",
+      "\\(v = \\frac{u - f}{uf}\\)",
+      "\\(v = u - f\\)",
+      "\\(v = \\frac{uf}{u - f}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Make \\(\\frac{1}{v}\\) the subject, combine the fractions, then invert.\n\nThis gives \\(v = \\frac{uf}{u - f}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 13\\).",
+    "options": [
+      "\\(x = \\frac{y - 13}{5}\\)",
+      "\\(x = 5y + 13\\)",
+      "\\(x = \\frac{y + 13}{5}\\)",
+      "\\(x = \\frac{5}{y + 13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 5x - 13\\)\n\nAdd 13 to both sides: \\(y + 13 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 13}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 6}{10}\\).",
+    "options": [
+      "\\(x = 10y + 6\\)",
+      "\\(x = \\frac{y + 6}{10}\\)",
+      "\\(x = \\frac{10}{y} + 6\\)",
+      "\\(x = 10y - 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 6\\)\n\nAdd 6: \\(x = 10y + 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 12\\).",
+    "options": [
+      "\\(x = \\frac{12}{y - 12}\\)",
+      "\\(x = \\frac{y - 12}{12}\\)",
+      "\\(x = \\frac{y + 12}{12}\\)",
+      "\\(x = 12y - 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 12x + 12\\)\n\nSubtract 12 from both sides: \\(y - 12 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 12}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x - 6\\).",
+    "options": [
+      "\\(x = \\frac{4}{y + 6}\\)",
+      "\\(x = \\frac{y + 6}{4}\\)",
+      "\\(x = 4y + 6\\)",
+      "\\(x = \\frac{y - 6}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y + 6}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 5}{10}\\).",
+    "options": [
+      "\\(x = \\frac{y + 5}{10}\\)",
+      "\\(x = \\frac{10}{y} + 5\\)",
+      "\\(x = 10y + 5\\)",
+      "\\(x = 10y - 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 5\\)\n\nAdd 5: \\(x = 10y + 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 10\\).",
+    "options": [
+      "\\(x = \\frac{y - 10}{13}\\)",
+      "\\(x = \\frac{13}{y + 10}\\)",
+      "\\(x = 13y + 10\\)",
+      "\\(x = \\frac{y + 10}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x - 10\\)\n\nAdd 10 to both sides: \\(y + 10 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 10}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 6x + 4\\).",
+    "options": [
+      "\\(x = 6y - 4\\)",
+      "\\(x = \\frac{6}{y - 4}\\)",
+      "\\(x = \\frac{y - 4}{6}\\)",
+      "\\(x = \\frac{y + 4}{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 6x + 4\\)\n\nSubtract 4 from both sides: \\(y - 4 = 6x\\)\n\nDivide both sides by 6: \\(x = \\frac{y - 4}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 19\\).",
+    "options": [
+      "\\(x = 3y + 19\\)",
+      "\\(x = \\frac{y - 19}{3}\\)",
+      "\\(x = \\frac{y + 19}{3}\\)",
+      "\\(x = \\frac{3}{y + 19}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 3x - 19\\)\n\nAdd 19 to both sides: \\(y + 19 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 19}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 2}{9}\\).",
+    "options": [
+      "\\(x = \\frac{y + 2}{9}\\)",
+      "\\(x = 9y - 2\\)",
+      "\\(x = 9y + 2\\)",
+      "\\(x = \\frac{9}{y} + 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 9: \\(9y = x - 2\\)\n\nAdd 2: \\(x = 9y + 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x + 17\\).",
+    "options": [
+      "\\(x = \\frac{14}{y - 17}\\)",
+      "\\(x = \\frac{y + 17}{14}\\)",
+      "\\(x = 14y - 17\\)",
+      "\\(x = \\frac{y - 17}{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 14x + 17\\)\n\nSubtract 17 from both sides: \\(y - 17 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y - 17}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 13}{4}\\).",
+    "options": [
+      "\\(x = 4y - 13\\)",
+      "\\(x = \\frac{4}{y} + 13\\)",
+      "\\(x = \\frac{y + 13}{4}\\)",
+      "\\(x = 4y + 13\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 13\\)\n\nAdd 13: \\(x = 4y + 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 14\\).",
+    "options": [
+      "\\(x = \\frac{14}{y + 14}\\)",
+      "\\(x = \\frac{y + 14}{14}\\)",
+      "\\(x = 14y + 14\\)",
+      "\\(x = \\frac{y - 14}{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 14x - 14\\)\n\nAdd 14 to both sides: \\(y + 14 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 14}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 15}{5}\\).",
+    "options": [
+      "\\(x = 5y + 15\\)",
+      "\\(x = \\frac{y - 15}{5}\\)",
+      "\\(x = \\frac{5}{y} - 15\\)",
+      "\\(x = 5y - 15\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 15\\)\n\nSubtract 15: \\(x = 5y - 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x - 18\\).",
+    "options": [
+      "\\(x = \\frac{11}{y + 18}\\)",
+      "\\(x = \\frac{y + 18}{11}\\)",
+      "\\(x = \\frac{y - 18}{11}\\)",
+      "\\(x = 11y + 18\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 11x - 18\\)\n\nAdd 18 to both sides: \\(y + 18 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y + 18}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x - 4\\).",
+    "options": [
+      "\\(x = 4y + 4\\)",
+      "\\(x = \\frac{4}{y + 4}\\)",
+      "\\(x = \\frac{y - 4}{4}\\)",
+      "\\(x = \\frac{y + 4}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 4x - 4\\)\n\nAdd 4 to both sides: \\(y + 4 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y + 4}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 6\\).",
+    "options": [
+      "\\(x = 3y + 6\\)",
+      "\\(x = \\frac{y - 6}{3}\\)",
+      "\\(x = \\frac{3}{y + 6}\\)",
+      "\\(x = \\frac{y + 6}{3}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 3x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 6}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 1}{7}\\).",
+    "options": [
+      "\\(x = 7y - 1\\)",
+      "\\(x = 7y + 1\\)",
+      "\\(x = \\frac{y + 1}{7}\\)",
+      "\\(x = \\frac{7}{y} + 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 1\\)\n\nAdd 1: \\(x = 7y + 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 4\\).",
+    "options": [
+      "\\(x = \\frac{14}{y + 4}\\)",
+      "\\(x = 14y + 4\\)",
+      "\\(x = \\frac{y + 4}{14}\\)",
+      "\\(x = \\frac{y - 4}{14}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 14x - 4\\)\n\nAdd 4 to both sides: \\(y + 4 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 4}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x + 5\\).",
+    "options": [
+      "\\(x = 13y - 5\\)",
+      "\\(x = \\frac{y + 5}{13}\\)",
+      "\\(x = \\frac{13}{y - 5}\\)",
+      "\\(x = \\frac{y - 5}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x + 5\\)\n\nSubtract 5 from both sides: \\(y - 5 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y - 5}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x - 20\\).",
+    "options": [
+      "\\(x = \\frac{y - 20}{11}\\)",
+      "\\(x = 11y + 20\\)",
+      "\\(x = \\frac{y + 20}{11}\\)",
+      "\\(x = \\frac{11}{y + 20}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 11x - 20\\)\n\nAdd 20 to both sides: \\(y + 20 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y + 20}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 11}{3}\\).",
+    "options": [
+      "\\(x = 3y + 11\\)",
+      "\\(x = \\frac{y - 11}{3}\\)",
+      "\\(x = 3y - 11\\)",
+      "\\(x = \\frac{3}{y} - 11\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 11\\)\n\nSubtract 11: \\(x = 3y - 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(t\\) the subject of the formula \\(v = u + at\\).",
+    "options": [
+      "\\(t = \\frac{v + u}{a}\\)",
+      "\\(t = \\frac{u - v}{a}\\)",
+      "\\(t = \\frac{v - u}{a}\\)",
+      "\\(t = a(v - u)\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract \\(u\\) from both sides, then divide by \\(a\\).\n\nThis gives \\(t = \\frac{v - u}{a}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 5}{6}\\).",
+    "options": [
+      "\\(x = \\frac{6}{y} - 5\\)",
+      "\\(x = \\frac{y - 5}{6}\\)",
+      "\\(x = 6y + 5\\)",
+      "\\(x = 6y - 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 6: \\(6y = x + 5\\)\n\nSubtract 5: \\(x = 6y - 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 11}{11}\\).",
+    "options": [
+      "\\(x = \\frac{y + 11}{11}\\)",
+      "\\(x = 11y + 11\\)",
+      "\\(x = \\frac{11}{y} + 11\\)",
+      "\\(x = 11y - 11\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 11: \\(11y = x - 11\\)\n\nAdd 11: \\(x = 11y + 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 13\\).",
+    "options": [
+      "\\(x = \\frac{12}{y - 13}\\)",
+      "\\(x = 12y - 13\\)",
+      "\\(x = \\frac{y + 13}{12}\\)",
+      "\\(x = \\frac{y - 13}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 12x + 13\\)\n\nSubtract 13 from both sides: \\(y - 13 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 13}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(r\\) the subject of the formula \\(A = P\\left(1 + \\frac{r}{100}\\right)\\).",
+    "options": [
+      "\\(r = \\frac{100A}{P}\\)",
+      "\\(r = 100\\left(\\frac{A}{P} - 1\\right)\\)",
+      "\\(r = 100\\left(\\frac{P}{A} - 1\\right)\\)",
+      "\\(r = \\frac{A - P}{100}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Divide by \\(P\\), subtract 1, then multiply by 100.\n\nThis gives \\(r = 100\\left(\\frac{A}{P} - 1\\right)\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 5}{5}\\).",
+    "options": [
+      "\\(x = 5y - 5\\)",
+      "\\(x = 5y + 5\\)",
+      "\\(x = \\frac{y - 5}{5}\\)",
+      "\\(x = \\frac{5}{y} - 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 5\\)\n\nSubtract 5: \\(x = 5y - 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 11}{7}\\).",
+    "options": [
+      "\\(x = \\frac{7}{y} - 11\\)",
+      "\\(x = \\frac{y - 11}{7}\\)",
+      "\\(x = 7y + 11\\)",
+      "\\(x = 7y - 11\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 11\\)\n\nSubtract 11: \\(x = 7y - 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x + 2\\).",
+    "options": [
+      "\\(x = \\frac{y - 2}{7}\\)",
+      "\\(x = 7y - 2\\)",
+      "\\(x = \\frac{y + 2}{7}\\)",
+      "\\(x = \\frac{7}{y - 2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 7x + 2\\)\n\nSubtract 2 from both sides: \\(y - 2 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y - 2}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(h\\) the subject of the formula \\(V = \\frac{1}{3}\\pi r^{2} h\\).",
+    "options": [
+      "\\(h = \\frac{3V}{\\pi r^{2}}\\)",
+      "\\(h = \\frac{V}{3\\pi r^{2}}\\)",
+      "\\(h = \\frac{\\pi r^{2}}{3V}\\)",
+      "\\(h = \\frac{3V}{\\pi r}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 3, then divide by \\(\\pi r^{2}\\).\n\nThis gives \\(h = \\frac{3V}{\\pi r^{2}}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x + 20\\).",
+    "options": [
+      "\\(x = 4y - 20\\)",
+      "\\(x = \\frac{y + 20}{4}\\)",
+      "\\(x = \\frac{4}{y - 20}\\)",
+      "\\(x = \\frac{y - 20}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 4x + 20\\)\n\nSubtract 20 from both sides: \\(y - 20 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y - 20}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 8}{3}\\).",
+    "options": [
+      "\\(x = \\frac{3}{y} + 8\\)",
+      "\\(x = 3y - 8\\)",
+      "\\(x = 3y + 8\\)",
+      "\\(x = \\frac{y + 8}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 3: \\(3y = x - 8\\)\n\nAdd 8: \\(x = 3y + 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 11}{4}\\).",
+    "options": [
+      "\\(x = \\frac{4}{y} + 11\\)",
+      "\\(x = 4y - 11\\)",
+      "\\(x = \\frac{y + 11}{4}\\)",
+      "\\(x = 4y + 11\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 11\\)\n\nAdd 11: \\(x = 4y + 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x + 13\\).",
+    "options": [
+      "\\(x = 4y - 13\\)",
+      "\\(x = \\frac{y - 13}{4}\\)",
+      "\\(x = \\frac{4}{y - 13}\\)",
+      "\\(x = \\frac{y + 13}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x + 13\\)\n\nSubtract 13 from both sides: \\(y - 13 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y - 13}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 6\\).",
+    "options": [
+      "\\(x = \\frac{y + 6}{15}\\)",
+      "\\(x = \\frac{15}{y + 6}\\)",
+      "\\(x = 15y + 6\\)",
+      "\\(x = \\frac{y - 6}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 15x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 6}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 10}{6}\\).",
+    "options": [
+      "\\(x = 6y + 10\\)",
+      "\\(x = \\frac{6}{y} + 10\\)",
+      "\\(x = 6y - 10\\)",
+      "\\(x = \\frac{y + 10}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 6: \\(6y = x - 10\\)\n\nAdd 10: \\(x = 6y + 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x + 1\\).",
+    "options": [
+      "\\(x = \\frac{8}{y - 1}\\)",
+      "\\(x = \\frac{y + 1}{8}\\)",
+      "\\(x = 8y - 1\\)",
+      "\\(x = \\frac{y - 1}{8}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 8x + 1\\)\n\nSubtract 1 from both sides: \\(y - 1 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y - 1}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 7}{2}\\).",
+    "options": [
+      "\\(x = \\frac{2}{y} + 7\\)",
+      "\\(x = \\frac{y + 7}{2}\\)",
+      "\\(x = 2y - 7\\)",
+      "\\(x = 2y + 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 2: \\(2y = x - 7\\)\n\nAdd 7: \\(x = 2y + 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x + 4\\).",
+    "options": [
+      "\\(x = 8y - 4\\)",
+      "\\(x = \\frac{8}{y - 4}\\)",
+      "\\(x = \\frac{y - 4}{8}\\)",
+      "\\(x = \\frac{y + 4}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 8x + 4\\)\n\nSubtract 4 from both sides: \\(y - 4 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y - 4}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 15}{7}\\).",
+    "options": [
+      "\\(x = 7y + 15\\)",
+      "\\(x = \\frac{7}{y} + 15\\)",
+      "\\(x = 7y - 15\\)",
+      "\\(x = \\frac{y + 15}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 15\\)\n\nAdd 15: \\(x = 7y + 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 2}{5}\\).",
+    "options": [
+      "\\(x = \\frac{y - 2}{5}\\)",
+      "\\(x = 5y + 2\\)",
+      "\\(x = 5y - 2\\)",
+      "\\(x = \\frac{5}{y} - 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 2\\)\n\nSubtract 2: \\(x = 5y - 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 11}{3}\\).",
+    "options": [
+      "\\(x = 3y - 11\\)",
+      "\\(x = 3y + 11\\)",
+      "\\(x = \\frac{3}{y} + 11\\)",
+      "\\(x = \\frac{y + 11}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 3: \\(3y = x - 11\\)\n\nAdd 11: \\(x = 3y + 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 2}{12}\\).",
+    "options": [
+      "\\(x = \\frac{12}{y} + 2\\)",
+      "\\(x = 12y - 2\\)",
+      "\\(x = 12y + 2\\)",
+      "\\(x = \\frac{y + 2}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 12: \\(12y = x - 2\\)\n\nAdd 2: \\(x = 12y + 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 9\\).",
+    "options": [
+      "\\(x = \\frac{y + 9}{3}\\)",
+      "\\(x = \\frac{y - 9}{3}\\)",
+      "\\(x = 3y + 9\\)",
+      "\\(x = \\frac{3}{y + 9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 3x - 9\\)\n\nAdd 9 to both sides: \\(y + 9 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 9}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x + 15\\).",
+    "options": [
+      "\\(x = \\frac{2}{y - 15}\\)",
+      "\\(x = 2y - 15\\)",
+      "\\(x = \\frac{y - 15}{2}\\)",
+      "\\(x = \\frac{y + 15}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 2x + 15\\)\n\nSubtract 15 from both sides: \\(y - 15 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y - 15}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{9}\\).",
+    "options": [
+      "\\(x = 9y - 9\\)",
+      "\\(x = \\frac{y + 9}{9}\\)",
+      "\\(x = 9y + 9\\)",
+      "\\(x = \\frac{9}{y} + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 9: \\(9y = x - 9\\)\n\nAdd 9: \\(x = 9y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 18\\).",
+    "options": [
+      "\\(x = 3y + 18\\)",
+      "\\(x = \\frac{y + 18}{3}\\)",
+      "\\(x = \\frac{y - 18}{3}\\)",
+      "\\(x = \\frac{3}{y + 18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 3x - 18\\)\n\nAdd 18 to both sides: \\(y + 18 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 18}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 13}{2}\\).",
+    "options": [
+      "\\(x = \\frac{2}{y} - 13\\)",
+      "\\(x = 2y + 13\\)",
+      "\\(x = 2y - 13\\)",
+      "\\(x = \\frac{y - 13}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 13\\)\n\nSubtract 13: \\(x = 2y - 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 15\\).",
+    "options": [
+      "\\(x = \\frac{15}{y + 15}\\)",
+      "\\(x = \\frac{y - 15}{15}\\)",
+      "\\(x = \\frac{y + 15}{15}\\)",
+      "\\(x = 15y + 15\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 15x - 15\\)\n\nAdd 15 to both sides: \\(y + 15 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 15}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 9}{4}\\).",
+    "options": [
+      "\\(x = 4y + 9\\)",
+      "\\(x = \\frac{y - 9}{4}\\)",
+      "\\(x = \\frac{4}{y} - 9\\)",
+      "\\(x = 4y - 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 4: \\(4y = x + 9\\)\n\nSubtract 9: \\(x = 4y - 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x - 7\\).",
+    "options": [
+      "\\(x = 4y + 7\\)",
+      "\\(x = \\frac{y + 7}{4}\\)",
+      "\\(x = \\frac{y - 7}{4}\\)",
+      "\\(x = \\frac{4}{y + 7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x - 7\\)\n\nAdd 7 to both sides: \\(y + 7 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y + 7}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x - 11\\).",
+    "options": [
+      "\\(x = \\frac{y + 11}{7}\\)",
+      "\\(x = 7y + 11\\)",
+      "\\(x = \\frac{y - 11}{7}\\)",
+      "\\(x = \\frac{7}{y + 11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 7x - 11\\)\n\nAdd 11 to both sides: \\(y + 11 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y + 11}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x - 6\\).",
+    "options": [
+      "\\(x = 11y + 6\\)",
+      "\\(x = \\frac{y + 6}{11}\\)",
+      "\\(x = \\frac{11}{y + 6}\\)",
+      "\\(x = \\frac{y - 6}{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 11x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y + 6}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 10\\).",
+    "options": [
+      "\\(x = \\frac{y - 10}{15}\\)",
+      "\\(x = 15y + 10\\)",
+      "\\(x = \\frac{15}{y + 10}\\)",
+      "\\(x = \\frac{y + 10}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 15x - 10\\)\n\nAdd 10 to both sides: \\(y + 10 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 10}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x + 5\\).",
+    "options": [
+      "\\(x = \\frac{y + 5}{8}\\)",
+      "\\(x = \\frac{y - 5}{8}\\)",
+      "\\(x = 8y - 5\\)",
+      "\\(x = \\frac{8}{y - 5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 8x + 5\\)\n\nSubtract 5 from both sides: \\(y - 5 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y - 5}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x + 20\\).",
+    "options": [
+      "\\(x = 7y - 20\\)",
+      "\\(x = \\frac{y + 20}{7}\\)",
+      "\\(x = \\frac{7}{y - 20}\\)",
+      "\\(x = \\frac{y - 20}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 7x + 20\\)\n\nSubtract 20 from both sides: \\(y - 20 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y - 20}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x + 7\\).",
+    "options": [
+      "\\(x = \\frac{y - 7}{7}\\)",
+      "\\(x = \\frac{y + 7}{7}\\)",
+      "\\(x = \\frac{7}{y - 7}\\)",
+      "\\(x = 7y - 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 7x + 7\\)\n\nSubtract 7 from both sides: \\(y - 7 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y - 7}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x + 17\\).",
+    "options": [
+      "\\(x = \\frac{y + 17}{4}\\)",
+      "\\(x = 4y - 17\\)",
+      "\\(x = \\frac{y - 17}{4}\\)",
+      "\\(x = \\frac{4}{y - 17}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 4x + 17\\)\n\nSubtract 17 from both sides: \\(y - 17 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y - 17}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x + 1\\).",
+    "options": [
+      "\\(x = 13y - 1\\)",
+      "\\(x = \\frac{13}{y - 1}\\)",
+      "\\(x = \\frac{y - 1}{13}\\)",
+      "\\(x = \\frac{y + 1}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 13x + 1\\)\n\nSubtract 1 from both sides: \\(y - 1 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y - 1}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 13}{10}\\).",
+    "options": [
+      "\\(x = 10y + 13\\)",
+      "\\(x = \\frac{10}{y} + 13\\)",
+      "\\(x = 10y - 13\\)",
+      "\\(x = \\frac{y + 13}{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 13\\)\n\nAdd 13: \\(x = 10y + 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 6}{9}\\).",
+    "options": [
+      "\\(x = \\frac{9}{y} - 6\\)",
+      "\\(x = 9y + 6\\)",
+      "\\(x = 9y - 6\\)",
+      "\\(x = \\frac{y - 6}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 9: \\(9y = x + 6\\)\n\nSubtract 6: \\(x = 9y - 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x - 9\\).",
+    "options": [
+      "\\(x = \\frac{y + 9}{9}\\)",
+      "\\(x = \\frac{9}{y + 9}\\)",
+      "\\(x = 9y + 9\\)",
+      "\\(x = \\frac{y - 9}{9}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 9x - 9\\)\n\nAdd 9 to both sides: \\(y + 9 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y + 9}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 4\\).",
+    "options": [
+      "\\(x = \\frac{y + 4}{13}\\)",
+      "\\(x = \\frac{13}{y + 4}\\)",
+      "\\(x = 13y + 4\\)",
+      "\\(x = \\frac{y - 4}{13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 13x - 4\\)\n\nAdd 4 to both sides: \\(y + 4 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 4}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x + 18\\).",
+    "options": [
+      "\\(x = 13y - 18\\)",
+      "\\(x = \\frac{y + 18}{13}\\)",
+      "\\(x = \\frac{13}{y - 18}\\)",
+      "\\(x = \\frac{y - 18}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x + 18\\)\n\nSubtract 18 from both sides: \\(y - 18 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y - 18}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 5\\).",
+    "options": [
+      "\\(x = \\frac{y + 5}{5}\\)",
+      "\\(x = 5y + 5\\)",
+      "\\(x = \\frac{y - 5}{5}\\)",
+      "\\(x = \\frac{5}{y + 5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 5x - 5\\)\n\nAdd 5 to both sides: \\(y + 5 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 5}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x - 17\\).",
+    "options": [
+      "\\(x = \\frac{y + 17}{7}\\)",
+      "\\(x = \\frac{y - 17}{7}\\)",
+      "\\(x = 7y + 17\\)",
+      "\\(x = \\frac{7}{y + 17}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 7x - 17\\)\n\nAdd 17 to both sides: \\(y + 17 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y + 17}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 7\\).",
+    "options": [
+      "\\(x = \\frac{15}{y + 7}\\)",
+      "\\(x = \\frac{y - 7}{15}\\)",
+      "\\(x = 15y + 7\\)",
+      "\\(x = \\frac{y + 7}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 15x - 7\\)\n\nAdd 7 to both sides: \\(y + 7 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 7}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 2}{4}\\).",
+    "options": [
+      "\\(x = 4y + 2\\)",
+      "\\(x = \\frac{y + 2}{4}\\)",
+      "\\(x = \\frac{4}{y} + 2\\)",
+      "\\(x = 4y - 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 2\\)\n\nAdd 2: \\(x = 4y + 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x + 17\\).",
+    "options": [
+      "\\(x = \\frac{y + 17}{15}\\)",
+      "\\(x = \\frac{y - 17}{15}\\)",
+      "\\(x = \\frac{15}{y - 17}\\)",
+      "\\(x = 15y - 17\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 15x + 17\\)\n\nSubtract 17 from both sides: \\(y - 17 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y - 17}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 1}{4}\\).",
+    "options": [
+      "\\(x = 4y - 1\\)",
+      "\\(x = 4y + 1\\)",
+      "\\(x = \\frac{y - 1}{4}\\)",
+      "\\(x = \\frac{4}{y} - 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 4: \\(4y = x + 1\\)\n\nSubtract 1: \\(x = 4y - 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x - 5\\).",
+    "options": [
+      "\\(x = 8y + 5\\)",
+      "\\(x = \\frac{8}{y + 5}\\)",
+      "\\(x = \\frac{y + 5}{8}\\)",
+      "\\(x = \\frac{y - 5}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 8x - 5\\)\n\nAdd 5 to both sides: \\(y + 5 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y + 5}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 3}{3}\\).",
+    "options": [
+      "\\(x = \\frac{y - 3}{3}\\)",
+      "\\(x = 3y - 3\\)",
+      "\\(x = \\frac{3}{y} - 3\\)",
+      "\\(x = 3y + 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 3\\)\n\nSubtract 3: \\(x = 3y - 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 9}{5}\\).",
+    "options": [
+      "\\(x = 5y + 9\\)",
+      "\\(x = \\frac{y - 9}{5}\\)",
+      "\\(x = \\frac{5}{y} - 9\\)",
+      "\\(x = 5y - 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 9\\)\n\nSubtract 9: \\(x = 5y - 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 5}{7}\\).",
+    "options": [
+      "\\(x = 7y - 5\\)",
+      "\\(x = \\frac{y + 5}{7}\\)",
+      "\\(x = \\frac{7}{y} + 5\\)",
+      "\\(x = 7y + 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 5\\)\n\nAdd 5: \\(x = 7y + 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 16\\).",
+    "options": [
+      "\\(x = \\frac{y + 16}{14}\\)",
+      "\\(x = \\frac{14}{y + 16}\\)",
+      "\\(x = 14y + 16\\)",
+      "\\(x = \\frac{y - 16}{14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 14x - 16\\)\n\nAdd 16 to both sides: \\(y + 16 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 16}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{12}\\).",
+    "options": [
+      "\\(x = \\frac{y + 9}{12}\\)",
+      "\\(x = \\frac{12}{y} + 9\\)",
+      "\\(x = 12y - 9\\)",
+      "\\(x = 12y + 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 12: \\(12y = x - 9\\)\n\nAdd 9: \\(x = 12y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x - 11\\).",
+    "options": [
+      "\\(x = 8y + 11\\)",
+      "\\(x = \\frac{8}{y + 11}\\)",
+      "\\(x = \\frac{y + 11}{8}\\)",
+      "\\(x = \\frac{y - 11}{8}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 8x - 11\\)\n\nAdd 11 to both sides: \\(y + 11 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y + 11}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x - 14\\).",
+    "options": [
+      "\\(x = 11y + 14\\)",
+      "\\(x = \\frac{11}{y + 14}\\)",
+      "\\(x = \\frac{y - 14}{11}\\)",
+      "\\(x = \\frac{y + 14}{11}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 11x - 14\\)\n\nAdd 14 to both sides: \\(y + 14 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y + 14}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 15\\).",
+    "options": [
+      "\\(x = 13y + 15\\)",
+      "\\(x = \\frac{13}{y + 15}\\)",
+      "\\(x = \\frac{y + 15}{13}\\)",
+      "\\(x = \\frac{y - 15}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 13x - 15\\)\n\nAdd 15 to both sides: \\(y + 15 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 15}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 10}{12}\\).",
+    "options": [
+      "\\(x = 12y + 10\\)",
+      "\\(x = 12y - 10\\)",
+      "\\(x = \\frac{y - 10}{12}\\)",
+      "\\(x = \\frac{12}{y} - 10\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 12: \\(12y = x + 10\\)\n\nSubtract 10: \\(x = 12y - 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 15}{2}\\).",
+    "options": [
+      "\\(x = \\frac{y - 15}{2}\\)",
+      "\\(x = 2y - 15\\)",
+      "\\(x = \\frac{2}{y} - 15\\)",
+      "\\(x = 2y + 15\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 15\\)\n\nSubtract 15: \\(x = 2y - 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 6x - 6\\).",
+    "options": [
+      "\\(x = \\frac{6}{y + 6}\\)",
+      "\\(x = \\frac{y + 6}{6}\\)",
+      "\\(x = 6y + 6\\)",
+      "\\(x = \\frac{y - 6}{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 6x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 6x\\)\n\nDivide both sides by 6: \\(x = \\frac{y + 6}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 4\\).",
+    "options": [
+      "\\(x = \\frac{y + 4}{12}\\)",
+      "\\(x = \\frac{12}{y - 4}\\)",
+      "\\(x = \\frac{y - 4}{12}\\)",
+      "\\(x = 12y - 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 12x + 4\\)\n\nSubtract 4 from both sides: \\(y - 4 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 4}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 12}{4}\\).",
+    "options": [
+      "\\(x = \\frac{4}{y} + 12\\)",
+      "\\(x = 4y + 12\\)",
+      "\\(x = \\frac{y + 12}{4}\\)",
+      "\\(x = 4y - 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 12\\)\n\nAdd 12: \\(x = 4y + 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 4}{4}\\).",
+    "options": [
+      "\\(x = \\frac{4}{y} + 4\\)",
+      "\\(x = 4y + 4\\)",
+      "\\(x = 4y - 4\\)",
+      "\\(x = \\frac{y + 4}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 4\\)\n\nAdd 4: \\(x = 4y + 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 13}{12}\\).",
+    "options": [
+      "\\(x = 12y - 13\\)",
+      "\\(x = 12y + 13\\)",
+      "\\(x = \\frac{12}{y} + 13\\)",
+      "\\(x = \\frac{y + 13}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 12: \\(12y = x - 13\\)\n\nAdd 13: \\(x = 12y + 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 8}{8}\\).",
+    "options": [
+      "\\(x = \\frac{8}{y} - 8\\)",
+      "\\(x = 8y - 8\\)",
+      "\\(x = \\frac{y - 8}{8}\\)",
+      "\\(x = 8y + 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 8\\)\n\nSubtract 8: \\(x = 8y - 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 15\\).",
+    "options": [
+      "\\(x = \\frac{y - 15}{12}\\)",
+      "\\(x = \\frac{12}{y - 15}\\)",
+      "\\(x = \\frac{y + 15}{12}\\)",
+      "\\(x = 12y - 15\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 12x + 15\\)\n\nSubtract 15 from both sides: \\(y - 15 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 15}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 3}{4}\\).",
+    "options": [
+      "\\(x = \\frac{y + 3}{4}\\)",
+      "\\(x = \\frac{4}{y} + 3\\)",
+      "\\(x = 4y - 3\\)",
+      "\\(x = 4y + 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 3\\)\n\nAdd 3: \\(x = 4y + 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 12}{2}\\).",
+    "options": [
+      "\\(x = 2y - 12\\)",
+      "\\(x = 2y + 12\\)",
+      "\\(x = \\frac{y - 12}{2}\\)",
+      "\\(x = \\frac{2}{y} - 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 12\\)\n\nSubtract 12: \\(x = 2y - 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 19\\).",
+    "options": [
+      "\\(x = \\frac{12}{y - 19}\\)",
+      "\\(x = \\frac{y + 19}{12}\\)",
+      "\\(x = 12y - 19\\)",
+      "\\(x = \\frac{y - 19}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 12x + 19\\)\n\nSubtract 19 from both sides: \\(y - 19 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 19}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 10x - 6\\).",
+    "options": [
+      "\\(x = 10y + 6\\)",
+      "\\(x = \\frac{y - 6}{10}\\)",
+      "\\(x = \\frac{y + 6}{10}\\)",
+      "\\(x = \\frac{10}{y + 6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 10x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 10x\\)\n\nDivide both sides by 10: \\(x = \\frac{y + 6}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 11}{8}\\).",
+    "options": [
+      "\\(x = \\frac{y + 11}{8}\\)",
+      "\\(x = 8y + 11\\)",
+      "\\(x = \\frac{8}{y} + 11\\)",
+      "\\(x = 8y - 11\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 8: \\(8y = x - 11\\)\n\nAdd 11: \\(x = 8y + 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x + 8\\).",
+    "options": [
+      "\\(x = \\frac{y - 8}{5}\\)",
+      "\\(x = \\frac{5}{y - 8}\\)",
+      "\\(x = \\frac{y + 8}{5}\\)",
+      "\\(x = 5y - 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 5x + 8\\)\n\nSubtract 8 from both sides: \\(y - 8 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y - 8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x + 16\\).",
+    "options": [
+      "\\(x = \\frac{8}{y - 16}\\)",
+      "\\(x = \\frac{y - 16}{8}\\)",
+      "\\(x = 8y - 16\\)",
+      "\\(x = \\frac{y + 16}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 8x + 16\\)\n\nSubtract 16 from both sides: \\(y - 16 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y - 16}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 1}{4}\\).",
+    "options": [
+      "\\(x = 4y - 1\\)",
+      "\\(x = \\frac{y + 1}{4}\\)",
+      "\\(x = 4y + 1\\)",
+      "\\(x = \\frac{4}{y} + 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 1\\)\n\nAdd 1: \\(x = 4y + 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 5}{12}\\).",
+    "options": [
+      "\\(x = 12y - 5\\)",
+      "\\(x = \\frac{y - 5}{12}\\)",
+      "\\(x = \\frac{12}{y} - 5\\)",
+      "\\(x = 12y + 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 12: \\(12y = x + 5\\)\n\nSubtract 5: \\(x = 12y - 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 14}{12}\\).",
+    "options": [
+      "\\(x = \\frac{12}{y} + 14\\)",
+      "\\(x = 12y - 14\\)",
+      "\\(x = \\frac{y + 14}{12}\\)",
+      "\\(x = 12y + 14\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 12: \\(12y = x - 14\\)\n\nAdd 14: \\(x = 12y + 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x + 3\\).",
+    "options": [
+      "\\(x = 4y - 3\\)",
+      "\\(x = \\frac{4}{y - 3}\\)",
+      "\\(x = \\frac{y - 3}{4}\\)",
+      "\\(x = \\frac{y + 3}{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 4x + 3\\)\n\nSubtract 3 from both sides: \\(y - 3 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y - 3}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x + 7\\).",
+    "options": [
+      "\\(x = \\frac{14}{y - 7}\\)",
+      "\\(x = \\frac{y - 7}{14}\\)",
+      "\\(x = \\frac{y + 7}{14}\\)",
+      "\\(x = 14y - 7\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 14x + 7\\)\n\nSubtract 7 from both sides: \\(y - 7 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y - 7}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 3}{5}\\).",
+    "options": [
+      "\\(x = \\frac{y - 3}{5}\\)",
+      "\\(x = 5y - 3\\)",
+      "\\(x = \\frac{5}{y} - 3\\)",
+      "\\(x = 5y + 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 3\\)\n\nSubtract 3: \\(x = 5y - 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 3\\).",
+    "options": [
+      "\\(x = \\frac{14}{y + 3}\\)",
+      "\\(x = \\frac{y - 3}{14}\\)",
+      "\\(x = 14y + 3\\)",
+      "\\(x = \\frac{y + 3}{14}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 14x - 3\\)\n\nAdd 3 to both sides: \\(y + 3 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 3}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x - 3\\).",
+    "options": [
+      "\\(x = \\frac{y + 3}{11}\\)",
+      "\\(x = \\frac{11}{y + 3}\\)",
+      "\\(x = 11y + 3\\)",
+      "\\(x = \\frac{y - 3}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 11x - 3\\)\n\nAdd 3 to both sides: \\(y + 3 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y + 3}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 17\\).",
+    "options": [
+      "\\(x = \\frac{12}{y + 17}\\)",
+      "\\(x = \\frac{y - 17}{12}\\)",
+      "\\(x = 12y + 17\\)",
+      "\\(x = \\frac{y + 17}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 12x - 17\\)\n\nAdd 17 to both sides: \\(y + 17 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 17}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x - 12\\).",
+    "options": [
+      "\\(x = \\frac{y - 12}{9}\\)",
+      "\\(x = 9y + 12\\)",
+      "\\(x = \\frac{y + 12}{9}\\)",
+      "\\(x = \\frac{9}{y + 12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 9x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y + 12}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x - 3\\).",
+    "options": [
+      "\\(x = \\frac{y + 3}{8}\\)",
+      "\\(x = \\frac{y - 3}{8}\\)",
+      "\\(x = \\frac{8}{y + 3}\\)",
+      "\\(x = 8y + 3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 8x - 3\\)\n\nAdd 3 to both sides: \\(y + 3 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y + 3}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 10}{10}\\).",
+    "options": [
+      "\\(x = 10y + 10\\)",
+      "\\(x = 10y - 10\\)",
+      "\\(x = \\frac{y + 10}{10}\\)",
+      "\\(x = \\frac{10}{y} + 10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 10\\)\n\nAdd 10: \\(x = 10y + 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x + 17\\).",
+    "options": [
+      "\\(x = \\frac{5}{y - 17}\\)",
+      "\\(x = 5y - 17\\)",
+      "\\(x = \\frac{y + 17}{5}\\)",
+      "\\(x = \\frac{y - 17}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 5x + 17\\)\n\nSubtract 17 from both sides: \\(y - 17 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y - 17}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 15}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} + 15\\)",
+      "\\(x = \\frac{y + 15}{11}\\)",
+      "\\(x = 11y + 15\\)",
+      "\\(x = 11y - 15\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 11: \\(11y = x - 15\\)\n\nAdd 15: \\(x = 11y + 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x + 19\\).",
+    "options": [
+      "\\(x = \\frac{2}{y - 19}\\)",
+      "\\(x = \\frac{y + 19}{2}\\)",
+      "\\(x = 2y - 19\\)",
+      "\\(x = \\frac{y - 19}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 2x + 19\\)\n\nSubtract 19 from both sides: \\(y - 19 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y - 19}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 14\\).",
+    "options": [
+      "\\(x = \\frac{15}{y + 14}\\)",
+      "\\(x = 15y + 14\\)",
+      "\\(x = \\frac{y - 14}{15}\\)",
+      "\\(x = \\frac{y + 14}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 15x - 14\\)\n\nAdd 14 to both sides: \\(y + 14 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 14}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 12}{5}\\).",
+    "options": [
+      "\\(x = 5y - 12\\)",
+      "\\(x = 5y + 12\\)",
+      "\\(x = \\frac{5}{y} - 12\\)",
+      "\\(x = \\frac{y - 12}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 12\\)\n\nSubtract 12: \\(x = 5y - 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 11}{10}\\).",
+    "options": [
+      "\\(x = \\frac{y - 11}{10}\\)",
+      "\\(x = \\frac{10}{y} - 11\\)",
+      "\\(x = 10y + 11\\)",
+      "\\(x = 10y - 11\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 10: \\(10y = x + 11\\)\n\nSubtract 11: \\(x = 10y - 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x + 5\\).",
+    "options": [
+      "\\(x = 9y - 5\\)",
+      "\\(x = \\frac{y - 5}{9}\\)",
+      "\\(x = \\frac{9}{y - 5}\\)",
+      "\\(x = \\frac{y + 5}{9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 9x + 5\\)\n\nSubtract 5 from both sides: \\(y - 5 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y - 5}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x + 14\\).",
+    "options": [
+      "\\(x = \\frac{15}{y - 14}\\)",
+      "\\(x = \\frac{y + 14}{15}\\)",
+      "\\(x = 15y - 14\\)",
+      "\\(x = \\frac{y - 14}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 15x + 14\\)\n\nSubtract 14 from both sides: \\(y - 14 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y - 14}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 6}{9}\\).",
+    "options": [
+      "\\(x = 9y + 6\\)",
+      "\\(x = 9y - 6\\)",
+      "\\(x = \\frac{y + 6}{9}\\)",
+      "\\(x = \\frac{9}{y} + 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 9: \\(9y = x - 6\\)\n\nAdd 6: \\(x = 9y + 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x - 17\\).",
+    "options": [
+      "\\(x = \\frac{y - 17}{2}\\)",
+      "\\(x = \\frac{2}{y + 17}\\)",
+      "\\(x = 2y + 17\\)",
+      "\\(x = \\frac{y + 17}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 2x - 17\\)\n\nAdd 17 to both sides: \\(y + 17 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y + 17}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 10x + 12\\).",
+    "options": [
+      "\\(x = \\frac{10}{y - 12}\\)",
+      "\\(x = 10y - 12\\)",
+      "\\(x = \\frac{y + 12}{10}\\)",
+      "\\(x = \\frac{y - 12}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 10x + 12\\)\n\nSubtract 12 from both sides: \\(y - 12 = 10x\\)\n\nDivide both sides by 10: \\(x = \\frac{y - 12}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x + 20\\).",
+    "options": [
+      "\\(x = 5y - 20\\)",
+      "\\(x = \\frac{5}{y - 20}\\)",
+      "\\(x = \\frac{y + 20}{5}\\)",
+      "\\(x = \\frac{y - 20}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 5x + 20\\)\n\nSubtract 20 from both sides: \\(y - 20 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y - 20}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 6\\).",
+    "options": [
+      "\\(x = 12y - 6\\)",
+      "\\(x = \\frac{y - 6}{12}\\)",
+      "\\(x = \\frac{y + 6}{12}\\)",
+      "\\(x = \\frac{12}{y - 6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 12x + 6\\)\n\nSubtract 6 from both sides: \\(y - 6 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 6}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 17\\).",
+    "options": [
+      "\\(x = 5y + 17\\)",
+      "\\(x = \\frac{5}{y + 17}\\)",
+      "\\(x = \\frac{y + 17}{5}\\)",
+      "\\(x = \\frac{y - 17}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 5x - 17\\)\n\nAdd 17 to both sides: \\(y + 17 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 17}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x + 8\\).",
+    "options": [
+      "\\(x = \\frac{y - 8}{15}\\)",
+      "\\(x = \\frac{15}{y - 8}\\)",
+      "\\(x = 15y - 8\\)",
+      "\\(x = \\frac{y + 8}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 15x + 8\\)\n\nSubtract 8 from both sides: \\(y - 8 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y - 8}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{2}\\).",
+    "options": [
+      "\\(x = \\frac{2}{y} + 9\\)",
+      "\\(x = 2y + 9\\)",
+      "\\(x = \\frac{y + 9}{2}\\)",
+      "\\(x = 2y - 9\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 2: \\(2y = x - 9\\)\n\nAdd 9: \\(x = 2y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x - 10\\).",
+    "options": [
+      "\\(x = \\frac{y - 10}{8}\\)",
+      "\\(x = \\frac{y + 10}{8}\\)",
+      "\\(x = 8y + 10\\)",
+      "\\(x = \\frac{8}{y + 10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 8x - 10\\)\n\nAdd 10 to both sides: \\(y + 10 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y + 10}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 8}{3}\\).",
+    "options": [
+      "\\(x = \\frac{3}{y} - 8\\)",
+      "\\(x = 3y - 8\\)",
+      "\\(x = 3y + 8\\)",
+      "\\(x = \\frac{y - 8}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 8\\)\n\nSubtract 8: \\(x = 3y - 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 6}{8}\\).",
+    "options": [
+      "\\(x = 8y - 6\\)",
+      "\\(x = 8y + 6\\)",
+      "\\(x = \\frac{8}{y} - 6\\)",
+      "\\(x = \\frac{y - 6}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 6\\)\n\nSubtract 6: \\(x = 8y - 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 15}{8}\\).",
+    "options": [
+      "\\(x = \\frac{y - 15}{8}\\)",
+      "\\(x = 8y + 15\\)",
+      "\\(x = 8y - 15\\)",
+      "\\(x = \\frac{8}{y} - 15\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 15\\)\n\nSubtract 15: \\(x = 8y - 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x + 9\\).",
+    "options": [
+      "\\(x = 2y - 9\\)",
+      "\\(x = \\frac{y + 9}{2}\\)",
+      "\\(x = \\frac{2}{y - 9}\\)",
+      "\\(x = \\frac{y - 9}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 2x + 9\\)\n\nSubtract 9 from both sides: \\(y - 9 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y - 9}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 14}{4}\\).",
+    "options": [
+      "\\(x = 4y - 14\\)",
+      "\\(x = \\frac{y - 14}{4}\\)",
+      "\\(x = \\frac{4}{y} - 14\\)",
+      "\\(x = 4y + 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 4: \\(4y = x + 14\\)\n\nSubtract 14: \\(x = 4y - 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 6\\).",
+    "options": [
+      "\\(x = \\frac{y + 6}{12}\\)",
+      "\\(x = \\frac{12}{y + 6}\\)",
+      "\\(x = 12y + 6\\)",
+      "\\(x = \\frac{y - 6}{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 12x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 6}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 12}{9}\\).",
+    "options": [
+      "\\(x = \\frac{y + 12}{9}\\)",
+      "\\(x = \\frac{9}{y} + 12\\)",
+      "\\(x = 9y - 12\\)",
+      "\\(x = 9y + 12\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 9: \\(9y = x - 12\\)\n\nAdd 12: \\(x = 9y + 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 12}{3}\\).",
+    "options": [
+      "\\(x = \\frac{y + 12}{3}\\)",
+      "\\(x = 3y - 12\\)",
+      "\\(x = \\frac{3}{y} + 12\\)",
+      "\\(x = 3y + 12\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 3: \\(3y = x - 12\\)\n\nAdd 12: \\(x = 3y + 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 5}{9}\\).",
+    "options": [
+      "\\(x = 9y + 5\\)",
+      "\\(x = 9y - 5\\)",
+      "\\(x = \\frac{y + 5}{9}\\)",
+      "\\(x = \\frac{9}{y} + 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 9: \\(9y = x - 5\\)\n\nAdd 5: \\(x = 9y + 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 13\\).",
+    "options": [
+      "\\(x = 13y + 13\\)",
+      "\\(x = \\frac{13}{y + 13}\\)",
+      "\\(x = \\frac{y - 13}{13}\\)",
+      "\\(x = \\frac{y + 13}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x - 13\\)\n\nAdd 13 to both sides: \\(y + 13 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 13}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 13}{6}\\).",
+    "options": [
+      "\\(x = 6y + 13\\)",
+      "\\(x = \\frac{6}{y} - 13\\)",
+      "\\(x = \\frac{y - 13}{6}\\)",
+      "\\(x = 6y - 13\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 6: \\(6y = x + 13\\)\n\nSubtract 13: \\(x = 6y - 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 14}{10}\\).",
+    "options": [
+      "\\(x = 10y + 14\\)",
+      "\\(x = \\frac{10}{y} + 14\\)",
+      "\\(x = 10y - 14\\)",
+      "\\(x = \\frac{y + 14}{10}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 10: \\(10y = x - 14\\)\n\nAdd 14: \\(x = 10y + 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 20\\).",
+    "options": [
+      "\\(x = \\frac{13}{y + 20}\\)",
+      "\\(x = \\frac{y - 20}{13}\\)",
+      "\\(x = \\frac{y + 20}{13}\\)",
+      "\\(x = 13y + 20\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 13x - 20\\)\n\nAdd 20 to both sides: \\(y + 20 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 20}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 11}{2}\\).",
+    "options": [
+      "\\(x = \\frac{y + 11}{2}\\)",
+      "\\(x = \\frac{2}{y} + 11\\)",
+      "\\(x = 2y + 11\\)",
+      "\\(x = 2y - 11\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 2: \\(2y = x - 11\\)\n\nAdd 11: \\(x = 2y + 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 4}{2}\\).",
+    "options": [
+      "\\(x = \\frac{y - 4}{2}\\)",
+      "\\(x = 2y - 4\\)",
+      "\\(x = \\frac{2}{y} - 4\\)",
+      "\\(x = 2y + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 4\\)\n\nSubtract 4: \\(x = 2y - 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 12\\).",
+    "options": [
+      "\\(x = \\frac{y - 12}{3}\\)",
+      "\\(x = \\frac{3}{y + 12}\\)",
+      "\\(x = \\frac{y + 12}{3}\\)",
+      "\\(x = 3y + 12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 3x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 12}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{5}\\).",
+    "options": [
+      "\\(x = \\frac{5}{y} + 9\\)",
+      "\\(x = 5y - 9\\)",
+      "\\(x = \\frac{y + 9}{5}\\)",
+      "\\(x = 5y + 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 5: \\(5y = x - 9\\)\n\nAdd 9: \\(x = 5y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x + 10\\).",
+    "options": [
+      "\\(x = \\frac{y - 10}{11}\\)",
+      "\\(x = 11y - 10\\)",
+      "\\(x = \\frac{11}{y - 10}\\)",
+      "\\(x = \\frac{y + 10}{11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 11x + 10\\)\n\nSubtract 10 from both sides: \\(y - 10 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y - 10}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 20\\).",
+    "options": [
+      "\\(x = \\frac{12}{y + 20}\\)",
+      "\\(x = \\frac{y + 20}{12}\\)",
+      "\\(x = 12y + 20\\)",
+      "\\(x = \\frac{y - 20}{12}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 12x - 20\\)\n\nAdd 20 to both sides: \\(y + 20 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 20}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 11}{6}\\).",
+    "options": [
+      "\\(x = 6y + 11\\)",
+      "\\(x = 6y - 11\\)",
+      "\\(x = \\frac{6}{y} + 11\\)",
+      "\\(x = \\frac{y + 11}{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 6: \\(6y = x - 11\\)\n\nAdd 11: \\(x = 6y + 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x + 20\\).",
+    "options": [
+      "\\(x = \\frac{y - 20}{2}\\)",
+      "\\(x = \\frac{2}{y - 20}\\)",
+      "\\(x = \\frac{y + 20}{2}\\)",
+      "\\(x = 2y - 20\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 2x + 20\\)\n\nSubtract 20 from both sides: \\(y - 20 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y - 20}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x - 4\\).",
+    "options": [
+      "\\(x = \\frac{y + 4}{7}\\)",
+      "\\(x = 7y + 4\\)",
+      "\\(x = \\frac{y - 4}{7}\\)",
+      "\\(x = \\frac{7}{y + 4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 7x - 4\\)\n\nAdd 4 to both sides: \\(y + 4 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y + 4}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x + 8\\).",
+    "options": [
+      "\\(x = 9y - 8\\)",
+      "\\(x = \\frac{9}{y - 8}\\)",
+      "\\(x = \\frac{y - 8}{9}\\)",
+      "\\(x = \\frac{y + 8}{9}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 9x + 8\\)\n\nSubtract 8 from both sides: \\(y - 8 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y - 8}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x - 6\\).",
+    "options": [
+      "\\(x = 8y + 6\\)",
+      "\\(x = \\frac{y + 6}{8}\\)",
+      "\\(x = \\frac{y - 6}{8}\\)",
+      "\\(x = \\frac{8}{y + 6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 8x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y + 6}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x + 19\\).",
+    "options": [
+      "\\(x = 4y - 19\\)",
+      "\\(x = \\frac{y - 19}{4}\\)",
+      "\\(x = \\frac{y + 19}{4}\\)",
+      "\\(x = \\frac{4}{y - 19}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x + 19\\)\n\nSubtract 19 from both sides: \\(y - 19 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y - 19}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x - 2\\).",
+    "options": [
+      "\\(x = \\frac{y + 2}{8}\\)",
+      "\\(x = 8y + 2\\)",
+      "\\(x = \\frac{8}{y + 2}\\)",
+      "\\(x = \\frac{y - 2}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 8x - 2\\)\n\nAdd 2 to both sides: \\(y + 2 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y + 2}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 7}{3}\\).",
+    "options": [
+      "\\(x = 3y + 7\\)",
+      "\\(x = \\frac{3}{y} - 7\\)",
+      "\\(x = \\frac{y - 7}{3}\\)",
+      "\\(x = 3y - 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 7\\)\n\nSubtract 7: \\(x = 3y - 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 3\\).",
+    "options": [
+      "\\(x = 13y + 3\\)",
+      "\\(x = \\frac{13}{y + 3}\\)",
+      "\\(x = \\frac{y + 3}{13}\\)",
+      "\\(x = \\frac{y - 3}{13}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 13x - 3\\)\n\nAdd 3 to both sides: \\(y + 3 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 3}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 10\\).",
+    "options": [
+      "\\(x = 14y + 10\\)",
+      "\\(x = \\frac{y + 10}{14}\\)",
+      "\\(x = \\frac{14}{y + 10}\\)",
+      "\\(x = \\frac{y - 10}{14}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 14x - 10\\)\n\nAdd 10 to both sides: \\(y + 10 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 10}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 11\\).",
+    "options": [
+      "\\(x = \\frac{5}{y + 11}\\)",
+      "\\(x = \\frac{y - 11}{5}\\)",
+      "\\(x = \\frac{y + 11}{5}\\)",
+      "\\(x = 5y + 11\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 5x - 11\\)\n\nAdd 11 to both sides: \\(y + 11 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 11}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x + 1\\).",
+    "options": [
+      "\\(x = \\frac{9}{y - 1}\\)",
+      "\\(x = \\frac{y + 1}{9}\\)",
+      "\\(x = \\frac{y - 1}{9}\\)",
+      "\\(x = 9y - 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 9x + 1\\)\n\nSubtract 1 from both sides: \\(y - 1 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y - 1}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 2}{3}\\).",
+    "options": [
+      "\\(x = \\frac{y - 2}{3}\\)",
+      "\\(x = 3y + 2\\)",
+      "\\(x = 3y - 2\\)",
+      "\\(x = \\frac{3}{y} - 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 2\\)\n\nSubtract 2: \\(x = 3y - 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x - 14\\).",
+    "options": [
+      "\\(x = 9y + 14\\)",
+      "\\(x = \\frac{y - 14}{9}\\)",
+      "\\(x = \\frac{9}{y + 14}\\)",
+      "\\(x = \\frac{y + 14}{9}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 9x - 14\\)\n\nAdd 14 to both sides: \\(y + 14 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y + 14}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x - 1\\).",
+    "options": [
+      "\\(x = \\frac{y + 1}{9}\\)",
+      "\\(x = \\frac{y - 1}{9}\\)",
+      "\\(x = \\frac{9}{y + 1}\\)",
+      "\\(x = 9y + 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 9x - 1\\)\n\nAdd 1 to both sides: \\(y + 1 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y + 1}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 8}{5}\\).",
+    "options": [
+      "\\(x = 5y + 8\\)",
+      "\\(x = \\frac{5}{y} + 8\\)",
+      "\\(x = 5y - 8\\)",
+      "\\(x = \\frac{y + 8}{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 5: \\(5y = x - 8\\)\n\nAdd 8: \\(x = 5y + 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x - 15\\).",
+    "options": [
+      "\\(x = 7y + 15\\)",
+      "\\(x = \\frac{7}{y + 15}\\)",
+      "\\(x = \\frac{y - 15}{7}\\)",
+      "\\(x = \\frac{y + 15}{7}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 7x - 15\\)\n\nAdd 15 to both sides: \\(y + 15 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y + 15}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 4}{4}\\).",
+    "options": [
+      "\\(x = 4y + 4\\)",
+      "\\(x = \\frac{4}{y} - 4\\)",
+      "\\(x = \\frac{y - 4}{4}\\)",
+      "\\(x = 4y - 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 4: \\(4y = x + 4\\)\n\nSubtract 4: \\(x = 4y - 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 10x + 11\\).",
+    "options": [
+      "\\(x = \\frac{y - 11}{10}\\)",
+      "\\(x = 10y - 11\\)",
+      "\\(x = \\frac{y + 11}{10}\\)",
+      "\\(x = \\frac{10}{y - 11}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 10x + 11\\)\n\nSubtract 11 from both sides: \\(y - 11 = 10x\\)\n\nDivide both sides by 10: \\(x = \\frac{y - 11}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 10\\).",
+    "options": [
+      "\\(x = \\frac{y - 10}{12}\\)",
+      "\\(x = 12y + 10\\)",
+      "\\(x = \\frac{12}{y + 10}\\)",
+      "\\(x = \\frac{y + 10}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 12x - 10\\)\n\nAdd 10 to both sides: \\(y + 10 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 10}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 10x + 16\\).",
+    "options": [
+      "\\(x = \\frac{y - 16}{10}\\)",
+      "\\(x = \\frac{y + 16}{10}\\)",
+      "\\(x = \\frac{10}{y - 16}\\)",
+      "\\(x = 10y - 16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 10x + 16\\)\n\nSubtract 16 from both sides: \\(y - 16 = 10x\\)\n\nDivide both sides by 10: \\(x = \\frac{y - 16}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 3}{9}\\).",
+    "options": [
+      "\\(x = \\frac{y - 3}{9}\\)",
+      "\\(x = 9y - 3\\)",
+      "\\(x = 9y + 3\\)",
+      "\\(x = \\frac{9}{y} - 3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 9: \\(9y = x + 3\\)\n\nSubtract 3: \\(x = 9y - 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 2}{7}\\).",
+    "options": [
+      "\\(x = 7y - 2\\)",
+      "\\(x = 7y + 2\\)",
+      "\\(x = \\frac{7}{y} + 2\\)",
+      "\\(x = \\frac{y + 2}{7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 2\\)\n\nAdd 2: \\(x = 7y + 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x - 17\\).",
+    "options": [
+      "\\(x = 4y + 17\\)",
+      "\\(x = \\frac{y + 17}{4}\\)",
+      "\\(x = \\frac{y - 17}{4}\\)",
+      "\\(x = \\frac{4}{y + 17}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x - 17\\)\n\nAdd 17 to both sides: \\(y + 17 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y + 17}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 12\\).",
+    "options": [
+      "\\(x = \\frac{y + 12}{13}\\)",
+      "\\(x = 13y + 12\\)",
+      "\\(x = \\frac{y - 12}{13}\\)",
+      "\\(x = \\frac{13}{y + 12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 13x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 12}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 10}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} - 10\\)",
+      "\\(x = 11y + 10\\)",
+      "\\(x = 11y - 10\\)",
+      "\\(x = \\frac{y - 10}{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 10\\)\n\nSubtract 10: \\(x = 11y - 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x + 20\\).",
+    "options": [
+      "\\(x = \\frac{3}{y - 20}\\)",
+      "\\(x = \\frac{y - 20}{3}\\)",
+      "\\(x = 3y - 20\\)",
+      "\\(x = \\frac{y + 20}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 3x + 20\\)\n\nSubtract 20 from both sides: \\(y - 20 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y - 20}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x + 15\\).",
+    "options": [
+      "\\(x = 13y - 15\\)",
+      "\\(x = \\frac{13}{y - 15}\\)",
+      "\\(x = \\frac{y + 15}{13}\\)",
+      "\\(x = \\frac{y - 15}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x + 15\\)\n\nSubtract 15 from both sides: \\(y - 15 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y - 15}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 18\\).",
+    "options": [
+      "\\(x = 15y + 18\\)",
+      "\\(x = \\frac{15}{y + 18}\\)",
+      "\\(x = \\frac{y + 18}{15}\\)",
+      "\\(x = \\frac{y - 18}{15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 15x - 18\\)\n\nAdd 18 to both sides: \\(y + 18 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 18}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x + 18\\).",
+    "options": [
+      "\\(x = \\frac{3}{y - 18}\\)",
+      "\\(x = 3y - 18\\)",
+      "\\(x = \\frac{y - 18}{3}\\)",
+      "\\(x = \\frac{y + 18}{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 3x + 18\\)\n\nSubtract 18 from both sides: \\(y - 18 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y - 18}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 6}{6}\\).",
+    "options": [
+      "\\(x = \\frac{6}{y} + 6\\)",
+      "\\(x = 6y - 6\\)",
+      "\\(x = \\frac{y + 6}{6}\\)",
+      "\\(x = 6y + 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 6: \\(6y = x - 6\\)\n\nAdd 6: \\(x = 6y + 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 4}{3}\\).",
+    "options": [
+      "\\(x = \\frac{3}{y} - 4\\)",
+      "\\(x = 3y + 4\\)",
+      "\\(x = \\frac{y - 4}{3}\\)",
+      "\\(x = 3y - 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 3: \\(3y = x + 4\\)\n\nSubtract 4: \\(x = 3y - 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 8\\).",
+    "options": [
+      "\\(x = \\frac{y + 8}{5}\\)",
+      "\\(x = \\frac{y - 8}{5}\\)",
+      "\\(x = 5y + 8\\)",
+      "\\(x = \\frac{5}{y + 8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 5x - 8\\)\n\nAdd 8 to both sides: \\(y + 8 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 8}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 12\\).",
+    "options": [
+      "\\(x = \\frac{12}{y + 12}\\)",
+      "\\(x = 12y + 12\\)",
+      "\\(x = \\frac{y + 12}{12}\\)",
+      "\\(x = \\frac{y - 12}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 12x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 12}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 4}{11}\\).",
+    "options": [
+      "\\(x = 11y + 4\\)",
+      "\\(x = \\frac{y - 4}{11}\\)",
+      "\\(x = 11y - 4\\)",
+      "\\(x = \\frac{11}{y} - 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 4\\)\n\nSubtract 4: \\(x = 11y - 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 1}{5}\\).",
+    "options": [
+      "\\(x = 5y + 1\\)",
+      "\\(x = \\frac{y - 1}{5}\\)",
+      "\\(x = \\frac{5}{y} - 1\\)",
+      "\\(x = 5y - 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 1\\)\n\nSubtract 1: \\(x = 5y - 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x + 9\\).",
+    "options": [
+      "\\(x = 15y - 9\\)",
+      "\\(x = \\frac{15}{y - 9}\\)",
+      "\\(x = \\frac{y + 9}{15}\\)",
+      "\\(x = \\frac{y - 9}{15}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 15x + 9\\)\n\nSubtract 9 from both sides: \\(y - 9 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y - 9}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 2\\).",
+    "options": [
+      "\\(x = \\frac{12}{y + 2}\\)",
+      "\\(x = \\frac{y + 2}{12}\\)",
+      "\\(x = \\frac{y - 2}{12}\\)",
+      "\\(x = 12y + 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 12x - 2\\)\n\nAdd 2 to both sides: \\(y + 2 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 2}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 1}{7}\\).",
+    "options": [
+      "\\(x = 7y + 1\\)",
+      "\\(x = \\frac{7}{y} - 1\\)",
+      "\\(x = \\frac{y - 1}{7}\\)",
+      "\\(x = 7y - 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 1\\)\n\nSubtract 1: \\(x = 7y - 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x + 5\\).",
+    "options": [
+      "\\(x = \\frac{y + 5}{5}\\)",
+      "\\(x = \\frac{y - 5}{5}\\)",
+      "\\(x = 5y - 5\\)",
+      "\\(x = \\frac{5}{y - 5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 5x + 5\\)\n\nSubtract 5 from both sides: \\(y - 5 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y - 5}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 5}{8}\\).",
+    "options": [
+      "\\(x = 8y + 5\\)",
+      "\\(x = \\frac{y - 5}{8}\\)",
+      "\\(x = \\frac{8}{y} - 5\\)",
+      "\\(x = 8y - 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 5\\)\n\nSubtract 5: \\(x = 8y - 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x - 1\\).",
+    "options": [
+      "\\(x = \\frac{y - 1}{2}\\)",
+      "\\(x = \\frac{y + 1}{2}\\)",
+      "\\(x = \\frac{2}{y + 1}\\)",
+      "\\(x = 2y + 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 2x - 1\\)\n\nAdd 1 to both sides: \\(y + 1 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y + 1}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 1\\).",
+    "options": [
+      "\\(x = 15y + 1\\)",
+      "\\(x = \\frac{y - 1}{15}\\)",
+      "\\(x = \\frac{y + 1}{15}\\)",
+      "\\(x = \\frac{15}{y + 1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 15x - 1\\)\n\nAdd 1 to both sides: \\(y + 1 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 1}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 1}{8}\\).",
+    "options": [
+      "\\(x = \\frac{y + 1}{8}\\)",
+      "\\(x = 8y - 1\\)",
+      "\\(x = 8y + 1\\)",
+      "\\(x = \\frac{8}{y} + 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 8: \\(8y = x - 1\\)\n\nAdd 1: \\(x = 8y + 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x + 7\\).",
+    "options": [
+      "\\(x = 3y - 7\\)",
+      "\\(x = \\frac{y + 7}{3}\\)",
+      "\\(x = \\frac{y - 7}{3}\\)",
+      "\\(x = \\frac{3}{y - 7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 3x + 7\\)\n\nSubtract 7 from both sides: \\(y - 7 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y - 7}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x + 6\\).",
+    "options": [
+      "\\(x = \\frac{y - 6}{15}\\)",
+      "\\(x = 15y - 6\\)",
+      "\\(x = \\frac{15}{y - 6}\\)",
+      "\\(x = \\frac{y + 6}{15}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 15x + 6\\)\n\nSubtract 6 from both sides: \\(y - 6 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y - 6}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 14}{10}\\).",
+    "options": [
+      "\\(x = \\frac{10}{y} - 14\\)",
+      "\\(x = \\frac{y - 14}{10}\\)",
+      "\\(x = 10y + 14\\)",
+      "\\(x = 10y - 14\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 10: \\(10y = x + 14\\)\n\nSubtract 14: \\(x = 10y - 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x + 7\\).",
+    "options": [
+      "\\(x = 2y - 7\\)",
+      "\\(x = \\frac{2}{y - 7}\\)",
+      "\\(x = \\frac{y + 7}{2}\\)",
+      "\\(x = \\frac{y - 7}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 2x + 7\\)\n\nSubtract 7 from both sides: \\(y - 7 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y - 7}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 9}{7}\\).",
+    "options": [
+      "\\(x = 7y - 9\\)",
+      "\\(x = \\frac{7}{y} - 9\\)",
+      "\\(x = 7y + 9\\)",
+      "\\(x = \\frac{y - 9}{7}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 9\\)\n\nSubtract 9: \\(x = 7y - 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 8}{7}\\).",
+    "options": [
+      "\\(x = 7y - 8\\)",
+      "\\(x = \\frac{7}{y} + 8\\)",
+      "\\(x = 7y + 8\\)",
+      "\\(x = \\frac{y + 8}{7}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 8\\)\n\nAdd 8: \\(x = 7y + 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 8x + 17\\).",
+    "options": [
+      "\\(x = \\frac{y - 17}{8}\\)",
+      "\\(x = 8y - 17\\)",
+      "\\(x = \\frac{8}{y - 17}\\)",
+      "\\(x = \\frac{y + 17}{8}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 8x + 17\\)\n\nSubtract 17 from both sides: \\(y - 17 = 8x\\)\n\nDivide both sides by 8: \\(x = \\frac{y - 17}{8}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 6}{2}\\).",
+    "options": [
+      "\\(x = 2y - 6\\)",
+      "\\(x = \\frac{2}{y} - 6\\)",
+      "\\(x = \\frac{y - 6}{2}\\)",
+      "\\(x = 2y + 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 6\\)\n\nSubtract 6: \\(x = 2y - 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 14}{4}\\).",
+    "options": [
+      "\\(x = 4y - 14\\)",
+      "\\(x = \\frac{y + 14}{4}\\)",
+      "\\(x = 4y + 14\\)",
+      "\\(x = \\frac{4}{y} + 14\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 4: \\(4y = x - 14\\)\n\nAdd 14: \\(x = 4y + 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x - 8\\).",
+    "options": [
+      "\\(x = \\frac{4}{y + 8}\\)",
+      "\\(x = \\frac{y + 8}{4}\\)",
+      "\\(x = 4y + 8\\)",
+      "\\(x = \\frac{y - 8}{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x - 8\\)\n\nAdd 8 to both sides: \\(y + 8 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y + 8}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 9}{7}\\).",
+    "options": [
+      "\\(x = 7y + 9\\)",
+      "\\(x = \\frac{7}{y} + 9\\)",
+      "\\(x = \\frac{y + 9}{7}\\)",
+      "\\(x = 7y - 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 7: \\(7y = x - 9\\)\n\nAdd 9: \\(x = 7y + 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 2}{12}\\).",
+    "options": [
+      "\\(x = 12y - 2\\)",
+      "\\(x = 12y + 2\\)",
+      "\\(x = \\frac{y - 2}{12}\\)",
+      "\\(x = \\frac{12}{y} - 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 12: \\(12y = x + 2\\)\n\nSubtract 2: \\(x = 12y - 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 13}{8}\\).",
+    "options": [
+      "\\(x = \\frac{8}{y} - 13\\)",
+      "\\(x = 8y - 13\\)",
+      "\\(x = 8y + 13\\)",
+      "\\(x = \\frac{y - 13}{8}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 8: \\(8y = x + 13\\)\n\nSubtract 13: \\(x = 8y - 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 15x - 2\\).",
+    "options": [
+      "\\(x = \\frac{y + 2}{15}\\)",
+      "\\(x = \\frac{15}{y + 2}\\)",
+      "\\(x = \\frac{y - 2}{15}\\)",
+      "\\(x = 15y + 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 15x - 2\\)\n\nAdd 2 to both sides: \\(y + 2 = 15x\\)\n\nDivide both sides by 15: \\(x = \\frac{y + 2}{15}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 6x + 16\\).",
+    "options": [
+      "\\(x = \\frac{y - 16}{6}\\)",
+      "\\(x = \\frac{y + 16}{6}\\)",
+      "\\(x = \\frac{6}{y - 16}\\)",
+      "\\(x = 6y - 16\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 6x + 16\\)\n\nSubtract 16 from both sides: \\(y - 16 = 6x\\)\n\nDivide both sides by 6: \\(x = \\frac{y - 16}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 10x + 3\\).",
+    "options": [
+      "\\(x = \\frac{10}{y - 3}\\)",
+      "\\(x = \\frac{y + 3}{10}\\)",
+      "\\(x = 10y - 3\\)",
+      "\\(x = \\frac{y - 3}{10}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 10x + 3\\)\n\nSubtract 3 from both sides: \\(y - 3 = 10x\\)\n\nDivide both sides by 10: \\(x = \\frac{y - 3}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 4}{9}\\).",
+    "options": [
+      "\\(x = \\frac{9}{y} + 4\\)",
+      "\\(x = 9y + 4\\)",
+      "\\(x = \\frac{y + 4}{9}\\)",
+      "\\(x = 9y - 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 9: \\(9y = x - 4\\)\n\nAdd 4: \\(x = 9y + 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x + 2\\).",
+    "options": [
+      "\\(x = \\frac{y + 2}{14}\\)",
+      "\\(x = \\frac{14}{y - 2}\\)",
+      "\\(x = \\frac{y - 2}{14}\\)",
+      "\\(x = 14y - 2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 14x + 2\\)\n\nSubtract 2 from both sides: \\(y - 2 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y - 2}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 12\\).",
+    "options": [
+      "\\(x = \\frac{5}{y + 12}\\)",
+      "\\(x = 5y + 12\\)",
+      "\\(x = \\frac{y - 12}{5}\\)",
+      "\\(x = \\frac{y + 12}{5}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 5x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 12}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 3}{7}\\).",
+    "options": [
+      "\\(x = \\frac{7}{y} - 3\\)",
+      "\\(x = \\frac{y - 3}{7}\\)",
+      "\\(x = 7y - 3\\)",
+      "\\(x = 7y + 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 3\\)\n\nSubtract 3: \\(x = 7y - 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 7}{12}\\).",
+    "options": [
+      "\\(x = \\frac{y + 7}{12}\\)",
+      "\\(x = 12y - 7\\)",
+      "\\(x = \\frac{12}{y} + 7\\)",
+      "\\(x = 12y + 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 12: \\(12y = x - 7\\)\n\nAdd 7: \\(x = 12y + 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 13}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} + 13\\)",
+      "\\(x = 11y + 13\\)",
+      "\\(x = \\frac{y + 13}{11}\\)",
+      "\\(x = 11y - 13\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 11: \\(11y = x - 13\\)\n\nAdd 13: \\(x = 11y + 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 3}{12}\\).",
+    "options": [
+      "\\(x = 12y + 3\\)",
+      "\\(x = \\frac{y - 3}{12}\\)",
+      "\\(x = 12y - 3\\)",
+      "\\(x = \\frac{12}{y} - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 12: \\(12y = x + 3\\)\n\nSubtract 3: \\(x = 12y - 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 1}{2}\\).",
+    "options": [
+      "\\(x = 2y + 1\\)",
+      "\\(x = \\frac{y + 1}{2}\\)",
+      "\\(x = \\frac{2}{y} + 1\\)",
+      "\\(x = 2y - 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 2: \\(2y = x - 1\\)\n\nAdd 1: \\(x = 2y + 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 15\\).",
+    "options": [
+      "\\(x = \\frac{y - 15}{3}\\)",
+      "\\(x = 3y + 15\\)",
+      "\\(x = \\frac{y + 15}{3}\\)",
+      "\\(x = \\frac{3}{y + 15}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 3x - 15\\)\n\nAdd 15 to both sides: \\(y + 15 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 15}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x - 12\\).",
+    "options": [
+      "\\(x = \\frac{y - 12}{4}\\)",
+      "\\(x = 4y + 12\\)",
+      "\\(x = \\frac{4}{y + 12}\\)",
+      "\\(x = \\frac{y + 12}{4}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 4x - 12\\)\n\nAdd 12 to both sides: \\(y + 12 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y + 12}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 4x + 18\\).",
+    "options": [
+      "\\(x = 4y - 18\\)",
+      "\\(x = \\frac{y - 18}{4}\\)",
+      "\\(x = \\frac{y + 18}{4}\\)",
+      "\\(x = \\frac{4}{y - 18}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 4x + 18\\)\n\nSubtract 18 from both sides: \\(y - 18 = 4x\\)\n\nDivide both sides by 4: \\(x = \\frac{y - 18}{4}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 9x - 11\\).",
+    "options": [
+      "\\(x = \\frac{y - 11}{9}\\)",
+      "\\(x = \\frac{9}{y + 11}\\)",
+      "\\(x = \\frac{y + 11}{9}\\)",
+      "\\(x = 9y + 11\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 9x - 11\\)\n\nAdd 11 to both sides: \\(y + 11 = 9x\\)\n\nDivide both sides by 9: \\(x = \\frac{y + 11}{9}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 14}{3}\\).",
+    "options": [
+      "\\(x = \\frac{3}{y} + 14\\)",
+      "\\(x = 3y + 14\\)",
+      "\\(x = \\frac{y + 14}{3}\\)",
+      "\\(x = 3y - 14\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 3: \\(3y = x - 14\\)\n\nAdd 14: \\(x = 3y + 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 5}{4}\\).",
+    "options": [
+      "\\(x = 4y - 5\\)",
+      "\\(x = \\frac{4}{y} - 5\\)",
+      "\\(x = 4y + 5\\)",
+      "\\(x = \\frac{y - 5}{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 4: \\(4y = x + 5\\)\n\nSubtract 5: \\(x = 4y - 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x + 9\\).",
+    "options": [
+      "\\(x = 5y - 9\\)",
+      "\\(x = \\frac{y - 9}{5}\\)",
+      "\\(x = \\frac{y + 9}{5}\\)",
+      "\\(x = \\frac{5}{y - 9}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 5x + 9\\)\n\nSubtract 9 from both sides: \\(y - 9 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y - 9}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 10}{2}\\).",
+    "options": [
+      "\\(x = \\frac{2}{y} - 10\\)",
+      "\\(x = \\frac{y - 10}{2}\\)",
+      "\\(x = 2y + 10\\)",
+      "\\(x = 2y - 10\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 10\\)\n\nSubtract 10: \\(x = 2y - 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x - 8\\).",
+    "options": [
+      "\\(x = 13y + 8\\)",
+      "\\(x = \\frac{13}{y + 8}\\)",
+      "\\(x = \\frac{y - 8}{13}\\)",
+      "\\(x = \\frac{y + 8}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x - 8\\)\n\nAdd 8 to both sides: \\(y + 8 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y + 8}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 6x + 12\\).",
+    "options": [
+      "\\(x = 6y - 12\\)",
+      "\\(x = \\frac{6}{y - 12}\\)",
+      "\\(x = \\frac{y + 12}{6}\\)",
+      "\\(x = \\frac{y - 12}{6}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 6x + 12\\)\n\nSubtract 12 from both sides: \\(y - 12 = 6x\\)\n\nDivide both sides by 6: \\(x = \\frac{y - 12}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 10x + 2\\).",
+    "options": [
+      "\\(x = 10y - 2\\)",
+      "\\(x = \\frac{y - 2}{10}\\)",
+      "\\(x = \\frac{10}{y - 2}\\)",
+      "\\(x = \\frac{y + 2}{10}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 10x + 2\\)\n\nSubtract 2 from both sides: \\(y - 2 = 10x\\)\n\nDivide both sides by 10: \\(x = \\frac{y - 2}{10}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 13\\).",
+    "options": [
+      "\\(x = \\frac{y + 13}{14}\\)",
+      "\\(x = \\frac{y - 13}{14}\\)",
+      "\\(x = 14y + 13\\)",
+      "\\(x = \\frac{14}{y + 13}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 14x - 13\\)\n\nAdd 13 to both sides: \\(y + 13 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 13}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 14}{9}\\).",
+    "options": [
+      "\\(x = \\frac{y - 14}{9}\\)",
+      "\\(x = 9y + 14\\)",
+      "\\(x = \\frac{9}{y} - 14\\)",
+      "\\(x = 9y - 14\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 9: \\(9y = x + 14\\)\n\nSubtract 14: \\(x = 9y - 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 2x + 5\\).",
+    "options": [
+      "\\(x = 2y - 5\\)",
+      "\\(x = \\frac{2}{y - 5}\\)",
+      "\\(x = \\frac{y + 5}{2}\\)",
+      "\\(x = \\frac{y - 5}{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 2x + 5\\)\n\nSubtract 5 from both sides: \\(y - 5 = 2x\\)\n\nDivide both sides by 2: \\(x = \\frac{y - 5}{2}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x + 6\\).",
+    "options": [
+      "\\(x = \\frac{y - 6}{3}\\)",
+      "\\(x = 3y - 6\\)",
+      "\\(x = \\frac{y + 6}{3}\\)",
+      "\\(x = \\frac{3}{y - 6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 3x + 6\\)\n\nSubtract 6 from both sides: \\(y - 6 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y - 6}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 5}{5}\\).",
+    "options": [
+      "\\(x = 5y - 5\\)",
+      "\\(x = \\frac{5}{y} + 5\\)",
+      "\\(x = 5y + 5\\)",
+      "\\(x = \\frac{y + 5}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 5: \\(5y = x - 5\\)\n\nAdd 5: \\(x = 5y + 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 14\\).",
+    "options": [
+      "\\(x = \\frac{y + 14}{5}\\)",
+      "\\(x = \\frac{y - 14}{5}\\)",
+      "\\(x = 5y + 14\\)",
+      "\\(x = \\frac{5}{y + 14}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 5x - 14\\)\n\nAdd 14 to both sides: \\(y + 14 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 14}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x - 7\\).",
+    "options": [
+      "\\(x = 7y + 7\\)",
+      "\\(x = \\frac{y + 7}{7}\\)",
+      "\\(x = \\frac{y - 7}{7}\\)",
+      "\\(x = \\frac{7}{y + 7}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 7x - 7\\)\n\nAdd 7 to both sides: \\(y + 7 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y + 7}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x - 9\\).",
+    "options": [
+      "\\(x = \\frac{5}{y + 9}\\)",
+      "\\(x = 5y + 9\\)",
+      "\\(x = \\frac{y + 9}{5}\\)",
+      "\\(x = \\frac{y - 9}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 5x - 9\\)\n\nAdd 9 to both sides: \\(y + 9 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y + 9}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x + 9\\).",
+    "options": [
+      "\\(x = \\frac{y + 9}{12}\\)",
+      "\\(x = \\frac{12}{y - 9}\\)",
+      "\\(x = 12y - 9\\)",
+      "\\(x = \\frac{y - 9}{12}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 12x + 9\\)\n\nSubtract 9 from both sides: \\(y - 9 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y - 9}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 14}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} - 14\\)",
+      "\\(x = 11y + 14\\)",
+      "\\(x = 11y - 14\\)",
+      "\\(x = \\frac{y - 14}{11}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 14\\)\n\nSubtract 14: \\(x = 11y - 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 13x + 19\\).",
+    "options": [
+      "\\(x = 13y - 19\\)",
+      "\\(x = \\frac{13}{y - 19}\\)",
+      "\\(x = \\frac{y + 19}{13}\\)",
+      "\\(x = \\frac{y - 19}{13}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(y = 13x + 19\\)\n\nSubtract 19 from both sides: \\(y - 19 = 13x\\)\n\nDivide both sides by 13: \\(x = \\frac{y - 19}{13}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 5x + 14\\).",
+    "options": [
+      "\\(x = 5y - 14\\)",
+      "\\(x = \\frac{5}{y - 14}\\)",
+      "\\(x = \\frac{y - 14}{5}\\)",
+      "\\(x = \\frac{y + 14}{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 5x + 14\\)\n\nSubtract 14 from both sides: \\(y - 14 = 5x\\)\n\nDivide both sides by 5: \\(x = \\frac{y - 14}{5}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 18\\).",
+    "options": [
+      "\\(x = \\frac{y - 18}{14}\\)",
+      "\\(x = \\frac{14}{y + 18}\\)",
+      "\\(x = \\frac{y + 18}{14}\\)",
+      "\\(x = 14y + 18\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(y = 14x - 18\\)\n\nAdd 18 to both sides: \\(y + 18 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 18}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 1}{12}\\).",
+    "options": [
+      "\\(x = \\frac{12}{y} - 1\\)",
+      "\\(x = 12y + 1\\)",
+      "\\(x = 12y - 1\\)",
+      "\\(x = \\frac{y - 1}{12}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 12: \\(12y = x + 1\\)\n\nSubtract 1: \\(x = 12y - 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x + 3\\).",
+    "options": [
+      "\\(x = \\frac{y - 3}{14}\\)",
+      "\\(x = \\frac{y + 3}{14}\\)",
+      "\\(x = 14y - 3\\)",
+      "\\(x = \\frac{14}{y - 3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 14x + 3\\)\n\nSubtract 3 from both sides: \\(y - 3 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y - 3}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 12}{11}\\).",
+    "options": [
+      "\\(x = 11y + 12\\)",
+      "\\(x = \\frac{11}{y} - 12\\)",
+      "\\(x = \\frac{y - 12}{11}\\)",
+      "\\(x = 11y - 12\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 12\\)\n\nSubtract 12: \\(x = 11y - 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 8}{8}\\).",
+    "options": [
+      "\\(x = 8y + 8\\)",
+      "\\(x = 8y - 8\\)",
+      "\\(x = \\frac{y + 8}{8}\\)",
+      "\\(x = \\frac{8}{y} + 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply both sides by 8: \\(8y = x - 8\\)\n\nAdd 8: \\(x = 8y + 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 12x - 14\\).",
+    "options": [
+      "\\(x = \\frac{y + 14}{12}\\)",
+      "\\(x = \\frac{12}{y + 14}\\)",
+      "\\(x = 12y + 14\\)",
+      "\\(x = \\frac{y - 14}{12}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 12x - 14\\)\n\nAdd 14 to both sides: \\(y + 14 = 12x\\)\n\nDivide both sides by 12: \\(x = \\frac{y + 14}{12}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 8}{5}\\).",
+    "options": [
+      "\\(x = \\frac{y - 8}{5}\\)",
+      "\\(x = \\frac{5}{y} - 8\\)",
+      "\\(x = 5y - 8\\)",
+      "\\(x = 5y + 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 5: \\(5y = x + 8\\)\n\nSubtract 8: \\(x = 5y - 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 8}{2}\\).",
+    "options": [
+      "\\(x = \\frac{y - 8}{2}\\)",
+      "\\(x = \\frac{2}{y} - 8\\)",
+      "\\(x = 2y - 8\\)",
+      "\\(x = 2y + 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 2: \\(2y = x + 8\\)\n\nSubtract 8: \\(x = 2y - 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 15}{11}\\).",
+    "options": [
+      "\\(x = \\frac{11}{y} - 15\\)",
+      "\\(x = 11y + 15\\)",
+      "\\(x = \\frac{y - 15}{11}\\)",
+      "\\(x = 11y - 15\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 11: \\(11y = x + 15\\)\n\nSubtract 15: \\(x = 11y - 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 14}{11}\\).",
+    "options": [
+      "\\(x = 11y - 14\\)",
+      "\\(x = 11y + 14\\)",
+      "\\(x = \\frac{y + 14}{11}\\)",
+      "\\(x = \\frac{11}{y} + 14\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 11: \\(11y = x - 14\\)\n\nAdd 14: \\(x = 11y + 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 11x + 14\\).",
+    "options": [
+      "\\(x = \\frac{11}{y - 14}\\)",
+      "\\(x = \\frac{y - 14}{11}\\)",
+      "\\(x = 11y - 14\\)",
+      "\\(x = \\frac{y + 14}{11}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 11x + 14\\)\n\nSubtract 14 from both sides: \\(y - 14 = 11x\\)\n\nDivide both sides by 11: \\(x = \\frac{y - 14}{11}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 15}{7}\\).",
+    "options": [
+      "\\(x = \\frac{y - 15}{7}\\)",
+      "\\(x = \\frac{7}{y} - 15\\)",
+      "\\(x = 7y + 15\\)",
+      "\\(x = 7y - 15\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply both sides by 7: \\(7y = x + 15\\)\n\nSubtract 15: \\(x = 7y - 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 6}{2}\\).",
+    "options": [
+      "\\(x = \\frac{2}{y} + 6\\)",
+      "\\(x = 2y - 6\\)",
+      "\\(x = 2y + 6\\)",
+      "\\(x = \\frac{y + 6}{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 2: \\(2y = x - 6\\)\n\nAdd 6: \\(x = 2y + 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 6x - 15\\).",
+    "options": [
+      "\\(x = \\frac{y + 15}{6}\\)",
+      "\\(x = \\frac{y - 15}{6}\\)",
+      "\\(x = \\frac{6}{y + 15}\\)",
+      "\\(x = 6y + 15\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 6x - 15\\)\n\nAdd 15 to both sides: \\(y + 15 = 6x\\)\n\nDivide both sides by 6: \\(x = \\frac{y + 15}{6}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 15}{10}\\).",
+    "options": [
+      "\\(x = \\frac{y - 15}{10}\\)",
+      "\\(x = \\frac{10}{y} - 15\\)",
+      "\\(x = 10y - 15\\)",
+      "\\(x = 10y + 15\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 10: \\(10y = x + 15\\)\n\nSubtract 15: \\(x = 10y - 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 7}{6}\\).",
+    "options": [
+      "\\(x = 6y - 7\\)",
+      "\\(x = \\frac{y + 7}{6}\\)",
+      "\\(x = 6y + 7\\)",
+      "\\(x = \\frac{6}{y} + 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply both sides by 6: \\(6y = x - 7\\)\n\nAdd 7: \\(x = 6y + 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x - 5}{3}\\).",
+    "options": [
+      "\\(x = \\frac{3}{y} + 5\\)",
+      "\\(x = 3y + 5\\)",
+      "\\(x = 3y - 5\\)",
+      "\\(x = \\frac{y + 5}{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 3: \\(3y = x - 5\\)\n\nAdd 5: \\(x = 3y + 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 7x + 17\\).",
+    "options": [
+      "\\(x = \\frac{y - 17}{7}\\)",
+      "\\(x = \\frac{y + 17}{7}\\)",
+      "\\(x = \\frac{7}{y - 17}\\)",
+      "\\(x = 7y - 17\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 7x + 17\\)\n\nSubtract 17 from both sides: \\(y - 17 = 7x\\)\n\nDivide both sides by 7: \\(x = \\frac{y - 17}{7}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 14x - 6\\).",
+    "options": [
+      "\\(x = 14y + 6\\)",
+      "\\(x = \\frac{y + 6}{14}\\)",
+      "\\(x = \\frac{y - 6}{14}\\)",
+      "\\(x = \\frac{14}{y + 6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(y = 14x - 6\\)\n\nAdd 6 to both sides: \\(y + 6 = 14x\\)\n\nDivide both sides by 14: \\(x = \\frac{y + 6}{14}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = \\frac{x + 8}{9}\\).",
+    "options": [
+      "\\(x = 9y + 8\\)",
+      "\\(x = 9y - 8\\)",
+      "\\(x = \\frac{y - 8}{9}\\)",
+      "\\(x = \\frac{9}{y} - 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply both sides by 9: \\(9y = x + 8\\)\n\nSubtract 8: \\(x = 9y - 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Make \\(x\\) the subject of the formula \\(y = 3x - 2\\).",
+    "options": [
+      "\\(x = \\frac{y + 2}{3}\\)",
+      "\\(x = \\frac{y - 2}{3}\\)",
+      "\\(x = \\frac{3}{y + 2}\\)",
+      "\\(x = 3y + 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(y = 3x - 2\\)\n\nAdd 2 to both sides: \\(y + 2 = 3x\\)\n\nDivide both sides by 3: \\(x = \\frac{y + 2}{3}\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "NAvybTyFDDuEsNKmjx1P",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

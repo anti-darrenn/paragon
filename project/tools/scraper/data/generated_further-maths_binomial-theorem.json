@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Evaluate \\(\\binom{6}{4}\\).",
+    "options": [
+      "20",
+      "360",
+      "35",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{6}{4} = \\frac{6!}{4! \\times 2!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{22}\\), and which term is the middle one?",
+    "options": [
+      "23th term",
+      "13th term",
+      "12th term",
+      "11th term"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 23\\) terms.\n\nSince 22 is even, there is a single middle term, the \\(\\left(\\frac{22}{2} + 1\\right)\\)th \\(= 12\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{24}\\), and which term is the middle one?",
+    "options": [
+      "25th term",
+      "13th term",
+      "14th term",
+      "12th term"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 25\\) terms.\n\nSince 24 is even, there is a single middle term, the \\(\\left(\\frac{24}{2} + 1\\right)\\)th \\(= 13\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((3 + 1x)^{7}\\).",
+    "options": [
+      "42",
+      "5103",
+      "21",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{7}{r}(3)^{7-r}(1x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{7}{6} \\times 3^{1} \\times 1^{6} = 7 \\times 3 \\times 1 = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{13}\\).",
+    "options": [
+      "154440",
+      "1716",
+      "1287",
+      "715"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{13}{5} = \\frac{13!}{5!(13-5)!} = 1287\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{10}\\).",
+    "options": [
+      "20",
+      "1024",
+      "1023",
+      "100"
+    ],
+    "correctIndex": 1,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{10} = 2^{10} = 1024\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + 5x)^{7}\\).",
+    "options": [
+      "7",
+      "109375",
+      "218750",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(1)^{7-r}(5x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{7}{6} \\times 1^{1} \\times 5^{6} = 7 \\times 1 \\times 15625 = 109375\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{6}{3}\\).",
+    "options": [
+      "20",
+      "35",
+      "120",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{6}{3} = \\frac{6!}{3! \\times 3!} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{7}{2}\\).",
+    "options": [
+      "21",
+      "7",
+      "42",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{7}{2} = \\frac{7!}{2! \\times 5!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((4 + 3x)^{4}\\).",
+    "options": [
+      "432",
+      "4",
+      "768",
+      "864"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(4)^{4-r}(3x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 4^{1} \\times 3^{3} = 4 \\times 4 \\times 27 = 432\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{22}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 22x + 1540x^{2}\\)",
+      "\\(1 + 22x + 231x^{2}\\)",
+      "\\(1 + 22x + 22x^{2}\\)",
+      "\\(1 + 231x + 22x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{22}{1} = 22\\), \\(\\binom{22}{2} = 231\\)\n\nSo the first three terms are \\(1 + 22x + 231x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((3 + 3x)^{3}\\).",
+    "options": [
+      "81",
+      "84",
+      "162",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(3)^{3-r}(3x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 3^{1} \\times 3^{2} = 3 \\times 3 \\times 9 = 81\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "255",
+      "256",
+      "64",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{8} = 2^{8} = 256\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "56",
+      "32",
+      "70",
+      "1680"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{8}{4} = \\frac{8!}{4!(8-4)!} = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "28",
+      "70",
+      "336",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{8}{3} = \\frac{8!}{3!(8-3)!} = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{10}\\), and which term is the middle one?",
+    "options": [
+      "11th term",
+      "7th term",
+      "5th term",
+      "6th term"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 11\\) terms.\n\nSince 10 is even, there is a single middle term, the \\(\\left(\\frac{10}{2} + 1\\right)\\)th \\(= 6\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{14}\\), and which term is the middle one?",
+    "options": [
+      "8th term",
+      "15th term",
+      "7th term",
+      "9th term"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 15\\) terms.\n\nSince 14 is even, there is a single middle term, the \\(\\left(\\frac{14}{2} + 1\\right)\\)th \\(= 8\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{19}\\).",
+    "options": [
+      "171",
+      "3876",
+      "5814",
+      "969"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{19}{3} = \\frac{19!}{3!(19-3)!} = 969\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((2 + 1x)^{8}\\).",
+    "options": [
+      "28",
+      "1792",
+      "224",
+      "112"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(2)^{8-r}(1x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 2^{2} \\times 1^{6} = 28 \\times 4 \\times 1 = 112\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{13}\\).",
+    "options": [
+      "8648640",
+      "1287",
+      "91",
+      "1716"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{13}{7} = \\frac{13!}{7!(13-7)!} = 1716\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{20}{4}\\).",
+    "options": [
+      "4845",
+      "1140",
+      "116280",
+      "5985"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{20}{4} = \\frac{20!}{4! \\times 16!} = 4845\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{12}\\), and which term is the middle one?",
+    "options": [
+      "13th term",
+      "8th term",
+      "6th term",
+      "7th term"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 13\\) terms.\n\nSince 12 is even, there is a single middle term, the \\(\\left(\\frac{12}{2} + 1\\right)\\)th \\(= 7\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{14}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 14x + 14x^{2}\\)",
+      "\\(1 + 14x + 364x^{2}\\)",
+      "\\(1 + 14x + 91x^{2}\\)",
+      "\\(1 + 91x + 14x^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{14}{1} = 14\\), \\(\\binom{14}{2} = 91\\)\n\nSo the first three terms are \\(1 + 14x + 91x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{13}{4}\\).",
+    "options": [
+      "17160",
+      "715",
+      "286",
+      "1001"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{13}{4} = \\frac{13!}{4! \\times 9!} = 715\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{3}\\).",
+    "options": [
+      "9",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{3} = 2^{3} = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "512",
+      "81",
+      "18",
+      "511"
+    ],
+    "correctIndex": 0,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{9} = 2^{9} = 512\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{20}\\).",
+    "options": [
+      "390700800",
+      "38760",
+      "77520",
+      "125970"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{20}{7} = \\frac{20!}{7!(20-7)!} = 77520\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((3 + 1x)^{7}\\).",
+    "options": [
+      "1890",
+      "2835",
+      "35",
+      "945"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{7}{r}(3)^{7-r}(1x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{7}{4} \\times 3^{3} \\times 1^{4} = 35 \\times 27 \\times 1 = 945\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{7}\\).",
+    "options": [
+      "49",
+      "128",
+      "14",
+      "127"
+    ],
+    "correctIndex": 1,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{7} = 2^{7} = 128\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{16}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 16x + 560x^{2}\\)",
+      "\\(1 + 16x + 120x^{2}\\)",
+      "\\(1 + 16x + 16x^{2}\\)",
+      "\\(1 + 120x + 16x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{16}{1} = 16\\), \\(\\binom{16}{2} = 120\\)\n\nSo the first three terms are \\(1 + 16x + 120x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{18}\\), and which term is the middle one?",
+    "options": [
+      "9th term",
+      "10th term",
+      "11th term",
+      "19th term"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 19\\) terms.\n\nSince 18 is even, there is a single middle term, the \\(\\left(\\frac{18}{2} + 1\\right)\\)th \\(= 10\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{12}\\).",
+    "options": [
+      "132",
+      "12",
+      "220",
+      "66"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{12}{2} = \\frac{12!}{2!(12-2)!} = 66\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{20}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 190x + 20x^{2}\\)",
+      "\\(1 + 20x + 20x^{2}\\)",
+      "\\(1 + 20x + 190x^{2}\\)",
+      "\\(1 + 20x + 1140x^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{20}{1} = 20\\), \\(\\binom{20}{2} = 190\\)\n\nSo the first three terms are \\(1 + 20x + 190x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{6}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 6x + 6x^{2}\\)",
+      "\\(1 + 6x + 20x^{2}\\)",
+      "\\(1 + 6x + 15x^{2}\\)",
+      "\\(1 + 15x + 6x^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{6}{1} = 6\\), \\(\\binom{6}{2} = 15\\)\n\nSo the first three terms are \\(1 + 6x + 15x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{20}{3}\\).",
+    "options": [
+      "190",
+      "1330",
+      "6840",
+      "1140"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{20}{3} = \\frac{20!}{3! \\times 17!} = 1140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{19}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 171x + 19x^{2}\\)",
+      "\\(1 + 19x + 19x^{2}\\)",
+      "\\(1 + 19x + 969x^{2}\\)",
+      "\\(1 + 19x + 171x^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{19}{1} = 19\\), \\(\\binom{19}{2} = 171\\)\n\nSo the first three terms are \\(1 + 19x + 171x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "84",
+      "9",
+      "36",
+      "181440"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{9}{7} = \\frac{9!}{7!(9-7)!} = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{15}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 15x + 455x^{2}\\)",
+      "\\(1 + 15x + 105x^{2}\\)",
+      "\\(1 + 15x + 15x^{2}\\)",
+      "\\(1 + 105x + 15x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{15}{1} = 15\\), \\(\\binom{15}{2} = 105\\)\n\nSo the first three terms are \\(1 + 15x + 105x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{11}{6}\\).",
+    "options": [
+      "332640",
+      "66",
+      "462",
+      "924"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{11}{6} = \\frac{11!}{6! \\times 5!} = 462\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{12}{4}\\).",
+    "options": [
+      "715",
+      "11880",
+      "220",
+      "495"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{12}{4} = \\frac{12!}{4! \\times 8!} = 495\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((4 + 4x)^{6}\\).",
+    "options": [
+      "6",
+      "24576",
+      "49152",
+      "24582"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{6}{r}(4)^{6-r}(4x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{6}{5} \\times 4^{1} \\times 4^{5} = 6 \\times 4 \\times 1024 = 24576\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((4 + 1x)^{4}\\).",
+    "options": [
+      "192",
+      "100",
+      "96",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{4}{r}(4)^{4-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{4}{2} \\times 4^{2} \\times 1^{2} = 6 \\times 16 \\times 1 = 96\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((4 + 2x)^{6}\\).",
+    "options": [
+      "6",
+      "768",
+      "12288",
+      "24576"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{6}{r}(4)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{6}{1} \\times 4^{5} \\times 2^{1} = 6 \\times 1024 \\times 2 = 12288\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{10}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 45x + 10x^{2}\\)",
+      "\\(1 + 10x + 10x^{2}\\)",
+      "\\(1 + 10x + 45x^{2}\\)",
+      "\\(1 + 10x + 120x^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{10}{1} = 10\\), \\(\\binom{10}{2} = 45\\)\n\nSo the first three terms are \\(1 + 10x + 45x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{7}\\).",
+    "options": [
+      "5040",
+      "7",
+      "1",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{7}{6} = \\frac{7!}{6!(7-6)!} = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{15}{2}\\).",
+    "options": [
+      "210",
+      "105",
+      "120",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{15}{2} = \\frac{15!}{2! \\times 13!} = 105\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{5}{5}\\).",
+    "options": [
+      "5",
+      "6",
+      "1",
+      "120"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{5}{5} = \\frac{5!}{5! \\times 0!} = 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{20}\\), and which term is the middle one?",
+    "options": [
+      "11th term",
+      "21th term",
+      "12th term",
+      "10th term"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 21\\) terms.\n\nSince 20 is even, there is a single middle term, the \\(\\left(\\frac{20}{2} + 1\\right)\\)th \\(= 11\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "70",
+      "56",
+      "28",
+      "6720"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{8}{5} = \\frac{8!}{5!(8-5)!} = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{14}{6}\\).",
+    "options": [
+      "2002",
+      "3003",
+      "5005",
+      "2162160"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{14}{6} = \\frac{14!}{6! \\times 8!} = 3003\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{10}{5}\\).",
+    "options": [
+      "462",
+      "252",
+      "210",
+      "30240"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{10}{5} = \\frac{10!}{5! \\times 5!} = 252\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((5 + 2x)^{8}\\).",
+    "options": [
+      "28",
+      "44800",
+      "1750000",
+      "89600"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(2x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 5^{2} \\times 2^{6} = 28 \\times 25 \\times 64 = 44800\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{12}{3}\\).",
+    "options": [
+      "1320",
+      "66",
+      "220",
+      "286"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{12}{3} = \\frac{12!}{3! \\times 9!} = 220\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((5 + 3x)^{8}\\).",
+    "options": [
+      "1701000",
+      "56",
+      "4725000",
+      "9450000"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{8}{3} \\times 5^{5} \\times 3^{3} = 56 \\times 3125 \\times 27 = 4725000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{9}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 36x + 9x^{2}\\)",
+      "\\(1 + 9x + 9x^{2}\\)",
+      "\\(1 + 9x + 84x^{2}\\)",
+      "\\(1 + 9x + 36x^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{9}{1} = 9\\), \\(\\binom{9}{2} = 36\\)\n\nSo the first three terms are \\(1 + 9x + 36x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{12}\\).",
+    "options": [
+      "495",
+      "220",
+      "11880",
+      "792"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{12}{4} = \\frac{12!}{4!(12-4)!} = 495\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{17}\\).",
+    "options": [
+      "680",
+      "2380",
+      "6188",
+      "57120"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{17}{4} = \\frac{17!}{4!(17-4)!} = 2380\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{16}\\), and which term is the middle one?",
+    "options": [
+      "8th term",
+      "17th term",
+      "10th term",
+      "9th term"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 17\\) terms.\n\nSince 16 is even, there is a single middle term, the \\(\\left(\\frac{16}{2} + 1\\right)\\)th \\(= 9\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{10}\\).",
+    "options": [
+      "45",
+      "720",
+      "210",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{10}{3} = \\frac{10!}{3!(10-3)!} = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((4 + 2x)^{4}\\).",
+    "options": [
+      "512",
+      "1024",
+      "128",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(4)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 4^{3} \\times 2^{1} = 4 \\times 64 \\times 2 = 512\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{18}{7}\\).",
+    "options": [
+      "31824",
+      "160392960",
+      "50388",
+      "18564"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{18}{7} = \\frac{18!}{7! \\times 11!} = 31824\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((5 + 1x)^{8}\\).",
+    "options": [
+      "700",
+      "1400",
+      "28",
+      "437500"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(1x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 5^{2} \\times 1^{6} = 28 \\times 25 \\times 1 = 700\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{21}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 21x + 1330x^{2}\\)",
+      "\\(1 + 21x + 210x^{2}\\)",
+      "\\(1 + 21x + 21x^{2}\\)",
+      "\\(1 + 210x + 21x^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{21}{1} = 21\\), \\(\\binom{21}{2} = 210\\)\n\nSo the first three terms are \\(1 + 21x + 210x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((5 + 4x)^{4}\\).",
+    "options": [
+      "1280",
+      "4",
+      "2560",
+      "2000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(5)^{4-r}(4x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 5^{1} \\times 4^{3} = 4 \\times 5 \\times 64 = 1280\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{8}\\) in the expansion of \\((1 + x)^{17}\\).",
+    "options": [
+      "19448",
+      "24310",
+      "980179200",
+      "136"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{17}{8} = \\frac{17!}{8!(17-8)!} = 24310\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{16}{7}\\).",
+    "options": [
+      "57657600",
+      "11440",
+      "19448",
+      "8008"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{16}{7} = \\frac{16!}{7! \\times 9!} = 11440\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{4}{3}\\).",
+    "options": [
+      "24",
+      "10",
+      "4",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{4}{3} = \\frac{4!}{3! \\times 1!} = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{13}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 13x + 286x^{2}\\)",
+      "\\(1 + 13x + 13x^{2}\\)",
+      "\\(1 + 78x + 13x^{2}\\)",
+      "\\(1 + 13x + 78x^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{13}{1} = 13\\), \\(\\binom{13}{2} = 78\\)\n\nSo the first three terms are \\(1 + 13x + 78x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{16}\\).",
+    "options": [
+      "560",
+      "120",
+      "3360",
+      "1820"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{16}{3} = \\frac{16!}{3!(16-3)!} = 560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{6}\\).",
+    "options": [
+      "36",
+      "64",
+      "12",
+      "63"
+    ],
+    "correctIndex": 1,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{6} = 2^{6} = 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{20}{5}\\).",
+    "options": [
+      "4845",
+      "1860480",
+      "15504",
+      "20349"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{20}{5} = \\frac{20!}{5! \\times 15!} = 15504\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "16",
+      "8",
+      "56",
+      "28"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{8}{2} = \\frac{8!}{2!(8-2)!} = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{11}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 11x + 55x^{2}\\)",
+      "\\(1 + 55x + 11x^{2}\\)",
+      "\\(1 + 11x + 165x^{2}\\)",
+      "\\(1 + 11x + 11x^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{11}{1} = 11\\), \\(\\binom{11}{2} = 55\\)\n\nSo the first three terms are \\(1 + 11x + 55x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{13}\\).",
+    "options": [
+      "17160",
+      "286",
+      "1287",
+      "715"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{13}{4} = \\frac{13!}{4!(13-4)!} = 715\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((3 + 1x)^{5}\\).",
+    "options": [
+      "405",
+      "5",
+      "15",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{5}{r}(3)^{5-r}(1x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{5}{4} \\times 3^{1} \\times 1^{4} = 5 \\times 3 \\times 1 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{6}{2}\\).",
+    "options": [
+      "15",
+      "21",
+      "30",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{6}{2} = \\frac{6!}{2! \\times 4!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{19}{6}\\).",
+    "options": [
+      "19535040",
+      "38760",
+      "27132",
+      "11628"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{19}{6} = \\frac{19!}{6! \\times 13!} = 27132\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((2 + 2x)^{4}\\).",
+    "options": [
+      "4",
+      "68",
+      "128",
+      "64"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{4}{r}(2)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 2^{1} \\times 2^{3} = 4 \\times 2 \\times 8 = 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "9",
+      "84",
+      "36",
+      "72"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{9}{2} = \\frac{9!}{2!(9-2)!} = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{8}\\) in the expansion of \\((1 + x)^{10}\\).",
+    "options": [
+      "10",
+      "45",
+      "120",
+      "1814400"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{10}{8} = \\frac{10!}{8!(10-8)!} = 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((2 + 2x)^{4}\\).",
+    "options": [
+      "64",
+      "128",
+      "4",
+      "68"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(2)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 2^{3} \\times 2^{1} = 4 \\times 8 \\times 2 = 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((2 + 4x)^{4}\\).",
+    "options": [
+      "388",
+      "768",
+      "384",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{4}{r}(2)^{4-r}(4x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{4}{2} \\times 2^{2} \\times 4^{2} = 6 \\times 4 \\times 16 = 384\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{18}\\).",
+    "options": [
+      "1028160",
+      "3060",
+      "18564",
+      "8568"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{18}{5} = \\frac{18!}{5!(18-5)!} = 8568\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((4 + 5x)^{8}\\).",
+    "options": [
+      "22400000",
+      "56",
+      "11200000",
+      "7168000"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{8}{r}(4)^{8-r}(5x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{8}{5} \\times 4^{3} \\times 5^{5} = 56 \\times 64 \\times 3125 = 11200000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 5x)^{4}\\).",
+    "options": [
+      "2504",
+      "4",
+      "5000",
+      "2500"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{4}{r}(5)^{4-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 5^{3} \\times 5^{1} = 4 \\times 125 \\times 5 = 2500\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{4}\\), and which term is the middle one?",
+    "options": [
+      "2th term",
+      "4th term",
+      "3th term",
+      "5th term"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 5\\) terms.\n\nSince 4 is even, there is a single middle term, the \\(\\left(\\frac{4}{2} + 1\\right)\\)th \\(= 3\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((5 + 2x)^{6}\\).",
+    "options": [
+      "20006",
+      "20000",
+      "40000",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{6}{r}(5)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{6}{3} \\times 5^{3} \\times 2^{3} = 20 \\times 125 \\times 8 = 20000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((5 + 4x)^{7}\\).",
+    "options": [
+      "2100000",
+      "1050000",
+      "21",
+      "537600"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(5)^{7-r}(4x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{7}{2} \\times 5^{5} \\times 4^{2} = 21 \\times 3125 \\times 16 = 1050000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{9}{3}\\).",
+    "options": [
+      "504",
+      "84",
+      "36",
+      "120"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{9}{3} = \\frac{9!}{3! \\times 6!} = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{8}{7}\\).",
+    "options": [
+      "36",
+      "8",
+      "28",
+      "40320"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{8}{7} = \\frac{8!}{7! \\times 1!} = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{12}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 12x + 12x^{2}\\)",
+      "\\(1 + 12x + 220x^{2}\\)",
+      "\\(1 + 12x + 66x^{2}\\)",
+      "\\(1 + 66x + 12x^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{12}{1} = 12\\), \\(\\binom{12}{2} = 66\\)\n\nSo the first three terms are \\(1 + 12x + 66x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "84",
+      "126",
+      "36",
+      "60480"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{9}{6} = \\frac{9!}{6!(9-6)!} = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{17}{7}\\).",
+    "options": [
+      "98017920",
+      "12376",
+      "19448",
+      "31824"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{17}{7} = \\frac{17!}{7! \\times 10!} = 19448\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the sum of the coefficients in the expansion of \\((1 + x)^{5}\\).",
+    "options": [
+      "10",
+      "32",
+      "31",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Setting \\(x = 1\\) gives the sum of the coefficients.\n\n\\((1 + 1)^{5} = 2^{5} = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{4}{2}\\).",
+    "options": [
+      "4",
+      "10",
+      "12",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{4}{2} = \\frac{4!}{2! \\times 2!} = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{13}\\).",
+    "options": [
+      "286",
+      "1716",
+      "78",
+      "715"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{13}{3} = \\frac{13!}{3!(13-3)!} = 286\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{9}{4}\\).",
+    "options": [
+      "210",
+      "3024",
+      "126",
+      "84"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{9}{4} = \\frac{9!}{4! \\times 5!} = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((5 + 1x)^{5}\\).",
+    "options": [
+      "2500",
+      "10",
+      "250",
+      "1250"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{5}{r}(5)^{5-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{5}{2} \\times 5^{3} \\times 1^{2} = 10 \\times 125 \\times 1 = 1250\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{8}\\), and which term is the middle one?",
+    "options": [
+      "5th term",
+      "9th term",
+      "6th term",
+      "4th term"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 9\\) terms.\n\nSince 8 is even, there is a single middle term, the \\(\\left(\\frac{8}{2} + 1\\right)\\)th \\(= 5\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{18}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 18x + 18x^{2}\\)",
+      "\\(1 + 18x + 816x^{2}\\)",
+      "\\(1 + 153x + 18x^{2}\\)",
+      "\\(1 + 18x + 153x^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{18}{1} = 18\\), \\(\\binom{18}{2} = 153\\)\n\nSo the first three terms are \\(1 + 18x + 153x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{7}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 21x + 7x^{2}\\)",
+      "\\(1 + 7x + 35x^{2}\\)",
+      "\\(1 + 7x + 7x^{2}\\)",
+      "\\(1 + 7x + 21x^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{7}{1} = 7\\), \\(\\binom{7}{2} = 21\\)\n\nSo the first three terms are \\(1 + 7x + 21x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 5x)^{6}\\).",
+    "options": [
+      "6",
+      "14580",
+      "7290",
+      "56250"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{6}{1} \\times 3^{5} \\times 5^{1} = 6 \\times 243 \\times 5 = 7290\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{12}{6}\\).",
+    "options": [
+      "1716",
+      "924",
+      "665280",
+      "792"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{12}{6} = \\frac{12!}{6! \\times 6!} = 924\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((3 + 5x)^{8}\\).",
+    "options": [
+      "28",
+      "510300",
+      "7875000",
+      "3937500"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(3)^{8-r}(5x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 3^{2} \\times 5^{6} = 28 \\times 9 \\times 15625 = 3937500\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{5}{4}\\).",
+    "options": [
+      "15",
+      "120",
+      "10",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{5}{4} = \\frac{5!}{4! \\times 1!} = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{6}\\).",
+    "options": [
+      "6",
+      "20",
+      "30",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{6}{2} = \\frac{6!}{2!(6-2)!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{7}\\).",
+    "options": [
+      "21",
+      "42",
+      "35",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{7}{2} = \\frac{7!}{2!(7-2)!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{8}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 8x + 28x^{2}\\)",
+      "\\(1 + 28x + 8x^{2}\\)",
+      "\\(1 + 8x + 56x^{2}\\)",
+      "\\(1 + 8x + 8x^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{8}{1} = 8\\), \\(\\binom{8}{2} = 28\\)\n\nSo the first three terms are \\(1 + 8x + 28x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{19}{3}\\).",
+    "options": [
+      "171",
+      "1140",
+      "969",
+      "5814"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{19}{3} = \\frac{19!}{3! \\times 16!} = 969\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 5x)^{6}\\).",
+    "options": [
+      "93750",
+      "187500",
+      "6",
+      "93756"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{6}{r}(5)^{6-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{6}{1} \\times 5^{5} \\times 5^{1} = 6 \\times 3125 \\times 5 = 93750\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{8}{4}\\).",
+    "options": [
+      "1680",
+      "56",
+      "126",
+      "70"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{8}{4} = \\frac{8!}{4! \\times 4!} = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{8}\\) in the expansion of \\((1 + x)^{18}\\).",
+    "options": [
+      "43758",
+      "31824",
+      "1764322560",
+      "48620"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{18}{8} = \\frac{18!}{8!(18-8)!} = 43758\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many terms are there before the middle term in the expansion of \\((a + b)^{6}\\), and which term is the middle one?",
+    "options": [
+      "7th term",
+      "3th term",
+      "5th term",
+      "4th term"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\((a+b)^{n}\\) has \\(n + 1 = 7\\) terms.\n\nSince 6 is even, there is a single middle term, the \\(\\left(\\frac{6}{2} + 1\\right)\\)th \\(= 4\\)th term.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{18}\\).",
+    "options": [
+      "31824",
+      "18564",
+      "13366080",
+      "8568"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{18}{6} = \\frac{18!}{6!(18-6)!} = 18564\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "15120",
+      "84",
+      "45",
+      "126"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{9}{5} = \\frac{9!}{5!(9-5)!} = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((5 + 1x)^{6}\\).",
+    "options": [
+      "15",
+      "9375",
+      "375",
+      "750"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{6}{r}(5)^{6-r}(1x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{6}{4} \\times 5^{2} \\times 1^{4} = 15 \\times 25 \\times 1 = 375\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{15}\\).",
+    "options": [
+      "2730",
+      "1365",
+      "455",
+      "105"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{15}{3} = \\frac{15!}{3!(15-3)!} = 455\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 3x)^{3}\\).",
+    "options": [
+      "3",
+      "225",
+      "135",
+      "450"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{3}{r}(5)^{3-r}(3x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 5^{2} \\times 3^{1} = 3 \\times 25 \\times 3 = 225\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{11}\\).",
+    "options": [
+      "7920",
+      "165",
+      "330",
+      "462"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{11}{4} = \\frac{11!}{4!(11-4)!} = 330\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{14}{7}\\).",
+    "options": [
+      "3003",
+      "6435",
+      "3432",
+      "17297280"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{14}{7} = \\frac{14!}{7! \\times 7!} = 3432\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{4}{4}\\).",
+    "options": [
+      "4",
+      "1",
+      "24",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{4}{4} = \\frac{4!}{4! \\times 0!} = 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{11}{3}\\).",
+    "options": [
+      "55",
+      "220",
+      "990",
+      "165"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{11}{3} = \\frac{11!}{3! \\times 8!} = 165\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Write down the first three terms of the expansion of \\((1 + x)^{17}\\) in ascending powers of \\(x\\).",
+    "options": [
+      "\\(1 + 17x + 17x^{2}\\)",
+      "\\(1 + 136x + 17x^{2}\\)",
+      "\\(1 + 17x + 136x^{2}\\)",
+      "\\(1 + 17x + 680x^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\((1+x)^{n} = 1 + \\binom{n}{1}x + \\binom{n}{2}x^{2} + \\dots\\)\n\n\\(\\binom{17}{1} = 17\\), \\(\\binom{17}{2} = 136\\)\n\nSo the first three terms are \\(1 + 17x + 136x^{2}\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 1x)^{4}\\).",
+    "options": [
+      "4",
+      "12",
+      "108",
+      "216"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{4}{r}(3)^{4-r}(1x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 3^{3} \\times 1^{1} = 4 \\times 27 \\times 1 = 108\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{16}{4}\\).",
+    "options": [
+      "2380",
+      "560",
+      "43680",
+      "1820"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{16}{4} = \\frac{16!}{4! \\times 12!} = 1820\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{19}\\).",
+    "options": [
+      "93024",
+      "11628",
+      "3876",
+      "969"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{19}{4} = \\frac{19!}{4!(19-4)!} = 3876\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{8}{3}\\).",
+    "options": [
+      "336",
+      "28",
+      "84",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{8}{3} = \\frac{8!}{3! \\times 5!} = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((4 + 5x)^{8}\\).",
+    "options": [
+      "7168000",
+      "11200000",
+      "14336000",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{8}{r}(4)^{8-r}(5x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{8}{3} \\times 4^{5} \\times 5^{3} = 56 \\times 1024 \\times 125 = 7168000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{18}\\).",
+    "options": [
+      "3060",
+      "816",
+      "73440",
+      "8568"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{18}{4} = \\frac{18!}{4!(18-4)!} = 3060\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{18}\\).",
+    "options": [
+      "3060",
+      "816",
+      "153",
+      "4896"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{18}{3} = \\frac{18!}{3!(18-3)!} = 816\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{15}\\).",
+    "options": [
+      "1365",
+      "3003",
+      "5005",
+      "360360"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{15}{5} = \\frac{15!}{5!(15-5)!} = 3003\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{19}{2}\\).",
+    "options": [
+      "342",
+      "19",
+      "171",
+      "190"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{19}{2} = \\frac{19!}{2! \\times 17!} = 171\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 1x)^{3}\\).",
+    "options": [
+      "3",
+      "27",
+      "54",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{3}{r}(3)^{3-r}(1x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 3^{2} \\times 1^{1} = 3 \\times 9 \\times 1 = 27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 1x)^{7}\\).",
+    "options": [
+      "218750",
+      "7",
+      "35",
+      "109375"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{7}{r}(5)^{7-r}(1x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{7}{1} \\times 5^{6} \\times 1^{1} = 7 \\times 15625 \\times 1 = 109375\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{6}\\).",
+    "options": [
+      "15",
+      "6",
+      "1",
+      "720"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{6}{5} = \\frac{6!}{5!(6-5)!} = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{12}{5}\\).",
+    "options": [
+      "1287",
+      "95040",
+      "495",
+      "792"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{12}{5} = \\frac{12!}{5! \\times 7!} = 792\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "3024",
+      "36",
+      "84",
+      "126"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{9}{4} = \\frac{9!}{4!(9-4)!} = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{7}{7}\\).",
+    "options": [
+      "5040",
+      "7",
+      "1",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{7}{7} = \\frac{7!}{7! \\times 0!} = 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((2 + 4x)^{3}\\).",
+    "options": [
+      "96",
+      "192",
+      "48",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(2)^{3-r}(4x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 2^{1} \\times 4^{2} = 3 \\times 2 \\times 16 = 96\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{14}{4}\\).",
+    "options": [
+      "24024",
+      "1001",
+      "1365",
+      "364"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{14}{4} = \\frac{14!}{4! \\times 10!} = 1001\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((3 + 1x)^{8}\\).",
+    "options": [
+      "252",
+      "28",
+      "504",
+      "20412"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{8}{r}(3)^{8-r}(1x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 3^{2} \\times 1^{6} = 28 \\times 9 \\times 1 = 252\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((4 + 3x)^{6}\\).",
+    "options": [
+      "6",
+      "18432",
+      "11664",
+      "5832"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(4)^{6-r}(3x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{6}{5} \\times 4^{1} \\times 3^{5} = 6 \\times 4 \\times 243 = 5832\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{17}\\).",
+    "options": [
+      "4080",
+      "680",
+      "136",
+      "2380"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{17}{3} = \\frac{17!}{3!(17-3)!} = 680\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + 4x)^{7}\\).",
+    "options": [
+      "2240",
+      "8960",
+      "17920",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(1)^{7-r}(4x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{7}{4} \\times 1^{3} \\times 4^{4} = 35 \\times 1 \\times 256 = 8960\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((4 + 5x)^{3}\\).",
+    "options": [
+      "300",
+      "3",
+      "240",
+      "600"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(4)^{3-r}(5x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 4^{1} \\times 5^{2} = 3 \\times 4 \\times 25 = 300\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((2 + 1x)^{3}\\).",
+    "options": [
+      "12",
+      "24",
+      "3",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(2)^{3-r}(1x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 2^{2} \\times 1^{1} = 3 \\times 4 \\times 1 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{19}{4}\\).",
+    "options": [
+      "93024",
+      "969",
+      "3876",
+      "4845"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{19}{4} = \\frac{19!}{4! \\times 15!} = 3876\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((2 + 3x)^{8}\\).",
+    "options": [
+      "56",
+      "108864",
+      "96768",
+      "48384"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(2)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{8}{3} \\times 2^{5} \\times 3^{3} = 56 \\times 32 \\times 27 = 48384\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + 2x)^{3}\\).",
+    "options": [
+      "24",
+      "6",
+      "12",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{3}{r}(1)^{3-r}(2x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 1^{1} \\times 2^{2} = 3 \\times 1 \\times 4 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{5}{3}\\).",
+    "options": [
+      "15",
+      "20",
+      "10",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{5}{3} = \\frac{5!}{3! \\times 2!} = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{12}{7}\\).",
+    "options": [
+      "924",
+      "792",
+      "1716",
+      "3991680"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{12}{7} = \\frac{12!}{7! \\times 5!} = 792\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{12}\\).",
+    "options": [
+      "924",
+      "792",
+      "95040",
+      "495"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{12}{5} = \\frac{12!}{5!(12-5)!} = 792\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{10}{6}\\).",
+    "options": [
+      "210",
+      "462",
+      "151200",
+      "252"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{10}{6} = \\frac{10!}{6! \\times 4!} = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + 3x)^{8}\\).",
+    "options": [
+      "1512",
+      "27216",
+      "56",
+      "13608"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(1)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{8}{5} \\times 1^{3} \\times 3^{5} = 56 \\times 1 \\times 243 = 13608\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "1",
+      "40320",
+      "28",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{8}{7} = \\frac{8!}{7!(8-7)!} = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{8}{6}\\).",
+    "options": [
+      "84",
+      "20160",
+      "56",
+      "28"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{8}{6} = \\frac{8!}{6! \\times 2!} = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((5 + 3x)^{3}\\).",
+    "options": [
+      "225",
+      "3",
+      "135",
+      "270"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{3}{r}(5)^{3-r}(3x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 5^{1} \\times 3^{2} = 3 \\times 5 \\times 9 = 135\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{8}\\).",
+    "options": [
+      "20160",
+      "28",
+      "8",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{8}{6} = \\frac{8!}{6!(8-6)!} = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((1 + 3x)^{3}\\).",
+    "options": [
+      "18",
+      "9",
+      "3",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{3}{r}(1)^{3-r}(3x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 1^{2} \\times 3^{1} = 3 \\times 1 \\times 3 = 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{19}\\).",
+    "options": [
+      "253955520",
+      "27132",
+      "75582",
+      "50388"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{19}{7} = \\frac{19!}{7!(19-7)!} = 50388\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{6}{6}\\).",
+    "options": [
+      "7",
+      "6",
+      "720",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{6}{6} = \\frac{6!}{6! \\times 0!} = 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((5 + 2x)^{8}\\).",
+    "options": [
+      "56",
+      "224000",
+      "2800000",
+      "1400000"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{8}{3} \\times 5^{5} \\times 2^{3} = 56 \\times 3125 \\times 8 = 1400000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{12}\\).",
+    "options": [
+      "72",
+      "792",
+      "665280",
+      "924"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{12}{6} = \\frac{12!}{6!(12-6)!} = 924\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((5 + 3x)^{5}\\).",
+    "options": [
+      "5",
+      "4050",
+      "2025",
+      "9375"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{5}{r}(5)^{5-r}(3x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{5}{4} \\times 5^{1} \\times 3^{4} = 5 \\times 5 \\times 81 = 2025\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{7}{4}\\).",
+    "options": [
+      "28",
+      "840",
+      "70",
+      "35"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{7}{4} = \\frac{7!}{4! \\times 3!} = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((3 + 1x)^{3}\\).",
+    "options": [
+      "27",
+      "9",
+      "3",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{3}{r}(3)^{3-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 3^{1} \\times 1^{2} = 3 \\times 3 \\times 1 = 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{16}{2}\\).",
+    "options": [
+      "240",
+      "136",
+      "16",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{16}{2} = \\frac{16!}{2! \\times 14!} = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{5}\\).",
+    "options": [
+      "5",
+      "15",
+      "10",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{5}{3} = \\frac{5!}{3!(5-3)!} = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{18}{6}\\).",
+    "options": [
+      "18564",
+      "27132",
+      "8568",
+      "13366080"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{18}{6} = \\frac{18!}{6! \\times 12!} = 18564\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{17}{4}\\).",
+    "options": [
+      "57120",
+      "680",
+      "3060",
+      "2380"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{17}{4} = \\frac{17!}{4! \\times 13!} = 2380\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{13}\\).",
+    "options": [
+      "78",
+      "1716",
+      "1287",
+      "1235520"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{13}{6} = \\frac{13!}{6!(13-6)!} = 1716\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{11}\\).",
+    "options": [
+      "110",
+      "55",
+      "165",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{11}{2} = \\frac{11!}{2!(11-2)!} = 55\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((5 + 4x)^{5}\\).",
+    "options": [
+      "12800",
+      "5",
+      "6400",
+      "12500"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{5}{r}(5)^{5-r}(4x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{5}{4} \\times 5^{1} \\times 4^{4} = 5 \\times 5 \\times 256 = 6400\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{16}\\).",
+    "options": [
+      "11440",
+      "12870",
+      "8008",
+      "57657600"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{16}{7} = \\frac{16!}{7!(16-7)!} = 11440\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{6}\\).",
+    "options": [
+      "360",
+      "6",
+      "20",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{6}{4} = \\frac{6!}{4!(6-4)!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 1x)^{6}\\).",
+    "options": [
+      "6",
+      "1458",
+      "18",
+      "2916"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(1x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{6}{1} \\times 3^{5} \\times 1^{1} = 6 \\times 243 \\times 1 = 1458\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((4 + 1x)^{3}\\).",
+    "options": [
+      "12",
+      "48",
+      "24",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(4)^{3-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 4^{1} \\times 1^{2} = 3 \\times 4 \\times 1 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + 2x)^{4}\\).",
+    "options": [
+      "24",
+      "28",
+      "48",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(1)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{4}{2} \\times 1^{2} \\times 2^{2} = 6 \\times 1 \\times 4 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((3 + 3x)^{6}\\).",
+    "options": [
+      "21870",
+      "15",
+      "10941",
+      "10935"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(3x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{6}{4} \\times 3^{2} \\times 3^{4} = 15 \\times 9 \\times 81 = 10935\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{20}{7}\\).",
+    "options": [
+      "116280",
+      "77520",
+      "390700800",
+      "38760"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{20}{7} = \\frac{20!}{7! \\times 13!} = 77520\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((1 + 5x)^{4}\\).",
+    "options": [
+      "20",
+      "40",
+      "4",
+      "500"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(1)^{4-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 1^{3} \\times 5^{1} = 4 \\times 1 \\times 5 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{13}{7}\\).",
+    "options": [
+      "1716",
+      "8648640",
+      "91",
+      "3432"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{13}{7} = \\frac{13!}{7! \\times 6!} = 1716\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{15}\\).",
+    "options": [
+      "5005",
+      "6435",
+      "105",
+      "32432400"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{15}{7} = \\frac{15!}{7!(15-7)!} = 6435\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + 4x)^{5}\\).",
+    "options": [
+      "20",
+      "2560",
+      "5",
+      "1280"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{5}{r}(1)^{5-r}(4x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{5}{4} \\times 1^{1} \\times 4^{4} = 5 \\times 1 \\times 256 = 1280\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((3 + 2x)^{7}\\).",
+    "options": [
+      "7",
+      "1344",
+      "2688",
+      "10206"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(3)^{7-r}(2x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{7}{6} \\times 3^{1} \\times 2^{6} = 7 \\times 3 \\times 64 = 1344\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{13}{5}\\).",
+    "options": [
+      "154440",
+      "1287",
+      "2002",
+      "715"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{13}{5} = \\frac{13!}{5! \\times 8!} = 1287\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + x)^{6}\\).",
+    "options": [
+      "120",
+      "15",
+      "18",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{6}{3} = \\frac{6!}{3!(6-3)!} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{19}\\).",
+    "options": [
+      "11628",
+      "19535040",
+      "50388",
+      "27132"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{19}{6} = \\frac{19!}{6!(19-6)!} = 27132\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((5 + 4x)^{5}\\).",
+    "options": [
+      "32000",
+      "16000",
+      "20000",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{5}{r}(5)^{5-r}(4x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{5}{3} \\times 5^{2} \\times 4^{3} = 10 \\times 25 \\times 64 = 16000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((2 + 1x)^{6}\\).",
+    "options": [
+      "480",
+      "15",
+      "60",
+      "240"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(2)^{6-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{6}{2} \\times 2^{4} \\times 1^{2} = 15 \\times 16 \\times 1 = 240\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{17}\\).",
+    "options": [
+      "19448",
+      "12376",
+      "8910720",
+      "6188"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{17}{6} = \\frac{17!}{6!(17-6)!} = 12376\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{11}{7}\\).",
+    "options": [
+      "1663200",
+      "462",
+      "792",
+      "330"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{11}{7} = \\frac{11!}{7! \\times 4!} = 330\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{15}\\).",
+    "options": [
+      "6435",
+      "3003",
+      "5005",
+      "3603600"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{15}{6} = \\frac{15!}{6!(15-6)!} = 5005\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((5 + 2x)^{3}\\).",
+    "options": [
+      "60",
+      "3",
+      "150",
+      "120"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(5)^{3-r}(2x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 5^{1} \\times 2^{2} = 3 \\times 5 \\times 4 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{15}{6}\\).",
+    "options": [
+      "3603600",
+      "8008",
+      "3003",
+      "5005"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{15}{6} = \\frac{15!}{6! \\times 9!} = 5005\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((2 + 3x)^{6}\\).",
+    "options": [
+      "20",
+      "4326",
+      "8640",
+      "4320"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(2)^{6-r}(3x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{6}{3} \\times 2^{3} \\times 3^{3} = 20 \\times 8 \\times 27 = 4320\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{18}\\).",
+    "options": [
+      "153",
+      "306",
+      "18",
+      "816"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{18}{2} = \\frac{18!}{2!(18-2)!} = 153\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((5 + 4x)^{6}\\).",
+    "options": [
+      "15",
+      "300000",
+      "96000",
+      "150000"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(5)^{6-r}(4x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{6}{2} \\times 5^{4} \\times 4^{2} = 15 \\times 625 \\times 16 = 150000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{18}{4}\\).",
+    "options": [
+      "816",
+      "3876",
+      "3060",
+      "73440"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{18}{4} = \\frac{18!}{4! \\times 14!} = 3060\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((4 + 2x)^{3}\\).",
+    "options": [
+      "51",
+      "3",
+      "48",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{3}{r}(4)^{3-r}(2x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 4^{1} \\times 2^{2} = 3 \\times 4 \\times 4 = 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((1 + 5x)^{3}\\).",
+    "options": [
+      "15",
+      "75",
+      "30",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(1)^{3-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 1^{2} \\times 5^{1} = 3 \\times 1 \\times 5 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{15}\\).",
+    "options": [
+      "32760",
+      "3003",
+      "1365",
+      "455"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{15}{4} = \\frac{15!}{4!(15-4)!} = 1365\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{13}{2}\\).",
+    "options": [
+      "91",
+      "156",
+      "78",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{13}{2} = \\frac{13!}{2! \\times 11!} = 78\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{8}{2}\\).",
+    "options": [
+      "8",
+      "28",
+      "56",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{8}{2} = \\frac{8!}{2! \\times 6!} = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + 2x)^{6}\\).",
+    "options": [
+      "480",
+      "15",
+      "240",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{6}{r}(1)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{6}{4} \\times 1^{2} \\times 2^{4} = 15 \\times 1 \\times 16 = 240\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{16}{3}\\).",
+    "options": [
+      "560",
+      "680",
+      "120",
+      "3360"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{16}{3} = \\frac{16!}{3! \\times 13!} = 560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 3x)^{8}\\).",
+    "options": [
+      "3750000",
+      "87480",
+      "8",
+      "1875000"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{8}{1} \\times 5^{7} \\times 3^{1} = 8 \\times 78125 \\times 3 = 1875000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((3 + 2x)^{4}\\).",
+    "options": [
+      "4",
+      "96",
+      "192",
+      "216"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{4}{r}(3)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 3^{1} \\times 2^{3} = 4 \\times 3 \\times 8 = 96\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{20}\\).",
+    "options": [
+      "1860480",
+      "38760",
+      "15504",
+      "4845"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{20}{5} = \\frac{20!}{5!(20-5)!} = 15504\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((4 + 1x)^{5}\\).",
+    "options": [
+      "1280",
+      "160",
+      "640",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{5}{r}(4)^{5-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{5}{2} \\times 4^{3} \\times 1^{2} = 10 \\times 64 \\times 1 = 640\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{9}{6}\\).",
+    "options": [
+      "84",
+      "126",
+      "60480",
+      "210"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{9}{6} = \\frac{9!}{6! \\times 3!} = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((1 + x)^{17}\\).",
+    "options": [
+      "98017920",
+      "19448",
+      "12376",
+      "24310"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{17}{7} = \\frac{17!}{7!(17-7)!} = 19448\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{11}\\).",
+    "options": [
+      "330",
+      "55440",
+      "55",
+      "462"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{11}{5} = \\frac{11!}{5!(11-5)!} = 462\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((2 + 2x)^{7}\\).",
+    "options": [
+      "1792",
+      "896",
+      "903",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(2)^{7-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{7}{1} \\times 2^{6} \\times 2^{1} = 7 \\times 64 \\times 2 = 896\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{15}{3}\\).",
+    "options": [
+      "560",
+      "105",
+      "2730",
+      "455"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{15}{3} = \\frac{15!}{3! \\times 12!} = 455\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{19}{5}\\).",
+    "options": [
+      "15504",
+      "3876",
+      "1395360",
+      "11628"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{19}{5} = \\frac{19!}{5! \\times 14!} = 11628\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((5 + 1x)^{7}\\).",
+    "options": [
+      "35",
+      "8750",
+      "4375",
+      "21875"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{7}{r}(5)^{7-r}(1x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{7}{4} \\times 5^{3} \\times 1^{4} = 35 \\times 125 \\times 1 = 4375\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{10}{3}\\).",
+    "options": [
+      "120",
+      "165",
+      "45",
+      "720"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{10}{3} = \\frac{10!}{3! \\times 7!} = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 1x)^{5}\\).",
+    "options": [
+      "3125",
+      "25",
+      "5",
+      "6250"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{5}{r}(5)^{5-r}(1x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{5}{1} \\times 5^{4} \\times 1^{1} = 5 \\times 625 \\times 1 = 3125\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{7}{3}\\).",
+    "options": [
+      "210",
+      "35",
+      "21",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{7}{3} = \\frac{7!}{3! \\times 4!} = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 2x)^{4}\\).",
+    "options": [
+      "1000",
+      "4",
+      "2000",
+      "160"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(5)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 5^{3} \\times 2^{1} = 4 \\times 125 \\times 2 = 1000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((4 + 2x)^{8}\\).",
+    "options": [
+      "57344",
+      "28",
+      "28672",
+      "458752"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{8}{r}(4)^{8-r}(2x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 4^{2} \\times 2^{6} = 28 \\times 16 \\times 64 = 28672\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((4 + 1x)^{8}\\).",
+    "options": [
+      "3584",
+      "56",
+      "57344",
+      "7168"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{8}{r}(4)^{8-r}(1x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{8}{5} \\times 4^{3} \\times 1^{5} = 56 \\times 64 \\times 1 = 3584\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{11}{4}\\).",
+    "options": [
+      "7920",
+      "330",
+      "495",
+      "165"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{11}{4} = \\frac{11!}{4! \\times 7!} = 330\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{17}{3}\\).",
+    "options": [
+      "816",
+      "680",
+      "4080",
+      "136"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{17}{3} = \\frac{17!}{3! \\times 14!} = 680\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{19}{7}\\).",
+    "options": [
+      "253955520",
+      "50388",
+      "77520",
+      "27132"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{19}{7} = \\frac{19!}{7! \\times 12!} = 50388\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((1 + 3x)^{6}\\).",
+    "options": [
+      "1458",
+      "18",
+      "6",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{6}{r}(1)^{6-r}(3x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{6}{1} \\times 1^{5} \\times 3^{1} = 6 \\times 1 \\times 3 = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{20}\\).",
+    "options": [
+      "1140",
+      "20",
+      "190",
+      "380"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{20}{2} = \\frac{20!}{2!(20-2)!} = 190\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{10}\\).",
+    "options": [
+      "252",
+      "151200",
+      "210",
+      "120"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{10}{6} = \\frac{10!}{6!(10-6)!} = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((3 + 4x)^{6}\\).",
+    "options": [
+      "34566",
+      "20",
+      "34560",
+      "69120"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(4x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{6}{3} \\times 3^{3} \\times 4^{3} = 20 \\times 27 \\times 64 = 34560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((3 + 1x)^{4}\\).",
+    "options": [
+      "108",
+      "6",
+      "58",
+      "54"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{4}{r}(3)^{4-r}(1x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{4}{2} \\times 3^{2} \\times 1^{2} = 6 \\times 9 \\times 1 = 54\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{14}{5}\\).",
+    "options": [
+      "3003",
+      "240240",
+      "2002",
+      "1001"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{14}{5} = \\frac{14!}{5! \\times 9!} = 2002\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 5x)^{3}\\).",
+    "options": [
+      "750",
+      "378",
+      "375",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{3}{r}(5)^{3-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 5^{2} \\times 5^{1} = 3 \\times 25 \\times 5 = 375\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 4x)^{5}\\).",
+    "options": [
+      "1620",
+      "3840",
+      "3240",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{5}{r}(3)^{5-r}(4x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{5}{1} \\times 3^{4} \\times 4^{1} = 5 \\times 81 \\times 4 = 1620\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((4 + 5x)^{3}\\).",
+    "options": [
+      "3",
+      "240",
+      "480",
+      "300"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{3}{r}(4)^{3-r}(5x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 4^{2} \\times 5^{1} = 3 \\times 16 \\times 5 = 240\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{6}{5}\\).",
+    "options": [
+      "21",
+      "720",
+      "15",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{6}{5} = \\frac{6!}{5! \\times 1!} = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((2 + 4x)^{6}\\).",
+    "options": [
+      "12288",
+      "24576",
+      "768",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{6}{r}(2)^{6-r}(4x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{6}{5} \\times 2^{1} \\times 4^{5} = 6 \\times 2 \\times 1024 = 12288\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + 5x)^{4}\\).",
+    "options": [
+      "500",
+      "20",
+      "1000",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(1)^{4-r}(5x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 1^{1} \\times 5^{3} = 4 \\times 1 \\times 125 = 500\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{9}{2}\\).",
+    "options": [
+      "9",
+      "36",
+      "72",
+      "45"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{9}{2} = \\frac{9!}{2! \\times 7!} = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{19}\\).",
+    "options": [
+      "19",
+      "342",
+      "969",
+      "171"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{19}{2} = \\frac{19!}{2!(19-2)!} = 171\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + 3x)^{7}\\).",
+    "options": [
+      "5103",
+      "189",
+      "21",
+      "10206"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{7}{r}(1)^{7-r}(3x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{7}{5} \\times 1^{2} \\times 3^{5} = 21 \\times 1 \\times 243 = 5103\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + 2x)^{4}\\).",
+    "options": [
+      "64",
+      "8",
+      "32",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{4}{r}(1)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 1^{1} \\times 2^{3} = 4 \\times 1 \\times 8 = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{15}{7}\\).",
+    "options": [
+      "11440",
+      "6435",
+      "5005",
+      "32432400"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{15}{7} = \\frac{15!}{7! \\times 8!} = 6435\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{14}\\).",
+    "options": [
+      "14",
+      "364",
+      "182",
+      "91"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{14}{2} = \\frac{14!}{2!(14-2)!} = 91\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((2 + 5x)^{6}\\).",
+    "options": [
+      "37500",
+      "15",
+      "12000",
+      "6000"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(2)^{6-r}(5x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{6}{2} \\times 2^{4} \\times 5^{2} = 15 \\times 16 \\times 25 = 6000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{14}\\).",
+    "options": [
+      "364",
+      "2002",
+      "1001",
+      "24024"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{14}{4} = \\frac{14!}{4!(14-4)!} = 1001\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{8}\\) in the expansion of \\((1 + x)^{9}\\).",
+    "options": [
+      "9",
+      "362880",
+      "36",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{9}{8} = \\frac{9!}{8!(9-8)!} = 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((3 + 5x)^{8}\\).",
+    "options": [
+      "9450000",
+      "56",
+      "1701000",
+      "4725000"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(3)^{8-r}(5x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{8}{5} \\times 3^{3} \\times 5^{5} = 56 \\times 27 \\times 3125 = 4725000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((3 + 4x)^{8}\\).",
+    "options": [
+      "2064384",
+      "28",
+      "326592",
+      "1032192"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{8}{r}(3)^{8-r}(4x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{8}{6} \\times 3^{2} \\times 4^{6} = 28 \\times 9 \\times 4096 = 1032192\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{15}{5}\\).",
+    "options": [
+      "1365",
+      "360360",
+      "4368",
+      "3003"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{15}{5} = \\frac{15!}{5! \\times 10!} = 3003\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{7}\\).",
+    "options": [
+      "7",
+      "21",
+      "35",
+      "2520"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{7}{5} = \\frac{7!}{5!(7-5)!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{10}\\).",
+    "options": [
+      "90",
+      "120",
+      "45",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{10}{2} = \\frac{10!}{2!(10-2)!} = 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{13}{3}\\).",
+    "options": [
+      "78",
+      "286",
+      "1716",
+      "364"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{13}{3} = \\frac{13!}{3! \\times 10!} = 286\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((4 + 3x)^{7}\\).",
+    "options": [
+      "86016",
+      "20412",
+      "7",
+      "40824"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(4)^{7-r}(3x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{7}{6} \\times 4^{1} \\times 3^{6} = 7 \\times 4 \\times 729 = 20412\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{9}{5}\\).",
+    "options": [
+      "252",
+      "126",
+      "45",
+      "15120"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{9}{5} = \\frac{9!}{5! \\times 4!} = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{20}\\).",
+    "options": [
+      "116280",
+      "1140",
+      "4845",
+      "15504"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{20}{4} = \\frac{20!}{4!(20-4)!} = 4845\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((1 + x)^{11}\\).",
+    "options": [
+      "330",
+      "462",
+      "332640",
+      "66"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{11}{6} = \\frac{11!}{6!(11-6)!} = 462\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((5 + 2x)^{7}\\).",
+    "options": [
+      "140000",
+      "175000",
+      "35",
+      "70000"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{7}{r}(5)^{7-r}(2x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{7}{4} \\times 5^{3} \\times 2^{4} = 35 \\times 125 \\times 16 = 70000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 2x)^{4}\\).",
+    "options": [
+      "4",
+      "432",
+      "216",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{4}{r}(3)^{4-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 3^{3} \\times 2^{1} = 4 \\times 27 \\times 2 = 216\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{16}{5}\\).",
+    "options": [
+      "524160",
+      "1820",
+      "6188",
+      "4368"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{16}{5} = \\frac{16!}{5! \\times 11!} = 4368\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((1 + 2x)^{3}\\).",
+    "options": [
+      "9",
+      "3",
+      "12",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{3}{r}(1)^{3-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{3}{1} \\times 1^{2} \\times 2^{1} = 3 \\times 1 \\times 2 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((4 + 2x)^{7}\\).",
+    "options": [
+      "57344",
+      "1792",
+      "7",
+      "3584"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{7}{r}(4)^{7-r}(2x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{7}{6} \\times 4^{1} \\times 2^{6} = 7 \\times 4 \\times 64 = 1792\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{13}{6}\\).",
+    "options": [
+      "1716",
+      "1287",
+      "1235520",
+      "3003"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{13}{6} = \\frac{13!}{6! \\times 7!} = 1716\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((2 + 2x)^{6}\\).",
+    "options": [
+      "966",
+      "15",
+      "1920",
+      "960"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(2)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{6}{2} \\times 2^{4} \\times 2^{2} = 15 \\times 16 \\times 4 = 960\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((3 + 2x)^{5}\\).",
+    "options": [
+      "1080",
+      "10",
+      "2160",
+      "720"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{5}{r}(3)^{5-r}(2x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{5}{2} \\times 3^{3} \\times 2^{2} = 10 \\times 27 \\times 4 = 1080\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((3 + 4x)^{4}\\).",
+    "options": [
+      "432",
+      "864",
+      "4",
+      "768"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{4}{r}(3)^{4-r}(4x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{4}{1} \\times 3^{3} \\times 4^{1} = 4 \\times 27 \\times 4 = 432\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{18}{3}\\).",
+    "options": [
+      "153",
+      "816",
+      "969",
+      "4896"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{18}{3} = \\frac{18!}{3! \\times 15!} = 816\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{8}\\) in the expansion of \\((1 + x)^{15}\\).",
+    "options": [
+      "5005",
+      "259459200",
+      "6435",
+      "120"
+    ],
+    "correctIndex": 2,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{15}{8} = \\frac{15!}{8!(15-8)!} = 6435\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{17}{6}\\).",
+    "options": [
+      "6188",
+      "12376",
+      "8910720",
+      "18564"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{17}{6} = \\frac{17!}{6! \\times 11!} = 12376\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{6}\\) in the expansion of \\((2 + 5x)^{7}\\).",
+    "options": [
+      "218750",
+      "7",
+      "2240",
+      "437500"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{7}{r}(2)^{7-r}(5x)^{r}\\).\n\nFor \\(x^{6}\\), take \\(r = 6\\):\n\n\\(\\binom{7}{6} \\times 2^{1} \\times 5^{6} = 7 \\times 2 \\times 15625 = 218750\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{9}{7}\\).",
+    "options": [
+      "36",
+      "181440",
+      "120",
+      "84"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{9}{7} = \\frac{9!}{7! \\times 2!} = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((4 + 5x)^{5}\\).",
+    "options": [
+      "10",
+      "20000",
+      "16000",
+      "32000"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{5}{r}(4)^{5-r}(5x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{5}{2} \\times 4^{3} \\times 5^{2} = 10 \\times 64 \\times 25 = 16000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((4 + 3x)^{8}\\).",
+    "options": [
+      "1451520",
+      "2903040",
+      "70",
+      "1451528"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{8}{r}(4)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{8}{4} \\times 4^{4} \\times 3^{4} = 70 \\times 256 \\times 81 = 1451520\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((2 + 4x)^{4}\\).",
+    "options": [
+      "4",
+      "512",
+      "1024",
+      "128"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{4}{r}(2)^{4-r}(4x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 2^{1} \\times 4^{3} = 4 \\times 2 \\times 64 = 512\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{10}{4}\\).",
+    "options": [
+      "120",
+      "5040",
+      "210",
+      "330"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{10}{4} = \\frac{10!}{4! \\times 6!} = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((5 + 3x)^{7}\\).",
+    "options": [
+      "590625",
+      "21",
+      "255150",
+      "127575"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{7}{r}(5)^{7-r}(3x)^{r}\\).\n\nFor \\(x^{5}\\), take \\(r = 5\\):\n\n\\(\\binom{7}{5} \\times 5^{2} \\times 3^{5} = 21 \\times 25 \\times 243 = 127575\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{16}\\).",
+    "options": [
+      "1820",
+      "4368",
+      "8008",
+      "524160"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{16}{5} = \\frac{16!}{5!(16-5)!} = 4368\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{10}\\).",
+    "options": [
+      "252",
+      "210",
+      "5040",
+      "120"
+    ],
+    "correctIndex": 1,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{10}{4} = \\frac{10!}{4!(10-4)!} = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + 2x)^{6}\\).",
+    "options": [
+      "20",
+      "166",
+      "320",
+      "160"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(1)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{6}{3} \\times 1^{3} \\times 2^{3} = 20 \\times 1 \\times 8 = 160\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((5 + 3x)^{8}\\).",
+    "options": [
+      "1875000",
+      "87480",
+      "8",
+      "174960"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{7}\\), take \\(r = 7\\):\n\n\\(\\binom{8}{7} \\times 5^{1} \\times 3^{7} = 8 \\times 5 \\times 2187 = 87480\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((1 + 2x)^{5}\\).",
+    "options": [
+      "80",
+      "10",
+      "40",
+      "160"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{5}{r}(1)^{5-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{5}{3} \\times 1^{2} \\times 2^{3} = 10 \\times 1 \\times 8 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + x)^{7}\\).",
+    "options": [
+      "35",
+      "840",
+      "28",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{7}{4} = \\frac{7!}{4!(7-4)!} = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((2 + 3x)^{8}\\).",
+    "options": [
+      "70",
+      "90720",
+      "181440",
+      "90728"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{8}{r}(2)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{8}{4} \\times 2^{4} \\times 3^{4} = 70 \\times 16 \\times 81 = 90720\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{5}\\) in the expansion of \\((1 + x)^{19}\\).",
+    "options": [
+      "1395360",
+      "3876",
+      "27132",
+      "11628"
+    ],
+    "correctIndex": 3,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{19}{5} = \\frac{19!}{5!(19-5)!} = 11628\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((4 + 3x)^{8}\\).",
+    "options": [
+      "69984",
+      "139968",
+      "8",
+      "393216"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{8}{r}(4)^{8-r}(3x)^{r}\\).\n\nFor \\(x^{7}\\), take \\(r = 7\\):\n\n\\(\\binom{8}{7} \\times 4^{1} \\times 3^{7} = 8 \\times 4 \\times 2187 = 69984\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{7}{5}\\).",
+    "options": [
+      "21",
+      "2520",
+      "56",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{7}{5} = \\frac{7!}{5! \\times 2!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((3 + 4x)^{6}\\).",
+    "options": [
+      "19440",
+      "69120",
+      "15",
+      "34560"
+    ],
+    "correctIndex": 3,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(4x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{6}{4} \\times 3^{2} \\times 4^{4} = 15 \\times 9 \\times 256 = 34560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((3 + 5x)^{8}\\).",
+    "options": [
+      "7087500",
+      "70",
+      "3543750",
+      "3543758"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{8}{r}(3)^{8-r}(5x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{8}{4} \\times 3^{4} \\times 5^{4} = 70 \\times 81 \\times 625 = 3543750\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((1 + x)^{17}\\).",
+    "options": [
+      "136",
+      "272",
+      "680",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{17}{2} = \\frac{17!}{2!(17-2)!} = 136\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{8}\\) in the expansion of \\((1 + x)^{11}\\).",
+    "options": [
+      "165",
+      "330",
+      "6652800",
+      "55"
+    ],
+    "correctIndex": 0,
+    "explanation": "The coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\) is \\(\\binom{n}{r}\\).\n\n\\(\\binom{11}{8} = \\frac{11!}{8!(11-8)!} = 165\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{2}\\) in the expansion of \\((5 + 5x)^{3}\\).",
+    "options": [
+      "375",
+      "3",
+      "378",
+      "750"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{3}{r}(5)^{3-r}(5x)^{r}\\).\n\nFor \\(x^{2}\\), take \\(r = 2\\):\n\n\\(\\binom{3}{2} \\times 5^{1} \\times 5^{2} = 3 \\times 5 \\times 25 = 375\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((3 + 2x)^{6}\\).",
+    "options": [
+      "4320",
+      "20",
+      "4326",
+      "8640"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{6}{3} \\times 3^{3} \\times 2^{3} = 20 \\times 27 \\times 8 = 4320\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((5 + 4x)^{5}\\).",
+    "options": [
+      "12500",
+      "6400",
+      "5",
+      "25000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{5}{r}(5)^{5-r}(4x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{5}{1} \\times 5^{4} \\times 4^{1} = 5 \\times 625 \\times 4 = 12500\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((2 + 4x)^{5}\\).",
+    "options": [
+      "2560",
+      "5120",
+      "1280",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "The general term is \\(\\binom{5}{r}(2)^{5-r}(4x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{5}{3} \\times 2^{2} \\times 4^{3} = 10 \\times 4 \\times 64 = 2560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(\\binom{18}{5}\\).",
+    "options": [
+      "1028160",
+      "3060",
+      "11628",
+      "8568"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(\\binom{18}{5} = \\frac{18!}{5! \\times 13!} = 8568\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{7}\\) in the expansion of \\((5 + 4x)^{8}\\).",
+    "options": [
+      "8",
+      "1310720",
+      "655360",
+      "2500000"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{8}{r}(5)^{8-r}(4x)^{r}\\).\n\nFor \\(x^{7}\\), take \\(r = 7\\):\n\n\\(\\binom{8}{7} \\times 5^{1} \\times 4^{7} = 8 \\times 5 \\times 16384 = 655360\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{1}\\) in the expansion of \\((1 + 2x)^{6}\\).",
+    "options": [
+      "192",
+      "12",
+      "24",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "The general term is \\(\\binom{6}{r}(1)^{6-r}(2x)^{r}\\).\n\nFor \\(x^{1}\\), take \\(r = 1\\):\n\n\\(\\binom{6}{1} \\times 1^{5} \\times 2^{1} = 6 \\times 1 \\times 2 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{4}\\) in the expansion of \\((1 + 5x)^{8}\\).",
+    "options": [
+      "43758",
+      "70",
+      "43750",
+      "87500"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{8}{r}(1)^{8-r}(5x)^{r}\\).\n\nFor \\(x^{4}\\), take \\(r = 4\\):\n\n\\(\\binom{8}{4} \\times 1^{4} \\times 5^{4} = 70 \\times 1 \\times 625 = 43750\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((3 + 3x)^{6}\\).",
+    "options": [
+      "14586",
+      "20",
+      "14580",
+      "29160"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{6}{r}(3)^{6-r}(3x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{6}{3} \\times 3^{3} \\times 3^{3} = 20 \\times 27 \\times 27 = 14580\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the coefficient of \\(x^{3}\\) in the expansion of \\((4 + 5x)^{4}\\).",
+    "options": [
+      "4000",
+      "4",
+      "2000",
+      "1280"
+    ],
+    "correctIndex": 2,
+    "explanation": "The general term is \\(\\binom{4}{r}(4)^{4-r}(5x)^{r}\\).\n\nFor \\(x^{3}\\), take \\(r = 3\\):\n\n\\(\\binom{4}{3} \\times 4^{1} \\times 5^{3} = 4 \\times 4 \\times 125 = 2000\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "3dQXxI55T8JBhjpHyja8",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "176cm³",
+      "616cm³",
+      "1232cm³",
+      "3696cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 24\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 24 = 1232\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 14cm and height 27cm.",
+    "options": [
+      "126cm³",
+      "882cm³",
+      "5292cm³",
+      "1764cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 14^{2} = 196\\) cm²\n\n\\(V = \\frac{1}{3} \\times 196 \\times 27 = 1764\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1672cm³",
+      "836cm³",
+      "11704cm³",
+      "3901.33cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 19\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 19 = 11704\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 4cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "821.33cm³",
+      "352cm³",
+      "176cm³",
+      "2464cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 4\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 4 = 2464\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a sphere of radius 14cm, correct to 2 decimal places. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2464cm³",
+      "11498.67cm³",
+      "2874.67cm³",
+      "5749.33cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a sphere \\(= \\frac{4}{3}\\pi r^{3}\\)\n\n\\(= \\frac{4}{3} \\times \\frac{22}{7} \\times 14^{3}\\)\n\n\\(= \\frac{4}{3} \\times \\frac{22}{7} \\times 2744 = 11498.67\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 8cm and height 15cm.",
+    "options": [
+      "40cm³",
+      "960cm³",
+      "160cm³",
+      "320cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 8^{2} = 64\\) cm²\n\n\\(V = \\frac{1}{3} \\times 64 \\times 15 = 320\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 16cm and height 24cm.",
+    "options": [
+      "1024cm³",
+      "128cm³",
+      "6144cm³",
+      "2048cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 16^{2} = 256\\) cm²\n\n\\(V = \\frac{1}{3} \\times 256 \\times 24 = 2048\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "44cm³",
+      "616cm³",
+      "1848cm³",
+      "308cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 3\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 3 = 616\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 16cm, width 7cm and height 14cm.",
+    "options": [
+      "112cm³",
+      "868cm³",
+      "1568cm³",
+      "37cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 16 \\times 7 \\times 14\\)\n\n\\(= 1568\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 462cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7cm",
+      "1.50cm",
+      "3cm",
+      "6cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(462 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(462 = 154h\\)\n\n\\(h = 3\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a sphere of radius 7cm, correct to 2 decimal places. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm³",
+      "718.67cm³",
+      "359.33cm³",
+      "1437.33cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a sphere \\(= \\frac{4}{3}\\pi r^{3}\\)\n\n\\(= \\frac{4}{3} \\times \\frac{22}{7} \\times 7^{3}\\)\n\n\\(= \\frac{4}{3} \\times \\frac{22}{7} \\times 343 = 1437.33\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 24cm, width 24cm and height 21cm.",
+    "options": [
+      "69cm³",
+      "576cm³",
+      "3168cm³",
+      "12096cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 24 \\times 24 \\times 21\\)\n\n\\(= 12096\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 11088cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "36cm",
+      "18cm",
+      "21cm",
+      "9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(11088 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(11088 = 616h\\)\n\n\\(h = 18\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2079cm³",
+      "12474cm³",
+      "198cm³",
+      "4158cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 9\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 9 = 4158\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 21cm, width 18cm and height 19cm.",
+    "options": [
+      "7182cm³",
+      "58cm³",
+      "378cm³",
+      "2238cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 21 \\times 18 \\times 19\\)\n\n\\(= 7182\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 20cm, width 20cm and height 23cm.",
+    "options": [
+      "2640cm³",
+      "9200cm³",
+      "400cm³",
+      "63cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 20 \\times 20 \\times 23\\)\n\n\\(= 9200\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "8316cm³",
+      "396cm³",
+      "2772cm³",
+      "792cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 6\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 6 = 8316\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 11cm and height 9cm.",
+    "options": [
+      "33cm³",
+      "1089cm³",
+      "363cm³",
+      "181.50cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 11^{2} = 121\\) cm²\n\n\\(V = \\frac{1}{3} \\times 121 \\times 9 = 363\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 5cm and height 3cm.",
+    "options": [
+      "5cm³",
+      "75cm³",
+      "12.50cm³",
+      "25cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 5^{2} = 25\\) cm²\n\n\\(V = \\frac{1}{3} \\times 25 \\times 3 = 25\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 5544cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4cm",
+      "8cm",
+      "7cm",
+      "2cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(5544 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(5544 = 1386h\\)\n\n\\(h = 4\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "462cm³",
+      "198cm³",
+      "1386cm³",
+      "396cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 9\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 9 = 1386\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 12474cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "9cm",
+      "4.50cm",
+      "12cm",
+      "18cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(12474 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(12474 = 1386h\\)\n\n\\(h = 9\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 25cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "61600cm³",
+      "2200cm³",
+      "20533.33cm³",
+      "4400cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 25\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 25 = 61600\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 3cm and height 3cm.",
+    "options": [
+      "3cm³",
+      "9cm³",
+      "4.50cm³",
+      "27cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 3^{2} = 9\\) cm²\n\n\\(V = \\frac{1}{3} \\times 9 \\times 3 = 9\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 18cm and height 3cm. If the prism is 24cm long, find its volume.",
+    "options": [
+      "1296cm³",
+      "648cm³",
+      "27cm³",
+      "216cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 18 \\times 3 = 27\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 27 \\times 24 = 648\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4312cm³",
+      "12936cm³",
+      "2156cm³",
+      "308cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 21\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 21 = 4312\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "9702cm³",
+      "29106cm³",
+      "4851cm³",
+      "462cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 21\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 21 = 9702\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 2772cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "21cm",
+      "9cm",
+      "18cm",
+      "36cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(2772 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(2772 = 154h\\)\n\n\\(h = 18\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "33264cm³",
+      "11088cm³",
+      "5544cm³",
+      "528cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 24\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 24 = 11088\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2772cm³",
+      "132cm³",
+      "8316cm³",
+      "1386cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 6\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 6 = 2772\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm³",
+      "1848cm³",
+      "616cm³",
+      "308cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 12\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 12 = 616\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 21cm, width 4cm and height 19cm.",
+    "options": [
+      "44cm³",
+      "1118cm³",
+      "1596cm³",
+      "84cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 21 \\times 4 \\times 19\\)\n\n\\(= 1596\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 9cm and height 6cm.",
+    "options": [
+      "486cm³",
+      "18cm³",
+      "81cm³",
+      "162cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 9^{2} = 81\\) cm²\n\n\\(V = \\frac{1}{3} \\times 81 \\times 6 = 162\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 14cm and height 14cm.",
+    "options": [
+      "1960cm³",
+      "140cm³",
+      "38cm³",
+      "952cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 14 \\times 14\\)\n\n\\(= 1960\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 17cm and height 3cm.",
+    "options": [
+      "867cm³",
+      "17cm³",
+      "289cm³",
+      "144.50cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 17^{2} = 289\\) cm²\n\n\\(V = \\frac{1}{3} \\times 289 \\times 3 = 289\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 13cm and height 12cm.",
+    "options": [
+      "676cm³",
+      "52cm³",
+      "2028cm³",
+      "338cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 13^{2} = 169\\) cm²\n\n\\(V = \\frac{1}{3} \\times 169 \\times 12 = 676\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 15cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3465cm³",
+      "330cm³",
+      "20790cm³",
+      "6930cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 15\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 15 = 6930\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "66cm³",
+      "462cm³",
+      "231cm³",
+      "1386cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 9\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 9 = 462\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "359.33cm³",
+      "154cm³",
+      "308cm³",
+      "1078cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 7\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 7 = 1078\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 14cm and height 3cm.",
+    "options": [
+      "588cm³",
+      "14cm³",
+      "196cm³",
+      "98cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 14^{2} = 196\\) cm²\n\n\\(V = \\frac{1}{3} \\times 196 \\times 3 = 196\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 22176cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "32cm",
+      "19cm",
+      "16cm",
+      "8cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(22176 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(22176 = 1386h\\)\n\n\\(h = 16\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 17cm, width 15cm and height 10cm.",
+    "options": [
+      "42cm³",
+      "2550cm³",
+      "255cm³",
+      "1150cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 17 \\times 15 \\times 10\\)\n\n\\(= 2550\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 24948cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "21cm",
+      "36cm",
+      "9cm",
+      "18cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(24948 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(24948 = 1386h\\)\n\n\\(h = 18\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 2464cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "8cm",
+      "16cm",
+      "32cm",
+      "19cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(2464 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(2464 = 154h\\)\n\n\\(h = 16\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "792cm³",
+      "1584cm³",
+      "5544cm³",
+      "16632cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 12\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 12 = 16632\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 19cm and height 6cm. If the prism is 12cm long, find its volume.",
+    "options": [
+      "228cm³",
+      "1368cm³",
+      "57cm³",
+      "684cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 19 \\times 6 = 57\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 57 \\times 12 = 684\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 6cm. If the prism is 11cm long, find its volume.",
+    "options": [
+      "21cm³",
+      "462cm³",
+      "231cm³",
+      "77cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 6 = 21\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 21 \\times 11 = 231\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "5544cm³",
+      "1848cm³",
+      "132cm³",
+      "924cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 9\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 9 = 1848\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1848cm³",
+      "264cm³",
+      "11088cm³",
+      "3696cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 18\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 18 = 3696\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 16cm, width 22cm and height 20cm.",
+    "options": [
+      "7040cm³",
+      "352cm³",
+      "58cm³",
+      "2224cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 16 \\times 22 \\times 20\\)\n\n\\(= 7040\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 15cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2310cm³",
+      "385cm³",
+      "770cm³",
+      "110cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 15\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 15 = 770\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 14cm and height 24cm.",
+    "options": [
+      "112cm³",
+      "4704cm³",
+      "1568cm³",
+      "784cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 14^{2} = 196\\) cm²\n\n\\(V = \\frac{1}{3} \\times 196 \\times 24 = 1568\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 3cm, width 11cm and height 11cm.",
+    "options": [
+      "363cm³",
+      "33cm³",
+      "374cm³",
+      "25cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 3 \\times 11 \\times 11\\)\n\n\\(= 363\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 9856cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "32cm",
+      "19cm",
+      "8cm",
+      "16cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(9856 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(9856 = 616h\\)\n\n\\(h = 16\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a sphere of radius 21cm, correct to 2 decimal places. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "19404cm³",
+      "38808cm³",
+      "9702cm³",
+      "5544cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a sphere \\(= \\frac{4}{3}\\pi r^{3}\\)\n\n\\(= \\frac{4}{3} \\times \\frac{22}{7} \\times 21^{3}\\)\n\n\\(= \\frac{4}{3} \\times \\frac{22}{7} \\times 9261 = 38808\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 12cm and height 27cm.",
+    "options": [
+      "648cm³",
+      "3888cm³",
+      "108cm³",
+      "1296cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 12^{2} = 144\\) cm²\n\n\\(V = \\frac{1}{3} \\times 144 \\times 27 = 1296\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 14cm and height 15cm. If the prism is 22cm long, find its volume.",
+    "options": [
+      "770cm³",
+      "4620cm³",
+      "105cm³",
+      "2310cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 14 \\times 15 = 105\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 105 \\times 22 = 2310\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2258.67cm³",
+      "6776cm³",
+      "484cm³",
+      "968cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 11\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 11 = 6776\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 16cm, width 23cm and height 23cm.",
+    "options": [
+      "368cm³",
+      "62cm³",
+      "2530cm³",
+      "8464cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 16 \\times 23 \\times 23\\)\n\n\\(= 8464\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2310cm³",
+      "330cm³",
+      "6930cm³",
+      "660cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 5\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 5 = 6930\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 4cm and height 6cm.",
+    "options": [
+      "8cm³",
+      "32cm³",
+      "96cm³",
+      "16cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 4^{2} = 16\\) cm²\n\n\\(V = \\frac{1}{3} \\times 16 \\times 6 = 32\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 14cm and height 16cm. If the prism is 25cm long, find its volume.",
+    "options": [
+      "2800cm³",
+      "112cm³",
+      "5600cm³",
+      "933.33cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 14 \\times 16 = 112\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 112 \\times 25 = 2800\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 3cm and height 6cm.",
+    "options": [
+      "9cm³",
+      "18cm³",
+      "6cm³",
+      "54cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 3^{2} = 9\\) cm²\n\n\\(V = \\frac{1}{3} \\times 9 \\times 6 = 18\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4158cm³",
+      "8316cm³",
+      "396cm³",
+      "24948cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 18\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 18 = 8316\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 16cm, width 22cm and height 24cm.",
+    "options": [
+      "8448cm³",
+      "2528cm³",
+      "62cm³",
+      "352cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 16 \\times 22 \\times 24\\)\n\n\\(= 8448\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "594cm³",
+      "1188cm³",
+      "12474cm³",
+      "4158cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 9\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 9 = 12474\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 12cm. If the prism is 15cm long, find its volume.",
+    "options": [
+      "2880cm³",
+      "96cm³",
+      "1440cm³",
+      "480cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 12 = 96\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 96 \\times 15 = 1440\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 3cm, width 10cm and height 10cm.",
+    "options": [
+      "30cm³",
+      "23cm³",
+      "320cm³",
+      "300cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 3 \\times 10 \\times 10\\)\n\n\\(= 300\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 4cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "88cm³",
+      "176cm³",
+      "205.33cm³",
+      "616cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 4\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 4 = 616\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "12936cm³",
+      "4312cm³",
+      "1848cm³",
+      "924cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 21\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 21 = 12936\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 18cm and height 18cm. If the prism is 22cm long, find its volume.",
+    "options": [
+      "3564cm³",
+      "1188cm³",
+      "7128cm³",
+      "162cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 18 \\times 18 = 162\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 162 \\times 22 = 3564\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 18cm and height 6cm.",
+    "options": [
+      "648cm³",
+      "36cm³",
+      "1944cm³",
+      "324cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 18^{2} = 324\\) cm²\n\n\\(V = \\frac{1}{3} \\times 324 \\times 6 = 648\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 4158cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "6cm",
+      "21cm",
+      "3cm",
+      "1.50cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(4158 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(4158 = 1386h\\)\n\n\\(h = 3\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 18cm, width 7cm and height 9cm.",
+    "options": [
+      "702cm³",
+      "34cm³",
+      "1134cm³",
+      "126cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 18 \\times 7 \\times 9\\)\n\n\\(= 1134\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "8778cm³",
+      "1254cm³",
+      "26334cm³",
+      "2508cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 19\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 19 = 26334\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 14cm, width 18cm and height 3cm.",
+    "options": [
+      "696cm³",
+      "756cm³",
+      "35cm³",
+      "252cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 14 \\times 18 \\times 3\\)\n\n\\(= 756\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "154cm³",
+      "308cm³",
+      "924cm³",
+      "44cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 6\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 6 = 308\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 11cm and height 18cm.",
+    "options": [
+      "363cm³",
+      "66cm³",
+      "726cm³",
+      "2178cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 11^{2} = 121\\) cm²\n\n\\(V = \\frac{1}{3} \\times 121 \\times 18 = 726\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 9cm and height 3cm.",
+    "options": [
+      "40.50cm³",
+      "81cm³",
+      "9cm³",
+      "243cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 9^{2} = 81\\) cm²\n\n\\(V = \\frac{1}{3} \\times 81 \\times 3 = 81\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 2156cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7cm",
+      "14cm",
+      "17cm",
+      "28cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(2156 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(2156 = 154h\\)\n\n\\(h = 14\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 616cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4cm",
+      "2cm",
+      "8cm",
+      "7cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(616 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(616 = 154h\\)\n\n\\(h = 4\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 13cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "858cm³",
+      "6006cm³",
+      "18018cm³",
+      "1716cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 13\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 13 = 18018\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 9cm and height 24cm.",
+    "options": [
+      "324cm³",
+      "648cm³",
+      "72cm³",
+      "1944cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 9^{2} = 81\\) cm²\n\n\\(V = \\frac{1}{3} \\times 81 \\times 24 = 648\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 7cm and height 21cm.",
+    "options": [
+      "343cm³",
+      "171.50cm³",
+      "1029cm³",
+      "49cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 7^{2} = 49\\) cm²\n\n\\(V = \\frac{1}{3} \\times 49 \\times 21 = 343\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 18cm. If the prism is 18cm long, find its volume.",
+    "options": [
+      "2268cm³",
+      "63cm³",
+      "378cm³",
+      "1134cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 18 = 63\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 63 \\times 18 = 1134\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 11cm and height 5cm. If the prism is 23cm long, find its volume.",
+    "options": [
+      "27.50cm³",
+      "1265cm³",
+      "210.83cm³",
+      "632.50cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 11 \\times 5 = 27.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 27.5 \\times 23 = 632.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 924cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "12cm",
+      "6cm",
+      "3cm",
+      "9cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(924 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(924 = 154h\\)\n\n\\(h = 6\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 18cm and height 24cm.",
+    "options": [
+      "1296cm³",
+      "144cm³",
+      "2592cm³",
+      "7776cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 18^{2} = 324\\) cm²\n\n\\(V = \\frac{1}{3} \\times 324 \\times 24 = 2592\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4158cm³",
+      "1386cm³",
+      "198cm³",
+      "396cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 3\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 3 = 4158\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1386cm³",
+      "66cm³",
+      "4158cm³",
+      "693cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 3\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 3 = 1386\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 9cm and height 4cm. If the prism is 13cm long, find its volume.",
+    "options": [
+      "468cm³",
+      "78cm³",
+      "234cm³",
+      "18cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 9 \\times 4 = 18\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 18 \\times 13 = 234\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 17cm and height 6cm.",
+    "options": [
+      "578cm³",
+      "289cm³",
+      "1734cm³",
+      "34cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 17^{2} = 289\\) cm²\n\n\\(V = \\frac{1}{3} \\times 289 \\times 6 = 578\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 5cm and height 18cm.",
+    "options": [
+      "450cm³",
+      "150cm³",
+      "30cm³",
+      "75cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 5^{2} = 25\\) cm²\n\n\\(V = \\frac{1}{3} \\times 25 \\times 18 = 150\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "77cm³",
+      "22cm³",
+      "462cm³",
+      "154cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 3\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 3 = 154\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 8316cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3cm",
+      "6cm",
+      "9cm",
+      "12cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(8316 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(8316 = 1386h\\)\n\n\\(h = 6\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 3cm, width 19cm and height 7cm.",
+    "options": [
+      "29cm³",
+      "399cm³",
+      "422cm³",
+      "57cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 3 \\times 19 \\times 7\\)\n\n\\(= 399\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 20cm and height 9cm. If the prism is 8cm long, find its volume.",
+    "options": [
+      "720cm³",
+      "240cm³",
+      "1440cm³",
+      "90cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 20 \\times 9 = 90\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 90 \\times 8 = 720\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 5544cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "18cm",
+      "4.50cm",
+      "9cm",
+      "12cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(5544 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(5544 = 616h\\)\n\n\\(h = 9\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 15cm, width 14cm and height 21cm.",
+    "options": [
+      "50cm³",
+      "210cm³",
+      "4410cm³",
+      "1638cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 15 \\times 14 \\times 21\\)\n\n\\(= 4410\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 10cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "8213.33cm³",
+      "1760cm³",
+      "880cm³",
+      "24640cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 10\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 10 = 24640\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1056cm³",
+      "528cm³",
+      "3696cm³",
+      "1232cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 24\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 24 = 3696\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 6cm and height 18cm.",
+    "options": [
+      "216cm³",
+      "648cm³",
+      "36cm³",
+      "108cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 6^{2} = 36\\) cm²\n\n\\(V = \\frac{1}{3} \\times 36 \\times 18 = 216\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 7cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "924cm³",
+      "2772cm³",
+      "462cm³",
+      "132cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 7^{2} \\times 18\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 49 \\times 18 = 924\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2618cm³",
+      "748cm³",
+      "374cm³",
+      "872.67cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 17\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 17 = 2618\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 8cm and height 3cm.",
+    "options": [
+      "8cm³",
+      "32cm³",
+      "64cm³",
+      "192cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 8^{2} = 64\\) cm²\n\n\\(V = \\frac{1}{3} \\times 64 \\times 3 = 64\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 11cm and height 24cm.",
+    "options": [
+      "2904cm³",
+      "484cm³",
+      "88cm³",
+      "968cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 11^{2} = 121\\) cm²\n\n\\(V = \\frac{1}{3} \\times 121 \\times 24 = 968\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "59136cm³",
+      "4224cm³",
+      "2112cm³",
+      "19712cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 24\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 24 = 59136\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 2464cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2cm",
+      "8cm",
+      "7cm",
+      "4cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(2464 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(2464 = 616h\\)\n\n\\(h = 4\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7392cm³",
+      "176cm³",
+      "1232cm³",
+      "2464cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 12\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 12 = 2464\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 15cm and height 16cm. If the prism is 18cm long, find its volume.",
+    "options": [
+      "2160cm³",
+      "720cm³",
+      "4320cm³",
+      "120cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 15 \\times 16 = 120\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 120 \\times 18 = 2160\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 20cm, width 10cm and height 4cm.",
+    "options": [
+      "34cm³",
+      "200cm³",
+      "800cm³",
+      "640cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 20 \\times 10 \\times 4\\)\n\n\\(= 800\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 5cm and height 9cm.",
+    "options": [
+      "15cm³",
+      "75cm³",
+      "225cm³",
+      "37.50cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 5^{2} = 25\\) cm²\n\n\\(V = \\frac{1}{3} \\times 25 \\times 9 = 75\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 1078cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7cm",
+      "14cm",
+      "3.50cm",
+      "10cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(1078 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(1078 = 154h\\)\n\n\\(h = 7\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 9cm and height 17cm. If the prism is 5cm long, find its volume.",
+    "options": [
+      "382.50cm³",
+      "76.50cm³",
+      "127.50cm³",
+      "765cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 9 \\times 17 = 76.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 76.5 \\times 5 = 382.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 21cm, width 17cm and height 8cm.",
+    "options": [
+      "2856cm³",
+      "46cm³",
+      "1322cm³",
+      "357cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 21 \\times 17 \\times 8\\)\n\n\\(= 2856\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 5cm and height 18cm. If the prism is 16cm long, find its volume.",
+    "options": [
+      "1440cm³",
+      "240cm³",
+      "720cm³",
+      "45cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 5 \\times 18 = 45\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 45 \\times 16 = 720\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 12cm and height 11cm. If the prism is 6cm long, find its volume.",
+    "options": [
+      "792cm³",
+      "132cm³",
+      "396cm³",
+      "66cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 12 \\times 11 = 66\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 66 \\times 6 = 396\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 27720cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "20cm",
+      "23cm",
+      "10cm",
+      "40cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(27720 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(27720 = 1386h\\)\n\n\\(h = 20\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 25cm, width 24cm and height 24cm.",
+    "options": [
+      "600cm³",
+      "3552cm³",
+      "14400cm³",
+      "73cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 25 \\times 24 \\times 24\\)\n\n\\(= 14400\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 23562cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "34cm",
+      "20cm",
+      "17cm",
+      "8.50cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(23562 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(23562 = 1386h\\)\n\n\\(h = 17\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 4928cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4cm",
+      "11cm",
+      "16cm",
+      "8cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(4928 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(4928 = 616h\\)\n\n\\(h = 8\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 15cm and height 6cm.",
+    "options": [
+      "225cm³",
+      "1350cm³",
+      "450cm³",
+      "30cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 15^{2} = 225\\) cm²\n\n\\(V = \\frac{1}{3} \\times 225 \\times 6 = 450\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 19cm, width 21cm and height 25cm.",
+    "options": [
+      "9975cm³",
+      "65cm³",
+      "2798cm³",
+      "399cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 19 \\times 21 \\times 25\\)\n\n\\(= 9975\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 9cm and height 5cm. If the prism is 9cm long, find its volume.",
+    "options": [
+      "67.50cm³",
+      "22.50cm³",
+      "405cm³",
+      "202.50cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 9 \\times 5 = 22.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 22.5 \\times 9 = 202.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 9702cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "10cm",
+      "3.50cm",
+      "7cm",
+      "14cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(9702 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(9702 = 1386h\\)\n\n\\(h = 7\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 21cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "5544cm³",
+      "264cm³",
+      "2772cm³",
+      "16632cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 21^{2} \\times 12\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 441 \\times 12 = 5544\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 9cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "792cm³",
+      "396cm³",
+      "5544cm³",
+      "1848cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 9\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 9 = 5544\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 8624cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "28cm",
+      "17cm",
+      "14cm",
+      "7cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(8624 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(8624 = 616h\\)\n\n\\(h = 14\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 6cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm³",
+      "88cm³",
+      "3696cm³",
+      "1232cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 6\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 6 = 1232\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 13cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2288cm³",
+      "32032cm³",
+      "1144cm³",
+      "10677.33cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 13\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 13 = 32032\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 23cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1180.67cm³",
+      "3542cm³",
+      "506cm³",
+      "1012cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 23\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 23 = 3542\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 13cm and height 9cm. If the prism is 20cm long, find its volume.",
+    "options": [
+      "1170cm³",
+      "390cm³",
+      "2340cm³",
+      "58.50cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 13 \\times 9 = 58.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 58.5 \\times 20 = 1170\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 12cm and height 24cm.",
+    "options": [
+      "3456cm³",
+      "576cm³",
+      "1152cm³",
+      "96cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 12^{2} = 144\\) cm²\n\n\\(V = \\frac{1}{3} \\times 144 \\times 24 = 1152\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 2926cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22cm",
+      "9.50cm",
+      "19cm",
+      "38cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(2926 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(2926 = 154h\\)\n\n\\(h = 19\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 17cm and height 10cm. If the prism is 19cm long, find its volume.",
+    "options": [
+      "85cm³",
+      "538.33cm³",
+      "3230cm³",
+      "1615cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 17 \\times 10 = 85\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 85 \\times 19 = 1615\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 24cm, width 14cm and height 19cm.",
+    "options": [
+      "6384cm³",
+      "2116cm³",
+      "57cm³",
+      "336cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 24 \\times 14 \\times 19\\)\n\n\\(= 6384\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 15246cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "14cm",
+      "11cm",
+      "5.50cm",
+      "22cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(15246 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(15246 = 1386h\\)\n\n\\(h = 11\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4928cm³",
+      "2112cm³",
+      "1056cm³",
+      "14784cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 24\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 24 = 14784\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 17cm, width 16cm and height 12cm.",
+    "options": [
+      "3264cm³",
+      "1336cm³",
+      "45cm³",
+      "272cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 17 \\times 16 \\times 12\\)\n\n\\(= 3264\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 17cm. If the prism is 17cm long, find its volume.",
+    "options": [
+      "59.50cm³",
+      "2023cm³",
+      "337.17cm³",
+      "1011.50cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 17 = 59.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 59.5 \\times 17 = 1011.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 8cm and height 7cm. If the prism is 24cm long, find its volume.",
+    "options": [
+      "672cm³",
+      "224cm³",
+      "28cm³",
+      "1344cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 8 \\times 7 = 28\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 28 \\times 24 = 672\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 9cm, width 21cm and height 9cm.",
+    "options": [
+      "39cm³",
+      "189cm³",
+      "1701cm³",
+      "918cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 9 \\times 21 \\times 9\\)\n\n\\(= 1701\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 4cm, width 24cm and height 23cm.",
+    "options": [
+      "96cm³",
+      "1480cm³",
+      "51cm³",
+      "2208cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 4 \\times 24 \\times 23\\)\n\n\\(= 2208\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 13cm, width 23cm and height 20cm.",
+    "options": [
+      "5980cm³",
+      "299cm³",
+      "56cm³",
+      "2038cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 13 \\times 23 \\times 20\\)\n\n\\(= 5980\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 14cm, width 6cm and height 19cm.",
+    "options": [
+      "928cm³",
+      "84cm³",
+      "39cm³",
+      "1596cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 14 \\times 6 \\times 19\\)\n\n\\(= 1596\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 17cm and height 13cm. If the prism is 7cm long, find its volume.",
+    "options": [
+      "110.50cm³",
+      "1547cm³",
+      "257.83cm³",
+      "773.50cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 17 \\times 13 = 110.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 110.5 \\times 7 = 773.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 12cm and height 3cm. If the prism is 7cm long, find its volume.",
+    "options": [
+      "18cm³",
+      "126cm³",
+      "42cm³",
+      "252cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 12 \\times 3 = 18\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 18 \\times 7 = 126\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 8008cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "26cm",
+      "6.50cm",
+      "16cm",
+      "13cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(8008 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(8008 = 616h\\)\n\n\\(h = 13\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "924cm³",
+      "396cm³",
+      "2772cm³",
+      "792cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 18\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 18 = 2772\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 22cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "18069.33cm³",
+      "3872cm³",
+      "54208cm³",
+      "1936cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 22\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 22 = 54208\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 6930cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "8cm",
+      "10cm",
+      "5cm",
+      "2.50cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(6930 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(6930 = 1386h\\)\n\n\\(h = 5\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 6cm, width 9cm and height 17cm.",
+    "options": [
+      "918cm³",
+      "618cm³",
+      "32cm³",
+      "54cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 6 \\times 9 \\times 17\\)\n\n\\(= 918\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7854cm³",
+      "23562cm³",
+      "2244cm³",
+      "1122cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 17\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 17 = 23562\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 6160cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "5cm",
+      "20cm",
+      "13cm",
+      "10cm"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(6160 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(6160 = 616h\\)\n\n\\(h = 10\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 6cm, width 14cm and height 14cm.",
+    "options": [
+      "34cm³",
+      "1176cm³",
+      "728cm³",
+      "84cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 6 \\times 14 \\times 14\\)\n\n\\(= 1176\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 3cm and height 15cm.",
+    "options": [
+      "45cm³",
+      "22.50cm³",
+      "135cm³",
+      "15cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 3^{2} = 9\\) cm²\n\n\\(V = \\frac{1}{3} \\times 9 \\times 15 = 45\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 21cm, width 13cm and height 4cm.",
+    "options": [
+      "818cm³",
+      "38cm³",
+      "1092cm³",
+      "273cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 21 \\times 13 \\times 4\\)\n\n\\(= 1092\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 11cm, width 6cm and height 5cm.",
+    "options": [
+      "302cm³",
+      "66cm³",
+      "22cm³",
+      "330cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 11 \\times 6 \\times 5\\)\n\n\\(= 330\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cone of base radius 14cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "14784cm³",
+      "2464cm³",
+      "352cm³",
+      "4928cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cone \\(= \\frac{1}{3}\\pi r^{2} h\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 14^{2} \\times 24\\)\n\n\\(= \\frac{1}{3} \\times \\frac{22}{7} \\times 196 \\times 24 = 4928\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 17cm and height 24cm.",
+    "options": [
+      "136cm³",
+      "2312cm³",
+      "6936cm³",
+      "1156cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 17^{2} = 289\\) cm²\n\n\\(V = \\frac{1}{3} \\times 289 \\times 24 = 2312\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 13cm and height 16cm. If the prism is 15cm long, find its volume.",
+    "options": [
+      "104cm³",
+      "520cm³",
+      "1560cm³",
+      "3120cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 13 \\times 16 = 104\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 104 \\times 15 = 1560\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 3cm and height 12cm.",
+    "options": [
+      "18cm³",
+      "36cm³",
+      "12cm³",
+      "108cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 3^{2} = 9\\) cm²\n\n\\(V = \\frac{1}{3} \\times 9 \\times 12 = 36\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "564.67cm³",
+      "242cm³",
+      "1694cm³",
+      "484cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 11\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 11 = 1694\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 14cm and height 16cm. If the prism is 15cm long, find its volume.",
+    "options": [
+      "560cm³",
+      "3360cm³",
+      "1680cm³",
+      "112cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 14 \\times 16 = 112\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 112 \\times 15 = 1680\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 5cm and height 18cm. If the prism is 14cm long, find its volume.",
+    "options": [
+      "45cm³",
+      "210cm³",
+      "1260cm³",
+      "630cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 5 \\times 18 = 45\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 45 \\times 14 = 630\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "132cm³",
+      "1848cm³",
+      "616cm³",
+      "264cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 3\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 3 = 1848\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 10cm and height 3cm. If the prism is 22cm long, find its volume.",
+    "options": [
+      "110cm³",
+      "660cm³",
+      "15cm³",
+      "330cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 10 \\times 3 = 15\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 15 \\times 22 = 330\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 25cm and height 4cm.",
+    "options": [
+      "1000cm³",
+      "250cm³",
+      "39cm³",
+      "780cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 25 \\times 4\\)\n\n\\(= 1000\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 9cm. If the prism is 9cm long, find its volume.",
+    "options": [
+      "216cm³",
+      "1296cm³",
+      "72cm³",
+      "648cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 9 = 72\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 72 \\times 9 = 648\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "22176cm³",
+      "1056cm³",
+      "2112cm³",
+      "7392cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 16\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 16 = 22176\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 1694cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "11cm",
+      "5.50cm",
+      "22cm",
+      "14cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(1694 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(1694 = 154h\\)\n\n\\(h = 11\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 1232cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "4cm",
+      "11cm",
+      "8cm",
+      "16cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(1232 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(1232 = 154h\\)\n\n\\(h = 8\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "3696cm³",
+      "792cm³",
+      "11088cm³",
+      "1584cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 18\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 18 = 11088\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 22cm, width 22cm and height 22cm.",
+    "options": [
+      "2904cm³",
+      "66cm³",
+      "10648cm³",
+      "484cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 22 \\times 22 \\times 22\\)\n\n\\(= 10648\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 7cm and height 9cm.",
+    "options": [
+      "147cm³",
+      "21cm³",
+      "441cm³",
+      "73.50cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 7^{2} = 49\\) cm²\n\n\\(V = \\frac{1}{3} \\times 49 \\times 9 = 147\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 5cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "220cm³",
+      "3080cm³",
+      "1026.67cm³",
+      "440cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 5\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 5 = 3080\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 13cm and height 17cm. If the prism is 24cm long, find its volume.",
+    "options": [
+      "110.50cm³",
+      "884cm³",
+      "2652cm³",
+      "5304cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 13 \\times 17 = 110.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 110.5 \\times 24 = 2652\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 15cm and height 14cm.",
+    "options": [
+      "150cm³",
+      "2100cm³",
+      "39cm³",
+      "1000cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 15 \\times 14\\)\n\n\\(= 2100\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 17cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "41888cm³",
+      "13962.67cm³",
+      "2992cm³",
+      "1496cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 17\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 17 = 41888\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 11cm and height 27cm.",
+    "options": [
+      "3267cm³",
+      "99cm³",
+      "1089cm³",
+      "544.50cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 11^{2} = 121\\) cm²\n\n\\(V = \\frac{1}{3} \\times 121 \\times 27 = 1089\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 6cm. If the prism is 5cm long, find its volume.",
+    "options": [
+      "80cm³",
+      "240cm³",
+      "48cm³",
+      "480cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 6 = 48\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 48 \\times 5 = 240\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 3080cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "10cm",
+      "2.50cm",
+      "5cm",
+      "8cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(3080 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(3080 = 616h\\)\n\n\\(h = 5\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 16cm, width 22cm and height 7cm.",
+    "options": [
+      "1236cm³",
+      "45cm³",
+      "352cm³",
+      "2464cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 16 \\times 22 \\times 7\\)\n\n\\(= 2464\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 10cm. If the prism is 9cm long, find its volume.",
+    "options": [
+      "315cm³",
+      "630cm³",
+      "35cm³",
+      "105cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 10 = 35\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 35 \\times 9 = 315\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 22cm, width 20cm and height 16cm.",
+    "options": [
+      "58cm³",
+      "2224cm³",
+      "440cm³",
+      "7040cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 22 \\times 20 \\times 16\\)\n\n\\(= 7040\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 16cm and height 3cm.",
+    "options": [
+      "768cm³",
+      "16cm³",
+      "256cm³",
+      "128cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 16^{2} = 256\\) cm²\n\n\\(V = \\frac{1}{3} \\times 256 \\times 3 = 256\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 18cm, width 16cm and height 8cm.",
+    "options": [
+      "1120cm³",
+      "288cm³",
+      "2304cm³",
+      "42cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 18 \\times 16 \\times 8\\)\n\n\\(= 2304\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 21cm, width 13cm and height 19cm.",
+    "options": [
+      "5187cm³",
+      "53cm³",
+      "273cm³",
+      "1838cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 21 \\times 13 \\times 19\\)\n\n\\(= 5187\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 13cm and height 27cm.",
+    "options": [
+      "760.50cm³",
+      "117cm³",
+      "4563cm³",
+      "1521cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 13^{2} = 169\\) cm²\n\n\\(V = \\frac{1}{3} \\times 169 \\times 27 = 1521\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 19cm and height 22cm.",
+    "options": [
+      "1656cm³",
+      "51cm³",
+      "190cm³",
+      "4180cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 19 \\times 22\\)\n\n\\(= 4180\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 4cm, width 15cm and height 7cm.",
+    "options": [
+      "386cm³",
+      "420cm³",
+      "60cm³",
+      "26cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 4 \\times 15 \\times 7\\)\n\n\\(= 420\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 11cm, width 15cm and height 21cm.",
+    "options": [
+      "3465cm³",
+      "47cm³",
+      "165cm³",
+      "1422cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 11 \\times 15 \\times 21\\)\n\n\\(= 3465\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 17cm and height 10cm.",
+    "options": [
+      "37cm³",
+      "880cm³",
+      "170cm³",
+      "1700cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 17 \\times 10\\)\n\n\\(= 1700\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 8cm and height 21cm.",
+    "options": [
+      "224cm³",
+      "56cm³",
+      "448cm³",
+      "1344cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 8^{2} = 64\\) cm²\n\n\\(V = \\frac{1}{3} \\times 64 \\times 21 = 448\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 15cm, width 21cm and height 16cm.",
+    "options": [
+      "315cm³",
+      "5040cm³",
+      "52cm³",
+      "1782cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 15 \\times 21 \\times 16\\)\n\n\\(= 5040\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 11cm. If the prism is 21cm long, find its volume.",
+    "options": [
+      "1848cm³",
+      "3696cm³",
+      "616cm³",
+      "88cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 11 = 88\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 88 \\times 21 = 1848\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 19cm, width 10cm and height 25cm.",
+    "options": [
+      "190cm³",
+      "54cm³",
+      "4750cm³",
+      "1830cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 19 \\times 10 \\times 25\\)\n\n\\(= 4750\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 2618cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "34cm",
+      "17cm",
+      "8.50cm",
+      "20cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(2618 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(2618 = 154h\\)\n\n\\(h = 17\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 12cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "1848cm³",
+      "528cm³",
+      "264cm³",
+      "616cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 12\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 12 = 1848\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 1540cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "20cm",
+      "10cm",
+      "5cm",
+      "13cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(1540 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(1540 = 154h\\)\n\n\\(h = 10\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 9cm. If the prism is 25cm long, find its volume.",
+    "options": [
+      "72cm³",
+      "1800cm³",
+      "3600cm³",
+      "600cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 9 = 72\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 72 \\times 25 = 1800\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 12320cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "20cm",
+      "10cm",
+      "40cm",
+      "23cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(12320 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(12320 = 616h\\)\n\n\\(h = 20\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 18cm, width 6cm and height 10cm.",
+    "options": [
+      "34cm³",
+      "108cm³",
+      "696cm³",
+      "1080cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 18 \\times 6 \\times 10\\)\n\n\\(= 1080\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 770cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "8cm",
+      "5cm",
+      "2.50cm",
+      "10cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(770 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(770 = 154h\\)\n\n\\(h = 5\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 17cm, width 10cm and height 20cm.",
+    "options": [
+      "1420cm³",
+      "3400cm³",
+      "170cm³",
+      "47cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 17 \\times 10 \\times 20\\)\n\n\\(= 3400\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 15cm and height 12cm.",
+    "options": [
+      "60cm³",
+      "450cm³",
+      "900cm³",
+      "2700cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 15^{2} = 225\\) cm²\n\n\\(V = \\frac{1}{3} \\times 225 \\times 12 = 900\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 6cm and height 12cm.",
+    "options": [
+      "144cm³",
+      "72cm³",
+      "24cm³",
+      "432cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 6^{2} = 36\\) cm²\n\n\\(V = \\frac{1}{3} \\times 36 \\times 12 = 144\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 28cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "528cm³",
+      "7392cm³",
+      "264cm³",
+      "2464cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 28^{2} \\times 3\\)\n\n\\(= \\frac{22}{7} \\times 784 \\times 3 = 7392\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 9cm and height 6cm. If the prism is 16cm long, find its volume.",
+    "options": [
+      "27cm³",
+      "864cm³",
+      "432cm³",
+      "144cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 9 \\times 6 = 27\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 27 \\times 16 = 432\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 17cm and height 12cm.",
+    "options": [
+      "3468cm³",
+      "68cm³",
+      "578cm³",
+      "1156cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 17^{2} = 289\\) cm²\n\n\\(V = \\frac{1}{3} \\times 289 \\times 12 = 1156\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 3080cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "23cm",
+      "40cm",
+      "20cm",
+      "10cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(3080 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(3080 = 154h\\)\n\n\\(h = 20\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 4cm and height 15cm.",
+    "options": [
+      "80cm³",
+      "40cm³",
+      "240cm³",
+      "20cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 4^{2} = 16\\) cm²\n\n\\(V = \\frac{1}{3} \\times 16 \\times 15 = 80\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 15cm, width 25cm and height 24cm.",
+    "options": [
+      "2670cm³",
+      "64cm³",
+      "9000cm³",
+      "375cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 15 \\times 25 \\times 24\\)\n\n\\(= 9000\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 15cm, width 25cm and height 5cm.",
+    "options": [
+      "1150cm³",
+      "45cm³",
+      "1875cm³",
+      "375cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 15 \\times 25 \\times 5\\)\n\n\\(= 1875\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 14cm, width 16cm and height 19cm.",
+    "options": [
+      "49cm³",
+      "1588cm³",
+      "4256cm³",
+      "224cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 14 \\times 16 \\times 19\\)\n\n\\(= 4256\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 21cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "2772cm³",
+      "29106cm³",
+      "9702cm³",
+      "1386cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 21\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 21 = 29106\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 8cm, width 8cm and height 11cm.",
+    "options": [
+      "27cm³",
+      "704cm³",
+      "480cm³",
+      "64cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 8 \\times 8 \\times 11\\)\n\n\\(= 704\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 19404cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7cm",
+      "28cm",
+      "14cm",
+      "17cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(19404 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(19404 = 1386h\\)\n\n\\(h = 14\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 8cm and height 6cm. If the prism is 13cm long, find its volume.",
+    "options": [
+      "312cm³",
+      "104cm³",
+      "24cm³",
+      "624cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 8 \\times 6 = 24\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 24 \\times 13 = 312\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 16cm, width 19cm and height 22cm.",
+    "options": [
+      "57cm³",
+      "6688cm³",
+      "2148cm³",
+      "304cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 16 \\times 19 \\times 22\\)\n\n\\(= 6688\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 8cm and height 3cm. If the prism is 6cm long, find its volume.",
+    "options": [
+      "24cm³",
+      "144cm³",
+      "72cm³",
+      "12cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 8 \\times 3 = 12\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 12 \\times 6 = 72\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 13cm and height 8cm. If the prism is 19cm long, find its volume.",
+    "options": [
+      "329.33cm³",
+      "988cm³",
+      "52cm³",
+      "1976cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 13 \\times 8 = 52\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 52 \\times 19 = 988\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 11cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "15246cm³",
+      "5082cm³",
+      "1452cm³",
+      "726cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 11\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 11 = 15246\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 20cm and height 4cm. If the prism is 21cm long, find its volume.",
+    "options": [
+      "1680cm³",
+      "280cm³",
+      "840cm³",
+      "40cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 20 \\times 4 = 40\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 40 \\times 21 = 840\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 11cm and height 15cm.",
+    "options": [
+      "1815cm³",
+      "302.50cm³",
+      "55cm³",
+      "605cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 11^{2} = 121\\) cm²\n\n\\(V = \\frac{1}{3} \\times 121 \\times 15 = 605\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 7cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "616cm³",
+      "4312cm³",
+      "1437.33cm³",
+      "308cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 7\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 7 = 4312\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 14cm. If the prism is 6cm long, find its volume.",
+    "options": [
+      "224cm³",
+      "112cm³",
+      "1344cm³",
+      "672cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 14 = 112\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 112 \\times 6 = 672\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 10cm and height 27cm.",
+    "options": [
+      "450cm³",
+      "90cm³",
+      "900cm³",
+      "2700cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 10^{2} = 100\\) cm²\n\n\\(V = \\frac{1}{3} \\times 100 \\times 27 = 900\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 12cm and height 17cm. If the prism is 19cm long, find its volume.",
+    "options": [
+      "3876cm³",
+      "102cm³",
+      "646cm³",
+      "1938cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 12 \\times 17 = 102\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 102 \\times 19 = 1938\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 7cm is 1386cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "18cm",
+      "9cm",
+      "12cm",
+      "4.50cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(1386 = \\frac{22}{7} \\times 49 \\times h\\)\n\n\\(1386 = 154h\\)\n\n\\(h = 9\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 12cm and height 3cm.",
+    "options": [
+      "72cm³",
+      "144cm³",
+      "12cm³",
+      "432cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 12^{2} = 144\\) cm²\n\n\\(V = \\frac{1}{3} \\times 144 \\times 3 = 144\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 18cm, width 9cm and height 19cm.",
+    "options": [
+      "1350cm³",
+      "3078cm³",
+      "46cm³",
+      "162cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 18 \\times 9 \\times 19\\)\n\n\\(= 3078\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 10472cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "34cm",
+      "17cm",
+      "8.50cm",
+      "20cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(10472 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(10472 = 616h\\)\n\n\\(h = 17\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 14cm and height 15cm.",
+    "options": [
+      "490cm³",
+      "70cm³",
+      "980cm³",
+      "2940cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 14^{2} = 196\\) cm²\n\n\\(V = \\frac{1}{3} \\times 196 \\times 15 = 980\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 19cm and height 10cm. If the prism is 6cm long, find its volume.",
+    "options": [
+      "1140cm³",
+      "570cm³",
+      "190cm³",
+      "95cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 19 \\times 10 = 95\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 95 \\times 6 = 570\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 20cm, width 16cm and height 15cm.",
+    "options": [
+      "4800cm³",
+      "1720cm³",
+      "51cm³",
+      "320cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 20 \\times 16 \\times 15\\)\n\n\\(= 4800\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 20cm, width 10cm and height 17cm.",
+    "options": [
+      "3400cm³",
+      "200cm³",
+      "47cm³",
+      "1420cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 20 \\times 10 \\times 17\\)\n\n\\(= 3400\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 18cm. If the prism is 17cm long, find its volume.",
+    "options": [
+      "2448cm³",
+      "144cm³",
+      "4896cm³",
+      "816cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 18 = 144\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 144 \\times 17 = 2448\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 3cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "132cm³",
+      "462cm³",
+      "154cm³",
+      "66cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 3\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 3 = 462\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 5cm, width 15cm and height 19cm.",
+    "options": [
+      "75cm³",
+      "39cm³",
+      "1425cm³",
+      "910cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 5 \\times 15 \\times 19\\)\n\n\\(= 1425\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 6cm and height 27cm.",
+    "options": [
+      "162cm³",
+      "54cm³",
+      "324cm³",
+      "972cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 6^{2} = 36\\) cm²\n\n\\(V = \\frac{1}{3} \\times 36 \\times 27 = 324\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 13cm and height 3cm.",
+    "options": [
+      "507cm³",
+      "169cm³",
+      "84.50cm³",
+      "13cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 13^{2} = 169\\) cm²\n\n\\(V = \\frac{1}{3} \\times 169 \\times 3 = 169\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 19cm and height 5cm. If the prism is 11cm long, find its volume.",
+    "options": [
+      "522.50cm³",
+      "47.50cm³",
+      "1045cm³",
+      "174.17cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 19 \\times 5 = 47.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 47.5 \\times 11 = 522.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 20cm, width 3cm and height 21cm.",
+    "options": [
+      "60cm³",
+      "1086cm³",
+      "44cm³",
+      "1260cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 20 \\times 3 \\times 21\\)\n\n\\(= 1260\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 8cm. If the prism is 20cm long, find its volume.",
+    "options": [
+      "1120cm³",
+      "560cm³",
+      "186.67cm³",
+      "28cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 8 = 28\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 28 \\times 20 = 560\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 12cm and height 6cm. If the prism is 9cm long, find its volume.",
+    "options": [
+      "108cm³",
+      "648cm³",
+      "36cm³",
+      "324cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 12 \\times 6 = 36\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 36 \\times 9 = 324\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 16632cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "24cm",
+      "6cm",
+      "12cm",
+      "15cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(16632 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(16632 = 1386h\\)\n\n\\(h = 12\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 4cm and height 24cm.",
+    "options": [
+      "384cm³",
+      "128cm³",
+      "64cm³",
+      "32cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 4^{2} = 16\\) cm²\n\n\\(V = \\frac{1}{3} \\times 16 \\times 24 = 128\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 22cm, width 5cm and height 24cm.",
+    "options": [
+      "2640cm³",
+      "51cm³",
+      "1516cm³",
+      "110cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 22 \\times 5 \\times 24\\)\n\n\\(= 2640\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 6cm and height 11cm. If the prism is 7cm long, find its volume.",
+    "options": [
+      "231cm³",
+      "77cm³",
+      "33cm³",
+      "462cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 6 \\times 11 = 33\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 33 \\times 7 = 231\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 6cm, width 4cm and height 10cm.",
+    "options": [
+      "248cm³",
+      "20cm³",
+      "24cm³",
+      "240cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 6 \\times 4 \\times 10\\)\n\n\\(= 240\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 8cm and height 10cm. If the prism is 24cm long, find its volume.",
+    "options": [
+      "320cm³",
+      "960cm³",
+      "40cm³",
+      "1920cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 8 \\times 10 = 40\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 40 \\times 24 = 960\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 3cm and height 9cm.",
+    "options": [
+      "13.50cm³",
+      "81cm³",
+      "27cm³",
+      "9cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 3^{2} = 9\\) cm²\n\n\\(V = \\frac{1}{3} \\times 9 \\times 9 = 27\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 12cm, width 21cm and height 18cm.",
+    "options": [
+      "51cm³",
+      "1692cm³",
+      "4536cm³",
+      "252cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 12 \\times 21 \\times 18\\)\n\n\\(= 4536\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 11cm and height 5cm. If the prism is 12cm long, find its volume.",
+    "options": [
+      "27.50cm³",
+      "110cm³",
+      "660cm³",
+      "330cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 11 \\times 5 = 27.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 27.5 \\times 12 = 330\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 9cm and height 16cm. If the prism is 15cm long, find its volume.",
+    "options": [
+      "1080cm³",
+      "360cm³",
+      "72cm³",
+      "2160cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 9 \\times 16 = 72\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 72 \\times 15 = 1080\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 12cm and height 21cm.",
+    "options": [
+      "1164cm³",
+      "43cm³",
+      "2520cm³",
+      "120cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 12 \\times 21\\)\n\n\\(= 2520\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 13cm and height 17cm. If the prism is 8cm long, find its volume.",
+    "options": [
+      "1768cm³",
+      "884cm³",
+      "294.67cm³",
+      "110.50cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 13 \\times 17 = 110.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 110.5 \\times 8 = 884\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 18cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "24948cm³",
+      "8316cm³",
+      "1188cm³",
+      "2376cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 18\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 18 = 24948\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 19cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "418cm³",
+      "2926cm³",
+      "836cm³",
+      "975.33cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 19\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 19 = 2926\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 10cm and height 14cm. If the prism is 23cm long, find its volume.",
+    "options": [
+      "70cm³",
+      "1610cm³",
+      "536.67cm³",
+      "3220cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 10 \\times 14 = 70\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 70 \\times 23 = 1610\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 19cm and height 8cm. If the prism is 6cm long, find its volume.",
+    "options": [
+      "912cm³",
+      "152cm³",
+      "456cm³",
+      "76cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 19 \\times 8 = 76\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 76 \\times 6 = 456\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 15cm and height 18cm.",
+    "options": [
+      "90cm³",
+      "675cm³",
+      "1350cm³",
+      "4050cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 15^{2} = 225\\) cm²\n\n\\(V = \\frac{1}{3} \\times 225 \\times 18 = 1350\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 4312cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "7cm",
+      "3.50cm",
+      "14cm",
+      "10cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(4312 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(4312 = 616h\\)\n\n\\(h = 7\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 12cm, width 9cm and height 11cm.",
+    "options": [
+      "108cm³",
+      "678cm³",
+      "32cm³",
+      "1188cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 12 \\times 9 \\times 11\\)\n\n\\(= 1188\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 14cm and height 20cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "880cm³",
+      "12320cm³",
+      "1760cm³",
+      "4106.67cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 14^{2} \\times 20\\)\n\n\\(= \\frac{22}{7} \\times 196 \\times 20 = 12320\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 7cm and height 16cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "352cm³",
+      "2464cm³",
+      "704cm³",
+      "821.33cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 7^{2} \\times 16\\)\n\n\\(= \\frac{22}{7} \\times 49 \\times 16 = 2464\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 23cm, width 21cm and height 17cm.",
+    "options": [
+      "61cm³",
+      "2462cm³",
+      "483cm³",
+      "8211cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 23 \\times 21 \\times 17\\)\n\n\\(= 8211\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 19cm, width 20cm and height 4cm.",
+    "options": [
+      "43cm³",
+      "380cm³",
+      "1520cm³",
+      "1072cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 19 \\times 20 \\times 4\\)\n\n\\(= 1520\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 17cm, width 7cm and height 6cm.",
+    "options": [
+      "119cm³",
+      "526cm³",
+      "30cm³",
+      "714cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 17 \\times 7 \\times 6\\)\n\n\\(= 714\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 6cm and height 16cm. If the prism is 5cm long, find its volume.",
+    "options": [
+      "48cm³",
+      "240cm³",
+      "480cm³",
+      "80cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 6 \\times 16 = 48\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 48 \\times 5 = 240\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 7cm. If the prism is 8cm long, find its volume.",
+    "options": [
+      "392cm³",
+      "24.50cm³",
+      "65.33cm³",
+      "196cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 7 = 24.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 24.5 \\times 8 = 196\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 18cm, width 3cm and height 21cm.",
+    "options": [
+      "54cm³",
+      "990cm³",
+      "1134cm³",
+      "42cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 18 \\times 3 \\times 21\\)\n\n\\(= 1134\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 5cm and height 6cm.",
+    "options": [
+      "150cm³",
+      "10cm³",
+      "50cm³",
+      "25cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 5^{2} = 25\\) cm²\n\n\\(V = \\frac{1}{3} \\times 25 \\times 6 = 50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 14cm, width 23cm and height 17cm.",
+    "options": [
+      "54cm³",
+      "1902cm³",
+      "322cm³",
+      "5474cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 14 \\times 23 \\times 17\\)\n\n\\(= 5474\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 4cm, width 6cm and height 9cm.",
+    "options": [
+      "216cm³",
+      "228cm³",
+      "24cm³",
+      "19cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 4 \\times 6 \\times 9\\)\n\n\\(= 216\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 25cm, width 17cm and height 18cm.",
+    "options": [
+      "2362cm³",
+      "60cm³",
+      "7650cm³",
+      "425cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 25 \\times 17 \\times 18\\)\n\n\\(= 7650\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 13cm and height 17cm. If the prism is 23cm long, find its volume.",
+    "options": [
+      "5083cm³",
+      "847.17cm³",
+      "2541.50cm³",
+      "110.50cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 13 \\times 17 = 110.5\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 110.5 \\times 23 = 2541.50\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 17cm, width 8cm and height 23cm.",
+    "options": [
+      "136cm³",
+      "48cm³",
+      "1422cm³",
+      "3128cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 17 \\times 8 \\times 23\\)\n\n\\(= 3128\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 7cm and height 14cm. If the prism is 19cm long, find its volume.",
+    "options": [
+      "1862cm³",
+      "49cm³",
+      "931cm³",
+      "310.33cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 7 \\times 14 = 49\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 49 \\times 19 = 931\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 20cm, width 13cm and height 6cm.",
+    "options": [
+      "39cm³",
+      "260cm³",
+      "1560cm³",
+      "916cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 20 \\times 13 \\times 6\\)\n\n\\(= 1560\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 7cm, width 4cm and height 15cm.",
+    "options": [
+      "420cm³",
+      "28cm³",
+      "26cm³",
+      "386cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 7 \\times 4 \\times 15\\)\n\n\\(= 420\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 4cm, width 25cm and height 22cm.",
+    "options": [
+      "51cm³",
+      "100cm³",
+      "1476cm³",
+      "2200cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 4 \\times 25 \\times 22\\)\n\n\\(= 2200\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 20cm and height 3cm. If the prism is 8cm long, find its volume.",
+    "options": [
+      "30cm³",
+      "80cm³",
+      "240cm³",
+      "480cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 20 \\times 3 = 30\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 30 \\times 8 = 240\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 7cm, width 20cm and height 6cm.",
+    "options": [
+      "840cm³",
+      "140cm³",
+      "604cm³",
+      "33cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 7 \\times 20 \\times 6\\)\n\n\\(= 840\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 17cm. If the prism is 24cm long, find its volume.",
+    "options": [
+      "6528cm³",
+      "1088cm³",
+      "136cm³",
+      "3264cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 17 = 136\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 136 \\times 24 = 3264\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 24cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "33264cm³",
+      "1584cm³",
+      "3168cm³",
+      "11088cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 24\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 24 = 33264\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 22cm, width 12cm and height 24cm.",
+    "options": [
+      "6336cm³",
+      "58cm³",
+      "264cm³",
+      "2160cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 22 \\times 12 \\times 24\\)\n\n\\(= 6336\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 14cm is 1848cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "14cm",
+      "1.50cm",
+      "3cm",
+      "6cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(1848 = \\frac{22}{7} \\times 196 \\times h\\)\n\n\\(1848 = 616h\\)\n\n\\(h = 3\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 16cm and height 7cm. If the prism is 15cm long, find its volume.",
+    "options": [
+      "280cm³",
+      "840cm³",
+      "1680cm³",
+      "56cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 16 \\times 7 = 56\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 56 \\times 15 = 840\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the volume of a cylinder of radius 21cm and height 10cm. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "13860cm³",
+      "1320cm³",
+      "660cm³",
+      "4620cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cylinder \\(= \\pi r^{2} h\\)\n\n\\(= \\frac{22}{7} \\times 21^{2} \\times 10\\)\n\n\\(= \\frac{22}{7} \\times 441 \\times 10 = 13860\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 3cm, width 9cm and height 15cm.",
+    "options": [
+      "414cm³",
+      "405cm³",
+      "27cm³",
+      "202.50cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 3 \\times 9 \\times 15\\)\n\n\\(= 405\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 10cm and height 12cm. If the prism is 14cm long, find its volume.",
+    "options": [
+      "60cm³",
+      "280cm³",
+      "840cm³",
+      "1680cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 10 \\times 12 = 60\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 60 \\times 14 = 840\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 23cm, width 14cm and height 20cm.",
+    "options": [
+      "6440cm³",
+      "322cm³",
+      "57cm³",
+      "2124cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 23 \\times 14 \\times 20\\)\n\n\\(= 6440\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a pyramid with a square base of side 10cm and height 6cm.",
+    "options": [
+      "200cm³",
+      "100cm³",
+      "20cm³",
+      "600cm³"
+    ],
+    "correctIndex": 0,
+    "explanation": "Volume of a pyramid \\(= \\frac{1}{3} \\times \\text{base area} \\times \\text{height}\\)\n\nBase area \\(= 10^{2} = 100\\) cm²\n\n\\(V = \\frac{1}{3} \\times 100 \\times 6 = 200\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 15cm and height 6cm. If the prism is 15cm long, find its volume.",
+    "options": [
+      "45cm³",
+      "225cm³",
+      "675cm³",
+      "1350cm³"
+    ],
+    "correctIndex": 2,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 15 \\times 6 = 45\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 45 \\times 15 = 675\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A prism has a triangular cross-section of base 20cm and height 13cm. If the prism is 25cm long, find its volume.",
+    "options": [
+      "6500cm³",
+      "3250cm³",
+      "130cm³",
+      "1083.33cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Area of the triangular cross-section \\(= \\frac{1}{2} \\times 20 \\times 13 = 130\\) cm²\n\nVolume \\(= \\text{cross-sectional area} \\times \\text{length}\\)\n\n\\(= 130 \\times 25 = 3250\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The volume of a cylinder of radius 21cm is 26334cm³. Find its height. [Take \\(\\pi = \\frac{22}{7}\\)]",
+    "options": [
+      "9.50cm",
+      "19cm",
+      "22cm",
+      "38cm"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(V = \\pi r^{2} h\\)\n\n\\(26334 = \\frac{22}{7} \\times 441 \\times h\\)\n\n\\(26334 = 1386h\\)\n\n\\(h = 19\\) cm",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 18cm and height 15cm.",
+    "options": [
+      "1200cm³",
+      "43cm³",
+      "180cm³",
+      "2700cm³"
+    ],
+    "correctIndex": 3,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 18 \\times 15\\)\n\n\\(= 2700\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the volume of a cuboid of length 10cm, width 24cm and height 10cm.",
+    "options": [
+      "44cm³",
+      "2400cm³",
+      "240cm³",
+      "1160cm³"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volume of a cuboid \\(= l \\times w \\times h\\)\n\n\\(= 10 \\times 24 \\times 10\\)\n\n\\(= 2400\\) cm³",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "JaulIQplMk7csfa4It5n",
+    "topicId": "29cNp8gTkGEGe0elHpCY",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

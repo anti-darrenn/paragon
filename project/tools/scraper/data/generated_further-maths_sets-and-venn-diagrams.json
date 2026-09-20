@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 18\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "46",
+      "39",
+      "32",
+      "65"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 18 + 24 - 10 - 10 - 13 + 7\\)\n\n\\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 67 students, 28 offer Physics, 6 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "25",
+      "28",
+      "14",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 28 - 6 - 11 + 3\\)\n\n\\(= 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 14\\), \\(n(B) = 25\\), \\(n(C) = 13\\), \\(n(A \\cap B) = 11\\), \\(n(A \\cap C) = 5\\), \\(n(B \\cap C) = 6\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "30",
+      "34",
+      "38",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 14 + 25 + 13 - 11 - 5 - 6 + 4\\)\n\n\\(= 34\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 25\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "43",
+      "49",
+      "65",
+      "37"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 25 + 24 - 7 - 8 - 13 + 6\\)\n\n\\(= 43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((A \\cup B)'\\) using De Morgan's laws.",
+    "options": [
+      "\\(A' \\cap B'\\)",
+      "\\(A' \\cup B'\\)",
+      "\\((A \\cap B)'\\)",
+      "\\(A \\cap B\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "De Morgan's laws state that \\((A \\cup B)' = A' \\cap B'\\) and \\((A \\cap B)' = A' \\cup B'\\).\n\nSo \\((A \\cup B)' = A' \\cap B'\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 73 elements, \\(n(A) = 36\\), \\(n(B) = 37\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "10",
+      "5",
+      "0",
+      "68"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 36 + 37 - 5 = 68\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 73 - 68 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 45 students, 18 offer Physics, 7 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "18",
+      "11",
+      "6",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 18 - 7 - 10 + 5\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 43 elements, \\(n(A) = 25\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "10",
+      "8",
+      "-6",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 25 + 24 - 8 = 41\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 43 - 41 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 6 elements, how many elements does its power set have?",
+    "options": [
+      "63",
+      "64",
+      "12",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{6} = 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 11 elements, how many elements does its power set have?",
+    "options": [
+      "2048",
+      "121",
+      "22",
+      "2047"
+    ],
+    "correctIndex": 0,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{11} = 2048\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 69 elements, \\(n(A) = 35\\), \\(n(B) = 40\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "-6",
+      "18",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 35 + 40 - 12 = 63\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 69 - 63 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 9 elements, how many elements does its power set have?",
+    "options": [
+      "18",
+      "511",
+      "512",
+      "81"
+    ],
+    "correctIndex": 2,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{9} = 512\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 69 students, 37 offer Physics, 9 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "37",
+      "35",
+      "19",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 37 - 9 - 11 + 2\\)\n\n\\(= 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 7 elements, how many elements does its power set have?",
+    "options": [
+      "14",
+      "127",
+      "128",
+      "49"
+    ],
+    "correctIndex": 2,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{7} = 128\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 44 students, 22 offer Physics, 7 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "10",
+      "22",
+      "19",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 7 - 11 + 3\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Simplify \\((A \\cap B)'\\) using De Morgan's laws.",
+    "options": [
+      "\\(A' \\cap B'\\)",
+      "\\(A' \\cup B'\\)",
+      "\\((A \\cup B)'\\)",
+      "\\(A \\cup B\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "De Morgan's laws state that \\((A \\cup B)' = A' \\cap B'\\) and \\((A \\cap B)' = A' \\cup B'\\).\n\nSo \\((A \\cap B)' = A' \\cup B'\\).",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 54 students, 17 offer Physics, 5 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "7",
+      "15",
+      "5",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 17 - 5 - 9 + 2\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 8 elements, how many elements does its power set have?",
+    "options": [
+      "255",
+      "16",
+      "64",
+      "256"
+    ],
+    "correctIndex": 3,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{8} = 256\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 63 students, 30 offer Physics, 8 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "28",
+      "16",
+      "18",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 30 - 8 - 8 + 2\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 65 students, 36 offer Physics, 11 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "18",
+      "36",
+      "24",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 36 - 11 - 13 + 6\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 30 offer Physics, 13 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "14",
+      "25",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 30 - 13 - 8 + 5\\)\n\n\\(= 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 24\\), \\(n(B) = 25\\), \\(n(C) = 32\\), \\(n(A \\cap B) = 13\\), \\(n(A \\cap C) = 13\\), \\(n(B \\cap C) = 15\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "81",
+      "40",
+      "48",
+      "56"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 24 + 25 + 32 - 13 - 13 - 15 + 8\\)\n\n\\(= 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 22\\), \\(n(B) = 22\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "35",
+      "66",
+      "47",
+      "41"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 22 + 22 + 22 - 10 - 11 - 10 + 6\\)\n\n\\(= 41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 73 elements, \\(n(A) = 34\\), \\(n(B) = 39\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "0",
+      "10",
+      "63",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 34 + 39 - 10 = 63\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 73 - 63 = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 63 elements, \\(n(A) = 33\\), \\(n(B) = 31\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "15",
+      "8",
+      "7",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 33 + 31 - 8 = 56\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 63 - 56 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 36 students, 20 offer Physics, 7 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "20",
+      "15",
+      "14",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 20 - 7 - 9 + 5\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 17 offer Physics, 8 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "6",
+      "17",
+      "10",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 17 - 8 - 7 + 4\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 5 elements, how many elements does its power set have?",
+    "options": [
+      "31",
+      "32",
+      "25",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{5} = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 27 offer Physics, 10 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "27",
+      "20",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 10 - 7 + 5\\)\n\n\\(= 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 19\\), \\(n(C) = 14\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 6\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "28",
+      "32",
+      "49",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 19 + 14 - 8 - 7 - 6 + 4\\)\n\n\\(= 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 66 elements, \\(n(A) = 41\\), \\(n(B) = 29\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-4",
+      "7",
+      "3",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 41 + 29 - 7 = 63\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 66 - 63 = 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 53 students, 29 offer Physics, 8 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "21",
+      "25",
+      "29",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 8 - 8 + 4\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 25\\), \\(n(B) = 27\\), \\(n(C) = 27\\), \\(n(A \\cap B) = 13\\), \\(n(A \\cap C) = 14\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "79",
+      "56",
+      "42",
+      "49"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 25 + 27 + 27 - 13 - 14 - 10 + 7\\)\n\n\\(= 49\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 15\\), \\(n(B) = 21\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 4\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "33",
+      "57",
+      "39",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 15 + 21 + 21 - 4 - 11 - 9 + 3\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 18\\), \\(n(B) = 24\\), \\(n(C) = 28\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 14\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "70",
+      "37",
+      "51",
+      "44"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 18 + 24 + 28 - 9 - 10 - 14 + 7\\)\n\n\\(= 44\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 15\\), \\(n(C) = 15\\), \\(n(A \\cap B) = 4\\), \\(n(A \\cap C) = 4\\), \\(n(B \\cap C) = 4\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "40",
+      "46",
+      "37",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 15 + 15 - 4 - 4 - 4 + 3\\)\n\n\\(= 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 24\\), \\(n(B) = 18\\), \\(n(C) = 25\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 13\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "49",
+      "67",
+      "37",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 24 + 18 + 25 - 10 - 13 - 7 + 6\\)\n\n\\(= 43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 20\\), \\(n(B) = 24\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 6\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "41",
+      "39",
+      "43",
+      "62"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 20 + 24 + 18 - 6 - 7 - 10 + 2\\)\n\n\\(= 41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 10 elements, how many elements does its power set have?",
+    "options": [
+      "1024",
+      "100",
+      "1023",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{10} = 1024\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 19 offer Physics, 6 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "7",
+      "5",
+      "19",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 19 - 6 - 10 + 2\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 53 students, 26 offer Physics, 11 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "26",
+      "12",
+      "17",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 11 - 8 + 5\\)\n\n\\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 13\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 15\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "57",
+      "38",
+      "24",
+      "31"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 13 + 21 - 9 - 15 - 9 + 7\\)\n\n\\(= 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 52 elements, \\(n(A) = 28\\), \\(n(B) = 26\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "7",
+      "9",
+      "16",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 28 + 26 - 9 = 45\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 52 - 45 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 70 students, 23 offer Physics, 8 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "47",
+      "11",
+      "17",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 23 - 8 - 10 + 6\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 3 elements, how many elements does its power set have?",
+    "options": [
+      "8",
+      "6",
+      "7",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{3} = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 26 offer Physics, 11 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "7",
+      "26",
+      "22",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 11 - 12 + 4\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 67 elements, \\(n(A) = 36\\), \\(n(B) = 22\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "12",
+      "3",
+      "15",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 36 + 22 - 3 = 55\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 67 - 55 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 22\\), \\(n(B) = 23\\), \\(n(C) = 26\\), \\(n(A \\cap B) = 11\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 16\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "33",
+      "71",
+      "41",
+      "49"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 22 + 23 + 26 - 11 - 11 - 16 + 8\\)\n\n\\(= 41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 27\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "66",
+      "37",
+      "45",
+      "41"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 27 + 18 - 9 - 9 - 11 + 4\\)\n\n\\(= 41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 26\\), \\(n(B) = 31\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 13\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "50",
+      "57",
+      "79",
+      "43"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 26 + 31 + 22 - 13 - 10 - 13 + 7\\)\n\n\\(= 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 14\\), \\(n(B) = 16\\), \\(n(C) = 17\\), \\(n(A \\cap B) = 5\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "25",
+      "47",
+      "29",
+      "33"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 14 + 16 + 17 - 5 - 6 - 11 + 4\\)\n\n\\(= 29\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 22 offer Physics, 9 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "16",
+      "28",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 9 - 9 + 6\\)\n\n\\(= 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 58 elements, \\(n(A) = 17\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "13",
+      "3",
+      "8",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 17 + 38 - 5 = 50\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 58 - 50 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 49 students, 28 offer Physics, 12 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "11",
+      "14",
+      "28",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 28 - 12 - 8 + 3\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 60 students, 33 offer Physics, 13 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "11",
+      "33",
+      "15",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 33 - 13 - 13 + 4\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 49 elements, \\(n(A) = 23\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "7",
+      "16",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 23 + 28 - 9 = 42\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 49 - 42 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 72 elements, \\(n(A) = 42\\), \\(n(B) = 37\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "12",
+      "17",
+      "-7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 42 + 37 - 12 = 67\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 72 - 67 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 72 elements, \\(n(A) = 28\\), \\(n(B) = 35\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "21",
+      "6",
+      "15",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 28 + 35 - 6 = 57\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 72 - 57 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 54 students, 28 offer Physics, 6 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "13",
+      "28",
+      "25",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 28 - 6 - 12 + 3\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 86 elements, \\(n(A) = 40\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "14",
+      "5",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 40 + 42 - 5 = 77\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 86 - 77 = 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 76 elements, \\(n(A) = 44\\), \\(n(B) = 32\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "8",
+      "4",
+      "0",
+      "72"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 44 + 32 - 4 = 72\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 76 - 72 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 68 students, 35 offer Physics, 10 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "21",
+      "32",
+      "35",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 10 - 10 + 3\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 80 elements, \\(n(A) = 45\\), \\(n(B) = 33\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "2",
+      "14",
+      "12",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 45 + 33 - 12 = 66\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 80 - 66 = 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 29 offer Physics, 7 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "24",
+      "19",
+      "29",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 7 - 13 + 5\\)\n\n\\(= 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If a set \\(A\\) has 12 elements, how many elements does its power set have?",
+    "options": [
+      "24",
+      "4095",
+      "144",
+      "4096"
+    ],
+    "correctIndex": 3,
+    "explanation": "The power set of a set with \\(n\\) elements has \\(2^{n}\\) elements.\n\n\\(2^{12} = 4096\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 30\\), \\(n(B) = 19\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 14\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "46",
+      "68",
+      "39",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 30 + 19 + 19 - 12 - 14 - 10 + 7\\)\n\n\\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 71 students, 33 offer Physics, 6 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "31",
+      "22",
+      "33",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 33 - 6 - 9 + 2\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 26\\), \\(n(B) = 25\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "72",
+      "45",
+      "41",
+      "49"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 26 + 25 + 21 - 10 - 11 - 10 + 4\\)\n\n\\(= 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 26 offer Physics, 11 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "26",
+      "22",
+      "9",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 11 - 10 + 4\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 52 elements, \\(n(A) = 16\\), \\(n(B) = 36\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "14",
+      "7",
+      "0",
+      "45"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 16 + 36 - 7 = 45\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 52 - 45 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 60 students, 26 offer Physics, 8 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "10",
+      "26",
+      "13",
+      "23"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 8 - 11 + 3\\)\n\n\\(= 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 45 students, 15 offer Physics, 4 offer both Physics and Chemistry, 6 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "15",
+      "13",
+      "9",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 15 - 4 - 6 + 2\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 12\\), \\(n(B) = 25\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "41",
+      "36",
+      "31",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 12 + 25 + 19 - 7 - 7 - 11 + 5\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 73 students, 37 offer Physics, 13 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "17",
+      "32",
+      "22",
+      "37"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 37 - 13 - 12 + 5\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 64 students, 29 offer Physics, 5 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "27",
+      "19",
+      "29",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 5 - 9 + 2\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 66 students, 24 offer Physics, 9 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "13",
+      "24",
+      "18",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 24 - 9 - 7 + 5\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 47 elements, \\(n(A) = 25\\), \\(n(B) = 17\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "21",
+      "5",
+      "13",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 25 + 17 - 8 = 34\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 47 - 34 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 73 students, 36 offer Physics, 10 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "32",
+      "17",
+      "36",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 36 - 10 - 13 + 4\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 76 elements, \\(n(A) = 44\\), \\(n(B) = 32\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "0",
+      "12",
+      "64",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 44 + 32 - 12 = 64\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 76 - 64 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 24\\), \\(n(B) = 15\\), \\(n(C) = 23\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 5\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "41",
+      "62",
+      "45",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 24 + 15 + 23 - 7 - 9 - 5 + 2\\)\n\n\\(= 43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 49 students, 26 offer Physics, 6 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "17",
+      "26",
+      "24",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 6 - 7 + 2\\)\n\n\\(= 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 45 students, 17 offer Physics, 8 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "11",
+      "17",
+      "12",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 17 - 8 - 9 + 6\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 72 elements, \\(n(A) = 45\\), \\(n(B) = 22\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "13",
+      "5",
+      "21",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 45 + 22 - 8 = 59\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 72 - 59 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 29\\), \\(n(B) = 29\\), \\(n(C) = 25\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "47",
+      "57",
+      "83",
+      "52"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 29 + 29 + 25 - 12 - 11 - 13 + 5\\)\n\n\\(= 52\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 22\\), \\(n(B) = 20\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "41",
+      "49",
+      "63",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 22 + 20 + 21 - 8 - 6 - 8 + 4\\)\n\n\\(= 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 83 elements, \\(n(A) = 34\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "7",
+      "76",
+      "21",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 34 + 42 - 7 = 69\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 83 - 69 = 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 71 students, 35 offer Physics, 13 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "18",
+      "23",
+      "30",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 13 - 9 + 5\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 31\\), \\(n(B) = 29\\), \\(n(C) = 25\\), \\(n(A \\cap B) = 14\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 14\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "85",
+      "58",
+      "52",
+      "46"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 31 + 29 + 25 - 14 - 11 - 14 + 6\\)\n\n\\(= 52\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 24\\), \\(n(B) = 28\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "44",
+      "49",
+      "39",
+      "70"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 24 + 28 + 18 - 12 - 6 - 13 + 5\\)\n\n\\(= 44\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 70 elements, \\(n(A) = 41\\), \\(n(B) = 27\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "2",
+      "22",
+      "12",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 41 + 27 - 10 = 58\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 70 - 58 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 22 offer Physics, 5 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "11",
+      "13",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 5 - 8 + 2\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 55 elements, \\(n(A) = 36\\), \\(n(B) = 19\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "0",
+      "51",
+      "8",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 36 + 19 - 4 = 51\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 55 - 51 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 69 elements, \\(n(A) = 31\\), \\(n(B) = 35\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "11",
+      "7",
+      "4",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 31 + 35 - 4 = 62\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 69 - 62 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 65 students, 37 offer Physics, 14 offer both Physics and Chemistry, 14 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "37",
+      "14",
+      "19",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 37 - 14 - 14 + 5\\)\n\n\\(= 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 36 offer Physics, 8 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "36",
+      "19",
+      "21",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 36 - 8 - 11 + 2\\)\n\n\\(= 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 14\\), \\(n(B) = 22\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "34",
+      "39",
+      "44",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 14 + 22 + 24 - 8 - 9 - 9 + 5\\)\n\n\\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 59 students, 27 offer Physics, 10 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "15",
+      "22",
+      "20",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 10 - 7 + 5\\)\n\n\\(= 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 67 elements, \\(n(A) = 15\\), \\(n(B) = 44\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "8",
+      "14",
+      "11",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 15 + 44 - 3 = 56\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 67 - 56 = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 58 elements, \\(n(A) = 36\\), \\(n(B) = 18\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "20",
+      "8",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 36 + 18 - 8 = 46\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 58 - 46 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 82 elements, \\(n(A) = 41\\), \\(n(B) = 39\\) and \\(n(A \\cap B) = 11\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "24",
+      "2",
+      "11",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 41 + 39 - 11 = 69\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 82 - 69 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 55 students, 21 offer Physics, 14 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "21",
+      "11",
+      "5",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 21 - 14 - 8 + 6\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 27\\), \\(n(B) = 27\\), \\(n(C) = 25\\), \\(n(A \\cap B) = 16\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "47",
+      "79",
+      "55",
+      "39"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 27 + 27 + 25 - 16 - 11 - 13 + 8\\)\n\n\\(= 47\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 31\\), \\(n(C) = 26\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 14\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "78",
+      "40",
+      "46",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 31 + 26 - 12 - 12 - 14 + 6\\)\n\n\\(= 46\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 88 elements, \\(n(A) = 34\\), \\(n(B) = 45\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "15",
+      "9",
+      "21",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 34 + 45 - 6 = 73\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 88 - 73 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 49 students, 29 offer Physics, 8 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "29",
+      "16",
+      "18",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 8 - 7 + 2\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 70 students, 34 offer Physics, 8 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "23",
+      "34",
+      "18",
+      "29"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 34 - 8 - 13 + 5\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 62 elements, \\(n(A) = 17\\), \\(n(B) = 35\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "15",
+      "10",
+      "5",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 17 + 35 - 5 = 47\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 62 - 47 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 27 offer Physics, 7 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "27",
+      "19",
+      "24",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 7 - 7 + 3\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 50 elements, \\(n(A) = 21\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "7",
+      "1",
+      "4",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 21 + 28 - 3 = 46\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 50 - 46 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 29\\), \\(n(B) = 29\\), \\(n(C) = 28\\), \\(n(A \\cap B) = 15\\), \\(n(A \\cap C) = 15\\), \\(n(B \\cap C) = 14\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "42",
+      "86",
+      "50",
+      "58"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 29 + 29 + 28 - 15 - 15 - 14 + 8\\)\n\n\\(= 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 85 elements, \\(n(A) = 39\\), \\(n(B) = 43\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "3",
+      "82",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 39 + 43 - 3 = 79\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 85 - 79 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 59 students, 32 offer Physics, 10 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "27",
+      "20",
+      "32",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 32 - 10 - 12 + 5\\)\n\n\\(= 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 27\\), \\(n(B) = 15\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "60",
+      "42",
+      "37",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 27 + 15 + 18 - 9 - 12 - 7 + 5\\)\n\n\\(= 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 27 offer Physics, 5 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "27",
+      "15",
+      "13",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 5 - 11 + 2\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 27\\), \\(n(B) = 17\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 12\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "43",
+      "29",
+      "36",
+      "63"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 27 + 17 + 19 - 10 - 12 - 12 + 7\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 25\\), \\(n(B) = 21\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 12\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "29",
+      "65",
+      "36",
+      "43"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 25 + 21 + 19 - 12 - 12 - 12 + 7\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 11\\), \\(n(B) = 20\\), \\(n(C) = 11\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 4\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "26",
+      "28",
+      "42",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 11 + 20 + 11 - 7 - 4 - 7 + 2\\)\n\n\\(= 26\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 72 students, 37 offer Physics, 12 offer both Physics and Chemistry, 15 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "31",
+      "16",
+      "22",
+      "37"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 37 - 12 - 15 + 6\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 47 elements, \\(n(A) = 23\\), \\(n(B) = 18\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "6",
+      "12",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 23 + 18 - 3 = 38\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 47 - 38 = 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 51 students, 26 offer Physics, 14 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "9",
+      "20",
+      "15",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 14 - 9 + 6\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 39 elements, \\(n(A) = 17\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "3",
+      "4",
+      "1",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 17 + 21 - 3 = 35\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 39 - 35 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 41 students, 18 offer Physics, 5 offer both Physics and Chemistry, 6 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "9",
+      "18",
+      "16",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 18 - 5 - 6 + 2\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 61 students, 24 offer Physics, 12 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "24",
+      "5",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 24 - 12 - 12 + 5\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 17\\), \\(n(B) = 27\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 13\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "39",
+      "32",
+      "46",
+      "62"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 17 + 27 + 18 - 13 - 8 - 9 + 7\\)\n\n\\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 74 elements, \\(n(A) = 27\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "21",
+      "6",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 27 + 38 - 6 = 59\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 74 - 59 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 49 students, 20 offer Physics, 6 offer both Physics and Chemistry, 6 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "20",
+      "16",
+      "12",
+      "29"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 20 - 6 - 6 + 4\\)\n\n\\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 61 elements, \\(n(A) = 35\\), \\(n(B) = 29\\) and \\(n(A \\cap B) = 11\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-3",
+      "19",
+      "8",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 35 + 29 - 11 = 53\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 61 - 53 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 25\\), \\(n(B) = 23\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 14\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "48",
+      "69",
+      "42",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 25 + 23 + 21 - 12 - 14 - 7 + 6\\)\n\n\\(= 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 65 students, 35 offer Physics, 7 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "20",
+      "35",
+      "30",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 7 - 13 + 5\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 27\\), \\(n(B) = 27\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 14\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "52",
+      "40",
+      "46",
+      "76"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 27 + 27 + 22 - 12 - 10 - 14 + 6\\)\n\n\\(= 46\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 67 students, 34 offer Physics, 13 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "34",
+      "17",
+      "29",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 34 - 13 - 9 + 5\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 22\\), \\(n(B) = 10\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 4\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 6\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "50",
+      "30",
+      "36",
+      "33"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 22 + 10 + 18 - 4 - 10 - 6 + 3\\)\n\n\\(= 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 69 elements, \\(n(A) = 33\\), \\(n(B) = 27\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "21",
+      "15",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 33 + 27 - 6 = 54\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 69 - 54 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 64 students, 30 offer Physics, 14 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "18",
+      "13",
+      "30",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 30 - 14 - 8 + 5\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 26 offer Physics, 8 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "24",
+      "13",
+      "26",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 8 - 9 + 2\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 18\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 6\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "43",
+      "39",
+      "35",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 18 + 21 - 6 - 11 - 8 + 4\\)\n\n\\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 65 students, 37 offer Physics, 13 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "20",
+      "37",
+      "24",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 37 - 13 - 8 + 4\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 28 offer Physics, 5 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "28",
+      "25",
+      "19"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 28 - 5 - 7 + 3\\)\n\n\\(= 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 70 students, 37 offer Physics, 9 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "37",
+      "34",
+      "20",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 37 - 9 - 11 + 3\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 58 elements, \\(n(A) = 24\\), \\(n(B) = 29\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "8",
+      "3",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 24 + 29 - 3 = 50\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 58 - 50 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 79 elements, \\(n(A) = 42\\), \\(n(B) = 33\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "3",
+      "7",
+      "10",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 42 + 33 - 3 = 72\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 79 - 72 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 15\\), \\(n(C) = 23\\), \\(n(A \\cap B) = 11\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "59",
+      "44",
+      "30",
+      "37"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 15 + 23 - 11 - 10 - 8 + 7\\)\n\n\\(= 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 89 elements, \\(n(A) = 44\\), \\(n(B) = 41\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "3",
+      "10",
+      "4",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 44 + 41 - 3 = 82\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 89 - 82 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 27 offer Physics, 11 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "12",
+      "27",
+      "24",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 11 - 7 + 3\\)\n\n\\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 21 offer Physics, 12 offer both Physics and Chemistry, 6 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "9",
+      "6",
+      "18",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 21 - 12 - 6 + 3\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 73 elements, \\(n(A) = 43\\), \\(n(B) = 22\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "22",
+      "8",
+      "7",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 43 + 22 - 7 = 58\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 73 - 58 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 24\\), \\(n(B) = 17\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 13\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "63",
+      "31",
+      "43",
+      "37"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 24 + 17 + 22 - 10 - 13 - 9 + 6\\)\n\n\\(= 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 35 offer Physics, 12 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "31",
+      "23",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 12 - 8 + 4\\)\n\n\\(= 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 25 offer Physics, 9 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "14",
+      "21",
+      "25",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 25 - 9 - 10 + 4\\)\n\n\\(= 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 62 students, 36 offer Physics, 13 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "31",
+      "25",
+      "36",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 36 - 13 - 8 + 5\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 54 students, 19 offer Physics, 6 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "15",
+      "9",
+      "19",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 19 - 6 - 12 + 4\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 53 students, 31 offer Physics, 9 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "31",
+      "17",
+      "27",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 31 - 9 - 9 + 4\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 29 offer Physics, 8 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "14",
+      "29",
+      "17",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 8 - 10 + 3\\)\n\n\\(= 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 75 elements, \\(n(A) = 32\\), \\(n(B) = 41\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "2",
+      "14",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 32 + 41 - 6 = 67\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 75 - 67 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 61 elements, \\(n(A) = 30\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "13",
+      "3",
+      "10",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 30 + 24 - 3 = 51\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 61 - 51 = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 68 elements, \\(n(A) = 33\\), \\(n(B) = 37\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "2",
+      "4",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 33 + 37 - 4 = 66\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 68 - 66 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 19\\), \\(n(B) = 13\\), \\(n(C) = 20\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "35",
+      "30",
+      "25",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 19 + 13 + 20 - 8 - 12 - 7 + 5\\)\n\n\\(= 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 77 elements, \\(n(A) = 35\\), \\(n(B) = 44\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "10",
+      "-2",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 35 + 44 - 6 = 73\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 77 - 73 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 73 elements, \\(n(A) = 42\\), \\(n(B) = 34\\) and \\(n(A \\cap B) = 11\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "19",
+      "-3",
+      "11",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 42 + 34 - 11 = 65\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 73 - 65 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 71 students, 32 offer Physics, 13 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "28",
+      "32",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 32 - 13 - 8 + 4\\)\n\n\\(= 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 59 students, 29 offer Physics, 6 offer both Physics and Chemistry, 5 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "27",
+      "20",
+      "29"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 6 - 5 + 2\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 14\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 5\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "40",
+      "44",
+      "36",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 14 + 19 - 7 - 6 - 5 + 4\\)\n\n\\(= 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 20\\), \\(n(B) = 20\\), \\(n(C) = 17\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "38",
+      "30",
+      "57",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 20 + 20 + 17 - 8 - 9 - 10 + 4\\)\n\n\\(= 34\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 53 elements, \\(n(A) = 25\\), \\(n(B) = 29\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "-1",
+      "7",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 25 + 29 - 7 = 47\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 53 - 47 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 31 offer Physics, 6 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "29",
+      "21",
+      "31"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 31 - 6 - 8 + 2\\)\n\n\\(= 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 25\\), \\(n(C) = 31\\), \\(n(A \\cap B) = 6\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "79",
+      "58",
+      "54",
+      "50"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 25 + 31 - 6 - 12 - 11 + 4\\)\n\n\\(= 54\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 62 students, 26 offer Physics, 10 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "8",
+      "13",
+      "21",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 10 - 13 + 5\\)\n\n\\(= 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 48 elements, \\(n(A) = 22\\), \\(n(B) = 16\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "10",
+      "15",
+      "5",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 22 + 16 - 5 = 33\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 48 - 33 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 19\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "66",
+      "46",
+      "44",
+      "48"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 19 + 24 - 7 - 7 - 8 + 2\\)\n\n\\(= 46\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 20 offer Physics, 8 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "13",
+      "8",
+      "20",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 20 - 8 - 9 + 5\\)\n\n\\(= 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 62 students, 32 offer Physics, 4 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "21",
+      "30",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 32 - 4 - 11 + 2\\)\n\n\\(= 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 14\\), \\(n(C) = 25\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "38",
+      "55",
+      "35",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 14 + 25 - 7 - 8 - 8 + 3\\)\n\n\\(= 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 60 students, 27 offer Physics, 7 offer both Physics and Chemistry, 14 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "16",
+      "27",
+      "22",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 7 - 14 + 5\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 84 elements, \\(n(A) = 33\\), \\(n(B) = 43\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "8",
+      "5",
+      "13",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 33 + 43 - 5 = 71\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 84 - 71 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 66 students, 35 offer Physics, 8 offer both Physics and Chemistry, 15 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "18",
+      "35",
+      "24",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 8 - 15 + 6\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 61 elements, \\(n(A) = 33\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "16",
+      "0",
+      "53",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 33 + 28 - 8 = 53\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 61 - 53 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 53 elements, \\(n(A) = 27\\), \\(n(B) = 17\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "3",
+      "15",
+      "12",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 27 + 17 - 3 = 41\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 53 - 41 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 33 elements, \\(n(A) = 15\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "12",
+      "-10",
+      "14",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 15 + 28 - 12 = 31\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 33 - 31 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 27\\), \\(n(B) = 27\\), \\(n(C) = 27\\), \\(n(A \\cap B) = 11\\), \\(n(A \\cap C) = 16\\), \\(n(B \\cap C) = 15\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "39",
+      "81",
+      "47",
+      "55"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 27 + 27 + 27 - 11 - 16 - 15 + 8\\)\n\n\\(= 47\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 37 elements, \\(n(A) = 20\\), \\(n(B) = 16\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "11",
+      "1",
+      "6",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 20 + 16 - 5 = 31\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 37 - 31 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 59 elements, \\(n(A) = 16\\), \\(n(B) = 40\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "8",
+      "19",
+      "3",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 16 + 40 - 8 = 48\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 59 - 48 = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 69 students, 28 offer Physics, 6 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "17",
+      "24",
+      "28",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 28 - 6 - 9 + 4\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 61 elements, \\(n(A) = 33\\), \\(n(B) = 18\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "18",
+      "4",
+      "10",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 33 + 18 - 4 = 47\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 61 - 47 = 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 83 students, 42 offer Physics, 14 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "42",
+      "37",
+      "25",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 42 - 14 - 13 + 5\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 60 students, 26 offer Physics, 6 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "14",
+      "24",
+      "12",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 6 - 10 + 2\\)\n\n\\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 64 students, 31 offer Physics, 6 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "28",
+      "20",
+      "23",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 31 - 6 - 8 + 3\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 22 offer Physics, 8 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "7",
+      "9",
+      "22",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 8 - 9 + 2\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 24\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 14\\), \\(n(A \\cap C) = 13\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "37",
+      "45",
+      "66",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 24 + 19 - 14 - 13 - 10 + 8\\)\n\n\\(= 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 24\\), \\(n(C) = 28\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 15\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "46",
+      "75",
+      "53",
+      "39"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 24 + 28 - 10 - 15 - 11 + 7\\)\n\n\\(= 46\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 54 students, 27 offer Physics, 9 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "25",
+      "27",
+      "9",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 9 - 11 + 2\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 51 elements, \\(n(A) = 34\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-4",
+      "14",
+      "9",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 34 + 21 - 9 = 46\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 51 - 46 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 61 elements, \\(n(A) = 26\\), \\(n(B) = 29\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "20",
+      "13",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 26 + 29 - 7 = 48\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 61 - 48 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 50 elements, \\(n(A) = 28\\), \\(n(B) = 26\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "16",
+      "10",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 28 + 26 - 10 = 44\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 50 - 44 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 61 students, 27 offer Physics, 11 offer both Physics and Chemistry, 5 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "25",
+      "13",
+      "27",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 11 - 5 + 2\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 22 offer Physics, 10 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "5",
+      "22",
+      "18",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 10 - 11 + 4\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 56 elements, \\(n(A) = 34\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-1",
+      "5",
+      "6",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 34 + 23 - 6 = 51\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 56 - 51 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 38 elements, \\(n(A) = 25\\), \\(n(B) = 20\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "11",
+      "-7",
+      "2",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 25 + 20 - 9 = 36\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 38 - 36 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 22 offer Physics, 8 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "19",
+      "7",
+      "22",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 8 - 10 + 3\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 13\\), \\(n(B) = 15\\), \\(n(C) = 11\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 4\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "24",
+      "21",
+      "39",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 13 + 15 + 11 - 7 - 4 - 7 + 3\\)\n\n\\(= 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 79 elements, \\(n(A) = 42\\), \\(n(B) = 40\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "17",
+      "-3",
+      "10",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 42 + 40 - 10 = 72\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 79 - 72 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 29\\), \\(n(B) = 21\\), \\(n(C) = 30\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 13\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "49",
+      "80",
+      "44",
+      "54"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 29 + 21 + 30 - 10 - 13 - 13 + 5\\)\n\n\\(= 49\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 22\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 12\\), \\(n(B \\cap C) = 12\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "35",
+      "29",
+      "65",
+      "41"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 22 + 22 - 12 - 12 - 12 + 6\\)\n\n\\(= 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 56 elements, \\(n(A) = 33\\), \\(n(B) = 19\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "10",
+      "3",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 33 + 19 - 3 = 49\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 56 - 49 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 69 elements, \\(n(A) = 34\\), \\(n(B) = 33\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "4",
+      "2",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 34 + 33 - 4 = 63\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 69 - 63 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 55 students, 19 offer Physics, 9 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "15",
+      "7",
+      "19",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 19 - 9 - 7 + 4\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 58 elements, \\(n(A) = 24\\), \\(n(B) = 30\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "16",
+      "10",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 24 + 30 - 6 = 48\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 58 - 48 = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 67 elements, \\(n(A) = 39\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "11",
+      "15",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 39 + 21 - 4 = 56\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 67 - 56 = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 22\\), \\(n(B) = 18\\), \\(n(C) = 10\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 5\\), \\(n(B \\cap C) = 6\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "50",
+      "27",
+      "31",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 22 + 18 + 10 - 12 - 5 - 6 + 4\\)\n\n\\(= 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 40 elements, \\(n(A) = 26\\), \\(n(B) = 22\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-8",
+      "12",
+      "10",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 26 + 22 - 10 = 38\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 40 - 38 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 29 offer Physics, 6 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "29",
+      "16",
+      "19",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 6 - 10 + 3\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 63 elements, \\(n(A) = 26\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "13",
+      "9",
+      "-5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 26 + 42 - 9 = 59\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 63 - 59 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 57 students, 29 offer Physics, 11 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "24",
+      "21",
+      "16",
+      "29"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 11 - 7 + 5\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 68 elements, \\(n(A) = 38\\), \\(n(B) = 27\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "13",
+      "3",
+      "8",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 38 + 27 - 5 = 60\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 68 - 60 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 50 students, 26 offer Physics, 13 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "15",
+      "9",
+      "26",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 13 - 10 + 6\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 34 elements, \\(n(A) = 17\\), \\(n(B) = 19\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "4",
+      "10",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 17 + 19 - 6 = 30\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 34 - 30 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 47 students, 22 offer Physics, 6 offer both Physics and Chemistry, 5 offer both Physics and Biology, and 2 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "13",
+      "20",
+      "15",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 6 - 5 + 2\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 63 students, 35 offer Physics, 14 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "29",
+      "24",
+      "18",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 14 - 9 + 6\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 58 students, 25 offer Physics, 9 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "13",
+      "17",
+      "21",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 25 - 9 - 7 + 4\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 51 elements, \\(n(A) = 15\\), \\(n(B) = 37\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "17",
+      "8",
+      "9",
+      "-1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 15 + 37 - 9 = 43\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 51 - 43 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 14\\), \\(n(B) = 10\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 4\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 5\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "46",
+      "30",
+      "32",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 14 + 10 + 22 - 4 - 9 - 5 + 2\\)\n\n\\(= 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 58 elements, \\(n(A) = 38\\), \\(n(B) = 15\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "19",
+      "7",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 38 + 15 - 7 = 46\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 58 - 46 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 67 students, 32 offer Physics, 7 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "28",
+      "32",
+      "24",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 32 - 7 - 9 + 4\\)\n\n\\(= 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 55 elements, \\(n(A) = 24\\), \\(n(B) = 34\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "-3",
+      "6",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 24 + 34 - 6 = 52\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 55 - 52 = 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 15\\), \\(n(B) = 23\\), \\(n(C) = 10\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 3\\), \\(n(B \\cap C) = 4\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "31",
+      "35",
+      "48",
+      "33"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 15 + 23 + 10 - 10 - 3 - 4 + 2\\)\n\n\\(= 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 59 students, 36 offer Physics, 13 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "30",
+      "36",
+      "18",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 36 - 13 - 11 + 6\\)\n\n\\(= 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 49 elements, \\(n(A) = 32\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "12",
+      "-7",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 32 + 24 - 12 = 44\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 49 - 44 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 48 students, 22 offer Physics, 9 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "18",
+      "5",
+      "22",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 9 - 12 + 4\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 27\\), \\(n(B) = 27\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 11\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "53",
+      "50",
+      "75",
+      "47"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 27 + 27 + 21 - 11 - 7 - 10 + 3\\)\n\n\\(= 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 50 elements, \\(n(A) = 21\\), \\(n(B) = 37\\) and \\(n(A \\cap B) = 11\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "14",
+      "11",
+      "-8",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 21 + 37 - 11 = 47\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 50 - 47 = 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 66 students, 25 offer Physics, 10 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "25",
+      "9",
+      "22",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 25 - 10 - 12 + 3\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 60 students, 20 offer Physics, 12 offer both Physics and Chemistry, 6 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "10",
+      "20",
+      "16",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 20 - 12 - 6 + 4\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 53 elements, \\(n(A) = 34\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "19",
+      "-5",
+      "12",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 34 + 24 - 12 = 46\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 53 - 46 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 81 elements, \\(n(A) = 42\\), \\(n(B) = 37\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "8",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 42 + 37 - 3 = 76\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 81 - 76 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 46 elements, \\(n(A) = 22\\), \\(n(B) = 20\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "42",
+      "8",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 22 + 20 - 4 = 38\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 46 - 38 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 15\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 4\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 4\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "40",
+      "42",
+      "57",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 15 + 19 - 4 - 9 - 4 + 2\\)\n\n\\(= 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 64 elements, \\(n(A) = 24\\), \\(n(B) = 43\\) and \\(n(A \\cap B) = 11\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "8",
+      "11",
+      "19",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 24 + 43 - 11 = 56\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 64 - 56 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 45 students, 20 offer Physics, 12 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "12",
+      "6",
+      "14",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 20 - 12 - 8 + 6\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 80 elements, \\(n(A) = 43\\), \\(n(B) = 36\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "1",
+      "25",
+      "12",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 43 + 36 - 12 = 67\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 80 - 67 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 59 elements, \\(n(A) = 30\\), \\(n(B) = 34\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "15",
+      "10",
+      "-5",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 30 + 34 - 10 = 54\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 59 - 54 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 46 elements, \\(n(A) = 26\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "-1",
+      "3",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 26 + 21 - 4 = 43\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 46 - 43 = 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 68 students, 34 offer Physics, 11 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "16",
+      "34",
+      "19",
+      "31"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 34 - 11 - 10 + 3\\)\n\n\\(= 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 52 students, 16 offer Physics, 7 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "12",
+      "7",
+      "16",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 16 - 7 - 7 + 5\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 16\\), \\(n(C) = 17\\), \\(n(A \\cap B) = 6\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "30",
+      "33",
+      "49",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 16 + 17 - 6 - 8 - 8 + 3\\)\n\n\\(= 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 50 elements, \\(n(A) = 40\\), \\(n(B) = 17\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "10",
+      "3",
+      "13",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 40 + 17 - 10 = 47\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 50 - 47 = 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 43 elements, \\(n(A) = 19\\), \\(n(B) = 15\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "9",
+      "4",
+      "17",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 19 + 15 - 4 = 30\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 43 - 30 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 17\\), \\(n(B) = 16\\), \\(n(C) = 23\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "36",
+      "40",
+      "32",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 17 + 16 + 23 - 7 - 7 - 10 + 4\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 14\\), \\(n(B) = 17\\), \\(n(C) = 15\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "22",
+      "27",
+      "46",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 14 + 17 + 15 - 9 - 6 - 9 + 5\\)\n\n\\(= 27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 17\\), \\(n(B) = 18\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "35",
+      "40",
+      "30",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 17 + 18 + 21 - 10 - 8 - 8 + 5\\)\n\n\\(= 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 26 offer Physics, 8 offer both Physics and Chemistry, 6 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "15",
+      "23",
+      "26",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 8 - 6 + 3\\)\n\n\\(= 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 64 students, 32 offer Physics, 14 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "12",
+      "18",
+      "26",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 32 - 14 - 12 + 6\\)\n\n\\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 43 elements, \\(n(A) = 30\\), \\(n(B) = 18\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "2",
+      "7",
+      "-5",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 30 + 18 - 7 = 41\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 43 - 41 = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 17\\), \\(n(B) = 21\\), \\(n(C) = 16\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "54",
+      "33",
+      "31",
+      "29"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 17 + 21 + 16 - 9 - 6 - 10 + 2\\)\n\n\\(= 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 47 elements, \\(n(A) = 23\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "10",
+      "0",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 23 + 24 - 5 = 42\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 47 - 42 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 13\\), \\(n(B) = 21\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "31",
+      "28",
+      "34",
+      "52"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 13 + 21 + 18 - 8 - 6 - 10 + 3\\)\n\n\\(= 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 52 elements, \\(n(A) = 22\\), \\(n(B) = 29\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "11",
+      "5",
+      "1",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 22 + 29 - 5 = 46\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 52 - 46 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 22\\), \\(n(B) = 21\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 14\\), \\(n(A \\cap C) = 14\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "44",
+      "67",
+      "28",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 22 + 21 + 24 - 14 - 14 - 11 + 8\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 55 students, 26 offer Physics, 10 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "26",
+      "22",
+      "17",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 26 - 10 - 7 + 4\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 67 students, 21 offer Physics, 7 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "14",
+      "9",
+      "21",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 21 - 7 - 10 + 5\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 69 students, 29 offer Physics, 12 offer both Physics and Chemistry, 13 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "29",
+      "25",
+      "8",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 29 - 12 - 13 + 4\\)\n\n\\(= 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 63 elements, \\(n(A) = 38\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "2",
+      "18",
+      "8",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 38 + 23 - 8 = 53\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 63 - 53 = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 22 offer Physics, 13 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "18",
+      "5",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 22 - 13 - 8 + 4\\)\n\n\\(= 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 18\\), \\(n(B) = 26\\), \\(n(C) = 26\\), \\(n(A \\cap B) = 8\\), \\(n(A \\cap C) = 9\\), \\(n(B \\cap C) = 11\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "45",
+      "70",
+      "48",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 18 + 26 + 26 - 8 - 9 - 11 + 3\\)\n\n\\(= 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 9\\), \\(n(B) = 20\\), \\(n(C) = 15\\), \\(n(A \\cap B) = 6\\), \\(n(A \\cap C) = 3\\), \\(n(B \\cap C) = 4\\) and \\(n(A \\cap B \\cap C) = 2\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "35",
+      "31",
+      "33",
+      "44"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 9 + 20 + 15 - 6 - 3 - 4 + 2\\)\n\n\\(= 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 27\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 13\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 13\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "62",
+      "35",
+      "29",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 27 + 19 - 13 - 7 - 13 + 6\\)\n\n\\(= 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 63 students, 27 offer Physics, 12 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "24",
+      "9",
+      "12",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 12 - 9 + 3\\)\n\n\\(= 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 80 elements, \\(n(A) = 39\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-1",
+      "6",
+      "5",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 39 + 42 - 6 = 75\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 80 - 75 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 25\\), \\(n(B) = 18\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 3\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "42",
+      "67",
+      "48",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 25 + 18 + 24 - 10 - 7 - 8 + 3\\)\n\n\\(= 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 56 elements, \\(n(A) = 15\\), \\(n(B) = 35\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 15 + 35 - 3 = 47\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 56 - 47 = 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 19\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 14\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 8\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "44",
+      "36",
+      "28",
+      "61"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 19 + 21 - 10 - 14 - 9 + 8\\)\n\n\\(= 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 43 students, 27 offer Physics, 11 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 5 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "22",
+      "18",
+      "27",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 11 - 8 + 5\\)\n\n\\(= 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 15\\), \\(n(B) = 17\\), \\(n(C) = 20\\), \\(n(A \\cap B) = 9\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "30",
+      "35",
+      "52",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 15 + 17 + 20 - 9 - 6 - 7 + 5\\)\n\n\\(= 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 65 elements, \\(n(A) = 33\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "18",
+      "11",
+      "4",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 33 + 28 - 7 = 54\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 65 - 54 = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 41 elements, \\(n(A) = 20\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "13",
+      "-3",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 20 + 24 - 8 = 36\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 41 - 36 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 68 students, 35 offer Physics, 12 offer both Physics and Chemistry, 10 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "31",
+      "35",
+      "21",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 35 - 12 - 10 + 4\\)\n\n\\(= 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 61 elements, \\(n(A) = 36\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 7\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "-3",
+      "11",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 36 + 28 - 7 = 57\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 61 - 57 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 43 students, 15 offer Physics, 6 offer both Physics and Chemistry, 7 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "10",
+      "11",
+      "15",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 15 - 6 - 7 + 4\\)\n\n\\(= 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 48 students, 21 offer Physics, 8 offer both Physics and Chemistry, 12 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "13",
+      "15",
+      "7",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 21 - 8 - 12 + 6\\)\n\n\\(= 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 41 elements, \\(n(A) = 17\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "12",
+      "3",
+      "9",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 17 + 21 - 9 = 29\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 41 - 29 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 17\\), \\(n(B) = 21\\), \\(n(C) = 19\\), \\(n(A \\cap B) = 5\\), \\(n(A \\cap C) = 6\\), \\(n(B \\cap C) = 12\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "42",
+      "57",
+      "38",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 17 + 21 + 19 - 5 - 6 - 12 + 4\\)\n\n\\(= 38\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 44 elements, \\(n(A) = 20\\), \\(n(B) = 19\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "21",
+      "13",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 20 + 19 - 8 = 31\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 44 - 31 = 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 56 elements, \\(n(A) = 36\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 8\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "-3",
+      "8",
+      "13",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 36 + 23 - 8 = 51\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 56 - 51 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 29\\), \\(n(C) = 21\\), \\(n(A \\cap B) = 14\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 14\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "73",
+      "37",
+      "49",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 29 + 21 - 14 - 8 - 14 + 6\\)\n\n\\(= 43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 88 elements, \\(n(A) = 45\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 10\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "15",
+      "10",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 45 + 38 - 10 = 73\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 88 - 73 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 39 elements, \\(n(A) = 17\\), \\(n(B) = 31\\) and \\(n(A \\cap B) = 12\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "12",
+      "15",
+      "3",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 17 + 31 - 12 = 36\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 39 - 36 = 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 54 elements, \\(n(A) = 20\\), \\(n(B) = 32\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "2",
+      "6",
+      "10",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 20 + 32 - 4 = 48\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 54 - 48 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 25\\), \\(n(C) = 22\\), \\(n(A \\cap B) = 10\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 12\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "50",
+      "38",
+      "44",
+      "68"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 25 + 22 - 10 - 8 - 12 + 6\\)\n\n\\(= 44\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 23\\), \\(n(C) = 17\\), \\(n(A \\cap B) = 11\\), \\(n(A \\cap C) = 10\\), \\(n(B \\cap C) = 7\\) and \\(n(A \\cap B \\cap C) = 6\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "63",
+      "35",
+      "47",
+      "41"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 23 + 17 - 11 - 10 - 7 + 6\\)\n\n\\(= 41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 56 students, 28 offer Physics, 12 offer both Physics and Chemistry, 8 offer both Physics and Biology, and 6 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "20",
+      "14",
+      "22",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 28 - 12 - 8 + 6\\)\n\n\\(= 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 72 students, 25 offer Physics, 6 offer both Physics and Chemistry, 11 offer both Physics and Biology, and 4 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "16",
+      "25",
+      "12",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 25 - 6 - 11 + 4\\)\n\n\\(= 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 21\\), \\(n(B) = 24\\), \\(n(C) = 18\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 8\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "44",
+      "34",
+      "39",
+      "63"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 21 + 24 + 18 - 12 - 8 - 9 + 5\\)\n\n\\(= 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 23\\), \\(n(B) = 23\\), \\(n(C) = 24\\), \\(n(A \\cap B) = 12\\), \\(n(A \\cap C) = 11\\), \\(n(B \\cap C) = 9\\) and \\(n(A \\cap B \\cap C) = 5\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "70",
+      "38",
+      "48",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 23 + 23 + 24 - 12 - 11 - 9 + 5\\)\n\n\\(= 43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 69 elements, \\(n(A) = 41\\), \\(n(B) = 20\\) and \\(n(A \\cap B) = 3\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "11",
+      "14",
+      "8",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 41 + 20 - 3 = 58\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 69 - 58 = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 75 elements, \\(n(A) = 26\\), \\(n(B) = 44\\) and \\(n(A \\cap B) = 6\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "17",
+      "5",
+      "11",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = 26 + 44 - 6 = 64\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 75 - 64 = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 55 elements, \\(n(A) = 30\\), \\(n(B) = 20\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "23",
+      "9",
+      "5",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = 30 + 20 - 9 = 41\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 55 - 41 = 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 54 elements, \\(n(A) = 21\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 9\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "4",
+      "13",
+      "9",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = 21 + 38 - 9 = 50\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 54 - 50 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 29\\), \\(n(B) = 25\\), \\(n(C) = 28\\), \\(n(A \\cap B) = 13\\), \\(n(A \\cap C) = 15\\), \\(n(B \\cap C) = 10\\) and \\(n(A \\cap B \\cap C) = 7\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "58",
+      "44",
+      "51",
+      "82"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 29 + 25 + 28 - 13 - 15 - 10 + 7\\)\n\n\\(= 51\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given \\(n(A) = 16\\), \\(n(B) = 19\\), \\(n(C) = 20\\), \\(n(A \\cap B) = 7\\), \\(n(A \\cap C) = 7\\), \\(n(B \\cap C) = 8\\) and \\(n(A \\cap B \\cap C) = 4\\), find \\(n(A \\cup B \\cup C)\\).",
+    "options": [
+      "37",
+      "41",
+      "55",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)\\)\n\n\\(= 16 + 19 + 20 - 7 - 7 - 8 + 4\\)\n\n\\(= 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 54 elements, \\(n(A) = 24\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 5\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "5",
+      "12",
+      "17",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 24 + 23 - 5 = 42\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 54 - 42 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a universal set of 55 elements, \\(n(A) = 16\\), \\(n(B) = 31\\) and \\(n(A \\cap B) = 4\\). Find \\(n(A \\cup B)'\\).",
+    "options": [
+      "16",
+      "12",
+      "4",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = 16 + 31 - 4 = 43\\)\n\n\\(n(A \\cup B)' = n(U) - n(A \\cup B)\\)\n\n\\(= 55 - 43 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a survey of 49 students, 27 offer Physics, 10 offer both Physics and Chemistry, 9 offer both Physics and Biology, and 3 offer all three subjects. How many offer Physics only?",
+    "options": [
+      "24",
+      "14",
+      "27",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "Physics only \\(= n(P) - n(P \\cap C) - n(P \\cap B) + n(P \\cap C \\cap B)\\)\n\n\\(= 27 - 10 - 9 + 3\\)\n\n\\(= 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "Wh4JOzk9kGiN0znXUeK5",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

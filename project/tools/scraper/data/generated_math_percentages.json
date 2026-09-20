@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "After a 25% increase, the price of an item became N600. Find the original price.",
+    "options": [
+      "575",
+      "2400",
+      "480",
+      "450"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 600\\)\n\n\\(x = \\frac{600 \\times 100}{125} = 480\\)\n\nSo the original price was N480.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 30% of 360.",
+    "options": [
+      "151.2",
+      "129.6",
+      "86.4",
+      "108"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(30\\% \\text{ of } 360 = \\frac{30}{100} \\times 360 = 108\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 700.",
+    "options": [
+      "336",
+      "504",
+      "420",
+      "588"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(60\\% \\text{ of } 700 = \\frac{60}{100} \\times 700 = 420\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 200 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "25",
+      "40",
+      "20",
+      "180"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{10}{100} \\times 200 = 20\\)\n\nSo 20 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N600. Find the original price.",
+    "options": [
+      "400",
+      "1200",
+      "550",
+      "300"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 600\\)\n\n\\(x = \\frac{600 \\times 100}{150} = 400\\)\n\nSo the original price was N400.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 75% of 680.",
+    "options": [
+      "714",
+      "510",
+      "612",
+      "408"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(75\\% \\text{ of } 680 = \\frac{75}{100} \\times 680 = 510\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N660 was sold for N759. Find the percentage profit.",
+    "options": [
+      "13.04%",
+      "15%",
+      "20%",
+      "10%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 759 - 660 = 99\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{99}{660} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N680. If the price is decreased by 10%, find the new price.",
+    "options": [
+      "690",
+      "612",
+      "748",
+      "670"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{10}{100} \\times 680 = 68\\)\n\nNew price \\(= 680 - 68 = 612\\)\n\nSo the new price is N612.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N310 was sold for N341. Find the percentage profit.",
+    "options": [
+      "10%",
+      "5%",
+      "9.09%",
+      "15%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 341 - 310 = 31\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{31}{310} \\times 100\\% = 10\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 139cm but it was measured as 140cm. Find the percentage error.",
+    "options": [
+      "0.71%",
+      "0.36%",
+      "1.44%",
+      "0.72%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 140 - 139 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{139} \\times 100\\% = 0.72\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N840. Find the original price.",
+    "options": [
+      "790",
+      "420",
+      "560",
+      "1680"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 840\\)\n\n\\(x = \\frac{840 \\times 100}{150} = 560\\)\n\nSo the original price was N560.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 49cm but it was measured as 50cm. Find the percentage error.",
+    "options": [
+      "2%",
+      "2.04%",
+      "1.02%",
+      "4.08%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 50 - 49 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{49} \\times 100\\% = 2.04\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 75% of 500.",
+    "options": [
+      "525",
+      "375",
+      "300",
+      "450"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(75\\% \\text{ of } 500 = \\frac{75}{100} \\times 500 = 375\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N300 was sold for N345. Find the percentage profit.",
+    "options": [
+      "15%",
+      "13.04%",
+      "10%",
+      "20%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 345 - 300 = 45\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{45}{300} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N870 was sold for N1305. Find the percentage profit.",
+    "options": [
+      "55%",
+      "50%",
+      "45%",
+      "33.33%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 1305 - 870 = 435\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{435}{870} \\times 100\\% = 50\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 12% of 360.",
+    "options": [
+      "34.56",
+      "60.48",
+      "43.2",
+      "51.84"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(12\\% \\text{ of } 360 = \\frac{12}{100} \\times 360 = 43.2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 10% of 720.",
+    "options": [
+      "57.6",
+      "86.4",
+      "100.8",
+      "72"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(10\\% \\text{ of } 720 = \\frac{10}{100} \\times 720 = 72\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N240. If the price is decreased by 15%, find the new price.",
+    "options": [
+      "255",
+      "276",
+      "204",
+      "225"
+    ],
+    "correctIndex": 2,
+    "explanation": "Decrease \\(= \\frac{15}{100} \\times 240 = 36\\)\n\nNew price \\(= 240 - 36 = 204\\)\n\nSo the new price is N204.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 18 as a percentage of 20.",
+    "options": [
+      "111.11%",
+      "45%",
+      "90%",
+      "100%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{18}{20} \\times 100\\% = 90\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 33cm but it was measured as 38cm. Find the percentage error.",
+    "options": [
+      "15.15%",
+      "30.3%",
+      "7.58%",
+      "13.16%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 38 - 33 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{33} \\times 100\\% = 15.15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N288. Find the original price.",
+    "options": [
+      "268",
+      "230.4",
+      "1440",
+      "240"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 288\\)\n\n\\(x = \\frac{288 \\times 100}{120} = 240\\)\n\nSo the original price was N240.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 30% of 340.",
+    "options": [
+      "142.8",
+      "102",
+      "122.4",
+      "81.6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(30\\% \\text{ of } 340 = \\frac{30}{100} \\times 340 = 102\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N230 was sold for N299. Find the percentage profit.",
+    "options": [
+      "30%",
+      "25%",
+      "23.08%",
+      "35%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 299 - 230 = 69\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{69}{230} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 36cm but it was measured as 41cm. Find the percentage error.",
+    "options": [
+      "12.2%",
+      "27.78%",
+      "13.89%",
+      "6.94%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 41 - 36 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{36} \\times 100\\% = 13.89\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 59cm but it was measured as 63cm. Find the percentage error.",
+    "options": [
+      "6.78%",
+      "6.35%",
+      "3.39%",
+      "13.56%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 63 - 59 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{59} \\times 100\\% = 6.78\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1010. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "1030",
+      "808",
+      "990",
+      "1212"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 1010 = 202\\)\n\nNew price \\(= 1010 - 202 = 808\\)\n\nSo the new price is N808.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 140cm but it was measured as 141cm. Find the percentage error.",
+    "options": [
+      "0.71%",
+      "1.43%",
+      "1%",
+      "0.36%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 141 - 140 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{140} \\times 100\\% = 0.71\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 540.",
+    "options": [
+      "108",
+      "189",
+      "162",
+      "135"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(25\\% \\text{ of } 540 = \\frac{25}{100} \\times 540 = 135\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N286. Find the original price.",
+    "options": [
+      "2860",
+      "276",
+      "260",
+      "257.4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 286\\)\n\n\\(x = \\frac{286 \\times 100}{110} = 260\\)\n\nSo the original price was N260.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N370. If the price is increased by 25%, find the new price.",
+    "options": [
+      "277.5",
+      "462.5",
+      "345",
+      "395"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{25}{100} \\times 370 = 92.5\\)\n\nNew price \\(= 370 + 92.5 = 462.5\\)\n\nSo the new price is N462.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N615. Find the original price.",
+    "options": [
+      "410",
+      "565",
+      "1230",
+      "307.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 615\\)\n\n\\(x = \\frac{615 \\times 100}{150} = 410\\)\n\nSo the original price was N410.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1070. If the price is decreased by 15%, find the new price.",
+    "options": [
+      "1085",
+      "1230.5",
+      "1055",
+      "909.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Decrease \\(= \\frac{15}{100} \\times 1070 = 160.5\\)\n\nNew price \\(= 1070 - 160.5 = 909.5\\)\n\nSo the new price is N909.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 143cm but it was measured as 148cm. Find the percentage error.",
+    "options": [
+      "3.38%",
+      "6.99%",
+      "1.75%",
+      "3.5%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 148 - 143 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{143} \\times 100\\% = 3.5\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N190 was sold for N237.5. Find the percentage profit.",
+    "options": [
+      "20%",
+      "30%",
+      "50%",
+      "25%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 237.5 - 190 = 47.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{47.5}{190} \\times 100\\% = 25\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 24 as a percentage of 25.",
+    "options": [
+      "106%",
+      "48%",
+      "104.17%",
+      "96%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{24}{25} \\times 100\\% = 96\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 1060.",
+    "options": [
+      "318",
+      "265",
+      "212",
+      "371"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(25\\% \\text{ of } 1060 = \\frac{25}{100} \\times 1060 = 265\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 44 as a percentage of 50.",
+    "options": [
+      "98%",
+      "88%",
+      "113.64%",
+      "44%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{44}{50} \\times 100\\% = 88\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N140. If the price is decreased by 50%, find the new price.",
+    "options": [
+      "90",
+      "70",
+      "210",
+      "190"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{50}{100} \\times 140 = 70\\)\n\nNew price \\(= 140 - 70 = 70\\)\n\nSo the new price is N70.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 40% of 400.",
+    "options": [
+      "224",
+      "128",
+      "192",
+      "160"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(40\\% \\text{ of } 400 = \\frac{40}{100} \\times 400 = 160\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N160 was sold for N208. Find the percentage profit.",
+    "options": [
+      "30%",
+      "35%",
+      "25%",
+      "23.08%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 208 - 160 = 48\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{48}{160} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N120 was sold for N150. Find the percentage profit.",
+    "options": [
+      "20%",
+      "25%",
+      "50%",
+      "30%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 150 - 120 = 30\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{30}{120} \\times 100\\% = 25\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 100 students, 40% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "40",
+      "80",
+      "60",
+      "45"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{40}{100} \\times 100 = 40\\)\n\nSo 40 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 35% of 940.",
+    "options": [
+      "460.6",
+      "263.2",
+      "329",
+      "394.8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(35\\% \\text{ of } 940 = \\frac{35}{100} \\times 940 = 329\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 36 as a percentage of 40.",
+    "options": [
+      "111.11%",
+      "90%",
+      "100%",
+      "45%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{36}{40} \\times 100\\% = 90\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 3 as a percentage of 50.",
+    "options": [
+      "1666.67%",
+      "3%",
+      "16%",
+      "6%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{3}{50} \\times 100\\% = 6\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N250. If the price is decreased by 15%, find the new price.",
+    "options": [
+      "235",
+      "287.5",
+      "265",
+      "212.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Decrease \\(= \\frac{15}{100} \\times 250 = 37.5\\)\n\nNew price \\(= 250 - 37.5 = 212.5\\)\n\nSo the new price is N212.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N756. Find the original price.",
+    "options": [
+      "3780",
+      "604.8",
+      "736",
+      "630"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 756\\)\n\n\\(x = \\frac{756 \\times 100}{120} = 630\\)\n\nSo the original price was N630.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, 40% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "40",
+      "20",
+      "30",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{40}{100} \\times 50 = 20\\)\n\nSo 20 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 336 as a percentage of 400.",
+    "options": [
+      "94%",
+      "84%",
+      "42%",
+      "119.05%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{336}{400} \\times 100\\% = 84\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 35% of 140.",
+    "options": [
+      "49",
+      "58.8",
+      "39.2",
+      "68.6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(35\\% \\text{ of } 140 = \\frac{35}{100} \\times 140 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 75% of 700.",
+    "options": [
+      "735",
+      "420",
+      "630",
+      "525"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(75\\% \\text{ of } 700 = \\frac{75}{100} \\times 700 = 525\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N330. Find the original price.",
+    "options": [
+      "297",
+      "300",
+      "3300",
+      "320"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 330\\)\n\n\\(x = \\frac{330 \\times 100}{110} = 300\\)\n\nSo the original price was N300.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 199cm but it was measured as 200cm. Find the percentage error.",
+    "options": [
+      "0.25%",
+      "1%",
+      "0.5%",
+      "1.01%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 200 - 199 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{199} \\times 100\\% = 0.5\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 160cm but it was measured as 164cm. Find the percentage error.",
+    "options": [
+      "1.25%",
+      "2.5%",
+      "5%",
+      "2.44%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 164 - 160 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{160} \\times 100\\% = 2.5\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 80 students, 15% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "12",
+      "24",
+      "17",
+      "68"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{15}{100} \\times 80 = 12\\)\n\nSo 12 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N190 was sold for N218.5. Find the percentage profit.",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "13.04%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 218.5 - 190 = 28.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{28.5}{190} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1150. If the price is decreased by 40%, find the new price.",
+    "options": [
+      "1190",
+      "690",
+      "1110",
+      "1610"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{40}{100} \\times 1150 = 460\\)\n\nNew price \\(= 1150 - 460 = 690\\)\n\nSo the new price is N690.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 12% of 500.",
+    "options": [
+      "72",
+      "48",
+      "84",
+      "60"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(12\\% \\text{ of } 500 = \\frac{12}{100} \\times 500 = 60\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 35% of 480.",
+    "options": [
+      "134.4",
+      "168",
+      "235.2",
+      "201.6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(35\\% \\text{ of } 480 = \\frac{35}{100} \\times 480 = 168\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 20% of 380.",
+    "options": [
+      "91.2",
+      "76",
+      "106.4",
+      "60.8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(20\\% \\text{ of } 380 = \\frac{20}{100} \\times 380 = 76\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 250 students, 40% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "150",
+      "200",
+      "105",
+      "100"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{40}{100} \\times 250 = 100\\)\n\nSo 100 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N240. If the price is increased by 10%, find the new price.",
+    "options": [
+      "216",
+      "250",
+      "230",
+      "264"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 240 = 24\\)\n\nNew price \\(= 240 + 24 = 264\\)\n\nSo the new price is N264.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 77cm but it was measured as 78cm. Find the percentage error.",
+    "options": [
+      "1.3%",
+      "2.6%",
+      "1.28%",
+      "0.65%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 78 - 77 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{77} \\times 100\\% = 1.3\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N429. Find the original price.",
+    "options": [
+      "386.1",
+      "4290",
+      "390",
+      "419"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 429\\)\n\n\\(x = \\frac{429 \\times 100}{110} = 390\\)\n\nSo the original price was N390.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 150 students, 20% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "60",
+      "30",
+      "35",
+      "120"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{20}{100} \\times 150 = 30\\)\n\nSo 30 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 45% of 160.",
+    "options": [
+      "86.4",
+      "57.6",
+      "100.8",
+      "72"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(45\\% \\text{ of } 160 = \\frac{45}{100} \\times 160 = 72\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N690. If the price is decreased by 10%, find the new price.",
+    "options": [
+      "621",
+      "700",
+      "759",
+      "680"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decrease \\(= \\frac{10}{100} \\times 690 = 69\\)\n\nNew price \\(= 690 - 69 = 621\\)\n\nSo the new price is N621.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 182cm but it was measured as 186cm. Find the percentage error.",
+    "options": [
+      "4.4%",
+      "2.15%",
+      "1.1%",
+      "2.2%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 186 - 182 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{182} \\times 100\\% = 2.2\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 40% of 760.",
+    "options": [
+      "364.8",
+      "304",
+      "425.6",
+      "243.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(40\\% \\text{ of } 760 = \\frac{40}{100} \\times 760 = 304\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 20% of 1180.",
+    "options": [
+      "236",
+      "188.8",
+      "283.2",
+      "330.4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(20\\% \\text{ of } 1180 = \\frac{20}{100} \\times 1180 = 236\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 172 as a percentage of 400.",
+    "options": [
+      "53%",
+      "232.56%",
+      "21.5%",
+      "43%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{172}{400} \\times 100\\% = 43\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 8 as a percentage of 25.",
+    "options": [
+      "32%",
+      "312.5%",
+      "42%",
+      "16%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{8}{25} \\times 100\\% = 32\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 75% of 940.",
+    "options": [
+      "846",
+      "987",
+      "564",
+      "705"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(75\\% \\text{ of } 940 = \\frac{75}{100} \\times 940 = 705\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N560 was sold for N616. Find the percentage profit.",
+    "options": [
+      "9.09%",
+      "5%",
+      "15%",
+      "10%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 616 - 560 = 56\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{56}{560} \\times 100\\% = 10\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N150. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "180",
+      "120",
+      "130",
+      "170"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 150 = 30\\)\n\nNew price \\(= 150 - 30 = 120\\)\n\nSo the new price is N120.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 50% of 1000.",
+    "options": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(50\\% \\text{ of } 1000 = \\frac{50}{100} \\times 1000 = 500\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N500 was sold for N600. Find the percentage profit.",
+    "options": [
+      "20%",
+      "16.67%",
+      "25%",
+      "15%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 600 - 500 = 100\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{100}{500} \\times 100\\% = 20\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N570. Find the original price.",
+    "options": [
+      "1140",
+      "285",
+      "380",
+      "520"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 570\\)\n\n\\(x = \\frac{570 \\times 100}{150} = 380\\)\n\nSo the original price was N380.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N740 was sold for N962. Find the percentage profit.",
+    "options": [
+      "30%",
+      "35%",
+      "23.08%",
+      "25%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 962 - 740 = 222\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{222}{740} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 22 as a percentage of 25.",
+    "options": [
+      "44%",
+      "113.64%",
+      "88%",
+      "98%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{22}{25} \\times 100\\% = 88\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 820.",
+    "options": [
+      "590.4",
+      "492",
+      "688.8",
+      "393.6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(60\\% \\text{ of } 820 = \\frac{60}{100} \\times 820 = 492\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 20% of 980.",
+    "options": [
+      "196",
+      "156.8",
+      "274.4",
+      "235.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(20\\% \\text{ of } 980 = \\frac{20}{100} \\times 980 = 196\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 220.",
+    "options": [
+      "105.6",
+      "158.4",
+      "132",
+      "184.8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(60\\% \\text{ of } 220 = \\frac{60}{100} \\times 220 = 132\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N390. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "312",
+      "410",
+      "370",
+      "468"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 390 = 78\\)\n\nNew price \\(= 390 - 78 = 312\\)\n\nSo the new price is N312.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 120 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "72",
+      "41",
+      "84",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{30}{100} \\times 120 = 36\\)\n\nSo 36 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 200 students, 60% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "240",
+      "80",
+      "125",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{60}{100} \\times 200 = 120\\)\n\nSo 120 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N912.5. Find the original price.",
+    "options": [
+      "3650",
+      "730",
+      "684.38",
+      "887.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 912.5\\)\n\n\\(x = \\frac{912.5 \\times 100}{125} = 730\\)\n\nSo the original price was N730.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 6 as a percentage of 40.",
+    "options": [
+      "7.5%",
+      "25%",
+      "15%",
+      "666.67%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{6}{40} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N420. Find the original price.",
+    "options": [
+      "2100",
+      "400",
+      "336",
+      "350"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 420\\)\n\n\\(x = \\frac{420 \\times 100}{120} = 350\\)\n\nSo the original price was N350.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 57cm but it was measured as 61cm. Find the percentage error.",
+    "options": [
+      "3.51%",
+      "7.02%",
+      "14.04%",
+      "6.56%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 61 - 57 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{57} \\times 100\\% = 7.02\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N220. If the price is increased by 25%, find the new price.",
+    "options": [
+      "195",
+      "165",
+      "275",
+      "245"
+    ],
+    "correctIndex": 2,
+    "explanation": "Increase \\(= \\frac{25}{100} \\times 220 = 55\\)\n\nNew price \\(= 220 + 55 = 275\\)\n\nSo the new price is N275.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N810. If the price is decreased by 25%, find the new price.",
+    "options": [
+      "835",
+      "607.5",
+      "1012.5",
+      "785"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{25}{100} \\times 810 = 202.5\\)\n\nNew price \\(= 810 - 202.5 = 607.5\\)\n\nSo the new price is N607.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 220.",
+    "options": [
+      "44",
+      "66",
+      "77",
+      "55"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(25\\% \\text{ of } 220 = \\frac{25}{100} \\times 220 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 150 students, 60% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "95",
+      "90",
+      "180",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{60}{100} \\times 150 = 90\\)\n\nSo 90 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N792. Find the original price.",
+    "options": [
+      "7920",
+      "720",
+      "712.8",
+      "782"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 792\\)\n\n\\(x = \\frac{792 \\times 100}{110} = 720\\)\n\nSo the original price was N720.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N700 was sold for N1050. Find the percentage profit.",
+    "options": [
+      "55%",
+      "50%",
+      "33.33%",
+      "45%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 1050 - 700 = 350\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{350}{700} \\times 100\\% = 50\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N430. If the price is increased by 10%, find the new price.",
+    "options": [
+      "473",
+      "440",
+      "420",
+      "387"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 430 = 43\\)\n\nNew price \\(= 430 + 43 = 473\\)\n\nSo the new price is N473.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 99cm but it was measured as 100cm. Find the percentage error.",
+    "options": [
+      "0.51%",
+      "1.01%",
+      "1%",
+      "2.02%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 100 - 99 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{99} \\times 100\\% = 1.01\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 156cm but it was measured as 160cm. Find the percentage error.",
+    "options": [
+      "5.13%",
+      "2.56%",
+      "2.5%",
+      "1.28%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 160 - 156 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{156} \\times 100\\% = 2.56\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N780. Find the original price.",
+    "options": [
+      "760",
+      "624",
+      "650",
+      "3900"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 780\\)\n\n\\(x = \\frac{780 \\times 100}{120} = 650\\)\n\nSo the original price was N650.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N300 was sold for N390. Find the percentage profit.",
+    "options": [
+      "23.08%",
+      "25%",
+      "35%",
+      "30%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 390 - 300 = 90\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{90}{300} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 100.",
+    "options": [
+      "30",
+      "35",
+      "25",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(25\\% \\text{ of } 100 = \\frac{25}{100} \\times 100 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 35% of 860.",
+    "options": [
+      "240.8",
+      "421.4",
+      "301",
+      "361.2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(35\\% \\text{ of } 860 = \\frac{35}{100} \\times 860 = 301\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N120. If the price is decreased by 15%, find the new price.",
+    "options": [
+      "135",
+      "102",
+      "105",
+      "138"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{15}{100} \\times 120 = 18\\)\n\nNew price \\(= 120 - 18 = 102\\)\n\nSo the new price is N102.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 150 students, 40% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "65",
+      "60",
+      "120",
+      "90"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{40}{100} \\times 150 = 60\\)\n\nSo 60 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 9 as a percentage of 20.",
+    "options": [
+      "45%",
+      "22.5%",
+      "222.22%",
+      "55%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{9}{20} \\times 100\\% = 45\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 100 students, 25% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "50",
+      "30",
+      "75",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{25}{100} \\times 100 = 25\\)\n\nSo 25 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 220 as a percentage of 400.",
+    "options": [
+      "181.82%",
+      "65%",
+      "55%",
+      "27.5%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{220}{400} \\times 100\\% = 55\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 113cm but it was measured as 115cm. Find the percentage error.",
+    "options": [
+      "0.88%",
+      "3.54%",
+      "1.77%",
+      "1.74%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 115 - 113 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{113} \\times 100\\% = 1.77\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 20 as a percentage of 40.",
+    "options": [
+      "60%",
+      "50%",
+      "200%",
+      "25%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{20}{40} \\times 100\\% = 50\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N790 was sold for N987.5. Find the percentage profit.",
+    "options": [
+      "25%",
+      "50%",
+      "20%",
+      "30%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 987.5 - 790 = 197.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{197.5}{790} \\times 100\\% = 25\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1100. If the price is increased by 15%, find the new price.",
+    "options": [
+      "1115",
+      "935",
+      "1085",
+      "1265"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{15}{100} \\times 1100 = 165\\)\n\nNew price \\(= 1100 + 165 = 1265\\)\n\nSo the new price is N1265.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N275. Find the original price.",
+    "options": [
+      "206.25",
+      "1100",
+      "250",
+      "220"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 275\\)\n\n\\(x = \\frac{275 \\times 100}{125} = 220\\)\n\nSo the original price was N220.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N430 was sold for N559. Find the percentage profit.",
+    "options": [
+      "30%",
+      "23.08%",
+      "25%",
+      "35%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 559 - 430 = 129\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{129}{430} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 12% of 640.",
+    "options": [
+      "76.8",
+      "92.16",
+      "61.44",
+      "107.52"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(12\\% \\text{ of } 640 = \\frac{12}{100} \\times 640 = 76.8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 560.",
+    "options": [
+      "196",
+      "168",
+      "112",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(25\\% \\text{ of } 560 = \\frac{25}{100} \\times 560 = 140\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 126cm but it was measured as 131cm. Find the percentage error.",
+    "options": [
+      "1.98%",
+      "3.82%",
+      "3.97%",
+      "7.94%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 131 - 126 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{126} \\times 100\\% = 3.97\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N480 was sold for N576. Find the percentage profit.",
+    "options": [
+      "20%",
+      "15%",
+      "16.67%",
+      "25%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 576 - 480 = 96\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{96}{480} \\times 100\\% = 20\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N480. If the price is increased by 40%, find the new price.",
+    "options": [
+      "520",
+      "440",
+      "288",
+      "672"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{40}{100} \\times 480 = 192\\)\n\nNew price \\(= 480 + 192 = 672\\)\n\nSo the new price is N672.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N228. Find the original price.",
+    "options": [
+      "1140",
+      "190",
+      "182.4",
+      "208"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 228\\)\n\n\\(x = \\frac{228 \\times 100}{120} = 190\\)\n\nSo the original price was N190.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 120 students, 25% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "35",
+      "90",
+      "30",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{25}{100} \\times 120 = 30\\)\n\nSo 30 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N781. Find the original price.",
+    "options": [
+      "771",
+      "702.9",
+      "7810",
+      "710"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 781\\)\n\n\\(x = \\frac{781 \\times 100}{110} = 710\\)\n\nSo the original price was N710.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N143. Find the original price.",
+    "options": [
+      "130",
+      "1430",
+      "128.7",
+      "133"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 143\\)\n\n\\(x = \\frac{143 \\times 100}{110} = 130\\)\n\nSo the original price was N130.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 80 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "56",
+      "24",
+      "29",
+      "48"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{30}{100} \\times 80 = 24\\)\n\nSo 24 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N500. If the price is increased by 40%, find the new price.",
+    "options": [
+      "700",
+      "300",
+      "460",
+      "540"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{40}{100} \\times 500 = 200\\)\n\nNew price \\(= 500 + 200 = 700\\)\n\nSo the new price is N700.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 102cm but it was measured as 104cm. Find the percentage error.",
+    "options": [
+      "1.92%",
+      "0.98%",
+      "3.92%",
+      "1.96%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 104 - 102 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{102} \\times 100\\% = 1.96\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 45% of 520.",
+    "options": [
+      "327.6",
+      "234",
+      "280.8",
+      "187.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(45\\% \\text{ of } 520 = \\frac{45}{100} \\times 520 = 234\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N671. Find the original price.",
+    "options": [
+      "6710",
+      "610",
+      "603.9",
+      "661"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 671\\)\n\n\\(x = \\frac{671 \\times 100}{110} = 610\\)\n\nSo the original price was N610.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N876. Find the original price.",
+    "options": [
+      "856",
+      "4380",
+      "730",
+      "700.8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 876\\)\n\n\\(x = \\frac{876 \\times 100}{120} = 730\\)\n\nSo the original price was N730.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N312.5. Find the original price.",
+    "options": [
+      "250",
+      "1250",
+      "234.38",
+      "287.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 312.5\\)\n\n\\(x = \\frac{312.5 \\times 100}{125} = 250\\)\n\nSo the original price was N250.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 15% of 700.",
+    "options": [
+      "84",
+      "126",
+      "105",
+      "147"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(15\\% \\text{ of } 700 = \\frac{15}{100} \\times 700 = 105\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 100 students, 20% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "40",
+      "25",
+      "20",
+      "80"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{20}{100} \\times 100 = 20\\)\n\nSo 20 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N310. If the price is increased by 5%, find the new price.",
+    "options": [
+      "325.5",
+      "294.5",
+      "315",
+      "305"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{5}{100} \\times 310 = 15.5\\)\n\nNew price \\(= 310 + 15.5 = 325.5\\)\n\nSo the new price is N325.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 5% of 1060.",
+    "options": [
+      "42.4",
+      "53",
+      "63.6",
+      "74.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5\\% \\text{ of } 1060 = \\frac{5}{100} \\times 1060 = 53\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "4",
+      "8",
+      "36",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{10}{100} \\times 40 = 4\\)\n\nSo 4 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N620. If the price is increased by 10%, find the new price.",
+    "options": [
+      "558",
+      "630",
+      "682",
+      "610"
+    ],
+    "correctIndex": 2,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 620 = 62\\)\n\nNew price \\(= 620 + 62 = 682\\)\n\nSo the new price is N682.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1030. If the price is decreased by 15%, find the new price.",
+    "options": [
+      "1015",
+      "1184.5",
+      "1045",
+      "875.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Decrease \\(= \\frac{15}{100} \\times 1030 = 154.5\\)\n\nNew price \\(= 1030 - 154.5 = 875.5\\)\n\nSo the new price is N875.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N810. Find the original price.",
+    "options": [
+      "540",
+      "405",
+      "1620",
+      "760"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 810\\)\n\n\\(x = \\frac{810 \\times 100}{150} = 540\\)\n\nSo the original price was N540.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 4 as a percentage of 25.",
+    "options": [
+      "625%",
+      "26%",
+      "16%",
+      "8%"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{4}{25} \\times 100\\% = 16\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N160 was sold for N184. Find the percentage profit.",
+    "options": [
+      "10%",
+      "15%",
+      "13.04%",
+      "20%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 184 - 160 = 24\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{24}{160} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N825. Find the original price.",
+    "options": [
+      "1650",
+      "550",
+      "775",
+      "412.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 825\\)\n\n\\(x = \\frac{825 \\times 100}{150} = 550\\)\n\nSo the original price was N550.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 10% of 460.",
+    "options": [
+      "36.8",
+      "64.4",
+      "55.2",
+      "46"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(10\\% \\text{ of } 460 = \\frac{10}{100} \\times 460 = 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1010. If the price is increased by 40%, find the new price.",
+    "options": [
+      "606",
+      "1414",
+      "1050",
+      "970"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{40}{100} \\times 1010 = 404\\)\n\nNew price \\(= 1010 + 404 = 1414\\)\n\nSo the new price is N1414.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N480 was sold for N552. Find the percentage profit.",
+    "options": [
+      "15%",
+      "10%",
+      "13.04%",
+      "20%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 552 - 480 = 72\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{72}{480} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 128cm but it was measured as 129cm. Find the percentage error.",
+    "options": [
+      "0.39%",
+      "1%",
+      "1.56%",
+      "0.78%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 129 - 128 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{128} \\times 100\\% = 0.78\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N550 was sold for N770. Find the percentage profit.",
+    "options": [
+      "28.57%",
+      "45%",
+      "35%",
+      "40%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 770 - 550 = 220\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{220}{550} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 80 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "13",
+      "72",
+      "16",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{10}{100} \\times 80 = 8\\)\n\nSo 8 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N790. If the price is increased by 5%, find the new price.",
+    "options": [
+      "795",
+      "829.5",
+      "785",
+      "750.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{5}{100} \\times 790 = 39.5\\)\n\nNew price \\(= 790 + 39.5 = 829.5\\)\n\nSo the new price is N829.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 23 as a percentage of 25.",
+    "options": [
+      "92%",
+      "46%",
+      "108.7%",
+      "102%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{23}{25} \\times 100\\% = 92\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 50% of 180.",
+    "options": [
+      "72",
+      "108",
+      "90",
+      "126"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(50\\% \\text{ of } 180 = \\frac{50}{100} \\times 180 = 90\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N560. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "540",
+      "672",
+      "448",
+      "580"
+    ],
+    "correctIndex": 2,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 560 = 112\\)\n\nNew price \\(= 560 - 112 = 448\\)\n\nSo the new price is N448.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 5% of 460.",
+    "options": [
+      "23",
+      "27.6",
+      "18.4",
+      "32.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(5\\% \\text{ of } 460 = \\frac{5}{100} \\times 460 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 60 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "54",
+      "6",
+      "11",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{10}{100} \\times 60 = 6\\)\n\nSo 6 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 50% of 160.",
+    "options": [
+      "64",
+      "96",
+      "112",
+      "80"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(50\\% \\text{ of } 160 = \\frac{50}{100} \\times 160 = 80\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 200 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "60",
+      "65",
+      "140",
+      "120"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{30}{100} \\times 200 = 60\\)\n\nSo 60 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N410 was sold for N574. Find the percentage profit.",
+    "options": [
+      "45%",
+      "40%",
+      "35%",
+      "28.57%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 574 - 410 = 164\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{164}{410} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N420 was sold for N504. Find the percentage profit.",
+    "options": [
+      "16.67%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profit \\(= 504 - 420 = 84\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{84}{420} \\times 100\\% = 20\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N280 was sold for N392. Find the percentage profit.",
+    "options": [
+      "35%",
+      "28.57%",
+      "45%",
+      "40%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 392 - 280 = 112\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{112}{280} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 74cm but it was measured as 75cm. Find the percentage error.",
+    "options": [
+      "1.33%",
+      "1.35%",
+      "2.7%",
+      "0.68%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 75 - 74 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{74} \\times 100\\% = 1.35\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 15% of 840.",
+    "options": [
+      "126",
+      "100.8",
+      "176.4",
+      "151.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(15\\% \\text{ of } 840 = \\frac{15}{100} \\times 840 = 126\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 560.",
+    "options": [
+      "268.8",
+      "336",
+      "403.2",
+      "470.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(60\\% \\text{ of } 560 = \\frac{60}{100} \\times 560 = 336\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N180 was sold for N252. Find the percentage profit.",
+    "options": [
+      "28.57%",
+      "45%",
+      "40%",
+      "35%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profit \\(= 252 - 180 = 72\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{72}{180} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N870. Find the original price.",
+    "options": [
+      "580",
+      "820",
+      "435",
+      "1740"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 870\\)\n\n\\(x = \\frac{870 \\times 100}{150} = 580\\)\n\nSo the original price was N580.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N700. Find the original price.",
+    "options": [
+      "560",
+      "2800",
+      "525",
+      "675"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 700\\)\n\n\\(x = \\frac{700 \\times 100}{125} = 560\\)\n\nSo the original price was N560.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 250 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "75",
+      "175",
+      "150",
+      "80"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{30}{100} \\times 250 = 75\\)\n\nSo 75 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 75% of 1200.",
+    "options": [
+      "1080",
+      "900",
+      "720",
+      "1260"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(75\\% \\text{ of } 1200 = \\frac{75}{100} \\times 1200 = 900\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 78cm but it was measured as 79cm. Find the percentage error.",
+    "options": [
+      "1.27%",
+      "0.64%",
+      "2.56%",
+      "1.28%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 79 - 78 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{78} \\times 100\\% = 1.28\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 30% of 1080.",
+    "options": [
+      "324",
+      "453.6",
+      "388.8",
+      "259.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(30\\% \\text{ of } 1080 = \\frac{30}{100} \\times 1080 = 324\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1030. If the price is increased by 10%, find the new price.",
+    "options": [
+      "1040",
+      "927",
+      "1133",
+      "1020"
+    ],
+    "correctIndex": 2,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 1030 = 103\\)\n\nNew price \\(= 1030 + 103 = 1133\\)\n\nSo the new price is N1133.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 1020.",
+    "options": [
+      "489.6",
+      "734.4",
+      "612",
+      "856.8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(60\\% \\text{ of } 1020 = \\frac{60}{100} \\times 1020 = 612\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 80.",
+    "options": [
+      "67.2",
+      "48",
+      "57.6",
+      "38.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(60\\% \\text{ of } 80 = \\frac{60}{100} \\times 80 = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 59cm but it was measured as 61cm. Find the percentage error.",
+    "options": [
+      "1.69%",
+      "6.78%",
+      "3.39%",
+      "3.28%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 61 - 59 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{59} \\times 100\\% = 3.39\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 75% of 220.",
+    "options": [
+      "165",
+      "231",
+      "132",
+      "198"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(75\\% \\text{ of } 220 = \\frac{75}{100} \\times 220 = 165\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 19 as a percentage of 25.",
+    "options": [
+      "38%",
+      "131.58%",
+      "86%",
+      "76%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{19}{25} \\times 100\\% = 76\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N370 was sold for N425.5. Find the percentage profit.",
+    "options": [
+      "20%",
+      "15%",
+      "10%",
+      "13.04%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 425.5 - 370 = 55.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{55.5}{370} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 80% of 1100.",
+    "options": [
+      "1056",
+      "704",
+      "880",
+      "1232"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(80\\% \\text{ of } 1100 = \\frac{80}{100} \\times 1100 = 880\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 167cm but it was measured as 168cm. Find the percentage error.",
+    "options": [
+      "0.6%",
+      "0.3%",
+      "1%",
+      "1.2%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 168 - 167 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{167} \\times 100\\% = 0.6\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 6 as a percentage of 50.",
+    "options": [
+      "12%",
+      "833.33%",
+      "6%",
+      "22%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{6}{50} \\times 100\\% = 12\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N1095. Find the original price.",
+    "options": [
+      "1045",
+      "547.5",
+      "730",
+      "2190"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 1095\\)\n\n\\(x = \\frac{1095 \\times 100}{150} = 730\\)\n\nSo the original price was N730.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N585. Find the original price.",
+    "options": [
+      "292.5",
+      "535",
+      "1170",
+      "390"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 585\\)\n\n\\(x = \\frac{585 \\times 100}{150} = 390\\)\n\nSo the original price was N390.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N740 was sold for N851. Find the percentage profit.",
+    "options": [
+      "13.04%",
+      "20%",
+      "15%",
+      "10%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profit \\(= 851 - 740 = 111\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{111}{740} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 50% of 320.",
+    "options": [
+      "160",
+      "224",
+      "192",
+      "128"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(50\\% \\text{ of } 320 = \\frac{50}{100} \\times 320 = 160\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N720 was sold for N1080. Find the percentage profit.",
+    "options": [
+      "55%",
+      "50%",
+      "33.33%",
+      "45%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 1080 - 720 = 360\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{360}{720} \\times 100\\% = 50\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N168. Find the original price.",
+    "options": [
+      "840",
+      "134.4",
+      "148",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 168\\)\n\n\\(x = \\frac{168 \\times 100}{120} = 140\\)\n\nSo the original price was N140.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N572. Find the original price.",
+    "options": [
+      "514.8",
+      "5720",
+      "562",
+      "520"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 572\\)\n\n\\(x = \\frac{572 \\times 100}{110} = 520\\)\n\nSo the original price was N520.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1170. If the price is increased by 15%, find the new price.",
+    "options": [
+      "1345.5",
+      "1185",
+      "994.5",
+      "1155"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{15}{100} \\times 1170 = 175.5\\)\n\nNew price \\(= 1170 + 175.5 = 1345.5\\)\n\nSo the new price is N1345.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 15% of 1140.",
+    "options": [
+      "136.8",
+      "239.4",
+      "171",
+      "205.2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(15\\% \\text{ of } 1140 = \\frac{15}{100} \\times 1140 = 171\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N340. If the price is decreased by 40%, find the new price.",
+    "options": [
+      "380",
+      "476",
+      "204",
+      "300"
+    ],
+    "correctIndex": 2,
+    "explanation": "Decrease \\(= \\frac{40}{100} \\times 340 = 136\\)\n\nNew price \\(= 340 - 136 = 204\\)\n\nSo the new price is N204.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 130cm but it was measured as 134cm. Find the percentage error.",
+    "options": [
+      "1.54%",
+      "2.99%",
+      "3.08%",
+      "6.15%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 134 - 130 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{130} \\times 100\\% = 3.08\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N990. Find the original price.",
+    "options": [
+      "495",
+      "660",
+      "940",
+      "1980"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 990\\)\n\n\\(x = \\frac{990 \\times 100}{150} = 660\\)\n\nSo the original price was N660.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N564. Find the original price.",
+    "options": [
+      "451.2",
+      "544",
+      "2820",
+      "470"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 564\\)\n\n\\(x = \\frac{564 \\times 100}{120} = 470\\)\n\nSo the original price was N470.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N720. Find the original price.",
+    "options": [
+      "576",
+      "700",
+      "600",
+      "3600"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 720\\)\n\n\\(x = \\frac{720 \\times 100}{120} = 600\\)\n\nSo the original price was N600.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N828. Find the original price.",
+    "options": [
+      "662.4",
+      "690",
+      "4140",
+      "808"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 828\\)\n\n\\(x = \\frac{828 \\times 100}{120} = 690\\)\n\nSo the original price was N690.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1040. If the price is decreased by 10%, find the new price.",
+    "options": [
+      "936",
+      "1050",
+      "1030",
+      "1144"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decrease \\(= \\frac{10}{100} \\times 1040 = 104\\)\n\nNew price \\(= 1040 - 104 = 936\\)\n\nSo the new price is N936.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N960. If the price is increased by 10%, find the new price.",
+    "options": [
+      "1056",
+      "950",
+      "864",
+      "970"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 960 = 96\\)\n\nNew price \\(= 960 + 96 = 1056\\)\n\nSo the new price is N1056.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 148cm but it was measured as 153cm. Find the percentage error.",
+    "options": [
+      "1.69%",
+      "3.38%",
+      "3.27%",
+      "6.76%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 153 - 148 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{148} \\times 100\\% = 3.38\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N320 was sold for N416. Find the percentage profit.",
+    "options": [
+      "25%",
+      "23.08%",
+      "35%",
+      "30%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 416 - 320 = 96\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{96}{320} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N710 was sold for N852. Find the percentage profit.",
+    "options": [
+      "25%",
+      "16.67%",
+      "20%",
+      "15%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profit \\(= 852 - 710 = 142\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{142}{710} \\times 100\\% = 20\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N750 was sold for N1050. Find the percentage profit.",
+    "options": [
+      "35%",
+      "28.57%",
+      "40%",
+      "45%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profit \\(= 1050 - 750 = 300\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{300}{750} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 40% of 620.",
+    "options": [
+      "297.6",
+      "347.2",
+      "198.4",
+      "248"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(40\\% \\text{ of } 620 = \\frac{40}{100} \\times 620 = 248\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N260. If the price is increased by 20%, find the new price.",
+    "options": [
+      "208",
+      "240",
+      "280",
+      "312"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{20}{100} \\times 260 = 52\\)\n\nNew price \\(= 260 + 52 = 312\\)\n\nSo the new price is N312.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N420. If the price is decreased by 5%, find the new price.",
+    "options": [
+      "415",
+      "425",
+      "399",
+      "441"
+    ],
+    "correctIndex": 2,
+    "explanation": "Decrease \\(= \\frac{5}{100} \\times 420 = 21\\)\n\nNew price \\(= 420 - 21 = 399\\)\n\nSo the new price is N399.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 10% of 200.",
+    "options": [
+      "20",
+      "24",
+      "28",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(10\\% \\text{ of } 200 = \\frac{10}{100} \\times 200 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N700. If the price is decreased by 40%, find the new price.",
+    "options": [
+      "660",
+      "420",
+      "980",
+      "740"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{40}{100} \\times 700 = 280\\)\n\nNew price \\(= 700 - 280 = 420\\)\n\nSo the new price is N420.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N730. If the price is decreased by 50%, find the new price.",
+    "options": [
+      "680",
+      "780",
+      "365",
+      "1095"
+    ],
+    "correctIndex": 2,
+    "explanation": "Decrease \\(= \\frac{50}{100} \\times 730 = 365\\)\n\nNew price \\(= 730 - 365 = 365\\)\n\nSo the new price is N365.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N840. If the price is increased by 10%, find the new price.",
+    "options": [
+      "924",
+      "850",
+      "830",
+      "756"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 840 = 84\\)\n\nNew price \\(= 840 + 84 = 924\\)\n\nSo the new price is N924.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N350 was sold for N437.5. Find the percentage profit.",
+    "options": [
+      "30%",
+      "25%",
+      "50%",
+      "20%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 437.5 - 350 = 87.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{87.5}{350} \\times 100\\% = 25\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "35",
+      "20",
+      "30",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{30}{100} \\times 50 = 15\\)\n\nSo 15 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 34cm but it was measured as 36cm. Find the percentage error.",
+    "options": [
+      "5.88%",
+      "11.76%",
+      "5.56%",
+      "2.94%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 36 - 34 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{34} \\times 100\\% = 5.88\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N290. If the price is increased by 25%, find the new price.",
+    "options": [
+      "315",
+      "362.5",
+      "217.5",
+      "265"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{25}{100} \\times 290 = 72.5\\)\n\nNew price \\(= 290 + 72.5 = 362.5\\)\n\nSo the new price is N362.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 360.",
+    "options": [
+      "90",
+      "108",
+      "72",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(25\\% \\text{ of } 360 = \\frac{25}{100} \\times 360 = 90\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 179cm but it was measured as 184cm. Find the percentage error.",
+    "options": [
+      "1.4%",
+      "2.72%",
+      "2.79%",
+      "5.59%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 184 - 179 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{179} \\times 100\\% = 2.79\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N462. Find the original price.",
+    "options": [
+      "452",
+      "415.8",
+      "420",
+      "4620"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 462\\)\n\n\\(x = \\frac{462 \\times 100}{110} = 420\\)\n\nSo the original price was N420.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N540. Find the original price.",
+    "options": [
+      "490",
+      "1080",
+      "360",
+      "270"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 540\\)\n\n\\(x = \\frac{540 \\times 100}{150} = 360\\)\n\nSo the original price was N360.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 120 students, 40% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "72",
+      "96",
+      "53",
+      "48"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{40}{100} \\times 120 = 48\\)\n\nSo 48 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N605. Find the original price.",
+    "options": [
+      "595",
+      "6050",
+      "544.5",
+      "550"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 605\\)\n\n\\(x = \\frac{605 \\times 100}{110} = 550\\)\n\nSo the original price was N550.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N540. If the price is increased by 20%, find the new price.",
+    "options": [
+      "520",
+      "560",
+      "432",
+      "648"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{20}{100} \\times 540 = 108\\)\n\nNew price \\(= 540 + 108 = 648\\)\n\nSo the new price is N648.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N120. If the price is decreased by 5%, find the new price.",
+    "options": [
+      "114",
+      "115",
+      "125",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decrease \\(= \\frac{5}{100} \\times 120 = 6\\)\n\nNew price \\(= 120 - 6 = 114\\)\n\nSo the new price is N114.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N730. If the price is increased by 40%, find the new price.",
+    "options": [
+      "770",
+      "1022",
+      "438",
+      "690"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{40}{100} \\times 730 = 292\\)\n\nNew price \\(= 730 + 292 = 1022\\)\n\nSo the new price is N1022.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N740 was sold for N1036. Find the percentage profit.",
+    "options": [
+      "35%",
+      "28.57%",
+      "45%",
+      "40%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 1036 - 740 = 296\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{296}{740} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N240 was sold for N336. Find the percentage profit.",
+    "options": [
+      "35%",
+      "40%",
+      "28.57%",
+      "45%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 336 - 240 = 96\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{96}{240} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 50% of 200.",
+    "options": [
+      "120",
+      "140",
+      "100",
+      "80"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(50\\% \\text{ of } 200 = \\frac{50}{100} \\times 200 = 100\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N670 was sold for N770.5. Find the percentage profit.",
+    "options": [
+      "15%",
+      "20%",
+      "10%",
+      "13.04%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 770.5 - 670 = 100.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{100.5}{670} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 120 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "24",
+      "108",
+      "12",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{10}{100} \\times 120 = 12\\)\n\nSo 12 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N440. If the price is increased by 20%, find the new price.",
+    "options": [
+      "352",
+      "420",
+      "460",
+      "528"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{20}{100} \\times 440 = 88\\)\n\nNew price \\(= 440 + 88 = 528\\)\n\nSo the new price is N528.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 139cm but it was measured as 144cm. Find the percentage error.",
+    "options": [
+      "3.47%",
+      "3.6%",
+      "1.8%",
+      "7.19%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 144 - 139 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{139} \\times 100\\% = 3.6\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N650. If the price is decreased by 10%, find the new price.",
+    "options": [
+      "715",
+      "660",
+      "640",
+      "585"
+    ],
+    "correctIndex": 3,
+    "explanation": "Decrease \\(= \\frac{10}{100} \\times 650 = 65\\)\n\nNew price \\(= 650 - 65 = 585\\)\n\nSo the new price is N585.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 5% of 740.",
+    "options": [
+      "51.8",
+      "29.6",
+      "37",
+      "44.4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5\\% \\text{ of } 740 = \\frac{5}{100} \\times 740 = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 45% of 1100.",
+    "options": [
+      "495",
+      "594",
+      "693",
+      "396"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(45\\% \\text{ of } 1100 = \\frac{45}{100} \\times 1100 = 495\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N858. Find the original price.",
+    "options": [
+      "848",
+      "8580",
+      "772.2",
+      "780"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 858\\)\n\n\\(x = \\frac{858 \\times 100}{110} = 780\\)\n\nSo the original price was N780.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N460 was sold for N690. Find the percentage profit.",
+    "options": [
+      "33.33%",
+      "45%",
+      "50%",
+      "55%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profit \\(= 690 - 460 = 230\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{230}{460} \\times 100\\% = 50\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 40.",
+    "options": [
+      "19.2",
+      "24",
+      "33.6",
+      "28.8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(60\\% \\text{ of } 40 = \\frac{60}{100} \\times 40 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 17 as a percentage of 25.",
+    "options": [
+      "68%",
+      "78%",
+      "34%",
+      "147.06%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{17}{25} \\times 100\\% = 68\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 194cm but it was measured as 195cm. Find the percentage error.",
+    "options": [
+      "0.51%",
+      "0.26%",
+      "0.52%",
+      "1.03%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 195 - 194 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{194} \\times 100\\% = 0.52\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 83cm but it was measured as 85cm. Find the percentage error.",
+    "options": [
+      "4.82%",
+      "2.35%",
+      "1.2%",
+      "2.41%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 85 - 83 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{83} \\times 100\\% = 2.41\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N885. Find the original price.",
+    "options": [
+      "1770",
+      "590",
+      "442.5",
+      "835"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 885\\)\n\n\\(x = \\frac{885 \\times 100}{150} = 590\\)\n\nSo the original price was N590.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N880. If the price is increased by 40%, find the new price.",
+    "options": [
+      "528",
+      "1232",
+      "840",
+      "920"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{40}{100} \\times 880 = 352\\)\n\nNew price \\(= 880 + 352 = 1232\\)\n\nSo the new price is N1232.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 150 as a percentage of 200.",
+    "options": [
+      "133.33%",
+      "85%",
+      "37.5%",
+      "75%"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{150}{200} \\times 100\\% = 75\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 100 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "60",
+      "30",
+      "35",
+      "70"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{30}{100} \\times 100 = 30\\)\n\nSo 30 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N790 was sold for N948. Find the percentage profit.",
+    "options": [
+      "25%",
+      "16.67%",
+      "15%",
+      "20%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 948 - 790 = 158\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{158}{790} \\times 100\\% = 20\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 40% of 780.",
+    "options": [
+      "436.8",
+      "312",
+      "249.6",
+      "374.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(40\\% \\text{ of } 780 = \\frac{40}{100} \\times 780 = 312\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 50% of 540.",
+    "options": [
+      "216",
+      "270",
+      "324",
+      "378"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(50\\% \\text{ of } 540 = \\frac{50}{100} \\times 540 = 270\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 134cm but it was measured as 135cm. Find the percentage error.",
+    "options": [
+      "1.49%",
+      "0.74%",
+      "0.37%",
+      "0.75%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 135 - 134 = 1\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{1}{134} \\times 100\\% = 0.75\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N540 was sold for N756. Find the percentage profit.",
+    "options": [
+      "28.57%",
+      "40%",
+      "35%",
+      "45%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 756 - 540 = 216\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{216}{540} \\times 100\\% = 40\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 91cm but it was measured as 95cm. Find the percentage error.",
+    "options": [
+      "4.4%",
+      "4.21%",
+      "2.2%",
+      "8.79%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 95 - 91 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{91} \\times 100\\% = 4.4\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 80% of 840.",
+    "options": [
+      "806.4",
+      "940.8",
+      "537.6",
+      "672"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(80\\% \\text{ of } 840 = \\frac{80}{100} \\times 840 = 672\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N870 was sold for N957. Find the percentage profit.",
+    "options": [
+      "10%",
+      "15%",
+      "9.09%",
+      "5%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 957 - 870 = 87\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{87}{870} \\times 100\\% = 10\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 50% increase, the price of an item became N1020. Find the original price.",
+    "options": [
+      "510",
+      "970",
+      "2040",
+      "680"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{150}{100} = 1020\\)\n\n\\(x = \\frac{1020 \\times 100}{150} = 680\\)\n\nSo the original price was N680.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 40cm but it was measured as 42cm. Find the percentage error.",
+    "options": [
+      "10%",
+      "5%",
+      "2.5%",
+      "4.76%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 42 - 40 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{40} \\times 100\\% = 5\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1110. If the price is increased by 15%, find the new price.",
+    "options": [
+      "1095",
+      "1276.5",
+      "943.5",
+      "1125"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{15}{100} \\times 1110 = 166.5\\)\n\nNew price \\(= 1110 + 166.5 = 1276.5\\)\n\nSo the new price is N1276.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 45% of 120.",
+    "options": [
+      "54",
+      "43.2",
+      "64.8",
+      "75.6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(45\\% \\text{ of } 120 = \\frac{45}{100} \\times 120 = 54\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 200 students, 20% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "40",
+      "80",
+      "160",
+      "45"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{20}{100} \\times 200 = 40\\)\n\nSo 40 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N940. If the price is decreased by 25%, find the new price.",
+    "options": [
+      "1175",
+      "705",
+      "965",
+      "915"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{25}{100} \\times 940 = 235\\)\n\nNew price \\(= 940 - 235 = 705\\)\n\nSo the new price is N705.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 80% of 180.",
+    "options": [
+      "144",
+      "172.8",
+      "115.2",
+      "201.6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(80\\% \\text{ of } 180 = \\frac{80}{100} \\times 180 = 144\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 12% of 1180.",
+    "options": [
+      "169.92",
+      "113.28",
+      "141.6",
+      "198.24"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(12\\% \\text{ of } 1180 = \\frac{12}{100} \\times 1180 = 141.6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 45cm but it was measured as 50cm. Find the percentage error.",
+    "options": [
+      "10%",
+      "22.22%",
+      "11.11%",
+      "5.56%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 50 - 45 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{45} \\times 100\\% = 11.11\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N210. If the price is increased by 20%, find the new price.",
+    "options": [
+      "168",
+      "252",
+      "190",
+      "230"
+    ],
+    "correctIndex": 1,
+    "explanation": "Increase \\(= \\frac{20}{100} \\times 210 = 42\\)\n\nNew price \\(= 210 + 42 = 252\\)\n\nSo the new price is N252.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N517. Find the original price.",
+    "options": [
+      "507",
+      "465.3",
+      "470",
+      "5170"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 517\\)\n\n\\(x = \\frac{517 \\times 100}{110} = 470\\)\n\nSo the original price was N470.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N587.5. Find the original price.",
+    "options": [
+      "470",
+      "440.63",
+      "2350",
+      "562.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 587.5\\)\n\n\\(x = \\frac{587.5 \\times 100}{125} = 470\\)\n\nSo the original price was N470.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 36 as a percentage of 80.",
+    "options": [
+      "45%",
+      "55%",
+      "222.22%",
+      "22.5%"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{36}{80} \\times 100\\% = 45\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 150 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "30",
+      "15",
+      "135",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{10}{100} \\times 150 = 15\\)\n\nSo 15 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N880. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "1056",
+      "704",
+      "860",
+      "900"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 880 = 176\\)\n\nNew price \\(= 880 - 176 = 704\\)\n\nSo the new price is N704.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 45% of 720.",
+    "options": [
+      "259.2",
+      "324",
+      "453.6",
+      "388.8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(45\\% \\text{ of } 720 = \\frac{45}{100} \\times 720 = 324\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N1070. If the price is increased by 50%, find the new price.",
+    "options": [
+      "1605",
+      "1020",
+      "1120",
+      "535"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{50}{100} \\times 1070 = 535\\)\n\nNew price \\(= 1070 + 535 = 1605\\)\n\nSo the new price is N1605.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 25 as a percentage of 50.",
+    "options": [
+      "25%",
+      "50%",
+      "60%",
+      "200%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{25}{50} \\times 100\\% = 50\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 500.",
+    "options": [
+      "240",
+      "300",
+      "420",
+      "360"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(60\\% \\text{ of } 500 = \\frac{60}{100} \\times 500 = 300\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, 30% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "24",
+      "28",
+      "17",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{30}{100} \\times 40 = 12\\)\n\nSo 12 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N732. Find the original price.",
+    "options": [
+      "610",
+      "585.6",
+      "3660",
+      "712"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 732\\)\n\n\\(x = \\frac{732 \\times 100}{120} = 610\\)\n\nSo the original price was N610.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N790 was sold for N1027. Find the percentage profit.",
+    "options": [
+      "23.08%",
+      "30%",
+      "25%",
+      "35%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 1027 - 790 = 237\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{237}{790} \\times 100\\% = 30\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 146cm but it was measured as 150cm. Find the percentage error.",
+    "options": [
+      "5.48%",
+      "2.67%",
+      "1.37%",
+      "2.74%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Error \\(= 150 - 146 = 4\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{4}{146} \\times 100\\% = 2.74\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N192. Find the original price.",
+    "options": [
+      "960",
+      "160",
+      "153.6",
+      "172"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 192\\)\n\n\\(x = \\frac{192 \\times 100}{120} = 160\\)\n\nSo the original price was N160.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N341. Find the original price.",
+    "options": [
+      "3410",
+      "306.9",
+      "310",
+      "331"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 341\\)\n\n\\(x = \\frac{341 \\times 100}{110} = 310\\)\n\nSo the original price was N310.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 10% increase, the price of an item became N198. Find the original price.",
+    "options": [
+      "188",
+      "180",
+      "1980",
+      "178.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{110}{100} = 198\\)\n\n\\(x = \\frac{198 \\times 100}{110} = 180\\)\n\nSo the original price was N180.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N550 was sold for N687.5. Find the percentage profit.",
+    "options": [
+      "20%",
+      "50%",
+      "30%",
+      "25%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Profit \\(= 687.5 - 550 = 137.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{137.5}{550} \\times 100\\% = 25\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, 20% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "8",
+      "16",
+      "13",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{20}{100} \\times 40 = 8\\)\n\nSo 8 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N360. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "288",
+      "340",
+      "380",
+      "432"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 360 = 72\\)\n\nNew price \\(= 360 - 72 = 288\\)\n\nSo the new price is N288.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 47cm but it was measured as 52cm. Find the percentage error.",
+    "options": [
+      "21.28%",
+      "10.64%",
+      "5.32%",
+      "9.62%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Error \\(= 52 - 47 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{47} \\times 100\\% = 10.64\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N187.5. Find the original price.",
+    "options": [
+      "140.63",
+      "750",
+      "150",
+      "162.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 187.5\\)\n\n\\(x = \\frac{187.5 \\times 100}{125} = 150\\)\n\nSo the original price was N150.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N840. Find the original price.",
+    "options": [
+      "672",
+      "820",
+      "700",
+      "4200"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 840\\)\n\n\\(x = \\frac{840 \\times 100}{120} = 700\\)\n\nSo the original price was N700.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 25% of 460.",
+    "options": [
+      "161",
+      "115",
+      "92",
+      "138"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(25\\% \\text{ of } 460 = \\frac{25}{100} \\times 460 = 115\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N925. Find the original price.",
+    "options": [
+      "3700",
+      "900",
+      "740",
+      "693.75"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 925\\)\n\n\\(x = \\frac{925 \\times 100}{125} = 740\\)\n\nSo the original price was N740.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N850 was sold for N977.5. Find the percentage profit.",
+    "options": [
+      "15%",
+      "20%",
+      "13.04%",
+      "10%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profit \\(= 977.5 - 850 = 127.5\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{127.5}{850} \\times 100\\% = 15\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 99cm but it was measured as 101cm. Find the percentage error.",
+    "options": [
+      "4.04%",
+      "1.01%",
+      "2.02%",
+      "1.98%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Error \\(= 101 - 99 = 2\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{2}{99} \\times 100\\% = 2.02\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, 40% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "32",
+      "16",
+      "21",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{40}{100} \\times 40 = 16\\)\n\nSo 16 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N230. If the price is increased by 20%, find the new price.",
+    "options": [
+      "276",
+      "184",
+      "210",
+      "250"
+    ],
+    "correctIndex": 0,
+    "explanation": "Increase \\(= \\frac{20}{100} \\times 230 = 46\\)\n\nNew price \\(= 230 + 46 = 276\\)\n\nSo the new price is N276.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 5% of 320.",
+    "options": [
+      "19.2",
+      "16",
+      "22.4",
+      "12.8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5\\% \\text{ of } 320 = \\frac{5}{100} \\times 320 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 60% of 960.",
+    "options": [
+      "576",
+      "806.4",
+      "691.2",
+      "460.8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(60\\% \\text{ of } 960 = \\frac{60}{100} \\times 960 = 576\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N550. Find the original price.",
+    "options": [
+      "440",
+      "525",
+      "412.5",
+      "2200"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 550\\)\n\n\\(x = \\frac{550 \\times 100}{125} = 440\\)\n\nSo the original price was N440.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The actual length of a rod is 186cm but it was measured as 191cm. Find the percentage error.",
+    "options": [
+      "2.69%",
+      "2.62%",
+      "1.34%",
+      "5.38%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Error \\(= 191 - 186 = 5\\)cm\n\nPercentage error \\(= \\frac{\\text{error}}{\\text{actual value}} \\times 100\\%\\)\n\n\\(= \\frac{5}{186} \\times 100\\% = 2.69\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N170. If the price is increased by 5%, find the new price.",
+    "options": [
+      "165",
+      "161.5",
+      "178.5",
+      "175"
+    ],
+    "correctIndex": 2,
+    "explanation": "Increase \\(= \\frac{5}{100} \\times 170 = 8.5\\)\n\nNew price \\(= 170 + 8.5 = 178.5\\)\n\nSo the new price is N178.5.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N260. If the price is increased by 10%, find the new price.",
+    "options": [
+      "234",
+      "250",
+      "270",
+      "286"
+    ],
+    "correctIndex": 3,
+    "explanation": "Increase \\(= \\frac{10}{100} \\times 260 = 26\\)\n\nNew price \\(= 260 + 26 = 286\\)\n\nSo the new price is N286.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, 10% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "10",
+      "3",
+      "5",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{10}{100} \\times 50 = 5\\)\n\nSo 5 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 20% increase, the price of an item became N372. Find the original price.",
+    "options": [
+      "310",
+      "352",
+      "1860",
+      "297.6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{120}{100} = 372\\)\n\n\\(x = \\frac{372 \\times 100}{120} = 310\\)\n\nSo the original price was N310.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "After a 25% increase, the price of an item became N650. Find the original price.",
+    "options": [
+      "520",
+      "487.5",
+      "625",
+      "2600"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the original price be \\(x\\).\n\n\\(x \\times \\frac{125}{100} = 650\\)\n\n\\(x = \\frac{650 \\times 100}{125} = 520\\)\n\nSo the original price was N520.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N550. If the price is decreased by 10%, find the new price.",
+    "options": [
+      "495",
+      "540",
+      "560",
+      "605"
+    ],
+    "correctIndex": 0,
+    "explanation": "Decrease \\(= \\frac{10}{100} \\times 550 = 55\\)\n\nNew price \\(= 550 - 55 = 495\\)\n\nSo the new price is N495.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The price of an article is N520. If the price is decreased by 20%, find the new price.",
+    "options": [
+      "624",
+      "540",
+      "416",
+      "500"
+    ],
+    "correctIndex": 2,
+    "explanation": "Decrease \\(= \\frac{20}{100} \\times 520 = 104\\)\n\nNew price \\(= 520 - 104 = 416\\)\n\nSo the new price is N416.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An article bought for N370 was sold for N407. Find the percentage profit.",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "9.09%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Profit \\(= 407 - 370 = 37\\)\n\nPercentage profit \\(= \\frac{\\text{profit}}{\\text{cost price}} \\times 100\\%\\)\n\n\\(= \\frac{37}{370} \\times 100\\% = 10\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 80 students, 60% offer Mathematics. How many students offer Mathematics?",
+    "options": [
+      "48",
+      "96",
+      "53",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{60}{100} \\times 80 = 48\\)\n\nSo 48 students offer Mathematics.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Express 11 as a percentage of 25.",
+    "options": [
+      "227.27%",
+      "44%",
+      "22%",
+      "54%"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{11}{25} \\times 100\\% = 44\\%\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find 45% of 320.",
+    "options": [
+      "201.6",
+      "115.2",
+      "144",
+      "172.8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(45\\% \\text{ of } 320 = \\frac{45}{100} \\times 320 = 144\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "Gf8rPR6ODDduCSCzrFkQ",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

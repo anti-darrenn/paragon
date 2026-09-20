@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Differentiate \\(y = (3x + 5)(-3x + 8)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-18x + 39\\)",
+      "\\(-17x + 9\\)",
+      "\\(-18x + 9\\)",
+      "\\(-9x + 9\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -9x^{2} + 9x + 40\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -18x + 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x - 7)(-3x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-24x + 3\\)",
+      "\\(-12x + 45\\)",
+      "\\(-23x + 45\\)",
+      "\\(-24x + 45\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = -12x^{2} + 45x - 42\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x + 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3x^{4} + 2x^{2} + 9x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(12x^{3} + 4x + 9\\)",
+      "\\(12x^{4} + 4x^{2} + 9x\\)",
+      "\\(36x^{2} + 4\\)",
+      "\\(3x^{3} + 2x + 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 12x^{3} + 4x + 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 4t^{2} + t - 2\\). Find its acceleration.",
+    "options": [
+      "66m/s²",
+      "9m/s²",
+      "33m/s²",
+      "8m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 8t + 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x + 6)(3x + 8)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x + 50\\)",
+      "\\(12x + 50\\)",
+      "\\(24x + 14\\)",
+      "\\(25x + 50\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 12x^{2} + 50x + 48\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 24x + 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (2x - 6)(-x + 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-4x + 14\\)",
+      "\\(-3x + 14\\)",
+      "\\(-4x + 2\\)",
+      "\\(-2x + 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -2x^{2} + 14x - 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -4x + 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} + 7t - 7\\). Find its acceleration.",
+    "options": [
+      "251m/s²",
+      "79m/s²",
+      "19m/s²",
+      "12m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t + 7\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 2t^{2} + 7t + 9\\). Find its acceleration.",
+    "options": [
+      "31m/s²",
+      "4m/s²",
+      "15m/s²",
+      "11m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 4t + 7\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 6x + 18\\).",
+    "options": [
+      "Maximum",
+      "No turning point",
+      "Minimum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 6\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 2x - 8\\).",
+    "options": [
+      "No turning point",
+      "Maximum",
+      "Minimum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -5x^{4} - x^{2} + 3x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-60x^{2} - 2\\)",
+      "\\(-5x^{3} - x + 3\\)",
+      "\\(-20x^{4} - 2x^{2} + 3x\\)",
+      "\\(-20x^{3} - 2x + 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -20x^{3} - 2x + 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4\\cot x\\)",
+      "\\(4\\sec^{2}x\\)",
+      "\\(4\\sec x \\tan x\\)",
+      "\\(-4\\csc^{2}x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 4: \\(\\frac{dy}{dx} = 4\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 7x^{4} - 7x^{2} + 6x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(7x^{3} - 7x + 6\\)",
+      "\\(28x^{4} - 14x^{2} + 6x\\)",
+      "\\(84x^{2} - 14\\)",
+      "\\(28x^{3} - 14x + 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 28x^{3} - 14x + 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x - 8)(-2x + 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-8x + 44\\)",
+      "\\(-15x + 44\\)",
+      "\\(-16x + 44\\)",
+      "\\(-16x + 12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -8x^{2} + 44x - 56\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -16x + 44\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x - 1)^{3}\\).",
+    "options": [
+      "\\(3(-2x - 1)^{2}\\)",
+      "\\(-2(-2x - 1)^{2}\\)",
+      "\\(-6(-2x - 1)^{2}\\)",
+      "\\(-6(-2x - 1)^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-2x - 1)^{2} \\times -2 = -6(-2x - 1)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -t^{2} + 4t + 4\\). Find its acceleration.",
+    "options": [
+      "-2m/s²",
+      "0m/s²",
+      "2m/s²",
+      "8m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -2t + 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} - 2x^{2} + 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(60x^{2} - 4\\)",
+      "\\(20x^{4} - 4x^{2} + 4x\\)",
+      "\\(20x^{3} - 4x + 4\\)",
+      "\\(5x^{3} - 2x + 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} - 4x + 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4x^{4} - 6x^{2} + x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(16x^{3} - 12x + 1\\)",
+      "\\(16x^{4} - 12x^{2} + x\\)",
+      "\\(4x^{3} - 6x + 1\\)",
+      "\\(48x^{2} - 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 16x^{3} - 12x + 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 12x - 12\\).",
+    "options": [
+      "Point of inflexion",
+      "No turning point",
+      "Maximum",
+      "Minimum"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 2t^{2} + t + 6\\). Find its acceleration.",
+    "options": [
+      "5m/s²",
+      "16m/s²",
+      "9m/s²",
+      "4m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 4t + 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 7\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(7\\cot x\\)",
+      "\\(7\\sec^{2}x\\)",
+      "\\(7\\sec x \\tan x\\)",
+      "\\(-7\\csc^{2}x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 7: \\(\\frac{dy}{dx} = 7\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x + 8)^{3}\\).",
+    "options": [
+      "\\(3(-2x + 8)^{2}\\)",
+      "\\(-6(-2x + 8)^{2}\\)",
+      "\\(-6(-2x + 8)^{3}\\)",
+      "\\(-2(-2x + 8)^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-2x + 8)^{2} \\times -2 = -6(-2x + 8)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 7)(4x - 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x - 64\\)",
+      "\\(48x - 64\\)",
+      "\\(48x - 8\\)",
+      "\\(49x - 64\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 24x^{2} - 64x + 42\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 48x - 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 1)^{4}\\).",
+    "options": [
+      "\\(8(2x - 1)^{3}\\)",
+      "\\(8(2x - 1)^{4}\\)",
+      "\\(2(2x - 1)^{3}\\)",
+      "\\(4(2x - 1)^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(2x - 1)^{3} \\times 2 = 8(2x - 1)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 8x + 11\\).",
+    "options": [
+      "No turning point",
+      "Minimum",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 8x + 12\\).",
+    "options": [
+      "Maximum",
+      "Point of inflexion",
+      "Minimum",
+      "No turning point"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} - 6x^{2} - 3x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(20x^{4} - 12x^{2} - 3x\\)",
+      "\\(20x^{3} - 12x - 3\\)",
+      "\\(5x^{3} - 6x - 3\\)",
+      "\\(60x^{2} - 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} - 12x - 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 9\\).",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "No turning point",
+      "Point of inflexion"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 2x\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x + 3)(4x - 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-32x + 24\\)",
+      "\\(-31x + 24\\)",
+      "\\(-16x + 24\\)",
+      "\\(-32x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -16x^{2} + 24x - 9\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -32x + 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(6\\cos x\\)",
+      "\\(6\\tan x\\)",
+      "\\(-6\\sin x\\)",
+      "\\(-6\\cos x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 6: \\(\\frac{dy}{dx} = 6\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-4x + 1)^{2}\\).",
+    "options": [
+      "\\(2(-4x + 1)^{1}\\)",
+      "\\(-8(-4x + 1)^{1}\\)",
+      "\\(-8(-4x + 1)^{2}\\)",
+      "\\(-4(-4x + 1)^{1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(-4x + 1)^{1} \\times -4 = -8(-4x + 1)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (5x + 1)^{3}\\).",
+    "options": [
+      "\\(15(5x + 1)^{2}\\)",
+      "\\(5(5x + 1)^{2}\\)",
+      "\\(15(5x + 1)^{3}\\)",
+      "\\(3(5x + 1)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(5x + 1)^{2} \\times 5 = 15(5x + 1)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4x^{4} - 2x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(16x^{3} - 4x - 2\\)",
+      "\\(16x^{4} - 4x^{2} - 2x\\)",
+      "\\(48x^{2} - 4\\)",
+      "\\(4x^{3} - 2x - 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 16x^{3} - 4x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (5x - 1)^{2}\\).",
+    "options": [
+      "\\(2(5x - 1)^{1}\\)",
+      "\\(5(5x - 1)^{1}\\)",
+      "\\(10(5x - 1)^{1}\\)",
+      "\\(10(5x - 1)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(5x - 1)^{1} \\times 5 = 10(5x - 1)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x + 7)^{6}\\).",
+    "options": [
+      "\\(12(2x + 7)^{6}\\)",
+      "\\(12(2x + 7)^{5}\\)",
+      "\\(6(2x + 7)^{5}\\)",
+      "\\(2(2x + 7)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(2x + 7)^{5} \\times 2 = 12(2x + 7)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 8x - 1\\).",
+    "options": [
+      "No turning point",
+      "Minimum",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 2x\\).",
+    "options": [
+      "Maximum",
+      "No turning point",
+      "Point of inflexion",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(6\\cot x\\)",
+      "\\(-6\\csc^{2}x\\)",
+      "\\(6\\sec^{2}x\\)",
+      "\\(6\\sec x \\tan x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 6: \\(\\frac{dy}{dx} = 6\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 4t^{2} + 5t + 9\\). Find its acceleration.",
+    "options": [
+      "134m/s²",
+      "8m/s²",
+      "13m/s²",
+      "45m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 8t + 5\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x + 1)(4x - 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x - 26\\)",
+      "\\(48x - 34\\)",
+      "\\(48x - 26\\)",
+      "\\(49x - 26\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 24x^{2} - 26x - 5\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 48x - 26\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = x^{4} + 7x^{2} + 5x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x^{4} + 14x^{2} + 5x\\)",
+      "\\(12x^{2} + 14\\)",
+      "\\(x^{3} + 7x + 5\\)",
+      "\\(4x^{3} + 14x + 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 4x^{3} + 14x + 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 8)(-2x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x - 19\\)",
+      "\\(-11x - 19\\)",
+      "\\(-12x + 13\\)",
+      "\\(-6x - 19\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -6x^{2} - 19x - 8\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -12x - 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4x^{4} - 7x^{2} + 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(48x^{2} - 14\\)",
+      "\\(4x^{3} - 7x + 4\\)",
+      "\\(16x^{4} - 14x^{2} + 4x\\)",
+      "\\(16x^{3} - 14x + 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 16x^{3} - 14x + 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} - 2t + 4\\). Find its acceleration.",
+    "options": [
+      "-81m/s²",
+      "-8m/s²",
+      "-32m/s²",
+      "-6m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t - 2\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (3x - 2)^{6}\\).",
+    "options": [
+      "\\(3(3x - 2)^{5}\\)",
+      "\\(18(3x - 2)^{6}\\)",
+      "\\(18(3x - 2)^{5}\\)",
+      "\\(6(3x - 2)^{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(3x - 2)^{5} \\times 3 = 18(3x - 2)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 8\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8\\cos x\\)",
+      "\\(-8\\sin x\\)",
+      "\\(8\\tan x\\)",
+      "\\(-8\\cos x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 8: \\(\\frac{dy}{dx} = 8\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x + 6)^{2}\\).",
+    "options": [
+      "\\(-6(-3x + 6)^{1}\\)",
+      "\\(-3(-3x + 6)^{1}\\)",
+      "\\(2(-3x + 6)^{1}\\)",
+      "\\(-6(-3x + 6)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(-3x + 6)^{1} \\times -3 = -6(-3x + 6)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (x + 5)(-5x + 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-5x - 22\\)",
+      "\\(-10x + 28\\)",
+      "\\(-10x - 22\\)",
+      "\\(-9x - 22\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -5x^{2} - 22x + 15\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -10x - 22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} + 6x^{2} - 5x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(20x^{4} + 12x^{2} - 5x\\)",
+      "\\(20x^{3} + 12x - 5\\)",
+      "\\(60x^{2} + 12\\)",
+      "\\(5x^{3} + 6x - 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} + 12x - 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -5x^{4} - 6x^{2} - 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-20x^{3} - 12x - 4\\)",
+      "\\(-60x^{2} - 12\\)",
+      "\\(-20x^{4} - 12x^{2} - 4x\\)",
+      "\\(-5x^{3} - 6x - 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -20x^{3} - 12x - 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} + 4t + 3\\). Find its acceleration.",
+    "options": [
+      "16m/s²",
+      "173m/s²",
+      "12m/s²",
+      "64m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t + 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x - 1)^{2}\\).",
+    "options": [
+      "\\(12(6x - 1)^{2}\\)",
+      "\\(2(6x - 1)^{1}\\)",
+      "\\(12(6x - 1)^{1}\\)",
+      "\\(6(6x - 1)^{1}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x - 1)^{1} \\times 6 = 12(6x - 1)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 12x + 24\\).",
+    "options": [
+      "No turning point",
+      "Maximum",
+      "Minimum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -4x^{4} - 5x^{2} - x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-16x^{4} - 10x^{2} - x\\)",
+      "\\(-48x^{2} - 10\\)",
+      "\\(-16x^{3} - 10x - 1\\)",
+      "\\(-4x^{3} - 5x - 1\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -16x^{3} - 10x - 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x - 2)^{2}\\).",
+    "options": [
+      "\\(12(6x - 2)^{2}\\)",
+      "\\(12(6x - 2)^{1}\\)",
+      "\\(6(6x - 2)^{1}\\)",
+      "\\(2(6x - 2)^{1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x - 2)^{1} \\times 6 = 12(6x - 2)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} + 6t + 4\\). Find its acceleration.",
+    "options": [
+      "-6m/s²",
+      "0m/s²",
+      "-18m/s²",
+      "-20m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t + 6\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3\\sec^{2}x\\)",
+      "\\(3\\sin x\\)",
+      "\\(-3\\cos x\\)",
+      "\\(-3\\sin x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 3: \\(\\frac{dy}{dx} = -3\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3x^{4} - x^{2} + 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(36x^{2} - 2\\)",
+      "\\(12x^{3} - 2x + 2\\)",
+      "\\(12x^{4} - 2x^{2} + 2x\\)",
+      "\\(3x^{3} - x + 2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 12x^{3} - 2x + 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6x^{4} - 8x^{2} - 3x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(72x^{2} - 16\\)",
+      "\\(24x^{4} - 16x^{2} - 3x\\)",
+      "\\(24x^{3} - 16x - 3\\)",
+      "\\(6x^{3} - 8x - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 24x^{3} - 16x - 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x - 3)^{6}\\).",
+    "options": [
+      "\\(6(-2x - 3)^{5}\\)",
+      "\\(-12(-2x - 3)^{5}\\)",
+      "\\(-12(-2x - 3)^{6}\\)",
+      "\\(-2(-2x - 3)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-2x - 3)^{5} \\times -2 = -12(-2x - 3)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x - 7)(3x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x - 45\\)",
+      "\\(-23x - 45\\)",
+      "\\(-24x - 45\\)",
+      "\\(-24x - 3\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -12x^{2} - 45x - 42\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x - 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} + 4t - 6\\). Find its acceleration.",
+    "options": [
+      "-6m/s²",
+      "-14m/s²",
+      "-2m/s²",
+      "-21m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t + 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 3)(-5x + 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-60x + 57\\)",
+      "\\(-30x + 57\\)",
+      "\\(-60x + 27\\)",
+      "\\(-59x + 57\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -30x^{2} + 57x - 21\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -60x + 57\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (x + 3)(2x + 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x + 13\\)",
+      "\\(2x + 13\\)",
+      "\\(5x + 13\\)",
+      "\\(4x + 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 2x^{2} + 13x + 21\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 4x + 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 20x - 46\\).",
+    "options": [
+      "No turning point",
+      "Minimum",
+      "Point of inflexion",
+      "Maximum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 8)(-x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-6x + 2\\)",
+      "\\(-11x + 2\\)",
+      "\\(-12x - 14\\)",
+      "\\(-12x + 2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = -6x^{2} + 2x + 8\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -12x + 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = x^{4} + 6x^{2} + 8x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(x^{3} + 6x + 8\\)",
+      "\\(4x^{3} + 12x + 8\\)",
+      "\\(4x^{4} + 12x^{2} + 8x\\)",
+      "\\(12x^{2} + 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 4x^{3} + 12x + 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -3x^{4} - 3x^{2} + 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-3x^{3} - 3x + 2\\)",
+      "\\(-36x^{2} - 6\\)",
+      "\\(-12x^{3} - 6x + 2\\)",
+      "\\(-12x^{4} - 6x^{2} + 2x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -12x^{3} - 6x + 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 1)(-3x - 2)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-17x - 9\\)",
+      "\\(-18x - 3\\)",
+      "\\(-9x - 9\\)",
+      "\\(-18x - 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = -9x^{2} - 9x - 2\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -18x - 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -4t^{2} + 5t - 3\\). Find its acceleration.",
+    "options": [
+      "-8m/s²",
+      "-19m/s²",
+      "-24m/s²",
+      "-3m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -8t + 5\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} - 10x - 19\\).",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Point of inflexion",
+      "No turning point"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = -2x - 10\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (2x - 5)(-3x - 8)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x - 1\\)",
+      "\\(-6x - 1\\)",
+      "\\(-11x - 1\\)",
+      "\\(-12x - 31\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -6x^{2} - x + 40\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -12x - 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 10x + 29\\).",
+    "options": [
+      "Minimum",
+      "Maximum",
+      "No turning point",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 10\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-x - 3)^{6}\\).",
+    "options": [
+      "\\(-6(-x - 3)^{5}\\)",
+      "\\(6(-x - 3)^{5}\\)",
+      "\\(-1(-x - 3)^{5}\\)",
+      "\\(-6(-x - 3)^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-x - 3)^{5} \\times -1 = -6(-x - 3)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(6\\sin x\\)",
+      "\\(-6\\cos x\\)",
+      "\\(-6\\sin x\\)",
+      "\\(6\\sec^{2}x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 6: \\(\\frac{dy}{dx} = -6\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 8)^{5}\\).",
+    "options": [
+      "\\(10(2x - 8)^{4}\\)",
+      "\\(10(2x - 8)^{5}\\)",
+      "\\(5(2x - 8)^{4}\\)",
+      "\\(2(2x - 8)^{4}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(2x - 8)^{4} \\times 2 = 10(2x - 8)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} + 8t - 4\\). Find its acceleration.",
+    "options": [
+      "20m/s²",
+      "44m/s²",
+      "74m/s²",
+      "12m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t + 8\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4x^{4} - 6x^{2} - 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(16x^{3} - 12x - 4\\)",
+      "\\(16x^{4} - 12x^{2} - 4x\\)",
+      "\\(48x^{2} - 12\\)",
+      "\\(4x^{3} - 6x - 4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 16x^{3} - 12x - 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 10x + 17\\).",
+    "options": [
+      "No turning point",
+      "Maximum",
+      "Point of inflexion",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 10\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 20x + 60\\).",
+    "options": [
+      "Minimum",
+      "No turning point",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-5x - 7)(-x + 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(10x - 18\\)",
+      "\\(5x - 18\\)",
+      "\\(11x - 18\\)",
+      "\\(10x - 32\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 5x^{2} - 18x - 35\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 10x - 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x + 8)^{6}\\).",
+    "options": [
+      "\\(-3(-3x + 8)^{5}\\)",
+      "\\(6(-3x + 8)^{5}\\)",
+      "\\(-18(-3x + 8)^{5}\\)",
+      "\\(-18(-3x + 8)^{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-3x + 8)^{5} \\times -3 = -18(-3x + 8)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x + 6)^{4}\\).",
+    "options": [
+      "\\(8(2x + 6)^{3}\\)",
+      "\\(2(2x + 6)^{3}\\)",
+      "\\(8(2x + 6)^{4}\\)",
+      "\\(4(2x + 6)^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(2x + 6)^{3} \\times 2 = 8(2x + 6)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 5)(-x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-6x - 8\\)",
+      "\\(-3x - 8\\)",
+      "\\(-5x - 8\\)",
+      "\\(-6x + 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -3x^{2} - 8x - 5\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -6x - 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} + 6t - 9\\). Find its acceleration.",
+    "options": [
+      "-6m/s²",
+      "-18m/s²",
+      "-33m/s²",
+      "0m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t + 6\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 9\\).",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Point of inflexion",
+      "No turning point"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 4x\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x - 8)(x - 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3x - 29\\)",
+      "\\(6x - 29\\)",
+      "\\(6x - 13\\)",
+      "\\(7x - 29\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 3x^{2} - 29x + 56\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 6x - 29\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -5x^{4} - 2x^{2} - 7x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-20x^{3} - 4x - 7\\)",
+      "\\(-20x^{4} - 4x^{2} - 7x\\)",
+      "\\(-60x^{2} - 4\\)",
+      "\\(-5x^{3} - 2x - 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -20x^{3} - 4x - 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 10x + 31\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Maximum",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 10\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 6)(-4x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x - 6\\)",
+      "\\(-24x + 42\\)",
+      "\\(-24x - 6\\)",
+      "\\(-23x - 6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -12x^{2} - 6x + 36\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x - 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x + 8)^{2}\\).",
+    "options": [
+      "\\(6(6x + 8)^{1}\\)",
+      "\\(2(6x + 8)^{1}\\)",
+      "\\(12(6x + 8)^{1}\\)",
+      "\\(12(6x + 8)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x + 8)^{1} \\times 6 = 12(6x + 8)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (x - 6)(x + 2)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(2x + 8\\)",
+      "\\(3x - 4\\)",
+      "\\(2x - 4\\)",
+      "\\(x - 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = x^{2} - 4x - 12\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 2x - 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 7x^{4} + 2x^{2} - 5x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(28x^{3} + 4x - 5\\)",
+      "\\(28x^{4} + 4x^{2} - 5x\\)",
+      "\\(84x^{2} + 4\\)",
+      "\\(7x^{3} + 2x - 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 28x^{3} + 4x - 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-2x - 2)(6x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-24x - 10\\)",
+      "\\(-12x - 10\\)",
+      "\\(-24x + 14\\)",
+      "\\(-23x - 10\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -12x^{2} - 10x + 2\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x - 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 4x + 3\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Minimum",
+      "Maximum"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (x + 3)(5x + 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(10x + 22\\)",
+      "\\(5x + 22\\)",
+      "\\(10x - 8\\)",
+      "\\(11x + 22\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 5x^{2} + 22x + 21\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 10x + 22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3\\sec x \\tan x\\)",
+      "\\(-3\\csc^{2}x\\)",
+      "\\(3\\sec^{2}x\\)",
+      "\\(3\\cot x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 3: \\(\\frac{dy}{dx} = 3\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 7\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(7\\tan x\\)",
+      "\\(7\\cos x\\)",
+      "\\(-7\\cos x\\)",
+      "\\(-7\\sin x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 7: \\(\\frac{dy}{dx} = 7\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} + 6x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(60x^{2} + 12\\)",
+      "\\(20x^{3} + 12x - 2\\)",
+      "\\(5x^{3} + 6x - 2\\)",
+      "\\(20x^{4} + 12x^{2} - 2x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} + 12x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 2x + 9\\).",
+    "options": [
+      "Maximum",
+      "No turning point",
+      "Point of inflexion",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -4x^{4} - 3x^{2} + 6x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-16x^{4} - 6x^{2} + 6x\\)",
+      "\\(-48x^{2} - 6\\)",
+      "\\(-4x^{3} - 3x + 6\\)",
+      "\\(-16x^{3} - 6x + 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -16x^{3} - 6x + 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} + 20x - 49\\).",
+    "options": [
+      "No turning point",
+      "Maximum",
+      "Point of inflexion",
+      "Minimum"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = -4x + 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x + 4)(5x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(20x + 44\\)",
+      "\\(40x + 44\\)",
+      "\\(40x + 4\\)",
+      "\\(41x + 44\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 20x^{2} + 44x + 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 40x + 44\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = t^{2} - t - 4\\). Find its acceleration.",
+    "options": [
+      "1m/s²",
+      "9m/s²",
+      "2m/s²",
+      "16m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 2t - 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} + 6\\).",
+    "options": [
+      "Minimum",
+      "No turning point",
+      "Point of inflexion",
+      "Maximum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = -2x\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x + 5)^{3}\\).",
+    "options": [
+      "\\(-6(-2x + 5)^{2}\\)",
+      "\\(-6(-2x + 5)^{3}\\)",
+      "\\(3(-2x + 5)^{2}\\)",
+      "\\(-2(-2x + 5)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-2x + 5)^{2} \\times -2 = -6(-2x + 5)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -4t^{2} + 3t + 4\\). Find its acceleration.",
+    "options": [
+      "-48m/s²",
+      "-8m/s²",
+      "-5m/s²",
+      "-29m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -8t + 3\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-5\\cos x\\)",
+      "\\(5\\sec^{2}x\\)",
+      "\\(5\\sin x\\)",
+      "\\(-5\\sin x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 5: \\(\\frac{dy}{dx} = -5\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 2t^{2} + 7t - 1\\). Find its acceleration.",
+    "options": [
+      "15m/s²",
+      "4m/s²",
+      "11m/s²",
+      "21m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 4t + 7\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x + 5)^{6}\\).",
+    "options": [
+      "\\(-18(-3x + 5)^{5}\\)",
+      "\\(6(-3x + 5)^{5}\\)",
+      "\\(-18(-3x + 5)^{6}\\)",
+      "\\(-3(-3x + 5)^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-3x + 5)^{5} \\times -3 = -18(-3x + 5)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} - 2x + 4\\).",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Point of inflexion",
+      "No turning point"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = -2x - 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 8\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8\\cot x\\)",
+      "\\(-8\\csc^{2}x\\)",
+      "\\(8\\sec x \\tan x\\)",
+      "\\(8\\sec^{2}x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 8: \\(\\frac{dy}{dx} = 8\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (3x + 8)^{2}\\).",
+    "options": [
+      "\\(6(3x + 8)^{1}\\)",
+      "\\(3(3x + 8)^{1}\\)",
+      "\\(2(3x + 8)^{1}\\)",
+      "\\(6(3x + 8)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(3x + 8)^{1} \\times 3 = 6(3x + 8)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (2x - 6)(-5x + 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-10x + 40\\)",
+      "\\(-20x + 40\\)",
+      "\\(-20x - 20\\)",
+      "\\(-19x + 40\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = -10x^{2} + 40x - 30\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -20x + 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x + 6)^{6}\\).",
+    "options": [
+      "\\(12(2x + 6)^{5}\\)",
+      "\\(2(2x + 6)^{5}\\)",
+      "\\(6(2x + 6)^{5}\\)",
+      "\\(12(2x + 6)^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(2x + 6)^{5} \\times 2 = 12(2x + 6)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x + 5)(2x + 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-8x - 6\\)",
+      "\\(-16x - 6\\)",
+      "\\(-16x - 26\\)",
+      "\\(-15x - 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = -8x^{2} - 6x + 20\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -16x - 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (5x - 4)(5x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(50x - 25\\)",
+      "\\(50x + 15\\)",
+      "\\(51x - 25\\)",
+      "\\(25x - 25\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 25x^{2} - 25x + 4\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 50x - 25\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x - 3)^{2}\\).",
+    "options": [
+      "\\(-6(-3x - 3)^{1}\\)",
+      "\\(2(-3x - 3)^{1}\\)",
+      "\\(-6(-3x - 3)^{2}\\)",
+      "\\(-3(-3x - 3)^{1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(-3x - 3)^{1} \\times -3 = -6(-3x - 3)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (5x - 7)^{6}\\).",
+    "options": [
+      "\\(6(5x - 7)^{5}\\)",
+      "\\(30(5x - 7)^{5}\\)",
+      "\\(30(5x - 7)^{6}\\)",
+      "\\(5(5x - 7)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(5x - 7)^{5} \\times 5 = 30(5x - 7)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 12x - 23\\).",
+    "options": [
+      "Minimum",
+      "No turning point",
+      "Point of inflexion",
+      "Maximum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 12x + 17\\).",
+    "options": [
+      "Minimum",
+      "No turning point",
+      "Point of inflexion",
+      "Maximum"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 20x + 54\\).",
+    "options": [
+      "Minimum",
+      "No turning point",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -6x^{4} - 4x^{2} - x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-6x^{3} - 4x - 1\\)",
+      "\\(-24x^{4} - 8x^{2} - x\\)",
+      "\\(-24x^{3} - 8x - 1\\)",
+      "\\(-72x^{2} - 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -24x^{3} - 8x - 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-5x - 3)(-2x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(21x - 24\\)",
+      "\\(20x - 36\\)",
+      "\\(20x - 24\\)",
+      "\\(10x - 24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 10x^{2} - 24x - 18\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 20x - 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} + 2x + 2\\).",
+    "options": [
+      "Point of inflexion",
+      "No turning point",
+      "Minimum",
+      "Maximum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = -2x + 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 6)(-3x - 2)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-36x - 30\\)",
+      "\\(-18x + 6\\)",
+      "\\(-35x + 6\\)",
+      "\\(-36x + 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = -18x^{2} + 6x + 12\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -36x + 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 1)(-x - 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x - 43\\)",
+      "\\(-11x - 41\\)",
+      "\\(-6x - 41\\)",
+      "\\(-12x - 41\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = -6x^{2} - 41x + 7\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -12x - 41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (5x - 2)(-2x + 2)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-20x + 14\\)",
+      "\\(-10x + 14\\)",
+      "\\(-20x + 6\\)",
+      "\\(-19x + 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -10x^{2} + 14x - 4\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -20x + 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 8x + 13\\).",
+    "options": [
+      "Maximum",
+      "Point of inflexion",
+      "Minimum",
+      "No turning point"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 2)(4x - 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(48x - 16\\)",
+      "\\(48x - 32\\)",
+      "\\(24x - 32\\)",
+      "\\(49x - 32\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 24x^{2} - 32x + 8\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 48x - 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 2)^{5}\\).",
+    "options": [
+      "\\(10(2x - 2)^{5}\\)",
+      "\\(5(2x - 2)^{4}\\)",
+      "\\(10(2x - 2)^{4}\\)",
+      "\\(2(2x - 2)^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(2x - 2)^{4} \\times 2 = 10(2x - 2)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 12x + 15\\).",
+    "options": [
+      "Minimum",
+      "Point of inflexion",
+      "No turning point",
+      "Maximum"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 5t^{2} - 6t - 1\\). Find its acceleration.",
+    "options": [
+      "54m/s²",
+      "4m/s²",
+      "143m/s²",
+      "10m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 10t - 6\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 10\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 9\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(9\\cot x\\)",
+      "\\(9\\sec x \\tan x\\)",
+      "\\(-9\\csc^{2}x\\)",
+      "\\(9\\sec^{2}x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 9: \\(\\frac{dy}{dx} = 9\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 4)^{6}\\).",
+    "options": [
+      "\\(12(2x - 4)^{5}\\)",
+      "\\(12(2x - 4)^{6}\\)",
+      "\\(2(2x - 4)^{5}\\)",
+      "\\(6(2x - 4)^{5}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(2x - 4)^{5} \\times 2 = 12(2x - 4)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x - 8)^{4}\\).",
+    "options": [
+      "\\(-8(-2x - 8)^{3}\\)",
+      "\\(4(-2x - 8)^{3}\\)",
+      "\\(-8(-2x - 8)^{4}\\)",
+      "\\(-2(-2x - 8)^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(-2x - 8)^{3} \\times -2 = -8(-2x - 8)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 6)(3x + 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(9x + 30\\)",
+      "\\(18x - 6\\)",
+      "\\(18x + 30\\)",
+      "\\(19x + 30\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 9x^{2} + 30x + 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 18x + 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 8)(5x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(30x + 37\\)",
+      "\\(15x + 37\\)",
+      "\\(30x - 43\\)",
+      "\\(31x + 37\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 15x^{2} + 37x - 8\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 30x + 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3x^{4} - 6x^{2} - 3x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3x^{3} - 6x - 3\\)",
+      "\\(36x^{2} - 12\\)",
+      "\\(12x^{4} - 12x^{2} - 3x\\)",
+      "\\(12x^{3} - 12x - 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 12x^{3} - 12x - 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x + 5)^{6}\\).",
+    "options": [
+      "\\(6(2x + 5)^{5}\\)",
+      "\\(12(2x + 5)^{5}\\)",
+      "\\(2(2x + 5)^{5}\\)",
+      "\\(12(2x + 5)^{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(2x + 5)^{5} \\times 2 = 12(2x + 5)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} + 8x - 12\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Maximum",
+      "Minimum"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -4x + 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x + 8)^{5}\\).",
+    "options": [
+      "\\(10(2x + 8)^{5}\\)",
+      "\\(5(2x + 8)^{4}\\)",
+      "\\(10(2x + 8)^{4}\\)",
+      "\\(2(2x + 8)^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(2x + 8)^{4} \\times 2 = 10(2x + 8)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-x - 7)(6x + 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-6x - 43\\)",
+      "\\(-11x - 43\\)",
+      "\\(-12x - 43\\)",
+      "\\(-12x + 41\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -6x^{2} - 43x - 7\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -12x - 43\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -5x^{4} + 3x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-20x^{3} + 6x - 2\\)",
+      "\\(-60x^{2} + 6\\)",
+      "\\(-5x^{3} + 3x - 2\\)",
+      "\\(-20x^{4} + 6x^{2} - 2x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -20x^{3} + 6x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -4t^{2} + 4t - 9\\). Find its acceleration.",
+    "options": [
+      "-8m/s²",
+      "-4m/s²",
+      "-89m/s²",
+      "-36m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -8t + 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 9\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(9\\cos x\\)",
+      "\\(-9\\cos x\\)",
+      "\\(9\\tan x\\)",
+      "\\(-9\\sin x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 9: \\(\\frac{dy}{dx} = 9\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x - 8)(-5x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-29x + 37\\)",
+      "\\(-30x + 37\\)",
+      "\\(-30x - 43\\)",
+      "\\(-15x + 37\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = -15x^{2} + 37x + 8\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -30x + 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 1\\).",
+    "options": [
+      "Maximum",
+      "Point of inflexion",
+      "Minimum",
+      "No turning point"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 2x\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (5x + 3)^{3}\\).",
+    "options": [
+      "\\(15(5x + 3)^{3}\\)",
+      "\\(3(5x + 3)^{2}\\)",
+      "\\(15(5x + 3)^{2}\\)",
+      "\\(5(5x + 3)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(5x + 3)^{2} \\times 5 = 15(5x + 3)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (2x - 8)(2x + 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8x + 22\\)",
+      "\\(4x - 10\\)",
+      "\\(8x - 10\\)",
+      "\\(9x - 10\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 4x^{2} - 10x - 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 8x - 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -2x^{4} - 7x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-24x^{2} - 14\\)",
+      "\\(-8x^{3} - 14x - 2\\)",
+      "\\(-2x^{3} - 7x - 2\\)",
+      "\\(-8x^{4} - 14x^{2} - 2x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -8x^{3} - 14x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 3t^{2} - 2t - 2\\). Find its acceleration.",
+    "options": [
+      "6m/s²",
+      "22m/s²",
+      "4m/s²",
+      "38m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 6t - 2\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = t^{2} - 3t - 4\\). Find its acceleration.",
+    "options": [
+      "-4m/s²",
+      "2m/s²",
+      "-1m/s²",
+      "3m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 2t - 3\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-5x - 6)^{2}\\).",
+    "options": [
+      "\\(-10(-5x - 6)^{2}\\)",
+      "\\(-10(-5x - 6)^{1}\\)",
+      "\\(2(-5x - 6)^{1}\\)",
+      "\\(-5(-5x - 6)^{1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(-5x - 6)^{1} \\times -5 = -10(-5x - 6)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} - 2t + 8\\). Find its acceleration.",
+    "options": [
+      "-6m/s²",
+      "-77m/s²",
+      "-8m/s²",
+      "-32m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t - 2\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 8x + 20\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Maximum",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = t^{2} - 4t - 8\\). Find its acceleration.",
+    "options": [
+      "6m/s²",
+      "-3m/s²",
+      "2m/s²",
+      "-2m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 2t - 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} + 7x^{2} - 7x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(20x^{3} + 14x - 7\\)",
+      "\\(60x^{2} + 14\\)",
+      "\\(20x^{4} + 14x^{2} - 7x\\)",
+      "\\(5x^{3} + 7x - 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} + 14x - 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} - 8t + 9\\). Find its acceleration.",
+    "options": [
+      "16m/s²",
+      "4m/s²",
+      "17m/s²",
+      "12m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t - 8\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x - 7)^{4}\\).",
+    "options": [
+      "\\(-12(-3x - 7)^{3}\\)",
+      "\\(-3(-3x - 7)^{3}\\)",
+      "\\(-12(-3x - 7)^{4}\\)",
+      "\\(4(-3x - 7)^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(-3x - 7)^{3} \\times -3 = -12(-3x - 7)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-5x + 6)^{4}\\).",
+    "options": [
+      "\\(4(-5x + 6)^{3}\\)",
+      "\\(-20(-5x + 6)^{3}\\)",
+      "\\(-5(-5x + 6)^{3}\\)",
+      "\\(-20(-5x + 6)^{4}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(-5x + 6)^{3} \\times -5 = -20(-5x + 6)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (4x - 2)^{3}\\).",
+    "options": [
+      "\\(12(4x - 2)^{3}\\)",
+      "\\(3(4x - 2)^{2}\\)",
+      "\\(4(4x - 2)^{2}\\)",
+      "\\(12(4x - 2)^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(4x - 2)^{2} \\times 4 = 12(4x - 2)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3x^{4} - 2x^{2} - 8x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3x^{3} - 2x - 8\\)",
+      "\\(12x^{3} - 4x - 8\\)",
+      "\\(12x^{4} - 4x^{2} - 8x\\)",
+      "\\(36x^{2} - 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 12x^{3} - 4x - 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -x^{4} - 3x^{2} + 7x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-4x^{3} - 6x + 7\\)",
+      "\\(-x^{3} - 3x + 7\\)",
+      "\\(-4x^{4} - 6x^{2} + 7x\\)",
+      "\\(-12x^{2} - 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -4x^{3} - 6x + 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x - 6)^{5}\\).",
+    "options": [
+      "\\(5(-2x - 6)^{4}\\)",
+      "\\(-10(-2x - 6)^{4}\\)",
+      "\\(-2(-2x - 6)^{4}\\)",
+      "\\(-10(-2x - 6)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(-2x - 6)^{4} \\times -2 = -10(-2x - 6)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4x^{4} - 3x^{2} + 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x^{3} - 3x + 4\\)",
+      "\\(16x^{3} - 6x + 4\\)",
+      "\\(16x^{4} - 6x^{2} + 4x\\)",
+      "\\(48x^{2} - 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 16x^{3} - 6x + 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 20x + 44\\).",
+    "options": [
+      "No turning point",
+      "Maximum",
+      "Minimum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} + 4x - 2\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Maximum",
+      "Minimum"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -4x + 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x - 7)(-5x - 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-40x - 47\\)",
+      "\\(-20x + 23\\)",
+      "\\(-40x + 23\\)",
+      "\\(-39x + 23\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -20x^{2} + 23x + 21\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -40x + 23\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -3x^{4} + 2x^{2} + 7x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-3x^{3} + 2x + 7\\)",
+      "\\(-36x^{2} + 4\\)",
+      "\\(-12x^{4} + 4x^{2} + 7x\\)",
+      "\\(-12x^{3} + 4x + 7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -12x^{3} + 4x + 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (3x + 4)^{6}\\).",
+    "options": [
+      "\\(3(3x + 4)^{5}\\)",
+      "\\(18(3x + 4)^{5}\\)",
+      "\\(18(3x + 4)^{6}\\)",
+      "\\(6(3x + 4)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(3x + 4)^{5} \\times 3 = 18(3x + 4)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 4x + 12\\).",
+    "options": [
+      "Point of inflexion",
+      "Minimum",
+      "Maximum",
+      "No turning point"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} - 10x - 23\\).",
+    "options": [
+      "Point of inflexion",
+      "Minimum",
+      "Maximum",
+      "No turning point"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -2x - 10\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6x^{4} - x^{2} + 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x^{4} - 2x^{2} + 4x\\)",
+      "\\(24x^{3} - 2x + 4\\)",
+      "\\(72x^{2} - 2\\)",
+      "\\(6x^{3} - x + 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 24x^{3} - 2x + 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 2x^{4} - 4x^{2} + 5x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8x^{4} - 8x^{2} + 5x\\)",
+      "\\(24x^{2} - 8\\)",
+      "\\(8x^{3} - 8x + 5\\)",
+      "\\(2x^{3} - 4x + 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 8x^{3} - 8x + 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 2\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-2\\cos x\\)",
+      "\\(2\\sin x\\)",
+      "\\(-2\\sin x\\)",
+      "\\(2\\sec^{2}x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 2: \\(\\frac{dy}{dx} = -2\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 4t^{2} - 7t - 7\\). Find its acceleration.",
+    "options": [
+      "58m/s²",
+      "1m/s²",
+      "33m/s²",
+      "8m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 8t - 7\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x - 7)^{5}\\).",
+    "options": [
+      "\\(-3(-3x - 7)^{4}\\)",
+      "\\(5(-3x - 7)^{4}\\)",
+      "\\(-15(-3x - 7)^{4}\\)",
+      "\\(-15(-3x - 7)^{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(-3x - 7)^{4} \\times -3 = -15(-3x - 7)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 7x^{4} + 6x^{2} - 6x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(28x^{4} + 12x^{2} - 6x\\)",
+      "\\(28x^{3} + 12x - 6\\)",
+      "\\(7x^{3} + 6x - 6\\)",
+      "\\(84x^{2} + 12\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 28x^{3} + 12x - 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-x + 2)(-3x + 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3x - 13\\)",
+      "\\(6x - 1\\)",
+      "\\(7x - 13\\)",
+      "\\(6x - 13\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = 3x^{2} - 13x + 14\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 6x - 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} + 20x - 51\\).",
+    "options": [
+      "Minimum",
+      "Maximum",
+      "No turning point",
+      "Point of inflexion"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = -4x + 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = x^{4} - 6x^{2} + x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x^{3} - 12x + 1\\)",
+      "\\(4x^{4} - 12x^{2} + x\\)",
+      "\\(x^{3} - 6x + 1\\)",
+      "\\(12x^{2} - 12\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 4x^{3} - 12x + 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-2x - 2)^{6}\\).",
+    "options": [
+      "\\(-2(-2x - 2)^{5}\\)",
+      "\\(-12(-2x - 2)^{5}\\)",
+      "\\(6(-2x - 2)^{5}\\)",
+      "\\(-12(-2x - 2)^{6}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-2x - 2)^{5} \\times -2 = -12(-2x - 2)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} + t + 5\\). Find its acceleration.",
+    "options": [
+      "49m/s²",
+      "105m/s²",
+      "13m/s²",
+      "12m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t + 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 8x + 12\\).",
+    "options": [
+      "Point of inflexion",
+      "Minimum",
+      "Maximum",
+      "No turning point"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = x^{4} - 2x^{2} - 8x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x^{3} - 4x - 8\\)",
+      "\\(x^{3} - 2x - 8\\)",
+      "\\(12x^{2} - 4\\)",
+      "\\(4x^{4} - 4x^{2} - 8x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 4x^{3} - 4x - 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -t^{2} + t - 7\\). Find its acceleration.",
+    "options": [
+      "-1m/s²",
+      "-3m/s²",
+      "-2m/s²",
+      "-9m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -2t + 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6x^{4} + 7x^{2} + 5x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(72x^{2} + 14\\)",
+      "\\(24x^{3} + 14x + 5\\)",
+      "\\(24x^{4} + 14x^{2} + 5x\\)",
+      "\\(6x^{3} + 7x + 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 24x^{3} + 14x + 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x + 2)^{2}\\).",
+    "options": [
+      "\\(2(6x + 2)^{1}\\)",
+      "\\(6(6x + 2)^{1}\\)",
+      "\\(12(6x + 2)^{2}\\)",
+      "\\(12(6x + 2)^{1}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x + 2)^{1} \\times 6 = 12(6x + 2)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (5x - 2)^{6}\\).",
+    "options": [
+      "\\(30(5x - 2)^{6}\\)",
+      "\\(6(5x - 2)^{5}\\)",
+      "\\(30(5x - 2)^{5}\\)",
+      "\\(5(5x - 2)^{5}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(5x - 2)^{5} \\times 5 = 30(5x - 2)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x - 8)^{2}\\).",
+    "options": [
+      "\\(12(6x - 8)^{2}\\)",
+      "\\(2(6x - 8)^{1}\\)",
+      "\\(6(6x - 8)^{1}\\)",
+      "\\(12(6x - 8)^{1}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x - 8)^{1} \\times 6 = 12(6x - 8)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 4)(2x - 1)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x + 2\\)",
+      "\\(24x - 14\\)",
+      "\\(12x - 14\\)",
+      "\\(25x - 14\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 12x^{2} - 14x + 4\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 24x - 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -5x^{4} + 3x^{2} + 8x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-5x^{3} + 3x + 8\\)",
+      "\\(-20x^{4} + 6x^{2} + 8x\\)",
+      "\\(-60x^{2} + 6\\)",
+      "\\(-20x^{3} + 6x + 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -20x^{3} + 6x + 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 4x + 2\\).",
+    "options": [
+      "Minimum",
+      "Point of inflexion",
+      "No turning point",
+      "Maximum"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 8x + 4\\).",
+    "options": [
+      "Point of inflexion",
+      "Minimum",
+      "No turning point",
+      "Maximum"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 8\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8\\sin x\\)",
+      "\\(-8\\sin x\\)",
+      "\\(-8\\cos x\\)",
+      "\\(8\\sec^{2}x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 8: \\(\\frac{dy}{dx} = -8\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 5)^{4}\\).",
+    "options": [
+      "\\(8(2x - 5)^{3}\\)",
+      "\\(4(2x - 5)^{3}\\)",
+      "\\(8(2x - 5)^{4}\\)",
+      "\\(2(2x - 5)^{3}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(2x - 5)^{3} \\times 2 = 8(2x - 5)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} - t - 1\\). Find its acceleration.",
+    "options": [
+      "-7m/s²",
+      "-6m/s²",
+      "-37m/s²",
+      "-115m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t - 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} - 6t + 8\\). Find its acceleration.",
+    "options": [
+      "12m/s²",
+      "18m/s²",
+      "20m/s²",
+      "6m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t - 6\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} + 9\\).",
+    "options": [
+      "Maximum",
+      "No turning point",
+      "Point of inflexion",
+      "Minimum"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = -2x\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x + 7)^{3}\\).",
+    "options": [
+      "\\(-9(-3x + 7)^{2}\\)",
+      "\\(-9(-3x + 7)^{3}\\)",
+      "\\(3(-3x + 7)^{2}\\)",
+      "\\(-3(-3x + 7)^{2}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-3x + 7)^{2} \\times -3 = -9(-3x + 7)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 8x + 23\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Minimum",
+      "Maximum"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} + 2t + 3\\). Find its acceleration.",
+    "options": [
+      "12m/s²",
+      "63m/s²",
+      "14m/s²",
+      "38m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t + 2\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(5\\cos x\\)",
+      "\\(-5\\cos x\\)",
+      "\\(5\\tan x\\)",
+      "\\(-5\\sin x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 5: \\(\\frac{dy}{dx} = 5\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -4t^{2} - 7t + 2\\). Find its acceleration.",
+    "options": [
+      "-8m/s²",
+      "-47m/s²",
+      "-15m/s²",
+      "-133m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -8t - 7\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-4\\sin x\\)",
+      "\\(-4\\cos x\\)",
+      "\\(4\\tan x\\)",
+      "\\(4\\cos x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 4: \\(\\frac{dy}{dx} = 4\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 4x - 4\\).",
+    "options": [
+      "Minimum",
+      "Point of inflexion",
+      "No turning point",
+      "Maximum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (x + 1)(-2x + 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-4x + 1\\)",
+      "\\(-4x + 5\\)",
+      "\\(-2x + 1\\)",
+      "\\(-3x + 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -2x^{2} + x + 3\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -4x + 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} - 4t + 2\\). Find its acceleration.",
+    "options": [
+      "20m/s²",
+      "18m/s²",
+      "12m/s²",
+      "8m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t - 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -2t^{2} - t + 3\\). Find its acceleration.",
+    "options": [
+      "-4m/s²",
+      "-5m/s²",
+      "-7m/s²",
+      "-9m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -4t - 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 8x - 2\\).",
+    "options": [
+      "Minimum",
+      "No turning point",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 4t^{2} - 3t + 5\\). Find its acceleration.",
+    "options": [
+      "21m/s²",
+      "32m/s²",
+      "8m/s²",
+      "5m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 8t - 3\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-2x - 8)(-4x - 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(17x + 38\\)",
+      "\\(16x + 38\\)",
+      "\\(16x - 26\\)",
+      "\\(8x + 38\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 8x^{2} + 38x + 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 16x + 38\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 6x + 16\\).",
+    "options": [
+      "Maximum",
+      "Point of inflexion",
+      "Minimum",
+      "No turning point"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 6\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x + 1)(-x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x + 35\\)",
+      "\\(-6x + 35\\)",
+      "\\(-12x + 37\\)",
+      "\\(-11x + 35\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -6x^{2} + 35x + 6\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -12x + 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 2t^{2} + 3t - 2\\). Find its acceleration.",
+    "options": [
+      "42m/s²",
+      "7m/s²",
+      "4m/s²",
+      "19m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 4t + 3\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (3x + 7)^{6}\\).",
+    "options": [
+      "\\(3(3x + 7)^{5}\\)",
+      "\\(18(3x + 7)^{5}\\)",
+      "\\(18(3x + 7)^{6}\\)",
+      "\\(6(3x + 7)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(3x + 7)^{5} \\times 3 = 18(3x + 7)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 2)^{3}\\).",
+    "options": [
+      "\\(3(2x - 2)^{2}\\)",
+      "\\(6(2x - 2)^{3}\\)",
+      "\\(2(2x - 2)^{2}\\)",
+      "\\(6(2x - 2)^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(2x - 2)^{2} \\times 2 = 6(2x - 2)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x - 2)(-4x - 8)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-12x - 16\\)",
+      "\\(-24x - 32\\)",
+      "\\(-24x - 16\\)",
+      "\\(-23x - 16\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -12x^{2} - 16x + 16\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x - 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 2t^{2} + 8t - 4\\). Find its acceleration.",
+    "options": [
+      "4m/s²",
+      "20m/s²",
+      "12m/s²",
+      "16m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 4t + 8\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 2t^{2} + t - 5\\). Find its acceleration.",
+    "options": [
+      "5m/s²",
+      "4m/s²",
+      "31m/s²",
+      "17m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 4t + 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (5x + 5)(-3x + 2)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-30x - 5\\)",
+      "\\(-30x + 25\\)",
+      "\\(-29x - 5\\)",
+      "\\(-15x - 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -15x^{2} - 5x + 10\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -30x - 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} - 8x + 1\\).",
+    "options": [
+      "No turning point",
+      "Minimum",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 4x - 8\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 12x + 17\\).",
+    "options": [
+      "No turning point",
+      "Point of inflexion",
+      "Maximum",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (3x - 7)^{6}\\).",
+    "options": [
+      "\\(18(3x - 7)^{5}\\)",
+      "\\(3(3x - 7)^{5}\\)",
+      "\\(6(3x - 7)^{5}\\)",
+      "\\(18(3x - 7)^{6}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(3x - 7)^{5} \\times 3 = 18(3x - 7)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (5x + 4)^{2}\\).",
+    "options": [
+      "\\(2(5x + 4)^{1}\\)",
+      "\\(10(5x + 4)^{1}\\)",
+      "\\(10(5x + 4)^{2}\\)",
+      "\\(5(5x + 4)^{1}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(5x + 4)^{1} \\times 5 = 10(5x + 4)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x - 8)^{6}\\).",
+    "options": [
+      "\\(-3(-3x - 8)^{5}\\)",
+      "\\(-18(-3x - 8)^{5}\\)",
+      "\\(-18(-3x - 8)^{6}\\)",
+      "\\(6(-3x - 8)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-3x - 8)^{5} \\times -3 = -18(-3x - 8)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x + 1)^{3}\\).",
+    "options": [
+      "\\(2(2x + 1)^{2}\\)",
+      "\\(6(2x + 1)^{3}\\)",
+      "\\(3(2x + 1)^{2}\\)",
+      "\\(6(2x + 1)^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(2x + 1)^{2} \\times 2 = 6(2x + 1)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x + 4)(-x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8x - 28\\)",
+      "\\(4x - 28\\)",
+      "\\(8x - 20\\)",
+      "\\(9x - 28\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 4x^{2} - 28x + 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 8x - 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (4x + 1)^{2}\\).",
+    "options": [
+      "\\(8(4x + 1)^{1}\\)",
+      "\\(8(4x + 1)^{2}\\)",
+      "\\(4(4x + 1)^{1}\\)",
+      "\\(2(4x + 1)^{1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(4x + 1)^{1} \\times 4 = 8(4x + 1)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} - 4x - 10\\).",
+    "options": [
+      "Point of inflexion",
+      "Minimum",
+      "No turning point",
+      "Maximum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = -2x - 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-5x - 6)^{3}\\).",
+    "options": [
+      "\\(-5(-5x - 6)^{2}\\)",
+      "\\(-15(-5x - 6)^{2}\\)",
+      "\\(3(-5x - 6)^{2}\\)",
+      "\\(-15(-5x - 6)^{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-5x - 6)^{2} \\times -5 = -15(-5x - 6)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 7x^{4} + 4x^{2} - x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(28x^{4} + 8x^{2} - x\\)",
+      "\\(7x^{3} + 4x - 1\\)",
+      "\\(28x^{3} + 8x - 1\\)",
+      "\\(84x^{2} + 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 28x^{3} + 8x - 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} - 4t + 8\\). Find its acceleration.",
+    "options": [
+      "-40m/s²",
+      "-10m/s²",
+      "-124m/s²",
+      "-6m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t - 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} + 12x - 11\\).",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Point of inflexion",
+      "No turning point"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = -4x + 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} - 7x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(20x^{3} - 14x - 2\\)",
+      "\\(20x^{4} - 14x^{2} - 2x\\)",
+      "\\(5x^{3} - 7x - 2\\)",
+      "\\(60x^{2} - 14\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} - 14x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4x^{4} - 4x^{2} - 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x^{3} - 4x - 4\\)",
+      "\\(16x^{4} - 8x^{2} - 4x\\)",
+      "\\(16x^{3} - 8x - 4\\)",
+      "\\(48x^{2} - 8\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 16x^{3} - 8x - 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-x - 1)^{3}\\).",
+    "options": [
+      "\\(-3(-x - 1)^{3}\\)",
+      "\\(-3(-x - 1)^{2}\\)",
+      "\\(-1(-x - 1)^{2}\\)",
+      "\\(3(-x - 1)^{2}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-x - 1)^{2} \\times -1 = -3(-x - 1)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-x + 7)^{3}\\).",
+    "options": [
+      "\\(-3(-x + 7)^{3}\\)",
+      "\\(-1(-x + 7)^{2}\\)",
+      "\\(-3(-x + 7)^{2}\\)",
+      "\\(3(-x + 7)^{2}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-x + 7)^{2} \\times -1 = -3(-x + 7)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -x^{4} - 3x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-x^{3} - 3x - 2\\)",
+      "\\(-4x^{3} - 6x - 2\\)",
+      "\\(-4x^{4} - 6x^{2} - 2x\\)",
+      "\\(-12x^{2} - 6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -4x^{3} - 6x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -3x^{4} + 3x^{2} - 3x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-3x^{3} + 3x - 3\\)",
+      "\\(-12x^{3} + 6x - 3\\)",
+      "\\(-36x^{2} + 6\\)",
+      "\\(-12x^{4} + 6x^{2} - 3x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -12x^{3} + 6x - 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x + 5)(5x + 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(61x + 49\\)",
+      "\\(60x - 1\\)",
+      "\\(30x + 49\\)",
+      "\\(60x + 49\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = 30x^{2} + 49x + 20\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 60x + 49\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 3x^{4} - 4x^{2} + 7x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(12x^{4} - 8x^{2} + 7x\\)",
+      "\\(36x^{2} - 8\\)",
+      "\\(12x^{3} - 8x + 7\\)",
+      "\\(3x^{3} - 4x + 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 12x^{3} - 8x + 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x + 8)(x + 3)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(3x + 17\\)",
+      "\\(6x + 17\\)",
+      "\\(7x + 17\\)",
+      "\\(6x + 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 3x^{2} + 17x + 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 6x + 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x - 3)^{2}\\).",
+    "options": [
+      "\\(12(6x - 3)^{1}\\)",
+      "\\(12(6x - 3)^{2}\\)",
+      "\\(2(6x - 3)^{1}\\)",
+      "\\(6(6x - 3)^{1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x - 3)^{1} \\times 6 = 12(6x - 3)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x - 1)^{5}\\).",
+    "options": [
+      "\\(5(6x - 1)^{4}\\)",
+      "\\(30(6x - 1)^{4}\\)",
+      "\\(6(6x - 1)^{4}\\)",
+      "\\(30(6x - 1)^{5}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(6x - 1)^{4} \\times 6 = 30(6x - 1)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -2x^{4} - 6x^{2} + x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-2x^{3} - 6x + 1\\)",
+      "\\(-24x^{2} - 12\\)",
+      "\\(-8x^{4} - 12x^{2} + x\\)",
+      "\\(-8x^{3} - 12x + 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -8x^{3} - 12x + 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6x^{4} - x^{2} + x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(72x^{2} - 2\\)",
+      "\\(6x^{3} - x + 1\\)",
+      "\\(24x^{3} - 2x + 1\\)",
+      "\\(24x^{4} - 2x^{2} + x\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 24x^{3} - 2x + 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 16x - 36\\).",
+    "options": [
+      "Point of inflexion",
+      "Maximum",
+      "No turning point",
+      "Minimum"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 16\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} + 4x - 5\\).",
+    "options": [
+      "No turning point",
+      "Minimum",
+      "Point of inflexion",
+      "Maximum"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{dy}{dx} = 2x + 4\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x - 3)(4x - 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-31x + 8\\)",
+      "\\(-32x + 32\\)",
+      "\\(-16x + 8\\)",
+      "\\(-32x + 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = -16x^{2} + 8x + 15\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -32x + 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5x^{4} - 3x^{2} + 3x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(60x^{2} - 6\\)",
+      "\\(20x^{4} - 6x^{2} + 3x\\)",
+      "\\(5x^{3} - 3x + 3\\)",
+      "\\(20x^{3} - 6x + 3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 20x^{3} - 6x + 3\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (x + 4)(4x + 8)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8x - 8\\)",
+      "\\(9x + 24\\)",
+      "\\(8x + 24\\)",
+      "\\(4x + 24\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 4x^{2} + 24x + 32\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 8x + 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x + 5)^{4}\\).",
+    "options": [
+      "\\(6(6x + 5)^{3}\\)",
+      "\\(24(6x + 5)^{4}\\)",
+      "\\(24(6x + 5)^{3}\\)",
+      "\\(4(6x + 5)^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(6x + 5)^{3} \\times 6 = 24(6x + 5)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-5x - 6)(4x + 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-20x - 49\\)",
+      "\\(-40x - 49\\)",
+      "\\(-39x - 49\\)",
+      "\\(-40x - 1\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = -20x^{2} - 49x - 30\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -40x - 49\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = t^{2} - 8t + 6\\). Find its acceleration.",
+    "options": [
+      "2m/s²",
+      "0m/s²",
+      "-6m/s²",
+      "-10m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 2t - 8\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 2x - 2\\).",
+    "options": [
+      "Minimum",
+      "Maximum",
+      "No turning point",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 2x - 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-5x - 4)^{6}\\).",
+    "options": [
+      "\\(6(-5x - 4)^{5}\\)",
+      "\\(-5(-5x - 4)^{5}\\)",
+      "\\(-30(-5x - 4)^{5}\\)",
+      "\\(-30(-5x - 4)^{6}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 6(-5x - 4)^{5} \\times -5 = -30(-5x - 4)^{5}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6x^{4} + x^{2} - 4x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(72x^{2} + 2\\)",
+      "\\(24x^{3} + 2x - 4\\)",
+      "\\(24x^{4} + 2x^{2} - 4x\\)",
+      "\\(6x^{3} + x - 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 24x^{3} + 2x - 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-2x - 4)(5x + 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-20x - 32\\)",
+      "\\(-10x - 32\\)",
+      "\\(-19x - 32\\)",
+      "\\(-20x + 8\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -10x^{2} - 32x - 24\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -20x - 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 2\\sin x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(2\\cos x\\)",
+      "\\(-2\\sin x\\)",
+      "\\(-2\\cos x\\)",
+      "\\(2\\tan x\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{d}{dx}(\\sin x) = \\cos x\\)\n\nMultiplying by the constant 2: \\(\\frac{dy}{dx} = 2\\cos x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-3x + 5)^{3}\\).",
+    "options": [
+      "\\(-3(-3x + 5)^{2}\\)",
+      "\\(3(-3x + 5)^{2}\\)",
+      "\\(-9(-3x + 5)^{3}\\)",
+      "\\(-9(-3x + 5)^{2}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-3x + 5)^{2} \\times -3 = -9(-3x + 5)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -t^{2} + t + 9\\). Find its acceleration.",
+    "options": [
+      "-21m/s²",
+      "-2m/s²",
+      "-11m/s²",
+      "-1m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -2t + 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -2\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x - 1)(-3x + 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(12x - 13\\)",
+      "\\(24x - 19\\)",
+      "\\(24x - 13\\)",
+      "\\(25x - 13\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 12x^{2} - 13x - 4\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 24x - 13\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -4t^{2} - 5t + 6\\). Find its acceleration.",
+    "options": [
+      "-45m/s²",
+      "-13m/s²",
+      "-8m/s²",
+      "-29m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -8t - 5\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 6t^{2} + 4t - 3\\). Find its acceleration.",
+    "options": [
+      "12m/s²",
+      "16m/s²",
+      "28m/s²",
+      "29m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 12t + 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 12\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x - 3)(4x + 4)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-16x - 28\\)",
+      "\\(-31x - 28\\)",
+      "\\(-32x - 28\\)",
+      "\\(-32x - 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -16x^{2} - 28x - 12\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -32x - 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x + 2)^{4}\\).",
+    "options": [
+      "\\(6(6x + 2)^{3}\\)",
+      "\\(24(6x + 2)^{4}\\)",
+      "\\(24(6x + 2)^{3}\\)",
+      "\\(4(6x + 2)^{3}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 4(6x + 2)^{3} \\times 6 = 24(6x + 2)^{3}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} + 2x + 4\\).",
+    "options": [
+      "Maximum",
+      "No turning point",
+      "Point of inflexion",
+      "Minimum"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = -2x + 2\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -3x^{4} - x^{2} + 9x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-3x^{3} - x + 9\\)",
+      "\\(-12x^{3} - 2x + 9\\)",
+      "\\(-36x^{2} - 2\\)",
+      "\\(-12x^{4} - 2x^{2} + 9x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -12x^{3} - 2x + 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-5x - 5)(-x - 2)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(10x + 5\\)",
+      "\\(11x + 15\\)",
+      "\\(5x + 15\\)",
+      "\\(10x + 15\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = 5x^{2} + 15x + 10\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 10x + 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 4t^{2} - 4t + 2\\). Find its acceleration.",
+    "options": [
+      "4m/s²",
+      "12m/s²",
+      "10m/s²",
+      "8m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 8t - 4\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 8\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (-5x - 8)^{3}\\).",
+    "options": [
+      "\\(-5(-5x - 8)^{2}\\)",
+      "\\(-15(-5x - 8)^{2}\\)",
+      "\\(3(-5x - 8)^{2}\\)",
+      "\\(-15(-5x - 8)^{3}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 3(-5x - 8)^{2} \\times -5 = -15(-5x - 8)^{2}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -x^{2} - 10x - 21\\).",
+    "options": [
+      "No turning point",
+      "Minimum",
+      "Maximum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -2x - 10\\) and \\(\\frac{d^{2}y}{dx^{2}} = -2\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -3t^{2} - t + 6\\). Find its acceleration.",
+    "options": [
+      "-6m/s²",
+      "-7m/s²",
+      "-108m/s²",
+      "-37m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -6t - 1\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (6x - 6)(2x - 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x - 48\\)",
+      "\\(24x - 24\\)",
+      "\\(25x - 48\\)",
+      "\\(12x - 48\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = 12x^{2} - 48x + 36\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 24x - 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = x^{2} - 10\\).",
+    "options": [
+      "Minimum",
+      "Maximum",
+      "No turning point",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = 2x\\) and \\(\\frac{d^{2}y}{dx^{2}} = 2\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -2x^{4} + 6x^{2} - 2x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-2x^{3} + 6x - 2\\)",
+      "\\(-8x^{4} + 12x^{2} - 2x\\)",
+      "\\(-8x^{3} + 12x - 2\\)",
+      "\\(-24x^{2} + 12\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -8x^{3} + 12x - 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 5\\tan x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-5\\csc^{2}x\\)",
+      "\\(5\\cot x\\)",
+      "\\(5\\sec x \\tan x\\)",
+      "\\(5\\sec^{2}x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\tan x) = \\sec^{2}x\\)\n\nMultiplying by the constant 5: \\(\\frac{dy}{dx} = 5\\sec^{2}x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x - 1)(3x - 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-24x + 17\\)",
+      "\\(-23x + 17\\)",
+      "\\(-24x + 23\\)",
+      "\\(-12x + 17\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -12x^{2} + 17x + 5\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x + 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x - 8)(5x - 6)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(20x - 64\\)",
+      "\\(41x - 64\\)",
+      "\\(40x - 64\\)",
+      "\\(40x + 16\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = 20x^{2} - 64x + 48\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 40x - 64\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (-4x + 3)(3x - 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-24x + 37\\)",
+      "\\(-23x + 37\\)",
+      "\\(-24x + 19\\)",
+      "\\(-12x + 37\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand first: \\(y = -12x^{2} + 37x - 21\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -24x + 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 4\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4\\sin x\\)",
+      "\\(-4\\sin x\\)",
+      "\\(4\\sec^{2}x\\)",
+      "\\(-4\\cos x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 4: \\(\\frac{dy}{dx} = -4\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 9\\cos x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(9\\sin x\\)",
+      "\\(-9\\cos x\\)",
+      "\\(9\\sec^{2}x\\)",
+      "\\(-9\\sin x\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{d}{dx}(\\cos x) = -\\sin x\\)\n\nMultiplying by the constant 9: \\(\\frac{dy}{dx} = -9\\sin x\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (4x + 8)(x + 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(8x + 20\\)",
+      "\\(8x + 36\\)",
+      "\\(4x + 36\\)",
+      "\\(9x + 36\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand first: \\(y = 4x^{2} + 36x + 56\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 8x + 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (3x - 2)(2x + 5)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(12x + 19\\)",
+      "\\(6x + 11\\)",
+      "\\(13x + 11\\)",
+      "\\(12x + 11\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand first: \\(y = 6x^{2} + 11x - 10\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = 12x + 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} - 20x - 52\\).",
+    "options": [
+      "Maximum",
+      "No turning point",
+      "Minimum",
+      "Point of inflexion"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\frac{dy}{dx} = -4x - 20\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = x^{4} + 7x^{2} + 9x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(4x^{3} + 14x + 9\\)",
+      "\\(12x^{2} + 14\\)",
+      "\\(4x^{4} + 14x^{2} + 9x\\)",
+      "\\(x^{3} + 7x + 9\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 4x^{3} + 14x + 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -x^{4} + 8x^{2} + x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-x^{3} + 8x + 1\\)",
+      "\\(-4x^{3} + 16x + 1\\)",
+      "\\(-12x^{2} + 16\\)",
+      "\\(-4x^{4} + 16x^{2} + x\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -4x^{3} + 16x + 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (2x - 5)^{5}\\).",
+    "options": [
+      "\\(10(2x - 5)^{5}\\)",
+      "\\(2(2x - 5)^{4}\\)",
+      "\\(10(2x - 5)^{4}\\)",
+      "\\(5(2x - 5)^{4}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 5(2x - 5)^{4} \\times 2 = 10(2x - 5)^{4}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = -2t^{2} + 6t - 5\\). Find its acceleration.",
+    "options": [
+      "2m/s²",
+      "-18m/s²",
+      "-41m/s²",
+      "-4m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = -4t + 6\\)\n\nAcceleration \\(= \\frac{dv}{dt} = -4\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = x^{4} + 8x^{2} - 9x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(x^{3} + 8x - 9\\)",
+      "\\(12x^{2} + 16\\)",
+      "\\(4x^{4} + 16x^{2} - 9x\\)",
+      "\\(4x^{3} + 16x - 9\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 4x^{3} + 16x - 9\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = (2x - 8)(-x - 7)\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-2x - 6\\)",
+      "\\(-3x - 6\\)",
+      "\\(-4x - 6\\)",
+      "\\(-4x - 22\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand first: \\(y = -2x^{2} - 6x + 56\\)\n\nDifferentiate term by term:\n\n\\(\\frac{dy}{dx} = -4x - 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = 2x^{2} + 16x + 38\\).",
+    "options": [
+      "Point of inflexion",
+      "Maximum",
+      "No turning point",
+      "Minimum"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\frac{dy}{dx} = 4x + 16\\) and \\(\\frac{d^{2}y}{dx^{2}} = 4\\).\n\nSince the second derivative is positive, the turning point is a minimum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 5t^{2} + 2t - 7\\). Find its acceleration.",
+    "options": [
+      "44m/s²",
+      "10m/s²",
+      "32m/s²",
+      "12m/s²"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 10t + 2\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 10\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A particle moves such that its displacement is \\(s = 3t^{2} - 6t - 8\\). Find its acceleration.",
+    "options": [
+      "30m/s²",
+      "64m/s²",
+      "6m/s²",
+      "0m/s²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocity \\(v = \\frac{ds}{dt} = 6t - 6\\)\n\nAcceleration \\(= \\frac{dv}{dt} = 6\\)m/s²\n\nThe acceleration is constant.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Determine the nature of the turning point of \\(y = -2x^{2} + 12x - 17\\).",
+    "options": [
+      "Minimum",
+      "Point of inflexion",
+      "Maximum",
+      "No turning point"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\frac{dy}{dx} = -4x + 12\\) and \\(\\frac{d^{2}y}{dx^{2}} = -4\\).\n\nSince the second derivative is negative, the turning point is a maximum.",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find \\(\\frac{dy}{dx}\\) if \\(y = (6x + 3)^{2}\\).",
+    "options": [
+      "\\(12(6x + 3)^{1}\\)",
+      "\\(12(6x + 3)^{2}\\)",
+      "\\(6(6x + 3)^{1}\\)",
+      "\\(2(6x + 3)^{1}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "By the chain rule, \\(\\frac{dy}{dx} = n(\\text{inner})^{n-1} \\times \\frac{d(\\text{inner})}{dx}\\).\n\n\\(= 2(6x + 3)^{1} \\times 6 = 12(6x + 3)^{1}\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = 6x^{4} - 2x^{2} - 5x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(24x^{4} - 4x^{2} - 5x\\)",
+      "\\(72x^{2} - 4\\)",
+      "\\(6x^{3} - 2x - 5\\)",
+      "\\(24x^{3} - 4x - 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = 24x^{3} - 4x - 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Differentiate \\(y = -4x^{4} - x^{2} - 8x\\) with respect to \\(x\\).",
+    "options": [
+      "\\(-16x^{4} - 2x^{2} - 8x\\)",
+      "\\(-4x^{3} - x - 8\\)",
+      "\\(-48x^{2} - 2\\)",
+      "\\(-16x^{3} - 2x - 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Apply \\(\\frac{d}{dx}(ax^{n}) = nax^{n-1}\\) to each term.\n\n\\(\\frac{dy}{dx} = -16x^{3} - 2x - 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "tLPeRzqVzZjOvGNAQu2t",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

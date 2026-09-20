@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "If \\(n(A) = 22\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 11\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "56",
+      "45",
+      "23",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 22 + 23 - 11\\)\n\n\\(= 34\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 50\\) and \\(n(A) = 13\\), find \\(n(A')\\).",
+    "options": [
+      "13",
+      "63",
+      "24",
+      "37"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 50 - 13 = 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 9, 10, 11\\}\\) and \\(B = \\{4, 7, 9, 10, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{4, 7, 9, 10, 12\\}\\)",
+      "\\(\\{3, 4, 7, 9, 10, 11, 12\\}\\)",
+      "\\(\\{9, 10\\}\\)",
+      "\\(\\{3, 9, 10, 11\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{3, 4, 7, 9, 10, 11, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 47 students, 27 offer Literature, 24 offer History and 11 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "9",
+      "-4",
+      "18",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(L \\cup H) = 27 + 24 - 11 = 40\\)\n\nStudents offering neither \\(= 47 - 40 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 6, 7, 10, 12\\}\\) and \\(B = \\{4, 9, 11, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{12\\}\\)",
+      "\\(\\{4, 9, 11, 12\\}\\)",
+      "\\(\\{1, 6, 7, 10, 12\\}\\)",
+      "\\(\\{1, 4, 6, 7, 9, 10, 11, 12\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many subsets can be formed from a set containing 6 elements?",
+    "options": [
+      "12",
+      "63",
+      "64",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "A set with \\(n\\) elements has \\(2^{n}\\) subsets.\n\n\\(2^{6} = 64\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 21 students, 12 offer Physics, 11 offer Chemistry and 4 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "4",
+      "-2",
+      "6",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(P \\cup C) = 12 + 11 - 4 = 19\\)\n\nStudents offering neither \\(= 21 - 19 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 46\\) and \\(n(A) = 21\\), find \\(n(A')\\).",
+    "options": [
+      "25",
+      "4",
+      "21",
+      "67"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 46 - 21 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "20 students offer Literature and 25 students offer History. If 11 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "31",
+      "5",
+      "9",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 20 - 11 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many subsets can be formed from a set containing 4 elements?",
+    "options": [
+      "8",
+      "16",
+      "15",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "A set with \\(n\\) elements has \\(2^{n}\\) subsets.\n\n\\(2^{4} = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "15 students offer Further Mathematics and 16 students offer Technical Drawing. If 6 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "21",
+      "15",
+      "9",
+      "1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 15 - 6 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 67\\) and \\(n(A) = 12\\), find \\(n(A')\\).",
+    "options": [
+      "79",
+      "43",
+      "12",
+      "55"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 67 - 12 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 4, 5, 10\\}\\) and \\(B = \\{3, 4, 7, 9, 10\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{2, 3, 4, 5, 7, 9, 10\\}\\)",
+      "\\(\\{2, 4, 5, 10\\}\\)",
+      "\\(\\{4, 10\\}\\)",
+      "\\(\\{3, 4, 7, 9, 10\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{2, 3, 4, 5, 7, 9, 10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 40\\), \\(n(B) = 43\\) and \\(n(A \\cap B) = 38\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "83",
+      "121",
+      "45",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 40 + 43 - 38\\)\n\n\\(= 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "29 students offer Biology and 19 students offer Geography. If 10 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "19",
+      "39",
+      "29",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 29 - 10 = 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 5, 8, 10\\}\\) and \\(B = \\{1, 2, 8, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 5, 8, 10\\}\\)",
+      "\\(\\{2, 8\\}\\)",
+      "\\(\\{1, 2, 5, 8, 10, 12\\}\\)",
+      "\\(\\{1, 2, 8, 12\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{2, 8\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 14\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 11\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "56",
+      "34",
+      "67",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 14 + 42 - 11\\)\n\n\\(= 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 44 students, every student offers at least one of Commerce and Accounting. If 35 offer Commerce and 24 offer Accounting, how many offer both subjects?",
+    "options": [
+      "15",
+      "9",
+      "17",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 44\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 35 + 24 - 44 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 79\\) and \\(n(A) = 32\\), find \\(n(A')\\).",
+    "options": [
+      "47",
+      "111",
+      "32",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 79 - 32 = 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 45 students, every student offers at least one of Commerce and Accounting. If 34 offer Commerce and 23 offer Accounting, how many offer both subjects?",
+    "options": [
+      "12",
+      "22",
+      "11",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 45\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 34 + 23 - 45 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{5, 6, 7, 10, 11\\}\\) and \\(B = \\{3, 6, 8, 9\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{3, 6, 8, 9\\}\\)",
+      "\\(\\{6\\}\\)",
+      "\\(\\{3, 5, 6, 7, 8, 9, 10, 11\\}\\)",
+      "\\(\\{5, 6, 7, 10, 11\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{3, 5, 6, 7, 8, 9, 10, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "33 students offer Biology and 32 students offer Geography. If 13 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "1",
+      "33",
+      "46",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 33 - 13 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 5, 7, 9, 11\\}\\) and \\(B = \\{1, 2, 10, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 5, 7, 9, 11\\}\\)",
+      "\\(\\{1, 2, 5, 7, 9, 10, 11, 12\\}\\)",
+      "\\(\\{1, 2, 10, 12\\}\\)",
+      "\\(\\{1\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 2, 5, 7, 9, 10, 11, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 58\\) and \\(n(A) = 15\\), find \\(n(A')\\).",
+    "options": [
+      "73",
+      "28",
+      "43",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 58 - 15 = 43\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 44\\), \\(n(B) = 18\\) and \\(n(A \\cap B) = 12\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "38",
+      "50",
+      "74",
+      "62"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 44 + 18 - 12\\)\n\n\\(= 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, 22 offer Physics, 14 offer Chemistry and 7 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "9",
+      "11",
+      "2",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(P \\cup C) = 22 + 14 - 7 = 29\\)\n\nStudents offering neither \\(= 38 - 29 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 42 students, 15 offer Further Mathematics, 24 offer Technical Drawing and 7 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "17",
+      "12",
+      "3",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(F \\cup T) = 15 + 24 - 7 = 32\\)\n\nStudents offering neither \\(= 42 - 32 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{4, 5, 7, 9, 10\\}\\) and \\(B = \\{1, 3, 6, 8, 10\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 3, 6, 8, 10\\}\\)",
+      "\\(\\{1, 3, 4, 5, 6, 7, 8, 9, 10\\}\\)",
+      "\\(\\{10\\}\\)",
+      "\\(\\{4, 5, 7, 9, 10\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{4, 10, 11, 12\\}\\) and \\(B = \\{5, 7, 8, 9, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{4, 5, 7, 8, 9, 10, 11, 12\\}\\)",
+      "\\(\\{5, 7, 8, 9, 11\\}\\)",
+      "\\(\\{4, 10, 11, 12\\}\\)",
+      "\\(\\{11\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "36 students offer Biology and 25 students offer Geography. If 15 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "11",
+      "36",
+      "21",
+      "51"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 36 - 15 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 45 students, 29 offer Economics, 27 offer Government and 15 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "6",
+      "4",
+      "19",
+      "-11"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(E \\cup G) = 29 + 27 - 15 = 41\\)\n\nStudents offering neither \\(= 45 - 41 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many subsets can be formed from a set containing 7 elements?",
+    "options": [
+      "127",
+      "49",
+      "128",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "A set with \\(n\\) elements has \\(2^{n}\\) subsets.\n\n\\(2^{7} = 128\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 28 students, every student offers at least one of Mathematics and English. If 14 offer Mathematics and 20 offer English, how many offer both subjects?",
+    "options": [
+      "8",
+      "14",
+      "9",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 28\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 14 + 20 - 28 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "29 students offer Economics and 27 students offer Government. If 15 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "29",
+      "2",
+      "44",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 29 - 15 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 33\\), \\(n(B) = 40\\) and \\(n(A \\cap B) = 18\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "55",
+      "73",
+      "91",
+      "37"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 33 + 40 - 18\\)\n\n\\(= 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 10\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 6\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "33",
+      "27",
+      "21",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 10 + 23 - 6\\)\n\n\\(= 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 25\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 23\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "17",
+      "63",
+      "86",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 25 + 38 - 23\\)\n\n\\(= 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 4, 7, 8, 11\\}\\) and \\(B = \\{2, 3, 11, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 3, 11, 12\\}\\)",
+      "\\(\\{2, 3, 4, 7, 8, 11, 12\\}\\)",
+      "\\(\\{3, 4, 7, 8, 11\\}\\)",
+      "\\(\\{3, 11\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{3, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many subsets can be formed from a set containing 3 elements?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "A set with \\(n\\) elements has \\(2^{n}\\) subsets.\n\n\\(2^{3} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 34\\), \\(n(B) = 41\\) and \\(n(A \\cap B) = 33\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "42",
+      "108",
+      "75",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 34 + 41 - 33\\)\n\n\\(= 42\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 71\\) and \\(n(A) = 23\\), find \\(n(A')\\).",
+    "options": [
+      "48",
+      "23",
+      "25",
+      "94"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 71 - 23 = 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "22 students offer Commerce and 24 students offer Accounting. If 10 students offer both subjects, how many offer Commerce only?",
+    "options": [
+      "32",
+      "12",
+      "22",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Students offering Commerce only \\(= n(C) - n(\\text{both})\\)\n\n\\(= 22 - 10 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 48\\) and \\(n(A) = 21\\), find \\(n(A')\\).",
+    "options": [
+      "69",
+      "27",
+      "21",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 48 - 21 = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "27 students offer Physics and 32 students offer Chemistry. If 13 students offer both subjects, how many offer Physics only?",
+    "options": [
+      "14",
+      "27",
+      "40",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Physics only \\(= n(P) - n(\\text{both})\\)\n\n\\(= 27 - 13 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 75\\) and \\(n(A) = 16\\), find \\(n(A')\\).",
+    "options": [
+      "91",
+      "43",
+      "16",
+      "59"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 75 - 16 = 59\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 36\\), \\(n(B) = 44\\) and \\(n(A \\cap B) = 16\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "96",
+      "48",
+      "80",
+      "64"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 36 + 44 - 16\\)\n\n\\(= 64\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 49 students, 32 offer Literature, 21 offer History and 9 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "14",
+      "5",
+      "7",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(L \\cup H) = 32 + 21 - 9 = 44\\)\n\nStudents offering neither \\(= 49 - 44 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 49 students, 24 offer Agric Science, 35 offer Civic Education and 13 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "3",
+      "16",
+      "-10",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup C) = 24 + 35 - 13 = 46\\)\n\nStudents offering neither \\(= 49 - 46 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 45 students, every student offers at least one of Economics and Government. If 26 offer Economics and 35 offer Government, how many offer both subjects?",
+    "options": [
+      "18",
+      "19",
+      "10",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 45\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 26 + 35 - 45 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 47 students, every student offers at least one of Agric Science and Civic Education. If 27 offer Agric Science and 33 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "20",
+      "13",
+      "15",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 47\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 27 + 33 - 47 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 37 students, every student offers at least one of Physics and Chemistry. If 20 offer Physics and 26 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "12",
+      "17",
+      "9",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 37\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 20 + 26 - 37 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 39 students, every student offers at least one of Agric Science and Civic Education. If 24 offer Agric Science and 26 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "14",
+      "15",
+      "11",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 39\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 24 + 26 - 39 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 5, 7, 9, 10\\}\\) and \\(B = \\{2, 5, 7, 9\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{5, 7, 9\\}\\)",
+      "\\(\\{3, 5, 7, 9, 10\\}\\)",
+      "\\(\\{2, 5, 7, 9\\}\\)",
+      "\\(\\{2, 3, 5, 7, 9, 10\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{5, 7, 9\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 46 students, 28 offer Further Mathematics, 25 offer Technical Drawing and 12 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "7",
+      "-7",
+      "17",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(F \\cup T) = 28 + 25 - 12 = 41\\)\n\nStudents offering neither \\(= 46 - 41 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "17 students offer Agric Science and 26 students offer Civic Education. If 5 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "22",
+      "17",
+      "9",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 17 - 5 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 41 students, 18 offer Mathematics, 24 offer English and 13 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "-1",
+      "12",
+      "14",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(M \\cup E) = 18 + 24 - 13 = 29\\)\n\nStudents offering neither \\(= 41 - 29 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "36 students offer Biology and 39 students offer Geography. If 14 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "3",
+      "36",
+      "50",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 36 - 14 = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "36 students offer Agric Science and 26 students offer Civic Education. If 11 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "36",
+      "10",
+      "47",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 36 - 11 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, 19 offer Mathematics, 21 offer English and 13 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "11",
+      "13",
+      "-2",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(M \\cup E) = 19 + 21 - 13 = 27\\)\n\nStudents offering neither \\(= 38 - 27 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 6, 8, 9\\}\\) and \\(B = \\{2, 3, 4, 8\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{2, 3, 4, 6, 8, 9\\}\\)",
+      "\\(\\{2, 3, 4, 8\\}\\)",
+      "\\(\\{2, 6, 8, 9\\}\\)",
+      "\\(\\{2, 8\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{2, 3, 4, 6, 8, 9\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 36 students, every student offers at least one of Commerce and Accounting. If 27 offer Commerce and 24 offer Accounting, how many offer both subjects?",
+    "options": [
+      "15",
+      "9",
+      "12",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 36\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 27 + 24 - 36 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "25 students offer Biology and 37 students offer Geography. If 14 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "39",
+      "11",
+      "12",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 25 - 14 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 51 students, every student offers at least one of Agric Science and Civic Education. If 37 offer Agric Science and 29 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "17",
+      "22",
+      "14",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 51\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 37 + 29 - 51 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 26 students, 9 offer Economics, 14 offer Government and 4 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "9",
+      "11",
+      "7",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(E \\cup G) = 9 + 14 - 4 = 19\\)\n\nStudents offering neither \\(= 26 - 19 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 30\\), \\(n(B) = 23\\) and \\(n(A \\cap B) = 18\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "53",
+      "35",
+      "17",
+      "71"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 30 + 23 - 18\\)\n\n\\(= 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{4, 5, 6, 8, 9\\}\\) and \\(B = \\{4, 5, 6, 7, 10\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{4, 5, 6\\}\\)",
+      "\\(\\{4, 5, 6, 8, 9\\}\\)",
+      "\\(\\{4, 5, 6, 7, 8, 9, 10\\}\\)",
+      "\\(\\{4, 5, 6, 7, 10\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{4, 5, 6, 7, 8, 9, 10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 53 students, 31 offer Commerce, 27 offer Accounting and 8 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "-5",
+      "3",
+      "5",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(C \\cup A) = 31 + 27 - 8 = 50\\)\n\nStudents offering neither \\(= 53 - 50 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 63 students, 37 offer Literature, 30 offer History and 14 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "24",
+      "10",
+      "-4",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(L \\cup H) = 37 + 30 - 14 = 53\\)\n\nStudents offering neither \\(= 63 - 53 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, 21 offer Biology, 20 offer Geography and 13 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "23",
+      "-3",
+      "10",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(B \\cup G) = 21 + 20 - 13 = 28\\)\n\nStudents offering neither \\(= 38 - 28 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 29\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 10\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 29 + 21 - 10\\)\n\n\\(= 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 74\\) and \\(n(A) = 34\\), find \\(n(A')\\).",
+    "options": [
+      "108",
+      "6",
+      "34",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 74 - 34 = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 48 students, every student offers at least one of Physics and Chemistry. If 35 offer Physics and 29 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "16",
+      "13",
+      "18",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 48\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 35 + 29 - 48 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{4, 6, 10, 11, 12\\}\\) and \\(B = \\{3, 7, 8, 9, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{4, 6, 10, 11, 12\\}\\)",
+      "\\(\\{12\\}\\)",
+      "\\(\\{3, 7, 8, 9, 12\\}\\)",
+      "\\(\\{3, 4, 6, 7, 8, 9, 10, 11, 12\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 43 students, 16 offer Biology, 30 offer Geography and 11 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "-3",
+      "19",
+      "10",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(B \\cup G) = 16 + 30 - 11 = 35\\)\n\nStudents offering neither \\(= 43 - 35 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 44 students, every student offers at least one of Mathematics and English. If 25 offer Mathematics and 24 offer English, how many offer both subjects?",
+    "options": [
+      "7",
+      "19",
+      "5",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 44\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 25 + 24 - 44 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 49\\) and \\(n(A) = 30\\), find \\(n(A')\\).",
+    "options": [
+      "30",
+      "79",
+      "19",
+      "-11"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 49 - 30 = 19\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 4, 6, 10\\}\\) and \\(B = \\{2, 7, 9, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{2, 7, 9, 12\\}\\)",
+      "\\(\\{2, 4, 6, 7, 9, 10, 12\\}\\)",
+      "\\(\\{2\\}\\)",
+      "\\(\\{2, 4, 6, 10\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{2, 4, 6, 7, 9, 10, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many subsets can be formed from a set containing 5 elements?",
+    "options": [
+      "10",
+      "25",
+      "32",
+      "31"
+    ],
+    "correctIndex": 2,
+    "explanation": "A set with \\(n\\) elements has \\(2^{n}\\) subsets.\n\n\\(2^{5} = 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 53\\) and \\(n(A) = 17\\), find \\(n(A')\\).",
+    "options": [
+      "17",
+      "19",
+      "70",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 53 - 17 = 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 32 students, every student offers at least one of Economics and Government. If 19 offer Economics and 24 offer Government, how many offer both subjects?",
+    "options": [
+      "14",
+      "11",
+      "13",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 32\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 19 + 24 - 32 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 30 students, 14 offer Biology, 23 offer Geography and 9 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "11",
+      "4",
+      "-7",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(B \\cup G) = 14 + 23 - 9 = 28\\)\n\nStudents offering neither \\(= 30 - 28 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 22\\), \\(n(B) = 41\\) and \\(n(A \\cap B) = 6\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "57",
+      "63",
+      "69",
+      "51"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 22 + 41 - 6\\)\n\n\\(= 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 5, 7, 8, 11\\}\\) and \\(B = \\{3, 5, 6, 10, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{3, 5, 6, 10, 12\\}\\)",
+      "\\(\\{2, 3, 5, 6, 7, 8, 10, 11, 12\\}\\)",
+      "\\(\\{5\\}\\)",
+      "\\(\\{2, 5, 7, 8, 11\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{2, 3, 5, 6, 7, 8, 10, 11, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 35 students, every student offers at least one of Biology and Geography. If 21 offer Biology and 26 offer Geography, how many offer both subjects?",
+    "options": [
+      "15",
+      "14",
+      "12",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 35\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 21 + 26 - 35 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 26 students, every student offers at least one of Commerce and Accounting. If 19 offer Commerce and 15 offer Accounting, how many offer both subjects?",
+    "options": [
+      "10",
+      "11",
+      "8",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 26\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 19 + 15 - 26 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 48 students, 37 offer Physics, 19 offer Chemistry and 14 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "8",
+      "6",
+      "-8",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(P \\cup C) = 37 + 19 - 14 = 42\\)\n\nStudents offering neither \\(= 48 - 42 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 67 students, 35 offer Literature, 40 offer History and 15 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "7",
+      "9",
+      "22",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(L \\cup H) = 35 + 40 - 15 = 60\\)\n\nStudents offering neither \\(= 67 - 60 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 52 students, 31 offer Literature, 26 offer History and 7 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "4",
+      "9",
+      "2",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(L \\cup H) = 31 + 26 - 7 = 50\\)\n\nStudents offering neither \\(= 52 - 50 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 54 students, every student offers at least one of Further Mathematics and Technical Drawing. If 37 offer Further Mathematics and 35 offer Technical Drawing, how many offer both subjects?",
+    "options": [
+      "19",
+      "17",
+      "20",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 54\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 37 + 35 - 54 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 82\\) and \\(n(A) = 27\\), find \\(n(A')\\).",
+    "options": [
+      "55",
+      "28",
+      "109",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 82 - 27 = 55\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 41 students, every student offers at least one of Economics and Government. If 31 offer Economics and 19 offer Government, how many offer both subjects?",
+    "options": [
+      "22",
+      "10",
+      "11",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 41\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 31 + 19 - 41 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 36 students, 19 offer Agric Science, 9 offer Civic Education and 4 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "12",
+      "16",
+      "8",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup C) = 19 + 9 - 4 = 24\\)\n\nStudents offering neither \\(= 36 - 24 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 37 students, every student offers at least one of Commerce and Accounting. If 28 offer Commerce and 26 offer Accounting, how many offer both subjects?",
+    "options": [
+      "17",
+      "19",
+      "11",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 37\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 28 + 26 - 37 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 72\\) and \\(n(A) = 27\\), find \\(n(A')\\).",
+    "options": [
+      "99",
+      "27",
+      "18",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 72 - 27 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, 33 offer Literature, 17 offer History and 11 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "22",
+      "0",
+      "11",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(L \\cup H) = 33 + 17 - 11 = 39\\)\n\nStudents offering neither \\(= 50 - 39 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 41 students, every student offers at least one of Physics and Chemistry. If 26 offer Physics and 25 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "10",
+      "16",
+      "15",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 41\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 26 + 25 - 41 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 39 students, 19 offer Biology, 30 offer Geography and 12 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "2",
+      "14",
+      "-10",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(B \\cup G) = 19 + 30 - 12 = 37\\)\n\nStudents offering neither \\(= 39 - 37 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 41\\) and \\(n(A) = 24\\), find \\(n(A')\\).",
+    "options": [
+      "-7",
+      "65",
+      "24",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 41 - 24 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 53 students, 30 offer Mathematics, 22 offer English and 10 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "1",
+      "11",
+      "21",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(M \\cup E) = 30 + 22 - 10 = 42\\)\n\nStudents offering neither \\(= 53 - 42 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 31 students, every student offers at least one of Literature and History. If 22 offer Literature and 25 offer History, how many offer both subjects?",
+    "options": [
+      "18",
+      "9",
+      "6",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 31\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 22 + 25 - 31 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 43 students, every student offers at least one of Agric Science and Civic Education. If 28 offer Agric Science and 29 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "17",
+      "15",
+      "16",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 43\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 28 + 29 - 43 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How many subsets can be formed from a set containing 8 elements?",
+    "options": [
+      "255",
+      "64",
+      "256",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "A set with \\(n\\) elements has \\(2^{n}\\) subsets.\n\n\\(2^{8} = 256\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 34\\), \\(n(B) = 39\\) and \\(n(A \\cap B) = 17\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "90",
+      "56",
+      "73",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 34 + 39 - 17\\)\n\n\\(= 56\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 39 students, 13 offer Biology, 25 offer Geography and 4 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "7",
+      "5",
+      "9",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(B \\cup G) = 13 + 25 - 4 = 34\\)\n\nStudents offering neither \\(= 39 - 34 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 36 students, every student offers at least one of Agric Science and Civic Education. If 18 offer Agric Science and 26 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "10",
+      "8",
+      "11",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 36\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 18 + 26 - 36 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 10, 11\\}\\) and \\(B = \\{2, 5, 8, 10, 11\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 4, 10, 11\\}\\)",
+      "\\(\\{2, 5, 8, 10, 11\\}\\)",
+      "\\(\\{1, 2, 4, 5, 8, 10, 11\\}\\)",
+      "\\(\\{10, 11\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 2, 4, 5, 8, 10, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 90\\) and \\(n(A) = 26\\), find \\(n(A')\\).",
+    "options": [
+      "116",
+      "38",
+      "64",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 90 - 26 = 64\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 50\\) and \\(n(A) = 26\\), find \\(n(A')\\).",
+    "options": [
+      "-2",
+      "26",
+      "76",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 50 - 26 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 12\\), \\(n(B) = 12\\) and \\(n(A \\cap B) = 7\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "24",
+      "17",
+      "31",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 12 + 12 - 7\\)\n\n\\(= 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 5, 9, 10\\}\\) and \\(B = \\{4, 6, 7, 9\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 4, 5, 6, 7, 9, 10\\}\\)",
+      "\\(\\{4, 6, 7, 9\\}\\)",
+      "\\(\\{9\\}\\)",
+      "\\(\\{2, 5, 9, 10\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{9\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 82\\) and \\(n(A) = 24\\), find \\(n(A')\\).",
+    "options": [
+      "106",
+      "24",
+      "58",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 82 - 24 = 58\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 32\\), \\(n(B) = 16\\) and \\(n(A \\cap B) = 7\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "34",
+      "55",
+      "41",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 32 + 16 - 7\\)\n\n\\(= 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 39 students, every student offers at least one of Literature and History. If 31 offer Literature and 23 offer History, how many offer both subjects?",
+    "options": [
+      "8",
+      "16",
+      "15",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 39\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 31 + 23 - 39 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 33 students, 23 offer Commerce, 11 offer Accounting and 6 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "-1",
+      "5",
+      "11",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(C \\cup A) = 23 + 11 - 6 = 28\\)\n\nStudents offering neither \\(= 33 - 28 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "35 students offer Economics and 29 students offer Government. If 15 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "20",
+      "6",
+      "35",
+      "50"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 35 - 15 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 49 students, every student offers at least one of Physics and Chemistry. If 27 offer Physics and 27 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "22",
+      "7",
+      "5",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 49\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 27 + 27 - 49 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 5, 6, 7, 9\\}\\) and \\(B = \\{1, 5, 6, 7, 9\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 5, 6, 7, 9\\}\\)",
+      "\\(\\{1, 2, 5, 6, 7, 9\\}\\)",
+      "\\(\\{2, 5, 6, 7, 9\\}\\)",
+      "\\(\\{5, 6, 7, 9\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{5, 6, 7, 9\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "38 students offer Physics and 38 students offer Chemistry. If 15 students offer both subjects, how many offer Physics only?",
+    "options": [
+      "53",
+      "38",
+      "0",
+      "23"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Physics only \\(= n(P) - n(\\text{both})\\)\n\n\\(= 38 - 15 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 42 students, every student offers at least one of Commerce and Accounting. If 35 offer Commerce and 20 offer Accounting, how many offer both subjects?",
+    "options": [
+      "22",
+      "7",
+      "13",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 42\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 35 + 20 - 42 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "21 students offer Physics and 26 students offer Chemistry. If 8 students offer both subjects, how many offer Physics only?",
+    "options": [
+      "21",
+      "29",
+      "5",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Physics only \\(= n(P) - n(\\text{both})\\)\n\n\\(= 21 - 8 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 6, 10, 12\\}\\) and \\(B = \\{3, 5, 6, 9, 10\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 4, 6, 10, 12\\}\\)",
+      "\\(\\{6, 10\\}\\)",
+      "\\(\\{1, 3, 4, 5, 6, 9, 10, 12\\}\\)",
+      "\\(\\{3, 5, 6, 9, 10\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{6, 10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "27 students offer Further Mathematics and 27 students offer Technical Drawing. If 5 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "22",
+      "0",
+      "27",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 27 - 5 = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, 31 offer Biology, 13 offer Geography and 6 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "6",
+      "18",
+      "14",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(B \\cup G) = 31 + 13 - 6 = 38\\)\n\nStudents offering neither \\(= 50 - 38 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 60 students, 34 offer Physics, 35 offer Chemistry and 15 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "6",
+      "-9",
+      "21",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(P \\cup C) = 34 + 35 - 15 = 54\\)\n\nStudents offering neither \\(= 60 - 54 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 19\\), \\(n(B) = 43\\) and \\(n(A \\cap B) = 13\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "49",
+      "75",
+      "36",
+      "62"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 19 + 43 - 13\\)\n\n\\(= 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 36\\), \\(n(B) = 25\\) and \\(n(A \\cap B) = 15\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "31",
+      "61",
+      "76",
+      "46"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 36 + 25 - 15\\)\n\n\\(= 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "25 students offer Agric Science and 19 students offer Civic Education. If 7 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "25",
+      "6",
+      "18",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 25 - 7 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 27\\), \\(n(B) = 27\\) and \\(n(A \\cap B) = 2\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "56",
+      "50",
+      "54",
+      "52"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 27 + 27 - 2\\)\n\n\\(= 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 28 students, 18 offer Mathematics, 16 offer English and 10 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "4",
+      "6",
+      "-6",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(M \\cup E) = 18 + 16 - 10 = 24\\)\n\nStudents offering neither \\(= 28 - 24 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 58 students, every student offers at least one of Further Mathematics and Technical Drawing. If 40 offer Further Mathematics and 36 offer Technical Drawing, how many offer both subjects?",
+    "options": [
+      "22",
+      "21",
+      "20",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 58\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 40 + 36 - 58 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 33 students, 26 offer Physics, 17 offer Chemistry and 12 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "4",
+      "14",
+      "-10",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(P \\cup C) = 26 + 17 - 12 = 31\\)\n\nStudents offering neither \\(= 33 - 31 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 39 students, every student offers at least one of Commerce and Accounting. If 25 offer Commerce and 28 offer Accounting, how many offer both subjects?",
+    "options": [
+      "17",
+      "11",
+      "16",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 39\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 25 + 28 - 39 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "19 students offer Further Mathematics and 34 students offer Technical Drawing. If 11 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "8",
+      "19",
+      "15",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 19 - 11 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 5, 9, 11\\}\\) and \\(B = \\{2, 3, 5, 6\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 2, 3, 4, 5, 6, 9, 11\\}\\)",
+      "\\(\\{1, 4, 5, 9, 11\\}\\)",
+      "\\(\\{5\\}\\)",
+      "\\(\\{2, 3, 5, 6\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 2, 3, 4, 5, 6, 9, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "17 students offer Agric Science and 17 students offer Civic Education. If 7 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "10",
+      "24",
+      "0",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 17 - 7 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 3, 6, 8, 10\\}\\) and \\(B = \\{3, 6, 8, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 3, 6, 8, 10\\}\\)",
+      "\\(\\{1, 3, 6, 8, 10, 11\\}\\)",
+      "\\(\\{3, 6, 8, 11\\}\\)",
+      "\\(\\{3, 6, 8\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{3, 6, 8\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 40\\), \\(n(B) = 31\\) and \\(n(A \\cap B) = 27\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "98",
+      "71",
+      "44",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 40 + 31 - 27\\)\n\n\\(= 44\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 41\\) and \\(n(A) = 15\\), find \\(n(A')\\).",
+    "options": [
+      "56",
+      "26",
+      "11",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 41 - 15 = 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 72\\) and \\(n(A) = 25\\), find \\(n(A')\\).",
+    "options": [
+      "97",
+      "47",
+      "22",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 72 - 25 = 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 17\\), \\(n(B) = 27\\) and \\(n(A \\cap B) = 14\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "58",
+      "44",
+      "16",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 17 + 27 - 14\\)\n\n\\(= 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 3, 4, 6, 7\\}\\) and \\(B = \\{4, 8, 10, 11\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{4, 8, 10, 11\\}\\)",
+      "\\(\\{4\\}\\)",
+      "\\(\\{1, 3, 4, 6, 7, 8, 10, 11\\}\\)",
+      "\\(\\{1, 3, 4, 6, 7\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 3, 4, 6, 7, 8, 10, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 39\\), \\(n(B) = 35\\) and \\(n(A \\cap B) = 17\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "57",
+      "91",
+      "40",
+      "74"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 39 + 35 - 17\\)\n\n\\(= 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 34 students, every student offers at least one of Commerce and Accounting. If 20 offer Commerce and 27 offer Accounting, how many offer both subjects?",
+    "options": [
+      "14",
+      "15",
+      "13",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 34\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 20 + 27 - 34 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 43 students, every student offers at least one of Economics and Government. If 28 offer Economics and 30 offer Government, how many offer both subjects?",
+    "options": [
+      "15",
+      "18",
+      "13",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 43\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 28 + 30 - 43 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 5, 6, 7, 8\\}\\) and \\(B = \\{7, 8, 11, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{7, 8\\}\\)",
+      "\\(\\{7, 8, 11, 12\\}\\)",
+      "\\(\\{3, 5, 6, 7, 8, 11, 12\\}\\)",
+      "\\(\\{3, 5, 6, 7, 8\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{7, 8\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, 20 offer Mathematics, 21 offer English and 12 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "23",
+      "-1",
+      "13",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(M \\cup E) = 20 + 21 - 12 = 29\\)\n\nStudents offering neither \\(= 40 - 29 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 73\\) and \\(n(A) = 33\\), find \\(n(A')\\).",
+    "options": [
+      "40",
+      "7",
+      "106",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 73 - 33 = 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, every student offers at least one of Physics and Chemistry. If 23 offer Physics and 31 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "7",
+      "18",
+      "16",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 38\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 23 + 31 - 38 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "23 students offer Physics and 21 students offer Chemistry. If 5 students offer both subjects, how many offer Physics only?",
+    "options": [
+      "28",
+      "2",
+      "23",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Physics only \\(= n(P) - n(\\text{both})\\)\n\n\\(= 23 - 5 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{6, 8, 9, 12\\}\\) and \\(B = \\{4, 6, 7, 9\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{4, 6, 7, 8, 9, 12\\}\\)",
+      "\\(\\{6, 9\\}\\)",
+      "\\(\\{6, 8, 9, 12\\}\\)",
+      "\\(\\{4, 6, 7, 9\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{4, 6, 7, 8, 9, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "17 students offer Economics and 33 students offer Government. If 8 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "9",
+      "25",
+      "16",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 17 - 8 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 3, 4, 12\\}\\) and \\(B = \\{2, 3, 8, 10, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 3, 8, 10, 12\\}\\)",
+      "\\(\\{1, 3, 4, 12\\}\\)",
+      "\\(\\{1, 2, 3, 4, 8, 10, 12\\}\\)",
+      "\\(\\{3, 12\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{3, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 35\\), \\(n(B) = 10\\) and \\(n(A \\cap B) = 9\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "36",
+      "45",
+      "54",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 35 + 10 - 9\\)\n\n\\(= 36\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 44\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 24\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "72",
+      "24",
+      "48",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 44 + 28 - 24\\)\n\n\\(= 48\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "20 students offer Literature and 26 students offer History. If 10 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "6",
+      "20",
+      "10",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 20 - 10 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, every student offers at least one of Physics and Chemistry. If 22 offer Physics and 27 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "14",
+      "11",
+      "13",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 38\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 22 + 27 - 38 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "20 students offer Economics and 24 students offer Government. If 6 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "20",
+      "4",
+      "26",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 20 - 6 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "25 students offer Literature and 28 students offer History. If 11 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "36",
+      "14",
+      "3",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 25 - 11 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 5, 8, 10\\}\\) and \\(B = \\{3, 8, 9, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 3, 4, 5, 8, 9, 10, 11\\}\\)",
+      "\\(\\{3, 8, 9, 11\\}\\)",
+      "\\(\\{8\\}\\)",
+      "\\(\\{1, 4, 5, 8, 10\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{8\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 6, 10, 11\\}\\) and \\(B = \\{2, 8, 10, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{3, 6, 10, 11\\}\\)",
+      "\\(\\{10\\}\\)",
+      "\\(\\{2, 3, 6, 8, 10, 11, 12\\}\\)",
+      "\\(\\{2, 8, 10, 12\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 36\\), \\(n(B) = 19\\) and \\(n(A \\cap B) = 3\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "52",
+      "58",
+      "49",
+      "55"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 36 + 19 - 3\\)\n\n\\(= 52\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 71 students, 36 offer Biology, 39 offer Geography and 14 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "24",
+      "-4",
+      "10",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(B \\cup G) = 36 + 39 - 14 = 61\\)\n\nStudents offering neither \\(= 71 - 61 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 3, 6, 7, 8\\}\\) and \\(B = \\{5, 6, 10, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 3, 6, 7, 8\\}\\)",
+      "\\(\\{1, 3, 5, 6, 7, 8, 10, 12\\}\\)",
+      "\\(\\{5, 6, 10, 12\\}\\)",
+      "\\(\\{6\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 3, 5, 6, 7, 8, 10, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "24 students offer Literature and 26 students offer History. If 7 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "31",
+      "2",
+      "24",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 24 - 7 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 2, 8, 10, 12\\}\\) and \\(B = \\{2, 3, 8, 9, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 2, 3, 8, 9, 10, 11, 12\\}\\)",
+      "\\(\\{2, 8\\}\\)",
+      "\\(\\{1, 2, 8, 10, 12\\}\\)",
+      "\\(\\{2, 3, 8, 9, 11\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{2, 8\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 49 students, every student offers at least one of Physics and Chemistry. If 32 offer Physics and 35 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "14",
+      "17",
+      "18",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 49\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 32 + 35 - 49 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 31\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 30\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "43",
+      "73",
+      "13",
+      "103"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 31 + 42 - 30\\)\n\n\\(= 43\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 8, 12\\}\\) and \\(B = \\{4, 5, 11, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 4, 8, 12\\}\\)",
+      "\\(\\{4, 5, 11, 12\\}\\)",
+      "\\(\\{4, 12\\}\\)",
+      "\\(\\{1, 4, 5, 8, 11, 12\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 4, 5, 8, 11, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "24 students offer Biology and 30 students offer Geography. If 15 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "24",
+      "39",
+      "6",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 24 - 15 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 44\\) and \\(n(A) = 30\\), find \\(n(A')\\).",
+    "options": [
+      "74",
+      "14",
+      "30",
+      "-16"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 44 - 30 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 78\\) and \\(n(A) = 21\\), find \\(n(A')\\).",
+    "options": [
+      "99",
+      "57",
+      "21",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 78 - 21 = 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 52 students, every student offers at least one of Physics and Chemistry. If 34 offer Physics and 32 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "18",
+      "20",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 52\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 34 + 32 - 52 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 13\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 11\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "29",
+      "51",
+      "62",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 13 + 38 - 11\\)\n\n\\(= 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 24\\), \\(n(B) = 19\\) and \\(n(A \\cap B) = 15\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "43",
+      "13",
+      "28",
+      "58"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 24 + 19 - 15\\)\n\n\\(= 28\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 76\\) and \\(n(A) = 31\\), find \\(n(A')\\).",
+    "options": [
+      "107",
+      "45",
+      "14",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 76 - 31 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 3, 4, 11\\}\\) and \\(B = \\{3, 6, 7, 8, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 3, 4, 6, 7, 8, 11\\}\\)",
+      "\\(\\{2, 3, 4, 11\\}\\)",
+      "\\(\\{3, 6, 7, 8, 11\\}\\)",
+      "\\(\\{3, 11\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{3, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "15 students offer Further Mathematics and 19 students offer Technical Drawing. If 7 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "4",
+      "8",
+      "15",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 15 - 7 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, every student offers at least one of Physics and Chemistry. If 27 offer Physics and 17 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "8",
+      "21",
+      "11",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 38\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 27 + 17 - 38 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 43 students, every student offers at least one of Biology and Geography. If 24 offer Biology and 26 offer Geography, how many offer both subjects?",
+    "options": [
+      "19",
+      "17",
+      "9",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 43\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 24 + 26 - 43 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 16\\), \\(n(B) = 34\\) and \\(n(A \\cap B) = 12\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "62",
+      "50",
+      "38",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 16 + 34 - 12\\)\n\n\\(= 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 61\\) and \\(n(A) = 34\\), find \\(n(A')\\).",
+    "options": [
+      "27",
+      "-7",
+      "34",
+      "95"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 61 - 34 = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 37 students, every student offers at least one of Biology and Geography. If 17 offer Biology and 28 offer Geography, how many offer both subjects?",
+    "options": [
+      "10",
+      "20",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 37\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 17 + 28 - 37 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 36 students, every student offers at least one of Agric Science and Civic Education. If 29 offer Agric Science and 14 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "22",
+      "9",
+      "10",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 36\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 29 + 14 - 36 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "32 students offer Agric Science and 27 students offer Civic Education. If 7 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "39",
+      "32",
+      "25",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 32 - 7 = 25\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, every student offers at least one of Literature and History. If 32 offer Literature and 32 offer History, how many offer both subjects?",
+    "options": [
+      "17",
+      "16",
+      "18",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 50\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 32 + 32 - 50 = 14\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 43 students, 18 offer Economics, 31 offer Government and 9 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "12",
+      "5",
+      "3",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(E \\cup G) = 18 + 31 - 9 = 40\\)\n\nStudents offering neither \\(= 43 - 40 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 47 students, 28 offer Literature, 19 offer History and 5 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "7",
+      "5",
+      "10",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(L \\cup H) = 28 + 19 - 5 = 42\\)\n\nStudents offering neither \\(= 47 - 42 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 14\\), \\(n(B) = 39\\) and \\(n(A \\cap B) = 13\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "27",
+      "66",
+      "53",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 14 + 39 - 13\\)\n\n\\(= 40\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 4, 6, 7\\}\\) and \\(B = \\{2, 4, 5, 8, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{3, 4, 6, 7\\}\\)",
+      "\\(\\{2, 4, 5, 8, 11\\}\\)",
+      "\\(\\{2, 3, 4, 5, 6, 7, 8, 11\\}\\)",
+      "\\(\\{4\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{4\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 35 students, every student offers at least one of Literature and History. If 24 offer Literature and 28 offer History, how many offer both subjects?",
+    "options": [
+      "19",
+      "7",
+      "11",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 35\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 24 + 28 - 35 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 3, 6, 8, 9\\}\\) and \\(B = \\{2, 5, 7, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 3, 6, 8, 9\\}\\)",
+      "\\(\\{2\\}\\)",
+      "\\(\\{2, 3, 5, 6, 7, 8, 9, 11\\}\\)",
+      "\\(\\{2, 5, 7, 11\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{2\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 20\\), \\(n(B) = 32\\) and \\(n(A \\cap B) = 2\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "54",
+      "48",
+      "50",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 20 + 32 - 2\\)\n\n\\(= 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 53 students, 36 offer Mathematics, 18 offer English and 13 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "25",
+      "14",
+      "-1",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(M \\cup E) = 36 + 18 - 13 = 41\\)\n\nStudents offering neither \\(= 53 - 41 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 48\\) and \\(n(A) = 24\\), find \\(n(A')\\).",
+    "options": [
+      "0",
+      "24",
+      "29",
+      "72"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 48 - 24 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "26 students offer Agric Science and 34 students offer Civic Education. If 9 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "35",
+      "17",
+      "8",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 26 - 9 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 47 students, every student offers at least one of Physics and Chemistry. If 28 offer Physics and 30 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "19",
+      "17",
+      "11",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 47\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 28 + 30 - 47 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 30\\), \\(n(B) = 10\\) and \\(n(A \\cap B) = 7\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "47",
+      "26",
+      "40",
+      "33"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 30 + 10 - 7\\)\n\n\\(= 33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 38 students, every student offers at least one of Biology and Geography. If 31 offer Biology and 16 offer Geography, how many offer both subjects?",
+    "options": [
+      "9",
+      "11",
+      "22",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 38\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 31 + 16 - 38 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 5, 7, 12\\}\\) and \\(B = \\{1, 2, 3, 4, 5\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 2, 3, 4, 5\\}\\)",
+      "\\(\\{1, 2, 3, 4, 5, 7, 12\\}\\)",
+      "\\(\\{1, 4, 5, 7, 12\\}\\)",
+      "\\(\\{1, 4, 5\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 2, 3, 4, 5, 7, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 21\\), \\(n(B) = 40\\) and \\(n(A \\cap B) = 20\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "81",
+      "41",
+      "61",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 21 + 40 - 20\\)\n\n\\(= 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 34 students, every student offers at least one of Biology and Geography. If 15 offer Biology and 28 offer Geography, how many offer both subjects?",
+    "options": [
+      "6",
+      "11",
+      "19",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 34\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 15 + 28 - 34 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 24\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 10\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "45",
+      "55",
+      "35",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 24 + 21 - 10\\)\n\n\\(= 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 36\\), \\(n(B) = 42\\) and \\(n(A \\cap B) = 16\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "78",
+      "62",
+      "94",
+      "46"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 36 + 42 - 16\\)\n\n\\(= 62\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 21\\), \\(n(B) = 30\\) and \\(n(A \\cap B) = 16\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "51",
+      "35",
+      "19",
+      "67"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 21 + 30 - 16\\)\n\n\\(= 35\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 57 students, every student offers at least one of Literature and History. If 38 offer Literature and 36 offer History, how many offer both subjects?",
+    "options": [
+      "20",
+      "19",
+      "17",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 57\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 38 + 36 - 57 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 10\\), \\(n(B) = 31\\) and \\(n(A \\cap B) = 4\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "45",
+      "37",
+      "33",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 10 + 31 - 4\\)\n\n\\(= 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 53 students, every student offers at least one of Literature and History. If 35 offer Literature and 31 offer History, how many offer both subjects?",
+    "options": [
+      "22",
+      "13",
+      "18",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 53\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 35 + 31 - 53 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "23 students offer Commerce and 31 students offer Accounting. If 8 students offer both subjects, how many offer Commerce only?",
+    "options": [
+      "31",
+      "23",
+      "15",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Commerce only \\(= n(C) - n(\\text{both})\\)\n\n\\(= 23 - 8 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, every student offers at least one of Literature and History. If 26 offer Literature and 30 offer History, how many offer both subjects?",
+    "options": [
+      "14",
+      "10",
+      "18",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 40\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 26 + 30 - 40 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 29 students, every student offers at least one of Literature and History. If 22 offer Literature and 19 offer History, how many offer both subjects?",
+    "options": [
+      "10",
+      "12",
+      "7",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 29\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 22 + 19 - 29 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "21 students offer Mathematics and 19 students offer English. If 5 students offer both subjects, how many offer Mathematics only?",
+    "options": [
+      "2",
+      "26",
+      "21",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Mathematics only \\(= n(M) - n(\\text{both})\\)\n\n\\(= 21 - 5 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 25\\), \\(n(B) = 28\\) and \\(n(A \\cap B) = 14\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "25",
+      "53",
+      "67",
+      "39"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 25 + 28 - 14\\)\n\n\\(= 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 34\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 5\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "50",
+      "45",
+      "55",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 34 + 21 - 5\\)\n\n\\(= 50\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 44 students, every student offers at least one of Biology and Geography. If 33 offer Biology and 28 offer Geography, how many offer both subjects?",
+    "options": [
+      "19",
+      "17",
+      "11",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 44\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 33 + 28 - 44 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 70\\) and \\(n(A) = 11\\), find \\(n(A')\\).",
+    "options": [
+      "81",
+      "11",
+      "48",
+      "59"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 70 - 11 = 59\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "18 students offer Economics and 26 students offer Government. If 9 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "8",
+      "27",
+      "18",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 18 - 9 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 40\\), \\(n(B) = 12\\) and \\(n(A \\cap B) = 11\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "63",
+      "41",
+      "30",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 40 + 12 - 11\\)\n\n\\(= 41\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "27 students offer Further Mathematics and 29 students offer Technical Drawing. If 11 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "38",
+      "27",
+      "2",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 27 - 11 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 78\\) and \\(n(A) = 20\\), find \\(n(A')\\).",
+    "options": [
+      "98",
+      "58",
+      "38",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 78 - 20 = 58\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 42 students, 25 offer Physics, 20 offer Chemistry and 5 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "-3",
+      "2",
+      "4",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(P \\cup C) = 25 + 20 - 5 = 40\\)\n\nStudents offering neither \\(= 42 - 40 = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 6, 9, 10, 11\\}\\) and \\(B = \\{2, 6, 7, 8\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 6, 7, 8\\}\\)",
+      "\\(\\{1, 6, 9, 10, 11\\}\\)",
+      "\\(\\{6\\}\\)",
+      "\\(\\{1, 2, 6, 7, 8, 9, 10, 11\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{6\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 44\\), \\(n(B) = 39\\) and \\(n(A \\cap B) = 26\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "83",
+      "57",
+      "109",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 44 + 39 - 26\\)\n\n\\(= 57\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "28 students offer Agric Science and 23 students offer Civic Education. If 13 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "15",
+      "5",
+      "28",
+      "41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 28 - 13 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 55 students, every student offers at least one of Biology and Geography. If 37 offer Biology and 35 offer Geography, how many offer both subjects?",
+    "options": [
+      "18",
+      "17",
+      "19",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 55\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 37 + 35 - 55 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 88\\) and \\(n(A) = 16\\), find \\(n(A')\\).",
+    "options": [
+      "16",
+      "72",
+      "104",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 88 - 16 = 72\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "34 students offer Mathematics and 29 students offer English. If 13 students offer both subjects, how many offer Mathematics only?",
+    "options": [
+      "34",
+      "47",
+      "21",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Mathematics only \\(= n(M) - n(\\text{both})\\)\n\n\\(= 34 - 13 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 50 students, every student offers at least one of Further Mathematics and Technical Drawing. If 28 offer Further Mathematics and 30 offer Technical Drawing, how many offer both subjects?",
+    "options": [
+      "22",
+      "8",
+      "20",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 50\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 28 + 30 - 50 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 54 students, every student offers at least one of Economics and Government. If 38 offer Economics and 33 offer Government, how many offer both subjects?",
+    "options": [
+      "19",
+      "21",
+      "16",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 54\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 38 + 33 - 54 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "36 students offer Mathematics and 23 students offer English. If 15 students offer both subjects, how many offer Mathematics only?",
+    "options": [
+      "21",
+      "13",
+      "36",
+      "51"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Mathematics only \\(= n(M) - n(\\text{both})\\)\n\n\\(= 36 - 15 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "30 students offer Agric Science and 23 students offer Civic Education. If 14 students offer both subjects, how many offer Agric Science only?",
+    "options": [
+      "30",
+      "44",
+      "16",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Agric Science only \\(= n(A) - n(\\text{both})\\)\n\n\\(= 30 - 14 = 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 67\\) and \\(n(A) = 22\\), find \\(n(A')\\).",
+    "options": [
+      "89",
+      "22",
+      "45",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 67 - 22 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 36 students, every student offers at least one of Agric Science and Civic Education. If 19 offer Agric Science and 29 offer Civic Education, how many offer both subjects?",
+    "options": [
+      "14",
+      "12",
+      "7",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 36\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 19 + 29 - 36 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 22 students, every student offers at least one of Physics and Chemistry. If 15 offer Physics and 15 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "8",
+      "11",
+      "7",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 22\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 15 + 15 - 22 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "20 students offer Economics and 27 students offer Government. If 8 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "20",
+      "7",
+      "12",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 20 - 8 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 53 students, 29 offer Physics, 30 offer Chemistry and 11 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "5",
+      "7",
+      "-6",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(P \\cup C) = 29 + 30 - 11 = 48\\)\n\nStudents offering neither \\(= 53 - 48 = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 25\\), \\(n(B) = 39\\) and \\(n(A \\cap B) = 17\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "64",
+      "47",
+      "81",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 25 + 39 - 17\\)\n\n\\(= 47\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 48 students, every student offers at least one of Mathematics and English. If 29 offer Mathematics and 29 offer English, how many offer both subjects?",
+    "options": [
+      "13",
+      "19",
+      "10",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 48\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 29 + 29 - 48 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 36 students, every student offers at least one of Physics and Chemistry. If 23 offer Physics and 20 offer Chemistry, how many offer both subjects?",
+    "options": [
+      "9",
+      "16",
+      "13",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 36\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 23 + 20 - 36 = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 41\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 20\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "85",
+      "65",
+      "45",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 41 + 24 - 20\\)\n\n\\(= 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 3, 4, 5\\}\\) and \\(B = \\{4, 5, 8, 9, 11\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{2, 3, 4, 5, 8, 9, 11\\}\\)",
+      "\\(\\{4, 5, 8, 9, 11\\}\\)",
+      "\\(\\{2, 3, 4, 5\\}\\)",
+      "\\(\\{4, 5\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{4, 5\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "32 students offer Commerce and 31 students offer Accounting. If 10 students offer both subjects, how many offer Commerce only?",
+    "options": [
+      "42",
+      "32",
+      "1",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Commerce only \\(= n(C) - n(\\text{both})\\)\n\n\\(= 32 - 10 = 22\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 35\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 5\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "61",
+      "51",
+      "46",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 35 + 21 - 5\\)\n\n\\(= 51\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "27 students offer Literature and 23 students offer History. If 9 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "4",
+      "36",
+      "27",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 27 - 9 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 13\\), \\(n(B) = 11\\) and \\(n(A \\cap B) = 8\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "8",
+      "16",
+      "32",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 13 + 11 - 8\\)\n\n\\(= 16\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "19 students offer Biology and 34 students offer Geography. If 11 students offer both subjects, how many offer Biology only?",
+    "options": [
+      "8",
+      "15",
+      "19",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Biology only \\(= n(B) - n(\\text{both})\\)\n\n\\(= 19 - 11 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 79\\) and \\(n(A) = 34\\), find \\(n(A')\\).",
+    "options": [
+      "11",
+      "34",
+      "45",
+      "113"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 79 - 34 = 45\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "23 students offer Economics and 24 students offer Government. If 11 students offer both subjects, how many offer Economics only?",
+    "options": [
+      "23",
+      "34",
+      "1",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Economics only \\(= n(E) - n(\\text{both})\\)\n\n\\(= 23 - 11 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 10\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 8\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "42",
+      "26",
+      "18",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 10 + 24 - 8\\)\n\n\\(= 26\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 49 students, 25 offer Further Mathematics, 30 offer Technical Drawing and 9 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "-6",
+      "3",
+      "12",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(F \\cup T) = 25 + 30 - 9 = 46\\)\n\nStudents offering neither \\(= 49 - 46 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 41\\), \\(n(B) = 22\\) and \\(n(A \\cap B) = 17\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "80",
+      "63",
+      "46",
+      "29"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 41 + 22 - 17\\)\n\n\\(= 46\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 44 students, 30 offer Literature, 12 offer History and 6 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "14",
+      "8",
+      "10",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(L \\cup H) = 30 + 12 - 6 = 36\\)\n\nStudents offering neither \\(= 44 - 36 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "25 students offer Further Mathematics and 26 students offer Technical Drawing. If 8 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "33",
+      "25",
+      "1",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 25 - 8 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{7, 9, 10, 11, 12\\}\\) and \\(B = \\{1, 2, 7, 10\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{7, 9, 10, 11, 12\\}\\)",
+      "\\(\\{7, 10\\}\\)",
+      "\\(\\{1, 2, 7, 10\\}\\)",
+      "\\(\\{1, 2, 7, 9, 10, 11, 12\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{7, 10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 56 students, 31 offer Mathematics, 32 offer English and 10 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "3",
+      "-7",
+      "13",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(M \\cup E) = 31 + 32 - 10 = 53\\)\n\nStudents offering neither \\(= 56 - 53 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 5, 7, 10\\}\\) and \\(B = \\{2, 3, 4, 8, 10\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{2, 10\\}\\)",
+      "\\(\\{2, 5, 7, 10\\}\\)",
+      "\\(\\{2, 3, 4, 8, 10\\}\\)",
+      "\\(\\{2, 3, 4, 5, 7, 8, 10\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{2, 3, 4, 5, 7, 8, 10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 6, 8, 10\\}\\) and \\(B = \\{5, 6, 7, 8, 9\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{5, 6, 7, 8, 9\\}\\)",
+      "\\(\\{1, 4, 6, 8, 10\\}\\)",
+      "\\(\\{1, 4, 5, 6, 7, 8, 9, 10\\}\\)",
+      "\\(\\{6, 8\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 4, 5, 6, 7, 8, 9, 10\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 42\\) and \\(n(A) = 25\\), find \\(n(A')\\).",
+    "options": [
+      "67",
+      "-8",
+      "25",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 42 - 25 = 17\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 23\\), \\(n(B) = 34\\) and \\(n(A \\cap B) = 20\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "37",
+      "77",
+      "57",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 23 + 34 - 20\\)\n\n\\(= 37\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 49 students, every student offers at least one of Economics and Government. If 40 offer Economics and 27 offer Government, how many offer both subjects?",
+    "options": [
+      "20",
+      "9",
+      "18",
+      "22"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 49\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 40 + 27 - 49 = 18\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 24\\), \\(n(B) = 18\\) and \\(n(A \\cap B) = 9\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "42",
+      "33",
+      "24",
+      "51"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 24 + 18 - 9\\)\n\n\\(= 33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 29 students, every student offers at least one of Further Mathematics and Technical Drawing. If 17 offer Further Mathematics and 22 offer Technical Drawing, how many offer both subjects?",
+    "options": [
+      "13",
+      "7",
+      "10",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 29\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 17 + 22 - 29 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 52\\) and \\(n(A) = 25\\), find \\(n(A')\\).",
+    "options": [
+      "2",
+      "77",
+      "27",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 52 - 25 = 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 37 students, every student offers at least one of Biology and Geography. If 15 offer Biology and 30 offer Geography, how many offer both subjects?",
+    "options": [
+      "8",
+      "22",
+      "7",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 37\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 15 + 30 - 37 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 16\\), \\(n(B) = 21\\) and \\(n(A \\cap B) = 10\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "17",
+      "37",
+      "27",
+      "47"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 16 + 21 - 10\\)\n\n\\(= 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "27 students offer Further Mathematics and 24 students offer Technical Drawing. If 14 students offer both subjects, how many offer Further Mathematics only?",
+    "options": [
+      "3",
+      "13",
+      "41",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Students offering Further Mathematics only \\(= n(F) - n(\\text{both})\\)\n\n\\(= 27 - 14 = 13\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 4, 5, 6, 11\\}\\) and \\(B = \\{6, 7, 8, 10, 11\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 4, 5, 6, 11\\}\\)",
+      "\\(\\{6, 7, 8, 10, 11\\}\\)",
+      "\\(\\{6, 11\\}\\)",
+      "\\(\\{1, 4, 5, 6, 7, 8, 10, 11\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 4, 5, 6, 7, 8, 10, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 3, 4, 6\\}\\) and \\(B = \\{3, 4, 5, 9, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 3, 4, 6\\}\\)",
+      "\\(\\{3, 4, 5, 9, 12\\}\\)",
+      "\\(\\{3, 4\\}\\)",
+      "\\(\\{1, 3, 4, 5, 6, 9, 12\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 3, 4, 5, 6, 9, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 60 students, 29 offer Biology, 29 offer Geography and 4 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "8",
+      "2",
+      "10",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(B \\cup G) = 29 + 29 - 4 = 54\\)\n\nStudents offering neither \\(= 60 - 54 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 20\\), \\(n(B) = 12\\) and \\(n(A \\cap B) = 5\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "32",
+      "22",
+      "37",
+      "27"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 20 + 12 - 5\\)\n\n\\(= 27\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 52\\) and \\(n(A) = 31\\), find \\(n(A')\\).",
+    "options": [
+      "-10",
+      "21",
+      "83",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 52 - 31 = 21\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "32 students offer Mathematics and 20 students offer English. If 8 students offer both subjects, how many offer Mathematics only?",
+    "options": [
+      "40",
+      "12",
+      "32",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Mathematics only \\(= n(M) - n(\\text{both})\\)\n\n\\(= 32 - 8 = 24\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 52 students, 30 offer Economics, 22 offer Government and 12 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "14",
+      "24",
+      "12",
+      "0"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(E \\cup G) = 30 + 22 - 12 = 40\\)\n\nStudents offering neither \\(= 52 - 40 = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 84\\) and \\(n(A) = 19\\), find \\(n(A')\\).",
+    "options": [
+      "19",
+      "46",
+      "103",
+      "65"
+    ],
+    "correctIndex": 3,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 84 - 19 = 65\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 41\\) and \\(n(A) = 10\\), find \\(n(A')\\).",
+    "options": [
+      "31",
+      "51",
+      "10",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 41 - 10 = 31\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 49\\) and \\(n(A) = 16\\), find \\(n(A')\\).",
+    "options": [
+      "65",
+      "33",
+      "17",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 49 - 16 = 33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 44\\), \\(n(B) = 40\\) and \\(n(A \\cap B) = 23\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "107",
+      "61",
+      "38",
+      "84"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 44 + 40 - 23\\)\n\n\\(= 61\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 49\\) and \\(n(A) = 10\\), find \\(n(A')\\).",
+    "options": [
+      "10",
+      "39",
+      "29",
+      "59"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 49 - 10 = 39\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 52\\) and \\(n(A) = 22\\), find \\(n(A')\\).",
+    "options": [
+      "74",
+      "30",
+      "22",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 52 - 22 = 30\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 40 students, every student offers at least one of Literature and History. If 26 offer Literature and 20 offer History, how many offer both subjects?",
+    "options": [
+      "14",
+      "20",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 40\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 26 + 20 - 40 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 49\\) and \\(n(A) = 11\\), find \\(n(A')\\).",
+    "options": [
+      "38",
+      "60",
+      "27",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 49 - 11 = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 31\\), \\(n(B) = 38\\) and \\(n(A \\cap B) = 8\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "53",
+      "61",
+      "69",
+      "77"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 31 + 38 - 8\\)\n\n\\(= 61\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 62 students, 33 offer Biology, 30 offer Geography and 11 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "10",
+      "-1",
+      "12",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(B \\cup G) = 33 + 30 - 11 = 52\\)\n\nStudents offering neither \\(= 62 - 52 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 7, 9, 11\\}\\) and \\(B = \\{3, 5, 6, 7, 8\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{3, 5, 6, 7, 8\\}\\)",
+      "\\(\\{2, 3, 5, 6, 7, 8, 9, 11\\}\\)",
+      "\\(\\{2, 7, 9, 11\\}\\)",
+      "\\(\\{7\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{7\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "14 students offer Mathematics and 19 students offer English. If 6 students offer both subjects, how many offer Mathematics only?",
+    "options": [
+      "20",
+      "14",
+      "5",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Students offering Mathematics only \\(= n(M) - n(\\text{both})\\)\n\n\\(= 14 - 6 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 6, 7, 8, 9\\}\\) and \\(B = \\{1, 3, 11, 12\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{1, 3, 6, 7, 8, 9, 11, 12\\}\\)",
+      "\\(\\{1\\}\\)",
+      "\\(\\{1, 3, 11, 12\\}\\)",
+      "\\(\\{1, 6, 7, 8, 9\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{1, 3, 6, 7, 8, 9, 11, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "26 students offer Literature and 26 students offer History. If 6 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "0",
+      "26",
+      "20",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 26 - 6 = 20\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 90\\) and \\(n(A) = 23\\), find \\(n(A')\\).",
+    "options": [
+      "44",
+      "67",
+      "113",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 90 - 23 = 67\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 7, 10, 11\\}\\) and \\(B = \\{6, 9, 11, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{3, 6, 7, 9, 10, 11, 12\\}\\)",
+      "\\(\\{3, 7, 10, 11\\}\\)",
+      "\\(\\{6, 9, 11, 12\\}\\)",
+      "\\(\\{11\\}\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 59\\) and \\(n(A) = 10\\), find \\(n(A')\\).",
+    "options": [
+      "49",
+      "10",
+      "39",
+      "69"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 59 - 10 = 49\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 30\\), \\(n(B) = 17\\) and \\(n(A \\cap B) = 15\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "17",
+      "32",
+      "62",
+      "47"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 30 + 17 - 15\\)\n\n\\(= 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 47 students, every student offers at least one of Mathematics and English. If 29 offer Mathematics and 33 offer English, how many offer both subjects?",
+    "options": [
+      "18",
+      "17",
+      "14",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Since every student offers at least one subject, \\(n(A \\cup B) = 47\\).\n\n\\(n(A \\cap B) = n(A) + n(B) - n(A \\cup B)\\)\n\n\\(= 29 + 33 - 47 = 15\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "34 students offer Literature and 25 students offer History. If 11 students offer both subjects, how many offer Literature only?",
+    "options": [
+      "23",
+      "34",
+      "45",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Students offering Literature only \\(= n(L) - n(\\text{both})\\)\n\n\\(= 34 - 11 = 23\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{2, 4, 5, 7, 10\\}\\) and \\(B = \\{4, 7, 9, 11\\}\\), find \\(A \\cup B\\).",
+    "options": [
+      "\\(\\{2, 4, 5, 7, 9, 10, 11\\}\\)",
+      "\\(\\{2, 4, 5, 7, 10\\}\\)",
+      "\\(\\{4, 7, 9, 11\\}\\)",
+      "\\(\\{4, 7\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cup B\\) contains every element that appears in either set, listed once.\n\nThis gives \\(\\{2, 4, 5, 7, 9, 10, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Given that \\(n(U) = 66\\) and \\(n(A) = 28\\), find \\(n(A')\\).",
+    "options": [
+      "38",
+      "94",
+      "28",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "The complement \\(A'\\) contains everything in the universal set that is not in \\(A\\).\n\n\\(n(A') = n(U) - n(A) = 66 - 28 = 38\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{4, 6, 7, 12\\}\\) and \\(B = \\{3, 6, 7, 8\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{4, 6, 7, 12\\}\\)",
+      "\\(\\{3, 6, 7, 8\\}\\)",
+      "\\(\\{6, 7\\}\\)",
+      "\\(\\{3, 4, 6, 7, 8, 12\\}\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{6, 7\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 29\\), \\(n(B) = 10\\) and \\(n(A \\cap B) = 6\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "33",
+      "39",
+      "27",
+      "45"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 29 + 10 - 6\\)\n\n\\(= 33\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In a class of 56 students, 26 offer Further Mathematics, 24 offer Technical Drawing and 5 offer both subjects. How many students offer neither subject?",
+    "options": [
+      "6",
+      "16",
+      "13",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(n(F \\cup T) = 26 + 24 - 5 = 45\\)\n\nStudents offering neither \\(= 56 - 45 = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{3, 4, 7, 8, 12\\}\\) and \\(B = \\{1, 3, 4, 6, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{3, 4, 12\\}\\)",
+      "\\(\\{1, 3, 4, 6, 12\\}\\)",
+      "\\(\\{3, 4, 7, 8, 12\\}\\)",
+      "\\(\\{1, 3, 4, 6, 7, 8, 12\\}\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{3, 4, 12\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(n(A) = 19\\), \\(n(B) = 24\\) and \\(n(A \\cap B) = 11\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "21",
+      "54",
+      "32",
+      "43"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\)\n\n\\(= 19 + 24 - 11\\)\n\n\\(= 32\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "If \\(A = \\{1, 2, 5, 9, 11\\}\\) and \\(B = \\{3, 5, 7, 11, 12\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 2, 5, 9, 11\\}\\)",
+      "\\(\\{5, 11\\}\\)",
+      "\\(\\{1, 2, 3, 5, 7, 9, 11, 12\\}\\)",
+      "\\(\\{3, 5, 7, 11, 12\\}\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(A \\cap B\\) contains the elements common to both sets.\n\nComparing the two sets, the common elements are \\(\\{5, 11\\}\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "1tP6EvGOVehoTzIfHSf3",
+    "topicId": "4Dw7zmuSwhrRQrjoXw4m",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

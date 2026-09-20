@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Evaluate \\(^{5}P_{4}\\).",
+    "options": [
+      "5",
+      "120",
+      "60",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{5}P_{4} = \\frac{5!}{1!} = 5 \\times 4 \\times 3 \\times 2 = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}C_{2}\\).",
+    "options": [
+      "42",
+      "7",
+      "21",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{7}C_{2} = \\frac{7!}{2! \\times 5!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 7 different books be arranged on a shelf?",
+    "options": [
+      "343",
+      "49",
+      "5040",
+      "720"
+    ],
+    "correctIndex": 2,
+    "explanation": "The number of arrangements of 7 distinct objects is \\(7!\\).\n\n\\(7! = 5040\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 3 people be selected from 8 people?",
+    "options": [
+      "70",
+      "24",
+      "56",
+      "336"
+    ],
+    "correctIndex": 2,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{8}C_{3} = \\frac{8!}{3!(8-3)!} = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 5 people be arranged in a row if two particular people must always sit together?",
+    "options": [
+      "240",
+      "24",
+      "120",
+      "48"
+    ],
+    "correctIndex": 3,
+    "explanation": "Treat the two people as a single unit, giving \\(4\\) units to arrange.\n\n\\(4! = 24\\)\n\nThe two people can swap places within the unit in \\(2!\\) ways.\n\nTotal \\(= 24 \\times 2 = 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "280",
+      "140",
+      "330",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 4 \\times 35 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 3 people be selected from 12 people?",
+    "options": [
+      "220",
+      "36",
+      "1320",
+      "495"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{12}C_{3} = \\frac{12!}{3!(12-3)!} = 220\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 5 different books be arranged on a shelf?",
+    "options": [
+      "24",
+      "125",
+      "25",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "The number of arrangements of 5 distinct objects is \\(5!\\).\n\n\\(5! = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 5 people be seated around a circular table?",
+    "options": [
+      "120",
+      "20",
+      "24",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "For circular arrangements, fix one person and arrange the rest.\n\nNumber of ways \\(= (n - 1)! = 4! = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 8 different books be arranged on a shelf?",
+    "options": [
+      "40320",
+      "512",
+      "5040",
+      "64"
+    ],
+    "correctIndex": 0,
+    "explanation": "The number of arrangements of 8 distinct objects is \\(8!\\).\n\n\\(8! = 40320\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}P_{3}\\).",
+    "options": [
+      "72",
+      "27",
+      "84",
+      "504"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{9}P_{3} = \\frac{9!}{6!} = 9 \\times 8 \\times 7 = 504\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{5}C_{5}\\).",
+    "options": [
+      "6",
+      "120",
+      "5",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{5}C_{5} = \\frac{5!}{5! \\times 0!} = 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 6 different books be arranged on a shelf?",
+    "options": [
+      "216",
+      "720",
+      "36",
+      "120"
+    ],
+    "correctIndex": 1,
+    "explanation": "The number of arrangements of 6 distinct objects is \\(6!\\).\n\n\\(6! = 720\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}C_{2}\\).",
+    "options": [
+      "9",
+      "72",
+      "36",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{9}C_{2} = \\frac{9!}{2! \\times 7!} = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{11}C_{4}\\).",
+    "options": [
+      "495",
+      "330",
+      "7920",
+      "165"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{11}C_{4} = \\frac{11!}{4! \\times 7!} = 330\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 4 people be selected from 7 people?",
+    "options": [
+      "21",
+      "28",
+      "35",
+      "840"
+    ],
+    "correctIndex": 2,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{7}C_{4} = \\frac{7!}{4!(7-4)!} = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "70",
+      "60",
+      "13",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 10 \\times 3 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 4 different books be arranged on a shelf?",
+    "options": [
+      "24",
+      "6",
+      "16",
+      "64"
+    ],
+    "correctIndex": 0,
+    "explanation": "The number of arrangements of 4 distinct objects is \\(4!\\).\n\n\\(4! = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 6 people be arranged in a row if two particular people must always sit together?",
+    "options": [
+      "120",
+      "240",
+      "720",
+      "1440"
+    ],
+    "correctIndex": 1,
+    "explanation": "Treat the two people as a single unit, giving \\(5\\) units to arrange.\n\n\\(5! = 120\\)\n\nThe two people can swap places within the unit in \\(2!\\) ways.\n\nTotal \\(= 120 \\times 2 = 240\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 4 people be seated around a circular table?",
+    "options": [
+      "6",
+      "2",
+      "12",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "For circular arrangements, fix one person and arrange the rest.\n\nNumber of ways \\(= (n - 1)! = 3! = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}P_{2}\\).",
+    "options": [
+      "45",
+      "10",
+      "20",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{10}P_{2} = \\frac{10!}{8!} = 10 \\times 9 = 90\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "91",
+      "14",
+      "48",
+      "96"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 8 \\times 6 = 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}C_{4}\\).",
+    "options": [
+      "70",
+      "840",
+      "35",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{7}C_{4} = \\frac{7!}{4! \\times 3!} = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}C_{5}\\).",
+    "options": [
+      "56",
+      "126",
+      "70",
+      "6720"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{8}C_{5} = \\frac{8!}{5! \\times 3!} = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 7 people be arranged in a row if two particular people must always sit together?",
+    "options": [
+      "720",
+      "5040",
+      "1440",
+      "10080"
+    ],
+    "correctIndex": 2,
+    "explanation": "Treat the two people as a single unit, giving \\(6\\) units to arrange.\n\n\\(6! = 720\\)\n\nThe two people can swap places within the unit in \\(2!\\) ways.\n\nTotal \\(= 720 \\times 2 = 1440\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 3 people be selected from 9 people?",
+    "options": [
+      "84",
+      "504",
+      "27",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{9}C_{3} = \\frac{9!}{3!(9-3)!} = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{11}C_{5}\\).",
+    "options": [
+      "792",
+      "55440",
+      "462",
+      "330"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{11}C_{5} = \\frac{11!}{5! \\times 6!} = 462\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "330",
+      "39",
+      "280",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 35 \\times 4 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 4 people be arranged in a row if two particular people must always sit together?",
+    "options": [
+      "24",
+      "12",
+      "48",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Treat the two people as a single unit, giving \\(3\\) units to arrange.\n\n\\(3! = 6\\)\n\nThe two people can swap places within the unit in \\(2!\\) ways.\n\nTotal \\(= 6 \\times 2 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}P_{3}\\).",
+    "options": [
+      "210",
+      "21",
+      "35",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{7}P_{3} = \\frac{7!}{4!} = 7 \\times 6 \\times 5 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 4 people be selected from 12 people?",
+    "options": [
+      "495",
+      "48",
+      "792",
+      "11880"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{12}C_{4} = \\frac{12!}{4!(12-4)!} = 495\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{4}P_{2}\\).",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{4}P_{2} = \\frac{4!}{2!} = 4 \\times 3 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}C_{3}\\).",
+    "options": [
+      "720",
+      "120",
+      "165",
+      "45"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{10}C_{3} = \\frac{10!}{3! \\times 7!} = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 4 people be selected from 6 people?",
+    "options": [
+      "6",
+      "360",
+      "24",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{6}C_{4} = \\frac{6!}{4!(6-4)!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "1960",
+      "3003",
+      "980",
+      "63"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 28 \\times 35 = 980\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "100",
+      "20",
+      "200",
+      "210"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 10 \\times 10 = 100\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "1120",
+      "1716",
+      "66",
+      "560"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 56 \\times 10 = 560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}P_{4}\\).",
+    "options": [
+      "360",
+      "120",
+      "15",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{6}P_{4} = \\frac{6!}{2!} = 6 \\times 5 \\times 4 \\times 3 = 360\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "14",
+      "80",
+      "126",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 10 \\times 4 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 2 people be selected from 12 people?",
+    "options": [
+      "132",
+      "220",
+      "66",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{12}C_{2} = \\frac{12!}{2!(12-2)!} = 66\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 4 people be selected from 11 people?",
+    "options": [
+      "330",
+      "44",
+      "462",
+      "7920"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{11}C_{4} = \\frac{11!}{4!(11-4)!} = 330\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "43",
+      "1365",
+      "280",
+      "560"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 8 \\times 35 = 280\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "56",
+      "28",
+      "11",
+      "330"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 7 \\times 4 = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}P_{2}\\).",
+    "options": [
+      "7",
+      "14",
+      "42",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{7}P_{2} = \\frac{7!}{5!} = 7 \\times 6 = 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}C_{2}\\).",
+    "options": [
+      "28",
+      "8",
+      "36",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{8}C_{2} = \\frac{8!}{2! \\times 6!} = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "300",
+      "25",
+      "150"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 15 \\times 10 = 150\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}C_{3}\\).",
+    "options": [
+      "35",
+      "56",
+      "210",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{7}C_{3} = \\frac{7!}{3! \\times 4!} = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}P_{4}\\).",
+    "options": [
+      "35",
+      "840",
+      "210",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{7}P_{4} = \\frac{7!}{3!} = 7 \\times 6 \\times 5 \\times 4 = 840\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 2 people be selected from 6 people?",
+    "options": [
+      "20",
+      "15",
+      "30",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{6}C_{2} = \\frac{6!}{2!(6-2)!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "41",
+      "420",
+      "462",
+      "210"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 6 \\times 35 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "210",
+      "220",
+      "105",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 21 \\times 5 = 105\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 7 people be seated around a circular table?",
+    "options": [
+      "42",
+      "120",
+      "720",
+      "5040"
+    ],
+    "correctIndex": 2,
+    "explanation": "For circular arrangements, fix one person and arrange the rest.\n\nNumber of ways \\(= (n - 1)! = 6! = 720\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 8 people be seated around a circular table?",
+    "options": [
+      "40320",
+      "56",
+      "720",
+      "5040"
+    ],
+    "correctIndex": 3,
+    "explanation": "For circular arrangements, fix one person and arrange the rest.\n\nNumber of ways \\(= (n - 1)! = 7! = 5040\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{5}C_{2}\\).",
+    "options": [
+      "15",
+      "10",
+      "20",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{5}C_{2} = \\frac{5!}{2! \\times 3!} = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}P_{4}\\).",
+    "options": [
+      "720",
+      "210",
+      "5040",
+      "40"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{10}P_{4} = \\frac{10!}{6!} = 10 \\times 9 \\times 8 \\times 7 = 5040\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 2 people be selected from 10 people?",
+    "options": [
+      "20",
+      "90",
+      "120",
+      "45"
+    ],
+    "correctIndex": 3,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{10}C_{2} = \\frac{10!}{2!(10-2)!} = 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "84",
+      "80",
+      "14",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 4 \\times 10 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{5}C_{3}\\).",
+    "options": [
+      "20",
+      "10",
+      "60",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{5}C_{3} = \\frac{5!}{3! \\times 2!} = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 4 people be selected from 10 people?",
+    "options": [
+      "210",
+      "5040",
+      "40",
+      "252"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{10}C_{4} = \\frac{10!}{4!(10-4)!} = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can 6 people be seated around a circular table?",
+    "options": [
+      "24",
+      "30",
+      "720",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "For circular arrangements, fix one person and arrange the rest.\n\nNumber of ways \\(= (n - 1)! = 5! = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}P_{4}\\).",
+    "options": [
+      "3024",
+      "126",
+      "504",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{9}P_{4} = \\frac{9!}{5!} = 9 \\times 8 \\times 7 \\times 6 = 3024\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 3 people be selected from 11 people?",
+    "options": [
+      "165",
+      "33",
+      "990",
+      "330"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{11}C_{3} = \\frac{11!}{3!(11-3)!} = 165\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}P_{2}\\).",
+    "options": [
+      "36",
+      "18",
+      "9",
+      "72"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{9}P_{2} = \\frac{9!}{7!} = 9 \\times 8 = 72\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "420",
+      "31",
+      "792",
+      "210"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 10 \\times 21 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}P_{2}\\).",
+    "options": [
+      "8",
+      "56",
+      "16",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{8}P_{2} = \\frac{8!}{6!} = 8 \\times 7 = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}P_{3}\\).",
+    "options": [
+      "120",
+      "20",
+      "30",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{6}P_{3} = \\frac{6!}{3!} = 6 \\times 5 \\times 4 = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}P_{3}\\).",
+    "options": [
+      "30",
+      "120",
+      "720",
+      "90"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{10}P_{3} = \\frac{10!}{7!} = 10 \\times 9 \\times 8 = 720\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{12}C_{5}\\).",
+    "options": [
+      "792",
+      "95040",
+      "1287",
+      "495"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{12}C_{5} = \\frac{12!}{5! \\times 7!} = 792\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "210",
+      "126",
+      "24",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 21 \\times 3 = 63\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 2 people be selected from 7 people?",
+    "options": [
+      "14",
+      "42",
+      "21",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{7}C_{2} = \\frac{7!}{2!(7-2)!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}C_{4}\\).",
+    "options": [
+      "15",
+      "20",
+      "360",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{6}C_{4} = \\frac{6!}{4! \\times 2!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "35",
+      "12",
+      "70",
+      "66"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 7 \\times 5 = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "45",
+      "126",
+      "18",
+      "90"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 15 \\times 3 = 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{11}C_{3}\\).",
+    "options": [
+      "990",
+      "220",
+      "165",
+      "55"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{11}C_{3} = \\frac{11!}{3! \\times 8!} = 165\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}C_{2}\\).",
+    "options": [
+      "10",
+      "90",
+      "45",
+      "55"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{10}C_{2} = \\frac{10!}{2! \\times 8!} = 45\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "792",
+      "224",
+      "112",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 28 \\times 4 = 112\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "315",
+      "715",
+      "630",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 15 \\times 21 = 315\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "200",
+      "462",
+      "30",
+      "400"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 10 \\times 20 = 200\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "715",
+      "210",
+      "41",
+      "420"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 35 \\times 6 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}C_{4}\\).",
+    "options": [
+      "1680",
+      "126",
+      "70",
+      "56"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{8}C_{4} = \\frac{8!}{4! \\times 4!} = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{12}C_{4}\\).",
+    "options": [
+      "11880",
+      "220",
+      "715",
+      "495"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{12}C_{4} = \\frac{12!}{4! \\times 8!} = 495\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 2 people be selected from 11 people?",
+    "options": [
+      "22",
+      "165",
+      "55",
+      "110"
+    ],
+    "correctIndex": 2,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{11}C_{2} = \\frac{11!}{2!(11-2)!} = 55\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "45",
+      "924",
+      "350",
+      "700"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 35 \\times 10 = 350\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}C_{2}\\).",
+    "options": [
+      "21",
+      "15",
+      "6",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{6}C_{2} = \\frac{6!}{2! \\times 4!} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "10",
+      "45",
+      "42",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 7 \\times 3 = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "70",
+      "30",
+      "13",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 10 \\times 3 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}C_{3}\\).",
+    "options": [
+      "84",
+      "504",
+      "120",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{9}C_{3} = \\frac{9!}{3! \\times 6!} = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "126",
+      "63",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 21 \\times 3 = 63\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{7}C_{5}\\).",
+    "options": [
+      "56",
+      "21",
+      "2520",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{7}C_{5} = \\frac{7!}{5! \\times 2!} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "10",
+      "50",
+      "45",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 5 \\times 5 = 25\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}P_{3}\\).",
+    "options": [
+      "40320",
+      "56",
+      "24",
+      "336"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{8}P_{3} = \\frac{8!}{5!} = 8 \\times 7 \\times 6 = 336\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 3 people be selected from 6 people?",
+    "options": [
+      "15",
+      "120",
+      "20",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{6}C_{3} = \\frac{6!}{3!(6-3)!} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "1001",
+      "42",
+      "490",
+      "245"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 7 \\times 35 = 245\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "16",
+      "32",
+      "8",
+      "70"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 4 \\times 4 = 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "28",
+      "29",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 28 \\times 1 = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{4}C_{4}\\).",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{4}C_{4} = \\frac{4!}{4! \\times 0!} = 1\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "168",
+      "462",
+      "59",
+      "336"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 56 \\times 3 = 168\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 4 people be selected from 8 people?",
+    "options": [
+      "70",
+      "32",
+      "56",
+      "1680"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{8}C_{4} = \\frac{8!}{4!(8-4)!} = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "63",
+      "1365",
+      "784",
+      "392"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 56 \\times 7 = 392\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "14",
+      "98",
+      "49",
+      "91"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 7 \\times 7 = 49\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "350",
+      "45",
+      "792",
+      "700"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 10 \\times 35 = 350\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}C_{4}\\).",
+    "options": [
+      "5040",
+      "210",
+      "120",
+      "330"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{10}C_{4} = \\frac{10!}{4! \\times 6!} = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "25",
+      "300",
+      "330",
+      "150"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 10 \\times 15 = 150\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "210",
+      "38",
+      "105",
+      "252"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 35 \\times 3 = 105\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{5}P_{2}\\).",
+    "options": [
+      "120",
+      "5",
+      "20",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{5}P_{2} = \\frac{5!}{3!} = 5 \\times 4 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "80",
+      "84",
+      "14",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 4 \\times 10 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 3 people be selected from 10 people?",
+    "options": [
+      "120",
+      "30",
+      "210",
+      "720"
+    ],
+    "correctIndex": 0,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{10}C_{3} = \\frac{10!}{3!(10-3)!} = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "1001",
+      "62",
+      "336",
+      "672"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 56 \\times 6 = 336\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{4}C_{2}\\).",
+    "options": [
+      "12",
+      "4",
+      "6",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{4}C_{2} = \\frac{4!}{2! \\times 2!} = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "364",
+      "168",
+      "336",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 28 \\times 6 = 168\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "80",
+      "160",
+      "24",
+      "210"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 20 \\times 4 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "455",
+      "196",
+      "35",
+      "392"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 28 \\times 7 = 196\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}P_{2}\\).",
+    "options": [
+      "6",
+      "15",
+      "30",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{6}P_{2} = \\frac{6!}{4!} = 6 \\times 5 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "56",
+      "10",
+      "24",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 4 \\times 6 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "13",
+      "42",
+      "165",
+      "84"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 7 \\times 6 = 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "588",
+      "1365",
+      "1176",
+      "49"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 28 \\times 21 = 588\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}P_{4}\\).",
+    "options": [
+      "1680",
+      "336",
+      "32",
+      "70"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{8}P_{4} = \\frac{8!}{4!} = 8 \\times 7 \\times 6 \\times 5 = 1680\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "160",
+      "80",
+      "18",
+      "715"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 8 \\times 10 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{5}C_{4}\\).",
+    "options": [
+      "120",
+      "15",
+      "5",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{5}C_{4} = \\frac{5!}{4! \\times 1!} = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "62",
+      "336",
+      "672",
+      "792"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 56 \\times 6 = 336\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{8}C_{3}\\).",
+    "options": [
+      "336",
+      "56",
+      "28",
+      "84"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{8}C_{3} = \\frac{8!}{3! \\times 5!} = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "6",
+      "7",
+      "21",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 6 \\times 1 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "168",
+      "25",
+      "165",
+      "84"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 21 \\times 4 = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "In how many ways can a committee of 2 people be selected from 9 people?",
+    "options": [
+      "84",
+      "18",
+      "72",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "Order does not matter in a selection, so use combinations.\n\n\\(^{9}C_{2} = \\frac{9!}{2!(9-2)!} = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}C_{4}\\).",
+    "options": [
+      "126",
+      "3024",
+      "84",
+      "210"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{9}C_{4} = \\frac{9!}{4! \\times 5!} = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{11}C_{2}\\).",
+    "options": [
+      "66",
+      "55",
+      "11",
+      "110"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{11}C_{2} = \\frac{11!}{2! \\times 9!} = 55\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "165",
+      "25",
+      "84",
+      "168"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 4 \\times 21 = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "16",
+      "330",
+      "120",
+      "60"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 6 \\times 10 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "140",
+      "39",
+      "280"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 35 \\times 4 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "36",
+      "35",
+      "9",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 6 \\times 3 = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{9}C_{5}\\).",
+    "options": [
+      "45",
+      "126",
+      "15120",
+      "252"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{9}C_{5} = \\frac{9!}{5! \\times 4!} = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}C_{3}\\).",
+    "options": [
+      "15",
+      "120",
+      "35",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{6}C_{3} = \\frac{6!}{3! \\times 3!} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{10}C_{5}\\).",
+    "options": [
+      "462",
+      "30240",
+      "252",
+      "210"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{10}C_{5} = \\frac{10!}{5! \\times 5!} = 252\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "200",
+      "330",
+      "100",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 5 \\times 20 = 100\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "1225",
+      "70",
+      "3003",
+      "2450"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 35 \\times 35 = 1225\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{5}P_{3}\\).",
+    "options": [
+      "10",
+      "20",
+      "60",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}P_{r} = \\frac{n!}{(n-r)!}\\)\n\n\\(^{5}P_{3} = \\frac{5!}{2!} = 5 \\times 4 \\times 3 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "286",
+      "18",
+      "80",
+      "160"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 8 \\times 10 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "36",
+      "315",
+      "715",
+      "630"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 21 \\times 15 = 315\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "5005",
+      "1960",
+      "3920",
+      "91"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 56 \\times 35 = 1960\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{4}C_{3}\\).",
+    "options": [
+      "6",
+      "24",
+      "4",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{4}C_{3} = \\frac{4!}{3! \\times 1!} = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "168",
+      "495",
+      "336",
+      "34"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 28 \\times 6 = 168\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "350",
+      "700",
+      "45",
+      "792"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 35 \\times 10 = 350\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "43",
+      "1001",
+      "840",
+      "420"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 28 \\times 15 = 420\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "420",
+      "31",
+      "792",
+      "210"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 21 \\times 10 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{12}C_{2}\\).",
+    "options": [
+      "78",
+      "132",
+      "66",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{12}C_{2} = \\frac{12!}{2! \\times 10!} = 66\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "10",
+      "48",
+      "24",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 6 \\times 4 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "12",
+      "70",
+      "66",
+      "35"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 5 \\times 7 = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "175",
+      "495",
+      "40",
+      "350"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 35 \\times 5 = 175\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "715",
+      "280",
+      "27",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 20 \\times 7 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "59",
+      "336",
+      "168",
+      "330"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 56 \\times 3 = 168\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "27",
+      "126",
+      "252",
+      "286"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 21 \\times 6 = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 4 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "210",
+      "48",
+      "24",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 4 \\times 6 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "180",
+      "210",
+      "21",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 15 \\times 6 = 90\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "495",
+      "31",
+      "420",
+      "210"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 10 \\times 21 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "50",
+      "100",
+      "210",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 10 \\times 5 = 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "840",
+      "1680",
+      "2002",
+      "71"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 56 \\times 15 = 840\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "84",
+      "42",
+      "78",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 7 \\times 6 = 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "7",
+      "14",
+      "210"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 7 \\times 1 = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "252",
+      "120",
+      "60",
+      "19"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 15 \\times 4 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "35",
+      "792",
+      "300",
+      "600"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 20 \\times 15 = 300\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "24",
+      "56",
+      "48",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 4 \\times 6 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "40",
+      "14",
+      "80",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 10 \\times 4 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "13",
+      "30",
+      "60",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 10 \\times 3 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "126",
+      "286",
+      "252",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 6 \\times 21 = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "252",
+      "126",
+      "330",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 21 \\times 6 = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "13",
+      "78",
+      "80",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 8 \\times 5 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "11",
+      "56",
+      "28",
+      "55"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 4 \\times 7 = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "14",
+      "80",
+      "84",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 10 \\times 4 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "20",
+      "21",
+      "40",
+      "84"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 20 \\times 1 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "280",
+      "286",
+      "140",
+      "33"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 28 \\times 5 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "60",
+      "120",
+      "126",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 10 \\times 6 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "140",
+      "220",
+      "70",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 7 \\times 10 = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "40",
+      "80",
+      "14",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 4 \\times 10 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "40",
+      "924",
+      "400",
+      "800"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 20 \\times 20 = 400\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "25",
+      "330",
+      "100",
+      "200"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 20 \\times 5 = 100\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "252",
+      "330",
+      "27",
+      "126"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 6 \\times 21 = 126\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "48",
+      "24",
+      "56",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 6 \\times 4 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "32",
+      "28",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 4 \\times 4 = 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "364",
+      "240",
+      "23",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 8 \\times 15 = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{6}C_{5}\\).",
+    "options": [
+      "21",
+      "6",
+      "15",
+      "720"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{6}C_{5} = \\frac{6!}{5! \\times 1!} = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "126",
+      "60",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 6 \\times 10 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "26",
+      "105",
+      "210",
+      "220"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 5 \\times 21 = 105\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 4 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "80",
+      "210",
+      "160",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 4 \\times 20 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "280",
+      "140",
+      "715",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 7 \\times 20 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "50",
+      "1050",
+      "525",
+      "1287"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 35 \\times 15 = 525\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "14",
+      "48",
+      "220",
+      "96"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 8 \\times 6 = 48\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "21",
+      "22",
+      "42",
+      "252"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 21 \\times 1 = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "66",
+      "72",
+      "12",
+      "36"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 6 \\times 6 = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "60",
+      "23",
+      "120",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 20 \\times 3 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "80",
+      "160",
+      "210",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 20 \\times 4 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "20",
+      "100",
+      "200",
+      "252"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 10 \\times 10 = 100\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "17",
+      "70",
+      "140",
+      "495"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 10 \\times 7 = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "21",
+      "10",
+      "120",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 7 \\times 3 = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "17",
+      "220",
+      "70",
+      "140"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 10 \\times 7 = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "168",
+      "455",
+      "29",
+      "336"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 8 \\times 21 = 168\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "105",
+      "286",
+      "22",
+      "210"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 15 \\times 7 = 105\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "42",
+      "84",
+      "13",
+      "165"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 6 \\times 7 = 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "55",
+      "1716",
+      "1400",
+      "700"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 20 \\times 35 = 700\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "525",
+      "1050",
+      "1287",
+      "50"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 15 \\times 35 = 525\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "35",
+      "7",
+      "12",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 4 \\times 3 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "50",
+      "120",
+      "15",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 10 \\times 5 = 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "2240",
+      "76",
+      "1120",
+      "3003"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 56 \\times 20 = 1120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "48",
+      "2002",
+      "1120",
+      "560"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 28 \\times 20 = 560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "6",
+      "12",
+      "7",
+      "126"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 6 \\times 1 = 6\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "84",
+      "168",
+      "165",
+      "31"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 28 \\times 3 = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "16",
+      "126",
+      "60",
+      "120"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 10 \\times 6 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "15",
+      "8",
+      "30",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 5 \\times 3 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "3003",
+      "77",
+      "1176",
+      "2352"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 56 \\times 21 = 1176\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "280",
+      "39",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 4 \\times 35 = 140\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "300",
+      "25",
+      "330",
+      "150"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 15 \\times 10 = 150\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "20",
+      "252",
+      "200",
+      "100"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 10 \\times 10 = 100\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "40",
+      "9",
+      "36",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 5 \\times 4 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "7",
+      "24",
+      "21",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 4 \\times 3 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "56",
+      "57",
+      "462",
+      "112"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 56 \\times 1 = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "420",
+      "41",
+      "462",
+      "210"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 35 \\times 6 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "165",
+      "48",
+      "24",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 8 \\times 3 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "55",
+      "30",
+      "11",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 5 \\times 6 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "224",
+      "32",
+      "112",
+      "220"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 28 \\times 4 = 112\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "7",
+      "21",
+      "24",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 4 \\times 3 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "66",
+      "1287",
+      "560",
+      "1120"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 56 \\times 10 = 560\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "180",
+      "220",
+      "21",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 6 \\times 15 = 90\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "48",
+      "24",
+      "10",
+      "210"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 6 \\times 4 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Evaluate \\(^{12}C_{3}\\).",
+    "options": [
+      "66",
+      "220",
+      "286",
+      "1320"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(^{n}C_{r} = \\frac{n!}{r!(n-r)!}\\)\n\n\\(^{12}C_{3} = \\frac{12!}{3! \\times 9!} = 220\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "200",
+      "462",
+      "400",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 20 \\times 10 = 200\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "150",
+      "75",
+      "165",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 15 \\times 5 = 75\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "60",
+      "165",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 10 \\times 6 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "25",
+      "168",
+      "84",
+      "462"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 4 \\times 21 = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "9",
+      "36",
+      "84",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 6 \\times 3 = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "147",
+      "294",
+      "364",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 7 \\times 21 = 147\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "12",
+      "64",
+      "32",
+      "495"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 8 \\times 4 = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "220",
+      "90",
+      "21",
+      "180"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 15 \\times 6 = 90\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "5",
+      "4",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 4 \\times 1 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "84",
+      "11",
+      "60",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 6 \\times 5 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "14",
+      "80",
+      "126",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 4 \\times 10 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "420",
+      "210",
+      "495",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 21 \\times 10 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "495",
+      "225",
+      "450",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 15 \\times 15 = 225\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "448",
+      "924",
+      "224",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 56 \\times 4 = 224\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "60",
+      "495",
+      "224",
+      "448"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 56 \\times 4 = 224\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "31",
+      "84",
+      "168",
+      "330"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 28 \\times 3 = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "350",
+      "175",
+      "40",
+      "495"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 5 \\times 35 = 175\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 5 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "924",
+      "700",
+      "45",
+      "350"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 10 \\times 35 = 350\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "15",
+      "100",
+      "210",
+      "50"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 5 \\times 10 = 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 7 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "70",
+      "140",
+      "495",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 7 \\times 10 = 70\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "28",
+      "16",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 4 \\times 4 = 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "1287",
+      "420",
+      "41",
+      "840"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 20 \\times 21 = 420\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "84",
+      "168",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 21 \\times 4 = 84\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "40",
+      "9",
+      "20",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 4 \\times 5 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "56",
+      "24",
+      "48",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 6 \\times 4 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "16",
+      "60",
+      "330",
+      "120"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 10 \\times 6 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "60",
+      "30",
+      "55",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 6 \\times 5 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "210",
+      "41",
+      "715",
+      "420"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 6 \\times 35 = 210\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "715",
+      "38",
+      "560",
+      "280"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 28 \\times 10 = 280\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "286",
+      "22",
+      "210",
+      "105"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 7 \\times 15 = 105\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "28",
+      "20",
+      "11",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 10 \\times 1 = 10\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 7 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "35",
+      "70",
+      "210",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 35 \\times 1 = 35\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 4 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "60",
+      "19",
+      "252"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 4 \\times 15 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "150",
+      "25",
+      "300"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 10 \\times 15 = 150\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "240",
+      "26",
+      "120",
+      "252"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 20 \\times 6 = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "30",
+      "60",
+      "84",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 5 \\times 6 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "61",
+      "280",
+      "715",
+      "560"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{3} = 56\\) and \\(^{5}C_{1} = 5\\)\n\nTotal \\(= 56 \\times 5 = 280\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 4 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "210",
+      "180",
+      "90",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 6 \\times 15 = 90\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "84",
+      "14",
+      "40",
+      "80"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 10 \\times 4 = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "5",
+      "4",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 4 \\times 1 = 4\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "462",
+      "30",
+      "200",
+      "400"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 20 \\times 10 = 200\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "735",
+      "1470",
+      "2002",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{7}C_{2} = 21\\)\n\nTotal \\(= 35 \\times 21 = 735\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "15",
+      "30",
+      "28",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 5 \\times 3 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 6 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "36",
+      "12",
+      "72"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 6 \\times 6 = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "150",
+      "20",
+      "165",
+      "75"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{6}C_{2} = 15\\)\n\nTotal \\(= 5 \\times 15 = 75\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "735",
+      "1470",
+      "2002",
+      "56"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{7}C_{3} = 35\\)\n\nTotal \\(= 21 \\times 35 = 735\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "16",
+      "32",
+      "70"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 4 \\times 4 = 16\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 6 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "60",
+      "165",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 6 \\times 10 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 7 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "56",
+      "28",
+      "11",
+      "55"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{1} = 7\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 7 \\times 4 = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "13",
+      "30",
+      "60",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{2} = 10\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 10 \\times 3 = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 5 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "6",
+      "5",
+      "70",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 5 \\times 1 = 5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "16",
+      "30",
+      "15",
+      "126"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 15 \\times 1 = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "9",
+      "35",
+      "18",
+      "36"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 6 \\times 3 = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 6 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "42",
+      "13",
+      "84",
+      "78"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 6 \\times 7 = 42\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 1 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "294",
+      "364",
+      "28",
+      "147"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{2} = 21\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 21 \\times 7 = 147\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 8 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "66",
+      "32",
+      "64",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{4}C_{1} = 4\\)\n\nTotal \\(= 8 \\times 4 = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "240",
+      "495",
+      "26",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 20 \\times 6 = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 4 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "36",
+      "12",
+      "70",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{4}C_{2} = 6\\)\n\nTotal \\(= 6 \\times 6 = 36\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "200",
+      "20",
+      "210",
+      "100"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 10 \\times 10 = 100\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 5 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "200",
+      "462",
+      "400",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{3} = 10\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 10 \\times 20 = 200\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "240",
+      "26",
+      "495"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{1} = 6\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 6 \\times 20 = 120\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 7 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "55",
+      "700",
+      "1716",
+      "1400"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 35 \\times 20 = 700\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 4 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "48",
+      "24",
+      "45",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{1} = 4\\) and \\(^{6}C_{1} = 6\\)\n\nTotal \\(= 4 \\times 6 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 6 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "600",
+      "35",
+      "792",
+      "300"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{2} = 15\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 15 \\times 20 = 300\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 4 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "24",
+      "35",
+      "12",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 4 \\times 3 = 12\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 2 women is to be formed from 4 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "126",
+      "60",
+      "120",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{2} = 6\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 6 \\times 10 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "8",
+      "330",
+      "9",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{3}C_{3} = 1\\)\n\nTotal \\(= 8 \\times 1 = 8\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 7 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "42",
+      "1001",
+      "490",
+      "245"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{7}C_{3} = 35\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 35 \\times 7 = 245\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 2 women is to be formed from 5 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "50",
+      "100",
+      "15",
+      "120"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{5}C_{2} = 10\\)\n\nTotal \\(= 5 \\times 10 = 50\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 2 men and 3 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+    "options": [
+      "280",
+      "38",
+      "1287",
+      "560"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{2} = 28\\) and \\(^{5}C_{3} = 10\\)\n\nTotal \\(= 28 \\times 10 = 280\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 5 men and 4 women. In how many ways can this be done?",
+    "options": [
+      "20",
+      "9",
+      "126",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{5}C_{1} = 5\\) and \\(^{4}C_{3} = 4\\)\n\nTotal \\(= 5 \\times 4 = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 2 women is to be formed from 6 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "120",
+      "60",
+      "126",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{6}C_{3} = 20\\) and \\(^{3}C_{2} = 3\\)\n\nTotal \\(= 20 \\times 3 = 60\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 3 women is to be formed from 8 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "320",
+      "160",
+      "28",
+      "1001"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 8 \\times 20 = 160\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 8 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "112",
+      "105",
+      "15",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 8 \\times 7 = 56\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 1 women is to be formed from 4 men and 7 women. In how many ways can this be done?",
+    "options": [
+      "11",
+      "330",
+      "56",
+      "28"
+    ],
+    "correctIndex": 3,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{7}C_{1} = 7\\)\n\nTotal \\(= 4 \\times 7 = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 3 men and 3 women is to be formed from 4 men and 6 women. In how many ways can this be done?",
+    "options": [
+      "160",
+      "80",
+      "210",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{4}C_{3} = 4\\) and \\(^{6}C_{3} = 20\\)\n\nTotal \\(= 4 \\times 20 = 80\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A committee of 1 men and 1 women is to be formed from 8 men and 3 women. In how many ways can this be done?",
+    "options": [
+      "11",
+      "55",
+      "24",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "Choose the men and the women independently, then multiply.\n\n\\(^{8}C_{1} = 8\\) and \\(^{3}C_{1} = 3\\)\n\nTotal \\(= 8 \\times 3 = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "XeO4je16v5S8YFrJeG7y",
+    "topicId": "p12ek3SA5n3dXWivcEPw",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

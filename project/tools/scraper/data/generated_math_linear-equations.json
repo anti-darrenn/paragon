@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Solve the equation \\(\\frac{x}{3} + 7 = 4\\).",
+    "options": [
+      "-6",
+      "-9",
+      "9",
+      "-27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 7: \\(\\frac{x}{3} = -3\\)\n\nMultiply both sides by 3: \\(x = 3 \\times -3 = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2x - 4 = 2\\).",
+    "options": [
+      "4",
+      "-3",
+      "3",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(2x - 4 = 2\\)\n\nAdd 4 to both sides: \\(2x = 6\\)\n\nDivide both sides by 2: \\(x = \\frac{6}{2} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 165. Find the smallest of the numbers.",
+    "options": [
+      "53",
+      "54",
+      "56",
+      "55"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 165\\)\n\n\\(3n + 3 = 165\\)\n\n\\(3n = 162\\), so \\(n = 54\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x + 8) + 3x = 60\\).",
+    "options": [
+      "1",
+      "-3",
+      "0",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(9x + 72 + 3x = 60\\)\n\nCollect like terms: \\(12x + 72 = 60\\)\n\n\\(12x = -12\\)\n\n\\(x = \\frac{-12}{12} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-12x + 8 = 116\\).",
+    "options": [
+      "-8",
+      "-9",
+      "-10",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-12x + 8 = 116\\)\n\nSubtract 8 from both sides: \\(-12x = 108\\)\n\nDivide both sides by -12: \\(x = \\frac{108}{-12} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-x + 5y = 40\\) and \\(2x - 3y = -31\\).",
+    "options": [
+      "\\(x = -5, y = 7\\)",
+      "\\(x = 5, y = -7\\)",
+      "\\(x = -4, y = 6\\)",
+      "\\(x = 7, y = -5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 2 and the second by -1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 7\\).\n\nSubstituting \\(y = 7\\) into the first equation: \\(-1x + 35 = 40\\), so \\(x = -5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 162. Find the smallest of the numbers.",
+    "options": [
+      "55",
+      "52",
+      "54",
+      "53"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 162\\)\n\n\\(3n + 3 = 162\\)\n\n\\(3n = 159\\), so \\(n = 53\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x + 3) + 4x = 131\\).",
+    "options": [
+      "8",
+      "9",
+      "-8",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(9x + 27 + 4x = 131\\)\n\nCollect like terms: \\(13x + 27 = 131\\)\n\n\\(13x = 104\\)\n\n\\(x = \\frac{104}{13} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 6) + 4x = -86\\).",
+    "options": [
+      "4",
+      "-3",
+      "-4",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x - 42 + 4x = -86\\)\n\nCollect like terms: \\(11x - 42 = -86\\)\n\n\\(11x = -44\\)\n\n\\(x = \\frac{-44}{11} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x + 6) + 4x = 18\\).",
+    "options": [
+      "2",
+      "18",
+      "-1",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x + 12 + 4x = 18\\)\n\nCollect like terms: \\(6x + 12 = 18\\)\n\n\\(6x = 6\\)\n\n\\(x = \\frac{6}{6} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 123. Find the smallest of the numbers.",
+    "options": [
+      "39",
+      "40",
+      "42",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 123\\)\n\n\\(3n + 3 = 123\\)\n\n\\(3n = 120\\), so \\(n = 40\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 30. Find the smallest of the numbers.",
+    "options": [
+      "9",
+      "8",
+      "10",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 30\\)\n\n\\(3n + 3 = 30\\)\n\n\\(3n = 27\\), so \\(n = 9\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 66. Find the smallest of the numbers.",
+    "options": [
+      "23",
+      "20",
+      "22",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 66\\)\n\n\\(3n + 3 = 66\\)\n\n\\(3n = 63\\), so \\(n = 21\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 132. Find the smallest of the numbers.",
+    "options": [
+      "42",
+      "44",
+      "45",
+      "43"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 132\\)\n\n\\(3n + 3 = 132\\)\n\n\\(3n = 129\\), so \\(n = 43\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(3x - 3y = 15\\) and \\(-x + 4y = 1\\).",
+    "options": [
+      "\\(x = 8, y = 1\\)",
+      "\\(x = -7, y = -2\\)",
+      "\\(x = 7, y = 2\\)",
+      "\\(x = 2, y = 7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by -1 and the second by 3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 2\\).\n\nSubstituting \\(y = 2\\) into the first equation: \\(3x - 6 = 15\\), so \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 40 years, how old is the son?",
+    "options": [
+      "32 years",
+      "8 years",
+      "20 years",
+      "12 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 40\\)\n\n\\(5x = 40\\), so \\(x = 8\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(2x + 6y = 20\\) and \\(-4x + 6y = 68\\).",
+    "options": [
+      "\\(x = 6, y = -8\\)",
+      "\\(x = -8, y = 6\\)",
+      "\\(x = -7, y = 5\\)",
+      "\\(x = 8, y = -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by -4 and the second by 2 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(2x + 36 = 20\\), so \\(x = -8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-2x + 1 = 9\\).",
+    "options": [
+      "-4",
+      "-3",
+      "4",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-2x + 1 = 9\\)\n\nSubtract 1 from both sides: \\(-2x = 8\\)\n\nDivide both sides by -2: \\(x = \\frac{8}{-2} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 108. Find the smallest of the numbers.",
+    "options": [
+      "37",
+      "36",
+      "35",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 108\\)\n\n\\(3n + 3 = 108\\)\n\n\\(3n = 105\\), so \\(n = 35\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(x - 3y = -11\\) and \\(-3x - 4y = -45\\).",
+    "options": [
+      "\\(x = 6, y = 7\\)",
+      "\\(x = -7, y = -6\\)",
+      "\\(x = 7, y = 6\\)",
+      "\\(x = 8, y = 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by -3 and the second by 1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(1x - 18 = -11\\), so \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x - 6) + 4x = -64\\).",
+    "options": [
+      "-7",
+      "-5",
+      "-4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x - 24 + 4x = -64\\)\n\nCollect like terms: \\(8x - 24 = -64\\)\n\n\\(8x = -40\\)\n\n\\(x = \\frac{-40}{8} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-3x + 5 = 35\\).",
+    "options": [
+      "-11",
+      "-10",
+      "10",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-3x + 5 = 35\\)\n\nSubtract 5 from both sides: \\(-3x = 30\\)\n\nDivide both sides by -3: \\(x = \\frac{30}{-3} = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 105. Find the smallest of the numbers.",
+    "options": [
+      "33",
+      "36",
+      "34",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 105\\)\n\n\\(3n + 3 = 105\\)\n\n\\(3n = 102\\), so \\(n = 34\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 177. Find the smallest of the numbers.",
+    "options": [
+      "57",
+      "60",
+      "59",
+      "58"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 177\\)\n\n\\(3n + 3 = 177\\)\n\n\\(3n = 174\\), so \\(n = 58\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(5x - y = -38\\) and \\(-4x - 2y = 8\\).",
+    "options": [
+      "\\(x = 6, y = -8\\)",
+      "\\(x = -5, y = 7\\)",
+      "\\(x = -6, y = 8\\)",
+      "\\(x = 8, y = -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by -4 and the second by 5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 8\\).\n\nSubstituting \\(y = 8\\) into the first equation: \\(5x - 8 = -38\\), so \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x + 3) + 6x = 122\\).",
+    "options": [
+      "8",
+      "5",
+      "7",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x + 24 + 6x = 122\\)\n\nCollect like terms: \\(14x + 24 = 122\\)\n\n\\(14x = 98\\)\n\n\\(x = \\frac{98}{14} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 72 years, how old is the son?",
+    "options": [
+      "21 years",
+      "36 years",
+      "54 years",
+      "18 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 72\\)\n\n\\(4x = 72\\), so \\(x = 18\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{3} - 6 = -7\\).",
+    "options": [
+      "0",
+      "-3",
+      "3",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 6: \\(\\frac{x}{3} = -1\\)\n\nMultiply both sides by 3: \\(x = 3 \\times -1 = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(x + 6y = 17\\) and \\(5x + 5y = 35\\).",
+    "options": [
+      "\\(x = -5, y = -2\\)",
+      "\\(x = 5, y = 2\\)",
+      "\\(x = 6, y = 1\\)",
+      "\\(x = 2, y = 5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by 1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 2\\).\n\nSubstituting \\(y = 2\\) into the first equation: \\(1x + 12 = 17\\), so \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-10x - 8 = 22\\).",
+    "options": [
+      "-2",
+      "3",
+      "-4",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-10x - 8 = 22\\)\n\nAdd 8 to both sides: \\(-10x = 30\\)\n\nDivide both sides by -10: \\(x = \\frac{30}{-10} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{3} - 2 = -1\\).",
+    "options": [
+      "-3",
+      "6",
+      "9",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 2: \\(\\frac{x}{3} = 1\\)\n\nMultiply both sides by 3: \\(x = 3 \\times 1 = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{4} + 9 = 10\\).",
+    "options": [
+      "8",
+      "16",
+      "-4",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 9: \\(\\frac{x}{4} = 1\\)\n\nMultiply both sides by 4: \\(x = 4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x - 5) + 6x = -36\\).",
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(5x - 25 + 6x = -36\\)\n\nCollect like terms: \\(11x - 25 = -36\\)\n\n\\(11x = -11\\)\n\n\\(x = \\frac{-11}{11} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(x + 15 = 3\\).",
+    "options": [
+      "-12",
+      "-11",
+      "-13",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(x + 15 = 3\\)\n\nSubtract 15 from both sides: \\(1x = -12\\)\n\nDivide both sides by 1: \\(x = \\frac{-12}{1} = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 80 years, how old is the son?",
+    "options": [
+      "40 years",
+      "64 years",
+      "16 years",
+      "20 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 80\\)\n\n\\(5x = 80\\), so \\(x = 16\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-9x - 14 = -122\\).",
+    "options": [
+      "12",
+      "-12",
+      "11",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-9x - 14 = -122\\)\n\nAdd 14 to both sides: \\(-9x = -108\\)\n\nDivide both sides by -9: \\(x = \\frac{-108}{-9} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 60 years, how old is the son?",
+    "options": [
+      "30 years",
+      "12 years",
+      "48 years",
+      "16 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 60\\)\n\n\\(5x = 60\\), so \\(x = 12\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 75. Find the smallest of the numbers.",
+    "options": [
+      "25",
+      "24",
+      "26",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 75\\)\n\n\\(3n + 3 = 75\\)\n\n\\(3n = 72\\), so \\(n = 24\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-3x - 5y = -25\\) and \\(5x - 6y = -73\\).",
+    "options": [
+      "\\(x = 8, y = -5\\)",
+      "\\(x = 5, y = -8\\)",
+      "\\(x = -4, y = 7\\)",
+      "\\(x = -5, y = 8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by -3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 8\\).\n\nSubstituting \\(y = 8\\) into the first equation: \\(-3x - 40 = -25\\), so \\(x = -5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 153. Find the smallest of the numbers.",
+    "options": [
+      "49",
+      "50",
+      "52",
+      "51"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 153\\)\n\n\\(3n + 3 = 153\\)\n\n\\(3n = 150\\), so \\(n = 50\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x + 6y = -42\\) and \\(3x + 6y = -39\\).",
+    "options": [
+      "\\(x = 3, y = 5\\)",
+      "\\(x = -3, y = -5\\)",
+      "\\(x = -2, y = -6\\)",
+      "\\(x = -5, y = -3\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by 3 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -5\\).\n\nSubstituting \\(y = -5\\) into the first equation: \\(4x - 30 = -42\\), so \\(x = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(5x + 4y = -9\\) and \\(-3x + 5y = 35\\).",
+    "options": [
+      "\\(x = 4, y = -5\\)",
+      "\\(x = -4, y = 3\\)",
+      "\\(x = 5, y = -4\\)",
+      "\\(x = -5, y = 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -3 and the second by 5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 4\\).\n\nSubstituting \\(y = 4\\) into the first equation: \\(5x + 16 = -9\\), so \\(x = -5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-4x - 6y = 32\\) and \\(3x + 6y = -30\\).",
+    "options": [
+      "\\(x = 2, y = 4\\)",
+      "\\(x = -4, y = -2\\)",
+      "\\(x = -2, y = -4\\)",
+      "\\(x = -1, y = -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by 3 and the second by -4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -4\\).\n\nSubstituting \\(y = -4\\) into the first equation: \\(-4x + 24 = 32\\), so \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 21 years, how old is the son?",
+    "options": [
+      "7 years",
+      "9 years",
+      "14 years",
+      "10.5 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 21\\)\n\n\\(3x = 21\\), so \\(x = 7\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 129. Find the smallest of the numbers.",
+    "options": [
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 129\\)\n\n\\(3n + 3 = 129\\)\n\n\\(3n = 126\\), so \\(n = 42\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x + 5) + 5x = 83\\).",
+    "options": [
+      "-7",
+      "7",
+      "5",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x + 20 + 5x = 83\\)\n\nCollect like terms: \\(9x + 20 = 83\\)\n\n\\(9x = 63\\)\n\n\\(x = \\frac{63}{9} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-5x - 5y = -65\\) and \\(-5x + 5y = -15\\).",
+    "options": [
+      "\\(x = -8, y = -5\\)",
+      "\\(x = 5, y = 8\\)",
+      "\\(x = 9, y = 4\\)",
+      "\\(x = 8, y = 5\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by -5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 5\\).\n\nSubstituting \\(y = 5\\) into the first equation: \\(-5x - 25 = -65\\), so \\(x = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x + 6) + 7x = 112\\).",
+    "options": [
+      "5",
+      "-5",
+      "3",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x + 42 + 7x = 112\\)\n\nCollect like terms: \\(14x + 42 = 112\\)\n\n\\(14x = 70\\)\n\n\\(x = \\frac{70}{14} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x + 5) + 4x = -64\\).",
+    "options": [
+      "-9",
+      "9",
+      "-8",
+      "-11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x + 35 + 4x = -64\\)\n\nCollect like terms: \\(11x + 35 = -64\\)\n\n\\(11x = -99\\)\n\n\\(x = \\frac{-99}{11} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 36. Find the smallest of the numbers.",
+    "options": [
+      "12",
+      "13",
+      "11",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 36\\)\n\n\\(3n + 3 = 36\\)\n\n\\(3n = 33\\), so \\(n = 11\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 6) + 9x = 22\\).",
+    "options": [
+      "2",
+      "-4",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x - 42 + 9x = 22\\)\n\nCollect like terms: \\(16x - 42 = 22\\)\n\n\\(16x = 64\\)\n\n\\(x = \\frac{64}{16} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x - 2) + 4x = 21\\).",
+    "options": [
+      "1",
+      "4",
+      "-3",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(9x - 18 + 4x = 21\\)\n\nCollect like terms: \\(13x - 18 = 21\\)\n\n\\(13x = 39\\)\n\n\\(x = \\frac{39}{13} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x - 1) + 4x = -126\\).",
+    "options": [
+      "-9",
+      "9",
+      "-8",
+      "-11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(9x - 9 + 4x = -126\\)\n\nCollect like terms: \\(13x - 9 = -126\\)\n\n\\(13x = -117\\)\n\n\\(x = \\frac{-117}{13} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 45 years, how old is the son?",
+    "options": [
+      "30 years",
+      "15 years",
+      "22.5 years",
+      "17 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 45\\)\n\n\\(3x = 45\\), so \\(x = 15\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(3x + 5y = 33\\) and \\(-3x - y = -9\\).",
+    "options": [
+      "\\(x = 1, y = 6\\)",
+      "\\(x = 2, y = 5\\)",
+      "\\(x = -1, y = -6\\)",
+      "\\(x = 6, y = 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by -3 and the second by 3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(3x + 30 = 33\\), so \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8x - 5 = 35\\).",
+    "options": [
+      "6",
+      "-5",
+      "5",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8x - 5 = 35\\)\n\nAdd 5 to both sides: \\(8x = 40\\)\n\nDivide both sides by 8: \\(x = \\frac{40}{8} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-3x + 4y = 22\\) and \\(-x + 6y = 40\\).",
+    "options": [
+      "\\(x = 2, y = 7\\)",
+      "\\(x = -2, y = -7\\)",
+      "\\(x = 7, y = 2\\)",
+      "\\(x = 3, y = 6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by -1 and the second by -3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 7\\).\n\nSubstituting \\(y = 7\\) into the first equation: \\(-3x + 28 = 22\\), so \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 102. Find the smallest of the numbers.",
+    "options": [
+      "34",
+      "32",
+      "35",
+      "33"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 102\\)\n\n\\(3n + 3 = 102\\)\n\n\\(3n = 99\\), so \\(n = 33\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-x + 6y = -36\\) and \\(2x - 4y = 16\\).",
+    "options": [
+      "\\(x = 6, y = 7\\)",
+      "\\(x = -6, y = -7\\)",
+      "\\(x = -7, y = -6\\)",
+      "\\(x = -5, y = -8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by 2 and the second by -1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -7\\).\n\nSubstituting \\(y = -7\\) into the first equation: \\(-1x - 42 = -36\\), so \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(6x - 5y = 38\\) and \\(2x + 5y = 26\\).",
+    "options": [
+      "\\(x = 8, y = 2\\)",
+      "\\(x = 9, y = 1\\)",
+      "\\(x = 2, y = 8\\)",
+      "\\(x = -8, y = -2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 2 and the second by 6 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 2\\).\n\nSubstituting \\(y = 2\\) into the first equation: \\(6x - 10 = 38\\), so \\(x = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x - 3) + 6x = 48\\).",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(9x - 27 + 6x = 48\\)\n\nCollect like terms: \\(15x - 27 = 48\\)\n\n\\(15x = 75\\)\n\n\\(x = \\frac{75}{15} = 5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 138. Find the smallest of the numbers.",
+    "options": [
+      "47",
+      "46",
+      "45",
+      "44"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 138\\)\n\n\\(3n + 3 = 138\\)\n\n\\(3n = 135\\), so \\(n = 45\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 39. Find the smallest of the numbers.",
+    "options": [
+      "12",
+      "13",
+      "11",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 39\\)\n\n\\(3n + 3 = 39\\)\n\n\\(3n = 36\\), so \\(n = 12\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-11x - 2 = -90\\).",
+    "options": [
+      "9",
+      "8",
+      "-8",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-11x - 2 = -90\\)\n\nAdd 2 to both sides: \\(-11x = -88\\)\n\nDivide both sides by -11: \\(x = \\frac{-88}{-11} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-3x - 5 = 10\\).",
+    "options": [
+      "-4",
+      "5",
+      "-6",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-3x - 5 = 10\\)\n\nAdd 5 to both sides: \\(-3x = 15\\)\n\nDivide both sides by -3: \\(x = \\frac{15}{-3} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2x - 12 = 8\\).",
+    "options": [
+      "10",
+      "9",
+      "-10",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(2x - 12 = 8\\)\n\nAdd 12 to both sides: \\(2x = 20\\)\n\nDivide both sides by 2: \\(x = \\frac{20}{2} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-3x + 20 = 56\\).",
+    "options": [
+      "-11",
+      "-12",
+      "12",
+      "-13"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-3x + 20 = 56\\)\n\nSubtract 20 from both sides: \\(-3x = 36\\)\n\nDivide both sides by -3: \\(x = \\frac{36}{-3} = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 57. Find the smallest of the numbers.",
+    "options": [
+      "17",
+      "18",
+      "20",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 57\\)\n\n\\(3n + 3 = 57\\)\n\n\\(3n = 54\\), so \\(n = 18\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-x + 15 = 25\\).",
+    "options": [
+      "10",
+      "-9",
+      "-11",
+      "-10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-x + 15 = 25\\)\n\nSubtract 15 from both sides: \\(-1x = 10\\)\n\nDivide both sides by -1: \\(x = \\frac{10}{-1} = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9x - 18 = 63\\).",
+    "options": [
+      "-9",
+      "9",
+      "8",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(9x - 18 = 63\\)\n\nAdd 18 to both sides: \\(9x = 81\\)\n\nDivide both sides by 9: \\(x = \\frac{81}{9} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 45 years, how old is the son?",
+    "options": [
+      "22.5 years",
+      "36 years",
+      "9 years",
+      "13 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 45\\)\n\n\\(5x = 45\\), so \\(x = 9\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x + 4) + 5x = 6\\).",
+    "options": [
+      "2",
+      "-2",
+      "-1",
+      "-4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x + 32 + 5x = 6\\)\n\nCollect like terms: \\(13x + 32 = 6\\)\n\n\\(13x = -26\\)\n\n\\(x = \\frac{-26}{13} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} - 1 = -2\\).",
+    "options": [
+      "-4",
+      "2",
+      "0",
+      "-2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 1: \\(\\frac{x}{2} = -1\\)\n\nMultiply both sides by 2: \\(x = 2 \\times -1 = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x + 1) + 3x = -69\\).",
+    "options": [
+      "7",
+      "-7",
+      "-9",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x + 8 + 3x = -69\\)\n\nCollect like terms: \\(11x + 8 = -69\\)\n\n\\(11x = -77\\)\n\n\\(x = \\frac{-77}{11} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 54. Find the smallest of the numbers.",
+    "options": [
+      "18",
+      "17",
+      "16",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 54\\)\n\n\\(3n + 3 = 54\\)\n\n\\(3n = 51\\), so \\(n = 17\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} - 2 = -5\\).",
+    "options": [
+      "6",
+      "-6",
+      "-4",
+      "-12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 2: \\(\\frac{x}{2} = -3\\)\n\nMultiply both sides by 2: \\(x = 2 \\times -3 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5x + 13 = -12\\).",
+    "options": [
+      "-6",
+      "-5",
+      "-4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x + 13 = -12\\)\n\nSubtract 13 from both sides: \\(5x = -25\\)\n\nDivide both sides by 5: \\(x = \\frac{-25}{5} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 48. Find the smallest of the numbers.",
+    "options": [
+      "15",
+      "14",
+      "17",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 48\\)\n\n\\(3n + 3 = 48\\)\n\n\\(3n = 45\\), so \\(n = 15\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-2x - 5y = -19\\) and \\(-5x - 2y = 5\\).",
+    "options": [
+      "\\(x = -2, y = 4\\)",
+      "\\(x = 5, y = -3\\)",
+      "\\(x = -3, y = 5\\)",
+      "\\(x = 3, y = -5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by -2 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 5\\).\n\nSubstituting \\(y = 5\\) into the first equation: \\(-2x - 25 = -19\\), so \\(x = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 33. Find the smallest of the numbers.",
+    "options": [
+      "9",
+      "10",
+      "12",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 33\\)\n\n\\(3n + 3 = 33\\)\n\n\\(3n = 30\\), so \\(n = 10\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-2x - y = -4\\) and \\(5x - y = 38\\).",
+    "options": [
+      "\\(x = 7, y = -9\\)",
+      "\\(x = -6, y = 8\\)",
+      "\\(x = -8, y = 6\\)",
+      "\\(x = 6, y = -8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by -2 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -8\\).\n\nSubstituting \\(y = -8\\) into the first equation: \\(-2x + 8 = -4\\), so \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 54 years, how old is the son?",
+    "options": [
+      "36 years",
+      "20 years",
+      "18 years",
+      "27 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 54\\)\n\n\\(3x = 54\\), so \\(x = 18\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x - 6) + 9x = 105\\).",
+    "options": [
+      "7",
+      "10",
+      "9",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x - 48 + 9x = 105\\)\n\nCollect like terms: \\(17x - 48 = 105\\)\n\n\\(17x = 153\\)\n\n\\(x = \\frac{153}{17} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{3} + 8 = 6\\).",
+    "options": [
+      "-18",
+      "-6",
+      "6",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 8: \\(\\frac{x}{3} = -2\\)\n\nMultiply both sides by 3: \\(x = 3 \\times -2 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8x + 17 = -31\\).",
+    "options": [
+      "6",
+      "-5",
+      "-7",
+      "-6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(8x + 17 = -31\\)\n\nSubtract 17 from both sides: \\(8x = -48\\)\n\nDivide both sides by 8: \\(x = \\frac{-48}{8} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 3) + 4x = -42\\).",
+    "options": [
+      "-6",
+      "6",
+      "-5",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(2x - 6 + 4x = -42\\)\n\nCollect like terms: \\(6x - 6 = -42\\)\n\n\\(6x = -36\\)\n\n\\(x = \\frac{-36}{6} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3x - 14 = -29\\).",
+    "options": [
+      "-6",
+      "-5",
+      "-4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3x - 14 = -29\\)\n\nAdd 14 to both sides: \\(3x = -15\\)\n\nDivide both sides by 3: \\(x = \\frac{-15}{3} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 120. Find the smallest of the numbers.",
+    "options": [
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 120\\)\n\n\\(3n + 3 = 120\\)\n\n\\(3n = 117\\), so \\(n = 39\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-2x + 9 = 13\\).",
+    "options": [
+      "-3",
+      "-1",
+      "-2",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-2x + 9 = 13\\)\n\nSubtract 9 from both sides: \\(-2x = 4\\)\n\nDivide both sides by -2: \\(x = \\frac{4}{-2} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 27 years, how old is the son?",
+    "options": [
+      "13.5 years",
+      "9 years",
+      "18 years",
+      "11 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 27\\)\n\n\\(3x = 27\\), so \\(x = 9\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-5x - 12 = 28\\).",
+    "options": [
+      "8",
+      "-9",
+      "-8",
+      "-7"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-5x - 12 = 28\\)\n\nAdd 12 to both sides: \\(-5x = 40\\)\n\nDivide both sides by -5: \\(x = \\frac{40}{-5} = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x - y = 2\\) and \\(-4x - 4y = -32\\).",
+    "options": [
+      "\\(x = 2, y = 6\\)",
+      "\\(x = 3, y = 5\\)",
+      "\\(x = 6, y = 2\\)",
+      "\\(x = -2, y = -6\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by -4 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(4x - 6 = 2\\), so \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 21. Find the smallest of the numbers.",
+    "options": [
+      "7",
+      "5",
+      "8",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 21\\)\n\n\\(3n + 3 = 21\\)\n\n\\(3n = 18\\), so \\(n = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x + 7) + 8x = 120\\).",
+    "options": [
+      "7",
+      "9",
+      "-9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(3x + 21 + 8x = 120\\)\n\nCollect like terms: \\(11x + 21 = 120\\)\n\n\\(11x = 99\\)\n\n\\(x = \\frac{99}{11} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-3x - 4y = -17\\) and \\(-2x - 4y = -14\\).",
+    "options": [
+      "\\(x = 4, y = 1\\)",
+      "\\(x = 2, y = 3\\)",
+      "\\(x = 3, y = 2\\)",
+      "\\(x = -3, y = -2\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by -2 and the second by -3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 2\\).\n\nSubstituting \\(y = 2\\) into the first equation: \\(-3x - 8 = -17\\), so \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-11x - 12 = 109\\).",
+    "options": [
+      "-10",
+      "-12",
+      "11",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-11x - 12 = 109\\)\n\nAdd 12 to both sides: \\(-11x = 121\\)\n\nDivide both sides by -11: \\(x = \\frac{121}{-11} = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-7x - 4 = -88\\).",
+    "options": [
+      "13",
+      "11",
+      "-12",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-7x - 4 = -88\\)\n\nAdd 4 to both sides: \\(-7x = -84\\)\n\nDivide both sides by -7: \\(x = \\frac{-84}{-7} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 35 years, how old is the son?",
+    "options": [
+      "7 years",
+      "17.5 years",
+      "28 years",
+      "11 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 35\\)\n\n\\(5x = 35\\), so \\(x = 7\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-2x + 15 = -5\\).",
+    "options": [
+      "-10",
+      "9",
+      "11",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-2x + 15 = -5\\)\n\nSubtract 15 from both sides: \\(-2x = -20\\)\n\nDivide both sides by -2: \\(x = \\frac{-20}{-2} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(5x - 5y = 25\\) and \\(-5x + 3y = -23\\).",
+    "options": [
+      "\\(x = -4, y = 1\\)",
+      "\\(x = 4, y = -1\\)",
+      "\\(x = 5, y = -2\\)",
+      "\\(x = -1, y = 4\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by 5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -1\\).\n\nSubstituting \\(y = -1\\) into the first equation: \\(5x + 5 = 25\\), so \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 93. Find the smallest of the numbers.",
+    "options": [
+      "30",
+      "32",
+      "31",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 93\\)\n\n\\(3n + 3 = 93\\)\n\n\\(3n = 90\\), so \\(n = 30\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 1) + 2x = 29\\).",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x - 7 + 2x = 29\\)\n\nCollect like terms: \\(9x - 7 = 29\\)\n\n\\(9x = 36\\)\n\n\\(x = \\frac{36}{9} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 32 years, how old is the son?",
+    "options": [
+      "8 years",
+      "11 years",
+      "16 years",
+      "24 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 32\\)\n\n\\(4x = 32\\), so \\(x = 8\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6(x + 2) + 2x = 60\\).",
+    "options": [
+      "4",
+      "-6",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(6x + 12 + 2x = 60\\)\n\nCollect like terms: \\(8x + 12 = 60\\)\n\n\\(8x = 48\\)\n\n\\(x = \\frac{48}{8} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 147. Find the smallest of the numbers.",
+    "options": [
+      "50",
+      "48",
+      "49",
+      "47"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 147\\)\n\n\\(3n + 3 = 147\\)\n\n\\(3n = 144\\), so \\(n = 48\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{5} - 6 = -7\\).",
+    "options": [
+      "-25",
+      "-5",
+      "5",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 6: \\(\\frac{x}{5} = -1\\)\n\nMultiply both sides by 5: \\(x = 5 \\times -1 = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x - 8) + 5x = 40\\).",
+    "options": [
+      "9",
+      "-8",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(3x - 24 + 5x = 40\\)\n\nCollect like terms: \\(8x - 24 = 40\\)\n\n\\(8x = 64\\)\n\n\\(x = \\frac{64}{8} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 159. Find the smallest of the numbers.",
+    "options": [
+      "52",
+      "51",
+      "54",
+      "53"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 159\\)\n\n\\(3n + 3 = 159\\)\n\n\\(3n = 156\\), so \\(n = 52\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x - 3) + 7x = -79\\).",
+    "options": [
+      "-7",
+      "7",
+      "-9",
+      "-6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x - 9 + 7x = -79\\)\n\nCollect like terms: \\(10x - 9 = -79\\)\n\n\\(10x = -70\\)\n\n\\(x = \\frac{-70}{10} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 18 years, how old is the son?",
+    "options": [
+      "8 years",
+      "6 years",
+      "12 years",
+      "9 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 18\\)\n\n\\(3x = 18\\), so \\(x = 6\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 5) + 2x = -107\\).",
+    "options": [
+      "8",
+      "-10",
+      "-7",
+      "-8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(7x - 35 + 2x = -107\\)\n\nCollect like terms: \\(9x - 35 = -107\\)\n\n\\(9x = -72\\)\n\n\\(x = \\frac{-72}{9} = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 28 years, how old is the son?",
+    "options": [
+      "14 years",
+      "10 years",
+      "21 years",
+      "7 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 28\\)\n\n\\(4x = 28\\), so \\(x = 7\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 2) + 8x = -29\\).",
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x - 14 + 8x = -29\\)\n\nCollect like terms: \\(15x - 14 = -29\\)\n\n\\(15x = -15\\)\n\n\\(x = \\frac{-15}{15} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 78. Find the smallest of the numbers.",
+    "options": [
+      "26",
+      "25",
+      "24",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 78\\)\n\n\\(3n + 3 = 78\\)\n\n\\(3n = 75\\), so \\(n = 25\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x + 2) + 9x = 54\\).",
+    "options": [
+      "2",
+      "4",
+      "-4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(3x + 6 + 9x = 54\\)\n\nCollect like terms: \\(12x + 6 = 54\\)\n\n\\(12x = 48\\)\n\n\\(x = \\frac{48}{12} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 144. Find the smallest of the numbers.",
+    "options": [
+      "46",
+      "49",
+      "48",
+      "47"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 144\\)\n\n\\(3n + 3 = 144\\)\n\n\\(3n = 141\\), so \\(n = 47\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-6x - 20 = 34\\).",
+    "options": [
+      "-9",
+      "9",
+      "-8",
+      "-10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-6x - 20 = 34\\)\n\nAdd 20 to both sides: \\(-6x = 54\\)\n\nDivide both sides by -6: \\(x = \\frac{54}{-6} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-10x + 19 = -81\\).",
+    "options": [
+      "10",
+      "-10",
+      "11",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-10x + 19 = -81\\)\n\nSubtract 19 from both sides: \\(-10x = -100\\)\n\nDivide both sides by -10: \\(x = \\frac{-100}{-10} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 183. Find the smallest of the numbers.",
+    "options": [
+      "61",
+      "62",
+      "59",
+      "60"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 183\\)\n\n\\(3n + 3 = 183\\)\n\n\\(3n = 180\\), so \\(n = 60\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-x - 2y = -1\\) and \\(4x + 5y = -5\\).",
+    "options": [
+      "\\(x = -5, y = 3\\)",
+      "\\(x = 3, y = -5\\)",
+      "\\(x = 5, y = -3\\)",
+      "\\(x = -4, y = 2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 4 and the second by -1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 3\\).\n\nSubstituting \\(y = 3\\) into the first equation: \\(-1x - 6 = -1\\), so \\(x = -5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3x - 11 = 13\\).",
+    "options": [
+      "7",
+      "9",
+      "8",
+      "-8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(3x - 11 = 13\\)\n\nAdd 11 to both sides: \\(3x = 24\\)\n\nDivide both sides by 3: \\(x = \\frac{24}{3} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x - 6) + 5x = -22\\).",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(8x - 48 + 5x = -22\\)\n\nCollect like terms: \\(13x - 48 = -22\\)\n\n\\(13x = 26\\)\n\n\\(x = \\frac{26}{13} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9x - 7 = 92\\).",
+    "options": [
+      "-11",
+      "10",
+      "12",
+      "11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x - 7 = 92\\)\n\nAdd 7 to both sides: \\(9x = 99\\)\n\nDivide both sides by 9: \\(x = \\frac{99}{9} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-7x - 13 = 8\\).",
+    "options": [
+      "-4",
+      "-2",
+      "3",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-7x - 13 = 8\\)\n\nAdd 13 to both sides: \\(-7x = 21\\)\n\nDivide both sides by -7: \\(x = \\frac{21}{-7} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 48 years, how old is the son?",
+    "options": [
+      "24 years",
+      "15 years",
+      "36 years",
+      "12 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 48\\)\n\n\\(4x = 48\\), so \\(x = 12\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6(x - 7) + 6x = -126\\).",
+    "options": [
+      "7",
+      "-7",
+      "-6",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(6x - 42 + 6x = -126\\)\n\nCollect like terms: \\(12x - 42 = -126\\)\n\n\\(12x = -84\\)\n\n\\(x = \\frac{-84}{12} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x - 1) + 6x = 51\\).",
+    "options": [
+      "7",
+      "-6",
+      "6",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(3x - 3 + 6x = 51\\)\n\nCollect like terms: \\(9x - 3 = 51\\)\n\n\\(9x = 54\\)\n\n\\(x = \\frac{54}{9} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8x - 16 = -56\\).",
+    "options": [
+      "-6",
+      "-4",
+      "-5",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(8x - 16 = -56\\)\n\nAdd 16 to both sides: \\(8x = -40\\)\n\nDivide both sides by 8: \\(x = \\frac{-40}{8} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 45. Find the smallest of the numbers.",
+    "options": [
+      "14",
+      "16",
+      "15",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 45\\)\n\n\\(3n + 3 = 45\\)\n\n\\(3n = 42\\), so \\(n = 14\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x + 1) + 3x = 27\\).",
+    "options": [
+      "0",
+      "-2",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(7x + 7 + 3x = 27\\)\n\nCollect like terms: \\(10x + 7 = 27\\)\n\n\\(10x = 20\\)\n\n\\(x = \\frac{20}{10} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 69. Find the smallest of the numbers.",
+    "options": [
+      "23",
+      "24",
+      "21",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 69\\)\n\n\\(3n + 3 = 69\\)\n\n\\(3n = 66\\), so \\(n = 22\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 100 years, how old is the son?",
+    "options": [
+      "80 years",
+      "50 years",
+      "24 years",
+      "20 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 100\\)\n\n\\(5x = 100\\), so \\(x = 20\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 72. Find the smallest of the numbers.",
+    "options": [
+      "25",
+      "23",
+      "24",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 72\\)\n\n\\(3n + 3 = 72\\)\n\n\\(3n = 69\\), so \\(n = 23\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x + 5) + 7x = -59\\).",
+    "options": [
+      "-9",
+      "-6",
+      "7",
+      "-7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(5x + 25 + 7x = -59\\)\n\nCollect like terms: \\(12x + 25 = -59\\)\n\n\\(12x = -84\\)\n\n\\(x = \\frac{-84}{12} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 6) + 3x = 3\\).",
+    "options": [
+      "4",
+      "-3",
+      "1",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x - 12 + 3x = 3\\)\n\nCollect like terms: \\(5x - 12 = 3\\)\n\n\\(5x = 15\\)\n\n\\(x = \\frac{15}{5} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 85 years, how old is the son?",
+    "options": [
+      "17 years",
+      "21 years",
+      "42.5 years",
+      "68 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 85\\)\n\n\\(5x = 85\\), so \\(x = 17\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x + 6) + 7x = -51\\).",
+    "options": [
+      "7",
+      "-9",
+      "-7",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(2x + 12 + 7x = -51\\)\n\nCollect like terms: \\(9x + 12 = -51\\)\n\n\\(9x = -63\\)\n\n\\(x = \\frac{-63}{9} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 7) + 2x = -31\\).",
+    "options": [
+      "-2",
+      "2",
+      "0",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(7x - 49 + 2x = -31\\)\n\nCollect like terms: \\(9x - 49 = -31\\)\n\n\\(9x = 18\\)\n\n\\(x = \\frac{18}{9} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-3x - 15 = -33\\).",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-3x - 15 = -33\\)\n\nAdd 15 to both sides: \\(-3x = -18\\)\n\nDivide both sides by -3: \\(x = \\frac{-18}{-3} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7x + 20 = -50\\).",
+    "options": [
+      "-11",
+      "-10",
+      "10",
+      "-9"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7x + 20 = -50\\)\n\nSubtract 20 from both sides: \\(7x = -70\\)\n\nDivide both sides by 7: \\(x = \\frac{-70}{7} = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(6x + 5y = -11\\) and \\(-2x + 4y = 32\\).",
+    "options": [
+      "\\(x = 6, y = -5\\)",
+      "\\(x = -6, y = 5\\)",
+      "\\(x = -5, y = 4\\)",
+      "\\(x = 5, y = -6\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by -2 and the second by 6 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 5\\).\n\nSubstituting \\(y = 5\\) into the first equation: \\(6x + 25 = -11\\), so \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(3x - 4y = 9\\) and \\(-6x + 6y = -12\\).",
+    "options": [
+      "\\(x = 1, y = 3\\)",
+      "\\(x = -3, y = -1\\)",
+      "\\(x = 0, y = -4\\)",
+      "\\(x = -1, y = -3\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -6 and the second by 3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -3\\).\n\nSubstituting \\(y = -3\\) into the first equation: \\(3x + 12 = 9\\), so \\(x = -1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-8x - 19 = 37\\).",
+    "options": [
+      "-8",
+      "7",
+      "-7",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-8x - 19 = 37\\)\n\nAdd 19 to both sides: \\(-8x = 56\\)\n\nDivide both sides by -8: \\(x = \\frac{56}{-8} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 20 years, how old is the son?",
+    "options": [
+      "15 years",
+      "5 years",
+      "8 years",
+      "10 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 20\\)\n\n\\(4x = 20\\), so \\(x = 5\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x - 3) + 7x = -78\\).",
+    "options": [
+      "-6",
+      "6",
+      "-8",
+      "-5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(4x - 12 + 7x = -78\\)\n\nCollect like terms: \\(11x - 12 = -78\\)\n\n\\(11x = -66\\)\n\n\\(x = \\frac{-66}{11} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-10x + 6 = 56\\).",
+    "options": [
+      "-6",
+      "5",
+      "-4",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-10x + 6 = 56\\)\n\nSubtract 6 from both sides: \\(-10x = 50\\)\n\nDivide both sides by -10: \\(x = \\frac{50}{-10} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 64 years, how old is the son?",
+    "options": [
+      "19 years",
+      "48 years",
+      "16 years",
+      "32 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 64\\)\n\n\\(4x = 64\\), so \\(x = 16\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 117. Find the smallest of the numbers.",
+    "options": [
+      "40",
+      "37",
+      "39",
+      "38"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 117\\)\n\n\\(3n + 3 = 117\\)\n\n\\(3n = 114\\), so \\(n = 38\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x - 3y = -26\\) and \\(4x + 3y = 10\\).",
+    "options": [
+      "\\(x = 2, y = -6\\)",
+      "\\(x = -1, y = 5\\)",
+      "\\(x = 6, y = -2\\)",
+      "\\(x = -2, y = 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by 4 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(4x - 18 = -26\\), so \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3x - 4 = -16\\).",
+    "options": [
+      "4",
+      "-5",
+      "-3",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(3x - 4 = -16\\)\n\nAdd 4 to both sides: \\(3x = -12\\)\n\nDivide both sides by 3: \\(x = \\frac{-12}{3} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 180. Find the smallest of the numbers.",
+    "options": [
+      "59",
+      "61",
+      "58",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 180\\)\n\n\\(3n + 3 = 180\\)\n\n\\(3n = 177\\), so \\(n = 59\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{4} + 2 = 3\\).",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "-4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 2: \\(\\frac{x}{4} = 1\\)\n\nMultiply both sides by 4: \\(x = 4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7x - 12 = -40\\).",
+    "options": [
+      "-3",
+      "-4",
+      "4",
+      "-5"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(7x - 12 = -40\\)\n\nAdd 12 to both sides: \\(7x = -28\\)\n\nDivide both sides by 7: \\(x = \\frac{-28}{7} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 36 years, how old is the son?",
+    "options": [
+      "9 years",
+      "12 years",
+      "27 years",
+      "18 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 36\\)\n\n\\(4x = 36\\), so \\(x = 9\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-3x + 19 = 49\\).",
+    "options": [
+      "-9",
+      "-11",
+      "-10",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-3x + 19 = 49\\)\n\nSubtract 19 from both sides: \\(-3x = 30\\)\n\nDivide both sides by -3: \\(x = \\frac{30}{-3} = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-x - y = -2\\) and \\(2x + y = 8\\).",
+    "options": [
+      "\\(x = -4, y = 6\\)",
+      "\\(x = 7, y = -5\\)",
+      "\\(x = 6, y = -4\\)",
+      "\\(x = -6, y = 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by 2 and the second by -1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -4\\).\n\nSubstituting \\(y = -4\\) into the first equation: \\(-1x + 4 = -2\\), so \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x + 2) + 2x = -9\\).",
+    "options": [
+      "-3",
+      "-2",
+      "-5",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x + 6 + 2x = -9\\)\n\nCollect like terms: \\(5x + 6 = -9\\)\n\n\\(5x = -15\\)\n\n\\(x = \\frac{-15}{5} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(5x + 6y = 47\\) and \\(5x - y = -2\\).",
+    "options": [
+      "\\(x = 7, y = 1\\)",
+      "\\(x = 2, y = 6\\)",
+      "\\(x = 1, y = 7\\)",
+      "\\(x = -1, y = -7\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by 5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 7\\).\n\nSubstituting \\(y = 7\\) into the first equation: \\(5x + 42 = 47\\), so \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-10x + 3 = 103\\).",
+    "options": [
+      "-10",
+      "-9",
+      "-11",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-10x + 3 = 103\\)\n\nSubtract 3 from both sides: \\(-10x = 100\\)\n\nDivide both sides by -10: \\(x = \\frac{100}{-10} = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-9x + 15 = -21\\).",
+    "options": [
+      "-4",
+      "5",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-9x + 15 = -21\\)\n\nSubtract 15 from both sides: \\(-9x = -36\\)\n\nDivide both sides by -9: \\(x = \\frac{-36}{-9} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 80 years, how old is the son?",
+    "options": [
+      "23 years",
+      "20 years",
+      "60 years",
+      "40 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 80\\)\n\n\\(4x = 80\\), so \\(x = 20\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x + 8) + 6x = 22\\).",
+    "options": [
+      "-3",
+      "-5",
+      "3",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(8x + 64 + 6x = 22\\)\n\nCollect like terms: \\(14x + 64 = 22\\)\n\n\\(14x = -42\\)\n\n\\(x = \\frac{-42}{14} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x - 1) + 8x = -14\\).",
+    "options": [
+      "-1",
+      "1",
+      "-3",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x - 3 + 8x = -14\\)\n\nCollect like terms: \\(11x - 3 = -14\\)\n\n\\(11x = -11\\)\n\n\\(x = \\frac{-11}{11} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x + 4) + 4x = 38\\).",
+    "options": [
+      "2",
+      "3",
+      "0",
+      "-2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(5x + 20 + 4x = 38\\)\n\nCollect like terms: \\(9x + 20 = 38\\)\n\n\\(9x = 18\\)\n\n\\(x = \\frac{18}{9} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(10x + 6 = 36\\).",
+    "options": [
+      "4",
+      "-3",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(10x + 6 = 36\\)\n\nSubtract 6 from both sides: \\(10x = 30\\)\n\nDivide both sides by 10: \\(x = \\frac{30}{10} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 44 years, how old is the son?",
+    "options": [
+      "33 years",
+      "11 years",
+      "14 years",
+      "22 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 44\\)\n\n\\(4x = 44\\), so \\(x = 11\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-4x + 5 = -43\\).",
+    "options": [
+      "-12",
+      "13",
+      "12",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-4x + 5 = -43\\)\n\nSubtract 5 from both sides: \\(-4x = -48\\)\n\nDivide both sides by -4: \\(x = \\frac{-48}{-4} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-6x - 9 = 33\\).",
+    "options": [
+      "-7",
+      "-8",
+      "-6",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-6x - 9 = 33\\)\n\nAdd 9 to both sides: \\(-6x = 42\\)\n\nDivide both sides by -6: \\(x = \\frac{42}{-6} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(6x - 3y = 6\\) and \\(5x - 6y = -16\\).",
+    "options": [
+      "\\(x = -4, y = -6\\)",
+      "\\(x = 6, y = 4\\)",
+      "\\(x = 5, y = 5\\)",
+      "\\(x = 4, y = 6\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by 6 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(6x - 18 = 6\\), so \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-7x + 5 = 82\\).",
+    "options": [
+      "-11",
+      "11",
+      "-12",
+      "-10"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-7x + 5 = 82\\)\n\nSubtract 5 from both sides: \\(-7x = 77\\)\n\nDivide both sides by -7: \\(x = \\frac{77}{-7} = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{4} - 8 = -7\\).",
+    "options": [
+      "16",
+      "-4",
+      "8",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Add 8: \\(\\frac{x}{4} = 1\\)\n\nMultiply both sides by 4: \\(x = 4 \\times 1 = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-3x - y = -7\\) and \\(-5x - 5y = -15\\).",
+    "options": [
+      "\\(x = -2, y = -1\\)",
+      "\\(x = 2, y = 1\\)",
+      "\\(x = 1, y = 2\\)",
+      "\\(x = 3, y = 0\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by -3 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 1\\).\n\nSubstituting \\(y = 1\\) into the first equation: \\(-3x - 1 = -7\\), so \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 40 years, how old is the son?",
+    "options": [
+      "13 years",
+      "30 years",
+      "10 years",
+      "20 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 40\\)\n\n\\(4x = 40\\), so \\(x = 10\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x + 9) + 6x = 82\\).",
+    "options": [
+      "9",
+      "8",
+      "-8",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(2x + 18 + 6x = 82\\)\n\nCollect like terms: \\(8x + 18 = 82\\)\n\n\\(8x = 64\\)\n\n\\(x = \\frac{64}{8} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 36 years, how old is the son?",
+    "options": [
+      "12 years",
+      "24 years",
+      "14 years",
+      "18 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 36\\)\n\n\\(3x = 36\\), so \\(x = 12\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 30 years, how old is the son?",
+    "options": [
+      "20 years",
+      "12 years",
+      "15 years",
+      "10 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 30\\)\n\n\\(3x = 30\\), so \\(x = 10\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6(x - 5) + 2x = -86\\).",
+    "options": [
+      "7",
+      "-6",
+      "-7",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(6x - 30 + 2x = -86\\)\n\nCollect like terms: \\(8x - 30 = -86\\)\n\n\\(8x = -56\\)\n\n\\(x = \\frac{-56}{8} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 4) + 3x = -53\\).",
+    "options": [
+      "-11",
+      "9",
+      "-8",
+      "-9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x - 8 + 3x = -53\\)\n\nCollect like terms: \\(5x - 8 = -53\\)\n\n\\(5x = -45\\)\n\n\\(x = \\frac{-45}{5} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 18. Find the smallest of the numbers.",
+    "options": [
+      "4",
+      "6",
+      "7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 18\\)\n\n\\(3n + 3 = 18\\)\n\n\\(3n = 15\\), so \\(n = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 60 years, how old is the son?",
+    "options": [
+      "15 years",
+      "18 years",
+      "45 years",
+      "30 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 60\\)\n\n\\(4x = 60\\), so \\(x = 15\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(12x - 6 = -114\\).",
+    "options": [
+      "-8",
+      "-9",
+      "9",
+      "-10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(12x - 6 = -114\\)\n\nAdd 6 to both sides: \\(12x = -108\\)\n\nDivide both sides by 12: \\(x = \\frac{-108}{12} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 39 years, how old is the son?",
+    "options": [
+      "26 years",
+      "15 years",
+      "13 years",
+      "19.5 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 39\\)\n\n\\(3x = 39\\), so \\(x = 13\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-8x - 3 = 77\\).",
+    "options": [
+      "-9",
+      "-11",
+      "10",
+      "-10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-8x - 3 = 77\\)\n\nAdd 3 to both sides: \\(-8x = 80\\)\n\nDivide both sides by -8: \\(x = \\frac{80}{-8} = -10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5x + 6 = 16\\).",
+    "options": [
+      "1",
+      "2",
+      "-2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x + 6 = 16\\)\n\nSubtract 6 from both sides: \\(5x = 10\\)\n\nDivide both sides by 5: \\(x = \\frac{10}{5} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x + 2y = 2\\) and \\(x + 4y = -17\\).",
+    "options": [
+      "\\(x = 3, y = -5\\)",
+      "\\(x = 4, y = -6\\)",
+      "\\(x = -5, y = 3\\)",
+      "\\(x = -3, y = 5\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 1 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -5\\).\n\nSubstituting \\(y = -5\\) into the first equation: \\(4x - 10 = 2\\), so \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(11x + 13 = -64\\).",
+    "options": [
+      "7",
+      "-7",
+      "-8",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(11x + 13 = -64\\)\n\nSubtract 13 from both sides: \\(11x = -77\\)\n\nDivide both sides by 11: \\(x = \\frac{-77}{11} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 48 years, how old is the son?",
+    "options": [
+      "24 years",
+      "32 years",
+      "16 years",
+      "18 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 48\\)\n\n\\(3x = 48\\), so \\(x = 16\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7x - 9 = 40\\).",
+    "options": [
+      "8",
+      "6",
+      "-7",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(7x - 9 = 40\\)\n\nAdd 9 to both sides: \\(7x = 49\\)\n\nDivide both sides by 7: \\(x = \\frac{49}{7} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 24. Find the smallest of the numbers.",
+    "options": [
+      "9",
+      "8",
+      "6",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 24\\)\n\n\\(3n + 3 = 24\\)\n\n\\(3n = 21\\), so \\(n = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} - 10 = -7\\).",
+    "options": [
+      "6",
+      "-6",
+      "8",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 10: \\(\\frac{x}{2} = 3\\)\n\nMultiply both sides by 2: \\(x = 2 \\times 3 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x + 2) + 4x = 64\\).",
+    "options": [
+      "4",
+      "-6",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(5x + 10 + 4x = 64\\)\n\nCollect like terms: \\(9x + 10 = 64\\)\n\n\\(9x = 54\\)\n\n\\(x = \\frac{54}{9} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-2x - 3 = 11\\).",
+    "options": [
+      "-8",
+      "7",
+      "-7",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-2x - 3 = 11\\)\n\nAdd 3 to both sides: \\(-2x = 14\\)\n\nDivide both sides by -2: \\(x = \\frac{14}{-2} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} + 3 = 7\\).",
+    "options": [
+      "8",
+      "10",
+      "16",
+      "-8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 3: \\(\\frac{x}{2} = 4\\)\n\nMultiply both sides by 2: \\(x = 2 \\times 4 = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 27. Find the smallest of the numbers.",
+    "options": [
+      "10",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 27\\)\n\n\\(3n + 3 = 27\\)\n\n\\(3n = 24\\), so \\(n = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x - 3) + 9x = -141\\).",
+    "options": [
+      "-8",
+      "-9",
+      "9",
+      "-11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x - 15 + 9x = -141\\)\n\nCollect like terms: \\(14x - 15 = -141\\)\n\n\\(14x = -126\\)\n\n\\(x = \\frac{-126}{14} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 114. Find the smallest of the numbers.",
+    "options": [
+      "36",
+      "38",
+      "37",
+      "39"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 114\\)\n\n\\(3n + 3 = 114\\)\n\n\\(3n = 111\\), so \\(n = 37\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5x + 18 = 3\\).",
+    "options": [
+      "-4",
+      "-2",
+      "3",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5x + 18 = 3\\)\n\nSubtract 18 from both sides: \\(5x = -15\\)\n\nDivide both sides by 5: \\(x = \\frac{-15}{5} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-8x + 11 = -53\\).",
+    "options": [
+      "-8",
+      "9",
+      "7",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-8x + 11 = -53\\)\n\nSubtract 11 from both sides: \\(-8x = -64\\)\n\nDivide both sides by -8: \\(x = \\frac{-64}{-8} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6x + 6 = 72\\).",
+    "options": [
+      "12",
+      "11",
+      "10",
+      "-11"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6x + 6 = 72\\)\n\nSubtract 6 from both sides: \\(6x = 66\\)\n\nDivide both sides by 6: \\(x = \\frac{66}{6} = 11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x + 5) + 6x = 48\\).",
+    "options": [
+      "-1",
+      "48",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x + 35 + 6x = 48\\)\n\nCollect like terms: \\(13x + 35 = 48\\)\n\n\\(13x = 13\\)\n\n\\(x = \\frac{13}{13} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x - 2y = -10\\) and \\(-6x - 6y = 6\\).",
+    "options": [
+      "\\(x = 1, y = -2\\)",
+      "\\(x = -1, y = 0\\)",
+      "\\(x = 2, y = -1\\)",
+      "\\(x = -2, y = 1\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -6 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 1\\).\n\nSubstituting \\(y = 1\\) into the first equation: \\(4x - 2 = -10\\), so \\(x = -2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 70 years, how old is the son?",
+    "options": [
+      "18 years",
+      "35 years",
+      "56 years",
+      "14 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 70\\)\n\n\\(5x = 70\\), so \\(x = 14\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{6} + 4 = 3\\).",
+    "options": [
+      "-36",
+      "-6",
+      "6",
+      "0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subtract 4: \\(\\frac{x}{6} = -1\\)\n\nMultiply both sides by 6: \\(x = 6 \\times -1 = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 55 years, how old is the son?",
+    "options": [
+      "11 years",
+      "15 years",
+      "27.5 years",
+      "44 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 55\\)\n\n\\(5x = 55\\), so \\(x = 11\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 24 years, how old is the son?",
+    "options": [
+      "9 years",
+      "12 years",
+      "18 years",
+      "6 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 24\\)\n\n\\(4x = 24\\), so \\(x = 6\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-x - 6y = -8\\) and \\(5x - 2y = -24\\).",
+    "options": [
+      "\\(x = -4, y = 2\\)",
+      "\\(x = -3, y = 1\\)",
+      "\\(x = 2, y = -4\\)",
+      "\\(x = 4, y = -2\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by -1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 2\\).\n\nSubstituting \\(y = 2\\) into the first equation: \\(-1x - 12 = -8\\), so \\(x = -4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x + 4) + 7x = -14\\).",
+    "options": [
+      "3",
+      "-5",
+      "-3",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x + 28 + 7x = -14\\)\n\nCollect like terms: \\(14x + 28 = -14\\)\n\n\\(14x = -42\\)\n\n\\(x = \\frac{-42}{14} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 96. Find the smallest of the numbers.",
+    "options": [
+      "32",
+      "33",
+      "31",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 96\\)\n\n\\(3n + 3 = 96\\)\n\n\\(3n = 93\\), so \\(n = 31\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x - 3) + 3x = -47\\).",
+    "options": [
+      "-6",
+      "4",
+      "-3",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(5x - 15 + 3x = -47\\)\n\nCollect like terms: \\(8x - 15 = -47\\)\n\n\\(8x = -32\\)\n\n\\(x = \\frac{-32}{8} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x + 3) + 3x = -25\\).",
+    "options": [
+      "-4",
+      "-5",
+      "-7",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x + 15 + 3x = -25\\)\n\nCollect like terms: \\(8x + 15 = -25\\)\n\n\\(8x = -40\\)\n\n\\(x = \\frac{-40}{8} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 65 years, how old is the son?",
+    "options": [
+      "17 years",
+      "32.5 years",
+      "13 years",
+      "52 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 65\\)\n\n\\(5x = 65\\), so \\(x = 13\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-6x + 3y = -36\\) and \\(4x - 4y = 16\\).",
+    "options": [
+      "\\(x = 9, y = 3\\)",
+      "\\(x = 4, y = 8\\)",
+      "\\(x = 8, y = 4\\)",
+      "\\(x = -8, y = -4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by 4 and the second by -6 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 4\\).\n\nSubstituting \\(y = 4\\) into the first equation: \\(-6x + 12 = -36\\), so \\(x = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(5x - 5y = 5\\) and \\(-5x + 2y = 16\\).",
+    "options": [
+      "\\(x = 6, y = 7\\)",
+      "\\(x = -7, y = -6\\)",
+      "\\(x = -5, y = -8\\)",
+      "\\(x = -6, y = -7\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by 5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -7\\).\n\nSubstituting \\(y = -7\\) into the first equation: \\(5x + 35 = 5\\), so \\(x = -6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6(x + 5) + 8x = -40\\).",
+    "options": [
+      "-4",
+      "-7",
+      "-5",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(6x + 30 + 8x = -40\\)\n\nCollect like terms: \\(14x + 30 = -40\\)\n\n\\(14x = -70\\)\n\n\\(x = \\frac{-70}{14} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x - 5) + 2x = -10\\).",
+    "options": [
+      "-3",
+      "4",
+      "1",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(8x - 40 + 2x = -10\\)\n\nCollect like terms: \\(10x - 40 = -10\\)\n\n\\(10x = 30\\)\n\n\\(x = \\frac{30}{10} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x + 4y = 20\\) and \\(-2x + 2y = 22\\).",
+    "options": [
+      "\\(x = -3, y = 8\\)",
+      "\\(x = -2, y = 7\\)",
+      "\\(x = 3, y = -8\\)",
+      "\\(x = 8, y = -3\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by -2 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 8\\).\n\nSubstituting \\(y = 8\\) into the first equation: \\(4x + 32 = 20\\), so \\(x = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x - 1) + 5x = 75\\).",
+    "options": [
+      "9",
+      "8",
+      "-8",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x - 5 + 5x = 75\\)\n\nCollect like terms: \\(10x - 5 = 75\\)\n\n\\(10x = 80\\)\n\n\\(x = \\frac{80}{10} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x + 1) + 6x = 84\\).",
+    "options": [
+      "-8",
+      "6",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(4x + 4 + 6x = 84\\)\n\nCollect like terms: \\(10x + 4 = 84\\)\n\n\\(10x = 80\\)\n\n\\(x = \\frac{80}{10} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7x + 10 = 94\\).",
+    "options": [
+      "11",
+      "13",
+      "-12",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(7x + 10 = 94\\)\n\nSubtract 10 from both sides: \\(7x = 84\\)\n\nDivide both sides by 7: \\(x = \\frac{84}{7} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8x + 15 = -41\\).",
+    "options": [
+      "-6",
+      "-7",
+      "7",
+      "-8"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(8x + 15 = -41\\)\n\nSubtract 15 from both sides: \\(8x = -56\\)\n\nDivide both sides by 8: \\(x = \\frac{-56}{8} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6(x - 4) + 2x = -32\\).",
+    "options": [
+      "1",
+      "0",
+      "-3",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(6x - 24 + 2x = -32\\)\n\nCollect like terms: \\(8x - 24 = -32\\)\n\n\\(8x = -8\\)\n\n\\(x = \\frac{-8}{8} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x - 5) + 5x = -15\\).",
+    "options": [
+      "1",
+      "-15",
+      "-1",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(5x - 25 + 5x = -15\\)\n\nCollect like terms: \\(10x - 25 = -15\\)\n\n\\(10x = 10\\)\n\n\\(x = \\frac{10}{10} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-8x + 6 = -90\\).",
+    "options": [
+      "-12",
+      "12",
+      "11",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-8x + 6 = -90\\)\n\nSubtract 6 from both sides: \\(-8x = -96\\)\n\nDivide both sides by -8: \\(x = \\frac{-96}{-8} = 12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x - 6) + 9x = 0\\).",
+    "options": [
+      "3",
+      "4",
+      "1",
+      "-3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(9x - 54 + 9x = 0\\)\n\nCollect like terms: \\(18x - 54 = 0\\)\n\n\\(18x = 54\\)\n\n\\(x = \\frac{54}{18} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-5x + y = -23\\) and \\(2x + 5y = -34\\).",
+    "options": [
+      "\\(x = -8, y = 3\\)",
+      "\\(x = 4, y = -9\\)",
+      "\\(x = -3, y = 8\\)",
+      "\\(x = 3, y = -8\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by 2 and the second by -5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -8\\).\n\nSubstituting \\(y = -8\\) into the first equation: \\(-5x - 8 = -23\\), so \\(x = 3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-12x + 15 = 27\\).",
+    "options": [
+      "1",
+      "-2",
+      "0",
+      "-1"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-12x + 15 = 27\\)\n\nSubtract 15 from both sides: \\(-12x = 12\\)\n\nDivide both sides by -12: \\(x = \\frac{12}{-12} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2x - 11 = 9\\).",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "-10"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(2x - 11 = 9\\)\n\nAdd 11 to both sides: \\(2x = 20\\)\n\nDivide both sides by 2: \\(x = \\frac{20}{2} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 24 years, how old is the son?",
+    "options": [
+      "10 years",
+      "12 years",
+      "8 years",
+      "16 years"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 24\\)\n\n\\(3x = 24\\), so \\(x = 8\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3x - 20 = -41\\).",
+    "options": [
+      "-7",
+      "-8",
+      "7",
+      "-6"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(3x - 20 = -41\\)\n\nAdd 20 to both sides: \\(3x = -21\\)\n\nDivide both sides by 3: \\(x = \\frac{-21}{3} = -7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x - 8) + 5x = 48\\).",
+    "options": [
+      "9",
+      "7",
+      "-9",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x - 24 + 5x = 48\\)\n\nCollect like terms: \\(8x - 24 = 48\\)\n\n\\(8x = 72\\)\n\n\\(x = \\frac{72}{8} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 51. Find the smallest of the numbers.",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 51\\)\n\n\\(3n + 3 = 51\\)\n\n\\(3n = 48\\), so \\(n = 16\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-12x - 8 = -80\\).",
+    "options": [
+      "6",
+      "-6",
+      "7",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-12x - 8 = -80\\)\n\nAdd 8 to both sides: \\(-12x = -72\\)\n\nDivide both sides by -12: \\(x = \\frac{-72}{-12} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-2x + 3y = -6\\) and \\(x - 4y = -2\\).",
+    "options": [
+      "\\(x = 7, y = 1\\)",
+      "\\(x = 6, y = 2\\)",
+      "\\(x = 2, y = 6\\)",
+      "\\(x = -6, y = -2\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by 1 and the second by -2 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 2\\).\n\nSubstituting \\(y = 2\\) into the first equation: \\(-2x + 6 = -6\\), so \\(x = 6\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(6x - 2y = 14\\) and \\(2x - 2y = 10\\).",
+    "options": [
+      "\\(x = 1, y = -4\\)",
+      "\\(x = -1, y = 4\\)",
+      "\\(x = 2, y = -5\\)",
+      "\\(x = -4, y = 1\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 2 and the second by 6 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -4\\).\n\nSubstituting \\(y = -4\\) into the first equation: \\(6x + 8 = 14\\), so \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-5x + 19 = -11\\).",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(-5x + 19 = -11\\)\n\nSubtract 19 from both sides: \\(-5x = -30\\)\n\nDivide both sides by -5: \\(x = \\frac{-30}{-5} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} - 6 = -10\\).",
+    "options": [
+      "-16",
+      "-8",
+      "-6",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Add 6: \\(\\frac{x}{2} = -4\\)\n\nMultiply both sides by 2: \\(x = 2 \\times -4 = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2x - 3 = -13\\).",
+    "options": [
+      "-4",
+      "5",
+      "-6",
+      "-5"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x - 3 = -13\\)\n\nAdd 3 to both sides: \\(2x = -10\\)\n\nDivide both sides by 2: \\(x = \\frac{-10}{2} = -5\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x + 7) + 6x = 98\\).",
+    "options": [
+      "3",
+      "1",
+      "-3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(8x + 56 + 6x = 98\\)\n\nCollect like terms: \\(14x + 56 = 98\\)\n\n\\(14x = 42\\)\n\n\\(x = \\frac{42}{14} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9x - 19 = -91\\).",
+    "options": [
+      "-7",
+      "-9",
+      "8",
+      "-8"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x - 19 = -91\\)\n\nAdd 19 to both sides: \\(9x = -72\\)\n\nDivide both sides by 9: \\(x = \\frac{-72}{9} = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 4) + 5x = -29\\).",
+    "options": [
+      "-3",
+      "-5",
+      "-2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(2x - 8 + 5x = -29\\)\n\nCollect like terms: \\(7x - 8 = -29\\)\n\n\\(7x = -21\\)\n\n\\(x = \\frac{-21}{7} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(x - 6y = -34\\) and \\(5x - 6y = -26\\).",
+    "options": [
+      "\\(x = 6, y = 2\\)",
+      "\\(x = -2, y = -6\\)",
+      "\\(x = 2, y = 6\\)",
+      "\\(x = 3, y = 5\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by 5 and the second by 1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 6\\).\n\nSubstituting \\(y = 6\\) into the first equation: \\(1x - 36 = -34\\), so \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-12x + 6 = 138\\).",
+    "options": [
+      "-10",
+      "-12",
+      "11",
+      "-11"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-12x + 6 = 138\\)\n\nSubtract 6 from both sides: \\(-12x = 132\\)\n\nDivide both sides by -12: \\(x = \\frac{132}{-12} = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2x - 16 = -4\\).",
+    "options": [
+      "5",
+      "7",
+      "-6",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x - 16 = -4\\)\n\nAdd 16 to both sides: \\(2x = 12\\)\n\nDivide both sides by 2: \\(x = \\frac{12}{2} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} + 10 = 15\\).",
+    "options": [
+      "10",
+      "20",
+      "12",
+      "-10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtract 10: \\(\\frac{x}{2} = 5\\)\n\nMultiply both sides by 2: \\(x = 2 \\times 5 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6x - 4 = 2\\).",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(6x - 4 = 2\\)\n\nAdd 4 to both sides: \\(6x = 6\\)\n\nDivide both sides by 6: \\(x = \\frac{6}{6} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(6(x + 1) + 8x = 20\\).",
+    "options": [
+      "20",
+      "2",
+      "1",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(6x + 6 + 8x = 20\\)\n\nCollect like terms: \\(14x + 6 = 20\\)\n\n\\(14x = 14\\)\n\n\\(x = \\frac{14}{14} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x + 9) + 9x = 31\\).",
+    "options": [
+      "0",
+      "-1",
+      "-3",
+      "1"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x + 45 + 9x = 31\\)\n\nCollect like terms: \\(14x + 45 = 31\\)\n\n\\(14x = -14\\)\n\n\\(x = \\frac{-14}{14} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-7x - 4 = 80\\).",
+    "options": [
+      "-12",
+      "-13",
+      "12",
+      "-11"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(-7x - 4 = 80\\)\n\nAdd 4 to both sides: \\(-7x = 84\\)\n\nDivide both sides by -7: \\(x = \\frac{84}{-7} = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 42 years, how old is the son?",
+    "options": [
+      "21 years",
+      "16 years",
+      "28 years",
+      "14 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 42\\)\n\n\\(3x = 42\\), so \\(x = 14\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 8) + 4x = 26\\).",
+    "options": [
+      "-7",
+      "5",
+      "8",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x - 16 + 4x = 26\\)\n\nCollect like terms: \\(6x - 16 = 26\\)\n\n\\(6x = 42\\)\n\n\\(x = \\frac{42}{6} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x + 4) + 3x = 72\\).",
+    "options": [
+      "-8",
+      "8",
+      "9",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x + 16 + 3x = 72\\)\n\nCollect like terms: \\(7x + 16 = 72\\)\n\n\\(7x = 56\\)\n\n\\(x = \\frac{56}{7} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-2x + 18 = 34\\).",
+    "options": [
+      "-7",
+      "8",
+      "-8",
+      "-9"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-2x + 18 = 34\\)\n\nSubtract 18 from both sides: \\(-2x = 16\\)\n\nDivide both sides by -2: \\(x = \\frac{16}{-2} = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 141. Find the smallest of the numbers.",
+    "options": [
+      "48",
+      "47",
+      "46",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 141\\)\n\n\\(3n + 3 = 141\\)\n\n\\(3n = 138\\), so \\(n = 46\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 2 times as old as his son. If the sum of their ages is 33 years, how old is the son?",
+    "options": [
+      "13 years",
+      "11 years",
+      "22 years",
+      "16.5 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(2x\\).\n\n\\(x + 2x = 33\\)\n\n\\(3x = 33\\), so \\(x = 11\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x + 6) + 3x = 59\\).",
+    "options": [
+      "2",
+      "59",
+      "-1",
+      "1"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(8x + 48 + 3x = 59\\)\n\nCollect like terms: \\(11x + 48 = 59\\)\n\n\\(11x = 11\\)\n\n\\(x = \\frac{11}{11} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x - 4) + 7x = -60\\).",
+    "options": [
+      "4",
+      "-4",
+      "-3",
+      "-6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(4x - 16 + 7x = -60\\)\n\nCollect like terms: \\(11x - 16 = -60\\)\n\n\\(11x = -44\\)\n\n\\(x = \\frac{-44}{11} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 156. Find the smallest of the numbers.",
+    "options": [
+      "51",
+      "52",
+      "50",
+      "53"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 156\\)\n\n\\(3n + 3 = 156\\)\n\n\\(3n = 153\\), so \\(n = 51\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 75 years, how old is the son?",
+    "options": [
+      "60 years",
+      "37.5 years",
+      "19 years",
+      "15 years"
+    ],
+    "correctIndex": 3,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 75\\)\n\n\\(5x = 75\\), so \\(x = 15\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9x + 14 = 95\\).",
+    "options": [
+      "8",
+      "10",
+      "-9",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(9x + 14 = 95\\)\n\nSubtract 14 from both sides: \\(9x = 81\\)\n\nDivide both sides by 9: \\(x = \\frac{81}{9} = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(5x + 2y = 14\\) and \\(x - 3y = 13\\).",
+    "options": [
+      "\\(x = 4, y = -3\\)",
+      "\\(x = -3, y = 4\\)",
+      "\\(x = -4, y = 3\\)",
+      "\\(x = 5, y = -4\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by 1 and the second by 5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -3\\).\n\nSubstituting \\(y = -3\\) into the first equation: \\(5x - 6 = 14\\), so \\(x = 4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x + 5) + 3x = 45\\).",
+    "options": [
+      "-1",
+      "2",
+      "1",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(7x + 35 + 3x = 45\\)\n\nCollect like terms: \\(10x + 35 = 45\\)\n\n\\(10x = 10\\)\n\n\\(x = \\frac{10}{10} = 1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 3 times as old as his son. If the sum of their ages is 52 years, how old is the son?",
+    "options": [
+      "13 years",
+      "26 years",
+      "16 years",
+      "39 years"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(3x\\).\n\n\\(x + 3x = 52\\)\n\n\\(4x = 52\\), so \\(x = 13\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-x + 4y = 27\\) and \\(-x - 2y = -21\\).",
+    "options": [
+      "\\(x = 5, y = 8\\)",
+      "\\(x = -5, y = -8\\)",
+      "\\(x = 8, y = 5\\)",
+      "\\(x = 6, y = 7\\)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Use elimination. Multiply the first equation by -1 and the second by -1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 8\\).\n\nSubstituting \\(y = 8\\) into the first equation: \\(-1x + 32 = 27\\), so \\(x = 5\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-5x - 2y = 11\\) and \\(-5x + 4y = -37\\).",
+    "options": [
+      "\\(x = 2, y = -9\\)",
+      "\\(x = 1, y = -8\\)",
+      "\\(x = -8, y = 1\\)",
+      "\\(x = -1, y = 8\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by -5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -8\\).\n\nSubstituting \\(y = -8\\) into the first equation: \\(-5x + 16 = 11\\), so \\(x = 1\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 9) + 9x = 26\\).",
+    "options": [
+      "2",
+      "5",
+      "-4",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(2x - 18 + 9x = 26\\)\n\nCollect like terms: \\(11x - 18 = 26\\)\n\n\\(11x = 44\\)\n\n\\(x = \\frac{44}{11} = 4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5x - 20 = 15\\).",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(5x - 20 = 15\\)\n\nAdd 20 to both sides: \\(5x = 35\\)\n\nDivide both sides by 5: \\(x = \\frac{35}{5} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3x - 18 = 3\\).",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "-7"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(3x - 18 = 3\\)\n\nAdd 18 to both sides: \\(3x = 21\\)\n\nDivide both sides by 3: \\(x = \\frac{21}{3} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{6} - 10 = -9\\).",
+    "options": [
+      "6",
+      "12",
+      "-6",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Add 10: \\(\\frac{x}{6} = 1\\)\n\nMultiply both sides by 6: \\(x = 6 \\times 1 = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 135. Find the smallest of the numbers.",
+    "options": [
+      "44",
+      "43",
+      "45",
+      "46"
+    ],
+    "correctIndex": 0,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 135\\)\n\n\\(3n + 3 = 135\\)\n\n\\(3n = 132\\), so \\(n = 44\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} + 10 = 8\\).",
+    "options": [
+      "-8",
+      "4",
+      "-4",
+      "-2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 10: \\(\\frac{x}{2} = -2\\)\n\nMultiply both sides by 2: \\(x = 2 \\times -2 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x - 3) + 2x = -4\\).",
+    "options": [
+      "2",
+      "-2",
+      "0",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(8x - 24 + 2x = -4\\)\n\nCollect like terms: \\(10x - 24 = -4\\)\n\n\\(10x = 20\\)\n\n\\(x = \\frac{20}{10} = 2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5x + 7 = -53\\).",
+    "options": [
+      "12",
+      "-11",
+      "-13",
+      "-12"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(5x + 7 = -53\\)\n\nSubtract 7 from both sides: \\(5x = -60\\)\n\nDivide both sides by 5: \\(x = \\frac{-60}{5} = -12\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x - 6) + 6x = -104\\).",
+    "options": [
+      "-6",
+      "4",
+      "-4",
+      "-3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x - 48 + 6x = -104\\)\n\nCollect like terms: \\(14x - 48 = -104\\)\n\n\\(14x = -56\\)\n\n\\(x = \\frac{-56}{14} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-12x + 2 = 134\\).",
+    "options": [
+      "11",
+      "-10",
+      "-11",
+      "-12"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-12x + 2 = 134\\)\n\nSubtract 2 from both sides: \\(-12x = 132\\)\n\nDivide both sides by -12: \\(x = \\frac{132}{-12} = -11\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x + 6) + 9x = 0\\).",
+    "options": [
+      "3",
+      "-5",
+      "-2",
+      "-3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(9x + 54 + 9x = 0\\)\n\nCollect like terms: \\(18x + 54 = 0\\)\n\n\\(18x = -54\\)\n\n\\(x = \\frac{-54}{18} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{4} + 5 = 4\\).",
+    "options": [
+      "4",
+      "-16",
+      "0",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 5: \\(\\frac{x}{4} = -1\\)\n\nMultiply both sides by 4: \\(x = 4 \\times -1 = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(3(x - 9) + 7x = 53\\).",
+    "options": [
+      "8",
+      "9",
+      "-8",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(3x - 27 + 7x = 53\\)\n\nCollect like terms: \\(10x - 27 = 53\\)\n\n\\(10x = 80\\)\n\n\\(x = \\frac{80}{10} = 8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{2} + 7 = 12\\).",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "-10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Subtract 7: \\(\\frac{x}{2} = 5\\)\n\nMultiply both sides by 2: \\(x = 2 \\times 5 = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-12x - 6 = 18\\).",
+    "options": [
+      "-3",
+      "2",
+      "-2",
+      "-1"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(-12x - 6 = 18\\)\n\nAdd 6 to both sides: \\(-12x = 24\\)\n\nDivide both sides by -12: \\(x = \\frac{24}{-12} = -2\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(4x + 5y = -12\\) and \\(-2x + y = -8\\).",
+    "options": [
+      "\\(x = -4, y = 2\\)",
+      "\\(x = 2, y = -4\\)",
+      "\\(x = -2, y = 4\\)",
+      "\\(x = 3, y = -5\\)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use elimination. Multiply the first equation by -2 and the second by 4 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -4\\).\n\nSubstituting \\(y = -4\\) into the first equation: \\(4x - 20 = -12\\), so \\(x = 2\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5(x + 3) + 7x = 3\\).",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "-3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Expand the bracket: \\(5x + 15 + 7x = 3\\)\n\nCollect like terms: \\(12x + 15 = 3\\)\n\n\\(12x = -12\\)\n\n\\(x = \\frac{-12}{12} = -1\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A father is 4 times as old as his son. If the sum of their ages is 95 years, how old is the son?",
+    "options": [
+      "23 years",
+      "19 years",
+      "47.5 years",
+      "76 years"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the son's age be \\(x\\).\n\nThe father's age is \\(4x\\).\n\n\\(x + 4x = 95\\)\n\n\\(5x = 95\\), so \\(x = 19\\) years.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4x + 16 = 44\\).",
+    "options": [
+      "6",
+      "-7",
+      "8",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(4x + 16 = 44\\)\n\nSubtract 16 from both sides: \\(4x = 28\\)\n\nDivide both sides by 4: \\(x = \\frac{28}{4} = 7\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-5x - 3y = -28\\) and \\(-4x - 6y = -8\\).",
+    "options": [
+      "\\(x = 9, y = -5\\)",
+      "\\(x = -4, y = 8\\)",
+      "\\(x = 8, y = -4\\)",
+      "\\(x = -8, y = 4\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by -4 and the second by -5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -4\\).\n\nSubstituting \\(y = -4\\) into the first equation: \\(-5x + 12 = -28\\), so \\(x = 8\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2(x - 4) + 9x = -52\\).",
+    "options": [
+      "-4",
+      "-6",
+      "-3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(2x - 8 + 9x = -52\\)\n\nCollect like terms: \\(11x - 8 = -52\\)\n\n\\(11x = -44\\)\n\n\\(x = \\frac{-44}{11} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-5x + 4y = 31\\) and \\(-5x - 3y = 3\\).",
+    "options": [
+      "\\(x = 4, y = -3\\)",
+      "\\(x = -2, y = 3\\)",
+      "\\(x = 3, y = -4\\)",
+      "\\(x = -3, y = 4\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by -5 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = 4\\).\n\nSubstituting \\(y = 4\\) into the first equation: \\(-5x + 16 = 31\\), so \\(x = -3\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7(x - 2) + 4x = -102\\).",
+    "options": [
+      "-8",
+      "8",
+      "-7",
+      "-10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Expand the bracket: \\(7x - 14 + 4x = -102\\)\n\nCollect like terms: \\(11x - 14 = -102\\)\n\n\\(11x = -88\\)\n\n\\(x = \\frac{-88}{11} = -8\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(8(x - 9) + 8x = -136\\).",
+    "options": [
+      "4",
+      "-3",
+      "-4",
+      "-6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Expand the bracket: \\(8x - 72 + 8x = -136\\)\n\nCollect like terms: \\(16x - 72 = -136\\)\n\n\\(16x = -64\\)\n\n\\(x = \\frac{-64}{16} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(5x - 5 = -20\\).",
+    "options": [
+      "-2",
+      "-4",
+      "-3",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(5x - 5 = -20\\)\n\nAdd 5 to both sides: \\(5x = -15\\)\n\nDivide both sides by 5: \\(x = \\frac{-15}{5} = -3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(7x - 18 = -60\\).",
+    "options": [
+      "-7",
+      "6",
+      "-6",
+      "-5"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(7x - 18 = -60\\)\n\nAdd 18 to both sides: \\(7x = -42\\)\n\nDivide both sides by 7: \\(x = \\frac{-42}{7} = -6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(2x - 17 = 3\\).",
+    "options": [
+      "9",
+      "-10",
+      "11",
+      "10"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(2x - 17 = 3\\)\n\nAdd 17 to both sides: \\(2x = 20\\)\n\nDivide both sides by 2: \\(x = \\frac{20}{2} = 10\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(x + 6y = -23\\) and \\(3x - y = 26\\).",
+    "options": [
+      "\\(x = -7, y = 5\\)",
+      "\\(x = -5, y = 7\\)",
+      "\\(x = 7, y = -5\\)",
+      "\\(x = 8, y = -6\\)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Use elimination. Multiply the first equation by 3 and the second by 1 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -5\\).\n\nSubstituting \\(y = -5\\) into the first equation: \\(1x - 30 = -23\\), so \\(x = 7\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 171. Find the smallest of the numbers.",
+    "options": [
+      "57",
+      "58",
+      "56",
+      "55"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 171\\)\n\n\\(3n + 3 = 171\\)\n\n\\(3n = 168\\), so \\(n = 56\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(x + 7 = -2\\).",
+    "options": [
+      "-10",
+      "9",
+      "-9",
+      "-8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(x + 7 = -2\\)\n\nSubtract 7 from both sides: \\(1x = -9\\)\n\nDivide both sides by 1: \\(x = \\frac{-9}{1} = -9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(-4x + 6 = -18\\).",
+    "options": [
+      "-6",
+      "5",
+      "7",
+      "6"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(-4x + 6 = -18\\)\n\nSubtract 6 from both sides: \\(-4x = -24\\)\n\nDivide both sides by -4: \\(x = \\frac{-24}{-4} = 6\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The sum of three consecutive whole numbers is 126. Find the smallest of the numbers.",
+    "options": [
+      "43",
+      "41",
+      "42",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let the numbers be \\(n\\), \\(n+1\\) and \\(n+2\\).\n\n\\(n + (n+1) + (n+2) = 126\\)\n\n\\(3n + 3 = 126\\)\n\n\\(3n = 123\\), so \\(n = 41\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(\\frac{x}{3} + 7 = 10\\).",
+    "options": [
+      "27",
+      "-9",
+      "12",
+      "9"
+    ],
+    "correctIndex": 3,
+    "explanation": "Subtract 7: \\(\\frac{x}{3} = 3\\)\n\nMultiply both sides by 3: \\(x = 3 \\times 3 = 9\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(9(x + 7) + 4x = 102\\).",
+    "options": [
+      "-3",
+      "4",
+      "1",
+      "3"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(9x + 63 + 4x = 102\\)\n\nCollect like terms: \\(13x + 63 = 102\\)\n\n\\(13x = 39\\)\n\n\\(x = \\frac{39}{13} = 3\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the simultaneous equations: \\(-2x + 4y = 0\\) and \\(-5x + 3y = 14\\).",
+    "options": [
+      "\\(x = 4, y = 2\\)",
+      "\\(x = -2, y = -4\\)",
+      "\\(x = -3, y = -3\\)",
+      "\\(x = -4, y = -2\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use elimination. Multiply the first equation by -5 and the second by -2 to match the \\(x\\) coefficients.\n\nSubtracting eliminates \\(x\\) and gives \\(y = -2\\).\n\nSubstituting \\(y = -2\\) into the first equation: \\(-2x - 8 = 0\\), so \\(x = -4\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Solve the equation \\(4(x + 4) + 5x = -20\\).",
+    "options": [
+      "-3",
+      "4",
+      "-6",
+      "-4"
+    ],
+    "correctIndex": 3,
+    "explanation": "Expand the bracket: \\(4x + 16 + 5x = -20\\)\n\nCollect like terms: \\(9x + 16 = -20\\)\n\n\\(9x = -36\\)\n\n\\(x = \\frac{-36}{9} = -4\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "VuzmbREuIrsItHNmU4Mt",
+    "topicId": "4ksQVylUakJCuU3Q8BpI",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

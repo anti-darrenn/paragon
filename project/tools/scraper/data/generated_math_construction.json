@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "What is the first step in constructing a perpendicular bisector of a line segment \\(AB\\)?",
+    "options": [
+      "Measure the angle at \\(A\\) with a protractor",
+      "Draw a circle with \\(AB\\) as diameter",
+      "Bisect the angle at \\(A\\)",
+      "Draw arcs of equal radius (more than half \\(AB\\)) from both \\(A\\) and \\(B\\)"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct procedure is: Draw arcs of equal radius (more than half \\(AB\\)) from both \\(A\\) and \\(B\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 40° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "20°",
+      "10°",
+      "15°",
+      "40°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{40°}{2} = 20°\\)\n\nSecond bisection: \\(\\frac{20°}{2} = 10°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 180° II. 125° III. 80°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 165° II. 125° III. 20°",
+    "options": [
+      "III only",
+      "II only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "To construct an angle of 60°, what is constructed first?",
+    "options": [
+      "A perpendicular to the base line",
+      "An arc from the vertex cutting the base line, then an equal arc from that point",
+      "A bisector of a right angle",
+      "A semicircle on the base line"
+    ],
+    "correctIndex": 1,
+    "explanation": "The correct procedure is: An arc from the vertex cutting the base line, then an equal arc from that point.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 95° II. 155° III. 75°",
+    "options": [
+      "II only",
+      "I only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 120°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "120°",
+      "75°",
+      "105°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(120° - 15° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 20° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "10°",
+      "20°",
+      "40°",
+      "5°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{20°}{2} = 10°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which angle must be bisected in order to construct an angle of 75°?",
+    "options": [
+      "105°",
+      "165°",
+      "150°",
+      "75°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\nTo obtain 75°, the angle bisected must be \\(2 \\times 75° = 150°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed and an angle of 45° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "45°",
+      "180°",
+      "135°",
+      "150°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(90° + 45° = 135°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed and an angle of 15° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "25°",
+      "15°",
+      "45°",
+      "60°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(30° + 15° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed inside an angle of 120°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "150°",
+      "210°",
+      "30°",
+      "45°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(120° - 90° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 172° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "344°",
+      "86°",
+      "96°",
+      "172°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{172°}{2} = 86°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 112° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "28°",
+      "33°",
+      "56°",
+      "112°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{112°}{2} = 56°\\)\n\nSecond bisection: \\(\\frac{56°}{2} = 28°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 75° is constructed inside an angle of 135°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "120°",
+      "60°",
+      "75°",
+      "210°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(135° - 75° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed inside an angle of 120°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "105°",
+      "165°",
+      "75°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(120° - 45° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 180° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "180°",
+      "360°",
+      "100°",
+      "90°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{180°}{2} = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which pair of instruments is sufficient for a standard geometric construction?",
+    "options": [
+      "A protractor and a set square",
+      "A ruler and a protractor",
+      "A pair of compasses and a divider",
+      "A ruler and a pair of compasses"
+    ],
+    "correctIndex": 3,
+    "explanation": "The correct procedure is: A ruler and a pair of compasses.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which angle must be bisected in order to construct an angle of 90°?",
+    "options": [
+      "180°",
+      "195°",
+      "120°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\nTo obtain 90°, the angle bisected must be \\(2 \\times 90° = 180°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 24° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "12°",
+      "6°",
+      "11°",
+      "24°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{24°}{2} = 12°\\)\n\nSecond bisection: \\(\\frac{12°}{2} = 6°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 140° III. 120°",
+    "options": [
+      "II only",
+      "I only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 155° II. 150° III. 100°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 160° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "160°",
+      "80°",
+      "90°",
+      "320°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{160°}{2} = 80°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 25° III. 60°",
+    "options": [
+      "I and II only",
+      "III only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which angle must be bisected in order to construct an angle of 60°?",
+    "options": [
+      "135°",
+      "60°",
+      "120°",
+      "90°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\nTo obtain 60°, the angle bisected must be \\(2 \\times 60° = 120°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The locus of points equidistant from the two arms of an angle is",
+    "options": [
+      "a circle centred at the vertex",
+      "a line parallel to one arm",
+      "the bisector of the angle",
+      "the perpendicular bisector of the angle"
+    ],
+    "correctIndex": 2,
+    "explanation": "The correct procedure is: the bisector of the angle.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed inside an angle of 75°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "30°",
+      "165°",
+      "15°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(75° - 60° = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed inside an angle of 135°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "180°",
+      "105°",
+      "90°",
+      "75°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(135° - 45° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed and an angle of 15° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "30°",
+      "75°",
+      "90°",
+      "60°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(45° + 15° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 50° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "50°",
+      "35°",
+      "25°",
+      "100°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{50°}{2} = 25°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 108° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "54°",
+      "27°",
+      "108°",
+      "32°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{108°}{2} = 54°\\)\n\nSecond bisection: \\(\\frac{54°}{2} = 27°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 28° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "12°",
+      "28°",
+      "14°",
+      "7°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{28°}{2} = 14°\\)\n\nSecond bisection: \\(\\frac{14°}{2} = 7°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 104° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "104°",
+      "52°",
+      "62°",
+      "208°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{104°}{2} = 52°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 168° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "47°",
+      "84°",
+      "168°",
+      "42°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{168°}{2} = 84°\\)\n\nSecond bisection: \\(\\frac{84°}{2} = 42°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed and an angle of 15° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "45°",
+      "90°",
+      "120°",
+      "75°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(60° + 15° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed and an angle of 45° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "0°",
+      "105°",
+      "10°",
+      "90°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(45° + 45° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 140° II. 60° III. 20°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 65° II. 105° III. 10°",
+    "options": [
+      "III only",
+      "I and II only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which angle must be bisected in order to construct an angle of 45°?",
+    "options": [
+      "90°",
+      "105°",
+      "45°",
+      "180°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\nTo obtain 45°, the angle bisected must be \\(2 \\times 45° = 90°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed inside an angle of 150°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "90°",
+      "105°",
+      "75°",
+      "210°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(150° - 60° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 30°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "15°",
+      "30°",
+      "165°",
+      "45°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(30° - 15° = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed inside an angle of 105°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "120°",
+      "60°",
+      "75°",
+      "150°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(105° - 45° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 112° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "112°",
+      "224°",
+      "66°",
+      "56°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{112°}{2} = 56°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 56° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "56°",
+      "28°",
+      "14°",
+      "19°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{56°}{2} = 28°\\)\n\nSecond bisection: \\(\\frac{28°}{2} = 14°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 120° III. 20°",
+    "options": [
+      "I and II only",
+      "III only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which angle must be bisected in order to construct an angle of 15°?",
+    "options": [
+      "30°",
+      "45°",
+      "15°",
+      "60°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\nTo obtain 15°, the angle bisected must be \\(2 \\times 15° = 30°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 160° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "80°",
+      "160°",
+      "45°",
+      "40°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{160°}{2} = 80°\\)\n\nSecond bisection: \\(\\frac{80°}{2} = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 10° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "10°",
+      "15°",
+      "20°",
+      "5°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{10°}{2} = 5°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 156° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "156°",
+      "312°",
+      "88°",
+      "78°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{156°}{2} = 78°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 75°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "105°",
+      "45°",
+      "60°",
+      "135°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(75° - 30° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed and an angle of 60° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "120°",
+      "0°",
+      "135°",
+      "10°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(60° + 60° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 95° II. 90° III. 170°",
+    "options": [
+      "II only",
+      "I and II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 80° II. 20° III. 135°",
+    "options": [
+      "I and II only",
+      "I only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 35° III. 55°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 135°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "105°",
+      "165°",
+      "120°",
+      "75°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(135° - 30° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed and an angle of 60° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "180°",
+      "30°",
+      "165°",
+      "150°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(90° + 60° = 150°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 160° II. 75° III. 170°",
+    "options": [
+      "I and II only",
+      "III only",
+      "II only",
+      "I only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed and an angle of 30° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "90°",
+      "75°",
+      "25°",
+      "15°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(45° + 30° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 105° II. 85° III. 100°",
+    "options": [
+      "III only",
+      "I and II only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 164° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "41°",
+      "82°",
+      "46°",
+      "164°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{164°}{2} = 82°\\)\n\nSecond bisection: \\(\\frac{82°}{2} = 41°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 60° II. 25° III. 80°",
+    "options": [
+      "I only",
+      "I and II only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed and an angle of 30° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "135°",
+      "180°",
+      "120°",
+      "60°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(90° + 30° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed and an angle of 60° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "105°",
+      "120°",
+      "-15°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(45° + 60° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed inside an angle of 105°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "195°",
+      "15°",
+      "165°",
+      "30°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(105° - 90° = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 32° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "32°",
+      "26°",
+      "64°",
+      "16°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{32°}{2} = 16°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 144° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "144°",
+      "72°",
+      "36°",
+      "41°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{144°}{2} = 72°\\)\n\nSecond bisection: \\(\\frac{72°}{2} = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 135° III. 160°",
+    "options": [
+      "I only",
+      "I and II only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed and an angle of 45° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "15°",
+      "120°",
+      "25°",
+      "105°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(60° + 45° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 76° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "76°",
+      "24°",
+      "38°",
+      "19°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{76°}{2} = 38°\\)\n\nSecond bisection: \\(\\frac{38°}{2} = 19°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 140° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "80°",
+      "70°",
+      "140°",
+      "280°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{140°}{2} = 70°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 14° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "17°",
+      "7°",
+      "28°",
+      "14°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{14°}{2} = 7°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 126° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "252°",
+      "63°",
+      "126°",
+      "73°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{126°}{2} = 63°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 155° II. 180° III. 170°",
+    "options": [
+      "I and II only",
+      "III only",
+      "II only",
+      "I only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 150°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "60°",
+      "135°",
+      "180°",
+      "120°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(150° - 30° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed and an angle of 30° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "60°",
+      "0°",
+      "75°",
+      "10°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(30° + 30° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 10° III. 50°",
+    "options": [
+      "II only",
+      "I and II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed inside an angle of 150°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "195°",
+      "105°",
+      "75°",
+      "120°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(150° - 45° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 26° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "52°",
+      "26°",
+      "23°",
+      "13°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{26°}{2} = 13°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 92° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "23°",
+      "28°",
+      "46°",
+      "92°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{92°}{2} = 46°\\)\n\nSecond bisection: \\(\\frac{46°}{2} = 23°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 152° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "43°",
+      "76°",
+      "38°",
+      "152°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{152°}{2} = 76°\\)\n\nSecond bisection: \\(\\frac{76°}{2} = 38°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 150°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "150°",
+      "45°",
+      "135°",
+      "165°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(150° - 15° = 135°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 128° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "256°",
+      "74°",
+      "64°",
+      "128°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{128°}{2} = 64°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 164° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "82°",
+      "164°",
+      "92°",
+      "328°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{164°}{2} = 82°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 100° II. 35° III. 60°",
+    "options": [
+      "I and II only",
+      "I only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 148° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "74°",
+      "148°",
+      "42°",
+      "37°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{148°}{2} = 74°\\)\n\nSecond bisection: \\(\\frac{74°}{2} = 37°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 62° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "62°",
+      "124°",
+      "41°",
+      "31°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{62°}{2} = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 75° III. 85°",
+    "options": [
+      "II only",
+      "III only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 30° II. 50° III. 70°",
+    "options": [
+      "II only",
+      "III only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which angle must be bisected in order to construct an angle of 30°?",
+    "options": [
+      "60°",
+      "75°",
+      "120°",
+      "30°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\nTo obtain 30°, the angle bisected must be \\(2 \\times 30° = 60°\\).",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 172° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "48°",
+      "172°",
+      "43°",
+      "86°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{172°}{2} = 86°\\)\n\nSecond bisection: \\(\\frac{86°}{2} = 43°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 154° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "87°",
+      "77°",
+      "308°",
+      "154°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{154°}{2} = 77°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 120° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "70°",
+      "60°",
+      "240°",
+      "120°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{120°}{2} = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 135° II. 155° III. 10°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 96° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "24°",
+      "96°",
+      "29°",
+      "48°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{96°}{2} = 48°\\)\n\nSecond bisection: \\(\\frac{48°}{2} = 24°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed and an angle of 60° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "-30°",
+      "105°",
+      "90°",
+      "60°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(30° + 60° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 40° III. 85°",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 178° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "178°",
+      "356°",
+      "99°",
+      "89°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{178°}{2} = 89°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 170° III. 85°",
+    "options": [
+      "III only",
+      "I and II only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed inside an angle of 150°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "240°",
+      "75°",
+      "120°",
+      "60°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(150° - 90° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 150° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "300°",
+      "150°",
+      "85°",
+      "75°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{150°}{2} = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 88° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "22°",
+      "27°",
+      "88°",
+      "44°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{88°}{2} = 44°\\)\n\nSecond bisection: \\(\\frac{44°}{2} = 22°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed and an angle of 15° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "180°",
+      "105°",
+      "75°",
+      "120°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(90° + 15° = 105°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 85° III. 135°",
+    "options": [
+      "II only",
+      "I only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 15° III. 80°",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 15° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 95° III. 170°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 168° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "168°",
+      "336°",
+      "84°",
+      "94°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{168°}{2} = 84°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 80° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "20°",
+      "25°",
+      "80°",
+      "40°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{80°}{2} = 40°\\)\n\nSecond bisection: \\(\\frac{40°}{2} = 20°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 55° III. 180°",
+    "options": [
+      "I and II only",
+      "I only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 156° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "78°",
+      "156°",
+      "44°",
+      "39°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{156°}{2} = 78°\\)\n\nSecond bisection: \\(\\frac{78°}{2} = 39°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed and an angle of 45° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "90°",
+      "75°",
+      "-15°",
+      "60°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(30° + 45° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 165° III. 35°",
+    "options": [
+      "II only",
+      "I only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 75° is constructed inside an angle of 120°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "195°",
+      "60°",
+      "45°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(120° - 75° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 158° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "89°",
+      "158°",
+      "79°",
+      "316°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{158°}{2} = 79°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 38° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "38°",
+      "29°",
+      "19°",
+      "76°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{38°}{2} = 19°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 60°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "75°",
+      "60°",
+      "45°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(60° - 15° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed inside an angle of 135°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "195°",
+      "75°",
+      "105°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(135° - 60° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 155° II. 60° III. 85°",
+    "options": [
+      "II only",
+      "I and II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 85° II. 100° III. 75°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 10° III. 15°",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 15° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 106° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "212°",
+      "63°",
+      "106°",
+      "53°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{106°}{2} = 53°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 42° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "31°",
+      "84°",
+      "42°",
+      "21°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{42°}{2} = 21°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 110° III. 55°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 122° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "122°",
+      "61°",
+      "71°",
+      "244°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{122°}{2} = 61°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed and an angle of 30° is constructed adjacent to it. What is the size of the resulting angle?",
+    "options": [
+      "30°",
+      "90°",
+      "120°",
+      "105°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adjacent constructed angles add together.\n\n\\(60° + 30° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 80° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "80°",
+      "40°",
+      "50°",
+      "160°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{80°}{2} = 40°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 90°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "75°",
+      "60°",
+      "120°",
+      "45°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(90° - 30° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed inside an angle of 105°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "60°",
+      "165°",
+      "45°",
+      "135°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(105° - 60° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 75° II. 20° III. 80°",
+    "options": [
+      "III only",
+      "I only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 68° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "44°",
+      "34°",
+      "136°",
+      "68°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{68°}{2} = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 124° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "36°",
+      "31°",
+      "124°",
+      "62°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{124°}{2} = 62°\\)\n\nSecond bisection: \\(\\frac{62°}{2} = 31°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 118° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "59°",
+      "118°",
+      "236°",
+      "69°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{118°}{2} = 59°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 36° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "18°",
+      "72°",
+      "36°",
+      "28°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{36°}{2} = 18°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 70° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "70°",
+      "35°",
+      "140°",
+      "45°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{70°}{2} = 35°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 105° II. 65° III. 160°",
+    "options": [
+      "II only",
+      "I and II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 16° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "16°",
+      "8°",
+      "32°",
+      "18°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{16°}{2} = 8°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 10° II. 45° III. 20°",
+    "options": [
+      "I only",
+      "III only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 52° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "104°",
+      "26°",
+      "36°",
+      "52°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{52°}{2} = 26°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 64° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "16°",
+      "21°",
+      "32°",
+      "64°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{64°}{2} = 32°\\)\n\nSecond bisection: \\(\\frac{32°}{2} = 16°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed inside an angle of 90°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "45°",
+      "30°",
+      "135°",
+      "60°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(90° - 45° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 60°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "150°",
+      "30°",
+      "45°",
+      "90°"
+    ],
+    "correctIndex": 1,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(60° - 30° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 180° II. 140° III. 40°",
+    "options": [
+      "I only",
+      "I and II only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "20°",
+      "15°",
+      "60°",
+      "30°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{60°}{2} = 30°\\)\n\nSecond bisection: \\(\\frac{30°}{2} = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 16° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "8°",
+      "16°",
+      "4°",
+      "9°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{16°}{2} = 8°\\)\n\nSecond bisection: \\(\\frac{8°}{2} = 4°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 138° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "138°",
+      "79°",
+      "276°",
+      "69°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{138°}{2} = 69°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 140° II. 45° III. 170°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 45° III. 55°",
+    "options": [
+      "II only",
+      "III only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 12° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "16°",
+      "6°",
+      "12°",
+      "24°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{12°}{2} = 6°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "15°",
+      "25°",
+      "30°",
+      "60°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{30°}{2} = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 130° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "65°",
+      "75°",
+      "260°",
+      "130°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{130°}{2} = 65°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 48° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "48°",
+      "24°",
+      "17°",
+      "12°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{48°}{2} = 24°\\)\n\nSecond bisection: \\(\\frac{24°}{2} = 12°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 120° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "60°",
+      "120°",
+      "35°",
+      "30°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{120°}{2} = 60°\\)\n\nSecond bisection: \\(\\frac{60°}{2} = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 45° is constructed inside an angle of 75°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "120°",
+      "150°",
+      "45°",
+      "30°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(75° - 45° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 70° III. 85°",
+    "options": [
+      "I and II only",
+      "I only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 142° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "284°",
+      "71°",
+      "81°",
+      "142°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{142°}{2} = 71°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 72° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "23°",
+      "18°",
+      "72°",
+      "36°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{72°}{2} = 36°\\)\n\nSecond bisection: \\(\\frac{36°}{2} = 18°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is constructed inside an angle of 120°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "75°",
+      "120°",
+      "180°",
+      "60°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(120° - 60° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 176° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "98°",
+      "352°",
+      "88°",
+      "176°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{176°}{2} = 88°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 120° II. 25° III. 50°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 36° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "9°",
+      "18°",
+      "36°",
+      "14°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{36°}{2} = 18°\\)\n\nSecond bisection: \\(\\frac{18°}{2} = 9°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 102° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "61°",
+      "102°",
+      "51°",
+      "204°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{102°}{2} = 51°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 120° II. 10° III. 100°",
+    "options": [
+      "II only",
+      "I and II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 54° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "27°",
+      "108°",
+      "54°",
+      "37°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{54°}{2} = 27°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 110° II. 45° III. 10°",
+    "options": [
+      "II only",
+      "I and II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 135°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "60°",
+      "135°",
+      "150°",
+      "120°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(135° - 15° = 120°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 96° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "192°",
+      "96°",
+      "58°",
+      "48°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{96°}{2} = 48°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 95° II. 100° III. 180°",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 45°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "30°",
+      "75°",
+      "15°",
+      "165°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(45° - 30° = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 70° III. 35°",
+    "options": [
+      "III only",
+      "II only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 55° III. 155°",
+    "options": [
+      "I and II only",
+      "I only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 128° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "64°",
+      "32°",
+      "37°",
+      "128°"
+    ],
+    "correctIndex": 1,
+    "explanation": "First bisection: \\(\\frac{128°}{2} = 64°\\)\n\nSecond bisection: \\(\\frac{64°}{2} = 32°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 150° II. 10° III. 40°",
+    "options": [
+      "II only",
+      "III only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 75° II. 10° III. 125°",
+    "options": [
+      "I only",
+      "I and II only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 75° is constructed inside an angle of 150°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "90°",
+      "105°",
+      "225°",
+      "75°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(150° - 75° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 148° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "84°",
+      "296°",
+      "148°",
+      "74°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{148°}{2} = 74°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 35° II. 30° III. 10°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 10° II. 40° III. 165°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 140° II. 15° III. 20°",
+    "options": [
+      "II only",
+      "I only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 15° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 30° II. 140° III. 85°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 75° is constructed inside an angle of 105°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "150°",
+      "45°",
+      "180°",
+      "30°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(105° - 75° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 132° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "66°",
+      "132°",
+      "33°",
+      "38°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{132°}{2} = 66°\\)\n\nSecond bisection: \\(\\frac{66°}{2} = 33°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 170° III. 55°",
+    "options": [
+      "I only",
+      "III only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 60° II. 85° III. 170°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 76° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "38°",
+      "152°",
+      "48°",
+      "76°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{76°}{2} = 38°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 120°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "90°",
+      "75°",
+      "105°",
+      "150°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(120° - 30° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 160° III. 30°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 75° is constructed inside an angle of 90°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "30°",
+      "165°",
+      "0°",
+      "15°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(90° - 75° = 15°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 95° II. 135° III. 65°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 74° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "37°",
+      "148°",
+      "47°",
+      "74°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{74°}{2} = 37°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 52° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "52°",
+      "26°",
+      "18°",
+      "13°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{52°}{2} = 26°\\)\n\nSecond bisection: \\(\\frac{26°}{2} = 13°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 85° III. 55°",
+    "options": [
+      "I and II only",
+      "I only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 165° II. 100° III. 140°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 140° II. 120° III. 20°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 105° II. 65° III. 55°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 136° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "34°",
+      "39°",
+      "136°",
+      "68°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{136°}{2} = 68°\\)\n\nSecond bisection: \\(\\frac{68°}{2} = 34°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 100° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "25°",
+      "50°",
+      "100°",
+      "30°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{100°}{2} = 50°\\)\n\nSecond bisection: \\(\\frac{50°}{2} = 25°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 35° II. 65° III. 150°",
+    "options": [
+      "III only",
+      "I and II only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 140° III. 110°",
+    "options": [
+      "III only",
+      "II only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 110° II. 165° III. 20°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 90° is constructed inside an angle of 135°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "45°",
+      "225°",
+      "60°",
+      "135°"
+    ],
+    "correctIndex": 0,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(135° - 90° = 45°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 110° II. 150° III. 25°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 166° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "83°",
+      "332°",
+      "166°",
+      "93°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{166°}{2} = 83°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 46° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "92°",
+      "46°",
+      "33°",
+      "23°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{46°}{2} = 23°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 95° III. 90°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 55° II. 45° III. 155°",
+    "options": [
+      "I and II only",
+      "I only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 24° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "24°",
+      "48°",
+      "22°",
+      "12°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{24°}{2} = 12°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 70° II. 60° III. 65°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 170° II. 110° III. 105°",
+    "options": [
+      "I and II only",
+      "I only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 85° II. 105° III. 160°",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 135° II. 10° III. 70°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 136° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "68°",
+      "136°",
+      "78°",
+      "272°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{136°}{2} = 68°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 84° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "42°",
+      "52°",
+      "168°",
+      "84°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{84°}{2} = 42°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 165° II. 10° III. 155°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 40° II. 105° III. 85°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 85° II. 20° III. 180°",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 120° II. 170° III. 10°",
+    "options": [
+      "I only",
+      "I and II only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 165° III. 80°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 116° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "29°",
+      "34°",
+      "116°",
+      "58°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{116°}{2} = 58°\\)\n\nSecond bisection: \\(\\frac{58°}{2} = 29°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 95° III. 65°",
+    "options": [
+      "II only",
+      "I and II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 75°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "75°",
+      "120°",
+      "90°",
+      "60°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(75° - 15° = 60°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 20° III. 60°",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 15° II. 80° III. 10°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 15° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 155° III. 90°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 120° II. 140° III. 85°",
+    "options": [
+      "II only",
+      "III only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 40° II. 165° III. 25°",
+    "options": [
+      "I only",
+      "III only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 45°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "60°",
+      "45°",
+      "30°",
+      "150°"
+    ],
+    "correctIndex": 2,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(45° - 15° = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 35° II. 40° III. 165°",
+    "options": [
+      "I only",
+      "I and II only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 70° III. 100°",
+    "options": [
+      "I and II only",
+      "III only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 10° II. 20° III. 105°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 170° II. 100° III. 120°",
+    "options": [
+      "II only",
+      "III only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 35° II. 160° III. 180°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 120° II. 25° III. 70°",
+    "options": [
+      "III only",
+      "I only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 100° II. 45° III. 125°",
+    "options": [
+      "I and II only",
+      "II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 114° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "67°",
+      "114°",
+      "228°",
+      "57°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{114°}{2} = 57°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 15° is constructed inside an angle of 105°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "105°",
+      "75°",
+      "120°",
+      "90°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(105° - 15° = 90°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 95° III. 35°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 132° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "264°",
+      "66°",
+      "76°",
+      "132°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{132°}{2} = 66°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 90° III. 40°",
+    "options": [
+      "II only",
+      "III only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 95° II. 60° III. 140°",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 104° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "31°",
+      "104°",
+      "52°",
+      "26°"
+    ],
+    "correctIndex": 3,
+    "explanation": "First bisection: \\(\\frac{104°}{2} = 52°\\)\n\nSecond bisection: \\(\\frac{52°}{2} = 26°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 170° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "170°",
+      "95°",
+      "85°",
+      "340°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{170°}{2} = 85°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 35° III. 40°",
+    "options": [
+      "II only",
+      "III only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 174° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "174°",
+      "348°",
+      "97°",
+      "87°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{174°}{2} = 87°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 60° II. 70° III. 10°",
+    "options": [
+      "III only",
+      "I and II only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 10° II. 170° III. 90°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 40° II. 165° III. 10°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 155° II. 160° III. 30°",
+    "options": [
+      "II only",
+      "I and II only",
+      "I only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 20° II. 70° III. 90°",
+    "options": [
+      "III only",
+      "II only",
+      "I and II only",
+      "I only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 30° is constructed inside an angle of 105°, sharing the same arm. Find the size of the remaining angle.",
+    "options": [
+      "105°",
+      "135°",
+      "90°",
+      "75°"
+    ],
+    "correctIndex": 3,
+    "explanation": "The remaining angle is the difference between the two angles.\n\n\\(105° - 30° = 75°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 35° II. 95° III. 60°",
+    "options": [
+      "II only",
+      "I and II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 60° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 170° II. 75° III. 140°",
+    "options": [
+      "III only",
+      "I only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 110° III. 95°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 98° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "49°",
+      "98°",
+      "196°",
+      "59°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{98°}{2} = 49°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 64° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "42°",
+      "128°",
+      "32°",
+      "64°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{64°}{2} = 32°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 65° III. 80°",
+    "options": [
+      "II only",
+      "I and II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 15° II. 140° III. 170°",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 15° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 95° II. 150° III. 25°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 10° II. 155° III. 15°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 15° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 55° III. 45°",
+    "options": [
+      "I and II only",
+      "II only",
+      "III only",
+      "I only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 45° II. 40° III. 140°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 100° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "200°",
+      "50°",
+      "60°",
+      "100°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{100°}{2} = 50°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 92° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "56°",
+      "46°",
+      "92°",
+      "184°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{92°}{2} = 46°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 152° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "76°",
+      "152°",
+      "86°",
+      "304°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{152°}{2} = 76°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 80° II. 150° III. 170°",
+    "options": [
+      "II only",
+      "III only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 180° III. 70°",
+    "options": [
+      "I and II only",
+      "I only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 55° III. 165°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 110° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "65°",
+      "55°",
+      "110°",
+      "220°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{110°}{2} = 55°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 25° II. 90° III. 55°",
+    "options": [
+      "II only",
+      "I only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 105° II. 35° III. 20°",
+    "options": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 25° II. 180° III. 70°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 72° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "36°",
+      "46°",
+      "144°",
+      "72°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{72°}{2} = 36°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 100° II. 160° III. 45°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 55° II. 75° III. 65°",
+    "options": [
+      "I only",
+      "III only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 20° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "20°",
+      "15°",
+      "5°",
+      "10°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{20°}{2} = 10°\\)\n\nSecond bisection: \\(\\frac{10°}{2} = 5°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 58° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "29°",
+      "116°",
+      "58°",
+      "39°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{58°}{2} = 29°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 40° II. 105° III. 65°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 105° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 140° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "140°",
+      "40°",
+      "35°",
+      "70°"
+    ],
+    "correctIndex": 2,
+    "explanation": "First bisection: \\(\\frac{140°}{2} = 70°\\)\n\nSecond bisection: \\(\\frac{70°}{2} = 35°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 25° II. 165° III. 70°",
+    "options": [
+      "I only",
+      "II only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 25° II. 125° III. 165°",
+    "options": [
+      "II only",
+      "I only",
+      "I and II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 32° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "8°",
+      "16°",
+      "13°",
+      "32°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{32°}{2} = 16°\\)\n\nSecond bisection: \\(\\frac{16°}{2} = 8°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 110° II. 180° III. 35°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 180° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 84° is bisected, and one of the resulting angles is bisected again. Find the size of the final angle.",
+    "options": [
+      "21°",
+      "26°",
+      "84°",
+      "42°"
+    ],
+    "correctIndex": 0,
+    "explanation": "First bisection: \\(\\frac{84°}{2} = 42°\\)\n\nSecond bisection: \\(\\frac{42°}{2} = 21°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 28° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "56°",
+      "24°",
+      "28°",
+      "14°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{28°}{2} = 14°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 144° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "288°",
+      "82°",
+      "144°",
+      "72°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{144°}{2} = 72°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 90° II. 140° III. 125°",
+    "options": [
+      "I only",
+      "III only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 75° III. 110°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 75° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 125° II. 70° III. 135°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 34° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "34°",
+      "68°",
+      "27°",
+      "17°"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{34°}{2} = 17°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 100° II. 110° III. 30°",
+    "options": [
+      "I only",
+      "I and II only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An angle of 60° is bisected. Find the size of each of the two angles formed.",
+    "options": [
+      "60°",
+      "120°",
+      "30°",
+      "40°"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bisecting an angle divides it into two equal parts.\n\n\\(\\frac{60°}{2} = 30°\\)",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 35° II. 50° III. 45°",
+    "options": [
+      "III only",
+      "I and II only",
+      "I only",
+      "II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 135° II. 100° III. 50°",
+    "options": [
+      "III only",
+      "I only",
+      "I and II only",
+      "II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 170° II. 110° III. 45°",
+    "options": [
+      "III only",
+      "I only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 80° II. 90° III. 100°",
+    "options": [
+      "III only",
+      "II only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 90° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 120° II. 40° III. 85°",
+    "options": [
+      "I only",
+      "III only",
+      "II only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 120° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 140° II. 30° III. 35°",
+    "options": [
+      "III only",
+      "I and II only",
+      "II only",
+      "I only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 150° II. 140° III. 65°",
+    "options": [
+      "I and II only",
+      "III only",
+      "II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 150° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 50° II. 25° III. 45°",
+    "options": [
+      "I and II only",
+      "I only",
+      "III only",
+      "II only"
+    ],
+    "correctIndex": 2,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 45° is a multiple of 15°, so only III can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 20° II. 165° III. 55°",
+    "options": [
+      "II only",
+      "III only",
+      "I only",
+      "I and II only"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 165° is a multiple of 15°, so only II can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 135° II. 40° III. 110°",
+    "options": [
+      "I and II only",
+      "I only",
+      "II only",
+      "III only"
+    ],
+    "correctIndex": 1,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 135° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Which of the following angles can be constructed using a ruler and a pair of compasses only? I. 30° II. 20° III. 110°",
+    "options": [
+      "III only",
+      "I and II only",
+      "II only",
+      "I only"
+    ],
+    "correctIndex": 3,
+    "explanation": "With a ruler and a pair of compasses, 60° and 90° can be constructed directly. Repeated bisection and addition of these produce every multiple of 15°.\n\nOf the angles listed, only 30° is a multiple of 15°, so only I can be constructed.",
+    "subjectId": "gdv7zeXkoASauMlcmMnV",
+    "unitId": "e47ZdSNmQrIZGJbaVFL6",
+    "topicId": "EcCb8gLBcEYPvMpZpkm9",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

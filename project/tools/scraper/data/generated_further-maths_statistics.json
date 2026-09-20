@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Find the variance of the data: 7, 8, 5, 4, 6.",
+    "options": [
+      "4",
+      "6",
+      "2",
+      "1.41"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: 1, 2, -1, -2, 0\n\nSquared deviations: 1, 4, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 35, 44, 26, 8, 44, 32.",
+    "options": [
+      "31.5",
+      "33.5",
+      "32",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 8, 26, 32, 35, 44, 44\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{32 + 35}{2} = 33.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 5, 9, 6, 7, 8.",
+    "options": [
+      "7",
+      "1.41",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -2, 2, -1, 0, 1\n\nSquared deviations: 4, 4, 1, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 10, 7, 8, 9.",
+    "options": [
+      "2",
+      "9",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nDeviations from the mean: 2, 1, -2, -1, 0\n\nSquared deviations: 4, 1, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 27, 23, 10, 18, 13, 33.",
+    "options": [
+      "23",
+      "18",
+      "20.5",
+      "20.67"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 10, 13, 18, 23, 27, 33\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{18 + 23}{2} = 20.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 45, 13, 38, 46, 15, 36.",
+    "options": [
+      "37",
+      "32.17",
+      "36",
+      "38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 13, 15, 36, 38, 45, 46\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{36 + 38}{2} = 37\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 4, 5, 6, 7, correct to 2 decimal places.",
+    "options": [
+      "6",
+      "2.83",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 9, 11, 10, 7, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "9",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 13, 12, 14, 10.",
+    "options": [
+      "2",
+      "12",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: -1, 1, 0, 2, -2\n\nSquared deviations: 1, 1, 0, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 7, 4, 5, 6, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "6",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 44, 49, 30, 35, 15, 16.",
+    "options": [
+      "32.5",
+      "35",
+      "31.5",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 15, 16, 30, 35, 44, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{30 + 35}{2} = 32.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 38, 37, 15, 15, 47, 9.",
+    "options": [
+      "26.83",
+      "15",
+      "26",
+      "37"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 9, 15, 15, 37, 38, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{15 + 37}{2} = 26\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 7, 4, 6, 3, 5, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "5",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 3, 4, 5, 7, 6.",
+    "options": [
+      "4",
+      "2",
+      "1.41",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: -2, -1, 0, 2, 1\n\nSquared deviations: 4, 1, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 37, 33, 18, 24, 16, 8.",
+    "options": [
+      "24",
+      "22.67",
+      "21",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 8, 16, 18, 24, 33, 37\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{18 + 24}{2} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 35, 41, 30, 13, 18, 19.",
+    "options": [
+      "30",
+      "26",
+      "19",
+      "24.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 13, 18, 19, 30, 35, 41\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{19 + 30}{2} = 24.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 9), 20 (frequency 2), 30 (frequency 4), 40 (frequency 5), 50 (frequency 5). Calculate the mean mark.",
+    "options": [
+      "25",
+      "38",
+      "28",
+      "700"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sum fx = 10(9) + 20(2) + 30(4) + 40(5) + 50(5) = 700\\)\n\n\\(\\sum f = 25\\)\n\nMean \\(= \\frac{700}{25} = 28\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 12, 15, 14, 16, 13, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "14",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 9, 12, 13, 10, 11, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "11",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 5, 3, 7, 6.",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "1.41"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: -1, 0, -2, 2, 1\n\nSquared deviations: 1, 0, 4, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 8, 28, 18, 40, 43, 50.",
+    "options": [
+      "40",
+      "31.17",
+      "28",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 8, 18, 28, 40, 43, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{28 + 40}{2} = 34\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 7, 5, 4, 6.",
+    "options": [
+      "2",
+      "4",
+      "1.41",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: 2, 1, -1, -2, 0\n\nSquared deviations: 4, 1, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 33, 14, 22, 14, 38, 16.",
+    "options": [
+      "16",
+      "22",
+      "22.83",
+      "19"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 14, 14, 16, 22, 33, 38\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{16 + 22}{2} = 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 11, 12, 13, 10, correct to 2 decimal places.",
+    "options": [
+      "12",
+      "2",
+      "2.83",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 3, 5, 4, 6, 7, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "5",
+      "2.83",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 5, 7, 9, 8.",
+    "options": [
+      "7",
+      "1.41",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -1, -2, 0, 2, 1\n\nSquared deviations: 1, 4, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 37, 5, 18, 26, 28, 13.",
+    "options": [
+      "18",
+      "26",
+      "21.17",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 5, 13, 18, 26, 28, 37\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{18 + 26}{2} = 22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 5, 4, 6, 3.",
+    "options": [
+      "4",
+      "5",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: 2, 0, -1, 1, -2\n\nSquared deviations: 4, 0, 1, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 42, 17, 14, 44, 49, 35.",
+    "options": [
+      "38.5",
+      "33.5",
+      "42",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 14, 17, 35, 42, 44, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{35 + 42}{2} = 38.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 39, 13, 22, 24, 32, 9.",
+    "options": [
+      "22",
+      "23",
+      "23.17",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 9, 13, 22, 24, 32, 39\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{22 + 24}{2} = 23\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 28, 42, 34, 4, 35, 1.",
+    "options": [
+      "24",
+      "31",
+      "34",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 1, 4, 28, 34, 35, 42\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{28 + 34}{2} = 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 11, 12, 14, 15, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "13",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 13\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 8, 7, 6, 5.",
+    "options": [
+      "2",
+      "4",
+      "1.41",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: -2, 2, 1, 0, -1\n\nSquared deviations: 4, 4, 1, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 11, 14, 12, 10, 13, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2",
+      "12",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 9, 11, 13, 12.",
+    "options": [
+      "4",
+      "1.41",
+      "11",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: -1, -2, 0, 2, 1\n\nSquared deviations: 1, 4, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 9, 12, 11, 10, 13, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "1.41",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 12, 21, 11, 2, 15, 27.",
+    "options": [
+      "15",
+      "13.5",
+      "14.67",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 2, 11, 12, 15, 21, 27\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{12 + 15}{2} = 13.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 20, 45, 29, 30, 38, 32.",
+    "options": [
+      "30",
+      "32",
+      "32.33",
+      "31"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 20, 29, 30, 32, 38, 45\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{30 + 32}{2} = 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 2, 3, 1, 5.",
+    "options": [
+      "1.41",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: 1, -1, 0, -2, 2\n\nSquared deviations: 1, 1, 0, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 7, 10, 9, 6.",
+    "options": [
+      "2",
+      "8",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: 0, -1, 2, 1, -2\n\nSquared deviations: 0, 1, 4, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 9, 11, 12, 8.",
+    "options": [
+      "10",
+      "4",
+      "2",
+      "1.41"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 0, -1, 1, 2, -2\n\nSquared deviations: 0, 1, 1, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 5, 6, 9, 8.",
+    "options": [
+      "2",
+      "1.41",
+      "4",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: 0, -2, -1, 2, 1\n\nSquared deviations: 0, 4, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 6, 9, 8, 7, 10, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "8",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 31, 37, 15, 11, 50, 38.",
+    "options": [
+      "30.33",
+      "37",
+      "31",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 11, 15, 31, 37, 38, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{31 + 37}{2} = 34\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 13, 9, 10, 11, 12.",
+    "options": [
+      "2",
+      "1.41",
+      "11",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 2, -2, -1, 0, 1\n\nSquared deviations: 4, 4, 1, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 23, 18, 9, 42, 17, 37.",
+    "options": [
+      "24.33",
+      "23",
+      "20.5",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 9, 17, 18, 23, 37, 42\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{18 + 23}{2} = 20.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 33, 32, 28, 21, 2, 34, 29, 23, 2, 36.",
+    "options": [
+      "36",
+      "240",
+      "24",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{240}{10} = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 7, 8, 11, 9, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "9",
+      "2.83"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 16, 17, 14, 13, 15, correct to 2 decimal places.",
+    "options": [
+      "15",
+      "1.41",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 15\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 9, 13, 11, 10.",
+    "options": [
+      "1.41",
+      "11",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 1, -2, 2, 0, -1\n\nSquared deviations: 1, 4, 4, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 9, 7, 10, 6, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "8",
+      "2.83"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 10, 9, 12, 11, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "2.83",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 15, 11, 12, 14, 13, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2",
+      "2.83",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 13\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 10, 9, 13, 11.",
+    "options": [
+      "1.41",
+      "2",
+      "4",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 1, -1, -2, 2, 0\n\nSquared deviations: 1, 1, 4, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 7, 6, 9, 10, 8, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "8",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 5, 2, 3, 6, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "4",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 7, 4, 6, 8, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "6",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 6, 48, 20, 43, 38, 8.",
+    "options": [
+      "29",
+      "38",
+      "20",
+      "27.17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 6, 8, 20, 38, 43, 48\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{20 + 38}{2} = 29\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 33, 17, 40, 1, 3, 50.",
+    "options": [
+      "17",
+      "33",
+      "24",
+      "25"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 1, 3, 17, 33, 40, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{17 + 33}{2} = 25\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 11, 8, 12, 9, correct to 2 decimal places.",
+    "options": [
+      "10",
+      "2.83",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 10\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 12, 20, 21, 8, 15, 7.",
+    "options": [
+      "13.83",
+      "13.5",
+      "15",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 7, 8, 12, 15, 20, 21\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{12 + 15}{2} = 13.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 25, 5, 22, 26, 35, 39.",
+    "options": [
+      "25",
+      "26",
+      "25.33",
+      "25.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 5, 22, 25, 26, 35, 39\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{25 + 26}{2} = 25.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 6, 4, 5, 3.",
+    "options": [
+      "5",
+      "1.41",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: 2, 1, -1, 0, -2\n\nSquared deviations: 4, 1, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 9, 5, 7, 8.",
+    "options": [
+      "2",
+      "4",
+      "7",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -1, 2, -2, 0, 1\n\nSquared deviations: 1, 4, 4, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 1, 5, 2, 3, 4.",
+    "options": [
+      "4",
+      "1.41",
+      "3",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: -2, 2, -1, 0, 1\n\nSquared deviations: 4, 4, 1, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 10, 11, 9, 12.",
+    "options": [
+      "2",
+      "10",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -2, 0, 1, -1, 2\n\nSquared deviations: 4, 0, 1, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 6, 5, 3, 7, 4, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "5",
+      "2.83"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 11, 10, 13, 14.",
+    "options": [
+      "12",
+      "2",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: 0, -1, -2, 1, 2\n\nSquared deviations: 0, 1, 4, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 46, 22, 15, 5, 13, 50.",
+    "options": [
+      "15",
+      "22",
+      "25.17",
+      "18.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 5, 13, 15, 22, 46, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{15 + 22}{2} = 18.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 5, 7, 8, 6.",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: -2, -1, 1, 2, 0\n\nSquared deviations: 4, 1, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 4, 11, 27, 15, 35, 33.",
+    "options": [
+      "21",
+      "15",
+      "27",
+      "20.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 4, 11, 15, 27, 33, 35\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{15 + 27}{2} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 14, 17, 15, 16, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "2",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 15\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 17, 29, 37, 40, 36, 7.",
+    "options": [
+      "32.5",
+      "36",
+      "29",
+      "27.67"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 7, 17, 29, 36, 37, 40\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{29 + 36}{2} = 32.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 43, 25, 25, 44, 50, 24.",
+    "options": [
+      "34",
+      "35.17",
+      "43",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 24, 25, 25, 43, 44, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{25 + 43}{2} = 34\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 6, 5, 3, 7, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "5",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 9, 11, 12, 10, 8, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "1.41",
+      "10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 10\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 3, 25, 27, 28, 33, 21, 4, 19.",
+    "options": [
+      "20",
+      "160",
+      "21",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{160}{8} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 5, 3, 7, 4, 6.",
+    "options": [
+      "4",
+      "5",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: 0, -2, 2, -1, 1\n\nSquared deviations: 0, 4, 4, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 30, 7, 9, 16, 47, 3.",
+    "options": [
+      "9",
+      "18.67",
+      "16",
+      "12.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 3, 7, 9, 16, 30, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{9 + 16}{2} = 12.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 19, 27, 3, 18, 39, 2, 27, 37, 6, 12.",
+    "options": [
+      "20",
+      "39",
+      "190",
+      "19"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{190}{10} = 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 10, 9, 6, 7, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "8",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 7, 6, 3, 5, 4, correct to 2 decimal places.",
+    "options": [
+      "5",
+      "2.83",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 9, 13, 10, 11.",
+    "options": [
+      "4",
+      "11",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 1, -2, 2, -1, 0\n\nSquared deviations: 1, 4, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 8, 10, 6, 7.",
+    "options": [
+      "2",
+      "1.41",
+      "8",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: 1, 0, 2, -2, -1\n\nSquared deviations: 1, 0, 4, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 42, 24, 12, 9, 42, 16.",
+    "options": [
+      "16",
+      "24.17",
+      "20",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 9, 12, 16, 24, 42, 42\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{16 + 24}{2} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 27, 31, 19, 30, 4, 33.",
+    "options": [
+      "30",
+      "28.5",
+      "24",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 4, 19, 27, 30, 31, 33\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{27 + 30}{2} = 28.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 26, 49, 3, 37, 29, 48.",
+    "options": [
+      "33",
+      "29",
+      "37",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 3, 26, 29, 37, 48, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{29 + 37}{2} = 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 36, 11, 17, 27, 7, 28.",
+    "options": [
+      "17",
+      "21",
+      "22",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 7, 11, 17, 27, 28, 36\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{17 + 27}{2} = 22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 21, 8, 25, 30, 20, 39.",
+    "options": [
+      "23",
+      "23.83",
+      "25",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 8, 20, 21, 25, 30, 39\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{21 + 25}{2} = 23\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 5, 44, 1, 4, 9, 11.",
+    "options": [
+      "9",
+      "12.33",
+      "5",
+      "7"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 1, 4, 5, 9, 11, 44\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{5 + 9}{2} = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 12, 43, 38, 39, 37, 24.",
+    "options": [
+      "37.5",
+      "32.17",
+      "37",
+      "38"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 12, 24, 37, 38, 39, 43\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{37 + 38}{2} = 37.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 16, 15, 12, 13, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "14",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 9, 11, 13, 10.",
+    "options": [
+      "2",
+      "1.41",
+      "4",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 1, -2, 0, 2, -1\n\nSquared deviations: 1, 4, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 15, 14, 12, 11, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "13",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 13\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 5, 7, 8, 6, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "1.41",
+      "6",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 9, 6, 36, 45, 40, 11.",
+    "options": [
+      "23.5",
+      "11",
+      "36",
+      "24.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 6, 9, 11, 36, 40, 45\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{11 + 36}{2} = 23.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 9, 10, 13, 12.",
+    "options": [
+      "1.41",
+      "2",
+      "11",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 0, -2, -1, 2, 1\n\nSquared deviations: 0, 4, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 11, 10, 9, 7, correct to 2 decimal places.",
+    "options": [
+      "9",
+      "1.41",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 6, 4, 2, 3, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2",
+      "4",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 7, 4, 5, 6, 8, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "1.41",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 14, 13, 12, 11, 10.",
+    "options": [
+      "12",
+      "1.41",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: 2, 1, 0, -1, -2\n\nSquared deviations: 4, 1, 0, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 7, 8, 9, 11, correct to 2 decimal places.",
+    "options": [
+      "9",
+      "1.41",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 12, 10, 13, 11, 14, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "12",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 13, 10, 12, 9, 11.",
+    "options": [
+      "4",
+      "11",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 2, -1, 1, -2, 0\n\nSquared deviations: 4, 1, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 25, 25, 12, 14, 32, 12.",
+    "options": [
+      "120",
+      "32",
+      "20",
+      "21"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{120}{6} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 10, 11, 14, 13.",
+    "options": [
+      "1.41",
+      "2",
+      "12",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: 0, -2, -1, 2, 1\n\nSquared deviations: 0, 4, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 11, 15, 12, 13, 14, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "13",
+      "2",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 13\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 3, 6, 2, 4, 5, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "4",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 9, 7, 5, 6.",
+    "options": [
+      "7",
+      "1.41",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: 1, 2, 0, -2, -1\n\nSquared deviations: 1, 4, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 17, 14, 15, 13, 16, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "1.41",
+      "2",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 15\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 11, 24, 43, 3, 15, 40.",
+    "options": [
+      "19.5",
+      "15",
+      "24",
+      "22.67"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 3, 11, 15, 24, 40, 43\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{15 + 24}{2} = 19.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 9, 7, 11, 8, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "1.41",
+      "2",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 7, 5, 9, 8.",
+    "options": [
+      "1.41",
+      "7",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -1, 0, -2, 2, 1\n\nSquared deviations: 1, 0, 4, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 38, 30, 15, 2, 30, 37, 3, 2, 5.",
+    "options": [
+      "19",
+      "18",
+      "162",
+      "38"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{162}{9} = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 5, 6, 7, 9, 8.",
+    "options": [
+      "7",
+      "4",
+      "2",
+      "1.41"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -2, -1, 0, 2, 1\n\nSquared deviations: 4, 1, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 29, 16, 4, 12, 44, 15.",
+    "options": [
+      "20",
+      "15.5",
+      "15",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 4, 12, 15, 16, 29, 44\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{15 + 16}{2} = 15.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 6), 20 (frequency 3), 30 (frequency 5), 40 (frequency 3), 50 (frequency 6). Calculate the mean mark.",
+    "options": [
+      "40",
+      "690",
+      "30",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sum fx = 10(6) + 20(3) + 30(5) + 40(3) + 50(6) = 690\\)\n\n\\(\\sum f = 23\\)\n\nMean \\(= \\frac{690}{23} = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 2, 9, 8, 12, 45, 28.",
+    "options": [
+      "10.5",
+      "17.33",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 2, 8, 9, 12, 28, 45\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{9 + 12}{2} = 10.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 11, 9, 10, 7, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "9",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 9), 20 (frequency 9), 30 (frequency 1), 40 (frequency 5), 50 (frequency 1). Calculate the mean mark.",
+    "options": [
+      "550",
+      "22",
+      "32",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\sum fx = 10(9) + 20(9) + 30(1) + 40(5) + 50(1) = 550\\)\n\n\\(\\sum f = 25\\)\n\nMean \\(= \\frac{550}{25} = 22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 7, 8, 11, 9.",
+    "options": [
+      "4",
+      "1.41",
+      "9",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 9\\)\n\nDeviations from the mean: 1, -2, -1, 2, 0\n\nSquared deviations: 1, 4, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 9, 32, 7, 11, 47, 39.",
+    "options": [
+      "32",
+      "21.5",
+      "11",
+      "24.17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 7, 9, 11, 32, 39, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{11 + 32}{2} = 21.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 12, 11, 8, 9, 10, correct to 2 decimal places.",
+    "options": [
+      "10",
+      "2",
+      "2.83",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 3, 7, 6, 4, 5.",
+    "options": [
+      "2",
+      "5",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: -2, 2, 1, -1, 0\n\nSquared deviations: 4, 4, 1, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 13, 12, 11, 9.",
+    "options": [
+      "1.41",
+      "2",
+      "11",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: -1, 2, 1, 0, -2\n\nSquared deviations: 1, 4, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 44, 45, 16, 6, 38, 33.",
+    "options": [
+      "33",
+      "38",
+      "35.5",
+      "30.33"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 6, 16, 33, 38, 44, 45\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{33 + 38}{2} = 35.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 8, 11, 12, 9.",
+    "options": [
+      "10",
+      "1.41",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 0, -2, 1, 2, -1\n\nSquared deviations: 0, 4, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 16, 14, 15, 12, 13, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "14",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 31, 43, 15, 31, 17, 5.",
+    "options": [
+      "24",
+      "17",
+      "23.67",
+      "31"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 5, 15, 17, 31, 31, 43\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{17 + 31}{2} = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 32, 28, 26, 50, 9, 27.",
+    "options": [
+      "27",
+      "27.5",
+      "28",
+      "28.67"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 9, 26, 27, 28, 32, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{27 + 28}{2} = 27.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 12, 10, 13, 11, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "12",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 12, 13, 11, 10.",
+    "options": [
+      "1.41",
+      "11",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: -2, 1, 2, 0, -1\n\nSquared deviations: 4, 1, 4, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 6, 5, 4, 2, 3, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 21, 32, 48, 44, 10, 9.",
+    "options": [
+      "32",
+      "21",
+      "26.5",
+      "27.33"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 9, 10, 21, 32, 44, 48\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{21 + 32}{2} = 26.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 3, 2, 5, 6, 4, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "4",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 4), 20 (frequency 8), 30 (frequency 4), 40 (frequency 2), 50 (frequency 7). Calculate the mean mark.",
+    "options": [
+      "40",
+      "750",
+      "25",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sum fx = 10(4) + 20(8) + 30(4) + 40(2) + 50(7) = 750\\)\n\n\\(\\sum f = 25\\)\n\nMean \\(= \\frac{750}{25} = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 12, 9, 10, 8.",
+    "options": [
+      "2",
+      "1.41",
+      "10",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 1, 2, -1, 0, -2\n\nSquared deviations: 1, 4, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 12, 9, 13, 11.",
+    "options": [
+      "4",
+      "1.41",
+      "11",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: -1, 1, -2, 2, 0\n\nSquared deviations: 1, 1, 4, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 5, 9, 7, 6, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "1.41",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 7\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 3), 20 (frequency 8), 30 (frequency 7), 40 (frequency 4), 50 (frequency 8). Calculate the mean mark.",
+    "options": [
+      "32",
+      "30",
+      "960",
+      "42"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sum fx = 10(3) + 20(8) + 30(7) + 40(4) + 50(8) = 960\\)\n\n\\(\\sum f = 30\\)\n\nMean \\(= \\frac{960}{30} = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 33, 26, 15, 45, 40, 38.",
+    "options": [
+      "32.83",
+      "35.5",
+      "38",
+      "33"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 15, 26, 33, 38, 40, 45\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{33 + 38}{2} = 35.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 49, 23, 42, 24, 46, 12.",
+    "options": [
+      "32.67",
+      "33",
+      "24",
+      "42"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 12, 23, 24, 42, 46, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{24 + 42}{2} = 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 9, 8, 7, 11.",
+    "options": [
+      "2",
+      "4",
+      "1.41",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nDeviations from the mean: 1, 0, -1, -2, 2\n\nSquared deviations: 1, 0, 1, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 13, 10, 9, 12.",
+    "options": [
+      "11",
+      "4",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 0, 2, -1, -2, 1\n\nSquared deviations: 0, 4, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 8, 12, 9, 11.",
+    "options": [
+      "4",
+      "1.41",
+      "10",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 0, -2, 2, -1, 1\n\nSquared deviations: 0, 4, 4, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 5, 6, 7, 4.",
+    "options": [
+      "6",
+      "2",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: 2, -1, 0, 1, -2\n\nSquared deviations: 4, 1, 0, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 24, 21, 46, 21, 31, 49.",
+    "options": [
+      "31",
+      "27.5",
+      "24",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 21, 21, 24, 31, 46, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{24 + 31}{2} = 27.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 14, 12, 10, 11, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "12",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 44, 30, 29, 36, 47, 45.",
+    "options": [
+      "40",
+      "44",
+      "38.5",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 29, 30, 36, 44, 45, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{36 + 44}{2} = 40\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 12, 9, 10, 13, 11, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "11",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 14, 49, 16, 48, 38, 15.",
+    "options": [
+      "27",
+      "30",
+      "38",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 14, 15, 16, 38, 48, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{16 + 38}{2} = 27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 17, 6, 35, 30, 3, 13.",
+    "options": [
+      "15",
+      "13",
+      "17.33",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 3, 6, 13, 17, 30, 35\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{13 + 17}{2} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 5, 6, 7, 8, correct to 2 decimal places.",
+    "options": [
+      "6",
+      "2.83",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 16, 18, 14, 39, 34, 1.",
+    "options": [
+      "16",
+      "20.33",
+      "18",
+      "17"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 1, 14, 16, 18, 34, 39\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{16 + 18}{2} = 17\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 9, 12, 10, 8.",
+    "options": [
+      "10",
+      "1.41",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 1, -1, 2, 0, -2\n\nSquared deviations: 1, 1, 4, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 12, 15, 14, 16, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "14",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 11, 12, 14, 13, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "12",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 37, 28, 4, 21, 14, 19.",
+    "options": [
+      "19",
+      "21",
+      "20.5",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 4, 14, 19, 21, 28, 37\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{19 + 21}{2} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 49, 45, 34, 20, 42, 41.",
+    "options": [
+      "41",
+      "41.5",
+      "38.5",
+      "42"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 20, 34, 41, 42, 45, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{41 + 42}{2} = 41.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 18, 41, 24, 49, 13, 12.",
+    "options": [
+      "24",
+      "26.17",
+      "18",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 12, 13, 18, 24, 41, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{18 + 24}{2} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 45, 42, 43, 4, 1, 47.",
+    "options": [
+      "30.33",
+      "43",
+      "42.5",
+      "42"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 1, 4, 42, 43, 45, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{42 + 43}{2} = 42.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 12, 13, 11, 9, correct to 2 decimal places.",
+    "options": [
+      "11",
+      "1.41",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 2, 3, 5, 6, 4, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "4",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 40, 24, 9, 2, 19, 18.",
+    "options": [
+      "18.5",
+      "18.67",
+      "18",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 2, 9, 18, 19, 24, 40\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{18 + 19}{2} = 18.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 7, 6, 9, 8.",
+    "options": [
+      "2",
+      "4",
+      "1.41",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: 2, -1, -2, 1, 0\n\nSquared deviations: 4, 1, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 9, 10, 12, 8.",
+    "options": [
+      "10",
+      "1.41",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 1, -1, 0, 2, -2\n\nSquared deviations: 1, 1, 0, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 16, 12, 13, 15, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "1.41",
+      "14",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 12, 9, 13, 10.",
+    "options": [
+      "1.41",
+      "2",
+      "4",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 0, 1, -2, 2, -1\n\nSquared deviations: 0, 1, 4, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 8, 5, 7, 9.",
+    "options": [
+      "2",
+      "7",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -1, 1, -2, 0, 2\n\nSquared deviations: 1, 1, 4, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 43, 37, 31, 35, 32, 21.",
+    "options": [
+      "35",
+      "33.5",
+      "32",
+      "33.17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 21, 31, 32, 35, 37, 43\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{32 + 35}{2} = 33.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 11, 13, 12, 15, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "1.41",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 13\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 6, 7, 4, 5.",
+    "options": [
+      "2",
+      "6",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: 2, 0, 1, -2, -1\n\nSquared deviations: 4, 0, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 29, 4, 9, 40, 41, 49.",
+    "options": [
+      "28.67",
+      "34.5",
+      "40",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 4, 9, 29, 40, 41, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{29 + 40}{2} = 34.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 9, 5, 7, 6, 8, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2",
+      "7",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 7\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 12, 14, 13, 11.",
+    "options": [
+      "4",
+      "12",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: -2, 0, 2, 1, -1\n\nSquared deviations: 4, 0, 4, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 20, 36, 35, 14, 32, 23.",
+    "options": [
+      "23",
+      "26.67",
+      "27.5",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 14, 20, 23, 32, 35, 36\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{23 + 32}{2} = 27.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 1, 5, 3, 4, 2.",
+    "options": [
+      "2",
+      "3",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: -2, 2, 0, 1, -1\n\nSquared deviations: 4, 4, 0, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 14, 12, 11, 10, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "12",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 39, 2, 39, 38, 49, 9.",
+    "options": [
+      "39",
+      "38",
+      "29.33",
+      "38.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 2, 9, 38, 39, 39, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{38 + 39}{2} = 38.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 10, 12, 11, 8.",
+    "options": [
+      "10",
+      "4",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -1, 0, 2, 1, -2\n\nSquared deviations: 1, 0, 4, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 11, 7, 9, 10, correct to 2 decimal places.",
+    "options": [
+      "9",
+      "1.41",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 7, 9, 8, 5, 6, correct to 2 decimal places.",
+    "options": [
+      "7",
+      "2.83",
+      "2",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 7\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 11, 8, 12, 10.",
+    "options": [
+      "1.41",
+      "2",
+      "10",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -1, 1, -2, 2, 0\n\nSquared deviations: 1, 1, 4, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 12, 9, 10, 11, 13, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "1.41",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 4), 20 (frequency 6), 30 (frequency 2), 40 (frequency 7), 50 (frequency 6). Calculate the mean mark.",
+    "options": [
+      "800",
+      "25",
+      "42",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\sum fx = 10(4) + 20(6) + 30(2) + 40(7) + 50(6) = 800\\)\n\n\\(\\sum f = 25\\)\n\nMean \\(= \\frac{800}{25} = 32\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 7, 8, 6, 10.",
+    "options": [
+      "1.41",
+      "2",
+      "8",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: 1, -1, 0, -2, 2\n\nSquared deviations: 1, 1, 0, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 36, 50, 37, 45, 12, 19.",
+    "options": [
+      "36.5",
+      "37",
+      "36",
+      "33.17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 12, 19, 36, 37, 45, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{36 + 37}{2} = 36.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 9, 12, 10, 11, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2",
+      "11",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 10, 12, 9, 8.",
+    "options": [
+      "10",
+      "1.41",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 1, 0, 2, -1, -2\n\nSquared deviations: 1, 0, 4, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 3, 1, 5, 4, 2.",
+    "options": [
+      "1.41",
+      "3",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: 0, -2, 2, 1, -1\n\nSquared deviations: 0, 4, 4, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 11, 4, 49, 47, 37, 26.",
+    "options": [
+      "29",
+      "26",
+      "31.5",
+      "37"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 4, 11, 26, 37, 47, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{26 + 37}{2} = 31.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 3, 6, 4, 2, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "2.83",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 36, 1, 9, 1, 6, 20, 32.",
+    "options": [
+      "36",
+      "105",
+      "16",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{105}{7} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 13, 14, 12, 10.",
+    "options": [
+      "2",
+      "4",
+      "12",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: -1, 1, 2, 0, -2\n\nSquared deviations: 1, 1, 4, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 9, 7, 8, 10.",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: -2, 1, -1, 0, 2\n\nSquared deviations: 4, 1, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 21, 14, 26, 11, 26, 39.",
+    "options": [
+      "23.5",
+      "21",
+      "22.83",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 11, 14, 21, 26, 26, 39\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{21 + 26}{2} = 23.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 10, 7, 9, 11, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "9",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 3, 5, 4, 7, 6, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "1.41",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 9, 10, 11, 12, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "10",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 10\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 7, 33, 20, 40, 29, 33.",
+    "options": [
+      "27",
+      "31",
+      "29",
+      "33"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 7, 20, 29, 33, 33, 40\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{29 + 33}{2} = 31\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 38, 2, 35, 24, 37, 21.",
+    "options": [
+      "26.17",
+      "35",
+      "29.5",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 2, 21, 24, 35, 37, 38\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{24 + 35}{2} = 29.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 13, 10, 14, 11, 12.",
+    "options": [
+      "2",
+      "4",
+      "12",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: 1, -2, 2, -1, 0\n\nSquared deviations: 1, 4, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 9, 13, 10, 12.",
+    "options": [
+      "4",
+      "2",
+      "1.41",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: 0, -2, 2, -1, 1\n\nSquared deviations: 0, 4, 4, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 14, 4, 17, 35, 34, 23.",
+    "options": [
+      "20",
+      "23",
+      "17",
+      "21.17"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 4, 14, 17, 23, 34, 35\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{17 + 23}{2} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 46, 40, 38, 19, 43, 2.",
+    "options": [
+      "39",
+      "31.33",
+      "38",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 2, 19, 38, 40, 43, 46\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{38 + 40}{2} = 39\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 29, 12, 38, 35, 41, 40.",
+    "options": [
+      "35",
+      "38",
+      "36.5",
+      "32.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 12, 29, 35, 38, 40, 41\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{35 + 38}{2} = 36.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 13, 15, 17, 16, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "15",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 15\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 23, 6, 6, 25, 19, 43.",
+    "options": [
+      "20.33",
+      "23",
+      "21",
+      "19"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 6, 6, 19, 23, 25, 43\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{19 + 23}{2} = 21\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 25, 46, 7, 30, 13, 15.",
+    "options": [
+      "20",
+      "22.67",
+      "15",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 7, 13, 15, 25, 30, 46\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{15 + 25}{2} = 20\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 21, 5, 22, 39, 27, 36.",
+    "options": [
+      "27",
+      "25",
+      "24.5",
+      "22"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 5, 21, 22, 27, 36, 39\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{22 + 27}{2} = 24.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 12, 8, 9, 11, 10.",
+    "options": [
+      "2",
+      "4",
+      "10",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: 2, -2, -1, 1, 0\n\nSquared deviations: 4, 4, 1, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 13, 12, 11, 10.",
+    "options": [
+      "11",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: -2, 2, 1, 0, -1\n\nSquared deviations: 4, 4, 1, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 9, 11, 8, 12, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "10",
+      "2.83"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 10\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 37, 20, 46, 33, 17, 20.",
+    "options": [
+      "26.5",
+      "28.83",
+      "33",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 17, 20, 20, 33, 37, 46\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{20 + 33}{2} = 26.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 27, 31, 23, 8, 21.",
+    "options": [
+      "22",
+      "110",
+      "23",
+      "31"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{110}{5} = 22\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 4, 6, 3, 2, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "4",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 11, 7, 9, 10.",
+    "options": [
+      "9",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 9\\)\n\nDeviations from the mean: -1, 2, -2, 0, 1\n\nSquared deviations: 1, 4, 4, 0, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 20, 3, 7, 23, 18, 28, 3, 35, 2, 11.",
+    "options": [
+      "15",
+      "150",
+      "16",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{150}{10} = 15\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 6, 3, 2, 5, 4, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "1.41",
+      "4",
+      "2.83"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 4\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 8, 11, 10, 9.",
+    "options": [
+      "2",
+      "9",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nDeviations from the mean: -2, -1, 2, 1, 0\n\nSquared deviations: 4, 1, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 3, 2, 1, 5.",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: 1, 0, -1, -2, 2\n\nSquared deviations: 1, 0, 1, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 6, 3, 5, 7, correct to 2 decimal places.",
+    "options": [
+      "5",
+      "1.41",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 5, 6, 8, 7, 9.",
+    "options": [
+      "1.41",
+      "4",
+      "2",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -2, -1, 1, 0, 2\n\nSquared deviations: 4, 1, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 45, 50, 15, 4, 17, 26.",
+    "options": [
+      "21.5",
+      "17",
+      "26.17",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 4, 15, 17, 26, 45, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{17 + 26}{2} = 21.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 15, 16, 14, 12, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "1.41",
+      "14",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 7, 6, 9, 10.",
+    "options": [
+      "2",
+      "8",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: 0, -1, -2, 1, 2\n\nSquared deviations: 0, 1, 4, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 8, 6, 9, 7.",
+    "options": [
+      "4",
+      "8",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: 2, 0, -2, 1, -1\n\nSquared deviations: 4, 0, 4, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 24, 37, 29, 5, 21, 15.",
+    "options": [
+      "22.5",
+      "21",
+      "24",
+      "21.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 5, 15, 21, 24, 29, 37\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{21 + 24}{2} = 22.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 5, 9, 1, 37, 26, 15, 8, 8, 7, 24.",
+    "options": [
+      "15",
+      "37",
+      "14",
+      "140"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{140}{10} = 14\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 7, 6, 8, 5.",
+    "options": [
+      "1.41",
+      "6",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: -2, 1, 0, 2, -1\n\nSquared deviations: 4, 1, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 7, 5, 3, 6, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "5",
+      "1.41",
+      "2.83"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 6, 7, 3, 4, correct to 2 decimal places.",
+    "options": [
+      "5",
+      "2",
+      "1.41",
+      "2.83"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 8, 11, 36, 7, 22, 24.",
+    "options": [
+      "108",
+      "19",
+      "36",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{108}{6} = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 22, 14, 1, 25, 3, 8.",
+    "options": [
+      "8",
+      "12.17",
+      "11",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 1, 3, 8, 14, 22, 25\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{8 + 14}{2} = 11\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 9, 6, 7, 10, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "8",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 14, 11, 10, 12, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "12",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 9, 7, 8, 10, 11, correct to 2 decimal places.",
+    "options": [
+      "9",
+      "2",
+      "2.83",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 15, 16, 17, 14, 13, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "1.41",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 15\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 8, 4, 7, 6, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "1.41",
+      "6",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 8, 6, 9, 5.",
+    "options": [
+      "1.41",
+      "2",
+      "7",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: 0, 1, -1, 2, -2\n\nSquared deviations: 0, 1, 1, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 4, 5, 3, 6, 7, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "5",
+      "2.83",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 5\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 7, 9, 6, 8, correct to 2 decimal places.",
+    "options": [
+      "8",
+      "2",
+      "1.41",
+      "2.83"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 50, 47, 40, 11, 23, 7.",
+    "options": [
+      "29.67",
+      "31.5",
+      "23",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arrange in order: 7, 11, 23, 40, 47, 50\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{23 + 40}{2} = 31.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 7, 8, 4, 6, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "1.41",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 6\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 13, 14, 10, 11, 12.",
+    "options": [
+      "2",
+      "1.41",
+      "12",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: 1, 2, -2, -1, 0\n\nSquared deviations: 1, 4, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 2, 1, 3, 4, 5.",
+    "options": [
+      "2",
+      "1.41",
+      "4",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: -1, -2, 0, 1, 2\n\nSquared deviations: 1, 4, 0, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 46, 46, 28, 47, 35, 41.",
+    "options": [
+      "40.5",
+      "41",
+      "43.5",
+      "46"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 28, 35, 41, 46, 46, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{41 + 46}{2} = 43.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 8, 9, 10, 6.",
+    "options": [
+      "2",
+      "8",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: -1, 0, 1, 2, -2\n\nSquared deviations: 1, 0, 1, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 5, 6, 8, 4.",
+    "options": [
+      "1.41",
+      "4",
+      "6",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: 1, -1, 0, 2, -2\n\nSquared deviations: 1, 1, 0, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 39, 40, 1, 22, 49, 10.",
+    "options": [
+      "30.5",
+      "26.83",
+      "22",
+      "39"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 1, 10, 22, 39, 40, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{22 + 39}{2} = 30.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 31, 24, 7, 25, 25, 23.",
+    "options": [
+      "25",
+      "24",
+      "24.5",
+      "22.5"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 7, 23, 24, 25, 25, 31\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{24 + 25}{2} = 24.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 43, 39, 21, 5, 12, 33.",
+    "options": [
+      "21",
+      "25.5",
+      "33",
+      "27"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 5, 12, 21, 33, 39, 43\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{21 + 33}{2} = 27\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 5, 7, 4, 8, 6.",
+    "options": [
+      "2",
+      "6",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: -1, 1, -2, 2, 0\n\nSquared deviations: 1, 1, 4, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 10, 13, 12, 11.",
+    "options": [
+      "4",
+      "2",
+      "1.41",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nDeviations from the mean: -2, -1, 2, 1, 0\n\nSquared deviations: 4, 1, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 8), 20 (frequency 2), 30 (frequency 3), 40 (frequency 6), 50 (frequency 1). Calculate the mean mark.",
+    "options": [
+      "25",
+      "500",
+      "35",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\sum fx = 10(8) + 20(2) + 30(3) + 40(6) + 50(1) = 500\\)\n\n\\(\\sum f = 20\\)\n\nMean \\(= \\frac{500}{20} = 25\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 11, 13, 10, 12, 9, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "11",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 7, 8, 10, 9, 6, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "8",
+      "1.41",
+      "2.83"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 16, 14, 12, 13, 15, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "2",
+      "1.41",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 14\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 10, 3, 27, 22, 32, 26.",
+    "options": [
+      "22",
+      "26",
+      "24",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 3, 10, 22, 26, 27, 32\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{22 + 26}{2} = 24\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "The distribution of marks is: 10 (frequency 8), 20 (frequency 5), 30 (frequency 6), 40 (frequency 3), 50 (frequency 9). Calculate the mean mark.",
+    "options": [
+      "31",
+      "40",
+      "30",
+      "930"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\sum fx = 10(8) + 20(5) + 30(6) + 40(3) + 50(9) = 930\\)\n\n\\(\\sum f = 31\\)\n\nMean \\(= \\frac{930}{31} = 30\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 47, 35, 1, 32, 41, 33.",
+    "options": [
+      "33",
+      "35",
+      "31.5",
+      "34"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 1, 32, 33, 35, 41, 47\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{33 + 35}{2} = 34\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 11, 10, 9, 12.",
+    "options": [
+      "4",
+      "1.41",
+      "10",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -2, 1, 0, -1, 2\n\nSquared deviations: 4, 1, 0, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 41, 49, 37, 19, 11, 26.",
+    "options": [
+      "31.5",
+      "30.5",
+      "37",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 11, 19, 26, 37, 41, 49\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{26 + 37}{2} = 31.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 7, 9, 8, 10, 11.",
+    "options": [
+      "2",
+      "9",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nDeviations from the mean: -2, 0, -1, 1, 2\n\nSquared deviations: 4, 0, 1, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 4, 1, 10, 12, 32, 2.",
+    "options": [
+      "7",
+      "10.17",
+      "4",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 1, 2, 4, 10, 12, 32\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{4 + 10}{2} = 7\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 11, 10, 12, 8.",
+    "options": [
+      "10",
+      "4",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -1, 1, 0, 2, -2\n\nSquared deviations: 1, 1, 0, 4, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 23, 22, 31, 4, 6, 37.",
+    "options": [
+      "22",
+      "20.5",
+      "22.5",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 4, 6, 22, 23, 31, 37\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{22 + 23}{2} = 22.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 48, 47, 39, 36, 20, 22.",
+    "options": [
+      "37.5",
+      "39",
+      "36",
+      "35.33"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 20, 22, 36, 39, 47, 48\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{36 + 39}{2} = 37.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 27, 22, 15, 31, 45, 20.",
+    "options": [
+      "27",
+      "26.67",
+      "24.5",
+      "22"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 15, 20, 22, 27, 31, 45\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{22 + 27}{2} = 24.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 3, 6, 4, 5, 7.",
+    "options": [
+      "5",
+      "2",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: -2, 1, -1, 0, 2\n\nSquared deviations: 4, 1, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 41, 27, 18, 37, 38, 29.",
+    "options": [
+      "29",
+      "37",
+      "31.67",
+      "33"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 18, 27, 29, 37, 38, 41\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{29 + 37}{2} = 33\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 13, 9, 11, 10, 12, correct to 2 decimal places.",
+    "options": [
+      "11",
+      "1.41",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 11\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 1, 20, 24, 26, 15, 21.",
+    "options": [
+      "17.83",
+      "21",
+      "20.5",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 1, 15, 20, 21, 24, 26\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{20 + 21}{2} = 20.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 13, 10, 12, 14.",
+    "options": [
+      "12",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: -1, 1, -2, 0, 2\n\nSquared deviations: 1, 1, 4, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 3, 6, 7, 5.",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: -1, -2, 1, 2, 0\n\nSquared deviations: 1, 4, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 10, 12, 11, 13, correct to 2 decimal places.",
+    "options": [
+      "2.83",
+      "12",
+      "1.41",
+      "2"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 8, 9, 10, 7.",
+    "options": [
+      "2",
+      "8",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nDeviations from the mean: -2, 0, 1, 2, -1\n\nSquared deviations: 4, 0, 1, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 9, 8, 33, 13, 12, 33.",
+    "options": [
+      "18",
+      "33",
+      "19",
+      "108"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{108}{6} = 18\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 27, 41, 9, 12, 11, 6.",
+    "options": [
+      "17.67",
+      "12",
+      "11.5",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arrange in order: 6, 9, 11, 12, 27, 41\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{11 + 12}{2} = 11.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 34, 13, 6, 30, 44, 9.",
+    "options": [
+      "22.67",
+      "30",
+      "13",
+      "21.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arrange in order: 6, 9, 13, 30, 34, 44\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{13 + 30}{2} = 21.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 4, 8, 7, 5, 6.",
+    "options": [
+      "1.41",
+      "2",
+      "6",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 6\\)\n\nDeviations from the mean: -2, 2, 1, -1, 0\n\nSquared deviations: 4, 4, 1, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 6, 9, 5, 8, 7, correct to 2 decimal places.",
+    "options": [
+      "7",
+      "2",
+      "2.83",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 7\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 6, 10, 7, 8, 9, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "8",
+      "2",
+      "2.83"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 3, 5, 2, 4, 1.",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 3\\)\n\nDeviations from the mean: 0, 2, -1, 1, -2\n\nSquared deviations: 0, 4, 1, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 12, 10, 8, 11.",
+    "options": [
+      "2",
+      "4",
+      "10",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -1, 2, 0, -2, 1\n\nSquared deviations: 1, 4, 0, 4, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 8, 11, 9, 12, 10, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "10",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 10\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 14, 13, 15, 16, 17, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "15",
+      "2.83",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 15\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the median of: 38, 23, 38, 13, 1, 32.",
+    "options": [
+      "27.5",
+      "24.17",
+      "23",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "Arrange in order: 1, 13, 23, 32, 38, 38\n\nThere are 6 values, so the median is the mean of the 3rd and 4th values.\n\n\\(\\frac{23 + 32}{2} = 27.5\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 7, 9, 11, 8, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "2",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 9\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 11, 13, 12, 14, 10, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2",
+      "2.83",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 12\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 8, 11, 9, 10, 12.",
+    "options": [
+      "10",
+      "2",
+      "4",
+      "1.41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -2, 1, -1, 0, 2\n\nSquared deviations: 4, 1, 1, 0, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 5, 6, 8, 7, 9, correct to 2 decimal places.",
+    "options": [
+      "1.41",
+      "2.83",
+      "7",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 7\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 10, 13, 11, 14, 12.",
+    "options": [
+      "1.41",
+      "2",
+      "12",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: -2, 1, -1, 2, 0\n\nSquared deviations: 4, 1, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 6, 5, 9, 8, 7.",
+    "options": [
+      "1.41",
+      "7",
+      "2",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: -1, -2, 2, 1, 0\n\nSquared deviations: 1, 4, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 3, 7, 5, 4, 6.",
+    "options": [
+      "5",
+      "2",
+      "1.41",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 5\\)\n\nDeviations from the mean: -2, 2, 0, -1, 1\n\nSquared deviations: 4, 4, 0, 1, 1\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 8, 10, 11, 12.",
+    "options": [
+      "2",
+      "1.41",
+      "10",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 10\\)\n\nDeviations from the mean: -1, -2, 0, 1, 2\n\nSquared deviations: 1, 4, 0, 1, 4\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 11, 14, 13, 10, 12.",
+    "options": [
+      "1.41",
+      "2",
+      "12",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mean \\(= 12\\)\n\nDeviations from the mean: -1, 2, 1, -2, 0\n\nSquared deviations: 1, 4, 1, 4, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Find the variance of the data: 9, 8, 5, 6, 7.",
+    "options": [
+      "2",
+      "1.41",
+      "7",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= 7\\)\n\nDeviations from the mean: 2, 1, -2, -1, 0\n\nSquared deviations: 4, 1, 4, 1, 0\n\nVariance \\(= \\frac{10}{5} = 2\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the standard deviation of: 10, 9, 6, 7, 8, correct to 2 decimal places.",
+    "options": [
+      "2",
+      "2.83",
+      "8",
+      "1.41"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean \\(= 8\\)\n\nVariance \\(= \\frac{\\sum (x - \\bar{x})^{2}}{n} = \\frac{10}{5} = 2\\)\n\nStandard deviation \\(= \\sqrt{2} = 1.41\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the mean of the following data: 40, 9, 18, 1, 40, 22, 3.",
+    "options": [
+      "19",
+      "20",
+      "40",
+      "133"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean \\(= \\frac{\\sum x}{n} = \\frac{133}{7} = 19\\)",
+    "subjectId": "iXlgqvDtHn3rTWykgqoA",
+    "unitId": "MQvfQ7h47QmI6EbqdKTp",
+    "topicId": "gNH8IoIdavYmQa5XiZIH",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]
