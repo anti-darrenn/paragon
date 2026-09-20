@@ -2,11 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/progress/course_progress.dart';
 import '../core/repositories/course_repository.dart';
+import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/app_top_nav.dart';
 import '../core/widgets/course_module_card.dart';
+import '../core/widgets/mastery_indicator.dart';
 
 /// Course index for one subject — `/subject/:subjectKey/course`.
 ///
@@ -26,12 +29,19 @@ class CourseIndexScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final courseAsync = ref.watch(courseProvider(subjectKey));
+    // One document listener for the whole page, not one query per topic —
+    // see `progress_repository.dart`. A student with no progress yet
+    // resolves to empty rather than to an error, so the page renders
+    // identically whether or not they have ever practised.
+    final progress =
+        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
 
     return ParagonPage(
       child: courseAsync.when(
-        loading: () => const _CenteredMessage(child: CircularProgressIndicator()),
+        loading: () =>
+            const _CenteredMessage(child: CircularProgressIndicator()),
         error: (error, _) => _CourseError(error: error),
-        data: (course) => _CourseBody(course: course),
+        data: (course) => _CourseBody(course: course, progress: progress),
       ),
     );
   }
@@ -54,9 +64,10 @@ int _gridColumnsFor(double listWidth, {required bool isCompact}) {
 }
 
 class _CourseBody extends StatelessWidget {
-  const _CourseBody({required this.course});
+  const _CourseBody({required this.course, required this.progress});
 
   final Course course;
+  final UserProgress progress;
 
   @override
   Widget build(BuildContext context) {
@@ -92,10 +103,7 @@ class _CourseBody extends StatelessWidget {
             ),
             if (!course.isLive) ...[
               const SizedBox(width: 12),
-              const _StatusPill(
-                label: 'Coming soon',
-                color: AppColors.warning,
-              ),
+              const _StatusPill(label: 'Coming soon', color: AppColors.warning),
             ],
           ],
         ),
@@ -110,6 +118,15 @@ class _CourseBody extends StatelessWidget {
 
         const SizedBox(height: 16),
         _CourseMeta(course: course, accent: accent),
+
+        if (course.hasProgressToShow) ...[
+          const SizedBox(height: 20),
+          _CourseProgressPanel(
+            course: course,
+            progress: progress,
+            accent: accent,
+          ),
+        ],
 
         if (!course.isLive) ...[
           const SizedBox(height: 20),
@@ -148,6 +165,7 @@ class _CourseBody extends StatelessWidget {
                       accent: accent,
                       index: i,
                       gridColumns: columns,
+                      progress: progress,
                       onTopicTap: course.modules[i].isPlaceholder
                           ? null
                           : (topic) => context.push(
@@ -162,6 +180,79 @@ class _CourseBody extends StatelessWidget {
 
         const SizedBox(height: 64),
       ],
+    );
+  }
+}
+
+/// Course mastery: the ring, and what it is counting.
+///
+/// The ring is the aggregate of every practisable topic in the subject, so
+/// it moves slowly and deliberately — a student who has taken two topics
+/// of forty-three to proficiency has done real work and the number should
+/// say so without pretending they are nearly done. The counts beside it
+/// are what actually answers "how am I doing", which is why they are words
+/// and not just a percentage.
+class _CourseProgressPanel extends StatelessWidget {
+  const _CourseProgressPanel({
+    required this.course,
+    required this.progress,
+    required this.accent,
+  });
+
+  final Course course;
+  final UserProgress progress;
+  final Color accent;
+
+  @override
+  Widget build(BuildContext context) {
+    final total = course.practisableTopicCount;
+    final started = course.startedCountIn(progress);
+    final complete = course.completedCountIn(progress);
+
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceDark,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.borderDark),
+      ),
+      child: Row(
+        children: [
+          MasteryRing(
+            fraction: course.masteryIn(progress),
+            accent: accent,
+            size: 64,
+          ),
+          const SizedBox(width: 18),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  started == 0
+                      ? 'You have not started this course yet'
+                      : 'Course mastery',
+                  style: AppTheme.bodyLg.copyWith(
+                    color: AppColors.textPrimaryDark,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  started == 0
+                      ? 'Pick any topic below to begin. Each circle fills as '
+                            'you answer questions in that topic.'
+                      : '$started of $total topics started  ·  $complete at '
+                            'proficient or above',
+                  style: AppTheme.bodyMd.copyWith(
+                    color: AppColors.textSecondaryDark,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -196,9 +287,7 @@ class _CourseMeta extends StatelessWidget {
         Flexible(
           child: Text(
             parts.join('  ·  '),
-            style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
-            ),
+            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
           ),
         ),
       ],
@@ -219,7 +308,9 @@ class _PlannedNotice extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
         color: AppColors.warning.withAlpha((0.08 * 255).round()),
-        border: Border.all(color: AppColors.warning.withAlpha((0.35 * 255).round())),
+        border: Border.all(
+          color: AppColors.warning.withAlpha((0.35 * 255).round()),
+        ),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Row(
@@ -352,17 +443,13 @@ class _CourseError extends StatelessWidget {
             isMissing
                 ? "We couldn't find that course."
                 : "That course couldn't be loaded.",
-            style: AppTheme.heading3.copyWith(
-              color: AppColors.textPrimaryDark,
-            ),
+            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
           ),
           const SizedBox(height: 8),
           Text(
             isMissing ? '$error' : 'Check your connection and try again.',
             textAlign: TextAlign.center,
-            style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
-            ),
+            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
           ),
           const SizedBox(height: 20),
           OutlinedButton(

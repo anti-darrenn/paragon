@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../progress/course_progress.dart';
+import '../progress/mastery.dart';
 import '../repositories/course_repository.dart';
+import '../repositories/progress_repository.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
 import 'app_top_nav.dart';
+import 'mastery_indicator.dart';
 
 /// The repeating unit of a course index page: one bordered card split into
 /// a narrow title region and a wide grid of topic links.
@@ -27,9 +31,15 @@ class CourseModuleCard extends StatelessWidget {
     required this.index,
     required this.gridColumns,
     required this.onTopicTap,
+    this.progress = UserProgress.empty,
   });
 
   final CourseModule module;
+
+  /// The student's counters. Defaults to empty so a caller with no
+  /// progress to show renders the same card with untouched rings rather
+  /// than needing a second widget.
+  final UserProgress progress;
 
   /// Subject accent from `AppColors.forSubject` — the only thing that
   /// changes between one subject's cards and another's.
@@ -74,6 +84,7 @@ class CourseModuleCard extends StatelessWidget {
                     module: module,
                     accent: accent,
                     index: index,
+                    progress: progress,
                     paintBackground: true,
                   ),
                   const Divider(
@@ -85,6 +96,7 @@ class CourseModuleCard extends StatelessWidget {
                     module: module,
                     accent: accent,
                     columns: gridColumns,
+                    progress: progress,
                     onTopicTap: onTopicTap,
                   ),
                 ],
@@ -131,6 +143,7 @@ class CourseModuleCard extends StatelessWidget {
                           module: module,
                           accent: accent,
                           index: index,
+                          progress: progress,
                           paintBackground: false,
                         ),
                       ),
@@ -143,6 +156,7 @@ class CourseModuleCard extends StatelessWidget {
                           module: module,
                           accent: accent,
                           columns: gridColumns,
+                          progress: progress,
                           onTopicTap: onTopicTap,
                         ),
                       ),
@@ -160,12 +174,14 @@ class _TitleRegion extends StatelessWidget {
     required this.module,
     required this.accent,
     required this.index,
+    required this.progress,
     required this.paintBackground,
   });
 
   final CourseModule module;
   final Color accent;
   final int index;
+  final UserProgress progress;
 
   /// True only in the stacked (compact) layout, where nothing paints the
   /// tint behind this region. In the side-by-side layout the card's
@@ -175,14 +191,15 @@ class _TitleRegion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final topicCount = module.topics.length;
+    final practisable = module.practisableTopicCount;
+    final started = module.startedCountIn(progress);
+    final showRing = !module.isPlaceholder && practisable > 0;
 
     return Container(
       // Accent wash — subtle enough that ten of these stacked down the page
       // don't read as ten coloured blocks, strong enough to tell Physics
       // apart from Economics at a glance.
-      color: paintBackground
-          ? accent.withAlpha((0.07 * 255).round())
-          : null,
+      color: paintBackground ? accent.withAlpha((0.07 * 255).round()) : null,
       padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -192,16 +209,29 @@ class _TitleRegion extends StatelessWidget {
               Container(
                 width: 6,
                 height: 6,
-                decoration: BoxDecoration(color: accent, shape: BoxShape.circle),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                'Module ${index + 1}',
-                style: AppTheme.caption.copyWith(
+                decoration: BoxDecoration(
                   color: accent,
-                  letterSpacing: 0.6,
+                  shape: BoxShape.circle,
                 ),
               ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Module ${index + 1}',
+                  style: AppTheme.caption.copyWith(
+                    color: accent,
+                    letterSpacing: 0.6,
+                  ),
+                ),
+              ),
+              // The module's own ring, trailing the label so it lands on
+              // the same right-hand edge as the topic circles below it.
+              if (showRing)
+                MasteryRing(
+                  fraction: module.masteryIn(progress),
+                  accent: accent,
+                  size: 34,
+                ),
             ],
           ),
           const SizedBox(height: 10),
@@ -218,10 +248,18 @@ class _TitleRegion extends StatelessWidget {
                 ? '$topicCount ${topicCount == 1 ? 'topic' : 'topics'} planned'
                 : '$topicCount ${topicCount == 1 ? 'topic' : 'topics'} · '
                       '${module.questionCount} questions',
-            style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
-            ),
+            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
           ),
+          // Only once there is something to report. "0 of 6 started" on
+          // every card of a course nobody has opened is a wall of zeroes,
+          // and the empty rings already say as much.
+          if (showRing && started > 0) ...[
+            const SizedBox(height: 6),
+            Text(
+              '$started of $practisable started',
+              style: AppTheme.caption.copyWith(color: accent),
+            ),
+          ],
         ],
       ),
     );
@@ -233,12 +271,14 @@ class _TopicGrid extends StatelessWidget {
     required this.module,
     required this.accent,
     required this.columns,
+    required this.progress,
     required this.onTopicTap,
   });
 
   final CourseModule module;
   final Color accent;
   final int columns;
+  final UserProgress progress;
   final void Function(CourseTopic topic)? onTopicTap;
 
   static const double _columnGap = 24;
@@ -277,6 +317,7 @@ class _TopicGrid extends StatelessWidget {
                         : TopicLink(
                             topic: rows[r][c]!,
                             accent: accent,
+                            level: rows[r][c]!.levelIn(progress),
                             onTap: onTopicTap,
                           ),
                   ),
@@ -299,10 +340,16 @@ class TopicLink extends StatefulWidget {
     required this.topic,
     required this.accent,
     required this.onTap,
+    this.level = MasteryLevel.notStarted,
   });
 
   final CourseTopic topic;
   final Color accent;
+
+  /// Drawn as a circle at the right-hand end of the row. Placeholder
+  /// topics never show one — there is nothing to have practised.
+  final MasteryLevel level;
+
   final void Function(CourseTopic topic)? onTap;
 
   @override
@@ -314,8 +361,7 @@ class _TopicLinkState extends State<TopicLink> {
 
   @override
   Widget build(BuildContext context) {
-    final isInteractive =
-        !widget.topic.isPlaceholder && widget.onTap != null;
+    final isInteractive = !widget.topic.isPlaceholder && widget.onTap != null;
     final nameColor = !isInteractive
         ? AppColors.textSecondaryDark
         : _isHovered
@@ -359,16 +405,32 @@ class _TopicLinkState extends State<TopicLink> {
               Text(
                 widget.topic.isPlaceholder
                     ? 'Coming soon'
+                    : widget.level.isStarted
+                    // Once a student has worked on a topic, how far they
+                    // have got matters more to them than how much material
+                    // is left in it.
+                    ? widget.level.label
                     : '${widget.topic.questionCount} questions',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark.withAlpha(
-                    (0.75 * 255).round(),
-                  ),
+                  color: widget.level.isStarted
+                      ? widget.accent
+                      : AppColors.textSecondaryDark.withAlpha(
+                          (0.75 * 255).round(),
+                        ),
                 ),
               ),
             ],
           ),
         ),
+        // The mastery circle, right-aligned on every row so the column of
+        // them reads down the card as a single progress column.
+        if (!widget.topic.isPlaceholder) ...[
+          const SizedBox(width: 12),
+          Padding(
+            padding: const EdgeInsets.only(top: 1),
+            child: MasteryCircle(level: widget.level, accent: widget.accent),
+          ),
+        ],
       ],
     );
 
