@@ -14,7 +14,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/models/firestore_parsing.dart';
 import 'package:paragon/core/models/learn_resource.dart';
-import 'package:paragon/core/repositories/learn_repository.dart';
 
 // ignore: subtype_of_sealed_class
 /// Same minimal fake as `model_null_safety_test.dart` — only `id` and
@@ -147,33 +146,6 @@ void main() {
 
     test('an unknown type is never available', () {
       expect(res({'type': 'podcast', 'body': 'x'}).isAvailable, isFalse);
-    });
-  });
-
-  group('topic test scoring', () {
-    test('80% exactly passes', () {
-      expect(passesTopicTest(correct: 8, total: 10), isTrue);
-      expect(passesTopicTest(correct: 4, total: 5), isTrue);
-    });
-
-    test('just under 80% fails', () {
-      expect(passesTopicTest(correct: 7, total: 10), isFalse);
-      expect(passesTopicTest(correct: 3, total: 4), isFalse);
-    });
-
-    test('a perfect score passes', () {
-      expect(passesTopicTest(correct: 10, total: 10), isTrue);
-    });
-
-    test('an empty test cannot be passed', () {
-      // Otherwise a topic with no answerable questions would unlock drill
-      // for free — 0/0 is not 100%.
-      expect(passesTopicTest(correct: 0, total: 0), isFalse);
-    });
-
-    test('the threshold constants are what the product says they are', () {
-      expect(kTopicTestPassRatio, 0.8);
-      expect(kTopicTestQuestions, 10);
     });
   });
 }

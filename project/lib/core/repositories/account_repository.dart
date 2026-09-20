@@ -99,6 +99,9 @@ class AccountRepository {
     // that was never created is a no-op in Firestore, so a student who
     // never practised needs no special case.
     await _db.collection('progress').doc(uid).delete();
+    // Topic-test results — the drill gate. Same shape as `progress`: one
+    // document, id'd by uid, so no query is needed.
+    await _db.collection('learn').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 

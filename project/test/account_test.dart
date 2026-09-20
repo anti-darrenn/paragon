@@ -26,6 +26,20 @@ void main() {
       }
       await db.collection('flags').add({'userId': 'u1', 'questionId': 'q1'});
       await db.collection('flags').add({'userId': 'u2', 'questionId': 'q2'});
+
+      // The two uid-keyed single documents. Both are easy to forget when a
+      // collection is added, and forgetting leaves a student who asked to
+      // be deleted, and mostly was.
+      await db.collection('progress').doc('u1').set({
+        'userId': 'u1',
+        'topics': {'t1': {'answered': 20, 'correct': 18}},
+      });
+      await db.collection('progress').doc('u2').set({'userId': 'u2'});
+      await db.collection('learn').doc('u1').set({
+        'userId': 'u1',
+        'topics': {'t1': {'passed': true, 'bestScore': 90, 'attempts': 1}},
+      });
+      await db.collection('learn').doc('u2').set({'userId': 'u2'});
     });
 
     test('removes the user document, attempts and flags', () async {
@@ -46,6 +60,15 @@ void main() {
       expect(flags.docs, isEmpty);
     });
 
+    test('removes the progress and topic-test documents', () async {
+      await repo.deleteOwnedDocuments('u1');
+
+      expect((await db.collection('progress').doc('u1').get()).exists, isFalse);
+      // The drill gate's record. Added with the topic test; if this ever
+      // starts failing, a deleted student's test history is surviving them.
+      expect((await db.collection('learn').doc('u1').get()).exists, isFalse);
+    });
+
     test('leaves other users entirely alone', () async {
       await repo.deleteOwnedDocuments('u1');
 
@@ -60,6 +83,8 @@ void main() {
           .where('userId', isEqualTo: 'u2')
           .get();
       expect(flags.docs.length, 1);
+      expect((await db.collection('progress').doc('u2').get()).exists, isTrue);
+      expect((await db.collection('learn').doc('u2').get()).exists, isTrue);
     });
 
     test('keeps the username reservation', () async {

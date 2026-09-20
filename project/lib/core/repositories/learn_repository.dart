@@ -62,22 +62,9 @@ final topicResourcesProvider =
 /// `min(kTopicTestQuestions, bank size)`.
 const int kTopicTestQuestions = 10;
 
-/// The share of a topic test that must be correct to pass.
-///
-/// 0.8 exactly. Compared with `>=` against a rounded percentage so that 8
-/// of 10 passes rather than landing a hair under on floating point.
-const double kTopicTestPassRatio = 0.8;
-
-/// Whether [correct] out of [total] passes a topic test.
-///
-/// Pure, and the single definition — the screen that scores an attempt and
-/// the repository that records the pass must not each have their own
-/// opinion about what 80% means. A test with no questions cannot be
-/// passed; returning true there would unlock drill on an empty topic.
-bool passesTopicTest({required int correct, required int total}) {
-  if (total <= 0) return false;
-  return correct / total >= kTopicTestPassRatio;
-}
+// The pass mark and the scoring live in `lib/core/learn/topic_test.dart`,
+// with the gate they feed — deliberately not here. This file decides which
+// questions a test serves; it has no opinion about what passing one means.
 
 /// Firestore auto-ID alphabet, for synthesising a random cursor over
 /// `FieldPath.documentId` — the same rotation trick `drillQuestionsProvider`

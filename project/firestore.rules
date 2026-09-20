@@ -168,6 +168,39 @@ service cloud.firestore {
           && request.resource.data.topics is map;
     }
 
+    // ── TOPIC TEST RESULTS (the drill gate) ──────────────────────
+    // One document per student, id'd by uid. Records which topic tests
+    // have been passed, which is what unlocks drill for that topic.
+    //
+    // Deliberately NOT merged into `progress/{uid}`. That document is
+    // described everywhere — here, in its repository, in CLAUDE.md — as a
+    // cache recomputable from `attempts`, and every safety claim made for
+    // it rests on that being true. A test pass is NOT recomputable:
+    // nothing in `attempts` records which ten answers belonged to one
+    // sitting. Putting it there would make that description a lie.
+    //
+    // **What these rules cannot do.** They cannot verify that `passed`
+    // was earned. A write is one document; the ten answers behind it are
+    // not in it, and rules cannot iterate a map with dynamic keys to
+    // check each entry. So the gate is client-enforced and a determined
+    // student can open it by hand. That is a deliberate, bounded
+    // acceptance: drill is practice rather than a reward, nothing
+    // competitive reads this, and the prize for forging it is a practice
+    // screen. If anything of value is ever put behind this gate, it needs
+    // a server first.
+    //
+    // What the rules DO enforce is the same envelope as `progress`:
+    // owner-only in both directions, a closed top-level field set so this
+    // cannot become a dumping ground, and a real serverTimestamp().
+    match /learn/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+          && request.resource.data.keys().hasOnly(['userId', 'updatedAt', 'topics'])
+          && request.resource.data.userId == uid
+          && request.resource.data.updatedAt == request.time
+          && request.resource.data.topics is map;
+    }
+
     // ── QUESTION FLAGS (student-reported problems) ───────────────
     // The answer key is scraped from a third party with a measured error
     // rate, so students reporting a wrong answer is how we find the bad

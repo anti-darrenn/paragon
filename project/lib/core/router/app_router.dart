@@ -22,6 +22,7 @@ import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
 import 'package:paragon/features/topic_list_screen.dart';
+import 'package:paragon/features/topic_test_screen.dart';
 import 'package:paragon/features/topic_overview_screen.dart';
 import 'package:paragon/features/unit_list_screen.dart';
 import 'package:paragon/features/waec_exam_screen.dart';
@@ -227,8 +228,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId',
-        builder: (context, state) =>
-            DrillScreen(topicId: state.pathParameters['topicId']!),
+        builder: (context, state) => DrillScreen(
+          topicId: state.pathParameters['topicId']!,
+          // Passed so the locked state can offer this topic's test. Drill
+          // itself still only needs the topic id — see DrillScreen.
+          subjectId: state.pathParameters['subjectId'],
+          unitId: state.pathParameters['unitId'],
+        ),
+      ),
+      // The topic test — the gate that opens the drill route above.
+      // Deliberately NOT gated itself: taking it is how you get through.
+      GoRoute(
+        path: '/subject/:subjectId/unit/:unitId/topic/:topicId/test',
+        builder: (context, state) => TopicTestScreen(
+          subjectId: state.pathParameters['subjectId']!,
+          unitId: state.pathParameters['unitId']!,
+          topicId: state.pathParameters['topicId']!,
+        ),
       ),
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId/learn',

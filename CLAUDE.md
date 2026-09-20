@@ -96,7 +96,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-43 checks. The denials are the content: a write that succeeds only proves something
+49 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -112,6 +112,22 @@ Flutter web app (Riverpod v3 + go_router v17 + Firebase v4) over a Firestore con
 - WAEC Prep Mode — `/waec` → `/waec/:subjectId/exam` (WaecSubjectScreen → WaecExamScreen). Full exam run, results at the end, `source: 'waec'`.
 
 Never add WAEC questions to drill providers without filtering by `source`, and never add drill-style instant feedback to the exam flow.
+
+**The drill gate.** `lib/core/learn/topic_test.dart` is the pure model —
+scoring, the 80% pass mark (`kTopicTestPassPercent`), and `drillAccessFor`,
+which is the *only* place the gate is decided. Drill for a topic opens when
+its topic test is passed, or — grandfathered — when drill mastery already
+reached proficient before the gate shipped. Guests get no drill at all, and
+are refused before proficiency is considered, since a guest's pass dies
+with the session. Learn content is never gated.
+
+**The gate is client-enforced and cannot be otherwise**: rules see one
+document write, not the ten answers behind it. That is a bounded,
+deliberate acceptance — drill is practice, not a reward. Put anything of
+value behind it and it needs a server first. Grandfathering is the one
+place `progress/{uid}` touches *access*; it stays honest only because it is
+one-way — it can grant access, never withhold it — so a missing or stale
+progress document can never cost a student anything.
 
 **Progress and mastery.** `lib/core/progress/mastery.dart` is the pure model —
 `MasteryLevel` (notStarted/attempted/familiar/proficient/mastered), the thresholds,
@@ -166,7 +182,7 @@ claimed an `is_guest` property that nothing ever set.
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`.
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
@@ -174,6 +190,8 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
+- `learn/{uid}` holds topic-test results: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt}}}`. **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
+- `attempts.source` is now one of `drill | waec | test`. Drill and WAEC queries filter on it; **test answers must never feed the mastery counters**, because mastery at proficient is itself an alternative way through the gate and the two would form a loop.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`.** Forgetting leaves a student who asked to be deleted, and mostly was.
 
 ## Riverpod v3 gotchas
@@ -195,7 +213,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 197 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 221 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

@@ -569,6 +569,81 @@ async function progress(a, b) {
   );
 }
 
+async function learnGate(a, b) {
+  suite('learn/{uid} — topic test results');
+
+  const path = `learn/${a.uid}`;
+  const fields = (uid) => ({
+    userId: str(uid),
+    topics: map({
+      topicVerify: map({
+        passed: bool(true),
+        bestScore: int(90),
+        attempts: int(1),
+        subjectId: str('subjVerify'),
+      }),
+    }),
+  });
+
+  expectOutcome(
+    'a topic-test result can be written for yourself',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(path, fields(a.uid), { transforms: [serverTime('updatedAt')] }),
+    ),
+  );
+
+  // The closed field set. `learn` carries the drill gate, so it is exactly
+  // the document someone would try to smuggle an unlock flag onto.
+  expectOutcome(
+    'a write carrying an unlisted field is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        path,
+        { ...fields(a.uid), unlockedEverything: bool(true) },
+        { transforms: [serverTime('updatedAt')] },
+      ),
+    ),
+  );
+
+  expectOutcome(
+    'a client-supplied updatedAt is refused',
+    DENY,
+    await commit(a.idToken, write(path, {
+      ...fields(a.uid),
+      updatedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+    })),
+  );
+
+  expectOutcome(
+    "another student's topic-test results are not writable",
+    DENY,
+    await commit(
+      a.idToken,
+      write(`learn/${b.uid}`, fields(b.uid), {
+        transforms: [serverTime('updatedAt')],
+      }),
+    ),
+  );
+
+  expectOutcome(
+    "another student's topic-test results are not readable",
+    DENY,
+    await readDoc(b.idToken, path),
+  );
+
+  const own = await readDoc(a.idToken, path);
+  expectOutcome('own topic-test results read back', ALLOW, own);
+  record(
+    'the pass flag round-trips',
+    own.body?.fields?.topics?.mapValue?.fields?.topicVerify?.mapValue?.fields
+      ?.passed?.booleanValue === true,
+  );
+}
+
 async function content(a) {
   suite('content — readable, never writable');
 
@@ -629,6 +704,7 @@ async function teardown(a, b, usernameKey) {
 
   for (const user of [a, b]) {
     await deleteDoc(user.idToken, `progress/${user.uid}`);
+    await deleteDoc(user.idToken, `learn/${user.uid}`);
     await deleteDoc(user.idToken, `users/${user.uid}`);
     await deleteAccount(user.idToken);
   }
@@ -671,6 +747,7 @@ async function teardown(a, b, usernameKey) {
   await usernames(a, b, usernameKey);
   await attemptsAndFlags(a, b);
   await progress(a, b);
+  await learnGate(a, b);
   await content(a);
 
   await teardown(a, b, usernameKey);

@@ -2,9 +2,11 @@ import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:paragon/core/learn/topic_test.dart';
 import 'package:paragon/core/models/question.dart';
 import 'package:paragon/core/progress/mastery.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:paragon/core/repositories/learn_progress_repository.dart';
 import 'package:paragon/core/repositories/learning_repository.dart';
 import 'package:paragon/core/repositories/progress_repository.dart';
 import 'package:paragon/features/drill_screen.dart';
@@ -68,6 +70,15 @@ void main() {
           progressRepositoryProvider.overrideWithValue(
             ProgressRepository(FakeFirebaseFirestore()),
           ),
+          // Past the topic-test gate, so these tests stay about the
+          // summary. Signed out reads as `signedOut` and would render the
+          // locked state instead of a single question — correct behaviour,
+          // and not what this file is measuring. The group at the bottom
+          // pumps WITHOUT this override, so the gate cannot quietly break
+          // behind it.
+          drillAccessProvider(
+            topicId,
+          ).overrideWithValue(DrillAccess.allowed),
         ],
         child: const MaterialApp(home: DrillScreen(topicId: topicId)),
       ),
@@ -140,5 +151,73 @@ void main() {
 
     await answerAll(tester, 2);
     expect(find.text('2 / 2'), findsOneWidget);
+  });
+
+  group('the topic-test gate', () {
+    /// Same screen, same overrides, minus the access override — so what
+    /// this asserts is the real provider's verdict, not a stub's.
+    Future<void> pumpGated(
+      WidgetTester tester, {
+      required DrillAccess access,
+    }) async {
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            drillQuestionsProvider(
+              topicId,
+            ).overrideWith((ref) async => [question('q0')]),
+            currentUserProvider.overrideWithValue(null),
+            progressRepositoryProvider.overrideWithValue(
+              ProgressRepository(FakeFirebaseFirestore()),
+            ),
+            drillAccessProvider(topicId).overrideWithValue(access),
+          ],
+          child: const MaterialApp(
+            home: DrillScreen(
+              topicId: topicId,
+              subjectId: 's1',
+              unitId: 'u1',
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+    }
+
+    testWidgets('a locked topic shows the test prompt, not a question', (
+      tester,
+    ) async {
+      await pumpGated(tester, access: DrillAccess.testRequired);
+
+      expect(find.text('Pass the topic test first'), findsOneWidget);
+      expect(find.text('Take the topic test'), findsOneWidget);
+      // The thing that matters: no question leaks through the gate.
+      expect(find.text('What is 2 + 2?'), findsNothing);
+      expect(find.text('Submit Answer'), findsNothing);
+    });
+
+    testWidgets('a guest is told to get an account, not to take a test', (
+      tester,
+    ) async {
+      // Taking a test would be a dead end for a guest — the result dies
+      // with the session — so the guest branch must not offer it.
+      await pumpGated(tester, access: DrillAccess.guestBlocked);
+
+      expect(find.text('Drill needs an account'), findsOneWidget);
+      expect(find.text('Sign in'), findsOneWidget);
+      expect(find.text('Take the topic test'), findsNothing);
+      expect(find.text('What is 2 + 2?'), findsNothing);
+    });
+
+    testWidgets('an allowed topic renders the question as before', (
+      tester,
+    ) async {
+      // The control for this group: proves the two assertions above are
+      // detecting the gate rather than a screen that renders nothing.
+      await pumpGated(tester, access: DrillAccess.allowed);
+
+      expect(find.text('What is 2 + 2?'), findsOneWidget);
+      expect(find.text('Pass the topic test first'), findsNothing);
+    });
   });
 }

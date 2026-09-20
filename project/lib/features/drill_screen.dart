@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/repositories/attempt_repository.dart';
 import '../core/providers/auth_provider.dart';
@@ -14,10 +15,26 @@ import '../core/providers/analytics_provider.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
 import '../core/repositories/progress_repository.dart';
+import '../core/auth/guest_limits.dart';
+import '../core/learn/topic_test.dart';
+import '../core/repositories/learn_progress_repository.dart';
+import '../core/theme/app_theme.dart' show AppTheme;
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
-  const DrillScreen({super.key, required this.topicId});
+
+  /// Carried only so the locked state can link to this topic's test and
+  /// its lesson — drill itself needs neither. Nullable because the screen
+  /// predates the gate and is still constructed without them in tests.
+  final String? subjectId;
+  final String? unitId;
+
+  const DrillScreen({
+    super.key,
+    required this.topicId,
+    this.subjectId,
+    this.unitId,
+  });
 
   @override
   ConsumerState<DrillScreen> createState() => _DrillScreenState();
@@ -185,6 +202,32 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     final storedProgress = ref.watch(userProgressProvider).asData?.value;
     if (_answered == 0 && storedProgress != null) {
       _startingProgress = storedProgress.forTopic(widget.topicId);
+    }
+
+    // ── The gate ──────────────────────────────────────────────────
+    // Enforced here rather than in the router's redirect, for two
+    // reasons. The decision needs two Firestore streams, and a redirect
+    // that returns null while they load would let every deep link through
+    // on first paint. And a locked *screen* can explain itself and offer
+    // the test, where a redirect can only bounce someone somewhere else.
+    //
+    // Checked before the questions are even read, so a locked topic costs
+    // no query.
+    final access = ref.watch(drillAccessProvider(widget.topicId));
+    if (!access.isAllowed) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Drill')),
+        body: _Locked(
+          access: access,
+          onTakeTest: widget.subjectId != null && widget.unitId != null
+              ? () => context.push(
+                  '/subject/${widget.subjectId}/unit/${widget.unitId}'
+                  '/topic/${widget.topicId}/test',
+                )
+              : null,
+          onSignIn: () => context.push('/signin'),
+        ),
+      );
     }
 
     return Scaffold(
@@ -529,6 +572,97 @@ class _SessionSummary extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// What drill shows when the gate is shut.
+///
+/// Every state names the way through rather than only the refusal — a
+/// locked screen that does not say what unlocks it reads as a bug.
+class _Locked extends StatelessWidget {
+  const _Locked({
+    required this.access,
+    required this.onTakeTest,
+    required this.onSignIn,
+  });
+
+  final DrillAccess access;
+
+  /// Null when the screen was built without a subject/unit, which leaves
+  /// no way to construct the test route. The explanation still shows.
+  final VoidCallback? onTakeTest;
+  final VoidCallback onSignIn;
+
+  @override
+  Widget build(BuildContext context) {
+    final (icon, title, body) = switch (access) {
+      DrillAccess.guestBlocked => (
+        Icons.lock_outline_rounded,
+        'Drill needs an account',
+        GuestLimits.drillNeedsAccountMessage,
+      ),
+      DrillAccess.signedOut => (
+        Icons.lock_outline_rounded,
+        'Sign in to practise',
+        'Drill practice is tied to your account so your progress is kept.',
+      ),
+      _ => (
+        Icons.workspace_premium_outlined,
+        'Pass the topic test first',
+        'Drill is focused practice for a topic you already understand. '
+            'Score $kTopicTestPassPercent% on the topic test to unlock it — '
+            'retakes are unlimited, and the lesson above covers everything '
+            'it asks.',
+      ),
+    };
+
+    final isTestGate = access == DrillAccess.testRequired;
+
+    return Center(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 44, color: AppColors.textSecondaryDark),
+            const SizedBox(height: 16),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: AppTheme.heading2.copyWith(
+                color: AppColors.textPrimaryDark,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              body,
+              textAlign: TextAlign.center,
+              style: AppTheme.bodyMd.copyWith(
+                color: AppColors.textSecondaryDark,
+              ),
+            ),
+            const SizedBox(height: 28),
+            SizedBox(
+              width: 260,
+              child: ElevatedButton(
+                onPressed: isTestGate ? onTakeTest : onSignIn,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: isTestGate
+                      ? AppColors.secondary
+                      : AppColors.primary,
+                  disabledBackgroundColor: AppColors.trackDark,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                ),
+                child: Text(
+                  isTestGate ? 'Take the topic test' : 'Sign in',
+                  style: AppTheme.btnLabel.copyWith(color: Colors.white),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
