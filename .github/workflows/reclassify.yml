@@ -23,14 +23,36 @@
 #   FIREBASE_SERVICE_ACCOUNT — full service account JSON, as text
 name: reclassify-questions
 
+# SCHEDULE DISABLED — superseded, and actively conflicting.
+#
+# Every scraped question in all three subjects has since been reclassified in
+# one pass (see 8_apply_reclass.js and the fix(content) commit): 2,246
+# high-confidence reassignments applied, each recording previousTopicId, with
+# a measured before/after audit — 27 of 37 sampled questions were misfiled
+# before, 34 of 35 correct after.
+#
+# Leaving this on a 2-hourly schedule meant two systems writing topicId to the
+# same documents. It would resume from its stored nextIndex (Mathematics 465
+# of 1716, Physics 15 of 1769) straight over questions that pass had already
+# corrected. That is why the schedule is gone rather than the workflow: the
+# script is sound, it simply must not run unattended any more.
+#
+# Note the progress markers in data/reclassify_*.json are now stale — they
+# describe a run that was overtaken, not the live state of the collection.
+#
+# Kept dispatch-only so it can still be run deliberately. Safe to delete this
+# file outright once you are satisfied the one-pass reclassification stands.
 on:
-  schedule:
-    - cron: '0 */2 * * *'
   workflow_dispatch: {}
 
 jobs:
   reclassify:
     runs-on: ubuntu-latest
+    # Needed to push progress markers back; GITHUB_TOKEN is read-only by
+    # default on repositories created since 2023, which would make the final
+    # `git push` fail and every run restart from the same nextIndex.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
