@@ -85,13 +85,20 @@ class AccountRepository {
   ///
   /// Does not touch `usernames/{key}` — reservations are permanent by
   /// design; see the class doc.
+  ///
+  /// Anything that stores data against a uid belongs in this list. When a
+  /// collection is added and this is not updated, the result is not a
+  /// crash but something worse and quieter: a student who asked to be
+  /// deleted, and mostly was.
   Future<void> deleteOwnedDocuments(String uid) async {
     await _deleteQuery(
       _db.collection('attempts').where('userId', isEqualTo: uid),
     );
-    await _deleteQuery(
-      _db.collection('flags').where('userId', isEqualTo: uid),
-    );
+    await _deleteQuery(_db.collection('flags').where('userId', isEqualTo: uid));
+    // One document, id'd by uid — no query needed. Deleting a document
+    // that was never created is a no-op in Firestore, so a student who
+    // never practised needs no special case.
+    await _db.collection('progress').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 

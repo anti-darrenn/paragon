@@ -172,6 +172,35 @@ service cloud.firestore {
           && resource.data.userId == request.auth.uid;
     }
 
+    // ── PRACTICE PROGRESS (mastery rings) ────────────────────────
+    // A private, display-only cache of per-topic counters, one document
+    // per student, id'd by uid. It exists because counting `attempts` per
+    // topic would need one aggregate query per topic — see
+    // `progress_repository.dart` for the full reasoning.
+    //
+    // Deliberately NOT on `users/{uid}`: that document's allow-list keeps
+    // stats fields server-only so a future leaderboard cannot be fed by
+    // the client, and nothing here is allowed to undermine that. The
+    // constraint that keeps the two compatible is a product rule, not a
+    // rules-file one — nothing competitive may read this collection — so
+    // it is written down in the repository and in CLAUDE.md. What the
+    // rules can enforce, they do: owner-only in both directions, so these
+    // numbers are never visible to another student, and a closed field
+    // set, so this cannot become a dumping ground for whatever a client
+    // feels like storing.
+    match /progress/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+          && request.resource.data.keys().hasOnly(['userId', 'updatedAt', 'topics'])
+          && request.resource.data.userId == uid
+          // Forces the real serverTimestamp() sentinel, the same way the
+          // `users` create rule pins `createdAt`. Without it a client
+          // could backdate its own cache, which matters the day anything
+          // server-side starts reconciling this against `attempts`.
+          && request.resource.data.updatedAt == request.time
+          && request.resource.data.topics is map;
+    }
+
     // ── QUESTION FLAGS (student-reported problems) ───────────────
     // The answer key is scraped from a third party with a measured error
     // rate, so students reporting a wrong answer is how we find the bad

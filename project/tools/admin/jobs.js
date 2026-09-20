@@ -174,8 +174,11 @@ async function jobOrphans() {
   } while (pageToken);
   log(`   ${liveUids.size} live auth users`);
 
+  // Keep in step with AccountRepository.deleteOwnedDocuments. A null
+  // field means the document id is itself the uid.
   for (const [collection, field] of [
     ["users", null],
+    ["progress", null],
     ["attempts", "userId"],
     ["flags", "userId"],
   ]) {
