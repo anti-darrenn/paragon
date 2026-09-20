@@ -134,6 +134,7 @@ class CourseSummary {
     required this.blurb,
     required this.status,
     required this.moduleCount,
+    this.topicCount = 0,
   });
 
   final String key;
@@ -152,7 +153,17 @@ class CourseSummary {
   /// document by the seeder; planned subjects use their outline length.
   final int moduleCount;
 
+  /// Topic count, for a progress ring's denominator. Zero when unknown —
+  /// see [Subject.topicCount]. Planned subjects deliberately report zero
+  /// rather than their outline length: an outline is not practisable
+  /// content, and a ring drawn against it would measure a student against
+  /// topics that do not exist.
+  final int topicCount;
+
   bool get isLive => status == CourseStatus.live;
+
+  /// Whether a ring can honestly be drawn for this subject.
+  bool get hasTopicCount => isLive && topicCount > 0;
 }
 
 /// Matches a route key against the live subjects — by Firestore document id
@@ -206,6 +217,7 @@ final courseCatalogProvider = FutureProvider<List<CourseSummary>>((ref) async {
           blurb: entry.blurb,
           status: live == null ? CourseStatus.planned : CourseStatus.live,
           moduleCount: live?.unitCount ?? entry.outline.length,
+          topicCount: live?.topicCount ?? 0,
         );
       }(),
   ];

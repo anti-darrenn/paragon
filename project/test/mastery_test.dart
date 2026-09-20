@@ -169,6 +169,48 @@ void main() {
     });
   });
 
+  group('UserProgress.levelsForSubject', () {
+    UserProgress build() => UserProgress.fromDocument({
+      'topics': {
+        'a': {'answered': 40, 'correct': 40, 'subjectId': 'physics'},
+        'b': {'answered': 20, 'correct': 15, 'subjectId': 'physics'},
+        'c': {'answered': 20, 'correct': 18, 'subjectId': 'maths'},
+        'd': {'answered': 0, 'correct': 0, 'subjectId': 'physics'},
+      },
+    });
+
+    test('pads untouched topics so the ring is not flattering', () {
+      // Two started topics out of a subject that has ten. Averaging only
+      // the started ones would report a student who has mastered their one
+      // practised topic as having mastered the subject.
+      final levels = build().levelsForSubject('physics', outOf: 10);
+      expect(levels.length, 10);
+      expect(levels.where((l) => l == MasteryLevel.notStarted).length, 8);
+      expect(masteryFraction(levels), (4 + 3) / 40);
+    });
+
+    test('counts only its own subject', () {
+      final levels = build().levelsForSubject('maths', outOf: 4);
+      expect(levels.where((l) => l.isStarted).length, 1);
+    });
+
+    test('an unknown topic count yields no ring at all', () {
+      // Zero means "not known yet" — a subject seeded before topicCount
+      // existed. The caller suppresses the ring rather than drawing an
+      // empty one.
+      expect(build().levelsForSubject('physics', outOf: 0), isEmpty);
+      expect(build().levelsForSubject('', outOf: 10), isEmpty);
+    });
+
+    test('cannot report over 100% when stored topics exceed the count', () {
+      // Possible for a moment after topics are removed, before the nightly
+      // recount catches up.
+      final levels = build().levelsForSubject('physics', outOf: 1);
+      expect(levels.length, 1);
+      expect(masteryFraction(levels), lessThanOrEqualTo(1.0));
+    });
+  });
+
   group('MasteryLevel', () {
     test('ring fractions rise with the level and end at full', () {
       var previous = -1.0;

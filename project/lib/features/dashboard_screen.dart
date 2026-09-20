@@ -5,8 +5,10 @@ import 'package:go_router/go_router.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
+import '../core/progress/mastery.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/widgets/mastery_indicator.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -155,13 +157,16 @@ class DashboardScreen extends ConsumerWidget {
 /// catalog grid's sort order — so onboarding asked a question, wrote the
 /// answer down, and never used it for anything the student could see.
 ///
-/// **Counts, not percentages, and not rings.** A ring needs to know how
-/// many topics the subject contains, which is not on the subject document;
-/// working it out means loading every unit and every unit's topics, per
-/// subject, on the app's landing page. The course page already pays that
-/// cost for one subject and shows a real ring there. Inventing a
-/// denominator here to get a ring on the dashboard would be a worse answer
-/// than a smaller true one.
+/// **The ring's denominator comes from `subjects.topicCount`**, written by
+/// the seeders and kept true nightly by `tools/admin/jobs.js --job=counts`.
+/// That field exists so this page does not have to load every unit and
+/// every unit's topics, per subject, to draw a circle: `subjectsProvider`
+/// is one query the app already makes, and the numerator comes free from
+/// the student's own progress document.
+///
+/// A subject whose `topicCount` is not known yet — seeded before the field
+/// existed, or added between nightly runs — shows counts and no ring,
+/// rather than a ring against a denominator of zero.
 class _YourSubjects extends ConsumerWidget {
   const _YourSubjects();
 
@@ -207,6 +212,10 @@ class _YourSubjects extends ConsumerWidget {
           _SubjectProgressCard(
             course: mine[i],
             progress: progress.forSubject(mine[i].key),
+            levels: progress.levelsForSubject(
+              mine[i].key,
+              outOf: mine[i].topicCount,
+            ),
           ),
         ],
       ],
@@ -215,10 +224,19 @@ class _YourSubjects extends ConsumerWidget {
 }
 
 class _SubjectProgressCard extends StatelessWidget {
-  const _SubjectProgressCard({required this.course, required this.progress});
+  const _SubjectProgressCard({
+    required this.course,
+    required this.progress,
+    required this.levels,
+  });
 
   final CourseSummary course;
   final SubjectProgress progress;
+
+  /// One level per topic in the subject, untouched topics included —
+  /// empty when the topic count is unknown, which is what suppresses the
+  /// ring rather than drawing an empty one.
+  final List<MasteryLevel> levels;
 
   @override
   Widget build(BuildContext context) {
@@ -229,6 +247,10 @@ class _SubjectProgressCard extends StatelessWidget {
       detail = 'Coming soon';
     } else if (progress.isEmpty) {
       detail = 'Not started yet';
+    } else if (course.hasTopicCount) {
+      detail =
+          '${progress.startedTopics} of ${course.topicCount} topics  ·  '
+          '${progress.completedTopics} proficient';
     } else {
       final started = progress.startedTopics;
       detail =
@@ -281,6 +303,14 @@ class _SubjectProgressCard extends StatelessWidget {
                 ],
               ),
             ),
+            if (levels.isNotEmpty) ...[
+              MasteryRing(
+                fraction: masteryFraction(levels),
+                accent: accent,
+                size: 40,
+              ),
+              const SizedBox(width: 6),
+            ],
             const Icon(Icons.chevron_right_rounded, color: Colors.white38),
           ],
         ),

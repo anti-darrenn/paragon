@@ -132,6 +132,34 @@ class UserProgress {
   int get totalAnswered =>
       _topics.values.fold(0, (total, p) => total + p.answered);
 
+  /// Every topic level in [subjectId], padded with untouched topics up to
+  /// [outOf] so the result can be averaged into a subject-level ring.
+  ///
+  /// Returns empty when [outOf] is zero — an unknown topic count, see
+  /// `Subject.topicCount`. Callers use that to suppress the ring entirely;
+  /// averaging over only the started topics would report a student who has
+  /// mastered their single practised topic as having mastered the subject.
+  ///
+  /// Clamped so that stored entries exceeding [outOf] — possible for a
+  /// moment after topics are removed, before the nightly recount — cannot
+  /// produce a ring reading over 100%.
+  List<MasteryLevel> levelsForSubject(String subjectId, {required int outOf}) {
+    if (outOf <= 0 || subjectId.isEmpty) return const [];
+
+    final started = <MasteryLevel>[];
+    for (final entry in _topics.values) {
+      if (entry.subjectId != subjectId) continue;
+      if (!entry.level.isStarted) continue;
+      started.add(entry.level);
+    }
+    if (started.length > outOf) started.length = outOf;
+
+    return [
+      ...started,
+      ...List.filled(outOf - started.length, MasteryLevel.notStarted),
+    ];
+  }
+
   /// Per-subject rollup, from the `subjectId` stamped on each entry.
   ///
   /// Entries written before that stamp existed carry an empty subject and

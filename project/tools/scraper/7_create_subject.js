@@ -204,6 +204,15 @@ function buildTree() {
 
   // keep unitCount honest even on a partial run
   await db.collection('subjects').doc(subjectId).update({ unitCount: units.length });
+
+  // topicCount likewise. The subject document is created before any topic
+  // exists, so it can only be set here, and a partial run must leave it
+  // matching what was actually written rather than what was planned.
+  // `tools/admin/jobs.js --job=counts` recomputes it nightly regardless.
+  const topicAgg = await db.collection('topics')
+    .where('subjectId', '==', subjectId).count().get();
+  await db.collection('subjects').doc(subjectId)
+    .update({ topicCount: topicAgg.data().count });
   Q.spend(1);
 
   console.log(`created: ${created.subject} subject, ${created.units} units, ${created.topics} topics, ${created.questions} questions`);

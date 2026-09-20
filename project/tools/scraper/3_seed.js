@@ -160,6 +160,11 @@ async function main() {
   await subjectRef.set({
     name: "Further Mathematics",
     unitCount: unitOps.length,
+    // The app's subject-level progress rings need a denominator, and
+    // deriving it client-side means loading every unit and topic in the
+    // subject. `tools/admin/jobs.js --job=counts` keeps it true as
+    // content lands; this just avoids shipping a subject without it.
+    topicCount: topicOps.length,
   });
   console.log(`\nCreated subject doc (id: ${subjectId})`);
 

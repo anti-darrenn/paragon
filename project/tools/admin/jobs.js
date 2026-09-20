@@ -32,6 +32,7 @@
  *   node jobs.js --job=guests   [--days=30] [--apply]
  *   node jobs.js --job=orphans  [--apply]
  *   node jobs.js --job=streaks  [--apply]
+ *   node jobs.js --job=counts   [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * Dry run by default. Nothing is written without --apply.
@@ -269,6 +270,59 @@ async function jobStreaks() {
   log(`   ${updated} users ${APPLY ? "updated" : "would be updated"}`);
 }
 
+// ─── Job: subject.topicCount ─────────────────────────────────────────
+
+/**
+ * Recomputes `topicCount` on every subject document from the live
+ * `topics` collection.
+ *
+ * The app needs a denominator to draw a subject-level progress ring. The
+ * numerator is free — it comes from the student's own `progress/{uid}`
+ * document — but "how many topics does Physics have" is not on the
+ * subject document, and deriving it in the client means loading every
+ * unit and every unit's topics, per subject, on the dashboard. That is
+ * the read pattern `docs/audit/NEXT.md` keeps having to reclassify as
+ * live breakage, so the number is precomputed here instead and read for
+ * free alongside `unitCount`.
+ *
+ * Counted with `count()` aggregates — billed per 1000 index entries
+ * rather than per document, the same reason the seeders use them. One
+ * aggregate per subject, roughly ten in total, and a write only where the
+ * stored value is actually wrong.
+ *
+ * Reclassification moves questions between topics but never moves a topic
+ * between subjects, so this drifts only when topics are added or removed.
+ * Running nightly is ample.
+ */
+async function jobTopicCounts() {
+  log(`\n── Recompute subject.topicCount [${mode()}]`);
+
+  const subjects = await db.collection("subjects").get();
+  let updated = 0;
+
+  for (const subject of subjects.docs) {
+    const agg = await db
+      .collection("topics")
+      .where("subjectId", "==", subject.id)
+      .count()
+      .get();
+    const actual = agg.data().count;
+    const stored = subject.data().topicCount;
+
+    if (stored === actual) continue;
+
+    log(
+      `   ${subject.data().name}: ${stored ?? "unset"} -> ${actual}`,
+    );
+    updated++;
+    if (APPLY) {
+      await subject.ref.update({ topicCount: actual });
+    }
+  }
+
+  log(`   ${updated} subjects ${APPLY ? "updated" : "would be updated"}`);
+}
+
 // ─── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -277,6 +331,7 @@ async function main() {
   if (JOB === "guests" || JOB === "all") await jobGuests();
   if (JOB === "orphans" || JOB === "all") await jobOrphans();
   if (JOB === "streaks" || JOB === "all") await jobStreaks();
+  if (JOB === "counts" || JOB === "all") await jobTopicCounts();
 
   if (!APPLY) log("\nDry run — nothing written. Re-run with --apply.");
   process.exit(0);
