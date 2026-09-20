@@ -128,7 +128,12 @@ function slugify(s) {
 }
 
 // Builds and runs a topic's generators until `count` unique questions exist.
-function buildTopic({ subjectId, unitId, topicId, subjectSlug, topicName, generators, count = 300 }) {
+//
+// For a subject that already exists in Firestore, pass subjectId/unitId/topicId.
+// For a subject that does not exist yet (no IDs to point at), pass unitName and
+// topicName instead and leave the ids undefined - 7_create_subject.js resolves
+// the names to real IDs when it creates the subject tree.
+function buildTopic({ subjectId, unitId, topicId, subjectSlug, unitName, topicName, generators, count = 300 }) {
   const questions = [];
   const seen = new Set();
   let attempts = 0;
@@ -151,17 +156,23 @@ function buildTopic({ subjectId, unitId, topicId, subjectSlug, topicName, genera
     if (blob.includes('\\(\\(')) continue;
     if (blob.includes('$')) continue;
     seen.add(q.text);
-    questions.push({
+    const doc = {
       text: q.text,
       options: q.options,
       correctIndex: q.correctIndex,
       explanation: q.explanation,
-      subjectId, unitId, topicId,
       source: 'drill',
       origin: 'ai_generated',
       hasAnswer: true,
       year: null,
-    });
+    };
+    if (topicId) {
+      Object.assign(doc, { subjectId, unitId, topicId });
+    } else {
+      // pending subject: carry names, the create-subject seeder fills in ids
+      Object.assign(doc, { subjectSlug, unitName, topicName });
+    }
+    questions.push(doc);
   }
 
   const file = path.join(OUT_DIR, `generated_${subjectSlug}_${slugify(topicName)}.json`);

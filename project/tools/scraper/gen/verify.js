@@ -379,7 +379,11 @@ for (const f of files) {
     if (q.origin !== 'ai_generated') structErrors.push(`${where} bad origin`);
     if (q.hasAnswer !== true) structErrors.push(`${where} hasAnswer`);
     if (q.year !== null) structErrors.push(`${where} year`);
-    if (!q.subjectId || !q.unitId || !q.topicId) structErrors.push(`${where} missing ids`);
+    // seeded subjects carry real ids; pending subjects carry names instead
+    const hasIds = q.subjectId && q.unitId && q.topicId;
+    const hasNames = q.subjectSlug && q.unitName && q.topicName;
+    if (!hasIds && !hasNames) structErrors.push(`${where} missing both ids and names`);
+    if (hasIds && hasNames) structErrors.push(`${where} has both ids and names`);
     if (seen.has(q.text)) structErrors.push(`${where} duplicate text`);
     seen.add(q.text);
 

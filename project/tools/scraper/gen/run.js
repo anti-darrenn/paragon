@@ -12,6 +12,13 @@ const SUBJECTS = {
   fmaths: { subjectId: 'iXlgqvDtHn3rTWykgqoA', subjectSlug: 'further-maths' },
 };
 
+// Subjects that do not exist in Firestore yet. Their modules key topics by
+// unitName/topicName; 7_create_subject.js resolves those to real ids.
+const PENDING_SUBJECT = {
+  chem_a: 'chemistry', chem_b: 'chemistry', chem_c: 'chemistry',
+  gov_a: 'government', gov_b: 'government',
+};
+
 // module file -> subject key
 const MODULE_SUBJECT = {
   math_num_a: 'math', math_num_b: 'math', math_algebra: 'math',
@@ -29,17 +36,19 @@ let grand = 0;
 const short = [];
 
 for (const m of mods) {
+  const pending = PENDING_SUBJECT[m];
   const subjKey = MODULE_SUBJECT[m];
-  if (!subjKey) { console.error(`no subject mapping for module ${m}`); process.exit(1); }
-  const subj = SUBJECTS[subjKey];
+  if (!subjKey && !pending) { console.error(`no subject mapping for module ${m}`); process.exit(1); }
+  const subj = pending ? { subjectId: undefined, subjectSlug: pending } : SUBJECTS[subjKey];
   const topics = require(`./${m}`);
-  console.log(`\n### ${m} (${subjKey}) — ${topics.length} topics`);
+  console.log(`\n### ${m} (${pending || subjKey}${pending ? ', pending subject' : ''}) — ${topics.length} topics`);
   for (const t of topics) {
     const res = L.buildTopic({
       subjectId: subj.subjectId,
       subjectSlug: subj.subjectSlug,
       unitId: t.unitId,
       topicId: t.topicId,
+      unitName: t.unitName,
       topicName: t.topicName,
       generators: t.generators,
       count: COUNT,
