@@ -7,6 +7,7 @@ import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
 import '../core/progress/mastery.dart';
 import '../core/theme/app_colors.dart';
+import '../core/widgets/guest_notice.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
 
@@ -17,6 +18,7 @@ class DashboardScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final userDataAsync = ref.watch(userDataProvider);
     final weeklyAsync = ref.watch(weeklyAttemptsCountProvider);
+    final isGuest = ref.watch(isGuestProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -69,7 +71,16 @@ class DashboardScreen extends ConsumerWidget {
                   'Keep the streak going.',
                   style: TextStyle(color: Colors.white38, fontSize: 14),
                 ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 16),
+
+                // The streak and weekly count below are real, written to a
+                // real uid — and that uid dies with the session. A guest
+                // watching them climb deserves to know that before they
+                // find out by losing them.
+                if (isGuest) ...[
+                  const GuestNotice(),
+                  const SizedBox(height: 16),
+                ],
 
                 // ── Stats row ──────────────────────────────────────────
                 Row(

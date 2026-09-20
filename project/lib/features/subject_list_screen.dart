@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../core/auth/guest_limits.dart';
+import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
@@ -12,6 +14,7 @@ class SubjectListScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final subjectsAsync = ref.watch(subjectsProvider);
+    final isGuest = ref.watch(isGuestProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -66,7 +69,7 @@ class SubjectListScreen extends ConsumerWidget {
                   ),
                   itemCount: subjects.length,
                   itemBuilder: (context, i) =>
-                      _SubjectCard(subject: subjects[i]),
+                      _SubjectCard(subject: subjects[i], isGuest: isGuest),
                 ),
               ),
       ),
@@ -76,13 +79,24 @@ class SubjectListScreen extends ConsumerWidget {
 
 class _SubjectCard extends StatelessWidget {
   final Subject subject;
-  const _SubjectCard({required this.subject});
+  final bool isGuest;
+  const _SubjectCard({required this.subject, required this.isGuest});
+
+  /// Matches the WAEC subject list, via the same rule. Before this, a
+  /// guest was locked out of Physics in exam mode and free to drill it
+  /// here — the same product, two answers.
+  bool get _locked =>
+      GuestLimits.locks(isGuest: isGuest, subjectName: subject.name);
 
   @override
   Widget build(BuildContext context) {
     final color = AppColors.forSubject(subject.name);
     return GestureDetector(
-      onTap: () => context.push('/subject/${subject.id}'),
+      onTap: _locked
+          ? () => ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text(GuestLimits.lockedSubjectMessage)),
+            )
+          : () => context.push('/subject/${subject.id}'),
       child: Container(
         decoration: BoxDecoration(
           color: color.withAlpha((0.12 * 255).round()),
@@ -93,22 +107,36 @@ class _SubjectCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              width: 10,
-              height: 10,
-              decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+            Row(
+              children: [
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    color: color,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const Spacer(),
+                if (_locked)
+                  const Icon(
+                    Icons.lock_outline_rounded,
+                    size: 16,
+                    color: Colors.white38,
+                  ),
+              ],
             ),
             const Spacer(),
             Text(
               subject.name,
               style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                color: Colors.white,
+                color: _locked ? Colors.white54 : Colors.white,
                 fontWeight: FontWeight.w700,
               ),
             ),
             const SizedBox(height: 4),
             Text(
-              '${subject.unitCount} units',
+              _locked ? 'Sign in to unlock' : '${subject.unitCount} units',
               style: Theme.of(
                 context,
               ).textTheme.bodySmall?.copyWith(color: Colors.white54),

@@ -7,6 +7,7 @@ import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
+import '../core/widgets/guest_notice.dart';
 import '../core/widgets/report_problem_button.dart';
 import '../core/progress/mastery.dart';
 import '../core/providers/analytics_provider.dart';
@@ -221,6 +222,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
               before: before.level,
               after: before.plus(answered: _answered, correct: _correct).level,
               accent: AppColors.primary,
+              isGuest: ref.watch(isGuestProvider),
               onPractiseAgain: _practiseAgain,
               onDone: () => Navigator.of(context).pop(),
             );
@@ -383,6 +385,7 @@ class _SessionSummary extends StatelessWidget {
     required this.before,
     required this.after,
     required this.accent,
+    required this.isGuest,
     required this.onPractiseAgain,
     required this.onDone,
   });
@@ -392,6 +395,7 @@ class _SessionSummary extends StatelessWidget {
   final MasteryLevel before;
   final MasteryLevel after;
   final Color accent;
+  final bool isGuest;
   final VoidCallback onPractiseAgain;
   final VoidCallback onDone;
 
@@ -494,6 +498,11 @@ class _SessionSummary extends StatelessWidget {
                   ],
                 ),
               ),
+              // The one screen in the app that tells a student they have
+              // reached a level. For a guest that level is written to a
+              // uid that will not exist tomorrow, so it is the worst place
+              // to leave the omission.
+              if (isGuest) ...[const SizedBox(height: 16), const GuestNotice()],
               const SizedBox(height: 24),
 
               SizedBox(

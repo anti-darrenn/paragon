@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
+import '../core/auth/guest_limits.dart';
 import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
 
@@ -36,12 +37,17 @@ class _WaecSubjectTile extends StatelessWidget {
   final bool isGuest;
   const _WaecSubjectTile({required this.subject, required this.isGuest});
 
-  // Spec §2.3.3 guest config restrictions: subject picker locked to
-  // Mathematics for guests. This app's "subject picker" is this list
-  // (there's no in-setup dropdown, since the subject is already chosen by
-  // the time setup opens), so the lock lives here instead.
+  // Spec §2.3.3 guest config restrictions: subject picker locked for
+  // guests. This app's "subject picker" is this list (there's no in-setup
+  // dropdown, since the subject is already chosen by the time setup
+  // opens), so the lock lives here.
+  //
+  // The rule itself moved to `GuestLimits` once Learning Mode started
+  // enforcing the same thing — two inline copies of a product rule drift,
+  // and the drift reads as a guest who can drill Physics but not sit a
+  // Physics exam.
   bool get _lockedForGuest =>
-      isGuest && subject.name.toLowerCase() != 'mathematics';
+      GuestLimits.locks(isGuest: isGuest, subjectName: subject.name);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +55,7 @@ class _WaecSubjectTile extends StatelessWidget {
     return ListTile(
       onTap: _lockedForGuest
           ? () => ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Sign in to choose your subject.')),
+              const SnackBar(content: Text(GuestLimits.lockedSubjectMessage)),
             )
           : () => context.push('/waec/${subject.id}/setup'),
       title: Text(
