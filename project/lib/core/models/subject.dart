@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'firestore_parsing.dart';
+
 class Subject {
   final String id;
   final String name;
@@ -12,11 +14,11 @@ class Subject {
   });
 
   factory Subject.fromFirestore(DocumentSnapshot doc) {
-    final d = doc.data() as Map<String, dynamic>;
+    final d = docData(doc);
     return Subject(
       id: doc.id,
-      name: d['name'] as String,
-      unitCount: (d['unitCount'] as num).toInt(),
+      name: asString(d['name']),
+      unitCount: asInt(d['unitCount']),
     );
   }
 }

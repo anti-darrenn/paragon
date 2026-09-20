@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'firestore_parsing.dart';
+
 class Unit {
   final String id;
   final String subjectId;
@@ -14,12 +16,12 @@ class Unit {
   });
 
   factory Unit.fromFirestore(DocumentSnapshot doc) {
-    final d = doc.data() as Map<String, dynamic>;
+    final d = docData(doc);
     return Unit(
       id: doc.id,
-      subjectId: d['subjectId'] as String,
-      name: d['name'] as String,
-      order: (d['order'] as num).toInt(),
+      subjectId: asString(d['subjectId']),
+      name: asString(d['name']),
+      order: asInt(d['order']),
     );
   }
 }

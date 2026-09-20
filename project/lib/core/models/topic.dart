@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'firestore_parsing.dart';
+
 class Topic {
   final String id;
   final String unitId;
@@ -25,16 +27,16 @@ class Topic {
   });
 
   factory Topic.fromFirestore(DocumentSnapshot doc) {
-    final d = doc.data() as Map<String, dynamic>;
+    final d = docData(doc);
     return Topic(
       id: doc.id,
-      unitId: d['unitId'] as String,
-      subjectId: d['subjectId'] as String,
-      name: d['name'] as String,
-      questionCount: (d['questionCount'] as num).toInt(),
-      order: (d['order'] as num).toInt(),
-      hasNotes: d['hasNotes'] as bool? ?? false,
-      notesMarkdown: d['notesMarkdown'] as String?,
+      unitId: asString(d['unitId']),
+      subjectId: asString(d['subjectId']),
+      name: asString(d['name']),
+      questionCount: asInt(d['questionCount']),
+      order: asInt(d['order']),
+      hasNotes: asBool(d['hasNotes']),
+      notesMarkdown: d['notesMarkdown'] == null ? null : asString(d['notesMarkdown']),
     );
   }
 }
