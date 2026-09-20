@@ -156,6 +156,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
+- `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`.** Forgetting leaves a student who asked to be deleted, and mostly was.
 
@@ -178,7 +179,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 125 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 142 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
@@ -190,12 +191,20 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   it is private, display-only, and recomputable from `attempts`. The moment anything
   competitive reads it, that read is the bug.
 - Onboarding must not ask for data nothing uses. `selectedSubjects` sat unread for
-  everything except one sort order; the optional `profile` map (school, class, age,
-  gender, country, state) still has **no reader anywhere in `lib/`**. Either give a
-  field a consumer or stop collecting it — this is data about minors.
+  everything except one sort order until the dashboard started using it. The optional
+  `profile` map (school, class, age, gender, country, state) still has **no reader
+  anywhere in `lib/`** — collected, editable and deletable, but consumed by nothing.
+  The owner's standing decision is to keep collecting and decide later; it is data
+  about minors, so revisit it before any public launch rather than letting it settle.
 - If a screen tells a student they can change something later, there must be a route
-  that lets them. `/settings/subjects` exists because onboarding had been saying so
-  since it shipped.
+  that lets them. `/settings/subjects`, `/settings/name` and `/settings/profile` all
+  exist because onboarding had been promising them since it shipped.
+- Two writers touch `users/{uid}.profile` and they are deliberate opposites.
+  `setProfile` (onboarding) ignores blanks, so skipping a step with one box filled
+  cannot wipe the others. `updateProfile` (settings) treats a cleared box as a
+  deletion, because on an editor holding data about minors an emptied field is a
+  request to remove it. `test/profile_edit_test.dart` pins each as the other's
+  control.
 
   - Content correctness is a defect class, not a content task. Before shipping any feature that
   reads a field, verify the field actually has values in production data — not that the code

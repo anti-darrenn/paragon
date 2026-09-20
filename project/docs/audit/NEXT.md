@@ -242,24 +242,39 @@ reporting benefit.
   "you can edit it later in settings". Neither was true: Settings had no editor, and
   `app_router.dart` actively bounced `/onboarding/subjects` back to `/` once onboarding
   was complete, so even a deep link could not reach the picker.
-- **Fixed for subjects:** `/settings/subjects`, linked from Settings and from the
-  dashboard section. The checkbox tile is now shared with onboarding rather than
-  duplicated, so the two pickers cannot drift.
-- **Still open:** display name is unchangeable after onboarding, and the profile step
-  is reachable only by deep link (`/onboarding/profile` — the router permits it, but
-  nothing links to it). The profile copy still promises an editor that does not exist.
+- **Fixed, all three.** `/settings/subjects`, `/settings/name` and
+  `/settings/profile`, linked from Settings and the dashboard. The subject tile and
+  the profile form are now shared with onboarding rather than duplicated, so the
+  pickers cannot drift — which matters most for screens that exist *because* another
+  screen promised them.
+- The profile editor deletes what a student clears (`updateProfile`), unlike
+  onboarding's writer (`setProfile`), which ignores blanks so that skipping a step
+  cannot wipe a sibling field. Opposites on purpose; both pinned by tests.
+
+### 15. Drill ended with no summary — done
+- `DrillScreen` finished on a bare `Navigator.pop()`: twenty questions answered and
+  no statement of how it went. Carried as a Session 9 deferral, and worth more now
+  than it was then — it is the moment a mastery circle changes.
+- The level shown is computed from the topic's state *before* the session plus what
+  was answered, never read back. `_flushSession` writes to the document the progress
+  stream watches, so a read afterwards races the update and, when it wins, counts the
+  session twice. Writing the test for that surfaced a live bug: the starting value was
+  read on first submit via `ref.read` on a `StreamProvider` nothing had subscribed to
+  yet, which always answers `AsyncLoading` — so every session looked like it began
+  from nothing. Now tracked from `build`.
 
 ### 14. Mastery rings (Khan-style) — done
 - Per-topic mastery levels with a circle on the right of every topic row, a ring per
   module, and a course-level ring. Counters live in `progress/{uid}`; see CLAUDE.md for
   why that is not on `users/{uid}` and what it may never be read by.
-- **Deliberately not built, and why:** no ring on the dashboard or the course catalog.
-  A ring needs the subject's topic count as a denominator, which is not on the subject
-  document — deriving it means loading every unit and its topics *per subject* on the
-  landing page. Per the "verify the field has values in production" agreement, this was
-  not built on a field that does not exist. Those surfaces show counts instead.
-  **The unlock is a `topicCount` on the subject document**, written by the seeders and
-  backfilled once; that is the follow-up, and it is small.
+- **Dashboard rings — done, in a follow-up the same session.** They were held back
+  because a ring needs the subject's topic count and that was not on the subject
+  document; per the "verify the field has values in production" agreement it was not
+  built on a field that did not exist. `subjects.topicCount` now exists: written by
+  the seeders, recomputed nightly by `jobs.js --job=counts` with `count()` aggregates,
+  and backfilled for the four seeded subjects (Physics 64, Mathematics 43, Further
+  Maths 21, Chemistry 18 — Chemistry still mid-seed, which is why this is a job and
+  not a one-off). Zero still means "unknown" and still suppresses the ring.
 - **Known and stated:** progress counts questions answered, not *distinct* questions,
   so re-drilling a topic climbs the levels on repeat questions. Storing seen-question
   ids would be up to 300 per topic across 216 topics on one document. Accuracy
