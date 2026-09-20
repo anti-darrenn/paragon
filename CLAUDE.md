@@ -121,9 +121,9 @@ Never add WAEC questions to drill providers without filtering by `source`, and n
 Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `questions`, `users/{uid}`, `attempts`.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
-- `questions.correctIndex` is 0-based but is `-1` for all currently seeded questions (answers not scraped yet). Always null-check: `(data['correctIndex'] as num?)?.toInt() ?? -1`.
+- `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
-- Every `fromFirestore` must stay fully null-safe (`(d['x'] as T?) ?? fallback`).
+- Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
 
 ## Riverpod v3 gotchas
 

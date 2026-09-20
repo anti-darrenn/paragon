@@ -131,8 +131,10 @@ LATEX FORMAT (stored in Firestore and rendered by flutter_math_fork):
 
 QUESTION DATA RULES:
 - options array stores strings WITHOUT letter prefix (A/B/C/D) — the UI adds the label
-- correctIndex is 0-based integer. It is currently -1 for all seeded questions (answers not yet scraped)
-- Always null-check correctIndex — use: correctIndex = (data['correctIndex'] as int?) ?? -1
+- correctIndex is 0-based integer. It is -1 across the scraped corpus (answers were never
+  scraped) and a real index across the generated corpus — both are live at once, so never
+  assume one or the other
+- Always fall back to -1, never 0 — 0 would silently mark option A correct on a broken doc
 - subjectId is required on every question document — never omit it
 
 RIVERPOD PATTERNS:
@@ -145,9 +147,17 @@ RIVERPOD PATTERNS:
 
 NULL SAFETY:
 - All fromFirestore() methods must be fully null-safe
-- Use (data['field'] as Type?) ?? defaultValue patterns
-- Topic.fromFirestore: null-safe questionCount and order
-- Question.fromFirestore: null-safe correctIndex (defaults to -1)
+- Use the helpers in lib/core/models/firestore_parsing.dart — docData, asString, asInt,
+  asIntOrNull, asBool, asStringList — rather than writing fresh casts. They coerce rather
+  than throw, which matters because fromFirestore runs inside provider mapping: a throw on
+  one bad document blanks the entire screen instead of dropping one row
+- Documents are genuinely not guaranteed well-formed: several seeders write them, they get
+  hand-edited in the Console, and a seeding run stops mid-way when the Spark quota runs out
+- asStringList stringifies non-string entries rather than dropping them, because correctIndex
+  is an index into that list — removing an entry would shift the answer onto the wrong option
+- Covered by test/model_null_safety_test.dart, which includes a control group asserting the
+  old direct casts really do throw. Keep it: without it the suite passes just as happily
+  against code that fixed nothing
 
 THEMING:
 - AppColors is the only source of truth for colors — never use raw Color() literals
