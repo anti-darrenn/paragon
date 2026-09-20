@@ -19,6 +19,10 @@ class DashboardScreen extends ConsumerWidget {
     final userDataAsync = ref.watch(userDataProvider);
     final weeklyAsync = ref.watch(weeklyAttemptsCountProvider);
     final isGuest = ref.watch(isGuestProvider);
+    // Already streamed by `_YourSubjects` below — Riverpod shares the one
+    // listener, so reading it here costs nothing extra.
+    final progress =
+        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
 
     return Scaffold(
       appBar: AppBar(
@@ -39,10 +43,6 @@ class DashboardScreen extends ConsumerWidget {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text('Error: $e')),
         data: (userData) {
-          final rawStreak = userData?['currentStreak'];
-          final streak = rawStreak is int
-              ? rawStreak
-              : (rawStreak is num ? rawStreak.toInt() : 0);
           // UserRepository stores `displayName: user.displayName ?? ''`, so
           // an anonymous user — and an email sign-up that never set a name
           // — has an empty string here, not null. A null-only fallback
@@ -68,15 +68,15 @@ class DashboardScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 4),
                 const Text(
-                  'Keep the streak going.',
+                  'Pick up where you left off.',
                   style: TextStyle(color: Colors.white38, fontSize: 14),
                 ),
                 const SizedBox(height: 16),
 
-                // The streak and weekly count below are real, written to a
-                // real uid — and that uid dies with the session. A guest
-                // watching them climb deserves to know that before they
-                // find out by losing them.
+                // The counters below are real, written to a real uid — and
+                // that uid dies with the session. A guest watching them
+                // climb deserves to know that before they find out by
+                // losing them.
                 if (isGuest) ...[
                   const GuestNotice(),
                   const SizedBox(height: 16),
@@ -86,16 +86,20 @@ class DashboardScreen extends ConsumerWidget {
                 Row(
                   children: [
                     Expanded(
+                      // Replaces the day-streak card. Both numbers come
+                      // from the `progress/{uid}` document already being
+                      // streamed for the subject rings, so this is a
+                      // relabelling of data in hand, not a new read — and
+                      // unlike the streak it is recomputable from
+                      // `attempts` rather than from the device clock.
                       child: _StatCard(
-                        icon: Icons.local_fire_department_rounded,
+                        icon: Icons.donut_large_rounded,
                         iconColor: AppColors.primary,
-                        value: '$streak',
-                        label: 'Day streak',
-                        sublabel: streak == 0
-                            ? 'Start today'
-                            : streak == 1
-                            ? '1 day'
-                            : '$streak days',
+                        value: '${progress.startedTopicCount}',
+                        label: 'Topics practised',
+                        sublabel: progress.completedTopicCount == 0
+                            ? 'Start one today'
+                            : '${progress.completedTopicCount} at proficient',
                       ),
                     ),
                     const SizedBox(width: 12),

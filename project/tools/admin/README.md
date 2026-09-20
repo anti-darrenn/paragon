@@ -6,10 +6,10 @@
 
 Blaze isn't a feature. It's the billing plan that unlocks **Cloud
 Functions** — Google-hosted compute. Everything we wanted Functions for
-(reaping stale guest accounts, cleaning orphaned documents, computing
-streaks the client isn't trusted to compute) is ordinary `firebase-admin`
-code. The Admin SDK **bypasses security rules** and runs anywhere Node
-runs. Cloud Functions only supplies a place to run it and a trigger.
+(reaping stale guest accounts, cleaning orphaned documents, recounting a
+subject's topics) is ordinary `firebase-admin` code. The Admin SDK
+**bypasses security rules** and runs anywhere Node runs. Cloud Functions
+only supplies a place to run it and a trigger.
 
 So the jobs live in `jobs.js` and run from a free scheduler instead.
 Firestore, Auth and the Admin SDK all work on the free **Spark** plan.
@@ -22,10 +22,10 @@ real-time server authority (rejecting a bad write *as it happens*) still
 needs Functions or an always-on server.
 
 For derived values this doesn't matter. `attempts.timestamp` is a server
-timestamp and is the source of truth, so recomputing streaks on a
+timestamp and is the source of truth, so recomputing from it on a
 schedule is correct — just eventually rather than instantly. Security
 rules do the real-time half: they constrain what a client may write, and
-this job decides what's actually true.
+these jobs decide what's actually true.
 
 ## Requirements
 
@@ -55,11 +55,14 @@ security rule. In GitHub Actions it belongs in repository secrets.
 | Deletes | 20,000 |
 | Stored data | 1 GiB |
 
-`--job=streaks` reads every user's recent attempts, so its cost scales
-with users × their activity. At a few hundred students it's comfortable;
-at a few thousand it will eat the read quota and should move to an
-incremental design (only users with attempts since the last run). The
-other two jobs are cheap.
+All the scheduled jobs are cheap. The one that was not — `--job=streaks`,
+which read every user's recent attempts, so its cost scaled with
+users × their activity — is gone, along with streaks themselves.
+
+`--job=dropstreak` reads the whole `users` collection once. That is why
+it is a one-shot run by hand rather than part of `--job=all`: there is
+nothing to re-run once the retired fields are gone, and a nightly scan
+that always finds nothing is pure read quota.
 
 This quota ceiling — not Cloud Functions — is what will eventually push
 you to Blaze. Worth knowing that's the actual trigger.
@@ -76,17 +79,23 @@ node jobs.js --job=guests --days=30    # what would be deleted
 node jobs.js --job=guests --days=30 --apply
 
 node jobs.js --job=orphans --apply
-node jobs.js --job=streaks --apply
+node jobs.js --job=counts --apply
 node jobs.js --job=all --apply
+
+# One-shot, NOT part of --job=all. Run once after the streak-free build
+# is deployed; it removes the retired currentStreak / lastActiveDate
+# fields from every user document.
+node jobs.js --job=dropstreak
+node jobs.js --job=dropstreak --apply
 ```
 
 Always run a dry run first on production data.
 
 ## Scheduling it free
 
-`.github/workflows/maintenance.yml` runs all three nightly on GitHub
-Actions — free for public repos, 2,000 minutes/month on a free private
-one. These jobs take seconds.
+`.github/workflows/maintenance.yml` runs the scheduled jobs nightly on
+GitHub Actions — free for public repos, 2,000 minutes/month on a free
+private one. These jobs take seconds.
 
 Equally fine: a `cron` entry on any machine that's usually on, or a free
 tier on Fly.io / Render. The script doesn't care.

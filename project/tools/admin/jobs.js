@@ -8,8 +8,8 @@
  * Blaze is not a product we need; it is the billing plan that unlocks
  * *Cloud Functions*, i.e. Google-hosted compute. Everything Cloud
  * Functions would do here — deleting stale guests, reaping orphaned
- * documents, computing streaks the client is not trusted to compute — is
- * plain `firebase-admin` code. The Admin SDK bypasses security rules and
+ * documents, recounting a subject's topics — is plain `firebase-admin`
+ * code. The Admin SDK bypasses security rules and
  * runs anywhere Node runs. The only thing Cloud Functions actually
  * provides is a place to run it and a trigger.
  *
@@ -23,7 +23,7 @@
  * deletion) within milliseconds. A scheduled job cannot. Anything needing
  * real-time server authority — rejecting a bad write as it happens —
  * still needs Functions or an always-on server. For derived values like
- * streaks and XP that is fine: `attempts` carries a server timestamp and
+ * derived values that is fine: `attempts` carries a server timestamp and
  * is the source of truth, so recomputing on a schedule is correct, just
  * eventually.
  *
@@ -31,9 +31,12 @@
  *
  *   node jobs.js --job=guests   [--days=30] [--apply]
  *   node jobs.js --job=orphans  [--apply]
- *   node jobs.js --job=streaks  [--apply]
  *   node jobs.js --job=counts   [--apply]
  *   node jobs.js --job=all      [--apply]
+ *
+ * And one that is deliberately NOT in `all`, to be run once by hand:
+ *
+ *   node jobs.js --job=dropstreak [--apply]
  *
  * Dry run by default. Nothing is written without --apply.
  *
@@ -193,81 +196,64 @@ async function jobOrphans() {
   }
 }
 
-// ─── Job: authoritative streaks ──────────────────────────────────────
+// ─── Job: drop the retired streak fields (one-shot) ──────────────────
 
 /**
- * Recomputes `currentStreak` and `lastActiveDate` from the `attempts`
- * collection.
+ * Deletes `currentStreak` and `lastActiveDate` from every `users/{uid}`
+ * document.
  *
- * `attempts.timestamp` is a server timestamp, so unlike the client's own
- * calculation this cannot be moved by changing a device clock. The rules
- * constrain what a client may write; this is what makes the number
- * actually true, on whatever cadence the job runs.
+ * Streaks were removed from the product. The fields stayed behind on
+ * every existing account because nothing migrates them — read by no
+ * code, written by no code, and indistinguishable from live data to
+ * anyone reading the collection later. That is the quiet kind of wrong
+ * worth spending one job on.
  *
- * Dates are bucketed in UTC. Nigeria is UTC+1, so a session just before
- * midnight local time lands on the previous UTC day. That can shorten a
- * streak by a day at the boundary and is a known, deliberate
- * simplification — fixing it properly means storing each user's timezone.
+ * **One-shot, and deliberately not part of `--job=all`.** There is
+ * nothing to re-run: once the fields are gone, no client writes them
+ * back. Leaving it on the nightly schedule would mean scanning every
+ * user document forever to find nothing, on a plan where reads are the
+ * scarce resource. Run it by hand, once, after the streak-free build is
+ * deployed:
+ *
+ *   node jobs.js --job=dropstreak            # dry run, counts only
+ *   node jobs.js --job=dropstreak --apply
+ *
+ * Batched at 400 (the hard limit is 500) and only users actually
+ * carrying a field are touched, so the write cost is one per affected
+ * account and zero thereafter.
  */
-async function jobStreaks() {
-  log(`\n── Recompute streaks from attempts [${mode()}]`);
+async function jobDropStreakFields() {
+  log(`\n── Drop retired streak fields from users [${mode()}]`);
 
   const users = await db.collection("users").get();
-  let updated = 0;
+  const stale = users.docs.filter(
+    (d) =>
+      d.data().currentStreak !== undefined ||
+      d.data().lastActiveDate !== undefined,
+  );
 
-  for (const userDoc of users.docs) {
-    const uid = userDoc.id;
+  log(`   ${stale.length} of ${users.size} user documents still carry them`);
 
-    // 180 days is far more than any plausible streak and bounds the read.
-    const since = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000);
-    const attempts = await db
-      .collection("attempts")
-      .where("userId", "==", uid)
-      .where("timestamp", ">=", since)
-      .orderBy("timestamp", "desc")
-      .get();
-
-    const days = new Set();
-    for (const a of attempts.docs) {
-      const ts = a.data().timestamp;
-      if (!ts || !ts.toDate) continue;
-      days.add(ts.toDate().toISOString().slice(0, 10));
-    }
-
-    const key = (d) => d.toISOString().slice(0, 10);
-    const today = new Date();
-    const yesterday = new Date(today.getTime() - 86400000);
-
-    // A streak only counts if it reaches today or yesterday; otherwise it
-    // is broken and the answer is zero.
-    let cursor;
-    if (days.has(key(today))) cursor = today;
-    else if (days.has(key(yesterday))) cursor = yesterday;
-
-    let streak = 0;
-    while (cursor && days.has(key(cursor))) {
-      streak++;
-      cursor = new Date(cursor.getTime() - 86400000);
-    }
-
-    const current = userDoc.data().currentStreak ?? 0;
-    const lastActive = userDoc.data().lastActiveDate ?? null;
-    const newest = attempts.docs.length
-      ? key(attempts.docs[0].data().timestamp.toDate())
-      : null;
-
-    if (current === streak && lastActive === newest) continue;
-
-    updated++;
-    if (APPLY) {
-      await userDoc.ref.update({
-        currentStreak: streak,
-        lastActiveDate: newest,
-      });
-    }
+  if (!APPLY || stale.length === 0) {
+    log(`   ${stale.length} ${APPLY ? "cleared" : "would be cleared"}`);
+    return;
   }
 
-  log(`   ${updated} users ${APPLY ? "updated" : "would be updated"}`);
+  const FieldValue = admin.firestore.FieldValue;
+  let cleared = 0;
+  for (let i = 0; i < stale.length; i += 400) {
+    const batch = db.batch();
+    for (const doc of stale.slice(i, i + 400)) {
+      batch.update(doc.ref, {
+        currentStreak: FieldValue.delete(),
+        lastActiveDate: FieldValue.delete(),
+      });
+    }
+    await batch.commit();
+    cleared += Math.min(400, stale.length - i);
+  }
+
+  log(`   ${cleared} cleared`);
 }
 
 // ─── Job: subject.topicCount ─────────────────────────────────────────
@@ -330,8 +316,9 @@ async function main() {
 
   if (JOB === "guests" || JOB === "all") await jobGuests();
   if (JOB === "orphans" || JOB === "all") await jobOrphans();
-  if (JOB === "streaks" || JOB === "all") await jobStreaks();
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
+  // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
+  if (JOB === "dropstreak") await jobDropStreakFields();
 
   if (!APPLY) log("\nDry run — nothing written. Re-run with --apply.");
   process.exit(0);

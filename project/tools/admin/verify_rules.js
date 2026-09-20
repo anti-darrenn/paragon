@@ -160,7 +160,6 @@ async function deleteDoc(idToken, path) {
 const str = (v) => ({ stringValue: v });
 const int = (v) => ({ integerValue: String(v) });
 const bool = (v) => ({ booleanValue: v });
-const nul = () => ({ nullValue: null });
 const map = (fields) => ({ mapValue: { fields } });
 const arr = (values) => ({ arrayValue: { values } });
 
@@ -180,15 +179,6 @@ const serverTime = (fieldPath) => ({
   setToServerValue: 'REQUEST_TIME',
 });
 
-/** UTC, because `request.time` in the rules is UTC. */
-function dateKey(offsetDays = 0) {
-  const d = new Date(Date.now() + offsetDays * 86400000);
-  const pad = (n) => String(n).padStart(2, '0');
-  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(
-    d.getUTCDate(),
-  )}`;
-}
-
 function randomKey() {
   return `zz_v${Math.random().toString(36).slice(2, 10)}`.slice(0, 20);
 }
@@ -200,8 +190,6 @@ function provisioningFields(uid) {
     email: str(''),
     displayName: str(''),
     isAnonymous: bool(true),
-    currentStreak: int(0),
-    lastActiveDate: nul(),
   };
 }
 
@@ -228,19 +216,6 @@ async function usersCreate(a, b) {
       write(
         `users/${b.uid}`,
         { ...provisioningFields(b.uid), level: int(99) },
-        { transforms: [serverTime('createdAt')], precondition: { exists: false } },
-      ),
-    ),
-  );
-
-  expectOutcome(
-    'a create claiming a streak above zero is refused',
-    DENY,
-    await commit(
-      b.idToken,
-      write(
-        `users/${b.uid}`,
-        { ...provisioningFields(b.uid), currentStreak: int(7) },
         { transforms: [serverTime('createdAt')], precondition: { exists: false } },
       ),
     ),
@@ -439,63 +414,6 @@ async function usernames(a, b, key) {
     'a reservation cannot be released',
     DENY,
     await deleteDoc(a.idToken, `usernames/${key}`),
-  );
-}
-
-async function streaks(a) {
-  suite('users/{uid} — streak integrity');
-
-  const path = `users/${a.uid}`;
-  const streak = (n, date) => ({
-    currentStreak: int(n),
-    lastActiveDate: str(date),
-  });
-
-  expectOutcome(
-    'a streak may start at one, today',
-    ALLOW,
-    await commit(a.idToken, write(path, streak(1, dateKey(0)))),
-  );
-
-  expectOutcome(
-    'a streak cannot jump to an arbitrary number',
-    DENY,
-    await commit(a.idToken, write(path, streak(9, dateKey(0)))),
-  );
-
-  // The replay hole: without the strictly-later-date clause, a client
-  // could call this in a loop on one calendar day and climb the counter
-  // one legal-looking write at a time.
-  expectOutcome(
-    'an increment on the same day is refused',
-    DENY,
-    await commit(a.idToken, write(path, streak(2, dateKey(0)))),
-  );
-
-  expectOutcome(
-    'an increment on a later day is accepted',
-    ALLOW,
-    await commit(a.idToken, write(path, streak(2, dateKey(1)))),
-  );
-
-  expectOutcome(
-    'a backdated streak is refused',
-    DENY,
-    await commit(a.idToken, write(path, streak(3, dateKey(-7)))),
-  );
-
-  expectOutcome(
-    'a streak far in the future is refused',
-    DENY,
-    await commit(a.idToken, write(path, streak(3, dateKey(30)))),
-  );
-
-  // The reset branch. Allowed by design, and the reason the rules are a
-  // backstop rather than the source of truth — see jobs.js --job=streaks.
-  expectOutcome(
-    'a streak may reset to one',
-    ALLOW,
-    await commit(a.idToken, write(path, streak(1, dateKey(0)))),
   );
 }
 
@@ -729,7 +647,6 @@ async function teardown(a, b, usernameKey) {
   await usersCreate(a, b);
   await usersAllowList(a, b);
   await usernames(a, b, usernameKey);
-  await streaks(a);
   await attemptsAndFlags(a, b);
   await progress(a, b);
   await content(a);

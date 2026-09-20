@@ -15,10 +15,10 @@
 /// as a guest who can drill Physics but not sit a Physics exam, with
 /// nothing in the code explaining which was intended.
 ///
-/// **The honesty rule.** A guest whose streak and mastery quietly evaporate
-/// when they close the tab has been misled by a product that showed them a
-/// filling ring. Anywhere progress is displayed to a guest, say that it is
-/// not being kept — see [progressNotKeptMessage].
+/// **The honesty rule.** A guest whose mastery quietly evaporates when they
+/// close the tab has been misled by a product that showed them a filling
+/// ring. Anywhere progress is displayed to a guest, say that it is not
+/// being kept — see [progressNotKeptMessage].
 library;
 
 class GuestLimits {
@@ -50,6 +50,6 @@ class GuestLimits {
   /// Shown wherever a guest is looking at progress that will not survive
   /// the session.
   static const String progressNotKeptMessage =
-      "You're browsing as a guest, so your streak and progress are not "
-      'saved. Sign in to keep them.';
+      "You're browsing as a guest, so your progress is not saved. "
+      'Sign in to keep it.';
 }

@@ -58,9 +58,9 @@ void main() {
               }),
             ),
           ),
-          // Signed out: no attempt, streak or progress writes happen at
-          // all. The session tally and the summary are independent of
-          // them, which is what makes this testable without Firebase.
+          // Signed out: no attempt or progress writes happen at all. The
+          // session tally and the summary are independent of them, which
+          // is what makes this testable without Firebase.
           currentUserProvider.overrideWithValue(null),
           // Held unconditionally by the screen (Riverpod 3 bans `ref` in
           // dispose, so it has to be captured up front), and the real one

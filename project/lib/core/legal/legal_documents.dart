@@ -116,8 +116,7 @@ const LegalDocument privacyPolicy = LegalDocument(
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
             'correct, when you answered, and whether it was practice or a '
-            'WAEC exam session. We also record the dates you were active, '
-            'to work out your streak, and a running count of how many '
+            'WAEC exam session. We also keep a running count of how many '
             'questions you have answered in each topic and how many you '
             'got right, which is what the progress rings show you.',
         'Problem reports. If you report a problem with a question, we record '
@@ -160,7 +159,7 @@ const LegalDocument privacyPolicy = LegalDocument(
       heading: 'Why we collect it',
       bullets: [
         'To give you an account and keep you signed in.',
-        'To show your progress, streak and results back to you.',
+        'To show your progress and results back to you.',
         'To choose which questions to show you next.',
         'To find and fix wrong answers in our question bank, which is why '
             'problem reports exist.',

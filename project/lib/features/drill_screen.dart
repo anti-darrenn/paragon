@@ -14,7 +14,6 @@ import '../core/providers/analytics_provider.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
 import '../core/repositories/progress_repository.dart';
-import '../core/repositories/user_repository.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -57,17 +56,6 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
 
   /// One flush per session, whichever way the student leaves.
   bool _sessionFlushed = false;
-
-  /// The streak is a property of the day, not of the question.
-  ///
-  /// `updateStreak` used to run on every single submit. Each call is a
-  /// Firestore transaction with a read inside it, so a 20-question drill
-  /// cost 20 reads and 19 of them existed only to re-confirm that today
-  /// was already recorded. On the Spark plan's 50k daily reads that is the
-  /// same shape of defect as the unbounded queries in `docs/audit/NEXT.md`
-  /// — cost that scales with exactly the engagement the product wants.
-  /// `WaecExamScreen` already did this correctly, once per exam.
-  bool _streakRecorded = false;
 
   /// Held rather than read from `ref` on the way out: Riverpod 3 forbids
   /// touching `ref` inside `dispose()`. Safe to hold because [Analytics]
@@ -152,10 +140,6 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
             isCorrect: isCorrect,
             source: 'drill',
           );
-      if (!_streakRecorded) {
-        _streakRecorded = true;
-        await ref.read(userRepositoryProvider).updateStreak(user.uid);
-      }
     }
   }
 
