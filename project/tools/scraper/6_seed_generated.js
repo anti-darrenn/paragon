@@ -35,8 +35,21 @@ const key = require('./data/serviceAccountKey.json');
 admin.initializeApp({ credential: admin.credential.cert(key) });
 const db = admin.firestore();
 
+// Files for subjects that do not exist in Firestore yet are keyed by name, not
+// id - those belong to 7_create_subject.js, so --all leaves them alone.
+function isPending(f) {
+  try {
+    const rows = JSON.parse(fs.readFileSync(path.join(DATA, f), 'utf8'));
+    return Array.isArray(rows) && rows.length > 0 && !rows[0].topicId;
+  } catch (e) { return false; }
+}
+
+let pendingSkipped = 0;
 const files = ALL
-  ? fs.readdirSync(DATA).filter((f) => f.startsWith('generated_') && f.endsWith('.json')).sort()
+  ? fs.readdirSync(DATA)
+      .filter((f) => f.startsWith('generated_') && f.endsWith('.json'))
+      .filter((f) => { if (isPending(f)) { pendingSkipped++; return false; } return true; })
+      .sort()
   : [fileArg.split('=')[1]];
 
 // Validates the file is internally consistent and its IDs exist in Firestore.
