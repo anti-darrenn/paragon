@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "A 200W bulb is used for 5 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N40",
+      "N20000",
+      "N20",
+      "N1"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 5 = 1\\)kWh\n\nCost \\(= 1 \\times 20 = 20\\)\n\nSo the cost is N20.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 2 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N40",
+      "N20000",
+      "N1",
+      "N20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 2 = 1\\)kWh\n\nCost \\(= 1 \\times 20 = 20\\)\n\nSo the cost is N20.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 41Ω resistor carrying a current of 4A.",
+    "options": [
+      "656W",
+      "2.56W",
+      "164W",
+      "1312W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 41 = 16 \\times 41 = 656\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 455W device operating for 499 seconds.",
+    "options": [
+      "0.91J",
+      "454090J",
+      "227045J",
+      "954J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 455 \\times 499 = 227045\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 33Ω resistor carrying a current of 5A.",
+    "options": [
+      "1.32W",
+      "825W",
+      "165W",
+      "1650W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 33 = 25 \\times 33 = 825\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 38Ω resistor carrying a current of 6A.",
+    "options": [
+      "2736W",
+      "1.06W",
+      "228W",
+      "1368W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 38 = 36 \\times 38 = 1368\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 373W device operating for 69 seconds.",
+    "options": [
+      "442J",
+      "25737J",
+      "51474J",
+      "5.41J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 373 \\times 69 = 25737\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 9 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N90000",
+      "N1.8",
+      "N90",
+      "N180"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 9 = 1.8\\)kWh\n\nCost \\(= 1.8 \\times 50 = 90\\)\n\nSo the cost is N90.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "1.2kWh",
+      "600kWh",
+      "0.6kWh",
+      "0.067kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 3 = 0.6\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 15A flows through a device with 124V across it.",
+    "options": [
+      "139W",
+      "3720W",
+      "1860W",
+      "8.27W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 15 \\times 124 = 1860\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 315W device operating for 217 seconds.",
+    "options": [
+      "136710J",
+      "1.45J",
+      "532J",
+      "68355J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 315 \\times 217 = 68355\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 44Ω resistor carrying a current of 10A.",
+    "options": [
+      "0.44W",
+      "8800W",
+      "440W",
+      "4400W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 10^{2} \\times 44 = 100 \\times 44 = 4400\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 25Ω resistor carrying a current of 2A.",
+    "options": [
+      "6.25W",
+      "200W",
+      "50W",
+      "100W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 2^{2} \\times 25 = 4 \\times 25 = 100\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 11 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.182kWh",
+      "44kWh",
+      "22kWh",
+      "22000kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 11 = 22\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 23Ω resistor carrying a current of 10A.",
+    "options": [
+      "2300W",
+      "230W",
+      "0.23W",
+      "4600W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 10^{2} \\times 23 = 100 \\times 23 = 2300\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 9Ω resistor carrying a current of 8A.",
+    "options": [
+      "576W",
+      "72W",
+      "1152W",
+      "0.14W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 8^{2} \\times 9 = 64 \\times 9 = 576\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 27Ω resistor carrying a current of 5A.",
+    "options": [
+      "135W",
+      "1350W",
+      "1.08W",
+      "675W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 27 = 25 \\times 27 = 675\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 3 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N6",
+      "N12",
+      "N0.3",
+      "N6000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 3 = 0.3\\)kWh\n\nCost \\(= 0.3 \\times 20 = 6\\)\n\nSo the cost is N6.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 12A flows through a device with 138V across it.",
+    "options": [
+      "3312W",
+      "1656W",
+      "150W",
+      "11.5W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 12 \\times 138 = 1656\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 12Ω resistor carrying a current of 8A.",
+    "options": [
+      "0.19W",
+      "1536W",
+      "96W",
+      "768W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 8^{2} \\times 12 = 64 \\times 12 = 768\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1000W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "3kWh",
+      "6kWh",
+      "3000kWh",
+      "0.333kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1000}{1000} \\times 3 = 3\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 34Ω resistor carrying a current of 3A.",
+    "options": [
+      "612W",
+      "3.78W",
+      "102W",
+      "306W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 3^{2} \\times 34 = 9 \\times 34 = 306\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 9Ω resistor carrying a current of 7A.",
+    "options": [
+      "0.18W",
+      "882W",
+      "63W",
+      "441W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 7^{2} \\times 9 = 49 \\times 9 = 441\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 45Ω resistor carrying a current of 9A.",
+    "options": [
+      "405W",
+      "7290W",
+      "3645W",
+      "0.56W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 9^{2} \\times 45 = 81 \\times 45 = 3645\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 283W device operating for 314 seconds.",
+    "options": [
+      "177724J",
+      "88862J",
+      "0.9J",
+      "597J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 283 \\times 314 = 88862\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 2 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.2kWh",
+      "0.4kWh",
+      "200kWh",
+      "0.05kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 2 = 0.2\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 49Ω resistor carrying a current of 11A.",
+    "options": [
+      "539W",
+      "0.41W",
+      "5929W",
+      "11858W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 49 = 121 \\times 49 = 5929\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 12A flows through a device with 239V across it.",
+    "options": [
+      "19.92W",
+      "2868W",
+      "251W",
+      "5736W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 12 \\times 239 = 2868\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 4 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "1.6kWh",
+      "800kWh",
+      "0.05kWh",
+      "0.8kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 4 = 0.8\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 6 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N0.6",
+      "N12",
+      "N6",
+      "N6000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 6 = 0.6\\)kWh\n\nCost \\(= 0.6 \\times 10 = 6\\)\n\nSo the cost is N6.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 6 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N600",
+      "N6",
+      "N300",
+      "N300000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 6 = 6\\)kWh\n\nCost \\(= 6 \\times 50 = 300\\)\n\nSo the cost is N300.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 46Ω resistor carrying a current of 6A.",
+    "options": [
+      "3312W",
+      "1.28W",
+      "276W",
+      "1656W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 46 = 36 \\times 46 = 1656\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 122V across it.",
+    "options": [
+      "30.5W",
+      "126W",
+      "488W",
+      "976W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 122 = 488\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 36Ω resistor carrying a current of 8A.",
+    "options": [
+      "2304W",
+      "4608W",
+      "288W",
+      "0.56W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 8^{2} \\times 36 = 64 \\times 36 = 2304\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 8 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N0.8",
+      "N40000",
+      "N40",
+      "N80"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 8 = 0.8\\)kWh\n\nCost \\(= 0.8 \\times 50 = 40\\)\n\nSo the cost is N40.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 10 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N20",
+      "N40",
+      "N2",
+      "N20000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 10 = 2\\)kWh\n\nCost \\(= 2 \\times 10 = 20\\)\n\nSo the cost is N20.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1000W is used for 5 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "5kWh",
+      "0.2kWh",
+      "5000kWh",
+      "10kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1000}{1000} \\times 5 = 5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 7 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.286kWh",
+      "28kWh",
+      "14kWh",
+      "14000kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 7 = 14\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 7A flows through a device with 18V across it.",
+    "options": [
+      "2.57W",
+      "252W",
+      "126W",
+      "25W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 7 \\times 18 = 126\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 17A flows through a device with 45V across it.",
+    "options": [
+      "2.65W",
+      "765W",
+      "1530W",
+      "62W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 17 \\times 45 = 765\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 45Ω resistor carrying a current of 4A.",
+    "options": [
+      "2.81W",
+      "1440W",
+      "180W",
+      "720W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 45 = 16 \\times 45 = 720\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 22Ω resistor carrying a current of 12A.",
+    "options": [
+      "264W",
+      "3168W",
+      "6336W",
+      "0.15W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 22 = 144 \\times 22 = 3168\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 27Ω resistor carrying a current of 6A.",
+    "options": [
+      "1944W",
+      "162W",
+      "972W",
+      "0.75W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 27 = 36 \\times 27 = 972\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 25Ω resistor carrying a current of 10A.",
+    "options": [
+      "0.25W",
+      "250W",
+      "2500W",
+      "5000W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 10^{2} \\times 25 = 100 \\times 25 = 2500\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 6 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N450",
+      "N225000",
+      "N9",
+      "N225"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 6 = 9\\)kWh\n\nCost \\(= 9 \\times 25 = 225\\)\n\nSo the cost is N225.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 498W device operating for 483 seconds.",
+    "options": [
+      "481068J",
+      "981J",
+      "1.03J",
+      "240534J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 498 \\times 483 = 240534\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 2 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N20000",
+      "N0.4",
+      "N40",
+      "N20"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 2 = 0.4\\)kWh\n\nCost \\(= 0.4 \\times 50 = 20\\)\n\nSo the cost is N20.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 14A flows through a device with 124V across it.",
+    "options": [
+      "3472W",
+      "8.86W",
+      "138W",
+      "1736W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 14 \\times 124 = 1736\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 5Ω resistor carrying a current of 5A.",
+    "options": [
+      "125W",
+      "250W",
+      "25W",
+      "0.2W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 5 = 25 \\times 5 = 125\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 206W device operating for 222 seconds.",
+    "options": [
+      "91464J",
+      "428J",
+      "45732J",
+      "0.93J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 206 \\times 222 = 45732\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 15Ω resistor carrying a current of 11A.",
+    "options": [
+      "3630W",
+      "165W",
+      "0.12W",
+      "1815W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 15 = 121 \\times 15 = 1815\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1500W is used for 2 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "3000kWh",
+      "3kWh",
+      "6kWh",
+      "0.75kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1500}{1000} \\times 2 = 3\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 9 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N450",
+      "N225",
+      "N225000",
+      "N4.5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 9 = 4.5\\)kWh\n\nCost \\(= 4.5 \\times 50 = 225\\)\n\nSo the cost is N225.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 750W is used for 5 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.15kWh",
+      "3750kWh",
+      "7.5kWh",
+      "3.75kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{750}{1000} \\times 5 = 3.75\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 13A flows through a device with 164V across it.",
+    "options": [
+      "4264W",
+      "12.62W",
+      "177W",
+      "2132W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 13 \\times 164 = 2132\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 19Ω resistor carrying a current of 5A.",
+    "options": [
+      "475W",
+      "950W",
+      "0.76W",
+      "95W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 19 = 25 \\times 19 = 475\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1500W is used for 4 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.375kWh",
+      "12kWh",
+      "6kWh",
+      "6000kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1500}{1000} \\times 4 = 6\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 17Ω resistor carrying a current of 6A.",
+    "options": [
+      "612W",
+      "0.47W",
+      "102W",
+      "1224W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 17 = 36 \\times 17 = 612\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 12A flows through a device with 216V across it.",
+    "options": [
+      "18W",
+      "5184W",
+      "228W",
+      "2592W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 12 \\times 216 = 2592\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 413W device operating for 461 seconds.",
+    "options": [
+      "874J",
+      "0.9J",
+      "380786J",
+      "190393J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 413 \\times 461 = 190393\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 4 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N10",
+      "N0.4",
+      "N10000",
+      "N20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 4 = 0.4\\)kWh\n\nCost \\(= 0.4 \\times 25 = 10\\)\n\nSo the cost is N10.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 232W device operating for 101 seconds.",
+    "options": [
+      "46864J",
+      "23432J",
+      "333J",
+      "2.3J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 232 \\times 101 = 23432\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 8 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "16kWh",
+      "16000kWh",
+      "0.25kWh",
+      "32kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 8 = 16\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 9 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N1.8",
+      "N45",
+      "N90",
+      "N45000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 9 = 1.8\\)kWh\n\nCost \\(= 1.8 \\times 25 = 45\\)\n\nSo the cost is N45.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 3A flows through a device with 168V across it.",
+    "options": [
+      "504W",
+      "171W",
+      "56W",
+      "1008W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 3 \\times 168 = 504\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 6A flows through a device with 228V across it.",
+    "options": [
+      "2736W",
+      "1368W",
+      "234W",
+      "38W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 6 \\times 228 = 1368\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 6 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N3",
+      "N150",
+      "N75",
+      "N75000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 6 = 3\\)kWh\n\nCost \\(= 3 \\times 25 = 75\\)\n\nSo the cost is N75.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 12Ω resistor carrying a current of 4A.",
+    "options": [
+      "384W",
+      "48W",
+      "192W",
+      "0.75W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 12 = 16 \\times 12 = 192\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 2 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.8kWh",
+      "400kWh",
+      "0.4kWh",
+      "0.1kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 2 = 0.4\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 471W device operating for 401 seconds.",
+    "options": [
+      "377742J",
+      "1.18J",
+      "188871J",
+      "872J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 471 \\times 401 = 188871\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 137W device operating for 380 seconds.",
+    "options": [
+      "104120J",
+      "0.36J",
+      "517J",
+      "52060J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 137 \\times 380 = 52060\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 4 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N60000",
+      "N60",
+      "N120",
+      "N6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 4 = 6\\)kWh\n\nCost \\(= 6 \\times 10 = 60\\)\n\nSo the cost is N60.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 21Ω resistor carrying a current of 5A.",
+    "options": [
+      "525W",
+      "0.84W",
+      "105W",
+      "1050W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 21 = 25 \\times 21 = 525\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 9 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.011kWh",
+      "0.9kWh",
+      "1.8kWh",
+      "900kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 9 = 0.9\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1000W is used for 10 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "10kWh",
+      "20kWh",
+      "0.1kWh",
+      "10000kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1000}{1000} \\times 10 = 10\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 9 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N45000",
+      "N45",
+      "N4.5",
+      "N90"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 9 = 4.5\\)kWh\n\nCost \\(= 4.5 \\times 10 = 45\\)\n\nSo the cost is N45.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 5 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N125",
+      "N125000",
+      "N5",
+      "N250"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 5 = 5\\)kWh\n\nCost \\(= 5 \\times 25 = 125\\)\n\nSo the cost is N125.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "300kWh",
+      "0.3kWh",
+      "0.6kWh",
+      "0.033kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 3 = 0.3\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 6 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N150",
+      "N6",
+      "N300",
+      "N150000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 6 = 6\\)kWh\n\nCost \\(= 6 \\times 25 = 150\\)\n\nSo the cost is N150.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 9 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "18kWh",
+      "36kWh",
+      "0.222kWh",
+      "18000kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 9 = 18\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 336W device operating for 325 seconds.",
+    "options": [
+      "1.03J",
+      "218400J",
+      "661J",
+      "109200J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 336 \\times 325 = 109200\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 8 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N80",
+      "N40",
+      "N40000",
+      "N1.6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 8 = 1.6\\)kWh\n\nCost \\(= 1.6 \\times 25 = 40\\)\n\nSo the cost is N40.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 8 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "4kWh",
+      "4000kWh",
+      "8kWh",
+      "0.063kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 8 = 4\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 476W device operating for 293 seconds.",
+    "options": [
+      "139468J",
+      "1.63J",
+      "769J",
+      "278936J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 476 \\times 293 = 139468\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 31Ω resistor carrying a current of 12A.",
+    "options": [
+      "8928W",
+      "0.22W",
+      "4464W",
+      "372W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 31 = 144 \\times 31 = 4464\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 114W device operating for 221 seconds.",
+    "options": [
+      "25194J",
+      "50388J",
+      "0.52J",
+      "335J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 114 \\times 221 = 25194\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 26Ω resistor carrying a current of 4A.",
+    "options": [
+      "104W",
+      "1.63W",
+      "416W",
+      "832W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 26 = 16 \\times 26 = 416\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 10A flows through a device with 29V across it.",
+    "options": [
+      "39W",
+      "290W",
+      "2.9W",
+      "580W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 10 \\times 29 = 290\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 750W is used for 7 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.107kWh",
+      "10.5kWh",
+      "5250kWh",
+      "5.25kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{750}{1000} \\times 7 = 5.25\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 5 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.04kWh",
+      "1000kWh",
+      "2kWh",
+      "1kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 5 = 1\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 9Ω resistor carrying a current of 12A.",
+    "options": [
+      "1296W",
+      "0.06W",
+      "108W",
+      "2592W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 9 = 144 \\times 9 = 1296\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 4Ω resistor carrying a current of 11A.",
+    "options": [
+      "968W",
+      "0.03W",
+      "44W",
+      "484W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 4 = 121 \\times 4 = 484\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 20Ω resistor carrying a current of 4A.",
+    "options": [
+      "80W",
+      "1.25W",
+      "320W",
+      "640W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 20 = 16 \\times 20 = 320\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 19Ω resistor carrying a current of 7A.",
+    "options": [
+      "0.39W",
+      "931W",
+      "1862W",
+      "133W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 7^{2} \\times 19 = 49 \\times 19 = 931\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 9 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N180000",
+      "N360",
+      "N9",
+      "N180"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 9 = 9\\)kWh\n\nCost \\(= 9 \\times 20 = 180\\)\n\nSo the cost is N180.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1000W is used for 9 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "18kWh",
+      "9kWh",
+      "0.111kWh",
+      "9000kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1000}{1000} \\times 9 = 9\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 170W device operating for 340 seconds.",
+    "options": [
+      "0.5J",
+      "510J",
+      "57800J",
+      "115600J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 170 \\times 340 = 57800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 85V across it.",
+    "options": [
+      "340W",
+      "89W",
+      "680W",
+      "21.25W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 85 = 340\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 11A flows through a device with 176V across it.",
+    "options": [
+      "3872W",
+      "16W",
+      "1936W",
+      "187W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 11 \\times 176 = 1936\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 375W device operating for 67 seconds.",
+    "options": [
+      "442J",
+      "50250J",
+      "25125J",
+      "5.6J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 375 \\times 67 = 25125\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 3A flows through a device with 226V across it.",
+    "options": [
+      "678W",
+      "229W",
+      "75.33W",
+      "1356W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 3 \\times 226 = 678\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 374W device operating for 117 seconds.",
+    "options": [
+      "491J",
+      "87516J",
+      "43758J",
+      "3.2J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 374 \\times 117 = 43758\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 378W device operating for 504 seconds.",
+    "options": [
+      "0.75J",
+      "190512J",
+      "882J",
+      "381024J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 378 \\times 504 = 190512\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 8Ω resistor carrying a current of 4A.",
+    "options": [
+      "128W",
+      "32W",
+      "0.5W",
+      "256W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 8 = 16 \\times 8 = 128\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 215V across it.",
+    "options": [
+      "53.75W",
+      "1720W",
+      "219W",
+      "860W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 215 = 860\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 8A flows through a device with 83V across it.",
+    "options": [
+      "10.38W",
+      "664W",
+      "1328W",
+      "91W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 8 \\times 83 = 664\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 16A flows through a device with 46V across it.",
+    "options": [
+      "736W",
+      "62W",
+      "2.88W",
+      "1472W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 16 \\times 46 = 736\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 20Ω resistor carrying a current of 8A.",
+    "options": [
+      "1280W",
+      "0.31W",
+      "2560W",
+      "160W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 8^{2} \\times 20 = 64 \\times 20 = 1280\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "1.5kWh",
+      "0.167kWh",
+      "3kWh",
+      "1500kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 3 = 1.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1500W is used for 12 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "36kWh",
+      "18kWh",
+      "0.125kWh",
+      "18000kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1500}{1000} \\times 12 = 18\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 7 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "700kWh",
+      "0.7kWh",
+      "1.4kWh",
+      "0.014kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 7 = 0.7\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 12A flows through a device with 99V across it.",
+    "options": [
+      "111W",
+      "1188W",
+      "8.25W",
+      "2376W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 12 \\times 99 = 1188\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 5 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "10kWh",
+      "0.4kWh",
+      "20kWh",
+      "10000kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 5 = 10\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 11A flows through a device with 83V across it.",
+    "options": [
+      "1826W",
+      "7.55W",
+      "94W",
+      "913W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 11 \\times 83 = 913\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 423W device operating for 396 seconds.",
+    "options": [
+      "167508J",
+      "819J",
+      "335016J",
+      "1.07J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 423 \\times 396 = 167508\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 27Ω resistor carrying a current of 4A.",
+    "options": [
+      "1.69W",
+      "432W",
+      "864W",
+      "108W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 27 = 16 \\times 27 = 432\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 18A flows through a device with 96V across it.",
+    "options": [
+      "3456W",
+      "1728W",
+      "5.33W",
+      "114W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 18 \\times 96 = 1728\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 6 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "1.2kWh",
+      "0.033kWh",
+      "2.4kWh",
+      "1200kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 6 = 1.2\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 181W device operating for 288 seconds.",
+    "options": [
+      "52128J",
+      "104256J",
+      "469J",
+      "0.63J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 181 \\times 288 = 52128\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 4 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N6",
+      "N150000",
+      "N150",
+      "N300"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 4 = 6\\)kWh\n\nCost \\(= 6 \\times 25 = 150\\)\n\nSo the cost is N150.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 118V across it.",
+    "options": [
+      "944W",
+      "472W",
+      "122W",
+      "29.5W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 118 = 472\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 20A flows through a device with 132V across it.",
+    "options": [
+      "152W",
+      "2640W",
+      "5280W",
+      "6.6W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 20 \\times 132 = 2640\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 31W device operating for 556 seconds.",
+    "options": [
+      "17236J",
+      "0.06J",
+      "34472J",
+      "587J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 31 \\times 556 = 17236\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 294W device operating for 507 seconds.",
+    "options": [
+      "298116J",
+      "0.58J",
+      "149058J",
+      "801J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 294 \\times 507 = 149058\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 11 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "2.2kWh",
+      "0.018kWh",
+      "4.4kWh",
+      "2200kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 11 = 2.2\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 6 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.017kWh",
+      "1.2kWh",
+      "600kWh",
+      "0.6kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 6 = 0.6\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 7 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N140000",
+      "N7",
+      "N280",
+      "N140"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 7 = 7\\)kWh\n\nCost \\(= 7 \\times 20 = 140\\)\n\nSo the cost is N140.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 3 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N7.5",
+      "N0.3",
+      "N7500",
+      "N15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 3 = 0.3\\)kWh\n\nCost \\(= 0.3 \\times 25 = 7.5\\)\n\nSo the cost is N7.5.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 750W is used for 10 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.075kWh",
+      "15kWh",
+      "7500kWh",
+      "7.5kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{750}{1000} \\times 10 = 7.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 7 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N3.5",
+      "N175",
+      "N87500",
+      "N87.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 7 = 3.5\\)kWh\n\nCost \\(= 3.5 \\times 25 = 87.5\\)\n\nSo the cost is N87.5.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 17A flows through a device with 116V across it.",
+    "options": [
+      "133W",
+      "1972W",
+      "3944W",
+      "6.82W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 17 \\times 116 = 1972\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1500W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.5kWh",
+      "9kWh",
+      "4500kWh",
+      "4.5kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1500}{1000} \\times 3 = 4.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 7 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N350000",
+      "N350",
+      "N700",
+      "N7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 7 = 7\\)kWh\n\nCost \\(= 7 \\times 50 = 350\\)\n\nSo the cost is N350.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 9A flows through a device with 207V across it.",
+    "options": [
+      "23W",
+      "3726W",
+      "1863W",
+      "216W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 9 \\times 207 = 1863\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 10 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N5",
+      "N50000",
+      "N50",
+      "N100"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 10 = 5\\)kWh\n\nCost \\(= 5 \\times 10 = 50\\)\n\nSo the cost is N50.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 205W device operating for 120 seconds.",
+    "options": [
+      "24600J",
+      "325J",
+      "1.71J",
+      "49200J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 205 \\times 120 = 24600\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 5 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N150",
+      "N7.5",
+      "N75",
+      "N75000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 5 = 7.5\\)kWh\n\nCost \\(= 7.5 \\times 10 = 75\\)\n\nSo the cost is N75.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 182W device operating for 352 seconds.",
+    "options": [
+      "128128J",
+      "0.52J",
+      "534J",
+      "64064J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 182 \\times 352 = 64064\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 10 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "10kWh",
+      "5kWh",
+      "5000kWh",
+      "0.05kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 10 = 5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 2 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N3",
+      "N150",
+      "N300",
+      "N150000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 2 = 3\\)kWh\n\nCost \\(= 3 \\times 50 = 150\\)\n\nSo the cost is N150.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 10 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "2000kWh",
+      "4kWh",
+      "2kWh",
+      "0.02kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 10 = 2\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 29Ω resistor carrying a current of 6A.",
+    "options": [
+      "2088W",
+      "174W",
+      "1044W",
+      "0.81W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 29 = 36 \\times 29 = 1044\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 440W device operating for 370 seconds.",
+    "options": [
+      "162800J",
+      "325600J",
+      "1.19J",
+      "810J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 440 \\times 370 = 162800\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 12Ω resistor carrying a current of 5A.",
+    "options": [
+      "600W",
+      "60W",
+      "300W",
+      "0.48W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 12 = 25 \\times 12 = 300\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 5Ω resistor carrying a current of 3A.",
+    "options": [
+      "15W",
+      "90W",
+      "0.56W",
+      "45W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 3^{2} \\times 5 = 9 \\times 5 = 45\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 5 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N50000",
+      "N2.5",
+      "N100",
+      "N50"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 5 = 2.5\\)kWh\n\nCost \\(= 2.5 \\times 20 = 50\\)\n\nSo the cost is N50.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 11 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "11kWh",
+      "0.046kWh",
+      "5500kWh",
+      "5.5kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 11 = 5.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 28Ω resistor carrying a current of 10A.",
+    "options": [
+      "280W",
+      "0.28W",
+      "5600W",
+      "2800W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 10^{2} \\times 28 = 100 \\times 28 = 2800\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 750W is used for 4 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.188kWh",
+      "6kWh",
+      "3000kWh",
+      "3kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{750}{1000} \\times 4 = 3\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 2Ω resistor carrying a current of 10A.",
+    "options": [
+      "200W",
+      "20W",
+      "0.02W",
+      "400W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 10^{2} \\times 2 = 100 \\times 2 = 200\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 6A flows through a device with 59V across it.",
+    "options": [
+      "708W",
+      "9.83W",
+      "354W",
+      "65W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 6 \\times 59 = 354\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 5 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N25000",
+      "N0.5",
+      "N25",
+      "N50"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 5 = 0.5\\)kWh\n\nCost \\(= 0.5 \\times 50 = 25\\)\n\nSo the cost is N25.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 750W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.25kWh",
+      "2250kWh",
+      "2.25kWh",
+      "4.5kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{750}{1000} \\times 3 = 2.25\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 11A flows through a device with 26V across it.",
+    "options": [
+      "37W",
+      "572W",
+      "2.36W",
+      "286W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 11 \\times 26 = 286\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1000W is used for 12 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.083kWh",
+      "12kWh",
+      "24kWh",
+      "12000kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1000}{1000} \\times 12 = 12\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 4 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.125kWh",
+      "4kWh",
+      "2kWh",
+      "2000kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 4 = 2\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 10A flows through a device with 203V across it.",
+    "options": [
+      "2030W",
+      "213W",
+      "4060W",
+      "20.3W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 10 \\times 203 = 2030\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 10 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "40kWh",
+      "0.2kWh",
+      "20000kWh",
+      "20kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 10 = 20\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 298W device operating for 399 seconds.",
+    "options": [
+      "237804J",
+      "697J",
+      "118902J",
+      "0.75J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 298 \\times 399 = 118902\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 9 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "4.5kWh",
+      "0.056kWh",
+      "9kWh",
+      "4500kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 9 = 4.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 245W device operating for 285 seconds.",
+    "options": [
+      "0.86J",
+      "69825J",
+      "139650J",
+      "530J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 245 \\times 285 = 69825\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 8 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N300",
+      "N600",
+      "N12",
+      "N300000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 8 = 12\\)kWh\n\nCost \\(= 12 \\times 25 = 300\\)\n\nSo the cost is N300.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 276W device operating for 418 seconds.",
+    "options": [
+      "694J",
+      "0.66J",
+      "115368J",
+      "230736J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 276 \\times 418 = 115368\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 249W device operating for 107 seconds.",
+    "options": [
+      "26643J",
+      "53286J",
+      "356J",
+      "2.33J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 249 \\times 107 = 26643\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 7 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N70",
+      "N140",
+      "N7",
+      "N70000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 7 = 7\\)kWh\n\nCost \\(= 7 \\times 10 = 70\\)\n\nSo the cost is N70.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 14Ω resistor carrying a current of 9A.",
+    "options": [
+      "1134W",
+      "2268W",
+      "126W",
+      "0.17W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 9^{2} \\times 14 = 81 \\times 14 = 1134\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 475W device operating for 453 seconds.",
+    "options": [
+      "430350J",
+      "1.05J",
+      "928J",
+      "215175J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 475 \\times 453 = 215175\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 8 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.8kWh",
+      "0.013kWh",
+      "1.6kWh",
+      "800kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 8 = 0.8\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 2A flows through a device with 225V across it.",
+    "options": [
+      "227W",
+      "900W",
+      "450W",
+      "112.5W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 2 \\times 225 = 450\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 4 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N4",
+      "N400",
+      "N200000",
+      "N200"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 4 = 4\\)kWh\n\nCost \\(= 4 \\times 50 = 200\\)\n\nSo the cost is N200.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 25Ω resistor carrying a current of 3A.",
+    "options": [
+      "450W",
+      "225W",
+      "2.78W",
+      "75W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 3^{2} \\times 25 = 9 \\times 25 = 225\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 14A flows through a device with 53V across it.",
+    "options": [
+      "67W",
+      "742W",
+      "1484W",
+      "3.79W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 14 \\times 53 = 742\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 750W is used for 6 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.125kWh",
+      "4.5kWh",
+      "9kWh",
+      "4500kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{750}{1000} \\times 6 = 4.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 11A flows through a device with 65V across it.",
+    "options": [
+      "76W",
+      "715W",
+      "5.91W",
+      "1430W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 11 \\times 65 = 715\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 431W device operating for 597 seconds.",
+    "options": [
+      "0.72J",
+      "514614J",
+      "1028J",
+      "257307J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 431 \\times 597 = 257307\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 2 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N10000",
+      "N0.2",
+      "N10",
+      "N20"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 2 = 0.2\\)kWh\n\nCost \\(= 0.2 \\times 50 = 10\\)\n\nSo the cost is N10.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.667kWh",
+      "6000kWh",
+      "12kWh",
+      "6kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 3 = 6\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 404W device operating for 536 seconds.",
+    "options": [
+      "940J",
+      "216544J",
+      "0.75J",
+      "433088J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 404 \\times 536 = 216544\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 15A flows through a device with 223V across it.",
+    "options": [
+      "238W",
+      "3345W",
+      "6690W",
+      "14.87W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 15 \\times 223 = 3345\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 32Ω resistor carrying a current of 10A.",
+    "options": [
+      "0.32W",
+      "6400W",
+      "3200W",
+      "320W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 10^{2} \\times 32 = 100 \\times 32 = 3200\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 65W device operating for 18 seconds.",
+    "options": [
+      "3.61J",
+      "2340J",
+      "83J",
+      "1170J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 65 \\times 18 = 1170\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 10A flows through a device with 60V across it.",
+    "options": [
+      "600W",
+      "70W",
+      "1200W",
+      "6W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 10 \\times 60 = 600\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 6 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "12kWh",
+      "24kWh",
+      "12000kWh",
+      "0.333kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 6 = 12\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 12 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "2400kWh",
+      "2.4kWh",
+      "4.8kWh",
+      "0.017kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 12 = 2.4\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 47Ω resistor carrying a current of 4A.",
+    "options": [
+      "1504W",
+      "188W",
+      "752W",
+      "2.94W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 4^{2} \\times 47 = 16 \\times 47 = 752\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 475W device operating for 527 seconds.",
+    "options": [
+      "500650J",
+      "0.9J",
+      "1002J",
+      "250325J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 475 \\times 527 = 250325\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 6A flows through a device with 154V across it.",
+    "options": [
+      "1848W",
+      "160W",
+      "924W",
+      "25.67W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 6 \\times 154 = 924\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 14A flows through a device with 106V across it.",
+    "options": [
+      "2968W",
+      "120W",
+      "1484W",
+      "7.57W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 14 \\times 106 = 1484\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 23Ω resistor carrying a current of 2A.",
+    "options": [
+      "92W",
+      "5.75W",
+      "46W",
+      "184W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 2^{2} \\times 23 = 4 \\times 23 = 92\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 3A flows through a device with 132V across it.",
+    "options": [
+      "44W",
+      "792W",
+      "135W",
+      "396W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 3 \\times 132 = 396\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 257W device operating for 301 seconds.",
+    "options": [
+      "154714J",
+      "0.85J",
+      "77357J",
+      "558J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 257 \\times 301 = 77357\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 371W device operating for 116 seconds.",
+    "options": [
+      "43036J",
+      "3.2J",
+      "487J",
+      "86072J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 371 \\times 116 = 43036\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 9 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N90",
+      "N180",
+      "N90000",
+      "N4.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 9 = 4.5\\)kWh\n\nCost \\(= 4.5 \\times 20 = 90\\)\n\nSo the cost is N90.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 15A flows through a device with 44V across it.",
+    "options": [
+      "2.93W",
+      "59W",
+      "660W",
+      "1320W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 15 \\times 44 = 660\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 276W device operating for 503 seconds.",
+    "options": [
+      "138828J",
+      "277656J",
+      "779J",
+      "0.55J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 276 \\times 503 = 138828\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 100W device operating for 152 seconds.",
+    "options": [
+      "15200J",
+      "252J",
+      "30400J",
+      "0.66J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 100 \\times 152 = 15200\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 3A flows through a device with 102V across it.",
+    "options": [
+      "34W",
+      "612W",
+      "306W",
+      "105W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 3 \\times 102 = 306\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 13A flows through a device with 213V across it.",
+    "options": [
+      "5538W",
+      "226W",
+      "2769W",
+      "16.39W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 13 \\times 213 = 2769\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 8A flows through a device with 68V across it.",
+    "options": [
+      "544W",
+      "76W",
+      "1088W",
+      "8.5W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 8 \\times 68 = 544\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 27Ω resistor carrying a current of 12A.",
+    "options": [
+      "324W",
+      "7776W",
+      "3888W",
+      "0.19W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 27 = 144 \\times 27 = 3888\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 6 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "3000kWh",
+      "6kWh",
+      "0.083kWh",
+      "3kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 6 = 3\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 8Ω resistor carrying a current of 11A.",
+    "options": [
+      "968W",
+      "88W",
+      "0.07W",
+      "1936W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 8 = 121 \\times 8 = 968\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 269W device operating for 580 seconds.",
+    "options": [
+      "156020J",
+      "312040J",
+      "849J",
+      "0.46J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 269 \\times 580 = 156020\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 6 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N60000",
+      "N60",
+      "N3",
+      "N120"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 6 = 3\\)kWh\n\nCost \\(= 3 \\times 20 = 60\\)\n\nSo the cost is N60.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 201W device operating for 201 seconds.",
+    "options": [
+      "1J",
+      "40401J",
+      "402J",
+      "80802J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 201 \\times 201 = 40401\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 2 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N200",
+      "N2",
+      "N100",
+      "N100000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 2 = 2\\)kWh\n\nCost \\(= 2 \\times 50 = 100\\)\n\nSo the cost is N100.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 6 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N0.6",
+      "N12",
+      "N12000",
+      "N24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 6 = 0.6\\)kWh\n\nCost \\(= 0.6 \\times 20 = 12\\)\n\nSo the cost is N12.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 271W device operating for 575 seconds.",
+    "options": [
+      "311650J",
+      "0.47J",
+      "846J",
+      "155825J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 271 \\times 575 = 155825\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 100W bulb is used for 2 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N4",
+      "N8",
+      "N4000",
+      "N0.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{100}{1000} \\times 2 = 0.2\\)kWh\n\nCost \\(= 0.2 \\times 20 = 4\\)\n\nSo the cost is N4.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 40Ω resistor carrying a current of 12A.",
+    "options": [
+      "5760W",
+      "0.28W",
+      "11520W",
+      "480W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 40 = 144 \\times 40 = 5760\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 139W device operating for 170 seconds.",
+    "options": [
+      "23630J",
+      "0.82J",
+      "47260J",
+      "309J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 139 \\times 170 = 23630\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 3Ω resistor carrying a current of 11A.",
+    "options": [
+      "363W",
+      "726W",
+      "0.03W",
+      "33W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 3 = 121 \\times 3 = 363\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 308W device operating for 72 seconds.",
+    "options": [
+      "22176J",
+      "4.28J",
+      "44352J",
+      "380J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 308 \\times 72 = 22176\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 3 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N60",
+      "N30000",
+      "N30",
+      "N3"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 3 = 3\\)kWh\n\nCost \\(= 3 \\times 10 = 30\\)\n\nSo the cost is N30.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 13A flows through a device with 230V across it.",
+    "options": [
+      "243W",
+      "5980W",
+      "17.69W",
+      "2990W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 13 \\times 230 = 2990\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 11A flows through a device with 82V across it.",
+    "options": [
+      "93W",
+      "902W",
+      "7.46W",
+      "1804W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 11 \\times 82 = 902\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 29Ω resistor carrying a current of 12A.",
+    "options": [
+      "4176W",
+      "348W",
+      "0.2W",
+      "8352W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 29 = 144 \\times 29 = 4176\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 39Ω resistor carrying a current of 6A.",
+    "options": [
+      "2808W",
+      "1404W",
+      "1.08W",
+      "234W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 39 = 36 \\times 39 = 1404\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 50Ω resistor carrying a current of 5A.",
+    "options": [
+      "2W",
+      "1250W",
+      "250W",
+      "2500W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 50 = 25 \\times 50 = 1250\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 12Ω resistor carrying a current of 6A.",
+    "options": [
+      "432W",
+      "864W",
+      "72W",
+      "0.33W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 12 = 36 \\times 12 = 432\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 1000W is used for 8 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "16kWh",
+      "8000kWh",
+      "0.125kWh",
+      "8kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{1000}{1000} \\times 8 = 8\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 8V across it.",
+    "options": [
+      "2W",
+      "12W",
+      "64W",
+      "32W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 8 = 32\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 115W device operating for 17 seconds.",
+    "options": [
+      "1955J",
+      "6.77J",
+      "3910J",
+      "132J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 115 \\times 17 = 1955\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 25Ω resistor carrying a current of 12A.",
+    "options": [
+      "7200W",
+      "300W",
+      "3600W",
+      "0.17W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 25 = 144 \\times 25 = 3600\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 210V across it.",
+    "options": [
+      "1680W",
+      "840W",
+      "52.5W",
+      "214W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 210 = 840\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 17A flows through a device with 108V across it.",
+    "options": [
+      "3672W",
+      "1836W",
+      "6.35W",
+      "125W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 17 \\times 108 = 1836\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 4 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N300000",
+      "N300",
+      "N6",
+      "N600"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 4 = 6\\)kWh\n\nCost \\(= 6 \\times 50 = 300\\)\n\nSo the cost is N300.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 2000W is used for 2 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "8kWh",
+      "4kWh",
+      "1kWh",
+      "4000kWh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{2000}{1000} \\times 2 = 4\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 5A flows through a device with 201V across it.",
+    "options": [
+      "1005W",
+      "40.2W",
+      "206W",
+      "2010W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 5 \\times 201 = 1005\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 24W device operating for 398 seconds.",
+    "options": [
+      "19104J",
+      "9552J",
+      "0.06J",
+      "422J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 24 \\times 398 = 9552\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 42Ω resistor carrying a current of 6A.",
+    "options": [
+      "1512W",
+      "3024W",
+      "1.17W",
+      "252W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 42 = 36 \\times 42 = 1512\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 6 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N180",
+      "N90",
+      "N90000",
+      "N9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 6 = 9\\)kWh\n\nCost \\(= 9 \\times 10 = 90\\)\n\nSo the cost is N90.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 341W device operating for 509 seconds.",
+    "options": [
+      "850J",
+      "347138J",
+      "173569J",
+      "0.67J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 341 \\times 509 = 173569\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 36Ω resistor carrying a current of 2A.",
+    "options": [
+      "144W",
+      "288W",
+      "72W",
+      "9W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 2^{2} \\times 36 = 4 \\times 36 = 144\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 3 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N30000",
+      "N60",
+      "N0.6",
+      "N30"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 3 = 0.6\\)kWh\n\nCost \\(= 0.6 \\times 50 = 30\\)\n\nSo the cost is N30.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 79W device operating for 344 seconds.",
+    "options": [
+      "27176J",
+      "423J",
+      "54352J",
+      "0.23J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 79 \\times 344 = 27176\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 10Ω resistor carrying a current of 5A.",
+    "options": [
+      "50W",
+      "500W",
+      "250W",
+      "0.4W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 10 = 25 \\times 10 = 250\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 18A flows through a device with 53V across it.",
+    "options": [
+      "1908W",
+      "954W",
+      "2.94W",
+      "71W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 18 \\times 53 = 954\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 200W is used for 7 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "1400kWh",
+      "2.8kWh",
+      "1.4kWh",
+      "0.029kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{200}{1000} \\times 7 = 1.4\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 8Ω resistor carrying a current of 9A.",
+    "options": [
+      "648W",
+      "1296W",
+      "72W",
+      "0.1W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 9^{2} \\times 8 = 81 \\times 8 = 648\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 5 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.5kWh",
+      "0.02kWh",
+      "500kWh",
+      "1kWh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 5 = 0.5\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 30W device operating for 86 seconds.",
+    "options": [
+      "2580J",
+      "116J",
+      "0.35J",
+      "5160J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 30 \\times 86 = 2580\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 17A flows through a device with 44V across it.",
+    "options": [
+      "748W",
+      "2.59W",
+      "61W",
+      "1496W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 17 \\times 44 = 748\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 29W device operating for 105 seconds.",
+    "options": [
+      "3045J",
+      "134J",
+      "6090J",
+      "0.28J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 29 \\times 105 = 3045\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 15A flows through a device with 153V across it.",
+    "options": [
+      "4590W",
+      "168W",
+      "2295W",
+      "10.2W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 15 \\times 153 = 2295\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 45Ω resistor carrying a current of 7A.",
+    "options": [
+      "4410W",
+      "0.92W",
+      "2205W",
+      "315W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 7^{2} \\times 45 = 49 \\times 45 = 2205\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 15A flows through a device with 56V across it.",
+    "options": [
+      "71W",
+      "1680W",
+      "840W",
+      "3.73W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 15 \\times 56 = 840\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 137W device operating for 411 seconds.",
+    "options": [
+      "112614J",
+      "0.33J",
+      "548J",
+      "56307J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 137 \\times 411 = 56307\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 17V across it.",
+    "options": [
+      "4.25W",
+      "68W",
+      "136W",
+      "21W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 17 = 68\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1500W bulb is used for 6 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N450000",
+      "N900",
+      "N9",
+      "N450"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{1500}{1000} \\times 6 = 9\\)kWh\n\nCost \\(= 9 \\times 50 = 450\\)\n\nSo the cost is N450.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 36Ω resistor carrying a current of 7A.",
+    "options": [
+      "252W",
+      "0.74W",
+      "1764W",
+      "3528W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 7^{2} \\times 36 = 49 \\times 36 = 1764\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 4 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N0.8",
+      "N16000",
+      "N32",
+      "N16"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 4 = 0.8\\)kWh\n\nCost \\(= 0.8 \\times 20 = 16\\)\n\nSo the cost is N16.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 5 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N50",
+      "N2.5",
+      "N25",
+      "N25000"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 5 = 2.5\\)kWh\n\nCost \\(= 2.5 \\times 10 = 25\\)\n\nSo the cost is N25.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 2 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N8",
+      "N8000",
+      "N0.4",
+      "N16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 2 = 0.4\\)kWh\n\nCost \\(= 0.4 \\times 20 = 8\\)\n\nSo the cost is N8.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 8A flows through a device with 146V across it.",
+    "options": [
+      "1168W",
+      "154W",
+      "2336W",
+      "18.25W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 8 \\times 146 = 1168\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 233W device operating for 70 seconds.",
+    "options": [
+      "3.33J",
+      "16310J",
+      "303J",
+      "32620J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 233 \\times 70 = 16310\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 4 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N80",
+      "N40",
+      "N4",
+      "N40000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 4 = 4\\)kWh\n\nCost \\(= 4 \\times 10 = 40\\)\n\nSo the cost is N40.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 77W device operating for 115 seconds.",
+    "options": [
+      "17710J",
+      "8855J",
+      "0.67J",
+      "192J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 77 \\times 115 = 8855\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 238W device operating for 153 seconds.",
+    "options": [
+      "72828J",
+      "391J",
+      "36414J",
+      "1.56J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 238 \\times 153 = 36414\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 50W device operating for 206 seconds.",
+    "options": [
+      "0.24J",
+      "20600J",
+      "10300J",
+      "256J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 50 \\times 206 = 10300\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 45Ω resistor carrying a current of 2A.",
+    "options": [
+      "11.25W",
+      "180W",
+      "90W",
+      "360W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 2^{2} \\times 45 = 4 \\times 45 = 180\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 10 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.01kWh",
+      "2kWh",
+      "1000kWh",
+      "1kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 10 = 1\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 13A flows through a device with 86V across it.",
+    "options": [
+      "1118W",
+      "6.62W",
+      "99W",
+      "2236W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 13 \\times 86 = 1118\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 305W device operating for 468 seconds.",
+    "options": [
+      "142740J",
+      "0.65J",
+      "285480J",
+      "773J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 305 \\times 468 = 142740\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 34Ω resistor carrying a current of 7A.",
+    "options": [
+      "1666W",
+      "238W",
+      "0.69W",
+      "3332W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 7^{2} \\times 34 = 49 \\times 34 = 1666\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 5 hours. If electrical energy costs N50 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N50",
+      "N50000",
+      "N100",
+      "N1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 5 = 1\\)kWh\n\nCost \\(= 1 \\times 50 = 50\\)\n\nSo the cost is N50.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 55W device operating for 338 seconds.",
+    "options": [
+      "18590J",
+      "0.16J",
+      "37180J",
+      "393J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 55 \\times 338 = 18590\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 20A flows through a device with 144V across it.",
+    "options": [
+      "7.2W",
+      "164W",
+      "2880W",
+      "5760W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 20 \\times 144 = 2880\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 5 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N10000",
+      "N20",
+      "N1",
+      "N10"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 5 = 1\\)kWh\n\nCost \\(= 1 \\times 10 = 10\\)\n\nSo the cost is N10.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 10A flows through a device with 55V across it.",
+    "options": [
+      "65W",
+      "550W",
+      "5.5W",
+      "1100W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 10 \\times 55 = 550\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 100W is used for 12 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "1200kWh",
+      "2.4kWh",
+      "1.2kWh",
+      "0.008kWh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{100}{1000} \\times 12 = 1.2\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 43Ω resistor carrying a current of 6A.",
+    "options": [
+      "258W",
+      "3096W",
+      "1548W",
+      "1.19W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 6^{2} \\times 43 = 36 \\times 43 = 1548\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 13A flows through a device with 231V across it.",
+    "options": [
+      "3003W",
+      "6006W",
+      "244W",
+      "17.77W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 13 \\times 231 = 3003\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 32Ω resistor carrying a current of 5A.",
+    "options": [
+      "160W",
+      "1.28W",
+      "1600W",
+      "800W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 5^{2} \\times 32 = 25 \\times 32 = 800\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 17A flows through a device with 52V across it.",
+    "options": [
+      "1768W",
+      "884W",
+      "3.06W",
+      "69W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 17 \\times 52 = 884\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 1000W bulb is used for 6 hours. If electrical energy costs N20 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N6",
+      "N120",
+      "N240",
+      "N120000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{1000}{1000} \\times 6 = 6\\)kWh\n\nCost \\(= 6 \\times 20 = 120\\)\n\nSo the cost is N120.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "An electrical appliance rated 500W is used for 2 hours. Calculate the energy consumed in kilowatt-hours.",
+    "options": [
+      "0.25kWh",
+      "2kWh",
+      "1000kWh",
+      "1kWh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= P \\times t\\), with power in kilowatts.\n\n\\(= \\frac{500}{1000} \\times 2 = 1\\)kWh",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 7A flows through a device with 136V across it.",
+    "options": [
+      "952W",
+      "1904W",
+      "143W",
+      "19.43W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 7 \\times 136 = 952\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 18A flows through a device with 9V across it.",
+    "options": [
+      "0.5W",
+      "27W",
+      "324W",
+      "162W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = IV\\)\n\n\\(= 18 \\times 9 = 162\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 476W device operating for 104 seconds.",
+    "options": [
+      "99008J",
+      "580J",
+      "49504J",
+      "4.58J"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 476 \\times 104 = 49504\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 31Ω resistor carrying a current of 11A.",
+    "options": [
+      "7502W",
+      "0.26W",
+      "3751W",
+      "341W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 31 = 121 \\times 31 = 3751\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 7A flows through a device with 29V across it.",
+    "options": [
+      "203W",
+      "406W",
+      "36W",
+      "4.14W"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(P = IV\\)\n\n\\(= 7 \\times 29 = 203\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 9 hours. If electrical energy costs N25 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N112.5",
+      "N112500",
+      "N225",
+      "N4.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 9 = 4.5\\)kWh\n\nCost \\(= 4.5 \\times 25 = 112.5\\)\n\nSo the cost is N112.5.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 200W bulb is used for 4 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N0.8",
+      "N16",
+      "N8000",
+      "N8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Energy \\(= \\frac{200}{1000} \\times 4 = 0.8\\)kWh\n\nCost \\(= 0.8 \\times 10 = 8\\)\n\nSo the cost is N8.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 9A flows through a device with 162V across it.",
+    "options": [
+      "18W",
+      "1458W",
+      "2916W",
+      "171W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 9 \\times 162 = 1458\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 174W device operating for 222 seconds.",
+    "options": [
+      "38628J",
+      "0.78J",
+      "77256J",
+      "396J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 174 \\times 222 = 38628\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 14Ω resistor carrying a current of 12A.",
+    "options": [
+      "168W",
+      "2016W",
+      "4032W",
+      "0.1W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 12^{2} \\times 14 = 144 \\times 14 = 2016\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 11A flows through a device with 108V across it.",
+    "options": [
+      "9.82W",
+      "2376W",
+      "1188W",
+      "119W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 11 \\times 108 = 1188\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 411W device operating for 176 seconds.",
+    "options": [
+      "2.34J",
+      "72336J",
+      "144672J",
+      "587J"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 411 \\times 176 = 72336\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 9Ω resistor carrying a current of 11A.",
+    "options": [
+      "99W",
+      "2178W",
+      "0.07W",
+      "1089W"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 9 = 121 \\times 9 = 1089\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 119W device operating for 541 seconds.",
+    "options": [
+      "0.22J",
+      "128758J",
+      "660J",
+      "64379J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 119 \\times 541 = 64379\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 361W device operating for 95 seconds.",
+    "options": [
+      "456J",
+      "68590J",
+      "3.8J",
+      "34295J"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 361 \\times 95 = 34295\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 442W device operating for 478 seconds.",
+    "options": [
+      "211276J",
+      "0.93J",
+      "422552J",
+      "920J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 442 \\times 478 = 211276\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 4A flows through a device with 179V across it.",
+    "options": [
+      "44.75W",
+      "716W",
+      "183W",
+      "1432W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = IV\\)\n\n\\(= 4 \\times 179 = 716\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A 500W bulb is used for 8 hours. If electrical energy costs N10 per kilowatt-hour, calculate the cost of running the bulb.",
+    "options": [
+      "N4",
+      "N40",
+      "N80",
+      "N40000"
+    ],
+    "correctIndex": 1,
+    "explanation": "Energy \\(= \\frac{500}{1000} \\times 8 = 4\\)kWh\n\nCost \\(= 4 \\times 10 = 40\\)\n\nSo the cost is N40.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 14A flows through a device with 61V across it.",
+    "options": [
+      "75W",
+      "4.36W",
+      "854W",
+      "1708W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 14 \\times 61 = 854\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated in a 23Ω resistor carrying a current of 11A.",
+    "options": [
+      "0.19W",
+      "2783W",
+      "5566W",
+      "253W"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(P = I^{2}R\\)\n\n\\(= 11^{2} \\times 23 = 121 \\times 23 = 2783\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 18A flows through a device with 203V across it.",
+    "options": [
+      "221W",
+      "7308W",
+      "3654W",
+      "11.28W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 18 \\times 203 = 3654\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the electrical energy consumed by a 151W device operating for 111 seconds.",
+    "options": [
+      "16761J",
+      "262J",
+      "1.36J",
+      "33522J"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(E = Pt\\)\n\n\\(= 151 \\times 111 = 16761\\)J",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Calculate the power dissipated when a current of 20A flows through a device with 122V across it.",
+    "options": [
+      "142W",
+      "6.1W",
+      "2440W",
+      "4880W"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(P = IV\\)\n\n\\(= 20 \\times 122 = 2440\\)W",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "QwVTcH1S7AJ1IdPxOf0H",
+    "topicId": "55LiUanF7a54dTMD3SMl",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]

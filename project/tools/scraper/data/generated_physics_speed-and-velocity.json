@@ -1,0 +1,5402 @@
+[
+  {
+    "text": "Which quantity is defined as the rate of change of displacement?",
+    "options": [
+      "Speed",
+      "Velocity",
+      "Distance",
+      "Acceleration"
+    ],
+    "correctIndex": 1,
+    "explanation": "Velocity is the rate of change of displacement with time. Speed is the rate of change of distance, and acceleration is the rate of change of velocity.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 460m in 20 seconds. Calculate its average speed.",
+    "options": [
+      "21.9m/s",
+      "23m/s",
+      "480m/s",
+      "460m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{460}{20} = 23\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 189m in 9 seconds. Calculate its average speed.",
+    "options": [
+      "21m/s",
+      "198m/s",
+      "18.9m/s",
+      "189m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{189}{9} = 21\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 117m in 9 seconds. Calculate its average speed.",
+    "options": [
+      "11.7m/s",
+      "13m/s",
+      "126m/s",
+      "117m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{117}{9} = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 34m/s to kilometres per hour.",
+    "options": [
+      "122.4km/h",
+      "34000km/h",
+      "37.6km/h",
+      "9.44km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(34 \\times 3.6 = 122.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 10m/s to cover 30m?",
+    "options": [
+      "5s",
+      "3s",
+      "30s",
+      "10s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{30}{10} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 9m/s to kilometres per hour.",
+    "options": [
+      "32.4km/h",
+      "12.6km/h",
+      "9000km/h",
+      "2.5km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(9 \\times 3.6 = 32.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 118km in 3 hours and then 27km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "29km/h",
+      "34km/h",
+      "39.33km/h",
+      "26.42km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{118 + 27}{3 + 2} = \\frac{145}{5} = 29\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 176m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "11m/s",
+      "10.35m/s",
+      "192m/s",
+      "176m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{176}{16} = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 272m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "16m/s",
+      "272m/s",
+      "288m/s",
+      "17m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{272}{16} = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 22m/s to cover 220m?",
+    "options": [
+      "12s",
+      "22s",
+      "10s",
+      "220s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{220}{22} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 28km in 5 hours and then 91km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "5.6km/h",
+      "14.18km/h",
+      "13.22km/h",
+      "18.22km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{28 + 91}{5 + 4} = \\frac{119}{9} = 13.22\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 32m/s to cover 192m?",
+    "options": [
+      "8s",
+      "192s",
+      "32s",
+      "6s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{192}{32} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 20m/s to cover 60m?",
+    "options": [
+      "3s",
+      "20s",
+      "5s",
+      "60s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{60}{20} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "What is the difference between speed and velocity?",
+    "options": [
+      "Speed has direction while velocity does not",
+      "Speed is a scalar while velocity is a vector",
+      "Speed is a vector while velocity is a scalar",
+      "They are exactly the same quantity"
+    ],
+    "correctIndex": 1,
+    "explanation": "Speed is the rate of change of distance and has magnitude only. Velocity is the rate of change of displacement and has both magnitude and direction.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 31km in 4 hours and then 56km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "14.5km/h",
+      "19.5km/h",
+      "7.75km/h",
+      "17.88km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{31 + 56}{4 + 2} = \\frac{87}{6} = 14.5\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 15m/s to cover 90m?",
+    "options": [
+      "90s",
+      "6s",
+      "15s",
+      "8s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{90}{15} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 38km in 4 hours and then 91km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "50.25km/h",
+      "9.5km/h",
+      "25.8km/h",
+      "30.8km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{38 + 91}{4 + 1} = \\frac{129}{5} = 25.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 38m/s to cover 266m?",
+    "options": [
+      "9s",
+      "266s",
+      "38s",
+      "7s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{266}{38} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 180m in 9 seconds. Calculate its average speed.",
+    "options": [
+      "20m/s",
+      "180m/s",
+      "189m/s",
+      "18m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{180}{9} = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 162km/h to metres per second.",
+    "options": [
+      "45m/s",
+      "50m/s",
+      "162m/s",
+      "583.2m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(162 \\div 3.6 = 45\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 49km in 2 hours and then 46km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "24.5km/h",
+      "15.83km/h",
+      "18km/h",
+      "20.83km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{49 + 46}{2 + 4} = \\frac{95}{6} = 15.83\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 35m/s to cover 315m?",
+    "options": [
+      "315s",
+      "11s",
+      "9s",
+      "35s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{315}{35} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body moves round a circular track and returns to its starting point. What is its average velocity?",
+    "options": [
+      "Equal to its average speed",
+      "Zero",
+      "Equal to the circumference divided by time",
+      "Cannot be determined"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average velocity is total displacement divided by time. Returning to the starting point gives zero displacement, so the average velocity is zero, even though the average speed is not.",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 570m in 19 seconds. Calculate its average speed.",
+    "options": [
+      "28.5m/s",
+      "570m/s",
+      "589m/s",
+      "30m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{570}{19} = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 26m in 2 seconds. Calculate its average speed.",
+    "options": [
+      "26m/s",
+      "8.67m/s",
+      "28m/s",
+      "13m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{26}{2} = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 44m/s to kilometres per hour.",
+    "options": [
+      "47.6km/h",
+      "12.22km/h",
+      "44000km/h",
+      "158.4km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(44 \\times 3.6 = 158.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 5m/s to kilometres per hour.",
+    "options": [
+      "18km/h",
+      "5000km/h",
+      "1.39km/h",
+      "8.6km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(5 \\times 3.6 = 18\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 36m/s to cover 288m?",
+    "options": [
+      "8s",
+      "288s",
+      "10s",
+      "36s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{288}{36} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 63km in 3 hours and then 69km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "16.5km/h",
+      "17.4km/h",
+      "21.5km/h",
+      "21km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{63 + 69}{3 + 5} = \\frac{132}{8} = 16.5\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 18km/h to metres per second.",
+    "options": [
+      "64.8m/s",
+      "5m/s",
+      "18m/s",
+      "10m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(18 \\div 3.6 = 5\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 15m/s to kilometres per hour.",
+    "options": [
+      "4.17km/h",
+      "18.6km/h",
+      "54km/h",
+      "15000km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(15 \\times 3.6 = 54\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 126km/h to metres per second.",
+    "options": [
+      "40m/s",
+      "453.6m/s",
+      "35m/s",
+      "126m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(126 \\div 3.6 = 35\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 216km/h to metres per second.",
+    "options": [
+      "65m/s",
+      "777.6m/s",
+      "216m/s",
+      "60m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(216 \\div 3.6 = 60\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 228m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "32.57m/s",
+      "228m/s",
+      "38m/s",
+      "234m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{228}{6} = 38\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 444m in 12 seconds. Calculate its average speed.",
+    "options": [
+      "444m/s",
+      "37m/s",
+      "34.15m/s",
+      "456m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{444}{12} = 37\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 336m in 14 seconds. Calculate its average speed.",
+    "options": [
+      "336m/s",
+      "22.4m/s",
+      "350m/s",
+      "24m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{336}{14} = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 91km in 1 hour and then 113km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "91km/h",
+      "51km/h",
+      "56km/h",
+      "64.33km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{91 + 113}{1 + 3} = \\frac{204}{4} = 51\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 22km in 1 hour and then 110km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "24.75km/h",
+      "26.4km/h",
+      "31.4km/h",
+      "22km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{22 + 110}{1 + 4} = \\frac{132}{5} = 26.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 10m/s to kilometres per hour.",
+    "options": [
+      "2.78km/h",
+      "36km/h",
+      "10000km/h",
+      "13.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(10 \\times 3.6 = 36\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 26km in 5 hours and then 62km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "5.2km/h",
+      "11km/h",
+      "12.93km/h",
+      "16km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{26 + 62}{5 + 3} = \\frac{88}{8} = 11\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 31m/s to cover 186m?",
+    "options": [
+      "31s",
+      "6s",
+      "8s",
+      "186s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{186}{31} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 39m/s to cover 117m?",
+    "options": [
+      "5s",
+      "3s",
+      "39s",
+      "117s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{117}{39} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 26m/s to kilometres per hour.",
+    "options": [
+      "7.22km/h",
+      "93.6km/h",
+      "26000km/h",
+      "29.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(26 \\times 3.6 = 93.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 144km/h to metres per second.",
+    "options": [
+      "144m/s",
+      "40m/s",
+      "45m/s",
+      "518.4m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(144 \\div 3.6 = 40\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 111km in 5 hours and then 107km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "22.2km/h",
+      "64.6km/h",
+      "36.33km/h",
+      "41.33km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{111 + 107}{5 + 1} = \\frac{218}{6} = 36.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 36km/h to metres per second.",
+    "options": [
+      "15m/s",
+      "129.6m/s",
+      "10m/s",
+      "36m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(36 \\div 3.6 = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 57m/s to kilometres per hour.",
+    "options": [
+      "57000km/h",
+      "60.6km/h",
+      "15.83km/h",
+      "205.2km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(57 \\times 3.6 = 205.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 18m/s to kilometres per hour.",
+    "options": [
+      "21.6km/h",
+      "64.8km/h",
+      "18000km/h",
+      "5km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(18 \\times 3.6 = 64.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 43m/s to kilometres per hour.",
+    "options": [
+      "11.94km/h",
+      "154.8km/h",
+      "46.6km/h",
+      "43000km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(43 \\times 3.6 = 154.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 16m/s to cover 192m?",
+    "options": [
+      "14s",
+      "192s",
+      "16s",
+      "12s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{192}{16} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 72km/h to metres per second.",
+    "options": [
+      "259.2m/s",
+      "20m/s",
+      "25m/s",
+      "72m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(72 \\div 3.6 = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 50m/s to kilometres per hour.",
+    "options": [
+      "53.6km/h",
+      "50000km/h",
+      "180km/h",
+      "13.89km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(50 \\times 3.6 = 180\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 76m in 2 seconds. Calculate its average speed.",
+    "options": [
+      "38m/s",
+      "76m/s",
+      "78m/s",
+      "25.33m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{76}{2} = 38\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 64m in 8 seconds. Calculate its average speed.",
+    "options": [
+      "8m/s",
+      "64m/s",
+      "72m/s",
+      "7.11m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{64}{8} = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 38m/s to kilometres per hour.",
+    "options": [
+      "41.6km/h",
+      "136.8km/h",
+      "38000km/h",
+      "10.56km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(38 \\times 3.6 = 136.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 78km in 5 hours and then 118km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "22.55km/h",
+      "21.78km/h",
+      "26.78km/h",
+      "15.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{78 + 118}{5 + 4} = \\frac{196}{9} = 21.78\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 118km in 1 hour and then 43km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "58.67km/h",
+      "118km/h",
+      "69.75km/h",
+      "53.67km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{118 + 43}{1 + 2} = \\frac{161}{3} = 53.67\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 66km in 4 hours and then 31km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "18.86km/h",
+      "16.5km/h",
+      "13.42km/h",
+      "13.86km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{66 + 31}{4 + 3} = \\frac{97}{7} = 13.86\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 37m/s to kilometres per hour.",
+    "options": [
+      "133.2km/h",
+      "37000km/h",
+      "40.6km/h",
+      "10.28km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(37 \\times 3.6 = 133.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 30m in 10 seconds. Calculate its average speed.",
+    "options": [
+      "30m/s",
+      "2.73m/s",
+      "40m/s",
+      "3m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{30}{10} = 3\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 30m/s to kilometres per hour.",
+    "options": [
+      "30000km/h",
+      "8.33km/h",
+      "108km/h",
+      "33.6km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(30 \\times 3.6 = 108\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 48m/s to kilometres per hour.",
+    "options": [
+      "13.33km/h",
+      "51.6km/h",
+      "172.8km/h",
+      "48000km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(48 \\times 3.6 = 172.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 36m in 12 seconds. Calculate its average speed.",
+    "options": [
+      "36m/s",
+      "2.77m/s",
+      "3m/s",
+      "48m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{36}{12} = 3\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 77km in 1 hour and then 72km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "50.5km/h",
+      "77km/h",
+      "42.25km/h",
+      "37.25km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{77 + 72}{1 + 3} = \\frac{149}{4} = 37.25\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 22m/s to kilometres per hour.",
+    "options": [
+      "25.6km/h",
+      "6.11km/h",
+      "79.2km/h",
+      "22000km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(22 \\times 3.6 = 79.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 115km in 1 hour and then 86km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "45.2km/h",
+      "115km/h",
+      "68.25km/h",
+      "40.2km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{115 + 86}{1 + 4} = \\frac{201}{5} = 40.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 20m/s to kilometres per hour.",
+    "options": [
+      "5.56km/h",
+      "72km/h",
+      "23.6km/h",
+      "20000km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(20 \\times 3.6 = 72\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 6m/s to cover 78m?",
+    "options": [
+      "13s",
+      "6s",
+      "15s",
+      "78s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{78}{6} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 37m/s to cover 370m?",
+    "options": [
+      "10s",
+      "37s",
+      "370s",
+      "12s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{370}{37} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 119km in 4 hours and then 68km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "31.71km/h",
+      "26.21km/h",
+      "26.71km/h",
+      "29.75km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{119 + 68}{4 + 3} = \\frac{187}{7} = 26.71\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 162m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "168m/s",
+      "27m/s",
+      "23.14m/s",
+      "162m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{162}{6} = 27\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 403m in 13 seconds. Calculate its average speed.",
+    "options": [
+      "403m/s",
+      "31m/s",
+      "416m/s",
+      "28.79m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{403}{13} = 31\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 39m/s to kilometres per hour.",
+    "options": [
+      "42.6km/h",
+      "10.83km/h",
+      "39000km/h",
+      "140.4km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(39 \\times 3.6 = 140.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 85km in 1 hour and then 64km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "85km/h",
+      "53.17km/h",
+      "37.25km/h",
+      "42.25km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{85 + 64}{1 + 3} = \\frac{149}{4} = 37.25\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 102km in 1 hour and then 107km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "102km/h",
+      "39.83km/h",
+      "34.83km/h",
+      "61.7km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{102 + 107}{1 + 5} = \\frac{209}{6} = 34.83\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 27m/s to kilometres per hour.",
+    "options": [
+      "7.5km/h",
+      "27000km/h",
+      "30.6km/h",
+      "97.2km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(27 \\times 3.6 = 97.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 130m in 10 seconds. Calculate its average speed.",
+    "options": [
+      "11.82m/s",
+      "13m/s",
+      "130m/s",
+      "140m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{130}{10} = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 25m/s to cover 200m?",
+    "options": [
+      "10s",
+      "200s",
+      "25s",
+      "8s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{200}{25} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 198km/h to metres per second.",
+    "options": [
+      "198m/s",
+      "712.8m/s",
+      "60m/s",
+      "55m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(198 \\div 3.6 = 55\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 13m/s to cover 39m?",
+    "options": [
+      "39s",
+      "13s",
+      "5s",
+      "3s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{39}{13} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 360m in 18 seconds. Calculate its average speed.",
+    "options": [
+      "18.95m/s",
+      "20m/s",
+      "378m/s",
+      "360m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{360}{18} = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 85m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "17m/s",
+      "85m/s",
+      "14.17m/s",
+      "90m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{85}{5} = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 238m in 7 seconds. Calculate its average speed.",
+    "options": [
+      "238m/s",
+      "29.75m/s",
+      "34m/s",
+      "245m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{238}{7} = 34\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 42m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "6m/s",
+      "42m/s",
+      "48m/s",
+      "7m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{42}{6} = 7\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 33m/s to cover 396m?",
+    "options": [
+      "12s",
+      "396s",
+      "14s",
+      "33s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{396}{33} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 60m/s to kilometres per hour.",
+    "options": [
+      "16.67km/h",
+      "63.6km/h",
+      "60000km/h",
+      "216km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(60 \\times 3.6 = 216\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 60m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "10m/s",
+      "8.57m/s",
+      "66m/s",
+      "60m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{60}{6} = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 52m/s to kilometres per hour.",
+    "options": [
+      "187.2km/h",
+      "14.44km/h",
+      "55.6km/h",
+      "52000km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(52 \\times 3.6 = 187.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 23m/s to cover 299m?",
+    "options": [
+      "15s",
+      "13s",
+      "23s",
+      "299s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{299}{23} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 46m/s to kilometres per hour.",
+    "options": [
+      "165.6km/h",
+      "12.78km/h",
+      "46000km/h",
+      "49.6km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(46 \\times 3.6 = 165.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 17m/s to kilometres per hour.",
+    "options": [
+      "17000km/h",
+      "20.6km/h",
+      "4.72km/h",
+      "61.2km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(17 \\times 3.6 = 61.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 100km in 1 hour and then 75km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "68.75km/h",
+      "58.33km/h",
+      "100km/h",
+      "63.33km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{100 + 75}{1 + 2} = \\frac{175}{3} = 58.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 165m in 15 seconds. Calculate its average speed.",
+    "options": [
+      "11m/s",
+      "180m/s",
+      "10.31m/s",
+      "165m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{165}{15} = 11\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 49m/s to kilometres per hour.",
+    "options": [
+      "13.61km/h",
+      "176.4km/h",
+      "52.6km/h",
+      "49000km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(49 \\times 3.6 = 176.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 248m in 8 seconds. Calculate its average speed.",
+    "options": [
+      "27.56m/s",
+      "248m/s",
+      "31m/s",
+      "256m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{248}{8} = 31\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 640m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "640m/s",
+      "37.65m/s",
+      "40m/s",
+      "656m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{640}{16} = 40\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 12m/s to cover 96m?",
+    "options": [
+      "10s",
+      "12s",
+      "96s",
+      "8s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{96}{12} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 544m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "560m/s",
+      "34m/s",
+      "544m/s",
+      "32m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{544}{16} = 34\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 238m in 17 seconds. Calculate its average speed.",
+    "options": [
+      "14m/s",
+      "255m/s",
+      "13.22m/s",
+      "238m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{238}{17} = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 70km in 1 hour and then 29km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "29.75km/h",
+      "24.75km/h",
+      "39.83km/h",
+      "70km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{70 + 29}{1 + 3} = \\frac{99}{4} = 24.75\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 54km/h to metres per second.",
+    "options": [
+      "15m/s",
+      "54m/s",
+      "20m/s",
+      "194.4m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(54 \\div 3.6 = 15\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 36m/s to cover 540m?",
+    "options": [
+      "15s",
+      "36s",
+      "17s",
+      "540s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{540}{36} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 154m in 11 seconds. Calculate its average speed.",
+    "options": [
+      "154m/s",
+      "165m/s",
+      "12.83m/s",
+      "14m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{154}{11} = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 13m/s to cover 104m?",
+    "options": [
+      "104s",
+      "13s",
+      "8s",
+      "10s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{104}{13} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 51m in 3 seconds. Calculate its average speed.",
+    "options": [
+      "51m/s",
+      "17m/s",
+      "54m/s",
+      "12.75m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{51}{3} = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 109km in 4 hours and then 50km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "27.25km/h",
+      "38.63km/h",
+      "31.8km/h",
+      "36.8km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{109 + 50}{4 + 1} = \\frac{159}{5} = 31.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 88km in 4 hours and then 46km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "27.33km/h",
+      "22km/h",
+      "22.5km/h",
+      "22.33km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{88 + 46}{4 + 2} = \\frac{134}{6} = 22.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 144m in 8 seconds. Calculate its average speed.",
+    "options": [
+      "152m/s",
+      "16m/s",
+      "144m/s",
+      "18m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{144}{8} = 18\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 38m/s to cover 152m?",
+    "options": [
+      "38s",
+      "152s",
+      "6s",
+      "4s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{152}{38} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 20m/s to cover 120m?",
+    "options": [
+      "8s",
+      "20s",
+      "120s",
+      "6s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{120}{20} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 275m in 11 seconds. Calculate its average speed.",
+    "options": [
+      "25m/s",
+      "286m/s",
+      "22.92m/s",
+      "275m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{275}{11} = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 67km in 5 hours and then 85km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "25.33km/h",
+      "49.2km/h",
+      "30.33km/h",
+      "13.4km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{67 + 85}{5 + 1} = \\frac{152}{6} = 25.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 31m/s to kilometres per hour.",
+    "options": [
+      "34.6km/h",
+      "111.6km/h",
+      "31000km/h",
+      "8.61km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(31 \\times 3.6 = 111.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 32m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "48m/s",
+      "2m/s",
+      "32m/s",
+      "1.88m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{32}{16} = 2\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 38m/s to cover 570m?",
+    "options": [
+      "570s",
+      "38s",
+      "17s",
+      "15s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{570}{38} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 11m/s to cover 33m?",
+    "options": [
+      "3s",
+      "5s",
+      "33s",
+      "11s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{33}{11} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 22m/s to cover 308m?",
+    "options": [
+      "308s",
+      "14s",
+      "22s",
+      "16s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{308}{22} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 90km/h to metres per second.",
+    "options": [
+      "25m/s",
+      "90m/s",
+      "30m/s",
+      "324m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(90 \\div 3.6 = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 180km/h to metres per second.",
+    "options": [
+      "648m/s",
+      "55m/s",
+      "180m/s",
+      "50m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(180 \\div 3.6 = 50\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 109km in 1 hour and then 41km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "35km/h",
+      "109km/h",
+      "30km/h",
+      "59.63km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{109 + 41}{1 + 4} = \\frac{150}{5} = 30\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 500m in 20 seconds. Calculate its average speed.",
+    "options": [
+      "520m/s",
+      "25m/s",
+      "500m/s",
+      "23.81m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{500}{20} = 25\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 56m/s to kilometres per hour.",
+    "options": [
+      "201.6km/h",
+      "56000km/h",
+      "59.6km/h",
+      "15.56km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(56 \\times 3.6 = 201.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 216m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "36m/s",
+      "222m/s",
+      "30.86m/s",
+      "216m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{216}{6} = 36\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 32m/s to kilometres per hour.",
+    "options": [
+      "35.6km/h",
+      "32000km/h",
+      "115.2km/h",
+      "8.89km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(32 \\times 3.6 = 115.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 429m in 11 seconds. Calculate its average speed.",
+    "options": [
+      "39m/s",
+      "35.75m/s",
+      "429m/s",
+      "440m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{429}{11} = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 50km in 3 hours and then 42km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "16.67km/h",
+      "29.33km/h",
+      "23km/h",
+      "28km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{50 + 42}{3 + 1} = \\frac{92}{4} = 23\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 9m/s to cover 36m?",
+    "options": [
+      "36s",
+      "6s",
+      "4s",
+      "9s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{36}{9} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 330m in 15 seconds. Calculate its average speed.",
+    "options": [
+      "22m/s",
+      "345m/s",
+      "20.63m/s",
+      "330m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{330}{15} = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 38m/s to cover 380m?",
+    "options": [
+      "38s",
+      "12s",
+      "380s",
+      "10s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{380}{38} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 47km in 1 hour and then 74km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "47km/h",
+      "45.33km/h",
+      "42km/h",
+      "40.33km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{47 + 74}{1 + 2} = \\frac{121}{3} = 40.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 26m/s to cover 156m?",
+    "options": [
+      "6s",
+      "156s",
+      "26s",
+      "8s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{156}{26} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 40km in 4 hours and then 40km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "10km/h",
+      "11.67km/h",
+      "16.43km/h",
+      "11.43km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{40 + 40}{4 + 3} = \\frac{80}{7} = 11.43\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 29m/s to cover 87m?",
+    "options": [
+      "29s",
+      "3s",
+      "87s",
+      "5s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{87}{29} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 12m/s to cover 48m?",
+    "options": [
+      "6s",
+      "4s",
+      "12s",
+      "48s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{48}{12} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 25m/s to cover 75m?",
+    "options": [
+      "75s",
+      "25s",
+      "5s",
+      "3s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{75}{25} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 11m/s to kilometres per hour.",
+    "options": [
+      "3.06km/h",
+      "14.6km/h",
+      "11000km/h",
+      "39.6km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(11 \\times 3.6 = 39.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 13m/s to kilometres per hour.",
+    "options": [
+      "3.61km/h",
+      "46.8km/h",
+      "16.6km/h",
+      "13000km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(13 \\times 3.6 = 46.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 377m in 13 seconds. Calculate its average speed.",
+    "options": [
+      "390m/s",
+      "377m/s",
+      "29m/s",
+      "26.93m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{377}{13} = 29\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 17m/s to cover 119m?",
+    "options": [
+      "9s",
+      "7s",
+      "119s",
+      "17s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{119}{17} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 14m/s to cover 56m?",
+    "options": [
+      "56s",
+      "6s",
+      "4s",
+      "14s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{56}{14} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 24m/s to cover 216m?",
+    "options": [
+      "9s",
+      "24s",
+      "216s",
+      "11s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{216}{24} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 36m/s to kilometres per hour.",
+    "options": [
+      "10km/h",
+      "129.6km/h",
+      "36000km/h",
+      "39.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(36 \\times 3.6 = 129.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 4m/s to kilometres per hour.",
+    "options": [
+      "1.11km/h",
+      "4000km/h",
+      "14.4km/h",
+      "7.6km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(4 \\times 3.6 = 14.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 36m/s to cover 432m?",
+    "options": [
+      "12s",
+      "432s",
+      "14s",
+      "36s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{432}{36} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 73km in 1 hour and then 82km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "73km/h",
+      "46.75km/h",
+      "36km/h",
+      "31km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{73 + 82}{1 + 4} = \\frac{155}{5} = 31\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 37m/s to cover 148m?",
+    "options": [
+      "6s",
+      "4s",
+      "37s",
+      "148s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{148}{37} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 73km in 4 hours and then 45km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "18.11km/h",
+      "13.63km/h",
+      "13.11km/h",
+      "18.25km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{73 + 45}{4 + 5} = \\frac{118}{9} = 13.11\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 108km/h to metres per second.",
+    "options": [
+      "388.8m/s",
+      "30m/s",
+      "108m/s",
+      "35m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(1\\)km/h \\(= \\frac{1000}{3600}\\)m/s \\(= \\frac{1}{3.6}\\)m/s\n\n\\(108 \\div 3.6 = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 47m/s to kilometres per hour.",
+    "options": [
+      "13.06km/h",
+      "50.6km/h",
+      "47000km/h",
+      "169.2km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(47 \\times 3.6 = 169.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 28m/s to cover 252m?",
+    "options": [
+      "9s",
+      "252s",
+      "28s",
+      "11s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{252}{28} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 95km in 5 hours and then 113km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "39.67km/h",
+      "34.67km/h",
+      "19km/h",
+      "66km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{95 + 113}{5 + 1} = \\frac{208}{6} = 34.67\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 28m/s to kilometres per hour.",
+    "options": [
+      "31.6km/h",
+      "28000km/h",
+      "7.78km/h",
+      "100.8km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(28 \\times 3.6 = 100.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 87km in 5 hours and then 65km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "41.2km/h",
+      "17.4km/h",
+      "25.33km/h",
+      "30.33km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{87 + 65}{5 + 1} = \\frac{152}{6} = 25.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 34km in 2 hours and then 20km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "7.71km/h",
+      "17km/h",
+      "10.5km/h",
+      "12.71km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{34 + 20}{2 + 5} = \\frac{54}{7} = 7.71\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 18m/s to cover 234m?",
+    "options": [
+      "15s",
+      "13s",
+      "234s",
+      "18s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{234}{18} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 196m in 7 seconds. Calculate its average speed.",
+    "options": [
+      "196m/s",
+      "24.5m/s",
+      "203m/s",
+      "28m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{196}{7} = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 54m/s to kilometres per hour.",
+    "options": [
+      "194.4km/h",
+      "15km/h",
+      "57.6km/h",
+      "54000km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(54 \\times 3.6 = 194.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 27m/s to cover 405m?",
+    "options": [
+      "15s",
+      "27s",
+      "405s",
+      "17s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{405}{27} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 8m/s to cover 56m?",
+    "options": [
+      "8s",
+      "56s",
+      "9s",
+      "7s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{56}{8} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 33m/s to cover 429m?",
+    "options": [
+      "15s",
+      "13s",
+      "429s",
+      "33s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{429}{33} = 13\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 45m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "45m/s",
+      "7.5m/s",
+      "9m/s",
+      "50m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{45}{5} = 9\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 252m in 18 seconds. Calculate its average speed.",
+    "options": [
+      "14m/s",
+      "270m/s",
+      "13.26m/s",
+      "252m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{252}{18} = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 40m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "8m/s",
+      "45m/s",
+      "40m/s",
+      "6.67m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{40}{5} = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 186m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "31m/s",
+      "192m/s",
+      "186m/s",
+      "26.57m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{186}{6} = 31\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 30km in 4 hours and then 32km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "19.75km/h",
+      "12.4km/h",
+      "7.5km/h",
+      "17.4km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{30 + 32}{4 + 1} = \\frac{62}{5} = 12.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 8m/s to cover 16m?",
+    "options": [
+      "8s",
+      "2s",
+      "4s",
+      "16s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{16}{8} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 324m in 12 seconds. Calculate its average speed.",
+    "options": [
+      "336m/s",
+      "24.92m/s",
+      "27m/s",
+      "324m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{324}{12} = 27\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 29km in 3 hours and then 73km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "9.67km/h",
+      "23.08km/h",
+      "25.4km/h",
+      "20.4km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{29 + 73}{3 + 2} = \\frac{102}{5} = 20.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 684m in 19 seconds. Calculate its average speed.",
+    "options": [
+      "36m/s",
+      "684m/s",
+      "34.2m/s",
+      "703m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{684}{19} = 36\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 29m/s to cover 145m?",
+    "options": [
+      "5s",
+      "29s",
+      "145s",
+      "7s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{145}{29} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 200m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "40m/s",
+      "200m/s",
+      "33.33m/s",
+      "205m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{200}{5} = 40\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 3m/s to kilometres per hour.",
+    "options": [
+      "0.83km/h",
+      "10.8km/h",
+      "3000km/h",
+      "6.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(3 \\times 3.6 = 10.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 74km in 4 hours and then 42km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "18.5km/h",
+      "12.89km/h",
+      "13.45km/h",
+      "17.89km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{74 + 42}{4 + 5} = \\frac{116}{9} = 12.89\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 59m/s to kilometres per hour.",
+    "options": [
+      "62.6km/h",
+      "16.39km/h",
+      "212.4km/h",
+      "59000km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(59 \\times 3.6 = 212.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 24m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "30m/s",
+      "3.43m/s",
+      "24m/s",
+      "4m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{24}{6} = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 14m in 7 seconds. Calculate its average speed.",
+    "options": [
+      "1.75m/s",
+      "14m/s",
+      "21m/s",
+      "2m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{14}{7} = 2\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 25m/s to cover 50m?",
+    "options": [
+      "4s",
+      "25s",
+      "2s",
+      "50s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{50}{25} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 20m/s to cover 200m?",
+    "options": [
+      "12s",
+      "200s",
+      "10s",
+      "20s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{200}{20} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 12m/s to cover 168m?",
+    "options": [
+      "14s",
+      "168s",
+      "16s",
+      "12s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{168}{12} = 14\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 32m/s to cover 128m?",
+    "options": [
+      "4s",
+      "6s",
+      "128s",
+      "32s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{128}{32} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 101km in 4 hours and then 77km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "25.25km/h",
+      "31.88km/h",
+      "34.67km/h",
+      "29.67km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{101 + 77}{4 + 2} = \\frac{178}{6} = 29.67\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 21m/s to cover 315m?",
+    "options": [
+      "17s",
+      "15s",
+      "21s",
+      "315s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{315}{21} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 14m/s to cover 70m?",
+    "options": [
+      "7s",
+      "14s",
+      "70s",
+      "5s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{70}{14} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 38m/s to cover 190m?",
+    "options": [
+      "38s",
+      "7s",
+      "190s",
+      "5s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{190}{38} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 20km in 3 hours and then 86km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "14.08km/h",
+      "20.14km/h",
+      "15.14km/h",
+      "6.67km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{20 + 86}{3 + 4} = \\frac{106}{7} = 15.14\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 264m in 12 seconds. Calculate its average speed.",
+    "options": [
+      "20.31m/s",
+      "276m/s",
+      "22m/s",
+      "264m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{264}{12} = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 116m in 4 seconds. Calculate its average speed.",
+    "options": [
+      "116m/s",
+      "29m/s",
+      "120m/s",
+      "23.2m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{116}{4} = 29\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 36km in 5 hours and then 98km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "19.14km/h",
+      "24.14km/h",
+      "28.1km/h",
+      "7.2km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{36 + 98}{5 + 2} = \\frac{134}{7} = 19.14\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 62km in 3 hours and then 82km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "23km/h",
+      "18km/h",
+      "20.67km/h",
+      "18.53km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{62 + 82}{3 + 5} = \\frac{144}{8} = 18\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 102m in 3 seconds. Calculate its average speed.",
+    "options": [
+      "25.5m/s",
+      "105m/s",
+      "34m/s",
+      "102m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{102}{3} = 34\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 30km in 4 hours and then 36km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "7.35km/h",
+      "12.33km/h",
+      "7.5km/h",
+      "7.33km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{30 + 36}{4 + 5} = \\frac{66}{9} = 7.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 73km in 2 hours and then 85km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "31.6km/h",
+      "32.42km/h",
+      "36.5km/h",
+      "36.6km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{73 + 85}{2 + 3} = \\frac{158}{5} = 31.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 338m in 13 seconds. Calculate its average speed.",
+    "options": [
+      "24.14m/s",
+      "26m/s",
+      "351m/s",
+      "338m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{338}{13} = 26\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 72km in 2 hours and then 116km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "29.6km/h",
+      "36km/h",
+      "26.86km/h",
+      "31.86km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{72 + 116}{2 + 5} = \\frac{188}{7} = 26.86\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 39m/s to cover 351m?",
+    "options": [
+      "9s",
+      "351s",
+      "11s",
+      "39s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{351}{39} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 40m/s to cover 480m?",
+    "options": [
+      "40s",
+      "14s",
+      "12s",
+      "480s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{480}{40} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 50km in 3 hours and then 43km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "13.29km/h",
+      "16.67km/h",
+      "18.29km/h",
+      "13.71km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{50 + 43}{3 + 4} = \\frac{93}{7} = 13.29\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 576m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "33.88m/s",
+      "36m/s",
+      "576m/s",
+      "592m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{576}{16} = 36\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 416m in 13 seconds. Calculate its average speed.",
+    "options": [
+      "32m/s",
+      "416m/s",
+      "29.71m/s",
+      "429m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{416}{13} = 32\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 135m in 15 seconds. Calculate its average speed.",
+    "options": [
+      "150m/s",
+      "8.44m/s",
+      "9m/s",
+      "135m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{135}{15} = 9\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 59km in 1 hour and then 20km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "32km/h",
+      "59km/h",
+      "20.8km/h",
+      "15.8km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{59 + 20}{1 + 4} = \\frac{79}{5} = 15.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 30m in 3 seconds. Calculate its average speed.",
+    "options": [
+      "10m/s",
+      "33m/s",
+      "30m/s",
+      "7.5m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{30}{3} = 10\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 79km in 5 hours and then 91km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "26.25km/h",
+      "15.8km/h",
+      "21.25km/h",
+      "23.07km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{79 + 91}{5 + 3} = \\frac{170}{8} = 21.25\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 220m in 10 seconds. Calculate its average speed.",
+    "options": [
+      "22m/s",
+      "20m/s",
+      "230m/s",
+      "220m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{220}{10} = 22\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 26m/s to cover 260m?",
+    "options": [
+      "10s",
+      "12s",
+      "260s",
+      "26s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{260}{26} = 10\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 69km in 1 hour and then 59km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "41.88km/h",
+      "25.6km/h",
+      "69km/h",
+      "30.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{69 + 59}{1 + 4} = \\frac{128}{5} = 25.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 27m/s to cover 108m?",
+    "options": [
+      "108s",
+      "27s",
+      "6s",
+      "4s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{108}{27} = 4\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 7m/s to kilometres per hour.",
+    "options": [
+      "10.6km/h",
+      "1.94km/h",
+      "25.2km/h",
+      "7000km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(7 \\times 3.6 = 25.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 234m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "33.43m/s",
+      "39m/s",
+      "240m/s",
+      "234m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{234}{6} = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 95m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "19m/s",
+      "95m/s",
+      "100m/s",
+      "15.83m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{95}{5} = 19\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 224m in 7 seconds. Calculate its average speed.",
+    "options": [
+      "32m/s",
+      "224m/s",
+      "28m/s",
+      "231m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{224}{7} = 32\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 53km in 5 hours and then 99km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "10.6km/h",
+      "21.71km/h",
+      "26.71km/h",
+      "30.05km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{53 + 99}{5 + 2} = \\frac{152}{7} = 21.71\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 85km in 1 hour and then 78km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "52.25km/h",
+      "32.6km/h",
+      "37.6km/h",
+      "85km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{85 + 78}{1 + 4} = \\frac{163}{5} = 32.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 84km in 4 hours and then 41km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "22.86km/h",
+      "17.33km/h",
+      "21km/h",
+      "17.86km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{84 + 41}{4 + 3} = \\frac{125}{7} = 17.86\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 23m/s to kilometres per hour.",
+    "options": [
+      "23000km/h",
+      "26.6km/h",
+      "6.39km/h",
+      "82.8km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(23 \\times 3.6 = 82.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 10m/s to cover 90m?",
+    "options": [
+      "11s",
+      "9s",
+      "90s",
+      "10s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{90}{10} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 35m/s to kilometres per hour.",
+    "options": [
+      "126km/h",
+      "35000km/h",
+      "9.72km/h",
+      "38.6km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(35 \\times 3.6 = 126\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 25m/s to cover 175m?",
+    "options": [
+      "7s",
+      "25s",
+      "9s",
+      "175s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{175}{25} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 77km in 1 hour and then 77km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "35.8km/h",
+      "30.8km/h",
+      "48.13km/h",
+      "77km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{77 + 77}{1 + 4} = \\frac{154}{5} = 30.8\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 21m/s to cover 126m?",
+    "options": [
+      "8s",
+      "21s",
+      "126s",
+      "6s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{126}{21} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 15m/s to cover 105m?",
+    "options": [
+      "7s",
+      "9s",
+      "105s",
+      "15s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{105}{15} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 210m in 7 seconds. Calculate its average speed.",
+    "options": [
+      "26.25m/s",
+      "30m/s",
+      "210m/s",
+      "217m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{210}{7} = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 30m in 2 seconds. Calculate its average speed.",
+    "options": [
+      "32m/s",
+      "10m/s",
+      "30m/s",
+      "15m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{30}{2} = 15\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 280m in 14 seconds. Calculate its average speed.",
+    "options": [
+      "18.67m/s",
+      "20m/s",
+      "294m/s",
+      "280m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{280}{14} = 20\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 12m/s to kilometres per hour.",
+    "options": [
+      "43.2km/h",
+      "15.6km/h",
+      "12000km/h",
+      "3.33km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(12 \\times 3.6 = 43.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 224m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "14m/s",
+      "224m/s",
+      "13.18m/s",
+      "240m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{224}{16} = 14\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 21m/s to kilometres per hour.",
+    "options": [
+      "5.83km/h",
+      "75.6km/h",
+      "21000km/h",
+      "24.6km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(21 \\times 3.6 = 75.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 40m/s to kilometres per hour.",
+    "options": [
+      "40000km/h",
+      "11.11km/h",
+      "43.6km/h",
+      "144km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(40 \\times 3.6 = 144\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 88km in 3 hours and then 64km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "29.33km/h",
+      "30.4km/h",
+      "30.67km/h",
+      "35.4km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{88 + 64}{3 + 2} = \\frac{152}{5} = 30.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 40m/s to cover 240m?",
+    "options": [
+      "40s",
+      "6s",
+      "8s",
+      "240s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{240}{40} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 92km in 2 hours and then 46km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "24.71km/h",
+      "46km/h",
+      "19.71km/h",
+      "27.6km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{92 + 46}{2 + 5} = \\frac{138}{7} = 19.71\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 84km in 2 hours and then 45km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "42km/h",
+      "25.5km/h",
+      "18.43km/h",
+      "23.43km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{84 + 45}{2 + 5} = \\frac{129}{7} = 18.43\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 33m/s to cover 99m?",
+    "options": [
+      "33s",
+      "5s",
+      "99s",
+      "3s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{99}{33} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 32m/s to cover 64m?",
+    "options": [
+      "4s",
+      "64s",
+      "2s",
+      "32s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{64}{32} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 19m/s to cover 95m?",
+    "options": [
+      "95s",
+      "19s",
+      "5s",
+      "7s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{95}{19} = 5\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 6m/s to cover 12m?",
+    "options": [
+      "4s",
+      "2s",
+      "12s",
+      "6s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{12}{6} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 14m/s to kilometres per hour.",
+    "options": [
+      "17.6km/h",
+      "3.89km/h",
+      "50.4km/h",
+      "14000km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(14 \\times 3.6 = 50.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 168m in 6 seconds. Calculate its average speed.",
+    "options": [
+      "28m/s",
+      "174m/s",
+      "168m/s",
+      "24m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{168}{6} = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 85km in 4 hours and then 53km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "28km/h",
+      "21.25km/h",
+      "23km/h",
+      "23.88km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{85 + 53}{4 + 2} = \\frac{138}{6} = 23\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 57km in 3 hours and then 45km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "20.75km/h",
+      "20.4km/h",
+      "19km/h",
+      "25.4km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{57 + 45}{3 + 2} = \\frac{102}{5} = 20.4\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 23km in 4 hours and then 53km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "5.75km/h",
+      "8.44km/h",
+      "13.44km/h",
+      "8.18km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{23 + 53}{4 + 5} = \\frac{76}{9} = 8.44\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 34m/s to cover 272m?",
+    "options": [
+      "34s",
+      "8s",
+      "10s",
+      "272s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{272}{34} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 9m/s to cover 18m?",
+    "options": [
+      "4s",
+      "2s",
+      "9s",
+      "18s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{18}{9} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 61km in 2 hours and then 66km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "23.14km/h",
+      "30.5km/h",
+      "21.85km/h",
+      "18.14km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{61 + 66}{2 + 5} = \\frac{127}{7} = 18.14\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 12m/s to cover 24m?",
+    "options": [
+      "12s",
+      "24s",
+      "4s",
+      "2s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{24}{12} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 84km in 4 hours and then 35km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "21km/h",
+      "14km/h",
+      "18.22km/h",
+      "13.22km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{84 + 35}{4 + 5} = \\frac{119}{9} = 13.22\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 114km in 4 hours and then 43km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "26.17km/h",
+      "31.17km/h",
+      "28.5km/h",
+      "25km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{114 + 43}{4 + 2} = \\frac{157}{6} = 26.17\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 21m in 7 seconds. Calculate its average speed.",
+    "options": [
+      "3m/s",
+      "2.63m/s",
+      "21m/s",
+      "28m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{21}{7} = 3\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 156m in 12 seconds. Calculate its average speed.",
+    "options": [
+      "13m/s",
+      "156m/s",
+      "12m/s",
+      "168m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{156}{12} = 13\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 136m in 8 seconds. Calculate its average speed.",
+    "options": [
+      "144m/s",
+      "17m/s",
+      "136m/s",
+      "15.11m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{136}{8} = 17\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 15m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "2.5m/s",
+      "3m/s",
+      "20m/s",
+      "15m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{15}{5} = 3\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 684m in 18 seconds. Calculate its average speed.",
+    "options": [
+      "684m/s",
+      "36m/s",
+      "38m/s",
+      "702m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{684}{18} = 38\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 35km in 2 hours and then 97km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "44km/h",
+      "49km/h",
+      "17.5km/h",
+      "57.25km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{35 + 97}{2 + 1} = \\frac{132}{3} = 44\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 25m in 5 seconds. Calculate its average speed.",
+    "options": [
+      "5m/s",
+      "4.17m/s",
+      "25m/s",
+      "30m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{25}{5} = 5\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 32m in 8 seconds. Calculate its average speed.",
+    "options": [
+      "3.56m/s",
+      "32m/s",
+      "4m/s",
+      "40m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{32}{8} = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 32km in 1 hour and then 98km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "32km/h",
+      "43.33km/h",
+      "40.5km/h",
+      "48.33km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{32 + 98}{1 + 2} = \\frac{130}{3} = 43.33\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 25km in 5 hours and then 92km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "5km/h",
+      "25.5km/h",
+      "16.71km/h",
+      "21.71km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{25 + 92}{5 + 2} = \\frac{117}{7} = 16.71\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 45m in 15 seconds. Calculate its average speed.",
+    "options": [
+      "2.81m/s",
+      "45m/s",
+      "3m/s",
+      "60m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{45}{15} = 3\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 80m in 16 seconds. Calculate its average speed.",
+    "options": [
+      "5m/s",
+      "96m/s",
+      "4.71m/s",
+      "80m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{80}{16} = 5\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 99km in 2 hours and then 44km in 5 hours. Find its average speed for the whole journey.",
+    "options": [
+      "49.5km/h",
+      "20.43km/h",
+      "29.15km/h",
+      "25.43km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{99 + 44}{2 + 5} = \\frac{143}{7} = 20.43\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 40m/s to cover 120m?",
+    "options": [
+      "120s",
+      "3s",
+      "5s",
+      "40s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{120}{40} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 35km in 5 hours and then 58km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "20.5km/h",
+      "32.5km/h",
+      "15.5km/h",
+      "7km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{35 + 58}{5 + 1} = \\frac{93}{6} = 15.5\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 120m in 4 seconds. Calculate its average speed.",
+    "options": [
+      "30m/s",
+      "124m/s",
+      "24m/s",
+      "120m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{120}{4} = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 20m/s to cover 180m?",
+    "options": [
+      "180s",
+      "20s",
+      "11s",
+      "9s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{180}{20} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 25m/s to cover 275m?",
+    "options": [
+      "11s",
+      "25s",
+      "275s",
+      "13s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{275}{25} = 11\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 72km in 3 hours and then 40km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "24km/h",
+      "28km/h",
+      "33km/h",
+      "32km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{72 + 40}{3 + 1} = \\frac{112}{4} = 28\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 36m/s to cover 108m?",
+    "options": [
+      "3s",
+      "5s",
+      "108s",
+      "36s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{108}{36} = 3\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 40m in 10 seconds. Calculate its average speed.",
+    "options": [
+      "50m/s",
+      "40m/s",
+      "4m/s",
+      "3.64m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{40}{10} = 4\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 104km in 1 hour and then 114km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "66.25km/h",
+      "104km/h",
+      "43.6km/h",
+      "48.6km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{104 + 114}{1 + 4} = \\frac{218}{5} = 43.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 39km in 4 hours and then 70km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "9.75km/h",
+      "16.54km/h",
+      "15.57km/h",
+      "20.57km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{39 + 70}{4 + 3} = \\frac{109}{7} = 15.57\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 24m/s to cover 144m?",
+    "options": [
+      "8s",
+      "6s",
+      "144s",
+      "24s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{144}{24} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 20m/s to cover 40m?",
+    "options": [
+      "2s",
+      "4s",
+      "40s",
+      "20s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{40}{20} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 103km in 4 hours and then 110km in 2 hours. Find its average speed for the whole journey.",
+    "options": [
+      "35.5km/h",
+      "40.38km/h",
+      "40.5km/h",
+      "25.75km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{103 + 110}{4 + 2} = \\frac{213}{6} = 35.5\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 33m/s to cover 66m?",
+    "options": [
+      "2s",
+      "66s",
+      "4s",
+      "33s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{66}{33} = 2\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 16m/s to kilometres per hour.",
+    "options": [
+      "57.6km/h",
+      "19.6km/h",
+      "16000km/h",
+      "4.44km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(16 \\times 3.6 = 57.6\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 264m in 11 seconds. Calculate its average speed.",
+    "options": [
+      "22m/s",
+      "275m/s",
+      "24m/s",
+      "264m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{264}{11} = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 432m in 18 seconds. Calculate its average speed.",
+    "options": [
+      "22.74m/s",
+      "24m/s",
+      "432m/s",
+      "450m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{432}{18} = 24\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 551m in 19 seconds. Calculate its average speed.",
+    "options": [
+      "27.55m/s",
+      "551m/s",
+      "570m/s",
+      "29m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{551}{19} = 29\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 11m/s to cover 88m?",
+    "options": [
+      "11s",
+      "8s",
+      "10s",
+      "88s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{88}{11} = 8\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 25km in 4 hours and then 34km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "13.43km/h",
+      "6.25km/h",
+      "8.79km/h",
+      "8.43km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{25 + 34}{4 + 3} = \\frac{59}{7} = 8.43\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 299m in 13 seconds. Calculate its average speed.",
+    "options": [
+      "23m/s",
+      "299m/s",
+      "312m/s",
+      "21.36m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{299}{13} = 23\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 308m in 11 seconds. Calculate its average speed.",
+    "options": [
+      "25.67m/s",
+      "308m/s",
+      "319m/s",
+      "28m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{308}{11} = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 33m/s to cover 231m?",
+    "options": [
+      "7s",
+      "33s",
+      "9s",
+      "231s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{231}{33} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 42m/s to kilometres per hour.",
+    "options": [
+      "45.6km/h",
+      "42000km/h",
+      "11.67km/h",
+      "151.2km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(42 \\times 3.6 = 151.2\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 5m/s to cover 55m?",
+    "options": [
+      "13s",
+      "11s",
+      "5s",
+      "55s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{55}{5} = 11\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 30m/s to cover 450m?",
+    "options": [
+      "15s",
+      "30s",
+      "17s",
+      "450s"
+    ],
+    "correctIndex": 0,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{450}{30} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 103km in 3 hours and then 61km in 4 hours. Find its average speed for the whole journey.",
+    "options": [
+      "28.43km/h",
+      "23.43km/h",
+      "34.33km/h",
+      "24.79km/h"
+    ],
+    "correctIndex": 1,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{103 + 61}{3 + 4} = \\frac{164}{7} = 23.43\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 107km in 1 hour and then 114km in 3 hours. Find its average speed for the whole journey.",
+    "options": [
+      "60.25km/h",
+      "107km/h",
+      "72.5km/h",
+      "55.25km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{107 + 114}{1 + 3} = \\frac{221}{4} = 55.25\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A car travels 99km in 5 hours and then 72km in 1 hour. Find its average speed for the whole journey.",
+    "options": [
+      "19.8km/h",
+      "33.5km/h",
+      "45.9km/h",
+      "28.5km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "Average speed \\(= \\frac{\\text{total distance}}{\\text{total time}}\\)\n\n\\(= \\frac{99 + 72}{5 + 1} = \\frac{171}{6} = 28.5\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 19m/s to cover 133m?",
+    "options": [
+      "133s",
+      "9s",
+      "19s",
+      "7s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{133}{19} = 7\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 34m/s to cover 510m?",
+    "options": [
+      "510s",
+      "15s",
+      "34s",
+      "17s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{510}{34} = 15\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 312m in 8 seconds. Calculate its average speed.",
+    "options": [
+      "34.67m/s",
+      "320m/s",
+      "312m/s",
+      "39m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{312}{8} = 39\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 80m in 10 seconds. Calculate its average speed.",
+    "options": [
+      "80m/s",
+      "7.27m/s",
+      "90m/s",
+      "8m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{80}{10} = 8\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 15m/s to cover 180m?",
+    "options": [
+      "14s",
+      "15s",
+      "12s",
+      "180s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{180}{15} = 12\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 392m in 14 seconds. Calculate its average speed.",
+    "options": [
+      "26.13m/s",
+      "406m/s",
+      "28m/s",
+      "392m/s"
+    ],
+    "correctIndex": 2,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{392}{14} = 28\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 19m/s to cover 114m?",
+    "options": [
+      "19s",
+      "6s",
+      "114s",
+      "8s"
+    ],
+    "correctIndex": 1,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{114}{19} = 6\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "How long does it take a body moving with a uniform velocity of 23m/s to cover 207m?",
+    "options": [
+      "23s",
+      "11s",
+      "207s",
+      "9s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(t = \\frac{s}{v} = \\frac{207}{23} = 9\\)s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "A body covers a distance of 300m in 10 seconds. Calculate its average speed.",
+    "options": [
+      "300m/s",
+      "27.27m/s",
+      "310m/s",
+      "30m/s"
+    ],
+    "correctIndex": 3,
+    "explanation": "\\(\\text{speed} = \\frac{\\text{distance}}{\\text{time}}\\)\n\n\\(= \\frac{300}{10} = 30\\)m/s",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  },
+  {
+    "text": "Convert 25m/s to kilometres per hour.",
+    "options": [
+      "90km/h",
+      "25000km/h",
+      "6.94km/h",
+      "28.6km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "Multiply by 3.6 to convert m/s to km/h.\n\n\\(25 \\times 3.6 = 90\\)km/h",
+    "subjectId": "3DenliOp1ceDhiVDvNTX",
+    "unitId": "9wqW7Xs4MAIDqdtbCIme",
+    "topicId": "V3pwih9gpp1yxTQuvPPU",
+    "source": "drill",
+    "origin": "ai_generated",
+    "hasAnswer": true,
+    "year": null
+  }
+]
