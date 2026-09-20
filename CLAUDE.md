@@ -106,6 +106,36 @@ Flutter web app (Riverpod v3 + go_router v17 + Firebase v4) over a Firestore con
 
 Never add WAEC questions to drill providers without filtering by `source`, and never add drill-style instant feedback to the exam flow.
 
+**Progress and mastery.** `lib/core/progress/mastery.dart` is the pure model —
+`MasteryLevel` (notStarted/attempted/familiar/proficient/mastered), the thresholds,
+and the roll-up maths. Per-topic progress is a **level**, not a percentage, and only
+module/course aggregates become percentages; `course_progress.dart` joins a `Course`
+outline to a student's counters. `MasteryCircle`/`MasteryRing`
+(`lib/core/widgets/mastery_indicator.dart`) are the only things that draw them.
+
+Counters live in `progress/{uid}` — **not** on `users/{uid}`, and this is load-bearing.
+That document's rules allow-list keeps stats fields server-only so a future leaderboard
+cannot be client-fed, and nothing here weakens it. The rule that keeps the two
+compatible is a product rule the rules file cannot express: **nothing competitive or
+rewarding may read `progress`.** XP, achievements and leaderboards must recompute from
+`attempts` server-side first. `attempts` remains the source of truth; `progress` is a
+cache of a per-topic count query the free tier cannot afford (Firestore has no GROUP BY,
+so the honest version is one aggregate per topic — 40 to 64 per course page).
+
+Written once per drill *session*, not per question, so a 20-question drill still costs
+the 20 attempt writes it always did. WAEC exams deliberately do not feed it: the modes
+must not merge, and one exam would fan across up to 40 topics' worth of writes.
+
+**Analytics.** `analytics_provider.dart` defines the events; `analytics_binding.dart`
+wires the two app-wide ones (screen views, `is_guest`) and is watched by `app.dart` for
+its side effects. Screen names are **route patterns** (`/subject/:subjectId/...`), never
+concrete URLs — no document ids in screen names, and no thousand-row reports. `Analytics`
+reads the opt-out flag at call time and resolves `FirebaseAnalytics.instance` lazily, so
+an instance is safe to hold in a `State` field (Riverpod 3 forbids `ref` in `dispose()`,
+which is where `DrillScreen` ends its session). **`legal_documents.dart` must change with
+this file** — it describes to users exactly what is collected, and the policy previously
+claimed an `is_guest` property that nothing ever set.
+
 **Data flow.** Screens are `ConsumerWidget`s that watch providers in `lib/core/repositories/learning_repository.dart` (`subjectsProvider`, `unitsProvider`, `topicsProvider`, `drillQuestionsProvider(topicId)`, `waecQuestionsProvider(subjectId)` — all `FutureProvider`/`.family` reading Firestore directly). Writes go through `AttemptRepository.record()` and `UserRepository.updateStreak()`. Auth/user streams live in `lib/core/providers/auth_provider.dart` (`authStateProvider`, `currentUserProvider`, `userDataProvider`, `weeklyAttemptsCountProvider`).
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
@@ -120,12 +150,14 @@ Never add WAEC questions to drill providers without filtering by `source`, and n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `questions`, `users/{uid}`, `attempts`.
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
+- `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
+- **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`.** Forgetting leaves a student who asked to be deleted, and mostly was.
 
 ## Riverpod v3 gotchas
 
@@ -146,14 +178,24 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 65 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 125 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
   suite passes no matter how broken the content is. Still: a green suite is not evidence
   that content is *correct*, only that it parses and renders.
 - Client-writable `users/{uid}` streak/xp/topicStats is a hard blocker on any leaderboard or
-  gamification work. Do not ship those sessions until writes are server-controlled.
+  gamification work. Do not ship those sessions until writes are server-controlled. The
+  `progress/{uid}` mastery cache does not change this and is not an exception to it —
+  it is private, display-only, and recomputable from `attempts`. The moment anything
+  competitive reads it, that read is the bug.
+- Onboarding must not ask for data nothing uses. `selectedSubjects` sat unread for
+  everything except one sort order; the optional `profile` map (school, class, age,
+  gender, country, state) still has **no reader anywhere in `lib/`**. Either give a
+  field a consumer or stop collecting it — this is data about minors.
+- If a screen tells a student they can change something later, there must be a route
+  that lets them. `/settings/subjects` exists because onboarding had been saying so
+  since it shipped.
 
   - Content correctness is a defect class, not a content task. Before shipping any feature that
   reads a field, verify the field actually has values in production data — not that the code

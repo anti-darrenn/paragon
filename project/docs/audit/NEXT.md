@@ -185,6 +185,89 @@ regardless of which future session it happened to get filed under.
   and `CONFLICTS.md` cites them by name throughout — those citations still need
   to resolve. `git mv` keeps the history attached.
 
+## Account data, onboarding and analytics (pass 2)
+
+The theme of this pass was **collected-but-unused data and instrumented-but-unfired
+events** — the privacy cost of the data was being paid without the product or
+reporting benefit.
+
+### 10. Three of five analytics events had no caller — done
+- `drillCompleted`, `screen()` and `setIsGuest()` were declared on `Analytics` and
+  never called from anywhere. Only `exam_complete` and the onboarding events fired,
+  so the drill loop — the primary Learning Mode, and the thing that tells you which
+  of 64,800 generated questions students actually reach — was invisible.
+- `setIsGuest` was the sharp one: `legal_documents.dart` already told users we record
+  "whether a session was a guest session" while nothing set the property. Harmless
+  direction, but a claim the code did not support, in the one file whose own doc
+  comment says adding an event changes both files.
+- **Fixed:** `analytics_binding.dart` wires screen views and `is_guest`; `DrillScreen`
+  logs its session on the way out. Screen names are route *patterns*, never concrete
+  URLs — no document ids in screen names. The policy now also discloses screen views
+  and per-topic counters, and `legalLastUpdated` moved to 20 September 2026.
+- **Two robustness bugs surfaced doing it, both fixed rather than deferred:**
+  `Analytics` captured the opt-out flag at construction, so an instance held across a
+  session would have logged after a mid-session opt-out; and it resolved
+  `FirebaseAnalytics.instance` in the provider body, outside every guard it has, which
+  took the widget tree down when Firebase was not initialised (caught by the smoke
+  test). Both now resolve at call time.
+
+### 11. `updateStreak` ran once per question in drill — done
+- `DrillScreen._submit` called it on every submit. Each call is a transaction with a
+  read inside it, so a 20-question drill cost 20 reads, 19 of them doing nothing but
+  re-confirming today was already recorded. `WaecExamScreen` already did it correctly,
+  once per exam.
+- **Re-ranking check:** live breakage in shipped code, not absent functionality — the
+  same shape as the unbounded-query items above, and read cost that scales with exactly
+  the engagement the product wants. Fixed: one transaction per session.
+
+### 12. Onboarding collected data with no reader — partly fixed
+- `selectedSubjects` had exactly one reader in the app: the catalog grid's sort order.
+  It did not filter `/subjects`, the dashboard, WAEC or drill. **Fixed:** the dashboard
+  now has a "Your Subjects" section driven by it, and `/settings/subjects` lets a
+  student change it.
+- **Still open, and now an explicit decision rather than an oversight:** the optional
+  `profile` map — school, class year, age, gender, country, state — has **no reader
+  anywhere in `lib/`**. It is collected from students who are largely minors and used
+  for nothing. Put to the owner on 2026-09-20 as "remove it, build a consumer, or keep
+  collecting and decide later"; the answer was **keep collecting, decide later**.
+  Recorded here so it stays a live question: it is unused personal data about minors,
+  the privacy policy has to keep describing it accurately for as long as it is
+  collected, and the profile step's "you can edit it later in settings" is still a
+  promise with nothing behind it. Revisit before any public launch — retention of
+  unused personal data is exactly the kind of thing the NDPA review named in the legal
+  section will ask about.
+
+### 13. Two promises the app could not keep — done
+- The subjects step said "You can change these any time" and the profile step said
+  "you can edit it later in settings". Neither was true: Settings had no editor, and
+  `app_router.dart` actively bounced `/onboarding/subjects` back to `/` once onboarding
+  was complete, so even a deep link could not reach the picker.
+- **Fixed for subjects:** `/settings/subjects`, linked from Settings and from the
+  dashboard section. The checkbox tile is now shared with onboarding rather than
+  duplicated, so the two pickers cannot drift.
+- **Still open:** display name is unchangeable after onboarding, and the profile step
+  is reachable only by deep link (`/onboarding/profile` — the router permits it, but
+  nothing links to it). The profile copy still promises an editor that does not exist.
+
+### 14. Mastery rings (Khan-style) — done
+- Per-topic mastery levels with a circle on the right of every topic row, a ring per
+  module, and a course-level ring. Counters live in `progress/{uid}`; see CLAUDE.md for
+  why that is not on `users/{uid}` and what it may never be read by.
+- **Deliberately not built, and why:** no ring on the dashboard or the course catalog.
+  A ring needs the subject's topic count as a denominator, which is not on the subject
+  document — deriving it means loading every unit and its topics *per subject* on the
+  landing page. Per the "verify the field has values in production" agreement, this was
+  not built on a field that does not exist. Those surfaces show counts instead.
+  **The unlock is a `topicCount` on the subject document**, written by the seeders and
+  backfilled once; that is the follow-up, and it is small.
+- **Known and stated:** progress counts questions answered, not *distinct* questions,
+  so re-drilling a topic climbs the levels on repeat questions. Storing seen-question
+  ids would be up to 300 per topic across 216 topics on one document. Accuracy
+  thresholds are the mitigation.
+- **Deployment gate:** `firestore.rules` gained a `progress/{uid}` block. It compiles
+  (`--dry-run` verified) but **is not deployed** — until `firebase deploy --only
+  firestore:rules` runs, every progress write is denied and every ring stays empty.
+
 ## Cheap wins (under 30 minutes each — do these in one sitting)
 
 - ~~Run `dart format lib test` and commit~~ — done (`91421cf`, `544f8c0`).
