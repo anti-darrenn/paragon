@@ -107,22 +107,21 @@ regardless of which future session it happened to get filed under.
 
 ## P2 — spec drift / latent risk, worth fixing before it bites
 
-### 2. Firestore model classes are not null-safe
-- **Evidence:** `question.dart:26-39`, `subject.dart:14-21`, `unit.dart:16-24`,
-  `topic.dart:20-30` all do direct non-nullable casts (`d['text'] as String`,
-  `d['name'] as String`, `List<String>.from(d['options'] as List)`) with no
-  fallback.
-- **Why it matters:** CLAUDE.md states this exact rule ("Every `fromFirestore`
-  must stay fully null-safe") and it's currently violated everywhere. Safe today
-  only because the seeder always populates these fields — but the classifier
-  has a documented ~15% misclassification rate and content editing happens by
-  hand in the Firebase Console, so a missing field is a realistic future event,
-  and when it happens the failure mode is a hard crash on the whole screen, not
-  a graceful gap.
-- **Re-ranking check:** latent risk, not live breakage — no user is hitting
-  this today. Stays P2.
-- **Estimate:** 30–45 minutes across the four files.
-- **One-way door:** No.
+### 2. Firestore model classes are not null-safe — done
+- **Was:** `question.dart`, `subject.dart`, `unit.dart`, `topic.dart` all did
+  direct non-nullable casts (`d['text'] as String`,
+  `List<String>.from(d['options'] as List)`) with no fallback, violating the
+  rule CLAUDE.md already stated.
+- **Fixed:** `lib/core/models/firestore_parsing.dart` supplies `docData`,
+  `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`; all four models
+  use them. `correctIndex` falls back to `-1`, never `0` — a `0` fallback would
+  silently mark option A correct. `asStringList` stringifies bad entries rather
+  than dropping them, because `correctIndex` indexes into that list.
+- **Proof:** `test/model_null_safety_test.dart`, 21 tests, including a control
+  group asserting the old casts really do throw on the same documents. Suite
+  went 65 → 86.
+- **Note:** the "~15% misclassification" cited here was never measured. The real
+  figures are Maths 81%, Physics 61%, Further Maths 8% — see the docs commit.
 
 ### 3. `users/{uid}` write access is unrestricted at the field level — done
 - **Fixed:** `firestore.rules` no longer has a blanket `write`. `create` is
@@ -160,21 +159,31 @@ regardless of which future session it happened to get filed under.
 
 ## P3 — polish / hygiene
 
-### 7. `docs/LATEX_RENDERING.md` describes a renderer the app doesn't use
-- **Evidence:** doc describes `flutter_tex`/MathJax; `pubspec.yaml` has no
-  `flutter_tex` dependency; the real renderer is `flutter_math_fork` via
-  `FullLatexView`. CLAUDE.md already flags this as stale — the doc itself hasn't
-  been fixed.
-- **Estimate:** 15–20 minutes to rewrite to match `FullLatexView`'s actual
-  scanner-based implementation, or delete it if not worth maintaining.
+### 7. `docs/LATEX_RENDERING.md` describes a renderer the app doesn't use — done
+- **Fixed:** rewritten against `FullLatexView`'s actual scanner. It no longer
+  tells the reader to add MathJax to `web/index.html` to enable `flutter_tex` —
+  a banned dependency that breaks the build.
+- **Two claims turned out to be false in the code, not just outdated:**
+  `\emph{...}` is not supported anywhere (use `\textit`), and `\vspace(...)`
+  parses only in its brace form. Neither appears in any content, so both were
+  documentation errors rather than live bugs.
+- **It also turned up a real one.** Chasing the "scraped content is `\(...\)`
+  exclusively" claim showed it was untrue, and that `$...$` inline maths was
+  corrupting six seeded Mathematics questions by parsing the text between two
+  currency amounts as an expression. Fixed in `fix(latex)`; pinned by
+  `test/currency_not_math_test.dart`. Suite 86 → 94.
+- **Worth noting for the next audit:** this was filed as P3 hygiene and
+  contained a P2 content-correctness defect. Verifying a doc's claims against
+  the code is what surfaced it — reading the doc alone would not have.
 
-### 9. Retire three stale strategy docs
-- **Evidence:** see `CONFLICTS.md` section B — `Project_Paragon_PRD_v2.md`,
-  `Paragon_Tech_Stack_and_Platform_Strategy.md`,
-  `Project_Paragon_Execution_Plan.md` all describe a Next.js/Vercel product
-  that was never built.
-- **Estimate:** 10 minutes to move them to an `archive/` folder with a note, or
-  delete outright.
+### 9. Retire three stale strategy docs — done
+- **Fixed:** `Project_Paragon_PRD_v2.md`,
+  `Paragon_Tech_Stack_and_Platform_Strategy.md` and
+  `Project_Paragon_Execution_Plan.md` moved to `paragon_plans/archive/` with a
+  README naming what to read instead. `CLAUDE.md` and `CONFLICTS.md` updated.
+- **Archived, not deleted.** They record why some early decisions were made,
+  and `CONFLICTS.md` cites them by name throughout — those citations still need
+  to resolve. `git mv` keeps the history attached.
 
 ## Cheap wins (under 30 minutes each — do these in one sitting)
 

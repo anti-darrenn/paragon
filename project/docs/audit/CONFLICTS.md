@@ -46,3 +46,5 @@ per the brief.
 | `type_specimen.docx` | Keep as visual law — confirmed the app actually follows it (Space Grotesk, dark palette, orange/violet accents all match). |
 
 **Documents to retire:** `Project_Paragon_PRD_v2.md`, `Paragon_Tech_Stack_and_Platform_Strategy.md`, `Project_Paragon_Execution_Plan.md`. All three describe a product on a different stack that was never built and, per the currently-trusted `.cursorrules`, isn't planned to be.
+
+> **Done (2026-09-20).** All three moved to `paragon_plans/archive/`, with a README naming what to read instead. Archived rather than deleted — they record why some early decisions were made, and the citations throughout this file still need to resolve. The filenames above are unchanged; only the directory moved.

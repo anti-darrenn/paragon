@@ -143,6 +143,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
 ## Working agreements
 - `.cursorrules` is the roadmap. `Spec_Current.docx` and §2.1–2.3 are aspirational intent.
   `PRD_v2.md`, `Tech_Stack.md` and `Execution_Plan.md` are stale (Next.js-era) — do not follow.
+  They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
 - The suite is 65 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
