@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/models/learn_resource.dart';
 import '../core/repositories/course_repository.dart';
+import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/app_top_nav.dart';
@@ -13,13 +15,13 @@ import '../core/widgets/app_top_nav.dart';
 /// topic, listed in teaching order — watch, read, then practise — rather
 /// than dropping the student straight into questions.
 ///
-/// **What is real here and what is not.** Only the practice row is backed
-/// by data: it runs the existing `DrillScreen` over the topic's seeded
-/// questions. Videos and the topic quiz have no content model at all yet,
-/// and Learn-mode notes exist as a field (`Topic.hasNotes`) that no seeded
-/// topic sets. Those rows are rendered as explicitly disabled placeholders
-/// and read their state from the data rather than assuming it — the
-/// Article row turns real on its own once notes are authored.
+/// **What is real here and what is not.** The Learn section lists the
+/// topic's *published* resources (`topicResourcesProvider`) in author
+/// order. Articles open in `ArticleScreen`; videos and in-lesson exercises
+/// are listed but disabled, since there is no player or exercise screen
+/// yet. A topic with no published resources shows the old placeholder
+/// rows instead. The practice row runs `DrillScreen`; the module quiz does
+/// not exist yet.
 class TopicOverviewScreen extends ConsumerWidget {
   const TopicOverviewScreen({
     super.key,
@@ -168,7 +170,7 @@ class _TopicBody extends StatelessWidget {
   }
 }
 
-class _LessonList extends StatelessWidget {
+class _LessonList extends ConsumerWidget {
   const _LessonList({
     required this.course,
     required this.module,
@@ -186,8 +188,24 @@ class _LessonList extends StatelessWidget {
   final bool canPractise;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final hasNotes = topic.hasNotes && course.subjectId != null;
+
+    // A catalog-only placeholder topic has no Firestore document, so it
+    // cannot have resources and is not queried.
+    final resourcesAsync = topic.isPlaceholder
+        ? const AsyncData(<LearnResource>[])
+        : ref.watch(topicResourcesProvider(topic.id));
+    final resources = resourcesAsync.asData?.value ?? const <LearnResource>[];
+
+    // A failed load must not masquerade as "no lessons yet": the
+    // placeholder rows below would hide it completely.
+    if (resourcesAsync.hasError) {
+      debugPrint(
+        'topicResourcesProvider(${topic.id}) failed: '
+        '${resourcesAsync.error}',
+      );
+    }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -195,42 +213,20 @@ class _LessonList extends StatelessWidget {
         _SectionHeading(label: 'Learn', accent: accent),
         const SizedBox(height: 12),
 
-        // Videos have no content model yet — no collection, no field, no
-        // seeded data. Two rows are shown so the lesson shape is visible,
-        // both explicitly disabled.
-        _LessonRow(
-          icon: Icons.play_circle_outline_rounded,
-          kind: 'Video',
-          title: 'Introduction to ${topic.name}',
-          subtitle: 'Not recorded yet',
-          accent: accent,
-          onTap: null,
-          disabledReason: 'Video lessons are not part of Paragon yet.',
-        ),
-        const SizedBox(height: 10),
-        _LessonRow(
-          icon: Icons.play_circle_outline_rounded,
-          kind: 'Video',
-          title: '${topic.name}: worked examples',
-          subtitle: 'Not recorded yet',
-          accent: accent,
-          onTap: null,
-          disabledReason: 'Video lessons are not part of Paragon yet.',
-        ),
-        const SizedBox(height: 10),
-
-        // The one Learn row that can become real without a schema change:
-        // `Topic.hasNotes` / `notesMarkdown` already exist and LearnScreen
-        // already renders them. No seeded topic sets them today.
-        _LessonRow(
-          icon: Icons.article_outlined,
-          kind: 'Article',
-          title: '${topic.name} — key ideas',
-          subtitle: hasNotes ? 'Read the notes' : 'Not written yet',
-          accent: accent,
-          onTap: hasNotes ? () => context.push('$drillPath/learn') : null,
-          disabledReason: 'Notes for this topic have not been written yet.',
-        ),
+        if (resourcesAsync.isLoading)
+          const LinearProgressIndicator(minHeight: 2)
+        else if (resourcesAsync.hasError)
+          Text(
+            "This topic's lessons couldn't be loaded. Try refreshing.",
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          )
+        else if (resources.isNotEmpty)
+          for (var i = 0; i < resources.length; i++) ...[
+            if (i > 0) const SizedBox(height: 10),
+            _resourceRow(context, resources[i]),
+          ]
+        else
+          ..._placeholderRows(context, hasNotes),
 
         const SizedBox(height: 28),
         _SectionHeading(label: 'Practice', accent: accent),
@@ -267,6 +263,91 @@ class _LessonList extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  /// One published resource. Only articles open: there is no video player
+  /// or inline-exercise screen yet, so those rows are listed, in author
+  /// order, but disabled with the reason.
+  Widget _resourceRow(BuildContext context, LearnResource r) {
+    switch (r.type) {
+      case LearnResourceType.article:
+        return _LessonRow(
+          icon: Icons.article_outlined,
+          kind: 'Article',
+          title: r.title,
+          subtitle: r.isAvailable ? 'Read' : 'Not written yet',
+          accent: accent,
+          onTap: r.isAvailable
+              ? () => context.push('/learn/topic/${topic.id}/article/${r.id}')
+              : null,
+          disabledReason: 'This article has not been written yet.',
+        );
+      case LearnResourceType.video:
+        return _LessonRow(
+          icon: Icons.play_circle_outline_rounded,
+          kind: 'Video',
+          title: r.title,
+          subtitle: 'Not available yet',
+          accent: accent,
+          onTap: null,
+          disabledReason: 'Video lessons are not part of Paragon yet.',
+        );
+      case LearnResourceType.exercise:
+      case LearnResourceType.unknown:
+        return _LessonRow(
+          icon: Icons.edit_note_rounded,
+          kind: 'Exercise',
+          title: r.title,
+          subtitle: 'Not available yet',
+          accent: accent,
+          onTap: null,
+          disabledReason:
+              'In-lesson exercises are not part of Paragon yet. '
+              'Use Practise below.',
+        );
+    }
+  }
+
+  /// The lesson shape shown for a topic with no published resources.
+  List<Widget> _placeholderRows(BuildContext context, bool hasNotes) {
+    return [
+      // Videos have no content model yet — no collection, no field, no
+      // seeded data. Two rows are shown so the lesson shape is visible,
+      // both explicitly disabled.
+      _LessonRow(
+        icon: Icons.play_circle_outline_rounded,
+        kind: 'Video',
+        title: 'Introduction to ${topic.name}',
+        subtitle: 'Not recorded yet',
+        accent: accent,
+        onTap: null,
+        disabledReason: 'Video lessons are not part of Paragon yet.',
+      ),
+      const SizedBox(height: 10),
+      _LessonRow(
+        icon: Icons.play_circle_outline_rounded,
+        kind: 'Video',
+        title: '${topic.name}: worked examples',
+        subtitle: 'Not recorded yet',
+        accent: accent,
+        onTap: null,
+        disabledReason: 'Video lessons are not part of Paragon yet.',
+      ),
+      const SizedBox(height: 10),
+
+      // The one Learn row that can become real without a schema change:
+      // `Topic.hasNotes` / `notesMarkdown` already exist and LearnScreen
+      // already renders them. No seeded topic sets them today.
+      _LessonRow(
+        icon: Icons.article_outlined,
+        kind: 'Article',
+        title: '${topic.name} — key ideas',
+        subtitle: hasNotes ? 'Read the notes' : 'Not written yet',
+        accent: accent,
+        onTap: hasNotes ? () => context.push('$drillPath/learn') : null,
+        disabledReason: 'Notes for this topic have not been written yet.',
+      ),
+    ];
   }
 }
 
@@ -407,7 +488,9 @@ class _LessonRowState extends State<_LessonRow> {
           ),
           const SizedBox(width: 12),
           Icon(
-            isEnabled ? Icons.chevron_right_rounded : Icons.lock_outline_rounded,
+            isEnabled
+                ? Icons.chevron_right_rounded
+                : Icons.lock_outline_rounded,
             size: isEnabled ? 22 : 16,
             color: isEnabled ? widget.accent : AppColors.borderDark,
           ),
@@ -479,9 +562,7 @@ class _PracticeRail extends StatelessWidget {
                       'papers, with feedback after every answer.'
                 : 'Questions for this topic have not been added to Paragon '
                       'yet. Check back as content lands.',
-            style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
-            ),
+            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
           ),
           const SizedBox(height: 16),
           SizedBox(

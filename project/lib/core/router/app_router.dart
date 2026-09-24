@@ -5,6 +5,9 @@ import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
+import 'package:paragon/features/admin/admin_article_editor_screen.dart';
+import 'package:paragon/features/admin/admin_home_screen.dart';
+import 'package:paragon/features/article_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
@@ -48,6 +51,12 @@ class _RouterNotifier extends ChangeNotifier {
     // Listening here also keeps the stream alive for the ref.read() below.
     _ref.listen<AsyncValue<dynamic>>(
       userDataProvider,
+      (previous, next) => notifyListeners(),
+    );
+    // The admin gate reads a custom claim from the ID token, which
+    // resolves after auth state does.
+    _ref.listen<AsyncValue<dynamic>>(
+      idTokenResultProvider,
       (previous, next) => notifyListeners(),
     );
   }
@@ -101,6 +110,19 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // through onboarding — a funnel that hides the privacy policy while
       // asking for a school and an age would be exactly backwards.
       if (isOnLegal) return null;
+
+      // ── Admin gate ─────────────────────────────────────────────────
+      // UI only. Every read and write the admin screens make is checked
+      // again by `isAdmin()` in firestore.rules, which is what actually
+      // protects drafts; this just keeps non-admins off screens that
+      // would only show them permission errors.
+      final isOnAdmin =
+          state.matchedLocation == '/admin' ||
+          state.matchedLocation.startsWith('/admin/');
+      if (isOnAdmin) {
+        if (ref.read(idTokenResultProvider).isLoading) return null;
+        if (!ref.read(isAdminProvider)) return '/';
+      }
 
       // Guests never onboard: an anonymous session has no profile to
       // complete, and the funnel would be a wall in front of "Browse as
@@ -254,6 +276,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicId: state.pathParameters['topicId']!,
         ),
       ),
+      // A published Learn article, opened from the topic page's Learn list.
+      GoRoute(
+        path: '/learn/topic/:topicId/article/:resourceId',
+        builder: (context, state) => ArticleScreen(
+          topicId: state.pathParameters['topicId']!,
+          resourceId: state.pathParameters['resourceId']!,
+        ),
+      ),
       GoRoute(
         path: '/waec',
         builder: (context, state) => const WaecSubjectScreen(),
@@ -306,6 +336,29 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/profile',
         builder: (context, state) => const ProfileSettingsScreen(),
+      ),
+
+      // ── Admin ───────────────────────────────────────────────────────
+      // Gated by the `admin` claim — see the admin gate above. `new` is
+      // declared before `:resourceId` so it is not read as an id. The
+      // edit path is the deep link in the draft-notification email; keep
+      // `tools/admin/notify_drafts.js` in step if it changes.
+      GoRoute(
+        path: '/admin',
+        builder: (context, state) => const AdminHomeScreen(),
+      ),
+      GoRoute(
+        path: '/admin/topic/:topicId/article/new',
+        builder: (context, state) => AdminArticleEditorScreen(
+          topicId: state.pathParameters['topicId']!,
+        ),
+      ),
+      GoRoute(
+        path: '/admin/topic/:topicId/article/:resourceId',
+        builder: (context, state) => AdminArticleEditorScreen(
+          topicId: state.pathParameters['topicId']!,
+          resourceId: state.pathParameters['resourceId']!,
+        ),
       ),
 
       // ── Legal ───────────────────────────────────────────────────────
