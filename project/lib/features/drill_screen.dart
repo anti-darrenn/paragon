@@ -18,6 +18,7 @@ import '../core/repositories/progress_repository.dart';
 import '../core/auth/guest_limits.dart';
 import '../core/learn/topic_test.dart';
 import '../core/repositories/learn_progress_repository.dart';
+import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_theme.dart' show AppTheme;
 
 class DrillScreen extends ConsumerStatefulWidget {
@@ -219,6 +220,17 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         appBar: AppBar(title: const Text('Drill')),
         body: _Locked(
           access: access,
+          // Whether this topic actually HAS a lesson decides what the
+          // locked screen is allowed to claim — see _Locked. Cheap: one
+          // small subcollection query, cached by Riverpod and shared with
+          // the topic page.
+          hasLesson:
+              ref
+                  .watch(topicResourcesProvider(widget.topicId))
+                  .asData
+                  ?.value
+                  .any((r) => r.isAvailable) ??
+              false,
           onTakeTest: widget.subjectId != null && widget.unitId != null
               ? () => context.push(
                   '/subject/${widget.subjectId}/unit/${widget.unitId}'
@@ -585,11 +597,22 @@ class _SessionSummary extends StatelessWidget {
 class _Locked extends StatelessWidget {
   const _Locked({
     required this.access,
+    required this.hasLesson,
     required this.onTakeTest,
     required this.onSignIn,
   });
 
   final DrillAccess access;
+
+  /// Whether this topic has any openable Learn resource.
+  ///
+  /// This screen used to tell every locked student that "the lesson above
+  /// covers everything it asks". Only one topic of 216 has a lesson, and
+  /// there is nothing above this screen anyway — so for practically
+  /// everyone that sentence was simply false, and two students were sent
+  /// to study material that does not exist. The gate may fairly ask for
+  /// 80%; it may not invent the teaching it is testing.
+  final bool hasLesson;
 
   /// Null when the screen was built without a subject/unit, which leaves
   /// no way to construct the test route. The explanation still shows.
@@ -612,10 +635,20 @@ class _Locked extends StatelessWidget {
       _ => (
         Icons.workspace_premium_outlined,
         'Pass the topic test first',
-        'Drill is focused practice for a topic you already understand. '
-            'Score $kTopicTestPassPercent% on the topic test to unlock it — '
-            'retakes are unlimited, and the lesson above covers everything '
-            'it asks.',
+        hasLesson
+            ? 'Drill is focused practice for a topic you already '
+                  'understand. Score $kTopicTestPassPercent% on the topic '
+                  'test to unlock it. The lesson for this topic covers what '
+                  'the test asks, and retakes are unlimited.'
+            // No lesson exists for this topic yet. Promise nothing that is
+            // not there; say where the questions come from instead, which
+            // is true and is genuinely useful to someone deciding whether
+            // they are ready.
+            : 'Drill is focused practice for a topic you already '
+                  'understand. Score $kTopicTestPassPercent% on the topic '
+                  "test to unlock it. The test is drawn from this topic's "
+                  'own past-paper and practice questions. Retakes are '
+                  'unlimited and each one draws a fresh set.',
       ),
     };
 
