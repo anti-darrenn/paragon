@@ -1,0 +1,60 @@
+# Emails the reviewers when a Learn draft is saved in the in-app editor.
+#
+# No Cloud Functions on Spark, so there is no "on write" trigger — this
+# polls instead. A run with no new drafts reads a handful of documents and
+# sends nothing. See tools/admin/notify_drafts.js for the full contract.
+#
+# Every 15 minutes, best effort: GitHub delays scheduled runs under load,
+# and disables schedules on a repo with no activity for 60 days. Trigger
+# it by hand from the Actions tab to send straight away.
+#
+# Requires repository secrets:
+#   FIREBASE_SERVICE_ACCOUNT — already used by maintenance.yml
+#   RESEND_API_KEY           — from resend.com
+# Optional repository variables:
+#   NOTIFY_FROM  — a sender on a Resend-verified domain. Until one is set,
+#                  Resend only delivers to the address the Resend account
+#                  was registered with.
+#   NOTIFY_TO    — comma-separated recipients (defaults in the script)
+name: notify-drafts
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+# Two overlapping runs could both read a draft as un-notified and send it
+# twice. Queue instead.
+concurrency:
+  group: notify-drafts
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install
+        working-directory: project/tools/admin
+        run: npm install --no-audit --no-fund
+
+      - name: Notify
+        working-directory: project/tools/admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM: ${{ vars.NOTIFY_FROM }}
+          NOTIFY_TO: ${{ vars.NOTIFY_TO }}
+        # Until the secret exists, skip rather than fail: a failing
+        # schedule sends a failure email every 15 minutes.
+        run: |
+          if [ -z "$RESEND_API_KEY" ]; then
+            echo "::notice::RESEND_API_KEY is not set; skipping draft notifications."
+            exit 0
+          fi
+          node notify_drafts.js

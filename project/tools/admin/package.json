@@ -8,7 +8,8 @@
     "guests": "node jobs.js --job=guests",
     "orphans": "node jobs.js --job=orphans",
     "streaks": "node jobs.js --job=streaks",
-    "all": "node jobs.js --job=all"
+    "all": "node jobs.js --job=all",
+    "notify-drafts": "node notify_drafts.js"
   },
   "dependencies": {
     "firebase-admin": "^13.0.0"
