@@ -96,7 +96,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-49 checks. The denials are the content: a write that succeeds only proves something
+55 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -128,6 +128,26 @@ value behind it and it needs a server first. Grandfathering is the one
 place `progress/{uid}` touches *access*; it stays honest only because it is
 one-way — it can grant access, never withhold it — so a missing or stale
 progress document can never cost a student anything.
+
+**Admin / content editor.** The only privileged role is the `admin` custom
+claim on the Auth token — set by `tools/admin/set_admin_claim.js` (or
+`create_admin_user.js`, which also provisions or `--upgrade`s an account),
+never a field on `users/{uid}`, since anything a client can write there it
+can grant itself. `firestore.rules` checks it with `isAdmin()`;
+`isAdminProvider` reads it for the UI only. `/admin` (reached from Settings
+→ Content editor) lists drafts across every topic and edits **articles**;
+videos and exercises are still seeder-only. Editor articles are written as
+`status: 'draft'` and go live on Publish. `notify_drafts.js`, run every 15
+minutes by `.github/workflows/notify-drafts.yml`, emails the reviewers via
+Resend (`RESEND_API_KEY` secret) and stamps `notifiedAt` so it sends once.
+The workflow skips cleanly while that secret is unset — Resend is not set up
+yet (the account was held for review on 2026-09-24). Students see published
+articles on the topic page's Learn list (`TopicOverviewScreen`) and read
+them at `/learn/topic/:topicId/article/:resourceId` (`ArticleScreen`);
+videos and in-lesson exercises are listed there but have no player or
+screen yet.
+A claim change reaches a signed-in session only after a token refresh
+(up to an hour) or a fresh sign-in.
 
 **Progress and mastery.** `lib/core/progress/mastery.dart` is the pure model —
 `MasteryLevel` (notStarted/attempted/familiar/proficient/mastered), the thresholds,
@@ -186,6 +206,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
+- `topics/{id}/resources/{id}.status` is `draft | published` and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
@@ -213,7 +234,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 223 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 231 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
