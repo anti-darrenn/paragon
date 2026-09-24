@@ -49,6 +49,41 @@ void main() {
     });
   });
 
+  group('ResourceStatus.parse — must agree with firestore.rules', () {
+    // The rule: readable by students iff `status` is exactly 'published'.
+    // The editor's badge must say the same thing, or it will call an
+    // article published that no student can see.
+    test('exactly "published" is published', () {
+      expect(ResourceStatus.parse('published'), ResourceStatus.published);
+    });
+
+    test('a missing status is hidden by the rules, so it is a draft', () {
+      // "Missing means published" was a rules clause once; it leaked
+      // drafts through unfiltered lists and was removed. The model must
+      // not quietly keep the old reading.
+      expect(ResourceStatus.parse(null), ResourceStatus.draft);
+      expect(
+        LearnResource.fromFirestore(FakeDoc('r', {'type': 'article'})).status,
+        ResourceStatus.draft,
+      );
+    });
+
+    test('anything else is hidden from students, so it is a draft', () {
+      // Control: these are the values a looser parser would get wrong.
+      for (final v in ['draft', 'Published', ' published', '', 'live', 1, true]) {
+        expect(ResourceStatus.parse(v), ResourceStatus.draft, reason: 'from "$v"');
+      }
+    });
+
+    test('createdBy is optional', () {
+      expect(LearnResource.fromFirestore(FakeDoc('r', {})).createdBy, isNull);
+      expect(
+        LearnResource.fromFirestore(FakeDoc('r', {'createdBy': 'uid1'})).createdBy,
+        'uid1',
+      );
+    });
+  });
+
   group('LearnResource.fromFirestore never throws', () {
     final malformed = <String, Map<String, dynamic>?>{
       'null payload (deleted doc)': null,

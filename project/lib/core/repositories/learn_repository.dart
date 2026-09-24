@@ -19,10 +19,13 @@ final _firestoreProvider = Provider<FirebaseFirestore>((ref) {
   return FirebaseFirestore.instance;
 });
 
-/// A topic's Learn sequence, in author order.
+/// A topic's published Learn sequence, in author order.
 ///
-/// One query, no composite index — `orderBy('order')` inside a
-/// subcollection is served by the automatic single-field index. Resources
+/// The `status == 'published'` filter is load-bearing, not cosmetic:
+/// `firestore.rules` refuses any list that could return a draft, so
+/// dropping it turns every Learn screen into a permission error. Served by
+/// the `status + order` composite index. Admins read drafts through
+/// `adminTopicResourcesProvider` instead. Resources
 /// whose `type` this build does not recognise are dropped here rather than
 /// in every widget that lists them, so an older client seeing a newer
 /// resource type shows a shorter list instead of a broken row.
@@ -36,6 +39,7 @@ final topicResourcesProvider =
           .collection('topics')
           .doc(topicId)
           .collection('resources')
+          .where('status', isEqualTo: 'published')
           .orderBy('order')
           .get();
 

@@ -37,6 +37,7 @@
  * And one that is deliberately NOT in `all`, to be run once by hand:
  *
  *   node jobs.js --job=dropstreak [--apply]
+ *   node jobs.js --job=resourcestatus [--apply]
  *
  * Dry run by default. Nothing is written without --apply.
  *
@@ -256,6 +257,46 @@ async function jobDropStreakFields() {
   log(`   ${cleared} cleared`);
 }
 
+// ─── Job: backfill resource status (one-shot) ────────────────────────
+
+/**
+ * Stamps `status: 'published'` on every Learn resource that has no
+ * `status`.
+ *
+ * The student query is `where('status', '==', 'published')`, equality
+ * filters never match a missing field, and the rules hide any resource
+ * without `status: 'published'`. A status-less resource is therefore
+ * invisible to students. Ran once on 2026-09-24 (6 resources); kept for
+ * any restore from an old backup.
+ *
+ * One-shot and not in `all`, like dropstreak: the seeder now writes the
+ * field and the editor always does, so nothing produces a status-less
+ * resource again.
+ *
+ *   node jobs.js --job=resourcestatus            # dry run
+ *   node jobs.js --job=resourcestatus --apply
+ */
+async function jobResourceStatus() {
+  log(`\n── Backfill status on Learn resources [${mode()}]`);
+
+  const all = await db.collectionGroup("resources").get();
+  const missing = all.docs.filter((d) => d.data().status === undefined);
+
+  log(`   ${missing.length} of ${all.size} resources have no status`);
+
+  if (APPLY) {
+    for (let i = 0; i < missing.length; i += 400) {
+      const batch = db.batch();
+      for (const doc of missing.slice(i, i + 400)) {
+        batch.update(doc.ref, { status: "published" });
+      }
+      await batch.commit();
+    }
+  }
+
+  log(`   ${missing.length} ${APPLY ? "stamped" : "would be stamped"} published`);
+}
+
 // ─── Job: subject.topicCount ─────────────────────────────────────────
 
 /**
@@ -319,6 +360,7 @@ async function main() {
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
+  if (JOB === "resourcestatus") await jobResourceStatus();
 
   if (!APPLY) log("\nDry run — nothing written. Re-run with --apply.");
   process.exit(0);

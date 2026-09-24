@@ -16,8 +16,10 @@
  * REST API, so every request is evaluated by the real deployed rules. It
  * uses **no Admin SDK for any assertion**: the Admin SDK bypasses rules
  * entirely, so a test written with it would pass no matter how wrong the
- * rules were. Admin is used only to tidy up afterwards, and only for the
- * one thing a client deliberately cannot delete — a username reservation.
+ * rules were. Admin is used only for setup and cleanup: seeding a draft
+ * for the draft-wall checks to run against (no client can create one —
+ * that is the point), then removing it and the one other thing a client
+ * deliberately cannot delete, a username reservation.
  *
  * ── Why the failures matter more than the successes ──────────────────
  *
@@ -146,6 +148,68 @@ async function readDoc(idToken, path) {
   });
   return { status: res.status, body: await res.json() };
 }
+
+/**
+ * Runs a structured query under `parentPath` ('' for the database root,
+ * which is where collection-group queries run).
+ */
+async function runQuery(idToken, parentPath, structuredQuery) {
+  const url = parentPath ? `${DOCS}/${parentPath}:runQuery` : `${DOCS}:runQuery`;
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${idToken}`,
+    },
+    body: JSON.stringify({ structuredQuery }),
+  });
+  const body = await res.json();
+  // runQuery answers with an array; surface its error for brief().
+  return {
+    status: res.status,
+    body: Array.isArray(body) ? body.find((r) => r.error) || {} : body,
+    rows: Array.isArray(body) ? body.filter((r) => r.document) : [],
+  };
+}
+
+// ─── Admin SDK — setup and teardown only, never an assertion ─────────
+
+let adminSdk;
+function getAdmin() {
+  if (!adminSdk) adminSdk = require('./credential').initAdmin();
+  return adminSdk;
+}
+
+const verifyResources = () =>
+  getAdmin().firestore().collection('topics').doc('zz_verify_topic').collection('resources');
+
+/** Seeds one draft and one published article. False without credentials. */
+async function seedResources() {
+  try {
+    const now = getAdmin().firestore.Timestamp.now();
+    const base = { type: 'article', topicId: 'zz_verify_topic', subjectId: 'zz', body: 'x' };
+    await verifyResources().doc('zz_verify_draft').set({
+      ...base, title: 'draft', order: 1, status: 'draft',
+      // Pre-stamped so the draft notifier never emails about it.
+      notifiedAt: now,
+    });
+    await verifyResources().doc('zz_verify_published').set({
+      ...base, title: 'published', order: 0, status: 'published',
+    });
+    return true;
+  } catch (e) {
+    console.log(`    (could not seed resources: ${e.message.slice(0, 80)})`);
+    return false;
+  }
+}
+
+const statusIs = (value) => ({
+  fieldFilter: {
+    field: { fieldPath: 'status' },
+    op: 'EQUAL',
+    value: { stringValue: value },
+  },
+});
 
 async function deleteDoc(idToken, path) {
   const res = await fetch(`${DOCS}/${path}`, {
@@ -645,7 +709,7 @@ async function learnGate(a, b) {
 }
 
 async function content(a) {
-  suite('content — readable, never writable');
+  suite('content — readable, never writable by a student');
 
   expectOutcome(
     'a signed-in student can read subjects',
@@ -653,18 +717,77 @@ async function content(a) {
     await readDoc(a.idToken, 'subjects'),
   );
 
-  // Learn resources live in a SUBcollection, and Firestore rules do not
-  // cascade — `match /topics/{id}` grants nothing beneath it. So this is
-  // the check that the dedicated block exists at all: without it the read
-  // is denied and Learn mode renders an empty lesson list on every topic.
+  // ── The draft wall ──
+  // Run against a topic that REALLY holds a draft and a published article.
+  // An earlier version checked an empty collection, passed, and missed a
+  // live leak: an unfiltered list returned drafts to any student. Seeding
+  // is setup only; every assertion below is still made as a client.
+  const seeded = await seedResources();
+  if (!seeded) {
+    record(
+      'draft-wall checks need a real draft to test against',
+      false,
+      'no admin credentials to seed one — these checks did not run',
+    );
+  } else {
+    // Resources live in a SUBcollection and rules do not cascade. This is
+    // the exact query `topicResourcesProvider` runs, so it also proves the
+    // status + order index exists — a missing one comes back as a 400.
+    const published = await runQuery(a.idToken, 'topics/zz_verify_topic', {
+      from: [{ collectionId: 'resources' }],
+      where: statusIs('published'),
+      orderBy: [{ field: { fieldPath: 'order' }, direction: 'ASCENDING' }],
+    });
+    expectOutcome(
+      "a signed-in student can run the app's published-resources query",
+      ALLOW,
+      published,
+    );
+    const ids = (published.rows || []).map((r) => r.document.name.split('/').pop());
+    record(
+      'that query returns the published article and not the draft',
+      ids.includes('zz_verify_published') && !ids.includes('zz_verify_draft'),
+      `returned ${JSON.stringify(ids)}`,
+    );
+
+    // Rules are not filters: an unfiltered list could return a draft, so
+    // it must be refused whole. If this passes, drafts are public.
+    expectOutcome(
+      'an unfiltered list of resources is refused (it contains a draft)',
+      DENY,
+      await readDoc(a.idToken, 'topics/zz_verify_topic/resources'),
+    );
+
+    expectOutcome(
+      'a student cannot read a draft directly by id',
+      DENY,
+      await readDoc(a.idToken, 'topics/zz_verify_topic/resources/zz_verify_draft'),
+    );
+  }
+
   expectOutcome(
-    'a signed-in student can read the learn resources of a topic',
-    ALLOW,
-    await readDoc(a.idToken, 'topics/zz_verify_topic/resources'),
+    'a student cannot query for drafts',
+    DENY,
+    await runQuery(a.idToken, 'topics/zz_verify_topic', {
+      from: [{ collectionId: 'resources' }],
+      where: statusIs('draft'),
+    }),
   );
 
   expectOutcome(
-    'learn resources cannot be written by a client',
+    'a student cannot run the admin drafts query across all topics',
+    DENY,
+    await runQuery(a.idToken, '', {
+      from: [{ collectionId: 'resources', allDescendants: true }],
+      where: statusIs('draft'),
+    }),
+  );
+
+  // Only DENY cases for writes: an anonymous token cannot carry the
+  // `admin` claim, so the admin ALLOW path is exercised by hand in the
+  // editor, not here.
+  expectOutcome(
+    'learn resources cannot be written by a non-admin client',
     DENY,
     await commit(
       a.idToken,
@@ -711,17 +834,19 @@ async function teardown(a, b, usernameKey) {
   console.log('    throwaway accounts and their documents removed');
 
   try {
-    const admin = require('firebase-admin');
-    const path = require('path');
-    const keyPath = path.join(
-      __dirname,
-      '..',
-      'scraper',
-      'data',
-      'serviceAccountKey.json',
+    for (const id of ['zz_verify_draft', 'zz_verify_published']) {
+      await verifyResources().doc(id).delete();
+    }
+    console.log('    seeded verify resources removed (admin)');
+  } catch (e) {
+    console.log(
+      `    NOTE: could not remove topics/zz_verify_topic/resources/* ` +
+        `(${e.message.slice(0, 60)}). Delete them by hand.`,
     );
-    admin.initializeApp({ credential: admin.credential.cert(require(keyPath)) });
-    await admin.firestore().collection('usernames').doc(usernameKey).delete();
+  }
+
+  try {
+    await getAdmin().firestore().collection('usernames').doc(usernameKey).delete();
     console.log(`    reservation ${usernameKey} removed (admin)`);
   } catch (e) {
     console.log(

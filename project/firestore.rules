@@ -14,13 +14,38 @@ service cloud.firestore {
     // the `topics/{id}` rule above says nothing about what lives beneath
     // it, and without this every read here would be denied.
     //
-    // Same posture as the rest of the content tree: readable by any
-    // signed-in user (a guest included — Learn content is deliberately
-    // ungated; only drill is gated), never writable from a client.
-    // Resources are seeded with the Admin SDK, which bypasses rules.
+    // Published resources are readable by any signed-in user (a guest
+    // included — Learn content is deliberately ungated; only drill is
+    // gated). Drafts are readable only by an admin.
+    //
+    // Rules are not filters: a list query is refused outright unless it
+    // provably returns only readable documents. So a student's query MUST
+    // carry `where('status', '==', 'published')` — see
+    // `topicResourcesProvider` — and an unfiltered list is denied.
+    //
+    // Do NOT add a "missing status counts as published" clause here. It was
+    // tried: when evaluating a list, Firestore models `resource.data` from
+    // the query's filters, so for an unfiltered query `!('status' in
+    // resource.data)` is true and the whole list — drafts included — is
+    // allowed. Measured against production, not assumed. Every resource
+    // now carries `status` (`jobs.js --job=resourcestatus` backfilled the
+    // old ones; the seeder and editor always write it), so none is needed.
+    //
+    // Writes: admins only, through the in-app editor. The seeder still
+    // uses the Admin SDK, which bypasses rules.
     match /topics/{topicId}/resources/{resourceId} {
-      allow read: if request.auth != null;
-      allow write: if false;
+      allow read: if request.auth != null
+        && (resource.data.status == 'published' || isAdmin());
+      allow write: if isAdmin();
+    }
+
+    // Collection-group reads across every topic's resources: the admin
+    // "awaiting review" list and nothing else. A collection-group query is
+    // matched only by a recursive wildcard like this one, never by the
+    // path-scoped block above, so without it the query is refused even
+    // for an admin.
+    match /{path=**}/resources/{resourceId} {
+      allow read: if isAdmin();
     }
 
     // ── USER DOCUMENTS ──────────────────────────────────────────
@@ -93,6 +118,14 @@ service cloud.firestore {
 
     function isOwner(uid) {
       return request.auth != null && request.auth.uid == uid;
+    }
+
+    // A custom claim on the ID token, set only by
+    // `tools/admin/set_admin_claim.js` with the Admin SDK. Never a field on
+    // `users/{uid}` — anything a client can write there, a client can
+    // grant itself.
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
     }
 
     // Governs the username/usernameKey pair on an update. Three cases:

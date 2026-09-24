@@ -9,11 +9,12 @@ import 'firestore_parsing.dart';
 ///
 /// `topics/{topicId}/resources/{resourceId}`, a subcollection. Every other
 /// collection in this app is top-level, so the departure is worth naming:
-/// resources are only ever read for one topic at a time, and a
-/// subcollection orders them by `order` with no composite index at all,
-/// where a top-level `resources` collection would need `topicId + order`
-/// added to `firestore.indexes.json`. Firestore rules do not cascade into
-/// subcollections, so this path has its own `allow read` block.
+/// resources are only ever read for one topic at a time. The student query
+/// is `status == 'published'` ordered by `order`, which needs the
+/// `status + order` composite index in `firestore.indexes.json` — the
+/// status filter is not optional, because the rules refuse any list that
+/// could return a draft. Firestore rules do not cascade into
+/// subcollections, so this path has its own block.
 ///
 /// Document ids are **slugs, not auto-ids**. CLAUDE.md requires auto-ids
 /// for `questions`, and the reason is specific to them:
@@ -69,6 +70,25 @@ enum LearnResourceType {
   };
 }
 
+/// Whether students can see a resource.
+///
+/// Drafts are written by the in-app editor and are visible only to admins
+/// until published.
+///
+/// Parsed exactly the way `firestore.rules` reads it, so the editor never
+/// labels something "Published" that students cannot actually see: only
+/// the exact string `published` is visible to students. Anything else —
+/// including a missing field — is hidden by the rules, so it is [draft].
+/// (Every resource carries the field; see the rules file for why "missing
+/// means published" was tried and removed.)
+enum ResourceStatus {
+  draft,
+  published;
+
+  static ResourceStatus parse(dynamic value) =>
+      value == 'published' ? ResourceStatus.published : ResourceStatus.draft;
+}
+
 class LearnResource {
   const LearnResource({
     required this.id,
@@ -84,6 +104,8 @@ class LearnResource {
     this.transcript,
     this.body = '',
     this.questionCount = 0,
+    this.status = ResourceStatus.published,
+    this.createdBy,
   });
 
   final String id;
@@ -134,6 +156,12 @@ class LearnResource {
   /// the default" — see `kDefaultExerciseQuestions`.
   final int questionCount;
 
+  final ResourceStatus status;
+
+  /// Uid of the admin who authored it in the editor. Null for seeded
+  /// content. Audit only — access is decided by the `admin` claim.
+  final String? createdBy;
+
   /// True when the resource can actually be opened.
   ///
   /// A video with no `youtubeId` and an article with no `body` are both
@@ -162,6 +190,8 @@ class LearnResource {
       transcript: asStringOrNull(d['transcript']),
       body: asString(d['body']),
       questionCount: asInt(d['questionCount']),
+      status: ResourceStatus.parse(d['status']),
+      createdBy: asStringOrNull(d['createdBy']),
     );
   }
 }

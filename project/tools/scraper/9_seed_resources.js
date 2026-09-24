@@ -257,7 +257,13 @@ async function seedTopic(plan) {
       // set() without merge: the authored file is the whole truth for a
       // resource, so a field deleted from the file must disappear from the
       // document rather than linger from a previous run.
+      //
+      // That includes `status`: seeded content goes live immediately, as it
+      // always has, and a resource id that collides with an article written
+      // in the in-app editor is overwritten and published. Editor ids are
+      // slugs of the title, so keep file names distinct from those.
       batch.set(ref, {
+        status: 'published',
         type: r.type,
         order: r.order,
         title: r.title,
