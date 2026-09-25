@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'core/providers/analytics_binding.dart';
+import 'core/providers/reading_settings_provider.dart';
 import 'core/router/app_router.dart';
+import 'core/theme/app_colors.dart';
 import 'core/theme/app_theme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,6 +15,7 @@ class ParagonApp extends ConsumerWidget {
     // changes and to auth state. Nothing reads its value — see
     // analytics_binding.dart.
     ref.watch(analyticsBindingProvider);
+    final readingSettingsLoading = ref.watch(readingPrefsProvider).isLoading;
 
     return MaterialApp.router(
       title: 'Paragon',
@@ -21,6 +24,16 @@ class ParagonApp extends ConsumerWidget {
       darkTheme: AppTheme.dark,
       themeMode: ThemeMode.dark,
       routerConfig: ref.watch(appRouterProvider),
+      // Reading settings (text size) apply above the Navigator, so every
+      // route and dialog gets them. The first frame waits for the stored
+      // settings — a local read, resolved within a frame — so a student
+      // who chose large text never sees the app at the default size first.
+      builder: (context, child) {
+        if (readingSettingsLoading) {
+          return const ColoredBox(color: AppColors.backgroundDark);
+        }
+        return ReadingSettingsScope(child: child ?? const SizedBox.shrink());
+      },
     );
   }
 }
