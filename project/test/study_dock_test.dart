@@ -22,6 +22,30 @@ class _FakeTool extends StudyTool {
       Text('$label panel for ${scope.subjectName}');
 }
 
+/// Keeps a counter in the dock's [StudySession].
+class _CounterTool extends StudyTool {
+  const _CounterTool();
+  @override
+  StudyToolId get id => StudyToolId.scratchpad;
+  @override
+  String get label => 'Counter';
+  @override
+  IconData get icon => Icons.add;
+  @override
+  StudyPanelMode get mode => StudyPanelMode.panel;
+  @override
+  Widget build(BuildContext context, StudyScope scope, VoidCallback close) =>
+      StatefulBuilder(
+        builder: (context, setState) {
+          final box = StudySession.of(context).putIfAbsent('n', () => [0]);
+          return TextButton(
+            onPressed: () => setState(() => box[0]++),
+            child: Text('count ${box[0]}'),
+          );
+        },
+      );
+}
+
 const _calc = _FakeTool(StudyToolId.calculator, 'Calculator');
 const _sheet = _FakeTool(StudyToolId.formulaSheet, 'Formula sheet');
 
@@ -126,6 +150,31 @@ void main() {
     testWidgets('control: Government gets no calculator', (tester) async {
       await _pump(tester, subjectId: 'g1', tools: const [_calc]);
       expect(find.byTooltip('Study tools'), findsNothing);
+    });
+
+    testWidgets('session state survives reopening but not a new screen', (tester) async {
+      await _pump(tester, subjectId: 'm1', tools: const [_CounterTool()]);
+      Future<void> open() async {
+        await tester.tap(find.byTooltip('Study tools'));
+        await tester.pumpAndSettle();
+        await tester.tap(find.text('Counter'));
+        await tester.pumpAndSettle();
+      }
+
+      await open();
+      await tester.tap(find.text('count 0'));
+      await tester.pumpAndSettle();
+      expect(find.text('count 1'), findsOneWidget);
+      await tester.tap(find.byTooltip('Close'));
+      await tester.pumpAndSettle();
+      await open();
+      expect(find.text('count 1'), findsOneWidget);
+
+      // A new screen is a new dock, and a fresh session.
+      await tester.pumpWidget(const SizedBox());
+      await _pump(tester, subjectId: 'm1', tools: const [_CounterTool()]);
+      await open();
+      expect(find.text('count 0'), findsOneWidget);
     });
 
     testWidgets('a page tool opens as its own page', (tester) async {

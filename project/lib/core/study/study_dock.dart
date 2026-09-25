@@ -43,6 +43,10 @@ class StudyDock extends ConsumerStatefulWidget {
 class _StudyDockState extends ConsumerState<StudyDock> {
   StudyTool? _open;
 
+  /// Per-visit tool state; see [StudySession]. Lives and dies with this
+  /// dock, which lives and dies with the screen.
+  final _session = StudySession();
+
   void _close() => setState(() => _open = null);
 
   Future<void> _pick(List<StudyTool> available, StudyScope scope) async {
@@ -90,7 +94,13 @@ class _StudyDockState extends ConsumerState<StudyDock> {
           builder: (page) => Scaffold(
             backgroundColor: AppColors.backgroundDark,
             appBar: AppBar(title: Text(tool.label)),
-            body: tool.build(page, scope, () => Navigator.of(page).pop()),
+            body: StudySessionScope(
+              session: _session,
+              child: Builder(
+                builder: (inner) =>
+                    tool.build(inner, scope, () => Navigator.of(page).pop()),
+              ),
+            ),
           ),
         ),
       );
@@ -118,37 +128,44 @@ class _StudyDockState extends ConsumerState<StudyDock> {
     return LayoutBuilder(
       builder: (context, box) {
         final wide = box.maxWidth >= 720;
-        return Stack(
-          children: [
-            Positioned.fill(child: widget.child),
-            if (open == null || open.mode != StudyPanelMode.overlay)
-              Positioned(
-                right: 0,
-                top: box.maxHeight * 0.38,
-                child: _ToolsTab(onTap: () => _pick(available, scope)),
-              ),
-            if (open != null && open.mode == StudyPanelMode.overlay)
-              Positioned.fill(child: open.build(context, scope, _close)),
-            if (open != null && open.mode == StudyPanelMode.panel)
-              wide
-                  ? Positioned(
-                      right: 44,
-                      bottom: 24,
-                      width: 360,
-                      child: _Panel(tool: open, scope: scope, close: _close),
-                    )
-                  : Positioned(
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      child: ConstrainedBox(
-                        constraints: BoxConstraints(
-                          maxHeight: box.maxHeight * 0.6,
-                        ),
+        return StudySessionScope(
+          session: _session,
+          child: Stack(
+            children: [
+              Positioned.fill(child: widget.child),
+              if (open == null || open.mode != StudyPanelMode.overlay)
+                Positioned(
+                  right: 0,
+                  top: box.maxHeight * 0.38,
+                  child: _ToolsTab(onTap: () => _pick(available, scope)),
+                ),
+              if (open != null && open.mode == StudyPanelMode.overlay)
+                Positioned.fill(child: open.build(context, scope, _close)),
+              if (open != null && open.mode == StudyPanelMode.panel)
+                wide
+                    ? Positioned(
+                        right: 44,
+                        bottom: 24,
+                        width: 360,
                         child: _Panel(tool: open, scope: scope, close: _close),
+                      )
+                    : Positioned(
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxHeight: box.maxHeight * 0.6,
+                          ),
+                          child: _Panel(
+                            tool: open,
+                            scope: scope,
+                            close: _close,
+                          ),
+                        ),
                       ),
-                    ),
-          ],
+            ],
+          ),
         );
       },
     );

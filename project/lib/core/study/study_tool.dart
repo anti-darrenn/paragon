@@ -45,6 +45,48 @@ enum StudyPanelMode {
   page,
 }
 
+/// State that lives exactly as long as one visit to a screen.
+///
+/// Created by the screen's `StudyDock` and dropped when the student leaves
+/// it. For tool state that must survive closing and reopening a panel but
+/// must **not** follow the student to the next screen — rough work on one
+/// question has no business appearing over the next exam. State that
+/// should persist across screens (a calculator's memory, like a real
+/// calculator's) belongs in a Riverpod provider instead.
+class StudySession {
+  final Map<Object, Object?> _values = {};
+
+  /// The value stored under [key], creating it on first use.
+  T putIfAbsent<T>(Object key, T Function() create) =>
+      _values.putIfAbsent(key, create) as T;
+
+  void set(Object key, Object? value) => _values[key] = value;
+
+  /// The session of the nearest `StudyDock`. Throws if there is none —
+  /// a tool is only ever built by a dock.
+  static StudySession of(BuildContext context) {
+    final scope = context
+        .dependOnInheritedWidgetOfExactType<StudySessionScope>();
+    assert(scope != null, 'StudySession.of called outside a StudyDock');
+    return scope!.session;
+  }
+}
+
+/// Provides a [StudySession] to the tools a `StudyDock` builds.
+class StudySessionScope extends InheritedWidget {
+  const StudySessionScope({
+    super.key,
+    required this.session,
+    required super.child,
+  });
+
+  final StudySession session;
+
+  @override
+  bool updateShouldNotify(StudySessionScope oldWidget) =>
+      session != oldWidget.session;
+}
+
 /// One tool in the study dock.
 ///
 /// **The contract for adding a tool:** implement this, then add one entry
