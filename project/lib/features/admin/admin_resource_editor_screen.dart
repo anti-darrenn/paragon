@@ -520,7 +520,7 @@ class _AdminResourceEditorScreenState
                     ),
                   ),
                   const SizedBox(height: 16),
-                  ArticleView(body: r.body),
+                  ArticleView(body: r.body, authorPreview: true),
                 ],
               ),
             },

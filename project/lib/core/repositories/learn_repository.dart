@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/learn_resource.dart';
+import '../models/lesson_asset.dart';
 import '../models/question.dart';
 
 /// Learn mode's reads: a topic's ordered resource list, and the question
@@ -209,3 +210,17 @@ final exerciseQuestionsProvider =
         count,
       );
     });
+
+/// One lesson image, `lessonAssets/{id}`. Null when it does not exist —
+/// the figure then says so instead of failing the whole article.
+final lessonAssetProvider = FutureProvider.family<LessonAsset?, String>((
+  ref,
+  id,
+) async {
+  final doc = await ref
+      .read(_firestoreProvider)
+      .collection('lessonAssets')
+      .doc(id)
+      .get();
+  return doc.exists ? LessonAsset.fromFirestore(doc) : null;
+});
