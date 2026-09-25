@@ -23,6 +23,7 @@ import 'package:paragon/features/drill_screen.dart';
 import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
+import 'package:paragon/features/settings/reading_settings_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
@@ -346,6 +347,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/profile',
         builder: (context, state) => const ProfileSettingsScreen(),
+      ),
+      // Text size, line spacing, reading font, low-data mode. Per device.
+      GoRoute(
+        path: '/settings/reading',
+        builder: (context, state) => const ReadingSettingsScreen(),
       ),
 
       // ── Admin ───────────────────────────────────────────────────────

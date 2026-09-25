@@ -99,6 +99,17 @@ class SettingsScreen extends ConsumerWidget {
                       const SizedBox(height: 20),
                     ],
 
+                    // Per device, so guests get it too.
+                    _Card(
+                      children: [
+                        _LinkRow(
+                          label: 'Reading and data',
+                          onTap: () => context.push('/settings/reading'),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+
                     if (isAdmin) ...[
                       _Card(
                         children: [
