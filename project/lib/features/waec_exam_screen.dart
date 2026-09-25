@@ -334,7 +334,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     }
     final questions = session.questions;
 
-    return Scaffold(
+    final scaffold = Scaffold(
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.close, size: 20),
@@ -381,6 +381,18 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               onExit: () => context.go('/waec'),
             )
           : _buildActiveExam(questions),
+    );
+
+    // Android back and the back gesture would otherwise drop a timed exam
+    // without a word; only the close button asked. Route them to the same
+    // dialog. (Browser back and closing the tab cannot be intercepted this
+    // way; resuming an exam is still deferred work.)
+    return PopScope(
+      canPop: _examSubmitted,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _confirmExit();
+      },
+      child: scaffold,
     );
   }
 

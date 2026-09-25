@@ -159,6 +159,31 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     }
   }
 
+  Future<void> _confirmLeave() async {
+    final leave = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.surfaceDark,
+        title: const Text('Leave the test?'),
+        content: const Text("Your answers so far won't be saved."),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: const Text('Keep going'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: const Text(
+              'Leave',
+              style: TextStyle(color: AppColors.wrong),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (leave == true && mounted) context.pop();
+  }
+
   void _retake() {
     // A fresh subset, not the same ten again — retakes are unlimited, so a
     // fixed set would make the gate a memory test.
@@ -185,7 +210,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
       _priorRecord = stored.forTopic(widget.topicId);
     }
 
-    return Scaffold(
+    final scaffold = Scaffold(
       appBar: AppBar(title: const Text('Topic test')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -225,6 +250,16 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
           );
         },
       ),
+    );
+
+    // Once a question is answered, back asks first: leaving throws the
+    // attempt away, and the pass mark gates drill.
+    return PopScope(
+      canPop: _submitted || _answers.isEmpty,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _confirmLeave();
+      },
+      child: scaffold,
     );
   }
 }
