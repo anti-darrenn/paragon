@@ -1,5 +1,5 @@
 # Project Paragon — Cursor Rules
-# Last updated: 2026-05-19
+# Last updated: 2026-09-25
 # Stack: Flutter · Riverpod v3.3.1 · go_router v17 · Firebase v4+ · Node.js scrapers
 # OS: Windows (PowerShell commands always)
 
@@ -443,8 +443,6 @@ If flutterfire CLI stops working — add to System PATH permanently:
 
 These are explicitly deferred. Do not add them unless the developer asks:
 
-- 4_scrape_answers.js — scraping correct answers (all correctIndex = -1 currently)
-- DrillScreen score summary screen (currently just pops on completion)
 - Google Sign In on Android (signInWithPopup is web-only; google_sign_in mobile wiring is deferred)
 - Fix com.example.paragon org name in android/app/build.gradle (deferred to Android session)
 - Question image support in FullLatexView (deferred)
@@ -452,9 +450,8 @@ These are explicitly deferred. Do not add them unless the developer asks:
 - Offline/PWA support (Phase 3)
 - AI-generated explanations (Phase 3)
 - Gamification — XP, achievements (Session 13; streaks removed, not deferred)
-- Learn mode — video embed, notes per topic (Session 9)
 - iOS build (needs macOS — fully deferred)
-- Chemistry, Economics, Biology content (Phase 2 content expansion)
+- Economics, Biology content (Phase 2 content expansion; Chemistry and Government are live)
 
 The weeklyAttemptsCountProvider's missing Firestore index is fixed (deployed via
 `firebase deploy --only firestore:indexes`, confirmed live against the real query
@@ -466,15 +463,16 @@ shape) — see docs/audit/NEXT.md item #0 for the record.
 # ─────────────────────────────────────────────
 
 Current status:
-  Counts below are scraped + generated, live in Firestore. The generated half
-  is procedural (tools/scraper/gen), marked origin: 'ai_generated', and is
-  still being seeded a day at a time against the Spark quota — see CLAUDE.md.
+  Counts below are answerable questions (hasAnswer: true), scraped plus
+  generated, measured live on 2026-09-25. The generated part is procedural
+  (tools/scraper/gen) and marked origin: 'ai_generated'. Seeding is finished;
+  subjects.questionCount keeps the live figure (jobs.js --job=counts).
 
-  Mathematics      5616 questions   ✅ live  (1716 scraped + generated)
-  Physics          8369 questions   ✅ live  (1769 scraped + generated)
-  Further Maths    2001 questions   ✅ live  (801 scraped + generated)
-  Chemistry        13800 generated, 46 topics   seeding in progress
-  Government       12600 generated, 42 topics   seeding in progress
+  Mathematics      14602 questions   ✅ live  43 topics
+  Physics          20962 questions   ✅ live  64 topics
+  Further Maths     7090 questions   ✅ live  21 topics
+  Chemistry        13800 questions   ✅ live  46 topics (generated only)
+  Government       12600 questions   ✅ live  42 topics (generated only)
   Economics        ~300-400 questions          Phase 2, not generated
   Biology          ~400-600 questions          Phase 2, not generated
 

@@ -16,11 +16,18 @@ class Subject {
   /// zero as "cannot show a ring" rather than as an empty course.
   final int topicCount;
 
+  /// How many questions a student can be served in this subject — only
+  /// those with `hasAnswer: true` — kept true nightly by
+  /// `tools/admin/jobs.js --job=counts`. Zero means "not known", like
+  /// [topicCount], so callers hide the number rather than show 0.
+  final int questionCount;
+
   const Subject({
     required this.id,
     required this.name,
     required this.unitCount,
     this.topicCount = 0,
+    this.questionCount = 0,
   });
 
   factory Subject.fromFirestore(DocumentSnapshot doc) {
@@ -30,6 +37,7 @@ class Subject {
       name: asString(d['name']),
       unitCount: asInt(d['unitCount']),
       topicCount: asInt(d['topicCount']),
+      questionCount: asInt(d['questionCount']),
     );
   }
 }

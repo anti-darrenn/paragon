@@ -17,7 +17,25 @@ service cloud.firestore {
         && request.resource.data.lessonCount is int
         && request.resource.data.lessonCount >= 0;
     }
-    match /questions/{id} { allow read: if request.auth != null; }
+    // Questions are Admin-SDK-only except for one path: an admin resolving
+    // a student's problem report in the content editor. That can change
+    // the marked answer or retire the question, nothing else — stem,
+    // options and topic stay seeder-only. `previousCorrectIndex` is written
+    // alongside every answer change so a bad fix can be reverted.
+    match /questions/{id} {
+      allow read: if request.auth != null;
+      allow update: if isAdmin()
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['correctIndex', 'previousCorrectIndex', 'hasAnswer',
+                       'reviewedAt', 'reviewedBy'])
+        && request.resource.data.hasAnswer is bool
+        && (!request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(['correctIndex'])
+            || (request.resource.data.correctIndex is int
+                && request.resource.data.correctIndex >= 0
+                && request.resource.data.correctIndex
+                     < resource.data.options.size()));
+    }
 
     // ── LEARN RESOURCES ─────────────────────────────────────────
     // A topic's ordered lesson content: videos, articles, exercises.
@@ -79,20 +97,9 @@ service cloud.firestore {
       // or `topicStats` — that then sits untouched forever, since
       // `onlyClientWritableFields` below only inspects what *changes* on
       // an update, never what already exists from creation.
-      //
-      // DEPRECATION SHIM (2026-09-20): `currentStreak`/`lastActiveDate`
-      // are still named here although no client writes them any more.
-      // Streaks were removed from the app, and `hasOnly` accepts a
-      // subset, so naming them keeps a browser tab running the previous
-      // build — which still sends all seven on sign-in — from being
-      // denied its user document until it is refreshed. They are read by
-      // nothing and pinned to nothing; a client that sends one stores a
-      // field no code looks at. Delete both names once the old build is
-      // no longer in anyone's cache.
       allow create: if isOwner(uid)
         && request.resource.data.keys().hasOnly([
-             'uid', 'email', 'displayName', 'isAnonymous', 'createdAt',
-             'currentStreak', 'lastActiveDate'
+             'uid', 'email', 'displayName', 'isAnonymous', 'createdAt'
            ])
         && request.resource.data.uid == uid
         // Forces the real serverTimestamp() sentinel rather than a
@@ -114,12 +121,7 @@ service cloud.firestore {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
         'username', 'usernameKey',
-        'email', 'isAnonymous',
-        // See the DEPRECATION SHIM note on the create rule above. Kept so
-        // an un-refreshed tab's final updateStreak() call is a harmless
-        // no-op write rather than a permission error thrown at a student
-        // mid-drill. Nothing reads these; remove with the create entry.
-        'currentStreak', 'lastActiveDate'
+        'email', 'isAnonymous'
       ];
     }
 
@@ -249,18 +251,30 @@ service cloud.firestore {
     // ── QUESTION FLAGS (student-reported problems) ───────────────
     // The answer key is scraped from a third party with a measured error
     // rate, so students reporting a wrong answer is how we find the bad
-    // ones. Write-only from the client: nothing reads these in the app,
-    // they're queried with the Admin SDK, which bypasses rules.
+    // ones. Students file them; admins review them in the content editor.
+    //
+    // `status` is open | fixed | dismissed, and a missing status means
+    // open — reports filed before review existed, or by a cached build,
+    // carry none. A student may file one only as open (or without a
+    // status), so nobody can file a report that is already closed.
     match /flags/{id} {
       allow create: if request.auth != null
-          && request.resource.data.userId == request.auth.uid;
+          && request.resource.data.userId == request.auth.uid
+          && (!('status' in request.resource.data)
+              || request.resource.data.status == 'open');
       // Read-own and delete-own, narrowly: a deleting user has to be able
       // to find and remove reports that carry their uid, and the client
-      // cannot delete what it cannot query. Still no update, and still no
-      // reading anyone else's — the admin path is unaffected.
-      allow read, delete: if request.auth != null
+      // cannot delete what it cannot query. Admins read every report.
+      allow read: if request.auth != null
+          && (resource.data.userId == request.auth.uid || isAdmin());
+      allow delete: if request.auth != null
           && resource.data.userId == request.auth.uid;
-      allow update: if false;
+      // Resolution only: an admin closes or reopens a report. What the
+      // student reported (question, reason, who, when) is never rewritten.
+      allow update: if isAdmin()
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
+          && request.resource.data.status in ['open', 'fixed', 'dismissed'];
     }
 
     // ── USERNAME REGISTRY (uniqueness enforcement) ───────────────

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/models/unit.dart';
+import '../core/widgets/load_error.dart';
 
 class UnitListScreen extends ConsumerWidget {
   final String subjectId;
@@ -16,7 +17,10 @@ class UnitListScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Units')),
       body: unitsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(unitsProvider(subjectId)),
+        ),
         data: (units) => ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: units.length,

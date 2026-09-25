@@ -366,6 +366,10 @@ async function usersAllowList(a, b) {
     ['level', int(99)],
     ['topicStats', map({ t1: int(1) })],
     ['isAdmin', bool(true)],
+    // Retired with streaks. Named in the allow-list for a while so old
+    // tabs were not refused; the shim is gone, so they are refused now.
+    ['currentStreak', int(5)],
+    ['lastActiveDate', str('2026-09-01')],
   ]) {
     expectOutcome(
       `${field} is not client-writable`,
@@ -550,9 +554,45 @@ async function attemptsAndFlags(a, b) {
     await commit(a.idToken, write(`flags/${flagId}`, { reason: str('other') })),
   );
 
+  // Review is admin-only. A student closing their own report would hide
+  // it from the queue; closing it at birth would do the same.
+  expectOutcome(
+    'a student cannot close their own problem report',
+    DENY,
+    await commit(a.idToken, write(`flags/${flagId}`, { status: str('dismissed') })),
+  );
+
+  const closedFlagId = `${flagId}_closed`;
+  expectOutcome(
+    'a problem report cannot be filed already closed',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`flags/${closedFlagId}`, {
+        userId: str(a.uid),
+        questionId: str('q-verify'),
+        reason: str('wrong_answer'),
+        status: str('dismissed'),
+      }),
+    ),
+  );
+
+  expectOutcome(
+    "a student cannot list everyone's problem reports",
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'flags' }] }),
+  );
+
+  expectOutcome(
+    "another student's problem report is not readable",
+    DENY,
+    await readDoc(b.idToken, `flags/${flagId}`),
+  );
+
   // Cleanup of what this suite created — both are delete-own by rule.
   await deleteDoc(a.idToken, `attempts/${attemptId}`);
   await deleteDoc(a.idToken, `flags/${flagId}`);
+  await deleteDoc(a.idToken, `flags/${closedFlagId}`);
 }
 
 async function progress(a, b) {
@@ -865,6 +905,30 @@ async function content(a) {
         a.idToken,
         write('topics/zz_verify_topic', { name: str('renamed') }),
       ),
+    );
+  }
+
+  // Questions take one admin-only update (resolving a report). Against a
+  // real question: an update to a missing document is refused as a
+  // create, which would pass for the wrong reason.
+  const oneQuestion = await runQuery(a.idToken, '', {
+    from: [{ collectionId: 'questions' }],
+    limit: 1,
+  });
+  const questionPath = (oneQuestion.rows || [])[0]?.document?.name
+    ?.split('/documents/')[1];
+  if (!questionPath) {
+    record('question write checks need a real question', false, 'none returned');
+  } else {
+    expectOutcome(
+      "a student cannot change a question's marked answer",
+      DENY,
+      await commit(a.idToken, write(questionPath, { correctIndex: int(0) })),
+    );
+    expectOutcome(
+      'a student cannot retire a question',
+      DENY,
+      await commit(a.idToken, write(questionPath, { hasAnswer: bool(false) })),
     );
   }
 

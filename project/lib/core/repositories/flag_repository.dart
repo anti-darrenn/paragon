@@ -15,6 +15,13 @@ enum FlagReason {
   /// Stored in Firestore — keep stable, reports are queried on it.
   final String value;
   final String label;
+
+  /// The reason stored as [value], or [other] for anything unrecognised —
+  /// a report is still worth reviewing when its reason is not.
+  static FlagReason parse(String? value) => FlagReason.values.firstWhere(
+    (r) => r.value == value,
+    orElse: () => FlagReason.other,
+  );
 }
 
 /// Student-reported problems with a question.

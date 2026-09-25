@@ -8,6 +8,7 @@ import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/full_latex_view.dart';
+import '../core/widgets/load_error.dart';
 
 class LearnScreen extends ConsumerWidget {
   final String subjectId;
@@ -35,11 +36,9 @@ class LearnScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Learn')),
       body: topicsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(
-          child: Text(
-            'Error: $e',
-            style: const TextStyle(color: Colors.white54),
-          ),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(topicsProvider(unitId)),
         ),
         data: (topics) {
           final topic = _findTopic(topics);

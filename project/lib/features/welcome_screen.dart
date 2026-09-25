@@ -457,17 +457,18 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
           ),
           const SizedBox(width: 10),
           SvgPicture.asset('assets/icons/dot.svg', width: 4, height: 4),
-          // TODO: per-subject question count isn't in the data model yet
-          // — Subject only carries unitCount, and questionCount is
-          // tracked per-topic only (see learning_repository.dart /
-          // Subject.fromFirestore / the seeder's subject doc write).
-          // Wire up the real count once a field/aggregate exists — do
-          // not hardcode a number. (Figma's mock copy — "1716
-          // questions" / "Coming soon" — is stale sample content, not
-          // reproduced here since it contradicts already-seeded data.)
-          // Hidden entirely for now, rather than showing a placeholder
-          // dash, per instruction — just the name + dot separator until
-          // a real count exists.
+          // The live count from `subjects.questionCount` (kept by
+          // `jobs.js --job=counts`), never Figma's sample copy. Zero means
+          // "not known yet", so the number is left out, not shown as 0.
+          if (subject.questionCount > 0) ...[
+            const SizedBox(width: 10),
+            Text(
+              '${_groupThousands(subject.questionCount)} questions',
+              style: AppTheme.label.copyWith(
+                color: AppColors.textSecondaryDark,
+              ),
+            ),
+          ],
           const SizedBox(width: 22),
         ],
       ],
@@ -551,7 +552,6 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
   }
 }
 
-
 /// "By continuing you agree to our Terms and Privacy Policy." — shown
 /// above the fold's end on the welcome screen, with both destinations
 /// reachable without signing in.
@@ -609,3 +609,7 @@ class _ConsentLine extends StatelessWidget {
     );
   }
 }
+
+/// 14602 -> "14,602".
+String _groupThousands(int n) =>
+    n.toString().replaceAllMapped(RegExp(r'\B(?=(\d{3})+(?!\d))'), (_) => ',');

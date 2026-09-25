@@ -5,6 +5,7 @@ import '../core/repositories/learning_repository.dart';
 import '../core/models/topic.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/widgets/load_error.dart';
 
 class TopicListScreen extends ConsumerWidget {
   final String subjectId;
@@ -23,7 +24,10 @@ class TopicListScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Topics')),
       body: topicsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(topicsProvider(unitId)),
+        ),
         data: (topics) => ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: topics.length,

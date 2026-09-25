@@ -20,6 +20,7 @@ import '../core/learn/topic_test.dart';
 import '../core/repositories/learn_progress_repository.dart';
 import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_theme.dart' show AppTheme;
+import '../core/widgets/load_error.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -246,7 +247,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       appBar: AppBar(title: const Text('Drill')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(drillQuestionsProvider(widget.topicId)),
+        ),
         data: (questions) {
           if (questions.isEmpty) {
             return const Center(

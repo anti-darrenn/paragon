@@ -33,14 +33,21 @@ should be non-zero for every copy.
 Content pipeline (`project/tools/scraper`, Node CommonJS, no npm scripts — invoke files directly):
 
 ```powershell
-node 1_scrape.js          # myschool.ng -> data/raw_<subject>.json
-node 2_classify.js        # Groq llama-3.1-8b-instant -> data/classified_<subject>.json
-node fix_misclassified.js # MUST run after classify — see the note below on misclassification
-node 3_seed.js            # subject -> units -> topics -> questions into Firestore
-node check_linkage.js     # verify topicId linkage after seeding
+node 4_scrape_answers.js <subject>        # answers + explanations from myschool.ng's __NUXT_DATA__
+node 5_match_answers.js <subject> --apply # join them onto existing questions (dry run without --apply)
+node 6_seed_generated.js --all            # generated questions into existing topics (see below)
+node 7_create_subject.js --subject=<id>   # a whole new subject from generated content
+node 8_apply_reclass.js                   # apply a reviewed topic reclassification
+node 9_seed_resources.js --subject=<id>   # Learn articles/videos/exercises (dry run without --commit)
+node reclassify.js                        # propose topic reassignments (dispatch-only in CI)
+node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
 ```
 
-Each script hardcodes `const SUBJECT = '...'` near the top — **edit that constant in every script before a run**; they currently disagree with each other (`1_scrape/2_classify/3_seed` = `further-mathematics`, `fix_misclassified` = `physics`). Requires `tools/scraper/.env` (`GROQ_API_KEY`) and `tools/scraper/data/serviceAccountKey.json` (gitignored, never commit). `raw_*.json` is `{ questions: [...] }`, not a bare array; `classified_*.json` **is** a bare array.
+The original chain — `1_scrape`, `2_classify`, `fix_misclassified`, `3_seed` — is retired
+in `tools/scraper/archive/` (see its README): the scrape selectors match nothing since
+myschool.ng became a Nuxt app, the classifier was mostly wrong, and `3_seed.js` duplicates
+any subject that already exists. Requires `tools/scraper/.env` (`GROQ_API_KEY`, for
+`reclassify.js`) and `tools/scraper/data/serviceAccountKey.json` (gitignored, never commit).
 
 ### Generated content, seeding, and the Spark quota
 
@@ -64,9 +71,9 @@ node 7_create_subject.js --subject=chemistry # creates subject -> units -> topic
 node 8_apply_reclass.js                      # applies a reviewed reclassification mapping
 ```
 
-**Never use `3_seed.js` on a subject that already exists** — it always creates a fresh
-subject document and would duplicate it. That is the whole reason `6_seed_generated.js`
-exists.
+**Never revive the archived `3_seed.js` for a subject that already exists** — it always
+creates a fresh subject document and would duplicate it. That is the whole reason
+`6_seed_generated.js` exists.
 
 Questions must be written with Firestore **auto-IDs**: `drillQuestionsProvider` rotates its
 session window with a random cursor over `FieldPath.documentId`, so sequential IDs would
@@ -105,7 +112,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-59 checks. The denials are the content: a write that succeeds only proves something
+67 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -144,13 +151,30 @@ claim on the Auth token — set by `tools/admin/set_admin_claim.js` (or
 never a field on `users/{uid}`, since anything a client can write there it
 can grant itself. `firestore.rules` checks it with `isAdmin()`;
 `isAdminProvider` reads it for the UI only. `/admin` (reached from Settings
-→ Content editor) lists drafts across every topic and edits **articles**;
-videos and exercises are still seeder-only. Editor articles are written as
-`status: 'draft'` and go live on Publish. `notify_drafts.js`, run every 15
-minutes by `.github/workflows/notify-drafts.yml`, emails the reviewers via
-Resend (`RESEND_API_KEY` secret) and stamps `notifiedAt` so it sends once.
-The workflow skips cleanly while that secret is unset — Resend is not set up
-yet (the account was held for review on 2026-09-24).
+→ Content editor) lists student problem reports, then drafts across every
+topic, and edits articles, videos and exercises. Editor resources are
+written as `status: 'draft'` and go live on Publish.
+
+**Problem reports.** Students file `flags` from `ReportProblemButton`; the
+queue on `/admin` groups the 200 most recent by question, open first.
+`/admin/flag/:questionId` resolves one question three ways, each a single
+batch that also closes its open reports (`AdminFlagRepository`): mark a
+different answer (the old one is kept in `previousCorrectIndex`, and the
+screen offers to revert), retire it (`hasAnswer: false`, which removes it
+from drill, WAEC, tests and exercises), or dismiss the reports because the
+answer is right. Answers already in `attempts` keep the grading they got;
+nothing regrades `progress`. A generated question is labelled, because a
+wrong answer there is a generator bug and should be fixed in
+`tools/scraper/gen` too.
+
+`notify_drafts.js`, run every 15 minutes by
+`.github/workflows/notify-drafts.yml`, sends the reviewers one Resend digest
+covering new drafts (stamped `notifiedAt`) and new reports (tracked by the
+cursor `_meta/notify.flagsNotifiedThrough`, because stamping every report
+would cost ~19k reads a day). Nothing is marked sent until Resend accepts
+the email. The workflow skips cleanly while the `RESEND_API_KEY` secret is
+unset. With no verified domain, the shared sender only delivers to the
+Resend account's own address, so set the `NOTIFY_TO` repo variable to it.
 
 **The lesson page.** `/learn/topic/:topicId/:resourceId` (`lib/features/lesson/`)
 plays one published item beside the topic's sequence, Khan-style, with
@@ -195,11 +219,10 @@ outline to a student's counters. `MasteryCircle`/`MasteryRing`
 **Streaks are gone.** `currentStreak`/`lastActiveDate`, `UserRepository.updateStreak`,
 the dashboard card, the `streakWriteIsPlausible` rules and `jobs.js --job=streaks` were
 all removed — the number was computed from the device clock and nothing of value hung
-off it. Two deliberate residues: `firestore.rules` still *names* the two fields in the
-`users` allow-lists as a deprecation shim so an un-refreshed browser tab is not denied
-its user document (remove them once the old build is out of every cache), and
-`jobs.js --job=dropstreak` is a one-shot, hand-run job that deletes the dead fields
-from existing documents. Do not reintroduce streaks as part of Learn mode.
+off it. The rules no longer accept either field (`verify_rules.js` asserts both are
+refused), and as of 2026-09-25 no user document carries them. `jobs.js --job=dropstreak`
+stays as a one-shot for restoring an old backup. Do not reintroduce streaks as part of
+Learn mode.
 
 Counters live in `progress/{uid}` — **not** on `users/{uid}`, and this is load-bearing.
 That document's rules allow-list keeps stats fields server-only so a future leaderboard
@@ -228,9 +251,18 @@ claimed an `is_guest` property that nothing ever set.
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
-**Dead spec files — do not wire these in.** `lib/core/router/paragon_router.dart`, `router_redirect.dart` and `paragon_scaffold.dart` are unreferenced design sketches for a future route tree (guest mode, splash/welcome, profile shell). They assume go_router ^14 / Riverpod ^2.5 and screens that do not exist. Edit `app_router.dart` instead.
+`app_router.dart` is the only file in `lib/core/router/`. The old route-tree sketches
+(`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
+older doc mentions them, it is out of date.
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
+
+**`web/index.html` must not load MathJax.** Maths is drawn on the canvas by
+`flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
+1.2 MB of render-blocking download that nothing used. The page now carries only
+an inline-CSS loading splash, removed on Flutter's `flutter-first-frame` event.
+`web/icons/` and `favicon.png` are still Flutter's logo, which is why the page
+has no `og:image` yet.
 
 Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
 
@@ -240,7 +272,10 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`.
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+
+- `flags` are `{questionId, userId, reason, createdAt}` plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only an admin may change those three fields, and nothing else on a report is ever rewritten.
+- `questions` take exactly one client write: an admin resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
@@ -250,6 +285,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only with the `admin` claim; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
 - **Resources the editor created or edited carry `createdBy` or `editedInApp`, and `9_seed_resources.js` skips them** unless run with `--force`. The seeder writes each file as the whole truth, so without this, re-seeding would wipe a YouTube link added in the editor and republish a draft.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
+- `subjects.questionCount` counts the subject's `hasAnswer: true` questions, the ones a student can be served, and is shown on the welcome screen. Also written by `jobs.js --job=counts`, with the same "zero means not known, hide it" rule. It drifts when an admin retires a question, until the next nightly run.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
 - `attempts.source` is now one of `drill | waec | test | exercise`. Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
@@ -274,7 +310,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 296 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 314 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

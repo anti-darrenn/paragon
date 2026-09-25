@@ -7,6 +7,7 @@ import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
+import 'package:paragon/features/admin/admin_flag_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
 import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
@@ -370,6 +371,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicId: state.pathParameters['topicId']!,
           resourceId: state.pathParameters['resourceId']!,
         ),
+      ),
+      // A flagged question and its reports. Also a deep link, from the
+      // report digest email.
+      GoRoute(
+        path: '/admin/flag/:questionId',
+        builder: (context, state) =>
+            AdminFlagScreen(questionId: state.pathParameters['questionId']!),
       ),
       GoRoute(
         path: '/admin/topic/:topicId/article/:resourceId',
