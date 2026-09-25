@@ -15,6 +15,7 @@ import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/report_problem_button.dart';
+import '../core/widgets/load_error.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -188,17 +189,12 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
       appBar: AppBar(title: const Text('Topic test')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Text(
-              "This test couldn't be loaded.\n$e",
-              textAlign: TextAlign.center,
-              style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
-              ),
-            ),
-          ),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () =>
+              ref.invalidate(topicTestQuestionsProvider(widget.topicId)),
+          message:
+              "This test couldn't be loaded. Check your connection and try again.",
         ),
         data: (questions) {
           if (questions.isEmpty) {

@@ -7,6 +7,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/widgets/load_error.dart';
 import 'waec_exam_screen.dart';
 
 /// Exam setup screen, spec §2.3.3 — year range, question count, timer,
@@ -119,11 +120,9 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
       appBar: AppBar(title: Text('$subjectName — Setup')),
       body: rangeAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(
-          child: Text(
-            'Error: $e',
-            style: const TextStyle(color: Colors.white54),
-          ),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(waecYearRangeProvider(widget.subjectId)),
         ),
         data: (range) {
           final (minYear, maxYear) = range;

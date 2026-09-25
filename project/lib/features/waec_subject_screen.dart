@@ -6,6 +6,7 @@ import '../core/repositories/learning_repository.dart';
 import '../core/auth/guest_limits.dart';
 import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
+import '../core/widgets/load_error.dart';
 
 class WaecSubjectScreen extends ConsumerWidget {
   const WaecSubjectScreen({super.key});
@@ -19,7 +20,10 @@ class WaecSubjectScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('WAEC Prep')),
       body: subjectsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(subjectsProvider),
+        ),
         data: (subjects) => ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: subjects.length,

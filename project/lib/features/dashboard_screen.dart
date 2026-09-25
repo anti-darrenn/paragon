@@ -15,6 +15,7 @@ import '../core/theme/app_colors.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
+import '../core/widgets/load_error.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -46,7 +47,10 @@ class DashboardScreen extends ConsumerWidget {
       ),
       body: userDataAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(userDataProvider),
+        ),
         data: (userData) {
           // UserRepository stores `displayName: user.displayName ?? ''`, so
           // an anonymous user — and an email sign-up that never set a name

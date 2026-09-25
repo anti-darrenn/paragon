@@ -7,6 +7,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
+import '../core/widgets/load_error.dart';
 
 class SubjectListScreen extends ConsumerWidget {
   const SubjectListScreen({super.key});
@@ -55,7 +56,10 @@ class SubjectListScreen extends ConsumerWidget {
       ),
       body: subjectsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (e, _) => LoadError(
+          error: e,
+          onRetry: () => ref.invalidate(subjectsProvider),
+        ),
         data: (subjects) => subjects.isEmpty
             ? const Center(child: Text('No subjects yet.'))
             : Padding(
