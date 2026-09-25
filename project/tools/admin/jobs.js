@@ -297,11 +297,15 @@ async function jobResourceStatus() {
   log(`   ${missing.length} ${APPLY ? "stamped" : "would be stamped"} published`);
 }
 
-// ─── Job: subject.topicCount ─────────────────────────────────────────
+// ─── Job: subject.topicCount and questionCount ───────────────────────
 
 /**
- * Recomputes `topicCount` on every subject document from the live
- * `topics` collection.
+ * Recomputes `topicCount` and `questionCount` on every subject document
+ * from the live `topics` and `questions` collections.
+ *
+ * `questionCount` counts only `hasAnswer: true` — what a student can be
+ * served — and is shown on the welcome screen. It drifts whenever an
+ * admin retires a reported question or new content is seeded.
  *
  * The app needs a denominator to draw a subject-level progress ring. The
  * numerator is free — it comes from the student's own `progress/{uid}`
@@ -313,37 +317,56 @@ async function jobResourceStatus() {
  * free alongside `unitCount`.
  *
  * Counted with `count()` aggregates — billed per 1000 index entries
- * rather than per document, the same reason the seeders use them. One
- * aggregate per subject, roughly ten in total, and a write only where the
- * stored value is actually wrong.
+ * rather than per document, the same reason the seeders use them. Two
+ * aggregates per subject, roughly twenty in total, and a write only where
+ * a stored value is actually wrong.
  *
  * Reclassification moves questions between topics but never moves a topic
  * between subjects, so this drifts only when topics are added or removed.
  * Running nightly is ample.
  */
 async function jobTopicCounts() {
-  log(`\n── Recompute subject.topicCount [${mode()}]`);
+  log(`
+── Recompute subject.topicCount and questionCount [${mode()}]`);
 
   const subjects = await db.collection("subjects").get();
   let updated = 0;
 
   for (const subject of subjects.docs) {
-    const agg = await db
+    const topics = await db
       .collection("topics")
       .where("subjectId", "==", subject.id)
       .count()
       .get();
-    const actual = agg.data().count;
-    const stored = subject.data().topicCount;
+    // Only questions a student can actually be served: drill, WAEC and
+    // tests all filter on hasAnswer. One aggregate per subject, billed
+    // per 1000 index entries, not per document.
+    const questions = await db
+      .collection("questions")
+      .where("subjectId", "==", subject.id)
+      .where("hasAnswer", "==", true)
+      .count()
+      .get();
+    const actual = {
+      topicCount: topics.data().count,
+      questionCount: questions.data().count,
+    };
+    const stored = subject.data();
 
-    if (stored === actual) continue;
+    const changes = Object.fromEntries(
+      Object.entries(actual).filter(([field, value]) => stored[field] !== value),
+    );
+    if (Object.keys(changes).length === 0) continue;
 
     log(
-      `   ${subject.data().name}: ${stored ?? "unset"} -> ${actual}`,
+      `   ${stored.name}: ` +
+        Object.entries(changes)
+          .map(([field, value]) => `${field} ${stored[field] ?? "unset"} -> ${value}`)
+          .join(", "),
     );
     updated++;
     if (APPLY) {
-      await subject.ref.update({ topicCount: actual });
+      await subject.ref.update(changes);
     }
   }
 

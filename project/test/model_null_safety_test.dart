@@ -124,6 +124,16 @@ void main() {
       }
     });
 
+    test('subject questionCount reads 0 ("not known") when missing or bad', () {
+      // The welcome screen hides the count at 0 rather than showing it.
+      for (final v in [null, 'abc', <String>[], {}]) {
+        final s = Subject.fromFirestore(FakeDoc('s', {'questionCount': v}));
+        expect(s.questionCount, 0, reason: 'questionCount from $v');
+      }
+      final real = Subject.fromFirestore(FakeDoc('s', {'questionCount': 14602}));
+      expect(real.questionCount, 14602);
+    });
+
     test('source defaults to drill, not empty', () {
       expect(Question.fromFirestore(FakeDoc('q', {})).source, 'drill');
     });
