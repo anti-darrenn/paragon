@@ -3,10 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/models/learn_resource.dart';
+import '../../core/repositories/admin_flag_repository.dart';
 import '../../core/repositories/admin_resource_repository.dart';
 import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import 'admin_flag_screen.dart';
 import 'admin_resource_editor_screen.dart';
 
 /// `/admin` — pick a topic, see every resource in it (drafts included),
@@ -55,6 +57,8 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                       ),
                     ),
                     const SizedBox(height: 24),
+                    const _FlagQueue(),
+                    const SizedBox(height: 28),
                     const _AwaitingReview(),
                     const SizedBox(height: 28),
                     Text(
@@ -236,6 +240,124 @@ class _TopicResources extends ConsumerWidget {
               : _ResourceList(resources: list),
         ),
       ],
+    );
+  }
+}
+
+/// Student problem reports, grouped by question, open ones first.
+class _FlagQueue extends ConsumerStatefulWidget {
+  const _FlagQueue();
+
+  @override
+  ConsumerState<_FlagQueue> createState() => _FlagQueueState();
+}
+
+class _FlagQueueState extends ConsumerState<_FlagQueue> {
+  bool _showResolved = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final queue = ref.watch(adminFlagQueueProvider);
+    final secondary = AppTheme.bodyMd.copyWith(
+      color: AppColors.textSecondaryDark,
+    );
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                'Problem reports',
+                style: AppTheme.heading3.copyWith(
+                  color: AppColors.textPrimaryDark,
+                ),
+              ),
+            ),
+            TextButton(
+              onPressed: () => setState(() => _showResolved = !_showResolved),
+              child: Text(_showResolved ? 'Hide resolved' : 'Show resolved'),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        queue.when(
+          loading: () => const LinearProgressIndicator(minHeight: 2),
+          error: (e, _) => Text(
+            "Couldn't load reports.\n$e",
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          ),
+          data: (rows) {
+            final shown = _showResolved
+                ? rows
+                : rows.where((r) => r.isOpen).toList();
+            if (shown.isEmpty) {
+              return Text(
+                _showResolved ? 'No reports yet.' : 'No open reports.',
+                style: secondary,
+              );
+            }
+            return Container(
+              decoration: BoxDecoration(
+                color: AppColors.surfaceDark,
+                border: Border.all(color: AppColors.borderDark),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                children: [
+                  for (var i = 0; i < shown.length; i++) ...[
+                    if (i > 0)
+                      const Divider(height: 1, color: AppColors.borderDark),
+                    _FlagRow(row: shown[i]),
+                  ],
+                ],
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class _FlagRow extends StatelessWidget {
+  const _FlagRow({required this.row});
+
+  final FlaggedQuestion row;
+
+  @override
+  Widget build(BuildContext context) {
+    final q = row.question;
+    final open = row.openReports.length;
+    final reasons = row.openReasonCounts
+        .map((e) => '${e.$2} × ${e.$1.label}')
+        .join(' · ');
+    final stem = q == null
+        ? '(question no longer exists)'
+        : q.question.text.replaceAll(RegExp(r'\s+'), ' ');
+
+    return ListTile(
+      onTap: () => context.push(adminFlagPath(row.questionId)),
+      leading: Text(
+        open > 0 ? '$open' : '✓',
+        style: AppTheme.heading3.copyWith(
+          color: open > 0 ? AppColors.warning : AppColors.correct,
+        ),
+      ),
+      title: Text(
+        stem,
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+        style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+      ),
+      subtitle: Text(
+        [
+          if (reasons.isNotEmpty) reasons else 'Resolved',
+          if (q?.isGenerated ?? false) 'generated',
+        ].join(' · '),
+        style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+      ),
     );
   }
 }
