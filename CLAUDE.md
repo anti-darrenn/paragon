@@ -21,6 +21,15 @@ flutter test test/latex_render_test.dart --plain-name "MathText"  # single test
 flutter build web --release; firebase deploy --only hosting        # deploy (project paragon-hq)
 ```
 
+**After adding or removing any plugin, run `flutter clean` before the next release
+build.** The release build reuses a cached `web_plugin_registrant.dart` under
+`.dart_tool/flutter_build/<hash>/`, and it was not regenerated when
+`youtube_player_iframe` was added: production shipped without the YouTube web plugin
+(every video lesson was a grey box) *and* without `SharedPreferencesPlugin`, missing
+since 2026-09-17. Debug and profile builds were unaffected, so local testing passed.
+Check: `grep -c WebYoutubePlayer .dart_tool/flutter_build/*/web_plugin_registrant.dart`
+should be non-zero for every copy.
+
 Content pipeline (`project/tools/scraper`, Node CommonJS, no npm scripts — invoke files directly):
 
 ```powershell
@@ -96,7 +105,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-55 checks. The denials are the content: a write that succeeds only proves something
+59 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -141,11 +150,38 @@ videos and exercises are still seeder-only. Editor articles are written as
 minutes by `.github/workflows/notify-drafts.yml`, emails the reviewers via
 Resend (`RESEND_API_KEY` secret) and stamps `notifiedAt` so it sends once.
 The workflow skips cleanly while that secret is unset — Resend is not set up
-yet (the account was held for review on 2026-09-24). Students see published
-articles on the topic page's Learn list (`TopicOverviewScreen`) and read
-them at `/learn/topic/:topicId/article/:resourceId` (`ArticleScreen`);
-videos and in-lesson exercises are listed there but have no player or
-screen yet.
+yet (the account was held for review on 2026-09-24).
+
+**The lesson page.** `/learn/topic/:topicId/:resourceId` (`lib/features/lesson/`)
+plays one published item beside the topic's sequence, Khan-style, with
+"Up next" ending at the topic test. `LessonVideoPlayer` is the only file that
+imports `youtube_player_iframe` (web iframe, Android webview, privacy-enhanced
+host). Completion rules: a video when `WatchTracker` counts ~90% actually
+played (seeking earns nothing), an article when its end is on screen, an
+exercise when a set is finished. Exercise rules live in `ExerciseSession`
+(first try scored, one retry, then reveal); a signed-in student's first
+tries are recorded once per finished set as `source: 'exercise'`. Guests
+get in-memory checkmarks and nothing stored.
+
+Things that were measured in a browser, not assumed — keep them true:
+- **One tree shape for every layout.** `LessonScreen` collapses the sidebar
+  to zero width instead of swapping a Row for a Column; moving the player to
+  a new parent moves its iframe in the DOM and the browser restarts the
+  video.
+- **An article completes on scrolling to its end** (`ScrollUpdateNotification`
+  with `pixels > 0` — not `dragDetails`, which a mouse wheel never sets) or,
+  for one that fits on screen, 1.5s after layout (the maths fonts load late
+  and briefly make every article look short).
+- A browser tab that is **hidden** paints nothing and YouTube will not play:
+  screenshots of a hidden window show stale frames. Check
+  `document.visibilityState` before trusting one.
+
+Android: `flutter build apk --debug` works (the first build installs the NDK
+and takes ~45 min); an emulator AVD, `Test-_-`, exists in the SDK. The app
+always opens at `/welcome`, and the router deliberately lets guests stay
+there, so a returning Android guest sees the welcome screen rather than
+their dashboard — a known, unfixed product question, not a lost session.
+
 A claim change reaches a signed-in session only after a token refresh
 (up to an hour) or a fresh sign-in.
 
@@ -196,6 +232,8 @@ claimed an `is_guest` property that nothing ever set.
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
+Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
+
 `\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
 
 **Theme.** `AppColors` is the only color source — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Dark theme is enforced (`ThemeMode.dark` in `app.dart`); the light theme exists but is not selectable.
@@ -209,10 +247,12 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `topics/{id}/resources/{id}.status` is `draft | published` and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
+- `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only with the `admin` claim; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
+- **Resources the editor created or edited carry `createdBy` or `editedInApp`, and `9_seed_resources.js` skips them** unless run with `--force`. The seeder writes each file as the whole truth, so without this, re-seeding would wipe a YouTube link added in the editor and republish a draft.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
-- `learn/{uid}` holds topic-test results: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt}}}`. **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
-- `attempts.source` is now one of `drill | waec | test`. Drill and WAEC queries filter on it; **test answers must never feed the mastery counters**, because mastery at proficient is itself an alternative way through the gate and the two would form a loop.
+- `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
+- `attempts.source` is now one of `drill | waec | test | exercise`. Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`.** Forgetting leaves a student who asked to be deleted, and mostly was.
 
 ## Riverpod v3 gotchas
@@ -234,7 +274,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 231 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 296 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

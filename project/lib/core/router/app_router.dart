@@ -5,9 +5,10 @@ import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
-import 'package:paragon/features/admin/admin_article_editor_screen.dart';
+import 'package:paragon/core/models/learn_resource.dart';
+import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
-import 'package:paragon/features/article_screen.dart';
+import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
@@ -276,10 +277,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicId: state.pathParameters['topicId']!,
         ),
       ),
-      // A published Learn article, opened from the topic page's Learn list.
+      // The lesson page: any published Learn item, with the topic's
+      // sequence beside it. The article-only URL it replaced redirects.
       GoRoute(
         path: '/learn/topic/:topicId/article/:resourceId',
-        builder: (context, state) => ArticleScreen(
+        redirect: (context, state) => lessonPath(
+          state.pathParameters['topicId']!,
+          state.pathParameters['resourceId']!,
+        ),
+      ),
+      GoRoute(
+        path: '/learn/topic/:topicId/:resourceId',
+        builder: (context, state) => LessonScreen(
           topicId: state.pathParameters['topicId']!,
           resourceId: state.pathParameters['resourceId']!,
         ),
@@ -339,26 +348,38 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
 
       // ── Admin ───────────────────────────────────────────────────────
-      // Gated by the `admin` claim — see the admin gate above. `new` is
-      // declared before `:resourceId` so it is not read as an id. The
-      // edit path is the deep link in the draft-notification email; keep
-      // `tools/admin/notify_drafts.js` in step if it changes.
+      // Gated by the `admin` claim — see the admin gate above. The edit
+      // path is the deep link in the draft-notification email; keep
+      // `tools/admin/notify_drafts.js` in step if it changes. The
+      // article-only paths from before videos and exercises were editable
+      // still redirect, for links in emails already sent.
       GoRoute(
         path: '/admin',
         builder: (context, state) => const AdminHomeScreen(),
       ),
       GoRoute(
-        path: '/admin/topic/:topicId/article/new',
-        builder: (context, state) => AdminArticleEditorScreen(
+        path: '/admin/topic/:topicId/new/:type',
+        builder: (context, state) => AdminResourceEditorScreen(
           topicId: state.pathParameters['topicId']!,
+          newType: LearnResourceType.parse(state.pathParameters['type']),
+        ),
+      ),
+      GoRoute(
+        path: '/admin/topic/:topicId/resource/:resourceId',
+        builder: (context, state) => AdminResourceEditorScreen(
+          topicId: state.pathParameters['topicId']!,
+          resourceId: state.pathParameters['resourceId']!,
         ),
       ),
       GoRoute(
         path: '/admin/topic/:topicId/article/:resourceId',
-        builder: (context, state) => AdminArticleEditorScreen(
-          topicId: state.pathParameters['topicId']!,
-          resourceId: state.pathParameters['resourceId']!,
-        ),
+        redirect: (context, state) {
+          final topicId = state.pathParameters['topicId']!;
+          final id = state.pathParameters['resourceId']!;
+          return id == 'new'
+              ? adminNewResourcePath(topicId, LearnResourceType.article)
+              : adminResourcePath(topicId, id);
+        },
       ),
 
       // ── Legal ───────────────────────────────────────────────────────

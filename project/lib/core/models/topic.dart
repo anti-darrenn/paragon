@@ -9,6 +9,11 @@ class Topic {
   final String name;
   final int questionCount;
   final int order;
+
+  /// Published, openable Learn items. Zero means "not known", never "no
+  /// lessons" — the same convention as `subjects.topicCount` — so callers
+  /// hide a count rather than draw "0 of 0".
+  final int lessonCount;
   // Learn mode content. No seeded topic has these yet — always null/false
   // today, but null-safe so Learn mode doesn't need a schema migration
   // once notes get authored.
@@ -22,6 +27,7 @@ class Topic {
     required this.name,
     required this.questionCount,
     required this.order,
+    this.lessonCount = 0,
     this.hasNotes = false,
     this.notesMarkdown,
   });
@@ -35,6 +41,7 @@ class Topic {
       name: asString(d['name']),
       questionCount: asInt(d['questionCount']),
       order: asInt(d['order']),
+      lessonCount: asInt(d['lessonCount']),
       hasNotes: asBool(d['hasNotes']),
       notesMarkdown: d['notesMarkdown'] == null ? null : asString(d['notesMarkdown']),
     );

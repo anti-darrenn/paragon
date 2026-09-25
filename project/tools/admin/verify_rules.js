@@ -196,6 +196,9 @@ async function seedResources() {
     await verifyResources().doc('zz_verify_published').set({
       ...base, title: 'published', order: 0, status: 'published',
     });
+    // The parent topic document, for the lessonCount update checks. No
+    // unitId, so no course page ever lists it.
+    await verifyResources().parent.set({ name: 'zz verify', lessonCount: 0 });
     return true;
   } catch (e) {
     console.log(`    (could not seed resources: ${e.message.slice(0, 80)})`);
@@ -699,6 +702,51 @@ async function learnGate(a, b) {
     await readDoc(b.idToken, path),
   );
 
+  // Lesson completion shares this document, nested under the topic, so it
+  // must pass the same closed top-level field set. This is the exact shape
+  // `LearnProgressRepository.markComplete` sends.
+  const completion = (uid) => ({
+    userId: str(uid),
+    topics: map({
+      topicLesson: map({
+        subjectId: str('subjVerify'),
+        completed: map({ resVerify: bool(true) }),
+        lastCompletedId: str('resVerify'),
+      }),
+    }),
+  });
+  const completionTimes = [
+    serverTime('updatedAt'),
+    serverTime('topics.topicLesson.lastCompletedAt'),
+  ];
+
+  expectOutcome(
+    'a lesson completion can be written for yourself',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(path, completion(a.uid), { transforms: completionTimes }),
+    ),
+  );
+
+  expectOutcome(
+    "another student's lesson completion is not writable",
+    DENY,
+    await commit(
+      a.idToken,
+      write(`learn/${b.uid}`, completion(b.uid), {
+        transforms: completionTimes,
+      }),
+    ),
+  );
+
+  // The completion write above replaced `topics` wholesale (an update
+  // mask on a map field does), so put the test result back before reading.
+  await commit(
+    a.idToken,
+    write(path, fields(a.uid), { transforms: [serverTime('updatedAt')] }),
+  );
+
   const own = await readDoc(a.idToken, path);
   expectOutcome('own topic-test results read back', ALLOW, own);
   record(
@@ -798,6 +846,28 @@ async function content(a) {
     ),
   );
 
+  // `lessonCount` is the one topic field a client may update, and only an
+  // admin. An update to a document that does not exist would be refused
+  // for the wrong reason, so these run against a real (seeded) topic.
+  if (seeded) {
+    expectOutcome(
+      "a student cannot set a topic's lessonCount",
+      DENY,
+      await commit(
+        a.idToken,
+        write('topics/zz_verify_topic', { lessonCount: int(99) }),
+      ),
+    );
+    expectOutcome(
+      'a student cannot change any other topic field',
+      DENY,
+      await commit(
+        a.idToken,
+        write('topics/zz_verify_topic', { name: str('renamed') }),
+      ),
+    );
+  }
+
   for (const collection of ['subjects', 'units', 'topics', 'questions']) {
     expectOutcome(
       `${collection} cannot be written by a client`,
@@ -837,6 +907,7 @@ async function teardown(a, b, usernameKey) {
     for (const id of ['zz_verify_draft', 'zz_verify_published']) {
       await verifyResources().doc(id).delete();
     }
+    await verifyResources().parent.delete();
     console.log('    seeded verify resources removed (admin)');
   } catch (e) {
     console.log(

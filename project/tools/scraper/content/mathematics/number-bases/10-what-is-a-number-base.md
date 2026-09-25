@@ -11,7 +11,7 @@ it carries:
 
 \[ 3428 = 3 \times 10^3 + 4 \times 10^2 + 2 \times 10^1 + 8 \times 10^0 \]
 
-That ten is the **base**. Nothing about arithmetic requires it. We use ten
+That ten is the \textbf{base}. Nothing about arithmetic requires it. We use ten
 because we have ten fingers, and for no deeper reason than that.
 
 ## The same idea in any base

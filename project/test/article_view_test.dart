@@ -84,6 +84,30 @@ void main() {
       expect(blocks.single.text, 'Remember this.');
     });
 
+    test('consecutive quote lines are one quote, wrapped', () {
+      final blocks = parseArticleBlocks(
+        '> There is no digit 8\n> in base 8.\n> Ever.\n\nAfter.',
+      );
+      expect(blocks.map((b) => b.kind), [
+        ArticleBlockKind.quote,
+        ArticleBlockKind.paragraph,
+      ]);
+      expect(blocks.first.text, 'There is no digit 8 in base 8. Ever.');
+    });
+
+    test('control: a blank line still separates two quotes', () {
+      final blocks = parseArticleBlocks('> One.\n\n> Two.');
+      expect(blocks.map((b) => b.text), ['One.', 'Two.']);
+    });
+
+    test('a quote directly after a paragraph starts its own block', () {
+      final blocks = parseArticleBlocks('Before.\n> Quoted.');
+      expect(blocks.map((b) => b.kind), [
+        ArticleBlockKind.paragraph,
+        ArticleBlockKind.quote,
+      ]);
+    });
+
     test('empty and whitespace-only source yields no blocks', () {
       expect(parseArticleBlocks(''), isEmpty);
       expect(parseArticleBlocks('\n\n   \n'), isEmpty);

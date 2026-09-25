@@ -350,6 +350,62 @@ async function jobTopicCounts() {
   log(`   ${updated} subjects ${APPLY ? "updated" : "would be updated"}`);
 }
 
+// ─── Job: topic.lessonCount ──────────────────────────────────────────
+
+/**
+ * Mirrors `LearnResource.isAvailable` in lib/core/models/learn_resource.dart:
+ * a video needs a YouTube id, an article a body; an exercise always opens.
+ * Change both together.
+ */
+function isAvailableResource(r) {
+  if (r.type === "video") return String(r.youtubeId || "").trim() !== "";
+  if (r.type === "article") return String(r.body || "").trim() !== "";
+  return r.type === "exercise";
+}
+
+/**
+ * Recomputes `lessonCount` on every topic — published, openable Learn
+ * items — the denominator of "2 of 6 lessons" on the course index.
+ *
+ * The editor keeps it current as it publishes; this is the backstop for a
+ * missed update and for anything the seeder or the console changed. Reads
+ * only published resources (collection-group, one query) and only the
+ * topics that have lessons or claim to — not all 216.
+ */
+async function jobLessonCounts() {
+  log(`\n── Recompute topic.lessonCount [${mode()}]`);
+
+  const published = await db
+    .collectionGroup("resources")
+    .where("status", "==", "published")
+    .get();
+  const actual = new Map();
+  for (const doc of published.docs) {
+    const topicId = doc.ref.parent.parent.id;
+    if (!actual.has(topicId)) actual.set(topicId, 0);
+    if (isAvailableResource(doc.data())) {
+      actual.set(topicId, actual.get(topicId) + 1);
+    }
+  }
+
+  const claiming = await db.collection("topics").where("lessonCount", ">", 0).get();
+  const ids = new Set([...actual.keys(), ...claiming.docs.map((d) => d.id)]);
+
+  let updated = 0;
+  for (const id of ids) {
+    const ref = db.collection("topics").doc(id);
+    const snap = await ref.get();
+    if (!snap.exists) continue;
+    const stored = snap.data().lessonCount ?? 0;
+    const count = actual.get(id) ?? 0;
+    if (stored === count) continue;
+    log(`   ${snap.data().name}: ${stored} -> ${count}`);
+    updated++;
+    if (APPLY) await ref.update({ lessonCount: count });
+  }
+  log(`   ${updated} topics ${APPLY ? "updated" : "would be updated"}`);
+}
+
 // ─── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -358,6 +414,7 @@ async function main() {
   if (JOB === "guests" || JOB === "all") await jobGuests();
   if (JOB === "orphans" || JOB === "all") await jobOrphans();
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
+  if (JOB === "counts" || JOB === "all") await jobLessonCounts();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();

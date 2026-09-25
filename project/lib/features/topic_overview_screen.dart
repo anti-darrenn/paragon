@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/learn/lesson_progress.dart';
 import '../core/models/learn_resource.dart';
+import '../core/repositories/learn_progress_repository.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/app_top_nav.dart';
+import 'lesson/lesson_screen.dart';
+import 'lesson/video_pane.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -17,11 +21,10 @@ import '../core/widgets/app_top_nav.dart';
 ///
 /// **What is real here and what is not.** The Learn section lists the
 /// topic's *published* resources (`topicResourcesProvider`) in author
-/// order. Articles open in `ArticleScreen`; videos and in-lesson exercises
-/// are listed but disabled, since there is no player or exercise screen
-/// yet. A topic with no published resources shows the old placeholder
-/// rows instead. The practice row runs `DrillScreen`; the module quiz does
-/// not exist yet.
+/// order, with checks for what the student has finished and a Start /
+/// Continue button; every available item opens `LessonScreen`. A topic
+/// with no published resources shows the old placeholder rows instead. The
+/// practice row runs `DrillScreen`; the module quiz does not exist yet.
 class TopicOverviewScreen extends ConsumerWidget {
   const TopicOverviewScreen({
     super.key,
@@ -197,6 +200,10 @@ class _LessonList extends ConsumerWidget {
         ? const AsyncData(<LearnResource>[])
         : ref.watch(topicResourcesProvider(topic.id));
     final resources = resourcesAsync.asData?.value ?? const <LearnResource>[];
+    final completed = ref
+        .watch(lessonProgressProvider)
+        .forTopic(topic.id)
+        .completed;
 
     // A failed load must not masquerade as "no lessons yet": the
     // placeholder rows below would hide it completely.
@@ -220,12 +227,17 @@ class _LessonList extends ConsumerWidget {
             "This topic's lessons couldn't be loaded. Try refreshing.",
             style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
           )
-        else if (resources.isNotEmpty)
+        else if (resources.isNotEmpty) ...[
+          _lessonButton(context, resources, completed),
           for (var i = 0; i < resources.length; i++) ...[
             if (i > 0) const SizedBox(height: 10),
-            _resourceRow(context, resources[i]),
-          ]
-        else
+            _resourceRow(
+              context,
+              resources[i],
+              completed.contains(resources[i].id),
+            ),
+          ],
+        ] else
           ..._placeholderRows(context, hasNotes),
 
         const SizedBox(height: 28),
@@ -265,47 +277,80 @@ class _LessonList extends ConsumerWidget {
     );
   }
 
-  /// One published resource. Only articles open: there is no video player
-  /// or inline-exercise screen yet, so those rows are listed, in author
-  /// order, but disabled with the reason.
-  Widget _resourceRow(BuildContext context, LearnResource r) {
-    switch (r.type) {
-      case LearnResourceType.article:
-        return _LessonRow(
-          icon: Icons.article_outlined,
-          kind: 'Article',
-          title: r.title,
-          subtitle: r.isAvailable ? 'Read' : 'Not written yet',
-          accent: accent,
-          onTap: r.isAvailable
-              ? () => context.push('/learn/topic/${topic.id}/article/${r.id}')
-              : null,
-          disabledReason: 'This article has not been written yet.',
-        );
-      case LearnResourceType.video:
-        return _LessonRow(
-          icon: Icons.play_circle_outline_rounded,
-          kind: 'Video',
-          title: r.title,
-          subtitle: 'Not available yet',
-          accent: accent,
-          onTap: null,
-          disabledReason: 'Video lessons are not part of Paragon yet.',
-        );
-      case LearnResourceType.exercise:
-      case LearnResourceType.unknown:
-        return _LessonRow(
-          icon: Icons.edit_note_rounded,
-          kind: 'Exercise',
-          title: r.title,
-          subtitle: 'Not available yet',
-          accent: accent,
-          onTap: null,
-          disabledReason:
-              'In-lesson exercises are not part of Paragon yet. '
-              'Use Practise below.',
-        );
-    }
+  /// One published resource; every available one opens the lesson page.
+  /// An unavailable one (a video not yet recorded, an article not yet
+  /// written) stays listed and disabled, so the lesson's shape is honest.
+  Widget _resourceRow(BuildContext context, LearnResource r, bool done) {
+    final (icon, available, waiting) = switch (r.type) {
+      LearnResourceType.video => (
+        Icons.play_circle_outline_rounded,
+        (r.durationSeconds ?? 0) > 0 ? 'Watch · ${formatDuration(r.durationSeconds!)}' : 'Watch',
+        'Not recorded yet',
+      ),
+      LearnResourceType.article => (Icons.article_outlined, 'Read', 'Not written yet'),
+      _ => (Icons.edit_note_rounded, 'Practise', 'Not available yet'),
+    };
+    return _LessonRow(
+      icon: done ? Icons.check_circle : icon,
+      kind: r.type.label,
+      title: r.title,
+      subtitle: !r.isAvailable ? waiting : (done ? 'Completed' : available),
+      accent: done ? AppColors.correct : accent,
+      onTap: r.isAvailable
+          ? () => context.push(lessonPath(topic.id, r.id))
+          : null,
+      disabledReason: 'This ${r.type.label.toLowerCase()} is not ready yet.',
+    );
+  }
+
+  /// "Start lesson" before anything is done, "Continue" part-way, "Review"
+  /// once everything is — pointing at the first incomplete item.
+  Widget _lessonButton(
+    BuildContext context,
+    List<LearnResource> resources,
+    Set<String> completed,
+  ) {
+    final target = continueTarget(resources, completed);
+    final first = resources.where((r) => r.isAvailable).firstOrNull;
+    final open = target ?? first;
+    if (open == null) return const SizedBox.shrink();
+
+    final done = completedCount(resources, completed);
+    final total = availableCount(resources);
+    final label = target == null
+        ? 'Review lesson'
+        : done == 0
+        ? 'Start lesson'
+        : 'Continue: ${target.title}';
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 14),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              '$done of $total done',
+              style: AppTheme.bodyMd.copyWith(
+                color: AppColors.textSecondaryDark,
+              ),
+            ),
+          ),
+          Flexible(
+            child: ElevatedButton(
+              onPressed: () => context.push(lessonPath(topic.id, open.id)),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.primary,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              child: Text(label, overflow: TextOverflow.ellipsis),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   /// The lesson shape shown for a topic with no published resources.

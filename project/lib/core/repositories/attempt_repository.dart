@@ -34,7 +34,8 @@ class AttemptRepository {
     required String subjectId,
     required int selectedIndex,
     required bool isCorrect,
-    required String source, // 'drill' or 'waec'
+    // 'drill' | 'waec' | 'test' | 'exercise'. Only drill feeds mastery.
+    required String source,
   }) {
     return recordBatch(
       userId: userId,

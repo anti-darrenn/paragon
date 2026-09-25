@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/learn/lesson_progress.dart';
 import '../core/providers/auth_provider.dart';
+import '../core/repositories/learn_progress_repository.dart';
+import '../core/repositories/learn_repository.dart';
+import '../core/repositories/learning_repository.dart';
+import 'lesson/lesson_screen.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
 import '../core/progress/mastery.dart';
@@ -81,6 +86,8 @@ class DashboardScreen extends ConsumerWidget {
                   const GuestNotice(),
                   const SizedBox(height: 16),
                 ],
+
+                const _ContinueLearning(),
 
                 // ── Stats row ──────────────────────────────────────────
                 Row(
@@ -350,6 +357,99 @@ class _SectionHeader extends StatelessWidget {
         color: Colors.white,
         fontSize: 15,
         fontWeight: FontWeight.w600,
+      ),
+    );
+  }
+}
+
+/// "Continue learning" — the Learn topic the student most recently
+/// finished something in, and the next thing to open there.
+///
+/// Absent until a student has completed at least one lesson item. Costs
+/// the topic document and that topic's resource list (two reads), both
+/// cached for the lesson page it links to.
+class _ContinueLearning extends ConsumerWidget {
+  const _ContinueLearning();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final recent = ref.watch(lessonProgressProvider).mostRecent;
+    if (recent == null) return const SizedBox.shrink();
+
+    final topic = ref.watch(topicByIdProvider(recent.topicId)).asData?.value;
+    final resources = ref
+        .watch(topicResourcesProvider(recent.topicId))
+        .asData
+        ?.value;
+    if (topic == null || resources == null) return const SizedBox.shrink();
+
+    final next = continueTarget(resources, recent.progress.completed);
+    final done = completedCount(resources, recent.progress.completed);
+    final total = availableCount(resources);
+    final (title, subtitle, path) = next != null
+        ? (
+            'Continue learning: ${topic.name}',
+            'Up next: ${next.title} · $done of $total done',
+            lessonPath(topic.id, next.id),
+          )
+        : (
+            'You finished the ${topic.name} lesson',
+            'Take the topic test to unlock practice drills.',
+            '/subject/${topic.subjectId}/unit/${topic.unitId}/topic/${topic.id}/test',
+          );
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Material(
+        color: AppColors.surfaceDark,
+        borderRadius: BorderRadius.circular(12),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          onTap: () => context.push(path),
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppColors.primary.withAlpha(90)),
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  next == null
+                      ? Icons.task_alt_rounded
+                      : Icons.play_lesson_outlined,
+                  color: AppColors.primary,
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        title,
+                        style: AppTheme.bodyLg.copyWith(
+                          color: AppColors.textPrimaryDark,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        subtitle,
+                        style: AppTheme.bodyMd.copyWith(
+                          color: AppColors.textSecondaryDark,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const Icon(
+                  Icons.chevron_right_rounded,
+                  color: AppColors.primary,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
