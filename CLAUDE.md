@@ -151,13 +151,30 @@ claim on the Auth token — set by `tools/admin/set_admin_claim.js` (or
 never a field on `users/{uid}`, since anything a client can write there it
 can grant itself. `firestore.rules` checks it with `isAdmin()`;
 `isAdminProvider` reads it for the UI only. `/admin` (reached from Settings
-→ Content editor) lists drafts across every topic and edits **articles**;
-videos and exercises are still seeder-only. Editor articles are written as
-`status: 'draft'` and go live on Publish. `notify_drafts.js`, run every 15
-minutes by `.github/workflows/notify-drafts.yml`, emails the reviewers via
-Resend (`RESEND_API_KEY` secret) and stamps `notifiedAt` so it sends once.
-The workflow skips cleanly while that secret is unset — Resend is not set up
-yet (the account was held for review on 2026-09-24).
+→ Content editor) lists student problem reports, then drafts across every
+topic, and edits articles, videos and exercises. Editor resources are
+written as `status: 'draft'` and go live on Publish.
+
+**Problem reports.** Students file `flags` from `ReportProblemButton`; the
+queue on `/admin` groups the 200 most recent by question, open first.
+`/admin/flag/:questionId` resolves one question three ways, each a single
+batch that also closes its open reports (`AdminFlagRepository`): mark a
+different answer (the old one is kept in `previousCorrectIndex`, and the
+screen offers to revert), retire it (`hasAnswer: false`, which removes it
+from drill, WAEC, tests and exercises), or dismiss the reports because the
+answer is right. Answers already in `attempts` keep the grading they got;
+nothing regrades `progress`. A generated question is labelled, because a
+wrong answer there is a generator bug and should be fixed in
+`tools/scraper/gen` too.
+
+`notify_drafts.js`, run every 15 minutes by
+`.github/workflows/notify-drafts.yml`, sends the reviewers one Resend digest
+covering new drafts (stamped `notifiedAt`) and new reports (tracked by the
+cursor `_meta/notify.flagsNotifiedThrough`, because stamping every report
+would cost ~19k reads a day). Nothing is marked sent until Resend accepts
+the email. The workflow skips cleanly while the `RESEND_API_KEY` secret is
+unset. With no verified domain, the shared sender only delivers to the
+Resend account's own address, so set the `NOTIFY_TO` repo variable to it.
 
 **The lesson page.** `/learn/topic/:topicId/:resourceId` (`lib/features/lesson/`)
 plays one published item beside the topic's sequence, Khan-style, with
@@ -240,6 +257,13 @@ older doc mentions them, it is out of date.
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
+**`web/index.html` must not load MathJax.** Maths is drawn on the canvas by
+`flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
+1.2 MB of render-blocking download that nothing used. The page now carries only
+an inline-CSS loading splash, removed on Flutter's `flutter-first-frame` event.
+`web/icons/` and `favicon.png` are still Flutter's logo, which is why the page
+has no `og:image` yet.
+
 Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
 
 `\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
@@ -248,7 +272,10 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`.
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+
+- `flags` are `{questionId, userId, reason, createdAt}` plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only an admin may change those three fields, and nothing else on a report is ever rewritten.
+- `questions` take exactly one client write: an admin resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
@@ -258,6 +285,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only with the `admin` claim; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
 - **Resources the editor created or edited carry `createdBy` or `editedInApp`, and `9_seed_resources.js` skips them** unless run with `--force`. The seeder writes each file as the whole truth, so without this, re-seeding would wipe a YouTube link added in the editor and republish a draft.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
+- `subjects.questionCount` counts the subject's `hasAnswer: true` questions, the ones a student can be served, and is shown on the welcome screen. Also written by `jobs.js --job=counts`, with the same "zero means not known, hide it" rule. It drifts when an admin retires a question, until the next nightly run.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
 - `attempts.source` is now one of `drill | waec | test | exercise`. Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
@@ -282,7 +310,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 296 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 314 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
