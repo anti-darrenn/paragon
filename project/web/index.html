@@ -1,54 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
+    Replaced by the `--base-href` argument to `flutter build`. Must start
+    and end with a slash.
   -->
   <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <title>Paragon</title>
+  <meta name="description" content="Practise WAEC past questions and learn topic by topic: Mathematics, Physics, Further Mathematics, Chemistry and Government.">
+  <meta name="theme-color" content="#0D1117">
 
-  <!-- iOS meta tags & icons -->
+  <!-- Link previews (WhatsApp, iMessage, social). No og:image until the
+       app has its own icon: web/icons/ is still Flutter's logo. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Paragon">
+  <meta property="og:title" content="Paragon: WAEC prep, topic by topic">
+  <meta property="og:description" content="Practise WAEC past questions and learn topic by topic: Mathematics, Physics, Further Mathematics, Chemistry and Government.">
+
+  <!-- iOS -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="paragon">
+  <meta name="apple-mobile-web-app-title" content="Paragon">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>paragon</title>
   <link rel="manifest" href="manifest.json">
-  <!-- Optional: MathJax for full LaTeX rendering on web -->
-  <script>
-    window.MathJax = {
-      tex: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']]},
-      options: {skipHtmlTags: ['script','noscript','style','textarea','pre']}
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!--
+    No MathJax here. Maths renders through flutter_math_fork on the canvas;
+    a MathJax script in this file was 1.2 MB of render-blocking download
+    that nothing used. See docs/LATEX_RENDERING.md.
+  -->
+
+  <!--
+    Loading splash, shown while main.dart.js and CanvasKit download (several
+    MB — long on a 3G connection). Pure CSS, no extra requests. Colours are
+    AppColors.backgroundDark and AppColors.primary. Removed on Flutter's
+    first frame by the listener below.
+  -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #0D1117; }
+    #splash {
+      position: fixed; inset: 0; z-index: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 20px; background: #0D1117;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      transition: opacity .25s ease;
+    }
+    #splash .word { color: #FF7700; font-size: 28px; font-weight: 700; letter-spacing: .02em; }
+    #splash .spin {
+      width: 28px; height: 28px; border-radius: 50%;
+      border: 3px solid #30363D; border-top-color: #FF7700;
+      animation: splash-spin .9s linear infinite;
+    }
+    @keyframes splash-spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { #splash .spin { animation-duration: 3s; } }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
+  <div id="splash" aria-live="polite" aria-label="Loading Paragon">
+    <div class="word">Paragon</div>
+    <div class="spin"></div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var splash = document.getElementById('splash');
+      if (!splash) return;
+      splash.style.opacity = '0';
+      setTimeout(function () { splash.remove(); }, 300);
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
