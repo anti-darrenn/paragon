@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/theme/app_colors.dart';
 import 'scratchpad_model.dart';
@@ -27,16 +26,16 @@ enum _Tool { pen, eraser }
 /// "See through" lets pointers pass to the screen underneath so the
 /// student can scroll or read the question, then toggle back to draw; the
 /// toolbar stays live in both modes.
-class ScratchpadOverlay extends ConsumerStatefulWidget {
+class ScratchpadOverlay extends StatefulWidget {
   const ScratchpadOverlay({super.key, required this.close});
 
   final VoidCallback close;
 
   @override
-  ConsumerState<ScratchpadOverlay> createState() => _ScratchpadOverlayState();
+  State<ScratchpadOverlay> createState() => _ScratchpadOverlayState();
 }
 
-class _ScratchpadOverlayState extends ConsumerState<ScratchpadOverlay> {
+class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
   _Tool _tool = _Tool.pen;
   int _ink = 0;
   int _width = 0;
@@ -63,7 +62,7 @@ class _ScratchpadOverlayState extends ConsumerState<ScratchpadOverlay> {
   void _up(PointerEvent e) {
     if (e.pointer != _pointer) return;
     final points = _live;
-    final pad = ref.read(scratchpadProvider.notifier);
+    final pad = ScratchpadController.of(context);
     if (e is PointerUpEvent && points.isNotEmpty) {
       if (_tool == _Tool.pen) {
         pad.addStroke(
@@ -102,12 +101,18 @@ class _ScratchpadOverlayState extends ConsumerState<ScratchpadOverlay> {
         ],
       ),
     );
-    if (ok == true && mounted) ref.read(scratchpadProvider.notifier).clear();
+    if (ok == true && mounted) ScratchpadController.of(context).clear();
   }
 
   @override
   Widget build(BuildContext context) {
-    final model = ref.watch(scratchpadProvider);
+    return ValueListenableBuilder<ScratchpadModel>(
+      valueListenable: ScratchpadController.of(context),
+      builder: (context, model, _) => _buildWith(model),
+    );
+  }
+
+  Widget _buildWith(ScratchpadModel model) {
     final erasing = _tool == _Tool.eraser && _live.isNotEmpty;
     final hidden = erasing
         ? model.hits(_live, scratchpadEraserRadius)
@@ -158,7 +163,7 @@ class _ScratchpadOverlayState extends ConsumerState<ScratchpadOverlay> {
   }
 
   Widget _toolbar(ScratchpadModel model) {
-    final pad = ref.read(scratchpadProvider.notifier);
+    final pad = ScratchpadController.of(context);
     return Material(
       color: AppColors.surfaceDark,
       elevation: 6,

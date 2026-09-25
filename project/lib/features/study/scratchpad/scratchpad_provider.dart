@@ -1,27 +1,26 @@
-import 'dart:ui' show Offset;
+import 'package:flutter/widgets.dart';
 
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-
+import '../../../core/study/study_tool.dart';
 import 'scratchpad_model.dart';
 
-/// The scratchpad's strokes and history.
+/// The scratchpad's strokes and history for one screen visit.
 ///
-/// Kept in a provider, not the overlay's state, so closing and reopening
-/// the scratchpad brings the working back. In memory only: nothing is
-/// written to Firestore or disk, and an app restart starts a clean page.
-final scratchpadProvider =
-    NotifierProvider<ScratchpadNotifier, ScratchpadModel>(
-      ScratchpadNotifier.new,
-    );
+/// Held in the screen's [StudySession], not a global provider: closing and
+/// reopening the scratchpad brings the working back, but rough work on one
+/// question never appears over the next screen or an exam. In memory
+/// only — nothing is written to Firestore or disk.
+class ScratchpadController extends ValueNotifier<ScratchpadModel> {
+  ScratchpadController() : super(const ScratchpadModel());
 
-class ScratchpadNotifier extends Notifier<ScratchpadModel> {
-  @override
-  ScratchpadModel build() => const ScratchpadModel();
+  /// This screen's controller, created on first use.
+  static ScratchpadController of(BuildContext context) => StudySession.of(
+    context,
+  ).putIfAbsent(ScratchpadController, ScratchpadController.new);
 
-  void addStroke(ScratchStroke stroke) => state = state.addStroke(stroke);
+  void addStroke(ScratchStroke stroke) => value = value.addStroke(stroke);
   void eraseAlong(List<Offset> path, double radius) =>
-      state = state.eraseAlong(path, radius);
-  void undo() => state = state.undo();
-  void redo() => state = state.redo();
-  void clear() => state = state.clear();
+      value = value.eraseAlong(path, radius);
+  void undo() => value = value.undo();
+  void redo() => value = value.redo();
+  void clear() => value = value.clear();
 }

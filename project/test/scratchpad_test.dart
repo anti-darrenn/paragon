@@ -121,21 +121,25 @@ void main() {
   });
 
   group('ScratchpadOverlay', () {
-    late ProviderContainer container;
+    late StudySession session;
     late int taps;
     late int closes;
 
     setUp(() {
-      container = ProviderContainer();
+      session = StudySession();
       taps = 0;
       closes = 0;
     });
-    tearDown(() => container.dispose());
+
+    List<ScratchStroke> strokes() => session
+        .putIfAbsent(ScratchpadController, ScratchpadController.new)
+        .value
+        .strokes;
 
     Future<void> pump(WidgetTester tester, {bool open = true}) async {
       await tester.pumpWidget(
-        UncontrolledProviderScope(
-          container: container,
+        StudySessionScope(
+          session: session,
           child: MaterialApp(
             home: Scaffold(
               body: Stack(
@@ -167,9 +171,9 @@ void main() {
       await pump(tester);
       await tester.dragFrom(spot, const Offset(120, 60));
       await tester.pump();
-      final strokes = container.read(scratchpadProvider).strokes;
-      expect(strokes, hasLength(1));
-      expect(strokes.single.points.length, greaterThan(1));
+      final drawn = strokes();
+      expect(drawn, hasLength(1));
+      expect(drawn.single.points.length, greaterThan(1));
       expect(taps, 0);
     });
 
@@ -178,7 +182,20 @@ void main() {
       await tester.dragFrom(spot, const Offset(120, 60));
       await pump(tester, open: false);
       await pump(tester);
-      expect(container.read(scratchpadProvider).strokes, hasLength(1));
+      expect(strokes(), hasLength(1));
+    });
+
+    testWidgets('a new screen visit starts with a clean page', (tester) async {
+      await pump(tester);
+      await tester.dragFrom(spot, const Offset(120, 60));
+      await tester.pump();
+      expect(strokes(), hasLength(1));
+      // A new StudyDock means a new session: the next question or the
+      // exam never inherits this rough work.
+      session = StudySession();
+      await tester.pumpWidget(const SizedBox());
+      await pump(tester);
+      expect(strokes(), isEmpty);
     });
 
     testWidgets('eraser drag removes the stroke', (tester) async {
@@ -188,10 +205,10 @@ void main() {
       await tester.pump();
       await tester.dragFrom(spot + const Offset(60, -30), const Offset(0, 60));
       await tester.pump();
-      expect(container.read(scratchpadProvider).strokes, isEmpty);
+      expect(strokes(), isEmpty);
       await tester.tap(find.byTooltip('Undo'));
       await tester.pump();
-      expect(container.read(scratchpadProvider).strokes, hasLength(1));
+      expect(strokes(), hasLength(1));
     });
 
     testWidgets('clear asks first', (tester) async {
@@ -202,13 +219,13 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('Cancel'));
       await tester.pumpAndSettle();
-      expect(container.read(scratchpadProvider).strokes, hasLength(1));
+      expect(strokes(), hasLength(1));
 
       await tester.tap(find.byTooltip('Clear'));
       await tester.pumpAndSettle();
       await tester.tap(find.widgetWithText(TextButton, 'Clear'));
       await tester.pumpAndSettle();
-      expect(container.read(scratchpadProvider).strokes, isEmpty);
+      expect(strokes(), isEmpty);
     });
 
     testWidgets('close button calls close', (tester) async {
@@ -233,7 +250,7 @@ void main() {
       await tester.tapAt(spot);
       await tester.pump();
       expect(taps, 1);
-      expect(container.read(scratchpadProvider).strokes, isEmpty);
+      expect(strokes(), isEmpty);
 
       // And back to drawing.
       await tester.tap(find.byTooltip('Draw'));
