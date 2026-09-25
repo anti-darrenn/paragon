@@ -101,6 +101,29 @@ class Analytics {
     ),
   );
 
+  /// A finished topic test — the drill gate.
+  ///
+  /// `passed` is the parameter worth having: the pass rate per topic is
+  /// how we find out whether the 80% threshold is calibrated, or whether
+  /// one topic's question bank is simply harder than its lesson prepares
+  /// students for. Ids and counts only, as everywhere else.
+  Future<void> topicTestCompleted({
+    required String subjectId,
+    required String topicId,
+    required int score,
+    required bool passed,
+  }) => _log(
+    (a) => a.logEvent(
+      name: 'topic_test_complete',
+      parameters: {
+        'subject_id': subjectId,
+        'topic_id': topicId,
+        'score': score,
+        'passed': passed ? 1 : 0,
+      },
+    ),
+  );
+
   Future<void> examCompleted({
     required String subjectId,
     required int answered,

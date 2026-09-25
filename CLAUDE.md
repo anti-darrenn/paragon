@@ -96,7 +96,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-49 checks. The denials are the content: a write that succeeds only proves something
+55 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -113,12 +113,57 @@ Flutter web app (Riverpod v3 + go_router v17 + Firebase v4) over a Firestore con
 
 Never add WAEC questions to drill providers without filtering by `source`, and never add drill-style instant feedback to the exam flow.
 
+**The drill gate.** `lib/core/learn/topic_test.dart` is the pure model —
+scoring, the 80% pass mark (`kTopicTestPassPercent`), and `drillAccessFor`,
+which is the *only* place the gate is decided. Drill for a topic opens when
+its topic test is passed, or — grandfathered — when drill mastery already
+reached proficient before the gate shipped. Guests get no drill at all, and
+are refused before proficiency is considered, since a guest's pass dies
+with the session. Learn content is never gated.
+
+**The gate is client-enforced and cannot be otherwise**: rules see one
+document write, not the ten answers behind it. That is a bounded,
+deliberate acceptance — drill is practice, not a reward. Put anything of
+value behind it and it needs a server first. Grandfathering is the one
+place `progress/{uid}` touches *access*; it stays honest only because it is
+one-way — it can grant access, never withhold it — so a missing or stale
+progress document can never cost a student anything.
+
+**Admin / content editor.** The only privileged role is the `admin` custom
+claim on the Auth token — set by `tools/admin/set_admin_claim.js` (or
+`create_admin_user.js`, which also provisions or `--upgrade`s an account),
+never a field on `users/{uid}`, since anything a client can write there it
+can grant itself. `firestore.rules` checks it with `isAdmin()`;
+`isAdminProvider` reads it for the UI only. `/admin` (reached from Settings
+→ Content editor) lists drafts across every topic and edits **articles**;
+videos and exercises are still seeder-only. Editor articles are written as
+`status: 'draft'` and go live on Publish. `notify_drafts.js`, run every 15
+minutes by `.github/workflows/notify-drafts.yml`, emails the reviewers via
+Resend (`RESEND_API_KEY` secret) and stamps `notifiedAt` so it sends once.
+The workflow skips cleanly while that secret is unset — Resend is not set up
+yet (the account was held for review on 2026-09-24). Students see published
+articles on the topic page's Learn list (`TopicOverviewScreen`) and read
+them at `/learn/topic/:topicId/article/:resourceId` (`ArticleScreen`);
+videos and in-lesson exercises are listed there but have no player or
+screen yet.
+A claim change reaches a signed-in session only after a token refresh
+(up to an hour) or a fresh sign-in.
+
 **Progress and mastery.** `lib/core/progress/mastery.dart` is the pure model —
 `MasteryLevel` (notStarted/attempted/familiar/proficient/mastered), the thresholds,
 and the roll-up maths. Per-topic progress is a **level**, not a percentage, and only
 module/course aggregates become percentages; `course_progress.dart` joins a `Course`
 outline to a student's counters. `MasteryCircle`/`MasteryRing`
 (`lib/core/widgets/mastery_indicator.dart`) are the only things that draw them.
+
+**Streaks are gone.** `currentStreak`/`lastActiveDate`, `UserRepository.updateStreak`,
+the dashboard card, the `streakWriteIsPlausible` rules and `jobs.js --job=streaks` were
+all removed — the number was computed from the device clock and nothing of value hung
+off it. Two deliberate residues: `firestore.rules` still *names* the two fields in the
+`users` allow-lists as a deprecation shim so an un-refreshed browser tab is not denied
+its user document (remove them once the old build is out of every cache), and
+`jobs.js --job=dropstreak` is a one-shot, hand-run job that deletes the dead fields
+from existing documents. Do not reintroduce streaks as part of Learn mode.
 
 Counters live in `progress/{uid}` — **not** on `users/{uid}`, and this is load-bearing.
 That document's rules allow-list keeps stats fields server-only so a future leaderboard
@@ -143,7 +188,7 @@ which is where `DrillScreen` ends its session). **`legal_documents.dart` must ch
 this file** — it describes to users exactly what is collected, and the policy previously
 claimed an `is_guest` property that nothing ever set.
 
-**Data flow.** Screens are `ConsumerWidget`s that watch providers in `lib/core/repositories/learning_repository.dart` (`subjectsProvider`, `unitsProvider`, `topicsProvider`, `drillQuestionsProvider(topicId)`, `waecQuestionsProvider(subjectId)` — all `FutureProvider`/`.family` reading Firestore directly). Writes go through `AttemptRepository.record()` and `UserRepository.updateStreak()`. Auth/user streams live in `lib/core/providers/auth_provider.dart` (`authStateProvider`, `currentUserProvider`, `userDataProvider`, `weeklyAttemptsCountProvider`).
+**Data flow.** Screens are `ConsumerWidget`s that watch providers in `lib/core/repositories/learning_repository.dart` (`subjectsProvider`, `unitsProvider`, `topicsProvider`, `drillQuestionsProvider(topicId)`, `waecQuestionsProvider(subjectId)` — all `FutureProvider`/`.family` reading Firestore directly). Writes go through `AttemptRepository.record()` and `ProgressRepository.addSession()`. Auth/user streams live in `lib/core/providers/auth_provider.dart` (`authStateProvider`, `currentUserProvider`, `userDataProvider`, `weeklyAttemptsCountProvider`).
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
@@ -157,14 +202,17 @@ claimed an `is_guest` property that nothing ever set.
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`.
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
+- `topics/{id}/resources/{id}.status` is `draft | published` and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
+- `learn/{uid}` holds topic-test results: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt}}}`. **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
+- `attempts.source` is now one of `drill | waec | test`. Drill and WAEC queries filter on it; **test answers must never feed the mastery counters**, because mastery at proficient is itself an alternative way through the gate and the two would form a loop.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`.** Forgetting leaves a student who asked to be deleted, and mostly was.
 
 ## Riverpod v3 gotchas
@@ -186,13 +234,13 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 142 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 231 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
   suite passes no matter how broken the content is. Still: a green suite is not evidence
   that content is *correct*, only that it parses and renders.
-- Client-writable `users/{uid}` streak/xp/topicStats is a hard blocker on any leaderboard or
+- Client-writable `users/{uid}` xp/topicStats is a hard blocker on any leaderboard or
   gamification work. Do not ship those sessions until writes are server-controlled. The
   `progress/{uid}` mastery cache does not change this and is not an exception to it —
   it is private, display-only, and recomputable from `attempts`. The moment anything

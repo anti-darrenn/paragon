@@ -16,8 +16,6 @@ class UserRepository {
         'displayName': user.displayName ?? '',
         'isAnonymous': user.isAnonymous,
         'createdAt': FieldValue.serverTimestamp(),
-        'currentStreak': 0,
-        'lastActiveDate': null,
       });
     }
   }
@@ -162,46 +160,6 @@ class UserRepository {
     }
     return _db.collection('users').doc(uid).update(data);
   }
-
-  /// Advances the daily streak for [uid].
-  ///
-  /// A transaction, not a read-then-write. The previous version did
-  /// `get()` then `update()`, so two devices — or two quick sessions —
-  /// could both read the same `currentStreak` and both write value + 1,
-  /// or clobber each other outright.
-  ///
-  /// Known limitation, not fixable here: "today" is the client's local
-  /// date. A device whose clock is wrong, or which has travelled, gets a
-  /// wrong streak, and a determined user can fabricate one by changing
-  /// their clock. Correct streaks need a server timestamp and a
-  /// Cloud Function; this is the best an honest client can do, and is
-  /// only acceptable while nothing of value hangs off the number.
-  Future<void> updateStreak(String uid) async {
-    final ref = _db.collection('users').doc(uid);
-    final now = DateTime.now();
-    final today = _dateKey(now);
-    final yesterday = _dateKey(now.subtract(const Duration(days: 1)));
-
-    await _db.runTransaction((tx) async {
-      final snap = await tx.get(ref);
-      if (!snap.exists) return;
-
-      final data = snap.data()!;
-      if (data['lastActiveDate'] == today) return;
-
-      final currentStreak = (data['currentStreak'] as num? ?? 0).toInt();
-      tx.update(ref, {
-        'lastActiveDate': today,
-        'currentStreak': data['lastActiveDate'] == yesterday
-            ? currentStreak + 1
-            : 1,
-      });
-    });
-  }
-
-  static String _dateKey(DateTime d) =>
-      '${d.year}-${d.month.toString().padLeft(2, '0')}-'
-      '${d.day.toString().padLeft(2, '0')}';
 }
 
 final userRepositoryProvider = Provider<UserRepository>((ref) {

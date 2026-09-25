@@ -217,8 +217,9 @@ COLLECTIONS (never change field names without updating all fromFirestore methods
   users/{uid}
     uid, email, displayName: string
     createdAt: timestamp
-    currentStreak: number
-    lastActiveDate: string  // YYYY-MM-DD
+    // currentStreak / lastActiveDate: REMOVED. Streaks were cut from the
+    // product; the fields survive on old documents until
+    // `jobs.js --job=dropstreak --apply` is run once.
 
   attempts/{docId}
     userId, questionId, topicId, subjectId: string
@@ -450,7 +451,7 @@ These are explicitly deferred. Do not add them unless the developer asks:
 - About screen content (placeholder only)
 - Offline/PWA support (Phase 3)
 - AI-generated explanations (Phase 3)
-- Gamification — XP, achievements, streak freeze (Session 13)
+- Gamification — XP, achievements (Session 13; streaks removed, not deferred)
 - Learn mode — video embed, notes per topic (Session 9)
 - iOS build (needs macOS — fully deferred)
 - Chemistry, Economics, Biology content (Phase 2 content expansion)
@@ -618,7 +619,7 @@ Phase 3 build sessions (planned):
   10  Proper exam mode — configurable settings, lockdown ✅ done (see above; guest flow fully live-verified after two in-session bugs were fixed)
   11  User profiles — username, avatar, country, subject picker
   12  Course tracking — accuracy by topic, progress bars, weak areas
-  13  Gamification — XP, streak freeze, achievements
+  13  Gamification — XP, achievements (streaks removed, not deferred)
   14  Android build — google_sign_in mobile, fix org name, build APK
   15  Polish — animations, loading/empty/error states, onboarding
   16  About screen, WhatsApp integration, share results

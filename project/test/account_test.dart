@@ -1,7 +1,6 @@
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/repositories/account_repository.dart';
-import 'package:paragon/core/repositories/user_repository.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +26,20 @@ void main() {
       }
       await db.collection('flags').add({'userId': 'u1', 'questionId': 'q1'});
       await db.collection('flags').add({'userId': 'u2', 'questionId': 'q2'});
+
+      // The two uid-keyed single documents. Both are easy to forget when a
+      // collection is added, and forgetting leaves a student who asked to
+      // be deleted, and mostly was.
+      await db.collection('progress').doc('u1').set({
+        'userId': 'u1',
+        'topics': {'t1': {'answered': 20, 'correct': 18}},
+      });
+      await db.collection('progress').doc('u2').set({'userId': 'u2'});
+      await db.collection('learn').doc('u1').set({
+        'userId': 'u1',
+        'topics': {'t1': {'passed': true, 'bestScore': 90, 'attempts': 1}},
+      });
+      await db.collection('learn').doc('u2').set({'userId': 'u2'});
     });
 
     test('removes the user document, attempts and flags', () async {
@@ -47,6 +60,15 @@ void main() {
       expect(flags.docs, isEmpty);
     });
 
+    test('removes the progress and topic-test documents', () async {
+      await repo.deleteOwnedDocuments('u1');
+
+      expect((await db.collection('progress').doc('u1').get()).exists, isFalse);
+      // The drill gate's record. Added with the topic test; if this ever
+      // starts failing, a deleted student's test history is surviving them.
+      expect((await db.collection('learn').doc('u1').get()).exists, isFalse);
+    });
+
     test('leaves other users entirely alone', () async {
       await repo.deleteOwnedDocuments('u1');
 
@@ -61,6 +83,8 @@ void main() {
           .where('userId', isEqualTo: 'u2')
           .get();
       expect(flags.docs.length, 1);
+      expect((await db.collection('progress').doc('u2').get()).exists, isTrue);
+      expect((await db.collection('learn').doc('u2').get()).exists, isTrue);
     });
 
     test('keeps the username reservation', () async {
@@ -97,93 +121,6 @@ void main() {
       await db.collection('users').doc('empty').set({'uid': 'empty'});
       await repo.deleteOwnedDocuments('empty');
       expect((await db.collection('users').doc('empty').get()).exists, isFalse);
-    });
-  });
-
-  group('UserRepository.updateStreak', () {
-    late FakeFirebaseFirestore db;
-    late UserRepository repo;
-
-    String dateKey(DateTime d) =>
-        '${d.year}-${d.month.toString().padLeft(2, '0')}-'
-        '${d.day.toString().padLeft(2, '0')}';
-
-    setUp(() {
-      db = FakeFirebaseFirestore();
-      repo = UserRepository(db);
-    });
-
-    test('starts a streak at 1', () async {
-      await db.collection('users').doc('u1').set({
-        'currentStreak': 0,
-        'lastActiveDate': null,
-      });
-
-      await repo.updateStreak('u1');
-
-      final data = (await db.collection('users').doc('u1').get()).data();
-      expect(data?['currentStreak'], 1);
-      expect(data?['lastActiveDate'], dateKey(DateTime.now()));
-    });
-
-    test('increments when the last active day was yesterday', () async {
-      final yesterday = DateTime.now().subtract(const Duration(days: 1));
-      await db.collection('users').doc('u1').set({
-        'currentStreak': 4,
-        'lastActiveDate': dateKey(yesterday),
-      });
-
-      await repo.updateStreak('u1');
-
-      final data = (await db.collection('users').doc('u1').get()).data();
-      expect(data?['currentStreak'], 5);
-    });
-
-    test('resets to 1 after a gap', () async {
-      final lastWeek = DateTime.now().subtract(const Duration(days: 7));
-      await db.collection('users').doc('u1').set({
-        'currentStreak': 9,
-        'lastActiveDate': dateKey(lastWeek),
-      });
-
-      await repo.updateStreak('u1');
-
-      final data = (await db.collection('users').doc('u1').get()).data();
-      expect(data?['currentStreak'], 1);
-    });
-
-    test('a second session the same day does not double-count', () async {
-      await db.collection('users').doc('u1').set({
-        'currentStreak': 3,
-        'lastActiveDate': dateKey(DateTime.now()),
-      });
-
-      await repo.updateStreak('u1');
-      await repo.updateStreak('u1');
-
-      final data = (await db.collection('users').doc('u1').get()).data();
-      expect(data?['currentStreak'], 3);
-    });
-
-    test('concurrent calls do not double-increment', () async {
-      // The old read-then-write version could let two sessions both read
-      // the same value and both write value + 1. The transaction is what
-      // stops that.
-      final yesterday = DateTime.now().subtract(const Duration(days: 1));
-      await db.collection('users').doc('u1').set({
-        'currentStreak': 2,
-        'lastActiveDate': dateKey(yesterday),
-      });
-
-      await Future.wait([repo.updateStreak('u1'), repo.updateStreak('u1')]);
-
-      final data = (await db.collection('users').doc('u1').get()).data();
-      expect(data?['currentStreak'], 3);
-    });
-
-    test('does nothing for a missing user document', () async {
-      await repo.updateStreak('nobody');
-      expect((await db.collection('users').doc('nobody').get()).exists, isFalse);
     });
   });
 }

@@ -7,12 +7,52 @@ service cloud.firestore {
     match /topics/{id}    { allow read: if request.auth != null; }
     match /questions/{id} { allow read: if request.auth != null; }
 
+    // ── LEARN RESOURCES ─────────────────────────────────────────
+    // A topic's ordered lesson content: videos, articles, exercises.
+    //
+    // Its own block because rules do NOT cascade into subcollections —
+    // the `topics/{id}` rule above says nothing about what lives beneath
+    // it, and without this every read here would be denied.
+    //
+    // Published resources are readable by any signed-in user (a guest
+    // included — Learn content is deliberately ungated; only drill is
+    // gated). Drafts are readable only by an admin.
+    //
+    // Rules are not filters: a list query is refused outright unless it
+    // provably returns only readable documents. So a student's query MUST
+    // carry `where('status', '==', 'published')` — see
+    // `topicResourcesProvider` — and an unfiltered list is denied.
+    //
+    // Do NOT add a "missing status counts as published" clause here. It was
+    // tried: when evaluating a list, Firestore models `resource.data` from
+    // the query's filters, so for an unfiltered query `!('status' in
+    // resource.data)` is true and the whole list — drafts included — is
+    // allowed. Measured against production, not assumed. Every resource
+    // now carries `status` (`jobs.js --job=resourcestatus` backfilled the
+    // old ones; the seeder and editor always write it), so none is needed.
+    //
+    // Writes: admins only, through the in-app editor. The seeder still
+    // uses the Admin SDK, which bypasses rules.
+    match /topics/{topicId}/resources/{resourceId} {
+      allow read: if request.auth != null
+        && (resource.data.status == 'published' || isAdmin());
+      allow write: if isAdmin();
+    }
+
+    // Collection-group reads across every topic's resources: the admin
+    // "awaiting review" list and nothing else. A collection-group query is
+    // matched only by a recursive wildcard like this one, never by the
+    // path-scoped block above, so without it the query is refused even
+    // for an admin.
+    match /{path=**}/resources/{resourceId} {
+      allow read: if isAdmin();
+    }
+
     // ── USER DOCUMENTS ──────────────────────────────────────────
     // Owner-only, but no longer a blanket `write`: creation is limited to
-    // an exact field set, username/usernameKey can only be set by
-    // claiming a matching reservation and are then immutable, and the
-    // streak counter can only move one plausible step at a time. Every
-    // other field client code writes today (displayName, selectedSubjects,
+    // an exact field set, and username/usernameKey can only be set by
+    // claiming a matching reservation and are then immutable. Every other
+    // field client code writes today (displayName, selectedSubjects,
     // profile) is allow-listed explicitly in `clientWritableFields` below;
     // anything not named there — including fields that don't exist yet,
     // like a future XP or topicStats — is server-only by construction.
@@ -20,20 +60,29 @@ service cloud.firestore {
       allow read: if isOwner(uid);
       allow delete: if isOwner(uid);
 
-      // Provisioning writes exactly these seven fields — see
+      // Provisioning writes exactly these five fields — see
       // UserRepository.createUserIfNew. Restricted to that exact set
       // (not just "no username yet") so a client cannot `create` the
       // document directly with an extra field — e.g. a pre-set `level`
       // or `topicStats` — that then sits untouched forever, since
       // `onlyClientWritableFields` below only inspects what *changes* on
       // an update, never what already exists from creation.
+      //
+      // DEPRECATION SHIM (2026-09-20): `currentStreak`/`lastActiveDate`
+      // are still named here although no client writes them any more.
+      // Streaks were removed from the app, and `hasOnly` accepts a
+      // subset, so naming them keeps a browser tab running the previous
+      // build — which still sends all seven on sign-in — from being
+      // denied its user document until it is refreshed. They are read by
+      // nothing and pinned to nothing; a client that sends one stores a
+      // field no code looks at. Delete both names once the old build is
+      // no longer in anyone's cache.
       allow create: if isOwner(uid)
         && request.resource.data.keys().hasOnly([
-             'uid', 'email', 'displayName', 'isAnonymous',
-             'createdAt', 'currentStreak', 'lastActiveDate'
+             'uid', 'email', 'displayName', 'isAnonymous', 'createdAt',
+             'currentStreak', 'lastActiveDate'
            ])
         && request.resource.data.uid == uid
-        && request.resource.data.currentStreak == 0
         // Forces the real serverTimestamp() sentinel rather than a
         // client-supplied value — the standard Firestore Rules idiom for
         // verifying serverTimestamp() was actually used.
@@ -41,8 +90,7 @@ service cloud.firestore {
 
       allow update: if isOwner(uid)
         && usernameWriteIsValid(uid)
-        && onlyClientWritableFields()
-        && streakWriteIsPlausible();
+        && onlyClientWritableFields();
     }
 
     // Allow-list, not a deny-list. Anything not named here cannot be
@@ -54,8 +102,12 @@ service cloud.firestore {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
         'username', 'usernameKey',
-        'currentStreak', 'lastActiveDate',
-        'email', 'isAnonymous'
+        'email', 'isAnonymous',
+        // See the DEPRECATION SHIM note on the create rule above. Kept so
+        // an un-refreshed tab's final updateStreak() call is a harmless
+        // no-op write rather than a permission error thrown at a student
+        // mid-drill. Nothing reads these; remove with the create entry.
+        'currentStreak', 'lastActiveDate'
       ];
     }
 
@@ -64,68 +116,16 @@ service cloud.firestore {
         .hasOnly(clientWritableFields());
     }
 
-    // The streak is still computed on the client, so it is still only as
-    // trustworthy as the device clock. These constraints remove the
-    // attacks that actually matter:
-    //
-    //   - setting the counter to an arbitrary number: it may only be 1,
-    //     or exactly one more than its current value
-    //   - backdating: lastActiveDate must be within a day of the server's
-    //     own clock, so a device cannot claim a week of activity by
-    //     winding itself back
-    //   - replaying today: an *increment* (not a reset to 1) must also
-    //     carry a lastActiveDate strictly later than the one already
-    //     stored, or a client could call updateStreak in a tight loop —
-    //     same calendar day, currentStreak 1, 2, 3, ... — and every
-    //     individual write would satisfy "exactly one more than before"
-    //     and "within a day of now" without this. YYYY-MM-DD sorts
-    //     lexically the same as chronologically, so plain string `>`
-    //     is enough; no date parsing needed.
-    //
-    // A day of tolerance rather than an exact match because request.time
-    // is UTC and the client formats its local date; in WAT (UTC+1) the
-    // two disagree for an hour every night. That window is wide enough
-    // for any timezone and far too narrow to fabricate a streak.
-    function streakWriteIsPlausible() {
-      let after = request.resource.data;
-      let touchesStreak =
-        request.resource.data.diff(resource.data).affectedKeys()
-          .hasAny(['currentStreak', 'lastActiveDate']);
-      let previousStreak = resource.data.get('currentStreak', 0);
-      let previousDate = resource.data.get('lastActiveDate', '');
-
-      return !touchesStreak || (
-        after.currentStreak is int
-        && after.currentStreak > 0
-        && after.lastActiveDate is string
-        && dateKeyIsAboutNow(after.lastActiveDate)
-        && (
-          after.currentStreak == 1
-          || (
-            after.currentStreak == previousStreak + 1
-            && after.lastActiveDate > previousDate
-          )
-        )
-      );
-    }
-
-    function twoDigits(n) {
-      return n < 10 ? '0' + string(n) : string(n);
-    }
-
-    function dateKeyFor(t) {
-      return string(t.year()) + '-' + twoDigits(t.month())
-        + '-' + twoDigits(t.day());
-    }
-
-    function dateKeyIsAboutNow(key) {
-      return key == dateKeyFor(request.time)
-        || key == dateKeyFor(request.time - duration.value(1, 'd'))
-        || key == dateKeyFor(request.time + duration.value(1, 'd'));
-    }
-
     function isOwner(uid) {
       return request.auth != null && request.auth.uid == uid;
+    }
+
+    // A custom claim on the ID token, set only by
+    // `tools/admin/set_admin_claim.js` with the Admin SDK. Never a field on
+    // `users/{uid}` — anything a client can write there, a client can
+    // grant itself.
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
     }
 
     // Governs the username/usernameKey pair on an update. Three cases:
@@ -197,6 +197,39 @@ service cloud.firestore {
           // `users` create rule pins `createdAt`. Without it a client
           // could backdate its own cache, which matters the day anything
           // server-side starts reconciling this against `attempts`.
+          && request.resource.data.updatedAt == request.time
+          && request.resource.data.topics is map;
+    }
+
+    // ── TOPIC TEST RESULTS (the drill gate) ──────────────────────
+    // One document per student, id'd by uid. Records which topic tests
+    // have been passed, which is what unlocks drill for that topic.
+    //
+    // Deliberately NOT merged into `progress/{uid}`. That document is
+    // described everywhere — here, in its repository, in CLAUDE.md — as a
+    // cache recomputable from `attempts`, and every safety claim made for
+    // it rests on that being true. A test pass is NOT recomputable:
+    // nothing in `attempts` records which ten answers belonged to one
+    // sitting. Putting it there would make that description a lie.
+    //
+    // **What these rules cannot do.** They cannot verify that `passed`
+    // was earned. A write is one document; the ten answers behind it are
+    // not in it, and rules cannot iterate a map with dynamic keys to
+    // check each entry. So the gate is client-enforced and a determined
+    // student can open it by hand. That is a deliberate, bounded
+    // acceptance: drill is practice rather than a reward, nothing
+    // competitive reads this, and the prize for forging it is a practice
+    // screen. If anything of value is ever put behind this gate, it needs
+    // a server first.
+    //
+    // What the rules DO enforce is the same envelope as `progress`:
+    // owner-only in both directions, a closed top-level field set so this
+    // cannot become a dumping ground, and a real serverTimestamp().
+    match /learn/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+          && request.resource.data.keys().hasOnly(['userId', 'updatedAt', 'topics'])
+          && request.resource.data.userId == uid
           && request.resource.data.updatedAt == request.time
           && request.resource.data.topics is map;
     }

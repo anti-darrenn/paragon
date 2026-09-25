@@ -67,8 +67,7 @@ class ProgressRepository {
   /// Adds one session's totals to [topicId].
   ///
   /// `FieldValue.increment` rather than read-modify-write: two devices
-  /// finishing a session at once must not clobber each other, and this is
-  /// the same reasoning that made `updateStreak` a transaction. Increment
+  /// finishing a session at once must not clobber each other. Increment
   /// is better than a transaction here because it needs no read at all.
   ///
   /// `SetOptions(merge: true)` deep-merges nested maps — the same

@@ -15,10 +15,10 @@
 /// as a guest who can drill Physics but not sit a Physics exam, with
 /// nothing in the code explaining which was intended.
 ///
-/// **The honesty rule.** A guest whose streak and mastery quietly evaporate
-/// when they close the tab has been misled by a product that showed them a
-/// filling ring. Anywhere progress is displayed to a guest, say that it is
-/// not being kept — see [progressNotKeptMessage].
+/// **The honesty rule.** A guest whose mastery quietly evaporates when they
+/// close the tab has been misled by a product that showed them a filling
+/// ring. Anywhere progress is displayed to a guest, say that it is not
+/// being kept — see [progressNotKeptMessage].
 library;
 
 class GuestLimits {
@@ -47,9 +47,33 @@ class GuestLimits {
   static const String lockedSubjectMessage =
       'Sign in to practise this subject. Guests get $openSubject.';
 
+  /// Guests get no Drill at all, in any subject.
+  ///
+  /// Not a tightening of [openSubject] — a different rule with a different
+  /// reason, which is why it is its own constant rather than a special
+  /// case inside [locks]. Drill sits behind a topic test, and a topic
+  /// test is only worth taking if the result survives: a guest's uid dies
+  /// when they close the tab, taking their pass with it. Offering a gate
+  /// whose key evaporates is worse than not offering the room.
+  ///
+  /// Learn content — videos, articles, exercises — stays fully open to
+  /// guests. Nothing there is stored, so nothing there is lost, and it is
+  /// the part of the product a visitor should be able to judge before
+  /// deciding to sign up.
+  ///
+  /// [openSubject] still governs WAEC Prep, which is unchanged.
+  static const bool allowsDrill = false;
+
+  /// Shown to a guest who reaches drill. Names the reason rather than the
+  /// rule — "you'd lose it" is the fact that makes the restriction
+  /// reasonable, and a guest who does not know that reads it as arbitrary.
+  static const String drillNeedsAccountMessage =
+      'Drill practice needs an account. Your topic tests and progress are '
+      'tied to it — a guest session is lost when you close the tab.';
+
   /// Shown wherever a guest is looking at progress that will not survive
   /// the session.
   static const String progressNotKeptMessage =
-      "You're browsing as a guest, so your streak and progress are not "
-      'saved. Sign in to keep them.';
+      "You're browsing as a guest, so your progress is not saved. "
+      'Sign in to keep it.';
 }

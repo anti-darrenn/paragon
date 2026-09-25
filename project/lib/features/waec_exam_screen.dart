@@ -9,7 +9,6 @@ import '../core/models/question.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/repositories/attempt_repository.dart';
-import '../core/repositories/user_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
@@ -186,21 +185,6 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
           .read(attemptRepositoryProvider)
           .recordBatch(userId: user.uid, source: 'waec', attempts: answered);
       _attemptsSaved = true;
-
-      // Finishing an exam counts towards the daily streak. It always
-      // should have: updateStreak was only ever called from DrillScreen,
-      // so a student who practised exclusively in WAEC mode answered
-      // hundreds of questions and was still told "Start today" on their
-      // dashboard, indefinitely.
-      //
-      // Deliberately after the attempts write and deliberately not fatal:
-      // a failed streak bump must not surface as "your answers were not
-      // saved", because they were.
-      try {
-        await ref.read(userRepositoryProvider).updateStreak(user.uid);
-      } catch (_) {
-        // Non-fatal; the attempts are recorded, which is what matters.
-      }
 
       // Counts and a subject id only — never question text or answers.
       await ref

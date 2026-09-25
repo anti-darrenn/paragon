@@ -115,11 +115,16 @@ const LegalDocument privacyPolicy = LegalDocument(
             'them does not limit your use of the app.',
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
-            'correct, when you answered, and whether it was practice or a '
-            'WAEC exam session. We also record the dates you were active, '
-            'to work out your streak, and a running count of how many '
-            'questions you have answered in each topic and how many you '
-            'got right, which is what the progress rings show you.',
+            'correct, when you answered, and whether it was practice, a '
+            'topic test or a WAEC exam session. We also keep a running '
+            'count of how many questions you have answered in each topic '
+            'and how many you got right, which is what the progress rings '
+            'show you.',
+        'Your topic test results. For each topic test you take we record '
+            'your best score, how many times you have taken it, when you '
+            'last did, and whether you have passed it. Passing is what '
+            'unlocks drill practice for that topic, so this is kept for as '
+            'long as your account exists. Only you can see it.',
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',
@@ -136,8 +141,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'username, email, school, age or gender to analytics, and we '
             'never send anything you typed. What goes is which screen of '
             'the app you are on, subject and topic identifiers, counts of '
-            'questions answered and how many you got right, and whether a '
-            'session was a guest session. Google also collects standard '
+            'questions answered and how many you got right, your topic '
+            'test scores and whether you passed, and whether a session was '
+            'a guest session. Google also collects standard '
             'technical information such as your device type, general '
             'region and app version.',
         'You can turn this off. Settings has a "Share usage data" switch; '
@@ -160,7 +166,7 @@ const LegalDocument privacyPolicy = LegalDocument(
       heading: 'Why we collect it',
       bullets: [
         'To give you an account and keep you signed in.',
-        'To show your progress, streak and results back to you.',
+        'To show your progress and results back to you.',
         'To choose which questions to show you next.',
         'To find and fix wrong answers in our question bank, which is why '
             'problem reports exist.',

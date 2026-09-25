@@ -42,6 +42,27 @@ final currentUserProvider = Provider<User?>((ref) {
   return ref.watch(authStateProvider).asData?.value;
 });
 
+/// The current ID token's decoded result, re-emitted on every token
+/// refresh. Custom claims live here and nowhere else in the client.
+///
+/// A claim granted to an account that is already signed in does not
+/// appear until its token refreshes (about an hour) or it signs in again.
+final idTokenResultProvider = StreamProvider<IdTokenResult?>((ref) {
+  return FirebaseAuth.instance.idTokenChanges().asyncMap(
+    (user) => user?.getIdTokenResult(),
+  );
+});
+
+/// Whether the signed-in account carries the `admin` custom claim.
+///
+/// This gates the admin **UI** only. What actually protects content is
+/// `isAdmin()` in `firestore.rules`, which reads the same claim
+/// server-side. False while the token is still loading.
+final isAdminProvider = Provider<bool>((ref) {
+  final result = ref.watch(idTokenResultProvider).asData?.value;
+  return result?.claims?['admin'] == true;
+});
+
 /// True while the current user is a guest (anonymous auth), false once
 /// signed in with a real account, false while signed out entirely.
 final isGuestProvider = Provider<bool>((ref) {
