@@ -33,14 +33,21 @@ should be non-zero for every copy.
 Content pipeline (`project/tools/scraper`, Node CommonJS, no npm scripts — invoke files directly):
 
 ```powershell
-node 1_scrape.js          # myschool.ng -> data/raw_<subject>.json
-node 2_classify.js        # Groq llama-3.1-8b-instant -> data/classified_<subject>.json
-node fix_misclassified.js # MUST run after classify — see the note below on misclassification
-node 3_seed.js            # subject -> units -> topics -> questions into Firestore
-node check_linkage.js     # verify topicId linkage after seeding
+node 4_scrape_answers.js <subject>        # answers + explanations from myschool.ng's __NUXT_DATA__
+node 5_match_answers.js <subject> --apply # join them onto existing questions (dry run without --apply)
+node 6_seed_generated.js --all            # generated questions into existing topics (see below)
+node 7_create_subject.js --subject=<id>   # a whole new subject from generated content
+node 8_apply_reclass.js                   # apply a reviewed topic reclassification
+node 9_seed_resources.js --subject=<id>   # Learn articles/videos/exercises (dry run without --commit)
+node reclassify.js                        # propose topic reassignments (dispatch-only in CI)
+node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
 ```
 
-Each script hardcodes `const SUBJECT = '...'` near the top — **edit that constant in every script before a run**; they currently disagree with each other (`1_scrape/2_classify/3_seed` = `further-mathematics`, `fix_misclassified` = `physics`). Requires `tools/scraper/.env` (`GROQ_API_KEY`) and `tools/scraper/data/serviceAccountKey.json` (gitignored, never commit). `raw_*.json` is `{ questions: [...] }`, not a bare array; `classified_*.json` **is** a bare array.
+The original chain — `1_scrape`, `2_classify`, `fix_misclassified`, `3_seed` — is retired
+in `tools/scraper/archive/` (see its README): the scrape selectors match nothing since
+myschool.ng became a Nuxt app, the classifier was mostly wrong, and `3_seed.js` duplicates
+any subject that already exists. Requires `tools/scraper/.env` (`GROQ_API_KEY`, for
+`reclassify.js`) and `tools/scraper/data/serviceAccountKey.json` (gitignored, never commit).
 
 ### Generated content, seeding, and the Spark quota
 
@@ -64,9 +71,9 @@ node 7_create_subject.js --subject=chemistry # creates subject -> units -> topic
 node 8_apply_reclass.js                      # applies a reviewed reclassification mapping
 ```
 
-**Never use `3_seed.js` on a subject that already exists** — it always creates a fresh
-subject document and would duplicate it. That is the whole reason `6_seed_generated.js`
-exists.
+**Never revive the archived `3_seed.js` for a subject that already exists** — it always
+creates a fresh subject document and would duplicate it. That is the whole reason
+`6_seed_generated.js` exists.
 
 Questions must be written with Firestore **auto-IDs**: `drillQuestionsProvider` rotates its
 session window with a random cursor over `FieldPath.documentId`, so sequential IDs would
@@ -228,7 +235,9 @@ claimed an `is_guest` property that nothing ever set.
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
-**Dead spec files — do not wire these in.** `lib/core/router/paragon_router.dart`, `router_redirect.dart` and `paragon_scaffold.dart` are unreferenced design sketches for a future route tree (guest mode, splash/welcome, profile shell). They assume go_router ^14 / Riverpod ^2.5 and screens that do not exist. Edit `app_router.dart` instead.
+`app_router.dart` is the only file in `lib/core/router/`. The old route-tree sketches
+(`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
+older doc mentions them, it is out of date.
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
