@@ -21,6 +21,15 @@ flutter test test/latex_render_test.dart --plain-name "MathText"  # single test
 flutter build web --release; firebase deploy --only hosting        # deploy (project paragon-hq)
 ```
 
+**After adding or removing any plugin, run `flutter clean` before the next release
+build.** The release build reuses a cached `web_plugin_registrant.dart` under
+`.dart_tool/flutter_build/<hash>/`, and it was not regenerated when
+`youtube_player_iframe` was added: production shipped without the YouTube web plugin
+(every video lesson was a grey box) *and* without `SharedPreferencesPlugin`, missing
+since 2026-09-17. Debug and profile builds were unaffected, so local testing passed.
+Check: `grep -c WebYoutubePlayer .dart_tool/flutter_build/*/web_plugin_registrant.dart`
+should be non-zero for every copy.
+
 Content pipeline (`project/tools/scraper`, Node CommonJS, no npm scripts — invoke files directly):
 
 ```powershell
