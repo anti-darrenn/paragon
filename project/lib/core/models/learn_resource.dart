@@ -104,6 +104,7 @@ class LearnResource {
     this.transcript,
     this.body = '',
     this.questionCount = 0,
+    this.questionIds = const [],
     this.status = ResourceStatus.published,
     this.createdBy,
   });
@@ -156,6 +157,11 @@ class LearnResource {
   /// the default" — see `kDefaultExerciseQuestions`.
   final int questionCount;
 
+  /// Questions an author pinned to this exercise, in order. Empty means
+  /// "rotate from the topic's bank", which is the default. At most
+  /// [kMaxPinnedQuestions] — one `whereIn` query.
+  final List<String> questionIds;
+
   final ResourceStatus status;
 
   /// Uid of the admin who authored it in the editor. Null for seeded
@@ -190,6 +196,9 @@ class LearnResource {
       transcript: asStringOrNull(d['transcript']),
       body: asString(d['body']),
       questionCount: asInt(d['questionCount']),
+      questionIds: asStringList(
+        d['questionIds'],
+      ).where((id) => id.trim().isNotEmpty).take(kMaxPinnedQuestions).toList(),
       status: ResourceStatus.parse(d['status']),
       createdBy: asStringOrNull(d['createdBy']),
     );
@@ -204,3 +213,6 @@ class LearnResource {
 /// (`kTopicTestQuestions`). Making all three the same number would collapse
 /// three different things into one.
 const int kDefaultExerciseQuestions = 5;
+
+/// Firestore's `whereIn` limit, so pinned questions load in one query.
+const int kMaxPinnedQuestions = 30;

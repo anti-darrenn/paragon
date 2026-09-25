@@ -121,6 +121,7 @@ List<ArticleBlock> parseArticleBlocks(String source) {
 
   // Accumulators for the block currently being read.
   var paragraph = <String>[];
+  var quote = <String>[];
   var items = <String>[];
   ArticleBlockKind? listKind;
 
@@ -132,6 +133,15 @@ List<ArticleBlock> parseArticleBlocks(String source) {
     paragraph = [];
   }
 
+  // Consecutive `>` lines are one quote, wrapped the way a paragraph's
+  // lines are — an author hard-wrapping a long callout means one box, not
+  // one box per line. A blank line still separates two quotes.
+  void flushQuote() {
+    if (quote.isEmpty) return;
+    blocks.add(ArticleBlock(ArticleBlockKind.quote, [quote.join(' ').trim()]));
+    quote = [];
+  }
+
   void flushList() {
     if (items.isEmpty) return;
     blocks.add(ArticleBlock(listKind!, items));
@@ -141,6 +151,7 @@ List<ArticleBlock> parseArticleBlocks(String source) {
 
   void flushAll() {
     flushParagraph();
+    flushQuote();
     flushList();
   }
 
@@ -206,13 +217,15 @@ List<ArticleBlock> parseArticleBlocks(String source) {
       continue;
     }
 
-    final quote = RegExp(r'^>\s?(.*)$').firstMatch(trimmed);
-    if (quote != null) {
-      flushAll();
-      blocks.add(ArticleBlock(ArticleBlockKind.quote, [quote.group(1)!.trim()]));
+    final quoted = RegExp(r'^>\s?(.*)$').firstMatch(trimmed);
+    if (quoted != null) {
+      flushParagraph();
+      flushList();
+      quote.add(quoted.group(1)!.trim());
       continue;
     }
 
+    flushQuote();
     flushList();
     paragraph.add(trimmed);
   }

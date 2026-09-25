@@ -47,6 +47,21 @@ final topicsProvider = FutureProvider.family<List<Topic>, String>((
   return snap.docs.map((d) => Topic.fromFirestore(d)).toList();
 });
 
+/// One topic by id. The lesson page needs its name, unit and subject (the
+/// last two for the topic-test link at the end of a lesson); the editor
+/// needs its subject.
+final topicByIdProvider = FutureProvider.family<Topic?, String>((
+  ref,
+  topicId,
+) async {
+  final snap = await ref
+      .read(_firestoreProvider)
+      .collection('topics')
+      .doc(topicId)
+      .get();
+  return snap.exists ? Topic.fromFirestore(snap) : null;
+});
+
 // Spec §2.2.7: "If a topic has fewer than 5 questions: all are shown. If
 // more than 20: cap at 20 per session." Live data: 42 of 128 topics already
 // have fewer than 20 questions (min 1) — the cap is a no-op for a third of

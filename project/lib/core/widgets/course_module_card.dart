@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../repositories/learn_progress_repository.dart';
 
 import '../progress/course_progress.dart';
 import '../progress/mastery.dart';
@@ -356,6 +359,39 @@ class TopicLink extends StatefulWidget {
   State<TopicLink> createState() => _TopicLinkState();
 }
 
+/// "2 of 6 lessons" under a topic that has Learn content.
+///
+/// The denominator is `topics.lessonCount`, stored so this page does not
+/// need one resources query per topic; the numerator comes from the one
+/// `learn/{uid}` listener. Capped at the denominator, since a completion
+/// can outlive a lesson that was later unpublished.
+class _LessonsLine extends ConsumerWidget {
+  const _LessonsLine({required this.topic, required this.accent});
+
+  final CourseTopic topic;
+  final Color accent;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final done = ref
+        .watch(lessonProgressProvider)
+        .forTopic(topic.id)
+        .completed
+        .length
+        .clamp(0, topic.lessonCount);
+    return Text(
+      '$done of ${topic.lessonCount} ${topic.lessonCount == 1 ? 'lesson' : 'lessons'}',
+      style: AppTheme.caption.copyWith(
+        color: done == topic.lessonCount
+            ? AppColors.correct
+            : done > 0
+            ? accent
+            : AppColors.textSecondaryDark.withAlpha((0.75 * 255).round()),
+      ),
+    );
+  }
+}
+
 class _TopicLinkState extends State<TopicLink> {
   bool _isHovered = false;
 
@@ -419,6 +455,8 @@ class _TopicLinkState extends State<TopicLink> {
                         ),
                 ),
               ),
+              if (!widget.topic.isPlaceholder && widget.topic.lessonCount > 0)
+                _LessonsLine(topic: widget.topic, accent: widget.accent),
             ],
           ),
         ),

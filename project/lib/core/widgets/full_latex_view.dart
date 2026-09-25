@@ -31,14 +31,22 @@ class FullLatexView extends StatelessWidget {
       }
     }
 
-    Widget mathWidget(String content) => Math.tex(
-      content,
-      textStyle: effectiveStyle,
-      onErrorFallback: (e) => Text(
+    // Math cannot wrap, so an expression wider than the line scrolls
+    // sideways inside its own box instead of overflowing the screen. The
+    // scroll view sizes to the math when it fits, so short expressions lay
+    // out exactly as before. Found on a phone: a worked solution ran 50px
+    // past the edge.
+    Widget mathWidget(String content) => SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Math.tex(
         content,
-        style: effectiveStyle.copyWith(
-          color: Colors.redAccent,
-          fontFamily: 'monospace',
+        textStyle: effectiveStyle,
+        onErrorFallback: (e) => Text(
+          content,
+          style: effectiveStyle.copyWith(
+            color: Colors.redAccent,
+            fontFamily: 'monospace',
+          ),
         ),
       ),
     );
@@ -152,9 +160,17 @@ class FullLatexView extends StatelessWidget {
 
     flushPlain();
 
-    final hasMath = spans.any((sp) => sp is WidgetSpan);
-    if (!hasMath) {
-      return Text(s, style: effectiveStyle, textAlign: textAlign);
+    // Plain Text only when every span is unstyled text — and then the
+    // *scanned* text, not the raw source. This used to test for math alone
+    // and return `Text(s)`, which threw away the scanner's work on any line
+    // without an equation: `\textbf{..}`, `\textit{..}`, `\vspace{..}` and
+    // `\$` all showed as literal source. Found on a live article.
+    final onlyPlain = spans.every(
+      (sp) => sp is TextSpan && sp.style == effectiveStyle,
+    );
+    if (onlyPlain) {
+      final text = spans.map((sp) => (sp as TextSpan).text ?? '').join();
+      return Text(text, style: effectiveStyle, textAlign: textAlign);
     }
     return RichText(
       text: TextSpan(style: effectiveStyle, children: spans),

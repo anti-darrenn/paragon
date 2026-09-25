@@ -28,7 +28,7 @@ slip on this conversion.
 ## Base ten to any base: divide repeatedly
 
 Divide by the new base, write down the remainder, and keep dividing the
-quotient until it reaches zero. Then read the remainders **upwards**.
+quotient until it reaches zero. Then read the remainders \textbf{upwards}.
 
 Convert \(334\) to base five:
 
