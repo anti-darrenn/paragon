@@ -97,20 +97,9 @@ service cloud.firestore {
       // or `topicStats` — that then sits untouched forever, since
       // `onlyClientWritableFields` below only inspects what *changes* on
       // an update, never what already exists from creation.
-      //
-      // DEPRECATION SHIM (2026-09-20): `currentStreak`/`lastActiveDate`
-      // are still named here although no client writes them any more.
-      // Streaks were removed from the app, and `hasOnly` accepts a
-      // subset, so naming them keeps a browser tab running the previous
-      // build — which still sends all seven on sign-in — from being
-      // denied its user document until it is refreshed. They are read by
-      // nothing and pinned to nothing; a client that sends one stores a
-      // field no code looks at. Delete both names once the old build is
-      // no longer in anyone's cache.
       allow create: if isOwner(uid)
         && request.resource.data.keys().hasOnly([
-             'uid', 'email', 'displayName', 'isAnonymous', 'createdAt',
-             'currentStreak', 'lastActiveDate'
+             'uid', 'email', 'displayName', 'isAnonymous', 'createdAt'
            ])
         && request.resource.data.uid == uid
         // Forces the real serverTimestamp() sentinel rather than a
@@ -132,12 +121,7 @@ service cloud.firestore {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
         'username', 'usernameKey',
-        'email', 'isAnonymous',
-        // See the DEPRECATION SHIM note on the create rule above. Kept so
-        // an un-refreshed tab's final updateStreak() call is a harmless
-        // no-op write rather than a permission error thrown at a student
-        // mid-drill. Nothing reads these; remove with the create entry.
-        'currentStreak', 'lastActiveDate'
+        'email', 'isAnonymous'
       ];
     }
 

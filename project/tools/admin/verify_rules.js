@@ -366,6 +366,10 @@ async function usersAllowList(a, b) {
     ['level', int(99)],
     ['topicStats', map({ t1: int(1) })],
     ['isAdmin', bool(true)],
+    // Retired with streaks. Named in the allow-list for a while so old
+    // tabs were not refused; the shim is gone, so they are refused now.
+    ['currentStreak', int(5)],
+    ['lastActiveDate', str('2026-09-01')],
   ]) {
     expectOutcome(
       `${field} is not client-writable`,

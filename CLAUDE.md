@@ -202,11 +202,10 @@ outline to a student's counters. `MasteryCircle`/`MasteryRing`
 **Streaks are gone.** `currentStreak`/`lastActiveDate`, `UserRepository.updateStreak`,
 the dashboard card, the `streakWriteIsPlausible` rules and `jobs.js --job=streaks` were
 all removed — the number was computed from the device clock and nothing of value hung
-off it. Two deliberate residues: `firestore.rules` still *names* the two fields in the
-`users` allow-lists as a deprecation shim so an un-refreshed browser tab is not denied
-its user document (remove them once the old build is out of every cache), and
-`jobs.js --job=dropstreak` is a one-shot, hand-run job that deletes the dead fields
-from existing documents. Do not reintroduce streaks as part of Learn mode.
+off it. The rules no longer accept either field (`verify_rules.js` asserts both are
+refused), and as of 2026-09-25 no user document carries them. `jobs.js --job=dropstreak`
+stays as a one-shot for restoring an old backup. Do not reintroduce streaks as part of
+Learn mode.
 
 Counters live in `progress/{uid}` — **not** on `users/{uid}`, and this is load-bearing.
 That document's rules allow-list keeps stats fields server-only so a future leaderboard
