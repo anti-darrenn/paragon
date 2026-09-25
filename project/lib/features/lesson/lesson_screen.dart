@@ -14,6 +14,8 @@ import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/app_top_nav.dart';
+import '../../core/study/study_dock.dart';
+import '../../core/study/study_tool.dart';
 import 'article_pane.dart';
 import 'exercise_pane.dart';
 import 'lesson_sidebar.dart';
@@ -118,7 +120,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final resourcesAsync = ref.watch(topicResourcesProvider(widget.topicId));
     final topic = ref.watch(topicByIdProvider(widget.topicId)).asData?.value;
 
-    return Scaffold(
+    final scaffold = Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: Column(
         children: [
@@ -142,6 +144,13 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           ),
         ],
       ),
+    );
+
+    // Study tools (calculator, tables…) beside the lesson.
+    return StudyDock(
+      subjectId: topic?.subjectId,
+      studyContext: StudyContext.lesson,
+      child: scaffold,
     );
   }
 

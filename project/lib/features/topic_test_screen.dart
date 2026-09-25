@@ -16,6 +16,8 @@ import '../core/widgets/guest_notice.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/report_problem_button.dart';
 import '../core/widgets/load_error.dart';
+import '../core/study/study_dock.dart';
+import '../core/study/study_tool.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -259,7 +261,11 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
       onPopInvokedWithResult: (didPop, _) {
         if (!didPop) _confirmLeave();
       },
-      child: scaffold,
+      child: StudyDock(
+        subjectId: widget.subjectId,
+        studyContext: StudyContext.topicTest,
+        child: scaffold,
+      ),
     );
   }
 }

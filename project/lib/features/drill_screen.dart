@@ -21,6 +21,8 @@ import '../core/repositories/learn_progress_repository.dart';
 import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_theme.dart' show AppTheme;
 import '../core/widgets/load_error.dart';
+import '../core/study/study_dock.dart';
+import '../core/study/study_tool.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -243,7 +245,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       );
     }
 
-    return Scaffold(
+    final scaffold = Scaffold(
       appBar: AppBar(title: const Text('Drill')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -404,6 +406,13 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
           );
         },
       ),
+    );
+
+    // Study tools (calculator, tables…) beside the questions.
+    return StudyDock(
+      subjectId: widget.subjectId ?? _sessionSubjectId,
+      studyContext: StudyContext.drill,
+      child: scaffold,
     );
   }
 }
