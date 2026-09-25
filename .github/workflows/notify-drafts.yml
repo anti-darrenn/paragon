@@ -1,7 +1,8 @@
-# Emails the reviewers when a Learn draft is saved in the in-app editor.
+# Emails the reviewers when a Learn draft is saved in the in-app editor
+# or a student reports a problem with a question — one digest for both.
 #
 # No Cloud Functions on Spark, so there is no "on write" trigger — this
-# polls instead. A run with no new drafts reads a handful of documents and
+# polls instead. A run with nothing new reads a handful of documents and
 # sends nothing. See tools/admin/notify_drafts.js for the full contract.
 #
 # Every 15 minutes, best effort: GitHub delays scheduled runs under load,
