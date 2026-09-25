@@ -34,7 +34,12 @@ class CourseTopic {
     required this.questionCount,
     required this.hasNotes,
     required this.isPlaceholder,
+    this.lessonCount = 0,
   });
+
+  /// Published, openable Learn items (`topics.lessonCount`). Zero means
+  /// "not known" — show no count rather than "0 of 0".
+  final int lessonCount;
 
   /// Firestore document id when live; a slug when placeholder. Either way
   /// it is the `:topicKey` path parameter.
@@ -267,6 +272,7 @@ final courseProvider = FutureProvider.family<Course, String>((ref, key) async {
                 questionCount: topic.questionCount,
                 hasNotes: topic.hasNotes,
                 isPlaceholder: false,
+                lessonCount: topic.lessonCount,
               ),
           ],
         ),

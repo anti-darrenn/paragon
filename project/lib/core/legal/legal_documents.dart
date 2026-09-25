@@ -56,7 +56,7 @@ bool get legalPlaceholdersRemain => [
 ].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '20 September 2026';
+const String legalLastUpdated = '24 September 2026';
 
 class LegalSection {
   const LegalSection({
@@ -115,11 +115,18 @@ const LegalDocument privacyPolicy = LegalDocument(
             'them does not limit your use of the app.',
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
-            'correct, when you answered, and whether it was practice, a '
-            'topic test or a WAEC exam session. We also keep a running '
-            'count of how many questions you have answered in each topic '
-            'and how many you got right, which is what the progress rings '
-            'show you.',
+            'correct, when you answered, and whether it was practice, an '
+            'exercise inside a lesson, a topic test or a WAEC exam session. '
+            'We also keep a running count of how many practice questions '
+            'you have answered in each topic and how many you got right, '
+            'which is what the progress rings show you. Lesson exercises '
+            'and topic tests are not added to that count.',
+        'Your lesson progress. When you finish a video, an article or an '
+            'exercise in a lesson, we record that you finished it and when, '
+            'so the app can show what you have done and take you back to '
+            'where you left off. If you are browsing as a guest, this is '
+            'kept only while the app is open and is never stored, and your '
+            'exercise answers are not stored either.',
         'Your topic test results. For each topic test you take we record '
             'your best score, how many times you have taken it, when you '
             'last did, and whether you have passed it. Passing is what '
@@ -142,8 +149,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'never send anything you typed. What goes is which screen of '
             'the app you are on, subject and topic identifiers, counts of '
             'questions answered and how many you got right, your topic '
-            'test scores and whether you passed, and whether a session was '
-            'a guest session. Google also collects standard '
+            'test scores and whether you passed, which kinds of lesson '
+            'item (video, article or exercise) you finish, your lesson '
+            'exercise scores, and whether a session was a guest session. Google also collects standard '
             'technical information such as your device type, general '
             'region and app version.',
         'You can turn this off. Settings has a "Share usage data" switch; '
@@ -155,8 +163,10 @@ const LegalDocument privacyPolicy = LegalDocument(
     LegalSection(
       heading: 'What we do not collect',
       paragraphs: [
-        'We show no advertising, and the app contains no advertising or '
-            'marketing trackers. We do not collect your precise location, '
+        'We show no advertising of our own, and the app contains no '
+            'advertising or marketing trackers. Lesson videos play in '
+            "YouTube's player, and if a video's owner has enabled ads on it, "
+            'YouTube may show them. We do not collect your precise location, '
             'your contacts, or your browsing outside the app, and we do not '
             'build an advertising profile of you. We do not sell your data '
             'to anyone, ever.',
@@ -187,6 +197,14 @@ const LegalDocument privacyPolicy = LegalDocument(
             'your data is held on Google servers, which may be outside '
             'Nigeria. We do not share your data with anyone else, other '
             'than where we are required to by law.',
+        'Lesson videos are YouTube videos, embedded using YouTube\'s '
+            'privacy-enhanced mode (youtube-nocookie.com). The player loads '
+            'from YouTube only when you open a video lesson. When it does, '
+            'YouTube receives the technical information any website visit '
+            'sends, such as your IP address and device details, and '
+            "YouTube's own privacy policy applies to what happens inside the "
+            'player. We do not send YouTube your name, email or account '
+            'details.',
       ],
     ),
     LegalSection(

@@ -52,6 +52,7 @@ dependencies:
   # and independently of sign-in — a guest or signed-out visitor has to be
   # able to turn collection off without an account.
   shared_preferences: ^2.3.3
+  youtube_player_iframe: ^6.0.2
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../learn/youtube_id.dart';
 import '../models/learn_resource.dart';
-import '../models/topic.dart';
+import '../models/question.dart';
 
 /// Writes and admin-only reads for the in-app content editor.
 ///
@@ -19,7 +20,7 @@ class AdminResourceRepository {
   CollectionReference<Map<String, dynamic>> _resources(String topicId) =>
       _db.collection('topics').doc(topicId).collection('resources');
 
-  /// Creates a new article draft and returns its id.
+  /// Creates a new draft and returns its id.
   ///
   /// The id is a slug of the title, to match the seeder's convention, with
   /// a numeric suffix if that slug is taken in this topic. `notifiedAt`
@@ -29,20 +30,14 @@ class AdminResourceRepository {
     required String topicId,
     required String subjectId,
     required String uid,
-    required String title,
-    required int order,
-    required String body,
+    required ResourceDraft draft,
   }) async {
-    final id = await _freeSlug(topicId, slugify(title));
+    final id = await _freeSlug(topicId, slugify(draft.title));
     await _resources(topicId).doc(id).set({
-      'type': 'article',
-      'order': order,
-      'title': title.trim(),
+      ...draft.toFields(),
       'subjectId': subjectId,
       'topicId': topicId,
       'origin': 'authored',
-      'body': body,
-      'questionCount': 0,
       'status': 'draft',
       'createdBy': uid,
       'notifiedAt': null,
@@ -51,29 +46,67 @@ class AdminResourceRepository {
     return id;
   }
 
-  /// Saves edits to an existing article and sets its status.
+  /// Saves edits to an existing resource and sets its status.
   ///
   /// `notifiedAt` is left alone, so editing a draft that was already
   /// emailed about does not send a second email.
   Future<void> save({
     required String topicId,
     required String resourceId,
-    required String title,
-    required int order,
-    required String body,
+    required ResourceDraft draft,
     required ResourceStatus status,
   }) {
     return _resources(topicId).doc(resourceId).update({
-      'title': title.trim(),
-      'order': order,
-      'body': body,
+      ...draft.toFields(),
       'status': status.name,
+      // Tells `9_seed_resources.js` this resource now belongs to the
+      // editor: without it, re-seeding would overwrite an in-app edit —
+      // a YouTube link added to a seeded video — with the file's version.
+      'editedInApp': true,
       'updatedAt': FieldValue.serverTimestamp(),
     });
   }
 
+  /// One page of a topic's answerable questions, for pinning to an
+  /// exercise. Paged because a topic can hold 350: loading them all to
+  /// pick five would spend the read quota on a scroll. Uses the existing
+  /// `topicId + hasAnswer + __name__` index.
+  Future<List<Question>> questionPage({
+    required String topicId,
+    String? startAfterId,
+    int limit = 20,
+  }) async {
+    Query<Map<String, dynamic>> q = _db
+        .collection('questions')
+        .where('topicId', isEqualTo: topicId)
+        .where('hasAnswer', isEqualTo: true)
+        .orderBy(FieldPath.documentId)
+        .limit(limit);
+    if (startAfterId != null) q = q.startAfter([startAfterId]);
+    final snap = await q.get();
+    return snap.docs.map(Question.fromFirestore).toList();
+  }
+
   Future<void> delete({required String topicId, required String resourceId}) {
     return _resources(topicId).doc(resourceId).delete();
+  }
+
+  /// Recounts the topic's published, openable items into
+  /// `topics/{id}.lessonCount` — the denominator of "2 of 6 lessons" on the
+  /// course index. Called after every save and delete; writes only when
+  /// the number changed. One small query per call.
+  Future<void> refreshLessonCount(String topicId) async {
+    final snap = await _resources(
+      topicId,
+    ).where('status', isEqualTo: 'published').get();
+    final count = snap.docs
+        .map(LearnResource.fromFirestore)
+        .where((r) => r.isAvailable)
+        .length;
+    final topic = _db.collection('topics').doc(topicId);
+    final current = (await topic.get()).data()?['lessonCount'];
+    if (current == count) return;
+    await topic.update({'lessonCount': count});
   }
 
   Future<String> _freeSlug(String topicId, String base) async {
@@ -85,6 +118,109 @@ class AdminResourceRepository {
       candidate = '$stem-$n';
     }
   }
+}
+
+/// What the editor's form holds for one resource, before it is saved.
+///
+/// Pure, so the rules for what may be published are testable without a
+/// widget: [validate] names the first problem, [toFields] is the exact
+/// document content. Fields belonging to other types are written empty,
+/// so changing nothing here can leave a stale `youtubeId` on an article.
+class ResourceDraft {
+  const ResourceDraft({
+    required this.type,
+    required this.title,
+    required this.orderText,
+    this.body = '',
+    this.youtubeText = '',
+    this.durationText = '',
+    this.description = '',
+    this.transcript = '',
+    this.questionCountText = '',
+    this.questionIds = const [],
+  });
+
+  static const int maxQuestionCount = 20;
+
+  final LearnResourceType type;
+  final String title;
+  final String orderText;
+  final String body;
+  final String youtubeText;
+  final String durationText;
+  final String description;
+  final String transcript;
+  final String questionCountText;
+  final List<String> questionIds;
+
+  String? get youtubeId => parseYouTubeId(youtubeText);
+
+  String get noun => type.label.toLowerCase();
+
+  String? validate() {
+    if (title.trim().isEmpty) return 'Give the $noun a title.';
+    if (int.tryParse(orderText.trim()) == null) {
+      return 'Position must be a whole number.';
+    }
+    switch (type) {
+      case LearnResourceType.article:
+        if (body.trim().isEmpty) return 'The article has no body.';
+      case LearnResourceType.video:
+        if (youtubeText.trim().isEmpty) return 'Paste the YouTube link.';
+        if (youtubeId == null) {
+          return "That doesn't look like a YouTube video link.";
+        }
+        if (durationText.trim().isNotEmpty &&
+            parseDuration(durationText) == null) {
+          return 'Duration should look like 9:30 or 1:05:00.';
+        }
+      case LearnResourceType.exercise:
+        final n = int.tryParse(questionCountText.trim());
+        if (questionIds.isEmpty &&
+            (n == null || n < 1 || n > maxQuestionCount)) {
+          return 'Number of questions must be 1 to $maxQuestionCount.';
+        }
+        if (questionIds.length > kMaxPinnedQuestions) {
+          return 'Pin at most $kMaxPinnedQuestions questions.';
+        }
+      case LearnResourceType.unknown:
+        return "This resource's type isn't recognised.";
+    }
+    return null;
+  }
+
+  /// Call only after [validate] returns null.
+  Map<String, Object?> toFields() {
+    final isVideo = type == LearnResourceType.video;
+    final isExercise = type == LearnResourceType.exercise;
+    String? optional(String s) => s.trim().isEmpty ? null : s.trim();
+    return {
+      'type': type.name,
+      'title': title.trim(),
+      'order': int.parse(orderText.trim()),
+      'body': type == LearnResourceType.article ? body : '',
+      'youtubeId': isVideo ? youtubeId : null,
+      'durationSeconds': isVideo ? parseDuration(durationText) : null,
+      'description': isVideo ? optional(description) : null,
+      'transcript': isVideo ? optional(transcript) : null,
+      'questionCount': isExercise
+          ? (questionIds.isNotEmpty
+                ? questionIds.length
+                : int.parse(questionCountText.trim()))
+          : 0,
+      'questionIds': isExercise ? questionIds : const <String>[],
+    };
+  }
+}
+
+/// `9:30` → 570, `1:05:00` → 3900, `45` → 45. Null for anything else.
+int? parseDuration(String text) {
+  final parts = text.trim().split(':');
+  if (parts.isEmpty || parts.length > 3 || parts.first.isEmpty) return null;
+  final numbers = parts.map(int.tryParse).toList();
+  if (numbers.any((n) => n == null || n < 0)) return null;
+  if (parts.length > 1 && numbers.skip(1).any((n) => n! > 59)) return null;
+  return numbers.fold<int>(0, (total, n) => total * 60 + n!);
 }
 
 /// Lower-case, ASCII letters and digits, hyphen-separated, at most 60
@@ -148,16 +284,3 @@ final adminResourceProvider =
           .get();
       return snap.exists ? LearnResource.fromFirestore(snap) : null;
     });
-
-/// One topic by id — the editor needs its `subjectId` and name, and
-/// nothing else in the app reads a single topic.
-final adminTopicProvider = FutureProvider.family<Topic?, String>((
-  ref,
-  topicId,
-) async {
-  final snap = await FirebaseFirestore.instance
-      .collection('topics')
-      .doc(topicId)
-      .get();
-  return snap.exists ? Topic.fromFirestore(snap) : null;
-});

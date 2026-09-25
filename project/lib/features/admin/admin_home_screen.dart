@@ -7,6 +7,7 @@ import '../../core/repositories/admin_resource_repository.dart';
 import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import 'admin_resource_editor_screen.dart';
 
 /// `/admin` — pick a topic, see every resource in it (drafts included),
 /// open one to edit or start a new article.
@@ -186,29 +187,33 @@ class _TopicResources extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
+        Text(
+          'Resources',
+          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        ),
+        const SizedBox(height: 10),
+        Wrap(
+          spacing: 10,
+          runSpacing: 10,
           children: [
-            Expanded(
-              child: Text(
-                'Resources',
-                style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+            for (final (type, icon) in const [
+              (LearnResourceType.article, Icons.article_outlined),
+              (LearnResourceType.video, Icons.play_circle_outline_rounded),
+              (LearnResourceType.exercise, Icons.edit_note_rounded),
+            ])
+              ElevatedButton.icon(
+                onPressed: () =>
+                    context.push(adminNewResourcePath(topicId, type)),
+                icon: Icon(icon, size: 18),
+                label: Text('New ${type.label.toLowerCase()}'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                 ),
               ),
-            ),
-            ElevatedButton.icon(
-              onPressed: () =>
-                  context.push('/admin/topic/$topicId/article/new'),
-              icon: const Icon(Icons.add, size: 18),
-              label: const Text('New article'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-            ),
           ],
         ),
         const SizedBox(height: 12),
@@ -304,17 +309,15 @@ class _ResourceRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Only articles have an editor. Videos and exercises are still authored
-    // through the seeder, so they are listed for context but not opened.
-    final editable = resource.type == LearnResourceType.article;
+    final editable = resource.type != LearnResourceType.unknown;
     final isDraft = resource.status == ResourceStatus.draft;
+    // A seeded video with no id yet is the usual reason to open one.
+    final needsWork = !resource.isAvailable;
 
     return ListTile(
       enabled: editable,
       onTap: editable
-          ? () => context.push(
-              '/admin/topic/${resource.topicId}/article/${resource.id}',
-            )
+          ? () => context.push(adminResourcePath(resource.topicId, resource.id))
           : null,
       leading: Text(
         '${resource.order}',
@@ -325,8 +328,13 @@ class _ResourceRow extends StatelessWidget {
         style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
       ),
       subtitle: Text(
-        editable ? resource.type.label : '${resource.type.label} · seeder only',
-        style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+        needsWork
+            ? '${resource.type.label} · not ready — '
+                  '${resource.type == LearnResourceType.video ? 'no YouTube link' : 'no body'}'
+            : resource.type.label,
+        style: AppTheme.caption.copyWith(
+          color: needsWork ? AppColors.warning : AppColors.textSecondaryDark,
+        ),
       ),
       trailing: _StatusBadge(isDraft: isDraft),
     );

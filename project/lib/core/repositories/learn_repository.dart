@@ -166,6 +166,32 @@ class ExerciseQuery {
   int get hashCode => Object.hash(topicId, resourceId, questionCount);
 }
 
+/// Questions an author pinned to an exercise, in the order they were
+/// pinned. Keyed by the ids joined with commas (a stable, comparable key).
+///
+/// One `whereIn` over document ids — no index. A pinned question that has
+/// since lost its verified answer, or been deleted, is dropped rather than
+/// served: a question that can never be marked right is worse than a
+/// shorter set.
+final pinnedQuestionsProvider = FutureProvider.family<List<Question>, String>((
+  ref,
+  joinedIds,
+) async {
+  final ids = joinedIds.split(',').where((id) => id.isNotEmpty).toList();
+  if (ids.isEmpty) return const [];
+  final snap = await ref
+      .read(_firestoreProvider)
+      .collection('questions')
+      .where(FieldPath.documentId, whereIn: ids.take(kMaxPinnedQuestions).toList())
+      .get();
+  final byId = {for (final d in snap.docs) d.id: Question.fromFirestore(d)};
+  return [
+    for (final id in ids)
+      if (byId[id] case final q?)
+        if (q.correctIndex >= 0 && q.correctIndex < q.options.length) q,
+  ];
+});
+
 /// Questions for one inline exercise.
 ///
 /// Keyed by resource id as well as topic so two exercises in the same

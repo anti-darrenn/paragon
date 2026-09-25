@@ -124,6 +124,30 @@ class Analytics {
     ),
   );
 
+  /// One Learn item finished — a video watched through, an article read,
+  /// an exercise set done. `type` is `video`, `article` or `exercise`.
+  Future<void> lessonItemComplete({
+    required String topicId,
+    required String type,
+  }) => _log(
+    (a) => a.logEvent(
+      name: 'lesson_item_complete',
+      parameters: {'topic_id': topicId, 'type': type},
+    ),
+  );
+
+  /// A finished in-lesson exercise set, scored on first tries.
+  Future<void> exerciseCompleted({
+    required String topicId,
+    required int correct,
+    required int total,
+  }) => _log(
+    (a) => a.logEvent(
+      name: 'exercise_complete',
+      parameters: {'topic_id': topicId, 'correct': correct, 'total': total},
+    ),
+  );
+
   Future<void> examCompleted({
     required String subjectId,
     required int answered,

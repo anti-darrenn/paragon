@@ -8,6 +8,7 @@
 //   node 9_seed_resources.js --subject=mathematics            # one subject
 //   node 9_seed_resources.js --topic=quadratic-equations      # one topic
 //   node 9_seed_resources.js --subject=mathematics --commit
+//   node 9_seed_resources.js ... --commit --force   # also overwrite in-app edits
 //
 // ── Why the ids are slugs, not auto-ids ──────────────────────────────────
 //
@@ -76,6 +77,8 @@ const VALID_TYPES = ['video', 'article', 'exercise'];
 
 const args = process.argv.slice(2);
 const COMMIT = args.includes('--commit');
+// Overwrite resources the in-app editor created or edited. Off by default.
+const FORCE = args.includes('--force');
 const arg = (name) => {
   const hit = args.find((a) => a.startsWith(`--${name}=`));
   return hit ? hit.split('=').slice(1).join('=') : null;
@@ -245,8 +248,34 @@ async function resolveSubject(subjectSlug) {
 
 // ─── Writing ─────────────────────────────────────────────────────────────
 
+/** Mirrors `LearnResource.isAvailable` — change both together. */
+function isAvailableResource(r) {
+  if (r.type === 'video') return String(r.youtubeId || '').trim() !== '';
+  if (r.type === 'article') return String(r.body || '').trim() !== '';
+  return r.type === 'exercise';
+}
+
 async function seedTopic(plan) {
-  const { topicId, subjectId, resources } = plan;
+  const { topicId, subjectId } = plan;
+  const collection = db.collection('topics').doc(topicId).collection('resources');
+
+  // Resources the in-app editor created or has edited belong to it now.
+  // Overwriting them would silently undo an author's work — a YouTube link
+  // added to a seeded video, say — and republish a draft. Skipped and
+  // named; `--force` overrides.
+  const existing = await collection.get();
+  const owned = new Set(
+    existing.docs
+      .filter((d) => d.data().editedInApp || d.data().createdBy)
+      .map((d) => d.id),
+  );
+  const resources = FORCE
+    ? plan.resources
+    : plan.resources.filter((r) => {
+        if (!owned.has(r.id)) return true;
+        console.log(`    skip ${r.id}: edited in the app (use --force to overwrite)`);
+        return false;
+      });
   let written = 0;
 
   for (let i = 0; i < resources.length; i += BATCH) {
@@ -283,7 +312,14 @@ async function seedTopic(plan) {
     written += Math.min(BATCH, resources.length - i);
   }
 
-  Q.spend(written);
+  // Keep the course index's "x of y lessons" denominator in step.
+  const published = await collection.where('status', '==', 'published').get();
+  const lessonCount = published.docs.filter((d) => isAvailableResource(d.data())).length;
+  await db.collection('topics').doc(topicId).update({ lessonCount });
+
+  // The lessonCount update is a write against the quota, but not a
+  // resource, so it is spent here and not counted in the returned total.
+  Q.spend(written + 1);
   return written;
 }
 

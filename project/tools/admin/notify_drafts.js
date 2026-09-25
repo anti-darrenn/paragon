@@ -35,9 +35,9 @@ const TO = (process.env.NOTIFY_TO || "darrenn.cp@gmail.com,darren.ohiomoba.adm@g
   .filter(Boolean);
 
 // The app uses Flutter's default hash URL strategy, so routes live after
-// `#`. Must match the `/admin/topic/:topicId/article/:resourceId` route
-// in app_router.dart.
-const editorLink = (topicId, id) => `${APP_URL}/#/admin/topic/${topicId}/article/${id}`;
+// `#`. Must match `adminResourcePath` in admin_resource_editor_screen.dart
+// (the `/admin/topic/:topicId/resource/:resourceId` route).
+const editorLink = (topicId, id) => `${APP_URL}/#/admin/topic/${topicId}/resource/${id}`;
 const adminLink = () => `${APP_URL}/#/admin`;
 
 const escapeHtml = (s) =>
