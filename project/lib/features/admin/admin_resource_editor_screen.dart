@@ -6,6 +6,7 @@ import '../../core/models/learn_resource.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/admin_resource_repository.dart';
 import '../../core/repositories/learn_repository.dart';
+import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/article_view.dart';
@@ -103,7 +104,7 @@ class _AdminArticleEditorScreenState
 
   @override
   Widget build(BuildContext context) {
-    final topic = ref.watch(adminTopicProvider(widget.topicId)).asData?.value;
+    final topic = ref.watch(topicByIdProvider(widget.topicId)).asData?.value;
     _hydrate();
 
     final existing = _isNew
@@ -384,7 +385,7 @@ class _AdminArticleEditorScreenState
       return;
     }
     final user = ref.read(currentUserProvider);
-    final topic = await ref.read(adminTopicProvider(widget.topicId).future);
+    final topic = await ref.read(topicByIdProvider(widget.topicId).future);
     if (user == null || topic == null) {
       setState(() => _error = "Couldn't find this topic.");
       return;
