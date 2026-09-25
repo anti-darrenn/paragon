@@ -1,3 +1,4 @@
+import '../../features/study/scratchpad/scratchpad_tool.dart';
 import 'study_tool.dart';
 
 /// Every study tool in the app, in the order the dock lists them.
@@ -6,4 +7,4 @@ import 'study_tool.dart';
 /// nothing else in the host screens. A tool whose id the current subject
 /// or context does not allow is filtered out by `StudyScope.allowed`, so
 /// entries are unconditional.
-const List<StudyTool> studyTools = [];
+const List<StudyTool> studyTools = [ScratchpadTool()];
