@@ -360,6 +360,74 @@ service cloud.firestore {
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
     }
 
+    // ── NOTES, HIGHLIGHTS, BOOKMARKS, REVISION CARDS ─────────────
+    // A student's own study data. Owner-only in both directions, with a
+    // closed field set. Guests keep theirs on the device only, so
+    // anonymous accounts may not write here; reads and deletes stay
+    // owner-only for everyone, which account deletion relies on.
+    // `AccountRepository.deleteOwnedDocuments` removes both.
+
+    // One document per annotated block: its highlight and/or note. A note
+    // keeps a snapshot of the block's text, so rewording a lesson shows
+    // the note as "from an earlier version" instead of losing it.
+    match /notes/{noteId} {
+      function noteShapeOk(d) {
+        return d.keys().hasOnly(['userId', 'topicId', 'resourceId',
+                                 'subjectId', 'blockKey', 'colour', 'text',
+                                 'snapshot', 'createdAt', 'updatedAt'])
+          && d.keys().hasAll(['userId', 'topicId', 'resourceId', 'subjectId',
+                              'blockKey', 'colour', 'text', 'snapshot',
+                              'createdAt', 'updatedAt'])
+          && d.topicId is string && d.topicId.size() > 0
+          && d.topicId.size() <= 128
+          && d.resourceId is string && d.resourceId.size() > 0
+          && d.resourceId.size() <= 128
+          && d.subjectId is string && d.subjectId.size() <= 128
+          && d.blockKey is string && d.blockKey.size() > 0
+          && d.blockKey.size() <= 200
+          && (d.colour == null
+              || d.colour in ['yellow', 'green', 'blue', 'purple'])
+          && d.text is string && d.text.size() <= 2000
+          && d.snapshot is string && d.snapshot.size() <= 1000;
+      }
+      // Rules are not filters: a query must carry `userId == uid`.
+      allow read, delete: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.userId == request.auth.uid
+        && noteShapeOk(request.resource.data)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.userId == request.auth.uid
+        && noteShapeOk(request.resource.data)
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['colour', 'text', 'snapshot', 'updatedAt'])
+        && request.resource.data.updatedAt == request.time;
+    }
+
+    // Bookmarks and the revision-card schedule, one document per student.
+    // Always written with merge, and a merge is checked against the merged
+    // document — so every field any writer uses must be named here, or
+    // one feature's field would lock the other out.
+    match /study/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys()
+             .hasOnly(['userId', 'updatedAt', 'bookmarks', 'cards'])
+        && request.resource.data.userId == uid
+        && request.resource.data.updatedAt == request.time
+        && (!('bookmarks' in request.resource.data)
+            || (request.resource.data.bookmarks is map
+                && request.resource.data.bookmarks.size() <= 500))
+        && (!('cards' in request.resource.data)
+            || (request.resource.data.cards is map
+                && request.resource.data.cards.size() <= 5000));
+    }
+
     // ── USERNAME REGISTRY (uniqueness enforcement) ───────────────
     // This collection *is* the uniqueness guarantee. A reservation can
     // only be created, never changed or released, so the first writer of
