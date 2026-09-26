@@ -238,7 +238,7 @@ service cloud.firestore {
     function clientWritableFields() {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
-        'avatar', 'bio',
+        'avatar', 'bio', 'usernameChangedAt',
         'username', 'usernameKey',
         'email', 'isAnonymous'
       ];
@@ -313,17 +313,35 @@ service cloud.firestore {
     // rules can compute `.lower()` but cannot strip characters, so any
     // richer normalisation would be unverifiable here and uniqueness
     // would collapse back to a client-side promise.
+    // A username is set once by claiming a reservation, and after that
+    // may only move to another reservation the student owns, at most once
+    // every 90 days (UsernameRules.changeCooldown). `usernameChangedAt`
+    // is written only as part of such a change and only as the real
+    // server time — otherwise a client could backdate it and skip the
+    // wait. Old reservations are never released (see /usernames below).
     function usernameWriteIsValid(uid) {
       let after = request.resource.data;
       let hadUsername = 'username' in resource.data
         && resource.data.username is string
         && resource.data.username.size() > 0;
+      let unchanged = after.username == resource.data.username
+        && after.usernameKey == resource.data.usernameKey;
+      let stampUntouched = !request.resource.data.diff(resource.data)
+        .affectedKeys().hasAny(['usernameChangedAt']);
 
       return hadUsername
-        ? (after.username == resource.data.username
-            && after.usernameKey == resource.data.usernameKey)
-        : (!('username' in after) && !('usernameKey' in after))
-          || claimsOwnReservation(uid, after);
+        ? (unchanged && stampUntouched) || usernameChangeIsValid(uid, after)
+        : stampUntouched
+          && ((!('username' in after) && !('usernameKey' in after))
+            || claimsOwnReservation(uid, after));
+    }
+
+    function usernameChangeIsValid(uid, after) {
+      return claimsOwnReservation(uid, after)
+        && after.usernameChangedAt == request.time
+        && (!('usernameChangedAt' in resource.data)
+          || request.time > resource.data.usernameChangedAt
+               + duration.value(90, 'd'));
     }
 
     function claimsOwnReservation(uid, after) {
@@ -526,7 +544,9 @@ service cloud.firestore {
         && request.resource.data.raw.lower() == normalised
         && normalised.matches('^[a-z0-9_]{4,20}$');
 
-      // Permanent: no renaming, no releasing, no reuse after deletion.
+      // Permanent: no renaming, no releasing, no reuse after deletion —
+      // and none after a student moves to a new handle either, so a name
+      // someone gave up cannot be taken to pass as them.
       allow update, delete: if false;
     }
   }

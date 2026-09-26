@@ -492,15 +492,107 @@ async function usernames(a, b, key) {
   );
 
   expectOutcome(
-    'a username is immutable once set',
+    'a username cannot change to a handle with no reservation',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        {
+          username: str('somethingelse'),
+          usernameKey: str('somethingelse'),
+        },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+
+  // Changing: to a second reservation a owns, once, with the server's
+  // clock — and not again for 90 days.
+  const second = `${key}_2`;
+  const theirs = `${key}_3`;
+  await commit(
+    a.idToken,
+    write(`usernames/${second}`, { uid: str(a.uid), raw: str(second) }),
+  );
+  await commit(
+    b.idToken,
+    write(`usernames/${theirs}`, { uid: str(b.uid), raw: str(theirs) }),
+  );
+
+  expectOutcome(
+    'a change without usernameChangedAt is refused',
     DENY,
     await commit(
       a.idToken,
       write(`users/${a.uid}`, {
-        username: str('somethingelse'),
-        usernameKey: str('somethingelse'),
+        username: str(second),
+        usernameKey: str(second),
       }),
     ),
+  );
+  expectOutcome(
+    'a change with a client-chosen usernameChangedAt is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        username: str(second),
+        usernameKey: str(second),
+        usernameChangedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    "a change to someone else's reservation is refused",
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        { username: str(theirs), usernameKey: str(theirs) },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+  expectOutcome(
+    'a change to your own second reservation is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        { username: str(second), usernameKey: str(second) },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+  expectOutcome(
+    'a second change inside 90 days is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        { username: str(key), usernameKey: str(key) },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+  expectOutcome(
+    'usernameChangedAt cannot be backdated on its own',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        usernameChangedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    'a handle given up cannot be released',
+    DENY,
+    await deleteDoc(a.idToken, `usernames/${key}`),
   );
 
   expectOutcome(
@@ -1201,8 +1293,11 @@ async function teardown(a, b, usernameKey) {
   }
 
   try {
-    await getAdmin().firestore().collection('usernames').doc(usernameKey).delete();
-    console.log(`    reservation ${usernameKey} removed (admin)`);
+    const reservations = getAdmin().firestore().collection('usernames');
+    for (const k of [usernameKey, `${usernameKey}_2`, `${usernameKey}_3`]) {
+      await reservations.doc(k).delete();
+    }
+    console.log(`    reservations ${usernameKey}{,_2,_3} removed (admin)`);
   } catch (e) {
     console.log(
       `    NOTE: reservation "${usernameKey}" could not be removed ` +
