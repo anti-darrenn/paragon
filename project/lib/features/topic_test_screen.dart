@@ -18,6 +18,7 @@ import '../core/widgets/report_problem_button.dart';
 import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
+import 'lesson/lesson_nudge.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -240,15 +241,23 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
               onDone: () => context.pop(),
             );
           }
-          return _Questions(
-            questions: questions,
-            index: _index,
-            answers: _answers,
-            answeredCount: _answeredCount,
-            isGuest: isGuest,
-            onSelect: _select,
-            onIndex: (i) => setState(() => _index = i),
-            onSubmit: () => _submit(questions),
+          return Column(
+            children: [
+              // A nudge towards the lesson, never a gate.
+              if (_answers.isEmpty) LessonNudge(topicId: widget.topicId),
+              Expanded(
+                child: _Questions(
+                  questions: questions,
+                  index: _index,
+                  answers: _answers,
+                  answeredCount: _answeredCount,
+                  isGuest: isGuest,
+                  onSelect: _select,
+                  onIndex: (i) => setState(() => _index = i),
+                  onSubmit: () => _submit(questions),
+                ),
+              ),
+            ],
           );
         },
       ),
