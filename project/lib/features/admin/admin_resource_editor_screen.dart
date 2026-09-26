@@ -1087,7 +1087,8 @@ class _AdminResourceEditorScreenState
         })
         .catchError((_) {});
     ref.invalidate(adminTopicResourcesProvider(widget.topicId));
-    ref.invalidate(adminDraftsProvider);
+    ref.invalidate(adminStatusQueueProvider);
+    ref.invalidate(adminSubjectResourcesProvider);
     ref.invalidate(
       adminResourceProvider((topicId: widget.topicId, resourceId: resourceId)),
     );

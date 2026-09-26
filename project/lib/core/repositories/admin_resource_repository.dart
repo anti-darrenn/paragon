@@ -294,17 +294,35 @@ final adminTopicResourcesProvider =
       return resources;
     });
 
-/// Every draft in every topic, oldest-updated last. A collection-group
-/// query, allowed only by the admin-only `/{path=**}/resources` rule and
-/// served by the collection-group `status` index.
-final adminDraftsProvider = FutureProvider<List<LearnResource>>((ref) async {
-  final snap = await FirebaseFirestore.instance
-      .collectionGroup('resources')
-      .where('status', isEqualTo: 'draft')
-      .get();
-  return snap.docs.map(LearnResource.fromFirestore).toList()
-    ..sort((a, b) => a.title.compareTo(b.title));
-});
+/// Every item in one workflow state, across all topics: the studio's
+/// review queue (`in_review`) and "sent back" list (`changes_requested`).
+/// A collection-group query, allowed by the staff-only
+/// `/{path=**}/resources` rule and served by the collection-group
+/// `status` index. Sorted by title.
+final adminStatusQueueProvider =
+    FutureProvider.family<List<LearnResource>, ResourceStatus>((
+      ref,
+      status,
+    ) async {
+      final snap = await FirebaseFirestore.instance
+          .collectionGroup('resources')
+          .where('status', isEqualTo: status.value)
+          .get();
+      return snap.docs.map(LearnResource.fromFirestore).toList()
+        ..sort((a, b) => a.title.compareTo(b.title));
+    });
+
+/// Every lesson item in one subject, any status: the course map's source.
+/// One collection-group query per subject opened (served by the
+/// collection-group `subjectId` override), rather than one per topic.
+final adminSubjectResourcesProvider =
+    FutureProvider.family<List<LearnResource>, String>((ref, subjectId) async {
+      final snap = await FirebaseFirestore.instance
+          .collectionGroup('resources')
+          .where('subjectId', isEqualTo: subjectId)
+          .get();
+      return snap.docs.map(LearnResource.fromFirestore).toList();
+    });
 
 /// Key for [adminResourceProvider]: a resource lives under its topic, so
 /// its id alone does not locate it.

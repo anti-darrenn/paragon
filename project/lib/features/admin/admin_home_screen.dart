@@ -2,20 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/lessons/lesson_doc.dart';
 import '../../core/models/learn_resource.dart';
+import '../../core/models/topic.dart';
+import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/admin_flag_repository.dart';
 import '../../core/repositories/admin_resource_repository.dart';
 import '../../core/repositories/learning_repository.dart';
+import '../../core/repositories/subject_index_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'admin_flag_screen.dart';
 import 'admin_resource_editor_screen.dart';
+import 'studio/review_panels.dart';
+import 'studio/topic_planner_screen.dart';
 
-/// `/admin` — pick a topic, see every resource in it (drafts included),
-/// open one to edit or start a new article.
+/// `/admin` — the content studio's home.
 ///
-/// Reachable only with the `admin` claim; the router enforces that, and
-/// the rules enforce it again for every read and write made from here.
+/// Top to bottom: what needs you now (items waiting for review for a
+/// reviewer, items sent back to their writer, problem reports), then the
+/// course map — every topic of a subject with the state of its lesson,
+/// one tap from its planner.
+///
+/// Reachable by any content-team role; the router gates it, and the rules
+/// check every read and write again. See docs/CONTENT_ROLES.md.
 class AdminHomeScreen extends ConsumerStatefulWidget {
   const AdminHomeScreen({super.key});
 
@@ -25,92 +35,81 @@ class AdminHomeScreen extends ConsumerStatefulWidget {
 
 class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
   String? _subjectId;
-  String? _unitId;
-  String? _topicId;
 
   @override
   Widget build(BuildContext context) {
-    final subjects = ref.watch(subjectsProvider);
-    final units = _subjectId == null
-        ? null
-        : ref.watch(unitsProvider(_subjectId!));
-    final topics = _unitId == null ? null : ref.watch(topicsProvider(_unitId!));
+    final role = ref.watch(staffRoleProvider);
+    final subjects = ref.watch(subjectsProvider).asData?.value ?? const [];
+    final subjectId = _subjectId ?? subjects.firstOrNull?.id;
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
-      appBar: AppBar(title: const Text('Content editor')),
+      appBar: AppBar(title: const Text('Content studio')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 720),
+              constraints: const BoxConstraints(maxWidth: 960),
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 60),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Text(
-                      'Articles saved here are drafts until published. '
-                      'Students see nothing until you press Publish.',
+                      role.canReview
+                          ? 'You can review and publish. Writers submit items to you; nothing reaches students until it is published.'
+                          : 'Write and submit items for review. A reviewer publishes them; students see nothing before that.',
                       style: AppTheme.bodyMd.copyWith(
                         color: AppColors.textSecondaryDark,
                       ),
                     ),
                     const SizedBox(height: 24),
-                    const _FlagQueue(),
-                    const SizedBox(height: 28),
-                    const _AwaitingReview(),
-                    const SizedBox(height: 28),
-                    Text(
-                      'Browse by topic',
-                      style: AppTheme.heading3.copyWith(
-                        color: AppColors.textPrimaryDark,
+                    if (role.canReview) ...[
+                      const _StatusQueue(
+                        status: ResourceStatus.inReview,
+                        title: 'Waiting for your review',
+                        empty: 'Nothing waiting for review.',
                       ),
+                      const SizedBox(height: 28),
+                    ],
+                    const _StatusQueue(
+                      status: ResourceStatus.changesRequested,
+                      title: 'Sent back for changes',
+                      empty: 'Nothing sent back.',
+                    ),
+                    const SizedBox(height: 28),
+                    if (role.canReview) ...[
+                      const _FlagQueue(),
+                      const SizedBox(height: 28),
+                    ],
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Course map',
+                            style: AppTheme.heading3.copyWith(
+                              color: AppColors.textPrimaryDark,
+                            ),
+                          ),
+                        ),
+                        if (subjects.isNotEmpty)
+                          DropdownButton<String>(
+                            value: subjectId,
+                            dropdownColor: AppColors.surfaceDark,
+                            underline: const SizedBox.shrink(),
+                            items: [
+                              for (final s in subjects)
+                                DropdownMenuItem(
+                                  value: s.id,
+                                  child: Text(s.name),
+                                ),
+                            ],
+                            onChanged: (id) => setState(() => _subjectId = id),
+                          ),
+                      ],
                     ),
                     const SizedBox(height: 12),
-                    _Picker(
-                      label: 'SUBJECT',
-                      value: _subjectId,
-                      items: subjects.asData?.value
-                          .map((s) => (s.id, s.name))
-                          .toList(),
-                      onChanged: (id) => setState(() {
-                        _subjectId = id;
-                        _unitId = null;
-                        _topicId = null;
-                      }),
-                    ),
-                    if (units != null) ...[
-                      const SizedBox(height: 16),
-                      _Picker(
-                        key: ValueKey('unit-$_subjectId'),
-                        label: 'UNIT',
-                        value: _unitId,
-                        items: units.asData?.value
-                            .map((u) => (u.id, u.name))
-                            .toList(),
-                        onChanged: (id) => setState(() {
-                          _unitId = id;
-                          _topicId = null;
-                        }),
-                      ),
-                    ],
-                    if (topics != null) ...[
-                      const SizedBox(height: 16),
-                      _Picker(
-                        key: ValueKey('topic-$_unitId'),
-                        label: 'TOPIC',
-                        value: _topicId,
-                        items: topics.asData?.value
-                            .map((t) => (t.id, t.name))
-                            .toList(),
-                        onChanged: (id) => setState(() => _topicId = id),
-                      ),
-                    ],
-                    if (_topicId != null) ...[
-                      const SizedBox(height: 28),
-                      _TopicResources(topicId: _topicId!),
-                    ],
+                    if (subjectId != null) _CourseMap(subjectId: subjectId),
                   ],
                 ),
               ),
@@ -122,124 +121,375 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
   }
 }
 
-class _Picker extends StatelessWidget {
-  const _Picker({
-    super.key,
-    required this.label,
-    required this.value,
-    required this.items,
-    required this.onChanged,
+/// Items in one workflow state across every topic, linking to the editor.
+class _StatusQueue extends ConsumerWidget {
+  const _StatusQueue({
+    required this.status,
+    required this.title,
+    required this.empty,
   });
 
-  final String label;
-  final String? value;
+  final ResourceStatus status;
+  final String title;
+  final String empty;
 
-  /// `(id, name)` pairs; null while loading.
-  final List<(String, String)>? items;
-  final ValueChanged<String?> onChanged;
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final items = ref.watch(adminStatusQueueProvider(status));
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          title,
+          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        ),
+        const SizedBox(height: 12),
+        items.when(
+          loading: () => const LinearProgressIndicator(minHeight: 2),
+          error: (e, _) => Text(
+            "Couldn't load this list.\n$e",
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          ),
+          data: (list) => list.isEmpty
+              ? Text(
+                  empty,
+                  style: AppTheme.bodyMd.copyWith(
+                    color: AppColors.textSecondaryDark,
+                  ),
+                )
+              : ResourceList(resources: list),
+        ),
+      ],
+    );
+  }
+}
+
+/// How far along a topic's lesson is, from its items.
+enum TopicState {
+  empty('Empty'),
+  draft('Draft'),
+  changesRequested('Changes requested'),
+  inReview('In review'),
+  published('Published');
+
+  const TopicState(this.label);
+  final String label;
+
+  Color get colour => switch (this) {
+    TopicState.empty => AppColors.textSecondaryDark,
+    TopicState.draft => AppColors.warning,
+    TopicState.changesRequested => AppColors.wrong,
+    TopicState.inReview => AppColors.accentBlue,
+    TopicState.published => AppColors.correct,
+  };
+
+  /// The most pressing state among a topic's items: anything needing
+  /// action outranks "published", so a live lesson with a revision in
+  /// review shows as in review.
+  static TopicState of(List<LearnResource> items) {
+    if (items.isEmpty) return TopicState.empty;
+    final statuses = items.map((r) => r.status).toSet();
+    if (statuses.contains(ResourceStatus.changesRequested)) {
+      return TopicState.changesRequested;
+    }
+    if (statuses.contains(ResourceStatus.inReview)) return TopicState.inReview;
+    if (statuses.contains(ResourceStatus.draft)) {
+      return statuses.contains(ResourceStatus.published)
+          ? TopicState.published
+          : TopicState.draft;
+    }
+    return TopicState.published;
+  }
+}
+
+/// Every unit and topic of a subject, each topic a chip showing its
+/// lesson's state, item count and outstanding to-dos.
+class _CourseMap extends ConsumerWidget {
+  const _CourseMap({required this.subjectId});
+
+  final String subjectId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final units = ref.watch(unitsProvider(subjectId)).asData?.value;
+    final resources = ref.watch(adminSubjectResourcesProvider(subjectId));
+    final byTopic = <String, List<LearnResource>>{};
+    for (final r in resources.asData?.value ?? const <LearnResource>[]) {
+      byTopic.putIfAbsent(r.topicId, () => []).add(r);
+    }
+    final role = ref.watch(staffRoleProvider);
+
+    if (units == null || resources.isLoading) {
+      return const LinearProgressIndicator(minHeight: 2);
+    }
+    if (resources.hasError) {
+      return Text(
+        "Couldn't load this subject's lessons.\n${resources.error}",
+        style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+      );
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _MapSummary(
+          subjectId: subjectId,
+          byTopic: byTopic,
+          canRebuild: role.canReview,
+        ),
+        for (final unit in units) ...[
+          const SizedBox(height: 20),
+          Text(
+            unit.name.toUpperCase(),
+            style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          ),
+          const SizedBox(height: 8),
+          _UnitTopics(unitId: unit.id, byTopic: byTopic),
+        ],
+      ],
+    );
+  }
+}
+
+class _MapSummary extends ConsumerStatefulWidget {
+  const _MapSummary({
+    required this.subjectId,
+    required this.byTopic,
+    required this.canRebuild,
+  });
+
+  final String subjectId;
+  final Map<String, List<LearnResource>> byTopic;
+  final bool canRebuild;
+
+  @override
+  ConsumerState<_MapSummary> createState() => _MapSummaryState();
+}
+
+class _MapSummaryState extends ConsumerState<_MapSummary> {
+  bool _rebuilding = false;
+
+  Future<void> _rebuild() async {
+    setState(() => _rebuilding = true);
+    try {
+      final units = await ref.read(unitsProvider(widget.subjectId).future);
+      final names = <String, String>{};
+      for (final u in units) {
+        for (final Topic t in await ref.read(topicsProvider(u.id).future)) {
+          names[t.id] = t.name;
+        }
+      }
+      await ref
+          .read(subjectIndexRepositoryProvider)
+          .rebuildSubject(subjectId: widget.subjectId, topicNames: names);
+      ref.invalidate(subjectIndexProvider(widget.subjectId));
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Glossary, formulas and cards rebuilt.'),
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text("Couldn't rebuild: $e")));
+      }
+    } finally {
+      if (mounted) setState(() => _rebuilding = false);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    final states = widget.byTopic.values.map(TopicState.of).toList();
+    final published = states.where((s) => s == TopicState.published).length;
+    final started = widget.byTopic.length;
+
+    return Wrap(
+      spacing: 16,
+      runSpacing: 8,
+      crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         Text(
-          label,
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          '$published published · $started with any content',
+          style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
         ),
-        const SizedBox(height: 8),
-        if (items == null)
-          const LinearProgressIndicator(minHeight: 2)
-        else
-          DropdownButtonFormField<String>(
-            initialValue: value,
-            isExpanded: true,
-            dropdownColor: AppColors.surfaceDark,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
-            decoration: InputDecoration(
-              filled: true,
-              fillColor: AppColors.surfaceDark,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(8),
-                borderSide: const BorderSide(color: AppColors.borderDark),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(8),
-                borderSide: const BorderSide(color: AppColors.borderDark),
-              ),
+        if (widget.canRebuild)
+          TextButton.icon(
+            onPressed: _rebuilding ? null : _rebuild,
+            icon: const Icon(Icons.refresh_rounded, size: 18),
+            label: Text(
+              _rebuilding ? 'Rebuilding…' : 'Rebuild glossary & cards',
             ),
-            items: [
-              for (final (id, name) in items!)
-                DropdownMenuItem(value: id, child: Text(name)),
-            ],
-            onChanged: onChanged,
           ),
       ],
     );
   }
 }
 
-class _TopicResources extends ConsumerWidget {
-  const _TopicResources({required this.topicId});
+class _UnitTopics extends ConsumerWidget {
+  const _UnitTopics({required this.unitId, required this.byTopic});
 
-  final String topicId;
+  final String unitId;
+  final Map<String, List<LearnResource>> byTopic;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final resources = ref.watch(adminTopicResourcesProvider(topicId));
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+    final topics = ref.watch(topicsProvider(unitId)).asData?.value;
+    if (topics == null) return const LinearProgressIndicator(minHeight: 2);
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
       children: [
-        Text(
-          'Resources',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        for (final t in topics)
+          _TopicChip(topic: t, items: byTopic[t.id] ?? const []),
+      ],
+    );
+  }
+}
+
+class _TopicChip extends StatelessWidget {
+  const _TopicChip({required this.topic, required this.items});
+
+  final Topic topic;
+  final List<LearnResource> items;
+
+  @override
+  Widget build(BuildContext context) {
+    final state = TopicState.of(items);
+    final todos = items
+        .where((r) => r.type == LearnResourceType.article)
+        .expand((r) => parseLessonDoc(r.body).blocks)
+        .whereType<TodoBlock>()
+        .length;
+
+    return InkWell(
+      onTap: () => context.push(topicPlannerPath(topic.id)),
+      borderRadius: BorderRadius.circular(10),
+      child: Container(
+        width: 210,
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: AppColors.surfaceDark,
+          border: Border.all(color: state.colour.withAlpha(140)),
+          borderRadius: BorderRadius.circular(10),
         ),
-        const SizedBox(height: 10),
-        Wrap(
-          spacing: 10,
-          runSpacing: 10,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            for (final (type, icon) in const [
-              (LearnResourceType.article, Icons.article_outlined),
-              (LearnResourceType.video, Icons.play_circle_outline_rounded),
-              (LearnResourceType.exercise, Icons.edit_note_rounded),
-            ])
-              ElevatedButton.icon(
-                onPressed: () =>
-                    context.push(adminNewResourcePath(topicId, type)),
-                icon: Icon(icon, size: 18),
-                label: Text('New ${type.label.toLowerCase()}'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primary,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
-              ),
+            Text(
+              topic.name,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              [
+                state.label,
+                if (items.isNotEmpty)
+                  '${items.length} item${items.length == 1 ? '' : 's'}',
+                if (todos > 0) '$todos to-do${todos == 1 ? '' : 's'}',
+              ].join(' · '),
+              style: AppTheme.caption.copyWith(color: state.colour),
+            ),
           ],
         ),
-        const SizedBox(height: 12),
-        resources.when(
-          loading: () => const Padding(
-            padding: EdgeInsets.all(24),
-            child: Center(child: CircularProgressIndicator()),
-          ),
-          error: (e, _) => Text(
-            "Couldn't load this topic's resources.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-          ),
-          data: (list) => list.isEmpty
-              ? Text(
-                  'No resources in this topic yet.',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
-                  ),
-                )
-              : _ResourceList(resources: list),
+      ),
+    );
+  }
+}
+
+/// Items as rows linking to the editor. Shared with the topic planner.
+class ResourceList extends StatelessWidget {
+  const ResourceList({super.key, required this.resources});
+
+  final List<LearnResource> resources;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.surfaceDark,
+        border: Border.all(color: AppColors.borderDark),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        children: [
+          for (var i = 0; i < resources.length; i++) ...[
+            if (i > 0) const Divider(height: 1, color: AppColors.borderDark),
+            ResourceRow(resource: resources[i]),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class ResourceRow extends StatelessWidget {
+  const ResourceRow({super.key, required this.resource, this.trailing});
+
+  final LearnResource resource;
+
+  /// Replaces the status badge (the planner puts a drag handle here).
+  final Widget? trailing;
+
+  @override
+  Widget build(BuildContext context) {
+    final editable = resource.type != LearnResourceType.unknown;
+    // A seeded video with no id yet is the usual reason to open one.
+    final needsWork = !resource.isAvailable;
+
+    return ListTile(
+      enabled: editable,
+      onTap: editable
+          ? () => context.push(adminResourcePath(resource.topicId, resource.id))
+          : null,
+      leading: Icon(switch (resource.type) {
+        LearnResourceType.video => Icons.play_circle_outline_rounded,
+        LearnResourceType.exercise => Icons.edit_note_rounded,
+        _ => Icons.article_outlined,
+      }, color: AppColors.textSecondaryDark),
+      title: Text(
+        resource.title.isEmpty ? '(untitled)' : resource.title,
+        style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+      ),
+      subtitle: Text(
+        [
+          resource.type.label,
+          if (resource.isRevision) 'revision of a published item',
+          if (needsWork)
+            'not ready: ${resource.type == LearnResourceType.video ? 'no YouTube link' : 'no body'}',
+        ].join(' · '),
+        style: AppTheme.caption.copyWith(
+          color: needsWork ? AppColors.warning : AppColors.textSecondaryDark,
         ),
-      ],
+      ),
+      trailing: trailing ?? StatusBadge(status: resource.status),
+    );
+  }
+}
+
+class StatusBadge extends StatelessWidget {
+  const StatusBadge({super.key, required this.status});
+
+  final ResourceStatus status;
+
+  @override
+  Widget build(BuildContext context) {
+    final colour = statusColour(status);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      decoration: BoxDecoration(
+        border: Border.all(color: colour),
+        borderRadius: BorderRadius.circular(6),
+      ),
+      child: Text(
+        status.label,
+        style: AppTheme.caption.copyWith(color: colour),
+      ),
     );
   }
 }
@@ -357,129 +607,6 @@ class _FlagRow extends StatelessWidget {
           if (q?.isGenerated ?? false) 'generated',
         ].join(' · '),
         style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
-      ),
-    );
-  }
-}
-
-/// Every draft in the app, across topics — where the review email sends
-/// you.
-class _AwaitingReview extends ConsumerWidget {
-  const _AwaitingReview();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final drafts = ref.watch(adminDraftsProvider);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          'Awaiting review',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
-        ),
-        const SizedBox(height: 12),
-        drafts.when(
-          loading: () => const LinearProgressIndicator(minHeight: 2),
-          error: (e, _) => Text(
-            "Couldn't load drafts.\n$e",
-            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
-          ),
-          data: (list) => list.isEmpty
-              ? Text(
-                  'No drafts waiting.',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
-                  ),
-                )
-              : _ResourceList(resources: list),
-        ),
-      ],
-    );
-  }
-}
-
-class _ResourceList extends StatelessWidget {
-  const _ResourceList({required this.resources});
-
-  final List<LearnResource> resources;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        children: [
-          for (var i = 0; i < resources.length; i++) ...[
-            if (i > 0) const Divider(height: 1, color: AppColors.borderDark),
-            _ResourceRow(resource: resources[i]),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
-class _ResourceRow extends StatelessWidget {
-  const _ResourceRow({required this.resource});
-
-  final LearnResource resource;
-
-  @override
-  Widget build(BuildContext context) {
-    final editable = resource.type != LearnResourceType.unknown;
-    final isDraft = resource.status == ResourceStatus.draft;
-    // A seeded video with no id yet is the usual reason to open one.
-    final needsWork = !resource.isAvailable;
-
-    return ListTile(
-      enabled: editable,
-      onTap: editable
-          ? () => context.push(adminResourcePath(resource.topicId, resource.id))
-          : null,
-      leading: Text(
-        '${resource.order}',
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
-      ),
-      title: Text(
-        resource.title.isEmpty ? '(untitled)' : resource.title,
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
-      ),
-      subtitle: Text(
-        needsWork
-            ? '${resource.type.label} · not ready — '
-                  '${resource.type == LearnResourceType.video ? 'no YouTube link' : 'no body'}'
-            : resource.type.label,
-        style: AppTheme.caption.copyWith(
-          color: needsWork ? AppColors.warning : AppColors.textSecondaryDark,
-        ),
-      ),
-      trailing: _StatusBadge(isDraft: isDraft),
-    );
-  }
-}
-
-class _StatusBadge extends StatelessWidget {
-  const _StatusBadge({required this.isDraft});
-
-  final bool isDraft;
-
-  @override
-  Widget build(BuildContext context) {
-    final color = isDraft ? AppColors.warning : AppColors.correct;
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-      decoration: BoxDecoration(
-        border: Border.all(color: color),
-        borderRadius: BorderRadius.circular(6),
-      ),
-      child: Text(
-        isDraft ? 'Draft' : 'Published',
-        style: AppTheme.caption.copyWith(color: color),
       ),
     );
   }
