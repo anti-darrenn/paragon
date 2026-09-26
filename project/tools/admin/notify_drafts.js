@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 /**
- * Emails the reviewers about Learn drafts and student problem reports
- * they have not been told about.
+ * Emails the content team about lesson-workflow transitions and student
+ * problem reports they have not been told about:
+ *
+ *   submitted for review  → the reviewers (NOTIFY_TO), in one digest
+ *                           together with new problem reports
+ *   changes requested,
+ *   published             → the writer, one email each (see writerEmails
+ *                           for the shared-sender limitation)
  *
  *   node notify_drafts.js              # send, then mark what was sent
  *   node notify_drafts.js --dry-run    # print what would be sent
@@ -14,8 +20,8 @@
  * is marked sent until the send succeeds, so a failed send is retried next
  * run and a successful one is never repeated.
  *
- *   Drafts  are stamped `notifiedAt`. Edits to an already-notified draft
- *           do not re-send.
+ *   Items   carry `pendingNotice` (set by the studio on each transition,
+ *           cleared here). Saving a draft emails nobody; submitting it does.
  *   Reports are tracked by a cursor, `_meta/notify.flagsNotifiedThrough`
  *           (the newest `createdAt` already emailed), not a stamp on each
  *           report. A report without a stamp cannot be queried for — a
@@ -74,26 +80,93 @@ const oneLine = (text) => {
   return s.length > 90 ? `${s.slice(0, 87)}...` : s || "(no text)";
 };
 
-async function pendingDrafts(db) {
-  const snap = await db.collectionGroup("resources").where("status", "==", "draft").get();
-  const pending = snap.docs.filter((d) => d.data().notifiedAt == null);
-  console.log(`${snap.size} drafts, ${pending.length} not yet notified`);
+/**
+ * Lesson items whose last workflow transition has not been emailed.
+ *
+ * The studio sets `pendingNotice` to the new status on every transition
+ * someone should hear about (docs/CONTENT_ROLES.md) and this job clears it
+ * after a successful send, so each transition is emailed once. Queried
+ * with `in` on a collection-group field, served by the `pendingNotice`
+ * override in firestore.indexes.json. Reads only pending items.
+ */
+async function pendingNotices(db, auth) {
+  const snap = await db
+    .collectionGroup("resources")
+    .where("pendingNotice", "in", ["in_review", "changes_requested", "published"])
+    .get();
+  console.log(`${snap.size} workflow notices pending`);
 
   const topicNames = new Map();
-  for (const doc of pending) {
-    const topicId = doc.data().topicId;
-    if (!topicNames.has(topicId)) {
-      const topic = await db.collection("topics").doc(topicId).get();
-      topicNames.set(topicId, topic.exists ? topic.data().name : topicId);
+  const emails = new Map();
+  const notices = [];
+  for (const doc of snap.docs) {
+    const d = doc.data();
+    if (!topicNames.has(d.topicId)) {
+      const topic = await db.collection("topics").doc(d.topicId).get();
+      topicNames.set(d.topicId, topic.exists ? topic.data().name : d.topicId);
     }
+    const writerUid = d.submittedBy || d.createdBy || null;
+    if (writerUid && !emails.has(writerUid)) {
+      const user = await auth.getUser(writerUid).catch(() => null);
+      emails.set(writerUid, user ? user.email || null : null);
+    }
+    notices.push({
+      ref: doc.ref,
+      status: d.pendingNotice,
+      title: d.title || "(untitled)",
+      topic: topicNames.get(d.topicId),
+      link: editorLink(d.topicId, doc.id),
+      writerEmail: writerUid ? emails.get(writerUid) : null,
+    });
   }
+  return notices;
+}
 
-  return pending.map((d) => ({
-    ref: d.ref,
-    title: d.data().title || "(untitled)",
-    topic: topicNames.get(d.data().topicId),
-    link: editorLink(d.data().topicId, d.id),
-  }));
+const VERDICT = {
+  changes_requested: "Changes requested",
+  published: "Published",
+};
+
+/**
+ * One email per writer about their items' verdicts.
+ *
+ * Resend's shared sender (no NOTIFY_FROM) only delivers to the account's
+ * own address, so without a verified domain a writer's email would be
+ * refused on every run. Until then the notice goes to NOTIFY_TO, labelled
+ * with who it is for, so nothing is lost and the job never fails on it.
+ */
+function writerEmails(notices) {
+  const byWriter = new Map();
+  for (const n of notices) {
+    if (n.status === "in_review") continue;
+    const key = n.writerEmail || "(unknown writer)";
+    if (!byWriter.has(key)) byWriter.set(key, []);
+    byWriter.get(key).push(n);
+  }
+  const canReachWriters = Boolean(process.env.NOTIFY_FROM);
+  return [...byWriter].map(([writer, items]) => {
+    const lines = items.map((n) => `- ${VERDICT[n.status]}: ${n.title} (${n.topic})\n  ${n.link}`);
+    const forWho = canReachWriters ? "" : ` (for ${writer})`;
+    return {
+      to: canReachWriters && writer.includes("@") ? [writer] : TO,
+      subject:
+        items.length === 1
+          ? `${VERDICT[items[0].status]}: ${items[0].title}${forWho}`
+          : `${items.length} lesson updates${forWho}`,
+      text: ["Your lesson items were reviewed:", "", ...lines, "", `Content studio: ${adminLink()}`].join("\n"),
+      html:
+        "<p>Your lesson items were reviewed:</p><ul>" +
+        items
+          .map(
+            (n) =>
+              `<li><strong>${escapeHtml(VERDICT[n.status])}</strong>: ` +
+              `<a href="${escapeHtml(n.link)}">${escapeHtml(n.title)}</a> &mdash; ${escapeHtml(n.topic)}</li>`,
+          )
+          .join("") +
+        `</ul><p><a href="${escapeHtml(adminLink())}">Open the content studio</a></p>`,
+      items,
+    };
+  });
 }
 
 /** New reports since the cursor, grouped by question. */
@@ -138,31 +211,32 @@ async function pendingReports(db) {
   };
 }
 
-function subjectLine(drafts, reports) {
+function subjectLine(submitted, reports) {
   const parts = [];
-  if (drafts.length === 1) parts.push(`Draft ready for review: ${drafts[0].title}`);
-  else if (drafts.length > 1) parts.push(`${drafts.length} drafts ready for review`);
+  if (submitted.length === 1) parts.push(`Ready for review: ${submitted[0].title}`);
+  else if (submitted.length > 1) parts.push(`${submitted.length} items ready for review`);
   if (reports.count > 0) {
     parts.push(`${reports.count} new problem report${reports.count === 1 ? "" : "s"}`);
   }
   return parts.join(", ");
 }
 
-function buildEmail(drafts, reports) {
+/** The reviewers' digest: submitted items and new problem reports. */
+function buildEmail(submitted, reports) {
   const text = [];
   const html = [];
 
-  if (drafts.length) {
+  if (submitted.length) {
     text.push(
-      "New Learn drafts are waiting for review:",
+      "Lesson items submitted for review:",
       "",
-      ...drafts.map((d) => `- ${d.title} (${d.topic})\n  ${d.link}`),
+      ...submitted.map((d) => `- ${d.title} (${d.topic})\n  ${d.link}`),
       "",
     );
     html.push(
-      "<p>New Learn drafts are waiting for review:</p>",
+      "<p>Lesson items submitted for review:</p>",
       "<ul>",
-      ...drafts.map(
+      ...submitted.map(
         (d) => `<li><a href="${escapeHtml(d.link)}">${escapeHtml(d.title)}</a> &mdash; ${escapeHtml(d.topic)}</li>`,
       ),
       "</ul>",
@@ -190,59 +264,85 @@ function buildEmail(drafts, reports) {
   }
 
   text.push(
-    `Content editor: ${adminLink()}`,
+    `Content studio: ${adminLink()}`,
     "",
-    "Sign in with the content-editor account first. If a link lands on the",
-    "dashboard, open Settings > Content editor.",
+    "Sign in with your content-team account first. If a link lands on the",
+    "dashboard, open Settings > Content studio.",
   );
   html.push(
-    `<p><a href="${escapeHtml(adminLink())}">Open the content editor</a></p>`,
-    `<p style="color:#666">Sign in with the content-editor account first. If a link lands on the
-    dashboard, open Settings &rsaquo; Content editor.</p>`,
+    `<p><a href="${escapeHtml(adminLink())}">Open the content studio</a></p>`,
+    `<p style="color:#666">Sign in with your content-team account first. If a link lands on the
+    dashboard, open Settings &rsaquo; Content studio.</p>`,
   );
 
   return { text: text.join("\n"), html: html.join("\n") };
 }
 
+async function send(key, to, subject, text, html) {
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ from: FROM, to, subject, text, html }),
+  });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    throw new Error(`Resend refused the send (HTTP ${res.status}): ${JSON.stringify(body)}`);
+  }
+  console.log(`Sent "${subject}" to ${to.join(", ")} (id ${body.id})`);
+}
+
 async function main() {
   const admin = initAdmin();
   const db = admin.firestore();
+  const { FieldValue } = admin.firestore;
 
-  const drafts = await pendingDrafts(db);
+  const notices = await pendingNotices(db, admin.auth());
   const reports = await pendingReports(db);
-  if (drafts.length === 0 && reports.count === 0) return;
+  const submitted = notices.filter((n) => n.status === "in_review");
+  const verdicts = writerEmails(notices);
+  if (notices.length === 0 && reports.count === 0) return;
 
-  const subject = subjectLine(drafts, reports);
-  const { text, html } = buildEmail(drafts, reports);
+  const digest =
+    submitted.length || reports.count
+      ? { subject: subjectLine(submitted, reports), ...buildEmail(submitted, reports) }
+      : null;
 
   if (DRY_RUN) {
-    console.log(`\nWould send to ${TO.join(", ")} from ${FROM}\nSubject: ${subject}\n\n${text}`);
+    if (digest) console.log(`\nWould send to ${TO.join(", ")} from ${FROM}\nSubject: ${digest.subject}\n\n${digest.text}`);
+    for (const v of verdicts) console.log(`\nWould send to ${v.to.join(", ")}\nSubject: ${v.subject}\n\n${v.text}`);
     return;
   }
 
   const key = process.env.RESEND_API_KEY;
   if (!key) throw new Error("RESEND_API_KEY is not set. Nothing sent, nothing marked.");
 
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: FROM, to: TO, subject, text, html }),
-  });
-  const body = await res.json().catch(() => ({}));
-  if (!res.ok) {
-    throw new Error(`Resend refused the send (HTTP ${res.status}): ${JSON.stringify(body)}`);
+  // Each email is marked sent on its own, only once Resend has accepted
+  // it: a refused writer email never blocks the reviewers' digest, and is
+  // retried next run.
+  if (digest) {
+    await send(key, TO, digest.subject, digest.text, digest.html);
+    const batch = db.batch();
+    for (const n of submitted) batch.update(n.ref, { pendingNotice: FieldValue.delete() });
+    if (reports.through) {
+      batch.set(db.collection("_meta").doc("notify"), { flagsNotifiedThrough: reports.through }, { merge: true });
+    }
+    await batch.commit();
   }
-  console.log(`Sent to ${TO.join(", ")} (id ${body.id})`);
 
-  const batch = db.batch();
-  for (const d of drafts) {
-    batch.update(d.ref, { notifiedAt: admin.firestore.FieldValue.serverTimestamp() });
+  let failures = 0;
+  for (const v of verdicts) {
+    try {
+      await send(key, v.to, v.subject, v.text, v.html);
+      const batch = db.batch();
+      for (const n of v.items) batch.update(n.ref, { pendingNotice: FieldValue.delete() });
+      await batch.commit();
+    } catch (e) {
+      failures++;
+      console.error(e.message || e);
+    }
   }
-  if (reports.through) {
-    batch.set(db.collection("_meta").doc("notify"), { flagsNotifiedThrough: reports.through }, { merge: true });
-  }
-  await batch.commit();
-  console.log(`Marked ${drafts.length} drafts and ${reports.count} reports as notified`);
+  console.log(`Notified ${submitted.length} submissions, ${notices.length - submitted.length} verdicts, ${reports.count} reports`);
+  if (failures) throw new Error(`${failures} writer email(s) failed; they will be retried.`);
 }
 
 main()

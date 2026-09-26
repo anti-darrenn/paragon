@@ -24,7 +24,7 @@ class SettingsScreen extends ConsumerWidget {
     final userData = ref.watch(userDataProvider).asData?.value;
     final user = ref.watch(currentUserProvider);
     final isGuest = ref.watch(isGuestProvider);
-    final isAdmin = ref.watch(isAdminProvider);
+    final isStaff = ref.watch(staffRoleProvider).canWrite;
 
     final username = (userData?['username'] as String?) ?? '';
     final displayName = (userData?['displayName'] as String?) ?? '';
@@ -110,11 +110,11 @@ class SettingsScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 20),
 
-                    if (isAdmin) ...[
+                    if (isStaff) ...[
                       _Card(
                         children: [
                           _LinkRow(
-                            label: 'Content editor',
+                            label: 'Content studio',
                             onTap: () => context.push('/admin'),
                           ),
                         ],

@@ -50,21 +50,39 @@ class AdminResourceRepository {
   ///
   /// `notifiedAt` is left alone, so editing a draft that was already
   /// emailed about does not send a second email.
+  ///
+  /// The content as it stood before this save is kept in the resource's
+  /// `versions` subcollection, in the same batch, so any edit can be
+  /// undone from the studio's history.
   Future<void> save({
     required String topicId,
     required String resourceId,
     required ResourceDraft draft,
     required ResourceStatus status,
-  }) {
-    return _resources(topicId).doc(resourceId).update({
+    String? savedBy,
+  }) async {
+    final ref = _resources(topicId).doc(resourceId);
+    final before = (await ref.get()).data();
+    final batch = _db.batch();
+    if (before != null) {
+      batch.set(ref.collection('versions').doc(), {
+        for (final f in kResourceContentFields)
+          if (before.containsKey(f)) f: before[f],
+        'status': before['status'],
+        'savedAt': FieldValue.serverTimestamp(),
+        'savedBy': savedBy,
+      });
+    }
+    batch.update(ref, {
       ...draft.toFields(),
-      'status': status.name,
+      'status': status.value,
       // Tells `9_seed_resources.js` this resource now belongs to the
       // editor: without it, re-seeding would overwrite an in-app edit —
       // a YouTube link added to a seeded video — with the file's version.
       'editedInApp': true,
       'updatedAt': FieldValue.serverTimestamp(),
     });
+    await batch.commit();
   }
 
   /// One page of a topic's answerable questions, for pinning to an
@@ -119,6 +137,24 @@ class AdminResourceRepository {
     }
   }
 }
+
+/// The fields that make up a resource's content — what a version keeps
+/// and what approving a revision copies into the published item. Exactly
+/// the keys [ResourceDraft.toFields] writes; `order` is included for
+/// versions but never copied by a revision (the published item keeps its
+/// place).
+const kResourceContentFields = [
+  'type',
+  'title',
+  'order',
+  'body',
+  'youtubeId',
+  'durationSeconds',
+  'description',
+  'transcript',
+  'questionCount',
+  'questionIds',
+];
 
 /// What the editor's form holds for one resource, before it is saved.
 ///

@@ -114,17 +114,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // asking for a school and an age would be exactly backwards.
       if (isOnLegal) return null;
 
-      // ── Admin gate ─────────────────────────────────────────────────
-      // UI only. Every read and write the admin screens make is checked
-      // again by `isAdmin()` in firestore.rules, which is what actually
-      // protects drafts; this just keeps non-admins off screens that
-      // would only show them permission errors.
+      // ── Studio gate ────────────────────────────────────────────────
+      // UI only. Every read and write the studio makes is checked again
+      // by `isWriter()` / `isReviewer()` in firestore.rules, which is what
+      // actually protects drafts; this just keeps students off screens
+      // that would only show them permission errors. Writers get in;
+      // what they may do inside is decided per action.
       final isOnAdmin =
           state.matchedLocation == '/admin' ||
           state.matchedLocation.startsWith('/admin/');
       if (isOnAdmin) {
         if (ref.read(idTokenResultProvider).isLoading) return null;
-        if (!ref.read(isAdminProvider)) return '/';
+        if (!ref.read(staffRoleProvider).canWrite) return '/';
       }
 
       // Guests never onboard: an anonymous session has no profile to

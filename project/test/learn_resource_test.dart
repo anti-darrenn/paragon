@@ -68,6 +68,22 @@ void main() {
       );
     });
 
+    test('the review states parse exactly, and none of them is live', () {
+      expect(ResourceStatus.parse('in_review'), ResourceStatus.inReview);
+      expect(
+        ResourceStatus.parse('changes_requested'),
+        ResourceStatus.changesRequested,
+      );
+      expect(
+        ResourceStatus.values.where((s) => s.isLive),
+        [ResourceStatus.published],
+      );
+      // Control: near misses are drafts, never a review state.
+      for (final v in ['In_review', 'in review', 'review', 'changes']) {
+        expect(ResourceStatus.parse(v), ResourceStatus.draft, reason: v);
+      }
+    });
+
     test('anything else is hidden from students, so it is a draft', () {
       // Control: these are the values a looser parser would get wrong.
       for (final v in ['draft', 'Published', ' published', '', 'live', 1, true]) {
