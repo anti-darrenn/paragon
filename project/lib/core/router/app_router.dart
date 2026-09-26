@@ -5,6 +5,7 @@ import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
+import 'package:paragon/features/account/export_screen.dart';
 import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
@@ -376,6 +377,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/username',
         builder: (context, state) => const UsernameSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/settings/export',
+        builder: (context, state) => const ExportScreen(),
       ),
       GoRoute(
         path: '/settings/security',

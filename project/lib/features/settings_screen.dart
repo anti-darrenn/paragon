@@ -128,6 +128,11 @@ class SettingsScreen extends ConsumerWidget {
                             label: 'Sign-in and security',
                             onTap: () => context.push('/settings/security'),
                           ),
+                          const _Divider(),
+                          _LinkRow(
+                            label: 'Download your data',
+                            onTap: () => context.push('/settings/export'),
+                          ),
                         ],
                       ),
                       const SizedBox(height: 20),

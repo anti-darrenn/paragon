@@ -112,6 +112,66 @@ class AccountRepository {
     await _db.collection('users').doc(uid).delete();
   }
 
+  // ─── Download my data ──────────────────────────────────────────────
+
+  /// The collections queried by owner, in export order. The documents
+  /// keyed by uid are listed in [_ownedById]. Together these are the same
+  /// set [deleteOwnedDocuments] removes — keep all three in step (and
+  /// `OWNED` in tools/admin/jobs.js).
+  static const _ownedByQuery = ['attempts', 'notes', 'flags'];
+  static const _ownedById = [
+    'users',
+    'progress',
+    'learn',
+    'study',
+    'accountRequests',
+  ];
+
+  /// How many documents an export of [uid] would read, from `count()`
+  /// aggregates (billed per 1000 index entries, not per document). Shown
+  /// before exporting, because a student with thousands of answers costs
+  /// thousands of reads against the shared daily quota.
+  Future<int> exportSize(String uid) async {
+    var total = _ownedById.length;
+    for (final collection in _ownedByQuery) {
+      final agg = await _db
+          .collection(collection)
+          .where('userId', isEqualTo: uid)
+          .count()
+          .get();
+      total += agg.count ?? 0;
+    }
+    return total;
+  }
+
+  /// Everything stored about [uid], as one JSON-safe map — the student's
+  /// copy of their data. Timestamps become ISO-8601 strings; documents
+  /// that do not exist are left out rather than shown as empty.
+  ///
+  /// The username reservation is not included: it holds only the handle
+  /// and the uid, both of which are already in `users`.
+  Future<Map<String, Object?>> exportOwnedDocuments(String uid) async {
+    final out = <String, Object?>{
+      'exportedAt': DateTime.now().toUtc().toIso8601String(),
+      'uid': uid,
+    };
+    for (final collection in _ownedById) {
+      final snap = await _db.collection(collection).doc(uid).get();
+      if (snap.exists) out[collection] = toJsonSafe(snap.data());
+    }
+    for (final collection in _ownedByQuery) {
+      final snap = await _db
+          .collection(collection)
+          .where('userId', isEqualTo: uid)
+          .get();
+      out[collection] = [
+        for (final d in snap.docs)
+          {'id': d.id, ...?toJsonSafe(d.data()) as Map<String, Object?>?},
+      ];
+    }
+    return out;
+  }
+
   /// Asks the server to end every session on this account.
   ///
   /// Revoking sessions needs the Admin SDK, which never ships in the app,
@@ -152,3 +212,26 @@ class AccountRepository {
 final accountRepositoryProvider = Provider<AccountRepository>((ref) {
   return AccountRepository(FirebaseFirestore.instance);
 });
+
+/// Converts Firestore values into what `jsonEncode` accepts: timestamps to
+/// ISO-8601 (UTC), references to their path, geo points to lat/lng, bytes
+/// to their length. Maps and lists are converted all the way down.
+Object? toJsonSafe(Object? value) {
+  if (value == null || value is String || value is num || value is bool) {
+    return value;
+  }
+  if (value is Timestamp) return value.toDate().toUtc().toIso8601String();
+  if (value is DateTime) return value.toUtc().toIso8601String();
+  if (value is DocumentReference) return value.path;
+  if (value is GeoPoint) {
+    return {'latitude': value.latitude, 'longitude': value.longitude};
+  }
+  if (value is Blob) return '<${value.bytes.length} bytes>';
+  if (value is Map) {
+    return <String, Object?>{
+      for (final e in value.entries) '${e.key}': toJsonSafe(e.value),
+    };
+  }
+  if (value is Iterable) return [for (final v in value) toJsonSafe(v)];
+  return '$value';
+}

@@ -245,6 +245,10 @@ const LegalDocument privacyPolicy = LegalDocument(
         'You can ask us to show you the data we hold about you, correct it, '
             'delete it, or send you a copy. Email $contactEmail and we '
             'will respond.',
+        'You can also download a copy yourself, at any time, from Settings → '
+            'Download your data. It is one file containing your account '
+            'details, every answer you have recorded, your progress, test '
+            'results, notes, bookmarks, revision cards and problem reports.',
         'You can delete your account yourself from Settings. Deleting it '
             'removes your account record, your practice history, and your '
             'notes, highlights and bookmarks. You can '
