@@ -21,7 +21,12 @@ import '../../core/widgets/full_latex_view.dart';
 import '../lesson/exercise_pane.dart';
 import '../lesson/video_pane.dart';
 import '../onboarding/onboarding_scaffold.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'studio/block_toolbar.dart';
+// Deferred: the image codecs and file picker load only when an author
+// uploads an image, never as part of a student's download.
+import 'studio/image_upload.dart' deferred as image_upload;
 import 'studio/problems_panel.dart';
 import 'studio/review_panels.dart';
 import 'studio/studio_storage.dart';
@@ -402,7 +407,7 @@ class _AdminResourceEditorScreenState
     BlockToolbar(
       controller: _body,
       onInsertQuestion: _insertPastQuestion,
-      onInsertImage: null,
+      onInsertImage: _insertImage,
       onPasteBlock: _pasteBlock,
     ),
     const SizedBox(height: 8),
@@ -427,6 +432,25 @@ class _AdminResourceEditorScreenState
       // else from the bank is a plain quick check.
       final waec = byId[id]?.source == 'waec' && byId[id]?.year != null;
       insertAtCursor(_body, '::: ${waec ? 'waec' : 'check'} q:$id\n:::');
+    }
+  }
+
+  Future<void> _insertImage() async {
+    final uid = ref.read(currentUserProvider)?.uid;
+    if (uid == null) return;
+    try {
+      await image_upload.loadLibrary();
+      final id = await image_upload.pickAndUploadLessonImage(
+        db: FirebaseFirestore.instance,
+        uid: uid,
+      );
+      if (id == null || !mounted) return;
+      insertAtCursor(_body, '![Describe the image here](asset:$id)');
+      _snack(
+        'Image uploaded. Replace "Describe the image here" with a caption.',
+      );
+    } catch (e) {
+      if (mounted) setState(() => _error = "Couldn't upload the image: $e");
     }
   }
 
