@@ -40,6 +40,24 @@ void main() {
         'topics': {'t1': {'passed': true, 'bestScore': 90, 'attempts': 1}},
       });
       await db.collection('learn').doc('u2').set({'userId': 'u2'});
+
+      // Highlights and notes (a query) and bookmarks (a uid-keyed doc).
+      // u2's note is on the same lesson, so only the userId filter can be
+      // what spares it.
+      for (final uid in ['u1', 'u1', 'u2']) {
+        await db.collection('notes').add({
+          'userId': uid,
+          'topicId': 't1',
+          'resourceId': 'intro',
+          'blockKey': 'paragraph:0000:0',
+          'text': 'note by $uid',
+        });
+      }
+      await db.collection('study').doc('u1').set({
+        'userId': 'u1',
+        'bookmarks': {'lesson:t1:intro': {'kind': 'lesson'}},
+      });
+      await db.collection('study').doc('u2').set({'userId': 'u2'});
     });
 
     test('removes the user document, attempts and flags', () async {
@@ -67,6 +85,26 @@ void main() {
       // The drill gate's record. Added with the topic test; if this ever
       // starts failing, a deleted student's test history is surviving them.
       expect((await db.collection('learn').doc('u1').get()).exists, isFalse);
+    });
+
+    test('removes notes and the bookmarks document', () async {
+      await repo.deleteOwnedDocuments('u1');
+
+      final notes = await db
+          .collection('notes')
+          .where('userId', isEqualTo: 'u1')
+          .get();
+      expect(notes.docs, isEmpty);
+      expect((await db.collection('study').doc('u1').get()).exists, isFalse);
+
+      // Control: another student's note on the same lesson, and their
+      // study document, survive.
+      final theirs = await db
+          .collection('notes')
+          .where('userId', isEqualTo: 'u2')
+          .get();
+      expect(theirs.docs, hasLength(1));
+      expect((await db.collection('study').doc('u2').get()).exists, isTrue);
     });
 
     test('leaves other users entirely alone', () async {

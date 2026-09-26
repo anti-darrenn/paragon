@@ -25,6 +25,7 @@ import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/settings/reading_settings_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
+import 'package:paragon/features/study/notes/saved_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
 import 'package:paragon/features/topic_list_screen.dart';
@@ -352,6 +353,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/reading',
         builder: (context, state) => const ReadingSettingsScreen(),
+      ),
+      // Bookmarks and notes. Guests too: theirs are kept on the device.
+      GoRoute(
+        path: '/saved',
+        builder: (context, state) => const SavedScreen(),
       ),
 
       // ── Admin ───────────────────────────────────────────────────────

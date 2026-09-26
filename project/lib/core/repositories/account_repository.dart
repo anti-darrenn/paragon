@@ -95,6 +95,8 @@ class AccountRepository {
       _db.collection('attempts').where('userId', isEqualTo: uid),
     );
     await _deleteQuery(_db.collection('flags').where('userId', isEqualTo: uid));
+    // Highlights and notes: one document per annotated block.
+    await _deleteQuery(_db.collection('notes').where('userId', isEqualTo: uid));
     // One document, id'd by uid — no query needed. Deleting a document
     // that was never created is a no-op in Firestore, so a student who
     // never practised needs no special case.
@@ -102,6 +104,9 @@ class AccountRepository {
     // Topic-test results — the drill gate. Same shape as `progress`: one
     // document, id'd by uid, so no query is needed.
     await _db.collection('learn').doc(uid).delete();
+    // Bookmarks (and anything else study features add to the same
+    // document later) — one document, id'd by uid.
+    await _db.collection('study').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 
