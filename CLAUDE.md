@@ -148,19 +148,32 @@ progress document can never cost a student anything.
 **Content team and the studio.** Three roles, all custom claims on the
 Auth token and never fields on `users/{uid}` (anything a client can write
 there, a client can grant itself):
-- `writer` and `reviewer`, set by `tools/admin/set_role.js --email=… --role=writer|reviewer|none`;
-- `admin`, set by `set_admin_claim.js` / `create_admin_user.js`.
+- `writer` and `reviewer`, optionally limited to some subjects by a
+  `subjects` claim (no claim = every subject);
+- `admin`, set by `set_admin_claim.js` / `create_admin_user.js`, never
+  limited.
 
-The rules check them with `isWriter()` ⊃ `isReviewer()` ⊃ `isAdmin()`.
-`staffRoleProvider` reads them for the UI only. The contract is
-`docs/CONTENT_ROLES.md`:
+**Giving someone a role:** they sign up normally, then an admin uses
+**Content studio → Team**. The page writes `staffInvites/{email}`
+(admin-only), and `tools/admin/apply_roles.js`, a step in the 15-minute
+notify-drafts workflow, sets the claims; the person signs out and in.
+`set_role.js --email=… --role=… [--subjects=Mathematics,Physics]` does the
+same at once from a terminal.
+
+The rules check roles with `isWriter()` ⊃ `isReviewer()` ⊃ `isAdmin()`,
+and subjects with `writes(subjectId)` / `reviews(subjectId)` on every
+content write (both old and new `subjectId` on updates). Outside its
+subjects an account reads the studio but the editor is read-only.
+`staffAccessProvider` (`StaffAccess.roleIn(subjectId)`) reads claims for
+the UI only. The contract is `docs/CONTENT_ROLES.md`:
 - **Statuses:** `draft → in_review → published`, with `changes_requested`
   sending an item back. Only the exact string `published` is ever
   student-visible.
 - **Writers** create and edit only unpublished items, submit them, and
   delete their own drafts.
 - **Reviewers** publish, request changes (the reason becomes a comment),
-  unpublish, delete, reorder, and handle all problem reports.
+  unpublish, delete (published items too, from the editor or the topic
+  planner's row menu), reorder, and handle all problem reports.
 - **Revisions.** A published item is never edited in place. "Start a
   revision" makes a draft with `revisionOf`, and approving it copies the
   content into the original, which keeps its id and therefore every
@@ -334,7 +347,9 @@ topic test and WAEC exam screens. Tools implement `StudyTool` and add one
 line to `study_tool_registry.dart`.
 - **Availability** comes from `subject_tools.dart`. Exams narrow to
   `examAllowedTools`: calculator, four-figure tables and scratchpad. The
-  periodic table stays **off in exams** until WAEC's rule is checked.
+  periodic table is **off in exams by decision** (nothing official says
+  WAEC supplies one; papers give the atomic masses they need) and
+  available everywhere students learn.
 - **The tools:** calculator (hand-written fx-82-style engine), scratchpad,
   periodic table (CIAAW 2024 data, cited in the asset), four-figure tables
   (computed, never typed), units and constants (CODATA 2018), glossary and
@@ -387,7 +402,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -425,7 +440,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 713 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 721 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
