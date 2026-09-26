@@ -36,6 +36,7 @@ class AppColors {
   static const trackDark = Color(
     0xFF21262D,
   ); // progress track, inactive nav dots
+  static const trackLight = Color(0xFFEAEEF2); // the light theme's track
   static const accentBlue = Color(
     0xFF58A6FF,
   ); // informational accent (stats, links)

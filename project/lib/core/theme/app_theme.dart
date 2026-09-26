@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
+import 'app_palette.dart';
 
 class AppTheme {
   static ThemeData get dark => ThemeData(
@@ -26,6 +27,7 @@ class AppTheme {
       surfaceTintColor: Colors.transparent,
       elevation: 0,
     ),
+    extensions: const [AppPalette.dark],
   );
 
   static ThemeData get light => ThemeData(
@@ -51,6 +53,7 @@ class AppTheme {
       surfaceTintColor: Colors.transparent,
       elevation: 0,
     ),
+    extensions: const [AppPalette.light],
   );
 
   // ── Text styles (Figma type scale, file 29nbJDmGOJI3bBj5AtburF,
