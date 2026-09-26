@@ -58,8 +58,14 @@ final idTokenResultProvider = StreamProvider<IdTokenResult?>((ref) {
 /// [StaffRole.none]. UI gating only — the rules re-check the same claims.
 /// [StaffRole.none] while the token is still loading.
 final staffRoleProvider = Provider<StaffRole>((ref) {
+  return ref.watch(staffAccessProvider).role;
+});
+
+/// The role and the subjects it covers; see [StaffAccess]. Use
+/// `roleIn(subjectId)` wherever an action concerns one subject.
+final staffAccessProvider = Provider<StaffAccess>((ref) {
   final result = ref.watch(idTokenResultProvider).asData?.value;
-  return StaffRole.fromClaims(result?.claims);
+  return StaffAccess.fromClaims(result?.claims);
 });
 
 /// True while the current user is a guest (anonymous auth), false once

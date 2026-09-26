@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/auth/staff_role.dart';
 import '../../core/lessons/lesson_doc.dart';
 import '../../core/models/learn_resource.dart';
 import '../../core/models/topic.dart';
@@ -39,12 +40,30 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
   @override
   Widget build(BuildContext context) {
     final role = ref.watch(staffRoleProvider);
-    final subjects = ref.watch(subjectsProvider).asData?.value ?? const [];
+    final access = ref.watch(staffAccessProvider);
+    // The subjects this account works on come first, and the map opens
+    // on the first of them; the rest stay browsable, read-only.
+    final subjects = [...?ref.watch(subjectsProvider).asData?.value]
+      ..sort(
+        (a, b) => (access.covers(a.id) ? 0 : 1).compareTo(
+          access.covers(b.id) ? 0 : 1,
+        ),
+      );
     final subjectId = _subjectId ?? subjects.firstOrNull?.id;
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
-      appBar: AppBar(title: const Text('Content studio')),
+      appBar: AppBar(
+        title: const Text('Content studio'),
+        actions: [
+          if (role == StaffRole.admin)
+            TextButton.icon(
+              onPressed: () => context.push('/admin/team'),
+              icon: const Icon(Icons.group_outlined, size: 18),
+              label: const Text('Team'),
+            ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
@@ -103,7 +122,11 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                               for (final s in subjects)
                                 DropdownMenuItem(
                                   value: s.id,
-                                  child: Text(s.name),
+                                  child: Text(
+                                    access.covers(s.id)
+                                        ? s.name
+                                        : '${s.name} (read-only)',
+                                  ),
                                 ),
                             ],
                             onChanged: (id) => setState(() => _subjectId = id),
@@ -219,7 +242,7 @@ class _CourseMap extends ConsumerWidget {
     for (final r in resources.asData?.value ?? const <LearnResource>[]) {
       byTopic.putIfAbsent(r.topicId, () => []).add(r);
     }
-    final role = ref.watch(staffRoleProvider);
+    final role = ref.watch(staffAccessProvider).roleIn(subjectId);
 
     if (units == null || resources.isLoading) {
       return const LinearProgressIndicator(minHeight: 2);

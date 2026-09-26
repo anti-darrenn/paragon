@@ -63,9 +63,13 @@ Set<StudyToolId> toolsForSubject(String subjectName) => {
 /// Four-figure tables: supplied in the hall. Scratchpad: rough work is
 /// done in the answer booklet.
 ///
-/// **The periodic table is off until checked.** Whether WAEC supplies one
-/// in the Chemistry paper has not been verified; switch it on here only
-/// once it has, rather than guessing in the student's favour.
+/// **The periodic table is off in exams, by decision (2026-09-26).** WASSCE
+/// candidates bring only a permitted calculator; nothing official says a
+/// periodic table is supplied in the Chemistry paper, and papers state any
+/// atomic masses a question needs. So practice exams match the hall, while
+/// the table stays available everywhere students are learning — lessons,
+/// drill and topic tests. Switch it on here only if WAEC is found to
+/// supply one.
 const Set<StudyToolId> examAllowedTools = {
   StudyToolId.calculator,
   StudyToolId.fourFigureTables,

@@ -62,7 +62,7 @@ class _HistoryList extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final key = (topicId: resource.topicId, resourceId: resource.id);
     final versions = ref.watch(resourceVersionsProvider(key));
-    final role = ref.watch(staffRoleProvider);
+    final role = ref.watch(staffAccessProvider).roleIn(resource.subjectId);
     final canRestore = resource.status.isLive ? role.canReview : role.canWrite;
 
     return versions.when(
@@ -213,7 +213,9 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
     final comments =
         ref.watch(resourceCommentsProvider(key)).asData?.value ?? const [];
     final me = ref.watch(currentUserProvider)?.uid;
-    final role = ref.watch(staffRoleProvider);
+    final role = ref
+        .watch(staffAccessProvider)
+        .roleIn(widget.resource.subjectId);
     final open = comments.where((c) => !c.resolved).length;
 
     return Container(
