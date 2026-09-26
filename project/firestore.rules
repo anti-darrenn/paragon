@@ -231,7 +231,14 @@ service cloud.firestore {
           .affectedKeys().hasAny(['deletionRequestedAt'])
         || !('deletionRequestedAt' in after)
         || after.deletionRequestedAt == request.time;
-      return deletionStamp
+      // Accepting the terms records the version with the server's clock,
+      // together; neither can be written alone or backdated.
+      let legalStamp = !request.resource.data.diff(resource.data)
+          .affectedKeys().hasAny(['legalVersion', 'legalAcceptedAt'])
+        || (after.legalVersion is string
+          && after.legalVersion.size() <= 32
+          && after.legalAcceptedAt == request.time);
+      return deletionStamp && legalStamp
         && (!('avatar' in after)
           || (after.avatar is string
               && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
@@ -248,6 +255,7 @@ service cloud.firestore {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
         'avatar', 'bio', 'usernameChangedAt', 'deletionRequestedAt',
+        'legalVersion', 'legalAcceptedAt',
         'username', 'usernameKey',
         'email', 'isAnonymous'
       ];

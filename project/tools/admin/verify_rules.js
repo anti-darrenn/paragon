@@ -431,6 +431,37 @@ async function usersAllowList(a, b) {
     }),
   );
 
+  // Accepting the terms: version and server time, together.
+  expectOutcome(
+    'accepting the terms with the server time is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, { legalVersion: str('2026-09-26') }, {
+        transforms: [serverTime('legalAcceptedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    'a terms version without the acceptance time is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, { legalVersion: str('2099-01-01') }),
+    ),
+  );
+  expectOutcome(
+    'a backdated acceptance is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        legalVersion: str('2026-09-26'),
+        legalAcceptedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+
   // The reason the allow-list is an allow-list. These fields do not exist
   // on any document yet; the point is that they are server-only from the
   // moment they do, with nothing to remember to lock down first.
