@@ -68,6 +68,7 @@ class ArticleView extends StatelessWidget {
     required this.body,
     this.textStyle,
     this.authorPreview = false,
+    this.decorate,
   });
 
   final String body;
@@ -79,6 +80,9 @@ class ArticleView extends StatelessWidget {
   /// True in the editor's preview: author to-dos are shown. Students never
   /// see them.
   final bool authorPreview;
+
+  /// Wraps each top-level block; see [BlockDecorator].
+  final BlockDecorator? decorate;
 
   /// The paragraph style an article uses unless given another. Callers
   /// that apply the student's reading settings (line spacing, font) start
@@ -97,6 +101,7 @@ class ArticleView extends StatelessWidget {
       blocks: doc.blocks,
       base: base,
       authorPreview: authorPreview,
+      decorate: decorate,
     );
   }
 }

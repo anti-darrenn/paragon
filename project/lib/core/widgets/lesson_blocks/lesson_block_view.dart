@@ -9,6 +9,22 @@ import '../full_latex_view.dart';
 import 'figure_block.dart';
 import 'interactive_blocks.dart';
 
+/// Wraps a rendered top-level block — how features like highlights, notes
+/// and read-aloud mark up a block without editing the renderer. Receives
+/// the parsed block (for its stable [LessonBlock.key]) and the rendered
+/// widget, and returns the widget to show.
+typedef BlockDecorator = Widget Function(LessonBlock block, Widget child);
+
+/// Chains decorators, the first applied innermost.
+BlockDecorator composeDecorators(List<BlockDecorator> decorators) =>
+    (block, child) {
+      var out = child;
+      for (final d in decorators) {
+        out = d(block, out);
+      }
+      return out;
+    };
+
 /// A list of lesson blocks, spaced the way articles always have been.
 ///
 /// Used for the article itself and for every nested body (a callout's
@@ -20,11 +36,16 @@ class LessonBlocksColumn extends StatelessWidget {
     required this.blocks,
     required this.base,
     this.authorPreview = false,
+    this.decorate,
   });
 
   final List<LessonBlock> blocks;
   final TextStyle base;
   final bool authorPreview;
+
+  /// Applied to each block in this column. Only the article's top-level
+  /// column gets one: nested blocks have no stable key of their own.
+  final BlockDecorator? decorate;
 
   @override
   Widget build(BuildContext context) {
@@ -37,15 +58,21 @@ class LessonBlocksColumn extends StatelessWidget {
       children: [
         for (var i = 0; i < shown.length; i++) ...[
           if (i > 0) SizedBox(height: _spacingBefore(shown[i])),
-          LessonBlockView(
-            block: shown[i],
-            base: base,
-            authorPreview: authorPreview,
+          _decorated(
+            shown[i],
+            LessonBlockView(
+              block: shown[i],
+              base: base,
+              authorPreview: authorPreview,
+            ),
           ),
         ],
       ],
     );
   }
+
+  Widget _decorated(LessonBlock block, Widget child) =>
+      decorate == null ? child : decorate!(block, child);
 
   static double _spacingBefore(LessonBlock b) =>
       b is BasicBlock ? b.block.spacingBefore : 20;

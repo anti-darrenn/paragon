@@ -6,6 +6,9 @@ import '../../core/providers/reading_settings_provider.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/article_view.dart';
+import '../../core/widgets/lesson_blocks/lesson_block_view.dart';
+import '../study/notes/notes_hooks.dart';
+import '../study/read_aloud/read_aloud_hooks.dart';
 
 /// An article lesson. Completion is decided by the lesson screen, which
 /// owns the scroll: reaching the end counts as read.
@@ -37,12 +40,22 @@ class ArticlePane extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'ARTICLE',
-          style: AppTheme.caption.copyWith(
-            color: AppColors.textSecondaryDark,
-            letterSpacing: 0.8,
-          ),
+        // The header row carries the study features' controls (listen,
+        // bookmark). They plug in through their hook files, never here.
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                'ARTICLE',
+                style: AppTheme.caption.copyWith(
+                  color: AppColors.textSecondaryDark,
+                  letterSpacing: 0.8,
+                ),
+              ),
+            ),
+            ReadAloudButton(resource: resource),
+            NotesHeaderActions(resource: resource),
+          ],
         ),
         if (!bodyRepeatsTitle(resource)) ...[
           const SizedBox(height: 8),
@@ -52,7 +65,14 @@ class ArticlePane extends ConsumerWidget {
           ),
           const SizedBox(height: 24),
         ],
-        ArticleView(body: resource.body, textStyle: style),
+        ArticleView(
+          body: resource.body,
+          textStyle: style,
+          decorate: composeDecorators([
+            notesDecorator(ref, resource),
+            readAloudDecorator(ref, resource),
+          ]),
+        ),
       ],
     );
   }
