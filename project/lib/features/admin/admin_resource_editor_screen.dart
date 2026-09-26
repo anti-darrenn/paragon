@@ -710,11 +710,21 @@ class _AdminResourceEditorScreenState
   /// The buttons, by role and status (docs/CONTENT_ROLES.md). The rules
   /// enforce the same table; this only avoids offering what would fail.
   Widget _actions() {
-    final role = ref.watch(staffRoleProvider);
+    final role = _roleHere();
     final status = _status;
     final loaded = _loaded;
     final busy = _isSaving;
     final buttons = <Widget>[];
+
+    // Outside this account's subjects: look, but change nothing — the
+    // rules would refuse every write.
+    if (!role.canWrite) {
+      return Text(
+        'This subject is outside the ones you work on, so you can read this '
+        'but not change it.',
+        style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+      );
+    }
 
     Widget outline(String label, Color colour, VoidCallback onTap) =>
         _OutlineAction(
@@ -808,8 +818,19 @@ class _AdminResourceEditorScreenState
     );
   }
 
+  /// This account's role for this item's subject — its role inside the
+  /// subjects it covers, none outside them (`StaffAccess.roleIn`).
+  StaffRole _roleHere() {
+    final subjectId =
+        _loaded?.subjectId ??
+        ref.watch(topicByIdProvider(widget.topicId)).asData?.value?.subjectId ??
+        '';
+    return ref.watch(staffAccessProvider).roleIn(subjectId);
+  }
+
   /// The one thing this person most likely wants to do next.
   String? _primaryLabel(StaffRole role) => switch (_status) {
+    _ when !role.canWrite => null,
     null || ResourceStatus.published => null,
     ResourceStatus.draft || ResourceStatus.changesRequested =>
       role.canReview ? 'Publish' : 'Submit for review',
@@ -823,8 +844,9 @@ class _AdminResourceEditorScreenState
 
   /// Also Ctrl+Enter. Null when there is nothing to submit or approve.
   VoidCallback? _primaryAction() {
-    final role = ref.read(staffRoleProvider);
+    final role = _roleHere();
     return switch (_status) {
+      _ when !role.canWrite => null,
       null || ResourceStatus.published => null,
       ResourceStatus.draft ||
       ResourceStatus.changesRequested => role.canReview ? _approve : _submit,

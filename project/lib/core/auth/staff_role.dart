@@ -27,3 +27,37 @@ enum StaffRole {
     return StaffRole.none;
   }
 }
+
+/// A content-team role together with the subjects it covers.
+///
+/// A role may be limited to some subjects by the `subjects` claim (a list
+/// of subject ids); no such claim means every subject, and an admin is
+/// never limited — exactly as `inScope()` in `firestore.rules` reads it.
+/// Outside its subjects an account can look but not change anything.
+class StaffAccess {
+  const StaffAccess(this.role, [this.subjects]);
+
+  final StaffRole role;
+
+  /// Null means every subject.
+  final Set<String>? subjects;
+
+  static const none = StaffAccess(StaffRole.none);
+
+  bool covers(String subjectId) =>
+      role == StaffRole.admin ||
+      subjects == null ||
+      subjects!.contains(subjectId);
+
+  /// The role this account holds for [subjectId]: its role inside its
+  /// subjects, none outside them.
+  StaffRole roleIn(String subjectId) =>
+      covers(subjectId) ? role : StaffRole.none;
+
+  static StaffAccess fromClaims(Map<String, dynamic>? claims) {
+    final role = StaffRole.fromClaims(claims);
+    final raw = claims?['subjects'];
+    if (role == StaffRole.admin || raw is! List) return StaffAccess(role);
+    return StaffAccess(role, {for (final s in raw) '$s'});
+  }
+}

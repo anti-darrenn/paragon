@@ -39,6 +39,7 @@ Future<List<String>> _buttons(
   WidgetTester tester, {
   required StaffRole role,
   required LearnResource resource,
+  StaffAccess? access,
 }) async {
   SharedPreferences.setMockInitialValues({});
   final router = GoRouter(
@@ -56,7 +57,7 @@ Future<List<String>> _buttons(
   await tester.pumpWidget(
     ProviderScope(
       overrides: [
-        staffRoleProvider.overrideWithValue(role),
+        staffAccessProvider.overrideWithValue(access ?? StaffAccess(role)),
         currentUserProvider.overrideWithValue(null),
         topicByIdProvider.overrideWith((ref, id) async => _topic),
         adminResourceProvider.overrideWith((ref, key) async => resource),
@@ -160,5 +161,30 @@ void main() {
       b,
       containsAll(['Save changes', 'Unpublish', 'Start a revision', 'Delete']),
     );
+  });
+
+  testWidgets('a reviewer outside their subjects can read but not act', (
+    tester,
+  ) async {
+    final b = await _buttons(
+      tester,
+      role: StaffRole.reviewer,
+      resource: _article(ResourceStatus.inReview),
+      access: const StaffAccess(StaffRole.reviewer, {'other-subject'}),
+    );
+    expect(b, isEmpty);
+    expect(find.textContaining('outside the ones you work on'), findsOneWidget);
+  });
+
+  testWidgets('control: the same reviewer inside their subject can approve', (
+    tester,
+  ) async {
+    final b = await _buttons(
+      tester,
+      role: StaffRole.reviewer,
+      resource: _article(ResourceStatus.inReview),
+      access: const StaffAccess(StaffRole.reviewer, {'s1'}),
+    );
+    expect(b, contains('Approve and publish'));
   });
 }

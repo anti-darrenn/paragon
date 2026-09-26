@@ -9,6 +9,7 @@ import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
+import 'package:paragon/features/admin/studio/team_screen.dart';
 import 'package:paragon/features/admin/studio/topic_planner_screen.dart';
 import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
@@ -385,6 +386,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin',
         builder: (context, state) => const AdminHomeScreen(),
+      ),
+      // Who writes and reviews, and for which subjects. Admins only.
+      GoRoute(
+        path: '/admin/team',
+        builder: (context, state) => const TeamScreen(),
       ),
       // One topic's lesson: every item in order, any status.
       GoRoute(

@@ -156,7 +156,10 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
   Widget build(BuildContext context) {
     final topic = ref.watch(topicByIdProvider(widget.topicId)).asData?.value;
     final itemsAsync = ref.watch(adminTopicResourcesProvider(widget.topicId));
-    final canReorder = ref.watch(staffRoleProvider).canReview;
+    final canReorder = ref
+        .watch(staffAccessProvider)
+        .roleIn(topic?.subjectId ?? '')
+        .canReview;
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -386,7 +389,7 @@ class _ItemMenu extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final role = ref.watch(staffRoleProvider);
+    final role = ref.watch(staffAccessProvider).roleIn(resource.subjectId);
     final uid = ref.watch(currentUserProvider)?.uid;
     final canDelete =
         role.canReview ||
