@@ -48,6 +48,47 @@ class FlagRepository {
   }
 }
 
+/// Why a student is reporting a lesson item (an article or a video).
+/// Stored in the same `reason` field as question reports; the value never
+/// collides with a [FlagReason] value.
+enum LessonReportReason {
+  mistake('lesson_mistake', "There's a mistake in this lesson"),
+  unclear('lesson_unclear', "It's unclear or confusing"),
+  rendering('rendering', "Maths or text doesn't display properly"),
+  video('video_broken', "The video doesn't play"),
+  other('other', 'Something else');
+
+  const LessonReportReason(this.value, this.label);
+  final String value;
+  final String label;
+
+  static LessonReportReason parse(String? value) =>
+      LessonReportReason.values.firstWhere(
+        (r) => r.value == value,
+        orElse: () => LessonReportReason.other,
+      );
+}
+
+extension LessonReports on FlagRepository {
+  /// A report on a lesson item rather than a question: `resourceId` and
+  /// `topicId` instead of `questionId`, so the question queue never groups
+  /// it. The reviewers' lesson-report list picks it up.
+  Future<void> createLessonReport({
+    required String userId,
+    required String topicId,
+    required String resourceId,
+    required LessonReportReason reason,
+  }) {
+    return _db.collection('flags').add({
+      'resourceId': resourceId,
+      'topicId': topicId,
+      'userId': userId,
+      'reason': reason.value,
+      'createdAt': FieldValue.serverTimestamp(),
+    });
+  }
+}
+
 final flagRepositoryProvider = Provider<FlagRepository>((ref) {
   return FlagRepository(FirebaseFirestore.instance);
 });

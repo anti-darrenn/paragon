@@ -7,6 +7,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/article_view.dart';
 import '../../core/widgets/lesson_blocks/lesson_block_view.dart';
+import '../../core/widgets/report_lesson_button.dart';
 import '../study/glossary/glossary_hooks.dart';
 import '../study/notes/notes_hooks.dart';
 import '../study/read_aloud/read_aloud_hooks.dart';
@@ -56,6 +57,7 @@ class ArticlePane extends ConsumerWidget {
             ),
             ReadAloudButton(resource: resource),
             NotesHeaderActions(resource: resource),
+            ReportLessonButton(resource: resource),
           ],
         ),
         if (!bodyRepeatsTitle(resource)) ...[

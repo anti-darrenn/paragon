@@ -61,6 +61,15 @@ const REASONS = {
   other: "Something else",
 };
 
+// Must match `LessonReportReason` in lib/core/repositories/flag_repository.dart.
+const LESSON_REASONS = {
+  lesson_mistake: "There's a mistake in this lesson",
+  lesson_unclear: "It's unclear or confusing",
+  rendering: "Maths or text doesn't display properly",
+  video_broken: "The video doesn't play",
+  other: "Something else",
+};
+
 // The app uses Flutter's default hash URL strategy, so routes live after
 // `#`. Must match `adminResourcePath` in admin_resource_editor_screen.dart
 // and `adminFlagPath` in admin_flag_screen.dart.
@@ -178,11 +187,21 @@ async function pendingReports(db) {
   if (cursor) query = query.where("createdAt", ">", cursor);
   const snap = await query.limit(MAX_REPORTS).get();
   console.log(`${snap.size} problem reports since ${cursor ? cursor.toDate().toISOString() : "the start"}`);
-  if (snap.empty) return { questions: [], through: null, count: 0 };
+  if (snap.empty) return { questions: [], lessons: [], through: null, count: 0 };
 
   const byQuestion = new Map();
+  const lessons = [];
   for (const doc of snap.docs) {
-    const { questionId, reason } = doc.data();
+    const { questionId, reason, resourceId, topicId } = doc.data();
+    // A report on a lesson item (article or video) rather than a question.
+    if (!questionId && resourceId) {
+      lessons.push({
+        resourceId,
+        reason: LESSON_REASONS[reason] || REASONS.other,
+        link: editorLink(topicId, resourceId),
+      });
+      continue;
+    }
     if (!questionId) continue;
     if (!byQuestion.has(questionId)) byQuestion.set(questionId, []);
     byQuestion.get(questionId).push(REASONS[reason] || REASONS.other);
@@ -205,6 +224,7 @@ async function pendingReports(db) {
 
   return {
     questions,
+    lessons,
     count: snap.size,
     // The newest report included. Only reports after it are new next run.
     through: snap.docs[snap.docs.length - 1].data().createdAt,
@@ -258,6 +278,23 @@ function buildEmail(submitted, reports) {
         (q) =>
           `<li><a href="${escapeHtml(q.link)}">${escapeHtml(q.stem)}</a>${escapeHtml(tag(q))}` +
           `<br><span style="color:#666">${escapeHtml(q.reasons)}</span></li>`,
+      ),
+      "</ul>",
+    );
+  }
+
+  if (reports.lessons && reports.lessons.length) {
+    text.push(
+      "Students reported problems with these lesson items:",
+      "",
+      ...reports.lessons.map((l) => `- ${l.resourceId}: ${l.reason}\n  ${l.link}`),
+      "",
+    );
+    html.push(
+      "<p>Students reported problems with these lesson items:</p>",
+      "<ul>",
+      ...reports.lessons.map(
+        (l) => `<li><a href="${escapeHtml(l.link)}">${escapeHtml(l.resourceId)}</a> &mdash; ${escapeHtml(l.reason)}</li>`,
       ),
       "</ul>",
     );

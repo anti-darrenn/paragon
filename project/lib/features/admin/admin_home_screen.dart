@@ -81,6 +81,8 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                     if (role.canReview) ...[
                       const _FlagQueue(),
                       const SizedBox(height: 28),
+                      const _LessonReports(),
+                      const SizedBox(height: 28),
                     ],
                     Row(
                       children: [
@@ -608,6 +610,97 @@ class _FlagRow extends StatelessWidget {
         ].join(' · '),
         style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
       ),
+    );
+  }
+}
+
+/// Open reports on lesson items. Each opens the item in the editor, and
+/// can be closed as fixed or dismissed from here.
+class _LessonReports extends ConsumerWidget {
+  const _LessonReports();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final reports = ref.watch(adminLessonReportsProvider);
+
+    Future<void> resolve(LessonItemReport r, FlagStatus status) async {
+      final uid = ref.read(currentUserProvider)?.uid;
+      if (uid == null) return;
+      await ref
+          .read(adminFlagRepositoryProvider)
+          .resolveLessonReport(r, status: status, uid: uid);
+      ref.invalidate(adminLessonReportsProvider);
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Lesson reports',
+          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        ),
+        const SizedBox(height: 12),
+        reports.when(
+          loading: () => const LinearProgressIndicator(minHeight: 2),
+          error: (e, _) => Text(
+            "Couldn't load lesson reports.\n$e",
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          ),
+          data: (list) => list.isEmpty
+              ? Text(
+                  'No open lesson reports.',
+                  style: AppTheme.bodyMd.copyWith(
+                    color: AppColors.textSecondaryDark,
+                  ),
+                )
+              : Container(
+                  decoration: BoxDecoration(
+                    color: AppColors.surfaceDark,
+                    border: Border.all(color: AppColors.borderDark),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Column(
+                    children: [
+                      for (final r in list)
+                        ListTile(
+                          onTap: () => context.push(
+                            adminResourcePath(r.topicId, r.resourceId),
+                          ),
+                          leading: const Icon(
+                            Icons.flag_outlined,
+                            color: AppColors.warning,
+                          ),
+                          title: Text(
+                            r.reason.label,
+                            style: AppTheme.bodyMd.copyWith(
+                              color: AppColors.textPrimaryDark,
+                            ),
+                          ),
+                          subtitle: Text(
+                            r.resourceId,
+                            style: AppTheme.caption.copyWith(
+                              color: AppColors.textSecondaryDark,
+                            ),
+                          ),
+                          trailing: Wrap(
+                            children: [
+                              TextButton(
+                                onPressed: () => resolve(r, FlagStatus.fixed),
+                                child: const Text('Fixed'),
+                              ),
+                              TextButton(
+                                onPressed: () =>
+                                    resolve(r, FlagStatus.dismissed),
+                                child: const Text('Dismiss'),
+                              ),
+                            ],
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+        ),
+      ],
     );
   }
 }

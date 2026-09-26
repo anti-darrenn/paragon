@@ -185,6 +185,34 @@ class AdminFlagRepository {
     return groupReports(reports, await _questions(ids.toSet().toList()));
   }
 
+  /// Open reports on lesson items (articles, videos), newest first, from
+  /// the same recent window as [queue]. They carry a `resourceId` and no
+  /// `questionId`, so [groupReports] never sees them.
+  Future<List<LessonItemReport>> lessonReports() async {
+    final snap = await _flags
+        .orderBy('createdAt', descending: true)
+        .limit(queueSize)
+        .get();
+    return [
+      for (final d in snap.docs)
+        if (asString(docData(d)['resourceId']).isNotEmpty)
+          LessonItemReport.fromFirestore(d),
+    ].where((r) => r.isOpen).toList();
+  }
+
+  /// Closes one lesson report as fixed or dismissed.
+  Future<void> resolveLessonReport(
+    LessonItemReport report, {
+    required FlagStatus status,
+    required String uid,
+  }) {
+    return _flags.doc(report.id).update({
+      'status': status.value,
+      'resolvedAt': FieldValue.serverTimestamp(),
+      'resolvedBy': uid,
+    });
+  }
+
   /// One question and every report on it, for the review screen.
   Future<FlaggedQuestion> forQuestion(String questionId) async {
     final results = await Future.wait([
@@ -305,3 +333,44 @@ final adminFlaggedQuestionProvider =
     FutureProvider.family<FlaggedQuestion, String>((ref, questionId) {
       return ref.watch(adminFlagRepositoryProvider).forQuestion(questionId);
     });
+
+/// A student's report on a lesson item rather than a question.
+class LessonItemReport {
+  const LessonItemReport({
+    required this.id,
+    required this.topicId,
+    required this.resourceId,
+    required this.reason,
+    required this.status,
+    this.createdAt,
+  });
+
+  final String id;
+  final String topicId;
+  final String resourceId;
+  final LessonReportReason reason;
+  final FlagStatus status;
+  final DateTime? createdAt;
+
+  bool get isOpen => status == FlagStatus.open;
+
+  factory LessonItemReport.fromFirestore(DocumentSnapshot doc) {
+    final d = docData(doc);
+    final created = d['createdAt'];
+    return LessonItemReport(
+      id: doc.id,
+      topicId: asString(d['topicId']),
+      resourceId: asString(d['resourceId']),
+      reason: LessonReportReason.parse(asStringOrNull(d['reason'])),
+      status: FlagStatus.parse(asStringOrNull(d['status'])),
+      createdAt: created is Timestamp ? created.toDate() : null,
+    );
+  }
+}
+
+/// Open lesson-item reports, newest first.
+final adminLessonReportsProvider = FutureProvider<List<LessonItemReport>>((
+  ref,
+) {
+  return ref.watch(adminFlagRepositoryProvider).lessonReports();
+});

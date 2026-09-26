@@ -5,6 +5,7 @@ import '../../core/models/learn_resource.dart';
 import '../../core/providers/reading_settings_provider.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/widgets/report_lesson_button.dart';
 import 'video_player.dart';
 
 /// A video lesson: the player, then what the author wrote about it.
@@ -78,9 +79,19 @@ class VideoPane extends ConsumerWidget {
                 ),
           ),
         const SizedBox(height: 20),
-        Text(
-          resource.title,
-          style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Text(
+                resource.title,
+                style: AppTheme.heading2.copyWith(
+                  color: AppColors.textPrimaryDark,
+                ),
+              ),
+            ),
+            ReportLessonButton(resource: resource),
+          ],
         ),
         if (resource.durationSeconds case final s? when s > 0) ...[
           const SizedBox(height: 4),
