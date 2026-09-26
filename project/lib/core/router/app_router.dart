@@ -15,8 +15,10 @@ import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
-import 'package:paragon/features/display_name_settings_screen.dart';
 import 'package:paragon/features/profile_settings_screen.dart';
+import 'package:paragon/features/profile/edit_profile_screen.dart';
+import 'package:paragon/features/profile/me_screen.dart';
+import 'package:paragon/features/onboarding/avatar_screen.dart';
 import 'package:paragon/features/onboarding/display_name_screen.dart';
 import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
@@ -205,6 +207,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const OnboardingDisplayNameScreen(),
       ),
       GoRoute(
+        path: '/onboarding/avatar',
+        builder: (context, state) => const OnboardingAvatarScreen(),
+      ),
+      GoRoute(
         path: '/onboarding/subjects',
         builder: (context, state) => const OnboardingSubjectsScreen(),
       ),
@@ -335,6 +341,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/settings',
         builder: (context, state) => const SettingsScreen(),
       ),
+      // Your own profile and progress. Private: nobody else can open
+      // anyone's `/me`, because nobody else can read `users/{uid}`.
+      GoRoute(path: '/me', builder: (context, state) => const MeScreen()),
       // Editing your subjects after onboarding. Deliberately its own
       // route rather than a re-entry into `/onboarding/subjects`, which
       // the redirect above sends back to `/` for anyone who has finished
@@ -345,7 +354,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/settings/name',
-        builder: (context, state) => const DisplayNameSettingsScreen(),
+        builder: (context, state) => const EditProfileScreen(),
       ),
       // The optional profile, editable at last. `/onboarding/profile` is
       // still reachable (guard 3 above lets a finished user sit on the

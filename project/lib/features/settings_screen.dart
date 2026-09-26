@@ -8,6 +8,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/account_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/widgets/user_avatar.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -44,6 +45,13 @@ class SettingsScreen extends ConsumerWidget {
                   children: [
                     _Card(
                       children: [
+                        _ProfileHeader(
+                          name: displayName.isEmpty
+                              ? (isGuest ? 'Guest' : 'Student')
+                              : displayName,
+                          username: username,
+                        ),
+                        const _Divider(),
                         // Editable, unlike the two below it: a display
                         // name is not unique and nothing depends on it
                         // staying put. A guest has no user document to
@@ -56,9 +64,9 @@ class SettingsScreen extends ConsumerWidget {
                           )
                         else
                           _EditableRow(
-                            label: 'Display name',
+                            label: 'Edit profile',
                             value: displayName.isEmpty ? '—' : displayName,
-                            hint: 'What the app calls you. Not unique.',
+                            hint: 'Picture, display name and bio.',
                             onTap: () => context.push('/settings/name'),
                           ),
                         const _Divider(),
@@ -370,6 +378,55 @@ class _Card extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(children: children),
+    );
+  }
+}
+
+/// Avatar, name and handle, leading to `/me`.
+class _ProfileHeader extends StatelessWidget {
+  const _ProfileHeader({required this.name, required this.username});
+
+  final String name;
+  final String username;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => context.push('/me'),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 16, 12, 16),
+        child: Row(
+          children: [
+            const UserAvatar(size: 52),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    name,
+                    style: AppTheme.bodyLg.copyWith(
+                      color: AppColors.textPrimaryDark,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    username.isEmpty ? 'View your profile' : '@$username',
+                    style: AppTheme.bodyMd.copyWith(
+                      color: AppColors.textSecondaryDark,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(
+              Icons.chevron_right_rounded,
+              color: AppColors.textSecondaryDark,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

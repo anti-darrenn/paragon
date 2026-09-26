@@ -82,6 +82,10 @@ class LessonProgress {
   bool isComplete(String topicId, String resourceId) =>
       forTopic(topicId).completed.contains(resourceId);
 
+  /// Every lesson item completed, across all topics.
+  int get completedCount =>
+      _topics.values.fold(0, (total, t) => total + t.completed.length);
+
   LessonProgress withCompleted(
     String topicId,
     String resourceId, {

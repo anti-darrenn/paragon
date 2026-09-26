@@ -15,6 +15,7 @@ import '../core/theme/app_colors.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
+import '../core/widgets/user_avatar.dart';
 import '../core/widgets/load_error.dart';
 
 class DashboardScreen extends ConsumerWidget {
@@ -25,7 +26,7 @@ class DashboardScreen extends ConsumerWidget {
     final userDataAsync = ref.watch(userDataProvider);
     final weeklyAsync = ref.watch(weeklyAttemptsCountProvider);
     final isGuest = ref.watch(isGuestProvider);
-    // Already streamed by `_YourSubjects` below — Riverpod shares the one
+    // Already streamed by `YourSubjects` below — Riverpod shares the one
     // listener, so reading it here costs nothing extra.
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
@@ -37,12 +38,16 @@ class DashboardScreen extends ConsumerWidget {
         // a back arrow pointing at '/' would be a no-op. When it is reached
         // by a push instead, Material's automaticallyImplyLeading supplies
         // a real back button on its own.
+        // Your profile, which links on to settings. The avatar replaced a
+        // settings gear here, so settings stays one tap further than it
+        // was — a fair trade for a profile nobody could otherwise find.
         actions: [
           IconButton(
-            icon: const Icon(Icons.settings_outlined, size: 22),
-            tooltip: 'Settings',
-            onPressed: () => context.push('/settings'),
+            icon: const UserAvatar(size: 32),
+            tooltip: 'Your profile',
+            onPressed: () => context.push('/me'),
           ),
+          const SizedBox(width: 4),
         ],
       ),
       body: userDataAsync.when(
@@ -144,7 +149,7 @@ class DashboardScreen extends ConsumerWidget {
                 const SizedBox(height: 24),
 
                 // ── Your subjects ──────────────────────────────────────
-                const _YourSubjects(),
+                const YourSubjects(),
                 const SizedBox(height: 28),
 
                 // ── Continue practising ────────────────────────────────
@@ -193,8 +198,10 @@ class DashboardScreen extends ConsumerWidget {
 /// A subject whose `topicCount` is not known yet — seeded before the field
 /// existed, or added between nightly runs — shows counts and no ring,
 /// rather than a ring against a denominator of zero.
-class _YourSubjects extends ConsumerWidget {
-  const _YourSubjects();
+///
+/// Also shown on `/me`, which is why it is public.
+class YourSubjects extends ConsumerWidget {
+  const YourSubjects({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

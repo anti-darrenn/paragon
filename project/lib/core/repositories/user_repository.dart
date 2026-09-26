@@ -2,6 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// The longest bio a student may save. `firestore.rules` checks the same
+/// number.
+const int kBioMaxLength = 160;
+
 class UserRepository {
   const UserRepository(this._db);
   final FirebaseFirestore _db;
@@ -92,6 +96,29 @@ class UserRepository {
       'displayName': displayName.trim(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
+  }
+
+  /// [avatar] is `Avatar.storageValue`; the rules check its shape.
+  Future<void> setAvatar({required String uid, required String avatar}) {
+    return _db.collection('users').doc(uid).set({
+      'avatar': avatar,
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true));
+  }
+
+  /// Saves the bio, or deletes it when [bio] is blank — the same rule as
+  /// [updateProfile]: an emptied box on an editor is a request to remove
+  /// what was there. Over-long input is refused here as well as by the
+  /// rules, so the student gets a message rather than a permission error.
+  Future<void> setBio({required String uid, required String bio}) async {
+    final trimmed = bio.trim();
+    if (trimmed.length > kBioMaxLength) {
+      throw ArgumentError.value(bio, 'bio', 'longer than $kBioMaxLength');
+    }
+    await _db.collection('users').doc(uid).update({
+      'bio': trimmed.isEmpty ? FieldValue.delete() : trimmed,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
   }
 
   Future<void> setSelectedSubjects({

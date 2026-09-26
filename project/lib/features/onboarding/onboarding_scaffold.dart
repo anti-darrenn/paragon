@@ -41,7 +41,7 @@ class OnboardingScaffold extends StatelessWidget {
   final bool isLoading;
   final String? errorText;
 
-  /// Only the optional profile step supplies this.
+  /// Only the optional steps (avatar, profile) supply this.
   final VoidCallback? onSkip;
   final String skipLabel;
 
@@ -166,7 +166,7 @@ class OnboardingScaffold extends StatelessWidget {
   }
 }
 
-/// "Step 2 of 4" plus a four-segment bar.
+/// "Step 2 of 5" plus a segmented bar, one segment per step.
 class _StepIndicator extends StatelessWidget {
   const _StepIndicator({required this.step});
 
@@ -220,6 +220,7 @@ class OnboardingTextField extends StatelessWidget {
     this.prefixText,
     this.autofocus = false,
     this.maxLength,
+    this.maxLines = 1,
     this.keyboardType,
     this.onSubmitted,
     this.suffix,
@@ -232,6 +233,7 @@ class OnboardingTextField extends StatelessWidget {
   final String? prefixText;
   final bool autofocus;
   final int? maxLength;
+  final int maxLines;
   final TextInputType? keyboardType;
   final ValueChanged<String>? onSubmitted;
   final ValueChanged<String>? onChanged;
@@ -253,6 +255,7 @@ class OnboardingTextField extends StatelessWidget {
           controller: controller,
           autofocus: autofocus,
           maxLength: maxLength,
+          maxLines: maxLines,
           keyboardType: keyboardType,
           onSubmitted: onSubmitted,
           onChanged: onChanged,

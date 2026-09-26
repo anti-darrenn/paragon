@@ -56,7 +56,7 @@ bool get legalPlaceholdersRemain => [
 ].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '24 September 2026';
+const String legalLastUpdated = '26 September 2026';
 
 class LegalSection {
   const LegalSection({
@@ -110,9 +110,12 @@ const LegalDocument privacyPolicy = LegalDocument(
             'anonymous account identifier with no personal details attached.',
         'Profile details you give us. Your username, your display name, and '
             'the subjects you choose. You may also optionally add your '
-            'school, class or year, age, gender, country and state. Every '
-            'one of those optional fields can be left blank, and skipping '
-            'them does not limit your use of the app.',
+            'school, class or year, age, gender, country and state, a short '
+            'bio of up to 160 characters, and a profile picture chosen from '
+            'a set of built-in pictures or your initials (you cannot upload '
+            'a photo). Every one of those optional fields can be left blank, '
+            'and skipping them does not limit your use of the app. Your '
+            'bio, picture and optional details are shown only to you.',
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
             'correct, when you answered, and whether it was practice, an '
