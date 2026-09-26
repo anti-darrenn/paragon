@@ -1050,6 +1050,27 @@ async function content(a) {
     ),
   );
 
+  // The Team page's requests turn into roles. A student who could write
+  // one could make themselves a reviewer.
+  expectOutcome(
+    'a student cannot request a content-team role',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`staffInvites/zz_verify_${a.uid.slice(0, 6)}@example.com`, {
+        email: str('x@example.com'),
+        role: str('reviewer'),
+        subjects: arr([]),
+        status: str('pending'),
+      }),
+    ),
+  );
+  expectOutcome(
+    'a student cannot list the content team',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'staffInvites' }] }),
+  );
+
   for (const collection of ['subjects', 'units', 'topics', 'questions']) {
     expectOutcome(
       `${collection} cannot be written by a client`,

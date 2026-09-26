@@ -11,7 +11,7 @@ service cloud.firestore {
     // so a missed update heals by morning.
     match /topics/{id} {
       allow read: if request.auth != null;
-      allow update: if isReviewer()
+      allow update: if reviews(resource.data.subjectId)
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['lessonCount'])
         && request.resource.data.lessonCount is int
@@ -24,7 +24,7 @@ service cloud.firestore {
     // alongside every answer change so a bad fix can be reverted.
     match /questions/{id} {
       allow read: if request.auth != null;
-      allow update: if isReviewer()
+      allow update: if reviews(resource.data.subjectId)
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['correctIndex', 'previousCorrectIndex', 'hasAnswer',
                        'reviewedAt', 'reviewedBy'])
@@ -70,40 +70,48 @@ service cloud.firestore {
     //    instead), and can only keep `changes_requested` on an item that
     //    already has it, never set it: that is the reviewer's verdict.
     //  - a writer may delete only their own draft.
+    //  - both only within their subjects, when their role is limited to
+    //    some (`writes()` / `reviews()`); an item can't be moved out of
+    //    scope either, since both the old and new subjectId are checked.
     // The seeder still uses the Admin SDK, which bypasses rules.
     match /topics/{topicId}/resources/{resourceId} {
       allow read: if request.auth != null
         && (resource.data.status == 'published' || isWriter());
-      allow create: if isReviewer()
-        || (isWriter()
+      allow create: if reviews(request.resource.data.subjectId)
+        || (writes(request.resource.data.subjectId)
             && request.resource.data.status in ['draft', 'in_review']);
-      allow update: if isReviewer()
-        || (isWriter()
+      allow update: if (reviews(resource.data.subjectId)
+            && reviews(request.resource.data.subjectId))
+        || (writes(resource.data.subjectId)
+            && writes(request.resource.data.subjectId)
             && resource.data.status in writerStatuses()
             && request.resource.data.status in writerStatuses()
             && (request.resource.data.status != 'changes_requested'
                 || resource.data.status == 'changes_requested'));
-      allow delete: if isReviewer()
-        || (isWriter()
+      allow delete: if reviews(resource.data.subjectId)
+        || (writes(resource.data.subjectId)
             && resource.data.status == 'draft'
             && resource.data.get('createdBy', '') == request.auth.uid);
 
       // Every save keeps the previous content, so any edit can be undone.
       // Append-only: a version is never rewritten or removed from a client.
       match /versions/{versionId} {
-        allow read, create: if isWriter();
+        allow read: if isWriter();
+        allow create: if writes(parentSubject(topicId, resourceId));
       }
 
-      // Review threads. Anyone on the team may comment; an author edits
-      // their own; a reviewer may resolve or remove any.
+      // Review threads. Anyone on the team may read; comment within your
+      // subjects; an author edits their own; a reviewer may resolve or
+      // remove any in their subjects.
       match /comments/{commentId} {
         allow read: if isWriter();
-        allow create: if isWriter()
+        allow create: if writes(parentSubject(topicId, resourceId))
           && request.resource.data.authorUid == request.auth.uid;
-        allow update: if isWriter()
-          && (resource.data.authorUid == request.auth.uid || isReviewer())
+        allow update: if writes(parentSubject(topicId, resourceId))
+          && (resource.data.authorUid == request.auth.uid
+              || reviews(parentSubject(topicId, resourceId)))
           && request.resource.data.authorUid == resource.data.authorUid;
-        allow delete: if isReviewer()
+        allow delete: if reviews(parentSubject(topicId, resourceId))
           || (isWriter() && resource.data.authorUid == request.auth.uid);
       }
     }
@@ -140,7 +148,21 @@ service cloud.firestore {
     // One read gives a student all three features.
     match /subjectIndex/{subjectId} {
       allow read: if request.auth != null;
-      allow write: if isReviewer();
+      allow write: if reviews(subjectId);
+    }
+
+    // ── TEAM REQUESTS ───────────────────────────────────────────
+    // Admins manage the content team from the studio's Team page. Claims
+    // can only be set with the Admin SDK, so the page writes a request
+    // here and `tools/admin/apply_roles.js` (every 15 minutes, in the
+    // notify-drafts workflow) applies it and records the outcome. Admin
+    // only in both directions; `role` can never be `admin`.
+    match /staffInvites/{emailKey} {
+      allow read, delete: if isAdmin();
+      allow create, update: if isAdmin()
+        && request.resource.data.role in ['writer', 'reviewer', 'none']
+        && request.resource.data.subjects is list
+        && request.resource.data.subjects.size() <= 20;
     }
 
     // ── USER DOCUMENTS ──────────────────────────────────────────
@@ -218,6 +240,29 @@ service cloud.firestore {
     function isWriter() {
       return isReviewer()
         || (request.auth != null && request.auth.token.writer == true);
+    }
+
+    // A role may be limited to some subjects: the `subjects` claim lists
+    // their ids. No such claim means every subject. Admins are never
+    // limited. See docs/CONTENT_ROLES.md.
+    function inScope(subjectId) {
+      return isAdmin()
+        || !('subjects' in request.auth.token)
+        || subjectId in request.auth.token.subjects;
+    }
+
+    function writes(subjectId) {
+      return isWriter() && inScope(subjectId);
+    }
+
+    function reviews(subjectId) {
+      return isReviewer() && inScope(subjectId);
+    }
+
+    // The subjectId of a lesson item, for rules on its subcollections.
+    // One document read, charged only when such a write is attempted.
+    function parentSubject(topicId, resourceId) {
+      return get(/databases/$(database)/documents/topics/$(topicId)/resources/$(resourceId)).data.subjectId;
     }
 
     // The statuses a writer may leave an item in. Everything but published.

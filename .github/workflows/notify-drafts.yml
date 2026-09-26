@@ -1,5 +1,6 @@
-# Emails the reviewers when a Learn draft is saved in the in-app editor
-# or a student reports a problem with a question — one digest for both.
+# Every 15 minutes: applies content-team requests from the studio's Team
+# page (apply_roles.js), then emails the team about lesson-workflow
+# transitions and student problem reports (notify_drafts.js).
 #
 # No Cloud Functions on Spark, so there is no "on write" trigger — this
 # polls instead. A run with nothing new reads a handful of documents and
@@ -43,6 +44,14 @@ jobs:
       - name: Install
         working-directory: project/tools/admin
         run: npm install --no-audit --no-fund
+
+      # Content-team requests from the studio's Team page. Needs only the
+      # service account, so it runs whether or not email is set up.
+      - name: Apply team requests
+        working-directory: project/tools/admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node apply_roles.js
 
       - name: Notify
         working-directory: project/tools/admin
