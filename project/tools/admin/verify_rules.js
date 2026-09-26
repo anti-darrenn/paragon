@@ -932,6 +932,76 @@ async function content(a) {
     );
   }
 
+  // ── The review workflow (docs/CONTENT_ROLES.md) ──
+  // Students hold no content role, so every one of these is refused. The
+  // staff allow-paths need a writer/reviewer token, which a test cannot
+  // mint; they are exercised by hand in the studio.
+  expectOutcome(
+    'a student cannot create a lesson item, even as a draft',
+    DENY,
+    await commit(
+      a.idToken,
+      write('topics/zz_verify_topic/resources/zz_student_draft', {
+        type: str('article'),
+        title: str('sneaky'),
+        status: str('draft'),
+      }),
+    ),
+  );
+  if (seeded) {
+    expectOutcome(
+      "a student cannot read a draft's version history",
+      DENY,
+      await readDoc(a.idToken, 'topics/zz_verify_topic/resources/zz_verify_draft/versions'),
+    );
+    expectOutcome(
+      "a student cannot read a draft's review comments",
+      DENY,
+      await readDoc(a.idToken, 'topics/zz_verify_topic/resources/zz_verify_draft/comments'),
+    );
+    expectOutcome(
+      'a student cannot comment on a draft',
+      DENY,
+      await commit(
+        a.idToken,
+        write('topics/zz_verify_topic/resources/zz_verify_draft/comments/zz_c', {
+          authorUid: str(a.uid),
+          text: str('hi'),
+        }),
+      ),
+    );
+    expectOutcome(
+      'a student cannot publish a draft',
+      DENY,
+      await commit(
+        a.idToken,
+        write('topics/zz_verify_topic/resources/zz_verify_draft', {
+          status: str('published'),
+        }),
+      ),
+    );
+  }
+  expectOutcome(
+    'a student cannot upload a lesson image',
+    DENY,
+    await commit(
+      a.idToken,
+      write('lessonAssets/zz_verify_asset', {
+        mime: str('image/png'),
+        data: str('AAAA'),
+        createdBy: str(a.uid),
+      }),
+    ),
+  );
+  expectOutcome(
+    "a student cannot write a subject's glossary index",
+    DENY,
+    await commit(
+      a.idToken,
+      write('subjectIndex/zz_verify_subject', { topics: map({}) }),
+    ),
+  );
+
   for (const collection of ['subjects', 'units', 'topics', 'questions']) {
     expectOutcome(
       `${collection} cannot be written by a client`,
