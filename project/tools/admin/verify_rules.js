@@ -359,7 +359,7 @@ async function usersAllowList(a, b) {
   );
 
   // Avatar and bio: allow-listed, and shape-checked by
-  // profileFieldsAreValid(). The denials are the content.
+  // clientFieldsAreValid(). The denials are the content.
   expectOutcome(
     'a preset avatar is writable',
     ALLOW,
@@ -399,6 +399,36 @@ async function usersAllowList(a, b) {
     'a bio that is not a string is refused',
     DENY,
     await commit(a.idToken, write(`users/${a.uid}`, { bio: int(1) })),
+  );
+
+  // A scheduled deletion: server time or nothing.
+  expectOutcome(
+    'scheduling deletion with the server time is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {}, {
+        transforms: [serverTime('deletionRequestedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    'a client-chosen deletion date is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        deletionRequestedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    'a scheduled deletion can be cancelled',
+    ALLOW,
+    await commit(a.idToken, {
+      update: { name: `${RESOURCE}/users/${a.uid}`, fields: {} },
+      updateMask: { fieldPaths: ['deletionRequestedAt'] },
+    }),
   );
 
   // The reason the allow-list is an allow-list. These fields do not exist

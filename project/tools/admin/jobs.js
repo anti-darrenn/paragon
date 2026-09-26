@@ -30,6 +30,7 @@
  * ── Usage ────────────────────────────────────────────────────────────
  *
  *   node jobs.js --job=guests   [--days=30] [--max-deletes=2000] [--apply]
+ *   node jobs.js --job=deletions [--apply]
  *   node jobs.js --job=orphans  [--apply]
  *   node jobs.js --job=counts   [--apply]
  *   node jobs.js --job=all      [--apply]
@@ -221,6 +222,44 @@ async function jobGuests() {
   log(
     `   ${examined} guests examined, ${accounts} idle ` +
       `${APPLY ? "deleted" : "would be deleted"} (${docs} documents)`
+  );
+}
+
+// ─── Job: scheduled account deletions ────────────────────────────────
+
+/**
+ * Finishes deletions students scheduled from Settings, once the grace
+ * period has passed.
+ *
+ * "Delete my account" stamps `users/{uid}.deletionRequestedAt` with the
+ * server time and signs the student out; signing back in within the
+ * period offers to restore it. **GRACE_DAYS must match
+ * `kDeletionGracePeriod` in account_repository.dart and the privacy
+ * policy.** Deletes everything in OWNED and the Auth user; the username
+ * reservations stay, as they do for every deletion.
+ */
+const GRACE_DAYS = 30;
+
+async function jobDeletions() {
+  log(`
+── Scheduled deletions older than ${GRACE_DAYS} days [${mode()}]`);
+
+  const cutoff = admin.firestore.Timestamp.fromMillis(
+    Date.now() - GRACE_DAYS * 24 * 60 * 60 * 1000
+  );
+  const due = await db
+    .collection("users")
+    .where("deletionRequestedAt", "<=", cutoff)
+    .select()
+    .get();
+
+  let docs = 0;
+  for (const user of due.docs) {
+    docs += await deleteAccountCompletely(user.id);
+  }
+  log(
+    `   ${due.size} account(s) ${APPLY ? "deleted" : "would be deleted"} ` +
+      `(${docs} documents)`
   );
 }
 
@@ -497,6 +536,7 @@ async function main() {
   log(`Paragon maintenance — job=${JOB} mode=${mode()}`);
 
   if (JOB === "guests" || JOB === "all") await jobGuests();
+  if (JOB === "deletions" || JOB === "all") await jobDeletions();
   if (JOB === "orphans" || JOB === "all") await jobOrphans();
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
   if (JOB === "counts" || JOB === "all") await jobLessonCounts();

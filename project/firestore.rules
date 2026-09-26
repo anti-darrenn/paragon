@@ -213,17 +213,26 @@ service cloud.firestore {
       allow update: if isOwner(uid)
         && usernameWriteIsValid(uid)
         && onlyClientWritableFields()
-        && profileFieldsAreValid();
+        && clientFieldsAreValid();
     }
 
-    // Shape checks for the profile fields a student edits. Checked on the
+    // Shape checks for the fields a student edits directly. Checked on the
     // document after the write, so a merge that leaves them alone passes,
     // and an absent field (never set, or deleted) passes too.
     // `avatar` is `preset:<id>` or `initials:<colour>` — see
     // lib/core/models/avatar.dart. `bio` is capped at kBioMaxLength.
-    function profileFieldsAreValid() {
+    function clientFieldsAreValid() {
       let after = request.resource.data;
-      return (!('avatar' in after)
+      // A scheduled deletion is stamped with the real server time (the
+      // 30 days are counted from it) or removed to cancel it. A
+      // client-chosen date could bring the deletion forward or push it
+      // back indefinitely.
+      let deletionStamp = !request.resource.data.diff(resource.data)
+          .affectedKeys().hasAny(['deletionRequestedAt'])
+        || !('deletionRequestedAt' in after)
+        || after.deletionRequestedAt == request.time;
+      return deletionStamp
+        && (!('avatar' in after)
           || (after.avatar is string
               && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
         && (!('bio' in after)
@@ -238,7 +247,7 @@ service cloud.firestore {
     function clientWritableFields() {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
-        'avatar', 'bio', 'usernameChangedAt',
+        'avatar', 'bio', 'usernameChangedAt', 'deletionRequestedAt',
         'username', 'usernameKey',
         'email', 'isAnonymous'
       ];
