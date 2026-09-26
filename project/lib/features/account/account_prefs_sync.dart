@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/prefs/account_prefs.dart';
 import '../../core/providers/analytics_provider.dart';
+import '../../core/providers/appearance_provider.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/providers/reading_settings_provider.dart';
 import '../../core/repositories/user_repository.dart';
@@ -34,6 +35,10 @@ final accountPrefsSyncProvider = Provider<void>((ref) {
     readingSettingsProvider,
     (_, next) => sync.readingChanged(next),
   );
+  ref.listen<Appearance>(
+    appearanceProvider,
+    (_, next) => sync.appearanceChanged(next),
+  );
   ref.listen<bool>(
     analyticsEnabledProvider,
     (_, next) => sync.analyticsChanged(next),
@@ -49,6 +54,9 @@ class _PrefsSync {
   /// exactly this value is the echo of applying it, not a student's
   /// choice, and must not be written back.
   ReadingSettings? _fromAccount;
+
+  /// The same, for the theme.
+  Appearance? _appearanceFromAccount;
 
   /// Whether the account's document has been seen at all. Until it has,
   /// a device change is the device loading its own storage at start-up,
@@ -81,6 +89,15 @@ class _PrefsSync {
       );
     }
 
+    final theme = appearanceFromPrefs(prefs);
+    final deviceTheme = ref.read(appearanceProvider);
+    if (theme == null) {
+      if (deviceTheme != Appearance.dark) _push({'theme': deviceTheme.name});
+    } else if (theme != deviceTheme) {
+      _appearanceFromAccount = theme;
+      Future.microtask(() => ref.read(appearanceProvider.notifier).set(theme));
+    }
+
     if (accountTurnsAnalyticsOff(
       deviceEnabled: ref.read(analyticsEnabledProvider),
       account: analyticsFromPrefs(prefs),
@@ -95,6 +112,12 @@ class _PrefsSync {
     if (!_accountSeen || next == _fromAccount) return;
     _fromAccount = null;
     _push(readingToPrefs(next));
+  }
+
+  void appearanceChanged(Appearance next) {
+    if (!_accountSeen || next == _appearanceFromAccount) return;
+    _appearanceFromAccount = null;
+    _push({'theme': next.name});
   }
 
   void analyticsChanged(bool enabled) {

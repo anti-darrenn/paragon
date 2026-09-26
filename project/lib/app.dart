@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/providers/analytics_binding.dart';
+import 'core/providers/appearance_provider.dart';
 import 'core/providers/reading_settings_provider.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
@@ -30,7 +31,8 @@ class ParagonApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
-      themeMode: ThemeMode.dark,
+      // Dark unless the student chose otherwise (Settings → Reading).
+      themeMode: ref.watch(appearanceProvider).mode,
       routerConfig: ref.watch(appRouterProvider),
       // Reading settings (text size) apply above the Navigator, so every
       // route and dialog gets them. The first frame waits for the stored

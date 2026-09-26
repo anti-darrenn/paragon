@@ -19,6 +19,7 @@
 library;
 
 import '../models/firestore_parsing.dart';
+import '../providers/appearance_provider.dart';
 import '../providers/reading_settings_provider.dart';
 
 /// The account's copy of [settings].
@@ -57,6 +58,12 @@ ReadingSettings? readingFromPrefs(Object? prefs) {
     font: byName(ReadingFont.values, prefs['font'], ReadingFont.standard),
     lowDataMode: asBool(prefs['lowDataMode']),
   );
+}
+
+/// The account's theme, or null when never chosen.
+Appearance? appearanceFromPrefs(Object? prefs) {
+  if (prefs is! Map || prefs['theme'] is! String) return null;
+  return Appearance.parse(prefs['theme']);
 }
 
 /// The account's analytics choice, or null when never made.

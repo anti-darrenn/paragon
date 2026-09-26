@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/providers/appearance_provider.dart';
 import '../../core/providers/reading_settings_provider.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
@@ -48,6 +49,20 @@ class ReadingSettingsScreen extends ConsumerWidget {
                   children: [
                     _Preview(settings: settings),
                     const SizedBox(height: 24),
+
+                    _Section(
+                      title: 'Appearance',
+                      hint:
+                          'The light theme is new. If anything is hard to '
+                          'read in it, tell us from Settings → Help with your '
+                          'account.',
+                      child: _Choices<Appearance>(
+                        values: Appearance.values,
+                        selected: ref.watch(appearanceProvider),
+                        label: (v) => v.label,
+                        onSelected: ref.read(appearanceProvider.notifier).set,
+                      ),
+                    ),
 
                     _Section(
                       title: 'Text size',
@@ -113,7 +128,8 @@ class ReadingSettingsScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'These settings are saved on this device only.',
+                      'Saved on this device, and with your account when you '
+                      'are signed in so they follow you to other devices.',
                       textAlign: TextAlign.center,
                       style: AppTheme.caption.copyWith(
                         color: context.palette.textSecondary,
