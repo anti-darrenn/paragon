@@ -107,7 +107,24 @@ class AccountRepository {
     // Bookmarks (and anything else study features add to the same
     // document later) — one document, id'd by uid.
     await _db.collection('study').doc(uid).delete();
+    // A pending "sign out everywhere" — see [requestSignOutEverywhere].
+    await _db.collection('accountRequests').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
+  }
+
+  /// Asks the server to end every session on this account.
+  ///
+  /// Revoking sessions needs the Admin SDK, which never ships in the app,
+  /// so this files a request that `tools/admin/apply_account_requests.js`
+  /// carries out within about 15 minutes. Revocation stops sessions from
+  /// being *renewed*; each device keeps its current access until that
+  /// runs out, up to an hour. The screen says so rather than promising an
+  /// instant sign-out it cannot deliver.
+  Future<void> requestSignOutEverywhere(String uid) {
+    return _db.collection('accountRequests').doc(uid).set({
+      'type': 'revokeSessions',
+      'requestedAt': FieldValue.serverTimestamp(),
+    });
   }
 
   /// Deletes every document a query matches, in chunks.

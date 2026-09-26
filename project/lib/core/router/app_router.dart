@@ -5,6 +5,7 @@ import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
+import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
@@ -370,6 +371,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/profile',
         builder: (context, state) => const ProfileSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/settings/security',
+        builder: (context, state) => const SecurityScreen(),
       ),
       // Text size, line spacing, reading font, low-data mode. Per device.
       GoRoute(

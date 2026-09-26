@@ -9,6 +9,7 @@ import '../core/repositories/account_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/user_avatar.dart';
+import 'account/reauth.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -113,6 +114,11 @@ class SettingsScreen extends ConsumerWidget {
                           _LinkRow(
                             label: 'About you',
                             onTap: () => context.push('/settings/profile'),
+                          ),
+                          const _Divider(),
+                          _LinkRow(
+                            label: 'Sign-in and security',
+                            onTap: () => context.push('/settings/security'),
                           ),
                         ],
                       ),
@@ -277,9 +283,14 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
     });
 
     try {
-      final outcome = await ref
-          .read(accountRepositoryProvider)
-          .deleteAccount(user);
+      final repo = ref.read(accountRepositoryProvider);
+      var outcome = await repo.deleteAccount(user);
+      // Firebase wants a recent sign-in before deleting. Confirm it here
+      // and try once more, rather than sending them away to sign out.
+      if (outcome == AccountDeletionOutcome.needsRecentLogin && mounted) {
+        if (!await reauthenticate(context, user)) return;
+        outcome = await repo.deleteAccount(user);
+      }
       if (!mounted) return;
 
       switch (outcome) {
@@ -295,8 +306,8 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
         case AccountDeletionOutcome.needsRecentLogin:
           setState(
             () => _message =
-                'For your security, please sign out and sign in again, '
-                'then delete your account. Nothing has been deleted.',
+                "We couldn't confirm it was you, so nothing has been "
+                'deleted. Please try again.',
           );
       }
     } catch (_) {

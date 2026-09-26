@@ -107,7 +107,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'Authentication and we never see or store it. If you sign in '
             'with Google, we receive your name, email address and profile '
             'picture from Google. If you browse as a guest, we create an '
-            'anonymous account identifier with no personal details attached.',
+            'anonymous account identifier with no personal details attached. '
+            'If you use "Sign out everywhere", we store that request until it '
+            'has been carried out, usually within 15 minutes, and then delete '
+            'it.',
         'Profile details you give us. Your username, your display name, and '
             'the subjects you choose. You may also optionally add your '
             'school, class or year, age, gender, country and state, a short '
