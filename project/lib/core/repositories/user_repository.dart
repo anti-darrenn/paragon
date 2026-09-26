@@ -2,11 +2,24 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../legal/legal_documents.dart';
 import '../onboarding/onboarding_step.dart';
 
 /// The longest bio a student may save. `firestore.rules` checks the same
 /// number.
 const int kBioMaxLength = 160;
+
+/// `legalVersion` and `legalAcceptedAt`, as the rules require them: the
+/// current version and the server's clock.
+Map<String, Object> legalAcceptanceFields() => {
+  'legalVersion': kLegalVersion,
+  'legalAcceptedAt': FieldValue.serverTimestamp(),
+};
+
+/// Whether an account whose document is [userData] must accept the terms
+/// again before going on.
+bool needsLegalAcceptance(Map<String, dynamic>? userData) =>
+    userData != null && userData['legalVersion'] != kLegalVersion;
 
 class UserRepository {
   const UserRepository(this._db);
@@ -39,6 +52,8 @@ class UserRepository {
     final storedName = (snap.data()?['displayName'] as String?)?.trim() ?? '';
     final authName = user.displayName?.trim() ?? '';
     final data = <String, Object?>{
+      // They agreed on the welcome screen before starting as a guest.
+      ...legalAcceptanceFields(),
       'isAnonymous': false,
       'email': user.email ?? '',
       'updatedAt': FieldValue.serverTimestamp(),
@@ -93,9 +108,21 @@ class UserRepository {
     await _db.collection('users').doc(uid).set({
       'username': trimmed,
       'usernameKey': key,
+      // The first write a new account makes, so it carries the terms the
+      // student agreed to on the welcome screen before signing in.
+      ...legalAcceptanceFields(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
     return true;
+  }
+
+  /// Records that the student accepted the current terms — from the
+  /// accept screen after a change.
+  Future<void> acceptLegal(String uid) {
+    return _db.collection('users').doc(uid).update({
+      ...legalAcceptanceFields(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
   }
 
   /// Phase 1 of [reserveUsername] and [changeUsername]: atomically claims

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/legal/legal_documents.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/account_repository.dart';
 import 'reauth.dart';
@@ -29,7 +30,7 @@ Future<String?> deleteAccountNow(BuildContext context, WidgetRef ref) async {
       AccountDeletionOutcome.deleted => null,
       AccountDeletionOutcome.partial =>
         'Your account was deleted, but some data may not have been '
-            'removed. Please contact us so we can finish the job.',
+            'removed. Please email $contactEmail so we can finish the job.',
       AccountDeletionOutcome.needsRecentLogin =>
         "We couldn't confirm it was you, so nothing has been deleted. "
             'Please try again.',

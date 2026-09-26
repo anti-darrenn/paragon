@@ -58,6 +58,30 @@ bool get legalPlaceholdersRemain => [
 /// Shown on both documents. Update when the content changes materially.
 const String legalLastUpdated = '26 September 2026';
 
+/// The version of the terms and privacy policy a student agrees to,
+/// recorded on `users/{uid}` as `legalVersion` with the time.
+///
+/// **Bump it only for a significant change** — the policy promises
+/// notice of those. Every signed-in account on an older version is asked
+/// to accept again before going on (`/legal/accept`), so bumping it for a
+/// typo would interrupt every student for nothing. [legalLastUpdated] can
+/// move without it.
+const String kLegalVersion = '2026-09-26';
+
+/// What changed in [kLegalVersion], in a sentence each, for the accept
+/// screen. Rewrite this list whenever the version is bumped.
+const List<String> kLegalChanges = [
+  'You can now add a picture and a short bio. Only you can see them.',
+  'Guests can turn their session into an account and keep their progress. '
+      'Unused guest sessions are deleted after 30 days.',
+  'You can change your username once every 90 days. Old usernames stay '
+      'reserved forever.',
+  'You can download all your data from Settings.',
+  'Deleting your account now gives you 30 days to change your mind, or it '
+      'can go at once.',
+  'We record which version of these terms you accepted, and when.',
+];
+
 class LegalSection {
   const LegalSection({
     required this.heading,
@@ -108,6 +132,8 @@ const LegalDocument privacyPolicy = LegalDocument(
             'with Google, we receive your name, email address and profile '
             'picture from Google. If you browse as a guest, we create an '
             'anonymous account identifier with no personal details attached. '
+            'We record which version of these terms and this policy you '
+            'accepted, and when. '
             'If you use "Sign out everywhere", we store that request until it '
             'has been carried out, usually within 15 minutes, and then delete '
             'it.',

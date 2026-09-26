@@ -9,6 +9,7 @@ import '../core/repositories/account_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/user_avatar.dart';
+import 'account/account_help.dart';
 import 'account/delete_account.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
@@ -186,6 +187,14 @@ class SettingsScreen extends ConsumerWidget {
                         _LinkRow(
                           label: 'About Paragon',
                           onTap: () => context.push('/about'),
+                        ),
+                        const _Divider(),
+                        _LinkRow(
+                          label: 'Help with your account',
+                          onTap: () => showAccountHelp(
+                            context,
+                            uid: isGuest ? null : user?.uid,
+                          ),
                         ),
                       ],
                     ),

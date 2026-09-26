@@ -4,9 +4,11 @@ import 'package:go_router/go_router.dart';
 import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/features/account/deleting_screen.dart';
 import 'package:paragon/features/account/export_screen.dart';
+import 'package:paragon/features/account/legal_accept_screen.dart';
 import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
@@ -194,6 +196,16 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         return '/';
       }
 
+      // ── Terms gate ─────────────────────────────────────────────────
+      // After a significant change to the terms (kLegalVersion), and once
+      // for accounts made before acceptance was recorded, a student
+      // accepts again before going on. /terms and /privacy stay readable.
+      final isOnAccept = state.matchedLocation == '/legal/accept';
+      if (needsLegalAcceptance(userDataAsync.asData?.value)) {
+        return isOnAccept ? null : '/legal/accept';
+      }
+      if (isOnAccept) return '/';
+
       // Really signed in but somehow landed on welcome or sign-in → send
       // home, which is the dashboard. This covers the sign-in hop; a
       // returning user is covered by '/' itself being the dashboard, since
@@ -355,6 +367,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // A guest turning their session into an account. Real accounts are
       // sent home by the redirect above.
+      // Where the terms gate above asks for acceptance.
+      GoRoute(
+        path: '/legal/accept',
+        builder: (context, state) => const LegalAcceptScreen(),
+      ),
       // Where the deletion gate above holds a scheduled account.
       GoRoute(
         path: '/account/deleting',
