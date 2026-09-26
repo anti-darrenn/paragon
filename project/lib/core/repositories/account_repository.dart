@@ -44,6 +44,14 @@ enum AccountDeletionOutcome {
   needsRecentLogin,
 }
 
+/// How long a scheduled deletion waits. `jobs.js` (`GRACE_DAYS`) and the
+/// privacy policy say the same; change all three together.
+const Duration kDeletionGracePeriod = Duration(days: 30);
+
+/// When an account whose deletion was requested at [requestedAt] goes.
+DateTime deletionDateFor(DateTime requestedAt) =>
+    requestedAt.add(kDeletionGracePeriod);
+
 class AccountRepository {
   const AccountRepository(this._db);
   final FirebaseFirestore _db;
@@ -110,6 +118,32 @@ class AccountRepository {
     // A pending "sign out everywhere" — see [requestSignOutEverywhere].
     await _db.collection('accountRequests').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
+  }
+
+  // ─── Deletion grace period ─────────────────────────────────────────
+
+  /// Schedules [uid]'s account for deletion in [kDeletionGracePeriod].
+  ///
+  /// Nothing is removed now. The router holds the account on
+  /// `/account/deleting` from here on, where it can be restored or deleted
+  /// at once, and `tools/admin/jobs.js --job=deletions` finishes it when
+  /// the period runs out. Students are mostly children, and a delete
+  /// button pressed in a temper should not cost them a year of work.
+  /// "Delete now" stays available, so the right to erasure is never
+  /// slower than it was.
+  Future<void> scheduleDeletion(String uid) {
+    return _db.collection('users').doc(uid).update({
+      'deletionRequestedAt': FieldValue.serverTimestamp(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
+  }
+
+  /// Cancels a scheduled deletion.
+  Future<void> cancelDeletion(String uid) {
+    return _db.collection('users').doc(uid).update({
+      'deletionRequestedAt': FieldValue.delete(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
   }
 
   // ─── Download my data ──────────────────────────────────────────────

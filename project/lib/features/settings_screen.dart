@@ -9,7 +9,7 @@ import '../core/repositories/account_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/user_avatar.dart';
-import 'account/reauth.dart';
+import 'account/delete_account.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -236,6 +236,8 @@ class SettingsScreen extends ConsumerWidget {
   }
 }
 
+enum _DeleteChoice { scheduled, now }
+
 class _DeleteAccountPanel extends ConsumerStatefulWidget {
   const _DeleteAccountPanel();
 
@@ -248,8 +250,14 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
   bool _isDeleting = false;
   String? _message;
 
+  /// A real account is scheduled for deletion in 30 days and signed out;
+  /// signing back in within that time offers to restore it. A guest has
+  /// no way back in, so a grace period would only keep their data longer
+  /// for nobody: theirs goes at once, as before.
   Future<void> _confirmAndDelete() async {
-    final confirmed = await showDialog<bool>(
+    final isGuest = ref.read(isGuestProvider);
+    final days = kDeletionGracePeriod.inDays;
+    final choice = await showDialog<_DeleteChoice>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.surfaceDark,
@@ -258,15 +266,22 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
         ),
         content: Text(
-          'This permanently deletes your account and your entire practice '
-          'history. It cannot be undone.\n\n'
-          'Your username, and any you used before it, stay reserved and '
-          'cannot be claimed by anyone else, including you.',
+          isGuest
+              ? 'This permanently deletes this guest session and everything '
+                    'in it. It cannot be undone.'
+              : 'Your account and your entire practice history will be '
+                    'deleted in $days days, and you will be signed out now. '
+                    'Sign in again before then to change your mind.\n\n'
+                    'If you would rather it went immediately, choose '
+                    '"Delete now". That cannot be undone.\n\n'
+                    'Your username, and any you used before it, stay '
+                    'reserved and cannot be claimed by anyone else, '
+                    'including you.',
           style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
+            onPressed: () => Navigator.of(context).pop(),
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
@@ -275,59 +290,46 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
             ),
           ),
           TextButton(
-            onPressed: () => Navigator.of(context).pop(true),
+            onPressed: () => Navigator.of(context).pop(_DeleteChoice.now),
             child: Text(
-              'Delete everything',
+              isGuest ? 'Delete everything' : 'Delete now',
               style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
             ),
           ),
+          if (!isGuest)
+            TextButton(
+              onPressed: () =>
+                  Navigator.of(context).pop(_DeleteChoice.scheduled),
+              child: Text(
+                'Delete in $days days',
+                style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+              ),
+            ),
         ],
       ),
     );
-
-    if (confirmed != true) return;
-
-    final user = ref.read(currentUserProvider);
-    if (user == null) return;
+    if (choice == null || !mounted) return;
 
     setState(() {
       _isDeleting = true;
       _message = null;
     });
-
     try {
-      final repo = ref.read(accountRepositoryProvider);
-      var outcome = await repo.deleteAccount(user);
-      // Firebase wants a recent sign-in before deleting. Confirm it here
-      // and try once more, rather than sending them away to sign out.
-      if (outcome == AccountDeletionOutcome.needsRecentLogin && mounted) {
-        if (!await reauthenticate(context, user)) return;
-        outcome = await repo.deleteAccount(user);
+      if (choice == _DeleteChoice.now) {
+        final message = await deleteAccountNow(context, ref);
+        if (mounted && message != null) setState(() => _message = message);
+        return;
       }
-      if (!mounted) return;
-
-      switch (outcome) {
-        case AccountDeletionOutcome.deleted:
-          // The auth listener sends them to /welcome on its own.
-          break;
-        case AccountDeletionOutcome.partial:
-          setState(
-            () => _message =
-                'Your account was deleted, but some data may not have been '
-                'removed. Please contact us so we can finish the job.',
-          );
-        case AccountDeletionOutcome.needsRecentLogin:
-          setState(
-            () => _message =
-                "We couldn't confirm it was you, so nothing has been "
-                'deleted. Please try again.',
-          );
-      }
+      final user = ref.read(currentUserProvider);
+      if (user == null) return;
+      await ref.read(accountRepositoryProvider).scheduleDeletion(user.uid);
+      await FirebaseAuth.instance.signOut();
     } catch (_) {
-      if (!mounted) return;
-      setState(
-        () => _message = "Couldn't delete your account. Please try again.",
-      );
+      if (mounted) {
+        setState(
+          () => _message = "Couldn't delete your account. Please try again.",
+        );
+      }
     } finally {
       if (mounted) setState(() => _isDeleting = false);
     }
@@ -356,8 +358,8 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           ),
           const SizedBox(height: 6),
           Text(
-            'Permanently removes your account and every question you have '
-            'answered. This cannot be undone.',
+            'Removes your account and every question you have answered. '
+            'You get 30 days to change your mind, or it can go at once.',
             style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
           ),
           if (_message != null) ...[

@@ -251,8 +251,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'results, notes, bookmarks, revision cards and problem reports.',
         'You can delete your account yourself from Settings. Deleting it '
             'removes your account record, your practice history, and your '
-            'notes, highlights and bookmarks. You can '
-            'also email us and we will do it for you.',
+            'notes, highlights and bookmarks. You choose whether that '
+            'happens immediately or after 30 days; in the 30 days nothing is '
+            'removed, and signing in again lets you keep the account. You '
+            'can also email us and we will do it for you.',
         'Your username is an exception: you can change it once every 90 '
             'days, but no username is ever released. Every username you '
             'have used stays reserved, even after you change it or delete '

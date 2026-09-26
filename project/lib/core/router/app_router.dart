@@ -5,6 +5,7 @@ import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
+import 'package:paragon/features/account/deleting_screen.dart';
 import 'package:paragon/features/account/export_screen.dart';
 import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
@@ -162,6 +163,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       //   3. finished, but on the optional step  → leave it alone
       final userDataAsync = ref.read(userDataProvider);
       if (userDataAsync.isLoading) return null;
+
+      // ── Deletion gate ──────────────────────────────────────────────
+      // An account scheduled for deletion is held on one screen until it
+      // is restored or deleted — before onboarding, so a student who
+      // deleted part-way through the funnel is not sent back into it.
+      // Legal pages stay readable (handled above).
+      final isOnDeleting = state.matchedLocation == '/account/deleting';
+      if (userDataAsync.asData?.value?['deletionRequestedAt'] != null) {
+        return isOnDeleting ? null : '/account/deleting';
+      }
+      if (isOnDeleting) return '/';
 
       final isOnOnboarding = OnboardingStep.isOnboardingPath(
         state.matchedLocation,
@@ -343,6 +355,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // A guest turning their session into an account. Real accounts are
       // sent home by the redirect above.
+      // Where the deletion gate above holds a scheduled account.
+      GoRoute(
+        path: '/account/deleting',
+        builder: (context, state) => const DeletingScreen(),
+      ),
       GoRoute(
         path: '/account/upgrade',
         builder: (context, state) => const UpgradeScreen(),
