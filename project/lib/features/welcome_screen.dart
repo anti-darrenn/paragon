@@ -9,6 +9,8 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import 'account/guest_upgrade.dart';
+import 'account/upgrade_screen.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -35,6 +37,16 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
       _errorMessage = null;
     });
     try {
+      // A guest returning here (Android always opens at /welcome) keeps
+      // their session by linking Google to it, rather than being signed
+      // in afresh and leaving the guest's work behind.
+      if (ref.read(isGuestProvider)) {
+        final outcome = await GuestUpgrade.withGoogle(ref);
+        if (outcome != GuestUpgradeOutcome.accountExists || !mounted) return;
+        if (!await confirmSignInToExistingAccount(context, isGoogle: true)) {
+          return;
+        }
+      }
       await signInWithGoogle(ref);
     } on FirebaseAuthException catch (e) {
       setState(() => _errorMessage = e.message ?? 'Google sign-in failed.');

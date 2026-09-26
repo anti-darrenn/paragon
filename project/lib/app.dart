@@ -4,6 +4,7 @@ import 'core/providers/reading_settings_provider.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_colors.dart';
 import 'core/theme/app_theme.dart';
+import 'features/account/guest_upgrade.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ParagonApp extends ConsumerWidget {
@@ -15,6 +16,9 @@ class ParagonApp extends ConsumerWidget {
     // changes and to auth state. Nothing reads its value — see
     // analytics_binding.dart.
     ref.watch(analyticsBindingProvider);
+    // Finishes carrying a former guest's device-only notes and cards into
+    // their account, if an upgrade was interrupted. Usually a no-op.
+    ref.watch(guestDataCopyProvider);
     final readingSettingsLoading = ref.watch(readingPrefsProvider).isLoading;
 
     return MaterialApp.router(

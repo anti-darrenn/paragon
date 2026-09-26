@@ -94,7 +94,8 @@ class FirestoreCardStore implements CardStore {
 
 /// A guest's schedule, in this browser's storage only, keyed by the
 /// anonymous uid so two guests on one device keep separate decks. Never
-/// reaches the server.
+/// reaches the server while they are a guest; an upgrade to an account
+/// copies it up once (`guest_upgrade.dart`) and then calls [clear].
 class LocalCardStore implements CardStore {
   LocalCardStore(this.uid, {Future<SharedPreferences?>? prefs})
     : _prefs = prefs ?? _open();
@@ -144,5 +145,14 @@ class LocalCardStore implements CardStore {
           },
       }),
     );
+  }
+
+  /// Whether a schedule is stored for this uid on this device.
+  Future<bool> get hasData async => (await _prefs)?.containsKey(key) ?? false;
+
+  /// Forgets the stored schedule for this uid, on this device.
+  Future<void> clear() async {
+    _cache = {};
+    await (await _prefs)?.remove(key);
   }
 }

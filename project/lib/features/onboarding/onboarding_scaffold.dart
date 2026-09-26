@@ -221,6 +221,7 @@ class OnboardingTextField extends StatelessWidget {
     this.autofocus = false,
     this.maxLength,
     this.maxLines = 1,
+    this.obscureText = false,
     this.keyboardType,
     this.onSubmitted,
     this.suffix,
@@ -234,6 +235,7 @@ class OnboardingTextField extends StatelessWidget {
   final bool autofocus;
   final int? maxLength;
   final int maxLines;
+  final bool obscureText;
   final TextInputType? keyboardType;
   final ValueChanged<String>? onSubmitted;
   final ValueChanged<String>? onChanged;
@@ -256,6 +258,7 @@ class OnboardingTextField extends StatelessWidget {
           autofocus: autofocus,
           maxLength: maxLength,
           maxLines: maxLines,
+          obscureText: obscureText,
           keyboardType: keyboardType,
           onSubmitted: onSubmitted,
           onChanged: onChanged,

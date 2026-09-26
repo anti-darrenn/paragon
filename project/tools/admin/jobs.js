@@ -29,7 +29,7 @@
  *
  * ── Usage ────────────────────────────────────────────────────────────
  *
- *   node jobs.js --job=guests   [--days=30] [--apply]
+ *   node jobs.js --job=guests   [--days=30] [--max-deletes=2000] [--apply]
  *   node jobs.js --job=orphans  [--apply]
  *   node jobs.js --job=counts   [--apply]
  *   node jobs.js --job=all      [--apply]
@@ -105,57 +105,122 @@ async function deleteDocs(refs) {
   return refs.length;
 }
 
+// ─── What a student owns ─────────────────────────────────────────────
+
+/**
+ * Every document a uid owns. **Keep in step with
+ * `AccountRepository.deleteOwnedDocuments`** (and its export twin) — a
+ * collection missing here is data left behind when an account is removed
+ * by a job rather than by the student. A null field means the document id
+ * is itself the uid.
+ */
+const OWNED = [
+  ["attempts", "userId"],
+  ["flags", "userId"],
+  ["notes", "userId"],
+  ["progress", null],
+  ["learn", null],
+  ["study", null],
+  ["users", null],
+];
+
+/** Deletes everything [uid] owns, then the Auth user. Returns doc count. */
+async function deleteAccountCompletely(uid) {
+  const refs = [];
+  for (const [collection, field] of OWNED) {
+    if (field) {
+      const snap = await db
+        .collection(collection)
+        .where(field, "==", uid)
+        .select()
+        .get();
+      refs.push(...snap.docs.map((d) => d.ref));
+    } else {
+      refs.push(db.collection(collection).doc(uid));
+    }
+  }
+  const n = await deleteDocs(refs);
+  if (APPLY) await auth.deleteUser(uid).catch(() => {});
+  return n;
+}
+
 // ─── Job: stale guest accounts ───────────────────────────────────────
 
 /**
- * Deletes anonymous accounts older than [DAYS] that never answered a
- * question.
+ * Deletes anonymous accounts nobody has used for [DAYS], with everything
+ * they own.
  *
  * Every tap of "Browse as Guest" creates a permanent Auth user and a
- * Firestore document. Without this they accumulate for the life of the
- * project. The "never answered anything" condition is deliberate: a guest
- * who has practised has something worth keeping, and deleting it would be
- * destroying a student's work to save a row.
+ * Firestore document; without this they accumulate for the life of the
+ * project.
+ *
+ * **Inactivity, not age.** This used to delete only guests that had never
+ * answered a question, and keep any that had "because a guest who has
+ * practised has something worth keeping". Nobody could ever reach that
+ * work again, though — a guest who signs out or clears the browser gets a
+ * new uid — so it was kept for no one, forever. Guests can now link their
+ * session to an account (`/account/upgrade`), which keeps the uid; one
+ * that has not been used for [DAYS] has not been upgraded and will not
+ * be. `lastRefreshTime` is the last time the session was used at all,
+ * falling back to sign-in and then creation for accounts that predate it.
+ *
+ * Deletions cost writes against the shared Spark quota, so a run stops
+ * after [MAX_DELETES] documents and finishes the rest the next night.
  */
+const MAX_DELETES = Number(
+  (args.find((a) => a.startsWith("--max-deletes=")) || "").split("=")[1] ||
+    2000
+);
+
+function lastUsedMs(user) {
+  for (const t of [
+    user.metadata.lastRefreshTime,
+    user.metadata.lastSignInTime,
+    user.metadata.creationTime,
+  ]) {
+    const ms = Date.parse(t || "");
+    if (Number.isFinite(ms)) return ms;
+  }
+  return NaN;
+}
+
 async function jobGuests() {
-  log(`\n── Stale guest accounts (older than ${DAYS} days) [${mode()}]`);
+  log(`
+── Guest accounts idle for ${DAYS}+ days [${mode()}]`);
 
   const cutoff = Date.now() - DAYS * 24 * 60 * 60 * 1000;
   let pageToken;
   let examined = 0;
-  let deleted = 0;
+  let accounts = 0;
+  let docs = 0;
 
   do {
     const page = await auth.listUsers(1000, pageToken);
     pageToken = page.pageToken;
 
     for (const user of page.users) {
-      const isAnon = user.providerData.length === 0;
-      if (!isAnon) continue;
-
-      const createdMs = Date.parse(user.metadata.creationTime);
-      if (!Number.isFinite(createdMs) || createdMs > cutoff) continue;
-
+      // Anonymous means no linked provider at all. A guest who upgraded
+      // has one, and is never touched here.
+      if (user.providerData.length !== 0) continue;
       examined++;
 
-      // One aggregate, not a document read, and limited to a single hit.
-      const agg = await db
-        .collection("attempts")
-        .where("userId", "==", user.uid)
-        .limit(1)
-        .count()
-        .get();
-      if (agg.data().count > 0) continue;
+      const used = lastUsedMs(user);
+      if (!Number.isFinite(used) || used > cutoff) continue;
 
-      if (APPLY) {
-        await db.collection("users").doc(user.uid).delete().catch(() => {});
-        await auth.deleteUser(user.uid).catch(() => {});
+      if (docs >= MAX_DELETES) {
+        log(`   stopping at ${MAX_DELETES} documents; the rest tomorrow`);
+        pageToken = undefined;
+        break;
       }
-      deleted++;
+      docs += await deleteAccountCompletely(user.uid);
+      accounts++;
     }
   } while (pageToken);
 
-  log(`   ${examined} idle guests examined, ${deleted} ${APPLY ? "deleted" : "would be deleted"}`);
+  log(
+    `   ${examined} guests examined, ${accounts} idle ` +
+      `${APPLY ? "deleted" : "would be deleted"} (${docs} documents)`
+  );
 }
 
 // ─── Job: orphaned documents ─────────────────────────────────────────
@@ -179,14 +244,10 @@ async function jobOrphans() {
   } while (pageToken);
   log(`   ${liveUids.size} live auth users`);
 
-  // Keep in step with AccountRepository.deleteOwnedDocuments. A null
-  // field means the document id is itself the uid.
-  for (const [collection, field] of [
-    ["users", null],
-    ["progress", null],
-    ["attempts", "userId"],
-    ["flags", "userId"],
-  ]) {
+  // The same list the account deleters use, so a collection added there
+  // is reaped here too. (This one reads whole collections — cheap while
+  // there are few users, and worth replacing before there are many.)
+  for (const [collection, field] of OWNED) {
     const snap = await db.collection(collection).get();
     const orphans = snap.docs.filter((d) => {
       const uid = field ? d.data()[field] : d.id;

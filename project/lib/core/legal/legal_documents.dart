@@ -128,8 +128,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'exercise in a lesson, we record that you finished it and when, '
             'so the app can show what you have done and take you back to '
             'where you left off. If you are browsing as a guest, this is '
-            'kept only while the app is open and is never stored, and your '
-            'exercise answers are not stored either.',
+            'kept only while the app is open and is not stored, and your '
+            'exercise answers are not stored either — unless you create an '
+            'account from that guest session, in which case the lessons you '
+            'finished are saved to it.',
         'Your topic test results. For each topic test you take we record '
             'your best score, how many times you have taken it, when you '
             'last did, and whether you have passed it. Passing is what '
@@ -144,7 +146,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'so they are on every device you sign in on, only you can see '
             'them, and they are deleted when your account is deleted. If you '
             'are browsing as a guest, they are kept only on your device, in '
-            'your browser, and are never sent to us.',
+            'your browser, and are not sent to us unless you create an '
+            'account from that guest session, when they are moved into it '
+            'and removed from the device.',
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',
@@ -227,9 +231,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'account exists. If you ask us to delete your account, we delete '
             'your account record, your practice history, and your notes, '
             'highlights and bookmarks.',
-        'Guest (anonymous) accounts are kept while they remain in use. We '
-            'intend to delete unused guest accounts automatically; until '
-            'that is in place, you can ask us to remove one.',
+        'Guest (anonymous) accounts are deleted automatically, together '
+            'with everything recorded under them, once they have not been '
+            'used for 30 days. You can also ask us to remove one sooner.',
       ],
     ),
     LegalSection(
@@ -355,9 +359,11 @@ const LegalDocument termsOfService = LegalDocument(
       heading: 'Guest accounts',
       paragraphs: [
         'You can use Paragon as a guest without signing up. Guest sessions '
-            'are tied to the device and browser you started them on. If you '
-            'later create a real account, your guest progress does not carry '
-            'over — it stays with the guest session and is not transferred.',
+            'are tied to the device and browser you started them on, and are '
+            'deleted after 30 days without use. If you create an account '
+            'from inside a guest session, your guest progress comes with you. '
+            'If you instead sign in to an account you already have, the guest '
+            "session's progress stays behind: two accounts cannot be merged.",
       ],
     ),
     LegalSection(

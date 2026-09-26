@@ -5,6 +5,7 @@ import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/features/about_screen.dart';
+import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
@@ -97,11 +98,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isSignedIn = user != null;
       // A guest (anonymous auth) counts as signed in for every protected
       // route, but — unlike a real account — is still allowed to visit
-      // welcome/signin, since that's the only way to upgrade out of a
-      // guest session. Upgrading starts a fresh real-account session; it
-      // does not link the anonymous UID (see auth_provider.dart).
+      // welcome and signin. Upgrading from `/account/upgrade` links the
+      // guest's own uid, so the same user becomes "really signed in" in
+      // place and the onboarding gate below picks them up.
       final isReallySignedIn = isSignedIn && !user.isAnonymous;
       final isOnSignIn = state.matchedLocation == '/signin';
+      final isOnUpgrade = state.matchedLocation == '/account/upgrade';
       final isOnWelcome = state.matchedLocation == '/welcome';
       // The welcome screen links to both, so a signed-out visitor has to
       // be able to read them. They are also the one thing a user must be
@@ -181,7 +183,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // home, which is the dashboard. This covers the sign-in hop; a
       // returning user is covered by '/' itself being the dashboard, since
       // on web the browser URL — not initialLocation — picks the route.
-      if (isOnSignIn || isOnWelcome) return '/';
+      if (isOnSignIn || isOnWelcome || isOnUpgrade) return '/';
 
       // All other cases: let navigation proceed normally
       return null;
@@ -335,6 +337,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/signin',
         builder: (context, state) => const SignInScreen(),
+      ),
+      // A guest turning their session into an account. Real accounts are
+      // sent home by the redirect above.
+      GoRoute(
+        path: '/account/upgrade',
+        builder: (context, state) => const UpgradeScreen(),
       ),
       GoRoute(path: '/about', builder: (context, state) => const AboutScreen()),
       GoRoute(

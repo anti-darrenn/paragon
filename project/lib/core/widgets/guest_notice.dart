@@ -51,18 +51,18 @@ class GuestNotice extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          // `push`, not `go`: signing in from here should return the
-          // student to what they were doing, and an upgrade starts a fresh
-          // real-account session rather than linking the anonymous uid.
+          // To the upgrade screen, not `/signin`: making an account there
+          // links this guest's uid, so what the notice is warning about is
+          // kept rather than left behind.
           TextButton(
-            onPressed: () => context.push('/signin'),
+            onPressed: () => context.push('/account/upgrade'),
             style: TextButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               minimumSize: Size.zero,
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
             child: Text(
-              'Sign in',
+              'Keep it',
               style: AppTheme.caption.copyWith(color: AppColors.primary),
             ),
           ),

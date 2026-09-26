@@ -4,8 +4,12 @@
 /// `users/{uid}` document shape, the same rules, the same writes. What
 /// they are not is *durable* — signing out issues a brand new uid, and the
 /// previous guest's document, attempts and progress are orphaned with no
-/// way back to them (`auth_provider.dart`; account-linking is deliberately
-/// unbuilt). Everything here follows from that.
+/// way back to them. Everything here follows from that.
+///
+/// A guest who makes an account from `/account/upgrade` keeps their uid
+/// (it is linked, not replaced — `features/account/guest_upgrade.dart`),
+/// so nothing is lost *if they upgrade before leaving*. The limits below
+/// still stand for the guest who never does.
 ///
 /// **Why this file exists.** The subject lock was written inline in
 /// `waec_subject_screen.dart` as `subject.name.toLowerCase() !=

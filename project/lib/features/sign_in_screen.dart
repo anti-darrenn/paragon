@@ -3,7 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
+import 'package:paragon/features/account/guest_upgrade.dart';
 import 'package:paragon/core/theme/app_colors.dart';
 import 'package:paragon/core/theme/app_theme.dart';
 
@@ -86,6 +88,27 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     });
 
     try {
+      // A guest creating an account links it to their session, so what
+      // they did as a guest is kept — the same path as /account/upgrade.
+      final isGuest = FirebaseAuth.instance.currentUser?.isAnonymous ?? false;
+      if (createAccount && isGuest) {
+        final outcome = await GuestUpgrade.withEmail(
+          ref,
+          email: email,
+          password: password,
+        );
+        if (outcome == GuestUpgradeOutcome.accountExists && mounted) {
+          setState(() {
+            _messageIsError = true;
+            _message =
+                'An account with this email already exists. Sign in to it '
+                "below — this guest session's progress won't come with you.";
+            _step = _AuthStep.password;
+          });
+        }
+        return;
+      }
+
       final userCredential = createAccount
           ? await FirebaseAuth.instance.createUserWithEmailAndPassword(
               email: email,
@@ -282,6 +305,18 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         textAlign: TextAlign.center,
         style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
       ),
+      // Signing in to an existing account cannot bring a guest session
+      // with it; creating one can. Say so before they choose.
+      if (ref.watch(isGuestProvider)) ...[
+        const SizedBox(height: 12),
+        Text(
+          "You're browsing as a guest. Signing in to an existing account "
+          "leaves this session's progress behind — create an account "
+          'instead to keep it.',
+          textAlign: TextAlign.center,
+          style: AppTheme.caption.copyWith(color: AppColors.warning),
+        ),
+      ],
       const SizedBox(height: 24),
       _buildField(
         controller: _emailController,

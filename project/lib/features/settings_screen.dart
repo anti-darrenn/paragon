@@ -86,6 +86,18 @@ class SettingsScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 20),
 
+                    if (isGuest) ...[
+                      _Card(
+                        children: [
+                          _LinkRow(
+                            label: 'Create an account to keep your progress',
+                            onTap: () => context.push('/account/upgrade'),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                    ],
+
                     // Everything a student can actually change lives
                     // here. Until this section existed, onboarding's
                     // "you can change these any time" had no way to be

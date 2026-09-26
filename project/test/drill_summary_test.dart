@@ -222,7 +222,7 @@ void main() {
       await pumpGated(tester, access: DrillAccess.guestBlocked);
 
       expect(find.text('Drill needs an account'), findsOneWidget);
-      expect(find.text('Sign in'), findsOneWidget);
+      expect(find.text('Create an account'), findsOneWidget);
       expect(find.text('Take the topic test'), findsNothing);
       expect(find.text('What is 2 + 2?'), findsNothing);
     });

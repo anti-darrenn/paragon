@@ -144,6 +144,33 @@ class LearnProgressRepository {
       },
     }, SetOptions(merge: true));
   }
+
+  /// Records every completion in [lessons] in one write — a guest's visit,
+  /// carried into the account they have just created. The guest kept these
+  /// in memory only (see [GuestLessonProgress]), so this is the one chance
+  /// to keep them.
+  Future<void> markAllComplete({
+    required String uid,
+    required LessonProgress lessons,
+  }) async {
+    final topics = <String, Object?>{
+      for (final e in lessons.entries)
+        if (e.value.completed.isNotEmpty)
+          e.key: {
+            'subjectId': e.value.subjectId,
+            'completed': {for (final id in e.value.completed) id: true},
+            if (e.value.lastCompletedId != null)
+              'lastCompletedId': e.value.lastCompletedId,
+            'lastCompletedAt': FieldValue.serverTimestamp(),
+          },
+    };
+    if (topics.isEmpty) return;
+    await _doc(uid).set({
+      'userId': uid,
+      'updatedAt': FieldValue.serverTimestamp(),
+      'topics': topics,
+    }, SetOptions(merge: true));
+  }
 }
 
 final learnProgressRepositoryProvider = Provider<LearnProgressRepository>((ref) {
@@ -181,7 +208,9 @@ final _storedLessonProgressProvider = StreamProvider<LessonProgress>((ref) {
 });
 
 /// A guest's completions, for this visit only. Nothing about a guest's
-/// Learn activity is stored — see `guest_limits.dart`.
+/// Learn activity is stored — see `guest_limits.dart` — unless they turn
+/// the session into an account, when `guest_upgrade.dart` writes these
+/// with [LearnProgressRepository.markAllComplete].
 class GuestLessonProgress extends Notifier<LessonProgress> {
   @override
   LessonProgress build() {
@@ -190,8 +219,8 @@ class GuestLessonProgress extends Notifier<LessonProgress> {
     return LessonProgress.empty;
   }
 
-  void complete(String topicId, String resourceId) {
-    state = state.withCompleted(topicId, resourceId);
+  void complete(String topicId, String resourceId, {String? subjectId}) {
+    state = state.withCompleted(topicId, resourceId, subjectId: subjectId);
   }
 }
 
@@ -225,7 +254,13 @@ Future<void> markLessonComplete(
   if (user.isAnonymous) {
     ref
         .read(guestLessonProgressProvider.notifier)
-        .complete(resource.topicId, resource.id);
+        .complete(
+          resource.topicId,
+          resource.id,
+          // Kept so that, if the guest makes an account, the completion
+          // carries its subject like any other.
+          subjectId: resource.subjectId,
+        );
   } else {
     await ref.read(learnProgressRepositoryProvider).markComplete(
       uid: user.uid,

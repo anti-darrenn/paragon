@@ -241,7 +241,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   '/topic/${widget.topicId}/test',
                 )
               : null,
-          onSignIn: () => context.push('/signin'),
+          onSignIn: () => context.push('/account/upgrade'),
         ),
       );
     }
@@ -710,7 +710,11 @@ class _Locked extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
                 child: Text(
-                  isTestGate ? 'Take the topic test' : 'Sign in',
+                  isTestGate
+                      ? 'Take the topic test'
+                      : access == DrillAccess.guestBlocked
+                      ? 'Create an account'
+                      : 'Sign in',
                   style: AppTheme.btnLabel.copyWith(color: Colors.white),
                 ),
               ),

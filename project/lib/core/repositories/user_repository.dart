@@ -24,6 +24,34 @@ class UserRepository {
     }
   }
 
+  /// Records that a guest session has just become a real account.
+  ///
+  /// The uid is unchanged — the anonymous user was linked, not replaced —
+  /// so this is an update to the guest's own document, not a new one. The
+  /// Google name, when there is one, fills a blank display name so the
+  /// onboarding step can be pressed straight through; a name the guest
+  /// never had is not invented.
+  Future<void> recordUpgrade(User user) async {
+    final ref = _db.collection('users').doc(user.uid);
+    final snap = await ref.get();
+    final storedName = (snap.data()?['displayName'] as String?)?.trim() ?? '';
+    final authName = user.displayName?.trim() ?? '';
+    final data = <String, Object?>{
+      'isAnonymous': false,
+      'email': user.email ?? '',
+      'updatedAt': FieldValue.serverTimestamp(),
+      if (storedName.isEmpty && authName.isNotEmpty) 'displayName': authName,
+    };
+    if (snap.exists) {
+      await ref.update(data);
+    } else {
+      // A guest whose document was never provisioned (a failed first
+      // write). Create it the one way the rules accept, then update.
+      await createUserIfNew(user);
+      await ref.update(data);
+    }
+  }
+
   // ─── Onboarding writes ──────────────────────────────────────────────
 
   /// Reserves [raw] for [uid] and records it on the user document.
