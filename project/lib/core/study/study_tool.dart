@@ -14,7 +14,16 @@ enum StudyContext {
 
 /// The screen a tool is opened on: which subject, and in what context.
 class StudyScope {
-  const StudyScope({required this.subjectName, required this.context});
+  const StudyScope({
+    required this.subjectName,
+    required this.context,
+    this.subjectId = '',
+  });
+
+  /// Firestore subject id, for tools that load subject data (the glossary
+  /// and formula sheet read `subjectIndex/{subjectId}`). Empty while
+  /// unknown.
+  final String subjectId;
 
   /// Empty while the subject is still loading; tools that depend on the
   /// subject then stay hidden.

@@ -116,7 +116,11 @@ class _StudyDockState extends ConsumerState<StudyDock> {
     for (final s in subjects) {
       if (s.id == widget.subjectId) name = s.name;
     }
-    final scope = StudyScope(subjectName: name, context: widget.studyContext);
+    final scope = StudyScope(
+      subjectName: name,
+      context: widget.studyContext,
+      subjectId: name.isEmpty ? '' : widget.subjectId ?? '',
+    );
     final allowed = scope.allowed;
     final available = [
       for (final t in widget.tools ?? studyTools)
