@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/ai/ask_tutor_button.dart';
 import '../../core/models/learn_resource.dart';
 import '../../core/providers/reading_settings_provider.dart';
 import '../../core/theme/app_colors.dart';
@@ -42,11 +43,15 @@ class ArticlePane extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // The header row carries the study features' controls (listen,
-        // bookmark). They plug in through their hook files, never here.
+        // The header row carries the study features' controls (ask,
+        // listen, notes, bookmark, report). They plug in through their hook
+        // files, never here. On a phone there are more of them than fit on
+        // one line, so they wrap rather than overflow.
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Padding(
+              padding: const EdgeInsets.only(top: 12),
               child: Text(
                 'ARTICLE',
                 style: AppTheme.caption.copyWith(
@@ -55,9 +60,19 @@ class ArticlePane extends ConsumerWidget {
                 ),
               ),
             ),
-            ReadAloudButton(resource: resource),
-            NotesHeaderActions(resource: resource),
-            ReportLessonButton(resource: resource),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Wrap(
+                alignment: WrapAlignment.end,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  AskTutorButton(resource: resource),
+                  ReadAloudButton(resource: resource),
+                  NotesHeaderActions(resource: resource),
+                  ReportLessonButton(resource: resource),
+                ],
+              ),
+            ),
           ],
         ),
         if (!bodyRepeatsTitle(resource)) ...[
