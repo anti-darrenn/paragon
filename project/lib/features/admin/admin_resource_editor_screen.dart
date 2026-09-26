@@ -737,6 +737,7 @@ class _AdminResourceEditorScreenState
       );
     } else if (status.isLive) {
       if (role.canReview) {
+        buttons.add(outline('Delete', AppColors.wrong, _delete));
         buttons.add(outline('Unpublish', AppColors.warning, _unpublish));
         buttons.add(
           outline(
@@ -1076,7 +1077,10 @@ class _AdminResourceEditorScreenState
   Future<void> _delete() async {
     final ok = await _confirm(
       title: 'Delete this ${_type.label.toLowerCase()}?',
-      message: 'This cannot be undone.',
+      message: (_status?.isLive ?? false)
+          ? 'Students lose it immediately. This cannot be undone. To take '
+                'it down but keep it, use Unpublish instead.'
+          : 'This cannot be undone.',
       action: 'Delete',
       destructive: true,
     );

@@ -8,6 +8,7 @@ import '../../../core/providers/auth_provider.dart';
 import '../../../core/repositories/admin_resource_repository.dart';
 import '../../../core/repositories/learn_repository.dart';
 import '../../../core/repositories/learning_repository.dart';
+import '../../../core/repositories/subject_index_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../lesson/article_pane.dart';
@@ -78,6 +79,76 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
           _saving = false;
         });
       }
+    }
+  }
+
+  /// Deletes one item after confirming. Deleting a published item also
+  /// refreshes what depends on it: the topic's lesson count and the
+  /// subject's glossary/formula/card index.
+  Future<void> _delete(LearnResource r) async {
+    final live = r.status.isLive;
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (dialog) => AlertDialog(
+        backgroundColor: AppColors.surfaceDark,
+        title: Text('Delete "${r.title.isEmpty ? 'untitled' : r.title}"?'),
+        content: Text(
+          live
+              ? 'Students lose it immediately. This cannot be undone. To take '
+                    'it down but keep it, open it and use Unpublish instead.'
+              : 'This cannot be undone.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialog).pop(false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(dialog).pop(true),
+            child: const Text(
+              'Delete',
+              style: TextStyle(color: AppColors.wrong),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    setState(() => _saving = true);
+    try {
+      final repo = ref.read(adminResourceRepositoryProvider);
+      await repo.delete(topicId: widget.topicId, resourceId: r.id);
+      if (live) {
+        await repo.refreshLessonCount(widget.topicId).catchError((_) {});
+        final topic = await ref.read(topicByIdProvider(widget.topicId).future);
+        if (topic != null) {
+          await ref
+              .read(subjectIndexRepositoryProvider)
+              .rebuildTopic(
+                subjectId: topic.subjectId,
+                topicId: topic.id,
+                topicName: topic.name,
+              )
+              .catchError((_) {});
+          ref.invalidate(subjectIndexProvider(topic.subjectId));
+        }
+      }
+      ref.invalidate(adminTopicResourcesProvider(widget.topicId));
+      ref.invalidate(topicResourcesProvider(widget.topicId));
+      ref.invalidate(adminSubjectResourcesProvider);
+      if (mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(const SnackBar(content: Text('Deleted.')));
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text("Couldn't delete: $e")));
+      }
+    } finally {
+      if (mounted) setState(() => _saving = false);
     }
   }
 
@@ -196,6 +267,10 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     StatusBadge(status: items[i].status),
+                                    _ItemMenu(
+                                      resource: items[i],
+                                      onDelete: _delete,
+                                    ),
                                     ReorderableDragStartListener(
                                       index: i,
                                       child: const Padding(
@@ -218,7 +293,16 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                           for (final r in items)
                             Material(
                               color: AppColors.surfaceDark,
-                              child: ResourceRow(resource: r),
+                              child: ResourceRow(
+                                resource: r,
+                                trailing: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    StatusBadge(status: r.status),
+                                    _ItemMenu(resource: r, onDelete: _delete),
+                                  ],
+                                ),
+                              ),
                             ),
                         ],
                       ),
@@ -288,6 +372,46 @@ class _StudentPreview extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Open or delete one item. Delete is offered only where the rules allow
+/// it: reviewers on anything, a writer on their own draft.
+class _ItemMenu extends ConsumerWidget {
+  const _ItemMenu({required this.resource, required this.onDelete});
+
+  final LearnResource resource;
+  final Future<void> Function(LearnResource) onDelete;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final role = ref.watch(staffRoleProvider);
+    final uid = ref.watch(currentUserProvider)?.uid;
+    final canDelete =
+        role.canReview ||
+        (resource.status == ResourceStatus.draft &&
+            resource.createdBy != null &&
+            resource.createdBy == uid);
+    return PopupMenuButton<String>(
+      tooltip: 'More',
+      color: AppColors.surfaceDark,
+      icon: const Icon(Icons.more_vert, color: AppColors.textSecondaryDark),
+      onSelected: (choice) {
+        if (choice == 'open') {
+          context.push(adminResourcePath(resource.topicId, resource.id));
+        } else if (choice == 'delete') {
+          onDelete(resource);
+        }
+      },
+      itemBuilder: (_) => [
+        const PopupMenuItem(value: 'open', child: Text('Open')),
+        if (canDelete)
+          const PopupMenuItem(
+            value: 'delete',
+            child: Text('Delete', style: TextStyle(color: AppColors.wrong)),
+          ),
+      ],
     );
   }
 }

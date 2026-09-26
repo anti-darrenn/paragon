@@ -156,6 +156,9 @@ void main() {
       role: StaffRole.reviewer,
       resource: _article(ResourceStatus.published),
     );
-    expect(b, containsAll(['Save changes', 'Unpublish', 'Start a revision']));
+    expect(
+      b,
+      containsAll(['Save changes', 'Unpublish', 'Start a revision', 'Delete']),
+    );
   });
 }
