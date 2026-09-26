@@ -111,6 +111,11 @@ class SettingsScreen extends ConsumerWidget {
                           label: 'Saved lessons, questions and notes',
                           onTap: () => context.push('/saved'),
                         ),
+                        const _Divider(),
+                        _LinkRow(
+                          label: 'Saved for offline',
+                          onTap: () => context.push('/settings/offline'),
+                        ),
                       ],
                     ),
                     const SizedBox(height: 20),

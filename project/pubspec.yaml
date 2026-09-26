@@ -53,6 +53,7 @@ dependencies:
   # able to turn collection off without an account.
   shared_preferences: ^2.3.3
   youtube_player_iframe: ^6.0.2
+  flutter_tts: ^4.2.5
 
 dev_dependencies:
   flutter_test:

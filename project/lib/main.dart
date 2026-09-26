@@ -29,6 +29,12 @@ void main() async {
   FirebaseFirestore.instance.settings = const Settings(
     persistenceEnabled: true,
     webPersistentTabManager: WebPersistentMultipleTabManager(),
+    // ~100 MB, up from the 40 MB default, so topics saved for offline are
+    // not evicted as soon as a few more are read. It is a ceiling, not an
+    // allocation — the cache only grows as documents are fetched — and
+    // Firestore evicts least-recently-used documents past it, which is
+    // also the only way a saved topic ever leaves the device.
+    cacheSizeBytes: 100 * 1024 * 1024,
   );
 
   runApp(const ProviderScope(child: ParagonApp()));
