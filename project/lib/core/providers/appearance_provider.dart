@@ -29,6 +29,13 @@ enum Appearance {
   }
 }
 
+/// Whether students may leave the dark theme. **Off until the light theme
+/// has been looked at, screen by screen, in a browser** — every widget
+/// reads the palette now, but nobody has checked what light actually looks
+/// like. While off, the Appearance choice is hidden and the app is dark
+/// whatever is stored. Turn on in the same commit as that review.
+const bool kAppearanceChoiceEnabled = false;
+
 const _kAppearanceKey = 'appearance.theme';
 
 class AppearanceNotifier extends Notifier<Appearance> {

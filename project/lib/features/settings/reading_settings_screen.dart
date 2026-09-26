@@ -50,19 +50,20 @@ class ReadingSettingsScreen extends ConsumerWidget {
                     _Preview(settings: settings),
                     const SizedBox(height: 24),
 
-                    _Section(
-                      title: 'Appearance',
-                      hint:
-                          'The light theme is new. If anything is hard to '
-                          'read in it, tell us from Settings → Help with your '
-                          'account.',
-                      child: _Choices<Appearance>(
-                        values: Appearance.values,
-                        selected: ref.watch(appearanceProvider),
-                        label: (v) => v.label,
-                        onSelected: ref.read(appearanceProvider.notifier).set,
+                    if (kAppearanceChoiceEnabled)
+                      _Section(
+                        title: 'Appearance',
+                        hint:
+                            'The light theme is new. If anything is hard to '
+                            'read in it, tell us from Settings → Help with your '
+                            'account.',
+                        child: _Choices<Appearance>(
+                          values: Appearance.values,
+                          selected: ref.watch(appearanceProvider),
+                          label: (v) => v.label,
+                          onSelected: ref.read(appearanceProvider.notifier).set,
+                        ),
                       ),
-                    ),
 
                     _Section(
                       title: 'Text size',

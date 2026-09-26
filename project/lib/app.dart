@@ -31,8 +31,11 @@ class ParagonApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
-      // Dark unless the student chose otherwise (Settings → Reading).
-      themeMode: ref.watch(appearanceProvider).mode,
+      // Dark unless the student chose otherwise (Settings → Reading), and
+      // always dark until the light theme has been reviewed.
+      themeMode: kAppearanceChoiceEnabled
+          ? ref.watch(appearanceProvider).mode
+          : ThemeMode.dark,
       routerConfig: ref.watch(appRouterProvider),
       // Reading settings (text size) apply above the Navigator, so every
       // route and dialog gets them. The first frame waits for the stored
