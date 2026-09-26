@@ -62,14 +62,17 @@ void main() {
       await local.createNote(note('b1', 'first'));
       await local.createNote(note('b2', 'second'));
       await local.addBookmark(bookmark);
-      await LocalCardStore(uid).save({
-        'c1': CardState(box: 2, due: DateTime(2026, 10, 1)),
-      });
+      await LocalCardStore(
+        uid,
+      ).save({'c1': CardState(box: 2, due: DateTime(2026, 10, 1))});
 
       expect(await copy(), 4);
 
       final notes = await db.collection('notes').get();
-      expect(notes.docs.map((d) => d['text']), containsAll(['first', 'second']));
+      expect(
+        notes.docs.map((d) => d['text']),
+        containsAll(['first', 'second']),
+      );
       expect(notes.docs.every((d) => d['userId'] == uid), isTrue);
 
       final study = (await db.collection('study').doc(uid).get()).data()!;
@@ -126,8 +129,10 @@ void main() {
         uid: uid,
         lessons: LessonProgress.empty.withCompleted('t1', 'r1'),
       );
-      final t1 = ((await db.collection('learn').doc(uid).get())
-          .data()!['topics'] as Map)['t1'] as Map;
+      final t1 =
+          ((await db.collection('learn').doc(uid).get()).data()!['topics']
+                  as Map)['t1']
+              as Map;
       expect(t1['passed'], isTrue);
       expect((t1['completed'] as Map)['r1'], isTrue);
     });
