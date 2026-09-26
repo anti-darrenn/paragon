@@ -686,6 +686,44 @@ async function studyData(a, b) {
   );
 }
 
+async function accountRequests(a, b) {
+  suite('accountRequests/{uid} — sign out everywhere');
+
+  // As with study data, the test accounts are guests, and a guest has no
+  // sessions worth revoking: the anonymous clause refuses them. The
+  // real-account allow path is exercised by hand.
+  expectOutcome(
+    'a guest cannot file a sign-out request',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`accountRequests/${a.uid}`, { type: str('revokeSessions') }, {
+        transforms: [serverTime('requestedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "a request on another student's uid is refused",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`accountRequests/${a.uid}`, { type: str('revokeSessions') }, {
+        transforms: [serverTime('requestedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "another student's request is not readable",
+    DENY,
+    await readDoc(b.idToken, `accountRequests/${a.uid}`),
+  );
+  expectOutcome(
+    'account requests cannot be listed',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'accountRequests' }] }),
+  );
+}
+
 async function progress(a, b) {
   suite('progress/{uid} — the mastery cache');
 
@@ -1190,6 +1228,7 @@ async function teardown(a, b, usernameKey) {
   await attemptsAndFlags(a, b);
   await progress(a, b);
   await studyData(a, b);
+  await accountRequests(a, b);
   await learnGate(a, b);
   await content(a);
 

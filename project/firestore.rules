@@ -151,6 +151,21 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── ACCOUNT REQUESTS ────────────────────────────────────────
+    // "Sign out everywhere" needs the Admin SDK (revokeRefreshTokens),
+    // so the app files a request here and
+    // `tools/admin/apply_account_requests.js` carries it out every 15
+    // minutes, then deletes it. One per student, id'd by uid; exact shape,
+    // real server time, and only the one request type so far.
+    match /accountRequests/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly(['type', 'requestedAt'])
+        && request.resource.data.type == 'revokeSessions'
+        && request.resource.data.requestedAt == request.time;
+    }
+
     // ── TEAM REQUESTS ───────────────────────────────────────────
     // Admins manage the content team from the studio's Team page. Claims
     // can only be set with the Admin SDK, so the page writes a request

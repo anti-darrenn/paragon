@@ -1,5 +1,6 @@
 # Every 15 minutes: applies content-team requests from the studio's Team
-# page (apply_roles.js), then emails the team about lesson-workflow
+# page (apply_roles.js) and students' account requests
+# (apply_account_requests.js), then emails the team about lesson-workflow
 # transitions and student problem reports (notify_drafts.js).
 #
 # No Cloud Functions on Spark, so there is no "on write" trigger — this
@@ -52,6 +53,13 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: node apply_roles.js
+
+      # "Sign out everywhere" requests from students' security settings.
+      - name: Apply account requests
+        working-directory: project/tools/admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node apply_account_requests.js
 
       - name: Notify
         working-directory: project/tools/admin

@@ -121,6 +121,7 @@ const OWNED = [
   ["progress", null],
   ["learn", null],
   ["study", null],
+  ["accountRequests", null],
   ["users", null],
 ];
 
