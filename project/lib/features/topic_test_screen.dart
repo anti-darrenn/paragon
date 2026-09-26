@@ -15,7 +15,6 @@ import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/report_problem_button.dart';
-import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
@@ -435,13 +434,10 @@ class _Questions extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 16),
-          Wrap(
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              ReportProblemButton(questionId: q.id),
-              QuestionBookmarkButton(question: q),
-            ],
-          ),
+          // No bookmark here: a question saved mid-test shows its answer
+          // on the Saved page, which would turn the gate into a lookup.
+          // Drill and exercises offer the same questions to bookmark.
+          ReportProblemButton(questionId: q.id),
           const SizedBox(height: 24),
         ],
       ),
