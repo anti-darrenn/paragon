@@ -261,6 +261,7 @@ service cloud.firestore {
           && after.legalVersion.size() <= 32
           && after.legalAcceptedAt == request.time);
       return deletionStamp && legalStamp
+        && (!('prefs' in after) || prefsAreValid(after.prefs))
         && (!('avatar' in after)
           || (after.avatar is string
               && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
@@ -277,7 +278,7 @@ service cloud.firestore {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
         'avatar', 'bio', 'usernameChangedAt', 'deletionRequestedAt',
-        'legalVersion', 'legalAcceptedAt',
+        'legalVersion', 'legalAcceptedAt', 'prefs',
         'username', 'usernameKey',
         'email', 'isAnonymous'
       ];
@@ -381,6 +382,24 @@ service cloud.firestore {
         && (!('usernameChangedAt' in resource.data)
           || request.time > resource.data.usernameChangedAt
                + duration.value(90, 'd'));
+    }
+
+    // Settings that follow an account between devices —
+    // lib/core/prefs/account_prefs.dart. Closed key set, each typed and
+    // bounded; there is nothing here anything else reads.
+    function prefsAreValid(p) {
+      return p is map
+        && p.keys().hasOnly(['textScaleStep', 'lineSpacing', 'font',
+                             'lowDataMode', 'analytics', 'theme'])
+        && (!('textScaleStep' in p)
+          || (p.textScaleStep is int
+            && p.textScaleStep >= 0 && p.textScaleStep <= 4))
+        && (!('lineSpacing' in p)
+          || p.lineSpacing in ['normal', 'relaxed', 'loose'])
+        && (!('font' in p) || p.font in ['standard', 'hyperlegible'])
+        && (!('lowDataMode' in p) || p.lowDataMode is bool)
+        && (!('analytics' in p) || p.analytics is bool)
+        && (!('theme' in p) || p.theme in ['dark', 'light', 'system']);
     }
 
     function claimsOwnReservation(uid, after) {

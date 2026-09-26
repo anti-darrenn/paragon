@@ -462,6 +462,38 @@ async function usersAllowList(a, b) {
     ),
   );
 
+  // Synced settings: a closed, typed set.
+  expectOutcome(
+    'valid synced settings are accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        prefs: map({
+          textScaleStep: int(2),
+          lineSpacing: str('relaxed'),
+          font: str('hyperlegible'),
+          lowDataMode: bool(true),
+          analytics: bool(false),
+          theme: str('system'),
+        }),
+      }),
+    ),
+  );
+  for (const [why, prefs] of [
+    ['an unknown key', map({ isAdmin: bool(true) })],
+    ['an out-of-range text size', map({ textScaleStep: int(9) })],
+    ['an unknown font', map({ font: str('comic') })],
+    ['a non-bool analytics choice', map({ analytics: str('no') })],
+    ['an unknown theme', map({ theme: str('neon') })],
+  ]) {
+    expectOutcome(
+      `settings with ${why} are refused`,
+      DENY,
+      await commit(a.idToken, write(`users/${a.uid}`, { prefs })),
+    );
+  }
+
   // The reason the allow-list is an allow-list. These fields do not exist
   // on any document yet; the point is that they are server-only from the
   // moment they do, with nothing to remember to lock down first.
