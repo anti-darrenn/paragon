@@ -97,7 +97,9 @@ class _Choice extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(
-              color: isSelected ? AppColors.textPrimaryDark : Colors.transparent,
+              color: isSelected
+                  ? AppColors.textPrimaryDark
+                  : Colors.transparent,
               width: 2,
             ),
           ),

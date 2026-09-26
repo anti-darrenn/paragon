@@ -120,7 +120,9 @@ class MeScreen extends ConsumerWidget {
                           onPressed: () => context.push('/settings/name'),
                           icon: const Icon(Icons.edit_outlined, size: 18),
                           label: Text(
-                            bio.isEmpty ? 'Edit profile · add a bio' : 'Edit profile',
+                            bio.isEmpty
+                                ? 'Edit profile · add a bio'
+                                : 'Edit profile',
                           ),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: AppColors.textPrimaryDark,

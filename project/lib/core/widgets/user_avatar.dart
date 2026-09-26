@@ -81,10 +81,7 @@ class AvatarDisc extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: avatar.color.withAlpha((0.22 * 255).round()),
-        border: Border.all(
-          color: avatar.color,
-          width: size >= 64 ? 2.5 : 1.5,
-        ),
+        border: Border.all(color: avatar.color, width: size >= 64 ? 2.5 : 1.5),
       ),
       child: preset != null
           ? Icon(preset.icon, size: size * 0.52, color: avatar.color)
