@@ -20,6 +20,7 @@ import 'package:paragon/features/dashboard_screen.dart';
 import 'package:paragon/features/profile_settings_screen.dart';
 import 'package:paragon/features/profile/edit_profile_screen.dart';
 import 'package:paragon/features/profile/me_screen.dart';
+import 'package:paragon/features/profile/username_settings_screen.dart';
 import 'package:paragon/features/onboarding/avatar_screen.dart';
 import 'package:paragon/features/onboarding/display_name_screen.dart';
 import 'package:paragon/features/onboarding/profile_screen.dart';
@@ -371,6 +372,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/profile',
         builder: (context, state) => const ProfileSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/settings/username',
+        builder: (context, state) => const UsernameSettingsScreen(),
       ),
       GoRoute(
         path: '/settings/security',

@@ -106,6 +106,25 @@ class UsernameRules {
   static const int minLength = 4;
   static const int maxLength = 20;
 
+  /// How long after one change a student must wait for the next.
+  /// `firestore.rules` enforces the same number (`duration.value(90,
+  /// 'd')`), so change them together. Long, because every handle given up
+  /// stays reserved forever — a short cooldown would let one student burn
+  /// through names — and because a handle others have learned should not
+  /// shift under them.
+  static const Duration changeCooldown = Duration(days: 90);
+
+  /// When [lastChangedAt]'s owner may change their username again, or null
+  /// if they may now. Never changed means now.
+  static DateTime? nextChangeAllowedAt(
+    DateTime? lastChangedAt, {
+    required DateTime now,
+  }) {
+    if (lastChangedAt == null) return null;
+    final next = lastChangedAt.add(changeCooldown);
+    return next.isAfter(now) ? next : null;
+  }
+
   /// Letters, digits and underscore only.
   ///
   /// Periods were in the original spec (cosmetic, stripped on

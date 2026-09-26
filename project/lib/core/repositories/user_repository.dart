@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../onboarding/onboarding_step.dart';
+
 /// The longest bio a student may save. `firestore.rules` checks the same
 /// number.
 const int kBioMaxLength = 160;
@@ -83,28 +85,71 @@ class UserRepository {
     required String raw,
     required String key,
   }) async {
-    final reservation = _db.collection('usernames').doc(key);
     final trimmed = raw.trim();
-
-    final claimed = await _db.runTransaction<bool>((tx) async {
-      final existing = await tx.get(reservation);
-      if (existing.exists) {
-        // Already ours from a half-finished attempt is a success, not a
-        // collision — otherwise the user is stranded on a name they own
-        // but cannot use.
-        return existing.data()?['uid'] == uid;
-      }
-      tx.set(reservation, {'uid': uid, 'raw': trimmed});
-      return true;
-    });
-
-    if (!claimed) return false;
+    if (!await _claimReservation(uid: uid, key: key, raw: trimmed)) {
+      return false;
+    }
 
     await _db.collection('users').doc(uid).set({
       'username': trimmed,
       'usernameKey': key,
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
+    return true;
+  }
+
+  /// Phase 1 of [reserveUsername] and [changeUsername]: atomically claims
+  /// `usernames/{key}` if free. True if it is now [uid]'s.
+  Future<bool> _claimReservation({
+    required String uid,
+    required String key,
+    required String raw,
+  }) {
+    final reservation = _db.collection('usernames').doc(key);
+    return _db.runTransaction<bool>((tx) async {
+      final existing = await tx.get(reservation);
+      if (existing.exists) {
+        // Already ours — from a half-finished attempt, or a case-only
+        // change of our own handle — is a success, not a collision;
+        // otherwise the user is stranded on a name they own but cannot use.
+        return existing.data()?['uid'] == uid;
+      }
+      tx.set(reservation, {'uid': uid, 'raw': raw});
+      return true;
+    });
+  }
+
+  /// Moves a student who already has a username to a new one.
+  ///
+  /// The same two phases as [reserveUsername], and for the same reason.
+  /// The old reservation is **not released** — the rules forbid it, and
+  /// that is the point: a handle someone gave up can never be taken by
+  /// someone else and used to pass as them. `usernameChangedAt` is the
+  /// server's clock, which the rules check against a 90-day cooldown
+  /// ([UsernameRules.changeCooldown]).
+  ///
+  /// Returns false if the handle belongs to someone else. A cooldown that
+  /// has not passed surfaces as the rules' permission error, which the
+  /// screen prevents by showing the date instead of the form.
+  ///
+  /// A crash between the phases leaves the new name reserved to [uid] but
+  /// unused, which re-running completes — and which, if they pick another
+  /// name instead, simply stays theirs and unused, like any retired one.
+  Future<bool> changeUsername({
+    required String uid,
+    required String raw,
+    required String key,
+  }) async {
+    final trimmed = raw.trim();
+    if (!await _claimReservation(uid: uid, key: key, raw: trimmed)) {
+      return false;
+    }
+    await _db.collection('users').doc(uid).update({
+      'username': trimmed,
+      'usernameKey': key,
+      'usernameChangedAt': FieldValue.serverTimestamp(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
     return true;
   }
 

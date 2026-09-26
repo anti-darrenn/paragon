@@ -249,10 +249,12 @@ const LegalDocument privacyPolicy = LegalDocument(
             'removes your account record, your practice history, and your '
             'notes, highlights and bookmarks. You can '
             'also email us and we will do it for you.',
-        'Your username is an exception we cannot undo: usernames are '
-            'permanent and cannot be changed or released once chosen, '
-            'because other parts of the app rely on them staying fixed. '
-            'Deleting your account does not free the username for reuse.',
+        'Your username is an exception: you can change it once every 90 '
+            'days, but no username is ever released. Every username you '
+            'have used stays reserved, even after you change it or delete '
+            'your account, so that nobody else can take it and pretend to '
+            'be you. We keep the record of which account reserved it, and '
+            'the date you last changed it.',
       ],
     ),
     LegalSection(
@@ -341,8 +343,9 @@ const LegalDocument termsOfService = LegalDocument(
         'You are responsible for what happens on your account. Keep your '
             'password to yourself.',
         'Give us accurate details. Do not impersonate someone else.',
-        'Your username is permanent. It cannot be changed or released once '
-            'chosen, so choose carefully.',
+        'You can change your username once every 90 days. A username you '
+            'give up is never released, to you or anyone else, so choose '
+            'carefully.',
         'We may remove a username that impersonates someone, or that is '
             'offensive.',
       ],

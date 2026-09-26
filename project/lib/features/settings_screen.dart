@@ -71,11 +71,19 @@ class SettingsScreen extends ConsumerWidget {
                             onTap: () => context.push('/settings/name'),
                           ),
                         const _Divider(),
-                        _Row(
-                          label: 'Username',
-                          value: username.isEmpty ? '—' : '@$username',
-                          hint: 'Unique and permanent.',
-                        ),
+                        if (isGuest || username.isEmpty)
+                          _Row(
+                            label: 'Username',
+                            value: username.isEmpty ? '—' : '@$username',
+                            hint: 'Unique.',
+                          )
+                        else
+                          _EditableRow(
+                            label: 'Username',
+                            value: '@$username',
+                            hint: 'Unique. Changeable every 90 days.',
+                            onTap: () => context.push('/settings/username'),
+                          ),
                         const _Divider(),
                         _Row(
                           label: 'Email',
@@ -247,8 +255,8 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
         content: Text(
           'This permanently deletes your account and your entire practice '
           'history. It cannot be undone.\n\n'
-          'Your username stays reserved and cannot be claimed by anyone '
-          'else, including you.',
+          'Your username, and any you used before it, stay reserved and '
+          'cannot be claimed by anyone else, including you.',
           style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
         ),
         actions: [

@@ -398,14 +398,19 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
 /// "26 Sep 2026, 14:05", in the device's time zone. `—` when unknown.
 String formatAccountDate(DateTime? when) {
   if (when == null) return '—';
+  final t = when.toLocal();
+  String two(int n) => n.toString().padLeft(2, '0');
+  return '${formatDay(t)}, ${two(t.hour)}:${two(t.minute)}';
+}
+
+/// "26 Sep 2026", in the device's time zone.
+String formatDay(DateTime when) {
   const months = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', //
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
   ];
   final t = when.toLocal();
-  String two(int n) => n.toString().padLeft(2, '0');
-  return '${t.day} ${months[t.month - 1]} ${t.year}, '
-      '${two(t.hour)}:${two(t.minute)}';
+  return '${t.day} ${months[t.month - 1]} ${t.year}';
 }
 
 class _NewPasswordDialog extends StatefulWidget {
