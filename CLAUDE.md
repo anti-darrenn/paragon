@@ -145,36 +145,81 @@ place `progress/{uid}` touches *access*; it stays honest only because it is
 one-way — it can grant access, never withhold it — so a missing or stale
 progress document can never cost a student anything.
 
-**Admin / content editor.** The only privileged role is the `admin` custom
-claim on the Auth token — set by `tools/admin/set_admin_claim.js` (or
-`create_admin_user.js`, which also provisions or `--upgrade`s an account),
-never a field on `users/{uid}`, since anything a client can write there it
-can grant itself. `firestore.rules` checks it with `isAdmin()`;
-`isAdminProvider` reads it for the UI only. `/admin` (reached from Settings
-→ Content editor) lists student problem reports, then drafts across every
-topic, and edits articles, videos and exercises. Editor resources are
-written as `status: 'draft'` and go live on Publish.
+**Content team and the studio.** Three roles, all custom claims on the
+Auth token and never fields on `users/{uid}` (anything a client can write
+there, a client can grant itself):
+- `writer` and `reviewer`, set by `tools/admin/set_role.js --email=… --role=writer|reviewer|none`;
+- `admin`, set by `set_admin_claim.js` / `create_admin_user.js`.
 
-**Problem reports.** Students file `flags` from `ReportProblemButton`; the
-queue on `/admin` groups the 200 most recent by question, open first.
-`/admin/flag/:questionId` resolves one question three ways, each a single
-batch that also closes its open reports (`AdminFlagRepository`): mark a
-different answer (the old one is kept in `previousCorrectIndex`, and the
-screen offers to revert), retire it (`hasAnswer: false`, which removes it
-from drill, WAEC, tests and exercises), or dismiss the reports because the
-answer is right. Answers already in `attempts` keep the grading they got;
-nothing regrades `progress`. A generated question is labelled, because a
-wrong answer there is a generator bug and should be fixed in
-`tools/scraper/gen` too.
+The rules check them with `isWriter()` ⊃ `isReviewer()` ⊃ `isAdmin()`.
+`staffRoleProvider` reads them for the UI only. The contract is
+`docs/CONTENT_ROLES.md`:
+- **Statuses:** `draft → in_review → published`, with `changes_requested`
+  sending an item back. Only the exact string `published` is ever
+  student-visible.
+- **Writers** create and edit only unpublished items, submit them, and
+  delete their own drafts.
+- **Reviewers** publish, request changes (the reason becomes a comment),
+  unpublish, delete, reorder, and handle all problem reports.
+- **Revisions.** A published item is never edited in place. "Start a
+  revision" makes a draft with `revisionOf`, and approving it copies the
+  content into the original, which keeps its id and therefore every
+  student's completion tick.
+- **History.** Every save writes the previous content to
+  `…/resources/{id}/versions`, which is append-only and restorable. Review
+  threads live in `…/comments`.
+- `LessonWorkflow` makes each transition one batch.
 
-`notify_drafts.js`, run every 15 minutes by
-`.github/workflows/notify-drafts.yml`, sends the reviewers one Resend digest
-covering new drafts (stamped `notifiedAt`) and new reports (tracked by the
-cursor `_meta/notify.flagsNotifiedThrough`, because stamping every report
-would cost ~19k reads a day). Nothing is marked sent until Resend accepts
-the email. The workflow skips cleanly while the `RESEND_API_KEY` secret is
-unset. With no verified domain, the shared sender only delivers to the
-Resend account's own address, so set the `NOTIFY_TO` repo variable to it.
+`/admin` (Settings → Content studio) shows, in order:
+- the review queue (for reviewers) and the "sent back" list;
+- question reports and lesson reports (for reviewers);
+- a course map: every topic of a subject, showing its lesson's state, fed
+  by one collection-group query per subject.
+
+`/admin/topic/:topicId` is the topic planner: items in order, drag to
+reorder (reviewers only, since it moves published items), and "Preview as
+student". The editor has:
+- the insert toolbar, keyboard shortcuts and a bank-question picker;
+- the problems panel (`checkLesson`) and copy/paste of blocks between
+  lessons;
+- image upload (`lessonAssets`, compressed in the browser; the `file_picker`
+  and `image` packages are **deferred-imported**, so students never
+  download them);
+- history, comments, and an autosave backup kept **on the device only**.
+  Autosaving to Firestore would write a history version every few seconds.
+
+A reviewer's publish, unpublish or delete also rebuilds that topic's entry
+in `subjectIndex`.
+
+**Problem reports.** Students file `flags` from `ReportProblemButton`
+(questions) and `ReportLessonButton` (articles and videos: `resourceId` and
+`topicId` instead of `questionId`, with their own `LessonReportReason`).
+The question queue groups the 200 most recent reports by question, open
+first. `/admin/flag/:questionId` resolves one question three ways, each a
+single batch that also closes its open reports:
+- mark a different answer, keeping the old one in `previousCorrectIndex`;
+  the screen offers to revert;
+- retire it (`hasAnswer: false`), which removes it from drill, WAEC, tests
+  and exercises;
+- dismiss the reports because the answer is right.
+
+Answers already in `attempts` keep their grading. A generated question is
+labelled: its fix belongs in `tools/scraper/gen` too. Lesson reports are
+closed as fixed or dismissed from the studio home.
+
+**Emails.** `notify_drafts.js` runs every 15 minutes
+(`.github/workflows/notify-drafts.yml`) and emails on workflow transitions,
+never on saves. The studio sets `pendingNotice` on each transition, and the
+job clears it after a successful send, querying it through the
+collection-group `pendingNotice` override:
+- **Submitted items** go to the reviewers, together with new question and
+  lesson reports (tracked by the `_meta/notify.flagsNotifiedThrough`
+  cursor; stamping every report would cost ~19k reads a day).
+- **Verdicts** (changes requested, published) go to the writer.
+
+Resend's shared sender only reaches the account's own address. While
+`NOTIFY_FROM` is unset, writer emails go to `NOTIFY_TO`, labelled with who
+they are for. The workflow skips cleanly while `RESEND_API_KEY` is unset.
 
 **The lesson page.** `/learn/topic/:topicId/:resourceId` (`lib/features/lesson/`)
 plays one published item beside the topic's sequence, Khan-style, with
@@ -255,6 +300,76 @@ claimed an `is_guest` property that nothing ever set.
 (`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
 older doc mentions them, it is out of date.
 
+**The lesson format.** `docs/LESSON_FORMAT.md` is the spec.
+`parseLessonDoc` (`lib/core/lessons/lesson_doc.dart`) is the **one** parser:
+the renderer, the problems panel, the subject index, read-aloud and the
+glossary all use it.
+- **Blocks.** Fenced blocks (`::: kind` … `:::`) add callouts (definition,
+  formula, remember, mistake, exam, and the rest), worked examples with
+  `--- step`s, try-it, quick checks (`- [x]`; instant feedback, **never
+  recorded**), `::: check q:<id>` / `::: waec q:<id>` bank questions,
+  revision cards, figures (`![caption](asset:<id>)`), pipe tables,
+  `::: more`, `::: video` and `::: todo` (editor-only).
+- **Old articles are untouched.** Plain text between fences still goes
+  through `parseArticleBlocks`; a control test proves every old article
+  parses exactly as before. Malformed input never throws or drops text, and
+  is reported as a `LessonIssue` with a line number.
+- **Block keys.** Every top-level block has a stable `key`: type, FNV-1a of
+  its normalised text, and occurrence. The hash is split so it matches on
+  web, where ints are doubles. Notes and cards anchor to these keys.
+- **Hooks.** `ArticleView` takes a `BlockDecorator`. `ArticlePane` composes
+  the glossary, notes and read-aloud decorators and header controls from
+  their hook files (`lib/features/study/*/…_hooks.dart`), so none of those
+  features edits the renderer.
+
+**`subjectIndex/{subjectId}`** is one document per subject holding the
+definitions, formulas and revision cards extracted from **published**
+articles. A student gets the glossary, formula sheet and card deck for one
+read. It is rebuilt per topic on publish, unpublish and delete, and per
+subject by "Rebuild glossary & cards". Card ids are `topic:resource:key`
+with dots replaced, because they are map keys in `study/{uid}.cards`.
+
+**Study tools** go through `StudyDock`, which wraps the lesson, drill,
+topic test and WAEC exam screens. Tools implement `StudyTool` and add one
+line to `study_tool_registry.dart`.
+- **Availability** comes from `subject_tools.dart`. Exams narrow to
+  `examAllowedTools`: calculator, four-figure tables and scratchpad. The
+  periodic table stays **off in exams** until WAEC's rule is checked.
+- **The tools:** calculator (hand-written fx-82-style engine), scratchpad,
+  periodic table (CIAAW 2024 data, cited in the asset), four-figure tables
+  (computed, never typed), units and constants (CODATA 2018), glossary and
+  formula sheet.
+- **State.** Tool state for one screen visit lives in `StudySession`, which
+  the dock owns: rough work never follows the student to the next screen.
+  State that should persist, like calculator memory, lives in a provider.
+
+**Student study data** is **notes, highlights, bookmarks and revision
+cards**:
+- `notes/{id}`: one per annotated block, with a snapshot so a reworded
+  lesson shows the note as "from an earlier version" instead of losing it.
+- `study/{uid}`: `bookmarks` plus the Leitner `cards` schedule, written
+  **once per review session**, always as a merge. The rule names both
+  fields: a merge is checked against the merged document.
+- **Guests** keep all of this on the device only; anonymous accounts cannot
+  write either path.
+- Both are in `deleteOwnedDocuments` and in `legal_documents.dart`. Cards
+  never touch `progress` or `attempts`.
+
+**Other student features:**
+- **Read aloud:** `flutter_tts`, with a LaTeX-to-speech converter that
+  never speaks hidden answers.
+- **Save for offline:** prefetches a topic into the 100 MB Firestore cache;
+  videos can't be cached.
+- **Reading settings:** text size is applied app-wide; line spacing and the
+  Atkinson Hyperlegible font apply to articles.
+- **Low-data mode:** images and videos load only on tap.
+- **Lesson nudge:** shown above the topic test. It is never a gate.
+- **AI tutor:** "Ask (soon)" is greyed out. `AiTutor` in `lib/core/ai/` is
+  the seam, and nothing is sent anywhere.
+
+**Plugins added in this work:** `flutter_tts` and `file_picker`. Run
+`flutter clean` before the next release build (see the top of this file).
+
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
 **`web/index.html` must not load MathJax.** Maths is drawn on the canvas by
@@ -272,17 +387,17 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
 
-- `flags` are `{questionId, userId, reason, createdAt}` plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only an admin may change those three fields, and nothing else on a report is ever rewritten.
-- `questions` take exactly one client write: an admin resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
+- `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
+- `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
-- `topics/{id}/resources/{id}.status` is `draft | published` and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
+- `topics/{id}/resources/{id}.status` is `draft | in_review | changes_requested | published` (see `docs/CONTENT_ROLES.md`) and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.
 - Every `fromFirestore` must stay fully null-safe, and does so via the helpers in `lib/core/models/firestore_parsing.dart` (`docData`, `asString`, `asInt`/`asIntOrNull`, `asBool`, `asStringList`) — use those rather than writing fresh casts. They coerce instead of throwing, because these run inside provider mapping: a throw on one document takes down the whole screen, not just that row. `asStringList` stringifies bad entries rather than dropping them, since `correctIndex` indexes into the list. `test/model_null_safety_test.dart` covers this and carries a control group; if you change the helpers, that control group is what proves the tests still mean something.
-- `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only with the `admin` claim; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
+- `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only a reviewer; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
 - **Resources the editor created or edited carry `createdBy` or `editedInApp`, and `9_seed_resources.js` skips them** unless run with `--force`. The seeder writes each file as the whole truth, so without this, re-seeding would wipe a YouTube link added in the editor and republish a draft.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
 - `subjects.questionCount` counts the subject's `hasAnswer: true` questions, the ones a student can be served, and is shown on the welcome screen. Also written by `jobs.js --job=counts`, with the same "zero means not known, hide it" rule. It drifts when an admin retires a question, until the next nightly run.
@@ -310,7 +425,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 314 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 713 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
