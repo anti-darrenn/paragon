@@ -15,6 +15,7 @@ import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/report_problem_button.dart';
 import '../study/notes/notes_widgets.dart' show QuestionBookmarkButton;
+import '../../core/theme/app_palette.dart';
 
 /// An in-lesson exercise: a short set of questions with immediate
 /// feedback, Khan-style. The rules live in [ExerciseSession].
@@ -123,14 +124,14 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
         Text(
           'EXERCISE',
           style: AppTheme.caption.copyWith(
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
             letterSpacing: 0.8,
           ),
         ),
         const SizedBox(height: 8),
         Text(
           r.title,
-          style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 20),
         async.when(
@@ -217,7 +218,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
           FullLatexView(
             latex: q.text,
             textStyle: AppTheme.bodyLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -266,7 +267,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
           Text(
             'Keys 1–${q.options.length} choose an answer, Enter checks it.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],
@@ -280,8 +281,8 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -289,7 +290,9 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
         children: [
           Text(
             '${s.firstTryCorrect} of $total right first time',
-            style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading2.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 8),
           Text(
@@ -297,7 +300,9 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
                 ? 'Practice only — guest answers are not saved.'
                 : 'Practice only — this does not affect your mastery or the '
                       'topic test.',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 20),
           OutlinedButton(
@@ -333,7 +338,7 @@ class _Dots extends StatelessWidget {
                     ? (tries[i].isCorrect ? AppColors.correct : AppColors.wrong)
                     : i == session.index
                     ? AppColors.primary
-                    : AppColors.trackDark,
+                    : context.palette.track,
               ),
             ),
         ],
@@ -357,7 +362,7 @@ class _Feedback extends StatelessWidget {
         'The right answer is ${AnswerOption.letter(question.correctIndex.clamp(0, 25))}.',
         AppColors.wrong,
       ),
-      _ => (null, AppColors.textSecondaryDark),
+      _ => (null, context.palette.textSecondary),
     };
     if (headline == null) return const SizedBox.shrink();
 
@@ -390,7 +395,9 @@ class _Feedback extends StatelessWidget {
               const SizedBox(height: 8),
               FullLatexView(
                 latex: question.explanation,
-                textStyle: AppTheme.bodyMd.copyWith(color: Colors.white70),
+                textStyle: AppTheme.bodyMd.copyWith(
+                  color: context.palette.onHigh,
+                ),
               ),
             ],
           ],
@@ -415,7 +422,9 @@ class _Note extends StatelessWidget {
         children: [
           Text(
             text,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           ?action,
         ],

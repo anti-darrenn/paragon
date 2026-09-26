@@ -7,6 +7,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import 'card_providers.dart';
 import 'card_review_screen.dart' show cardsPath;
+import '../../../core/theme/app_palette.dart';
 
 /// "Revision cards: 3 due" on a subject's course page. Nothing at all when
 /// the subject has no cards, or while they are loading — the page must
@@ -32,14 +33,16 @@ class RevisionCardsEntry extends ConsumerWidget {
           key: const ValueKey('course.revisionCards'),
           onPressed: () => context.push(cardsPath(subjectId)),
           style: OutlinedButton.styleFrom(
-            foregroundColor: AppColors.textPrimaryDark,
-            side: const BorderSide(color: AppColors.borderDark),
+            foregroundColor: context.palette.textPrimary,
+            side: BorderSide(color: context.palette.border),
           ),
           icon: const Icon(Icons.style_outlined, size: 18),
           label: Text(
             'Revision cards: $due due',
             style: AppTheme.label.copyWith(
-              color: due > 0 ? AppColors.primary : AppColors.textSecondaryDark,
+              color: due > 0
+                  ? AppColors.primary
+                  : context.palette.textSecondary,
             ),
           ),
         ),
@@ -65,7 +68,7 @@ class RevisionCardsAction extends ConsumerWidget {
         if (!context.mounted) return;
         final picked = await showModalBottomSheet<String>(
           context: context,
-          backgroundColor: AppColors.surfaceDark,
+          backgroundColor: context.palette.surface,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
           ),
@@ -79,7 +82,7 @@ class RevisionCardsAction extends ConsumerWidget {
                   child: Text(
                     'Revision cards',
                     style: AppTheme.heading3.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                 ),
@@ -88,7 +91,7 @@ class RevisionCardsAction extends ConsumerWidget {
                     title: Text(
                       s.name,
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                       ),
                     ),
                     onTap: () => Navigator.of(sheet).pop(s.id),

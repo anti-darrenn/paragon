@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../repositories/learning_repository.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
 import 'study_tool.dart';
 import 'study_tool_registry.dart';
+import '../theme/app_palette.dart';
 
 /// Hosts the study tools (calculator, scratchpad, tables…) on a screen.
 ///
@@ -52,7 +52,7 @@ class _StudyDockState extends ConsumerState<StudyDock> {
   Future<void> _pick(List<StudyTool> available, StudyScope scope) async {
     final tool = await showModalBottomSheet<StudyTool>(
       context: context,
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
@@ -66,17 +66,17 @@ class _StudyDockState extends ConsumerState<StudyDock> {
               child: Text(
                 scope.context.isExam ? 'Allowed in the exam' : 'Study tools',
                 style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
             for (final t in available)
               ListTile(
-                leading: Icon(t.icon, color: AppColors.textSecondaryDark),
+                leading: Icon(t.icon, color: context.palette.textSecondary),
                 title: Text(
                   t.label,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
                 onTap: () => Navigator.of(sheet).pop(t),
@@ -92,7 +92,7 @@ class _StudyDockState extends ConsumerState<StudyDock> {
       await Navigator.of(context).push(
         MaterialPageRoute<void>(
           builder: (page) => Scaffold(
-            backgroundColor: AppColors.backgroundDark,
+            backgroundColor: context.palette.background,
             appBar: AppBar(title: Text(tool.label)),
             body: StudySessionScope(
               session: _session,
@@ -183,22 +183,22 @@ class _ToolsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: AppColors.surfaceDark,
-      shape: const RoundedRectangleBorder(
-        side: BorderSide(color: AppColors.borderDark),
+      color: context.palette.surface,
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: context.palette.border),
         borderRadius: BorderRadius.horizontal(left: Radius.circular(10)),
       ),
       child: InkWell(
         onTap: onTap,
         borderRadius: const BorderRadius.horizontal(left: Radius.circular(10)),
-        child: const Tooltip(
+        child: Tooltip(
           message: 'Study tools',
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 14),
             child: Icon(
               Icons.handyman_outlined,
               size: 20,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ),
@@ -216,10 +216,10 @@ class _Panel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: AppColors.surfaceDark,
+      color: context.palette.surface,
       elevation: 8,
-      shape: const RoundedRectangleBorder(
-        side: BorderSide(color: AppColors.borderDark),
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: context.palette.border),
         borderRadius: BorderRadius.all(Radius.circular(14)),
       ),
       clipBehavior: Clip.antiAlias,
@@ -231,13 +231,13 @@ class _Panel extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(14, 6, 4, 0),
             child: Row(
               children: [
-                Icon(tool.icon, size: 18, color: AppColors.textSecondaryDark),
+                Icon(tool.icon, size: 18, color: context.palette.textSecondary),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     tool.label,
                     style: AppTheme.label.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                 ),

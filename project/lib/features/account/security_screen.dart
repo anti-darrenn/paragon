@@ -7,6 +7,7 @@ import '../../core/repositories/account_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'reauth.dart';
+import '../../core/theme/app_palette.dart';
 
 /// `/settings/security` — how you sign in, and the controls that go with
 /// it: verify or change your email, change or add a password, link Google,
@@ -130,17 +131,17 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Sign out everywhere?',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: Text(
           'Every device signed in to this account will be signed out, this '
           'one included — this one straight away, the others within about '
           'an hour. Use it if you signed in on a computer that is not '
           'yours, or think someone else has your password (change it too).',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         actions: [
           TextButton(
@@ -148,7 +149,7 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -192,10 +193,10 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
     return showDialog<String>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Change email',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
@@ -206,7 +207,7 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
               'until you open it, and you keep signing in with the old one '
               'until then.',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             const SizedBox(height: 14),
@@ -214,10 +215,10 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
               controller: controller,
               autofocus: true,
               keyboardType: TextInputType.emailAddress,
-              style: const TextStyle(color: AppColors.textPrimaryDark),
-              decoration: const InputDecoration(
+              style: TextStyle(color: context.palette.textPrimary),
+              decoration: InputDecoration(
                 labelText: 'New email',
-                labelStyle: TextStyle(color: AppColors.textSecondaryDark),
+                labelStyle: TextStyle(color: context.palette.textSecondary),
               ),
             ),
           ],
@@ -228,7 +229,7 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -259,7 +260,7 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
     final email = user.email ?? '';
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Sign-in and security')),
       body: SafeArea(
         child: AbsorbPointer(
@@ -445,10 +446,10 @@ class _NewPasswordDialogState extends State<_NewPasswordDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       title: Text(
         widget.title,
-        style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
       ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
@@ -480,7 +481,7 @@ class _NewPasswordDialogState extends State<_NewPasswordDialog> {
           child: Text(
             'Cancel',
             style: AppTheme.btnLabel.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ),
@@ -516,7 +517,7 @@ class _Heading extends StatelessWidget {
     child: Text(
       text.toUpperCase(),
       style: AppTheme.caption.copyWith(
-        color: AppColors.textSecondaryDark,
+        color: context.palette.textSecondary,
         letterSpacing: 0.8,
       ),
     ),
@@ -530,8 +531,8 @@ class _Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
     decoration: BoxDecoration(
-      color: AppColors.surfaceDark,
-      border: Border.all(color: AppColors.borderDark),
+      color: context.palette.surface,
+      border: Border.all(color: context.palette.border),
       borderRadius: BorderRadius.circular(10),
     ),
     child: Column(children: children),
@@ -543,7 +544,7 @@ class _Divider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) =>
-      const Divider(height: 1, thickness: 1, color: AppColors.borderDark);
+      Divider(height: 1, thickness: 1, color: context.palette.border);
 }
 
 class _Badge extends StatelessWidget {
@@ -576,7 +577,7 @@ class _Line extends StatelessWidget {
       children: [
         Text(
           label,
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         const SizedBox(width: 16),
         Expanded(
@@ -585,7 +586,7 @@ class _Line extends StatelessWidget {
             textAlign: TextAlign.right,
             overflow: TextOverflow.ellipsis,
             style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -612,7 +613,7 @@ class _Action extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = onTap == null
-        ? AppColors.textSecondaryDark
+        ? context.palette.textSecondary
         : danger
         ? AppColors.wrong
         : AppColors.primary;
@@ -638,7 +639,7 @@ class _Action extends StatelessWidget {
                     Text(
                       hint!,
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],

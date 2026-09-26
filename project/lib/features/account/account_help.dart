@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../core/legal/legal_documents.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/theme/app_palette.dart';
 
 /// "Help with your account": who to write to, and a way to write.
 ///
@@ -17,10 +18,10 @@ Future<void> showAccountHelp(BuildContext context, {String? uid}) {
   return showDialog<void>(
     context: context,
     builder: (context) => AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       title: Text(
         'Help with your account',
-        style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
       ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
@@ -30,13 +31,15 @@ Future<void> showAccountHelp(BuildContext context, {String? uid}) {
             'Email us about anything to do with your account or your data: '
             'getting back in, a deletion that did not finish, or a copy of '
             'what we hold. A parent or guardian can write too.',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 14),
           SelectableText(
             contactEmail,
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -45,7 +48,7 @@ Future<void> showAccountHelp(BuildContext context, {String? uid}) {
             Text(
               'Include your account ID so we can find you: $uid',
               style: AppTheme.caption.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ],
@@ -60,7 +63,7 @@ Future<void> showAccountHelp(BuildContext context, {String? uid}) {
           child: Text(
             'Copy address',
             style: AppTheme.btnLabel.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ),

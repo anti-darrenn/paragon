@@ -8,6 +8,7 @@ import '../core/repositories/user_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/subject_tile.dart';
+import '../core/theme/app_palette.dart';
 
 /// Change the subjects you study — `/settings/subjects`.
 ///
@@ -56,7 +57,7 @@ class _SubjectsSettingsScreenState
     final selected = _selected ??= {...stored};
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Your subjects')),
       body: SafeArea(
         child: Center(
@@ -70,7 +71,7 @@ class _SubjectsSettingsScreenState
                   "Couldn't load subjects. Check your connection and try "
                   'again.',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ),
@@ -156,7 +157,7 @@ class _Body extends StatelessWidget {
                 'These decide what appears under "Your Subjects" on your '
                 'dashboard, and which courses are listed first.',
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
               const SizedBox(height: 20),
@@ -176,7 +177,7 @@ class _Body extends StatelessWidget {
                 style: AppTheme.caption.copyWith(
                   color: selected.isEmpty
                       ? AppColors.warning
-                      : AppColors.textSecondaryDark,
+                      : context.palette.textSecondary,
                 ),
               ),
               // Changing subjects does not touch practice history, and a
@@ -186,7 +187,7 @@ class _Body extends StatelessWidget {
                 'Your progress is kept either way — removing a subject only '
                 'hides it from your dashboard.',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ],

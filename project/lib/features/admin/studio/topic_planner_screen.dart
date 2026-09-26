@@ -16,6 +16,7 @@ import '../../lesson/exercise_pane.dart';
 import '../../lesson/video_pane.dart';
 import '../admin_home_screen.dart' show ResourceRow, StatusBadge;
 import '../admin_resource_editor_screen.dart';
+import '../../../core/theme/app_palette.dart';
 
 String topicPlannerPath(String topicId) => '/admin/topic/$topicId';
 
@@ -90,7 +91,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (dialog) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text('Delete "${r.title.isEmpty ? 'untitled' : r.title}"?'),
         content: Text(
           live
@@ -162,7 +163,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
         .canReview;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(
         title: Text(topic?.name ?? 'Topic', overflow: TextOverflow.ellipsis),
         actions: [
@@ -207,7 +208,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                           ? 'The lesson, in the order students see it. Drag to reorder; it ends with the topic test.'
                           : 'The lesson, in the order students see it. It ends with the topic test.',
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -247,7 +248,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                         child: Text(
                           'No lesson items yet. Start with an article.',
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.textSecondaryDark,
+                            color: context.palette.textSecondary,
                           ),
                         ),
                       )
@@ -263,7 +264,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                           for (var i = 0; i < items.length; i++)
                             Material(
                               key: ValueKey(items[i].id),
-                              color: AppColors.surfaceDark,
+                              color: context.palette.surface,
                               child: ResourceRow(
                                 resource: items[i],
                                 trailing: Row(
@@ -276,11 +277,11 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                                     ),
                                     ReorderableDragStartListener(
                                       index: i,
-                                      child: const Padding(
+                                      child: Padding(
                                         padding: EdgeInsets.only(left: 8),
                                         child: Icon(
                                           Icons.drag_indicator_rounded,
-                                          color: AppColors.textSecondaryDark,
+                                          color: context.palette.textSecondary,
                                         ),
                                       ),
                                     ),
@@ -295,7 +296,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                         children: [
                           for (final r in items)
                             Material(
-                              color: AppColors.surfaceDark,
+                              color: context.palette.surface,
                               child: ResourceRow(
                                 resource: r,
                                 trailing: Row(
@@ -332,7 +333,7 @@ class _StudentPreview extends StatelessWidget {
   Widget build(BuildContext context) {
     final shown = items.where((r) => !r.isRevision).toList();
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(
         title: Text('Preview: $title', overflow: TextOverflow.ellipsis),
       ),
@@ -369,7 +370,7 @@ class _StudentPreview extends StatelessWidget {
                   _ => ArticlePane(resource: r),
                 },
                 const SizedBox(height: 12),
-                const Divider(color: AppColors.borderDark),
+                Divider(color: context.palette.border),
               ],
             ],
           ),
@@ -398,8 +399,8 @@ class _ItemMenu extends ConsumerWidget {
             resource.createdBy == uid);
     return PopupMenuButton<String>(
       tooltip: 'More',
-      color: AppColors.surfaceDark,
-      icon: const Icon(Icons.more_vert, color: AppColors.textSecondaryDark),
+      color: context.palette.surface,
+      icon: Icon(Icons.more_vert, color: context.palette.textSecondary),
       onSelected: (choice) {
         if (choice == 'open') {
           context.push(adminResourcePath(resource.topicId, resource.id));

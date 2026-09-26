@@ -4,6 +4,7 @@ import '../../core/models/avatar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/user_avatar.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Choose a preset or an initials colour. Used by Edit profile and by the
 /// onboarding avatar step, so both offer exactly the same choices.
@@ -26,7 +27,7 @@ class AvatarPicker extends StatelessWidget {
       children: [
         Text(
           'PICTURES',
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.label.copyWith(color: context.palette.textSecondary),
         ),
         const SizedBox(height: 10),
         Wrap(
@@ -46,7 +47,7 @@ class AvatarPicker extends StatelessWidget {
         const SizedBox(height: 20),
         Text(
           'OR YOUR INITIALS',
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.label.copyWith(color: context.palette.textSecondary),
         ),
         const SizedBox(height: 10),
         Wrap(
@@ -98,7 +99,7 @@ class _Choice extends StatelessWidget {
             shape: BoxShape.circle,
             border: Border.all(
               color: isSelected
-                  ? AppColors.textPrimaryDark
+                  ? context.palette.textPrimary
                   : Colors.transparent,
               width: 2,
             ),

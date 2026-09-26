@@ -6,6 +6,7 @@ import '../providers/auth_provider.dart';
 import '../repositories/flag_repository.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// "Report a problem" for a lesson item: an article or a video.
 ///
@@ -29,7 +30,7 @@ class _ReportLessonButtonState extends ConsumerState<ReportLessonButton> {
   Future<void> _open() async {
     final reason = await showModalBottomSheet<LessonReportReason>(
       context: context,
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
@@ -43,7 +44,7 @@ class _ReportLessonButtonState extends ConsumerState<ReportLessonButton> {
               child: Text(
                 "What's wrong with this lesson?",
                 style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
@@ -52,7 +53,7 @@ class _ReportLessonButtonState extends ConsumerState<ReportLessonButton> {
               child: Text(
                 'Telling us is how lessons get fixed.',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ),
@@ -63,7 +64,7 @@ class _ReportLessonButtonState extends ConsumerState<ReportLessonButton> {
                   title: Text(
                     r.label,
                     style: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                   onTap: () => Navigator.of(sheet).pop(r),
@@ -115,10 +116,10 @@ class _ReportLessonButtonState extends ConsumerState<ReportLessonButton> {
     return IconButton(
       tooltip: 'Report a problem with this lesson',
       onPressed: _sending ? null : _open,
-      icon: const Icon(
+      icon: Icon(
         Icons.flag_outlined,
         size: 18,
-        color: AppColors.textSecondaryDark,
+        color: context.palette.textSecondary,
       ),
     );
   }

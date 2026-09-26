@@ -8,6 +8,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../onboarding/onboarding_scaffold.dart';
 import 'guest_upgrade.dart';
+import '../../core/theme/app_palette.dart';
 
 /// `/account/upgrade` — a guest makes an account and keeps what they did.
 ///
@@ -103,7 +104,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Create an account')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -118,7 +119,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                     Text(
                       'Keep your progress',
                       style: AppTheme.heading1.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                       ),
                     ),
                     const SizedBox(height: 10),
@@ -129,7 +130,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                       'cards. It also opens drill practice and every '
                       'subject.',
                       style: AppTheme.bodyLg.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 28),
@@ -161,7 +162,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                             Text(
                               'Continue with Google',
                               style: AppTheme.btnLabel.copyWith(
-                                color: AppColors.backgroundDark,
+                                color: context.palette.background,
                               ),
                             ),
                           ],
@@ -171,21 +172,17 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                     const SizedBox(height: 24),
                     Row(
                       children: [
-                        const Expanded(
-                          child: Divider(color: AppColors.borderDark),
-                        ),
+                        Expanded(child: Divider(color: context.palette.border)),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 12),
                           child: Text(
                             'or with email',
                             style: AppTheme.caption.copyWith(
-                              color: AppColors.textSecondaryDark,
+                              color: context.palette.textSecondary,
                             ),
                           ),
                         ),
-                        const Expanded(
-                          child: Divider(color: AppColors.borderDark),
-                        ),
+                        Expanded(child: Divider(color: context.palette.border)),
                       ],
                     ),
                     const SizedBox(height: 20),
@@ -206,7 +203,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                       suffix: IconButton(
                         icon: Icon(
                           _obscure ? Icons.visibility_off : Icons.visibility,
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                         onPressed: () => setState(() => _obscure = !_obscure),
                       ),
@@ -234,7 +231,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                               ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.primary,
-                          disabledBackgroundColor: AppColors.trackDark,
+                          disabledBackgroundColor: context.palette.track,
                           elevation: 0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(4),
@@ -254,7 +251,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                                 style: AppTheme.btnLabel.copyWith(
                                   color: _emailFormValid
                                       ? Colors.white
-                                      : AppColors.textSecondaryDark,
+                                      : context.palette.textSecondary,
                                 ),
                               ),
                       ),
@@ -267,7 +264,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
                       child: Text(
                         'I already have an account',
                         style: AppTheme.bodyMd.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                           decoration: TextDecoration.underline,
                         ),
                       ),
@@ -293,10 +290,10 @@ Future<bool> confirmSignInToExistingAccount(
   final answer = await showDialog<bool>(
     context: context,
     builder: (context) => AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       title: Text(
         'You already have an account',
-        style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
       ),
       content: Text(
         isGoogle
@@ -309,7 +306,7 @@ Future<bool> confirmSignInToExistingAccount(
                   'You can sign in to it, but what you did in this guest '
                   'session will not come with you. Two accounts cannot be '
                   'joined together.',
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
       ),
       actions: [
         TextButton(
@@ -317,7 +314,7 @@ Future<bool> confirmSignInToExistingAccount(
           child: Text(
             'Stay a guest',
             style: AppTheme.btnLabel.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/theme/app_palette.dart';
 
 /// How a student can sign in, read from Firebase's provider list.
 class SignInMethods {
@@ -100,10 +101,10 @@ class _PasswordDialogState extends State<_PasswordDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       title: Text(
         'Confirm it is you',
-        style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
       ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
@@ -111,7 +112,9 @@ class _PasswordDialogState extends State<_PasswordDialog> {
         children: [
           Text(
             'Enter your current password to continue.',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 14),
           PasswordField(
@@ -135,7 +138,7 @@ class _PasswordDialogState extends State<_PasswordDialog> {
           child: Text(
             'Cancel',
             style: AppTheme.btnLabel.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ),
@@ -180,26 +183,26 @@ class _PasswordFieldState extends State<PasswordField> {
       obscureText: _obscure,
       autofocus: widget.autofocus,
       onSubmitted: widget.onSubmitted,
-      style: const TextStyle(color: AppColors.textPrimaryDark),
+      style: TextStyle(color: context.palette.textPrimary),
       decoration: InputDecoration(
         labelText: widget.label,
-        labelStyle: const TextStyle(color: AppColors.textSecondaryDark),
+        labelStyle: TextStyle(color: context.palette.textSecondary),
         filled: true,
-        fillColor: AppColors.backgroundDark,
+        fillColor: context.palette.background,
         suffixIcon: IconButton(
           icon: Icon(
             _obscure ? Icons.visibility_off : Icons.visibility,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           onPressed: () => setState(() => _obscure = !_obscure),
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6),
-          borderSide: const BorderSide(color: AppColors.borderDark),
+          borderSide: BorderSide(color: context.palette.border),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6),
-          borderSide: const BorderSide(color: AppColors.borderDark),
+          borderSide: BorderSide(color: context.palette.border),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6),

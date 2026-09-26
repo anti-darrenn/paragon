@@ -6,9 +6,9 @@ import '../../core/onboarding/onboarding_step.dart';
 import '../../core/providers/analytics_provider.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/user_repository.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'onboarding_scaffold.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Step 2 — what the app calls the student. 2–30 characters, not unique.
 ///
@@ -110,7 +110,7 @@ class _OnboardingDisplayNameScreenState
           Text(
             '$_minLength–$_maxLength characters.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],

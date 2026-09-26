@@ -7,10 +7,10 @@ import '../../core/providers/analytics_provider.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/course_repository.dart';
 import '../../core/repositories/user_repository.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/subject_tile.dart';
 import 'onboarding_scaffold.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Step 3 — pick the subjects you're studying.
 ///
@@ -96,7 +96,7 @@ class _OnboardingSubjectsScreenState
         ),
         error: (_, _) => Text(
           "Couldn't load subjects. Check your connection and try again.",
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         data: (courses) {
           final live = courses.where((c) => c.isLive).toList();
@@ -124,7 +124,7 @@ class _OnboardingSubjectsScreenState
                 Text(
                   'COMING SOON',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                     letterSpacing: 0.8,
                   ),
                 ),
@@ -142,14 +142,14 @@ class _OnboardingSubjectsScreenState
                           vertical: 7,
                         ),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceDark,
-                          border: Border.all(color: AppColors.borderDark),
+                          color: context.palette.surface,
+                          border: Border.all(color: context.palette.border),
                           borderRadius: BorderRadius.circular(999),
                         ),
                         child: Text(
                           course.name,
                           style: AppTheme.caption.copyWith(
-                            color: AppColors.textSecondaryDark,
+                            color: context.palette.textSecondary,
                           ),
                         ),
                       ),
@@ -163,7 +163,7 @@ class _OnboardingSubjectsScreenState
                     ? 'Select at least $_minSubjects to continue.'
                     : '${_selected.length} selected.',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ],

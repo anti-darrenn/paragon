@@ -12,6 +12,7 @@ import '../../../core/widgets/full_latex_view.dart';
 import 'card_deck.dart';
 import 'card_providers.dart';
 import 'leitner.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// Route for a subject's revision cards.
 String cardsPath(String subjectId) => '/cards/$subjectId';
@@ -174,9 +175,9 @@ class _CardReviewScreenState extends ConsumerState<CardReviewScreen> {
     }
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(
-        backgroundColor: AppColors.backgroundDark,
+        backgroundColor: context.palette.background,
         title: const Text('Revision cards'),
         actions: [
           if (queue != null && !_finished && _index > 0)
@@ -200,10 +201,10 @@ class _CardReviewScreenState extends ConsumerState<CardReviewScreen> {
   }
 }
 
-TextStyle get _text =>
-    AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark);
-TextStyle get _muted =>
-    AppTheme.caption.copyWith(color: AppColors.textSecondaryDark);
+TextStyle _text(BuildContext context) =>
+    AppTheme.bodyMd.copyWith(color: context.palette.textPrimary);
+TextStyle _muted(BuildContext context) =>
+    AppTheme.caption.copyWith(color: context.palette.textSecondary);
 
 class _GuestCardsPrompt extends ConsumerWidget {
   const _GuestCardsPrompt();
@@ -215,13 +216,13 @@ class _GuestCardsPrompt extends ConsumerWidget {
       padding: const EdgeInsets.only(bottom: 12),
       child: Row(
         children: [
-          const Icon(
+          Icon(
             Icons.phone_android,
             size: 14,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           const SizedBox(width: 6),
-          Expanded(child: Text(kGuestCardsPrompt, style: _muted)),
+          Expanded(child: Text(kGuestCardsPrompt, style: _muted(context))),
         ],
       ),
     );
@@ -234,10 +235,12 @@ class _Chooser extends ConsumerWidget {
   final String subjectId;
   final void Function(List<IndexedCard>, CardDeck, String) onStart;
 
-  Widget _message(String text) => Center(
-    child: Padding(
-      padding: const EdgeInsets.all(32),
-      child: Text(text, textAlign: TextAlign.center, style: _muted),
+  Widget _message(String text) => Builder(
+    builder: (context) => Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Text(text, textAlign: TextAlign.center, style: _muted(context)),
+      ),
     ),
   );
 
@@ -274,7 +277,7 @@ class _Chooser extends ConsumerWidget {
         Text(
           '${deck.cards.length} ${deck.cards.length == 1 ? 'card' : 'cards'} · $due due',
           key: const ValueKey('cards.summaryLine'),
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 16),
         FilledButton.icon(
@@ -293,13 +296,13 @@ class _Chooser extends ConsumerWidget {
           const SizedBox(height: 8),
           Text(
             'Nothing is due. Come back tomorrow, or pick a topic below.',
-            style: _muted,
+            style: _muted(context),
           ),
         ],
         const SizedBox(height: 28),
         Text(
           'Pick a topic',
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.label.copyWith(color: context.palette.textSecondary),
         ),
         const SizedBox(height: 8),
         for (final t in topics)
@@ -310,14 +313,14 @@ class _Chooser extends ConsumerWidget {
               return ListTile(
                 key: ValueKey('cards.topic.${t.topicId}'),
                 contentPadding: EdgeInsets.zero,
-                title: Text(name, style: _text),
+                title: Text(name, style: _text(context)),
                 subtitle: Text(
                   '${t.cards.length} ${t.cards.length == 1 ? 'card' : 'cards'} · $dueHere due',
-                  style: _muted,
+                  style: _muted(context),
                 ),
-                trailing: const Icon(
+                trailing: Icon(
                   Icons.chevron_right,
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
                 onTap: () => onStart(deck.topicSession(t.topicId), deck, name),
               );
@@ -363,13 +366,13 @@ class _CardFace extends StatelessWidget {
         Text(
           '$position of $total · $label',
           key: const ValueKey('cards.position'),
-          style: _muted,
+          style: _muted(context),
         ),
         const SizedBox(height: 12),
         Material(
-          color: AppColors.surfaceDark,
-          shape: const RoundedRectangleBorder(
-            side: BorderSide(color: AppColors.borderDark),
+          color: context.palette.surface,
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: context.palette.border),
             borderRadius: BorderRadius.all(Radius.circular(14)),
           ),
           child: InkWell(
@@ -381,20 +384,20 @@ class _CardFace extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(_prompt.toUpperCase(), style: _muted),
+                  Text(_prompt.toUpperCase(), style: _muted(context)),
                   const SizedBox(height: 8),
                   FullLatexView(
                     latex: card.front,
                     textStyle: AppTheme.heading2.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                   if (card.topicName.isNotEmpty) ...[
                     const SizedBox(height: 6),
-                    Text(card.topicName, style: _muted),
+                    Text(card.topicName, style: _muted(context)),
                   ],
                   const SizedBox(height: 16),
-                  const Divider(color: AppColors.borderDark),
+                  Divider(color: context.palette.border),
                   const SizedBox(height: 12),
                   if (revealed)
                     KeyedSubtree(
@@ -405,7 +408,7 @@ class _CardFace extends StatelessWidget {
                     Text(
                       'Tap to show the answer',
                       textAlign: TextAlign.center,
-                      style: _muted,
+                      style: _muted(context),
                     ),
                 ],
               ),
@@ -469,7 +472,7 @@ class _Summary extends StatelessWidget {
       children: [
         Text(
           'Session done',
-          style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 8),
         Text(
@@ -478,7 +481,7 @@ class _Summary extends StatelessWidget {
               : 'You knew $knew of $total. '
                     '${missed == 0 ? 'Those cards come back later.' : "The $missed you didn't know come back tomorrow."}',
           key: const ValueKey('cards.result'),
-          style: _text,
+          style: _text(context),
         ),
         const SizedBox(height: 24),
         FilledButton(

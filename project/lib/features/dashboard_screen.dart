@@ -17,6 +17,7 @@ import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
 import '../core/widgets/user_avatar.dart';
 import '../core/widgets/load_error.dart';
+import '../core/theme/app_palette.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -74,16 +75,16 @@ class DashboardScreen extends ConsumerWidget {
                 // ── Greeting ───────────────────────────────────────────
                 Text(
                   'Hey, $displayName 👋',
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: TextStyle(
+                    color: context.palette.textStrong,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(height: 4),
-                const Text(
+                Text(
                   'Pick up where you left off.',
-                  style: TextStyle(color: Colors.white38, fontSize: 14),
+                  style: TextStyle(color: context.palette.onLow, fontSize: 14),
                 ),
                 const SizedBox(height: 16),
 
@@ -296,9 +297,9 @@ class _SubjectProgressCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: AppColors.surfaceDark,
+          color: context.palette.surface,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: AppColors.borderDark),
+          border: Border.all(color: context.palette.border),
         ),
         child: Row(
           children: [
@@ -317,8 +318,8 @@ class _SubjectProgressCard extends StatelessWidget {
                 children: [
                   Text(
                     course.name,
-                    style: const TextStyle(
-                      color: Colors.white,
+                    style: TextStyle(
+                      color: context.palette.textStrong,
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
                     ),
@@ -328,7 +329,7 @@ class _SubjectProgressCard extends StatelessWidget {
                     detail,
                     style: TextStyle(
                       color: progress.isEmpty || !course.isLive
-                          ? Colors.white38
+                          ? context.palette.onLow
                           : accent,
                       fontSize: 12,
                     ),
@@ -344,7 +345,7 @@ class _SubjectProgressCard extends StatelessWidget {
               ),
               const SizedBox(width: 6),
             ],
-            const Icon(Icons.chevron_right_rounded, color: Colors.white38),
+            Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
           ],
         ),
       ),
@@ -364,8 +365,8 @@ class _SectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: const TextStyle(
-        color: Colors.white,
+      style: TextStyle(
+        color: context.palette.textStrong,
         fontSize: 15,
         fontWeight: FontWeight.w600,
       ),
@@ -412,7 +413,7 @@ class _ContinueLearning extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
       child: Material(
-        color: AppColors.surfaceDark,
+        color: context.palette.surface,
         borderRadius: BorderRadius.circular(12),
         child: InkWell(
           borderRadius: BorderRadius.circular(12),
@@ -439,7 +440,7 @@ class _ContinueLearning extends ConsumerWidget {
                       Text(
                         title,
                         style: AppTheme.bodyLg.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -447,7 +448,7 @@ class _ContinueLearning extends ConsumerWidget {
                       Text(
                         subtitle,
                         style: AppTheme.bodyMd.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                     ],
@@ -486,9 +487,9 @@ class _StatCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
+        color: context.palette.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.borderDark),
+        border: Border.all(color: context.palette.border),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -497,8 +498,8 @@ class _StatCard extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             value,
-            style: const TextStyle(
-              color: Colors.white,
+            style: TextStyle(
+              color: context.palette.textStrong,
               fontSize: 32,
               fontWeight: FontWeight.bold,
               height: 1,
@@ -507,7 +508,7 @@ class _StatCard extends StatelessWidget {
           const SizedBox(height: 4),
           Text(
             label,
-            style: const TextStyle(color: Colors.white54, fontSize: 12),
+            style: TextStyle(color: context.palette.onMedium, fontSize: 12),
           ),
           Text(
             sublabel,
@@ -544,9 +545,9 @@ class _ActionCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: AppColors.surfaceDark,
+          color: context.palette.surface,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: AppColors.borderDark),
+          border: Border.all(color: context.palette.border),
         ),
         child: Row(
           children: [
@@ -566,8 +567,8 @@ class _ActionCard extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: const TextStyle(
-                      color: Colors.white,
+                    style: TextStyle(
+                      color: context.palette.textStrong,
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
                     ),
@@ -575,12 +576,15 @@ class _ActionCard extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     subtitle,
-                    style: const TextStyle(color: Colors.white38, fontSize: 12),
+                    style: TextStyle(
+                      color: context.palette.onLow,
+                      fontSize: 12,
+                    ),
                   ),
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right_rounded, color: Colors.white38),
+            Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
           ],
         ),
       ),

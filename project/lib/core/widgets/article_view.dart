@@ -5,6 +5,7 @@ import '../theme/app_theme.dart';
 import '../lessons/lesson_doc.dart';
 import 'full_latex_view.dart';
 import 'lesson_blocks/lesson_block_view.dart';
+import '../theme/app_palette.dart';
 
 /// Renders a Learn-mode article: long-form prose with embedded maths.
 ///
@@ -87,12 +88,12 @@ class ArticleView extends StatelessWidget {
   /// The paragraph style an article uses unless given another. Callers
   /// that apply the student's reading settings (line spacing, font) start
   /// from this, so the defaults stay identical.
-  static TextStyle get defaultTextStyle =>
-      AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark, height: 1.6);
+  static TextStyle defaultTextStyleOf(BuildContext context) => AppTheme.bodyLg
+      .copyWith(color: context.palette.textPrimary, height: 1.6);
 
   @override
   Widget build(BuildContext context) {
-    final base = textStyle ?? defaultTextStyle;
+    final base = textStyle ?? defaultTextStyleOf(context);
 
     final doc = parseLessonDoc(body);
     if (doc.isEmpty) return const SizedBox.shrink();
@@ -264,17 +265,10 @@ class ArticleBlockView extends StatelessWidget {
   final ArticleBlock block;
   final TextStyle base;
 
-  TextStyle get _headingStyle => switch (block.kind) {
-    ArticleBlockKind.heading1 => AppTheme.heading1.copyWith(
-      color: AppColors.textPrimaryDark,
-    ),
-    ArticleBlockKind.heading2 => AppTheme.heading2.copyWith(
-      color: AppColors.textPrimaryDark,
-    ),
-    _ => AppTheme.heading3.copyWith(
-      color: AppColors.textPrimaryDark,
-      fontWeight: FontWeight.w700,
-    ),
+  TextStyle _headingStyle(Color color) => switch (block.kind) {
+    ArticleBlockKind.heading1 => AppTheme.heading1.copyWith(color: color),
+    ArticleBlockKind.heading2 => AppTheme.heading2.copyWith(color: color),
+    _ => AppTheme.heading3.copyWith(color: color, fontWeight: FontWeight.w700),
   };
 
   @override
@@ -283,10 +277,13 @@ class ArticleBlockView extends StatelessWidget {
       case ArticleBlockKind.heading1:
       case ArticleBlockKind.heading2:
       case ArticleBlockKind.heading3:
-        return FullLatexView(latex: block.text, textStyle: _headingStyle);
+        return FullLatexView(
+          latex: block.text,
+          textStyle: _headingStyle(context.palette.textPrimary),
+        );
 
       case ArticleBlockKind.rule:
-        return Container(height: 1, color: AppColors.borderDark);
+        return Container(height: 1, color: context.palette.border);
 
       case ArticleBlockKind.displayMath:
         // Horizontally scrollable: a wide equation must not force the
@@ -303,7 +300,7 @@ class ArticleBlockView extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
           decoration: BoxDecoration(
-            color: AppColors.surfaceDark,
+            color: context.palette.surface,
             border: Border(
               left: BorderSide(color: AppColors.secondary, width: 3),
             ),
@@ -314,7 +311,7 @@ class ArticleBlockView extends StatelessWidget {
           ),
           child: FullLatexView(
             latex: block.text,
-            textStyle: base.copyWith(color: AppColors.textSecondaryDark),
+            textStyle: base.copyWith(color: context.palette.textSecondary),
           ),
         );
 

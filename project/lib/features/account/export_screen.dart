@@ -9,6 +9,7 @@ import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/account_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/theme/app_palette.dart';
 
 /// `/settings/export` — download a copy of everything stored about you.
 ///
@@ -104,7 +105,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
     final nextAllowed = nextExportAllowedAt(_lastExport, now: DateTime.now());
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Download your data')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -120,7 +121,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                       'A copy of everything Paragon stores about you, as one '
                       'file you can open in any text editor:',
                       style: AppTheme.bodyLg.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -137,7 +138,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                         child: Text(
                           '•  $line',
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.textSecondaryDark,
+                            color: context.palette.textSecondary,
                           ),
                         ),
                       ),
@@ -151,7 +152,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                             ? ''
                             : 'Counting…',
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                     ),
@@ -175,7 +176,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                             : _export,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.primary,
-                          disabledBackgroundColor: AppColors.trackDark,
+                          disabledBackgroundColor: context.palette.track,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -194,7 +195,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                                 style: AppTheme.btnLabel.copyWith(
                                   color: nextAllowed == null
                                       ? Colors.white
-                                      : AppColors.textSecondaryDark,
+                                      : context.palette.textSecondary,
                                 ),
                               ),
                       ),
@@ -205,7 +206,7 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
                         'You downloaded a copy in the last day. You can '
                         'download another tomorrow.',
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                     ],

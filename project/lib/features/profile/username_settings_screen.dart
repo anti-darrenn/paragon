@@ -10,6 +10,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../account/security_screen.dart' show formatDay;
 import '../onboarding/username_input.dart';
+import '../../core/theme/app_palette.dart';
 
 /// `/settings/username` — change your @handle, once every 90 days.
 ///
@@ -55,10 +56,10 @@ class _UsernameSettingsScreenState
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Change to @$raw?',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: Text(
           key == currentKey
@@ -69,7 +70,7 @@ class _UsernameSettingsScreenState
                     'be used by anyone, including you. You will not be able '
                     'to change your username again for '
                     '${UsernameRules.changeCooldown.inDays} days.',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         actions: [
           TextButton(
@@ -77,7 +78,7 @@ class _UsernameSettingsScreenState
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -130,7 +131,7 @@ class _UsernameSettingsScreenState
     final repo = ref.read(userRepositoryProvider);
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Username')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -145,7 +146,7 @@ class _UsernameSettingsScreenState
                     Text(
                       current.isEmpty ? '—' : '@$current',
                       style: AppTheme.heading2.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -155,7 +156,7 @@ class _UsernameSettingsScreenState
                       'username you give up stays reserved to you, so '
                       'nobody else can take it and pretend to be you.',
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 24),
@@ -163,15 +164,15 @@ class _UsernameSettingsScreenState
                       Container(
                         padding: const EdgeInsets.all(14),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceDark,
-                          border: Border.all(color: AppColors.borderDark),
+                          color: context.palette.surface,
+                          border: Border.all(color: context.palette.border),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(
                           'You changed it recently. You can change it again '
                           'from ${formatDay(nextAllowed)}.',
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.textPrimaryDark,
+                            color: context.palette.textPrimary,
                           ),
                         ),
                       )
@@ -207,7 +208,7 @@ class _UsernameSettingsScreenState
                               : () => _save(currentKey),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: AppColors.primary,
-                            disabledBackgroundColor: AppColors.trackDark,
+                            disabledBackgroundColor: context.palette.track,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),

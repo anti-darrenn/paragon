@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// What a student sees when a screen's data fails to load: a plain
 /// message and a way to try again.
@@ -32,17 +32,17 @@ class LoadError extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(
+            Icon(
               Icons.cloud_off_rounded,
               size: 36,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
             const SizedBox(height: 12),
             Text(
               message,
               textAlign: TextAlign.center,
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             const SizedBox(height: 16),

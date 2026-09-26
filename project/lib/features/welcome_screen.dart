@@ -11,6 +11,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import 'account/guest_upgrade.dart';
 import 'account/upgrade_screen.dart';
+import '../core/theme/app_palette.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -88,7 +89,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       // CustomScrollView + SliverFillRemaining(hasScrollBody: false) fills
       // the child to exactly the remaining viewport space when content
       // fits (no scrollbar, nothing to scroll), and lets the CustomScrollView
@@ -161,7 +162,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                                 'Learning the right way.',
                                 textAlign: TextAlign.center,
                                 style: AppTheme.heading1.copyWith(
-                                  color: AppColors.textSecondaryDark,
+                                  color: context.palette.textSecondary,
                                 ),
                               ),
 
@@ -339,7 +340,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                                   child: Text(
                                     'Browse as Guest',
                                     style: AppTheme.caption.copyWith(
-                                      color: AppColors.textSecondaryDark,
+                                      color: context.palette.textSecondary,
                                     ),
                                   ),
                                 ),
@@ -358,11 +359,11 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                         // SingleChildScrollView).
                         const Spacer(),
 
-                        // ── Divider — Figma: full-bleed, AppColors.borderDark
+                        // ── Divider — Figma: full-bleed, context.palette.border
                         // at 40% opacity, between the auth zone and the ticker.
                         Container(
                           height: 1,
-                          color: AppColors.borderDark.withAlpha(
+                          color: context.palette.border.withAlpha(
                             (0.4 * 255).round(),
                           ),
                         ),
@@ -477,7 +478,7 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
             Text(
               '${_groupThousands(subject.questionCount)} questions',
               style: AppTheme.label.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ],
@@ -587,7 +588,7 @@ class _ConsentLine extends StatelessWidget {
           Text(
             'By continuing you agree to our ',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           MouseRegion(
@@ -600,7 +601,7 @@ class _ConsentLine extends StatelessWidget {
           Text(
             ' and ',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           MouseRegion(
@@ -613,7 +614,7 @@ class _ConsentLine extends StatelessWidget {
           Text(
             '.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],

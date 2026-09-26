@@ -12,6 +12,7 @@ import '../../core/widgets/guest_notice.dart';
 import '../../core/widgets/user_avatar.dart';
 import '../dashboard_screen.dart';
 import '../onboarding/profile_form.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Your own profile — `/me`.
 ///
@@ -48,7 +49,7 @@ class MeScreen extends ConsumerWidget {
     final joined = created is Timestamp ? joinedLabel(created.toDate()) : null;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(
         title: const Text('Profile'),
         actions: [
@@ -78,7 +79,7 @@ class MeScreen extends ConsumerWidget {
                           : displayName,
                       textAlign: TextAlign.center,
                       style: AppTheme.heading2.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                       ),
                     ),
                     if (username.isNotEmpty) ...[
@@ -87,7 +88,7 @@ class MeScreen extends ConsumerWidget {
                         '@$username',
                         textAlign: TextAlign.center,
                         style: AppTheme.bodyMd.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                     ],
@@ -97,7 +98,7 @@ class MeScreen extends ConsumerWidget {
                         bio,
                         textAlign: TextAlign.center,
                         style: AppTheme.bodyLg.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                         ),
                       ),
                     ],
@@ -107,7 +108,7 @@ class MeScreen extends ConsumerWidget {
                         joined,
                         textAlign: TextAlign.center,
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                     ],
@@ -125,8 +126,8 @@ class MeScreen extends ConsumerWidget {
                                 : 'Edit profile',
                           ),
                           style: OutlinedButton.styleFrom(
-                            foregroundColor: AppColors.textPrimaryDark,
-                            side: const BorderSide(color: AppColors.borderDark),
+                            foregroundColor: context.palette.textPrimary,
+                            side: BorderSide(color: context.palette.border),
                           ),
                         ),
                       ),
@@ -236,8 +237,8 @@ class _AboutYou extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
           decoration: BoxDecoration(
-            color: AppColors.surfaceDark,
-            border: Border.all(color: AppColors.borderDark),
+            color: context.palette.surface,
+            border: Border.all(color: context.palette.border),
             borderRadius: BorderRadius.circular(10),
           ),
           child: rows.isEmpty
@@ -247,7 +248,7 @@ class _AboutYou extends StatelessWidget {
                     'Nothing added. All of it is optional, and only you can '
                     'see it.',
                     style: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                 )
@@ -262,14 +263,14 @@ class _AboutYou extends StatelessWidget {
                               child: Text(
                                 label,
                                 style: AppTheme.bodyMd.copyWith(
-                                  color: AppColors.textSecondaryDark,
+                                  color: context.palette.textSecondary,
                                 ),
                               ),
                             ),
                             Text(
                               value,
                               style: AppTheme.bodyMd.copyWith(
-                                color: AppColors.textPrimaryDark,
+                                color: context.palette.textPrimary,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -292,7 +293,7 @@ class _Section extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+      style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
     );
   }
 }
@@ -309,8 +310,8 @@ class _Stat extends StatelessWidget {
       width: 148,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -318,13 +319,15 @@ class _Stat extends StatelessWidget {
         children: [
           Text(
             value,
-            style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading2.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 2),
           Text(
             label,
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],

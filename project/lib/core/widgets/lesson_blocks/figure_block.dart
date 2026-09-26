@@ -9,6 +9,7 @@ import '../../repositories/learn_repository.dart';
 import '../../theme/app_colors.dart';
 import '../../theme/app_theme.dart';
 import '../full_latex_view.dart';
+import '../../theme/app_palette.dart';
 
 /// An image in a lesson, with its caption. Tap to zoom.
 ///
@@ -89,7 +90,7 @@ class _FigureViewState extends ConsumerState<FigureView> {
                 child: FullLatexView(
                   latex: block.caption,
                   textStyle: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ),
@@ -103,7 +104,7 @@ class _FigureViewState extends ConsumerState<FigureView> {
   void _zoom(BuildContext context, Widget image) {
     showDialog<void>(
       context: context,
-      barrierColor: AppColors.backgroundDark.withAlpha(235),
+      barrierColor: context.palette.background.withAlpha(235),
       builder: (dialog) => GestureDetector(
         onTap: () => Navigator.of(dialog).pop(),
         child: InteractiveViewer(maxScale: 5, child: Center(child: image)),
@@ -120,9 +121,9 @@ class _TapToLoad extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: AppColors.surfaceDark,
-      shape: const RoundedRectangleBorder(
-        side: BorderSide(color: AppColors.borderDark),
+      color: context.palette.surface,
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: context.palette.border),
         borderRadius: BorderRadius.all(Radius.circular(8)),
       ),
       child: InkWell(
@@ -132,16 +133,13 @@ class _TapToLoad extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
           child: Row(
             children: [
-              const Icon(
-                Icons.image_outlined,
-                color: AppColors.textSecondaryDark,
-              ),
+              Icon(Icons.image_outlined, color: context.palette.textSecondary),
               const SizedBox(width: 12),
               Expanded(
                 child: Text(
                   caption.isEmpty ? 'Image' : caption,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
               ),
@@ -190,7 +188,7 @@ class _Placeholder extends StatelessWidget {
   Widget build(BuildContext context) => Container(
     height: 160,
     alignment: Alignment.center,
-    color: AppColors.surfaceDark,
+    color: context.palette.surface,
     child: child,
   );
 }
@@ -203,14 +201,13 @@ class _Broken extends StatelessWidget {
     child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const Icon(
-          Icons.broken_image_outlined,
-          color: AppColors.textSecondaryDark,
-        ),
+        Icon(Icons.broken_image_outlined, color: context.palette.textSecondary),
         const SizedBox(height: 6),
         Text(
           "This image couldn't be loaded.",
-          style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.caption.copyWith(
+            color: context.palette.textSecondary,
+          ),
         ),
       ],
     ),

@@ -11,6 +11,7 @@ import '../../theme/app_theme.dart';
 import '../answer_option.dart';
 import '../full_latex_view.dart';
 import 'lesson_block_view.dart';
+import '../../theme/app_palette.dart';
 
 /// A labelled frame shared by the interactive blocks, so a worked example,
 /// a problem and a quick check are recognisable at a glance.
@@ -36,8 +37,8 @@ class _Frame extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -58,7 +59,7 @@ class _Frame extends StatelessWidget {
             FullLatexView(
               latex: title,
               textStyle: AppTheme.heading3.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
                 fontSize: ((base?.fontSize) ?? 16) + 1,
               ),
             ),
@@ -110,7 +111,7 @@ class _Section extends StatelessWidget {
           Text(
             label,
             style: AppTheme.label.copyWith(
-              color: colour ?? AppColors.textSecondaryDark,
+              color: colour ?? context.palette.textSecondary,
             ),
           ),
           const SizedBox(height: 6),
@@ -449,7 +450,7 @@ class BankQuestionView extends ConsumerWidget {
                 ? const LinearProgressIndicator(minHeight: 2)
                 : Text(
                     'This question is no longer available.',
-                    style: base.copyWith(color: AppColors.textSecondaryDark),
+                    style: base.copyWith(color: context.palette.textSecondary),
                   ))
           : _ChoiceQuestion(
               question: FullLatexView(latex: q.text, textStyle: base),
@@ -503,9 +504,9 @@ class _FlipCardViewState extends State<FlipCardView> {
             decoration: BoxDecoration(
               color: _flipped
                   ? AppColors.secondary.withAlpha(28)
-                  : AppColors.surfaceDark,
+                  : context.palette.surface,
               border: Border.all(
-                color: _flipped ? AppColors.secondary : AppColors.borderDark,
+                color: _flipped ? AppColors.secondary : context.palette.border,
               ),
               borderRadius: BorderRadius.circular(12),
             ),
@@ -530,7 +531,7 @@ class _FlipCardViewState extends State<FlipCardView> {
                     Text(
                       _flipped ? 'Tap to flip back' : 'Tap to flip',
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],

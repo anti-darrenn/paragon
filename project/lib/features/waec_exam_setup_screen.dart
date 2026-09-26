@@ -9,6 +9,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/load_error.dart';
 import 'waec_exam_screen.dart';
+import '../core/theme/app_palette.dart';
 
 /// Exam setup screen, spec §2.3.3 — year range, question count, timer,
 /// shuffle, and the dynamic availability label, scoped to whatever a
@@ -184,12 +185,12 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
       children: [
         Text(
           'Year range',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 4),
         Text(
           '$_yearFrom – $_yearTo ($years year${years == 1 ? '' : 's'})',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         if (singleYear)
           Padding(
@@ -197,7 +198,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
             child: Text(
               'Only $minYear has WAEC questions for this subject.',
               style: AppTheme.caption.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           )
@@ -205,7 +206,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
               activeTrackColor: AppColors.primary,
-              inactiveTrackColor: AppColors.trackDark,
+              inactiveTrackColor: context.palette.track,
               thumbColor: AppColors.primary,
               overlayColor: AppColors.primary.withAlpha((0.2 * 255).round()),
               rangeThumbShape: const RoundRangeSliderThumbShape(
@@ -237,17 +238,17 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
       children: [
         Text(
           'Questions',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 4),
         Text(
           '$_questionCount questions',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         SliderTheme(
           data: SliderTheme.of(context).copyWith(
             activeTrackColor: AppColors.primary,
-            inactiveTrackColor: AppColors.trackDark,
+            inactiveTrackColor: context.palette.track,
             thumbColor: AppColors.primary,
             overlayColor: AppColors.primary.withAlpha((0.2 * 255).round()),
           ),
@@ -271,7 +272,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           loading: () => Text(
             'Checking availability…',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           error: (e, _) => Text(
@@ -288,7 +289,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
             final base = Text(
               '$available questions available for $subjectName, $_yearFrom–$_yearTo',
               style: AppTheme.caption.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             );
             if (available >= _questionCount) return base;
@@ -329,17 +330,17 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
               child: Text(
                 'Timer',
                 style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
             if (isGuest)
-              const Tooltip(
+              Tooltip(
                 message: 'Sign in to enable the timer.',
                 child: Icon(
                   Icons.lock_outline,
                   size: 18,
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               )
             else
@@ -354,17 +355,17 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         if (!_timerEnabled)
           Text(
             'Untimed',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
           )
         else ...[
           Text(
             '$_timerMinutes minutes',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
           ),
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
               activeTrackColor: AppColors.primary,
-              inactiveTrackColor: AppColors.trackDark,
+              inactiveTrackColor: context.palette.track,
               thumbColor: AppColors.primary,
               overlayColor: AppColors.primary.withAlpha((0.2 * 255).round()),
             ),
@@ -382,7 +383,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           Text(
             '~${(_questionCount * _minutesPerQuestionEstimate).round()} min at $_minutesPerQuestionEstimate min/question',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],
@@ -396,7 +397,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         Expanded(
           child: Text(
             'Shuffle questions',
-            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
           ),
         ),
         Switch(

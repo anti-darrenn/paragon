@@ -3,8 +3,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../progress/mastery.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// The mastery circle that sits at the right-hand end of a topic row.
 ///
@@ -54,7 +54,7 @@ class MasteryCircle extends StatelessWidget {
         painter: _MasteryCirclePainter(
           fraction: level.ringFraction,
           accent: accent.withAlpha((_accentOpacity * 255).round()),
-          track: AppColors.borderDark,
+          track: context.palette.border,
           // Only the top level fills the disc. That reserves one
           // unmistakable state for "done with this", which is the whole
           // point of having levels above proficient.
@@ -67,7 +67,7 @@ class MasteryCircle extends StatelessWidget {
                   Icons.check_rounded,
                   size: size * 0.58,
                   color: level == MasteryLevel.mastered
-                      ? AppColors.backgroundDark
+                      ? context.palette.background
                       : accent,
                 ),
               )
@@ -119,7 +119,7 @@ class MasteryRing extends StatelessWidget {
           painter: _MasteryCirclePainter(
             fraction: value,
             accent: accent,
-            track: AppColors.borderDark,
+            track: context.palette.border,
             filled: false,
             strokeWidth: size < 40 ? 3 : 4,
           ),
@@ -128,8 +128,8 @@ class MasteryRing extends StatelessWidget {
               label ?? '$percent%',
               style: AppTheme.caption.copyWith(
                 color: value == 0
-                    ? AppColors.textSecondaryDark
-                    : AppColors.textPrimaryDark,
+                    ? context.palette.textSecondary
+                    : context.palette.textPrimary,
                 fontWeight: FontWeight.w700,
                 fontSize: size * 0.24,
               ),

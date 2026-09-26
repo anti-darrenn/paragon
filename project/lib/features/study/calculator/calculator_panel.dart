@@ -7,6 +7,7 @@ import '../../../core/theme/app_theme.dart';
 import 'calculator_engine.dart';
 import 'calculator_provider.dart';
 import 'calculator_state.dart';
+import '../../../core/theme/app_palette.dart';
 
 enum _Kind { digit, operator, function, action, equals }
 
@@ -198,14 +199,14 @@ class _Display extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final indicator = AppTheme.caption.copyWith(
-      color: AppColors.textSecondaryDark,
+      color: context.palette.textSecondary,
     );
     final isError = state.result is CalcError;
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 6, 10, 8),
       decoration: BoxDecoration(
-        color: AppColors.backgroundDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.background,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -244,7 +245,7 @@ class _Display extends StatelessWidget {
                 state.expression,
                 key: const ValueKey('calc-expression'),
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                   height: 1.4,
                 ),
               ),
@@ -262,7 +263,7 @@ class _Display extends StatelessWidget {
                   style: AppTheme.heading2.copyWith(
                     color: isError
                         ? AppColors.wrong
-                        : AppColors.textPrimaryDark,
+                        : context.palette.textPrimary,
                     fontSize: 24,
                   ),
                 ),
@@ -286,11 +287,14 @@ class _Key extends StatelessWidget {
     final shifted = shift && spec.shiftLabel != null;
     final label = shifted ? spec.shiftLabel! : spec.label;
     final (Color fill, Color ink) = switch (spec.kind) {
-      _Kind.digit => (AppColors.trackDark, AppColors.textPrimaryDark),
-      _Kind.operator => (AppColors.trackDark, AppColors.primary),
-      _Kind.function => (AppColors.backgroundDark, AppColors.textPrimaryDark),
-      _Kind.action => (AppColors.backgroundDark, AppColors.wrong),
-      _Kind.equals => (AppColors.primary, AppColors.backgroundDark),
+      _Kind.digit => (context.palette.track, context.palette.textPrimary),
+      _Kind.operator => (context.palette.track, AppColors.primary),
+      _Kind.function => (
+        context.palette.background,
+        context.palette.textPrimary,
+      ),
+      _Kind.action => (context.palette.background, AppColors.wrong),
+      _Kind.equals => (AppColors.primary, context.palette.background),
     };
     final active = spec.key == CalcKey.shift && shift;
     final big =
@@ -302,7 +306,7 @@ class _Key extends StatelessWidget {
       child: Material(
         color: active ? AppColors.primary : fill,
         shape: RoundedRectangleBorder(
-          side: const BorderSide(color: AppColors.borderDark),
+          side: BorderSide(color: context.palette.border),
           borderRadius: BorderRadius.circular(8),
         ),
         child: InkWell(
@@ -318,7 +322,7 @@ class _Key extends StatelessWidget {
                   label,
                   style: (big ? AppTheme.heading3 : AppTheme.btnLabel).copyWith(
                     color: active
-                        ? AppColors.backgroundDark
+                        ? context.palette.background
                         : shifted
                         ? AppColors.primary
                         : ink,

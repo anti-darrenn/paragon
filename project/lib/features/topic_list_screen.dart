@@ -6,6 +6,7 @@ import '../core/models/topic.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/load_error.dart';
+import '../core/theme/app_palette.dart';
 
 class TopicListScreen extends ConsumerWidget {
   final String subjectId;
@@ -61,9 +62,9 @@ class _TopicTile extends StatelessWidget {
       onTap: () => context.push('$_basePath/learn'),
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.surfaceDark,
+          color: context.palette.surface,
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: AppColors.borderDark),
+          border: Border.all(color: context.palette.border),
         ),
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -72,14 +73,14 @@ class _TopicTile extends StatelessWidget {
             Text(
               topic.name,
               style: AppTheme.heading3.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
               ),
             ),
             const SizedBox(height: 4),
             Text(
               '${topic.questionCount} questions',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             const SizedBox(height: 16),

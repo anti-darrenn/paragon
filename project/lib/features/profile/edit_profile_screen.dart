@@ -10,6 +10,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/widgets/user_avatar.dart';
 import '../onboarding/onboarding_scaffold.dart';
 import 'avatar_picker.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Edit profile — `/settings/name`: avatar, display name and bio.
 ///
@@ -75,7 +76,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
     );
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Edit profile')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -113,7 +114,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       'What Paragon calls you. Not unique; change it whenever '
                       'you like.',
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 22),
@@ -131,7 +132,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                       'Only you can see it. ${_bio.text.trim().length}'
                       '/$kBioMaxLength',
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     if (_error != null) ...[

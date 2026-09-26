@@ -9,6 +9,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'delete_account.dart';
 import 'security_screen.dart' show formatDay;
+import '../../core/theme/app_palette.dart';
 
 /// `/account/deleting` — where the router holds an account that is
 /// scheduled for deletion. Three ways out: restore it, delete it now, or
@@ -68,7 +69,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
         : null;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -87,7 +88,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                   Text(
                     'Your account is set to be deleted',
                     style: AppTheme.heading1.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -99,7 +100,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                               'practice history. Until then, nothing has been '
                               'removed.',
                     style: AppTheme.bodyLg.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                   if (_message != null) ...[
@@ -146,7 +147,7 @@ class _DeletingScreenState extends ConsumerState<DeletingScreen> {
                     child: Text(
                       'Sign out',
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ),

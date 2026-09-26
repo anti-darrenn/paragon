@@ -9,6 +9,7 @@ import '../../core/repositories/user_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'delete_account.dart';
+import '../../core/theme/app_palette.dart';
 
 /// `/legal/accept` — the terms changed; accept to carry on.
 ///
@@ -47,15 +48,15 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
     final sure = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Delete your account now?',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: Text(
           'Your account and your entire practice history are deleted '
           'immediately. This cannot be undone.',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         actions: [
           TextButton(
@@ -63,7 +64,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -93,7 +94,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
         ref.watch(userDataProvider).asData?.value?['legalVersion'] != null;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -108,7 +109,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                         ? 'We have updated our terms'
                         : 'Please review our terms',
                     style: AppTheme.heading1.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -116,7 +117,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                     'Our Terms of Service and Privacy Policy were updated on '
                     '$legalLastUpdated. What changed:',
                     style: AppTheme.bodyLg.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                   const SizedBox(height: 14),
@@ -126,7 +127,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                       child: Text(
                         '•  $change',
                         style: AppTheme.bodyMd.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                         ),
                       ),
                     ),
@@ -174,7 +175,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                     'account and everything in it.',
                     textAlign: TextAlign.center,
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                   Row(
@@ -187,7 +188,7 @@ class _LegalAcceptScreenState extends ConsumerState<LegalAcceptScreen> {
                         child: Text(
                           'Sign out',
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.textSecondaryDark,
+                            color: context.palette.textSecondary,
                           ),
                         ),
                       ),

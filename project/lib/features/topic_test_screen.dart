@@ -19,6 +19,7 @@ import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import 'lesson/lesson_nudge.dart';
+import '../core/theme/app_palette.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -166,7 +167,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     final leave = await showDialog<bool>(
       context: context,
       builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: const Text('Leave the test?'),
         content: const Text("Your answers so far won't be saved."),
         actions: [
@@ -315,7 +316,7 @@ class _Questions extends StatelessWidget {
         children: [
           LinearProgressIndicator(
             value: answeredCount / questions.length,
-            backgroundColor: AppColors.trackDark,
+            backgroundColor: context.palette.track,
             valueColor: const AlwaysStoppedAnimation<Color>(
               AppColors.secondary,
             ),
@@ -327,14 +328,14 @@ class _Questions extends StatelessWidget {
               Text(
                 'Question ${index + 1} of ${questions.length}',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
               const Spacer(),
               Text(
                 '$answeredCount answered',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ],
@@ -345,7 +346,7 @@ class _Questions extends StatelessWidget {
           Text(
             'Score $kTopicTestPassPercent% or more to unlock drill practice. '
             'No feedback until the end. Unlimited retakes.',
-            style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
           ),
           if (isGuest) ...[
             const SizedBox(height: 12),
@@ -356,7 +357,7 @@ class _Questions extends StatelessWidget {
           FullLatexView(
             latex: q.text,
             textStyle: AppTheme.bodyLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -373,7 +374,7 @@ class _Questions extends StatelessWidget {
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: isChosen ? AppColors.secondary : Colors.white24,
+                    color: isChosen ? AppColors.secondary : context.palette.outline,
                     width: 1.5,
                   ),
                   borderRadius: BorderRadius.circular(10),
@@ -385,7 +386,7 @@ class _Questions extends StatelessWidget {
                   text: q.options[i],
                   useLightRenderer: true,
                   style: TextStyle(
-                    color: isChosen ? Colors.white : Colors.white70,
+                    color: isChosen ? Colors.white : context.palette.onHigh,
                     fontSize: 15,
                   ),
                 ),
@@ -400,7 +401,7 @@ class _Questions extends StatelessWidget {
                 OutlinedButton(
                   onPressed: () => onIndex(index - 1),
                   style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: AppColors.borderDark),
+                    side: BorderSide(color: context.palette.border),
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
                       vertical: 14,
@@ -409,7 +410,7 @@ class _Questions extends StatelessWidget {
                   child: Text(
                     'Back',
                     style: AppTheme.btnLabel.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                 ),
@@ -503,14 +504,14 @@ class _Result extends StatelessWidget {
             '$correct of $total correct',
             textAlign: TextAlign.center,
             style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           const SizedBox(height: 20),
           Text(
             passed ? 'Passed — drill unlocked' : 'Not passed yet',
             textAlign: TextAlign.center,
-            style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
           ),
           const SizedBox(height: 8),
           Text(
@@ -525,7 +526,7 @@ class _Result extends StatelessWidget {
                       'time.',
             textAlign: TextAlign.center,
             style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
 
@@ -604,10 +605,10 @@ class _EmptyBank extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
+          Icon(
             Icons.inbox_outlined,
             size: 40,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           const SizedBox(height: 14),
           Text(
@@ -615,7 +616,7 @@ class _EmptyBank extends StatelessWidget {
             'there is no test to take.',
             textAlign: TextAlign.center,
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           const SizedBox(height: 20),

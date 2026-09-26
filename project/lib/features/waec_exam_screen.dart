@@ -16,6 +16,7 @@ import '../core/widgets/report_problem_button.dart';
 import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
+import '../core/theme/app_palette.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -213,19 +214,22 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text('Exit exam?', style: TextStyle(color: Colors.white)),
-        content: const Text(
+        title: Text(
+          'Exit exam?',
+          style: TextStyle(color: context.palette.textStrong),
+        ),
+        content: Text(
           "Your progress will be lost and this exam won't be saved.",
-          style: TextStyle(color: Colors.white70),
+          style: TextStyle(color: context.palette.onHigh),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
+            child: Text(
               'Keep Going',
-              style: TextStyle(color: Colors.white54),
+              style: TextStyle(color: context.palette.onMedium),
             ),
           ),
           TextButton(
@@ -252,24 +256,24 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text(
+        title: Text(
           'Submit Exam?',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: context.palette.textStrong),
         ),
         content: Text(
           unanswered > 0
               ? 'You have $unanswered unanswered question${unanswered > 1 ? 's' : ''}. Are you sure?'
               : 'Submit your answers now?',
-          style: const TextStyle(color: Colors.white70),
+          style: TextStyle(color: context.palette.onHigh),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text(
+            child: Text(
               'Cancel',
-              style: TextStyle(color: Colors.white54),
+              style: TextStyle(color: context.palette.onMedium),
             ),
           ),
           ElevatedButton(
@@ -292,14 +296,14 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
 
   Widget _timerDisplay(WaecExamSessionData session) {
     if (!session.timerEnabled) {
-      return const Row(
+      return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.timer_outlined, size: 16, color: Colors.white38),
+          Icon(Icons.timer_outlined, size: 16, color: context.palette.onLow),
           SizedBox(width: 4),
           Text(
             'Untimed',
-            style: TextStyle(color: Colors.white38, fontSize: 13),
+            style: TextStyle(color: context.palette.onLow, fontSize: 13),
           ),
         ],
       );
@@ -362,10 +366,10 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
         ],
       ),
       body: questions.isEmpty
-          ? const Center(
+          ? Center(
               child: Text(
                 'No WAEC questions available for this subject.',
-                style: TextStyle(color: Colors.white54),
+                style: TextStyle(color: context.palette.onMedium),
               ),
             )
           : _examSubmitted
@@ -412,7 +416,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
         // Progress bar
         LinearProgressIndicator(
           value: (_currentIndex + 1) / questions.length,
-          backgroundColor: AppColors.trackDark,
+          backgroundColor: context.palette.track,
           valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
           minHeight: 3,
         ),
@@ -441,7 +445,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                         ? AppColors.primary
                         : isAnswered
                         ? AppColors.primary.withAlpha((0.25 * 255).round())
-                        : AppColors.trackDark,
+                        : context.palette.track,
                     border: isActive
                         ? null
                         : Border.all(
@@ -449,7 +453,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                 ? AppColors.primary.withAlpha(
                                     (0.5 * 255).round(),
                                   )
-                                : AppColors.borderDark,
+                                : context.palette.border,
                           ),
                   ),
                   child: Text(
@@ -457,9 +461,11 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w600,
-                      color: isActive || isAnswered
+                      color: isActive
                           ? Colors.white
-                          : Colors.white38,
+                          : isAnswered
+                          ? context.palette.textStrong
+                          : context.palette.onLow,
                     ),
                   ),
                 ),
@@ -479,9 +485,9 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: AppColors.surfaceDark,
+                    color: context.palette.surface,
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: AppColors.borderDark),
+                    border: Border.all(color: context.palette.border),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -491,16 +497,16 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                           padding: const EdgeInsets.only(bottom: 8),
                           child: Text(
                             'WAEC ${q.year}',
-                            style: const TextStyle(
-                              color: Colors.white38,
+                            style: TextStyle(
+                              color: context.palette.onLow,
                               fontSize: 12,
                             ),
                           ),
                         ),
                       FullLatexView(
                         latex: q.text,
-                        textStyle: const TextStyle(
-                          color: Colors.white,
+                        textStyle: TextStyle(
+                          color: context.palette.textStrong,
                           fontSize: 16,
                           height: 1.6,
                         ),
@@ -524,12 +530,12 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                         decoration: BoxDecoration(
                           color: isSelected
                               ? AppColors.primary.withAlpha((0.1 * 255).round())
-                              : AppColors.surfaceDark,
+                              : context.palette.surface,
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                             color: isSelected
                                 ? AppColors.primary
-                                : AppColors.borderDark,
+                                : context.palette.border,
                             width: 1.5,
                           ),
                         ),
@@ -544,14 +550,14 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                 shape: BoxShape.circle,
                                 color: isSelected
                                     ? AppColors.primary
-                                    : AppColors.trackDark,
+                                    : context.palette.track,
                               ),
                               child: Text(
                                 String.fromCharCode(65 + i),
                                 style: TextStyle(
                                   color: isSelected
                                       ? Colors.white
-                                      : Colors.white54,
+                                      : context.palette.onMedium,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 13,
                                 ),
@@ -564,8 +570,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                                 useLightRenderer: true,
                                 style: TextStyle(
                                   color: isSelected
-                                      ? Colors.white
-                                      : Colors.white70,
+                                      ? context.palette.textStrong
+                                      : context.palette.onHigh,
                                   fontSize: 15,
                                 ),
                               ),
@@ -603,15 +609,15 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                     child: OutlinedButton(
                       onPressed: () => _goToQuestion(_currentIndex - 1),
                       style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: AppColors.borderDark),
+                        side: BorderSide(color: context.palette.border),
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-                      child: const Text(
+                      child: Text(
                         '← Prev',
-                        style: TextStyle(color: Colors.white70),
+                        style: TextStyle(color: context.palette.onHigh),
                       ),
                     ),
                   ),
@@ -692,7 +698,7 @@ class _ResultsView extends StatelessWidget {
           Text(
             'Exam Complete',
             style: TextStyle(
-              color: Colors.white,
+              color: context.palette.textStrong,
               fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
@@ -731,10 +737,13 @@ class _ResultsView extends StatelessWidget {
                     size: 18,
                   ),
                   const SizedBox(width: 10),
-                  const Expanded(
+                  Expanded(
                     child: Text(
                       "Couldn't save your results.",
-                      style: TextStyle(color: Colors.white70, fontSize: 13),
+                      style: TextStyle(
+                        color: context.palette.onHigh,
+                        fontSize: 13,
+                      ),
                     ),
                   ),
                   TextButton(
@@ -757,15 +766,15 @@ class _ResultsView extends StatelessWidget {
             child: OutlinedButton(
               onPressed: onReview,
               style: OutlinedButton.styleFrom(
-                side: const BorderSide(color: AppColors.borderDark),
+                side: BorderSide(color: context.palette.border),
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              child: const Text(
+              child: Text(
                 'Review Answers',
-                style: TextStyle(color: Colors.white70),
+                style: TextStyle(color: context.palette.onHigh),
               ),
             ),
           ),

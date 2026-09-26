@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/onboarding/onboarding_step.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Shared chrome for the onboarding funnel.
 ///
@@ -50,7 +51,7 @@ class OnboardingScaffold extends StatelessWidget {
     return PopScope(
       canPop: false,
       child: Scaffold(
-        backgroundColor: AppColors.backgroundDark,
+        backgroundColor: context.palette.background,
         body: SafeArea(
           child: Center(
             child: SingleChildScrollView(
@@ -70,7 +71,7 @@ class OnboardingScaffold extends StatelessWidget {
                     Text(
                       title,
                       style: AppTheme.displayLg.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                         fontSize: 30,
                       ),
                     ),
@@ -78,7 +79,7 @@ class OnboardingScaffold extends StatelessWidget {
                     Text(
                       subtitle,
                       style: AppTheme.bodyLg.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 28),
@@ -116,26 +117,26 @@ class OnboardingScaffold extends StatelessWidget {
                         onPressed: isLoading ? null : onPrimary,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.primary,
-                          disabledBackgroundColor: AppColors.trackDark,
+                          disabledBackgroundColor: context.palette.track,
                           elevation: 0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
                         child: isLoading
-                            ? const SizedBox(
+                            ? SizedBox(
                                 height: 20,
                                 width: 20,
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2,
-                                  color: AppColors.textSecondaryDark,
+                                  color: context.palette.textSecondary,
                                 ),
                               )
                             : Text(
                                 primaryLabel,
                                 style: AppTheme.btnLabel.copyWith(
                                   color: onPrimary == null
-                                      ? AppColors.textSecondaryDark
+                                      ? context.palette.textSecondary
                                       : Colors.white,
                                   fontSize: 15,
                                 ),
@@ -150,7 +151,7 @@ class OnboardingScaffold extends StatelessWidget {
                         child: Text(
                           skipLabel,
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.textSecondaryDark,
+                            color: context.palette.textSecondary,
                           ),
                         ),
                       ),
@@ -182,7 +183,7 @@ class _StepIndicator extends StatelessWidget {
         Text(
           'Step $current of ${OnboardingStep.totalSteps}',
           style: AppTheme.caption.copyWith(
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
             letterSpacing: 0.6,
           ),
         ),
@@ -197,7 +198,7 @@ class _StepIndicator extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: i <= current
                         ? AppColors.primary
-                        : AppColors.trackDark,
+                        : context.palette.track,
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
@@ -249,7 +250,7 @@ class OnboardingTextField extends StatelessWidget {
         if (label != null) ...[
           Text(
             label!,
-            style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.label.copyWith(color: context.palette.textSecondary),
           ),
           const SizedBox(height: 8),
         ],
@@ -262,33 +263,33 @@ class OnboardingTextField extends StatelessWidget {
           keyboardType: keyboardType,
           onSubmitted: onSubmitted,
           onChanged: onChanged,
-          style: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
           decoration: InputDecoration(
             hintText: hintText,
             counterText: '',
             prefixText: prefixText,
             prefixStyle: AppTheme.bodyLg.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
             suffixIcon: suffix,
             hintStyle: AppTheme.bodyLg.copyWith(
-              color: AppColors.textSecondaryDark.withAlpha(
+              color: context.palette.textSecondary.withAlpha(
                 (0.6 * 255).round(),
               ),
             ),
             filled: true,
-            fillColor: AppColors.surfaceDark,
+            fillColor: context.palette.surface,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 16,
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.borderDark),
+              borderSide: BorderSide(color: context.palette.border),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.borderDark),
+              borderSide: BorderSide(color: context.palette.border),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),

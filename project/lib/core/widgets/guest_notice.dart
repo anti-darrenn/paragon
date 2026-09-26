@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../auth/guest_limits.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// Tells a guest that what they are looking at is not being kept.
 ///
@@ -46,7 +47,7 @@ class GuestNotice extends StatelessWidget {
             child: Text(
               message ?? GuestLimits.progressNotKeptMessage,
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),

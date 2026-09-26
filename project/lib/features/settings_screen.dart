@@ -11,6 +11,7 @@ import '../core/theme/app_theme.dart';
 import '../core/widgets/user_avatar.dart';
 import 'account/account_help.dart';
 import 'account/delete_account.dart';
+import '../core/theme/app_palette.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -33,7 +34,7 @@ class SettingsScreen extends ConsumerWidget {
     final displayName = (userData?['displayName'] as String?) ?? '';
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Settings')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -210,7 +211,7 @@ class SettingsScreen extends ConsumerWidget {
                           await FirebaseAuth.instance.signOut();
                         },
                         style: OutlinedButton.styleFrom(
-                          side: const BorderSide(color: AppColors.borderDark),
+                          side: BorderSide(color: context.palette.border),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -218,7 +219,7 @@ class SettingsScreen extends ConsumerWidget {
                         child: Text(
                           'Sign out',
                           style: AppTheme.btnLabel.copyWith(
-                            color: AppColors.textPrimaryDark,
+                            color: context.palette.textPrimary,
                           ),
                         ),
                       ),
@@ -269,10 +270,10 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
     final choice = await showDialog<_DeleteChoice>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Delete your account?',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: Text(
           isGuest
@@ -286,7 +287,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
                     'Your username, and any you used before it, stay '
                     'reserved and cannot be claimed by anyone else, '
                     'including you.',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         actions: [
           TextButton(
@@ -294,7 +295,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -361,7 +362,7 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           Text(
             'Delete account',
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -369,7 +370,9 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           Text(
             'Removes your account and every question you have answered. '
             'You get 30 days to change your mind, or it can go at once.',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           if (_message != null) ...[
             const SizedBox(height: 12),
@@ -420,8 +423,8 @@ class _Card extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(children: children),
@@ -453,7 +456,7 @@ class _ProfileHeader extends StatelessWidget {
                   Text(
                     name,
                     style: AppTheme.bodyLg.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -461,15 +464,15 @@ class _ProfileHeader extends StatelessWidget {
                   Text(
                     username.isEmpty ? 'View your profile' : '@$username',
                     style: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                 ],
               ),
             ),
-            const Icon(
+            Icon(
               Icons.chevron_right_rounded,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ],
         ),
@@ -483,7 +486,7 @@ class _Divider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) =>
-      const Divider(height: 1, thickness: 1, color: AppColors.borderDark);
+      Divider(height: 1, thickness: 1, color: context.palette.border);
 }
 
 class _Row extends StatelessWidget {
@@ -507,7 +510,7 @@ class _Row extends StatelessWidget {
                 Text(
                   label,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
                 if (hint != null) ...[
@@ -515,7 +518,7 @@ class _Row extends StatelessWidget {
                   Text(
                     hint!,
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.textSecondaryDark.withAlpha(
+                      color: context.palette.textSecondary.withAlpha(
                         (0.7 * 255).round(),
                       ),
                     ),
@@ -530,7 +533,7 @@ class _Row extends StatelessWidget {
               value,
               textAlign: TextAlign.right,
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -569,9 +572,9 @@ class _EditableRow extends StatelessWidget {
             Expanded(
               child: _Row(label: label, value: value, hint: hint),
             ),
-            const Icon(
+            Icon(
               Icons.chevron_right_rounded,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ],
         ),
@@ -598,14 +601,14 @@ class _LinkRow extends StatelessWidget {
               child: Text(
                 label,
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
-            const Icon(
+            Icon(
               Icons.chevron_right_rounded,
               size: 20,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ],
         ),
@@ -629,8 +632,8 @@ class _AnalyticsToggle extends ConsumerWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
@@ -643,7 +646,7 @@ class _AnalyticsToggle extends ConsumerWidget {
                 Text(
                   'Share usage data',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
                 const SizedBox(height: 2),
@@ -651,7 +654,7 @@ class _AnalyticsToggle extends ConsumerWidget {
                   'Anonymous statistics about which topics get practised. '
                   'Never your name, answers or anything you typed.',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ],

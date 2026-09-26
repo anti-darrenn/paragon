@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'onboarding_scaffold.dart';
+import '../../core/theme/app_palette.dart';
 
 /// The optional-profile form, shared by the onboarding step that first
 /// asks for it and the settings screen that edits it afterwards.
@@ -178,38 +179,40 @@ class _Dropdown extends StatelessWidget {
       children: [
         Text(
           label,
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.label.copyWith(color: context.palette.textSecondary),
         ),
         const SizedBox(height: 8),
         DropdownButtonFormField<String>(
           initialValue: value,
           isExpanded: true,
-          dropdownColor: AppColors.surfaceDark,
+          dropdownColor: context.palette.surface,
           hint: Text(
             'Optional',
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textSecondaryDark.withAlpha((0.6 * 255).round()),
+              color: context.palette.textSecondary.withAlpha(
+                (0.6 * 255).round(),
+              ),
             ),
           ),
-          style: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
-          icon: const Icon(
+          style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
+          icon: Icon(
             Icons.keyboard_arrow_down_rounded,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           decoration: InputDecoration(
             filled: true,
-            fillColor: AppColors.surfaceDark,
+            fillColor: context.palette.surface,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 16,
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.borderDark),
+              borderSide: BorderSide(color: context.palette.border),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: AppColors.borderDark),
+              borderSide: BorderSide(color: context.palette.border),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),

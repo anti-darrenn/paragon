@@ -6,6 +6,7 @@ import '../../core/onboarding/onboarding_step.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'onboarding_scaffold.dart';
+import '../../core/theme/app_palette.dart';
 
 enum UsernameAvailability { unknown, checking, free, taken }
 
@@ -143,14 +144,14 @@ class _UsernameInputState extends State<UsernameInput> {
   }
 
   Widget? _suffixIcon() => switch (_c.availability) {
-    UsernameAvailability.checking => const Padding(
+    UsernameAvailability.checking => Padding(
       padding: EdgeInsets.all(14),
       child: SizedBox(
         height: 16,
         width: 16,
         child: CircularProgressIndicator(
           strokeWidth: 2,
-          color: AppColors.textSecondaryDark,
+          color: context.palette.textSecondary,
         ),
       ),
     ),
@@ -192,7 +193,7 @@ class _UsernameInputState extends State<UsernameInput> {
             '${UsernameRules.minLength}–${UsernameRules.maxLength} characters. '
             'Letters, numbers and underscores.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           if (_c.availability == UsernameAvailability.free) ...[

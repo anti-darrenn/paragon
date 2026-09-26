@@ -18,6 +18,7 @@ import 'admin_resource_editor_screen.dart';
 import 'studio/review_panels.dart';
 import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
+import '../../core/theme/app_palette.dart';
 
 /// `/admin` — the content studio's home.
 ///
@@ -55,7 +56,7 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
     final subjectId = _subjectId ?? subjects.firstOrNull?.id;
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(
         title: const Text('Content studio'),
         actions: [
@@ -82,7 +83,7 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                           ? 'You can review and publish. Writers submit items to you; nothing reaches students until it is published.'
                           : 'Write and submit items for review. A reviewer publishes them; students see nothing before that.',
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                     const SizedBox(height: 24),
@@ -112,14 +113,14 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                           child: Text(
                             'Course map',
                             style: AppTheme.heading3.copyWith(
-                              color: AppColors.textPrimaryDark,
+                              color: context.palette.textPrimary,
                             ),
                           ),
                         ),
                         if (subjects.isNotEmpty)
                           DropdownButton<String>(
                             value: subjectId,
-                            dropdownColor: AppColors.surfaceDark,
+                            dropdownColor: context.palette.surface,
                             underline: const SizedBox.shrink(),
                             items: [
                               for (final s in subjects)
@@ -169,7 +170,7 @@ class _StatusQueue extends ConsumerWidget {
       children: [
         Text(
           title,
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 12),
         items.when(
@@ -182,7 +183,7 @@ class _StatusQueue extends ConsumerWidget {
               ? Text(
                   empty,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 )
               : ResourceList(resources: list, showAuthor: true),
@@ -269,7 +270,9 @@ class _CourseMap extends ConsumerWidget {
           const SizedBox(height: 20),
           Text(
             unit.name.toUpperCase(),
-            style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.label.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 8),
           _UnitTopics(unitId: unit.id, byTopic: byTopic),
@@ -342,7 +345,7 @@ class _MapSummaryState extends ConsumerState<_MapSummary> {
       children: [
         Text(
           '$published published · $started with any content',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
         ),
         if (widget.canRebuild)
           TextButton.icon(
@@ -400,7 +403,7 @@ class _TopicChip extends StatelessWidget {
         width: 210,
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: AppColors.surfaceDark,
+          color: context.palette.surface,
           border: Border.all(color: state.colour.withAlpha(140)),
           borderRadius: BorderRadius.circular(10),
         ),
@@ -411,7 +414,9 @@ class _TopicChip extends StatelessWidget {
               topic.name,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
-              style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textPrimary,
+              ),
             ),
             const SizedBox(height: 6),
             Text(
@@ -448,14 +453,14 @@ class ResourceList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
         children: [
           for (var i = 0; i < resources.length; i++) ...[
-            if (i > 0) const Divider(height: 1, color: AppColors.borderDark),
+            if (i > 0) Divider(height: 1, color: context.palette.border),
             ResourceRow(resource: resources[i], showAuthor: showAuthor),
           ],
         ],
@@ -495,10 +500,10 @@ class ResourceRow extends StatelessWidget {
               LearnResourceType.video => Icons.play_circle_outline_rounded,
               LearnResourceType.exercise => Icons.edit_note_rounded,
               _ => Icons.article_outlined,
-            }, color: AppColors.textSecondaryDark),
+            }, color: context.palette.textSecondary),
       title: Text(
         resource.title.isEmpty ? '(untitled)' : resource.title,
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
       ),
       subtitle: Text(
         [
@@ -508,7 +513,7 @@ class ResourceRow extends StatelessWidget {
             'not ready: ${resource.type == LearnResourceType.video ? 'no YouTube link' : 'no body'}',
         ].join(' · '),
         style: AppTheme.caption.copyWith(
-          color: needsWork ? AppColors.warning : AppColors.textSecondaryDark,
+          color: needsWork ? AppColors.warning : context.palette.textSecondary,
         ),
       ),
       trailing: trailing ?? StatusBadge(status: resource.status),
@@ -553,7 +558,7 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
   Widget build(BuildContext context) {
     final queue = ref.watch(adminFlagQueueProvider);
     final secondary = AppTheme.bodyMd.copyWith(
-      color: AppColors.textSecondaryDark,
+      color: context.palette.textSecondary,
     );
 
     return Column(
@@ -565,7 +570,7 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
               child: Text(
                 'Problem reports',
                 style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
@@ -594,15 +599,15 @@ class _FlagQueueState extends ConsumerState<_FlagQueue> {
             }
             return Container(
               decoration: BoxDecoration(
-                color: AppColors.surfaceDark,
-                border: Border.all(color: AppColors.borderDark),
+                color: context.palette.surface,
+                border: Border.all(color: context.palette.border),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
                 children: [
                   for (var i = 0; i < shown.length; i++) ...[
                     if (i > 0)
-                      const Divider(height: 1, color: AppColors.borderDark),
+                      Divider(height: 1, color: context.palette.border),
                     _FlagRow(row: shown[i]),
                   ],
                 ],
@@ -643,14 +648,14 @@ class _FlagRow extends StatelessWidget {
         stem,
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
       ),
       subtitle: Text(
         [
           if (reasons.isNotEmpty) reasons else 'Resolved',
           if (q?.isGenerated ?? false) 'generated',
         ].join(' · '),
-        style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
       ),
     );
   }
@@ -679,7 +684,7 @@ class _LessonReports extends ConsumerWidget {
       children: [
         Text(
           'Lesson reports',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 12),
         reports.when(
@@ -692,13 +697,13 @@ class _LessonReports extends ConsumerWidget {
               ? Text(
                   'No open lesson reports.',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 )
               : Container(
                   decoration: BoxDecoration(
-                    color: AppColors.surfaceDark,
-                    border: Border.all(color: AppColors.borderDark),
+                    color: context.palette.surface,
+                    border: Border.all(color: context.palette.border),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Column(
@@ -715,13 +720,13 @@ class _LessonReports extends ConsumerWidget {
                           title: Text(
                             r.reason.label,
                             style: AppTheme.bodyMd.copyWith(
-                              color: AppColors.textPrimaryDark,
+                              color: context.palette.textPrimary,
                             ),
                           ),
                           subtitle: Text(
                             r.resourceId,
                             style: AppTheme.caption.copyWith(
-                              color: AppColors.textSecondaryDark,
+                              color: context.palette.textSecondary,
                             ),
                           ),
                           trailing: Wrap(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 import 'math_text.dart';
+import '../theme/app_palette.dart';
 
 /// How one multiple-choice option currently reads.
 enum AnswerOptionState {
@@ -41,11 +42,11 @@ class AnswerOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (border, fg) = switch (state) {
-      AnswerOptionState.idle => (Colors.white24, Colors.white70),
+      AnswerOptionState.idle => (context.palette.outline, context.palette.onHigh),
       AnswerOptionState.selected => (AppColors.primary, Colors.white),
       AnswerOptionState.correct => (AppColors.correct, AppColors.correct),
       AnswerOptionState.wrong => (AppColors.wrong, AppColors.wrong),
-      AnswerOptionState.ruledOut => (Colors.white12, Colors.white38),
+      AnswerOptionState.ruledOut => (context.palette.outlineFaint, context.palette.onLow),
     };
     final verdict = switch (state) {
       AnswerOptionState.correct => ', correct',

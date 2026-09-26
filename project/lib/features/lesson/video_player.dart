@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 import '../../core/learn/watch_tracker.dart';
-import '../../core/theme/app_colors.dart';
+import '../../core/theme/app_palette.dart';
 
 /// A YouTube lesson video, and the only file that imports the player
 /// package — swapping players later means changing this file alone.
@@ -100,7 +100,7 @@ class _LessonVideoPlayerState extends State<LessonVideoPlayer> {
       borderRadius: BorderRadius.circular(12),
       child: YoutubePlayer(
         controller: _controller,
-        backgroundColor: AppColors.backgroundDark,
+        backgroundColor: context.palette.background,
         keepAlive: true,
       ),
     );

@@ -8,6 +8,7 @@ import '../article_view.dart';
 import '../full_latex_view.dart';
 import 'figure_block.dart';
 import 'interactive_blocks.dart';
+import '../../theme/app_palette.dart';
 
 /// Wraps a rendered top-level block — how features like highlights, notes
 /// and read-aloud mark up a block without editing the renderer. Receives
@@ -203,7 +204,7 @@ class CalloutBox extends StatelessWidget {
             FullLatexView(
               latex: title,
               textStyle: AppTheme.heading3.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
                 fontSize: (base.fontSize ?? 16) + 1,
               ),
             ),
@@ -241,7 +242,7 @@ class _GoDeeperViewState extends State<GoDeeperView> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: AppColors.borderDark),
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -258,7 +259,7 @@ class _GoDeeperViewState extends State<GoDeeperView> {
                     _open
                         ? Icons.expand_less_rounded
                         : Icons.expand_more_rounded,
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                   const SizedBox(width: 8),
                   Expanded(
@@ -316,12 +317,12 @@ class LessonTableView extends StatelessWidget {
       child: Table(
         defaultColumnWidth: const IntrinsicColumnWidth(),
         border: TableBorder.all(
-          color: AppColors.borderDark,
+          color: context.palette.border,
           borderRadius: BorderRadius.circular(8),
         ),
         children: [
           TableRow(
-            decoration: const BoxDecoration(color: AppColors.surfaceDark),
+            decoration: BoxDecoration(color: context.palette.surface),
             children: [
               for (var c = 0; c < block.header.length; c++)
                 _cell(block.header[c], block.align[c], headStyle),
@@ -353,7 +354,7 @@ class _InlineVideo extends StatelessWidget {
     if (id == null) {
       return Text(
         'This video is not available.',
-        style: base.copyWith(color: AppColors.textSecondaryDark),
+        style: base.copyWith(color: context.palette.textSecondary),
       );
     }
     return ClipRRect(

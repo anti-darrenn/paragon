@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// Page chrome for the course surfaces: a full-bleed top nav, and a
 /// max-width content column beneath it.
@@ -56,10 +57,10 @@ class AppTopNav extends StatelessWidget {
     final currentPath = GoRouterState.of(context).uri.path;
 
     return DecoratedBox(
-      decoration: const BoxDecoration(
-        color: AppColors.backgroundDark,
+      decoration: BoxDecoration(
+        color: context.palette.background,
         border: Border(
-          bottom: BorderSide(color: AppColors.borderDark, width: 1),
+          bottom: BorderSide(color: context.palette.border, width: 1),
         ),
       ),
       child: SafeArea(
@@ -164,8 +165,8 @@ class _NavLinkState extends State<_NavLink> {
     final color = widget.isActive
         ? AppColors.primary
         : _isHovered
-        ? AppColors.textPrimaryDark
-        : AppColors.textSecondaryDark;
+        ? context.palette.textPrimary
+        : context.palette.textSecondary;
 
     return MouseRegion(
       cursor: SystemMouseCursors.click,
@@ -263,7 +264,7 @@ class ParagonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       body: Column(
         children: [
           const AppTopNav(),
