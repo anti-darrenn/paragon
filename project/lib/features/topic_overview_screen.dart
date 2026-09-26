@@ -12,6 +12,7 @@ import '../core/theme/app_theme.dart';
 import '../core/widgets/app_top_nav.dart';
 import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
+import 'study/offline/save_offline_button.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -237,6 +238,13 @@ class _LessonList extends ConsumerWidget {
               completed.contains(resources[i].id),
             ),
           ],
+          SaveTopicOfflineButton(
+            topicId: topic.id,
+            topicName: topic.name,
+            subjectId: course.subjectId ?? '',
+            courseKey: course.key,
+            resources: resources,
+          ),
         ] else
           ..._placeholderRows(context, hasNotes),
 

@@ -106,6 +106,11 @@ class SettingsScreen extends ConsumerWidget {
                           label: 'Reading and data',
                           onTap: () => context.push('/settings/reading'),
                         ),
+                        const _Divider(),
+                        _LinkRow(
+                          label: 'Saved for offline',
+                          onTap: () => context.push('/settings/offline'),
+                        ),
                       ],
                     ),
                     const SizedBox(height: 20),

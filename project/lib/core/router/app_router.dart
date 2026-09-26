@@ -24,6 +24,7 @@ import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/settings/reading_settings_screen.dart';
+import 'package:paragon/features/study/offline/offline_topics_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
@@ -352,6 +353,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/reading',
         builder: (context, state) => const ReadingSettingsScreen(),
+      ),
+      // Topics saved for offline reading. Per device, like the above.
+      GoRoute(
+        path: '/settings/offline',
+        builder: (context, state) => const OfflineTopicsScreen(),
       ),
 
       // ── Admin ───────────────────────────────────────────────────────
