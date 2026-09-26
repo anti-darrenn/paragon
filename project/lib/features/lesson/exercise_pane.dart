@@ -14,6 +14,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/report_problem_button.dart';
+import '../study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 
 /// An in-lesson exercise: a short set of questions with immediate
 /// feedback, Khan-style. The rules live in [ExerciseSession].
@@ -236,7 +237,13 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
           if (resolved)
             Align(
               alignment: Alignment.centerLeft,
-              child: ReportProblemButton(questionId: q.id),
+              child: Wrap(
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  ReportProblemButton(questionId: q.id),
+                  QuestionBookmarkButton(question: q),
+                ],
+              ),
             ),
           Row(
             children: [

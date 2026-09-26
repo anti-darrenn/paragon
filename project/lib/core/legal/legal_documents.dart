@@ -132,6 +132,16 @@ const LegalDocument privacyPolicy = LegalDocument(
             'last did, and whether you have passed it. Passing is what '
             'unlocks drill practice for that topic, so this is kept for as '
             'long as your account exists. Only you can see it.',
+        'Your notes, highlights and bookmarks. When you highlight part of a '
+            'lesson, write a note on it, or save a lesson or a question, we '
+            'store what you wrote, the highlight colour, which lesson or '
+            'question it belongs to, a copy of the lesson text it was '
+            'written against (so the note still makes sense if the lesson '
+            'is later changed), and when. These are stored with your account '
+            'so they are on every device you sign in on, only you can see '
+            'them, and they are deleted when your account is deleted. If you '
+            'are browsing as a guest, they are kept only on your device, in '
+            'your browser, and are never sent to us.',
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',
@@ -212,7 +222,8 @@ const LegalDocument privacyPolicy = LegalDocument(
       paragraphs: [
         'We keep your account and practice history for as long as your '
             'account exists. If you ask us to delete your account, we delete '
-            'your account record and your practice history.',
+            'your account record, your practice history, and your notes, '
+            'highlights and bookmarks.',
         'Guest (anonymous) accounts are kept while they remain in use. We '
             'intend to delete unused guest accounts automatically; until '
             'that is in place, you can ask us to remove one.',
@@ -225,7 +236,8 @@ const LegalDocument privacyPolicy = LegalDocument(
             'delete it, or send you a copy. Email $contactEmail and we '
             'will respond.',
         'You can delete your account yourself from Settings. Deleting it '
-            'removes your account record and your practice history. You can '
+            'removes your account record, your practice history, and your '
+            'notes, highlights and bookmarks. You can '
             'also email us and we will do it for you.',
         'Your username is an exception we cannot undo: usernames are '
             'permanent and cannot be changed or released once chosen, '

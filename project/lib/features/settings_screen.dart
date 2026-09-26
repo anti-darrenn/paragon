@@ -106,6 +106,11 @@ class SettingsScreen extends ConsumerWidget {
                           label: 'Reading and data',
                           onTap: () => context.push('/settings/reading'),
                         ),
+                        const _Divider(),
+                        _LinkRow(
+                          label: 'Saved lessons, questions and notes',
+                          onTap: () => context.push('/saved'),
+                        ),
                       ],
                     ),
                     const SizedBox(height: 20),
