@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../repositories/user_repository.dart';
+import '../auth/staff_role.dart';
 
 final authStateProvider = StreamProvider<User?>((ref) {
   return FirebaseAuth.instance.authStateChanges();
@@ -53,14 +54,12 @@ final idTokenResultProvider = StreamProvider<IdTokenResult?>((ref) {
   );
 });
 
-/// Whether the signed-in account carries the `admin` custom claim.
-///
-/// This gates the admin **UI** only. What actually protects content is
-/// `isAdmin()` in `firestore.rules`, which reads the same claim
-/// server-side. False while the token is still loading.
-final isAdminProvider = Provider<bool>((ref) {
+/// The signed-in account's content-team role (writer, reviewer, admin), or
+/// [StaffRole.none]. UI gating only — the rules re-check the same claims.
+/// [StaffRole.none] while the token is still loading.
+final staffRoleProvider = Provider<StaffRole>((ref) {
   final result = ref.watch(idTokenResultProvider).asData?.value;
-  return result?.claims?['admin'] == true;
+  return StaffRole.fromClaims(result?.claims);
 });
 
 /// True while the current user is a guest (anonymous auth), false once

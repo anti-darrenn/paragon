@@ -10,6 +10,7 @@ import '../core/theme/app_theme.dart';
 import '../core/widgets/app_top_nav.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
+import 'study/cards/revision_cards_entry.dart';
 
 /// Course index for one subject — `/subject/:subjectKey/course`.
 ///
@@ -118,6 +119,9 @@ class _CourseBody extends StatelessWidget {
 
         const SizedBox(height: 16),
         _CourseMeta(course: course, accent: accent),
+
+        if (course.subjectId case final subjectId?)
+          RevisionCardsEntry(subjectId: subjectId),
 
         if (course.hasProgressToShow) ...[
           const SizedBox(height: 20),

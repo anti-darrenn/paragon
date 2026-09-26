@@ -50,21 +50,39 @@ class AdminResourceRepository {
   ///
   /// `notifiedAt` is left alone, so editing a draft that was already
   /// emailed about does not send a second email.
+  ///
+  /// The content as it stood before this save is kept in the resource's
+  /// `versions` subcollection, in the same batch, so any edit can be
+  /// undone from the studio's history.
   Future<void> save({
     required String topicId,
     required String resourceId,
     required ResourceDraft draft,
     required ResourceStatus status,
-  }) {
-    return _resources(topicId).doc(resourceId).update({
+    String? savedBy,
+  }) async {
+    final ref = _resources(topicId).doc(resourceId);
+    final before = (await ref.get()).data();
+    final batch = _db.batch();
+    if (before != null) {
+      batch.set(ref.collection('versions').doc(), {
+        for (final f in kResourceContentFields)
+          if (before.containsKey(f)) f: before[f],
+        'status': before['status'],
+        'savedAt': FieldValue.serverTimestamp(),
+        'savedBy': savedBy,
+      });
+    }
+    batch.update(ref, {
       ...draft.toFields(),
-      'status': status.name,
+      'status': status.value,
       // Tells `9_seed_resources.js` this resource now belongs to the
       // editor: without it, re-seeding would overwrite an in-app edit —
       // a YouTube link added to a seeded video — with the file's version.
       'editedInApp': true,
       'updatedAt': FieldValue.serverTimestamp(),
     });
+    await batch.commit();
   }
 
   /// One page of a topic's answerable questions, for pinning to an
@@ -119,6 +137,24 @@ class AdminResourceRepository {
     }
   }
 }
+
+/// The fields that make up a resource's content — what a version keeps
+/// and what approving a revision copies into the published item. Exactly
+/// the keys [ResourceDraft.toFields] writes; `order` is included for
+/// versions but never copied by a revision (the published item keeps its
+/// place).
+const kResourceContentFields = [
+  'type',
+  'title',
+  'order',
+  'body',
+  'youtubeId',
+  'durationSeconds',
+  'description',
+  'transcript',
+  'questionCount',
+  'questionIds',
+];
 
 /// What the editor's form holds for one resource, before it is saved.
 ///
@@ -258,17 +294,35 @@ final adminTopicResourcesProvider =
       return resources;
     });
 
-/// Every draft in every topic, oldest-updated last. A collection-group
-/// query, allowed only by the admin-only `/{path=**}/resources` rule and
-/// served by the collection-group `status` index.
-final adminDraftsProvider = FutureProvider<List<LearnResource>>((ref) async {
-  final snap = await FirebaseFirestore.instance
-      .collectionGroup('resources')
-      .where('status', isEqualTo: 'draft')
-      .get();
-  return snap.docs.map(LearnResource.fromFirestore).toList()
-    ..sort((a, b) => a.title.compareTo(b.title));
-});
+/// Every item in one workflow state, across all topics: the studio's
+/// review queue (`in_review`) and "sent back" list (`changes_requested`).
+/// A collection-group query, allowed by the staff-only
+/// `/{path=**}/resources` rule and served by the collection-group
+/// `status` index. Sorted by title.
+final adminStatusQueueProvider =
+    FutureProvider.family<List<LearnResource>, ResourceStatus>((
+      ref,
+      status,
+    ) async {
+      final snap = await FirebaseFirestore.instance
+          .collectionGroup('resources')
+          .where('status', isEqualTo: status.value)
+          .get();
+      return snap.docs.map(LearnResource.fromFirestore).toList()
+        ..sort((a, b) => a.title.compareTo(b.title));
+    });
+
+/// Every lesson item in one subject, any status: the course map's source.
+/// One collection-group query per subject opened (served by the
+/// collection-group `subjectId` override), rather than one per topic.
+final adminSubjectResourcesProvider =
+    FutureProvider.family<List<LearnResource>, String>((ref, subjectId) async {
+      final snap = await FirebaseFirestore.instance
+          .collectionGroup('resources')
+          .where('subjectId', isEqualTo: subjectId)
+          .get();
+      return snap.docs.map(LearnResource.fromFirestore).toList();
+    });
 
 /// Key for [adminResourceProvider]: a resource lives under its topic, so
 /// its id alone does not locate it.

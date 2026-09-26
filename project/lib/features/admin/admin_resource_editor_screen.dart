@@ -1,13 +1,19 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/auth/staff_role.dart';
+import '../../core/lessons/lesson_doc.dart';
 import '../../core/models/learn_resource.dart';
 import '../../core/models/question.dart';
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/admin_resource_repository.dart';
 import '../../core/repositories/learn_repository.dart';
 import '../../core/repositories/learning_repository.dart';
+import '../../core/repositories/lesson_workflow.dart';
+import '../../core/repositories/subject_index_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/article_view.dart';
@@ -15,6 +21,15 @@ import '../../core/widgets/full_latex_view.dart';
 import '../lesson/exercise_pane.dart';
 import '../lesson/video_pane.dart';
 import '../onboarding/onboarding_scaffold.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+import 'studio/block_toolbar.dart';
+// Deferred: the image codecs and file picker load only when an author
+// uploads an image, never as part of a student's download.
+import 'studio/image_upload.dart' deferred as image_upload;
+import 'studio/problems_panel.dart';
+import 'studio/review_panels.dart';
+import 'studio/studio_storage.dart';
 
 /// Path of the editor for an existing resource — also the link in the
 /// draft-notification email (`tools/admin/notify_drafts.js`).
@@ -73,6 +88,16 @@ class _AdminResourceEditorScreenState
   /// Null until the resource exists in Firestore.
   ResourceStatus? _status;
 
+  /// The resource as last loaded or saved; null for a new one. The
+  /// workflow actions (submit, approve…) act on it.
+  LearnResource? _loaded;
+
+  /// Autosave: the body is backed up to this device a few seconds after
+  /// typing stops — never to Firestore, where every save writes a history
+  /// version. See [StudioStorage].
+  final _storage = const StudioStorage();
+  Timer? _backupTimer;
+
   bool get _isNew => widget.resourceId == null;
 
   List<TextEditingController> get _controllers => [
@@ -92,10 +117,44 @@ class _AdminResourceEditorScreenState
     for (final c in _controllers) {
       c.addListener(_markDirty);
     }
+    _body.addListener(_scheduleBackup);
+  }
+
+  void _scheduleBackup() {
+    final id = widget.resourceId;
+    if (!_hydrated || !_dirty || id == null) return;
+    _backupTimer?.cancel();
+    _backupTimer = Timer(const Duration(seconds: 5), () {
+      _storage.writeBackup(widget.topicId, id, _body.text);
+    });
+  }
+
+  /// Offers the text this device backed up but never saved — the tab was
+  /// closed, the browser crashed — when it differs from what is stored.
+  Future<void> _offerBackup() async {
+    final id = widget.resourceId;
+    if (id == null) return;
+    final backup = await _storage.readBackup(widget.topicId, id);
+    if (!mounted || backup == null || backup == _body.text) return;
+    final restore = await _confirm(
+      title: 'Restore unsaved writing?',
+      message:
+          'This device has text for this item that was never saved. '
+          'Restore it? (You can still discard it before saving.)',
+      action: 'Restore',
+    );
+    if (!mounted) return;
+    if (restore) {
+      _body.text = backup;
+      setState(() => _dirty = true);
+    } else {
+      await _storage.clearBackup(widget.topicId, id);
+    }
   }
 
   @override
   void dispose() {
+    _backupTimer?.cancel();
     for (final c in _controllers) {
       c.dispose();
     }
@@ -157,6 +216,8 @@ class _AdminResourceEditorScreenState
       }
       _questionIds = [...resource.questionIds];
       _status = resource.status;
+      _loaded = resource;
+      WidgetsBinding.instance.addPostFrameCallback((_) => _offerBackup());
     }
     _hydrated = true;
   }
@@ -195,6 +256,24 @@ class _AdminResourceEditorScreenState
             _isNew ? 'New $noun' : 'Edit $noun',
             overflow: TextOverflow.ellipsis,
           ),
+          actions: [
+            if (_loaded != null)
+              IconButton(
+                tooltip: 'History',
+                icon: const Icon(Icons.history_rounded),
+                onPressed: () => showHistorySheet(
+                  context,
+                  resource: _loaded!,
+                  onRestored: () {
+                    _hydrated = false;
+                    _snack(
+                      'Restored. The version you replaced is in the history too.',
+                    );
+                    setState(() {});
+                  },
+                ),
+              ),
+          ],
           bottom: topic == null
               ? null
               : PreferredSize(
@@ -211,49 +290,57 @@ class _AdminResourceEditorScreenState
                 ),
         ),
         body: SafeArea(
-          child: missing
-              ? Center(
-                  child: Text(
-                    'This resource no longer exists.',
-                    style: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textSecondaryDark,
+          child: StudioShortcuts(
+            body: _body,
+            onSave: () {
+              if (!_isSaving) _save(_status ?? ResourceStatus.draft);
+            },
+            onSubmit: _primaryAction(),
+            child: missing
+                ? Center(
+                    child: Text(
+                      'This resource no longer exists.',
+                      style: AppTheme.bodyMd.copyWith(
+                        color: AppColors.textSecondaryDark,
+                      ),
                     ),
-                  ),
-                )
-              : !_hydrated
-              ? const Center(child: CircularProgressIndicator())
-              : LayoutBuilder(
-                  builder: (context, constraints) => constraints.maxWidth >= 900
-                      ? Row(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Expanded(child: _editorPane()),
-                            const VerticalDivider(
-                              width: 1,
-                              color: AppColors.borderDark,
-                            ),
-                            Expanded(child: _previewPane()),
-                          ],
-                        )
-                      : DefaultTabController(
-                          length: 2,
-                          child: Column(
+                  )
+                : !_hydrated
+                ? const Center(child: CircularProgressIndicator())
+                : LayoutBuilder(
+                    builder: (context, constraints) =>
+                        constraints.maxWidth >= 900
+                        ? Row(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              const TabBar(
-                                tabs: [
-                                  Tab(text: 'Edit'),
-                                  Tab(text: 'Preview'),
-                                ],
+                              Expanded(child: _editorPane()),
+                              const VerticalDivider(
+                                width: 1,
+                                color: AppColors.borderDark,
                               ),
-                              Expanded(
-                                child: TabBarView(
-                                  children: [_editorPane(), _previewPane()],
-                                ),
-                              ),
+                              Expanded(child: _previewPane()),
                             ],
+                          )
+                        : DefaultTabController(
+                            length: 2,
+                            child: Column(
+                              children: [
+                                const TabBar(
+                                  tabs: [
+                                    Tab(text: 'Edit'),
+                                    Tab(text: 'Preview'),
+                                  ],
+                                ),
+                                Expanded(
+                                  child: TabBarView(
+                                    children: [_editorPane(), _previewPane()],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                ),
+                  ),
+          ),
         ),
       ),
     );
@@ -267,14 +354,8 @@ class _AdminResourceEditorScreenState
       children: [
         if (_status != null) ...[
           Text(
-            _status == ResourceStatus.draft
-                ? 'DRAFT — students cannot see this yet.'
-                : 'PUBLISHED — students can see this now. Saving updates it live.',
-            style: AppTheme.label.copyWith(
-              color: _status == ResourceStatus.draft
-                  ? AppColors.warning
-                  : AppColors.correct,
-            ),
+            statusLine(_status!, isRevision: _loaded?.isRevision ?? false),
+            style: AppTheme.label.copyWith(color: statusColour(_status!)),
           ),
           const SizedBox(height: 16),
         ],
@@ -302,7 +383,10 @@ class _AdminResourceEditorScreenState
         },
         if (_error != null) ...[
           const SizedBox(height: 12),
-          Text(_error!, style: AppTheme.bodyMd.copyWith(color: AppColors.wrong)),
+          Text(
+            _error!,
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          ),
         ],
         const SizedBox(height: 20),
         _actions(),
@@ -320,8 +404,67 @@ class _AdminResourceEditorScreenState
       r'**bold**, $...$ and \emph are not supported.',
     ),
     const SizedBox(height: 8),
+    BlockToolbar(
+      controller: _body,
+      onInsertQuestion: _insertPastQuestion,
+      onInsertImage: _insertImage,
+      onPasteBlock: _pasteBlock,
+    ),
+    const SizedBox(height: 8),
     _multiline(_body, minLines: 18, monospace: true),
+    const SizedBox(height: 12),
+    ProblemsPanel(body: _body),
   ];
+
+  Future<void> _insertPastQuestion() async {
+    final picked = await showDialog<List<String>>(
+      context: context,
+      builder: (_) =>
+          _QuestionPicker(topicId: widget.topicId, initial: const []),
+    );
+    if (picked == null || picked.isEmpty || !mounted) return;
+    final questions = await ref.read(
+      pinnedQuestionsProvider(picked.join(',')).future,
+    );
+    final byId = {for (final q in questions) q.id: q};
+    for (final id in picked) {
+      // A real past paper question is labelled "Seen in WAEC"; anything
+      // else from the bank is a plain quick check.
+      final waec = byId[id]?.source == 'waec' && byId[id]?.year != null;
+      insertAtCursor(_body, '::: ${waec ? 'waec' : 'check'} q:$id\n:::');
+    }
+  }
+
+  Future<void> _insertImage() async {
+    final uid = ref.read(currentUserProvider)?.uid;
+    if (uid == null) return;
+    try {
+      await image_upload.loadLibrary();
+      final id = await image_upload.pickAndUploadLessonImage(
+        db: FirebaseFirestore.instance,
+        uid: uid,
+      );
+      if (id == null || !mounted) return;
+      insertAtCursor(_body, '![Describe the image here](asset:$id)');
+      _snack(
+        'Image uploaded. Replace "Describe the image here" with a caption.',
+      );
+    } catch (e) {
+      if (mounted) setState(() => _error = "Couldn't upload the image: $e");
+    }
+  }
+
+  Future<void> _pasteBlock() async {
+    final block = await _storage.readClipboard();
+    if (!mounted) return;
+    if (block == null || block.trim().isEmpty) {
+      _snack(
+        'Nothing copied yet. Use the copy icon on a block in any preview.',
+      );
+      return;
+    }
+    insertAtCursor(_body, block);
+  }
 
   List<Widget> _videoFields() => [
     OnboardingTextField(
@@ -409,10 +552,8 @@ class _AdminResourceEditorScreenState
   Future<void> _pick() async {
     final picked = await showDialog<List<String>>(
       context: context,
-      builder: (_) => _QuestionPicker(
-        topicId: widget.topicId,
-        initial: _questionIds,
-      ),
+      builder: (_) =>
+          _QuestionPicker(topicId: widget.topicId, initial: _questionIds),
     );
     if (picked == null || !mounted) return;
     setState(() {
@@ -428,7 +569,9 @@ class _AdminResourceEditorScreenState
 
   Widget _hint(String text, {Color? color}) => Text(
     text,
-    style: AppTheme.caption.copyWith(color: color ?? AppColors.textSecondaryDark),
+    style: AppTheme.caption.copyWith(
+      color: color ?? AppColors.textSecondaryDark,
+    ),
   );
 
   Widget _multiline(
@@ -467,6 +610,34 @@ class _AdminResourceEditorScreenState
   }
 
   // ─── Preview ───────────────────────────────────────────────────────
+
+  /// Puts a copy icon on each block in the preview. The block's source
+  /// goes to the studio clipboard, pastable into any lesson with
+  /// "Paste block".
+  Widget _copyableBlock(LessonBlock block, Widget child) => Stack(
+    children: [
+      Padding(padding: const EdgeInsets.only(right: 32), child: child),
+      Positioned(
+        top: 0,
+        right: 0,
+        child: IconButton(
+          tooltip: 'Copy this block',
+          visualDensity: VisualDensity.compact,
+          iconSize: 16,
+          icon: const Icon(
+            Icons.copy_all_rounded,
+            color: AppColors.textSecondaryDark,
+          ),
+          onPressed: () async {
+            await _storage.writeClipboard(block.source);
+            if (mounted) {
+              _snack('Block copied. Use "Paste block" in any lesson.');
+            }
+          },
+        ),
+      ),
+    ],
+  );
 
   /// The form as a resource, for the real student panes to render.
   LearnResource _asResource() {
@@ -520,7 +691,11 @@ class _AdminResourceEditorScreenState
                     ),
                   ),
                   const SizedBox(height: 16),
-                  ArticleView(body: r.body),
+                  ArticleView(
+                    body: r.body,
+                    authorPreview: true,
+                    decorate: _copyableBlock,
+                  ),
                 ],
               ),
             },
@@ -532,43 +707,67 @@ class _AdminResourceEditorScreenState
 
   // ─── Actions ───────────────────────────────────────────────────────
 
+  /// The buttons, by role and status (docs/CONTENT_ROLES.md). The rules
+  /// enforce the same table; this only avoids offering what would fail.
   Widget _actions() {
+    final role = ref.watch(staffRoleProvider);
+    final status = _status;
+    final loaded = _loaded;
+    final busy = _isSaving;
     final buttons = <Widget>[];
 
-    if (_status == ResourceStatus.draft) {
-      buttons.add(
+    Widget outline(String label, Color colour, VoidCallback onTap) =>
         _OutlineAction(
-          label: 'Delete',
-          color: AppColors.wrong,
-          onPressed: _isSaving ? null : _delete,
+          label: label,
+          color: colour,
+          onPressed: busy ? null : onTap,
+        );
+
+    final primary = _primaryLabel(role);
+    final primaryAction = _primaryAction();
+
+    if (status == null) {
+      // New item: the first save creates the draft.
+      buttons.add(
+        outline(
+          'Save draft',
+          AppColors.textPrimaryDark,
+          () => _save(ResourceStatus.draft),
         ),
       );
-    }
-    if (_status == ResourceStatus.published) {
+    } else if (status.isLive) {
+      if (role.canReview) {
+        buttons.add(outline('Unpublish', AppColors.warning, _unpublish));
+        buttons.add(
+          outline(
+            'Save changes',
+            AppColors.textPrimaryDark,
+            () => _save(status),
+          ),
+        );
+      }
       buttons.add(
-        _OutlineAction(
-          label: 'Unpublish',
-          color: AppColors.warning,
-          onPressed: _isSaving ? null : () => _save(ResourceStatus.draft),
-        ),
+        outline('Start a revision', AppColors.accentBlue, _startRevision),
+      );
+    } else {
+      final ownDraft = loaded?.createdBy == ref.watch(currentUserProvider)?.uid;
+      if (role.canReview || (status == ResourceStatus.draft && ownDraft)) {
+        buttons.add(outline('Delete', AppColors.wrong, _delete));
+      }
+      if (role.canReview && status == ResourceStatus.inReview) {
+        buttons.add(
+          outline('Request changes', AppColors.wrong, _requestChanges),
+        );
+      }
+      buttons.add(
+        outline('Save', AppColors.textPrimaryDark, () => _save(status)),
       );
     }
 
-    final keepStatus = _status ?? ResourceStatus.draft;
-    buttons.add(
-      _OutlineAction(
-        label: keepStatus == ResourceStatus.published
-            ? 'Save changes'
-            : 'Save draft',
-        color: AppColors.textPrimaryDark,
-        onPressed: _isSaving ? null : () => _save(keepStatus),
-      ),
-    );
-
-    if (_status == ResourceStatus.draft) {
+    if (primary != null && primaryAction != null) {
       buttons.add(
         ElevatedButton(
-          onPressed: _isSaving ? null : _publish,
+          onPressed: busy ? null : primaryAction,
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.primary,
             foregroundColor: Colors.white,
@@ -577,7 +776,7 @@ class _AdminResourceEditorScreenState
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          child: _isSaving
+          child: busy
               ? const SizedBox(
                   width: 18,
                   height: 18,
@@ -586,37 +785,244 @@ class _AdminResourceEditorScreenState
                     color: Colors.white,
                   ),
                 )
-              : const Text('Publish'),
+              : Text(primary),
         ),
       );
     }
 
-    return Wrap(
-      spacing: 12,
-      runSpacing: 12,
-      alignment: WrapAlignment.end,
-      children: buttons,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Wrap(
+          spacing: 12,
+          runSpacing: 12,
+          alignment: WrapAlignment.end,
+          children: buttons,
+        ),
+        if (loaded != null) ...[
+          const SizedBox(height: 20),
+          CommentsPanel(resource: loaded),
+        ],
+      ],
     );
   }
 
-  Future<void> _save(ResourceStatus status) async {
+  /// The one thing this person most likely wants to do next.
+  String? _primaryLabel(StaffRole role) => switch (_status) {
+    null || ResourceStatus.published => null,
+    ResourceStatus.draft || ResourceStatus.changesRequested =>
+      role.canReview ? 'Publish' : 'Submit for review',
+    ResourceStatus.inReview =>
+      role.canReview
+          ? ((_loaded?.isRevision ?? false)
+                ? 'Approve revision'
+                : 'Approve and publish')
+          : null,
+  };
+
+  /// Also Ctrl+Enter. Null when there is nothing to submit or approve.
+  VoidCallback? _primaryAction() {
+    final role = ref.read(staffRoleProvider);
+    return switch (_status) {
+      null || ResourceStatus.published => null,
+      ResourceStatus.draft ||
+      ResourceStatus.changesRequested => role.canReview ? _approve : _submit,
+      ResourceStatus.inReview => role.canReview ? _approve : null,
+    };
+  }
+
+  /// Saves unsaved edits first, so a transition never applies to stale
+  /// text. Returns the fresh resource, or null if saving failed.
+  Future<LearnResource?> _saveThenLoad() async {
+    if (_dirty && !await _save(_status ?? ResourceStatus.draft, quiet: true)) {
+      return null;
+    }
+    final key = (topicId: widget.topicId, resourceId: widget.resourceId!);
+    ref.invalidate(adminResourceProvider(key));
+    return ref.read(adminResourceProvider(key).future);
+  }
+
+  Future<void> _transition(
+    String done,
+    Future<void> Function(LearnResource r, String uid) action, {
+    bool changesLiveContent = false,
+  }) async {
+    final user = ref.read(currentUserProvider);
+    if (user == null || widget.resourceId == null) return;
+    setState(() {
+      _isSaving = true;
+      _error = null;
+    });
+    try {
+      final r = await _saveThenLoad();
+      if (r == null) return;
+      await action(r, user.uid);
+      if (changesLiveContent) await _refreshLiveIndexes();
+      _hydrated = false;
+      _invalidate(widget.resourceId!);
+      if (mounted) _snack(done);
+    } catch (e) {
+      if (mounted) setState(() => _error = "Couldn't update: $e");
+    } finally {
+      if (mounted) setState(() => _isSaving = false);
+    }
+  }
+
+  Future<void> _submit() => _transition(
+    'Submitted. The reviewers are emailed on the next check.',
+    (r, uid) => ref.read(lessonWorkflowProvider).submitForReview(r, uid: uid),
+  );
+
+  Future<void> _approve() async {
+    final isRevision = _loaded?.isRevision ?? false;
+    final ok = await _confirm(
+      title: isRevision
+          ? 'Approve this revision?'
+          : 'Publish this ${_type.label.toLowerCase()}?',
+      message: isRevision
+          ? 'It replaces the published version for every student straight '
+                'away. The old version stays in the history.'
+          : 'Every student who opens this topic will see it immediately. '
+                'Check the preview first.',
+      action: isRevision ? 'Approve' : 'Publish',
+    );
+    if (!ok || !mounted) return;
+    String? liveId;
+    await _transition(
+      isRevision ? 'Revision approved and live.' : 'Published.',
+      (r, uid) async =>
+          liveId = await ref.read(lessonWorkflowProvider).approve(r, uid: uid),
+      changesLiveContent: true,
+    );
+    // An approved revision is deleted; carry on in the live original.
+    final id = liveId;
+    if (mounted && id != null && id != widget.resourceId) {
+      setState(() => _dirty = false);
+      context.pushReplacement(adminResourcePath(widget.topicId, id));
+    }
+  }
+
+  Future<void> _requestChanges() async {
+    final reason = TextEditingController();
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (dialog) => AlertDialog(
+        backgroundColor: AppColors.surfaceDark,
+        title: const Text('Request changes'),
+        content: TextField(
+          controller: reason,
+          autofocus: true,
+          minLines: 3,
+          maxLines: 6,
+          decoration: const InputDecoration(
+            hintText: 'What needs to change? The writer is emailed this.',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialog).pop(false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(dialog).pop(true),
+            child: const Text('Send back'),
+          ),
+        ],
+      ),
+    );
+    final text = reason.text;
+    reason.dispose();
+    if (ok != true || !mounted) return;
+    final user = ref.read(currentUserProvider);
+    await _transition(
+      'Sent back to the writer.',
+      (r, uid) => ref
+          .read(lessonWorkflowProvider)
+          .requestChanges(
+            r,
+            uid: uid,
+            authorName: authorNameFor(user?.displayName, user?.email),
+            reason: text,
+          ),
+    );
+  }
+
+  Future<void> _unpublish() async {
+    final ok = await _confirm(
+      title: 'Unpublish?',
+      message:
+          'Students will no longer see this. It goes back to being a draft.',
+      action: 'Unpublish',
+      destructive: true,
+    );
+    if (!ok) return;
+    await _transition(
+      'Unpublished. Students can no longer see it.',
+      (r, uid) => ref.read(lessonWorkflowProvider).unpublish(r, uid: uid),
+      changesLiveContent: true,
+    );
+  }
+
+  Future<void> _startRevision() async {
+    final user = ref.read(currentUserProvider);
+    final r = _loaded;
+    if (user == null || r == null) return;
+    setState(() => _isSaving = true);
+    try {
+      final id = await ref
+          .read(lessonWorkflowProvider)
+          .startRevision(r, uid: user.uid);
+      ref.invalidate(adminTopicResourcesProvider(widget.topicId));
+      if (!mounted) return;
+      context.push(adminResourcePath(widget.topicId, id));
+    } catch (e) {
+      if (mounted) setState(() => _error = "Couldn't start a revision: $e");
+    } finally {
+      if (mounted) setState(() => _isSaving = false);
+    }
+  }
+
+  /// After anything that changes what students see: the subject's
+  /// glossary/formula/card index. Best effort — "Rebuild index" in the
+  /// studio heals a miss. (The lesson count is refreshed by [_invalidate].)
+  Future<void> _refreshLiveIndexes() async {
+    final topic = await ref.read(topicByIdProvider(widget.topicId).future);
+    if (topic == null) return;
+    try {
+      await ref
+          .read(subjectIndexRepositoryProvider)
+          .rebuildTopic(
+            subjectId: topic.subjectId,
+            topicId: topic.id,
+            topicName: topic.name,
+          );
+    } catch (_) {}
+    ref.invalidate(subjectIndexProvider(topic.subjectId));
+  }
+
+  /// Saves the form without changing the item's status. Returns whether it
+  /// saved. [quiet] skips the snackbar and busy state, for saving just
+  /// before a workflow transition.
+  Future<bool> _save(ResourceStatus status, {bool quiet = false}) async {
     final draft = _draft;
     final problem = draft.validate();
     if (problem != null) {
       setState(() => _error = problem);
-      return;
+      return false;
     }
     final user = ref.read(currentUserProvider);
     final topic = await ref.read(topicByIdProvider(widget.topicId).future);
     if (user == null || topic == null) {
       setState(() => _error = "Couldn't find this topic.");
-      return;
+      return false;
     }
 
-    setState(() {
-      _isSaving = true;
-      _error = null;
-    });
+    if (!quiet) {
+      setState(() {
+        _isSaving = true;
+        _error = null;
+      });
+    }
 
     final repo = ref.read(adminResourceRepositoryProvider);
 
@@ -629,11 +1035,11 @@ class _AdminResourceEditorScreenState
           draft: draft,
         );
         _invalidate(id);
-        if (!mounted) return;
+        if (!mounted) return true;
         setState(() => _dirty = false);
-        _snack('Draft saved. The review email goes out on the next check.');
+        _snack('Draft saved. Submit it for review when it is ready.');
         context.pushReplacement(adminResourcePath(widget.topicId, id));
-        return;
+        return true;
       }
 
       await repo.save(
@@ -641,42 +1047,35 @@ class _AdminResourceEditorScreenState
         resourceId: widget.resourceId!,
         draft: draft,
         status: status,
+        savedBy: user.uid,
       );
+      await _storage.clearBackup(widget.topicId, widget.resourceId!);
+      if (status.isLive) await _refreshLiveIndexes();
       _invalidate(widget.resourceId!);
-      if (!mounted) return;
-      final was = _status;
+      if (!mounted) return true;
       setState(() {
         _status = status;
         _dirty = false;
       });
-      _snack(switch ((was, status)) {
-        (ResourceStatus.draft, ResourceStatus.published) => 'Published.',
-        (ResourceStatus.published, ResourceStatus.draft) =>
-          'Unpublished. Students can no longer see it.',
-        _ => 'Saved.',
-      });
+      if (!quiet) {
+        _snack(
+          status.isLive
+              ? 'Saved. Students see the change now.'
+              : 'Saved. The previous version is in the history.',
+        );
+      }
+      return true;
     } catch (e) {
-      if (!mounted) return;
-      setState(() => _error = "Couldn't save: $e");
+      if (mounted) setState(() => _error = "Couldn't save: $e");
+      return false;
     } finally {
-      if (mounted) setState(() => _isSaving = false);
+      if (mounted && !quiet) setState(() => _isSaving = false);
     }
-  }
-
-  Future<void> _publish() async {
-    final ok = await _confirm(
-      title: 'Publish this ${_type.label.toLowerCase()}?',
-      message:
-          'Every student who opens this topic will see it immediately. '
-          'Check the preview first.',
-      action: 'Publish',
-    );
-    if (ok) await _save(ResourceStatus.published);
   }
 
   Future<void> _delete() async {
     final ok = await _confirm(
-      title: 'Delete this draft?',
+      title: 'Delete this ${_type.label.toLowerCase()}?',
       message: 'This cannot be undone.',
       action: 'Delete',
       destructive: true,
@@ -687,10 +1086,11 @@ class _AdminResourceEditorScreenState
       await ref
           .read(adminResourceRepositoryProvider)
           .delete(topicId: widget.topicId, resourceId: widget.resourceId!);
+      if (_status?.isLive ?? false) await _refreshLiveIndexes();
       _invalidate(widget.resourceId!);
       if (!mounted) return;
       setState(() => _dirty = false);
-      _snack('Draft deleted.');
+      _snack('Deleted.');
       context.pop();
     } catch (e) {
       if (!mounted) return;
@@ -711,7 +1111,8 @@ class _AdminResourceEditorScreenState
         })
         .catchError((_) {});
     ref.invalidate(adminTopicResourcesProvider(widget.topicId));
-    ref.invalidate(adminDraftsProvider);
+    ref.invalidate(adminStatusQueueProvider);
+    ref.invalidate(adminSubjectResourcesProvider);
     ref.invalidate(
       adminResourceProvider((topicId: widget.topicId, resourceId: resourceId)),
     );

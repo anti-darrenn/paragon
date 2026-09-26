@@ -13,6 +13,9 @@ import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/report_problem_button.dart';
+import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
+import '../core/study/study_dock.dart';
+import '../core/study/study_tool.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -392,7 +395,11 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       onPopInvokedWithResult: (didPop, _) {
         if (!didPop) _confirmExit();
       },
-      child: scaffold,
+      child: StudyDock(
+        subjectId: widget.subjectId,
+        studyContext: StudyContext.waecExam,
+        child: scaffold,
+      ),
     );
   }
 
@@ -572,7 +579,13 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 if (_reviewMode)
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: ReportProblemButton(questionId: q.id),
+                    child: Wrap(
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        ReportProblemButton(questionId: q.id),
+                        QuestionBookmarkButton(question: q),
+                      ],
+                    ),
                   ),
               ],
             ),

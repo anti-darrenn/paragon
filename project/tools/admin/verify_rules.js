@@ -595,6 +595,54 @@ async function attemptsAndFlags(a, b) {
   await deleteDoc(a.idToken, `flags/${closedFlagId}`);
 }
 
+async function studyData(a, b) {
+  suite('notes and study/{uid} — own data, real accounts only');
+
+  // The test accounts are anonymous, i.e. guests. Guests keep notes on the
+  // device, so every write here is refused; the signed-in allow path is
+  // exercised by hand.
+  const note = {
+    userId: str(a.uid),
+    topicId: str('t'),
+    resourceId: str('r'),
+    subjectId: str('s'),
+    blockKey: str('paragraph:00000000:0'),
+    colour: str('yellow'),
+    text: str('note'),
+    snapshot: str('text'),
+  };
+  expectOutcome(
+    'a guest cannot store a note in Firestore',
+    DENY,
+    await commit(
+      a.idToken,
+      write('notes/zz_verify_note', note, {
+        transforms: [serverTime('createdAt'), serverTime('updatedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "another student's study document is not readable",
+    DENY,
+    await readDoc(b.idToken, `study/${a.uid}`),
+  );
+  expectOutcome(
+    "another student's study document is not writable",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`study/${a.uid}`, { userId: str(a.uid), bookmarks: map({}) }, {
+        transforms: [serverTime('updatedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "a student cannot list everyone's notes",
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'notes' }] }),
+  );
+}
+
 async function progress(a, b) {
   suite('progress/{uid} — the mastery cache');
 
@@ -932,6 +980,76 @@ async function content(a) {
     );
   }
 
+  // ── The review workflow (docs/CONTENT_ROLES.md) ──
+  // Students hold no content role, so every one of these is refused. The
+  // staff allow-paths need a writer/reviewer token, which a test cannot
+  // mint; they are exercised by hand in the studio.
+  expectOutcome(
+    'a student cannot create a lesson item, even as a draft',
+    DENY,
+    await commit(
+      a.idToken,
+      write('topics/zz_verify_topic/resources/zz_student_draft', {
+        type: str('article'),
+        title: str('sneaky'),
+        status: str('draft'),
+      }),
+    ),
+  );
+  if (seeded) {
+    expectOutcome(
+      "a student cannot read a draft's version history",
+      DENY,
+      await readDoc(a.idToken, 'topics/zz_verify_topic/resources/zz_verify_draft/versions'),
+    );
+    expectOutcome(
+      "a student cannot read a draft's review comments",
+      DENY,
+      await readDoc(a.idToken, 'topics/zz_verify_topic/resources/zz_verify_draft/comments'),
+    );
+    expectOutcome(
+      'a student cannot comment on a draft',
+      DENY,
+      await commit(
+        a.idToken,
+        write('topics/zz_verify_topic/resources/zz_verify_draft/comments/zz_c', {
+          authorUid: str(a.uid),
+          text: str('hi'),
+        }),
+      ),
+    );
+    expectOutcome(
+      'a student cannot publish a draft',
+      DENY,
+      await commit(
+        a.idToken,
+        write('topics/zz_verify_topic/resources/zz_verify_draft', {
+          status: str('published'),
+        }),
+      ),
+    );
+  }
+  expectOutcome(
+    'a student cannot upload a lesson image',
+    DENY,
+    await commit(
+      a.idToken,
+      write('lessonAssets/zz_verify_asset', {
+        mime: str('image/png'),
+        data: str('AAAA'),
+        createdBy: str(a.uid),
+      }),
+    ),
+  );
+  expectOutcome(
+    "a student cannot write a subject's glossary index",
+    DENY,
+    await commit(
+      a.idToken,
+      write('subjectIndex/zz_verify_subject', { topics: map({}) }),
+    ),
+  );
+
   for (const collection of ['subjects', 'units', 'topics', 'questions']) {
     expectOutcome(
       `${collection} cannot be written by a client`,
@@ -1007,6 +1125,7 @@ async function teardown(a, b, usernameKey) {
   await usernames(a, b, usernameKey);
   await attemptsAndFlags(a, b);
   await progress(a, b);
+  await studyData(a, b);
   await learnGate(a, b);
   await content(a);
 

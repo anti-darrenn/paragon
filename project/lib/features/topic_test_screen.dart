@@ -16,6 +16,9 @@ import '../core/widgets/guest_notice.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/report_problem_button.dart';
 import '../core/widgets/load_error.dart';
+import '../core/study/study_dock.dart';
+import '../core/study/study_tool.dart';
+import 'lesson/lesson_nudge.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -238,15 +241,23 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
               onDone: () => context.pop(),
             );
           }
-          return _Questions(
-            questions: questions,
-            index: _index,
-            answers: _answers,
-            answeredCount: _answeredCount,
-            isGuest: isGuest,
-            onSelect: _select,
-            onIndex: (i) => setState(() => _index = i),
-            onSubmit: () => _submit(questions),
+          return Column(
+            children: [
+              // A nudge towards the lesson, never a gate.
+              if (_answers.isEmpty) LessonNudge(topicId: widget.topicId),
+              Expanded(
+                child: _Questions(
+                  questions: questions,
+                  index: _index,
+                  answers: _answers,
+                  answeredCount: _answeredCount,
+                  isGuest: isGuest,
+                  onSelect: _select,
+                  onIndex: (i) => setState(() => _index = i),
+                  onSubmit: () => _submit(questions),
+                ),
+              ),
+            ],
           );
         },
       ),
@@ -259,7 +270,11 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
       onPopInvokedWithResult: (didPop, _) {
         if (!didPop) _confirmLeave();
       },
-      child: scaffold,
+      child: StudyDock(
+        subjectId: widget.subjectId,
+        studyContext: StudyContext.topicTest,
+        child: scaffold,
+      ),
     );
   }
 }
@@ -428,6 +443,9 @@ class _Questions extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 16),
+          // No bookmark here: a question saved mid-test shows its answer
+          // on the Saved page, which would turn the gate into a lookup.
+          // Drill and exercises offer the same questions to bookmark.
           ReportProblemButton(questionId: q.id),
           const SizedBox(height: 24),
         ],

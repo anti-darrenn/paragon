@@ -53,6 +53,9 @@ dependencies:
   # able to turn collection off without an account.
   shared_preferences: ^2.3.3
   youtube_player_iframe: ^6.0.2
+  flutter_tts: ^4.2.5
+  file_picker: ^13.1.0
+  image: ^4.10.1
 
 dev_dependencies:
   flutter_test:
@@ -87,6 +90,7 @@ flutter:
     - assets/icons/google_g.png
     - assets/icons/mail_icon.svg
     - assets/icons/dot.svg
+    - assets/data/periodic_table.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

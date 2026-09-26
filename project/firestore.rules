@@ -4,27 +4,27 @@ service cloud.firestore {
 
     match /subjects/{id}  { allow read: if true; }
     match /units/{id}     { allow read: if request.auth != null; }
-    // `lessonCount` is the one topic field a client may write, and only an
-    // admin: the content editor keeps it in step when it publishes,
-    // unpublishes or deletes a lesson. Everything else on a topic stays
+    // `lessonCount` is the one topic field a client may write, and only a
+    // reviewer: the studio keeps it in step when it publishes, unpublishes
+    // or deletes a lesson. Everything else on a topic stays
     // Admin-SDK-only. `jobs.js --job=counts` recomputes it nightly anyway,
     // so a missed update heals by morning.
     match /topics/{id} {
       allow read: if request.auth != null;
-      allow update: if isAdmin()
+      allow update: if isReviewer()
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['lessonCount'])
         && request.resource.data.lessonCount is int
         && request.resource.data.lessonCount >= 0;
     }
-    // Questions are Admin-SDK-only except for one path: an admin resolving
-    // a student's problem report in the content editor. That can change
+    // Questions are Admin-SDK-only except for one path: a reviewer
+    // resolving a student's problem report in the studio. That can change
     // the marked answer or retire the question, nothing else — stem,
     // options and topic stay seeder-only. `previousCorrectIndex` is written
     // alongside every answer change so a bad fix can be reverted.
     match /questions/{id} {
       allow read: if request.auth != null;
-      allow update: if isAdmin()
+      allow update: if isReviewer()
         && request.resource.data.diff(resource.data).affectedKeys()
              .hasOnly(['correctIndex', 'previousCorrectIndex', 'hasAnswer',
                        'reviewedAt', 'reviewedBy'])
@@ -46,7 +46,8 @@ service cloud.firestore {
     //
     // Published resources are readable by any signed-in user (a guest
     // included — Learn content is deliberately ungated; only drill is
-    // gated). Drafts are readable only by an admin.
+    // gated). Everything else — draft, in_review, changes_requested — is
+    // readable only by the content team.
     //
     // Rules are not filters: a list query is refused outright unless it
     // provably returns only readable documents. So a student's query MUST
@@ -61,21 +62,85 @@ service cloud.firestore {
     // now carries `status` (`jobs.js --job=resourcestatus` backfilled the
     // old ones; the seeder and editor always write it), so none is needed.
     //
-    // Writes: admins only, through the in-app editor. The seeder still
-    // uses the Admin SDK, which bypasses rules.
+    // Writes follow the review workflow (docs/CONTENT_ROLES.md):
+    //  - a reviewer may write anything;
+    //  - a writer may create and edit only while the item is — and stays —
+    //    unpublished: draft, in_review, or changes_requested. A writer can
+    //    never publish, never edit a published item (they start a revision
+    //    instead), and can only keep `changes_requested` on an item that
+    //    already has it, never set it: that is the reviewer's verdict.
+    //  - a writer may delete only their own draft.
+    // The seeder still uses the Admin SDK, which bypasses rules.
     match /topics/{topicId}/resources/{resourceId} {
       allow read: if request.auth != null
-        && (resource.data.status == 'published' || isAdmin());
-      allow write: if isAdmin();
+        && (resource.data.status == 'published' || isWriter());
+      allow create: if isReviewer()
+        || (isWriter()
+            && request.resource.data.status in ['draft', 'in_review']);
+      allow update: if isReviewer()
+        || (isWriter()
+            && resource.data.status in writerStatuses()
+            && request.resource.data.status in writerStatuses()
+            && (request.resource.data.status != 'changes_requested'
+                || resource.data.status == 'changes_requested'));
+      allow delete: if isReviewer()
+        || (isWriter()
+            && resource.data.status == 'draft'
+            && resource.data.get('createdBy', '') == request.auth.uid);
+
+      // Every save keeps the previous content, so any edit can be undone.
+      // Append-only: a version is never rewritten or removed from a client.
+      match /versions/{versionId} {
+        allow read, create: if isWriter();
+      }
+
+      // Review threads. Anyone on the team may comment; an author edits
+      // their own; a reviewer may resolve or remove any.
+      match /comments/{commentId} {
+        allow read: if isWriter();
+        allow create: if isWriter()
+          && request.resource.data.authorUid == request.auth.uid;
+        allow update: if isWriter()
+          && (resource.data.authorUid == request.auth.uid || isReviewer())
+          && request.resource.data.authorUid == resource.data.authorUid;
+        allow delete: if isReviewer()
+          || (isWriter() && resource.data.authorUid == request.auth.uid);
+      }
     }
 
-    // Collection-group reads across every topic's resources: the admin
-    // "awaiting review" list and nothing else. A collection-group query is
-    // matched only by a recursive wildcard like this one, never by the
-    // path-scoped block above, so without it the query is refused even
-    // for an admin.
+    // Collection-group reads across every topic's resources: the studio's
+    // course map and review queue. A collection-group query is matched
+    // only by a recursive wildcard like this one, never by the path-scoped
+    // block above, so without it the query is refused even for staff.
     match /{path=**}/resources/{resourceId} {
-      allow read: if isAdmin();
+      allow read: if isWriter();
+    }
+
+    // ── LESSON IMAGES ───────────────────────────────────────────
+    // Uploaded by the studio, compressed well under Firestore's 1 MB
+    // document limit (no Storage bucket on Spark). Readable by any
+    // signed-in user so published lessons can show them.
+    match /lessonAssets/{assetId} {
+      allow read: if request.auth != null;
+      allow create: if isWriter()
+        && request.resource.data.keys().hasOnly(
+             ['mime', 'data', 'width', 'height', 'createdBy', 'createdAt'])
+        && request.resource.data.mime in
+             ['image/webp', 'image/jpeg', 'image/png', 'image/svg+xml']
+        && request.resource.data.data is string
+        && request.resource.data.data.size() <= 900000
+        && request.resource.data.createdBy == request.auth.uid;
+      allow update: if false;
+      allow delete: if isReviewer();
+    }
+
+    // ── SUBJECT INDEX ───────────────────────────────────────────
+    // One document per subject holding its glossary, formulas and revision
+    // cards, extracted from published lessons when a reviewer publishes.
+    // One read gives a student all three features.
+    match /subjectIndex/{subjectId} {
+      allow read: if request.auth != null;
+      allow write: if isReviewer();
     }
 
     // ── USER DOCUMENTS ──────────────────────────────────────────
@@ -140,6 +205,24 @@ service cloud.firestore {
     // grant itself.
     function isAdmin() {
       return request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Content-team roles — custom claims, set only by
+    // `tools/admin/set_role.js`. A reviewer can do everything a writer can;
+    // an admin, everything a reviewer can. See docs/CONTENT_ROLES.md.
+    function isReviewer() {
+      return isAdmin()
+        || (request.auth != null && request.auth.token.reviewer == true);
+    }
+
+    function isWriter() {
+      return isReviewer()
+        || (request.auth != null && request.auth.token.writer == true);
+    }
+
+    // The statuses a writer may leave an item in. Everything but published.
+    function writerStatuses() {
+      return ['draft', 'in_review', 'changes_requested'];
     }
 
     // Governs the username/usernameKey pair on an update. Three cases:
@@ -251,7 +334,7 @@ service cloud.firestore {
     // ── QUESTION FLAGS (student-reported problems) ───────────────
     // The answer key is scraped from a third party with a measured error
     // rate, so students reporting a wrong answer is how we find the bad
-    // ones. Students file them; admins review them in the content editor.
+    // ones. Students file them; reviewers resolve them in the studio.
     //
     // `status` is open | fixed | dismissed, and a missing status means
     // open — reports filed before review existed, or by a cached build,
@@ -264,17 +347,85 @@ service cloud.firestore {
               || request.resource.data.status == 'open');
       // Read-own and delete-own, narrowly: a deleting user has to be able
       // to find and remove reports that carry their uid, and the client
-      // cannot delete what it cannot query. Admins read every report.
+      // cannot delete what it cannot query. Reviewers read every report.
       allow read: if request.auth != null
-          && (resource.data.userId == request.auth.uid || isAdmin());
+          && (resource.data.userId == request.auth.uid || isReviewer());
       allow delete: if request.auth != null
           && resource.data.userId == request.auth.uid;
-      // Resolution only: an admin closes or reopens a report. What the
+      // Resolution only: a reviewer closes or reopens a report. What the
       // student reported (question, reason, who, when) is never rewritten.
-      allow update: if isAdmin()
+      allow update: if isReviewer()
           && request.resource.data.diff(resource.data).affectedKeys()
                .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
+    }
+
+    // ── NOTES, HIGHLIGHTS, BOOKMARKS, REVISION CARDS ─────────────
+    // A student's own study data. Owner-only in both directions, with a
+    // closed field set. Guests keep theirs on the device only, so
+    // anonymous accounts may not write here; reads and deletes stay
+    // owner-only for everyone, which account deletion relies on.
+    // `AccountRepository.deleteOwnedDocuments` removes both.
+
+    // One document per annotated block: its highlight and/or note. A note
+    // keeps a snapshot of the block's text, so rewording a lesson shows
+    // the note as "from an earlier version" instead of losing it.
+    match /notes/{noteId} {
+      function noteShapeOk(d) {
+        return d.keys().hasOnly(['userId', 'topicId', 'resourceId',
+                                 'subjectId', 'blockKey', 'colour', 'text',
+                                 'snapshot', 'createdAt', 'updatedAt'])
+          && d.keys().hasAll(['userId', 'topicId', 'resourceId', 'subjectId',
+                              'blockKey', 'colour', 'text', 'snapshot',
+                              'createdAt', 'updatedAt'])
+          && d.topicId is string && d.topicId.size() > 0
+          && d.topicId.size() <= 128
+          && d.resourceId is string && d.resourceId.size() > 0
+          && d.resourceId.size() <= 128
+          && d.subjectId is string && d.subjectId.size() <= 128
+          && d.blockKey is string && d.blockKey.size() > 0
+          && d.blockKey.size() <= 200
+          && (d.colour == null
+              || d.colour in ['yellow', 'green', 'blue', 'purple'])
+          && d.text is string && d.text.size() <= 2000
+          && d.snapshot is string && d.snapshot.size() <= 1000;
+      }
+      // Rules are not filters: a query must carry `userId == uid`.
+      allow read, delete: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.userId == request.auth.uid
+        && noteShapeOk(request.resource.data)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.userId == request.auth.uid
+        && noteShapeOk(request.resource.data)
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['colour', 'text', 'snapshot', 'updatedAt'])
+        && request.resource.data.updatedAt == request.time;
+    }
+
+    // Bookmarks and the revision-card schedule, one document per student.
+    // Always written with merge, and a merge is checked against the merged
+    // document — so every field any writer uses must be named here, or
+    // one feature's field would lock the other out.
+    match /study/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys()
+             .hasOnly(['userId', 'updatedAt', 'bookmarks', 'cards'])
+        && request.resource.data.userId == uid
+        && request.resource.data.updatedAt == request.time
+        && (!('bookmarks' in request.resource.data)
+            || (request.resource.data.bookmarks is map
+                && request.resource.data.bookmarks.size() <= 500))
+        && (!('cards' in request.resource.data)
+            || (request.resource.data.cards is map
+                && request.resource.data.cards.size() <= 5000));
     }
 
     // ── USERNAME REGISTRY (uniqueness enforcement) ───────────────

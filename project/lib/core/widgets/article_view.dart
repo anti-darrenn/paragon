@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../lessons/lesson_doc.dart';
 import 'full_latex_view.dart';
+import 'lesson_blocks/lesson_block_view.dart';
 
 /// Renders a Learn-mode article: long-form prose with embedded maths.
 ///
@@ -51,8 +53,23 @@ import 'full_latex_view.dart';
 /// coupling this design exists to avoid. Authors use `\textbf{...}` and
 /// `\textit{...}`, which `FullLatexView` already handles everywhere else
 /// in the app.
+///
+/// ## The lesson format
+///
+/// Everything above still holds for plain text. On top of it, the body is
+/// parsed by `parseLessonDoc` (`lib/core/lessons/lesson_doc.dart`), which
+/// adds fenced blocks — callouts, worked examples, quick checks, figures,
+/// tables and the rest (`docs/LESSON_FORMAT.md`) — and hands plain runs
+/// back to [parseArticleBlocks] unchanged, so an article that uses none of
+/// them renders exactly as it always did.
 class ArticleView extends StatelessWidget {
-  const ArticleView({super.key, required this.body, this.textStyle});
+  const ArticleView({
+    super.key,
+    required this.body,
+    this.textStyle,
+    this.authorPreview = false,
+    this.decorate,
+  });
 
   final String body;
 
@@ -60,26 +77,31 @@ class ArticleView extends StatelessWidget {
   /// from this, so an article cannot accidentally restyle the app.
   final TextStyle? textStyle;
 
+  /// True in the editor's preview: author to-dos are shown. Students never
+  /// see them.
+  final bool authorPreview;
+
+  /// Wraps each top-level block; see [BlockDecorator].
+  final BlockDecorator? decorate;
+
+  /// The paragraph style an article uses unless given another. Callers
+  /// that apply the student's reading settings (line spacing, font) start
+  /// from this, so the defaults stay identical.
+  static TextStyle get defaultTextStyle =>
+      AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark, height: 1.6);
+
   @override
   Widget build(BuildContext context) {
-    final base =
-        textStyle ??
-        AppTheme.bodyLg.copyWith(
-          color: AppColors.textPrimaryDark,
-          height: 1.6,
-        );
+    final base = textStyle ?? defaultTextStyle;
 
-    final blocks = parseArticleBlocks(body);
-    if (blocks.isEmpty) return const SizedBox.shrink();
+    final doc = parseLessonDoc(body);
+    if (doc.isEmpty) return const SizedBox.shrink();
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        for (var i = 0; i < blocks.length; i++) ...[
-          if (i > 0) SizedBox(height: blocks[i].spacingBefore),
-          _BlockView(block: blocks[i], base: base),
-        ],
-      ],
+    return LessonBlocksColumn(
+      blocks: doc.blocks,
+      base: base,
+      authorPreview: authorPreview,
+      decorate: decorate,
     );
   }
 }
@@ -234,8 +256,10 @@ List<ArticleBlock> parseArticleBlocks(String source) {
   return blocks;
 }
 
-class _BlockView extends StatelessWidget {
-  const _BlockView({required this.block, required this.base});
+/// Renders one block of the original article grammar. Public so the
+/// lesson renderer draws basic blocks through exactly this code.
+class ArticleBlockView extends StatelessWidget {
+  const ArticleBlockView({super.key, required this.block, required this.base});
 
   final ArticleBlock block;
   final TextStyle base;

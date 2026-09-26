@@ -9,6 +9,7 @@ import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
+import 'package:paragon/features/admin/studio/topic_planner_screen.dart';
 import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
@@ -23,7 +24,11 @@ import 'package:paragon/features/drill_screen.dart';
 import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
+import 'package:paragon/features/settings/reading_settings_screen.dart';
+import 'package:paragon/features/study/offline/offline_topics_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
+import 'package:paragon/features/study/cards/card_review_screen.dart';
+import 'package:paragon/features/study/notes/saved_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
 import 'package:paragon/features/topic_list_screen.dart';
@@ -113,17 +118,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // asking for a school and an age would be exactly backwards.
       if (isOnLegal) return null;
 
-      // ── Admin gate ─────────────────────────────────────────────────
-      // UI only. Every read and write the admin screens make is checked
-      // again by `isAdmin()` in firestore.rules, which is what actually
-      // protects drafts; this just keeps non-admins off screens that
-      // would only show them permission errors.
+      // ── Studio gate ────────────────────────────────────────────────
+      // UI only. Every read and write the studio makes is checked again
+      // by `isWriter()` / `isReviewer()` in firestore.rules, which is what
+      // actually protects drafts; this just keeps students off screens
+      // that would only show them permission errors. Writers get in;
+      // what they may do inside is decided per action.
       final isOnAdmin =
           state.matchedLocation == '/admin' ||
           state.matchedLocation.startsWith('/admin/');
       if (isOnAdmin) {
         if (ref.read(idTokenResultProvider).isLoading) return null;
-        if (!ref.read(isAdminProvider)) return '/';
+        if (!ref.read(staffRoleProvider).canWrite) return '/';
       }
 
       // Guests never onboard: an anonymous session has no profile to
@@ -347,6 +353,28 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/settings/profile',
         builder: (context, state) => const ProfileSettingsScreen(),
       ),
+      // Text size, line spacing, reading font, low-data mode. Per device.
+      GoRoute(
+        path: '/settings/reading',
+        builder: (context, state) => const ReadingSettingsScreen(),
+      ),
+      // Bookmarks and notes. Guests too: theirs are kept on the device.
+      GoRoute(
+        path: '/saved',
+        builder: (context, state) => const SavedScreen(),
+      ),
+      // A subject's revision cards. Guests too: their schedule is kept on
+      // the device.
+      GoRoute(
+        path: '/cards/:subjectId',
+        builder: (context, state) =>
+            CardReviewScreen(subjectId: state.pathParameters['subjectId']!),
+      ),
+      // Topics saved for offline reading. Per device, like the above.
+      GoRoute(
+        path: '/settings/offline',
+        builder: (context, state) => const OfflineTopicsScreen(),
+      ),
 
       // ── Admin ───────────────────────────────────────────────────────
       // Gated by the `admin` claim — see the admin gate above. The edit
@@ -357,6 +385,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin',
         builder: (context, state) => const AdminHomeScreen(),
+      ),
+      // One topic's lesson: every item in order, any status.
+      GoRoute(
+        path: '/admin/topic/:topicId',
+        builder: (context, state) =>
+            TopicPlannerScreen(topicId: state.pathParameters['topicId']!),
       ),
       GoRoute(
         path: '/admin/topic/:topicId/new/:type',

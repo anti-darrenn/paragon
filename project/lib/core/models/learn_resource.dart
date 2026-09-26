@@ -70,23 +70,37 @@ enum LearnResourceType {
   };
 }
 
-/// Whether students can see a resource.
+/// Where a resource is in the review workflow (`docs/CONTENT_ROLES.md`):
+/// `draft → in_review → published`, with `changes_requested` sending it
+/// back to the writer.
 ///
-/// Drafts are written by the in-app editor and are visible only to admins
-/// until published.
-///
-/// Parsed exactly the way `firestore.rules` reads it, so the editor never
+/// Parsed exactly the way `firestore.rules` reads it, so the studio never
 /// labels something "Published" that students cannot actually see: only
-/// the exact string `published` is visible to students. Anything else —
-/// including a missing field — is hidden by the rules, so it is [draft].
-/// (Every resource carries the field; see the rules file for why "missing
-/// means published" was tried and removed.)
+/// the exact string `published` is visible to students. Every other value
+/// is staff-only, and anything unrecognised — including a missing field —
+/// reads as [draft]. (Every resource carries the field; see the rules file
+/// for why "missing means published" was tried and removed.)
 enum ResourceStatus {
-  draft,
-  published;
+  draft('draft', 'Draft'),
+  inReview('in_review', 'In review'),
+  changesRequested('changes_requested', 'Changes requested'),
+  published('published', 'Published');
 
-  static ResourceStatus parse(dynamic value) =>
-      value == 'published' ? ResourceStatus.published : ResourceStatus.draft;
+  const ResourceStatus(this.value, this.label);
+
+  /// Stored in Firestore and matched by the rules. Never rename.
+  final String value;
+  final String label;
+
+  /// True only for [published] — the one status students can see.
+  bool get isLive => this == ResourceStatus.published;
+
+  static ResourceStatus parse(dynamic value) {
+    for (final s in values) {
+      if (s.value == value) return s;
+    }
+    return ResourceStatus.draft;
+  }
 }
 
 class LearnResource {
@@ -107,6 +121,7 @@ class LearnResource {
     this.questionIds = const [],
     this.status = ResourceStatus.published,
     this.createdBy,
+    this.revisionOf,
   });
 
   final String id;
@@ -168,6 +183,13 @@ class LearnResource {
   /// content. Audit only — access is decided by the `admin` claim.
   final String? createdBy;
 
+  /// Set on a revision: the id of the published item this draft will
+  /// replace when a reviewer approves it (`docs/CONTENT_ROLES.md`). The
+  /// published item keeps its id, so students' completion ticks survive.
+  final String? revisionOf;
+
+  bool get isRevision => revisionOf != null;
+
   /// True when the resource can actually be opened.
   ///
   /// A video with no `youtubeId` and an article with no `body` are both
@@ -201,6 +223,7 @@ class LearnResource {
       ).where((id) => id.trim().isNotEmpty).take(kMaxPinnedQuestions).toList(),
       status: ResourceStatus.parse(d['status']),
       createdBy: asStringOrNull(d['createdBy']),
+      revisionOf: asStringOrNull(d['revisionOf']),
     );
   }
 }

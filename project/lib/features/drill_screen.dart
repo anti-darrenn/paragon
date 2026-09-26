@@ -10,6 +10,7 @@ import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/report_problem_button.dart';
+import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/progress/mastery.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/theme/app_theme.dart';
@@ -21,6 +22,8 @@ import '../core/repositories/learn_progress_repository.dart';
 import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_theme.dart' show AppTheme;
 import '../core/widgets/load_error.dart';
+import '../core/study/study_dock.dart';
+import '../core/study/study_tool.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -243,7 +246,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       );
     }
 
-    return Scaffold(
+    final scaffold = Scaffold(
       appBar: AppBar(title: const Text('Drill')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -370,7 +373,13 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 if (_submitted)
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: ReportProblemButton(questionId: q.id),
+                    child: Wrap(
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        ReportProblemButton(questionId: q.id),
+                        QuestionBookmarkButton(question: q),
+                      ],
+                    ),
                   ),
                 const SizedBox(height: 24),
                 SizedBox(
@@ -404,6 +413,13 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
           );
         },
       ),
+    );
+
+    // Study tools (calculator, tables…) beside the questions.
+    return StudyDock(
+      subjectId: widget.subjectId ?? _sessionSubjectId,
+      studyContext: StudyContext.drill,
+      child: scaffold,
     );
   }
 }
