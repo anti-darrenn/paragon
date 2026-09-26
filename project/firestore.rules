@@ -170,9 +170,10 @@ service cloud.firestore {
     // an exact field set, and username/usernameKey can only be set by
     // claiming a matching reservation and are then immutable. Every other
     // field client code writes today (displayName, selectedSubjects,
-    // profile) is allow-listed explicitly in `clientWritableFields` below;
-    // anything not named there — including fields that don't exist yet,
-    // like a future XP or topicStats — is server-only by construction.
+    // profile, avatar, bio) is allow-listed explicitly in
+    // `clientWritableFields` below; anything not named there — including
+    // fields that don't exist yet, like a future XP or topicStats — is
+    // server-only by construction.
     match /users/{uid} {
       allow read: if isOwner(uid);
       allow delete: if isOwner(uid);
@@ -196,7 +197,22 @@ service cloud.firestore {
 
       allow update: if isOwner(uid)
         && usernameWriteIsValid(uid)
-        && onlyClientWritableFields();
+        && onlyClientWritableFields()
+        && profileFieldsAreValid();
+    }
+
+    // Shape checks for the profile fields a student edits. Checked on the
+    // document after the write, so a merge that leaves them alone passes,
+    // and an absent field (never set, or deleted) passes too.
+    // `avatar` is `preset:<id>` or `initials:<colour>` — see
+    // lib/core/models/avatar.dart. `bio` is capped at kBioMaxLength.
+    function profileFieldsAreValid() {
+      let after = request.resource.data;
+      return (!('avatar' in after)
+          || (after.avatar is string
+              && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
+        && (!('bio' in after)
+          || (after.bio is string && after.bio.size() <= 160));
     }
 
     // Allow-list, not a deny-list. Anything not named here cannot be
@@ -207,6 +223,7 @@ service cloud.firestore {
     function clientWritableFields() {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
+        'avatar', 'bio',
         'username', 'usernameKey',
         'email', 'isAnonymous'
       ];

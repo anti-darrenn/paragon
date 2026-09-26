@@ -358,6 +358,49 @@ async function usersAllowList(a, b) {
     ),
   );
 
+  // Avatar and bio: allow-listed, and shape-checked by
+  // profileFieldsAreValid(). The denials are the content.
+  expectOutcome(
+    'a preset avatar is writable',
+    ALLOW,
+    await commit(a.idToken, write(`users/${a.uid}`, { avatar: str('preset:owl') })),
+  );
+  expectOutcome(
+    'an initials avatar is writable',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, { avatar: str('initials:teal') }),
+    ),
+  );
+  for (const [why, value] of [
+    ['a URL', str('https://example.com/me.png')],
+    ['an unknown kind', str('photo:owl')],
+    ['upper case', str('preset:OWL')],
+    ['a number', int(3)],
+  ]) {
+    expectOutcome(
+      `an avatar that is ${why} is refused`,
+      DENY,
+      await commit(a.idToken, write(`users/${a.uid}`, { avatar: value })),
+    );
+  }
+  expectOutcome(
+    'a 160-character bio is writable',
+    ALLOW,
+    await commit(a.idToken, write(`users/${a.uid}`, { bio: str('b'.repeat(160)) })),
+  );
+  expectOutcome(
+    'a 161-character bio is refused',
+    DENY,
+    await commit(a.idToken, write(`users/${a.uid}`, { bio: str('b'.repeat(161)) })),
+  );
+  expectOutcome(
+    'a bio that is not a string is refused',
+    DENY,
+    await commit(a.idToken, write(`users/${a.uid}`, { bio: int(1) })),
+  );
+
   // The reason the allow-list is an allow-list. These fields do not exist
   // on any document yet; the point is that they are server-only from the
   // moment they do, with nothing to remember to lock down first.
