@@ -9,6 +9,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/answer_option.dart';
 import '../../../core/widgets/math_text.dart';
 import '../../lesson/lesson_screen.dart' show lessonPath;
+import '../cards/revision_cards_entry.dart';
 import 'notes_widgets.dart';
 import 'study_models.dart';
 import 'study_providers.dart';
@@ -26,6 +27,7 @@ class SavedScreen extends ConsumerWidget {
         appBar: AppBar(
           backgroundColor: AppColors.backgroundDark,
           title: const Text('Saved'),
+          actions: const [RevisionCardsAction()],
           bottom: const TabBar(
             indicatorColor: AppColors.primary,
             labelColor: AppColors.textPrimaryDark,

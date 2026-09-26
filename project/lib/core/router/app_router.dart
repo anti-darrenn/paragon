@@ -26,6 +26,7 @@ import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/settings/reading_settings_screen.dart';
 import 'package:paragon/features/study/offline/offline_topics_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
+import 'package:paragon/features/study/cards/card_review_screen.dart';
 import 'package:paragon/features/study/notes/saved_screen.dart';
 import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
@@ -360,6 +361,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/saved',
         builder: (context, state) => const SavedScreen(),
+      ),
+      // A subject's revision cards. Guests too: their schedule is kept on
+      // the device.
+      GoRoute(
+        path: '/cards/:subjectId',
+        builder: (context, state) =>
+            CardReviewScreen(subjectId: state.pathParameters['subjectId']!),
       ),
       // Topics saved for offline reading. Per device, like the above.
       GoRoute(
