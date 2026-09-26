@@ -294,7 +294,7 @@ class _LowDataToggle extends StatelessWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'Lesson videos load only when you tap them.',
+                  'Lesson videos and images load only when you tap them.',
                   style: AppTheme.caption.copyWith(
                     color: AppColors.textSecondaryDark,
                   ),

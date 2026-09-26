@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../lessons/lesson_doc.dart';
 import '../../models/lesson_asset.dart';
+import '../../providers/reading_settings_provider.dart';
 import '../../repositories/learn_repository.dart';
 import '../../theme/app_colors.dart';
 import '../../theme/app_theme.dart';
@@ -14,14 +15,33 @@ import '../full_latex_view.dart';
 /// `asset:<id>` images come from `lessonAssets` (see [LessonAsset]); plain
 /// `https://` links load from the web. Either way a missing or broken image
 /// says so in place — it never takes the article down with it.
-class FigureView extends ConsumerWidget {
+///
+/// In low-data mode nothing is fetched until the student taps "Tap to load
+/// image", and a tap loads that one image only.
+class FigureView extends ConsumerStatefulWidget {
   const FigureView({super.key, required this.block, required this.base});
 
   final FigureBlock block;
   final TextStyle base;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<FigureView> createState() => _FigureViewState();
+}
+
+class _FigureViewState extends ConsumerState<FigureView> {
+  /// Set by a tap in low-data mode. Once loaded, an image stays loaded.
+  bool _requested = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final block = widget.block;
+    if (ref.watch(lowDataModeProvider) && !_requested) {
+      return _TapToLoad(
+        caption: block.caption,
+        onTap: () => setState(() => _requested = true),
+      );
+    }
+
     final Widget image;
     final assetId = block.assetId;
     if (assetId != null) {
@@ -87,6 +107,51 @@ class FigureView extends ConsumerWidget {
       builder: (dialog) => GestureDetector(
         onTap: () => Navigator.of(dialog).pop(),
         child: InteractiveViewer(maxScale: 5, child: Center(child: image)),
+      ),
+    );
+  }
+}
+
+class _TapToLoad extends StatelessWidget {
+  const _TapToLoad({required this.caption, required this.onTap});
+  final String caption;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.surfaceDark,
+      shape: const RoundedRectangleBorder(
+        side: BorderSide(color: AppColors.borderDark),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+          child: Row(
+            children: [
+              const Icon(
+                Icons.image_outlined,
+                color: AppColors.textSecondaryDark,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  caption.isEmpty ? 'Image' : caption,
+                  style: AppTheme.bodyMd.copyWith(
+                    color: AppColors.textPrimaryDark,
+                  ),
+                ),
+              ),
+              Text(
+                'Tap to load image',
+                style: AppTheme.caption.copyWith(color: AppColors.primary),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

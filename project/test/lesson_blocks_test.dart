@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/models/lesson_asset.dart';
 import 'package:paragon/core/models/question.dart';
+import 'package:paragon/core/providers/reading_settings_provider.dart';
 import 'package:paragon/core/repositories/learn_repository.dart';
 import 'package:paragon/core/widgets/article_view.dart';
 
@@ -26,10 +27,12 @@ Future<void> _pump(
   WidgetTester tester,
   String body, {
   bool authorPreview = false,
+  bool lowData = false,
 }) async {
   await tester.pumpWidget(
     ProviderScope(
       overrides: [
+        lowDataModeProvider.overrideWithValue(lowData),
         pinnedQuestionsProvider.overrideWith(
           (ref, ids) async => ids == 'pq1' ? [_pastQuestion] : const [],
         ),
@@ -213,6 +216,16 @@ The final answer.
       await _pump(tester, '![A square](asset:svg1)');
       expect(find.byType(SvgPicture), findsOneWidget);
       expect(_text('A square'), findsOneWidget);
+    });
+
+    testWidgets('low-data mode loads an image only when tapped', (tester) async {
+      await _pump(tester, '![A square](asset:svg1)', lowData: true);
+      expect(find.text('Tap to load image'), findsOneWidget);
+      expect(find.byType(SvgPicture), findsNothing);
+
+      await tester.tap(find.text('Tap to load image'));
+      await tester.pumpAndSettle();
+      expect(find.byType(SvgPicture), findsOneWidget);
     });
 
     testWidgets('a missing asset says so, and the rest still renders', (

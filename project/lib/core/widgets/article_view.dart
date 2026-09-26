@@ -80,14 +80,15 @@ class ArticleView extends StatelessWidget {
   /// see them.
   final bool authorPreview;
 
+  /// The paragraph style an article uses unless given another. Callers
+  /// that apply the student's reading settings (line spacing, font) start
+  /// from this, so the defaults stay identical.
+  static TextStyle get defaultTextStyle =>
+      AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark, height: 1.6);
+
   @override
   Widget build(BuildContext context) {
-    final base =
-        textStyle ??
-        AppTheme.bodyLg.copyWith(
-          color: AppColors.textPrimaryDark,
-          height: 1.6,
-        );
+    final base = textStyle ?? defaultTextStyle;
 
     final doc = parseLessonDoc(body);
     if (doc.isEmpty) return const SizedBox.shrink();
