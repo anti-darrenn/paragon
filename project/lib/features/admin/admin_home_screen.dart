@@ -16,6 +16,7 @@ import '../../core/theme/app_theme.dart';
 import 'admin_flag_screen.dart';
 import 'admin_resource_editor_screen.dart';
 import 'studio/review_panels.dart';
+import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
 
 /// `/admin` — the content studio's home.
@@ -41,6 +42,8 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
   Widget build(BuildContext context) {
     final role = ref.watch(staffRoleProvider);
     final access = ref.watch(staffAccessProvider);
+    // Publishes this member's name and avatar for the rest of the team.
+    ref.watch(staffProfileSyncProvider);
     // The subjects this account works on come first, and the map opens
     // on the first of them; the rest stay browsable, read-only.
     final subjects = [...?ref.watch(subjectsProvider).asData?.value]
@@ -182,7 +185,7 @@ class _StatusQueue extends ConsumerWidget {
                     color: AppColors.textSecondaryDark,
                   ),
                 )
-              : ResourceList(resources: list),
+              : ResourceList(resources: list, showAuthor: true),
         ),
       ],
     );
@@ -429,9 +432,17 @@ class _TopicChip extends StatelessWidget {
 
 /// Items as rows linking to the editor. Shared with the topic planner.
 class ResourceList extends StatelessWidget {
-  const ResourceList({super.key, required this.resources});
+  const ResourceList({
+    super.key,
+    required this.resources,
+    this.showAuthor = false,
+  });
 
   final List<LearnResource> resources;
+
+  /// Leads each row with its author's avatar — for the review queues,
+  /// where who wrote it is the first thing a reviewer wants to know.
+  final bool showAuthor;
 
   @override
   Widget build(BuildContext context) {
@@ -445,7 +456,7 @@ class ResourceList extends StatelessWidget {
         children: [
           for (var i = 0; i < resources.length; i++) ...[
             if (i > 0) const Divider(height: 1, color: AppColors.borderDark),
-            ResourceRow(resource: resources[i]),
+            ResourceRow(resource: resources[i], showAuthor: showAuthor),
           ],
         ],
       ),
@@ -454,9 +465,15 @@ class ResourceList extends StatelessWidget {
 }
 
 class ResourceRow extends StatelessWidget {
-  const ResourceRow({super.key, required this.resource, this.trailing});
+  const ResourceRow({
+    super.key,
+    required this.resource,
+    this.trailing,
+    this.showAuthor = false,
+  });
 
   final LearnResource resource;
+  final bool showAuthor;
 
   /// Replaces the status badge (the planner puts a drag handle here).
   final Widget? trailing;
@@ -472,11 +489,13 @@ class ResourceRow extends StatelessWidget {
       onTap: editable
           ? () => context.push(adminResourcePath(resource.topicId, resource.id))
           : null,
-      leading: Icon(switch (resource.type) {
-        LearnResourceType.video => Icons.play_circle_outline_rounded,
-        LearnResourceType.exercise => Icons.edit_note_rounded,
-        _ => Icons.article_outlined,
-      }, color: AppColors.textSecondaryDark),
+      leading: showAuthor && resource.createdBy != null
+          ? StaffAvatar(uid: resource.createdBy!)
+          : Icon(switch (resource.type) {
+              LearnResourceType.video => Icons.play_circle_outline_rounded,
+              LearnResourceType.exercise => Icons.edit_note_rounded,
+              _ => Icons.article_outlined,
+            }, color: AppColors.textSecondaryDark),
       title: Text(
         resource.title.isEmpty ? '(untitled)' : resource.title,
         style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),

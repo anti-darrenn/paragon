@@ -66,18 +66,22 @@ void main() {
   });
 
   test('exportSize counts owned documents only', () async {
-    // 5 keyed-by-uid slots + 2 attempts + 1 note + 1 flag.
-    expect(await repo.exportSize('u1'), 9);
+    // 6 keyed-by-uid slots + 2 attempts + 1 note + 1 flag.
+    expect(await repo.exportSize('u1'), 10);
   });
 
   test('covers everything deletion removes', () async {
     await repo.requestSignOutEverywhere('u1');
+    await db.collection('staffProfiles').doc('u1').set({'displayName': 'A'});
     final before = await repo.exportOwnedDocuments('u1');
     await repo.deleteOwnedDocuments('u1');
     final after = await repo.exportOwnedDocuments('u1');
 
     // Control: the export saw data before deletion...
-    expect(before.keys, containsAll(['users', 'accountRequests']));
+    expect(
+      before.keys,
+      containsAll(['users', 'accountRequests', 'staffProfiles']),
+    );
     // ...and deletion left nothing the export can find.
     for (final key in [
       'users',
@@ -85,6 +89,7 @@ void main() {
       'learn',
       'study',
       'accountRequests',
+      'staffProfiles',
     ]) {
       expect(after.containsKey(key), isFalse, reason: key);
     }

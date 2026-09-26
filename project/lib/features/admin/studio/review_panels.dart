@@ -7,6 +7,7 @@ import '../../../core/repositories/admin_resource_repository.dart';
 import '../../../core/repositories/lesson_workflow.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
+import 'staff_profile.dart';
 
 String _when(DateTime? t) {
   if (t == null) return 'just now';
@@ -239,6 +240,8 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  StaffAvatar(uid: c.authorUid, fallbackName: c.authorName),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

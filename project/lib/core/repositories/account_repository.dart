@@ -117,6 +117,9 @@ class AccountRepository {
     await _db.collection('study').doc(uid).delete();
     // A pending "sign out everywhere" — see [requestSignOutEverywhere].
     await _db.collection('accountRequests').doc(uid).delete();
+    // A content-team member's name and avatar for the studio. A student
+    // has none; deleting a document that is not there is a no-op.
+    await _db.collection('staffProfiles').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 
@@ -159,6 +162,7 @@ class AccountRepository {
     'learn',
     'study',
     'accountRequests',
+    'staffProfiles',
   ];
 
   /// How many documents an export of [uid] would read, from `count()`
