@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/article_view.dart';
 import '../glossary/glossary_tool.dart' show IndexPage;
 import '../glossary/glossary_widgets.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// The subject's formulas, grouped by topic. Built from the formula boxes
 /// in its published lessons, like the glossary. Not allowed in the exam
@@ -99,8 +100,8 @@ class _FormulaEntry extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 4),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -109,7 +110,7 @@ class _FormulaEntry extends StatelessWidget {
           Text(
             f.title,
             style: AppTheme.bodyMd.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// One insertable block: what the toolbar button says and the text it
 /// writes. Templates are filled in, so an author edits rather than types
@@ -207,13 +207,13 @@ class BlockToolbar extends StatelessWidget {
     }) => Tooltip(
       message: tip ?? label,
       child: ActionChip(
-        avatar: Icon(icon, size: 16, color: AppColors.textSecondaryDark),
+        avatar: Icon(icon, size: 16, color: context.palette.textSecondary),
         label: Text(
           label,
-          style: AppTheme.caption.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.caption.copyWith(color: context.palette.textPrimary),
         ),
-        backgroundColor: AppColors.surfaceDark,
-        side: const BorderSide(color: AppColors.borderDark),
+        backgroundColor: context.palette.surface,
+        side: BorderSide(color: context.palette.border),
         onPressed: onTap,
       ),
     );

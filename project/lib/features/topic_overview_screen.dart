@@ -13,6 +13,7 @@ import '../core/widgets/app_top_nav.dart';
 import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
 import 'study/offline/save_offline_button.dart';
+import '../core/theme/app_palette.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -124,7 +125,7 @@ class _TopicBody extends StatelessWidget {
         Text(
           topic.name,
           style: AppTheme.displayLg.copyWith(
-            color: AppColors.textPrimaryDark,
+            color: context.palette.textPrimary,
             fontSize: isCompact ? 26 : 36,
           ),
         ),
@@ -144,7 +145,7 @@ class _TopicBody extends StatelessWidget {
               child: Text(
                 module.name,
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ),
@@ -339,7 +340,7 @@ class _LessonList extends ConsumerWidget {
             child: Text(
               '$done of $total done',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -417,7 +418,7 @@ class _SectionHeading extends StatelessWidget {
         Text(
           label,
           style: AppTheme.heading3.copyWith(
-            color: AppColors.textPrimaryDark,
+            color: context.palette.textPrimary,
             fontWeight: FontWeight.w700,
           ),
         ),
@@ -425,7 +426,7 @@ class _SectionHeading extends StatelessWidget {
         Expanded(
           child: Container(
             height: 1,
-            color: AppColors.borderDark.withAlpha((0.6 * 255).round()),
+            color: context.palette.border.withAlpha((0.6 * 255).round()),
           ),
         ),
       ],
@@ -472,10 +473,10 @@ class _LessonRowState extends State<_LessonRow> {
   Widget build(BuildContext context) {
     final isEnabled = widget.onTap != null;
     final borderColor = !isEnabled
-        ? AppColors.borderDark
+        ? context.palette.border
         : widget.isPrimary || _isHovered
         ? widget.accent.withAlpha((_isHovered ? 0.85 * 255 : 0.5 * 255).round())
-        : AppColors.borderDark;
+        : context.palette.border;
 
     final row = AnimatedContainer(
       duration: const Duration(milliseconds: 120),
@@ -483,7 +484,7 @@ class _LessonRowState extends State<_LessonRow> {
       decoration: BoxDecoration(
         color: isEnabled && _isHovered
             ? widget.accent.withAlpha((0.08 * 255).round())
-            : AppColors.surfaceDark,
+            : context.palette.surface,
         border: Border.all(color: borderColor),
         borderRadius: BorderRadius.circular(10),
       ),
@@ -495,13 +496,13 @@ class _LessonRowState extends State<_LessonRow> {
             decoration: BoxDecoration(
               color: isEnabled
                   ? widget.accent.withAlpha((0.14 * 255).round())
-                  : AppColors.trackDark,
+                  : context.palette.track,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(
               widget.icon,
               size: 19,
-              color: isEnabled ? widget.accent : AppColors.textSecondaryDark,
+              color: isEnabled ? widget.accent : context.palette.textSecondary,
             ),
           ),
           const SizedBox(width: 14),
@@ -514,7 +515,7 @@ class _LessonRowState extends State<_LessonRow> {
                   style: AppTheme.caption.copyWith(
                     color: isEnabled
                         ? widget.accent
-                        : AppColors.textSecondaryDark,
+                        : context.palette.textSecondary,
                     letterSpacing: 0.8,
                   ),
                 ),
@@ -523,8 +524,8 @@ class _LessonRowState extends State<_LessonRow> {
                   widget.title,
                   style: AppTheme.bodyLg.copyWith(
                     color: isEnabled
-                        ? AppColors.textPrimaryDark
-                        : AppColors.textSecondaryDark,
+                        ? context.palette.textPrimary
+                        : context.palette.textSecondary,
                     fontWeight: FontWeight.w600,
                     height: 1.3,
                   ),
@@ -533,7 +534,7 @@ class _LessonRowState extends State<_LessonRow> {
                 Text(
                   widget.subtitle,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ],
@@ -545,7 +546,7 @@ class _LessonRowState extends State<_LessonRow> {
                 ? Icons.chevron_right_rounded
                 : Icons.lock_outline_rounded,
             size: isEnabled ? 22 : 16,
-            color: isEnabled ? widget.accent : AppColors.borderDark,
+            color: isEnabled ? widget.accent : context.palette.border,
           ),
         ],
       ),
@@ -601,7 +602,7 @@ class _PracticeRail extends StatelessWidget {
           Text(
             canPractise ? 'Ready to practise?' : 'Nothing to practise yet',
             style: AppTheme.heading3.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -615,7 +616,7 @@ class _PracticeRail extends StatelessWidget {
                       'papers, with feedback after every answer.'
                 : 'Questions for this topic have not been added to Paragon '
                       'yet. Check back as content lands.',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
           ),
           const SizedBox(height: 16),
           SizedBox(
@@ -624,7 +625,7 @@ class _PracticeRail extends StatelessWidget {
               onPressed: canPractise ? onPractise : null,
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.primary,
-                disabledBackgroundColor: AppColors.trackDark,
+                disabledBackgroundColor: context.palette.track,
                 elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
@@ -635,7 +636,7 @@ class _PracticeRail extends StatelessWidget {
                 style: AppTheme.btnLabel.copyWith(
                   color: canPractise
                       ? Colors.white
-                      : AppColors.textSecondaryDark,
+                      : context.palette.textSecondary,
                 ),
               ),
             ),
@@ -668,14 +669,14 @@ class _Breadcrumb extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Text(
                 '/',
-                style: AppTheme.label.copyWith(color: AppColors.borderDark),
+                style: AppTheme.label.copyWith(color: context.palette.border),
               ),
             ),
           if (crumbs[i].path == null)
             Text(
               crumbs[i].label,
               style: AppTheme.label.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             )
           else
@@ -707,17 +708,17 @@ class _NotFound extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            const Icon(
+            Icon(
               Icons.search_off_rounded,
               size: 32,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
             const SizedBox(height: 12),
             Text(
               message,
               textAlign: TextAlign.center,
               style: AppTheme.bodyLg.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             const SizedBox(height: 20),

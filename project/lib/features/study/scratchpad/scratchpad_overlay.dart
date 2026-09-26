@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/app_colors.dart';
 import 'scratchpad_model.dart';
 import 'scratchpad_provider.dart';
+import '../../../core/theme/app_palette.dart';
 
-/// Ink colours on offer. On the dark theme, all three read clearly over
-/// the question underneath.
-const scratchpadInks = [
-  AppColors.textPrimaryDark,
+/// Ink colours on offer: the theme's text colour first, so the default ink
+/// reads clearly over the question underneath in either theme.
+List<Color> scratchpadInksFor(AppPalette palette) => [
+  palette.textPrimary,
   AppColors.accentBlue,
   AppColors.primary,
 ];
@@ -68,7 +69,7 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
         pad.addStroke(
           ScratchStroke(
             points: points,
-            color: scratchpadInks[_ink],
+            color: scratchpadInksFor(context.palette)[_ink],
             width: scratchpadWidths[_width],
           ),
         );
@@ -86,7 +87,7 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (dialog) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: const Text('Clear the scratchpad?'),
         content: const Text('You can undo this.'),
         actions: [
@@ -135,7 +136,7 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
                   strokes: model.strokes,
                   hidden: hidden,
                   live: _tool == _Tool.pen ? _live : const [],
-                  liveColor: scratchpadInks[_ink],
+                  liveColor: scratchpadInksFor(context.palette)[_ink],
                   liveWidth: scratchpadWidths[_width],
                   eraser: erasing ? _live.last : null,
                   scrim: AppColors.overlay.withAlpha(_seeThrough ? 25 : 70),
@@ -165,10 +166,10 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
   Widget _toolbar(ScratchpadModel model) {
     final pad = ScratchpadController.of(context);
     return Material(
-      color: AppColors.surfaceDark,
+      color: context.palette.surface,
       elevation: 6,
-      shape: const RoundedRectangleBorder(
-        side: BorderSide(color: AppColors.borderDark),
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: context.palette.border),
         borderRadius: BorderRadius.all(Radius.circular(12)),
       ),
       child: Padding(
@@ -177,7 +178,7 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
           alignment: WrapAlignment.center,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            for (var i = 0; i < scratchpadInks.length; i++)
+            for (var i = 0; i < scratchpadInksFor(context.palette).length; i++)
               _ToolButton(
                 tooltip: 'Pen colour ${i + 1}',
                 selected: _tool == _Tool.pen && _ink == i,
@@ -190,7 +191,7 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
                   width: 16,
                   height: 16,
                   decoration: BoxDecoration(
-                    color: scratchpadInks[i],
+                    color: scratchpadInksFor(context.palette)[i],
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -273,10 +274,10 @@ class _ToolButton extends StatelessWidget {
     return IconButton(
       tooltip: tooltip,
       onPressed: onPressed,
-      color: AppColors.textPrimaryDark,
-      disabledColor: AppColors.borderDark,
+      color: context.palette.textPrimary,
+      disabledColor: context.palette.border,
       style: IconButton.styleFrom(
-        backgroundColor: selected ? AppColors.trackDark : null,
+        backgroundColor: selected ? context.palette.track : null,
         side: selected ? const BorderSide(color: AppColors.primary) : null,
       ),
       icon: child,

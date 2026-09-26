@@ -24,6 +24,7 @@ import '../core/theme/app_theme.dart' show AppTheme;
 import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
+import '../core/theme/app_palette.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -241,7 +242,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   '/topic/${widget.topicId}/test',
                 )
               : null,
-          onSignIn: () => context.push('/signin'),
+          onSignIn: () => context.push('/account/upgrade'),
         ),
       );
     }
@@ -288,16 +289,16 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 // Top progress bar
                 LinearProgressIndicator(
                   value: progressValue,
-                  backgroundColor: AppColors.trackDark,
+                  backgroundColor: context.palette.track,
                   valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
                   minHeight: 3,
                 ),
                 const SizedBox(height: 12),
                 Text(
                   'Question ${_index + 1} of ${questions.length}',
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodySmall?.copyWith(color: Colors.white54),
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: context.palette.onMedium,
+                  ),
                 ),
                 const SizedBox(height: 12),
                 FullLatexView(
@@ -308,7 +309,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 ),
                 const SizedBox(height: 24),
                 ...List.generate(q.options.length, (i) {
-                  Color borderColor = Colors.white24;
+                  Color borderColor = context.palette.outline;
                   if (_submitted) {
                     if (i == q.correctIndex) {
                       borderColor = AppColors.correct;
@@ -323,8 +324,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                             ? AppColors.correct
                             : (i == _selected
                                   ? AppColors.wrong
-                                  : Colors.white70))
-                      : (_selected == i ? Colors.white : Colors.white70);
+                                  : context.palette.onHigh))
+                      : (_selected == i
+                            ? context.palette.textStrong
+                            : context.palette.onHigh);
 
                   return GestureDetector(
                     onTap: _submitted
@@ -359,8 +362,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     ),
                     child: FullLatexView(
                       latex: q.explanation,
-                      textStyle: const TextStyle(
-                        color: Colors.white70,
+                      textStyle: TextStyle(
+                        color: context.palette.onHigh,
                         fontSize: 14,
                       ),
                     ),
@@ -477,7 +480,7 @@ class _SessionSummary extends StatelessWidget {
                 'Session complete',
                 textAlign: TextAlign.center,
                 style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
               const SizedBox(height: 24),
@@ -485,16 +488,16 @@ class _SessionSummary extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 28),
                 decoration: BoxDecoration(
-                  color: AppColors.surfaceDark,
+                  color: context.palette.surface,
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppColors.borderDark),
+                  border: Border.all(color: context.palette.border),
                 ),
                 child: Column(
                   children: [
                     Text(
                       '$correct / $answered',
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style: TextStyle(
+                        color: context.palette.textStrong,
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
                         height: 1,
@@ -504,7 +507,7 @@ class _SessionSummary extends StatelessWidget {
                     Text(
                       '$percent% correct',
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],
@@ -518,10 +521,10 @@ class _SessionSummary extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
-                  color: AppColors.surfaceDark,
+                  color: context.palette.surface,
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
-                    color: _levelledUp ? accent : AppColors.borderDark,
+                    color: _levelledUp ? accent : context.palette.border,
                   ),
                 ),
                 child: Row(
@@ -537,7 +540,7 @@ class _SessionSummary extends StatelessWidget {
                                 ? 'Now ${after.label.toLowerCase()}'
                                 : 'Still ${after.label.toLowerCase()}',
                             style: AppTheme.bodyLg.copyWith(
-                              color: AppColors.textPrimaryDark,
+                              color: context.palette.textPrimary,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -548,7 +551,7 @@ class _SessionSummary extends StatelessWidget {
                                       'in this topic.'
                                 : 'Keep going to move up in this topic.',
                             style: AppTheme.bodyMd.copyWith(
-                              color: AppColors.textSecondaryDark,
+                              color: context.palette.textSecondary,
                             ),
                           ),
                         ],
@@ -589,7 +592,7 @@ class _SessionSummary extends StatelessWidget {
                 child: OutlinedButton(
                   onPressed: onDone,
                   style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: AppColors.borderDark),
+                    side: BorderSide(color: context.palette.border),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -597,7 +600,7 @@ class _SessionSummary extends StatelessWidget {
                   child: Text(
                     'Done',
                     style: AppTheme.btnLabel.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                 ),
@@ -680,13 +683,13 @@ class _Locked extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 44, color: AppColors.textSecondaryDark),
+            Icon(icon, size: 44, color: context.palette.textSecondary),
             const SizedBox(height: 16),
             Text(
               title,
               textAlign: TextAlign.center,
               style: AppTheme.heading2.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
               ),
             ),
             const SizedBox(height: 10),
@@ -694,7 +697,7 @@ class _Locked extends StatelessWidget {
               body,
               textAlign: TextAlign.center,
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             const SizedBox(height: 28),
@@ -706,11 +709,15 @@ class _Locked extends StatelessWidget {
                   backgroundColor: isTestGate
                       ? AppColors.secondary
                       : AppColors.primary,
-                  disabledBackgroundColor: AppColors.trackDark,
+                  disabledBackgroundColor: context.palette.track,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
                 child: Text(
-                  isTestGate ? 'Take the topic test' : 'Sign in',
+                  isTestGate
+                      ? 'Take the topic test'
+                      : access == DrillAccess.guestBlocked
+                      ? 'Create an account'
+                      : 'Sign in',
                   style: AppTheme.btnLabel.copyWith(color: Colors.white),
                 ),
               ),

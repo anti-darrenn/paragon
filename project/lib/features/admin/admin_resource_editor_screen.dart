@@ -30,6 +30,7 @@ import 'studio/image_upload.dart' deferred as image_upload;
 import 'studio/problems_panel.dart';
 import 'studio/review_panels.dart';
 import 'studio/studio_storage.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Path of the editor for an existing resource — also the link in the
 /// draft-notification email (`tools/admin/notify_drafts.js`).
@@ -250,7 +251,7 @@ class _AdminResourceEditorScreenState
         }
       },
       child: Scaffold(
-        backgroundColor: AppColors.backgroundDark,
+        backgroundColor: context.palette.background,
         appBar: AppBar(
           title: Text(
             _isNew ? 'New $noun' : 'Edit $noun',
@@ -283,7 +284,7 @@ class _AdminResourceEditorScreenState
                     child: Text(
                       topic.name,
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ),
@@ -301,7 +302,7 @@ class _AdminResourceEditorScreenState
                     child: Text(
                       'This resource no longer exists.',
                       style: AppTheme.bodyMd.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   )
@@ -314,9 +315,9 @@ class _AdminResourceEditorScreenState
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Expanded(child: _editorPane()),
-                              const VerticalDivider(
+                              VerticalDivider(
                                 width: 1,
-                                color: AppColors.borderDark,
+                                color: context.palette.border,
                               ),
                               Expanded(child: _previewPane()),
                             ],
@@ -564,13 +565,13 @@ class _AdminResourceEditorScreenState
 
   Widget _label(String text) => Text(
     text,
-    style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+    style: AppTheme.label.copyWith(color: context.palette.textSecondary),
   );
 
   Widget _hint(String text, {Color? color}) => Text(
     text,
     style: AppTheme.caption.copyWith(
-      color: color ?? AppColors.textSecondaryDark,
+      color: color ?? context.palette.textSecondary,
     ),
   );
 
@@ -585,21 +586,21 @@ class _AdminResourceEditorScreenState
       maxLines: null,
       keyboardType: TextInputType.multiline,
       style: AppTheme.bodyMd.copyWith(
-        color: AppColors.textPrimaryDark,
+        color: context.palette.textPrimary,
         fontFamily: monospace ? 'monospace' : null,
         height: 1.5,
       ),
       decoration: InputDecoration(
         filled: true,
-        fillColor: AppColors.surfaceDark,
+        fillColor: context.palette.surface,
         contentPadding: const EdgeInsets.all(16),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: AppColors.borderDark),
+          borderSide: BorderSide(color: context.palette.border),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: AppColors.borderDark),
+          borderSide: BorderSide(color: context.palette.border),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
@@ -624,9 +625,9 @@ class _AdminResourceEditorScreenState
           tooltip: 'Copy this block',
           visualDensity: VisualDensity.compact,
           iconSize: 16,
-          icon: const Icon(
+          icon: Icon(
             Icons.copy_all_rounded,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           onPressed: () async {
             await _storage.writeClipboard(block.source);
@@ -687,7 +688,7 @@ class _AdminResourceEditorScreenState
                   Text(
                     r.title,
                     style: AppTheme.heading2.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -722,7 +723,7 @@ class _AdminResourceEditorScreenState
       return Text(
         'This subject is outside the ones you work on, so you can read this '
         'but not change it.',
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
       );
     }
 
@@ -741,7 +742,7 @@ class _AdminResourceEditorScreenState
       buttons.add(
         outline(
           'Save draft',
-          AppColors.textPrimaryDark,
+          context.palette.textPrimary,
           () => _save(ResourceStatus.draft),
         ),
       );
@@ -752,7 +753,7 @@ class _AdminResourceEditorScreenState
         buttons.add(
           outline(
             'Save changes',
-            AppColors.textPrimaryDark,
+            context.palette.textPrimary,
             () => _save(status),
           ),
         );
@@ -771,7 +772,7 @@ class _AdminResourceEditorScreenState
         );
       }
       buttons.add(
-        outline('Save', AppColors.textPrimaryDark, () => _save(status)),
+        outline('Save', context.palette.textPrimary, () => _save(status)),
       );
     }
 
@@ -930,7 +931,7 @@ class _AdminResourceEditorScreenState
     final ok = await showDialog<bool>(
       context: context,
       builder: (dialog) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: const Text('Request changes'),
         content: TextField(
           controller: reason,
@@ -1167,7 +1168,7 @@ class _AdminResourceEditorScreenState
     final result = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(title),
         content: Text(message),
         actions: [
@@ -1213,14 +1214,14 @@ class _PinnedList extends ConsumerWidget {
             leading: Text(
               '${i + 1}',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             title: byId[ids[i]] != null
                 ? FullLatexView(
                     latex: byId[ids[i]]!.text,
                     textStyle: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                     ),
                   )
                 : Text(
@@ -1228,7 +1229,7 @@ class _PinnedList extends ConsumerWidget {
                         ? 'Loading…'
                         : '${ids[i]} — no longer available, will be skipped',
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
             trailing: IconButton(
@@ -1302,7 +1303,7 @@ class _QuestionPickerState extends ConsumerState<_QuestionPicker> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       title: Text('Choose questions (${_chosen.length} chosen)'),
       content: SizedBox(
         width: 640,
@@ -1319,7 +1320,7 @@ class _QuestionPickerState extends ConsumerState<_QuestionPicker> {
                       title: FullLatexView(
                         latex: q.text,
                         textStyle: AppTheme.bodyMd.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                         ),
                       ),
                       subtitle: Text(
@@ -1328,7 +1329,7 @@ class _QuestionPickerState extends ConsumerState<_QuestionPicker> {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                     ),

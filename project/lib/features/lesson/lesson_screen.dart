@@ -20,6 +20,7 @@ import 'article_pane.dart';
 import 'exercise_pane.dart';
 import 'lesson_sidebar.dart';
 import 'video_pane.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Path of one Learn item. The one place this shape is written.
 String lessonPath(String topicId, String resourceId) =>
@@ -121,7 +122,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final topic = ref.watch(topicByIdProvider(widget.topicId)).asData?.value;
 
     final scaffold = Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       body: Column(
         children: [
           const AppTopNav(),
@@ -203,7 +204,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
             count: resources.length,
             onShowList: () => showModalBottomSheet<void>(
               context: context,
-              backgroundColor: AppColors.surfaceDark,
+              backgroundColor: context.palette.surface,
               isScrollControlled: true,
               builder: (_) => SafeArea(
                 child: SingleChildScrollView(
@@ -272,9 +273,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           child: isCompact
               ? const SizedBox.shrink()
               : DecoratedBox(
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     border: Border(
-                      right: BorderSide(color: AppColors.borderDark),
+                      right: BorderSide(color: context.palette.border),
                     ),
                   ),
                   child: ListView(
@@ -330,7 +331,7 @@ class _SidebarHeader extends StatelessWidget {
           Text(
             topic?.name ?? '',
             style: AppTheme.heading3.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -338,7 +339,7 @@ class _SidebarHeader extends StatelessWidget {
           Text(
             '$done of $total done',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           const SizedBox(height: 8),
@@ -347,7 +348,7 @@ class _SidebarHeader extends StatelessWidget {
             child: LinearProgressIndicator(
               value: total == 0 ? 0 : done / total,
               minHeight: 4,
-              backgroundColor: AppColors.trackDark,
+              backgroundColor: context.palette.track,
               color: AppColors.correct,
             ),
           ),
@@ -373,30 +374,27 @@ class _CompactHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: AppColors.surfaceDark,
+      color: context.palette.surface,
       child: InkWell(
         onTap: onShowList,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           child: Row(
             children: [
-              const Icon(
-                Icons.list_rounded,
-                color: AppColors.textSecondaryDark,
-              ),
+              Icon(Icons.list_rounded, color: context.palette.textSecondary),
               const SizedBox(width: 10),
               Expanded(
                 child: Text(
                   '${topic?.name ?? 'Lesson'} · $position of $count',
                   overflow: TextOverflow.ellipsis,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
               ),
-              const Icon(
+              Icon(
                 Icons.expand_more_rounded,
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ],
           ),
@@ -430,9 +428,9 @@ class _UpNextBar extends StatelessWidget {
         : ('End of lesson', null);
 
     return Container(
-      decoration: const BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border(top: BorderSide(color: AppColors.borderDark)),
+      decoration: BoxDecoration(
+        color: context.palette.surface,
+        border: Border(top: BorderSide(color: context.palette.border)),
       ),
       padding: EdgeInsets.symmetric(
         horizontal: contentGutterFor(context),
@@ -493,7 +491,7 @@ class _Message extends StatelessWidget {
     return Center(
       child: Text(
         text,
-        style: AppTheme.bodyLg.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.bodyLg.copyWith(color: context.palette.textSecondary),
       ),
     );
   }

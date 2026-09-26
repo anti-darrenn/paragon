@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../auth/guest_limits.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// Tells a guest that what they are looking at is not being kept.
 ///
@@ -46,23 +47,23 @@ class GuestNotice extends StatelessWidget {
             child: Text(
               message ?? GuestLimits.progressNotKeptMessage,
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
           const SizedBox(width: 8),
-          // `push`, not `go`: signing in from here should return the
-          // student to what they were doing, and an upgrade starts a fresh
-          // real-account session rather than linking the anonymous uid.
+          // To the upgrade screen, not `/signin`: making an account there
+          // links this guest's uid, so what the notice is warning about is
+          // kept rather than left behind.
           TextButton(
-            onPressed: () => context.push('/signin'),
+            onPressed: () => context.push('/account/upgrade'),
             style: TextButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               minimumSize: Size.zero,
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
             child: Text(
-              'Sign in',
+              'Keep it',
               style: AppTheme.caption.copyWith(color: AppColors.primary),
             ),
           ),

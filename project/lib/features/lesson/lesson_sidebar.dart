@@ -4,6 +4,7 @@ import '../../core/models/learn_resource.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'video_pane.dart';
+import '../../core/theme/app_palette.dart';
 
 /// The topic's lesson sequence: what the student is on, what is done,
 /// what comes next. The wide layout's left column; the compact layout
@@ -72,7 +73,9 @@ class _Row extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final muted = !resource.isAvailable;
-    final fg = muted ? AppColors.textSecondaryDark : AppColors.textPrimaryDark;
+    final fg = muted
+        ? context.palette.textSecondary
+        : context.palette.textPrimary;
 
     return Semantics(
       selected: isCurrent,
@@ -102,8 +105,8 @@ class _Row extends StatelessWidget {
                 color: isDone
                     ? AppColors.correct
                     : muted
-                    ? AppColors.borderDark
-                    : AppColors.textSecondaryDark,
+                    ? context.palette.border
+                    : context.palette.textSecondary,
               ),
               const SizedBox(width: 12),
               Expanded(
@@ -125,7 +128,7 @@ class _Row extends StatelessWidget {
                     Text(
                       _meta,
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],

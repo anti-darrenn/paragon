@@ -8,6 +8,7 @@ import '../../../core/repositories/learning_repository.dart';
 import '../../../core/repositories/staff_invite_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// `/admin/team`: who writes and reviews, and for which subjects. Admins
 /// only; the rules refuse everyone else.
@@ -113,7 +114,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
     final invites = ref.watch(staffInvitesProvider);
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Team')),
       body: Center(
         child: ConstrainedBox(
@@ -126,7 +127,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 'and handle problem reports. Limit either to some subjects, or allow all. '
                 'They need an account first: they sign up in the app like anyone else.',
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
               const SizedBox(height: 20),
@@ -192,7 +193,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
               Text(
                 'The team',
                 style: AppTheme.heading3.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
               const SizedBox(height: 4),
@@ -200,7 +201,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                 'Everyone added here. Accounts given a role some other way (the '
                 'set_role.js script) are not listed.',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
               const SizedBox(height: 12),
@@ -214,7 +215,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
                     ? Text(
                         'Nobody added yet.',
                         style: AppTheme.bodyMd.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       )
                     : Column(
@@ -268,11 +269,11 @@ class _InviteRow extends StatelessWidget {
       _ => AppColors.warning,
     };
     return Card(
-      color: AppColors.surfaceDark,
+      color: context.palette.surface,
       child: ListTile(
         title: Text(
           invite.email,
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
         ),
         subtitle: Text(
           [
@@ -286,7 +287,7 @@ class _InviteRow extends StatelessWidget {
         ),
         isThreeLine: true,
         trailing: PopupMenuButton<String>(
-          color: AppColors.surfaceDark,
+          color: context.palette.surface,
           onSelected: (v) => switch (v) {
             'edit' => onEdit(),
             'remove' => onRemove(),

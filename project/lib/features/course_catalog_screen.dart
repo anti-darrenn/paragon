@@ -7,6 +7,7 @@ import '../core/repositories/course_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/app_top_nav.dart';
+import '../core/theme/app_palette.dart';
 
 /// Course catalog — `/courses`.
 ///
@@ -33,7 +34,7 @@ class CourseCatalogScreen extends ConsumerWidget {
           Text(
             'Courses',
             style: AppTheme.displayLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontSize: isCompact ? 28 : 40,
             ),
           ),
@@ -42,7 +43,7 @@ class CourseCatalogScreen extends ConsumerWidget {
             'Every WAEC subject Paragon covers. Pick one to see its modules '
             'and topics.',
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           SizedBox(height: isCompact ? 28 : 40),
@@ -60,7 +61,7 @@ class CourseCatalogScreen extends ConsumerWidget {
                   'again.',
                   textAlign: TextAlign.center,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ),
@@ -222,7 +223,7 @@ class _CourseCardState extends State<_CourseCard> {
               Text(
                 course.name,
                 style: AppTheme.heading2.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -230,7 +231,7 @@ class _CourseCardState extends State<_CourseCard> {
               Text(
                 course.blurb,
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                   height: 1.45,
                 ),
               ),
@@ -244,7 +245,7 @@ class _CourseCardState extends State<_CourseCard> {
                               '${course.moduleCount == 1 ? 'module' : 'modules'}'
                               '${course.isLive ? '' : ' planned'}',
                     style: AppTheme.label.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                   const Spacer(),
@@ -278,7 +279,7 @@ class _GroupLabel extends StatelessWidget {
     return Text(
       text,
       style: AppTheme.caption.copyWith(
-        color: AppColors.textSecondaryDark,
+        color: context.palette.textSecondary,
         letterSpacing: 0.8,
       ),
     );

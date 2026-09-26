@@ -151,6 +151,43 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── ACCOUNT REQUESTS ────────────────────────────────────────
+    // "Sign out everywhere" needs the Admin SDK (revokeRefreshTokens),
+    // so the app files a request here and
+    // `tools/admin/apply_account_requests.js` carries it out every 15
+    // minutes, then deletes it. One per student, id'd by uid; exact shape,
+    // real server time, and only the one request type so far.
+    match /accountRequests/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly(['type', 'requestedAt'])
+        && request.resource.data.type == 'revokeSessions'
+        && request.resource.data.requestedAt == request.time;
+    }
+
+    // ── STAFF PROFILES ──────────────────────────────────────────
+    // A team member's name and avatar, published by themselves so the
+    // rest of the team can see who wrote a comment or an item — users/
+    // {uid} stays owner-only for staff as for everyone. Readable by the
+    // team and by its owner (so a student's export and deletion can look
+    // for one without being refused); written only by a team member, for
+    // themselves, in exactly this shape.
+    match /staffProfiles/{uid} {
+      allow read: if isWriter() || isOwner(uid);
+      allow delete: if isOwner(uid) || isAdmin();
+      allow create, update: if isOwner(uid) && isWriter()
+        && request.resource.data.keys()
+             .hasOnly(['displayName', 'avatar', 'updatedAt'])
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 60
+        && (!('avatar' in request.resource.data)
+          || (request.resource.data.avatar is string
+            && request.resource.data.avatar
+                 .matches('^(preset|initials):[a-z_]{2,20}$')))
+        && request.resource.data.updatedAt == request.time;
+    }
+
     // ── TEAM REQUESTS ───────────────────────────────────────────
     // Admins manage the content team from the studio's Team page. Claims
     // can only be set with the Admin SDK, so the page writes a request
@@ -170,9 +207,10 @@ service cloud.firestore {
     // an exact field set, and username/usernameKey can only be set by
     // claiming a matching reservation and are then immutable. Every other
     // field client code writes today (displayName, selectedSubjects,
-    // profile) is allow-listed explicitly in `clientWritableFields` below;
-    // anything not named there — including fields that don't exist yet,
-    // like a future XP or topicStats — is server-only by construction.
+    // profile, avatar, bio) is allow-listed explicitly in
+    // `clientWritableFields` below; anything not named there — including
+    // fields that don't exist yet, like a future XP or topicStats — is
+    // server-only by construction.
     match /users/{uid} {
       allow read: if isOwner(uid);
       allow delete: if isOwner(uid);
@@ -196,7 +234,39 @@ service cloud.firestore {
 
       allow update: if isOwner(uid)
         && usernameWriteIsValid(uid)
-        && onlyClientWritableFields();
+        && onlyClientWritableFields()
+        && clientFieldsAreValid();
+    }
+
+    // Shape checks for the fields a student edits directly. Checked on the
+    // document after the write, so a merge that leaves them alone passes,
+    // and an absent field (never set, or deleted) passes too.
+    // `avatar` is `preset:<id>` or `initials:<colour>` — see
+    // lib/core/models/avatar.dart. `bio` is capped at kBioMaxLength.
+    function clientFieldsAreValid() {
+      let after = request.resource.data;
+      // A scheduled deletion is stamped with the real server time (the
+      // 30 days are counted from it) or removed to cancel it. A
+      // client-chosen date could bring the deletion forward or push it
+      // back indefinitely.
+      let deletionStamp = !request.resource.data.diff(resource.data)
+          .affectedKeys().hasAny(['deletionRequestedAt'])
+        || !('deletionRequestedAt' in after)
+        || after.deletionRequestedAt == request.time;
+      // Accepting the terms records the version with the server's clock,
+      // together; neither can be written alone or backdated.
+      let legalStamp = !request.resource.data.diff(resource.data)
+          .affectedKeys().hasAny(['legalVersion', 'legalAcceptedAt'])
+        || (after.legalVersion is string
+          && after.legalVersion.size() <= 32
+          && after.legalAcceptedAt == request.time);
+      return deletionStamp && legalStamp
+        && (!('prefs' in after) || prefsAreValid(after.prefs))
+        && (!('avatar' in after)
+          || (after.avatar is string
+              && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
+        && (!('bio' in after)
+          || (after.bio is string && after.bio.size() <= 160));
     }
 
     // Allow-list, not a deny-list. Anything not named here cannot be
@@ -207,6 +277,8 @@ service cloud.firestore {
     function clientWritableFields() {
       return [
         'displayName', 'selectedSubjects', 'profile', 'updatedAt',
+        'avatar', 'bio', 'usernameChangedAt', 'deletionRequestedAt',
+        'legalVersion', 'legalAcceptedAt', 'prefs',
         'username', 'usernameKey',
         'email', 'isAnonymous'
       ];
@@ -281,17 +353,53 @@ service cloud.firestore {
     // rules can compute `.lower()` but cannot strip characters, so any
     // richer normalisation would be unverifiable here and uniqueness
     // would collapse back to a client-side promise.
+    // A username is set once by claiming a reservation, and after that
+    // may only move to another reservation the student owns, at most once
+    // every 90 days (UsernameRules.changeCooldown). `usernameChangedAt`
+    // is written only as part of such a change and only as the real
+    // server time — otherwise a client could backdate it and skip the
+    // wait. Old reservations are never released (see /usernames below).
     function usernameWriteIsValid(uid) {
       let after = request.resource.data;
       let hadUsername = 'username' in resource.data
         && resource.data.username is string
         && resource.data.username.size() > 0;
+      let unchanged = after.username == resource.data.username
+        && after.usernameKey == resource.data.usernameKey;
+      let stampUntouched = !request.resource.data.diff(resource.data)
+        .affectedKeys().hasAny(['usernameChangedAt']);
 
       return hadUsername
-        ? (after.username == resource.data.username
-            && after.usernameKey == resource.data.usernameKey)
-        : (!('username' in after) && !('usernameKey' in after))
-          || claimsOwnReservation(uid, after);
+        ? (unchanged && stampUntouched) || usernameChangeIsValid(uid, after)
+        : stampUntouched
+          && ((!('username' in after) && !('usernameKey' in after))
+            || claimsOwnReservation(uid, after));
+    }
+
+    function usernameChangeIsValid(uid, after) {
+      return claimsOwnReservation(uid, after)
+        && after.usernameChangedAt == request.time
+        && (!('usernameChangedAt' in resource.data)
+          || request.time > resource.data.usernameChangedAt
+               + duration.value(90, 'd'));
+    }
+
+    // Settings that follow an account between devices —
+    // lib/core/prefs/account_prefs.dart. Closed key set, each typed and
+    // bounded; there is nothing here anything else reads.
+    function prefsAreValid(p) {
+      return p is map
+        && p.keys().hasOnly(['textScaleStep', 'lineSpacing', 'font',
+                             'lowDataMode', 'analytics', 'theme'])
+        && (!('textScaleStep' in p)
+          || (p.textScaleStep is int
+            && p.textScaleStep >= 0 && p.textScaleStep <= 4))
+        && (!('lineSpacing' in p)
+          || p.lineSpacing in ['normal', 'relaxed', 'loose'])
+        && (!('font' in p) || p.font in ['standard', 'hyperlegible'])
+        && (!('lowDataMode' in p) || p.lowDataMode is bool)
+        && (!('analytics' in p) || p.analytics is bool)
+        && (!('theme' in p) || p.theme in ['dark', 'light', 'system']);
     }
 
     function claimsOwnReservation(uid, after) {
@@ -494,7 +602,9 @@ service cloud.firestore {
         && request.resource.data.raw.lower() == normalised
         && normalised.matches('^[a-z0-9_]{4,20}$');
 
-      // Permanent: no renaming, no releasing, no reuse after deletion.
+      // Permanent: no renaming, no releasing, no reuse after deletion —
+      // and none after a student moves to a new handle either, so a name
+      // someone gave up cannot be taken to pass as them.
       allow update, delete: if false;
     }
   }

@@ -176,17 +176,19 @@ void main() {
   group('OnboardingStep', () {
     test('next walks the funnel in order and terminates', () {
       expect(OnboardingStep.username.next, OnboardingStep.displayName);
-      expect(OnboardingStep.displayName.next, OnboardingStep.subjects);
+      expect(OnboardingStep.displayName.next, OnboardingStep.avatar);
+      expect(OnboardingStep.avatar.next, OnboardingStep.subjects);
       expect(OnboardingStep.subjects.next, OnboardingStep.profile);
       expect(OnboardingStep.profile.next, OnboardingStep.complete);
       expect(OnboardingStep.complete.next, OnboardingStep.complete);
     });
 
-    test('step numbers cover 1..4 and complete has none', () {
+    test('step numbers cover 1..5 and complete has none', () {
       expect(OnboardingStep.username.stepNumber, 1);
       expect(OnboardingStep.displayName.stepNumber, 2);
-      expect(OnboardingStep.subjects.stepNumber, 3);
-      expect(OnboardingStep.profile.stepNumber, 4);
+      expect(OnboardingStep.avatar.stepNumber, 3);
+      expect(OnboardingStep.subjects.stepNumber, 4);
+      expect(OnboardingStep.profile.stepNumber, 5);
       expect(OnboardingStep.complete.stepNumber, isNull);
     });
 

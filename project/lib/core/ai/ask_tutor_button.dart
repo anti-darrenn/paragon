@@ -5,6 +5,7 @@ import '../models/learn_resource.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
 import 'ai_tutor.dart';
+import '../theme/app_palette.dart';
 
 /// "Ask about this". Greyed out with a *Coming soon* tooltip while
 /// [AiTutor.isAvailable] is false, which is always, for now; see
@@ -28,7 +29,9 @@ class AskTutorButton extends ConsumerWidget {
         label: Text(
           available ? 'Ask' : 'Ask (soon)',
           style: AppTheme.caption.copyWith(
-            color: available ? AppColors.primary : AppColors.textSecondaryDark,
+            color: available
+                ? AppColors.primary
+                : context.palette.textSecondary,
           ),
         ),
       ),

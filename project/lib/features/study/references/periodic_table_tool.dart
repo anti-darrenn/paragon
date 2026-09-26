@@ -6,6 +6,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
 import 'periodic_table_data.dart';
+import '../../../core/theme/app_palette.dart';
 
 class PeriodicTableTool extends StudyTool {
   const PeriodicTableTool();
@@ -111,7 +112,7 @@ class _PeriodicTableScreenState extends State<PeriodicTableScreen> {
           child: TextField(
             controller: _search,
             onChanged: (_) => setState(() {}),
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
             decoration: InputDecoration(
               isDense: true,
               prefixIcon: const Icon(Icons.search),
@@ -134,7 +135,7 @@ class _PeriodicTableScreenState extends State<PeriodicTableScreen> {
                 ? Text(
                     'No element matches “${q.trim()}”.',
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   )
                 : Wrap(
@@ -181,7 +182,7 @@ class _PeriodicTableScreenState extends State<PeriodicTableScreen> {
                     Text(
                       _capitalise(entry.key),
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],
@@ -199,7 +200,7 @@ class _PeriodicTableScreenState extends State<PeriodicTableScreen> {
             'the mass number of its most stable known isotope. Tap an '
             'element for details.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ),
@@ -240,7 +241,7 @@ class _PeriodicGrid extends StatelessWidget {
         _ElementTile(element: e, dimmed: !isMatch(e));
 
     final label = AppTheme.caption.copyWith(
-      color: AppColors.textSecondaryDark,
+      color: context.palette.textSecondary,
       fontSize: 10,
     );
 
@@ -316,7 +317,7 @@ class _SeriesMarker extends StatelessWidget {
       child: Text(
         text,
         style: AppTheme.caption.copyWith(
-          color: AppColors.textSecondaryDark,
+          color: context.palette.textSecondary,
           fontSize: 10,
         ),
       ),
@@ -353,7 +354,7 @@ class _ElementTile extends StatelessWidget {
                 Text(
                   '${e.z}',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                     fontSize: 9,
                   ),
                 ),
@@ -362,7 +363,7 @@ class _ElementTile extends StatelessWidget {
                     child: Text(
                       e.symbol,
                       style: AppTheme.bodyLg.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                         fontWeight: FontWeight.w700,
                         height: 1,
                       ),
@@ -375,7 +376,7 @@ class _ElementTile extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.clip,
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                     fontSize: 8.5,
                   ),
                 ),
@@ -392,7 +393,7 @@ class _ElementTile extends StatelessWidget {
 Future<void> showElementCard(BuildContext context, ChemicalElement e) {
   return showModalBottomSheet<void>(
     context: context,
-    backgroundColor: AppColors.surfaceDark,
+    backgroundColor: context.palette.surface,
     isScrollControlled: true,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
@@ -409,8 +410,10 @@ class ElementCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final e = element;
     final c = categoryColor(e.category);
-    final text = AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark);
-    final muted = AppTheme.caption.copyWith(color: AppColors.textSecondaryDark);
+    final text = AppTheme.bodyMd.copyWith(color: context.palette.textPrimary);
+    final muted = AppTheme.caption.copyWith(
+      color: context.palette.textSecondary,
+    );
 
     Widget row(String k, Widget v) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
@@ -453,7 +456,7 @@ class ElementCard extends StatelessWidget {
                 child: Text(
                   e.symbol,
                   style: AppTheme.heading2.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
               ),
@@ -465,7 +468,7 @@ class ElementCard extends StatelessWidget {
                     Text(
                       e.name,
                       style: AppTheme.heading3.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                       ),
                     ),
                     Text(_capitalise(e.category), style: muted),

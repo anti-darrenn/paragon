@@ -358,6 +358,142 @@ async function usersAllowList(a, b) {
     ),
   );
 
+  // Avatar and bio: allow-listed, and shape-checked by
+  // clientFieldsAreValid(). The denials are the content.
+  expectOutcome(
+    'a preset avatar is writable',
+    ALLOW,
+    await commit(a.idToken, write(`users/${a.uid}`, { avatar: str('preset:owl') })),
+  );
+  expectOutcome(
+    'an initials avatar is writable',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, { avatar: str('initials:teal') }),
+    ),
+  );
+  for (const [why, value] of [
+    ['a URL', str('https://example.com/me.png')],
+    ['an unknown kind', str('photo:owl')],
+    ['upper case', str('preset:OWL')],
+    ['a number', int(3)],
+  ]) {
+    expectOutcome(
+      `an avatar that is ${why} is refused`,
+      DENY,
+      await commit(a.idToken, write(`users/${a.uid}`, { avatar: value })),
+    );
+  }
+  expectOutcome(
+    'a 160-character bio is writable',
+    ALLOW,
+    await commit(a.idToken, write(`users/${a.uid}`, { bio: str('b'.repeat(160)) })),
+  );
+  expectOutcome(
+    'a 161-character bio is refused',
+    DENY,
+    await commit(a.idToken, write(`users/${a.uid}`, { bio: str('b'.repeat(161)) })),
+  );
+  expectOutcome(
+    'a bio that is not a string is refused',
+    DENY,
+    await commit(a.idToken, write(`users/${a.uid}`, { bio: int(1) })),
+  );
+
+  // A scheduled deletion: server time or nothing.
+  expectOutcome(
+    'scheduling deletion with the server time is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {}, {
+        transforms: [serverTime('deletionRequestedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    'a client-chosen deletion date is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        deletionRequestedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    'a scheduled deletion can be cancelled',
+    ALLOW,
+    await commit(a.idToken, {
+      update: { name: `${RESOURCE}/users/${a.uid}`, fields: {} },
+      updateMask: { fieldPaths: ['deletionRequestedAt'] },
+    }),
+  );
+
+  // Accepting the terms: version and server time, together.
+  expectOutcome(
+    'accepting the terms with the server time is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, { legalVersion: str('2026-09-26') }, {
+        transforms: [serverTime('legalAcceptedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    'a terms version without the acceptance time is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, { legalVersion: str('2099-01-01') }),
+    ),
+  );
+  expectOutcome(
+    'a backdated acceptance is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        legalVersion: str('2026-09-26'),
+        legalAcceptedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+
+  // Synced settings: a closed, typed set.
+  expectOutcome(
+    'valid synced settings are accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        prefs: map({
+          textScaleStep: int(2),
+          lineSpacing: str('relaxed'),
+          font: str('hyperlegible'),
+          lowDataMode: bool(true),
+          analytics: bool(false),
+          theme: str('system'),
+        }),
+      }),
+    ),
+  );
+  for (const [why, prefs] of [
+    ['an unknown key', map({ isAdmin: bool(true) })],
+    ['an out-of-range text size', map({ textScaleStep: int(9) })],
+    ['an unknown font', map({ font: str('comic') })],
+    ['a non-bool analytics choice', map({ analytics: str('no') })],
+    ['an unknown theme', map({ theme: str('neon') })],
+  ]) {
+    expectOutcome(
+      `settings with ${why} are refused`,
+      DENY,
+      await commit(a.idToken, write(`users/${a.uid}`, { prefs })),
+    );
+  }
+
   // The reason the allow-list is an allow-list. These fields do not exist
   // on any document yet; the point is that they are server-only from the
   // moment they do, with nothing to remember to lock down first.
@@ -449,15 +585,107 @@ async function usernames(a, b, key) {
   );
 
   expectOutcome(
-    'a username is immutable once set',
+    'a username cannot change to a handle with no reservation',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        {
+          username: str('somethingelse'),
+          usernameKey: str('somethingelse'),
+        },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+
+  // Changing: to a second reservation a owns, once, with the server's
+  // clock — and not again for 90 days.
+  const second = `${key}_2`;
+  const theirs = `${key}_3`;
+  await commit(
+    a.idToken,
+    write(`usernames/${second}`, { uid: str(a.uid), raw: str(second) }),
+  );
+  await commit(
+    b.idToken,
+    write(`usernames/${theirs}`, { uid: str(b.uid), raw: str(theirs) }),
+  );
+
+  expectOutcome(
+    'a change without usernameChangedAt is refused',
     DENY,
     await commit(
       a.idToken,
       write(`users/${a.uid}`, {
-        username: str('somethingelse'),
-        usernameKey: str('somethingelse'),
+        username: str(second),
+        usernameKey: str(second),
       }),
     ),
+  );
+  expectOutcome(
+    'a change with a client-chosen usernameChangedAt is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        username: str(second),
+        usernameKey: str(second),
+        usernameChangedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    "a change to someone else's reservation is refused",
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        { username: str(theirs), usernameKey: str(theirs) },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+  expectOutcome(
+    'a change to your own second reservation is accepted',
+    ALLOW,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        { username: str(second), usernameKey: str(second) },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+  expectOutcome(
+    'a second change inside 90 days is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `users/${a.uid}`,
+        { username: str(key), usernameKey: str(key) },
+        { transforms: [serverTime('usernameChangedAt')] },
+      ),
+    ),
+  );
+  expectOutcome(
+    'usernameChangedAt cannot be backdated on its own',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`users/${a.uid}`, {
+        usernameChangedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    'a handle given up cannot be released',
+    DENY,
+    await deleteDoc(a.idToken, `usernames/${key}`),
   );
 
   expectOutcome(
@@ -640,6 +868,77 @@ async function studyData(a, b) {
     "a student cannot list everyone's notes",
     DENY,
     await runQuery(a.idToken, '', { from: [{ collectionId: 'notes' }] }),
+  );
+}
+
+async function accountRequests(a, b) {
+  suite('accountRequests/{uid} — sign out everywhere');
+
+  // As with study data, the test accounts are guests, and a guest has no
+  // sessions worth revoking: the anonymous clause refuses them. The
+  // real-account allow path is exercised by hand.
+  expectOutcome(
+    'a guest cannot file a sign-out request',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`accountRequests/${a.uid}`, { type: str('revokeSessions') }, {
+        transforms: [serverTime('requestedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "a request on another student's uid is refused",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`accountRequests/${a.uid}`, { type: str('revokeSessions') }, {
+        transforms: [serverTime('requestedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "another student's request is not readable",
+    DENY,
+    await readDoc(b.idToken, `accountRequests/${a.uid}`),
+  );
+  expectOutcome(
+    'account requests cannot be listed',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'accountRequests' }] }),
+  );
+}
+
+async function staffProfiles(a, b) {
+  suite('staffProfiles/{uid} — the team only');
+
+  const profile = { displayName: str('Ada'), avatar: str('preset:owl') };
+  expectOutcome(
+    'a student cannot publish a staff profile',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`staffProfiles/${a.uid}`, profile, {
+        transforms: [serverTime('updatedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "a student cannot read another's staff profile",
+    DENY,
+    await readDoc(b.idToken, `staffProfiles/${a.uid}`),
+  );
+  // Allowed, and there is nothing there: 404 is the answer, not 403.
+  const own = await readDoc(a.idToken, `staffProfiles/${a.uid}`);
+  record(
+    'a student can look for their own (for export and deletion)',
+    own.status === 200 || own.status === 404,
+    `HTTP ${own.status} ${brief(own)}`,
+  );
+  expectOutcome(
+    'staff profiles cannot be listed by a student',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'staffProfiles' }] }),
   );
 }
 
@@ -1120,8 +1419,11 @@ async function teardown(a, b, usernameKey) {
   }
 
   try {
-    await getAdmin().firestore().collection('usernames').doc(usernameKey).delete();
-    console.log(`    reservation ${usernameKey} removed (admin)`);
+    const reservations = getAdmin().firestore().collection('usernames');
+    for (const k of [usernameKey, `${usernameKey}_2`, `${usernameKey}_3`]) {
+      await reservations.doc(k).delete();
+    }
+    console.log(`    reservations ${usernameKey}{,_2,_3} removed (admin)`);
   } catch (e) {
     console.log(
       `    NOTE: reservation "${usernameKey}" could not be removed ` +
@@ -1147,6 +1449,8 @@ async function teardown(a, b, usernameKey) {
   await attemptsAndFlags(a, b);
   await progress(a, b);
   await studyData(a, b);
+  await accountRequests(a, b);
+  await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);
 

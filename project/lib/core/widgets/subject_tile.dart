@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../repositories/course_repository.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
+import '../theme/app_palette.dart';
 
 /// A selectable subject row with a checkbox, used wherever a student
 /// chooses which subjects they study.
@@ -39,9 +40,9 @@ class SubjectTile extends StatelessWidget {
           decoration: BoxDecoration(
             color: isSelected
                 ? accent.withAlpha((0.14 * 255).round())
-                : AppColors.surfaceDark,
+                : context.palette.surface,
             border: Border.all(
-              color: isSelected ? accent : AppColors.borderDark,
+              color: isSelected ? accent : context.palette.border,
               width: isSelected ? 2 : 1,
             ),
             borderRadius: BorderRadius.circular(10),
@@ -54,7 +55,7 @@ class SubjectTile extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: isSelected ? accent : Colors.transparent,
                   border: Border.all(
-                    color: isSelected ? accent : AppColors.borderDark,
+                    color: isSelected ? accent : context.palette.border,
                     width: 2,
                   ),
                   borderRadius: BorderRadius.circular(6),
@@ -71,7 +72,7 @@ class SubjectTile extends StatelessWidget {
                     Text(
                       course.name,
                       style: AppTheme.bodyLg.copyWith(
-                        color: AppColors.textPrimaryDark,
+                        color: context.palette.textPrimary,
                         fontWeight: FontWeight.w600,
                         height: 1.3,
                       ),
@@ -80,7 +81,7 @@ class SubjectTile extends StatelessWidget {
                     Text(
                       course.blurb,
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],

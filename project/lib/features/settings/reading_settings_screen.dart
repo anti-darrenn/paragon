@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/providers/appearance_provider.dart';
 import '../../core/providers/reading_settings_provider.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/math_text.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Reading settings — `/settings/reading`.
 ///
@@ -33,7 +35,7 @@ class ReadingSettingsScreen extends ConsumerWidget {
     final notifier = ref.read(readingSettingsProvider.notifier);
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Reading')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -47,6 +49,21 @@ class ReadingSettingsScreen extends ConsumerWidget {
                   children: [
                     _Preview(settings: settings),
                     const SizedBox(height: 24),
+
+                    if (kAppearanceChoiceEnabled)
+                      _Section(
+                        title: 'Appearance',
+                        hint:
+                            'The light theme is new. If anything is hard to '
+                            'read in it, tell us from Settings → Help with your '
+                            'account.',
+                        child: _Choices<Appearance>(
+                          values: Appearance.values,
+                          selected: ref.watch(appearanceProvider),
+                          label: (v) => v.label,
+                          onSelected: ref.read(appearanceProvider.notifier).set,
+                        ),
+                      ),
 
                     _Section(
                       title: 'Text size',
@@ -95,7 +112,7 @@ class ReadingSettingsScreen extends ConsumerWidget {
                       child: OutlinedButton(
                         onPressed: settings.isDefault ? null : notifier.reset,
                         style: OutlinedButton.styleFrom(
-                          side: const BorderSide(color: AppColors.borderDark),
+                          side: BorderSide(color: context.palette.border),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -104,18 +121,19 @@ class ReadingSettingsScreen extends ConsumerWidget {
                           'Reset to defaults',
                           style: AppTheme.btnLabel.copyWith(
                             color: settings.isDefault
-                                ? AppColors.textSecondaryDark
-                                : AppColors.textPrimaryDark,
+                                ? context.palette.textSecondary
+                                : context.palette.textPrimary,
                           ),
                         ),
                       ),
                     ),
                     const SizedBox(height: 12),
                     Text(
-                      'These settings are saved on this device only.',
+                      'Saved on this device, and with your account when you '
+                      'are signed in so they follow you to other devices.',
                       textAlign: TextAlign.center,
                       style: AppTheme.caption.copyWith(
-                        color: AppColors.textSecondaryDark,
+                        color: context.palette.textSecondary,
                       ),
                     ),
                   ],
@@ -140,7 +158,7 @@ class _Preview extends StatelessWidget {
     // the renderer's own body height, multiplied; the font applied on top.
     final body = settings.font.apply(
       AppTheme.bodyLg.copyWith(
-        color: AppColors.textPrimaryDark,
+        color: context.palette.textPrimary,
         height: 1.6 * settings.lineSpacing.multiplier,
       ),
     );
@@ -149,8 +167,8 @@ class _Preview extends StatelessWidget {
       key: const ValueKey('reading-preview'),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -159,7 +177,7 @@ class _Preview extends StatelessWidget {
           Text(
             'PREVIEW',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
               letterSpacing: 0.8,
             ),
           ),
@@ -203,7 +221,7 @@ class _Section extends StatelessWidget {
           Text(
             title,
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -211,7 +229,7 @@ class _Section extends StatelessWidget {
           Text(
             hint,
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           const SizedBox(height: 10),
@@ -249,15 +267,15 @@ class _Choices<T> extends StatelessWidget {
             selected: v == selected,
             onSelected: (_) => onSelected(v),
             showCheckmark: false,
-            backgroundColor: AppColors.surfaceDark,
+            backgroundColor: context.palette.surface,
             selectedColor: AppColors.primary.withAlpha((0.2 * 255).round()),
             side: BorderSide(
-              color: v == selected ? AppColors.primary : AppColors.borderDark,
+              color: v == selected ? AppColors.primary : context.palette.border,
             ),
             labelStyle: AppTheme.bodyMd.copyWith(
               color: v == selected
-                  ? AppColors.textPrimaryDark
-                  : AppColors.textSecondaryDark,
+                  ? context.palette.textPrimary
+                  : context.palette.textSecondary,
             ),
           ),
       ],
@@ -275,8 +293,8 @@ class _LowDataToggle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
@@ -289,14 +307,14 @@ class _LowDataToggle extends StatelessWidget {
                 Text(
                   'Low-data mode',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   'Lesson videos and images load only when you tap them.',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ],

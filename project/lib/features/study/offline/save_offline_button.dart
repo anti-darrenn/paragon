@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import 'offline_fetcher.dart';
 import 'offline_plan.dart';
 import 'saved_topics_store.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// What the student is told when they remove a saved topic. Firestore has
 /// no per-document eviction, so removing cannot delete anything — saying
@@ -56,7 +57,7 @@ class _SaveTopicOfflineButtonState
       final ok = await showDialog<bool>(
         context: context,
         builder: (context) => AlertDialog(
-          backgroundColor: AppColors.surfaceDark,
+          backgroundColor: context.palette.surface,
           title: const Text('Save for offline?'),
           content: Text(
             'Low-data mode is on. This will download about $items items.',
@@ -131,7 +132,7 @@ class _SaveTopicOfflineButtonState
       ),
     );
     final caption = AppTheme.caption.copyWith(
-      color: AppColors.textSecondaryDark,
+      color: context.palette.textSecondary,
     );
 
     final Widget body;
@@ -142,14 +143,14 @@ class _SaveTopicOfflineButtonState
         children: [
           Text(
             'Saving for offline…',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
           ),
           const SizedBox(height: 8),
           LinearProgressIndicator(
             value: _step! / kOfflineSaveSteps,
             minHeight: 3,
             color: AppColors.primary,
-            backgroundColor: AppColors.trackDark,
+            backgroundColor: context.palette.track,
           ),
         ],
       );
@@ -170,7 +171,7 @@ class _SaveTopicOfflineButtonState
                 child: Text(
                   'Saved for offline · ${formatSavedDate(saved.savedAt)}',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
               ),
@@ -206,7 +207,7 @@ class _SaveTopicOfflineButtonState
             onPressed: _save,
             style: OutlinedButton.styleFrom(
               foregroundColor: AppColors.primary,
-              side: const BorderSide(color: AppColors.borderDark),
+              side: BorderSide(color: context.palette.border),
             ),
             icon: const Icon(Icons.download_for_offline_outlined, size: 18),
             label: const Text('Save for offline'),

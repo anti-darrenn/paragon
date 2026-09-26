@@ -7,6 +7,7 @@ import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/math_text.dart';
+import '../../core/theme/app_palette.dart';
 
 /// Deep link to one flagged question. The report digest email links here;
 /// keep `tools/admin/notify_drafts.js` in step if it changes.
@@ -63,7 +64,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: const Text('Retire this question?'),
         content: const Text(
           'Students will stop seeing it in drill, WAEC exams, topic tests '
@@ -94,7 +95,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
     final async = ref.watch(adminFlaggedQuestionProvider(widget.questionId));
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Problem report')),
       body: SafeArea(
         child: async.when(
@@ -125,7 +126,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
   Widget _body(FlaggedQuestion row) {
     final q = row.question;
     final secondary = AppTheme.bodyMd.copyWith(
-      color: AppColors.textSecondaryDark,
+      color: context.palette.textSecondary,
     );
 
     return Column(
@@ -144,7 +145,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
           const SizedBox(height: 16),
           MathText(
             text: q.question.text,
-            style: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
           ),
           const SizedBox(height: 16),
           for (var i = 0; i < q.question.options.length; i++)
@@ -160,7 +161,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             Text(
               'EXPLANATION',
               style: AppTheme.label.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
             const SizedBox(height: 6),
@@ -172,7 +173,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
                 ? 'No answer is marked. Tap an option to set one.'
                 : 'Tap an option to mark it as the answer instead.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],
@@ -264,8 +265,8 @@ class _ReportSummary extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -275,21 +276,23 @@ class _ReportSummary extends StatelessWidget {
             open == 0
                 ? 'No open reports'
                 : '$open open report${open == 1 ? '' : 's'}',
-            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading3.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 6),
           for (final (reason, count) in row.openReasonCounts)
             Text(
               '$count × ${reason.label}',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           if (closed > 0)
             Text(
               '$closed already resolved',
               style: AppTheme.caption.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
         ],
@@ -319,7 +322,9 @@ class _QuestionHeader extends ConsumerWidget {
       children: [
         Text(
           where,
-          style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.caption.copyWith(
+            color: context.palette.textSecondary,
+          ),
         ),
         if (question.isGenerated)
           const _Tag(
@@ -373,7 +378,7 @@ class _OptionRow extends StatelessWidget {
         ? AppColors.primary
         : isAnswer
         ? AppColors.correct
-        : AppColors.borderDark;
+        : context.palette.border;
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
@@ -383,7 +388,7 @@ class _OptionRow extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
           decoration: BoxDecoration(
-            color: AppColors.surfaceDark,
+            color: context.palette.surface,
             border: Border.all(
               color: border,
               width: isPicked || isAnswer ? 2 : 1,
@@ -395,8 +400,8 @@ class _OptionRow extends StatelessWidget {
               Text(
                 letter,
                 style: AppTheme.bodyMd.copyWith(
-                  color: border == AppColors.borderDark
-                      ? AppColors.textSecondaryDark
+                  color: border == context.palette.border
+                      ? context.palette.textSecondary
                       : border,
                   fontWeight: FontWeight.w700,
                 ),
@@ -406,7 +411,7 @@ class _OptionRow extends StatelessWidget {
                 child: MathText(
                   text: text,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
               ),

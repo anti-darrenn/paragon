@@ -4,7 +4,13 @@ import 'package:go_router/go_router.dart';
 import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/about_screen.dart';
+import 'package:paragon/features/account/deleting_screen.dart';
+import 'package:paragon/features/account/export_screen.dart';
+import 'package:paragon/features/account/legal_accept_screen.dart';
+import 'package:paragon/features/account/security_screen.dart';
+import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
@@ -15,8 +21,11 @@ import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
-import 'package:paragon/features/display_name_settings_screen.dart';
 import 'package:paragon/features/profile_settings_screen.dart';
+import 'package:paragon/features/profile/edit_profile_screen.dart';
+import 'package:paragon/features/profile/me_screen.dart';
+import 'package:paragon/features/profile/username_settings_screen.dart';
+import 'package:paragon/features/onboarding/avatar_screen.dart';
 import 'package:paragon/features/onboarding/display_name_screen.dart';
 import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
@@ -95,11 +104,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isSignedIn = user != null;
       // A guest (anonymous auth) counts as signed in for every protected
       // route, but — unlike a real account — is still allowed to visit
-      // welcome/signin, since that's the only way to upgrade out of a
-      // guest session. Upgrading starts a fresh real-account session; it
-      // does not link the anonymous UID (see auth_provider.dart).
+      // welcome and signin. Upgrading from `/account/upgrade` links the
+      // guest's own uid, so the same user becomes "really signed in" in
+      // place and the onboarding gate below picks them up.
       final isReallySignedIn = isSignedIn && !user.isAnonymous;
       final isOnSignIn = state.matchedLocation == '/signin';
+      final isOnUpgrade = state.matchedLocation == '/account/upgrade';
       final isOnWelcome = state.matchedLocation == '/welcome';
       // The welcome screen links to both, so a signed-out visitor has to
       // be able to read them. They are also the one thing a user must be
@@ -156,6 +166,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final userDataAsync = ref.read(userDataProvider);
       if (userDataAsync.isLoading) return null;
 
+      // ── Deletion gate ──────────────────────────────────────────────
+      // An account scheduled for deletion is held on one screen until it
+      // is restored or deleted — before onboarding, so a student who
+      // deleted part-way through the funnel is not sent back into it.
+      // Legal pages stay readable (handled above).
+      final isOnDeleting = state.matchedLocation == '/account/deleting';
+      if (userDataAsync.asData?.value?['deletionRequestedAt'] != null) {
+        return isOnDeleting ? null : '/account/deleting';
+      }
+      if (isOnDeleting) return '/';
+
       final isOnOnboarding = OnboardingStep.isOnboardingPath(
         state.matchedLocation,
       );
@@ -175,11 +196,21 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         return '/';
       }
 
+      // ── Terms gate ─────────────────────────────────────────────────
+      // After a significant change to the terms (kLegalVersion), and once
+      // for accounts made before acceptance was recorded, a student
+      // accepts again before going on. /terms and /privacy stay readable.
+      final isOnAccept = state.matchedLocation == '/legal/accept';
+      if (needsLegalAcceptance(userDataAsync.asData?.value)) {
+        return isOnAccept ? null : '/legal/accept';
+      }
+      if (isOnAccept) return '/';
+
       // Really signed in but somehow landed on welcome or sign-in → send
       // home, which is the dashboard. This covers the sign-in hop; a
       // returning user is covered by '/' itself being the dashboard, since
       // on web the browser URL — not initialLocation — picks the route.
-      if (isOnSignIn || isOnWelcome) return '/';
+      if (isOnSignIn || isOnWelcome || isOnUpgrade) return '/';
 
       // All other cases: let navigation proceed normally
       return null;
@@ -203,6 +234,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding/displayname',
         builder: (context, state) => const OnboardingDisplayNameScreen(),
+      ),
+      GoRoute(
+        path: '/onboarding/avatar',
+        builder: (context, state) => const OnboardingAvatarScreen(),
       ),
       GoRoute(
         path: '/onboarding/subjects',
@@ -330,11 +365,30 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/signin',
         builder: (context, state) => const SignInScreen(),
       ),
+      // A guest turning their session into an account. Real accounts are
+      // sent home by the redirect above.
+      // Where the terms gate above asks for acceptance.
+      GoRoute(
+        path: '/legal/accept',
+        builder: (context, state) => const LegalAcceptScreen(),
+      ),
+      // Where the deletion gate above holds a scheduled account.
+      GoRoute(
+        path: '/account/deleting',
+        builder: (context, state) => const DeletingScreen(),
+      ),
+      GoRoute(
+        path: '/account/upgrade',
+        builder: (context, state) => const UpgradeScreen(),
+      ),
       GoRoute(path: '/about', builder: (context, state) => const AboutScreen()),
       GoRoute(
         path: '/settings',
         builder: (context, state) => const SettingsScreen(),
       ),
+      // Your own profile and progress. Private: nobody else can open
+      // anyone's `/me`, because nobody else can read `users/{uid}`.
+      GoRoute(path: '/me', builder: (context, state) => const MeScreen()),
       // Editing your subjects after onboarding. Deliberately its own
       // route rather than a re-entry into `/onboarding/subjects`, which
       // the redirect above sends back to `/` for anyone who has finished
@@ -345,7 +399,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/settings/name',
-        builder: (context, state) => const DisplayNameSettingsScreen(),
+        builder: (context, state) => const EditProfileScreen(),
       ),
       // The optional profile, editable at last. `/onboarding/profile` is
       // still reachable (guard 3 above lets a finished user sit on the
@@ -353,6 +407,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings/profile',
         builder: (context, state) => const ProfileSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/settings/username',
+        builder: (context, state) => const UsernameSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/settings/export',
+        builder: (context, state) => const ExportScreen(),
+      ),
+      GoRoute(
+        path: '/settings/security',
+        builder: (context, state) => const SecurityScreen(),
       ),
       // Text size, line spacing, reading font, low-data mode. Per device.
       GoRoute(

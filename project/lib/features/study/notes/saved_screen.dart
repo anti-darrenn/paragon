@@ -13,6 +13,7 @@ import '../cards/revision_cards_entry.dart';
 import 'notes_widgets.dart';
 import 'study_models.dart';
 import 'study_providers.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// `/saved` — bookmarked lessons, bookmarked questions, and every note.
 class SavedScreen extends ConsumerWidget {
@@ -23,15 +24,15 @@ class SavedScreen extends ConsumerWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        backgroundColor: AppColors.backgroundDark,
+        backgroundColor: context.palette.background,
         appBar: AppBar(
-          backgroundColor: AppColors.backgroundDark,
+          backgroundColor: context.palette.background,
           title: const Text('Saved'),
           actions: const [RevisionCardsAction()],
-          bottom: const TabBar(
+          bottom: TabBar(
             indicatorColor: AppColors.primary,
-            labelColor: AppColors.textPrimaryDark,
-            unselectedLabelColor: AppColors.textSecondaryDark,
+            labelColor: context.palette.textPrimary,
+            unselectedLabelColor: context.palette.textSecondary,
             tabs: [
               Tab(text: 'Lessons'),
               Tab(text: 'Questions'),
@@ -61,13 +62,15 @@ class SavedScreen extends ConsumerWidget {
   }
 }
 
-Widget _empty(String text) => Center(
-  child: Padding(
-    padding: const EdgeInsets.all(32),
-    child: Text(
-      text,
-      textAlign: TextAlign.center,
-      style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+Widget _empty(String text) => Builder(
+  builder: (context) => Center(
+    child: Padding(
+      padding: const EdgeInsets.all(32),
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+      ),
     ),
   ),
 );
@@ -100,19 +103,19 @@ class _BookmarkList extends ConsumerWidget {
         return ListView.separated(
           padding: const EdgeInsets.symmetric(vertical: 8),
           itemCount: items.length,
-          separatorBuilder: (_, _) => const Divider(height: 1, color: AppColors.borderDark),
+          separatorBuilder: (_, _) => Divider(height: 1, color: context.palette.border),
           itemBuilder: (context, i) {
             final b = items[i];
             return ListTile(
               leading: Icon(
                 kind == BookmarkKind.lesson ? Icons.menu_book : Icons.help_outline,
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
               title: Text(
                 b.title.isEmpty ? 'Untitled' : b.title,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(color: AppColors.textPrimaryDark),
+                style: TextStyle(color: context.palette.textPrimary),
               ),
               trailing: IconButton(
                 tooltip: 'Remove from saved',
@@ -140,7 +143,7 @@ Future<void> showSavedQuestion(BuildContext context, String questionId) {
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
-    backgroundColor: AppColors.surfaceDark,
+    backgroundColor: context.palette.surface,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
     ),
@@ -169,11 +172,11 @@ class SavedQuestionView extends ConsumerWidget {
       error: (_, _) => _loadFailed(),
       data: (q) => q == null
           ? _empty('This question is no longer available.')
-          : _body(q),
+          : _body(context, q),
     );
   }
 
-  Widget _body(Question q) {
+  Widget _body(BuildContext context, Question q) {
     final answered = q.correctIndex >= 0 && q.correctIndex < q.options.length;
     return ListView(
       controller: controller,
@@ -181,7 +184,7 @@ class SavedQuestionView extends ConsumerWidget {
       children: [
         MathText(
           text: q.text,
-          style: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 16),
         for (var i = 0; i < q.options.length; i++)
@@ -202,7 +205,9 @@ class SavedQuestionView extends ConsumerWidget {
           const SizedBox(height: 8),
           MathText(
             text: q.explanation,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
         ],
       ],
@@ -260,7 +265,7 @@ class _TopicHeading extends ConsumerWidget {
       padding: const EdgeInsets.only(bottom: 4),
       child: Text(
         topic?.name ?? 'Topic',
-        style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.label.copyWith(color: context.palette.textSecondary),
       ),
     );
   }

@@ -153,8 +153,9 @@ class FirestoreStudyStore implements StudyStore {
 ///
 /// Keyed by the guest's anonymous uid, so a second guest on a shared
 /// computer (a school lab, a family phone) does not open the first one's
-/// notes. Nothing here ever reaches the server, and nothing is carried
-/// over if the guest later signs up.
+/// notes. Nothing here reaches the server while they are a guest. If they
+/// turn the guest session into an account, `guest_upgrade.dart` copies it
+/// up once and then calls [clear].
 ///
 /// When storage is unavailable (private browsing, blocked site data) the
 /// store keeps what it has in memory for the visit and loses it after.
@@ -291,5 +292,22 @@ class LocalStudyStore implements StudyStore {
     final b = Map.of(await _loadBookmarks());
     if (b.remove(key) == null) return;
     await _saveBookmarks(b);
+  }
+
+  /// Whether anything is stored for this uid. Reads the raw keys, so it
+  /// costs nothing when there is nothing.
+  Future<bool> get hasData async {
+    final prefs = await _prefs;
+    return (prefs?.containsKey(_notesKey) ?? false) ||
+        (prefs?.containsKey(_bookmarksKey) ?? false);
+  }
+
+  /// Forgets everything stored for this uid, on this device.
+  Future<void> clear() async {
+    _notesCache = [];
+    _bookmarksCache = {};
+    final prefs = await _prefs;
+    await prefs?.remove(_notesKey);
+    await prefs?.remove(_bookmarksKey);
   }
 }

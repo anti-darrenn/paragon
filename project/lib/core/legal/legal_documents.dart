@@ -56,7 +56,31 @@ bool get legalPlaceholdersRemain => [
 ].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '24 September 2026';
+const String legalLastUpdated = '26 September 2026';
+
+/// The version of the terms and privacy policy a student agrees to,
+/// recorded on `users/{uid}` as `legalVersion` with the time.
+///
+/// **Bump it only for a significant change** — the policy promises
+/// notice of those. Every signed-in account on an older version is asked
+/// to accept again before going on (`/legal/accept`), so bumping it for a
+/// typo would interrupt every student for nothing. [legalLastUpdated] can
+/// move without it.
+const String kLegalVersion = '2026-09-26';
+
+/// What changed in [kLegalVersion], in a sentence each, for the accept
+/// screen. Rewrite this list whenever the version is bumped.
+const List<String> kLegalChanges = [
+  'You can now add a picture and a short bio. Only you can see them.',
+  'Guests can turn their session into an account and keep their progress. '
+      'Unused guest sessions are deleted after 30 days.',
+  'You can change your username once every 90 days. Old usernames stay '
+      'reserved forever.',
+  'You can download all your data from Settings.',
+  'Deleting your account now gives you 30 days to change your mind, or it '
+      'can go at once.',
+  'We record which version of these terms you accepted, and when.',
+];
 
 class LegalSection {
   const LegalSection({
@@ -107,12 +131,20 @@ const LegalDocument privacyPolicy = LegalDocument(
             'Authentication and we never see or store it. If you sign in '
             'with Google, we receive your name, email address and profile '
             'picture from Google. If you browse as a guest, we create an '
-            'anonymous account identifier with no personal details attached.',
+            'anonymous account identifier with no personal details attached. '
+            'We record which version of these terms and this policy you '
+            'accepted, and when. '
+            'If you use "Sign out everywhere", we store that request until it '
+            'has been carried out, usually within 15 minutes, and then delete '
+            'it.',
         'Profile details you give us. Your username, your display name, and '
             'the subjects you choose. You may also optionally add your '
-            'school, class or year, age, gender, country and state. Every '
-            'one of those optional fields can be left blank, and skipping '
-            'them does not limit your use of the app.',
+            'school, class or year, age, gender, country and state, a short '
+            'bio of up to 160 characters, and a profile picture chosen from '
+            'a set of built-in pictures or your initials (you cannot upload '
+            'a photo). Every one of those optional fields can be left blank, '
+            'and skipping them does not limit your use of the app. Your '
+            'bio, picture and optional details are shown only to you.',
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
             'correct, when you answered, and whether it was practice, an '
@@ -125,8 +157,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'exercise in a lesson, we record that you finished it and when, '
             'so the app can show what you have done and take you back to '
             'where you left off. If you are browsing as a guest, this is '
-            'kept only while the app is open and is never stored, and your '
-            'exercise answers are not stored either.',
+            'kept only while the app is open and is not stored, and your '
+            'exercise answers are not stored either — unless you create an '
+            'account from that guest session, in which case the lessons you '
+            'finished are saved to it.',
         'Your topic test results. For each topic test you take we record '
             'your best score, how many times you have taken it, when you '
             'last did, and whether you have passed it. Passing is what '
@@ -141,7 +175,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'so they are on every device you sign in on, only you can see '
             'them, and they are deleted when your account is deleted. If you '
             'are browsing as a guest, they are kept only on your device, in '
-            'your browser, and are never sent to us.',
+            'your browser, and are not sent to us unless you create an '
+            'account from that guest session, when they are moved into it '
+            'and removed from the device.',
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',
@@ -166,8 +202,13 @@ const LegalDocument privacyPolicy = LegalDocument(
             'region and app version.',
         'You can turn this off. Settings has a "Share usage data" switch; '
             'turning it off stops collection on that device, and you do '
-            'not need an account to use it. Everything else in the app '
-            'keeps working exactly the same.',
+            'not need an account to use it. If you are signed in, turning '
+            'it off also turns it off on every other device you sign in '
+            'on. Everything else in the app keeps working exactly the same.',
+        'Your settings. If you are signed in, your reading settings (text '
+            'size, line spacing, reading font, low-data mode) and your choice '
+            'about usage data are stored with your account so they follow '
+            'you to other devices. As a guest they stay on your device.',
       ],
     ),
     LegalSection(
@@ -224,9 +265,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'account exists. If you ask us to delete your account, we delete '
             'your account record, your practice history, and your notes, '
             'highlights and bookmarks.',
-        'Guest (anonymous) accounts are kept while they remain in use. We '
-            'intend to delete unused guest accounts automatically; until '
-            'that is in place, you can ask us to remove one.',
+        'Guest (anonymous) accounts are deleted automatically, together '
+            'with everything recorded under them, once they have not been '
+            'used for 30 days. You can also ask us to remove one sooner.',
       ],
     ),
     LegalSection(
@@ -235,14 +276,22 @@ const LegalDocument privacyPolicy = LegalDocument(
         'You can ask us to show you the data we hold about you, correct it, '
             'delete it, or send you a copy. Email $contactEmail and we '
             'will respond.',
+        'You can also download a copy yourself, at any time, from Settings → '
+            'Download your data. It is one file containing your account '
+            'details, every answer you have recorded, your progress, test '
+            'results, notes, bookmarks, revision cards and problem reports.',
         'You can delete your account yourself from Settings. Deleting it '
             'removes your account record, your practice history, and your '
-            'notes, highlights and bookmarks. You can '
-            'also email us and we will do it for you.',
-        'Your username is an exception we cannot undo: usernames are '
-            'permanent and cannot be changed or released once chosen, '
-            'because other parts of the app rely on them staying fixed. '
-            'Deleting your account does not free the username for reuse.',
+            'notes, highlights and bookmarks. You choose whether that '
+            'happens immediately or after 30 days; in the 30 days nothing is '
+            'removed, and signing in again lets you keep the account. You '
+            'can also email us and we will do it for you.',
+        'Your username is an exception: you can change it once every 90 '
+            'days, but no username is ever released. Every username you '
+            'have used stays reserved, even after you change it or delete '
+            'your account, so that nobody else can take it and pretend to '
+            'be you. We keep the record of which account reserved it, and '
+            'the date you last changed it.',
       ],
     ),
     LegalSection(
@@ -331,8 +380,9 @@ const LegalDocument termsOfService = LegalDocument(
         'You are responsible for what happens on your account. Keep your '
             'password to yourself.',
         'Give us accurate details. Do not impersonate someone else.',
-        'Your username is permanent. It cannot be changed or released once '
-            'chosen, so choose carefully.',
+        'You can change your username once every 90 days. A username you '
+            'give up is never released, to you or anyone else, so choose '
+            'carefully.',
         'We may remove a username that impersonates someone, or that is '
             'offensive.',
       ],
@@ -352,9 +402,11 @@ const LegalDocument termsOfService = LegalDocument(
       heading: 'Guest accounts',
       paragraphs: [
         'You can use Paragon as a guest without signing up. Guest sessions '
-            'are tied to the device and browser you started them on. If you '
-            'later create a real account, your guest progress does not carry '
-            'over — it stays with the guest session and is not transferred.',
+            'are tied to the device and browser you started them on, and are '
+            'deleted after 30 days without use. If you create an account '
+            'from inside a guest session, your guest progress comes with you. '
+            'If you instead sign in to an account you already have, the guest '
+            "session's progress stays behind: two accounts cannot be merged.",
       ],
     ),
     LegalSection(

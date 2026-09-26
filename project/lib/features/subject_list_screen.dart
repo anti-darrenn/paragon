@@ -8,6 +8,7 @@ import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
 import '../core/widgets/load_error.dart';
+import '../core/theme/app_palette.dart';
 
 class SubjectListScreen extends ConsumerWidget {
   const SubjectListScreen({super.key});
@@ -123,10 +124,10 @@ class _SubjectCard extends StatelessWidget {
                 ),
                 const Spacer(),
                 if (_locked)
-                  const Icon(
+                  Icon(
                     Icons.lock_outline_rounded,
                     size: 16,
-                    color: Colors.white38,
+                    color: context.palette.onLow,
                   ),
               ],
             ),
@@ -134,7 +135,9 @@ class _SubjectCard extends StatelessWidget {
             Text(
               subject.name,
               style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                color: _locked ? Colors.white54 : Colors.white,
+                color: _locked
+                    ? context.palette.onMedium
+                    : context.palette.textStrong,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -143,7 +146,7 @@ class _SubjectCard extends StatelessWidget {
               _locked ? 'Sign in to unlock' : '${subject.unitCount} units',
               style: Theme.of(
                 context,
-              ).textTheme.bodySmall?.copyWith(color: Colors.white54),
+              ).textTheme.bodySmall?.copyWith(color: context.palette.onMedium),
             ),
           ],
         ),

@@ -9,6 +9,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/load_error.dart';
+import '../core/theme/app_palette.dart';
 
 class LearnScreen extends ConsumerWidget {
   final String subjectId;
@@ -43,10 +44,10 @@ class LearnScreen extends ConsumerWidget {
         data: (topics) {
           final topic = _findTopic(topics);
           if (topic == null) {
-            return const Center(
+            return Center(
               child: Text(
                 'This topic could not be found.',
-                style: TextStyle(color: Colors.white54),
+                style: TextStyle(color: context.palette.onMedium),
               ),
             );
           }
@@ -63,7 +64,7 @@ class LearnScreen extends ConsumerWidget {
                       Text(
                         topic.name,
                         style: AppTheme.heading1.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                         ),
                       ),
                       const SizedBox(height: 24),
@@ -72,7 +73,7 @@ class LearnScreen extends ConsumerWidget {
                       Text(
                         'Topic Notes',
                         style: AppTheme.heading2.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -141,24 +142,24 @@ class _VideoPlaceholder extends StatelessWidget {
       aspectRatio: 16 / 9,
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.surfaceDark,
+          color: context.palette.surface,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: AppColors.borderDark),
+          border: Border.all(color: context.palette.border),
         ),
         alignment: Alignment.center,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(
+            Icon(
               Icons.play_circle_outline,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
               size: 40,
             ),
             const SizedBox(height: 8),
             Text(
               'Video coming soon',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ],
@@ -178,12 +179,12 @@ class _NotesSection extends StatelessWidget {
     if (!topic.hasNotes || notes == null || notes.isEmpty) {
       return Text(
         'Notes coming soon.',
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
       );
     }
     return FullLatexView(
       latex: notes,
-      textStyle: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
+      textStyle: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
     );
   }
 }

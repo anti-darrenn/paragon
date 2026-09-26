@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../core/legal/legal_documents.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/theme/app_palette.dart';
 
 /// Renders a [LegalDocument] at `/privacy` or `/terms`.
 ///
@@ -31,7 +32,7 @@ class LegalScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(
         title: Text(document.title),
         leading: IconButton(
@@ -53,14 +54,14 @@ class LegalScreen extends StatelessWidget {
                       Text(
                         document.title,
                         style: AppTheme.displayLg.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                         ),
                       ),
                       const SizedBox(height: 8),
                       Text(
                         'Last updated $legalLastUpdated',
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                         ),
                       ),
                       const SizedBox(height: 20),
@@ -73,7 +74,7 @@ class LegalScreen extends StatelessWidget {
                       Text(
                         document.intro,
                         style: AppTheme.bodyLg.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                           height: 1.65,
                         ),
                       ),
@@ -84,7 +85,7 @@ class LegalScreen extends StatelessWidget {
                         Text(
                           section.heading,
                           style: AppTheme.heading2.copyWith(
-                            color: AppColors.textPrimaryDark,
+                            color: context.palette.textPrimary,
                           ),
                         ),
                         for (final paragraph in section.paragraphs) ...[
@@ -92,7 +93,7 @@ class LegalScreen extends StatelessWidget {
                           Text(
                             paragraph,
                             style: AppTheme.bodyLg.copyWith(
-                              color: AppColors.textSecondaryDark,
+                              color: context.palette.textSecondary,
                               height: 1.65,
                             ),
                           ),
@@ -118,7 +119,7 @@ class LegalScreen extends StatelessWidget {
                                 child: Text(
                                   bullet,
                                   style: AppTheme.bodyLg.copyWith(
-                                    color: AppColors.textSecondaryDark,
+                                    color: context.palette.textSecondary,
                                     height: 1.65,
                                   ),
                                 ),
@@ -169,7 +170,7 @@ class _DraftBanner extends StatelessWidget {
               'address are still placeholders, and this text has not been '
               'reviewed by a lawyer.',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),

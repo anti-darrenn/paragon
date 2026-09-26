@@ -56,6 +56,10 @@ dependencies:
   flutter_tts: ^4.2.5
   file_picker: ^13.1.0
   image: ^4.10.1
+  # Browser APIs (Blob, object URLs) for "Download my data". Pure Dart,
+  # not a plugin, and already in the tree via Firebase; named here only
+  # because lib/ now imports it.
+  web: ^1.1.0
 
 dev_dependencies:
   flutter_test:

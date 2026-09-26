@@ -3,9 +3,12 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
+import 'package:paragon/features/account/guest_upgrade.dart';
 import 'package:paragon/core/theme/app_colors.dart';
 import 'package:paragon/core/theme/app_theme.dart';
+import '../core/theme/app_palette.dart';
 
 enum _AuthStep { email, password, createAccount }
 
@@ -86,6 +89,27 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     });
 
     try {
+      // A guest creating an account links it to their session, so what
+      // they did as a guest is kept — the same path as /account/upgrade.
+      final isGuest = FirebaseAuth.instance.currentUser?.isAnonymous ?? false;
+      if (createAccount && isGuest) {
+        final outcome = await GuestUpgrade.withEmail(
+          ref,
+          email: email,
+          password: password,
+        );
+        if (outcome == GuestUpgradeOutcome.accountExists && mounted) {
+          setState(() {
+            _messageIsError = true;
+            _message =
+                'An account with this email already exists. Sign in to it '
+                "below — this guest session's progress won't come with you.";
+            _step = _AuthStep.password;
+          });
+        }
+        return;
+      }
+
       final userCredential = createAccount
           ? await FirebaseAuth.instance.createUserWithEmailAndPassword(
               email: email,
@@ -179,16 +203,16 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       body: SafeArea(
         child: Column(
           children: [
             Align(
               alignment: Alignment.topLeft,
               child: IconButton(
-                icon: const Icon(
+                icon: Icon(
                   Icons.arrow_back,
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
                 onPressed: () => context.go('/welcome'),
               ),
@@ -205,8 +229,8 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                     child: Container(
                       padding: const EdgeInsets.all(32),
                       decoration: BoxDecoration(
-                        color: AppColors.surfaceDark,
-                        border: Border.all(color: AppColors.borderDark),
+                        color: context.palette.surface,
+                        border: Border.all(color: context.palette.border),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Column(
@@ -240,7 +264,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       Text(
         'Sign in',
         textAlign: TextAlign.center,
-        style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
       ),
       const SizedBox(height: 24),
       _buildField(
@@ -280,8 +304,20 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       Text(
         'Sign in',
         textAlign: TextAlign.center,
-        style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
       ),
+      // Signing in to an existing account cannot bring a guest session
+      // with it; creating one can. Say so before they choose.
+      if (ref.watch(isGuestProvider)) ...[
+        const SizedBox(height: 12),
+        Text(
+          "You're browsing as a guest. Signing in to an existing account "
+          "leaves this session's progress behind — create an account "
+          'instead to keep it.',
+          textAlign: TextAlign.center,
+          style: AppTheme.caption.copyWith(color: AppColors.warning),
+        ),
+      ],
       const SizedBox(height: 24),
       _buildField(
         controller: _emailController,
@@ -300,7 +336,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         suffixIcon: IconButton(
           icon: Icon(
             _obscurePassword ? Icons.visibility_off : Icons.visibility,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           onPressed: () => setState(() => _obscurePassword = !_obscurePassword),
         ),
@@ -313,7 +349,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           child: Text(
             'Forgot your password?',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
               decoration: TextDecoration.underline,
             ),
           ),
@@ -366,7 +402,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         child: RichText(
           text: TextSpan(
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
               decoration: TextDecoration.underline,
             ),
             children: [
@@ -388,7 +424,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       Text(
         'Create an account',
         textAlign: TextAlign.center,
-        style: AppTheme.heading2.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
       ),
       const SizedBox(height: 24),
       _buildField(
@@ -408,7 +444,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         suffixIcon: IconButton(
           icon: Icon(
             _obscurePassword ? Icons.visibility_off : Icons.visibility,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           onPressed: () => setState(() => _obscurePassword = !_obscurePassword),
         ),
@@ -460,7 +496,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         child: RichText(
           text: TextSpan(
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
               decoration: TextDecoration.underline,
             ),
             children: [
@@ -486,16 +522,16 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     bool hasError = false,
     ValueChanged<String>? onChanged,
   }) {
-    final borderColor = hasError ? AppColors.wrong : AppColors.borderDark;
+    final borderColor = hasError ? AppColors.wrong : context.palette.border;
     return TextField(
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,
       onChanged: onChanged,
-      style: const TextStyle(color: AppColors.textPrimaryDark),
+      style: TextStyle(color: context.palette.textPrimary),
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: const TextStyle(color: AppColors.textSecondaryDark),
+        labelStyle: TextStyle(color: context.palette.textSecondary),
         suffixIcon: suffixIcon,
         isDense: true,
         contentPadding: const EdgeInsets.symmetric(
@@ -503,7 +539,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           vertical: 16,
         ),
         filled: true,
-        fillColor: AppColors.backgroundDark,
+        fillColor: context.palette.background,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(4),
           borderSide: BorderSide(color: borderColor),

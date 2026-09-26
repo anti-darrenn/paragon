@@ -7,6 +7,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
 import 'four_figure_math.dart';
 import 'four_figure_tables.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// The four-figure tables supplied in the WAEC hall: logarithms,
 /// antilogarithms, natural sines, cosines and tangents. Every entry is
@@ -47,12 +48,12 @@ class _FourFigureTablesScreenState extends State<FourFigureTablesScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Material(
-            color: AppColors.surfaceDark,
+            color: context.palette.surface,
             child: TabBar(
               isScrollable: true,
               tabAlignment: TabAlignment.start,
               labelColor: AppColors.primary,
-              unselectedLabelColor: AppColors.textSecondaryDark,
+              unselectedLabelColor: context.palette.textSecondary,
               indicatorColor: AppColors.primary,
               tabs: [for (final t in _tables) Tab(text: t.title)],
             ),
@@ -170,12 +171,12 @@ class _FigureTableViewState extends State<FigureTableView> {
   }
 
   TextStyle get _cellStyle => AppTheme.caption.copyWith(
-    color: AppColors.textPrimaryDark,
+    color: context.palette.textPrimary,
     fontFeatures: const [FontFeature.tabularFigures()],
   );
 
   TextStyle get _headStyle => AppTheme.caption.copyWith(
-    color: AppColors.textSecondaryDark,
+    color: context.palette.textSecondary,
     fontWeight: FontWeight.w600,
   );
 
@@ -199,7 +200,7 @@ class _FigureTableViewState extends State<FigureTableView> {
                     signed: true,
                   ),
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                   decoration: InputDecoration(
                     isDense: true,
@@ -222,11 +223,11 @@ class _FigureTableViewState extends State<FigureTableView> {
                   style: AppTheme.caption.copyWith(
                     color: _error != null
                         ? AppColors.wrong
-                        : AppColors.textSecondaryDark,
+                        : context.palette.textSecondary,
                   ),
                 ),
         ),
-        const Divider(height: 1, color: AppColors.borderDark),
+        Divider(height: 1, color: context.palette.border),
         Expanded(child: _grid(t, hit)),
       ],
     );
@@ -242,7 +243,7 @@ class _FigureTableViewState extends State<FigureTableView> {
               _box(
                 width: _rowHeaderWidth,
                 height: _headerHeight,
-                color: AppColors.surfaceDark,
+                color: context.palette.surface,
                 child: const SizedBox.shrink(),
               ),
               Expanded(
@@ -260,7 +261,7 @@ class _FigureTableViewState extends State<FigureTableView> {
                             height: _headerHeight,
                             color: hit?.column == c
                                 ? AppColors.primary.withAlpha(50)
-                                : AppColors.surfaceDark,
+                                : context.palette.surface,
                             child: Text(t.columnLabels[c], style: _headStyle),
                           ),
                         const SizedBox(width: 8),
@@ -270,7 +271,7 @@ class _FigureTableViewState extends State<FigureTableView> {
                             height: _headerHeight,
                             color: hit != null && hit.meanDifferenceColumn == k
                                 ? AppColors.primary.withAlpha(50)
-                                : AppColors.trackDark,
+                                : context.palette.track,
                             child: Text(
                               t.meanDifferenceLabels[k - 1],
                               style: _headStyle,
@@ -299,7 +300,7 @@ class _FigureTableViewState extends State<FigureTableView> {
                     height: _heights[r],
                     color: hit?.row == r
                         ? AppColors.primary.withAlpha(50)
-                        : AppColors.surfaceDark,
+                        : context.palette.surface,
                     child: Text(t.rowLabels[r], style: _headStyle),
                   ),
                 ),
@@ -358,11 +359,11 @@ class _FigureTableViewState extends State<FigureTableView> {
                 ? AppColors.primary.withAlpha(110)
                 : onRow
                 ? AppColors.primary.withAlpha(28)
-                : AppColors.trackDark.withAlpha(120),
+                : context.palette.track.withAlpha(120),
             child: Text(
               t.meanDifferences[r][k - 1],
               textAlign: TextAlign.center,
-              style: _cellStyle.copyWith(color: AppColors.textSecondaryDark),
+              style: _cellStyle.copyWith(color: context.palette.textSecondary),
             ),
           ),
       ],
@@ -382,9 +383,9 @@ class _FigureTableViewState extends State<FigureTableView> {
     alignment: Alignment.center,
     decoration: BoxDecoration(
       color: color,
-      border: const Border(
-        bottom: BorderSide(color: AppColors.borderDark, width: 0.5),
-        right: BorderSide(color: AppColors.borderDark, width: 0.5),
+      border: Border(
+        bottom: BorderSide(color: context.palette.border, width: 0.5),
+        right: BorderSide(color: context.palette.border, width: 0.5),
       ),
     ),
     child: child,
@@ -411,12 +412,16 @@ class _LookupSummary extends StatelessWidget {
       children: [
         FullLatexView(
           latex: hit.latex,
-          textStyle: AppTheme.bodyLg.copyWith(color: AppColors.textPrimaryDark),
+          textStyle: AppTheme.bodyLg.copyWith(
+            color: context.palette.textPrimary,
+          ),
         ),
         const SizedBox(height: 2),
         Text(
           where.toString(),
-          style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.caption.copyWith(
+            color: context.palette.textSecondary,
+          ),
         ),
       ],
     );

@@ -11,6 +11,7 @@ import '../core/widgets/app_top_nav.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
 import 'study/cards/revision_cards_entry.dart';
+import '../core/theme/app_palette.dart';
 
 /// Course index for one subject — `/subject/:subjectKey/course`.
 ///
@@ -97,7 +98,7 @@ class _CourseBody extends StatelessWidget {
               child: Text(
                 course.name,
                 style: AppTheme.displayLg.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                   fontSize: isCompact ? 28 : 40,
                 ),
               ),
@@ -113,7 +114,9 @@ class _CourseBody extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             course.blurb,
-            style: AppTheme.bodyLg.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyLg.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
         ],
 
@@ -146,7 +149,7 @@ class _CourseBody extends StatelessWidget {
             child: Text(
               'No modules yet for this subject.',
               style: AppTheme.bodyLg.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           )
@@ -216,9 +219,9 @@ class _CourseProgressPanel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
+        color: context.palette.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.borderDark),
+        border: Border.all(color: context.palette.border),
       ),
       child: Row(
         children: [
@@ -237,7 +240,7 @@ class _CourseProgressPanel extends StatelessWidget {
                       ? 'You have not started this course yet'
                       : 'Course mastery',
                   style: AppTheme.bodyLg.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -249,7 +252,7 @@ class _CourseProgressPanel extends StatelessWidget {
                       : '$started of $total topics started  ·  $complete at '
                             'proficient or above',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ],
@@ -291,7 +294,9 @@ class _CourseMeta extends StatelessWidget {
         Flexible(
           child: Text(
             parts.join('  ·  '),
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
         ),
       ],
@@ -332,7 +337,7 @@ class _PlannedNotice extends StatelessWidget {
               'below is the planned syllabus — topics will become '
               'practisable as content lands.',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -384,14 +389,14 @@ class _Breadcrumb extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Text(
                 '/',
-                style: AppTheme.label.copyWith(color: AppColors.borderDark),
+                style: AppTheme.label.copyWith(color: context.palette.border),
               ),
             ),
           if (crumbs[i].path == null)
             Text(
               crumbs[i].label,
               style: AppTheme.label.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             )
           else
@@ -440,20 +445,24 @@ class _CourseError extends StatelessWidget {
           Icon(
             isMissing ? Icons.search_off_rounded : Icons.error_outline_rounded,
             size: 32,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           const SizedBox(height: 12),
           Text(
             isMissing
                 ? "We couldn't find that course."
                 : "That course couldn't be loaded.",
-            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading3.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 8),
           Text(
             isMissing ? '$error' : 'Check your connection and try again.',
             textAlign: TextAlign.center,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 20),
           OutlinedButton(

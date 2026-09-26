@@ -8,6 +8,10 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/account_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
+import '../core/widgets/user_avatar.dart';
+import 'account/account_help.dart';
+import 'account/delete_account.dart';
+import '../core/theme/app_palette.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -30,7 +34,7 @@ class SettingsScreen extends ConsumerWidget {
     final displayName = (userData?['displayName'] as String?) ?? '';
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Settings')),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -44,6 +48,13 @@ class SettingsScreen extends ConsumerWidget {
                   children: [
                     _Card(
                       children: [
+                        _ProfileHeader(
+                          name: displayName.isEmpty
+                              ? (isGuest ? 'Guest' : 'Student')
+                              : displayName,
+                          username: username,
+                        ),
+                        const _Divider(),
                         // Editable, unlike the two below it: a display
                         // name is not unique and nothing depends on it
                         // staying put. A guest has no user document to
@@ -56,17 +67,25 @@ class SettingsScreen extends ConsumerWidget {
                           )
                         else
                           _EditableRow(
-                            label: 'Display name',
+                            label: 'Edit profile',
                             value: displayName.isEmpty ? '—' : displayName,
-                            hint: 'What the app calls you. Not unique.',
+                            hint: 'Picture, display name and bio.',
                             onTap: () => context.push('/settings/name'),
                           ),
                         const _Divider(),
-                        _Row(
-                          label: 'Username',
-                          value: username.isEmpty ? '—' : '@$username',
-                          hint: 'Unique and permanent.',
-                        ),
+                        if (isGuest || username.isEmpty)
+                          _Row(
+                            label: 'Username',
+                            value: username.isEmpty ? '—' : '@$username',
+                            hint: 'Unique.',
+                          )
+                        else
+                          _EditableRow(
+                            label: 'Username',
+                            value: '@$username',
+                            hint: 'Unique. Changeable every 90 days.',
+                            onTap: () => context.push('/settings/username'),
+                          ),
                         const _Divider(),
                         _Row(
                           label: 'Email',
@@ -77,6 +96,18 @@ class SettingsScreen extends ConsumerWidget {
                       ],
                     ),
                     const SizedBox(height: 20),
+
+                    if (isGuest) ...[
+                      _Card(
+                        children: [
+                          _LinkRow(
+                            label: 'Create an account to keep your progress',
+                            onTap: () => context.push('/account/upgrade'),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                    ],
 
                     // Everything a student can actually change lives
                     // here. Until this section existed, onboarding's
@@ -93,6 +124,16 @@ class SettingsScreen extends ConsumerWidget {
                           _LinkRow(
                             label: 'About you',
                             onTap: () => context.push('/settings/profile'),
+                          ),
+                          const _Divider(),
+                          _LinkRow(
+                            label: 'Sign-in and security',
+                            onTap: () => context.push('/settings/security'),
+                          ),
+                          const _Divider(),
+                          _LinkRow(
+                            label: 'Download your data',
+                            onTap: () => context.push('/settings/export'),
                           ),
                         ],
                       ),
@@ -148,6 +189,14 @@ class SettingsScreen extends ConsumerWidget {
                           label: 'About Paragon',
                           onTap: () => context.push('/about'),
                         ),
+                        const _Divider(),
+                        _LinkRow(
+                          label: 'Help with your account',
+                          onTap: () => showAccountHelp(
+                            context,
+                            uid: isGuest ? null : user?.uid,
+                          ),
+                        ),
                       ],
                     ),
                     const SizedBox(height: 20),
@@ -162,7 +211,7 @@ class SettingsScreen extends ConsumerWidget {
                           await FirebaseAuth.instance.signOut();
                         },
                         style: OutlinedButton.styleFrom(
-                          side: const BorderSide(color: AppColors.borderDark),
+                          side: BorderSide(color: context.palette.border),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -170,7 +219,7 @@ class SettingsScreen extends ConsumerWidget {
                         child: Text(
                           'Sign out',
                           style: AppTheme.btnLabel.copyWith(
-                            color: AppColors.textPrimaryDark,
+                            color: context.palette.textPrimary,
                           ),
                         ),
                       ),
@@ -197,6 +246,8 @@ class SettingsScreen extends ConsumerWidget {
   }
 }
 
+enum _DeleteChoice { scheduled, now }
+
 class _DeleteAccountPanel extends ConsumerStatefulWidget {
   const _DeleteAccountPanel();
 
@@ -209,81 +260,86 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
   bool _isDeleting = false;
   String? _message;
 
+  /// A real account is scheduled for deletion in 30 days and signed out;
+  /// signing back in within that time offers to restore it. A guest has
+  /// no way back in, so a grace period would only keep their data longer
+  /// for nobody: theirs goes at once, as before.
   Future<void> _confirmAndDelete() async {
-    final confirmed = await showDialog<bool>(
+    final isGuest = ref.read(isGuestProvider);
+    final days = kDeletionGracePeriod.inDays;
+    final choice = await showDialog<_DeleteChoice>(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Delete your account?',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: Text(
-          'This permanently deletes your account and your entire practice '
-          'history. It cannot be undone.\n\n'
-          'Your username stays reserved and cannot be claimed by anyone '
-          'else, including you.',
-          style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+          isGuest
+              ? 'This permanently deletes this guest session and everything '
+                    'in it. It cannot be undone.'
+              : 'Your account and your entire practice history will be '
+                    'deleted in $days days, and you will be signed out now. '
+                    'Sign in again before then to change your mind.\n\n'
+                    'If you would rather it went immediately, choose '
+                    '"Delete now". That cannot be undone.\n\n'
+                    'Your username, and any you used before it, stay '
+                    'reserved and cannot be claimed by anyone else, '
+                    'including you.',
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
+            onPressed: () => Navigator.of(context).pop(),
             child: Text(
               'Cancel',
               style: AppTheme.btnLabel.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
           TextButton(
-            onPressed: () => Navigator.of(context).pop(true),
+            onPressed: () => Navigator.of(context).pop(_DeleteChoice.now),
             child: Text(
-              'Delete everything',
+              isGuest ? 'Delete everything' : 'Delete now',
               style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
             ),
           ),
+          if (!isGuest)
+            TextButton(
+              onPressed: () =>
+                  Navigator.of(context).pop(_DeleteChoice.scheduled),
+              child: Text(
+                'Delete in $days days',
+                style: AppTheme.btnLabel.copyWith(color: AppColors.wrong),
+              ),
+            ),
         ],
       ),
     );
-
-    if (confirmed != true) return;
-
-    final user = ref.read(currentUserProvider);
-    if (user == null) return;
+    if (choice == null || !mounted) return;
 
     setState(() {
       _isDeleting = true;
       _message = null;
     });
-
     try {
-      final outcome = await ref
-          .read(accountRepositoryProvider)
-          .deleteAccount(user);
-      if (!mounted) return;
-
-      switch (outcome) {
-        case AccountDeletionOutcome.deleted:
-          // The auth listener sends them to /welcome on its own.
-          break;
-        case AccountDeletionOutcome.partial:
-          setState(
-            () => _message =
-                'Your account was deleted, but some data may not have been '
-                'removed. Please contact us so we can finish the job.',
-          );
-        case AccountDeletionOutcome.needsRecentLogin:
-          setState(
-            () => _message =
-                'For your security, please sign out and sign in again, '
-                'then delete your account. Nothing has been deleted.',
-          );
+      if (choice == _DeleteChoice.now) {
+        final message = await deleteAccountNow(context, ref);
+        if (mounted && message != null) setState(() => _message = message);
+        return;
       }
+      final user = ref.read(currentUserProvider);
+      if (user == null) return;
+      await ref.read(accountRepositoryProvider).scheduleDeletion(user.uid);
+      await FirebaseAuth.instance.signOut();
     } catch (_) {
-      if (!mounted) return;
-      setState(
-        () => _message = "Couldn't delete your account. Please try again.",
-      );
+      if (mounted) {
+        setState(
+          () => _message = "Couldn't delete your account. Please try again.",
+        );
+      }
     } finally {
       if (mounted) setState(() => _isDeleting = false);
     }
@@ -306,15 +362,17 @@ class _DeleteAccountPanelState extends ConsumerState<_DeleteAccountPanel> {
           Text(
             'Delete account',
             style: AppTheme.bodyLg.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w600,
             ),
           ),
           const SizedBox(height: 6),
           Text(
-            'Permanently removes your account and every question you have '
-            'answered. This cannot be undone.',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            'Removes your account and every question you have answered. '
+            'You get 30 days to change your mind, or it can go at once.',
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           if (_message != null) ...[
             const SizedBox(height: 12),
@@ -365,11 +423,60 @@ class _Card extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(children: children),
+    );
+  }
+}
+
+/// Avatar, name and handle, leading to `/me`.
+class _ProfileHeader extends StatelessWidget {
+  const _ProfileHeader({required this.name, required this.username});
+
+  final String name;
+  final String username;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => context.push('/me'),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 16, 12, 16),
+        child: Row(
+          children: [
+            const UserAvatar(size: 52),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    name,
+                    style: AppTheme.bodyLg.copyWith(
+                      color: context.palette.textPrimary,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    username.isEmpty ? 'View your profile' : '@$username',
+                    style: AppTheme.bodyMd.copyWith(
+                      color: context.palette.textSecondary,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(
+              Icons.chevron_right_rounded,
+              color: context.palette.textSecondary,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -379,7 +486,7 @@ class _Divider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) =>
-      const Divider(height: 1, thickness: 1, color: AppColors.borderDark);
+      Divider(height: 1, thickness: 1, color: context.palette.border);
 }
 
 class _Row extends StatelessWidget {
@@ -403,7 +510,7 @@ class _Row extends StatelessWidget {
                 Text(
                   label,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
                 if (hint != null) ...[
@@ -411,7 +518,7 @@ class _Row extends StatelessWidget {
                   Text(
                     hint!,
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.textSecondaryDark.withAlpha(
+                      color: context.palette.textSecondary.withAlpha(
                         (0.7 * 255).round(),
                       ),
                     ),
@@ -426,7 +533,7 @@ class _Row extends StatelessWidget {
               value,
               textAlign: TextAlign.right,
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -465,9 +572,9 @@ class _EditableRow extends StatelessWidget {
             Expanded(
               child: _Row(label: label, value: value, hint: hint),
             ),
-            const Icon(
+            Icon(
               Icons.chevron_right_rounded,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ],
         ),
@@ -494,14 +601,14 @@ class _LinkRow extends StatelessWidget {
               child: Text(
                 label,
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
-            const Icon(
+            Icon(
               Icons.chevron_right_rounded,
               size: 20,
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ],
         ),
@@ -525,8 +632,8 @@ class _AnalyticsToggle extends ConsumerWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        border: Border.all(color: AppColors.borderDark),
+        color: context.palette.surface,
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(10),
       ),
       padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
@@ -539,7 +646,7 @@ class _AnalyticsToggle extends ConsumerWidget {
                 Text(
                   'Share usage data',
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
                 const SizedBox(height: 2),
@@ -547,7 +654,7 @@ class _AnalyticsToggle extends ConsumerWidget {
                   'Anonymous statistics about which topics get practised. '
                   'Never your name, answers or anything you typed.',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
               ],

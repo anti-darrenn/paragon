@@ -7,6 +7,8 @@ import '../../../core/repositories/admin_resource_repository.dart';
 import '../../../core/repositories/lesson_workflow.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
+import 'staff_profile.dart';
+import '../../../core/theme/app_palette.dart';
 
 String _when(DateTime? t) {
   if (t == null) return 'just now';
@@ -31,7 +33,7 @@ Future<void> showHistorySheet(
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
-    backgroundColor: AppColors.surfaceDark,
+    backgroundColor: context.palette.surface,
     builder: (sheet) => DraggableScrollableSheet(
       expand: false,
       initialChildSize: 0.6,
@@ -80,14 +82,16 @@ class _HistoryList extends ConsumerWidget {
         children: [
           Text(
             'History',
-            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading3.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 4),
           Text(
             'Every save keeps what was there before. Restoring puts an older '
             'version back and keeps the current one here too.',
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
           const SizedBox(height: 12),
@@ -95,23 +99,23 @@ class _HistoryList extends ConsumerWidget {
             Text(
               'No earlier versions yet.',
               style: AppTheme.bodyMd.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           for (final v in list)
             Card(
-              color: AppColors.backgroundDark,
+              color: context.palette.background,
               child: ExpansionTile(
                 title: Text(
                   v.title.isEmpty ? '(untitled)' : v.title,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                 ),
                 subtitle: Text(
                   '${_when(v.savedAt)}${v.status == null ? '' : ' · was ${v.status!.label.toLowerCase()}'}',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
                 children: [
@@ -123,12 +127,12 @@ class _HistoryList extends ConsumerWidget {
                         Container(
                           constraints: const BoxConstraints(maxHeight: 220),
                           padding: const EdgeInsets.all(10),
-                          color: AppColors.surfaceDark,
+                          color: context.palette.surface,
                           child: SingleChildScrollView(
                             child: SelectableText(
                               v.body.isEmpty ? '(no article body)' : v.body,
                               style: AppTheme.caption.copyWith(
-                                color: AppColors.textPrimaryDark,
+                                color: context.palette.textPrimary,
                                 fontFamily: 'monospace',
                               ),
                             ),
@@ -221,7 +225,7 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        border: Border.all(color: AppColors.borderDark),
+        border: Border.all(color: context.palette.border),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(
@@ -231,7 +235,9 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
             comments.isEmpty
                 ? 'REVIEW COMMENTS'
                 : 'REVIEW COMMENTS · $open OPEN',
-            style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.label.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           for (final c in comments)
             Padding(
@@ -239,6 +245,8 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  StaffAvatar(uid: c.authorUid, fallbackName: c.authorName),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,7 +254,7 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
                         Text(
                           '${c.authorName} · ${_when(c.createdAt)}',
                           style: AppTheme.caption.copyWith(
-                            color: AppColors.textSecondaryDark,
+                            color: context.palette.textSecondary,
                           ),
                         ),
                         const SizedBox(height: 2),
@@ -254,8 +262,8 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
                           c.text,
                           style: AppTheme.bodyMd.copyWith(
                             color: c.resolved
-                                ? AppColors.textSecondaryDark
-                                : AppColors.textPrimaryDark,
+                                ? context.palette.textSecondary
+                                : context.palette.textPrimary,
                             decoration: c.resolved
                                 ? TextDecoration.lineThrough
                                 : null,
@@ -291,7 +299,7 @@ class _CommentsPanelState extends ConsumerState<CommentsPanel> {
                   minLines: 1,
                   maxLines: 4,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textPrimaryDark,
+                    color: context.palette.textPrimary,
                   ),
                   decoration: const InputDecoration(
                     hintText: 'Add a comment',

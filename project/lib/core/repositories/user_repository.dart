@@ -2,6 +2,25 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../legal/legal_documents.dart';
+import '../onboarding/onboarding_step.dart';
+
+/// The longest bio a student may save. `firestore.rules` checks the same
+/// number.
+const int kBioMaxLength = 160;
+
+/// `legalVersion` and `legalAcceptedAt`, as the rules require them: the
+/// current version and the server's clock.
+Map<String, Object> legalAcceptanceFields() => {
+  'legalVersion': kLegalVersion,
+  'legalAcceptedAt': FieldValue.serverTimestamp(),
+};
+
+/// Whether an account whose document is [userData] must accept the terms
+/// again before going on.
+bool needsLegalAcceptance(Map<String, dynamic>? userData) =>
+    userData != null && userData['legalVersion'] != kLegalVersion;
+
 class UserRepository {
   const UserRepository(this._db);
   final FirebaseFirestore _db;
@@ -17,6 +36,36 @@ class UserRepository {
         'isAnonymous': user.isAnonymous,
         'createdAt': FieldValue.serverTimestamp(),
       });
+    }
+  }
+
+  /// Records that a guest session has just become a real account.
+  ///
+  /// The uid is unchanged — the anonymous user was linked, not replaced —
+  /// so this is an update to the guest's own document, not a new one. The
+  /// Google name, when there is one, fills a blank display name so the
+  /// onboarding step can be pressed straight through; a name the guest
+  /// never had is not invented.
+  Future<void> recordUpgrade(User user) async {
+    final ref = _db.collection('users').doc(user.uid);
+    final snap = await ref.get();
+    final storedName = (snap.data()?['displayName'] as String?)?.trim() ?? '';
+    final authName = user.displayName?.trim() ?? '';
+    final data = <String, Object?>{
+      // They agreed on the welcome screen before starting as a guest.
+      ...legalAcceptanceFields(),
+      'isAnonymous': false,
+      'email': user.email ?? '',
+      'updatedAt': FieldValue.serverTimestamp(),
+      if (storedName.isEmpty && authName.isNotEmpty) 'displayName': authName,
+    };
+    if (snap.exists) {
+      await ref.update(data);
+    } else {
+      // A guest whose document was never provisioned (a failed first
+      // write). Create it the one way the rules accept, then update.
+      await createUserIfNew(user);
+      await ref.update(data);
     }
   }
 
@@ -51,28 +100,83 @@ class UserRepository {
     required String raw,
     required String key,
   }) async {
-    final reservation = _db.collection('usernames').doc(key);
     final trimmed = raw.trim();
-
-    final claimed = await _db.runTransaction<bool>((tx) async {
-      final existing = await tx.get(reservation);
-      if (existing.exists) {
-        // Already ours from a half-finished attempt is a success, not a
-        // collision — otherwise the user is stranded on a name they own
-        // but cannot use.
-        return existing.data()?['uid'] == uid;
-      }
-      tx.set(reservation, {'uid': uid, 'raw': trimmed});
-      return true;
-    });
-
-    if (!claimed) return false;
+    if (!await _claimReservation(uid: uid, key: key, raw: trimmed)) {
+      return false;
+    }
 
     await _db.collection('users').doc(uid).set({
       'username': trimmed,
       'usernameKey': key,
+      // The first write a new account makes, so it carries the terms the
+      // student agreed to on the welcome screen before signing in.
+      ...legalAcceptanceFields(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
+    return true;
+  }
+
+  /// Records that the student accepted the current terms — from the
+  /// accept screen after a change.
+  Future<void> acceptLegal(String uid) {
+    return _db.collection('users').doc(uid).update({
+      ...legalAcceptanceFields(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
+  }
+
+  /// Phase 1 of [reserveUsername] and [changeUsername]: atomically claims
+  /// `usernames/{key}` if free. True if it is now [uid]'s.
+  Future<bool> _claimReservation({
+    required String uid,
+    required String key,
+    required String raw,
+  }) {
+    final reservation = _db.collection('usernames').doc(key);
+    return _db.runTransaction<bool>((tx) async {
+      final existing = await tx.get(reservation);
+      if (existing.exists) {
+        // Already ours — from a half-finished attempt, or a case-only
+        // change of our own handle — is a success, not a collision;
+        // otherwise the user is stranded on a name they own but cannot use.
+        return existing.data()?['uid'] == uid;
+      }
+      tx.set(reservation, {'uid': uid, 'raw': raw});
+      return true;
+    });
+  }
+
+  /// Moves a student who already has a username to a new one.
+  ///
+  /// The same two phases as [reserveUsername], and for the same reason.
+  /// The old reservation is **not released** — the rules forbid it, and
+  /// that is the point: a handle someone gave up can never be taken by
+  /// someone else and used to pass as them. `usernameChangedAt` is the
+  /// server's clock, which the rules check against a 90-day cooldown
+  /// ([UsernameRules.changeCooldown]).
+  ///
+  /// Returns false if the handle belongs to someone else. A cooldown that
+  /// has not passed surfaces as the rules' permission error, which the
+  /// screen prevents by showing the date instead of the form.
+  ///
+  /// A crash between the phases leaves the new name reserved to [uid] but
+  /// unused, which re-running completes — and which, if they pick another
+  /// name instead, simply stays theirs and unused, like any retired one.
+  Future<bool> changeUsername({
+    required String uid,
+    required String raw,
+    required String key,
+  }) async {
+    final trimmed = raw.trim();
+    if (!await _claimReservation(uid: uid, key: key, raw: trimmed)) {
+      return false;
+    }
+    await _db.collection('users').doc(uid).update({
+      'username': trimmed,
+      'usernameKey': key,
+      'usernameChangedAt': FieldValue.serverTimestamp(),
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
     return true;
   }
 
@@ -92,6 +196,42 @@ class UserRepository {
       'displayName': displayName.trim(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
+  }
+
+  /// [avatar] is `Avatar.storageValue`; the rules check its shape.
+  Future<void> setAvatar({required String uid, required String avatar}) {
+    return _db.collection('users').doc(uid).set({
+      'avatar': avatar,
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true));
+  }
+
+  /// Saves the bio, or deletes it when [bio] is blank — the same rule as
+  /// [updateProfile]: an emptied box on an editor is a request to remove
+  /// what was there. Over-long input is refused here as well as by the
+  /// rules, so the student gets a message rather than a permission error.
+  Future<void> setBio({required String uid, required String bio}) async {
+    final trimmed = bio.trim();
+    if (trimmed.length > kBioMaxLength) {
+      throw ArgumentError.value(bio, 'bio', 'longer than $kBioMaxLength');
+    }
+    await _db.collection('users').doc(uid).update({
+      'bio': trimmed.isEmpty ? FieldValue.delete() : trimmed,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
+  }
+
+  /// Merges [prefs] into `users/{uid}.prefs`, key by key, leaving the
+  /// others alone. See `core/prefs/account_prefs.dart` for the keys.
+  Future<void> setPrefs({
+    required String uid,
+    required Map<String, Object> prefs,
+  }) {
+    if (prefs.isEmpty) return Future.value();
+    return _db.collection('users').doc(uid).update({
+      for (final e in prefs.entries) 'prefs.${e.key}': e.value,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
   }
 
   Future<void> setSelectedSubjects({

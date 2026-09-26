@@ -7,6 +7,7 @@ import '../core/auth/guest_limits.dart';
 import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
 import '../core/widgets/load_error.dart';
+import '../core/theme/app_palette.dart';
 
 class WaecSubjectScreen extends ConsumerWidget {
   const WaecSubjectScreen({super.key});
@@ -65,19 +66,19 @@ class _WaecSubjectTile extends StatelessWidget {
       title: Text(
         subject.name,
         style: TextStyle(
-          color: _lockedForGuest ? AppColors.textSecondaryDark : null,
+          color: _lockedForGuest ? context.palette.textSecondary : null,
         ),
       ),
       leading: Container(
         width: 10,
         height: 10,
         decoration: BoxDecoration(
-          color: _lockedForGuest ? AppColors.textSecondaryDark : color,
+          color: _lockedForGuest ? context.palette.textSecondary : color,
           shape: BoxShape.circle,
         ),
       ),
       trailing: _lockedForGuest
-          ? const Icon(Icons.lock_outline, color: AppColors.textSecondaryDark)
+          ? Icon(Icons.lock_outline, color: context.palette.textSecondary)
           : const Icon(Icons.chevron_right),
       tileColor: Theme.of(context).colorScheme.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),

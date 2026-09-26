@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/lesson_blocks/lesson_block_view.dart';
 import 'read_aloud_controller.dart';
 import 'speech_segments.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// Where read-aloud plugs into a lesson article.
 ///
@@ -145,7 +146,7 @@ class ReadAloudButton extends ConsumerWidget {
           IconButton(
             key: const ValueKey('readAloud.stop'),
             tooltip: 'Stop',
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
             onPressed: controller.stop,
             icon: const Icon(Icons.stop_rounded),
           ),
@@ -173,14 +174,16 @@ class _SpeedChoice extends ConsumerWidget {
       tooltip: 'Reading speed (applies from the next sentence)',
       initialValue: rate,
       onSelected: ref.read(readAloudRateProvider.notifier).set,
-      color: AppColors.surfaceDark,
+      color: context.palette.surface,
       itemBuilder: (context) => [
         for (final r in kReadAloudRates)
           PopupMenuItem(
             value: r,
             child: Text(
               label(r),
-              style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textPrimary,
+              ),
             ),
           ),
       ],
@@ -188,7 +191,7 @@ class _SpeedChoice extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
         child: Text(
           label(rate),
-          style: AppTheme.label.copyWith(color: AppColors.textSecondaryDark),
+          style: AppTheme.label.copyWith(color: context.palette.textSecondary),
         ),
       ),
     );

@@ -11,6 +11,7 @@ import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
 import 'app_top_nav.dart';
 import 'mastery_indicator.dart';
+import '../theme/app_palette.dart';
 
 /// The repeating unit of a course index page: one bordered card split into
 /// a narrow title region and a wide grid of topic links.
@@ -71,9 +72,9 @@ class CourseModuleCard extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
+        color: context.palette.surface,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: AppColors.borderDark),
+        border: Border.all(color: context.palette.border),
       ),
       // ClipRRect so the tinted title band's corners follow the card's
       // rounding instead of squaring off inside it.
@@ -90,10 +91,10 @@ class CourseModuleCard extends StatelessWidget {
                     progress: progress,
                     paintBackground: true,
                   ),
-                  const Divider(
+                  Divider(
                     height: 1,
                     thickness: 1,
-                    color: AppColors.borderDark,
+                    color: context.palette.border,
                   ),
                   _TopicGrid(
                     module: module,
@@ -129,9 +130,9 @@ class CourseModuleCard extends StatelessWidget {
                             color: accent.withAlpha((0.07 * 255).round()),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: _dividerWidth,
-                          child: ColoredBox(color: AppColors.borderDark),
+                          child: ColoredBox(color: context.palette.border),
                         ),
                         const Expanded(flex: _gridFlex, child: SizedBox()),
                       ],
@@ -241,7 +242,7 @@ class _TitleRegion extends StatelessWidget {
           Text(
             module.name,
             style: AppTheme.heading3.copyWith(
-              color: AppColors.textPrimaryDark,
+              color: context.palette.textPrimary,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -251,7 +252,9 @@ class _TitleRegion extends StatelessWidget {
                 ? '$topicCount ${topicCount == 1 ? 'topic' : 'topics'} planned'
                 : '$topicCount ${topicCount == 1 ? 'topic' : 'topics'} · '
                       '${module.questionCount} questions',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           // Only once there is something to report. "0 of 6 started" on
           // every card of a course nobody has opened is a wall of zeroes,
@@ -386,7 +389,7 @@ class _LessonsLine extends ConsumerWidget {
             ? AppColors.correct
             : done > 0
             ? accent
-            : AppColors.textSecondaryDark.withAlpha((0.75 * 255).round()),
+            : context.palette.textSecondary.withAlpha((0.75 * 255).round()),
       ),
     );
   }
@@ -399,10 +402,10 @@ class _TopicLinkState extends State<TopicLink> {
   Widget build(BuildContext context) {
     final isInteractive = !widget.topic.isPlaceholder && widget.onTap != null;
     final nameColor = !isInteractive
-        ? AppColors.textSecondaryDark
+        ? context.palette.textSecondary
         : _isHovered
         ? widget.accent
-        : AppColors.textPrimaryDark;
+        : context.palette.textPrimary;
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -416,7 +419,7 @@ class _TopicLinkState extends State<TopicLink> {
             decoration: BoxDecoration(
               color: isInteractive
                   ? widget.accent.withAlpha((_isHovered ? 255 : 130))
-                  : AppColors.borderDark,
+                  : context.palette.border,
               shape: BoxShape.circle,
             ),
           ),
@@ -450,7 +453,7 @@ class _TopicLinkState extends State<TopicLink> {
                 style: AppTheme.caption.copyWith(
                   color: widget.level.isStarted
                       ? widget.accent
-                      : AppColors.textSecondaryDark.withAlpha(
+                      : context.palette.textSecondary.withAlpha(
                           (0.75 * 255).round(),
                         ),
                 ),

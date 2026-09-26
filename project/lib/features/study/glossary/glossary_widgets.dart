@@ -6,6 +6,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/article_view.dart';
 import '../../lesson/lesson_screen.dart' show lessonPath;
+import '../../../core/theme/app_palette.dart';
 
 /// Opens a lesson from a pushed page or sheet: the page is closed first,
 /// then the router moves, so the student is not left with a stale page
@@ -45,7 +46,7 @@ class IndexSourceLine extends StatelessWidget {
             child: Text(
               'From $topicName',
               style: AppTheme.caption.copyWith(
-                color: AppColors.textSecondaryDark,
+                color: context.palette.textSecondary,
               ),
             ),
           ),
@@ -93,7 +94,7 @@ class GlossaryTermsRow extends StatelessWidget {
                 Text(
                   'Terms:',
                   style: AppTheme.caption.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                 ),
                 for (final (term, defs) in terms)
@@ -107,13 +108,13 @@ class GlossaryTermsRow extends StatelessWidget {
                         vertical: 2,
                       ),
                       decoration: BoxDecoration(
-                        border: Border.all(color: AppColors.borderDark),
+                        border: Border.all(color: context.palette.border),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
                         term,
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textPrimaryDark,
+                          color: context.palette.textPrimary,
                           fontStyle: FontStyle.italic,
                         ),
                       ),
@@ -136,7 +137,7 @@ Future<void> showDefinitionSheet(
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
-    backgroundColor: AppColors.surfaceDark,
+    backgroundColor: context.palette.surface,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
     ),
@@ -152,7 +153,7 @@ Future<void> showDefinitionSheet(
             Text(
               term,
               style: AppTheme.heading3.copyWith(
-                color: AppColors.textPrimaryDark,
+                color: context.palette.textPrimary,
               ),
             ),
             for (final d in definitions) ...[

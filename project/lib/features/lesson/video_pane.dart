@@ -3,10 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/models/learn_resource.dart';
 import '../../core/providers/reading_settings_provider.dart';
-import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/report_lesson_button.dart';
 import 'video_player.dart';
+import '../../core/theme/app_palette.dart';
 
 /// A video lesson: the player, then what the author wrote about it.
 ///
@@ -46,8 +46,8 @@ class VideoPane extends ConsumerWidget {
             aspectRatio: 16 / 9,
             child: Container(
               decoration: BoxDecoration(
-                color: AppColors.surfaceDark,
-                border: Border.all(color: AppColors.borderDark),
+                color: context.palette.surface,
+                border: Border.all(color: context.palette.border),
                 borderRadius: BorderRadius.circular(12),
               ),
               alignment: Alignment.center,
@@ -58,7 +58,7 @@ class VideoPane extends ConsumerWidget {
                     : 'This video has not been recorded yet.',
                 textAlign: TextAlign.center,
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ),
@@ -86,7 +86,7 @@ class VideoPane extends ConsumerWidget {
               child: Text(
                 resource.title,
                 style: AppTheme.heading2.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
               ),
             ),
@@ -98,7 +98,7 @@ class VideoPane extends ConsumerWidget {
           Text(
             formatDuration(s),
             style: AppTheme.caption.copyWith(
-              color: AppColors.textSecondaryDark,
+              color: context.palette.textSecondary,
             ),
           ),
         ],
@@ -106,7 +106,9 @@ class VideoPane extends ConsumerWidget {
           const SizedBox(height: 16),
           Text(
             d,
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
         ],
         if (resource.transcript case final t?) ...[
@@ -118,7 +120,7 @@ class VideoPane extends ConsumerWidget {
               title: Text(
                 'Transcript',
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -126,7 +128,7 @@ class VideoPane extends ConsumerWidget {
                 SelectableText(
                   t,
                   style: AppTheme.bodyMd.copyWith(
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                     height: 1.6,
                   ),
                 ),
@@ -166,9 +168,9 @@ class _TapToLoadState extends State<_TapToLoad> {
     return AspectRatio(
       aspectRatio: 16 / 9,
       child: Material(
-        color: AppColors.surfaceDark,
+        color: context.palette.surface,
         shape: RoundedRectangleBorder(
-          side: const BorderSide(color: AppColors.borderDark),
+          side: BorderSide(color: context.palette.border),
           borderRadius: BorderRadius.circular(12),
         ),
         clipBehavior: Clip.antiAlias,
@@ -180,16 +182,16 @@ class _TapToLoadState extends State<_TapToLoad> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.play_circle_outline_rounded,
                     size: 48,
-                    color: AppColors.textSecondaryDark,
+                    color: context.palette.textSecondary,
                   ),
                   const SizedBox(height: 12),
                   Text(
                     'Tap to load video',
                     style: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textPrimaryDark,
+                      color: context.palette.textPrimary,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -198,7 +200,7 @@ class _TapToLoadState extends State<_TapToLoad> {
                     'Low-data mode is on. Nothing is downloaded until you tap.',
                     textAlign: TextAlign.center,
                     style: AppTheme.caption.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   ),
                 ],

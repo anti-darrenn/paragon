@@ -5,7 +5,8 @@
 /// the screens and the tests all reason about the same rules.
 ///
 /// **Gating vs. optional.** Three fields gate entry to the app: `username`,
-/// `displayName` and `selectedSubjects`. The optional profile step
+/// `displayName` and `selectedSubjects`. The optional avatar step, like the
+/// optional profile step
 /// (school, class, age, gender, country, state) never gates anything and
 /// is never reached by a redirect — only by walking forward through the
 /// funnel, or later from settings. That matches the spec's own definition
@@ -21,6 +22,11 @@ library;
 enum OnboardingStep {
   username('/onboarding/username'),
   displayName('/onboarding/displayname'),
+
+  /// Optional, like [profile]: never produced by [resolveOnboardingStep],
+  /// only reached by continuing forward from [displayName]. Skipping it
+  /// leaves the initials fallback, which is a perfectly good avatar.
+  avatar('/onboarding/avatar'),
   subjects('/onboarding/subjects'),
 
   /// Optional final step. Never produced by [resolveOnboardingStep] — it
@@ -40,8 +46,9 @@ enum OnboardingStep {
   int? get stepNumber => switch (this) {
     OnboardingStep.username => 1,
     OnboardingStep.displayName => 2,
-    OnboardingStep.subjects => 3,
-    OnboardingStep.profile => 4,
+    OnboardingStep.avatar => 3,
+    OnboardingStep.subjects => 4,
+    OnboardingStep.profile => 5,
     OnboardingStep.complete => null,
   };
 
@@ -49,13 +56,14 @@ enum OnboardingStep {
   /// funnel. [profile] and [complete] both end it.
   OnboardingStep get next => switch (this) {
     OnboardingStep.username => OnboardingStep.displayName,
-    OnboardingStep.displayName => OnboardingStep.subjects,
+    OnboardingStep.displayName => OnboardingStep.avatar,
+    OnboardingStep.avatar => OnboardingStep.subjects,
     OnboardingStep.subjects => OnboardingStep.profile,
     OnboardingStep.profile => OnboardingStep.complete,
     OnboardingStep.complete => OnboardingStep.complete,
   };
 
-  static const int totalSteps = 4;
+  static const int totalSteps = 5;
 
   /// True if [path] is any onboarding route. Used by the router to leave
   /// the funnel alone once the user is inside it.
@@ -97,6 +105,25 @@ class UsernameRules {
 
   static const int minLength = 4;
   static const int maxLength = 20;
+
+  /// How long after one change a student must wait for the next.
+  /// `firestore.rules` enforces the same number (`duration.value(90,
+  /// 'd')`), so change them together. Long, because every handle given up
+  /// stays reserved forever — a short cooldown would let one student burn
+  /// through names — and because a handle others have learned should not
+  /// shift under them.
+  static const Duration changeCooldown = Duration(days: 90);
+
+  /// When [lastChangedAt]'s owner may change their username again, or null
+  /// if they may now. Never changed means now.
+  static DateTime? nextChangeAllowedAt(
+    DateTime? lastChangedAt, {
+    required DateTime now,
+  }) {
+    if (lastChangedAt == null) return null;
+    final next = lastChangedAt.add(changeCooldown);
+    return next.isAfter(now) ? next : null;
+  }
 
   /// Letters, digits and underscore only.
   ///

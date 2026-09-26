@@ -112,7 +112,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-80 checks. The denials are the content: a write that succeeds only proves something
+116 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -398,11 +398,11 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 `\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
 
-**Theme.** `AppColors` is the only color source — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Dark theme is enforced (`ThemeMode.dark` in `app.dart`); the light theme exists but is not selectable.
+**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` exactly in dark. **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading (`appearanceProvider`). The light theme has not yet been reviewed screen by screen in a browser, so **`kAppearanceChoiceEnabled` is `false`**: the choice is hidden and the app is always dark. Review light mode, then flip it.
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -419,7 +419,15 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
 - `attempts.source` is now one of `drill | waec | test | exercise`. Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
-- **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`.** Forgetting leaves a student who asked to be deleted, and mostly was.
+- **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`** — and to `_ownedById`/`_ownedByQuery` (the export) and `OWNED` in `tools/admin/jobs.js` (guest cleanup, scheduled deletions, orphans). `export_test.dart` checks export and deletion cover the same set. Forgetting leaves a student who asked to be deleted, and mostly was.
+- **The account system** (`lib/features/account/`, `lib/features/profile/`). `users/{uid}` also carries `avatar` (`preset:<id>` or `initials:<colour>`), `bio` (≤160, private), `usernameChangedAt`, `deletionRequestedAt`, `legalVersion`/`legalAcceptedAt` and `prefs`; every one is allow-listed and shape-checked in `clientFieldsAreValid()`, and every timestamp must be the server's clock.
+  - **Profiles are private.** `/me` and the bio are seen only by their owner; nothing social reads `users/{uid}`. A future public profile must be a separate opt-in document.
+  - **Guests link, not replace.** `/account/upgrade` links Google or email to the anonymous uid, so everything already stored stays; device-only notes/cards and in-memory lesson ticks are copied up (`guest_upgrade.dart`). An existing account cannot be merged: the student is told their guest progress stays behind. `jobs.js --job=guests` deletes guests idle 30+ days with everything they own.
+  - **Usernames change once every 90 days** (rules and `UsernameRules.changeCooldown`); old reservations are never released.
+  - **Deleting schedules** (30 days, `/account/deleting`, `jobs.js --job=deletions`) with "delete now" always offered; guests are deleted at once.
+  - **Terms:** bump `kLegalVersion` (and rewrite `kLegalChanges`) only for a significant change — every account is sent to `/legal/accept`.
+  - `authStateProvider` is `userChanges()` filtered to account-level changes (uid, anonymous, email, verified, providers); unfiltered it would rebuild everything on the hourly token refresh.
+  - Settings that follow an account: `account_prefs_sync.dart`. An analytics opt-out spreads to every device; an opt-in never does.
 
 ## Riverpod v3 gotchas
 
@@ -440,7 +448,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 721 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 819 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

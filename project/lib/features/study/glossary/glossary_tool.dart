@@ -9,6 +9,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/article_view.dart';
 import 'glossary_widgets.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// The subject's glossary, A–Z. Built from the definitions in its
 /// published lessons (`subjectIndex/{subjectId}`), so it grows as lessons
@@ -66,7 +67,7 @@ class _IndexPageState extends ConsumerState<IndexPage> {
       child: Text(
         text,
         textAlign: TextAlign.center,
-        style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
       ),
     ),
   );
@@ -91,7 +92,7 @@ class _IndexPageState extends ConsumerState<IndexPage> {
                 key: const ValueKey('index.search'),
                 onChanged: (v) => setState(() => _query = v),
                 style: AppTheme.bodyMd.copyWith(
-                  color: AppColors.textPrimaryDark,
+                  color: context.palette.textPrimary,
                 ),
                 decoration: InputDecoration(
                   hintText: widget.hint,
@@ -184,7 +185,9 @@ class _DefinitionEntry extends StatelessWidget {
         children: [
           Text(
             d.term,
-            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading3.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 4),
           ArticleView(body: d.body),
@@ -199,7 +202,7 @@ class _DefinitionEntry extends StatelessWidget {
                     close: close,
                   ),
           ),
-          const Divider(color: AppColors.borderDark),
+          Divider(color: context.palette.border),
         ],
       ),
     );

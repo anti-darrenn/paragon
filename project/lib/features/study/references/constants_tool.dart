@@ -6,6 +6,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/full_latex_view.dart';
 import 'constants_data.dart';
+import '../../../core/theme/app_palette.dart';
 
 class ConstantsTool extends StudyTool {
   const ConstantsTool();
@@ -37,12 +38,12 @@ class ConstantsScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Material(
-            color: AppColors.surfaceDark,
+            color: context.palette.surface,
             child: TabBar(
               isScrollable: true,
               tabAlignment: TabAlignment.start,
               labelColor: AppColors.primary,
-              unselectedLabelColor: AppColors.textSecondaryDark,
+              unselectedLabelColor: context.palette.textSecondary,
               indicatorColor: AppColors.primary,
               tabs: [for (final t in _tabs) Tab(text: t)],
             ),
@@ -63,12 +64,12 @@ class ConstantsScreen extends StatelessWidget {
   }
 }
 
-TextStyle get _text =>
-    AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark);
-TextStyle get _muted =>
-    AppTheme.caption.copyWith(color: AppColors.textSecondaryDark);
-TextStyle get _heading =>
-    AppTheme.label.copyWith(color: AppColors.textSecondaryDark);
+TextStyle _text(BuildContext context) =>
+    AppTheme.bodyMd.copyWith(color: context.palette.textPrimary);
+TextStyle _muted(BuildContext context) =>
+    AppTheme.caption.copyWith(color: context.palette.textSecondary);
+TextStyle _heading(BuildContext context) =>
+    AppTheme.label.copyWith(color: context.palette.textSecondary);
 
 Widget _tag(String text, Color color) => Container(
   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
@@ -92,7 +93,7 @@ class _ConstantsList extends StatelessWidget {
           'the 2019 SI definitions or by convention; a value ending in … is '
           'exact but cut short. Brackets give the uncertainty in the last '
           'digits: 6.674 30(15) means ±0.000 15.',
-          style: _muted,
+          style: _muted(context),
         ),
         const SizedBox(height: 8),
         for (final c in kPhysicalConstants)
@@ -130,23 +131,23 @@ class _ConstantTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
     padding: const EdgeInsets.symmetric(vertical: 10),
-    decoration: const BoxDecoration(
-      border: Border(bottom: BorderSide(color: AppColors.borderDark)),
+    decoration: BoxDecoration(
+      border: Border(bottom: BorderSide(color: context.palette.border)),
     ),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           children: [
-            Expanded(child: Text(name, style: _heading)),
+            Expanded(child: Text(name, style: _heading(context))),
             if (exact) _tag('exact', AppColors.correct),
           ],
         ),
         const SizedBox(height: 4),
-        FullLatexView(latex: latex, textStyle: _text),
+        FullLatexView(latex: latex, textStyle: _text(context)),
         if (note != null) ...[
           const SizedBox(height: 2),
-          Text(note!, style: _muted),
+          Text(note!, style: _muted(context)),
         ],
       ],
     ),
@@ -163,13 +164,13 @@ class _SiUnitsList extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(width: 48, child: Text(u.symbol, style: _text)),
+          SizedBox(width: 48, child: Text(u.symbol, style: _text(context))),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(u.name, style: _text),
-                Text(u.quantity, style: _muted),
+                Text(u.name, style: _text(context)),
+                Text(u.quantity, style: _muted(context)),
               ],
             ),
           ),
@@ -178,11 +179,11 @@ class _SiUnitsList extends StatelessWidget {
             child: base
                 ? FullLatexView(
                     latex: '\\(\\text{fixes } ${u.definition}\\)',
-                    textStyle: _muted,
+                    textStyle: _muted(context),
                   )
                 : FullLatexView(
                     latex: '\\(= ${u.definition}\\)',
-                    textStyle: _text,
+                    textStyle: _text(context),
                   ),
           ),
         ],
@@ -192,16 +193,16 @@ class _SiUnitsList extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
       children: [
-        Text('The seven SI base units', style: _heading),
+        Text('The seven SI base units', style: _heading(context)),
         const SizedBox(height: 2),
         Text(
           'Since 2019 each is defined by fixing the value of a constant '
           '(SI Brochure, 9th edition).',
-          style: _muted,
+          style: _muted(context),
         ),
         for (final u in kSiBaseUnits) unitRow(u, base: true),
         const SizedBox(height: 16),
-        Text('Derived units with special names', style: _heading),
+        Text('Derived units with special names', style: _heading(context)),
         for (final u in kSiDerivedUnits) unitRow(u, base: false),
       ],
     );
@@ -219,7 +220,7 @@ class _PrefixList extends StatelessWidget {
         Text(
           'SI prefixes (SI Brochure, 9th edition; ronna, quetta, ronto and '
           'quecto added in 2022).',
-          style: _muted,
+          style: _muted(context),
         ),
         const SizedBox(height: 8),
         for (final p in kSiPrefixes)
@@ -227,12 +228,15 @@ class _PrefixList extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 5),
             child: Row(
               children: [
-                SizedBox(width: 90, child: Text(p.name, style: _text)),
-                SizedBox(width: 48, child: Text(p.symbol, style: _text)),
+                SizedBox(width: 90, child: Text(p.name, style: _text(context))),
+                SizedBox(
+                  width: 48,
+                  child: Text(p.symbol, style: _text(context)),
+                ),
                 Expanded(
                   child: FullLatexView(
                     latex: '\\(10^{${p.power}}\\)',
-                    textStyle: _text,
+                    textStyle: _text(context),
                   ),
                 ),
               ],
@@ -278,8 +282,8 @@ class _UnitConverterState extends State<UnitConverter> {
     key: ValueKey('$key-${_category.name}-${value.symbol}'),
     initialValue: value,
     isExpanded: true,
-    dropdownColor: AppColors.surfaceDark,
-    style: _text,
+    dropdownColor: context.palette.surface,
+    style: _text(context),
     decoration: const InputDecoration(
       isDense: true,
       border: OutlineInputBorder(),
@@ -321,7 +325,7 @@ class _UnitConverterState extends State<UnitConverter> {
             decimal: true,
             signed: true,
           ),
-          style: _text,
+          style: _text(context),
           decoration: const InputDecoration(
             labelText: 'Value',
             border: OutlineInputBorder(),
@@ -348,14 +352,14 @@ class _UnitConverterState extends State<UnitConverter> {
               : '${_input.text.trim()} ${_from.symbol} = '
                     '${formatConverted(result)} ${_to.symbol}',
           key: const ValueKey('converter-result'),
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         const SizedBox(height: 12),
         Text(
           'Factors are exact by definition (NIST SP 811) except the atomic '
           'mass unit (CODATA 2018). Results are shown to 6 significant '
           'figures.',
-          style: _muted,
+          style: _muted(context),
         ),
       ],
     );

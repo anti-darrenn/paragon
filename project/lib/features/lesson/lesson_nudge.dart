@@ -8,6 +8,7 @@ import '../../core/repositories/learn_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'lesson_screen.dart';
+import '../../core/theme/app_palette.dart';
 
 /// "You've done 3 of 6 lesson items" above the topic test — a nudge, never
 /// a gate. The test stays open regardless: WAEC revision often starts by
@@ -68,7 +69,9 @@ class _LessonNudgeState extends ConsumerState<LessonNudge> {
               done == 0
                   ? "You haven't started this topic's lesson. You can take the test anyway."
                   : "You've done $done of $total lesson items. You can take the test anyway.",
-              style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textPrimary,
+              ),
             ),
           ),
           TextButton(

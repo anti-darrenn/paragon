@@ -5,9 +5,41 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../repositories/user_repository.dart';
 import '../auth/staff_role.dart';
 
+/// The signed-in user, re-emitted on sign-in, sign-out **and when the
+/// account itself changes** — a guest linking Google or a password, an
+/// email being verified or changed.
+///
+/// Built on `userChanges()`, not `authStateChanges()`: the latter fires
+/// only when the uid changes, and a guest who links an account keeps their
+/// uid, so `isGuestProvider` would go on reporting a guest until the next
+/// page load and the router would never send them on to onboarding.
+///
+/// **Filtered by [_accountKey].** On the web `userChanges()` is driven by
+/// ID-token changes, so unfiltered it would also fire on every hourly
+/// token refresh — and everything that watches this provider (the study
+/// stores, a lesson's notes, the studio editor) would rebuild and re-read
+/// each time. Only a change to the fields below gets through. The key is
+/// taken when the event arrives, because the `User` object can be the same
+/// live instance from one event to the next.
 final authStateProvider = StreamProvider<User?>((ref) {
-  return FirebaseAuth.instance.authStateChanges();
+  return FirebaseAuth.instance
+      .userChanges()
+      .map((user) => (user: user, key: _accountKey(user)))
+      .distinct((a, b) => a.key == b.key)
+      .map((event) => event.user);
 });
+
+String _accountKey(User? user) {
+  if (user == null) return '';
+  final providers = [for (final p in user.providerData) p.providerId]..sort();
+  return [
+    user.uid,
+    user.isAnonymous,
+    user.email ?? '',
+    user.emailVerified,
+    providers.join(','),
+  ].join('|');
+}
 
 /// Runs the Google sign-in popup flow and provisions the Firestore user
 /// doc on first sign-in. Shared by SignInScreen and WelcomeScreen so this
@@ -26,10 +58,13 @@ Future<User?> signInWithGoogle(WidgetRef ref) async {
 
 /// Starts a guest session via Firebase Anonymous Auth. An anonymous user
 /// is a real UID — the same users/{uid} doc shape, the same Firestore
-/// rules, the same attempts-write path as a fully signed-in user. This
-/// does not link to a real account later; tapping a sign-in entry point
-/// while anonymous starts a fresh real-account session instead (no
-/// migration in this pass — see docs/audit/NEXT.md).
+/// rules, the same attempts-write path as a fully signed-in user.
+///
+/// A guest keeps that uid when they make an account: the anonymous user
+/// is *linked* to Google or an email and password, so everything written
+/// under it stays theirs — see `features/account/guest_upgrade.dart`.
+/// Signing in to a different, existing account instead leaves the guest
+/// session behind, and the screens that offer that say so.
 Future<User?> signInAnonymously(WidgetRef ref) async {
   final userCredential = await FirebaseAuth.instance.signInAnonymously();
   final user = userCredential.user;

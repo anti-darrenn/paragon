@@ -9,6 +9,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import 'study_models.dart';
 import 'study_providers.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// The one-line prompt a guest sees wherever their notes are shown.
 const kGuestNotesPrompt = 'Sign up to keep your notes on every device';
@@ -23,16 +24,16 @@ class GuestNotesPrompt extends ConsumerWidget {
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: Row(
         children: [
-          const Icon(
+          Icon(
             Icons.phone_android,
             size: 14,
-            color: AppColors.textSecondaryDark,
+            color: context.palette.textSecondary,
           ),
           const SizedBox(width: 6),
           Expanded(
             child: Text(
               '$kGuestNotesPrompt. Right now they are kept on this device only.',
-              style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+              style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
             ),
           ),
         ],
@@ -97,7 +98,7 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
   Future<void> _openActions() async {
     final choice = await showModalBottomSheet<_BlockAction>(
       context: context,
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
@@ -125,15 +126,15 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
     final action = await showDialog<String>(
       context: context,
       builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.surfaceDark,
+        backgroundColor: context.palette.surface,
         title: Text(
           'Your note',
-          style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
         ),
         content: SingleChildScrollView(
           child: Text(
             widget.note?.text ?? '',
-            style: AppTheme.bodyMd.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
           ),
         ),
         actions: [
@@ -184,7 +185,7 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
         visualDensity: VisualDensity.compact,
         padding: EdgeInsets.zero,
         iconSize: 16,
-        icon: const Icon(Icons.edit_note, color: AppColors.textSecondaryDark),
+        icon: Icon(Icons.edit_note, color: context.palette.textSecondary),
       );
     } else {
       gutter = const SizedBox.shrink();
@@ -261,7 +262,7 @@ class _BlockActionsSheet extends StatelessWidget {
           children: [
             Text(
               'Highlight',
-              style: AppTheme.label.copyWith(color: AppColors.textPrimaryDark),
+              style: AppTheme.label.copyWith(color: context.palette.textPrimary),
             ),
             const SizedBox(height: 10),
             Wrap(
@@ -286,10 +287,10 @@ class _BlockActionsSheet extends StatelessWidget {
             const SizedBox(height: 8),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: const Icon(Icons.sticky_note_2_outlined, color: AppColors.textPrimaryDark),
+              leading: Icon(Icons.sticky_note_2_outlined, color: context.palette.textPrimary),
               title: Text(
                 note?.hasText == true ? 'Edit note' : 'Add a note',
-                style: const TextStyle(color: AppColors.textPrimaryDark),
+                style: TextStyle(color: context.palette.textPrimary),
               ),
               onTap: () => Navigator.of(context).pop(const _EditNote()),
             ),
@@ -335,7 +336,7 @@ class _Swatch extends StatelessWidget {
             color: colour.colour,
             shape: BoxShape.circle,
             border: Border.all(
-              color: selected ? AppColors.textPrimaryDark : AppColors.borderDark,
+              color: selected ? context.palette.textPrimary : context.palette.border,
               width: selected ? 3 : 1,
             ),
           ),
@@ -374,10 +375,10 @@ class _NoteEditorState extends State<_NoteEditor> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: context.palette.surface,
       title: Text(
         widget.initial.isEmpty ? 'Add a note' : 'Edit note',
-        style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+        style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
       ),
       content: SizedBox(
         width: 420,
@@ -388,7 +389,7 @@ class _NoteEditorState extends State<_NoteEditor> {
           minLines: 3,
           maxLines: 8,
           maxLength: kMaxNoteLength,
-          style: const TextStyle(color: AppColors.textPrimaryDark),
+          style: TextStyle(color: context.palette.textPrimary),
           decoration: const InputDecoration(hintText: 'Your note'),
         ),
       ),
@@ -479,7 +480,7 @@ class BookmarkButton extends ConsumerWidget {
       },
       icon: Icon(
         saved ? Icons.bookmark : Icons.bookmark_border,
-        color: saved ? AppColors.primary : AppColors.textSecondaryDark,
+        color: saved ? AppColors.primary : context.palette.textSecondary,
       ),
     );
   }
@@ -511,7 +512,7 @@ Future<void> showLessonNotesSheet(BuildContext context, LearnResource resource) 
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
-    backgroundColor: AppColors.surfaceDark,
+    backgroundColor: context.palette.surface,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
     ),
@@ -557,12 +558,12 @@ class LessonNotesSheet extends ConsumerWidget {
         children: [
           Text(
             'Your notes',
-            style: AppTheme.heading3.copyWith(color: AppColors.textPrimaryDark),
+            style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
           ),
           const SizedBox(height: 4),
           Text(
             'Long-press any paragraph to highlight it or add a note.',
-            style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+            style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
           ),
           const GuestNotesPrompt(),
           const SizedBox(height: 8),
@@ -571,7 +572,7 @@ class LessonNotesSheet extends ConsumerWidget {
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Text(
                 'No notes on this lesson yet.',
-                style: AppTheme.bodyMd.copyWith(color: AppColors.textSecondaryDark),
+                style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
               ),
             ),
           for (final n in parts.attached) tile(n, detached: false),
@@ -585,7 +586,7 @@ class LessonNotesSheet extends ConsumerWidget {
             const SizedBox(height: 4),
             Text(
               'The paragraph these were written on has since been changed.',
-              style: AppTheme.caption.copyWith(color: AppColors.textSecondaryDark),
+              style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
             ),
             const SizedBox(height: 8),
             for (final n in parts.detached) tile(n, detached: true),
@@ -614,7 +615,7 @@ class NoteTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bar = note.colour?.colour ?? AppColors.borderDark;
+    final bar = note.colour?.colour ?? context.palette.border;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: InkWell(
@@ -623,7 +624,7 @@ class NoteTile extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.fromLTRB(12, 10, 4, 10),
           decoration: BoxDecoration(
-            color: AppColors.trackDark,
+            color: context.palette.track,
             borderRadius: BorderRadius.circular(8),
             border: Border(left: BorderSide(color: bar, width: 3)),
           ),
@@ -638,8 +639,8 @@ class NoteTile extends StatelessWidget {
                       note.hasText ? note.text : 'Highlight',
                       style: AppTheme.bodyMd.copyWith(
                         color: note.hasText
-                            ? AppColors.textPrimaryDark
-                            : AppColors.textSecondaryDark,
+                            ? context.palette.textPrimary
+                            : context.palette.textSecondary,
                       ),
                     ),
                     if (showSnapshot && note.snapshot.isNotEmpty) ...[
@@ -649,7 +650,7 @@ class NoteTile extends StatelessWidget {
                         maxLines: 4,
                         overflow: TextOverflow.ellipsis,
                         style: AppTheme.caption.copyWith(
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                           fontStyle: FontStyle.italic,
                         ),
                       ),
@@ -663,7 +664,7 @@ class NoteTile extends StatelessWidget {
                   visualDensity: VisualDensity.compact,
                   iconSize: 18,
                   onPressed: onDelete,
-                  icon: const Icon(Icons.delete_outline, color: AppColors.textSecondaryDark),
+                  icon: Icon(Icons.delete_outline, color: context.palette.textSecondary),
                 ),
             ],
           ),

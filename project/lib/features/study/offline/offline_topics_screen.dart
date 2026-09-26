@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import 'save_offline_button.dart' show kOfflineRemoveNote;
 import 'saved_topics_store.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// Saved for offline — `/settings/offline`.
 ///
@@ -18,11 +18,11 @@ class OfflineTopicsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final topics = ref.watch(savedTopicsProvider);
     final caption = AppTheme.caption.copyWith(
-      color: AppColors.textSecondaryDark,
+      color: context.palette.textSecondary,
     );
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('Saved for offline')),
       body: SafeArea(
         child: Center(
@@ -44,13 +44,13 @@ class OfflineTopicsScreen extends ConsumerWidget {
                     'Nothing saved yet. Open a topic and choose '
                     '"Save for offline".',
                     style: AppTheme.bodyMd.copyWith(
-                      color: AppColors.textSecondaryDark,
+                      color: context.palette.textSecondary,
                     ),
                   )
                 else
                   for (final t in topics)
                     Card(
-                      color: AppColors.surfaceDark,
+                      color: context.palette.surface,
                       margin: const EdgeInsets.only(bottom: 10),
                       child: ListTile(
                         key: ValueKey('offline.row.${t.topicId}'),
@@ -60,7 +60,7 @@ class OfflineTopicsScreen extends ConsumerWidget {
                         title: Text(
                           t.name.isEmpty ? 'Untitled topic' : t.name,
                           style: AppTheme.bodyMd.copyWith(
-                            color: AppColors.textPrimaryDark,
+                            color: context.palette.textPrimary,
                           ),
                         ),
                         subtitle: Text(
@@ -77,7 +77,7 @@ class OfflineTopicsScreen extends ConsumerWidget {
                         trailing: IconButton(
                           key: ValueKey('offline.remove.${t.topicId}'),
                           tooltip: 'Remove from list',
-                          color: AppColors.textSecondaryDark,
+                          color: context.palette.textSecondary,
                           icon: const Icon(Icons.delete_outline_rounded),
                           onPressed: () async {
                             await ref

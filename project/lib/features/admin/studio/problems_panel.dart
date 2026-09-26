@@ -6,6 +6,7 @@ import '../../../core/lessons/lesson_check.dart';
 import '../../../core/lessons/lesson_doc.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/app_palette.dart';
 
 /// Lists what is wrong with the lesson body as it is typed: broken maths,
 /// unclosed blocks, quick checks without one right answer, leftover to-dos.
@@ -102,7 +103,7 @@ class _ProblemsPanelState extends State<ProblemsPanel> {
               child: Text(
                 '…and ${_issues.length - 20} more',
                 style: AppTheme.caption.copyWith(
-                  color: AppColors.textSecondaryDark,
+                  color: context.palette.textSecondary,
                 ),
               ),
             ),

@@ -36,6 +36,7 @@ class AppColors {
   static const trackDark = Color(
     0xFF21262D,
   ); // progress track, inactive nav dots
+  static const trackLight = Color(0xFFEAEEF2); // the light theme's track
   static const accentBlue = Color(
     0xFF58A6FF,
   ); // informational accent (stats, links)
@@ -72,6 +73,27 @@ class AppColors {
   static const subjectEnglishLanguage = Color(0xFF9070C4); // muted purple
   static const subjectMusic = Color(0xFFC46A96); // muted pink
   static const subjectCommerce = Color(0xFF6A66C4); // muted indigo
+
+  // ── Avatar swatches ───────────────────────────────────────────────
+  // Keys are stored in `users/{uid}.avatar` (`initials:<key>`), so they are
+  // permanent: add, never rename. Reuses the palette above rather than
+  // adding colours, so avatars sit in the same family as everything else.
+  // The keys must match `^[a-z_]{2,20}$` — see firestore.rules.
+  static const Map<String, Color> avatarSwatches = {
+    'orange': primary,
+    'violet': secondary,
+    'blue': accentBlue,
+    'red': subjectMathematics,
+    'amber': subjectFurtherMathematics,
+    'green': subjectBiology,
+    'lime': subjectChemistry,
+    'teal': subjectPhysics,
+    'sky': subjectEconomics,
+    'slate': subjectGovernment,
+    'purple': subjectEnglishLanguage,
+    'pink': subjectMusic,
+    'indigo': subjectCommerce,
+  };
 
   // ── Subject color lookup ──────────────────────────────────────────
   // Use this anywhere you need to get a subject's color by name.

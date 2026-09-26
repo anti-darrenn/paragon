@@ -7,6 +7,7 @@ import '../core/repositories/user_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import 'onboarding/profile_form.dart';
+import '../core/theme/app_palette.dart';
 
 /// Edit the optional profile — `/settings/profile`.
 ///
@@ -61,7 +62,7 @@ class _ProfileSettingsScreenState extends ConsumerState<ProfileSettingsScreen> {
     }
 
     return Scaffold(
-      backgroundColor: AppColors.backgroundDark,
+      backgroundColor: context.palette.background,
       appBar: AppBar(title: const Text('About you')),
       body: SafeArea(
         child: userDataAsync.isLoading
@@ -79,7 +80,7 @@ class _ProfileSettingsScreenState extends ConsumerState<ProfileSettingsScreen> {
                               'All optional. Clearing a box deletes what we '
                               'hold for it.',
                               style: AppTheme.bodyMd.copyWith(
-                                color: AppColors.textSecondaryDark,
+                                color: context.palette.textSecondary,
                               ),
                             ),
                             const SizedBox(height: 20),
@@ -93,7 +94,7 @@ class _ProfileSettingsScreenState extends ConsumerState<ProfileSettingsScreen> {
                               'is never sent to analytics and never shown to '
                               'other students — see the Privacy Policy.',
                               style: AppTheme.caption.copyWith(
-                                color: AppColors.textSecondaryDark,
+                                color: context.palette.textSecondary,
                               ),
                             ),
                           ],
