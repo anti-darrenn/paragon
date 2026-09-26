@@ -877,6 +877,39 @@ async function accountRequests(a, b) {
   );
 }
 
+async function staffProfiles(a, b) {
+  suite('staffProfiles/{uid} — the team only');
+
+  const profile = { displayName: str('Ada'), avatar: str('preset:owl') };
+  expectOutcome(
+    'a student cannot publish a staff profile',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`staffProfiles/${a.uid}`, profile, {
+        transforms: [serverTime('updatedAt')],
+      }),
+    ),
+  );
+  expectOutcome(
+    "a student cannot read another's staff profile",
+    DENY,
+    await readDoc(b.idToken, `staffProfiles/${a.uid}`),
+  );
+  // Allowed, and there is nothing there: 404 is the answer, not 403.
+  const own = await readDoc(a.idToken, `staffProfiles/${a.uid}`);
+  record(
+    'a student can look for their own (for export and deletion)',
+    own.status === 200 || own.status === 404,
+    `HTTP ${own.status} ${brief(own)}`,
+  );
+  expectOutcome(
+    'staff profiles cannot be listed by a student',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'staffProfiles' }] }),
+  );
+}
+
 async function progress(a, b) {
   suite('progress/{uid} — the mastery cache');
 
@@ -1385,6 +1418,7 @@ async function teardown(a, b, usernameKey) {
   await progress(a, b);
   await studyData(a, b);
   await accountRequests(a, b);
+  await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);
 

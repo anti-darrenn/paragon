@@ -123,6 +123,7 @@ const OWNED = [
   ["learn", null],
   ["study", null],
   ["accountRequests", null],
+  ["staffProfiles", null],
   ["users", null],
 ];
 

@@ -166,6 +166,28 @@ service cloud.firestore {
         && request.resource.data.requestedAt == request.time;
     }
 
+    // ── STAFF PROFILES ──────────────────────────────────────────
+    // A team member's name and avatar, published by themselves so the
+    // rest of the team can see who wrote a comment or an item — users/
+    // {uid} stays owner-only for staff as for everyone. Readable by the
+    // team and by its owner (so a student's export and deletion can look
+    // for one without being refused); written only by a team member, for
+    // themselves, in exactly this shape.
+    match /staffProfiles/{uid} {
+      allow read: if isWriter() || isOwner(uid);
+      allow delete: if isOwner(uid) || isAdmin();
+      allow create, update: if isOwner(uid) && isWriter()
+        && request.resource.data.keys()
+             .hasOnly(['displayName', 'avatar', 'updatedAt'])
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 60
+        && (!('avatar' in request.resource.data)
+          || (request.resource.data.avatar is string
+            && request.resource.data.avatar
+                 .matches('^(preset|initials):[a-z_]{2,20}$')))
+        && request.resource.data.updatedAt == request.time;
+    }
+
     // ── TEAM REQUESTS ───────────────────────────────────────────
     // Admins manage the content team from the studio's Team page. Claims
     // can only be set with the Admin SDK, so the page writes a request
