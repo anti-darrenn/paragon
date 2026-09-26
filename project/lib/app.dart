@@ -4,6 +4,7 @@ import 'core/providers/reading_settings_provider.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_colors.dart';
 import 'core/theme/app_theme.dart';
+import 'features/account/account_prefs_sync.dart';
 import 'features/account/account_sync.dart';
 import 'features/account/guest_upgrade.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -21,6 +22,7 @@ class ParagonApp extends ConsumerWidget {
     // their account, if an upgrade was interrupted. Usually a no-op.
     ref.watch(guestDataCopyProvider);
     ref.watch(accountEmailSyncProvider);
+    ref.watch(accountPrefsSyncProvider);
     final readingSettingsLoading = ref.watch(readingPrefsProvider).isLoading;
 
     return MaterialApp.router(

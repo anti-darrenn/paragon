@@ -1,10 +1,10 @@
 /// Reading settings — text size, line spacing, reading font, low-data mode.
 ///
-/// **Per device, not per account.** Stored in SharedPreferences, like the
-/// analytics opt-out and for the same reasons: they must work before
-/// sign-in and for guests, and the right text size for a cracked phone
-/// is not the right one for a school desktop. Nothing here touches
-/// Firestore.
+/// **Per device first.** Stored in SharedPreferences, like the analytics
+/// opt-out and for the same reasons: they must work before sign-in and for
+/// guests. For a signed-in account they also follow the student between
+/// devices — `features/account/account_prefs_sync.dart` copies them to and
+/// from `users/{uid}.prefs`. Nothing in this file touches Firestore.
 ///
 /// **What each setting reaches today**
 ///
@@ -219,6 +219,16 @@ class ReadingSettingsNotifier extends Notifier<ReadingSettings> {
     state.copyWith(lowDataMode: value),
     (p) => p.setBool(_kLowDataKey, value),
   );
+
+  /// Adopts settings that came from the student's account on another
+  /// device: stored on this device, **not** written back — see
+  /// `account_prefs_sync.dart`, which calls this.
+  Future<void> applyFromAccount(ReadingSettings next) => _save(next, (p) async {
+    await p.setInt(_kTextScaleKey, next.textScaleStep);
+    await p.setString(_kLineSpacingKey, next.lineSpacing.name);
+    await p.setString(_kFontKey, next.font.name);
+    await p.setBool(_kLowDataKey, next.lowDataMode);
+  });
 
   /// Removes the stored keys rather than writing default values, so a
   /// future change of default reaches students who reset.

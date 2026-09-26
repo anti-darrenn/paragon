@@ -221,6 +221,19 @@ class UserRepository {
     });
   }
 
+  /// Merges [prefs] into `users/{uid}.prefs`, key by key, leaving the
+  /// others alone. See `core/prefs/account_prefs.dart` for the keys.
+  Future<void> setPrefs({
+    required String uid,
+    required Map<String, Object> prefs,
+  }) {
+    if (prefs.isEmpty) return Future.value();
+    return _db.collection('users').doc(uid).update({
+      for (final e in prefs.entries) 'prefs.${e.key}': e.value,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
+  }
+
   Future<void> setSelectedSubjects({
     required String uid,
     required List<String> subjectKeys,

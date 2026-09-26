@@ -202,8 +202,13 @@ const LegalDocument privacyPolicy = LegalDocument(
             'region and app version.',
         'You can turn this off. Settings has a "Share usage data" switch; '
             'turning it off stops collection on that device, and you do '
-            'not need an account to use it. Everything else in the app '
-            'keeps working exactly the same.',
+            'not need an account to use it. If you are signed in, turning '
+            'it off also turns it off on every other device you sign in '
+            'on. Everything else in the app keeps working exactly the same.',
+        'Your settings. If you are signed in, your reading settings (text '
+            'size, line spacing, reading font, low-data mode) and your choice '
+            'about usage data are stored with your account so they follow '
+            'you to other devices. As a guest they stay on your device.',
       ],
     ),
     LegalSection(

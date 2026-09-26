@@ -18,7 +18,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// device in SharedPreferences rather than in Firestore on purpose: the
 /// preference has to be readable before and independently of sign-in, and
 /// a signed-out or guest visitor must be able to turn collection off
-/// without an account. Turning it off calls
+/// without an account. For a signed-in account the choice is also copied
+/// to `users/{uid}.prefs.analytics` (`account_prefs_sync.dart`), so an
+/// opt-out on one device reaches the others. Turning it off calls
 /// `setAnalyticsCollectionEnabled(false)`, which stops the SDK at source —
 /// not merely a flag this class checks.
 ///
@@ -215,6 +217,13 @@ class AnalyticsEnabledNotifier extends Notifier<bool> {
       // The in-memory state still took effect for this session.
     }
   }
+}
+
+extension AccountOptOut on AnalyticsEnabledNotifier {
+  /// Switches collection off because the student's account says so — they
+  /// opted out on another device. Only ever off: an opt-out is never
+  /// undone from elsewhere. See `account_prefs_sync.dart`.
+  Future<void> applyAccountOptOut() => set(false);
 }
 
 final analyticsEnabledProvider =
