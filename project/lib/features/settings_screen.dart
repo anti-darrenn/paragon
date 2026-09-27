@@ -528,13 +528,19 @@ class _Row extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 16),
+          // One line, shrunk to fit if it must be: an email has no spaces
+          // to wrap at, so wrapping broke it mid-word ("…gmail.co" / "m").
           Flexible(
-            child: Text(
-              value,
-              textAlign: TextAlign.right,
-              style: AppTheme.bodyMd.copyWith(
-                color: context.palette.textPrimary,
-                fontWeight: FontWeight.w600,
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              alignment: Alignment.centerRight,
+              child: Text(
+                value,
+                maxLines: 1,
+                style: AppTheme.bodyMd.copyWith(
+                  color: context.palette.textPrimary,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
           ),
