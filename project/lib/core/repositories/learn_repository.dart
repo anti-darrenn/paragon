@@ -131,6 +131,29 @@ Future<List<Question>> _rotatedTopicQuestions(
   return shuffled.map((d) => Question.fromFirestore(d)).toList();
 }
 
+/// The family key for [challengeQuestionsProvider]: a plan written as
+/// `topicId:count,topicId:count`, since a list is not a usable key.
+String challengePlanKey(Iterable<({String topicId, int count})> plan) =>
+    [for (final d in plan) '${d.topicId}:${d.count}'].join(',');
+
+/// The questions of a unit test or course challenge (see
+/// `lib/core/learn/challenge.dart`), drawn per topic with the same rotated
+/// query as the topic test, then shuffled together. Auto-disposed, so each
+/// new attempt draws afresh.
+final challengeQuestionsProvider = FutureProvider.autoDispose
+    .family<List<Question>, String>((ref, planKey) async {
+      final db = ref.read(_firestoreProvider);
+      final draws = [
+        for (final part in planKey.split(','))
+          if (part.split(':') case [final topicId, final n])
+            (topicId: topicId, count: int.tryParse(n) ?? 0),
+      ];
+      final sets = await Future.wait([
+        for (final d in draws) _rotatedTopicQuestions(db, d.topicId, d.count),
+      ]);
+      return [for (final s in sets) ...s]..shuffle();
+    });
+
 /// One topic test's questions — a fresh random subset per attempt, since
 /// retakes are unlimited and a fixed set would be a memory test.
 final topicTestQuestionsProvider =
