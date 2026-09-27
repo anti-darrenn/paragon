@@ -112,10 +112,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isOnWelcome = state.matchedLocation == '/welcome';
       // The welcome screen links to both, so a signed-out visitor has to
       // be able to read them. They are also the one thing a user must be
-      // able to consult *before* deciding to create an account.
+      // able to consult *before* deciding to create an account. About
+      // rides along: it is linked from the welcome footer too.
       final isOnLegal =
           state.matchedLocation == '/privacy' ||
-          state.matchedLocation == '/terms';
+          state.matchedLocation == '/terms' ||
+          state.matchedLocation == '/about';
 
       // Not signed in and trying to reach any route other than welcome/sign-in
       // → send to the welcome (landing) screen
