@@ -194,8 +194,6 @@ class _LessonList extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final hasNotes = topic.hasNotes && course.subjectId != null;
-
     // A catalog-only placeholder topic has no Firestore document, so it
     // cannot have resources and is not queried.
     final resourcesAsync = topic.isPlaceholder
@@ -247,7 +245,7 @@ class _LessonList extends ConsumerWidget {
             resources: resources,
           ),
         ] else
-          ..._placeholderRows(context, hasNotes),
+          _noLessons(context),
 
         const SizedBox(height: 28),
         _SectionHeading(label: 'Practice', accent: accent),
@@ -293,10 +291,16 @@ class _LessonList extends ConsumerWidget {
     final (icon, available, waiting) = switch (r.type) {
       LearnResourceType.video => (
         Icons.play_circle_outline_rounded,
-        (r.durationSeconds ?? 0) > 0 ? 'Watch · ${formatDuration(r.durationSeconds!)}' : 'Watch',
+        (r.durationSeconds ?? 0) > 0
+            ? 'Watch · ${formatDuration(r.durationSeconds!)}'
+            : 'Watch',
         'Not recorded yet',
       ),
-      LearnResourceType.article => (Icons.article_outlined, 'Read', 'Not written yet'),
+      LearnResourceType.article => (
+        Icons.article_outlined,
+        'Read',
+        'Not written yet',
+      ),
       _ => (Icons.edit_note_rounded, 'Practise', 'Not available yet'),
     };
     return _LessonRow(
@@ -362,46 +366,13 @@ class _LessonList extends ConsumerWidget {
     );
   }
 
-  /// The lesson shape shown for a topic with no published resources.
-  List<Widget> _placeholderRows(BuildContext context, bool hasNotes) {
-    return [
-      // Videos have no content model yet — no collection, no field, no
-      // seeded data. Two rows are shown so the lesson shape is visible,
-      // both explicitly disabled.
-      _LessonRow(
-        icon: Icons.play_circle_outline_rounded,
-        kind: 'Video',
-        title: 'Introduction to ${topic.name}',
-        subtitle: 'Not recorded yet',
-        accent: accent,
-        onTap: null,
-        disabledReason: 'Video lessons are not part of Paragon yet.',
-      ),
-      const SizedBox(height: 10),
-      _LessonRow(
-        icon: Icons.play_circle_outline_rounded,
-        kind: 'Video',
-        title: '${topic.name}: worked examples',
-        subtitle: 'Not recorded yet',
-        accent: accent,
-        onTap: null,
-        disabledReason: 'Video lessons are not part of Paragon yet.',
-      ),
-      const SizedBox(height: 10),
-
-      // The one Learn row that can become real without a schema change:
-      // `Topic.hasNotes` / `notesMarkdown` already exist and LearnScreen
-      // already renders them. No seeded topic sets them today.
-      _LessonRow(
-        icon: Icons.article_outlined,
-        kind: 'Article',
-        title: '${topic.name} — key ideas',
-        subtitle: hasNotes ? 'Read the notes' : 'Not written yet',
-        accent: accent,
-        onTap: hasNotes ? () => context.push('$drillPath/learn') : null,
-        disabledReason: 'Notes for this topic have not been written yet.',
-      ),
-    ];
+  /// What a topic with no published lessons shows: one plain line rather
+  /// than greyed-out "coming soon" rows. Practice below still works.
+  Widget _noLessons(BuildContext context) {
+    return Text(
+      'No lessons for this topic yet. You can still practise it below.',
+      style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+    );
   }
 }
 
@@ -616,7 +587,9 @@ class _PracticeRail extends StatelessWidget {
                       'papers, with feedback after every answer.'
                 : 'Questions for this topic have not been added to Paragon '
                       'yet. Check back as content lands.',
-            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 16),
           SizedBox(

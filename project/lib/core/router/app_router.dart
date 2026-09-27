@@ -31,7 +31,6 @@ import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
 import 'package:paragon/features/onboarding/username_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
-import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/settings/reading_settings_screen.dart';
@@ -113,10 +112,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isOnWelcome = state.matchedLocation == '/welcome';
       // The welcome screen links to both, so a signed-out visitor has to
       // be able to read them. They are also the one thing a user must be
-      // able to consult *before* deciding to create an account.
+      // able to consult *before* deciding to create an account. About
+      // rides along: it is linked from the welcome footer too.
       final isOnLegal =
           state.matchedLocation == '/privacy' ||
-          state.matchedLocation == '/terms';
+          state.matchedLocation == '/terms' ||
+          state.matchedLocation == '/about';
 
       // Not signed in and trying to reach any route other than welcome/sign-in
       // → send to the welcome (landing) screen
@@ -312,13 +313,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicId: state.pathParameters['topicId']!,
         ),
       ),
+      // The old notes-only Learn screen, replaced by the topic overview
+      // and its lessons. Kept as a redirect so saved links still land.
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId/learn',
-        builder: (context, state) => LearnScreen(
-          subjectId: state.pathParameters['subjectId']!,
-          unitId: state.pathParameters['unitId']!,
-          topicId: state.pathParameters['topicId']!,
-        ),
+        redirect: (context, state) =>
+            '/subject/${state.pathParameters['subjectId']}'
+            '/course/topic/${state.pathParameters['topicId']}',
       ),
       // The lesson page: any published Learn item, with the topic's
       // sequence beside it. The article-only URL it replaced redirects.
@@ -426,10 +427,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const ReadingSettingsScreen(),
       ),
       // Bookmarks and notes. Guests too: theirs are kept on the device.
-      GoRoute(
-        path: '/saved',
-        builder: (context, state) => const SavedScreen(),
-      ),
+      GoRoute(path: '/saved', builder: (context, state) => const SavedScreen()),
       // A subject's revision cards. Guests too: their schedule is kept on
       // the device.
       GoRoute(
