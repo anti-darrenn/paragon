@@ -457,10 +457,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const ReadingSettingsScreen(),
       ),
       // Bookmarks and notes. Guests too: theirs are kept on the device.
-      GoRoute(
-        path: '/saved',
-        builder: (context, state) => const SavedScreen(),
-      ),
+      GoRoute(path: '/saved', builder: (context, state) => const SavedScreen()),
       // The mistakes notebook, and practising from it. Practice takes its
       // questions as route `extra`; opened bare, it points back here.
       GoRoute(
