@@ -18,7 +18,7 @@ void main() async {
   // `persistenceEnabled` defaults to *off*: `cloud_firestore_web` installs
   // a `memoryLocalCache` unless told otherwise, so the cache died with the
   // browser tab. Learn-mode articles are the first content worth reading
-  // on a bad connection, and `LearnScreen`'s offline banner already
+  // on a bad connection, and the old `LearnScreen`'s offline banner had
   // promised "the last loaded content" — which was only ever true within
   // one session.
   //

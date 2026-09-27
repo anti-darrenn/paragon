@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../core/models/subject.dart';
 import '../core/providers/auth_provider.dart';
@@ -12,6 +13,7 @@ import '../core/theme/app_theme.dart';
 import 'account/guest_upgrade.dart';
 import 'account/upgrade_screen.dart';
 import '../core/theme/app_palette.dart';
+import 'about_screen.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -376,10 +378,10 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
 
                         const SizedBox(height: 24),
 
-                        // TODO(design): contacts footer goes here — omitted
-                        // this pass per instruction. Real contact details
-                        // (email/phone) exist in the Figma frame but are not
-                        // wired in yet; awaiting explicit sign-off to use them.
+                        // About and contact — readable signed out, like
+                        // the legal pages below.
+                        const _FooterLinks(),
+                        const SizedBox(height: 12),
 
                         // Consent line — the destinations now exist at
                         // /terms and /privacy, both readable signed out.
@@ -568,6 +570,36 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
 /// "By continuing you agree to our Terms and Privacy Policy." — shown
 /// above the fold's end on the welcome screen, with both destinations
 /// reachable without signing in.
+class _FooterLinks extends StatelessWidget {
+  const _FooterLinks();
+
+  @override
+  Widget build(BuildContext context) {
+    final style = AppTheme.caption.copyWith(
+      color: context.palette.textSecondary,
+      decoration: TextDecoration.underline,
+      decorationColor: context.palette.textSecondary,
+    );
+
+    Widget link(String label, VoidCallback onTap) => MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: onTap,
+        child: Text(label, style: style),
+      ),
+    );
+
+    return Wrap(
+      alignment: WrapAlignment.center,
+      spacing: 20,
+      children: [
+        link('About', () => context.push('/about')),
+        link('Contact', () => launchUrl(aboutMailto)),
+      ],
+    );
+  }
+}
+
 class _ConsentLine extends StatelessWidget {
   const _ConsentLine();
 

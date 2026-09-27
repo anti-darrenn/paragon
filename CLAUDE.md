@@ -398,8 +398,9 @@ cards**:
 `flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
 1.2 MB of render-blocking download that nothing used. The page now carries only
 an inline-CSS loading splash, removed on Flutter's `flutter-first-frame` event.
-`web/icons/` and `favicon.png` are still Flutter's logo, which is why the page
-has no `og:image` yet.
+The icons, `favicon.png` and `og-image.png` are generated from
+`assets/images/paragon_logo.png` by `dart run tool/make_icons.dart`; re-run it if the
+logo changes. `og:image` is an absolute URL, as link-preview crawlers require.
 
 Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
 
