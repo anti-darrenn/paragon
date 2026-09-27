@@ -25,6 +25,8 @@ import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
+import '../core/learn/hints.dart';
+import '../core/widgets/hint_panel.dart';
 import '../core/widgets/question_image.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
@@ -52,12 +54,22 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   int? _selected;
   bool _submitted = false;
 
+  /// Hints shown on the current question, before it was answered.
+  int _hintsShown = 0;
+
   // ── Session tally ─────────────────────────────────────────────────────
   // Counted here rather than derived at the end because a student can
   // leave part-way through, and an abandoned session is exactly the one
   // worth knowing about.
   int _answered = 0;
+
+  /// Right answers given without a hint: the only ones mastery counts.
   int _correct = 0;
+
+  /// Right answers given after a hint. Shown in the summary, recorded
+  /// truthfully in `attempts`, but never added to `progress` — see
+  /// `lib/core/learn/hints.dart`.
+  int _hintedCorrect = 0;
   String? _sessionSubjectId;
   String? _uid;
 
@@ -122,7 +134,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       subjectId: _sessionSubjectId ?? '',
       topicId: widget.topicId,
       answered: _answered,
-      correct: _correct,
+      correct: _correct + _hintedCorrect,
     );
 
     final uid = _uid;
@@ -143,11 +155,13 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     final q = questions[_index];
     final user = ref.read(currentUserProvider);
     final isCorrect = _selected == q.correctIndex;
+    final hintsUsed = _hintsShown;
 
     setState(() {
       _submitted = true;
       _answered++;
-      if (isCorrect) _correct++;
+      if (isCorrect && hintsUsed == 0) _correct++;
+      if (isCorrect && hintsUsed > 0) _hintedCorrect++;
     });
     _sessionSubjectId ??= q.subjectId;
 
@@ -163,6 +177,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
             selectedIndex: _selected!,
             isCorrect: isCorrect,
             source: 'drill',
+            hintsUsed: hintsUsed,
           );
     }
   }
@@ -183,6 +198,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       _showSummary = false;
       _answered = 0;
       _correct = 0;
+      _hintedCorrect = 0;
+      _hintsShown = 0;
       _sessionFlushed = false;
       _startingProgress = null;
     });
@@ -194,6 +211,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
         _index++;
         _selected = null;
         _submitted = false;
+        _hintsShown = 0;
       });
     }
   }
@@ -266,7 +284,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
             final before = _startingProgress ?? TopicProgress.none;
             return _SessionSummary(
               answered: _answered,
-              correct: _correct,
+              correct: _correct + _hintedCorrect,
+              hinted: _hintedCorrect,
               before: before.level,
               after: before.plus(answered: _answered, correct: _correct).level,
               accent: AppColors.primary,
@@ -350,6 +369,14 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     ),
                   );
                 }),
+                // Hints come out of the explanation, so they give way to it
+                // once the question is answered.
+                if (!_submitted)
+                  HintPanel(
+                    steps: hintSteps(q.explanation),
+                    shown: _hintsShown,
+                    onShowNext: () => setState(() => _hintsShown++),
+                  ),
                 // only render once there's a worked solution to show — an empty
                 // box reads as a rendering failure next to a marked answer
                 if (_submitted &&
@@ -455,6 +482,7 @@ class _SessionSummary extends StatelessWidget {
   const _SessionSummary({
     required this.answered,
     required this.correct,
+    required this.hinted,
     required this.before,
     required this.after,
     required this.accent,
@@ -465,6 +493,10 @@ class _SessionSummary extends StatelessWidget {
 
   final int answered;
   final int correct;
+
+  /// How many of [correct] came after a hint, and so did not count
+  /// toward [after].
+  final int hinted;
   final MasteryLevel before;
   final MasteryLevel after;
   final Color accent;
@@ -516,7 +548,9 @@ class _SessionSummary extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '$percent% correct',
+                      hinted == 0
+                          ? '$percent% correct'
+                          : '$percent% correct · $hinted with hints',
                       style: AppTheme.bodyMd.copyWith(
                         color: context.palette.textSecondary,
                       ),

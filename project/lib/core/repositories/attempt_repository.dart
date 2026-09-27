@@ -11,6 +11,7 @@ class AttemptDraft {
     required this.subjectId,
     required this.selectedIndex,
     required this.isCorrect,
+    this.hintsUsed = 0,
   });
 
   final String questionId;
@@ -18,6 +19,10 @@ class AttemptDraft {
   final String subjectId;
   final int selectedIndex;
   final bool isCorrect;
+
+  /// Hints shown before this answer. Stored only when non-zero; see
+  /// `lib/core/learn/hints.dart` for what a hint costs.
+  final int hintsUsed;
 }
 
 class AttemptRepository {
@@ -34,8 +39,10 @@ class AttemptRepository {
     required String subjectId,
     required int selectedIndex,
     required bool isCorrect,
-    // 'drill' | 'waec' | 'test' | 'exercise'. Only drill feeds mastery.
+    // 'drill' | 'waec' | 'test' | 'exercise' | 'review'. Only drill feeds
+    // mastery.
     required String source,
+    int hintsUsed = 0,
   }) {
     return recordBatch(
       userId: userId,
@@ -47,6 +54,7 @@ class AttemptRepository {
           subjectId: subjectId,
           selectedIndex: selectedIndex,
           isCorrect: isCorrect,
+          hintsUsed: hintsUsed,
         ),
       ],
     );
@@ -74,6 +82,7 @@ class AttemptRepository {
             selectedIndex: a.selectedIndex,
             isCorrect: a.isCorrect,
             source: source,
+            hintsUsed: a.hintsUsed,
           ),
         );
       }
@@ -89,6 +98,7 @@ class AttemptRepository {
     required int selectedIndex,
     required bool isCorrect,
     required String source,
+    int hintsUsed = 0,
   }) {
     return {
       'userId': userId,
@@ -99,6 +109,7 @@ class AttemptRepository {
       'isCorrect': isCorrect,
       'source': source,
       'timestamp': FieldValue.serverTimestamp(),
+      if (hintsUsed > 0) 'hintsUsed': hintsUsed,
     };
   }
 }
