@@ -19,8 +19,9 @@
 /// as a guest who can drill Physics but not sit a Physics exam, with
 /// nothing in the code explaining which was intended.
 ///
-/// **The honesty rule.** A guest whose mastery quietly evaporates when they
-/// close the tab has been misled by a product that showed them a filling
+/// **The honesty rule.** A guest whose mastery quietly evaporates — on
+/// signing out, clearing the browser, or 30 days unused — has been misled
+/// by a product that showed them a filling
 /// ring. Anywhere progress is displayed to a guest, say that it is not
 /// being kept — see [progressNotKeptMessage].
 library;
@@ -56,9 +57,12 @@ class GuestLimits {
   /// Not a tightening of [openSubject] — a different rule with a different
   /// reason, which is why it is its own constant rather than a special
   /// case inside [locks]. Drill sits behind a topic test, and a topic
-  /// test is only worth taking if the result survives: a guest's uid dies
-  /// when they close the tab, taking their pass with it. Offering a gate
-  /// whose key evaporates is worse than not offering the room.
+  /// test is only worth taking if the result survives. A guest's session
+  /// does survive closing the tab — Firebase keeps it in the browser, which
+  /// was checked on the live site — but not signing out, clearing the
+  /// browser, another device, or 30 days unused (`jobs.js --job=guests`).
+  /// A gate whose key can vanish that easily is worse than not offering
+  /// the room; an account keeps it.
   ///
   /// Learn content — videos, articles, exercises — stays fully open to
   /// guests. Nothing there is stored, so nothing there is lost, and it is
@@ -73,11 +77,16 @@ class GuestLimits {
   /// reasonable, and a guest who does not know that reads it as arbitrary.
   static const String drillNeedsAccountMessage =
       'Drill practice needs an account. Your topic tests and progress are '
-      'tied to it — a guest session is lost when you close the tab.';
+      'tied to it — a guest session lives in this browser only, and is '
+      'gone if you sign out, clear it, or leave it unused for 30 days.';
 
-  /// Shown wherever a guest is looking at progress that will not survive
-  /// the session.
+  /// Shown wherever a guest is looking at progress that may not last.
+  ///
+  /// It used to say "not saved", which was wrong: a guest's progress is
+  /// kept in the browser across closed tabs. What is true is that it is
+  /// fragile, and that an account keeps it — which is what this says.
   static const String progressNotKeptMessage =
-      "You're browsing as a guest, so your progress is not saved. "
-      'Sign in to keep it.';
+      "You're browsing as a guest: your progress is kept in this browser "
+      'only, and not if you sign out, clear it, or stay away 30 days. '
+      'Make an account to keep it.';
 }

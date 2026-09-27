@@ -159,7 +159,7 @@ enum DrillAccess {
 /// convenience: **guests are refused before proficiency is even
 /// considered**, because a guest who has somehow passed a test still
 /// cannot drill, and telling them "take the test" would be a dead end —
-/// their result dies with the session anyway.
+/// their result lasts only as long as a guest session does.
 ///
 /// ## Grandfathering
 ///

@@ -89,7 +89,7 @@ class DashboardScreen extends ConsumerWidget {
                 const SizedBox(height: 16),
 
                 // The counters below are real, written to a real uid — and
-                // that uid dies with the session. A guest watching them
+                // that uid is easily lost. A guest watching them
                 // climb deserves to know that before they find out by
                 // losing them.
                 if (isGuest) ...[
