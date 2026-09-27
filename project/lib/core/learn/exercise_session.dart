@@ -14,7 +14,15 @@ import '../models/question.dart';
 /// by [check] marking it revealed, never scored.
 enum ExerciseStep { answering, retrying, correct, revealed, finished }
 
-typedef FirstTry = ({String questionId, int selectedIndex, bool isCorrect});
+/// A first try, and how many hints came before it. A right first try
+/// after a hint is recorded as right but not scored — see
+/// `lib/core/learn/hints.dart`.
+typedef FirstTry = ({
+  String questionId,
+  int selectedIndex,
+  bool isCorrect,
+  int hintsUsed,
+});
 
 class ExerciseSession {
   ExerciseSession(this.questions)
@@ -27,6 +35,7 @@ class ExerciseSession {
   int _index = 0;
   int? _selected;
   int _tries = 0;
+  int _hints = 0;
   final Set<int> _wrong = {};
   final List<FirstTry> _firstTries = [];
   ExerciseStep _step;
@@ -45,7 +54,20 @@ class ExerciseSession {
 
   bool get isFinished => _step == ExerciseStep.finished;
 
-  int get firstTryCorrect => _firstTries.where((t) => t.isCorrect).length;
+  /// Hints shown on the current question.
+  int get hintsShown => _hints;
+
+  /// First tries that were right without a hint: the set's score.
+  int get firstTryCorrect =>
+      _firstTries.where((t) => t.isCorrect && t.hintsUsed == 0).length;
+
+  /// Whether a hint may be shown now: only while the question is open.
+  bool get canHint =>
+      _step == ExerciseStep.answering || _step == ExerciseStep.retrying;
+
+  void useHint() {
+    if (canHint && current != null) _hints++;
+  }
 
   bool get canCheck =>
       _selected != null &&
@@ -77,7 +99,12 @@ class ExerciseSession {
     final right = picked == q.correctIndex;
     _tries++;
     if (_tries == 1) {
-      _firstTries.add((questionId: q.id, selectedIndex: picked, isCorrect: right));
+      _firstTries.add((
+        questionId: q.id,
+        selectedIndex: picked,
+        isCorrect: right,
+        hintsUsed: _hints,
+      ));
     }
     if (right) {
       _step = ExerciseStep.correct;
@@ -95,6 +122,7 @@ class ExerciseSession {
     _index++;
     _selected = null;
     _tries = 0;
+    _hints = 0;
     _wrong.clear();
     _step = _index >= questions.length
         ? ExerciseStep.finished

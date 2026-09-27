@@ -99,6 +99,33 @@ void main() {
     expect(s.firstTries, isEmpty);
   });
 
+  test('a right first try after a hint is recorded but not scored', () {
+    final s = ExerciseSession([q('a'), q('b')]);
+    s
+      ..useHint()
+      ..select(1)
+      ..check();
+    expect(s.firstTries.single.isCorrect, isTrue);
+    expect(s.firstTries.single.hintsUsed, 1);
+    expect(s.firstTryCorrect, 0);
+    s.next();
+    expect(s.hintsShown, 0, reason: 'hints reset per question');
+    // control: the next one, answered alone, scores
+    s
+      ..select(1)
+      ..check();
+    expect(s.firstTryCorrect, 1);
+  });
+
+  test('no hints once a question is resolved', () {
+    final s = ExerciseSession([q('a')])
+      ..select(1)
+      ..check();
+    expect(s.canHint, isFalse);
+    s.useHint();
+    expect(s.hintsShown, 0);
+  });
+
   test('an empty set starts finished', () {
     expect(ExerciseSession(const []).isFinished, isTrue);
   });
