@@ -293,10 +293,16 @@ class _LessonList extends ConsumerWidget {
     final (icon, available, waiting) = switch (r.type) {
       LearnResourceType.video => (
         Icons.play_circle_outline_rounded,
-        (r.durationSeconds ?? 0) > 0 ? 'Watch · ${formatDuration(r.durationSeconds!)}' : 'Watch',
+        (r.durationSeconds ?? 0) > 0
+            ? 'Watch · ${formatDuration(r.durationSeconds!)}'
+            : 'Watch',
         'Not recorded yet',
       ),
-      LearnResourceType.article => (Icons.article_outlined, 'Read', 'Not written yet'),
+      LearnResourceType.article => (
+        Icons.article_outlined,
+        'Read',
+        'Not written yet',
+      ),
       _ => (Icons.edit_note_rounded, 'Practise', 'Not available yet'),
     };
     return _LessonRow(
@@ -616,7 +622,9 @@ class _PracticeRail extends StatelessWidget {
                       'papers, with feedback after every answer.'
                 : 'Questions for this topic have not been added to Paragon '
                       'yet. Check back as content lands.',
-            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           const SizedBox(height: 16),
           SizedBox(

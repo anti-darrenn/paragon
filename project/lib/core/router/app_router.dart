@@ -426,10 +426,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const ReadingSettingsScreen(),
       ),
       // Bookmarks and notes. Guests too: theirs are kept on the device.
-      GoRoute(
-        path: '/saved',
-        builder: (context, state) => const SavedScreen(),
-      ),
+      GoRoute(path: '/saved', builder: (context, state) => const SavedScreen()),
       // A subject's revision cards. Guests too: their schedule is kept on
       // the device.
       GoRoute(
