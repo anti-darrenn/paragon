@@ -1,1 +1,4 @@
 .claude/settings.local.json
+
+# Firebase CLI deploy cache: rewritten on every deploy, never shared
+project/.firebase/
