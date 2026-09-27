@@ -56,10 +56,13 @@ class _TopicTile extends StatelessWidget {
 
   String get _basePath => '/subject/$subjectId/unit/$unitId/topic/${topic.id}';
 
+  /// The topic overview, where the topic's lessons live.
+  String get _learnPath => '/subject/$subjectId/course/topic/${topic.id}';
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.push('$_basePath/learn'),
+      onTap: () => context.push(_learnPath),
       child: Container(
         decoration: BoxDecoration(
           color: context.palette.surface,
@@ -88,7 +91,7 @@ class _TopicTile extends StatelessWidget {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () => context.push('$_basePath/learn'),
+                    onPressed: () => context.push(_learnPath),
                     style: OutlinedButton.styleFrom(
                       side: const BorderSide(color: AppColors.secondary),
                       padding: const EdgeInsets.symmetric(vertical: 12),
