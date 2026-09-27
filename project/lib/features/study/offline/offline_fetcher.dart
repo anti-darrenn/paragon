@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/models/learn_resource.dart';
+import '../../../core/models/question.dart';
 import 'offline_plan.dart';
 
 /// The server reads that fill Firestore's persistent cache for a topic.
@@ -17,12 +18,12 @@ abstract class OfflineFetcher {
   /// Fetches each `lessonAssets/{id}`; returns how many were saved.
   Future<int> assets(List<String> ids);
 
-  /// Fetches bank questions by id; returns how many were saved.
-  Future<int> questions(List<String> ids);
+  /// Fetches bank questions by id; returns those saved.
+  Future<List<Question>> questions(List<String> ids);
 
   /// Fetches up to [limit] of the topic's answerable questions; returns
-  /// how many were saved.
-  Future<int> topicQuestions(String topicId, int limit);
+  /// those saved.
+  Future<List<Question>> topicQuestions(String topicId, int limit);
 }
 
 class FirestoreOfflineFetcher implements OfflineFetcher {
@@ -68,15 +69,15 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
   /// `whereIn` over document ids, as `pinnedQuestionsProvider` reads them,
   /// in chunks of 30 (Firestore's `whereIn` limit).
   @override
-  Future<int> questions(List<String> ids) async {
-    var saved = 0;
+  Future<List<Question>> questions(List<String> ids) async {
+    final saved = <Question>[];
     for (var i = 0; i < ids.length; i += 30) {
       final chunk = ids.sublist(i, i + 30 > ids.length ? ids.length : i + 30);
       final snap = await _db
           .collection('questions')
           .where(FieldPath.documentId, whereIn: chunk)
           .get(_server);
-      saved += snap.docs.length;
+      saved.addAll(snap.docs.map(Question.fromFirestore));
     }
     return saved;
   }
@@ -86,7 +87,7 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
   /// index), without the random cursor: offline, the exercise and test
   /// queries rotate over whatever of this set is cached.
   @override
-  Future<int> topicQuestions(String topicId, int limit) async {
+  Future<List<Question>> topicQuestions(String topicId, int limit) async {
     final snap = await _db
         .collection('questions')
         .where('topicId', isEqualTo: topicId)
@@ -94,7 +95,7 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
         .orderBy(FieldPath.documentId)
         .limit(limit)
         .get(_server);
-    return snap.docs.length;
+    return snap.docs.map(Question.fromFirestore).toList();
   }
 }
 
@@ -121,7 +122,8 @@ class OfflineSaveResult {
 const int kOfflineSaveSteps = 4;
 
 /// Saves one topic: resources first (the plan depends on them), then their
-/// figures and pinned questions, then a set of the topic's own questions.
+/// figures and pinned questions, then a set of the topic's own questions
+/// and the diagrams those questions show.
 /// [onStep] is called with 1..[kOfflineSaveSteps] as each step finishes.
 ///
 /// Throws if the resources or questions cannot be fetched — typically
@@ -140,11 +142,21 @@ Future<OfflineSaveResult> saveTopicForOffline(
   final pinned = await fetcher.questions(plan.questionIds);
   onStep?.call(3);
   final own = await fetcher.topicQuestions(topicId, kOfflineTopicQuestions);
+  final diagrams = questionImageIds([...pinned, ...own]);
+  final savedDiagrams = diagrams.isEmpty ? 0 : await fetcher.assets(diagrams);
   onStep?.call(4);
 
   return OfflineSaveResult(
-    itemCount: resources.length + assets + pinned + own,
+    itemCount:
+        resources.length + assets + pinned.length + own.length + savedDiagrams,
     videoCount: plan.videoCount,
-    missingAssets: plan.assetIds.length - assets,
+    missingAssets:
+        plan.assetIds.length - assets + diagrams.length - savedDiagrams,
   );
 }
+
+/// The `lessonAssets` ids [questions] show — diagrams and explanation
+/// pictures — each once, in order.
+List<String> questionImageIds(Iterable<Question> questions) => {
+  for (final q in questions) ...[?q.imageId, ?q.explanationImageId],
+}.toList();

@@ -25,6 +25,7 @@ import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/question_image.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -307,6 +308,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
+                QuestionImage(assetId: q.imageId),
                 const SizedBox(height: 24),
                 ...List.generate(q.options.length, (i) {
                   Color borderColor = context.palette.outline;
@@ -350,7 +352,9 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 }),
                 // only render once there's a worked solution to show — an empty
                 // box reads as a rendering failure next to a marked answer
-                if (_submitted && q.explanation.trim().isNotEmpty) ...[
+                if (_submitted &&
+                    (q.explanation.trim().isNotEmpty ||
+                        q.explanationImageId != null)) ...[
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
@@ -360,12 +364,19 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                         color: AppColors.correct.withAlpha((0.4 * 255).round()),
                       ),
                     ),
-                    child: FullLatexView(
-                      latex: q.explanation,
-                      textStyle: TextStyle(
-                        color: context.palette.onHigh,
-                        fontSize: 14,
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (q.explanation.trim().isNotEmpty)
+                          FullLatexView(
+                            latex: q.explanation,
+                            textStyle: TextStyle(
+                              color: context.palette.onHigh,
+                              fontSize: 14,
+                            ),
+                          ),
+                        QuestionImage(assetId: q.explanationImageId),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 16),

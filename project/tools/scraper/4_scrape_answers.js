@@ -11,8 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const axios = require('axios');
-const cheerio = require('cheerio');
+const { BASE, DELAY_MS, sleep, fetchHtml, parseNuxt, makeResolver } = require('./myschool');
 
 // edit per run, or override: node 4_scrape_answers.js physics
 const SUBJECT = process.argv[2] || 'mathematics';
@@ -21,64 +20,10 @@ const SUBJECT = process.argv[2] || 'mathematics';
 // than 1_scrape.js's 2006. empty years cost one request and are skipped
 const YEAR_START = 1990;
 const YEAR_END = 2025;
-const DELAY_MS = 800;
-const MAX_RETRIES = 4;
-const BASE = 'https://myschool.ng/classroom';
-const UA =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36';
 
 const DATA_DIR = path.join(__dirname, 'data');
 const OUT_FILE = path.join(DATA_DIR, `answers_${SUBJECT}.json`);
 const PROGRESS_FILE = path.join(DATA_DIR, `answers_progress_${SUBJECT}.json`);
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-// retries with backoff, then throws — an error must never look like "no more pages"
-async function fetchHtml(url) {
-  let lastErr;
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    try {
-      const res = await axios.get(url, {
-        headers: { 'User-Agent': UA },
-        timeout: 30000,
-        validateStatus: (s) => s === 200,
-      });
-      return res.data;
-    } catch (err) {
-      lastErr = err;
-      const wait = DELAY_MS * Math.pow(2, attempt - 1);
-      console.warn(`  retry ${attempt}/${MAX_RETRIES} after ${wait}ms — ${err.message}`);
-      await sleep(wait);
-    }
-  }
-  throw new Error(`failed after ${MAX_RETRIES} retries: ${url} — ${lastErr.message}`);
-}
-
-function parseNuxt(html) {
-  const raw = cheerio.load(html)('#__NUXT_DATA__').html();
-  if (!raw) return null;
-  try {
-    const arr = JSON.parse(raw);
-    return Array.isArray(arr) ? arr : null;
-  } catch {
-    return null;
-  }
-}
-
-// nuxt devalue format — object fields hold indices into the flat array,
-// leaf entries hold the real primitives
-function makeResolver(arr) {
-  return function resolve(ref, depth = 0) {
-    if (depth > 8) return null;
-    if (!Number.isInteger(ref) || ref < 0 || ref >= arr.length) return null;
-    const v = arr[ref];
-    if (v === null || typeof v !== 'object') return v;
-    if (Array.isArray(v)) return v.map((x) => resolve(x, depth + 1));
-    const out = {};
-    for (const k of Object.keys(v)) out[k] = resolve(v[k], depth + 1);
-    return out;
-  };
-}
 
 // type-check everything — a malformed record is skipped and reported, never guessed at
 function extractQuestions(arr) {

@@ -39,6 +39,7 @@ node 6_seed_generated.js --all            # generated questions into existing to
 node 7_create_subject.js --subject=<id>   # a whole new subject from generated content
 node 8_apply_reclass.js                   # apply a reviewed topic reclassification
 node 9_seed_resources.js --subject=<id>   # Learn articles/videos/exercises (dry run without --commit)
+node 10_fetch_question_images.js --all    # diagrams for scraped past questions (dry run without --commit)
 node reclassify.js                        # propose topic reassignments (dispatch-only in CI)
 node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
 ```
@@ -409,6 +410,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
 
 - `questions.options` stores option text **without** the A/B/C/D prefix — the UI adds labels.
+- `questions.imageId` / `explanationImageId` are `lessonAssets` ids for a diagram the question depends on and a worked-answer picture. Only scraped past questions have them, set by `10_fetch_question_images.js`; `QuestionImage` renders them everywhere a question appears. A question whose diagram the source no longer serves is retired with `hasAnswer: false, needsDiagram: true` — to restore one, attach an image and flip `hasAnswer` back.
 - `questions.correctIndex` is 0-based. It is `-1` on the **scraped** corpus (answers were never scraped) and a real index on the **generated** corpus, so both cases are live in production at once — never assume either. `-1` is the app's "no verified answer" value and is the required fallback; a `0` fallback silently marks option A correct.
 - `topics/{id}/resources/{id}.status` is `draft | in_review | changes_requested | published` (see `docs/CONTENT_ROLES.md`) and **must be present** — only the exact string `published` is student-visible, in the rule and in `ResourceStatus.parse` alike. **Rules are not filters**: students may only list resources with `where('status', '==', 'published')` (served by the `status + order` index), and an unfiltered list is refused. Drop that filter and every Learn screen becomes a permission error. Never add a "missing status counts as published" clause to the rule: it was tried, and because list evaluation models `resource.data` from the query's filters, it let an unfiltered list return drafts to any student (caught by `verify_rules.js`, which now checks against a real seeded draft). `9_seed_resources.js` writes `published` and overwrites on id collision, including an editor draft with the same slug.
 - `questions.subjectId` is required on every document — drill queries use `topicId`, WAEC queries use `subjectId` + `source` + `year`.

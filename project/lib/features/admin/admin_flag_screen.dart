@@ -8,6 +8,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/math_text.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/question_image.dart';
 
 /// Deep link to one flagged question. The report digest email links here;
 /// keep `tools/admin/notify_drafts.js` in step if it changes.
@@ -147,6 +148,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             text: q.question.text,
             style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
           ),
+          QuestionImage(assetId: q.question.imageId),
           const SizedBox(height: 16),
           for (var i = 0; i < q.question.options.length; i++)
             _OptionRow(
@@ -167,6 +169,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
             const SizedBox(height: 6),
             MathText(text: q.question.explanation, style: secondary),
           ],
+          QuestionImage(assetId: q.question.explanationImageId),
           const SizedBox(height: 8),
           Text(
             q.question.correctIndex < 0

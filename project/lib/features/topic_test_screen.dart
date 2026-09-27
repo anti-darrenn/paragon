@@ -20,6 +20,7 @@ import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import 'lesson/lesson_nudge.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/question_image.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -361,6 +362,7 @@ class _Questions extends StatelessWidget {
               fontWeight: FontWeight.w600,
             ),
           ),
+          QuestionImage(assetId: q.imageId),
           const SizedBox(height: 20),
 
           // No correct/incorrect colouring anywhere here — that is the

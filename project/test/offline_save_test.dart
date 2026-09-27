@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/models/learn_resource.dart';
+import 'package:paragon/core/models/question.dart';
 import 'package:paragon/core/providers/reading_settings_provider.dart';
 import 'package:paragon/features/study/offline/offline_fetcher.dart';
 import 'package:paragon/features/study/offline/offline_plan.dart';
@@ -56,12 +57,30 @@ A nested figure:
 ![Again](asset:chart1)
 ''';
 
+Question _q(String id, {String? imageId, String? explanationImageId}) =>
+    Question(
+      id: id,
+      topicId: 't1',
+      subjectId: 's',
+      text: id,
+      options: const ['a', 'b'],
+      correctIndex: 0,
+      explanation: '',
+      source: 'waec',
+      imageId: imageId,
+      explanationImageId: explanationImageId,
+    );
+
 /// A fetcher whose calls can be held open, so the saving state can be
 /// seen, and made to fail.
 class FakeFetcher implements OfflineFetcher {
-  FakeFetcher({this.fail = false});
+  FakeFetcher({this.fail = false, this.withDiagrams = true});
 
   final bool fail;
+
+  /// When set, the pinned bank question has a diagram and two of the
+  /// topic's own questions have pictures.
+  final bool withDiagrams;
   final List<LearnResource> served = [
     _res('a', LearnResourceType.article, body: _articleWithEverything),
     _res('v', LearnResourceType.video),
@@ -84,15 +103,26 @@ class FakeFetcher implements OfflineFetcher {
   }
 
   @override
-  Future<int> questions(List<String> ids) async {
+  Future<List<Question>> questions(List<String> ids) async {
     calls.add('questions:${ids.join(',')}');
-    return ids.length;
+    return [
+      for (final id in ids)
+        _q(id, imageId: withDiagrams && id == 'bankQ1' ? 'diag1' : null),
+    ];
   }
 
   @override
-  Future<int> topicQuestions(String topicId, int limit) async {
+  Future<List<Question>> topicQuestions(String topicId, int limit) async {
     calls.add('topicQuestions:$topicId:$limit');
-    return limit;
+    return [
+      for (var i = 0; i < limit; i++)
+        _q(
+          'own$i',
+          // the same diagram again: fetched once, not twice
+          imageId: withDiagrams && i == 0 ? 'diag1' : null,
+          explanationImageId: withDiagrams && i == 1 ? 'why2' : null,
+        ),
+    ];
   }
 }
 
@@ -138,10 +168,21 @@ void main() {
         'assets:chart1,nested2',
         'questions:bankQ1,waecQ2',
         'topicQuestions:t1:$kOfflineTopicQuestions',
+        'assets:diag1,why2',
       ]);
       expect(steps, [1, 2, 3, 4]);
-      expect(result.itemCount, 2 + 2 + 2 + kOfflineTopicQuestions);
+      expect(result.itemCount, 2 + 2 + 2 + kOfflineTopicQuestions + 2);
       expect(result.videoCount, 2);
+      expect(result.missingAssets, 0);
+    });
+
+    test('CONTROL: questions without diagrams fetch no more assets', () async {
+      final fetcher = FakeFetcher(withDiagrams: false);
+      final result = await saveTopicForOffline(fetcher, 't1');
+      expect(fetcher.calls.where((c) => c.startsWith('assets:')), [
+        'assets:chart1,nested2',
+      ]);
+      expect(result.itemCount, 2 + 2 + 2 + kOfflineTopicQuestions);
     });
   });
 

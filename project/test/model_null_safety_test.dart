@@ -163,6 +163,23 @@ void main() {
       // read as a real year in the WAEC year-range queries.
       expect(Question.fromFirestore(FakeDoc('q', {})).year, isNull);
     });
+
+    test('image ids are null when absent or blank, never an empty id', () {
+      // an empty string would ask lessonAssets for a document with no id
+      for (final v in [null, '', '   ']) {
+        final q = Question.fromFirestore(
+          FakeDoc('q', {'imageId': v, 'explanationImageId': v}),
+        );
+        expect(q.imageId, isNull, reason: 'imageId from $v');
+        expect(q.explanationImageId, isNull, reason: 'from $v');
+      }
+      // control: a real id comes through
+      final q = Question.fromFirestore(
+        FakeDoc('q', {'imageId': 'a1', 'explanationImageId': 'b2'}),
+      );
+      expect(q.imageId, 'a1');
+      expect(q.explanationImageId, 'b2');
+    });
   });
 
   group('coercion helpers', () {

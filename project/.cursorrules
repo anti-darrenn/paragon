@@ -445,7 +445,6 @@ These are explicitly deferred. Do not add them unless the developer asks:
 
 - Google Sign In on Android (signInWithPopup is web-only; google_sign_in mobile wiring is deferred)
 - Fix com.example.paragon org name in android/app/build.gradle (deferred to Android session)
-- Question image support in FullLatexView (deferred)
 - About screen content (placeholder only)
 - Offline/PWA support (Phase 3)
 - AI-generated explanations (Phase 3)

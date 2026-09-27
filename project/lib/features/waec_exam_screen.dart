@@ -17,6 +17,7 @@ import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/question_image.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -511,6 +512,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                           height: 1.6,
                         ),
                       ),
+                      QuestionImage(assetId: q.imageId),
                     ],
                   ),
                 ),
