@@ -10,6 +10,7 @@ import '../../theme/app_colors.dart';
 import '../../theme/app_theme.dart';
 import '../answer_option.dart';
 import '../full_latex_view.dart';
+import '../question_image.dart';
 import 'lesson_block_view.dart';
 import '../../theme/app_palette.dart';
 
@@ -453,12 +454,25 @@ class BankQuestionView extends ConsumerWidget {
                     style: base.copyWith(color: context.palette.textSecondary),
                   ))
           : _ChoiceQuestion(
-              question: FullLatexView(latex: q.text, textStyle: base),
+              question: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  FullLatexView(latex: q.text, textStyle: base),
+                  QuestionImage(assetId: q.imageId),
+                ],
+              ),
               options: q.options,
               correctIndex: q.correctIndex,
-              why: q.explanation.trim().isEmpty
+              why: q.explanation.trim().isEmpty && q.explanationImageId == null
                   ? null
-                  : FullLatexView(latex: q.explanation, textStyle: base),
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (q.explanation.trim().isNotEmpty)
+                          FullLatexView(latex: q.explanation, textStyle: base),
+                        QuestionImage(assetId: q.explanationImageId),
+                      ],
+                    ),
             ),
     );
   }

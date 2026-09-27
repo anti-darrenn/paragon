@@ -16,6 +16,7 @@ import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/report_problem_button.dart';
 import '../study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/question_image.dart';
 
 /// An in-lesson exercise: a short set of questions with immediate
 /// feedback, Khan-style. The rules live in [ExerciseSession].
@@ -222,6 +223,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
               fontWeight: FontWeight.w600,
             ),
           ),
+          QuestionImage(assetId: q.imageId),
           const SizedBox(height: 20),
           for (var i = 0; i < q.options.length; i++)
             AnswerOption(
@@ -369,7 +371,8 @@ class _Feedback extends StatelessWidget {
     final showExplanation =
         (session.step == ExerciseStep.correct ||
             session.step == ExerciseStep.revealed) &&
-        question.explanation.trim().isNotEmpty;
+        (question.explanation.trim().isNotEmpty ||
+            question.explanationImageId != null);
 
     return Semantics(
       liveRegion: true,
@@ -393,12 +396,14 @@ class _Feedback extends StatelessWidget {
             ),
             if (showExplanation) ...[
               const SizedBox(height: 8),
-              FullLatexView(
-                latex: question.explanation,
-                textStyle: AppTheme.bodyMd.copyWith(
-                  color: context.palette.onHigh,
+              if (question.explanation.trim().isNotEmpty)
+                FullLatexView(
+                  latex: question.explanation,
+                  textStyle: AppTheme.bodyMd.copyWith(
+                    color: context.palette.onHigh,
+                  ),
                 ),
-              ),
+              QuestionImage(assetId: question.explanationImageId),
             ],
           ],
         ),

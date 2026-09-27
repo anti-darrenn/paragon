@@ -13,6 +13,13 @@ class Question {
   final String source;
   final int? year;
 
+  /// A diagram the question depends on: a `lessonAssets` id, or null.
+  /// Set on scraped past questions by `tools/scraper/10_fetch_question_images.js`.
+  final String? imageId;
+
+  /// A picture belonging to the worked answer, shown with the explanation.
+  final String? explanationImageId;
+
   const Question({
     required this.id,
     required this.topicId,
@@ -23,6 +30,8 @@ class Question {
     required this.explanation,
     required this.source,
     this.year,
+    this.imageId,
+    this.explanationImageId,
   });
 
   factory Question.fromFirestore(DocumentSnapshot doc) {
@@ -40,6 +49,8 @@ class Question {
       explanation: asString(d['explanation']),
       source: asString(d['source'], fallback: 'drill'),
       year: asIntOrNull(d['year']),
+      imageId: asStringOrNull(d['imageId']),
+      explanationImageId: asStringOrNull(d['explanationImageId']),
     );
   }
 }
