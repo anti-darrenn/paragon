@@ -166,6 +166,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'exercise answers are not stored either — unless you create an '
             'account from that guest session, in which case the lessons you '
             'finished are saved to it.',
+        'Your WAEC exam results. For each exam you finish we keep which '
+            'questions it had, the option you picked for each, your score, '
+            'whether it was timed and how long you took, so you can review '
+            'it later and see your past exams. Only you can see them.',
         'Your topic test results. For each topic test you take we record '
             'your best score, how many times you have taken it, when you '
             'last did, and whether you have passed it. Passing is what '

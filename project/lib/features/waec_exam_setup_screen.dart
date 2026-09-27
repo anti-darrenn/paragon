@@ -8,6 +8,7 @@ import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/load_error.dart';
+import 'exam_history.dart';
 import 'waec_exam_screen.dart';
 import '../core/theme/app_palette.dart';
 
@@ -169,6 +170,8 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                 ],
                 const SizedBox(height: 8),
                 _startButton(isGuest, availableAsync),
+                const SizedBox(height: 32),
+                ExamHistory(subjectId: widget.subjectId),
               ],
             ),
           );

@@ -119,6 +119,7 @@ const OWNED = [
   ["attempts", "userId"],
   ["flags", "userId"],
   ["notes", "userId"],
+  ["examResults", "userId"],
   ["progress", null],
   ["learn", null],
   ["study", null],

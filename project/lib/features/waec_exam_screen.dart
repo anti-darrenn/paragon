@@ -5,15 +5,16 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/exam/exam_result.dart';
 import '../core/models/question.dart';
+import '../core/repositories/exam_result_repository.dart';
+import 'exam_review_screen.dart' show GradeEstimateCard;
 import '../core/providers/auth_provider.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/repositories/attempt_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/math_text.dart';
-import '../core/widgets/report_problem_button.dart';
-import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
@@ -59,9 +60,13 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   // attempts are recorded once per exam — the retry button still works, since
   // this only flips on a successful write
   bool _attemptsSaved = false;
-  // set when the student taps "Review Answers", which drops back into the
-  // exam view. only used to offer the report affordance there
-  bool _reviewMode = false;
+
+  /// The exam as sat, built on submit and saved to `examResults` so it can
+  /// be reviewed after a reload and listed in the subject's history. Its
+  /// id is chosen up front, so a retried save writes the same document.
+  ExamResult? _result;
+  bool _resultSaved = false;
+  final DateTime _startedAt = DateTime.now();
 
   Timer? _ticker;
   int _remainingSeconds = 0;
@@ -148,11 +153,29 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     for (int i = 0; i < questions.length; i++) {
       if (_answers[i] == questions[i].correctIndex) correct++;
     }
+    final session = widget.session;
+    _result ??= ExamResult.fromSitting(
+      id: ref.read(examResultRepositoryProvider).newId(),
+      subjectId: widget.subjectId,
+      questions: questions,
+      answers: _answers,
+      timed: session?.timerEnabled ?? false,
+      durationSeconds: DateTime.now().difference(_startedAt).inSeconds,
+    );
     setState(() {
       _examSubmitted = true;
       _score = correct;
     });
-    if (!_attemptsSaved) _saveAttempts(questions);
+    if (!_attemptsSaved || !_resultSaved) _saveAttempts(questions);
+  }
+
+  void _openReview(List<Question> questions) {
+    final result = _result;
+    if (result == null) return;
+    context.push(
+      '/waec/review/${result.id}',
+      extra: ExamReview(result, {for (final q in questions) q.id: q}),
+    );
   }
 
   /// Records one attempt per *answered* question via the same
@@ -179,6 +202,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
         ),
       );
     }
+    // An exam with nothing answered records nothing: no attempts, and no
+    // result for the history to show as an empty 0%.
     if (answered.isEmpty) return;
 
     setState(() {
@@ -186,19 +211,29 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       _saveFailed = false;
     });
     try {
-      await ref
-          .read(attemptRepositoryProvider)
-          .recordBatch(userId: user.uid, source: 'waec', attempts: answered);
-      _attemptsSaved = true;
+      // Two writes, each flagged on success, so a retry after a failure
+      // repeats only what failed and never records the attempts twice.
+      if (!_attemptsSaved) {
+        await ref
+            .read(attemptRepositoryProvider)
+            .recordBatch(userId: user.uid, source: 'waec', attempts: answered);
+        _attemptsSaved = true;
 
-      // Counts and a subject id only — never question text or answers.
-      await ref
-          .read(analyticsProvider)
-          .examCompleted(
-            subjectId: widget.subjectId,
-            answered: answered.length,
-            correct: answered.where((a) => a.isCorrect).length,
-          );
+        // Counts and a subject id only — never question text or answers.
+        await ref
+            .read(analyticsProvider)
+            .examCompleted(
+              subjectId: widget.subjectId,
+              answered: answered.length,
+              correct: answered.where((a) => a.isCorrect).length,
+            );
+      }
+      final result = _result;
+      if (!_resultSaved && result != null) {
+        await ref.read(examResultRepositoryProvider).save(user.uid, result);
+        _resultSaved = true;
+        ref.invalidate(examHistoryProvider(widget.subjectId));
+      }
 
       if (mounted) setState(() => _saving = false);
     } catch (_) {
@@ -382,10 +417,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
               saving: _saving,
               saveFailed: _saveFailed,
               onRetry: () => _saveAttempts(questions),
-              onReview: () => setState(() {
-                _examSubmitted = false;
-                _reviewMode = true;
-              }),
+              onReview: () => _openReview(questions),
               onExit: () => context.go('/waec'),
             )
           : _buildActiveExam(questions),
@@ -584,17 +616,6 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                     ),
                   );
                 }),
-                if (_reviewMode)
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Wrap(
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [
-                        ReportProblemButton(questionId: q.id),
-                        QuestionBookmarkButton(question: q),
-                      ],
-                    ),
-                  ),
               ],
             ),
           ),
@@ -714,11 +735,8 @@ class _ResultsView extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 6),
-          Text(
-            pct >= 50 ? 'Pass' : 'Below pass mark',
-            style: TextStyle(color: scoreColor, fontSize: 14),
-          ),
+          const SizedBox(height: 16),
+          GradeEstimateCard(percent: total > 0 ? score * 100 / total : 0),
           if (saveFailed) ...[
             const SizedBox(height: 20),
             Container(

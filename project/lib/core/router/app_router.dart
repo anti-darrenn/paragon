@@ -13,6 +13,7 @@ import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/core/models/question.dart';
+import 'package:paragon/core/repositories/exam_result_repository.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
@@ -32,6 +33,7 @@ import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
 import 'package:paragon/features/onboarding/username_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
+import 'package:paragon/features/exam_review_screen.dart';
 import 'package:paragon/features/mistakes/mistakes_practice_screen.dart';
 import 'package:paragon/features/mistakes/mistakes_screen.dart';
 import 'package:paragon/features/learn_screen.dart';
@@ -357,6 +359,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           // than crashing on a bad cast — see its initState.
           session: state.extra is WaecExamSessionData
               ? state.extra as WaecExamSessionData
+              : null,
+        ),
+      ),
+      // A finished exam, marked. Opened from the results with the exam in
+      // memory, or by id after a reload or from the subject's history.
+      GoRoute(
+        path: '/waec/review/:examId',
+        builder: (context, state) => ExamReviewScreen(
+          examId: state.pathParameters['examId']!,
+          initial: state.extra is ExamReview
+              ? state.extra as ExamReview
               : null,
         ),
       ),
