@@ -12,6 +12,7 @@ import 'package:paragon/features/account/legal_accept_screen.dart';
 import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
+import 'package:paragon/core/models/question.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
@@ -31,6 +32,8 @@ import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
 import 'package:paragon/features/onboarding/username_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
+import 'package:paragon/features/mistakes/mistakes_practice_screen.dart';
+import 'package:paragon/features/mistakes/mistakes_screen.dart';
 import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
@@ -429,6 +432,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/saved',
         builder: (context, state) => const SavedScreen(),
+      ),
+      // The mistakes notebook, and practising from it. Practice takes its
+      // questions as route `extra`; opened bare, it points back here.
+      GoRoute(
+        path: '/mistakes',
+        builder: (context, state) => const MistakesScreen(),
+      ),
+      GoRoute(
+        path: '/mistakes/practice',
+        builder: (context, state) => MistakesPracticeScreen(
+          questions: state.extra is List<Question>
+              ? state.extra as List<Question>
+              : null,
+        ),
       ),
       // A subject's revision cards. Guests too: their schedule is kept on
       // the device.
