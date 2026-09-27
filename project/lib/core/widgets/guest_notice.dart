@@ -10,7 +10,7 @@ import '../theme/app_palette.dart';
 ///
 /// Deliberately not a blocker and not a modal. A guest session is a
 /// legitimate way to use Paragon — the point is that a student watching a
-/// mastery ring fill should know it will be gone when they close the tab,
+/// mastery ring fill should know how easily it can be lost,
 /// not be stopped from filling it.
 ///
 /// Uses `warning` rather than the error colour: nothing has gone wrong,

@@ -66,12 +66,15 @@ void main() {
       );
     });
 
-    test('the progress message says progress is not saved', () {
-      expect(GuestLimits.progressNotKeptMessage, contains('not'));
-      expect(
-        GuestLimits.progressNotKeptMessage.toLowerCase(),
-        contains('saved'),
-      );
+    // A guest's progress survives a closed tab (checked on the live
+    // site), so the message must not claim otherwise — it says where the
+    // progress lives, how it is lost, and how to keep it.
+    test('the progress message is honest about where progress lives', () {
+      final m = GuestLimits.progressNotKeptMessage.toLowerCase();
+      expect(m, contains('this browser'));
+      expect(m, contains('account'));
+      expect(m, isNot(contains('close the tab')));
+      expect(m, isNot(contains('not saved')));
     });
   });
 }
