@@ -422,6 +422,40 @@ service cloud.firestore {
           && resource.data.userId == request.auth.uid;
     }
 
+    // ── WAEC EXAM RESULTS (review and history) ───────────────────
+    // One document per finished exam, written once on submit, so the
+    // exam can be reviewed after a reload and listed in the subject's
+    // history: attempts cannot say which answers were one sitting.
+    // Owner-only, closed field set, the server's clock, and never
+    // updated — like an attempt, it is a record of what happened.
+    // Guests write them too, as they write WAEC attempts; the guest
+    // clean-up job deletes both.
+    match /examResults/{examId} {
+      function examShapeOk(d) {
+        return d.keys().hasOnly(['userId', 'subjectId', 'items', 'total',
+                                 'correct', 'timed', 'durationSeconds',
+                                 'submittedAt'])
+          && d.keys().hasAll(['userId', 'subjectId', 'items', 'total',
+                              'correct', 'timed', 'durationSeconds',
+                              'submittedAt'])
+          && d.subjectId is string && d.subjectId.size() > 0
+          && d.subjectId.size() <= 128
+          && d.items is list && d.items.size() > 0 && d.items.size() <= 100
+          && d.total is int && d.total == d.items.size()
+          && d.correct is int && d.correct >= 0 && d.correct <= d.total
+          && d.timed is bool
+          && d.durationSeconds is int && d.durationSeconds >= 0
+          && d.submittedAt == request.time;
+      }
+      // Rules are not filters: a query must carry `userId == uid`.
+      allow read, delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+          && request.resource.data.userId == request.auth.uid
+          && examShapeOk(request.resource.data);
+      allow update: if false;
+    }
+
     // ── PRACTICE PROGRESS (mastery rings) ────────────────────────
     // A private, display-only cache of per-topic counters, one document
     // per student, id'd by uid. It exists because counting `attempts` per

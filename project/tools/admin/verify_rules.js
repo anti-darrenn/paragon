@@ -823,6 +823,82 @@ async function attemptsAndFlags(a, b) {
   await deleteDoc(a.idToken, `flags/${closedFlagId}`);
 }
 
+async function examResults(a, b) {
+  suite('examResults — own, closed shape, never edited');
+
+  // exactly what ExamResultRepository.save sends
+  const exam = (uid, extra = {}) => ({
+    userId: str(uid),
+    subjectId: str('s-verify'),
+    items: arr([
+      map({ q: str('q1'), t: str('t1'), s: int(0) }),
+      map({ q: str('q2'), t: str('t1'), s: int(-1) }),
+    ]),
+    total: int(2),
+    correct: int(1),
+    timed: bool(true),
+    durationSeconds: int(300),
+    ...extra,
+  });
+  const at = { transforms: [serverTime('submittedAt')] };
+  const id = `verify_${a.uid.slice(0, 8)}`;
+
+  expectOutcome(
+    'an exam result can be saved for yourself',
+    ALLOW,
+    await commit(a.idToken, write(`examResults/${id}`, exam(a.uid), at)),
+  );
+  expectOutcome(
+    'an exam result cannot be saved against another student',
+    DENY,
+    await commit(b.idToken, write(`examResults/${id}_b`, exam(a.uid), at)),
+  );
+  expectOutcome(
+    'an exam result cannot be edited — a score is not rewritable',
+    DENY,
+    await commit(a.idToken, write(`examResults/${id}`, { correct: int(2) })),
+  );
+  expectOutcome(
+    'an exam result cannot carry an unlisted field',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`examResults/${id}_x`, exam(a.uid, { grade: str('A1') }), at),
+    ),
+  );
+  expectOutcome(
+    'an exam result cannot claim more right than it has questions',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`examResults/${id}_y`, exam(a.uid, { correct: int(3) }), at),
+    ),
+  );
+  expectOutcome(
+    'an exam result cannot set its own time',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`examResults/${id}_z`, {
+        ...exam(a.uid),
+        submittedAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    "another student's exam result is not readable",
+    DENY,
+    await readDoc(b.idToken, `examResults/${id}`),
+  );
+  expectOutcome(
+    'your own exam result is readable',
+    ALLOW,
+    await readDoc(a.idToken, `examResults/${id}`),
+  );
+
+  await deleteDoc(a.idToken, `examResults/${id}`);
+}
+
 async function studyData(a, b) {
   suite('notes and study/{uid} — own data, real accounts only');
 
@@ -1447,6 +1523,7 @@ async function teardown(a, b, usernameKey) {
   await usersAllowList(a, b);
   await usernames(a, b, usernameKey);
   await attemptsAndFlags(a, b);
+  await examResults(a, b);
   await progress(a, b);
   await studyData(a, b);
   await accountRequests(a, b);
