@@ -113,7 +113,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-116 checks. The denials are the content: a write that succeeds only proves something
+124 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -128,13 +128,19 @@ Flutter web app (Riverpod v3 + go_router v17 + Firebase v4) over a Firestore con
 - Learning Mode — `/` → `/subject/:subjectId` → `.../unit/:unitId` → `.../topic/:topicId` (SubjectList → UnitList → TopicList → Drill). Immediate per-question feedback, attempts recorded with `source: 'drill'`.
 - WAEC Prep Mode — `/waec` → `/waec/:subjectId/exam` (WaecSubjectScreen → WaecExamScreen). Full exam run, results at the end, `source: 'waec'`.
 
-Never add WAEC questions to drill providers without filtering by `source`, and never add drill-style instant feedback to the exam flow.
+Never add WAEC questions to drill providers without filtering by `source`, and never add drill-style instant feedback to the exam flow. The review at `/waec/review/:examId` comes after submission and locks every answer; its grade is always labelled an estimate from objective questions only (`lib/core/exam/waec_grade.dart` — the bands are not official).
 
 **The drill gate.** `lib/core/learn/topic_test.dart` is the pure model —
 scoring, the 80% pass mark (`kTopicTestPassPercent`), and `drillAccessFor`,
 which is the *only* place the gate is decided. Drill for a topic opens when
 its topic test is passed, or — grandfathered — when drill mastery already
-reached proficient before the gate shipped. Guests get no drill at all, and
+reached proficient before the gate shipped. A **unit test**
+(`lib/core/learn/challenge.dart`, owner's decision) also counts as passing
+a topic's test when it drew at least 4 of that topic's questions and 80% were
+right; it writes `passed` with `passedVia: 'unit_test'` and no `attempts`
+increment. The course challenge never unlocks. Both record `source: 'challenge'`
+and add to `progress` only for topics open once marked
+(`challenge_screen_test.dart` has the control). Guests get no drill at all, and
 are refused before proficiency is considered, since a guest's pass dies
 with the session. Learn content is never gated.
 
@@ -404,7 +410,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -421,7 +427,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `subjects.questionCount` counts the subject's `hasAnswer: true` questions, the ones a student can be served, and is shown on the welcome screen. Also written by `jobs.js --job=counts`, with the same "zero means not known, hide it" rule. It drifts when an admin retires a question, until the next nightly run.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
-- `attempts.source` is now one of `drill | waec | test | exercise`. Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
+- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`** — and to `_ownedById`/`_ownedByQuery` (the export) and `OWNED` in `tools/admin/jobs.js` (guest cleanup, scheduled deletions, orphans). `export_test.dart` checks export and deletion cover the same set. Forgetting leaves a student who asked to be deleted, and mostly was.
 - **The account system** (`lib/features/account/`, `lib/features/profile/`). `users/{uid}` also carries `avatar` (`preset:<id>` or `initials:<colour>`), `bio` (≤160, private), `usernameChangedAt`, `deletionRequestedAt`, `legalVersion`/`legalAcceptedAt` and `prefs`; every one is allow-listed and shape-checked in `clientFieldsAreValid()`, and every timestamp must be the server's clock.
   - **Profiles are private.** `/me` and the bio are seen only by their owner; nothing social reads `users/{uid}`. A future public profile must be a separate opt-in document.

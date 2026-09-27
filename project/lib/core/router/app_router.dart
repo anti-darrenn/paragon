@@ -12,6 +12,8 @@ import 'package:paragon/features/account/legal_accept_screen.dart';
 import 'package:paragon/features/account/security_screen.dart';
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
+import 'package:paragon/core/models/question.dart';
+import 'package:paragon/core/repositories/exam_result_repository.dart';
 import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
 import 'package:paragon/features/admin/admin_flag_screen.dart';
 import 'package:paragon/features/admin/admin_home_screen.dart';
@@ -30,7 +32,11 @@ import 'package:paragon/features/onboarding/display_name_screen.dart';
 import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
 import 'package:paragon/features/onboarding/username_screen.dart';
+import 'package:paragon/features/challenge_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
+import 'package:paragon/features/exam_review_screen.dart';
+import 'package:paragon/features/mistakes/mistakes_practice_screen.dart';
+import 'package:paragon/features/mistakes/mistakes_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/settings/reading_settings_screen.dart';
@@ -286,6 +292,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicKey: state.pathParameters['topicId']!,
         ),
       ),
+      // Unit tests and the course challenge: mixed-topic, marked at the
+      // end. A unit test can open a topic's drill; see challenge.dart.
+      GoRoute(
+        path: '/subject/:subjectId/course/challenge',
+        builder: (context, state) =>
+            ChallengeScreen(subjectKey: state.pathParameters['subjectId']!),
+      ),
+      GoRoute(
+        path: '/subject/:subjectId/course/unit/:moduleId/test',
+        builder: (context, state) => ChallengeScreen(
+          subjectKey: state.pathParameters['subjectId']!,
+          moduleId: state.pathParameters['moduleId'],
+        ),
+      ),
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId',
         builder: (context, state) => TopicListScreen(
@@ -355,6 +375,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           // than crashing on a bad cast — see its initState.
           session: state.extra is WaecExamSessionData
               ? state.extra as WaecExamSessionData
+              : null,
+        ),
+      ),
+      // A finished exam, marked. Opened from the results with the exam in
+      // memory, or by id after a reload or from the subject's history.
+      GoRoute(
+        path: '/waec/review/:examId',
+        builder: (context, state) => ExamReviewScreen(
+          examId: state.pathParameters['examId']!,
+          initial: state.extra is ExamReview
+              ? state.extra as ExamReview
               : null,
         ),
       ),
@@ -428,6 +459,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // Bookmarks and notes. Guests too: theirs are kept on the device.
       GoRoute(path: '/saved', builder: (context, state) => const SavedScreen()),
+      // The mistakes notebook, and practising from it. Practice takes its
+      // questions as route `extra`; opened bare, it points back here.
+      GoRoute(
+        path: '/mistakes',
+        builder: (context, state) => const MistakesScreen(),
+      ),
+      GoRoute(
+        path: '/mistakes/practice',
+        builder: (context, state) => MistakesPracticeScreen(
+          questions: state.extra is List<Question>
+              ? state.extra as List<Question>
+              : null,
+        ),
+      ),
       // A subject's revision cards. Guests too: their schedule is kept on
       // the device.
       GoRoute(

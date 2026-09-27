@@ -164,6 +164,17 @@ class DashboardScreen extends ConsumerWidget {
                   onTap: () => context.go('/subjects'),
                 ),
                 const SizedBox(height: 10),
+                // No count here on purpose: counting means reading the
+                // student's recent attempts, and the dashboard opens far
+                // more often than the notebook.
+                _ActionCard(
+                  icon: Icons.replay_rounded,
+                  iconColor: AppColors.wrong,
+                  title: 'Mistakes notebook',
+                  subtitle: 'Go back over questions you got wrong',
+                  onTap: () => context.push('/mistakes'),
+                ),
+                const SizedBox(height: 10),
                 _ActionCard(
                   icon: Icons.assignment_outlined,
                   iconColor: AppColors.accentBlue,

@@ -56,7 +56,7 @@ bool get legalPlaceholdersRemain => [
 ].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '26 September 2026';
+const String legalLastUpdated = '27 September 2026';
 
 /// The version of the terms and privacy policy a student agrees to,
 /// recorded on `users/{uid}` as `legalVersion` with the time.
@@ -147,12 +147,20 @@ const LegalDocument privacyPolicy = LegalDocument(
             'bio, picture and optional details are shown only to you.',
         'How you use Paragon. For each question you answer we record which '
             'question it was, which option you chose, whether it was '
-            'correct, when you answered, and whether it was practice, an '
-            'exercise inside a lesson, a topic test or a WAEC exam session. '
+            'correct, how many hints you used, when you answered, and '
+            'whether it was practice, an '
+            'exercise inside a lesson, a topic test, a unit test or course '
+            'challenge, a WAEC exam session or practice from your mistakes '
+            'notebook. '
             'We also keep a running count of how many practice questions '
-            'you have answered in each topic and how many you got right, '
-            'which is what the progress rings show you. Lesson exercises '
-            'and topic tests are not added to that count.',
+            'you have answered in each topic and how many you got right '
+            'without a hint, '
+            'which is what the progress rings show you. Lesson exercises, '
+            'topic tests and mistakes practice are not added to that count; '
+            'unit tests and course challenges are, but only for topics you '
+            'have unlocked. '
+            'The mistakes notebook is worked out from those same answers; '
+            'nothing extra is stored for it.',
         'Your lesson progress. When you finish a video, an article or an '
             'exercise in a lesson, we record that you finished it and when, '
             'so the app can show what you have done and take you back to '
@@ -161,6 +169,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'exercise answers are not stored either — unless you create an '
             'account from that guest session, in which case the lessons you '
             'finished are saved to it.',
+        'Your WAEC exam results. For each exam you finish we keep which '
+            'questions it had, the option you picked for each, your score, '
+            'whether it was timed and how long you took, so you can review '
+            'it later and see your past exams. Only you can see them.',
         'Your topic test results. For each topic test you take we record '
             'your best score, how many times you have taken it, when you '
             'last did, and whether you have passed it. Passing is what '

@@ -31,6 +31,7 @@ void main() {
     await db.collection('attempts').add({'userId': 'u1', 'timestamp': at});
     await db.collection('notes').add({'userId': 'u1', 'text': 'hi'});
     await db.collection('flags').add({'userId': 'u1', 'reason': 'wrong'});
+    await db.collection('examResults').add({'userId': 'u1', 'submittedAt': at});
     // Someone else's, which must not appear.
     await db.collection('attempts').add({'userId': 'u2', 'timestamp': at});
   });
@@ -66,8 +67,8 @@ void main() {
   });
 
   test('exportSize counts owned documents only', () async {
-    // 6 keyed-by-uid slots + 2 attempts + 1 note + 1 flag.
-    expect(await repo.exportSize('u1'), 10);
+    // 6 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 exam.
+    expect(await repo.exportSize('u1'), 11);
   });
 
   test('covers everything deletion removes', () async {
@@ -78,6 +79,7 @@ void main() {
     final after = await repo.exportOwnedDocuments('u1');
 
     // Control: the export saw data before deletion...
+    expect(before['examResults'], hasLength(1));
     expect(
       before.keys,
       containsAll(['users', 'accountRequests', 'staffProfiles']),
@@ -93,7 +95,7 @@ void main() {
     ]) {
       expect(after.containsKey(key), isFalse, reason: key);
     }
-    for (final key in ['attempts', 'notes', 'flags']) {
+    for (final key in ['attempts', 'notes', 'flags', 'examResults']) {
       expect(after[key], isEmpty, reason: key);
     }
   });

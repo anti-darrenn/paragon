@@ -36,7 +36,12 @@ class CourseModuleCard extends StatelessWidget {
     required this.gridColumns,
     required this.onTopicTap,
     this.progress = UserProgress.empty,
+    this.onUnitTest,
   });
+
+  /// Starts this module's unit test; null hides the button (a planned
+  /// module, or a signed-out or guest student).
+  final VoidCallback? onUnitTest;
 
   final CourseModule module;
 
@@ -90,6 +95,7 @@ class CourseModuleCard extends StatelessWidget {
                     index: index,
                     progress: progress,
                     paintBackground: true,
+                    onUnitTest: onUnitTest,
                   ),
                   Divider(
                     height: 1,
@@ -149,6 +155,7 @@ class CourseModuleCard extends StatelessWidget {
                           index: index,
                           progress: progress,
                           paintBackground: false,
+                          onUnitTest: onUnitTest,
                         ),
                       ),
                       // Matches the divider in the background row so the
@@ -180,7 +187,10 @@ class _TitleRegion extends StatelessWidget {
     required this.index,
     required this.progress,
     required this.paintBackground,
+    this.onUnitTest,
   });
+
+  final VoidCallback? onUnitTest;
 
   final CourseModule module;
   final Color accent;
@@ -264,6 +274,21 @@ class _TitleRegion extends StatelessWidget {
             Text(
               '$started of $practisable started',
               style: AppTheme.caption.copyWith(color: accent),
+            ),
+          ],
+          if (onUnitTest != null && showRing) ...[
+            const SizedBox(height: 12),
+            OutlinedButton.icon(
+              onPressed: onUnitTest,
+              icon: Icon(Icons.fact_check_outlined, size: 18, color: accent),
+              label: Text(
+                'Unit test',
+                style: AppTheme.bodyMd.copyWith(color: accent),
+              ),
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(color: accent.withAlpha(120)),
+                visualDensity: VisualDensity.compact,
+              ),
             ),
           ],
         ],

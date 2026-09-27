@@ -16,6 +16,8 @@ import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/report_problem_button.dart';
 import '../study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../../core/theme/app_palette.dart';
+import '../../core/learn/hints.dart';
+import '../../core/widgets/hint_panel.dart';
 import '../../core/widgets/question_image.dart';
 
 /// An in-lesson exercise: a short set of questions with immediate
@@ -105,6 +107,7 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
                   subjectId: r.subjectId,
                   selectedIndex: t.selectedIndex,
                   isCorrect: t.isCorrect,
+                  hintsUsed: t.hintsUsed,
                 ),
             ],
           );
@@ -233,6 +236,12 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
               onTap: resolved || s.wrongOptions.contains(i)
                   ? null
                   : () => act(() => s.select(i)),
+            ),
+          if (s.canHint)
+            HintPanel(
+              steps: hintSteps(q.explanation),
+              shown: s.hintsShown,
+              onShowNext: () => act(s.useHint),
             ),
           _Feedback(session: s, question: q),
           const SizedBox(height: 8),

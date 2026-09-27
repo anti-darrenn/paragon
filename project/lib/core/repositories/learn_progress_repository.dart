@@ -118,6 +118,38 @@ class LearnProgressRepository {
     }, SetOptions(merge: true));
   }
 
+  /// Records a topic passed inside a unit test (see
+  /// `lib/core/learn/challenge.dart` for when that counts).
+  ///
+  /// The same sticky `passed` and rising `bestScore` as [recordAttempt],
+  /// marked `passedVia: 'unit_test'`, but no `attempts` increment: the
+  /// student did not sit this topic's own test. Nothing new is needed of
+  /// the gate — `drillAccessFor` reads `passed` whichever way it was
+  /// earned. Callers pass only topics that met the rule.
+  Future<void> recordChallengePass({
+    required String uid,
+    required String topicId,
+    required String subjectId,
+    required int correct,
+    required int total,
+    required TopicTestRecord previous,
+  }) async {
+    if (!topicTestPassed(correct: correct, total: total)) return;
+    final score = topicTestScore(correct: correct, total: total);
+    await _doc(uid).set({
+      'userId': uid,
+      'updatedAt': FieldValue.serverTimestamp(),
+      'topics': {
+        topicId: {
+          'passed': true,
+          'bestScore': score > previous.bestScore ? score : previous.bestScore,
+          'subjectId': subjectId,
+          if (!previous.passed) 'passedVia': 'unit_test',
+        },
+      },
+    }, SetOptions(merge: true));
+  }
+
   /// Records one finished Learn item — a video watched, an article read,
   /// an exercise set completed.
   ///
