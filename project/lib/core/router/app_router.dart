@@ -31,7 +31,6 @@ import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
 import 'package:paragon/features/onboarding/username_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
-import 'package:paragon/features/learn_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
 import 'package:paragon/features/settings_screen.dart';
 import 'package:paragon/features/settings/reading_settings_screen.dart';
@@ -312,13 +311,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicId: state.pathParameters['topicId']!,
         ),
       ),
+      // The old notes-only Learn screen, replaced by the topic overview
+      // and its lessons. Kept as a redirect so saved links still land.
       GoRoute(
         path: '/subject/:subjectId/unit/:unitId/topic/:topicId/learn',
-        builder: (context, state) => LearnScreen(
-          subjectId: state.pathParameters['subjectId']!,
-          unitId: state.pathParameters['unitId']!,
-          topicId: state.pathParameters['topicId']!,
-        ),
+        redirect: (context, state) =>
+            '/subject/${state.pathParameters['subjectId']}'
+            '/course/topic/${state.pathParameters['topicId']}',
       ),
       // The lesson page: any published Learn item, with the topic's
       // sequence beside it. The article-only URL it replaced redirects.
