@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/progress/course_progress.dart';
+import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
@@ -37,13 +38,21 @@ class CourseIndexScreen extends ConsumerWidget {
     // identically whether or not they have ever practised.
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    // Unit tests and challenges write unlocks and mastery to an account;
+    // a guest has no drill to unlock.
+    final canChallenge =
+        ref.watch(currentUserProvider) != null && !ref.watch(isGuestProvider);
 
     return ParagonPage(
       child: courseAsync.when(
         loading: () =>
             const _CenteredMessage(child: CircularProgressIndicator()),
         error: (error, _) => _CourseError(error: error),
-        data: (course) => _CourseBody(course: course, progress: progress),
+        data: (course) => _CourseBody(
+          course: course,
+          progress: progress,
+          canChallenge: canChallenge,
+        ),
       ),
     );
   }
@@ -66,10 +75,15 @@ int _gridColumnsFor(double listWidth, {required bool isCompact}) {
 }
 
 class _CourseBody extends StatelessWidget {
-  const _CourseBody({required this.course, required this.progress});
+  const _CourseBody({
+    required this.course,
+    required this.progress,
+    this.canChallenge = false,
+  });
 
   final Course course;
   final UserProgress progress;
+  final bool canChallenge;
 
   @override
   Widget build(BuildContext context) {
@@ -140,6 +154,23 @@ class _CourseBody extends StatelessWidget {
           _PlannedNotice(subjectName: course.name),
         ],
 
+        if (course.isLive && canChallenge) ...[
+          const SizedBox(height: 20),
+          OutlinedButton.icon(
+            onPressed: () =>
+                context.push('/subject/${course.key}/course/challenge'),
+            icon: Icon(Icons.emoji_events_outlined, color: accent),
+            label: Text(
+              'Course challenge',
+              style: AppTheme.bodyMd.copyWith(color: accent),
+            ),
+            style: OutlinedButton.styleFrom(
+              side: BorderSide(color: accent.withAlpha(120)),
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+            ),
+          ),
+        ],
+
         SizedBox(height: isCompact ? 28 : 40),
 
         // ── Module cards ─────────────────────────────────────────────────
@@ -173,6 +204,13 @@ class _CourseBody extends StatelessWidget {
                       index: i,
                       gridColumns: columns,
                       progress: progress,
+                      onUnitTest:
+                          canChallenge && !course.modules[i].isPlaceholder
+                          ? () => context.push(
+                              '/subject/${course.key}/course/unit/'
+                              '${course.modules[i].id}/test',
+                            )
+                          : null,
                       onTopicTap: course.modules[i].isPlaceholder
                           ? null
                           : (topic) => context.push(

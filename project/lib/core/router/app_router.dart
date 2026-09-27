@@ -32,6 +32,7 @@ import 'package:paragon/features/onboarding/display_name_screen.dart';
 import 'package:paragon/features/onboarding/profile_screen.dart';
 import 'package:paragon/features/onboarding/subjects_screen.dart';
 import 'package:paragon/features/onboarding/username_screen.dart';
+import 'package:paragon/features/challenge_screen.dart';
 import 'package:paragon/features/drill_screen.dart';
 import 'package:paragon/features/exam_review_screen.dart';
 import 'package:paragon/features/mistakes/mistakes_practice_screen.dart';
@@ -288,6 +289,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => TopicOverviewScreen(
           subjectKey: state.pathParameters['subjectId']!,
           topicKey: state.pathParameters['topicId']!,
+        ),
+      ),
+      // Unit tests and the course challenge: mixed-topic, marked at the
+      // end. A unit test can open a topic's drill; see challenge.dart.
+      GoRoute(
+        path: '/subject/:subjectId/course/challenge',
+        builder: (context, state) =>
+            ChallengeScreen(subjectKey: state.pathParameters['subjectId']!),
+      ),
+      GoRoute(
+        path: '/subject/:subjectId/course/unit/:moduleId/test',
+        builder: (context, state) => ChallengeScreen(
+          subjectKey: state.pathParameters['subjectId']!,
+          moduleId: state.pathParameters['moduleId'],
         ),
       ),
       GoRoute(

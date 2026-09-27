@@ -147,7 +147,11 @@ class _ReviewState extends ConsumerState<_Review> {
             ),
             const SizedBox(height: 12),
             for (final e in shown)
-              _ReviewCard(number: e.number, item: e.item, question: e.question),
+              ExamReviewCard(
+                number: e.number,
+                item: e.item,
+                question: e.question,
+              ),
             if (shown.length < (_missedOnly ? r.total - r.correct : r.total))
               Padding(
                 padding: const EdgeInsets.only(top: 8),
@@ -257,8 +261,9 @@ class _WeakTopicRow extends ConsumerWidget {
   }
 }
 
-class _ReviewCard extends StatelessWidget {
-  const _ReviewCard({
+class ExamReviewCard extends StatelessWidget {
+  const ExamReviewCard({
+    super.key,
     required this.number,
     required this.item,
     required this.question,
