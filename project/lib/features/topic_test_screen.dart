@@ -21,6 +21,7 @@ import 'lesson/lesson_nudge.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/question_image.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/session_title.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -216,7 +217,9 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     }
 
     final scaffold = Scaffold(
-      appBar: ParagonAppBar(title: const Text('Topic test')),
+      appBar: ParagonAppBar(
+        title: SessionTitle(kind: 'Topic test', topicId: widget.topicId),
+      ),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
