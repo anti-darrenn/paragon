@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'nav_destinations.dart';
+
 /// Where "back" goes from [uri] when there is no history to go back
 /// through: a page opened from a link, a reload, a search result, or with
 /// `go`. Null on a tab's first page, which has nowhere further back to go.
@@ -123,7 +125,13 @@ class ParagonAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.backgroundColor,
     this.centerTitle,
     this.titleSpacing,
+    this.collapseWhenWide = false,
   });
+
+  /// For a tab's first page: on a wide screen the top bar already names
+  /// the section, so the app bar steps aside and the page's own heading
+  /// ([PageIntro]) leads instead.
+  final bool collapseWhenWide;
 
   final Widget? title;
   final List<Widget>? actions;
@@ -140,6 +148,11 @@ class ParagonAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (collapseWhenWide && navLayoutFor(context) == NavLayout.topBar) {
+      // The Scaffold lays the app bar out at its own height, so this
+      // leaves only the inset the floating top bar needs.
+      return SizedBox(height: MediaQuery.paddingOf(context).top);
+    }
     final back = leading ??
         (automaticallyImplyLeading ? ParagonBackButton.maybe(context) : null);
     return AppBar(

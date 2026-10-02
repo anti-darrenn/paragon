@@ -12,6 +12,7 @@ import '../core/widgets/guest_notice.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/ui/ui.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
@@ -22,21 +23,15 @@ class DashboardScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final userDataAsync = ref.watch(userDataProvider);
-    final weeklyAsync = ref.watch(weeklyAttemptsCountProvider);
     final isGuest = ref.watch(isGuestProvider);
-    // Already streamed by `YourSubjects` below — Riverpod shares the one
-    // listener, so reading it here costs nothing extra.
-    final progress =
-        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
 
     return Scaffold(
-      appBar: ParagonAppBar(
-        title: const Text('Dashboard'),
-        // No hardcoded leading: this screen is the app's home ('/'), where
-        // a back arrow pointing at '/' would be a no-op. Your profile used
-        // to be an avatar here; it is the Me tab on a phone and the avatar
-        // menu in the top bar on a wide screen.
-        actions: const [SearchAction()],
+      appBar: const ParagonAppBar(
+        title: Text('Home'),
+        // On a wide screen the top bar names the page and carries search
+        // and the account menu; the greeting below leads instead.
+        collapseWhenWide: true,
+        actions: [SearchAction()],
       ),
       body: userDataAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -54,124 +49,63 @@ class DashboardScreen extends ConsumerWidget {
               ? 'Student'
               : storedName;
 
-          return SingleChildScrollView(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // ── Greeting ───────────────────────────────────────────
-                Text(
-                  'Hey, $displayName 👋',
-                  style: TextStyle(
-                    color: context.palette.textStrong,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  'Pick up where you left off.',
-                  style: TextStyle(color: context.palette.onLow, fontSize: 14),
-                ),
-                const SizedBox(height: 16),
-
-                // The counters below are real, written to a real uid — and
-                // that uid is easily lost. A guest watching them
-                // climb deserves to know that before they find out by
-                // losing them.
-                if (isGuest) ...[
-                  const GuestNotice(),
-                  const SizedBox(height: 16),
-                ],
-
-                const _ContinueLearning(),
-
-                // ── Stats row ──────────────────────────────────────────
-                Row(
-                  children: [
-                    Expanded(
-                      // Replaces the day-streak card. Both numbers come
-                      // from the `progress/{uid}` document already being
-                      // streamed for the subject rings, so this is a
-                      // relabelling of data in hand, not a new read — and
-                      // unlike the streak it is recomputable from
-                      // `attempts` rather than from the device clock.
-                      child: _StatCard(
-                        icon: Icons.donut_large_rounded,
-                        iconColor: AppColors.primary,
-                        value: '${progress.startedTopicCount}',
-                        label: 'Topics practised',
-                        sublabel: progress.completedTopicCount == 0
-                            ? 'Start one today'
-                            : '${progress.completedTopicCount} at proficient',
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: weeklyAsync.when(
-                        loading: () => const _StatCard(
-                          icon: Icons.check_circle_outline_rounded,
-                          iconColor: AppColors.accentBlue,
-                          value: '—',
-                          label: 'This week',
-                          sublabel: 'Questions',
-                        ),
-                        error: (e, st) => const _StatCard(
-                          icon: Icons.check_circle_outline_rounded,
-                          iconColor: AppColors.accentBlue,
-                          value: '0',
-                          label: 'This week',
-                          sublabel: 'Questions',
-                        ),
-                        data: (count) => _StatCard(
-                          icon: Icons.check_circle_outline_rounded,
-                          iconColor: AppColors.accentBlue,
-                          value: '$count',
-                          label: 'This week',
-                          sublabel: 'Questions',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 24),
-
-                // ── Your subjects ──────────────────────────────────────
-                const YourSubjects(),
-                const SizedBox(height: 28),
-
-                // ── Continue practising ────────────────────────────────
-                _SectionHeader('Continue Practising'),
-                const SizedBox(height: 10),
-                _ActionCard(
-                  icon: Icons.play_circle_filled_rounded,
-                  iconColor: AppColors.primary,
-                  title: 'Browse courses',
-                  subtitle: 'Pick a topic and keep learning',
-                  onTap: () => context.go('/courses'),
-                ),
-                const SizedBox(height: 10),
-                // No count here on purpose: counting means reading the
-                // student's recent attempts, and the dashboard opens far
-                // more often than the notebook.
-                _ActionCard(
-                  icon: Icons.replay_rounded,
-                  iconColor: AppColors.wrong,
-                  title: 'Mistakes notebook',
-                  subtitle: 'Go back over questions you got wrong',
-                  onTap: () => context.push('/mistakes'),
-                ),
-                const SizedBox(height: 10),
-                _ActionCard(
-                  icon: Icons.assignment_outlined,
-                  iconColor: AppColors.accentBlue,
-                  title: 'WAEC Exam Mode',
-                  subtitle: 'Timed past-paper practice',
-                  onTap: () => context.go('/waec'),
-                ),
-                const SizedBox(height: 32),
+          return PageBody(
+            maxWidth: 1040,
+            children: [
+              PageIntro(
+                title: 'Hey, $displayName 👋',
+                subtitle: 'Pick up where you left off.',
+              ),
+              // The counters below are real, written to a real uid — and
+              // that uid is easily lost. A guest watching them climb
+              // deserves to know that before they find out by losing them.
+              if (isGuest) ...[
+                const GuestNotice(),
+                const SizedBox(height: 20),
               ],
-            ),
+              LayoutBuilder(
+                builder: (context, box) {
+                  // Two columns once there is room: what to do next on the
+                  // left, how it is going and where else to go on the right.
+                  if (box.maxWidth >= 820) {
+                    return const Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [_ContinueLearning(), YourSubjects()],
+                          ),
+                        ),
+                        SizedBox(width: 24),
+                        Expanded(
+                          flex: 2,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              _Stats(),
+                              SizedBox(height: kSectionGap),
+                              _QuickLinks(),
+                            ],
+                          ),
+                        ),
+                      ],
+                    );
+                  }
+                  return const Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      _ContinueLearning(),
+                      _Stats(),
+                      SizedBox(height: kSectionGap),
+                      YourSubjects(),
+                      _QuickLinks(),
+                    ],
+                  );
+                },
+              ),
+            ],
           );
         },
       ),
@@ -219,26 +153,15 @@ class YourSubjects extends ConsumerWidget {
     if (mine.isEmpty) return const SizedBox.shrink();
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            Expanded(child: _SectionHeader('Your Subjects')),
-            TextButton(
-              onPressed: () => context.push('/settings/subjects'),
-              style: TextButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                minimumSize: Size.zero,
-                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              ),
-              child: Text(
-                'Edit',
-                style: AppTheme.caption.copyWith(color: AppColors.primary),
-              ),
-            ),
-          ],
+        SectionHeader(
+          'Your subjects',
+          action: TextButton(
+            onPressed: () => context.push('/settings/subjects'),
+            child: const Text('Edit'),
+          ),
         ),
-        const SizedBox(height: 10),
         for (var i = 0; i < mine.length; i++) ...[
           if (i > 0) const SizedBox(height: 10),
           _SubjectProgressCard(
@@ -250,6 +173,7 @@ class YourSubjects extends ConsumerWidget {
             ),
           ),
         ],
+        const SizedBox(height: kSectionGap),
       ],
     );
   }
@@ -290,16 +214,9 @@ class _SubjectProgressCard extends StatelessWidget {
           '${progress.completedTopics} proficient';
     }
 
-    return GestureDetector(
-      onTap: () => context.push('/subject/${course.key}/course'),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: context.palette.surface,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: context.palette.border),
-        ),
-        child: Row(
+    return SurfaceCard(
+      onTap: () => context.go('/subject/${course.key}/course'),
+      child: Row(
           children: [
             Container(
               width: 4,
@@ -343,41 +260,16 @@ class _SubjectProgressCard extends StatelessWidget {
               ),
               const SizedBox(width: 6),
             ],
-            Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
-          ],
-        ),
+          Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
+        ],
       ),
     );
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Reusable sub-widgets
-// ─────────────────────────────────────────────────────────────────────────────
-
-class _SectionHeader extends StatelessWidget {
-  final String text;
-  const _SectionHeader(this.text);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-        color: context.palette.textStrong,
-        fontSize: 15,
-        fontWeight: FontWeight.w600,
-      ),
-    );
-  }
-}
-
-/// "Continue learning" — the Learn topic the student most recently
-/// finished something in, and the next thing to open there.
-///
-/// Absent until a student has completed at least one lesson item. Costs
-/// the topic document and that topic's resource list (two reads), both
-/// cached for the lesson page it links to.
+/// "Continue learning": the lesson the student was last in, how far
+/// through its topic they are, and one button back in. Absent until a
+/// student has completed at least one lesson item.
 class _ContinueLearning extends ConsumerWidget {
   const _ContinueLearning();
 
@@ -386,39 +278,26 @@ class _ContinueLearning extends ConsumerWidget {
     final c = ref.watch(continueLearningProvider);
     if (c == null) return const SizedBox.shrink();
     final next = c.next;
-    final (title, subtitle, path) = next != null
-        ? (
-            'Continue learning: ${c.topic.name}',
-            'Up next: ${next.title} · ${c.done} of ${c.total} done',
-            c.path,
-          )
-        : (
-            'You finished the ${c.topic.name} lesson',
-            'Take the topic test to unlock practice drills.',
-            c.path,
-          );
+    final fraction = c.total == 0 ? 0.0 : c.done / c.total;
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
-      child: Material(
-        color: context.palette.surface,
-        borderRadius: BorderRadius.circular(12),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          onTap: () => context.push(path),
-          child: Container(
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: AppColors.primary.withAlpha(90)),
-            ),
-            child: Row(
+      padding: const EdgeInsets.only(bottom: kSectionGap),
+      child: SurfaceCard(
+        key: const ValueKey('dashboard.continue'),
+        borderColor: AppColors.primary.withAlpha(110),
+        padding: const EdgeInsets.all(20),
+        onTap: () => context.push(c.path),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
               children: [
-                Icon(
-                  next == null
+                IconTile(
+                  icon: next == null
                       ? Icons.task_alt_rounded
-                      : Icons.play_lesson_outlined,
+                      : Icons.play_lesson_rounded,
                   color: AppColors.primary,
+                  size: 44,
                 ),
                 const SizedBox(width: 14),
                 Expanded(
@@ -426,83 +305,159 @@ class _ContinueLearning extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        title,
-                        style: AppTheme.bodyLg.copyWith(
-                          color: context.palette.textPrimary,
-                          fontWeight: FontWeight.w600,
+                        next == null ? 'LESSON FINISHED' : 'CONTINUE LEARNING',
+                        style: AppTheme.caption.copyWith(
+                          color: AppColors.primary,
+                          letterSpacing: 0.9,
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        subtitle,
-                        style: AppTheme.bodyMd.copyWith(
-                          color: context.palette.textSecondary,
+                        c.topic.name,
+                        style: AppTheme.heading3.copyWith(
+                          color: context.palette.textStrong,
                         ),
                       ),
                     ],
                   ),
                 ),
-                const Icon(
-                  Icons.chevron_right_rounded,
-                  color: AppColors.primary,
+              ],
+            ),
+            const SizedBox(height: 14),
+            Text(
+              next == null
+                  ? 'Take the topic test to unlock practice drills.'
+                  : 'Up next: ${next.title}',
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textSecondary,
+              ),
+            ),
+            const SizedBox(height: 12),
+            Row(
+              children: [
+                Expanded(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: fraction,
+                      minHeight: 6,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Text(
+                  '${c.done} of ${c.total}',
+                  style: AppTheme.label.copyWith(
+                    color: context.palette.textSecondary,
+                  ),
+                ),
+                const SizedBox(width: 16),
+                FilledButton.icon(
+                  onPressed: () => context.push(c.path),
+                  icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+                  iconAlignment: IconAlignment.end,
+                  label: Text(next == null ? 'Take the test' : 'Resume'),
+                  style: FilledButton.styleFrom(
+                    minimumSize: const Size(0, 40),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                  ),
                 ),
               ],
             ),
-          ),
+          ],
         ),
       ),
     );
   }
 }
 
-class _StatCard extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
-  final String value;
-  final String label;
-  final String sublabel;
+/// Two numbers about the student's practice. Both come from documents
+/// already being streamed (`progress/{uid}` and the week's attempt
+/// count), and both are recomputable from `attempts` — unlike the day
+/// streak they replaced, which came from the device clock.
+class _Stats extends ConsumerWidget {
+  const _Stats();
 
-  const _StatCard({
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final progress =
+        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    final weekly = ref.watch(weeklyAttemptsCountProvider);
+    final week = weekly.when(
+      loading: () => '—',
+      error: (_, _) => '0',
+      data: (n) => '$n',
+    );
+
+    return Row(
+      children: [
+        Expanded(
+          child: _StatTile(
+            icon: Icons.donut_large_rounded,
+            color: AppColors.primary,
+            value: '${progress.startedTopicCount}',
+            label: 'Topics practised',
+            detail: progress.completedTopicCount == 0
+                ? 'Start one today'
+                : '${progress.completedTopicCount} at proficient',
+          ),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: _StatTile(
+            icon: Icons.check_circle_outline_rounded,
+            color: AppColors.accentBlue,
+            value: week,
+            label: 'Questions this week',
+            detail: 'Practice, tests and exams',
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _StatTile extends StatelessWidget {
+  const _StatTile({
     required this.icon,
-    required this.iconColor,
+    required this.color,
     required this.value,
     required this.label,
-    required this.sublabel,
+    required this.detail,
   });
+
+  final IconData icon;
+  final Color color;
+  final String value;
+  final String label;
+  final String detail;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SurfaceCard(
       padding: const EdgeInsets.all(18),
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: context.palette.border),
-      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, color: iconColor, size: 22),
-          const SizedBox(height: 10),
+          IconTile(icon: icon, color: color, size: 36),
+          const SizedBox(height: 14),
           Text(
             value,
-            style: TextStyle(
+            style: AppTheme.displayLg.copyWith(
               color: context.palette.textStrong,
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
               height: 1,
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 6),
           Text(
             label,
-            style: TextStyle(color: context.palette.onMedium, fontSize: 12),
+            style: AppTheme.label.copyWith(color: context.palette.textPrimary),
           ),
           Text(
-            sublabel,
-            style: TextStyle(
-              color: iconColor.withAlpha((0.8 * 255).round()),
-              fontSize: 11,
+            detail,
+            style: AppTheme.caption.copyWith(
+              color: context.palette.textSecondary,
             ),
           ),
         ],
@@ -511,71 +466,52 @@ class _StatCard extends StatelessWidget {
   }
 }
 
-class _ActionCard extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
-  final String title;
-  final String subtitle;
-  final VoidCallback onTap;
-
-  const _ActionCard({
-    required this.icon,
-    required this.iconColor,
-    required this.title,
-    required this.subtitle,
-    required this.onTap,
-  });
+/// Where else to go from home, as one tidy list.
+class _QuickLinks extends StatelessWidget {
+  const _QuickLinks();
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: context.palette.surface,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: context.palette.border),
-        ),
-        child: Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SectionHeader('Keep going'),
+        RowGroup(
           children: [
-            Container(
-              width: 42,
-              height: 42,
-              decoration: BoxDecoration(
-                color: iconColor.withAlpha((0.12 * 255).round()),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Icon(icon, color: iconColor, size: 22),
+            ListRow(
+              icon: Icons.auto_stories_rounded,
+              iconColor: AppColors.primary,
+              title: 'Browse courses',
+              subtitle: 'Pick a topic and keep learning',
+              onTap: () => context.go('/courses'),
             ),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: TextStyle(
-                      color: context.palette.textStrong,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    subtitle,
-                    style: TextStyle(
-                      color: context.palette.onLow,
-                      fontSize: 12,
-                    ),
-                  ),
-                ],
-              ),
+            // No count here on purpose: counting means reading the
+            // student's recent attempts, and home opens far more often
+            // than the notebook.
+            ListRow(
+              icon: Icons.replay_rounded,
+              iconColor: AppColors.wrong,
+              title: 'Mistakes notebook',
+              subtitle: 'Go back over questions you got wrong',
+              onTap: () => context.push('/mistakes'),
             ),
-            Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
+            ListRow(
+              icon: Icons.style_rounded,
+              iconColor: AppColors.secondary,
+              title: 'Review',
+              subtitle: 'Revision cards, saved lessons and notes',
+              onTap: () => context.go('/review'),
+            ),
+            ListRow(
+              icon: Icons.assignment_rounded,
+              iconColor: AppColors.accentBlue,
+              title: 'WAEC exam mode',
+              subtitle: 'Timed past-paper practice',
+              onTap: () => context.go('/waec'),
+            ),
           ],
         ),
-      ),
+      ],
     );
   }
 }
