@@ -14,6 +14,7 @@ import '../core/widgets/mastery_indicator.dart';
 import '../core/widgets/page_layout.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -29,13 +30,13 @@ class DashboardScreen extends ConsumerWidget {
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
 
     return Scaffold(
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('Dashboard'),
         // No hardcoded leading: this screen is the app's home ('/'), where
         // a back arrow pointing at '/' would be a no-op. Your profile used
         // to be an avatar here; it is the Me tab on a phone and the avatar
         // menu in the top bar on a wide screen.
-        actions: const [SearchAction(), SizedBox(width: 4)],
+        actions: const [SearchAction()],
       ),
       body: userDataAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),

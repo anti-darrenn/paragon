@@ -19,6 +19,7 @@ import 'studio/review_panels.dart';
 import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/admin` — the content studio's home.
 ///
@@ -57,7 +58,7 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('Content studio'),
         actions: [
           if (role == StaffRole.admin)

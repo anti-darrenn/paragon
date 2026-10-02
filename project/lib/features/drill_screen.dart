@@ -28,6 +28,7 @@ import '../core/theme/app_palette.dart';
 import '../core/learn/hints.dart';
 import '../core/widgets/hint_panel.dart';
 import '../core/widgets/question_image.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -241,7 +242,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     final access = ref.watch(drillAccessProvider(widget.topicId));
     if (!access.isAllowed) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Drill')),
+        appBar: ParagonAppBar(title: const Text('Drill')),
         body: _Locked(
           access: access,
           // Whether this topic actually HAS a lesson decides what the
@@ -267,7 +268,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     }
 
     final scaffold = Scaffold(
-      appBar: AppBar(title: const Text('Drill')),
+      appBar: ParagonAppBar(title: const Text('Drill')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
@@ -291,7 +292,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
               accent: AppColors.primary,
               isGuest: ref.watch(isGuestProvider),
               onPractiseAgain: _practiseAgain,
-              onDone: () => Navigator.of(context).pop(),
+              onDone: () => context.popOrGo(),
             );
           }
 

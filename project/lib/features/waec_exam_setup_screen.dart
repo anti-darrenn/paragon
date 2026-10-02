@@ -11,6 +11,7 @@ import '../core/widgets/load_error.dart';
 import 'exam_history.dart';
 import 'waec_exam_screen.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 /// Exam setup screen, spec §2.3.3 — year range, question count, timer,
 /// shuffle, and the dynamic availability label, scoped to whatever a
@@ -119,7 +120,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
     if (isGuest && _timerEnabled) _timerEnabled = false;
 
     return Scaffold(
-      appBar: AppBar(title: Text('$subjectName — Setup')),
+      appBar: ParagonAppBar(title: Text('$subjectName — Setup')),
       body: rangeAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(

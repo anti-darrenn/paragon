@@ -12,6 +12,7 @@ import '../study/cards/card_providers.dart';
 import '../study/cards/card_review_screen.dart' show cardsPath;
 import '../study/notes/study_providers.dart';
 import '../study/offline/saved_topics_store.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/review`: everything for going back over what you have learnt, in one
 /// place — the mistakes notebook, revision cards, saved lessons and
@@ -32,9 +33,9 @@ class ReviewScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('Review'),
-        actions: const [SearchAction(), SizedBox(width: 4)],
+        actions: const [SearchAction()],
       ),
       body: Center(
         child: ConstrainedBox(

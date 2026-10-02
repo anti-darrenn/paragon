@@ -7,6 +7,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/math_text.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// Reading settings — `/settings/reading`.
 ///
@@ -36,7 +37,7 @@ class ReadingSettingsScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Reading')),
+      appBar: ParagonAppBar(title: const Text('Reading')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(

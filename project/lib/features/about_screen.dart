@@ -7,6 +7,7 @@ import '../core/legal/legal_documents.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_palette.dart';
 import '../core/theme/app_theme.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 /// What Paragon is, where its questions come from, and how to reach us.
 ///
@@ -20,7 +21,7 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('About Paragon')),
+      appBar: ParagonAppBar(title: const Text('About Paragon')),
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 680),

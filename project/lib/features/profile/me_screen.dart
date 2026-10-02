@@ -13,6 +13,7 @@ import '../../core/widgets/user_avatar.dart';
 import '../dashboard_screen.dart';
 import '../onboarding/profile_form.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// Your own profile — `/me`.
 ///
@@ -50,7 +51,7 @@ class MeScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('Profile'),
         actions: [
           IconButton(

@@ -13,6 +13,7 @@ import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/question_image.dart';
 import '../../core/widgets/report_problem_button.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/mistakes/practice`: the notebook's questions again, one at a time,
 /// with immediate feedback, as in drill.
@@ -99,7 +100,7 @@ class _MistakesPracticeScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Practise mistakes')),
+      appBar: ParagonAppBar(title: const Text('Practise mistakes')),
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 760),
@@ -255,7 +256,7 @@ class _MistakesPracticeScreenState
           )
         else if (_saved)
           OutlinedButton(
-            onPressed: () => context.pop(),
+            onPressed: () => context.popOrGo(),
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 14),
             ),

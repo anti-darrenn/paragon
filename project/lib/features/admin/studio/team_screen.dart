@@ -9,6 +9,7 @@ import '../../../core/repositories/staff_invite_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/app_palette.dart';
+import '../../../core/widgets/nav/back_navigation.dart';
 
 /// `/admin/team`: who writes and reviews, and for which subjects. Admins
 /// only; the rules refuse everyone else.
@@ -104,7 +105,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
   Widget build(BuildContext context) {
     if (ref.watch(staffRoleProvider) != StaffRole.admin) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Team')),
+        appBar: ParagonAppBar(title: const Text('Team')),
         body: const Center(child: Text('Only an admin can manage the team.')),
       );
     }
@@ -115,7 +116,7 @@ class _TeamScreenState extends ConsumerState<TeamScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Team')),
+      appBar: ParagonAppBar(title: const Text('Team')),
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 720),

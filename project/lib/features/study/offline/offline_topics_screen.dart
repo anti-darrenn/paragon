@@ -6,6 +6,7 @@ import '../../../core/theme/app_theme.dart';
 import 'save_offline_button.dart' show kOfflineRemoveNote;
 import 'saved_topics_store.dart';
 import '../../../core/theme/app_palette.dart';
+import '../../../core/widgets/nav/back_navigation.dart';
 
 /// Saved for offline — `/settings/offline`.
 ///
@@ -23,7 +24,7 @@ class OfflineTopicsScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Saved for offline')),
+      appBar: ParagonAppBar(title: const Text('Saved for offline')),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(

@@ -14,6 +14,7 @@ import 'notes_widgets.dart';
 import 'study_models.dart';
 import 'study_providers.dart';
 import '../../../core/theme/app_palette.dart';
+import '../../../core/widgets/nav/back_navigation.dart';
 
 /// `/saved` — bookmarked lessons, bookmarked questions, and every note.
 class SavedScreen extends ConsumerWidget {
@@ -25,7 +26,7 @@ class SavedScreen extends ConsumerWidget {
       length: 3,
       child: Scaffold(
         backgroundColor: context.palette.background,
-        appBar: AppBar(
+        appBar: ParagonAppBar(
           backgroundColor: context.palette.background,
           title: const Text('Saved'),
           actions: const [RevisionCardsAction()],

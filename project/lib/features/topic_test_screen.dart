@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../core/learn/topic_test.dart';
 import '../core/models/question.dart';
@@ -21,6 +20,7 @@ import '../core/study/study_tool.dart';
 import 'lesson/lesson_nudge.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/question_image.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -186,7 +186,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
         ],
       ),
     );
-    if (leave == true && mounted) context.pop();
+    if (leave == true && mounted) context.popOrGo();
   }
 
   void _retake() {
@@ -216,7 +216,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     }
 
     final scaffold = Scaffold(
-      appBar: AppBar(title: const Text('Topic test')),
+      appBar: ParagonAppBar(title: const Text('Topic test')),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
@@ -229,7 +229,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
         data: (questions) {
           if (questions.isEmpty) {
             return _EmptyBank(
-              onBack: () => context.pop(),
+              onBack: () => context.popOrGo(),
             );
           }
           if (_submitted) {
@@ -240,7 +240,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
               saveFailed: _saveFailed,
               isGuest: isGuest,
               onRetake: _retake,
-              onDone: () => context.pop(),
+              onDone: () => context.popOrGo(),
             );
           }
           return Column(

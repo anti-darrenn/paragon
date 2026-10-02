@@ -12,6 +12,7 @@ import '../core/widgets/user_avatar.dart';
 import 'account/account_help.dart';
 import 'account/delete_account.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -35,7 +36,7 @@ class SettingsScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Settings')),
+      appBar: ParagonAppBar(title: const Text('Settings')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(

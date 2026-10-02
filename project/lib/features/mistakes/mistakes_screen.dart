@@ -13,6 +13,7 @@ import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/load_error.dart';
 import '../../core/widgets/question_image.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// The most a practice round takes from the notebook at once.
 const int kMistakesPracticeSize = 20;
@@ -39,7 +40,7 @@ class _MistakesScreenState extends ConsumerState<MistakesScreen> {
     final async = ref.watch(mistakesProvider);
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Mistakes notebook')),
+      appBar: ParagonAppBar(title: const Text('Mistakes notebook')),
       body: async.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(

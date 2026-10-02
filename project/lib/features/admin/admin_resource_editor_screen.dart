@@ -31,6 +31,7 @@ import 'studio/problems_panel.dart';
 import 'studio/review_panels.dart';
 import 'studio/studio_storage.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// Path of the editor for an existing resource — also the link in the
 /// draft-notification email (`tools/admin/notify_drafts.js`).
@@ -252,7 +253,7 @@ class _AdminResourceEditorScreenState
       },
       child: Scaffold(
         backgroundColor: context.palette.background,
-        appBar: AppBar(
+        appBar: ParagonAppBar(
           title: Text(
             _isNew ? 'New $noun' : 'Edit $noun',
             overflow: TextOverflow.ellipsis,

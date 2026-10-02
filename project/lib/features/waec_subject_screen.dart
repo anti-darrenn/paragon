@@ -9,6 +9,7 @@ import '../core/theme/app_colors.dart';
 import '../core/models/subject.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 class WaecSubjectScreen extends ConsumerWidget {
   const WaecSubjectScreen({super.key});
@@ -19,9 +20,9 @@ class WaecSubjectScreen extends ConsumerWidget {
     final isGuest = ref.watch(isGuestProvider);
 
     return Scaffold(
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('WAEC Prep'),
-        actions: const [SearchAction(), SizedBox(width: 4)],
+        actions: const [SearchAction()],
       ),
       body: subjectsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),

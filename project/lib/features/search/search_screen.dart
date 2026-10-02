@@ -6,6 +6,7 @@ import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import 'search_providers.dart';
 import 'search_results_view.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/search?q=` — every match, grouped. On a phone this is where the
 /// search icon leads; on a wide screen, where Enter in the top bar's
@@ -36,7 +37,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         titleSpacing: 0,
         title: TextField(
           key: const ValueKey('search.field'),

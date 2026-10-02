@@ -19,6 +19,7 @@ import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/question_image.dart';
+import '../core/widgets/nav/back_navigation.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -378,7 +379,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     final questions = session.questions;
 
     final scaffold = Scaffold(
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         leading: IconButton(
           icon: const Icon(Icons.close, size: 20),
           onPressed: _examSubmitted ? () => context.go('/waec') : _confirmExit,

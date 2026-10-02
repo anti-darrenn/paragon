@@ -13,6 +13,7 @@ import 'card_deck.dart';
 import 'card_providers.dart';
 import 'leitner.dart';
 import '../../../core/theme/app_palette.dart';
+import '../../../core/widgets/nav/back_navigation.dart';
 
 /// Route for a subject's revision cards.
 String cardsPath(String subjectId) => '/cards/$subjectId';
@@ -176,7 +177,7 @@ class _CardReviewScreenState extends ConsumerState<CardReviewScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         backgroundColor: context.palette.background,
         title: const Text('Revision cards'),
         actions: [
