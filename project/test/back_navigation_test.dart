@@ -30,7 +30,8 @@ void main() {
 
       walk(router.configuration.routes);
       return [
-        for (final p in paths) p.replaceAllMapped(RegExp(r':(\w+)'), (m) => 'x'),
+        for (final p in paths)
+          p.replaceAllMapped(RegExp(r':(\w+)'), (m) => 'x'),
       ];
     }
 
@@ -83,9 +84,7 @@ void main() {
       return router;
     }
 
-    testWidgets('a page opened directly still has a way back', (
-      tester,
-    ) async {
+    testWidgets('a page opened directly still has a way back', (tester) async {
       await pump(tester, '/mistakes');
       await tester.tap(find.byKey(const ValueKey('nav.back')));
       await tester.pumpAndSettle();

@@ -126,7 +126,8 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
           error: e,
-          onRetry: () => ref.invalidate(waecYearRangeProvider(widget.subjectId)),
+          onRetry: () =>
+              ref.invalidate(waecYearRangeProvider(widget.subjectId)),
         ),
         data: (range) {
           final (minYear, maxYear) = range;
@@ -174,10 +175,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                 SurfaceCard(child: _shuffleSection()),
               ],
               const SizedBox(height: 20),
-              if (isGuest) ...[
-                _guestUpsellChip(),
-                const SizedBox(height: 20),
-              ],
+              if (isGuest) ...[_guestUpsellChip(), const SizedBox(height: 20)],
               _startButton(isGuest, availableAsync),
               const SizedBox(height: kSectionGap + 8),
               ExamHistory(subjectId: widget.subjectId),
@@ -366,12 +364,16 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         if (!_timerEnabled)
           Text(
             'Untimed',
-            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           )
         else ...[
           Text(
             '$_timerMinutes minutes',
-            style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
           SliderTheme(
             data: SliderTheme.of(context).copyWith(
@@ -408,7 +410,9 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         Expanded(
           child: Text(
             'Shuffle questions',
-            style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
+            style: AppTheme.heading3.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
         ),
         Switch(

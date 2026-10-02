@@ -505,14 +505,13 @@ class _Divider extends StatelessWidget {
   const _Divider();
 
   @override
-  Widget build(BuildContext context) =>
-      Divider(
-        height: 1,
-        thickness: 1,
-        indent: 16,
-        endIndent: 16,
-        color: context.palette.border.withAlpha(150),
-      );
+  Widget build(BuildContext context) => Divider(
+    height: 1,
+    thickness: 1,
+    indent: 16,
+    endIndent: 16,
+    color: context.palette.border.withAlpha(150),
+  );
 }
 
 class _Row extends StatelessWidget {

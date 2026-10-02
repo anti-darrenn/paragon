@@ -39,8 +39,9 @@ void main() {
       _lesson('What is a wave?', 'Waves'),
     ];
 
-    List<String> titles(List<SearchItem> items) =>
-        [for (final i in items) i.title];
+    List<String> titles(List<SearchItem> items) => [
+      for (final i in items) i.title,
+    ];
 
     test('exact, then prefix, then word start, then inside a word', () {
       final r = searchCatalog('waves', corpus);
@@ -65,10 +66,9 @@ void main() {
     });
 
     test('every word must match, across title and where it sits', () {
-      expect(
-        titles(searchCatalog('indices mathematics', corpus).topics),
-        ['Indices'],
-      );
+      expect(titles(searchCatalog('indices mathematics', corpus).topics), [
+        'Indices',
+      ]);
       // CONTROL: "Indices" is in Mathematics, not Physics.
       expect(titles(searchCatalog('indices physics', corpus).topics), []);
     });

@@ -177,11 +177,11 @@ class _CourseCardState extends State<_CourseCard> {
           duration: const Duration(milliseconds: 140),
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: accent.withAlpha(
-              ((_isHovered ? 0.18 : 0.10) * 255).round(),
-            ),
+            color: accent.withAlpha(((_isHovered ? 0.18 : 0.10) * 255).round()),
             border: Border.all(
-              color: accent.withAlpha(((_isHovered ? 0.7 : 0.35) * 255).round()),
+              color: accent.withAlpha(
+                ((_isHovered ? 0.7 : 0.35) * 255).round(),
+              ),
             ),
             borderRadius: BorderRadius.circular(14),
           ),
@@ -268,7 +268,6 @@ class _CourseCardState extends State<_CourseCard> {
     );
   }
 }
-
 
 class _GroupLabel extends StatelessWidget {
   const _GroupLabel(this.text);

@@ -78,13 +78,19 @@ class _CoursesPanel extends ConsumerWidget {
       );
     }
 
-    final yours = [for (final c in catalog) if (mine.contains(c.slug)) c];
-    final others = [for (final c in catalog) if (!mine.contains(c.slug)) c]
-      ..sort((a, b) {
-        // Live courses first: something you can open beats a promise.
-        if (a.isLive != b.isLive) return a.isLive ? -1 : 1;
-        return a.name.compareTo(b.name);
-      });
+    final yours = [
+      for (final c in catalog)
+        if (mine.contains(c.slug)) c,
+    ];
+    final others =
+        [
+          for (final c in catalog)
+            if (!mine.contains(c.slug)) c,
+        ]..sort((a, b) {
+          // Live courses first: something you can open beats a promise.
+          if (a.isLive != b.isLive) return a.isLive ? -1 : 1;
+          return a.name.compareTo(b.name);
+        });
 
     Widget section(String title, List<CourseSummary> courses) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,

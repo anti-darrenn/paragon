@@ -226,9 +226,7 @@ void main() {
       expect(find.byKey(const ValueKey('menu.signOut')), findsOneWidget);
     });
 
-    testWidgets('a guest is offered saving, never signing out', (
-      tester,
-    ) async {
+    testWidgets('a guest is offered saving, never signing out', (tester) async {
       await _pump(tester, width: 1280, guest: true);
       await open(tester);
       expect(find.byKey(const ValueKey('menu.upgrade')), findsOneWidget);
@@ -361,9 +359,8 @@ void main() {
       router = container.read(appRouterProvider);
     });
 
-    StatefulShellRoute shell() => router.configuration.routes
-        .whereType<StatefulShellRoute>()
-        .single;
+    StatefulShellRoute shell() =>
+        router.configuration.routes.whereType<StatefulShellRoute>().single;
 
     Set<String> pathsIn(List<RouteBase> routes) => {
       for (final r in routes) ...[

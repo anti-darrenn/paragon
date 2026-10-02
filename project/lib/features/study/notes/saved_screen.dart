@@ -85,56 +85,63 @@ class _BookmarkList extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ref.watch(bookmarksProvider).when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (_, _) => _loadFailed(),
-      data: (all) {
-        final items = all.values.where((b) => b.kind == kind).toList()
-          ..sort(
-            (a, b) =>
-                (b.savedAt ?? DateTime(0)).compareTo(a.savedAt ?? DateTime(0)),
-          );
-        if (items.isEmpty) {
-          return _empty(
-            kind == BookmarkKind.lesson
-                ? 'No saved lessons yet. Tap the bookmark on a lesson to keep it here.'
-                : 'No saved questions yet. Tap the bookmark beside a question to keep it here.',
-          );
-        }
-        return ListView.separated(
-          padding: const EdgeInsets.symmetric(vertical: 8),
-          itemCount: items.length,
-          separatorBuilder: (_, _) => Divider(height: 1, color: context.palette.border),
-          itemBuilder: (context, i) {
-            final b = items[i];
-            return ListTile(
-              leading: Icon(
-                kind == BookmarkKind.lesson ? Icons.menu_book : Icons.help_outline,
-                color: context.palette.textSecondary,
-              ),
-              title: Text(
-                b.title.isEmpty ? 'Untitled' : b.title,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(color: context.palette.textPrimary),
-              ),
-              trailing: IconButton(
-                tooltip: 'Remove from saved',
-                icon: const Icon(Icons.bookmark, color: AppColors.primary),
-                onPressed: () => ref.read(bookmarksProvider.notifier).remove(b.key),
-              ),
-              onTap: () {
-                if (kind == BookmarkKind.lesson) {
-                  context.push(lessonPath(b.topicId, b.resourceId!));
-                } else {
-                  showSavedQuestion(context, b.questionId!);
-                }
+    return ref
+        .watch(bookmarksProvider)
+        .when(
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (_, _) => _loadFailed(),
+          data: (all) {
+            final items = all.values.where((b) => b.kind == kind).toList()
+              ..sort(
+                (a, b) => (b.savedAt ?? DateTime(0)).compareTo(
+                  a.savedAt ?? DateTime(0),
+                ),
+              );
+            if (items.isEmpty) {
+              return _empty(
+                kind == BookmarkKind.lesson
+                    ? 'No saved lessons yet. Tap the bookmark on a lesson to keep it here.'
+                    : 'No saved questions yet. Tap the bookmark beside a question to keep it here.',
+              );
+            }
+            return ListView.separated(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              itemCount: items.length,
+              separatorBuilder: (_, _) =>
+                  Divider(height: 1, color: context.palette.border),
+              itemBuilder: (context, i) {
+                final b = items[i];
+                return ListTile(
+                  leading: Icon(
+                    kind == BookmarkKind.lesson
+                        ? Icons.menu_book
+                        : Icons.help_outline,
+                    color: context.palette.textSecondary,
+                  ),
+                  title: Text(
+                    b.title.isEmpty ? 'Untitled' : b.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(color: context.palette.textPrimary),
+                  ),
+                  trailing: IconButton(
+                    tooltip: 'Remove from saved',
+                    icon: const Icon(Icons.bookmark, color: AppColors.primary),
+                    onPressed: () =>
+                        ref.read(bookmarksProvider.notifier).remove(b.key),
+                  ),
+                  onTap: () {
+                    if (kind == BookmarkKind.lesson) {
+                      context.push(lessonPath(b.topicId, b.resourceId!));
+                    } else {
+                      showSavedQuestion(context, b.questionId!);
+                    }
+                  },
+                );
               },
             );
           },
         );
-      },
-    );
   }
 }
 
@@ -152,29 +159,33 @@ Future<void> showSavedQuestion(BuildContext context, String questionId) {
       expand: false,
       initialChildSize: 0.7,
       maxChildSize: 0.95,
-      builder: (context, controller) => SavedQuestionView(
-        questionId: questionId,
-        controller: controller,
-      ),
+      builder: (context, controller) =>
+          SavedQuestionView(questionId: questionId, controller: controller),
     ),
   );
 }
 
 class SavedQuestionView extends ConsumerWidget {
-  const SavedQuestionView({super.key, required this.questionId, this.controller});
+  const SavedQuestionView({
+    super.key,
+    required this.questionId,
+    this.controller,
+  });
 
   final String questionId;
   final ScrollController? controller;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ref.watch(savedQuestionProvider(questionId)).when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (_, _) => _loadFailed(),
-      data: (q) => q == null
-          ? _empty('This question is no longer available.')
-          : _body(context, q),
-    );
+    return ref
+        .watch(savedQuestionProvider(questionId))
+        .when(
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (_, _) => _loadFailed(),
+          data: (q) => q == null
+              ? _empty('This question is no longer available.')
+              : _body(context, q),
+        );
   }
 
   Widget _body(BuildContext context, Question q) {
@@ -221,36 +232,39 @@ class _NotesList extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ref.watch(allNotesProvider).when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (_, _) => _loadFailed(),
-      data: (notes) {
-        if (notes.isEmpty) {
-          return _empty(
-            'No notes yet. Long-press a paragraph in any lesson to highlight it or add a note.',
-          );
-        }
-        // Grouped by topic, topics in order of their most recent note.
-        final byTopic = <String, List<LessonNote>>{};
-        for (final n in notes) {
-          byTopic.putIfAbsent(n.topicId, () => []).add(n);
-        }
-        return ListView(
-          padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
-          children: [
-            for (final e in byTopic.entries) ...[
-              const SizedBox(height: 12),
-              _TopicHeading(topicId: e.key),
-              for (final n in e.value)
-                NoteTile(
-                  note: n,
-                  onTap: () => context.push(lessonPath(n.topicId, n.resourceId)),
-                ),
-            ],
-          ],
+    return ref
+        .watch(allNotesProvider)
+        .when(
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (_, _) => _loadFailed(),
+          data: (notes) {
+            if (notes.isEmpty) {
+              return _empty(
+                'No notes yet. Long-press a paragraph in any lesson to highlight it or add a note.',
+              );
+            }
+            // Grouped by topic, topics in order of their most recent note.
+            final byTopic = <String, List<LessonNote>>{};
+            for (final n in notes) {
+              byTopic.putIfAbsent(n.topicId, () => []).add(n);
+            }
+            return ListView(
+              padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
+              children: [
+                for (final e in byTopic.entries) ...[
+                  const SizedBox(height: 12),
+                  _TopicHeading(topicId: e.key),
+                  for (final n in e.value)
+                    NoteTile(
+                      note: n,
+                      onTap: () =>
+                          context.push(lessonPath(n.topicId, n.resourceId)),
+                    ),
+                ],
+              ],
+            );
+          },
         );
-      },
-    );
   }
 }
 

@@ -100,9 +100,7 @@ class OfflineTopicsScreen extends ConsumerWidget {
                                 .remove(t.topicId);
                             if (!context.mounted) return;
                             ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-                              const SnackBar(
-                                content: Text(kOfflineRemoveNote),
-                              ),
+                              const SnackBar(content: Text(kOfflineRemoveNote)),
                             );
                           },
                         ),

@@ -20,12 +20,18 @@ String? parentPathFor(Uri uri) {
     ['subject', _, 'course'] => '/courses',
     ['subject', final id, 'course', 'topic', _] => '/subject/$id/course',
     ['subject', final id, 'course', 'challenge'] => '/subject/$id/course',
-    ['subject', final id, 'course', 'unit', _, 'test'] =>
-      '/subject/$id/course',
+    ['subject', final id, 'course', 'unit', _, 'test'] => '/subject/$id/course',
     // Drill and the topic test go back to their topic's page.
     ['subject', final id, 'unit', _, 'topic', final t] ||
-    ['subject', final id, 'unit', _, 'topic', final t, 'test'] =>
-      '/subject/$id/course/topic/$t',
+    [
+      'subject',
+      final id,
+      'unit',
+      _,
+      'topic',
+      final t,
+      'test',
+    ] => '/subject/$id/course/topic/$t',
     ['subject', final id, ...] => '/subject/$id/course',
     ['learn', ...] => '/courses',
 
@@ -34,8 +40,10 @@ String? parentPathFor(Uri uri) {
 
     // Review.
     ['mistakes', 'practice'] => '/mistakes',
-    ['mistakes'] || ['saved'] || ['cards', _] || ['settings', 'offline'] =>
-      '/review',
+    ['mistakes'] ||
+    ['saved'] ||
+    ['cards', _] ||
+    ['settings', 'offline'] => '/review',
 
     // Me.
     ['settings'] => '/me',
@@ -153,7 +161,8 @@ class ParagonAppBar extends StatelessWidget implements PreferredSizeWidget {
       // leaves only the inset the floating top bar needs.
       return SizedBox(height: MediaQuery.paddingOf(context).top);
     }
-    final back = leading ??
+    final back =
+        leading ??
         (automaticallyImplyLeading ? ParagonBackButton.maybe(context) : null);
     return AppBar(
       leading: back,

@@ -118,7 +118,9 @@ void main() {
           builder: (_, _, shell) => shell,
           branches: [
             StatefulShellBranch(
-              routes: [GoRoute(path: '/', builder: (_, _) => const Text('home'))],
+              routes: [
+                GoRoute(path: '/', builder: (_, _) => const Text('home')),
+              ],
             ),
             StatefulShellBranch(
               routes: [

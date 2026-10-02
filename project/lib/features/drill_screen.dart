@@ -244,8 +244,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     if (!access.isAllowed) {
       return Scaffold(
         appBar: ParagonAppBar(
-        title: SessionTitle(kind: 'Drill', topicId: widget.topicId),
-      ),
+          title: SessionTitle(kind: 'Drill', topicId: widget.topicId),
+        ),
         body: _Locked(
           access: access,
           // Whether this topic actually HAS a lesson decides what the

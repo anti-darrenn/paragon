@@ -16,7 +16,10 @@ import '../lesson/lesson_screen.dart' show lessonPath;
 /// read still contributes its course; search degrades, it does not fail.
 final searchCorpusProvider = FutureProvider<List<SearchItem>>((ref) async {
   final catalog = await ref.watch(courseCatalogProvider.future);
-  final live = [for (final c in catalog) if (c.isLive) c];
+  final live = [
+    for (final c in catalog)
+      if (c.isLive) c,
+  ];
   final indexes = await Future.wait([
     for (final c in live)
       ref

@@ -119,16 +119,17 @@ SearchResults searchCatalog(
   if (q.isEmpty) return SearchResults.empty;
   q = q.split(' ').map((w) => _queryAliases[w] ?? w).join(' ');
 
-  final ranked = <(int, SearchItem)>[
-    for (final item in corpus)
-      if (matchRank(q, item) case final rank?) (rank, item),
-  ]..sort((a, b) {
-      final byRank = a.$1.compareTo(b.$1);
-      if (byRank != 0) return byRank;
-      final byLength = a.$2.title.length.compareTo(b.$2.title.length);
-      if (byLength != 0) return byLength;
-      return a.$2.title.compareTo(b.$2.title);
-    });
+  final ranked =
+      <(int, SearchItem)>[
+        for (final item in corpus)
+          if (matchRank(q, item) case final rank?) (rank, item),
+      ]..sort((a, b) {
+        final byRank = a.$1.compareTo(b.$1);
+        if (byRank != 0) return byRank;
+        final byLength = a.$2.title.length.compareTo(b.$2.title.length);
+        if (byLength != 0) return byLength;
+        return a.$2.title.compareTo(b.$2.title);
+      });
 
   List<SearchItem> of(SearchKind kind) => [
     for (final (_, item) in ranked)
