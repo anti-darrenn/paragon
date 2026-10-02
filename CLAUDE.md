@@ -334,6 +334,18 @@ nothing when wide. `context.push` to a route in another branch shows it inside t
 current tab; use `go` to switch tabs. `analytics_binding.dart` reads the deepest leaf
 (`currentConfiguration.last`) — `matches.last` is the shell itself and logs nothing.
 
+**Back navigation and page building blocks.** Every screen's app bar is
+`ParagonAppBar` (`lib/core/widgets/nav/back_navigation.dart`), never a bare `AppBar`:
+its back arrow pops when there is history and otherwise goes to the page's parent from
+`parentPathFor(uri)`, so a page opened from a link, reload or search is never a dead end
+(`back_navigation_test.dart` walks every route). "Done"/"Back" buttons use
+`context.popOrGo()`, not `pop()`, which throws when there is nothing to pop. A new
+route needs a parent in `parentPathFor`. Tab roots pass `collapseWhenWide: true` and
+lead with a `PageIntro(wideOnly: true)`. Lay pages out with `lib/core/widgets/ui/ui.dart`
+(`PageBody`, `SectionHeader`, `SurfaceCard`, `ListRow`, `RowGroup`, `EmptyState`…) at
+`kPageMaxWidth`; component styling (buttons, fields, dialogs, snackbars, chips) comes
+from `AppTheme`, so don't restyle them inline.
+
 **Search** (`lib/core/search/search.dart`, pure; `features/search/`) covers courses,
 topics and lessons from the course catalog plus each live subject's `subjectIndex`
 document — one cached read per subject, never a collection scan. The top bar's Search
