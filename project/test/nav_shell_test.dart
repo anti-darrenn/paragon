@@ -5,12 +5,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:paragon/core/auth/staff_role.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:paragon/core/providers/connectivity_provider.dart';
+import 'package:paragon/core/repositories/course_repository.dart';
 import 'package:paragon/core/router/app_router.dart';
 import 'package:paragon/core/search/search.dart';
 import 'package:paragon/core/widgets/nav/app_shell.dart';
 import 'package:paragon/core/widgets/nav/bottom_tabs.dart';
 import 'package:paragon/core/widgets/nav/nav_destinations.dart';
 import 'package:paragon/core/widgets/nav/top_bar.dart';
+import 'package:paragon/features/lesson/continue_learning.dart';
 import 'package:paragon/features/search/search_providers.dart';
 
 /// A page that counts taps, so a test can tell whether its state survived.
@@ -64,11 +67,40 @@ GoRouter _shellRouter() => GoRouter(
   ],
 );
 
+const _catalog = [
+  CourseSummary(
+    key: 'maths',
+    slug: 'mathematics',
+    name: 'Mathematics',
+    blurb: '',
+    status: CourseStatus.live,
+    moduleCount: 8,
+    topicCount: 60,
+  ),
+  CourseSummary(
+    key: 'phys',
+    slug: 'physics',
+    name: 'Physics',
+    blurb: '',
+    status: CourseStatus.live,
+    moduleCount: 6,
+  ),
+  CourseSummary(
+    key: 'music',
+    slug: 'music',
+    name: 'Music',
+    blurb: '',
+    status: CourseStatus.planned,
+    moduleCount: 3,
+  ),
+];
+
 Future<GoRouter> _pump(
   WidgetTester tester, {
   required double width,
   StaffRole role = StaffRole.none,
   bool guest = false,
+  bool online = true,
   List<SearchItem> corpus = const [],
 }) async {
   tester.view.physicalSize = Size(width, 900);
@@ -85,6 +117,10 @@ Future<GoRouter> _pump(
         isGuestProvider.overrideWithValue(guest),
         staffRoleProvider.overrideWithValue(role),
         searchCorpusProvider.overrideWith((ref) async => corpus),
+        isOnlineProvider.overrideWith((ref) => Stream.value(online)),
+        continueLearningProvider.overrideWithValue(null),
+        courseCatalogProvider.overrideWith((ref) async => _catalog),
+        selectedSubjectSlugsProvider.overrideWithValue({'physics'}),
       ],
       child: MaterialApp.router(routerConfig: router),
     ),
@@ -209,20 +245,27 @@ void main() {
       ),
       SearchItem(kind: SearchKind.course, title: 'Physics', path: '/x'),
     ];
+    final field = find.byKey(const ValueKey('search.paletteField'));
 
-    testWidgets('typing shows matches; arrow and Enter open one', (
+    Future<void> openAndType(WidgetTester tester, String text) async {
+      await tester.tap(find.byKey(const ValueKey('topbar.search')));
+      await tester.pumpAndSettle();
+      await tester.enterText(field, text);
+      await tester.pumpAndSettle();
+    }
+
+    testWidgets('the search button opens a palette; arrow and Enter open', (
       tester,
     ) async {
       await _pump(tester, width: 1280, corpus: corpus);
-      await tester.tap(find.byKey(const ValueKey('topbar.search')));
-      await tester.enterText(find.byKey(const ValueKey('topbar.search')), 'mat');
-      await tester.pumpAndSettle();
+      await openAndType(tester, 'mat');
       expect(find.text('Physics'), findsNothing);
       expect(find.textContaining('hematics', findRichText: true), findsWidgets);
 
       await tester.sendKeyEvent(LogicalKeyboardKey.arrowDown);
       await tester.testTextInput.receiveAction(TextInputAction.search);
       await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('search.palette')), findsNothing);
       expect(find.text('course 0'), findsOneWidget);
     });
 
@@ -230,33 +273,76 @@ void main() {
       tester,
     ) async {
       await _pump(tester, width: 1280, corpus: corpus);
-      await tester.tap(find.byKey(const ValueKey('topbar.search')));
-      await tester.enterText(find.byKey(const ValueKey('topbar.search')), 'mat');
+      await openAndType(tester, 'mat');
       await tester.testTextInput.receiveAction(TextInputAction.search);
       await tester.pumpAndSettle();
       expect(find.text('search page'), findsOneWidget);
     });
 
-    testWidgets('Ctrl+K focuses the field from anywhere', (tester) async {
+    testWidgets('Ctrl+K opens the palette from anywhere', (tester) async {
       await _pump(tester, width: 1280, corpus: corpus);
-      final field = find.byKey(const ValueKey('topbar.search'));
-      bool focused() => tester.widget<TextField>(field).focusNode!.hasFocus;
-      expect(focused(), isFalse);
+      expect(find.byKey(const ValueKey('search.palette')), findsNothing);
       await tester.sendKeyDownEvent(LogicalKeyboardKey.controlLeft);
       await tester.sendKeyEvent(LogicalKeyboardKey.keyK);
       await tester.sendKeyUpEvent(LogicalKeyboardKey.controlLeft);
-      await tester.pump();
-      expect(focused(), isTrue);
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('search.palette')), findsOneWidget);
     });
 
-    testWidgets('a narrow wide window gets a search icon instead', (
+    testWidgets('CONTROL: K alone types nothing and opens nothing', (
       tester,
     ) async {
-      await _pump(tester, width: 860, corpus: corpus);
-      expect(find.byKey(const ValueKey('topbar.search')), findsNothing);
-      await tester.tap(find.byKey(const ValueKey('topbar.searchIcon')));
+      await _pump(tester, width: 1280, corpus: corpus);
+      await tester.sendKeyEvent(LogicalKeyboardKey.keyK);
       await tester.pumpAndSettle();
-      expect(find.text('search page'), findsOneWidget);
+      expect(find.byKey(const ValueKey('search.palette')), findsNothing);
+    });
+  });
+
+  group('top bar', () {
+    testWidgets('Courses opens a dropdown of every subject, yours first', (
+      tester,
+    ) async {
+      await _pump(tester, width: 1280);
+      await tester.tap(find.byKey(const ValueKey('topbar.courses')));
+      await tester.pumpAndSettle();
+      expect(find.text('YOUR SUBJECTS'), findsOneWidget);
+      expect(find.text('Coming soon'), findsOneWidget);
+
+      await tester.tap(find.byKey(const ValueKey('nav.course.mathematics')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('nav.coursesPanel')), findsNothing);
+      expect(find.text('course 0'), findsOneWidget);
+    });
+
+    testWidgets('a guest gets a Save progress button', (tester) async {
+      await _pump(tester, width: 1280, guest: true);
+      expect(find.text('Save progress'), findsOneWidget);
+    });
+
+    testWidgets('CONTROL: a student with no lesson yet gets no button', (
+      tester,
+    ) async {
+      await _pump(tester, width: 1280);
+      expect(find.byKey(const ValueKey('topbar.action')), findsNothing);
+    });
+
+    testWidgets('says so when offline', (tester) async {
+      await _pump(tester, width: 1280, online: false);
+      expect(find.byKey(const ValueKey('topbar.offline')), findsOneWidget);
+    });
+
+    testWidgets('CONTROL: says nothing when online', (tester) async {
+      await _pump(tester, width: 1280);
+      expect(find.byKey(const ValueKey('topbar.offline')), findsNothing);
+    });
+
+    testWidgets('pages scroll beneath the bar: their top inset includes it', (
+      tester,
+    ) async {
+      await _pump(tester, width: 1280);
+      final ctx = tester.element(find.text('home 0'));
+      expect(MediaQuery.paddingOf(ctx).top, kTopBarHeight);
     });
   });
 

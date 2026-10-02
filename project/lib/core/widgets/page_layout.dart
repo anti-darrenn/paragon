@@ -69,13 +69,23 @@ class SearchAction extends StatelessWidget {
 
 /// The phone header for a page that has no app bar of its own: back (or
 /// the logo, on a section's first page), a title, and search. Nothing at
-/// all on a wide screen, where the top bar already does all of it.
+/// on a wide screen but a spacer the height of the floating top bar.
 ///
 /// Always present in the tree, sized to zero when wide, so a page built
 /// on it keeps one tree shape across the breakpoint — the lesson page's
 /// video restarts if its player changes parent.
 class CompactPageBar extends StatelessWidget {
-  const CompactPageBar({super.key, this.title, this.fallbackPath});
+  const CompactPageBar({
+    super.key,
+    this.title,
+    this.fallbackPath,
+    this.reserveTopInset = true,
+  });
+
+  /// On a wide screen, take up the top bar's height so the page starts
+  /// below it. [ParagonPage] turns this off and pads its scroll view
+  /// instead, so its content scrolls under the translucent bar.
+  final bool reserveTopInset;
 
   /// Null shows the logo instead.
   final String? title;
@@ -87,7 +97,9 @@ class CompactPageBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (navLayoutFor(context) == NavLayout.topBar) {
-      return const SizedBox.shrink();
+      return SizedBox(
+        height: reserveTopInset ? MediaQuery.paddingOf(context).top : 0,
+      );
     }
     final canPop = Navigator.of(context).canPop();
     final showBack = canPop || fallbackPath != null;
@@ -148,16 +160,26 @@ class ParagonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // On a wide screen the top bar floats over the page; the content
+    // starts below it and scrolls beneath it. On a phone the compact bar
+    // above has already taken the status-bar inset.
+    final wide = navLayoutFor(context) == NavLayout.topBar;
+    final topInset = wide ? MediaQuery.paddingOf(context).top : 0.0;
     return Scaffold(
       backgroundColor: context.palette.background,
       body: Column(
         children: [
-          CompactPageBar(title: title, fallbackPath: fallbackPath),
+          CompactPageBar(
+            title: title,
+            fallbackPath: fallbackPath,
+            reserveTopInset: false,
+          ),
           Expanded(
             child: Scrollbar(
               controller: scrollController,
               child: SingleChildScrollView(
                 controller: scrollController,
+                padding: EdgeInsets.only(top: topInset),
                 child: ContentColumn(child: child),
               ),
             ),

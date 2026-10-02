@@ -2,12 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../core/learn/lesson_progress.dart';
 import '../core/providers/auth_provider.dart';
-import '../core/repositories/learn_progress_repository.dart';
-import '../core/repositories/learn_repository.dart';
-import '../core/repositories/learning_repository.dart';
-import 'lesson/lesson_screen.dart';
+import 'lesson/continue_learning.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
 import '../core/progress/mastery.dart';
@@ -386,29 +382,19 @@ class _ContinueLearning extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final recent = ref.watch(lessonProgressProvider).mostRecent;
-    if (recent == null) return const SizedBox.shrink();
-
-    final topic = ref.watch(topicByIdProvider(recent.topicId)).asData?.value;
-    final resources = ref
-        .watch(topicResourcesProvider(recent.topicId))
-        .asData
-        ?.value;
-    if (topic == null || resources == null) return const SizedBox.shrink();
-
-    final next = continueTarget(resources, recent.progress.completed);
-    final done = completedCount(resources, recent.progress.completed);
-    final total = availableCount(resources);
+    final c = ref.watch(continueLearningProvider);
+    if (c == null) return const SizedBox.shrink();
+    final next = c.next;
     final (title, subtitle, path) = next != null
         ? (
-            'Continue learning: ${topic.name}',
-            'Up next: ${next.title} · $done of $total done',
-            lessonPath(topic.id, next.id),
+            'Continue learning: ${c.topic.name}',
+            'Up next: ${next.title} · ${c.done} of ${c.total} done',
+            c.path,
           )
         : (
-            'You finished the ${topic.name} lesson',
+            'You finished the ${c.topic.name} lesson',
             'Take the topic test to unlock practice drills.',
-            '/subject/${topic.subjectId}/unit/${topic.unitId}/topic/${topic.id}/test',
+            c.path,
           );
 
     return Padding(
