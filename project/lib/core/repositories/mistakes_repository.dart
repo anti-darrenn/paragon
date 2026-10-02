@@ -74,6 +74,14 @@ class MistakeEntry {
   const MistakeEntry(this.mistake, this.question);
   final Mistake mistake;
   final Question question;
+
+  /// The subject the notebook files this under: the question's own, which
+  /// is current, rather than the one stamped on the attempt. Some old
+  /// attempts carry the id of a subject that has since been re-seeded and
+  /// deleted, and would otherwise show as "Other".
+  String get subjectId => question.subjectId.isNotEmpty
+      ? question.subjectId
+      : mistake.subjectId;
 }
 
 /// The signed-in student's open mistakes, newest first.
