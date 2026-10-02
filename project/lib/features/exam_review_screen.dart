@@ -17,6 +17,7 @@ import '../core/widgets/question_image.dart';
 import '../core/widgets/report_problem_button.dart';
 import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// `/waec/review/:examId`: a finished exam, marked.
 ///
@@ -96,7 +97,7 @@ class _ReviewState extends ConsumerState<_Review> {
 
     return Center(
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 760),
+        constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
           children: [

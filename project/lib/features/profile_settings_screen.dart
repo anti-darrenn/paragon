@@ -8,6 +8,7 @@ import '../core/theme/app_theme.dart';
 import 'onboarding/profile_form.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Edit the optional profile — `/settings/profile`.
 ///
@@ -69,7 +70,7 @@ class _ProfileSettingsScreenState extends ConsumerState<ProfileSettingsScreen> {
             ? const Center(child: CircularProgressIndicator())
             : Center(
                 child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 560),
+                  constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
                   child: Column(
                     children: [
                       Expanded(

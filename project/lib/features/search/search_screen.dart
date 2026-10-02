@@ -7,6 +7,7 @@ import '../../core/theme/app_theme.dart';
 import 'search_providers.dart';
 import 'search_results_view.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// `/search?q=` — every match, grouped. On a phone this is where the
 /// search icon leads; on a wide screen, where Enter in the top bar's
@@ -65,7 +66,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       ),
       body: Center(
         child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 760),
+          constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
           child: loading
               ? const Padding(
                   padding: EdgeInsets.only(top: 48),

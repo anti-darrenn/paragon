@@ -11,6 +11,7 @@ import '../account/security_screen.dart' show formatDay;
 import '../onboarding/username_input.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// `/settings/username` — change your @handle, once every 90 days.
 ///
@@ -137,7 +138,7 @@ class _UsernameSettingsScreenState
         child: SingleChildScrollView(
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 560),
+              constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(

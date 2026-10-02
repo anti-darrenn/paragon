@@ -59,10 +59,7 @@ class DashboardScreen extends ConsumerWidget {
               // The counters below are real, written to a real uid — and
               // that uid is easily lost. A guest watching them climb
               // deserves to know that before they find out by losing them.
-              if (isGuest) ...[
-                const GuestNotice(),
-                const SizedBox(height: 20),
-              ],
+              if (isGuest) ...[const GuestNotice(), const SizedBox(height: 20)],
               LayoutBuilder(
                 builder: (context, box) {
                   // Two columns once there is room: what to do next on the
@@ -217,49 +214,49 @@ class _SubjectProgressCard extends StatelessWidget {
     return SurfaceCard(
       onTap: () => context.go('/subject/${course.key}/course'),
       child: Row(
-          children: [
-            Container(
-              width: 4,
-              height: 36,
-              decoration: BoxDecoration(
-                color: accent,
-                borderRadius: BorderRadius.circular(2),
-              ),
+        children: [
+          Container(
+            width: 4,
+            height: 36,
+            decoration: BoxDecoration(
+              color: accent,
+              borderRadius: BorderRadius.circular(2),
             ),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    course.name,
-                    style: TextStyle(
-                      color: context.palette.textStrong,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14,
-                    ),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  course.name,
+                  style: TextStyle(
+                    color: context.palette.textStrong,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14,
                   ),
-                  const SizedBox(height: 2),
-                  Text(
-                    detail,
-                    style: TextStyle(
-                      color: progress.isEmpty || !course.isLive
-                          ? context.palette.onLow
-                          : accent,
-                      fontSize: 12,
-                    ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  detail,
+                  style: TextStyle(
+                    color: progress.isEmpty || !course.isLive
+                        ? context.palette.onLow
+                        : accent,
+                    fontSize: 12,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            if (levels.isNotEmpty) ...[
-              MasteryRing(
-                fraction: masteryFraction(levels),
-                accent: accent,
-                size: 40,
-              ),
-              const SizedBox(width: 6),
-            ],
+          ),
+          if (levels.isNotEmpty) ...[
+            MasteryRing(
+              fraction: masteryFraction(levels),
+              accent: accent,
+              size: 40,
+            ),
+            const SizedBox(width: 6),
+          ],
           Icon(Icons.chevron_right_rounded, color: context.palette.onLow),
         ],
       ),

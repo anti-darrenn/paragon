@@ -15,6 +15,7 @@ import 'study_models.dart';
 import 'study_providers.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import '../../../core/widgets/ui/ui.dart';
 
 /// `/saved` — bookmarked lessons, bookmarked questions, and every note.
 class SavedScreen extends ConsumerWidget {
@@ -63,20 +64,19 @@ class SavedScreen extends ConsumerWidget {
   }
 }
 
-Widget _empty(String text) => Builder(
-  builder: (context) => Center(
-    child: Padding(
-      padding: const EdgeInsets.all(32),
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+/// An empty tab: what goes here and how to put something in it.
+Widget _empty(String text, {IconData icon = Icons.bookmark_outline_rounded}) =>
+    Align(
+      alignment: Alignment.topCenter,
+      child: SingleChildScrollView(
+        child: EmptyState(icon: icon, title: 'Nothing here yet', message: text),
       ),
-    ),
-  ),
-);
+    );
 
-Widget _loadFailed() => _empty("Couldn't load these. Check your connection and try again.");
+Widget _loadFailed() => _empty(
+  "Couldn't load these. Check your connection and try again.",
+  icon: Icons.cloud_off_rounded,
+);
 
 class _BookmarkList extends ConsumerWidget {
   const _BookmarkList({required this.kind});

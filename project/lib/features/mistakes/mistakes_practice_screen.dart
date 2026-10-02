@@ -14,6 +14,7 @@ import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/question_image.dart';
 import '../../core/widgets/report_problem_button.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// `/mistakes/practice`: the notebook's questions again, one at a time,
 /// with immediate feedback, as in drill.
@@ -103,7 +104,7 @@ class _MistakesPracticeScreenState
       appBar: ParagonAppBar(title: const Text('Practise mistakes')),
       body: Center(
         child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 760),
+          constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
           child: _questions.isEmpty
               ? _Message(
                   text:

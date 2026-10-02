@@ -8,6 +8,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/page_layout.dart';
+import '../../core/widgets/ui/ui.dart';
 import '../study/cards/card_providers.dart';
 import '../study/cards/card_review_screen.dart' show cardsPath;
 import '../study/notes/study_providers.dart';
@@ -33,67 +34,62 @@ class ReviewScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: ParagonAppBar(
-        title: const Text('Review'),
-        actions: const [SearchAction()],
+      appBar: const ParagonAppBar(
+        title: Text('Review'),
+        collapseWhenWide: true,
+        actions: [SearchAction()],
       ),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 760),
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 40),
-            children: [
-              Text(
-                'Go back over what you have learnt. Short, regular review '
-                'is what makes it stick.',
-                style: AppTheme.bodyMd.copyWith(
-                  color: context.palette.textSecondary,
-                ),
-              ),
-              const SizedBox(height: 20),
-              _ReviewCard(
-                key: const ValueKey('review.mistakes'),
-                icon: Icons.replay_rounded,
-                accent: AppColors.wrong,
-                title: 'Mistakes notebook',
-                subtitle:
-                    'Questions you got wrong, with the working. '
-                    'Practise them until they leave.',
-                onTap: () => context.push('/mistakes'),
-              ),
-              const SizedBox(height: 12),
-              _CardsPanel(subjects: subjects),
-              const SizedBox(height: 12),
-              _ReviewCard(
-                key: const ValueKey('review.saved'),
-                icon: Icons.bookmark_outline_rounded,
-                accent: AppColors.accentBlue,
-                title: 'Saved',
-                subtitle: switch (bookmarks) {
-                  null || 0 => 'Lessons and questions you bookmark, '
-                      'and your notes',
-                  1 => '1 bookmark, and your notes',
-                  final n => '$n bookmarks, and your notes',
-                },
-                onTap: () => context.push('/saved'),
-              ),
-              const SizedBox(height: 12),
-              _ReviewCard(
-                key: const ValueKey('review.offline'),
-                icon: Icons.download_for_offline_outlined,
-                accent: AppColors.correct,
-                title: 'Saved for offline',
-                subtitle: switch (offline) {
-                  0 => 'Keep a topic on this device for when the '
-                      'connection drops',
-                  1 => '1 topic on this device',
-                  final n => '$n topics on this device',
-                },
-                onTap: () => context.push('/settings/offline'),
-              ),
-            ],
+      body: PageBody(
+        children: [
+          const PageIntro(
+            title: 'Review',
+            subtitle:
+                'Go back over what you have learnt. Short, regular '
+                'review is what makes it stick.',
           ),
-        ),
+          _ReviewCard(
+            key: const ValueKey('review.mistakes'),
+            icon: Icons.replay_rounded,
+            accent: AppColors.wrong,
+            title: 'Mistakes notebook',
+            subtitle:
+                'Questions you got wrong, with the working. '
+                'Practise them until they leave.',
+            onTap: () => context.push('/mistakes'),
+          ),
+          const SizedBox(height: 12),
+          _CardsPanel(subjects: subjects),
+          const SizedBox(height: 12),
+          _ReviewCard(
+            key: const ValueKey('review.saved'),
+            icon: Icons.bookmark_outline_rounded,
+            accent: AppColors.accentBlue,
+            title: 'Saved',
+            subtitle: switch (bookmarks) {
+              null || 0 =>
+                'Lessons and questions you bookmark, '
+                    'and your notes',
+              1 => '1 bookmark, and your notes',
+              final n => '$n bookmarks, and your notes',
+            },
+            onTap: () => context.push('/saved'),
+          ),
+          const SizedBox(height: 12),
+          _ReviewCard(
+            key: const ValueKey('review.offline'),
+            icon: Icons.download_for_offline_outlined,
+            accent: AppColors.correct,
+            title: 'Saved for offline',
+            subtitle: switch (offline) {
+              0 =>
+                'Keep a topic on this device for when the '
+                    'connection drops',
+              1 => '1 topic on this device',
+              final n => '$n topics on this device',
+            },
+            onTap: () => context.push('/settings/offline'),
+          ),
+        ],
       ),
     );
   }

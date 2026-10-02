@@ -9,6 +9,7 @@ import '../../core/theme/app_theme.dart';
 import 'reauth.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// `/settings/security` — how you sign in, and the controls that go with
 /// it: verify or change your email, change or add a password, link Google,
@@ -269,7 +270,7 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
           child: SingleChildScrollView(
             child: Center(
               child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 560),
+                constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 20, 20, 48),
                   child: Column(

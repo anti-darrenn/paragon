@@ -11,6 +11,7 @@ import '../onboarding/onboarding_scaffold.dart';
 import 'avatar_picker.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// Edit profile — `/settings/name`: avatar, display name and bio.
 ///
@@ -82,7 +83,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
         child: SingleChildScrollView(
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 560),
+              constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
                 child: Column(

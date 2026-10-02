@@ -12,6 +12,7 @@ import 'exam_history.dart';
 import 'waec_exam_screen.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Exam setup screen, spec §2.3.3 — year range, question count, timer,
 /// shuffle, and the dynamic availability label, scoped to whatever a
@@ -120,7 +121,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
     if (isGuest && _timerEnabled) _timerEnabled = false;
 
     return Scaffold(
-      appBar: ParagonAppBar(title: Text('$subjectName — Setup')),
+      appBar: ParagonAppBar(title: Text(subjectName)),
       body: rangeAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
@@ -153,28 +154,34 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
             }
           });
 
-          return SingleChildScrollView(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _yearRangeSection(minYear, maxYear),
-                const SizedBox(height: 24),
-                _questionCountSection(subjectName, availableAsync),
-                const SizedBox(height: 24),
-                _timerSection(isGuest),
-                const SizedBox(height: 24),
-                if (!isGuest) _shuffleSection(),
-                if (isGuest) ...[
-                  _guestUpsellChip(),
-                  const SizedBox(height: 24),
-                ],
-                const SizedBox(height: 8),
-                _startButton(isGuest, availableAsync),
-                const SizedBox(height: 32),
-                ExamHistory(subjectId: widget.subjectId),
+          return PageBody(
+            children: [
+              PageIntro(
+                title: 'Set up your exam',
+                subtitle:
+                    '$subjectName past questions, marked at the end like '
+                    'the real paper.',
+              ),
+              SurfaceCard(child: _yearRangeSection(minYear, maxYear)),
+              const SizedBox(height: 12),
+              SurfaceCard(
+                child: _questionCountSection(subjectName, availableAsync),
+              ),
+              const SizedBox(height: 12),
+              SurfaceCard(child: _timerSection(isGuest)),
+              if (!isGuest) ...[
+                const SizedBox(height: 12),
+                SurfaceCard(child: _shuffleSection()),
               ],
-            ),
+              const SizedBox(height: 20),
+              if (isGuest) ...[
+                _guestUpsellChip(),
+                const SizedBox(height: 20),
+              ],
+              _startButton(isGuest, availableAsync),
+              const SizedBox(height: kSectionGap + 8),
+              ExamHistory(subjectId: widget.subjectId),
+            ],
           );
         },
       ),

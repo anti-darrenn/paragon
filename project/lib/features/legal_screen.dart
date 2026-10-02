@@ -5,6 +5,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Renders a [LegalDocument] at `/privacy` or `/terms`.
 ///
@@ -45,7 +46,7 @@ class LegalScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Center(
               child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 720),
+                constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(24, 24, 24, 72),
                   child: Column(

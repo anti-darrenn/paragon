@@ -14,6 +14,7 @@ import 'card_providers.dart';
 import 'leitner.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/widgets/nav/back_navigation.dart';
+import '../../../core/widgets/ui/ui.dart';
 
 /// Route for a subject's revision cards.
 String cardsPath(String subjectId) => '/cards/$subjectId';
@@ -193,7 +194,7 @@ class _CardReviewScreenState extends ConsumerState<CardReviewScreen> {
         child: Align(
           alignment: Alignment.topCenter,
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 720),
+            constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
             child: body,
           ),
         ),

@@ -8,6 +8,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_palette.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// What Paragon is, where its questions come from, and how to reach us.
 ///
@@ -24,7 +25,7 @@ class AboutScreen extends StatelessWidget {
       appBar: ParagonAppBar(title: const Text('About Paragon')),
       body: Center(
         child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 680),
+          constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
           child: ListView(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
             children: [

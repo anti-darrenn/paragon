@@ -9,6 +9,7 @@ import '../core/theme/app_theme.dart';
 import '../core/widgets/subject_tile.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Change the subjects you study — `/settings/subjects`.
 ///
@@ -62,7 +63,7 @@ class _SubjectsSettingsScreenState
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 560),
+            constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
             child: catalogAsync.when(
               loading: () => const Center(child: CircularProgressIndicator()),
               error: (_, _) => Padding(
