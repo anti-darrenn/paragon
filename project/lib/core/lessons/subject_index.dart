@@ -14,6 +14,14 @@ import 'lesson_doc.dart';
 ///
 /// Bodies are kept as lesson-format source, so they render through the
 /// same renderer as the lesson they came from.
+///
+/// It is also the search index. Every topic of the subject has an entry
+/// (a topic with no published lesson has a name and nothing else), and
+/// each entry lists its openable lessons, so search finds topics and
+/// lessons across the app for one read per subject. Documents written
+/// before that have no `lessons` and only the topics with articles; they
+/// still parse, and "Rebuild all subjects" in the studio brings them up
+/// to date.
 class SubjectIndex {
   const SubjectIndex({required this.subjectId, required this.topics});
 
@@ -54,6 +62,7 @@ class TopicIndex {
     this.definitions = const [],
     this.formulas = const [],
     this.cards = const [],
+    this.lessons = const [],
   });
 
   final String topicId;
@@ -62,6 +71,11 @@ class TopicIndex {
   final List<IndexedFormula> formulas;
   final List<IndexedCard> cards;
 
+  /// The topic's openable published lessons, in order, for search.
+  final List<IndexedLesson> lessons;
+
+  /// No glossary, formula or card content. Such an entry is still kept:
+  /// its name and lessons are what search reads.
   bool get isEmpty => definitions.isEmpty && formulas.isEmpty && cards.isEmpty;
 
   Map<String, Object?> toMap() => {
@@ -69,6 +83,7 @@ class TopicIndex {
     'definitions': [for (final d in definitions) d.toMap()],
     'formulas': [for (final f in formulas) f.toMap()],
     'cards': [for (final c in cards) c.toMap()],
+    'lessons': [for (final l in lessons) l.toMap()],
   };
 
   factory TopicIndex.fromMap(String topicId, Map m) {
@@ -91,8 +106,35 @@ class TopicIndex {
       cards: [
         for (final e in list('cards')) IndexedCard.fromMap(e, topicId, name),
       ],
+      lessons: [
+        for (final e in list('lessons'))
+          if (IndexedLesson.fromMap(e) case final l when l.id.isNotEmpty) l,
+      ],
     );
   }
+}
+
+/// One lesson in a topic, as search lists it.
+class IndexedLesson {
+  const IndexedLesson({
+    required this.id,
+    required this.title,
+    required this.type,
+  });
+
+  final String id;
+  final String title;
+
+  /// `article`, `video` or `exercise`, as stored on the resource.
+  final String type;
+
+  Map<String, Object?> toMap() => {'id': id, 'title': title, 'type': type};
+
+  factory IndexedLesson.fromMap(Map m) => IndexedLesson(
+    id: asString(m['id']),
+    title: asString(m['title']),
+    type: asString(m['type'], fallback: 'article'),
+  );
 }
 
 /// Where an entry came from, so the student can open the lesson.
@@ -229,10 +271,14 @@ String _source(List<LessonBlock> blocks) =>
 /// [articles] is `(resourceId, body)` in lesson order. Definitions need a
 /// term, formulas a title, and cards both sides — incomplete blocks are
 /// skipped rather than indexed half-empty.
+///
+/// [lessons] passes straight through: it is the topic's list for search,
+/// not something extracted from the articles' text.
 TopicIndex extractTopicIndex({
   required String topicId,
   required String topicName,
   required List<(String, String)> articles,
+  List<IndexedLesson> lessons = const [],
 }) {
   final definitions = <IndexedDefinition>[];
   final formulas = <IndexedFormula>[];
@@ -325,5 +371,6 @@ TopicIndex extractTopicIndex({
     definitions: definitions,
     formulas: formulas,
     cards: cards,
+    lessons: lessons,
   );
 }

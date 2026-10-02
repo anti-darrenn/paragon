@@ -134,18 +134,91 @@ void main() {
       expect(index.topics['t1']!.topicName, 'Number bases');
     });
 
-    test('a topic with nothing published is removed from the index', () async {
+    test(
+      'a topic with nothing published keeps its name, and nothing else',
+      () async {
+        final db = FakeFirebaseFirestore();
+        await seed(db, 'live', 'published');
+        final repo = SubjectIndexRepository(db);
+        await repo.rebuildTopic(subjectId: 's1', topicId: 't1', topicName: 'N');
+        await db.doc('topics/t1/resources/live').update({'status': 'draft'});
+        await repo.rebuildTopic(subjectId: 's1', topicId: 't1', topicName: 'N');
+
+        final index = SubjectIndex.fromFirestore(
+          await db.doc('subjectIndex/s1').get(),
+        );
+        // Search still finds the topic by name...
+        expect(index.topics['t1']!.topicName, 'N');
+        // ...but the unpublished lesson is gone from everything.
+        expect(index.topics['t1']!.lessons, isEmpty);
+        expect(index.definitions, isEmpty);
+        expect(index.cards, isEmpty);
+      },
+    );
+
+    test('lessons lists openable published items of every type', () async {
       final db = FakeFirebaseFirestore();
-      await seed(db, 'live', 'published');
-      final repo = SubjectIndexRepository(db);
-      await repo.rebuildTopic(subjectId: 's1', topicId: 't1', topicName: 'N');
-      await db.doc('topics/t1/resources/live').update({'status': 'draft'});
-      await repo.rebuildTopic(subjectId: 's1', topicId: 't1', topicName: 'N');
+      await seed(db, 'article', 'published');
+      await seed(db, 'draft', 'draft');
+      // A video with no YouTube id cannot be opened, so is not listed.
+      await seed(db, 'novideo', 'published', type: 'video');
+      await SubjectIndexRepository(
+        db,
+      ).rebuildTopic(subjectId: 's1', topicId: 't1', topicName: 'N');
 
       final index = SubjectIndex.fromFirestore(
         await db.doc('subjectIndex/s1').get(),
       );
-      expect(index.topics, isEmpty);
+      final lessons = index.topics['t1']!.lessons;
+      expect(lessons.map((l) => l.id), ['article']);
+      expect(lessons.single.type, 'article');
+      expect(lessons.single.title, 'article');
+    });
+
+    test('rebuildSubject gives every named topic an entry', () async {
+      final db = FakeFirebaseFirestore();
+      await seed(db, 'live', 'published');
+      await SubjectIndexRepository(db).rebuildSubject(
+        subjectId: 's1',
+        topicNames: {'t1': 'Number bases', 't2': 'Empty topic'},
+      );
+
+      final index = SubjectIndex.fromFirestore(
+        await db.doc('subjectIndex/s1').get(),
+      );
+      expect(index.topics.keys, unorderedEquals(['t1', 't2']));
+      expect(index.topics['t2']!.topicName, 'Empty topic');
+      expect(index.topics['t2']!.lessons, isEmpty);
+      expect(index.topics['t1']!.lessons.map((l) => l.id), ['live']);
+    });
+  });
+
+  group('TopicIndex.fromMap', () {
+    test('a document written before lessons existed still parses', () {
+      final t = TopicIndex.fromMap('t1', {
+        'topicName': 'Old',
+        'definitions': [
+          {'term': 'T', 'body': 'B', 'resourceId': 'r'},
+        ],
+      });
+      expect(t.topicName, 'Old');
+      expect(t.definitions, hasLength(1));
+      expect(t.lessons, isEmpty);
+    });
+
+    test('CONTROL: lessons round-trip, and malformed rows are dropped', () {
+      final t = TopicIndex.fromMap('t1', {
+        'topicName': 'New',
+        'lessons': [
+          {'id': 'a', 'title': 'Intro', 'type': 'video'},
+          'not a map',
+          {'title': 'no id'},
+        ],
+      });
+      expect(t.lessons.map((l) => (l.id, l.title, l.type)), [
+        ('a', 'Intro', 'video'),
+      ]);
+      expect(TopicIndex.fromMap('t1', t.toMap()).lessons.single.id, 'a');
     });
   });
 }

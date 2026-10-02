@@ -16,8 +16,9 @@ class SubjectIndexRepository {
   DocumentReference<Map<String, dynamic>> _doc(String subjectId) =>
       _db.collection('subjectIndex').doc(subjectId);
 
-  /// Re-extracts one topic from its published articles and replaces its
-  /// entry (removing it when nothing is left). One small query plus one
+  /// Re-extracts one topic from its published lessons and replaces its
+  /// entry. The entry is kept even when nothing is published, since the
+  /// topic's name is still what search finds. One small query plus one
   /// write.
   Future<void> rebuildTopic({
     required String subjectId,
@@ -37,15 +38,17 @@ class SubjectIndexRepository {
       snap.docs.map(LearnResource.fromFirestore),
     );
     await _doc(subjectId).set({
-      'topics': {topicId: entry.isEmpty ? FieldValue.delete() : entry.toMap()},
+      'topics': {topicId: entry.toMap()},
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
   }
 
   /// Rebuilds a whole subject from scratch: one collection-group query for
   /// its published lessons, one write. For "Rebuild index" in the studio.
-  /// [topicNames] maps topic id to name; topics missing from it keep
-  /// their id as the name.
+  /// [topicNames] maps topic id to name and should hold **every** topic
+  /// of the subject: each one gets an entry, published lessons or not, so
+  /// search can find it. A topic with lessons but missing from the map
+  /// keeps its id as the name.
   Future<void> rebuildSubject({
     required String subjectId,
     required Map<String, String> topicNames,
@@ -61,13 +64,17 @@ class SubjectIndexRepository {
       byTopic.putIfAbsent(r.topicId, () => []).add(r);
     }
     final topics = <String, Object?>{};
-    byTopic.forEach((topicId, resources) {
-      resources.sort((a, b) => a.order.compareTo(b.order));
-      final entry = _entry(topicId, topicNames[topicId] ?? topicId, resources);
-      if (!entry.isEmpty) topics[topicId] = entry.toMap();
-    });
-    // Not a merge: a full rebuild must also drop topics that no longer
-    // have any published lesson.
+    for (final topicId in {...topicNames.keys, ...byTopic.keys}) {
+      final resources = byTopic[topicId] ?? <LearnResource>[]
+        ..sort((a, b) => a.order.compareTo(b.order));
+      topics[topicId] = _entry(
+        topicId,
+        topicNames[topicId] ?? topicId,
+        resources,
+      ).toMap();
+    }
+    // Not a merge: a full rebuild must also drop topics that have since
+    // been deleted.
     await _doc(
       subjectId,
     ).set({'topics': topics, 'updatedAt': FieldValue.serverTimestamp()});
@@ -84,6 +91,11 @@ class SubjectIndexRepository {
       for (final r in resources)
         if (r.type == LearnResourceType.article && r.status.isLive)
           (r.id, r.body),
+    ],
+    lessons: [
+      for (final r in resources)
+        if (r.status.isLive && r.isAvailable)
+          IndexedLesson(id: r.id, title: r.title, type: r.type.name),
     ],
   );
 }
