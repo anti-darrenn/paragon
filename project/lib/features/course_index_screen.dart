@@ -8,7 +8,7 @@ import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
-import '../core/widgets/app_top_nav.dart';
+import '../core/widgets/page_layout.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
 import 'study/cards/revision_cards_entry.dart';
@@ -20,8 +20,8 @@ import '../core/theme/app_palette.dart';
 /// its own topic grid, so a student sees the whole syllabus at once instead
 /// of drilling unit-by-unit. Topics link to the topic overview page.
 ///
-/// This is additive: `/subject/:subjectId` (UnitListScreen) is untouched
-/// and still works.
+/// It replaced the old unit and topic lists: `/subject/:subjectId` and
+/// `/subject/:subjectId/unit/:unitId` redirect here.
 class CourseIndexScreen extends ConsumerWidget {
   const CourseIndexScreen({super.key, required this.subjectKey});
 
@@ -44,6 +44,8 @@ class CourseIndexScreen extends ConsumerWidget {
         ref.watch(currentUserProvider) != null && !ref.watch(isGuestProvider);
 
     return ParagonPage(
+      title: courseAsync.asData?.value.name ?? 'Course',
+      fallbackPath: '/courses',
       child: courseAsync.when(
         loading: () =>
             const _CenteredMessage(child: CircularProgressIndicator()),

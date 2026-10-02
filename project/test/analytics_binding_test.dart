@@ -102,4 +102,55 @@ void main() {
 
     expect(logged, isNot(contains('/settings')));
   });
+
+  testWidgets('screens inside the app shell are logged by their pattern', (
+    tester,
+  ) async {
+    // The app's real shape since the navigation shell: tab screens nested
+    // in a StatefulShellRoute, focus screens beside it. The shell's own
+    // match is not a GoRoute, so reading the top-level match logged
+    // nothing for every tab screen.
+    final logged = <String>[];
+    final router = GoRouter(
+      initialLocation: '/',
+      routes: [
+        StatefulShellRoute.indexedStack(
+          builder: (_, _, shell) => shell,
+          branches: [
+            StatefulShellBranch(
+              routes: [GoRoute(path: '/', builder: (_, _) => const Text('home'))],
+            ),
+            StatefulShellBranch(
+              routes: [
+                GoRoute(path: '/courses', builder: (_, _) => const Text('all')),
+                GoRoute(
+                  path: '/subject/:subjectId/course',
+                  builder: (_, _) => const Text('course'),
+                ),
+              ],
+            ),
+          ],
+        ),
+        GoRoute(
+          path: '/subject/:subjectId/unit/:unitId/topic/:topicId',
+          builder: (_, _) => const Text('drill'),
+        ),
+      ],
+    );
+    await pump(tester, router);
+    final binding = AnalyticsBinding(onScreen: logged.add, router: router);
+    addTearDown(binding.dispose);
+
+    router.go('/subject/8fK2xQ/course');
+    await tester.pumpAndSettle();
+    // CONTROL: a route outside the shell, which the old lookup also found.
+    router.go('/subject/8fK2xQ/unit/u/topic/t');
+    await tester.pumpAndSettle();
+
+    expect(logged, [
+      '/',
+      '/subject/:subjectId/course',
+      '/subject/:subjectId/unit/:unitId/topic/:topicId',
+    ]);
+  });
 }

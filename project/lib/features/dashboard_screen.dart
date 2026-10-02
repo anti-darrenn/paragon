@@ -15,7 +15,7 @@ import '../core/theme/app_colors.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/mastery_indicator.dart';
-import '../core/widgets/user_avatar.dart';
+import '../core/widgets/page_layout.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 
@@ -36,20 +36,10 @@ class DashboardScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Dashboard'),
         // No hardcoded leading: this screen is the app's home ('/'), where
-        // a back arrow pointing at '/' would be a no-op. When it is reached
-        // by a push instead, Material's automaticallyImplyLeading supplies
-        // a real back button on its own.
-        // Your profile, which links on to settings. The avatar replaced a
-        // settings gear here, so settings stays one tap further than it
-        // was — a fair trade for a profile nobody could otherwise find.
-        actions: [
-          IconButton(
-            icon: const UserAvatar(size: 32),
-            tooltip: 'Your profile',
-            onPressed: () => context.push('/me'),
-          ),
-          const SizedBox(width: 4),
-        ],
+        // a back arrow pointing at '/' would be a no-op. Your profile used
+        // to be an avatar here; it is the Me tab on a phone and the avatar
+        // menu in the top bar on a wide screen.
+        actions: const [SearchAction(), SizedBox(width: 4)],
       ),
       body: userDataAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -159,9 +149,9 @@ class DashboardScreen extends ConsumerWidget {
                 _ActionCard(
                   icon: Icons.play_circle_filled_rounded,
                   iconColor: AppColors.primary,
-                  title: 'Back to Subjects',
-                  subtitle: 'Pick a topic and keep drilling',
-                  onTap: () => context.go('/subjects'),
+                  title: 'Browse courses',
+                  subtitle: 'Pick a topic and keep learning',
+                  onTap: () => context.go('/courses'),
                 ),
                 const SizedBox(height: 10),
                 // No count here on purpose: counting means reading the

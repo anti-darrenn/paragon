@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../core/widgets/page_layout.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/auth/guest_limits.dart';
@@ -18,7 +19,10 @@ class WaecSubjectScreen extends ConsumerWidget {
     final isGuest = ref.watch(isGuestProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('WAEC Prep')),
+      appBar: AppBar(
+        title: const Text('WAEC Prep'),
+        actions: const [SearchAction(), SizedBox(width: 4)],
+      ),
       body: subjectsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(

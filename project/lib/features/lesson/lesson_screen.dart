@@ -13,7 +13,7 @@ import '../../core/repositories/learn_repository.dart';
 import '../../core/repositories/learning_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
-import '../../core/widgets/app_top_nav.dart';
+import '../../core/widgets/page_layout.dart';
 import '../../core/study/study_dock.dart';
 import '../../core/study/study_tool.dart';
 import 'article_pane.dart';
@@ -125,7 +125,13 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       backgroundColor: context.palette.background,
       body: Column(
         children: [
-          const AppTopNav(),
+          // Zero-height on a wide screen, so the tree keeps one shape.
+          CompactPageBar(
+            title: topic?.name ?? 'Lesson',
+            fallbackPath: topic == null
+                ? '/courses'
+                : '/subject/${topic.subjectId}/course/topic/${topic.id}',
+          ),
           Expanded(
             child: resourcesAsync.when(
               loading: () => const Center(child: CircularProgressIndicator()),

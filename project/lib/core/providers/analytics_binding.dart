@@ -63,15 +63,19 @@ class AnalyticsBinding {
 
   /// The declared `path` of the deepest matched route.
   ///
+  /// `last`, not `matches.last`: inside the app shell the top-level match
+  /// is the shell route itself, and the screen is a leaf nested in it.
+  /// Reading `matches.last` there logged nothing for every screen in the
+  /// shell.
+  ///
   /// Wrapped in a try/catch on the same principle as `Analytics._log`:
   /// this runs on every navigation in the app, and no reporting concern is
   /// worth a thrown exception in the router's own listener.
   String? _currentRoutePattern() {
     try {
-      final matches = _router.routerDelegate.currentConfiguration.matches;
-      if (matches.isEmpty) return null;
-      final route = matches.last.route;
-      return route is GoRoute ? route.path : null;
+      final config = _router.routerDelegate.currentConfiguration;
+      if (config.matches.isEmpty) return null;
+      return config.last.route.path;
     } catch (_) {
       return null;
     }

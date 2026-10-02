@@ -9,7 +9,7 @@ import '../core/repositories/course_repository.dart';
 import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
-import '../core/widgets/app_top_nav.dart';
+import '../core/widgets/page_layout.dart';
 import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
 import 'study/offline/save_offline_button.dart';
@@ -42,6 +42,8 @@ class TopicOverviewScreen extends ConsumerWidget {
     final courseAsync = ref.watch(courseProvider(subjectKey));
 
     return ParagonPage(
+      title: courseAsync.asData?.value.name ?? 'Topic',
+      fallbackPath: '/subject/$subjectKey/course',
       child: courseAsync.when(
         loading: () => const Padding(
           padding: EdgeInsets.symmetric(vertical: 120),

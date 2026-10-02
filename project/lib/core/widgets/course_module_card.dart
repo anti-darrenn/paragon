@@ -9,7 +9,7 @@ import '../repositories/course_repository.dart';
 import '../repositories/progress_repository.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_theme.dart';
-import 'app_top_nav.dart';
+import 'page_layout.dart';
 import 'mastery_indicator.dart';
 import '../theme/app_palette.dart';
 
