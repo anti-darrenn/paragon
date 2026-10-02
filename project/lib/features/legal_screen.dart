@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 import '../core/legal/legal_documents.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Renders a [LegalDocument] at `/privacy` or `/terms`.
 ///
@@ -33,11 +34,11 @@ class LegalScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: Text(document.title),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, size: 20),
-          onPressed: () => context.canPop() ? context.pop() : context.go('/'),
+          onPressed: () => context.popOrGo(),
         ),
       ),
       body: SafeArea(
@@ -45,7 +46,7 @@ class LegalScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Center(
               child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 720),
+                constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(24, 24, 24, 72),
                   child: Column(

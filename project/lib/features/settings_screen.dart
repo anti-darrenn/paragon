@@ -12,6 +12,8 @@ import '../core/widgets/user_avatar.dart';
 import 'account/account_help.dart';
 import 'account/delete_account.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Account settings — identity summary, legal links, sign out, and
 /// account deletion.
@@ -35,17 +37,18 @@ class SettingsScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Settings')),
+      appBar: ParagonAppBar(title: const Text('Settings')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 560),
+              constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 60),
+                padding: const EdgeInsets.fromLTRB(20, 24, 20, 60),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    const GroupLabel('Account'),
                     _Card(
                       children: [
                         _ProfileHeader(
@@ -114,24 +117,29 @@ class SettingsScreen extends ConsumerWidget {
                     // "you can change these any time" had no way to be
                     // true — see subjects_settings_screen.dart.
                     if (!isGuest) ...[
+                      const GroupLabel('Your learning'),
                       _Card(
                         children: [
                           _LinkRow(
+                            icon: Icons.auto_stories_outlined,
                             label: 'Your subjects',
                             onTap: () => context.push('/settings/subjects'),
                           ),
                           const _Divider(),
                           _LinkRow(
+                            icon: Icons.badge_outlined,
                             label: 'About you',
                             onTap: () => context.push('/settings/profile'),
                           ),
                           const _Divider(),
                           _LinkRow(
+                            icon: Icons.lock_outline_rounded,
                             label: 'Sign-in and security',
                             onTap: () => context.push('/settings/security'),
                           ),
                           const _Divider(),
                           _LinkRow(
+                            icon: Icons.download_outlined,
                             label: 'Download your data',
                             onTap: () => context.push('/settings/export'),
                           ),
@@ -141,19 +149,23 @@ class SettingsScreen extends ConsumerWidget {
                     ],
 
                     // Per device, so guests get it too.
+                    const GroupLabel('This device'),
                     _Card(
                       children: [
                         _LinkRow(
+                          icon: Icons.text_fields_rounded,
                           label: 'Reading and data',
                           onTap: () => context.push('/settings/reading'),
                         ),
                         const _Divider(),
                         _LinkRow(
+                          icon: Icons.bookmark_outline_rounded,
                           label: 'Saved lessons, questions and notes',
                           onTap: () => context.push('/saved'),
                         ),
                         const _Divider(),
                         _LinkRow(
+                          icon: Icons.download_for_offline_outlined,
                           label: 'Saved for offline',
                           onTap: () => context.push('/settings/offline'),
                         ),
@@ -162,9 +174,11 @@ class SettingsScreen extends ConsumerWidget {
                     const SizedBox(height: 20),
 
                     if (isStaff) ...[
+                      const GroupLabel('Content team'),
                       _Card(
                         children: [
                           _LinkRow(
+                            icon: Icons.edit_note_rounded,
                             label: 'Content studio',
                             onTap: () => context.push('/admin'),
                           ),
@@ -173,24 +187,29 @@ class SettingsScreen extends ConsumerWidget {
                       const SizedBox(height: 20),
                     ],
 
+                    const GroupLabel('About and legal'),
                     _Card(
                       children: [
                         _LinkRow(
+                          icon: Icons.privacy_tip_outlined,
                           label: 'Privacy Policy',
                           onTap: () => context.push('/privacy'),
                         ),
                         const _Divider(),
                         _LinkRow(
+                          icon: Icons.description_outlined,
                           label: 'Terms of Service',
                           onTap: () => context.push('/terms'),
                         ),
                         const _Divider(),
                         _LinkRow(
+                          icon: Icons.info_outline_rounded,
                           label: 'About Paragon',
                           onTap: () => context.push('/about'),
                         ),
                         const _Divider(),
                         _LinkRow(
+                          icon: Icons.help_outline_rounded,
                           label: 'Help with your account',
                           onTap: () => showAccountHelp(
                             context,
@@ -421,12 +440,13 @@ class _Card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        border: Border.all(color: context.palette.border),
-        borderRadius: BorderRadius.circular(10),
+    return Material(
+      color: context.palette.surface,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppTheme.radiusMd + 2),
+        side: BorderSide(color: context.palette.border),
       ),
+      clipBehavior: Clip.antiAlias,
       child: Column(children: children),
     );
   }
@@ -485,8 +505,13 @@ class _Divider extends StatelessWidget {
   const _Divider();
 
   @override
-  Widget build(BuildContext context) =>
-      Divider(height: 1, thickness: 1, color: context.palette.border);
+  Widget build(BuildContext context) => Divider(
+    height: 1,
+    thickness: 1,
+    indent: 16,
+    endIndent: 16,
+    color: context.palette.border.withAlpha(150),
+  );
 }
 
 class _Row extends StatelessWidget {
@@ -590,19 +615,31 @@ class _EditableRow extends StatelessWidget {
 }
 
 class _LinkRow extends StatelessWidget {
-  const _LinkRow({required this.label, required this.onTap});
+  const _LinkRow({required this.label, required this.onTap, this.icon});
 
   final String label;
   final VoidCallback onTap;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        padding: EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: icon == null ? 16 : 11,
+        ),
         child: Row(
           children: [
+            if (icon != null) ...[
+              IconTile(
+                icon: icon!,
+                color: context.palette.textSecondary,
+                size: 32,
+              ),
+              const SizedBox(width: 14),
+            ],
             Expanded(
               child: Text(
                 label,

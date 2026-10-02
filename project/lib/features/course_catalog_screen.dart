@@ -6,7 +6,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
-import '../core/widgets/app_top_nav.dart';
+import '../core/widgets/page_layout.dart';
 import '../core/theme/app_palette.dart';
 
 /// Course catalog — `/courses`.
@@ -17,7 +17,8 @@ import '../core/theme/app_palette.dart';
 /// unreachable. Each card is tinted with that subject's colour from
 /// `AppColors.forSubject`, which is the same accent its course page uses.
 ///
-/// `/` (SubjectListScreen) is untouched and still lists the live subjects.
+/// The Courses tab's first page. It replaced the old subject list, whose
+/// URL (`/subjects`) now redirects here.
 class CourseCatalogScreen extends ConsumerWidget {
   const CourseCatalogScreen({super.key});
 
@@ -176,11 +177,11 @@ class _CourseCardState extends State<_CourseCard> {
           duration: const Duration(milliseconds: 140),
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: accent.withAlpha(
-              ((_isHovered ? 0.18 : 0.10) * 255).round(),
-            ),
+            color: accent.withAlpha(((_isHovered ? 0.18 : 0.10) * 255).round()),
             border: Border.all(
-              color: accent.withAlpha(((_isHovered ? 0.7 : 0.35) * 255).round()),
+              color: accent.withAlpha(
+                ((_isHovered ? 0.7 : 0.35) * 255).round(),
+              ),
             ),
             borderRadius: BorderRadius.circular(14),
           ),
@@ -267,7 +268,6 @@ class _CourseCardState extends State<_CourseCard> {
     );
   }
 }
-
 
 class _GroupLabel extends StatelessWidget {
   const _GroupLabel(this.text);

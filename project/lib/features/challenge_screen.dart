@@ -20,6 +20,8 @@ import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/load_error.dart';
 import '../core/widgets/question_image.dart';
 import 'exam_review_screen.dart' show ExamReviewCard;
+import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// A unit test (`/subject/:s/course/unit/:moduleId/test`) or the course
 /// challenge (`/subject/:s/course/challenge`). The rules are in
@@ -72,7 +74,7 @@ class ChallengeScreen extends ConsumerWidget {
                 return _Note(
                   text: 'There is nothing to test here yet.',
                   action: 'Back to the course',
-                  onAction: () => context.pop(),
+                  onAction: () => context.popOrGo(),
                 );
               }
               return _Sitting(
@@ -86,7 +88,7 @@ class ChallengeScreen extends ConsumerWidget {
     }
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: Text(title)),
+      appBar: ParagonAppBar(title: Text(title)),
       body: body,
     );
   }
@@ -270,7 +272,7 @@ class _SittingState extends ConsumerState<_Sitting> {
               ? _Note(
                   text: 'No questions could be found for this test.',
                   action: 'Back to the course',
-                  onAction: () => context.pop(),
+                  onAction: () => context.popOrGo(),
                 )
               : _sitting(context, questions),
         );
@@ -281,7 +283,7 @@ class _SittingState extends ConsumerState<_Sitting> {
     final last = _index == questions.length - 1;
     return Center(
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 760),
+        constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 40),
           children: [
@@ -360,7 +362,7 @@ class _SittingState extends ConsumerState<_Sitting> {
     final names = {for (final t in widget.topics) t.id: t.name};
     return Center(
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 760),
+        constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 24, 16, 40),
           children: [

@@ -6,6 +6,9 @@ import '../../../core/theme/app_theme.dart';
 import 'save_offline_button.dart' show kOfflineRemoveNote;
 import 'saved_topics_store.dart';
 import '../../../core/theme/app_palette.dart';
+import '../../../core/widgets/nav/back_navigation.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../core/widgets/ui/ui.dart';
 
 /// Saved for offline — `/settings/offline`.
 ///
@@ -23,11 +26,11 @@ class OfflineTopicsScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Saved for offline')),
+      appBar: ParagonAppBar(title: const Text('Saved for offline')),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 560),
+            constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
             child: ListView(
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 60),
               children: [
@@ -40,11 +43,16 @@ class OfflineTopicsScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 20),
                 if (topics.isEmpty)
-                  Text(
-                    'Nothing saved yet. Open a topic and choose '
-                    '"Save for offline".',
-                    style: AppTheme.bodyMd.copyWith(
-                      color: context.palette.textSecondary,
+                  EmptyState(
+                    icon: Icons.download_for_offline_outlined,
+                    title: 'No topics on this device',
+                    message:
+                        'Nothing saved yet. Open a topic and choose '
+                        '"Save for offline".',
+                    action: OutlinedButton.icon(
+                      onPressed: () => context.go('/courses'),
+                      icon: const Icon(Icons.auto_stories_outlined, size: 18),
+                      label: const Text('Browse courses'),
                     ),
                   )
                 else
@@ -52,7 +60,14 @@ class OfflineTopicsScreen extends ConsumerWidget {
                     Card(
                       color: context.palette.surface,
                       margin: const EdgeInsets.only(bottom: 10),
+                      clipBehavior: Clip.antiAlias,
                       child: ListTile(
+                        contentPadding: const EdgeInsets.fromLTRB(16, 6, 8, 6),
+                        leading: const IconTile(
+                          icon: Icons.download_done_rounded,
+                          color: AppColors.correct,
+                          size: 36,
+                        ),
                         key: ValueKey('offline.row.${t.topicId}'),
                         onTap: t.courseKey.isEmpty
                             ? null
@@ -85,9 +100,7 @@ class OfflineTopicsScreen extends ConsumerWidget {
                                 .remove(t.topicId);
                             if (!context.mounted) return;
                             ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-                              const SnackBar(
-                                content: Text(kOfflineRemoveNote),
-                              ),
+                              const SnackBar(content: Text(kOfflineRemoveNote)),
                             );
                           },
                         ),

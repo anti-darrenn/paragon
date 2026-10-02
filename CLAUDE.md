@@ -125,7 +125,7 @@ Flutter web app (Riverpod v3 + go_router v17 + Firebase v4) over a Firestore con
 
 **Two parallel product modes that must never merge:**
 
-- Learning Mode — `/` → `/subject/:subjectId` → `.../unit/:unitId` → `.../topic/:topicId` (SubjectList → UnitList → TopicList → Drill). Immediate per-question feedback, attempts recorded with `source: 'drill'`.
+- Learning Mode — `/courses` → `/subject/:subjectId/course` → `.../course/topic/:topicId` (CourseCatalog → CourseIndex → TopicOverview), then drill at `/subject/:s/unit/:u/topic/:t`. Immediate per-question feedback, attempts recorded with `source: 'drill'`. The old SubjectList/UnitList/TopicList screens are deleted; `/subjects`, `/subject/:id` and `/subject/:id/unit/:u` redirect to the course pages.
 - WAEC Prep Mode — `/waec` → `/waec/:subjectId/exam` (WaecSubjectScreen → WaecExamScreen). Full exam run, results at the end, `source: 'waec'`.
 
 Never add WAEC questions to drill providers without filtering by `source`, and never add drill-style instant feedback to the exam flow. The review at `/waec/review/:examId` comes after submission and locks every answer; its grade is always labelled an estimate from objective questions only (`lib/core/exam/waec_grade.dart` — the bands are not official).
@@ -314,9 +314,48 @@ claimed an `is_guest` property that nothing ever set.
 
 **Data flow.** Screens are `ConsumerWidget`s that watch providers in `lib/core/repositories/learning_repository.dart` (`subjectsProvider`, `unitsProvider`, `topicsProvider`, `drillQuestionsProvider(topicId)`, `waecQuestionsProvider(subjectId)` — all `FutureProvider`/`.family` reading Firestore directly). Writes go through `AttemptRepository.record()` and `ProgressRepository.addSession()`. Auth/user streams live in `lib/core/providers/auth_provider.dart` (`authStateProvider`, `currentUserProvider`, `userDataProvider`, `weeklyAttemptsCountProvider`).
 
+**Navigation shell.** Every screen a student browses sits in one
+`StatefulShellRoute.indexedStack` (`AppShell`, `lib/core/widgets/nav/`): a top bar at
+≥760px and bottom tabs below it (Home, Courses, WAEC, Review, Me). The top bar pins the
+logo left and the account corner right ("Continue" / guest "Save progress", an offline
+chip, the avatar menu), with a centred island of Home, Courses ▾ (a dropdown of every
+subject), WAEC Prep, Review and Search. It is slightly translucent and floats over the
+pages: `AppShell` adds `kTopBarHeight` to the pages' top `MediaQuery` padding, which app
+bars respect and `ParagonPage` turns into scroll padding so its content scrolls under
+the bar. Branch order **is** `NavTab` order. Focus
+sessions — drill, topic test, unit test/challenge, WAEC exam, mistakes practice — and
+onboarding, sign-in, `/legal/accept`, `/account/*`, `/about` and the studio are outside
+the shell, full-window. `AppShell` keeps one tree shape across the breakpoint (the pages are always the
+stack's first child, and the top bar's slot is a positioned zero-size box on a phone —
+an unpositioned one would size the stack to nothing): re-parenting the branch navigators would
+rebuild every page and restart a lesson video. Pages with no app bar of their own use
+`ParagonPage`/`CompactPageBar` (`page_layout.dart`), which draws a phone header and
+nothing when wide. `context.push` to a route in another branch shows it inside the
+current tab; use `go` to switch tabs. `analytics_binding.dart` reads the deepest leaf
+(`currentConfiguration.last`) — `matches.last` is the shell itself and logs nothing.
+
+**Back navigation and page building blocks.** Every screen's app bar is
+`ParagonAppBar` (`lib/core/widgets/nav/back_navigation.dart`), never a bare `AppBar`:
+its back arrow pops when there is history and otherwise goes to the page's parent from
+`parentPathFor(uri)`, so a page opened from a link, reload or search is never a dead end
+(`back_navigation_test.dart` walks every route). "Done"/"Back" buttons use
+`context.popOrGo()`, not `pop()`, which throws when there is nothing to pop. A new
+route needs a parent in `parentPathFor`. Tab roots pass `collapseWhenWide: true` and
+lead with a `PageIntro(wideOnly: true)`. Lay pages out with `lib/core/widgets/ui/ui.dart`
+(`PageBody`, `SectionHeader`, `SurfaceCard`, `ListRow`, `RowGroup`, `EmptyState`…) at
+`kPageMaxWidth`; component styling (buttons, fields, dialogs, snackbars, chips) comes
+from `AppTheme`, so don't restyle them inline.
+
+**Search** (`lib/core/search/search.dart`, pure; `features/search/`) covers courses,
+topics and lessons from the course catalog plus each live subject's `subjectIndex`
+document — one cached read per subject, never a collection scan. The top bar's Search
+opens a palette over the page (also Ctrl/⌘+K from anywhere; arrows, Enter, Esc); `/search?q=` is the full page and
+the phone's way in. Nothing about searches is stored or logged.
+
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
-`app_router.dart` is the only file in `lib/core/router/`. The old route-tree sketches
+`app_router.dart` is the only file in `lib/core/router/`. The top nav that used to
+live in `app_top_nav.dart` is now the shell's `TopBar`; that file is `page_layout.dart`. The old route-tree sketches
 (`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
 older doc mentions them, it is out of date.
 
@@ -344,9 +383,13 @@ glossary all use it.
 
 **`subjectIndex/{subjectId}`** is one document per subject holding the
 definitions, formulas and revision cards extracted from **published**
-articles. A student gets the glossary, formula sheet and card deck for one
-read. It is rebuilt per topic on publish, unpublish and delete, and per
-subject by "Rebuild glossary & cards". Card ids are `topic:resource:key`
+articles, and — for search — an entry for **every** topic (name-only when
+nothing is published) with `lessons: [{id, title, type}]` for its openable
+published items. A student gets the glossary, formula sheet and card deck
+for one read. It is rebuilt per topic on publish, unpublish and delete, per
+subject by "Rebuild search, glossary & cards", and for every subject by
+"Rebuild all subjects" — run that once after the search change deploys, then
+check a production document actually has `lessons`. Card ids are `topic:resource:key`
 with dots replaced, because they are map keys in `study/{uid}.cards`.
 
 **Study tools** go through `StudyDock`, which wraps the lesson, drill,

@@ -19,6 +19,7 @@ import 'studio/review_panels.dart';
 import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/admin` — the content studio's home.
 ///
@@ -57,7 +58,7 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('Content studio'),
         actions: [
           if (role == StaffRole.admin)
@@ -300,24 +301,28 @@ class _MapSummary extends ConsumerStatefulWidget {
 class _MapSummaryState extends ConsumerState<_MapSummary> {
   bool _rebuilding = false;
 
-  Future<void> _rebuild() async {
+  Future<void> _rebuild({required bool all}) async {
     setState(() => _rebuilding = true);
     try {
-      final units = await ref.read(unitsProvider(widget.subjectId).future);
-      final names = <String, String>{};
-      for (final u in units) {
-        for (final Topic t in await ref.read(topicsProvider(u.id).future)) {
-          names[t.id] = t.name;
-        }
+      final access = ref.read(staffAccessProvider);
+      final subjectIds = all
+          ? [
+              for (final s in await ref.read(subjectsProvider.future))
+                if (access.roleIn(s.id).canReview) s.id,
+            ]
+          : [widget.subjectId];
+      for (final id in subjectIds) {
+        await _rebuildSubject(id);
       }
-      await ref
-          .read(subjectIndexRepositoryProvider)
-          .rebuildSubject(subjectId: widget.subjectId, topicNames: names);
-      ref.invalidate(subjectIndexProvider(widget.subjectId));
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Glossary, formulas and cards rebuilt.'),
+          SnackBar(
+            content: Text(
+              all
+                  ? 'Rebuilt ${subjectIds.length} subjects: search, glossary '
+                        'and cards.'
+                  : 'Search, glossary, formulas and cards rebuilt.',
+            ),
           ),
         );
       }
@@ -330,6 +335,22 @@ class _MapSummaryState extends ConsumerState<_MapSummary> {
     } finally {
       if (mounted) setState(() => _rebuilding = false);
     }
+  }
+
+  /// Every topic of the subject is named, so each gets an index entry and
+  /// search can find it even before it has a lesson.
+  Future<void> _rebuildSubject(String subjectId) async {
+    final units = await ref.read(unitsProvider(subjectId).future);
+    final names = <String, String>{};
+    for (final u in units) {
+      for (final Topic t in await ref.read(topicsProvider(u.id).future)) {
+        names[t.id] = t.name;
+      }
+    }
+    await ref
+        .read(subjectIndexRepositoryProvider)
+        .rebuildSubject(subjectId: subjectId, topicNames: names);
+    ref.invalidate(subjectIndexProvider(subjectId));
   }
 
   @override
@@ -347,14 +368,22 @@ class _MapSummaryState extends ConsumerState<_MapSummary> {
           '$published published · $started with any content',
           style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
         ),
-        if (widget.canRebuild)
+        if (widget.canRebuild) ...[
           TextButton.icon(
-            onPressed: _rebuilding ? null : _rebuild,
+            onPressed: _rebuilding ? null : () => _rebuild(all: false),
             icon: const Icon(Icons.refresh_rounded, size: 18),
             label: Text(
-              _rebuilding ? 'Rebuilding…' : 'Rebuild glossary & cards',
+              _rebuilding ? 'Rebuilding…' : 'Rebuild search, glossary & cards',
             ),
           ),
+          // Once after the search index gained topics and lessons, and
+          // whenever topics are renamed or added outside the studio.
+          TextButton.icon(
+            onPressed: _rebuilding ? null : () => _rebuild(all: true),
+            icon: const Icon(Icons.sync_rounded, size: 18),
+            label: const Text('Rebuild all subjects'),
+          ),
+        ],
       ],
     );
   }

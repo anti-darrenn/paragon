@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../core/onboarding/onboarding_step.dart';
 import '../../core/providers/auth_provider.dart';
@@ -11,6 +10,8 @@ import '../../core/theme/app_theme.dart';
 import '../account/security_screen.dart' show formatDay;
 import '../onboarding/username_input.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// `/settings/username` — change your @handle, once every 90 days.
 ///
@@ -108,7 +109,7 @@ class _UsernameSettingsScreenState
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('You are now @$raw.')));
-      context.pop();
+      context.popOrGo();
     } catch (_) {
       if (mounted) {
         _input.setSubmitError("Couldn't change it. Please try again.");
@@ -132,12 +133,12 @@ class _UsernameSettingsScreenState
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Username')),
+      appBar: ParagonAppBar(title: const Text('Username')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 560),
+              constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(

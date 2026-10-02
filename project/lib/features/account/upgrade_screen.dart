@@ -9,6 +9,7 @@ import '../../core/theme/app_theme.dart';
 import '../onboarding/onboarding_scaffold.dart';
 import 'guest_upgrade.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// `/account/upgrade` — a guest makes an account and keeps what they did.
 ///
@@ -105,7 +106,7 @@ class _UpgradeScreenState extends ConsumerState<UpgradeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Create an account')),
+      appBar: ParagonAppBar(title: const Text('Create an account')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(

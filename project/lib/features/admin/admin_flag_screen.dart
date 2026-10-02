@@ -9,6 +9,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/widgets/math_text.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/question_image.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// Deep link to one flagged question. The report digest email links here;
 /// keep `tools/admin/notify_drafts.js` in step if it changes.
@@ -97,7 +98,7 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Problem report')),
+      appBar: ParagonAppBar(title: const Text('Problem report')),
       body: SafeArea(
         child: async.when(
           loading: () => const Center(child: CircularProgressIndicator()),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
@@ -9,6 +8,8 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/subject_tile.dart';
 import '../core/theme/app_palette.dart';
+import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/ui/ui.dart';
 
 /// Change the subjects you study — `/settings/subjects`.
 ///
@@ -58,11 +59,11 @@ class _SubjectsSettingsScreenState
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Your subjects')),
+      appBar: ParagonAppBar(title: const Text('Your subjects')),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 560),
+            constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
             child: catalogAsync.when(
               loading: () => const Center(child: CircularProgressIndicator()),
               error: (_, _) => Padding(
@@ -118,7 +119,7 @@ class _SubjectsSettingsScreenState
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(const SnackBar(content: Text('Subjects updated.')));
-      context.pop();
+      context.popOrGo();
     } catch (_) {
       if (!mounted) return;
       setState(() => _error = "Couldn't save that. Please try again.");

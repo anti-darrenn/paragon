@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../core/learn/topic_test.dart';
 import '../core/models/question.dart';
@@ -21,6 +20,8 @@ import '../core/study/study_tool.dart';
 import 'lesson/lesson_nudge.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/question_image.dart';
+import '../core/widgets/nav/back_navigation.dart';
+import '../core/widgets/session_title.dart';
 
 /// The topic test — the gate that opens drill for one topic.
 ///
@@ -186,7 +187,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
         ],
       ),
     );
-    if (leave == true && mounted) context.pop();
+    if (leave == true && mounted) context.popOrGo();
   }
 
   void _retake() {
@@ -206,7 +207,9 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final questionsAsync = ref.watch(topicTestQuestionsProvider(widget.topicId));
+    final questionsAsync = ref.watch(
+      topicTestQuestionsProvider(widget.topicId),
+    );
     final isGuest = ref.watch(isGuestProvider);
 
     // Pinned before the first submit; see the field doc.
@@ -216,7 +219,9 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     }
 
     final scaffold = Scaffold(
-      appBar: AppBar(title: const Text('Topic test')),
+      appBar: ParagonAppBar(
+        title: SessionTitle(kind: 'Topic test', topicId: widget.topicId),
+      ),
       body: questionsAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
@@ -228,9 +233,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
         ),
         data: (questions) {
           if (questions.isEmpty) {
-            return _EmptyBank(
-              onBack: () => context.pop(),
-            );
+            return _EmptyBank(onBack: () => context.popOrGo());
           }
           if (_submitted) {
             return _Result(
@@ -240,7 +243,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
               saveFailed: _saveFailed,
               isGuest: isGuest,
               onRetake: _retake,
-              onDone: () => context.pop(),
+              onDone: () => context.popOrGo(),
             );
           }
           return Column(
@@ -347,12 +350,11 @@ class _Questions extends StatelessWidget {
           Text(
             'Score $kTopicTestPassPercent% or more to unlock drill practice. '
             'No feedback until the end. Unlimited retakes.',
-            style: AppTheme.caption.copyWith(color: context.palette.textSecondary),
+            style: AppTheme.caption.copyWith(
+              color: context.palette.textSecondary,
+            ),
           ),
-          if (isGuest) ...[
-            const SizedBox(height: 12),
-            const GuestNotice(),
-          ],
+          if (isGuest) ...[const SizedBox(height: 12), const GuestNotice()],
           const SizedBox(height: 16),
 
           FullLatexView(
@@ -376,7 +378,9 @@ class _Questions extends StatelessWidget {
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: isChosen ? AppColors.secondary : context.palette.outline,
+                    color: isChosen
+                        ? AppColors.secondary
+                        : context.palette.outline,
                     width: 1.5,
                   ),
                   borderRadius: BorderRadius.circular(10),
@@ -513,7 +517,9 @@ class _Result extends StatelessWidget {
           Text(
             passed ? 'Passed — drill unlocked' : 'Not passed yet',
             textAlign: TextAlign.center,
-            style: AppTheme.heading2.copyWith(color: context.palette.textPrimary),
+            style: AppTheme.heading2.copyWith(
+              color: context.palette.textPrimary,
+            ),
           ),
           const SizedBox(height: 8),
           Text(
@@ -559,10 +565,7 @@ class _Result extends StatelessWidget {
               ),
             ),
           ],
-          if (isGuest) ...[
-            const SizedBox(height: 20),
-            const GuestNotice(),
-          ],
+          if (isGuest) ...[const SizedBox(height: 20), const GuestNotice()],
 
           const SizedBox(height: 28),
           ElevatedButton(

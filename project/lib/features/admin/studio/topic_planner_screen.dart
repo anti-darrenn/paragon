@@ -17,6 +17,7 @@ import '../../lesson/video_pane.dart';
 import '../admin_home_screen.dart' show ResourceRow, StatusBadge;
 import '../admin_resource_editor_screen.dart';
 import '../../../core/theme/app_palette.dart';
+import '../../../core/widgets/nav/back_navigation.dart';
 
 String topicPlannerPath(String topicId) => '/admin/topic/$topicId';
 
@@ -164,7 +165,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: Text(topic?.name ?? 'Topic', overflow: TextOverflow.ellipsis),
         actions: [
           TextButton.icon(
@@ -334,7 +335,7 @@ class _StudentPreview extends StatelessWidget {
     final shown = items.where((r) => !r.isRevision).toList();
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: Text('Preview: $title', overflow: TextOverflow.ellipsis),
       ),
       body: Center(

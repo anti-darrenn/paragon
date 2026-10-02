@@ -44,16 +44,16 @@ import 'package:paragon/features/study/offline/offline_topics_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/study/cards/card_review_screen.dart';
 import 'package:paragon/features/study/notes/saved_screen.dart';
-import 'package:paragon/features/subject_list_screen.dart';
 import 'package:paragon/features/subjects_settings_screen.dart';
-import 'package:paragon/features/topic_list_screen.dart';
 import 'package:paragon/features/topic_test_screen.dart';
 import 'package:paragon/features/topic_overview_screen.dart';
-import 'package:paragon/features/unit_list_screen.dart';
 import 'package:paragon/features/waec_exam_screen.dart';
 import 'package:paragon/features/waec_exam_setup_screen.dart';
 import 'package:paragon/features/waec_subject_screen.dart';
 import 'package:paragon/features/welcome_screen.dart';
+import 'package:paragon/features/review/review_screen.dart';
+import 'package:paragon/features/search/search_screen.dart';
+import 'package:paragon/core/widgets/nav/app_shell.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -254,44 +254,208 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/onboarding/profile',
         builder: (context, state) => const OnboardingProfileScreen(),
       ),
-      // Home. The dashboard is the landing surface for a signed-in user:
-      // both the post-sign-in redirect above and a returning visitor
-      // opening the bare site root arrive here.
-      GoRoute(path: '/', builder: (context, state) => const DashboardScreen()),
-      GoRoute(
-        path: '/subjects',
-        builder: (context, state) => const SubjectListScreen(),
-      ),
-      GoRoute(
-        path: '/subject/:subjectId',
-        builder: (context, state) =>
-            UnitListScreen(subjectId: state.pathParameters['subjectId']!),
+      // ── The app shell ───────────────────────────────────────────────
+      // Every screen a student browses sits inside this route, under one
+      // navigation (top bar wide, bottom tabs on a phone — AppShell).
+      // Each branch is a tab with its own navigator and history; branch
+      // order is NavTab's order. Screens that take over the whole window —
+      // drill, tests, the WAEC exam, onboarding, the studio — are declared
+      // outside it, below.
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, shell) => AppShell(navigationShell: shell),
+        branches: [
+          // Home. The dashboard is the landing surface for a signed-in
+          // user: both the post-sign-in redirect above and a returning
+          // visitor opening the bare site root arrive here.
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/',
+                builder: (context, state) => const DashboardScreen(),
+              ),
+            ],
+          ),
+
+          // Courses. `:subjectId` accepts either a Firestore subject id or
+          // a catalog slug (e.g. /subject/chemistry/course), so the
+          // subjects with no Firestore document are still reachable — see
+          // course_repository.
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/courses',
+                builder: (context, state) => const CourseCatalogScreen(),
+              ),
+              GoRoute(
+                path: '/subject/:subjectId/course',
+                builder: (context, state) => CourseIndexScreen(
+                  subjectKey: state.pathParameters['subjectId']!,
+                ),
+              ),
+              GoRoute(
+                path: '/subject/:subjectId/course/topic/:topicId',
+                builder: (context, state) => TopicOverviewScreen(
+                  subjectKey: state.pathParameters['subjectId']!,
+                  topicKey: state.pathParameters['topicId']!,
+                ),
+              ),
+              // The lesson page: any published Learn item, with the
+              // topic's sequence beside it.
+              GoRoute(
+                path: '/learn/topic/:topicId/:resourceId',
+                builder: (context, state) => LessonScreen(
+                  topicId: state.pathParameters['topicId']!,
+                  resourceId: state.pathParameters['resourceId']!,
+                ),
+              ),
+              // Search finds courses first, so it lives with them. Usually
+              // pushed, which shows it over whichever tab is open.
+              GoRoute(
+                path: '/search',
+                builder: (context, state) => SearchScreen(
+                  initialQuery: state.uri.queryParameters['q'] ?? '',
+                ),
+              ),
+            ],
+          ),
+
+          // WAEC Prep. The exam itself is outside the shell.
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/waec',
+                builder: (context, state) => const WaecSubjectScreen(),
+              ),
+              GoRoute(
+                path: '/waec/:subjectId/setup',
+                builder: (context, state) => WaecExamSetupScreen(
+                  subjectId: state.pathParameters['subjectId']!,
+                ),
+              ),
+              // A finished exam, marked. Opened from the results with the
+              // exam in memory, or by id after a reload or from the
+              // subject's history.
+              GoRoute(
+                path: '/waec/review/:examId',
+                builder: (context, state) => ExamReviewScreen(
+                  examId: state.pathParameters['examId']!,
+                  initial: state.extra is ExamReview
+                      ? state.extra as ExamReview
+                      : null,
+                ),
+              ),
+            ],
+          ),
+
+          // Review: the hub, and what it opens. Practising from the
+          // notebook is outside the shell, like drill.
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/review',
+                builder: (context, state) => const ReviewScreen(),
+              ),
+              GoRoute(
+                path: '/mistakes',
+                builder: (context, state) => const MistakesScreen(),
+              ),
+              // Bookmarks and notes. Guests too: theirs are kept on the
+              // device.
+              GoRoute(
+                path: '/saved',
+                builder: (context, state) => const SavedScreen(),
+              ),
+              // A subject's revision cards. Guests too: their schedule is
+              // kept on the device.
+              GoRoute(
+                path: '/cards/:subjectId',
+                builder: (context, state) => CardReviewScreen(
+                  subjectId: state.pathParameters['subjectId']!,
+                ),
+              ),
+              // Topics saved for offline reading. Per device.
+              GoRoute(
+                path: '/settings/offline',
+                builder: (context, state) => const OfflineTopicsScreen(),
+              ),
+            ],
+          ),
+
+          // Me: your profile, and settings.
+          StatefulShellBranch(
+            routes: [
+              // Private: nobody else can open anyone's `/me`, because
+              // nobody else can read `users/{uid}`.
+              GoRoute(
+                path: '/me',
+                builder: (context, state) => const MeScreen(),
+              ),
+              GoRoute(
+                path: '/settings',
+                builder: (context, state) => const SettingsScreen(),
+              ),
+              // Editing your subjects after onboarding. Deliberately its
+              // own route rather than a re-entry into
+              // `/onboarding/subjects`, which the redirect above sends
+              // back to `/` for anyone who has finished the funnel.
+              GoRoute(
+                path: '/settings/subjects',
+                builder: (context, state) => const SubjectsSettingsScreen(),
+              ),
+              GoRoute(
+                path: '/settings/name',
+                builder: (context, state) => const EditProfileScreen(),
+              ),
+              // The optional profile. `/onboarding/profile` is still
+              // reachable (guard 3 above lets a finished user sit on the
+              // optional step) but nothing links there; this is the way
+              // in.
+              GoRoute(
+                path: '/settings/profile',
+                builder: (context, state) => const ProfileSettingsScreen(),
+              ),
+              GoRoute(
+                path: '/settings/username',
+                builder: (context, state) => const UsernameSettingsScreen(),
+              ),
+              GoRoute(
+                path: '/settings/export',
+                builder: (context, state) => const ExportScreen(),
+              ),
+              GoRoute(
+                path: '/settings/security',
+                builder: (context, state) => const SecurityScreen(),
+              ),
+              // Text size, line spacing, reading font, low-data mode. Per
+              // device.
+              GoRoute(
+                path: '/settings/reading',
+                builder: (context, state) => const ReadingSettingsScreen(),
+              ),
+            ],
+          ),
+        ],
       ),
 
-      // ── Course index ────────────────────────────────────────────────
-      // Additive: the Khan-Academy-style course pages sit alongside the
-      // UnitList/TopicList pair above, which is unchanged. `:subjectId`
-      // here accepts either a Firestore subject id or a catalog slug
-      // (e.g. /subject/chemistry/course), so the seven subjects with no
-      // Firestore document are still reachable — see course_repository.
-      // Declared before the `/unit/:unitId` child route so the literal
-      // `course` segment can't be swallowed as a unit id.
+      // ── Retired screens ─────────────────────────────────────────────
+      // The subject → unit → topic list screens were replaced by the
+      // course pages. Their URLs redirect so bookmarks still land.
+      GoRoute(path: '/subjects', redirect: (context, state) => '/courses'),
       GoRoute(
-        path: '/courses',
-        builder: (context, state) => const CourseCatalogScreen(),
+        path: '/subject/:subjectId',
+        redirect: (context, state) =>
+            '/subject/${state.pathParameters['subjectId']}/course',
       ),
       GoRoute(
-        path: '/subject/:subjectId/course',
-        builder: (context, state) =>
-            CourseIndexScreen(subjectKey: state.pathParameters['subjectId']!),
+        path: '/subject/:subjectId/unit/:unitId',
+        redirect: (context, state) =>
+            '/subject/${state.pathParameters['subjectId']}/course',
       ),
-      GoRoute(
-        path: '/subject/:subjectId/course/topic/:topicId',
-        builder: (context, state) => TopicOverviewScreen(
-          subjectKey: state.pathParameters['subjectId']!,
-          topicKey: state.pathParameters['topicId']!,
-        ),
-      ),
+
+      // ── Focus sessions ──────────────────────────────────────────────
+      // Outside the shell: no navigation while answering questions, and
+      // each keeps its own exit confirmation.
+      //
       // Unit tests and the course challenge: mixed-topic, marked at the
       // end. A unit test can open a topic's drill; see challenge.dart.
       GoRoute(
@@ -304,13 +468,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => ChallengeScreen(
           subjectKey: state.pathParameters['subjectId']!,
           moduleId: state.pathParameters['moduleId'],
-        ),
-      ),
-      GoRoute(
-        path: '/subject/:subjectId/unit/:unitId',
-        builder: (context, state) => TopicListScreen(
-          subjectId: state.pathParameters['subjectId']!,
-          unitId: state.pathParameters['unitId']!,
         ),
       ),
       GoRoute(
@@ -341,30 +498,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             '/subject/${state.pathParameters['subjectId']}'
             '/course/topic/${state.pathParameters['topicId']}',
       ),
-      // The lesson page: any published Learn item, with the topic's
-      // sequence beside it. The article-only URL it replaced redirects.
+      // The article-only lesson URL the lesson page replaced.
       GoRoute(
         path: '/learn/topic/:topicId/article/:resourceId',
         redirect: (context, state) => lessonPath(
           state.pathParameters['topicId']!,
           state.pathParameters['resourceId']!,
         ),
-      ),
-      GoRoute(
-        path: '/learn/topic/:topicId/:resourceId',
-        builder: (context, state) => LessonScreen(
-          topicId: state.pathParameters['topicId']!,
-          resourceId: state.pathParameters['resourceId']!,
-        ),
-      ),
-      GoRoute(
-        path: '/waec',
-        builder: (context, state) => const WaecSubjectScreen(),
-      ),
-      GoRoute(
-        path: '/waec/:subjectId/setup',
-        builder: (context, state) =>
-            WaecExamSetupScreen(subjectId: state.pathParameters['subjectId']!),
       ),
       GoRoute(
         path: '/waec/:subjectId/exam',
@@ -378,14 +518,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               : null,
         ),
       ),
-      // A finished exam, marked. Opened from the results with the exam in
-      // memory, or by id after a reload or from the subject's history.
+      // Practising from the mistakes notebook. Takes its questions as
+      // route `extra`; opened bare, it points back to the notebook.
       GoRoute(
-        path: '/waec/review/:examId',
-        builder: (context, state) => ExamReviewScreen(
-          examId: state.pathParameters['examId']!,
-          initial: state.extra is ExamReview
-              ? state.extra as ExamReview
+        path: '/mistakes/practice',
+        builder: (context, state) => MistakesPracticeScreen(
+          questions: state.extra is List<Question>
+              ? state.extra as List<Question>
               : null,
         ),
       ),
@@ -414,77 +553,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const UpgradeScreen(),
       ),
       GoRoute(path: '/about', builder: (context, state) => const AboutScreen()),
-      GoRoute(
-        path: '/settings',
-        builder: (context, state) => const SettingsScreen(),
-      ),
-      // Your own profile and progress. Private: nobody else can open
-      // anyone's `/me`, because nobody else can read `users/{uid}`.
-      GoRoute(path: '/me', builder: (context, state) => const MeScreen()),
-      // Editing your subjects after onboarding. Deliberately its own
-      // route rather than a re-entry into `/onboarding/subjects`, which
-      // the redirect above sends back to `/` for anyone who has finished
-      // the funnel — see subjects_settings_screen.dart.
-      GoRoute(
-        path: '/settings/subjects',
-        builder: (context, state) => const SubjectsSettingsScreen(),
-      ),
-      GoRoute(
-        path: '/settings/name',
-        builder: (context, state) => const EditProfileScreen(),
-      ),
-      // The optional profile, editable at last. `/onboarding/profile` is
-      // still reachable (guard 3 above lets a finished user sit on the
-      // optional step) but nothing links there; this is the way in.
-      GoRoute(
-        path: '/settings/profile',
-        builder: (context, state) => const ProfileSettingsScreen(),
-      ),
-      GoRoute(
-        path: '/settings/username',
-        builder: (context, state) => const UsernameSettingsScreen(),
-      ),
-      GoRoute(
-        path: '/settings/export',
-        builder: (context, state) => const ExportScreen(),
-      ),
-      GoRoute(
-        path: '/settings/security',
-        builder: (context, state) => const SecurityScreen(),
-      ),
-      // Text size, line spacing, reading font, low-data mode. Per device.
-      GoRoute(
-        path: '/settings/reading',
-        builder: (context, state) => const ReadingSettingsScreen(),
-      ),
-      // Bookmarks and notes. Guests too: theirs are kept on the device.
-      GoRoute(path: '/saved', builder: (context, state) => const SavedScreen()),
-      // The mistakes notebook, and practising from it. Practice takes its
-      // questions as route `extra`; opened bare, it points back here.
-      GoRoute(
-        path: '/mistakes',
-        builder: (context, state) => const MistakesScreen(),
-      ),
-      GoRoute(
-        path: '/mistakes/practice',
-        builder: (context, state) => MistakesPracticeScreen(
-          questions: state.extra is List<Question>
-              ? state.extra as List<Question>
-              : null,
-        ),
-      ),
-      // A subject's revision cards. Guests too: their schedule is kept on
-      // the device.
-      GoRoute(
-        path: '/cards/:subjectId',
-        builder: (context, state) =>
-            CardReviewScreen(subjectId: state.pathParameters['subjectId']!),
-      ),
-      // Topics saved for offline reading. Per device, like the above.
-      GoRoute(
-        path: '/settings/offline',
-        builder: (context, state) => const OfflineTopicsScreen(),
-      ),
 
       // ── Admin ───────────────────────────────────────────────────────
       // Gated by the `admin` claim — see the admin gate above. The edit

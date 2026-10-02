@@ -13,6 +13,8 @@ import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/load_error.dart';
 import '../../core/widgets/question_image.dart';
+import '../../core/widgets/ui/ui.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// The most a practice round takes from the notebook at once.
 const int kMistakesPracticeSize = 20;
@@ -39,7 +41,7 @@ class _MistakesScreenState extends ConsumerState<MistakesScreen> {
     final async = ref.watch(mistakesProvider);
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Mistakes notebook')),
+      appBar: ParagonAppBar(title: const Text('Mistakes notebook')),
       body: async.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => LoadError(
@@ -55,41 +57,35 @@ class _MistakesScreenState extends ConsumerState<MistakesScreen> {
                   for (final e in all)
                     if (e.subjectId == subjectId) e,
                 ];
-          return Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 760),
-              child: RefreshIndicator(
-                onRefresh: () => ref.refresh(mistakesProvider.future),
-                child: ListView(
-                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 40),
-                  children: [
-                    Text(
-                      'Questions whose latest answer was wrong, from your last '
-                      '$kMistakesWindow answers. Get one right, here or '
-                      'anywhere else, and it leaves the notebook.',
-                      style: AppTheme.bodyMd.copyWith(
-                        color: context.palette.textSecondary,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    if (all.isEmpty)
-                      const _Empty()
-                    else ...[
-                      if (subjectIds.length > 1)
-                        _SubjectFilter(
-                          subjectIds: subjectIds,
-                          selected: subjectId,
-                          onSelected: (id) => setState(() => _subjectId = id),
-                        ),
-                      _PractiseButton(
-                        questions: [for (final e in shown) e.question],
-                      ),
-                      const SizedBox(height: 16),
-                      for (final e in shown) _MistakeCard(entry: e),
-                    ],
-                  ],
+          return RefreshIndicator(
+            onRefresh: () => ref.refresh(mistakesProvider.future),
+            child: PageBody(
+              children: [
+                Text(
+                  'Questions whose latest answer was wrong, from your last '
+                  '$kMistakesWindow answers. Get one right, here or '
+                  'anywhere else, and it leaves the notebook.',
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.textSecondary,
+                  ),
                 ),
-              ),
+                const SizedBox(height: 16),
+                if (all.isEmpty)
+                  const _Empty()
+                else ...[
+                  if (subjectIds.length > 1)
+                    _SubjectFilter(
+                      subjectIds: subjectIds,
+                      selected: subjectId,
+                      onSelected: (id) => setState(() => _subjectId = id),
+                    ),
+                  _PractiseButton(
+                    questions: [for (final e in shown) e.question],
+                  ),
+                  const SizedBox(height: 16),
+                  for (final e in shown) _MistakeCard(entry: e),
+                ],
+              ],
             ),
           );
         },
@@ -103,32 +99,16 @@ class _Empty extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 48),
-      child: Column(
-        children: [
-          Icon(
-            Icons.check_circle_outline_rounded,
-            size: 48,
-            color: context.palette.textSecondary,
-          ),
-          const SizedBox(height: 12),
-          Text(
-            'Nothing to review',
-            style: AppTheme.heading3.copyWith(
-              color: context.palette.textPrimary,
-            ),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            'Questions you get wrong in practice, tests and exams collect '
-            'here, so you can come back to them.',
-            textAlign: TextAlign.center,
-            style: AppTheme.bodyMd.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-        ],
+    return EmptyState(
+      icon: Icons.check_circle_outline_rounded,
+      title: 'Nothing to review',
+      message:
+          'Questions you get wrong in practice, tests and exams collect '
+          'here, so you can come back to them.',
+      action: OutlinedButton.icon(
+        onPressed: () => context.go('/courses'),
+        icon: const Icon(Icons.auto_stories_outlined, size: 18),
+        label: const Text('Practise a topic'),
       ),
     );
   }
@@ -213,61 +193,67 @@ class _MistakeCard extends StatelessWidget {
     final q = entry.question;
     final picked = entry.mistake.selectedIndex;
     final base = AppTheme.bodyMd.copyWith(color: context.palette.onHigh);
-    return Container(
-      margin: const EdgeInsets.only(bottom: 14),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: context.palette.border),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            mistakeSourceLabel(entry.mistake.latest.source),
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-          const SizedBox(height: 8),
-          FullLatexView(
-            latex: q.text,
-            textStyle: AppTheme.bodyLg.copyWith(
-              color: context.palette.textPrimary,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          QuestionImage(assetId: q.imageId),
-          const SizedBox(height: 12),
-          for (var i = 0; i < q.options.length; i++)
-            if (i == q.correctIndex || i == picked)
-              AnswerOption(
-                index: i,
-                text: q.options[i],
-                state: i == q.correctIndex
-                    ? AnswerOptionState.correct
-                    : AnswerOptionState.wrong,
-              ),
-          if (q.explanation.trim().isNotEmpty || q.explanationImageId != null)
-            Theme(
-              data: Theme.of(
-                context,
-              ).copyWith(dividerColor: Colors.transparent),
-              child: ExpansionTile(
-                tilePadding: EdgeInsets.zero,
-                title: Text(
-                  'Show the working',
-                  style: AppTheme.bodyMd.copyWith(color: AppColors.primary),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 14),
+      child: SurfaceCard(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: context.palette.track,
+                  borderRadius: BorderRadius.circular(6),
                 ),
-                children: [
-                  if (q.explanation.trim().isNotEmpty)
-                    FullLatexView(latex: q.explanation, textStyle: base),
-                  QuestionImage(assetId: q.explanationImageId),
-                ],
+                child: Text(
+                  mistakeSourceLabel(entry.mistake.latest.source),
+                  style: AppTheme.caption.copyWith(
+                    color: context.palette.textSecondary,
+                  ),
+                ),
               ),
             ),
-        ],
+            const SizedBox(height: 8),
+            FullLatexView(
+              latex: q.text,
+              textStyle: AppTheme.bodyLg.copyWith(
+                color: context.palette.textPrimary,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            QuestionImage(assetId: q.imageId),
+            const SizedBox(height: 12),
+            for (var i = 0; i < q.options.length; i++)
+              if (i == q.correctIndex || i == picked)
+                AnswerOption(
+                  index: i,
+                  text: q.options[i],
+                  state: i == q.correctIndex
+                      ? AnswerOptionState.correct
+                      : AnswerOptionState.wrong,
+                ),
+            if (q.explanation.trim().isNotEmpty || q.explanationImageId != null)
+              Theme(
+                data: Theme.of(
+                  context,
+                ).copyWith(dividerColor: Colors.transparent),
+                child: ExpansionTile(
+                  tilePadding: EdgeInsets.zero,
+                  title: Text(
+                    'Show the working',
+                    style: AppTheme.bodyMd.copyWith(color: AppColors.primary),
+                  ),
+                  children: [
+                    if (q.explanation.trim().isNotEmpty)
+                      FullLatexView(latex: q.explanation, textStyle: base),
+                    QuestionImage(assetId: q.explanationImageId),
+                  ],
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }

@@ -9,10 +9,12 @@ import '../../core/repositories/progress_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/guest_notice.dart';
+import '../../core/widgets/ui/ui.dart';
 import '../../core/widgets/user_avatar.dart';
 import '../dashboard_screen.dart';
 import '../onboarding/profile_form.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
 
 /// Your own profile — `/me`.
 ///
@@ -48,9 +50,14 @@ class MeScreen extends ConsumerWidget {
     final created = data?['createdAt'];
     final joined = created is Timestamp ? joinedLabel(created.toDate()) : null;
 
+    final isStaff = ref.watch(staffRoleProvider).canWrite;
+    final name = displayName.isEmpty
+        ? (isGuest ? 'Guest' : 'Student')
+        : displayName;
+
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(
+      appBar: ParagonAppBar(
         title: const Text('Profile'),
         actions: [
           IconButton(
@@ -60,123 +67,145 @@ class MeScreen extends ConsumerWidget {
           ),
         ],
       ),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 640),
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 20, 16, 48),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: PageBody(
+        children: [
+          // ── Identity ─────────────────────────────────────────────────
+          SurfaceCard(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Row(
                   children: [
-                    // ── Identity ─────────────────────────────────────────
-                    const Center(child: UserAvatar(size: 96)),
-                    const SizedBox(height: 14),
-                    Text(
-                      displayName.isEmpty
-                          ? (isGuest ? 'Guest' : 'Student')
-                          : displayName,
-                      textAlign: TextAlign.center,
-                      style: AppTheme.heading2.copyWith(
-                        color: context.palette.textPrimary,
+                    const UserAvatar(size: 72),
+                    const SizedBox(width: 18),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            name,
+                            style: AppTheme.heading2.copyWith(
+                              color: context.palette.textStrong,
+                            ),
+                          ),
+                          if (username.isNotEmpty)
+                            Text(
+                              '@$username',
+                              style: AppTheme.bodyMd.copyWith(
+                                color: context.palette.textSecondary,
+                              ),
+                            ),
+                          if (joined != null && !isGuest)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: Text(
+                                joined,
+                                style: AppTheme.caption.copyWith(
+                                  color: context.palette.textSecondary,
+                                ),
+                              ),
+                            ),
+                        ],
                       ),
                     ),
-                    if (username.isNotEmpty) ...[
-                      const SizedBox(height: 2),
-                      Text(
-                        '@$username',
-                        textAlign: TextAlign.center,
-                        style: AppTheme.bodyMd.copyWith(
-                          color: context.palette.textSecondary,
-                        ),
-                      ),
-                    ],
-                    if (bio.isNotEmpty) ...[
-                      const SizedBox(height: 12),
-                      Text(
-                        bio,
-                        textAlign: TextAlign.center,
-                        style: AppTheme.bodyLg.copyWith(
-                          color: context.palette.textPrimary,
-                        ),
-                      ),
-                    ],
-                    if (joined != null && !isGuest) ...[
-                      const SizedBox(height: 8),
-                      Text(
-                        joined,
-                        textAlign: TextAlign.center,
-                        style: AppTheme.caption.copyWith(
-                          color: context.palette.textSecondary,
-                        ),
-                      ),
-                    ],
-                    const SizedBox(height: 16),
-                    if (isGuest)
-                      const GuestNotice()
-                    else
-                      Center(
-                        child: OutlinedButton.icon(
-                          onPressed: () => context.push('/settings/name'),
-                          icon: const Icon(Icons.edit_outlined, size: 18),
-                          label: Text(
-                            bio.isEmpty
-                                ? 'Edit profile · add a bio'
-                                : 'Edit profile',
-                          ),
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: context.palette.textPrimary,
-                            side: BorderSide(color: context.palette.border),
-                          ),
-                        ),
-                      ),
-                    const SizedBox(height: 28),
-
-                    // ── Numbers ──────────────────────────────────────────
-                    // Counts of work done, never a score against anyone.
-                    _Section('Your practice'),
-                    const SizedBox(height: 10),
-                    Wrap(
-                      spacing: 10,
-                      runSpacing: 10,
-                      children: [
-                        _Stat(
-                          value: '${progress.startedTopicCount}',
-                          label: 'Topics practised',
-                        ),
-                        _Stat(
-                          value: '${progress.completedTopicCount}',
-                          label: 'At proficient',
-                        ),
-                        _Stat(
-                          value: '${tests?.passedCount ?? 0}',
-                          label: 'Topic tests passed',
-                        ),
-                        _Stat(
-                          value: '${lessons.completedCount}',
-                          label: 'Lessons finished',
-                        ),
-                        _Stat(
-                          value: weekly == null ? '—' : '$weekly',
-                          label: 'Questions this week',
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 28),
-
-                    const YourSubjects(),
-
-                    if (!isGuest) ...[
-                      const SizedBox(height: 28),
-                      _AboutYou(profile: data?['profile']),
-                    ],
                   ],
                 ),
-              ),
+                if (bio.isNotEmpty) ...[
+                  const SizedBox(height: 16),
+                  Text(
+                    bio,
+                    style: AppTheme.bodyLg.copyWith(
+                      color: context.palette.textPrimary,
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 16),
+                if (isGuest)
+                  const GuestNotice()
+                else
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: OutlinedButton.icon(
+                      onPressed: () => context.push('/settings/name'),
+                      icon: const Icon(Icons.edit_outlined, size: 18),
+                      label: Text(
+                        bio.isEmpty
+                            ? 'Edit profile · add a bio'
+                            : 'Edit profile',
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        minimumSize: const Size(0, 40),
+                      ),
+                    ),
+                  ),
+              ],
             ),
           ),
-        ),
+          const SizedBox(height: kSectionGap),
+
+          // ── Numbers ──────────────────────────────────────────────────
+          // Counts of work done, never a score against anyone.
+          const SectionHeader('Your practice'),
+          _StatGrid(
+            stats: [
+              ('${progress.startedTopicCount}', 'Topics practised'),
+              ('${progress.completedTopicCount}', 'At proficient'),
+              ('${tests?.passedCount ?? 0}', 'Topic tests passed'),
+              ('${lessons.completedCount}', 'Lessons finished'),
+              (weekly == null ? '—' : '$weekly', 'Questions this week'),
+            ],
+          ),
+          const SizedBox(height: kSectionGap),
+
+          const YourSubjects(),
+
+          if (!isGuest) ...[
+            _AboutYou(profile: data?['profile']),
+            const SizedBox(height: kSectionGap),
+          ],
+
+          // ── Shortcuts ────────────────────────────────────────────────
+          // On a phone this tab is the way to everything the wide top
+          // bar's avatar menu holds.
+          const SectionHeader('Shortcuts'),
+          RowGroup(
+            children: [
+              ListRow(
+                icon: Icons.settings_outlined,
+                title: 'Settings',
+                subtitle: 'Account, subjects, privacy',
+                onTap: () => context.push('/settings'),
+              ),
+              ListRow(
+                icon: Icons.bookmark_outline_rounded,
+                iconColor: AppColors.accentBlue,
+                title: 'Saved',
+                subtitle: 'Bookmarks and notes',
+                onTap: () => context.push('/saved'),
+              ),
+              ListRow(
+                icon: Icons.text_fields_rounded,
+                title: 'Reading & display',
+                subtitle: 'Text size, font, low-data mode',
+                onTap: () => context.push('/settings/reading'),
+              ),
+              if (isStaff)
+                ListRow(
+                  icon: Icons.edit_note_rounded,
+                  iconColor: AppColors.secondary,
+                  title: 'Content studio',
+                  subtitle: 'Write and review lessons',
+                  onTap: () => context.push('/admin'),
+                ),
+              ListRow(
+                icon: Icons.info_outline_rounded,
+                title: 'About Paragon',
+                onTap: () => context.push('/about'),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
@@ -221,117 +250,106 @@ class _AboutYou extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            const Expanded(child: _Section('About you')),
-            TextButton(
-              onPressed: () => context.push('/settings/profile'),
-              child: Text(
-                rows.isEmpty ? 'Add' : 'Edit',
-                style: AppTheme.caption.copyWith(color: AppColors.primary),
+        SectionHeader(
+          'About you',
+          subtitle: 'Optional. Only you can see it.',
+          action: TextButton(
+            onPressed: () => context.push('/settings/profile'),
+            child: Text(rows.isEmpty ? 'Add' : 'Edit'),
+          ),
+        ),
+        if (rows.isEmpty)
+          SurfaceCard(
+            child: Text(
+              'Nothing added yet.',
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textSecondary,
               ),
             ),
-          ],
-        ),
-        const SizedBox(height: 6),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-          decoration: BoxDecoration(
-            color: context.palette.surface,
-            border: Border.all(color: context.palette.border),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: rows.isEmpty
-              ? Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10),
-                  child: Text(
-                    'Nothing added. All of it is optional, and only you can '
-                    'see it.',
-                    style: AppTheme.bodyMd.copyWith(
-                      color: context.palette.textSecondary,
-                    ),
+          )
+        else
+          RowGroup(
+            children: [
+              for (final (label, value) in rows)
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
                   ),
-                )
-              : Column(
-                  children: [
-                    for (final (label, value) in rows)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Text(
-                                label,
-                                style: AppTheme.bodyMd.copyWith(
-                                  color: context.palette.textSecondary,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              value,
-                              style: AppTheme.bodyMd.copyWith(
-                                color: context.palette.textPrimary,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          label,
+                          style: AppTheme.bodyMd.copyWith(
+                            color: context.palette.textSecondary,
+                          ),
                         ),
                       ),
-                  ],
+                      Text(
+                        value,
+                        style: AppTheme.bodyMd.copyWith(
+                          color: context.palette.textPrimary,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-        ),
+            ],
+          ),
       ],
     );
   }
 }
 
-class _Section extends StatelessWidget {
-  const _Section(this.title);
-  final String title;
+/// The practice counts as an even grid: as many columns as fit, every
+/// tile the same width, so a row never ends ragged.
+class _StatGrid extends StatelessWidget {
+  const _StatGrid({required this.stats});
+
+  final List<(String, String)> stats;
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
-    );
-  }
-}
-
-class _Stat extends StatelessWidget {
-  const _Stat({required this.value, required this.label});
-
-  final String value;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 148,
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: context.palette.surface,
-        border: Border.all(color: context.palette.border),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            value,
-            style: AppTheme.heading2.copyWith(
-              color: context.palette.textPrimary,
-            ),
-          ),
-          const SizedBox(height: 2),
-          Text(
-            label,
-            style: AppTheme.caption.copyWith(
-              color: context.palette.textSecondary,
-            ),
-          ),
-        ],
-      ),
+    return LayoutBuilder(
+      builder: (context, box) {
+        const gap = 10.0;
+        final columns = box.maxWidth >= 600 ? 5 : (box.maxWidth >= 380 ? 3 : 2);
+        final width = (box.maxWidth - gap * (columns - 1)) / columns;
+        return Wrap(
+          spacing: gap,
+          runSpacing: gap,
+          children: [
+            for (final (value, label) in stats)
+              SizedBox(
+                width: width,
+                child: SurfaceCard(
+                  padding: const EdgeInsets.all(14),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        value,
+                        style: AppTheme.heading1.copyWith(
+                          color: context.palette.textStrong,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        label,
+                        maxLines: 2,
+                        style: AppTheme.caption.copyWith(
+                          color: context.palette.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }

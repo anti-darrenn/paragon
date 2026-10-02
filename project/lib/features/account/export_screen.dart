@@ -10,6 +10,8 @@ import '../../core/repositories/account_repository.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/ui/ui.dart';
 
 /// `/settings/export` — download a copy of everything stored about you.
 ///
@@ -106,12 +108,12 @@ class _ExportScreenState extends ConsumerState<ExportScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: AppBar(title: const Text('Download your data')),
+      appBar: ParagonAppBar(title: const Text('Download your data')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 560),
+              constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
