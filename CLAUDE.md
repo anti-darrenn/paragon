@@ -316,12 +316,18 @@ claimed an `is_guest` property that nothing ever set.
 
 **Navigation shell.** Every screen a student browses sits in one
 `StatefulShellRoute.indexedStack` (`AppShell`, `lib/core/widgets/nav/`): a top bar at
-≥760px (logo, Home / Courses / WAEC Prep / Review, search, avatar menu) and bottom tabs
-below it (Home, Courses, WAEC, Review, Me). Branch order **is** `NavTab` order. Focus
+≥760px and bottom tabs below it (Home, Courses, WAEC, Review, Me). The top bar pins the
+logo left and the account corner right ("Continue" / guest "Save progress", an offline
+chip, the avatar menu), with a centred island of Home, Courses ▾ (a dropdown of every
+subject), WAEC Prep, Review and Search. It is slightly translucent and floats over the
+pages: `AppShell` adds `kTopBarHeight` to the pages' top `MediaQuery` padding, which app
+bars respect and `ParagonPage` turns into scroll padding so its content scrolls under
+the bar. Branch order **is** `NavTab` order. Focus
 sessions — drill, topic test, unit test/challenge, WAEC exam, mistakes practice — and
 onboarding, sign-in, `/legal/accept`, `/account/*`, `/about` and the studio are outside
-the shell, full-window. `AppShell` keeps one tree shape across the breakpoint (the top
-bar's slot is a zero-size box on a phone): re-parenting the branch navigators would
+the shell, full-window. `AppShell` keeps one tree shape across the breakpoint (the pages are always the
+stack's first child, and the top bar's slot is a positioned zero-size box on a phone —
+an unpositioned one would size the stack to nothing): re-parenting the branch navigators would
 rebuild every page and restart a lesson video. Pages with no app bar of their own use
 `ParagonPage`/`CompactPageBar` (`page_layout.dart`), which draws a phone header and
 nothing when wide. `context.push` to a route in another branch shows it inside the
@@ -330,8 +336,8 @@ current tab; use `go` to switch tabs. `analytics_binding.dart` reads the deepest
 
 **Search** (`lib/core/search/search.dart`, pure; `features/search/`) covers courses,
 topics and lessons from the course catalog plus each live subject's `subjectIndex`
-document — one cached read per subject, never a collection scan. The top-bar field
-(Ctrl/⌘+K, arrows, Enter, Esc) drops down results; `/search?q=` is the full page and
+document — one cached read per subject, never a collection scan. The top bar's Search
+opens a palette over the page (also Ctrl/⌘+K from anywhere; arrows, Enter, Esc); `/search?q=` is the full page and
 the phone's way in. Nothing about searches is stored or logged.
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
