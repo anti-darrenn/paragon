@@ -47,13 +47,13 @@ class _MistakesScreenState extends ConsumerState<MistakesScreen> {
           onRetry: () => ref.invalidate(mistakesProvider),
         ),
         data: (all) {
-          final subjectIds = {for (final e in all) e.mistake.subjectId};
+          final subjectIds = {for (final e in all) e.subjectId};
           final subjectId = subjectIds.contains(_subjectId) ? _subjectId : null;
           final shown = subjectId == null
               ? all
               : [
                   for (final e in all)
-                    if (e.mistake.subjectId == subjectId) e,
+                    if (e.subjectId == subjectId) e,
                 ];
           return Center(
             child: ConstrainedBox(

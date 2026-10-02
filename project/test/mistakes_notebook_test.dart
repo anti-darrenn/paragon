@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/models/question.dart';
+import 'package:paragon/core/progress/mistakes.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/attempt_repository.dart';
 import 'package:paragon/core/repositories/mistakes_repository.dart';
@@ -111,6 +112,44 @@ void main() {
     test("another student's mistakes are not listed", () async {
       await _attempt(db, 'q1', false, 1, user: 'someone-else');
       expect(await notebook(), isEmpty);
+    });
+  });
+
+  group('MistakeEntry.subjectId', () {
+    MistakeEntry entry({required String attemptSubject, String? questionSubject}) =>
+        MistakeEntry(
+          Mistake(
+            AttemptRecord(
+              questionId: 'q1',
+              topicId: 't1',
+              subjectId: attemptSubject,
+              selectedIndex: 1,
+              isCorrect: false,
+              source: 'drill',
+            ),
+          ),
+          Question(
+            id: 'q1',
+            topicId: 't1',
+            subjectId: questionSubject ?? '',
+            text: 'Q',
+            options: const ['a', 'b'],
+            correctIndex: 0,
+            explanation: '',
+            source: 'drill',
+          ),
+        );
+
+    test("files a mistake under the question's subject, not a stale one", () {
+      expect(
+        entry(attemptSubject: 'deleted-subject', questionSubject: 'maths')
+            .subjectId,
+        'maths',
+      );
+    });
+
+    test('CONTROL: falls back to the attempt when the question has none', () {
+      expect(entry(attemptSubject: 'maths').subjectId, 'maths');
     });
   });
 
