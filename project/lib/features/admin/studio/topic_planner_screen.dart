@@ -94,7 +94,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (dialog) => AlertDialog(
-        backgroundColor: context.palette.surface,
+        backgroundColor: dialog.palette.surface,
         title: Text('Delete "${r.title.isEmpty ? 'untitled' : r.title}"?'),
         content: Text(
           live

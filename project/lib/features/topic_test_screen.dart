@@ -168,8 +168,11 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
   Future<void> _confirmLeave() async {
     final leave = await showDialog<bool>(
       context: context,
+      // The dialog's own context: when "Leave" closes the test, the
+      // screen's context is deactivated while this dialog is still fading
+      // out, and reading the theme through it throws.
       builder: (dialogContext) => AlertDialog(
-        backgroundColor: context.palette.surface,
+        backgroundColor: dialogContext.palette.surface,
         title: const Text('Leave the test?'),
         content: const Text("Your answers so far won't be saved."),
         actions: [

@@ -250,23 +250,23 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   void _confirmExit() {
     showDialog(
       context: context,
-      builder: (_) => AlertDialog(
-        backgroundColor: context.palette.surface,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: dialogContext.palette.surface,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Text(
           'Exit exam?',
-          style: TextStyle(color: context.palette.textStrong),
+          style: TextStyle(color: dialogContext.palette.textStrong),
         ),
         content: Text(
           "Your progress will be lost and this exam won't be saved.",
-          style: TextStyle(color: context.palette.onHigh),
+          style: TextStyle(color: dialogContext.palette.onHigh),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
               'Keep Going',
-              style: TextStyle(color: context.palette.onMedium),
+              style: TextStyle(color: dialogContext.palette.onMedium),
             ),
           ),
           TextButton(
@@ -292,25 +292,25 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
 
     showDialog(
       context: context,
-      builder: (_) => AlertDialog(
-        backgroundColor: context.palette.surface,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: dialogContext.palette.surface,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Text(
           'Submit Exam?',
-          style: TextStyle(color: context.palette.textStrong),
+          style: TextStyle(color: dialogContext.palette.textStrong),
         ),
         content: Text(
           unanswered > 0
               ? 'You have $unanswered unanswered question${unanswered > 1 ? 's' : ''}. Are you sure?'
               : 'Submit your answers now?',
-          style: TextStyle(color: context.palette.onHigh),
+          style: TextStyle(color: dialogContext.palette.onHigh),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
               'Cancel',
-              style: TextStyle(color: context.palette.onMedium),
+              style: TextStyle(color: dialogContext.palette.onMedium),
             ),
           ),
           ElevatedButton(
