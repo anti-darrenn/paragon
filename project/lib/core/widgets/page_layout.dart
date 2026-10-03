@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../theme/app_palette.dart';
 import '../theme/app_theme.dart';
 import 'nav/nav_destinations.dart';
+import 'paragon_logo.dart';
 
 /// Page layout for the screens inside the app shell: a max-width content
 /// column, and, on a phone, a compact header with a back button and
@@ -119,12 +120,7 @@ class CompactPageBar extends StatelessWidget {
             : null,
         titleSpacing: showBack ? 0 : 20,
         title: title == null
-            ? Image.asset(
-                'assets/images/paragon_logo.png',
-                height: 24,
-                fit: BoxFit.contain,
-                semanticLabel: 'Project Paragon',
-              )
+            ? const ParagonLogo(height: 24, semanticLabel: 'Project Paragon')
             : Text(
                 title!,
                 maxLines: 1,

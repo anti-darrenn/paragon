@@ -14,6 +14,7 @@ import 'account/guest_upgrade.dart';
 import 'account/upgrade_screen.dart';
 import '../core/theme/app_palette.dart';
 import 'about_screen.dart';
+import '../core/widgets/paragon_logo.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -150,9 +151,8 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                                   ),
                                   child: AspectRatio(
                                     aspectRatio: 818 / 215,
-                                    child: Image.asset(
-                                      'assets/images/paragon_logo.png',
-                                      fit: BoxFit.contain,
+                                    child: const ParagonLogo(
+                                      semanticLabel: 'Project Paragon',
                                     ),
                                   ),
                                 ),

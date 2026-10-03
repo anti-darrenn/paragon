@@ -9,6 +9,7 @@ import '../core/theme/app_palette.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/ui/ui.dart';
+import '../core/widgets/paragon_logo.dart';
 
 /// What Paragon is, where its questions come from, and how to reach us.
 ///
@@ -30,11 +31,7 @@ class AboutScreen extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
             children: [
               Center(
-                child: Image.asset(
-                  'assets/images/paragon_logo.png',
-                  height: 64,
-                  semanticLabel: 'Paragon',
-                ),
+                child: ParagonLogo(height: 64, semanticLabel: 'Paragon'),
               ),
               const SizedBox(height: 24),
               const _Section(
