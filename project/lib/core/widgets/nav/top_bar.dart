@@ -250,18 +250,19 @@ class _IslandCellState extends State<_IslandCell> {
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: widget.onTap,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 140),
-          padding: EdgeInsets.symmetric(horizontal: widget.dense ? 10 : 14),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Stack(
-            clipBehavior: Clip.none,
-            alignment: Alignment.center,
-            children: [
-              IconTheme.merge(
+        // The dot is pinned to the tab's own corner, not the label's, so
+        // it sits clear of the text.
+        child: Stack(
+          children: [
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 140),
+              alignment: Alignment.center,
+              padding: EdgeInsets.symmetric(horizontal: widget.dense ? 10 : 14),
+              decoration: BoxDecoration(
+                color: bg,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: IconTheme.merge(
                 data: IconThemeData(color: fg),
                 child: DefaultTextStyle.merge(
                   style: AppTheme.bodyMd.copyWith(
@@ -284,21 +285,21 @@ class _IslandCellState extends State<_IslandCell> {
                   ),
                 ),
               ),
-              if (active)
-                Positioned(
-                  top: 5,
-                  right: -8,
-                  child: Container(
-                    width: 5,
-                    height: 5,
-                    decoration: const BoxDecoration(
-                      color: AppColors.primary,
-                      shape: BoxShape.circle,
-                    ),
+            ),
+            if (active)
+              Positioned(
+                top: 5,
+                right: 5,
+                child: Container(
+                  width: 5,
+                  height: 5,
+                  decoration: const BoxDecoration(
+                    color: AppColors.primary,
+                    shape: BoxShape.circle,
                   ),
                 ),
-            ],
-          ),
+              ),
+          ],
         ),
       ),
     );
