@@ -42,8 +42,10 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
   bool _saving = false;
 
   Future<void> _reorder(List<LearnResource> items, int from, int to) async {
+    // [to] is already the index after removal: `onReorderItem` adjusts
+    // it, unlike the deprecated `onReorder`, which needed `to -= 1` when
+    // moving an item down.
     final list = [...items];
-    if (to > from) to -= 1;
     list.insert(to, list.removeAt(from));
     setState(() {
       _pending = list;
@@ -258,7 +260,7 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         buildDefaultDragHandles: false,
-                        onReorder: _saving
+                        onReorderItem: _saving
                             ? (_, _) {}
                             : (from, to) => _reorder(items, from, to),
                         children: [
