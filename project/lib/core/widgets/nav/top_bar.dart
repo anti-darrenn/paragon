@@ -14,6 +14,7 @@ import '../../theme/app_theme.dart';
 import 'courses_menu.dart';
 import 'nav_destinations.dart';
 import 'profile_menu.dart';
+import '../paragon_logo.dart';
 
 /// Height of the top bar, not counting any status-bar inset. Pages in the
 /// shell scroll underneath it, so `AppShell` adds this to their top
@@ -447,12 +448,7 @@ class _Logo extends StatelessWidget {
         child: Semantics(
           label: 'Project Paragon — home',
           button: true,
-          child: Image.asset(
-            'assets/images/paragon_logo.png',
-            height: height,
-            fit: BoxFit.contain,
-            excludeFromSemantics: true,
-          ),
+          child: ParagonLogo(height: height),
         ),
       ),
     );

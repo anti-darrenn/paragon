@@ -443,7 +443,10 @@ cards**:
 an inline-CSS loading splash, removed on Flutter's `flutter-first-frame` event.
 The icons, `favicon.png` and `og-image.png` are generated from
 `assets/images/paragon_logo.png` by `dart run tool/make_icons.dart`; re-run it if the
-logo changes. `og:image` is an absolute URL, as link-preview crawlers require.
+logo changes. The logo itself is drawn only by `ParagonLogo`
+(`lib/core/widgets/paragon_logo.dart`), which picks `paragon_logo.png` (white letters) on
+dark and `paragon_logo_light.png` (black letters) on light — the white wordmark vanishes on
+the light background. Change both files together. `og:image` is an absolute URL, as link-preview crawlers require.
 
 Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with no equation on it, so `\textbf{..}`, `\textit{..}`, `\vspace{..}` and `\$` showed literally unless the same line also held math; `latex_render_test.dart` now pins both cases. Inline math is also wrapped in a horizontal scroll view, so an expression wider than a phone screen scrolls instead of overflowing. Article quotes: consecutive `>` lines are one quote block (a blank line separates two).
 
