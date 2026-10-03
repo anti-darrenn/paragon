@@ -209,7 +209,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'questions answered and how many you got right, your topic '
             'test scores and whether you passed, which kinds of lesson '
             'item (video, article or exercise) you finish, your lesson '
-            'exercise scores, and whether a session was a guest session. Google also collects standard '
+            'exercise scores, and whether a session was a guest session. When '
+            'something in the app breaks, we send the kind of error and the '
+            'screen it happened on, never what was on it. Google also collects standard '
             'technical information such as your device type, general '
             'region and app version.',
         'You can turn this off. Settings has a "Share usage data" switch; '

@@ -1,9 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'firebase_options.dart';
 import 'app.dart';
+import 'core/data/read_meter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +38,9 @@ void main() async {
     // also the only way a saved topic ever leaves the device.
     cacheSizeBytes: 100 * 1024 * 1024,
   );
+
+  // Debug builds print every billed read (see read_meter.dart).
+  ReadMeter.instance.logging = kDebugMode;
 
   runApp(const ProviderScope(child: ParagonApp()));
 }

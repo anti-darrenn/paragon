@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../core/data/read_meter.dart';
 import '../../../core/models/firestore_parsing.dart';
 import 'leitner.dart';
 
@@ -74,7 +75,7 @@ class FirestoreCardStore implements CardStore {
 
   @override
   Future<Map<String, CardState>> load() async {
-    final snap = await _study.get();
+    final snap = await _study.get().metered();
     return _parseAll(snap.data()?['cards']);
   }
 
