@@ -113,7 +113,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-124 checks. The denials are the content: a write that succeeds only proves something
+137 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -460,7 +460,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `_meta/notify` (the report digest's cursor; no rule matches `_meta`, so it is Admin-SDK-only).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -487,6 +487,27 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
   - **Terms:** bump `kLegalVersion` (and rewrite `kLegalChanges`) only for a significant change — every account is sent to `/legal/accept`.
   - `authStateProvider` is `userChanges()` filtered to account-level changes (uid, anonymous, email, verified, providers); unfiltered it would rebuild everything on the hourly token refresh.
   - Settings that follow an account: `account_prefs_sync.dart`. An analytics opt-out spreads to every device; an opt-in never does.
+
+## Reads, the quota, and errors
+
+- **Every Firestore read in `lib/` ends in `.metered()`** (`lib/core/data/read_meter.dart`),
+  new ones included. Debug builds count billed reads per route pattern: a corner
+  pill shows them, a tap copies a table for `docs/audit/QUOTA.md`, a long-press
+  resets. In every build it is also how a spent quota is noticed.
+- **A spent quota.** `resource-exhausted` sets `QuotaStatus`. `QuotaBanner` (above
+  the navigator, same tree shape either way) and `LoadError` then say Paragon is
+  busy until midnight Pacific, and the next server answer clears it.
+- **Cache-first content.** `subjects`, `units` and `topics` go through
+  `getCacheFirst` (`cache_first.dart`): 12 hours from the device cache after a
+  server fetch, and only while the cache still holds every document. Never use it
+  for questions, attempts, progress or anything a student writes.
+- **Production errors.** `ErrorReporter` sends `app_error` analytics with the error
+  type or Firebase code and the route pattern only, never the message. The same
+  key is sent once, and at most ten per session.
+- **Usage.** `tools/admin/usage.js` runs in the 15-minute workflow. It needs the
+  service account to hold **Monitoring Viewer**; until it does, it logs a notice and
+  skips.
+- `docs/audit/PERF.md` and `QUOTA.md` hold the measured numbers.
 
 ## Riverpod v3 gotchas
 
