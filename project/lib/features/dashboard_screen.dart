@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -16,6 +18,29 @@ import '../core/widgets/ui/ui.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+
+/// What home says to the student: a greeting and a line under it, one
+/// pair picked at random each visit so the page does not read the same
+/// every time. `{name}` is replaced with the student's display name.
+const kHomeGreetings = [
+  ('Hey, {name}', 'Pick up where you left off.'),
+  ('Welcome back, {name}', 'Ready when you are.'),
+  ('Good to see you, {name}', "Here's where you got to."),
+  ('Hi, {name}', 'A little practice goes a long way.'),
+  ("Let's go, {name}", 'Your next step is below.'),
+];
+
+/// Picked once per app session, not per build: a greeting that changed
+/// every time the page redrew would flicker.
+final greetingIndexProvider = Provider<int>(
+  (ref) => Random().nextInt(kHomeGreetings.length),
+);
+
+/// The greeting at [index] (wrapped into range) for [name].
+(String, String) homeGreeting(String name, int index) {
+  final (title, subtitle) = kHomeGreetings[index % kHomeGreetings.length];
+  return (title.replaceAll('{name}', name), subtitle);
+}
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -52,9 +77,14 @@ class DashboardScreen extends ConsumerWidget {
           return PageBody(
             maxWidth: 1040,
             children: [
-              PageIntro(
-                title: 'Hey, $displayName 👋',
-                subtitle: 'Pick up where you left off.',
+              Builder(
+                builder: (context) {
+                  final (title, subtitle) = homeGreeting(
+                    displayName,
+                    ref.watch(greetingIndexProvider),
+                  );
+                  return PageIntro(title: title, subtitle: subtitle);
+                },
               ),
               // The counters below are real, written to a real uid — and
               // that uid is easily lost. A guest watching them climb
@@ -387,30 +417,35 @@ class _Stats extends ConsumerWidget {
       data: (n) => '$n',
     );
 
-    return Row(
-      children: [
-        Expanded(
-          child: _StatTile(
-            icon: Icons.donut_large_rounded,
-            color: AppColors.primary,
-            value: '${progress.startedTopicCount}',
-            label: 'Topics practised',
-            detail: progress.completedTopicCount == 0
-                ? 'Start one today'
-                : '${progress.completedTopicCount} at proficient',
+    // Stretched to the taller tile, so the two cards' edges line up
+    // whichever one has the longer caption.
+    return IntrinsicHeight(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(
+            child: _StatTile(
+              icon: Icons.donut_large_rounded,
+              color: AppColors.primary,
+              value: '${progress.startedTopicCount}',
+              label: 'Topics practised',
+              detail: progress.completedTopicCount == 0
+                  ? 'Start one today'
+                  : '${progress.completedTopicCount} at proficient',
+            ),
           ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _StatTile(
-            icon: Icons.check_circle_outline_rounded,
-            color: AppColors.accentBlue,
-            value: week,
-            label: 'Questions this week',
-            detail: 'Practice, tests and exams',
+          const SizedBox(width: 12),
+          Expanded(
+            child: _StatTile(
+              icon: Icons.check_circle_outline_rounded,
+              color: AppColors.accentBlue,
+              value: week,
+              label: 'Questions this week',
+              detail: 'Practice, tests and exams',
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
