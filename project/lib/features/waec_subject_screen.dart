@@ -34,7 +34,7 @@ class WaecSubjectScreen extends ConsumerWidget {
           onRetry: () => ref.invalidate(subjectsProvider),
         ),
         data: (subjects) => PageBody(
-          maxWidth: 960,
+          maxWidth: kContentMaxWidth,
           children: [
             const PageIntro(
               title: 'WAEC Prep',
@@ -92,14 +92,7 @@ class _HowItWorks extends StatelessWidget {
         'Every answer marked, with an estimated grade.',
       ),
     ];
-    return SurfaceCard(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 14),
-      child: Wrap(
-        children: [
-          for (var i = 0; i < steps.length; i++)
-            ConstrainedBox(
-              constraints: const BoxConstraints(minWidth: 200, maxWidth: 300),
-              child: Padding(
+    Widget step(int i) => Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 10,
                   vertical: 6,
@@ -136,9 +129,23 @@ class _HowItWorks extends StatelessWidget {
                     ),
                   ],
                 ),
+              
+    );
+
+    return SurfaceCard(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 14),
+      child: LayoutBuilder(
+        builder: (context, box) => box.maxWidth >= 640
+            ? Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  for (var i = 0; i < steps.length; i++)
+                    Expanded(child: step(i)),
+                ],
+              )
+            : Column(
+                children: [for (var i = 0; i < steps.length; i++) step(i)],
               ),
-            ),
-        ],
       ),
     );
   }

@@ -21,6 +21,11 @@ const double kPageMaxWidth = 720;
 /// Space between groups on a page.
 const double kSectionGap = 28;
 
+/// Side padding inside a page's column: the same as the course pages'
+/// gutter on a wide screen, so every page's left edge lines up.
+const double kPageGutter = 32;
+const double kPageGutterCompact = 16;
+
 /// A page's scrolling content: centred at [maxWidth], with the same
 /// gutters and end padding on every page. Takes a list of children, like
 /// a [ListView], and builds them lazily.
@@ -41,6 +46,7 @@ class PageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final compact = MediaQuery.sizeOf(context).width < 600;
+    final side = compact ? kPageGutterCompact : kPageGutter;
     return Align(
       alignment: Alignment.topCenter,
       child: ConstrainedBox(
@@ -49,12 +55,7 @@ class PageBody extends StatelessWidget {
           controller: controller,
           padding:
               padding ??
-              EdgeInsets.fromLTRB(
-                compact ? 16 : 24,
-                compact ? 16 : 24,
-                compact ? 16 : 24,
-                48,
-              ),
+              EdgeInsets.fromLTRB(side, compact ? 16 : 24, side, 48),
           children: children,
         ),
       ),

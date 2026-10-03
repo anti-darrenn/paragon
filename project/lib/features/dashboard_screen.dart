@@ -75,7 +75,7 @@ class DashboardScreen extends ConsumerWidget {
               : storedName;
 
           return PageBody(
-            maxWidth: 1040,
+            maxWidth: kContentMaxWidth,
             children: [
               Builder(
                 builder: (context) {
