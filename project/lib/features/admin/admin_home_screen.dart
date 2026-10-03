@@ -206,7 +206,7 @@ enum TopicState {
   final String label;
 
   Color get colour => switch (this) {
-    TopicState.empty => AppColors.textSecondaryDark,
+    TopicState.empty => AppColors.neutral,
     TopicState.draft => AppColors.warning,
     TopicState.changesRequested => AppColors.wrong,
     TopicState.inReview => AppColors.accentBlue,

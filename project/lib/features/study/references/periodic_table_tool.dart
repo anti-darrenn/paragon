@@ -42,7 +42,7 @@ const Map<String, Color> kCategoryColors = {
 };
 
 Color categoryColor(String category) =>
-    kCategoryColors[category] ?? AppColors.textSecondaryDark;
+    kCategoryColors[category] ?? AppColors.neutral;
 
 String _capitalise(String s) =>
     s.isEmpty ? s : '${s[0].toUpperCase()}${s.substring(1)}';

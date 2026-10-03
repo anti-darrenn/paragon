@@ -21,6 +21,11 @@ const double kPageMaxWidth = 720;
 /// Space between groups on a page.
 const double kSectionGap = 28;
 
+/// Side padding inside a page's column: the same as the course pages'
+/// gutter on a wide screen, so every page's left edge lines up.
+const double kPageGutter = 32;
+const double kPageGutterCompact = 16;
+
 /// A page's scrolling content: centred at [maxWidth], with the same
 /// gutters and end padding on every page. Takes a list of children, like
 /// a [ListView], and builds them lazily.
@@ -41,6 +46,7 @@ class PageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final compact = MediaQuery.sizeOf(context).width < 600;
+    final side = compact ? kPageGutterCompact : kPageGutter;
     return Align(
       alignment: Alignment.topCenter,
       child: ConstrainedBox(
@@ -49,12 +55,7 @@ class PageBody extends StatelessWidget {
           controller: controller,
           padding:
               padding ??
-              EdgeInsets.fromLTRB(
-                compact ? 16 : 24,
-                compact ? 16 : 24,
-                compact ? 16 : 24,
-                48,
-              ),
+              EdgeInsets.fromLTRB(side, compact ? 16 : 24, side, 48),
           children: children,
         ),
       ),
@@ -372,6 +373,49 @@ class EmptyState extends StatelessWidget {
           ],
           if (action != null) ...[const SizedBox(height: 20), action!],
         ],
+      ),
+    );
+  }
+}
+
+/// A grey block that gently pulses, standing in for content still
+/// loading, so the page keeps its shape instead of jumping when it lands.
+class SkeletonBox extends StatefulWidget {
+  const SkeletonBox({super.key, this.width, this.height = 14, this.radius = 6});
+
+  final double? width;
+  final double height;
+  final double radius;
+
+  @override
+  State<SkeletonBox> createState() => _SkeletonBoxState();
+}
+
+class _SkeletonBoxState extends State<SkeletonBox>
+    with SingleTickerProviderStateMixin {
+  late final _pulse = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 900),
+    lowerBound: 0.45,
+  )..repeat(reverse: true);
+
+  @override
+  void dispose() {
+    _pulse.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeTransition(
+      opacity: _pulse,
+      child: Container(
+        width: widget.width,
+        height: widget.height,
+        decoration: BoxDecoration(
+          color: context.palette.track,
+          borderRadius: BorderRadius.circular(widget.radius),
+        ),
       ),
     );
   }

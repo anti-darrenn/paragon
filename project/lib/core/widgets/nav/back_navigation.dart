@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../theme/app_palette.dart';
+import '../../theme/app_theme.dart';
+import '../ui/ui.dart';
 import 'nav_destinations.dart';
 
 /// Where "back" goes from [uri] when there is no history to go back
@@ -64,6 +67,60 @@ Uri? _uriOf(BuildContext context) {
     return GoRouterState.of(context).uri;
   } catch (_) {
     return null;
+  }
+}
+
+/// [ParagonAppBar] on a wide screen: the floating top bar's inset, then a
+/// row in the page's column.
+class _WidePageHeader extends StatelessWidget {
+  const _WidePageHeader({this.back, this.title, this.actions});
+
+  final Widget? back;
+  final Widget? title;
+  final List<Widget>? actions;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: context.palette.background,
+      child: Padding(
+        // 4 + 52 is the toolbar height the Scaffold allows an app bar.
+        padding: EdgeInsets.only(top: MediaQuery.paddingOf(context).top + 4),
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: kPageMaxWidth),
+            child: Padding(
+              // The back arrow's own padding hangs into the gutter, so the
+              // arrow's glyph lines up with the content's edge.
+              padding: EdgeInsets.only(
+                left: back == null ? kPageGutter : kPageGutter - 12,
+                right: kPageGutter - 8,
+              ),
+              child: SizedBox(
+                height: 52,
+                child: Row(
+                  children: [
+                    if (back != null) ...[back!, const SizedBox(width: 4)],
+                    Expanded(
+                      child: DefaultTextStyle.merge(
+                        style: AppTheme.heading2.copyWith(
+                          color: context.palette.textStrong,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        child: title ?? const SizedBox.shrink(),
+                      ),
+                    ),
+                    ...?actions,
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -164,6 +221,12 @@ class ParagonAppBar extends StatelessWidget implements PreferredSizeWidget {
     final back =
         leading ??
         (automaticallyImplyLeading ? ParagonBackButton.maybe(context) : null);
+    if (navLayoutFor(context) == NavLayout.topBar && bottom == null) {
+      // Under the top bar a page's header is part of the page: it sits in
+      // the page's own column, back arrow and title lined up with the
+      // content below, rather than spanning the window from its edge.
+      return _WidePageHeader(back: back, title: title, actions: actions);
+    }
     return AppBar(
       leading: back,
       automaticallyImplyLeading: false,

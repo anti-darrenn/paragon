@@ -40,6 +40,7 @@ class ReviewScreen extends ConsumerWidget {
         actions: [SearchAction()],
       ),
       body: PageBody(
+        maxWidth: kContentMaxWidth,
         children: [
           const PageIntro(
             title: 'Review',
@@ -47,47 +48,88 @@ class ReviewScreen extends ConsumerWidget {
                 'Go back over what you have learnt. Short, regular '
                 'review is what makes it stick.',
           ),
-          _ReviewCard(
-            key: const ValueKey('review.mistakes'),
-            icon: Icons.replay_rounded,
-            accent: AppColors.wrong,
-            title: 'Mistakes notebook',
-            subtitle:
-                'Questions you got wrong, with the working. '
-                'Practise them until they leave.',
-            onTap: () => context.push('/mistakes'),
-          ),
-          const SizedBox(height: 12),
-          _CardsPanel(subjects: subjects),
-          const SizedBox(height: 12),
-          _ReviewCard(
-            key: const ValueKey('review.saved'),
-            icon: Icons.bookmark_outline_rounded,
-            accent: AppColors.accentBlue,
-            title: 'Saved',
-            subtitle: switch (bookmarks) {
-              null || 0 =>
-                'Lessons and questions you bookmark, '
-                    'and your notes',
-              1 => '1 bookmark, and your notes',
-              final n => '$n bookmarks, and your notes',
+          LayoutBuilder(
+            builder: (context, box) {
+              final mistakes = _ReviewCard(
+                key: const ValueKey('review.mistakes'),
+                icon: Icons.replay_rounded,
+                accent: AppColors.wrong,
+                title: 'Mistakes notebook',
+                subtitle:
+                    'Questions you got wrong, with the working. '
+                    'Practise them until they leave.',
+                onTap: () => context.push('/mistakes'),
+              );
+              final saved = _ReviewCard(
+                key: const ValueKey('review.saved'),
+                icon: Icons.bookmark_outline_rounded,
+                accent: AppColors.accentBlue,
+                title: 'Saved',
+                subtitle: switch (bookmarks) {
+                  null ||
+                  0 => 'Lessons and questions you bookmark, and your notes',
+                  1 => '1 bookmark, and your notes',
+                  final n => '$n bookmarks, and your notes',
+                },
+                onTap: () => context.push('/saved'),
+              );
+              final offlineCard = _ReviewCard(
+                key: const ValueKey('review.offline'),
+                icon: Icons.download_for_offline_outlined,
+                accent: AppColors.correct,
+                title: 'Saved for offline',
+                subtitle: switch (offline) {
+                  0 =>
+                    'Keep a topic on this device for when the '
+                        'connection drops',
+                  1 => '1 topic on this device',
+                  final n => '$n topics on this device',
+                },
+                onTap: () => context.push('/settings/offline'),
+              );
+              final cardsPanel = _CardsPanel(subjects: subjects);
+              if (box.maxWidth < 760) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    mistakes,
+                    const SizedBox(height: 12),
+                    cardsPanel,
+                    const SizedBox(height: 12),
+                    saved,
+                    const SizedBox(height: 12),
+                    offlineCard,
+                  ],
+                );
+              }
+              // What to work on (left); what is kept (right).
+              return Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        mistakes,
+                        const SizedBox(height: 12),
+                        cardsPanel,
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        saved,
+                        const SizedBox(height: 12),
+                        offlineCard,
+                      ],
+                    ),
+                  ),
+                ],
+              );
             },
-            onTap: () => context.push('/saved'),
-          ),
-          const SizedBox(height: 12),
-          _ReviewCard(
-            key: const ValueKey('review.offline'),
-            icon: Icons.download_for_offline_outlined,
-            accent: AppColors.correct,
-            title: 'Saved for offline',
-            subtitle: switch (offline) {
-              0 =>
-                'Keep a topic on this device for when the '
-                    'connection drops',
-              1 => '1 topic on this device',
-              final n => '$n topics on this device',
-            },
-            onTap: () => context.push('/settings/offline'),
           ),
         ],
       ),

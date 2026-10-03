@@ -1,1 +1,13 @@
 * text=auto
+
+# Flutter regenerates these on every build and writes them with LF line
+# endings. With core.autocrlf on Windows, git checked them out as CRLF, so
+# each build left them looking modified, and a modified registrant once
+# made `git pull` refuse to update main before a deploy. Pinning them to LF
+# makes the working copy match what Flutter writes.
+project/macos/Flutter/GeneratedPluginRegistrant.swift text eol=lf
+project/ios/Runner/GeneratedPluginRegistrant.* text eol=lf
+project/linux/flutter/generated_plugin_registrant.* text eol=lf
+project/linux/flutter/generated_plugins.cmake text eol=lf
+project/windows/flutter/generated_plugin_registrant.* text eol=lf
+project/windows/flutter/generated_plugins.cmake text eol=lf

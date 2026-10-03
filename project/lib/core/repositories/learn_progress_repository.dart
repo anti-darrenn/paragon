@@ -270,6 +270,14 @@ final lessonProgressProvider = Provider<LessonProgress>((ref) {
       LessonProgress.empty;
 });
 
+/// True while a signed-in student's stored progress has not arrived yet,
+/// so a screen can hold space for what it will show instead of jumping
+/// when it lands. Never true for a guest, whose progress is in memory.
+final lessonProgressLoadingProvider = Provider<bool>((ref) {
+  if (ref.watch(isGuestProvider)) return false;
+  return ref.watch(_storedLessonProgressProvider).isLoading;
+});
+
 /// Marks a Learn item finished — the one entry point the lesson screen
 /// uses, so the "skip if already done" rule and the guest split live in
 /// one place.
