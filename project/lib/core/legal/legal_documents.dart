@@ -193,6 +193,10 @@ const LegalDocument privacyPolicy = LegalDocument(
         'Problem reports. If you report a problem with a question, we record '
             'which question, the reason you selected, and your account '
             'identifier.',
+        'Feedback. If you send us feedback, we record what you wrote, the '
+            'kind you chose, which screen of the app you sent it from, and '
+            'your account identifier. The Paragon team reads it, and it is '
+            'deleted when your account is deleted.',
       ],
     ),
     LegalSection(
@@ -245,6 +249,7 @@ const LegalDocument privacyPolicy = LegalDocument(
         'To choose which questions to show you next.',
         'To find and fix wrong answers in our question bank, which is why '
             'problem reports exist.',
+        'To improve Paragon from what you tell us in feedback.',
         'To understand which subjects and topics students need, so we know '
             'what to build next.',
       ],
@@ -293,7 +298,8 @@ const LegalDocument privacyPolicy = LegalDocument(
         'You can also download a copy yourself, at any time, from Settings → '
             'Download your data. It is one file containing your account '
             'details, every answer you have recorded, your progress, test '
-            'results, notes, bookmarks, revision cards and problem reports.',
+            'results, notes, bookmarks, revision cards, problem reports and '
+            'feedback.',
         'You can delete your account yourself from Settings. Deleting it '
             'removes your account record, your practice history, and your '
             'notes, highlights and bookmarks. You choose whether that '

@@ -104,6 +104,10 @@ class AccountRepository {
       _db.collection('attempts').where('userId', isEqualTo: uid),
     );
     await _deleteQuery(_db.collection('flags').where('userId', isEqualTo: uid));
+    // "Send feedback" messages.
+    await _deleteQuery(
+      _db.collection('feedback').where('userId', isEqualTo: uid),
+    );
     // One document per finished WAEC exam, for its review and history.
     await _deleteQuery(
       _db.collection('examResults').where('userId', isEqualTo: uid),
@@ -160,7 +164,13 @@ class AccountRepository {
   /// keyed by uid are listed in [_ownedById]. Together these are the same
   /// set [deleteOwnedDocuments] removes — keep all three in step (and
   /// `OWNED` in tools/admin/jobs.js).
-  static const _ownedByQuery = ['attempts', 'notes', 'flags', 'examResults'];
+  static const _ownedByQuery = [
+    'attempts',
+    'notes',
+    'flags',
+    'feedback',
+    'examResults',
+  ];
   static const _ownedById = [
     'users',
     'progress',
