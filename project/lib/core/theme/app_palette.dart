@@ -94,7 +94,7 @@ class AppPalette extends ThemeExtension<AppPalette> {
     track: AppColors.trackLight,
     textPrimary: AppColors.textPrimaryLight,
     textSecondary: AppColors.textSecondaryLight,
-    textStrong: AppColors.textPrimaryLight,
+    textStrong: AppColors.textStrongLight,
     onHigh: Colors.black87,
     onMedium: Colors.black54,
     onLow: Colors.black38,

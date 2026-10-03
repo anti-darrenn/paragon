@@ -37,6 +37,10 @@ class AppColors {
     0xFF21262D,
   ); // progress track, inactive nav dots
   static const trackLight = Color(0xFFEAEEF2); // the light theme's track
+  /// A mid grey that reads on both themes, for places with no
+  /// BuildContext to ask the palette: a status with nothing to report, a
+  /// fallback swatch, a canvas outline. Never body text.
+  static const neutral = Color(0xFF8B949E);
   static const accentBlue = Color(
     0xFF58A6FF,
   ); // informational accent (stats, links)
@@ -58,6 +62,10 @@ class AppColors {
   static const textPrimaryDark = Color(0xFFE6EDF3);
   static const textSecondaryDark = Color(0xFF8B949E);
   static const textPrimaryLight = Color(0xFF24292F);
+
+  /// Headings and figures in the light theme: a shade deeper than body
+  /// text, as white is a shade brighter than it in the dark theme.
+  static const textStrongLight = Color(0xFF1B1F24);
   static const textSecondaryLight = Color(0xFF57606A);
 
   // ── Subject colors (muted — readable on dark bg, distinct) ───────

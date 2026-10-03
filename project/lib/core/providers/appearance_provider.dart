@@ -29,12 +29,13 @@ enum Appearance {
   }
 }
 
-/// Whether students may leave the dark theme. **Off until the light theme
-/// has been looked at, screen by screen, in a browser** — every widget
-/// reads the palette now, but nobody has checked what light actually looks
-/// like. While off, the Appearance choice is hidden and the app is dark
-/// whatever is stored. Turn on in the same commit as that review.
-const bool kAppearanceChoiceEnabled = false;
+/// Whether students may leave the dark theme. On since 2026-10-03, after
+/// an audit that left no dark-only colour in any widget (every colour that
+/// differs by theme comes from `context.palette`; white survives only on
+/// solid brand fills). Dark stays the default: light is a choice in
+/// Settings → Reading and display. Turning this off hides the choice and
+/// forces dark again, whatever is stored.
+const bool kAppearanceChoiceEnabled = true;
 
 const _kAppearanceKey = 'appearance.theme';
 

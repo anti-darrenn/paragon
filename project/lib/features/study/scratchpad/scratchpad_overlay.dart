@@ -324,7 +324,7 @@ class _ScratchPainter extends CustomPainter {
         Paint()
           ..style = PaintingStyle.stroke
           ..strokeWidth = 1.5
-          ..color = AppColors.textSecondaryDark,
+          ..color = AppColors.neutral,
       );
     }
   }
