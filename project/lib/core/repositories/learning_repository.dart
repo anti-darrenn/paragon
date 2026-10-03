@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../data/read_meter.dart';
+import '../data/cache_first.dart';
 import '../models/subject.dart';
 import '../models/unit.dart';
 import '../models/topic.dart';
@@ -16,7 +17,11 @@ final _firestoreProvider = Provider<FirebaseFirestore>((ref) {
 /// Loads the list of subjects.
 final subjectsProvider = FutureProvider<List<Subject>>((ref) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db.collection('subjects').orderBy('name').get().metered();
+  // Cache-first: content changes rarely, and this runs on every app load.
+  final snap = await getCacheFirst(
+    db.collection('subjects').orderBy('name'),
+    key: 'subjects',
+  );
   return snap.docs.map((d) => Subject.fromFirestore(d)).toList();
 });
 
@@ -26,12 +31,13 @@ final unitsProvider = FutureProvider.family<List<Unit>, String>((
   subjectId,
 ) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db
-      .collection('units')
-      .where('subjectId', isEqualTo: subjectId)
-      .orderBy('order')
-      .get()
-      .metered();
+  final snap = await getCacheFirst(
+    db
+        .collection('units')
+        .where('subjectId', isEqualTo: subjectId)
+        .orderBy('order'),
+    key: 'units:$subjectId',
+  );
   return snap.docs.map((d) => Unit.fromFirestore(d)).toList();
 });
 
@@ -41,12 +47,12 @@ final topicsProvider = FutureProvider.family<List<Topic>, String>((
   unitId,
 ) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db
-      .collection('topics')
-      .where('unitId', isEqualTo: unitId)
-      .orderBy('order')
-      .get()
-      .metered();
+  // A course outline is one of these per unit, 50 to 75 documents a
+  // subject: the single biggest read cost of browsing. See cache_first.dart.
+  final snap = await getCacheFirst(
+    db.collection('topics').where('unitId', isEqualTo: unitId).orderBy('order'),
+    key: 'topics:$unitId',
+  );
   return snap.docs.map((d) => Topic.fromFirestore(d)).toList();
 });
 
