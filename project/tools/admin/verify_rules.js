@@ -823,6 +823,109 @@ async function attemptsAndFlags(a, b) {
   await deleteDoc(a.idToken, `flags/${closedFlagId}`);
 }
 
+async function feedbackAndUsage(a, b) {
+  suite('feedback and usage');
+
+  const fb = (uid, extra = {}) => ({
+    userId: str(uid),
+    kind: str('idea'),
+    message: str('Please add Biology'),
+    screen: str('/settings'),
+    ...extra,
+  });
+  const at = { transforms: [serverTime('createdAt')] };
+  const id = `verify_${a.uid.slice(0, 8)}`;
+
+  expectOutcome(
+    'feedback can be sent, by a guest too',
+    ALLOW,
+    await commit(a.idToken, write(`feedback/${id}`, fb(a.uid), at)),
+  );
+  expectOutcome(
+    'feedback cannot be sent as another student',
+    DENY,
+    await commit(b.idToken, write(`feedback/${id}_b`, fb(a.uid), at)),
+  );
+  expectOutcome(
+    'feedback cannot carry a client clock',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`feedback/${id}_clock`, {
+        ...fb(a.uid),
+        createdAt: { timestampValue: '2020-01-01T00:00:00Z' },
+      }),
+    ),
+  );
+  expectOutcome(
+    'feedback cannot be filed already triaged',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`feedback/${id}_status`, fb(a.uid, { status: str('done') }), at),
+    ),
+  );
+  expectOutcome(
+    'feedback over 2000 characters is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(
+        `feedback/${id}_long`,
+        fb(a.uid, { message: str('x'.repeat(2001)) }),
+        at,
+      ),
+    ),
+  );
+  expectOutcome(
+    'feedback with an unknown kind is refused',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`feedback/${id}_kind`, fb(a.uid, { kind: str('spam') }), at),
+    ),
+  );
+  expectOutcome(
+    'a student cannot mark their own feedback done',
+    DENY,
+    await commit(a.idToken, write(`feedback/${id}`, { status: str('done') })),
+  );
+  expectOutcome(
+    "another student's feedback is not readable",
+    DENY,
+    await readDoc(b.idToken, `feedback/${id}`),
+  );
+  expectOutcome(
+    "a student cannot list everyone's feedback",
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'feedback' }] }),
+  );
+  expectOutcome(
+    'your own feedback is readable (account deletion finds it)',
+    ALLOW,
+    await readDoc(a.idToken, `feedback/${id}`),
+  );
+
+  // _meta is Admin-SDK-only except usage, which reviewers read.
+  expectOutcome(
+    'a student cannot read Firestore usage',
+    DENY,
+    await readDoc(a.idToken, '_meta/usage'),
+  );
+  expectOutcome(
+    'a student cannot read the notify cursor',
+    DENY,
+    await readDoc(a.idToken, '_meta/notify'),
+  );
+  expectOutcome(
+    'a student cannot write Firestore usage',
+    DENY,
+    await commit(a.idToken, write('_meta/usage', { days: map({}) })),
+  );
+
+  await deleteDoc(a.idToken, `feedback/${id}`);
+}
+
 async function examResults(a, b) {
   suite('examResults — own, closed shape, never edited');
 
@@ -1523,6 +1626,7 @@ async function teardown(a, b, usernameKey) {
   await usersAllowList(a, b);
   await usernames(a, b, usernameKey);
   await attemptsAndFlags(a, b);
+  await feedbackAndUsage(a, b);
   await examResults(a, b);
   await progress(a, b);
   await studyData(a, b);

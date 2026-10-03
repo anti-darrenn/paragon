@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../models/firestore_parsing.dart';
 import '../models/question.dart';
 import 'flag_repository.dart';
@@ -179,7 +180,8 @@ class AdminFlagRepository {
     final snap = await _flags
         .orderBy('createdAt', descending: true)
         .limit(queueSize)
-        .get();
+        .get()
+        .metered();
     final reports = snap.docs.map(ProblemReport.fromFirestore).toList();
     final ids = reports.map((r) => r.questionId).where((id) => id.isNotEmpty);
     return groupReports(reports, await _questions(ids.toSet().toList()));
@@ -192,7 +194,8 @@ class AdminFlagRepository {
     final snap = await _flags
         .orderBy('createdAt', descending: true)
         .limit(queueSize)
-        .get();
+        .get()
+        .metered();
     return [
       for (final d in snap.docs)
         if (asString(docData(d)['resourceId']).isNotEmpty)
@@ -216,8 +219,8 @@ class AdminFlagRepository {
   /// One question and every report on it, for the review screen.
   Future<FlaggedQuestion> forQuestion(String questionId) async {
     final results = await Future.wait([
-      _flags.where('questionId', isEqualTo: questionId).get(),
-      _db.collection('questions').doc(questionId).get(),
+      _flags.where('questionId', isEqualTo: questionId).get().metered(),
+      _db.collection('questions').doc(questionId).get().metered(),
     ]);
     final flags = results[0] as QuerySnapshot;
     final question = results[1] as DocumentSnapshot;
@@ -243,7 +246,8 @@ class AdminFlagRepository {
       final snap = await _db
           .collection('questions')
           .where(FieldPath.documentId, whereIn: chunk)
-          .get();
+          .get()
+          .metered();
       for (final doc in snap.docs) {
         out[doc.id] = ReviewedQuestion.fromFirestore(doc);
       }

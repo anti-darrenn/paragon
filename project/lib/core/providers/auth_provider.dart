@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../data/read_meter.dart';
 import '../repositories/user_repository.dart';
 import '../auth/staff_role.dart';
 
@@ -120,6 +121,7 @@ final userDataProvider = StreamProvider<Map<String, dynamic>?>((ref) {
       .collection('users')
       .doc(user.uid)
       .snapshots()
+      .metered()
       .map((doc) => doc.exists ? doc.data() : null);
 });
 
@@ -155,7 +157,8 @@ final weeklyAttemptsCountProvider = FutureProvider<int>((ref) async {
       .where('userId', isEqualTo: user.uid)
       .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(weekStart))
       .count()
-      .get();
+      .get()
+      .metered();
 
   return aggregate.count ?? 0;
 });

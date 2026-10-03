@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../core/data/read_meter.dart';
 import 'study_models.dart';
 
 /// Where a student's notes and bookmarks are kept.
@@ -66,7 +67,8 @@ class FirestoreStudyStore implements StudyStore {
     final snap = await _notes
         .where('userId', isEqualTo: uid)
         .where('resourceId', isEqualTo: resourceId)
-        .get();
+        .get()
+        .metered();
     return [
       for (final d in snap.docs)
         if (LessonNote.fromFirestore(d) case final n when n.topicId == topicId)
@@ -76,7 +78,7 @@ class FirestoreStudyStore implements StudyStore {
 
   @override
   Future<List<LessonNote>> allNotes() async {
-    final snap = await _notes.where('userId', isEqualTo: uid).get();
+    final snap = await _notes.where('userId', isEqualTo: uid).get().metered();
     return [for (final d in snap.docs) LessonNote.fromFirestore(d)];
   }
 
@@ -122,7 +124,7 @@ class FirestoreStudyStore implements StudyStore {
 
   @override
   Future<Map<String, Bookmark>> bookmarks() async {
-    final snap = await _study.get();
+    final snap = await _study.get().metered();
     return Bookmark.mapFrom(snap.data()?['bookmarks']);
   }
 

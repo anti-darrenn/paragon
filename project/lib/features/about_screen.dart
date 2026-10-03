@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../core/legal/legal_documents.dart';
+import '../core/providers/auth_provider.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_palette.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/ui/ui.dart';
 import '../core/widgets/paragon_logo.dart';
+import 'feedback/feedback_sheet.dart';
 
 /// What Paragon is, where its questions come from, and how to reach us.
 ///
@@ -162,6 +165,16 @@ class _ContactSection extends StatelessWidget {
           Wrap(
             spacing: 16,
             children: [
+              // Signed-out visitors have no account to send it from.
+              Consumer(
+                builder: (context, ref, _) =>
+                    ref.watch(currentUserProvider) == null
+                    ? const SizedBox.shrink()
+                    : _Link(
+                        label: 'Send feedback',
+                        onTap: () => showFeedbackSheet(context),
+                      ),
+              ),
               _Link(
                 label: 'Write an email',
                 onTap: () => launchUrl(aboutMailto),

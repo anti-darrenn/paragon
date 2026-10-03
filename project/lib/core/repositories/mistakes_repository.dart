@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../models/firestore_parsing.dart';
 import '../models/question.dart';
 import '../progress/mistakes.dart';
@@ -23,7 +24,8 @@ class MistakesRepository {
         .where('userId', isEqualTo: uid)
         .orderBy('timestamp', descending: true)
         .limit(limit)
-        .get();
+        .get()
+        .metered();
     return [
       for (final doc in snap.docs)
         if (docData(doc) case final d)
@@ -53,7 +55,8 @@ class MistakesRepository {
       final snap = await _db
           .collection('questions')
           .where(FieldPath.documentId, whereIn: chunk)
-          .get();
+          .get()
+          .metered();
       for (final doc in snap.docs) {
         if (!asBool(docData(doc)['hasAnswer'])) continue;
         final q = Question.fromFirestore(doc);

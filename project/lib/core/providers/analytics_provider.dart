@@ -165,6 +165,15 @@ class Analytics {
     ),
   );
 
+  /// An uncaught error: its type or Firebase code and the screen's route
+  /// pattern, nothing from the message (see `ErrorReporter`).
+  Future<void> appError({required String kind, required String screen}) => _log(
+    (a) => a.logEvent(
+      name: 'app_error',
+      parameters: {'kind': kind, 'screen': screen},
+    ),
+  );
+
   /// Separates guest sessions from real accounts in reporting without
   /// attaching anything identifying.
   ///

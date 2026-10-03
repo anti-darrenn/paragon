@@ -202,6 +202,15 @@ service cloud.firestore {
         && request.resource.data.subjects.size() <= 20;
     }
 
+    // ── USAGE ───────────────────────────────────────────────────
+    // `_meta` is otherwise Admin-SDK-only (no rule matches it). The one
+    // exception: `tools/admin/usage.js` stores daily Firestore read/write
+    // counts here for the studio, so the team sees the Spark quota running
+    // out before students do. Reviewers read it; nobody writes it.
+    match /_meta/usage {
+      allow read: if isReviewer();
+    }
+
     // ── USER DOCUMENTS ──────────────────────────────────────────
     // Owner-only, but no longer a blanket `write`: creation is limited to
     // an exact field set, and username/usernameKey can only be set by
@@ -545,6 +554,37 @@ service cloud.firestore {
           && request.resource.data.diff(resource.data).affectedKeys()
                .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
           && request.resource.data.status in ['open', 'fixed', 'dismissed'];
+    }
+
+    // ── FEEDBACK ────────────────────────────────────────────────
+    // "Send feedback" from Settings, About and the end of a first session:
+    // anything a student wants to tell us that is not a report against one
+    // question or lesson (those are `flags`). Guests may send it too.
+    // Same shape of access as flags: create-own with a closed field set;
+    // read-own and delete-own so account deletion can find and remove it;
+    // reviewers read all and may change only the triage fields.
+    match /feedback/{id} {
+      allow create: if request.auth != null
+          && request.resource.data.keys().hasOnly(
+               ['userId', 'kind', 'message', 'screen', 'createdAt'])
+          && request.resource.data.keys().hasAll(
+               ['userId', 'kind', 'message', 'screen', 'createdAt'])
+          && request.resource.data.userId == request.auth.uid
+          && request.resource.data.kind in ['idea', 'problem', 'praise', 'other']
+          && request.resource.data.message is string
+          && request.resource.data.message.size() > 0
+          && request.resource.data.message.size() <= 2000
+          && request.resource.data.screen is string
+          && request.resource.data.screen.size() <= 120
+          && request.resource.data.createdAt == request.time;
+      allow read: if request.auth != null
+          && (resource.data.userId == request.auth.uid || isReviewer());
+      allow delete: if request.auth != null
+          && resource.data.userId == request.auth.uid;
+      allow update: if isReviewer()
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['status', 'resolvedAt', 'resolvedBy'])
+          && request.resource.data.status in ['open', 'done', 'dismissed'];
     }
 
     // ── NOTES, HIGHLIGHTS, BOOKMARKS, REVISION CARDS ─────────────

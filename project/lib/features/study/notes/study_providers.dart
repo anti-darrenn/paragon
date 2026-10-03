@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/data/read_meter.dart';
 import '../../../core/lessons/lesson_doc.dart';
 import '../../../core/models/question.dart';
 import '../../../core/providers/auth_provider.dart';
@@ -205,7 +206,7 @@ final savedQuestionProvider = FutureProvider.autoDispose.family<Question?, Strin
   (ref, id) async {
     final db = ref.watch(studyDbProvider);
     if (db == null) return null;
-    final snap = await db.collection('questions').doc(id).get();
+    final snap = await db.collection('questions').doc(id).get().metered();
     return snap.exists ? Question.fromFirestore(snap) : null;
   },
   retry: _noRetry,

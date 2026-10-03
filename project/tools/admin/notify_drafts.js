@@ -179,8 +179,7 @@ function writerEmails(notices) {
 }
 
 /** New reports since the cursor, grouped by question. */
-async function pendingReports(db) {
-  const meta = await db.collection("_meta").doc("notify").get();
+async function pendingReports(db, meta) {
   const cursor = meta.exists ? meta.data().flagsNotifiedThrough : null;
 
   let query = db.collection("flags").orderBy("createdAt", "asc");
@@ -231,18 +230,56 @@ async function pendingReports(db) {
   };
 }
 
-function subjectLine(submitted, reports) {
+/**
+ * New "Send feedback" messages since `_meta/notify.feedbackNotifiedThrough`,
+ * the same cursor scheme as reports. The message is the student's own
+ * words, shortened; the privacy policy says the team reads them.
+ */
+async function pendingFeedback(db, meta) {
+  const cursor = meta.exists ? meta.data().feedbackNotifiedThrough : null;
+  let query = db.collection("feedback").orderBy("createdAt", "asc");
+  if (cursor) query = query.where("createdAt", ">", cursor);
+  const snap = await query.limit(MAX_REPORTS).get();
+  console.log(`${snap.size} feedback messages since ${cursor ? cursor.toDate().toISOString() : "the start"}`);
+  if (snap.empty) return { items: [], through: null, count: 0 };
+  const items = snap.docs.map((doc) => {
+    const { kind, message, screen } = doc.data();
+    const text = oneLine(message || "");
+    return {
+      kind: FEEDBACK_KINDS[kind] || FEEDBACK_KINDS.other,
+      message: text.length > 300 ? `${text.slice(0, 300)}…` : text,
+      screen: screen || "",
+    };
+  });
+  return {
+    items,
+    count: snap.size,
+    through: snap.docs[snap.docs.length - 1].data().createdAt,
+  };
+}
+
+const FEEDBACK_KINDS = {
+  idea: "Idea",
+  problem: "Problem",
+  praise: "Praise",
+  other: "Other",
+};
+
+function subjectLine(submitted, reports, feedback = { count: 0 }) {
   const parts = [];
   if (submitted.length === 1) parts.push(`Ready for review: ${submitted[0].title}`);
   else if (submitted.length > 1) parts.push(`${submitted.length} items ready for review`);
   if (reports.count > 0) {
     parts.push(`${reports.count} new problem report${reports.count === 1 ? "" : "s"}`);
   }
+  if (feedback.count > 0) {
+    parts.push(`${feedback.count} new feedback message${feedback.count === 1 ? "" : "s"}`);
+  }
   return parts.join(", ");
 }
 
 /** The reviewers' digest: submitted items and new problem reports. */
-function buildEmail(submitted, reports) {
+function buildEmail(submitted, reports, feedback = { items: [] }) {
   const text = [];
   const html = [];
 
@@ -300,6 +337,26 @@ function buildEmail(submitted, reports) {
     );
   }
 
+  if (feedback.items.length) {
+    text.push(
+      "Students sent feedback:",
+      "",
+      ...feedback.items.map((f) => `- [${f.kind}] ${f.message}
+  on ${f.screen}`),
+      "",
+    );
+    html.push(
+      "<p>Students sent feedback:</p>",
+      "<ul>",
+      ...feedback.items.map(
+        (f) =>
+          `<li><strong>${escapeHtml(f.kind)}</strong>: ${escapeHtml(f.message)}` +
+          `<br><span style="color:#666">on ${escapeHtml(f.screen)}</span></li>`,
+      ),
+      "</ul>",
+    );
+  }
+
   text.push(
     `Content studio: ${adminLink()}`,
     "",
@@ -334,14 +391,20 @@ async function main() {
   const { FieldValue } = admin.firestore;
 
   const notices = await pendingNotices(db, admin.auth());
-  const reports = await pendingReports(db);
+  // One read of the cursors, shared by reports and feedback.
+  const meta = await db.collection("_meta").doc("notify").get();
+  const reports = await pendingReports(db, meta);
+  const feedback = await pendingFeedback(db, meta);
   const submitted = notices.filter((n) => n.status === "in_review");
   const verdicts = writerEmails(notices);
-  if (notices.length === 0 && reports.count === 0) return;
+  if (notices.length === 0 && reports.count === 0 && feedback.count === 0) return;
 
   const digest =
-    submitted.length || reports.count
-      ? { subject: subjectLine(submitted, reports), ...buildEmail(submitted, reports) }
+    submitted.length || reports.count || feedback.count
+      ? {
+          subject: subjectLine(submitted, reports, feedback),
+          ...buildEmail(submitted, reports, feedback),
+        }
       : null;
 
   if (DRY_RUN) {
@@ -362,6 +425,9 @@ async function main() {
     for (const n of submitted) batch.update(n.ref, { pendingNotice: FieldValue.delete() });
     if (reports.through) {
       batch.set(db.collection("_meta").doc("notify"), { flagsNotifiedThrough: reports.through }, { merge: true });
+    }
+    if (feedback.through) {
+      batch.set(db.collection("_meta").doc("notify"), { feedbackNotifiedThrough: feedback.through }, { merge: true });
     }
     await batch.commit();
   }

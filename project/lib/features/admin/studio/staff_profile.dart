@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/data/read_meter.dart';
 import '../../../core/models/firestore_parsing.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/widgets/user_avatar.dart';
@@ -45,6 +46,7 @@ final staffProfileProvider = StreamProvider.family<StaffProfile?, String>((
       .collection('staffProfiles')
       .doc(uid)
       .snapshots()
+      .metered()
       .map((s) => StaffProfile.fromData(s.data()));
 });
 
