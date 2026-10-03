@@ -377,6 +377,49 @@ class EmptyState extends StatelessWidget {
   }
 }
 
+/// A grey block that gently pulses, standing in for content still
+/// loading, so the page keeps its shape instead of jumping when it lands.
+class SkeletonBox extends StatefulWidget {
+  const SkeletonBox({super.key, this.width, this.height = 14, this.radius = 6});
+
+  final double? width;
+  final double height;
+  final double radius;
+
+  @override
+  State<SkeletonBox> createState() => _SkeletonBoxState();
+}
+
+class _SkeletonBoxState extends State<SkeletonBox>
+    with SingleTickerProviderStateMixin {
+  late final _pulse = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 900),
+    lowerBound: 0.45,
+  )..repeat(reverse: true);
+
+  @override
+  void dispose() {
+    _pulse.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeTransition(
+      opacity: _pulse,
+      child: Container(
+        width: widget.width,
+        height: widget.height,
+        decoration: BoxDecoration(
+          color: context.palette.track,
+          borderRadius: BorderRadius.circular(widget.radius),
+        ),
+      ),
+    );
+  }
+}
+
 /// A page's own heading, under the app bar: a big title, an optional
 /// line beneath it, and room for an action.
 class PageIntro extends StatelessWidget {

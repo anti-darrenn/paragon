@@ -175,6 +175,7 @@ class YourSubjects extends ConsumerWidget {
     // prompt to fix something that is not broken.
     if (selected.isEmpty) return const SizedBox.shrink();
 
+    if (catalogAsync.isLoading) return const _SubjectsSkeleton();
     final courses = catalogAsync.asData?.value ?? const <CourseSummary>[];
     final mine = courses.where((c) => selected.contains(c.slug)).toList();
     if (mine.isEmpty) return const SizedBox.shrink();
@@ -303,7 +304,13 @@ class _ContinueLearning extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final c = ref.watch(continueLearningProvider);
-    if (c == null) return const SizedBox.shrink();
+    if (c == null) {
+      // Hold the card's place while progress loads, so the page does not
+      // jump down when it arrives.
+      return ref.watch(continueLearningLoadingProvider)
+          ? const _ContinueSkeleton()
+          : const SizedBox.shrink();
+    }
     final next = c.next;
     final fraction = c.total == 0 ? 0.0 : c.done / c.total;
 
@@ -395,6 +402,89 @@ class _ContinueLearning extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// The continue card's shape, pulsing, while it loads.
+class _ContinueSkeleton extends StatelessWidget {
+  const _ContinueSkeleton();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Padding(
+      padding: EdgeInsets.only(bottom: kSectionGap),
+      child: SurfaceCard(
+        key: ValueKey('dashboard.continueSkeleton'),
+        padding: EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                SkeletonBox(width: 44, height: 44, radius: 12),
+                SizedBox(width: 14),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SkeletonBox(width: 110, height: 10),
+                    SizedBox(height: 8),
+                    SkeletonBox(width: 220, height: 18),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 18),
+            SkeletonBox(width: 260),
+            SizedBox(height: 16),
+            Row(
+              children: [
+                Expanded(child: SkeletonBox(height: 6)),
+                SizedBox(width: 16),
+                SkeletonBox(width: 110, height: 40, radius: 12),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// "Your subjects" while the catalog loads: the heading and three rows.
+class _SubjectsSkeleton extends StatelessWidget {
+  const _SubjectsSkeleton();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SectionHeader('Your subjects'),
+        for (var i = 0; i < 3; i++) ...[
+          if (i > 0) const SizedBox(height: 10),
+          const SurfaceCard(
+            child: Row(
+              children: [
+                SkeletonBox(width: 4, height: 36, radius: 2),
+                SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SkeletonBox(width: 140),
+                      SizedBox(height: 8),
+                      SkeletonBox(width: 90, height: 10),
+                    ],
+                  ),
+                ),
+                SkeletonBox(width: 40, height: 40, radius: 20),
+              ],
+            ),
+          ),
+        ],
+        const SizedBox(height: kSectionGap),
+      ],
     );
   }
 }

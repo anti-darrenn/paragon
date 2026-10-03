@@ -54,3 +54,14 @@ final continueLearningProvider = Provider<ContinueLearning?>((ref) {
     total: availableCount(resources),
   );
 });
+
+/// True while [continueLearningProvider] cannot yet say whether there is
+/// anything to continue: progress is still arriving, or the topic it
+/// points at is still loading.
+final continueLearningLoadingProvider = Provider<bool>((ref) {
+  if (ref.watch(lessonProgressLoadingProvider)) return true;
+  final recent = ref.watch(lessonProgressProvider).mostRecent;
+  if (recent == null) return false;
+  return ref.watch(topicByIdProvider(recent.topicId)).isLoading ||
+      ref.watch(topicResourcesProvider(recent.topicId)).isLoading;
+});
