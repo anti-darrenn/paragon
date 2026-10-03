@@ -121,7 +121,11 @@ does not have.
 
 ## Architecture
 
-Flutter web app (Riverpod v3 + go_router v17 + Firebase v4) over a Firestore content tree seeded by Node scrapers.
+Flutter web app (Flutter 3.47 / Dart 3.12+, Riverpod v3 + go_router v18 + Firebase v4) over a Firestore content tree seeded by Node scrapers.
+
+**google_fonts is held at 8 on purpose.** Version 9 is built on the separate `material_ui`
+package, and its `TextTheme` is not `flutter/material`'s, so `AppTheme` stops compiling.
+Moving to it means migrating the whole app onto `material_ui`, not bumping a version.
 
 **Two parallel product modes that must never merge:**
 
@@ -452,7 +456,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 `\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
 
-**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` exactly in dark. **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading (`appearanceProvider`). The light theme has not yet been reviewed screen by screen in a browser, so **`kAppearanceChoiceEnabled` is `false`**: the choice is hidden and the app is always dark. Review light mode, then flip it.
+**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` exactly in dark. **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
 
 ## Firestore conventions
 
@@ -486,7 +490,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 
 ## Riverpod v3 gotchas
 
-`.valueOrNull` does not exist in v3.3.1 — read `AsyncValue` with `.asData?.value`. `weeklyAttemptsCountProvider` is a `StreamProvider`; keep it one. Use `StreamProvider` for Firestore streams, `FutureProvider` for one-shots, plain `Provider` for derived state.
+`.valueOrNull` does not exist in v3 (still absent in 3.4.3) — read `AsyncValue` with `.asData?.value`. `weeklyAttemptsCountProvider` is a `StreamProvider`; keep it one. Use `StreamProvider` for Firestore streams, `FutureProvider` for one-shots, plain `Provider` for derived state.
 
 ## Commits
 
@@ -503,7 +507,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 819 tests, not the 2 this file used to claim. `test/generated_latex_test.dart`
+- The suite is 924 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
