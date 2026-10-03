@@ -126,15 +126,15 @@ class _AnnotatedBlockState extends ConsumerState<AnnotatedBlock> {
     final action = await showDialog<String>(
       context: context,
       builder: (ctx) => AlertDialog(
-        backgroundColor: context.palette.surface,
+        backgroundColor: ctx.palette.surface,
         title: Text(
           'Your note',
-          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
+          style: AppTheme.heading3.copyWith(color: ctx.palette.textPrimary),
         ),
         content: SingleChildScrollView(
           child: Text(
             widget.note?.text ?? '',
-            style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),
+            style: AppTheme.bodyMd.copyWith(color: ctx.palette.textPrimary),
           ),
         ),
         actions: [

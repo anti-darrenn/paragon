@@ -87,7 +87,7 @@ class _ScratchpadOverlayState extends State<ScratchpadOverlay> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (dialog) => AlertDialog(
-        backgroundColor: context.palette.surface,
+        backgroundColor: dialog.palette.surface,
         title: const Text('Clear the scratchpad?'),
         content: const Text('You can undo this.'),
         actions: [

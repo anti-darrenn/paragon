@@ -932,7 +932,7 @@ class _AdminResourceEditorScreenState
     final ok = await showDialog<bool>(
       context: context,
       builder: (dialog) => AlertDialog(
-        backgroundColor: context.palette.surface,
+        backgroundColor: dialog.palette.surface,
         title: const Text('Request changes'),
         content: TextField(
           controller: reason,
