@@ -31,6 +31,7 @@ void main() {
     await db.collection('attempts').add({'userId': 'u1', 'timestamp': at});
     await db.collection('notes').add({'userId': 'u1', 'text': 'hi'});
     await db.collection('flags').add({'userId': 'u1', 'reason': 'wrong'});
+    await db.collection('feedback').add({'userId': 'u1', 'message': 'hi'});
     await db.collection('examResults').add({'userId': 'u1', 'submittedAt': at});
     // Someone else's, which must not appear.
     await db.collection('attempts').add({'userId': 'u2', 'timestamp': at});
@@ -43,6 +44,7 @@ void main() {
     expect(out['attempts'], hasLength(2));
     expect(out['notes'], hasLength(1));
     expect(out['flags'], hasLength(1));
+    expect(out['feedback'], hasLength(1));
     for (final key in ['progress', 'learn', 'study']) {
       expect(out.containsKey(key), isTrue, reason: key);
     }
@@ -67,8 +69,9 @@ void main() {
   });
 
   test('exportSize counts owned documents only', () async {
-    // 6 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 exam.
-    expect(await repo.exportSize('u1'), 11);
+    // 6 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 feedback
+    // + 1 exam.
+    expect(await repo.exportSize('u1'), 12);
   });
 
   test('covers everything deletion removes', () async {
@@ -95,7 +98,13 @@ void main() {
     ]) {
       expect(after.containsKey(key), isFalse, reason: key);
     }
-    for (final key in ['attempts', 'notes', 'flags', 'examResults']) {
+    for (final key in [
+      'attempts',
+      'notes',
+      'flags',
+      'feedback',
+      'examResults',
+    ]) {
       expect(after[key], isEmpty, reason: key);
     }
   });

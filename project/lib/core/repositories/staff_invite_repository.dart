@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../models/firestore_parsing.dart';
 
 /// Requests to give someone a content-team role, and their outcome.
@@ -120,5 +121,6 @@ final staffInvitesProvider = StreamProvider<List<StaffInvite>>((ref) {
       .collection('staffInvites')
       .orderBy('requestedAt', descending: true)
       .snapshots()
+      .metered()
       .map((s) => s.docs.map(StaffInvite.fromFirestore).toList());
 });

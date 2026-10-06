@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../lessons/subject_index.dart';
 import '../models/learn_resource.dart';
 
@@ -31,7 +32,8 @@ class SubjectIndexRepository {
         .collection('resources')
         .where('status', isEqualTo: 'published')
         .orderBy('order')
-        .get();
+        .get()
+        .metered();
     final entry = _entry(
       topicId,
       topicName,
@@ -57,7 +59,8 @@ class SubjectIndexRepository {
         .collectionGroup('resources')
         .where('subjectId', isEqualTo: subjectId)
         .where('status', isEqualTo: 'published')
-        .get();
+        .get()
+        .metered();
     final byTopic = <String, List<LearnResource>>{};
     for (final d in snap.docs) {
       final r = LearnResource.fromFirestore(d);
@@ -113,6 +116,7 @@ final subjectIndexProvider = FutureProvider.family<SubjectIndex, String>((
   final doc = await FirebaseFirestore.instance
       .collection('subjectIndex')
       .doc(subjectId)
-      .get();
+      .get()
+      .metered();
   return doc.exists ? SubjectIndex.fromFirestore(doc) : SubjectIndex.empty;
 });

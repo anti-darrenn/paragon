@@ -9,6 +9,9 @@ import 'features/account/account_sync.dart';
 import 'features/account/guest_upgrade.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_palette.dart';
+import 'core/data/error_reporter.dart';
+import 'core/data/read_meter_overlay.dart';
+import 'core/widgets/quota_banner.dart';
 
 class ParagonApp extends ConsumerWidget {
   const ParagonApp({super.key});
@@ -19,6 +22,8 @@ class ParagonApp extends ConsumerWidget {
     // changes and to auth state. Nothing reads its value — see
     // analytics_binding.dart.
     ref.watch(analyticsBindingProvider);
+    // Uncaught errors become an `app_error` event; see error_reporter.dart.
+    ref.watch(errorReporterProvider);
     // Finishes carrying a former guest's device-only notes and cards into
     // their account, if an upgrade was interrupted. Usually a no-op.
     ref.watch(guestDataCopyProvider);
@@ -45,7 +50,15 @@ class ParagonApp extends ConsumerWidget {
         if (readingSettingsLoading) {
           return ColoredBox(color: context.palette.background);
         }
-        return ReadingSettingsScope(child: child ?? const SizedBox.shrink());
+        // The read meter draws only in debug builds; the quota banner shows
+        // only while Firestore's daily quota is spent.
+        return ReadMeterOverlay(
+          child: QuotaBanner(
+            child: ReadingSettingsScope(
+              child: child ?? const SizedBox.shrink(),
+            ),
+          ),
+        );
       },
     );
   }

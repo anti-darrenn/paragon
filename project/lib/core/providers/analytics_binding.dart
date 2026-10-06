@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../router/app_router.dart';
+import '../data/error_reporter.dart';
+import '../data/read_meter.dart';
 import 'analytics_provider.dart';
 import 'auth_provider.dart';
 
@@ -101,7 +103,13 @@ final analyticsBindingProvider = Provider<AnalyticsBinding>((ref) {
   }, fireImmediately: true);
 
   final binding = AnalyticsBinding(
-    onScreen: analytics.screen,
+    onScreen: (screen) {
+      analytics.screen(screen);
+      // Files debug read counts and error reports under the same route
+      // pattern.
+      ReadMeter.instance.enter(screen);
+      ErrorReporter.screen = screen;
+    },
     router: ref.watch(appRouterProvider),
   );
   ref.onDispose(binding.dispose);
