@@ -148,6 +148,14 @@ async function main() {
     assertSucceeds(getDocs(query(collection(reviewer(), "waitlist"), where("subjects", "array-contains", "biology")))),
   );
 
+  console.log("\nplan/{uid}: accounts only");
+  const planDoc = (uid, goal = 100) => ({ userId: uid, weeklyGoal: goal, examDate: null, updatedAt: serverTimestamp() });
+  await check("an account saves its plan", assertSucceeds(setDoc(doc(student("ann"), "plan/ann"), planDoc("ann"))));
+  await check("a guest cannot", assertFails(setDoc(doc(guest("g4"), "plan/g4"), planDoc("g4"))));
+  await check("not on another's uid", assertFails(setDoc(doc(student("ann"), "plan/bob"), planDoc("bob"))));
+  await check("a goal off the list is refused", assertFails(setDoc(doc(student("ann"), "plan/ann"), planDoc("ann", 7))));
+  await check("another's plan is private", assertFails(getDoc(doc(student("bob"), "plan/ann"))));
+
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));
 

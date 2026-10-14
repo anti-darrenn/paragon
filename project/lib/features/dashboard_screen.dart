@@ -18,6 +18,8 @@ import '../core/widgets/ui/ui.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/auth/feature_access.dart';
+import 'plan/plan_widgets.dart';
 
 /// What home says to the student: a greeting and a line under it, one
 /// pair picked at random each visit so the page does not read the same
@@ -111,6 +113,7 @@ class DashboardScreen extends ConsumerWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
+                              ThisWeekCard(),
                               _Stats(),
                               SizedBox(height: kSectionGap),
                               _QuickLinks(),
@@ -124,6 +127,7 @@ class DashboardScreen extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       _ContinueLearning(),
+                      ThisWeekCard(),
                       _Stats(),
                       SizedBox(height: kSectionGap),
                       YourSubjects(),
@@ -500,6 +504,12 @@ class _Stats extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    // An account's week is on the "This week" card above, against its
+    // goal; only a guest, who has no plan, sees the bare count here.
+    final showWeek = !canUse(
+      Feature.studyPlan,
+      isGuest: ref.watch(isGuestProvider),
+    );
     final weekly = ref.watch(weeklyAttemptsCountProvider);
     final week = weekly.when(
       loading: () => '—',
@@ -524,8 +534,8 @@ class _Stats extends ConsumerWidget {
                   : '${progress.completedTopicCount} at proficient',
             ),
           ),
-          const SizedBox(width: 12),
-          Expanded(
+          if (showWeek) const SizedBox(width: 12),
+          if (showWeek) Expanded(
             child: _StatTile(
               icon: Icons.check_circle_outline_rounded,
               color: AppColors.accentBlue,

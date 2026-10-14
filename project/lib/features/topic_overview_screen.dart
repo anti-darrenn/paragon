@@ -17,6 +17,7 @@ import 'lesson/video_pane.dart';
 import 'study/offline/save_offline_button.dart';
 import '../core/theme/app_palette.dart';
 import '../core/providers/analytics_provider.dart';
+import 'plan/plan_widgets.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -179,6 +180,16 @@ class _TopicBody extends StatelessWidget {
             ),
           ],
         ),
+
+        if (topicFrequencyLine(course, topic.id) case final line?) ...[
+          const SizedBox(height: 8),
+          Text(
+            line,
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
+          ),
+        ],
 
         SizedBox(height: isCompact ? 28 : 40),
 

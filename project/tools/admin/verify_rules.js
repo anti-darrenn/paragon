@@ -1123,6 +1123,29 @@ async function waitlist(a, b) {
   );
 }
 
+async function plan(a, b) {
+  suite('plan/{uid} — weekly goal and exam date, accounts only');
+
+  // Guests again: the anonymous clause refuses them; the account path is
+  // exercised by hand and on the emulator (tools/rules-test).
+  const p = (uid) => ({ userId: str(uid), weeklyGoal: { integerValue: '100' } });
+  expectOutcome(
+    'a guest cannot save a plan',
+    DENY,
+    await commit(a.idToken, write(`plan/${a.uid}`, p(a.uid), { transforms: [serverTime('updatedAt')] })),
+  );
+  expectOutcome(
+    "a plan on another student's uid is refused",
+    DENY,
+    await commit(b.idToken, write(`plan/${a.uid}`, p(a.uid), { transforms: [serverTime('updatedAt')] })),
+  );
+  expectOutcome(
+    "another student's plan is not readable",
+    DENY,
+    await readDoc(b.idToken, `plan/${a.uid}`),
+  );
+}
+
 async function staffProfiles(a, b) {
   suite('staffProfiles/{uid} — the team only');
 
@@ -1667,6 +1690,7 @@ async function teardown(a, b, usernameKey) {
   await studyData(a, b);
   await accountRequests(a, b);
   await waitlist(a, b);
+  await plan(a, b);
   await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);

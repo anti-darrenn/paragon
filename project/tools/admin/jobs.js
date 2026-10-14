@@ -127,6 +127,7 @@ const OWNED = [
   ["accountRequests", null],
   ["staffProfiles", null],
   ["waitlist", null],
+  ["plan", null],
   ["users", null],
 ];
 

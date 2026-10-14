@@ -151,6 +151,23 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── PLAN (weekly goal and exam date) ────────────────────────
+    // The study plan's inputs only; the plan is computed on the device.
+    // Accounts only, owner only, closed field set, server time, a goal
+    // from the fixed list (`kWeeklyGoals`).
+    match /plan/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly(['userId', 'weeklyGoal', 'examDate', 'updatedAt'])
+        && request.resource.data.userId == uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.weeklyGoal in [50, 100, 200, 400]
+        && (!('examDate' in request.resource.data)
+            || request.resource.data.examDate == null
+            || request.resource.data.examDate is timestamp);
+    }
+
     // ── WAITLIST ("Notify me" on a coming-soon subject) ──────────
     // One document per student, id'd by uid, listing the catalog slugs of
     // the subjects they want. Accounts only — the point is to reach them

@@ -197,6 +197,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'kind you chose, which screen of the app you sent it from, and '
             'your account identifier. The Paragon team reads it, and it is '
             'deleted when your account is deleted.',
+        'Your plan. If you set a weekly goal or the date of your exam, we '
+            'store them with your account to work out your study plan on '
+            'your device. Only you can see them, and they are deleted when '
+            'your account is deleted.',
         'Subjects you want. If you tap "Notify me" on a subject that is not '
             'ready yet, we store which subjects you asked about, with your '
             'account. The Paragon team sees how many students want each '

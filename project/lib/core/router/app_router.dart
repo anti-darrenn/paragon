@@ -24,6 +24,7 @@ import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
+import 'package:paragon/features/plan/plan_screen.dart';
 import 'package:paragon/features/profile_settings_screen.dart';
 import 'package:paragon/features/profile/edit_profile_screen.dart';
 import 'package:paragon/features/profile/me_screen.dart';
@@ -315,6 +316,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/',
                 builder: (context, state) => const DashboardScreen(),
+              ),
+              GoRoute(
+                path: '/plan',
+                builder: (context, state) => const PlanScreen(),
               ),
             ],
           ),

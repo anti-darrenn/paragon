@@ -131,6 +131,8 @@ class AccountRepository {
     await _db.collection('staffProfiles').doc(uid).delete();
     // "Notify me" sign-ups for coming-soon subjects.
     await _db.collection('waitlist').doc(uid).delete();
+    // Weekly goal and exam date.
+    await _db.collection('plan').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 
@@ -181,6 +183,7 @@ class AccountRepository {
     'accountRequests',
     'staffProfiles',
     'waitlist',
+    'plan',
   ];
 
   /// How many documents an export of [uid] would read, from `count()`

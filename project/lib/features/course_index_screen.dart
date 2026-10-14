@@ -17,6 +17,8 @@ import '../core/widgets/mastery_indicator.dart';
 import 'study/cards/revision_cards_entry.dart';
 import 'waitlist/notify_me_button.dart';
 import '../core/theme/app_palette.dart';
+import '../core/repositories/plan_repository.dart';
+import 'plan/plan_widgets.dart';
 
 /// Course index for one subject — `/subject/:subjectKey/course`.
 ///
@@ -61,6 +63,11 @@ class CourseIndexScreen extends ConsumerWidget {
           course: course,
           progress: progress,
           canChallenge: canChallenge,
+          canPlan: canUse(
+            Feature.studyPlan,
+            isGuest: ref.watch(isGuestProvider),
+          ),
+          examDate: ref.watch(planSettingsProvider).asData?.value.examDate,
         ),
       ),
     );
@@ -88,11 +95,15 @@ class _CourseBody extends StatelessWidget {
     required this.course,
     required this.progress,
     this.canChallenge = false,
+    this.canPlan = false,
+    this.examDate,
   });
 
   final Course course;
   final UserProgress progress;
   final bool canChallenge;
+  final bool canPlan;
+  final DateTime? examDate;
 
   @override
   Widget build(BuildContext context) {
@@ -160,6 +171,17 @@ class _CourseBody extends StatelessWidget {
             course: course,
             progress: progress,
             accent: accent,
+          ),
+        ],
+
+        // The grade estimate and shortest path, for an account with some
+        // practice here — read from what this page already loaded.
+        if (course.isLive && canPlan && course.hasProgressToShow) ...[
+          const SizedBox(height: 20),
+          CoursePlanPanel(
+            course: course,
+            progress: progress,
+            examDate: examDate,
           ),
         ],
 
