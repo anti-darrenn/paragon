@@ -66,3 +66,31 @@ first load. The floor is the Flutter engine plus framework.
 DevTools → Network → "Fast 3G", cache disabled, open the site. Record the time to
 the splash, the time to the first Flutter frame, and the total transferred, on the
 production build. Then repeat with the cache enabled for a return visit.
+
+## 2026-10-14: the first-visit extras (Wave D, PLAN.md Phase 4)
+
+The engine and `main.dart.js` are unchanged: about 1.48 MB gzipped, 1,478,689 B after this
+wave against 1,479,114 B before. The extras around them, which the table above left as
+"plus fonts … and images", were cut. All sizes are gzip -9.
+
+| What | Before | After | How |
+| --- | ---: | ---: | --- |
+| KaTeX fonts fetched at startup | 21 files | 12 files | `tools/site/trim_fonts.js` removes Caligraphic, Fraktur, SansSerif, Script and Typewriter from the built `FontManifest`. **−140 KB gz** (228 KB raw). The corpus never uses them; control: 66k `\frac` found by the same grep. |
+| `paragon_logo.png` (first screen) | 149 KB | 42 KB | Generated at 128 px tall, 2x its largest drawn size, from a full-size source in `tool/logo_source/`. PNG is already compressed, so this is **−107 KB on the wire**. |
+| `paragon_logo_light.png` (light theme) | 128 KB | 34 KB | The same. |
+| Link-preview image | 113 KB PNG | 50 KB JPEG | Not part of the app's load; it speeds up WhatsApp previews. |
+| `google_sign_in` | plugin | removed | It was never imported; sign-in uses `signInWithPopup`. The bundle is unchanged, and there is one plugin less to register. |
+
+That is **about 250 KB less on a first visit (≈ 7%)** and 9 fewer requests, which is
+roughly 1.2 s on "Fast 3G". The course catalog, course index and topic pages now show
+skeletons (`SkeletonPage`) instead of a spinner on a blank page.
+
+**Still not measured:** Lighthouse on Slow 4G (PLAN P4.1/P4.9). It needs a browser on the
+deployed preview; record LCP and transfer here when it is run. The PLAN's "≥ 30% lower"
+target can't be met from here. Two-thirds of the first visit is CanvasKit and the
+framework, and the levers that move those were measured above and declined:
+- `--wasm` is about 5%, with a second rendering path;
+- code splitting saves about 50 KB.
+
+The static `/past-questions/` pages (Wave C) are where a first visit can be small: about
+40 KB including CSS and the fonts a page uses.

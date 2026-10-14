@@ -10,6 +10,7 @@ import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/ui/ui.dart';
 import '../core/widgets/share_link_button.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
@@ -51,8 +52,10 @@ class CourseIndexScreen extends ConsumerWidget {
       title: courseAsync.asData?.value.name ?? 'Course',
       fallbackPath: '/courses',
       child: courseAsync.when(
-        loading: () =>
-            const _CenteredMessage(child: CircularProgressIndicator()),
+        loading: () => const Padding(
+          padding: EdgeInsets.only(top: 40),
+          child: SkeletonPage(count: 4, cardHeight: 140),
+        ),
         error: (error, _) => _CourseError(error: error),
         data: (course) => _CourseBody(
           course: course,

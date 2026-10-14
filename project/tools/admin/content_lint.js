@@ -76,6 +76,10 @@ function mathProblems(body) {
   return out;
 }
 
+/** Mirrors `droppedFontCommand` in lesson_check.dart and `DROPPED_COMMANDS`
+ *  in tools/site/trim_fonts.js: maths whose font the web build does not ship. */
+const DROPPED_FONT = /\x5c(mathcal|mathfrak|mathscr|mathsf|textsf|texttt|mathtt)\b/;
+
 function problemsFor(r) {
   const out = [];
   const title = String(r.title || "").trim();
@@ -84,6 +88,8 @@ function problemsFor(r) {
   if (r.type === "article") {
     if (!String(r.body || "").trim()) out.push("article has no text");
     out.push(...mathProblems(r.body));
+    const dropped = String(r.body || "").match(DROPPED_FONT);
+    if (dropped) out.push(`\\${dropped[1]} uses a font the web build drops (trim_fonts.js)`);
   }
   if (r.type === "video" && !String(r.youtubeId || "").trim()) {
     out.push("video has no YouTube link");

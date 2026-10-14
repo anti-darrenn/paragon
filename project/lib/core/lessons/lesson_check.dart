@@ -64,6 +64,13 @@ List<LessonIssue> checkPublishable({
   return out;
 }
 
+/// Maths commands whose KaTeX fonts the web build drops to save the first
+/// load (`tools/site/trim_fonts.js`, `DROPPED_COMMANDS` — change both
+/// together). They still render, in the main font.
+final RegExp droppedFontCommand = RegExp(
+  r'\\(mathcal|mathfrak|mathscr|mathsf|textsf|texttt|mathtt)\b',
+);
+
 /// Maths spans that fail to parse: `\(...\)`, `\[...\]` and `$$...$$`,
 /// matched the way `FullLatexView` matches them. An unclosed `\(` or `\[`
 /// is reported too — `FullLatexView` would print it as raw text.
@@ -86,6 +93,18 @@ List<LessonIssue> mathIssues(String body) {
     } catch (e) {
       final shown = tex.length > 40 ? '${tex.substring(0, 37)}...' : tex;
       out.add(LessonIssue(lineAt(at), 'Maths won\'t render: $shown'));
+      return;
+    }
+    final dropped = droppedFontCommand.firstMatch(tex);
+    if (dropped != null) {
+      out.add(
+        LessonIssue(
+          lineAt(at),
+          '\\${dropped.group(1)} uses a font Paragon does not ship; it will '
+          'show in the ordinary maths font.',
+          severity: IssueSeverity.warning,
+        ),
+      );
     }
   }
 

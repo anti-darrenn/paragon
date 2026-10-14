@@ -21,6 +21,13 @@ flutter test test/latex_render_test.dart --plain-name "MathText"  # single test
 flutter build web --release; node tools/site/build_static_site.js; firebase deploy --only hosting   # deploy (project paragon-hq)
 ```
 
+**KaTeX fonts are trimmed after the build.** `tools/site/trim_fonts.js` (run by the
+post-build step) drops Caligraphic, Fraktur, SansSerif, Script and Typewriter from the
+built `FontManifest.json`, because Flutter web downloads every manifest font at startup:
+9 requests and 140 KB gzipped. The editor and `content_lint.js` warn on `\mathcal`,
+`\mathfrak`, `\mathscr`, `\mathsf`, `\textsf`, `\texttt` and `\mathtt`, which would
+fall back to the main font. If content needs one of these, drop it from the trim list.
+
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
 once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
 Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
@@ -466,9 +473,11 @@ cards**:
 `flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
 1.2 MB of render-blocking download that nothing used. The page now carries only
 an inline-CSS loading splash, removed on Flutter's `flutter-first-frame` event.
-The icons, `favicon.png` and `og-image.png` are generated from
-`assets/images/paragon_logo.png` by `dart run tool/make_icons.dart`; re-run it if the
-logo changes. The logo itself is drawn only by `ParagonLogo`
+The icons, `favicon.png`, `og-image.jpg` and the app's own `assets/images/paragon_logo*.png`
+(128 px tall, 2x their largest drawn size) are generated from the full-size sources in
+`tool/logo_source/` by `dart run tool/make_icons.dart`; re-run it if the logo changes,
+and never put a full-size image in `assets/` (the 149 KB logo was the largest thing on
+the first screen after the engine). The logo itself is drawn only by `ParagonLogo`
 (`lib/core/widgets/paragon_logo.dart`), which picks `paragon_logo.png` (white letters) on
 dark and `paragon_logo_light.png` (black letters) on light — the white wordmark vanishes on
 the light background. Change both files together. `og:image` is an absolute URL, as link-preview crawlers require.
@@ -551,7 +560,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 971 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 972 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

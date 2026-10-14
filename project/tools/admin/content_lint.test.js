@@ -22,3 +22,7 @@ assert.strictEqual(problemsFor(article("Indices", String.raw`Bad \(\frac{1}\) ma
 assert.strictEqual(problemsFor(article("Indices", String.raw`Open \( never closed`)).length, 1);
 
 console.log("content_lint: all checks passed");
+// A font the web build drops is reported; ordinary maths is not.
+assert.strictEqual(problemsFor(article("Sets", String.raw`Set \(\mathcal{A}\)`)).length, 1);
+assert.deepStrictEqual(problemsFor(article("Sets", String.raw`\(\mathbb{R}\)`)), []);
+console.log("content_lint: font checks passed");

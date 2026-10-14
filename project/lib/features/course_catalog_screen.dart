@@ -7,6 +7,7 @@ import '../core/repositories/course_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/ui/ui.dart';
 import '../core/theme/app_palette.dart';
 
 /// Course catalog — `/courses`.
@@ -50,10 +51,7 @@ class CourseCatalogScreen extends ConsumerWidget {
           SizedBox(height: isCompact ? 28 : 40),
 
           catalogAsync.when(
-            loading: () => const Padding(
-              padding: EdgeInsets.symmetric(vertical: 80),
-              child: Center(child: CircularProgressIndicator()),
-            ),
+            loading: () => const SkeletonPage(title: false, count: 5),
             error: (error, _) => Padding(
               padding: const EdgeInsets.symmetric(vertical: 60),
               child: Center(

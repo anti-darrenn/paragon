@@ -10,6 +10,7 @@ import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/ui/ui.dart';
 import '../core/widgets/share_link_button.dart';
 import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
@@ -47,8 +48,8 @@ class TopicOverviewScreen extends ConsumerWidget {
       fallbackPath: '/subject/$subjectKey/course',
       child: courseAsync.when(
         loading: () => const Padding(
-          padding: EdgeInsets.symmetric(vertical: 120),
-          child: Center(child: CircularProgressIndicator()),
+          padding: EdgeInsets.only(top: 40),
+          child: SkeletonPage(count: 3, cardHeight: 64),
         ),
         error: (error, _) => _NotFound(
           message: error is CourseNotFoundException

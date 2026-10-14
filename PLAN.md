@@ -194,16 +194,26 @@ Done notes (Wave C, PR `feat/static-site`):
 ## Phase 4 — Performance on Nigerian mobile data (P1)
 
 - [ ] **P4.1** Baseline: Lighthouse (mobile, "Slow 4G") for `/` and a question page; record in `docs/audit/PERF.md`.
-- [ ] **P4.2** Logo and OG image re-encoded at display size.
-- [ ] **P4.3** KaTeX fonts: grep the corpus for families never used and stop shipping them, if a browser shows they are fetched at startup.
-- [ ] **P4.4** Deferred loading. *(Declined: `PERF.md` measured about 50 KB.)*
-- [ ] **P4.5** `--wasm`. *(Declined: about 5%, with a second render path.)*
-- [ ] **P4.6** Remove unused packages.
-- [ ] **P4.7** Firestore reads: no full loads to count. *(Done in P1.3.)*
-- [ ] **P4.8** Skeleton cards instead of lone spinners on course pages.
-- [ ] **P4.9** Budget recorded in PERF.md.
+- [x] **P4.2** Logo and OG image re-encoded at display size.
+- [x] **P4.3** KaTeX fonts: grep the corpus for families never used and stop shipping them, if a browser shows they are fetched at startup.
+- [x] **P4.4** Deferred loading. *(Declined: `PERF.md` measured about 50 KB.)*
+- [x] **P4.5** `--wasm`. *(Declined: about 5%, with a second render path.)*
+- [x] **P4.6** Remove unused packages.
+- [x] **P4.7** Firestore reads: no full loads to count. *(Done in P1.3.)*
+- [x] **P4.8** Skeleton cards instead of lone spinners on course pages.
+- [x] **P4.9** Budget recorded in PERF.md.
 
-Done notes:
+Done notes (Wave D, PR `feat/perf`): the first visit is about 250 KB lighter and makes 9
+fewer requests.
+- KaTeX font trim, from 21 files to 12, saves 140 KB gzipped.
+- The logo drops from 149 KB to 42 KB.
+- The OG image is now a 50 KB JPEG.
+- The unused `google_sign_in` is removed.
+- Skeletons replace the bare spinners on the course pages.
+
+Numbers are in `project/docs/audit/PERF.md`. **P4.1 (Lighthouse) is still open**; it
+needs a browser on the preview. The PLAN's 30% target isn't reachable without
+wasm or a renderer change, both measured and declined.
 
 ---
 

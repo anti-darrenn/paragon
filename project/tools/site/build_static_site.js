@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /**
- * Static, indexable pages for every WAEC past question, written into the
- * Flutter build so one `firebase deploy --only hosting` ships both.
+ * The post-build step: static, indexable pages for every WAEC past
+ * question, written into the Flutter build so one `firebase deploy --only
+ * hosting` ships both — and the unused KaTeX fonts trimmed from the build
+ * (`trim_fonts.js`).
  *
  *   flutter build web --release
  *   node tools/site/build_static_site.js [--refresh] [--origin=https://…] [--out=build/web]
@@ -28,6 +30,7 @@ const fs = require("fs");
 const path = require("path");
 const { initAdmin } = require("../admin/credential");
 const R = require("./render");
+const { trimFonts } = require("./trim_fonts");
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -368,6 +371,11 @@ async function main() {
   if (!fs.existsSync(path.join(OUT, "index.html"))) {
     console.error(`No app build at ${OUT}. Run \`flutter build web --release\` first.`);
     process.exit(1);
+  }
+  // Part of the post-build step too: see trim_fonts.js.
+  const trimmed = trimFonts(OUT);
+  if (trimmed.files) {
+    console.log(`Dropped ${trimmed.families} unused KaTeX font families (${trimmed.files} files, ${Math.round(trimmed.bytes / 1024)} KB).`);
   }
   fs.rmSync(path.join(OUT, BASE), { recursive: true, force: true });
   const data = await loadData();

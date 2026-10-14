@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:paragon/core/lessons/lesson_check.dart';
+import 'package:paragon/core/lessons/lesson_doc.dart';
 
 void main() {
   test('control: a clean lesson has no issues', () {
@@ -102,5 +103,22 @@ void main() {
         isNotEmpty,
       );
     });
+  });
+
+  test('a dropped KaTeX font is a warning, not an error', () {
+    final issues = checkLesson(r'Set \(\mathcal{A}\) here.');
+    expect(issues.single.severity, IssueSeverity.warning);
+    expect(issues.single.message, contains('mathcal'));
+    // Control: ordinary maths raises nothing, and a warning never blocks
+    // publishing.
+    expect(checkLesson(r'\(\mathbb{R}\) and \(\frac{a}{b}\)'), isEmpty);
+    expect(
+      checkPublishable(
+        type: 'article',
+        title: 'Sets',
+        body: r'Set \(\mathcal{A}\) here.',
+      ),
+      isEmpty,
+    );
   });
 }
