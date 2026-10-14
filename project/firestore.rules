@@ -151,6 +151,24 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── THEORY (Paper 2, self-marked) ───────────────────────────
+    // Admin-SDK written (the import script). Students list published
+    // ones by subject (the query must filter on status); staff see all.
+    match /theoryQuestions/{id} {
+      allow read: if request.auth != null
+        && (resource.data.status == 'published' || isWriter());
+      allow write: if false;
+    }
+
+    // ── CONTRIBUTORS (public bylines) ───────────────────────────
+    // Written only through the Admin SDK (tools/admin/set_contributor.js)
+    // once the person has agreed and any credential is checked. Read by
+    // anyone signed in: a byline is public. Never listed.
+    match /contributors/{uid} {
+      allow get: if request.auth != null;
+      allow list, write: if false;
+    }
+
     // ── EXAMINER INSIGHTS (lib/core/insights/examiner_insight.dart) ──
     // Paragon's own summaries of the Chief Examiners' reports, per
     // question (id = question id) or topic (id = topic_<topicId>).

@@ -53,6 +53,8 @@ async function main() {
   // ── Fixtures, written past the rules ──────────────────────────────
   await env.withSecurityRulesDisabled(async (ctx) => {
     const db = ctx.firestore();
+    await setDoc(doc(db, "theoryQuestions/tpub"), { subjectId: "s1", status: "published", parts: [] });
+    await setDoc(doc(db, "theoryQuestions/tdraft"), { subjectId: "s1", status: "draft", parts: [] });
     await setDoc(doc(db, "insights/qpub"), { kind: "question", subjectId: "s1", status: "published", summary: "x" });
     await setDoc(doc(db, "insights/qdraft"), { kind: "question", subjectId: "s1", status: "draft", summary: "y" });
     await setDoc(doc(db, "topics/t1"), { subjectId: "s1", name: "Indices", lessonCount: 1 });
@@ -237,6 +239,20 @@ async function main() {
     "a writer cannot edit a published one",
     assertFails(setDoc(doc(writer(), "insights/q1"), ins("draft", "wri"))),
   );
+
+  console.log("\ncontributors: public bylines, Admin SDK only");
+  await check("a student reads a byline", assertSucceeds(getDoc(doc(student(), "contributors/wri"))));
+  await check("nobody writes one from the app, not even a reviewer", assertFails(setDoc(doc(reviewer(), "contributors/rev"), { displayName: "Rev" })));
+  await check("not even about themselves", assertFails(setDoc(doc(student("ann"), "contributors/ann"), { displayName: "Ann" })));
+  await check("bylines cannot be listed", assertFails(getDocs(collection(student(), "contributors"))));
+
+  console.log("\ntheory: published only, written by the Admin SDK");
+  await check(
+    "a student lists published theory",
+    assertSucceeds(getDocs(query(collection(student(), "theoryQuestions"), where("subjectId", "==", "s1"), where("status", "==", "published")))),
+  );
+  await check("not a draft", assertFails(getDoc(doc(student(), "theoryQuestions/tdraft"))));
+  await check("no client writes", assertFails(setDoc(doc(reviewer(), "theoryQuestions/t9"), { subjectId: "s1", status: "draft" })));
 
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));

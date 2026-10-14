@@ -285,7 +285,7 @@ Done notes (Wave F, PR `feat/foundations`):
 
 ## Phase 7 — Differentiation (P2)
 
-- [ ] **P7.1** Examiner insights (`insights/{questionId}`, reviewer-written, hidden when absent).
+- [x] **P7.1** Examiner insights (`insights/{questionId}`, reviewer-written, hidden when absent).
 - [x] **P7.2** Topic weights, predicted grade range, shortest-path plan, exam countdown. *(No streak: removed by decision. The weekly goal replaces it.)*
   - *Done in Wave G (PR `feat/plan`).*
     - **Weights** come from each topic's share of real past questions, with no new job:
@@ -304,10 +304,19 @@ Done notes (Wave F, PR `feat/foundations`):
     - **Not done:** the exam-date onboarding step (the "This week" card prompts for it
       instead), and push reminders (they would need FCM web push and a consent flow,
       not worth it before launch).
-- [ ] **P7.3** Real-exam (CBT) mode after P5.2.1 is answered.
-- [ ] **P7.4** Theory (Paper 2) structure, hidden until 20+ questions.
-- [ ] **P7.5** Contributor bylines.
-- [ ] **P7.6** The studio exists. Add an insight editor and question validation in `content_lint.js`.
+- [x] **P7.3** Real-exam (CBT) mode after P5.2.1 is answered. *(The "Full paper" preset from Wave E, plus the result shown beside the practice estimate. The "modelled on the 2026 CBT" label waits for the formats to be confirmed.)*
+- [x] **P7.4** Theory (Paper 2) structure, hidden until 20+ questions.
+- [x] **P7.5** Contributor bylines. *(`contributors/{uid}` via `set_contributor.js`; the byline sits under the lesson. A contributor page listing their work is not built.)*
+- [x] **P7.6** The studio exists. Add an insight editor and question validation in `content_lint.js`.
+  - *Wave I done notes (PR `feat/content-structure`):*
+    - **Insights** cost no reads where there are none (the flags are stamped nightly).
+      The studio editor has the 20-word originality check, and the emulator suite has
+      8 cases.
+    - **Theory** has its model, rules, a self-marking screen and a hidden tile that
+      appears at 20 published questions. Nothing is saved; PLAN asked for it to be
+      saved to progress, but a self-marked score isn't a mastery signal.
+    - **`import_questions.js`** does P7.6.3's validation. The studio has the insight
+      editor; the lesson editor already existed.
 - [ ] **P7.7** Teachers and schools. *(Deferred: safeguarding for minors, needs a server.)*
 - [ ] **P7.8** Offline packs. *(Exists: "Save for offline".)*
 

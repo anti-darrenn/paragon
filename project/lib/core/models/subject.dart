@@ -29,6 +29,10 @@ class Subject {
   final int pastQuestionCount;
   final int practiceQuestionCount;
 
+  /// Published theory (Paper 2) questions. The theory tile appears at
+  /// `kTheoryMinQuestions`.
+  final int theoryCount;
+
   QuestionCounts get counts => QuestionCounts(
     past: pastQuestionCount,
     practice: practiceQuestionCount,
@@ -43,6 +47,7 @@ class Subject {
     this.questionCount = 0,
     this.pastQuestionCount = 0,
     this.practiceQuestionCount = 0,
+    this.theoryCount = 0,
   });
 
   factory Subject.fromFirestore(DocumentSnapshot doc) {
@@ -55,6 +60,7 @@ class Subject {
       questionCount: asInt(d['questionCount']),
       pastQuestionCount: asInt(d['pastQuestionCount']),
       practiceQuestionCount: asInt(d['practiceQuestionCount']),
+      theoryCount: asInt(d['theoryCount']),
     );
   }
 }

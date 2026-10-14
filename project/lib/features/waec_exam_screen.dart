@@ -26,6 +26,7 @@ import '../core/study/study_tool.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/question_image.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import 'plan/plan_widgets.dart';
 
 /// Data handed from WaecExamSetupScreen via route `extra`. The exam screen
 /// never queries Firestore itself — per spec §2.3.3, setup fetches once
@@ -904,6 +905,10 @@ class _ResultsView extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           GradeEstimateCard(percent: total > 0 ? score * 100 / total : 0),
+          PracticeComparison(
+            subjectId: questions.isEmpty ? '' : questions.first.subjectId,
+            percent: total > 0 ? score * 100 / total : 0,
+          ),
           if (isGuest) ...[
             const SizedBox(height: 16),
             GuestNotice(

@@ -259,3 +259,45 @@ String? topicFrequencyLine(Course course, String topicId) {
   if (phrase == null) return null;
   return 'Comes up in ${phrase.replaceFirst('WAEC', 'WAEC ${course.name}')}';
 }
+
+/// Under an exam result: how this paper compares with the estimate from
+/// practice (PLAN.md P7.3). Nothing for a guest or with too little
+/// practice to estimate. The outline comes from the device cache.
+class PracticeComparison extends ConsumerWidget {
+  const PracticeComparison({
+    super.key,
+    required this.subjectId,
+    required this.percent,
+  });
+
+  final String subjectId;
+  final double percent;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    if (!canUse(Feature.studyPlan, isGuest: ref.watch(isGuestProvider))) {
+      return const SizedBox.shrink();
+    }
+    final course = ref.watch(courseProvider(subjectId)).asData?.value;
+    final progress =
+        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    if (course == null) return const SizedBox.shrink();
+    final estimate = estimateGrade(planTopicsFor(course, progress));
+    if (estimate == null) return const SizedBox.shrink();
+    final paper = waecGradeFor(percent).code;
+    final verdict = percent > estimate.highPercent
+        ? 'above what your practice suggested.'
+        : percent < estimate.lowPercent
+        ? 'below what your practice suggested: exam conditions matter.'
+        : 'in line with your practice.';
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: Text(
+        'This paper: $paper. Your practice estimate: ${estimate.label}. '
+        'That is $verdict',
+        textAlign: TextAlign.center,
+        style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+      ),
+    );
+  }
+}

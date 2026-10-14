@@ -132,6 +132,9 @@ const OWNED = [
   ["staffProfiles", null],
   ["waitlist", null],
   ["plan", null],
+  // Public bylines are Admin-SDK-written, so the app cannot delete them;
+  // scheduled deletion and the orphan sweep do.
+  ["contributors", null],
   ["users", null],
 ];
 
@@ -492,7 +495,13 @@ async function jobTopicCounts() {
         topicsUpdated++;
       }
     }
-    const actual = { topicCount: topics.size, ...sum };
+    const theory = await db
+      .collection("theoryQuestions")
+      .where("subjectId", "==", subject.id)
+      .where("status", "==", "published")
+      .count()
+      .get();
+    const actual = { topicCount: topics.size, ...sum, theoryCount: theory.data().count };
     if (await writeIfChanged(subject.ref, subject.data(), actual, subject.data().name)) {
       subjectsUpdated++;
     }

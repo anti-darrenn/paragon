@@ -76,6 +76,22 @@ checks them against current WASSCE papers.
   room's `state` is `question` at that index, once, from a joined player. The emulator
   suite walks through a whole game.
 
+**Content structure** (Wave I):
+- **Examiner insights.** Shown as "What examiners saw" under a worked answer in drill
+  and exam review, and as "Where students lose marks" on a topic page. They are always
+  in Paragon's own words, with a citation. The studio editor (`/admin/insight/:id`)
+  refuses to publish text with 20 or more consecutive words shared with the pasted
+  report (`longestSharedRun`). Flags are refreshed nightly, so a newly published insight
+  appears the next day.
+- **Bylines.** Lessons show "By Name · credential" only when `contributors/{uid}`
+  exists.
+- **Theory.** Self-marked against the scheme; nothing is stored.
+- **Exam results** sit beside the practice grade estimate (`PracticeComparison`).
+- **Importing questions.** `tools/admin/import_questions.js` validates (4–5 distinct
+  options, one right answer, maths that parses, a year on past questions, no duplicate
+  stems) before it writes. It is the import path, because question stems are
+  Admin-SDK-only.
+
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
 once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
 Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
@@ -559,7 +575,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `rooms/{code}` (live quiz: host-written `{hostUid, subjectId, topicId, topicName, questionIds ≤20, state, index, createdAt, results}`, plus `players/{uid}` nicknames and `answers/{uid_index}` accepted only while that question is live; guests join, accounts host; a day long, then `jobs.js --job=rooms`), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `insights/{id}` (examiner insights: per question by its id, per topic as `topic_<topicId>`; writers draft, reviewers publish, students *get* published ones only when `questions.hasInsight` / `topics.hasExaminerThemes` say one exists — stamped by `jobs.js --job=insights`), `contributors/{uid}` (public bylines `{displayName, role, credential}`; Admin-SDK-only via `tools/admin/set_contributor.js`, after consent and a credential check), `theoryQuestions/{id}` (Paper 2, Admin-SDK-written, published-only for students, hidden until a subject has `kTheoryMinQuestions` = 20; `subjects.theoryCount` from the counts job), `rooms/{code}` (live quiz: host-written `{hostUid, subjectId, topicId, topicName, questionIds ≤20, state, index, createdAt, results}`, plus `players/{uid}` nicknames and `answers/{uid_index}` accepted only while that question is live; guests join, accounts host; a day long, then `jobs.js --job=rooms`), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -629,7 +645,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 1014 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 1023 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

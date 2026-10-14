@@ -12,6 +12,7 @@ import '../study/glossary/glossary_hooks.dart';
 import '../study/notes/notes_hooks.dart';
 import '../study/read_aloud/read_aloud_hooks.dart';
 import '../../core/theme/app_palette.dart';
+import '../../core/content/contributor.dart';
 
 /// An article lesson. Completion is decided by the lesson screen, which
 /// owns the scroll: reaching the end counts as read.
@@ -81,8 +82,10 @@ class ArticlePane extends ConsumerWidget {
             resource.title,
             style: AppTheme.heading1.copyWith(color: context.palette.textPrimary),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 12),
         ],
+        ContributorByline(uid: resource.createdBy),
+        const SizedBox(height: 12),
         ArticleView(
           body: resource.body,
           textStyle: style,

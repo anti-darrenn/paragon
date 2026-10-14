@@ -63,6 +63,7 @@ import 'package:paragon/features/rooms/new_room_screen.dart';
 import 'package:paragon/features/rooms/host_room_screen.dart';
 import 'package:paragon/features/rooms/player_room_screen.dart';
 import 'package:paragon/features/admin/studio/insight_editor_screen.dart';
+import 'package:paragon/features/theory/theory_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -595,6 +596,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/rooms/:code',
         builder: (context, state) =>
             PlayerRoomScreen(code: state.pathParameters['code']!),
+      ),
+      // Paper 2 theory, self-marked; linked only once a subject has
+      // kTheoryMinQuestions published.
+      GoRoute(
+        path: '/waec/:subjectId/theory',
+        builder: (context, state) =>
+            TheoryScreen(subjectId: state.pathParameters['subjectId']!),
       ),
       // Five questions straight from the welcome screen.
       GoRoute(

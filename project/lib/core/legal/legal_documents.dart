@@ -203,6 +203,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'link can see those, and nothing else about you. A challenge is '
             'deleted after 30 days, or with your account. If you answer a '
             "friend's challenge, your answers are kept with your practice.",
+        'Lesson credits. If you write lessons for Paragon and agree to be '
+            'credited, the name and the one-line description you approve are '
+            'shown under your lessons to everyone. You can ask us to remove '
+            'them at any time.',
         'Live quizzes. If you join a live quiz, we store the nickname you '
             'choose and your answers in that room, so the host can show the '
             'scores. Everyone in the room sees your nickname. A room and '

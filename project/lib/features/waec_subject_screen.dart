@@ -13,6 +13,7 @@ import '../core/models/subject.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
+import '../core/theory/theory_question.dart';
 
 class WaecSubjectScreen extends ConsumerWidget {
   const WaecSubjectScreen({super.key});
@@ -170,6 +171,8 @@ class _WaecSubjectTile extends StatelessWidget {
   bool get _noPastQuestions =>
       subject.counts.isSplit && subject.pastQuestionCount == 0;
 
+  bool get _hasTheory => subject.theoryCount >= kTheoryMinQuestions;
+
   @override
   Widget build(BuildContext context) {
     final locked = _lockedForGuest;
@@ -239,6 +242,19 @@ class _WaecSubjectTile extends StatelessWidget {
                     color: context.palette.textSecondary,
                   ),
                 ),
+                // Paper 2, once there is enough of it to practise.
+                if (_hasTheory && !locked)
+                  TextButton(
+                    onPressed: () =>
+                        context.push('/waec/${subject.id}/theory'),
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      minimumSize: const Size(0, 36),
+                    ),
+                    child: Text(
+                      'Theory practice · ${subject.theoryCount} questions',
+                    ),
+                  ),
               ],
             ),
           ),

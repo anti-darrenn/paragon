@@ -35,7 +35,8 @@ void main() {
       const report =
           'The majority of candidates were unable to apply the laws of '
           'indices correctly and added the powers when multiplying.';
-      const mine = 'Most added the powers; the rule is to add them only when '
+      const mine =
+          'Most added the powers; the rule is to add them only when '
           'the bases match and you multiply.';
       expect(longestSharedRun(mine, report), lessThan(kMaxSharedRun));
     });
@@ -57,7 +58,9 @@ void main() {
           overrides: [
             publishedInsightProvider.overrideWith((ref, id) async {
               // A read for a question without the flag would be a bug.
-              if (!q.hasInsight) fail('read an insight for an unflagged question');
+              if (!q.hasInsight) {
+                fail('read an insight for an unflagged question');
+              }
               return _insight;
             }),
           ],
@@ -87,6 +90,9 @@ void main() {
   testWidgets('choosing the common wrong answer leads with it', (tester) async {
     await pump(tester, _q(), selected: 2);
     await tester.pump();
-    expect(find.textContaining('Most candidates chose this too'), findsOneWidget);
+    expect(
+      find.textContaining('Most candidates chose this too'),
+      findsOneWidget,
+    );
   });
 }
