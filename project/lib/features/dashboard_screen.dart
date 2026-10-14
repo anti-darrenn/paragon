@@ -641,6 +641,13 @@ class _QuickLinks extends StatelessWidget {
               subtitle: 'Timed past-paper practice',
               onTap: () => context.go('/waec'),
             ),
+            ListRow(
+              icon: Icons.groups_rounded,
+              iconColor: AppColors.secondary,
+              title: 'Live quiz',
+              subtitle: 'Join with a code, or host one for your class',
+              onTap: () => context.push('/join'),
+            ),
           ],
         ),
       ],

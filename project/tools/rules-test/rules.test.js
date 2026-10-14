@@ -178,6 +178,44 @@ async function main() {
     assertSucceeds(getDocs(query(collection(student("ann"), "challenges"), where("userId", "==", "ann")))),
   );
 
+  console.log("\nrooms: host writes, one live answer per player per question");
+  const roomDoc = (host, over = {}) => ({
+    hostUid: host, subjectId: "s1", topicId: "t1", topicName: "Indices",
+    questionIds: ["q1", "q2"], state: "lobby", index: 0, createdAt: serverTimestamp(),
+    results: {}, ...over,
+  });
+  await check("an account opens a room", assertSucceeds(setDoc(doc(student("ann"), "rooms/ABC234"), roomDoc("ann"))));
+  await check("a guest cannot host", assertFails(setDoc(doc(guest("g7"), "rooms/ABC235"), roomDoc("g7"))));
+  await check("not in someone else's name", assertFails(setDoc(doc(student("ann"), "rooms/ABC236"), roomDoc("bob"))));
+  await check("a code outside the alphabet is refused", assertFails(setDoc(doc(student("ann"), "rooms/ABC0I1"), roomDoc("ann"))));
+  await check("rooms cannot be listed", assertFails(getDocs(collection(student("bob"), "rooms"))));
+  const nick = { nickname: "Tunde", joinedAt: serverTimestamp() };
+  await check("a guest joins with a nickname", assertSucceeds(setDoc(doc(guest("g8"), "rooms/ABC234/players/g8"), nick)));
+  await check("not as someone else", assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/players/g9"), nick)));
+  const ans = (uid, index, selectedIndex = 1) => ({ uid, index, selectedIndex, at: serverTimestamp() });
+  await check(
+    "no answering in the lobby",
+    assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_0"), ans("g8", 0))),
+  );
+  await check("a player cannot run the room", assertFails(updateDoc(doc(guest("g8"), "rooms/ABC234"), { state: "question" })));
+  await check("the host starts question 1", assertSucceeds(updateDoc(doc(student("ann"), "rooms/ABC234"), { state: "question", index: 0 })));
+  await check("the host cannot rewrite the questions", assertFails(updateDoc(doc(student("ann"), "rooms/ABC234"), { questionIds: ["x"] })));
+  await check("a player answers the live question", assertSucceeds(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_0"), ans("g8", 0))));
+  await check("not twice", assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_0"), ans("g8", 0, 2))));
+  await check("not ahead of the host", assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_1"), ans("g8", 1))));
+  await check("not under a mismatched id", assertFails(setDoc(doc(guest("g8"), "rooms/ABC234/answers/g8_5"), ans("g8", 0))));
+  await check(
+    "not without joining",
+    assertFails(setDoc(doc(guest("g10"), "rooms/ABC234/answers/g10_0"), ans("g10", 0))),
+  );
+  await check("a player cannot read the room's answers", assertFails(getDocs(collection(guest("g8"), "rooms/ABC234/answers"))));
+  await check("the host can", assertSucceeds(getDocs(collection(student("ann"), "rooms/ABC234/answers"))));
+  await check("the host moves on to the reveal", assertSucceeds(updateDoc(doc(student("ann"), "rooms/ABC234"), { state: "reveal" })));
+  await check(
+    "and a late answer is refused",
+    assertFails(setDoc(doc(guest("g11"), "rooms/ABC234/answers/g11_0"), ans("g11", 0))),
+  );
+
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));
 

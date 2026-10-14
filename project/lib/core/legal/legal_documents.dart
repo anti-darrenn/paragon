@@ -203,6 +203,11 @@ const LegalDocument privacyPolicy = LegalDocument(
             'link can see those, and nothing else about you. A challenge is '
             'deleted after 30 days, or with your account. If you answer a '
             "friend's challenge, your answers are kept with your practice.",
+        'Live quizzes. If you join a live quiz, we store the nickname you '
+            'choose and your answers in that room, so the host can show the '
+            'scores. Everyone in the room sees your nickname. A room and '
+            'everything in it is deleted a day after it was made. Quiz '
+            'answers are not added to your practice record.',
         'Your plan. If you set a weekly goal or the date of your exam, we '
             'store them with your account to work out your study plan on '
             'your device. Only you can see them, and they are deleted when '

@@ -151,6 +151,88 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── LIVE QUIZ ROOMS (lib/core/rooms/room.dart) ──────────────
+    // A host with an account writes the room; players (guests welcome)
+    // write a nickname once and one answer per question, accepted only
+    // while that question is live. Rooms last a day from createdAt;
+    // jobs.js --job=rooms deletes them with everything inside. Nothing
+    // here reaches attempts or progress.
+    match /rooms/{code} {
+      function roomData() {
+        return get(/databases/$(database)/documents/rooms/$(code)).data;
+      }
+      function roomOpen() {
+        return roomData().state != 'closed'
+          && request.time < roomData().createdAt + duration.value(24, 'h');
+      }
+
+      allow get: if request.auth != null;
+      allow list: if false;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && code.matches('^[A-HJKMNP-Z2-9]{6}$')
+        && request.resource.data.keys().hasOnly(['hostUid', 'subjectId',
+             'topicId', 'topicName', 'questionIds', 'state', 'index',
+             'createdAt', 'results'])
+        && request.resource.data.hostUid == request.auth.uid
+        && request.resource.data.state == 'lobby'
+        && request.resource.data.index == 0
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.results == {}
+        && request.resource.data.topicName is string
+        && request.resource.data.topicName.size() <= 120
+        && request.resource.data.questionIds is list
+        && request.resource.data.questionIds.size() > 0
+        && request.resource.data.questionIds.size() <= 20;
+      allow update: if request.auth != null
+        && resource.data.hostUid == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['state', 'index', 'results'])
+        && request.resource.data.state in ['lobby', 'question', 'reveal', 'podium', 'closed']
+        && request.resource.data.index is int
+        && request.resource.data.index >= 0
+        && request.resource.data.index < resource.data.questionIds.size()
+        && request.resource.data.results is map;
+      allow delete: if request.auth != null
+        && resource.data.hostUid == request.auth.uid;
+
+      // Nicknames: everyone in the room sees them on the projector.
+      match /players/{uid} {
+        allow get, list: if request.auth != null;
+        allow create: if isOwner(uid)
+          && roomOpen()
+          && request.resource.data.keys().hasOnly(['nickname', 'joinedAt'])
+          && request.resource.data.nickname is string
+          && request.resource.data.nickname.size() > 0
+          && request.resource.data.nickname.size() <= 20
+          && request.resource.data.joinedAt == request.time;
+        allow delete: if isOwner(uid)
+          || (request.auth != null && roomData().hostUid == request.auth.uid);
+      }
+
+      // One answer per player per question (the id says which), only
+      // while that question is the live one, never edited.
+      match /answers/{answerId} {
+        allow get: if request.auth != null
+          && (resource.data.uid == request.auth.uid
+              || roomData().hostUid == request.auth.uid);
+        allow list: if request.auth != null
+          && roomData().hostUid == request.auth.uid;
+        allow create: if request.auth != null
+          && request.resource.data.keys().hasOnly(['uid', 'index', 'selectedIndex', 'at'])
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.index is int
+          && answerId == request.auth.uid + '_' + string(request.resource.data.index)
+          && request.resource.data.selectedIndex is int
+          && request.resource.data.selectedIndex >= 0
+          && request.resource.data.selectedIndex <= 4
+          && request.resource.data.at == request.time
+          && exists(/databases/$(database)/documents/rooms/$(code)/players/$(request.auth.uid))
+          && roomData().state == 'question'
+          && roomData().index == request.resource.data.index;
+      }
+    }
+
     // ── CHALLENGE LINKS ("Challenge a friend", /c/:id) ──────────
     // Written once by its creator (a guest may make one too), never
     // edited. Anyone signed in — a friend arriving as a guest included —

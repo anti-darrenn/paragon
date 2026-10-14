@@ -48,6 +48,9 @@ enum Feature {
 
   /// "Save for offline" on a topic.
   offlinePacks,
+
+  /// Hosting a live quiz room. Joining one is open to everyone.
+  hostRoom,
 }
 
 const Map<Feature, ({bool guest, bool signedIn})> kFeaturePolicy = {
@@ -64,6 +67,7 @@ const Map<Feature, ({bool guest, bool signedIn})> kFeaturePolicy = {
   // something for no gain, so they stay open.
   Feature.examHistory: (guest: true, signedIn: true),
   Feature.offlinePacks: (guest: true, signedIn: true),
+  Feature.hostRoom: (guest: false, signedIn: true),
 };
 
 /// Whether this viewer may use [feature]. Signed-out visitors are handled

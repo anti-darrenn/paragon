@@ -1153,6 +1153,32 @@ async function challenges(a, b) {
   );
 }
 
+async function rooms(a, b) {
+  suite('rooms/{code} — accounts host, guests join');
+  // The test accounts are guests: hosting is refused them. The full
+  // game is exercised on the emulator (tools/rules-test).
+  const room = {
+    hostUid: str(a.uid),
+    subjectId: str('s1'),
+    topicId: str('t1'),
+    topicName: str('Indices'),
+    questionIds: arr([str('q1')]),
+    state: str('lobby'),
+    index: { integerValue: '0' },
+    results: { mapValue: { fields: {} } },
+  };
+  expectOutcome(
+    'a guest cannot host a room',
+    DENY,
+    await commit(a.idToken, write('rooms/VRFY23', room, { transforms: [serverTime('createdAt')] })),
+  );
+  expectOutcome(
+    'rooms cannot be listed',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'rooms' }] }),
+  );
+}
+
 async function plan(a, b) {
   suite('plan/{uid} — weekly goal and exam date, accounts only');
 
@@ -1722,6 +1748,7 @@ async function teardown(a, b, usernameKey) {
   await waitlist(a, b);
   await plan(a, b);
   await challenges(a, b);
+  await rooms(a, b);
   await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);

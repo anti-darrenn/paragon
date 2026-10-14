@@ -34,6 +34,7 @@
  *   node jobs.js --job=orphans  [--apply]
  *   node jobs.js --job=counts   [--apply]
  *   node jobs.js --job=challenges [--apply]
+ *   node jobs.js --job=rooms    [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * And one that is deliberately NOT in `all`, to be run once by hand:
@@ -577,6 +578,23 @@ async function jobChallenges() {
   if (APPLY && old.size) await deleteDocs(old.docs.map((d) => d.ref));
 }
 
+// ─── Job: expired quiz rooms ─────────────────────────────────────────
+
+/**
+ * Deletes live quiz rooms more than a day old, with their players and
+ * answers (recursiveDelete). The rules stop anyone joining after a day;
+ * this is the tidy-up, and what keeps nicknames from lingering.
+ */
+async function jobRooms() {
+  log(`\n── Delete quiz rooms older than a day [${mode()}]`);
+  const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000);
+  const old = await db.collection("rooms").where("createdAt", "<", cutoff).select().get();
+  log(`   ${old.size} ${APPLY ? "deleted" : "would be deleted"}`);
+  if (APPLY) {
+    for (const d of old.docs) await db.recursiveDelete(d.ref);
+  }
+}
+
 // ─── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -588,6 +606,7 @@ async function main() {
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
   if (JOB === "counts" || JOB === "all") await jobLessonCounts();
   if (JOB === "challenges" || JOB === "all") await jobChallenges();
+  if (JOB === "rooms" || JOB === "all") await jobRooms();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();

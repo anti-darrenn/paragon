@@ -136,6 +136,14 @@ class Analytics {
         ),
       );
 
+  /// A live quiz room was made.
+  Future<void> roomHosted({required int questions}) => _log(
+    (a) => a.logEvent(name: 'room_hosted', parameters: {'questions': questions}),
+  );
+
+  /// Someone joined a live quiz room.
+  Future<void> roomJoined() => _log((a) => a.logEvent(name: 'room_joined'));
+
   /// A "challenge a friend" link was made.
   Future<void> challengeCreated({required String topicId}) => _log(
     (a) => a.logEvent(

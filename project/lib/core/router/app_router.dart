@@ -58,6 +58,10 @@ import 'package:paragon/features/search/search_screen.dart';
 import 'package:paragon/core/widgets/nav/app_shell.dart';
 import 'package:paragon/features/challenge_link/challenge_link_screen.dart';
 import 'package:paragon/features/taster/taster_screen.dart';
+import 'package:paragon/features/rooms/join_room_screen.dart';
+import 'package:paragon/features/rooms/new_room_screen.dart';
+import 'package:paragon/features/rooms/host_room_screen.dart';
+import 'package:paragon/features/rooms/player_room_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -570,6 +574,27 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // Practising from the mistakes notebook. Takes its questions as
       // route `extra`; opened bare, it points back to the notebook.
+      // Live quiz rooms (`lib/core/rooms/room.dart`): full-window, like
+      // every focus session. /join and /rooms/:code are open to guests;
+      // the screens themselves send a guest who tries to host to sign up.
+      GoRoute(
+        path: '/join',
+        builder: (context, state) => const JoinRoomScreen(),
+      ),
+      GoRoute(
+        path: '/rooms/new',
+        builder: (context, state) => const NewRoomScreen(),
+      ),
+      GoRoute(
+        path: '/rooms/:code/host',
+        builder: (context, state) =>
+            HostRoomScreen(code: state.pathParameters['code']!),
+      ),
+      GoRoute(
+        path: '/rooms/:code',
+        builder: (context, state) =>
+            PlayerRoomScreen(code: state.pathParameters['code']!),
+      ),
       // Five questions straight from the welcome screen.
       GoRoute(
         path: '/try',
