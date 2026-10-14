@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/auth/staff_role.dart';
+import '../../core/lessons/lesson_check.dart';
 import '../../core/lessons/lesson_doc.dart';
 import '../../core/models/learn_resource.dart';
 import '../../core/models/question.dart';
@@ -900,6 +901,8 @@ class _AdminResourceEditorScreenState
 
   Future<void> _approve() async {
     final isRevision = _loaded?.isRevision ?? false;
+    final override = await _publishGate();
+    if (override == null || !mounted) return;
     final ok = await _confirm(
       title: isRevision
           ? 'Approve this revision?'
@@ -915,8 +918,20 @@ class _AdminResourceEditorScreenState
     String? liveId;
     await _transition(
       isRevision ? 'Revision approved and live.' : 'Published.',
-      (r, uid) async =>
-          liveId = await ref.read(lessonWorkflowProvider).approve(r, uid: uid),
+      (r, uid) async {
+        if (override.isNotEmpty) {
+          final user = ref.read(currentUserProvider);
+          await ref
+              .read(lessonWorkflowProvider)
+              .addComment(
+                r,
+                uid: uid,
+                authorName: authorNameFor(user?.displayName, user?.email),
+                text: 'Published despite checks: $override',
+              );
+        }
+        liveId = await ref.read(lessonWorkflowProvider).approve(r, uid: uid);
+      },
       changesLiveContent: true,
     );
     // An approved revision is deleted; carry on in the live original.
@@ -925,6 +940,69 @@ class _AdminResourceEditorScreenState
       setState(() => _dirty = false);
       context.pushReplacement(adminResourcePath(widget.topicId, id));
     }
+  }
+
+  /// The pre-publish check (`checkPublishable`). Returns `''` when there is
+  /// nothing wrong, the reviewer's reason when they publish anyway, and
+  /// null when they back out. Placeholder titles such as `test2` reached
+  /// students once; this is what stops the next one.
+  Future<String?> _publishGate() async {
+    final issues = checkPublishable(
+      type: _type.name,
+      title: _title.text,
+      body: _body.text,
+      youtubeId: _draft.youtubeId,
+    );
+    if (issues.isEmpty) return '';
+    final reason = TextEditingController();
+    final result = await showDialog<String>(
+      context: context,
+      builder: (dialog) => StatefulBuilder(
+        builder: (dialog, setInner) => AlertDialog(
+          backgroundColor: dialog.palette.surface,
+          title: const Text('Not ready to publish'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (final i in issues.take(8))
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Text(
+                    i.line > 0
+                        ? '• Line ${i.line}: ${i.message}'
+                        : '• ${i.message}',
+                  ),
+                ),
+              if (issues.length > 8) Text('…and ${issues.length - 8} more.'),
+              const SizedBox(height: 12),
+              TextField(
+                controller: reason,
+                onChanged: (_) => setInner(() {}),
+                decoration: const InputDecoration(
+                  hintText: 'To publish anyway, say why (kept as a comment)',
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(dialog).pop(),
+              child: const Text('Fix it first'),
+            ),
+            TextButton(
+              onPressed: reason.text.trim().length < 5
+                  ? null
+                  : () => Navigator.of(dialog).pop(reason.text.trim()),
+              style: TextButton.styleFrom(foregroundColor: AppColors.wrong),
+              child: const Text('Publish anyway'),
+            ),
+          ],
+        ),
+      ),
+    );
+    reason.dispose();
+    return result;
   }
 
   Future<void> _requestChanges() async {
