@@ -9,7 +9,9 @@ import '../core/exam/exam_result.dart';
 import '../core/models/question.dart';
 import '../core/repositories/exam_result_repository.dart';
 import 'exam_review_screen.dart' show GradeEstimateCard;
+import '../core/auth/guest_limits.dart';
 import '../core/providers/auth_provider.dart';
+import '../core/widgets/guest_notice.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/repositories/attempt_repository.dart';
 import '../core/theme/app_colors.dart';
@@ -412,6 +414,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
             )
           : _examSubmitted
           ? _ResultsView(
+              isGuest: ref.watch(isGuestProvider),
               score: _score,
               total: questions.length,
               answers: _answers,
@@ -678,6 +681,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
 // ─────────────────────────────────────────────────────────────────────────────
 
 class _ResultsView extends StatelessWidget {
+  final bool isGuest;
   final int score;
   final int total;
   final Map<int, int> answers;
@@ -689,6 +693,7 @@ class _ResultsView extends StatelessWidget {
   final VoidCallback onExit;
 
   const _ResultsView({
+    required this.isGuest,
     required this.score,
     required this.total,
     required this.answers,
@@ -729,6 +734,12 @@ class _ResultsView extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           GradeEstimateCard(percent: total > 0 ? score * 100 / total : 0),
+          if (isGuest) ...[
+            const SizedBox(height: 16),
+            GuestNotice(
+              message: GuestLimits.saveResultMessage('this $score/$total'),
+            ),
+          ],
           if (saveFailed) ...[
             const SizedBox(height: 20),
             Container(

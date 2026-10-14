@@ -91,6 +91,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
   final notifier = _RouterNotifier(ref);
   ref.onDispose(notifier.dispose);
 
+  // False until the first redirect that knows the auth state. The app
+  // opens at /welcome (the bare site root, and every Android launch, land
+  // on initialLocation), and a returning *guest* used to stay there: the
+  // guest branch below deliberately lets guests visit welcome, so it could
+  // not tell "opened the app" from "chose to look at welcome". The cold
+  // start is the one moment that difference is known.
+  var settled = false;
+
   return GoRouter(
     initialLocation: '/welcome',
     refreshListenable: notifier,
@@ -107,6 +115,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
       final user = authAsync.asData?.value;
       final isSignedIn = user != null;
+      final coldStart = !settled;
+      settled = true;
       // A guest (anonymous auth) counts as signed in for every protected
       // route, but — unlike a real account — is still allowed to visit
       // welcome and signin. Upgrading from `/account/upgrade` links the
@@ -154,6 +164,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // complete, and the funnel would be a wall in front of "Browse as
       // Guest". Everything below this line concerns real accounts only.
       if (!isReallySignedIn) {
+        // A returning guest opening the app goes home, like an account
+        // does; welcome stays reachable to a guest who navigates to it.
+        if (isSignedIn && coldStart && isOnWelcome) return '/';
         // ...and they cannot reach the funnel by deep link either, which
         // would otherwise let a guest write a username onto an anonymous
         // uid — a reservation nobody can ever claim or release, since the

@@ -617,7 +617,14 @@ class _SessionSummary extends StatelessWidget {
               // reached a level. For a guest that level is written to a
               // uid that will not exist tomorrow, so it is the worst place
               // to leave the omission.
-              if (isGuest) ...[const SizedBox(height: 16), const GuestNotice()],
+              if (isGuest) ...[
+                const SizedBox(height: 16),
+                GuestNotice(
+                  message: GuestLimits.saveResultMessage(
+                    'your $correct/$answered',
+                  ),
+                ),
+              ],
               const SizedBox(height: 24),
 
               SizedBox(

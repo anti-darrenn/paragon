@@ -1,4 +1,5 @@
-/// What a guest can do, in one place.
+/// What guests are told. What they may *use* is `canUse` in
+/// `feature_access.dart`, the one policy table.
 ///
 /// Guests are real Firebase Anonymous Auth users: a real uid, the same
 /// `users/{uid}` document shape, the same rules, the same writes. What
@@ -21,72 +22,48 @@
 ///
 /// **The honesty rule.** A guest whose mastery quietly evaporates — on
 /// signing out, clearing the browser, or 30 days unused — has been misled
-/// by a product that showed them a filling
-/// ring. Anywhere progress is displayed to a guest, say that it is not
-/// being kept — see [progressNotKeptMessage].
+/// by a product that showed them a filling ring. Anywhere progress is
+/// displayed to a guest, say how long it lasts — see
+/// [GuestLimits.progressNotKeptMessage].
 library;
+
+import 'feature_access.dart';
 
 class GuestLimits {
   const GuestLimits._();
 
-  /// The one subject a guest may practise, per spec §2.3.3, which locks
-  /// the guest subject picker rather than the content behind it.
-  ///
-  /// Matched by name because that is what both pickers have: the WAEC
-  /// screen holds `Subject` documents and the course catalog holds catalog
-  /// entries, and the only field they reliably share is the name. Compared
-  /// case-insensitively and trimmed, since one side comes from Firestore
-  /// and the other from a hand-written catalog.
-  static const String openSubject = 'Mathematics';
-
-  static bool allowsSubject(String subjectName) =>
-      subjectName.trim().toLowerCase() == openSubject.toLowerCase();
-
-  /// True when [subjectName] should be shown locked to this viewer.
+  /// True when [subjectName]'s WAEC Prep should be shown locked to this
+  /// viewer. Guests used to get Mathematics only; since 2026-10-14 they
+  /// get every subject untimed (`canUse(Feature.waecUntimed)`), so this
+  /// is false for everyone unless the policy table changes back.
   static bool locks({required bool isGuest, required String subjectName}) =>
-      isGuest && !allowsSubject(subjectName);
+      !canUse(Feature.waecUntimed, isGuest: isGuest);
 
   /// Shown when a guest taps something they cannot have. Names what to do
-  /// rather than what went wrong — a guest is one tap from an account, and
-  /// "not available" would not tell them that.
+  /// rather than what went wrong — a guest is one tap from an account.
   static const String lockedSubjectMessage =
-      'Sign in to practise this subject. Guests get $openSubject.';
+      'Make a free account to practise this subject.';
 
-  /// Guests get no Drill at all, in any subject.
-  ///
-  /// Not a tightening of [openSubject] — a different rule with a different
-  /// reason, which is why it is its own constant rather than a special
-  /// case inside [locks]. Drill sits behind a topic test, and a topic
-  /// test is only worth taking if the result survives. A guest's session
-  /// does survive closing the tab — Firebase keeps it in the browser, which
-  /// was checked on the live site — but not signing out, clearing the
-  /// browser, another device, or 30 days unused (`jobs.js --job=guests`).
-  /// A gate whose key can vanish that easily is worse than not offering
-  /// the room; an account keeps it.
-  ///
-  /// Learn content — videos, articles, exercises — stays fully open to
-  /// guests. Nothing there is stored, so nothing there is lost, and it is
-  /// the part of the product a visitor should be able to judge before
-  /// deciding to sign up.
-  ///
-  /// [openSubject] still governs WAEC Prep, which is unchanged.
-  static const bool allowsDrill = false;
-
-  /// Shown to a guest who reaches drill. Names the reason rather than the
-  /// rule — "you'd lose it" is the fact that makes the restriction
-  /// reasonable, and a guest who does not know that reads it as arbitrary.
+  /// Shown to a guest who reaches a drill the policy table closes to them
+  /// — none, today. Kept so the screen has words if the table changes.
   static const String drillNeedsAccountMessage =
-      'Drill practice needs an account. Your topic tests and progress are '
-      'tied to it — a guest session lives in this browser only, and is '
-      'gone if you sign out, clear it, or leave it unused for 30 days.';
+      'Drill practice needs an account. Make one free — anything you have '
+      'done as a guest comes with you.';
 
-  /// Shown wherever a guest is looking at progress that may not last.
+  /// The sign-up prompt at a moment of value — the end of a drill, an
+  /// exam result — naming what is worth keeping ("your 8/10").
+  static String saveResultMessage(String result) =>
+      'Save $result: create a free account to keep it on every device.';
+
+  /// Shown wherever a guest is looking at progress.
   ///
-  /// It used to say "not saved", which was wrong: a guest's progress is
-  /// kept in the browser across closed tabs. What is true is that it is
-  /// fragile, and that an account keeps it — which is what this says.
+  /// True as written: a guest's progress is stored under their anonymous
+  /// account, which the browser keeps; `jobs.js --job=guests` deletes a
+  /// guest unused for 30 days; and making an account carries it all over.
+  /// It used to say progress was kept in the browser while drill refused
+  /// guests, so there was no progress to keep — keep the two in step.
   static const String progressNotKeptMessage =
-      "You're browsing as a guest: your progress is kept in this browser "
-      'only, and not if you sign out, clear it, or stay away 30 days. '
-      'Make an account to keep it.';
+      "You're using Paragon as a guest. Your progress is saved in this "
+      'browser for 30 days after your last visit. Create an account to '
+      'keep it everywhere.';
 }

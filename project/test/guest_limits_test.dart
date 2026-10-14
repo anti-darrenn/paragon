@@ -1,79 +1,60 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:paragon/core/auth/feature_access.dart';
 import 'package:paragon/core/auth/guest_limits.dart';
 
-/// The guest subject lock.
-///
-/// It was previously written inline in `waec_subject_screen.dart` as
-/// `subject.name.toLowerCase() != 'mathematics'`, which was correct and
-/// untested. The reason it moved here is that Learning Mode now enforces
-/// the same restriction, and two inline copies of a product rule drift —
-/// the drift being a guest who can drill Physics but cannot sit a Physics
-/// exam, with nothing in the code saying which was intended.
+/// The guest policy table (PLAN.md P1.4.4, adopted 2026-10-14) and the
+/// words guests are shown. Every guest gate asks `canUse`; these tests pin
+/// the table so a change to it is a deliberate, visible edit.
 void main() {
-  group('GuestLimits.allowsSubject', () {
-    test('a guest gets Mathematics', () {
-      expect(GuestLimits.allowsSubject('Mathematics'), isTrue);
-    });
-
-    test('matches regardless of case or surrounding space', () {
-      // One side of the comparison is a Firestore document, the other a
-      // hand-written catalog entry; neither guarantees the other's casing.
-      expect(GuestLimits.allowsSubject('mathematics'), isTrue);
-      expect(GuestLimits.allowsSubject('  MATHEMATICS  '), isTrue);
-    });
-
-    test('Further Mathematics is a different subject', () {
-      // The control that gives this file its value. A `contains` or
-      // `startsWith` implementation would pass every other test here and
-      // silently unlock a second subject.
-      expect(GuestLimits.allowsSubject('Further Mathematics'), isFalse);
-    });
-
-    test('everything else is closed', () {
-      for (final name in ['Physics', 'Chemistry', 'Government', '']) {
-        expect(
-          GuestLimits.allowsSubject(name),
-          isFalse,
-          reason: '$name should be closed to guests',
-        );
+  group('canUse', () {
+    test('a signed-in student may use everything', () {
+      for (final f in Feature.values) {
+        expect(canUse(f, isGuest: false), isTrue, reason: f.name);
       }
+    });
+
+    test('a guest may drill, read, and sit untimed WAEC in any subject', () {
+      for (final f in [
+        Feature.readLessons,
+        Feature.drill,
+        Feature.waecUntimed,
+        Feature.mistakesNotebook,
+        Feature.reviewCards,
+        Feature.examHistory,
+        Feature.offlinePacks,
+      ]) {
+        expect(canUse(f, isGuest: true), isTrue, reason: f.name);
+      }
+    });
+
+    test('control: timed exams and the study plan ask a guest to sign up', () {
+      expect(canUse(Feature.waecTimed, isGuest: true), isFalse);
+      expect(canUse(Feature.studyPlan, isGuest: true), isFalse);
+    });
+
+    test('every feature has a row', () {
+      expect(kFeaturePolicy.keys.toSet(), Feature.values.toSet());
     });
   });
 
   group('GuestLimits.locks', () {
-    test('locks nothing for a signed-in student', () {
-      for (final name in ['Physics', 'Mathematics', 'Further Mathematics']) {
+    test('no WAEC subject is locked, for guests or anyone', () {
+      for (final name in ['Physics', 'Mathematics', 'Government']) {
         expect(GuestLimits.locks(isGuest: false, subjectName: name), isFalse);
+        expect(GuestLimits.locks(isGuest: true, subjectName: name), isFalse);
       }
-    });
-
-    test('locks everything but the open subject for a guest', () {
-      expect(
-        GuestLimits.locks(isGuest: true, subjectName: 'Mathematics'),
-        isFalse,
-      );
-      expect(GuestLimits.locks(isGuest: true, subjectName: 'Physics'), isTrue);
     });
   });
 
   group('messages', () {
-    test('the lock message names the subject a guest does get', () {
-      // Otherwise it tells a student what they cannot do and leaves them
-      // to discover the rest by tapping.
-      expect(
-        GuestLimits.lockedSubjectMessage,
-        contains(GuestLimits.openSubject),
-      );
-    });
-
     // A guest's progress survives a closed tab (checked on the live
     // site), so the message must not claim otherwise — it says where the
-    // progress lives, how it is lost, and how to keep it.
+    // progress lives, how long it lasts, and how to keep it.
     test('the progress message is honest about where progress lives', () {
       final m = GuestLimits.progressNotKeptMessage.toLowerCase();
       expect(m, contains('this browser'));
+      expect(m, contains('30 days'));
       expect(m, contains('account'));
-      expect(m, isNot(contains('close the tab')));
       expect(m, isNot(contains('not saved')));
     });
   });
