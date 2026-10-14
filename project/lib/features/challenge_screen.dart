@@ -6,6 +6,7 @@ import '../core/exam/exam_result.dart';
 import '../core/learn/challenge.dart';
 import '../core/learn/topic_test.dart';
 import '../core/models/question.dart';
+import '../core/auth/feature_access.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/attempt_repository.dart';
 import '../core/repositories/course_repository.dart';
@@ -46,7 +47,8 @@ class ChallengeScreen extends ConsumerWidget {
         : 'Course challenge';
     final Widget body;
     final user = ref.watch(currentUserProvider);
-    if (user == null || ref.watch(isGuestProvider)) {
+    if (user == null ||
+        !canUse(Feature.challenges, isGuest: ref.watch(isGuestProvider))) {
       body = _Note(
         text:
             'Unit tests and course challenges need an account, because '

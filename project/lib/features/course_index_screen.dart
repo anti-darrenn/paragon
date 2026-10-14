@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/progress/course_progress.dart';
+import '../core/auth/feature_access.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
@@ -12,6 +13,7 @@ import '../core/widgets/page_layout.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
 import 'study/cards/revision_cards_entry.dart';
+import 'waitlist/notify_me_button.dart';
 import '../core/theme/app_palette.dart';
 
 /// Course index for one subject — `/subject/:subjectKey/course`.
@@ -38,10 +40,11 @@ class CourseIndexScreen extends ConsumerWidget {
     // identically whether or not they have ever practised.
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
-    // Unit tests and challenges write unlocks and mastery to an account;
-    // a guest has no drill to unlock.
+    // Unit tests and challenges write unlocks and mastery to the
+    // student's uid — a guest's anonymous one included (`canUse`).
     final canChallenge =
-        ref.watch(currentUserProvider) != null && !ref.watch(isGuestProvider);
+        ref.watch(currentUserProvider) != null &&
+        canUse(Feature.challenges, isGuest: ref.watch(isGuestProvider));
 
     return ParagonPage(
       title: courseAsync.asData?.value.name ?? 'Course',
@@ -154,6 +157,8 @@ class _CourseBody extends StatelessWidget {
         if (!course.isLive) ...[
           const SizedBox(height: 20),
           _PlannedNotice(subjectName: course.name),
+          const SizedBox(height: 12),
+          NotifyMeButton(slug: course.slug, subjectName: course.name),
         ],
 
         if (course.isLive && canChallenge) ...[

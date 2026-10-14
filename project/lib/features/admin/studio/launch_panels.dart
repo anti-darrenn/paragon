@@ -2,10 +2,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/content/subject_catalog.dart';
 import '../../../core/data/read_meter.dart';
 import '../../../core/models/firestore_parsing.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/repositories/feedback_repository.dart';
+import '../../../core/repositories/learning_repository.dart';
+import '../../../core/repositories/waitlist_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
@@ -308,4 +311,54 @@ class FeedbackPanel extends ConsumerWidget {
     FeedbackKind.praise => Icons.favorite_border_rounded,
     FeedbackKind.other => Icons.chat_bubble_outline_rounded,
   };
+}
+
+// ─── Waitlist ───────────────────────────────────────────────────────
+
+/// How many students tapped "Notify me" on each coming-soon subject —
+/// what students are asking for next. One `count()` per planned subject.
+class WaitlistPanel extends ConsumerWidget {
+  const WaitlistPanel({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final live = {
+      for (final s in ref.watch(subjectsProvider).asData?.value ?? const [])
+        SubjectCatalog.slugify(s.name),
+    };
+    final planned = [
+      for (final c in SubjectCatalog.all)
+        if (!live.contains(c.slug)) c,
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Waiting for a subject',
+          style: AppTheme.heading3.copyWith(color: palette.textPrimary),
+        ),
+        const SizedBox(height: 12),
+        if (planned.isEmpty)
+          Text(
+            'Every catalog subject is live.',
+            style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+          )
+        else
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (final c in planned)
+                Chip(
+                  label: Text(
+                    '${c.name}: '
+                    '${ref.watch(waitlistCountProvider(c.slug)).asData?.value ?? '…'}',
+                  ),
+                ),
+            ],
+          ),
+      ],
+    );
+  }
 }

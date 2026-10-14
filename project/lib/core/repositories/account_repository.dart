@@ -129,6 +129,8 @@ class AccountRepository {
     // A content-team member's name and avatar for the studio. A student
     // has none; deleting a document that is not there is a no-op.
     await _db.collection('staffProfiles').doc(uid).delete();
+    // "Notify me" sign-ups for coming-soon subjects.
+    await _db.collection('waitlist').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 
@@ -178,6 +180,7 @@ class AccountRepository {
     'study',
     'accountRequests',
     'staffProfiles',
+    'waitlist',
   ];
 
   /// How many documents an export of [uid] would read, from `count()`

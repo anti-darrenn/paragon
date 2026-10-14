@@ -151,6 +151,24 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── WAITLIST ("Notify me" on a coming-soon subject) ──────────
+    // One document per student, id'd by uid, listing the catalog slugs of
+    // the subjects they want. Accounts only — the point is to reach them
+    // later, and a guest has no address. Reviewers may read (the studio
+    // counts sign-ups per subject with count() to decide what to write
+    // next); nobody else can see who signed up.
+    match /waitlist/{uid} {
+      allow read: if isOwner(uid) || isReviewer();
+      allow delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly(['userId', 'subjects', 'updatedAt'])
+        && request.resource.data.userId == uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.subjects is list
+        && request.resource.data.subjects.size() <= 30;
+    }
+
     // ── ACCOUNT REQUESTS ────────────────────────────────────────
     // "Sign out everywhere" needs the Admin SDK (revokeRefreshTokens),
     // so the app files a request here and

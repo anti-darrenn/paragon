@@ -1088,6 +1088,41 @@ async function accountRequests(a, b) {
   );
 }
 
+async function waitlist(a, b) {
+  suite('waitlist/{uid} — "Notify me", accounts only');
+
+  // The test accounts are guests, and the anonymous clause refuses every
+  // guest write — a guest has no address to be told at. The real-account
+  // allow path is exercised by hand.
+  const list = { userId: str(a.uid), subjects: arr([str('biology')]) };
+  expectOutcome(
+    'a guest cannot join a waitlist',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`waitlist/${a.uid}`, list, { transforms: [serverTime('updatedAt')] }),
+    ),
+  );
+  expectOutcome(
+    "a waitlist on another student's uid is refused",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`waitlist/${a.uid}`, list, { transforms: [serverTime('updatedAt')] }),
+    ),
+  );
+  expectOutcome(
+    "another student's waitlist is not readable",
+    DENY,
+    await readDoc(b.idToken, `waitlist/${a.uid}`),
+  );
+  expectOutcome(
+    'a student cannot list or count the waitlist',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'waitlist' }] }),
+  );
+}
+
 async function staffProfiles(a, b) {
   suite('staffProfiles/{uid} — the team only');
 
@@ -1631,6 +1666,7 @@ async function teardown(a, b, usernameKey) {
   await progress(a, b);
   await studyData(a, b);
   await accountRequests(a, b);
+  await waitlist(a, b);
   await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);

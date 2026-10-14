@@ -85,6 +85,11 @@ class Analytics {
     ),
   );
 
+  /// "Notify me" on a coming-soon subject: the catalog slug only.
+  Future<void> waitlistJoin({required String subject}) => _log(
+    (a) => a.logEvent(name: 'waitlist_join', parameters: {'subject': subject}),
+  );
+
   /// A finished drill session. Ids and counts only — never question text.
   Future<void> drillCompleted({
     required String subjectId,

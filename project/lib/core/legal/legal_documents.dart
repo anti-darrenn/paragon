@@ -197,6 +197,11 @@ const LegalDocument privacyPolicy = LegalDocument(
             'kind you chose, which screen of the app you sent it from, and '
             'your account identifier. The Paragon team reads it, and it is '
             'deleted when your account is deleted.',
+        'Subjects you want. If you tap "Notify me" on a subject that is not '
+            'ready yet, we store which subjects you asked about, with your '
+            'account. The Paragon team sees how many students want each '
+            'subject. You can leave the list from the same screen, '
+            'and it is deleted when your account is deleted.',
       ],
     ),
     LegalSection(
@@ -213,7 +218,8 @@ const LegalDocument privacyPolicy = LegalDocument(
             'questions answered and how many you got right, your topic '
             'test scores and whether you passed, which kinds of lesson '
             'item (video, article or exercise) you finish, your lesson '
-            'exercise scores, and whether a session was a guest session. When '
+            'exercise scores, which coming-soon subjects you ask to hear '
+            'about, and whether a session was a guest session. When '
             'something in the app breaks, we send the kind of error and the '
             'screen it happened on, never what was on it. Google also collects standard '
             'technical information such as your device type, general '

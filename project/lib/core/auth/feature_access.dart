@@ -23,6 +23,10 @@ enum Feature {
   /// Topic drill — still behind each topic's test, for everyone.
   drill,
 
+  /// Unit tests and the course challenge, which open drill like a topic
+  /// test does — so they follow [drill].
+  challenges,
+
   /// WAEC Prep in every subject, untimed.
   waecUntimed,
 
@@ -49,6 +53,7 @@ enum Feature {
 const Map<Feature, ({bool guest, bool signedIn})> kFeaturePolicy = {
   Feature.readLessons: (guest: true, signedIn: true),
   Feature.drill: (guest: true, signedIn: true),
+  Feature.challenges: (guest: true, signedIn: true),
   Feature.waecUntimed: (guest: true, signedIn: true),
   Feature.waecTimed: (guest: false, signedIn: true),
   Feature.mistakesNotebook: (guest: true, signedIn: true),
