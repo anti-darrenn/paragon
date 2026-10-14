@@ -42,6 +42,8 @@ node 9_seed_resources.js --subject=<id>   # Learn articles/videos/exercises (dry
 node 10_fetch_question_images.js --all    # diagrams for scraped past questions (dry run without --commit)
 node reclassify.js                        # propose topic reassignments (dispatch-only in CI)
 node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
+node ../admin/content_lint.js             # published Learn items with placeholder titles or broken maths
+node ../admin/check_counts.js             # subject counts == sum of topic counts
 ```
 
 The original chain — `1_scrape`, `2_classify`, `fix_misclassified`, `3_seed` — is retired
@@ -113,7 +115,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-137 checks. The denials are the content: a write that succeeds only proves something
+141 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have.
 
@@ -144,9 +146,15 @@ a topic's test when it drew at least 4 of that topic's questions and 80% were
 right; it writes `passed` with `passedVia: 'unit_test'` and no `attempts`
 increment. The course challenge never unlocks. Both record `source: 'challenge'`
 and add to `progress` only for topics open once marked
-(`challenge_screen_test.dart` has the control). Guests get no drill at all, and
-are refused before proficiency is considered, since a guest's pass dies
-with the session. Learn content is never gated.
+(`challenge_screen_test.dart` has the control). Learn content is never gated.
+
+**Guests** are decided by one table, `canUse(Feature, isGuest:)` in
+`lib/core/auth/feature_access.dart` (PLAN.md P1.4.4, adopted 2026-10-14).
+Every guest gate asks it — `drillAccessFor`, `GuestLimits.locks`, the
+challenge screen; never add an inline `isGuest` gate. Guests drill (behind
+the same topic test, stored under their anonymous uid), take unit tests
+and sit untimed WAEC Prep in every subject; timed exams and a future study
+plan ask for an account. The words guests see live in `guest_limits.dart`.
 
 **The gate is client-enforced and cannot be otherwise**: rules see one
 document write, not the ten answers behind it. That is a bounded,
@@ -271,9 +279,10 @@ Things that were measured in a browser, not assumed — keep them true:
 
 Android: `flutter build apk --debug` works (the first build installs the NDK
 and takes ~45 min); an emulator AVD, `Test-_-`, exists in the SDK. The app
-always opens at `/welcome`, and the router deliberately lets guests stay
-there, so a returning Android guest sees the welcome screen rather than
-their dashboard — a known, unfixed product question, not a lost session.
+always opens at `/welcome` (`initialLocation`, also the bare web root). The
+first redirect that knows the auth state sends a returning guest from
+welcome to `/`; after that a guest may visit welcome freely
+(`guest_landing_test.dart`).
 
 A claim change reaches a signed-in session only after a token refresh
 (up to an hour) or a fresh sign-in.
@@ -460,7 +469,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -474,7 +483,9 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only a reviewer; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
 - **Resources the editor created or edited carry `createdBy` or `editedInApp`, and `9_seed_resources.js` skips them** unless run with `--force`. The seeder writes each file as the whole truth, so without this, re-seeding would wipe a YouTube link added in the editor and republish a draft.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
-- `subjects.questionCount` counts the subject's `hasAnswer: true` questions, the ones a student can be served, and is shown on the welcome screen. Also written by `jobs.js --job=counts`, with the same "zero means not known, hide it" rule. It drifts when an admin retires a question, until the next nightly run.
+- **Question counts** are never one number that reads as "past questions". `jobs.js --job=counts` writes every topic's `questionCount` (`hasAnswer: true`), `pastQuestionCount` (`source == 'waec'`) and `practiceQuestionCount` (`origin == 'ai_generated'`) with `count()` aggregates, and each **subject's** three fields as the **sum of its topics'** — so the welcome ticker and the course page cannot disagree again (they did: 14,602 vs 14,616). Every surface shows `QuestionCounts.label` ("51 past · 300 practice"); both split fields zero means "not split yet", and the old single total is shown. `tools/admin/check_counts.js` asserts subject == sum of topics. Counts drift when an admin retires a question, until the next nightly run.
+- **Provenance.** `Question.origin` is read in the app; `provenanceLabel` gives "WAEC 2018" for a past question and "Paragon practice" for a generated one (origin wins over `source`), shown by `QuestionSourceBadge` wherever a question is. A WAEC subject with no past questions shows "No past questions yet" and does not open.
+- **Placeholders.** `checkPublishable` (`lesson_check.dart`) refuses to publish a placeholder title (`test2`, `test_article`, `Sample`…), an empty article or a linkless video; a reviewer can override with a reason kept as a comment. `tools/admin/content_lint.js` applies the same rules to what is live, read-only, exiting non-zero — keep the two regexes in step.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
 - `attempts.source` is now one of `drill | waec | test | exercise | review | challenge` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
@@ -528,7 +539,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 924 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 964 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
