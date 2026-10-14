@@ -33,6 +33,7 @@
  *   node jobs.js --job=deletions [--apply]
  *   node jobs.js --job=orphans  [--apply]
  *   node jobs.js --job=counts   [--apply]
+ *   node jobs.js --job=challenges [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * And one that is deliberately NOT in `all`, to be run once by hand:
@@ -121,6 +122,7 @@ const OWNED = [
   ["feedback", "userId"],
   ["notes", "userId"],
   ["examResults", "userId"],
+  ["challenges", "userId"],
   ["progress", null],
   ["learn", null],
   ["study", null],
@@ -556,6 +558,25 @@ async function jobLessonCounts() {
   log(`   ${updated} topics ${APPLY ? "updated" : "would be updated"}`);
 }
 
+// ─── Job: expired challenge links ───────────────────────────────────
+
+/**
+ * Deletes "Challenge a friend" links older than 30 days. They are made to
+ * be sent and played within days; kept for ever they would only be names
+ * on links nobody opens. Reads only the expired ones.
+ */
+async function jobChallenges() {
+  log(`\n── Delete challenge links older than 30 days [${mode()}]`);
+  const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  const old = await db
+    .collection("challenges")
+    .where("createdAt", "<", cutoff)
+    .select()
+    .get();
+  log(`   ${old.size} ${APPLY ? "deleted" : "would be deleted"}`);
+  if (APPLY && old.size) await deleteDocs(old.docs.map((d) => d.ref));
+}
+
 // ─── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -566,6 +587,7 @@ async function main() {
   if (JOB === "orphans" || JOB === "all") await jobOrphans();
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
   if (JOB === "counts" || JOB === "all") await jobLessonCounts();
+  if (JOB === "challenges" || JOB === "all") await jobChallenges();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();

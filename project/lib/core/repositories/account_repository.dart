@@ -104,6 +104,10 @@ class AccountRepository {
       _db.collection('attempts').where('userId', isEqualTo: uid),
     );
     await _deleteQuery(_db.collection('flags').where('userId', isEqualTo: uid));
+    // "Challenge a friend" links this student made.
+    await _deleteQuery(
+      _db.collection('challenges').where('userId', isEqualTo: uid),
+    );
     // "Send feedback" messages.
     await _deleteQuery(
       _db.collection('feedback').where('userId', isEqualTo: uid),
@@ -174,6 +178,7 @@ class AccountRepository {
     'flags',
     'feedback',
     'examResults',
+    'challenges',
   ];
   static const _ownedById = [
     'users',

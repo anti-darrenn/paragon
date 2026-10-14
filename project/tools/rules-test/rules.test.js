@@ -156,6 +156,28 @@ async function main() {
   await check("a goal off the list is refused", assertFails(setDoc(doc(student("ann"), "plan/ann"), planDoc("ann", 7))));
   await check("another's plan is private", assertFails(getDoc(doc(student("bob"), "plan/ann"))));
 
+  console.log("\nchallenges: create once, get by id");
+  const ch = (uid, over = {}) => ({
+    userId: uid, name: "Ada", subjectId: "s1", topicId: "t1", topicName: "Indices",
+    questionIds: ["q1", "q2"], score: 1, total: 2, createdAt: serverTimestamp(), ...over,
+  });
+  await check("an account makes a challenge", assertSucceeds(setDoc(doc(student("ann"), "challenges/c1"), ch("ann"))));
+  await check("a guest makes one too", assertSucceeds(setDoc(doc(guest("g5"), "challenges/c2"), ch("g5"))));
+  await check("a friend arriving as a guest can open it", assertSucceeds(getDoc(doc(guest("g6"), "challenges/c1"))));
+  await check("signed out, it cannot be read", assertFails(getDoc(doc(nobody, "challenges/c1"))));
+  await check("it cannot be edited", assertFails(updateDoc(doc(student("ann"), "challenges/c1"), { score: 2 })));
+  await check("not in someone else's name", assertFails(setDoc(doc(student("ann"), "challenges/c3"), ch("bob"))));
+  await check("score above total refused", assertFails(setDoc(doc(student("ann"), "challenges/c4"), ch("ann", { score: 3 }))));
+  await check("more than ten questions refused", assertFails(setDoc(doc(student("ann"), "challenges/c5"), ch("ann", {
+    questionIds: Array.from({ length: 11 }, (_, i) => `q${i}`), total: 11,
+  }))));
+  await check("no extra fields", assertFails(setDoc(doc(student("ann"), "challenges/c6"), ch("ann", { email: "x@y.z" }))));
+  await check("a stranger cannot list challenges", assertFails(getDocs(collection(student("bob"), "challenges"))));
+  await check(
+    "the creator lists their own (the export)",
+    assertSucceeds(getDocs(query(collection(student("ann"), "challenges"), where("userId", "==", "ann")))),
+  );
+
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));
 

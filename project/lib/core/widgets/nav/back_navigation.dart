@@ -52,6 +52,9 @@ String? parentPathFor(Uri uri) {
     ['settings'] => '/me',
     ['settings', _] => '/settings',
 
+    // A friend's challenge: home, not wherever the link came from.
+    ['c', _] => '/',
+
     // The studio.
     ['admin'] => '/',
     ['admin', ...] => '/admin',

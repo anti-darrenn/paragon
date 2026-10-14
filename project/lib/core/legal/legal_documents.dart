@@ -197,6 +197,12 @@ const LegalDocument privacyPolicy = LegalDocument(
             'kind you chose, which screen of the app you sent it from, and '
             'your account identifier. The Paragon team reads it, and it is '
             'deleted when your account is deleted.',
+        'Challenges. If you challenge a friend, we store the questions, '
+            'your score on them, the topic and your first name, so that '
+            'whoever opens the link can see what to beat. Anyone with the '
+            'link can see those, and nothing else about you. A challenge is '
+            'deleted after 30 days, or with your account. If you answer a '
+            "friend's challenge, your answers are kept with your practice.",
         'Your plan. If you set a weekly goal or the date of your exam, we '
             'store them with your account to work out your study plan on '
             'your device. Only you can see them, and they are deleted when '

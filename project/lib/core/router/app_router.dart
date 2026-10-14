@@ -56,6 +56,8 @@ import 'package:paragon/features/welcome_screen.dart';
 import 'package:paragon/features/review/review_screen.dart';
 import 'package:paragon/features/search/search_screen.dart';
 import 'package:paragon/core/widgets/nav/app_shell.dart';
+import 'package:paragon/features/challenge_link/challenge_link_screen.dart';
+import 'package:paragon/features/taster/taster_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -568,6 +570,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // Practising from the mistakes notebook. Takes its questions as
       // route `extra`; opened bare, it points back to the notebook.
+      // Five questions straight from the welcome screen.
+      GoRoute(
+        path: '/try',
+        builder: (context, state) => const TasterScreen(),
+      ),
+      // A friend's challenge (`challenge_link.dart`). Full-window, like
+      // every focus session; reached from a shared link.
+      GoRoute(
+        path: '/c/:id',
+        builder: (context, state) =>
+            ChallengeLinkScreen(id: state.pathParameters['id']!),
+      ),
       GoRoute(
         path: '/mistakes/practice',
         builder: (context, state) => MistakesPracticeScreen(

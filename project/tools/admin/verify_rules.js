@@ -1123,6 +1123,36 @@ async function waitlist(a, b) {
   );
 }
 
+async function challenges(a, b) {
+  suite('challenges/{id} — create once, get by id, list your own');
+  const c = (uid, score = 5) => ({
+    userId: str(uid),
+    name: str('Ada'),
+    subjectId: str('s1'),
+    topicId: str('t1'),
+    topicName: str('Indices'),
+    questionIds: arr([str('q1'), str('q2')]),
+    score: { integerValue: String(score) },
+    total: { integerValue: '2' },
+  });
+  const id = `verify-${Date.now()}`;
+  expectOutcome(
+    "a challenge in someone else's name is refused",
+    DENY,
+    await commit(a.idToken, write(`challenges/${id}-x`, c(b.uid), { transforms: [serverTime('createdAt')] })),
+  );
+  expectOutcome(
+    'a score above the total is refused',
+    DENY,
+    await commit(a.idToken, write(`challenges/${id}-y`, c(a.uid, 3), { transforms: [serverTime('createdAt')] })),
+  );
+  expectOutcome(
+    'challenges cannot be listed wholesale',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'challenges' }] }),
+  );
+}
+
 async function plan(a, b) {
   suite('plan/{uid} — weekly goal and exam date, accounts only');
 
@@ -1691,6 +1721,7 @@ async function teardown(a, b, usernameKey) {
   await accountRequests(a, b);
   await waitlist(a, b);
   await plan(a, b);
+  await challenges(a, b);
   await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);

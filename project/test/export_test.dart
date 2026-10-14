@@ -81,6 +81,7 @@ void main() {
       'userId': 'u1',
       'subjects': ['biology'],
     });
+    await db.collection('challenges').add({'userId': 'u1', 'score': 3});
     await db.collection('plan').doc('u1').set({
       'userId': 'u1',
       'weeklyGoal': 100,
@@ -120,6 +121,7 @@ void main() {
       'flags',
       'feedback',
       'examResults',
+      'challenges',
     ]) {
       expect(after[key], isEmpty, reason: key);
     }

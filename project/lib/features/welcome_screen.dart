@@ -70,7 +70,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
   // revisiting /welcome to upgrade must be allowed to stay put — see
   // app_router.dart's isReallySignedIn check), so it can't distinguish
   // that case from "just signed in as guest, should land on home."
-  Future<void> _handleGuestSignIn() async {
+  Future<void> _handleGuestSignIn({String? to}) async {
     setState(() {
       _isLoading = true;
       _errorMessage = null;
@@ -83,7 +83,8 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
       if (mounted) {
         // Back to the page a shared link was opening, if there was one.
         context.go(
-          safeNextPath(
+          to ??
+              safeNextPath(
                 GoRouterState.of(context).uri.queryParameters[kNextParam],
               ) ??
               '/',
@@ -339,6 +340,28 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
 
                               const SizedBox(height: 12),
 
+                              // Five questions before any decision: the
+                              // quickest way to see what Paragon is. Starts
+                              // a guest session, like "Browse as Guest".
+                              Center(
+                                child: TextButton.icon(
+                                  onPressed: _isLoading
+                                      ? null
+                                      : () => _handleGuestSignIn(to: '/try'),
+                                  icon: const Icon(
+                                    Icons.bolt_rounded,
+                                    color: AppColors.primary,
+                                  ),
+                                  label: Text(
+                                    'Try 5 questions now',
+                                    style: AppTheme.bodyMd.copyWith(
+                                      color: context.palette.textPrimary,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ),
+                              ),
+
                               // ── Guest entry — Figma: Caption style,
                               // centered, ghost/text button, no fill, no
                               // border (spec §2.1.3). Routes into the WAEC
@@ -349,7 +372,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
                                 child: TextButton(
                                   onPressed: _isLoading
                                       ? null
-                                      : _handleGuestSignIn,
+                                      : () => _handleGuestSignIn(),
                                   child: Text(
                                     'Browse as Guest',
                                     style: AppTheme.caption.copyWith(

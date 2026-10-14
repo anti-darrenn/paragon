@@ -127,6 +127,32 @@ class Analytics {
         ),
       );
 
+  /// The five-question taster finished (`/try`).
+  Future<void> tasterComplete({required String subjectId, required int correct}) =>
+      _log(
+        (a) => a.logEvent(
+          name: 'taster_complete',
+          parameters: {'subject_id': subjectId, 'correct': correct},
+        ),
+      );
+
+  /// A "challenge a friend" link was made.
+  Future<void> challengeCreated({required String topicId}) => _log(
+    (a) => a.logEvent(
+      name: 'challenge_created',
+      parameters: {'topic_id': topicId},
+    ),
+  );
+
+  /// Someone answered a challenge link; whether they beat the score.
+  Future<void> challengePlayed({required String topicId, required bool beat}) =>
+      _log(
+        (a) => a.logEvent(
+          name: 'challenge_played',
+          parameters: {'topic_id': topicId, 'beat': beat ? 1 : 0},
+        ),
+      );
+
   /// "Notify me" on a coming-soon subject: the catalog slug only.
   Future<void> waitlistJoin({required String subject}) => _log(
     (a) => a.logEvent(name: 'waitlist_join', parameters: {'subject': subject}),

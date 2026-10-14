@@ -151,6 +151,42 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── CHALLENGE LINKS ("Challenge a friend", /c/:id) ──────────
+    // Written once by its creator (a guest may make one too), never
+    // edited. Anyone signed in — a friend arriving as a guest included —
+    // may *get* one by id; only its creator may list theirs (the export)
+    // or delete it. Deleted after 30 days by jobs.js --job=challenges.
+    match /challenges/{id} {
+      allow get: if request.auth != null;
+      allow list: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow delete: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly(['userId', 'name',
+             'subjectId', 'topicId', 'topicName', 'questionIds', 'score',
+             'total', 'createdAt'])
+        && request.resource.data.keys().hasAll(['userId', 'name',
+             'subjectId', 'topicId', 'topicName', 'questionIds', 'score',
+             'total', 'createdAt'])
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 30
+        && request.resource.data.subjectId is string
+        && request.resource.data.topicId is string
+        && request.resource.data.topicName is string
+        && request.resource.data.topicName.size() <= 120
+        && request.resource.data.questionIds is list
+        && request.resource.data.questionIds.size() > 0
+        && request.resource.data.questionIds.size() <= 10
+        && request.resource.data.total == request.resource.data.questionIds.size()
+        && request.resource.data.score is int
+        && request.resource.data.score >= 0
+        && request.resource.data.score <= request.resource.data.total;
+    }
+
     // ── PLAN (weekly goal and exam date) ────────────────────────
     // The study plan's inputs only; the plan is computed on the device.
     // Accounts only, owner only, closed field set, server time, a goal

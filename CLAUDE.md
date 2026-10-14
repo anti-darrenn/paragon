@@ -42,6 +42,28 @@ Setup defaults to the **"Full paper" preset** from `lib/core/exam/exam_formats.d
 formats are **unconfirmed** (`verified: false`, and the screen says so) until the owner
 checks them against current WASSCE papers.
 
+**Plan, goal and challenges** (Wave G):
+- **Pure models.** `lib/core/plan/` holds:
+  - `weekly_goal.dart`: weeks run Monday to Sunday in Lagos, whatever the device zone,
+    and `weeklyAttemptsCountProvider` counts the same week. No run of weeks is kept, so
+    streaks stay gone.
+  - `study_plan.dart`: topic weights are each topic's share of the real past questions
+    (`pastQuestionCount`), uniform where there are none, and the UI says which. It also
+    gives the shortest path (weight × what is left) and a **grade estimate from
+    practice**.
+- **The grade estimate.** It is a range until 50 drill answers in the subject, hidden
+  below 20, and always shown beside `kGradeEstimateNote`. It reads `progress` for display
+  only, which is allowed because it is private and nothing competitive uses it.
+- **Screens.** `/plan`, Home's "This week" card and the course page's plan panel cost no
+  reads of their own: the outlines and progress are already loaded.
+- **Challenge links.** `/c/:id` (`ChallengeLinkScreen`) records a friend's answers as
+  `source: 'challenge_link'`, which **never** reaches `progress`
+  (`challenge_link_test.dart` asserts it).
+- **The taster.** `/try` gives five instant-feedback questions from a subject's
+  most-examined topic, straight from the welcome screen, and records nothing.
+- **`QuestionRunner`** (`lib/core/widgets/question_runner.dart`) is the shared
+  instant-feedback runner for both.
+
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
 once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
 Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
@@ -146,7 +168,7 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-141 checks. The denials are the content: a write that succeeds only proves something
+147 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
 does not have. **CI does**: `.github/workflows/ci.yml` runs `tools/rules-test/rules.test.js`
 on the emulator for every pull request (`npm test` there; seeded fixtures, about 30 allow
@@ -525,7 +547,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -544,7 +566,7 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - **Placeholders.** `checkPublishable` (`lesson_check.dart`) refuses to publish a placeholder title (`test2`, `test_article`, `Sample`…), an empty article or a linkless video; a reviewer can override with a reason kept as a comment. `tools/admin/content_lint.js` applies the same rules to what is live, read-only, exiting non-zero — keep the two regexes in step.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
-- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
+- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge | challenge_link` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`** — and to `_ownedById`/`_ownedByQuery` (the export) and `OWNED` in `tools/admin/jobs.js` (guest cleanup, scheduled deletions, orphans). `export_test.dart` checks export and deletion cover the same set. Forgetting leaves a student who asked to be deleted, and mostly was.
 - **The account system** (`lib/features/account/`, `lib/features/profile/`). `users/{uid}` also carries `avatar` (`preset:<id>` or `initials:<colour>`), `bio` (≤160, private), `usernameChangedAt`, `deletionRequestedAt`, `legalVersion`/`legalAcceptedAt` and `prefs`; every one is allow-listed and shape-checked in `clientFieldsAreValid()`, and every timestamp must be the server's clock.
   - **Profiles are private.** `/me` and the bio are seen only by their owner; nothing social reads `users/{uid}`. A future public profile must be a separate opt-in document.
@@ -595,7 +617,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 987 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 1009 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

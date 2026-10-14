@@ -286,7 +286,24 @@ Done notes (Wave F, PR `feat/foundations`):
 ## Phase 7 — Differentiation (P2)
 
 - [ ] **P7.1** Examiner insights (`insights/{questionId}`, reviewer-written, hidden when absent).
-- [ ] **P7.2** Topic weights, predicted grade range, shortest-path plan, exam countdown. *(No streak: removed by decision. The weekly goal replaces it.)*
+- [x] **P7.2** Topic weights, predicted grade range, shortest-path plan, exam countdown. *(No streak: removed by decision. The weekly goal replaces it.)*
+  - *Done in Wave G (PR `feat/plan`).*
+    - **Weights** come from each topic's share of real past questions, with no new job:
+      `pastQuestionCount` already exists. Where there are none, all topics weigh the
+      same, and the screen says so.
+    - **Grade estimate** comes from practice. It is a range until 50 answers and is
+      labelled an estimate, objective questions only. The PLAN's grade bands match
+      `waec_grade.dart`.
+    - **Shortest path** is the top 3 by weight × (1 − mastery), with topics a week to
+      the exam.
+    - **`plan/{uid}`** stores only the goal and the date.
+    - **Home's "This week" card** replaces the duplicate weekly tile for accounts.
+    - **Also shipped:** the guest **5-question taster** (`/try`) and **Challenge a
+      friend** (`/c/:id`, a WhatsApp share, played as a guest, recorded as
+      `challenge_link`, never in `progress`).
+    - **Not done:** the exam-date onboarding step (the "This week" card prompts for it
+      instead), and push reminders (they would need FCM web push and a consent flow,
+      not worth it before launch).
 - [ ] **P7.3** Real-exam (CBT) mode after P5.2.1 is answered.
 - [ ] **P7.4** Theory (Paper 2) structure, hidden until 20+ questions.
 - [ ] **P7.5** Contributor bylines.
