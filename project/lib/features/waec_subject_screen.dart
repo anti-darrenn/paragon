@@ -8,6 +8,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/auth/guest_limits.dart';
 import '../core/theme/app_colors.dart';
+import '../core/content/question_counts.dart';
 import '../core/models/subject.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
@@ -156,21 +157,23 @@ class _WaecSubjectTile extends StatelessWidget {
   final bool isGuest;
   const _WaecSubjectTile({required this.subject, required this.isGuest});
 
-  // Spec §2.3.3 guest config restrictions: subject picker locked for
-  // guests. This app's "subject picker" is this list (there's no in-setup
-  // dropdown, since the subject is already chosen by the time setup
-  // opens), so the lock lives here.
-  //
-  // The rule itself moved to `GuestLimits` once Learning Mode started
-  // enforcing the same thing — two inline copies of a product rule drift,
-  // and the drift reads as a guest who can drill Physics but not sit a
-  // Physics exam.
+  // Whether a guest may sit this subject is the policy table's call
+  // (`canUse(Feature.waecUntimed)` via `GuestLimits.locks`) — all of them
+  // since 2026-10-14.
   bool get _lockedForGuest =>
       GuestLimits.locks(isGuest: isGuest, subjectName: subject.name);
+
+  // A subject with practice questions but no past ones (Chemistry and
+  // Government, so far) has no paper to sit. Known only once
+  // `jobs.js --job=counts` has split the subject's count; until then the
+  // tile stays open, as it always was.
+  bool get _noPastQuestions =>
+      subject.counts.isSplit && subject.pastQuestionCount == 0;
 
   @override
   Widget build(BuildContext context) {
     final locked = _lockedForGuest;
+    final empty = !locked && _noPastQuestions;
     final color = locked
         ? context.palette.textSecondary
         : AppColors.forSubject(subject.name);
@@ -182,7 +185,9 @@ class _WaecSubjectTile extends StatelessWidget {
         .join();
     return SurfaceCard(
       padding: const EdgeInsets.all(14),
-      onTap: locked
+      onTap: empty
+          ? null
+          : locked
           ? () => ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text(GuestLimits.lockedSubjectMessage)),
             )
@@ -221,7 +226,15 @@ class _WaecSubjectTile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  locked ? 'Make an account to unlock' : 'Past papers',
+                  locked
+                      ? 'Make an account to unlock'
+                      : empty
+                      ? 'No past questions yet'
+                      : subject.pastQuestionCount > 0
+                      ? 'Past papers · '
+                            '${groupThousands(subject.pastQuestionCount)} '
+                            'questions'
+                      : 'Past papers',
                   style: AppTheme.caption.copyWith(
                     color: context.palette.textSecondary,
                   ),
@@ -230,7 +243,11 @@ class _WaecSubjectTile extends StatelessWidget {
             ),
           ),
           Icon(
-            locked ? Icons.lock_outline_rounded : Icons.chevron_right_rounded,
+            locked
+                ? Icons.lock_outline_rounded
+                : empty
+                ? Icons.hourglass_empty_rounded
+                : Icons.chevron_right_rounded,
             color: context.palette.textSecondary,
             size: 20,
           ),
