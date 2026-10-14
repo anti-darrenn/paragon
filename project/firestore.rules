@@ -151,6 +151,38 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── EXAMINER INSIGHTS (lib/core/insights/examiner_insight.dart) ──
+    // Paragon's own summaries of the Chief Examiners' reports, per
+    // question (id = question id) or topic (id = topic_<topicId>).
+    // Students get published ones by id; the app asks only when
+    // jobs.js has flagged that one exists. Writers draft, reviewers
+    // publish, within their subjects.
+    match /insights/{id} {
+      allow get: if request.auth != null
+        && (resource.data.status == 'published' || isWriter());
+      allow list: if isWriter();
+      allow create, update: if writes(request.resource.data.subjectId)
+        && (request.resource.data.status == 'draft'
+            || (request.resource.data.status == 'published'
+                && reviews(request.resource.data.subjectId)))
+        && (resource == null || resource.data.status == 'draft'
+            || reviews(resource.data.subjectId))
+        && request.resource.data.keys().hasOnly(['kind', 'subjectId',
+             'questionId', 'topicId', 'summary', 'commonWrongOption', 'tip',
+             'reportYear', 'reportRef', 'years', 'status', 'updatedAt',
+             'updatedBy'])
+        && request.resource.data.kind in ['question', 'topic']
+        && request.resource.data.summary is string
+        && request.resource.data.summary.size() <= 1000
+        && request.resource.data.tip is string
+        && request.resource.data.tip.size() <= 300
+        && request.resource.data.reportRef is string
+        && request.resource.data.reportRef.size() <= 160
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid;
+      allow delete: if reviews(resource.data.subjectId);
+    }
+
     // ── LIVE QUIZ ROOMS (lib/core/rooms/room.dart) ──────────────
     // A host with an account writes the room; players (guests welcome)
     // write a nickname once and one answer per question, accepted only

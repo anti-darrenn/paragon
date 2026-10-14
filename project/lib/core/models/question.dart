@@ -18,6 +18,11 @@ class Question {
   /// past paper — see [provenanceLabel].
   final String origin;
 
+  /// A published examiner insight exists for this question
+  /// (`insights/{id}`), stamped by `jobs.js --job=insights` so the app only
+  /// reads one when there is one.
+  final bool hasInsight;
+
   /// A diagram the question depends on: a `lessonAssets` id, or null.
   /// Set on scraped past questions by `tools/scraper/10_fetch_question_images.js`.
   final String? imageId;
@@ -36,6 +41,7 @@ class Question {
     required this.source,
     this.year,
     this.origin = '',
+    this.hasInsight = false,
     this.imageId,
     this.explanationImageId,
   });
@@ -56,6 +62,7 @@ class Question {
       source: asString(d['source'], fallback: 'drill'),
       year: asIntOrNull(d['year']),
       origin: asString(d['origin']),
+      hasInsight: asBool(d['hasInsight']),
       imageId: asStringOrNull(d['imageId']),
       explanationImageId: asStringOrNull(d['explanationImageId']),
     );
@@ -94,6 +101,7 @@ class Question {
     'source': source,
     'year': year,
     'origin': origin,
+    'hasInsight': hasInsight,
     'imageId': imageId,
     'explanationImageId': explanationImageId,
   };
@@ -111,6 +119,7 @@ class Question {
     source: asString(d['source'], fallback: 'drill'),
     year: asIntOrNull(d['year']),
     origin: asString(d['origin']),
+    hasInsight: asBool(d['hasInsight']),
     imageId: asStringOrNull(d['imageId']),
     explanationImageId: asStringOrNull(d['explanationImageId']),
   );

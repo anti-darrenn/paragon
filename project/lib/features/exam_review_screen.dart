@@ -19,6 +19,7 @@ import '../core/widgets/report_problem_button.dart';
 import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/ui/ui.dart';
+import '../core/widgets/examiner_insight_panel.dart';
 
 /// `/waec/review/:examId`: a finished exam, marked.
 ///
@@ -339,6 +340,7 @@ class ExamReviewCard extends StatelessWidget {
               ),
             QuestionImage(assetId: q.explanationImageId),
           ],
+          ExaminerInsightPanel(question: q, selected: item.selected),
           Align(
             alignment: Alignment.centerLeft,
             child: Wrap(

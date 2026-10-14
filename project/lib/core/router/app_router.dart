@@ -62,6 +62,7 @@ import 'package:paragon/features/rooms/join_room_screen.dart';
 import 'package:paragon/features/rooms/new_room_screen.dart';
 import 'package:paragon/features/rooms/host_room_screen.dart';
 import 'package:paragon/features/rooms/player_room_screen.dart';
+import 'package:paragon/features/admin/studio/insight_editor_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -678,6 +679,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // A flagged question and its reports. Also a deep link, from the
       // report digest email.
+      GoRoute(
+        path: '/admin/insight/:id',
+        builder: (context, state) =>
+            InsightEditorScreen(id: state.pathParameters['id']!),
+      ),
       GoRoute(
         path: '/admin/flag/:questionId',
         builder: (context, state) =>

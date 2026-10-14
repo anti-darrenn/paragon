@@ -18,6 +18,7 @@ import 'study/offline/save_offline_button.dart';
 import '../core/theme/app_palette.dart';
 import '../core/providers/analytics_provider.dart';
 import 'plan/plan_widgets.dart';
+import '../core/widgets/examiner_insight_panel.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -179,6 +180,11 @@ class _TopicBody extends StatelessWidget {
               ),
             ),
           ],
+        ),
+
+        ExaminerThemesBlock(
+          topicId: topic.id,
+          flagged: topic.hasExaminerThemes,
         ),
 
         if (topicFrequencyLine(course, topic.id) case final line?) ...[

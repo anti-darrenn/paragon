@@ -37,7 +37,11 @@ class CourseTopic {
     required this.isPlaceholder,
     this.lessonCount = 0,
     this.split,
+    this.hasExaminerThemes = false,
   });
+
+  /// See `Topic.hasExaminerThemes`.
+  final bool hasExaminerThemes;
 
   /// Past and practice questions from the topic document; null where only
   /// a total is known (a catalog topic, a test fixture).
@@ -291,6 +295,7 @@ final courseProvider = FutureProvider.family<Course, String>((ref, key) async {
                 isPlaceholder: false,
                 lessonCount: topic.lessonCount,
                 split: topic.counts,
+                hasExaminerThemes: topic.hasExaminerThemes,
               ),
           ],
         ),

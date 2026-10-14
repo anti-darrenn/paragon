@@ -35,6 +35,7 @@
  *   node jobs.js --job=counts   [--apply]
  *   node jobs.js --job=challenges [--apply]
  *   node jobs.js --job=rooms    [--apply]
+ *   node jobs.js --job=insights [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * And one that is deliberately NOT in `all`, to be run once by hand:
@@ -578,6 +579,45 @@ async function jobChallenges() {
   if (APPLY && old.size) await deleteDocs(old.docs.map((d) => d.ref));
 }
 
+// ─── Job: examiner-insight flags ─────────────────────────────────────
+
+/**
+ * Stamps `questions.hasInsight` and `topics.hasExaminerThemes` from the
+ * published `insights` (and clears flags whose insight is gone or was
+ * unpublished), so the app reads an insight only where one exists. Reads
+ * every insight (a few hundred at most) and the documents flagged now.
+ */
+async function jobInsights() {
+  log(`\n── Examiner-insight flags [${mode()}]`);
+  const insights = await db.collection("insights").where("status", "==", "published").get();
+  const wantQ = new Set();
+  const wantT = new Set();
+  for (const d of insights.docs) {
+    const i = d.data();
+    if (i.kind === "topic" && i.topicId) wantT.add(i.topicId);
+    else if (i.kind === "question") wantQ.add(d.id);
+  }
+  const haveQ = new Set(
+    (await db.collection("questions").where("hasInsight", "==", true).select().get()).docs.map((d) => d.id),
+  );
+  const haveT = new Set(
+    (await db.collection("topics").where("hasExaminerThemes", "==", true).select().get()).docs.map((d) => d.id),
+  );
+  const changes = [
+    ...[...wantQ].filter((id) => !haveQ.has(id)).map((id) => ["questions", id, { hasInsight: true }]),
+    ...[...haveQ].filter((id) => !wantQ.has(id)).map((id) => ["questions", id, { hasInsight: false }]),
+    ...[...wantT].filter((id) => !haveT.has(id)).map((id) => ["topics", id, { hasExaminerThemes: true }]),
+    ...[...haveT].filter((id) => !wantT.has(id)).map((id) => ["topics", id, { hasExaminerThemes: false }]),
+  ];
+  for (const [col, id, data] of changes) log(`   ${col}/${id} ${JSON.stringify(data)}`);
+  log(`   ${changes.length} ${APPLY ? "updated" : "would be updated"}`);
+  if (APPLY) {
+    for (const [col, id, data] of changes) {
+      await db.collection(col).doc(id).update(data).catch((e) => log(`   ! ${col}/${id}: ${e.message}`));
+    }
+  }
+}
+
 // ─── Job: expired quiz rooms ─────────────────────────────────────────
 
 /**
@@ -607,6 +647,7 @@ async function main() {
   if (JOB === "counts" || JOB === "all") await jobLessonCounts();
   if (JOB === "challenges" || JOB === "all") await jobChallenges();
   if (JOB === "rooms" || JOB === "all") await jobRooms();
+  if (JOB === "insights" || JOB === "all") await jobInsights();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();

@@ -21,6 +21,10 @@ class Topic {
   /// lessons" — the same convention as `subjects.topicCount` — so callers
   /// hide a count rather than draw "0 of 0".
   final int lessonCount;
+
+  /// A published "Where students lose marks" exists (`insights/topic_<id>`),
+  /// stamped by `jobs.js --job=insights`.
+  final bool hasExaminerThemes;
   // Learn mode content. No seeded topic has these yet — always null/false
   // today, but null-safe so Learn mode doesn't need a schema migration
   // once notes get authored.
@@ -37,6 +41,7 @@ class Topic {
     this.pastQuestionCount = 0,
     this.practiceQuestionCount = 0,
     this.lessonCount = 0,
+    this.hasExaminerThemes = false,
     this.hasNotes = false,
     this.notesMarkdown,
   });
@@ -59,6 +64,7 @@ class Topic {
       practiceQuestionCount: asInt(d['practiceQuestionCount']),
       order: asInt(d['order']),
       lessonCount: asInt(d['lessonCount']),
+      hasExaminerThemes: asBool(d['hasExaminerThemes']),
       hasNotes: asBool(d['hasNotes']),
       notesMarkdown: d['notesMarkdown'] == null ? null : asString(d['notesMarkdown']),
     );

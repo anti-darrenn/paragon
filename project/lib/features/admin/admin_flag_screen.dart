@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/providers/auth_provider.dart';
 import '../../core/repositories/admin_flag_repository.dart';
@@ -98,7 +99,17 @@ class _AdminFlagScreenState extends ConsumerState<AdminFlagScreen> {
 
     return Scaffold(
       backgroundColor: context.palette.background,
-      appBar: ParagonAppBar(title: const Text('Problem report')),
+      appBar: ParagonAppBar(
+        title: const Text('Problem report'),
+        actions: [
+          TextButton.icon(
+            onPressed: () =>
+                context.push('/admin/insight/${widget.questionId}'),
+            icon: const Icon(Icons.fact_check_outlined, size: 18),
+            label: const Text('Examiner insight'),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: async.when(
           loading: () => const Center(child: CircularProgressIndicator()),

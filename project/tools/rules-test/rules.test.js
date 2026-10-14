@@ -53,6 +53,8 @@ async function main() {
   // ── Fixtures, written past the rules ──────────────────────────────
   await env.withSecurityRulesDisabled(async (ctx) => {
     const db = ctx.firestore();
+    await setDoc(doc(db, "insights/qpub"), { kind: "question", subjectId: "s1", status: "published", summary: "x" });
+    await setDoc(doc(db, "insights/qdraft"), { kind: "question", subjectId: "s1", status: "draft", summary: "y" });
     await setDoc(doc(db, "topics/t1"), { subjectId: "s1", name: "Indices", lessonCount: 1 });
     await setDoc(doc(db, "topics/t1/resources/live"), {
       subjectId: "s1", topicId: "t1", status: "published", title: "Laws of indices", type: "article", order: 1,
@@ -214,6 +216,26 @@ async function main() {
   await check(
     "and a late answer is refused",
     assertFails(setDoc(doc(guest("g11"), "rooms/ABC234/answers/g11_0"), ans("g11", 0))),
+  );
+
+  console.log("\ninsights: students read published ones by id; staff write");
+  const writer = () =>
+    env.authenticatedContext("wri", { writer: true, firebase: { sign_in_provider: "google.com" } }).firestore();
+  const ins = (status, by) => ({
+    kind: "question", subjectId: "s1", questionId: "q1", topicId: "t1", summary: "Many confused base and index.",
+    commonWrongOption: 2, tip: "", reportYear: 2018, reportRef: "WASSCE 2018 Q12", years: [], status,
+    updatedAt: serverTimestamp(), updatedBy: by,
+  });
+  await check("a student reads a published insight", assertSucceeds(getDoc(doc(student(), "insights/qpub"))));
+  await check("not a draft", assertFails(getDoc(doc(student(), "insights/qdraft"))));
+  await check("students cannot list insights", assertFails(getDocs(collection(student(), "insights"))));
+  await check("a student cannot write one", assertFails(setDoc(doc(student(), "insights/q9"), ins("draft", "ann"))));
+  await check("a writer saves a draft", assertSucceeds(setDoc(doc(writer(), "insights/q1"), ins("draft", "wri"))));
+  await check("a writer cannot publish", assertFails(setDoc(doc(writer(), "insights/q1"), ins("published", "wri"))));
+  await check("a reviewer publishes", assertSucceeds(setDoc(doc(reviewer(), "insights/q1"), ins("published", "rev"))));
+  await check(
+    "a writer cannot edit a published one",
+    assertFails(setDoc(doc(writer(), "insights/q1"), ins("draft", "wri"))),
   );
 
   console.log("\nusers/{uid}");

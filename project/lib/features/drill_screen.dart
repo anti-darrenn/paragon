@@ -33,6 +33,7 @@ import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/session_title.dart';
 import '../core/challenge/challenge_link.dart';
 import 'challenge_link/challenge_share.dart';
+import '../core/widgets/examiner_insight_panel.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -474,6 +475,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   ),
                   const SizedBox(height: 16),
                 ],
+                if (_submitted)
+                  ExaminerInsightPanel(question: q, selected: _selected),
                 // outside the explanation block on purpose — most questions
                 // have no worked solution, and those are the ones most worth
                 // reporting
