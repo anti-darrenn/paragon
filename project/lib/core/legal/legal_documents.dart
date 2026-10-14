@@ -233,6 +233,10 @@ const LegalDocument privacyPolicy = LegalDocument(
             'size, line spacing, reading font, low-data mode) and your choice '
             'about usage data are stored with your account so they follow '
             'you to other devices. As a guest they stay on your device.',
+        'An exam you have started but not submitted is kept on your '
+            'device, not sent to us, so you can carry on after losing your '
+            'connection or closing the app. It is removed when you submit '
+            'or exit the exam, or after a day.',
       ],
     ),
     LegalSection(

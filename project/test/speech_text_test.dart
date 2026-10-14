@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:paragon/features/study/read_aloud/speech_text.dart';
+import 'package:paragon/core/a11y/speech_text.dart';
 
 /// LaTeX to spoken British English, for read-aloud.
 ///

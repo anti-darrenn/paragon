@@ -1,6 +1,6 @@
 import '../../../core/lessons/lesson_doc.dart';
 import '../../../core/widgets/article_view.dart' show ArticleBlockKind;
-import 'speech_text.dart';
+import '../../../core/a11y/speech_text.dart';
 
 /// One utterance: the text to speak, and the top-level block it belongs to
 /// (so the article can mark that block while it is read).

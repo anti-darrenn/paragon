@@ -28,6 +28,20 @@ built `FontManifest.json`, because Flutter web downloads every manifest font at 
 `\mathfrak`, `\mathscr`, `\mathsf`, `\textsf`, `\texttt` and `\mathtt`, which would
 fall back to the main font. If content needs one of these, drop it from the trim list.
 
+**The WAEC exam** (`waec_exam_screen.dart`) has:
+- keyboard control: A–E answer, ←/→ move, F flags, Enter submits from the summary;
+- flag-for-review, and a pre-submit summary of answered, unanswered and flagged;
+- a 48 dp question strip that speaks each number's state.
+
+It is **kept on the device** while it runs (`SavedExam`, shared_preferences, questions
+included). Setup offers "Resume", restoring answers, flags, place and the clock. It is
+never kept in Firestore, which would mean a write per tap on Spark. Submit or exit clears
+it, and it goes stale after a day.
+
+Setup defaults to the **"Full paper" preset** from `lib/core/exam/exam_formats.dart`. Those
+formats are **unconfirmed** (`verified: false`, and the screen says so) until the owner
+checks them against current WASSCE papers.
+
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
 once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
 Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
@@ -469,6 +483,13 @@ cards**:
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
+**Maths is spoken.** Any line with maths, in either renderer, is one semantics node
+labelled by `speakText` (`lib/core/a11y/speech_text.dart`, the read-aloud converter), via
+`mathSemantics()`. `flutter_math_fork` exposes nothing, so before this a screen reader
+heard "If F = " then "C + 32". When you add `excludeSemantics` to a tappable thing, give
+the `Semantics` its own `onTap`, or the action disappears with the children
+(`exam_ux_test.dart` caught exactly that on the exam options).
+
 **`web/index.html` must not load MathJax.** Maths is drawn on the canvas by
 `flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
 1.2 MB of render-blocking download that nothing used. The page now carries only
@@ -486,7 +507,7 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 `\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
 
-**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` exactly in dark. **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
+**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` in dark — except `onLow`, raised from `white38`/`black38` to 50% white / 56% black so small text passes WCAG AA (4.5:1). **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
 
 ## Firestore conventions
 
@@ -560,7 +581,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 972 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 987 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

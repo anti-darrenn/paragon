@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 
+import '../a11y/speech_text.dart';
+
 /// Renders a string containing mixed plain text and LaTeX math.
 /// Supports: $...$  $$...$$  \(...\)  \[...\]  \textbf{}  \textit{}
 class FullLatexView extends StatelessWidget {
@@ -172,9 +174,12 @@ class FullLatexView extends StatelessWidget {
       final text = spans.map((sp) => (sp as TextSpan).text ?? '').join();
       return Text(text, style: effectiveStyle, textAlign: textAlign);
     }
-    return RichText(
-      text: TextSpan(style: effectiveStyle, children: spans),
-      textAlign: textAlign ?? TextAlign.start,
+    return mathSemantics(
+      latex,
+      RichText(
+        text: TextSpan(style: effectiveStyle, children: spans),
+        textAlign: textAlign ?? TextAlign.start,
+      ),
     );
   }
 
@@ -199,3 +204,17 @@ class _BraceResult {
   final int end;
   _BraceResult(this.content, this.end);
 }
+
+/// [child] — text with maths in it — as one accessible node, read as
+/// words: "If F equals nine over five C plus thirty-two".
+///
+/// Without this a screen reader got the text runs between the maths and
+/// nothing for the maths itself (`flutter_math_fork` exposes no
+/// semantics): the live-site review heard "If F = " then "C + 32". The
+/// words come from `speakText`, the read-aloud converter, so what a
+/// screen reader says and what read-aloud says are the same.
+Widget mathSemantics(String source, Widget child) => Semantics(
+  label: speakText(source),
+  excludeSemantics: true,
+  child: child,
+);

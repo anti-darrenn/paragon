@@ -80,4 +80,38 @@ class Question {
     }
     return null;
   }
+
+  /// Everything needed to rebuild this question without Firestore — for an
+  /// exam kept on the device so it can be resumed (`saved_exam.dart`).
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'topicId': topicId,
+    'subjectId': subjectId,
+    'text': text,
+    'options': options,
+    'correctIndex': correctIndex,
+    'explanation': explanation,
+    'source': source,
+    'year': year,
+    'origin': origin,
+    'imageId': imageId,
+    'explanationImageId': explanationImageId,
+  };
+
+  /// The inverse of [toJson], as forgiving as [Question.fromFirestore]:
+  /// device storage can hold anything an older build wrote.
+  factory Question.fromJson(Map<String, dynamic> d) => Question(
+    id: asString(d['id']),
+    topicId: asString(d['topicId']),
+    subjectId: asString(d['subjectId']),
+    text: asString(d['text']),
+    options: asStringList(d['options']),
+    correctIndex: asIntOrNull(d['correctIndex']) ?? -1,
+    explanation: asString(d['explanation']),
+    source: asString(d['source'], fallback: 'drill'),
+    year: asIntOrNull(d['year']),
+    origin: asString(d['origin']),
+    imageId: asStringOrNull(d['imageId']),
+    explanationImageId: asStringOrNull(d['explanationImageId']),
+  );
 }

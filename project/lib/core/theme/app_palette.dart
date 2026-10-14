@@ -63,7 +63,8 @@ class AppPalette extends ThemeExtension<AppPalette> {
   /// `white54` on dark: supporting text.
   final Color onMedium;
 
-  /// `white38` on dark: faint text, chevrons, disabled.
+  /// Faint text, chevrons, disabled: 50% white on dark (was `white38`,
+  /// raised to pass WCAG AA in October 2026).
   final Color onLow;
 
   /// `white24` on dark: option outlines.
@@ -82,7 +83,10 @@ class AppPalette extends ThemeExtension<AppPalette> {
     textStrong: Colors.white,
     onHigh: Colors.white70,
     onMedium: Colors.white54,
-    onLow: Colors.white38,
+    // 50% white, not white38: 38% is 3.5:1 on the background and fails
+    // WCAG AA for the small text it is used for (exam question numbers,
+    // "Untimed"); 50% is 4.6:1 on the background and on surfaces.
+    onLow: Color(0x80FFFFFF),
     outline: Colors.white24,
     outlineFaint: Colors.white12,
   );
@@ -97,7 +101,9 @@ class AppPalette extends ThemeExtension<AppPalette> {
     textStrong: AppColors.textStrongLight,
     onHigh: Colors.black87,
     onMedium: Colors.black54,
-    onLow: Colors.black38,
+    // 56% black, not black38 (2.6:1): 4.6:1 on the light background and
+    // on white surfaces — WCAG AA for small text.
+    onLow: Color(0x8F000000),
     outline: Colors.black26,
     outlineFaint: Colors.black12,
   );

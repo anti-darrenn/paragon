@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/exam/exam_formats.dart';
+import '../core/exam/saved_exam.dart';
 import '../core/models/subject.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/learning_repository.dart';
@@ -50,6 +52,18 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
   int _timerMinutes = _defaultTimerMinutes;
   bool _shuffle = true;
   bool _starting = false;
+
+  /// "Full paper" (the subject's real objective-paper length and time,
+  /// `exam_formats.dart`) is the default; "Custom" shows the sliders.
+  bool _fullPaper = true;
+  bool _formatApplied = false;
+
+  void _applyFormat(ExamFormat format, {required bool isGuest}) {
+    _questionCount = format.questions;
+    _timerMinutes = format.minutes;
+    _timerEnabled = !isGuest;
+  }
+
   String? _startError;
 
   Subject? _findSubject(List<Subject> subjects, String id) {
@@ -116,6 +130,12 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         )?.name ??
         'WAEC Exam';
 
+    final format = examFormatFor(subjectName);
+    if (!_formatApplied && subjectName != 'WAEC Exam') {
+      _formatApplied = true;
+      if (_fullPaper) _applyFormat(format, isGuest: isGuest);
+    }
+
     // Guests never get a timer, regardless of what the (hidden-for-guest)
     // toggle was left at.
     if (isGuest && _timerEnabled) _timerEnabled = false;
@@ -163,13 +183,18 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                     '$subjectName past questions, marked at the end like '
                     'the real paper.',
               ),
+              _ResumeCard(subjectId: widget.subjectId),
+              SurfaceCard(child: _paperSection(format, isGuest)),
+              const SizedBox(height: 12),
               SurfaceCard(child: _yearRangeSection(minYear, maxYear)),
               const SizedBox(height: 12),
               SurfaceCard(
                 child: _questionCountSection(subjectName, availableAsync),
               ),
-              const SizedBox(height: 12),
-              SurfaceCard(child: _timerSection(isGuest)),
+              if (!_fullPaper) ...[
+                const SizedBox(height: 12),
+                SurfaceCard(child: _timerSection(isGuest)),
+              ],
               if (!isGuest) ...[
                 const SizedBox(height: 12),
                 SurfaceCard(child: _shuffleSection()),
@@ -183,6 +208,51 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           );
         },
       ),
+    );
+  }
+
+  Widget _paperSection(ExamFormat format, bool isGuest) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Paper',
+          style: AppTheme.heading3.copyWith(color: context.palette.textPrimary),
+        ),
+        const SizedBox(height: 10),
+        SegmentedButton<bool>(
+          segments: const [
+            ButtonSegment(value: true, label: Text('Full paper')),
+            ButtonSegment(value: false, label: Text('Custom')),
+          ],
+          selected: {_fullPaper},
+          onSelectionChanged: (v) => setState(() {
+            _fullPaper = v.first;
+            if (_fullPaper) _applyFormat(format, isGuest: isGuest);
+          }),
+        ),
+        const SizedBox(height: 10),
+        Text(
+          _fullPaper
+              ? isGuest
+                    ? '${format.questions} questions, untimed (make an account '
+                          'to sit it against the clock)'
+                    : format.label
+              : 'Choose the length and time yourself.',
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+        ),
+        if (_fullPaper && !format.verified)
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              'The usual length of the WASSCE objective paper; not yet '
+              'checked against this year\'s.',
+              style: AppTheme.caption.copyWith(
+                color: context.palette.textSecondary,
+              ),
+            ),
+          ),
+      ],
     );
   }
 
@@ -254,28 +324,29 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           '$_questionCount questions',
           style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
         ),
-        SliderTheme(
-          data: SliderTheme.of(context).copyWith(
-            activeTrackColor: AppColors.primary,
-            inactiveTrackColor: context.palette.track,
-            thumbColor: AppColors.primary,
-            overlayColor: AppColors.primary.withAlpha((0.2 * 255).round()),
-          ),
-          child: Slider(
-            min: _minQuestionCount.toDouble(),
-            max: _maxQuestionCount.toDouble(),
-            divisions:
-                (_maxQuestionCount - _minQuestionCount) ~/ _questionCountStep,
-            value: _questionCount
-                .clamp(_minQuestionCount, _maxQuestionCount)
-                .toDouble(),
-            label: '$_questionCount',
-            onChanged: (v) => setState(
-              () => _questionCount =
-                  (v / _questionCountStep).round() * _questionCountStep,
+        if (!_fullPaper)
+          SliderTheme(
+            data: SliderTheme.of(context).copyWith(
+              activeTrackColor: AppColors.primary,
+              inactiveTrackColor: context.palette.track,
+              thumbColor: AppColors.primary,
+              overlayColor: AppColors.primary.withAlpha((0.2 * 255).round()),
+            ),
+            child: Slider(
+              min: _minQuestionCount.toDouble(),
+              max: _maxQuestionCount.toDouble(),
+              divisions:
+                  (_maxQuestionCount - _minQuestionCount) ~/ _questionCountStep,
+              value: _questionCount
+                  .clamp(_minQuestionCount, _maxQuestionCount)
+                  .toDouble(),
+              label: '$_questionCount',
+              onChanged: (v) => setState(
+                () => _questionCount =
+                    (v / _questionCountStep).round() * _questionCountStep,
+              ),
             ),
           ),
-        ),
         const SizedBox(height: 4),
         availableAsync.when(
           loading: () => Text(
@@ -490,6 +561,82 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           ),
         ),
       ],
+    );
+  }
+}
+
+/// The signed-in student's exam in progress for [subjectId], kept on the
+/// device (`SavedExam`), or null.
+final savedExamProvider = FutureProvider.autoDispose.family<SavedExam?, String>(
+  (ref, subjectId) async {
+    final uid = ref.watch(currentUserProvider)?.uid;
+    if (uid == null) return null;
+    return ref.read(savedExamStoreProvider).load(uid, subjectId);
+  },
+);
+
+/// "You have an exam in progress": resume it where it was left, clock and
+/// all, or throw it away. Shown above the setup when there is one.
+class _ResumeCard extends ConsumerWidget {
+  const _ResumeCard({required this.subjectId});
+
+  final String subjectId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final saved = ref.watch(savedExamProvider(subjectId)).asData?.value;
+    if (saved == null) return const SizedBox.shrink();
+    final minutesLeft = (saved.remainingSeconds / 60).ceil();
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: SurfaceCard(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'You have an exam in progress',
+              style: AppTheme.heading3.copyWith(
+                color: context.palette.textPrimary,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              '${saved.answeredCount} of ${saved.questions.length} answered'
+              '${saved.timerEnabled ? ' · $minutesLeft min left' : ''}'
+              '${saved.flagged.isEmpty ? '' : ' · ${saved.flagged.length} flagged'}',
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textSecondary,
+              ),
+            ),
+            const SizedBox(height: 12),
+            Wrap(
+              spacing: 10,
+              runSpacing: 8,
+              children: [
+                ElevatedButton(
+                  onPressed: () => context.go(
+                    '/waec/$subjectId/exam',
+                    extra: WaecExamSessionData.resuming(saved),
+                  ),
+                  child: const Text('Resume'),
+                ),
+                TextButton(
+                  onPressed: () async {
+                    final uid = ref.read(currentUserProvider)?.uid;
+                    if (uid != null) {
+                      await ref
+                          .read(savedExamStoreProvider)
+                          .clear(uid, subjectId);
+                    }
+                    ref.invalidate(savedExamProvider(subjectId));
+                  },
+                  child: const Text('Discard it'),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -205,15 +205,25 @@ class MathText extends StatelessWidget {
 
     flushPlain();
 
-    // If there's no WidgetSpan (i.e., no math segments) return regular Text
-    final hasMath = spans.any((sp) => sp is WidgetSpan);
-    if (!hasMath) {
-      return Text(s, style: effectiveStyle, textAlign: textAlign);
+    // Plain Text only when every span is unstyled text — and then the
+    // scanned text, not the raw source. Returning `Text(s)` here showed
+    // `	extbf{..}`, `	extit{..}` and `\$` literally on any line without
+    // maths; FullLatexView had the same bug and was fixed on 2026-09-25,
+    // and the two renderers must agree (they are one widget's flag).
+    final onlyPlain = spans.every(
+      (sp) => sp is TextSpan && sp.style == effectiveStyle,
+    );
+    if (onlyPlain) {
+      final text = spans.map((sp) => (sp as TextSpan).text ?? '').join();
+      return Text(text, style: effectiveStyle, textAlign: textAlign);
     }
 
-    return RichText(
-      text: TextSpan(style: effectiveStyle, children: spans),
-      textAlign: textAlign,
+    return mathSemantics(
+      s,
+      RichText(
+        text: TextSpan(style: effectiveStyle, children: spans),
+        textAlign: textAlign,
+      ),
     );
   }
 }

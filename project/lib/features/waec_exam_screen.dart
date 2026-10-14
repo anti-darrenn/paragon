@@ -5,7 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/a11y/speech_text.dart';
 import '../core/exam/exam_result.dart';
+import '../core/exam/saved_exam.dart';
 import '../core/models/question.dart';
 import '../core/repositories/exam_result_repository.dart';
 import 'exam_review_screen.dart' show GradeEstimateCard;
@@ -33,11 +35,22 @@ class WaecExamSessionData {
     required this.questions,
     required this.timerEnabled,
     required this.timerDurationMinutes,
+    this.resume,
   });
+
+  /// Picks up an exam kept on the device (`SavedExam`): its questions,
+  /// answers, flags, place and remaining time.
+  factory WaecExamSessionData.resuming(SavedExam saved) => WaecExamSessionData(
+    questions: saved.questions,
+    timerEnabled: saved.timerEnabled,
+    timerDurationMinutes: saved.timerMinutes,
+    resume: saved,
+  );
 
   final List<Question> questions;
   final bool timerEnabled;
   final int timerDurationMinutes;
+  final SavedExam? resume;
 }
 
 class WaecExamScreen extends ConsumerStatefulWidget {
@@ -71,8 +84,16 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   /// id is chosen up front, so a retried save writes the same document.
   ExamResult? _result;
   bool _resultSaved = false;
-  final DateTime _startedAt = DateTime.now();
+  DateTime _startedAt = DateTime.now();
 
+  /// Questions the student marked to come back to. Shown on the strip and
+  /// counted before submitting; never scored.
+  final Set<int> _flagged = {};
+
+  /// Debounces saving the exam to the device (`SavedExam`).
+  Timer? _persistTimer;
+  late final SavedExamStore _store = ref.read(savedExamStoreProvider);
+  String? _uid;
   Timer? _ticker;
   int _remainingSeconds = 0;
   bool _vibratedFiveMin = false;
@@ -95,8 +116,17 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     }
     // Closing or reloading the tab mid-exam asks first (web only).
     setLeaveGuard(true);
+    _uid = ref.read(currentUserProvider)?.uid;
+    final resume = session.resume;
+    if (resume != null) {
+      _answers.addAll(resume.answers);
+      _flagged.addAll(resume.flagged);
+      _currentIndex = resume.currentIndex;
+      _startedAt = resume.startedAt;
+    }
     if (session.timerEnabled) {
-      _remainingSeconds = session.timerDurationMinutes * 60;
+      _remainingSeconds =
+          resume?.remainingSeconds ?? session.timerDurationMinutes * 60;
       _ticker = Timer.periodic(const Duration(seconds: 1), _onTick);
     }
   }
@@ -104,6 +134,12 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   @override
   void dispose() {
     _ticker?.cancel();
+    // A last save on the way out (a route change, not a submit): the
+    // debounce may not have fired yet.
+    if (_persistTimer?.isActive ?? false) {
+      _persistTimer!.cancel();
+      _persistNow();
+    }
     setLeaveGuard(false);
     super.dispose();
   }
@@ -116,6 +152,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     setState(() {
       if (_remainingSeconds > 0) _remainingSeconds--;
     });
+    // The clock is part of what a resume restores.
+    if (_remainingSeconds % 15 == 0) _persist();
     if (_remainingSeconds == 300 && !_vibratedFiveMin) {
       _vibratedFiveMin = true;
       HapticFeedback.heavyImpact();
@@ -149,11 +187,60 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
 
   void _selectOption(int optionIndex) {
     if (_examSubmitted) return;
+    final q = widget.session?.questions[_currentIndex];
+    if (q == null || optionIndex >= q.options.length) return;
     setState(() => _answers[_currentIndex] = optionIndex);
+    _persist();
   }
 
   void _goToQuestion(int index) {
+    final total = widget.session?.questions.length ?? 0;
+    if (index < 0 || index >= total) return;
     setState(() => _currentIndex = index);
+    _persist();
+  }
+
+  void _toggleFlag() {
+    if (_examSubmitted) return;
+    setState(() {
+      if (!_flagged.remove(_currentIndex)) _flagged.add(_currentIndex);
+    });
+    _persist();
+  }
+
+  /// Keeps the exam on the device, half a second after the last change.
+  void _persist() {
+    if (_examSubmitted || _uid == null) return;
+    _persistTimer?.cancel();
+    _persistTimer = Timer(const Duration(milliseconds: 500), _persistNow);
+  }
+
+  void _persistNow() {
+    final session = widget.session;
+    final uid = _uid;
+    if (session == null || uid == null || _examSubmitted) return;
+    _store.save(
+      uid,
+      SavedExam(
+        subjectId: widget.subjectId,
+        questions: session.questions,
+        answers: Map.of(_answers),
+        flagged: Set.of(_flagged),
+        currentIndex: _currentIndex,
+        timerEnabled: session.timerEnabled,
+        timerMinutes: session.timerDurationMinutes,
+        remainingSeconds: _remainingSeconds,
+        startedAt: _startedAt,
+        savedAt: DateTime.now(),
+      ),
+    );
+  }
+
+  /// Submitted or abandoned: nothing left to resume.
+  void _forgetSaved() {
+    _persistTimer?.cancel();
+    final uid = _uid;
+    if (uid != null) _store.clear(uid, widget.subjectId);
   }
 
   void _submitExam(List<Question> questions) {
@@ -175,6 +262,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       _score = correct;
     });
     setLeaveGuard(false);
+    _forgetSaved();
     if (!_attemptsSaved || !_resultSaved) _saveAttempts(questions);
   }
 
@@ -280,6 +368,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
+              _forgetSaved();
               context.go('/waec/${widget.subjectId}/setup');
             },
             child: const Text(
@@ -295,8 +384,40 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     );
   }
 
+  /// Before submitting: how many are answered, unanswered and flagged,
+  /// with a way back to each (PLAN.md P5.2.3). Enter submits.
   void _confirmSubmit(List<Question> questions) {
-    final unanswered = questions.length - _answers.length;
+    final summary = examSummary(
+      total: questions.length,
+      answers: _answers,
+      flagged: _flagged,
+    );
+    final firstUnanswered = nextMatching(
+      questions.length,
+      0,
+      (i) => !_answers.containsKey(i),
+    );
+    final firstFlagged = nextMatching(
+      questions.length,
+      0,
+      (i) => _flagged.contains(i),
+    );
+
+    Widget line(String label, int n, Color colour) => Padding(
+      padding: const EdgeInsets.only(bottom: 6),
+      child: Row(
+        children: [
+          Container(
+            width: 10,
+            height: 10,
+            decoration: BoxDecoration(color: colour, shape: BoxShape.circle),
+          ),
+          const SizedBox(width: 10),
+          Expanded(child: Text(label)),
+          Text('$n', style: const TextStyle(fontWeight: FontWeight.w700)),
+        ],
+      ),
+    );
 
     showDialog(
       context: context,
@@ -304,26 +425,56 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
         backgroundColor: dialogContext.palette.surface,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Text(
-          'Submit Exam?',
+          'Submit exam?',
           style: TextStyle(color: dialogContext.palette.textStrong),
         ),
-        content: Text(
-          unanswered > 0
-              ? 'You have $unanswered unanswered question${unanswered > 1 ? 's' : ''}. Are you sure?'
-              : 'Submit your answers now?',
+        content: DefaultTextStyle.merge(
           style: TextStyle(color: dialogContext.palette.onHigh),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              line('Answered', summary.answered, AppColors.primary),
+              line(
+                'Not answered',
+                summary.unanswered,
+                dialogContext.palette.onLow,
+              ),
+              line('Flagged for review', summary.flagged, AppColors.warning),
+              const SizedBox(height: 8),
+              Text(
+                summary.unanswered > 0
+                    ? 'Unanswered questions score nothing.'
+                    : 'You can still go back and check.',
+                style: TextStyle(
+                  color: dialogContext.palette.onMedium,
+                  fontSize: 13,
+                ),
+              ),
+            ],
+          ),
         ),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(
-              'Cancel',
-              style: TextStyle(color: dialogContext.palette.onMedium),
+          if (firstUnanswered != null)
+            TextButton(
+              onPressed: () {
+                Navigator.of(dialogContext).pop();
+                _goToQuestion(firstUnanswered);
+              },
+              child: const Text('Go to unanswered'),
             ),
-          ),
+          if (firstFlagged != null)
+            TextButton(
+              onPressed: () {
+                Navigator.of(dialogContext).pop();
+                _goToQuestion(firstFlagged);
+              },
+              child: const Text('Review flagged'),
+            ),
           ElevatedButton(
+            autofocus: true,
             onPressed: () {
-              Navigator.of(context).pop();
+              Navigator.of(dialogContext).pop();
               _submitExam(questions);
             },
             style: ElevatedButton.styleFrom(
@@ -450,7 +601,32 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
     );
   }
 
-  Widget _buildActiveExam(List<Question> questions) {
+  /// Keyboard: A-E answer, left/right move, F flags. Web students on a
+  /// laptop sit the whole paper without the mouse (PLAN.md P5.2.2).
+  Map<ShortcutActivator, VoidCallback> _shortcuts(List<Question> questions) => {
+    for (final (i, key) in [
+      LogicalKeyboardKey.keyA,
+      LogicalKeyboardKey.keyB,
+      LogicalKeyboardKey.keyC,
+      LogicalKeyboardKey.keyD,
+      LogicalKeyboardKey.keyE,
+    ].indexed)
+      SingleActivator(key): () => _selectOption(i),
+    const SingleActivator(LogicalKeyboardKey.arrowLeft): () =>
+        _goToQuestion(_currentIndex - 1),
+    const SingleActivator(LogicalKeyboardKey.arrowRight): () =>
+        _currentIndex < questions.length - 1
+        ? _goToQuestion(_currentIndex + 1)
+        : _confirmSubmit(questions),
+    const SingleActivator(LogicalKeyboardKey.keyF): _toggleFlag,
+  };
+
+  Widget _buildActiveExam(List<Question> questions) => CallbackShortcuts(
+    bindings: _shortcuts(questions),
+    child: Focus(autofocus: true, child: _activeExamBody(questions)),
+  );
+
+  Widget _activeExamBody(List<Question> questions) {
     final q = questions[_currentIndex];
     final selectedOption = _answers[_currentIndex];
 
@@ -464,56 +640,22 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
           minHeight: 3,
         ),
 
-        // Question navigator strip
+        // Question navigator strip. Each number is a 48px target with its
+        // state spoken ("Question 3, answered, flagged"); state is shown
+        // by colour *and* by a flag mark, never colour alone.
         SizedBox(
-          height: 44,
+          height: 56,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             itemCount: questions.length,
-            itemBuilder: (_, i) {
-              final isActive = i == _currentIndex;
-              final isAnswered = _answers.containsKey(i);
-              return GestureDetector(
-                onTap: () => _goToQuestion(i),
-                child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 150),
-                  width: 28,
-                  height: 28,
-                  margin: const EdgeInsets.only(right: 6),
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: isActive
-                        ? AppColors.primary
-                        : isAnswered
-                        ? AppColors.primary.withAlpha((0.25 * 255).round())
-                        : context.palette.track,
-                    border: isActive
-                        ? null
-                        : Border.all(
-                            color: isAnswered
-                                ? AppColors.primary.withAlpha(
-                                    (0.5 * 255).round(),
-                                  )
-                                : context.palette.border,
-                          ),
-                  ),
-                  child: Text(
-                    '${i + 1}',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w600,
-                      color: isActive
-                          ? Colors.white
-                          : isAnswered
-                          ? context.palette.textStrong
-                          : context.palette.onLow,
-                    ),
-                  ),
-                ),
-              );
-            },
+            itemBuilder: (_, i) => _StripItem(
+              number: i + 1,
+              isActive: i == _currentIndex,
+              isAnswered: _answers.containsKey(i),
+              isFlagged: _flagged.contains(i),
+              onTap: () => _goToQuestion(i),
+            ),
           ),
         ),
 
@@ -535,7 +677,16 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      QuestionSourceBadge(question: q),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(child: QuestionSourceBadge(question: q)),
+                          _FlagButton(
+                            flagged: _flagged.contains(_currentIndex),
+                            onPressed: _toggleFlag,
+                          ),
+                        ],
+                      ),
                       FullLatexView(
                         latex: q.text,
                         textStyle: TextStyle(
@@ -551,66 +702,80 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                 const SizedBox(height: 14),
                 ...List.generate(q.options.length, (i) {
                   final isSelected = selectedOption == i;
+                  final letter = String.fromCharCode(65 + i);
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 10),
-                    child: GestureDetector(
+                    child: Semantics(
+                      button: true,
+                      selected: isSelected,
+                      label: 'Option $letter: ${speakText(q.options[i])}',
+                      // excludeSemantics drops the InkWell's own action, so
+                      // the tap is given here — without it a screen reader
+                      // could hear an option but never choose it.
                       onTap: () => _selectOption(i),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 160),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 14,
-                          vertical: 13,
-                        ),
-                        decoration: BoxDecoration(
-                          color: isSelected
-                              ? AppColors.primary.withAlpha((0.1 * 255).round())
-                              : context.palette.surface,
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: isSelected
-                                ? AppColors.primary
-                                : context.palette.border,
-                            width: 1.5,
+                      excludeSemantics: true,
+                      child: InkWell(
+                        onTap: () => _selectOption(i),
+                        borderRadius: BorderRadius.circular(10),
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 160),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 14,
+                            vertical: 13,
                           ),
-                        ),
-                        child: Row(
-                          children: [
-                            AnimatedContainer(
-                              duration: const Duration(milliseconds: 160),
-                              width: 28,
-                              height: 28,
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: isSelected
-                                    ? AppColors.primary
-                                    : context.palette.track,
-                              ),
-                              child: Text(
-                                String.fromCharCode(65 + i),
-                                style: TextStyle(
+                          decoration: BoxDecoration(
+                            color: isSelected
+                                ? AppColors.primary.withAlpha(
+                                    (0.1 * 255).round(),
+                                  )
+                                : context.palette.surface,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: isSelected
+                                  ? AppColors.primary
+                                  : context.palette.border,
+                              width: 1.5,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              AnimatedContainer(
+                                duration: const Duration(milliseconds: 160),
+                                width: 28,
+                                height: 28,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
                                   color: isSelected
-                                      ? Colors.white
-                                      : context.palette.onMedium,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                                      ? AppColors.primary
+                                      : context.palette.track,
+                                ),
+                                child: Text(
+                                  letter,
+                                  style: TextStyle(
+                                    color: isSelected
+                                        ? Colors.white
+                                        : context.palette.onMedium,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                  ),
                                 ),
                               ),
-                            ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: MathText(
-                                text: q.options[i],
-                                useLightRenderer: true,
-                                style: TextStyle(
-                                  color: isSelected
-                                      ? context.palette.textStrong
-                                      : context.palette.onHigh,
-                                  fontSize: 15,
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: MathText(
+                                  text: q.options[i],
+                                  useLightRenderer: true,
+                                  style: TextStyle(
+                                    color: isSelected
+                                        ? context.palette.textStrong
+                                        : context.palette.onHigh,
+                                    fontSize: 15,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -829,6 +994,118 @@ class _ResultsView extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// One number on the exam's question strip: a 48x48 target around a 36px
+/// circle. Answered is a tinted fill, current a solid one, flagged a flag
+/// mark, so state never rests on colour alone.
+class _StripItem extends StatelessWidget {
+  const _StripItem({
+    required this.number,
+    required this.isActive,
+    required this.isAnswered,
+    required this.isFlagged,
+    required this.onTap,
+  });
+
+  final int number;
+  final bool isActive;
+  final bool isAnswered;
+  final bool isFlagged;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final state = [
+      isAnswered ? 'answered' : 'not answered',
+      if (isFlagged) 'flagged',
+      if (isActive) 'current',
+    ].join(', ');
+    return Semantics(
+      button: true,
+      selected: isActive,
+      label: 'Question $number, $state',
+      onTap: onTap,
+      excludeSemantics: true,
+      child: InkWell(
+        onTap: onTap,
+        customBorder: const CircleBorder(),
+        child: SizedBox(
+          width: 48,
+          height: 48,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 150),
+                width: 36,
+                height: 36,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: isActive
+                      ? AppColors.primary
+                      : isAnswered
+                      ? AppColors.primary.withAlpha((0.25 * 255).round())
+                      : context.palette.track,
+                  border: isActive
+                      ? null
+                      : Border.all(
+                          color: isFlagged
+                              ? AppColors.warning
+                              : isAnswered
+                              ? AppColors.primary.withAlpha((0.5 * 255).round())
+                              : context.palette.border,
+                          width: isFlagged ? 2 : 1,
+                        ),
+                ),
+                child: Text(
+                  '$number',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: isActive
+                        ? Colors.white
+                        : isAnswered
+                        ? context.palette.textStrong
+                        : context.palette.onMedium,
+                  ),
+                ),
+              ),
+              if (isFlagged)
+                const Positioned(
+                  top: 2,
+                  right: 2,
+                  child: Icon(Icons.flag, size: 14, color: AppColors.warning),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "Flag for review" on the current question. Also the F key.
+class _FlagButton extends StatelessWidget {
+  const _FlagButton({required this.flagged, required this.onPressed});
+
+  final bool flagged;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton.icon(
+      onPressed: onPressed,
+      style: TextButton.styleFrom(
+        foregroundColor: flagged ? AppColors.warning : context.palette.onMedium,
+        minimumSize: const Size(48, 40),
+        padding: const EdgeInsets.symmetric(horizontal: 8),
+      ),
+      icon: Icon(flagged ? Icons.flag : Icons.outlined_flag, size: 18),
+      label: Text(flagged ? 'Flagged' : 'Flag (F)'),
     );
   }
 }

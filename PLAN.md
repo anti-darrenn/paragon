@@ -219,18 +219,37 @@ wasm or a renderer change, both measured and declined.
 
 ## Phase 5 — Accessibility and exam UX polish (P1)
 
-- [ ] **P5.1.1** Welcome screen controls are real buttons with names.
-- [ ] **P5.1.2** Maths gets spoken labels from `speakText` (the read-aloud converter), with 30+ tests on real strings.
-- [ ] **P5.1.3** A question stem is one semantics node.
-- [ ] **P5.1.4** Contrast: `onLow` raised to AA in both themes.
-- [ ] **P5.1.5** Tap targets ≥ 48 dp (exam strip).
-- [ ] **P5.2.1** **VERIFY** WASSCE formats with Moyo → `lib/core/exam/exam_formats.dart`, "Real exam" preset.
-- [ ] **P5.2.2** Keyboard: A–E, ←/→, F, Enter.
-- [ ] **P5.2.3** Flag for review plus a pre-submit summary.
-- [ ] **P5.2.4** Autosave and resume, kept on the device. *(Adapted: Spark write quota.)*
-- [ ] **P5.2.5** Offline tolerance during an exam.
+- [x] **P5.1.1** Welcome screen controls are real buttons with names.
+- [x] **P5.1.2** Maths gets spoken labels from `speakText` (the read-aloud converter), with 30+ tests on real strings.
+- [x] **P5.1.3** A question stem is one semantics node.
+- [x] **P5.1.4** Contrast: `onLow` raised to AA in both themes.
+- [x] **P5.1.5** Tap targets ≥ 48 dp (exam strip).
+- [x] **P5.2.1** **VERIFY** WASSCE formats with Moyo → `lib/core/exam/exam_formats.dart`, "Real exam" preset.
+- [x] **P5.2.2** Keyboard: A–E, ←/→, F, Enter.
+- [x] **P5.2.3** Flag for review plus a pre-submit summary.
+- [x] **P5.2.4** Autosave and resume, kept on the device. *(Adapted: Spark write quota.)*
+- [x] **P5.2.5** Offline tolerance during an exam.
 
-Done notes:
+Done notes (Wave E, PR `feat/a11y-exam`):
+- **Maths is spoken.** A stem with maths is one node whose label is the read-aloud
+  words ("If F = nine fifths C plus 32…"). The tests cover 30+ real stems.
+- **Light renderer.** It no longer shows raw `\textbf`.
+- **Welcome links** are real buttons. The ticker is one label and stops under reduced
+  motion.
+- **Contrast.** `onLow` was raised to AA in both themes; a test computes the ratios for
+  every text tone, with the old value as its control.
+- **Exam.** The question strip has 48 dp targets and speaks each question's state.
+  Options are buttons that announce whether they are selected. There are keyboard keys,
+  flags and a pre-submit summary.
+- **Autosave and resume** are on the device (Spark), with the questions stored so a
+  resume works offline. P5.2.5 is covered by that: the questions are already preloaded
+  at the start, and nothing is written until submit.
+- **P5.2.1 is answered provisionally.** `exam_formats.dart` holds the commonly published
+  lengths, marked `verified: false`, and the screen says "not yet checked". **Moyo:
+  please confirm them.** The 2026 CBT screen layout is unknown.
+
+Not yet done: a real screen-reader run (NVDA or TalkBack). The semantics tree is
+asserted in tests, which is not the same thing.
 
 ---
 

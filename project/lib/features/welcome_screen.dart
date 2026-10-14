@@ -509,70 +509,95 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
       error: (e, st) => const SizedBox.shrink(),
       data: (subjects) {
         if (subjects.isEmpty) return const SizedBox.shrink();
+        // One label for the whole marquee: read as it moves, a screen
+        // reader got each repeated copy of the row, several times over.
+        final spoken =
+            'Subjects: ${[
+              for (final s in subjects) [s.name, if (s.counts.label.isNotEmpty) s.counts.label].join(', '),
+            ].join('; ')}.';
+        return Semantics(
+          label: spoken,
+          excludeSemantics: true,
+          child: _ticker(subjects),
+        );
+      },
+    );
+  }
 
-        if (_rowWidth == null) {
-          // Measuring pass: lay the row out invisibly to learn its
-          // rendered width, then compute the animation duration from it.
-          // The row's natural width is (by design) usually wider than the
-          // viewport — especially on narrow phones — so it needs an
-          // OverflowBox here too, or a plain Row under the SizedBox's
-          // tight screen-width constraint throws a RenderFlex overflow.
-          WidgetsBinding.instance.addPostFrameCallback((_) => _measure());
-          return SizedBox(
-            height: _height,
-            child: Opacity(
-              opacity: 0,
+  Widget _ticker(List<Subject> subjects) {
+    // Reduced motion: the same row, still, scrollable by hand.
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _controller.stop();
+      return SizedBox(
+        height: _height,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: _buildRow(subjects),
+        ),
+      );
+    }
+
+    if (_rowWidth == null) {
+      // Measuring pass: lay the row out invisibly to learn its
+      // rendered width, then compute the animation duration from it.
+      // The row's natural width is (by design) usually wider than the
+      // viewport — especially on narrow phones — so it needs an
+      // OverflowBox here too, or a plain Row under the SizedBox's
+      // tight screen-width constraint throws a RenderFlex overflow.
+      WidgetsBinding.instance.addPostFrameCallback((_) => _measure());
+      return SizedBox(
+        height: _height,
+        child: Opacity(
+          opacity: 0,
+          child: OverflowBox(
+            minWidth: 0,
+            maxWidth: double.infinity,
+            alignment: Alignment.centerLeft,
+            child: _buildRow(subjects, key: _rowKey),
+          ),
+        ),
+      );
+    }
+
+    // Repeat the row enough times to cover the viewport width, plus
+    // one extra copy — otherwise, on a screen wider than a couple of
+    // row-widths, there'd be a blank gap once the translate has
+    // shifted past however many copies exist. The loop itself still
+    // only ever translates by exactly one row-width (see below); the
+    // extra copies just mean there's always a full row's worth of
+    // buffer still off-screen to the right at any point in that
+    // translate range.
+    final viewportWidth = MediaQuery.sizeOf(context).width;
+    final repeatCount = (viewportWidth / _rowWidth!).ceil() + 1;
+
+    return SizedBox(
+      height: _height,
+      child: ClipRect(
+        child: AnimatedBuilder(
+          animation: _controller,
+          builder: (context, _) {
+            return Transform.translate(
+              // Loops by translating exactly one row-width: at
+              // value=1 this sits exactly where value=0 started,
+              // because every copy is identical, so the reset (which
+              // repeat() performs instantly) is imperceptible.
+              offset: Offset(-_controller.value * _rowWidth!, 0),
               child: OverflowBox(
                 minWidth: 0,
                 maxWidth: double.infinity,
                 alignment: Alignment.centerLeft,
-                child: _buildRow(subjects, key: _rowKey),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    for (int i = 0; i < repeatCount; i++)
+                      _buildRow(subjects, key: i == 0 ? _rowKey : null),
+                  ],
+                ),
               ),
-            ),
-          );
-        }
-
-        // Repeat the row enough times to cover the viewport width, plus
-        // one extra copy — otherwise, on a screen wider than a couple of
-        // row-widths, there'd be a blank gap once the translate has
-        // shifted past however many copies exist. The loop itself still
-        // only ever translates by exactly one row-width (see below); the
-        // extra copies just mean there's always a full row's worth of
-        // buffer still off-screen to the right at any point in that
-        // translate range.
-        final viewportWidth = MediaQuery.sizeOf(context).width;
-        final repeatCount = (viewportWidth / _rowWidth!).ceil() + 1;
-
-        return SizedBox(
-          height: _height,
-          child: ClipRect(
-            child: AnimatedBuilder(
-              animation: _controller,
-              builder: (context, _) {
-                return Transform.translate(
-                  // Loops by translating exactly one row-width: at
-                  // value=1 this sits exactly where value=0 started,
-                  // because every copy is identical, so the reset (which
-                  // repeat() performs instantly) is imperceptible.
-                  offset: Offset(-_controller.value * _rowWidth!, 0),
-                  child: OverflowBox(
-                    minWidth: 0,
-                    maxWidth: double.infinity,
-                    alignment: Alignment.centerLeft,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        for (int i = 0; i < repeatCount; i++)
-                          _buildRow(subjects, key: i == 0 ? _rowKey : null),
-                      ],
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-        );
-      },
+            );
+          },
+        ),
+      ),
     );
   }
 }
@@ -591,13 +616,8 @@ class _FooterLinks extends StatelessWidget {
       decorationColor: context.palette.textSecondary,
     );
 
-    Widget link(String label, VoidCallback onTap) => MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: onTap,
-        child: Text(label, style: style),
-      ),
-    );
+    Widget link(String label, VoidCallback onTap) =>
+        _TextLink(label: label, style: style, onTap: onTap);
 
     return Wrap(
       alignment: WrapAlignment.center,
@@ -615,10 +635,13 @@ class _ConsentLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Not the brand orange: on the light theme it is under 3:1 against
+    // the background, and these are the words a student agrees to.
     final linkStyle = AppTheme.caption.copyWith(
-      color: AppColors.primary,
+      color: context.palette.textPrimary,
+      fontWeight: FontWeight.w600,
       decoration: TextDecoration.underline,
-      decorationColor: AppColors.primary,
+      decorationColor: context.palette.textPrimary,
     );
 
     return Padding(
@@ -633,12 +656,10 @@ class _ConsentLine extends StatelessWidget {
               color: context.palette.textSecondary,
             ),
           ),
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: GestureDetector(
-              onTap: () => context.push('/terms'),
-              child: Text('Terms', style: linkStyle),
-            ),
+          _TextLink(
+            label: 'Terms',
+            style: linkStyle,
+            onTap: () => context.push('/terms'),
           ),
           Text(
             ' and ',
@@ -646,12 +667,10 @@ class _ConsentLine extends StatelessWidget {
               color: context.palette.textSecondary,
             ),
           ),
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: GestureDetector(
-              onTap: () => context.push('/privacy'),
-              child: Text('Privacy Policy', style: linkStyle),
-            ),
+          _TextLink(
+            label: 'Privacy Policy',
+            style: linkStyle,
+            onTap: () => context.push('/privacy'),
           ),
           Text(
             '.',
@@ -661,6 +680,37 @@ class _ConsentLine extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// A link inside a line of text that is a real button: a name and a role
+/// for screen readers, keyboard focus, and a 48px-tall tap target, without
+/// the button padding that would break the sentence apart. The welcome
+/// screen's links were bare `GestureDetector`s, invisible to assistive
+/// technology (live-site review, F9).
+class _TextLink extends StatelessWidget {
+  const _TextLink({
+    required this.label,
+    required this.style,
+    required this.onTap,
+  });
+
+  final String label;
+  final TextStyle style;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: onTap,
+      style: TextButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        minimumSize: const Size(0, 48),
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        foregroundColor: style.color,
+      ),
+      child: Text(label, style: style),
     );
   }
 }
