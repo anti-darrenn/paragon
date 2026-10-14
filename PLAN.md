@@ -165,16 +165,29 @@ connected.
 
 *(Adapted by the owner: the app stays at `/`. Static `/past-questions/**`, `sitemap.xml` and `robots.txt` are added beside it.)*
 
-- [ ] **P3.1** Site structure (no `/app` move; cache headers for static pages and assets).
-- [ ] **P3.2** Landing: improve the `index.html` splash and `<noscript>` with honest counts and a link to `/past-questions/`.
-- [ ] **P3.3.1** `tools/site/build_static_site.js`: past-question pages with server-rendered KaTeX, "Show answer", JSON-LD `Quiz`, and a CTA into the app.
-- [ ] **P3.3.2** `sitemap.xml` and `robots.txt`.
-- [ ] **P3.3.3** Build step in the deploy recipe (and CI, Wave F).
+- [x] **P3.1** Site structure (no `/app` move; cache headers for static pages and assets).
+- [x] **P3.2** Landing: improve the `index.html` splash and `<noscript>` with honest counts and a link to `/past-questions/`.
+- [x] **P3.3.1** `tools/site/build_static_site.js`: past-question pages with server-rendered KaTeX, "Show answer", JSON-LD `Quiz`, and a CTA into the app.
+- [x] **P3.3.2** `sitemap.xml` and `robots.txt`.
+- [x] **P3.3.3** Build step in the deploy recipe (and CI, Wave F).
 - [ ] **P3.3.4** Submit sitemap in Google Search Console (owner).
 
 **Acceptance:** `curl` of a question page returns full question text in HTML. Lighthouse SEO score ≥ 95 on landing and a question page. Rich Results Test accepts the Quiz markup.
 
-Done notes:
+Done notes (Wave C, PR `feat/static-site`):
+- **Output.** 4,254 past questions in three subjects, at
+  `/past-questions/waec/<subject>/<year>/<id>/`, plus year, topic, subject and index
+  pages. 4,473 URLs are in `sitemap.xml`. Each page carries KaTeX with MathML, which
+  screen readers can read, and JSON-LD `Quiz`. A question page is about 8.5 KB of HTML.
+- **Checked.** Under the local hosting emulator, the question, topic and year pages
+  returned 200 with their own titles; `/x` 301s to `/x/`; app routes still reach Flutter.
+- **Not yet run.** Lighthouse and the Rich Results Test need a browser and the deployed
+  URL; they are owner checks, along with P3.3.4 (Search Console).
+- **Known data problem.** Some past questions still carry a wrong `topicId`; see the
+  CLAUDE.md classification notes. The topic pages and "Practise <topic>" buttons repeat
+  it publicly, so re-running reclassification matters more now.
+- **Spark Hosting** allows 360 MB a day of transfer. At about 40 KB a first visit to a
+  question page, that is roughly 9,000 visits a day.
 
 ---
 

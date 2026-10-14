@@ -18,8 +18,18 @@ flutter analyze                    # lint (flutter_lints via analysis_options.ya
 flutter test                       # all tests
 flutter test test/latex_render_test.dart                          # single file
 flutter test test/latex_render_test.dart --plain-name "MathText"  # single test
-flutter build web --release; firebase deploy --only hosting        # deploy (project paragon-hq)
+flutter build web --release; node tools/site/build_static_site.js; firebase deploy --only hosting   # deploy (project paragon-hq)
 ```
+
+**Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
+once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
+Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
+rewrite. These pages are the only part of Paragon a search engine can read. Only past
+questions are published (`source == 'waec'`, `hasAnswer`, a real `correctIndex`), never
+generated practice. Titles carry no question number, because Paragon doesn't have the
+paper's own numbering. The first run reads about 4,500 documents; the result is cached in
+`tools/site/.cache/`, and only `--refresh` reads again. Maths is rendered server-side by
+KaTeX (`render.js` mirrors `FullLatexView`'s dialect; change both together).
 
 **After adding or removing any plugin, run `flutter clean` before the next release
 build.** The release build reuses a cached `web_plugin_registrant.dart` under

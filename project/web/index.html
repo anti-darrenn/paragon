@@ -82,6 +82,8 @@
     #splash .pitch { max-width: 420px; padding: 0 24px; text-align: center; color: #E6EDF3; }
     #splash h1 { font-size: 22px; line-height: 1.3; margin: 0 0 10px; font-weight: 700; }
     #splash p { font-size: 15px; line-height: 1.5; margin: 0; color: #8B949E; }
+    #splash .links { margin-top: 14px; }
+    #splash .links a { color: #FF9A40; font-size: 14px; }
     #splash .slow { font-size: 13px; color: #8B949E; opacity: 0; transition: opacity .4s ease; }
     #splash .slow.show { opacity: 1; }
     #splash .spin {
@@ -106,13 +108,16 @@
       <p>Practice questions in Mathematics, Physics, Further Mathematics,
         Chemistry and Government, and WAEC past questions in the first
         three, marked like the real paper.</p>
+      <p class="links"><a href="/past-questions/">Browse WAEC past questions with answers</a></p>
     </div>
     <div class="spin" role="progressbar" aria-label="Loading Paragon"></div>
     <div class="slow" id="splash-slow">Still loading. The first visit is the slowest; next time it opens much faster.</div>
   </div>
   <noscript>
     <p style="color:#E6EDF3;text-align:center;font-family:system-ui,sans-serif;padding:24px">
-      Paragon needs JavaScript turned on to run.</p>
+      The Paragon app needs JavaScript turned on. The
+      <a href="/past-questions/" style="color:#FF9A40">WAEC past questions with answers</a>
+      work without it.</p>
   </noscript>
   <script>
     setTimeout(function () {
