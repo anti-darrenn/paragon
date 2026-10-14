@@ -11,6 +11,7 @@ import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/widgets/answer_option.dart';
 import '../../core/widgets/full_latex_view.dart';
+import '../../core/widgets/question_source_badge.dart';
 import '../../core/widgets/question_image.dart';
 import '../../core/widgets/report_problem_button.dart';
 import '../../core/widgets/nav/back_navigation.dart';
@@ -133,6 +134,7 @@ class _MistakesPracticeScreenState
           ),
         ),
         const SizedBox(height: 12),
+        QuestionSourceBadge(question: q),
         FullLatexView(
           latex: q.text,
           textStyle: AppTheme.bodyLg.copyWith(

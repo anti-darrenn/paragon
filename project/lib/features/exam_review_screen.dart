@@ -12,6 +12,7 @@ import '../core/theme/app_palette.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/answer_option.dart';
 import '../core/widgets/full_latex_view.dart';
+import '../core/widgets/question_source_badge.dart';
 import '../core/widgets/load_error.dart';
 import '../core/widgets/question_image.dart';
 import '../core/widgets/report_problem_button.dart';
@@ -306,6 +307,7 @@ class ExamReviewCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
+          QuestionSourceBadge(question: q),
           FullLatexView(
             latex: q.text,
             textStyle: AppTheme.bodyLg.copyWith(

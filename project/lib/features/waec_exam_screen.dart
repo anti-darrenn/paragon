@@ -14,6 +14,7 @@ import '../core/providers/analytics_provider.dart';
 import '../core/repositories/attempt_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
+import '../core/widgets/question_source_badge.dart';
 import '../core/widgets/math_text.dart';
 import '../core/study/study_dock.dart';
 import '../core/study/study_tool.dart';
@@ -526,17 +527,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      if (q.year != null)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 8),
-                          child: Text(
-                            'WAEC ${q.year}',
-                            style: TextStyle(
-                              color: context.palette.onLow,
-                              fontSize: 12,
-                            ),
-                          ),
-                        ),
+                      QuestionSourceBadge(question: q),
                       FullLatexView(
                         latex: q.text,
                         textStyle: TextStyle(

@@ -7,6 +7,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
+import '../core/widgets/question_source_badge.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/report_problem_button.dart';
@@ -327,6 +328,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   ),
                 ),
                 const SizedBox(height: 12),
+                QuestionSourceBadge(question: q),
                 FullLatexView(
                   latex: q.text,
                   textStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
