@@ -115,8 +115,12 @@ jobs:
           npm install --no-audit --no-fund
           npm test
 
+  # Reports problems in *live data* (a placeholder still published, counts
+  # out of step until the nightly job runs) — real, but not caused by the
+  # code under review, so it shows red without blocking the merge.
   content:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
