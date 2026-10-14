@@ -370,10 +370,29 @@ class _LessonList extends ConsumerWidget {
 
   /// What a topic with no published lessons shows: one plain line rather
   /// than greyed-out "coming soon" rows. Practice below still works.
+  /// No published lesson yet — the normal state for most topics while
+  /// content is written. Says so plainly and points at practice, never an
+  /// empty list or "0 of 0 lessons".
   Widget _noLessons(BuildContext context) {
-    return Text(
-      'No lessons for this topic yet. You can still practise it below.',
-      style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          canPractise
+              ? 'Lessons for this topic are on the way. You can still '
+                    'practise now.'
+              : 'Lessons for this topic are on the way.',
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+        ),
+        if (canPractise) ...[
+          const SizedBox(height: 12),
+          OutlinedButton.icon(
+            onPressed: () => context.push(drillPath),
+            icon: const Icon(Icons.fitness_center_rounded, size: 18),
+            label: const Text('Practise now'),
+          ),
+        ],
+      ],
     );
   }
 }
