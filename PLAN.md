@@ -255,14 +255,31 @@ asserted in tests, which is not the same thing.
 
 ## Phase 6 — Engineering foundations
 
-- [ ] **P6.1** Rules tests with the emulator, in CI only.
-- [ ] **P6.2** Widget tests for the empty state, badges, guest table and exam presets *(partly done in Wave A)*, plus the integration test.
-- [ ] **P6.3** GitHub Actions on PRs: analyze, test, lint and build, plus a preview channel once the owner adds the secret.
-- [ ] **P6.4** Funnel analytics events (`waitlist_join` done in Wave A).
-- [ ] **P6.5** Sentry. *(Declined: `ErrorReporter` exists.)*
-- [ ] **P6.6** Emulator seed data, in-test.
+- [x] **P6.1** Rules tests with the emulator, in CI only.
+- [x] **P6.2** Widget tests for the empty state, badges, guest table and exam presets *(partly done in Wave A)*, plus the integration test.
+- [x] **P6.3** GitHub Actions on PRs: analyze, test, lint and build, plus a preview channel once the owner adds the secret.
+- [x] **P6.4** Funnel analytics events (`waitlist_join` done in Wave A).
+- [x] **P6.5** Sentry. *(Declined: `ErrorReporter` exists.)*
+- [x] **P6.6** Emulator seed data, in-test.
 
-Done notes:
+Done notes (Wave F, PR `feat/foundations`):
+- **CI** (`.github/workflows/ci.yml`) runs on every PR:
+  - analyze, test and the release build, with the plugin-registrant check;
+  - the post-build step;
+  - the Node script tests;
+  - the rules emulator suite (`tools/rules-test`, about 30 cases with seeded fixtures);
+  - read-only live checks (`content_lint`, `check_counts`);
+  - a preview channel. It needs Hosting Admin on the service account; until then it
+    fails without blocking.
+- **Funnel events** `guest_start`, `signup_start`, `signup_complete{method}`, `topic_open`,
+  `drill_start` and `exam_start{preset}`, plus `waitlist_join` from Wave A, are described
+  in the privacy policy.
+- **Not done:**
+  - **Sentry**: declined; `ErrorReporter` covers it.
+  - **The integration test** (guest → drill → reload) is still to do: it needs a browser
+    driver and a Firebase project to sign in to. `guest_landing_test` covers the redirect
+    half.
+  - **Lighthouse CI**: declined; the numbers are recorded in PERF.md instead.
 
 ---
 

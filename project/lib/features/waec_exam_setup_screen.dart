@@ -15,6 +15,7 @@ import 'waec_exam_screen.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/ui/ui.dart';
+import '../core/providers/analytics_provider.dart';
 
 /// Exam setup screen, spec §2.3.3 — year range, question count, timer,
 /// shuffle, and the dynamic availability label, scoped to whatever a
@@ -100,6 +101,12 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
         return;
       }
       if (!mounted) return;
+      ref
+          .read(analyticsProvider)
+          .examStart(
+            subjectId: widget.subjectId,
+            preset: _fullPaper ? 'full_paper' : 'custom',
+          );
       context.go(
         '/waec/${widget.subjectId}/exam',
         extra: WaecExamSessionData(
@@ -614,10 +621,15 @@ class _ResumeCard extends ConsumerWidget {
               runSpacing: 8,
               children: [
                 ElevatedButton(
-                  onPressed: () => context.go(
-                    '/waec/$subjectId/exam',
-                    extra: WaecExamSessionData.resuming(saved),
-                  ),
+                  onPressed: () {
+                    ref
+                        .read(analyticsProvider)
+                        .examStart(subjectId: subjectId, preset: 'resume');
+                    context.go(
+                      '/waec/$subjectId/exam',
+                      extra: WaecExamSessionData.resuming(saved),
+                    );
+                  },
                   child: const Text('Resume'),
                 ),
                 TextButton(

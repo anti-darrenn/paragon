@@ -9,6 +9,7 @@ import 'package:paragon/features/account/guest_upgrade.dart';
 import 'package:paragon/core/theme/app_colors.dart';
 import 'package:paragon/core/theme/app_theme.dart';
 import '../core/theme/app_palette.dart';
+import '../core/providers/analytics_provider.dart';
 
 enum _AuthStep { email, password, createAccount }
 
@@ -110,6 +111,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         return;
       }
 
+      ref.read(analyticsProvider).signupStart(method: 'email');
       final userCredential = createAccount
           ? await FirebaseAuth.instance.createUserWithEmailAndPassword(
               email: email,
@@ -124,6 +126,9 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
         await ref
             .read(userRepositoryProvider)
             .createUserIfNew(userCredential.user!);
+        if (createAccount) {
+          ref.read(analyticsProvider).signupComplete(method: 'email');
+        }
       }
     } on FirebaseAuthException catch (e) {
       setState(() {

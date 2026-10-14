@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../data/read_meter.dart';
 import '../repositories/user_repository.dart';
 import '../auth/staff_role.dart';
+import 'analytics_provider.dart';
 
 /// The signed-in user, re-emitted on sign-in, sign-out **and when the
 /// account itself changes** — a guest linking Google or a password, an
@@ -48,11 +49,16 @@ String _accountKey(User? user) {
 /// loading/error UI around it. Rethrows FirebaseAuthException/other
 /// errors for the caller to present.
 Future<User?> signInWithGoogle(WidgetRef ref) async {
+  final analytics = ref.read(analyticsProvider);
+  analytics.signupStart(method: 'google');
   final provider = GoogleAuthProvider();
   final userCredential = await FirebaseAuth.instance.signInWithPopup(provider);
   final user = userCredential.user;
   if (user != null) {
     await ref.read(userRepositoryProvider).createUserIfNew(user);
+    if (userCredential.additionalUserInfo?.isNewUser ?? false) {
+      analytics.signupComplete(method: 'google');
+    }
   }
   return user;
 }

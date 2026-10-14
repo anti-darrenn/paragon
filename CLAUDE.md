@@ -148,7 +148,21 @@ It exercises the whole file against the live project as a real client (anonymous
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
 141 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
-does not have.
+does not have. **CI does**: `.github/workflows/ci.yml` runs `tools/rules-test/rules.test.js`
+on the emulator for every pull request (`npm test` there; seeded fixtures, about 30 allow
+and deny cases). Add a case there and a check to `verify_rules.js` with every rules
+change.
+
+**CI** (`.github/workflows/ci.yml`, every pull request and push to main) runs these jobs:
+- `app`: `flutter analyze`, `flutter test`, the release build with the plugin-registrant
+  check, and the post-build step;
+- `node`: the scripts' own tests;
+- `rules`: the emulator tests above;
+- `content`: `content_lint.js` and `check_counts.js` against production, read-only;
+- `preview`: a 7-day Hosting preview channel commented on the PR. It needs the service
+  account to hold Firebase Hosting Admin; until then it fails without blocking.
+
+Live deploys stay manual, by the owner.
 
 `project/firestore.rules` and `project/firestore.indexes.json` are both tracked in the repo, and `firebase.json`'s `firestore` block points at each — `firebase deploy --only firestore:rules` and `firebase deploy --only firestore:indexes` deploy these files directly, as `.cursorrules` describes.
 
@@ -346,7 +360,7 @@ Written once per drill *session*, not per question, so a 20-question drill still
 the 20 attempt writes it always did. WAEC exams deliberately do not feed it: the modes
 must not merge, and one exam would fan across up to 40 topics' worth of writes.
 
-**Analytics.** `analytics_provider.dart` defines the events; `analytics_binding.dart`
+**Analytics.** `analytics_provider.dart` defines the events (including the first-visit funnel: `guest_start`, `signup_start`/`signup_complete{method}`, `topic_open`, `drill_start`, `exam_start{preset}`, `waitlist_join`; the welcome view is the `/welcome` screen view); `analytics_binding.dart`
 wires the two app-wide ones (screen views, `is_guest`) and is watched by `app.dart` for
 its side effects. Screen names are **route patterns** (`/subject/:subjectId/...`), never
 concrete URLs — no document ids in screen names, and no thousand-row reports. `Analytics`

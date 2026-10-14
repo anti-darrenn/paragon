@@ -9,6 +9,7 @@ import '../../core/repositories/user_repository.dart';
 import '../study/cards/card_store.dart';
 import '../study/notes/study_store.dart';
 import '../study/notes/study_providers.dart';
+import '../../core/providers/analytics_provider.dart';
 
 /// Turning a guest session into an account, without losing it.
 ///
@@ -37,8 +38,10 @@ class GuestUpgrade {
     if (user == null || !user.isAnonymous) return GuestUpgradeOutcome.cancelled;
     final lessons = ref.read(guestLessonProgressProvider);
     try {
+      ref.read(analyticsProvider).signupStart(method: 'google_link');
       final linked = await user.linkWithPopup(GoogleAuthProvider());
       await _finish(ref, linked.user!, lessons);
+      ref.read(analyticsProvider).signupComplete(method: 'google_link');
       return GuestUpgradeOutcome.linked;
     } on FirebaseAuthException catch (e) {
       return _outcomeFor(e);
@@ -54,10 +57,12 @@ class GuestUpgrade {
     if (user == null || !user.isAnonymous) return GuestUpgradeOutcome.cancelled;
     final lessons = ref.read(guestLessonProgressProvider);
     try {
+      ref.read(analyticsProvider).signupStart(method: 'email_link');
       final linked = await user.linkWithCredential(
         EmailAuthProvider.credential(email: email, password: password),
       );
       await _finish(ref, linked.user!, lessons);
+      ref.read(analyticsProvider).signupComplete(method: 'email_link');
       return GuestUpgradeOutcome.linked;
     } on FirebaseAuthException catch (e) {
       return _outcomeFor(e);

@@ -104,6 +104,12 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   ProgressRepository? _progress;
 
   @override
+  void initState() {
+    super.initState();
+    ref.read(analyticsProvider).drillStart(topicId: widget.topicId);
+  }
+
+  @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _analytics ??= ref.read(analyticsProvider);

@@ -16,6 +16,7 @@ import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
 import 'study/offline/save_offline_button.dart';
 import '../core/theme/app_palette.dart';
+import '../core/providers/analytics_provider.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -64,7 +65,18 @@ class TopicOverviewScreen extends ConsumerWidget {
             );
           }
           final (module, topic) = found;
-          return _TopicBody(course: course, module: module, topic: topic);
+          return _OnFirstBuild(
+            // Once per visit, not per rebuild; ids only.
+            onFirstBuild: () {
+              final subjectId = course.subjectId;
+              if (subjectId != null && !topic.isPlaceholder) {
+                ref
+                    .read(analyticsProvider)
+                    .topicOpen(subjectId: subjectId, topicId: topic.id);
+              }
+            },
+            child: _TopicBody(course: course, module: module, topic: topic),
+          );
         },
       ),
     );
@@ -749,3 +761,26 @@ class _NotFound extends StatelessWidget {
     );
   }
 }
+
+/// Runs [onFirstBuild] once, when this first appears.
+class _OnFirstBuild extends StatefulWidget {
+  const _OnFirstBuild({required this.onFirstBuild, required this.child});
+
+  final VoidCallback onFirstBuild;
+  final Widget child;
+
+  @override
+  State<_OnFirstBuild> createState() => _OnFirstBuildState();
+}
+
+class _OnFirstBuildState extends State<_OnFirstBuild> {
+  @override
+  void initState() {
+    super.initState();
+    widget.onFirstBuild();
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
+}
+

@@ -16,6 +16,7 @@ import 'account/upgrade_screen.dart';
 import '../core/theme/app_palette.dart';
 import 'about_screen.dart';
 import '../core/widgets/paragon_logo.dart';
+import '../core/providers/analytics_provider.dart';
 
 /// Pre-auth landing screen — the front door for signed-out visitors.
 /// See the redirect logic in app_router.dart: any signed-out navigation
@@ -76,6 +77,7 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
     });
     try {
       await signInAnonymously(ref);
+      ref.read(analyticsProvider).guestStart();
       // '/' is the dashboard — a guest lands on the same home surface a
       // signed-in user does.
       if (mounted) {

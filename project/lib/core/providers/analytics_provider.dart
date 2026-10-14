@@ -85,6 +85,48 @@ class Analytics {
     ),
   );
 
+  // ── The first-visit funnel (PLAN.md P6.4) ──────────────────────────
+  // welcome -> guest or sign-up -> a topic -> a drill or an exam. The
+  // welcome view itself is the `/welcome` screen view, logged already.
+  // Methods are a fixed word ("google", "email", "google_link"…), never
+  // an address.
+
+  /// "Browse as guest" made a guest session.
+  Future<void> guestStart() => _log((a) => a.logEvent(name: 'guest_start'));
+
+  /// A sign-in or sign-up flow began with [method].
+  Future<void> signupStart({required String method}) => _log(
+    (a) => a.logEvent(name: 'signup_start', parameters: {'method': method}),
+  );
+
+  /// A new account exists: made fresh, or a guest linked to one.
+  Future<void> signupComplete({required String method}) => _log(
+    (a) => a.logEvent(name: 'signup_complete', parameters: {'method': method}),
+  );
+
+  /// A topic page opened.
+  Future<void> topicOpen({required String subjectId, required String topicId}) =>
+      _log(
+        (a) => a.logEvent(
+          name: 'topic_open',
+          parameters: {'subject_id': subjectId, 'topic_id': topicId},
+        ),
+      );
+
+  /// A drill session began (its end is `drill_complete`).
+  Future<void> drillStart({required String topicId}) => _log(
+    (a) => a.logEvent(name: 'drill_start', parameters: {'topic_id': topicId}),
+  );
+
+  /// A WAEC exam began. `preset` is `full_paper`, `custom` or `resume`.
+  Future<void> examStart({required String subjectId, required String preset}) =>
+      _log(
+        (a) => a.logEvent(
+          name: 'exam_start',
+          parameters: {'subject_id': subjectId, 'preset': preset},
+        ),
+      );
+
   /// "Notify me" on a coming-soon subject: the catalog slug only.
   Future<void> waitlistJoin({required String subject}) => _log(
     (a) => a.logEvent(name: 'waitlist_join', parameters: {'subject': subject}),

@@ -1,0 +1,14 @@
+{
+  "name": "paragon-rules-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "firestore.rules against the Firestore emulator. CI only: the emulator needs Java.",
+  "scripts": {
+    "test": "firebase emulators:exec --only firestore --project demo-paragon \"node rules.test.js\""
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^4.0.1",
+    "firebase": "^11.0.0",
+    "firebase-tools": "^14.0.0"
+  }
+}
