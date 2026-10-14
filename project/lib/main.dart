@@ -3,11 +3,21 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:go_router/go_router.dart';
 import 'firebase_options.dart';
 import 'app.dart';
 import 'core/data/read_meter.dart';
 
 void main() async {
+  // Real paths (`/subject/abc/course`), not `#/…`: a link can be shared,
+  // and the static past-question pages can link into the app. Old hash
+  // links are rewritten by a script in web/index.html before this runs.
+  // No-op off the web.
+  usePathUrlStrategy();
+  // `context.push` updates the address bar too (go_router's default only
+  // does for `go`), so the URL always names the page on screen.
+  GoRouter.optionURLReflectsImperativeAPIs = true;
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);

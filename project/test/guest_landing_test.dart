@@ -47,8 +47,8 @@ void main() {
     GoRouterState(
       router.configuration,
       uri: Uri.parse(at),
-      matchedLocation: at,
-      fullPath: at,
+      matchedLocation: Uri.parse(at).path,
+      fullPath: Uri.parse(at).path,
       pathParameters: const {},
       pageKey: const ValueKey('k'),
     ),
@@ -70,6 +70,39 @@ void main() {
   testWidgets('control: a signed-out visitor stays on welcome', (tester) async {
     final (router, context) = await setUp(tester, null);
     expect(await redirect(router, context, '/welcome'), isNull);
-    expect(await redirect(router, context, '/courses'), '/welcome');
+    expect(
+      await redirect(router, context, '/courses'),
+      '/welcome?next=%2Fcourses',
+    );
+  });
+
+  group('return to the page a link was opening', () {
+    testWidgets('a signed-out visitor is sent to welcome with next', (
+      tester,
+    ) async {
+      final (router, context) = await setUp(tester, null);
+      expect(
+        await redirect(router, context, '/waec/abc/setup'),
+        '/welcome?next=%2Fwaec%2Fabc%2Fsetup',
+      );
+    });
+
+    testWidgets('a guest arriving from that welcome goes on to it', (
+      tester,
+    ) async {
+      final (router, context) = await setUp(tester, _Guest());
+      expect(
+        await redirect(router, context, '/welcome?next=%2Fwaec%2Fabc%2Fsetup'),
+        '/waec/abc/setup',
+      );
+    });
+
+    testWidgets('control: an unsafe next is ignored', (tester) async {
+      final (router, context) = await setUp(tester, _Guest());
+      expect(
+        await redirect(router, context, '/welcome?next=https://evil.example'),
+        '/',
+      );
+    });
   });
 }

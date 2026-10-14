@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/learn/topic_test.dart';
+import '../core/web/browser.dart';
 import '../core/models/question.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/providers/auth_provider.dart';
@@ -79,6 +80,15 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
   void _select(int optionIndex) {
     if (_submitted) return;
     setState(() => _answers[_index] = optionIndex);
+    // From the first answer on, closing the tab asks first — the same
+    // moment the back button starts asking (web only).
+    setLeaveGuard(true);
+  }
+
+  @override
+  void dispose() {
+    setLeaveGuard(false);
+    super.dispose();
   }
 
   Future<void> _submit(List<Question> questions) async {
@@ -107,6 +117,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     // student who answers two questions correctly and leaves eight blank
     // has scored 20%, not 100% — otherwise the gate opens for anyone
     // willing to skip everything they are unsure of.
+    setLeaveGuard(false);
     setState(() {
       _submitted = true;
       _saving = true;

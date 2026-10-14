@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:paragon/core/router/return_to.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/features/account/deleting_screen.dart';
@@ -99,6 +100,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
   // start is the one moment that difference is known.
   var settled = false;
 
+  // The page a signed-out visitor was heading for, kept across the hop
+  // from /welcome to /signin (and through onboarding) so that signing in
+  // lands them there instead of on the dashboard. Also read from
+  // `/welcome?next=` so a reload of welcome keeps it. See return_to.dart.
+  String? pendingNext;
+  String takeNext() {
+    final next = pendingNext;
+    pendingNext = null;
+    return next ?? '/';
+  }
+
   return GoRouter(
     initialLocation: '/welcome',
     refreshListenable: notifier,
@@ -137,8 +149,26 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
       // Not signed in and trying to reach any route other than welcome/sign-in
       // → send to the welcome (landing) screen
+      if (isOnWelcome) {
+        pendingNext =
+            safeNextPath(state.uri.queryParameters[kNextParam]) ?? pendingNext;
+      }
       if (!isSignedIn && !isOnSignIn && !isOnWelcome && !isOnLegal) {
-        return '/welcome';
+        pendingNext = safeNextPath(state.uri.toString()) ?? pendingNext;
+        return welcomeWith(state.uri);
+      }
+
+      // Arriving anywhere ordinary, signed in, means the trip is over: a
+      // stale target must not hijack a later sign-in from somewhere else.
+      if (isSignedIn &&
+          !isOnSignIn &&
+          !isOnWelcome &&
+          !isOnUpgrade &&
+          !isOnLegal &&
+          !OnboardingStep.isOnboardingPath(state.matchedLocation) &&
+          state.matchedLocation != '/legal/accept' &&
+          state.matchedLocation != '/account/deleting') {
+        pendingNext = null;
       }
 
       // Legal pages are readable in every auth state, including part-way
@@ -166,7 +196,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       if (!isReallySignedIn) {
         // A returning guest opening the app goes home, like an account
         // does; welcome stays reachable to a guest who navigates to it.
-        if (isSignedIn && coldStart && isOnWelcome) return '/';
+        if (isSignedIn && coldStart && isOnWelcome) return takeNext();
         // ...and they cannot reach the funnel by deep link either, which
         // would otherwise let a guest write a username onto an anonymous
         // uid — a reservation nobody can ever claim or release, since the
@@ -213,7 +243,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // not be ejected from step 4 the instant they arrive on it.
       if (isOnOnboarding) {
         if (state.matchedLocation == OnboardingStep.profile.path) return null;
-        return '/';
+        return takeNext();
       }
 
       // ── Terms gate ─────────────────────────────────────────────────
@@ -230,7 +260,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // home, which is the dashboard. This covers the sign-in hop; a
       // returning user is covered by '/' itself being the dashboard, since
       // on web the browser URL — not initialLocation — picks the route.
-      if (isOnSignIn || isOnWelcome || isOnUpgrade) return '/';
+      if (isOnSignIn || isOnWelcome || isOnUpgrade) return takeNext();
 
       // All other cases: let navigation proceed normally
       return null;

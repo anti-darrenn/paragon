@@ -10,6 +10,7 @@ import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/share_link_button.dart';
 import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
 import 'study/offline/save_offline_button.dart';
@@ -124,12 +125,24 @@ class _TopicBody extends StatelessWidget {
         ),
         const SizedBox(height: 16),
 
-        Text(
-          topic.name,
-          style: AppTheme.displayLg.copyWith(
-            color: context.palette.textPrimary,
-            fontSize: isCompact ? 26 : 36,
-          ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Text(
+                topic.name,
+                style: AppTheme.displayLg.copyWith(
+                  color: context.palette.textPrimary,
+                  fontSize: isCompact ? 26 : 36,
+                ),
+              ),
+            ),
+            if (!topic.isPlaceholder)
+              ShareLinkButton(
+                title: '${topic.name} · ${course.name} on Paragon',
+                path: '/subject/${course.key}/course/topic/${topic.id}',
+              ),
+          ],
         ),
         const SizedBox(height: 10),
         Row(

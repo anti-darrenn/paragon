@@ -135,16 +135,29 @@ Done notes (Wave A, PR `feat/trust-fixes`):
 
 ### P2.1 Real URLs for every screen (F6)
 
-- [ ] **P2.1.1** If not already, move to `go_router` (keep it if present). Define routes with slugs. *(Adapted: ids stay in app routes; see REPO_FACTS.)*
-- [ ] **P2.1.2** Switch to path URLs: `usePathUrlStrategy()` in `main()` (from `flutter_web_plugins`). Remove `#`.
-- [ ] **P2.1.3** Redirect old hash URLs: in `web/index.html`, before Flutter loads, if `location.hash` starts with `#/`, `history.replaceState` to the path equivalent.
-- [ ] **P2.1.4** Auth-aware redirects in `go_router.redirect`: deep link to a gated page while signed out → `/welcome?next=<path>`, then return to `next` after sign-in or "Browse as guest".
-- [ ] **P2.1.5** Browser back/forward works everywhere; leaving an in-progress exam asks for confirmation (`PopScope` + `onbeforeunload` via `dart:js_interop`).
-- [ ] **P2.1.6** Share button on questions and topics copies the path URL.
+- [x] **P2.1.1** If not already, move to `go_router` (keep it if present). Define routes with slugs. *(Adapted: ids stay in app routes; see REPO_FACTS.)*
+- [x] **P2.1.2** Switch to path URLs: `usePathUrlStrategy()` in `main()` (from `flutter_web_plugins`). Remove `#`.
+- [x] **P2.1.3** Redirect old hash URLs: in `web/index.html`, before Flutter loads, if `location.hash` starts with `#/`, `history.replaceState` to the path equivalent.
+- [x] **P2.1.4** Auth-aware redirects in `go_router.redirect`: deep link to a gated page while signed out → `/welcome?next=<path>`, then return to `next` after sign-in or "Browse as guest".
+- [x] **P2.1.5** Browser back/forward works everywhere; leaving an in-progress exam asks for confirmation (`PopScope` + `onbeforeunload` via `dart:js_interop`).
+- [x] **P2.1.6** Share button on questions and topics copies the path URL.
 
 **Acceptance:** Paste `/courses/mathematics/indices` into a fresh tab → topic page loads (after auth flow if needed). Back button returns to Mathematics. Old `#/courses` links redirect.
 
-Done notes:
+Done notes (Wave B, PR `feat/deep-links`):
+- Path URLs and old hash links rewritten.
+- `push` updates the URL.
+- `/welcome?next=` survives sign-in, onboarding and "Browse as guest", and is validated
+  against open redirects.
+- "Leave site?" during a WAEC exam or a topic test.
+- Share on topic and course pages.
+
+Routes keep Firestore ids, not slugs. The static question pages (Phase 3) carry their own
+URLs, so there is no in-app `/q/:id` route.
+
+Verified by unit tests and a release web build. Locally the hosting emulator served deep
+paths with 200. The browser click-through is still to do: the extension wasn't
+connected.
 
 ---
 

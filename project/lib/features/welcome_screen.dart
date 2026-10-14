@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../core/models/subject.dart';
 import '../core/providers/auth_provider.dart';
+import '../core/router/return_to.dart';
 import '../core/repositories/learning_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
@@ -77,7 +78,15 @@ class _WelcomeScreenState extends ConsumerState<WelcomeScreen> {
       await signInAnonymously(ref);
       // '/' is the dashboard — a guest lands on the same home surface a
       // signed-in user does.
-      if (mounted) context.go('/');
+      if (mounted) {
+        // Back to the page a shared link was opening, if there was one.
+        context.go(
+          safeNextPath(
+                GoRouterState.of(context).uri.queryParameters[kNextParam],
+              ) ??
+              '/',
+        );
+      }
     } on FirebaseAuthException catch (e) {
       setState(
         () => _errorMessage = e.message ?? "Couldn't start a guest session.",

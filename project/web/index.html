@@ -6,6 +6,16 @@
     and end with a slash.
   -->
   <base href="$FLUTTER_BASE_HREF">
+  <!--
+    Links shared before 2026-10 were hash URLs (/#/courses). The app now
+    uses real paths, so rewrite one before Flutter reads the location.
+    replaceState, not a redirect: no second page load.
+  -->
+  <script>
+    if (location.hash.indexOf('#/') === 0) {
+      history.replaceState(null, '', location.hash.slice(1));
+    }
+  </script>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <title>Paragon</title>

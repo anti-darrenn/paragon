@@ -10,6 +10,7 @@ import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/share_link_button.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
 import 'study/cards/revision_cards_entry.dart';
@@ -126,6 +127,11 @@ class _CourseBody extends StatelessWidget {
               const SizedBox(width: 12),
               const _StatusPill(label: 'Coming soon', color: AppColors.warning),
             ],
+            const Spacer(),
+            ShareLinkButton(
+              title: '${course.name} on Paragon',
+              path: '/subject/${course.key}/course',
+            ),
           ],
         ),
 

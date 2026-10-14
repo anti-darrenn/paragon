@@ -367,7 +367,9 @@ the phone's way in. Nothing about searches is stored or logged.
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
-`app_router.dart` is the only file in `lib/core/router/`. The top nav that used to
+**Real URLs.** Since 2026-10-14 the app uses path URLs (`usePathUrlStrategy()` in `main.dart`), and `GoRouter.optionURLReflectsImperativeAPIs = true` makes `context.push` update the address bar, so every screen's URL can be copied and shared. An inline script in `web/index.html` rewrites old `/#/…` links before Flutter starts; `firebase.json`'s SPA rewrite serves deep paths. A signed-out visitor bounced to welcome carries the target as `/welcome?next=…` (`return_to.dart`: `safeNextPath` allows in-app paths only — no open redirect), and signing in, finishing onboarding or "Browse as guest" goes there instead of `/`. `ShareLinkButton` shares a page (Web Share API on phones, else copy). `lib/core/web/browser.dart` holds the few browser APIs used (`setLeaveGuard` — "Leave site?" while a WAEC exam or a topic test with answers is open — `shareLink`, `appOrigin`), with no-op stand-ins off the web.
+
+`app_router.dart` and `return_to.dart` are the only files in `lib/core/router/`. The top nav that used to
 live in `app_top_nav.dart` is now the shell's `TopBar`; that file is `page_layout.dart`. The old route-tree sketches
 (`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
 older doc mentions them, it is out of date.
@@ -539,7 +541,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 964 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 971 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the

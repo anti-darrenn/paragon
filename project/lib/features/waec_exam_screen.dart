@@ -12,6 +12,7 @@ import 'exam_review_screen.dart' show GradeEstimateCard;
 import '../core/auth/guest_limits.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/widgets/guest_notice.dart';
+import '../core/web/browser.dart';
 import '../core/providers/analytics_provider.dart';
 import '../core/repositories/attempt_repository.dart';
 import '../core/theme/app_colors.dart';
@@ -92,6 +93,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       });
       return;
     }
+    // Closing or reloading the tab mid-exam asks first (web only).
+    setLeaveGuard(true);
     if (session.timerEnabled) {
       _remainingSeconds = session.timerDurationMinutes * 60;
       _ticker = Timer.periodic(const Duration(seconds: 1), _onTick);
@@ -101,6 +104,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
   @override
   void dispose() {
     _ticker?.cancel();
+    setLeaveGuard(false);
     super.dispose();
   }
 
@@ -170,6 +174,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
       _examSubmitted = true;
       _score = correct;
     });
+    setLeaveGuard(false);
     if (!_attemptsSaved || !_resultSaved) _saveAttempts(questions);
   }
 
@@ -430,8 +435,8 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
 
     // Android back and the back gesture would otherwise drop a timed exam
     // without a word; only the close button asked. Route them to the same
-    // dialog. (Browser back and closing the tab cannot be intercepted this
-    // way; resuming an exam is still deferred work.)
+    // dialog. Closing or reloading the tab is guarded by `setLeaveGuard`;
+    // resuming an exam is still deferred work.
     return PopScope(
       canPop: _examSubmitted,
       onPopInvokedWithResult: (didPop, _) {
