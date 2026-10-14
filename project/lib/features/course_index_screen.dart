@@ -317,7 +317,7 @@ class _CourseMeta extends StatelessWidget {
       '${course.modules.length} '
           '${course.modules.length == 1 ? 'module' : 'modules'}',
       '${course.topicCount} ${course.topicCount == 1 ? 'topic' : 'topics'}',
-      if (course.isLive) '${course.questionCount} questions',
+      if (course.isLive && course.counts.label.isNotEmpty) course.counts.label,
     ];
 
     return Row(

@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../content/question_counts.dart';
 import '../content/subject_catalog.dart';
 import '../models/subject.dart';
 import 'learning_repository.dart';
@@ -35,7 +36,15 @@ class CourseTopic {
     required this.hasNotes,
     required this.isPlaceholder,
     this.lessonCount = 0,
+    this.split,
   });
+
+  /// Past and practice questions from the topic document; null where only
+  /// a total is known (a catalog topic, a test fixture).
+  final QuestionCounts? split;
+
+  /// What the topic row shows.
+  QuestionCounts get counts => split ?? QuestionCounts(total: questionCount);
 
   /// Published, openable Learn items (`topics.lessonCount`). Zero means
   /// "not known" — show no count rather than "0 of 0".
@@ -80,6 +89,9 @@ class CourseModule {
 
   int get questionCount =>
       topics.fold(0, (sum, topic) => sum + topic.questionCount);
+
+  QuestionCounts get counts =>
+      topics.fold(const QuestionCounts(), (sum, topic) => sum + topic.counts);
 }
 
 /// A whole subject course page.
@@ -116,6 +128,11 @@ class Course {
 
   int get questionCount =>
       modules.fold(0, (sum, module) => sum + module.questionCount);
+
+  QuestionCounts get counts => modules.fold(
+    const QuestionCounts(),
+    (sum, module) => sum + module.counts,
+  );
 
   /// Finds a topic by its route key, with the module it belongs to — the
   /// topic overview page needs both (for the breadcrumb and for the Learn
@@ -273,6 +290,7 @@ final courseProvider = FutureProvider.family<Course, String>((ref, key) async {
                 hasNotes: topic.hasNotes,
                 isPlaceholder: false,
                 lessonCount: topic.lessonCount,
+                split: topic.counts,
               ),
           ],
         ),

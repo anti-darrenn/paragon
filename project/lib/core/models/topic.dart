@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../content/question_counts.dart';
 import 'firestore_parsing.dart';
 
 class Topic {
@@ -8,6 +9,12 @@ class Topic {
   final String subjectId;
   final String name;
   final int questionCount;
+
+  /// Past questions from real papers and Paragon's generated practice
+  /// questions, both `hasAnswer: true`, from `jobs.js --job=counts`. Both
+  /// zero means "not split yet" — see [QuestionCounts].
+  final int pastQuestionCount;
+  final int practiceQuestionCount;
   final int order;
 
   /// Published, openable Learn items. Zero means "not known", never "no
@@ -27,10 +34,18 @@ class Topic {
     required this.name,
     required this.questionCount,
     required this.order,
+    this.pastQuestionCount = 0,
+    this.practiceQuestionCount = 0,
     this.lessonCount = 0,
     this.hasNotes = false,
     this.notesMarkdown,
   });
+
+  QuestionCounts get counts => QuestionCounts(
+    past: pastQuestionCount,
+    practice: practiceQuestionCount,
+    total: questionCount,
+  );
 
   factory Topic.fromFirestore(DocumentSnapshot doc) {
     final d = docData(doc);
@@ -40,6 +55,8 @@ class Topic {
       subjectId: asString(d['subjectId']),
       name: asString(d['name']),
       questionCount: asInt(d['questionCount']),
+      pastQuestionCount: asInt(d['pastQuestionCount']),
+      practiceQuestionCount: asInt(d['practiceQuestionCount']),
       order: asInt(d['order']),
       lessonCount: asInt(d['lessonCount']),
       hasNotes: asBool(d['hasNotes']),

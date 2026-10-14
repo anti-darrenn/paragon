@@ -401,80 +401,101 @@ async function jobResourceStatus() {
   log(`   ${missing.length} ${APPLY ? "stamped" : "would be stamped"} published`);
 }
 
-// ─── Job: subject.topicCount and questionCount ───────────────────────
+// ─── Job: question counts, topic and subject ─────────────────────────
 
 /**
- * Recomputes `topicCount` and `questionCount` on every subject document
- * from the live `topics` and `questions` collections.
+ * Counts one topic's questions a student can be served (`hasAnswer: true`),
+ * split into past questions from real papers and Paragon's generated
+ * practice. Three `count()` aggregates, billed per 1000 index entries, not
+ * per document — equality filters only, so no composite index is needed.
  *
- * `questionCount` counts only `hasAnswer: true` — what a student can be
- * served — and is shown on the welcome screen. It drifts whenever an
- * admin retires a reported question or new content is seeded.
+ * "Past" is `source == 'waec'`; generated questions are stamped
+ * `source: 'drill'`, so the two never overlap. `Question.isPastQuestion`
+ * in the app reads the same fields — change both together.
+ */
+async function countTopicQuestions(topicId) {
+  const base = db
+    .collection("questions")
+    .where("topicId", "==", topicId)
+    .where("hasAnswer", "==", true);
+  const [total, past, practice] = await Promise.all([
+    base.count().get(),
+    base.where("source", "==", "waec").count().get(),
+    base.where("origin", "==", "ai_generated").count().get(),
+  ]);
+  return {
+    questionCount: total.data().count,
+    pastQuestionCount: past.data().count,
+    practiceQuestionCount: practice.data().count,
+  };
+}
+
+/** Logs and (with --apply) writes only the fields whose stored value is wrong. */
+async function writeIfChanged(ref, stored, actual, name) {
+  const changes = Object.fromEntries(
+    Object.entries(actual).filter(([field, value]) => stored[field] !== value),
+  );
+  if (Object.keys(changes).length === 0) return false;
+  log(
+    `   ${name}: ` +
+      Object.entries(changes)
+        .map(([field, value]) => `${field} ${stored[field] ?? "unset"} -> ${value}`)
+        .join(", "),
+  );
+  if (APPLY) await ref.update(changes);
+  return true;
+}
+
+/**
+ * Recomputes the question counts on every topic, then each subject's
+ * `topicCount` and question counts **as the sum of its topics'**.
  *
- * The app needs a denominator to draw a subject-level progress ring. The
- * numerator is free — it comes from the student's own `progress/{uid}`
- * document — but "how many topics does Physics have" is not on the
- * subject document, and deriving it in the client means loading every
- * unit and every unit's topics, per subject, on the dashboard. That is
- * the read pattern `docs/audit/NEXT.md` keeps having to reclassify as
- * live breakage, so the number is precomputed here instead and read for
- * free alongside `unitCount`.
+ * Summing, rather than counting the subject separately, is the point: the
+ * welcome ticker reads the subject and the course page sums the topics,
+ * and the two disagreed (14,602 vs 14,616) because topic counts were
+ * written at seed time, without the `hasAnswer` filter, and never
+ * recounted. Now one set of aggregates feeds both, and
+ * `check_counts.js` asserts they agree.
  *
- * Counted with `count()` aggregates — billed per 1000 index entries
- * rather than per document, the same reason the seeders use them. Two
- * aggregates per subject, roughly twenty in total, and a write only where
- * a stored value is actually wrong.
+ * `topicCount` is the denominator of a subject-level progress ring; zero
+ * means "not known" in the app, so it is always written here.
  *
- * Reclassification moves questions between topics but never moves a topic
- * between subjects, so this drifts only when topics are added or removed.
- * Running nightly is ample.
+ * Cost: three aggregates per topic (about 700 reads for ~230 topics) plus
+ * one read per topic document. Nightly is ample: counts drift only when
+ * content is seeded, reclassified or retired.
  */
 async function jobTopicCounts() {
   log(`
-── Recompute subject.topicCount and questionCount [${mode()}]`);
+── Recompute topic and subject question counts [${mode()}]`);
 
   const subjects = await db.collection("subjects").get();
-  let updated = 0;
+  let topicsUpdated = 0;
+  let subjectsUpdated = 0;
 
   for (const subject of subjects.docs) {
     const topics = await db
       .collection("topics")
       .where("subjectId", "==", subject.id)
-      .count()
       .get();
-    // Only questions a student can actually be served: drill, WAEC and
-    // tests all filter on hasAnswer. One aggregate per subject, billed
-    // per 1000 index entries, not per document.
-    const questions = await db
-      .collection("questions")
-      .where("subjectId", "==", subject.id)
-      .where("hasAnswer", "==", true)
-      .count()
-      .get();
-    const actual = {
-      topicCount: topics.data().count,
-      questionCount: questions.data().count,
-    };
-    const stored = subject.data();
-
-    const changes = Object.fromEntries(
-      Object.entries(actual).filter(([field, value]) => stored[field] !== value),
-    );
-    if (Object.keys(changes).length === 0) continue;
-
-    log(
-      `   ${stored.name}: ` +
-        Object.entries(changes)
-          .map(([field, value]) => `${field} ${stored[field] ?? "unset"} -> ${value}`)
-          .join(", "),
-    );
-    updated++;
-    if (APPLY) {
-      await subject.ref.update(changes);
+    const sum = { questionCount: 0, pastQuestionCount: 0, practiceQuestionCount: 0 };
+    for (const topic of topics.docs) {
+      const actual = await countTopicQuestions(topic.id);
+      for (const k of Object.keys(sum)) sum[k] += actual[k];
+      const stored = topic.data();
+      if (await writeIfChanged(topic.ref, stored, actual, `${subject.data().name} / ${stored.name}`)) {
+        topicsUpdated++;
+      }
+    }
+    const actual = { topicCount: topics.size, ...sum };
+    if (await writeIfChanged(subject.ref, subject.data(), actual, subject.data().name)) {
+      subjectsUpdated++;
     }
   }
 
-  log(`   ${updated} subjects ${APPLY ? "updated" : "would be updated"}`);
+  log(
+    `   ${topicsUpdated} topics and ${subjectsUpdated} subjects ` +
+      `${APPLY ? "updated" : "would be updated"}`,
+  );
 }
 
 // ─── Job: topic.lessonCount ──────────────────────────────────────────

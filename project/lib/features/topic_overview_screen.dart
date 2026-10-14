@@ -87,7 +87,7 @@ class _TopicBody extends StatelessWidget {
   bool get _canPractise =>
       !topic.isPlaceholder &&
       course.subjectId != null &&
-      topic.questionCount > 0;
+      topic.counts.servable > 0;
 
   @override
   Widget build(BuildContext context) {
@@ -258,7 +258,7 @@ class _LessonList extends ConsumerWidget {
           kind: 'Exercise',
           title: 'Practise ${topic.name}',
           subtitle: canPractise
-              ? '${topic.questionCount} questions · instant feedback'
+              ? '${topic.counts.label} · instant feedback'
               : topic.isPlaceholder
               ? 'No questions yet'
               : 'No questions with a verified answer yet',

@@ -472,13 +472,14 @@ class _SubjectTickerState extends ConsumerState<_SubjectTicker>
           ),
           const SizedBox(width: 10),
           SvgPicture.asset('assets/icons/dot.svg', width: 4, height: 4),
-          // The live count from `subjects.questionCount` (kept by
-          // `jobs.js --job=counts`), never Figma's sample copy. Zero means
-          // "not known yet", so the number is left out, not shown as 0.
-          if (subject.questionCount > 0) ...[
+          // The live split from `subjects.pastQuestionCount` and
+          // `practiceQuestionCount` (kept by `jobs.js --job=counts`, from
+          // the same counts as every topic's, so the course page agrees).
+          // Nothing known yet means nothing shown, never 0.
+          if (subject.counts.label.isNotEmpty) ...[
             const SizedBox(width: 10),
             Text(
-              '${_groupThousands(subject.questionCount)} questions',
+              subject.counts.label,
               style: AppTheme.label.copyWith(
                 color: context.palette.textSecondary,
               ),
@@ -654,7 +655,3 @@ class _ConsentLine extends StatelessWidget {
     );
   }
 }
-
-/// 14602 -> "14,602".
-String _groupThousands(int n) =>
-    n.toString().replaceAllMapped(RegExp(r'\B(?=(\d{3})+(?!\d))'), (_) => ',');
