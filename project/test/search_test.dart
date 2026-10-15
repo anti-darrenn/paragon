@@ -91,4 +91,57 @@ void main() {
       expect(searchCatalog('a', corpus).isEmpty, isFalse);
     });
   });
+
+  group('past questions (audit C13)', () {
+    final index = {
+      'subjects': {'mathematics': 'Mathematics', 'physics': 'Physics'},
+      'questions': [
+        ['mathematics', 2018, 'Simplify 3√45 - 12√5', 'abc'],
+        [
+          'mathematics',
+          2018,
+          'Find the area of a circle of radius 7 cm',
+          'def',
+        ],
+        ['physics', 2019, 'A body moves with uniform acceleration', 'ghi'],
+        ['bad row'],
+      ],
+    };
+    final items = pastQuestionItems(index);
+
+    test(
+      'one item per question and one per paper, opening the static pages',
+      () {
+        expect(
+          items.where((i) => i.title.endsWith('every question')),
+          hasLength(2),
+        );
+        expect(items, hasLength(5), reason: 'the malformed row is skipped');
+        expect(
+          items.map((i) => i.path),
+          contains('/past-questions/waec/mathematics/2018/def/'),
+        );
+      },
+    );
+
+    test('question words and years find them, in their own group', () {
+      final r = searchCatalog('area circle', [
+        _course('Mathematics'),
+        ...items,
+      ]);
+      expect(r.pastQuestions.single.title, startsWith('Find the area'));
+      expect(r.courses, isEmpty);
+      final byYear = searchCatalog('2018', items);
+      expect(
+        byYear.pastQuestions.first.title,
+        'WAEC 2018 Mathematics: every question',
+      );
+    });
+
+    test('control: course and topic results are unchanged', () {
+      final r = searchCatalog('waves', [_topic('Waves'), ...items]);
+      expect(r.topics.single.title, 'Waves');
+      expect(r.pastQuestions, isEmpty);
+    });
+  });
 }

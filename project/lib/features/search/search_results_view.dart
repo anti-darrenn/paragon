@@ -38,6 +38,7 @@ class SearchResultsView extends StatelessWidget {
       ('Courses', cap(results.courses)),
       ('Topics', cap(results.topics)),
       ('Lessons', cap(results.lessons)),
+      ('WAEC past questions', cap(results.pastQuestions)),
     ];
 
     return ListView(
@@ -89,6 +90,7 @@ class SearchResultTile extends StatelessWidget {
       SearchKind.course => AppColors.forSubject(item.title),
       SearchKind.topic => AppColors.forSubject(item.subtitle),
       SearchKind.lesson => AppColors.primary,
+      SearchKind.pastQuestion => AppColors.accentBlue,
     };
     final icon = switch (item.kind) {
       SearchKind.course => Icons.auto_stories_rounded,
@@ -98,6 +100,7 @@ class SearchResultTile extends StatelessWidget {
         'Exercise' => Icons.edit_note_rounded,
         _ => Icons.article_outlined,
       },
+      SearchKind.pastQuestion => Icons.history_edu_rounded,
     };
     final subtitle = [
       if (item.subtitle.isNotEmpty) item.subtitle,
@@ -221,7 +224,7 @@ class SearchEmptyMessage extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             blank
-                ? 'Search courses, topics and lessons'
+                ? 'Search courses, topics, lessons and past questions'
                 : 'Nothing matches “${query.trim()}”',
             textAlign: TextAlign.center,
             style: AppTheme.bodyMd.copyWith(color: context.palette.textPrimary),

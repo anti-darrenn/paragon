@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_palette.dart';
 import '../../core/theme/app_theme.dart';
@@ -48,7 +47,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           onChanged: (_) => setState(() {}),
           style: AppTheme.bodyLg.copyWith(color: context.palette.textPrimary),
           decoration: InputDecoration(
-            hintText: 'Search courses, topics, lessons',
+            hintText: 'Search courses, topics, lessons, past questions',
             hintStyle: AppTheme.bodyLg.copyWith(
               color: context.palette.textSecondary,
             ),
@@ -83,7 +82,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               : SearchResultsView(
                   query: query,
                   results: results,
-                  onOpen: (item) => context.push(item.path),
+                  onOpen: (item) => openSearchPath(context, item.path),
                 ),
         ),
       ),
