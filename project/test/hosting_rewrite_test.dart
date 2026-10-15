@@ -31,7 +31,8 @@ class _Guest implements User {
 void main() {
   final hosting =
       (jsonDecode(File('firebase.json').readAsStringSync())
-          as Map<String, dynamic>)['hosting'] as Map<String, dynamic>;
+              as Map<String, dynamic>)['hosting']
+          as Map<String, dynamic>;
   final spa = (hosting['rewrites'] as List)
       .cast<Map<String, dynamic>>()
       .singleWhere((r) => r['destination'] == '/index.html');
@@ -67,7 +68,11 @@ void main() {
     }
 
     walk(router.configuration.routes);
-    expect(segments, contains('waec'), reason: 'control: the walk found routes');
+    expect(
+      segments,
+      contains('waec'),
+      reason: 'control: the walk found routes',
+    );
     for (final s in segments) {
       final path = s.startsWith(':') ? '/x' : '/$s';
       expect(regex.hasMatch(path), isTrue, reason: '$path is not rewritten');

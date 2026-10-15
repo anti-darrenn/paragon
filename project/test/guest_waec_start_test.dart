@@ -171,16 +171,21 @@ void main() {
 
     test('papers that can be sat come first, empty ones last', () {
       expect(
-        waecSubjectOrder([chem, maths, unsplit, physics], true).map((s) => s.id),
+        waecSubjectOrder([
+          chem,
+          maths,
+          unsplit,
+          physics,
+        ], true).map((s) => s.id),
         ['m', 'u', 'p', 'c'],
       );
     });
 
     test('control: nothing moves when every subject has papers', () {
-      expect(
-        waecSubjectOrder([physics, maths], false).map((s) => s.id),
-        ['p', 'm'],
-      );
+      expect(waecSubjectOrder([physics, maths], false).map((s) => s.id), [
+        'p',
+        'm',
+      ]);
     });
   });
 }
