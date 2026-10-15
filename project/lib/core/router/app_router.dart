@@ -64,6 +64,7 @@ import 'package:paragon/features/rooms/host_room_screen.dart';
 import 'package:paragon/features/rooms/player_room_screen.dart';
 import 'package:paragon/features/admin/studio/insight_editor_screen.dart';
 import 'package:paragon/features/theory/theory_screen.dart';
+import 'package:paragon/features/support_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -154,7 +155,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isOnLegal =
           state.matchedLocation == '/privacy' ||
           state.matchedLocation == '/terms' ||
-          state.matchedLocation == '/about';
+          state.matchedLocation == '/about' ||
+          state.matchedLocation == '/support';
 
       // Not signed in and trying to reach any route other than welcome/sign-in
       // → send to the welcome (landing) screen
@@ -603,6 +605,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/waec/:subjectId/theory',
         builder: (context, state) =>
             TheoryScreen(subjectId: state.pathParameters['subjectId']!),
+      ),
+      GoRoute(
+        path: '/support',
+        builder: (context, state) => const SupportScreen(),
       ),
       // Five questions straight from the welcome screen.
       GoRoute(

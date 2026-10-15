@@ -56,7 +56,7 @@ bool get legalPlaceholdersRemain => [
 ].any((value) => value.contains(unconfirmedMarker));
 
 /// Shown on both documents. Update when the content changes materially.
-const String legalLastUpdated = '2 October 2026';
+const String legalLastUpdated = '15 October 2026';
 
 /// The version of the terms and privacy policy a student agrees to,
 /// recorded on `users/{uid}` as `legalVersion` with the time.
@@ -66,20 +66,24 @@ const String legalLastUpdated = '2 October 2026';
 /// to accept again before going on (`/legal/accept`), so bumping it for a
 /// typo would interrupt every student for nothing. [legalLastUpdated] can
 /// move without it.
-const String kLegalVersion = '2026-09-26';
+const String kLegalVersion = '2026-10-15';
 
 /// What changed in [kLegalVersion], in a sentence each, for the accept
 /// screen. Rewrite this list whenever the version is bumped.
 const List<String> kLegalChanges = [
-  'You can now add a picture and a short bio. Only you can see them.',
-  'Guests can turn their session into an account and keep their progress. '
-      'Unused guest sessions are deleted after 30 days.',
-  'You can change your username once every 90 days. Old usernames stay '
-      'reserved forever.',
-  'You can download all your data from Settings.',
-  'Deleting your account now gives you 30 days to change your mind, or it '
-      'can go at once.',
-  'We record which version of these terms you accepted, and when.',
+  'We no longer ask for your age, gender, country or state, and we are '
+      'deleting any we already had. School and class stay optional.',
+  'You can set a weekly goal and your exam date. They are stored with your '
+      'account, and only you can see them.',
+  'You can challenge a friend with a link. Anyone with the link sees your '
+      'first name and your score, and the link expires after 30 days.',
+  'You can join a live quiz with a nickname. The room and everything in it '
+      'is deleted a day later.',
+  'You can ask to be told when a subject is ready. We keep the subjects you '
+      'ask about.',
+  'Usage analytics now include when practice, exams and sign-ups start, and '
+      'the sign-in method (never the address).',
+  'Lesson writers who agree can be credited by name under their lessons.',
 ];
 
 class LegalSection {
@@ -139,7 +143,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'it.',
         'Profile details you give us. Your username, your display name, and '
             'the subjects you choose. You may also optionally add your '
-            'school, class or year, age, gender, country and state, a short '
+            'school and your class or year, which tell us which schools and '
+            'classes use Paragon so we can work with schools and write for '
+            'the right level, a short '
             'bio of up to 160 characters, and a profile picture chosen from '
             'a set of built-in pictures or your initials (you cannot upload '
             'a photo). Every one of those optional fields can be left blank, '
@@ -231,7 +237,7 @@ const LegalDocument privacyPolicy = LegalDocument(
             'get through sign-up, and where they run into trouble. This '
             'tells us what to build and fix next.',
         'We deliberately keep this anonymous. We never send your name, '
-            'username, email, school, age or gender to analytics, and we '
+            'username, email or school to analytics, and we '
             'never send anything you typed. What goes is which screen of '
             'the app you are on, subject and topic identifiers, counts of '
             'questions answered and how many you got right, your topic '
@@ -284,6 +290,20 @@ const LegalDocument privacyPolicy = LegalDocument(
         'To improve Paragon from what you tell us in feedback.',
         'To understand which subjects and topics students need, so we know '
             'what to build next.',
+      ],
+    ),
+    // Draft for the NDPA's "lawful basis" requirement — see the file
+    // header: this needs a lawyer's review before a public launch.
+    LegalSection(
+      heading: 'Our legal basis',
+      paragraphs: [
+        'We use your account, your practice and your study data to provide '
+            'the service you signed up for. Without them there is nothing '
+            'to show you. We use usage analytics, problem reports and '
+            'feedback because we have a legitimate interest in finding and '
+            'fixing what is wrong; you can turn analytics off at any time. '
+            'The optional profile details, the plan and "Notify me" are '
+            'yours to give or leave out, and to remove later.',
       ],
     ),
     LegalSection(

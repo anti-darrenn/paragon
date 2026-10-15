@@ -36,6 +36,7 @@
  *   node jobs.js --job=challenges [--apply]
  *   node jobs.js --job=rooms    [--apply]
  *   node jobs.js --job=insights [--apply]
+ *   node jobs.js --job=metrics  [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * And one that is deliberately NOT in `all`, to be run once by hand:
@@ -627,6 +628,83 @@ async function jobInsights() {
   }
 }
 
+// ─── Job: daily traction metrics ─────────────────────────────────────
+
+/** Lagos is UTC+1 all year. The day before [now], as [startUtc, endUtc). */
+function lagosYesterday(now = new Date()) {
+  const lagos = new Date(now.getTime() + 60 * 60 * 1000);
+  const todayLagos = Date.UTC(lagos.getUTCFullYear(), lagos.getUTCMonth(), lagos.getUTCDate());
+  const end = new Date(todayLagos - 60 * 60 * 1000);
+  const start = new Date(end.getTime() - 24 * 60 * 60 * 1000);
+  const id = new Date(todayLagos - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return { id, start, end };
+}
+
+/**
+ * Writes yesterday's numbers (Lagos day) to `metrics/{YYYY-MM-DD}`:
+ * aggregates only, never a uid or a name. Read by admins in the studio's
+ * Traction panel, "copy for pitch deck". About ten count() aggregates —
+ * billed per 1000 index entries, so a few reads a day.
+ */
+async function jobMetrics() {
+  const { id, start, end } = lagosYesterday();
+  log(`\n── Traction metrics for ${id} [${mode()}]`);
+  const between = (col, field, extra = (q) => q) =>
+    extra(db.collection(col).where(field, ">=", start).where(field, "<", end)).count().get()
+      .then((s) => s.data().count)
+      .catch((e) => {
+        log(`   ! ${col}.${field}: ${e.message}`);
+        return null;
+      });
+  const metrics = {
+    questionsAnswered: await between("attempts", "timestamp"),
+    drillLearners: await between("progress", "updatedAt"),
+    newAccounts: await between("users", "createdAt", (q) => q.where("isAnonymous", "==", false)),
+    newGuests: await between("users", "createdAt", (q) => q.where("isAnonymous", "==", true)),
+    examsSat: await between("examResults", "submittedAt"),
+    challengesMade: await between("challenges", "createdAt"),
+    roomsHosted: await between("rooms", "createdAt"),
+    feedback: await between("feedback", "createdAt"),
+  };
+  log(`   ${JSON.stringify(metrics)}`);
+  if (APPLY) {
+    await db.collection("metrics").doc(id).set({
+      ...metrics,
+      day: id,
+      computedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  }
+}
+
+// ─── One-shot: retired profile fields ────────────────────────────────
+
+/**
+ * Deletes `profile.age`, `profile.gender`, `profile.country` and
+ * `profile.state` from every user (the owner's decision of 2026-10-15:
+ * data about minors with no reader). School and class stay. Not in
+ * `all`: run once by hand, dry first. Reads every user document once.
+ */
+async function jobDropProfile() {
+  log(`\n── Retired profile fields [${mode()}]`);
+  const RETIRED = ["age", "gender", "country", "state"];
+  const users = await db.collection("users").select("profile").get();
+  const hit = users.docs.filter((d) => {
+    const p = d.data().profile;
+    return p && RETIRED.some((f) => p[f] !== undefined);
+  });
+  log(`   ${hit.length} of ${users.size} users hold a retired field`);
+  if (!APPLY) return;
+  const del = admin.firestore.FieldValue.delete();
+  for (let i = 0; i < hit.length; i += 400) {
+    const batch = db.batch();
+    for (const d of hit.slice(i, i + 400)) {
+      batch.update(d.ref, Object.fromEntries(RETIRED.map((f) => [`profile.${f}`, del])));
+    }
+    await batch.commit();
+  }
+  log(`   ${hit.length} cleaned`);
+}
+
 // ─── Job: expired quiz rooms ─────────────────────────────────────────
 
 /**
@@ -657,9 +735,11 @@ async function main() {
   if (JOB === "challenges" || JOB === "all") await jobChallenges();
   if (JOB === "rooms" || JOB === "all") await jobRooms();
   if (JOB === "insights" || JOB === "all") await jobInsights();
+  if (JOB === "metrics" || JOB === "all") await jobMetrics();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();
+  if (JOB === "dropprofile") await jobDropProfile();
 
   if (!APPLY) log("\nDry run — nothing written. Re-run with --apply.");
   process.exit(0);

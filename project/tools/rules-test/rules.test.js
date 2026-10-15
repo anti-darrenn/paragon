@@ -254,6 +254,13 @@ async function main() {
   await check("not a draft", assertFails(getDoc(doc(student(), "theoryQuestions/tdraft"))));
   await check("no client writes", assertFails(setDoc(doc(reviewer(), "theoryQuestions/t9"), { subjectId: "s1", status: "draft" })));
 
+  console.log("\nmetrics: admins only");
+  const adminCtx = () =>
+    env.authenticatedContext("adm", { admin: true, firebase: { sign_in_provider: "google.com" } }).firestore();
+  await check("an admin reads the metrics", assertSucceeds(getDocs(collection(adminCtx(), "metrics"))));
+  await check("a reviewer cannot", assertFails(getDocs(collection(reviewer(), "metrics"))));
+  await check("nobody writes them from the app", assertFails(setDoc(doc(adminCtx(), "metrics/2026-10-14"), { x: 1 })));
+
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));
 

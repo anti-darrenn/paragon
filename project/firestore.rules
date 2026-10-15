@@ -151,6 +151,14 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── TRACTION METRICS ────────────────────────────────────────
+    // Daily aggregate counts from jobs.js --job=metrics; no uid or name
+    // in them. Admins read them in the studio; nothing writes from the app.
+    match /metrics/{day} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
     // ── THEORY (Paper 2, self-marked) ───────────────────────────
     // Admin-SDK written (the import script). Students list published
     // ones by subject (the query must filter on status); staff see all.

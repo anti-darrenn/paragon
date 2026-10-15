@@ -326,11 +326,25 @@ Done notes:
 
 ## Phase 8 — Copy and brand pass (needs Moyo's input)
 
-- [ ] **P8.1** Five tagline options in `docs/COPY.md`.
+- [x] **P8.1** Five tagline options in `docs/COPY.md`. *(Recommendation: 3, "The honest WAEC coach". The owner picks.)*
 - [ ] **P8.2** l10n/ARB. *(Deferred: no second language planned.)*
-- [ ] **P8.3** About: where questions come from (partly exists).
+- [x] **P8.3** About: where questions come from, the provenance labels, thanks, and a link to Support.
 
-Done notes:
+Done notes (Wave J, PR `feat/trust-support`, with the launch plan's phase 4):
+- **Support page.** `/support` is up; its donate button stays hidden until there is a
+  URL.
+- **Traction metrics.** `jobs.js --job=metrics` writes daily aggregate counts to
+  `metrics/{day}`, shown in an admin-only studio panel with "Copy for a pitch deck".
+- **Owner decisions (2026-10-15).**
+  - The profile keeps **school and class only**; the other fields are retired and
+    deleted by a one-shot.
+  - The **terms are bumped**, with a plain list of what changed.
+  - The credits are kept as worded.
+  - The WASSCE formats stay unconfirmed.
+- **Legal basis.** The section is drafted, flagged for a lawyer.
+- **Per-link previews** (`/c/:id`, `/join`) are not possible on Hosting without a
+  server: every app URL serves the same `index.html`, so a shared link shows the
+  general description.
 
 ---
 

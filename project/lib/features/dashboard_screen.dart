@@ -648,6 +648,13 @@ class _QuickLinks extends StatelessWidget {
               subtitle: 'Join with a code, or host one for your class',
               onTap: () => context.push('/join'),
             ),
+            ListRow(
+              icon: Icons.volunteer_activism_outlined,
+              iconColor: AppColors.primary,
+              title: 'Support Paragon',
+              subtitle: 'Free for every student: how it stays that way',
+              onTap: () => context.push('/support'),
+            ),
           ],
         ),
       ],
