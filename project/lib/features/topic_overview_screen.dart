@@ -31,7 +31,7 @@ import '../core/widgets/examiner_insight_panel.dart';
 /// order, with checks for what the student has finished and a Start /
 /// Continue button; every available item opens `LessonScreen`. A topic
 /// with no published resources shows the old placeholder rows instead. The
-/// practice row runs `DrillScreen`; the module quiz does not exist yet.
+/// practice row runs `DrillScreen`.
 class TopicOverviewScreen extends ConsumerWidget {
   const TopicOverviewScreen({
     super.key,
@@ -311,20 +311,9 @@ class _LessonList extends ConsumerWidget {
               'This topic has no practisable questions in Paragon yet.',
           isPrimary: true,
         ),
-        const SizedBox(height: 10),
-
-        // A scored, no-feedback quiz over one topic doesn't exist — WAEC
-        // Prep is the exam-style surface and is subject-wide, not per
-        // topic, so this is a genuine gap rather than a rename of drill.
-        _LessonRow(
-          icon: Icons.task_alt_rounded,
-          kind: 'Quiz',
-          title: '${module.name} quiz',
-          subtitle: 'Not available yet',
-          accent: accent,
-          onTap: null,
-          disabledReason: 'Module quizzes are not part of Paragon yet.',
-        ),
+        // No "module quiz" row: it was a permanently disabled stub, and
+        // the unit test on the course page already covers a module
+        // (audit C7, 2026-10-15).
       ],
     );
   }
