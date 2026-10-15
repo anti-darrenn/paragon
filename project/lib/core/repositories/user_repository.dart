@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../legal/legal_documents.dart';
 import '../onboarding/onboarding_step.dart';
 
@@ -27,7 +28,7 @@ class UserRepository {
 
   Future<void> createUserIfNew(User user) async {
     final ref = _db.collection('users').doc(user.uid);
-    final snap = await ref.get();
+    final snap = await ref.get().metered();
     if (!snap.exists) {
       await ref.set({
         'uid': user.uid,
@@ -48,7 +49,7 @@ class UserRepository {
   /// never had is not invented.
   Future<void> recordUpgrade(User user) async {
     final ref = _db.collection('users').doc(user.uid);
-    final snap = await ref.get();
+    final snap = await ref.get().metered();
     final storedName = (snap.data()?['displayName'] as String?)?.trim() ?? '';
     final authName = user.displayName?.trim() ?? '';
     final data = <String, Object?>{
@@ -184,7 +185,7 @@ class UserRepository {
   /// actually decides, since anything can be taken between the check and
   /// the submit.
   Future<bool> isUsernameAvailable(String key) async {
-    final snap = await _db.collection('usernames').doc(key).get();
+    final snap = await _db.collection('usernames').doc(key).get().metered();
     return !snap.exists;
   }
 

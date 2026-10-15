@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../progress/mastery.dart';
 import '../providers/auth_provider.dart';
 
@@ -60,7 +61,7 @@ class ProgressRepository {
       _db.collection('progress').doc(uid);
 
   Future<UserProgress> fetch(String uid) async {
-    final snap = await _doc(uid).get();
+    final snap = await _doc(uid).get().metered();
     return UserProgress.fromDocument(snap.data());
   }
 
@@ -234,5 +235,6 @@ final userProgressProvider = StreamProvider<UserProgress>((ref) {
       .collection('progress')
       .doc(user.uid)
       .snapshots()
+      .metered()
       .map((doc) => UserProgress.fromDocument(doc.data()));
 });

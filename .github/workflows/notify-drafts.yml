@@ -1,7 +1,8 @@
 # Every 15 minutes: applies content-team requests from the studio's Team
 # page (apply_roles.js) and students' account requests
-# (apply_account_requests.js), then emails the team about lesson-workflow
-# transitions and student problem reports (notify_drafts.js).
+# (apply_account_requests.js), records Firestore quota usage (usage.js),
+# then emails the team about lesson-workflow transitions, student problem
+# reports and feedback (notify_drafts.js).
 #
 # No Cloud Functions on Spark, so there is no "on write" trigger — this
 # polls instead. A run with nothing new reads a handful of documents and
@@ -60,6 +61,15 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: node apply_account_requests.js
+
+      # Today's Firestore reads and writes against the Spark quota, for the
+      # studio (_meta/usage). Needs the service account to hold Monitoring
+      # Viewer; until it does, the script logs a notice and exits cleanly.
+      - name: Record quota usage
+        working-directory: project/tools/admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node usage.js --apply
 
       - name: Notify
         working-directory: project/tools/admin

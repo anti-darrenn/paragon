@@ -11,6 +11,7 @@ import '../core/theme/app_theme.dart';
 import '../core/widgets/user_avatar.dart';
 import 'account/account_help.dart';
 import 'account/delete_account.dart';
+import 'feedback/feedback_sheet.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/ui/ui.dart';
@@ -200,6 +201,12 @@ class SettingsScreen extends ConsumerWidget {
                           icon: Icons.description_outlined,
                           label: 'Terms of Service',
                           onTap: () => context.push('/terms'),
+                        ),
+                        const _Divider(),
+                        _LinkRow(
+                          icon: Icons.chat_bubble_outline_rounded,
+                          label: 'Send feedback',
+                          onTap: () => showFeedbackSheet(context),
                         ),
                         const _Divider(),
                         _LinkRow(

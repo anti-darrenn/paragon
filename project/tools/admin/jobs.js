@@ -118,6 +118,7 @@ async function deleteDocs(refs) {
 const OWNED = [
   ["attempts", "userId"],
   ["flags", "userId"],
+  ["feedback", "userId"],
   ["notes", "userId"],
   ["examResults", "userId"],
   ["progress", null],

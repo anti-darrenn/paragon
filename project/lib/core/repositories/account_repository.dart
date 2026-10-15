@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:paragon/core/data/read_meter.dart';
 
 /// Account deletion.
 ///
@@ -103,6 +104,10 @@ class AccountRepository {
       _db.collection('attempts').where('userId', isEqualTo: uid),
     );
     await _deleteQuery(_db.collection('flags').where('userId', isEqualTo: uid));
+    // "Send feedback" messages.
+    await _deleteQuery(
+      _db.collection('feedback').where('userId', isEqualTo: uid),
+    );
     // One document per finished WAEC exam, for its review and history.
     await _deleteQuery(
       _db.collection('examResults').where('userId', isEqualTo: uid),
@@ -159,7 +164,13 @@ class AccountRepository {
   /// keyed by uid are listed in [_ownedById]. Together these are the same
   /// set [deleteOwnedDocuments] removes — keep all three in step (and
   /// `OWNED` in tools/admin/jobs.js).
-  static const _ownedByQuery = ['attempts', 'notes', 'flags', 'examResults'];
+  static const _ownedByQuery = [
+    'attempts',
+    'notes',
+    'flags',
+    'feedback',
+    'examResults',
+  ];
   static const _ownedById = [
     'users',
     'progress',
@@ -180,7 +191,8 @@ class AccountRepository {
           .collection(collection)
           .where('userId', isEqualTo: uid)
           .count()
-          .get();
+          .get()
+          .metered();
       total += agg.count ?? 0;
     }
     return total;
@@ -198,14 +210,15 @@ class AccountRepository {
       'uid': uid,
     };
     for (final collection in _ownedById) {
-      final snap = await _db.collection(collection).doc(uid).get();
+      final snap = await _db.collection(collection).doc(uid).get().metered();
       if (snap.exists) out[collection] = toJsonSafe(snap.data());
     }
     for (final collection in _ownedByQuery) {
       final snap = await _db
           .collection(collection)
           .where('userId', isEqualTo: uid)
-          .get();
+          .get()
+          .metered();
       out[collection] = [
         for (final d in snap.docs)
           {'id': d.id, ...?toJsonSafe(d.data()) as Map<String, Object?>?},
@@ -236,7 +249,7 @@ class AccountRepository {
   /// handles badly.
   Future<void> _deleteQuery(Query<Map<String, dynamic>> query) async {
     while (true) {
-      final snap = await query.limit(_batchChunkSize).get();
+      final snap = await query.limit(_batchChunkSize).get().metered();
       if (snap.docs.isEmpty) return;
 
       final batch = _db.batch();

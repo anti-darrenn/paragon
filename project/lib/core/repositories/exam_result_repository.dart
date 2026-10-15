@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../exam/exam_result.dart';
 import '../models/question.dart';
 import '../providers/auth_provider.dart';
@@ -27,7 +28,7 @@ class ExamResultRepository {
   }
 
   Future<ExamResult?> load(String id) async {
-    final doc = await _col.doc(id).get();
+    final doc = await _col.doc(id).get().metered();
     return doc.exists ? ExamResult.fromFirestore(doc) : null;
   }
 
@@ -43,7 +44,8 @@ class ExamResultRepository {
         .where('subjectId', isEqualTo: subjectId)
         .orderBy('submittedAt', descending: true)
         .limit(limit)
-        .get();
+        .get()
+        .metered();
     return snap.docs.map(ExamResult.fromFirestore).toList();
   }
 
@@ -60,7 +62,8 @@ class ExamResultRepository {
       final snap = await _db
           .collection('questions')
           .where(FieldPath.documentId, whereIn: chunk)
-          .get();
+          .get()
+          .metered();
       for (final doc in snap.docs) {
         out[doc.id] = Question.fromFirestore(doc);
       }

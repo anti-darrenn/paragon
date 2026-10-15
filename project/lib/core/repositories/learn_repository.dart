@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../models/learn_resource.dart';
 import '../models/lesson_asset.dart';
 import '../models/question.dart';
@@ -42,7 +43,8 @@ final topicResourcesProvider =
           .collection('resources')
           .where('status', isEqualTo: 'published')
           .orderBy('order')
-          .get();
+          .get()
+          .metered();
 
       final resources = snap.docs
           .map((d) => LearnResource.fromFirestore(d))
@@ -115,12 +117,13 @@ Future<List<Question>> _rotatedTopicQuestions(
       .orderBy(FieldPath.documentId)
       .startAt([_randomAutoId(Random())])
       .limit(limit)
-      .get();
+      .get()
+      .metered();
 
   var docs = forward.docs;
   if (docs.length < limit) {
     final seen = docs.map((d) => d.id).toSet();
-    final wrap = await base.orderBy(FieldPath.documentId).limit(limit).get();
+    final wrap = await base.orderBy(FieldPath.documentId).limit(limit).get().metered();
     docs = [
       ...docs,
       ...wrap.docs.where((d) => !seen.contains(d.id)).take(limit - docs.length),
@@ -207,7 +210,8 @@ final pinnedQuestionsProvider = FutureProvider.family<List<Question>, String>((
       .read(_firestoreProvider)
       .collection('questions')
       .where(FieldPath.documentId, whereIn: ids.take(kMaxPinnedQuestions).toList())
-      .get();
+      .get()
+      .metered();
   final byId = {for (final d in snap.docs) d.id: Question.fromFirestore(d)};
   return [
     for (final id in ids)
@@ -244,6 +248,7 @@ final lessonAssetProvider = FutureProvider.family<LessonAsset?, String>((
       .read(_firestoreProvider)
       .collection('lessonAssets')
       .doc(id)
-      .get();
+      .get()
+      .metered();
   return doc.exists ? LessonAsset.fromFirestore(doc) : null;
 });

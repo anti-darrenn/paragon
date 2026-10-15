@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
+import '../data/cache_first.dart';
 import '../models/subject.dart';
 import '../models/unit.dart';
 import '../models/topic.dart';
@@ -15,7 +17,11 @@ final _firestoreProvider = Provider<FirebaseFirestore>((ref) {
 /// Loads the list of subjects.
 final subjectsProvider = FutureProvider<List<Subject>>((ref) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db.collection('subjects').orderBy('name').get();
+  // Cache-first: content changes rarely, and this runs on every app load.
+  final snap = await getCacheFirst(
+    db.collection('subjects').orderBy('name'),
+    key: 'subjects',
+  );
   return snap.docs.map((d) => Subject.fromFirestore(d)).toList();
 });
 
@@ -25,11 +31,13 @@ final unitsProvider = FutureProvider.family<List<Unit>, String>((
   subjectId,
 ) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db
-      .collection('units')
-      .where('subjectId', isEqualTo: subjectId)
-      .orderBy('order')
-      .get();
+  final snap = await getCacheFirst(
+    db
+        .collection('units')
+        .where('subjectId', isEqualTo: subjectId)
+        .orderBy('order'),
+    key: 'units:$subjectId',
+  );
   return snap.docs.map((d) => Unit.fromFirestore(d)).toList();
 });
 
@@ -39,11 +47,12 @@ final topicsProvider = FutureProvider.family<List<Topic>, String>((
   unitId,
 ) async {
   final db = ref.read(_firestoreProvider);
-  final snap = await db
-      .collection('topics')
-      .where('unitId', isEqualTo: unitId)
-      .orderBy('order')
-      .get();
+  // A course outline is one of these per unit, 50 to 75 documents a
+  // subject: the single biggest read cost of browsing. See cache_first.dart.
+  final snap = await getCacheFirst(
+    db.collection('topics').where('unitId', isEqualTo: unitId).orderBy('order'),
+    key: 'topics:$unitId',
+  );
   return snap.docs.map((d) => Topic.fromFirestore(d)).toList();
 });
 
@@ -58,7 +67,8 @@ final topicByIdProvider = FutureProvider.family<Topic?, String>((
       .read(_firestoreProvider)
       .collection('topics')
       .doc(topicId)
-      .get();
+      .get()
+      .metered();
   return snap.exists ? Topic.fromFirestore(snap) : null;
 });
 
@@ -116,7 +126,8 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
       .orderBy(FieldPath.documentId)
       .startAt([randomStart])
       .limit(_drillSessionSize)
-      .get();
+      .get()
+      .metered();
 
   var docs = forward.docs;
   if (docs.length < _drillSessionSize) {
@@ -124,7 +135,8 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
     final wrap = await base
         .orderBy(FieldPath.documentId)
         .limit(_drillSessionSize)
-        .get();
+        .get()
+        .metered();
     final needed = _drillSessionSize - docs.length;
     final additions = wrap.docs
         .where((d) => !seenIds.contains(d.id))
@@ -156,8 +168,12 @@ final waecYearRangeProvider = FutureProvider.family<(int min, int max), String>(
         .where('source', isEqualTo: 'waec')
         .where('hasAnswer', isEqualTo: true);
 
-    final earliest = await base.orderBy('year').limit(1).get();
-    final latest = await base.orderBy('year', descending: true).limit(1).get();
+    final earliest = await base.orderBy('year').limit(1).get().metered();
+    final latest = await base
+        .orderBy('year', descending: true)
+        .limit(1)
+        .get()
+        .metered();
 
     final min = earliest.docs.isEmpty
         ? _waecFallbackEarliestYear
@@ -210,7 +226,8 @@ final waecAvailableCountProvider =
           .where('year', isGreaterThanOrEqualTo: query.yearFrom)
           .where('year', isLessThanOrEqualTo: query.yearTo)
           .count()
-          .get();
+          .get()
+          .metered();
       return aggregate.count ?? 0;
     });
 
@@ -274,7 +291,8 @@ final waecExamQuestionsProvider =
             .where('year', isLessThanOrEqualTo: config.yearTo)
             .orderBy('year')
             .limit(config.questionCount)
-            .get();
+            .get()
+            .metered();
         return snap.docs.map((d) => Question.fromFirestore(d)).toList();
       }
 
@@ -287,7 +305,8 @@ final waecExamQuestionsProvider =
           .where('year', isLessThanOrEqualTo: config.yearTo)
           .orderBy('year')
           .limit(config.questionCount)
-          .get();
+          .get()
+          .metered();
 
       var docs = forward.docs;
       if (docs.length < config.questionCount) {
@@ -296,7 +315,8 @@ final waecExamQuestionsProvider =
             .where('year', isGreaterThanOrEqualTo: config.yearFrom)
             .orderBy('year', descending: true)
             .limit(config.questionCount - docs.length)
-            .get();
+            .get()
+            .metered();
         docs = [...docs, ...backfill.docs];
       }
       final shuffled = docs.toList()..shuffle();

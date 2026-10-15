@@ -15,6 +15,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import 'admin_flag_screen.dart';
 import 'admin_resource_editor_screen.dart';
+import 'studio/launch_panels.dart';
 import 'studio/review_panels.dart';
 import 'studio/staff_profile.dart';
 import 'studio/topic_planner_screen.dart';
@@ -106,6 +107,10 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                       const _FlagQueue(),
                       const SizedBox(height: 28),
                       const _LessonReports(),
+                      const SizedBox(height: 28),
+                      const FeedbackPanel(),
+                      const SizedBox(height: 28),
+                      const UsagePanel(),
                       const SizedBox(height: 28),
                     ],
                     Row(

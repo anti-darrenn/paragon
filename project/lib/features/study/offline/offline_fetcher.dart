@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/data/read_meter.dart';
 import '../../../core/models/learn_resource.dart';
 import '../../../core/models/question.dart';
 import 'offline_plan.dart';
@@ -44,7 +45,8 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
         .collection('resources')
         .where('status', isEqualTo: 'published')
         .orderBy('order')
-        .get(_server);
+        .get(_server)
+        .metered();
     return snap.docs
         .map(LearnResource.fromFirestore)
         .where((r) => r.type != LearnResourceType.unknown)
@@ -59,7 +61,11 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
     var saved = 0;
     for (final id in ids) {
       try {
-        final doc = await _db.collection('lessonAssets').doc(id).get(_server);
+        final doc = await _db
+            .collection('lessonAssets')
+            .doc(id)
+            .get(_server)
+            .metered();
         if (doc.exists) saved++;
       } catch (_) {}
     }
@@ -76,7 +82,8 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
       final snap = await _db
           .collection('questions')
           .where(FieldPath.documentId, whereIn: chunk)
-          .get(_server);
+          .get(_server)
+          .metered();
       saved.addAll(snap.docs.map(Question.fromFirestore));
     }
     return saved;
@@ -94,7 +101,8 @@ class FirestoreOfflineFetcher implements OfflineFetcher {
         .where('hasAnswer', isEqualTo: true)
         .orderBy(FieldPath.documentId)
         .limit(limit)
-        .get(_server);
+        .get(_server)
+        .metered();
     return snap.docs.map(Question.fromFirestore).toList();
   }
 }

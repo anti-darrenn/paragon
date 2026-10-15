@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../learn/lesson_progress.dart';
 import '../learn/topic_test.dart';
 import '../models/learn_resource.dart';
@@ -60,7 +61,7 @@ class LearnProgressRepository {
       _db.collection('learn').doc(uid);
 
   Future<TopicTestProgress> fetch(String uid) async {
-    final snap = await _doc(uid).get();
+    final snap = await _doc(uid).get().metered();
     return TopicTestProgress.fromDocument(snap.data());
   }
 
@@ -222,6 +223,7 @@ final topicTestProgressProvider = StreamProvider<TopicTestProgress>((ref) {
       .collection('learn')
       .doc(user.uid)
       .snapshots()
+      .metered()
       .map((doc) => TopicTestProgress.fromDocument(doc.data()));
 });
 
@@ -236,6 +238,7 @@ final _storedLessonProgressProvider = StreamProvider<LessonProgress>((ref) {
       .collection('learn')
       .doc(user.uid)
       .snapshots()
+      .metered()
       .map((doc) => LessonProgress.fromDocument(doc.data()));
 });
 

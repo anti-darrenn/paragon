@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../data/quota_status.dart';
 import '../theme/app_theme.dart';
+import 'quota_banner.dart';
 import '../theme/app_palette.dart';
 
 /// What a student sees when a screen's data fails to load: a plain
@@ -26,6 +28,7 @@ class LoadError extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint('LoadError: $error');
+    final quota = isQuotaError(error);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -33,13 +36,13 @@ class LoadError extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(
-              Icons.cloud_off_rounded,
+              quota ? Icons.hourglass_top_rounded : Icons.cloud_off_rounded,
               size: 36,
               color: context.palette.textSecondary,
             ),
             const SizedBox(height: 12),
             Text(
-              message,
+              quota ? quotaSpentMessage() : message,
               textAlign: TextAlign.center,
               style: AppTheme.bodyMd.copyWith(
                 color: context.palette.textSecondary,

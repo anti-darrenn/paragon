@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../models/firestore_parsing.dart';
 import '../models/learn_resource.dart';
 import 'admin_resource_repository.dart';
@@ -80,8 +81,8 @@ class LessonWorkflow {
 
     final revRef = _doc(r.topicId, r.id);
     final origRef = _doc(r.topicId, original);
-    final rev = (await revRef.get()).data() ?? const {};
-    final orig = (await origRef.get()).data();
+    final rev = (await revRef.get().metered()).data() ?? const {};
+    final orig = (await origRef.get().metered()).data();
     if (orig == null) {
       // The original was deleted while the revision was in review: publish
       // the revision as an item in its own right rather than lose it.
@@ -145,10 +146,12 @@ class LessonWorkflow {
     final open = await col
         .where('revisionOf', isEqualTo: published.id)
         .limit(1)
-        .get();
+        .get()
+        .metered();
     if (open.docs.isNotEmpty) return open.docs.first.id;
 
-    final source = (await col.doc(published.id).get()).data() ?? const {};
+    final source =
+        (await col.doc(published.id).get().metered()).data() ?? const {};
     final id = await _freeId(published.topicId, '${published.id}-revision');
     await col.doc(id).set({
       for (final f in kResourceContentFields)
@@ -175,7 +178,7 @@ class LessonWorkflow {
     required String uid,
   }) async {
     final ref = _doc(r.topicId, r.id);
-    final current = (await ref.get()).data() ?? const {};
+    final current = (await ref.get().metered()).data() ?? const {};
     final batch = _db.batch()
       ..set(ref.collection('versions').doc(), {
         for (final f in kResourceContentFields)
@@ -223,7 +226,7 @@ class LessonWorkflow {
   Future<String> _freeId(String topicId, String base) async {
     var candidate = base;
     for (var n = 2; ; n++) {
-      final snap = await _doc(topicId, candidate).get();
+      final snap = await _doc(topicId, candidate).get().metered();
       if (!snap.exists) return candidate;
       candidate = '$base-$n';
     }
@@ -315,7 +318,8 @@ final resourceVersionsProvider =
           .collection('versions')
           .orderBy('savedAt', descending: true)
           .limit(50)
-          .get();
+          .get()
+          .metered();
       return snap.docs.map(ResourceVersion.fromFirestore).toList();
     });
 
@@ -330,5 +334,6 @@ final resourceCommentsProvider =
           .collection('comments')
           .orderBy('createdAt')
           .snapshots()
+          .metered()
           .map((s) => s.docs.map(ReviewComment.fromFirestore).toList());
     });

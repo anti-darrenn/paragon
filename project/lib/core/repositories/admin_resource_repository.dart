@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../data/read_meter.dart';
 import '../learn/youtube_id.dart';
 import '../models/learn_resource.dart';
 import '../models/question.dart';
@@ -62,7 +63,7 @@ class AdminResourceRepository {
     String? savedBy,
   }) async {
     final ref = _resources(topicId).doc(resourceId);
-    final before = (await ref.get()).data();
+    final before = (await ref.get().metered()).data();
     final batch = _db.batch();
     if (before != null) {
       batch.set(ref.collection('versions').doc(), {
@@ -101,7 +102,7 @@ class AdminResourceRepository {
         .orderBy(FieldPath.documentId)
         .limit(limit);
     if (startAfterId != null) q = q.startAfter([startAfterId]);
-    final snap = await q.get();
+    final snap = await q.get().metered();
     return snap.docs.map(Question.fromFirestore).toList();
   }
 
@@ -116,13 +117,13 @@ class AdminResourceRepository {
   Future<void> refreshLessonCount(String topicId) async {
     final snap = await _resources(
       topicId,
-    ).where('status', isEqualTo: 'published').get();
+    ).where('status', isEqualTo: 'published').get().metered();
     final count = snap.docs
         .map(LearnResource.fromFirestore)
         .where((r) => r.isAvailable)
         .length;
     final topic = _db.collection('topics').doc(topicId);
-    final current = (await topic.get()).data()?['lessonCount'];
+    final current = (await topic.get().metered()).data()?['lessonCount'];
     if (current == count) return;
     await topic.update({'lessonCount': count});
   }
@@ -131,7 +132,7 @@ class AdminResourceRepository {
     final stem = base.isEmpty ? 'article' : base;
     var candidate = stem;
     for (var n = 2; ; n++) {
-      final snap = await _resources(topicId).doc(candidate).get();
+      final snap = await _resources(topicId).doc(candidate).get().metered();
       if (!snap.exists) return candidate;
       candidate = '$stem-$n';
     }
@@ -285,7 +286,8 @@ final adminTopicResourcesProvider =
           .doc(topicId)
           .collection('resources')
           .orderBy('order')
-          .get();
+          .get()
+          .metered();
       final resources = snap.docs.map(LearnResource.fromFirestore).toList();
       resources.sort((a, b) {
         final byOrder = a.order.compareTo(b.order);
@@ -307,7 +309,8 @@ final adminStatusQueueProvider =
       final snap = await FirebaseFirestore.instance
           .collectionGroup('resources')
           .where('status', isEqualTo: status.value)
-          .get();
+          .get()
+          .metered();
       return snap.docs.map(LearnResource.fromFirestore).toList()
         ..sort((a, b) => a.title.compareTo(b.title));
     });
@@ -320,7 +323,8 @@ final adminSubjectResourcesProvider =
       final snap = await FirebaseFirestore.instance
           .collectionGroup('resources')
           .where('subjectId', isEqualTo: subjectId)
-          .get();
+          .get()
+          .metered();
       return snap.docs.map(LearnResource.fromFirestore).toList();
     });
 
@@ -335,6 +339,7 @@ final adminResourceProvider =
           .doc(key.topicId)
           .collection('resources')
           .doc(key.resourceId)
-          .get();
+          .get()
+          .metered();
       return snap.exists ? LearnResource.fromFirestore(snap) : null;
     });
