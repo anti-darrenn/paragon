@@ -207,8 +207,11 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                 SurfaceCard(child: _shuffleSection()),
               ],
               const SizedBox(height: 20),
-              if (isGuest) ...[_guestUpsellChip(), const SizedBox(height: 20)],
               _startButton(isGuest, availableAsync),
+              // Below the button, not above it: a chip that went to /welcome
+              // sat where a guest reached for Start, and looked like the exam
+              // throwing them out (audit A1, 2026-10-15).
+              if (isGuest) ...[const SizedBox(height: 12), _guestUpsellChip()],
               const SizedBox(height: kSectionGap + 8),
               ExamHistory(subjectId: widget.subjectId),
             ],
@@ -504,7 +507,9 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
 
   Widget _guestUpsellChip() {
     return GestureDetector(
-      onTap: () => context.go('/welcome'),
+      // A guest links an account to the uid they already have: the
+      // upgrade page, not welcome, which reads as being signed out.
+      onTap: () => context.push('/account/upgrade'),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         decoration: BoxDecoration(
@@ -515,7 +520,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
           children: [
             Expanded(
               child: Text(
-                'Sign in to unlock all subjects and timed exams',
+                'Make an account for timed exams',
                 style: AppTheme.bodyMd.copyWith(color: AppColors.secondary),
               ),
             ),
