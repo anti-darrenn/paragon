@@ -151,6 +151,217 @@ service cloud.firestore {
       allow write: if reviews(subjectId);
     }
 
+    // ── TRACTION METRICS ────────────────────────────────────────
+    // Daily aggregate counts from jobs.js --job=metrics; no uid or name
+    // in them. Admins read them in the studio; nothing writes from the app.
+    match /metrics/{day} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
+    // ── THEORY (Paper 2, self-marked) ───────────────────────────
+    // Admin-SDK written (the import script). Students list published
+    // ones by subject (the query must filter on status); staff see all.
+    match /theoryQuestions/{id} {
+      allow read: if request.auth != null
+        && (resource.data.status == 'published' || isWriter());
+      allow write: if false;
+    }
+
+    // ── CONTRIBUTORS (public bylines) ───────────────────────────
+    // Written only through the Admin SDK (tools/admin/set_contributor.js)
+    // once the person has agreed and any credential is checked. Read by
+    // anyone signed in: a byline is public. Never listed.
+    match /contributors/{uid} {
+      allow get: if request.auth != null;
+      allow list, write: if false;
+    }
+
+    // ── EXAMINER INSIGHTS (lib/core/insights/examiner_insight.dart) ──
+    // Paragon's own summaries of the Chief Examiners' reports, per
+    // question (id = question id) or topic (id = topic_<topicId>).
+    // Students get published ones by id; the app asks only when
+    // jobs.js has flagged that one exists. Writers draft, reviewers
+    // publish, within their subjects.
+    match /insights/{id} {
+      allow get: if request.auth != null
+        && (resource.data.status == 'published' || isWriter());
+      allow list: if isWriter();
+      allow create, update: if writes(request.resource.data.subjectId)
+        && (request.resource.data.status == 'draft'
+            || (request.resource.data.status == 'published'
+                && reviews(request.resource.data.subjectId)))
+        && (resource == null || resource.data.status == 'draft'
+            || reviews(resource.data.subjectId))
+        && request.resource.data.keys().hasOnly(['kind', 'subjectId',
+             'questionId', 'topicId', 'summary', 'commonWrongOption', 'tip',
+             'reportYear', 'reportRef', 'years', 'status', 'updatedAt',
+             'updatedBy'])
+        && request.resource.data.kind in ['question', 'topic']
+        && request.resource.data.summary is string
+        && request.resource.data.summary.size() <= 1000
+        && request.resource.data.tip is string
+        && request.resource.data.tip.size() <= 300
+        && request.resource.data.reportRef is string
+        && request.resource.data.reportRef.size() <= 160
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid;
+      allow delete: if reviews(resource.data.subjectId);
+    }
+
+    // ── LIVE QUIZ ROOMS (lib/core/rooms/room.dart) ──────────────
+    // A host with an account writes the room; players (guests welcome)
+    // write a nickname once and one answer per question, accepted only
+    // while that question is live. Rooms last a day from createdAt;
+    // jobs.js --job=rooms deletes them with everything inside. Nothing
+    // here reaches attempts or progress.
+    match /rooms/{code} {
+      function roomData() {
+        return get(/databases/$(database)/documents/rooms/$(code)).data;
+      }
+      function roomOpen() {
+        return roomData().state != 'closed'
+          && request.time < roomData().createdAt + duration.value(24, 'h');
+      }
+
+      allow get: if request.auth != null;
+      allow list: if false;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && code.matches('^[A-HJKMNP-Z2-9]{6}$')
+        && request.resource.data.keys().hasOnly(['hostUid', 'subjectId',
+             'topicId', 'topicName', 'questionIds', 'state', 'index',
+             'createdAt', 'results'])
+        && request.resource.data.hostUid == request.auth.uid
+        && request.resource.data.state == 'lobby'
+        && request.resource.data.index == 0
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.results == {}
+        && request.resource.data.topicName is string
+        && request.resource.data.topicName.size() <= 120
+        && request.resource.data.questionIds is list
+        && request.resource.data.questionIds.size() > 0
+        && request.resource.data.questionIds.size() <= 20;
+      allow update: if request.auth != null
+        && resource.data.hostUid == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['state', 'index', 'results'])
+        && request.resource.data.state in ['lobby', 'question', 'reveal', 'podium', 'closed']
+        && request.resource.data.index is int
+        && request.resource.data.index >= 0
+        && request.resource.data.index < resource.data.questionIds.size()
+        && request.resource.data.results is map;
+      allow delete: if request.auth != null
+        && resource.data.hostUid == request.auth.uid;
+
+      // Nicknames: everyone in the room sees them on the projector.
+      match /players/{uid} {
+        allow get, list: if request.auth != null;
+        allow create: if isOwner(uid)
+          && roomOpen()
+          && request.resource.data.keys().hasOnly(['nickname', 'joinedAt'])
+          && request.resource.data.nickname is string
+          && request.resource.data.nickname.size() > 0
+          && request.resource.data.nickname.size() <= 20
+          && request.resource.data.joinedAt == request.time;
+        allow delete: if isOwner(uid)
+          || (request.auth != null && roomData().hostUid == request.auth.uid);
+      }
+
+      // One answer per player per question (the id says which), only
+      // while that question is the live one, never edited.
+      match /answers/{answerId} {
+        allow get: if request.auth != null
+          && (resource.data.uid == request.auth.uid
+              || roomData().hostUid == request.auth.uid);
+        allow list: if request.auth != null
+          && roomData().hostUid == request.auth.uid;
+        allow create: if request.auth != null
+          && request.resource.data.keys().hasOnly(['uid', 'index', 'selectedIndex', 'at'])
+          && request.resource.data.uid == request.auth.uid
+          && request.resource.data.index is int
+          && answerId == request.auth.uid + '_' + string(request.resource.data.index)
+          && request.resource.data.selectedIndex is int
+          && request.resource.data.selectedIndex >= 0
+          && request.resource.data.selectedIndex <= 4
+          && request.resource.data.at == request.time
+          && exists(/databases/$(database)/documents/rooms/$(code)/players/$(request.auth.uid))
+          && roomData().state == 'question'
+          && roomData().index == request.resource.data.index;
+      }
+    }
+
+    // ── CHALLENGE LINKS ("Challenge a friend", /c/:id) ──────────
+    // Written once by its creator (a guest may make one too), never
+    // edited. Anyone signed in — a friend arriving as a guest included —
+    // may *get* one by id; only its creator may list theirs (the export)
+    // or delete it. Deleted after 30 days by jobs.js --job=challenges.
+    match /challenges/{id} {
+      allow get: if request.auth != null;
+      allow list: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow delete: if request.auth != null
+        && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly(['userId', 'name',
+             'subjectId', 'topicId', 'topicName', 'questionIds', 'score',
+             'total', 'createdAt'])
+        && request.resource.data.keys().hasAll(['userId', 'name',
+             'subjectId', 'topicId', 'topicName', 'questionIds', 'score',
+             'total', 'createdAt'])
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 30
+        && request.resource.data.subjectId is string
+        && request.resource.data.topicId is string
+        && request.resource.data.topicName is string
+        && request.resource.data.topicName.size() <= 120
+        && request.resource.data.questionIds is list
+        && request.resource.data.questionIds.size() > 0
+        && request.resource.data.questionIds.size() <= 10
+        && request.resource.data.total == request.resource.data.questionIds.size()
+        && request.resource.data.score is int
+        && request.resource.data.score >= 0
+        && request.resource.data.score <= request.resource.data.total;
+    }
+
+    // ── PLAN (weekly goal and exam date) ────────────────────────
+    // The study plan's inputs only; the plan is computed on the device.
+    // Accounts only, owner only, closed field set, server time, a goal
+    // from the fixed list (`kWeeklyGoals`).
+    match /plan/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly(['userId', 'weeklyGoal', 'examDate', 'updatedAt'])
+        && request.resource.data.userId == uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.weeklyGoal in [50, 100, 200, 400]
+        && (!('examDate' in request.resource.data)
+            || request.resource.data.examDate == null
+            || request.resource.data.examDate is timestamp);
+    }
+
+    // ── WAITLIST ("Notify me" on a coming-soon subject) ──────────
+    // One document per student, id'd by uid, listing the catalog slugs of
+    // the subjects they want. Accounts only — the point is to reach them
+    // later, and a guest has no address. Reviewers may read (the studio
+    // counts sign-ups per subject with count() to decide what to write
+    // next); nobody else can see who signed up.
+    match /waitlist/{uid} {
+      allow read: if isOwner(uid) || isReviewer();
+      allow delete: if isOwner(uid);
+      allow create, update: if isOwner(uid)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly(['userId', 'subjects', 'updatedAt'])
+        && request.resource.data.userId == uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.subjects is list
+        && request.resource.data.subjects.size() <= 30;
+    }
+
     // ── ACCOUNT REQUESTS ────────────────────────────────────────
     // "Sign out everywhere" needs the Admin SDK (revokeRefreshTokens),
     // so the app files a request here and

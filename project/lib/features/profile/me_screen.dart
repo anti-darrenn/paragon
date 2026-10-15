@@ -234,14 +234,7 @@ class _AboutYou extends StatelessWidget {
     final values = form.toProfile();
     form.dispose();
 
-    const labels = {
-      'school': 'School',
-      'classYear': 'Class',
-      'age': 'Age',
-      'gender': 'Gender',
-      'country': 'Country',
-      'state': 'State',
-    };
+    const labels = {'school': 'School', 'classYear': 'Class'};
     final rows = [
       for (final entry in labels.entries)
         if (values[entry.key] != null) (entry.value, '${values[entry.key]}'),

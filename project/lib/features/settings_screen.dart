@@ -216,6 +216,12 @@ class SettingsScreen extends ConsumerWidget {
                         ),
                         const _Divider(),
                         _LinkRow(
+                          icon: Icons.volunteer_activism_outlined,
+                          label: 'Support Paragon',
+                          onTap: () => context.push('/support'),
+                        ),
+                        const _Divider(),
+                        _LinkRow(
                           icon: Icons.help_outline_rounded,
                           label: 'Help with your account',
                           onTap: () => showAccountHelp(

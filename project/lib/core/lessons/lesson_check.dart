@@ -17,6 +17,60 @@ List<LessonIssue> checkLesson(String body) {
   return issues;
 }
 
+/// Titles that are scaffolding, not lessons: `test2`, `test_article`,
+/// `Sample`, `lorem ipsum`, `untitled`… — the whole title, so a real lesson
+/// called "Tests for divisibility" or "Sample space" is never caught. A
+/// snake_case identifier (`test_article`, `new_video_1`) is caught too:
+/// no student-facing title is written that way.
+final RegExp placeholderTitle = RegExp(
+  r'^(?:(?:test|testing|sample|placeholder|todo|asdf\w*|x{3,}|untitled|dummy|foo|bar)[\s_\-]*\d*[\s_\-]*(?:article|video|exercise|lesson)?\d*'
+  r'|.*\blorem\b.*'
+  r'|[a-z0-9]+(?:_[a-z0-9]+)+)$',
+  caseSensitive: false,
+);
+
+/// What stops an item being shown to students, beyond its body's
+/// [checkLesson] errors: a placeholder or empty title, an article with no
+/// text, a video with no link. Line 0 — these are not about the body.
+///
+/// The editor refuses to publish while any of these stand (a reviewer can
+/// override with a reason, recorded as a review comment), and
+/// `tools/admin/content_lint.js` applies the same rules to what is already
+/// live — change both together.
+List<LessonIssue> checkPublishable({
+  required String type,
+  required String title,
+  String body = '',
+  String? youtubeId,
+}) {
+  final out = <LessonIssue>[];
+  final t = title.trim();
+  if (t.isEmpty) {
+    out.add(const LessonIssue(0, 'The title is empty.'));
+  } else if (placeholderTitle.hasMatch(t)) {
+    out.add(LessonIssue(0, '"$t" looks like a placeholder title.'));
+  }
+  if (type == 'article' && body.trim().isEmpty) {
+    out.add(const LessonIssue(0, 'The article has no text.'));
+  }
+  if (type == 'video' && (youtubeId ?? '').trim().isEmpty) {
+    out.add(const LessonIssue(0, 'The video has no YouTube link.'));
+  }
+  if (type == 'article') {
+    out.addAll(
+      checkLesson(body).where((i) => i.severity == IssueSeverity.error),
+    );
+  }
+  return out;
+}
+
+/// Maths commands whose KaTeX fonts the web build drops to save the first
+/// load (`tools/site/trim_fonts.js`, `DROPPED_COMMANDS` — change both
+/// together). They still render, in the main font.
+final RegExp droppedFontCommand = RegExp(
+  r'\\(mathcal|mathfrak|mathscr|mathsf|textsf|texttt|mathtt)\b',
+);
+
 /// Maths spans that fail to parse: `\(...\)`, `\[...\]` and `$$...$$`,
 /// matched the way `FullLatexView` matches them. An unclosed `\(` or `\[`
 /// is reported too — `FullLatexView` would print it as raw text.
@@ -39,6 +93,18 @@ List<LessonIssue> mathIssues(String body) {
     } catch (e) {
       final shown = tex.length > 40 ? '${tex.substring(0, 37)}...' : tex;
       out.add(LessonIssue(lineAt(at), 'Maths won\'t render: $shown'));
+      return;
+    }
+    final dropped = droppedFontCommand.firstMatch(tex);
+    if (dropped != null) {
+      out.add(
+        LessonIssue(
+          lineAt(at),
+          '\\${dropped.group(1)} uses a font Paragon does not ship; it will '
+          'show in the ordinary maths font.',
+          severity: IssueSeverity.warning,
+        ),
+      );
     }
   }
 

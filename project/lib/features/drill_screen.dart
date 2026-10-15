@@ -7,6 +7,7 @@ import '../core/providers/auth_provider.dart';
 import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
+import '../core/widgets/question_source_badge.dart';
 import '../core/widgets/math_text.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/report_problem_button.dart';
@@ -30,6 +31,9 @@ import '../core/widgets/hint_panel.dart';
 import '../core/widgets/question_image.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/widgets/session_title.dart';
+import '../core/challenge/challenge_link.dart';
+import 'challenge_link/challenge_share.dart';
+import '../core/widgets/examiner_insight_panel.dart';
 
 class DrillScreen extends ConsumerStatefulWidget {
   final String topicId;
@@ -72,6 +76,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   /// truthfully in `attempts`, but never added to `progress` — see
   /// `lib/core/learn/hints.dart`.
   int _hintedCorrect = 0;
+
+  /// Each answered question and whether it was right without a hint — what
+  /// "Challenge a friend" sends.
+  final List<({String questionId, bool correct})> _results = [];
   String? _sessionSubjectId;
   String? _uid;
 
@@ -101,6 +109,12 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
   /// a student's decision to turn collection off mid-session.
   Analytics? _analytics;
   ProgressRepository? _progress;
+
+  @override
+  void initState() {
+    super.initState();
+    ref.read(analyticsProvider).drillStart(topicId: widget.topicId);
+  }
 
   @override
   void didChangeDependencies() {
@@ -162,6 +176,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     setState(() {
       _submitted = true;
       _answered++;
+      _results.add((questionId: q.id, correct: isCorrect && hintsUsed == 0));
       if (isCorrect && hintsUsed == 0) _correct++;
       if (isCorrect && hintsUsed > 0) _hintedCorrect++;
     });
@@ -184,6 +199,49 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
     }
   }
 
+  /// Makes a challenge link from this session's questions and offers it
+  /// to WhatsApp (`challenge_link.dart`).
+  Future<void> _challengeFriend() async {
+    final user = ref.read(currentUserProvider);
+    final subjectId = _sessionSubjectId;
+    if (user == null || subjectId == null) return;
+    final topicName =
+        ref.read(topicByIdProvider(widget.topicId)).asData?.value?.name ??
+        'this topic';
+    final c = challengeFrom(_results);
+    try {
+      final id = await ref
+          .read(challengeRepositoryProvider)
+          .create(
+            uid: user.uid,
+            name: challengerName(user.displayName),
+            subjectId: subjectId,
+            topicId: widget.topicId,
+            topicName: topicName,
+            questionIds: c.ids,
+            score: c.score,
+          );
+      ref.read(analyticsProvider).challengeCreated(topicId: widget.topicId);
+      if (!mounted) return;
+      await showChallengeShareSheet(
+        context,
+        id: id,
+        message: challengeMessage(
+          score: c.score,
+          total: c.ids.length,
+          topicName: topicName,
+          id: id,
+        ),
+      );
+    } catch (_) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Couldn't create the challenge.")),
+        );
+      }
+    }
+  }
+
   /// Restarts with a fresh set of questions.
   ///
   /// Invalidating the provider is the point: `drillQuestionsProvider`
@@ -199,6 +257,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
       _submitted = false;
       _showSummary = false;
       _answered = 0;
+      _results.clear();
       _correct = 0;
       _hintedCorrect = 0;
       _hintsShown = 0;
@@ -296,6 +355,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
               after: before.plus(answered: _answered, correct: _correct).level,
               accent: AppColors.primary,
               isGuest: ref.watch(isGuestProvider),
+              onChallenge: _results.isEmpty ? null : _challengeFriend,
               onPractiseAgain: _practiseAgain,
               onDone: () => context.popOrGo(),
             );
@@ -327,6 +387,7 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   ),
                 ),
                 const SizedBox(height: 12),
+                QuestionSourceBadge(question: q),
                 FullLatexView(
                   latex: q.text,
                   textStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
@@ -414,6 +475,8 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                   ),
                   const SizedBox(height: 16),
                 ],
+                if (_submitted)
+                  ExaminerInsightPanel(question: q, selected: _selected),
                 // outside the explanation block on purpose — most questions
                 // have no worked solution, and those are the ones most worth
                 // reporting
@@ -495,7 +558,11 @@ class _SessionSummary extends StatelessWidget {
     required this.isGuest,
     required this.onPractiseAgain,
     required this.onDone,
+    this.onChallenge,
   });
+
+  /// Null when there is nothing to challenge with.
+  final VoidCallback? onChallenge;
 
   final int answered;
   final int correct;
@@ -615,8 +682,24 @@ class _SessionSummary extends StatelessWidget {
               // reached a level. For a guest that level is written to a
               // uid that will not exist tomorrow, so it is the worst place
               // to leave the omission.
-              if (isGuest) ...[const SizedBox(height: 16), const GuestNotice()],
+              if (isGuest) ...[
+                const SizedBox(height: 16),
+                GuestNotice(
+                  message: GuestLimits.saveResultMessage(
+                    'your $correct/$answered',
+                  ),
+                ),
+              ],
               const SizedBox(height: 24),
+
+              if (onChallenge != null) ...[
+                OutlinedButton.icon(
+                  onPressed: onChallenge,
+                  icon: const Icon(Icons.emoji_events_outlined),
+                  label: const Text('Challenge a friend'),
+                ),
+                const SizedBox(height: 10),
+              ],
 
               SizedBox(
                 height: 48,

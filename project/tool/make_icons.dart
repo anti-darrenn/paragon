@@ -1,10 +1,14 @@
-// Generates the web icons, favicon and link-preview image from the logo.
+// Generates the in-app logos, web icons, favicon and link-preview image
+// from the full-size logos.
 //
 //   dart run tool/make_icons.dart
 //
-// The source is assets/images/paragon_logo.png (1140x300): the globe mark
-// on the left becomes the square icons, the full wordmark the share image.
-// Re-run after changing the logo; the outputs are committed.
+// The sources are tool/logo_source/paragon_logo{,_light}.png (1140x300),
+// kept outside the asset bundle: the globe mark on the left becomes the
+// square icons, the full wordmark the share image, and the app ships each
+// logo scaled to the largest size it is drawn at (PLAN.md P4.2 — the
+// full-size PNGs were 149 KB and 128 KB on the first screen). Re-run after
+// changing the logo; the outputs are committed.
 
 import 'dart:io';
 
@@ -21,8 +25,18 @@ const _globeSize = 272;
 
 void main() {
   final logo = img.decodePng(
-    File('assets/images/paragon_logo.png').readAsBytesSync(),
+    File('tool/logo_source/paragon_logo.png').readAsBytesSync(),
   )!;
+  final logoLight = img.decodePng(
+    File('tool/logo_source/paragon_logo_light.png').readAsBytesSync(),
+  )!;
+
+  // ParagonLogo is drawn at most 64 logical pixels tall (the welcome
+  // screen; 24 everywhere else). 2x of that is 42 KB; 3x would be 82 KB
+  // for a barely visible gain on the one screen every visitor waits for.
+  // The globe's gradients defeat palette PNG, and quantising drops alpha.
+  _write('assets/images/paragon_logo.png', _shrink(logo, 128));
+  _write('assets/images/paragon_logo_light.png', _shrink(logoLight, 128));
   final globe = img.copyCrop(
     logo,
     x: _globeX,
@@ -54,8 +68,18 @@ void main() {
     dstX: (1200 - wordmark.width) ~/ 2,
     dstY: (630 - wordmark.height) ~/ 2,
   );
-  _write('web/og-image.png', share);
+  // JPEG: a flat background and a photo-like gradient compress far better
+  // than PNG, and every link-preview crawler accepts it.
+  File('web/og-image.jpg').writeAsBytesSync(img.encodeJpg(share, quality: 86));
+  stdout.writeln('wrote web/og-image.jpg (1200x630)');
 }
+
+/// [image] scaled to [height] pixels tall, keeping its aspect ratio.
+img.Image _shrink(img.Image image, int height) => img.copyResize(
+  image,
+  height: height,
+  interpolation: img.Interpolation.cubic,
+);
 
 /// [mark] centred on a [size] square of the app background, scaled to
 /// [fill] of its width.

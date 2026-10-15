@@ -7,7 +7,7 @@
 /// **Gating vs. optional.** Three fields gate entry to the app: `username`,
 /// `displayName` and `selectedSubjects`. The optional avatar step, like the
 /// optional profile step
-/// (school, class, age, gender, country, state) never gates anything and
+/// (school and class) never gates anything and
 /// is never reached by a redirect — only by walking forward through the
 /// funnel, or later from settings. That matches the spec's own definition
 /// of a complete profile ("username + subjects present"), with

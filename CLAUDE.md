@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**Launching?** Read `project/docs/LAUNCH_CHECKLIST.md` first: the PR merge order,
+the deploy and data steps, the decisions still open, and the browser click-through
+nobody has done yet. `PLAN.md` at the root records what was built for each review
+finding, and why the rest was declined.
+
 ## Repo layout
 
 Git root is `C:\Users\user\Desktop\paragon`. The Flutter app is one level down in `project/` — **all flutter/firebase/node commands run from `project/`**, not from the git root. `paragon_plans/` holds the PRD, tech-stack strategy, execution plan and Firestore schema docs (`.docx` + `.md`).
@@ -18,8 +23,99 @@ flutter analyze                    # lint (flutter_lints via analysis_options.ya
 flutter test                       # all tests
 flutter test test/latex_render_test.dart                          # single file
 flutter test test/latex_render_test.dart --plain-name "MathText"  # single test
-flutter build web --release; firebase deploy --only hosting        # deploy (project paragon-hq)
+flutter build web --release; node tools/site/build_static_site.js; firebase deploy --only hosting   # deploy (project paragon-hq)
 ```
+
+**KaTeX fonts are trimmed after the build.** `tools/site/trim_fonts.js` (run by the
+post-build step) drops Caligraphic, Fraktur, SansSerif, Script and Typewriter from the
+built `FontManifest.json`, because Flutter web downloads every manifest font at startup:
+9 requests and 140 KB gzipped. The editor and `content_lint.js` warn on `\mathcal`,
+`\mathfrak`, `\mathscr`, `\mathsf`, `\textsf`, `\texttt` and `\mathtt`, which would
+fall back to the main font. If content needs one of these, drop it from the trim list.
+
+**The WAEC exam** (`waec_exam_screen.dart`) has:
+- keyboard control: A–E answer, ←/→ move, F flags, Enter submits from the summary;
+- flag-for-review, and a pre-submit summary of answered, unanswered and flagged;
+- a 48 dp question strip that speaks each number's state.
+
+It is **kept on the device** while it runs (`SavedExam`, shared_preferences, questions
+included). Setup offers "Resume", restoring answers, flags, place and the clock. It is
+never kept in Firestore, which would mean a write per tap on Spark. Submit or exit clears
+it, and it goes stale after a day.
+
+Setup defaults to the **"Full paper" preset** from `lib/core/exam/exam_formats.dart`. Those
+formats are **unconfirmed** (`verified: false`, and the screen says so) until the owner
+checks them against current WASSCE papers.
+
+**Plan, goal and challenges** (Wave G):
+- **Pure models.** `lib/core/plan/` holds:
+  - `weekly_goal.dart`: weeks run Monday to Sunday in Lagos, whatever the device zone,
+    and `weeklyAttemptsCountProvider` counts the same week. No run of weeks is kept, so
+    streaks stay gone.
+  - `study_plan.dart`: topic weights are each topic's share of the real past questions
+    (`pastQuestionCount`), uniform where there are none, and the UI says which. It also
+    gives the shortest path (weight × what is left) and a **grade estimate from
+    practice**.
+- **The grade estimate.** It is a range until 50 drill answers in the subject, hidden
+  below 20, and always shown beside `kGradeEstimateNote`. It reads `progress` for display
+  only, which is allowed because it is private and nothing competitive uses it.
+- **Screens.** `/plan`, Home's "This week" card and the course page's plan panel cost no
+  reads of their own: the outlines and progress are already loaded.
+- **Challenge links.** `/c/:id` (`ChallengeLinkScreen`) records a friend's answers as
+  `source: 'challenge_link'`, which **never** reaches `progress`
+  (`challenge_link_test.dart` asserts it).
+- **The taster.** `/try` gives five instant-feedback questions from a subject's
+  most-examined topic, straight from the welcome screen, and records nothing.
+- **`QuestionRunner`** (`lib/core/widgets/question_runner.dart`) is the shared
+  instant-feedback runner for both.
+
+**Live quiz rooms** (`lib/core/rooms/`, `features/rooms/`):
+- **Routes.** `/join`, `/rooms/new`, `/rooms/:code/host` (the projector) and
+  `/rooms/:code` (a phone).
+- **Scoring** is the pure model `room.dart`: one point per right answer, no speed bonus.
+  The host's client totals the score at the podium.
+- **Reads.** A player listens to the room and nothing else, so a 30-player game is about
+  2,600 reads. The figures are in `docs/audit/QUOTA.md`.
+- **Never** `attempts` or `progress`.
+- **The answer rule** reads the room with `get()`. An answer is accepted only when the
+  room's `state` is `question` at that index, once, from a joined player. The emulator
+  suite walks through a whole game.
+
+**Content structure** (Wave I):
+- **Examiner insights.** Shown as "What examiners saw" under a worked answer in drill
+  and exam review, and as "Where students lose marks" on a topic page. They are always
+  in Paragon's own words, with a citation. The studio editor (`/admin/insight/:id`)
+  refuses to publish text with 20 or more consecutive words shared with the pasted
+  report (`longestSharedRun`). Flags are refreshed nightly, so a newly published insight
+  appears the next day.
+- **Bylines.** Lessons show "By Name · credential" only when `contributors/{uid}`
+  exists.
+- **Theory.** Self-marked against the scheme; nothing is stored.
+- **Exam results** sit beside the practice grade estimate (`PracticeComparison`).
+- **Importing questions.** `tools/admin/import_questions.js` validates (4–5 distinct
+  options, one right answer, maths that parses, a year on past questions, no duplicate
+  stems) before it writes. It is the import path, because question stems are
+  Admin-SDK-only.
+
+**Trust and support** (Wave J):
+- **Support.** `/support` is readable signed out, like `/about`. Its donate button is
+  hidden while `donateUrl` (`lib/core/config/support_config.dart`) is null.
+- **About.** It thanks the names in `kAcknowledgements` and explains the provenance
+  labels.
+- **The privacy policy** has a "legal basis" section. It is still a draft for a
+  lawyer's review.
+- **The terms** are at `kLegalVersion` `2026-10-15`, so every account re-accepts once.
+- **Taglines.** `docs/COPY.md` holds five options for the owner to choose from.
+
+**Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
+once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
+Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
+rewrite. These pages are the only part of Paragon a search engine can read. Only past
+questions are published (`source == 'waec'`, `hasAnswer`, a real `correctIndex`), never
+generated practice. Titles carry no question number, because Paragon doesn't have the
+paper's own numbering. The first run reads about 4,500 documents; the result is cached in
+`tools/site/.cache/`, and only `--refresh` reads again. Maths is rendered server-side by
+KaTeX (`render.js` mirrors `FullLatexView`'s dialect; change both together).
 
 **After adding or removing any plugin, run `flutter clean` before the next release
 build.** The release build reuses a cached `web_plugin_registrant.dart` under
@@ -42,6 +138,8 @@ node 9_seed_resources.js --subject=<id>   # Learn articles/videos/exercises (dry
 node 10_fetch_question_images.js --all    # diagrams for scraped past questions (dry run without --commit)
 node reclassify.js                        # propose topic reassignments (dispatch-only in CI)
 node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
+node ../admin/content_lint.js             # published Learn items with placeholder titles or broken maths
+node ../admin/check_counts.js             # subject counts == sum of topic counts
 ```
 
 The original chain — `1_scrape`, `2_classify`, `fix_misclassified`, `3_seed` — is retired
@@ -113,9 +211,23 @@ student is using.
 **After changing `firestore.rules`, deploy then run `node tools/admin/verify_rules.js`.**
 It exercises the whole file against the live project as a real client (anonymous ID
 token, Firestore REST, no Admin SDK — that bypasses rules and would pass regardless).
-137 checks. The denials are the content: a write that succeeds only proves something
+149 checks. The denials are the content: a write that succeeds only proves something
 allowed it. The emulator would be the usual answer but needs Java, which this machine
-does not have.
+does not have. **CI does**: `.github/workflows/ci.yml` runs `tools/rules-test/rules.test.js`
+on the emulator for every pull request (`npm test` there; seeded fixtures, about 30 allow
+and deny cases). Add a case there and a check to `verify_rules.js` with every rules
+change.
+
+**CI** (`.github/workflows/ci.yml`, every pull request and push to main) runs these jobs:
+- `app`: `flutter analyze`, `flutter test`, the release build with the plugin-registrant
+  check, and the post-build step;
+- `node`: the scripts' own tests;
+- `rules`: the emulator tests above;
+- `content`: `content_lint.js` and `check_counts.js` against production, read-only;
+- `preview`: a 7-day Hosting preview channel commented on the PR. It needs the service
+  account to hold Firebase Hosting Admin; until then it fails without blocking.
+
+Live deploys stay manual, by the owner.
 
 `project/firestore.rules` and `project/firestore.indexes.json` are both tracked in the repo, and `firebase.json`'s `firestore` block points at each — `firebase deploy --only firestore:rules` and `firebase deploy --only firestore:indexes` deploy these files directly, as `.cursorrules` describes.
 
@@ -144,9 +256,15 @@ a topic's test when it drew at least 4 of that topic's questions and 80% were
 right; it writes `passed` with `passedVia: 'unit_test'` and no `attempts`
 increment. The course challenge never unlocks. Both record `source: 'challenge'`
 and add to `progress` only for topics open once marked
-(`challenge_screen_test.dart` has the control). Guests get no drill at all, and
-are refused before proficiency is considered, since a guest's pass dies
-with the session. Learn content is never gated.
+(`challenge_screen_test.dart` has the control). Learn content is never gated.
+
+**Guests** are decided by one table, `canUse(Feature, isGuest:)` in
+`lib/core/auth/feature_access.dart` (PLAN.md P1.4.4, adopted 2026-10-14).
+Every guest gate asks it — `drillAccessFor`, `GuestLimits.locks`, the
+challenge screen; never add an inline `isGuest` gate. Guests drill (behind
+the same topic test, stored under their anonymous uid), take unit tests
+and sit untimed WAEC Prep in every subject; timed exams and a future study
+plan ask for an account. The words guests see live in `guest_limits.dart`.
 
 **The gate is client-enforced and cannot be otherwise**: rules see one
 document write, not the ten answers behind it. That is a bounded,
@@ -271,9 +389,10 @@ Things that were measured in a browser, not assumed — keep them true:
 
 Android: `flutter build apk --debug` works (the first build installs the NDK
 and takes ~45 min); an emulator AVD, `Test-_-`, exists in the SDK. The app
-always opens at `/welcome`, and the router deliberately lets guests stay
-there, so a returning Android guest sees the welcome screen rather than
-their dashboard — a known, unfixed product question, not a lost session.
+always opens at `/welcome` (`initialLocation`, also the bare web root). The
+first redirect that knows the auth state sends a returning guest from
+welcome to `/`; after that a guest may visit welcome freely
+(`guest_landing_test.dart`).
 
 A claim change reaches a signed-in session only after a token refresh
 (up to an hour) or a fresh sign-in.
@@ -306,7 +425,7 @@ Written once per drill *session*, not per question, so a 20-question drill still
 the 20 attempt writes it always did. WAEC exams deliberately do not feed it: the modes
 must not merge, and one exam would fan across up to 40 topics' worth of writes.
 
-**Analytics.** `analytics_provider.dart` defines the events; `analytics_binding.dart`
+**Analytics.** `analytics_provider.dart` defines the events (including the first-visit funnel: `guest_start`, `signup_start`/`signup_complete{method}`, `topic_open`, `drill_start`, `exam_start{preset}`, `waitlist_join`; the welcome view is the `/welcome` screen view); `analytics_binding.dart`
 wires the two app-wide ones (screen views, `is_guest`) and is watched by `app.dart` for
 its side effects. Screen names are **route patterns** (`/subject/:subjectId/...`), never
 concrete URLs — no document ids in screen names, and no thousand-row reports. `Analytics`
@@ -358,7 +477,9 @@ the phone's way in. Nothing about searches is stored or logged.
 
 **Routing.** `lib/core/router/app_router.dart` is the live router: `appRouterProvider` builds the `GoRouter`, and a private `_RouterNotifier` listening to `authStateProvider` drives `refreshListenable`. The redirect gates every route except `/signin` behind auth, and returns `null` while auth is loading. Do not duplicate redirect logic elsewhere.
 
-`app_router.dart` is the only file in `lib/core/router/`. The top nav that used to
+**Real URLs.** Since 2026-10-14 the app uses path URLs (`usePathUrlStrategy()` in `main.dart`), and `GoRouter.optionURLReflectsImperativeAPIs = true` makes `context.push` update the address bar, so every screen's URL can be copied and shared. An inline script in `web/index.html` rewrites old `/#/…` links before Flutter starts; `firebase.json`'s SPA rewrite serves deep paths. A signed-out visitor bounced to welcome carries the target as `/welcome?next=…` (`return_to.dart`: `safeNextPath` allows in-app paths only — no open redirect), and signing in, finishing onboarding or "Browse as guest" goes there instead of `/`. `ShareLinkButton` shares a page (Web Share API on phones, else copy). `lib/core/web/browser.dart` holds the few browser APIs used (`setLeaveGuard` — "Leave site?" while a WAEC exam or a topic test with answers is open — `shareLink`, `appOrigin`), with no-op stand-ins off the web.
+
+`app_router.dart` and `return_to.dart` are the only files in `lib/core/router/`. The top nav that used to
 live in `app_top_nav.dart` is now the shell's `TopBar`; that file is `page_layout.dart`. The old route-tree sketches
 (`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
 older doc mentions them, it is out of date.
@@ -441,13 +562,22 @@ cards**:
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
+**Maths is spoken.** Any line with maths, in either renderer, is one semantics node
+labelled by `speakText` (`lib/core/a11y/speech_text.dart`, the read-aloud converter), via
+`mathSemantics()`. `flutter_math_fork` exposes nothing, so before this a screen reader
+heard "If F = " then "C + 32". When you add `excludeSemantics` to a tappable thing, give
+the `Semantics` its own `onTap`, or the action disappears with the children
+(`exam_ux_test.dart` caught exactly that on the exam options).
+
 **`web/index.html` must not load MathJax.** Maths is drawn on the canvas by
 `flutter_math_fork`; a MathJax `<script>` sat in the page head until 2026-09-25,
 1.2 MB of render-blocking download that nothing used. The page now carries only
 an inline-CSS loading splash, removed on Flutter's `flutter-first-frame` event.
-The icons, `favicon.png` and `og-image.png` are generated from
-`assets/images/paragon_logo.png` by `dart run tool/make_icons.dart`; re-run it if the
-logo changes. The logo itself is drawn only by `ParagonLogo`
+The icons, `favicon.png`, `og-image.jpg` and the app's own `assets/images/paragon_logo*.png`
+(128 px tall, 2x their largest drawn size) are generated from the full-size sources in
+`tool/logo_source/` by `dart run tool/make_icons.dart`; re-run it if the logo changes,
+and never put a full-size image in `assets/` (the 149 KB logo was the largest thing on
+the first screen after the engine). The logo itself is drawn only by `ParagonLogo`
 (`lib/core/widgets/paragon_logo.dart`), which picks `paragon_logo.png` (white letters) on
 dark and `paragon_logo_light.png` (black letters) on light — the white wordmark vanishes on
 the light background. Change both files together. `og:image` is an absolute URL, as link-preview crawlers require.
@@ -456,11 +586,11 @@ Until 2026-09-25 `FullLatexView` returned the **raw source** for any line with n
 
 `\emph` is **not** supported (use `\textit`), and a lone `$` is a literal dollar sign, **not** an inline-math delimiter. Inline math is `\(...\)` — the format the scrapers and all 216 generator modules emit. `$...$` was removed because every `$` in the corpus is currency and none is math, and treating it as a delimiter parsed the text between two prices as an expression. See `docs/LATEX_RENDERING.md`, which is now accurate.
 
-**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` exactly in dark. **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
+**Theme.** `AppColors` is the only place a colour is *defined* — no raw `Color()` literals in widgets; `AppColors.forSubject(name)` maps subject names to their card colors. Colours that differ between themes are read from **`context.palette`** (`AppPalette`, a `ThemeExtension` in `lib/core/theme/app_palette.dart`): background, surface, border, track, text primary/secondary, and `textStrong`/`onHigh`/`onMedium`/`onLow`/`outline`/`outlineFaint`, which reproduce the old `Colors.white`/`white70`…`white12` in dark — except `onLow`, raised from `white38`/`black38` to 50% white / 56% black so small text passes WCAG AA (4.5:1). **Never use `AppColors.*Dark` or translucent white in a widget** — it will be wrong in light. White stays correct only on a solid brand colour (a button label on orange). Dark is the default; students choose Dark / Light / Match device in Settings → Reading and display (`appearanceProvider`). **`kAppearanceChoiceEnabled` is `true`** since 2026-10-03, after an audit left no dark-only colour in any widget; turning it off hides the choice and forces dark. Where there is no `BuildContext` (a canvas outline, a fallback swatch) use `AppColors.neutral`, a mid grey that reads on both. The logo has a light version too (see `ParagonLogo`).
 
 ## Firestore conventions
 
-Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
+Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, `unitId`, `questionCount`, `order`), `topics/{id}/resources/{id}` (Learn content — the only subcollection in the app), `questions`, `users/{uid}`, `attempts`, `flags`, `usernames/{key}`, `progress/{uid}`, `learn/{uid}`, `notes`, `study/{uid}`, `lessonAssets`, `subjectIndex/{subjectId}`, `staffInvites/{email}` (Team page requests; admin-only), `examResults/{id}` (one per finished WAEC exam: its items and score, for `/waec/review/:examId` and the subject's history; owner-only, never updated), `accountRequests/{uid}` ("sign out everywhere", applied by `apply_account_requests.js` in the 15-minute workflow), `staffProfiles/{uid}` (a team member's name and avatar for the studio; team-readable), `plan/{uid}` (weekly goal from `kWeeklyGoals` and exam date only; accounts only, owner-only), `insights/{id}` (examiner insights: per question by its id, per topic as `topic_<topicId>`; writers draft, reviewers publish, students *get* published ones only when `questions.hasInsight` / `topics.hasExaminerThemes` say one exists — stamped by `jobs.js --job=insights`), `contributors/{uid}` (public bylines `{displayName, role, credential}`; Admin-SDK-only via `tools/admin/set_contributor.js`, after consent and a credential check), `theoryQuestions/{id}` (Paper 2, Admin-SDK-written, published-only for students, hidden until a subject has `kTheoryMinQuestions` = 20; `subjects.theoryCount` from the counts job), `rooms/{code}` (live quiz: host-written `{hostUid, subjectId, topicId, topicName, questionIds ≤20, state, index, createdAt, results}`, plus `players/{uid}` nicknames and `answers/{uid_index}` accepted only while that question is live; guests join, accounts host; a day long, then `jobs.js --job=rooms`), `challenges/{id}` ("Challenge a friend": `{userId, name, subjectId, topicId, topicName, questionIds ≤10, score, total, createdAt}`; written once, *get* by anyone signed in, *list* and delete by the creator; deleted after 30 days by `jobs.js --job=challenges`), `waitlist/{uid}` ("Notify me" on a coming-soon subject: `{userId, subjects: [catalog slug], updatedAt}`; accounts only, owner-written, reviewer-readable so the studio can `count()` per subject), `feedback/{id}` ("Send feedback" from Settings/About: `{userId, kind, message, screen, createdAt}`, guests allowed, same access shape as `flags`, triaged in the studio), `metrics/{day}` (daily aggregate counts from `jobs.js --job=metrics`, Lagos day; admins read them in the studio's Traction panel; no uid or name), `_meta/notify` (the digest's cursors, `flagsNotifiedThrough` and `feedbackNotifiedThrough`; Admin-SDK-only), `_meta/usage` (daily Firestore read/write counts from `tools/admin/usage.js`; the only `_meta` document a client may read, and only a reviewer).
 
 - `flags` are `{questionId, userId, reason, createdAt}` — or, for a lesson report, `{resourceId, topicId, …}` with no `questionId` — plus, once reviewed, `status` (`open | fixed | dismissed`), `resolvedAt`, `resolvedBy`. **A missing `status` means open**: reports from before review existed, or from a cached build, carry none, and nothing backfills them. A student may file one only without a status or as `open`; only a reviewer may change those three fields, and nothing else on a report is ever rewritten.
 - `questions` take exactly one client write: a reviewer resolving a report may change `correctIndex` (bounded by the option count), `previousCorrectIndex`, `hasAnswer`, `reviewedAt` and `reviewedBy`. Stem, options and topic stay Admin-SDK-only. `verify_rules.js` asserts a student can do none of it.
@@ -474,10 +604,12 @@ Collections: `subjects`, `units` (`subjectId`, `order`), `topics` (`subjectId`, 
 - `topics.lessonCount` is the number of published, openable Learn items, the denominator of "2 of 6 lessons" on the course index. **Zero means "not known"**, like `topicCount`. Written by the editor on every save and delete (`AdminResourceRepository.refreshLessonCount`), by `9_seed_resources.js`, and recomputed nightly by `jobs.js --job=counts`. It is the **only** topic field a client may update, and only a reviewer; `verify_rules.js` asserts a student cannot. "Openable" is `LearnResource.isAvailable`, mirrored in JS in `jobs.js` and the seeder, so change all three together.
 - **Resources the editor created or edited carry `createdBy` or `editedInApp`, and `9_seed_resources.js` skips them** unless run with `--force`. The seeder writes each file as the whole truth, so without this, re-seeding would wipe a YouTube link added in the editor and republish a draft.
 - `subjects.topicCount` is the denominator for a subject-level progress ring. Written by the seeders, recomputed nightly by `tools/admin/jobs.js --job=counts`. **Zero means "not known", never "no topics"** — a subject seeded before the field existed reads zero until the job next runs, so callers must suppress the ring rather than draw an empty one.
-- `subjects.questionCount` counts the subject's `hasAnswer: true` questions, the ones a student can be served, and is shown on the welcome screen. Also written by `jobs.js --job=counts`, with the same "zero means not known, hide it" rule. It drifts when an admin retires a question, until the next nightly run.
+- **Question counts** are never one number that reads as "past questions". `jobs.js --job=counts` writes every topic's `questionCount` (`hasAnswer: true`), `pastQuestionCount` (`source == 'waec'`) and `practiceQuestionCount` (`origin == 'ai_generated'`) with `count()` aggregates, and each **subject's** three fields as the **sum of its topics'** — so the welcome ticker and the course page cannot disagree again (they did: 14,602 vs 14,616). Every surface shows `QuestionCounts.label` ("51 past · 300 practice"); both split fields zero means "not split yet", and the old single total is shown. `tools/admin/check_counts.js` asserts subject == sum of topics. Counts drift when an admin retires a question, until the next nightly run.
+- **Provenance.** `Question.origin` is read in the app; `provenanceLabel` gives "WAEC 2018" for a past question and "Paragon practice" for a generated one (origin wins over `source`), shown by `QuestionSourceBadge` wherever a question is. A WAEC subject with no past questions shows "No past questions yet" and does not open.
+- **Placeholders.** `checkPublishable` (`lesson_check.dart`) refuses to publish a placeholder title (`test2`, `test_article`, `Sample`…), an empty article or a linkless video; a reviewer can override with a reason kept as a comment. `tools/admin/content_lint.js` applies the same rules to what is live, read-only, exiting non-zero — keep the two regexes in step.
 - `progress/{uid}` is one document per student: `{userId, updatedAt, topics: {<topicId>: {answered, correct, subjectId}}}`. Owner-only in both directions, closed top-level field set, `updatedAt` pinned to the `serverTimestamp()` sentinel. The `subjectId` stamp is what lets the dashboard group by subject without loading any course outlines.
 - `learn/{uid}` holds topic-test results **and lesson completion**: `{userId, updatedAt, topics: {<topicId>: {passed, bestScore, attempts, subjectId, lastAttemptAt, completed: {<resourceId>: true}, lastCompletedId, lastCompletedAt}}}`. The rules pin only the top-level field set, so the nested completion fields need no rules change; each parser ignores the other's keys, and a completion-only entry reads as "no test taken" (pinned by `lesson_progress_test.dart`). **Deliberately not merged into `progress/{uid}`** — that document is described everywhere as a cache recomputable from `attempts`, and a test pass is not recomputable (nothing records which ten answers were one sitting). One document, not a subcollection: drawing padlocks on a forty-row topic list must cost one read, not forty.
-- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
+- `attempts.source` is now one of `drill | waec | test | exercise | review | challenge | challenge_link` (`review` is practice from the mistakes notebook; `challenge` a unit test or course challenge). Drill and WAEC queries filter on it; **only drill feeds the mastery counters** — test and exercise answers must never call `ProgressRepository.addSession`, because mastery at proficient opens drill on its own (`drillAccessFor` has no date check; the "grandfathering" is permanent), so either would be a way around the topic test. `exercise_pane_test.dart` asserts nothing reaches `progress`. Review answers follow the same rule (`mistakes_notebook_test.dart`). **Hints** (`lib/core/learn/hints.dart`) are the explanation's steps minus the last, offered in drill and exercises and never in the topic test or WAEC exam; an attempt records `hintsUsed` when non-zero, and a right answer after a hint never counts toward mastery or an exercise score (`drill_hints_test.dart`). The notebook itself stores nothing: a question is in it while its latest attempt, among the student's last 200, was wrong (`lib/core/progress/mistakes.dart`), read with the `userId ASC, timestamp DESC` index. Exercises, like the topic test, draw from the topic's whole bank including WAEC-sourced questions; the "filter by source" rule above is about drill providers.
 - **Anything keyed by uid must be added to `AccountRepository.deleteOwnedDocuments`** — and to `_ownedById`/`_ownedByQuery` (the export) and `OWNED` in `tools/admin/jobs.js` (guest cleanup, scheduled deletions, orphans). `export_test.dart` checks export and deletion cover the same set. Forgetting leaves a student who asked to be deleted, and mostly was.
 - **The account system** (`lib/features/account/`, `lib/features/profile/`). `users/{uid}` also carries `avatar` (`preset:<id>` or `initials:<colour>`), `bio` (≤160, private), `usernameChangedAt`, `deletionRequestedAt`, `legalVersion`/`legalAcceptedAt` and `prefs`; every one is allow-listed and shape-checked in `clientFieldsAreValid()`, and every timestamp must be the server's clock.
   - **Profiles are private.** `/me` and the bio are seen only by their owner; nothing social reads `users/{uid}`. A future public profile must be a separate opt-in document.
@@ -528,7 +660,7 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   They now live in `paragon_plans/archive/`, kept as history only; see the README there.
 - `paragon_plans/router_sketch_deferred/*` is dead. Never wire it in, never cite it as evidence.
 - Formatting commits never mix with logic commits.
-- The suite is 924 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
+- The suite is 1024 tests, not the 2 this file once claimed. `test/generated_latex_test.dart`
   is the one with real reach: it parses every LaTeX expression in the generated corpus
   through the actual flutter_math_fork parser and renders a sample through FullLatexView.
   It carries a deliberate control case, so if you change it, keep that — without it the
@@ -541,10 +673,15 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
   competitive reads it, that read is the bug.
 - Onboarding must not ask for data nothing uses. `selectedSubjects` sat unread for
   everything except one sort order until the dashboard started using it. The optional
-  `profile` map (school, class, age, gender, country, state) still has **no reader
-  anywhere in `lib/`** — collected, editable and deletable, but consumed by nothing.
-  The owner's standing decision is to keep collecting and decide later; it is data
-  about minors, so revisit it before any public launch rather than letting it settle.
+  `profile` map is **school and class only** since 2026-10-15 (owner's decision).
+  - **Purpose.** The privacy policy says they tell the team which schools and classes
+    use Paragon. Nothing in the app is gated on them.
+  - **Age, gender, country and state** are no longer asked. `ProfileFormController`
+    lists them as `retiredFields`, which an editor save deletes, and
+    `jobs.js --job=dropprofile`, a one-shot that is not in `all`, removes them from
+    every user.
+  - **The rules** still accept the old keys, so that a document holding them can be
+    written until the one-shot has run. Tighten the profile shape after it has.
 - If a screen tells a student they can change something later, there must be a route
   that lets them. `/settings/subjects`, `/settings/name` and `/settings/profile` all
   exist because onboarding had been promising them since it shipped.

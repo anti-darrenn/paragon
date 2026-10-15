@@ -1,11 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/content/subject_catalog.dart';
 import '../../../core/data/read_meter.dart';
 import '../../../core/models/firestore_parsing.dart';
 import '../../../core/providers/auth_provider.dart';
 import '../../../core/repositories/feedback_repository.dart';
+import '../../../core/repositories/learning_repository.dart';
+import '../../../core/repositories/waitlist_repository.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_palette.dart';
 import '../../../core/theme/app_theme.dart';
@@ -308,4 +312,160 @@ class FeedbackPanel extends ConsumerWidget {
     FeedbackKind.praise => Icons.favorite_border_rounded,
     FeedbackKind.other => Icons.chat_bubble_outline_rounded,
   };
+}
+
+// ─── Waitlist ───────────────────────────────────────────────────────
+
+/// How many students tapped "Notify me" on each coming-soon subject —
+/// what students are asking for next. One `count()` per planned subject.
+class WaitlistPanel extends ConsumerWidget {
+  const WaitlistPanel({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final live = {
+      for (final s in ref.watch(subjectsProvider).asData?.value ?? const [])
+        SubjectCatalog.slugify(s.name),
+    };
+    final planned = [
+      for (final c in SubjectCatalog.all)
+        if (!live.contains(c.slug)) c,
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Waiting for a subject',
+          style: AppTheme.heading3.copyWith(color: palette.textPrimary),
+        ),
+        const SizedBox(height: 12),
+        if (planned.isEmpty)
+          Text(
+            'Every catalog subject is live.',
+            style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+          )
+        else
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (final c in planned)
+                Chip(
+                  label: Text(
+                    '${c.name}: '
+                    '${ref.watch(waitlistCountProvider(c.slug)).asData?.value ?? '…'}',
+                  ),
+                ),
+            ],
+          ),
+      ],
+    );
+  }
+}
+
+// ─── Traction ───────────────────────────────────────────────────────
+
+/// The last fortnight of `metrics/{day}` (jobs.js --job=metrics): counts
+/// only, never a name. Admins only (the rules agree). "Copy" puts a plain
+/// table on the clipboard for a pitch deck or a funder's form.
+final _tractionProvider = FutureProvider.autoDispose<List<Map<String, dynamic>>>((
+  ref,
+) async {
+  final snap = await FirebaseFirestore.instance
+      .collection('metrics')
+      .orderBy(FieldPath.documentId, descending: true)
+      .limit(14)
+      .get()
+      .metered();
+  return [for (final d in snap.docs) d.data()];
+});
+
+const _tractionColumns = [
+  ('questionsAnswered', 'Answers'),
+  ('drillLearners', 'Drillers'),
+  ('newAccounts', 'Accounts'),
+  ('newGuests', 'Guests'),
+  ('examsSat', 'Exams'),
+  ('challengesMade', 'Challenges'),
+  ('roomsHosted', 'Rooms'),
+];
+
+/// The table as tab-separated text, newest day first.
+String tractionTable(List<Map<String, dynamic>> days) => [
+  ['Day', for (final c in _tractionColumns) c.$2].join('\t'),
+  for (final d in days)
+    [
+      asString(d['day']),
+      for (final c in _tractionColumns) '${d[c.$1] ?? ''}',
+    ].join('\t'),
+].join('\n');
+
+class TractionPanel extends ConsumerWidget {
+  const TractionPanel({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final palette = context.palette;
+    final async = ref.watch(_tractionProvider);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                'Traction',
+                style: AppTheme.heading3.copyWith(color: palette.textPrimary),
+              ),
+            ),
+            if (async.asData?.value case final days? when days.isNotEmpty)
+              TextButton.icon(
+                onPressed: () {
+                  Clipboard.setData(ClipboardData(text: tractionTable(days)));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Copied as a table')),
+                  );
+                },
+                icon: const Icon(Icons.copy_rounded, size: 18),
+                label: const Text('Copy for a pitch deck'),
+              ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        async.when(
+          loading: () => const LinearProgressIndicator(minHeight: 2),
+          error: (e, _) => Text(
+            "Couldn't load metrics.\n$e",
+            style: AppTheme.bodyMd.copyWith(color: AppColors.wrong),
+          ),
+          data: (days) => days.isEmpty
+              ? Text(
+                  'No metrics yet. The nightly job writes yesterday\'s.',
+                  style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+                )
+              : SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: DataTable(
+                    columns: [
+                      const DataColumn(label: Text('Day')),
+                      for (final c in _tractionColumns)
+                        DataColumn(label: Text(c.$2), numeric: true),
+                    ],
+                    rows: [
+                      for (final d in days)
+                        DataRow(
+                          cells: [
+                            DataCell(Text(asString(d['day']))),
+                            for (final c in _tractionColumns)
+                              DataCell(Text('${d[c.$1] ?? '—'}')),
+                          ],
+                        ),
+                    ],
+                  ),
+                ),
+        ),
+      ],
+    );
+  }
 }

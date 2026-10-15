@@ -66,3 +66,20 @@ _To fill in from the read meter on a production-data debug build._
 | Drill | | |
 | WAEC exam setup + 40-question exam | | |
 | Review / mistakes notebook | | |
+
+## Live quiz rooms (Wave H, 2026-10-15)
+
+A game with 30 players and 20 questions, worked out from the listeners each screen holds:
+
+| Who | Listens to | Reads |
+| --- | --- | ---: |
+| Host | the room (≈ 42 changes), players (30 joins), answers (600) | ≈ 670 |
+| Each player | the room only (≈ 42 changes), plus their own player and answer once after a reload | ≈ 45 × 30 ≈ 1,350 |
+| Everyone | the 20 questions, read once (keyed by the ids, not the room) | 31 × 20 ≈ 620 |
+| **Total** | | **≈ 2,600 reads** |
+
+The writes are about 650: 30 joins, 600 answers, and the host's transitions.
+
+So a classroom game costs about 5% of Spark's daily reads. Players never listen to each
+other or to the answers, or 30 phones would cost about 18,000 reads. Rooms never touch
+`attempts` or `progress`.

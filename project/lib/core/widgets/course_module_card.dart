@@ -260,8 +260,10 @@ class _TitleRegion extends StatelessWidget {
           Text(
             module.isPlaceholder
                 ? '$topicCount ${topicCount == 1 ? 'topic' : 'topics'} planned'
-                : '$topicCount ${topicCount == 1 ? 'topic' : 'topics'} · '
-                      '${module.questionCount} questions',
+                : [
+                    '$topicCount ${topicCount == 1 ? 'topic' : 'topics'}',
+                    if (module.counts.label.isNotEmpty) module.counts.label,
+                  ].join(' · '),
             style: AppTheme.bodyMd.copyWith(
               color: context.palette.textSecondary,
             ),
@@ -474,7 +476,7 @@ class _TopicLinkState extends State<TopicLink> {
                     // have got matters more to them than how much material
                     // is left in it.
                     ? widget.level.label
-                    : '${widget.topic.questionCount} questions',
+                    : widget.topic.counts.label,
                 style: AppTheme.caption.copyWith(
                   color: widget.level.isStarted
                       ? widget.accent

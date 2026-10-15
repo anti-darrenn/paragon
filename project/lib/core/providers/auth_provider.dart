@@ -5,6 +5,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../data/read_meter.dart';
 import '../repositories/user_repository.dart';
 import '../auth/staff_role.dart';
+import 'analytics_provider.dart';
+import '../plan/weekly_goal.dart';
 
 /// The signed-in user, re-emitted on sign-in, sign-out **and when the
 /// account itself changes** — a guest linking Google or a password, an
@@ -48,11 +50,16 @@ String _accountKey(User? user) {
 /// loading/error UI around it. Rethrows FirebaseAuthException/other
 /// errors for the caller to present.
 Future<User?> signInWithGoogle(WidgetRef ref) async {
+  final analytics = ref.read(analyticsProvider);
+  analytics.signupStart(method: 'google');
   final provider = GoogleAuthProvider();
   final userCredential = await FirebaseAuth.instance.signInWithPopup(provider);
   final user = userCredential.user;
   if (user != null) {
     await ref.read(userRepositoryProvider).createUserIfNew(user);
+    if (userCredential.additionalUserInfo?.isNewUser ?? false) {
+      analytics.signupComplete(method: 'google');
+    }
   }
   return user;
 }
@@ -145,12 +152,9 @@ final weeklyAttemptsCountProvider = FutureProvider<int>((ref) async {
   final user = ref.watch(authStateProvider).asData?.value;
   if (user == null) return 0;
 
-  final now = DateTime.now();
-  final weekStart = DateTime(
-    now.year,
-    now.month,
-    now.day,
-  ).subtract(Duration(days: now.weekday - 1));
+  // Monday 00:00 Lagos, whatever the device's clock zone: the same week
+  // the weekly goal counts (`weekly_goal.dart`).
+  final weekStart = weekStartLagos(DateTime.now());
 
   final aggregate = await FirebaseFirestore.instance
       .collection('attempts')

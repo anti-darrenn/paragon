@@ -171,6 +171,12 @@ class _TopicPlannerScreenState extends ConsumerState<TopicPlannerScreen> {
         title: Text(topic?.name ?? 'Topic', overflow: TextOverflow.ellipsis),
         actions: [
           TextButton.icon(
+            onPressed: () =>
+                context.push('/admin/insight/topic_${widget.topicId}'),
+            icon: const Icon(Icons.fact_check_outlined, size: 18),
+            label: const Text('Where students lose marks'),
+          ),
+          TextButton.icon(
             onPressed: () {
               final items = itemsAsync.asData?.value;
               if (items == null) return;

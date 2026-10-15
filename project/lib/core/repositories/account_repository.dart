@@ -104,6 +104,10 @@ class AccountRepository {
       _db.collection('attempts').where('userId', isEqualTo: uid),
     );
     await _deleteQuery(_db.collection('flags').where('userId', isEqualTo: uid));
+    // "Challenge a friend" links this student made.
+    await _deleteQuery(
+      _db.collection('challenges').where('userId', isEqualTo: uid),
+    );
     // "Send feedback" messages.
     await _deleteQuery(
       _db.collection('feedback').where('userId', isEqualTo: uid),
@@ -129,6 +133,10 @@ class AccountRepository {
     // A content-team member's name and avatar for the studio. A student
     // has none; deleting a document that is not there is a no-op.
     await _db.collection('staffProfiles').doc(uid).delete();
+    // "Notify me" sign-ups for coming-soon subjects.
+    await _db.collection('waitlist').doc(uid).delete();
+    // Weekly goal and exam date.
+    await _db.collection('plan').doc(uid).delete();
     await _db.collection('users').doc(uid).delete();
   }
 
@@ -170,6 +178,7 @@ class AccountRepository {
     'flags',
     'feedback',
     'examResults',
+    'challenges',
   ];
   static const _ownedById = [
     'users',
@@ -178,6 +187,8 @@ class AccountRepository {
     'study',
     'accountRequests',
     'staffProfiles',
+    'waitlist',
+    'plan',
   ];
 
   /// How many documents an export of [uid] would read, from `count()`

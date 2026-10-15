@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:paragon/core/legal/legal_documents.dart';
 import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
+import 'package:paragon/core/router/return_to.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/features/account/deleting_screen.dart';
@@ -23,6 +24,7 @@ import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
+import 'package:paragon/features/plan/plan_screen.dart';
 import 'package:paragon/features/profile_settings_screen.dart';
 import 'package:paragon/features/profile/edit_profile_screen.dart';
 import 'package:paragon/features/profile/me_screen.dart';
@@ -54,6 +56,15 @@ import 'package:paragon/features/welcome_screen.dart';
 import 'package:paragon/features/review/review_screen.dart';
 import 'package:paragon/features/search/search_screen.dart';
 import 'package:paragon/core/widgets/nav/app_shell.dart';
+import 'package:paragon/features/challenge_link/challenge_link_screen.dart';
+import 'package:paragon/features/taster/taster_screen.dart';
+import 'package:paragon/features/rooms/join_room_screen.dart';
+import 'package:paragon/features/rooms/new_room_screen.dart';
+import 'package:paragon/features/rooms/host_room_screen.dart';
+import 'package:paragon/features/rooms/player_room_screen.dart';
+import 'package:paragon/features/admin/studio/insight_editor_screen.dart';
+import 'package:paragon/features/theory/theory_screen.dart';
+import 'package:paragon/features/support_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -91,6 +102,25 @@ final appRouterProvider = Provider<GoRouter>((ref) {
   final notifier = _RouterNotifier(ref);
   ref.onDispose(notifier.dispose);
 
+  // False until the first redirect that knows the auth state. The app
+  // opens at /welcome (the bare site root, and every Android launch, land
+  // on initialLocation), and a returning *guest* used to stay there: the
+  // guest branch below deliberately lets guests visit welcome, so it could
+  // not tell "opened the app" from "chose to look at welcome". The cold
+  // start is the one moment that difference is known.
+  var settled = false;
+
+  // The page a signed-out visitor was heading for, kept across the hop
+  // from /welcome to /signin (and through onboarding) so that signing in
+  // lands them there instead of on the dashboard. Also read from
+  // `/welcome?next=` so a reload of welcome keeps it. See return_to.dart.
+  String? pendingNext;
+  String takeNext() {
+    final next = pendingNext;
+    pendingNext = null;
+    return next ?? '/';
+  }
+
   return GoRouter(
     initialLocation: '/welcome',
     refreshListenable: notifier,
@@ -107,6 +137,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
 
       final user = authAsync.asData?.value;
       final isSignedIn = user != null;
+      final coldStart = !settled;
+      settled = true;
       // A guest (anonymous auth) counts as signed in for every protected
       // route, but — unlike a real account — is still allowed to visit
       // welcome and signin. Upgrading from `/account/upgrade` links the
@@ -123,12 +155,31 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isOnLegal =
           state.matchedLocation == '/privacy' ||
           state.matchedLocation == '/terms' ||
-          state.matchedLocation == '/about';
+          state.matchedLocation == '/about' ||
+          state.matchedLocation == '/support';
 
       // Not signed in and trying to reach any route other than welcome/sign-in
       // → send to the welcome (landing) screen
+      if (isOnWelcome) {
+        pendingNext =
+            safeNextPath(state.uri.queryParameters[kNextParam]) ?? pendingNext;
+      }
       if (!isSignedIn && !isOnSignIn && !isOnWelcome && !isOnLegal) {
-        return '/welcome';
+        pendingNext = safeNextPath(state.uri.toString()) ?? pendingNext;
+        return welcomeWith(state.uri);
+      }
+
+      // Arriving anywhere ordinary, signed in, means the trip is over: a
+      // stale target must not hijack a later sign-in from somewhere else.
+      if (isSignedIn &&
+          !isOnSignIn &&
+          !isOnWelcome &&
+          !isOnUpgrade &&
+          !isOnLegal &&
+          !OnboardingStep.isOnboardingPath(state.matchedLocation) &&
+          state.matchedLocation != '/legal/accept' &&
+          state.matchedLocation != '/account/deleting') {
+        pendingNext = null;
       }
 
       // Legal pages are readable in every auth state, including part-way
@@ -154,6 +205,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // complete, and the funnel would be a wall in front of "Browse as
       // Guest". Everything below this line concerns real accounts only.
       if (!isReallySignedIn) {
+        // A returning guest opening the app goes home, like an account
+        // does; welcome stays reachable to a guest who navigates to it.
+        if (isSignedIn && coldStart && isOnWelcome) return takeNext();
         // ...and they cannot reach the funnel by deep link either, which
         // would otherwise let a guest write a username onto an anonymous
         // uid — a reservation nobody can ever claim or release, since the
@@ -200,7 +254,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // not be ejected from step 4 the instant they arrive on it.
       if (isOnOnboarding) {
         if (state.matchedLocation == OnboardingStep.profile.path) return null;
-        return '/';
+        return takeNext();
       }
 
       // ── Terms gate ─────────────────────────────────────────────────
@@ -217,7 +271,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // home, which is the dashboard. This covers the sign-in hop; a
       // returning user is covered by '/' itself being the dashboard, since
       // on web the browser URL — not initialLocation — picks the route.
-      if (isOnSignIn || isOnWelcome || isOnUpgrade) return '/';
+      if (isOnSignIn || isOnWelcome || isOnUpgrade) return takeNext();
 
       // All other cases: let navigation proceed normally
       return null;
@@ -272,6 +326,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/',
                 builder: (context, state) => const DashboardScreen(),
+              ),
+              GoRoute(
+                path: '/plan',
+                builder: (context, state) => const PlanScreen(),
               ),
             ],
           ),
@@ -520,6 +578,50 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // Practising from the mistakes notebook. Takes its questions as
       // route `extra`; opened bare, it points back to the notebook.
+      // Live quiz rooms (`lib/core/rooms/room.dart`): full-window, like
+      // every focus session. /join and /rooms/:code are open to guests;
+      // the screens themselves send a guest who tries to host to sign up.
+      GoRoute(
+        path: '/join',
+        builder: (context, state) => const JoinRoomScreen(),
+      ),
+      GoRoute(
+        path: '/rooms/new',
+        builder: (context, state) => const NewRoomScreen(),
+      ),
+      GoRoute(
+        path: '/rooms/:code/host',
+        builder: (context, state) =>
+            HostRoomScreen(code: state.pathParameters['code']!),
+      ),
+      GoRoute(
+        path: '/rooms/:code',
+        builder: (context, state) =>
+            PlayerRoomScreen(code: state.pathParameters['code']!),
+      ),
+      // Paper 2 theory, self-marked; linked only once a subject has
+      // kTheoryMinQuestions published.
+      GoRoute(
+        path: '/waec/:subjectId/theory',
+        builder: (context, state) =>
+            TheoryScreen(subjectId: state.pathParameters['subjectId']!),
+      ),
+      GoRoute(
+        path: '/support',
+        builder: (context, state) => const SupportScreen(),
+      ),
+      // Five questions straight from the welcome screen.
+      GoRoute(
+        path: '/try',
+        builder: (context, state) => const TasterScreen(),
+      ),
+      // A friend's challenge (`challenge_link.dart`). Full-window, like
+      // every focus session; reached from a shared link.
+      GoRoute(
+        path: '/c/:id',
+        builder: (context, state) =>
+            ChallengeLinkScreen(id: state.pathParameters['id']!),
+      ),
       GoRoute(
         path: '/mistakes/practice',
         builder: (context, state) => MistakesPracticeScreen(
@@ -591,6 +693,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       // A flagged question and its reports. Also a deep link, from the
       // report digest email.
+      GoRoute(
+        path: '/admin/insight/:id',
+        builder: (context, state) =>
+            InsightEditorScreen(id: state.pathParameters['id']!),
+      ),
       GoRoute(
         path: '/admin/flag/:questionId',
         builder: (context, state) =>

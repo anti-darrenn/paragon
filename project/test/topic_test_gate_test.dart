@@ -164,18 +164,17 @@ void main() {
       expect(access(signedIn: false), DrillAccess.signedOut);
     });
 
-    test('a guest is blocked whatever else is true', () {
-      // The ordering that matters: a guest who has somehow passed the test,
-      // or who carries proficient mastery, is still blocked — and is told
-      // to get an account rather than to take a test they have passed.
-      expect(access(guest: true), DrillAccess.guestBlocked);
+    test('a guest takes the same gate as everyone', () {
+      // Since 2026-10-14 guests may drill (`canUse(Feature.drill)`): their
+      // tests and progress are stored under their anonymous uid.
+      expect(access(guest: true), DrillAccess.testRequired);
       expect(
         access(guest: true, passed: true, bestScore: 100),
-        DrillAccess.guestBlocked,
+        DrillAccess.allowed,
       );
       expect(
         access(guest: true, mastery: MasteryLevel.mastered),
-        DrillAccess.guestBlocked,
+        DrillAccess.allowed,
       );
     });
 
@@ -264,7 +263,13 @@ void main() {
           drillMastery: MasteryLevel.notStarted,
         ),
       };
-      expect(outcomes.length, 4, reason: 'every branch must be reachable');
+      // guestBlocked is unreachable while the policy table lets guests
+      // drill (`canUse(Feature.drill)`); the other three must all occur.
+      expect(outcomes, {
+        DrillAccess.signedOut,
+        DrillAccess.testRequired,
+        DrillAccess.allowed,
+      }, reason: 'every reachable branch must be reachable');
     });
 
     test('the default state of a new student is locked', () {

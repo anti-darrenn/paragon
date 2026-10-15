@@ -3,16 +3,22 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/progress/course_progress.dart';
+import '../core/auth/feature_access.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/ui/ui.dart';
+import '../core/widgets/share_link_button.dart';
 import '../core/widgets/course_module_card.dart';
 import '../core/widgets/mastery_indicator.dart';
 import 'study/cards/revision_cards_entry.dart';
+import 'waitlist/notify_me_button.dart';
 import '../core/theme/app_palette.dart';
+import '../core/repositories/plan_repository.dart';
+import 'plan/plan_widgets.dart';
 
 /// Course index for one subject — `/subject/:subjectKey/course`.
 ///
@@ -38,22 +44,30 @@ class CourseIndexScreen extends ConsumerWidget {
     // identically whether or not they have ever practised.
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
-    // Unit tests and challenges write unlocks and mastery to an account;
-    // a guest has no drill to unlock.
+    // Unit tests and challenges write unlocks and mastery to the
+    // student's uid — a guest's anonymous one included (`canUse`).
     final canChallenge =
-        ref.watch(currentUserProvider) != null && !ref.watch(isGuestProvider);
+        ref.watch(currentUserProvider) != null &&
+        canUse(Feature.challenges, isGuest: ref.watch(isGuestProvider));
 
     return ParagonPage(
       title: courseAsync.asData?.value.name ?? 'Course',
       fallbackPath: '/courses',
       child: courseAsync.when(
-        loading: () =>
-            const _CenteredMessage(child: CircularProgressIndicator()),
+        loading: () => const Padding(
+          padding: EdgeInsets.only(top: 40),
+          child: SkeletonPage(count: 4, cardHeight: 140),
+        ),
         error: (error, _) => _CourseError(error: error),
         data: (course) => _CourseBody(
           course: course,
           progress: progress,
           canChallenge: canChallenge,
+          canPlan: canUse(
+            Feature.studyPlan,
+            isGuest: ref.watch(isGuestProvider),
+          ),
+          examDate: ref.watch(planSettingsProvider).asData?.value.examDate,
         ),
       ),
     );
@@ -81,11 +95,15 @@ class _CourseBody extends StatelessWidget {
     required this.course,
     required this.progress,
     this.canChallenge = false,
+    this.canPlan = false,
+    this.examDate,
   });
 
   final Course course;
   final UserProgress progress;
   final bool canChallenge;
+  final bool canPlan;
+  final DateTime? examDate;
 
   @override
   Widget build(BuildContext context) {
@@ -123,6 +141,11 @@ class _CourseBody extends StatelessWidget {
               const SizedBox(width: 12),
               const _StatusPill(label: 'Coming soon', color: AppColors.warning),
             ],
+            const Spacer(),
+            ShareLinkButton(
+              title: '${course.name} on Paragon',
+              path: '/subject/${course.key}/course',
+            ),
           ],
         ),
 
@@ -151,9 +174,22 @@ class _CourseBody extends StatelessWidget {
           ),
         ],
 
+        // The grade estimate and shortest path, for an account with some
+        // practice here — read from what this page already loaded.
+        if (course.isLive && canPlan && course.hasProgressToShow) ...[
+          const SizedBox(height: 20),
+          CoursePlanPanel(
+            course: course,
+            progress: progress,
+            examDate: examDate,
+          ),
+        ],
+
         if (!course.isLive) ...[
           const SizedBox(height: 20),
           _PlannedNotice(subjectName: course.name),
+          const SizedBox(height: 12),
+          NotifyMeButton(slug: course.slug, subjectName: course.name),
         ],
 
         if (course.isLive && canChallenge) ...[
@@ -317,7 +353,7 @@ class _CourseMeta extends StatelessWidget {
       '${course.modules.length} '
           '${course.modules.length == 1 ? 'module' : 'modules'}',
       '${course.topicCount} ${course.topicCount == 1 ? 'topic' : 'topics'}',
-      if (course.isLive) '${course.questionCount} questions',
+      if (course.isLive && course.counts.label.isNotEmpty) course.counts.label,
     ];
 
     return Row(

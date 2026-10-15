@@ -478,3 +478,45 @@ class PageIntro extends StatelessWidget {
     );
   }
 }
+
+/// A page's shape while its content loads: an optional title bar, then
+/// [count] card-sized blocks. Used where a page used to show one spinner on
+/// an empty screen (the live-site review, PLAN.md P4.8), which reads as
+/// "broken" on a slow connection; this reads as "arriving".
+class SkeletonPage extends StatelessWidget {
+  const SkeletonPage({
+    super.key,
+    this.count = 4,
+    this.cardHeight = 88,
+    this.title = true,
+  });
+
+  final int count;
+  final double cardHeight;
+  final bool title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: 'Loading',
+      liveRegion: true,
+      child: ExcludeSemantics(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (title) ...[
+              const SkeletonBox(width: 220, height: 28, radius: 8),
+              const SizedBox(height: 12),
+              const SkeletonBox(width: 300, height: 14),
+              const SizedBox(height: 28),
+            ],
+            for (var i = 0; i < count; i++) ...[
+              SkeletonBox(height: cardHeight, radius: 12),
+              const SizedBox(height: 12),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}

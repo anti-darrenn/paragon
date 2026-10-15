@@ -217,8 +217,9 @@ void main() {
     testWidgets('a guest is told to get an account, not to take a test', (
       tester,
     ) async {
-      // Taking a test would be a dead end for a guest — the result dies
-      // with the session — so the guest branch must not offer it.
+      // Guests may drill today, but if the policy table (`canUse`) ever
+      // closes it to them, they must be offered an account rather than a
+      // test whose pass would open nothing.
       await pumpGated(tester, access: DrillAccess.guestBlocked);
 
       expect(find.text('Drill needs an account'), findsOneWidget);

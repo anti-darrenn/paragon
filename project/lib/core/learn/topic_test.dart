@@ -22,6 +22,7 @@
 /// value is ever put behind it, this needs a server.
 library;
 
+import '../auth/feature_access.dart';
 import '../progress/mastery.dart';
 
 /// One topic's test history.
@@ -155,11 +156,12 @@ enum DrillAccess {
 
 /// Decides whether this student may drill this topic.
 ///
-/// Order matters, and it is the order of the product rules rather than
-/// convenience: **guests are refused before proficiency is even
-/// considered**, because a guest who has somehow passed a test still
-/// cannot drill, and telling them "take the test" would be a dead end —
-/// their result lasts only as long as a guest session does.
+/// Guests take the same gate as everyone (`canUse(Feature.drill)` is
+/// true for them since 2026-10-14): their topic tests and drill progress
+/// are stored under their anonymous uid and carried over if they make an
+/// account. Should the policy table ever close drill to guests again,
+/// they are refused before proficiency is considered, so they are never
+/// sent to a test whose pass would not open anything.
 ///
 /// ## Grandfathering
 ///
@@ -184,7 +186,7 @@ DrillAccess drillAccessFor({
   required MasteryLevel drillMastery,
 }) {
   if (!isSignedIn) return DrillAccess.signedOut;
-  if (isGuest) return DrillAccess.guestBlocked;
+  if (!canUse(Feature.drill, isGuest: isGuest)) return DrillAccess.guestBlocked;
   if (testRecord.passed) return DrillAccess.allowed;
   if (drillMastery.isComplete) return DrillAccess.allowed;
   return DrillAccess.testRequired;

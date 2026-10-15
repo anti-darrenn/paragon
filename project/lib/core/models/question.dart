@@ -13,6 +13,16 @@ class Question {
   final String source;
   final int? year;
 
+  /// `ai_generated` on the procedurally generated corpus, empty on scraped
+  /// past questions. What tells a student "Paragon practice" from a real
+  /// past paper — see [provenanceLabel].
+  final String origin;
+
+  /// A published examiner insight exists for this question
+  /// (`insights/{id}`), stamped by `jobs.js --job=insights` so the app only
+  /// reads one when there is one.
+  final bool hasInsight;
+
   /// A diagram the question depends on: a `lessonAssets` id, or null.
   /// Set on scraped past questions by `tools/scraper/10_fetch_question_images.js`.
   final String? imageId;
@@ -30,6 +40,8 @@ class Question {
     required this.explanation,
     required this.source,
     this.year,
+    this.origin = '',
+    this.hasInsight = false,
     this.imageId,
     this.explanationImageId,
   });
@@ -49,8 +61,66 @@ class Question {
       explanation: asString(d['explanation']),
       source: asString(d['source'], fallback: 'drill'),
       year: asIntOrNull(d['year']),
+      origin: asString(d['origin']),
+      hasInsight: asBool(d['hasInsight']),
       imageId: asStringOrNull(d['imageId']),
       explanationImageId: asStringOrNull(d['explanationImageId']),
     );
   }
+
+  /// Written by Paragon's generators, not taken from an exam paper.
+  bool get isGenerated => origin == 'ai_generated';
+
+  /// A question from a real exam paper. Generated questions are stamped
+  /// `source: 'drill'`, but the origin is checked first so a generated
+  /// question can never claim to be a past question.
+  bool get isPastQuestion => !isGenerated && source == 'waec';
+
+  /// What a student is told about where a question came from: "WAEC 2018",
+  /// "WAEC past question" when the year is unknown, "Paragon practice" for
+  /// generated ones, and null — no badge — for anything unclassified.
+  /// Adding NECO or JAMB later is one case here.
+  String? get provenanceLabel {
+    if (isGenerated) return 'Paragon practice';
+    if (isPastQuestion) {
+      return year == null ? 'WAEC past question' : 'WAEC $year';
+    }
+    return null;
+  }
+
+  /// Everything needed to rebuild this question without Firestore — for an
+  /// exam kept on the device so it can be resumed (`saved_exam.dart`).
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'topicId': topicId,
+    'subjectId': subjectId,
+    'text': text,
+    'options': options,
+    'correctIndex': correctIndex,
+    'explanation': explanation,
+    'source': source,
+    'year': year,
+    'origin': origin,
+    'hasInsight': hasInsight,
+    'imageId': imageId,
+    'explanationImageId': explanationImageId,
+  };
+
+  /// The inverse of [toJson], as forgiving as [Question.fromFirestore]:
+  /// device storage can hold anything an older build wrote.
+  factory Question.fromJson(Map<String, dynamic> d) => Question(
+    id: asString(d['id']),
+    topicId: asString(d['topicId']),
+    subjectId: asString(d['subjectId']),
+    text: asString(d['text']),
+    options: asStringList(d['options']),
+    correctIndex: asIntOrNull(d['correctIndex']) ?? -1,
+    explanation: asString(d['explanation']),
+    source: asString(d['source'], fallback: 'drill'),
+    year: asIntOrNull(d['year']),
+    origin: asString(d['origin']),
+    hasInsight: asBool(d['hasInsight']),
+    imageId: asStringOrNull(d['imageId']),
+    explanationImageId: asStringOrNull(d['explanationImageId']),
+  );
 }

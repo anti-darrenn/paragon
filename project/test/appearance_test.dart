@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -40,10 +42,50 @@ void main() {
     const p = AppPalette.dark;
     expect(p.onHigh, Colors.white70);
     expect(p.onMedium, Colors.white54);
-    expect(p.onLow, Colors.white38);
+    // onLow alone was raised (from white38) to pass WCAG AA; see below.
     expect(p.outline, Colors.white24);
     expect(p.outlineFaint, Colors.white12);
     expect(p.textStrong, Colors.white);
+  });
+
+  group('small text passes WCAG AA (4.5:1)', () {
+    double luminance(Color c) {
+      double ch(double v) => v <= 0.03928
+          ? v / 12.92
+          : math.pow((v + 0.055) / 1.055, 2.4).toDouble();
+      return 0.2126 * ch(c.r) + 0.7152 * ch(c.g) + 0.0722 * ch(c.b);
+    }
+
+    double contrast(Color fg, Color bg) {
+      final a = luminance(Color.alphaBlend(fg, bg));
+      final b = luminance(bg);
+      return (math.max(a, b) + 0.05) / (math.min(a, b) + 0.05);
+    }
+
+    for (final (name, p) in [
+      ('dark', AppPalette.dark),
+      ('light', AppPalette.light),
+    ]) {
+      test('$name: secondary, onMedium and onLow text on background and '
+          'surface', () {
+        for (final bg in [p.background, p.surface]) {
+          for (final fg in [p.textSecondary, p.onMedium, p.onLow]) {
+            expect(
+              contrast(fg, bg),
+              greaterThanOrEqualTo(4.5),
+              reason: '$name $fg on $bg',
+            );
+          }
+        }
+      });
+    }
+
+    test('control: the old white38 failed, so this test can fail', () {
+      expect(
+        contrast(Colors.white38, AppPalette.dark.background),
+        lessThan(4.5),
+      );
+    });
   });
 
   testWidgets('context.palette follows the theme', (tester) async {

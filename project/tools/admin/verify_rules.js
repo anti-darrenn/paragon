@@ -1088,6 +1088,120 @@ async function accountRequests(a, b) {
   );
 }
 
+async function waitlist(a, b) {
+  suite('waitlist/{uid} — "Notify me", accounts only');
+
+  // The test accounts are guests, and the anonymous clause refuses every
+  // guest write — a guest has no address to be told at. The real-account
+  // allow path is exercised by hand.
+  const list = { userId: str(a.uid), subjects: arr([str('biology')]) };
+  expectOutcome(
+    'a guest cannot join a waitlist',
+    DENY,
+    await commit(
+      a.idToken,
+      write(`waitlist/${a.uid}`, list, { transforms: [serverTime('updatedAt')] }),
+    ),
+  );
+  expectOutcome(
+    "a waitlist on another student's uid is refused",
+    DENY,
+    await commit(
+      b.idToken,
+      write(`waitlist/${a.uid}`, list, { transforms: [serverTime('updatedAt')] }),
+    ),
+  );
+  expectOutcome(
+    "another student's waitlist is not readable",
+    DENY,
+    await readDoc(b.idToken, `waitlist/${a.uid}`),
+  );
+  expectOutcome(
+    'a student cannot list or count the waitlist',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'waitlist' }] }),
+  );
+}
+
+async function challenges(a, b) {
+  suite('challenges/{id} — create once, get by id, list your own');
+  const c = (uid, score = 5) => ({
+    userId: str(uid),
+    name: str('Ada'),
+    subjectId: str('s1'),
+    topicId: str('t1'),
+    topicName: str('Indices'),
+    questionIds: arr([str('q1'), str('q2')]),
+    score: { integerValue: String(score) },
+    total: { integerValue: '2' },
+  });
+  const id = `verify-${Date.now()}`;
+  expectOutcome(
+    "a challenge in someone else's name is refused",
+    DENY,
+    await commit(a.idToken, write(`challenges/${id}-x`, c(b.uid), { transforms: [serverTime('createdAt')] })),
+  );
+  expectOutcome(
+    'a score above the total is refused',
+    DENY,
+    await commit(a.idToken, write(`challenges/${id}-y`, c(a.uid, 3), { transforms: [serverTime('createdAt')] })),
+  );
+  expectOutcome(
+    'challenges cannot be listed wholesale',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'challenges' }] }),
+  );
+}
+
+async function rooms(a, b) {
+  suite('rooms/{code} — accounts host, guests join');
+  // The test accounts are guests: hosting is refused them. The full
+  // game is exercised on the emulator (tools/rules-test).
+  const room = {
+    hostUid: str(a.uid),
+    subjectId: str('s1'),
+    topicId: str('t1'),
+    topicName: str('Indices'),
+    questionIds: arr([str('q1')]),
+    state: str('lobby'),
+    index: { integerValue: '0' },
+    results: { mapValue: { fields: {} } },
+  };
+  expectOutcome(
+    'a guest cannot host a room',
+    DENY,
+    await commit(a.idToken, write('rooms/VRFY23', room, { transforms: [serverTime('createdAt')] })),
+  );
+  expectOutcome(
+    'rooms cannot be listed',
+    DENY,
+    await runQuery(a.idToken, '', { from: [{ collectionId: 'rooms' }] }),
+  );
+}
+
+async function plan(a, b) {
+  suite('plan/{uid} — weekly goal and exam date, accounts only');
+
+  // Guests again: the anonymous clause refuses them; the account path is
+  // exercised by hand and on the emulator (tools/rules-test).
+  const p = (uid) => ({ userId: str(uid), weeklyGoal: { integerValue: '100' } });
+  expectOutcome(
+    'a guest cannot save a plan',
+    DENY,
+    await commit(a.idToken, write(`plan/${a.uid}`, p(a.uid), { transforms: [serverTime('updatedAt')] })),
+  );
+  expectOutcome(
+    "a plan on another student's uid is refused",
+    DENY,
+    await commit(b.idToken, write(`plan/${a.uid}`, p(a.uid), { transforms: [serverTime('updatedAt')] })),
+  );
+  expectOutcome(
+    "another student's plan is not readable",
+    DENY,
+    await readDoc(b.idToken, `plan/${a.uid}`),
+  );
+}
+
 async function staffProfiles(a, b) {
   suite('staffProfiles/{uid} — the team only');
 
@@ -1631,6 +1745,10 @@ async function teardown(a, b, usernameKey) {
   await progress(a, b);
   await studyData(a, b);
   await accountRequests(a, b);
+  await waitlist(a, b);
+  await plan(a, b);
+  await challenges(a, b);
+  await rooms(a, b);
   await staffProfiles(a, b);
   await learnGate(a, b);
   await content(a);

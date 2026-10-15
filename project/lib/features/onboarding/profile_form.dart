@@ -6,7 +6,10 @@ import 'onboarding_scaffold.dart';
 import '../../core/theme/app_palette.dart';
 
 /// The optional-profile form, shared by the onboarding step that first
-/// asks for it and the settings screen that edits it afterwards.
+/// asks for it and the settings screen that edits it afterwards: school
+/// and class only. They tell the team which schools and classes use
+/// Paragon (for working with schools and pitching content at the right
+/// level); nothing in the app is gated on them.
 ///
 /// Extracted rather than duplicated for the same reason as the subject
 /// tile: the settings screen exists *because* onboarding promised it, so
@@ -19,63 +22,42 @@ import '../../core/theme/app_palette.dart';
 /// without either owning the layout.
 class ProfileFormController {
   final school = TextEditingController();
-  final age = TextEditingController();
 
   String? classYear;
-  String? gender;
-  String? country;
-  String? state;
 
   static const classYears = ['JSS3', 'SS1', 'SS2', 'SS3', 'Graduate', 'Other'];
-  static const genders = ['Female', 'Male', 'Prefer not to say'];
-  static const countries = ['Nigeria', 'Ghana', 'Other'];
 
-  // Placeholder list — the full 36 states + FCT belong in a data file, not
-  // inline here, and only matter once country == Nigeria drives the list.
-  static const states = [
-    'Abuja (FCT)',
-    'Lagos',
-    'Rivers',
-    'Kano',
-    'Oyo',
-    'Enugu',
-    'Kaduna',
-    'Other',
-  ];
+  /// Fields Paragon used to ask for and stopped asking for on 2026-10-15
+  /// (the owner's decision: data about minors with no reader). [toProfile]
+  /// lists them as blank so the settings editor's save deletes any value
+  /// still stored; `jobs.js --job=dropprofile` removes the rest.
+  static const retiredFields = ['age', 'gender', 'country', 'state'];
 
   /// Fills the form from a stored `users/{uid}.profile` map.
   ///
-  /// A stored value that is no longer one of the options above — a state
-  /// list that has since changed, say — is dropped rather than shown,
-  /// because `DropdownButtonFormField` throws on a value absent from its
-  /// items. Losing one field on screen is better than a screen that will
-  /// not build.
+  /// A stored class that is no longer one of the options is dropped rather
+  /// than shown, because `DropdownButtonFormField` throws on a value absent
+  /// from its items. Retired fields are ignored.
   void hydrate(Object? stored) {
     if (stored is! Map) return;
     school.text = _string(stored['school']);
-    age.text = _string(stored['age']);
     classYear = _oneOf(stored['classYear'], classYears);
-    gender = _oneOf(stored['gender'], genders);
-    country = _oneOf(stored['country'], countries);
-    state = _oneOf(stored['state'], states);
   }
 
   /// What the form currently holds, in the stored shape. Blank entries are
-  /// null so callers can tell "left empty" from "set to something".
+  /// null so callers can tell "left empty" from "set to something"; the
+  /// retired fields are always null, which deletes them on an editor save
+  /// and is ignored by onboarding's partial save.
   Map<String, Object?> toProfile() => {
     'school': school.text.trim().isEmpty ? null : school.text.trim(),
     'classYear': classYear,
-    'age': int.tryParse(age.text.trim()),
-    'gender': gender,
-    'country': country,
-    'state': state,
+    for (final f in retiredFields) f: null,
   };
 
   bool get isEmpty => toProfile().values.every((v) => v == null || v == '');
 
   void dispose() {
     school.dispose();
-    age.dispose();
   }
 
   static String _string(Object? v) => v == null ? '' : '$v';
@@ -113,44 +95,6 @@ class ProfileFormFields extends StatelessWidget {
           items: ProfileFormController.classYears,
           onChanged: (v) {
             controller.classYear = v;
-            onChanged();
-          },
-        ),
-        const SizedBox(height: 18),
-        OnboardingTextField(
-          controller: controller.age,
-          label: 'AGE',
-          hintText: 'Optional',
-          keyboardType: TextInputType.number,
-          maxLength: 2,
-        ),
-        const SizedBox(height: 18),
-        _Dropdown(
-          label: 'GENDER',
-          value: controller.gender,
-          items: ProfileFormController.genders,
-          onChanged: (v) {
-            controller.gender = v;
-            onChanged();
-          },
-        ),
-        const SizedBox(height: 18),
-        _Dropdown(
-          label: 'COUNTRY',
-          value: controller.country,
-          items: ProfileFormController.countries,
-          onChanged: (v) {
-            controller.country = v;
-            onChanged();
-          },
-        ),
-        const SizedBox(height: 18),
-        _Dropdown(
-          label: 'STATE',
-          value: controller.state,
-          items: ProfileFormController.states,
-          onChanged: (v) {
-            controller.state = v;
             onChanged();
           },
         ),

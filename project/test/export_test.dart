@@ -69,14 +69,23 @@ void main() {
   });
 
   test('exportSize counts owned documents only', () async {
-    // 6 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 feedback
+    // 8 keyed-by-uid slots + 2 attempts + 1 note + 1 flag + 1 feedback
     // + 1 exam.
-    expect(await repo.exportSize('u1'), 12);
+    expect(await repo.exportSize('u1'), 14);
   });
 
   test('covers everything deletion removes', () async {
     await repo.requestSignOutEverywhere('u1');
     await db.collection('staffProfiles').doc('u1').set({'displayName': 'A'});
+    await db.collection('waitlist').doc('u1').set({
+      'userId': 'u1',
+      'subjects': ['biology'],
+    });
+    await db.collection('challenges').add({'userId': 'u1', 'score': 3});
+    await db.collection('plan').doc('u1').set({
+      'userId': 'u1',
+      'weeklyGoal': 100,
+    });
     final before = await repo.exportOwnedDocuments('u1');
     await repo.deleteOwnedDocuments('u1');
     final after = await repo.exportOwnedDocuments('u1');
@@ -85,7 +94,13 @@ void main() {
     expect(before['examResults'], hasLength(1));
     expect(
       before.keys,
-      containsAll(['users', 'accountRequests', 'staffProfiles']),
+      containsAll([
+        'users',
+        'accountRequests',
+        'staffProfiles',
+        'waitlist',
+        'plan',
+      ]),
     );
     // ...and deletion left nothing the export can find.
     for (final key in [
@@ -95,6 +110,8 @@ void main() {
       'study',
       'accountRequests',
       'staffProfiles',
+      'waitlist',
+      'plan',
     ]) {
       expect(after.containsKey(key), isFalse, reason: key);
     }
@@ -104,6 +121,7 @@ void main() {
       'flags',
       'feedback',
       'examResults',
+      'challenges',
     ]) {
       expect(after[key], isEmpty, reason: key);
     }

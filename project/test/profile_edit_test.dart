@@ -83,7 +83,7 @@ void main() {
   });
 
   group('ProfileFormController', () {
-    test('round-trips a stored profile', () {
+    test('keeps school and class; the retired fields read as blank', () {
       final form = ProfileFormController();
       addTearDown(form.dispose);
 
@@ -96,25 +96,42 @@ void main() {
         'state': 'Lagos',
       });
 
+      // Blank, so the editor's save deletes what an older build stored.
       expect(form.toProfile(), {
         'school': 'Kings College',
         'classYear': 'SS2',
-        'age': 16,
-        'gender': 'Female',
-        'country': 'Nigeria',
-        'state': 'Lagos',
+        'age': null,
+        'gender': null,
+        'country': null,
+        'state': null,
       });
     });
 
-    test('drops a stored value that is no longer an option', () {
+    test('saving from the editor deletes the retired fields', () async {
+      final db = FakeFirebaseFirestore();
+      await db.collection('users').doc('u9').set({
+        'profile': {
+          'school': 'Kings College',
+          'classYear': 'SS2',
+          'age': 16,
+          'gender': 'Female',
+        },
+      });
       final form = ProfileFormController();
       addTearDown(form.dispose);
+      form.hydrate((await db.collection('users').doc('u9').get())['profile']);
+      await UserRepository(db).updateProfile(uid: 'u9', profile: form.toProfile());
+      final profile =
+          (await db.collection('users').doc('u9').get())['profile'] as Map;
+      expect(profile, {'school': 'Kings College', 'classYear': 'SS2'});
+    });
 
-      // DropdownButtonFormField throws on a value absent from its items,
-      // so a state list that has since changed must not reach it.
-      form.hydrate({'state': 'Atlantis', 'gender': 'Female'});
-      expect(form.state, isNull);
-      expect(form.gender, 'Female');
+    test('drops a stored class that is no longer an option', () {
+      final form = ProfileFormController();
+      addTearDown(form.dispose);
+      form.hydrate({'classYear': 'Year 12', 'school': 'Kings College'});
+      expect(form.classYear, isNull);
+      expect(form.school.text, 'Kings College');
     });
 
     test('a missing or malformed profile leaves the form empty', () {

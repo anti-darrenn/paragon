@@ -10,10 +10,15 @@ import '../core/repositories/learn_repository.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/page_layout.dart';
+import '../core/widgets/ui/ui.dart';
+import '../core/widgets/share_link_button.dart';
 import 'lesson/lesson_screen.dart';
 import 'lesson/video_pane.dart';
 import 'study/offline/save_offline_button.dart';
 import '../core/theme/app_palette.dart';
+import '../core/providers/analytics_provider.dart';
+import 'plan/plan_widgets.dart';
+import '../core/widgets/examiner_insight_panel.dart';
 
 /// Topic overview — `/subject/:subjectKey/course/topic/:topicKey`.
 ///
@@ -46,8 +51,8 @@ class TopicOverviewScreen extends ConsumerWidget {
       fallbackPath: '/subject/$subjectKey/course',
       child: courseAsync.when(
         loading: () => const Padding(
-          padding: EdgeInsets.symmetric(vertical: 120),
-          child: Center(child: CircularProgressIndicator()),
+          padding: EdgeInsets.only(top: 40),
+          child: SkeletonPage(count: 3, cardHeight: 64),
         ),
         error: (error, _) => _NotFound(
           message: error is CourseNotFoundException
@@ -62,7 +67,18 @@ class TopicOverviewScreen extends ConsumerWidget {
             );
           }
           final (module, topic) = found;
-          return _TopicBody(course: course, module: module, topic: topic);
+          return _OnFirstBuild(
+            // Once per visit, not per rebuild; ids only.
+            onFirstBuild: () {
+              final subjectId = course.subjectId;
+              if (subjectId != null && !topic.isPlaceholder) {
+                ref
+                    .read(analyticsProvider)
+                    .topicOpen(subjectId: subjectId, topicId: topic.id);
+              }
+            },
+            child: _TopicBody(course: course, module: module, topic: topic),
+          );
         },
       ),
     );
@@ -87,7 +103,7 @@ class _TopicBody extends StatelessWidget {
   bool get _canPractise =>
       !topic.isPlaceholder &&
       course.subjectId != null &&
-      topic.questionCount > 0;
+      topic.counts.servable > 0;
 
   @override
   Widget build(BuildContext context) {
@@ -124,12 +140,24 @@ class _TopicBody extends StatelessWidget {
         ),
         const SizedBox(height: 16),
 
-        Text(
-          topic.name,
-          style: AppTheme.displayLg.copyWith(
-            color: context.palette.textPrimary,
-            fontSize: isCompact ? 26 : 36,
-          ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Text(
+                topic.name,
+                style: AppTheme.displayLg.copyWith(
+                  color: context.palette.textPrimary,
+                  fontSize: isCompact ? 26 : 36,
+                ),
+              ),
+            ),
+            if (!topic.isPlaceholder)
+              ShareLinkButton(
+                title: '${topic.name} · ${course.name} on Paragon',
+                path: '/subject/${course.key}/course/topic/${topic.id}',
+              ),
+          ],
         ),
         const SizedBox(height: 10),
         Row(
@@ -153,6 +181,21 @@ class _TopicBody extends StatelessWidget {
             ),
           ],
         ),
+
+        ExaminerThemesBlock(
+          topicId: topic.id,
+          flagged: topic.hasExaminerThemes,
+        ),
+
+        if (topicFrequencyLine(course, topic.id) case final line?) ...[
+          const SizedBox(height: 8),
+          Text(
+            line,
+            style: AppTheme.bodyMd.copyWith(
+              color: context.palette.textSecondary,
+            ),
+          ),
+        ],
 
         SizedBox(height: isCompact ? 28 : 40),
 
@@ -258,7 +301,7 @@ class _LessonList extends ConsumerWidget {
           kind: 'Exercise',
           title: 'Practise ${topic.name}',
           subtitle: canPractise
-              ? '${topic.questionCount} questions · instant feedback'
+              ? '${topic.counts.label} · instant feedback'
               : topic.isPlaceholder
               ? 'No questions yet'
               : 'No questions with a verified answer yet',
@@ -370,10 +413,29 @@ class _LessonList extends ConsumerWidget {
 
   /// What a topic with no published lessons shows: one plain line rather
   /// than greyed-out "coming soon" rows. Practice below still works.
+  /// No published lesson yet — the normal state for most topics while
+  /// content is written. Says so plainly and points at practice, never an
+  /// empty list or "0 of 0 lessons".
   Widget _noLessons(BuildContext context) {
-    return Text(
-      'No lessons for this topic yet. You can still practise it below.',
-      style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          canPractise
+              ? 'Lessons for this topic are on the way. You can still '
+                    'practise now.'
+              : 'Lessons for this topic are on the way.',
+          style: AppTheme.bodyMd.copyWith(color: context.palette.textSecondary),
+        ),
+        if (canPractise) ...[
+          const SizedBox(height: 12),
+          OutlinedButton.icon(
+            onPressed: () => context.push(drillPath),
+            icon: const Icon(Icons.fitness_center_rounded, size: 18),
+            label: const Text('Practise now'),
+          ),
+        ],
+      ],
     );
   }
 }
@@ -716,3 +778,26 @@ class _NotFound extends StatelessWidget {
     );
   }
 }
+
+/// Runs [onFirstBuild] once, when this first appears.
+class _OnFirstBuild extends StatefulWidget {
+  const _OnFirstBuild({required this.onFirstBuild, required this.child});
+
+  final VoidCallback onFirstBuild;
+  final Widget child;
+
+  @override
+  State<_OnFirstBuild> createState() => _OnFirstBuildState();
+}
+
+class _OnFirstBuildState extends State<_OnFirstBuild> {
+  @override
+  void initState() {
+    super.initState();
+    widget.onFirstBuild();
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
+}
+

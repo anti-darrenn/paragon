@@ -6,10 +6,20 @@
     and end with a slash.
   -->
   <base href="$FLUTTER_BASE_HREF">
+  <!--
+    Links shared before 2026-10 were hash URLs (/#/courses). The app now
+    uses real paths, so rewrite one before Flutter reads the location.
+    replaceState, not a redirect: no second page load.
+  -->
+  <script>
+    if (location.hash.indexOf('#/') === 0) {
+      history.replaceState(null, '', location.hash.slice(1));
+    }
+  </script>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <title>Paragon</title>
-  <meta name="description" content="Practise WAEC past questions and learn topic by topic: Mathematics, Physics, Further Mathematics, Chemistry and Government.">
+  <meta name="description" content="Free WAEC prep, topic by topic: real past questions in Mathematics, Physics and Further Mathematics, and practice questions in Chemistry and Government.">
   <meta name="theme-color" content="#0D1117">
 
   <!-- Link previews (WhatsApp, iMessage, social). og:image must be an
@@ -18,9 +28,9 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Paragon">
   <meta property="og:title" content="Paragon: WAEC prep, topic by topic">
-  <meta property="og:description" content="Practise WAEC past questions and learn topic by topic: Mathematics, Physics, Further Mathematics, Chemistry and Government.">
+  <meta property="og:description" content="Free WAEC prep, topic by topic: real past questions in Mathematics, Physics and Further Mathematics, and practice questions in Chemistry and Government.">
   <meta property="og:url" content="https://paragon-hq.web.app/">
-  <meta property="og:image" content="https://paragon-hq.web.app/og-image.png">
+  <meta property="og:image" content="https://paragon-hq.web.app/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Project Paragon">
@@ -72,6 +82,8 @@
     #splash .pitch { max-width: 420px; padding: 0 24px; text-align: center; color: #E6EDF3; }
     #splash h1 { font-size: 22px; line-height: 1.3; margin: 0 0 10px; font-weight: 700; }
     #splash p { font-size: 15px; line-height: 1.5; margin: 0; color: #8B949E; }
+    #splash .links { margin-top: 14px; }
+    #splash .links a { color: #FF9A40; font-size: 14px; }
     #splash .slow { font-size: 13px; color: #8B949E; opacity: 0; transition: opacity .4s ease; }
     #splash .slow.show { opacity: 1; }
     #splash .spin {
@@ -93,15 +105,19 @@
     <div class="word">Paragon</div>
     <div class="pitch">
       <h1>Free WAEC prep, one topic at a time</h1>
-      <p>Lessons, practice and full timed past papers in Mathematics, Physics,
-        Further Mathematics, Chemistry and Government.</p>
+      <p>Practice questions in Mathematics, Physics, Further Mathematics,
+        Chemistry and Government, and WAEC past questions in the first
+        three, marked like the real paper.</p>
+      <p class="links"><a href="/past-questions/">Browse WAEC past questions with answers</a></p>
     </div>
     <div class="spin" role="progressbar" aria-label="Loading Paragon"></div>
     <div class="slow" id="splash-slow">Still loading. The first visit is the slowest; next time it opens much faster.</div>
   </div>
   <noscript>
     <p style="color:#E6EDF3;text-align:center;font-family:system-ui,sans-serif;padding:24px">
-      Paragon needs JavaScript turned on to run.</p>
+      The Paragon app needs JavaScript turned on. The
+      <a href="/past-questions/" style="color:#FF9A40">WAEC past questions with answers</a>
+      work without it.</p>
   </noscript>
   <script>
     setTimeout(function () {

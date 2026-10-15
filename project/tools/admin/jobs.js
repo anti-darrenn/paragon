@@ -33,6 +33,10 @@
  *   node jobs.js --job=deletions [--apply]
  *   node jobs.js --job=orphans  [--apply]
  *   node jobs.js --job=counts   [--apply]
+ *   node jobs.js --job=challenges [--apply]
+ *   node jobs.js --job=rooms    [--apply]
+ *   node jobs.js --job=insights [--apply]
+ *   node jobs.js --job=metrics  [--apply]
  *   node jobs.js --job=all      [--apply]
  *
  * And one that is deliberately NOT in `all`, to be run once by hand:
@@ -121,11 +125,17 @@ const OWNED = [
   ["feedback", "userId"],
   ["notes", "userId"],
   ["examResults", "userId"],
+  ["challenges", "userId"],
   ["progress", null],
   ["learn", null],
   ["study", null],
   ["accountRequests", null],
   ["staffProfiles", null],
+  ["waitlist", null],
+  ["plan", null],
+  // Public bylines are Admin-SDK-written, so the app cannot delete them;
+  // scheduled deletion and the orphan sweep do.
+  ["contributors", null],
   ["users", null],
 ];
 
@@ -401,80 +411,107 @@ async function jobResourceStatus() {
   log(`   ${missing.length} ${APPLY ? "stamped" : "would be stamped"} published`);
 }
 
-// ─── Job: subject.topicCount and questionCount ───────────────────────
+// ─── Job: question counts, topic and subject ─────────────────────────
 
 /**
- * Recomputes `topicCount` and `questionCount` on every subject document
- * from the live `topics` and `questions` collections.
+ * Counts one topic's questions a student can be served (`hasAnswer: true`),
+ * split into past questions from real papers and Paragon's generated
+ * practice. Three `count()` aggregates, billed per 1000 index entries, not
+ * per document — equality filters only, so no composite index is needed.
  *
- * `questionCount` counts only `hasAnswer: true` — what a student can be
- * served — and is shown on the welcome screen. It drifts whenever an
- * admin retires a reported question or new content is seeded.
+ * "Past" is `source == 'waec'`; generated questions are stamped
+ * `source: 'drill'`, so the two never overlap. `Question.isPastQuestion`
+ * in the app reads the same fields — change both together.
+ */
+async function countTopicQuestions(topicId) {
+  const base = db
+    .collection("questions")
+    .where("topicId", "==", topicId)
+    .where("hasAnswer", "==", true);
+  const [total, past, practice] = await Promise.all([
+    base.count().get(),
+    base.where("source", "==", "waec").count().get(),
+    base.where("origin", "==", "ai_generated").count().get(),
+  ]);
+  return {
+    questionCount: total.data().count,
+    pastQuestionCount: past.data().count,
+    practiceQuestionCount: practice.data().count,
+  };
+}
+
+/** Logs and (with --apply) writes only the fields whose stored value is wrong. */
+async function writeIfChanged(ref, stored, actual, name) {
+  const changes = Object.fromEntries(
+    Object.entries(actual).filter(([field, value]) => stored[field] !== value),
+  );
+  if (Object.keys(changes).length === 0) return false;
+  log(
+    `   ${name}: ` +
+      Object.entries(changes)
+        .map(([field, value]) => `${field} ${stored[field] ?? "unset"} -> ${value}`)
+        .join(", "),
+  );
+  if (APPLY) await ref.update(changes);
+  return true;
+}
+
+/**
+ * Recomputes the question counts on every topic, then each subject's
+ * `topicCount` and question counts **as the sum of its topics'**.
  *
- * The app needs a denominator to draw a subject-level progress ring. The
- * numerator is free — it comes from the student's own `progress/{uid}`
- * document — but "how many topics does Physics have" is not on the
- * subject document, and deriving it in the client means loading every
- * unit and every unit's topics, per subject, on the dashboard. That is
- * the read pattern `docs/audit/NEXT.md` keeps having to reclassify as
- * live breakage, so the number is precomputed here instead and read for
- * free alongside `unitCount`.
+ * Summing, rather than counting the subject separately, is the point: the
+ * welcome ticker reads the subject and the course page sums the topics,
+ * and the two disagreed (14,602 vs 14,616) because topic counts were
+ * written at seed time, without the `hasAnswer` filter, and never
+ * recounted. Now one set of aggregates feeds both, and
+ * `check_counts.js` asserts they agree.
  *
- * Counted with `count()` aggregates — billed per 1000 index entries
- * rather than per document, the same reason the seeders use them. Two
- * aggregates per subject, roughly twenty in total, and a write only where
- * a stored value is actually wrong.
+ * `topicCount` is the denominator of a subject-level progress ring; zero
+ * means "not known" in the app, so it is always written here.
  *
- * Reclassification moves questions between topics but never moves a topic
- * between subjects, so this drifts only when topics are added or removed.
- * Running nightly is ample.
+ * Cost: three aggregates per topic (about 700 reads for ~230 topics) plus
+ * one read per topic document. Nightly is ample: counts drift only when
+ * content is seeded, reclassified or retired.
  */
 async function jobTopicCounts() {
   log(`
-── Recompute subject.topicCount and questionCount [${mode()}]`);
+── Recompute topic and subject question counts [${mode()}]`);
 
   const subjects = await db.collection("subjects").get();
-  let updated = 0;
+  let topicsUpdated = 0;
+  let subjectsUpdated = 0;
 
   for (const subject of subjects.docs) {
     const topics = await db
       .collection("topics")
       .where("subjectId", "==", subject.id)
-      .count()
       .get();
-    // Only questions a student can actually be served: drill, WAEC and
-    // tests all filter on hasAnswer. One aggregate per subject, billed
-    // per 1000 index entries, not per document.
-    const questions = await db
-      .collection("questions")
+    const sum = { questionCount: 0, pastQuestionCount: 0, practiceQuestionCount: 0 };
+    for (const topic of topics.docs) {
+      const actual = await countTopicQuestions(topic.id);
+      for (const k of Object.keys(sum)) sum[k] += actual[k];
+      const stored = topic.data();
+      if (await writeIfChanged(topic.ref, stored, actual, `${subject.data().name} / ${stored.name}`)) {
+        topicsUpdated++;
+      }
+    }
+    const theory = await db
+      .collection("theoryQuestions")
       .where("subjectId", "==", subject.id)
-      .where("hasAnswer", "==", true)
+      .where("status", "==", "published")
       .count()
       .get();
-    const actual = {
-      topicCount: topics.data().count,
-      questionCount: questions.data().count,
-    };
-    const stored = subject.data();
-
-    const changes = Object.fromEntries(
-      Object.entries(actual).filter(([field, value]) => stored[field] !== value),
-    );
-    if (Object.keys(changes).length === 0) continue;
-
-    log(
-      `   ${stored.name}: ` +
-        Object.entries(changes)
-          .map(([field, value]) => `${field} ${stored[field] ?? "unset"} -> ${value}`)
-          .join(", "),
-    );
-    updated++;
-    if (APPLY) {
-      await subject.ref.update(changes);
+    const actual = { topicCount: topics.size, ...sum, theoryCount: theory.data().count };
+    if (await writeIfChanged(subject.ref, subject.data(), actual, subject.data().name)) {
+      subjectsUpdated++;
     }
   }
 
-  log(`   ${updated} subjects ${APPLY ? "updated" : "would be updated"}`);
+  log(
+    `   ${topicsUpdated} topics and ${subjectsUpdated} subjects ` +
+      `${APPLY ? "updated" : "would be updated"}`,
+  );
 }
 
 // ─── Job: topic.lessonCount ──────────────────────────────────────────
@@ -533,6 +570,158 @@ async function jobLessonCounts() {
   log(`   ${updated} topics ${APPLY ? "updated" : "would be updated"}`);
 }
 
+// ─── Job: expired challenge links ───────────────────────────────────
+
+/**
+ * Deletes "Challenge a friend" links older than 30 days. They are made to
+ * be sent and played within days; kept for ever they would only be names
+ * on links nobody opens. Reads only the expired ones.
+ */
+async function jobChallenges() {
+  log(`\n── Delete challenge links older than 30 days [${mode()}]`);
+  const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  const old = await db
+    .collection("challenges")
+    .where("createdAt", "<", cutoff)
+    .select()
+    .get();
+  log(`   ${old.size} ${APPLY ? "deleted" : "would be deleted"}`);
+  if (APPLY && old.size) await deleteDocs(old.docs.map((d) => d.ref));
+}
+
+// ─── Job: examiner-insight flags ─────────────────────────────────────
+
+/**
+ * Stamps `questions.hasInsight` and `topics.hasExaminerThemes` from the
+ * published `insights` (and clears flags whose insight is gone or was
+ * unpublished), so the app reads an insight only where one exists. Reads
+ * every insight (a few hundred at most) and the documents flagged now.
+ */
+async function jobInsights() {
+  log(`\n── Examiner-insight flags [${mode()}]`);
+  const insights = await db.collection("insights").where("status", "==", "published").get();
+  const wantQ = new Set();
+  const wantT = new Set();
+  for (const d of insights.docs) {
+    const i = d.data();
+    if (i.kind === "topic" && i.topicId) wantT.add(i.topicId);
+    else if (i.kind === "question") wantQ.add(d.id);
+  }
+  const haveQ = new Set(
+    (await db.collection("questions").where("hasInsight", "==", true).select().get()).docs.map((d) => d.id),
+  );
+  const haveT = new Set(
+    (await db.collection("topics").where("hasExaminerThemes", "==", true).select().get()).docs.map((d) => d.id),
+  );
+  const changes = [
+    ...[...wantQ].filter((id) => !haveQ.has(id)).map((id) => ["questions", id, { hasInsight: true }]),
+    ...[...haveQ].filter((id) => !wantQ.has(id)).map((id) => ["questions", id, { hasInsight: false }]),
+    ...[...wantT].filter((id) => !haveT.has(id)).map((id) => ["topics", id, { hasExaminerThemes: true }]),
+    ...[...haveT].filter((id) => !wantT.has(id)).map((id) => ["topics", id, { hasExaminerThemes: false }]),
+  ];
+  for (const [col, id, data] of changes) log(`   ${col}/${id} ${JSON.stringify(data)}`);
+  log(`   ${changes.length} ${APPLY ? "updated" : "would be updated"}`);
+  if (APPLY) {
+    for (const [col, id, data] of changes) {
+      await db.collection(col).doc(id).update(data).catch((e) => log(`   ! ${col}/${id}: ${e.message}`));
+    }
+  }
+}
+
+// ─── Job: daily traction metrics ─────────────────────────────────────
+
+/** Lagos is UTC+1 all year. The day before [now], as [startUtc, endUtc). */
+function lagosYesterday(now = new Date()) {
+  const lagos = new Date(now.getTime() + 60 * 60 * 1000);
+  const todayLagos = Date.UTC(lagos.getUTCFullYear(), lagos.getUTCMonth(), lagos.getUTCDate());
+  const end = new Date(todayLagos - 60 * 60 * 1000);
+  const start = new Date(end.getTime() - 24 * 60 * 60 * 1000);
+  const id = new Date(todayLagos - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return { id, start, end };
+}
+
+/**
+ * Writes yesterday's numbers (Lagos day) to `metrics/{YYYY-MM-DD}`:
+ * aggregates only, never a uid or a name. Read by admins in the studio's
+ * Traction panel, "copy for pitch deck". About ten count() aggregates —
+ * billed per 1000 index entries, so a few reads a day.
+ */
+async function jobMetrics() {
+  const { id, start, end } = lagosYesterday();
+  log(`\n── Traction metrics for ${id} [${mode()}]`);
+  const between = (col, field, extra = (q) => q) =>
+    extra(db.collection(col).where(field, ">=", start).where(field, "<", end)).count().get()
+      .then((s) => s.data().count)
+      .catch((e) => {
+        log(`   ! ${col}.${field}: ${e.message}`);
+        return null;
+      });
+  const metrics = {
+    questionsAnswered: await between("attempts", "timestamp"),
+    drillLearners: await between("progress", "updatedAt"),
+    newAccounts: await between("users", "createdAt", (q) => q.where("isAnonymous", "==", false)),
+    newGuests: await between("users", "createdAt", (q) => q.where("isAnonymous", "==", true)),
+    examsSat: await between("examResults", "submittedAt"),
+    challengesMade: await between("challenges", "createdAt"),
+    roomsHosted: await between("rooms", "createdAt"),
+    feedback: await between("feedback", "createdAt"),
+  };
+  log(`   ${JSON.stringify(metrics)}`);
+  if (APPLY) {
+    await db.collection("metrics").doc(id).set({
+      ...metrics,
+      day: id,
+      computedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  }
+}
+
+// ─── One-shot: retired profile fields ────────────────────────────────
+
+/**
+ * Deletes `profile.age`, `profile.gender`, `profile.country` and
+ * `profile.state` from every user (the owner's decision of 2026-10-15:
+ * data about minors with no reader). School and class stay. Not in
+ * `all`: run once by hand, dry first. Reads every user document once.
+ */
+async function jobDropProfile() {
+  log(`\n── Retired profile fields [${mode()}]`);
+  const RETIRED = ["age", "gender", "country", "state"];
+  const users = await db.collection("users").select("profile").get();
+  const hit = users.docs.filter((d) => {
+    const p = d.data().profile;
+    return p && RETIRED.some((f) => p[f] !== undefined);
+  });
+  log(`   ${hit.length} of ${users.size} users hold a retired field`);
+  if (!APPLY) return;
+  const del = admin.firestore.FieldValue.delete();
+  for (let i = 0; i < hit.length; i += 400) {
+    const batch = db.batch();
+    for (const d of hit.slice(i, i + 400)) {
+      batch.update(d.ref, Object.fromEntries(RETIRED.map((f) => [`profile.${f}`, del])));
+    }
+    await batch.commit();
+  }
+  log(`   ${hit.length} cleaned`);
+}
+
+// ─── Job: expired quiz rooms ─────────────────────────────────────────
+
+/**
+ * Deletes live quiz rooms more than a day old, with their players and
+ * answers (recursiveDelete). The rules stop anyone joining after a day;
+ * this is the tidy-up, and what keeps nicknames from lingering.
+ */
+async function jobRooms() {
+  log(`\n── Delete quiz rooms older than a day [${mode()}]`);
+  const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000);
+  const old = await db.collection("rooms").where("createdAt", "<", cutoff).select().get();
+  log(`   ${old.size} ${APPLY ? "deleted" : "would be deleted"}`);
+  if (APPLY) {
+    for (const d of old.docs) await db.recursiveDelete(d.ref);
+  }
+}
+
 // ─── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -543,9 +732,14 @@ async function main() {
   if (JOB === "orphans" || JOB === "all") await jobOrphans();
   if (JOB === "counts" || JOB === "all") await jobTopicCounts();
   if (JOB === "counts" || JOB === "all") await jobLessonCounts();
+  if (JOB === "challenges" || JOB === "all") await jobChallenges();
+  if (JOB === "rooms" || JOB === "all") await jobRooms();
+  if (JOB === "insights" || JOB === "all") await jobInsights();
+  if (JOB === "metrics" || JOB === "all") await jobMetrics();
   // Not in `all` — see jobDropStreakFields. One-shot, run by hand.
   if (JOB === "dropstreak") await jobDropStreakFields();
   if (JOB === "resourcestatus") await jobResourceStatus();
+  if (JOB === "dropprofile") await jobDropProfile();
 
   if (!APPLY) log("\nDry run — nothing written. Re-run with --apply.");
   process.exit(0);
