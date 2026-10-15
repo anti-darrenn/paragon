@@ -1,5 +1,27 @@
 # Project Paragon — Cursor Rules
-# Last updated: 2026-09-25
+# Last updated: 2026-10-15
+#
+# ADDENDUM 2026-10-15 — read this first. The production-readiness waves
+# (PLAN.md at the repo root, waves A–K, PRs #30–#40) changed facts below.
+# Where this file and CLAUDE.md disagree, CLAUDE.md is current. In short:
+#   - Streaks stay gone; a WEEKLY GOAL (plan/{uid}, Mon–Sun Lagos) replaces
+#     them and keeps no run of weeks. Gamification still needs server-side
+#     scoring from attempts before anything competitive ships.
+#   - Guests are decided by ONE table, canUse() in
+#     lib/core/auth/feature_access.dart: guests drill, take unit tests and
+#     sit untimed WAEC in every subject; timed exams, the plan and hosting a
+#     live quiz need an account.
+#   - New collections: waitlist, plan, challenges, rooms (+players/answers),
+#     insights, contributors, theoryQuestions, metrics. Each is in the
+#     rules, the emulator suite (tools/rules-test) and verify_rules.js.
+#   - Question counts are split past/practice (pastQuestionCount,
+#     practiceQuestionCount); every question shows "WAEC 2018" or
+#     "Paragon practice". Generated content is never presented as past.
+#   - Path URLs (no #), /welcome?next= return-to, static /past-questions/**
+#     pages built after the Flutter build (tools/site), KaTeX fonts trimmed.
+#   - CI runs on every PR (.github/workflows/ci.yml); live deploys stay
+#     manual. The launch steps are in docs/LAUNCH_CHECKLIST.md.
+#   - The optional profile is school and class only.
 # Stack: Flutter · Riverpod v3.3.1 · go_router v17 · Firebase v4+ · Node.js scrapers
 # OS: Windows (PowerShell commands always)
 

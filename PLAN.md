@@ -6,6 +6,24 @@
 >
 > **Reconciled 2026-10-14.** The audit is in [`project/docs/REPO_FACTS.md`](project/docs/REPO_FACTS.md). It records which items already existed, which were adapted to the Spark plan, and which were declined, with reasons. The work runs as waves A–K, one PR each: A = Phases 0+1, B = 2, C = 3, D = 4, E = 5, F = 6, G = 7.2 + the weekly goal, H = live rooms, I = 7.1/7.3–7.6, J = 8 + trust/legal, K = launch QA.
 
+
+> **Status, 2026-10-15.** Every phase has been built and is waiting to be merged, deployed
+> and checked by a person. The PR chain, the deploy steps, the data steps, the open
+> decisions and the click-through script are in
+> [`project/docs/LAUNCH_CHECKLIST.md`](project/docs/LAUNCH_CHECKLIST.md).
+>
+> **Declined or deferred, each with its reason:**
+> - Cloud Functions: the project stays on Spark.
+> - An `/app` move: the owner chose to keep the app at the root.
+> - Slugs in app URLs.
+> - wasm and more code splitting: measured, too little gain.
+> - Sentry.
+> - Streaks.
+> - EWMA mastery.
+> - Teachers and classes (P7.7).
+> - Offline packs (P7.8): they already existed.
+> - l10n.
+
 ---
 
 ## How to run this plan
@@ -318,7 +336,7 @@ Done notes (Wave F, PR `feat/foundations`):
     - **`import_questions.js`** does P7.6.3's validation. The studio has the insight
       editor; the lesson editor already existed.
 - [ ] **P7.7** Teachers and schools. *(Deferred: safeguarding for minors, needs a server.)*
-- [ ] **P7.8** Offline packs. *(Exists: "Save for offline".)*
+- [x] **P7.8** Offline packs. *(Exists: "Save for offline".)*
 
 Done notes:
 

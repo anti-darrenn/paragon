@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**Launching?** Read `project/docs/LAUNCH_CHECKLIST.md` first: the PR merge order,
+the deploy and data steps, the decisions still open, and the browser click-through
+nobody has done yet. `PLAN.md` at the root records what was built for each review
+finding, and why the rest was declined.
+
 ## Repo layout
 
 Git root is `C:\Users\user\Desktop\paragon`. The Flutter app is one level down in `project/` — **all flutter/firebase/node commands run from `project/`**, not from the git root. `paragon_plans/` holds the PRD, tech-stack strategy, execution plan and Firestore schema docs (`.docx` + `.md`).
