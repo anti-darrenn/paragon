@@ -97,6 +97,11 @@ class TopicTestProgress {
 
   int get passedCount => _topics.values.where((r) => r.passed).length;
 
+  /// Topics with a test sat (or passed through a unit test).
+  Iterable<String> get attemptedTopicIds => _topics.entries
+      .where((e) => e.value.attempts > 0 || e.value.passed)
+      .map((e) => e.key);
+
   static TopicTestProgress fromDocument(Map<String, dynamic>? data) {
     final raw = data?['topics'];
     if (raw is! Map) return empty;
@@ -131,7 +136,8 @@ int topicTestScore({required int correct, required int total}) {
 /// Whether [correct] of [total] passes.
 bool topicTestPassed({required int correct, required int total}) {
   if (total <= 0) return false;
-  return topicTestScore(correct: correct, total: total) >= kTopicTestPassPercent;
+  return topicTestScore(correct: correct, total: total) >=
+      kTopicTestPassPercent;
 }
 
 // ─── The drill gate ───────────────────────────────────────────────────

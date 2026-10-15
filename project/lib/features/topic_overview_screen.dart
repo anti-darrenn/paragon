@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/learn/lesson_progress.dart';
+import '../core/learn/topic_test.dart';
 import '../core/models/learn_resource.dart';
 import '../core/repositories/learn_progress_repository.dart';
 import '../core/repositories/course_repository.dart';
@@ -85,7 +86,7 @@ class TopicOverviewScreen extends ConsumerWidget {
   }
 }
 
-class _TopicBody extends StatelessWidget {
+class _TopicBody extends ConsumerWidget {
   const _TopicBody({
     required this.course,
     required this.module,
@@ -106,24 +107,34 @@ class _TopicBody extends StatelessWidget {
       topic.counts.servable > 0;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final accent = AppColors.forSubject(course.name);
     final isCompact = MediaQuery.sizeOf(context).width < kCompactBreakpoint;
+
+    // The gate, said where the button is. "Start practising" used to lead
+    // to "Pass the topic test first" (audit C1); now, until the test is
+    // passed, every way into practice says so and goes to the test.
+    final needsTest =
+        _canPractise &&
+        ref.watch(drillAccessProvider(topic.id)) == DrillAccess.testRequired;
+    final practicePath = needsTest ? '$_drillPath/test' : _drillPath;
 
     final lessonList = _LessonList(
       course: course,
       module: module,
       topic: topic,
       accent: accent,
-      drillPath: _drillPath,
+      drillPath: practicePath,
       canPractise: _canPractise,
+      needsTest: needsTest,
     );
 
     final rail = _PracticeRail(
       topic: topic,
       accent: accent,
       canPractise: _canPractise,
-      onPractise: () => context.push(_drillPath),
+      needsTest: needsTest,
+      onPractise: () => context.push(practicePath),
     );
 
     return Column(
@@ -228,14 +239,18 @@ class _LessonList extends ConsumerWidget {
     required this.accent,
     required this.drillPath,
     required this.canPractise,
+    required this.needsTest,
   });
 
   final Course course;
   final CourseModule module;
   final CourseTopic topic;
   final Color accent;
+
+  /// Where practising goes: drill, or its topic test while that is locked.
   final String drillPath;
   final bool canPractise;
+  final bool needsTest;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -300,7 +315,9 @@ class _LessonList extends ConsumerWidget {
           icon: Icons.fitness_center_rounded,
           kind: 'Exercise',
           title: 'Practise ${topic.name}',
-          subtitle: canPractise
+          subtitle: needsTest
+              ? 'Pass the topic test ($kTopicTestPassPercent%) to unlock'
+              : canPractise
               ? '${topic.counts.label} · instant feedback'
               : topic.isPlaceholder
               ? 'No questions yet'
@@ -410,7 +427,10 @@ class _LessonList extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          canPractise
+          needsTest
+              ? 'Lessons for this topic are on the way. You can still take '
+                    'the topic test now.'
+              : canPractise
               ? 'Lessons for this topic are on the way. You can still '
                     'practise now.'
               : 'Lessons for this topic are on the way.',
@@ -421,7 +441,7 @@ class _LessonList extends ConsumerWidget {
           OutlinedButton.icon(
             onPressed: () => context.push(drillPath),
             icon: const Icon(Icons.fitness_center_rounded, size: 18),
-            label: const Text('Practise now'),
+            label: Text(needsTest ? 'Take the topic test' : 'Practise now'),
           ),
         ],
       ],
@@ -603,16 +623,34 @@ class _PracticeRail extends StatelessWidget {
     required this.topic,
     required this.accent,
     required this.canPractise,
+    required this.needsTest,
     required this.onPractise,
   });
 
   final CourseTopic topic;
   final Color accent;
   final bool canPractise;
+  final bool needsTest;
   final VoidCallback onPractise;
+
+  /// What a drill session is drawn from, as the counts say. It used to
+  /// promise past WAEC papers only, but drill mixes in Paragon practice.
+  String get _drawnFrom {
+    final c = topic.counts;
+    if (!c.isSplit) return '';
+    if (c.practice == 0) return ' from past WAEC papers';
+    if (c.past == 0) return ' from Paragon practice questions';
+    return ' from past WAEC papers and Paragon practice';
+  }
 
   @override
   Widget build(BuildContext context) {
+    // Drill caps a session at 20 questions and rotates which ones you get
+    // — see `drillQuestionsProvider`. Saying "all 103 questions" would be
+    // wrong for the larger topics.
+    final drill =
+        'up to 20 questions a session$_drawnFrom, with feedback after '
+        'every answer.';
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -624,7 +662,11 @@ class _PracticeRail extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            canPractise ? 'Ready to practise?' : 'Nothing to practise yet',
+            needsTest
+                ? 'Unlock practice'
+                : canPractise
+                ? 'Ready to practise?'
+                : 'Nothing to practise yet',
             style: AppTheme.heading3.copyWith(
               color: context.palette.textPrimary,
               fontWeight: FontWeight.w700,
@@ -632,12 +674,11 @@ class _PracticeRail extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            canPractise
-                // Drill caps a session at 20 questions and rotates which
-                // ones you get — see `drillQuestionsProvider`. Saying "all
-                // 103 questions" would be wrong for the larger topics.
-                ? 'Up to 20 questions a session, drawn from past WAEC '
-                      'papers, with feedback after every answer.'
+            needsTest
+                ? 'Score $kTopicTestPassPercent% on the topic test to open '
+                      'drill: $drill'
+                : canPractise
+                ? 'U${drill.substring(1)}'
                 : 'Questions for this topic have not been added to Paragon '
                       'yet. Check back as content lands.',
             style: AppTheme.bodyMd.copyWith(
@@ -658,7 +699,11 @@ class _PracticeRail extends StatelessWidget {
                 ),
               ),
               child: Text(
-                canPractise ? 'Start practising' : 'Coming soon',
+                needsTest
+                    ? 'Take the topic test'
+                    : canPractise
+                    ? 'Start practising'
+                    : 'Coming soon',
                 style: AppTheme.btnLabel.copyWith(
                   color: canPractise
                       ? Colors.white
