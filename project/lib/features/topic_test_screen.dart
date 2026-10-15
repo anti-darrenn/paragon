@@ -714,6 +714,11 @@ class _Review extends StatelessWidget {
                   QuestionImage(assetId: questions[n].explanationImageId),
                 ],
               ),
+            )
+          else
+            Text(
+              'No worked answer yet for this question.',
+              style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
             ),
           ReportProblemButton(
             questionId: questions[n].id,

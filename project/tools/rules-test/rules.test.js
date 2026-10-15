@@ -261,6 +261,12 @@ async function main() {
   await check("a reviewer cannot", assertFails(getDocs(collection(reviewer(), "metrics"))));
   await check("nobody writes them from the app", assertFails(setDoc(doc(adminCtx(), "metrics/2026-10-14"), { x: 1 })));
 
+  console.log("\n_meta/contentAudit: reviewers read, nobody writes");
+  await check("a reviewer reads the content audit", assertSucceeds(getDoc(doc(reviewer(), "_meta/contentAudit"))));
+  await check("a student cannot", assertFails(getDoc(doc(student("ann"), "_meta/contentAudit"))));
+  await check("nobody writes it from the app", assertFails(setDoc(doc(reviewer(), "_meta/contentAudit"), { total: 1 })));
+  await check("control: the notify cursor stays closed to reviewers", assertFails(getDoc(doc(reviewer(), "_meta/notify"))));
+
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));
 

@@ -112,6 +112,8 @@ class _AdminHomeScreenState extends ConsumerState<AdminHomeScreen> {
                       const SizedBox(height: 28),
                       const UsagePanel(),
                       const SizedBox(height: 28),
+                      const ContentQualityPanel(),
+                      const SizedBox(height: 28),
                       const WaitlistPanel(),
                       const SizedBox(height: 28),
                       if (role == StaffRole.admin) ...[

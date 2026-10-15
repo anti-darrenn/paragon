@@ -456,6 +456,16 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     ),
                   ),
                   const SizedBox(height: 16),
+                ] else if (_submitted) ...[
+                  // Said, rather than left blank: about one past question
+                  // in five has no worked answer yet (audit B1).
+                  Text(
+                    'No worked answer yet for this question.',
+                    style: AppTheme.bodyMd.copyWith(
+                      color: context.palette.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
                 ],
                 if (_submitted)
                   ExaminerInsightPanel(question: q, selected: _selected),

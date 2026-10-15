@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../content/session_mix.dart';
 import '../data/read_meter.dart';
 import '../models/learn_resource.dart';
 import '../models/lesson_asset.dart';
@@ -161,11 +162,14 @@ final challengeQuestionsProvider = FutureProvider.autoDispose
 /// retakes are unlimited and a fixed set would be a memory test.
 final topicTestQuestionsProvider =
     FutureProvider.family<List<Question>, String>((ref, topicId) async {
-      return _rotatedTopicQuestions(
+      // Half again as many as the test needs, so that capping a repeated
+      // generator template (audit A8) still leaves a full test.
+      final pool = await _rotatedTopicQuestions(
         ref.read(_firestoreProvider),
         topicId,
-        kTopicTestQuestions,
+        (kTopicTestQuestions * 3 / 2).ceil(),
       );
+      return mixSession(pool, (q) => q.text).take(kTopicTestQuestions).toList();
     });
 
 /// Family key for [exerciseQuestionsProvider]. A resource id alone is not
