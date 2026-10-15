@@ -18,7 +18,12 @@
   </script>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <title>Paragon</title>
+  <!-- What a crawler sees: the app replaces the title once it runs. Every
+       app route serves this file, and none has content a crawler can read,
+       so they all name the home page as canonical; the indexable pages are
+       /past-questions/** (audit E3). -->
+  <title>Paragon: free WAEC past questions and practice</title>
+  <link rel="canonical" href="https://paragon-hq.web.app/">
   <!-- Google Search Console ownership (owner's account). Keep it while the
        property is verified; removing it un-verifies the site. -->
   <meta name="google-site-verification" content="twsY9Z7Zx7fAglXMWjSZCMfzLkiIyfUDLmCLbOxf5oc" />

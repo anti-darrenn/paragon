@@ -29,6 +29,8 @@
  */
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
+const { execSync } = require("child_process");
 const { initAdmin } = require("../admin/credential");
 const R = require("./render");
 const { trimFonts } = require("./trim_fonts");
@@ -124,8 +126,67 @@ function write(rel, html, { sitemap = true } = {}) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
   if (sitemap && rel.endsWith("index.html")) {
-    written.push(`${ORIGIN}/${rel.replace(/index\.html$/, "")}`);
+    written.push({
+      url: `${ORIGIN}/${rel.replace(/index\.html$/, "")}`,
+      hash: crypto.createHash("sha1").update(html).digest("hex"),
+    });
   }
+}
+
+/**
+ * Titles and descriptions for every question page, unique across the site
+ * (audit E5: 86 titles and 34 descriptions were shared, because questions
+ * that start alike truncate alike). Within a clash the stem is lengthened,
+ * then the first options are added, then, for true duplicates (the same
+ * question twice in a paper, audit A5), a short id.
+ */
+function questionHeads(questions, subjects) {
+  const opts = (q) => q.options.slice(0, 2).map((o) => R.truncate(R.plainMath(o), 18)).join(", ");
+  const steps = [
+    (q, s) => [`WAEC ${q.year} ${s.name}: ${R.truncate(R.plainMath(q.text), 60)}`, 120],
+    (q, s) => [`WAEC ${q.year} ${s.name}: ${R.truncate(R.plainMath(q.text), 110)}`, 200],
+    (q, s) => [`WAEC ${q.year} ${s.name}: ${R.truncate(R.plainMath(q.text), 110)} (options: ${opts(q)})`, 200],
+    (q, s) => [`WAEC ${q.year} ${s.name}: ${R.truncate(R.plainMath(q.text), 100)} (${q.id.slice(0, 4)})`, 200],
+  ];
+  const level = new Map(questions.map((q) => [q.id, 0]));
+  const head = (q) => {
+    const s = subjects.get(q.subjectId);
+    const [stem, n] = steps[level.get(q.id)](q, s);
+    const lv = level.get(q.id);
+    const more = lv >= 2 ? ` (options: ${opts(q)}${lv >= 3 ? `; ref ${q.id.slice(0, 4)}` : ""})` : "";
+    return {
+      stem,
+      title: `${stem} | Paragon`,
+      description:
+        `WAEC ${q.year} ${s.name} past question with the answer${q.explanation ? " and a worked explanation" : ""}: ` +
+        `${R.truncate(R.plainMath(q.text), n)}${more}`,
+    };
+  };
+  for (let round = 0; round < steps.length - 1; round++) {
+    for (const field of ["title", "description"]) {
+      const groups = new Map();
+      for (const q of questions) {
+        const k = head(q)[field];
+        groups.set(k, [...(groups.get(k) || []), q]);
+      }
+      for (const group of groups.values()) {
+        if (group.length > 1) {
+          for (const q of group) level.set(q.id, Math.min(level.get(q.id) + 1, steps.length - 1));
+        }
+      }
+    }
+  }
+  const heads = new Map(questions.map((q) => [q.id, head(q)]));
+  const titles = new Set();
+  for (const [id, h] of heads) {
+    if (titles.has(h.title)) throw new Error(`Duplicate page title after de-duplication: ${h.title} (${id})`);
+    titles.add(h.title);
+  }
+  const descriptions = new Set([...heads.values()].map((h) => h.description));
+  if (descriptions.size < heads.size) {
+    console.warn(`${heads.size - descriptions.size} question pages still share a description.`);
+  }
+  return heads;
 }
 
 /** Links are root-relative: the pages are always served from the site root
@@ -185,6 +246,13 @@ function build(data) {
 
   const qDir = (s, q) => `${BASE}/waec/${s.slug}/${q.year}/${q.id.slice(0, 10)}/`;
   const appTopic = (s, t) => `/subject/${s.id}/course/topic/${t.id}`;
+  const heads = questionHeads(questions, subjects);
+  // Readable in a list: maths as text, never TeX source (audit B3).
+  const preview = (q) => R.escapeHtml(R.truncate(R.plainMath(q.text), 160));
+  // The visible breadcrumb's trail as JSON-LD, with absolute URLs (E7).
+  const crumbsLd = (items) =>
+    R.breadcrumbJsonLd(items.map(([label, rel]) => [label, rel == null ? undefined : `${ORIGIN}/${rel}`]));
+  const listLd = (name, list, s) => R.itemListJsonLd(name, list.map((q) => `${ORIGIN}/${qDir(s, q)}`));
 
   const subjectCards = [];
   for (const [subjectId, list] of bySubject) {
@@ -204,7 +272,7 @@ function build(data) {
         const prev = inYear[i - 1];
         const next = inYear[i + 1];
         const url = `${ORIGIN}/${dir}`;
-        const stem = R.truncate(R.plainText(q.text), 60);
+        const head = heads.get(q.id);
         const answer = `${R.LETTERS[q.correctIndex]}. ${R.renderRich(q.options[q.correctIndex])}`;
         const body = `
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}${sDir}`], [String(year), `${root}${sDir}${year}/`]])}
@@ -226,11 +294,14 @@ ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml
         write(`${dir}index.html`, R.page({
           // No question number: Paragon does not have the paper's own
           // numbering, and its order is not WAEC's.
-          title: `WAEC ${year} ${s.name}: ${stem} | Paragon`,
-          description: `WAEC ${year} ${s.name} past question with the answer${q.explanation ? " and a worked explanation" : ""}: ${R.truncate(R.plainText(q.text), 120)}`,
+          title: head.title,
+          description: head.description,
           canonical: url,
           body,
-          jsonLd: R.quizJsonLd({ q, subjectName: s.name, url }),
+          jsonLd: [
+            R.quizJsonLd({ q, subjectName: s.name, url, name: head.stem }),
+            crumbsLd([["Past questions", `${BASE}/`], [`WAEC ${s.name}`, sDir], [String(year), `${sDir}${year}/`], [head.stem]]),
+          ],
           root,
           hasMath: true,
         }));
@@ -244,13 +315,17 @@ ${t && tSlug ? `<p>Topic: <a href="${root}${sDir}topic/${tSlug}/">${R.escapeHtml
         description: `All ${inYear.length} WAEC ${year} ${s.name} objective questions in Paragon, each with its answer.`,
         canonical: `${ORIGIN}/${dir}`,
         root,
+        jsonLd: [
+          crumbsLd([["Past questions", `${BASE}/`], [`WAEC ${s.name}`, sDir], [String(year)]]),
+          listLd(`WAEC ${year} ${s.name} past questions`, inYear, s),
+        ],
         body: `
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}${sDir}`], [String(year)]])}
 <h1>WAEC ${year} ${R.escapeHtml(s.name)}</h1>
 <p>${inYear.length} questions. Open one to see it in full, with its answer.</p>
 <div class="cta"><a class="button" href="/waec/${s.id}/setup">Sit these as a timed paper in Paragon</a></div>
 <ol class="paper">${inYear
-          .map((q) => `<li><a href="${root}${qDir(s, q)}">${R.escapeHtml(R.truncate(R.plainText(q.text), 160))}</a></li>`)
+          .map((q) => `<li><a href="${root}${qDir(s, q)}">${preview(q)}</a></li>`)
           .join("\n")}</ol>`,
       }));
     }
@@ -269,13 +344,17 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}
         description: `${inTopic.length} WAEC ${s.name} past questions on ${t.name}, with answers.`,
         canonical: `${ORIGIN}/${dir}`,
         root,
+        jsonLd: [
+          crumbsLd([["Past questions", `${BASE}/`], [`WAEC ${s.name}`, sDir], [t.name]]),
+          listLd(`${t.name}: WAEC ${s.name} past questions`, inTopic, s),
+        ],
         body: `
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}${sDir}`], [t.name]])}
 <h1>${R.escapeHtml(t.name)}</h1>
 <p>${inTopic.length} WAEC ${R.escapeHtml(s.name)} past questions on this topic.</p>
 <div class="cta"><a class="button" href="${appTopic(s, t)}">Learn and practise ${R.escapeHtml(t.name)} in Paragon</a></div>
 <ol class="paper">${inTopic
-          .map((q) => `<li><a class="qlink" href="${root}${qDir(s, q)}">WAEC ${q.year}</a><div>${R.escapeHtml(R.truncate(R.plainText(q.text), 160))}</div></li>`)
+          .map((q) => `<li><a class="qlink" href="${root}${qDir(s, q)}">WAEC ${q.year}</a><div>${preview(q)}</div></li>`)
           .join("\n")}</ol>`,
       }));
     }
@@ -287,6 +366,7 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`, `${root}
       description: `${list.length} WAEC ${s.name} objective past questions from ${years[years.length - 1]} to ${years[0]}, by year and by topic, with answers.`,
       canonical: `${ORIGIN}/${sDir}`,
       root,
+      jsonLd: crumbsLd([["Past questions", `${BASE}/`], [`WAEC ${s.name}`]]),
       body: `
 ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`]])}
 <h1>WAEC ${R.escapeHtml(s.name)} past questions</h1>
@@ -300,24 +380,91 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`]])}
     subjectCards.push({ s, count: list.length, from: years[years.length - 1], to: years[0] });
   }
 
-  // The index.
+  // The index, at /past-questions/ and again at /past-questions/waec/,
+  // which every subject's URL implies and used to be a 404 (audit E8).
+  // The second copy points its canonical at the first.
   subjectCards.sort((a, b) => a.s.name.localeCompare(b.s.name));
-  write(`${BASE}/index.html`, R.page({
+  const index = (rel) => R.page({
     title: "WAEC past questions and answers | Paragon",
     description: "Free WAEC objective past questions with answers, by subject, year and topic.",
     canonical: `${ORIGIN}/${BASE}/`,
-    root: "../",
+    root: "/",
+    jsonLd: crumbsLd([["Past questions"]]),
     body: `
 <h1>WAEC past questions</h1>
 <p>Real WAEC objective questions with their answers, by year and by topic. Paragon also has practice questions and lessons for every topic; those are in the app.</p>
 <ul class="list">${subjectCards
-      .map((c) => `<li><a href="waec/${c.s.slug}/">WAEC ${R.escapeHtml(c.s.name)}</a> <span class="count">${c.count} questions, ${c.from}–${c.to}</span></li>`)
+      .map((c) => `<li><a href="/${BASE}/waec/${c.s.slug}/">WAEC ${R.escapeHtml(c.s.name)}</a> <span class="count">${c.count} questions, ${c.from}–${c.to}</span></li>`)
       .join("")}</ul>
 <div class="cta"><a class="button" href="/">Start practising free</a></div>`,
-  }));
+  });
+  write(`${BASE}/index.html`, index());
+  write(`${BASE}/waec/index.html`, index(), { sitemap: false });
 
   writeNotFound();
   return { questions: questions.length, subjects: subjectCards.length };
+}
+
+// ─── Privacy, terms and About as plain pages ─────────────────────────
+
+/** The app's own legal and About text, from `tool/export_legal.dart`. Run
+ *  on every build, never cached, so the static copies cannot fall behind
+ *  the app's. Needs `dart` on the PATH, as the Flutter build does. */
+function loadLegal() {
+  const project = path.resolve(__dirname, "..", "..");
+  const json = execSync("dart run tool/export_legal.dart", {
+    cwd: project,
+    encoding: "utf8",
+    maxBuffer: 16 * 1024 * 1024,
+    stdio: ["ignore", "pipe", "inherit"],
+  });
+  return JSON.parse(json.slice(json.indexOf("{")));
+}
+
+function sectionHtml(s) {
+  return `<h2>${R.escapeHtml(s.heading)}</h2>
+${s.paragraphs.map((p) => `<p>${R.escapeHtml(p)}</p>`).join("\n")}
+${s.bullets.length ? `<ul>${s.bullets.map((b) => `<li>${R.escapeHtml(b)}</li>`).join("")}</ul>` : ""}`;
+}
+
+/**
+ * `/privacy/`, `/terms/` and `/about/` as real HTML (audit E2). The app
+ * renders these on a canvas, so a crawler, Google's OAuth consent review
+ * and every footer link from the static pages used to get "Loading".
+ * Hosting serves these files ahead of the SPA rewrite; moving between
+ * screens inside the app still shows the app's own versions.
+ */
+function writeLegalPages(legal) {
+  const contact = `<h2>Contact</h2>
+<p>${R.escapeHtml(legal.about.contactText)}</p>
+<p><a href="mailto:${R.escapeHtml(legal.contactEmail)}">${R.escapeHtml(legal.contactEmail)}</a></p>`;
+  const docPage = (slug, doc, description) =>
+    write(`${slug}/index.html`, R.page({
+      title: `${doc.title} | Paragon`,
+      description,
+      canonical: `${ORIGIN}/${slug}/`,
+      root: "/",
+      body: `
+<h1>${R.escapeHtml(doc.title)}</h1>
+<p class="kicker">Last updated ${R.escapeHtml(legal.lastUpdated)} · ${R.escapeHtml(legal.publisher)}</p>
+<p>${R.escapeHtml(doc.intro)}</p>
+${doc.sections.map(sectionHtml).join("\n")}
+<div class="cta"><a class="button" href="/">Open the app</a></div>`,
+    }));
+  docPage("privacy", legal.privacy, "What Paragon collects about you, why, and what you can do about it.");
+  docPage("terms", legal.terms, "The terms for using Paragon, free WAEC prep.");
+  write("about/index.html", R.page({
+    title: "About Paragon | Paragon",
+    description: "Paragon is free WAEC prep: lessons, topic tests, practice and past papers. Where the questions come from, and how to reach us.",
+    canonical: `${ORIGIN}/about/`,
+    root: "/",
+    body: `
+<h1>About Paragon</h1>
+${legal.about.sections.map(sectionHtml).join("\n")}
+${contact}
+<p><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms</a></p>
+<div class="cta"><a class="button" href="/">Open the app</a></div>`,
+  }));
 }
 
 /** Hosting serves `/404.html`, with a 404 status, for any path that is
@@ -355,14 +502,40 @@ function copyAssets() {
   fs.copyFileSync(path.join(__dirname, "site.css"), path.join(OUT, BASE, "site.css"));
 }
 
+/**
+ * Each page's `lastmod` is the day its HTML last changed, not the build day
+ * (audit E6: search engines ignore a lastmod that is always "today"). A
+ * hash of every page is kept in `.cache/lastmod.json` between builds; a
+ * page not in it (a first build, or a fresh CI cache) gets today.
+ */
+function lastmods(pages, today) {
+  const file = path.join(CACHE, "lastmod.json");
+  let previous = {};
+  try {
+    previous = JSON.parse(fs.readFileSync(file, "utf8"));
+  } catch (_) {
+    // first build: every page is new
+  }
+  const next = {};
+  for (const { url, hash } of pages) {
+    const before = previous[url];
+    next[url] = before && before.hash === hash ? before : { hash, date: today };
+  }
+  fs.mkdirSync(CACHE, { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(next));
+  return next;
+}
+
 function writeSitemaps() {
-  const urls = [`${ORIGIN}/`, ...written];
+  const today = new Date().toISOString().slice(0, 10);
+  const dates = lastmods(written, today);
+  // The app itself has no meaningful lastmod: leave it out.
+  const urls = [{ url: `${ORIGIN}/`, date: null }, ...written.map(({ url }) => ({ url, date: dates[url].date }))];
   const chunks = [];
   for (let i = 0; i < urls.length; i += 45000) chunks.push(urls.slice(i, i + 45000));
-  const today = new Date().toISOString().slice(0, 10);
   const urlset = (list) =>
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${list
-      .map((u) => `<url><loc>${R.escapeHtml(u)}</loc><lastmod>${today}</lastmod></url>`)
+      .map(({ url, date }) => `<url><loc>${R.escapeHtml(url)}</loc>${date ? `<lastmod>${date}</lastmod>` : ""}</url>`)
       .join("\n")}\n</urlset>\n`;
   if (chunks.length === 1) {
     fs.writeFileSync(path.join(OUT, "sitemap.xml"), urlset(chunks[0]));
@@ -402,9 +575,11 @@ async function main() {
     console.log(`Dropped ${trimmed.families} unused KaTeX font families (${trimmed.files} files, ${Math.round(trimmed.bytes / 1024)} KB).`);
   }
   fs.rmSync(path.join(OUT, BASE), { recursive: true, force: true });
+  const legal = loadLegal();
   const data = await loadData();
   copyAssets();
   const { questions, subjects } = build(data);
+  writeLegalPages(legal);
   const urls = writeSitemaps();
   console.log(`Wrote ${questions} question pages across ${subjects} subjects; ${urls} URLs in the sitemap.`);
   process.exit(0);

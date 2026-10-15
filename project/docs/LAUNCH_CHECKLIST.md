@@ -86,7 +86,8 @@ Every script is a dry run first. Read its output, then re-run it with `--apply`.
 - [ ] Submit `https://<domain>/sitemap.xml` in **Google Search Console**.
 - [ ] Optional: a **custom domain**. If you add one:
   - pass `--origin=https://<domain>` to `build_static_site.js`;
-  - update `og:url` and `og:image` in `web/index.html`;
+  - update `og:url`, `og:image` and the canonical link in `web/index.html`;
+  - update `OG_IMAGE` in `tools/site/render.js`;
   - update `appOrigin`'s fallback in `lib/core/web/browser_other.dart`.
 
 ## 5. Decisions still open

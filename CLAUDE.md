@@ -124,7 +124,25 @@ questions are published (`source == 'waec'`, `hasAnswer`, a real `correctIndex`)
 generated practice. Titles carry no question number, because Paragon doesn't have the
 paper's own numbering. The first run reads about 4,500 documents; the result is cached in
 `tools/site/.cache/`, and only `--refresh` reads again. Maths is rendered server-side by
-KaTeX (`render.js` mirrors `FullLatexView`'s dialect; change both together).
+KaTeX (`render.js` mirrors `FullLatexView`'s dialect; change both together). Wherever text
+must be plain (titles, descriptions, list previews, JSON-LD), `plainMath()` turns the maths
+into readable text (`\frac{2x-1}{x+3}` → `(2x-1)/(x+3)`), never TeX source. Question titles are
+de-duplicated at build time, and the build fails if two are still the same. Sitemap `lastmod`
+is the day a page's HTML last changed (hashes in `.cache/lastmod.json`).
+
+**`/privacy/`, `/terms/` and `/about/` are static pages too**, so that crawlers and Google's
+OAuth review can read them. They are generated from the app's own text:
+`build_static_site.js` runs `dart run tool/export_legal.dart` on every build, never from a
+cache. That exporter reads `legal_documents.dart` and `about_content.dart`, which must stay
+pure Dart (no Flutter imports). In-app navigation still shows the Flutter screens.
+
+**Hosting headers** (`firebase.json`):
+- `X-Frame-Options: DENY`, `frame-ancestors 'none'`, `nosniff`, a referrer policy and a
+  permissions policy on every path except `/__/`. Firebase Auth frames `/__/auth/iframe`.
+- A full Content-Security-Policy is not set yet. It needs testing against CanvasKit,
+  Firebase and YouTube first.
+- App routes are `no-cache`, using the same regex as the rewrite.
+- `/past-questions/img/**` is immutable, because asset ids never change.
 
 **After adding or removing any plugin, run `flutter clean` before the next release
 build.** The release build reuses a cached `web_plugin_registrant.dart` under
