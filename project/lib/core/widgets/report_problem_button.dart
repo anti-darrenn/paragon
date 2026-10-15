@@ -13,9 +13,18 @@ import '../theme/app_palette.dart';
 /// disagreeing with an answer is how those get found, so the wording invites
 /// it rather than treating a report as an edge case.
 class ReportProblemButton extends ConsumerStatefulWidget {
-  const ReportProblemButton({super.key, required this.questionId});
+  const ReportProblemButton({
+    super.key,
+    required this.questionId,
+    this.isGenerated = false,
+  });
 
   final String questionId;
+
+  /// A Paragon practice question (`Question.isGenerated`), whose answer a
+  /// program of ours worked out, not one from the public question bank.
+  /// The sheet used to blame "a public question bank" for both (audit C10).
+  final bool isGenerated;
 
   @override
   ConsumerState<ReportProblemButton> createState() => _ReportProblemButtonState();
@@ -55,40 +64,54 @@ class _ReportProblemButtonState extends ConsumerState<ReportProblemButton> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
+      // Scrolls: a bottom sheet is capped at 9/16 of the screen, and on a
+      // short one (a phone on its side) the last reasons were cut off.
       builder: (sheetContext) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 4),
-              child: Text(
-                "What's wrong with this question?",
-                style: TextStyle(
-                  color: context.palette.textStrong,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 20, 20, 4),
+                child: Text(
+                  "What's wrong with this question?",
+                  style: TextStyle(
+                    color: context.palette.textStrong,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(20, 0, 20, 12),
-              child: Text(
-                'Our answers come from a public question bank, so some are wrong. '
-                'Telling us is how they get fixed.',
-                style: TextStyle(color: context.palette.onMedium, fontSize: 13),
-              ),
-            ),
-            for (final reason in FlagReason.values)
-              ListTile(
-                title: Text(
-                  reason.label,
-                  style: TextStyle(color: context.palette.onHigh, fontSize: 14),
+              Padding(
+                padding: EdgeInsets.fromLTRB(20, 0, 20, 12),
+                child: Text(
+                  widget.isGenerated
+                      ? 'This is a Paragon practice question, worked out by a '
+                            'program we wrote. If it looks wrong, tell us and '
+                            "we'll fix it."
+                      : 'Answers are checked as reports come in. If this one '
+                            'looks wrong, telling us is how it gets fixed.',
+                  style: TextStyle(
+                    color: context.palette.onMedium,
+                    fontSize: 13,
+                  ),
                 ),
-                onTap: () => Navigator.of(sheetContext).pop(reason),
               ),
-            const SizedBox(height: 8),
-          ],
+              for (final reason in FlagReason.values)
+                ListTile(
+                  title: Text(
+                    reason.label,
+                    style: TextStyle(
+                      color: context.palette.onHigh,
+                      fontSize: 14,
+                    ),
+                  ),
+                  onTap: () => Navigator.of(sheetContext).pop(reason),
+                ),
+              const SizedBox(height: 8),
+            ],
+          ),
         ),
       ),
     );

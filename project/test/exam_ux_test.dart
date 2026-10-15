@@ -179,6 +179,8 @@ void main() {
           isButton: true,
           isSelected: true,
           hasSelectedState: true,
+          // One answer per question: a screen reader says "1 of 4".
+          isInMutuallyExclusiveGroup: true,
           hasTapAction: true,
         ),
       );

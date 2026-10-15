@@ -709,6 +709,7 @@ class _WaecExamScreenState extends ConsumerState<WaecExamScreen> {
                     child: Semantics(
                       button: true,
                       selected: isSelected,
+                      inMutuallyExclusiveGroup: true,
                       label: 'Option $letter: ${speakText(q.options[i])}',
                       // excludeSemantics drops the InkWell's own action, so
                       // the tap is given here — without it a screen reader

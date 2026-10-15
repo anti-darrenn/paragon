@@ -252,7 +252,10 @@ class _ExercisePaneState extends ConsumerState<ExercisePane> {
               child: Wrap(
                 crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
-                  ReportProblemButton(questionId: q.id),
+                  ReportProblemButton(
+                    questionId: q.id,
+                    isGenerated: q.isGenerated,
+                  ),
                   QuestionBookmarkButton(question: q),
                 ],
               ),
