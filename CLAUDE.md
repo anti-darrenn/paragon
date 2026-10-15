@@ -167,7 +167,32 @@ node reclassify.js                        # propose topic reassignments (dispatc
 node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
 node ../admin/content_lint.js             # published Learn items with placeholder titles or broken maths
 node ../admin/check_counts.js             # subject counts == sum of topic counts
+node ../admin/content_audit.js --cache    # past questions vs the content rules (no reads; --list=<rule>, --publish)
+node ../admin/fix_questions.js            # mechanical fixes (dry run; --commit, --revert=.backups/…)
+node ../admin/apply_corrections.js --file=corrections/<file>.js   # reviewed hand corrections (dry run; --commit)
 ```
+
+**Past-question content rules** live in `tools/admin/question_rules.js`, which is pure and
+tested.
+- **The rules:** the audit's checks (broken or stray LaTeX, duplicate options, lost negative
+  powers, missing diagrams, duplicates in a paper, and the rest), and the mechanical fixes:
+  `10-3` to `10^{-3}`, flat units, `30o` to `30°`, naira, OCR's `lf`/`ln`, typos.
+- **Fixes touch only text outside maths.** They turn notation into maths that says the
+  same thing.
+- **Anything needing judgement** goes into a `corrections/` file, reviewed, then applied by
+  `apply_corrections.js`. That covers retiring a duplicate (`hasAnswer: false` with a
+  `reviewNote` and `duplicateOf`), rewording a stem, or a retag (which records
+  `previousTopicId`).
+- **Safety.** Every write keeps a backup in `tools/admin/.backups/` (gitignored), and
+  `--revert` restores it.
+- **Imports.** `import_questions.js` refuses the level-A rules.
+- **The studio.** Its Content quality panel reads the summary that
+  `content_audit.js --publish` writes to `_meta/contentAudit`.
+- **The record.** `docs/audit/CONTENT_REVIEW_2026-10-15.md` is what was decided and done.
+
+Generated practice comes from a few templates per topic. Indices has 300 questions from
+nine. `mixSession` (`lib/core/content/session_mix.dart`) caps each template in a drill or
+topic-test session and keeps repeats apart.
 
 The original chain — `1_scrape`, `2_classify`, `fix_misclassified`, `3_seed` — is retired
 in `tools/scraper/archive/` (see its README): the scrape selectors match nothing since
