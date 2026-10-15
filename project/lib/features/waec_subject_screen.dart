@@ -10,6 +10,7 @@ import '../core/auth/guest_limits.dart';
 import '../core/theme/app_colors.dart';
 import '../core/content/question_counts.dart';
 import '../core/models/subject.dart';
+import '../core/content/subject_catalog.dart';
 import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
@@ -213,7 +214,7 @@ class _WaecSubjectTile extends StatelessWidget {
           ? () => ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text(GuestLimits.lockedSubjectMessage)),
             )
-          : () => context.push('/waec/${subject.id}/setup'),
+          : () => context.push('/waec/${SubjectCatalog.slugify(subject.name)}/setup'),
       child: Row(
         children: [
           Container(
@@ -265,7 +266,7 @@ class _WaecSubjectTile extends StatelessWidget {
                 if (_hasTheory && !locked)
                   TextButton(
                     onPressed: () =>
-                        context.push('/waec/${subject.id}/theory'),
+                        context.push('/waec/${SubjectCatalog.slugify(subject.name)}/theory'),
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,
                       minimumSize: const Size(0, 36),

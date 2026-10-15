@@ -97,10 +97,6 @@ class _TopicBody extends ConsumerWidget {
   final CourseModule module;
   final CourseTopic topic;
 
-  /// Drill route — only valid for a live topic, where both ids exist.
-  String get _drillPath =>
-      '/subject/${course.subjectId}/unit/${module.id}/topic/${topic.id}';
-
   bool get _canPractise =>
       !topic.isPlaceholder &&
       course.subjectId != null &&
@@ -117,7 +113,9 @@ class _TopicBody extends ConsumerWidget {
     final needsTest =
         _canPractise &&
         ref.watch(drillAccessProvider(topic.id)) == DrillAccess.testRequired;
-    final practicePath = needsTest ? '$_drillPath/test' : _drillPath;
+    final practicePath = needsTest
+        ? course.testPath(topic)
+        : course.drillPath(topic);
 
     final lessonList = _LessonList(
       course: course,
@@ -145,7 +143,7 @@ class _TopicBody extends ConsumerWidget {
         _Breadcrumb(
           crumbs: [
             const _Crumb('Courses', '/courses'),
-            _Crumb(course.name, '/subject/${course.key}/course'),
+            _Crumb(course.name, '/subject/${course.slug}/course'),
             _Crumb(module.name, null),
           ],
         ),
@@ -166,7 +164,7 @@ class _TopicBody extends ConsumerWidget {
             if (!topic.isPlaceholder)
               ShareLinkButton(
                 title: '${topic.name} · ${course.name} on Paragon',
-                path: '/subject/${course.key}/course/topic/${topic.id}',
+                path: course.topicPath(topic),
               ),
           ],
         ),

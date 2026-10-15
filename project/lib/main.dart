@@ -2,7 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 import 'firebase_options.dart';
@@ -19,6 +21,15 @@ void main() async {
   // does for `go`), so the URL always names the page on screen.
   GoRouter.optionURLReflectsImperativeAPIs = true;
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Space Grotesk ships in assets/google_fonts/, so nothing is fetched from
+  // fonts.gstatic.com at startup (audit F2). A weight that is not bundled
+  // fails loudly in debug instead of quietly reaching for the network.
+  GoogleFonts.config.allowRuntimeFetching = false;
+  LicenseRegistry.addLicense(() async* {
+    final ofl = await rootBundle.loadString('assets/google_fonts/OFL.txt');
+    yield LicenseEntryWithLineBreaks(['google_fonts'], ofl);
+  });
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 

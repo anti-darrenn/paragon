@@ -223,7 +223,7 @@ class CoursePlanPanel extends StatelessWidget {
                       )?.replaceFirst('WAEC', 'WAEC ${course.name}'),
                   ].join(' · '),
                   onTap: () => context.push(
-                    '/subject/${course.key}/course/topic/${t.id}',
+                    course.pathForTopicId(t.id),
                   ),
                 ),
             ],

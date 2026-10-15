@@ -161,7 +161,7 @@ class _TasterScreenState extends ConsumerState<TasterScreen> {
                 height: 48,
                 child: ElevatedButton(
                   onPressed: () => context.go(
-                    '/subject/${course.key}/course/topic/${topic.id}',
+                    course.pathForTopicId(topic.id),
                   ),
                   child: Text('Learn ${topic.name}'),
                 ),

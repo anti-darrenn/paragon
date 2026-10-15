@@ -34,13 +34,8 @@ import 'studio/studio_storage.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 
-/// Path of the editor for an existing resource — also the link in the
-/// draft-notification email (`tools/admin/notify_drafts.js`).
-String adminResourcePath(String topicId, String resourceId) =>
-    '/admin/topic/$topicId/resource/$resourceId';
-
-String adminNewResourcePath(String topicId, LearnResourceType type) =>
-    '/admin/topic/$topicId/new/${type.name}';
+import 'admin_paths.dart';
+export 'admin_paths.dart';
 
 /// Write or edit one Learn resource: an article, a video or an exercise.
 ///

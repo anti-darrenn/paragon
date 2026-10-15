@@ -7,50 +7,72 @@ import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/router/return_to.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
 import 'package:paragon/features/about_screen.dart';
-import 'package:paragon/features/account/deleting_screen.dart';
-import 'package:paragon/features/account/export_screen.dart';
-import 'package:paragon/features/account/legal_accept_screen.dart';
-import 'package:paragon/features/account/security_screen.dart';
+import 'package:paragon/features/account/deleting_screen.dart'
+    deferred as deleting;
+import 'package:paragon/features/account/export_screen.dart'
+    deferred as export_data;
+import 'package:paragon/features/account/legal_accept_screen.dart'
+    deferred as legal_accept;
+import 'package:paragon/features/account/security_screen.dart'
+    deferred as security;
 import 'package:paragon/features/account/upgrade_screen.dart';
 import 'package:paragon/core/models/learn_resource.dart';
 import 'package:paragon/core/models/question.dart';
 import 'package:paragon/core/repositories/exam_result_repository.dart';
-import 'package:paragon/features/admin/admin_resource_editor_screen.dart';
-import 'package:paragon/features/admin/admin_flag_screen.dart';
-import 'package:paragon/features/admin/admin_home_screen.dart';
-import 'package:paragon/features/admin/studio/team_screen.dart';
-import 'package:paragon/features/admin/studio/topic_planner_screen.dart';
+import 'package:paragon/features/admin/admin_resource_editor_screen.dart'
+    deferred as editor;
+import 'package:paragon/features/admin/admin_flag_screen.dart'
+    deferred as admin_flag;
+import 'package:paragon/features/admin/admin_paths.dart';
+import 'package:paragon/features/admin/admin_home_screen.dart'
+    deferred as admin_home;
+import 'package:paragon/features/admin/studio/team_screen.dart'
+    deferred as team;
+import 'package:paragon/features/admin/studio/topic_planner_screen.dart'
+    deferred as planner;
 import 'package:paragon/features/lesson/lesson_screen.dart';
 import 'package:paragon/features/course_catalog_screen.dart';
 import 'package:paragon/features/course_index_screen.dart';
 import 'package:paragon/features/dashboard_screen.dart';
 import 'package:paragon/features/plan/plan_screen.dart';
-import 'package:paragon/features/profile_settings_screen.dart';
-import 'package:paragon/features/profile/edit_profile_screen.dart';
+import 'package:paragon/features/profile_settings_screen.dart'
+    deferred as profile_settings;
+import 'package:paragon/features/profile/edit_profile_screen.dart'
+    deferred as edit_profile;
 import 'package:paragon/features/profile/me_screen.dart';
-import 'package:paragon/features/profile/username_settings_screen.dart';
-import 'package:paragon/features/onboarding/avatar_screen.dart';
-import 'package:paragon/features/onboarding/display_name_screen.dart';
-import 'package:paragon/features/onboarding/profile_screen.dart';
-import 'package:paragon/features/onboarding/subjects_screen.dart';
-import 'package:paragon/features/onboarding/username_screen.dart';
-import 'package:paragon/features/challenge_screen.dart';
+import 'package:paragon/features/profile/username_settings_screen.dart'
+    deferred as username_settings;
+import 'package:paragon/features/onboarding/avatar_screen.dart'
+    deferred as onb_avatar;
+import 'package:paragon/features/onboarding/display_name_screen.dart'
+    deferred as onb_name;
+import 'package:paragon/features/onboarding/profile_screen.dart'
+    deferred as onb_profile;
+import 'package:paragon/features/onboarding/subjects_screen.dart'
+    deferred as onb_subjects;
+import 'package:paragon/features/onboarding/username_screen.dart'
+    deferred as onb_username;
+import 'package:paragon/features/challenge_screen.dart' deferred as challenge;
 import 'package:paragon/features/drill_screen.dart';
-import 'package:paragon/features/exam_review_screen.dart';
+import 'package:paragon/features/exam_review_screen.dart'
+    deferred as exam_review;
 import 'package:paragon/features/mistakes/mistakes_practice_screen.dart';
 import 'package:paragon/features/mistakes/mistakes_screen.dart';
 import 'package:paragon/features/legal_screen.dart';
-import 'package:paragon/features/settings_screen.dart';
-import 'package:paragon/features/settings/reading_settings_screen.dart';
+import 'package:paragon/features/settings_screen.dart' deferred as settings;
+import 'package:paragon/features/settings/reading_settings_screen.dart'
+    deferred as reading_settings;
 import 'package:paragon/features/study/offline/offline_topics_screen.dart';
 import 'package:paragon/features/sign_in_screen.dart';
 import 'package:paragon/features/study/cards/card_review_screen.dart';
 import 'package:paragon/features/study/notes/saved_screen.dart';
-import 'package:paragon/features/subjects_settings_screen.dart';
+import 'package:paragon/features/subjects_settings_screen.dart'
+    deferred as subjects_settings;
 import 'package:paragon/features/topic_test_screen.dart';
 import 'package:paragon/features/topic_overview_screen.dart';
-import 'package:paragon/features/waec_exam_screen.dart';
-import 'package:paragon/features/waec_exam_setup_screen.dart';
+import 'package:paragon/features/waec_exam_screen.dart' deferred as waec_exam;
+import 'package:paragon/features/waec_exam_setup_screen.dart'
+    deferred as waec_setup;
 import 'package:paragon/features/waec_subject_screen.dart';
 import 'package:paragon/features/welcome_screen.dart';
 import 'package:paragon/features/review/review_screen.dart';
@@ -58,14 +80,21 @@ import 'package:paragon/features/search/search_screen.dart';
 import 'package:paragon/core/widgets/nav/app_shell.dart';
 import 'package:paragon/features/challenge_link/challenge_link_screen.dart';
 import 'package:paragon/features/taster/taster_screen.dart';
-import 'package:paragon/features/rooms/join_room_screen.dart';
-import 'package:paragon/features/rooms/new_room_screen.dart';
-import 'package:paragon/features/rooms/host_room_screen.dart';
-import 'package:paragon/features/rooms/player_room_screen.dart';
-import 'package:paragon/features/admin/studio/insight_editor_screen.dart';
-import 'package:paragon/features/theory/theory_screen.dart';
-import 'package:paragon/features/support_screen.dart';
+import 'package:paragon/features/rooms/join_room_screen.dart'
+    deferred as join_room;
+import 'package:paragon/features/rooms/new_room_screen.dart'
+    deferred as new_room;
+import 'package:paragon/features/rooms/host_room_screen.dart'
+    deferred as host_room;
+import 'package:paragon/features/rooms/player_room_screen.dart'
+    deferred as player_room;
+import 'package:paragon/features/admin/studio/insight_editor_screen.dart'
+    deferred as insight_editor;
+import 'package:paragon/features/theory/theory_screen.dart' deferred as theory;
+import 'package:paragon/features/support_screen.dart' deferred as support;
 import 'package:paragon/features/not_found_screen.dart';
+import 'package:paragon/core/widgets/deferred_screen.dart';
+import 'package:paragon/features/route_keys.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -292,23 +321,43 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // OnboardingStep so the router and the resolver cannot disagree.
       GoRoute(
         path: '/onboarding/username',
-        builder: (context, state) => const OnboardingUsernameScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'onboarding',
+          load: onb_username.loadLibrary,
+          builder: (_) => onb_username.OnboardingUsernameScreen(),
+        ),
       ),
       GoRoute(
         path: '/onboarding/displayname',
-        builder: (context, state) => const OnboardingDisplayNameScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'onboarding',
+          load: onb_name.loadLibrary,
+          builder: (_) => onb_name.OnboardingDisplayNameScreen(),
+        ),
       ),
       GoRoute(
         path: '/onboarding/avatar',
-        builder: (context, state) => const OnboardingAvatarScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'onboarding',
+          load: onb_avatar.loadLibrary,
+          builder: (_) => onb_avatar.OnboardingAvatarScreen(),
+        ),
       ),
       GoRoute(
         path: '/onboarding/subjects',
-        builder: (context, state) => const OnboardingSubjectsScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'onboarding',
+          load: onb_subjects.loadLibrary,
+          builder: (_) => onb_subjects.OnboardingSubjectsScreen(),
+        ),
       ),
       GoRoute(
         path: '/onboarding/profile',
-        builder: (context, state) => const OnboardingProfileScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'onboarding',
+          load: onb_profile.loadLibrary,
+          builder: (_) => onb_profile.OnboardingProfileScreen(),
+        ),
       ),
       // ── The app shell ───────────────────────────────────────────────
       // Every screen a student browses sits inside this route, under one
@@ -388,8 +437,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               ),
               GoRoute(
                 path: '/waec/:subjectId/setup',
-                builder: (context, state) => WaecExamSetupScreen(
-                  subjectId: state.pathParameters['subjectId']!,
+                // `:subjectId` is an id or a slug (/waec/mathematics/setup).
+                builder: (context, state) => SubjectKeyRoute(
+                  subjectKey: state.pathParameters['subjectId']!,
+                  builder: (id) => DeferredScreen(
+                    id: 'waec',
+                    load: waec_setup.loadLibrary,
+                    builder: (_) => waec_setup.WaecExamSetupScreen(
+                      subjectId: id,
+                      routeKey: state.pathParameters['subjectId'],
+                    ),
+                  ),
                 ),
               ),
               // A finished exam, marked. Opened from the results with the
@@ -397,11 +455,15 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               // subject's history.
               GoRoute(
                 path: '/waec/review/:examId',
-                builder: (context, state) => ExamReviewScreen(
-                  examId: state.pathParameters['examId']!,
-                  initial: state.extra is ExamReview
-                      ? state.extra as ExamReview
-                      : null,
+                builder: (context, state) => DeferredScreen(
+                  id: 'waec',
+                  load: exam_review.loadLibrary,
+                  builder: (_) => exam_review.ExamReviewScreen(
+                    examId: state.pathParameters['examId']!,
+                    initial: state.extra is ExamReview
+                        ? state.extra as ExamReview
+                        : null,
+                  ),
                 ),
               ),
             ],
@@ -452,7 +514,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               ),
               GoRoute(
                 path: '/settings',
-                builder: (context, state) => const SettingsScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: settings.loadLibrary,
+                  builder: (_) => settings.SettingsScreen(),
+                ),
               ),
               // Editing your subjects after onboarding. Deliberately its
               // own route rather than a re-entry into
@@ -460,11 +526,19 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               // back to `/` for anyone who has finished the funnel.
               GoRoute(
                 path: '/settings/subjects',
-                builder: (context, state) => const SubjectsSettingsScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: subjects_settings.loadLibrary,
+                  builder: (_) => subjects_settings.SubjectsSettingsScreen(),
+                ),
               ),
               GoRoute(
                 path: '/settings/name',
-                builder: (context, state) => const EditProfileScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: edit_profile.loadLibrary,
+                  builder: (_) => edit_profile.EditProfileScreen(),
+                ),
               ),
               // The optional profile. `/onboarding/profile` is still
               // reachable (guard 3 above lets a finished user sit on the
@@ -472,25 +546,45 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               // in.
               GoRoute(
                 path: '/settings/profile',
-                builder: (context, state) => const ProfileSettingsScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: profile_settings.loadLibrary,
+                  builder: (_) => profile_settings.ProfileSettingsScreen(),
+                ),
               ),
               GoRoute(
                 path: '/settings/username',
-                builder: (context, state) => const UsernameSettingsScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: username_settings.loadLibrary,
+                  builder: (_) => username_settings.UsernameSettingsScreen(),
+                ),
               ),
               GoRoute(
                 path: '/settings/export',
-                builder: (context, state) => const ExportScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: export_data.loadLibrary,
+                  builder: (_) => export_data.ExportScreen(),
+                ),
               ),
               GoRoute(
                 path: '/settings/security',
-                builder: (context, state) => const SecurityScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: security.loadLibrary,
+                  builder: (_) => security.SecurityScreen(),
+                ),
               ),
               // Text size, line spacing, reading font, low-data mode. Per
               // device.
               GoRoute(
                 path: '/settings/reading',
-                builder: (context, state) => const ReadingSettingsScreen(),
+                builder: (context, state) => DeferredScreen(
+                  id: 'settings',
+                  load: reading_settings.loadLibrary,
+                  builder: (_) => reading_settings.ReadingSettingsScreen(),
+                ),
               ),
             ],
           ),
@@ -520,14 +614,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // end. A unit test can open a topic's drill; see challenge.dart.
       GoRoute(
         path: '/subject/:subjectId/course/challenge',
-        builder: (context, state) =>
-            ChallengeScreen(subjectKey: state.pathParameters['subjectId']!),
+        builder: (context, state) => DeferredScreen(
+          id: 'challenge',
+          load: challenge.loadLibrary,
+          builder: (_) => challenge.ChallengeScreen(
+            subjectKey: state.pathParameters['subjectId']!,
+          ),
+        ),
       ),
       GoRoute(
         path: '/subject/:subjectId/course/unit/:moduleId/test',
-        builder: (context, state) => ChallengeScreen(
-          subjectKey: state.pathParameters['subjectId']!,
-          moduleId: state.pathParameters['moduleId'],
+        builder: (context, state) => DeferredScreen(
+          id: 'challenge',
+          load: challenge.loadLibrary,
+          builder: (_) => challenge.ChallengeScreen(
+            subjectKey: state.pathParameters['subjectId']!,
+            moduleId: state.pathParameters['moduleId'],
+          ),
         ),
       ),
       GoRoute(
@@ -550,6 +653,33 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           topicId: state.pathParameters['topicId']!,
         ),
       ),
+      // The same two sessions at readable paths, named by the course and
+      // topic slugs (audit C9): /subject/mathematics/course/topic/indices/
+      // drill. The id paths above stay for links made before.
+      GoRoute(
+        path: '/subject/:subjectId/course/topic/:topicId/drill',
+        builder: (context, state) => CourseTopicRoute(
+          subjectKey: state.pathParameters['subjectId']!,
+          topicKey: state.pathParameters['topicId']!,
+          builder: (course, module, topic) => DrillScreen(
+            topicId: topic.id,
+            subjectId: course.subjectId,
+            unitId: module.id,
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/subject/:subjectId/course/topic/:topicId/test',
+        builder: (context, state) => CourseTopicRoute(
+          subjectKey: state.pathParameters['subjectId']!,
+          topicKey: state.pathParameters['topicId']!,
+          builder: (course, module, topic) => TopicTestScreen(
+            subjectId: course.subjectId!,
+            unitId: module.id,
+            topicId: topic.id,
+          ),
+        ),
+      ),
       // The old notes-only Learn screen, replaced by the topic overview
       // and its lessons. Kept as a redirect so saved links still land.
       GoRoute(
@@ -568,14 +698,19 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/waec/:subjectId/exam',
-        builder: (context, state) => WaecExamScreen(
-          subjectId: state.pathParameters['subjectId']!,
-          // Direct URL / bad deep link with no route extra is handled
-          // inside WaecExamScreen itself (redirects back to setup) rather
-          // than crashing on a bad cast — see its initState.
-          session: state.extra is WaecExamSessionData
-              ? state.extra as WaecExamSessionData
-              : null,
+        // The `extra` check lives in waecExamRoute: this library is
+        // deferred, and a deferred type cannot be tested here.
+        builder: (context, state) => SubjectKeyRoute(
+          subjectKey: state.pathParameters['subjectId']!,
+          builder: (id) => DeferredScreen(
+            id: 'waec',
+            load: waec_exam.loadLibrary,
+            builder: (_) => waec_exam.waecExamRoute(
+              id,
+              state.extra,
+              routeKey: state.pathParameters['subjectId'],
+            ),
+          ),
         ),
       ),
       // Practising from the mistakes notebook. Takes its questions as
@@ -585,38 +720,61 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // the screens themselves send a guest who tries to host to sign up.
       GoRoute(
         path: '/join',
-        builder: (context, state) => const JoinRoomScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'rooms',
+          load: join_room.loadLibrary,
+          builder: (_) => join_room.JoinRoomScreen(),
+        ),
       ),
       GoRoute(
         path: '/rooms/new',
-        builder: (context, state) => const NewRoomScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'rooms',
+          load: new_room.loadLibrary,
+          builder: (_) => new_room.NewRoomScreen(),
+        ),
       ),
       GoRoute(
         path: '/rooms/:code/host',
-        builder: (context, state) =>
-            HostRoomScreen(code: state.pathParameters['code']!),
+        builder: (context, state) => DeferredScreen(
+          id: 'rooms',
+          load: host_room.loadLibrary,
+          builder: (_) =>
+              host_room.HostRoomScreen(code: state.pathParameters['code']!),
+        ),
       ),
       GoRoute(
         path: '/rooms/:code',
-        builder: (context, state) =>
-            PlayerRoomScreen(code: state.pathParameters['code']!),
+        builder: (context, state) => DeferredScreen(
+          id: 'rooms',
+          load: player_room.loadLibrary,
+          builder: (_) =>
+              player_room.PlayerRoomScreen(code: state.pathParameters['code']!),
+        ),
       ),
       // Paper 2 theory, self-marked; linked only once a subject has
       // kTheoryMinQuestions published.
       GoRoute(
         path: '/waec/:subjectId/theory',
-        builder: (context, state) =>
-            TheoryScreen(subjectId: state.pathParameters['subjectId']!),
+        builder: (context, state) => SubjectKeyRoute(
+          subjectKey: state.pathParameters['subjectId']!,
+          builder: (id) => DeferredScreen(
+            id: 'theory',
+            load: theory.loadLibrary,
+            builder: (_) => theory.TheoryScreen(subjectId: id),
+          ),
+        ),
       ),
       GoRoute(
         path: '/support',
-        builder: (context, state) => const SupportScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'support',
+          load: support.loadLibrary,
+          builder: (_) => support.SupportScreen(),
+        ),
       ),
       // Five questions straight from the welcome screen.
-      GoRoute(
-        path: '/try',
-        builder: (context, state) => const TasterScreen(),
-      ),
+      GoRoute(path: '/try', builder: (context, state) => const TasterScreen()),
       // A friend's challenge (`challenge_link.dart`). Full-window, like
       // every focus session; reached from a shared link.
       GoRoute(
@@ -645,12 +803,20 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // Where the terms gate above asks for acceptance.
       GoRoute(
         path: '/legal/accept',
-        builder: (context, state) => const LegalAcceptScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'account',
+          load: legal_accept.loadLibrary,
+          builder: (_) => legal_accept.LegalAcceptScreen(),
+        ),
       ),
       // Where the deletion gate above holds a scheduled account.
       GoRoute(
         path: '/account/deleting',
-        builder: (context, state) => const DeletingScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'account',
+          load: deleting.loadLibrary,
+          builder: (_) => deleting.DeletingScreen(),
+        ),
       ),
       GoRoute(
         path: '/account/upgrade',
@@ -666,44 +832,75 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       // still redirect, for links in emails already sent.
       GoRoute(
         path: '/admin',
-        builder: (context, state) => const AdminHomeScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: admin_home.loadLibrary,
+          builder: (_) => admin_home.AdminHomeScreen(),
+        ),
       ),
       // Who writes and reviews, and for which subjects. Admins only.
       GoRoute(
         path: '/admin/team',
-        builder: (context, state) => const TeamScreen(),
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: team.loadLibrary,
+          builder: (_) => team.TeamScreen(),
+        ),
       ),
       // One topic's lesson: every item in order, any status.
       GoRoute(
         path: '/admin/topic/:topicId',
-        builder: (context, state) =>
-            TopicPlannerScreen(topicId: state.pathParameters['topicId']!),
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: planner.loadLibrary,
+          builder: (_) => planner.TopicPlannerScreen(
+            topicId: state.pathParameters['topicId']!,
+          ),
+        ),
       ),
       GoRoute(
         path: '/admin/topic/:topicId/new/:type',
-        builder: (context, state) => AdminResourceEditorScreen(
-          topicId: state.pathParameters['topicId']!,
-          newType: LearnResourceType.parse(state.pathParameters['type']),
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: editor.loadLibrary,
+          builder: (_) => editor.AdminResourceEditorScreen(
+            topicId: state.pathParameters['topicId']!,
+            newType: LearnResourceType.parse(state.pathParameters['type']),
+          ),
         ),
       ),
       GoRoute(
         path: '/admin/topic/:topicId/resource/:resourceId',
-        builder: (context, state) => AdminResourceEditorScreen(
-          topicId: state.pathParameters['topicId']!,
-          resourceId: state.pathParameters['resourceId']!,
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: editor.loadLibrary,
+          builder: (_) => editor.AdminResourceEditorScreen(
+            topicId: state.pathParameters['topicId']!,
+            resourceId: state.pathParameters['resourceId']!,
+          ),
         ),
       ),
       // A flagged question and its reports. Also a deep link, from the
       // report digest email.
       GoRoute(
         path: '/admin/insight/:id',
-        builder: (context, state) =>
-            InsightEditorScreen(id: state.pathParameters['id']!),
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: insight_editor.loadLibrary,
+          builder: (_) => insight_editor.InsightEditorScreen(
+            id: state.pathParameters['id']!,
+          ),
+        ),
       ),
       GoRoute(
         path: '/admin/flag/:questionId',
-        builder: (context, state) =>
-            AdminFlagScreen(questionId: state.pathParameters['questionId']!),
+        builder: (context, state) => DeferredScreen(
+          id: 'studio',
+          load: admin_flag.loadLibrary,
+          builder: (_) => admin_flag.AdminFlagScreen(
+            questionId: state.pathParameters['questionId']!,
+          ),
+        ),
       ),
       GoRoute(
         path: '/admin/topic/:topicId/article/:resourceId',

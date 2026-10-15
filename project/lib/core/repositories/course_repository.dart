@@ -54,10 +54,14 @@ class CourseTopic {
   /// "not known" — show no count rather than "0 of 0".
   final int lessonCount;
 
-  /// Firestore document id when live; a slug when placeholder. Either way
-  /// it is the `:topicKey` path parameter.
+  /// Firestore document id when live; a slug when placeholder.
   final String id;
   final String name;
+
+  /// The topic in a URL: `/subject/mathematics/course/topic/indices`
+  /// (audit C9). [Course.findTopic] accepts this or [id], so links made
+  /// with ids before keep working.
+  String get slug => SubjectCatalog.slugify(name);
 
   /// Seeded question count. Always 0 for placeholders — and note that even
   /// for live topics this is the count written at seed time, which includes
@@ -141,14 +145,36 @@ class Course {
   /// Finds a topic by its route key, with the module it belongs to — the
   /// topic overview page needs both (for the breadcrumb and for the Learn
   /// route, which takes a unitId).
+  /// The topic named by [topicKey]: its id, or its [CourseTopic.slug].
+  /// Ids win, so an old link can never land on a different topic.
   (CourseModule, CourseTopic)? findTopic(String topicKey) {
     for (final module in modules) {
       for (final topic in module.topics) {
         if (topic.id == topicKey) return (module, topic);
       }
     }
+    for (final module in modules) {
+      for (final topic in module.topics) {
+        if (topic.slug == topicKey) return (module, topic);
+      }
+    }
     return null;
   }
+
+  /// Readable paths for a topic's page, drill and test (audit C9).
+  String topicPath(CourseTopic topic) =>
+      '/subject/$slug/course/topic/${topic.slug}';
+  String drillPath(CourseTopic topic) => '${topicPath(topic)}/drill';
+
+  /// [topicPath] for a topic known only by id; the id path if it is not
+  /// in this course's outline.
+  String pathForTopicId(String topicId) {
+    final found = findTopic(topicId);
+    return found == null
+        ? '/subject/$slug/course/topic/$topicId'
+        : topicPath(found.$2);
+  }
+  String testPath(CourseTopic topic) => '${topicPath(topic)}/test';
 }
 
 /// Lightweight row for the `/courses` catalog page — no topic fetches.
@@ -195,7 +221,7 @@ class CourseSummary {
 /// Matches a route key against the live subjects — by Firestore document id
 /// first, then by slugified name, so both `/subject/<docId>/course` and
 /// `/subject/physics/course` resolve.
-Subject? _matchLiveSubject(List<Subject> subjects, String key) {
+Subject? matchLiveSubject(List<Subject> subjects, String key) {
   for (final subject in subjects) {
     if (subject.id == key) return subject;
   }
@@ -205,6 +231,17 @@ Subject? _matchLiveSubject(List<Subject> subjects, String key) {
   }
   return null;
 }
+
+/// The live subject's Firestore id for a route key — its id or its slug,
+/// as in `/waec/mathematics/setup` (audit C9) — or null when none matches.
+/// Reads only the cached subject list.
+final subjectIdForKeyProvider = FutureProvider.family<String?, String>((
+  ref,
+  key,
+) async {
+  final subjects = await ref.watch(subjectsProvider.future);
+  return matchLiveSubject(subjects, key)?.id;
+});
 
 CourseModule _placeholderModule(String subjectSlug, CatalogUnit unit) {
   final unitSlug = SubjectCatalog.slugify(unit.name);
@@ -233,7 +270,7 @@ final courseCatalogProvider = FutureProvider<List<CourseSummary>>((ref) async {
   return [
     for (final entry in SubjectCatalog.all)
       () {
-        final live = _matchLiveSubject(subjects, entry.slug);
+        final live = matchLiveSubject(subjects, entry.slug);
         return CourseSummary(
           // Live subjects route by document id: that's the form every other
           // screen in the app already links with.
@@ -256,7 +293,7 @@ final courseCatalogProvider = FutureProvider<List<CourseSummary>>((ref) async {
 /// instead of an empty page.
 final courseProvider = FutureProvider.family<Course, String>((ref, key) async {
   final subjects = await ref.watch(subjectsProvider.future);
-  final live = _matchLiveSubject(subjects, key);
+  final live = matchLiveSubject(subjects, key);
   final catalogEntry = live == null
       ? SubjectCatalog.bySlug(SubjectCatalog.slugify(key))
       : SubjectCatalog.byName(live.name);
