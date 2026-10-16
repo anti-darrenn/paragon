@@ -124,7 +124,8 @@ rewrite.
 static page, a stray file or an unknown path gets `404.html` with a real 404 instead of the
 app with a 200. Hosting's `regex` is RE2, with no lookahead, so the list is spelled out.
 **A new top-level route must be added there**: `hosting_rewrite_test.dart` walks the router
-and fails until it is. Inside the app, an unknown path under a known segment shows
+and fails until it is. Every page route also needs a browser-tab title in `pageTitleFor`
+(`lib/core/web/page_title.dart`), which `page_title_test.dart` checks the same way. Inside the app, an unknown path under a known segment shows
 `NotFoundScreen` (`GoRouter.errorBuilder`). The local Hosting emulator cannot check regex
 rewrites on Windows, because superstatic's `glob-slasher` turns `/courses` into `\courses`
 first. These pages are the only part of Paragon a search engine can read. Only past
