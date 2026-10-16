@@ -122,8 +122,12 @@ void main() {
     expect(formatMinutes(90), '1 h 30 min');
     expect(formatMinutes(60), '1 h');
     expect(formatMinutes(45), '45 min');
-    // Not confirmed yet, and the setup screen says so.
-    expect(kExamFormats.values.every((f) => !f.verified), isTrue);
+    // Every listed subject was checked against WAEC (2026-10-16); the
+    // fallback for an unlisted one is not, so the screen still hedges it.
+    expect(kExamFormats.values.every((f) => f.verified), isTrue);
+    expect(kDefaultExamFormat.verified, isFalse);
+    expect(examFormatFor('Physics').minutes, 75);
+    expect(examFormatFor('Biology').minutes, 50);
   });
 
   group('the exam screen', () {

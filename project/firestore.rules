@@ -492,7 +492,22 @@ service cloud.firestore {
           || (after.avatar is string
               && after.avatar.matches('^(preset|initials):[a-z_]{2,20}$')))
         && (!('bio' in after)
-          || (after.bio is string && after.bio.size() <= 160));
+          || (after.bio is string && after.bio.size() <= 160))
+        && (!('profile' in after) || profileIsValid(after.profile));
+    }
+
+    // School and class only (owner's decision, 2026-10-15). Age, gender,
+    // country and state were accepted until `jobs.js --job=dropprofile`
+    // had removed them from every user (0 of 44 held one on 2026-10-16);
+    // now nothing can write them back. Each key is optional, since
+    // settings deletes a cleared box. classYear mirrors
+    // ProfileFormController.classYears.
+    function profileIsValid(p) {
+      return p is map
+        && p.keys().hasOnly(['school', 'classYear'])
+        && (!('school' in p) || (p.school is string && p.school.size() <= 100))
+        && (!('classYear' in p)
+          || p.classYear in ['JSS3', 'SS1', 'SS2', 'SS3', 'Graduate', 'Other']);
     }
 
     // Allow-list, not a deny-list. Anything not named here cannot be

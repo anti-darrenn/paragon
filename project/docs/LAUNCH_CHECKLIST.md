@@ -68,8 +68,8 @@ Every script is a dry run first. Read its output, then re-run it with `--apply`.
 - [ ] Unpublish **`test2`** and **`test_article`** in the studio (Mathematics topic
   `sGeqO2FDw79otnkz3tz6`). Then run `node tools/admin/content_lint.js`, which should
   print "All clean".
-- [ ] `node tools/admin/jobs.js --job=dropprofile`: removes age, gender, country and
-  state.
+- [x] `node tools/admin/jobs.js --job=dropprofile`: removes age, gender, country and
+  state. Checked 2026-10-16: 0 of 44 users held one, so there was nothing to remove.
 - [ ] `node tools/admin/jobs.js --job=insights`. It does nothing until an insight is
   published. After that, the nightly run keeps the flags current.
 - [ ] In the studio, run **"Rebuild all subjects"**, then confirm a production
@@ -110,16 +110,17 @@ pages (`build_static_site.js`) as often as you like.
 
 ## 5. Decisions still open
 
-- [ ] **The WASSCE paper formats** (`lib/core/exam/exam_formats.dart`). They are marked
-  unconfirmed, and the setup screen says so. Confirm or correct each subject, then set
-  `verified: true`.
+- [x] **The WASSCE paper formats** (`lib/core/exam/exam_formats.dart`). Checked
+  2026-10-16: question counts against each WAEC syllabus, times against WAEC's May/June
+  2026 timetables. Re-check when WAEC publishes a new timetable.
 - [ ] **The tagline**: pick one of the five in `docs/COPY.md` and put it in `kTagline`
   (`lib/core/config/site_config.dart`). Until then it reads "Free WAEC prep. Still a
   work in progress."
 - [ ] **Donations**: set `donateUrl` in `lib/core/config/support_config.dart` when
   there is somewhere to send them. Until then the button stays hidden.
-- [ ] **Tighten the profile rule** to `school` and `classYear` only, *after*
-  `--job=dropprofile` has run.
+- [ ] **The profile rule** is tightened to `school` and `classYear` only (PR
+  `chore/step9-reconcile`). After merging, deploy it:
+  `firebase deploy --only firestore:rules`, then `node tools/admin/verify_rules.js`.
 - [ ] **Bylines**: run `node tools/admin/set_contributor.js --email=… --name=… --role=…`
   for each writer who agrees to be credited.
 

@@ -1,11 +1,10 @@
 /// The objective paper of each WASSCE subject, for the "Full paper" preset
 /// on the exam setup screen (PLAN.md P5.2.1).
 ///
-/// **Not yet confirmed.** These are the commonly published formats of the
-/// multiple-choice paper, written down so the preset has something to be.
-/// Until the owner checks them against current WAEC papers, [verified] is
-/// false and the setup screen says "approximately". Change a row and set
-/// `verified: true` when it is checked; nothing else needs to move.
+/// Checked 2026-10-16: question counts against each WAEC syllabus, times
+/// against WAEC's own May/June 2026 timetables (school and private
+/// candidates agree). A row that has not been checked leaves [verified]
+/// false, and the setup screen then says "approximately".
 library;
 
 class ExamFormat {
@@ -28,13 +27,13 @@ class ExamFormat {
 /// By subject name, lower-cased (what both the WAEC list and the catalog
 /// share). A subject missing here gets [kDefaultExamFormat].
 const Map<String, ExamFormat> kExamFormats = {
-  'mathematics': ExamFormat(questions: 50, minutes: 90),
-  'further mathematics': ExamFormat(questions: 40, minutes: 90),
-  'physics': ExamFormat(questions: 50, minutes: 75),
-  'chemistry': ExamFormat(questions: 50, minutes: 60),
-  'biology': ExamFormat(questions: 50, minutes: 50),
-  'government': ExamFormat(questions: 50, minutes: 60),
-  'economics': ExamFormat(questions: 50, minutes: 60),
+  'mathematics': ExamFormat(questions: 50, minutes: 90, verified: true),
+  'further mathematics': ExamFormat(questions: 40, minutes: 90, verified: true),
+  'physics': ExamFormat(questions: 50, minutes: 75, verified: true),
+  'chemistry': ExamFormat(questions: 50, minutes: 60, verified: true),
+  'biology': ExamFormat(questions: 50, minutes: 50, verified: true),
+  'government': ExamFormat(questions: 50, minutes: 60, verified: true),
+  'economics': ExamFormat(questions: 50, minutes: 60, verified: true),
 };
 
 const ExamFormat kDefaultExamFormat = ExamFormat(questions: 50, minutes: 60);

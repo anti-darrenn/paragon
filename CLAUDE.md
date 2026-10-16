@@ -44,8 +44,9 @@ never kept in Firestore, which would mean a write per tap on Spark. Submit or ex
 it, and it goes stale after a day.
 
 Setup defaults to the **"Full paper" preset** from `lib/core/exam/exam_formats.dart`. Those
-formats are **unconfirmed** (`verified: false`, and the screen says so) until the owner
-checks them against current WASSCE papers.
+formats were checked on 2026-10-16 against the WAEC syllabuses (question counts) and WAEC's
+2026 timetables (times), and are `verified: true`. A subject not listed falls back to
+`kDefaultExamFormat`, which is unverified, so the screen says "approximately".
 
 **Plan, goal and challenges** (Wave G):
 - **Pure models.** `lib/core/plan/` holds:
@@ -780,8 +781,10 @@ Conventional commits, with project-specific types/scopes from `.cursorrules`: ty
     lists them as `retiredFields`, which an editor save deletes, and
     `jobs.js --job=dropprofile`, a one-shot that is not in `all`, removes them from
     every user.
-  - **The rules** still accept the old keys, so that a document holding them can be
-    written until the one-shot has run. Tighten the profile shape after it has.
+  - **The rules** accept only `school` (a string of up to 100 characters) and
+    `classYear` (one of `ProfileFormController.classYears`) in `profile`, through
+    `profileIsValid`. They were tightened on 2026-10-16, once the one-shot found no
+    user holding a retired key. A new profile field needs the rule changed first.
 - If a screen tells a student they can change something later, there must be a route
   that lets them. `/settings/subjects`, `/settings/name` and `/settings/profile` all
   exist because onboarding had been promising them since it shipped.

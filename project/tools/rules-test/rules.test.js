@@ -57,6 +57,7 @@ async function main() {
     await setDoc(doc(db, "theoryQuestions/tdraft"), { subjectId: "s1", status: "draft", parts: [] });
     await setDoc(doc(db, "insights/qpub"), { kind: "question", subjectId: "s1", status: "published", summary: "x" });
     await setDoc(doc(db, "insights/qdraft"), { kind: "question", subjectId: "s1", status: "draft", summary: "y" });
+    await setDoc(doc(db, "users/ann"), { uid: "ann", displayName: "Ann" });
     await setDoc(doc(db, "topics/t1"), { subjectId: "s1", name: "Indices", lessonCount: 1 });
     await setDoc(doc(db, "topics/t1/resources/live"), {
       subjectId: "s1", topicId: "t1", status: "published", title: "Laws of indices", type: "article", order: 1,
@@ -269,6 +270,13 @@ async function main() {
 
   console.log("\nusers/{uid}");
   await check("another student's account is not readable", assertFails(getDoc(doc(student("ann"), "users/bob"))));
+  const annDoc = doc(student("ann"), "users/ann");
+  await check("control: school and class are writable",
+    assertSucceeds(updateDoc(annDoc, { profile: { school: "Kings College", classYear: "SS2" } })));
+  await check("a retired profile field is refused",
+    assertFails(updateDoc(annDoc, { profile: { school: "Kings College", age: 16 } })));
+  await check("an unknown class is refused", assertFails(updateDoc(annDoc, { profile: { classYear: "SS4" } })));
+  await check("a 101-character school is refused", assertFails(updateDoc(annDoc, { profile: { school: "s".repeat(101) } })));
 
   await env.cleanup();
   console.log(`\n${passed} passed, ${failures.length} failed`);
