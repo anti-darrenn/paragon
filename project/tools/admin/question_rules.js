@@ -237,12 +237,256 @@ function brokenLatex(value) {
   return out;
 }
 
-/** Per-question checks: [{rule, level, detail}]. Level A breaks meaning. */
+// ─── Answer suspects (Plan v2 §2.3) ──────────────────────────────────
+//
+// These never change anything. They flag a question for a person to check
+// against the original paper, and they are deliberately narrow: each one
+// skips any question it cannot read, rather than guess.
+
+const LETTER = "ABCDE";
+const near = (a, b) => Math.abs(a - b) <= 1e-9 * Math.max(1, Math.abs(a), Math.abs(b));
+
+/** The number an option (or a bit of a stem) states, or null: integers,
+ *  decimals, thousands commas, `\frac{a}{b}`, `a/b`, mixed `2\frac{1}{3}`,
+ *  `3.4 \times 10^{-3}`, with a trailing unit allowed. */
+function numericValue(source, { units = true } = {}) {
+  let s = String(source ?? "")
+    .replace(/\\[()[\]]|\$\$/g, "")
+    .replace(/\\[dt]frac/g, "\\frac")
+    .replace(/\\,|\\;|\\!|~/g, "")
+    .replace(/−/g, "-")
+    .trim();
+  const bare = numberIn(s);
+  if (bare != null || !units) return bare;
+  // A unit after the number ("0.0080 kg", "12 \mathrm{cm^{2}}").
+  // Only after a space or as \mathrm: "4x-4" is algebra, not 4 of unit x.
+  const unit = /^(.*\d)(?:\s*\\mathrm\{[^}]*\}|\s+[A-Za-zΩ°%][A-Za-zΩ°%0-9^{}-]*)$/.exec(s);
+  return unit ? numberIn(unit[1].trim()) : null;
+}
+
+function numberIn(str) {
+  let s = str;
+  if (/^-?\d{1,3}(,\d{3})+(\.\d+)?$/.test(s)) s = s.replace(/,/g, "");
+  let m;
+  if ((m = /^(-?)(\d+)\s*\\frac\{(\d+)\}\{(\d+)\}$/.exec(s))) {
+    const v = Number(m[2]) + Number(m[3]) / Number(m[4]);
+    return Number(m[4]) ? (m[1] ? -v : v) : null;
+  }
+  if ((m = /^(-?)\\frac\{(-?\d+(?:\.\d+)?)\}\{(\d+(?:\.\d+)?)\}$/.exec(s)) || (m = /^(-?)(-?\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)$/.exec(s))) {
+    const v = Number(m[2]) / Number(m[3]);
+    return Number(m[3]) ? (m[1] ? -v : v) : null;
+  }
+  if ((m = /^(-?\d+(?:\.\d+)?)\s*(?:\\times|×|x|X)\s*10\^\{?(-?\d+)\}?$/.exec(s))) {
+    return Number(m[1]) * 10 ** Number(m[2]);
+  }
+  if (/^-?\d+(\.\d+)?$/.test(s) || /^-?\.\d+$/.test(s)) return Number(s);
+  return null;
+}
+
+/** Decimal rounding on the digits, half up, so 0.0125 to 3 d.p. is 0.013
+ *  (a float would make it 0.012). `places` may be negative (to tens). */
+function roundDecimal(str, places) {
+  const s = String(str).trim();
+  const neg = s.startsWith("-");
+  const [int, frac = ""] = s.replace(/^-/, "").split(".");
+  const digits = BigInt((int || "0") + frac);
+  const drop = frac.length - places;
+  if (drop <= 0) return Number(s);
+  const div = 10n ** BigInt(drop);
+  let q = digits / div;
+  if ((digits % div) * 2n >= div) q += 1n;
+  // Back through a string, so 13 at 3 places is exactly 0.013.
+  const v = Number(`${q}e${-places}`);
+  return neg ? -v : v;
+}
+
+/** [str] rounded to [n] significant figures. */
+function roundSignificant(str, n) {
+  const [int, frac = ""] = String(str).replace(/^-/, "").split(".");
+  const i = int.replace(/^0+/, "");
+  const exponent = i ? i.length - 1 : -(frac.match(/^0*/)[0].length + 1);
+  return roundDecimal(str, n - 1 - exponent);
+}
+
+/** How many significant figures an option is written to ("0.0080" → 2,
+ *  "800" → null: trailing zeros of an integer are ambiguous). */
+function writtenSignificant(source) {
+  const s = String(source ?? "").replace(/\\[()]/g, "").replace(/,/g, "").trim().match(/^-?\d*\.?\d+/);
+  if (!s) return null;
+  const t = s[0].replace(/^-/, "");
+  if (!t.includes(".")) return /0$/.test(t) ? null : t.replace(/^0+/, "").length;
+  return t.replace(".", "").replace(/^0+/, "").length;
+}
+
+const WORD_NUMBERS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6 };
+const countOf = (w) => (/^\d+$/.test(w) ? Number(w) : WORD_NUMBERS[w.toLowerCase()]);
+
+/** The first plain number in the stem's text and maths ("0.007985",
+ *  "\(24.0457\)"), as written. */
+function stemNumbers(text) {
+  return (String(text ?? "").replace(/\\[()]/g, " ").match(/-?\d[\d,]*\.?\d*/g) || []).map((n) => n.replace(/,(?=\d{3}\b)/g, ""));
+}
+
+/**
+ * A stem with a decimal ("0.612") asked as a fraction, where one option is
+ * the decimal as written and another is the decimal read as recurring
+ * (68/111 = 0.612612…). The dots over the digits were lost somewhere
+ * between the paper and the archive, so either may be the answer.
+ */
+function recurringSuspect(q) {
+  if (!/(fraction|form|\\frac\{[a-z]\}\{[a-z]\}|[a-z]\/[a-z]|express|convert)/i.test(String(q.text))) return null;
+  const decimals = stemNumbers(q.text).filter((n) => /^\d*\.\d{2,}$/.test(n));
+  const values = (q.options || []).map(numericValue);
+  for (const d of decimals) {
+    const [int, frac] = d.split(".");
+    const asWritten = values.findIndex((v) => v != null && near(v, Number(d)));
+    for (let k = 1; k <= frac.length; k++) {
+      // The last k digits repeat: 0.612 with k = 3 is 0.612612…
+      const head = frac.slice(0, frac.length - k);
+      const cycle = frac.slice(frac.length - k);
+      const recurring = Number(`${int || 0}.${head}${cycle.repeat(Math.ceil(24 / k))}`);
+      const i = values.findIndex((v, j) => v != null && j !== asWritten && near(v, recurring));
+      if (i >= 0 && asWritten >= 0) {
+        return `${d}: ${LETTER[asWritten]} is it as written, ${LETTER[i]} is ${int || 0}.${head}(${cycle}) recurring; marked ${LETTER[q.correctIndex] ?? "?"}`;
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * A rounding or standard-form stem, worked out: {expected, matches} where
+ * matches are the options equal to the computed answer (written to the
+ * right number of figures), or null when the stem is not one it can read.
+ * Conservative: a stem with any arithmetic in it is skipped.
+ */
+function roundingAnswer(q) {
+  const raw = String(q.text ?? "");
+  const text = textOnly(raw) + " " + raw;
+  const options = q.options || [];
+  if (/[×*÷+]|\\times|\\div|\\frac|\\sqrt|\\log|\blog\b/.test(raw)) return null;
+  // "The square root of…", "which cannot be…": not a plain rounding.
+  if (/\b(root|reciprocal|square|cube|cannot|not)\b/i.test(raw)) return null;
+  const phrase = /\b(?:correct|round|approximate|express|write|give)\w*\b(?:[^.?]|\.(?=\d))*?\bto\s+(\d+|one|two|three|four|five|six)\s+(significant figures?|s\.?\s?f\.?|decimal places?|d\.?\s?p\.?)/i;
+  let expected;
+  let figures = null;
+  let standard = false;
+  const m = phrase.exec(text);
+  if (m) {
+    // The count ("to 3 significant figures") is not the number rounded.
+    const numbers = stemNumbers(raw.replace(/\bto\s+\d+\s+(significant|s\.?\s?f|decimal|d\.?\s?p)/gi, " "));
+    if (numbers.length !== 1) return null;
+    const n = countOf(m[1]);
+    if (/significant|s\.?\s?f/i.test(m[2])) {
+      expected = roundSignificant(numbers[0], n);
+      figures = n;
+    } else {
+      expected = roundDecimal(numbers[0], n);
+    }
+  } else if (/\bstandard form\b/i.test(text) && /\b(express|write|convert)\b/i.test(text)) {
+    const numbers = stemNumbers(raw);
+    if (numbers.length !== 1) return null;
+    expected = Number(numbers[0]);
+    standard = true;
+  } else {
+    return null;
+  }
+  const matches = options
+    .map((o, i) => [numericValue(o), i])
+    .filter(([v]) => v != null && near(v, expected))
+    .filter(([, i]) => figures == null || [null, figures].includes(writtenSignificant(options[i])))
+    // Standard form is a × 10ⁿ with 1 ≤ a < 10: 0.462 × 10⁻¹ is not it.
+    .filter(([, i]) => !standard || /^(\\\()?\s*-?[1-9](\.\d+)?\s*(\\times|×)/.test(String(options[i]).trim()))
+    .map(([, i]) => i);
+  return { expected, matches };
+}
+
+/** The marked option disagrees with a rounding stem worked out: exactly
+ *  one option is the computed answer, and it is not the one marked. */
+function answerMismatch(q) {
+  const marked = q.correctIndex;
+  if (!Number.isInteger(marked) || marked < 0) return null;
+  const r = roundingAnswer(q);
+  if (!r || r.matches.length !== 1 || r.matches[0] === marked) return null;
+  return `computed ${r.expected}: that is ${LETTER[r.matches[0]]}, marked ${LETTER[marked]}`;
+}
+
+/** Two options that say the same number differently (½ and 0.5). Not on
+ *  rounding stems, where 0.008 and 0.0080 are different answers. */
+function equivalentOptions(q) {
+  if (/significant|decimal place|s\.f|d\.p|standard form/i.test(String(q.text))) return null;
+  const options = q.options || [];
+  // Bare numbers only: "4 nodes" and "4 antinodes" are different answers.
+  const values = options.map((o) => numericValue(o, { units: false }));
+  for (let i = 0; i < values.length; i++) {
+    for (let j = i + 1; j < values.length; j++) {
+      if (values[i] != null && values[j] != null && near(values[i], values[j]) && String(options[i]).trim() !== String(options[j]).trim()) {
+        return `${LETTER[i]} ${options[i]} = ${LETTER[j]} ${options[j]}`;
+      }
+    }
+  }
+  return null;
+}
+
+/** Misreadings at the start of a stem, with the word meant. */
+const STEM_TYPOS = [[/^\s*Expression(?=\s+(?:-?\d|\\\(|\.\d))/, "Express"]];
+
+/** Maths typed as ASCII outside `\(…\)`: `2^(x+1)`, `√(2x)`, `32_four`,
+ *  `3 x 4` with x as a times sign. */
+function asciiMaths(value) {
+  const t = textOnly(value);
+  const found = [
+    [/\S\^\s*[({\d-]/, "^"],
+    [/√\s*\(/, "√("],
+    [/\b\d+_[a-z0-9]+\b/i, "base as _"],
+    [/\b\d+(?:\.\d+)?\s+x\s+\d/, "x as times"],
+  ].filter(([re]) => re.test(t));
+  return found.length ? found.map(([, d]) => d).join(", ") : null;
+}
+
+/** An explanation that rounds to a different count than the stem asks
+ *  ("three significant figures" asked, "two" worked). */
+function explanationMismatch(q) {
+  const unit = /\b(\d|one|two|three|four|five|six)\s+(significant figures?|decimal places?)/i;
+  const asked = unit.exec(textOnly(q.text));
+  if (!asked || !q.explanation) return null;
+  const n = countOf(asked[1]);
+  const kind = asked[2].toLowerCase().startsWith("s") ? "s" : "d";
+  const said = [...textOnly(q.explanation).matchAll(new RegExp(unit.source, "gi"))]
+    .filter((m) => m[2].toLowerCase().startsWith(kind))
+    .map((m) => countOf(m[1]));
+  if (!said.length || said.includes(n)) return null;
+  return `stem asks ${n}, explanation says ${said.join("/")}`;
+}
+
+/** Per-question checks: [{rule, level, detail}]. Level A breaks meaning;
+ *  level S is a suspect for a person to check against the paper. */
 function checkQuestion(q) {
   const found = [];
   const add = (rule, level, detail) => found.push({ rule, level, detail });
   const options = q.options || [];
   const plain = [q.text, ...options].map(textOnly).join(" | ");
+
+  if (q.correctIndex != null && (!Number.isInteger(q.correctIndex) || q.correctIndex < -1 || q.correctIndex >= options.length)) {
+    add("answer-out-of-range", "A", `correctIndex ${q.correctIndex} of ${options.length}`);
+  }
+  if (options.length > 5) add("too-many-options", "A", `${options.length} options`);
+  const equivalent = equivalentOptions(q);
+  if (equivalent) add("equivalent-options", "A", equivalent);
+  const recurring = recurringSuspect(q);
+  if (recurring) add("recurring-decimal-suspect", "S", recurring);
+  const mismatch = answerMismatch(q);
+  if (mismatch) add("answer-mismatch-suspect", "S", mismatch);
+  for (const [re, word] of STEM_TYPOS) {
+    const m = re.exec(String(q.text ?? ""));
+    if (m) add("stem-typo", "B", `"${m[0].trim()}" → "${word}"`);
+  }
+  for (const [field, value] of [["question", q.text], ["options", options.join(" | ")]]) {
+    const ascii = asciiMaths(value);
+    if (ascii) add(`needs-latex-${field}`, "B", ascii);
+  }
+  const explained = explanationMismatch(q);
+  if (explained) add("explanation-mismatch", "B", explained);
 
   // Strict: "-17" and "17", \frac{1}{2} and 12, and t and T are all
   // different answers. Only spacing and `$` are ignored.
@@ -344,5 +588,14 @@ module.exports = {
   checkQuestion,
   checkCorpus,
   brokenLatex,
+  numericValue,
+  roundDecimal,
+  roundSignificant,
+  recurringSuspect,
+  answerMismatch,
+  roundingAnswer,
+  equivalentOptions,
+  asciiMaths,
+  explanationMismatch,
   UNIT_TOKENS,
 };

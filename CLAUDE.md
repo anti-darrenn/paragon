@@ -206,7 +206,8 @@ node reclassify.js                        # propose topic reassignments (dispatc
 node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
 node ../admin/content_lint.js             # published Learn items with placeholder titles or broken maths
 node ../admin/check_counts.js             # subject counts == sum of topic counts
-node ../admin/content_audit.js --cache    # past questions vs the content rules (no reads; --list=<rule>, --publish)
+node ../admin/content_audit.js --cache    # past questions vs the content rules (no reads; --list=<rule>, --csv, --publish)
+node ../admin/explanation_report.js       # which explanations are the source's, rewritten or missing (no reads; --csv)
 node ../admin/fix_questions.js            # mechanical fixes (dry run; --commit, --revert=.backups/…)
 node ../admin/apply_corrections.js --file=corrections/<file>.js   # reviewed hand corrections (dry run; --commit)
 ```
@@ -216,6 +217,12 @@ tested.
 - **The rules:** the audit's checks (broken or stray LaTeX, duplicate options, lost negative
   powers, missing diagrams, duplicates in a paper, and the rest), and the mechanical fixes:
   `10-3` to `10^{-3}`, flat units, `30o` to `30°`, naira, OCR's `lf`/`ln`, typos.
+- **Level S, the suspects** (Plan v2): a decimal that may have been recurring
+  (`recurring-decimal-suspect`), and a rounding or standard-form stem worked out that
+  disagrees with the marked option (`answer-mismatch-suspect`). They only flag. The
+  evaluator skips any stem with arithmetic in it, and it agrees with all 14 stems it
+  reads today, so a hit is worth a reviewer's look. `--publish` lists them first in the
+  studio's Content quality panel, linked to `/admin/flag/:id`.
 - **Fixes touch only text outside maths.** They turn notation into maths that says the
   same thing.
 - **Anything needing judgement** goes into a `corrections/` file, reviewed, then applied by
