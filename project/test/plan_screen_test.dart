@@ -5,6 +5,7 @@ import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/repositories/plan_repository.dart';
 import 'package:paragon/core/repositories/progress_repository.dart';
 import 'package:paragon/features/plan/plan_screen.dart';
+import 'package:paragon/core/widgets/ui/ui.dart';
 import 'package:paragon/features/plan/plan_widgets.dart';
 
 void main() {
@@ -14,12 +15,15 @@ void main() {
     bool guest = false,
     PlanSettings plan = PlanSettings.none,
     int thisWeek = 0,
+    bool counting = false,
   }) => tester.pumpWidget(
     ProviderScope(
       overrides: [
         isGuestProvider.overrideWithValue(guest),
         planSettingsProvider.overrideWithValue(AsyncData(plan)),
-        weeklyAttemptsCountProvider.overrideWithValue(AsyncData(thisWeek)),
+        weeklyAttemptsCountProvider.overrideWithValue(
+          counting ? const AsyncLoading() : AsyncData(thisWeek),
+        ),
         userProgressProvider.overrideWithValue(
           const AsyncData(UserProgress.empty),
         ),
@@ -70,5 +74,25 @@ void main() {
   testWidgets('a guest sees no Home card', (tester) async {
     await pump(tester, const ThisWeekCard(), guest: true);
     expect(find.text('This week'), findsNothing);
+  });
+
+  testWidgets('Plan v2 7.3: no "0 of 50" before the count arrives', (
+    tester,
+  ) async {
+    await pump(
+      tester,
+      const ThisWeekCard(),
+      plan: const PlanSettings(weeklyGoal: 50),
+      counting: true,
+    );
+    expect(find.textContaining('0 of 50'), findsNothing);
+    expect(find.byType(SkeletonBox), findsOneWidget);
+    // CONTROL: a real zero is shown as zero.
+    await pump(
+      tester,
+      const ThisWeekCard(),
+      plan: const PlanSettings(weeklyGoal: 50),
+    );
+    expect(find.text('0 of 50 questions · 50 to go'), findsOneWidget);
   });
 }

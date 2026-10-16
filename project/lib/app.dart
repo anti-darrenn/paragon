@@ -12,6 +12,7 @@ import 'core/theme/app_palette.dart';
 import 'core/data/error_reporter.dart';
 import 'core/data/read_meter_overlay.dart';
 import 'core/widgets/quota_banner.dart';
+import 'core/web/page_title.dart';
 
 class ParagonApp extends ConsumerWidget {
   const ParagonApp({super.key});
@@ -29,10 +30,13 @@ class ParagonApp extends ConsumerWidget {
     ref.watch(guestDataCopyProvider);
     ref.watch(accountEmailSyncProvider);
     ref.watch(accountPrefsSyncProvider);
+    // The browser tab's title follows the page (page_title.dart).
+    final titles = ref.watch(pageTitleBindingProvider);
     final readingSettingsLoading = ref.watch(readingPrefsProvider).isLoading;
 
     return MaterialApp.router(
-      title: 'Paragon',
+      // Not a fixed 'Paragon': a rebuild here must keep the page's title.
+      onGenerateTitle: (_) => titles.current,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,

@@ -20,10 +20,15 @@ class NotifyMeButton extends ConsumerStatefulWidget {
     super.key,
     required this.slug,
     required this.subjectName,
+    this.plural = false,
   });
 
   final String slug;
+
+  /// What is being waited for, as said in the button: "Chemistry", or
+  /// "Chemistry past papers" with [plural].
   final String subjectName;
+  final bool plural;
 
   @override
   ConsumerState<NotifyMeButton> createState() => _NotifyMeButtonState();
@@ -96,7 +101,9 @@ class _NotifyMeButtonState extends ConsumerState<NotifyMeButton> {
     return OutlinedButton.icon(
       onPressed: _busy ? null : () => _toggle(mine, true),
       icon: const Icon(Icons.notifications_none_rounded, size: 18),
-      label: Text('Notify me when ${widget.subjectName} is ready'),
+      label: Text(
+        'Notify me when ${widget.subjectName} ${widget.plural ? 'are' : 'is'} ready',
+      ),
     );
   }
 }

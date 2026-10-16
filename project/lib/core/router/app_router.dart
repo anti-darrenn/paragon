@@ -713,7 +713,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/join',
         builder: (context, state) => DeferredScreen(
           load: join_room.loadLibrary,
-          builder: (_) => join_room.JoinRoomScreen(),
+          // `/join?code=ABC234` from a host's shared link fills the box.
+          builder: (_) => join_room.JoinRoomScreen(
+            initialCode: state.uri.queryParameters['code'],
+          ),
         ),
       ),
       GoRoute(

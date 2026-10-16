@@ -505,13 +505,18 @@ class _Stats extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final progress =
-        ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    final progressAsync = ref.watch(userProgressProvider);
+    final testsAsync = ref.watch(topicTestProgressProvider);
+    // Plan v2 7.3: a 0 is shown only once the documents have loaded and
+    // say 0; until then the tile pulses. An error reads as nothing yet.
+    final loaded =
+        (progressAsync.hasValue || progressAsync.hasError) &&
+        (testsAsync.hasValue || testsAsync.hasError);
+    final progress = progressAsync.asData?.value ?? UserProgress.empty;
     // Drill or a topic test: passing a test is practising a topic too.
     final practised = practisedTopicIds(
       progress,
-      ref.watch(topicTestProgressProvider).asData?.value ??
-          TopicTestProgress.empty,
+      testsAsync.asData?.value ?? TopicTestProgress.empty,
     ).length;
     // An account's week is on the "This week" card above, against its
     // goal; only a guest, who has no plan, sees the bare count here.
@@ -520,10 +525,10 @@ class _Stats extends ConsumerWidget {
       isGuest: ref.watch(isGuestProvider),
     );
     final weekly = ref.watch(weeklyAttemptsCountProvider);
-    final week = weekly.when(
+    final String? week = weekly.when(
       // Keeps the last number while it refreshes, rather than a dash.
       skipLoadingOnReload: true,
-      loading: () => '—',
+      loading: () => null,
       error: (_, _) => '0',
       data: (n) => '$n',
     );
@@ -538,23 +543,26 @@ class _Stats extends ConsumerWidget {
             child: _StatTile(
               icon: Icons.donut_large_rounded,
               color: AppColors.primary,
-              value: '$practised',
+              value: loaded ? '$practised' : null,
               label: 'Topics practised',
-              detail: practised == 0
+              detail: !loaded
+                  ? ''
+                  : practised == 0
                   ? 'Start one today'
                   : '${progress.completedTopicCount} at proficient',
             ),
           ),
           if (showWeek) const SizedBox(width: 12),
-          if (showWeek) Expanded(
-            child: _StatTile(
-              icon: Icons.check_circle_outline_rounded,
-              color: AppColors.accentBlue,
-              value: week,
-              label: 'Questions this week',
-              detail: 'Practice, tests and exams',
+          if (showWeek)
+            Expanded(
+              child: _StatTile(
+                icon: Icons.check_circle_outline_rounded,
+                color: AppColors.accentBlue,
+                value: week,
+                label: 'Questions this week',
+                detail: 'Practice, tests and exams',
+              ),
             ),
-          ),
         ],
       ),
     );
@@ -572,7 +580,9 @@ class _StatTile extends StatelessWidget {
 
   final IconData icon;
   final Color color;
-  final String value;
+
+  /// Null while loading: a placeholder, never a 0 that is not true yet.
+  final String? value;
   final String label;
   final String detail;
 
@@ -585,13 +595,19 @@ class _StatTile extends StatelessWidget {
         children: [
           IconTile(icon: icon, color: color, size: 36),
           const SizedBox(height: 14),
-          Text(
-            value,
-            style: AppTheme.displayLg.copyWith(
-              color: context.palette.textStrong,
-              height: 1,
+          if (value case final v?)
+            Text(
+              v,
+              style: AppTheme.displayLg.copyWith(
+                color: context.palette.textStrong,
+                height: 1,
+              ),
+            )
+          else
+            Semantics(
+              label: '$label: loading',
+              child: const SkeletonBox(width: 48, height: 32),
             ),
-          ),
           const SizedBox(height: 6),
           Text(
             label,

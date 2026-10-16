@@ -557,10 +557,13 @@ class WaitlistPanel extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final palette = context.palette;
-    final live = {
-      for (final s in ref.watch(subjectsProvider).asData?.value ?? const [])
-        SubjectCatalog.slugify(s.name),
-    };
+    final subjects = ref.watch(subjectsProvider).asData?.value ?? const [];
+    final live = {for (final s in subjects) SubjectCatalog.slugify(s.name)};
+    // Live for practice, with no past paper to sit yet (Plan v2 7.7).
+    final noPapers = [
+      for (final s in subjects)
+        if (s.counts.isSplit && s.pastQuestionCount == 0) s.name,
+    ];
     final planned = [
       for (final c in SubjectCatalog.all)
         if (!live.contains(c.slug)) c,
@@ -592,6 +595,30 @@ class WaitlistPanel extends ConsumerWidget {
                 ),
             ],
           ),
+        if (noPapers.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          Text(
+            'Waiting for WAEC past papers',
+            style: AppTheme.bodyMd.copyWith(
+              color: palette.textPrimary,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (final name in noPapers)
+                Chip(
+                  label: Text(
+                    '$name: '
+                    '${ref.watch(waitlistCountProvider(waecPapersWaitlistKey(SubjectCatalog.slugify(name)))).asData?.value ?? '…'}',
+                  ),
+                ),
+            ],
+          ),
+        ],
       ],
     );
   }

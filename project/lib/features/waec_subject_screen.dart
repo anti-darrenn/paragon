@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'waitlist/notify_me_button.dart';
+import '../core/repositories/waitlist_repository.dart';
 import '../core/widgets/page_layout.dart';
 import '../core/widgets/ui/ui.dart';
 import '../core/theme/app_theme.dart';
@@ -115,43 +117,35 @@ class _HowItWorks extends StatelessWidget {
       ),
     ];
     Widget step(int i) => Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 10,
-                  vertical: 6,
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          IconTile(icon: steps[i].$1, color: AppColors.accentBlue, size: 34),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '${i + 1}. ${steps[i].$2}',
+                  style: AppTheme.bodyMd.copyWith(
+                    color: context.palette.textPrimary,
+                    fontWeight: FontWeight.w600,
+                    height: 1.3,
+                  ),
                 ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    IconTile(
-                      icon: steps[i].$1,
-                      color: AppColors.accentBlue,
-                      size: 34,
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '${i + 1}. ${steps[i].$2}',
-                            style: AppTheme.bodyMd.copyWith(
-                              color: context.palette.textPrimary,
-                              fontWeight: FontWeight.w600,
-                              height: 1.3,
-                            ),
-                          ),
-                          Text(
-                            steps[i].$3,
-                            style: AppTheme.label.copyWith(
-                              color: context.palette.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+                Text(
+                  steps[i].$3,
+                  style: AppTheme.label.copyWith(
+                    color: context.palette.textSecondary,
+                  ),
                 ),
-              
+              ],
+            ),
+          ),
+        ],
+      ),
     );
 
     return SurfaceCard(
@@ -214,81 +208,121 @@ class _WaecSubjectTile extends StatelessWidget {
           ? () => ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text(GuestLimits.lockedSubjectMessage)),
             )
-          : () => context.push('/waec/${SubjectCatalog.slugify(subject.name)}/setup'),
-      child: Row(
+          : () => context.push(
+              '/waec/${SubjectCatalog.slugify(subject.name)}/setup',
+            ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            width: 40,
-            height: 40,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: color.withAlpha(34),
-              borderRadius: BorderRadius.circular(11),
+          _row(
+            context,
+            locked: locked,
+            empty: empty,
+            color: color,
+            initials: initials,
+          ),
+          // Plan v2 7.7: nothing to sit yet, but a way to hear when there
+          // is, and to practise the subject meanwhile.
+          if (empty) ...[
+            const SizedBox(height: 12),
+            NotifyMeButton(
+              slug: waecPapersWaitlistKey(SubjectCatalog.slugify(subject.name)),
+              subjectName: '${subject.name} past papers',
+              plural: true,
             ),
-            child: Text(
-              initials,
-              style: AppTheme.bodyMd.copyWith(
-                color: color,
-                fontWeight: FontWeight.w700,
+            TextButton(
+              onPressed: () => context.go(
+                '/subject/${SubjectCatalog.slugify(subject.name)}/course',
               ),
+              child: Text('Practise ${subject.name} meanwhile'),
             ),
-          ),
-          const SizedBox(width: 14),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  subject.name,
-                  style: AppTheme.bodyMd.copyWith(
-                    color: locked
-                        ? context.palette.textSecondary
-                        : context.palette.textPrimary,
-                    fontWeight: FontWeight.w600,
-                    height: 1.3,
-                  ),
-                ),
-                Text(
-                  locked
-                      ? 'Make an account to unlock'
-                      : empty
-                      ? 'No past questions yet'
-                      : subject.pastQuestionCount > 0
-                      ? 'Past papers · '
-                            '${groupThousands(subject.pastQuestionCount)} '
-                            'questions'
-                      : 'Past papers',
-                  style: AppTheme.caption.copyWith(
-                    color: context.palette.textSecondary,
-                  ),
-                ),
-                // Paper 2, once there is enough of it to practise.
-                if (_hasTheory && !locked)
-                  TextButton(
-                    onPressed: () =>
-                        context.push('/waec/${SubjectCatalog.slugify(subject.name)}/theory'),
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      minimumSize: const Size(0, 36),
-                    ),
-                    child: Text(
-                      'Theory practice · ${subject.theoryCount} questions',
-                    ),
-                  ),
-              ],
-            ),
-          ),
-          Icon(
-            locked
-                ? Icons.lock_outline_rounded
-                : empty
-                ? Icons.hourglass_empty_rounded
-                : Icons.chevron_right_rounded,
-            color: context.palette.textSecondary,
-            size: 20,
-          ),
+          ],
         ],
       ),
+    );
+  }
+
+  Widget _row(
+    BuildContext context, {
+    required bool locked,
+    required bool empty,
+    required Color color,
+    required String initials,
+  }) {
+    return Row(
+      children: [
+        Container(
+          width: 40,
+          height: 40,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: color.withAlpha(34),
+            borderRadius: BorderRadius.circular(11),
+          ),
+          child: Text(
+            initials,
+            style: AppTheme.bodyMd.copyWith(
+              color: color,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ),
+        const SizedBox(width: 14),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                subject.name,
+                style: AppTheme.bodyMd.copyWith(
+                  color: locked
+                      ? context.palette.textSecondary
+                      : context.palette.textPrimary,
+                  fontWeight: FontWeight.w600,
+                  height: 1.3,
+                ),
+              ),
+              Text(
+                locked
+                    ? 'Make an account to unlock'
+                    : empty
+                    ? 'No past questions yet'
+                    : subject.pastQuestionCount > 0
+                    ? 'Past papers · '
+                          '${groupThousands(subject.pastQuestionCount)} '
+                          'questions'
+                    : 'Past papers',
+                style: AppTheme.caption.copyWith(
+                  color: context.palette.textSecondary,
+                ),
+              ),
+              // Paper 2, once there is enough of it to practise.
+              if (_hasTheory && !locked)
+                TextButton(
+                  onPressed: () => context.push(
+                    '/waec/${SubjectCatalog.slugify(subject.name)}/theory',
+                  ),
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    minimumSize: const Size(0, 36),
+                  ),
+                  child: Text(
+                    'Theory practice · ${subject.theoryCount} questions',
+                  ),
+                ),
+            ],
+          ),
+        ),
+        Icon(
+          locked
+              ? Icons.lock_outline_rounded
+              : empty
+              ? Icons.hourglass_empty_rounded
+              : Icons.chevron_right_rounded,
+          color: context.palette.textSecondary,
+          size: 20,
+        ),
+      ],
     );
   }
 }

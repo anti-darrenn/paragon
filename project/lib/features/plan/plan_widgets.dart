@@ -42,7 +42,10 @@ class ThisWeekCard extends ConsumerWidget {
     }
     final plan =
         ref.watch(planSettingsProvider).asData?.value ?? PlanSettings.none;
-    final done = ref.watch(weeklyAttemptsCountProvider).asData?.value ?? 0;
+    final weekly = ref.watch(weeklyAttemptsCountProvider);
+    // Plan v2 7.3: no "0 of 50" before the count has arrived.
+    final counted = weekly.hasValue || weekly.hasError;
+    final done = weekly.asData?.value ?? 0;
     final goal = WeeklyGoalProgress(goal: plan.weeklyGoal, done: done);
     final exam = plan.examDate;
     final weeks = exam == null ? null : weeksUntil(exam, DateTime.now());
@@ -55,9 +58,10 @@ class ThisWeekCard extends ConsumerWidget {
         child: Row(
           children: [
             Semantics(
-              label:
-                  '$done of ${goal.goal} questions this week'
-                  '${goal.met ? ', goal met' : ''}',
+              label: !counted
+                  ? 'This week: loading'
+                  : '$done of ${goal.goal} questions this week'
+                        '${goal.met ? ', goal met' : ''}',
               excludeSemantics: true,
               child: SizedBox(
                 width: 56,
@@ -66,7 +70,7 @@ class ThisWeekCard extends ConsumerWidget {
                   alignment: Alignment.center,
                   children: [
                     CircularProgressIndicator(
-                      value: goal.fraction,
+                      value: counted ? goal.fraction : 0,
                       strokeWidth: 6,
                       backgroundColor: palette.track,
                       color: goal.met ? AppColors.correct : AppColors.primary,
@@ -92,14 +96,20 @@ class ThisWeekCard extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: 2),
-                  Text(
-                    goal.met
-                        ? 'Goal met: $done questions. Well done.'
-                        : '$done of ${goal.goal} questions · ${goal.left} to go',
-                    style: AppTheme.bodyMd.copyWith(
-                      color: palette.textSecondary,
+                  if (!counted)
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 3),
+                      child: SkeletonBox(width: 160),
+                    )
+                  else
+                    Text(
+                      goal.met
+                          ? 'Goal met: $done questions. Well done.'
+                          : '$done of ${goal.goal} questions · ${goal.left} to go',
+                      style: AppTheme.bodyMd.copyWith(
+                        color: palette.textSecondary,
+                      ),
                     ),
-                  ),
                   Text(
                     weeks == null
                         ? 'Set your exam date to plan your weeks'
@@ -222,9 +232,7 @@ class CoursePlanPanel extends StatelessWidget {
                         weights.weights[t.id] ?? 0,
                       )?.replaceFirst('WAEC', 'WAEC ${course.name}'),
                   ].join(' · '),
-                  onTap: () => context.push(
-                    course.pathForTopicId(t.id),
-                  ),
+                  onTap: () => context.push(course.pathForTopicId(t.id)),
                 ),
             ],
           ),

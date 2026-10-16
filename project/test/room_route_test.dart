@@ -31,4 +31,12 @@ void main() {
     expect(roomPathRedirect('ABC234', '/rooms/:code'), isNull);
     expect(roomPathRedirect('ABC234', '/rooms/:code/host'), isNull);
   });
+
+  test('Plan v2 7.5: a shared link carries the code, and only a real one', () {
+    expect(roomJoinPath('ABC234'), '/join?code=ABC234');
+    expect(roomCodeFromLink('abc-234'), 'ABC234');
+    expect(roomCodeFromLink('ABC0I1'), '');
+    expect(roomCodeFromLink('<script>'), '');
+    expect(roomCodeFromLink(null), '');
+  });
 }
