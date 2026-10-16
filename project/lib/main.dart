@@ -9,6 +9,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 import 'firebase_options.dart';
 import 'app.dart';
+import 'core/config/app_check_config.dart';
 import 'core/data/read_meter.dart';
 
 void main() async {
@@ -39,6 +40,7 @@ void main() async {
   });
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await activateAppCheck();
 
   // Offline persistence, set before anything touches Firestore — the
   // settings are read once, when the instance is first used, and a later

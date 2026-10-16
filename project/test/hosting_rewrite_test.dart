@@ -82,11 +82,18 @@ void main() {
       headersOf(rule),
       isNot(contains('Content-Security-Policy-Report-Only')),
     );
-    final scope = RegExp(rule['regex'] as String);
+    // Hosting matches a header regex against the WHOLE path. A partial
+    // match here is how `^/(?:[^_]|…)` passed while production sent these
+    // headers on `/` and one-letter paths only (found 2026-10-16).
+    final scope = RegExp('^(?:${rule['regex']})\$');
     for (final p in [
       '/',
+      '/welcome',
       '/courses',
+      '/subject/mathematics/course/topic/indices',
       '/past-questions/x/',
+      '/past-questions/img/abc.svg',
+      '/privacy/',
       '/_x',
       '/_',
       '/main.dart.js',
@@ -100,6 +107,34 @@ void main() {
     ]) {
       expect(scope.hasMatch(p), isFalse, reason: p);
     }
+  });
+
+  test('the CSP lets the YouTube player load its API', () {
+    // youtube_player_iframe draws the player in a srcdoc iframe, which
+    // inherits this policy, and that page loads www.youtube.com/iframe_api.
+    // Without the host every video is a grey box (measured in headless
+    // Chrome against production, 2026-10-16).
+    final rule = headerRules.singleWhere(
+      (r) => headersOf(r).containsKey('X-Frame-Options'),
+    );
+    final csp = headersOf(rule)['Content-Security-Policy']!;
+    final scriptSrc = csp
+        .split(';')
+        .map((d) => d.trim())
+        .firstWhere((d) => d.startsWith('script-src '));
+    expect(scriptSrc, contains('https://www.youtube.com'));
+    expect(csp, contains('https://www.youtube-nocookie.com'));
+  });
+
+  test('question images cannot run anything when opened directly', () {
+    // An SVG opened as a page is a document on this origin; the sandbox
+    // and default-src 'none' keep any script in one inert.
+    final rule = headerRules.singleWhere(
+      (r) => r['source'] == '/past-questions/img/**',
+    );
+    final csp = headersOf(rule)['Content-Security-Policy']!;
+    expect(csp, contains("default-src 'none'"));
+    expect(csp, contains('sandbox'));
   });
 
   testWidgets('every top-level route reaches the app', (tester) async {
