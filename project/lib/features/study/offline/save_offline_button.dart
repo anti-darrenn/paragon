@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -106,7 +107,7 @@ class _SaveTopicOfflineButtonState
           );
       if (mounted) setState(() => _step = null);
     } catch (e) {
-      debugPrint('save for offline failed: $e');
+      if (kDebugMode) debugPrint('save for offline failed: $e');
       if (mounted) {
         setState(() {
           _step = null;

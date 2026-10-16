@@ -6,6 +6,7 @@ import 'package:paragon/core/onboarding/onboarding_step.dart';
 import 'package:paragon/core/providers/auth_provider.dart';
 import 'package:paragon/core/router/return_to.dart';
 import 'package:paragon/core/repositories/user_repository.dart';
+import 'package:paragon/core/rooms/room.dart' show roomPathRedirect;
 import 'package:paragon/features/about_screen.dart';
 import 'package:paragon/features/account/deleting_screen.dart'
     deferred as deleting;
@@ -717,6 +718,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/rooms/:code/host',
+        redirect: _roomCodeRedirect,
         builder: (context, state) => DeferredScreen(
           load: host_room.loadLibrary,
           builder: (_) =>
@@ -725,6 +727,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/rooms/:code',
+        redirect: _roomCodeRedirect,
         builder: (context, state) => DeferredScreen(
           load: player_room.loadLibrary,
           builder: (_) =>
@@ -895,3 +898,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
     ],
   );
 });
+
+String? _roomCodeRedirect(BuildContext context, GoRouterState state) =>
+    roomPathRedirect(
+      state.pathParameters['code'] ?? '',
+      state.fullPath ?? '/rooms/:code',
+    );

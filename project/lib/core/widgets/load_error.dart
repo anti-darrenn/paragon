@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 
 import '../data/quota_status.dart';
@@ -27,7 +28,8 @@ class LoadError extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('LoadError: $error');
+    // Debug builds only: the error can carry document paths and a uid.
+    if (kDebugMode) debugPrint('LoadError: $error');
     final quota = isQuotaError(error);
     return Center(
       child: Padding(

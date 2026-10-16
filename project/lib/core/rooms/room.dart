@@ -114,6 +114,19 @@ String? normaliseRoomCode(String typed) {
   return c;
 }
 
+/// Where `/rooms/:code` (or `/rooms/:code/host`, [pattern]) should go
+/// instead, or null to stay. A code from the address bar skips the join
+/// screen's checks and names a Firestore document, so anything that
+/// cannot be a code goes to /join, and a code typed in lower case or with
+/// a dash is tidied to its canonical form. Built from the route's pattern,
+/// never the address, so it can never redirect to itself.
+String? roomPathRedirect(String raw, String pattern) {
+  final code = normaliseRoomCode(raw);
+  if (code == null) return '/join';
+  if (code == raw) return null;
+  return pattern.replaceFirst(':code', code);
+}
+
 /// The answer document's id: one per player per question, which is how the
 /// rules make an answer impossible to give twice.
 String answerId(String uid, int index) => '${uid}_$index';
