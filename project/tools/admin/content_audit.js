@@ -27,6 +27,15 @@ const args = Object.fromEntries(
   }),
 );
 const CACHE = path.join(__dirname, "..", "site", ".cache", "data.json");
+const REPORTS = path.join(__dirname, "reports");
+const { slugify } = require("../site/render");
+// The site address, from the app (kSiteOrigin), for the links in the CSV.
+const siteOrigin = () =>
+  /kSiteOrigin\s*=\s*'([^']+)'/.exec(fs.readFileSync(path.join(__dirname, "..", "..", "lib", "core", "config", "site_config.dart"), "utf8"))[1];
+/** Suspects first, then meaning, then presentation (Plan v2 §2.4.2). */
+const LEVEL_RANK = { S: 0, A: 1, B: 2 };
+const byLevel = (a, b) => (LEVEL_RANK[a] ?? 3) - (LEVEL_RANK[b] ?? 3);
+const csvCell = (v) => (/[",\n]/.test(String(v ?? "")) ? `"${String(v).replace(/"/g, '""')}"` : String(v ?? ""));
 
 async function load() {
   if (args.cache) {
@@ -66,7 +75,7 @@ async function main() {
   }
   const summary = Object.fromEntries(
     Object.entries(byRule)
-      .sort((a, b) => a[1].level.localeCompare(b[1].level) || b[1].questions.size - a[1].questions.size)
+      .sort((a, b) => byLevel(a[1].level, b[1].level) || b[1].questions.size - a[1].questions.size)
       .map(([rule, v]) => [rule, { level: v.level, count: v.questions.size }]),
   );
   summary["duplicate-in-paper"] = { level: "A", count: corpus.exact.length };
@@ -93,6 +102,35 @@ async function main() {
       else for (const f of findings.filter((x) => x.rule === rule)) console.log(`  ${f.subject} ${f.year} ${f.id}  ${f.detail}`);
     }
   }
+  // The questions a reviewer should open first: suspects, then level A,
+  // newest papers first. Capped so the summary stays one small document.
+  const suspects = findings
+    .filter((f) => f.level === "S" || f.level === "A")
+    .sort((a, b) => byLevel(a.level, b.level) || (b.year ?? 0) - (a.year ?? 0))
+    .slice(0, 100)
+    .map((f) => ({ id: f.id, rule: f.rule, level: f.level, subject: f.subject ?? "", year: f.year ?? null, detail: String(f.detail ?? "").slice(0, 160) }));
+
+  if (args.csv) {
+    fs.mkdirSync(REPORTS, { recursive: true });
+    const origin = siteOrigin();
+    const url = (f) => `${origin}/past-questions/waec/${slugify(f.subject ?? "")}/${f.year}/${f.id.slice(0, 10)}/`;
+    const rows = [["id", "url", "subject", "year", "flag", "level", "detail"]];
+    for (const f of [...findings].sort((a, b) => byLevel(a.level, b.level) || a.rule.localeCompare(b.rule))) {
+      rows.push([f.id, url(f), f.subject, f.year, f.rule, f.level, f.detail]);
+    }
+    fs.writeFileSync(path.join(REPORTS, "question_flags.csv"), rows.map((r) => r.map(csvCell).join(",")).join("\n") + "\n");
+    const byPaper = new Map();
+    for (const q of questions) {
+      const k = `${q.subjectId}|${q.year}`;
+      if (!byPaper.has(k)) byPaper.set(k, []);
+      byPaper.get(k).push(q.id);
+    }
+    const years = [["subject", "year", "count", "ids"]];
+    for (const [k, n] of oversized) years.push([name[k.split("|")[0]], k.split("|")[1], n, byPaper.get(k).join(" ")]);
+    fs.writeFileSync(path.join(REPORTS, "year_counts.csv"), years.map((r) => r.map(csvCell).join(",")).join("\n") + "\n");
+    console.log(`\nWrote reports/question_flags.csv (${findings.length} rows) and reports/year_counts.csv (${oversized.length} papers).`);
+  }
+
   if (args.publish) {
     // One write, read by the studio's Content quality panel (reviewers).
     const { initAdmin } = require("./credential");
