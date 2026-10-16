@@ -62,8 +62,11 @@ class GuestLimits {
   /// guest unused for 30 days; and making an account carries it all over.
   /// It used to say progress was kept in the browser while drill refused
   /// guests, so there was no progress to keep — keep the two in step.
+  /// "Saved in this browser" also read as if nothing reached Paragon,
+  /// which the privacy policy contradicts (audit C12): it is kept with an
+  /// anonymous account that this browser holds.
   static const String progressNotKeptMessage =
-      "You're using Paragon as a guest. Your progress is saved in this "
-      'browser for 30 days after your last visit. Create an account to '
-      'keep it everywhere.';
+      "You're using Paragon as a guest. Your progress is kept with this "
+      "browser's guest account for 30 days after your last visit. Create "
+      'an account to keep it everywhere.';
 }

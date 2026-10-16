@@ -8,7 +8,7 @@ import '../core/models/question.dart';
 import '../core/theme/app_colors.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/question_source_badge.dart';
-import '../core/widgets/math_text.dart';
+import '../core/widgets/answer_option.dart';
 import '../core/widgets/guest_notice.dart';
 import '../core/widgets/report_problem_button.dart';
 import 'study/notes/notes_widgets.dart' show QuestionBookmarkButton;
@@ -396,46 +396,28 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                 ),
                 QuestionImage(assetId: q.imageId),
                 const SizedBox(height: 24),
-                ...List.generate(q.options.length, (i) {
-                  Color borderColor = context.palette.outline;
-                  if (_submitted) {
-                    if (i == q.correctIndex) {
-                      borderColor = AppColors.correct;
-                    } else if (i == _selected) {
-                      borderColor = AppColors.wrong;
-                    }
-                  } else if (_selected == i) {
-                    borderColor = AppColors.primary;
-                  }
-                  final optionColor = _submitted
-                      ? (i == q.correctIndex
-                            ? AppColors.correct
-                            : (i == _selected
-                                  ? AppColors.wrong
-                                  : context.palette.onHigh))
-                      : (_selected == i
-                            ? context.palette.textStrong
-                            : context.palette.onHigh);
-
-                  return GestureDetector(
+                for (var i = 0; i < q.options.length; i++)
+                  AnswerOption(
+                    index: i,
+                    text: q.options[i],
+                    state: !_submitted
+                        ? (_selected == i
+                              ? AnswerOptionState.selected
+                              : AnswerOptionState.idle)
+                        : i == q.correctIndex
+                        ? AnswerOptionState.correct
+                        : i == _selected
+                        ? AnswerOptionState.wrong
+                        : AnswerOptionState.idle,
                     onTap: _submitted
                         ? null
                         : () => setState(() => _selected = i),
-                    child: Container(
-                      margin: const EdgeInsets.only(bottom: 12),
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: borderColor, width: 1.5),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: MathText(
-                        text: q.options[i],
-                        useLightRenderer: true,
-                        style: TextStyle(color: optionColor, fontSize: 15),
-                      ),
-                    ),
-                  );
-                }),
+                  ),
+                if (_submitted)
+                  AnswerVerdict(
+                    right: _selected == q.correctIndex,
+                    correctIndex: q.correctIndex,
+                  ),
                 // Hints come out of the explanation, so they give way to it
                 // once the question is answered.
                 if (!_submitted)
@@ -486,7 +468,10 @@ class _DrillScreenState extends ConsumerState<DrillScreen> {
                     child: Wrap(
                       crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
-                        ReportProblemButton(questionId: q.id),
+                        ReportProblemButton(
+                          questionId: q.id,
+                          isGenerated: q.isGenerated,
+                        ),
                         QuestionBookmarkButton(question: q),
                       ],
                     ),

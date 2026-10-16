@@ -53,6 +53,8 @@ void main() {
     test('the progress message is honest about where progress lives', () {
       final m = GuestLimits.progressNotKeptMessage.toLowerCase();
       expect(m, contains('this browser'));
+      // Stored with an anonymous account, as the privacy policy says.
+      expect(m, contains('guest account'));
       expect(m, contains('30 days'));
       expect(m, contains('account'));
       expect(m, isNot(contains('not saved')));

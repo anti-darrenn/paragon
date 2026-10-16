@@ -104,13 +104,7 @@ class _QuestionRunnerState extends State<QuestionRunner> {
           ),
         if (_answered) ...[
           const SizedBox(height: 4),
-          Text(
-            right ? 'Correct.' : 'Not quite.',
-            style: AppTheme.bodyLg.copyWith(
-              color: right ? AppColors.correct : AppColors.wrong,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
+          AnswerVerdict(right: right, correctIndex: q.correctIndex),
           if (q.explanation.trim().isNotEmpty) ...[
             const SizedBox(height: 8),
             FullLatexView(

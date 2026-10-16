@@ -19,6 +19,9 @@ import '../core/widgets/load_error.dart';
 import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/auth/feature_access.dart';
+import '../core/learn/topic_test.dart';
+import '../core/progress/course_progress.dart';
+import '../core/repositories/learn_progress_repository.dart';
 import 'plan/plan_widgets.dart';
 
 /// What home says to the student: a greeting and a line under it, one
@@ -504,6 +507,12 @@ class _Stats extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    // Drill or a topic test: passing a test is practising a topic too.
+    final practised = practisedTopicIds(
+      progress,
+      ref.watch(topicTestProgressProvider).asData?.value ??
+          TopicTestProgress.empty,
+    ).length;
     // An account's week is on the "This week" card above, against its
     // goal; only a guest, who has no plan, sees the bare count here.
     final showWeek = !canUse(
@@ -512,6 +521,8 @@ class _Stats extends ConsumerWidget {
     );
     final weekly = ref.watch(weeklyAttemptsCountProvider);
     final week = weekly.when(
+      // Keeps the last number while it refreshes, rather than a dash.
+      skipLoadingOnReload: true,
       loading: () => '—',
       error: (_, _) => '0',
       data: (n) => '$n',
@@ -527,9 +538,9 @@ class _Stats extends ConsumerWidget {
             child: _StatTile(
               icon: Icons.donut_large_rounded,
               color: AppColors.primary,
-              value: '${progress.startedTopicCount}',
+              value: '$practised',
               label: 'Topics practised',
-              detail: progress.completedTopicCount == 0
+              detail: practised == 0
                   ? 'Start one today'
                   : '${progress.completedTopicCount} at proficient',
             ),

@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 
 import '../core/progress/course_progress.dart';
 import '../core/auth/feature_access.dart';
+import '../core/learn/topic_test.dart';
+import '../core/repositories/learn_progress_repository.dart';
 import '../core/providers/auth_provider.dart';
 import '../core/repositories/course_repository.dart';
 import '../core/repositories/progress_repository.dart';
@@ -44,6 +46,9 @@ class CourseIndexScreen extends ConsumerWidget {
     // identically whether or not they have ever practised.
     final progress =
         ref.watch(userProgressProvider).asData?.value ?? UserProgress.empty;
+    final tests =
+        ref.watch(topicTestProgressProvider).asData?.value ??
+        TopicTestProgress.empty;
     // Unit tests and challenges write unlocks and mastery to the
     // student's uid — a guest's anonymous one included (`canUse`).
     final canChallenge =
@@ -62,6 +67,7 @@ class CourseIndexScreen extends ConsumerWidget {
         data: (course) => _CourseBody(
           course: course,
           progress: progress,
+          practised: practisedTopicIds(progress, tests),
           canChallenge: canChallenge,
           canPlan: canUse(
             Feature.studyPlan,
@@ -94,6 +100,7 @@ class _CourseBody extends StatelessWidget {
   const _CourseBody({
     required this.course,
     required this.progress,
+    this.practised = const {},
     this.canChallenge = false,
     this.canPlan = false,
     this.examDate,
@@ -101,6 +108,9 @@ class _CourseBody extends StatelessWidget {
 
   final Course course;
   final UserProgress progress;
+
+  /// Topics with drill answers or a topic test (`practisedTopicIds`).
+  final Set<String> practised;
   final bool canChallenge;
   final bool canPlan;
   final DateTime? examDate;
@@ -125,23 +135,33 @@ class _CourseBody extends StatelessWidget {
         const SizedBox(height: 16),
 
         // ── Page heading ─────────────────────────────────────────────────
+        // The title takes all the width the share button leaves. Flexible
+        // beside a Spacer split that width in half, and on a phone
+        // "Mathematics" broke mid-word (audit C8).
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Flexible(
-              child: Text(
-                course.name,
-                style: AppTheme.displayLg.copyWith(
-                  color: context.palette.textPrimary,
-                  fontSize: isCompact ? 28 : 40,
-                ),
+            Expanded(
+              child: Wrap(
+                crossAxisAlignment: WrapCrossAlignment.center,
+                spacing: 12,
+                runSpacing: 6,
+                children: [
+                  Text(
+                    course.name,
+                    style: AppTheme.displayLg.copyWith(
+                      color: context.palette.textPrimary,
+                      fontSize: isCompact ? 28 : 40,
+                    ),
+                  ),
+                  if (!course.isLive)
+                    const _StatusPill(
+                      label: 'Coming soon',
+                      color: AppColors.warning,
+                    ),
+                ],
               ),
             ),
-            if (!course.isLive) ...[
-              const SizedBox(width: 12),
-              const _StatusPill(label: 'Coming soon', color: AppColors.warning),
-            ],
-            const Spacer(),
             ShareLinkButton(
               title: '${course.name} on Paragon',
               path: '/subject/${course.key}/course',
@@ -170,6 +190,7 @@ class _CourseBody extends StatelessWidget {
           _CourseProgressPanel(
             course: course,
             progress: progress,
+            practised: practised,
             accent: accent,
           ),
         ],
@@ -279,17 +300,20 @@ class _CourseProgressPanel extends StatelessWidget {
   const _CourseProgressPanel({
     required this.course,
     required this.progress,
+    required this.practised,
     required this.accent,
   });
 
   final Course course;
   final UserProgress progress;
+  final Set<String> practised;
   final Color accent;
 
   @override
   Widget build(BuildContext context) {
     final total = course.practisableTopicCount;
-    final started = course.startedCountIn(progress);
+    // A topic test counts as starting a topic, as drill does (audit C4).
+    final started = course.practisedCountIn(practised);
     final complete = course.completedCountIn(progress);
 
     return Container(
@@ -324,7 +348,7 @@ class _CourseProgressPanel extends StatelessWidget {
                 Text(
                   started == 0
                       ? 'Pick any topic below to begin. Each circle fills as '
-                            'you answer questions in that topic.'
+                            'you practise that topic.'
                       : '$started of $total topics started  ·  $complete at '
                             'proficient or above',
                   style: AppTheme.bodyMd.copyWith(

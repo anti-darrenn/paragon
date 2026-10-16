@@ -160,45 +160,51 @@ class _MistakesPracticeScreenState
             onTap: _checked ? null : () => setState(() => _selected = i),
           ),
         if (_checked) ...[
-          Container(
-            padding: const EdgeInsets.all(14),
-            decoration: BoxDecoration(
-              color: (right ? AppColors.correct : AppColors.wrong).withAlpha(
-                26,
-              ),
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(
+          // Announced as it appears, like every answer verdict (audit D3).
+          Semantics(
+            liveRegion: true,
+            child: Container(
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
                 color: (right ? AppColors.correct : AppColors.wrong).withAlpha(
-                  102,
+                  26,
+                ),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                  color: (right ? AppColors.correct : AppColors.wrong)
+                      .withAlpha(102),
                 ),
               ),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  right ? 'Right this time.' : 'Not yet.',
-                  style: AppTheme.bodyMd.copyWith(
-                    color: right ? AppColors.correct : AppColors.wrong,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                if (q.explanation.trim().isNotEmpty) ...[
-                  const SizedBox(height: 8),
-                  FullLatexView(
-                    latex: q.explanation,
-                    textStyle: AppTheme.bodyMd.copyWith(
-                      color: context.palette.onHigh,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    right ? 'Right this time.' : 'Not yet.',
+                    style: AppTheme.bodyMd.copyWith(
+                      color: right ? AppColors.correct : AppColors.wrong,
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
+                  if (q.explanation.trim().isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    FullLatexView(
+                      latex: q.explanation,
+                      textStyle: AppTheme.bodyMd.copyWith(
+                        color: context.palette.onHigh,
+                      ),
+                    ),
+                  ],
+                  QuestionImage(assetId: q.explanationImageId),
                 ],
-                QuestionImage(assetId: q.explanationImageId),
-              ],
+              ),
             ),
           ),
           Align(
             alignment: Alignment.centerLeft,
-            child: ReportProblemButton(questionId: q.id),
+            child: ReportProblemButton(
+              questionId: q.id,
+              isGenerated: q.isGenerated,
+            ),
           ),
         ],
         const SizedBox(height: 12),

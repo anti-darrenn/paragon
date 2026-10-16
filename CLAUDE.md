@@ -589,6 +589,18 @@ cards**:
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
 
+**Answer options.** Every multiple-choice option a student answers is `AnswerOption`
+(`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
+mistakes practice, the unit test and every review. Only the WAEC exam keeps its own tile, and
+it has the same semantics. A screen reader hears "Option B: 4, selected", then "…, incorrect":
+one node, in a mutually exclusive group, with its own tap action. The verdict under a marked
+question is `AnswerVerdict`, in words and an icon, in a live region. Don't build a new
+option tile inline; drill's had no accessible name at all (audit D1–D4).
+
+**"Practised" topics** (Home's count, a course's "N of M topics started") are
+`practisedTopicIds`: drill answers in `progress` or a topic test in `learn`. It is display
+only.
+
 **Maths is spoken.** Any line with maths, in either renderer, is one semantics node
 labelled by `speakText` (`lib/core/a11y/speech_text.dart`, the read-aloud converter), via
 `mathSemantics()`. `flutter_math_fork` exposes nothing, so before this a screen reader
