@@ -84,7 +84,8 @@ Every script is a dry run first. Read its output, then re-run it with `--apply`.
 - [ ] Set **`NOTIFY_FROM`** to a domain sender (Resend). Until it is set, writer emails
   go to `NOTIFY_TO`, and nothing can email waitlisted students.
 - [ ] Submit `https://<domain>/sitemap.xml` in **Google Search Console**.
-- [ ] Optional: a **custom domain** (audit E10). The code side is one line:
+- [ ] Optional: a **custom domain** (audit E10). **`docs/DOMAIN_SETUP.md` is the full
+  procedure**, including the redirect from the old address. In short, the code side is one line:
   `kSiteOrigin` in `lib/core/config/site_config.dart`. The static build reads it and
   rewrites the built `index.html`'s canonical and share tags to match. Then:
   - add the domain in the Firebase console (Hosting → Add custom domain) and set its
