@@ -813,7 +813,8 @@ decide each action.
 **Giving a role:**
 1. The person signs up normally.
 2. An admin uses **Team** (`/admin/team`), which writes `staffInvites/{email}`.
-3. `apply_roles.js`, in the 15-minute workflow, sets the claims.
+3. `apply_roles.js`, in the 15-minute workflow, sets the claims, but only once the
+   account's email is verified (otherwise the invite waits as `unverified`).
 4. The person signs out and in; a claim change otherwise waits for a token refresh, up to an
    hour.
 
@@ -1046,7 +1047,9 @@ everything is a **dry run** until `--apply` or `--commit`.
 | `set_admin_claim.js` / `create_admin_user.js` | Bootstrap admins |
 | `apply_account_requests.js` | Carries out "sign out everywhere" |
 | `usage.js` | Daily read and write counts → `_meta/usage` |
-| `verify_rules.js` | About 150 live rules checks as a real client |
+| `verify_rules.js` | About 160 live rules checks as a real client |
+| `security_audit.js` | Read-only production checks for the 2026-10-16 security sweep: future-dated reports, role holders with unverified emails, unsafe SVGs, items outside their topic's subject, reserved or guest-held usernames. Exits 1 on a finding. |
+| `svg_safety.js` | **Pure, tested** check for SVGs that could run or fetch anything; used by the static-site build and the audit |
 | `content_lint.js` | Published lessons with placeholder titles, broken maths or trimmed-font commands. Exits non-zero. Same regexes as `lesson_check.dart`. |
 | `check_counts.js` | Asserts each subject's count equals the sum of its topics |
 | `question_rules.js` | **Pure, tested** content rules: broken or stray LaTeX, duplicate options, lost negative powers, missing diagrams, duplicates within a paper, and so on. Also the mechanical fixes. |
