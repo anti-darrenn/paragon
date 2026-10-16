@@ -8,7 +8,8 @@ service, route, collection, job and script. This file is the rulebook.
 **Launching?** Read `project/docs/LAUNCH_CHECKLIST.md` first: the PR merge order,
 the deploy and data steps, the decisions still open, and the browser click-through
 nobody has done yet. `PLAN.md` at the root records what was built for each review
-finding, and why the rest was declined.
+finding, and why the rest was declined. `PLAN_v2.md` (the 2026-10-16 review) holds the
+open work; read `project/docs/REPO_FACTS.md` § "Plan v2" before acting on any of it.
 
 ## Repo layout
 
