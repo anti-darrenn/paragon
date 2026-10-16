@@ -442,6 +442,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     builder: (_) => waec_setup.WaecExamSetupScreen(
                       subjectId: id,
                       routeKey: state.pathParameters['subjectId'],
+                      // `?from=2018&to=2018` from a static year page.
+                      initialYearFrom: int.tryParse(
+                        state.uri.queryParameters['from'] ?? '',
+                      ),
+                      initialYearTo: int.tryParse(
+                        state.uri.queryParameters['to'] ?? '',
+                      ),
                     ),
                   ),
                 ),
