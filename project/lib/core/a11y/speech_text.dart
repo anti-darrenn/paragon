@@ -65,7 +65,7 @@ final _environment = RegExp(
 String _speakEnvironments(String latex) {
   if (latex.contains(r'\dot') || latex.contains(r'\overline')) {
     latex = latex.replaceAllMapped(_recurring, (m) {
-      final digits = (String s) => s.split('').join(' ');
+      String digits(String s) => s.split('').join(' ');
       final head = m.group(2)!;
       final cycle =
           m.group(6) ?? '${m.group(3)}${m.group(4) ?? ''}${m.group(5) ?? ''}';
@@ -950,8 +950,9 @@ class _MathParser {
           'prod' => 'the product',
           _ => 'the integral',
         };
-        if (lower == null && upper == null)
+        if (lower == null && upper == null) {
           return _Spoken('$what of', simple: false);
+        }
         final from = lower == null ? '' : ' from $lower';
         final to = upper == null ? '' : ' to $upper';
         return _Spoken('$what$from$to, of', simple: false);
