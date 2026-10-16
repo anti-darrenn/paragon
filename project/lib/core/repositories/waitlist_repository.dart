@@ -68,6 +68,11 @@ final myWaitlistProvider = StreamProvider<Set<String>>((ref) {
 });
 
 /// Sign-ups per planned subject slug, for the studio.
+/// The waitlist key for "tell me when this subject has WAEC past papers"
+/// (Plan v2 7.7), apart from the subject's own launch ([slug] alone): a
+/// subject can be live for practice with no past paper to sit.
+String waecPapersWaitlistKey(String slug) => 'waec-$slug';
+
 final waitlistCountProvider = FutureProvider.family<int, String>(
   (ref, slug) => ref.read(waitlistRepositoryProvider).countFor(slug),
 );
