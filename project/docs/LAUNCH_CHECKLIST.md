@@ -116,8 +116,20 @@ pages (`build_static_site.js`) as often as you like.
 - [ ] **The tagline**: pick one of the five in `docs/COPY.md` and put it in `kTagline`
   (`lib/core/config/site_config.dart`). Until then it reads "Free WAEC prep. Still a
   work in progress."
-- [ ] **Donations**: set `donateUrl` in `lib/core/config/support_config.dart` when
-  there is somewhere to send them. Until then the button stays hidden.
+- [ ] **Donations** (the Khan-style card on `/support`; hidden until a link is set).
+  1. Sign up at paystack.com and finish the business verification (an individual
+     "starter business" works; it needs your BVN and an ID). Add the bank account the
+     money goes to.
+  2. **One-time:** Paystack → Payment Pages → New page → One-time payment. Make one page
+     per amount (₦1,000, ₦2,500, ₦5,000, ₦10,000; fixed amount), plus one with the amount
+     left blank so the donor types it ("Other"). Name them "Donate to Paragon".
+  3. **Monthly (optional):** Paystack → Plans → create a monthly plan per amount, then
+     Payment Pages → New page → Subscription, one per plan.
+  4. Copy each page's link into `kDonateLinks` in `lib/core/config/support_config.dart`.
+     A choice whose link stays `null` is hidden, so you can start with only some.
+     Change the amounts there too if you like.
+  5. Build and deploy hosting. Try one ₦100 test page first if you want to see a payment
+     land, then delete it.
 - [ ] **The profile rule** is tightened to `school` and `classYear` only (PR
   `chore/step9-reconcile`). After merging, deploy it:
   `firebase deploy --only firestore:rules`, then `node tools/admin/verify_rules.js`.

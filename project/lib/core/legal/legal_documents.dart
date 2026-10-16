@@ -330,6 +330,11 @@ const LegalDocument privacyPolicy = LegalDocument(
             "YouTube's own privacy policy applies to what happens inside the "
             'player. We do not send YouTube your name, email or account '
             'details.',
+        "If you donate, you pay on Paystack's own site, and Paystack's "
+            'privacy policy applies there. Paragon never sees your card '
+            'details. Paystack tells us the amount and the name and email '
+            'you gave it, which we use only to keep a record of donations '
+            'and to thank you.',
       ],
     ),
     LegalSection(

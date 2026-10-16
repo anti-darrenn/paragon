@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'support/donate_card.dart';
+
 import '../core/config/support_config.dart';
 import '../core/legal/legal_documents.dart';
 import '../core/theme/app_palette.dart';
@@ -11,7 +13,7 @@ import '../core/widgets/ui/ui.dart';
 
 /// `/support`: why Paragon is free, what it costs to keep it that way,
 /// and how schools and tutors can work with it — Khan Academy's page in
-/// spirit. The donate button stays hidden while [donateUrl] is null.
+/// spirit. The donate card stays hidden while [kDonateLinks] has no link.
 /// Readable signed out, like About.
 class SupportScreen extends StatelessWidget {
   const SupportScreen({super.key});
@@ -51,19 +53,10 @@ class SupportScreen extends StatelessWidget {
             'stops being enough, and the questions, lessons and examiner '
             'notes take people time to write and check.',
           ),
-          if (donateUrl case final url?) ...[
+          if (!kDonateLinks.isEmpty) ...[
             const SizedBox(height: 4),
-            SizedBox(
-              height: 48,
-              child: ElevatedButton(
-                onPressed: () => launchUrl(
-                  Uri.parse(url),
-                  mode: LaunchMode.externalApplication,
-                ),
-                child: const Text('Donate'),
-              ),
-            ),
-            const SizedBox(height: 16),
+            const DonateCard(),
+            const SizedBox(height: kSectionGap),
           ],
           const SectionHeader('Schools and tutors'),
           para(

@@ -99,8 +99,12 @@ formats were checked on 2026-10-16 against the WAEC syllabuses (question counts)
   Admin-SDK-only.
 
 **Trust and support** (Wave J):
-- **Support.** `/support` is readable signed out, like `/about`. Its donate button is
-  hidden while `donateUrl` (`lib/core/config/support_config.dart`) is null.
+- **Support.** `/support` is readable signed out, like `/about`. Its donate card
+  (`features/support/donate_card.dart`, Khan-style: one-time or monthly, amounts and
+  "Other") opens Paystack payment pages listed in `kDonateLinks`
+  (`lib/core/config/support_config.dart`). A tier with a null link is hidden, and the
+  card is hidden while every link is null. Paying happens on Paystack, so nothing in
+  the app or the CSP changes; the privacy policy says so.
 - **About.** It thanks the names in `kAcknowledgements` and explains the provenance
   labels.
 - **The privacy policy** has a "legal basis" section. It is still a draft for a
