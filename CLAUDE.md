@@ -139,8 +139,11 @@ pure Dart (no Flutter imports). In-app navigation still shows the Flutter screen
 **Hosting headers** (`firebase.json`):
 - `X-Frame-Options: DENY`, `frame-ancestors 'none'`, `nosniff`, a referrer policy and a
   permissions policy on every path except `/__/`. Firebase Auth frames `/__/auth/iframe`.
-- A full Content-Security-Policy is not set yet. It needs testing against CanvasKit,
-  Firebase and YouTube first.
+- A full **Content-Security-Policy** is enforced, after a clean report-only run on the
+  preview (2026-10-16) through sign-in, video and an exam. It allows the hosts the app
+  uses: gstatic (CanvasKit, Firebase JS), googleapis, Analytics, Auth's firebaseapp.com
+  iframe, and youtube-nocookie. **A new third-party host needs adding there first**, or
+  the browser blocks it.
 - App routes are `no-cache`, using the same regex as the rewrite.
 - `/past-questions/img/**` is immutable, because asset ids never change.
 

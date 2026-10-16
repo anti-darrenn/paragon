@@ -94,15 +94,8 @@ Every script is a dry run first. Read its output, then re-run it with `--apply`.
   - change `contactEmail` and `contactEmailCc` in `legal_documents.dart` to domain
     addresses (audit G2). The static privacy page follows on the next build.
   - Submit the new sitemap in Search Console.
-- [ ] **Content-Security-Policy** (audit G1). `firebase.json` sends a full policy as
-  `Content-Security-Policy-Report-Only`, so violations only show in the browser
-  console. On the preview channel:
-  - sign in with Google and with email;
-  - play a video lesson;
-  - sit an exam.
-
-  If the console shows no CSP violations, rename the header to
-  `Content-Security-Policy`. Leave `frame-ancestors 'none'` in place either way.
+- [x] **Content-Security-Policy** (audit G1): enforced after a clean preview run on
+  2026-10-16. A new third-party host must be added to it in `firebase.json`.
 - [ ] **Deploy the Firestore rules** (`_meta/contentAudit`), then run
   `node tools/admin/verify_rules.js`.
 - [ ] **Write to WAEC** about the past questions (audit G4): `docs/WAEC_OUTREACH.md`.
