@@ -27,7 +27,12 @@ void main() {
 
   bool isBundled(String family) =>
       bundled.any((n) => n.startsWith('$family-Regular.ttf')) ||
-      bundled.any((n) => RegExp('^$family-[A-Za-z]+\.ttf\$').hasMatch(n));
+      bundled.any(
+        (n) => RegExp(
+          '^$family-[A-Za-z]+'
+          r'\.ttf$',
+        ).hasMatch(n),
+      );
 
   test('control: a family that is not bundled is caught', () {
     final used = familiesUsed(['GoogleFonts.lexend(textStyle: s)']);
