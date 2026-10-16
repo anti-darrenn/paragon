@@ -32,6 +32,7 @@ const path = require("path");
 const crypto = require("crypto");
 const { execSync } = require("child_process");
 const { initAdmin } = require("../admin/credential");
+const { svgProblem } = require("../admin/svg_safety");
 const R = require("./render");
 const { trimFonts } = require("./trim_fonts");
 
@@ -208,13 +209,24 @@ function imageTag(assets, id, alt, root) {
   const a = id && assets[id];
   const ext = a && EXT[a.mime];
   if (!ext) return "";
+  // An SVG becomes a document on the app's own origin when opened
+  // directly, so one that could run or fetch anything stops the build
+  // (svg_safety.js). Firestore ids are [A-Za-z0-9], but the id names a
+  // file here, so it is checked too.
+  if (!/^[A-Za-z0-9_-]+$/.test(String(id))) throw new Error(`Unexpected lesson asset id: ${id}`);
+  if (a.mime === "image/svg+xml") {
+    const problem = svgProblem(a.data);
+    if (problem) throw new Error(`lessonAssets/${id} is an unsafe SVG (${problem}); replace it before building.`);
+  }
   const rel = `${BASE}/img/${id}.${ext}`;
   const file = path.join(OUT, rel);
   if (!fs.existsSync(file)) {
     fs.mkdirSync(path.dirname(file), { recursive: true });
     fs.writeFileSync(file, a.mime === "image/svg+xml" ? a.data : Buffer.from(a.data, "base64"));
   }
-  const size = a.width && a.height ? ` width="${a.width}" height="${a.height}"` : "";
+  const w = Number.isInteger(a.width) ? a.width : 0;
+  const h = Number.isInteger(a.height) ? a.height : 0;
+  const size = w > 0 && h > 0 ? ` width="${w}" height="${h}"` : "";
   return `<figure class="diagram"><img src="${root}${rel}" alt="${R.escapeHtml(alt)}" loading="lazy"${size}></figure>`;
 }
 

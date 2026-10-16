@@ -23,6 +23,63 @@ const kMaxAssetChars = 900000;
 /// double that stays sharp on high-density screens.
 const kMaxImageWidth = 1600;
 
+/// Largest file the editor will read at all. A phone photo is a few MB.
+const kMaxUploadBytes = 20 * 1024 * 1024;
+
+/// Most pixels a source image may claim before it is decoded. A small file
+/// can declare an enormous canvas (a "decompression bomb") and take the
+/// tab down while decoding; the header is read first, so it never gets
+/// that far. 50 megapixels is a large camera's photo.
+const kMaxSourcePixels = 50 * 1000 * 1000;
+
+/// What an SVG may not contain. Mirrors `tools/admin/svg_safety.js`;
+/// change both together.
+///
+/// The app draws SVG with flutter_svg, which runs nothing, but the static
+/// site publishes question images as files on the app's own origin, where
+/// an SVG opened directly is a page. A diagram never needs a script, an
+/// event handler, embedded HTML or anything fetched from elsewhere.
+final List<(RegExp, String)> _svgRules = [
+  (RegExp(r'<\s*script', caseSensitive: false), 'a script'),
+  (RegExp(r'<\s*foreignObject', caseSensitive: false), 'embedded HTML'),
+  (
+    RegExp(r'<\s*(iframe|embed|object|audio|video)\b', caseSensitive: false),
+    'an embedded document or media',
+  ),
+  (RegExp(r'\son[a-z]+\s*=', caseSensitive: false), 'an event handler'),
+  (RegExp(r'javascript\s*:', caseSensitive: false), 'a javascript: link'),
+  (RegExp(r'<!ENTITY', caseSensitive: false), 'an XML entity'),
+  (
+    RegExp(
+      r'''(?:href|src)\s*=\s*["']?\s*(?!#|data:image/)[a-z][a-z0-9+.-]*:''',
+      caseSensitive: false,
+    ),
+    'a link to another site',
+  ),
+  (
+    RegExp(r'''(?:href|src)\s*=\s*["']?\s*//''', caseSensitive: false),
+    'a link to another site',
+  ),
+  (
+    RegExp(
+      r'''@import|url\(\s*["']?\s*(?:[a-z][a-z0-9+.-]*:|//)(?!image/)''',
+      caseSensitive: false,
+    ),
+    'a stylesheet from another site',
+  ),
+];
+
+/// Why [svg] is refused, or null when it is a plain drawing.
+String? svgProblem(String svg) {
+  if (!RegExp(r'<svg[\s>]', caseSensitive: false).hasMatch(svg)) {
+    return 'not an SVG image';
+  }
+  for (final (pattern, why) in _svgRules) {
+    if (pattern.hasMatch(svg)) return why;
+  }
+  return null;
+}
+
 class PreparedImage {
   const PreparedImage({
     required this.mime,
@@ -56,11 +113,23 @@ class ImageTooLarge implements Exception {
 /// Throws [ImageTooLarge] when even that fails, and [FormatException] for a
 /// file that is not an image.
 PreparedImage prepareLessonImage(Uint8List bytes, String fileName) {
+  if (bytes.length > kMaxUploadBytes) {
+    throw const ImageTooLarge(
+      'That file is over 20 MB. Export a smaller copy and try again.',
+    );
+  }
   final lower = fileName.toLowerCase();
   if (lower.endsWith('.svg')) {
     final svg = utf8.decode(bytes, allowMalformed: true);
-    if (!svg.contains('<svg')) {
+    final problem = svgProblem(svg);
+    if (problem == 'not an SVG image') {
       throw const FormatException('That file is not an SVG image.');
+    }
+    if (problem != null) {
+      throw FormatException(
+        'That SVG contains $problem, which lessons do not allow. '
+        'Export it again as a plain drawing, or as PNG.',
+      );
     }
     if (svg.length > kMaxAssetChars) {
       throw const ImageTooLarge(
@@ -72,7 +141,23 @@ PreparedImage prepareLessonImage(Uint8List bytes, String fileName) {
 
   img.Image? image;
   try {
-    image = img.decodeImage(bytes);
+    // The header first: its size is checked before a single pixel is
+    // decoded, and only the first frame of an animation is decoded.
+    final decoder = img.findDecoderForData(bytes);
+    final info = decoder?.startDecode(bytes);
+    if (decoder != null && info != null) {
+      if (info.width <= 0 ||
+          info.height <= 0 ||
+          info.width * info.height > kMaxSourcePixels) {
+        throw ImageTooLarge(
+          'That image is ${info.width}×${info.height} pixels, too large to '
+          'open here. Resize it below 50 megapixels first.',
+        );
+      }
+      image = decoder.decode(bytes, frame: 0);
+    }
+  } on ImageTooLarge {
+    rethrow;
   } catch (_) {
     // The decoders throw on some malformed input instead of returning null.
     image = null;
@@ -133,6 +218,13 @@ Future<String?> pickAndUploadLessonImage({
   );
   if (files.isEmpty) return null;
   final file = files.first;
+  // Before reading it into memory, not after.
+  final size = await file.length();
+  if (size != null && size > kMaxUploadBytes) {
+    throw const ImageTooLarge(
+      'That file is over 20 MB. Export a smaller copy and try again.',
+    );
+  }
   final prepared = prepareLessonImage(await file.readAsBytes(), file.name);
 
   final doc = db.collection('lessonAssets').doc();
