@@ -149,7 +149,9 @@ final userDataProvider = StreamProvider<Map<String, dynamic>?>((ref) {
 /// figure is a weekly total on a dashboard, and it refreshes whenever the
 /// provider is invalidated or the screen is revisited.
 final weeklyAttemptsCountProvider = FutureProvider<int>((ref) async {
-  final user = ref.watch(authStateProvider).asData?.value;
+  // Waits for auth rather than answering 0 while it loads: that 0 was
+  // followed by a reload, and Home showed "—" on a cold start (audit C3).
+  final user = await ref.watch(authStateProvider.future);
   if (user == null) return 0;
 
   // Monday 00:00 Lagos, whatever the device's clock zone: the same week

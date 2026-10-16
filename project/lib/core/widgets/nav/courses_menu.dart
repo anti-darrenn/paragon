@@ -112,7 +112,7 @@ class _CoursesPanel extends ConsumerWidget {
               for (final c in courses)
                 _CourseTile(
                   course: c,
-                  onTap: () => open('/subject/${c.key}/course'),
+                  onTap: () => open('/subject/${c.slug}/course'),
                 ),
             ],
           ),

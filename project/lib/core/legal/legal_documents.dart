@@ -304,6 +304,9 @@ const LegalDocument privacyPolicy = LegalDocument(
             'fixing what is wrong; you can turn analytics off at any time. '
             'The optional profile details, the plan and "Notify me" are '
             'yours to give or leave out, and to remove later.',
+        'We handle your data under the Nigeria Data Protection Act 2023 '
+            '(NDPA), which is enforced by the Nigeria Data Protection '
+            'Commission (NDPC).',
       ],
     ),
     LegalSection(
@@ -364,17 +367,22 @@ const LegalDocument privacyPolicy = LegalDocument(
             'your account, so that nobody else can take it and pretend to '
             'be you. We keep the record of which account reserved it, and '
             'the date you last changed it.',
+        'If you think we have handled your data wrongly, please tell us '
+            'first at $contactEmail so we can put it right. You also have '
+            'the right to complain to the Nigeria Data Protection '
+            'Commission (ndpc.gov.ng).',
       ],
     ),
     LegalSection(
       heading: 'Students under 18',
       paragraphs: [
         'Paragon is built for students preparing for WAEC, so most of the '
-            'people using it are under 18, and some are under 16. We collect '
-            'as little as we can: nothing in the optional profile step is '
-            'required, and the app works fully without it.',
-        'If you are under 16, please ask a parent, guardian or teacher '
-            'before filling in the optional profile details. If you are a '
+            'people using it are under 18. The Nigeria Data Protection Act '
+            'treats everyone under 18 as a child. We collect as little as we '
+            'can: nothing in the optional profile step is required, and the '
+            'app works fully without it.',
+        'If you are under 18, please ask a parent or guardian before '
+            'filling in the optional profile details. If you are a '
             'parent or guardian and want to see or delete what we hold about '
             'your child, email $contactEmail.',
       ],

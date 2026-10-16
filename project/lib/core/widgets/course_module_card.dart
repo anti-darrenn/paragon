@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart' show OrdinalSortKey;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../repositories/learn_progress_repository.dart';
@@ -147,15 +148,24 @@ class CourseModuleCard extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      // Each side is one semantics container, read title
+                      // first. Side by side, a screen reader ordered the
+                      // two columns' children by height on the page and
+                      // read the module summary after the third topic
+                      // (audit D5).
                       Expanded(
                         flex: _titleFlex,
-                        child: _TitleRegion(
-                          module: module,
-                          accent: accent,
-                          index: index,
-                          progress: progress,
-                          paintBackground: false,
-                          onUnitTest: onUnitTest,
+                        child: Semantics(
+                          container: true,
+                          sortKey: const OrdinalSortKey(0),
+                          child: _TitleRegion(
+                            module: module,
+                            accent: accent,
+                            index: index,
+                            progress: progress,
+                            paintBackground: false,
+                            onUnitTest: onUnitTest,
+                          ),
                         ),
                       ),
                       // Matches the divider in the background row so the
@@ -163,12 +173,16 @@ class CourseModuleCard extends StatelessWidget {
                       const SizedBox(width: _dividerWidth),
                       Expanded(
                         flex: _gridFlex,
-                        child: _TopicGrid(
-                          module: module,
-                          accent: accent,
-                          columns: gridColumns,
-                          progress: progress,
-                          onTopicTap: onTopicTap,
+                        child: Semantics(
+                          container: true,
+                          sortKey: const OrdinalSortKey(1),
+                          child: _TopicGrid(
+                            module: module,
+                            accent: accent,
+                            columns: gridColumns,
+                            progress: progress,
+                            onTopicTap: onTopicTap,
+                          ),
                         ),
                       ),
                     ],

@@ -22,7 +22,15 @@ import '../core/providers/analytics_provider.dart';
 /// subject's real WAEC data actually spans (queried live, never assumed).
 class WaecExamSetupScreen extends ConsumerStatefulWidget {
   final String subjectId;
-  const WaecExamSetupScreen({super.key, required this.subjectId});
+
+  /// The subject as the URL named it (a slug, say), for links onward, so
+  /// the address stays readable. Defaults to [subjectId].
+  final String? routeKey;
+  const WaecExamSetupScreen({
+    super.key,
+    required this.subjectId,
+    this.routeKey,
+  });
 
   @override
   ConsumerState<WaecExamSetupScreen> createState() =>
@@ -108,7 +116,7 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
             preset: _fullPaper ? 'full_paper' : 'custom',
           );
       context.go(
-        '/waec/${widget.subjectId}/exam',
+        '/waec/${widget.routeKey ?? widget.subjectId}/exam',
         extra: WaecExamSessionData(
           questions: questions,
           timerEnabled: isGuest ? false : _timerEnabled,
@@ -190,7 +198,10 @@ class _WaecExamSetupScreenState extends ConsumerState<WaecExamSetupScreen> {
                     '$subjectName past questions, marked at the end like '
                     'the real paper.',
               ),
-              _ResumeCard(subjectId: widget.subjectId),
+              _ResumeCard(
+                subjectId: widget.subjectId,
+                routeKey: widget.routeKey ?? widget.subjectId,
+              ),
               SurfaceCard(child: _paperSection(format, isGuest)),
               const SizedBox(height: 12),
               SurfaceCard(child: _yearRangeSection(minYear, maxYear)),
@@ -590,9 +601,10 @@ final savedExamProvider = FutureProvider.autoDispose.family<SavedExam?, String>(
 /// "You have an exam in progress": resume it where it was left, clock and
 /// all, or throw it away. Shown above the setup when there is one.
 class _ResumeCard extends ConsumerWidget {
-  const _ResumeCard({required this.subjectId});
+  const _ResumeCard({required this.subjectId, required this.routeKey});
 
   final String subjectId;
+  final String routeKey;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -631,7 +643,7 @@ class _ResumeCard extends ConsumerWidget {
                         .read(analyticsProvider)
                         .examStart(subjectId: subjectId, preset: 'resume');
                     context.go(
-                      '/waec/$subjectId/exam',
+                      '/waec/$routeKey/exam',
                       extra: WaecExamSessionData.resuming(saved),
                     );
                   },

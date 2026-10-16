@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../core/search/search.dart';
 import '../../core/theme/app_colors.dart';
@@ -35,7 +34,7 @@ Future<void> openSearchPalette(BuildContext context) async {
       barrierColor: AppColors.overlay.withAlpha(140),
       builder: (_) => const SearchPalette(),
     );
-    if (path != null && context.mounted) context.push(path);
+    if (path != null && context.mounted) openSearchPath(context, path);
   } finally {
     _paletteOpen = false;
   }
@@ -106,6 +105,7 @@ class _SearchPaletteState extends ConsumerState<SearchPalette> {
     ...r.courses.take(kSearchPalettePerGroup),
     ...r.topics.take(kSearchPalettePerGroup),
     ...r.lessons.take(kSearchPalettePerGroup),
+    ...r.pastQuestions.take(kSearchPalettePerGroup),
   ];
 
   KeyEventResult _onKey(FocusNode _, KeyEvent e) {
@@ -202,7 +202,8 @@ class _SearchPaletteState extends ConsumerState<SearchPalette> {
                           ),
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Search courses, topics and lessons',
+                            hintText:
+                                'Search courses, topics, lessons, past questions',
                             hintStyle: AppTheme.bodyLg.copyWith(
                               color: context.palette.textSecondary,
                               fontSize: 17,

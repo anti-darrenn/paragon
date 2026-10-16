@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../core/learn/topic_test.dart';
 import '../core/web/browser.dart';
@@ -13,7 +14,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_theme.dart';
 import '../core/widgets/full_latex_view.dart';
 import '../core/widgets/guest_notice.dart';
-import '../core/widgets/math_text.dart';
+import '../core/widgets/answer_option.dart';
 import '../core/widgets/report_problem_button.dart';
 import '../core/widgets/load_error.dart';
 import '../core/study/study_dock.dart';
@@ -61,6 +62,9 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
   final Map<int, int> _answers = {};
 
   bool _submitted = false;
+
+  /// Looking back through a marked test (`_Review`). In memory only.
+  bool _reviewing = false;
   bool _saving = false;
   bool _saveFailed = false;
 
@@ -212,6 +216,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
       _index = 0;
       _answers.clear();
       _submitted = false;
+      _reviewing = false;
       _saveFailed = false;
       _correct = 0;
       _total = 0;
@@ -249,6 +254,13 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
           if (questions.isEmpty) {
             return _EmptyBank(onBack: () => context.popOrGo());
           }
+          if (_submitted && _reviewing) {
+            return _Review(
+              questions: questions,
+              answers: _answers,
+              onBack: () => setState(() => _reviewing = false),
+            );
+          }
           if (_submitted) {
             return _Result(
               correct: _correct,
@@ -256,6 +268,7 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
               saving: _saving,
               saveFailed: _saveFailed,
               isGuest: isGuest,
+              onReview: () => setState(() => _reviewing = true),
               onRetake: _retake,
               onDone: () => context.popOrGo(),
             );
@@ -270,7 +283,6 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
                   index: _index,
                   answers: _answers,
                   answeredCount: _answeredCount,
-                  isGuest: isGuest,
                   onSelect: _select,
                   onIndex: (i) => setState(() => _index = i),
                   onSubmit: () => _submit(questions),
@@ -285,9 +297,15 @@ class _TopicTestScreenState extends ConsumerState<TopicTestScreen> {
     // Once a question is answered, back asks first: leaving throws the
     // attempt away, and the pass mark gates drill.
     return PopScope(
-      canPop: _submitted || _answers.isEmpty,
+      canPop: (_submitted && !_reviewing) || _answers.isEmpty,
       onPopInvokedWithResult: (didPop, _) {
-        if (!didPop) _confirmLeave();
+        if (didPop) return;
+        // Back from the review returns to the result, not out of the test.
+        if (_reviewing) {
+          setState(() => _reviewing = false);
+        } else {
+          _confirmLeave();
+        }
       },
       child: StudyDock(
         subjectId: widget.subjectId,
@@ -306,7 +324,6 @@ class _Questions extends StatelessWidget {
     required this.index,
     required this.answers,
     required this.answeredCount,
-    required this.isGuest,
     required this.onSelect,
     required this.onIndex,
     required this.onSubmit,
@@ -316,7 +333,6 @@ class _Questions extends StatelessWidget {
   final int index;
   final Map<int, int> answers;
   final int answeredCount;
-  final bool isGuest;
   final void Function(int) onSelect;
   final void Function(int) onIndex;
   final VoidCallback onSubmit;
@@ -368,7 +384,8 @@ class _Questions extends StatelessWidget {
               color: context.palette.textSecondary,
             ),
           ),
-          if (isGuest) ...[const SizedBox(height: 12), const GuestNotice()],
+          // No guest notice here: it sat between the rules and the
+          // question on every one of the ten. It is on the result.
           const SizedBox(height: 16),
 
           FullLatexView(
@@ -382,37 +399,16 @@ class _Questions extends StatelessWidget {
           const SizedBox(height: 20),
 
           // No correct/incorrect colouring anywhere here — that is the
-          // whole difference between this and a drill.
-          ...List.generate(q.options.length, (i) {
-            final isChosen = selected == i;
-            return GestureDetector(
+          // whole difference between this and a drill. Selected or not.
+          for (var i = 0; i < q.options.length; i++)
+            AnswerOption(
+              index: i,
+              text: q.options[i],
+              state: selected == i
+                  ? AnswerOptionState.selected
+                  : AnswerOptionState.idle,
               onTap: () => onSelect(i),
-              child: Container(
-                margin: const EdgeInsets.only(bottom: 12),
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: isChosen
-                        ? AppColors.secondary
-                        : context.palette.outline,
-                    width: 1.5,
-                  ),
-                  borderRadius: BorderRadius.circular(10),
-                  color: isChosen
-                      ? AppColors.secondary.withAlpha((0.10 * 255).round())
-                      : null,
-                ),
-                child: MathText(
-                  text: q.options[i],
-                  useLightRenderer: true,
-                  style: TextStyle(
-                    color: isChosen ? Colors.white : context.palette.onHigh,
-                    fontSize: 15,
-                  ),
-                ),
-              ),
-            );
-          }),
+            ),
 
           const SizedBox(height: 8),
           Row(
@@ -467,7 +463,7 @@ class _Questions extends StatelessWidget {
           // No bookmark here: a question saved mid-test shows its answer
           // on the Saved page, which would turn the gate into a lookup.
           // Drill and exercises offer the same questions to bookmark.
-          ReportProblemButton(questionId: q.id),
+          ReportProblemButton(questionId: q.id, isGenerated: q.isGenerated),
           const SizedBox(height: 24),
         ],
       ),
@@ -484,6 +480,7 @@ class _Result extends StatelessWidget {
     required this.saving,
     required this.saveFailed,
     required this.isGuest,
+    required this.onReview,
     required this.onRetake,
     required this.onDone,
   });
@@ -493,6 +490,7 @@ class _Result extends StatelessWidget {
   final bool saving;
   final bool saveFailed;
   final bool isGuest;
+  final VoidCallback onReview;
   final VoidCallback onRetake;
   final VoidCallback onDone;
 
@@ -594,6 +592,22 @@ class _Result extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
+          // Which ones were wrong, and why: the score alone left a student
+          // to guess what to go back over (audit C2).
+          OutlinedButton(
+            onPressed: onReview,
+            style: OutlinedButton.styleFrom(
+              side: BorderSide(color: context.palette.border),
+              padding: const EdgeInsets.symmetric(vertical: 16),
+            ),
+            child: Text(
+              'Review answers',
+              style: AppTheme.btnLabel.copyWith(
+                color: context.palette.textPrimary,
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
           OutlinedButton(
             onPressed: onRetake,
             style: OutlinedButton.styleFrom(
@@ -605,9 +619,120 @@ class _Result extends StatelessWidget {
               style: AppTheme.btnLabel.copyWith(color: AppColors.secondary),
             ),
           ),
+          if (correct < total) ...[
+            const SizedBox(height: 8),
+            TextButton(
+              onPressed: () => context.push('/mistakes'),
+              child: const Text('Practise what you got wrong'),
+            ),
+          ],
           const SizedBox(height: 32),
         ],
       ),
+    );
+  }
+}
+
+/// The marked test, question by question: the student's answer, the right
+/// one and the worked explanation. Held in memory; nothing is stored or
+/// read. Only after submitting, so it never gives an answer to a test in
+/// progress.
+class _Review extends StatelessWidget {
+  const _Review({
+    required this.questions,
+    required this.answers,
+    required this.onBack,
+  });
+
+  final List<Question> questions;
+  final Map<int, int> answers;
+  final VoidCallback onBack;
+
+  @override
+  Widget build(BuildContext context) {
+    final palette = context.palette;
+    return ListView(
+      padding: const EdgeInsets.all(20),
+      children: [
+        Align(
+          alignment: Alignment.centerLeft,
+          child: TextButton.icon(
+            onPressed: onBack,
+            icon: const Icon(Icons.arrow_back, size: 18),
+            label: const Text('Back to your result'),
+          ),
+        ),
+        for (var n = 0; n < questions.length; n++) ...[
+          const SizedBox(height: 16),
+          Text(
+            answers[n] == null
+                ? 'Question ${n + 1} · not answered'
+                : answers[n] == questions[n].correctIndex
+                ? 'Question ${n + 1} · right'
+                : 'Question ${n + 1} · wrong',
+            style: AppTheme.caption.copyWith(color: palette.textSecondary),
+          ),
+          const SizedBox(height: 8),
+          FullLatexView(
+            latex: questions[n].text,
+            textStyle: AppTheme.bodyLg.copyWith(
+              color: palette.textPrimary,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          QuestionImage(assetId: questions[n].imageId),
+          const SizedBox(height: 12),
+          for (var i = 0; i < questions[n].options.length; i++)
+            AnswerOption(
+              index: i,
+              text: questions[n].options[i],
+              state: i == questions[n].correctIndex
+                  ? AnswerOptionState.correct
+                  : i == answers[n]
+                  ? AnswerOptionState.wrong
+                  : AnswerOptionState.idle,
+            ),
+          if (questions[n].explanation.trim().isNotEmpty ||
+              questions[n].explanationImageId != null)
+            Container(
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: palette.surface,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: palette.border),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  if (questions[n].explanation.trim().isNotEmpty)
+                    FullLatexView(
+                      latex: questions[n].explanation,
+                      textStyle: AppTheme.bodyMd.copyWith(
+                        color: palette.textPrimary,
+                      ),
+                    ),
+                  QuestionImage(assetId: questions[n].explanationImageId),
+                ],
+              ),
+            )
+          else
+            Text(
+              'No worked answer yet for this question.',
+              style: AppTheme.bodyMd.copyWith(color: palette.textSecondary),
+            ),
+          ReportProblemButton(
+            questionId: questions[n].id,
+            isGenerated: questions[n].isGenerated,
+          ),
+          Divider(color: palette.border, height: 24),
+        ],
+        const SizedBox(height: 8),
+        OutlinedButton(
+          onPressed: onBack,
+          child: const Text('Back to your result'),
+        ),
+        const SizedBox(height: 24),
+      ],
     );
   }
 }

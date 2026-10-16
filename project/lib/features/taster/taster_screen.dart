@@ -25,6 +25,16 @@ import '../plan/plan_widgets.dart';
 /// The questions come from the subject's most-examined topic (most past
 /// questions), so the first taste is a topic that matters. Nothing is
 /// recorded; the end offers the topic itself and an account.
+/// [count] questions from [pool], real past questions first, each group
+/// shuffled. The first question a new visitor sees should prove "real WAEC
+/// questions", with its year on it; it was as often "Paragon practice"
+/// (audit C14). Practice questions only fill up a topic short of past ones.
+List<Question> tasterQuestions(List<Question> pool, int count) {
+  final past = [...pool.where((q) => q.isPastQuestion)]..shuffle();
+  final rest = [...pool.where((q) => !q.isPastQuestion)]..shuffle();
+  return [...past, ...rest].take(count).toList();
+}
+
 class TasterScreen extends ConsumerStatefulWidget {
   const TasterScreen({super.key});
 
@@ -60,7 +70,7 @@ class _TasterScreenState extends ConsumerState<TasterScreen> {
         (a, b) => b.pastQuestions > a.pastQuestions ? b : a,
       );
       final pool = await ref.read(drillQuestionsProvider(topic.id).future);
-      final qs = ([...pool]..shuffle()).take(_count).toList();
+      final qs = tasterQuestions(pool, _count);
       if (qs.isEmpty) throw StateError('no questions');
       if (!mounted) return;
       setState(() {
@@ -151,7 +161,7 @@ class _TasterScreenState extends ConsumerState<TasterScreen> {
                 height: 48,
                 child: ElevatedButton(
                   onPressed: () => context.go(
-                    '/subject/${course.key}/course/topic/${topic.id}',
+                    course.pathForTopicId(topic.id),
                   ),
                   child: Text('Learn ${topic.name}'),
                 ),

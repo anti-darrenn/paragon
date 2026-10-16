@@ -18,6 +18,10 @@ has({ ...good, correctIndex: -1 }, "correctIndex");
 has({ ...good, year: undefined }, "year");
 has({ ...good, source: "jamb" }, "source");
 has({ ...good, text: String.raw`Bad \(\frac{1}\)` }, "stem");
+// The audit's meaning-changing rules (question_rules.js).
+has({ ...good, text: "A charge of 4 x 10-3 C" }, "lost-negative-power");
+has({ ...good, text: "In the diagram, find x" }, "diagram-missing");
+assert.deepStrictEqual(problemsWith({ ...good, text: "In the diagram, find x", imageId: "a1" }), []);
 has({ ...good, options: [String.raw`\(\sqrt{\)`, "2", "3", "4"] }, "option 1");
 has({ ...good, topicId: "" }, "topicId");
 

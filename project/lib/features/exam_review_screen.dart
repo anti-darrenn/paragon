@@ -339,14 +339,23 @@ class ExamReviewCard extends StatelessWidget {
                 ),
               ),
             QuestionImage(assetId: q.explanationImageId),
-          ],
+          ] else
+            Text(
+              'No worked answer yet for this question.',
+              style: AppTheme.bodyMd.copyWith(
+                color: context.palette.textSecondary,
+              ),
+            ),
           ExaminerInsightPanel(question: q, selected: item.selected),
           Align(
             alignment: Alignment.centerLeft,
             child: Wrap(
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                ReportProblemButton(questionId: q.id),
+                ReportProblemButton(
+                  questionId: q.id,
+                  isGenerated: q.isGenerated,
+                ),
                 QuestionBookmarkButton(question: q),
               ],
             ),

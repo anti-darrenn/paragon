@@ -10,6 +10,7 @@ import 'reauth.dart';
 import '../../core/theme/app_palette.dart';
 import '../../core/widgets/nav/back_navigation.dart';
 import '../../core/widgets/ui/ui.dart';
+import '../../core/auth/sign_out.dart';
 
 /// `/settings/security` — how you sign in, and the controls that go with
 /// it: verify or change your email, change or add a password, link Google,
@@ -171,7 +172,7 @@ class _SecurityScreenState extends ConsumerState<SecurityScreen> {
       await ref
           .read(accountRepositoryProvider)
           .requestSignOutEverywhere(user.uid);
-      await FirebaseAuth.instance.signOut();
+      if (mounted) await signOutToWelcome(context);
     } catch (_) {
       if (mounted) {
         _say("Couldn't send that. Check your connection and try again.");

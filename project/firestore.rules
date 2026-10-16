@@ -422,6 +422,12 @@ service cloud.firestore {
       allow read: if isReviewer();
     }
 
+    // The content audit's per-rule counts (`content_audit.js --publish`),
+    // for the studio's Content quality panel. Same shape of access.
+    match /_meta/contentAudit {
+      allow read: if isReviewer();
+    }
+
     // ── USER DOCUMENTS ──────────────────────────────────────────
     // Owner-only, but no longer a blanket `write`: creation is limited to
     // an exact field set, and username/usernameKey can only be set by

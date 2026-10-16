@@ -447,7 +447,7 @@ class _SittingState extends ConsumerState<_Sitting> {
                       )
                     : null,
                 onTap: () => context.push(
-                  '/subject/${widget.course.key}/course/topic/${e.key}',
+                  widget.course.pathForTopicId(e.key),
                 ),
               ),
             const SizedBox(height: 20),

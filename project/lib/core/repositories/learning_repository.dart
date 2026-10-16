@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../content/session_mix.dart';
 import '../data/read_meter.dart';
 import '../data/cache_first.dart';
 import '../models/subject.dart';
@@ -145,7 +146,11 @@ final drillQuestionsProvider = FutureProvider.family<List<Question>, String>((
   }
 
   final shuffled = docs.toList()..shuffle();
-  return shuffled.map((d) => Question.fromFirestore(d)).toList();
+  // Spread generator templates out, and cap them (audit A8).
+  return mixSession(
+    shuffled.map((d) => Question.fromFirestore(d)).toList(),
+    (q) => q.text,
+  );
 });
 
 // Safety net only — real per-subject bounds always come from

@@ -123,6 +123,9 @@ class UserProgress {
   int get startedTopicCount =>
       _topics.values.where((p) => p.level.isStarted).length;
 
+  Iterable<String> get startedTopicIds =>
+      _topics.entries.where((e) => e.value.level.isStarted).map((e) => e.key);
+
   /// Topics taken to proficient or above, across every subject.
   int get completedTopicCount =>
       _topics.values.where((p) => p.level.isComplete).length;

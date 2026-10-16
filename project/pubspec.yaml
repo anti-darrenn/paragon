@@ -95,6 +95,10 @@ flutter:
     - assets/icons/mail_icon.svg
     - assets/icons/dot.svg
     - assets/data/periodic_table.json
+    # Space Grotesk, bundled so google_fonts never fetches it from
+    # fonts.gstatic.com at startup (audit F2). Named as google_fonts expects;
+    # each file is the one google_fonts 8.2.1 would download (same SHA-256).
+    - assets/google_fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

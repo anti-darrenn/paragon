@@ -170,7 +170,7 @@ class _CourseCardState extends State<_CourseCard> {
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
       child: GestureDetector(
-        onTap: () => context.push('/subject/${course.key}/course'),
+        onTap: () => context.push('/subject/${course.slug}/course'),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 140),
           padding: const EdgeInsets.all(20),

@@ -39,10 +39,67 @@ void main() {
   final pattern = spa['regex'] as String;
   final regex = RegExp(pattern);
 
-  test('the SPA rewrite is RE2-compatible (no lookaround)', () {
-    expect(pattern, isNot(contains('(?=')));
-    expect(pattern, isNot(contains('(?!')));
-    expect(pattern, isNot(contains('(?<')));
+  final headerRules = (hosting['headers'] as List).cast<Map<String, dynamic>>();
+  Map<String, String> headersOf(Map<String, dynamic> rule) => {
+    for (final h in (rule['headers'] as List).cast<Map<String, dynamic>>())
+      h['key'] as String: h['value'] as String,
+  };
+
+  test('every regex is RE2-compatible (no lookaround)', () {
+    final patterns = [
+      pattern,
+      for (final r in headerRules)
+        if (r['regex'] case final String p) p,
+    ];
+    for (final p in patterns) {
+      expect(p, isNot(contains('(?=')));
+      expect(p, isNot(contains('(?!')));
+      expect(p, isNot(contains('(?<')));
+    }
+  });
+
+  test('app pages are never cached: the no-cache list is the rewrite list', () {
+    final noCache = headerRules.where(
+      (r) =>
+          r['regex'] == pattern && headersOf(r)['Cache-Control'] == 'no-cache',
+    );
+    expect(noCache, hasLength(1));
+  });
+
+  test('security headers cover pages but not Firebase\'s /__/ paths', () {
+    // /__/auth/iframe is framed by the app during sign-in; DENY there
+    // would break it.
+    final rule = headerRules.singleWhere(
+      (r) => headersOf(r).containsKey('X-Frame-Options'),
+    );
+    expect(headersOf(rule)['X-Frame-Options'], 'DENY');
+    // Enforced since a clean preview run (2026-10-16), and still refusing
+    // to be framed.
+    final csp = headersOf(rule)['Content-Security-Policy']!;
+    expect(csp, contains("frame-ancestors 'none'"));
+    expect(csp, contains("default-src 'self'"));
+    expect(
+      headersOf(rule),
+      isNot(contains('Content-Security-Policy-Report-Only')),
+    );
+    final scope = RegExp(rule['regex'] as String);
+    for (final p in [
+      '/',
+      '/courses',
+      '/past-questions/x/',
+      '/_x',
+      '/_',
+      '/main.dart.js',
+    ]) {
+      expect(scope.hasMatch(p), isTrue, reason: p);
+    }
+    for (final p in [
+      '/__/auth/iframe',
+      '/__/auth/handler',
+      '/__/firebase/init.js',
+    ]) {
+      expect(scope.hasMatch(p), isFalse, reason: p);
+    }
   });
 
   testWidgets('every top-level route reaches the app', (tester) async {

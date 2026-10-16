@@ -92,7 +92,8 @@ void main() {
     await tester.pump();
     await tester.tap(find.text('w')); // wrong
     await tester.pump();
-    expect(find.text('Not quite.'), findsOneWidget);
+    // Says which one was right, not only that this one was wrong.
+    expect(find.text('Not quite. The answer is C.'), findsOneWidget);
     await tester.tap(find.text('See how you did'));
     expect(got!.map((r) => r.correct), [true, false]);
   });

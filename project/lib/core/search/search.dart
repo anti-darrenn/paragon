@@ -6,7 +6,15 @@
 /// of the `topics` collection, would not survive the Spark read quota.
 library;
 
-enum SearchKind { course, topic, lesson }
+enum SearchKind {
+  course,
+  topic,
+  lesson,
+
+  /// A WAEC past question, or a year's paper, on the static
+  /// `/past-questions/` pages (audit C13). Opened as a page, not a route.
+  pastQuestion,
+}
 
 /// One thing a student can find and open.
 class SearchItem {
@@ -43,20 +51,32 @@ class SearchResults {
     this.courses = const [],
     this.topics = const [],
     this.lessons = const [],
+    this.pastQuestions = const [],
   });
 
   final List<SearchItem> courses;
   final List<SearchItem> topics;
   final List<SearchItem> lessons;
+  final List<SearchItem> pastQuestions;
 
   static const empty = SearchResults();
 
-  bool get isEmpty => courses.isEmpty && topics.isEmpty && lessons.isEmpty;
-  int get total => courses.length + topics.length + lessons.length;
+  bool get isEmpty =>
+      courses.isEmpty &&
+      topics.isEmpty &&
+      lessons.isEmpty &&
+      pastQuestions.isEmpty;
+  int get total =>
+      courses.length + topics.length + lessons.length + pastQuestions.length;
 
-  /// Courses, then topics, then lessons: the order on screen, and the
-  /// order arrow keys move through.
-  List<SearchItem> get all => [...courses, ...topics, ...lessons];
+  /// Courses, then topics, then lessons, then past questions: the order on
+  /// screen, and the order arrow keys move through.
+  List<SearchItem> get all => [
+    ...courses,
+    ...topics,
+    ...lessons,
+    ...pastQuestions,
+  ];
 }
 
 const _accents = {
@@ -140,5 +160,44 @@ SearchResults searchCatalog(
     courses: of(SearchKind.course),
     topics: of(SearchKind.topic),
     lessons: of(SearchKind.lesson),
+    // Thousands of them; the best twenty are plenty.
+    pastQuestions: of(SearchKind.pastQuestion).take(20).toList(),
   );
+}
+
+/// The past-question search index the static site build writes to
+/// `/past-questions/search.json` (`build_static_site.js`): a year page per
+/// paper and one entry per question, as items that open those pages.
+List<SearchItem> pastQuestionItems(Map<String, dynamic> index) {
+  final subjects = index['subjects'] is Map
+      ? (index['subjects'] as Map).cast<String, dynamic>()
+      : const <String, dynamic>{};
+  final out = <SearchItem>[];
+  final papers = <String>{};
+  for (final row
+      in index['questions'] is List ? index['questions'] as List : const []) {
+    if (row is! List || row.length < 4) continue;
+    final slug = '${row[0]}';
+    final year = '${row[1]}';
+    final name = '${subjects[slug] ?? slug}';
+    final base = '/past-questions/waec/$slug/$year/';
+    if (papers.add(base)) {
+      out.add(
+        SearchItem(
+          kind: SearchKind.pastQuestion,
+          title: 'WAEC $year $name: every question',
+          path: base,
+        ),
+      );
+    }
+    out.add(
+      SearchItem(
+        kind: SearchKind.pastQuestion,
+        title: '${row[2]}',
+        subtitle: 'WAEC $year $name',
+        path: '$base${row[3]}/',
+      ),
+    );
+  }
+  return out;
 }

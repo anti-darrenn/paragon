@@ -124,7 +124,28 @@ questions are published (`source == 'waec'`, `hasAnswer`, a real `correctIndex`)
 generated practice. Titles carry no question number, because Paragon doesn't have the
 paper's own numbering. The first run reads about 4,500 documents; the result is cached in
 `tools/site/.cache/`, and only `--refresh` reads again. Maths is rendered server-side by
-KaTeX (`render.js` mirrors `FullLatexView`'s dialect; change both together).
+KaTeX (`render.js` mirrors `FullLatexView`'s dialect; change both together). Wherever text
+must be plain (titles, descriptions, list previews, JSON-LD), `plainMath()` turns the maths
+into readable text (`\frac{2x-1}{x+3}` → `(2x-1)/(x+3)`), never TeX source. Question titles are
+de-duplicated at build time, and the build fails if two are still the same. Sitemap `lastmod`
+is the day a page's HTML last changed (hashes in `.cache/lastmod.json`).
+
+**`/privacy/`, `/terms/` and `/about/` are static pages too**, so that crawlers and Google's
+OAuth review can read them. They are generated from the app's own text:
+`build_static_site.js` runs `dart run tool/export_legal.dart` on every build, never from a
+cache. That exporter reads `legal_documents.dart` and `about_content.dart`, which must stay
+pure Dart (no Flutter imports). In-app navigation still shows the Flutter screens.
+
+**Hosting headers** (`firebase.json`):
+- `X-Frame-Options: DENY`, `frame-ancestors 'none'`, `nosniff`, a referrer policy and a
+  permissions policy on every path except `/__/`. Firebase Auth frames `/__/auth/iframe`.
+- A full **Content-Security-Policy** is enforced, after a clean report-only run on the
+  preview (2026-10-16) through sign-in, video and an exam. It allows the hosts the app
+  uses: gstatic (CanvasKit, Firebase JS), googleapis, Analytics, Auth's firebaseapp.com
+  iframe, and youtube-nocookie. **A new third-party host needs adding there first**, or
+  the browser blocks it.
+- App routes are `no-cache`, using the same regex as the rewrite.
+- `/past-questions/img/**` is immutable, because asset ids never change.
 
 **After adding or removing any plugin, run `flutter clean` before the next release
 build.** The release build reuses a cached `web_plugin_registrant.dart` under
@@ -149,7 +170,32 @@ node reclassify.js                        # propose topic reassignments (dispatc
 node check_linkage.js                     # verify topicId linkage after seeding or reclassifying
 node ../admin/content_lint.js             # published Learn items with placeholder titles or broken maths
 node ../admin/check_counts.js             # subject counts == sum of topic counts
+node ../admin/content_audit.js --cache    # past questions vs the content rules (no reads; --list=<rule>, --publish)
+node ../admin/fix_questions.js            # mechanical fixes (dry run; --commit, --revert=.backups/…)
+node ../admin/apply_corrections.js --file=corrections/<file>.js   # reviewed hand corrections (dry run; --commit)
 ```
+
+**Past-question content rules** live in `tools/admin/question_rules.js`, which is pure and
+tested.
+- **The rules:** the audit's checks (broken or stray LaTeX, duplicate options, lost negative
+  powers, missing diagrams, duplicates in a paper, and the rest), and the mechanical fixes:
+  `10-3` to `10^{-3}`, flat units, `30o` to `30°`, naira, OCR's `lf`/`ln`, typos.
+- **Fixes touch only text outside maths.** They turn notation into maths that says the
+  same thing.
+- **Anything needing judgement** goes into a `corrections/` file, reviewed, then applied by
+  `apply_corrections.js`. That covers retiring a duplicate (`hasAnswer: false` with a
+  `reviewNote` and `duplicateOf`), rewording a stem, or a retag (which records
+  `previousTopicId`).
+- **Safety.** Every write keeps a backup in `tools/admin/.backups/` (gitignored), and
+  `--revert` restores it.
+- **Imports.** `import_questions.js` refuses the level-A rules.
+- **The studio.** Its Content quality panel reads the summary that
+  `content_audit.js --publish` writes to `_meta/contentAudit`.
+- **The record.** `docs/audit/CONTENT_REVIEW_2026-10-15.md` is what was decided and done.
+
+Generated practice comes from a few templates per topic. Indices has 300 questions from
+nine. `mixSession` (`lib/core/content/session_mix.dart`) caps each template in a drill or
+topic-test session and keeps repeats apart.
 
 The original chain — `1_scrape`, `2_classify`, `fix_misclassified`, `3_seed` — is retired
 in `tools/scraper/archive/` (see its README): the scrape selectors match nothing since
@@ -488,6 +534,39 @@ the phone's way in. Nothing about searches is stored or logged.
 
 **Real URLs.** Since 2026-10-14 the app uses path URLs (`usePathUrlStrategy()` in `main.dart`), and `GoRouter.optionURLReflectsImperativeAPIs = true` makes `context.push` update the address bar, so every screen's URL can be copied and shared. An inline script in `web/index.html` rewrites old `/#/…` links before Flutter starts; `firebase.json`'s SPA rewrite serves deep paths. A signed-out visitor bounced to welcome carries the target as `/welcome?next=…` (`return_to.dart`: `safeNextPath` allows in-app paths only — no open redirect), and signing in, finishing onboarding or "Browse as guest" goes there instead of `/`. `ShareLinkButton` shares a page (Web Share API on phones, else copy). `lib/core/web/browser.dart` holds the few browser APIs used (`setLeaveGuard` — "Leave site?" while a WAEC exam or a topic test with answers is open — `shareLink`, `appOrigin`), with no-op stand-ins off the web.
 
+**Readable URLs.** Links are built from slugs:
+- `/subject/mathematics/course/topic/indices`, with `/drill` and `/test` after it;
+- `/waec/mathematics/setup`.
+
+Build them with `Course.topicPath`, `drillPath`, `testPath` and `pathForTopicId`, never
+by hand from ids. `Course.findTopic` and `subjectIdForKeyProvider` accept an id or a slug,
+ids first, so old links keep working. `SubjectKeyRoute` and `CourseTopicRoute`
+(`features/route_keys.dart`) resolve a route's key from data already cached.
+
+**Deferred screens.** The router imports rarely used screens `deferred as` and builds
+them through `DeferredScreen`. That covers the studio, rooms, the WAEC exam, challenges,
+theory, settings, account and onboarding.
+- **The bundle budget.** `main.dart.js` is about 4.75 MB unpacked; CI fails above 5 MB.
+- **Split only by the router.** A deferred library must not be imported eagerly
+  anywhere else, or it is pulled back into the main bundle.
+- **No deferred types in `is` checks.** Put a route builder in the library instead, as
+  `waecExamRoute` does.
+- **Shared helpers stay eager.** Move them out first; the studio's paths live in
+  `admin_paths.dart` for this reason.
+
+**Search over past questions.** `build_static_site.js` writes
+`/past-questions/search.json`, with rows of subject, year, stem and id. Search fetches it
+only for queries of three characters or more, so it costs no reads. Results open the
+static pages (`openSearchPath`).
+
+**Fonts.** Space Grotesk is bundled in `assets/google_fonts/` and
+`GoogleFonts.config.allowRuntimeFetching` is false: nothing is fetched from
+fonts.gstatic.com except Flutter's own Roboto. A new weight or font family needs its
+file added.
+
+**`lib/core/config/site_config.dart`** holds `kSiteOrigin` and `kTagline`. Changing the
+origin is the code side of a domain move; `build_static_site.js` reads it.
+
 `app_router.dart` and `return_to.dart` are the only files in `lib/core/router/`. The top nav that used to
 live in `app_top_nav.dart` is now the shell's `TopBar`; that file is `page_layout.dart`. The old route-tree sketches
 (`paragon_router.dart`, `router_redirect.dart`, `paragon_scaffold.dart`) are deleted; if an
@@ -570,6 +649,18 @@ cards**:
 `flutter clean` before the next release build (see the top of this file).
 
 **LaTeX.** `flutter_math_fork` only — `flutter_tex` is banned and breaks builds. `FullLatexView` (`lib/core/widgets/full_latex_view.dart`) is the real renderer: a hand-written scanner over mixed text + math supporting `\(...\)`, `\[...\]`, `$$...$$`, `\textbf`, `\textit`, `\vspace{Ncm}`, with a red monospace fallback on parse errors. `MathText` delegates to it by default; `useLightRenderer: true` selects its own lighter inline parser — the two must agree, since they are chosen by a flag on the same widget.
+
+**Answer options.** Every multiple-choice option a student answers is `AnswerOption`
+(`lib/core/widgets/answer_option.dart`): drill, the topic test, exercises, the taster,
+mistakes practice, the unit test and every review. Only the WAEC exam keeps its own tile, and
+it has the same semantics. A screen reader hears "Option B: 4, selected", then "…, incorrect":
+one node, in a mutually exclusive group, with its own tap action. The verdict under a marked
+question is `AnswerVerdict`, in words and an icon, in a live region. Don't build a new
+option tile inline; drill's had no accessible name at all (audit D1–D4).
+
+**"Practised" topics** (Home's count, a course's "N of M topics started") are
+`practisedTopicIds`: drill answers in `progress` or a topic test in `learn`. It is display
+only.
 
 **Maths is spoken.** Any line with maths, in either renderer, is one semantics node
 labelled by `speakText` (`lib/core/a11y/speech_text.dart`, the read-aloud converter), via

@@ -84,17 +84,38 @@ Every script is a dry run first. Read its output, then re-run it with `--apply`.
 - [ ] Set **`NOTIFY_FROM`** to a domain sender (Resend). Until it is set, writer emails
   go to `NOTIFY_TO`, and nothing can email waitlisted students.
 - [ ] Submit `https://<domain>/sitemap.xml` in **Google Search Console**.
-- [ ] Optional: a **custom domain**. If you add one:
-  - pass `--origin=https://<domain>` to `build_static_site.js`;
-  - update `og:url` and `og:image` in `web/index.html`;
-  - update `appOrigin`'s fallback in `lib/core/web/browser_other.dart`.
+- [ ] Optional: a **custom domain** (audit E10). The code side is one line:
+  `kSiteOrigin` in `lib/core/config/site_config.dart`. The static build reads it and
+  rewrites the built `index.html`'s canonical and share tags to match. Then:
+  - add the domain in the Firebase console (Hosting → Add custom domain) and set its
+    DNS records;
+  - add it under Authentication → Settings → Authorised domains, or Google sign-in
+    fails on it;
+  - change `contactEmail` and `contactEmailCc` in `legal_documents.dart` to domain
+    addresses (audit G2). The static privacy page follows on the next build.
+  - Submit the new sitemap in Search Console.
+- [x] **Content-Security-Policy** (audit G1): enforced after a clean preview run on
+  2026-10-16. A new third-party host must be added to it in `firebase.json`.
+- [ ] **Deploy the Firestore rules** (`_meta/contentAudit`), then run
+  `node tools/admin/verify_rules.js`.
+- [ ] **Write to WAEC** about the past questions (audit G4): `docs/WAEC_OUTREACH.md`.
+- [ ] **Have the privacy policy read** by someone who knows the NDPA (audit G3). It now
+  names the Act, the NDPC and the right to complain, and asks under-18s to check with a
+  parent.
+
+**Batch app deploys** (audit F4). Every deploy that changes the app makes returning
+students download `main.dart.js` again (4.75 MB unpacked, 1.4 MB gzipped). Changes to
+the static pages alone don't. So ship app changes together, and rebuild the static
+pages (`build_static_site.js`) as often as you like.
 
 ## 5. Decisions still open
 
 - [ ] **The WASSCE paper formats** (`lib/core/exam/exam_formats.dart`). They are marked
   unconfirmed, and the setup screen says so. Confirm or correct each subject, then set
   `verified: true`.
-- [ ] **The tagline**: pick one of the five in `docs/COPY.md`.
+- [ ] **The tagline**: pick one of the five in `docs/COPY.md` and put it in `kTagline`
+  (`lib/core/config/site_config.dart`). Until then it reads "Free WAEC prep. Still a
+  work in progress."
 - [ ] **Donations**: set `donateUrl` in `lib/core/config/support_config.dart` when
   there is somewhere to send them. Until then the button stays hidden.
 - [ ] **Tighten the profile rule** to `school` and `classYear` only, *after*
