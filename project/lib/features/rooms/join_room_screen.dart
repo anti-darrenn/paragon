@@ -20,14 +20,20 @@ import '../../core/widgets/ui/ui.dart';
 final joinThrottleProvider = Provider<JoinThrottle>((ref) => JoinThrottle());
 
 class JoinRoomScreen extends ConsumerStatefulWidget {
-  const JoinRoomScreen({super.key});
+  const JoinRoomScreen({super.key, this.initialCode});
+
+  /// From a shared link (`/join?code=…`); anything that cannot be a code
+  /// is ignored. The student still presses Join, so the usual checks run.
+  final String? initialCode;
 
   @override
   ConsumerState<JoinRoomScreen> createState() => _JoinRoomScreenState();
 }
 
 class _JoinRoomScreenState extends ConsumerState<JoinRoomScreen> {
-  final _code = TextEditingController();
+  late final _code = TextEditingController(
+    text: roomCodeFromLink(widget.initialCode),
+  );
   String? _error;
   bool _busy = false;
 

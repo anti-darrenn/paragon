@@ -10,10 +10,20 @@ import '../web/browser.dart';
 /// [path] is an app route (`/subject/abc/course`); the origin is added
 /// here. Works only because the app uses real paths, not `#/` URLs.
 class ShareLinkButton extends StatelessWidget {
-  const ShareLinkButton({super.key, required this.title, required this.path});
+  const ShareLinkButton({super.key, required this.title, required this.path})
+    : label = null;
+
+  /// A text button ("Share join link") rather than the bare icon.
+  const ShareLinkButton.labelled({
+    super.key,
+    required this.title,
+    required this.path,
+    required String this.label,
+  });
 
   final String title;
   final String path;
+  final String? label;
 
   String get url => '$appOrigin$path';
 
@@ -29,6 +39,13 @@ class ShareLinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (label case final text?) {
+      return TextButton.icon(
+        icon: const Icon(Icons.ios_share_rounded),
+        label: Text(text),
+        onPressed: () => _share(context),
+      );
+    }
     return IconButton(
       tooltip: 'Share',
       icon: const Icon(Icons.ios_share_rounded),

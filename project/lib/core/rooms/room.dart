@@ -114,6 +114,14 @@ String? normaliseRoomCode(String typed) {
   return c;
 }
 
+/// The link a host shares: the join screen with the code filled in.
+String roomJoinPath(String code) => '/join?code=$code';
+
+/// The code a shared link carries, or '' when it has none or it cannot
+/// be a code (the box then starts empty, as if typed by hand).
+String roomCodeFromLink(String? raw) =>
+    raw == null ? '' : normaliseRoomCode(raw) ?? '';
+
 /// Where `/rooms/:code` (or `/rooms/:code/host`, [pattern]) should go
 /// instead, or null to stay. A code from the address bar skips the join
 /// screen's checks and names a Firestore document, so anything that

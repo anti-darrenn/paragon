@@ -13,6 +13,7 @@ import '../../core/web/browser.dart';
 import '../../core/widgets/full_latex_view.dart';
 import '../../core/widgets/math_text.dart';
 import '../../core/widgets/nav/back_navigation.dart';
+import '../../core/widgets/share_link_button.dart';
 import '../../core/widgets/ui/ui.dart';
 
 /// `/rooms/:code/host`: the screen on the projector. Lobby with the big
@@ -207,6 +208,11 @@ class _Lobby extends StatelessWidget {
               color: AppColors.primary,
             ),
           ),
+        ),
+        ShareLinkButton.labelled(
+          title: 'Join my Paragon quiz',
+          path: roomJoinPath(code),
+          label: 'Share join link',
         ),
         const SizedBox(height: 8),
         Text(
