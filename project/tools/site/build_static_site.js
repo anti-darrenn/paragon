@@ -35,6 +35,7 @@ const { initAdmin } = require("../admin/credential");
 const { svgProblem } = require("../admin/svg_safety");
 const R = require("./render");
 const { trimFonts } = require("./trim_fonts");
+const { siteOrigin, DEFAULT_ORIGIN } = require("./origin");
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -42,14 +43,7 @@ const args = Object.fromEntries(
     return [k, v ?? true];
   }),
 );
-/** The site address: `--origin`, else `kSiteOrigin` in the app's
- *  lib/core/config/site_config.dart, the one place a domain move changes. */
-function siteOrigin() {
-  const file = path.resolve(__dirname, "..", "..", "lib", "core", "config", "site_config.dart");
-  const m = /kSiteOrigin\s*=\s*'([^']+)'/.exec(fs.readFileSync(file, "utf8"));
-  if (!m) throw new Error(`kSiteOrigin not found in ${file}`);
-  return m[1];
-}
+// The site address: `--origin`, else `kSiteOrigin` (origin.js).
 const ORIGIN = String(args.origin || siteOrigin()).replace(/\/$/, "");
 R.configure({ origin: ORIGIN });
 const OUT = path.resolve(__dirname, "..", "..", args.out || "build/web");
@@ -613,8 +607,8 @@ async function main() {
   // point them at the configured one (a custom domain).
   const shell = path.join(OUT, "index.html");
   const html = fs.readFileSync(shell, "utf8");
-  if (ORIGIN !== "https://paragon-hq.web.app" && html.includes("https://paragon-hq.web.app")) {
-    fs.writeFileSync(shell, html.split("https://paragon-hq.web.app").join(ORIGIN));
+  if (ORIGIN !== DEFAULT_ORIGIN && html.includes(DEFAULT_ORIGIN)) {
+    fs.writeFileSync(shell, html.split(DEFAULT_ORIGIN).join(ORIGIN));
   }
   fs.rmSync(path.join(OUT, BASE), { recursive: true, force: true });
   const legal = loadLegal();

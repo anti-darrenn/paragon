@@ -41,12 +41,12 @@
  *                    job skips. Kept out of the source and passed as a
  *                    secret, because the repository and its Actions logs
  *                    are public.
- *   APP_URL          default https://paragon-hq.web.app
+ *   APP_URL          default kSiteOrigin (tools/site/origin.js)
  */
 const { initAdmin } = require("./credential");
 
 const DRY_RUN = process.argv.includes("--dry-run");
-const APP_URL = (process.env.APP_URL || "https://paragon-hq.web.app").replace(/\/+$/, "");
+const APP_URL = (process.env.APP_URL || require("../site/origin").siteOrigin()).replace(/\/+$/, "");
 const FROM = process.env.NOTIFY_FROM || "Paragon <onboarding@resend.dev>";
 const TO = (process.env.NOTIFY_TO || "")
   .split(",")

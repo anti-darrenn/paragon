@@ -306,7 +306,7 @@ function quizJsonLd({ q, subjectName, url, name }) {
 
 /** The site-wide share picture (`web/og-image.jpg`, 1200×630). WhatsApp
  *  and the rest show no preview image without one (audit E1). */
-let OG_IMAGE = "https://paragon-hq.web.app/og-image.jpg";
+let OG_IMAGE = `${require("./origin").DEFAULT_ORIGIN}/og-image.jpg`;
 
 /** Sets the site address the share picture is served from. */
 function configure({ origin }) {

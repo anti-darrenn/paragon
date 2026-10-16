@@ -100,7 +100,7 @@ const html = page({
   title: "T", description: "D", canonical: "https://x/", body: "", root: "/",
   jsonLd: [breadcrumbJsonLd([["A", "https://x/a/"], ["B"]]), itemListJsonLd("L", ["https://x/1/"])],
 });
-assert.ok(html.includes('property="og:image" content="https://paragon-hq.web.app/og-image.jpg"'));
+assert.ok(html.includes(`property="og:image" content="${require("./origin").DEFAULT_ORIGIN}/og-image.jpg"`));
 assert.ok(html.includes('name="twitter:card" content="summary_large_image"'));
 assert.strictEqual((html.match(/application\/ld\+json/g) || []).length, 2);
 assert.ok(html.includes('"@type":"BreadcrumbList"') && html.includes('"position":2'));
