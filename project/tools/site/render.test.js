@@ -1,6 +1,7 @@
 // node render.test.js — checks the pure rendering of the static pages.
 const assert = require("assert");
 const { renderRich, plainText, slugify, truncate, quizJsonLd, escapeHtml } = require("./render");
+const R = require("./render");
 
 // Control: plain text passes through, escaped.
 assert.strictEqual(renderRich("2 < 3 & 4 > 1"), "2 &lt; 3 &amp; 4 &gt; 1");
@@ -108,5 +109,17 @@ assert.ok(html.includes('href="/terms/"'));
 assert.ok(!html.includes("checked by students and our team"));
 const nf = page({ title: "T", description: "D", canonical: "https://x/", body: "", root: "/", noindex: true });
 assert.ok(nf.includes('content="noindex"') && !nf.includes('rel="canonical"'));
+
+// Plan v2 6.3: the frequency line agrees with the app's frequencyPhrase.
+assert.strictEqual(R.frequencyPhrase(49, 1677), "about 1 in 34 WAEC questions");
+assert.strictEqual(R.frequencyPhrase(5, 6), "most WAEC questions");
+assert.strictEqual(R.frequencyPhrase(1, 1677), null); // too rare to say
+assert.strictEqual(R.frequencyPhrase(0, 1677), null);
+// Similar questions: nearest year first, never the question itself.
+const sq = (id, year) => ({ id, year });
+const pool = [sq("a", 2010), sq("b", 2017), sq("c", 2019), sq("d", 2018), sq("e", 1995)];
+assert.deepStrictEqual(R.similarQuestions(pool, sq("d", 2018)).map((x) => x.id), ["c", "b", "a"]);
+assert.deepStrictEqual(R.similarQuestions([sq("d", 2018)], sq("d", 2018)), []);
+assert.ok(R.PAGE_WARN < R.PAGE_BUDGET);
 
 console.log("render: all checks passed");

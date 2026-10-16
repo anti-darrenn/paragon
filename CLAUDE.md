@@ -137,6 +137,12 @@ must be plain (titles, descriptions, list previews, JSON-LD), `plainMath()` turn
 into readable text (`\frac{2x-1}{x+3}` → `(2x-1)/(x+3)`), never TeX source. Question titles are
 de-duplicated at build time, and the build fails if two are still the same. Sitemap `lastmod`
 is the day a page's HTML last changed (hashes in `.cache/lastmod.json`).
+Each question page also says how often its topic is examined ("about 1 in 34 WAEC
+Mathematics questions": `frequencyPhrase` in `render.js`, which mirrors the app's
+`study_plan.dart`, so change both together) and links three similar questions, nearest
+in year. A year page's "Sit this paper" opens `/waec/<subject>/setup?from=<year>&to=<year>`.
+The build lists question pages over 60 KB and fails on one over 128 KB: the median is
+11 KB, and a few dense worked answers reach 97 KB.
 
 **`/privacy/`, `/terms/` and `/about/` are static pages too**, so that crawlers and Google's
 OAuth review can read them. They are generated from the app's own text:
