@@ -15,6 +15,25 @@ import '../core/theme/app_palette.dart';
 import '../core/widgets/nav/back_navigation.dart';
 import '../core/theory/theory_question.dart';
 
+/// [subjects] in the order WAEC Prep lists them: papers that can be sat
+/// first, then any a guest can't open, then those with no past questions
+/// yet. Each group keeps the catalog order. Chemistry and Government were
+/// listed first, both disabled (audit C6, 2026-10-15).
+List<Subject> waecSubjectOrder(List<Subject> subjects, bool isGuest) {
+  int rank(Subject s) {
+    if (GuestLimits.locks(isGuest: isGuest, subjectName: s.name)) return 1;
+    if (s.counts.isSplit && s.pastQuestionCount == 0) return 2;
+    return 0;
+  }
+
+  final indexed = [for (var i = 0; i < subjects.length; i++) (i, subjects[i])];
+  indexed.sort((a, b) {
+    final byRank = rank(a.$2).compareTo(rank(b.$2));
+    return byRank != 0 ? byRank : a.$1.compareTo(b.$1);
+  });
+  return [for (final (_, s) in indexed) s];
+}
+
 class WaecSubjectScreen extends ConsumerWidget {
   const WaecSubjectScreen({super.key});
 
@@ -59,7 +78,7 @@ class WaecSubjectScreen extends ConsumerWidget {
                   spacing: gap,
                   runSpacing: gap,
                   children: [
-                    for (final subject in subjects)
+                    for (final subject in waecSubjectOrder(subjects, isGuest))
                       SizedBox(
                         width: width,
                         child: _WaecSubjectTile(

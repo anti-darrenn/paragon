@@ -144,7 +144,7 @@ function quizJsonLd({ q, subjectName, url }) {
  * The page shell. `root` is the relative path back to the site root for
  * the stylesheet; `canonical` is absolute.
  */
-function page({ title, description, canonical, body, jsonLd, root, hasMath }) {
+function page({ title, description, canonical, body, jsonLd, root, hasMath, noindex }) {
   return `<!DOCTYPE html>
 <html lang="en-NG">
 <head>
@@ -152,7 +152,7 @@ function page({ title, description, canonical, body, jsonLd, root, hasMath }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="canonical" href="${escapeHtml(canonical)}">
+${noindex ? `<meta name="robots" content="noindex">` : `<link rel="canonical" href="${escapeHtml(canonical)}">`}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Paragon">
 <meta property="og:title" content="${escapeHtml(title)}">

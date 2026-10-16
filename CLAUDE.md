@@ -108,9 +108,18 @@ checks them against current WASSCE papers.
 - **Taglines.** `docs/COPY.md` holds five options for the owner to choose from.
 
 **Static past-question pages.** `tools/site/build_static_site.js` (run `npm install` there
-once) writes `/past-questions/**`, `sitemap.xml` and `robots.txt` into `build/web` after the
-Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
-rewrite. These pages are the only part of Paragon a search engine can read. Only past
+once) writes `/past-questions/**`, `sitemap.xml`, `robots.txt` and `404.html` into `build/web`
+after the Flutter build, so one hosting deploy ships both. Hosting serves a real file before the SPA
+rewrite.
+
+**The SPA rewrite lists the app's top-level route segments** (`firebase.json`), so a missing
+static page, a stray file or an unknown path gets `404.html` with a real 404 instead of the
+app with a 200. Hosting's `regex` is RE2, with no lookahead, so the list is spelled out.
+**A new top-level route must be added there**: `hosting_rewrite_test.dart` walks the router
+and fails until it is. Inside the app, an unknown path under a known segment shows
+`NotFoundScreen` (`GoRouter.errorBuilder`). The local Hosting emulator cannot check regex
+rewrites on Windows, because superstatic's `glob-slasher` turns `/courses` into `\courses`
+first. These pages are the only part of Paragon a search engine can read. Only past
 questions are published (`source == 'waec'`, `hasAnswer`, a real `correctIndex`), never
 generated practice. Titles carry no question number, because Paragon doesn't have the
 paper's own numbering. The first run reads about 4,500 documents; the result is cached in

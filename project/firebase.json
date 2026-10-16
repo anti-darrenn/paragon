@@ -34,7 +34,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "regex": "^/(?:(?:about|account|admin|c|cards|courses|dashboard|join|learn|legal|me|mistakes|onboarding|plan|privacy|review|rooms|saved|search|settings|signin|subject|subjects|support|terms|try|waec|welcome)(?:/.*)?)?$",
         "destination": "/index.html"
       }
     ],

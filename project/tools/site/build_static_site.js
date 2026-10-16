@@ -12,8 +12,9 @@
  * student searching "WAEC 2018 mathematics question" should land on that
  * question, see it rendered properly, and be one tap from practising the
  * topic in the app (PLAN.md Phase 3). The app stays at `/`; these live at
- * `/past-questions/**`, and Hosting serves a real file before the SPA
- * rewrite, so no firebase.json change is needed.
+ * `/past-questions/**`. Hosting serves a real file before the SPA rewrite,
+ * which only covers the app's own routes, so a missing page here gets this
+ * script's `404.html` with a real 404 status.
  *
  * Only past questions (`source == 'waec'`, `hasAnswer: true`, a real
  * `correctIndex`). Generated practice questions are never published here
@@ -315,7 +316,30 @@ ${breadcrumb([["Past questions", `${root}${BASE}/`], [`WAEC ${s.name}`]])}
 <div class="cta"><a class="button" href="/">Start practising free</a></div>`,
   }));
 
+  writeNotFound();
   return { questions: questions.length, subjects: subjectCards.length };
+}
+
+/** Hosting serves `/404.html`, with a 404 status, for any path that is
+ *  neither a file nor one of the app's routes (the SPA rewrite in
+ *  firebase.json). It used to answer every such path with the app and a
+ *  200, which search engines count as a soft 404 (audit A6, 2026-10-15).
+ *  Links are absolute: it is served at whatever path was asked for. */
+function writeNotFound() {
+  write("404.html", R.page({
+    title: "Page not found | Paragon",
+    description: "This page does not exist.",
+    canonical: `${ORIGIN}/`,
+    root: "/",
+    noindex: true,
+    body: `
+<h1>We couldn't find that page</h1>
+<p>The link may be old or mistyped. The past questions are all still here, by subject, year and topic.</p>
+<div class="cta">
+<a class="button" href="/${BASE}/">Browse past questions</a>
+<a class="button secondary" href="/">Open the app</a>
+</div>`,
+  }), { sitemap: false });
 }
 
 function copyAssets() {

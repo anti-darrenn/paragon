@@ -65,6 +65,7 @@ import 'package:paragon/features/rooms/player_room_screen.dart';
 import 'package:paragon/features/admin/studio/insight_editor_screen.dart';
 import 'package:paragon/features/theory/theory_screen.dart';
 import 'package:paragon/features/support_screen.dart';
+import 'package:paragon/features/not_found_screen.dart';
 
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 // GoRouter needs a ChangeNotifier to know when to re-run the redirect function.
@@ -124,6 +125,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/welcome',
     refreshListenable: notifier,
+    errorBuilder: (context, state) => const NotFoundScreen(),
 
     // ── Auth redirect ──────────────────────────────────────────────────────
     // Runs on every navigation AND every time notifier fires (i.e. auth change).
